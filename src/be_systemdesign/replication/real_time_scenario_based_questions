@@ -1,0 +1,30 @@
+* Your primary database fails during peak traffic. How would you fail over to a replica while minimizing downtime and data loss?
+* Your read replicas are several seconds behind the primary, and users cannot see their recent updates. How would you resolve the issue?
+* A customer updates their account balance but immediately receives stale data from a read replica. How would you implement read-after-write consistency?
+* Your application acknowledges a write before asynchronous replication completes, and the primary then fails. How would you assess and recover the lost data?
+* Two database nodes both believe they are the primary after a network partition. How would you prevent split-brain and conflicting writes?
+* A replica is healthy but its replication lag keeps increasing. How would you identify whether the bottleneck is network bandwidth, disk I/O, or query execution?
+* A new replica must be added to a large production database without causing excessive load on the primary. How would you bootstrap it?
+* Your database failover succeeds, but some application instances continue writing to the old primary. How would you prevent stale-primary writes?
+* Your multi-region application accepts simultaneous updates to the same customer profile in different regions. How would you reconcile conflicts?
+* Your financial system must ensure that acknowledged transactions are not lost after a regional outage. What replication strategy would you choose?
+* A database replica crashes and restarts with an incomplete replication log. How would you recover it safely?
+* Your application needs low-latency reads worldwide, but strong consistency is required for account balances. How would you design the replication strategy?
+* A Kafka broker fails, and some partitions lose their leaders. How does Kafka elect new leaders, and what factors affect data safety?
+* A Kafka topic has a replication factor of three, but one replica is out of sync when the leader fails. How would you assess whether a safe leader election is possible?
+* Your system uses synchronous replication and write latency increases significantly during network congestion. How would you balance durability and performance?
+* Your asynchronous replication system supports high throughput but cannot meet the required recovery point objective. How would you redesign it?
+* A multi-primary database generates conflicting updates to the same inventory item. How would you preserve correct stock quantities?
+* A replica falls too far behind the primary to catch up using incremental logs. How would you rebuild it without a prolonged service disruption?
+* Your disaster recovery site is operational but has not received recent transactions because replication silently stopped. How would you detect and prevent this situation?
+* A schema change is deployed on the primary, but replicas process changes differently and replication breaks. How would you plan safer schema evolution?
+* A regional network outage isolates replicas from the leader, but those replicas remain reachable by local clients. How should the system handle reads and writes?
+* Your replicated cache serves outdated product prices after a successful update. How would you design invalidation and consistency handling?
+* An application performs a database write and publishes an event, but the replica fails before the event reaches downstream consumers. How would you maintain business consistency?
+* Your application experiences repeated failovers, causing connection errors and stale routing information. How would you stabilize leader discovery and connection management?
+* Replication traffic consumes most of the network bandwidth and affects normal application requests. How would you optimize replication throughput?
+* A replica is promoted during a network partition, and the original primary later reconnects with newer-looking data. How would you reconcile the histories safely?
+* Your system must support point-in-time recovery after accidental data deletion. How would replication, backups, and transaction logs work together?
+* A new replica is configured with the wrong replication position and skips some database changes. How would you detect and correct the inconsistency?
+* Your system uses read replicas for analytics, but analytical queries slow down replication and affect production. How would you isolate the workloads?
+* You must design cross-region replication for an e-commerce platform with a strict availability target and a limited infrastructure budget. What architecture and trade-offs would you choose?

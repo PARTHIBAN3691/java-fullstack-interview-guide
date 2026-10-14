@@ -1,0 +1,30 @@
+* How would you implement idempotency in a Spring Boot REST API?
+* How would you generate and validate an idempotency key?
+* How would you store idempotency keys in a relational database?
+* What database schema would you design for an idempotency table?
+* How would you associate an idempotency key with a specific user or customer?
+* How would you associate an idempotency key with an API endpoint and HTTP method?
+* How would you detect whether a request has already been processed?
+* What should the API return when the same idempotency key is received again?
+* Should a repeated request return the original response or the current resource state?
+* How would you store and replay the original HTTP status code and response body?
+* How would you handle requests that use the same idempotency key with different payloads?
+* How would you calculate a request fingerprint to detect payload changes?
+* How would you prevent two concurrent requests from processing the same idempotency key?
+* Why are database unique constraints important for idempotency?
+* How would you implement idempotency using a database transaction?
+* How would you handle a failure after saving an idempotency record but before completing the business operation?
+* How would you handle a failure after completing the business operation but before storing the response?
+* How would you prevent stale idempotency records from accumulating indefinitely?
+* How would you implement idempotency using Redis?
+* What are the advantages and disadvantages of using Redis versus a relational database for idempotency?
+* How would you configure an appropriate expiration time for idempotency keys?
+* How would you handle an idempotency key when the original request is still processing?
+* How would you distinguish an in-progress request from a completed request?
+* How would you implement idempotency for a payment-creation endpoint?
+* How would you implement idempotency for an order-creation endpoint?
+* How would you make an HTTP retry mechanism work safely with idempotency keys?
+* How would you test idempotency behavior using integration tests?
+* How would you monitor duplicate request attempts and idempotency conflicts?
+* What are the limitations of implementing idempotency only in application memory?
+* How would you design idempotency for multiple application instances behind a load balancer?

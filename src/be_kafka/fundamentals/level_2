@@ -1,0 +1,30 @@
+* Explain Kafka's internal architecture, including brokers, partitions, replicas, controllers, and metadata management.
+* How does Kafka achieve high throughput while maintaining durability?
+* How does Kafka's append-only log design improve sequential I/O performance?
+* Explain the roles of the producer ID, sequence numbers, and idempotence in Kafka.
+* How do Kafka transactions provide atomicity across multiple topic partitions?
+* How does Kafka achieve exactly-once processing between consumed and produced records?
+* What are the limitations of Kafka's exactly-once semantics when external databases are involved?
+* How does the KRaft controller quorum manage cluster metadata and leader elections?
+* How does Kafka handle broker failures and replica synchronization?
+* Explain the relationship between the high watermark, log end offset, and last stable offset.
+* How do in-sync replicas affect message durability and availability?
+* What are the trade-offs between replication factor, min.insync.replicas, and producer acknowledgments?
+* How does Kafka handle unclean leader election, and what are the data-loss risks?
+* How do partition count and partition assignment affect throughput and scalability?
+* How would you determine the optimal number of partitions for a high-volume topic?
+* How do consumer group protocols and partition assignment strategies affect rebalancing?
+* What causes consumer group instability, and how would you minimize unnecessary rebalances?
+* How do static membership and cooperative rebalancing improve consumer availability?
+* How does Kafka manage disk segments, indexes, and log retention?
+* How would you design a Kafka cluster for millions of events per second?
+* How do producer batching, compression, and linger.ms influence throughput and latency?
+* How would you diagnose uneven partition traffic and hot partitions?
+* How do network bandwidth, disk I/O, page cache, and CPU affect Kafka performance?
+* How would you design topic retention and replication for compliance-sensitive data?
+* How do Kafka quotas and backpressure help protect a cluster from overloaded clients?
+* How would you migrate a Kafka cluster from ZooKeeper mode to KRaft mode?
+* How would you design multi-cluster Kafka replication for disaster recovery?
+* How do schema evolution and schema compatibility affect Kafka-based event-driven systems?
+* How would you secure Kafka using TLS, SASL, ACLs, and least-privilege access?
+* How would you troubleshoot a Kafka cluster experiencing high latency, increasing consumer lag, and frequent broker reassignments?

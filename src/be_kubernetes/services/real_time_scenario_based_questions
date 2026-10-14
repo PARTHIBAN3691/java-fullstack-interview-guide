@@ -1,0 +1,30 @@
+* A Spring Boot application is running successfully, but clients cannot access it through its ClusterIP Service. How would you troubleshoot the issue?
+* A Service has no endpoints even though the Deployment is healthy. What would you check?
+* A Service selector uses app: payment, but the Pods use app: payments. How would you identify and fix the problem?
+* A Service works inside the cluster but cannot be accessed externally. How would you investigate the issue?
+* A NodePort Service is accessible from some machines but not others. What could cause this behavior?
+* A LoadBalancer Service remains in the Pending state. How would you troubleshoot it?
+* A Service routes requests to Pods in the wrong application version. How would you identify the misconfiguration?
+* Requests fail intermittently after scaling a Deployment from two replicas to ten replicas. How would you investigate Service routing?
+* A Service has healthy endpoints, but requests time out. How would you isolate whether the issue is networking, application, or infrastructure related?
+* A frontend Pod cannot access a backend Service in another namespace. How would you troubleshoot DNS and network connectivity?
+* A Java application connects to a Service using its Pod IP instead of its Service DNS name. What problems could arise, and how would you fix the design?
+* A Service stops routing traffic to a Pod immediately after a configuration change. What Kubernetes resources would you inspect?
+* During a rolling deployment, users experience connection resets. How would you improve graceful termination and traffic draining?
+* A Service distributes traffic unevenly across backend Pods. How would you investigate the load-balancing behavior?
+* A headless Service returns multiple Pod IP addresses, but a client connects only to one Pod. How would you diagnose the behavior?
+* A StatefulSet requires stable DNS names for every replica. How would you configure the Service and StatefulSet?
+* A cloud LoadBalancer is provisioned, but external requests never reach the application. How would you trace the traffic path?
+* A Service is exposed through NodePort, and the security team wants to reduce the attack surface. What changes would you recommend?
+* A backend application listens on port 8081, but its Service uses targetPort 8080. How would you detect and correct the mismatch?
+* A Service becomes unavailable when all Pods fail their readiness probes. How would you investigate the underlying application issue?
+* A Java microservice experiences DNS lookup failures when calling another service by name. How would you troubleshoot CoreDNS and namespace resolution?
+* After a cluster upgrade, several Services stop working. What components and configuration changes would you investigate?
+* Cross-zone traffic increases significantly after a workload scales up. How would you optimize Service routing?
+* An external database must be accessed through a stable internal Service name. How would you configure this without running the database inside Kubernetes?
+* A team wants to expose an administrative Service publicly for troubleshooting. How would you provide secure, temporary access?
+* Long-lived WebSocket connections are interrupted during application rollouts. How would you investigate Service routing and connection draining?
+* A NetworkPolicy blocks traffic to a Service even though DNS resolution succeeds. How would you identify the missing policy rule?
+* A Service points to Pods from multiple application teams because of overlapping labels. How would you prevent this problem?
+* A Service has the correct configuration, but traffic fails only on one Kubernetes node. What node-level networking checks would you perform?
+* How would you design and test a Service migration from NodePort to LoadBalancer without interrupting production traffic?

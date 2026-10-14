@@ -1,0 +1,105 @@
+
+**Development Environment**
+* How would you standardize development environments across a team using different operating systems?
+* How would you manage local application dependencies using Docker Compose?
+* How would you troubleshoot an application that works locally but fails in a shared development environment?
+* How would you keep local configuration consistent with the team's approved configuration?
+* How would you isolate developer-specific settings from shared team settings?
+
+**QA Environment**
+* How would you design a QA environment that supports parallel testing by multiple teams?
+* How would you prevent test execution by one team from affecting another team's results?
+* How would you refresh test data without disrupting ongoing test cycles?
+* How would you troubleshoot intermittent defects that occur only in QA?
+* How would you ensure the QA environment uses the correct application artifact and configuration version?
+
+**UAT Environment**
+* How would you prepare a UAT environment for a business-critical release?
+* How would you manage UAT sign-off when business users identify defects late in the release cycle?
+* How would you ensure UAT test data is realistic without exposing production-sensitive information?
+* How would you coordinate application changes during an active UAT cycle?
+* How would you establish a controlled process for promoting a UAT-approved release?
+
+**Staging Environment**
+* How would you make staging representative of production while controlling its cost?
+* How would you validate database migrations in staging before production deployment?
+* How would you test deployment scripts, rollback procedures, and health checks in staging?
+* How would you manage staging when several release branches need validation simultaneously?
+* How would you troubleshoot a release that passes staging tests but fails in production?
+
+**Production Environment**
+* How would you separate deployment permissions from production administration permissions?
+* How would you design a production release process with minimal downtime?
+* How would you handle a production configuration change that must be applied urgently?
+* How would you validate production readiness before a deployment?
+* How would you ensure that production data is not unintentionally modified by non-production workloads?
+
+**Environment Isolation**
+* How would you isolate environments in a shared Kubernetes cluster?
+* When would you choose separate namespaces, separate clusters, or separate cloud accounts?
+* How would you isolate network traffic between development and production?
+* How would you prevent a non-production service account from accessing production resources?
+* How would you isolate message brokers, databases, and caches across environments?
+
+**Environment Promotion**
+* How would you design a CI/CD pipeline that promotes a tested artifact through QA, UAT, staging, and production?
+* How would you prevent rebuilding an application separately for each environment?
+* How would you enforce approval gates without making deployments unnecessarily slow?
+* How would you handle an artifact that passes QA but fails UAT validation?
+* How would you maintain traceability between a release, its source commit, build artifact, and deployment environments?
+
+**Configuration Separation**
+* How would you manage configuration for the same Spring Boot application across multiple environments?
+* What are the trade-offs between environment variables, mounted configuration files, and centralized configuration services?
+* How would you manage secrets using a cloud secret manager or Kubernetes Secrets?
+* How would you validate required configuration before an application starts?
+* How would you prevent configuration changes from causing unexpected behavior during promotion?
+
+**Infrastructure Consistency**
+* How would you use Terraform modules to maintain consistent infrastructure across environments?
+* How would you handle intentional differences in production sizing without duplicating infrastructure definitions?
+* How would you validate infrastructure changes before applying them?
+* How would you manage versioning for shared IaC modules?
+* How would you detect and resolve inconsistencies between cloud resources and their Terraform definitions?
+
+**Ephemeral Environments**
+* How would you create an ephemeral environment for every pull request?
+* How would you control cloud costs when multiple temporary environments run simultaneously?
+* How would you handle shared dependencies such as databases and message brokers?
+* How would you assign unique URLs and resource identifiers to temporary environments?
+* How would you prevent an expired environment from being recreated by an automated controller?
+
+**Preview Environments**
+* How would you integrate preview deployments with GitHub pull requests?
+* How would you configure preview environments to use isolated test data?
+* How would you restrict access to previews containing unreleased application features?
+* How would you automate preview-environment updates when new commits are pushed?
+* How would you provide deployment status, test results, and access URLs directly to reviewers?
+
+**Environment Provisioning**
+* How would you design a self-service workflow for developers to request new environments?
+* How would you provision infrastructure, install dependencies, and deploy an application in the correct order?
+* How would you make environment provisioning repeatable and safe to retry?
+* How would you validate resource quotas, permissions, and required dependencies before provisioning?
+* How would you track provisioning status and communicate failures to developers?
+
+**Environment Teardown**
+* How would you automate teardown when a pull request is merged or closed?
+* How would you protect persistent data while destroying temporary infrastructure?
+* How would you handle teardown when a cloud API operation fails halfway through?
+* How would you identify and remove orphaned resources?
+* How would you implement retention policies for logs and artifacts after an environment is deleted?
+
+**Infrastructure Drift**
+* How would you detect drift using Terraform plans or cloud configuration monitoring?
+* How would you distinguish legitimate emergency changes from unauthorized drift?
+* How would you handle drift in resources managed by multiple teams?
+* How would you prevent automated reconciliation from overwriting a critical emergency fix?
+* How would you establish a remediation workflow with audit trails and approvals?
+
+**Production Parity**
+* How would you align Kubernetes resource limits, autoscaling settings, and network policies between staging and production?
+* How would you reproduce production-only defects in a lower environment?
+* How would you maintain comparable database engines and versions across environments?
+* How would you validate performance when staging has less capacity than production?
+* How would you balance production parity with cloud-cost and data-privacy requirements?

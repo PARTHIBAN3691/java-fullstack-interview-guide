@@ -1,0 +1,34 @@
+* After enabling Istio sidecar injection, several application pods start failing readiness checks. How would you identify whether the issue is caused by proxy startup, probe rewriting, policy configuration, or application initialization?
+* A service that previously responded in 100 ms now takes 300 ms after service-mesh adoption. How would you investigate proxy overhead, TLS handshakes, telemetry collection, and routing configuration?
+* A microservice returns HTTP 503 errors only when called through Istio. How would you investigate endpoint discovery, destination rules, connection pools, and proxy logs?
+* One service can communicate with another in permissive mTLS mode, but communication fails after switching to strict mode. How would you identify workloads that lack compatible mTLS configuration?
+* A newly deployed service cannot call a backend because of an authorization policy. How would you identify the source identity, destination policy, and required permissions?
+* A service works inside a Kubernetes cluster but cannot communicate with a service in another cluster. How would you troubleshoot cross-cluster discovery, network connectivity, trust domains, and mTLS?
+* A canary deployment receives 10% of configured traffic but almost no real user requests. How would you investigate routing rules, sticky sessions, request matching, and traffic distribution?
+* A canary version has a higher error rate, but the overall service metrics appear healthy. How would you isolate metrics by workload version and implement a safe rollback decision?
+* A new VirtualService rule causes traffic to bypass the expected stable backend. How would you validate route precedence, matching rules, and destination configuration?
+* A service mesh retries failed requests repeatedly during a downstream outage, causing a traffic surge. How would you reduce retry amplification and protect the downstream service?
+* A payment API occasionally processes the same transaction twice after retrying a request. How would you determine whether the retry policy is safe and how application idempotency should be enforced?
+* A request times out at the API gateway even though the downstream service eventually completes successfully. How would you investigate timeout budgets across the gateway, mesh, and application?
+* A service begins rejecting new connections during peak traffic while existing connections continue working. How would you diagnose circuit-breaker thresholds, connection-pool limits, and proxy resource constraints?
+* An outlier-detection policy repeatedly removes healthy endpoints during brief latency spikes. How would you tune ejection thresholds and evaluate the effect on available capacity?
+* A global rate-limiting service becomes unavailable and requests to multiple applications start failing. How would you redesign the failure behavior and fallback policy?
+* A workload cannot reach an external payment provider after egress restrictions are enabled. How would you investigate ServiceEntry configuration, egress gateways, DNS, and outbound network rules?
+* A service-mesh certificate expires or fails validation, causing widespread connection failures. How would you investigate certificate rotation, workload identity, trust configuration, and control-plane health?
+* A certificate rotation causes intermittent TLS failures for long-lived connections. How would you determine whether connection draining, trust-bundle propagation, or certificate lifecycle behavior is responsible?
+* Prometheus reports a sudden increase in service-mesh metrics cardinality and storage usage. How would you identify high-cardinality labels and reduce telemetry costs without losing critical visibility?
+* Distributed traces show a slow request but do not identify the responsible service. How would you investigate missing instrumentation, trace propagation, sampling, and proxy telemetry?
+* Application logs show successful requests, but service-mesh metrics report increased failures. How would you correlate application-level results with proxy-level response codes and connection errors?
+* A configuration update causes intermittent routing failures across hundreds of services. How would you isolate the faulty configuration, limit the blast radius, and roll back safely?
+* The Istio control plane becomes unavailable, but existing service traffic continues while new workloads fail to connect. How would you assess the impact on data-plane behavior, configuration updates, and certificate issuance?
+* A Linkerd upgrade causes unexpected proxy restarts and increased latency. How would you investigate version compatibility, resource usage, rollout order, and proxy configuration?
+* A legacy service communicates over raw TCP and stops working after mesh injection. How would you investigate protocol detection, port exclusions, and protocol-specific proxy behavior?
+* A WebSocket application disconnects after a fixed duration despite healthy backend instances. How would you investigate idle timeouts, connection draining, and load-balancer or proxy limits?
+* A workload with valid service identity gains access to a sensitive API it should not call. How would you investigate authorization-policy scope, identity matching, and overly broad permissions?
+* A compromised workload attempts to call every service in its namespace. How would you use mTLS, workload identity, and authorization policies to contain lateral movement?
+* A fault-injection test introduces delays, but the application does not exhibit the expected retry or fallback behavior. How would you verify fault matching, injection scope, timeout configuration, and resilience logic?
+* A service-mesh rollout increases CPU usage and costs significantly across the cluster. How would you determine whether the cause is proxy resources, telemetry, retries, or unnecessary mesh coverage?
+* A team wants to enable a service mesh for only selected namespaces while maintaining secure communication with non-mesh workloads. How would you plan incremental adoption and define transitional security controls?
+* A regional outage causes traffic to shift to another region, but the failover region becomes overloaded. How would you redesign locality-aware routing, outlier detection, retry behavior, and capacity protection?
+* A team wants to deploy a new service version using automated canary analysis. How would you combine traffic weights, error rates, latency percentiles, business metrics, and rollback thresholds?
+* A production incident requires disabling a faulty mesh policy quickly. How would you define a controlled emergency change process that restores service without removing essential security controls?

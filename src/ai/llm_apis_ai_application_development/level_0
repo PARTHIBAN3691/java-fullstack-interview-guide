@@ -1,0 +1,104 @@
+**OpenAI API**
+* What is the OpenAI API, and how is it used in an AI application?
+* What types of models can be accessed through the OpenAI API?
+* How do you send a text prompt to an OpenAI model?
+* What is the purpose of an API endpoint?
+* What is the difference between a model name and an API endpoint?
+
+**Anthropic Claude API**
+* What is the Anthropic Claude API?
+* How do you send a message to a Claude model?
+* What is the purpose of the Messages API?
+* How do system instructions and user messages differ in Claude?
+* What factors influence the selection of a Claude model?
+
+**Google Gemini API**
+* What is the Google Gemini API?
+* How do you send a prompt to a Gemini model?
+* What is the difference between text generation and multimodal generation?
+* What is the purpose of the `generateContent` operation?
+* How do you configure generation parameters for a Gemini request?
+
+**Azure OpenAI Service**
+* What is Azure OpenAI Service?
+* How does Azure OpenAI differ from accessing the OpenAI API directly?
+* What is an Azure OpenAI resource?
+* What is a model deployment in Azure OpenAI?
+* What information is required to call an Azure OpenAI deployment?
+
+**AWS Bedrock**
+* What is Amazon Bedrock?
+* How does Bedrock provide access to foundation models?
+* What is the difference between a foundation model and a model ID?
+* What is the purpose of the Bedrock Runtime API?
+* What are the basic steps to invoke a model through Bedrock?
+
+**Model API Authentication and Authorization**
+* What is API authentication, and why is it required for LLM APIs?
+* What is the difference between authentication and authorization?
+* How do API keys work?
+* What is the purpose of environment variables when storing API credentials?
+* Why should API keys never be committed to a source-code repository?
+
+**Chat Completions and Response APIs**
+* What is a chat completion API?
+* What is a response API?
+* What are system, developer, user, and assistant messages?
+* What is the difference between a prompt and a conversation history?
+* How do you retrieve generated text from an API response?
+
+**Streaming Responses**
+* What is response streaming in an LLM application?
+* How does streaming differ from receiving a complete response?
+* What is a stream chunk?
+* What are Server-Sent Events (SSE)?
+* Why can streaming improve the user experience?
+
+**Function Calling and Tool Calling**
+* What is function calling in an LLM application?
+* What is the difference between a model-generated tool call and executing the tool?
+* What is a tool schema?
+* How does an application return tool results to a model?
+* Why should tool arguments be validated before execution?
+
+**Structured Outputs**
+* What are structured outputs in LLM APIs?
+* What is JSON mode?
+* What is the difference between valid JSON and schema-valid JSON?
+* What is JSON Schema?
+* Why are structured outputs useful for backend applications?
+
+**Multimodal APIs**
+* What does multimodal mean in the context of LLM APIs?
+* What input modalities can modern AI models support?
+* How can an application send an image to a model?
+* What is the difference between text-only and multimodal requests?
+* What factors should be considered when sending audio or video to an AI model?
+
+**Rate Limiting, Retries, and Timeouts**
+* What is API rate limiting?
+* What is the difference between a request-per-minute limit and a token-per-minute limit?
+* What is a request timeout?
+* Why do LLM applications retry failed requests?
+* What is the purpose of exponential backoff?
+
+**Token Usage and Cost Management**
+* What is a token in an LLM API?
+* How do input tokens differ from output tokens?
+* How is LLM API usage generally billed?
+* What is a token usage report?
+* Why should applications track token consumption?
+
+**Model Routing and Fallback Strategies**
+* What is model routing?
+* Why might an application use more than one LLM provider?
+* What is a fallback model?
+* What factors influence model selection?
+* What is the difference between routing and fallback?
+
+**AI Application Error Handling**
+* What types of errors can occur when calling an LLM API?
+* What is the difference between a client error and a server error?
+* How should an application handle an invalid API key?
+* Why should API errors be logged?
+* What information should an application avoid exposing in error messages?

@@ -1,0 +1,30 @@
+* A button changes color instantly instead of smoothly on hover. How would you debug the issue?
+* A navigation menu should slide down when opened and slide up when closed. How would you implement it?
+* A card should slightly enlarge and display a shadow when hovered. Which properties would you transition?
+* An image zoom effect causes the surrounding layout to shift. How would you fix it?
+* A dropdown menu fades out but remains clickable after becoming invisible. How would you solve this?
+* A sidebar should transition between collapsed and expanded states. How would you design the CSS?
+* A modal should fade in when opened and fade out before being removed from the DOM. How would you implement it?
+* A developer applies transition: all to every element, and the page becomes slow. How would you optimize it?
+* A height transition does not work when changing from height: 0 to height: auto. What alternatives would you consider?
+* A transition works on hover but not when a CSS class is added through JavaScript. How would you investigate?
+* A transition behaves inconsistently when users click a toggle button rapidly. How would you handle interruptions?
+* A progress indicator needs to smoothly change its width based on a changing percentage. How would you implement it?
+* A tooltip should fade in after a short delay and disappear smoothly. Which transition properties would you use?
+* A fixed header should shrink smoothly when the page enters a scrolled state. How would you implement the effect?
+* A carousel should smoothly move between slides using transforms. How would you approach the transition?
+* A form field should smoothly highlight its border when focused. How would you implement it?
+* A notification should slide into view and disappear after a short period. How would you coordinate its transitions?
+* A transitionend event fires more than once because multiple properties are transitioning. How would you handle it?
+* A JavaScript callback runs before a modal's closing transition finishes. How would you correct the timing?
+* A transitionend event does not fire when a transition is canceled. How would you handle this case?
+* A component is removed from the DOM immediately, so its exit transition is never visible. How would you fix it?
+* A mobile navigation drawer performs poorly on lower-end devices. Which CSS properties would you review first?
+* A website uses many animated shadows and dimensions, causing rendering delays. How would you improve performance?
+* A user enables reduced motion in their operating system. How should the interface respond?
+* A transition appears smooth in Chrome but behaves differently in Safari. How would you debug the compatibility issue?
+* A design requires several cards to transition with slightly different delays. How would you organize the CSS?
+* A button's hover transition works, but its active state changes instantly. How would you make both states consistent?
+* A panel's transition looks correct when opening but feels too slow when closing. How could you customize the behavior?
+* A theme switch changes several colors, backgrounds, and borders. How would you add transitions without slowing down the page?
+* You are building a reusable UI component library. How would you standardize transition durations, timing functions, and reduced-motion behavior?

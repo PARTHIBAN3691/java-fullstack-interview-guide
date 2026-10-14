@@ -1,0 +1,21 @@
+
+* Write a PySpark Glue ETL job that reads CSV files from S3, transforms the records, and writes Parquet output to another S3 location.
+* Write a Glue ETL job that reads data from the Glue Data Catalog and filters records based on a business condition.
+* Write a Glue job that converts a DynamicFrame into a Spark DataFrame and performs SQL-based transformations.
+* Write a Glue ETL job that removes duplicate customer records using a defined business key.
+* Write a Glue ETL job that handles null values and routes invalid records to a separate S3 location.
+* Write a Glue ETL job that partitions output data by year, month, and day.
+* Write a Glue ETL job that joins customer and transaction datasets while handling skewed keys.
+* Write a Glue ETL job that uses job bookmarks to process incremental input data.
+* Write a Glue ETL job that reads a JDBC source and writes the transformed results to S3 in Parquet format.
+* Write a Glue ETL job that validates mandatory fields and generates a data quality summary.
+* Write a Java program using AWS SDK for Java 2.x to start an AWS Glue job with runtime parameters.
+* Write a Java program to retrieve Glue job run status, execution duration, and error details.
+* Write a Java program to list databases and tables in the AWS Glue Data Catalog.
+* Write a Java program to start a Glue crawler and poll until the crawler completes.
+* Write a Java program to create or update an AWS Glue job configuration using the AWS SDK.
+* Write a Java program to stop a running Glue job after validating its current state.
+* Write a Java program to retrieve CloudWatch log information associated with a failed Glue job.
+* Write a Java program to orchestrate multiple Glue jobs sequentially and stop the workflow when a required job fails.
+* Write a Java program to implement bounded retries with exponential backoff when starting a Glue job through the AWS SDK.
+* Design and implement a metadata-driven ETL framework using AWS Glue, Amazon S3, the Glue Data Catalog, and Java-based orchestration, including validation, monitoring, error handling, and automated tests.

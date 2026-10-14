@@ -1,0 +1,20 @@
+* Write a Java AWS SDK v2 program that retrieves the caller identity using AWS STS.
+* Write a Java program using AWS SDK v2 to assume an IAM role and obtain temporary credentials.
+* Write a Java program that uses an assumed IAM role to list objects in a specific S3 bucket.
+* Write a Java program that accesses DynamoDB using the default AWS credentials provider chain.
+* Write a Java program that retrieves a secret from AWS Secrets Manager using IAM role-based authentication.
+* Write a Java program that calls an AWS service using temporary credentials obtained from STS.
+* Write a Java program that lists IAM users in an AWS account using the AWS SDK v2.
+* Write a Java program that retrieves the attached managed policies for a specified IAM role.
+* Write a Java program that lists the inline policies associated with a specified IAM role.
+* Write a Java program that retrieves the trust policy of a specified IAM role.
+* Write a Java program that lists IAM access keys for a specified user without exposing their secret values.
+* Write a Java program that checks the last-used information for an IAM access key.
+* Write a Java program that retrieves IAM role details and displays the maximum session duration.
+* Write a Java program that identifies IAM users who have console access configured.
+* Write a Java program that retrieves the MFA device information associated with an IAM user.
+* Write a Java program that handles AWS `AccessDeniedException` and logs useful diagnostic details without exposing credentials.
+* Write a Java utility that validates an IAM policy JSON document for required fields and basic structural correctness.
+* Write a Java program that uses AWS SDK v2 to retrieve IAM policy versions and identify the default version.
+* Write a Java program that retrieves CloudTrail events related to `AssumeRole` for a specified time range.
+* Design a Java-based IAM auditing utility that identifies overly broad permissions, inactive credentials, and roles with potentially risky trust policies.

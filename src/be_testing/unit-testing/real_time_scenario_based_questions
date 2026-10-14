@@ -1,0 +1,30 @@
+* A Java method calculates a discount based on customer type. How would you design unit tests for all discount rules?
+* A service returns an incorrect result only when the input collection is empty. How would you identify and test the defect?
+* A method should throw IllegalArgumentException for invalid input but silently returns null. How would you test and fix this behavior?
+* A payment service calls a payment gateway client. How would you unit-test the service without making real payment requests?
+* A banking service calculates interest using principal, rate, and duration. What test cases would you create for boundary values and rounding?
+* A method returns different results depending on the current date. How would you make its unit tests deterministic?
+* A service retries a failed API call three times. How would you verify retry behavior without waiting for actual network delays?
+* A unit test passes locally but fails intermittently in Jenkins. How would you investigate the flaky test?
+* A test suite takes 15 minutes to execute after new tests are added. How would you identify and reduce the execution time?
+* A developer uses @InjectMocks, but a dependency remains null during testing. How would you troubleshoot the issue?
+* A Mockito test expects a method to be called once, but it is called twice. How would you determine whether the implementation or test is incorrect?
+* A service uses a static utility class that reads configuration from environment variables. How would you unit-test the service reliably?
+* A legacy service creates its dependencies directly using new. How would you isolate its business logic for unit testing?
+* A method processes a list of orders and skips invalid entries. How would you test valid, invalid, empty, and mixed input lists?
+* A calculation works for ordinary values but fails for very large numbers. What boundary and overflow tests would you add?
+* A method returns Optional.empty() when a customer is not found. How would you verify both found and not-found scenarios?
+* A Java service uses CompletableFuture to process requests asynchronously. How would you test successful completion and exceptional completion?
+* A developer writes tests that pass even when the business logic is removed. How would you assess and improve those tests?
+* Code coverage is 95%, but production defects continue to occur. What changes would you make to the unit testing strategy?
+* A team has many tests that assert private implementation details. How would you refactor them to focus on observable behavior?
+* A service depends on five repositories and three external clients. How would you structure unit tests to isolate business rules?
+* A test modifies a shared static variable and causes other tests to fail. How would you eliminate this test dependency?
+* A currency conversion method uses floating-point arithmetic and produces rounding differences. How would you test it correctly?
+* A service should stop processing when the first validation fails. How would you test the order of operations and failure behavior?
+* A Spring service test unexpectedly starts the full application context. How would you simplify it into a focused unit test?
+* A developer uses excessive Mockito verifications, making tests fail after harmless refactoring. How would you improve the tests?
+* A method sorts employees by salary and then by name. How would you test ordering, duplicate values, and empty input?
+* A bug occurs only when a collection contains duplicate elements. How would you design regression tests for the issue?
+* A team wants to introduce mutation testing into its Java project. How would you use mutation results to improve existing tests?
+* A critical business service must be refactored without changing behavior. How would you use unit tests to reduce regression risk?

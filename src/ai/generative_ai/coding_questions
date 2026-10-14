@@ -1,0 +1,101 @@
+**Generative AI Fundamentals**
+* Implement a basic Generative AI client wrapper that accepts a prompt, calls a configurable model interface, validates the response, and handles failures.
+* Build a prompt-template utility that supports named variables, missing-variable validation, and reusable templates.
+* Implement an output validator that detects empty responses, malformed structured output, and responses that violate required fields.
+* Create a benchmark script that runs a fixed prompt dataset against a model and records latency, response length, failures, and estimated usage cost.
+
+**Large Language Models (LLMs)**
+* Implement an LLM chat client with configurable system instructions, conversation history, timeout handling, and retry policies.
+* Build a conversation-history manager that appends messages and trims or summarizes older history when a token budget is exceeded.
+* Implement structured-output parsing that converts model responses into typed application objects and handles validation errors.
+* Create a model adapter interface that allows different LLM providers to be used without changing business logic.
+* Write tests for an LLM integration that simulate rate limits, timeouts, malformed responses, and provider outages.
+
+**Transformer Architecture**
+* Implement a simplified scaled dot-product attention function using a numerical computing or Deep Learning library.
+* Build a small causal attention mask and verify that each token cannot attend to future positions.
+* Implement a positional-encoding function and compare its output for different token positions.
+* Create a simplified Transformer block with attention, residual connections, normalization, and a feed-forward network.
+* Write a benchmark that measures attention latency and memory use as sequence length increases.
+
+**Attention Mechanism and Self-Attention**
+* Implement scaled dot-product attention using query, key, and value matrices.
+* Build a multi-head attention module and verify its tensor dimensions for configurable head counts.
+* Implement a causal mask and a padding mask, then test their combined behavior.
+* Write unit tests that verify attention weights sum to one over valid positions.
+* Compare the runtime of a straightforward attention implementation with a supported optimized implementation.
+
+**Tokenization and Tokens**
+* Implement a tokenizer utility that reports token counts for user input, system instructions, conversation history, and expected output.
+* Build a request validator that rejects prompts exceeding a configurable token budget.
+* Implement a chunking function that splits a document by token count while preserving paragraph or code-block boundaries where possible.
+* Create a cost estimator that calculates input and output token usage from configurable pricing rules.
+* Write tests that compare token counts for source code, multilingual text, special characters, and long identifiers.
+
+**Embeddings**
+* Implement a function that generates embeddings for a collection of text documents using a configurable embedding-model interface.
+* Write a cosine-similarity function and use it to rank candidate documents for a query.
+* Build a simple semantic-search prototype that retrieves the top-k most similar document embeddings.
+* Implement batch embedding generation with retry handling and deduplication of repeated inputs.
+* Create an evaluation script that calculates precision@k, recall@k, and ranking quality for a labeled retrieval dataset.
+* Implement an embedding migration workflow that rebuilds an index for a new embedding model and validates the results before switching traffic.
+
+**Context Windows**
+* Implement a context-budget manager that reserves tokens for instructions, conversation history, retrieved content, and generated output.
+* Build a conversation-history trimming function that preserves required system instructions and the most recent relevant messages.
+* Implement a document-chunk selector that chooses relevant passages while staying within a configurable context limit.
+* Write tests that verify behavior when prompts fit exactly, exceed the limit slightly, or exceed it substantially.
+* Build a context-assembly component that labels untrusted retrieved content separately from trusted application instructions.
+
+**Temperature, Top-P, and Sampling**
+* Implement temperature scaling over a vector of token logits and calculate the resulting probability distribution.
+* Write a top-p sampling function that retains the smallest set of highest-probability tokens reaching a configurable cumulative probability threshold.
+* Implement greedy decoding and compare its output with sampled decoding on a fixed probability distribution.
+* Build a test harness that evaluates repeated generations across several temperature and top-p settings.
+* Create a configuration validator that enforces approved decoding settings for structured extraction and other constrained tasks.
+
+**Model Parameters and Quantization**
+* Write a utility that estimates model-weight memory from parameter count and numerical precision.
+* Implement a benchmark runner that compares full-precision and quantized model variants using quality, latency, and memory measurements.
+* Build a configuration parser that distinguishes model architecture parameters from runtime generation parameters.
+* Create a report generator that summarizes model size, quantization method, hardware requirements, and benchmark results.
+* Implement a model-loading test that detects unsupported precision or quantization configurations and reports actionable errors.
+
+**Pre-training, Fine-tuning, and Inference**
+* Build a dataset-validation utility that checks training examples for missing fields, duplicate records, invalid labels, and malformed inputs.
+* Implement a reproducible training configuration that records dataset version, random seed, model version, and hyperparameters.
+* Create an inference service that loads a model once, validates requests, performs predictions, and returns structured results.
+* Build a model-artifact registry utility that records model versions, evaluation metrics, and rollback metadata.
+* Implement a comparison script that evaluates a base model and a fine-tuned model on the same held-out dataset.
+* Write tests that detect differences between training-time and inference-time preprocessing.
+
+**Open-Source vs Proprietary Models**
+* Implement a common model-provider interface with adapters for a hosted API and a locally served model.
+* Build a routing utility that chooses a model based on task type, latency target, cost limit, and availability.
+* Implement a fallback mechanism that switches to an approved alternate model after timeout or provider failure.
+* Create a cost-comparison tool that estimates hosted API expenses and self-hosting costs under configurable workload assumptions.
+* Write a configuration validator that checks model license metadata, approved deployment locations, and data-handling policies.
+
+**Multimodal AI**
+* Implement a request validator that supports text and image inputs and rejects unsupported formats or oversized payloads.
+* Build a multimodal request assembler that combines text instructions with image references and metadata.
+* Create an evaluation dataset format that stores inputs, expected outcomes, modality information, and evidence references.
+* Implement a benchmark utility that measures latency, token usage, image-processing cost, and error rates for multimodal requests.
+* Write tests for missing images, invalid MIME types, corrupted files, and provider failures.
+
+**Image, Audio, Video, and Code Generation**
+* Build an image-generation client that submits a prompt, validates generation settings, and handles timeouts and failed jobs.
+* Implement an audio transcription evaluation function that calculates Word Error Rate from reference and generated transcripts.
+* Create a video-processing utility that extracts frames at configurable intervals and records their timestamps.
+* Implement a code-generation validation pipeline that runs syntax checks, unit tests, static analysis, and dependency checks in a restricted environment.
+* Build an output-metadata recorder that stores model version, prompt version, generation parameters, timestamps, and content provenance.
+* Write automated tests that validate generated artifacts for format, completeness, and configured safety requirements.
+
+**Model Selection and Benchmarking**
+* Implement a benchmark runner that executes a shared test dataset against multiple models using consistent prompts and evaluation settings.
+* Build a scoring function that combines quality, latency, cost, reliability, and memory usage using configurable weights.
+* Create a results dashboard dataset that stores model version, task category, evaluation metrics, confidence intervals, and run metadata.
+* Implement a regression checker that compares new benchmark results with an approved baseline and flags unacceptable changes.
+* Build a cost-per-successful-task calculator that includes retries, failed responses, and output validation failures.
+* Write a canary evaluation script that compares two model versions on sampled production requests without exposing sensitive data.
+* Implement a model-selection utility that filters candidates by hard constraints before ranking the remaining models.

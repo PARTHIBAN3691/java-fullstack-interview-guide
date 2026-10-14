@@ -1,0 +1,20 @@
+* Write a generic class `Box<T>` that stores a value of any reference type and provides getter and setter methods.
+* Write a generic method that swaps two elements in an array.
+* Write a generic method that prints all elements of an array of any reference type.
+* Write a generic method that returns the maximum of three comparable values.
+* Write a generic method that accepts a collection of numbers and calculates their sum.
+* Write a generic method that accepts a list of elements extending `Number` and returns the average.
+* Write a generic method that copies elements from a source collection to a destination collection using bounded wildcards.
+* Write a generic class `Pair<K, V>` that stores a key-value pair.
+* Write a generic interface for a repository and implement it for an employee entity.
+* Write a generic method that finds an element in a collection based on a given predicate.
+* Write a generic method that filters a collection using a `Predicate<T>` and returns a new list.
+* Write a generic method that converts a list of one type into a list of another type using a `Function<T, R>`.
+* Write a generic stack implementation that supports `push`, `pop`, `peek`, and `isEmpty`.
+* Write a generic cache implementation that accepts different key and value types.
+* Write a generic utility method that finds the first element satisfying a condition without using raw types.
+* Write a generic method using `T extends Comparable<T>` to find the maximum element in a collection.
+* Write a generic method that merges two lists while preserving type safety.
+* Write a generic class that uses multiple bounds to constrain a type parameter to a class and an interface.
+* Write a program that demonstrates the difference between `List<?>`, `List<Object>`, and `List<T>`.
+* Write a program that demonstrates wildcard capture and implements a type-safe method to swap elements in a list.

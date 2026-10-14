@@ -1,0 +1,30 @@
+* How would you design an end-to-end exactly-once processing architecture using Kafka and a relational database?
+* Why does Kafka's exactly-once semantics not automatically guarantee exactly-once execution of external side effects?
+* How would you coordinate Kafka offset commits and database transactions without distributed transactions?
+* How do Kafka transactions provide atomicity across multiple output topics and consumed offsets?
+* What are the limitations of Kafka's transactional guarantees across external systems?
+* How would you prevent duplicate financial transactions when a consumer crashes after updating a database but before committing its offset?
+* How would you design an idempotency key strategy for processing business events?
+* How do producer epochs and fencing prevent stale transactional producers from writing?
+* How does Kafka recover transactions after a producer or broker failure?
+* What is the relationship between transaction timeout, consumer lag, and transaction stability?
+* How can a long-running Kafka transaction affect consumers using read_committed?
+* How do Last Stable Offset and high watermark differ, and why do they matter for transactional consumers?
+* How do transaction markers affect visibility of committed and aborted records?
+* How would you handle a transaction timeout during high-volume event processing?
+* How do retries and max.in.flight.requests.per.connection affect ordering and delivery guarantees?
+* How would you design a consumer that safely handles rebalances during processing?
+* How do cooperative rebalancing and static membership influence duplicate processing and availability?
+* How would you guarantee idempotent processing when events are replayed from an earlier offset?
+* How do compacted topics and tombstone records interact with delivery semantics?
+* How would you maintain end-to-end correctness across Kafka, a database, and a REST API?
+* How would you implement the transactional outbox pattern to avoid dual-write inconsistencies?
+* How does the transactional outbox pattern differ from Kafka's native exactly-once semantics?
+* How would you use the inbox pattern to prevent duplicate event processing in a microservice?
+* How do retry topics affect event ordering and end-to-end processing guarantees?
+* How would you design delivery semantics for a multi-region Kafka deployment?
+* How do replication factor, min.insync.replicas, acks, and leader election interact during broker failures?
+* How would you recover from a consumer crash after a transaction commits but before the application receives confirmation?
+* How would you measure and validate end-to-end delivery guarantees under network partitions?
+* How do you balance throughput, latency, and durability when configuring Kafka delivery semantics?
+* How would you prove that a Kafka-based payment workflow cannot create duplicate business transactions?

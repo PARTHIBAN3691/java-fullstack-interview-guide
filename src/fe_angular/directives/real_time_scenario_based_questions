@@ -1,0 +1,30 @@
+* You need to highlight an input field when the user hovers over it. How would you implement a custom attribute directive?
+* A custom directive changes an element's background color, but the color is not restored when the pointer leaves. How would you fix it?
+* A directive is registered in a standalone Angular component, but Angular reports that the directive is unknown. How would you troubleshoot it?
+* A structural directive displays content correctly initially but does not update when its condition changes. How would you investigate the view creation logic?
+* You need to show a message only when the user has the required permission. Would you use an attribute or structural directive, and why?
+* A custom structural directive must support both a primary template and an alternative template. How would you design it?
+* A directive creates embedded views repeatedly, causing duplicate content. How would you prevent multiple view instances?
+* A directive uses ElementRef to modify styles, but the application must support server-side rendering. How would you make it safer?
+* A directive attaches event listeners to the document and causes memory leaks after navigation. How would you fix the cleanup logic?
+* A custom tooltip directive must display a tooltip on hover and keyboard focus. How would you implement accessible behavior?
+* A directive must disable form controls based on a permission value. How would you keep the directive reusable and testable?
+* A directive updates component state, but an OnPush component does not refresh as expected. How would you investigate change detection?
+* A structural directive receives a list of records and must expose each record and its index to the template. How would you design its context?
+* A directive accepts a string input but should also support boolean values. How would you normalize and validate its input?
+* A directive works for mouse clicks but not for keyboard activation. How would you improve its accessibility?
+* Several directives attempt to manipulate the same element's styles. How would you avoid conflicts?
+* A directive must observe element resizing and update a layout value. How would you implement the observer and clean it up?
+* A directive uses window.innerWidth directly and fails during server-side rendering. How would you refactor it?
+* A reusable directive must work across multiple components with different CSS requirements. How would you make its behavior configurable?
+* A custom structural directive displays stale data after its context changes. How would you update the embedded view correctly?
+* A directive used across thousands of table cells affects page performance. How would you profile and optimize it?
+* A directive must validate a custom form field and display validation errors through Angular forms. Which Angular APIs would you use?
+* A team wants to share reusable behavior across multiple components without inheritance. How could host directives help?
+* A directive uses RxJS subscriptions to listen for global events. How would you ensure subscriptions are cleaned up?
+* A directive must conditionally apply a CSS class based on multiple inputs. How would you implement and test the logic?
+* A permission directive must respond when a user's role changes without requiring the page to reload. How would you design the state flow?
+* A directive is used inside dynamically created components and behaves differently from static components. What would you investigate?
+* A custom directive passes unit tests but fails in production builds. How would you investigate compilation, imports, and configuration?
+* A directive removes an element from the DOM when a condition is false. How would you explain the difference between hiding an element and removing its view?
+* You need to create a reusable Angular directive package with clear inputs, accessibility requirements, and automated tests. How would you structure it?

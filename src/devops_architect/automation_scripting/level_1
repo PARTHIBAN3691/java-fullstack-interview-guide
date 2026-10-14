@@ -1,0 +1,112 @@
+
+**Bash**
+* How do you write a Bash script that processes multiple files and handles missing files safely?
+* How do pipes, subshells, command substitution, and process substitution differ?
+* How do you use `set -e`, `set -u`, and `pipefail`, and what limitations do they have?
+* How do you trap signals and clean up temporary files when a script exits?
+* How do you prevent word-splitting and glob-expansion bugs when processing filenames?
+* How do you make a Bash script reusable through functions and configuration parameters?
+
+**Python**
+* How would you structure a Python automation project into reusable modules?
+* How do you use `subprocess` safely to execute external commands?
+* How do you implement structured logging, retries, and exception handling?
+* How do you process large log files without loading the entire file into memory?
+* How do you manage dependencies and isolate an automation script's environment?
+* How do you write unit tests for scripts that interact with files, commands, and APIs?
+
+**PowerShell**
+* How do PowerShell objects differ from plain-text command output?
+* How do you implement advanced functions with parameters, validation, and help documentation?
+* How do `try`, `catch`, `finally`, and `$ErrorActionPreference` affect error handling?
+* How do you execute commands remotely and manage remote sessions?
+* How do you create reusable PowerShell modules?
+* How do you test PowerShell scripts using Pester?
+
+**Shell Scripting**
+* How do you design scripts that can safely run more than once?
+* How do you implement centralized logging and consistent exit codes?
+* How do you handle signals, cleanup, temporary files, and interrupted execution?
+* How do you securely pass secrets and configuration into scripts?
+* How do you debug scripts that behave differently in interactive and non-interactive environments?
+* How do you make shell scripts portable across Linux distributions?
+
+**CLI Automation**
+* How do you automate CLI workflows that depend on multiple commands?
+* How do you parse JSON output instead of relying on fragile text matching?
+* How do you handle expired credentials and refresh authentication automatically?
+* How do you implement retries for transient CLI failures without repeating unsafe operations?
+* How do you manage different CLI profiles, regions, projects, and environments?
+* How do you make CLI automation work reliably in CI/CD agents?
+
+**API Automation**
+* How do you implement retry logic with exponential backoff and jitter?
+* How do you handle pagination, rate limits, and API timeouts?
+* How do you design API automation to be idempotent?
+* How do you handle OAuth 2.0 access tokens and token refresh?
+* How do you validate API response schemas and business-level outcomes?
+* How do you test API automation using mocks and test environments?
+
+**Infrastructure Automation**
+* How do you detect and correct configuration drift?
+* How do you make resource provisioning idempotent?
+* How do you handle dependencies between infrastructure resources?
+* How do you separate infrastructure configuration from application configuration?
+* How do you manage secrets and environment-specific variables?
+* How do you validate infrastructure changes before applying them?
+
+**Deployment Automation**
+* How do you implement pre-deployment and post-deployment validation?
+* How do you design deployment scripts for development, staging, and production?
+* How do you implement rolling deployments and health checks?
+* How do you automate rollback when a deployment fails?
+* How do you prevent concurrent deployments from interfering with each other?
+* How do you ensure that deployment artifacts are immutable and traceable?
+
+**Operational Automation**
+* How would you automate disk-space monitoring, log cleanup, and service recovery?
+* How do you avoid destructive cleanup when automating storage maintenance?
+* How do you design automation for long-running operations with timeouts?
+* How do you handle partial failures when a workflow contains multiple operational steps?
+* How do you collect execution metrics and publish them to monitoring systems?
+* How do you prevent duplicate execution of an operational task?
+
+**Scheduled Jobs**
+* How do you handle time zones, daylight-saving changes, and missed schedules?
+* How do you prevent overlapping executions of the same scheduled job?
+* How do you implement retries and notifications for failed jobs?
+* How do you manage job dependencies and execution order?
+* How do you monitor job duration, success rate, and failure trends?
+* How do you handle long-running jobs that exceed their expected schedule?
+
+**Event-Driven Automation**
+* How do you design event handlers to tolerate duplicate event delivery?
+* How do you handle out-of-order events and delayed processing?
+* How do you implement dead-letter handling for failed events?
+* How do you filter events to prevent unnecessary automation runs?
+* How do you correlate events with automation execution logs?
+* How do you prevent event-triggered workflows from creating recursive event loops?
+
+**Self-Healing Automation**
+* How do you distinguish transient failures from persistent failures?
+* How do you prevent a self-healing workflow from repeatedly restarting an unhealthy service?
+* How do you implement bounded retries and cooldown periods?
+* How do you verify that a recovery action actually restored service health?
+* How do you integrate automated remediation with alerting and incident management?
+* How do you safely handle recovery actions that can affect customer traffic?
+
+**Runbooks**
+* How do you convert a manual troubleshooting procedure into executable automation?
+* How do you design a runbook with preconditions, decision points, and verification steps?
+* How do you parameterize a runbook for different environments?
+* How do you handle failed steps and resume a partially completed runbook?
+* How do you test runbooks without affecting production?
+* How do you measure runbook effectiveness and maintenance quality?
+
+**Automation Governance**
+* How do you define standards for logging, error handling, testing, and documentation?
+* How do you manage approvals for scripts that modify production infrastructure?
+* How do you audit who executed an automation and what it changed?
+* How do you manage script versions and safely roll back automation changes?
+* How do you enforce secrets management and least-privilege permissions?
+* How do you identify duplicate scripts and consolidate automation across teams?

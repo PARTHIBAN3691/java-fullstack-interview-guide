@@ -1,0 +1,30 @@
+* How does Kafka decide which partition receives a producer record?
+* How does the default partitioner work when a message key is present?
+* How does the default partitioner work when a message key is null?
+* How can you implement a custom Kafka partitioner?
+* How does partitioning affect message ordering?
+* How can you guarantee that all events for the same customer go to the same partition?
+* What happens if the partition key distribution is highly skewed?
+* What is a hot partition?
+* How can you identify a hot partition?
+* How can you distribute records more evenly across partitions?
+* How does partition count affect producer throughput?
+* How does partition count affect consumer throughput?
+* What is the maximum number of consumers in a consumer group that can actively consume a topic with N partitions?
+* What happens when there are more consumers than partitions?
+* What happens when there are fewer consumers than partitions?
+* How are partitions assigned to consumers during a rebalance?
+* What is the difference between RangeAssignor, RoundRobinAssignor, and CooperativeStickyAssignor?
+* How does increasing partition count affect consumer group rebalancing?
+* How does Kafka maintain ordering when records are produced concurrently?
+* Can two producers write to the same partition?
+* How does Kafka serialize the partition key?
+* What happens if the same logical key is serialized differently?
+* How does partitioning interact with message retries?
+* How does partitioning affect batch processing?
+* How does `linger.ms` interact with partition-level batching?
+* How does `batch.size` affect records sent to partitions?
+* How does partitioning affect Kafka producer throughput?
+* How does partition count influence storage distribution across brokers?
+* How does Kafka distribute partition leaders across brokers?
+* How can you inspect partition information using Kafka CLI commands?

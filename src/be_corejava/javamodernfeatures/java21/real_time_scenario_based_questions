@@ -1,0 +1,19 @@
+
+* Your REST API handles thousands of concurrent requests that spend most of their time waiting for downstream HTTP calls. How could virtual threads improve the design?
+* Your service creates one platform thread per incoming request and starts running out of operating system threads. How would you migrate it to virtual threads?
+* Your application uses a fixed thread pool for blocking database operations. How would you evaluate replacing it with virtual threads?
+* Your virtual-thread-based application still experiences database connection exhaustion. How would you control concurrency and database connection usage?
+* Your application performs CPU-intensive image processing using millions of virtual threads. What performance issues might occur, and how would you redesign the workload?
+* A production application shows unexpectedly high latency with virtual threads. How would you investigate blocking operations, thread pinning, and scheduler behavior?
+* Your logging framework relies heavily on `ThreadLocal` values for request correlation IDs. What would you consider before migrating to virtual threads?
+* Your domain model represents orders, payments, and refunds using records. How could record patterns simplify processing these types?
+* Your application has a sealed hierarchy of notification events. How would pattern matching for `switch` improve event dispatching?
+* Your code needs to handle null values, different record types, and fallback cases in a single `switch`. How would you structure the patterns?
+* Your application maintains a history of transactions and frequently accesses the first, last, and reverse-ordered elements. How could sequenced collections simplify the implementation?
+* Your service needs to preserve insertion order while supporting first-entry, last-entry, and reverse-order map operations. Which Java 21 collection interfaces would you consider?
+* Your application integrates with a native C library and needs controlled access to off-heap memory. How would you evaluate the Foreign Function and Memory API?
+* Your application performs multiple concurrent subtasks for each HTTP request. How could structured concurrency help coordinate their results and failures?
+* Your service propagates request metadata across nested method calls and concurrent tasks. How would you evaluate scoped values?
+* Your low-latency application experiences garbage-collection pauses under heavy allocation workloads. How would you assess Generational ZGC?
+* Your team wants to upgrade from Java 17 to Java 21. How would you identify migration risks involving virtual threads, garbage collection, preview features, and dependencies?
+* Your team wants to use Java 21 preview features in production. What build, testing, deployment, and upgrade considerations would you raise?

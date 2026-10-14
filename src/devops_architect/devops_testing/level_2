@@ -1,0 +1,113 @@
+
+**Unit Testing in Pipelines**
+* Design a test strategy for a large Java monorepo that supports selective test execution, parallelization, reliable coverage reporting, and fast pull-request feedback.
+* How would you enforce mutation-testing thresholds for critical business logic without making the pipeline prohibitively slow?
+* How would you detect tests that pass only because of execution order, static state, shared files, or reused database connections?
+* How would you design a test-impact analysis system that identifies affected tests while preserving confidence in cross-module behavior?
+* How would you manage test reliability when CI agents are ephemeral and test execution is distributed across workers?
+
+**Integration Testing**
+* Design an integration-testing architecture for dozens of microservices with databases, Kafka, caches, and external providers.
+* How would you test eventual consistency, duplicate message delivery, retries, and out-of-order events deterministically?
+* How would you validate distributed transaction behavior and compensating actions when one service fails midway through a workflow?
+* How would you simulate dependency timeouts, network partitions, resource exhaustion, and partial service outages in automated tests?
+* How would you isolate parallel integration-test runs while controlling the cost of provisioning realistic dependencies?
+
+**API Testing**
+* Design an API testing strategy for hundreds of REST endpoints across multiple versions, authentication models, and tenant boundaries.
+* How would you generate property-based and fuzz tests to discover invalid-input, boundary-condition, and serialization defects?
+* How would you test API idempotency when requests are retried after network timeouts but the original result is unknown?
+* How would you detect authorization flaws involving object-level access, role changes, tenant isolation, and indirect resource references?
+* How would you validate compatibility when APIs evolve independently of their clients and providers?
+
+**Contract Testing**
+* Design a contract-testing architecture for a large microservices ecosystem where consumers and providers deploy independently.
+* How would you prevent a contract verification race when a consumer publishes a new contract while a provider release is already in progress?
+* How would you support backward-incompatible contract changes through staged migration and consumer adoption tracking?
+* How would you handle contracts for asynchronous Kafka events, schema evolution, and message compatibility?
+* How would you distinguish a genuine contract violation from an environment-specific failure in provider verification?
+
+**End-to-End Testing**
+* Design an E2E strategy that validates critical business journeys without relying on a slow, fragile, full-system suite for every pull request.
+* How would you control nondeterminism from distributed processing, eventual consistency, clocks, and external service responses?
+* How would you diagnose intermittent E2E failures that occur only under parallel execution?
+* How would you use service virtualization, controlled test data, and selective real dependencies to balance realism and reliability?
+* How would you establish traceability from a failed E2E assertion to the responsible service, database operation, and deployment?
+
+**Smoke Testing**
+* Design a risk-based smoke-testing system that verifies application health, critical workflows, dependencies, and deployment correctness after each release.
+* How would you make smoke tests safe for production when workflows involve payments, notifications, or irreversible operations?
+* How would you distinguish a genuine release failure from a transient infrastructure issue without delaying rollback decisions?
+* How would you implement regional smoke tests after a multi-region rollout and prevent traffic from reaching an unhealthy region?
+* How would you prevent smoke-test success from masking failures in asynchronous consumers or scheduled jobs?
+
+**Regression Testing**
+* Design a regression-selection engine that uses code changes, dependency graphs, historical failures, and risk classifications to prioritize tests.
+* How would you prove that test-suite optimization does not reduce defect detection for high-risk business workflows?
+* How would you use mutation testing, change coverage, and production defect history to improve regression effectiveness?
+* How would you test backward compatibility across several concurrently supported application and database versions?
+* How would you maintain a reliable regression suite when shared environments, third-party APIs, and test data are unstable?
+
+**Performance Testing**
+* Design a performance-testing framework that combines load, stress, spike, soak, and capacity tests with automated release gates.
+* How would you compare performance results when test agents, datasets, traffic distributions, and cloud capacity vary between runs?
+* How would you detect performance regressions in distributed systems where the bottleneck moves between services and dependencies?
+* How would you test graceful degradation and recovery when downstream services become slow or intermittently unavailable?
+* How would you prevent a performance-test pipeline from generating misleading results due to cache warming, connection pooling, or insufficient load generation?
+* How would you define statistically defensible performance regression thresholds for noisy environments?
+
+**Security Testing**
+* Design a DevSecOps pipeline that combines code scanning, dependency analysis, infrastructure scanning, container scanning, dynamic testing, and runtime verification.
+* How would you prevent malicious changes to the pipeline itself from bypassing required security gates?
+* How would you prioritize vulnerabilities using exploitability, exposure, business criticality, and compensating controls?
+* How would you test authorization and tenant isolation across multiple microservices without exposing real customer data?
+* How would you securely validate production deployments when security tests require privileged access or sensitive configuration?
+* How would you manage false positives and exceptions while preserving auditability and preventing permanent waivers?
+
+**Infrastructure Testing**
+* Design an automated test framework for cloud infrastructure modules that covers correctness, security, resilience, and cost controls.
+* How would you test infrastructure recovery during regional failures without disrupting production?
+* How would you validate IAM boundaries and network isolation using automated negative tests?
+* How would you test infrastructure changes when cloud-provider APIs, quotas, and resource availability are nondeterministic?
+* How would you design drift tests that distinguish intentional emergency changes from unauthorized configuration changes?
+* How would you verify that infrastructure policies remain effective as modules and cloud-provider APIs evolve?
+
+**Terraform Testing**
+* Design a Terraform module-testing strategy combining static analysis, policy checks, plan assertions, integration tests, and teardown verification.
+* How would you test Terraform modules that manage stateful resources whose replacement could cause data loss?
+* How would you detect and prevent destructive plans caused by state drift, provider upgrades, or changes in resource identity?
+* How would you securely execute cloud-backed Terraform tests using short-lived credentials and isolated state?
+* How would you test module compatibility across multiple provider versions and environment-specific inputs?
+* How would you prevent test cleanup from deleting resources that are shared or owned by another pipeline?
+
+**Container Testing**
+* Design a container-validation pipeline covering build reproducibility, image provenance, vulnerability scanning, runtime restrictions, and software supply-chain integrity.
+* How would you verify that an image remains secure when a base-image vulnerability is disclosed after the original build?
+* How would you test graceful shutdown and data integrity when containers are killed, rescheduled, or terminated during active requests?
+* How would you test resource exhaustion, read-only filesystems, dropped capabilities, and non-root execution without masking real application requirements?
+* How would you prevent compromised build dependencies or image registries from introducing untrusted artifacts?
+* How would you establish that the image deployed in production is exactly the image that passed validation?
+
+**Kubernetes Testing**
+* Design a Kubernetes testing strategy covering manifest validation, policy enforcement, admission controls, workload resilience, and application-level verification.
+* How would you test behavior during node failure, pod eviction, rolling updates, and simultaneous dependency outages?
+* How would you validate RBAC and network-policy boundaries through automated positive and negative tests?
+* How would you test Helm chart upgrades and rollbacks when persistent volumes and custom resources are involved?
+* How would you test autoscaling under burst traffic while accounting for startup delays, readiness probes, and cluster capacity?
+* How would you validate Kubernetes operator reconciliation and recovery from partially applied custom resources?
+
+**Deployment Verification**
+* Design a progressive-delivery verification framework that combines canary analysis, business metrics, health probes, and automated rollback.
+* How would you correlate a production regression with a specific release when multiple services deploy independently?
+* How would you prevent rollback automation from causing a release loop or undoing a newer successful deployment?
+* How would you verify deployment consistency across regions when rollout progress and dependency health differ?
+* How would you implement verification for database migrations, asynchronous consumers, scheduled jobs, and background processing—not only HTTP health endpoints?
+* How would you define safe deployment-abort criteria that account for noisy telemetry and delayed business outcomes?
+
+**Production Testing**
+* Design a production-validation strategy using synthetic monitoring, canary releases, feature flags, and real-user metrics while minimizing customer risk.
+* How would you test resilience through controlled fault injection without violating availability or compliance requirements?
+* How would you ensure synthetic production tests cannot modify real customer records or trigger real financial transactions?
+* How would you detect release regressions in one tenant or region when global aggregate metrics appear healthy?
+* How would you establish governance, audit trails, kill switches, and authorization for production experiments?
+* How would you validate a production recovery or failover exercise and demonstrate that service-level objectives remain protected?

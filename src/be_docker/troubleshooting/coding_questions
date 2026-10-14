@@ -1,0 +1,30 @@
+* Write a Java utility that executes a diagnostic command and captures its standard output, standard error, and exit code.
+* Write a Java program that parses Docker container status output and identifies stopped containers.
+* Write a Java utility that reads container logs and extracts ERROR and FATAL messages.
+* Write a Java program that detects repeated error messages in application logs within a configurable time window.
+* Implement a Spring Boot REST endpoint that reports application health and dependency connectivity.
+* Implement a Spring Boot health indicator that checks whether a database connection is available.
+* Write a Java service that checks the availability of a configured HTTP endpoint and records response time.
+* Implement a Java retry mechanism with exponential backoff for temporary failures when calling another service.
+* Write a Spring Boot client that handles connection-refused, timeout, and HTTP 5xx errors with appropriate logging.
+* Implement a Java utility that parses application logs and counts errors by exception type.
+* Write a Java program that monitors a log file and detects when a specific error pattern appears repeatedly.
+* Implement a Spring Boot endpoint that exposes application version, build number, and startup time for deployment diagnostics.
+* Write a Java utility that compares expected environment variables against the variables supplied to an application.
+* Implement configuration validation that prevents a Spring Boot application from starting when required environment properties are missing.
+* Write a Java program that checks whether a configured TCP port is reachable within a timeout.
+* Implement a Spring Boot scheduled task that periodically checks database connectivity and records failures.
+* Write a Java program that measures API latency and reports average, minimum, maximum, and percentile response times.
+* Implement a circuit breaker around a REST client to prevent repeated calls to an unhealthy downstream service.
+* Write a Spring Boot exception handler that returns consistent error responses and logs diagnostic details without exposing sensitive information.
+* Implement a Java utility that parses JSON application logs and groups failures by service, severity, and timestamp.
+* Write a program that detects a high rate of application errors over a sliding time window.
+* Implement a Spring Boot readiness endpoint that checks essential dependencies without performing expensive operations on every request.
+* Write a Java service that records correlation IDs and propagates them across HTTP requests for troubleshooting distributed calls.
+* Implement a timeout and cancellation strategy for a Java HTTP client to prevent requests from hanging indefinitely.
+* Write a Java program that reads a thread dump file and searches for blocked threads and deadlock indicators.
+* Implement a Java log-processing utility that detects repeated OutOfMemoryError and connection-pool exhaustion messages.
+* Write a Spring Boot integration test that verifies application startup, health endpoints, and database connectivity using Testcontainers.
+* Create an integration test that verifies a Spring Boot service returns a controlled error when its downstream dependency is unavailable.
+* Write a Java utility that checks disk-space thresholds and raises an alert when available storage falls below a configured limit.
+* Implement a Spring Boot diagnostic component that collects application health, dependency status, recent error counts, and response-time metrics into a single report.

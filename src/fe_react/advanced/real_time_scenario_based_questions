@@ -1,0 +1,30 @@
+* A React component re-renders hundreds of times unexpectedly. How would you identify the cause and fix it?
+* A child component re-renders whenever its parent renders, even when its props appear unchanged. How would you investigate?
+* A useEffect hook runs repeatedly and causes an infinite request loop. How would you resolve it?
+* An asynchronous API response overwrites newer data with an older response. How would you prevent the race condition?
+* A search page becomes slow when users type rapidly. How would you optimize input handling and rendering?
+* A dashboard contains thousands of rows and becomes unresponsive while scrolling. How would you improve performance?
+* A shared Context provider causes unrelated components to re-render. How would you redesign the state structure?
+* A component displays stale values inside a timer callback. How would you diagnose the stale closure?
+* A route loads a large bundle and delays the initial page display. How would you implement code splitting?
+* A lazy-loaded component displays a blank screen while loading. How would you handle Suspense and error states?
+* A production application encounters a rendering error that breaks an entire page. How would you isolate the failure?
+* A server-rendered page displays different content after hydration. How would you diagnose and resolve the mismatch?
+* A user rapidly switches between records, but the previous record's data appears briefly. How would you prevent this behavior?
+* A form has hundreds of fields and becomes slow during input. How would you optimize its rendering and validation?
+* An application uses several Context providers and becomes difficult to maintain. How would you reorganize its state management?
+* A custom Hook works in one component but causes duplicate subscriptions in another. How would you investigate the implementation?
+* A React application has a large JavaScript bundle despite using lazy loading. How would you analyze the bundle and improve it?
+* A team wants to migrate a large React application from class components to function components. How would you plan the migration?
+* A modal must render outside its parent container while preserving event handling. How would you implement it?
+* An autocomplete component must support keyboard navigation, accessibility, and asynchronous suggestions. How would you design it?
+* A component library has breaking changes that affect multiple applications. How would you improve API compatibility and versioning?
+* A React application needs optimistic updates for editing records. How would you handle rollback and conflicting server responses?
+* A third-party state store causes inconsistent UI updates. How would you investigate subscription behavior and external-store integration?
+* A micro-frontend application loads multiple React versions and experiences runtime issues. How would you resolve the dependency conflict?
+* A server-rendered application needs to protect sensitive data from being exposed to the browser. How would you design data boundaries?
+* A React application experiences layout shifts during lazy loading. How would you improve loading placeholders and layout stability?
+* A production page is slow even though components are memoized. How would you determine whether memoization is helping?
+* A team wants to use concurrent features for a large filtering operation. How would you apply transitions or deferred values appropriately?
+* An Error Boundary does not catch an error from an asynchronous callback. How would you handle that failure?
+* You are responsible for improving the architecture of a large React application. Which performance, maintainability, and testing improvements would you prioritize?

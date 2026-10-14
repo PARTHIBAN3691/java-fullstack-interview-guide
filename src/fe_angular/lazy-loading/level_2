@@ -1,0 +1,30 @@
+* Explain how Angular Router resolves and loads a lazy-loaded route internally.
+* What happens during dynamic import when Angular loads a lazy-loaded feature?
+* How does lazy loading affect initial JavaScript bundle size and subsequent network requests?
+* How would you design a route architecture for a large enterprise Angular application?
+* How do you decide which features should be lazy-loaded and which should be eagerly loaded?
+* How does route-level dependency injection affect service instances in lazy-loaded routes?
+* How can lazy-loaded feature providers accidentally create multiple service instances?
+* How do you share state between lazy-loaded features without introducing tight coupling?
+* How do CanMatch guards differ from CanActivate guards when protecting lazy-loaded routes?
+* How do you combine authentication, authorization, and lazy loading securely?
+* Why should route guards not be treated as the only security boundary?
+* How do you implement selective preloading based on user roles or application usage?
+* How would you implement a custom preloading strategy based on network conditions?
+* How do you prevent unnecessary preloading of rarely used or restricted features?
+* How do lazy loading and Angular server-side rendering interact?
+* What considerations apply to lazy loading in an Angular application using hydration?
+* How do you handle lazy-loaded chunk failures after a new deployment?
+* Why can stale browser caches cause dynamic import failures after deployment?
+* How would you implement recovery from a ChunkLoadError without causing reload loops?
+* How do lazy loading and service workers affect application update behavior?
+* How do you analyze route-level bundle splitting using Angular build statistics?
+* How do you optimize lazy-loaded features that still contain unexpectedly large bundles?
+* How do shared dependencies affect the size of lazy-loaded chunks?
+* How can a poorly designed shared module reduce the benefits of lazy loading?
+* How do you avoid duplicate dependencies across lazy-loaded feature bundles?
+* How would you design lazy-loaded routes for a micro-frontend architecture?
+* What are the trade-offs between route-based lazy loading and component-level lazy loading?
+* How do you test route loading, preloading, and guard behavior in a complex application?
+* How would you investigate a lazy-loaded route that is fast locally but slow in production?
+* How would you combine lazy loading, preloading, caching, and route guards for optimal performance?

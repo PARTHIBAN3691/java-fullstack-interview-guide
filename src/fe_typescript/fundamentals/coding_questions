@@ -1,0 +1,30 @@
+* Declare variables using var, let, and const and demonstrate their differences.
+* Write a program that demonstrates type inference and explicit type annotations.
+* Create variables using string, number, boolean, null, and undefined types.
+* Write a program that demonstrates the differences between any and unknown.
+* Create a function that accepts a union of string and number and handles both types safely.
+* Define an interface for an Employee with id, name, and salary properties.
+* Create a type alias for a product and use it to declare multiple product objects.
+* Write a program demonstrating optional and readonly properties.
+* Create an array of employees using an interface.
+* Create a tuple representing a user's name, age, and active status.
+* Define an enum for order status and use it in a function.
+* Create a union type for payment methods and handle each method separately.
+* Implement a discriminated union for API success and error responses.
+* Write a function that uses typeof to narrow a union type.
+* Write a function that uses instanceof to distinguish between class instances.
+* Implement a custom type guard that checks whether an object contains an email property.
+* Create a type alias using keyof to represent the keys of an object.
+* Use typeof to derive a TypeScript type from an existing object.
+* Create a configuration object using as const and demonstrate literal type inference.
+* Use the satisfies operator to validate a configuration object while preserving its inferred type.
+* Implement a custom utility type that makes all properties of an interface optional.
+* Implement a custom utility type that selects specific properties from an existing type.
+* Create a generic function that returns the first element of an array.
+* Implement a recursive DeepReadonly utility type for nested objects.
+* Create a function that accepts mutually exclusive properties using union types.
+* Implement exhaustive checking for a union type using the never type.
+* Create a branded type for a user ID to distinguish it from an ordinary string.
+* Define a generic API response type that supports success and failure cases.
+* Write a type-safe function that retrieves an object's property using keyof and indexed access types.
+* Create a reusable domain model for an e-commerce application using interfaces, generics, union types, and utility types.

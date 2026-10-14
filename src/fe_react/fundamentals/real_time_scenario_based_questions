@@ -1,0 +1,30 @@
+* A React component does not update after its data changes. How would you investigate the issue?
+* A parent component updates its state, and many child components re-render unnecessarily. How would you optimize the application?
+* A list displays incorrect items after sorting or deleting records. How would you investigate the key usage?
+* A component unexpectedly loses its state after a parent re-renders. What could cause this?
+* Your application contains deeply nested components that pass the same props through several levels. How would you improve the design?
+* A large list makes the page slow when rendering thousands of items. What optimization strategies would you consider?
+* A component continuously re-renders and causes the browser to become unresponsive. How would you debug it?
+* A React application displays different content on the server and client during hydration. How would you investigate the mismatch?
+* Your application works in development but behaves differently in production. How would you debug the issue?
+* A reusable component has too many props and complex conditional logic. How would you refactor it?
+* A developer directly modifies an object stored in state, but React does not update the UI as expected. How would you fix it?
+* Your application needs to share authentication information across many components. How would you design the component structure?
+* A child component needs to update data owned by its parent. How would you implement the data flow?
+* A dashboard contains several independent widgets with their own state. How would you structure the components?
+* Your application contains repeated JSX and similar UI logic across multiple pages. How would you improve reusability?
+* A component uses array indexes as keys, and input values move to the wrong rows after deletion. Why does this happen?
+* A React application has slow initial rendering and a large JavaScript bundle. How would you improve the loading experience?
+* Your application needs server-rendered pages for search engine optimization. What rendering strategy would you consider?
+* A component's state resets when switching between two views. How would you preserve or intentionally reset the state?
+* An application uses Context API for frequently changing data, causing excessive re-renders. How would you redesign it?
+* Your team has difficulty identifying which component causes performance issues. Which tools and techniques would you use?
+* A component combines data fetching, business logic, and complex UI rendering. How would you separate its responsibilities?
+* A UI update is expensive but does not need to happen immediately. How would you use React's transition features?
+* A React application must support both server-rendered and interactive client components. What architectural decisions would you make?
+* Your application needs reusable layouts with shared headers, sidebars, and page content. How would you structure the components?
+* A developer places side effects directly in the component body. What problems can occur, and how would you correct the design?
+* Your application renders duplicate content because the same data is processed in multiple components. How would you improve the data flow?
+* A component's props change frequently, but its rendered output rarely changes. How would you evaluate memoization?
+* Your team is migrating a legacy application to React. How would you introduce React incrementally?
+* How would you decide whether a UI feature belongs in a component, a custom hook, context, or an external state management library?

@@ -1,0 +1,29 @@
+* A Java producer that normally publishes thousands of events per second starts receiving throttling errors. How would you investigate and resolve the issue?
+* An Event Hubs consumer is processing events much slower than they are arriving. How would you identify the bottleneck and reduce consumer lag?
+* A consumer application crashes after processing an event but before updating its checkpoint. What happens when the application restarts, and how would you prevent duplicate business operations?
+* A consumer updates its checkpoint before completing a database transaction, and the application crashes immediately afterward. How would you recover the missing business operation?
+* One partition contains most of the traffic while other partitions remain underutilized. How would you diagnose and fix the partition imbalance?
+* A payment-processing consumer processes the same transaction event more than once after a restart. How would you redesign the consumer for idempotent processing?
+* A production consumer stops receiving events even though producers continue publishing successfully. How would you investigate the consumer group, partition ownership, checkpoints, and permissions?
+* Multiple consumer instances are unexpectedly processing overlapping event ranges. How would you investigate checkpointing and partition ownership?
+* A Java application experiences intermittent timeouts while publishing event batches. How would you troubleshoot network connectivity, service throttling, and batch size?
+* A producer receives a timeout after sending an event and cannot determine whether the event was accepted. How would you design retry handling to avoid duplicate business effects?
+* A consumer falls behind during a sudden traffic spike and cannot catch up after the spike ends. How would you scale the system and identify persistent bottlenecks?
+* A new consumer deployment starts reading from the beginning of the retained event stream instead of the latest checkpoint. How would you investigate and correct the checkpoint configuration?
+* A consumer must replay events from a specific time to rebuild a reporting database. How would you perform the replay without disrupting existing consumers?
+* An event stream contains malformed records that repeatedly cause consumer failures. How would you isolate bad events and allow valid events to continue processing?
+* A downstream database becomes unavailable for 45 minutes while Event Hubs continues ingesting events. How would you design buffering, recovery, and catch-up processing?
+* A producer and consumer use different versions of an event schema, causing deserialization failures after a deployment. How would you restore compatibility?
+* A Java consumer uses too much memory while processing large event batches. How would you profile the application and optimize memory usage?
+* A production Event Hubs workload suddenly incurs much higher costs. How would you investigate throughput usage, capacity, traffic patterns, and consumer behavior?
+* A business requires per-customer event ordering, but increasing the number of partitions changes event distribution. How would you preserve ordering while scaling throughput?
+* A critical Event Hubs namespace becomes unavailable in one Azure region. How would you fail over producers and consumers and verify data continuity?
+* Event Hubs Capture files are arriving late in Azure Data Lake Storage, delaying downstream analytics. How would you investigate the capture configuration and pipeline dependencies?
+* An Event Hubs consumer has low CPU usage but high end-to-end processing latency. How would you identify whether the delay comes from polling, checkpointing, network calls, or the downstream database?
+* A Java application authenticates successfully in development but receives authorization errors in production. How would you investigate Entra ID permissions, managed identity, and RBAC assignments?
+* A new consumer group is introduced for analytics and unexpectedly increases the workload's cost. How would you evaluate consumer-group usage and optimize the architecture?
+* A business-critical stream must be processed at least once, but duplicate financial transactions are unacceptable. How would you design the event-processing and database transaction boundaries?
+* A consumer repeatedly loses ownership of partitions after deployment, causing processing interruptions. How would you troubleshoot rebalancing and improve deployment stability?
+* A team wants to migrate an existing Kafka application to Azure Event Hubs without changing its business logic. How would you assess protocol compatibility, consumer behavior, and operational differences?
+* A streaming pipeline using Event Hubs and Databricks produces inconsistent aggregate results after a job restart. How would you investigate offsets, checkpoints, and duplicate processing?
+* A security audit discovers that multiple applications share the same Event Hubs connection string. How would you migrate to individual identities and least-privilege access?

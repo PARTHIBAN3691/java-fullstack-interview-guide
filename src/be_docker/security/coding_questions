@@ -1,0 +1,30 @@
+* Write a production-oriented Dockerfile for a Spring Boot application that runs as a non-root user.
+* Write a multi-stage Dockerfile that builds a Java application and excludes Maven, the JDK, and source files from the final runtime image.
+* Write a Dockerfile that uses a pinned Java base-image version and avoids the latest tag.
+* Write a Dockerfile that runs the application with a read-only root filesystem and uses a dedicated writable temporary directory.
+* Write a Docker Compose configuration that drops unnecessary Linux capabilities and prevents privilege escalation where supported.
+* Write a Docker Compose configuration that applies CPU and memory limits to a Spring Boot container.
+* Write a Docker Compose file that isolates a PostgreSQL database on an internal network and restricts published ports.
+* Write a Dockerfile that uses BuildKit secret mounts to access a private Maven repository without embedding credentials in image layers.
+* Write a Dockerfile and .dockerignore file that prevent local secrets, Git metadata, and build artifacts from entering the image build context.
+* Write a CI pipeline that scans a Spring Boot Docker image for operating-system and Java dependency vulnerabilities.
+* Write a shell script that fails a CI build when an image scan reports vulnerabilities above a configurable severity threshold.
+* Write a shell script that checks whether a Docker container is running as root and reports its effective user.
+* Write a script that inspects a container's privileged mode, capabilities, network mode, mounted volumes, and published ports.
+* Write a Docker security validation script that checks whether the final image contains unexpected build tools or sensitive files.
+* Write a CI pipeline that authenticates to a private registry using a secret store and publishes an image only after tests and scans succeed.
+* Write a CI/CD configuration that tags images with a Git commit identifier and deploys them using immutable digests.
+* Write a pipeline that generates a software bill of materials for a Java image and stores it with the release artifacts.
+* Write a pipeline that signs a container image and verifies its signature before deployment.
+* Write a Docker Compose configuration that supplies application secrets through a supported secret-management mechanism rather than hardcoding passwords.
+* Write a Spring Boot configuration example that obtains database credentials from externally injected configuration without logging them.
+* Write a Java logging example that redacts passwords, access tokens, and API keys from application logs.
+* Write a Spring Boot WebClient configuration that uses TLS certificate validation and configurable connection and response timeouts.
+* Write a Docker Compose configuration that supports TLS termination through a reverse proxy and restricts direct access to backend services.
+* Write a shell script that checks whether production containers use approved images and run with the required security settings.
+* Write a script that detects containers mounting the Docker socket and reports the associated security risk.
+* Write a shell script that compares an image's digest against an approved release digest before deployment.
+* Write a CI pipeline that blocks images built from unapproved base images or containing prohibited packages.
+* Write a script that inventories running containers, image digests, configured users, published ports, and resource limits for an audit report.
+* Write an automated policy-validation example that rejects privileged containers and requires approved image signatures before deployment.
+* Write a complete secure CI/CD pipeline for a Spring Boot microservice that includes multi-stage builds, secret handling, vulnerability scanning, SBOM generation, image signing, least-privilege deployment, and release verification.

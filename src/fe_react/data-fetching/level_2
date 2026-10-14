@@ -1,0 +1,30 @@
+* How does React's rendering lifecycle affect data-fetching strategies?
+* What problems can occur when data fetching is performed directly during rendering?
+* How would you design a scalable data-fetching architecture for a large React application?
+* How would you implement request deduplication across multiple components?
+* How would you implement client-side caching for API responses?
+* What is cache invalidation, and why is it difficult?
+* How would you implement stale-while-revalidate behavior?
+* How do TanStack Query and SWR simplify server-state management?
+* What is the difference between server state and client state?
+* How would you decide between useEffect(), a custom hook, and TanStack Query?
+* How do query keys work in TanStack Query?
+* How would you invalidate and refetch cached queries after a mutation?
+* How would you implement optimistic updates with rollback?
+* How would you manage dependent queries in TanStack Query?
+* How would you implement infinite queries for large datasets?
+* How would you configure retry behavior for different API errors?
+* How would you prevent retrying non-recoverable HTTP errors?
+* How would you handle concurrent requests that update the same resource?
+* How would you avoid race conditions when users trigger rapid searches?
+* How would you coordinate cancellation across multiple API requests?
+* How would you handle authentication refresh flows with concurrent failed requests?
+* How would you avoid duplicate token refresh requests?
+* How would you design a resilient data-fetching layer with timeouts, retries, and exponential backoff?
+* How do React Strict Mode and development-only effect re-runs affect API calls?
+* How do Suspense and framework-based data fetching differ from fetching inside useEffect()?
+* How would you fetch data efficiently in a server-rendered React application?
+* What data-fetching considerations apply to React Server Components?
+* How would you prevent sensitive API data from leaking between server-rendered requests?
+* How would you optimize data fetching for a dashboard with many independent widgets?
+* How would you monitor, profile, and debug API performance in a production React application?

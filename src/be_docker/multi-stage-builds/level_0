@@ -1,0 +1,30 @@
+* What is a multi-stage build in Docker?
+* Why do we use multi-stage builds in Docker?
+* What is the difference between a single-stage build and a multi-stage build?
+* What is the purpose of the FROM instruction in a multi-stage Dockerfile?
+* How do you define multiple stages in a Dockerfile?
+* What is the purpose of the AS keyword in a FROM instruction?
+* What does the --from option do in the COPY instruction?
+* How do you copy files from one build stage to another?
+* What is the difference between a build stage and a final runtime stage?
+* Can a Dockerfile contain multiple FROM instructions?
+* What is the purpose of the final stage in a multi-stage build?
+* How does a multi-stage build help reduce Docker image size?
+* What is a build stage name, and why should you use one?
+* Can you copy a compiled Java JAR from one stage to another?
+* Why is a JDK often used in the build stage and a JRE or runtime image in the final stage?
+* What is the difference between a JDK and a JRE?
+* How do you build a multi-stage Docker image using the docker build command?
+* How do you specify a Dockerfile when building a multi-stage image?
+* Can you use different base images for different stages?
+* Can one stage use the output of another stage?
+* What happens if the stage name specified in COPY --from does not exist?
+* What is the role of Maven in a Java multi-stage Docker build?
+* How can Gradle be used in a multi-stage Docker build?
+* Do build tools need to be installed in the final runtime image?
+* How can multi-stage builds improve the security of a Java application image?
+* What is the difference between copying a JAR and copying compiled class files?
+* How do you expose a Spring Boot application's port in the final stage?
+* How do you start a Spring Boot JAR in the final stage?
+* Can you build a Java application in one stage and run it in another?
+* What are the basic steps to create a multi-stage Dockerfile for Spring Boot?

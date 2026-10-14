@@ -1,0 +1,30 @@
+* How does module.exports work internally in CommonJS?
+* How does Node.js cache modules loaded using require()?
+* What happens when the same CommonJS module is required multiple times?
+* How does module caching differ between CommonJS and ES modules?
+* What is the difference between named exports and default exports?
+* How do you rename an imported named export in ES modules?
+* How do you import all named exports using a namespace import?
+* How do you export multiple values from an ES module?
+* How do you import a CommonJS module into an ES module?
+* How do you import an ES module from a CommonJS module?
+* What is dynamic import() in JavaScript?
+* Can dynamic import() be used in both CommonJS and ES modules?
+* How do you use top-level await in an ES module?
+* Why is top-level await unavailable in traditional CommonJS modules?
+* How do relative and absolute module paths differ in Node.js?
+* How does Node.js resolve a package imported by name?
+* What is the difference between a package entry point and a module entry point?
+* What are the exports and main fields in package.json?
+* How does the exports field control package entry points?
+* What is the difference between the main and exports fields in package.json?
+* How do conditional exports support CommonJS and ES module consumers?
+* What is the purpose of the import and require conditions in package.json exports?
+* How do you handle circular dependencies in CommonJS?
+* How are circular dependencies handled differently in ES modules?
+* What is the difference between live bindings and copied values in module exports?
+* How do you mock CommonJS modules during unit testing?
+* How do you mock ES modules during unit testing?
+* How do you configure a Node.js project to use ES modules consistently?
+* What problems can occur when mixing CommonJS and ES modules?
+* How would you migrate a CommonJS application to ES modules?

@@ -1,0 +1,30 @@
+* A Spring Boot application begins experiencing slow queries after its customer table grows to hundreds of millions of rows. How would you determine whether sharding is necessary?
+* A newly deployed sharded application sends most requests to one database node. How would you investigate the shard-key selection and routing algorithm?
+* One enterprise customer generates significantly more traffic than all other customers, causing a hot shard. How would you redistribute the workload without disrupting other tenants?
+* A new shard is added to the cluster, but existing data remains concentrated on the original nodes. How would you rebalance the data safely?
+* A shard migration is in progress when new customer orders continue arriving. How would you prevent lost writes and duplicate records during migration?
+* A Java service routes a customer's read to one shard and their write to another. How would you investigate and correct the shard-routing logic?
+* A shard registry is temporarily unavailable, preventing application instances from resolving shard locations. How would you maintain availability without using stale mappings unsafely?
+* A shard's primary database fails while its replica is lagging. How would you determine whether to promote the replica and handle potential data loss?
+* A request times out during a cross-shard money transfer, and the application cannot determine whether one or both updates committed. How would you recover safely?
+* A business operation requires updating an order on one shard and inventory on another. How would you design consistency and compensation handling?
+* A global search API must search customer data stored across many shards. How would you design query fan-out, result merging, timeouts, and pagination?
+* A reporting query calculates total revenue across hundreds of shards and times out. How would you redesign aggregation and reporting?
+* A unique email constraint is enforced independently on each shard, allowing duplicate email addresses across the system. How would you implement global uniqueness?
+* The application needs globally unique order IDs that can be generated concurrently on every shard. How would you choose an ID-generation strategy?
+* A paginated API returns duplicate or missing records because data changes across shards between page requests. How would you design stable pagination?
+* A Spring Boot application uses multiple DataSources, but connection pools on a few shards are exhausted while others remain idle. How would you investigate routing and pool configuration?
+* A shard experiences high disk usage while other shards have plenty of free space. How would you identify the data skew and plan redistribution?
+* A database schema change succeeds on some shards but fails on others. How would you recover and maintain compatibility across application versions?
+* A deployment changes the shard-key calculation, causing existing customer records to become unreachable. How would you plan a safe shard-key migration?
+* A shard migration copies records successfully but misses updates that occur during the final cutover. How would you validate consistency and prevent data loss?
+* A cross-shard JOIN creates excessive network traffic and high response latency. How would you redesign the data model or query workflow?
+* A large tenant must be moved from a shared shard to a dedicated shard. How would you migrate its data, update routing, and prevent cross-tenant access?
+* A shard node becomes unavailable for several minutes, causing request failures for all customers assigned to it. How would you design graceful degradation and recovery?
+* A retry mechanism creates duplicate orders when the original shard transaction succeeds but the response is lost. How would you implement idempotency?
+* A shard-routing cache contains outdated mappings after rebalancing. How would you refresh routing metadata safely across multiple application instances?
+* A sudden increase in traffic causes shard connection pools and database CPU usage to reach their limits. How would you apply backpressure and distribute traffic?
+* A disaster recovery exercise requires restoring one shard without affecting the rest of the cluster. How would you plan and validate the recovery?
+* A tenant-based sharding strategy works well initially, but thousands of small tenants and a few large tenants create uneven resource usage. How would you redesign tenant placement?
+* A sharded system needs consistent audit records for transactions that span multiple services and shards. How would you design audit persistence and correlation?
+* How would you investigate, remediate, and prevent recurring production incidents involving hot shards, routing errors, migration failures, and cross-shard transaction problems?

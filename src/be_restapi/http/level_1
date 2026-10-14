@@ -1,0 +1,30 @@
+* What is the difference between HTTP/1.0, HTTP/1.1, HTTP/2, and HTTP/3?
+* How does the HTTP request-response lifecycle work?
+* What makes an HTTP method safe?
+* What makes an HTTP method idempotent?
+* Which HTTP methods are considered safe and idempotent?
+* Why is POST generally not considered idempotent?
+* How can PUT be used to create or update a resource?
+* When should PATCH be preferred over PUT?
+* What is the difference between HTTP 200 and HTTP 204?
+* What is the difference between HTTP 401 and HTTP 403?
+* What is the difference between HTTP 400 and HTTP 422?
+* When should a REST API return HTTP 409 Conflict?
+* When should a REST API return HTTP 429 Too Many Requests?
+* What is the difference between HTTP 500 and HTTP 503?
+* How should a REST API handle unsupported HTTP methods?
+* What is the purpose of the Allow response header?
+* How does HTTP content negotiation work?
+* What is the difference between Content-Type and Accept?
+* What is HTTP keep-alive, and how does it improve performance?
+* What is the difference between persistent and non-persistent HTTP connections?
+* How does HTTP caching work?
+* What is the difference between Cache-Control and Expires?
+* How do ETag and Last-Modified support conditional requests?
+* What is the purpose of the Location header after creating a resource?
+* How does HTTP redirection work?
+* What is the difference between HTTP status codes 301, 302, 307, and 308?
+* How do cookies work in HTTP communication?
+* What is the role of TLS in HTTPS?
+* How do connection timeouts and read timeouts differ in HTTP clients?
+* How do you handle HTTP errors when calling external REST APIs from Java?

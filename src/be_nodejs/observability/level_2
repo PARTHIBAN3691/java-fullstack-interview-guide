@@ -1,0 +1,30 @@
+* Explain how you would design a complete observability architecture for a high-traffic Node.js platform.
+* How would you implement end-to-end distributed tracing across multiple Node.js microservices?
+* How does OpenTelemetry context propagation work across asynchronous operations?
+* How would you troubleshoot missing spans in an asynchronous Node.js application?
+* How would you instrument custom business operations using OpenTelemetry spans and attributes?
+* How do you prevent high-cardinality labels from overwhelming a metrics backend?
+* How would you choose between head-based and tail-based trace sampling?
+* What are the trade-offs between collecting all traces and applying sampling?
+* How would you design a logging pipeline that handles millions of log events per minute?
+* How would you prevent synchronous logging from blocking the Node.js event loop?
+* How would you manage backpressure when exporting telemetry data?
+* What happens when an OpenTelemetry collector or telemetry backend becomes unavailable?
+* How would you prevent observability failures from affecting application availability?
+* How do you minimize telemetry overhead in latency-sensitive Node.js services?
+* How would you detect memory leaks using heap snapshots and time-series metrics?
+* How would you diagnose high CPU usage caused by event-loop blocking?
+* How would you correlate CPU profiles, garbage collection, traces, and application logs?
+* How would you design alerts that reduce false positives and alert fatigue?
+* How do you define SLOs for APIs with different latency and availability requirements?
+* How would you implement multi-window, multi-burn-rate alerting for an SLO?
+* How would you troubleshoot a p99 latency increase when average latency remains normal?
+* How would you distinguish application latency from network, database, and downstream-service latency?
+* How would you design observability for a distributed system spanning multiple regions?
+* How would you secure telemetry pipelines containing potentially sensitive application data?
+* How would you implement log redaction and attribute filtering centrally?
+* How would you control observability costs without losing critical diagnostic information?
+* How would you design telemetry retention policies for logs, metrics, and traces?
+* How would you instrument queue-based processing and trace messages across asynchronous boundaries?
+* How would you troubleshoot trace-context loss across message queues and background workers?
+* How would you establish observability standards and reusable instrumentation libraries across an enterprise Node.js platform?

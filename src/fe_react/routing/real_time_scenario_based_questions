@@ -1,0 +1,30 @@
+* A user logs in successfully but is redirected to the home page instead of the requested page. How would you fix it?
+* A user can access the dashboard by entering its URL directly without logging in. How would you prevent this?
+* Your application works when navigating through links but shows a 404 error when refreshing a nested URL. How would you resolve it?
+* A user clicks the browser Back button, but the application does not display the expected page. How would you troubleshoot it?
+* You need to redirect users to different dashboards based on their roles. How would you implement this?
+* A user should return to the original page after logging in. How would you preserve and restore the intended destination?
+* Your application has 100 routes, and the initial JavaScript bundle is too large. How would you optimize routing?
+* A navigation menu should highlight the active route, including its nested pages. How would you implement it?
+* A user changes a URL parameter manually and accesses another customer's data. How would you address this security issue?
+* A product details page uses a product ID in the URL. How would you fetch and display the corresponding product?
+* A page should preserve its filters and pagination when the user navigates away and returns. How would you implement it?
+* A user enters an invalid route. How would you display a custom 404 page?
+* An application has public pages, authenticated pages, and administrator-only pages. How would you structure the routes?
+* A user attempts to leave a form with unsaved changes. How would you warn them before navigation?
+* Your application has a common sidebar for all dashboard pages but a different layout for login pages. How would you design the routes?
+* A page takes too long to load because it fetches data after rendering. How could route loaders help?
+* An API request fails while a route is loading. How would you display an appropriate error page?
+* A user opens a deep link from an email but gets redirected incorrectly. How would you debug it?
+* A navigation action needs to pass temporary information without adding it to the URL. How would you implement it?
+* Your application must support multiple languages with language codes in the URL. How would you structure the routes?
+* A route should be accessible only when a user has a specific permission. How would you implement permission-based routing?
+* A user switches accounts, but the previous account's page remains visible. How would you prevent stale or unauthorized data from appearing?
+* You need to create breadcrumbs automatically from nested routes. How would you approach the implementation?
+* A route component repeatedly remounts during navigation, causing form data to reset. How would you investigate and fix it?
+* A dashboard contains several independent sections that should load on demand. How would you organize route-level code splitting?
+* Your team wants a centralized route configuration instead of defining routes throughout the application. How would you design it?
+* A user opens the same page with different query parameters, but the displayed results do not update. How would you troubleshoot it?
+* A React application uses BrowserRouter behind a reverse proxy. What server and proxy configurations would you verify?
+* A user loses their search results when navigating to a detail page and returning. How would you preserve the search state?
+* You are designing routing for a large e-commerce application with products, categories, carts, checkout, and admin pages. How would you organize the route hierarchy?

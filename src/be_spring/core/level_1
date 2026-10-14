@@ -1,0 +1,30 @@
+* How does the Spring IoC container create and manage beans internally?
+* How does constructor-based Dependency Injection work in Spring?
+* How does Spring resolve dependencies when multiple beans implement the same interface?
+* What happens when multiple beans of the same type exist without @Primary or @Qualifier?
+* How does Spring perform component scanning?
+* What is the difference between @Bean and @Component?
+* What is the difference between @Configuration and @Component?
+* How does Spring process @Configuration classes?
+* What is the difference between eager initialization and lazy initialization of beans?
+* How do you configure lazy initialization using @Lazy?
+* What is the difference between singleton bean scope and the Singleton design pattern?
+* How does Spring manage the lifecycle of prototype-scoped beans?
+* What are BeanPostProcessor and BeanFactoryPostProcessor?
+* What is the difference between BeanPostProcessor and BeanFactoryPostProcessor?
+* What is the purpose of InitializingBean and DisposableBean?
+* What is the difference between @PostConstruct and InitializingBean?
+* How do you resolve circular dependencies in Spring?
+* Why is constructor-based circular dependency difficult for Spring to resolve?
+* What is the purpose of the @DependsOn annotation?
+* How does Spring handle exceptions during bean creation?
+* What is the role of ApplicationContextAware and BeanNameAware?
+* What is the difference between ApplicationContextAware and EnvironmentAware?
+* How do you publish and listen to application events in Spring?
+* What are ApplicationEvent and ApplicationListener?
+* How does the @EventListener annotation work?
+* What is the purpose of the Environment abstraction in Spring?
+* How does Spring resolve placeholders using @Value?
+* How do profiles work in the Spring Framework?
+* How does Spring manage dependencies between beans?
+* How would you unit test a Spring-managed service?

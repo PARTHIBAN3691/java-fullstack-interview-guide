@@ -1,0 +1,30 @@
+* Your Node.js API becomes slow when the number of concurrent requests increases. How would you identify the bottleneck?
+* A single CPU-intensive task causes all API requests to become unresponsive. How would you solve the problem?
+* Your application works correctly in development but crashes frequently in production. How would you investigate it?
+* A Node.js service consumes increasing memory over several hours. How would you identify and fix the memory leak?
+* Your API response time increases even though database queries are fast. What Node.js-level issues would you investigate?
+* A callback-based function executes its callback multiple times. How would you prevent duplicate execution?
+* An asynchronous operation fails, but the error is not caught by the existing try/catch block. Why does this happen, and how would you fix it?
+* Your application crashes because of an unhandled promise rejection. How would you investigate and prevent recurrence?
+* A scheduled task using setInterval() starts running multiple times concurrently because previous executions have not finished. How would you prevent overlap?
+* Your service becomes unresponsive because of excessive process.nextTick() calls. How would you diagnose and resolve the issue?
+* A file-processing operation consumes excessive memory when handling large files. How would you redesign it?
+* Your application receives SIGTERM during deployment and loses in-flight requests. How would you implement graceful shutdown?
+* A Node.js application behaves differently after a module is modified during runtime. How could module caching be involved?
+* Your service works on Windows but fails on Linux because of module imports or file paths. How would you troubleshoot it?
+* A third-party npm package introduces a security vulnerability. How would you assess and resolve the risk?
+* Two asynchronous requests update the same account balance and produce an incorrect result. How would you prevent the race condition?
+* Your application performs well on one CPU core but cannot use the remaining CPU cores effectively. How would you scale it?
+* A worker thread crashes while processing a task. How would you detect the failure and recover safely?
+* A Node.js application produces excessive console output and experiences performance degradation. How would you improve logging?
+* Your API receives unexpectedly large JSON payloads and experiences high CPU usage. How would you protect it?
+* A service fails intermittently because an external API responds slowly. How would you introduce timeouts and resilience?
+* A Node.js application has high event-loop latency but low CPU usage. What could cause this behavior?
+* Your application uses EventEmitter extensively and reports a possible memory leak warning. How would you investigate it?
+* A production deployment leaves old Node.js processes running and causes port conflicts. How would you correct the deployment and shutdown flow?
+* Your service has inconsistent environment variables across development, testing, and production. How would you standardize configuration?
+* A promise chain silently stops processing some records. How would you identify the missing error handling?
+* A background job processes messages more quickly than the downstream service can handle them. How would you control the processing rate?
+* Your Node.js service must process thousands of independent tasks while limiting resource usage. How would you design the concurrency model?
+* A dependency update introduces breaking changes in your application. How would you manage package versions and deployment risk?
+* You need to design a production-ready Node.js backend from scratch. How would you structure modules, configuration, logging, testing, security, and deployment?

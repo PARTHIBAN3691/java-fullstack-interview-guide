@@ -1,0 +1,30 @@
+* A Spring Boot application deployed on GKE starts returning HTTP 503 errors after a release. How would you investigate the issue?
+* A Java pod repeatedly restarts with an OutOfMemoryError. How would you identify whether the problem is caused by the JVM heap, native memory, or container limits?
+* A deployment works in the development environment but fails in production. How would you compare configuration, secrets, permissions, and resource settings?
+* A GKE application becomes slow during peak traffic even though the number of replicas increases. How would you investigate CPU throttling, JVM behavior, database connections, and downstream dependencies?
+* A Kubernetes deployment remains stuck in the Pending state. How would you identify whether the issue is caused by insufficient resources, scheduling constraints, or persistent volumes?
+* A pod enters CrashLoopBackOff immediately after deployment. How would you identify the root cause using Kubernetes events, container logs, and probe configuration?
+* A rolling deployment causes intermittent downtime because new pods receive traffic before the application is ready. How would you correct the deployment strategy?
+* A GKE cluster runs out of available CPU during a traffic spike. How would you determine whether to scale the pods, node pools, or both?
+* Horizontal Pod Autoscaling does not increase the number of replicas even though users report slow response times. How would you troubleshoot the metrics and scaling configuration?
+* Cluster Autoscaler does not add nodes even though several pods are Pending. What scheduling constraints and autoscaler events would you inspect?
+* A Java application receives permission-denied errors when accessing Cloud Storage from GKE. How would you troubleshoot Workload Identity Federation and IAM configuration?
+* A pod can connect to other pods but cannot access an external API. How would you investigate DNS, routing, firewall rules, NAT, and network policies?
+* A service is reachable from inside the cluster but not from the internet. How would you troubleshoot its service type, Gateway or Ingress configuration, firewall rules, and health checks?
+* An application experiences intermittent DNS failures when communicating with another microservice. How would you investigate Kubernetes DNS and service discovery?
+* A node upgrade unexpectedly disrupts several production pods. How would you improve PodDisruptionBudgets, replica placement, and upgrade strategy?
+* A GKE cluster upgrade causes application failures because of Kubernetes API or deprecated resource changes. How would you plan a safer upgrade?
+* A container image deployment fails because GKE cannot pull the image from Artifact Registry. How would you investigate repository permissions, image paths, and image tags?
+* A production pod is using significantly more memory than expected, but JVM heap usage appears normal. How would you investigate native memory, direct buffers, thread stacks, and container metrics?
+* A microservice experiences long garbage collection pauses after moving to GKE. How would you tune JVM settings and container resource limits?
+* A Kubernetes Secret was accidentally exposed through deployment configuration. How would you contain the exposure, rotate credentials, and prevent recurrence?
+* A team deploys a container image containing a critical vulnerability. How would you enforce image scanning and deployment admission controls?
+* Two teams deploy workloads into the same GKE cluster and interfere with each other's resource usage. How would you implement quotas, namespaces, RBAC, and network policies?
+* A Java application needs to connect securely to Cloud SQL without storing database passwords in plain-text configuration. How would you design authentication and connection management?
+* A canary release introduces elevated error rates while the old version remains healthy. How would you detect the problem and automatically roll back?
+* A GKE workload experiences intermittent latency when calling another service deployed in a different zone. How would you investigate network paths, pod placement, and service dependencies?
+* Cloud Monitoring reports rising costs despite stable application traffic. How would you identify oversized node pools, excessive replicas, resource requests, and idle workloads?
+* A regional outage affects a production GKE application. How would you fail over traffic and maintain access to databases, secrets, and container images?
+* A CI/CD pipeline successfully builds an image but fails to deploy it to GKE. How would you investigate deployment credentials, IAM roles, cluster access, and rollout status?
+* A Kubernetes service routes traffic unevenly across replicas. How would you investigate readiness, endpoint configuration, connection reuse, and load-balancing behavior?
+* A security audit requires proof that only approved images and authorized identities can run production workloads. How would you design the enforcement and audit process?

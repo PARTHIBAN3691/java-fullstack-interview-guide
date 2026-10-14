@@ -1,0 +1,30 @@
+* Explain how Node.js reads file contents into memory using Buffers.
+* How do you read a file using async/await and fs/promises?
+* How do you handle errors when reading and writing files asynchronously?
+* How do you read a file line by line without loading the entire file into memory?
+* How do you write a large amount of data to a file efficiently?
+* What is the difference between fs.createReadStream() and fs.readFile()?
+* What is the difference between fs.createWriteStream() and fs.writeFile()?
+* How do you configure highWaterMark for readable and writable streams?
+* What is backpressure in file stream processing?
+* How do you use stream.pipeline() to copy or transform a file?
+* How do you process a file in fixed-size Buffer chunks?
+* How do you read and modify specific bytes in a file?
+* How do you use fs.open(), fs.read(), and fs.close() together?
+* What is the difference between fs.read() and fs.readFile()?
+* How do you append data safely when multiple operations may occur concurrently?
+* How do you check file permissions and metadata using fs.stat()?
+* How do you watch a file for changes using fs.watch()?
+* What are the limitations of fs.watch()?
+* How do you process multiple files concurrently without exhausting system resources?
+* How do you recursively list files in a directory?
+* How do you copy a directory and its contents recursively?
+* How do you handle large file uploads in an Express.js application?
+* How do you save an uploaded file without loading the entire file into memory?
+* How do you validate file size and file type before processing an upload?
+* How do you safely construct file paths using the path module?
+* How do you prevent path traversal attacks during file operations?
+* How do you handle UTF-8 characters that are split across stream chunks?
+* How do you convert a file's contents between UTF-8, hexadecimal, and Base64 formats?
+* How do you write unit tests for file operations using temporary files?
+* How do you manage file streams and clean up resources when an error occurs?

@@ -1,0 +1,30 @@
+* A Spring Boot Pod enters CrashLoopBackOff immediately after deployment. How would you investigate the logs, exit code, configuration, and startup dependencies?
+* A Java application works locally but fails in Kubernetes with a database connection timeout. What would you check first?
+* A Pod remains Pending even though the cluster has several nodes. How would you identify the scheduling constraint?
+* A deployment is stuck with one old ReplicaSet and one new ReplicaSet. How would you investigate the rollout?
+* A production API suddenly returns HTTP 503 errors. How would you isolate whether the cause is the application, Service, Ingress, or load balancer?
+* A Java container is repeatedly OOMKilled even though the JVM heap limit is below the container memory limit. How would you investigate native memory and total container usage?
+* Application latency increases sharply after scaling from five to twenty replicas. How would you identify the bottleneck?
+* A Pod is Ready, but its API requests consistently fail. How would you verify whether the readiness probe reflects actual application health?
+* A Kubernetes Service has no endpoints after a successful deployment. How would you investigate label selectors and readiness status?
+* DNS resolution works for one Service but fails for another in the same namespace. How would you diagnose the difference?
+* Several Pods on the same node become unavailable simultaneously. What node-level checks would you perform?
+* A node reports DiskPressure, and Pods begin getting evicted. How would you identify and resolve the disk usage problem?
+* A persistent volume is attached to a previous node and cannot be mounted by the replacement Pod. How would you recover safely?
+* An HPA reports unknown CPU utilization and refuses to scale. How would you troubleshoot the metrics pipeline and resource requests?
+* A Deployment repeatedly restarts during rolling updates because of failed startup probes. How would you determine whether the timeout or application startup is the problem?
+* A Java microservice experiences intermittent connection resets when calling another Service. How would you investigate connection pooling, timeouts, DNS, and network behavior?
+* A new NetworkPolicy causes the payment service to lose database connectivity. How would you restore service while maintaining least-privilege access?
+* A ConfigMap was updated, but the application continues using the old configuration. How would you identify the reload or restart requirement?
+* A Secret was rotated, but the Java application continues authenticating with the previous credentials. How would you troubleshoot the update mechanism?
+* A CronJob reports successful completion, but the expected database records are missing. How would you investigate the Job logs, database transaction, and application logic?
+* A StatefulSet database Pod is stuck in Terminating, preventing a replacement Pod from starting. How would you investigate storage attachment and graceful shutdown?
+* After a cluster upgrade, Pods cannot pull images or resolve Service DNS names. How would you prioritize investigation across registry access, networking, and cluster components?
+* A production application starts returning HTTP 500 errors after a configuration change. How would you correlate deployment revisions, logs, metrics, and configuration?
+* A container exits with code 137 during peak traffic. How would you determine whether the cause is memory exhaustion or an external termination?
+* The Kubernetes API server is responsive, but creating Pods takes several minutes. How would you investigate admission webhooks, scheduling, storage, and control-plane latency?
+* A service mesh upgrade causes TLS handshake errors between Java microservices. How would you inspect certificates, trust configuration, and proxy logs?
+* A security incident reveals an unknown Pod running in production. How would you identify its creator, image, ServiceAccount, network activity, and affected resources?
+* A cluster autoscaler cannot add nodes because of cloud quota limits. How would you manage the immediate workload impact and plan remediation?
+* A Java application suffers long garbage-collection pauses without a corresponding CPU spike. How would you collect and analyze JVM diagnostics?
+* A critical production outage affects multiple microservices. How would you coordinate triage, mitigation, root-cause analysis, and post-incident prevention?

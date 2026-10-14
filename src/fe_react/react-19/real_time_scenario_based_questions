@@ -1,0 +1,30 @@
+* A form requires manual loading-state management and repeated boilerplate. How would you refactor it using React 19 Actions?
+* A user submits a form and clicks the submit button multiple times before the request completes. How would you prevent duplicate submissions?
+* A form submission returns field-level validation errors from the server. How would you display them using useActionState?
+* A form should disable its submit button while an Action is pending. How would you implement this with useFormStatus?
+* A user adds a product to a cart and expects the UI to update immediately before the server responds. How would you use useOptimistic?
+* An optimistic update fails because the server rejects the operation. How would you restore the correct UI state?
+* A component reads a Promise using the use Hook and displays a fallback while the Promise is pending. How would you structure Suspense?
+* A Promise passed to the use Hook rejects unexpectedly. How would you handle the error?
+* A developer calls use inside a conditional branch and wants to understand why this differs from traditional Hooks. How would you explain it?
+* A reusable component library uses forwardRef extensively. What changes would you make when migrating to React 19?
+* A callback ref needs to remove an event listener when the referenced DOM element is detached. How would you implement its cleanup?
+* A page uses Server Components to render product details but needs interactive quantity controls. How would you divide the components?
+* A Server Component attempts to use useState and an onClick handler. How would you redesign the component boundary?
+* A Client Component receives a non-serializable function from a Server Component. How would you resolve the boundary issue?
+* A Server Function accepts an order amount and user identifier from the client. How would you validate and authorize the request?
+* A React 19 application displays incorrect page titles when navigating between routes. How would you investigate metadata handling?
+* A stylesheet loads too late and causes visible layout changes. How could React 19 stylesheet support and resource hints help?
+* A production application experiences hydration errors after upgrading to React 19. How would you identify the source?
+* A custom web component behaves differently when rendered in React 19. How would you test property and attribute handling?
+* A form needs optimistic feedback, server validation, pending indicators, and success messages. How would you combine React 19 Hooks?
+* A Server Function completes successfully, but the UI still displays stale data. How would you coordinate the update and data revalidation?
+* A developer places useFormStatus in a component outside the form it needs to observe. Why does this fail, and how would you fix it?
+* A React 19 application shows a fallback repeatedly because a Promise is recreated on every render. How would you investigate and fix it?
+* An application upgrade breaks tests that mock form submission behavior. How would you adapt the tests for Actions?
+* A large application mixes React 18-era patterns with React 19 features. How would you migrate incrementally while reducing regression risk?
+* A team wants to move more rendering to Server Components but still needs interactive filtering. How would you choose the server-client boundary?
+* A user can invoke a Server Function with modified request data. What security controls should be added?
+* A form submission succeeds, but the form does not reset as expected. How would you investigate the Action's result and form behavior?
+* A pending form state is not announced to assistive technology. How would you improve accessibility?
+* A React 19 release introduces a performance regression in a form-heavy application. How would you profile and isolate the cause?

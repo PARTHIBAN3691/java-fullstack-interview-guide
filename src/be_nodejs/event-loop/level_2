@@ -1,0 +1,30 @@
+* Explain the internal architecture of the Node.js event loop using V8 and libuv.
+* Describe the timers, pending callbacks, idle/prepare, poll, check, and close callbacks phases.
+* How does the event-loop phase execution model differ across Node.js versions?
+* How did the libuv timer-processing changes in Node.js 20 affect timer and setImmediate() ordering?
+* How do the call stack, microtask queue, next-tick queue, and event-loop phases interact?
+* Why can process.nextTick() callbacks execute before Promise microtasks in CommonJS?
+* Why can Promise callbacks execute before process.nextTick() callbacks during ES module evaluation?
+* How does recursive microtask scheduling affect event-loop fairness?
+* How would you prevent event-loop starvation in a high-throughput application?
+* How does the poll phase decide whether to wait for I/O or continue processing?
+* How do operating-system readiness notifications interact with libuv's event loop?
+* How does the libuv thread pool differ from the operating system's asynchronous I/O mechanisms?
+* Why can increasing UV_THREADPOOL_SIZE improve some workloads but reduce overall performance?
+* How would you diagnose thread-pool saturation separately from event-loop blocking?
+* How do DNS lookup functions differ in their use of the libuv thread pool?
+* How can synchronous file-system calls affect request latency in a production server?
+* How would you measure event-loop utilization and event-loop delay under load?
+* What is the difference between eventLoopUtilization() and monitorEventLoopDelay()?
+* How can garbage collection pauses affect event-loop latency?
+* How would you identify a CPU-bound function that blocks the event loop?
+* How do worker threads and child processes differ when offloading CPU-intensive tasks?
+* How would you design a worker pool to avoid excessive thread creation and task queuing?
+* How does backpressure help protect event-loop responsiveness in streaming applications?
+* How would you design a fair task scheduler for CPU-intensive work in Node.js?
+* How can large JSON parsing and serialization operations block the event loop?
+* How would you investigate high event-loop delay when CPU utilization appears low?
+* How do timers behave when the event loop is busy for longer than their scheduled delay?
+* How would you explain event-loop behavior when an asynchronous callback schedules more microtasks?
+* How does the event loop affect throughput and tail latency in a high-concurrency API?
+* What architectural decisions help maintain predictable event-loop latency in production?

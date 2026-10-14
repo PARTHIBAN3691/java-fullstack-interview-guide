@@ -1,0 +1,30 @@
+* Explain the internal architecture and control loop of Kubernetes HPA.
+* How does the HPA controller calculate the desired replica count?
+* How does Kubernetes handle delayed or missing metrics during autoscaling?
+* How would you design autoscaling for a high-throughput Java microservices platform?
+* How do CPU throttling and JVM garbage collection affect autoscaling decisions?
+* How would you select appropriate CPU and memory requests for a Spring Boot application?
+* How do JVM heap settings interact with Kubernetes memory limits and VPA recommendations?
+* What are the trade-offs between HPA and VPA for Java applications?
+* Why can enabling HPA and VPA together be problematic when both control CPU or memory?
+* How would you design a safe autoscaling strategy for latency-sensitive applications?
+* How do HPA stabilization windows and scaling policies affect application stability?
+* How would you prevent autoscaling oscillation under fluctuating traffic?
+* How do you scale an application when CPU utilization does not correlate with incoming traffic?
+* How would you use custom metrics and external metrics to scale a microservice?
+* How would you design autoscaling for Kafka consumers based on consumer lag?
+* How would you design event-driven autoscaling using KEDA?
+* What challenges arise when scaling Kafka consumers beyond the number of assigned partitions?
+* How would you scale a database-dependent application without overwhelming the database?
+* How do connection pools and downstream service limits affect scaling decisions?
+* How would you design autoscaling for applications with long startup times?
+* How do readiness probes and startup probes affect traffic distribution during scale-up?
+* How would you combine HPA, Cluster Autoscaler, and node provisioning for bursty workloads?
+* What happens when a cloud provider cannot provision additional nodes quickly enough?
+* How would you design autoscaling for workloads with strict availability requirements?
+* How do PodDisruptionBudgets influence node scale-down and cluster maintenance?
+* How would you configure topology spread constraints to preserve availability during scaling?
+* How do you estimate the maximum replica count from cluster capacity and application resource requirements?
+* How would you implement predictive autoscaling for workloads with known traffic patterns?
+* How do you troubleshoot a system where HPA scales Pods successfully but application latency continues increasing?
+* How would you measure the cost and performance impact of autoscaling in production?

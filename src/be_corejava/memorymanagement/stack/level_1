@@ -1,0 +1,21 @@
+
+* Explain the lifecycle of a stack frame during a method call.
+* How does stack memory handle nested method calls?
+* How are method parameters and local variables managed in a stack frame?
+* What happens to local reference variables when a method completes?
+* If a local reference variable disappears from the stack, does the referenced object immediately disappear from the heap?
+* How does recursion consume stack memory?
+* Why can infinite recursion cause `StackOverflowError`?
+* What is the difference between stack memory exhaustion and heap memory exhaustion?
+* How does stack memory allocation differ from heap memory allocation?
+* How does each thread's stack operate independently in a multithreaded Java application?
+* What is the relationship between stack frames and exception propagation?
+* How does the JVM use stack traces to identify method calls?
+* What happens to stack frames when an exception is thrown and not caught in the current method?
+* How does a thread's stack size affect the maximum recursion depth?
+* What is the purpose of the `-Xss` JVM option?
+* How can you identify stack-related problems using a Java thread dump?
+* What is the difference between a Java thread stack and the native stack used by the JVM?
+* How can deeply nested method calls affect application performance?
+* How does stack memory behave when a large number of threads are created?
+* Why can increasing the stack size reduce the maximum number of threads supported by a process?

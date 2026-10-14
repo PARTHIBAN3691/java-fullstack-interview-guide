@@ -1,0 +1,101 @@
+**LLMOps Fundamentals**
+* How would you design an LLMOps lifecycle covering development, evaluation, deployment, monitoring, and continuous improvement?
+* How would you integrate observability and evaluation into a CI/CD pipeline for AI applications?
+* How would you select LLMOps tooling for a system using multiple model providers and retrieval pipelines?
+* How would you define operational service-level indicators and objectives for an LLM-powered application?
+
+**AI Application Monitoring**
+* How would you design dashboards for application health, model behavior, quality, latency, and cost?
+* How would you correlate infrastructure metrics with model-level failures?
+* How would you configure alert thresholds without generating excessive false alarms?
+* How would you monitor asynchronous AI workflows and streaming responses?
+
+**Prompt and Response Tracing**
+* How would you trace an end-to-end request across an API gateway, prompt template, retrieval service, model provider, and downstream tools?
+* How would you capture prompt templates, resolved variables, model parameters, and response metadata?
+* How would you prevent sensitive data from leaking into tracing platforms while preserving diagnostic value?
+* How would you associate retries and multiple model calls with a single user request?
+
+**Token Usage and Cost Tracking**
+* How would you calculate request-level and tenant-level costs across different model providers?
+* How would you reconcile application-estimated token counts with provider-reported usage?
+* How would you track costs for retries, cached prompts, embeddings, reranking, and agent tool loops?
+* How would you set budgets and alert on unexpected token consumption?
+
+**Latency and Throughput Monitoring**
+* How would you identify whether latency originates from retrieval, model inference, network calls, or application orchestration?
+* How would you monitor streaming latency and inter-token delays?
+* How would you define latency and throughput objectives for requests with widely varying token lengths?
+* How would you investigate increasing p99 latency while average latency remains stable?
+
+**Model Quality Monitoring**
+* How would you monitor answer correctness, groundedness, relevance, and safety after deployment?
+* How would you combine automated evaluators with human review in production monitoring?
+* How would you detect a decline in quality for a specific user segment or business workflow?
+* How would you separate model-quality regressions from changes in input complexity?
+
+**Retrieval and RAG Tracing**
+* How would you trace query rewriting, embedding generation, vector search, metadata filtering, reranking, and final answer generation?
+* How would you record retrieved document identifiers, relevance scores, and retrieval latency?
+* How would you diagnose a RAG response that cites relevant sources but provides an incorrect conclusion?
+* How would you instrument hybrid search and compare its behavior with vector-only retrieval?
+
+**Agent Execution Tracing**
+* How would you represent agent planning, LLM calls, tool executions, and state transitions in a trace?
+* How would you detect repeated tool calls, unnecessary reasoning steps, and agent loops?
+* How would you measure agent task success, tool efficiency, and total execution cost?
+* How would you correlate failures across asynchronous agent steps and external services?
+
+**Evaluation in Production**
+* How would you implement sampled production evaluations without significantly increasing latency or cost?
+* How would you select between synchronous evaluation, asynchronous evaluation, and offline batch evaluation?
+* How would you monitor evaluator reliability and validate automated scores against human judgments?
+* How would you handle evaluation results that arrive after the original user request has completed?
+
+**Model Drift and Data Drift**
+* How would you detect changes in input length, language distribution, user intent, and retrieved content?
+* How would you distinguish data drift from concept drift and model behavior changes?
+* How would you monitor drift when reliable ground-truth labels are delayed or unavailable?
+* How would you decide whether drift requires retraining, prompt changes, retrieval updates, or additional evaluation?
+
+**Feedback Collection**
+* How would you build a feedback pipeline that links user ratings to model versions and original traces?
+* How would you handle duplicate feedback, abusive submissions, missing ratings, and conflicting feedback?
+* How would you use feedback to prioritize quality improvements without treating every negative rating as a model defect?
+* How would you protect user privacy while retaining useful feedback for analysis?
+
+**Incident Management for AI Systems**
+* How would you define incident severity for quality degradation, unsafe outputs, provider outages, and cost spikes?
+* How would you connect alerts to traces, model versions, prompt versions, and recent deployments?
+* How would you create runbooks for provider failures, elevated latency, hallucination spikes, and retrieval failures?
+* How would you conduct a post-incident review and turn the root cause into a regression test?
+
+**Model and Prompt Versioning**
+* How would you version prompts, models, model parameters, embedding models, and retrieval configurations together?
+* How would you reproduce a production response when the model provider does not guarantee deterministic output?
+* How would you compare prompt versions using the same evaluation dataset?
+* How would you roll back a prompt or model change without disrupting in-flight requests?
+
+**Experiment Tracking**
+* How would you track experiments involving different prompts, models, chunking strategies, and retrieval configurations?
+* How would you compare experiments using quality, latency, throughput, and cost metrics?
+* How would you ensure experiments are reproducible across developers and environments?
+* How would you manage experiment artifacts and evaluation datasets for long-running projects?
+
+**AI Release Management**
+* How would you design release gates that combine automated evaluation, safety checks, performance testing, and cost limits?
+* How would you use shadow traffic and canary deployment to evaluate a new model safely?
+* How would you define rollback thresholds for model quality and infrastructure performance?
+* How would you coordinate application-code, prompt, model, and retrieval-index releases?
+
+**OpenTelemetry for AI Applications**
+* How would you instrument a Spring Boot application that calls an LLM provider and a vector database using OpenTelemetry?
+* How would you propagate trace context across asynchronous calls and message queues?
+* How would you define span attributes for model names, token counts, prompt versions, and retrieval operations?
+* How would you export OpenTelemetry telemetry to a backend while controlling data volume and cardinality?
+
+**AI Audit Logs**
+* How would you design an audit trail for prompt changes, model deployments, access to AI tools, and evaluation decisions?
+* How would you implement tamper-resistant audit records and controlled access to them?
+* How would you distinguish operational telemetry from records required for compliance and investigations?
+* How would you audit sensitive tool executions without storing unnecessary confidential payloads?

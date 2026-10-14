@@ -1,0 +1,30 @@
+* How do you implement centralized configuration using Spring Cloud Config Server?
+* How do you connect a Spring Cloud Config Client to a Config Server?
+* How do you store configuration files in a Git repository?
+* How do you organize configuration files for multiple microservices?
+* How do you maintain separate configurations for development, testing, staging, and production?
+* How does a Config Server identify the application name and active profile?
+* How do you configure a service-specific property file in Spring Cloud Config?
+* How do you configure shared properties for multiple microservices?
+* How do you override shared properties for a specific service?
+* How do you secure communication between a Config Server and its clients?
+* How do you authenticate access to a private Git configuration repository?
+* How do you manage database credentials without storing them in source control?
+* How do you integrate a secrets manager with a Spring Boot application?
+* How do you refresh configuration at runtime using Spring Cloud?
+* What is the purpose of @RefreshScope?
+* How does the Spring Cloud Bus support configuration refresh?
+* What is the difference between restarting an application and refreshing its configuration?
+* How do you notify multiple microservices when configuration changes?
+* How do you validate configuration properties at application startup?
+* How do you use @ConfigurationProperties with Bean Validation?
+* How do you handle missing or invalid configuration values?
+* How do you manage configuration changes without restarting every service?
+* How do you configure timeouts, retry settings, and connection pools externally?
+* How do you manage feature flags through configuration?
+* How do you version and review configuration changes?
+* How do you roll back a faulty configuration change?
+* How do you test configuration behavior across different Spring profiles?
+* How do you configure Kubernetes ConfigMaps and Secrets for Spring Boot applications?
+* How do you prevent sensitive configuration values from appearing in application logs?
+* How do you monitor configuration loading and refresh failures?

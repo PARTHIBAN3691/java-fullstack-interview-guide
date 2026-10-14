@@ -1,0 +1,30 @@
+* Write a JavaScript program that demonstrates a simple closure.
+* Write a function that returns another function and accesses a variable from the outer function.
+* Implement a counter using closures with increment(), decrement(), and getValue() methods.
+* Write a program that demonstrates how a closure preserves access to an outer variable after the outer function returns.
+* Write a program that creates two independent counters using the same counter factory.
+* Write a program that demonstrates the difference between var and let in a loop with closures.
+* Write a program that creates button event handlers using closures to display different messages.
+* Implement a function factory that creates customized greeting functions.
+* Write a closure-based bank account that supports deposit(), withdraw(), and getBalance().
+* Implement a private variable using an IIFE and closures.
+* Write a program that demonstrates how multiple closures can share the same outer variable.
+* Implement a closure-based module that exposes public methods but hides internal variables.
+* Write a closure-based function that remembers the number of times it has been called.
+* Implement a memoization function using closures.
+* Implement a closure-based debouncing function.
+* Implement a closure-based throttling function.
+* Write a function that uses closures to create reusable validation rules.
+* Implement a once() utility that ensures a function executes only once.
+* Implement a closure-based cache with get(), set(), and clear() methods.
+* Write a closure-based function that performs currying for a function accepting three arguments.
+* Implement a partial application utility using closures.
+* Write a program that uses closures to preserve a request ID in asynchronous callbacks.
+* Implement a closure-based retry mechanism that remembers the number of attempts.
+* Write a function that creates independent configuration objects using closures.
+* Implement a closure-based rate limiter that restricts how often a function can execute.
+* Write a closure-based cache that expires entries after a configurable duration.
+* Implement a function that creates a private list with add(), remove(), and getItems() methods.
+* Write a program that demonstrates how closures can accidentally retain references to large objects and how to release them.
+* Implement a closure-based function composition utility.
+* Build a closure-based task manager that maintains private task state and exposes methods to add, complete, remove, and list tasks.

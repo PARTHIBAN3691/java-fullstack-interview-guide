@@ -1,0 +1,119 @@
+**Enterprise CI/CD Platform**
+* What are the core components of an enterprise CI/CD platform?
+* How would you standardize CI/CD pipelines across multiple teams?
+* What is the difference between a CI server, an artifact repository, and a deployment platform?
+* How would you manage pipeline templates and reusable workflows?
+
+**Zero-Downtime Deployment Architecture**
+* What is zero-downtime deployment?
+* Compare rolling, blue-green, and canary deployment strategies.
+* What roles do load balancers and health checks play in zero-downtime deployments?
+* How would you handle application startup and readiness during deployment?
+
+**Multi-Region Deployment Platform**
+* What are the main components of a multi-region deployment architecture?
+* What is the difference between active-active and active-passive deployments?
+* How do DNS routing and global load balancing support multi-region applications?
+* What factors influence region selection for production workloads?
+
+**Kubernetes Platform for Multiple Teams**
+* How would you organize Kubernetes namespaces for multiple teams?
+* What are the roles of RBAC, resource quotas, and network policies?
+* How would you separate development, staging, and production workloads?
+* What is the difference between a shared Kubernetes cluster and dedicated clusters?
+
+**Secure DevSecOps Pipeline**
+* What security checks should be included in a DevSecOps pipeline?
+* What are SAST, DAST, SCA, and container image scanning?
+* How should pipeline credentials and deployment permissions be protected?
+* Why should security checks run early in the development lifecycle?
+
+**GitOps-Based Deployment Architecture**
+* What is GitOps, and how does it differ from push-based deployment?
+* What roles do Git repositories and reconciliation controllers play in GitOps?
+* How would you organize application and environment configuration repositories?
+* How does GitOps support deployment traceability and rollback?
+
+**Enterprise Observability Platform**
+* What are the main components of an enterprise observability platform?
+* How do metrics, logs, and distributed traces complement one another?
+* What are SLIs, SLOs, and SLAs?
+* How would you standardize monitoring across multiple applications?
+
+**Centralized Logging for Microservices**
+* Why is centralized logging important for microservices?
+* What are the roles of log agents, collectors, processors, and storage?
+* How would you correlate logs across distributed services?
+* What factors influence log retention and storage costs?
+
+**Highly Available Production Platform**
+* What is high availability, and how does it differ from disaster recovery?
+* How would you eliminate single points of failure?
+* What are the roles of redundancy, health checks, and failover?
+* How would you design availability across application and infrastructure layers?
+
+**Disaster Recovery for Cloud Workloads**
+* What are RTO and RPO?
+* What is the difference between backup, replication, and disaster recovery?
+* How would you classify applications by recovery priority?
+* How do regular disaster recovery tests improve resilience?
+
+**Multi-Cloud DevOps Strategy**
+* What are the main reasons organizations adopt a multi-cloud strategy?
+* What operational challenges arise when using multiple cloud providers?
+* How would you standardize infrastructure provisioning across clouds?
+* What are the trade-offs between portability and cloud-native services?
+
+**Internal Developer Platform**
+* What is an internal developer platform?
+* How does a developer self-service portal improve productivity?
+* What are golden paths and reusable platform templates?
+* How would you measure developer platform adoption?
+
+**Scalable Container Platform**
+* What are the key components of a scalable container platform?
+* How do horizontal pod autoscaling and cluster autoscaling differ?
+* How would you manage container image versions and registries?
+* What factors affect container scheduling and resource utilization?
+
+**Automated Infrastructure Provisioning**
+* What is Infrastructure as Code?
+* How do Terraform and configuration-management tools differ?
+* How would you manage infrastructure state and reusable modules?
+* Why should infrastructure changes be reviewed before applying?
+
+**Secure Secrets-Management Architecture**
+* What is a secrets-management platform?
+* Why should secrets not be stored in source code or container images?
+* How do secret rotation and short-lived credentials improve security?
+* How would applications retrieve secrets securely at runtime?
+
+**Self-Healing Production Platform**
+* What does self-healing mean in production infrastructure?
+* How do health probes and automated restarts support self-healing?
+* What is the difference between liveness and readiness probes?
+* How would you prevent repeated restarts from hiding an underlying problem?
+
+**Low-Latency Deployment Architecture**
+* What factors contribute to deployment latency?
+* How can pipeline stages run in parallel safely?
+* How do artifact caching and dependency caching improve build times?
+* How would you measure end-to-end deployment lead time?
+
+**Cloud Cost Optimization Strategy**
+* What are the main sources of cloud infrastructure cost?
+* How do rightsizing and autoscaling reduce unnecessary expenditure?
+* What are cloud budgets, tagging, and cost allocation?
+* How would you balance cost savings against availability requirements?
+
+**CI/CD for Regulated Financial Applications**
+* What additional controls are required for CI/CD in regulated environments?
+* Why are immutable audit trails important?
+* How should production approvals and segregation of duties work?
+* How would you protect sensitive financial data in test environments?
+
+**Enterprise DevOps Operating Model**
+* What responsibilities belong to development, operations, security, and platform teams?
+* What is the difference between DevOps, SRE, and platform engineering?
+* How would you establish shared ownership of production reliability?
+* Which metrics help evaluate enterprise DevOps maturity?

@@ -1,0 +1,21 @@
+
+* What is Metaspace in Java?
+* Why was Metaspace introduced in Java 8?
+* What memory area did Metaspace replace?
+* What is the difference between PermGen and Metaspace?
+* Where is Metaspace located in the JVM memory architecture?
+* Does Metaspace store Java objects?
+* What type of information is stored in Metaspace?
+* Are class metadata and Java objects stored in the same memory area?
+* Is Metaspace part of Java heap memory?
+* Is Metaspace allocated from native memory?
+* Can Metaspace grow dynamically?
+* What happens when Metaspace runs out of memory?
+* What is `OutOfMemoryError: Metaspace`?
+* How can you configure the maximum Metaspace size?
+* What is the purpose of the `-XX:MetaspaceSize` JVM option?
+* What is the purpose of the `-XX:MaxMetaspaceSize` JVM option?
+* Is Metaspace shared among all threads in a JVM process?
+* What happens to class metadata when a class is unloaded?
+* Can garbage collection help reclaim Metaspace?
+* Which Java applications are more likely to experience Metaspace-related issues?

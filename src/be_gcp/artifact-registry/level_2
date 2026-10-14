@@ -1,0 +1,30 @@
+* How would you design an Artifact Registry strategy for hundreds of microservices across multiple Google Cloud projects?
+* How would you enforce separation between development, staging, and production artifact repositories?
+* How would you implement least-privilege IAM for developers, CI/CD pipelines, and runtime service accounts?
+* How would you design a cross-project artifact access model without granting broad project-level permissions?
+* How would you securely authenticate CI/CD workloads to Artifact Registry without storing service account keys?
+* How would you implement Workload Identity Federation for an external CI/CD platform publishing artifacts?
+* How would you design a multi-region artifact distribution strategy for globally deployed applications?
+* What are the trade-offs between regional repositories and multi-regional repositories?
+* How would you minimize image pull latency for GKE clusters deployed across multiple regions?
+* How would you design a repository structure for shared Java libraries and container images?
+* How would you manage dependency versions across hundreds of Java microservices?
+* How would you prevent dependency confusion and unauthorized upstream package substitution?
+* How would you configure remote repositories to reduce dependency downloads from public registries?
+* How would you design virtual repositories for prioritizing trusted internal dependencies?
+* How would you implement artifact promotion from development to production without rebuilding the image?
+* How would you enforce deployment by immutable digest across the entire release pipeline?
+* How would you integrate Artifact Registry with binary authorization and trusted deployment policies?
+* How would you implement vulnerability scanning and block deployments containing critical vulnerabilities?
+* How would you handle vulnerability findings discovered after an image has already been deployed?
+* How would you design cleanup policies without deleting artifacts required for rollback or compliance?
+* How would you preserve release artifacts to satisfy long-term audit and retention requirements?
+* How would you manage artifact replication or migration between Google Cloud projects and regions?
+* How would you migrate repositories from another container registry while minimizing downtime?
+* How would you troubleshoot permission errors caused by IAM inheritance and cross-project access?
+* How would you troubleshoot Docker authentication failures in an automated build environment?
+* How would you investigate slow image pulls from Artifact Registry during large-scale deployments?
+* How would you design artifact naming and tagging conventions for reproducible releases?
+* How would you detect and prevent accidental overwriting of release artifacts?
+* How would you audit who uploaded, downloaded, or deleted a specific artifact version?
+* How would you estimate and optimize Artifact Registry storage, network, and operational costs?

@@ -1,0 +1,30 @@
+* A user updates their profile but sees the old data immediately afterward. How would you investigate and fix this?
+* A payment succeeds in one service but appears pending in another. How would you maintain consistency?
+* Two users attempt to purchase the last available item simultaneously. How would you prevent overselling?
+* A bank account balance is updated in the primary database but not in a read replica. How should the application behave?
+* A customer transfers money between two accounts, but only one account reflects the transaction. How would you recover safely?
+* Two application instances update the same record concurrently. How would you prevent lost updates?
+* A distributed cache returns outdated account information after a database update. How would you address it?
+* A multi-region application accepts conflicting updates to the same customer record. How would you resolve them?
+* A service retries a request after a timeout, creating duplicate state changes. How would you prevent inconsistencies?
+* A network partition isolates the database leader from some replicas. How should the system handle reads and writes?
+* Two nodes believe they are the current leader. How would you prevent split-brain writes?
+* A newly elected leader receives delayed writes from an older leader. How would you protect the data?
+* A product inventory service and an order service disagree about available stock. How would you reconcile them?
+* An order is saved successfully, but the corresponding event is not published. How would you prevent this inconsistency?
+* An event is delivered twice and processed by multiple consumers. How would you maintain consistent state?
+* Events arrive out of order and cause an incorrect account balance. How would you handle event ordering?
+* A search index is several seconds behind the primary database. What consistency guarantee should the search API provide?
+* A user expects to see their own comments immediately, but the application reads from replicas. How would you solve this?
+* A shopping cart is updated on one device but not immediately visible on another. How would you design synchronization?
+* A distributed database reports successful writes, but a failover loses recent updates. How would you investigate the durability and consistency guarantees?
+* A reporting service shows totals that do not match the transactional database. How would you design reconciliation?
+* A booking system allows two customers to reserve the same seat. Which consistency mechanisms would you introduce?
+* A wallet service must prevent negative balances under concurrent withdrawals. How would you enforce the invariant?
+* A microservice workflow updates three databases and fails after the second update. How would you restore business consistency?
+* A database migration runs while production traffic continues. How would you avoid inconsistent reads and writes?
+* A replica is significantly behind during peak traffic. How should the application route consistency-sensitive requests?
+* A mobile application reconnects after being offline and submits conflicting edits. How would you merge or reject the changes?
+* A distributed lock expires while its original holder is still working. How would you prevent stale updates?
+* A system must support both low-latency reads and accurate financial balances. How would you separate consistency requirements?
+* How would you diagnose an intermittent consistency bug that cannot be reproduced in a local environment?

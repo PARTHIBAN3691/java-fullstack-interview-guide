@@ -1,0 +1,21 @@
+
+* Explain the difference between concurrency and parallel execution with a practical example.
+* How can multiple threads access shared mutable data and cause race conditions?
+* How does the `synchronized` keyword prevent race conditions?
+* What is the difference between synchronized methods and synchronized blocks?
+* What is the difference between intrinsic locks and explicit locks?
+* How does the `ReentrantLock` class differ from `synchronized`?
+* What is the purpose of `Lock`, `tryLock()`, and `unlock()`?
+* What is the difference between `volatile` and `synchronized`?
+* Does declaring a variable as `volatile` make compound operations such as `count++` thread-safe?
+* What is the happens-before relationship in the Java Memory Model?
+* What is the difference between atomicity, visibility, and ordering?
+* What are the different ways to coordinate threads in Java?
+* How do `wait()`, `notify()`, and `notifyAll()` work?
+* Why must `wait()` generally be called inside a loop that checks a condition?
+* What is the difference between `CountDownLatch` and `CyclicBarrier`?
+* What is the purpose of `Semaphore` in concurrent programming?
+* What is the difference between `ConcurrentHashMap` and `HashMap`?
+* How does `AtomicInteger` provide thread-safe updates?
+* What is the difference between `Callable` and `Runnable`?
+* How does `ExecutorService` simplify thread management?

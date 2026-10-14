@@ -1,0 +1,73 @@
+**MCP Fundamentals and Architecture**
+* Implement a simplified MCP client-server interaction using JSON-RPC-style request and response messages.
+* Build a capability registry that records which tools, resources, and prompts are exposed by each connected server.
+* Write unit tests that validate initialization, capability discovery, request correlation, and graceful shutdown.
+
+**MCP Hosts, Clients, and Servers**
+* Implement a host that manages connections to multiple MCP servers and maintains separate client state for each server.
+* Build a connection manager that handles initialization, disconnection, reconnection, and shutdown.
+* Write tests that verify one server's failure does not prevent healthy servers from serving requests.
+
+**MCP Tools**
+* Implement an MCP tool that accepts a validated JSON input schema and returns a structured result.
+* Build a tool registry that supports tool discovery, execution, permission checks, and schema validation.
+* Write an idempotent tool wrapper that handles duplicate requests, timeouts, and uncertain execution outcomes.
+
+**MCP Resources**
+* Implement an MCP resource handler that retrieves a document by URI and enforces user-specific authorization.
+* Build resource listing and retrieval functionality with pagination and structured error responses.
+* Write security tests for invalid URIs, path traversal attempts, unauthorized resources, and cross-tenant access.
+
+**MCP Prompts**
+* Implement a prompt registry that exposes named templates with validated arguments.
+* Build prompt versioning that allows existing clients to continue using a compatible template version.
+* Write tests for missing arguments, invalid input, sensitive prompt exposure, and template compatibility.
+
+**MCP Transport Mechanisms**
+* Implement a basic stdio-based MCP server integration and test its request-response handling.
+* Build a remote MCP client that handles connection timeouts, transport failures, and cancellation.
+* Write tests that distinguish transport errors, malformed protocol messages, and application-level tool errors.
+
+**MCP Server Development**
+* Implement an MCP server that exposes a database lookup tool and a resource retrieval handler.
+* Add input validation, structured error mapping, health checks, and graceful shutdown to an MCP server.
+* Write integration tests that verify tool registration, resource access, malformed requests, and concurrent execution.
+
+**MCP Integration with LLM Applications**
+* Implement an application flow that discovers MCP tools, selects a tool through an LLM interaction, executes it, and returns the result to the model.
+* Build a tool-selection layer that filters available tools based on relevance, schema compatibility, and user permissions.
+* Write tests that verify final answers are grounded in tool results rather than fabricated execution outcomes.
+
+**MCP Integration with Java and Spring Boot**
+* Build a Spring Boot MCP server that exposes a Java service method as a tool with validated request parameters.
+* Implement a Java MCP client that connects to a remote server and invokes a discovered tool.
+* Add Spring Security-based authorization, exception handling, and request correlation to a Spring Boot MCP application.
+* Write integration tests for tool invocation, validation failures, authentication, authorization, and downstream service errors.
+
+**MCP Authentication and Authorization**
+* Implement middleware that validates access tokens and checks permissions before executing an MCP tool.
+* Build a per-tool authorization policy that supports user roles, resource scopes, and read-only versus write operations.
+* Write tests for expired tokens, invalid audiences, insufficient scopes, revoked credentials, and unauthorized tool access.
+
+**MCP Tool Discovery and Execution**
+* Implement dynamic tool discovery and refresh the local registry when the server's capabilities change.
+* Build schema validation that rejects invalid arguments before dispatching a tool request.
+* Implement retry policies that distinguish retryable failures from permanent errors and protect against duplicate side effects.
+* Write tests for stale tool definitions, unsupported tools, malformed results, and execution timeouts.
+
+**MCP Security and Trust Boundaries**
+* Implement an outbound URL validation layer that blocks private network destinations and disallowed redirects for remote MCP connections.
+* Build a tool execution policy that independently validates permissions even when the LLM requests an unauthorized action.
+* Write adversarial tests for malicious tool descriptions, prompt injection in tool results, path traversal, and unauthorized data access.
+
+**MCP Error Handling and Observability**
+* Implement structured logging with request IDs, server identifiers, tool names, execution duration, and sanitized error details.
+* Add metrics for request counts, success and failure rates, latency percentiles, and timeout frequency.
+* Implement distributed tracing across an MCP client, MCP server, and downstream REST API.
+* Write tests that verify sensitive values are redacted from logs and error responses.
+
+**MCP Deployment and Governance**
+* Implement a configuration-driven MCP server registry with approved endpoints, ownership, environment, and risk classifications.
+* Build a policy validator that rejects servers missing required authentication, logging, or authorization configuration.
+* Implement version compatibility checks and a staged rollout mechanism for server and tool schema changes.
+* Write automated compliance tests for server inventory, credential rotation, access reviews, audit records, and decommissioning.

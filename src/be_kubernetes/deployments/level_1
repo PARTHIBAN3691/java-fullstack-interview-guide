@@ -1,0 +1,30 @@
+* How do you create a Deployment using kubectl without writing a YAML file?
+* How do you update the number of replicas in a running Deployment?
+* How do you perform a rolling update for a Java application?
+* How do you roll back a Deployment to its previous revision?
+* How do you view the revision history of a Deployment?
+* What is the difference between RollingUpdate and Recreate strategies?
+* How do maxSurge and maxUnavailable affect a rolling update?
+* How do you configure readiness and liveness probes in a Deployment?
+* How do readiness probes affect rolling updates?
+* How do you configure resource requests and limits for Deployment containers?
+* How do you inject environment variables into a Deployment?
+* How do you mount ConfigMaps and Secrets into Deployment Pods?
+* How do you expose a Deployment using a Kubernetes Service?
+* Why should application traffic generally be routed through a Service instead of directly to Pod IPs?
+* How do labels and selectors connect a Deployment to its ReplicaSets?
+* How do you pause and resume a Deployment rollout?
+* What happens if you update a Deployment's Pod template?
+* Which Deployment changes trigger a new rollout?
+* How do you troubleshoot a Deployment that is stuck progressing?
+* What is the ProgressDeadlineSeconds field used for?
+* How do you configure a Deployment to run across multiple nodes?
+* How do node selectors and affinity rules affect Deployment scheduling?
+* How do PodDisruptionBudgets relate to Deployments?
+* How do you configure graceful termination for a Java application?
+* How do terminationGracePeriodSeconds and preStop hooks work during Pod termination?
+* How do you ensure that a Deployment has enough replicas available during updates?
+* How can you use kubectl diff before applying a Deployment change?
+* What happens when an image tag references an image that cannot be pulled?
+* How do you safely change the environment configuration of a running Deployment?
+* How do you distinguish a Deployment scaling operation from a rolling update?

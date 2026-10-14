@@ -1,0 +1,30 @@
+* Multiple components need the same customer details. How would you share the data through a service?
+* Two unrelated components need to communicate without a direct parent-child relationship. How would you design the service?
+* Multiple components call the same API when they initialize. How would you prevent duplicate requests?
+* An API response should be cached for five minutes. How would you implement caching in a service?
+* The user updates a record, and the cached response becomes outdated. How would you invalidate the cache?
+* A component needs to display a loading spinner while a service call is in progress. How would you manage the loading state?
+* An API fails intermittently. How would you implement retry and error handling in the service?
+* Several components need to react immediately when the logged-in user changes. How would you implement this?
+* A service contains too many responsibilities. How would you split it into smaller services?
+* Two services depend on each other and cause a circular dependency. How would you resolve it?
+* A service works in one component but returns a different state in another. How would you investigate the provider scope?
+* A service is unexpectedly instantiated multiple times. What could be the reason?
+* A lazy-loaded feature needs its own service instance. How would you configure the provider?
+* An application needs different API implementations for development and production. How would you design the providers?
+* A service must use an API URL loaded from runtime configuration. How would you inject that configuration?
+* Several components need to react to authentication logout events. How would you coordinate the services?
+* Multiple HTTP requests receive an expired-token response at the same time. How would you coordinate token refresh?
+* A component is destroyed while a long-running service operation is still active. How would you handle cancellation and cleanup?
+* A service exposes a Subject that components can modify directly. What problems could this cause, and how would you fix it?
+* A service stores user-specific state during server-side rendering. What risks would you consider?
+* A service needs to support both mocked data and real API data during testing. How would you design the provider configuration?
+* A dashboard requires data from four APIs and should show partial results if one API fails. How would you design the service?
+* A shared service retains outdated data after the user switches accounts. How would you prevent cross-user data leakage?
+* An API service needs request timeouts and cancellation. How would you implement them?
+* A service makes API calls from multiple screens, and the same error-handling code is repeated everywhere. How would you improve the design?
+* A component contains business rules that are duplicated in several other components. How would you refactor them into a service?
+* A service has many dependencies and is difficult to unit-test. How would you simplify it?
+* An application has a large number of services. How would you organize them by feature and responsibility?
+* A service should be initialized only when a specific feature is accessed. How would you achieve this?
+* How would you design a reusable service layer for a large enterprise application with authentication, caching, logging, and error handling?

@@ -1,0 +1,30 @@
+* A component does not update after a Redux action is dispatched. How would you troubleshoot the issue?
+* A Redux application has multiple components making the same API request. How would you avoid duplicate requests?
+* A component re-renders whenever any unrelated part of the Redux store changes. How would you optimize it?
+* A reducer accidentally mutates the existing state and causes unexpected behavior. How would you identify and fix it?
+* An API request fails, but the UI continues displaying a loading indicator. How would you handle the pending, fulfilled, and rejected states?
+* A user quickly changes a search term, and older API responses overwrite newer results. How would you prevent this race condition?
+* A shopping cart needs to update immediately before the server confirms the operation. How would you implement optimistic updates?
+* An optimistic update fails on the server. How would you restore the previous state?
+* A large application stores thousands of related entities in nested arrays. How would you restructure the Redux state?
+* A selector creates a new array on every invocation and causes unnecessary re-renders. How would you solve the problem?
+* A dashboard needs to display cached API data and refresh it automatically when necessary. Would you choose RTK Query or createAsyncThunk, and why?
+* A component requires data from several API endpoints. How would you coordinate requests and handle partial failures?
+* A user logs out, but private API data remains in the Redux store. How would you clear sensitive state safely?
+* An access token expires during an API request. How would you implement token refresh and retry behavior?
+* A Redux application needs to maintain a WebSocket connection for live notifications. How would you manage its lifecycle?
+* A team wants to store a Date object and a Promise in Redux state. What issues could arise, and how would you redesign the state?
+* Redux DevTools shows an unexpected state transition after a user action. How would you trace the problem?
+* A persisted Redux store contains outdated data after a new application release. How would you handle persistence migrations?
+* A form has many fields, but every keystroke triggers updates across the application. How would you decide which state belongs in Redux?
+* Two Redux slices need to react to the same business event. How would you implement this without tightly coupling them?
+* A product listing page requires server-side filtering, sorting, pagination, and caching. How would you design the Redux architecture?
+* An API returns duplicate records, and the application needs efficient updates by identifier. How would you use createEntityAdapter?
+* A component dispatches the same asynchronous action repeatedly because of an effect dependency issue. How would you resolve it?
+* A large Redux reducer contains complex business rules and is difficult to test. How would you refactor it?
+* A developer dispatches an action containing a function, causing serializability warnings. How would you correct the implementation?
+* A real-time dashboard receives frequent updates and consumes excessive CPU. How would you batch or optimize state updates?
+* A team is migrating from legacy Redux with handwritten action types and reducers to Redux Toolkit. How would you plan the migration?
+* An API cache must be invalidated when a product is updated. How would you implement this using RTK Query?
+* A user navigates away from a page while a request is still running. How would you cancel the request and prevent unwanted state updates?
+* A production application has slow Redux selectors and frequent component renders. How would you profile and optimize it?

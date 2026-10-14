@@ -1,0 +1,120 @@
+**AWS AI and ML Services**
+* How would you choose between Amazon Bedrock, SageMaker, Textract, and Comprehend for a document-processing application?
+* How would you connect an S3-based document ingestion pipeline to an AI inference workflow?
+* How do Lambda concurrency limits and service quotas affect AI workloads?
+* How would you secure access between an application running on ECS or EKS and an AWS AI service?
+* How would you monitor AI service usage, latency, errors, and costs using AWS-native tools?
+
+**Amazon Bedrock**
+* How would you select a foundation model based on latency, accuracy, context length, and cost?
+* How do model invocation, streaming responses, and asynchronous inference differ?
+* How would you implement retrieval-augmented generation using Bedrock Knowledge Bases?
+* How would you use Bedrock Guardrails to help enforce application-specific safety requirements?
+* How would you configure cross-account access to Bedrock resources securely?
+* How would you handle throttling, model availability issues, and transient API errors?
+* How would you compare on-demand inference with provisioned throughput?
+
+**Amazon SageMaker**
+* How would you build a repeatable model training pipeline using SageMaker?
+* How do SageMaker real-time, serverless, asynchronous, and batch transform inference differ?
+* How would you use SageMaker Model Registry to manage model approvals and deployments?
+* How would you deploy a new model version without interrupting production traffic?
+* How would you monitor prediction latency, endpoint utilization, and model quality?
+* How would you integrate SageMaker pipelines with CI/CD?
+* How would you protect training data and model artifacts stored in S3?
+
+**Azure AI Foundry**
+* How would you organize projects, model deployments, connections, and environments across development and production?
+* How would you evaluate multiple models in Azure AI Foundry before selecting one for production?
+* How would you integrate an Azure AI Foundry application with Azure AI Search?
+* How would you manage identity and permissions for developers, applications, and deployment pipelines?
+* How would you implement prompt flow or an equivalent evaluation workflow for repeatable testing?
+* How would you monitor model calls and diagnose latency or failures across Azure resources?
+
+**Azure OpenAI Service**
+* How do regional availability, deployment types, quotas, and token-per-minute limits influence architecture?
+* How would you implement retry logic for HTTP 429 responses without creating retry storms?
+* How would you secure an application using managed identity instead of a static API key?
+* How would you implement streaming model responses in a Spring Boot API?
+* How would you use content filters and application-level validation together?
+* How would you manage model-version upgrades and deployment changes?
+* How would you isolate Azure OpenAI deployments across multiple environments or business units?
+
+**Google Vertex AI**
+* How would you build a training-to-deployment workflow using Vertex AI pipelines?
+* How do online prediction and batch prediction differ in operational requirements?
+* How would you deploy a model from Model Garden and evaluate it against application-specific requirements?
+* How would you integrate Vertex AI with BigQuery for feature preparation and evaluation?
+* How would you control access using service accounts and IAM?
+* How would you monitor prediction latency, resource usage, and model performance?
+* How would you manage model versions and staged rollouts?
+
+**Google Gemini**
+* How would you choose between Gemini model variants for a latency-sensitive application?
+* How would you process images, audio, video, and text using Gemini multimodal capabilities?
+* How would you implement structured JSON responses and validate them against an application schema?
+* How would you handle safety settings, refusals, and malformed responses?
+* How would you manage context-window limits for long documents or conversations?
+* How would you implement streaming responses and cancellation in a backend service?
+* How would you compare Gemini access through Vertex AI with the Gemini Developer API for an enterprise application?
+
+**Managed Vector Search Services**
+* How would you choose between Amazon OpenSearch Service, Amazon S3 Vectors, Azure AI Search, and Vertex AI Vector Search for a RAG system?
+* How do index dimensions, similarity metrics, and index configuration affect retrieval quality?
+* How would you implement tenant-aware metadata filtering?
+* How would you handle embedding model changes without corrupting existing search results?
+* How would you design a vector ingestion pipeline that supports incremental updates and deletions?
+* How would you measure recall, latency, and cost when comparing vector search configurations?
+
+**Cloud AI Security**
+* How would you design least-privilege access for AI applications and model deployment pipelines?
+* How would you prevent sensitive information from entering prompts, logs, and external model requests?
+* How would you secure data flowing between object storage, vector databases, and model endpoints?
+* How would you use cloud key-management services to manage encryption keys?
+* How would you separate developer access from production inference permissions?
+* How would you detect and investigate unusual AI API usage?
+* How would you address prompt injection and unsafe tool execution in a cloud-hosted RAG application?
+
+**Private AI Networking**
+* How would you connect an application in a private subnet to a managed AI service without public internet access?
+* How do AWS PrivateLink, Azure Private Link, and Google Private Service Connect differ conceptually?
+* How would you configure private DNS and troubleshoot endpoint-resolution failures?
+* How would you connect an on-premises data center to private AI endpoints using VPN or dedicated connectivity?
+* How would you restrict outbound traffic from AI workloads using egress controls?
+* How would you verify that application traffic is using the intended private path?
+
+**Cloud Model Deployment**
+* How would you choose between a managed foundation-model API and a self-hosted model endpoint?
+* How would you implement canary deployment, blue-green deployment, and rollback for models?
+* How would you handle autoscaling when inference traffic is bursty?
+* How would you version model artifacts, configuration, prompts, and preprocessing logic?
+* How would you implement health checks and readiness checks for GPU-backed model servers?
+* How would you reduce cold-start latency for serverless inference?
+* How would you separate model-serving infrastructure from application business logic?
+
+**Multi-Cloud AI Architecture**
+* How would you create a provider-independent interface for Bedrock, Azure OpenAI, and Vertex AI?
+* Which features should be standardized across providers, and which should remain provider-specific?
+* How would you normalize authentication, timeouts, retries, streaming, and error handling?
+* How would you manage model capability differences when routing requests across providers?
+* How would you design data portability and avoid dependence on a single provider's vector database?
+* How would you distribute workloads while accounting for data residency and latency?
+* How would you compare active-active and active-passive multi-cloud AI designs?
+
+**AI Cost Management**
+* How would you estimate monthly inference cost from request volume, token counts, and model pricing?
+* How would you identify expensive prompts, repeated requests, and inefficient retrieval pipelines?
+* How would you set budgets and alerts for each environment, team, and model?
+* How would you decide between smaller models, caching, batching, and provisioned capacity?
+* How would you allocate shared AI costs to business units?
+* How would you monitor cost per successful task rather than cost per API request?
+* How would you prevent runaway costs caused by loops in agent workflows?
+
+**Cloud AI Governance**
+* How would you maintain an inventory of approved models, deployments, owners, and data classifications?
+* How would you enforce environment-specific policies for model access and data retention?
+* How would you establish approval gates for deploying new models or changing prompts?
+* How would you demonstrate compliance using cloud audit logs and deployment records?
+* How would you govern third-party models and their terms of use?
+* How would you assess data residency, retention, and regulatory obligations across providers?
+* How would you track evaluation results, known limitations, and human approvals for AI releases?

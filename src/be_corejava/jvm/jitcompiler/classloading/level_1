@@ -1,0 +1,28 @@
+
+* Explain the class-loading, linking, and initialization phases in detail.
+* What happens during the verification phase of class linking?
+* What is the purpose of preparation during class linking?
+* What happens during the resolution phase?
+* When are static variables assigned their default values and explicit initial values?
+* What is the difference between class initialization and object initialization?
+* When is a Java class initialized by the JVM?
+* Does creating an instance of a class always trigger its initialization?
+* What happens when a class is loaded but never initialized?
+* How does the parent delegation model work in Java class loading?
+* Why does the default ClassLoader delegation model delegate to its parent first?
+* What is the difference between parent delegation and child-first class loading?
+* How can you create a custom ClassLoader?
+* What is the purpose of overriding `findClass()` in a custom ClassLoader?
+* Why is overriding `loadClass()` more complex than overriding `findClass()`?
+* What is the context ClassLoader, and why is it useful?
+* What is the difference between the thread context ClassLoader and the ClassLoader that loaded a class?
+* What is a class-loading constraint in Java?
+* What is the difference between `ClassNotFoundException` and `NoClassDefFoundError`?
+* What is the difference between `ExceptionInInitializerError` and `NoClassDefFoundError`?
+* What is the JIT compilation process?
+* What is the difference between the C1 and C2 JIT compilers in HotSpot?
+* What is a compilation threshold in JIT compilation?
+* What is method inlining, and how does it improve performance?
+* What is the purpose of the HotSpot code cache?
+* What is deoptimization in the JVM?
+* What is the difference between warm-up time and steady-state performance?

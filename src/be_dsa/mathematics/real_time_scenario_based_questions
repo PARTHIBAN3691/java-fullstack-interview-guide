@@ -1,0 +1,30 @@
+* A payment system calculates transaction fees using percentages and integer amounts. How would you avoid floating-point rounding errors?
+* A banking application calculates compound interest for very large principal amounts. Which Java numeric types and mathematical techniques would you use?
+* A service needs to generate unique numeric identifiers using modular arithmetic. What properties would you validate before selecting the algorithm?
+* A reporting system must count prime numbers in a range containing millions of values. Which algorithm would you choose and why?
+* A batch-processing application repeatedly checks whether thousands of numbers are prime. How would you optimize the implementation?
+* A financial application calculates GCD and LCM for large account-related values. How would you prevent overflow?
+* A Java service calculates factorials for inputs up to 10,000. How would you represent and compute the results?
+* A system needs to calculate combinations modulo 1,000,000,007 for millions of queries. How would you preprocess and answer queries efficiently?
+* A scheduling service must find the earliest time when several periodic events occur together. How would you use GCD and LCM?
+* Two distributed jobs run at fixed intervals. How would you calculate when their execution schedules coincide?
+* A cryptographic component needs modular inverses for large integers. How would you determine whether an inverse exists and calculate it?
+* A service calculates powers with exponents containing millions of digits. How would you avoid converting the exponent into a primitive numeric type?
+* A data-processing job computes Fibonacci values for large indices. Which algorithm would you choose to meet strict latency requirements?
+* A system processes millions of queries asking for the prime factorization of numbers up to a fixed limit. What preprocessing strategy would you use?
+* A Java application calculates square roots of large integers and occasionally returns incorrect boundary results. How would you investigate and fix the problem?
+* A billing application produces incorrect results because integer division truncates decimal values. How would you identify and correct the issue?
+* A calculation service intermittently returns negative values when multiplying large integers. How would you diagnose arithmetic overflow?
+* A large-scale analytics service must count values divisible by any of several integers. How would you apply inclusion-exclusion without excessive computation?
+* A service needs to calculate the number of trailing zeros in extremely large factorials without constructing the factorial. How would you solve it?
+* A distributed system uses periodic retry intervals. How would you determine the first common retry time for multiple schedules?
+* A database migration tool needs to group records by common divisibility properties. Which GCD-based techniques could help?
+* A Java application must calculate exact financial values and also perform approximate scientific calculations. How would you choose between BigDecimal, BigInteger, and primitive numeric types?
+* A performance-critical service calculates modular powers millions of times. How would you optimize the implementation and benchmark it?
+* A memory-constrained service needs prime numbers in a large interval. How would you reduce memory usage while maintaining acceptable performance?
+* A production system gives different mathematical results on different platforms. How would you investigate numeric precision, overflow, and type conversion?
+* A service uses a precomputed factorial array but fails when the input limit increases. How would you redesign it for scalability?
+* An API accepts negative numbers and very large integers for digit-based calculations. How would you validate inputs and handle edge cases?
+* A mathematical utility library is shared across several Java microservices. How would you design reusable methods with clear overflow and input-handling contracts?
+* A system calculates modular combinations, but the modulus is not prime. What assumptions in the existing implementation would you revisit?
+* A code review finds that an algorithm uses brute-force divisor checking for every request. How would you improve its time complexity and explain the trade-offs?

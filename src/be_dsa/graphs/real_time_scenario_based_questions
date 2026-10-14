@@ -1,0 +1,30 @@
+* A social networking application must find the shortest connection path between two users. Which graph algorithm would you use and why?
+* A company has millions of users and friendship connections. How would you represent the network efficiently in Java?
+* A messaging service must determine whether two users are connected through any sequence of relationships. How would you solve this?
+* An application must recommend friends based on mutual connections. How would you model and query the graph?
+* A microservices platform has service dependencies. How would you detect circular dependencies before deployment?
+* A build system must execute tasks in dependency order. How would you represent dependencies and determine a valid execution sequence?
+* A project management application must calculate the critical path across dependent tasks. How would you model and analyze the graph?
+* A road navigation service must find the shortest route between two locations when all roads have equal cost. Which algorithm would you choose?
+* A navigation service must find the fastest route when road segments have different travel times. How would you model edge weights and select an algorithm?
+* A route-planning system contains negative edge weights due to credits or adjustments. Which shortest-path algorithm would you consider?
+* A payment network contains conversion costs between currencies. How could graph algorithms help detect a profitable conversion cycle?
+* A communication network becomes disconnected after a network link fails. How would you identify critical links whose removal disconnects the network?
+* A cloud platform must identify single points of failure in its connectivity topology. How would articulation points help?
+* A distributed system must group servers that can communicate with each other. How would you identify connected components?
+* An organization wants to divide employees into two groups so that conflicting pairs are placed in different groups. How would you model and solve the problem?
+* A grid-based game contains walls and open cells. How would you determine whether a player can reach the destination?
+* An image-processing application must count separate regions of connected pixels. How would you use graph traversal?
+* A dependency graph contains millions of edges. How would you choose between an adjacency list and an adjacency matrix?
+* A production service repeatedly runs Dijkstra's algorithm and suffers from high latency. How would you investigate the graph representation and priority-queue operations?
+* A shortest-path service returns incorrect results when negative edge weights are introduced. How would you identify and fix the algorithm-selection problem?
+* A deployment pipeline fails because two tasks depend on each other. How would you detect and report the cycle?
+* A network monitoring system needs to identify strongly connected groups of services. Which algorithm would you use and how would you implement it?
+* A logistics system must connect all warehouses at minimum total infrastructure cost. How would you solve this using a minimum spanning tree?
+* A network design system must choose between Kruskal's and Prim's algorithms for a sparse graph. What factors would influence your choice?
+* A travel application must find the cheapest flight from one city to another with at most K stops. How would you design the algorithm?
+* A recommendation system needs to find users within three relationship levels of a given user. How would you perform a bounded graph traversal?
+* A game AI must find a route through a state space where some moves have different costs. How would you model states and transitions?
+* A data pipeline must determine the order in which dependent jobs should execute. How would you handle cycles and invalid dependencies?
+* A large graph-processing job runs out of memory while loading all edges. How would you reduce memory consumption and process the graph efficiently?
+* A Java backend must expose graph traversal and shortest-path operations through REST APIs. How would you design input validation, algorithm selection, error handling, and performance tests?

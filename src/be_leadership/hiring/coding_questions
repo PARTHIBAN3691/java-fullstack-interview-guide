@@ -1,0 +1,30 @@
+* Write a Java program to evaluate a candidate's score across technical, communication, and problem-solving categories.
+* Implement a Candidate class with fields for skills, experience, interview scores, and application status.
+* Write a Java method to calculate a weighted interview score using configurable evaluation criteria.
+* Implement an enum to represent hiring stages such as APPLIED, SCREENING, TECHNICAL, FINAL, OFFERED, and REJECTED.
+* Write a Java program to filter candidates based on mandatory Java skills and minimum experience.
+* Implement a method to rank candidates based on a weighted scoring rubric.
+* Write a Java program that identifies missing interview feedback from a panel.
+* Implement a class that records structured interview feedback with strengths, concerns, and evidence.
+* Write a Java method to validate that all required interview score categories have been completed.
+* Use Java streams to group candidates by application status and technical skill.
+* Implement a service that schedules interviews based on interviewer availability.
+* Write a Java program to prevent overlapping interview bookings for the same interviewer.
+* Implement the Strategy pattern to support different evaluation criteria for junior, senior, and lead developer roles.
+* Implement the State pattern to enforce valid transitions between hiring stages.
+* Implement the Observer pattern to notify recruiters when a candidate advances to another stage.
+* Write a Java program to compare candidate scores while ensuring that mandatory requirements cannot be overridden by the total score.
+* Implement a service that aggregates feedback from multiple interviewers without losing individual assessments.
+* Write unit tests using JUnit 5 for candidate scoring and hiring-stage transitions.
+* Use Mockito to test a hiring service that depends on a candidate repository and notification service.
+* Implement exception handling for invalid candidate data and incomplete interview evaluations.
+* Write a Java method that identifies candidates who have been waiting too long at a particular hiring stage.
+* Implement role-based access control for recruiters, interviewers, and hiring managers.
+* Write a Java program to generate a hiring pipeline report showing conversion rates between interview stages.
+* Implement a service that records hiring decisions with reasons and an audit history.
+* Write a Java program to detect duplicate candidate applications using normalized email addresses.
+* Implement a REST API using Spring Boot to create candidates, record interview feedback, and update hiring status.
+* Write a Java program to anonymize selected candidate details for a skills-focused evaluation exercise.
+* Implement a configurable interview question bank organized by role, competency, and difficulty.
+* Write a Java method to calculate time-to-hire and offer acceptance rates from recruitment records.
+* Design a Java-based hiring management application that supports candidate tracking, interview scheduling, structured evaluations, approvals, and hiring analytics.

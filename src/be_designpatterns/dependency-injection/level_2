@@ -1,0 +1,30 @@
+* How would you design a Dependency Injection architecture for a large enterprise Java application?
+* How does Spring resolve dependencies when generic types, qualifiers, and primary beans are involved?
+* How does Spring handle constructor injection when multiple constructors are present?
+* How would you design a system that selects implementations dynamically based on runtime business rules?
+* How would you prevent circular dependencies in a modular Spring Boot application?
+* Why can circular dependencies cause partially initialized objects and unpredictable behavior?
+* How would you redesign a dependency graph that contains excessive coupling between business modules?
+* How would you manage dependencies across multiple Spring application contexts?
+* How would you inject request-scoped or session-scoped beans into singleton-scoped services?
+* How does a scoped proxy work when injecting a request-scoped bean into a singleton bean?
+* How would you handle lifecycle mismatches between singleton, prototype, and request-scoped beans?
+* How would you design a plugin architecture using Dependency Injection and runtime registration?
+* How would you implement conditional dependency registration using custom Spring conditions?
+* How would you create a custom Spring BeanFactoryPostProcessor or BeanPostProcessor, and when would it be appropriate?
+* What is the difference between BeanFactoryPostProcessor and BeanPostProcessor?
+* How would you diagnose unexpected bean creation order or initialization failures?
+* How can proxies introduced by Spring AOP affect injected dependencies?
+* How would you handle dependencies that require expensive initialization or external resources?
+* How would you avoid memory leaks caused by incorrectly retained prototype or request-scoped dependencies?
+* How would you design testable code when a dependency is created by a third-party library?
+* How would you manage dependency injection in applications that combine Spring-managed and manually created objects?
+* How would you prevent the Service Locator pattern from spreading through a codebase?
+* How would you evaluate whether an injected dependency should be an interface or a concrete class?
+* How would you apply Dependency Inversion Principle alongside Dependency Injection?
+* How would you organize dependency injection across bounded contexts in a domain-driven design architecture?
+* How would you reduce startup time in a Spring Boot application with a large dependency graph?
+* How would you diagnose excessive bean creation and memory consumption caused by dependency injection?
+* How would you design a dependency injection mechanism for a standalone Java application without Spring?
+* How would you test code that depends on static methods, constructors, or global state that bypass Dependency Injection?
+* How would you evaluate the maintainability, performance, and complexity trade-offs of Dependency Injection in a large application?

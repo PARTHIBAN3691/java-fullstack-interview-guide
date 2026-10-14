@@ -1,0 +1,30 @@
+* Write a Spring Boot REST controller and expose its endpoints through Google Cloud API Gateway using an OpenAPI specification.
+* Write an OpenAPI document that routes GET and POST requests to a Spring Boot backend running on Cloud Run.
+* Write an OpenAPI specification that exposes multiple Spring Boot endpoints under different URL paths.
+* Write an OpenAPI specification that defines required query parameters, path parameters, and request headers.
+* Write an OpenAPI security definition that requires an API key for selected endpoints.
+* Write an OpenAPI specification that validates JWT bearer tokens using a supported security definition.
+* Write a Java Spring Boot filter that validates required request headers and rejects invalid requests.
+* Write a Spring Boot endpoint that extracts authenticated user claims and applies role-based authorization.
+* Write a Spring Boot REST API that validates JWT issuer, audience, expiration, and required claims using an appropriate security library.
+* Write a Spring Boot endpoint that enforces tenant-level authorization using claims from an authenticated principal.
+* Write a Spring Boot API that accepts an idempotency key and prevents duplicate payment processing.
+* Write a Java REST controller that returns consistent error responses for invalid input, unauthorized requests, and unexpected failures.
+* Write a Spring Boot interceptor that propagates correlation IDs across downstream HTTP calls.
+* Write a Spring Boot service that propagates W3C trace context when calling another microservice.
+* Write a Spring Boot endpoint that validates request payloads using Jakarta Bean Validation.
+* Write a Java integration test that verifies API authentication and authorization behavior through a deployed gateway endpoint.
+* Write a Java integration test that verifies correct routing of multiple API paths to different backend services.
+* Write a Java test suite that checks expected 400, 401, 403, 404, and 500 HTTP responses from an API.
+* Write a Terraform configuration that provisions a Google Cloud API Gateway API, API configuration, gateway, and required service account resources.
+* Write a Terraform configuration that grants the API Gateway service account permission to invoke a Cloud Run backend.
+* Write a deployment script using the Google Cloud CLI to deploy an API configuration and create or update an API Gateway instance.
+* Write a CI/CD pipeline step that validates an OpenAPI document before deployment.
+* Write a script that tests a deployed gateway endpoint using curl and verifies its HTTP status and response body.
+* Write a Java client using WebClient to call an API Gateway endpoint with a bearer token.
+* Write a Java client using WebClient to call an API Gateway endpoint with an API key stored securely in configuration.
+* Write a Spring Boot REST API that implements application-level rate limiting for a specific client or tenant.
+* Write a Spring Boot service that records request metrics without logging sensitive request bodies or credentials.
+* Write a Java test that verifies backward compatibility between two versions of an API response contract.
+* Write a Terraform-based deployment workflow that separates development and production API Gateway configurations.
+* Write an integration test that verifies a protected Cloud Run backend rejects requests that do not have valid invocation credentials.

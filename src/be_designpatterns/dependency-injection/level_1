@@ -1,0 +1,30 @@
+* How would you implement constructor injection using plain Java without a framework?
+* How would you configure constructor injection in a Spring Boot application?
+* How would you inject an interface when multiple implementations are available?
+* How does @Qualifier resolve ambiguity between multiple Spring beans?
+* When would you use @Primary instead of @Qualifier?
+* How would you inject a dependency using Java-based configuration with @Configuration and @Bean?
+* How does Spring resolve dependencies by type and by name?
+* What happens when Spring finds multiple matching beans for a single dependency?
+* What happens when a required dependency cannot be found in the Spring container?
+* How would you inject a list or map of all implementations of an interface?
+* How would you inject dependencies conditionally using Spring Boot configuration?
+* How would you use @Profile to provide different implementations for development and production?
+* How would you inject configuration values using @Value and @ConfigurationProperties?
+* How would you use ObjectProvider or Provider to resolve a dependency lazily?
+* What is the difference between eager and lazy bean initialization?
+* How would you resolve a circular dependency between two Spring beans?
+* Why is constructor injection generally preferred over field injection?
+* How would you write unit tests for a class that uses constructor injection?
+* How would you replace a real dependency with a mock during unit testing?
+* How does Dependency Injection support the Strategy design pattern?
+* How can Dependency Injection be combined with the Factory Method pattern?
+* What is the difference between dependency injection and the Service Locator pattern?
+* How does Spring manage singleton-scoped and prototype-scoped beans?
+* What happens when a prototype-scoped bean is injected into a singleton bean?
+* How can a singleton bean obtain a fresh prototype instance for each operation?
+* How would you inject dependencies into a class that is not managed by Spring?
+* How would you use ObjectFactory or ObjectProvider to resolve runtime dependencies?
+* How can you avoid creating unnecessary dependencies in a class?
+* How would you troubleshoot a NoSuchBeanDefinitionException?
+* How would you troubleshoot a NoUniqueBeanDefinitionException?

@@ -1,0 +1,30 @@
+* Explain how the browser converts HTML source code into the Document Object Model (DOM).
+* What is the difference between the DOM tree and the HTML source document?
+* Explain how malformed HTML is handled by the browser's HTML parser.
+* What are optional tags in HTML, and when may they be omitted?
+* How does the HTML parsing algorithm handle implicitly closed elements?
+* What is the difference between the DOMContentLoaded and load events?
+* How do the preload scanner and HTML parser work together during page loading?
+* How can the placement of scripts affect HTML parsing and rendering?
+* What is the difference between parser-blocking, async, and defer scripts?
+* How does the browser determine an element's default display behavior?
+* What is the difference between HTML attributes, DOM properties, and computed styles?
+* How do boolean attributes work in HTML?
+* Why does the presence of a boolean attribute generally indicate a true value regardless of its textual value?
+* What are custom data attributes, and how are they exposed through the DOM?
+* How do HTML templates work with the template element and JavaScript?
+* What is the purpose of the slot element in web components?
+* How does the Shadow DOM differ from the regular DOM?
+* What are the differences between HTML elements, custom elements, and web components?
+* How does HTML support accessibility through native semantics?
+* What is the relationship between semantic HTML and the accessibility tree?
+* How do HTML forms serialize successful controls when submitted?
+* What is the difference between the innerHTML, innerText, and textContent DOM properties?
+* What security risks are associated with inserting untrusted content through innerHTML?
+* How can HTML structure influence search engine optimization?
+* What is the difference between client-side rendering and server-side rendering of HTML?
+* How do responsive images using srcset and sizes improve performance?
+* What are resource hints such as preload, preconnect, and dns-prefetch?
+* How can HTML markup affect Core Web Vitals and page performance?
+* What is the role of Content Security Policy in securing HTML documents?
+* How would you optimize the structure and delivery of HTML for a large-scale web application?

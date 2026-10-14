@@ -1,0 +1,21 @@
+
+* A Java application serializes a user object to a file, but deserialization fails after a new version is deployed. How would you investigate the issue?
+* A serializable class contains a logger and a database connection. What problems could occur during serialization, and how would you redesign the class?
+* A developer adds a new field to a serializable class and discovers that older serialized files can no longer be read. How would you diagnose and resolve the compatibility issue?
+* A Singleton object loses its single-instance property after deserialization. How would you fix it?
+* An application must serialize a user object without persisting its password. How would you implement this safely?
+* A serializable object contains a reference to a non-serializable third-party object. How would you handle serialization without modifying the third-party class?
+* A distributed application exchanges serialized Java objects between services running different application versions. How would you manage schema evolution and compatibility?
+* Deserialization of an object graph containing circular references produces unexpected results. How would you investigate object identity and reference handling?
+* A Java service consumes serialized data from an external source. How would you prevent unsafe classes from being instantiated during deserialization?
+* An application experiences high CPU usage and memory consumption while serializing millions of records. How would you profile and optimize the process?
+* A serialized object contains a static field whose value differs after deserialization. How would you explain the behavior?
+* A class extends a non-serializable superclass, and superclass fields contain important state. How would you ensure that state is restored correctly?
+* A class's transient cache field is `null` after deserialization, causing application failures. How would you reconstruct the cache safely?
+* An application serializes the same object multiple times through a single `ObjectOutputStream`, but later changes to the object are not reflected as expected. How would you investigate stream handle caching?
+* A serialized class changes from mutable to immutable, and existing serialized files must remain readable. How would you design the migration?
+* A legacy application uses `Externalizable` and fails during deserialization because the constructor cannot be found. What would you check?
+* A serialization process must preserve the identity of a shared object referenced by multiple entities. How does Java native serialization support this requirement?
+* A security audit identifies that the application deserializes untrusted data. What defensive measures would you implement?
+* A serialized Singleton contains sensitive configuration, and developers want to prevent unauthorized modification of the serialized data. How would you approach integrity and confidentiality?
+* Your team must choose between Java native serialization, JSON, and Protocol Buffers for a new microservice. What factors would guide your decision?

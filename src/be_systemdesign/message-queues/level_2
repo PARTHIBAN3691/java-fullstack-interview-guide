@@ -1,0 +1,30 @@
+* How would you design a highly available message queue infrastructure across multiple availability zones?
+* How do message brokers achieve replication and fault tolerance?
+* How do Kafka partitions affect ordering, throughput, and scalability?
+* How would you design a message processing system with millions of events per second?
+* How do you achieve effectively-once processing in a distributed system?
+* Why is exactly-once delivery difficult to guarantee across distributed services?
+* How would you implement idempotent consumers?
+* How do you coordinate database transactions with message publishing?
+* What is the transactional outbox pattern, and when should you use it?
+* What is the change data capture pattern, and how does it support event publishing?
+* How does the saga pattern use message queues to coordinate distributed transactions?
+* How would you prevent message loss during broker failures?
+* How would you prevent message duplication during retries and failover?
+* How do you handle ordering when messages are processed concurrently?
+* How would you design partition rebalancing without excessive processing disruption?
+* How do you manage consumer lag in a high-throughput Kafka cluster?
+* How do you optimize broker memory, disk usage, and network throughput?
+* How do batching and compression affect message throughput and latency?
+* How would you design multi-region message replication?
+* What are the trade-offs between synchronous and asynchronous replication?
+* How do you handle split-brain scenarios in a distributed messaging cluster?
+* How do you design tenant isolation in a shared messaging platform?
+* How would you implement message prioritization without starving lower-priority messages?
+* How do you handle schema evolution across independently deployed services?
+* How would you design a replayable event-processing architecture?
+* How do you handle poison messages without blocking an entire partition?
+* How do you implement rate limiting and flow control for consumers?
+* How do you guarantee business-level consistency when messages are processed asynchronously?
+* How do you evaluate message broker performance under sustained and burst workloads?
+* What are the key trade-offs between log-based messaging and traditional broker-based queues?

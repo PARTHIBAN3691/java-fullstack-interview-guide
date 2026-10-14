@@ -1,0 +1,30 @@
+* Explain the internal differences between HTTP/1.1, HTTP/2, and HTTP/3 at the transport and protocol levels.
+* How does HTTP/2 multiplexing reduce latency, and what limitations remain?
+* How does HTTP/3 use QUIC to improve connection establishment and transport behavior?
+* What is head-of-line blocking, and how does it differ between HTTP/2 and HTTP/3?
+* How do TCP connection reuse and connection pooling affect REST API performance?
+* How would you tune HTTP client connection pools for high-throughput microservices?
+* How do HTTP timeouts, retries, and circuit breakers work together?
+* How do you design retries without causing duplicate operations?
+* How does the Retry-After header influence client retry behavior?
+* How do conditional requests reduce bandwidth and protect against lost updates?
+* How would you implement optimistic concurrency control using HTTP ETags?
+* How do HTTP caching rules affect authenticated and personalized responses?
+* What are the risks of shared caching for responses containing sensitive information?
+* How can HTTP request smuggling occur, and how can it be mitigated?
+* How can inconsistent HTTP parsing between a proxy and backend create security vulnerabilities?
+* What is the difference between HTTP message framing in HTTP/1.1 and HTTP/2?
+* How do reverse proxies and API gateways affect HTTP request processing?
+* How should a REST API handle client disconnections during long-running operations?
+* How do streaming HTTP responses differ from standard request-response responses?
+* How does HTTP backpressure relate to streaming API design?
+* What are the trade-offs between long polling, Server-Sent Events, and WebSockets?
+* How do HTTP status codes influence retry behavior in distributed systems?
+* How would you design a consistent error response contract for an HTTP-based API?
+* How do you diagnose latency across DNS lookup, TCP connection, TLS handshake, and server processing?
+* What are the implications of HTTP/2 connection coalescing and connection reuse?
+* How do TLS termination and forwarded protocol headers affect HTTPS applications behind proxies?
+* How would you prevent request replay or duplicate processing in payment APIs?
+* How do HTTP method semantics influence REST API caching, retries, and client behavior?
+* How do you handle partial failures when one HTTP request triggers multiple downstream calls?
+* How would you troubleshoot intermittent connection resets and premature EOF errors in production?

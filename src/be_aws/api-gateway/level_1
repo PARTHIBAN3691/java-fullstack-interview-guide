@@ -1,0 +1,21 @@
+
+* What is the difference between REST API Gateway and HTTP API Gateway in AWS?
+* How does API Gateway integrate with AWS Lambda using proxy integration?
+* What is the difference between Lambda proxy integration and non-proxy integration?
+* How do you configure request and response transformations in API Gateway?
+* What is the purpose of request validation in API Gateway?
+* How do you configure API keys and usage plans?
+* Are API keys sufficient for securing a production API? Why or why not?
+* What is the difference between IAM authorization, Lambda authorizers, and Amazon Cognito authorization?
+* What is a Lambda authorizer, and how does it validate incoming requests?
+* What is the difference between a token-based authorizer and a request-based authorizer?
+* How does API Gateway integrate with Amazon Cognito user pools?
+* What is the purpose of resource policies in API Gateway?
+* How do throttling limits and quotas differ?
+* What is the difference between API Gateway throttling and Lambda concurrency limits?
+* How do you configure access logging and execution logging in API Gateway?
+* How can you enable tracing for API Gateway requests using AWS X-Ray?
+* How do you configure API Gateway to invoke a backend running in a VPC?
+* What is the purpose of a VPC link?
+* How do custom domain names, API mappings, and stages work together?
+* How would you configure CORS for an API Gateway endpoint backed by a Java Spring Boot application?

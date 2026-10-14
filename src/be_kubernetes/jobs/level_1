@@ -1,0 +1,30 @@
+* How do you run a Spring Boot batch application as a Kubernetes Job?
+* How do you create a Job that executes a Java JAR file?
+* How do you configure a Job to retry failed executions?
+* How do completions and parallelism control the execution of a Job?
+* How do you configure a Job to execute five successful tasks?
+* How do you limit the number of concurrent Pods created by a Job?
+* How do you configure a Job with a maximum execution time?
+* How do you configure a Job to clean up its resources after completion?
+* How do you prevent a Job from retrying indefinitely?
+* How do you configure a Job to use a ConfigMap?
+* How do you inject database credentials into a Job using a Secret?
+* How do you mount persistent storage into a Job's Pod?
+* How do you configure a Job to run on specific nodes?
+* How do you configure node affinity and tolerations for a Job?
+* How do you run a Job in a specific Kubernetes namespace?
+* How do you configure service accounts and RBAC permissions for a Job?
+* How do you monitor Job progress and identify failed executions?
+* How do you investigate a Job that remains active for too long?
+* How do you troubleshoot a Job that repeatedly creates failed Pods?
+* How do you distinguish application errors from Kubernetes scheduling failures in a Job?
+* How do you configure a Job to process a large dataset in parallel?
+* How do you use Indexed Jobs to assign separate work items to different Pods?
+* How do you ensure that each Pod processes the correct batch partition?
+* How do you handle graceful termination of a Job's Java process?
+* How do you configure Jobs for database migrations?
+* How do you trigger a Job manually from a CI/CD pipeline?
+* How do you schedule recurring batch processing using a CronJob?
+* How do you prevent overlapping executions of scheduled Jobs?
+* How do you retrieve logs from completed Job Pods after the Job finishes?
+* How do you safely rerun a failed Job?

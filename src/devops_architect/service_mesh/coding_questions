@@ -1,0 +1,38 @@
+* Write an Istio VirtualService configuration that routes all requests to version v1 of a service.
+* Write an Istio VirtualService configuration that routes 90% of requests to v1 and 10% to v2.
+* Write an Istio VirtualService configuration that routes requests to a specific backend based on an HTTP request header.
+* Write an Istio DestinationRule configuration that defines separate subsets for stable and canary versions of a service.
+* Write an Istio configuration that enables retries for selected HTTP failures with a bounded number of attempts and a per-try timeout.
+* Write an Istio VirtualService configuration that defines request timeouts for a backend service.
+* Write an Istio DestinationRule configuration that sets connection-pool limits and outlier-detection thresholds.
+* Write an Istio PeerAuthentication configuration that enforces strict mTLS for workloads in a namespace.
+* Write an Istio AuthorizationPolicy configuration that allows one workload identity to invoke a specific HTTP path and denies unauthorized callers.
+* Write an Istio RequestAuthentication and AuthorizationPolicy configuration that validates JWTs and restricts access to selected API paths.
+* Write an Istio ServiceEntry configuration that registers an approved external service for controlled mesh access.
+* Write an Istio Gateway and VirtualService configuration that exposes an application through HTTPS.
+* Write a Kubernetes deployment configuration that enables Istio sidecar injection for a selected namespace.
+* Write a Linkerd configuration example that adds selected workloads to the mesh and enables proxy injection.
+* Write a Kubernetes configuration that uses Linkerd service profiles to define service routes, retries, and request timeouts where supported.
+* Write a fault-injection configuration that introduces a controlled delay for a selected route in a test environment.
+* Write a fault-injection configuration that returns HTTP 503 responses for a limited percentage of matching requests.
+* Write a canary deployment configuration that gradually shifts traffic from a stable version to a new version.
+* Write a Prometheus query that calculates the HTTP error rate for a service using service-mesh metrics.
+* Write a Prometheus query that calculates the 95th-percentile request latency for a selected service.
+* Write a Prometheus query that compares request error rates between stable and canary workloads.
+* Write a Grafana dashboard specification that displays request rate, error rate, latency percentiles, and proxy resource usage.
+* Write a Python program that analyzes service-mesh access logs and groups HTTP responses by service, status code, and workload version.
+* Write a Python program that calculates the error rate and p95 latency for each microservice from a sample telemetry dataset.
+* Write a Python script that identifies services whose error rates or p95 latency exceed configurable thresholds.
+* Write a Python program that analyzes retry logs and identifies requests with excessive retry attempts or repeated downstream failures.
+* Write a Python program that simulates a circuit breaker with configurable failure thresholds, open-state duration, and half-open recovery checks.
+* Write a Java program that calls a downstream service with configurable connection timeouts, request deadlines, and bounded retries.
+* Write a Java program that implements an idempotency key mechanism to prevent duplicate processing when a request is retried.
+* Write a rate limiter using the token-bucket algorithm and explain how it could be extended for distributed service-to-service traffic.
+* Write a program that simulates weighted traffic routing between stable and canary service versions and reports the resulting request distribution.
+* Write a Python program that simulates random downstream failures and compares application behavior with and without retries and circuit breaking.
+* Write a script that validates Istio YAML configurations and flags missing destinations, invalid subsets, and conflicting route definitions.
+* Write a policy-as-code rule that rejects service-mesh authorization policies allowing unrestricted access to sensitive services.
+* Write a script that compares the intended service communication matrix with deployed authorization policies and reports unexpected access paths.
+* Write a program that correlates distributed trace spans and service-mesh access logs to identify the service contributing the most latency.
+* Write a Kubernetes manifest set for a sample microservices application with Istio injection, strict mTLS, and least-privilege service authorization.
+* Write an automated test that verifies a canary receives the configured traffic percentage and triggers rollback when error-rate thresholds are exceeded.

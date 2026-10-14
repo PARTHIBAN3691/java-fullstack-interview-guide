@@ -1,0 +1,30 @@
+* How would you create a multi-stage Dockerfile for a Maven-based Spring Boot application?
+* How would you create a multi-stage Dockerfile for a Gradle-based Java application?
+* How do you copy only the packaged JAR from the build stage into the runtime stage?
+* How can you optimize Maven dependency caching in a multi-stage Docker build?
+* Why should the pom.xml be copied before the application source code?
+* How do you use BuildKit cache mounts for Maven dependencies in a multi-stage build?
+* How would you configure a multi-stage build to use a specific Java version?
+* How do you pass build arguments to individual stages?
+* What is the difference between ARG and ENV in a multi-stage Dockerfile?
+* How can you use a different base image for the build and runtime stages?
+* How would you create a production image without Maven, Gradle, or the JDK?
+* How can you run unit tests in an intermediate stage before creating the final image?
+* How do you ensure the final image is built only if tests pass?
+* How can you create separate development and production targets in one Dockerfile?
+* What is the purpose of the --target option in docker build?
+* How do you build only a specific stage in a multi-stage Dockerfile?
+* How can you debug an intermediate build stage when the final image fails?
+* How can you copy multiple artifacts from one stage to another?
+* How do you use external images as named build stages?
+* What is the difference between copying from a previous stage and copying from an external image?
+* How do you create a multi-stage build for a Spring Boot layered JAR?
+* How can you reduce the final image size by excluding source code and test artifacts?
+* How do you run a Java application as a non-root user in the final stage?
+* How should environment-specific configuration be handled in a multi-stage Java image?
+* How can you prevent build credentials from leaking into the final image?
+* How do you use BuildKit secret mounts to access a private Maven repository?
+* How can you build a multi-stage image for AMD64 and ARM64 platforms?
+* How do you tag and push a multi-stage image to a container registry?
+* How can you inspect the final image to verify that build tools are absent?
+* How would you troubleshoot a multi-stage build that cannot find the JAR artifact?

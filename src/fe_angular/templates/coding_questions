@@ -1,0 +1,30 @@
+* Create an Angular template that displays a component property using interpolation.
+* Implement property binding to dynamically update an image source.
+* Create a button that invokes a component method using event binding.
+* Implement two-way data binding using [(ngModel)].
+* Create a template that displays a list of employees using *ngFor.
+* Rewrite an *ngFor list using Angular's @for control-flow block.
+* Implement conditional rendering using *ngIf.
+* Rewrite an *ngIf condition using the @if block.
+* Create a template using ngSwitch to display different messages.
+* Implement dynamic CSS class binding based on an employee's status.
+* Implement dynamic style binding based on a numeric value.
+* Create a template reference variable for an input and read its value on button click.
+* Write a template that displays validation errors for a required form field.
+* Use the async pipe to display data from an Observable.
+* Create a template that displays loading, error, empty, and success states.
+* Implement a parent-child template example using property binding and event binding.
+* Create a reusable card component using ng-content.
+* Implement multi-slot content projection for a header, body, and footer.
+* Create an ng-template that displays an employee card.
+* Render an ng-template dynamically using ngTemplateOutlet.
+* Pass employee data to ngTemplateOutlet using its context.
+* Implement a dynamic table with row highlighting based on status.
+* Create a template that displays a fallback value when a property is null or undefined.
+* Implement a template that uses currency, date, and uppercase pipes.
+* Create a list template using trackBy with *ngFor.
+* Rewrite the list using @for and a track expression.
+* Implement conditional button disabling based on form validity.
+* Create a template that renders an optional section using @defer.
+* Write an Angular component test that verifies template interpolation and button clicks.
+* Build a reusable product-list template with search, filtering, loading indicators, and an empty-state message.

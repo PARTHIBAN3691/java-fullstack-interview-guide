@@ -1,0 +1,30 @@
+* Write a Node.js function that reads a file asynchronously using the fs module.
+* Convert a callback-based file-reading function into a Promise-based function.
+* Write an async function that fetches data from an HTTP endpoint using fetch().
+* Write a function that uses async/await and try/catch to handle a rejected Promise.
+* Write a program that demonstrates the execution order of synchronous code, Promise callbacks, and setTimeout().
+* Write a program that demonstrates the difference between process.nextTick() and setImmediate().
+* Write a function that executes three asynchronous tasks sequentially.
+* Write a function that executes three independent asynchronous tasks concurrently using Promise.all().
+* Write a program that uses Promise.allSettled() to collect successful and failed task results.
+* Write a function that returns the first successful result from multiple asynchronous operations.
+* Implement a timeout wrapper for a Promise using Promise.race().
+* Implement an asynchronous function that supports cancellation using AbortController.
+* Write a function that retries a failed asynchronous operation up to three times.
+* Implement exponential backoff with jitter for retrying asynchronous API calls.
+* Write a function that processes an array of items with a configurable concurrency limit.
+* Implement a Promise pool that runs at most five asynchronous tasks simultaneously.
+* Write an asynchronous task queue that processes tasks one at a time.
+* Implement a queue that supports task priorities and limited concurrency.
+* Write a function that processes a large array in batches using async/await.
+* Implement a function that preserves result order while processing items concurrently.
+* Write a program that prevents overlapping executions of an asynchronous scheduled task.
+* Implement a simple asynchronous mutex that allows only one operation at a time.
+* Write a semaphore implementation that limits the number of concurrent asynchronous operations.
+* Implement a function that aggregates results and errors from multiple asynchronous tasks.
+* Write a function that executes a group of tasks and cancels pending work when a critical task fails.
+* Implement an asynchronous workflow with timeout, retry, and fallback behavior.
+* Write a program that uses EventEmitter to trigger and handle asynchronous events.
+* Write a Node.js stream pipeline that reads a large file, transforms its contents, and writes the output.
+* Implement an asynchronous function that measures execution duration and reports failures.
+* Write a Node.js program that uses worker_threads to execute CPU-intensive work without blocking the main thread.

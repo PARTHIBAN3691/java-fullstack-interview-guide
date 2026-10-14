@@ -1,0 +1,30 @@
+* You have a large JavaScript file containing many unrelated functions. How would you split it into modules?
+* A function exported from one file cannot be imported into another file. How would you debug the issue?
+* An imported variable has a different name in the consuming module. How would you use import aliases?
+* A module exports multiple functions, but another file needs only one function. How would you import it?
+* A module needs to expose one main class and several utility functions. How would you organize its exports?
+* Two modules import each other and produce unexpected initialization behavior. How would you resolve the circular dependency?
+* A browser application reports that import declarations cannot be used outside a module. How would you fix it?
+* A JavaScript application works in a bundler but fails when loaded directly in a browser. What module-resolution differences would you investigate?
+* A Node.js application reports an error when using import in a file. How would you determine whether it should use ES modules or CommonJS?
+* A project contains both .mjs and .cjs files. How would you explain their purposes?
+* A module is imported by several files, but its initialization code runs only once. Why does this happen?
+* A module contains shared application state. What risks should you consider when multiple files import it?
+* A large application loads many features at startup. How could dynamic imports improve loading performance?
+* A route-specific component should load only when a user visits that route. How would you implement this with dynamic imports?
+* A production bundle includes unused functions from imported modules. How would you investigate tree shaking?
+* A module cannot be removed by tree shaking because it performs initialization side effects. How would you address this?
+* A package works in CommonJS but fails when consumed as an ES module. How would you investigate interoperability?
+* A module works in Node.js but fails in the browser because of its import path. How would you correct the module specifier?
+* A package has different implementations for browser and Node.js environments. How could conditional exports help?
+* A module's imported value changes after another module updates it. How do ES module live bindings explain this behavior?
+* A module uses top-level await and delays dependent modules from initializing. How would you investigate the dependency chain?
+* A developer attempts to assign a new value to an imported binding and receives an error. Why is reassignment prohibited?
+* A team wants to create a shared utilities package for several applications. How would you structure its public exports?
+* A large project has circular dependencies across service and repository modules. How would you redesign the dependency boundaries?
+* Two import paths unexpectedly create separate instances of a stateful module. What could cause this behavior?
+* A library needs to support both CommonJS and ES module consumers. What packaging considerations would you evaluate?
+* A module works locally but fails after deployment because of filename capitalization. How would you troubleshoot it?
+* A build tool reports that a module cannot be resolved. What steps would you follow to diagnose the path, package, and configuration?
+* A developer uses a barrel file to export every module in a package, but startup becomes slower. What would you investigate?
+* You are designing a scalable frontend application. How would you organize modules for maintainability, testability, and lazy loading?

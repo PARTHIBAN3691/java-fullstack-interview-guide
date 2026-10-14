@@ -1,0 +1,30 @@
+* A Kafka consumer repeatedly fails to deserialize a message and blocks processing on its partition. How would you diagnose and recover from the issue?
+* A downstream payment service is temporarily unavailable, causing thousands of Kafka records to fail. How would you prevent retry storms and recover safely?
+* Your consumer retries the same invalid record indefinitely. How would you configure retry limits and dead-letter handling?
+* Messages are successfully processed by the application, but offsets are not committed because of intermittent exceptions. How would you investigate and prevent duplicate processing?
+* A Kafka consumer crashes after updating a database but before acknowledging the record. How would you ensure that replay does not duplicate the business operation?
+* Your DLT producer fails because the Kafka broker is unavailable. How would you preserve the failed record until recovery is possible?
+* A new deployment causes a sudden increase in consumer exceptions. How would you determine whether the issue is caused by code, configuration, or message data?
+* A downstream REST API intermittently returns HTTP 429 responses. How would you implement retries while respecting rate limits?
+* A consumer receives valid JSON that violates a business rule. How would you route the message without wasting resources on unnecessary retries?
+* Your application uses batch listeners, and one record fails while the other records succeed. How would you avoid unnecessary reprocessing?
+* A schema registry change causes many messages to fail deserialization. How would you restore processing without losing or corrupting events?
+* Your retry mechanism causes events for the same customer to be processed out of order. How would you redesign the recovery workflow?
+* A consumer group repeatedly rebalances while messages are being retried. How would you investigate the cause and stabilize processing?
+* DLT message volume increases continuously even though the source topic traffic remains stable. What metrics and logs would you inspect?
+* A message fails because it exceeds the maximum record size when being forwarded to the DLT. How would you handle this edge case?
+* Your Spring Kafka listener catches exceptions internally, but the framework does not retry the failed records. Why might this happen, and how would you correct it?
+* A producer send operation fails asynchronously, but the application reports the business operation as successful. How would you correct the error-handling flow?
+* A consumer processes a message twice after a transient database failure. How would you implement idempotency and reliable recovery?
+* An external service times out, but it may have completed the requested operation. How would you handle the uncertain outcome without creating duplicate transactions?
+* A poison pill message causes the consumer lag to increase rapidly. How would you isolate the record and restore normal processing?
+* Your application experiences repeated authentication errors when connecting to Kafka. How would you distinguish configuration errors from transient broker problems?
+* The retry topic is healthy, but failed records never reach the expected DLT. How would you trace the message through the recovery pipeline?
+* A DLT consumer republishes messages to the original topic, causing the same records to fail again. How would you prevent infinite replay loops?
+* During a production incident, logs contain exception messages but no source topic, partition, offset, or correlation ID. How would you improve observability?
+* A database deadlock causes intermittent consumer failures and increasing lag. How would you tune retries and database transaction handling?
+* A consumer is processing records slowly because every exception triggers a long fixed delay. How would you improve recovery throughput without overloading downstream systems?
+* A security exception occurs while processing a message containing sensitive customer information. How would you preserve diagnostic details while protecting confidential data?
+* Your team needs manual approval before replaying financial messages from a DLT. How would you design the approval, audit, and replay process?
+* An error handler commits an offset even though publishing the failed record to the DLT did not succeed. How would you investigate and correct this reliability issue?
+* After a broker outage, the application recovers but processes a large backlog containing both valid and previously failed records. How would you prioritize recovery and prevent another outage?

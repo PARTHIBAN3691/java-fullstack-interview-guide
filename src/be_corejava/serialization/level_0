@@ -1,0 +1,21 @@
+
+* What is serialization in Java?
+* Why is serialization used in Java applications?
+* What is deserialization?
+* What is the purpose of the `Serializable` interface?
+* Is `Serializable` a marker interface? What does that mean?
+* How do you make a Java class serializable?
+* What is the purpose of `ObjectOutputStream`?
+* What is the purpose of `ObjectInputStream`?
+* How do you serialize an object to a file?
+* How do you deserialize an object from a file?
+* What is the purpose of the `serialVersionUID` field?
+* What happens if a serializable class does not declare `serialVersionUID`?
+* What is the purpose of the `transient` keyword in serialization?
+* Are static variables serialized as part of an object?
+* Are transient fields restored to their original values during deserialization?
+* Can an object be serialized if its class contains a reference to another object that is not serializable?
+* What is the difference between serialization and deserialization?
+* Which exceptions can occur during serialization and deserialization?
+* Can primitive data types be serialized directly using `ObjectOutputStream`?
+* What are common use cases of Java serialization?

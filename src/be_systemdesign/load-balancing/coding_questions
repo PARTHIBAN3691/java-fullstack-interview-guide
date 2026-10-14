@@ -1,0 +1,30 @@
+* Write a Java program that implements a round-robin load balancer.
+* Implement a weighted round-robin load-balancing algorithm.
+* Write a Java class that implements least-connections load balancing.
+* Implement a weighted least-connections algorithm for backend servers with different capacities.
+* Write a Java program that randomly selects a healthy backend server.
+* Implement IP-hash-based request routing using a client IP address.
+* Write a Java program that implements consistent hashing for backend selection.
+* Extend a consistent-hashing implementation to support virtual nodes.
+* Implement a health-check manager that marks backend servers healthy or unhealthy.
+* Write a Java load balancer that excludes unhealthy servers from routing decisions.
+* Implement a simple active-passive load-balancer failover simulation.
+* Write a Java program that routes requests based on HTTP path and hostname.
+* Implement a backend registry that supports adding and removing service instances dynamically.
+* Write a Java program that simulates weighted traffic distribution across backend instances.
+* Implement a sticky-session mechanism using a session ID and backend mapping.
+* Write a Java program that drains a backend instance and stops sending it new requests.
+* Implement connection-count tracking for concurrent requests using thread-safe data structures.
+* Write a Java load balancer that chooses a backend based on current request latency.
+* Implement a simple client-side load balancer for service-to-service HTTP calls.
+* Write a Java program that uses CompletableFuture to dispatch requests to multiple backends and select a successful response.
+* Implement a timeout mechanism for requests routed to slow backend servers.
+* Write a Java program that retries a failed request against another backend while respecting an overall deadline.
+* Implement a circuit breaker that temporarily excludes a failing backend from request routing.
+* Write a Java program that gradually shifts traffic between two backend versions for a canary deployment.
+* Implement a weighted traffic router for blue-green deployment.
+* Write a Java program that simulates global load balancing across multiple regions using health and latency metrics.
+* Implement a rate limiter in front of a backend server pool.
+* Write unit tests to verify that round-robin and weighted algorithms distribute traffic as expected.
+* Implement a concurrent load balancer that remains thread-safe when backend instances are added or removed.
+* Write a benchmark that compares round-robin, least-connections, and consistent-hashing algorithms under simulated workloads.

@@ -1,0 +1,28 @@
+* A Spring Boot application publishes business events to Event Grid, but downstream consumers are not receiving them. How would you investigate the issue end to end?
+* An Event Grid subscriber starts returning HTTP 500 errors after a production release. How would you identify the root cause and recover failed deliveries?
+* A consumer processes the same event multiple times and creates duplicate orders. How would you fix the issue and prevent recurrence?
+* An application commits a payment transaction to the database but crashes before publishing the corresponding Event Grid event. How would you prevent this inconsistency?
+* An Event Grid subscription begins delivering a large backlog of events after a downstream service recovers. How would you manage processing capacity and prevent another outage?
+* A subscriber takes several minutes to process each event and eventually starts timing out. How would you redesign the processing flow?
+* A critical event is repeatedly failing delivery and has been moved to the dead-letter destination. How would you investigate, correct, and replay it safely?
+* An event handler is redeployed while events are being delivered, resulting in intermittent failures. How would you improve deployment resilience?
+* A business workflow depends on processing events in a specific order, but events are being processed out of order. How would you redesign the architecture?
+* A publisher experiences intermittent authorization failures after its credentials are rotated. How would you investigate the identity, permissions, and authentication configuration?
+* An Event Grid publisher receives throttling or transient service errors during a traffic spike. How would you implement retry handling without creating duplicate business operations?
+* A new event schema is deployed, and an older consumer starts failing because it cannot understand the new fields. How would you restore compatibility?
+* Multiple teams subscribe to the same event topic, but one team's filter configuration causes it to miss required events. How would you troubleshoot and validate event filtering?
+* A Java application successfully publishes events, but the events contain incorrect subject values and reach the wrong subscribers. How would you diagnose the routing issue?
+* A production event subscription has no dead-letter destination configured, and some events are failing delivery. How would you assess the risk and improve reliability?
+* A downstream database becomes unavailable for 30 minutes while Event Grid continues delivering events. How would you design the consumer to recover without losing business data?
+* A customer receives two confirmation emails for one order because the same event was processed twice. How would you implement idempotency for this workflow?
+* A company needs to process events from hundreds of storage accounts using a shared event-driven platform. How would you design topic and subscription management?
+* A security review finds that an application has excessive publishing permissions on Event Grid topics. How would you reduce privileges without interrupting event publication?
+* A critical event-driven workflow spans Event Grid, Azure Functions, and Service Bus, but end-to-end tracing is unavailable. How would you implement correlation and observability?
+* A subscriber endpoint is temporarily unavailable during a deployment and begins receiving retries after it becomes healthy. How would you ensure that recovery does not overload the service?
+* A dead-letter queue or storage destination contains thousands of failed events with mixed root causes. How would you categorize, repair, and replay them safely?
+* A Java microservice publishes an event before its database transaction commits, causing consumers to read stale data. How would you correct the transaction and publication design?
+* An Event Grid integration works in QA but fails in Production due to network or firewall restrictions. How would you isolate and resolve the connectivity issue?
+* Event processing latency increases from seconds to several minutes, but Event Grid delivery metrics appear normal. How would you investigate downstream processing bottlenecks?
+* A production incident requires replaying events from a specific time window. How would you identify the affected events and avoid reprocessing successful business operations?
+* A business requires events to be processed at least once while preventing duplicate financial transactions. How would you design the publisher and consumer together?
+* A new subscriber is introduced and unexpectedly increases the load on a shared downstream service. How would you isolate consumers and protect the downstream dependency?

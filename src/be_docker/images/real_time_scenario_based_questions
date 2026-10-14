@@ -1,0 +1,30 @@
+* Your Spring Boot Docker image has grown from 250 MB to 1.2 GB after a recent change. How would you investigate and reduce its size?
+* A Docker image builds successfully on a developer's laptop but fails in the CI pipeline. How would you identify the cause?
+* Your application image uses the latest Java base image, and a new deployment suddenly behaves differently. How would you investigate and prevent recurrence?
+* A production container is running an older application version even though the deployment references a newer image tag. How would you troubleshoot it?
+* A private Docker registry returns an unauthorized error when the deployment pipeline pulls an image. How would you resolve the issue?
+* A Docker image contains credentials that were accidentally committed in a Dockerfile. How would you respond and remediate the exposure?
+* Your Java image rebuild takes 15 minutes because Maven dependencies are downloaded every time. How would you optimize the build?
+* A Docker image works on an AMD64 server but fails on an ARM64 server. How would you diagnose and fix the problem?
+* A vulnerability scanner reports critical vulnerabilities in your Java base image. How would you determine the appropriate remediation?
+* A new base-image version fixes vulnerabilities but causes your application to fail at startup. How would you investigate and roll out the change safely?
+* A registry push succeeds, but the deployment system cannot pull the image. What would you check?
+* Your CI pipeline accidentally pushes a test build using the same tag as a production image. How would you prevent this situation?
+* A Docker image works locally but fails in Kubernetes because the registry cannot resolve the image tag. How would you troubleshoot it?
+* Your Spring Boot application requires a native library that is missing from the chosen slim image. How would you identify and resolve the dependency?
+* The image build unexpectedly downloads a different Maven dependency version on successive builds. How would you make the build reproducible?
+* A security audit finds that build tools and temporary files are present in the production image. How would you redesign the Dockerfile?
+* Your team needs to deploy the exact same image to testing, staging, and production. How would you design image tagging and promotion?
+* A Docker image build fails after a source-code change, even though the changed code is unrelated to the failing layer. How would you investigate cache behavior?
+* An image pushed to a private registry has a different digest from the artifact expected by the deployment pipeline. How would you investigate?
+* A production deployment pulls a different platform variant of a multi-architecture image than expected. How would you verify the selected manifest?
+* Your registry is running out of storage because hundreds of old application images are retained. How would you implement a safe cleanup policy?
+* A developer deletes an image locally and assumes the running application will stop. How would you explain the behavior and verify the actual container state?
+* A deployment fails because the Docker daemon cannot unpack an image layer due to insufficient disk space. How would you recover safely?
+* Your organization requires signed images before deployment. How would you integrate image signing and verification into CI/CD?
+* A Spring Boot image builds successfully but fails with a Java class-version error at runtime. How would you determine whether the build and runtime Java versions are compatible?
+* An image contains a vulnerable library even after the dependency was removed from the latest source code. How would you determine whether stale build layers or transitive dependencies are responsible?
+* A production rollback is required after a defective release. How would you identify and deploy the last known-good image reliably?
+* A Docker image includes configuration values that differ between staging and production. How would you redesign the image and deployment configuration?
+* A registry outage prevents your deployment pipeline from pulling images during a release. How would you improve deployment resilience?
+* Your team wants to reduce image sizes without increasing startup time or compromising security. How would you evaluate and validate candidate optimizations?

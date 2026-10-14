@@ -1,0 +1,80 @@
+**AI Data Pipelines**
+* A pipeline begins processing the same documents repeatedly after a deployment. How would you identify the cause and restore idempotent execution?
+* A transformation update changes the number of records published downstream. How would you determine whether the difference is expected or a data-loss defect?
+* A pipeline backlog grows continuously despite healthy worker instances. How would you isolate the bottleneck and restore the freshness SLA?
+
+**Data Collection and Ingestion**
+* An upstream API changes its response schema without notice, and downstream AI jobs begin failing. How would you detect, quarantine, and recover affected records?
+* A source system resends millions of previously processed events after an outage. How would you prevent duplicates and avoid overwhelming downstream services?
+* Two source systems disagree about a customer's current state. How would you reconcile conflicts and preserve source provenance?
+
+**Document Processing Pipelines**
+* A new batch of scanned PDFs produces empty extracted text even though the files open normally. How would you investigate OCR, file encoding, page rendering, and parser configuration?
+* A document is re-uploaded under a different filename, creating duplicate chunks and embeddings. How would you detect document identity and repair the index?
+* Tables and footnotes are extracted incorrectly, causing inaccurate RAG answers. How would you improve extraction, preserve layout, and validate the output?
+
+**Data Cleaning and Normalization**
+* A new cleaning rule removes valid domain-specific terms and reduces search relevance. How would you identify the affected transformation and roll back safely?
+* Missing values increase dramatically after an upstream release. How would you distinguish a genuine business change from a source-data defect?
+* Equivalent customer records are not deduplicated because of inconsistent identifiers and formatting. How would you design a reliable entity-resolution approach?
+
+**Data Quality and Validation**
+* A dataset passes schema checks but causes a sudden model-performance drop. How would you investigate semantic changes and feature-distribution shifts?
+* A quality gate blocks all pipeline output because one source has a small number of invalid records. How would you design quarantine and threshold policies?
+* A dashboard shows healthy pipeline execution while records are silently missing. How would you detect completeness gaps and verify end-to-end counts?
+
+**Metadata and Data Lineage**
+* An incorrect answer is traced to an old source document, but the system cannot identify which transformation produced the indexed chunk. How would you restore end-to-end lineage?
+* A schema change affects several downstream models and vector indexes. How would you identify impacted assets and prioritize remediation?
+* A compliance audit requests the source and transformation versions behind a historical prediction. How would you reconstruct the evidence?
+
+**Feature Engineering**
+* A model performs well offline but poorly in production because feature values differ. How would you identify training-serving skew?
+* A new feature unexpectedly improves offline accuracy but reduces live performance. How would you investigate leakage and point-in-time correctness?
+* A feature transformation changes during a deployment, producing inconsistent values across application instances. How would you restore version consistency?
+
+**Feature Stores**
+* Online predictions use stale features even though the offline store contains updated values. How would you investigate synchronization and event-processing delays?
+* A historical training dataset produces different feature values when regenerated. How would you investigate point-in-time joins and source corrections?
+* A feature-definition update breaks multiple models that share the feature. How would you manage versioning and safe migration?
+
+**Training Data Management**
+* A newly trained model reports unusually high test accuracy. How would you investigate duplicate records, leakage, split strategy, and label contamination?
+* A training dataset changes during a long-running experiment, making results unreproducible. How would you recover the exact dataset version?
+* A label correction changes evaluation metrics for a previously released model. How would you track the affected experiments and determine whether retraining is needed?
+
+**Data Labeling and Annotation**
+* Two annotation teams assign conflicting labels to similar examples. How would you identify guideline ambiguity and establish consistent adjudication?
+* A batch of machine-generated labels contains systematic errors. How would you detect the issue before the data enters training?
+* Annotation costs rise sharply while model improvements slow. How would you prioritize examples and measure the effectiveness of active learning?
+
+**Synthetic Data**
+* A model trained on synthetic records performs well in testing but poorly on real traffic. How would you investigate distribution mismatch and unrealistic feature relationships?
+* A privacy review discovers synthetic examples closely resembling real customer records. How would you assess the exposure and improve generation controls?
+* Synthetic data increases the representation of rare events but also increases false positives. How would you measure the trade-off and revise the dataset?
+
+**Data Privacy and Governance**
+* A customer deletion request is completed in the primary database, but their information remains retrievable through RAG. How would you locate and remove every derived copy?
+* An AI pipeline accidentally sends confidential documents to an unauthorized external processing service. How would you contain the incident and prevent recurrence?
+* A data residency rule changes, affecting datasets replicated across multiple regions. How would you identify affected assets and enforce compliant processing?
+
+**Streaming Data for AI**
+* Kafka consumer lag increases rapidly during a traffic spike, and online features become stale. How would you identify the bottleneck and restore freshness?
+* Events arrive out of order and cause an account balance or rolling feature to become incorrect. How would you repair the state and handle late events?
+* A consumer restart causes duplicate feature updates and inconsistent predictions. How would you investigate delivery semantics and idempotency?
+
+**Vector Index Pipelines**
+* The index contains fewer vectors than the source document inventory indicates. How would you trace failed embedding batches, rejected writes, and publication checkpoints?
+* Search results contain chunks from an older document version after a re-ingestion. How would you identify stale vectors and correct version handling?
+* A large indexing run exhausts provider quotas and leaves many documents partially processed. How would you recover and improve throttling, batching, and checkpointing?
+
+**Incremental Indexing and Reindexing**
+* A reindexing job completes, but users receive a mixture of old and new retrieval results. How would you investigate alias switching, routing, and index publication?
+* A late-arriving update overwrites a newer indexed document version. How would you enforce version-aware writes and recover the correct content?
+* A new embedding model improves relevance for some queries but degrades others. How would you compare the indexes and decide whether to roll back?
+
+**Data Retention and Deletion**
+* A deleted document reappears in search results after disaster recovery. How would you trace backup restoration and deletion propagation?
+* A retention job deletes source files but leaves derived embeddings and cached responses. How would you discover residual copies and make deletion comprehensive?
+* A legal hold conflicts with an automated deletion job. How would you prevent unauthorized deletion while keeping the rest of the retention process running?
+

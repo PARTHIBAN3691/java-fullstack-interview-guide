@@ -1,0 +1,30 @@
+* Explain the internal architecture of Kubernetes CronJobs and how the CronJob controller creates Jobs.
+* How does Kubernetes determine whether a scheduled Job is due?
+* Why should CronJob workloads be designed to be idempotent?
+* How do duplicate Job executions occur, and how should applications handle them?
+* Why does Kubernetes not guarantee exactly-once execution for CronJobs?
+* How would you design a CronJob that must not process the same business record twice?
+* How would you implement distributed locking for a scheduled task running across multiple application instances?
+* How would you design a reliable scheduled payment reconciliation process using Kubernetes CronJobs?
+* How would you prevent overlapping executions when a batch job sometimes runs longer than its schedule interval?
+* What are the trade-offs between Allow, Forbid, and Replace concurrency policies for production workloads?
+* How do missed schedules and startingDeadlineSeconds affect Job creation?
+* What happens when a CronJob controller is unavailable during scheduled execution?
+* How would you recover from missed schedules after a Kubernetes control plane outage?
+* How would you design retry and recovery strategies for long-running batch jobs?
+* How would you prevent repeated retries from overwhelming a database or external API?
+* How do backoffLimit, activeDeadlineSeconds, and podFailurePolicy interact?
+* How would you ensure a failed batch process can resume from its last successfully processed record?
+* How would you design checkpointing for a large data-processing CronJob?
+* How would you handle graceful termination when a CronJob Pod is deleted or evicted?
+* How would you design a CronJob that processes millions of database records without exhausting memory?
+* How would you distribute a large batch workload across multiple Pods or Jobs?
+* How would you coordinate dependencies between multiple scheduled Jobs?
+* How would you implement workflow orchestration when one scheduled task must finish before another begins?
+* How would you design a multi-tenant scheduled-processing platform using Kubernetes?
+* How would you secure CronJobs that access databases, Kafka, and external services?
+* How would you manage credentials rotation for long-running or frequently scheduled batch workloads?
+* How would you implement observability for scheduled Jobs using logs, metrics, and alerts?
+* How would you control resource consumption when hundreds of CronJobs execute simultaneously?
+* How would you design disaster recovery for critical scheduled workloads across multiple clusters?
+* What are the architectural trade-offs between Kubernetes CronJobs, Spring @Scheduled, Quartz Scheduler, and external workflow orchestration tools?

@@ -1,0 +1,30 @@
+* How would you design a highly available Kafka cluster for a mission-critical enterprise application?
+* How would you determine broker count, partition count, replication factor, and storage capacity for production?
+* How would you design Kafka across multiple availability zones to tolerate infrastructure failures?
+* How would you architect Kafka for disaster recovery across multiple regions?
+* What are the trade-offs between active-passive and active-active Kafka deployments?
+* How would you design cross-cluster replication using Cluster Linking or MirrorMaker 2?
+* How would you prevent data loss during broker failures and rolling upgrades?
+* How would you design a Kafka cluster that supports millions of events per second?
+* How would you calculate partition requirements based on throughput, message size, and consumer parallelism?
+* How would you handle partition skew caused by a highly active business key?
+* How would you design a partitioning strategy that preserves ordering while distributing load evenly?
+* How would you minimize consumer group rebalances in a high-throughput application?
+* How would you design Kafka for strict ordering requirements across related business events?
+* How would you implement end-to-end exactly-once processing across Kafka and external databases?
+* What limitations should be considered when using Kafka transactions with external systems?
+* How would you design an idempotent event-processing architecture to prevent duplicate business operations?
+* How would you handle schema evolution across hundreds of producer and consumer applications?
+* How would you design event compatibility policies using a schema registry?
+* How would you manage topic and partition expansion without violating business ordering assumptions?
+* How would you design retention and compaction policies for audit events and latest-state data?
+* How would you prevent disk exhaustion caused by unexpected message growth or consumer lag?
+* How would you architect Kafka security across multiple teams and sensitive business domains?
+* How would you design multi-tenant Kafka infrastructure with resource isolation and quotas?
+* How would you prevent one noisy producer or consumer from degrading the entire cluster?
+* How would you design a Kafka architecture that supports both real-time processing and historical replay?
+* How would you integrate Kafka with CDC platforms, databases, and downstream data pipelines?
+* How would you diagnose high request latency caused by broker networking, disk I/O, or replication delays?
+* How would you perform zero-downtime Kafka cluster upgrades and broker replacement?
+* How would you design capacity planning and automated scaling for Kafka infrastructure?
+* How would you evaluate self-managed Kafka against a managed Kafka service for a large enterprise?

@@ -1,0 +1,30 @@
+* What is persistent storage in Kubernetes?
+* What is a PersistentVolume (PV)?
+* What is a PersistentVolumeClaim (PVC)?
+* Why do we need PersistentVolumes in Kubernetes?
+* What is the difference between a PersistentVolume and a PersistentVolumeClaim?
+* What is a StorageClass?
+* Why is a StorageClass required?
+* What is dynamic volume provisioning?
+* What is static volume provisioning?
+* What is the difference between static and dynamic provisioning?
+* What is an ephemeral volume?
+* What is the difference between persistent and ephemeral storage?
+* What is a volume in Kubernetes?
+* What is the difference between a volume and a PersistentVolume?
+* What is a volumeMount in a Pod specification?
+* What is the purpose of the mountPath field?
+* What is accessModes in a PersistentVolume?
+* What are the different access modes supported by Kubernetes volumes?
+* What is ReadWriteOnce (RWO)?
+* What is ReadOnlyMany (ROX)?
+* What is ReadWriteMany (RWX)?
+* What is ReadWriteOncePod (RWOP)?
+* What is the capacity field in a PersistentVolume?
+* What is the reclaim policy of a PersistentVolume?
+* What are Retain, Delete, and Recycle reclaim policies?
+* What is the volumeBindingMode field in a StorageClass?
+* What is the purpose of a CSI driver?
+* What is a Container Storage Interface (CSI)?
+* What happens to persistent data when a Pod is deleted?
+* How can you check the status of PersistentVolumes and PersistentVolumeClaims?

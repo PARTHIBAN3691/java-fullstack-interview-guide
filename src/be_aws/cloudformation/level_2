@@ -1,0 +1,21 @@
+
+* Explain the complete CloudFormation deployment lifecycle, including template validation, change-set creation, resource provisioning, and rollback.
+* How does CloudFormation detect and manage dependencies between AWS resources?
+* How would you design reusable CloudFormation templates for multiple environments and AWS accounts?
+* What are nested stacks, and how do they help organize large infrastructure deployments?
+* How do CloudFormation modules and the AWS Cloud Development Kit (CDK) differ?
+* What are CloudFormation macros and transforms, and when would you use them?
+* What is the `AWS::Serverless` transform, and how does it relate to AWS SAM?
+* What is drift detection, and how would you remediate configuration drift?
+* What are custom resources in CloudFormation, and how do Lambda-backed custom resources work?
+* How would you implement safe updates for stateful resources such as Amazon RDS databases?
+* How do `DeletionPolicy: Retain`, `Snapshot`, and `Delete` differ, and when would you use each?
+* How would you recover a stack from `UPDATE_ROLLBACK_FAILED` without unnecessarily replacing production resources?
+* What are CloudFormation service roles, and how do they help enforce least-privilege deployment permissions?
+* How would you securely manage secrets and sensitive parameters in CloudFormation templates?
+* How do you prevent accidental replacement or deletion of critical infrastructure resources?
+* How would you deploy infrastructure across multiple AWS accounts and Regions?
+* What are CloudFormation StackSets, and when are they preferable to individual stacks?
+* How would you design an atomic or staged infrastructure deployment when multiple dependent stacks must be updated?
+* How can you test CloudFormation templates before deploying them to production?
+* How would you compare CloudFormation with Terraform for a large enterprise infrastructure platform?

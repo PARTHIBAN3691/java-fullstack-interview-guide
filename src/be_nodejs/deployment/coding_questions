@@ -1,0 +1,30 @@
+* Write a Node.js application that reads its port from an environment variable.
+* Create a production configuration module that validates required environment variables at startup.
+* Write a Dockerfile for a basic Node.js Express application.
+* Create a multi-stage Dockerfile that produces a smaller production image.
+* Write a Docker Compose configuration for a Node.js application and a PostgreSQL database.
+* Write a GitHub Actions workflow that installs dependencies and runs Node.js tests.
+* Create a CI/CD workflow that runs tests before building and publishing a Docker image.
+* Write a deployment script that installs dependencies and starts a Node.js application safely.
+* Configure PM2 to run a Node.js application with automatic restarts and structured logs.
+* Write a PM2 ecosystem configuration that separates development and production settings.
+* Implement SIGTERM and SIGINT handlers for graceful shutdown of an Express server.
+* Write an Express health-check endpoint that verifies application readiness.
+* Implement a readiness check that verifies database connectivity before accepting traffic.
+* Write an Nginx reverse-proxy configuration for a Node.js application with HTTPS support.
+* Create a deployment script that checks application health before switching traffic to a new version.
+* Implement a blue-green deployment workflow that can switch between two application versions.
+* Write a canary deployment configuration that gradually shifts traffic to a new application version.
+* Create a rollback script that restores the previous known-good application release.
+* Write a Kubernetes Deployment manifest for a Node.js application with resource requests, limits, and health probes.
+* Create Kubernetes Service and Ingress configurations for exposing a Node.js application.
+* Write a Kubernetes ConfigMap and Secret configuration for application settings.
+* Implement a Node.js application that exposes Prometheus-compatible metrics for production monitoring.
+* Write middleware that logs request duration, status code, and correlation ID without exposing sensitive data.
+* Create a script that detects whether a deployed application is responding successfully.
+* Write a deployment validation script that checks HTTP health, database connectivity, and required environment variables.
+* Implement graceful handling of database connections and background jobs during application shutdown.
+* Create a CI pipeline step that scans application dependencies for known vulnerabilities.
+* Write a Docker health-check configuration for a Node.js container.
+* Implement a deployment process that runs backward-compatible database migrations before switching application traffic.
+* Build a production-ready deployment setup for Node.js with Docker, CI/CD, health checks, centralized logging, monitoring, graceful shutdown, and automated rollback.

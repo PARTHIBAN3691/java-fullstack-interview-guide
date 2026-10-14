@@ -1,0 +1,30 @@
+* How would you create a custom Event Grid topic and publish events to it?
+* How do you create an event subscription for an Azure Event Grid topic?
+* How would you configure an Azure Function as an Event Grid event handler?
+* How do you publish events from a Java Spring Boot application to Azure Event Grid?
+* Which Azure SDK for Java would you use to publish events to Event Grid?
+* How do you configure an EventGridPublisherClient in a Java application?
+* How do you construct an event payload using the Event Grid schema in Java?
+* How do you publish CloudEvents from a Java application?
+* How do you configure event subscriptions using Azure CLI or infrastructure as code?
+* How do you filter events based on event type?
+* How do you configure subject-based filtering for an event subscription?
+* How would you filter events based on specific fields in the event data?
+* How do you configure dead-lettering for an event subscription?
+* How do you configure retry policies for event delivery?
+* How do you handle HTTP responses from an Event Grid webhook endpoint?
+* How do you implement event subscription validation in a custom webhook?
+* How do you secure Event Grid publishing using Microsoft Entra ID?
+* How do you configure role-based access control for Event Grid publishers and subscribers?
+* How do you use managed identity when integrating Event Grid with supported Azure services?
+* How do you handle exceptions when publishing events from a Java application?
+* How do you implement retry logic when publishing events to Event Grid?
+* How do you design an idempotent Event Grid event handler?
+* How do you handle duplicate event deliveries?
+* How do you monitor event delivery failures and dead-lettered events?
+* How do you configure diagnostic settings and send Event Grid logs to Log Analytics?
+* How do you integrate Event Grid with Azure Functions, Service Bus, or Event Hubs?
+* How do you distinguish between event notification and message-based workflow processing?
+* How do you test Event Grid event handlers locally?
+* How do you version event payloads when multiple consumers depend on them?
+* How would you deploy Event Grid topics and subscriptions across Dev, QA, and Production environments?

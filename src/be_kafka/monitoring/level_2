@@ -1,0 +1,30 @@
+* How would you design a complete production monitoring strategy for a large Kafka cluster?
+* Which Kafka metrics would you use to detect broker saturation before it affects consumers?
+* How would you distinguish CPU, disk I/O, network, and JVM-related Kafka performance bottlenecks?
+* How would you detect and diagnose increasing consumer lag across hundreds of consumer groups?
+* How would you differentiate between consumer-side processing delays and broker-side fetch delays?
+* How would you correlate Kafka broker metrics with application metrics to identify end-to-end latency?
+* How would you design SLOs and SLIs for a Kafka-based event-processing platform?
+* How would you calculate end-to-end event processing latency for Kafka?
+* How would you monitor Kafka throughput while accounting for compression and batching?
+* How would you detect hot partitions using Kafka metrics?
+* How would you identify uneven partition distribution across brokers?
+* How would you monitor replica synchronization and detect replica recovery problems?
+* How would you distinguish a temporary ISR reduction from a persistent replication failure?
+* How would you investigate increasing request latency when CPU utilization appears normal?
+* How would you diagnose Kafka performance issues caused by disk I/O saturation?
+* How would you detect JVM garbage-collection problems affecting Kafka broker latency?
+* How would you monitor controller performance and detect controller instability?
+* How would you design alert thresholds that avoid excessive false positives?
+* How would you monitor Kafka during a broker rolling restart?
+* How would you detect data loss or message availability issues using Kafka metrics?
+* How would you monitor transactional producers and consumers?
+* How would you monitor Kafka exactly-once workloads for transaction failures and aborts?
+* How would you monitor Kafka Streams state stores, task lag, and restoration time?
+* How would you monitor Kafka Connect source and sink connector failures?
+* How would you correlate Kafka logs, metrics, and distributed traces during an incident?
+* How would you design centralized Kafka monitoring for multiple clusters and environments?
+* How would you monitor a multi-region Kafka deployment and detect replication delays?
+* How would you design capacity monitoring and forecasting for Kafka storage?
+* How would you detect a gradual performance degradation before users report an incident?
+* How would you build an automated Kafka health-check and incident-detection system?

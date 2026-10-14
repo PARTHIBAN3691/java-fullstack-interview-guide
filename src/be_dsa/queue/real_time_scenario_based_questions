@@ -1,0 +1,30 @@
+* A web server receives requests faster than it can process them. How would you use a queue to manage incoming requests?
+* A payment processing system must preserve transaction order. Which queue implementation would you choose and why?
+* A notification service processes email, SMS, and push notifications asynchronously. How would you design its queue-based processing architecture?
+* A producer-consumer application occasionally loses tasks under heavy load. How would you investigate the queue implementation?
+* A background job processor experiences unbounded memory growth. How would you use bounded queues and backpressure to control resource usage?
+* A multithreaded application has producers that are faster than consumers. How would you prevent queue saturation?
+* A service must process high-priority customer requests before low-priority requests. How would you implement task prioritization?
+* A priority-based scheduler repeatedly delays low-priority tasks. How would you prevent starvation?
+* A Java application blocks indefinitely while waiting for a queue element. How would you investigate the cause?
+* A consumer thread stops processing tasks even though the queue contains elements. How would you debug the issue?
+* A task is processed twice after a worker failure. How would you design queue consumers to handle retries and duplicate processing?
+* A distributed job-processing system needs reliable delivery even when a worker crashes. What queue and acknowledgement mechanisms would you consider?
+* A logging service receives thousands of log messages per second. How would you design an asynchronous queue-based logging pipeline?
+* A real-time dashboard must display the maximum value from the latest 100 measurements. How would you use a deque to process the data efficiently?
+* A stock-monitoring system must calculate the median price continuously as new prices arrive. How would you design the data structure?
+* A customer support system must serve requests in FIFO order while allowing urgent requests to be prioritized. How would you model the scheduling rules?
+* A network application needs a fixed-size buffer for incoming packets. How would you implement a circular queue and handle overflow?
+* A service experiences latency spikes because a queue contains thousands of pending jobs. How would you diagnose and mitigate the backlog?
+* A Java application uses LinkedList as a queue and suffers from high memory usage. What alternatives would you evaluate?
+* A concurrent application reports inconsistent queue size values during processing. How would you determine whether the size estimate is safe to rely on?
+* A batch-processing system needs to merge hundreds of sorted files efficiently. How would you use a priority queue?
+* A microservice must limit the number of concurrent API calls. How could a queue and worker pool help enforce the limit?
+* A real-time system needs to discard the oldest measurements when its buffer is full. How would you design the queue behavior?
+* A job scheduler needs to execute tasks based on both priority and submission time. How would you implement deterministic ordering?
+* A multithreaded system has deadlocks involving queue operations. How would you identify and resolve the synchronization problem?
+* A producer-consumer application needs graceful shutdown without losing already accepted tasks. How would you design the shutdown sequence?
+* A service uses a blocking queue, but producers spend too much time waiting to enqueue tasks. What metrics and design changes would you consider?
+* A graph-processing service needs to traverse millions of nodes without excessive memory consumption. How would you manage the traversal queue?
+* A distributed application needs separate queues for different customers to prevent one customer from monopolizing processing resources. How would you design fair scheduling?
+* A Java service must choose between ArrayBlockingQueue, LinkedBlockingQueue, and ConcurrentLinkedQueue. What workload characteristics would guide your decision?

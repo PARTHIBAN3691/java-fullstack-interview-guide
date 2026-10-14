@@ -1,0 +1,30 @@
+* How would you design a general-purpose backtracking framework in Java that supports state updates, constraint validation, and undo operations?
+* How do you solve the N-Queens problem using bitmasking to optimize column and diagonal checks?
+* How do you solve Sudoku using the minimum-remaining-values heuristic?
+* How do you combine backtracking with constraint propagation to reduce the search space?
+* How do you solve the subset sum problem using backtracking with pruning?
+* How do you optimize combination sum when the input contains many repeated values?
+* How do you solve the traveling salesperson problem using backtracking and branch-and-bound?
+* How does branch-and-bound differ from ordinary backtracking?
+* How do you design admissible lower bounds to prune branches in an optimization problem?
+* How do you solve graph coloring using backtracking while minimizing the number of colors?
+* How do you find all Hamiltonian cycles in a graph while avoiding duplicate cycles?
+* How do you solve the Knight's Tour problem using Warnsdorff's heuristic?
+* How do you find all unique permutations of a large multiset without generating duplicate branches?
+* How do you solve palindrome partitioning while minimizing the number of cuts?
+* How do you solve word search when the grid and dictionary are large?
+* How can a trie improve backtracking for finding multiple words in a character grid?
+* How do you solve a cryptarithmetic puzzle using backtracking and arithmetic constraints?
+* How do you generate all valid expressions from a digit string while correctly handling operator precedence?
+* How do you solve a constrained scheduling problem where tasks have dependencies and resource restrictions?
+* How do you solve a set partitioning problem using backtracking with symmetry breaking?
+* How do you combine memoization with backtracking when different paths reach equivalent states?
+* How do you determine when dynamic programming is preferable to backtracking?
+* How do you prevent stack overflow when the recursion depth becomes very large?
+* How do you reduce memory consumption when generating millions of valid combinations?
+* How do you design a lazy iterator that generates permutations on demand instead of storing all results?
+* How do you support cancellation and execution time limits in a long-running backtracking search?
+* How would you parallelize a backtracking search while avoiding shared-state corruption?
+* How do you make a parallel backtracking algorithm deterministic when result ordering matters?
+* How do you profile and identify the most expensive constraint checks in a backtracking algorithm?
+* How would you prove that a backtracking algorithm is complete and does not skip any valid solutions?

@@ -1,0 +1,30 @@
+* Explain Angular's hierarchical dependency injection system in detail.
+* How does Angular resolve dependencies across ElementInjector and EnvironmentInjector hierarchies?
+* What is the difference between EnvironmentInjector and ElementInjector?
+* How do @Self(), @SkipSelf(), @Host(), and @Optional() affect dependency resolution?
+* How do you create a custom provider using InjectionToken and useFactory?
+* How do you inject configuration values into a service at runtime?
+* How do you implement environment-specific service implementations?
+* How would you design a service that supports multiple API implementations?
+* How do you prevent circular dependencies between Angular services?
+* What causes a circular dependency in Angular dependency injection?
+* How would you refactor services to eliminate circular dependencies?
+* How do you implement request deduplication in an API service?
+* How would you build a reusable HTTP caching service?
+* How do you invalidate cached API data when the underlying data changes?
+* How do you manage concurrent requests and avoid stale responses in a service?
+* How would you implement token refresh logic across multiple concurrent HTTP requests?
+* How do you coordinate authentication state between services?
+* How do you design a service for application-wide state management using RxJS?
+* What are the risks of exposing a mutable Subject directly from a service?
+* How do you expose read-only Observable state from a service?
+* How do you manage service subscriptions and prevent memory leaks?
+* How do you make a service safe for server-side rendering?
+* What considerations apply to singleton services during Angular server-side rendering?
+* How do you optimize service initialization using providedIn and lazy-loaded features?
+* How do service scopes interact with lazy-loaded routes and route-level providers?
+* How would you design a service that supports retry, timeout, and cancellation?
+* How do you write isolated unit tests for services with multiple dependencies?
+* How do you test a service that depends on another service and an HTTP API?
+* How would you design a service layer for a large enterprise Angular application?
+* How do you decide whether logic belongs in a component, service, interceptor, or state-management layer?

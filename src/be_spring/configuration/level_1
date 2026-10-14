@@ -1,0 +1,30 @@
+* How do you create a custom configuration class using @Configuration and @Bean?
+* How does Spring process @Bean methods inside a configuration class?
+* What is the difference between full and lite configuration mode?
+* How does proxyBeanMethods work in the @Configuration annotation?
+* What happens when proxyBeanMethods is set to false?
+* How do you inject one bean into another bean defined in a configuration class?
+* How do you configure multiple beans of the same type?
+* How do @Primary and @Qualifier help resolve bean ambiguity?
+* How do you bind a group of properties using @ConfigurationProperties?
+* How do you validate configuration properties using Jakarta Bean Validation?
+* How do you configure nested properties using YAML?
+* How do you configure lists and maps in application.yml?
+* How do you provide default values for configuration properties?
+* How do you configure different property values for development and production?
+* What is a Spring profile?
+* How do you activate a profile using application.properties?
+* What is the purpose of the @Profile annotation?
+* How do you create profile-specific configuration classes?
+* What is the difference between application.properties and application-dev.properties?
+* How does Spring Boot determine which property value takes precedence?
+* How do command-line arguments override configuration file values?
+* How do environment variables override application properties?
+* How do you load configuration from an external file?
+* How do you configure logging levels through application properties?
+* How do you configure database connection pool settings?
+* How do you customize Spring Boot auto-configuration?
+* What is the purpose of @ConditionalOnProperty?
+* What is the difference between @ConditionalOnProperty and @Profile?
+* How do you exclude a specific auto-configuration class?
+* How do you test configuration classes using Spring Boot testing support?

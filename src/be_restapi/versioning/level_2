@@ -1,0 +1,30 @@
+* How would you design an API versioning strategy for a large enterprise microservices platform?
+* How would you choose between URI, query parameter, custom header, and media type versioning for a public API?
+* How would you minimize code duplication when supporting multiple API versions?
+* How would you design an anti-corruption layer between legacy API contracts and a new internal domain model?
+* How would you maintain backward compatibility while evolving complex nested JSON structures?
+* How would you introduce a breaking change without disrupting existing consumers?
+* How would you support v1 and v2 APIs while gradually migrating clients?
+* How would you design a version-aware API gateway routing strategy?
+* How would you prevent version-specific behavior from leaking into the core business logic?
+* How would you manage API version compatibility across independently deployed microservices?
+* How would you handle a situation where an upstream service supports v2 but a downstream service supports only v1?
+* How would you coordinate database migrations with API version releases?
+* How would you implement an expand-and-contract database migration while multiple API versions remain active?
+* How would you design a deprecation and sunset policy for public APIs?
+* How would you measure the impact of retiring an older API version?
+* How would you handle clients that cannot upgrade because of long release cycles?
+* How would you version event payloads and REST API contracts consistently?
+* How would you maintain compatibility when enum values are added or removed from a response?
+* How would you handle changes to pagination, filtering, and sorting semantics across API versions?
+* How would you evolve authentication and authorization requirements without breaking existing clients?
+* How would you handle version-specific rate limits and quotas?
+* How would you design API version negotiation using HTTP headers?
+* How would you handle unsupported versions and communicate supported versions to clients?
+* How would you design contract tests that verify compatibility across multiple API versions?
+* How would you detect accidental breaking changes during CI/CD?
+* How would you support different response schemas while keeping a single canonical domain model?
+* How would you manage API versions when multiple teams independently own related endpoints?
+* How would you introduce a new version with canary releases and progressive traffic shifting?
+* How would you evaluate the operational cost of maintaining several active API versions?
+* How would you define measurable criteria for deprecating and retiring an API version?

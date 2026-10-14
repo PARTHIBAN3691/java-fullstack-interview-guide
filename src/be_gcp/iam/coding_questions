@@ -1,0 +1,30 @@
+* Write a Java program that initializes the Google Cloud Storage client using Application Default Credentials.
+* Write a Java program that accesses BigQuery using the authenticated identity configured for the application.
+* Write a Java program that accesses Secret Manager without hardcoding service account credentials.
+* Write a Java program that retrieves the active Google Cloud project ID from application configuration or credentials.
+* Write a Java program that calls a Google Cloud API using Application Default Credentials and handles authentication errors.
+* Write a Java program that uses Google Auth Library to obtain an access token from Application Default Credentials.
+* Write a Java program that uses service account impersonation to obtain short-lived credentials for a target service account.
+* Write a Java program that refreshes short-lived credentials safely when calling a Google Cloud API.
+* Write a Java program that uses the Google Cloud IAM API to retrieve the IAM policy for a project.
+* Write a Java program that lists IAM policy bindings and identifies which roles are assigned to a specified principal.
+* Write a Java program that adds an IAM role binding to a project policy while preserving existing bindings.
+* Write a Java program that removes a specific IAM role binding without removing other principals from the policy.
+* Write a Java program that retrieves the permissions associated with a predefined IAM role using the IAM API.
+* Write a Java program that checks whether a service account has an expected role binding on a project.
+* Write a Java program that lists service accounts in a Google Cloud project using the IAM Admin API.
+* Write a Java program that identifies service accounts with potentially excessive project-level role assignments.
+* Write a Java program that generates an IAM access review report from project policy bindings.
+* Write a Java program that validates a proposed IAM policy against a list of approved roles and principals.
+* Write a Java program that compares IAM policies from development and production projects and reports differences.
+* Write a Java program that reads Cloud Audit Logs and identifies IAM policy changes made during a specified time range.
+* Write a Java program that detects service account key creation events from Cloud Audit Logs.
+* Write a Java program that retrieves a secret from Secret Manager using the application's runtime identity.
+* Write a Spring Boot configuration class that initializes Google Cloud client libraries using Application Default Credentials.
+* Write a Spring Boot service that accesses Cloud Storage using a dedicated service account identity with least-privilege permissions.
+* Write a Java program that uses Workload Identity Federation credentials to authenticate to a Google Cloud API without a service account key file.
+* Write a Java program that invokes a Cloud Run service using an ID token and handles authentication failures.
+* Write a Java program that validates required IAM role bindings before starting a scheduled batch job.
+* Write a Java program that implements retry handling for transient Google Cloud API failures without retrying permanent authorization errors.
+* Write a Terraform configuration that creates a dedicated service account and grants it only the required Cloud Storage permissions.
+* Write a CI/CD pipeline example that deploys a Java application to Google Cloud using Workload Identity Federation instead of a long-lived service account key.

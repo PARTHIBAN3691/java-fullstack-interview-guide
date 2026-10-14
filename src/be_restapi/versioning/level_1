@@ -1,0 +1,30 @@
+* How would you implement URI-based versioning in Spring Boot?
+* How would you implement header-based versioning in Spring Boot?
+* How would you implement query parameter versioning in Spring Boot?
+* How would you implement media type versioning using the Accept header?
+* How can multiple controller methods map to different API versions?
+* How would you organize packages and classes for v1 and v2 REST APIs?
+* How would you share business logic between different API versions?
+* How can separate DTOs be maintained for different API versions?
+* How would you avoid duplicating service-layer logic across API versions?
+* How do you handle a new optional field in an existing response DTO?
+* How do you handle a renamed response field without breaking existing clients?
+* How would you introduce a new mandatory request field safely?
+* How would you handle a change in the data type of an existing API field?
+* How would you support old and new request formats simultaneously?
+* How can Spring Boot validate requests differently for different API versions?
+* How would you configure API versioning in an API gateway?
+* How would you document multiple API versions using OpenAPI or Swagger?
+* How would you test backward compatibility between API versions?
+* How can contract testing help prevent breaking API changes?
+* How would you identify clients that are still using an older API version?
+* How would you communicate API deprecation to consumers?
+* How can HTTP response headers communicate API deprecation or sunset dates?
+* How would you handle authentication and authorization consistently across API versions?
+* How would you manage API versioning when multiple microservices depend on one another?
+* How can feature flags help introduce new API behavior safely?
+* How would you support multiple versions of an API without maintaining separate deployments?
+* What are the advantages and disadvantages of maintaining separate versioned controllers?
+* How would you manage database schema changes while supporting multiple API versions?
+* How would you handle error response changes across API versions?
+* How would you decide when a change requires a new major API version?

@@ -1,0 +1,30 @@
+* How do you configure Redis in a Spring Boot application?
+* What is the difference between RedisTemplate and StringRedisTemplate?
+* How do you configure Spring Data Redis using Lettuce or Jedis?
+* What is the difference between Lettuce and Jedis clients?
+* How do you store and retrieve Java objects in Redis?
+* How do serializers affect Redis data storage and retrieval?
+* How do you configure JSON serialization for Java objects stored in Redis?
+* How do you implement cache-aside caching in Spring Boot?
+* How do you enable Spring's caching abstraction using @EnableCaching?
+* What is the difference between @Cacheable, @CachePut, and @CacheEvict?
+* How do you configure cache names, TTL values, and key prefixes in Spring Boot?
+* How do you build a cache key using multiple method parameters?
+* How do you prevent stale cache entries after database updates?
+* How do you implement cache invalidation when an entity is updated or deleted?
+* How do you handle Redis connection failures in a Spring Boot application?
+* How do you configure connection pooling and timeouts for Redis clients?
+* How do you use Redis pipelining to reduce network round trips?
+* How do Redis transactions differ from database transactions?
+* How do you implement atomic counters using Redis?
+* How do you implement a distributed lock using Redis?
+* How do you use Redis Pub/Sub to communicate between application instances?
+* What is the difference between Redis Pub/Sub and Redis Streams?
+* How do you implement a consumer group using Redis Streams?
+* How do you configure Redis persistence and memory limits?
+* How do eviction policies such as allkeys-lru and volatile-lru differ?
+* How do you monitor Redis memory usage, key expiration, and cache hit ratio?
+* How do you prevent cache stampedes when many requests access an expired key?
+* How do you implement rate limiting using Redis?
+* How do you secure Redis connections using authentication and TLS?
+* How do you test Redis integration in a Spring Boot application?

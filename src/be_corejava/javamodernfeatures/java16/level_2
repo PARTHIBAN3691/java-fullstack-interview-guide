@@ -1,0 +1,21 @@
+
+* Explain the language and inheritance restrictions imposed on records in Java 16.
+* How does a record's generated equality differ from identity-based equality?
+* What happens when a record component refers to a mutable collection?
+* How would you enforce defensive copying in a record that accepts a mutable list?
+* What are the limitations of using records as JPA entities?
+* How would you decide between a record and a conventional class in a public API?
+* How do record component annotations propagate to generated fields, accessors, and constructor parameters?
+* How do compact constructors differ from canonical constructors in validation and initialization?
+* Explain flow scoping of pattern variables across complex Boolean expressions.
+* How does Java determine whether a pattern variable is definitely matched and available within an expression?
+* What are the implications of using `Stream.toList()` when downstream code expects a mutable collection?
+* How would you choose among `Stream.toList()`, `Collectors.toList()`, and `Collectors.toUnmodifiableList()`?
+* Explain the performance considerations of `mapMulti()` compared with `flatMap()` for one-to-many transformations.
+* What are the limitations and risks of the Foreign-Memory Access API in Java 16?
+* How does the Vector API support data-parallel computations, and what limitations existed in its Java 16 incubator version?
+* How does `jpackage` package a Java application and its runtime dependencies for distribution?
+* What migration challenges can arise from Java 16's strong encapsulation of JDK internals?
+* What is the purpose of the `--illegal-access` option's change in Java 16?
+* How would you investigate an application that fails after upgrading from Java 11 to Java 16 due to reflective access?
+* How would you evaluate Java 16 incubator and preview APIs before adopting them in a production application?

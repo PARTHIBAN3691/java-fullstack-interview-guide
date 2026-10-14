@@ -1,0 +1,30 @@
+* Your application becomes slow when the number of concurrent users increases. How would you identify the bottleneck?
+* An e-commerce application experiences a tenfold traffic spike during a sale. How would you keep the system responsive?
+* A database server becomes unavailable during peak traffic. How should the application continue operating?
+* Your application runs on multiple instances, but users lose their sessions when requests reach different instances. How would you fix this?
+* A frequently accessed database record causes excessive load. How would you improve performance?
+* Your cache contains outdated product prices after a database update. How would you maintain acceptable consistency?
+* A downstream payment service responds slowly and exhausts application threads. How would you prevent cascading failures?
+* A message queue accumulates millions of pending events. How would you investigate and recover?
+* Your application receives duplicate payment requests because of client retries. How would you prevent duplicate charges?
+* Two customers attempt to purchase the same final inventory item. How would you prevent overselling?
+* A new application release introduces a database schema change that breaks older instances. How would you deploy safely?
+* A service works correctly in one region but becomes unavailable after a regional outage. How would you improve resilience?
+* Your application has high CPU usage but low request throughput. How would you diagnose the problem?
+* A database query becomes slow after a table grows to billions of records. What architectural and query-level changes would you consider?
+* A monolithic application is difficult to deploy because teams frequently interfere with each other's changes. How would you improve the architecture?
+* A microservices application has many synchronous dependencies and experiences widespread failures. How would you reduce coupling?
+* Your API is overwhelmed by repeated requests from a small number of clients. How would you protect the service fairly?
+* A background job runs on multiple instances and processes the same record more than once. How would you prevent duplicate processing?
+* A user updates a record but immediately sees stale data from a read replica. How would you address the issue?
+* Your system must retain financial records and recover from accidental data deletion. How would you design backup and recovery?
+* A new feature requires data from three different services, making the API slow. How would you improve response time?
+* Your application must support customers in multiple countries with different latency requirements. How would you design regional deployment?
+* Production logs show intermittent failures, but no single service appears unhealthy. How would you investigate the issue?
+* A deployment causes increased error rates, and rolling back takes several minutes. How would you improve release safety?
+* Your infrastructure cost increases sharply as traffic grows. How would you identify opportunities for optimization?
+* A third-party API frequently times out and has strict rate limits. How would you integrate it reliably?
+* A system must process requests in the background while immediately acknowledging client submissions. How would you design the workflow?
+* Your service requires a maintenance window, but the business cannot tolerate downtime. How would you perform the upgrade?
+* A security breach exposes an API credential used by multiple services. How would you contain the incident and improve secret management?
+* You need to design a new payment platform from scratch. How would you gather requirements, estimate capacity, choose architecture, and plan failure recovery?

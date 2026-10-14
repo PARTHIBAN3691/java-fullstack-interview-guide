@@ -1,0 +1,20 @@
+* How do you configure GC logging in Java 17?
+* What is the unified JVM logging framework introduced in Java 9?
+* What is the difference between `-Xlog:gc` and `-Xlog:gc+heap=debug`?
+* What do the `gc`, `gc+heap`, `gc+phases`, and `gc+metaspace` log tags represent?
+* How do you configure GC log rotation?
+* What are the purposes of `filecount` and `filesize` in GC log configuration?
+* How do you include timestamps and uptime in GC logs?
+* How do you interpret heap usage before and after a GC event?
+* How can you identify repeated young GC events from GC logs?
+* How can you identify Full GC events in GC logs?
+* How do you determine the duration of a garbage collection pause?
+* How can GC logs help identify excessive object allocation?
+* How do you identify whether heap occupancy is increasing over time?
+* How can GC logs help distinguish high allocation pressure from a possible memory leak?
+* What is the difference between `-Xlog:gc*` and legacy options such as `-XX:+PrintGCDetails`?
+* How do you enable GC logging in Java 8?
+* How do you interpret GC logs when using G1 GC?
+* What information about metaspace can be obtained from GC logs?
+* How do you correlate GC events with application response-time spikes?
+* Which tools can be used to analyze GC logs?

@@ -1,0 +1,20 @@
+* How would you design a CI/CD pipeline for a Java Spring Boot application using Gradle or Maven?
+* How would you separate build, test, artifact publishing, and deployment stages?
+* How would you design a pipeline that supports development, testing, staging, and production environments?
+* How would you structure a Jenkins Declarative Pipeline for a multi-stage application build and deployment?
+* How would you use GitHub Actions workflows to build and test an application on pull requests and deploy it after a merge?
+* How would you structure a GitLab CI/CD pipeline using stages, jobs, rules, and reusable templates?
+* How would you design Azure Pipelines using YAML templates and environment-specific deployment stages?
+* How would you configure AWS CodePipeline to build, test, approve, and deploy an application?
+* What are the advantages and disadvantages of maintaining pipeline definitions as code?
+* How would you choose between hosted build agents and self-hosted runners?
+* How would you manage build agent capacity when multiple pipelines execute concurrently?
+* How would you manage artifacts across multiple pipeline stages without rebuilding the application?
+* How would you store and retrieve versioned artifacts from Nexus, Artifactory, GitHub Packages, or Amazon S3?
+* How would you secure credentials used by Jenkins, GitHub Actions, GitLab CI/CD, or Azure Pipelines?
+* How would you prevent secrets from appearing in pipeline logs?
+* How would you implement manual approval gates before production deployment?
+* How would you decide which pipeline stages should require manual approval and which should be automated?
+* How would you execute unit tests, integration tests, and independent build tasks in parallel?
+* How would you configure dependency caching for a Java application to reduce build time?
+* How would you identify the slowest stages in a pipeline and

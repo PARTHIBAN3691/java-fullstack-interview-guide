@@ -1,0 +1,30 @@
+* A JUnit test passes locally but fails in Jenkins. How would you investigate the cause?
+* A test class passes when run independently but fails when the entire suite executes. How would you troubleshoot it?
+* A test fails intermittently because multiple tests modify the same static variable. How would you fix it?
+* A service method returns the correct result, but one of its dependencies is not invoked. How would you test the expected interaction?
+* A method throws an exception, but the test passes even when the exception message is incorrect. How would you improve the assertions?
+* A parameterized test skips certain input combinations unexpectedly. How would you investigate the issue?
+* A test using @BeforeAll fails because the method is not static. How would you resolve the issue?
+* A JUnit 5 test is not discovered by Maven even though it runs in the IDE. What would you check?
+* Mockito mocks are not initialized, causing NullPointerException during testing. How would you troubleshoot the configuration?
+* A test uses @InjectMocks but a dependency is not injected as expected. How would you investigate the problem?
+* A test passes despite an incorrect method invocation because the mock verification is missing. How would you strengthen the test?
+* An asynchronous operation sometimes completes after the test has already finished. How would you make the test reliable?
+* A test using assertTimeoutPreemptively() causes unexpected transaction behavior. How would you investigate the issue?
+* Parallel JUnit execution causes database deadlocks. How would you isolate the tests and resolve the conflict?
+* A JUnit suite takes 30 minutes to execute because Spring application contexts are repeatedly initialized. How would you optimize it?
+* A test depends on the current date and fails at midnight. How would you make it deterministic?
+* A test requires an external API that is unavailable in the test environment. How would you design the test?
+* A test passes even though a critical business rule is not validated. How would you improve its assertions?
+* A test uses multiple assertions, and the first failure prevents later checks from running. How could assertAll() help?
+* A test suite contains duplicated test setup logic across dozens of classes. How would you refactor it?
+* A developer introduces a new branch, but the existing JUnit tests do not exercise it. How would you identify and address the gap?
+* A JUnit 4 test suite uses rules and runners that are incompatible with a direct migration to JUnit 5. How would you plan the migration?
+* A test must execute only when a database is available. How would you implement conditional execution?
+* A test should run only for the integration-test category in the CI pipeline. How would you use tags and build configuration?
+* A mocked repository returns null unexpectedly because the mock setup does not match the actual arguments. How would you diagnose it?
+* A test fails because an object comparison uses reference equality instead of value equality. How would you fix the assertion?
+* A repeated test succeeds on the first attempt but fails on subsequent repetitions because state is not reset. How would you resolve the issue?
+* A dynamic test factory generates no tests in CI. How would you troubleshoot the test discovery and data generation?
+* A test suite reports successful execution but code coverage remains low. How would you investigate the missing test paths?
+* You need to establish consistent JUnit testing standards across multiple Java teams. How would you design reusable utilities, conventions, and CI checks?

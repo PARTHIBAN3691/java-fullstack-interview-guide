@@ -1,0 +1,30 @@
+* How do you design a code review strategy for a large enterprise Java application?
+* How do you establish code review guidelines across multiple development teams?
+* How do you evaluate architectural implications of a pull request?
+* How do you identify violations of domain boundaries in a layered Java application?
+* How do you review changes that introduce new dependencies between microservices?
+* How do you assess the performance impact of a major refactoring?
+* How do you review concurrency-heavy code for deadlocks and race conditions?
+* How do you evaluate the correctness of asynchronous processing implemented using CompletableFuture?
+* How do you review distributed transaction handling across multiple services?
+* How do you assess data consistency risks in changes involving multiple databases?
+* How do you review code that introduces caching across distributed services?
+* How do you identify potential memory leaks in Java applications during code review?
+* How do you evaluate JVM memory allocation and garbage collection implications of a code change?
+* How do you review reactive Java code for blocking calls and backpressure issues?
+* How do you assess security risks in OAuth 2.0 and JWT implementation changes?
+* How do you review code that handles sensitive customer or payment information?
+* How do you evaluate backward compatibility in REST APIs and event schemas?
+* How do you review database migration scripts for production safety?
+* How do you assess resilience patterns such as retries, timeouts, and circuit breakers?
+* How do you review changes that may affect system availability during deployment?
+* How do you decide when a code review should block a release?
+* How do you handle a technically correct implementation that violates architectural standards?
+* How do you resolve repeated conflicts between code quality expectations and delivery pressure?
+* How do you prevent code review approvals from becoming a formality?
+* How do you evaluate whether a proposed abstraction improves maintainability or adds unnecessary complexity?
+* How do you establish ownership and accountability for critical code review findings?
+* How do you manage code review quality when reviewers have different technical expertise?
+* How do you create a risk-based review process for critical production systems?
+* How do you use engineering metrics to improve code review quality without encouraging unhealthy behavior?
+* How do you evolve code review standards as a Java platform and architecture mature?

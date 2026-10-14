@@ -1,0 +1,30 @@
+* How do you configure a liveness probe in a Pod YAML manifest?
+* How do you configure a readiness probe for a Spring Boot application?
+* How do you configure a startup probe for a slow-starting Java application?
+* How do you configure an HTTP GET probe with a custom path and port?
+* How do you configure a TCP socket probe for a database container?
+* How do you configure an exec probe to validate a process inside a container?
+* How do initialDelaySeconds and periodSeconds affect probe execution?
+* How do timeoutSeconds and failureThreshold influence probe failure detection?
+* How does successThreshold behave differently for readiness and liveness probes?
+* What happens when a container fails its readiness probe repeatedly?
+* Does a failed readiness probe restart the container?
+* What happens when a liveness probe fails repeatedly?
+* How does Kubernetes behave when a startup probe is configured alongside a liveness probe?
+* Why should liveness probes generally avoid checking external dependencies?
+* How can an incorrect liveness probe cause unnecessary container restarts?
+* How do readiness probes help during rolling deployments?
+* How do probes interact with Deployment rollout progress?
+* How can you configure probes for applications that require significant initialization time?
+* How do you configure Spring Boot Actuator health endpoints for Kubernetes probes?
+* What is the difference between /actuator/health and dedicated liveness and readiness endpoints?
+* How can you expose health endpoints without exposing sensitive application information?
+* How do you troubleshoot HTTP probe failures caused by authentication or redirects?
+* How can TLS configuration affect an HTTP probe?
+* How do you configure probes when an application listens on a non-default port?
+* How do named container ports work with probe configurations?
+* How do probes behave when the application process is alive but its HTTP server is unresponsive?
+* How can probe configuration affect application availability during high CPU usage?
+* How do you diagnose repeated readiness probe failures using Pod events and container logs?
+* How do you choose suitable probe thresholds for a production application?
+* How do probes differ from monitoring and application-level alerting?

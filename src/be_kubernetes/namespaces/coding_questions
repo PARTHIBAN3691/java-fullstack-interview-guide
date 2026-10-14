@@ -1,0 +1,30 @@
+* Write a Namespace YAML manifest named development.
+* Create a Namespace YAML with labels for environment, team, and application ownership.
+* Write a Deployment manifest that deploys a Spring Boot application into a specific Namespace.
+* Create a Service manifest in the same Namespace as a Spring Boot Deployment.
+* Write kubectl commands to create, list, describe, and delete Namespaces.
+* Write kubectl commands to set the default Namespace for the current context.
+* Create a ResourceQuota manifest that limits CPU, memory, and the number of Pods in a Namespace.
+* Write a LimitRange manifest that defines default CPU and memory requests and limits for containers.
+* Create a Role that allows users to view Pods and Services in a specific Namespace.
+* Write a Role and RoleBinding that allow a deployment team to manage Deployments but not Secrets.
+* Create a ServiceAccount for a Spring Boot application running in a dedicated Namespace.
+* Write a RoleBinding that grants an existing ClusterRole permissions only within one Namespace.
+* Create a NetworkPolicy that denies all ingress traffic by default in a Namespace.
+* Write a NetworkPolicy that allows traffic from an application Pod in one Namespace to a backend Pod in another Namespace.
+* Create a NetworkPolicy that allows DNS egress while blocking other unnecessary outbound traffic.
+* Write a ConfigMap manifest for a Spring Boot application in a dedicated Namespace.
+* Create a Secret manifest for application credentials and configure a Deployment to reference it in the same Namespace.
+* Write a YAML manifest that creates a Namespace and applies ResourceQuota and LimitRange policies.
+* Create a Namespace provisioning configuration that applies standard labels and annotations.
+* Write kubectl commands to identify ResourceQuota usage and remaining capacity in a Namespace.
+* Write a shell script that verifies a target Namespace exists before deploying an application.
+* Create a shell script that lists Pods, Deployments, Services, and Jobs across all Namespaces.
+* Write a script that reports Namespaces approaching their CPU, memory, or Pod quotas.
+* Create a YAML manifest that restricts workloads in a Namespace using a Pod Security Admission label.
+* Write a Helm values configuration that allows the target Namespace to be selected during deployment.
+* Create a Helm template that conditionally creates a Namespace when namespace creation is enabled.
+* Write a CI/CD shell script that deploys a Spring Boot application into a specified Namespace and verifies rollout status.
+* Write a script that audits RoleBindings and ClusterRoleBindings for excessive cross-Namespace permissions.
+* Create a Kubernetes configuration for a team Namespace with ResourceQuota, LimitRange, RBAC, and default-deny NetworkPolicy.
+* Design an automated Namespace provisioning solution that creates isolated environments with quotas, permissions, network controls, monitoring, and cleanup policies.

@@ -1,0 +1,30 @@
+* Write a Spring Boot REST API that can run as multiple stateless instances behind a load balancer.
+* Implement pagination and sorting for a Spring Data JPA repository handling a large dataset.
+* Write a Java service that uses Redis caching to reduce repeated database queries.
+* Implement cache eviction when a product's details are updated.
+* Write a cache-aside implementation using Spring Boot and Redis.
+* Implement a strategy to prevent cache stampedes for frequently accessed data.
+* Write a Java program that uses a bounded thread pool to process concurrent requests.
+* Implement asynchronous task execution using Spring's @Async annotation.
+* Configure a bounded ThreadPoolTaskExecutor and handle task rejection under overload.
+* Write a Spring Boot application that exposes metrics required for autoscaling decisions.
+* Implement a rate limiter that protects a REST endpoint from excessive requests.
+* Write a load-testing script for a Spring Boot API using a tool such as k6 or Gatling.
+* Implement a service that records request latency, throughput, and error counts using Micrometer.
+* Write a Kafka producer and consumer that process events in parallel using multiple partitions.
+* Implement a Kafka consumer that handles slow downstream processing and monitors consumer lag.
+* Write a Java example demonstrating backpressure using Project Reactor.
+* Implement a WebClient-based reactive API that limits concurrent downstream requests.
+* Write a Spring Boot service that uses a database read replica for read-only queries.
+* Implement optimistic locking with JPA's @Version annotation to reduce concurrent-update conflicts.
+* Write a database query optimization example using appropriate indexes and pagination.
+* Implement a bulkhead to isolate resource-intensive operations from regular API requests.
+* Write a service that uses bounded queues and load shedding when processing capacity is exceeded.
+* Implement a distributed cache with configurable TTL and cache invalidation.
+* Write a Kubernetes Horizontal Pod Autoscaler configuration for a Spring Boot deployment using CPU utilization.
+* Create a Kubernetes scaling configuration based on a custom application metric such as request queue depth.
+* Write a Java program that simulates concurrent requests and measures throughput and response latency.
+* Implement a batch-processing service that processes large datasets in bounded chunks.
+* Write a test that verifies application behavior when the database connection pool reaches capacity.
+* Implement a strategy to prevent duplicate processing when a workload is distributed across multiple service instances.
+* Design and implement a scalable Spring Boot microservices system using load balancing, Redis caching, Kafka, database optimization, autoscaling, observability, and load testing.

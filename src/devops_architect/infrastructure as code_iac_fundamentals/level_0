@@ -1,0 +1,30 @@
+* What is Infrastructure as Code (IaC), and why is it important?
+* What are the main benefits of Infrastructure as Code?
+* What is the difference between manual infrastructure provisioning and IaC?
+* What is Terraform?
+* What is a Terraform configuration file?
+* What is a Terraform provider?
+* What is a Terraform module?
+* What is Terraform state?
+* Why does Terraform maintain a state file?
+* What is remote state in Terraform?
+* What is state locking, and why is it required?
+* What are Terraform workspaces?
+* What are Terraform input variables?
+* What are Terraform output values?
+* What is the purpose of `terraform init`?
+* What is the purpose of `terraform plan`?
+* What is the purpose of `terraform apply`?
+* What is the purpose of `terraform destroy`?
+* What is the Terraform lifecycle block?
+* What is infrastructure drift?
+* What is drift detection in Terraform?
+* What is the difference between Terraform and AWS CloudFormation?
+* What is Pulumi?
+* What is the difference between declarative and imperative infrastructure provisioning?
+* What is an infrastructure provisioning pipeline?
+* What is IaC testing?
+* What is IaC security?
+* What is IaC governance?
+* Why should Terraform state files not be committed to Git?
+* Why should infrastructure changes be reviewed before applying them?

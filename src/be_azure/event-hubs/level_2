@@ -1,0 +1,30 @@
+* How would you design a high-throughput event streaming architecture using Azure Event Hubs and Java microservices?
+* How would you estimate the required number of partitions for a high-volume event stream?
+* How would you choose between throughput-oriented and capacity-oriented Event Hubs tiers?
+* How would you design an event ingestion platform that processes millions of events per hour?
+* How would you prevent hot partitions when a large proportion of events share the same partition key?
+* How would you design partition keys for a stream containing customer transactions with ordering requirements?
+* How would you handle ordering requirements when events are processed concurrently across partitions?
+* How would you design consumer scaling using partition ownership and checkpointing?
+* How would you recover consumer processing after an application crash without losing events?
+* How would you implement at-least-once processing while preventing duplicate business operations?
+* How would you design idempotent event consumers when checkpointing can occur after business processing?
+* How would you handle checkpoint failures after events have been successfully processed?
+* How would you prevent data loss when a consumer updates its checkpoint before completing the business operation?
+* How would you design an event-processing system that supports replay from a specific offset or timestamp?
+* How would you manage event retention when consumers may be offline for extended periods?
+* How would you design disaster recovery for Azure Event Hubs across Azure regions?
+* How would you handle failover when a consumer is connected to a failed Event Hubs namespace?
+* How would you design a geo-distributed event streaming platform with regional producers and consumers?
+* How would you optimize Event Hubs throughput while controlling infrastructure costs?
+* How would you handle throttling when producers exceed the available throughput capacity?
+* How would you implement backpressure when downstream consumers cannot process incoming events quickly enough?
+* How would you design dead-letter handling for events that repeatedly fail business validation?
+* How would you integrate Event Hubs with a transactional outbox to reliably publish database changes?
+* How would you secure event streaming using managed identities, least-privilege RBAC, and private endpoints?
+* How would you rotate credentials without interrupting active producers and consumers?
+* How would you design schema evolution for event producers and consumers deployed independently?
+* How would you maintain backward compatibility when event payloads change?
+* How would you monitor end-to-end latency across producers, Event Hubs, and consumer applications?
+* How would you troubleshoot high CPU usage and memory pressure in a Java Event Hubs consumer?
+* How would you design a streaming data pipeline using Event Hubs, Azure Databricks, and Delta Lake?

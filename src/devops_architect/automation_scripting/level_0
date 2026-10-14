@@ -1,0 +1,98 @@
+
+**Bash**
+* What is Bash, and how is it different from a command-line shell?
+* What are variables, environment variables, and command-line arguments in Bash?
+* How do you use conditional statements and loops in Bash?
+* How do you check the exit status of a command?
+* How do you redirect standard output and standard error to files?
+
+**Python**
+* Why is Python commonly used for automation?
+* How do you handle files, directories, and environment variables in Python?
+* What is the difference between a list, tuple, set, and dictionary?
+* How do you handle exceptions in an automation script?
+* How do you pass command-line arguments to a Python script?
+
+**PowerShell**
+* What is PowerShell, and how does it differ from the Windows Command Prompt?
+* What are cmdlets, and how do you discover available cmdlets?
+* What is the PowerShell pipeline?
+* How do you declare variables and define functions in PowerShell?
+* How do you handle errors in a PowerShell script?
+
+**Shell Scripting**
+* What is shell scripting, and when would you use it?
+* What is the purpose of a shebang line?
+* How do you make a shell script executable?
+* How do you accept user input and command-line parameters?
+* How do you use `if`, `case`, `for`, and `while` constructs?
+
+**CLI Automation**
+* What is CLI automation, and what are its common use cases?
+* How do you execute CLI commands from a script?
+* How do you capture command output and exit codes?
+* How do you automate authentication with a cloud CLI?
+* What are the risks of storing CLI credentials in scripts?
+
+**API Automation**
+* What is API automation, and how does it differ from manual API testing?
+* What are HTTP methods, status codes, headers, and request bodies?
+* How do you call a REST API from Python or a shell script?
+* How do you handle API authentication?
+* How do you parse JSON responses in an automation script?
+
+**Infrastructure Automation**
+* What is infrastructure automation, and why is it useful?
+* What is the difference between manual provisioning and automated provisioning?
+* What are configuration files and infrastructure templates?
+* What is idempotency in infrastructure automation?
+* How do you verify that a provisioned resource is available?
+
+**Deployment Automation**
+* What are the main stages of an automated deployment?
+* What is the difference between build automation and deployment automation?
+* How do you pass environment-specific configuration to a deployment?
+* What is a deployment artifact?
+* How do you verify that an application deployment succeeded?
+
+**Operational Automation**
+* Which routine operational tasks can be automated?
+* How do you automate log collection and disk-space checks?
+* How can scripts help with service health checks?
+* What information should an operational automation log?
+* How do you safely automate restarting a service?
+
+**Scheduled Jobs**
+* What is a scheduled job?
+* What is cron, and how is it used on Linux?
+* What is Windows Task Scheduler?
+* How do you redirect scheduled-job output to a log file?
+* How do you identify whether a scheduled job succeeded or failed?
+
+**Event-Driven Automation**
+* What is event-driven automation?
+* What is the difference between scheduled and event-driven execution?
+* What is an event trigger?
+* What are common events that can trigger an automation workflow?
+* Why should event handlers log their execution results?
+
+**Self-Healing Automation**
+* What is self-healing automation?
+* How does self-healing differ from alerting?
+* What is a health check?
+* What types of failures can be recovered automatically?
+* Why should automatic recovery actions have limits?
+
+**Runbooks**
+* What is an operational runbook?
+* What is the difference between a runbook and a playbook?
+* What information should a basic runbook contain?
+* Why should runbooks include validation steps?
+* How do you keep runbooks updated?
+
+**Automation Governance**
+* What is automation governance?
+* Why should automation scripts be stored in version control?
+* Why is least-privilege access important for automation?
+* Why should automation executions be auditable?
+* What is the purpose of code reviews for automation scripts?

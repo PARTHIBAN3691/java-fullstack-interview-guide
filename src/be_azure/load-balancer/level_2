@@ -1,0 +1,30 @@
+* How would you design a highly available architecture for Java microservices using Azure Load Balancer?
+* How would you choose between Azure Load Balancer, Application Gateway, and Azure Front Door for an enterprise application?
+* How would you design a multi-tier architecture with an internal load balancer between application and service tiers?
+* How would you design a load-balancing strategy for a high-throughput TCP application?
+* How would you design load balancing for stateful applications that require session affinity?
+* How would you handle stateful session management when requests can reach different Spring Boot instances?
+* How would you design a highly available load-balancing solution across availability zones?
+* How would you plan disaster recovery for a load-balanced application across Azure regions?
+* How would you design traffic distribution when backend instances have different processing capacities?
+* How would you troubleshoot uneven traffic distribution across healthy backend instances?
+* How would you design health probes to detect application failures without causing unnecessary backend removal?
+* How would you prevent a health-probe configuration from marking all backend instances unhealthy during a temporary dependency outage?
+* How would you troubleshoot intermittent timeouts caused by idle connection behavior or connection reuse?
+* How would you diagnose and mitigate SNAT port exhaustion in a production workload?
+* How would you design outbound connectivity for applications that make a large number of external API calls?
+* How would you migrate from a single Java application server to multiple load-balanced instances with minimal downtime?
+* How would you design zero-downtime deployment when replacing backend instances?
+* How would you coordinate application startup, readiness checks, and backend health-probe configuration?
+* How would you handle long-lived TCP connections during backend maintenance or instance replacement?
+* How would you design a load-balancing architecture for WebSocket or other long-lived connections?
+* How would you troubleshoot asymmetric connectivity or unexpected routing behavior in a virtual network?
+* How would you diagnose a situation where the frontend is reachable but backend applications are not receiving traffic?
+* How would you secure a public-facing load balancer while restricting backend access to authorized traffic?
+* How would you design network segmentation and NSG rules for a multi-tier Java application?
+* How would you monitor and troubleshoot packet drops, connection failures, and backend health issues?
+* How would you design load balancing for a high-volume application with strict latency and availability requirements?
+* How would you assess the impact of changing a load-balancing rule on existing connections?
+* How would you automate load-balancer provisioning and configuration validation using infrastructure as code?
+* How would you design a rollback strategy for a failed load-balancer configuration deployment?
+* How would you optimize the cost and operational complexity of a highly available Azure networking architecture?

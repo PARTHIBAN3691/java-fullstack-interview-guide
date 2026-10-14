@@ -1,0 +1,30 @@
+* Your payment service becomes slow, causing multiple downstream services to time out. How would you prevent a cascading failure?
+* A downstream API intermittently returns HTTP 503 errors. How would you configure retries, backoff, and circuit breaking?
+* Your application retries failed payment requests and occasionally charges customers twice. How would you resolve the issue?
+* A database primary fails during peak traffic. How would you restore service while preserving data consistency?
+* Your application is deployed across three availability zones, but a single configuration change causes all instances to fail. How would you improve resilience?
+* A Kafka consumer crashes after updating the database but before acknowledging a message. How would you prevent duplicate business operations?
+* Your message broker is unavailable for 20 minutes, and producers continue receiving traffic. How would you prevent data loss and recover safely?
+* A service repeatedly restarts because its dependency is unavailable. How would you prevent restart loops and improve recovery?
+* Your API meets its average latency target but frequently violates its p99 latency objective. How would you investigate and improve reliability?
+* A third-party payment provider becomes unavailable, but customers must still be able to place orders. How would you design a fallback strategy?
+* Your application experiences a sudden tenfold traffic spike. How would you protect critical services from overload?
+* A regional outage affects your primary data center. How would you fail over to another region while meeting the business RTO and RPO?
+* Your active-active deployment accepts conflicting updates to the same customer account in two regions. How would you prevent or resolve conflicts?
+* A circuit breaker opens during a temporary dependency slowdown and remains open after the dependency recovers. How would you investigate the configuration?
+* Your retry mechanism increases traffic to an already overloaded service. How would you reduce the amplification?
+* A rolling deployment causes dropped requests because instances terminate before completing in-flight operations. How would you fix the deployment process?
+* Your health checks report all instances as healthy even though users cannot complete transactions. How would you improve the health-check strategy?
+* A replicated database reports successful writes, but a failover causes recent records to disappear. How would you investigate the replication and durability guarantees?
+* A shared database becomes overloaded because one tenant generates excessive traffic. How would you isolate that tenant and protect others?
+* A critical service is unavailable, but the application can still provide limited functionality. How would you implement graceful degradation?
+* Your system has frequent alerts but few actionable incidents. How would you redesign alerting around SLOs and error budgets?
+* A deployment introduces a subtle bug that affects only 2% of requests. How would you detect it and limit the impact?
+* A dependency has intermittent DNS failures that affect only some application instances. How would you diagnose and mitigate the issue?
+* A distributed workflow completes the first two steps but fails during the third step. How would you recover without leaving inconsistent business state?
+* A queue contains millions of pending messages after an extended outage. How would you recover without overwhelming downstream services?
+* Your disaster recovery environment has not been tested for a year. How would you validate its readiness and identify recovery gaps?
+* A service uses multiple retries at the client, API gateway, and downstream service layers. How would you prevent excessive retry amplification?
+* A cluster loses its leader during a network partition, and multiple nodes attempt to accept writes. How would you protect data correctness?
+* A critical dependency recovers after a long outage, but all clients reconnect simultaneously and overload it again. How would you prevent this recovery storm?
+* Your organization wants 99.99% availability for a financial API. How would you translate this target into architecture, monitoring, testing, and operational practices?

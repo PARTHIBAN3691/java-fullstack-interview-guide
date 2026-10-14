@@ -1,0 +1,21 @@
+
+* Write a Java program using `ClassLoadingMXBean` to print the number of currently loaded, total loaded, and unloaded classes.
+* Write a Java program using `ManagementFactory.getMemoryPoolMXBeans()` to identify the Metaspace memory pool when available.
+* Write a Java program that periodically reports Metaspace usage, committed memory, and maximum memory.
+* Write a Java program that compares heap usage and Metaspace usage using JVM management APIs.
+* Write a Java program that loads a class dynamically using `Class.forName()` and explains what happens during class loading.
+* Write a Java program that demonstrates class initialization using static fields and static initialization blocks.
+* Write a Java program that loads the same class name through two different custom class loaders and demonstrates that the resulting classes are distinct JVM types.
+* Write a Java program that creates a custom class loader and loads a class from a class file.
+* Write a Java program that creates a custom class loader and demonstrates the conditions required for it to become eligible for garbage collection.
+* Write a Java program that retains a custom class loader in a static collection and explain how this can prevent class unloading.
+* Modify the preceding program to remove the retained class-loader reference and investigate class unloading using JVM diagnostics.
+* Write a Java program that demonstrates the difference between loading a class and initializing a class.
+* Write a Java program that uses reflection to inspect a class's declared methods, fields, and constructors.
+* Write a Java program that dynamically creates proxy instances and design a test to monitor class-loading counts.
+* Write a Java program that repeatedly loads classes through disposable class loaders and tracks loaded and unloaded class counts.
+* Write a Java program that records class-loading statistics before and after a workload using `ClassLoadingMXBean`.
+* Write a Java program that displays available JVM memory pools and identifies which pools report Metaspace-related usage.
+* Write a diagnostic exercise using `jcmd VM.classloader_stats` to inspect class-loader statistics.
+* Write a diagnostic exercise using class-loading and class-unloading logs to analyze metadata growth.
+* Design a repeatable test that detects class-loader leaks by monitoring loaded-class counts and Metaspace usage across multiple application lifecycle cycles.

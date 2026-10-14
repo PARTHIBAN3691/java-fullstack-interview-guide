@@ -1,0 +1,30 @@
+* How do you implement JWT-based authentication in a REST API?
+* How do you generate and sign a JWT after successful user login?
+* How do you validate a JWT in an incoming API request?
+* How do you verify JWT signatures and expiration claims?
+* How do you implement authentication middleware for REST APIs?
+* How do you secure selected endpoints while keeping others public?
+* How do you authenticate users using username and password?
+* How do you securely store and verify passwords using BCrypt or Argon2?
+* How do you implement refresh token functionality?
+* How do you handle access token expiration without forcing users to log in again?
+* What is refresh token rotation, and why is it important?
+* How do you invalidate JWTs before their expiration time?
+* How do you implement logout in a stateless JWT-based application?
+* How do you prevent replay attacks involving stolen access tokens?
+* How do you implement API key authentication and key rotation?
+* How do you securely store API keys and avoid exposing them in source code?
+* How do you integrate OAuth 2.0 authentication with a third-party identity provider?
+* What are the Authorization Code, Client Credentials, and Device Authorization flows?
+* What is the purpose of PKCE in OAuth 2.0?
+* How do you implement authentication for a mobile application consuming REST APIs?
+* How do you handle authentication errors consistently across API endpoints?
+* How do you protect login endpoints against brute-force attacks?
+* How do you implement account lockout and login rate limiting?
+* How do you prevent user enumeration during login and password reset?
+* How do you securely implement password reset using time-limited tokens?
+* How do you manage authentication secrets across development, testing, and production?
+* How do you configure CORS for an authenticated REST API?
+* How do cookies with HttpOnly, Secure, and SameSite attributes improve authentication security?
+* How do you test authentication flows using Postman or automated tests?
+* How do you troubleshoot intermittent HTTP 401 responses in a REST API?

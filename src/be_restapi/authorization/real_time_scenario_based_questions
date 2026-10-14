@@ -1,0 +1,30 @@
+* A user can access another customer's account by changing the customer ID in the URL. How would you investigate and fix the authorization vulnerability?
+* An ordinary user can invoke an administrative API endpoint directly even though the UI hides the option. How would you resolve the issue?
+* A user has the correct role but receives HTTP 403 from a protected endpoint. How would you troubleshoot the authorization configuration?
+* A user is removed from an administrator role, but the user retains access for several minutes. How would you investigate permission caching?
+* Your application has multiple tenants, and a customer can retrieve records belonging to another tenant. How would you prevent cross-tenant data leakage?
+* A user can update the owner ID of a record through a PUT request and gain access to another user's resource. How would you prevent this privilege escalation?
+* Your API supports different permissions for viewing, editing, and deleting documents. How would you implement and test the access rules?
+* A manager should access records belonging only to their department, while an administrator can access all records. How would you design the authorization policy?
+* A user has access to an order but should not be allowed to modify its payment details. How would you enforce field-level authorization?
+* Your JWT contains a user's roles, but those roles have been revoked in the database. How should the API handle the outdated claims?
+* Multiple microservices implement different authorization rules for the same business operation. How would you standardize authorization enforcement?
+* Your API gateway checks user roles, but a client can call an internal service directly and bypass those checks. How would you secure the architecture?
+* A support agent needs temporary access to a customer's account to resolve a ticket. How would you implement delegated and time-limited access?
+* A user can download a private document by guessing its file ID. How would you secure file access?
+* A bulk-update API allows users to modify records they are permitted to view but not to edit. How would you fix the authorization logic?
+* Your system supports custom roles created by tenant administrators. How would you prevent those roles from granting forbidden privileges?
+* A permission change must take effect immediately across several microservices. How would you design permission propagation and cache invalidation?
+* An authorization policy service becomes unavailable during a high-volume request period. How should dependent services behave?
+* A financial user is allowed to create a payment but must not approve their own payment. How would you enforce separation of duties?
+* A user can access an API through an alternative HTTP method that was not covered by the existing security rule. How would you identify and prevent this issue?
+* An employee changes departments, but their old department's records remain accessible. How would you handle authorization based on changing attributes?
+* A customer can access an invoice but should not see specific confidential fields. How would you implement field-level filtering securely?
+* An authorization rule works in the controller but is bypassed through another service method. How would you enforce consistent method-level security?
+* A user receives elevated permissions through an unexpected combination of inherited roles. How would you identify and correct the privilege escalation?
+* Your API supports sharing resources with individual users and groups. How would you resolve conflicts between ownership, group permissions, and explicit denials?
+* An administrator needs emergency access to a restricted resource, and every action must be audited. How would you design controlled break-glass access?
+* A batch job processes thousands of records on behalf of a user. How would you ensure that each record is authorized independently?
+* A race condition allows a user to modify a resource after their permission has been revoked. How would you address the authorization timing issue?
+* Your organization needs to prove that every sensitive API operation was authorized correctly. What audit records and monitoring would you implement?
+* How would you design and validate a complete authorization framework for a banking REST API supporting customers, employees, administrators, multi-tenancy, and transaction approval rules?

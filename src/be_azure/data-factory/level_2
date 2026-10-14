@@ -1,0 +1,30 @@
+* How would you design a highly scalable ADF architecture for processing billions of records?
+* How would you choose between Azure Integration Runtime and Self-hosted Integration Runtime?
+* How would you design ADF pipelines for hybrid data sources located inside an organization's private network?
+* How would you optimize an ADF pipeline that takes several hours to complete?
+* How would you identify whether an ADF bottleneck is caused by source, destination, network, Integration Runtime, or transformation logic?
+* How would you optimize Copy Activity for maximum throughput?
+* How would you determine the appropriate degree of parallelism for a large-scale data pipeline?
+* What problems can excessive parallelism create in an ADF pipeline?
+* How would you design an incremental ingestion framework that supports hundreds of source tables?
+* How would you build a metadata-driven ADF framework?
+* How would you design a single reusable pipeline that dynamically processes different databases, tables, files, and schemas?
+* How would you implement schema evolution in an ADF-based data pipeline?
+* How would you handle a source system where columns are added or removed frequently?
+* How would you design an idempotent ADF pipeline?
+* How would you prevent duplicate processing when a pipeline is retried?
+* How would you design a reliable error-handling and recovery framework for ADF?
+* How would you implement checkpointing for a long-running data pipeline?
+* How would you handle partial failures when processing thousands of files?
+* How would you design an ADF pipeline that guarantees data completeness?
+* How would you reconcile source and target record counts after a pipeline execution?
+* How would you implement data quality validation within an ADF pipeline?
+* How would you secure an ADF solution using Managed Identity, Key Vault, private endpoints, and RBAC?
+* How would you design ADF networking for a highly secured enterprise environment?
+* How would you minimize ADF execution and data movement costs?
+* How would you decide whether a transformation should be implemented using Mapping Data Flow, SQL, Databricks, or another processing service?
+* How would you design disaster recovery for Azure Data Factory?
+* How would you manage CI/CD for ADF pipelines across development, testing, and production environments?
+* How would you handle environment-specific configuration during ADF deployment?
+* How would you integrate ADF monitoring with enterprise monitoring and alerting systems?
+* How would you design an ADF architecture that supports both batch and near-real-time ingestion?

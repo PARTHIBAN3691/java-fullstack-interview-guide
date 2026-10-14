@@ -1,0 +1,30 @@
+* A production API is responding slowly. How would you use Spring AOP to measure the execution time of service methods?
+* You need to log the entry, exit, and execution duration of every service method. How would you design the aspect?
+* Your logging aspect is not triggered when one method calls another method in the same class. How would you investigate and resolve the issue?
+* A method annotated with @Transactional does not start a transaction when called internally. How would you explain and fix this behavior?
+* You need to audit create, update, and delete operations across multiple services. How would you implement a reusable auditing aspect?
+* Your application must log exceptions from service methods without changing their existing behavior. Which advice would you use?
+* A custom aspect executes twice for a single method invocation. What could cause this, and how would you troubleshoot it?
+* Two aspects execute in an unexpected order. How would you control and verify their execution order?
+* Your aspect works for interface-based services but fails for a final implementation class. What could be the reason?
+* A pointcut intended to intercept only service methods also intercepts unrelated methods. How would you refine it?
+* You need to mask passwords and tokens before logging method arguments. How would you implement this safely?
+* A developer adds expensive database operations inside an aspect, causing API latency. How would you redesign the aspect?
+* Your application uses JDK dynamic proxies, but a component tries to access a concrete implementation-specific method. How would you resolve the issue?
+* An @Around advice changes the return value of a business method unexpectedly. How would you identify and correct the problem?
+* A custom authorization aspect blocks valid requests because it reads the wrong user context. How would you debug the issue?
+* You need to apply auditing only to methods marked with a custom @Auditable annotation. How would you design the annotation and pointcut?
+* Your application has multiple aspects for logging, auditing, and metrics. How would you define a reliable execution order?
+* A service method throws an exception, but the expected @AfterThrowing advice does not run. What would you investigate?
+* An aspect is not applied to a bean created manually using the new keyword. Why does this happen, and how would you address it?
+* A scheduled job invokes a service method, but the aspect cannot access the expected request context. How would you handle this?
+* Your aspect stores request-specific data in an instance variable and produces mixed log entries under concurrent traffic. How would you fix it?
+* You need to record both successful and failed payment attempts without altering payment business logic. How would you design the aspect?
+* A method's return value is streamed or represented by a reactive type. What should you consider when measuring its actual processing time?
+* Your application has a custom aspect that conflicts with Spring Security method-level authorization. How would you investigate the interaction?
+* You need to apply performance monitoring to selected repository methods but exclude health-check operations. How would you implement the pointcuts?
+* A developer uses @AfterReturning to modify the returned object, but the caller still receives the original value. How would you explain the behavior?
+* A Spring Boot application starts failing after introducing a new aspect. How would you identify whether proxy creation or dependency cycles are responsible?
+* You need to introduce tracing across service boundaries while preserving correlation IDs. How could Spring AOP help, and what would it not handle by itself?
+* An aspect works in an integration test but not in production. What configuration, proxying, and invocation differences would you inspect?
+* Your team wants to replace repeated validation and logging code with aspects. How would you decide which logic belongs in AOP and which should remain explicit?

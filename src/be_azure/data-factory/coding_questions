@@ -1,0 +1,20 @@
+* Write a Java program to authenticate with Azure using Managed Identity and invoke an Azure Data Factory pipeline.
+* Write a Java Spring Boot service that triggers an ADF pipeline using the Azure SDK or REST API.
+* Implement a Java method that passes dynamic parameters such as tableName, fileName, and loadDate when triggering an ADF pipeline.
+* Write Java code to retrieve the execution status of an ADF pipeline after triggering it.
+* Implement a Java polling mechanism that periodically checks ADF pipeline status until the pipeline succeeds or fails.
+* Write a Java service that triggers an ADF pipeline asynchronously and stores the pipeline run ID for later status tracking.
+* Implement retry logic in Java for transient failures while communicating with the ADF API.
+* Write a Java program that triggers multiple ADF pipelines and tracks their individual execution statuses.
+* Implement a Java service that triggers an ADF pipeline only when a previous execution is not already running.
+* Write Java code to process an ADF pipeline failure response and generate an appropriate application-level error message.
+* Implement a Java program that reads a list of source tables and dynamically triggers an ADF pipeline for each table.
+* Write a Java service that receives an ADF pipeline run ID and returns the current execution status through a REST API.
+* Implement a Spring Boot REST endpoint that triggers an ADF pipeline with dynamic input parameters.
+* Write Java code to implement exponential backoff when the ADF API returns a throttling or transient error.
+* Implement a Java program that compares expected source record counts with target record counts after an ADF pipeline execution.
+* Write Java code to identify failed ADF pipeline runs from a collection of pipeline execution results.
+* Implement a Java-based monitoring service that periodically checks ADF pipeline executions and sends an alert when a pipeline fails.
+* Write Java code to prevent duplicate ADF pipeline triggers for the same business date and processing key.
+* Implement a Java service that stores ADF pipeline run metadata, including pipeline name, run ID, start time, end time, status, and error details.
+* Design and implement a Java-based orchestration service that triggers ADF pipelines, monitors their execution, handles retries, records failures, and reports the final processing outcome.

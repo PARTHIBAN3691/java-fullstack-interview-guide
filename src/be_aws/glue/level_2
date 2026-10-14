@@ -1,0 +1,21 @@
+
+* How would you design a scalable AWS Glue ETL pipeline to process terabytes of data every day?
+* How would you optimize a Glue Spark job that performs large joins and suffers from data skew?
+* How would you choose the appropriate worker type, worker count, and job configuration for a production Glue workload?
+* How would you design an incremental ETL pipeline that processes only changed records from a relational database?
+* How would you implement an idempotent Glue ETL pipeline that can safely recover from partial failures?
+* How would you handle schema evolution in a data lake containing multiple versions of source data?
+* How would you design a metadata-driven ETL framework that supports hundreds of datasets?
+* How would you implement data quality checks and quarantine invalid records in Glue?
+* How would you optimize partitioning and file sizes to avoid the small-files problem in Amazon S3?
+* How would you design a Glue pipeline that supports slowly changing dimensions in a data warehouse?
+* How would you implement CDC-based data processing using AWS Glue and a suitable change-data-capture source?
+* How would you manage dependencies and Python or Java libraries in Glue jobs?
+* How would you use AWS Glue with Apache Iceberg or another supported open table format?
+* How would you design secure Glue jobs that access private data sources within a VPC?
+* How would you manage concurrent Glue job runs and prevent duplicate processing of the same input data?
+* How would you implement orchestration, dependency handling, retries, and failure notifications for a multi-stage ETL workflow?
+* How would you optimize AWS Glue costs while meeting strict data-processing SLAs?
+* How would you implement data lineage, auditing, and traceability across Glue ETL pipelines?
+* How would you design disaster recovery for Glue jobs, catalog metadata, and S3-based data lakes?
+* How would you decide between AWS Glue, Amazon EMR, AWS Lambda, and Amazon Managed Service for Apache Flink for different data-processing workloads?

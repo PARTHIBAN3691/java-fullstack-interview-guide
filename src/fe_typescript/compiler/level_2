@@ -1,0 +1,30 @@
+* Explain the TypeScript compiler pipeline from source files to emitted JavaScript.
+* How does the compiler construct and use an Abstract Syntax Tree (AST)?
+* What is the TypeScript Program API, and how is it used?
+* What are the Compiler API, Language Service API, and their differences?
+* How can you programmatically inspect TypeScript diagnostics using the Compiler API?
+* How would you build a custom TypeScript code analyzer using the AST?
+* How does TypeScript perform control-flow-based type analysis?
+* How does type narrowing affect compiler diagnostics?
+* How does the compiler resolve generic types and conditional types?
+* What factors can cause excessive type-checking time in a large TypeScript project?
+* How would you investigate and improve slow TypeScript compilation?
+* What is project references mode, and how does it support large monorepos?
+* How does composite compilation work with project references?
+* What is the difference between tsc --build and a normal tsc invocation?
+* How do declaration maps improve navigation across project references?
+* How does incremental compilation determine which files need rebuilding?
+* What are the limitations of incremental compilation?
+* How does TypeScript handle circular module dependencies during compilation?
+* How do moduleResolution options such as node16, nodenext, and bundler differ?
+* How do package.json exports and imports fields affect TypeScript module resolution?
+* How do conditional exports influence the resolution of TypeScript declarations?
+* How would you configure TypeScript for a dual CommonJS and ECMAScript module package?
+* How does the verbatimModuleSyntax option affect import and export emission?
+* What is the difference between importsNotUsedAsValues in older configurations and modern import-elision controls?
+* How do ambient declarations and declaration merging affect type checking?
+* How would you publish a TypeScript library with correct declaration files and source maps?
+* How can custom declaration files introduce unsoundness into a TypeScript project?
+* How do custom transformers interact with the TypeScript compilation process?
+* Why is TypeScript type checking not a substitute for runtime validation?
+* How would you design a reliable compiler pipeline for a large enterprise TypeScript monorepo?

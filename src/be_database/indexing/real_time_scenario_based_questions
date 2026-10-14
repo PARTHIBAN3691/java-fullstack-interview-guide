@@ -1,0 +1,30 @@
+* A Java Spring Boot API becomes slow after a table grows from thousands to millions of records; how would you determine whether a missing index is responsible?
+* A query that previously completed in milliseconds now takes several seconds after a production data load; how would you investigate the execution plan and index usage?
+* A new composite index improves one API but slows down another; how would you analyze the trade-offs and revise the index design?
+* A database CPU utilization increases sharply after a new feature is deployed; how would you identify inefficient queries and indexing opportunities?
+* A query filters by customer ID and sorts by creation date but still performs a large sort operation; how would you design an appropriate composite index?
+* A query uses an index in development but performs a table scan in production; how would you investigate statistics, data distribution, and optimizer decisions?
+* A Spring Boot application experiences slow INSERT operations after several indexes are added to a frequently updated table; how would you optimize the write path?
+* A production query becomes slower after an index rebuild; how would you compare execution plans, statistics, and cache effects?
+* A database deadlock occurs frequently after adding indexes to a heavily updated table; how would you investigate locking behavior and transaction design?
+* A table has several indexes with overlapping column definitions; how would you identify redundant indexes and safely remove them?
+* A query filters by a column with only two possible values but returns a large percentage of the table; would you add an index, and how would you decide?
+* A composite index exists on customer ID and order date, but queries filtering only by order date remain slow; how would you address the index design?
+* A query uses a function such as LOWER() on a column and does not use the expected index; how would you improve the query or index?
+* An API uses LIMIT and OFFSET pagination on millions of records and becomes slower on later pages; how would you optimize it?
+* A production table requires a new index, but locking the table for an extended period is unacceptable; how would you create the index safely?
+* A database migration creates an index successfully in testing but causes a production deployment to exceed its maintenance window; how would you redesign the migration?
+* An index improves SELECT performance but increases transaction latency during peak traffic; how would you determine whether the index is worth retaining?
+* A query involving multiple joins has a poor execution plan despite indexes on all join columns; how would you investigate join order, statistics, and query structure?
+* A Java application experiences intermittent slow queries for specific customer IDs while other IDs perform well; how would you investigate data skew and parameter-sensitive plans?
+* A frequently queried soft-delete table contains millions of inactive records; how would you optimize queries that only need active records?
+* A table contains a large JSON column, and searches on a nested JSON property are slow; how would you decide between expression indexes, generated columns, and specialized indexing?
+* A batch job performs millions of inserts and updates and causes index fragmentation or heavy index maintenance; how would you optimize the batch process?
+* A reporting query is slow even though the relevant columns are indexed; how would you investigate whether a covering index, statistics update, or query rewrite is needed?
+* An index uses significant storage but receives very few reads; how would you decide whether to remove it?
+* A foreign-key join is slow because the referencing column is not indexed; how would you confirm the issue and safely introduce the index?
+* A query's performance degrades after a database upgrade even though the schema and indexes have not changed; how would you investigate optimizer and execution-plan differences?
+* A multi-tenant Java application frequently queries records by tenant ID and status; how would you design indexes that support tenant isolation and query performance?
+* A new index causes increased replication lag in a database system; how would you assess the impact and plan index maintenance?
+* A customer-facing API requires predictable response times while new indexes are being introduced; how would you validate performance and prepare a rollback plan?
+* A team wants to add indexes to every column used in WHERE clauses; how would you explain the risks and develop a query-driven indexing strategy?

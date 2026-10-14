@@ -1,0 +1,30 @@
+* Explain the complete login and authentication flow in a Node.js application.
+* How do you implement JWT authentication using Express.js?
+* How do you generate and verify JWTs in Node.js?
+* How do you validate JWT expiration and signature?
+* How do you securely store passwords using bcrypt?
+* How do you compare a submitted password with a stored password hash?
+* How do you implement authentication middleware in Express.js?
+* How do you attach authenticated user information to the request object?
+* How do you protect routes based on authentication status?
+* How do you implement refresh-token rotation?
+* How do you revoke a JWT before its expiration?
+* What are the advantages and disadvantages of session-based authentication?
+* What are the advantages and disadvantages of JWT-based authentication?
+* How do you store access tokens and refresh tokens securely in a browser-based application?
+* What is CSRF, and how can authentication cookies be protected against it?
+* What is XSS, and how can it compromise authentication tokens?
+* How do CORS settings affect authentication in a Node.js application?
+* How do you configure cookie-based authentication in Express.js?
+* How do you implement session storage using Redis?
+* Why should production applications avoid relying on in-memory session storage?
+* How do you implement OAuth 2.0 login using a third-party identity provider?
+* What is the difference between OAuth 2.0 and OpenID Connect?
+* How do you implement Google or Microsoft login in a Node.js application?
+* How do you implement MFA using time-based one-time passwords (TOTP)?
+* How do you implement account lockout after repeated failed login attempts?
+* How do you prevent brute-force and credential-stuffing attacks?
+* How do you implement password reset using secure, time-limited tokens?
+* How do you handle authentication errors without revealing whether a username exists?
+* How do you implement logout when both access tokens and refresh tokens are used?
+* How do you test authentication middleware and login APIs?

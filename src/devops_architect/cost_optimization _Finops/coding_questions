@@ -1,0 +1,106 @@
+
+**Cloud Cost Management**
+* Write a Python program that reads daily cloud cost records from CSV and generates a report of spending by service, account, environment, and month.
+* Implement a cost-variance analyzer that compares actual spending with a baseline and identifies the largest absolute and percentage increases.
+* Write a utility that calculates cost per transaction, cost per customer, and cost per successful API request from usage and billing datasets.
+* Implement a cost-forecasting program using historical spending data and configurable growth assumptions, and flag potential budget overruns.
+* Write unit tests for cost calculations involving credits, refunds, missing records, and duplicate billing entries.
+
+**Resource Tagging**
+* Write a script that retrieves resource metadata from a mock cloud inventory and reports resources missing required tags.
+* Implement a tagging compliance validator that checks allowed values, naming conventions, ownership, environment, and cost-center fields.
+* Write a remediation utility that adds missing tags only after validating resource ownership and approved mapping rules.
+* Implement a report that tracks tagging compliance over time by account, service, and team.
+* Write tests for inconsistent tag capitalization, invalid values, missing ownership, and conflicting metadata.
+
+**Cost Allocation**
+* Write a program that allocates shared platform costs among teams using configurable consumption-based allocation weights.
+* Implement a chargeback calculator that distributes network and observability costs using measured usage percentages.
+* Write a reconciliation utility that compares provider billing totals with allocated team costs and reports unexplained differences.
+* Implement a cost-allocation engine that supports direct costs, shared costs, credits, and configurable allocation rules.
+* Write tests that verify allocation totals, rounding behavior, missing ownership, and zero-consumption cases.
+
+**Reserved Instances**
+* Write a program that calculates reservation utilization and coverage from hourly eligible usage and commitment records.
+* Implement a break-even calculator that compares on-demand costs with a reservation commitment over a configurable term.
+* Write a utility that identifies reservations approaching expiration and estimates the risk of unused future commitments.
+* Implement a recommendation tool that matches stable historical usage with compatible reservation attributes.
+* Write tests for partial utilization, changing demand, incompatible resources, and expired commitments.
+
+**Savings Plans**
+* Write a Python program that analyzes hourly compute usage and estimates candidate commitment levels.
+* Implement a calculator for utilized commitment, unused commitment, uncovered on-demand usage, and estimated savings.
+* Write a forecasting utility that models commitment utilization after a planned workload migration.
+* Implement a report that compares multiple commitment options under baseline, growth, and reduced-demand scenarios.
+* Write tests for volatile hourly usage, shared commitments, missing data, and changes in pricing assumptions.
+
+**Spot Instances**
+* Write a cost calculator that compares spot and on-demand workloads, including interruption and retry overhead.
+* Implement a simulation that estimates batch-job completion time and cost under configurable interruption probabilities.
+* Write a job runner that checkpoints progress and resumes processing after simulated worker termination.
+* Implement a capacity-selection utility that chooses among eligible compute pools using cost, availability, and workload constraints.
+* Write tests for repeated interruptions, unavailable capacity, fallback execution, and duplicate job processing.
+
+**Right-Sizing**
+* Write a program that analyzes CPU, memory, and network utilization metrics and identifies potentially oversized instances.
+* Implement a recommendation engine that applies configurable safety margins and excludes resources with insufficient historical data.
+* Write a calculator that compares expected monthly cost before and after a proposed instance-size change.
+* Implement a right-sizing report that ranks candidates by potential savings, confidence, and operational risk.
+* Write tests covering utilization spikes, missing metrics, seasonal demand, and minimum-capacity requirements.
+
+**Auto Scaling**
+* Write a simulation that calculates compute capacity and estimated cost for a workload with variable hourly demand.
+* Implement an autoscaling policy evaluator that scales according to queue depth, latency, and maximum capacity constraints.
+* Write a program that compares fixed-capacity and autoscaling costs for the same workload profile.
+* Implement a scale-in safety check that prevents removing capacity required by active jobs or minimum availability rules.
+* Write tests for traffic spikes, scaling oscillation, delayed metrics, and downstream capacity limits.
+
+**Storage Optimization**
+* Write a program that recommends storage tiers based on access frequency, retention period, retrieval cost, and minimum storage duration.
+* Implement a lifecycle-policy validator that checks retention requirements before suggesting archival or deletion.
+* Write a storage-cost calculator that accounts for capacity, requests, retrieval, replication, and snapshot retention.
+* Implement a utility that identifies stale snapshots and incomplete multipart uploads from a mock inventory.
+* Write tests for legal holds, versioned objects, retrieval-heavy workloads, and minimum retention constraints.
+
+**Data Transfer Costs**
+* Write a program that calculates estimated transfer costs from traffic volumes, source regions, destination regions, and configurable pricing tables.
+* Implement a report that identifies the largest cross-region, cross-zone, and internet-egress contributors.
+* Write a calculator that compares data-transfer costs before and after applying configurable cache hit rates.
+* Implement a utility that estimates the financial impact of moving a data-processing workload closer to its source data.
+* Write tests for missing transfer records, zero-cost routes, pricing changes, and duplicated usage entries.
+
+**Kubernetes Cost Optimization**
+* Write a program that calculates per-namespace and per-workload compute costs using pod requests, actual usage, node pricing, and shared-cost allocation rules.
+* Implement a report that identifies pods with persistently oversized requests and insufficient utilization history.
+* Write a simulator that estimates the effect of reducing CPU and memory requests on node count and monthly cost.
+* Implement a Kubernetes cost-allocation utility that distributes node, storage, and networking costs among namespaces.
+* Write tests for shared nodes, pending pods, autoscaled workloads, missing metrics, and unallocated cluster overhead.
+
+**Idle Resource Detection**
+* Write a program that identifies candidate idle resources using utilization metrics, resource age, ownership tags, and configurable thresholds.
+* Implement a cleanup recommendation engine that categorizes actions as notify, stop, resize, archive, or delete.
+* Write a safety validator that excludes protected resources, disaster-recovery assets, legal holds, and resources with incomplete ownership data.
+* Implement a report that compares projected savings with realized savings after resource remediation.
+* Write tests for low-activity production resources, stale snapshots, unattached disks, and recently created resources.
+
+**Budget Alerts**
+* Write a budget monitor that compares actual and forecasted spending against configurable thresholds for multiple teams.
+* Implement an alert-routing function that sends cost notifications to the correct owner based on resource metadata.
+* Write a forecasting utility that estimates end-of-period spending from daily cost data and identifies likely budget overruns.
+* Implement alert deduplication and escalation logic to prevent repeated notifications while retaining a complete audit trail.
+* Write tests for delayed billing data, credits, seasonal usage, missing budgets, and threshold crossings.
+
+**Cost Governance**
+* Write a policy validator that rejects resource configurations violating approved region, instance-size, tagging, or storage requirements.
+* Implement a cost-policy exception workflow with an owner, reason, approval status, expiration date, and audit record.
+* Write a compliance report that aggregates policy violations by account, team, service, and risk category.
+* Implement a utility that detects unapproved changes to cost-related infrastructure policies.
+* Write tests for expired exceptions, unauthorized overrides, missing owners, and conflicting governance rules.
+
+**FinOps Architecture**
+* Design and implement a data-ingestion pipeline that processes cloud billing exports idempotently and handles duplicate or late-arriving records.
+* Write a cost-normalization service that maps different cloud-provider billing schemas into a common internal data model.
+* Implement a reconciliation job that compares raw billing totals, normalized costs, allocated costs, and reporting totals.
+* Build a cost-anomaly detector that identifies unusual spending patterns by account, service, environment, and business unit.
+* Implement a recommendation API that combines resource inventory, utilization metrics, ownership metadata, and cost estimates.
+* Write automated tests for schema evolution, late billing adjustments, ingestion retries, allocation accuracy, and historical restatement.

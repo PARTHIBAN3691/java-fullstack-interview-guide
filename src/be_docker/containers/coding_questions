@@ -1,0 +1,30 @@
+* Write a Dockerfile that packages and runs a Java application from an executable JAR.
+* Create a multi-stage Dockerfile that builds a Spring Boot application with Maven and runs it using a smaller runtime image.
+* Write a Dockerfile that runs a Java application as a non-root user.
+* Create a Dockerfile that accepts a Spring profile through an environment variable.
+* Write a Docker command to run a Spring Boot container in detached mode and map host port 8080 to container port 8080.
+* Write Docker commands to list running containers, inspect a container, view logs, and execute a shell command inside it.
+* Write Docker commands to stop, restart, and remove a container safely.
+* Create a Docker Compose file containing a Spring Boot application and a PostgreSQL database with persistent storage.
+* Extend a Docker Compose configuration to add a Redis container and connect it to a Spring Boot application.
+* Write a Docker Compose health check for a Spring Boot application using an HTTP endpoint.
+* Create a Dockerfile that uses a dedicated working directory and copies only the required application artifact.
+* Write a Docker Compose configuration that passes database connection details through environment variables.
+* Create a Docker configuration that uses a named volume to persist PostgreSQL data across container recreation.
+* Write a shell script that checks whether a Docker container is running and prints its recent logs if it is not.
+* Write a shell script that captures logs and container inspection details when a Java container exits unexpectedly.
+* Create a Docker Compose configuration with separate development and production environment overrides.
+* Write a Dockerfile that supports configurable JVM options through an environment variable.
+* Create a container startup command that forwards termination signals correctly to the Java process.
+* Write a Docker Compose configuration that starts a Spring Boot service only after the database health check succeeds.
+* Create a Docker configuration that limits container memory and CPU resources.
+* Write a script that identifies containers consuming unusually high CPU or memory.
+* Create a Docker Compose setup with an application network isolated from the database's externally exposed ports.
+* Write a Dockerfile that uses a pinned base-image version instead of an unqualified latest tag.
+* Create a build script that tags a Java application image with a release version and a commit identifier.
+* Write Docker commands to export a container's logs and copy a heap dump from a running container.
+* Create a Docker Compose configuration that mounts application configuration from a read-only host directory.
+* Write a Java Spring Boot health endpoint that can be used by a container health check.
+* Implement retry logic in a Spring Boot database connection component to tolerate temporary database startup delays.
+* Write a Docker Compose configuration that runs two instances of a stateless Spring Boot application behind a reverse proxy.
+* Build a complete containerized Spring Boot project with a multi-stage build, environment-based configuration, health checks, persistent database storage, and documented startup and shutdown commands.

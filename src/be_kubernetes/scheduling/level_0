@@ -1,0 +1,30 @@
+* What is scheduling in Kubernetes?
+* Why is scheduling required in Kubernetes?
+* What is the Kubernetes Scheduler?
+* What is the role of kube-scheduler?
+* How does Kubernetes decide which worker node should run a Pod?
+* What happens when a Pod is created without specifying a node?
+* What is the difference between a control-plane node and a worker node?
+* What is a Pending Pod?
+* What are the common reasons a Pod remains in Pending state?
+* What are resource requests in Kubernetes?
+* What are resource limits in Kubernetes?
+* How do CPU and memory requests affect Pod scheduling?
+* What is nodeSelector in Kubernetes?
+* What are node labels?
+* How do you assign labels to a Kubernetes node?
+* What is node affinity?
+* What is the difference between nodeSelector and node affinity?
+* What are taints in Kubernetes?
+* What are tolerations in Kubernetes?
+* What is the difference between taints and tolerations?
+* What is Pod affinity?
+* What is Pod anti-affinity?
+* What is the difference between node affinity and Pod affinity?
+* What is a topology spread constraint?
+* What is a priority class in Kubernetes?
+* What is Pod preemption?
+* What is the purpose of cordon in Kubernetes?
+* What is the purpose of drain in Kubernetes?
+* What happens when a worker node becomes NotReady?
+* Which kubectl commands help troubleshoot Pod scheduling issues?

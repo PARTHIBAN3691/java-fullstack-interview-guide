@@ -1,0 +1,30 @@
+* An API request must execute only once when a component is initialized. Which lifecycle hook would you use, and why?
+* A child component receives data from its parent, but ngOnChanges() is not called after the parent modifies a nested object. How would you resolve this?
+* A component displays outdated data after its input changes. Which lifecycle hooks and change-detection mechanisms would you investigate?
+* Your application throws ExpressionChangedAfterItHasBeenCheckedError after updating a property in ngAfterViewInit(). How would you fix it?
+* A component subscribes to a long-running Observable and continues receiving events after navigation. How would you prevent this?
+* A page becomes slower after users repeatedly open and close a modal component. How would you investigate lifecycle-related memory leaks?
+* A child component must access an element in its own template after initialization. Which lifecycle hook would you use?
+* A parent component projects content into a child using ng-content. When should the child access that projected content?
+* A component uses @ViewChild() but receives undefined in ngOnInit(). How would you troubleshoot the issue?
+* A component is destroyed and recreated every time a condition changes. How would you verify the lifecycle sequence and reduce unnecessary recreation?
+* Navigating between two routes with the same component class does not trigger ngOnInit() again. Why might this happen?
+* A route parameter changes, but the component is reused and the displayed data does not refresh. How would you handle the component lifecycle correctly?
+* A timer continues running after its component is removed from the page. How would you clean it up?
+* An event listener added directly to the browser window remains active after component destruction. How would you fix it?
+* A component performs an expensive calculation inside ngDoCheck(), causing UI lag. How would you redesign the implementation?
+* A component using OnPush does not update after an object is mutated. How would you fix the data flow?
+* A dynamically created component remains in the DOM after its parent is removed. How would you manage its destruction?
+* A dashboard creates multiple widgets dynamically, each with API subscriptions. How would you ensure reliable cleanup?
+* A signal-based component needs to release a resource when a reactive effect is invalidated or the component is destroyed. How would you implement cleanup?
+* A component needs to measure DOM dimensions after rendering. Which Angular render callback or lifecycle hook would you consider?
+* An Angular application uses server-side rendering, but a component accesses window in its initialization hook and crashes. How would you fix it?
+* A component starts duplicate API calls when its input changes several times quickly. How would you control the request lifecycle?
+* A modal component is closed without triggering the expected cleanup logic. How would you investigate whether the component was actually destroyed?
+* A component is detached from change detection but still maintains subscriptions and timers. What cleanup is required?
+* A parent component updates an input several times during initialization. How should the child process those changes efficiently?
+* A component's ngAfterViewChecked() runs frequently and triggers repeated calculations. How would you optimize it?
+* A reusable component must react to input changes and reset its internal state correctly. Which lifecycle hooks and patterns would you use?
+* A component should run browser-specific initialization only after the DOM has rendered. How would you implement it safely?
+* Your team needs to standardize subscription cleanup across hundreds of components. Which Angular APIs and coding patterns would you recommend?
+* How would you troubleshoot a production memory leak involving component destruction, RxJS subscriptions, and dynamically created views?

@@ -1,0 +1,21 @@
+
+* Create an `Employee` record with `id`, `name`, and `salary` components, and print its values.
+* Create a `Product` record and demonstrate the generated `equals()`, `hashCode()`, and `toString()` methods.
+* Create a record with a compact constructor that validates a positive employee ID and a nonblank employee name.
+* Create a record with an overloaded constructor that supplies a default value for one component.
+* Create a generic record that stores a key and a value of any type.
+* Create a record that implements a `Printable` interface and implements its required method.
+* Create a record containing a list of skills and implement defensive copying to prevent external modifications.
+* Write a Java 16 program that uses pattern matching for `instanceof` to calculate the length of a string only when an object is a string.
+* Write a Java 16 program that compares two objects using pattern matching for `instanceof` and safely accesses their fields.
+* Write a Java program that demonstrates pattern-variable flow scoping with `&&`.
+* Write a Java program that uses `Stream.toList()` to collect even numbers and demonstrates the returned list's mutability behavior.
+* Write a Java program that compares `Stream.toList()`, `Collectors.toList()`, and `Collectors.toUnmodifiableList()`.
+* Write a Java program that uses `mapMulti()` to transform each input number into zero or more output values.
+* Write a Java program that uses `mapMulti()` to flatten a list of nested collections.
+* Write a Java program that uses records and streams to group employees by department and calculate average salaries.
+* Write a Java program that demonstrates defensive copying in a record containing a mutable collection.
+* Create a small Java application and prepare a native application package using `jpackage`.
+* Write a Java program that demonstrates communication through a Unix-domain socket channel.
+* Write a Java program that uses the Foreign-Memory Access API available in Java 16 to allocate and access off-heap memory.
+* Write a Java program that demonstrates a basic numerical operation using the Java 16 incubator Vector API.

@@ -1,0 +1,30 @@
+* How would you design a highly reliable distributed system serving millions of requests per day?
+* How do you design a multi-region architecture that remains operational during a regional outage?
+* How do you balance reliability, consistency, latency, and cost in a distributed architecture?
+* How do you design failure detection when network delays can resemble node failures?
+* How do you prevent cascading failures across a large microservices dependency graph?
+* How do you determine the correct timeout, retry, and circuit breaker configuration for each service?
+* How do you coordinate retries across multiple layers without multiplying the total request load?
+* How do you design idempotent operations when a client cannot determine whether a previous request succeeded?
+* How do you guarantee business-level correctness when a service fails between a database commit and event publication?
+* How do you design reliable distributed workflows using the saga pattern?
+* How do you maintain consistency during database failover and replication lag?
+* How do you design active-active deployments while preventing conflicting writes?
+* How do you prevent split-brain behavior during leader failover?
+* How do you design a reliable message-processing system with at-least-once delivery?
+* How do you handle poison messages without blocking healthy message processing?
+* How do you guarantee eventual recovery from a prolonged message broker outage?
+* How do you design graceful degradation when critical and noncritical dependencies fail independently?
+* How do you isolate noisy neighbors in a shared multi-tenant platform?
+* How do you design automatic recovery without creating instability through repeated restarts?
+* How do you use load shedding and backpressure to protect system stability?
+* How do you establish and validate RTO and RPO targets for different business capabilities?
+* How do you design disaster recovery testing without disrupting production traffic?
+* How do you measure end-to-end reliability across services owned by different teams?
+* How do you implement SLO-based alerting using error-budget burn rates?
+* How do you determine whether a reliability incident requires rollback, failover, or traffic shedding?
+* How do you use chaos engineering to validate resilience assumptions?
+* How do you design reliability tests for rare failures that are difficult to reproduce?
+* How do you identify correlated failures that defeat apparently independent redundant components?
+* How do you build reliability into deployment pipelines and infrastructure changes?
+* How do you prioritize reliability investments when engineering resources and budgets are limited?

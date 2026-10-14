@@ -1,0 +1,21 @@
+
+* Write a Java program using the Azure Storage SDK to upload a local file to an Azure Blob Storage container.
+* Develop a Java method that downloads a blob to a specified local directory and handles missing blobs gracefully.
+* Write a Spring Boot REST API that accepts a multipart file upload and stores the file in Azure Blob Storage.
+* Implement a REST endpoint that generates a time-limited download URL for a private blob using a SAS token.
+* Write Java code to list all blobs in a container using paginated results.
+* Implement a Java service that deletes a blob only if it exists and returns an appropriate result to the caller.
+* Develop a Java program that uploads a large file using a stream without loading the complete file into heap memory.
+* Write Java code to set a blob's content type, content disposition, and custom metadata during upload.
+* Implement a file download endpoint that streams Blob Storage content directly to the HTTP response.
+* Develop a Java service that authenticates to Blob Storage using `DefaultAzureCredential` and managed identity.
+* Write Java code that generates a user delegation SAS token with read-only permissions and a short expiry.
+* Implement optimistic concurrency control using blob ETags and conditional upload requests.
+* Develop a retry mechanism for transient Blob Storage failures using exponential backoff and bounded retry attempts.
+* Write Java code that calculates a file's SHA-256 checksum before upload and validates the downloaded content.
+* Implement a Java service that uses blob versioning to retrieve a previous version of a file.
+* Develop a Spring Boot application that stores file metadata in Azure SQL and the actual file content in Blob Storage.
+* Write a Java function that processes a blob-created event idempotently and records the processing status in a database.
+* Implement a streaming pipeline that reads a large CSV blob, transforms each record, and writes the output to another blob.
+* Write unit tests for a Blob Storage service using mocked Azure SDK clients, covering successful upload, missing blobs, and failures.
+* Design and implement a production-ready Java file service with managed identity, secure upload and download, size validation, streaming, retries, concurrency control, and structured logging.

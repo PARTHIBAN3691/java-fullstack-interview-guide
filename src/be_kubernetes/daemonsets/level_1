@@ -1,0 +1,30 @@
+* How do you create a DaemonSet that runs a logging agent on every worker node?
+* How do you configure a DaemonSet to run only on Linux nodes?
+* How do you configure a DaemonSet to run on nodes with a specific label?
+* How do you use node affinity to control DaemonSet Pod placement?
+* How do you configure tolerations so a DaemonSet can run on tainted nodes?
+* How do you deploy a monitoring agent using a DaemonSet?
+* How do you deploy Fluent Bit or another log collector using a DaemonSet?
+* How do you configure a DaemonSet to collect container logs from host directories?
+* How do you mount hostPath directories into a DaemonSet Pod?
+* What are the security risks of using hostPath volumes in a DaemonSet?
+* How do you configure CPU and memory requests and limits for DaemonSet Pods?
+* How do you configure readiness, liveness, and startup probes for a DaemonSet?
+* How does a DaemonSet handle rolling updates?
+* How do you configure maxUnavailable during a DaemonSet rolling update?
+* How does the OnDelete update strategy work?
+* How do you roll back a failed DaemonSet deployment?
+* How do you troubleshoot a DaemonSet that is not running on every node?
+* How do you identify nodes that are missing a DaemonSet Pod?
+* How do you configure a DaemonSet to run on control plane nodes?
+* How do you configure a DaemonSet with a dedicated service account and RBAC permissions?
+* How do DaemonSets interact with Kubernetes node affinity and scheduler behavior?
+* How do DaemonSets behave during node upgrades?
+* How do you prevent a DaemonSet update from disrupting critical node services?
+* How do you configure a DaemonSet using Helm charts?
+* How do you manage DaemonSet configurations across multiple environments?
+* How do you monitor DaemonSet Pod health across a cluster?
+* What is the difference between desiredNumberScheduled, currentNumberScheduled, and numberReady?
+* How do you troubleshoot ImagePullBackOff errors in DaemonSet Pods?
+* How do you handle DaemonSet Pods that remain in Pending state?
+* How do you test DaemonSet behavior when nodes are added or removed?

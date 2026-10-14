@@ -1,0 +1,30 @@
+* You are developing an employee management system. How would you define an Employee interface with required and optional properties?
+* Your application supports multiple payment methods with different fields. How would you model them using interfaces and union types?
+* Your frontend and backend share the same user model. How would you organize the shared interfaces and types?
+* You need to represent successful and failed API responses. How would you define a discriminated union for the response?
+* Your team needs a common contract for different notification services. How would you design an interface for email, SMS, and push notifications?
+* A class must implement multiple contracts, such as Auditable and Serializable. How would you design the interfaces?
+* Your application has different user roles with role-specific properties. Would you use interface inheritance or discriminated unions, and why?
+* A third-party library needs an additional property in its existing type definition. How would you extend the type safely?
+* Your project contains duplicate object structures across many modules. How would you refactor them into reusable interfaces or type aliases?
+* You need to model an API configuration object that accepts only specific values for its environment and log level. How would you define its types?
+* Your application supports different database entities that all contain an id property. How would you create a reusable generic interface?
+* You need to represent a product with optional discount information and readonly product identifiers. How would you design the type?
+* Your application uses dynamic property names for storing configuration values. How would you model them using index signatures?
+* Your team needs to ensure that all event handlers receive the correct payload for each event. How would you use an event-map interface?
+* A type alias combines two object types, but a shared property has conflicting types. How would you resolve the issue?
+* Your application needs a configuration type that allows only a subset of an existing interface's properties. Which utility type would you use?
+* You need to create a type for a function that accepts a request and returns a response. Would you use a callable interface or a function type alias?
+* Your codebase requires an object to satisfy an interface while retaining its specific inferred properties. How would you use satisfies?
+* You need to prevent a developer from providing both card-payment and UPI-payment fields in the same object. How would you model the restriction?
+* Your team wants to add properties to a shared interface without modifying its original source file. How would you use module augmentation?
+* Your application needs a nested configuration object whose properties must be readonly. How would you design the types?
+* You are building a generic repository for employees, products, and orders. How would you define its interface?
+* Your application requires exhaustive handling of all order statuses. How would you use a discriminated union and the never type?
+* A developer uses any for every API response. How would you replace it with interfaces, generic types, and safer unions?
+* You need to create a reusable type for paginated API results across several modules. How would you define it?
+* Your project has interfaces with the same name in different modules. How does module scope affect them, and when can declaration merging occur?
+* Your application must support optional properties but reject null values for those properties. How would you model this requirement?
+* You need to derive a union of property names from an existing object or interface. How would you use keyof and typeof?
+* Your team wants to standardize type definitions for a large enterprise application. What rules would you establish for interfaces and type aliases?
+* How would you design a type-safe e-commerce domain model using interfaces, generics, intersections, and discriminated unions?

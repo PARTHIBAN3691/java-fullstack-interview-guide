@@ -1,0 +1,30 @@
+* Explain how Docker implements bridge networking using Linux network namespaces, virtual Ethernet pairs, and bridges.
+* How does Docker configure NAT and masquerading for outbound container traffic?
+* Explain the packet flow when a request reaches a published container port from an external client.
+* How do Docker networking rules interact with iptables or nftables?
+* How would you investigate a container connectivity issue caused by incorrect firewall or NAT rules?
+* How does Docker's embedded DNS work, and what are its limitations?
+* How would you design network isolation for a Spring Boot microservices platform with public, application, and database tiers?
+* How do you restrict communication between services when they share a Docker network?
+* Why is membership in a Docker bridge network not a complete application-level security boundary?
+* How would you secure communication between containers carrying sensitive financial data?
+* How would you implement TLS between Spring Boot microservices running in Docker?
+* How do overlay networks enable communication between containers on different Docker hosts?
+* What are the security and operational trade-offs of Docker Swarm overlay networks?
+* How would you troubleshoot intermittent cross-host connectivity in an overlay network?
+* How do MTU mismatches affect Docker networking, and how would you diagnose packet fragmentation issues?
+* How would you investigate network latency between two Java containers on the same host?
+* How do connection tracking tables affect Docker networking performance?
+* How would you diagnose port exhaustion or excessive connection tracking entries on a Docker host?
+* How would you design network connectivity for a Dockerized application that must access both internal services and external APIs?
+* How do IPv4 and IPv6 configurations affect Docker container connectivity?
+* How would you configure and troubleshoot IPv6 networking for containers?
+* What are the risks of publishing a container port on all host interfaces?
+* How would you enforce network segmentation across multiple Docker Compose projects?
+* How would you investigate asymmetric routing or overlapping IP address ranges in Docker networks?
+* How do Docker networking concepts differ from Kubernetes networking and service discovery?
+* How would you diagnose a Spring Boot application that resolves a service name but cannot establish a TCP connection?
+* How would you distinguish a DNS failure, routing failure, firewall block, and application-level connection failure?
+* How would you design reliable network communication between Java services with connection pooling, timeouts, and retry policies?
+* How do network namespaces help isolate container traffic, and how can you inspect them during troubleshooting?
+* How would you build an observable Docker networking setup using packet captures, connection metrics, and application logs?

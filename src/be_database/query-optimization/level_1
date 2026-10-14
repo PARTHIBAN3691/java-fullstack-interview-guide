@@ -1,0 +1,30 @@
+* How do you analyze a slow SQL query using EXPLAIN and EXPLAIN ANALYZE?
+* How do you identify whether a query is using an appropriate index?
+* How do you choose the column order for a composite index?
+* When should you use a covering index?
+* What are partial indexes, and how can they improve query performance?
+* How do functions applied to indexed columns affect index usage?
+* How can you rewrite a query to avoid unnecessary function calls on indexed columns?
+* How do implicit data type conversions affect query performance?
+* How do you optimize queries containing multiple JOINs?
+* How do you decide between a JOIN, subquery, and CTE?
+* How can EXISTS perform differently from IN for certain query patterns?
+* How do correlated subqueries affect performance?
+* How do you optimize queries containing GROUP BY and aggregate functions?
+* How do you optimize ORDER BY queries that return a limited number of rows?
+* How do you implement efficient keyset pagination?
+* How do you identify and eliminate unnecessary DISTINCT operations?
+* How do you optimize queries that use LIKE with leading and trailing wildcards?
+* How do database statistics influence the query optimizer?
+* How do you identify inaccurate cardinality estimates in an execution plan?
+* How do you detect and resolve the N+1 query problem in Spring Data JPA?
+* How do JOIN FETCH and EntityGraph help optimize JPA queries?
+* How do you use projections to reduce the amount of data retrieved by Hibernate?
+* How do you batch database inserts and updates using JDBC or Hibernate?
+* How do you optimize bulk updates in a Spring Boot application?
+* How do you configure Hibernate query logging and SQL statistics for troubleshooting?
+* How do you use HikariCP metrics to identify database connection bottlenecks?
+* How do you distinguish slow SQL execution from connection acquisition delays?
+* How do prepared statements help with query execution and plan reuse?
+* How do you optimize a frequently executed query in a high-traffic REST API?
+* How do you measure query performance before and after optimization?

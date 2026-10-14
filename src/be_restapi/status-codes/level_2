@@ -1,0 +1,30 @@
+* How would you define a standardized HTTP status-code strategy for a large microservices architecture?
+* How would you decide between HTTP 400, 409, and 422 for a business-rule violation?
+* How would you distinguish a missing resource from a resource that the user is not authorized to access?
+* What security implications arise when returning HTTP 403 versus HTTP 404?
+* How would you design error handling when a downstream service returns an unexpected HTTP status code?
+* How should a gateway translate downstream HTTP status codes without losing important error information?
+* How would you handle partial failures in an API that aggregates multiple downstream services?
+* When should an API return HTTP 202 for an asynchronous operation, and how should clients track completion?
+* How would you represent an operation that has been accepted but later fails?
+* How would you design consistent error responses using the Problem Details standard, RFC 9457?
+* How would you distinguish protocol-level errors from application-level business errors?
+* How would you prevent internal infrastructure failures from being incorrectly exposed as HTTP 400 errors?
+* How would you decide whether a database timeout should result in HTTP 500, 503, or 504?
+* How would you handle a timeout when the server cannot determine whether a transaction committed?
+* How would you choose status codes for idempotent operations and repeated resource-creation requests?
+* How should conditional requests using ETag and If-Match respond when a resource has changed?
+* What is the difference between HTTP 304 Not Modified and HTTP 412 Precondition Failed?
+* When should HTTP 428 Precondition Required be used?
+* How would you design status-code handling for optimistic concurrency control?
+* How would you handle HTTP 206 Partial Content for APIs that support byte-range requests?
+* How would you implement retries based on HTTP status codes without retrying permanent failures?
+* How would you distinguish transient HTTP 503 failures from permanent client errors in a retry policy?
+* How should a circuit breaker react to different HTTP status-code categories?
+* How would you prevent retry storms caused by repeated HTTP 429 and 503 responses?
+* How would you design status-code handling for rate limits, daily quotas, and subscription restrictions?
+* How would you ensure status-code consistency across REST controllers, exception handlers, and API gateways?
+* How would you monitor and alert on abnormal increases in specific HTTP status-code categories?
+* How would you introduce a new error-response contract without breaking existing API consumers?
+* How would you handle status-code translation when integrating with legacy systems that use nonstandard codes?
+* How would you evaluate whether an API's HTTP status codes accurately reflect the outcome of each operation?

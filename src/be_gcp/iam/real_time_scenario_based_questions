@@ -1,0 +1,30 @@
+* A Spring Boot application running on Cloud Run receives a permission-denied error when accessing Cloud Storage. How would you investigate the service identity, IAM bindings, and resource hierarchy?
+* A Java application works on a developer's machine but fails in production because Google Cloud credentials cannot be found. How would you troubleshoot Application Default Credentials?
+* A GKE workload needs to access Secret Manager without using a downloaded service account key. How would you configure Workload Identity Federation for GKE?
+* A developer accidentally commits a service account key to a source code repository. How would you contain the incident, revoke the key, and prevent recurrence?
+* A service account has excessive permissions across several production projects. How would you identify and reduce its access without breaking applications?
+* A team grants the Editor role to every application service account to resolve deployment issues. How would you replace this approach with least-privilege access?
+* A Java application receives HTTP 403 errors even though its service account appears to have the required role. How would you investigate IAM inheritance, deny policies, conditions, and resource-level permissions?
+* A developer can deploy a Cloud Run service but cannot configure its service identity. Which permissions and security boundaries would you investigate?
+* A service account can read data from one Cloud Storage bucket but not another bucket in the same project. How would you compare the effective permissions and bucket policies?
+* A production application requires temporary access to a sensitive resource for troubleshooting. How would you grant and automatically remove that access?
+* A user inherits powerful permissions through a group and folder-level policy. How would you identify the source and safely restrict access?
+* An external CI/CD platform needs to deploy Java applications to Google Cloud without storing service account keys. How would you configure Workload Identity Federation?
+* A service account can impersonate another service account unexpectedly. How would you investigate the impersonation permissions and prevent privilege escalation?
+* A GKE application accesses the wrong Google Cloud project because of incorrect credentials or configuration. How would you identify and correct the identity and project selection?
+* An IAM policy change causes multiple production services to fail simultaneously. How would you identify the change, restore service, and prevent similar incidents?
+* A security audit discovers that former employees still have access to production resources through Google groups. How would you identify and remove the access?
+* A developer needs read-only access to BigQuery datasets but should not be able to modify tables or change IAM policies. How would you design the role assignments?
+* A service must read from Cloud Storage and write to BigQuery but must not access Secret Manager or other services. How would you configure its IAM permissions?
+* A team wants developers to manage resources in development projects but prohibits them from changing production IAM policies. How would you implement the separation?
+* A Java application suddenly loses access after a service account key is rotated. How would you diagnose the authentication failure and implement safer credential management?
+* An organization wants to prevent the creation of long-lived service account keys. Which organization policies and operational controls would you consider?
+* A third-party workload outside Google Cloud needs short-lived access to selected Google Cloud APIs. How would you design federation and restrict the trusted identities?
+* An IAM audit log shows an unexpected role binding change. How would you determine who made the change and assess its impact?
+* A production service requires access to a resource in another Google Cloud project. How would you grant cross-project access while preserving least privilege?
+* A team creates multiple overlapping custom roles that are difficult to maintain. How would you simplify role management without granting excessive permissions?
+* An application deployment pipeline needs permission to deploy a service but must not be able to grant itself additional IAM roles. How would you design its permissions?
+* A user can access a resource through an inherited allow policy, but a security requirement prohibits that access. How would you evaluate deny policies and principal access boundary policies?
+* A compliance team requires periodic evidence that all service accounts have appropriate permissions. How would you automate IAM reviews and reporting?
+* A Java service is migrated from Compute Engine to Cloud Run and loses access to Google Cloud APIs. How would you redesign its service identity and authentication?
+* A company has hundreds of projects and wants to standardize IAM policies while allowing teams limited autonomy. How would you design centralized governance and policy deployment?

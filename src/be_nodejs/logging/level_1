@@ -1,0 +1,30 @@
+* How do you implement a centralized logging mechanism in Node.js?
+* How do you configure different log levels for development and production?
+* How do you create a reusable logger module?
+* How do you implement logging using Winston?
+* How do you implement logging using Pino?
+* What is the difference between Winston and Pino?
+* How do you configure multiple logging transports in Winston?
+* What is a logging transport?
+* How do you write logs to both the console and a file?
+* How do you implement JSON-formatted logging?
+* How do you include timestamps and log levels in every log entry?
+* How do you configure log rotation in Node.js?
+* Why is log rotation important for production applications?
+* How do you prevent log files from consuming excessive disk space?
+* How do you log errors with stack traces?
+* How do you integrate logging with Express.js middleware?
+* How do you log HTTP request methods, URLs, status codes, and response times?
+* How do you generate and propagate a correlation ID for each request?
+* What is the difference between a correlation ID and a trace ID?
+* How do you include user or request context in log messages safely?
+* How do you log asynchronous operations without losing request context?
+* What is AsyncLocalStorage, and how can it help with contextual logging?
+* How do you avoid logging passwords, access tokens, and sensitive personal information?
+* How do you implement a configurable logging level using environment variables?
+* How do you handle failures when a log file cannot be written?
+* How do you write unit tests for logging functionality?
+* How do you mock a logger during unit testing?
+* How do you integrate Node.js logs with centralized logging platforms?
+* How do you measure the performance overhead caused by logging?
+* How do you distinguish application logs, access logs, and audit logs?

@@ -1,0 +1,30 @@
+* Your Spring Boot application Deployment has three desired replicas, but only two are available. How would you investigate the issue?
+* A new Java application version is deployed, but the rollout remains stuck. What troubleshooting steps would you follow?
+* After updating the container image, all new Pods enter ImagePullBackOff. How would you identify and fix the root cause?
+* A Deployment rollout completes successfully, but users receive HTTP 500 errors. How would you investigate the discrepancy?
+* During a rolling update, the application experiences brief downtime despite having multiple replicas. What would you examine?
+* Your Java application takes 90 seconds to start, but Kubernetes repeatedly restarts it before startup completes. How would you fix the Deployment?
+* A new version passes its liveness probe but fails its readiness probe. How would this affect traffic and rollout progress?
+* A Deployment creates new Pods, but they remain Pending because the cluster lacks resources. How would you resolve the situation?
+* A rollout causes CPU and memory usage to spike because old and new Pods run simultaneously. How would you manage capacity?
+* A manual kubectl scale command appears to have no lasting effect because an HPA is enabled. How would you diagnose this behavior?
+* Your team needs to deploy a Java application without interrupting ongoing requests. How would you configure the Deployment and application shutdown behavior?
+* A Deployment rollback restores the previous container image, but the application still fails because its database schema has changed. How would you recover safely?
+* A configuration change is applied through a ConfigMap, but the application continues using the old configuration. How would you investigate and resolve it?
+* A Deployment reports all replicas as available, but one replica is serving requests incorrectly. What additional health checks would you introduce?
+* After a node failure, the Deployment does not restore the expected number of available replicas. How would you troubleshoot scheduling and controller behavior?
+* A rolling update creates too many temporary Pods and exhausts cluster capacity. Which Deployment settings would you review?
+* Your new version requires a longer warm-up period before serving traffic. How would you prevent premature traffic routing?
+* A Deployment rollout works in staging but fails in production due to resource quotas. How would you investigate and address the difference?
+* A production Deployment keeps creating new ReplicaSets after repeated configuration updates. How would you identify what is triggering each rollout?
+* During a deployment, some users receive responses from the old version while others receive responses from the new version. Is this expected, and how would you manage compatibility?
+* Your Java service uses local in-memory sessions, and users lose sessions when Pods are replaced during a rollout. How would you redesign the application or deployment?
+* A new version starts successfully but fails under real traffic because of a connection pool configuration change. How would you detect and recover from the problem?
+* A Deployment rollout stalls because one Pod never becomes Ready, while the remaining replicas are healthy. How would you diagnose the unhealthy Pod and safely complete the rollout?
+* A node drain causes multiple replicas of a critical service to become unavailable. How would you improve the Deployment's resilience?
+* Your application must deploy across three availability zones. How would you configure replicas, topology spread, and scheduling constraints?
+* The team wants to deploy a canary version to only a small percentage of users. Why might a standard Deployment alone be insufficient, and what architecture would you use?
+* Two teams independently modify the same Deployment manifest, causing unexpected configuration changes. How would you prevent configuration drift?
+* Your application uses a Secret that is updated during a release, but the new Pods fail authentication. How would you troubleshoot Secret propagation and version compatibility?
+* A Deployment rollout succeeds, but background jobs are executed twice because old and new Pods overlap. How would you make job processing safe during deployments?
+* You need to release a major Java application version with minimal risk and a rapid recovery path. How would you design the deployment, validation, monitoring, and rollback process?

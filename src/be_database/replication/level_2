@@ -1,0 +1,30 @@
+* Explain the internal architecture of PostgreSQL physical streaming replication.
+* Explain how PostgreSQL WAL records are generated, transferred, replayed, and persisted on replicas.
+* Explain the internal architecture of MySQL source-replica replication using binary logs.
+* How do MySQL GTIDs support failover and replication topology changes?
+* How do synchronous_commit settings affect PostgreSQL transaction durability and latency?
+* How do synchronous replication and quorum-based acknowledgment affect availability during network partitions?
+* How do you design a replication topology that balances durability, latency, and availability?
+* How do you prevent split-brain conditions during primary failover?
+* How do fencing mechanisms help prevent two database nodes from accepting conflicting writes?
+* How do you determine whether a replica is safe to promote during failover?
+* How do PostgreSQL replication slots cause WAL retention, and how do you prevent disk exhaustion?
+* How do you investigate a PostgreSQL replica that repeatedly falls behind or stops replaying WAL?
+* How do you troubleshoot MySQL replication errors caused by missing binary logs or inconsistent data?
+* How do parallel replication workers improve throughput, and what limitations can reduce their effectiveness?
+* How do large transactions affect replication lag and replica recovery time?
+* How do DDL operations affect replication compatibility and deployment safety?
+* How do physical and logical replication differ in supported changes, resource usage, and migration flexibility?
+* How would you migrate a large PostgreSQL database using logical replication with minimal downtime?
+* How would you migrate a MySQL database to a new server while minimizing replication lag and downtime?
+* How do you handle replication between database versions with different feature sets?
+* How do cascading replication and multi-tier replication topologies work?
+* What are the operational risks of multi-primary replication?
+* How do conflict detection and conflict resolution work in multi-writer replication systems?
+* How do you design replication across regions with high network latency?
+* How do replication lag and stale reads affect financial transactions and inventory systems?
+* How do you implement read-after-write consistency when reads are routed to replicas?
+* How do you prevent stale replica reads from violating application-level business rules?
+* How do you design automatic failover with health checks, leader election, fencing, and connection redirection?
+* How do you validate replication consistency at scale without placing excessive load on production databases?
+* How would you design a highly available Java application using PostgreSQL or MySQL replication, connection routing, observability, and disaster recovery?

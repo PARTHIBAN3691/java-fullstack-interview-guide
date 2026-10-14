@@ -1,0 +1,100 @@
+**Enterprise Knowledge Assistants**
+
+* How would you design a RAG-based knowledge assistant that ingests internal documents, respects access permissions, and provides citations?
+* How would you measure answer relevance, groundedness, retrieval accuracy, and employee adoption?
+
+**Customer Support Chatbots**
+
+* How would you integrate a chatbot with CRM, ticketing, order management, and knowledge-base systems?
+* How would you implement conversation memory, escalation to a human agent, and safe handling of unsupported questions?
+
+**AI Coding Assistants**
+
+* How would you provide repository context to a coding assistant without exceeding the model's context window?
+* How would you evaluate AI-generated code for correctness, security vulnerabilities, maintainability, and test coverage?
+
+**Document Intelligence**
+
+* How would you build a document pipeline that combines OCR, layout detection, table extraction, classification, and structured output validation?
+* How would you handle low-quality scans, handwritten text, multi-column layouts, and documents containing mixed languages?
+
+**Contract and Legal Document Analysis**
+
+* How would you extract clauses and obligations from contracts while preserving links to the original page and text?
+* How would you compare contract versions and identify changes in liability, termination, confidentiality, and renewal terms?
+
+**Invoice and Financial Document Processing**
+
+* How would you implement invoice extraction with schema validation, arithmetic checks, supplier matching, and duplicate detection?
+* How would you integrate extracted invoice data with an ERP system while supporting exception queues and approval workflows?
+
+**Enterprise Search**
+
+* How would you combine keyword search, vector search, metadata filters, and reranking to improve enterprise search relevance?
+* How would you ensure that search results reflect document permissions, freshness, and source-system changes?
+
+**Text Summarization**
+
+* How would you summarize a large collection of reports when the combined input exceeds the model's context window?
+* How would you evaluate factual consistency, coverage, readability, and omission of critical information in generated summaries?
+
+**Information Extraction**
+
+* How would you extract entities, relationships, dates, amounts, and domain-specific fields into a strict JSON schema?
+* How would you handle missing values, ambiguous entities, conflicting source statements, and low-confidence extractions?
+
+**Recommendation Systems**
+
+* How would you combine collaborative filtering, content-based features, and business rules in a recommendation engine?
+* How would you evaluate precision, recall, ranking quality, diversity, and recommendation relevance?
+
+**Natural Language to SQL**
+
+* How would you generate SQL using database schema metadata, business definitions, and sample queries?
+* How would you prevent unsafe queries and validate generated SQL for correctness, authorization, and performance?
+
+**AI-Powered Analytics**
+
+* How would you build a conversational analytics system that converts business questions into data queries and explanatory insights?
+* How would you ensure that generated insights are supported by actual query results and correctly interpreted metrics?
+
+**Fraud Detection**
+
+* How would you combine transaction features, behavioral patterns, and anomaly detection to identify suspicious activity?
+* How would you handle imbalanced datasets, delayed labels, evolving fraud patterns, and the trade-off between detection and false positives?
+
+**Predictive Maintenance**
+
+* How would you build a predictive maintenance pipeline using sensor readings, historical failures, and maintenance records?
+* How would you evaluate prediction lead time, precision, recall, and the operational value of maintenance alerts?
+
+**Workflow Automation**
+
+* How would you combine LLM reasoning, deterministic business rules, workflow orchestration, and human approvals?
+* How would you design retries, idempotency, audit trails, and compensation for partially completed workflows?
+
+**AI for Software Development**
+
+* How would you integrate AI into a software development lifecycle while maintaining code quality, security, and engineering standards?
+* How would you use AI to generate tests, review pull requests, explain legacy code, and identify regression risks?
+
+**AI for DevOps and AIOps**
+
+* How would you correlate logs, metrics, traces, deployments, and alerts to identify likely root causes?
+* How would you build an AIOps workflow that reduces alert noise while preserving visibility into critical incidents?
+
+**AI for IT Operations**
+
+* How would you build an IT operations assistant that searches runbooks, retrieves incident history, and recommends remediation steps?
+* How would you integrate the assistant with incident management and monitoring tools while controlling permissions for operational actions?
+
+**AI for Cybersecurity**
+
+* How would you combine threat intelligence, endpoint events, network telemetry, and AI-assisted investigation in a security operations workflow?
+* How would you defend AI security assistants against prompt injection in emails, logs, tickets, and threat reports?
+
+**AI for Business Process Automation**
+
+* How would you automate a process that begins with an incoming email, extracts information, applies business rules, and updates enterprise systems?
+* How would you measure automation rate, exception rate, processing time, business accuracy, and human intervention?
+

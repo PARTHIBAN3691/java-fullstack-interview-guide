@@ -1,0 +1,26 @@
+
+* Explain the architecture of the Java Platform Module System and how it differs from the traditional classpath-based model.
+* How does the module system resolve dependencies at runtime?
+* What happens when a required module is missing from the module path?
+* How does strong encapsulation affect reflection-based frameworks?
+* What is the difference between `exports`, `opens`, and command-line options such as `--add-opens`?
+* How would you migrate a large legacy Java application from the classpath to the module path?
+* How would you handle a third-party JAR that does not contain a `module-info.class` file?
+* What are split packages, and why can they cause problems in a modular application?
+* How do service providers and service consumers interact through the Java module system?
+* How does the Java module system support reliable configuration and strong encapsulation?
+* What are the limitations of using `List.of()` and `Map.of()` for application data that must be modified?
+* Why do Java 9 collection factory methods reject null values and duplicate Set elements or Map keys?
+* How does the Java 9 module system affect dependency injection and reflection-based testing frameworks?
+* How would you troubleshoot an `IllegalAccessException` caused by module boundaries?
+* How does `Stream.takeWhile()` behave differently for ordered and unordered Streams?
+* Why can replacing `filter()` with `takeWhile()` change the results of a Stream pipeline?
+* How does the three-argument `Stream.iterate()` method generate values, and how does it terminate?
+* How would you flatten a Stream of `Optional` values using `Optional.stream()`?
+* How do the Java 9 Process API additions improve process monitoring compared with earlier Java versions?
+* What is the purpose of `ProcessHandle`, and how can it be used to inspect or manage operating-system processes?
+* How can `ProcessHandle.Info` provide information about a running process?
+* What are the advantages and limitations of the reactive-streams-related APIs introduced in Java 9?
+* What is the Flow API, and how does it relate to the Reactive Streams specification?
+* Explain the roles of `Flow.Publisher`, `Flow.Subscriber`, `Flow.Subscription`, and `Flow.Processor`.
+* How would you decide which Java 9 features to adopt when maintaining a large enterprise application?

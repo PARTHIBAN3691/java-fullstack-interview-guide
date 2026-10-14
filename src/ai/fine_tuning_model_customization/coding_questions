@@ -1,0 +1,70 @@
+**Fine-Tuning Fundamentals**
+* Implement a configuration-driven training pipeline that loads a base model, prepares a dataset, trains the model, evaluates it, and saves the resulting artifact.
+* Build an experiment tracker that records model identifiers, dataset versions, hyperparameters, evaluation metrics, and training duration.
+* Write tests that verify a fine-tuning run can be reproduced from a saved configuration and pinned dependencies.
+
+**Supervised Fine-Tuning (SFT)**
+* Implement a data collator that converts instruction-response examples into tokenized training batches with correct attention masks and label masking.
+* Build an SFT training loop with configurable learning rate, gradient accumulation, checkpoint saving, and validation evaluation.
+* Write tests that verify padding tokens and prompt-only tokens are excluded from the intended loss calculation.
+
+**Instruction Tuning**
+* Implement a dataset formatter that converts raw instruction, context, and response records into the required chat-template format.
+* Build a validator that checks required roles, message ordering, malformed conversations, and missing assistant responses.
+* Write tests that measure whether formatting changes preserve expected instruction and response boundaries.
+
+**Parameter-Efficient Fine-Tuning (PEFT)**
+* Implement a training configuration that enables LoRA-based PEFT for a selected set of model modules.
+* Build an adapter management component that saves, loads, registers, and selects task-specific adapters.
+* Write tests that verify the base model remains unchanged when only adapter parameters are intended to be trainable.
+
+**LoRA and QLoRA**
+* Implement a configurable LoRA training script with adjustable rank, alpha, dropout, and target modules.
+* Build a QLoRA training configuration that supports a quantized base model and trainable adapter parameters.
+* Write tests or benchmarking scripts that compare trainable parameter count, peak GPU memory, training time, and evaluation quality across configurations.
+
+**Dataset Preparation and Quality**
+* Implement a dataset-cleaning pipeline that detects duplicates, malformed examples, empty responses, and invalid records.
+* Build a privacy filter that detects likely secrets and sensitive identifiers before data enters a training corpus.
+* Write a data-quality report that measures class distribution, language coverage, missing fields, duplicate rates, and label consistency.
+
+**Training and Validation Splits**
+* Implement deterministic training, validation, and test splitting with configurable ratios and random seeds.
+* Build a group-aware splitting function that prevents related conversations or source documents from leaking across splits.
+* Write tests that verify no duplicate groups appear in multiple splits and that split distributions meet specified constraints.
+
+**Synthetic Data Generation**
+* Implement a pipeline that generates synthetic instruction-response examples using a configurable teacher-model interface.
+* Build a quality filter that checks schema validity, duplicate content, rule-based correctness, and model-based quality scores.
+* Write tests that track synthetic-data provenance and prevent evaluation examples from entering the training dataset.
+
+**Retrieval vs Fine-Tuning**
+* Implement an experiment that compares a base model, a fine-tuned model, a RAG-enabled model, and a combined RAG-plus-fine-tuning approach on the same evaluation dataset.
+* Build an evaluation harness that records answer quality, grounding, latency, token consumption, and cost for each approach.
+* Write tests that verify changing retrieved documents affects factual answers without requiring retraining the model.
+
+**Domain Adaptation**
+* Implement a preprocessing pipeline for domain-specific text with configurable normalization, deduplication, and domain metadata.
+* Build an evaluation suite that measures specialized-domain performance alongside general capability retention.
+* Write tests that compare continued-pretraining and supervised-fine-tuning configurations using consistent data splits and evaluation criteria.
+
+**Model Distillation**
+* Implement a teacher-student data generation pipeline that records teacher outputs, prompts, filtering decisions, and dataset provenance.
+* Build a benchmarking script that compares teacher and student models on task quality, inference latency, memory usage, and throughput.
+* Write tests that detect when the student model falls below defined quality or safety thresholds.
+
+**Quantization**
+* Implement a benchmark pipeline that compares an original model with supported 8-bit and 4-bit quantized variants.
+* Build a calibration-data preparation component for post-training quantization and validate the representative coverage of calibration samples.
+* Write tests that compare model loadability, peak memory, inference latency, and task-quality metrics across quantization settings.
+
+**Fine-Tuning Evaluation**
+* Implement an evaluation harness that calculates task-specific metrics and compares a fine-tuned model against its base model.
+* Build a regression evaluator that checks general capability retention, instruction following, safety, and robustness.
+* Write tests that verify evaluation datasets remain separate from training data and that metric calculations are reproducible.
+
+**Model Versioning and Rollback**
+* Implement a model registry that stores model artifacts, adapter versions, dataset identifiers, training configurations, and evaluation results.
+* Build a deployment controller that promotes a model through staging and production after required evaluation checks pass.
+* Implement an automated rollback mechanism triggered by configurable quality, safety, latency, or error-rate thresholds.
+* Write tests that verify rollback restores the correct artifact, configuration, and compatible tokenizer and inference settings.

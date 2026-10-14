@@ -1,0 +1,30 @@
+* Your authentication middleware executes, but the protected route remains accessible without a valid token. How would you troubleshoot it?
+* A middleware function calls next() multiple times, causing unexpected behavior. How would you identify and fix the issue?
+* An API request remains pending because middleware neither sends a response nor calls next(). How would you diagnose it?
+* Your application returns 404 for a valid route after adding new middleware. How would you investigate the middleware order?
+* Error-handling middleware does not catch a rejected promise from a route handler. How would you resolve the issue?
+* Your logging middleware records the wrong response status code. How would you ensure the final status is captured correctly?
+* Two middleware functions overwrite the same property on req. How would you prevent conflicts?
+* Your validation middleware accepts malformed input and allows invalid data to reach the database. How would you improve validation?
+* An authorization middleware allows a normal user to access an administrator endpoint. How would you fix the security design?
+* Your rate limiter works on one server but can be bypassed when requests are distributed across multiple instances. How would you resolve this?
+* A middleware logs passwords and access tokens from incoming requests. How would you prevent sensitive-data exposure?
+* Your CORS middleware works locally but fails in production. How would you investigate the configuration?
+* A request-body parser consumes excessive memory when clients submit large payloads. How would you protect the application?
+* A middleware performs a slow external API call for every request, increasing latency. How would you optimize the flow?
+* Your request timeout middleware returns a timeout response, but the underlying operation continues running. How would you cancel unnecessary work?
+* Your correlation ID changes unexpectedly between asynchronous operations. How would you preserve request context?
+* An audit-logging middleware fails when the logging service is unavailable, causing business requests to fail. How would you improve resilience?
+* Middleware behaves differently behind a reverse proxy because the client IP is incorrect. How would you configure proxy trust safely?
+* Your error handler exposes stack traces and internal details to clients. How would you make error responses production-safe?
+* A file-upload middleware accepts unsupported file types and oversized files. How would you enforce upload restrictions?
+* Middleware executes twice for a request because routes or routers are mounted incorrectly. How would you identify the duplicate execution?
+* A middleware changes the response headers after the response has already been sent. How would you prevent this error?
+* Your application applies authentication middleware to public endpoints unintentionally. How would you restructure the middleware stack?
+* A multi-tenant API sometimes returns data belonging to another tenant. How would you enforce tenant isolation through middleware and downstream authorization?
+* Your application has many middleware functions, and API latency increases with each deployment. How would you profile and optimize the middleware chain?
+* A security update changes middleware behavior and breaks existing routes. How would you test and roll out the change safely?
+* Your API needs different middleware for public, authenticated, and administrator routes. How would you organize the route structure?
+* An asynchronous middleware throws an error after the client disconnects. How would you handle cleanup and prevent unhandled failures?
+* You need to implement a global maintenance mode without changing every controller. How would you design the middleware?
+* You are building a production-grade Express application. How would you design the middleware pipeline for authentication, validation, logging, rate limiting, and error handling?

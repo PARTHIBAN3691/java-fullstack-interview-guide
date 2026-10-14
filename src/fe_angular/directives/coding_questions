@@ -1,0 +1,30 @@
+* Create a custom Angular directive that changes an element's background color.
+* Create a directive that changes text color when the mouse enters and restores it when the mouse leaves.
+* Create a directive that adds a CSS class to an element using HostBinding.
+* Create a directive that listens for click events using HostListener.
+* Create a directive that accepts a color through an input property and applies it to the host element.
+* Create a directive that disables a button based on an input boolean value.
+* Create a directive that adds a border to an element when it receives keyboard focus.
+* Create a directive that changes an element's font size based on an input value.
+* Create a custom directive that uses Renderer2 to update an element's styles.
+* Create a standalone directive and import it into a standalone component.
+* Create a custom structural directive that displays content only when a condition is true.
+* Create a custom structural directive that repeats a template a specified number of times.
+* Create a structural directive that exposes an item and its index through the template context.
+* Create a structural directive that supports an alternative template when its condition is false.
+* Create a directive that displays a tooltip on hover and keyboard focus.
+* Create a directive that applies a CSS class when an input value matches a specified condition.
+* Create a directive that restricts input fields to numeric characters.
+* Create a directive that automatically focuses an input element when it is initialized.
+* Create a directive that validates a form field and integrates with Angular's validation APIs.
+* Create a directive that observes an element's size using ResizeObserver and cleans up the observer.
+* Create a directive that listens for clicks outside a host element and emits an event.
+* Create a directive that detects scroll events and emits the current scroll position.
+* Create a permission-based structural directive that shows content according to a user's role.
+* Create a directive using signal-based inputs to configure its behavior.
+* Create a directive that uses DestroyRef to clean up event listeners or subscriptions.
+* Create a host directive that provides reusable behavior and expose its inputs through another component.
+* Write unit tests for a custom attribute directive that changes styles on hover.
+* Write unit tests for a structural directive that creates and removes embedded views.
+* Write unit tests for a directive that handles input changes, events, and cleanup.
+* Build a reusable Angular directive that supports configurable styling, keyboard accessibility, lifecycle cleanup, and comprehensive unit tests.

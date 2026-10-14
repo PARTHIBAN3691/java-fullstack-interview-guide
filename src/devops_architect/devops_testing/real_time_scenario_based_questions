@@ -1,0 +1,75 @@
+
+**Unit Testing in Pipelines**
+* A pull request passes locally but fails unit tests on CI because tests depend on timezone, locale, or execution order. How would you isolate the cause and make test execution reproducible?
+* Unit tests increase pipeline duration from five minutes to forty minutes as the codebase grows. How would you identify bottlenecks and reduce feedback time without weakening test coverage?
+* A critical production defect passes all unit tests despite high reported code coverage. How would you identify the missing assertions and improve the testing strategy?
+
+**Integration Testing**
+* Integration tests fail intermittently because Kafka consumers process messages after assertions execute. How would you synchronize tests with asynchronous processing and avoid arbitrary sleeps?
+* A pipeline's integration tests pass independently but fail when multiple jobs share a database. How would you isolate test state and eliminate cross-test interference?
+* An external payment provider is unavailable during CI execution, blocking all integration tests. How would you separate provider-independent validation from tests requiring a real provider?
+
+**API Testing**
+* API tests pass in staging, but production returns intermittent 401 and 403 responses after a token configuration change. How would you investigate authentication, authorization, token expiry, and environment configuration?
+* An endpoint returns HTTP 200 but occasionally persists duplicate orders when clients retry requests. How would you reproduce the issue and validate idempotency?
+* A new API release breaks an older mobile client because a response field's type changed. How would you detect the incompatibility and prevent similar releases?
+
+**Contract Testing**
+* A provider deployment passes its own tests but breaks two downstream consumers because a response field became mandatory. How would you identify the contract violation and prevent deployment?
+* A consumer publishes a new contract while a provider release is being verified against an older contract revision. How would you prevent the race and establish a reliable compatibility decision?
+* A Kafka event producer changes a field format, and several consumers fail asynchronously after deployment. How would you validate schema compatibility and coordinate a safe rollout?
+
+**End-to-End Testing**
+* An E2E suite fails randomly in CI because elements load asynchronously and downstream events are eventually consistent. How would you identify the synchronization issue and improve reliability?
+* A browser-based test passes when run alone but fails during parallel execution because multiple tests modify the same user account. How would you redesign test-data isolation?
+* A complete checkout journey fails after a release, but all individual service tests pass. How would you trace the failure across frontend, APIs, database operations, and asynchronous events?
+
+**Smoke Testing**
+* A deployment reports success, but the first customer requests fail because a critical dependency is unavailable. How would you improve smoke checks and prevent traffic from reaching an unhealthy release?
+* Smoke tests pass immediately after deployment, but background consumers fail ten minutes later. How would you extend verification to asynchronous and scheduled workloads?
+* A production smoke test accidentally creates real customer records and sends notifications. How would you contain the impact and redesign the tests to be safe and repeatable?
+
+**Regression Testing**
+* A minor shared-library update breaks a rarely used business workflow that is not covered by the targeted test suite. How would you improve dependency-based test selection?
+* The regression suite takes three hours, causing teams to bypass it for urgent releases. How would you divide tests into fast feedback, pre-release, and scheduled suites?
+* A flaky test is quarantined but later turns out to reveal a real concurrency defect. How would you investigate the history and improve flaky-test governance?
+
+**Performance Testing**
+* A release meets average response-time targets but violates p99 latency objectives during peak traffic. How would you investigate the tail-latency regression?
+* Performance tests show a large throughput improvement, but production CPU and database utilization increase unexpectedly. How would you validate the load model and compare test conditions with production?
+* A load test passes until traffic increases sharply, after which retries amplify the outage. How would you test backpressure, retry limits, circuit breakers, and recovery behavior?
+
+**Security Testing**
+* A critical dependency vulnerability is detected just before production release, but the application team says the vulnerable code path is not used. How would you evaluate the risk and decide whether the release should proceed?
+* A pipeline prints an access token in a failed test log, and the logs are accessible to many developers. How would you contain the exposure and improve secret handling?
+* DAST discovers an authorization issue that was not detected by SAST. How would you reproduce the exploit safely, assess the impact, and add preventive tests?
+
+**Infrastructure Testing**
+* A Terraform change passes syntax validation but creates a publicly accessible storage bucket. How would you identify the missing policy check and prevent deployment?
+* An infrastructure change passes in development but breaks service connectivity in production due to different network rules. How would you reproduce the issue and improve infrastructure testing?
+* A cloud provisioning test leaves resources behind after failure, increasing costs and causing later tests to fail. How would you implement reliable cleanup and orphan detection?
+
+**Terraform Testing**
+* A Terraform plan unexpectedly replaces a stateful database resource during a routine module upgrade. How would you investigate the plan, state, and provider changes before any apply?
+* Terratest succeeds in one region but fails in another due to quotas and eventual resource readiness. How would you distinguish real infrastructure defects from transient cloud limitations?
+* A test pipeline uses an overly privileged cloud credential that could modify production resources. How would you redesign the identity model and isolate test state?
+
+**Container Testing**
+* A container passes vulnerability scanning but crashes in production because it runs as a non-root user and cannot write to a required directory. How would you reproduce the issue and validate a secure fix?
+* A new base image introduces a critical vulnerability after the application image was approved. How would you determine which deployed images are affected and prioritize rebuilds?
+* Containers terminate during rolling deployments, dropping requests and leaving transactions incomplete. How would you test signal handling, graceful shutdown, and termination grace periods?
+
+**Kubernetes Testing**
+* A Kubernetes rollout reaches its desired replica count, but users receive errors because readiness probes succeed before dependencies are ready. How would you diagnose and correct the probe and startup behavior?
+* A NetworkPolicy change passes manifest validation but blocks communication between two production services. How would you test intended and forbidden traffic before rollout?
+* A Helm upgrade fails after updating some resources, and rollback does not restore the previous behavior. How would you investigate partial changes, persistent resources, and chart compatibility?
+
+**Deployment Verification**
+* A canary release has healthy pods but a rising business-error rate. How would you improve verification beyond infrastructure health checks?
+* Automated rollback triggers during a temporary downstream outage and repeatedly switches between application versions. How would you separate release-caused failures from dependency failures?
+* One production region runs the new version while another remains on the old version, producing inconsistent behavior. How would you verify rollout state and manage cross-region compatibility?
+
+**Production Testing**
+* Synthetic checks show healthy responses, but a subset of real customers experience checkout failures after a release. How would you investigate tenant-specific, regional, and real-user signals?
+* A controlled fault-injection experiment causes unexpected production latency. How would you stop the experiment, restore normal behavior, and strengthen safeguards?
+* A canary appears healthy for HTTP requests, but delayed message-processing errors increase after twenty minutes. How would you adjust the observation window and include asynchronous business outcomes in release decisions?

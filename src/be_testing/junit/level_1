@@ -1,0 +1,30 @@
+* How do you create a JUnit 5 test class for a Java service?
+* How do you write unit tests for methods that return different values based on conditions?
+* How do you test methods that throw exceptions?
+* How do you verify exception messages using assertThrows()?
+* How do you write parameterized tests using @ParameterizedTest?
+* What is the purpose of @ValueSource in JUnit 5?
+* How do you use @CsvSource to provide multiple test inputs?
+* What is the purpose of @MethodSource?
+* How do you use @EnumSource in parameterized tests?
+* How do you test null and empty inputs using JUnit?
+* How do you test boundary conditions using JUnit?
+* How do you use assertAll() to group multiple assertions?
+* What is the difference between assertAll() and multiple independent assertions?
+* How do you test code that depends on external services?
+* How do you integrate Mockito with JUnit 5?
+* What is the purpose of @ExtendWith(MockitoExtension.class)?
+* What is the difference between @Mock and @InjectMocks?
+* How do you verify that a mocked method was called?
+* How do you configure mock behavior using when() and thenReturn()?
+* How do you test exceptions thrown by mocked dependencies?
+* How do you use ArgumentCaptor in JUnit and Mockito tests?
+* What is the purpose of @Nested in JUnit 5?
+* How do you use @Tag to categorize JUnit tests?
+* How do you control test execution order in JUnit 5?
+* How do you write repeated tests using @RepeatedTest?
+* How do you use @TestFactory to create dynamic tests?
+* How do you implement setup and cleanup using test lifecycle methods?
+* How do you share test utilities across multiple JUnit test classes?
+* How do you configure JUnit test execution in Maven Surefire?
+* How do you generate test execution and failure reports for JUnit?

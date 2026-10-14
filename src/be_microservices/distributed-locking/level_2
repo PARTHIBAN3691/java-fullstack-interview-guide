@@ -1,0 +1,30 @@
+* How would you design a reliable distributed locking service for a large microservices platform?
+* What correctness guarantees can a Redis-based distributed lock provide?
+* How can network partitions affect distributed lock correctness?
+* What are the limitations of lease-based distributed locking?
+* How can a process continue executing after its lock lease expires?
+* What is a fencing token, and how does it prevent stale lock owners from modifying data?
+* How would you generate monotonically increasing fencing tokens?
+* How do you prevent stale lock holders from overwriting newer data?
+* How do clock skew and timing assumptions affect distributed locking?
+* How do you reason about safety and liveness in a distributed lock implementation?
+* What are the limitations of implementing a distributed lock using Redis replication and failover?
+* How does asynchronous replication affect lock correctness during Redis failover?
+* When would you choose ZooKeeper or etcd over Redis for distributed coordination?
+* How do consensus algorithms such as Raft relate to distributed coordination?
+* How do you design lock recovery after a process crash or network partition?
+* How do you handle a lock holder that becomes unreachable but continues processing?
+* How do you prevent deadlocks when a workflow requires multiple distributed locks?
+* How do you establish a consistent lock acquisition order across services?
+* How do you design a distributed lock that supports reentrancy?
+* How do you implement fair locking, and what trade-offs does it introduce?
+* How do you prevent lock starvation under heavy contention?
+* How do you scale a locking mechanism for high-throughput workloads?
+* How do you handle lock renewal without allowing expired owners to retain authority?
+* How do you design distributed locking across multiple regions?
+* Why is a distributed lock alone insufficient to guarantee exactly-once business processing?
+* How do you combine locking with idempotency keys and database constraints?
+* How do you design locking for workflows involving a database and an external payment provider?
+* How do you evaluate the trade-offs between distributed locks, optimistic concurrency control, and partition ownership?
+* How do you make lock acquisition and release observable without creating excessive monitoring overhead?
+* How would you prove that a distributed lock implementation satisfies the correctness requirements of a critical business operation?

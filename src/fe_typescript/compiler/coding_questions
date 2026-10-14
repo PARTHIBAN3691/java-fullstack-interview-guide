@@ -1,0 +1,30 @@
+* Create a TypeScript file and compile it into JavaScript using the TypeScript CLI.
+* Write a simple tsconfig.json that compiles files from src into a dist directory.
+* Configure the compiler to target ES2020 and use ECMAScript modules.
+* Configure TypeScript to enable strict type checking.
+* Create a configuration that generates declaration files for a reusable library.
+* Configure TypeScript to generate source maps for debugging.
+* Configure the compiler to exclude test files and node_modules from compilation.
+* Create a project that compiles automatically whenever a TypeScript file changes.
+* Write a TypeScript program with an intentional type error and inspect the compiler diagnostic.
+* Configure TypeScript to check JavaScript files in a project.
+* Create separate development and production tsconfig.json files using extends.
+* Configure TypeScript to report unused local variables and function parameters.
+* Create a project using baseUrl and paths to define an import alias.
+* Configure a TypeScript project to emit declarations without emitting JavaScript.
+* Create a composite TypeScript project with separate core and application packages.
+* Configure project references between two TypeScript projects and build them using tsc --build.
+* Create a sample project that demonstrates incremental compilation and the tsbuildinfo file.
+* Write a script using the TypeScript Compiler API to load a source file and print its diagnostics.
+* Use the TypeScript Compiler API to inspect the AST of a function declaration.
+* Write a program that lists all class declarations in a TypeScript source file using the AST.
+* Build a simple static analyzer that detects calls to console.log using the TypeScript Compiler API.
+* Create a TypeScript library that exports a class and generates the corresponding declaration file.
+* Configure a package with separate CommonJS and ECMAScript module outputs.
+* Create a project that uses NodeNext module resolution and demonstrate valid import extensions.
+* Configure a project using bundler module resolution and explain the expected build behavior.
+* Create a declaration file for a JavaScript utility library and consume it from TypeScript.
+* Write a sample that demonstrates the effect of strictNullChecks on nullable values.
+* Configure a project to compile TypeScript without emitting output and use it as a type-checking step.
+* Create a TypeScript project that uses project references to share types between frontend and backend packages.
+* Build a small custom TypeScript compilation script that creates a Program, collects diagnostics, and reports compilation success or failure.

@@ -1,0 +1,96 @@
+**Git Fundamentals**
+* A developer accidentally executes `git reset --hard` and loses several uncommitted changes before a production fix. How would you investigate whether the work can be recovered and prevent similar incidents?
+* A repository suddenly reports missing Git objects and several branches cannot be checked out. How would you determine the extent of corruption and restore a trustworthy repository?
+* A developer commits a secret and pushes it to a shared repository. How would you contain the exposure, rotate credentials, and address copies in history, forks, and build systems?
+* A repository has become extremely slow because of large binary files and extensive history. How would you identify the causes and plan remediation without disrupting development?
+
+**Branching Strategies**
+* Teams frequently encounter merge conflicts and integration failures because feature branches remain open for weeks. How would you redesign the branching model and migration plan?
+* Two product teams require different release cadences but share core libraries. How would you coordinate integration and release management?
+* A company wants continuous delivery, but operations requires stable release checkpoints. How would you design a branching and release process that satisfies both needs?
+* An emergency security fix must reach three supported versions without introducing unrelated changes. How would you coordinate and verify the fix across branches?
+
+**GitFlow**
+* A hotfix was merged into `main` but never propagated to `develop`. The same vulnerability reappears in the next release. How would you correct the release workflow and prevent recurrence?
+* A release branch accumulates dozens of fixes while feature development continues, producing repeated merge conflicts. How would you recover and improve branch synchronization?
+* A product team has independently deployable microservices but must coordinate a single GitFlow release branch. How would you determine whether to retain or change this model?
+* Multiple hotfix branches target different production versions, and one cherry-pick behaves differently across versions. How would you validate the changes and maintain consistent security fixes?
+
+**Trunk-Based Development**
+* A commit breaks the main branch and blocks builds for all teams. How would you restore a green trunk quickly and investigate the failed safeguards?
+* An incomplete feature is merged behind a feature flag, but a configuration mistake exposes it to production users. How would you contain the impact and improve flag governance?
+* Developers begin creating long-lived branches because the trunk frequently breaks. How would you identify the causes and restore reliable integration?
+* A feature flag remains enabled for only a subset of users, creating inconsistent application behavior. How would you diagnose the rollout and improve flag testing?
+
+**Feature Branches**
+* A feature branch has diverged from main after three weeks of development and contains dozens of conflicts. How would you reduce integration risk and plan the merge?
+* Two feature branches depend on each other, and one must be delivered earlier. How would you reorganize the changes to avoid blocking both teams?
+* A developer deletes a feature branch after it was merged incorrectly. How would you recover the intended work and reconstruct the correct change sequence?
+* Teams accumulate stale branches containing sensitive or outdated code. How would you identify candidates for cleanup without deleting active work?
+
+**Pull Requests**
+* A pull request passes all required checks, but the target branch changes before it is merged. How would you prevent integration of a change that has not been validated against the latest target state?
+* A compromised automation account approves and merges its own pull request. How would you contain the incident and redesign approval independence?
+* Reviewers approve a large change without noticing an authorization vulnerability. How would you address the defect and improve risk-based review practices?
+* An urgent production patch cannot meet the normal review quorum. How would you authorize the change, retain evidence, and perform the required follow-up review?
+
+**Code Reviews**
+* A senior engineer repeatedly rejects changes without actionable feedback, delaying several teams. How would you resolve the situation while maintaining review quality?
+* A pull request includes hundreds of unrelated lines of refactoring, making a security-sensitive change difficult to assess. How would you restructure the review and manage delivery risk?
+* A critical defect reaches production even though multiple reviewers approved the change. How would you investigate the review process and determine whether automated tests or ownership controls should change?
+* A reviewer discovers a serious architectural problem late in a release cycle. How would you handle the disagreement and decide whether to block the release?
+
+**Merge vs Rebase**
+* A developer rebases a shared branch and force-pushes rewritten history, disrupting several colleagues. How would you restore collaboration and prevent repeated incidents?
+* A developer accidentally drops a required commit during interactive rebase. How would you recover it and verify the final history?
+* The team switches to squash merging, and incident responders can no longer easily map production commits to individual reviewed changes. How would you improve traceability?
+* A merge conflict is resolved incorrectly, and a regression appears after integration. How would you identify the problematic resolution and restore correct behavior?
+
+**Git Tags**
+* A production release tag is accidentally moved to a different commit. How would you determine which artifact was deployed and restore release traceability?
+* A release artifact's checksum does not match the artifact expected from its Git tag. How would you investigate the build, publishing, and deployment chain?
+* A maintainer's signing key is compromised, and several releases were signed with it. How would you determine the affected release set and restore trust?
+* Teams publish inconsistent version tags across multiple repositories during a coordinated release. How would you establish a consistent release manifest?
+
+**Git Hooks**
+* A pre-commit hook works on Linux but fails for Windows developers because of shell and path differences. How would you standardize execution and validate cross-platform behavior?
+* Developers bypass local hooks with command-line options and commit secrets into repositories. How would you enforce reliable server-side or CI controls?
+* A newly distributed hook causes every commit to take several minutes. How would you investigate the latency and decide which checks should run locally or in CI?
+* A compromised hook script executes unexpected commands on developer machines. How would you contain the incident and secure hook distribution?
+
+**Monorepo vs Polyrepo**
+* A monorepo change to a shared library triggers thousands of unnecessary builds and tests. How would you design reliable dependency-aware CI?
+* Teams need different access permissions for sensitive components inside a shared monorepo. How would you determine whether path-level controls are sufficient or separate repositories are necessary?
+* A company splits a monorepo into multiple repositories, and historical references and dependency builds break. How would you migrate safely?
+* Teams using separate repositories repeatedly release incompatible shared-library versions. How would you improve compatibility testing and dependency coordination?
+
+**Release Branches**
+* A critical defect is found in the latest release, while an older supported version also needs a security patch. How would you coordinate backports and verify each release independently?
+* A release candidate passes staging tests but fails production validation because the branch has changed since the artifact was built. How would you restore artifact traceability?
+* A fix is cherry-picked into an older release branch but behaves differently because the underlying implementation has diverged. How would you test and validate the backport?
+* A release branch remains active long after support has ended, causing security and maintenance confusion. How would you determine the correct closure process?
+
+**Semantic Versioning**
+* A shared library introduces an API change that compiles successfully but breaks several consumer services at runtime. How would you determine the correct versioning and compatibility policy?
+* Teams publish multiple artifacts with the same semantic version but different contents. How would you investigate and prevent release immutability violations?
+* An automated release process increments PATCH for a breaking API change. How would you detect the error and correct dependent release metadata?
+* Several services require incompatible major versions of a shared dependency. How would you plan migration, coexistence, and deprecation?
+
+**Commit Strategies**
+* A production regression is difficult to isolate because a single commit combines refactoring, dependency upgrades, and business logic changes. How would you identify the cause and improve commit practices?
+* A developer squashes several reviewed commits and the original authorship and decision history become difficult to trace. How would you restore adequate provenance?
+* Automated changelog generation fails because commit messages do not follow a consistent format. How would you introduce a migration and enforcement strategy?
+* A release contains an accidental commit that must be reverted without undoing later dependent fixes. How would you determine the safest revert sequence?
+
+**Repository Governance**
+* An audit discovers that former employees and obsolete automation accounts still have write access to production repositories. How would you remediate access and prevent recurrence?
+* A repository administrator disables branch protection to merge a risky change directly. How would you investigate, restore controls, and improve governance monitoring?
+* A compromised developer account introduces a malicious dependency update and merges it into main. How would you trace the change through builds and releases and restore a trusted state?
+* Different repositories enforce inconsistent security checks, approvals, and release rules. How would you roll out organization-wide standards without blocking active delivery?
+
+**GitOps Repository Design**
+* A configuration change propagates across all production clusters and causes a widespread outage. How would you stop reconciliation, roll back the change, and introduce staged promotion?
+* Teams modify production resources manually, and GitOps repeatedly reverts those changes. How would you establish ownership and handle emergency operations?
+* A GitOps repository is accidentally deleted or compromised, and controllers cannot reconcile the desired state. How would you restore trusted configuration and resume deployments safely?
+* Development and production manifests accidentally reference different image digests for what should be the same release. How would you investigate and enforce immutable promotion?
+* A single GitOps repository has become difficult to manage because of hundreds of applications and overlapping ownership. How would you reorganize it while preserving history, access controls, and deployment continuity?

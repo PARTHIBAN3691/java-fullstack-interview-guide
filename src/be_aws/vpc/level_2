@@ -1,0 +1,21 @@
+
+* Design a production-grade VPC architecture for a Java microservices application spanning multiple Availability Zones.
+* How would you design a highly available VPC architecture with public load balancers, private application subnets, and isolated database subnets?
+* How would you design network segmentation for development, testing, staging, and production environments?
+* How would you connect multiple VPCs across AWS accounts while minimizing routing complexity and operational overhead?
+* How would you design a hub-and-spoke network architecture using AWS Transit Gateway?
+* How would you enable private access to AWS services without allowing general internet access from application subnets?
+* How would you design outbound internet access for private workloads while controlling egress traffic and costs?
+* How would you troubleshoot asymmetric routing in a VPC connected to an on-premises network?
+* How would you diagnose a connectivity failure when security groups and NACLs appear to allow the required traffic?
+* How would you design VPC CIDR allocations to avoid overlapping address ranges across many AWS accounts and regions?
+* How would you securely expose a private Java microservice to selected external consumers?
+* How would you design network isolation for workloads processing sensitive customer data?
+* How would you integrate centralized inspection and firewall controls into a multi-VPC architecture?
+* How would you design hybrid connectivity using Transit Gateway, Site-to-Site VPN, and Direct Connect?
+* How would you investigate packet drops and rejected connections using VPC Flow Logs and Reachability Analyzer?
+* How would you design a VPC architecture that supports disaster recovery in another AWS Region?
+* How would you secure communication between EKS pods and services hosted in other VPCs?
+* How would you evaluate the security and cost trade-offs of NAT Gateways, VPC endpoints, and centralized egress?
+* How would you design a private connectivity solution for Java services that access RDS, SQS, SNS, and Secrets Manager?
+* How would you automate VPC provisioning and enforce network security standards using AWS CloudFormation or Terraform?

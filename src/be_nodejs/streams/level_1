@@ -1,0 +1,30 @@
+* Explain the lifecycle of a readable stream in Node.js.
+* Explain the lifecycle of a writable stream in Node.js.
+* How does the pipe() method transfer data between streams?
+* How does stream.pipeline() differ from pipe()?
+* Why is pipeline() generally preferred for robust stream processing?
+* How do you create a custom Readable stream?
+* How do you create a custom Writable stream?
+* How do you implement a custom Transform stream?
+* How do you implement a Duplex stream?
+* What is the purpose of the _read() method in a custom readable stream?
+* What is the purpose of the _write() method in a custom writable stream?
+* What are _transform() and _flush() in a Transform stream?
+* How do you detect and handle backpressure when writing to a stream?
+* What does writable.write() returning false indicate?
+* What is the purpose of the drain event?
+* How does highWaterMark affect stream buffering and memory usage?
+* How do you process a large CSV file without loading the entire file into memory?
+* How do you transform data while reading a file?
+* How do you chain multiple streams together?
+* How do you handle errors across a stream pipeline?
+* What is the difference between destroying and ending a stream?
+* How do you cancel a stream operation using AbortSignal?
+* What is the difference between encoding and binary data in streams?
+* How do you process streams containing UTF-8 text split across multiple chunks?
+* How do you convert a readable stream into a string or buffer?
+* How do async iterators work with readable streams?
+* How do you consume a readable stream using for await...of?
+* How do you convert between Node.js streams and Web Streams?
+* How do you stream a file to an HTTP response in Express?
+* How do you test custom streams and stream pipelines?

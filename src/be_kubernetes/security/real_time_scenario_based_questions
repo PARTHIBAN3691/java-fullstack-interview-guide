@@ -1,0 +1,30 @@
+* A developer can access Secrets from every namespace. How would you investigate and fix the RBAC configuration?
+* A Pod is rejected because it violates the Restricted Pod Security Standard. How would you resolve the issue securely?
+* A Java Spring Boot application requires root privileges to start. How would you investigate and eliminate this requirement?
+* A container image contains critical vulnerabilities, but the release is urgent. How would you handle the deployment?
+* A production application needs database credentials that change regularly. How would you manage Secret rotation without downtime?
+* A compromised Pod is making outbound connections to an unknown external IP. How would you contain and investigate the incident?
+* Two namespaces must be isolated, but selected services need to communicate across them. How would you configure NetworkPolicies?
+* A newly deployed NetworkPolicy causes all application traffic to stop. How would you troubleshoot the issue?
+* An application cannot pull an image from a private registry. How would you verify the registry credentials and permissions?
+* A Pod is unexpectedly running in privileged mode. How would you identify the source of the configuration and prevent recurrence?
+* An application team requests cluster-admin access to troubleshoot a deployment. How would you provide the required access safely?
+* Kubernetes Secrets are visible in etcd backups. What risks does this create, and how would you mitigate them?
+* A leaked ServiceAccount token may have been used to access the Kubernetes API. What immediate and follow-up actions would you take?
+* A developer accidentally commits a production password into a Git repository. How would you respond?
+* A container tries to write to its root filesystem but fails after a security hardening change. How would you fix the application without weakening security unnecessarily?
+* A new admission policy blocks all deployments in a production namespace. How would you recover safely?
+* A security scanner reports vulnerabilities in the base image used by several Java services. How would you plan remediation?
+* An attacker deploys an unknown workload into a namespace. How would you identify the creator, permissions used, and affected resources?
+* An application must access an external cloud database without storing long-lived credentials in Kubernetes. How would you design the authentication flow?
+* A service requires TLS, but its certificate expires unexpectedly. How would you restore secure communication and prevent recurrence?
+* Audit logs show repeated unauthorized API requests from a ServiceAccount. How would you investigate and contain the activity?
+* A cluster hosts applications from multiple business units with different confidentiality requirements. How would you isolate and secure them?
+* A deployment pipeline allows developers to deploy unsigned container images. How would you introduce image-signing enforcement?
+* A third-party Helm chart creates overly permissive RBAC resources. How would you assess and deploy it securely?
+* A Java microservice needs to communicate with only two backend services, but currently can reach every Pod. How would you restrict its network access?
+* A vulnerability scanner detects a suspicious executable inside a running container. What incident-response steps would you follow?
+* A new security policy breaks an application that requires additional Linux capabilities. How would you evaluate and grant only the necessary capabilities?
+* An administrator needs emergency access to a production cluster. How would you provide time-limited access with traceability?
+* A Kubernetes cluster upgrade changes security defaults and causes workloads to fail. How would you identify the changes and migrate safely?
+* How would you design a Kubernetes security incident-response process covering detection, containment, recovery, and prevention?

@@ -1,0 +1,30 @@
+* How do you implement caching in a Spring Boot REST API?
+* How do you enable caching using @EnableCaching?
+* What is the purpose of @Cacheable in Spring Boot?
+* What is the difference between @Cacheable, @CachePut, and @CacheEvict?
+* How do you configure a cache manager in Spring Boot?
+* How do you configure Redis as a cache provider for a REST API?
+* How do you define TTL for cached data in Redis?
+* How do you cache the response of a GET endpoint?
+* How do you prevent repeated database queries using caching?
+* How do you cache frequently accessed reference data?
+* How do you design cache keys for REST API requests?
+* How do you cache responses based on query parameters?
+* How do you handle caching when API responses depend on user identity?
+* How do you prevent sensitive user-specific data from being served to another user through a shared cache?
+* How do you implement conditional GET requests using ETag?
+* How do you use Cache-Control directives such as max-age, no-cache, and no-store?
+* What is the difference between private and public HTTP caching?
+* How do you implement cache invalidation when database records are updated?
+* How do you invalidate multiple cache entries related to a single resource?
+* How do you cache paginated and filtered REST API responses?
+* How do you handle cache misses and populate the cache from a database?
+* What is cache-aside, and how does it work?
+* What is the difference between cache-aside and read-through caching?
+* How do you configure caching for multiple application instances?
+* How do you monitor cache hit ratio and cache misses?
+* How do you test caching behavior in a Spring Boot application?
+* How do you handle Redis connection failures in a REST API?
+* How do you prevent cache stampede when a popular cache entry expires?
+* How do you handle stale data in a cached API response?
+* How do you decide which REST API endpoints should use caching?

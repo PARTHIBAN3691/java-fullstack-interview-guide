@@ -1,0 +1,30 @@
+* How do you design unit tests for a complex business service with multiple dependencies?
+* How do you identify the correct unit boundary in a layered Java application?
+* How do you test methods with complex branching and nested conditional logic?
+* How do you test a method that uses generics and bounded type parameters?
+* How do you unit-test immutable objects and Java records?
+* How do you test asynchronous code that returns CompletableFuture?
+* How do you test code that uses ExecutorService or thread pools?
+* How do you unit-test concurrent code without introducing flaky tests?
+* How do you test retry logic and exponential backoff without waiting for real delays?
+* How do you test timeout behavior deterministically?
+* How do you unit-test code that depends on the current system time?
+* How do you test random-number generation and nondeterministic logic?
+* How do you test methods that interact with static utility methods?
+* How do you handle legacy code that uses static methods and constructors directly?
+* How do you test code that uses reflection internally?
+* How do you unit-test a factory or strategy implementation with multiple implementations?
+* How do you test equals(), hashCode(), and compareTo() contracts?
+* How do you test serialization and deserialization logic at the unit level?
+* How do you use test doubles without over-mocking the implementation?
+* How do you verify interactions without coupling tests too tightly to implementation details?
+* How do you distinguish useful coverage from tests that only execute code?
+* What is mutation testing, and how does it complement code coverage?
+* How do you identify and eliminate flaky unit tests in CI pipelines?
+* How do you test transactional business logic without starting a real database?
+* How do you unit-test Spring service classes without loading the full application context?
+* How do you decide between a unit test and a slice or integration test?
+* How do you organize a large unit test suite for maintainability and execution speed?
+* How do you test error propagation across multiple layers without duplicating assertions?
+* How do you apply property-based testing to Java business logic?
+* How do you evaluate whether a unit test suite provides sufficient confidence for refactoring?

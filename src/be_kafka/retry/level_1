@@ -1,0 +1,30 @@
+* How do you implement retry topics using Spring Kafka?
+* How does the `@RetryableTopic` annotation work?
+* How do you configure the number of retry attempts using `@RetryableTopic`?
+* How do you configure fixed backoff for retry topics?
+* How do you configure exponential backoff for retry topics?
+* How do you configure retry topic names in Spring Kafka?
+* How do you configure the dead-letter topic associated with retry topics?
+* How do you handle exceptions that should not trigger retries?
+* How do you configure exception-based retry behavior?
+* What is the difference between blocking retries and non-blocking retries?
+* How do retry topics differ from `DefaultErrorHandler` retries?
+* How does Spring Kafka route a failed message to the next retry topic?
+* How are retry attempts represented in Kafka message headers?
+* How can you identify the original topic of a retried message?
+* How do you preserve message keys when publishing to retry topics?
+* How do retry topics affect consumer groups?
+* How does Spring Kafka create retry topics automatically?
+* How do you configure retry topic partitions and replication factor?
+* What happens if the retry topic has fewer partitions than the original topic?
+* How do you handle deserialization failures with retry topics?
+* How do you prevent infinite retry loops?
+* How do you handle failures while publishing to a retry topic?
+* How do you configure a custom `KafkaTemplate` for retry topic publishing?
+* How do you test retry topic behavior using Embedded Kafka or Testcontainers?
+* How do you monitor retry topic consumer lag?
+* How do retry topics affect end-to-end processing latency?
+* How can duplicate processing occur when using retry topics?
+* How do you make retry processing idempotent?
+* How do you handle poison messages using retry topics?
+* How do you replay messages from a dead-letter topic after fixing the issue?

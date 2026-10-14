@@ -1,0 +1,30 @@
+* Explain how React Hooks are associated with component instances during rendering.
+* Why must Hooks be called in the same order on every render?
+* How does React internally maintain Hook state across renders?
+* How do concurrent rendering and interrupted renders affect the design of custom Hooks?
+* How do you design a custom Hook that remains safe under concurrent rendering?
+* How does useSyncExternalStore() help prevent inconsistent external-store reads?
+* What problems can occur when an external store changes during concurrent rendering?
+* How would you design a custom Hook for subscribing to WebSocket events?
+* How would you manage subscriptions when multiple components use the same custom Hook?
+* How do you prevent stale closures without introducing unnecessary effect executions?
+* What are the trade-offs between adding dependencies, using refs, and restructuring effects?
+* How do you design a custom Hook that supports cancellation, retries, and request deduplication?
+* How would you handle race conditions when multiple asynchronous requests update the same state?
+* How do useTransition() and useDeferredValue() interact with concurrent rendering?
+* Why should useTransition() not be treated as a general-purpose network request loading mechanism?
+* How do you distinguish urgent updates from non-urgent updates in a complex interface?
+* How can excessive useMemo() and useCallback() make an application harder to maintain?
+* How do referential equality and dependency comparison affect memoization?
+* How do you design custom Hooks that avoid exposing unnecessary implementation details?
+* How do you test custom Hooks that use timers, subscriptions, and asynchronous effects?
+* How would you design a reusable state machine using useReducer() and a custom Hook?
+* How do you handle errors from asynchronous operations inside custom Hooks?
+* How do you avoid updating state after an asynchronous operation has become obsolete?
+* How would you design a usePrevious Hook that behaves correctly with objects and concurrent rendering?
+* How do you implement an external-store Hook that supports server-side rendering?
+* What are the server-rendering considerations when using useId()?
+* Why should useLayoutEffect() be used carefully in server-rendered applications?
+* How do you use useImperativeHandle() without creating tightly coupled components?
+* What are the risks of using useInsertionEffect() for ordinary application logic?
+* How would you audit a large React codebase for incorrect Hook dependencies and performance issues?

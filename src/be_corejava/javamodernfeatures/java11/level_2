@@ -1,0 +1,26 @@
+
+* Explain the architecture of the Java 11 HTTP Client API and the responsibilities of its main classes.
+* How does the Java 11 HTTP Client support HTTP/2?
+* What is the difference between HTTP/1.1 and HTTP/2 from the perspective of a Java client?
+* How does the HTTP Client handle connection reuse and connection pooling?
+* How would you configure a client for mutual TLS authentication?
+* How do you configure proxy settings and authentication for an HTTP Client?
+* How would you implement request timeouts and distinguish them from connection failures?
+* How do you handle exceptions and cancellation when using `sendAsync()`?
+* How does `CompletableFuture` integrate with asynchronous HTTP requests?
+* How would you limit the number of concurrent asynchronous HTTP requests?
+* How would you implement retries with exponential backoff when calling an unreliable external service?
+* How would you prevent duplicate HTTP requests when multiple threads request the same resource?
+* How would you process a large HTTP response body without loading the entire body into memory?
+* What are the trade-offs between `BodyHandlers.ofString()`, `ofFile()`, and `ofInputStream()`?
+* How does the HTTP Client handle redirects, and what security risks can arise when following them?
+* How would you prevent sensitive headers from being exposed when a request is redirected to another host?
+* How do Unicode whitespace rules affect `strip()` and `isBlank()` compared with legacy String methods?
+* How would you handle very large files when using `Files.readString()` or `Files.writeString()`?
+* What are the memory and performance implications of using `String.lines()` on large text content?
+* How can `Predicate.not()` improve readability in complex Stream pipelines, and when might it reduce clarity?
+* How would you use Java Flight Recorder to investigate high CPU usage, garbage collection pauses, or thread contention?
+* What is the difference between Java Flight Recorder and Java Mission Control?
+* How would you capture and analyze a JFR recording in a production environment?
+* How does Java 11 support container awareness, and what JVM settings would you examine in a containerized application?
+* What migration and compatibility issues should be considered when upgrading an enterprise application from Java 8 to Java 11?

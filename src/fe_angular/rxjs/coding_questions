@@ -1,0 +1,30 @@
+* Write an Observable that emits three values and completes.
+* Convert an array into an Observable using RxJS.
+* Create a custom Observable that emits values every second.
+* Subscribe to an Observable and handle next, error, and complete notifications.
+* Write code to unsubscribe from an Observable manually.
+* Use map() to transform an array of numbers into their squares.
+* Use filter() to return only even numbers from an Observable.
+* Use tap() to log emitted values without changing them.
+* Use take() to receive only the first three emissions.
+* Use debounceTime() to delay search input processing.
+* Use distinctUntilChanged() to ignore consecutive duplicate values.
+* Use switchMap() to call an API based on search input.
+* Use mergeMap() to process multiple API requests concurrently.
+* Use concatMap() to execute API requests sequentially.
+* Use exhaustMap() to ignore repeated clicks while a request is running.
+* Use forkJoin() to combine three HTTP requests.
+* Use combineLatest() to combine two form control value streams.
+* Use catchError() to return a fallback value when an API request fails.
+* Use retry() to retry a failed Observable a limited number of times.
+* Implement exponential backoff using retry configuration or retryWhen().
+* Use finalize() to reset a loading indicator after an API request.
+* Use takeUntil() to unsubscribe when a component is destroyed.
+* Use the async pipe to display Observable data in an Angular template.
+* Create a BehaviorSubject-based service to share user data between components.
+* Implement a search service that caches HTTP responses using shareReplay().
+* Write an RxJS polling stream that calls an API every five seconds.
+* Implement a sequential chain of HTTP requests where each request depends on the previous result.
+* Combine two Observables and emit only when both have produced values.
+* Write a custom RxJS operator that filters out null and undefined values.
+* Write a marble test for an Observable that uses debounceTime().

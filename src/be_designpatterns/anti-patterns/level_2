@@ -1,0 +1,30 @@
+* How would you detect architectural anti-patterns across a large Java monolith?
+* How would you refactor a God Object without introducing a large number of unnecessary classes?
+* How can you break circular dependencies across multiple Spring Boot modules without creating a service locator?
+* How would you identify and eliminate accidental architectural coupling between business domains?
+* How can you migrate from an anemic domain model to a behavior-rich domain model safely?
+* How would you determine whether a design is genuinely overengineered or appropriately abstracted?
+* How can excessive use of design patterns become an anti-pattern itself?
+* How would you refactor a deep inheritance hierarchy while preserving backward compatibility?
+* How can you prevent a shared utility library from becoming a dependency bottleneck?
+* How would you identify and resolve a distributed monolith in a Java microservices environment?
+* How can shared database tables create architectural coupling between services?
+* How would you eliminate synchronous service-to-service call chains that create cascading failures?
+* How can a service layer become an anti-pattern when it contains no meaningful business behavior?
+* How would you prevent the Repository pattern from becoming a generic abstraction that hides important query behavior?
+* How would you evaluate whether a generic base repository introduces more complexity than value?
+* How can excessive DTO mapping and object conversion become a maintenance anti-pattern?
+* How would you prevent exception-driven control flow from degrading performance and readability?
+* How can excessive logging or logging sensitive information become an operational anti-pattern?
+* How would you identify and remove hidden shared mutable state in a multithreaded Java application?
+* How can Singleton-based global state create concurrency and testability problems?
+* How would you refactor a transaction script that has grown into a large collection of business rules?
+* How can an overuse of interfaces make a Java codebase harder to navigate and maintain?
+* How would you eliminate feature envy across bounded contexts without creating excessive coupling?
+* How can premature optimization lead to complex algorithms that are difficult to maintain?
+* How would you prioritize anti-pattern remediation in a legacy application with limited engineering capacity?
+* How would you introduce architectural fitness functions to detect recurring anti-patterns?
+* How can mutation testing and characterization tests help validate large-scale refactoring?
+* How would you refactor an anti-pattern while multiple teams are actively modifying the same modules?
+* How would you assess the trade-offs between a complete redesign and incremental refactoring?
+* How would you establish measurable standards for preventing design anti-patterns across a development team?

@@ -1,0 +1,30 @@
+* Explain how the JavaScript event loop works.
+* What is the difference between the microtask queue and the macrotask queue?
+* What is callback hell, and why is it problematic?
+* How can callback hell be avoided?
+* Explain Promise chaining with an example.
+* What happens when a Promise is returned from a then() callback?
+* What is the difference between Promise.resolve() and Promise.reject()?
+* How does Promise.all() work?
+* What is the difference between Promise.all() and Promise.allSettled()?
+* How does Promise.race() work?
+* What is the purpose of Promise.any()?
+* What happens when one Promise fails inside Promise.all()?
+* How does error propagation work in Promise chains?
+* What is the difference between synchronous exceptions and Promise rejections?
+* How can asynchronous errors be handled using try...catch?
+* What is the difference between setTimeout(callback, 0) and executing a callback immediately?
+* What is the execution order of synchronous code, Promise callbacks, and timer callbacks?
+* How does queueMicrotask() differ from setTimeout()?
+* What is the difference between a task and a microtask?
+* How does the event loop interact with the call stack?
+* What are the limitations of using callbacks for sequential asynchronous operations?
+* How can multiple asynchronous operations be executed concurrently?
+* What is the difference between concurrent and sequential execution of Promises?
+* How can you implement a timeout for a Promise?
+* What happens if a Promise remains pending indefinitely?
+* How can asynchronous operations be cancelled using AbortController?
+* What is the difference between fetch() network errors and HTTP error responses?
+* How do you execute asynchronous operations in a specific order?
+* What are unhandled Promise rejections?
+* How can you debug asynchronous JavaScript code?

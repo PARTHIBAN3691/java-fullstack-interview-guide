@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK for Java 2.x to describe EC2 instances in a specified AWS region.
+* Write a Java program to launch an EC2 instance using the `RunInstances` API.
+* Write a Java program to start a stopped EC2 instance using `StartInstances`.
+* Write a Java program to stop an EC2 instance using `StopInstances`.
+* Write a Java program to reboot an EC2 instance using `RebootInstances`.
+* Write a Java program to terminate an EC2 instance using `TerminateInstances`, with a confirmation and safety check.
+* Write a Java program to retrieve an EC2 instance's state, instance type, private IP address, and public IP address.
+* Write a Java program to create an EC2 security group and configure inbound rules using AWS SDK for Java 2.x.
+* Write a Java program to create an EBS volume and attach it to an EC2 instance.
+* Write a Java program to retrieve CloudWatch CPU utilization metrics for a specific EC2 instance.
+* Write a Java program to identify stopped EC2 instances and report their attached EBS volumes.
+* Write a Java program to identify EC2 instances that do not have mandatory environment and owner tags.
+* Write a Java program to retrieve EC2 instance metadata using IMDSv2 from an application running on the instance.
+* Write a Java program to retrieve EC2 instance details across multiple AWS regions.
+* Write a Java program to create an AMI from an EC2 instance and monitor the image creation status.
+* Write a Java program to list EC2 instances belonging to a specified Auto Scaling group.
+* Write a Java program to retrieve EC2 instance status checks and report instances that are impaired.
+* Write a Java program to publish a custom application health metric to CloudWatch from a Java service running on EC2.
+* Write a Spring Boot service that exposes application health information and integrates with an EC2 deployment health-check process.
+* Design and implement an automated EC2 inventory and monitoring service using Spring Boot and AWS SDK for Java 2.x, including region-based discovery, tag validation, CloudWatch metrics, exception handling, and unit tests.

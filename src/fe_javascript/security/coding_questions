@@ -1,0 +1,30 @@
+* Write a JavaScript function that validates an email address without relying only on frontend validation.
+* Implement a function that safely renders untrusted text without interpreting it as HTML.
+* Replace unsafe innerHTML usage with a secure DOM manipulation approach.
+* Write a function that validates a redirect URL against an allowlist of trusted destinations.
+* Implement a helper that safely checks whether an object owns a given property.
+* Write a function that merges two objects while preventing prototype pollution.
+* Implement a function that validates required fields in an API request payload.
+* Write a function that removes sensitive fields from an object before logging it.
+* Implement a secure error handler that returns generic messages to users.
+* Write a function that validates an HTTPS URL against an approved hostname list.
+* Demonstrate how to set and read a cookie with Secure and SameSite attributes.
+* Write frontend code that sends an API request with credentials while handling errors safely.
+* Implement a postMessage listener that validates the sender's origin and message structure.
+* Write a function that validates a JWT's structure before sending it to a backend for verification.
+* Explain why decoding a JWT in JavaScript is not sufficient to authenticate a user, and implement a safe frontend handling example.
+* Write a function that validates file type and size before uploading a file.
+* Implement a function that rejects unexpected properties in an untrusted JSON object.
+* Write a function that safely parses JSON and handles malformed input.
+* Demonstrate how to avoid using eval() when processing JSON data.
+* Write code that checks for missing security-related cookie attributes in a test environment.
+* Implement a frontend API client that avoids exposing secret keys and handles authentication failures.
+* Write a function that validates user input using an allowlist of permitted values.
+* Implement a rate-limiting example for a Node.js API endpoint.
+* Write middleware that enforces authorization for a protected API route.
+* Demonstrate how to configure a basic Content Security Policy using HTTP response headers.
+* Write a test that detects unexpected inherited properties in an object.
+* Implement a safe function that constructs query parameters using URLSearchParams.
+* Write a function that prevents sensitive values from being included in application URLs.
+* Create automated tests for an XSS prevention utility using malicious input examples.
+* Write a security checklist script that checks JavaScript project dependencies for known vulnerabilities.

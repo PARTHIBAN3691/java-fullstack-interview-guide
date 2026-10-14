@@ -1,0 +1,30 @@
+* Write a Java utility that checks whether a configured directory exists and is readable and writable.
+* Write a Java program that creates a directory for application-generated files when it does not exist.
+* Implement a Spring Boot service that stores uploaded files in a configurable directory mounted through a Docker volume.
+* Write a Spring Boot REST endpoint that uploads a file and returns its storage location and metadata.
+* Implement a file-download endpoint that retrieves a document from a persistent storage directory.
+* Write a Java utility that lists files in a storage directory and calculates their total size.
+* Implement a scheduled Spring Boot task that deletes files older than a configurable retention period.
+* Write a Java program that calculates disk usage for a configured application data directory and reports when a threshold is exceeded.
+* Implement a Spring Boot health indicator that verifies the application's required storage directory is accessible and writable.
+* Write a Java utility that validates required storage paths during application startup and reports actionable configuration errors.
+* Implement a Spring Boot service that writes a file to a temporary location and atomically moves it to the target directory.
+* Write a Java program that copies files from one directory to another while preserving relative paths and reporting failures.
+* Implement a Java utility that compares two directory trees and identifies missing files and size differences.
+* Write a Java program that generates a manifest containing file names, sizes, and SHA-256 checksums for backup verification.
+* Implement a Java utility that verifies a backup archive against a generated checksum manifest.
+* Write a Spring Boot scheduled task that creates a compressed archive of application-generated files and records the backup result.
+* Implement a Java program that restores files from a backup archive while preventing path traversal and unsafe file extraction.
+* Write a Spring Boot service that migrates files from one configured storage directory to another and verifies file checksums after copying.
+* Implement a Java file-storage abstraction with separate implementations for local filesystem storage and object storage.
+* Write a Spring Boot configuration class that loads storage paths and retention settings from externalized configuration.
+* Implement a Java utility that checks whether a storage directory has sufficient free space before accepting a large file upload.
+* Write a Spring Boot endpoint that reports storage health, available space, total file count, and the timestamp of the last successful backup.
+* Implement a Java service that generates unique file names to prevent collisions when multiple requests upload files concurrently.
+* Write a Java program that safely handles concurrent writes to a shared directory and prevents partially written files from being exposed.
+* Implement a Spring Boot file-upload service that enforces maximum file size, allowed file types, and safe file names.
+* Write a Java utility that detects stale temporary files and removes them without deleting files currently in use.
+* Implement a Spring Boot integration test that verifies uploaded files remain available after the application service is restarted while using persistent storage.
+* Write a Testcontainers integration test that verifies PostgreSQL records survive container recreation when the test environment uses a persistent data volume.
+* Implement a Java diagnostic utility that collects filesystem capacity, directory permissions, file counts, and recent I/O errors into a report.
+* Write an automated test that simulates a storage write failure and verifies that the Spring Boot application returns a controlled error without losing existing data.

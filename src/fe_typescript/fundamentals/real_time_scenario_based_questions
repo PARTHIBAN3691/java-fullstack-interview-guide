@@ -1,0 +1,30 @@
+* You are starting a new enterprise application. How would you introduce TypeScript and configure the project?
+* Your JavaScript application frequently encounters undefined property errors. How would TypeScript help prevent them?
+* Your team uses any extensively, reducing type safety. How would you gradually replace any with safer types?
+* An API returns inconsistent response structures. How would you model the response using interfaces and union types?
+* Your application accepts configuration objects with optional fields. How would you define and validate their types?
+* A developer uses type assertions to suppress compiler errors. How would you determine whether the assertions are safe?
+* Your project has many nullable fields. How would you configure and use strictNullChecks effectively?
+* You need to model different user roles with role-specific properties. How would you use literal types and discriminated unions?
+* Your application supports multiple payment methods with different payload structures. How would you represent them in TypeScript?
+* Your API response contains a success flag and either data or an error. How would you design a type-safe response model?
+* Your team needs shared type definitions between frontend and backend applications. How would you organize and maintain them?
+* A third-party JavaScript library has no TypeScript definitions. How would you integrate it safely?
+* Your application uses configuration values that must retain their exact literal types. How would you use as const and satisfies?
+* A developer defines the same interface in multiple modules. How would you handle declaration merging and avoid unintended changes?
+* You need to ensure all possible status values are handled in a switch statement. How would you implement exhaustive checking?
+* Your application receives unknown JSON data from an external service. How would you validate it before accessing its properties?
+* A large object contains nested properties that should be immutable. How would you model deep readonly behavior?
+* You need a function that accepts only objects containing a specific key. How would you use generics and keyof?
+* Your team wants to prevent invalid combinations of properties in component configuration objects. How would you model the types?
+* A JavaScript application is being migrated incrementally to TypeScript. How would you manage JavaScript files and type checking?
+* Your code compiles successfully, but production still encounters invalid data. Why does this happen, and how would you prevent it?
+* A function returns different object structures depending on an input parameter. How would you preserve the relationship between input and output types?
+* Your application requires environment variables to be strongly typed. How would you validate and expose them safely?
+* Your team wants to reduce duplicated type definitions across multiple interfaces. Which TypeScript features would you use?
+* A property exists at runtime but TypeScript reports that it does not exist on the declared type. How would you investigate the issue?
+* Your project has inconsistent compiler settings across developers' machines. How would you standardize the configuration?
+* You need to represent a domain model with mutually exclusive states. How would you use discriminated unions to prevent invalid states?
+* Your application uses data from local storage, which may be missing or malformed. How would you type and validate it?
+* Your team wants to introduce stricter TypeScript rules without blocking all development. What migration strategy would you follow?
+* How would you design a reusable TypeScript type system for a large application with multiple modules and shared domain models?

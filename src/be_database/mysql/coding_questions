@@ -1,0 +1,30 @@
+* Write a Java JDBC program to connect to MySQL and retrieve all records from a customer table.
+* Implement CRUD operations using JDBC and PreparedStatement.
+* Write a Java method that inserts a record using PreparedStatement and returns the generated primary key.
+* Implement batch inserts using JDBC to improve the performance of bulk data ingestion.
+* Write a Java program that executes a transaction involving multiple SQL statements and rolls back on failure.
+* Create a Spring Boot REST API that performs CRUD operations using Spring Data JPA and MySQL.
+* Create a JPA entity with primary key generation, column constraints, and appropriate data types.
+* Implement a one-to-many relationship between Customer and Order entities using JPA.
+* Write a Spring Data JPA repository query that retrieves orders by customer ID and status.
+* Implement a native SQL query in Spring Data JPA and map the results to a DTO.
+* Write a SQL query to retrieve the second-highest salary from an Employee table.
+* Write a SQL query to find duplicate records based on selected columns.
+* Write a SQL query to identify customers who have never placed an order.
+* Write a SQL query to calculate monthly sales totals and rank customers by revenue using window functions.
+* Write a SQL query using a CTE to find employees whose salaries exceed their department's average.
+* Design a composite index for a query that filters by customer ID and date, then sorts by date.
+* Write a Java program that uses EXPLAIN output to help diagnose a slow SQL query.
+* Implement optimistic locking in Spring Boot using a JPA @Version field.
+* Implement pessimistic locking for a critical inventory update using Spring Data JPA.
+* Write a service method that transfers funds between two accounts within a single @Transactional method.
+* Implement a concurrency-safe inventory update that prevents stock from becoming negative.
+* Write a Java service that handles deadlock exceptions and retries the transaction with bounded backoff.
+* Configure HikariCP in Spring Boot and implement monitoring for active, idle, and pending database connections.
+* Create a JUnit integration test that verifies transaction rollback when a service operation fails.
+* Implement keyset pagination in a Spring Boot API backed by MySQL.
+* Write a Java program that performs bulk updates in controlled batches to minimize lock contention.
+* Implement centralized exception handling for SQL constraint violations, connection failures, and transaction timeouts.
+* Write a database migration script that adds an index and a new column while preserving existing data.
+* Create an integration test using Testcontainers to verify MySQL-specific SQL behavior.
+* Design and implement a high-throughput order-processing module using Java, Spring Boot, MySQL transactions, indexes, and concurrency control.

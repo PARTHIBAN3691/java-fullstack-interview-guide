@@ -1,0 +1,15 @@
+* A service calls three downstream APIs, and the second API fails. How would you handle the exception and preserve the original cause?
+* A database operation fails after some records have been processed. How would you handle the exception and ensure transaction consistency?
+* A file-processing application must close a file even when parsing fails. How would you implement exception handling?
+* A resource-closing operation throws an exception while another exception is already being propagated. How would you investigate the resulting exception?
+* An application logs an exception but continues processing with invalid data. How would you identify and fix the problem?
+* A custom exception is being caught by a generic `Exception` handler before its specific handler. What is wrong with the implementation?
+* A REST API exposes internal stack traces to clients. How would you redesign exception handling?
+* A batch job processes thousands of records, and a few records contain invalid data. How would you handle failures without unnecessarily stopping the entire job?
+* A payment service times out after submitting a payment request. How would you handle the exception without accidentally processing the payment twice?
+* A method throws a checked exception, but several callers do not know how to recover from it. How would you redesign the API?
+* A scheduled job fails intermittently, and the exception is swallowed by a broad catch block. How would you diagnose and prevent recurrence?
+* A `finally` block throws an exception and hides the original failure. How would you correct the implementation?
+* A parallel stream fails while processing one element. How would you handle the failure and determine which element caused it?
+* A `CompletableFuture` pipeline fails, but the error is not visible in the final application logs. How would you investigate it?
+* A production application has frequent `NullPointerException` errors. How would you identify their root causes and prevent them systematically?

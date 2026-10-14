@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of schema registration, serialization, publication, retrieval, and deserialization.
+* How does Schema Registry maintain schema versions and schema IDs?
+* How does a Kafka consumer resolve a writer schema against its reader schema?
+* How does Avro schema resolution work when fields are added, removed, or changed?
+* How do reader schemas and writer schemas differ?
+* How would you design schema evolution for a large microservices platform with independently deployed producers and consumers?
+* How would you choose between backward, forward, and full compatibility for a production event platform?
+* What is the difference between transitive and non-transitive compatibility?
+* Why can a schema be compatible with the previous version but incompatible with an older version?
+* How would you handle a breaking schema change when multiple consumer versions are running simultaneously?
+* How would you migrate an event from JSON to Avro without disrupting existing consumers?
+* How would you migrate from Avro to Protobuf while preserving compatibility and data accessibility?
+* How does Schema Registry's subject naming strategy influence compatibility boundaries?
+* How would you share a schema across multiple topics while avoiding unintended compatibility conflicts?
+* What are the risks of using `TopicNameStrategy` when a topic contains multiple record types?
+* How would you design schemas for events that contain optional, nullable, and evolving business fields?
+* How would you handle enum evolution when a producer introduces a new enum value?
+* How do Avro union types affect schema evolution and deserialization?
+* How would you handle logical types such as timestamps, decimals, and dates in Avro?
+* How does Schema Registry cache schemas, and how can caching affect performance?
+* What happens when Schema Registry becomes unavailable while producers are publishing messages?
+* How would you design Schema Registry for high availability and disaster recovery?
+* How would you secure Schema Registry using authentication, authorization, and TLS?
+* How would you manage schema ownership and governance across hundreds of microservices?
+* How would you prevent accidental registration of incompatible schemas in a CI/CD pipeline?
+* How would you manage schema deletion, soft deletion, and version recovery safely?
+* How would you investigate schema ID mismatches across different environments?
+* How would you optimize Kafka serialization and deserialization for high-throughput applications?
+* What are the trade-offs between Avro, Protobuf, and JSON Schema for a financial event platform?
+* How would you design a schema migration strategy that supports rolling deployments and rollback?

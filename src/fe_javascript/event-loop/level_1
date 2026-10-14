@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of an asynchronous callback in JavaScript.
+* How does the event loop coordinate the call stack, task queue, and microtask queue?
+* What is the difference between the microtask queue and the task queue?
+* Why do Promise callbacks execute before setTimeout callbacks in common examples?
+* What is the execution order of synchronous code, Promise.then(), and setTimeout()?
+* How does the event loop handle nested setTimeout() calls?
+* Why can setTimeout() execute later than its specified delay?
+* How does setInterval() behave when its callback takes longer than the interval?
+* What happens when multiple Promise callbacks are queued?
+* How does queueMicrotask() differ from setTimeout(callback, 0)?
+* What happens when a Promise is resolved inside a setTimeout callback?
+* How does async/await affect the execution order of code?
+* What happens when an async function encounters an await expression?
+* How does the event loop handle a rejected Promise?
+* What is the difference between Promise.then() and queueMicrotask()?
+* How can synchronous code block the event loop?
+* What is a long-running task, and how does it affect application responsiveness?
+* What is the relationship between the event loop and browser rendering?
+* When does the browser typically get an opportunity to render a frame?
+* How do DOM events enter the event loop?
+* How does the event loop handle user interactions such as clicks and keyboard events?
+* What is the difference between tasks and rendering opportunities?
+* How does Node.js use an event loop?
+* How does the browser event loop differ from the Node.js event loop?
+* What is the role of setImmediate() in Node.js?
+* What is the difference between process.nextTick() and Promise microtasks in Node.js?
+* How can recursive microtasks delay other tasks?
+* What is event loop starvation?
+* How can Web Workers help with CPU-intensive operations?
+* How can you debug unexpected asynchronous execution order?

@@ -1,0 +1,97 @@
+**Artificial Intelligence (AI) Fundamentals**
+* Implement a simple rule-based decision engine and compare its outputs with a basic data-driven prediction function.
+* Build a small Python program that loads a dataset, checks missing values, summarizes feature types, and reports data-quality issues.
+* Implement a reusable evaluation pipeline that accepts model predictions and actual values and produces a structured metrics report.
+* Create a small AI application prototype that separates data preparation, model execution, output validation, and error handling.
+
+**Types of AI: Narrow AI, General AI, and Superintelligence**
+* Implement a simple narrow-AI classifier that categorizes incoming support tickets into predefined categories.
+* Build a program that evaluates a model across several predefined task types and reports its task-specific performance.
+* Create a benchmark runner that executes a collection of tasks against an AI system and records accuracy, failures, latency, and resource usage.
+* Implement a capability-report generator that distinguishes measured benchmark results from unsupported claims about broader intelligence.
+
+**Generative AI vs Traditional AI**
+* Implement a text-classification pipeline using a traditional Machine Learning model and compare its predictions with a generative-model interface.
+* Build a document-processing function that extracts structured fields and validates them against a predefined schema.
+* Implement an output validator that rejects malformed JSON, missing mandatory fields, and invalid data types from a generative model.
+* Write a comparison harness that measures accuracy, latency, failure rate, and estimated cost for two alternative AI approaches.
+
+**Machine Learning Fundamentals**
+* Implement a data-preprocessing pipeline that handles missing values, categorical features, numerical scaling, and train-test splitting.
+* Build a reusable function to detect duplicate records, missing values, and suspicious target leakage in a dataset.
+* Implement a cross-validation workflow and compare average model performance across folds.
+* Create a program that generates learning curves and identifies potential overfitting or underfitting.
+* Implement a reproducible training pipeline that records random seeds, model parameters, dataset versions, and evaluation results.
+
+**Supervised Learning**
+* Build a binary classification model to predict customer churn and evaluate precision, recall, F1-score, and confusion matrix.
+* Implement a regression model that predicts sales and reports MAE, MSE, RMSE, and \(R^2\).
+* Write a function that calculates precision, recall, and F1-score from true positives, false positives, and false negatives.
+* Implement a classification threshold tuner that selects a threshold according to a configurable false-positive and false-negative cost.
+* Build a training pipeline that handles class imbalance and compares class weighting with resampling.
+
+**Unsupervised Learning**
+* Implement K-means clustering on a sample customer dataset and summarize each cluster's characteristics.
+* Write a program that compares clustering quality for multiple values of K using the silhouette score.
+* Implement a dimensionality-reduction pipeline using PCA and report explained variance.
+* Build an anomaly-detection prototype and rank records by anomaly score.
+* Create a cluster-stability test that compares cluster assignments across multiple random seeds or data samples.
+
+**Reinforcement Learning**
+* Implement a simple grid-world environment with states, actions, rewards, and terminal conditions.
+* Build a tabular Q-learning agent that learns a policy in a small discrete environment.
+* Write a program that tracks cumulative rewards and compares exploration strategies across multiple runs.
+* Implement a configurable reward function and test how reward changes influence the learned policy.
+* Create a safety wrapper that rejects actions violating predefined environment constraints.
+
+**Deep Learning Fundamentals**
+* Implement a small neural network using a Deep Learning framework to classify a sample dataset.
+* Write a training loop that records training loss, validation loss, and validation metrics for every epoch.
+* Implement early stopping based on validation loss and restore the best-performing model checkpoint.
+* Build a comparison experiment using a traditional Machine Learning model and a neural network on the same dataset.
+* Implement a benchmark that measures training duration, inference latency, memory use, and prediction quality.
+
+**Neural Networks**
+* Implement a feedforward neural network with configurable input, hidden, and output layer sizes.
+* Write a program that demonstrates forward propagation for a small network and computes its output probabilities.
+* Implement a training loop that records gradient norms and detects NaN or infinite values.
+* Compare ReLU, sigmoid, and tanh activation functions on the same classification problem.
+* Implement a prediction function that returns both class probabilities and the selected class label.
+
+**Natural Language Processing (NLP)**
+* Build a text-preprocessing pipeline that performs tokenization, normalization, and configurable stop-word removal.
+* Implement a text classifier for sentiment analysis and evaluate it using a labeled test dataset.
+* Build a Named Entity Recognition evaluation function that compares predicted entities with ground-truth spans.
+* Implement semantic text similarity using embeddings and cosine similarity.
+* Create a document-search prototype that compares keyword-based retrieval with embedding-based retrieval.
+
+**Computer Vision**
+* Implement an image-classification pipeline that loads images, applies preprocessing, and produces class predictions.
+* Write a program that performs image augmentation and compares model performance with and without augmentation.
+* Implement Intersection over Union for two bounding boxes.
+* Build an evaluation function that calculates precision and recall for object-detection predictions at a configurable IoU threshold.
+* Create an image-inference API that validates image format, dimensions, file size, and model output.
+
+**Speech Recognition and Audio AI**
+* Implement an audio preprocessing pipeline that loads an audio file, resamples it, and normalizes its waveform.
+* Build a speech-to-text wrapper that handles empty audio, model errors, timeouts, and malformed transcripts.
+* Implement a function to calculate Word Error Rate from a reference transcript and a predicted transcript.
+* Write a program that segments long audio into chunks and combines partial transcription results.
+* Create an evaluation report that compares speech recognition performance across different noise levels or language groups.
+
+**AI Model Training, Validation, and Inference**
+* Implement a training pipeline that separates training, validation, and test datasets without data leakage.
+* Build a model artifact workflow that saves the trained model, preprocessing configuration, metadata, and evaluation metrics.
+* Create a prediction API that loads a model once, validates incoming requests, and returns structured inference results.
+* Implement batch inference with configurable batch size and compare throughput with individual predictions.
+* Write a test that verifies training-time and inference-time preprocessing produce consistent features.
+* Build a simple canary evaluation tool that compares predictions and latency from two model versions.
+
+**AI Evaluation Metrics**
+* Implement functions to calculate accuracy, precision, recall, F1-score, and a confusion matrix without using a high-level metrics library.
+* Write a regression evaluation module that calculates MAE, MSE, RMSE, and \(R^2\).
+* Implement ROC curve and precision-recall curve calculations for binary classification predictions.
+* Build a metric-reporting tool that evaluates performance separately for different customer segments.
+* Create a threshold-selection function that minimizes a configurable business cost matrix.
+* Implement a bootstrap evaluation script that estimates confidence intervals for a model metric.
+* Build a model comparison utility that checks metric improvements against predefined acceptance criteria.

@@ -1,0 +1,30 @@
+* Explain how Docker uses Linux namespaces and control groups to isolate containers.
+* How does Docker differ from a virtual machine at the operating-system and kernel levels?
+* How do Docker's layered filesystems work, and how do they affect image size and performance?
+* How would you optimize a Docker build for a large Spring Boot microservice?
+* How would you design a multi-stage Docker build for a production Java application?
+* How do JVM memory settings interact with Docker container memory limits?
+* How would you investigate a Java container that is repeatedly killed with exit code 137?
+* How would you distinguish a Java heap memory leak from native memory exhaustion in a container?
+* How would you troubleshoot CPU throttling and poor throughput in a containerized Java service?
+* How would you design networking for multiple Java microservices running on Docker?
+* How would you secure communication between containers on the same host?
+* How would you manage persistent state for containerized database services?
+* How would you implement graceful shutdown for Java containers during deployments?
+* How do Docker stop signals and stop timeouts affect in-flight HTTP requests?
+* How would you design reliable health checks for applications with slow startup times?
+* How would you prevent secrets from leaking into Docker image layers or build history?
+* How would you minimize the attack surface of a production Docker image?
+* How would you scan images for vulnerabilities and maintain secure base images?
+* How would you make Docker builds reproducible across different CI/CD environments?
+* How would you manage immutable image tags and support reliable rollbacks?
+* How would you troubleshoot DNS resolution failures between containers?
+* How would you investigate storage exhaustion caused by image layers, logs, or volumes?
+* How would you design backup and recovery for persistent data used by containers?
+* How would you handle certificate and trust-store configuration for Java containers?
+* How would you troubleshoot a container that works on one machine but fails on another?
+* How would you design resource allocation for multiple containers sharing a production host?
+* How would you capture heap dumps and thread dumps from a running production container?
+* How would you evaluate Docker Compose versus Kubernetes for a growing microservices application?
+* How would you integrate image scanning, signing, and provenance verification into a CI/CD pipeline?
+* How would you assess the security, performance, reliability, and maintainability of a containerized Java platform?

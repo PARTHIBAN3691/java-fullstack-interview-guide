@@ -1,0 +1,36 @@
+
+* Write a Java 11 program to check whether a string is blank using `isBlank()`.
+* Write a Java 11 program to compare `isBlank()` and `isEmpty()` using different input strings.
+* Write a Java 11 program to demonstrate the difference between `trim()` and `strip()`.
+* Write a Java 11 program to remove leading whitespace using `stripLeading()`.
+* Write a Java 11 program to remove trailing whitespace using `stripTrailing()`.
+* Write a Java 11 program to split a multiline String into lines using `String.lines()`.
+* Write a Java 11 program to count the number of lines in a multiline String using `lines()`.
+* Write a Java 11 program to print only non-empty lines from a multiline String.
+* Write a Java 11 program to generate a string containing a specified character repeated 50 times.
+* Write a Java 11 program to demonstrate the behavior of `String.repeat()` for zero and negative repetition counts.
+* Write a Java 11 program to read a UTF-8 text file using `Files.readString()`.
+* Write a Java 11 program to write text to a file using `Files.writeString()`.
+* Write a Java 11 program to append a line to an existing file using `Files.writeString()` and `StandardOpenOption.APPEND`.
+* Write a Java 11 program to read a file and count the occurrences of a specified word.
+* Write a Java 11 program to filter blank strings from a list using `Predicate.not()` and Streams.
+* Write a Java 11 program to filter non-null values using `Predicate.not()` and `Objects::isNull`.
+* Write a Java 11 program to demonstrate `Optional.isEmpty()` with present and empty values.
+* Write a Java 11 program to convert a list of objects into an array using `Collection.toArray(IntFunction)`.
+* Write a Java 11 program to create an HTTP GET request using `HttpClient`, `HttpRequest`, and `HttpResponse`.
+* Write a Java 11 program to configure a connection timeout for an HTTP Client.
+* Write a Java 11 program to send an HTTP GET request and print the response status code and body.
+* Write a Java 11 program to send an HTTP POST request containing a JSON payload.
+* Write a Java 11 program to add custom headers to an HTTP request.
+* Write a Java 11 program to configure redirect handling using `HttpClient.Redirect`.
+* Write a Java 11 program to send an asynchronous HTTP request using `sendAsync()` and `BodyHandlers.ofString()`.
+* Write a Java 11 program to make two HTTP requests concurrently and combine their results using `CompletableFuture`.
+* Write a Java 11 program to handle exceptions from an asynchronous HTTP request using `CompletableFuture`.
+* Write a Java 11 program to save an HTTP response body directly to a file using `BodyHandlers.ofFile()`.
+* Write a Java 11 program to configure an HTTP Client with a proxy selector.
+* Write a Java 11 program to configure an HTTP Client with a custom SSL context.
+* Write a Java 11 program to demonstrate launching a single Java source file directly from the command line.
+* Write a Java 11 program to use Java Flight Recorder APIs to start and stop a recording and save it to a file.
+* Write a Java 11 program to capture and report basic runtime memory information while processing data.
+* Write a Java 11 program to process a multiline String, remove blank lines, strip whitespace, and return the cleaned lines.
+* Write a Java 11 program to implement an HTTP request retry mechanism for selected transient failures using `CompletableFuture`.

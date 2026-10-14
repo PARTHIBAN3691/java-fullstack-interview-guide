@@ -1,0 +1,20 @@
+* How would you design a secure, scalable S3 architecture for a Java microservices platform handling millions of files?
+* How would you implement multipart uploads for multi-gigabyte files while controlling memory usage and network retries?
+* How would you design a file-upload service that supports resumable uploads and avoids duplicate object creation?
+* How would you prevent accidental data deletion using versioning, lifecycle policies, Object Lock, and restricted IAM permissions?
+* How would you design a cross-account S3 access model using IAM roles, bucket policies, and KMS key policies?
+* How would you implement cross-Region replication and validate recovery after a regional outage?
+* How would you design S3 event processing to handle duplicate notifications, out-of-order events, retries, and failed processing?
+* How would you prevent a Java application from exposing private S3 objects through insecure pre-signed URLs?
+* How would you choose between S3 Standard, Intelligent-Tiering, Standard-IA, and Glacier storage classes based on access patterns?
+* How would you optimize S3 costs for a system storing billions of objects of different sizes and retention requirements?
+* How would you design encryption and key rotation for highly sensitive S3 data using AWS KMS?
+* How would you troubleshoot high latency or throughput bottlenecks during concurrent S3 uploads and downloads?
+* How would you design a data lake using S3 prefixes, partitioning, lifecycle rules, and catalog integration?
+* How would you securely serve S3-hosted content through CloudFront while preventing direct public bucket access?
+* How would you implement resumable file transfers and retry-safe multipart upload recovery in Java?
+* How would you handle S3 consistency, object versioning, and concurrent writes when multiple services update the same logical file?
+* How would you design a malware-scanning pipeline for files uploaded to S3 before allowing downstream processing?
+* How would you migrate terabytes of objects from another storage platform to S3 while preserving metadata, permissions, and integrity?
+* How would you validate object integrity using checksums, multipart-upload metadata, and application-level verification?
+* How would you audit S3 access across hundreds of AWS accounts and detect suspicious downloads, public exposure, or unauthorized changes?

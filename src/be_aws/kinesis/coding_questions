@@ -1,0 +1,20 @@
+* Write a Java program using AWS SDK v2 to create a Kinesis Data Stream.
+* Write a Java program that describes a Kinesis stream and displays its shard information.
+* Write a Java producer that publishes a single JSON event using `PutRecord`.
+* Write a Java producer that publishes multiple events using `PutRecords`.
+* Write a Java program that handles partial failures from `PutRecords` and retries only failed records.
+* Write a Java program that generates partition keys based on customer IDs to preserve per-customer ordering.
+* Write a Java consumer using `GetShardIterator` and `GetRecords` to read records from a shard.
+* Write a Java program that decodes Kinesis record data from Base64 and parses the resulting JSON.
+* Write a Java consumer that continuously polls a stream while handling throttling and expired shard iterators.
+* Write a Java program that checkpoints processed records using the Kinesis Client Library.
+* Write a KCL-based Java application that processes records concurrently across multiple shards.
+* Write a Java program that implements idempotent event processing using an event ID and a deduplication store.
+* Write a Java producer that uses asynchronous AWS SDK v2 clients to publish events without blocking the main thread.
+* Write a Java utility that batches records while respecting the Kinesis API's record-count and payload-size limits.
+* Write a Java program that measures publishing throughput, latency, and failed-record rates.
+* Write a Java program that detects and reports records with invalid JSON payloads.
+* Write a Java Lambda handler that processes Kinesis event batches and handles partial batch failures.
+* Write a Java program that queries CloudWatch metrics to monitor incoming records, write throttling, and consumer lag.
+* Write a Java integration test that verifies records published to a test stream can be consumed and validated.
+* Design a Java-based streaming application that ingests order events, processes them idempotently, handles retries, checkpoints progress, and persists results to a database.

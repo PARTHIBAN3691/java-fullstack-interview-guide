@@ -1,0 +1,30 @@
+* Explain the complete event loop execution model in modern JavaScript runtimes.
+* How does the event loop differ between browsers and Node.js?
+* What is the difference between the JavaScript execution context and the event loop?
+* Explain microtask starvation and how it can affect application performance.
+* What happens when a microtask schedules another microtask?
+* How does Promise assimilation work when resolving a Promise with another Promise?
+* What happens when a thenable object is returned from a Promise callback?
+* Explain the difference between Promise settlement and Promise fulfillment.
+* How would you implement a custom Promise-like abstraction?
+* How does Promise chaining propagate values and errors?
+* What are the limitations of Promise.race() when implementing timeouts?
+* How would you implement cancellation for a group of asynchronous operations?
+* How can you limit the number of concurrently executing asynchronous tasks?
+* How would you implement a Promise pool?
+* What is backpressure in asynchronous processing?
+* How can asynchronous operations be coordinated without creating memory leaks?
+* How would you handle race conditions in asynchronous JavaScript?
+* What is the difference between logical concurrency and parallel execution?
+* How do Web Workers help with CPU-intensive tasks?
+* Why does using async callbacks not automatically make CPU-intensive work non-blocking?
+* How would you design a retry mechanism with exponential backoff?
+* How can you prevent duplicate asynchronous requests?
+* How would you implement request deduplication for concurrent API calls?
+* How can you ensure that stale asynchronous responses do not overwrite newer results?
+* How do unhandled rejections behave in different JavaScript runtimes?
+* How would you design a robust asynchronous task scheduler?
+* How can resource cleanup be guaranteed when asynchronous operations fail or are cancelled?
+* What are the risks of recursively scheduling microtasks?
+* How would you measure and improve event-loop latency?
+* How would you design a fault-tolerant asynchronous workflow involving multiple services?

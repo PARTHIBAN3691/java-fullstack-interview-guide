@@ -1,0 +1,30 @@
+* Explain how React internally associates Hook state with a component.
+* Why must Hooks be called in the same order on every render?
+* What happens if the order of Hook calls changes between renders?
+* Explain closure behavior and state snapshots in React Hooks.
+* How does automatic batching affect state updates in modern React?
+* What is the difference between React 18 and React 19 Hook-related features?
+* How do concurrent rendering and Hooks interact?
+* What problems can occur when side effects are performed during rendering?
+* How do you design a custom Hook that avoids stale data and race conditions?
+* How do you handle race conditions in asynchronous useEffect operations?
+* How can you prevent state updates from outdated API responses?
+* How do you implement a reusable debounce Hook?
+* How do you implement a reusable throttle Hook?
+* How would you build a custom Hook for polling an API?
+* How would you implement an outside-click detection Hook?
+* How do you build a custom Hook that synchronizes state with localStorage?
+* What challenges arise when using browser APIs inside Hooks during server-side rendering?
+* How do you use useSyncExternalStore to subscribe to external state?
+* When would you use useTransition instead of managing loading state manually?
+* What is the purpose of useDeferredValue?
+* How does useTransition differ from useDeferredValue?
+* How do you use useOptimistic for optimistic UI updates?
+* How do you use useActionState in React 19?
+* What is the purpose of the use Hook in React 19, and how does it differ from traditional Hooks?
+* How do you prevent infinite render loops caused by Hook dependencies?
+* How do you reason about referential equality in dependency arrays?
+* How can incorrect memoization introduce bugs?
+* How do you design custom Hooks that remain safe under concurrent rendering?
+* How do you handle subscriptions and cleanup correctly in custom Hooks?
+* How would you profile and optimize a component that uses many Hooks?

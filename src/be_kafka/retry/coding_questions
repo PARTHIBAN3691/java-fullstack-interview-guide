@@ -1,0 +1,30 @@
+* Write a Spring Boot Kafka consumer that retries failed message processing.
+* Write a Spring Kafka consumer using `@RetryableTopic` with a maximum of three attempts.
+* Write a Spring Kafka consumer with fixed backoff between retry attempts.
+* Write a Spring Kafka consumer with exponential backoff for retry topics.
+* Write a Spring Kafka consumer with custom retry topic names.
+* Write a Spring Kafka consumer with a custom dead-letter topic name.
+* Write a Spring Kafka consumer that uses `@DltHandler` to process dead-letter messages.
+* Write Java code to classify exceptions as retryable and non-retryable.
+* Write a Spring Kafka consumer that retries database timeout exceptions but does not retry validation exceptions.
+* Write a Kafka consumer using `DefaultErrorHandler` with a bounded retry policy.
+* Write Java code to configure `DeadLetterPublishingRecoverer` for failed records.
+* Write a Spring Boot configuration that routes failed records to retry topics based on exception type.
+* Write a Kafka consumer that logs retry attempt counts and original topic metadata.
+* Write Java code to extract retry-related headers from a Kafka record.
+* Write a Spring Kafka consumer that preserves the message key when publishing to a retry topic.
+* Write Java code to implement exponential backoff with jitter for a retry policy.
+* Write a Spring Boot Kafka application that records retry counts and retry latency using Micrometer.
+* Write a Kafka consumer that handles HTTP 429 responses using a bounded retry strategy.
+* Write Java code to prevent duplicate business processing using an idempotency key.
+* Write a Spring Boot consumer that uses an inbox table to track already-processed event IDs.
+* Write a Spring Kafka integration test that verifies the number of retry attempts.
+* Write an Embedded Kafka test that verifies successful processing after a transient failure.
+* Write a Spring Kafka test that verifies a message reaches the dead-letter topic after retries are exhausted.
+* Write a test that verifies non-retryable exceptions bypass the configured retry attempts.
+* Write Java code to replay dead-letter messages to the original topic in controlled batches.
+* Write a Spring Boot service that pauses dead-letter replay when downstream error rates exceed a threshold.
+* Write Java code to monitor retry topic consumer lag using Kafka consumer group metrics.
+* Write a Spring Kafka consumer that records the original exception and stack trace in dead-letter metadata.
+* Write an integration test that verifies retry behavior when the retry topic is temporarily unavailable.
+* Write a reusable Spring Boot retry configuration that supports different retry policies for multiple Kafka consumers.

@@ -1,0 +1,30 @@
+* An order service creates an order, but the inventory service fails before reserving stock. How would you handle the transaction?
+* A payment succeeds, but the order service times out before receiving the response. How would you prevent duplicate payment?
+* Inventory is reserved successfully, but payment authorization fails. How would you restore the inventory?
+* Payment is captured, but order confirmation fails. How would you recover the workflow?
+* A Saga orchestrator crashes after completing two steps but before recording the next step. How would you recover safely?
+* A Kafka message is delivered twice, causing the same order to be processed twice. How would you prevent duplicate business effects?
+* A service commits a database update but crashes before publishing the corresponding event. How would you avoid data inconsistency?
+* An Outbox publisher sends an event successfully but crashes before marking it as published. What happens on retry, and how would you handle it?
+* A compensation transaction fails because the dependent service is unavailable. How would you retry and monitor recovery?
+* A refund request times out, and the payment provider's actual outcome is unknown. How would you determine the final transaction state?
+* Two concurrent Sagas attempt to reserve the last available item. How would you prevent overselling?
+* A downstream service processes transaction events out of order. How would you maintain correct business state?
+* A transaction coordinator becomes unavailable while multiple distributed transactions are in progress. What happens to those transactions?
+* A database transaction succeeds, but the message broker is unavailable for several hours. How would you ensure eventual event delivery?
+* A customer cancels an order while its payment and inventory steps are still running. How would you handle cancellation safely?
+* A Saga completes payment authorization but receives a duplicate cancellation event. How would you avoid inconsistent compensation?
+* A long-running business workflow spans order, payment, shipping, and notification services. How would you design its state machine?
+* A service deployment changes an event schema while existing Saga instances are still running. How would you preserve compatibility?
+* A distributed transaction works in testing but leaves inconsistent data during production network failures. How would you diagnose it?
+* A message consumer acknowledges an event before committing its database transaction. What failure can occur, and how would you fix it?
+* A consumer commits its database transaction before acknowledging the message, then crashes. How would you prevent duplicate effects on redelivery?
+* A payment provider does not support idempotency keys. How would you reduce the risk of duplicate charges?
+* A compensation operation cannot fully reverse an external business action. How would you redesign the workflow?
+* A distributed transaction spans two databases that do not support a shared transaction coordinator. What alternatives would you consider?
+* A high-volume order system experiences increased latency because of synchronous service-to-service calls. How would you redesign the workflow?
+* A customer sees an order as successful while inventory reservation is still pending. How would you design the order status model?
+* A Saga retry policy repeatedly retries a permanent business failure. How would you distinguish transient and permanent errors?
+* A dead-letter queue accumulates failed transaction events. How would you investigate, replay, and reconcile them safely?
+* A reconciliation job finds that payment records and order records disagree. How would you repair the data without creating duplicate transactions?
+* You must design a financial workflow with auditability, recoverability, and accurate settlement. How would you combine Sagas, idempotency, reconciliation, and the Outbox pattern?

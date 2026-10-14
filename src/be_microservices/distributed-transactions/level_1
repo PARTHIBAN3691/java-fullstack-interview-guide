@@ -1,0 +1,30 @@
+* How do you implement distributed transaction management in Spring Boot microservices?
+* How does the Saga pattern coordinate transactions across multiple services?
+* What is the difference between choreography-based and orchestration-based Saga implementations?
+* How do you decide between Saga choreography and orchestration?
+* How do you implement a Saga using Spring Boot and Kafka?
+* How do you implement a Saga using RabbitMQ?
+* How do you design compensating transactions for failed business operations?
+* How do you handle a compensation failure in a Saga workflow?
+* How do you implement retries for transient failures in distributed transactions?
+* How do you prevent duplicate transaction processing when messages are delivered more than once?
+* How do you implement idempotent transaction handlers in Java?
+* How does the Transactional Outbox pattern prevent inconsistencies between database updates and message publishing?
+* What is the role of a CDC tool such as Debezium in the Outbox pattern?
+* How do you implement the Outbox pattern with Spring Boot and Kafka?
+* What is the difference between the Outbox pattern and distributed two-phase commit?
+* How do you implement the Inbox pattern for reliable message consumption?
+* How do you handle a service crash after committing a database transaction but before publishing an event?
+* How do you handle a message consumer crash after processing a message but before acknowledging it?
+* How do you maintain transaction state across multiple microservices?
+* How do you implement transaction status tracking for a long-running business workflow?
+* How do you handle timeouts when a downstream service does not respond?
+* How do you ensure that a failed order transaction does not leave inventory reserved?
+* How do you maintain consistency between order, payment, and inventory services?
+* How do you handle concurrent updates to the same business entity?
+* How do optimistic locking and pessimistic locking differ in distributed workflows?
+* How do you handle dead-letter messages in distributed transaction processing?
+* How do you monitor and trace a distributed transaction across multiple services?
+* How do you handle partial success when some services complete their operations and others fail?
+* How do you test distributed transaction workflows using integration tests?
+* How do you choose between Saga, Outbox, and two-phase commit for a business use case?

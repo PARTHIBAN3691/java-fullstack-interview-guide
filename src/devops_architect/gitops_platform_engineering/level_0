@@ -1,0 +1,122 @@
+
+**GitOps Principles**
+* What is GitOps, and what problems does it solve?
+* What are the core principles of GitOps?
+* Why is Git treated as the source of truth in a GitOps workflow?
+* What is the difference between push-based and pull-based deployment?
+* How does GitOps differ from traditional CI/CD?
+* What are the benefits of version-controlled infrastructure and application configuration?
+
+**Argo CD**
+* What is Argo CD, and why is it used in Kubernetes environments?
+* What are the main components of Argo CD?
+* What is an Argo CD Application?
+* What is the difference between an application being Synced and Healthy?
+* What is automated synchronization in Argo CD?
+* What is the purpose of Argo CD's web UI and CLI?
+
+**Flux**
+* What is Flux CD?
+* What are the main components of Flux?
+* How does Flux reconcile Git changes with a Kubernetes cluster?
+* What is the purpose of a `GitRepository` resource?
+* What is the difference between Flux and Argo CD?
+* What is reconciliation in Flux?
+
+**Declarative Infrastructure**
+* What is declarative infrastructure?
+* What is the difference between declarative and imperative infrastructure management?
+* What is Infrastructure as Code (IaC)?
+* How does declarative configuration help maintain consistency?
+* What are the benefits of storing infrastructure definitions in Git?
+* What is configuration drift?
+
+**Kubernetes GitOps**
+* How does GitOps work with Kubernetes?
+* What is a Kubernetes manifest?
+* What is a reconciliation loop?
+* How are Kubernetes Deployments and Services managed through GitOps?
+* Why should production cluster changes be traceable to Git commits?
+* How do Helm charts and Kustomize fit into Kubernetes GitOps?
+
+**Platform Engineering**
+* What is platform engineering?
+* How does platform engineering differ from DevOps?
+* Who are the main users of an internal developer platform?
+* What problems does a platform engineering team solve?
+* What is the difference between a platform team and an application development team?
+* How can platform engineering improve developer productivity?
+
+**Internal Developer Platform**
+* What is an Internal Developer Platform (IDP)?
+* What capabilities are commonly included in an IDP?
+* How does an IDP simplify application development and deployment?
+* What is the difference between an IDP and an internal developer portal?
+* Why should an IDP provide standardized infrastructure and deployment workflows?
+
+**Developer Self-Service**
+* What is developer self-service?
+* What are common examples of self-service capabilities?
+* How does self-service reduce dependency on platform teams?
+* What is the role of templates and automation in self-service?
+* How can self-service workflows enforce security and compliance?
+
+**Golden Paths**
+* What is a golden path in platform engineering?
+* Why do organizations provide golden paths instead of allowing every team to build its own workflow?
+* What is the difference between a golden path and a mandatory standard?
+* What types of application templates can be included in golden paths?
+* How do golden paths help teams adopt recommended security and observability practices?
+
+**Platform APIs**
+* What is a platform API?
+* How do platform APIs differ from application business APIs?
+* What is the purpose of an API for provisioning environments or deploying services?
+* Why should platform APIs have documented contracts and versioning?
+* How can platform APIs support automation and developer self-service?
+
+**Developer Portals**
+* What is a developer portal?
+* What information should an internal developer portal provide?
+* How does a developer portal improve service discoverability?
+* What is the difference between a developer portal and a monitoring dashboard?
+* What role do service catalogs and documentation play in a developer portal?
+
+**Backstage**
+* What is Backstage?
+* What is the Backstage Software Catalog?
+* What is a Backstage software template?
+* What is the purpose of `catalog-info.yaml`?
+* How does Backstage integrate with CI/CD and observability tools?
+* What is the difference between a Backstage plugin and a software template?
+
+**Environment Provisioning**
+* What is environment provisioning?
+* What is the difference between development, testing, staging, and production environments?
+* How can infrastructure provisioning be automated?
+* What is the purpose of reusable infrastructure modules?
+* Why should environment configuration be version controlled?
+* What is environment drift?
+
+**Self-Service Deployment**
+* What is self-service deployment?
+* How can developers deploy applications without directly accessing production clusters?
+* What is the role of approval workflows in self-service deployment?
+* How can deployment templates reduce configuration errors?
+* How should developers roll back a failed deployment through a self-service workflow?
+
+**Platform Observability**
+* What is platform observability?
+* What is the difference between platform observability and application observability?
+* Which metrics should a platform engineering team monitor?
+* Why are centralized logs and distributed traces useful for platform teams?
+* How can service-level indicators measure platform reliability?
+* What is the role of developer-facing deployment and provisioning status?
+
+**Platform Security**
+* What is platform security?
+* What is least-privilege access in a developer platform?
+* How should secrets be managed in GitOps workflows?
+* Why should production credentials not be stored in Git?
+* What are policy-as-code and admission control?
+* How can platform teams enforce secure defaults in golden paths?

@@ -1,0 +1,30 @@
+* Create a functional component that receives a name prop and displays a greeting.
+* Create a component that accepts name, age, and email props.
+* Write a component that receives a Boolean prop and conditionally displays a message.
+* Create a component that accepts an array of names and renders them as a list.
+* Write a component that receives an object containing user details.
+* Create a parent component that passes props to two child components.
+* Write a component that uses destructuring to access props.
+* Create a component with default prop values using parameter destructuring.
+* Write a reusable button component that accepts label, disabled, and onClick props.
+* Create a child component that calls a callback prop to send data to its parent.
+* Write a component that passes multiple arguments to a callback prop.
+* Create a reusable card component that renders content using props.children.
+* Build a layout component that accepts a header, body, and footer as props.
+* Create a component that accepts a JSX element as a prop and renders it.
+* Write a component that uses a render prop to display customized content.
+* Create a reusable input component with value, onChange, and placeholder props.
+* Write a TypeScript component with required and optional props.
+* Create a TypeScript component with a strongly typed callback prop.
+* Build a component that accepts mutually exclusive props using a TypeScript discriminated union.
+* Create a component that accepts either an icon or an image URL, but not both.
+* Write a higher-order component that adds a prop to the wrapped component.
+* Create a component that forwards selected props to a native HTML element.
+* Build a reusable table component that accepts column definitions and row data as props.
+* Create a component that supports both controlled and uncontrolled input behavior.
+* Write a component that uses React.memo to optimize rendering when props remain unchanged.
+* Create a custom comparison function for a memoized component.
+* Build a component that passes stable object and function props to memoized children.
+* Create a component that avoids mutating an array received through props when sorting it.
+* Write a compound component pattern that shares data between related components.
+* Refactor a component with many unrelated props into smaller reusable components with clearer prop interfaces.

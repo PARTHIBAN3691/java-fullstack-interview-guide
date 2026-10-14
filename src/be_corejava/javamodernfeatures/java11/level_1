@@ -1,0 +1,26 @@
+
+* How does `String.isBlank()` determine whether a string contains only whitespace?
+* How does `strip()` differ from `trim()` when handling Unicode whitespace?
+* How does `String.lines()` handle line terminators in a multiline string?
+* What is the difference between `String.lines()` and `split("\\R")`?
+* How would you use `String.repeat()` to generate a repeated character pattern?
+* How do you use `Files.readString()` to read a UTF-8 file?
+* How do you use `Files.writeString()` to write text with a specific character encoding?
+* How do you append text to a file using `Files.writeString()` and the appropriate open options?
+* What is the difference between `Predicate.not()` and the negation operator `!`?
+* How does `Predicate.not()` improve readability when using method references in Streams?
+* How does the Java 11 HTTP Client API differ from `HttpURLConnection`?
+* How do you create an `HttpClient` with a connection timeout?
+* How do you build an HTTP GET request using `HttpRequest`?
+* How do you send a synchronous HTTP request using `HttpClient.send()`?
+* What is the difference between `HttpClient.send()` and `HttpClient.sendAsync()`?
+* What is the purpose of `BodyHandlers.ofString()`?
+* How do you send a POST request containing JSON using the Java 11 HTTP Client?
+* How do you configure request headers and URI values using `HttpRequest.Builder`?
+* How do you handle HTTP status codes and response bodies using `HttpResponse`?
+* What is the purpose of `HttpClient.Redirect`?
+* How do you configure the HTTP Client to follow redirects?
+* How do you use `Optional.isEmpty()` to simplify conditional logic?
+* How does running a single Java source file directly differ from compiling it explicitly using `javac`?
+* What are the advantages of Java Flight Recorder for monitoring Java applications?
+* What are the limitations of the Java 11 HTTP Client API when compared with third-party HTTP clients?

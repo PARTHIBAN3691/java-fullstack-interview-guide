@@ -1,0 +1,26 @@
+
+* Explain the Java IO class hierarchy and the relationship between `InputStream`, `OutputStream`, `Reader`, and `Writer`.
+* Explain the Decorator design pattern using Java IO classes.
+* How does buffering work internally in `BufferedInputStream` and `BufferedReader`?
+* How would you determine an appropriate buffer size when processing large files?
+* What happens when an IO operation fails while multiple resources are open in a try-with-resources statement?
+* How does try-with-resources handle exceptions thrown during resource closure?
+* What are suppressed exceptions, and how can they be retrieved?
+* What is the difference between manually closing resources in a `finally` block and using try-with-resources?
+* How does character encoding affect file reading and writing?
+* What problems can occur when reading UTF-8 files using the platform's default character encoding?
+* How would you handle malformed or unmappable character sequences when reading text files?
+* How does Java object serialization work internally?
+* What is the purpose of `serialVersionUID`, and what happens when serialized class versions differ?
+* What is the difference between `Serializable` and `Externalizable`?
+* How can custom serialization be implemented using `writeObject()` and `readObject()`?
+* What are the security risks of deserializing untrusted Java objects?
+* How would you prevent or mitigate unsafe Java deserialization?
+* How does `RandomAccessFile` support random file access?
+* What is the difference between sequential file access and random file access?
+* How would you design a reliable file-copy utility that handles large files and IO failures?
+* How can partial writes or interrupted operations affect file integrity?
+* How would you process a multi-gigabyte file without exhausting heap memory?
+* What are the limitations of using `java.io.File` for symbolic links, file attributes, and filesystem operations?
+* How would you handle concurrent access to the same file by multiple threads?
+* When would you choose Java IO, NIO, or NIO.2 for file processing?

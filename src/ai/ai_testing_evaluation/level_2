@@ -1,0 +1,113 @@
+**AI Testing Fundamentals**
+* How would you architect a scalable AI evaluation platform that supports multiple models, providers, prompts, RAG pipelines, and agent workflows?
+* How would you establish statistically defensible release gates when evaluation outcomes vary across repeated runs?
+* How would you isolate regressions caused by model changes, prompt changes, retrieval changes, and application-code changes?
+* How would you optimize evaluation coverage and cost while maintaining sufficient confidence in release quality?
+
+**LLM Evaluation Metrics**
+* How would you design a composite evaluation score without allowing strong performance in one dimension to hide critical failures in another?
+* How would you estimate confidence intervals and determine whether a measured improvement is statistically significant?
+* How would you evaluate open-ended reasoning tasks when automated metrics and human judgments disagree?
+* How would you detect metric gaming, evaluator overfitting, and benchmark saturation over repeated optimization cycles?
+
+**Functional Testing of AI Applications**
+* How would you test a distributed AI application with asynchronous model calls, streaming responses, retries, caches, and multiple tool integrations?
+* How would you isolate nondeterministic model behavior from deterministic defects in application orchestration?
+* How would you design contract tests for multiple model providers with different response schemas and tool-calling semantics?
+* How would you test failure recovery and idempotency when an AI-generated action succeeds remotely but the application times out before receiving confirmation?
+
+**Prompt Regression Testing**
+* How would you build semantic regression detection that tolerates harmless wording changes while detecting changes in meaning, safety, and task completion?
+* How would you attribute regressions when prompts, model versions, sampling parameters, and retrieved context change together?
+* How would you maintain prompt evaluation coverage when templates are dynamically assembled from user context and multiple policy layers?
+* How would you design canary evaluation and automated rollback for prompt changes in a high-traffic production system?
+
+**Golden Dataset Testing**
+* How would you create a leakage-resistant golden dataset for a model that is continuously fine-tuned on production-derived feedback?
+* How would you balance stable benchmark examples with newly emerging production failures and adversarial cases?
+* How would you detect benchmark overfitting when developers repeatedly optimize prompts against the same golden dataset?
+* How would you maintain evaluation validity for questions whose correct answers or governing policies change over time?
+
+**Groundedness and Faithfulness Evaluation**
+* How would you evaluate multi-hop answers where each claim requires evidence from multiple retrieved documents?
+* How would you distinguish a claim that is directly supported, inferentially supported, contradicted, or unsupported by the context?
+* How would you validate automated faithfulness scores against expert annotations across domains and languages?
+* How would you detect cases where a judge incorrectly marks a fluent, plausible answer as grounded despite missing evidence?
+
+**Answer Relevance**
+* How would you evaluate relevance for multi-intent questions where completeness and conciseness may conflict?
+* How would you distinguish semantic relevance from answer completeness and task success in long conversations?
+* How would you calibrate an automated relevance evaluator when user intent is implicit, ambiguous, or context-dependent?
+* How would you design evaluation methods that detect misleading responses that address a related topic but avoid the actual question?
+
+**Retrieval Precision and Recall**
+* How would you evaluate retrieval quality when relevant evidence is distributed across documents, tables, and long passages?
+* How would you compare sparse, dense, hybrid, and reranked retrieval systems using statistically reliable measurements?
+* How would you determine whether low answer quality is caused by missed retrieval evidence or by poor evidence use during generation?
+* How would you design retrieval evaluation for permission-filtered corpora where different users legitimately receive different candidate documents?
+
+**Hallucination Evaluation**
+* How would you design a scalable claim-level hallucination evaluator for long-form answers with citations and conflicting sources?
+* How would you distinguish unsupported claims, incorrect claims, temporal inaccuracies, and reasonable uncertainty?
+* How would you calibrate abstention thresholds to minimize harmful unsupported answers while maintaining useful answer coverage?
+* How would you validate hallucination metrics across domains when the reference evidence itself may be incomplete or incorrect?
+
+**LLM-as-a-Judge**
+* How would you evaluate judge reliability across model families, languages, response lengths, and task categories?
+* How would you quantify judge-human agreement and identify systematic bias in automated scoring?
+* How would you design pairwise comparisons, blinded evaluation, and randomized response ordering to reduce position and presentation bias?
+* How would you prevent a model from being rewarded for verbosity, fabricated citations, or stylistic similarity rather than actual task quality?
+
+**Human Evaluation**
+* How would you design a statistically powered human-evaluation study when expert reviewers are expensive and model differences are small?
+* How would you resolve disagreements among annotators when domain knowledge, interpretation, or safety judgments vary?
+* How would you measure annotation drift and recalibrate reviewers across long-running evaluation programs?
+* How would you combine human ratings, pairwise preferences, expert adjudication, and automated scoring into a defensible evaluation result?
+
+**Adversarial Testing**
+* How would you create adaptive adversarial tests that discover failure patterns beyond a fixed collection of known attacks?
+* How would you measure robustness across semantic-preserving transformations, multilingual prompts, multimodal inputs, and long-context scenarios?
+* How would you prevent adversarial evaluation data from leaking into training or prompt optimization?
+* How would you prioritize and track recurring failure clusters across model releases?
+
+**Red Teaming**
+* How would you establish a continuous red-team program for an agentic system with access to confidential data and external services?
+* How would you evaluate compound attack chains in which prompt injection, weak authorization, and tool execution combine to create a serious vulnerability?
+* How would you verify that mitigations block the underlying exploit class rather than only the exact test prompt?
+* How would you quantify residual risk and define production release criteria after red-team findings have been remediated?
+
+**AI Safety Testing**
+* How would you design safety evaluations that cover harmful compliance, over-refusal, policy conflicts, and distribution shifts?
+* How would you establish safety release gates when severe failures are rare and cannot be reliably measured using a small test set?
+* How would you evaluate interactions between moderation classifiers, model refusals, tool permissions, and downstream safety filters?
+* How would you detect safety regressions introduced by quantization, distillation, fine-tuning, or model-provider updates?
+
+**RAG Evaluation Frameworks**
+* How would you design a framework that separately measures retrieval quality, context quality, groundedness, answer relevance, and end-to-end correctness?
+* How would you validate automated RAG metrics when reference answers and source annotations are incomplete?
+* How would you evaluate retrieval and generation jointly without allowing one component's score to obscure the other's failures?
+* How would you create an evaluation pipeline that supports offline benchmarking, production sampling, regression detection, and release gating?
+
+**Agent Workflow Testing**
+* How would you test nondeterministic agent plans while ensuring critical invariants, authorization checks, and final outcomes remain deterministic?
+* How would you design simulation-based tests for agents that perform multi-step actions in external systems with partial failures?
+* How would you verify checkpoint recovery, idempotency, compensation, and safe termination after a workflow is interrupted?
+* How would you measure agent task success, tool efficiency, policy compliance, recovery quality, and cumulative cost across full trajectories?
+
+**Load and Performance Testing**
+* How would you load-test an AI service with long-context requests, streaming output, heterogeneous models, and bursty concurrent traffic?
+* How would you identify the throughput and latency trade-offs introduced by continuous batching, caching, speculative decoding, and model routing?
+* How would you test resilience under provider rate limits, token-budget exhaustion, overloaded retrieval services, and partial infrastructure outages?
+* How would you build a capacity model that accounts for input tokens, output tokens, concurrency, model-specific limits, and cost per successful task?
+
+**Model Regression Testing**
+* How would you design a model promotion framework that detects statistically significant regressions across quality, safety, fairness, latency, and cost?
+* How would you compare model versions when provider updates change output distributions or prevent deterministic reproduction?
+* How would you use shadow traffic, canary releases, and production feedback to supplement offline regression testing?
+* How would you distinguish an actual model regression from changes in user behavior, retrieval content, prompt construction, or evaluation data?
+
+**Evaluation Dataset Management**
+* How would you design an evaluation-data platform with versioned datasets, access controls, provenance, annotation history, and reproducible splits?
+* How would you prevent contamination when evaluation examples are derived from production conversations that may later be used for fine-tuning?
+* How would you detect distribution drift and refresh test datasets without invalidating longitudinal comparisons?
+* How would you establish data-retention, privacy, licensing, and deletion controls for sensitive evaluation corpora?

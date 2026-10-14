@@ -1,0 +1,30 @@
+* Write a ReplicaSet YAML manifest that runs three replicas of a Spring Boot application.
+* Write a ReplicaSet manifest with appropriate labels and matching selectors.
+* Write a ReplicaSet manifest that runs a Java application using a specific container image and port 8080.
+* Write a ReplicaSet manifest that configures CPU and memory requests and limits for each Pod.
+* Write a ReplicaSet manifest with liveness and readiness probes for a Spring Boot application.
+* Write a ReplicaSet manifest that loads environment variables from a ConfigMap.
+* Write a ReplicaSet manifest that injects application credentials from a Kubernetes Secret.
+* Write a ReplicaSet manifest that mounts a PersistentVolumeClaim into each Pod, considering the storage access mode and sharing requirements.
+* Write a ReplicaSet manifest that uses node affinity to schedule Pods on selected worker nodes.
+* Write a ReplicaSet manifest that configures tolerations for a dedicated worker-node group.
+* Write a ReplicaSet manifest that distributes Pods across availability zones using topology spread constraints.
+* Write a ReplicaSet manifest that configures a service account and a non-root security context.
+* Write a Deployment YAML manifest that creates and manages ReplicaSets for a Spring Boot application.
+* Write a Deployment manifest that performs rolling updates using maxSurge and maxUnavailable.
+* Write a Deployment manifest that retains a configured number of old ReplicaSets for rollback.
+* Write a Deployment manifest that specifies a minimum number of available replicas during an update.
+* Write a HorizontalPodAutoscaler manifest that scales a Deployment based on CPU utilization.
+* Write a PodDisruptionBudget manifest that maintains a minimum number of available application replicas.
+* Write a Service manifest that selects Pods managed by a ReplicaSet using labels.
+* Write a ReplicaSet manifest that configures a startup probe for a slow-starting Java application.
+* Write a ReplicaSet manifest with a termination grace period for graceful Spring Boot shutdown.
+* Write a ReplicaSet manifest that configures ephemeral-storage requests and limits.
+* Write a kubectl command sequence to scale a ReplicaSet from three replicas to five replicas.
+* Write a kubectl command sequence to inspect ReplicaSet events and identify why Pod creation is failing.
+* Write a kubectl command sequence to identify all Pods owned by a particular ReplicaSet.
+* Write a kubectl command sequence to inspect the ownerReferences of a Pod and determine its managing controller.
+* Write a kubectl command sequence to delete a ReplicaSet while leaving its Pods running.
+* Write a kubectl command sequence to inspect the ReplicaSets created during a Deployment rollout.
+* Write a shell script that compares a ReplicaSet's desired, current, and ready replica counts.
+* Write a production-ready Deployment configuration for a Spring Boot microservice with multiple replicas, probes, resource constraints, rolling updates, autoscaling, and high-availability scheduling.

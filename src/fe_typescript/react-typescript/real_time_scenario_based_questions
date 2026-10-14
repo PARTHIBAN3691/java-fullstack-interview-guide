@@ -1,0 +1,30 @@
+* Your React component receives incorrect prop types from another component. How would you identify and fix the issue?
+* A component accepts an optional user object, but the application crashes when accessing its properties. How would you handle this safely?
+* Your API response changes and several React components start failing. How would you design types to reduce the impact?
+* A React form contains fields with different data types. How would you create a strongly typed form model?
+* A reusable table component must display employees, products, and orders. How would you design it using generics?
+* Your team frequently uses any in React components. How would you gradually replace it with safer types?
+* A custom hook returns several values, but TypeScript infers an incorrect union type. How would you fix the return type?
+* A context provider supplies user authentication data, but consumers receive possibly undefined values. How would you design a safer context?
+* A child component must notify its parent when a selected item changes. How would you type the callback?
+* A button component supports primary, secondary, and danger variants. How would you define its props using TypeScript?
+* Your application uses a modal component that accepts different kinds of content. How would you type its children?
+* An input component must support text, number, and email input types while preserving correct event types. How would you implement it?
+* Your application fetches data from multiple APIs with different response structures. How would you create reusable typed API services?
+* An API returns null for a field that was previously always populated. How would you prevent runtime errors?
+* A developer changes a shared interface and unintentionally breaks multiple components. How would you reduce this coupling?
+* Your React component has complex conditional rendering based on loading, error, and success states. How would you model these states safely?
+* A custom hook manages pagination and sorting for different data types. How would you implement it with generics?
+* Your application has a deeply nested component tree that passes the same props through many levels. How would you redesign it using context or composition?
+* A React component wrapped with a higher-order component loses its original prop type information. How would you resolve this?
+* Your reusable component needs to forward a reference to an underlying HTML input. How would you implement and type it?
+* A lazy-loaded component causes a TypeScript error during integration. How would you diagnose the problem?
+* A form accepts user input, but the API expects a different data structure. How would you transform and type the form data?
+* Your frontend receives untrusted JSON from an external service. How would you validate the response before rendering it?
+* A React application uses React Router, and route parameters may be missing or invalid. How would you handle them safely?
+* Your team wants to share request and response types between the frontend and backend. How would you structure the shared package?
+* A third-party chart library has incomplete type definitions. How would you integrate it without sacrificing type safety?
+* A large React application takes too long to compile and type-check. What TypeScript configuration and project-structure changes would you consider?
+* Your component library must support different HTML elements while maintaining type-safe props. How would you design polymorphic components?
+* A component's state can represent several mutually exclusive conditions, but invalid combinations are possible. How would you redesign the state model?
+* You are migrating an enterprise React application from JavaScript to TypeScript. How would you plan the migration without stopping feature development?

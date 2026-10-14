@@ -1,0 +1,21 @@
+
+* A Java application throws `StackOverflowError` during recursive processing of a large tree. How would you diagnose and fix the issue?
+* A Spring Boot application crashes because two methods repeatedly call each other. How would you identify the recursive call cycle?
+* A REST API works for shallow JSON payloads but throws `StackOverflowError` for deeply nested payloads. How would you investigate the cause?
+* An entity's `toString()` method recursively prints bidirectional relationships and causes a stack overflow. How would you resolve the issue?
+* A service creates thousands of platform threads and eventually fails with a native-thread creation error. How would you investigate stack memory and operating-system limits?
+* An application works with the default thread stack size but fails with `StackOverflowError` after a configuration change. What would you inspect?
+* A recursive algorithm succeeds in development but fails in production for larger input sizes. How would you reproduce and fix the issue?
+* A developer believes that setting a local reference to `null` immediately frees the referenced object from the heap. How would you explain the actual memory behavior?
+* A multithreaded application has sufficient heap memory but experiences native memory exhaustion. How would you evaluate thread stack consumption?
+* A service has a large number of concurrent requests, each involving deeply nested method calls. How would you reduce stack pressure?
+* A thread dump shows unexpectedly deep call stacks in a production service. How would you identify the method or framework responsible?
+* A Java application processes arbitrarily nested expressions and risks stack overflow. How would you redesign the parser or evaluator?
+* A recursive database traversal fails for large datasets. How would you replace recursion with an iterative implementation?
+* An application increases `-Xss` to prevent stack overflow, but fewer threads can be created afterward. Why does this happen?
+* A virtual-thread-based service supports high concurrency but still experiences stack-related failures. What assumptions and diagnostic areas would you review?
+* A developer claims that all local variables are always stored physically on the JVM stack. How would you explain the distinction between JVM semantics and JIT optimizations?
+* A thread terminates after an uncaught exception. What happens to its active stack frames and local references?
+* A recursive method processes a cyclic object graph and never terminates. How would you introduce cycle detection and prevent stack exhaustion?
+* A service experiences intermittent thread-creation failures inside a container. Which JVM, operating-system, and container limits would you examine?
+* How would you validate that a stack-overflow fix works for worst-case input sizes and under concurrent load?

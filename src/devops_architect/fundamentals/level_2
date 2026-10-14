@@ -1,0 +1,35 @@
+* How would you introduce DevOps principles into an organization with separate development and operations teams, legacy processes, and resistance to change?
+* How would you use the CALMS framework to prioritize improvements when automation is strong but collaboration and measurement are weak?
+* How would you establish shared ownership across teams while ensuring accountability for production incidents?
+* How would you resolve conflicts between rapid feature delivery and operational stability?
+* How would you design a CI/CD pipeline for multiple independently deployed microservices with shared dependencies?
+* How would you ensure artifact integrity, reproducible builds, and traceability from source code to production deployment?
+* How would you prevent concurrent pipeline executions from causing inconsistent deployments?
+* How would you manage backward-incompatible database schema changes during rolling application deployments?
+* How would you manage Terraform state, infrastructure drift, and destructive changes safely in production?
+* How would you implement policy-as-code to prevent insecure or non-compliant infrastructure provisioning?
+* How would you design configuration management for hundreds of application instances across multiple regions?
+* How would you build an automation framework that recovers safely from partial failures without triggering cascading failures?
+* How would you secure the software supply chain, including dependencies, build runners, artifacts, deployment credentials, and container images?
+* How would you implement least-privilege access for CI/CD pipelines deploying to multiple environments?
+* How would you design an internal developer platform for hundreds of teams using different technology stacks?
+* How would you balance platform standardization with application-team autonomy while avoiding a centralized delivery bottleneck?
+* How would you design GitOps-based promotion across environments with approval controls, secret management, and rollback support?
+* How would you handle shared GitOps configuration changes that could affect multiple production applications?
+* How would you introduce shift-left practices into a legacy application with limited automated tests and slow builds?
+* How would you prioritize security findings and quality gates without creating alert fatigue or encouraging teams to bypass controls?
+* How would you design immutable infrastructure for a highly available, stateful application deployed across multiple availability zones?
+* How would you migrate a legacy pet-style server architecture to cattle-style infrastructure without disrupting business operations?
+* How would you design an objective DevOps maturity roadmap across teams with different architectures, constraints, and reliability requirements?
+* How would you measure the impact of platform engineering and DevEx initiatives on delivery performance and developer productivity?
+* How would you balance deployment frequency, change failure rate, recovery time, security, and customer impact when evaluating DevOps effectiveness?
+* How would you design a progressive delivery system that automatically evaluates canary metrics and halts or rolls back unsafe releases?
+* How would you prevent compromised CI/CD credentials from being used to modify production infrastructure?
+* How would you design a multi-region deployment architecture that supports controlled releases and disaster recovery?
+* How would you design automated remediation while preventing repeated actions from worsening an ongoing production incident?
+* How would you define service-level objectives and error budgets to balance delivery speed and reliability?
+* How would you implement a secure, self-service platform that supports multiple teams while enforcing organizational policies?
+* How would you handle incompatible configuration changes across application versions during a rolling deployment?
+* How would you design a strategy for replacing stateful legacy servers while preserving data consistency and service availability?
+* How would you distinguish meaningful DevOps maturity improvements from metrics that teams can easily manipulate?
+* How would you reduce pipeline execution time across hundreds of repositories while maintaining test quality, reproducibility, and security?

@@ -1,0 +1,30 @@
+* Write a Spring Boot REST API with health endpoints suitable for Google Cloud load balancer health checks.
+* Write a Spring Boot application that exposes separate liveness and readiness endpoints.
+* Write a Dockerfile for a Spring Boot application that will run behind a Google Cloud load balancer.
+* Write a Terraform configuration that creates a global external Application Load Balancer for a Java application.
+* Write Terraform code to configure a backend service, health check, URL map, target HTTP proxy, and forwarding rule.
+* Write Terraform configuration for an HTTPS load balancer using a Google-managed SSL certificate.
+* Write Terraform code to redirect HTTP traffic to HTTPS using the supported Google Cloud load balancing resources.
+* Write Terraform configuration for host-based routing to two separate Java microservices.
+* Write Terraform configuration for path-based routing that directs `/orders` and `/customers` to different backend services.
+* Write Terraform configuration for a regional internal Application Load Balancer for private microservices.
+* Write Terraform configuration for a load balancer that uses a managed instance group as its backend.
+* Write Terraform configuration for a global external Application Load Balancer with a serverless NEG targeting Cloud Run.
+* Write Terraform configuration that attaches a Cloud Armor security policy to a backend service.
+* Write Terraform configuration that enables load balancer request logging and configures an appropriate sampling rate.
+* Write Terraform configuration for backend health checks with configurable intervals, timeouts, and healthy thresholds.
+* Write a gcloud CLI script that provisions the resources needed to expose a Java application through an external Application Load Balancer.
+* Write a deployment script that validates backend health before shifting production traffic to a new application version.
+* Write a script that checks load balancer backend health and reports unhealthy instances using Google Cloud CLI commands.
+* Write a Java program that calls a load-balanced REST API using Java HttpClient and implements connection and request timeouts.
+* Write a Java program that invokes a load-balanced endpoint with retry handling for transient HTTP failures.
+* Write a Spring Boot configuration example that supports graceful shutdown when a backend instance is removed from service.
+* Write a Java REST API that returns a readiness response only after critical application dependencies are initialized.
+* Write a Java program that records request latency, status codes, and correlation IDs for troubleshooting load-balanced requests.
+* Write a Java integration test that verifies an API remains available while backend instances are replaced during a rolling deployment.
+* Write a Terraform configuration that creates a backend service with configurable session affinity and connection-draining settings where supported.
+* Write a CI/CD pipeline that deploys a new Java container image and validates the application through its load-balanced endpoint.
+* Write a script that tests HTTPS connectivity, certificate validity, DNS resolution, and HTTP response codes for a load-balanced application.
+* Write a Terraform configuration for a multi-region application with a global load balancer and regional backend services.
+* Write an automated smoke test that verifies URL-map routing for multiple Spring Boot microservices.
+* Write a deployment validation script that checks load balancer health, application readiness, and error rates before completing a production release.

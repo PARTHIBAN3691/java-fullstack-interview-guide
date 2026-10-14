@@ -1,0 +1,30 @@
+* How would you design a testing strategy for a large Spring Boot microservice?
+* How do you decide which classes require unit tests versus integration tests?
+* How do you test complex service methods with multiple dependencies?
+* How do you avoid excessive mocking in unit tests?
+* What are the limitations of using Mockito for testing complex behavior?
+* How do you mock static methods and constructors using Mockito?
+* What are spies in Mockito, and when should they be avoided?
+* What is the difference between doReturn() and when() in Mockito?
+* How do you test methods that depend on the current date and time?
+* How do you test retry mechanisms and circuit breakers in Spring Cloud?
+* How do you test asynchronous processing without introducing flaky tests?
+* How do you test event-driven applications that use Spring events?
+* How do you test Kafka producers and consumers in Spring Boot?
+* How do you test REST clients built with WebClient?
+* How do you use WireMock to test external API integrations?
+* How do you test database migrations using Flyway or Liquibase?
+* How do you manage test data consistently across integration tests?
+* How do you prevent integration tests from interfering with one another?
+* How do you test transaction rollback and propagation behavior?
+* How do you test optimistic locking and concurrent database updates?
+* How do you test Spring Security method-level authorization?
+* How do you test JWT authentication and authorization?
+* How do you test OAuth 2.0 resource server configurations?
+* How do you test application behavior when external dependencies are unavailable?
+* How do you identify and eliminate flaky tests in CI/CD pipelines?
+* How do you improve test execution speed in a large Maven or Gradle project?
+* What are test slices in Spring Boot, and how do they reduce testing overhead?
+* How do Testcontainers improve database and infrastructure integration testing?
+* How do you measure and improve meaningful test coverage rather than just line coverage?
+* How would you establish a testing pyramid for a Spring Boot microservices architecture?

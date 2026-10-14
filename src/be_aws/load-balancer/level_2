@@ -1,0 +1,20 @@
+* Explain the end-to-end request flow from a client through Route 53, an ALB, a target group, and a Java Spring Boot microservice.
+* How would you design a highly available load-balancing architecture across multiple Availability Zones?
+* How would you choose between ALB and NLB for a high-throughput application with strict latency requirements?
+* How would you configure load balancing for a Java microservices platform running on ECS or EKS?
+* How would you design ALB listener rules to route requests to multiple microservices while avoiding conflicting rules?
+* How would you configure end-to-end TLS encryption between clients, the load balancer, and backend services?
+* How would you investigate intermittent HTTP 502 errors when the backend Java application appears healthy?
+* How would you diagnose HTTP 504 errors caused by slow database queries or downstream REST calls?
+* How would you configure health checks to avoid sending traffic to Java instances that have started but are not ready to serve requests?
+* How would you perform zero-downtime deployments using an ALB, target groups, and an Auto Scaling group?
+* How would you implement blue-green deployment using two target groups and controlled traffic shifting?
+* How would you design weighted routing between different application versions for canary releases?
+* How would you handle long-lived WebSocket connections and sticky sessions in a horizontally scaled application?
+* How would you configure load balancing for gRPC-based Java microservices?
+* How would you troubleshoot uneven traffic distribution across healthy targets?
+* How would you secure a public ALB while ensuring backend EC2 instances cannot be accessed directly from the internet?
+* How would you handle sudden traffic spikes while coordinating ALB capacity, Auto Scaling, and application thread pools?
+* How would you design disaster recovery using load balancers across AWS Regions?
+* How would you optimize load balancer cost, connection utilization, and backend capacity for a large-scale application?
+* How would you correlate ALB access logs, CloudWatch metrics, distributed traces, and Java application logs to identify a production bottleneck?

@@ -1,0 +1,24 @@
+
+* How do text blocks handle indentation and incidental whitespace?
+* How do you include double quotes inside a text block?
+* How do you represent line breaks in text blocks?
+* What happens when a text block contains trailing whitespace?
+* How does the compiler process indentation in a text block?
+* How does `String.stripIndent()` differ from `String.strip()`?
+* How does `String.translateEscapes()` process escape sequences?
+* How does `String.formatted()` differ from `String.format()`?
+* Can text blocks be used with string concatenation and formatting methods?
+* What restrictions apply when using a text block as a Java expression?
+* How do sealed classes restrict inheritance?
+* What rules must a direct subclass of a sealed class follow?
+* What is the difference between `sealed`, `non-sealed`, and `final` classes?
+* Can an interface be declared as sealed?
+* How does the `permits` clause work when subclasses are declared in the same source file?
+* What happens if a permitted subclass does not declare `final`, `sealed`, or `non-sealed`?
+* What are the benefits of sealed classes when designing domain models?
+* How do sealed classes differ from abstract classes?
+* How do sealed classes differ from enums?
+* What are hidden classes, and how do they differ from ordinary classes?
+* Why are hidden classes useful for frameworks and dynamic language implementations?
+* What is the purpose of the `ClassLoader.defineHiddenClass()` API?
+* What are the limitations of hidden classes regarding class discovery and loading?

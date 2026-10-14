@@ -1,0 +1,30 @@
+* Write a Spring Boot REST API that can be deployed to Google App Engine Standard.
+* Create an app.yaml configuration for a Java application using a supported App Engine runtime.
+* Write a Spring Boot controller that exposes health-check and readiness endpoints.
+* Write a Java configuration class that loads environment-specific properties for an App Engine deployment.
+* Write a Spring Boot service that accesses Cloud SQL using a connection pool.
+* Write a Java service that connects to Cloud SQL using the recommended authentication mechanism for the deployment environment.
+* Write a Java application that reads secrets from Google Cloud Secret Manager using the Google Cloud client library.
+* Write a Java service that uploads and downloads files from Cloud Storage using application-default credentials.
+* Write a Spring Boot REST endpoint that publishes messages to Google Cloud Pub/Sub.
+* Write a Java Pub/Sub consumer that processes messages idempotently and handles retryable failures.
+* Write a Spring Boot endpoint that enqueues background work using Cloud Tasks.
+* Write a Java Cloud Tasks handler that validates requests and safely processes duplicate task deliveries.
+* Write a scheduled Java job that can be invoked by App Engine Cron.
+* Write an idempotent billing job that prevents duplicate invoice generation when triggered more than once.
+* Write a Spring Boot service that calls a downstream REST API using WebClient with connection and response timeouts.
+* Write a Java service that implements retry with exponential backoff for transient downstream failures.
+* Write a Spring Boot service that implements a circuit breaker for calls to an unreliable downstream API.
+* Write a Java REST endpoint that returns structured JSON logs with correlation IDs for request tracing.
+* Write a Spring Boot filter that records request latency and status codes without logging sensitive payloads.
+* Write a Java integration test that validates the behavior of an App Engine REST endpoint.
+* Write a test suite that verifies application behavior when Cloud SQL is unavailable.
+* Write a Spring Boot endpoint that validates request payloads using Jakarta Bean Validation.
+* Write a Java service that uses an idempotency key to prevent duplicate payment requests.
+* Write a Terraform configuration that provisions the required App Engine application resources and service accounts.
+* Write a Terraform configuration that grants an App Engine service account access to Secret Manager with least privilege.
+* Write a Cloud Build pipeline configuration that builds, tests, and deploys a Java application to App Engine.
+* Write a deployment script using the Google Cloud CLI to deploy a new App Engine version without immediately directing all traffic to it.
+* Write a script that splits traffic between two App Engine versions and verifies the deployment status.
+* Write a monitoring and alerting configuration for high request latency and elevated error rates in App Engine.
+* Write a Java load-testing plan and test implementation to evaluate App Engine scaling behavior under increasing traffic.

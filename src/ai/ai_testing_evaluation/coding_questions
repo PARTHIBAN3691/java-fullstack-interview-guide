@@ -1,0 +1,94 @@
+**AI Testing Fundamentals**
+* Implement a reusable AI evaluation runner that executes test cases against configurable model endpoints and records outputs, latency, token usage, and errors.
+* Build a test harness that supports deterministic mocks for application tests and real-model evaluation runs for behavioral tests.
+* Write tests that verify an AI release meets minimum quality, safety, reliability, and performance thresholds before promotion.
+
+**LLM Evaluation Metrics**
+* Implement functions to calculate precision, recall, F1 score, and accuracy for a labeled classification task.
+* Build a configurable scoring pipeline that aggregates relevance, correctness, groundedness, and safety metrics without allowing critical failures to be hidden by averages.
+* Write tests that calculate confidence intervals or compare paired evaluation results across two model versions.
+
+**Functional Testing of AI Applications**
+* Implement API integration tests for model timeouts, rate limits, malformed outputs, authentication failures, and provider errors.
+* Build a test suite that validates generated JSON against a schema and application-specific business rules.
+* Write tests that verify retries and idempotency prevent duplicate downstream actions after ambiguous network failures.
+
+**Prompt Regression Testing**
+* Implement a prompt-version comparison runner that evaluates the same test cases against two prompt templates.
+* Build a semantic comparison component that flags changes in task completion, required content, safety, and factual correctness while tolerating harmless wording differences.
+* Write tests that fail the build when a prompt change causes a critical regression beyond a configurable threshold.
+
+**Golden Dataset Testing**
+* Implement a golden dataset loader that validates test case schemas, expected outcomes, metadata, and dataset versions.
+* Build an evaluation runner that compares model outputs with reference answers using configurable exact-match, semantic, and rubric-based metrics.
+* Write tests that verify dataset changes are reviewed, versioned, and reproducible across evaluation runs.
+
+**Groundedness and Faithfulness Evaluation**
+* Implement a claim-level evaluator that compares generated claims with supplied source passages and classifies support status.
+* Build a citation validator that checks whether cited sources exist and support the associated claims.
+* Write tests for directly supported claims, unsupported claims, conflicting sources, and reasonable inferences.
+
+**Answer Relevance**
+* Implement an answer-relevance scoring component that compares a user question with the generated response using configurable semantic or rubric-based evaluation.
+* Build a completeness checker for questions containing multiple required subquestions or output fields.
+* Write tests that detect off-topic responses, missing answer components, and excessive irrelevant content.
+
+**Retrieval Precision and Recall**
+* Implement precision@k, recall@k, mean reciprocal rank, and normalized discounted cumulative gain for ranked retrieval results.
+* Build a retrieval benchmark runner that compares sparse, dense, hybrid, and reranked retrieval configurations.
+* Write tests for multiple relevant documents, duplicate passages, missing ground-truth labels, and permission-filtered search results.
+
+**Hallucination Evaluation**
+* Implement an evaluation pipeline that labels test questions as answerable, unanswerable, or ambiguous and measures appropriate response behavior.
+* Build a claim-level unsupported-content scorer that compares generated statements with reference evidence.
+* Write tests that measure abstention behavior, unsupported-answer rates, and false abstentions.
+
+**LLM-as-a-Judge**
+* Implement a judge interface that scores responses against configurable criteria and returns structured scores with evidence and rationale fields.
+* Build a pairwise evaluation runner with randomized response order and blinded model identifiers.
+* Write tests that measure judge consistency, position bias, agreement with human labels, and handling of malformed judge outputs.
+
+**Human Evaluation**
+* Implement an annotation interface backend that stores reviewer scores, labels, comments, timestamps, and adjudication decisions.
+* Build an agreement-analysis script that calculates inter-annotator agreement for categorical or ordinal ratings.
+* Write tests that verify reviewer blinding, duplicate-label detection, required-field validation, and adjudication workflows.
+
+**Adversarial Testing**
+* Implement an adversarial test generator that creates variations in wording, encoding, language, ambiguity, and input length.
+* Build a regression tracker that groups failures by attack type, model version, and severity.
+* Write tests that verify adversarial cases are reproducible, labeled, and evaluated against the intended safety and robustness criteria.
+
+**Red Teaming**
+* Implement a red-team test runner that executes authorized security test cases against an isolated AI environment and records outcomes.
+* Build a vulnerability report generator that includes reproduction steps, affected components, severity, evidence, and remediation status.
+* Write tests that verify fixed findings remain blocked across related attack variants and subsequent model releases.
+
+**AI Safety Testing**
+* Implement a safety evaluation harness that measures unsafe compliance, correct refusals, and false refusals on a labeled dataset.
+* Build a policy-regression checker that compares safety metrics across model and guardrail versions.
+* Write tests for conflicting instructions, harmful requests, legitimate sensitive-topic questions, and moderation-service failures.
+
+**RAG Evaluation Frameworks**
+* Implement an end-to-end RAG evaluator that records context precision, context recall, groundedness, answer relevance, and answer correctness.
+* Build a component comparison runner that evaluates chunking, embedding, retrieval, reranking, and generation configurations independently.
+* Write tests that verify metric calculation, reference-data integrity, and reproducible evaluation reports.
+
+**Agent Workflow Testing**
+* Implement agent workflow tests that validate tool selection, argument schemas, execution order, state transitions, and final outcomes.
+* Build a simulated tool environment that injects timeouts, partial failures, malformed results, and interrupted workflows.
+* Write tests that detect infinite loops, duplicate side effects, unauthorized actions, excessive tool calls, and checkpoint-recovery failures.
+
+**Load and Performance Testing**
+* Implement a load-test harness that generates concurrent AI requests with configurable input and output token lengths.
+* Build a metrics collector for time to first token, inter-token latency, end-to-end latency, throughput, error rate, and token consumption.
+* Write tests that verify graceful degradation under rate limits, queue saturation, provider outages, and inference-capacity constraints.
+
+**Model Regression Testing**
+* Implement a regression runner that evaluates two model versions against the same versioned test dataset and compares per-category metrics.
+* Build a release gate that blocks deployment when quality, safety, latency, or cost regressions exceed configured thresholds.
+* Write tests that account for nondeterministic outputs and repeated-run variability when comparing model versions.
+
+**Evaluation Dataset Management**
+* Implement a versioned evaluation dataset registry that records dataset identifiers, provenance, labels, schemas, and change history.
+* Build a validation pipeline that detects duplicates, missing labels, malformed cases, sensitive data, and possible train-test contamination.
+* Write tests that verify reproducible dataset splits, controlled access, audit trails, and approved dataset updates.

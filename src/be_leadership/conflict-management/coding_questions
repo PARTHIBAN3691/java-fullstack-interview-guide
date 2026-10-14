@@ -1,0 +1,30 @@
+* Write a Java program to represent a conflict between two team members with their respective viewpoints.
+* Implement a Java class to record conflict details, involved team members, severity, and status.
+* Write a Java program to categorize conflicts as technical, interpersonal, resource-related, or priority-related.
+* Implement an enum to represent conflict statuses such as OPEN, UNDER_REVIEW, RESOLVED, and ESCALATED.
+* Write a Java method to validate that a conflict record contains all required information.
+* Implement a conflict management service using interfaces and dependency injection.
+* Write a Java program to assign a conflict to an appropriate mediator based on the conflict type.
+* Implement a priority-based queue to manage conflicts according to severity and business impact.
+* Write a Java method to identify conflicts that have remained unresolved beyond a specified duration.
+* Implement an escalation mechanism for conflicts that exceed a severity threshold.
+* Write a Java program to record the viewpoints of multiple participants in a conflict.
+* Implement a resolution plan containing action items, owners, and deadlines.
+* Write a Java method to calculate the percentage of conflicts resolved within a target duration.
+* Use Java streams to group conflicts by type, status, and responsible team.
+* Implement a Java class that records the history of status changes for each conflict.
+* Write unit tests using JUnit 5 for a conflict resolution service.
+* Use Mockito to test conflict escalation and notification behavior.
+* Implement the Observer pattern to notify stakeholders when a conflict changes status.
+* Implement the Strategy pattern to support different resolution approaches, such as mediation, negotiation, and escalation.
+* Use the State pattern to manage conflict lifecycle transitions and prevent invalid status changes.
+* Write a Java program that detects repeated conflicts involving the same team members and conflict category.
+* Implement a service that prevents duplicate conflict records from being created for the same issue.
+* Write a thread-safe Java component for recording conflict updates from multiple team members.
+* Implement exception handling for invalid conflict transitions and missing resolution details.
+* Write a Java method that calculates conflict resolution metrics from historical records.
+* Implement role-based access control so that sensitive conflict details are visible only to authorized users.
+* Write a Java program to generate a summary report of open, resolved, and escalated conflicts.
+* Create a REST API using Spring Boot to create, update, retrieve, and resolve conflict records.
+* Implement an audit trail that records who changed a conflict status, when it changed, and why.
+* Design a Java-based conflict management application that supports mediation, action tracking, escalation, notifications, and resolution history.

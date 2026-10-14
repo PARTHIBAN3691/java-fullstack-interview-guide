@@ -1,0 +1,30 @@
+* A Spring Boot Kafka consumer is running but does not receive any messages. How would you troubleshoot topic subscription, group membership, offsets, and connectivity?
+* A consumer processes messages successfully but consumer lag continues to increase. How would you identify the bottleneck?
+* A consumer restarts and processes several previously completed orders again. How would you prevent duplicate business operations?
+* A consumer commits an offset before updating the database, and some business records are missing. How would you fix the processing flow?
+* A consumer updates the database but crashes before committing its offset. How would you recover without duplicating the business transaction?
+* A consumer experiences frequent rebalances during peak traffic. How would you investigate polling delays, heartbeats, and processing time?
+* A consumer receives malformed JSON messages and repeatedly fails on the same record. How would you prevent the partition from becoming blocked?
+* A database outage causes Kafka consumer lag to grow rapidly. How would you implement backpressure and recovery?
+* A consumer group has enough instances, but some partitions are processed much more slowly than others. How would you investigate partition skew?
+* A consumer processes messages asynchronously and commits offsets out of order. How would you ensure safe offset progression?
+* A Kafka consumer receives a message larger than its configured fetch limits. How would you investigate and correct the configuration?
+* A consumer experiences frequent out-of-memory errors after batch processing is enabled. How would you reduce memory pressure?
+* A consumer group cannot process events because the committed offsets are no longer available. How would you recover and assess possible data loss?
+* A production consumer must replay events from a specific timestamp without interrupting live processing. How would you implement the replay?
+* A consumer works in development but fails in production because of authentication errors. How would you investigate TLS, SASL, and ACL configuration?
+* A consumer's throughput drops after a deployment even though CPU and memory usage remain low. How would you investigate fetch latency and downstream dependencies?
+* A downstream REST API starts returning HTTP 429 responses, causing consumer processing failures. How would you implement rate-aware retries?
+* A payment consumer receives the same business event from multiple delivery attempts. How would you make the processing idempotent?
+* A consumer's processing time exceeds max.poll.interval.ms because a batch contains too many records. How would you redesign batch processing?
+* A consumer stops responding during graceful shutdown and delays deployment. How would you improve shutdown and in-flight processing handling?
+* A consumer receives events with an unexpected schema version and fails deserialization. How would you support schema evolution safely?
+* A retry mechanism delays all messages in a partition because one record repeatedly fails. How would you redesign retry handling?
+* A consumer group scales from five to twenty instances, but throughput barely improves. How would you determine whether partition count is limiting parallelism?
+* A consumer unexpectedly starts reading old messages after a configuration change. How would you investigate auto.offset.reset and committed offsets?
+* A consumer has low lag but orders are delayed in the business system. How would you trace the issue across Kafka, application processing, and the database?
+* A consumer repeatedly loses connectivity to the group coordinator. How would you investigate broker health, network stability, and client configuration?
+* A high-volume tenant overwhelms a shared consumer application. How would you implement fair processing and tenant isolation?
+* A deployment introduces a new consumer version that interprets an event differently from the previous version. How would you manage compatibility and rollout safety?
+* A consumer must guarantee that inventory is not decremented twice for the same order event. How would you design deduplication and transactional processing?
+* A production incident requires increasing consumer throughput immediately without risking data loss or ordering guarantees. What changes would you prioritize?

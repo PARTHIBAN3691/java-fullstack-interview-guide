@@ -1,0 +1,30 @@
+* Your React component makes the same API request repeatedly. How would you identify and fix the issue?
+* An API request runs continuously because its useEffect() dependency changes on every render. How would you resolve it?
+* A user types quickly into a search box, and results appear in the wrong order. How would you prevent stale responses?
+* Your dashboard needs data from five independent APIs. How would you fetch them efficiently?
+* One API fails while four other API requests succeed. How would you handle partial results?
+* Your page shows a blank screen while waiting for a slow API. How would you improve the loading experience?
+* An API returns HTTP 500, but your Fetch API code treats the response as successful. What is wrong?
+* Your component is unmounted before an API request completes. How would you cancel or ignore the result?
+* Users report seeing outdated information after updating a record. How would you handle cache invalidation?
+* Two components request the same data simultaneously. How would you avoid duplicate network calls?
+* Your application has a large table with thousands of records. How would you implement server-side pagination?
+* A search API should run only after the user stops typing for 300 milliseconds. How would you implement it?
+* Your application needs to fetch a user's profile before loading their order history. How would you manage dependent requests?
+* An API requires an access token that expires periodically. How would you refresh the token safely?
+* Multiple API requests fail simultaneously with HTTP 401. How would you prevent multiple token refresh operations?
+* Your application must continue showing previously loaded data while refreshing it. How would you design the UI?
+* A network request occasionally hangs indefinitely. How would you introduce timeout and cancellation handling?
+* Your API rate limit is being exceeded because of repeated requests. What changes would you make?
+* A component fetches data correctly in production but makes duplicate requests during development. How would you investigate it?
+* A dashboard contains widgets that refresh at different intervals. How would you design their fetching and caching behavior?
+* Users can update a record, and the UI should reflect the change immediately before the server responds. How would you implement optimistic updates?
+* Your application needs to support offline access to previously loaded data. What caching strategy would you consider?
+* An API response contains optional or nullable fields, causing runtime errors. How would you make the component resilient?
+* Your React application experiences slow initial loading because it fetches data sequentially. How would you improve request parallelism?
+* A paginated API returns duplicate records when users rapidly navigate between pages. How would you debug the problem?
+* Your team has duplicated API logic across dozens of components. How would you introduce a common service or custom hook?
+* A large application needs centralized logging for API failures. How would you design it?
+* Your application uses both Axios and Fetch API inconsistently. How would you standardize its data-fetching approach?
+* A server-rendered page accidentally exposes data from another user's request. What architectural issues would you investigate?
+* How would you choose between manual data fetching, TanStack Query, SWR, and framework-provided data fetching for a new project?

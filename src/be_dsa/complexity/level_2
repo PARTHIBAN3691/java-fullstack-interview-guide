@@ -1,0 +1,30 @@
+* How do you derive a recurrence relation for a recursive algorithm and solve it?
+* How do you use the Master Theorem to analyze divide-and-conquer algorithms?
+* What are the limitations of the Master Theorem?
+* How do you analyze the recurrence T(n) = 2T(n/2) + O(n)?
+* How do you analyze the recurrence T(n) = T(n - 1) + O(1)?
+* How do you analyze the recurrence T(n) = 2T(n - 1) + O(1)?
+* How do you use a recursion tree to determine time complexity?
+* What is the substitution method for solving recurrence relations?
+* How does amortized analysis differ from average-case analysis?
+* How do aggregate, accounting, and potential methods work in amortized analysis?
+* How do you analyze the complexity of a dynamic array that doubles its capacity?
+* How do you determine the tight asymptotic bound of an algorithm?
+* What is the difference between an upper bound and a tight bound?
+* How do you analyze algorithms with multiple independent input dimensions?
+* How do you analyze a graph algorithm using V and E?
+* What are the time and space complexities of BFS and DFS using adjacency lists?
+* How do the complexities of graph traversal change when using an adjacency matrix?
+* What are the time and space complexities of Dijkstra's algorithm with a binary heap?
+* How do Fibonacci heaps affect the theoretical complexity of Dijkstra's algorithm?
+* What is the time complexity of union-find with path compression and union by rank?
+* How do you analyze the complexity of dynamic programming with memoization?
+* How do you calculate time complexity from the number of states and transitions in a DP solution?
+* How do you compare top-down and bottom-up dynamic programming in terms of complexity?
+* What is the difference between pseudo-polynomial and polynomial time complexity?
+* What is the difference between polynomial-time and exponential-time algorithms?
+* How do you recognize when a brute-force solution can be optimized using hashing or sorting?
+* How do cache locality and memory allocation affect practical performance beyond Big O?
+* How do you benchmark Java algorithms without being misled by JVM warm-up and JIT compilation?
+* How would you use Java Microbenchmark Harness (JMH) to compare two implementations?
+* How do you evaluate time-space trade-offs when optimizing a high-throughput Java application?

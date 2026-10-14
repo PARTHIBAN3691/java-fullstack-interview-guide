@@ -1,0 +1,36 @@
+* A Terraform pipeline plans to recreate a production database even though its configuration has not intentionally changed. How would you investigate provider versions, state differences, and resource lifecycle settings?
+* A developer accidentally deletes a Terraform state file that tracks critical production resources. How would you recover state and restore safe infrastructure management?
+* A Terraform apply fails halfway through provisioning a network and compute environment. How would you determine which resources were created and safely resume the operation?
+* Two CI/CD pipelines attempt to apply changes to the same Terraform state simultaneously. How would you prevent conflicting infrastructure modifications?
+* A Terraform state lock remains after a pipeline runner crashes. How would you verify the lock owner and recover without risking concurrent changes?
+* A remote-state backend becomes unavailable during a production infrastructure deployment. How would you recover the pipeline while avoiding unsafe local-state workarounds?
+* A manual change to a production security group is detected as Terraform drift. How would you determine whether to revert the change or update the configuration?
+* A critical production resource was modified manually during an incident, but the next Terraform apply would undo the fix. How would you preserve the recovery and reconcile configuration safely?
+* A Terraform module update unexpectedly recreates resources across multiple environments. How would you isolate the breaking change and prevent further deployments?
+* A shared Terraform module introduces a security group rule that exposes a service publicly. How would you contain the risk and improve module validation and release governance?
+* A developer commits cloud credentials into a Terraform variables file and pushes it to Git. How would you contain the exposure and redesign credential handling?
+* A Terraform plan contains sensitive information that is visible in a pipeline artifact. How would you investigate the exposure and secure plan storage and access?
+* A Terraform provider upgrade causes an unexpected diff for hundreds of resources. How would you validate the provider change and plan a safe rollout?
+* An existing cloud resource must be brought under Terraform management without recreation. How would you import it and verify that the configuration matches the actual resource?
+* A resource was removed manually from the cloud console, and Terraform now proposes a replacement. How would you determine the correct recovery action?
+* A Terraform refactoring changes resource addresses and proposes destroying and recreating production infrastructure. How would you use moved blocks or state operations to preserve resources?
+* A production apply fails because the cloud provider API is throttling requests. How would you investigate retries, parallelism, rate limits, and partial resource creation?
+* A developer creates a production environment in an unapproved region. How would you prevent the violation using pipeline controls and policy-as-code?
+* A Terraform pipeline succeeds even though a storage resource violates the organization's encryption policy. How would you identify the missing security control and enforce compliance before apply?
+* A team uses Terraform workspaces to separate production and development, but developers can accidentally apply changes to production. How would you improve environment isolation and access control?
+* A module's tests pass, but its deployment fails because of an IAM permission issue in the target account. How would you improve testing and account-specific validation?
+* A Terraform plan is reviewed and approved, but the configuration changes before the pipeline applies it. How would you ensure the approved plan matches the executed change?
+* A developer force-unlocks Terraform state without verifying whether another operation is active, resulting in conflicting changes. How would you recover and prevent recurrence?
+* CloudFormation reports that a stack update failed and entered a rollback state. How would you diagnose the failing resource and safely resume or recover the deployment?
+* A CloudFormation stack reports drift after manual changes to resources. How would you reconcile the stack template with the intended infrastructure state?
+* A Pulumi deployment fails after creating some resources, and the team is unsure which resources are managed by the stack. How would you inspect state and recover safely?
+* An organization wants to migrate from CloudFormation to Terraform but cannot afford downtime or resource recreation. How would you plan and validate the migration?
+* A Terraform destroy operation unexpectedly includes shared networking resources used by multiple applications. How would you prevent the destruction and improve dependency and ownership boundaries?
+* A compliance audit finds inconsistent tags, public endpoints, and missing encryption across hundreds of Terraform-managed resources. How would you remediate existing infrastructure and prevent future violations?
+* Infrastructure costs increase after a Terraform module change that modifies instance sizes and autoscaling configuration. How would you identify the cause and introduce cost controls?
+* A security policy blocks a deployment, but the application team claims the rule is necessary for a time-sensitive release. How would you handle exceptions while preserving auditability?
+* A production pipeline uses an administrator role to provision all infrastructure across cloud accounts. How would you redesign identity, permissions, and execution boundaries?
+* A provider or module is compromised upstream, and the pipeline begins downloading a malicious version. How would you contain the supply-chain risk and strengthen version verification?
+* A team needs to test destructive infrastructure changes without risking production resources. How would you design ephemeral environments, isolated state, and automated cleanup?
+* Terraform plans show unexpected changes on every run due to computed values and externally managed attributes. How would you identify the root cause and avoid suppressing meaningful drift?
+

@@ -1,0 +1,30 @@
+* How would you design a highly available system that targets 99.99% availability?
+* How do you calculate end-to-end availability for a service that depends on multiple downstream services?
+* How does redundancy affect the availability of independent and correlated components?
+* How would you eliminate single points of failure across an entire application architecture?
+* How do you design a multi-region active-active application?
+* What challenges arise when implementing cross-region database replication?
+* How do you handle split-brain scenarios in a highly available database cluster?
+* How do consensus protocols such as Raft affect availability during network partitions?
+* How does the CAP theorem influence availability decisions during a network partition?
+* How do you balance consistency, availability, and latency across geographically distributed services?
+* How would you design automatic failover while avoiding unnecessary failover caused by transient network issues?
+* How do you prevent cascading failures across a large microservices architecture?
+* How would you design a dependency-aware circuit breaker strategy for hundreds of services?
+* How do you maintain availability during database schema migrations?
+* How do you design zero-downtime deployments involving incompatible API and database changes?
+* How would you maintain availability while upgrading infrastructure across multiple availability zones?
+* How do you design a disaster recovery strategy for a system with strict RTO and RPO requirements?
+* How do you validate disaster recovery readiness through regular failover exercises?
+* How do you maintain availability when a cloud provider region becomes completely unavailable?
+* How do you design traffic shifting between regions while preventing duplicate writes?
+* How do you ensure availability when authentication, DNS, or service discovery becomes unavailable?
+* How do you design a highly available message-processing system that handles duplicate delivery safely?
+* How do you prevent a thundering herd problem after a downstream service recovers?
+* How do you design admission control and load shedding during overload?
+* How do you maintain availability when a critical shared database reaches capacity?
+* How do you distinguish between application availability and business transaction availability?
+* How do you allocate an end-to-end availability budget across microservices and infrastructure?
+* How do you measure availability accurately in systems with partial failures?
+* How do you design multi-region failback after the primary region recovers?
+* How would you justify the cost of additional redundancy against the required availability target?

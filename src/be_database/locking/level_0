@@ -1,0 +1,30 @@
+* What is database locking?
+* Why is locking required in a database?
+* What are the different types of database locks?
+* What is a shared lock?
+* What is an exclusive lock?
+* What is the difference between shared and exclusive locks?
+* What is a row-level lock?
+* What is a table-level lock?
+* What is a page-level lock?
+* What is the difference between pessimistic locking and optimistic locking?
+* What is a database deadlock?
+* What is a lock wait?
+* What is lock contention?
+* What is a lock timeout?
+* What is a lost update, and how can locking prevent it?
+* What is the difference between locking and transaction isolation?
+* How does a database acquire and release locks?
+* When are locks released during a transaction?
+* What is an intention lock?
+* What is a predicate lock?
+* What is the purpose of SELECT FOR UPDATE?
+* What is the difference between SELECT and SELECT FOR UPDATE?
+* What happens when two transactions attempt to update the same row?
+* Can a read operation acquire a database lock?
+* How do database indexes influence locking?
+* What is the difference between blocking and deadlocking?
+* How does auto-commit affect database locking?
+* How can you configure a lock timeout in a database?
+* What is optimistic locking in JPA?
+* What is the purpose of the @Version annotation in JPA?

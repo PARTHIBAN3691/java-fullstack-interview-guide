@@ -1,0 +1,30 @@
+* Explain the internal structure of JWTs and how signature verification prevents token tampering.
+* How would you design a secure authentication architecture for a large-scale Node.js application?
+* How would you implement rotating refresh tokens with reuse detection?
+* How would you handle refresh-token theft in a production application?
+* How would you revoke access tokens across multiple Node.js service instances?
+* What are the trade-offs between short-lived JWTs and opaque access tokens?
+* How would you implement centralized authentication for multiple microservices?
+* How would you integrate a Node.js microservice with an external identity provider using OpenID Connect?
+* How would you implement authorization-code flow with PKCE for a browser or mobile application?
+* How would you securely validate OAuth 2.0 state and OIDC nonce parameters?
+* How would you prevent open-redirect vulnerabilities in an OAuth login flow?
+* How would you design authentication for applications serving multiple tenants?
+* How would you prevent user identity or tenant information from being modified through JWT claims?
+* How would you manage JWT signing keys and perform key rotation without downtime?
+* What are JWKS endpoints, and how do resource servers use them to verify tokens?
+* How would you handle signing-key compromise in a distributed application?
+* How would you implement authentication and session invalidation across multiple application instances?
+* How would you design secure authentication for WebSocket connections?
+* How would you authenticate background jobs and service-to-service requests?
+* What are the risks of storing JWTs in localStorage compared with HttpOnly cookies?
+* How would you prevent session fixation and session hijacking?
+* How would you protect authentication endpoints against timing attacks and enumeration?
+* How would you design risk-based authentication using device, location, and behavior signals?
+* How would you implement phishing-resistant MFA using WebAuthn or passkeys?
+* How would you securely support account recovery when MFA credentials are lost?
+* How would you implement step-up authentication for sensitive operations?
+* How would you separate authentication from authorization in a microservices architecture?
+* How would you handle identity propagation across asynchronous jobs and service calls?
+* How would you audit authentication events while avoiding sensitive-data leakage in logs?
+* What security, availability, and scalability trade-offs would you consider when choosing an identity provider?

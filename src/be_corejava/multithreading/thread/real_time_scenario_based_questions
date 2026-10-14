@@ -1,0 +1,21 @@
+
+* Two threads print numbers alternately from 1 to 100. How would you coordinate their execution?
+* A thread starts before another thread has completed its initialization. How would you ensure the required execution order?
+* A background thread processes files, but the application must shut down gracefully. How would you stop the thread safely?
+* A thread is stuck in an infinite loop and does not respond to an interruption request. How would you investigate and fix it?
+* An application creates a new thread for every incoming HTTP request and runs out of memory under heavy traffic. How would you redesign it?
+* A background worker must finish before the main thread continues. Which thread coordination mechanism would you use?
+* A thread remains in the `WAITING` state indefinitely. How would you identify the cause?
+* Several threads are in the `BLOCKED` state, and response times are increasing. How would you diagnose the problem?
+* An application uses daemon threads for critical data persistence. What risk does this introduce, and how would you address it?
+* A developer catches `InterruptedException` and ignores it. What problems can this cause, and how should the code be corrected?
+* A thread pool reuses worker threads, but request-specific data from one task appears in another task. How would you investigate potential `ThreadLocal` leakage?
+* A Java application has high CPU utilization, but no requests are being processed. How would you identify the thread responsible?
+* A service must run periodic background tasks without delaying API responses. How would you design the threading model?
+* A program works correctly with one thread but produces inconsistent results when multiple threads access shared state. How would you debug it?
+* A virtual-thread-based application still experiences database connection exhaustion. Why can this happen, and how would you control concurrency?
+* A task needs to be cancelled after 30 seconds, but it may be blocked on I/O. How would you implement cancellation and timeouts?
+* A main thread must wait for multiple worker threads to finish. How would you implement this and handle worker failures?
+* A thread must preserve diagnostic information such as a correlation ID across asynchronous execution. How would you propagate that context?
+* A production incident reveals thousands of live threads and excessive context switching. What metrics and thread-dump evidence would you examine?
+* A background task must respond to application shutdown, release resources, and preserve its interrupt status. How would you implement it?

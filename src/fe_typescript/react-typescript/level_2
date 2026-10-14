@@ -1,0 +1,30 @@
+* How does TypeScript's type system improve the architecture of a large React application?
+* How do you design a reusable generic table component that supports different data models?
+* How would you implement a polymorphic React component with type-safe HTML element props?
+* How do you use conditional types to build advanced reusable component props?
+* How do you use mapped types to derive component prop types from an existing model?
+* How do you type higher-order components in React with TypeScript?
+* How do you preserve generic type information when wrapping a component with a higher-order component?
+* How do you type a component that uses React.forwardRef?
+* How do you combine forwardRef with generic component props?
+* How do you type a custom hook that returns a tuple with different element types?
+* How do you implement a type-safe reducer using useReducer?
+* How do you model complex application state using discriminated unions and useReducer?
+* How do you create a strongly typed React context without providing an unsafe default value?
+* How do you prevent unnecessary re-renders when using context in a large React application?
+* How do you type lazy-loaded React components using React.lazy and Suspense?
+* How do you handle errors using error boundaries in a TypeScript React application?
+* How do you define custom error boundary props and state types?
+* How do you implement type-safe API services that share response and error models?
+* How do you handle API responses where the payload structure varies by status or result type?
+* How do you validate API response data at runtime when TypeScript types are erased?
+* How do you integrate Zod or a similar schema validation library with React and TypeScript?
+* How do you design a type-safe form using React Hook Form and schema validation?
+* How do you create reusable form components that preserve field-specific types?
+* How do you manage type-safe routing and route parameters in a large React application?
+* How do you organize domain models, components, hooks, and services in an enterprise React project?
+* How do you share TypeScript types between a React frontend and a backend API?
+* How do you handle type definitions for third-party React libraries that lack TypeScript support?
+* How do you optimize type-checking performance in a large React TypeScript codebase?
+* How do you configure strict TypeScript compiler options for a React application?
+* How do you migrate a large JavaScript React application to TypeScript incrementally?

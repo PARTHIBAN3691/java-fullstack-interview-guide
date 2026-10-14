@@ -1,0 +1,30 @@
+* How would you design an enterprise-wide Azure Monitor architecture for multiple subscriptions and regions?
+* How would you design centralized monitoring for hundreds of Java microservices?
+* How do you decide between a centralized Log Analytics workspace and multiple workspaces?
+* How would you implement end-to-end observability across distributed Java microservices?
+* How do you correlate logs, metrics, and traces for a single business transaction?
+* How would you use OpenTelemetry to standardize observability across Spring Boot services?
+* How do you investigate intermittent latency when application CPU and memory usage appear normal?
+* How would you design actionable alerts while minimizing false positives and alert fatigue?
+* How do you implement dynamic alert thresholds for applications with changing traffic patterns?
+* How would you establish service-level indicators and service-level objectives using Azure Monitor?
+* How do you calculate availability, error rate, and latency percentiles for a production API?
+* How would you troubleshoot telemetry ingestion delays and missing monitoring data?
+* How do you optimize Azure Monitor ingestion costs for a high-volume application?
+* How do you decide which telemetry to sample, retain, or exclude?
+* How would you monitor JVM heap usage, garbage collection pauses, thread contention, and connection pools?
+* How do you troubleshoot a memory leak using application telemetry and JVM metrics?
+* How would you identify whether an incident originates in the application, network, database, or external dependency?
+* How do you investigate cascading failures across multiple microservices using distributed traces?
+* How would you design monitoring for Java applications deployed across availability zones and multiple regions?
+* How do you implement secure access to monitoring data using Azure RBAC and managed identities?
+* How do you prevent sensitive information from being captured in logs, traces, and telemetry?
+* How would you monitor the monitoring pipeline and detect gaps in telemetry?
+* How do you automate Azure Monitor resources, alerts, dashboards, and diagnostic settings using Terraform or Bicep?
+* How do you integrate Azure Monitor with CI/CD pipelines for deployment validation?
+* How would you implement release-aware monitoring to compare application behavior before and after deployment?
+* How do you design alert deduplication, suppression, and maintenance windows for production systems?
+* How do you monitor background jobs, message queues, and event-driven Java applications?
+* How would you design monitoring and alerting for an application processing millions of transactions per day?
+* How do you troubleshoot discrepancies between Azure Monitor metrics and application-level measurements?
+* How would you build an observability strategy that supports incident response, capacity planning, and cost optimization?

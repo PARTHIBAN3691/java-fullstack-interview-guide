@@ -1,0 +1,30 @@
+* A Spring Boot Pod remains Pending because no worker node has enough memory. How would you investigate and resolve the issue?
+* A Pod is not scheduled even though the cluster appears to have sufficient CPU and memory. What other scheduling constraints would you check?
+* A Pod is scheduled to the wrong worker-node group. How would you enforce placement using labels and affinity?
+* A production application must run only on dedicated nodes. How would you configure taints, tolerations, and node affinity?
+* A Pod has the correct toleration but still cannot schedule onto a dedicated node. How would you troubleshoot the issue?
+* A workload is scheduled successfully but later runs on a node that does not match its preferred affinity. Why can this happen?
+* All replicas of a critical Java service are placed on one worker node. How would you distribute them across nodes and availability zones?
+* A topology spread constraint prevents new Pods from being scheduled after a zone failure. How would you diagnose and adjust the policy?
+* A high-priority application Pod cannot schedule because lower-priority workloads consume cluster capacity. How would preemption help?
+* A high-priority Pod remains Pending even though preemption is enabled. What constraints could prevent scheduling?
+* A Pod is Pending because its PVC cannot be provisioned in the selected node's availability zone. How would you resolve the conflict?
+* A StatefulSet Pod cannot start after rescheduling because its persistent volume is available only in another zone. How would you investigate?
+* A cluster autoscaler adds a node, but the Pending Pod still cannot be scheduled. What would you check?
+* New worker nodes are available, but most workloads remain concentrated on existing nodes. How would you rebalance the cluster?
+* A node is cordoned during maintenance, but some Pods remain running on it. Is this expected, and how should the maintenance proceed?
+* Draining a worker node causes a critical application outage. How would you investigate replica placement and disruption budgets?
+* A Deployment cannot create additional replicas because of a namespace resource quota. How would you resolve the issue safely?
+* A Pod has very low resource requests and is frequently evicted under node pressure. How would you improve its resource configuration?
+* A Java application is throttled even though its node has spare CPU capacity. How would you investigate resource requests, limits, and CPU allocation?
+* A Pod requests too much memory and remains unschedulable despite low actual usage. How would you right-size its requests?
+* Two workloads require exclusive access to specialized hardware. How would you configure node labels, taints, and extended resources?
+* A cluster contains both ARM and x86 nodes, and a Java application fails on some nodes. How would you constrain scheduling to compatible architectures?
+* A batch workload consumes capacity needed by latency-sensitive APIs. How would you use priority classes and resource requests to protect the APIs?
+* A Pod is scheduled successfully but immediately evicted because of disk pressure. How would you distinguish scheduling problems from kubelet eviction?
+* A multi-zone application experiences high latency because related services are placed far apart. How would you balance locality and fault tolerance?
+* A custom scheduling policy causes Pods to accumulate on a small set of nodes. How would you investigate the scoring rules?
+* Scheduling becomes slow after the cluster grows to thousands of nodes. What scheduler metrics and configuration would you investigate?
+* A rolling deployment cannot progress because new Pods have strict anti-affinity rules. How would you resolve the scheduling conflict without sacrificing availability?
+* A cluster must support production, testing, and batch workloads with different priorities and isolation requirements. How would you design the scheduling policy?
+* You need to deploy a highly available Spring Boot platform across three zones with autoscaling, persistent storage, and dedicated worker nodes. How would you design its scheduling configuration?

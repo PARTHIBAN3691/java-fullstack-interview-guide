@@ -1,0 +1,30 @@
+* A card has a width of 300px, but its actual rendered width is 350px. How would you determine which Box Model properties are causing the difference?
+* A developer sets `width: 100%` on an input, but the input overflows its parent container. How would you fix it?
+* A responsive form works correctly on desktop but causes horizontal scrolling on mobile devices. How would you investigate Box Model issues?
+* Several cards in a row have different heights even though they have the same CSS width and padding. What Box Model factors could cause this?
+* A button becomes wider than expected after adding padding. How would you prevent the size from changing unexpectedly?
+* A developer applies `box-sizing: border-box` globally. What benefits and potential side effects should be considered?
+* Two vertically stacked sections have unexpected spacing between them even though only one margin was specified. How would you investigate margin collapsing?
+* A child element appears to move outside its parent after applying a negative margin. Explain what is happening.
+* A container has a fixed width and its child has `width: 100%` plus padding. The child overflows. How would you correct the layout?
+* A flexbox layout contains a long unbroken string that causes horizontal overflow. How would you use Box Model and sizing properties to fix it?
+* A grid layout has columns that unexpectedly exceed the available container width. How would you investigate the interaction between grid sizing and the Box Model?
+* A developer adds a border to an element and the entire layout shifts. How could `box-sizing` prevent this?
+* A UI component needs a visible focus indicator without changing its layout dimensions. Would you use a border or outline, and why?
+* A card needs a shadow without affecting its calculated dimensions. Which CSS property would you use?
+* A parent element's height is smaller than expected even though it contains child content. How would you investigate padding, margins, and formatting contexts?
+* A child element's top margin appears to affect the position of its parent. What CSS behavior could explain this?
+* A layout behaves differently when `overflow: hidden` is added to the parent. How can this be related to margin collapsing?
+* A responsive component must support both left-to-right and right-to-left languages. How would you use logical margin and padding properties?
+* An image inside a fixed-size card causes the card to overflow. How would you use `box-sizing`, `max-width`, and other sizing properties to solve it?
+* A form contains inputs with different border widths, causing inconsistent dimensions. How would you standardize their Box Model behavior?
+* A developer uses `height: 100%` on a child but the height does not behave as expected. What Box Model and containing-block rules would you investigate?
+* A component must maintain a fixed aspect ratio while its width changes responsively. How would `aspect-ratio` interact with the Box Model?
+* A design system contains hundreds of components with inconsistent margin and padding conventions. How would you establish a consistent Box Model strategy?
+* A modal becomes wider than the viewport after adding padding to its content area. How would you make the modal responsive?
+* A navigation bar develops horizontal scrolling only when a long menu item is added. How would you diagnose the Box Model and intrinsic sizing behavior?
+* A flex item refuses to shrink even though `flex-shrink` is enabled. What role can `min-width` and intrinsic content size play?
+* A developer sets `min-width: 0` on a flex child and the overflow problem disappears. Explain why.
+* A page has unexpected gaps between sections even though all elements appear to have the correct margins. How would you systematically debug the spacing?
+* A component must have a fixed outer width while allowing its internal padding and border to change dynamically. Which Box Model strategy would you use?
+* Design a reusable CSS card component that maintains predictable dimensions across different content sizes, screen widths, padding values, and border styles.

@@ -1,0 +1,119 @@
+**Model Serving Architecture**
+* What is model serving, and why is it required in production AI systems?
+* What are the major components of a model-serving architecture?
+* What is the difference between a model server and an application API?
+* What are the differences between online, batch, and streaming model serving?
+
+**GPU and CPU Inference**
+* What is inference, and how does it differ from model training?
+* What are the main differences between CPU and GPU inference?
+* Why are GPUs commonly used for large language model inference?
+* When can CPU inference be a reasonable choice for an AI application?
+
+**GPU Memory Management**
+* What is GPU memory, and why is it important during model inference?
+* What are model weights, activations, and the KV cache?
+* What is an out-of-memory error in GPU inference?
+* How do model size and input sequence length affect GPU memory usage?
+
+**Model Quantization and Optimization**
+* What is model quantization?
+* What is the difference between FP32, FP16, BF16, INT8, and INT4 representations?
+* How can quantization reduce model memory consumption?
+* What are the trade-offs between model performance, accuracy, and inference speed?
+
+**Batch vs Online Inference**
+* What is batch inference?
+* What is online inference?
+* How do latency and throughput requirements differ between batch and online inference?
+* When would you choose batch inference instead of online inference?
+
+**Dynamic Batching**
+* What is dynamic batching in model serving?
+* Why does batching multiple inference requests improve throughput?
+* What are the trade-offs between batch size and request latency?
+* How does a maximum batching delay affect inference performance?
+
+**Continuous Batching**
+* What is continuous batching in LLM inference?
+* How does continuous batching differ from static batching?
+* Why do generated sequences finish at different times?
+* How can continuous batching improve GPU utilization?
+
+**Model Caching**
+* What is model caching in an AI application?
+* What is the difference between caching model outputs and caching model weights?
+* How can caching reduce inference latency and cost?
+* What are the risks of serving stale or incorrect cached responses?
+
+**Distributed Inference**
+* What is distributed inference?
+* Why might a model need multiple GPUs or multiple machines for inference?
+* What is the difference between data parallelism and model parallelism?
+* What are the major challenges of distributing inference across machines?
+
+**Model Parallelism**
+* What is model parallelism?
+* What is tensor parallelism?
+* What is pipeline parallelism?
+* How does model parallelism help serve models that do not fit on a single GPU?
+
+**Kubernetes for AI Workloads**
+* Why is Kubernetes used to deploy AI inference services?
+* What are Pods, Deployments, Services, and ConfigMaps?
+* How do Kubernetes resource requests and limits affect AI workloads?
+* How can Kubernetes expose an inference service to other applications?
+
+**GPU Scheduling and Sharing**
+* How does Kubernetes schedule GPU workloads?
+* What is the purpose of requesting GPU resources in a Pod specification?
+* What is the difference between dedicating a GPU and sharing a GPU?
+* What are NVIDIA Multi-Instance GPU (MIG) and GPU time-slicing?
+
+**AI Model Serving with vLLM**
+* What is vLLM, and why is it used for LLM serving?
+* What is PagedAttention?
+* How does vLLM manage the KV cache?
+* What are the main components required to serve a model with vLLM?
+
+**NVIDIA Triton Inference Server**
+* What is NVIDIA Triton Inference Server?
+* Which model frameworks and formats can Triton support?
+* What is a Triton model repository?
+* How does Triton support concurrent inference requests and batching?
+
+**Model Deployment with Docker**
+* Why package an AI inference service in a Docker container?
+* What is the difference between a model artifact and an inference container image?
+* How do Docker volumes help manage large model files?
+* What are the basic requirements for running GPU-enabled Docker containers?
+
+**Autoscaling AI Workloads**
+* What is autoscaling for AI inference services?
+* What is the difference between horizontal and vertical scaling?
+* Why might CPU utilization alone be insufficient for scaling an LLM service?
+* Which metrics can be used to trigger AI workload scaling?
+
+**Model Registry and Artifact Management**
+* What is a model registry?
+* What information should be stored with a model artifact?
+* Why should model artifacts be versioned?
+* What is the difference between a model registry and a container image registry?
+
+**High Availability for AI Services**
+* What is high availability in an AI inference service?
+* How do replicas improve service availability?
+* What is the role of readiness and liveness probes?
+* How can load balancing distribute inference requests across model servers?
+
+**AI Disaster Recovery**
+* What is disaster recovery for AI infrastructure?
+* What are recovery time objective (RTO) and recovery point objective (RPO)?
+* Which AI artifacts and configurations should be backed up?
+* Why should model restoration procedures be tested regularly?
+
+**Inference Cost Optimization**
+* What are the main cost drivers in production AI inference?
+* How do model size, token volume, and GPU utilization affect cost?
+* How can quantization and batching reduce inference costs?
+* What is cost per inference request, and why is it useful?

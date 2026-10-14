@@ -1,0 +1,30 @@
+* Explain how Express.js internally processes a middleware stack.
+* How does middleware ordering affect authentication, authorization, and error handling?
+* How would you design a reusable middleware architecture for a large enterprise application?
+* How would you implement dependency injection for middleware components?
+* How would you implement authentication and authorization as separate middleware layers?
+* How would you securely validate JWTs in authentication middleware?
+* How would you implement permission-based authorization for multiple resource types?
+* How would you prevent an authorization middleware from trusting client-controlled role information?
+* How would you implement centralized asynchronous error handling across all middleware?
+* How would you propagate request context across asynchronous middleware operations?
+* How would you use AsyncLocalStorage to maintain correlation IDs without modifying every function signature?
+* How would you design middleware that supports configurable policies and environment-specific behavior?
+* How would you prevent middleware from accidentally leaking sensitive request data?
+* How would you defend middleware against prototype pollution and malformed input?
+* How would you implement distributed rate limiting across multiple application instances?
+* How would you implement idempotency middleware for payment and order APIs?
+* How would you design middleware that enforces request timeouts and cancellation?
+* How would you handle client disconnections during long-running middleware operations?
+* How would you prevent expensive middleware from blocking the event loop?
+* How would you optimize middleware execution for high-throughput APIs?
+* How would you implement request validation without duplicating schemas across routes?
+* How would you implement content negotiation and consistent response formatting through middleware?
+* How would you implement safe request-body parsing for large payloads?
+* How would you design middleware for multi-tenant applications?
+* How would you implement audit logging without exposing sensitive data?
+* How would you ensure middleware works correctly behind a reverse proxy?
+* How would you prevent incorrect trust-proxy configuration from compromising IP-based security controls?
+* How would you test middleware ordering and error propagation under concurrent requests?
+* How would you migrate a monolithic middleware stack into reusable modules without breaking API behavior?
+* How would you design a production-grade middleware pipeline with security, observability, validation, and resilience?

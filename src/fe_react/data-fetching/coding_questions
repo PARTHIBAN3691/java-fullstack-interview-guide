@@ -1,0 +1,30 @@
+* Write a React component that fetches and displays a list of users using Fetch API.
+* Write a React component that fetches data using Axios.
+* Create a component that displays loading, error, and success states.
+* Fetch a list of products and render them using map() with appropriate keys.
+* Implement a search input that fetches matching results from an API.
+* Create a component that fetches data whenever a selected user ID changes.
+* Implement a refresh button that triggers an API request.
+* Write a POST request that submits a registration form.
+* Implement PUT and DELETE requests for updating and deleting a record.
+* Create a reusable useFetch() custom hook.
+* Extend useFetch() to support loading, error, and data states.
+* Implement a data-fetching hook that accepts a dynamic URL and request options.
+* Implement API request cancellation using AbortController.
+* Prevent outdated search responses from overwriting the latest results.
+* Implement a debounced search component with a 300-millisecond delay.
+* Fetch multiple APIs in parallel using Promise.all().
+* Fetch multiple APIs using Promise.allSettled() and display successful results.
+* Implement a component that fetches a user profile and then fetches that user's orders.
+* Create an Axios instance with a configurable base URL and common headers.
+* Add an Axios request interceptor to attach an authentication token.
+* Add an Axios response interceptor to handle unauthorized responses.
+* Implement an API retry mechanism with a maximum retry count.
+* Implement a request timeout using AbortController.
+* Build a paginated table that fetches records from a server.
+* Implement server-side filtering and sorting for a product list.
+* Create a custom hook that caches API results in memory.
+* Implement a TanStack Query useQuery() example with loading and error handling.
+* Implement a TanStack Query mutation that invalidates a related query after success.
+* Build an optimistic update using TanStack Query with rollback on failure.
+* Write unit tests for a data-fetching component covering success, failure, and loading states.

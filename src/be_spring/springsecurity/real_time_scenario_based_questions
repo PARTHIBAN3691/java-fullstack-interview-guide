@@ -1,0 +1,30 @@
+* Users can log in successfully, but every protected endpoint returns HTTP 403. How would you troubleshoot the security configuration?
+* A valid JWT is rejected by the application even though its signature is correct. What claims and validation settings would you investigate?
+* An expired JWT continues to be accepted by an API. How would you identify and fix the token validation issue?
+* A user with the ADMIN role receives HTTP 403 when accessing an admin endpoint. How would you investigate role prefixes and authority mapping?
+* A user can access another user's account by changing the account ID in the URL. How would you enforce resource-level authorization?
+* Your application works with HTTP Basic authentication locally but fails behind a reverse proxy. How would you investigate headers, HTTPS termination, and security configuration?
+* A custom JWT filter authenticates requests but causes the controller to execute twice. How would you troubleshoot filter registration and servlet dispatch behavior?
+* A custom authentication filter is not executed for a protected endpoint. How would you inspect filter-chain matching and ordering?
+* Your application has multiple SecurityFilterChain beans, and a broad matcher unintentionally permits access to sensitive endpoints. How would you correct the configuration?
+* A browser-based application receives CORS errors while calling a secured REST API. How would you configure preflight handling and allowed origins?
+* A login request fails with HTTP 403 because of CSRF protection. How would you determine whether the application should retain CSRF protection or use a different security design?
+* A session-based application remains logged in after a password change. How would you invalidate existing sessions or authentication tokens?
+* A user logs in from multiple devices, and the business requires limiting concurrent sessions. How would you implement the policy?
+* A JWT-based application must immediately block a compromised access token before it expires. What approaches would you consider?
+* An application accepts JWTs from an unintended identity provider. How would you enforce issuer and audience validation?
+* A user has a valid OAuth 2.0 access token but cannot access a protected resource. How would you investigate scopes, authorities, audience, and resource-server configuration?
+* Your application integrates with an external identity provider, but its roles are not recognized by Spring Security. How would you map identity-provider claims to authorities?
+* A microservice forwards a user's access token to a third-party service that should not receive it. How would you redesign token propagation?
+* An API returns HTTP 500 instead of HTTP 401 or 403 for security failures. How would you improve exception handling?
+* A database-backed authentication system becomes slow because password verification consumes significant CPU. How would you balance password-hashing security and authentication throughput?
+* A user is disabled in the database but can continue accessing the application through an existing session. How would you enforce account-status changes?
+* A production application logs passwords or bearer tokens during authentication failures. How would you prevent sensitive information from entering logs?
+* An application uses @PreAuthorize, but authorization checks are bypassed during internal method calls. How would you investigate proxy behavior and method-security configuration?
+* A method-level security rule works for one service but not another. How would you diagnose missing proxies, annotations, or security configuration?
+* A REST API is stateless, but the application unexpectedly creates HTTP sessions. How would you identify the source and enforce the intended session policy?
+* An attacker repeatedly attempts login with different passwords. How would you implement rate limiting, account protection, and monitoring?
+* A password-reset link can be reused multiple times. How would you design secure, short-lived, single-use reset tokens?
+* An application uses weak password hashing or stores passwords in plaintext. How would you migrate safely to an appropriate password-hashing strategy?
+* A security configuration change unexpectedly exposes actuator endpoints. How would you identify the matcher or filter-chain ordering problem?
+* Your team is migrating from legacy WebSecurityConfigurerAdapter configuration to SecurityFilterChain beans. How would you verify that existing security behavior is preserved?

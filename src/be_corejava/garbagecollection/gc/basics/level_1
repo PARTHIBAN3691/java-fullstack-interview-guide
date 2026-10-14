@@ -1,0 +1,20 @@
+* What are the different generations in a generational garbage collection model?
+* What are the young generation and old generation?
+* What are Eden space and Survivor spaces?
+* What is a minor GC?
+* What is a major GC, and how does its meaning vary across garbage collectors and tools?
+* What is a Full GC?
+* What is object promotion in garbage collection?
+* What is the role of garbage collector roots?
+* What are GC roots, and which objects can act as GC roots?
+* How does the JVM determine whether an object is reachable?
+* What is the difference between reference counting and reachability analysis?
+* What is the difference between strong, soft, weak, and phantom references?
+* What is the difference between serial, parallel, and concurrent garbage collection?
+* What is stop-the-world behavior in garbage collection?
+* What is the difference between throughput and latency in garbage collection?
+* What is the purpose of the `-Xms` and `-Xmx` JVM options?
+* What is the purpose of the `-Xlog:gc` option in modern Java?
+* How can you identify the garbage collector being used by a JVM?
+* What is the difference between garbage collection frequency and garbage collection duration?
+* Why might heap memory usage remain high after garbage collection?

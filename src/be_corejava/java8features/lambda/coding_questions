@@ -1,0 +1,40 @@
+* Write a lambda expression to print `Hello, World!`.
+* Write a lambda expression that accepts two integers and returns their sum.
+* Write a lambda expression to check whether a number is even.
+* Write a lambda expression to find the square of a number.
+* Write a lambda expression to convert a string to uppercase.
+* Write a lambda expression to calculate the length of a string.
+* Write a lambda expression to find the maximum of two integers.
+* Write a lambda expression to implement the `Runnable` interface and print a message from a thread.
+* Write a lambda expression to iterate through a list of strings and print each element.
+* Write a lambda expression to sort a list of integers in ascending order.
+* Write a lambda expression to sort a list of strings by their length.
+* Write a lambda expression to sort a list of employees by salary.
+* Write a lambda expression to sort employees by department and then by salary.
+* Write a lambda expression to filter even numbers from a list using the Stream API.
+* Write a lambda expression to filter employees whose salary is greater than a specified amount.
+* Write a lambda expression to convert a list of strings into uppercase strings.
+* Write a lambda expression to calculate the sum of a list of integers using `reduce()`.
+* Write a lambda expression to find the maximum number in a list using `reduce()`.
+* Write a lambda expression to remove empty strings from a list.
+* Write a lambda expression to count strings that start with a specified character.
+* Write a lambda expression to group employees by department using `Collectors.groupingBy()`.
+* Write a lambda expression to calculate the average salary of employees using the Stream API.
+* Write a lambda expression to create a custom `Comparator<Employee>` that compares employees by name.
+* Write a lambda expression to compose two functions so that a number is squared and then converted to a string.
+* Write a lambda expression to combine two predicates using `and()` and `or()`.
+* Write a lambda expression to demonstrate `Consumer.andThen()` by performing two actions sequentially.
+* Write a lambda expression to demonstrate the difference between `Function.compose()` and `Function.andThen()`.
+* Write a lambda expression that captures an effectively final local variable and uses it in the expression body.
+* Write a program that demonstrates how a lambda expression accesses an instance variable and how `this` differs from an anonymous inner class.
+* Write a program that demonstrates how to resolve an overloaded method call that is ambiguous because of a lambda expression.
+* Write a program that uses a lambda expression to implement a discount strategy for an e-commerce application.
+* Write a program that accepts a lambda expression as a callback and executes it after completing an operation.
+* Write a program that uses a lambda expression to validate a password against multiple conditions.
+* Write a program that demonstrates the handling of a checked exception inside a lambda expression.
+* Write a program that creates a custom functional interface whose method can throw a checked exception and invokes it using a lambda expression.
+* Write a program that demonstrates the difference between lambda expressions and anonymous inner classes when capturing variables.
+* Write a program that uses a lambda expression to process a list of transactions and calculate the total transaction amount.
+* Write a program that uses lambda expressions to filter, sort, and transform a list of employee objects in a single Stream pipeline.
+* Write a program that demonstrates the problems caused by modifying shared mutable state inside a parallel Stream lambda.
+* Write a program that refactors a deeply nested lambda pipeline into smaller, reusable functions while preserving its behavior.

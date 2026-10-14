@@ -1,0 +1,30 @@
+* A component renders correctly in the browser but fails in a unit test. How would you troubleshoot it?
+* A test passes locally but fails intermittently in the CI pipeline. How would you investigate the issue?
+* An API-driven component displays a loading spinner, but the test fails before the data appears. How would you fix the test?
+* A button click updates the UI, but the test does not detect the change. What would you check?
+* A component makes an API request twice during testing. How would you determine whether this is expected behavior or a bug?
+* A test fails because an element cannot be found by its text. How would you debug it?
+* A test uses arbitrary timeouts to wait for API responses and is flaky. How would you improve it?
+* A form submission should display validation errors for invalid input. How would you test this behavior?
+* A search component sends requests while the user types. How would you test debouncing?
+* A component fetches data using useEffect, but the test receives stale data. How would you investigate it?
+* A protected route should redirect unauthenticated users to the login page. How would you test this?
+* A Redux-connected component fails because the store is missing during testing. How would you fix the test setup?
+* A component relies on Context API values, but the test renders it without a provider. How would you address this?
+* A modal should close when the user presses Escape. How would you test the keyboard interaction?
+* A dropdown should support keyboard navigation and accessibility attributes. How would you test it?
+* An error boundary should display a fallback UI when a child component throws an error. How would you verify this?
+* A component uses setTimeout to display a notification. How would you test the notification and its automatic dismissal?
+* A component reads user preferences from localStorage. How would you test different stored values?
+* A shopping cart updates its total after a quantity change. How would you write tests for this behavior?
+* A test passes even though the component displays the wrong text. How would you improve the assertions?
+* Your test suite has many snapshot tests but misses important user interactions. How would you improve the test strategy?
+* A component renders a list with duplicate items after an API response. How would you write a test to catch the bug?
+* A file upload component validates file size and type. How would you test the validation rules?
+* A component uses IntersectionObserver to implement infinite scrolling. How would you test it?
+* A React application uses WebSockets to update live notifications. How would you test incoming messages?
+* A page uses lazy-loaded components and shows a fallback during loading. How would you test both states?
+* A test fails because a child component makes an unexpected network request. How would you isolate the test?
+* A React application has slow tests because every test initializes the entire application. How would you optimize the setup?
+* Your team wants to enforce minimum test coverage in CI/CD. How would you configure and maintain the requirement?
+* You are responsible for testing a large e-commerce application with login, product search, cart, checkout, and payment flows. How would you plan the test strategy?

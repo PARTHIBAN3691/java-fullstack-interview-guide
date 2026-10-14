@@ -1,0 +1,21 @@
+
+* Create a `Person` class with fields, constructors, getters, setters, and a method to display personal details.
+* Create an `Employee` class and a `Manager` subclass to demonstrate inheritance.
+* Write a program demonstrating method overloading using different parameter types and counts.
+* Write a program demonstrating method overriding and runtime polymorphism.
+* Create an abstract `Shape` class with `Circle` and `Rectangle` implementations that calculate area.
+* Define a `Payment` interface and implement it using `CreditCardPayment`, `UPIPayment`, and `NetBankingPayment`.
+* Write a program demonstrating constructor chaining using `this()` and `super()`.
+* Write a program demonstrating the difference between method overriding and static method hiding.
+* Create a program demonstrating upcasting and downcasting with superclass and subclass references.
+* Implement a class that implements two interfaces with conflicting default methods and resolve the conflict.
+* Design a bank account class that uses encapsulation to validate deposits and withdrawals.
+* Implement an immutable `Employee` class that contains a mutable list of skills.
+* Write a program demonstrating shallow copying and deep copying of an object.
+* Create a `Vehicle` interface with implementations for `Car`, `Bike`, and `Truck`, and process them polymorphically.
+* Implement a notification system using an interface so that new notification channels can be added without changing the sender's core logic.
+* Create an example of composition using an `Engine` class inside a `Car` class.
+* Implement a discount calculator using the Strategy design pattern instead of a large `if-else` chain.
+* Write a program demonstrating field hiding versus method overriding in an inheritance hierarchy.
+* Create a class hierarchy that demonstrates covariant return types during method overriding.
+* Refactor a tightly coupled service that directly creates a concrete repository into a design that uses an interface and dependency injection.

@@ -1,0 +1,35 @@
+* A rolling deployment starts returning intermittent HTTP 503 errors while old and new instances run simultaneously. How would you diagnose the issue and restore availability?
+* During a blue-green deployment, the green environment passes health checks but fails when real production traffic is routed to it. How would you investigate and recover?
+* A canary release receives 10% of traffic and shows increased latency, but the overall production metrics remain normal. How would you determine whether to continue, pause, or roll back?
+* A canary deployment appears healthy, but the affected users report failed transactions. How would you identify gaps in deployment validation?
+* A recreate deployment causes several minutes of downtime during a production release. How would you replace it with a safer strategy?
+* A shadow deployment doubles the number of database writes and sends duplicate notifications. How would you redesign traffic mirroring to prevent side effects?
+* An A/B deployment shows better engagement for version B but a higher payment failure rate. How would you evaluate the results and decide the next action?
+* A feature flag is enabled for all users because of a configuration error. How would you contain the impact and prevent recurrence?
+* A feature-flag service becomes unavailable during production traffic. How should applications behave, and how would you design resilient flag evaluation?
+* A progressive delivery pipeline keeps pausing releases because of noisy latency metrics. How would you improve the analysis and threshold configuration?
+* A production release passes automated tests but causes a sharp increase in application errors ten minutes later. How would you automate detection and rollback?
+* An automated rollback restores the previous application version, but the previous version cannot work with the updated database schema. How would you recover?
+* A database migration adds a non-nullable column and breaks old application instances during a rolling deployment. How would you fix the rollout and prevent recurrence?
+* A database migration completes successfully, but the new application version writes data that the old version cannot read. How would you recover without losing data?
+* A release changes an API response structure, causing several downstream services to fail because they still expect the old schema. How would you coordinate compatibility and deployment?
+* A new service version passes readiness checks but fails under production load due to thread-pool exhaustion. How would you improve deployment validation?
+* A deployment passes smoke tests, but scheduled jobs run twice because both old and new instances remain active. How would you prevent duplicate job execution?
+* During a rolling deployment, old and new message consumers process the same queue but interpret message payloads differently. How would you handle schema compatibility and rollout sequencing?
+* A Kubernetes deployment becomes stuck because new pods never become ready, while the old pods are still serving traffic. How would you troubleshoot and recover?
+* A load balancer continues routing traffic to instances that are shutting down. How would you implement graceful termination and connection draining?
+* A zero-downtime deployment fails because user sessions are stored in local instance memory. How would you redesign session handling?
+* A multi-region release succeeds in one region but causes failures in another due to configuration differences. How would you isolate the issue and control regional rollout?
+* A release governance process delays a critical security fix, but bypassing all approvals would violate policy. How would you design an emergency-release workflow?
+* A deployment approval was granted, but the artifact changed before production deployment. How would you enforce artifact integrity and approval traceability?
+* A service depends on three independently deployed services, and one dependency is not backward-compatible. How would you plan the release sequence?
+* A canary deployment produces misleading results because most test traffic comes from internal users rather than representative customers. How would you improve traffic selection and analysis?
+* A new version has lower average latency but significantly worse p99 latency. How would you decide whether to continue the rollout?
+* A rollback is initiated after a failed deployment, but some customer data has already been transformed into a new format. How would you recover safely?
+* A feature-flag cleanup removes a flag that is still used by an infrequently executed production workflow. How would you prevent this type of regression?
+* Production deployment metrics show frequent rollbacks and slow recovery even though release frequency is high. How would you identify the underlying process and engineering problems?
+* A release is healthy at low traffic but fails after the canary reaches 25% of requests. How would you investigate capacity, concurrency, and traffic-distribution issues?
+* A critical deployment introduces a security vulnerability, and the previous version contains a different known vulnerability. How would you select and execute the safest recovery plan?
+* A business team requests immediate activation of a new feature, but the deployed code has not completed production validation. How would you separate deployment, release approval, and feature activation?
+* A long-running deployment is interrupted halfway through a regional rollout. How would you design the system to resume safely without creating inconsistent versions across regions?
+* A release changes both application code and infrastructure configuration, and rollback restores only the application. How would you improve release coordination and recovery procedures?

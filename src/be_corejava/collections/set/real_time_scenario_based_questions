@@ -1,0 +1,77 @@
+# Core Java — Collections — Set
+## Real-Time Scenario-Based Questions
+
+### Set Fundamentals
+* A service uses a Set to prevent duplicate customer registrations, but duplicate business records still appear. How would you investigate the equality logic and data flow?
+* An API returns a Set of configuration values, and callers unexpectedly modify application state through the returned collection. How would you fix the API design?
+* A team changes a collection from List to Set to improve lookup performance, but business processing changes because order was important. How would you resolve the issue?
+* A service needs unique records, stable iteration order, and efficient membership checks. How would you select and justify the Set implementation?
+* A long-running application experiences memory growth from a Set that accumulates processed identifiers. How would you investigate retention and define a cleanup policy?
+
+### HashSet
+* A HashSet contains two objects that appear identical according to business rules. How would you investigate `equals()` and `hashCode()`?
+* A user object is added to a HashSet, its identifier changes, and a later lookup fails. What caused the failure, and how would you redesign the key?
+* A batch job that uses HashSet for deduplication becomes slower as the dataset grows. How would you investigate resizing, hash distribution, and memory pressure?
+* A service uses a HashSet across multiple request threads, and duplicate entries or inconsistent behavior appear. How would you correct the concurrency design?
+* A HashSet consumes excessive memory while deduplicating millions of records. How would you profile the memory footprint and consider alternative approaches?
+
+### LinkedHashSet
+* A data-import process must remove duplicates while preserving the order in which records first appeared. How would you implement and validate the behavior?
+* A refactoring replaces LinkedHashSet with HashSet, and downstream tests become flaky because iteration order changes. How would you correct the design?
+* A service maintains a large LinkedHashSet of recently processed identifiers, but memory usage keeps growing. How would you design bounded retention?
+* A LinkedHashSet-based cache works in single-threaded tests but fails under concurrent access. How would you redesign synchronization and membership checks?
+
+### TreeSet
+* A TreeSet unexpectedly drops distinct Employee objects after a new Comparator is introduced. How would you diagnose comparator equality and restore correct behavior?
+* A reporting service needs fast retrieval of values within a timestamp range. How would you use TreeSet or NavigableSet to support the requirement?
+* A TreeSet throws a ClassCastException after a new type of object is inserted. How would you identify the ordering incompatibility?
+* A sorted-set implementation becomes slower as records increase, and most operations only need membership checks. How would you evaluate switching to HashSet?
+* A business rule requires case-insensitive uniqueness of names while preserving sorted order. How would you implement and test the Comparator?
+
+### SortedSet and NavigableSet
+* A scheduling service must find the next available time slot after a requested timestamp. How would you implement the lookup efficiently?
+* A range query unexpectedly includes or excludes boundary values. How would you investigate the inclusive and exclusive range definitions?
+* A component receives a backed `subSet()` view and unintentionally modifies the original collection. How would you prevent unintended side effects?
+* A cleanup job must efficiently retrieve all expired timestamps without scanning every entry. How would you use NavigableSet?
+* A sorted Set is shared across components, and changes to the original collection affect range views unexpectedly. How would you define the required consistency?
+
+### Set Operations and Utilities
+* A reconciliation job compares two large Sets to identify missing records but exceeds its runtime window. How would you optimize the union, intersection, or difference operations?
+* Two services compare collections to detect changes, but one comparison incorrectly ignores duplicate counts. How would you determine whether Set or multiset semantics are required?
+* A batch process must deduplicate records while preserving the first occurrence, but its current solution uses excessive memory. How would you redesign it?
+* An API exposes a read-only Set view, but clients need a consistent snapshot while updates continue. How would you provide the required behavior?
+
+### Hashing and Equality
+* A HashSet lookup fails even though the requested object appears to be present. How would you investigate mutable fields and the equality contract?
+* After a domain-model change, duplicate records start appearing in a Set. How would you test whether `equals()` and `hashCode()` remain consistent?
+* A custom key implementation causes performance degradation in a high-volume deduplication service. How would you profile hash distribution and correct the implementation?
+* A team uses database-generated identifiers in `hashCode()`, but those identifiers are assigned after insertion into a Set. What risks arise, and how would you redesign the lifecycle?
+
+### Generics and Set
+* A generic utility method cannot accept Sets of different compatible numeric types. How would you redesign the method signature?
+* A legacy module inserts incorrect object types into a raw Set, causing a ClassCastException later in processing. How would you trace and prevent the defect?
+* A handler registry uses unchecked casts to retrieve implementations from a Set-based structure. How would you improve type safety?
+* A Set-based utility needs to compute intersections between compatible generic types. How would you design the API without unnecessary restrictions?
+
+### Concurrent and Synchronized Sets
+* Multiple requests check whether an identifier exists in a Set and then add it, producing duplicate business actions. How would you make the workflow atomic?
+* A synchronized Set still experiences errors during iteration. How would you inspect the synchronization strategy?
+* A CopyOnWriteArraySet is used for a write-heavy workload, and latency increases sharply. How would you diagnose the cost and select an alternative?
+* A service uses a concurrent Set for active sessions, but updates to several related Sets must remain consistent. How would you coordinate the changes?
+* A monitoring service iterates over a concurrent Set while workers add and remove entries. How would you determine whether weakly consistent iteration is acceptable?
+* A concurrent membership index performs poorly during peak traffic. How would you investigate contention, key distribution, and the frequency of writes?
+
+### Set and Streams
+* A Stream-based deduplication pipeline processes millions of records and consumes too much memory. How would you profile and optimize it?
+* A parallel Stream adds elements to a shared HashSet, producing incorrect results. How would you correct the processing model?
+* A pipeline must deduplicate records while preserving first-seen order. How would you select the collector and validate the output?
+* A `distinct()` operation causes high latency in a production data pipeline. How would you investigate equality logic, memory allocation, and parallel execution?
+* A data-processing job must deduplicate a dataset larger than available heap memory. How would you redesign the pipeline?
+
+### Set Performance and Complexity
+* A production endpoint performs repeated membership checks against a large List and experiences high latency. How would you evaluate using a Set-based index?
+* A HashSet-based service experiences sudden CPU spikes after a new key class is deployed. How would you investigate changes to hashing and equality?
+* A TreeSet is used for a workload dominated by membership checks, but the ordering requirement is no longer needed. How would you measure and validate a possible migration?
+* A performance test shows HashSet is faster than LinkedHashSet, but production requires deterministic iteration order. How would you evaluate the real trade-off?
+* A deduplication service experiences frequent garbage collection as its Set grows. How would you investigate capacity planning, object allocation, and alternative storage approaches?
+

@@ -1,0 +1,30 @@
+* Explain the browser rendering process and how DOM changes trigger rendering.
+* How do the DOM tree and CSSOM tree contribute to page rendering?
+* What causes layout thrashing, and how can it be avoided?
+* How would you optimize DOM manipulation when updating thousands of elements?
+* Explain event delegation and its performance advantages for dynamically created elements.
+* How do passive event listeners improve scrolling performance?
+* What are the security risks associated with dynamically inserting HTML using innerHTML?
+* How would you prevent Cross-Site Scripting (XSS) when manipulating the DOM?
+* Explain the same-origin policy and how it affects Browser APIs.
+* What is Cross-Origin Resource Sharing (CORS), and how does it affect Fetch API requests?
+* How do cookies differ from localStorage and sessionStorage in terms of security and transmission?
+* What are the security implications of storing authentication tokens in browser storage?
+* How does the History API support client-side routing without full-page reloads?
+* How would you implement a custom navigation system using the History API?
+* How does the browser event loop coordinate tasks, microtasks, and rendering?
+* How do Web Workers differ from Service Workers?
+* How do Service Workers intercept network requests and support offline functionality?
+* What is the Cache API, and how can it be used with Service Workers?
+* How would you implement an offline-first web application?
+* How do Shared Workers differ from Dedicated Workers?
+* What are transferable objects, and how can they improve communication with Web Workers?
+* How would you manage memory leaks caused by event listeners and observers?
+* How does the Intersection Observer API improve infinite scrolling performance?
+* How would you implement efficient virtual scrolling for a large dataset?
+* What are the limitations and security considerations of the Geolocation API?
+* How would you manage browser permission denial for location, notifications, or clipboard access?
+* How do BroadcastChannel and the Storage API enable communication between browser tabs?
+* How would you coordinate authentication state across multiple browser tabs?
+* What are the differences between requestAnimationFrame(), setTimeout(), and setInterval()?
+* How would you profile and troubleshoot browser performance issues caused by JavaScript and Browser APIs?

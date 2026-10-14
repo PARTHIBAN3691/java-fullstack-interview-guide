@@ -1,0 +1,30 @@
+* Write a Kubernetes Deployment YAML file to deploy a Spring Boot application with three replicas.
+* Write a Kubernetes Service YAML file to expose a Spring Boot application internally using ClusterIP.
+* Write a Kubernetes Ingress configuration to route external HTTP traffic to a Spring Boot service.
+* Write a Kubernetes ConfigMap and show how to inject its values into a Spring Boot container.
+* Write a Kubernetes Secret manifest and show how to consume its values as environment variables.
+* Write a Deployment YAML file with CPU and memory requests and limits for a Java application.
+* Write a Deployment configuration with readiness, liveness, and startup probes for Spring Boot Actuator endpoints.
+* Write a Kubernetes manifest that configures a rolling update with appropriate maxSurge and maxUnavailable values.
+* Write a Kubernetes configuration that supports zero-downtime deployment using multiple replicas and readiness probes.
+* Write a HorizontalPodAutoscaler manifest for a Spring Boot application based on CPU utilization.
+* Write a Kubernetes manifest that uses a PodDisruptionBudget to protect critical application replicas.
+* Write a Kubernetes manifest that uses node affinity to schedule a Java application on selected worker nodes.
+* Write a Kubernetes manifest using taints and tolerations to isolate specialized workloads.
+* Write a NetworkPolicy that allows a backend application to receive traffic only from an approved frontend namespace.
+* Write a StatefulSet manifest with a PersistentVolumeClaim template for a stateful Java application.
+* Write a CronJob manifest that executes a scheduled Spring Boot batch process.
+* Write a Job manifest to run a one-time database migration before an application release.
+* Write a Kubernetes RBAC configuration that grants a service account read-only access to Pods in a namespace.
+* Write a Kubernetes manifest that defines separate development and production resource configurations using Kustomize.
+* Write a Helm chart structure for deploying a Spring Boot microservice with configurable replicas, resources, and service ports.
+* Write a Kubernetes deployment configuration that uses a non-root container user and a read-only root filesystem.
+* Write a Dockerfile for a production-ready Spring Boot application that supports efficient image layers and graceful shutdown.
+* Write a Spring Boot configuration that exposes health, readiness, and liveness endpoints for Kubernetes probes.
+* Write a Java program using the Kubernetes Java Client to list Pods in a specified namespace.
+* Write a Java program using the Kubernetes Java Client to retrieve the status and restart count of application Pods.
+* Write a Java program using the Kubernetes Java Client to scale a Deployment by updating its replica count.
+* Write a Java program that watches Kubernetes Pod events and reports failed or restarted Pods.
+* Write a Kubernetes manifest that configures graceful termination and an appropriate termination grace period for Spring Boot.
+* Write a CI/CD pipeline example that builds a Java application image, scans it, and deploys it to Kubernetes.
+* Write a GitOps configuration example that uses Argo CD to deploy a Spring Boot microservice from a Git repository.

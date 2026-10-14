@@ -1,0 +1,30 @@
+* Explain the JavaScript execution model for let and const declarations.
+* How do closures interact with block-scoped variables in ES6?
+* Why do let declarations behave differently from var inside loops with asynchronous callbacks?
+* Explain lexical this binding in arrow functions.
+* How does this behave in an arrow function nested inside an object method?
+* Why can arrow functions not be used as constructors?
+* Explain the difference between shallow copying and deep copying with the spread operator.
+* What are the limitations of object and array destructuring?
+* How does destructuring behave when accessing deeply nested undefined properties?
+* Explain the evaluation order of default parameters.
+* How can default parameters reference earlier parameters?
+* Explain the difference between live bindings and copied values in ES6 modules.
+* How does the ES6 module system handle circular dependencies?
+* What is the difference between CommonJS and ES6 modules?
+* Explain how Promise.all() handles rejection when one promise fails.
+* How would you implement a timeout using promises?
+* How do microtasks and the event loop affect promise callback execution?
+* Explain the difference between synchronous exceptions and rejected promises.
+* How do generators support lazy evaluation?
+* What is the difference between iterators, generators, and async iterators?
+* How does Symbol.iterator make an object iterable?
+* How do Map and Set determine key or value uniqueness?
+* Why are WeakMap keys restricted to certain types?
+* Explain inheritance using ES6 classes and the extends keyword.
+* What is the purpose of super() in derived class constructors?
+* Why must super() be called before accessing this in a derived constructor?
+* What are static methods and static properties in ES6 classes?
+* How do getters and setters work in classes?
+* How do property descriptors affect enhanced object literals?
+* What are the limitations of ES6 class inheritance compared with composition?

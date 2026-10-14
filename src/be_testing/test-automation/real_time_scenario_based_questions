@@ -1,0 +1,30 @@
+* You are asked to automate regression testing for a large Java application. How would you decide what to automate first?
+* Your automation suite contains 2,000 tests and takes six hours to execute. How would you reduce execution time?
+* Your automated tests pass locally but fail frequently in CI. How would you investigate?
+* Tests fail randomly because the application loads data asynchronously. How would you make the tests reliable?
+* Multiple tests modify the same database records when running in parallel. How would you solve the problem?
+* A Selenium test fails because an element appears at unpredictable times. How would you handle synchronization?
+* A web application frequently changes element IDs. How would you design stable locators?
+* Your test framework contains duplicated login code in hundreds of tests. How would you refactor it?
+* A test passes when run individually but fails when the entire suite is executed. How would you investigate test isolation issues?
+* Your API automation tests depend on an external payment service that is frequently unavailable. How would you design the tests?
+* You need to validate an order workflow across UI, API, database, and Kafka. How would you automate the complete flow?
+* A test failure occurs in CI, but the logs do not provide enough information to identify the problem. What diagnostics would you add?
+* Your team wants to add retry logic to every failed test. Would you recommend this? Why?
+* Your automated tests require different credentials for development, QA, and staging. How would you manage them securely?
+* A database contains dynamic test data that changes between executions. How would you make the tests reliable?
+* An API response contains dynamic timestamps and IDs. How would you validate the response without making the test brittle?
+* Your application uses eventual consistency, and the database is updated several seconds after an API call. How would you automate the validation?
+* A microservice publishes a Kafka event after processing an API request. How would you automate and validate the complete workflow?
+* Your UI automation suite is unstable because of browser and WebDriver version differences. How would you address this?
+* You need to execute the same tests against Chrome, Firefox, and Edge. How would you design the framework?
+* Your automation framework has become difficult to maintain because every test contains custom utility code. How would you redesign it?
+* A production bug was not detected by automation even though the related feature had automated tests. How would you investigate the coverage gap?
+* Your team has thousands of manual regression test cases. How would you create an automation roadmap?
+* An automated test occasionally fails due to network timeout. How would you distinguish an application defect from infrastructure instability?
+* A test modifies application configuration and causes other tests to fail. How would you isolate configuration changes?
+* Your automation suite needs to run both locally and inside Docker containers. How would you design the framework?
+* Your CI pipeline needs smoke tests on every commit and full regression tests nightly. How would you organize the test suites?
+* Your team wants to execute tests in parallel across multiple machines. How would you design distributed test execution?
+* You need to automate a payment workflow where real transactions cannot be created. How would you test it safely?
+* How would you design an automation framework that remains maintainable as the application grows from a monolith into microservices?

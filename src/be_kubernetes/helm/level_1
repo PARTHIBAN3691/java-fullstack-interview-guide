@@ -1,0 +1,30 @@
+* How do you create a Helm Chart for a Spring Boot application?
+* How do you package a Helm Chart into a distributable archive?
+* How do you install a Helm Chart into a specific Kubernetes namespace?
+* How do you upgrade a Helm Release using a custom values file?
+* How do you roll back a Helm Release to a previous revision?
+* How do you pass custom values using the --set option?
+* How does Helm merge default values with user-provided values?
+* What is the difference between --values and --set during Helm installation?
+* How do you configure multiple environments using separate values files?
+* How do you define Kubernetes Deployments and Services using Helm templates?
+* How do you use built-in objects such as .Values, .Release, and .Chart in templates?
+* What is the purpose of the include function in Helm templates?
+* What is the difference between include and template in Helm?
+* How do you use named templates to avoid duplicate YAML configuration?
+* How do you define conditional resources using if and else statements?
+* How do you generate multiple Kubernetes resources using range loops?
+* How do you use default values in Helm templates?
+* How do you use required and fail functions in Helm?
+* How do you manage dependencies between Helm Charts?
+* How do you configure a dependency in Chart.yaml?
+* What is the purpose of the Chart.lock file?
+* How do you use helm dependency update and helm dependency build?
+* How do you validate rendered Kubernetes manifests before deployment?
+* How do you use helm upgrade --install in a CI/CD pipeline?
+* How do you manage application image tags through Helm values?
+* How do you configure ConfigMaps and Secrets using Helm Charts?
+* How do you use Helm hooks during installation, upgrade, and deletion?
+* How do you configure resource requests, limits, and health probes through Helm values?
+* How do you debug a Helm Chart that generates invalid Kubernetes YAML?
+* How do you share and publish Helm Charts for use by multiple teams?

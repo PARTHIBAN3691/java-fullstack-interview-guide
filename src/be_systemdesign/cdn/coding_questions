@@ -1,0 +1,30 @@
+* Write a Java method that generates Cache-Control headers for publicly cacheable static content.
+* Create a Spring Boot endpoint that returns ETag and Last-Modified headers for a resource.
+* Implement conditional GET handling that returns HTTP 304 when the resource has not changed.
+* Write a Java utility that generates versioned asset URLs for cache busting.
+* Implement a cache-key generator that normalizes query parameters before caching a response.
+* Write a Spring Boot configuration that sets appropriate Cache-Control headers for static resources.
+* Implement a response filter that prevents sensitive API responses from being cached by shared caches.
+* Create a Java method that validates the expiration time of a signed download URL.
+* Implement HMAC-based signing and verification for a time-limited CDN URL.
+* Write a Java method that validates a signed URL and rejects expired or tampered requests.
+* Implement a simple in-memory cache that supports TTL and explicit invalidation.
+* Write a Java service that purges selected cache keys after a successful product update.
+* Implement a cache-aside service that retrieves content from a repository when the cache misses.
+* Write a Spring Boot service that supports stale-while-revalidate behavior for cached content.
+* Implement a Java request coalescing mechanism to prevent concurrent cache misses from triggering duplicate origin requests.
+* Write a Java method that classifies static assets, public API responses, and private responses by cache policy.
+* Implement a Spring Boot filter that adds cache headers based on the endpoint and response type.
+* Write a Java utility that calculates CDN cache hit ratio from hit and miss counts.
+* Implement a simple origin-protection mechanism that limits concurrent cache-miss requests.
+* Write a Java program that simulates multiple edge caches backed by a shared origin server.
+* Implement a fallback mechanism that serves previously cached content when the origin is unavailable.
+* Write an integration test that verifies private responses include Cache-Control: no-store.
+* Create a test that verifies a versioned JavaScript asset is cached for a long duration.
+* Write a test that verifies conditional requests return HTTP 304 when the ETag matches.
+* Implement a Java utility that calculates the expected bandwidth savings from CDN cache hits.
+* Write a Spring Boot integration test that simulates an origin timeout and verifies the configured fallback behavior.
+* Implement a request-validation mechanism that prevents untrusted headers from influencing sensitive cache keys.
+* Write a Java example that routes requests between two CDN providers based on health and configured weights.
+* Implement a monitoring component that tracks cache hit ratio, origin latency, and origin error rate.
+* Design and implement a Spring Boot content-delivery service with cache policies, signed URLs, versioned assets, origin protection, observability, and automated tests.

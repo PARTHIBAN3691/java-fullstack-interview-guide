@@ -1,0 +1,30 @@
+* How do you create a ClusterIP Service for a Spring Boot application?
+* How do you expose a Deployment using a NodePort Service?
+* How do you configure a LoadBalancer Service on a cloud Kubernetes cluster?
+* How do you map a Service port to a container port?
+* How do you configure a Service to select Pods using multiple labels?
+* How does Kubernetes update Service endpoints when Pods scale up or down?
+* How do you verify that a Service selector matches the intended Pods?
+* How do you troubleshoot an empty EndpointSlice?
+* How do you access a ClusterIP Service from another namespace?
+* How does Kubernetes DNS resolve Service names?
+* What is the fully qualified domain name of a Kubernetes Service?
+* How do you access a Service from a Pod in another namespace?
+* How do you configure a headless Service?
+* When would you use a headless Service instead of ClusterIP?
+* How do Services work with StatefulSets?
+* How do you expose a Java application running on port 8080?
+* How do readiness probes affect Service traffic routing?
+* What happens when all Pods behind a Service become unready?
+* How do you configure a Service to expose multiple ports?
+* How do you configure a Service with a specific external IP?
+* What is externalTrafficPolicy, and when would you use Local instead of Cluster?
+* How does sessionAffinity work in Kubernetes Services?
+* What are the limitations of ClientIP session affinity?
+* How do you configure a Service without a selector?
+* How do you manually manage endpoints for an external backend?
+* How do you connect a Kubernetes Service to an external database?
+* What is the difference between a Service and an Ingress?
+* What is the difference between a Service and a Gateway API resource?
+* How do you troubleshoot intermittent connectivity through a Service?
+* How do you monitor Service traffic and availability?

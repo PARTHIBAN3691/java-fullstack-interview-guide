@@ -1,0 +1,30 @@
+* A JavaScript function passes locally but fails in CI. How would you investigate the problem?
+* An asynchronous test completes before the API response arrives. How would you fix it?
+* A Jest test passes individually but fails when the entire suite runs. What could cause this?
+* Your test suite takes 20 minutes to execute. How would you reduce execution time?
+* A mocked API returns incorrect data and causes a test to pass unexpectedly. How would you improve the test?
+* A test becomes flaky because it depends on setTimeout(). How would you make it deterministic?
+* Your application uses localStorage for user preferences. How would you test it without relying on real browser storage?
+* A React component renders correctly but its click handler does not work. How would you investigate the test failure?
+* A developer changes internal implementation details and breaks many tests despite unchanged behavior. How would you improve the test design?
+* Your unit tests pass, but production API integration fails. What additional tests would you introduce?
+* A date-dependent function produces different results across time zones. How would you test and fix it?
+* A test suite relies on a shared global variable that causes intermittent failures. How would you isolate the tests?
+* You need to test a function that retries a failed network request three times. How would you verify the retry behavior?
+* Your application uses a third-party library that is difficult to test. How would you isolate the dependency?
+* A test reports 95% code coverage, but critical production bugs continue to occur. How would you improve test effectiveness?
+* A promise rejection is not detected by a test, causing an unhandled rejection. How would you correct the test?
+* You need to verify that a form displays validation messages for invalid input. How would you design the test cases?
+* A JavaScript module depends on the current time and random values. How would you make the tests reproducible?
+* An end-to-end test fails intermittently because an element is not immediately available. How would you address the timing issue?
+* A new feature changes an existing API response format. How would you test backward compatibility?
+* You are migrating a project from Jest to Vitest. What compatibility and configuration issues would you test?
+* A security fix changes input sanitization logic. How would you test it against both valid and malicious inputs?
+* A large monorepo contains shared utility functions used by multiple applications. How would you organize testing?
+* A test passes after adding a delay but fails without it. How would you identify the underlying race condition?
+* Your CI pipeline runs unit tests but no integration tests. What risks does this create, and how would you improve the pipeline?
+* A production bug cannot be reproduced consistently. How would you use regression tests to prevent it from recurring?
+* A frontend component triggers duplicate API calls during rendering. How would you test and diagnose the behavior?
+* You need to verify that a payment operation is not submitted twice after repeated clicks. How would you test this requirement?
+* A refactoring changes a shared prototype method used by multiple modules. How would you validate that existing behavior remains correct?
+* You are responsible for improving test quality in a legacy JavaScript application. What would you prioritize first?

@@ -1,0 +1,21 @@
+
+* Explain the architecture for centralized logging and monitoring across multiple AWS accounts and regions using CloudWatch.
+* How would you design an observability strategy using CloudWatch metrics, logs, alarms, and dashboards for a large microservices platform?
+* How would you implement custom CloudWatch metrics in a Java Spring Boot application using the AWS SDK for Java 2.x?
+* How would you design CloudWatch alarms to minimize false positives while detecting production incidents quickly?
+* How would you troubleshoot missing or delayed metrics in CloudWatch?
+* How would you investigate a CloudWatch alarm that repeatedly transitions between ALARM and OK states?
+* How would you design a scalable log ingestion pipeline for applications generating millions of log events per minute?
+* How would you use metric filters to derive business metrics from application logs?
+* How would you configure cross-account observability using CloudWatch?
+* How would you monitor distributed request latency across API Gateway, Lambda, and downstream services?
+* How would you integrate CloudWatch with AWS X-Ray for distributed tracing and root-cause analysis?
+* How would you use CloudWatch anomaly detection to identify unusual application behavior?
+* How would you design composite alarms for a multi-tier application with dependent services?
+* How would you handle CloudWatch Logs throttling, ingestion delays, and API rate limits?
+* How would you manage CloudWatch dashboards and alarms as infrastructure as code?
+* How would you optimize metric cardinality and cost when publishing custom metrics from thousands of application instances?
+* How would you implement reliable alarm notifications and incident escalation using CloudWatch and other AWS services?
+* How would you securely centralize logs while preventing sensitive information from being exposed?
+* How would you monitor application SLOs, error rates, and latency percentiles using CloudWatch?
+* How would you distinguish an application failure from an AWS infrastructure issue using CloudWatch telemetry?

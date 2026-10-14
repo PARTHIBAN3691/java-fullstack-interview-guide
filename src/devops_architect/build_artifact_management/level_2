@@ -1,0 +1,30 @@
+* How would you design a centralized build and artifact management platform for hundreds of microservices across multiple teams?
+* How would you design a multi-region artifact repository architecture with high availability and disaster recovery?
+* How would you prevent dependency confusion attacks when internal and public packages share similar names?
+* How would you protect a build pipeline against malicious dependency updates and compromised package maintainers?
+* How would you design a dependency governance strategy that balances security, stability, and developer productivity?
+* How would you resolve a dependency conflict where different transitive dependency paths require incompatible versions?
+* How would you diagnose a Maven build that resolves different dependency versions on different developer machines?
+* How would you investigate a Gradle build whose dependency graph changes unexpectedly between executions?
+* How would you design a reproducible build system that produces identical artifacts from the same source and controlled inputs?
+* How would you distinguish between a reproducible build failure and an artifact repository corruption issue?
+* How would you design immutable artifact storage while supporting retention policies and regulatory requirements?
+* How would you enforce artifact immutability across Nexus, Artifactory, and container registries?
+* How would you implement artifact promotion without rebuilding the application for each environment?
+* How would you guarantee that the artifact tested in staging is exactly the artifact deployed to production?
+* How would you design a secure artifact signing and verification process across the CI/CD lifecycle?
+* How would you integrate provenance attestations with artifact publication and deployment verification?
+* How would you implement a software supply chain security strategy using SBOMs, artifact signing, and provenance?
+* How would you manage vulnerabilities discovered in dependencies after an artifact has already been released?
+* How would you prioritize vulnerability remediation when a critical CVE affects hundreds of services?
+* How would you handle a false positive from a dependency vulnerability scanner without weakening security controls?
+* How would you design risk-based policy gates for vulnerabilities, license compliance, and dependency freshness?
+* How would you generate and validate complete SBOMs for applications containing Java, npm, and container dependencies?
+* How would you track the impact of a newly disclosed vulnerability across deployed applications using SBOM data?
+* How would you design artifact retention and cleanup policies without deleting dependencies required for historical rebuilds?
+* How would you optimize artifact storage costs while preserving traceability and rollback capabilities?
+* How would you investigate a sudden increase in build duration caused by remote repository latency?
+* How would you design dependency caching that improves build performance without serving stale or compromised artifacts?
+* How would you migrate from Nexus to JFrog Artifactory with minimal disruption to active pipelines?
+* How would you design artifact versioning for independently deployed microservices and shared libraries?
+* How would you measure and improve the reliability, security, reproducibility, and cost efficiency of the enterprise build platform?

@@ -1,0 +1,30 @@
+* Write a Java program to check whether a number is even or odd and create unit tests using JUnit.
+* Write JUnit tests for a method that calculates the factorial of a number.
+* Write tests for a Java method that validates an email address.
+* Implement a method to check whether a string is a palindrome and test positive and negative cases.
+* Write unit tests for a method that returns the maximum of three numbers.
+* Write tests for a method that calculates simple interest, including boundary and invalid inputs.
+* Write JUnit tests for a method that calculates employee bonuses based on performance ratings.
+* Implement a Java method that validates age eligibility and write boundary value tests.
+* Write tests for a method that calculates discounts based on purchase amounts using decision table testing.
+* Write JUnit tests for a method that handles null values, empty strings, and whitespace.
+* Create parameterized JUnit tests for multiple valid and invalid input combinations.
+* Write tests for a Java method that throws exceptions for invalid arguments.
+* Use Mockito to unit-test a service class that depends on a repository.
+* Write a unit test that verifies a service method calls a dependency exactly once.
+* Write a test that verifies the behavior of a service when a repository throws an exception.
+* Implement a Java method that validates a bank account balance before processing a withdrawal and test its edge cases.
+* Write tests for a Java class that performs CRUD operations through a repository interface.
+* Create an integration test for a Spring Boot REST controller using MockMvc.
+* Write tests for a REST API that validates request payloads and returns appropriate HTTP status codes.
+* Implement a test fixture that creates and cleans up test data before and after each test.
+* Write a parameterized test that validates multiple combinations of user roles and permissions.
+* Create tests for a method that processes a collection using Java Streams.
+* Write a test for an asynchronous Java method using CompletableFuture.
+* Implement a test that verifies correct behavior when two threads update the same shared resource.
+* Write a test that uses a mock clock to verify time-dependent business logic.
+* Create a test that validates transaction rollback when a database operation fails.
+* Write a Java test that verifies retry behavior when an external service temporarily fails.
+* Implement a test that checks whether an API response meets a configured performance threshold.
+* Write a test suite that verifies backward compatibility between two API response versions.
+* Build a Java testing project using JUnit 5, Mockito, Maven, JaCoCo, and CI/CD integration with unit, integration, and regression tests.

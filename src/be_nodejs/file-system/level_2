@@ -1,0 +1,30 @@
+* Explain how Node.js handles asynchronous file-system operations internally.
+* How do asynchronous file-system operations interact with the event loop and libuv thread pool?
+* Why can synchronous file operations reduce the performance of a Node.js server?
+* How would you process millions of files without exhausting memory?
+* How would you implement a file-processing pipeline with backpressure handling?
+* What is the difference between fs.createReadStream(), fs.createWriteStream(), and fs.promises.readFile()?
+* How do highWaterMark and backpressure affect file-stream performance?
+* How do you handle stream errors and ensure proper cleanup of file descriptors?
+* How would you implement atomic file updates to avoid partially written files?
+* How would you prevent concurrent writes from corrupting a shared JSON file?
+* How would you implement a file lock for concurrent file processing?
+* How do you prevent race conditions between checking a file and opening it?
+* How would you safely create a file only if it does not already exist?
+* How do file descriptors work in Node.js, and why must they be closed correctly?
+* How would you detect and prevent file descriptor leaks?
+* How do symbolic links create security risks in file-processing applications?
+* How would you prevent path traversal attacks when users provide file paths?
+* How do you safely handle untrusted filenames uploaded by clients?
+* How would you implement a reliable file watcher for directories with frequent changes?
+* How would you handle missed or duplicated file-system watcher events?
+* How would you design a resumable file-copy mechanism for large files?
+* How would you implement file integrity verification using checksums or hashes?
+* How would you compare file metadata and content to detect changes efficiently?
+* How would you implement recursive directory traversal with bounded concurrency?
+* How would you optimize file processing when the libuv thread pool becomes a bottleneck?
+* How would you implement retry logic for transient file-system errors?
+* How would you design a cross-platform file-processing library for Windows, Linux, and macOS?
+* How would you ensure file permissions and ownership are handled securely?
+* How would you implement a durable file-write strategy for critical application data?
+* How would you test file-system code for race conditions, failures, and high concurrency?

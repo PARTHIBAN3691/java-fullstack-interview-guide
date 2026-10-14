@@ -1,0 +1,30 @@
+* A navigation header must remain visible while scrolling. Would you use fixed or sticky positioning, and why?
+* A dropdown menu appears behind a modal even though it has a higher z-index. How would you debug the issue?
+* A tooltip must appear directly above a button. How would you position it relative to the button?
+* A notification badge must appear at the top-right corner of a profile image. How would you implement it?
+* A floating support button must remain at the bottom-right corner of the viewport. Which positioning method would you use?
+* A sticky sidebar stops sticking when the user scrolls. What CSS properties and ancestor elements would you inspect?
+* A modal dialog is hidden behind a header. How would you fix its stacking order?
+* An absolutely positioned element appears in the wrong location. How would you identify its containing block?
+* A child element needs to overlap its parent without changing the surrounding layout. How would you achieve this?
+* A fixed navigation bar covers the page heading when navigating to an anchor link. How would you fix it?
+* A dropdown menu gets clipped by its parent container. How would you investigate the overflow and positioning rules?
+* A sticky header works in one section but not another. What differences in the parent containers would you inspect?
+* A transformed parent causes a supposedly fixed element to move while scrolling. Why might this happen?
+* A product image needs a sale badge and a favorite icon positioned over it. How would you design the layout?
+* A page contains several modals, tooltips, and dropdowns that overlap unpredictably. How would you organize their stacking layers?
+* A floating action button overlaps important mobile content. How would you improve the layout?
+* A sidebar must stick within the boundaries of its parent section. How would you implement this behavior?
+* A loading spinner must appear centered over a particular component rather than the entire viewport. How would you position it?
+* A chat widget must stay fixed to the bottom-right corner and remain usable on small screens. What considerations would you make?
+* An absolutely positioned element becomes misaligned when the parent container resizes. How would you make the layout more responsive?
+* A sticky navigation bar flickers when scrolling on mobile browsers. How would you investigate the problem?
+* A child element with a high z-index remains behind another component. How would you determine whether stacking contexts are involved?
+* A card's action menu must extend outside the card without being clipped. What layout and overflow choices would you consider?
+* A fixed banner overlaps a cookie-consent dialog. How would you define a consistent layering strategy?
+* A notification panel must appear above all ordinary page content. What would you consider beyond simply increasing z-index?
+* A responsive page uses absolute positioning for several content sections and breaks on mobile. How would you redesign it?
+* A sticky table header must remain visible while the table body scrolls. How would you implement it?
+* A tooltip is cut off near the edge of the viewport. How would you handle its placement and overflow?
+* A user navigates the page using only a keyboard, but positioned elements appear in a confusing visual order. How would you address the issue?
+* A team needs consistent positioning and layering conventions across a large application. What guidelines would you establish?

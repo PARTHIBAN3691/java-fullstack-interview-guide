@@ -1,0 +1,63 @@
+
+**Site Reliability Engineering (SRE)**
+* What is Site Reliability Engineering, and what problems does it solve?
+* How does SRE differ from traditional IT operations?
+* What are the primary responsibilities of an SRE?
+* What is the difference between an SLI, SLO, and SLA?
+
+**Availability and Reliability**
+* What is availability in a software system?
+* What is reliability, and how does it differ from availability?
+* How do you calculate system availability as a percentage?
+* What do 99%, 99.9%, and 99.99% availability mean?
+* What is the difference between uptime and downtime?
+
+**Resilience and Fault Tolerance**
+* What is resilience in distributed systems?
+* What is fault tolerance?
+* How does fault tolerance differ from resilience?
+* What is high availability?
+* Why is redundancy important for reliable systems?
+
+**Disaster Recovery**
+* What is disaster recovery?
+* What are Recovery Time Objective (RTO) and Recovery Point Objective (RPO)?
+* What is the difference between backup and disaster recovery?
+* What are active-active and active-passive disaster recovery configurations?
+
+**Failure Domains and Fault Isolation**
+* What is a failure domain?
+* What is fault isolation?
+* Why should applications be deployed across multiple availability zones?
+* What is a single point of failure?
+
+**Graceful Degradation and Backpressure**
+* What is graceful degradation?
+* What is backpressure in a distributed system?
+* Why should a service avoid accepting unlimited requests?
+* How can an application remain useful when a non-critical dependency fails?
+
+**Load Shedding**
+* What is load shedding?
+* Why might a service reject requests even when those requests are valid?
+* What is the difference between load shedding and rate limiting?
+
+**Circuit Breakers, Bulkheads, Retries, and Timeouts**
+* What is a circuit breaker pattern?
+* What are the closed, open, and half-open states of a circuit breaker?
+* What is the bulkhead pattern?
+* What is a retry policy?
+* Why are timeouts important for remote service calls?
+* What is the difference between a connection timeout and a read timeout?
+* Why can unlimited retries make an outage worse?
+
+**Chaos Engineering**
+* What is chaos engineering?
+* Why do teams intentionally inject failures into systems?
+* What is the difference between chaos engineering and ordinary testing?
+
+**Error Budgets**
+* What is an error budget?
+* How is an error budget related to an SLO?
+* Why do engineering teams use error budgets?
+* What happens when an error budget is exhausted?

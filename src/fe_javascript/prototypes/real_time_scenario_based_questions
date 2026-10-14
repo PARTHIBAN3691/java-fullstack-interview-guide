@@ -1,0 +1,30 @@
+* You have 10,000 objects sharing the same methods. How would you use prototypes to reduce memory usage?
+* An object can access a property that was never declared on it. How would you investigate the prototype chain?
+* A method works when called as object.method() but fails when assigned to a variable. How could prototype behavior explain this?
+* You modify a constructor's prototype after creating instances. Which changes will existing instances observe?
+* A developer adds a method directly to every instance. How would you refactor the code to use prototypes?
+* A property inherited from a prototype unexpectedly changes the behavior of several objects. How would you debug it?
+* You need to create objects that inherit from a shared configuration object. Which prototype API would you choose and why?
+* Your application uses multiple levels of constructor-based inheritance. How would you inspect and verify the prototype chain?
+* An instanceof check returns false even though an object appears to inherit from a constructor. What could cause this?
+* A constructor's prototype is replaced, and the constructor property now returns an unexpected value. How would you fix it?
+* You need objects that do not inherit from Object.prototype. How would you create them and what should you consider?
+* A library modifies Array.prototype and breaks another part of your application. How would you resolve the conflict?
+* A user-controlled JSON object changes application behavior after being merged into a configuration object. How would you investigate prototype pollution?
+* You need to check whether an object owns a property without being affected by its prototype. Which API would you use?
+* An inherited getter runs unexpectedly when a property is read. How would you identify its source?
+* You want several object types to share a common method but maintain different implementations. How would you design their prototypes?
+* A prototype method accesses the wrong object because this is undefined. How would you fix the method invocation?
+* You need to prevent a shared prototype from being modified accidentally. What approaches could you use?
+* A performance-sensitive application frequently changes object prototypes. What problems might arise, and how would you redesign it?
+* You need to support legacy constructor functions while introducing ES6 classes. How would you handle their prototype relationships?
+* A property appears in a for...in loop even though it was not defined directly on the object. How would you identify its origin?
+* You need to copy an object's properties while preserving its prototype behavior. What approaches would you consider?
+* Two constructors have instances that need to share selected behavior. How could you design this without duplicating methods?
+* A proxy object throws an error during prototype inspection. What proxy invariants would you investigate?
+* You need to secure a configuration-processing utility against malicious object keys. How would you design it?
+* A method added to a prototype is visible to existing instances but not to an object with a different prototype. Why?
+* You need to test whether an object inherits from a particular prototype without relying on constructor names. How would you do it?
+* A class extends another class, but static methods and instance methods behave differently. How would you explain the prototype relationships?
+* You discover that an object has a null prototype. How would you safely inspect its properties?
+* You are reviewing a codebase that uses __proto__ extensively. How would you modernize the prototype-related code?

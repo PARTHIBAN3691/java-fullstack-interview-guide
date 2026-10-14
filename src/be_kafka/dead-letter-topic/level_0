@@ -1,0 +1,30 @@
+* What is a Dead Letter Topic (DLT) in Apache Kafka?
+* Why do we need a Dead Letter Topic?
+* What is the difference between a Dead Letter Topic and a normal Kafka topic?
+* What types of messages are typically sent to a Dead Letter Topic?
+* What are the common reasons for sending a message to a Dead Letter Topic?
+* How does Kafka handle messages that fail during processing?
+* What is the relationship between a Kafka consumer and a Dead Letter Topic?
+* What is a poison pill message in Kafka?
+* What is the difference between a retry topic and a Dead Letter Topic?
+* Can a Kafka producer publish messages directly to a Dead Letter Topic?
+* How are failed messages identified in a Kafka consumer application?
+* What is the purpose of a Dead Letter Topic in Spring Kafka?
+* What is the default behavior when a Kafka consumer encounters a processing exception?
+* What information should be stored in a Dead Letter Topic message?
+* Why should the original message be preserved in a Dead Letter Topic?
+* Can a Dead Letter Topic contain messages from multiple source topics?
+* What is the difference between a Dead Letter Queue and a Dead Letter Topic?
+* How do message headers help when processing Dead Letter Topic records?
+* What is the purpose of recording the original topic name in a dead-letter message?
+* What is a deserialization error in Kafka?
+* How can invalid JSON messages be handled using a Dead Letter Topic?
+* What is the role of exception handling in Dead Letter Topic processing?
+* Should every failed Kafka message be sent to a Dead Letter Topic?
+* How can you identify messages in a Dead Letter Topic?
+* What is the purpose of monitoring a Dead Letter Topic?
+* Can messages in a Dead Letter Topic be consumed again?
+* What is message replay in Kafka?
+* What is the difference between a failed message and a permanently invalid message?
+* How can a Dead Letter Topic help with troubleshooting?
+* What are the basic steps to configure a Dead Letter Topic in a Kafka application?

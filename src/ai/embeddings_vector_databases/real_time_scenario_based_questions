@@ -1,0 +1,83 @@
+**Embedding Fundamentals**
+* A document ingestion pipeline generates embeddings successfully, but relevant documents are missing from search results. How would you investigate preprocessing, model configuration, indexing, and query construction?
+* After a content-management update, the system repeatedly embeds unchanged documents and costs increase sharply. How would you identify the cause and introduce reliable incremental processing?
+* A team changes text normalization and notices that search results become inconsistent. How would you isolate the effect of preprocessing from the embedding model and index?
+* Embedding jobs fail intermittently on large batches, leaving some documents searchable and others missing. How would you design retry, checkpointing, and reconciliation mechanisms?
+
+**Text and Multimodal Embeddings**
+* A product-search application retrieves relevant text descriptions but fails to find visually matching products. How would you investigate cross-modal alignment, image preprocessing, and retrieval evaluation?
+* A multimodal search feature performs well for English content but poorly for regional-language queries. How would you isolate language coverage and modality-related issues?
+* Text-to-image retrieval works in a test environment but degrades after the image-processing pipeline changes. How would you compare preprocessing, embedding versions, and index consistency?
+* A single retrieval system combines text, image, and audio vectors, but image results dominate regardless of query type. How would you diagnose and correct the ranking behavior?
+
+**Semantic Similarity**
+* A duplicate-question detector incorrectly merges questions that use similar words but have opposite meanings. How would you investigate the embedding model, thresholds, and evaluation dataset?
+* Users report that semantically equivalent questions receive different results because they use technical abbreviations. How would you improve preprocessing, domain coverage, and similarity evaluation?
+* A semantic-search system performs well on general documents but poorly on banking terminology. How would you identify domain mismatch and evaluate possible improvements?
+* A similarity threshold that worked during testing creates too many false positives in production. How would you recalibrate it using real queries and business error costs?
+
+**Cosine Similarity and Distance Metrics**
+* Search relevance declines after vectors are normalized during an optimization release. How would you investigate vector norms, metric configuration, and index behavior?
+* Two services use the same embeddings but return different rankings for identical queries. How would you verify metric consistency, normalization, filters, and tie-breaking?
+* A team switches from cosine similarity to Euclidean distance to improve performance, but retrieval quality changes unexpectedly. How would you benchmark the alternatives and determine whether to roll back?
+* Similarity scores are being interpreted as confidence percentages by a downstream service. How would you correct the misuse and establish an appropriate relevance-calibration strategy?
+
+**Vector Indexing**
+* Search latency increases after the vector collection grows from one million to fifty million records. How would you investigate index selection, memory pressure, filtering, and query concurrency?
+* A vector-index rebuild consumes resources and causes production latency spikes. How would you redesign maintenance and rollout procedures?
+* Newly ingested records are not immediately returned by search. How would you investigate index refresh, asynchronous ingestion, and consistency guarantees?
+* A deletion request removes a source document but its chunks remain searchable. How would you trace deletion propagation across storage, metadata, and the index?
+
+**Approximate Nearest Neighbor (ANN) Search**
+* ANN search becomes faster after a parameter change, but relevant results disappear. How would you measure recall and choose safer parameter values?
+* Production recall is substantially lower than offline benchmark recall. How would you investigate query distribution, metadata filters, data drift, and ground-truth quality?
+* A filtered search returns fewer results than requested even though enough matching records exist. How would you investigate candidate generation, filter execution, and ANN search settings?
+* Exact search performs acceptably on small collections but becomes too expensive as data grows. How would you establish an ANN baseline and quantify the trade-offs?
+
+**Vector Database Architecture**
+* A vector database outage makes the enterprise knowledge assistant unavailable. How would you restore service and redesign availability, backups, and recovery?
+* One tenant's large ingestion workload causes other tenants' search requests to time out. How would you isolate workloads and implement fair resource allocation?
+* Search results refer to deleted or outdated documents because metadata and vector storage have diverged. How would you reconcile the data and prevent future inconsistencies?
+* A regional migration increases latency for some users while reducing it for others. How would you investigate placement, replication, query routing, and data locality?
+
+**Metadata Filtering**
+* Users receive search results belonging to other tenants after a filtering optimization. How would you contain the incident, identify the defect, and prove that authorization is enforced correctly?
+* Applying a restrictive metadata filter causes search latency to increase dramatically. How would you investigate filter selectivity and index support?
+* A user's access to a document is revoked, but cached search results still expose its content. How would you update authorization checks, invalidate caches, and test revocation behavior?
+* Search returns too few results when filters are combined with ANN retrieval. How would you decide between pre-filtering, oversampling, partitioning, and post-filtering?
+
+**Hybrid Search**
+* Vector search finds conceptually relevant documents but misses exact error codes and product identifiers. How would you introduce lexical retrieval and evaluate the combined results?
+* Hybrid search produces worse rankings than vector-only search after a release. How would you investigate score fusion, BM25 configuration, and candidate overlap?
+* A search system returns duplicate chunks from the same document in the top results. How would you modify retrieval, fusion, and document-level diversification?
+* Natural-language queries improve after hybrid search is introduced, but latency increases beyond the service objective. How would you profile both retrieval paths and optimize the pipeline?
+
+**Reranking**
+* The first-stage retriever finds relevant documents, but the final answers use irrelevant passages. How would you determine whether reranking is needed and measure its effect?
+* A cross-encoder improves offline relevance but causes production timeouts. How would you reduce candidate count, batch requests, and introduce graceful degradation?
+* Reranking disproportionately demotes documents containing technical abbreviations. How would you investigate training coverage, preprocessing, and evaluation data?
+* The reranking service becomes unavailable during peak load. How would you preserve acceptable retrieval quality while protecting the main search service?
+
+**Chunking Strategies**
+* A RAG assistant misses important details because definitions and their explanations fall into separate chunks. How would you redesign chunk boundaries and test the result?
+* Increasing chunk overlap improves recall but dramatically increases storage and duplicate search results. How would you identify an appropriate balance?
+* Tables from policy documents produce misleading answers because column headers are separated from their values. How would you redesign table extraction and chunking?
+* A change to chunk size causes retrieval quality to decline across the knowledge base. How would you compare chunking configurations using a controlled evaluation dataset?
+
+**Embedding Model Selection**
+* A new embedding model improves benchmark results but performs poorly on real customer queries. How would you investigate dataset representativeness, query types, and model-specific preprocessing?
+* A larger embedding model improves retrieval relevance but doubles inference cost and latency. How would you evaluate the business trade-off and possible alternatives?
+* A model upgrade improves English retrieval but reduces regional-language performance. How would you analyze per-language metrics and decide whether to use separate models?
+* A provider retires an embedding model that is used across production indexes. How would you plan replacement, backfill, evaluation, and rollback?
+
+**Embedding Versioning**
+* A model upgrade leaves old document vectors in the index while new queries use the new model. How would you detect the mismatch and restore consistent retrieval?
+* A dual-index migration produces different answers depending on which index handles the query. How would you compare relevance, monitor parity, and plan cutover?
+* A backfill job crashes halfway through an embedding migration and is restarted multiple times. How would you ensure idempotency and track migration completeness?
+* The team needs to reproduce a search result from six months ago after several model and preprocessing upgrades. What metadata and artifacts would you need?
+
+**Vector Database Performance Optimization**
+* Vector-search p99 latency increases while average latency remains stable. How would you investigate tail latency, resource contention, filter selectivity, and query patterns?
+* Memory consumption grows unexpectedly after increasing the number of replicas. How would you investigate index duplication, caching, and capacity allocation?
+* Embedding ingestion falls behind source-data updates during a major import. How would you tune batch sizes, concurrency, and indexing without starving online search?
+* A quantization optimization reduces memory consumption but increases missed relevant results. How would you measure the recall loss and determine acceptable production settings?

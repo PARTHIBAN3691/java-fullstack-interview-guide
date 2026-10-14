@@ -1,0 +1,30 @@
+* Explain the internal working of the Node.js event loop and its interaction with libuv.
+* How does the libuv thread pool differ from the JavaScript main thread?
+* Which Node.js operations use the libuv thread pool?
+* How can excessive use of process.nextTick() starve the event loop?
+* How can long-running Promise chains affect event-loop responsiveness?
+* Explain the difference between the Promise microtask queue and the Node.js next-tick queue.
+* How does the ordering of timers and immediates vary across Node.js versions?
+* How would you diagnose event-loop lag in a production application?
+* How do you identify asynchronous operations that are blocking request processing?
+* How would you implement a concurrency limiter without using an external library?
+* How would you implement a Promise pool that processes tasks with a maximum concurrency limit?
+* How would you implement cancellation for asynchronous operations using AbortController?
+* How would you design a timeout mechanism that also cancels the underlying operation?
+* How would you prevent memory leaks caused by unresolved Promises?
+* How do you manage backpressure when asynchronous producers are faster than consumers?
+* How would you implement retries with exponential backoff and jitter for asynchronous operations?
+* How do you prevent duplicate execution when retrying asynchronous operations?
+* How would you implement a circuit breaker around asynchronous service calls?
+* How do you maintain execution order while processing tasks concurrently?
+* How would you implement a fail-fast asynchronous workflow with proper cleanup?
+* How would you implement a workflow that waits for all tasks but aggregates their errors?
+* How do AsyncLocalStorage and asynchronous execution context propagation work?
+* How would you trace a request across asynchronous function boundaries?
+* What are the risks of creating unbounded numbers of Promises?
+* How would you handle partial failures in a large Promise.all() workflow?
+* How do worker threads differ from asynchronous I/O for CPU-bound workloads?
+* How would you design an asynchronous task queue with retries and graceful shutdown?
+* How can asynchronous programming cause race conditions even in a single-threaded application?
+* How would you implement a semaphore or mutex for coordinating asynchronous operations?
+* What trade-offs would you consider when choosing callbacks, Promises, async/await, streams, and worker threads?

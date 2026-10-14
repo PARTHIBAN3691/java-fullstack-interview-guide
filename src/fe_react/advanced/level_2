@@ -1,0 +1,30 @@
+* Explain React Fiber architecture and how it supports interruptible rendering.
+* How does React schedule updates with different priorities?
+* What is concurrent rendering in React, and how does it differ from traditional rendering?
+* What are transitions in React, and how does useTransition improve user experience?
+* What is useDeferredValue, and when should you use it?
+* How do Suspense boundaries affect loading states and rendering behavior?
+* How does React handle state updates that occur during rendering?
+* What is automatic batching, and how does it affect state updates?
+* How do you diagnose and resolve performance problems in a large React application?
+* How would you design a scalable state-management architecture for a complex application?
+* How do Redux Toolkit, Context API, and external state libraries differ in their update models?
+* How do you prevent tearing and inconsistent reads in external state stores?
+* What is useSyncExternalStore, and when is it useful?
+* How do you design a custom Hook that safely manages subscriptions?
+* How do you prevent memory leaks caused by asynchronous effects and subscriptions?
+* How do you handle stale data and race conditions in concurrent React applications?
+* How do server components differ from client components in React frameworks that support them?
+* What is the difference between React Server Components and server-side rendering?
+* How do streaming server rendering and selective hydration work?
+* How do you diagnose hydration mismatches in a server-rendered application?
+* What security considerations apply to server-rendered React applications?
+* How do you design error handling across asynchronous operations and Error Boundaries?
+* How would you architect a micro-frontend system using React?
+* What are the trade-offs of sharing React dependencies across micro-frontends?
+* How do you optimize bundle size and prevent duplicate dependencies in a React application?
+* How do you design reusable component libraries with stable public APIs?
+* How do you implement a compound component API that supports flexible composition?
+* How do you manage focus, keyboard interactions, and accessibility in complex widgets?
+* How would you implement optimistic UI updates with rollback after a failed request?
+* How do you build a testing strategy for a React application with complex state and asynchronous workflows?

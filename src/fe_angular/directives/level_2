@@ -1,0 +1,30 @@
+* Explain how Angular compiles structural directive syntax into embedded views.
+* How does Angular manage embedded views created using TemplateRef and ViewContainerRef?
+* What is the difference between an embedded view and a component view?
+* How would you implement a custom structural directive with an else template?
+* How would you implement a structural directive that supports an explicit context object?
+* What is the role of the $implicit property in a structural directive context?
+* How do you define template context types for a custom structural directive?
+* What is the purpose of ngTemplateContextGuard in a structural directive?
+* How do you implement a structural directive with microsyntax such as *appRepeat?
+* How do Angular input transforms work in directives?
+* How do signal-based inputs change the way custom directives receive configuration?
+* How do you use DestroyRef and takeUntilDestroyed() to manage directive cleanup?
+* How do directives interact with Angular change detection?
+* How can a custom directive trigger change detection when updating component state?
+* How do you implement a directive that works correctly with OnPush components?
+* How do host directives work in modern Angular?
+* How can hostDirectives be used to compose reusable behavior?
+* What are the limitations of host directives, and how are their inputs and outputs exposed?
+* How do you build a reusable directive that integrates with Angular forms through ControlValueAccessor?
+* How do attribute directives interact with form validation and Angular's validator APIs?
+* How do you prevent memory leaks in directives that register global event listeners?
+* How do you implement a directive that observes element size changes using ResizeObserver?
+* How would you implement a permission-based structural directive without coupling it to a specific authentication service?
+* How do you make custom directives compatible with server-side rendering?
+* What risks arise when a directive directly accesses window or document?
+* How do you design directives that remain accessible to keyboard and screen-reader users?
+* How do you optimize a directive applied to thousands of DOM elements?
+* How do directives behave when dynamically created components are inserted into a ViewContainerRef?
+* How do you test structural directives that create, remove, and update embedded views?
+* How would you architect a shared directive library for a large Angular application?

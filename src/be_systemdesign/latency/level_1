@@ -1,0 +1,30 @@
+* How would you measure end-to-end latency in a distributed application?
+* Why should p95 or p99 latency be monitored instead of only average latency?
+* How does network round-trip time contribute to request latency?
+* How does the number of network calls affect overall application latency?
+* How can reducing the number of service-to-service calls improve latency?
+* How does connection pooling reduce database and network latency?
+* How can HTTP keep-alive improve latency?
+* How do HTTP/2 and HTTP/3 help reduce latency?
+* How does DNS resolution contribute to latency?
+* How can DNS caching reduce request latency?
+* How does TLS handshake latency affect a request?
+* How can connection reuse reduce TLS-related latency?
+* How does a CDN reduce latency for geographically distributed users?
+* How does caching improve latency, and what are the trade-offs?
+* How does database indexing reduce query latency?
+* How can database connection pool configuration affect latency?
+* How does database replication help reduce read latency?
+* How can read replicas introduce consistency trade-offs?
+* How does asynchronous processing reduce user-perceived latency?
+* When should a system return an immediate response and process work asynchronously?
+* How can message queues affect end-to-end latency?
+* What is the difference between processing latency and queueing latency?
+* How does load balancing influence latency?
+* How can an overloaded server cause latency to increase disproportionately?
+* What is queueing delay, and why does it become significant under high utilization?
+* How can horizontal scaling help control latency?
+* How does autoscaling affect latency during traffic spikes?
+* How can caching create latency problems because of cache stampedes?
+* How can batching reduce latency, and when can batching actually increase latency?
+* How would you define a latency SLO for a REST API?

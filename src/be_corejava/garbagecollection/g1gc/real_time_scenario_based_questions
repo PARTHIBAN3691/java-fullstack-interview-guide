@@ -1,0 +1,15 @@
+* A Java application experiences frequent young GC events and high CPU utilization. How would you investigate and optimize it?
+* A production service experiences intermittent long GC pauses despite using G1 GC. What metrics and logs would you inspect?
+* A REST API's response time increases during peak traffic because of GC pauses. How would you diagnose the bottleneck?
+* A service has a large heap, but G1 GC frequently triggers Full GC. How would you identify the root cause?
+* A Java application creates many short-lived objects while processing requests. How would you determine whether allocation pressure is responsible for GC overhead?
+* An application allocates large byte arrays and frequently experiences humongous allocations. How would you reduce the impact on G1 GC?
+* A service has a high old-generation occupancy that does not decrease after mixed GC cycles. How would you investigate it?
+* G1 GC repeatedly reports evacuation failures in production. What possible causes would you investigate?
+* A team sets `-XX:MaxGCPauseMillis=100`, but actual pauses frequently exceed 100 milliseconds. How would you explain and troubleshoot this behavior?
+* An application has acceptable GC pause times but poor throughput after a GC configuration change. How would you identify the trade-off?
+* GC logs show that concurrent marking starts too late, followed by Full GC. How would you investigate and tune the marking behavior?
+* A containerized Java application is terminated due to memory limits even though the configured Java heap appears to fit within the container. How would you investigate total memory usage?
+* A production service has a memory leak, but heap usage temporarily drops after each GC cycle. How would you confirm the leak?
+* After a deployment, GC frequency increases significantly even though traffic remains unchanged. How would you compare allocation rates and application behavior?
+* A latency-sensitive application must maintain predictable response times under high load. How would you evaluate whether G1 GC is suitable or whether another collector should be considered?

@@ -1,0 +1,139 @@
+
+**GitOps Principles**
+* Implement a Java utility that compares the desired configuration from Git with the current cluster-state snapshot and reports drift.
+* Write a configuration validator that rejects deployment changes missing mandatory labels, resource limits, or approved image references.
+* Implement a Git-commit promotion validator that verifies a release has passed the required environment approvals.
+* Build an audit component that correlates a deployment event with its Git commit, artifact digest, and deployment result.
+* Write unit tests for conflicting configuration updates, invalid manifests, and rollback to a previous valid configuration.
+
+**Argo CD**
+* Write a Java client using the Argo CD API to retrieve application synchronization and health status.
+* Implement a deployment-status service that reports Synced, OutOfSync, Healthy, Progressing, and Degraded states.
+* Build an application promotion utility that verifies staging health before requesting production promotion.
+* Implement a reconciliation-lag monitor that detects applications that remain OutOfSync beyond a configured threshold.
+* Write an automated release-verification component that checks application health and business endpoints after synchronization.
+* Implement tests for API failures, expired credentials, missing applications, and unsuccessful rollouts.
+
+**Flux**
+* Write a Java monitoring component that retrieves Flux reconciliation status and reports failed or stalled resources.
+* Implement a reconciliation monitor that alerts when a `GitRepository` or `Kustomization` resource stops progressing.
+* Build a dependency-validation utility that checks whether required platform components are ready before application deployment.
+* Implement a release-validation workflow that waits for successful reconciliation before proceeding to the next environment.
+* Write tests for missing sources, invalid manifests, decryption failures, and unavailable Kubernetes APIs.
+
+**Declarative Infrastructure**
+* Implement a Java utility that parses infrastructure-plan results and identifies resource additions, modifications, and deletions.
+* Write a policy validator that rejects destructive production changes unless the required approval is present.
+* Build an infrastructure-drift report that compares declared resources with a supplied snapshot of actual resources.
+* Implement an infrastructure provisioning state machine with pending, running, completed, failed, and retryable states.
+* Write an idempotency mechanism that prevents duplicate resource creation when provisioning requests are retried.
+* Implement tests for partial infrastructure failures and interrupted provisioning workflows.
+
+**Kubernetes GitOps**
+* Write a Java manifest validator that checks required labels, namespace constraints, image references, and resource requests.
+* Implement a deployment-status monitor that reads Kubernetes Deployment conditions and reports rollout failures.
+* Build a configuration validator that detects conflicting settings across environment-specific Kustomize overlays.
+* Implement a GitOps promotion workflow that verifies the same container image digest is used across environments.
+* Write a dependency checker that validates CRDs and required operators before application resources are applied.
+* Implement tests for invalid manifests, missing namespaces, failed rollouts, and conflicting controller ownership.
+
+**Platform Engineering**
+* Implement a platform-metrics aggregator that calculates provisioning success rate, deployment lead time, and workflow failure rate.
+* Write a service-ownership registry that maps applications to teams, repositories, and operational contacts.
+* Build a platform capability catalog with searchable services, templates, and supported infrastructure options.
+* Implement a platform-request prioritizer based on business impact, developer demand, operational risk, and implementation effort.
+* Write a component that calculates golden-path adoption across a collection of registered services.
+* Implement tests for missing ownership, stale catalog metadata, and duplicate service registration.
+
+**Internal Developer Platform**
+* Build a Spring Boot platform API that accepts a service-creation request and returns an operation identifier.
+* Implement a durable workflow that provisions a repository, infrastructure, secrets references, and GitOps configuration in dependency order.
+* Write a workflow recovery component that resumes incomplete operations after application restarts.
+* Implement compensation logic that cleans up eligible resources when a multi-step provisioning workflow fails.
+* Build a tenant-aware resource registry that isolates service ownership, configuration, and provisioning state.
+* Write integration tests for retries, partial failures, duplicate requests, and interrupted workflows.
+
+**Developer Self-Service**
+* Implement a REST endpoint that creates an environment from a validated developer request.
+* Write an idempotency-key mechanism that returns the existing operation when the same request is submitted repeatedly.
+* Implement a quota validator that restricts resource consumption by team and environment.
+* Build an asynchronous operation-status API with progress, error details, and retryability information.
+* Implement an expiration service that identifies temporary environments eligible for cleanup.
+* Write authorization tests for approved users, unauthorized users, expired permissions, and cross-team resource access.
+
+**Golden Paths**
+* Build a Spring Boot project generator that creates a service with health checks, structured logging, and test configuration.
+* Implement a template-version validator that identifies generated projects using deprecated versions.
+* Write a compatibility checker that verifies required dependencies and deployment conventions before template upgrades.
+* Build a golden-path policy validator that permits approved customization but rejects mandatory security violations.
+* Implement a migration-report generator that lists repositories requiring an upgrade to a newer template version.
+* Write tests for invalid template parameters, unsupported runtime versions, and insecure generated defaults.
+
+**Platform APIs**
+* Implement a REST API for long-running infrastructure provisioning with idempotency keys and operation-status endpoints.
+* Write a durable task processor that retries transient cloud API failures without duplicating completed operations.
+* Implement API versioning for platform resources while maintaining compatibility with existing clients.
+* Build a tenant-aware authorization interceptor that checks resource ownership before performing privileged actions.
+* Implement a concurrency limiter that prevents one tenant from exhausting platform API capacity.
+* Write contract tests for successful operations, validation failures, authorization errors, timeouts, and partial failures.
+
+**Developer Portals**
+* Implement a service-catalog API that searches services by name, owner, lifecycle, and technology.
+* Write a metadata synchronization service that updates catalog ownership from an authoritative repository or team directory.
+* Build a service-health aggregator that combines deployment state, availability, and recent incidents.
+* Implement a portal search feature that finds reusable templates and approved infrastructure capabilities.
+* Write a stale-metadata detector that identifies services without a valid owner or repository.
+* Implement authorization tests that distinguish read-only catalog access from privileged platform operations.
+
+**Backstage**
+* Create a Backstage software template that generates a Spring Boot service repository and registers it in the software catalog.
+* Implement a custom Backstage backend action that requests environment provisioning through a secured platform API.
+* Write a catalog processor or integration that validates ownership metadata and required service annotations.
+* Build a plugin backend that retrieves Argo CD deployment status and exposes a sanitized response to the frontend.
+* Implement authorization checks that restrict privileged template actions to approved users or groups.
+* Write tests for failed scaffolding tasks, catalog-registration errors, unauthorized requests, and unavailable external APIs.
+
+**Environment Provisioning**
+* Implement a provisioning orchestrator that creates networking, database, secrets references, and application infrastructure in dependency order.
+* Write a resource registry that associates provisioned cloud resources with a team, environment, and lifecycle.
+* Implement a cleanup service that deletes eligible resources only after checking ownership and dependency constraints.
+* Build a retry mechanism with exponential backoff and jitter for transient cloud API failures.
+* Implement reconciliation between recorded provisioning state and actual cloud-resource state.
+* Write tests for partial creation, duplicate requests, failed cleanup, and recovery after process restart.
+
+**Self-Service Deployment**
+* Implement a Spring Boot API that requests deployment through a GitOps workflow without direct production-cluster access.
+* Write a rollout monitor that tracks desired replicas, available replicas, readiness, and deployment completion.
+* Implement a canary-promotion controller that advances traffic only after configured health and error-rate checks pass.
+* Build a rollback decision component that detects failed rollout conditions and requests restoration of the previous release.
+* Implement a deployment lock or coordination mechanism that prevents conflicting releases for the same application.
+* Write tests for failed readiness checks, interrupted rollouts, rejected approvals, and unsuccessful rollback attempts.
+
+**Platform Observability**
+* Implement a distributed correlation-ID mechanism that connects provisioning requests, infrastructure operations, Git commits, and deployment events.
+* Write a metrics collector that calculates provisioning duration, reconciliation latency, deployment failure rate, and platform API error rate.
+* Build an alert evaluator that triggers when platform SLO thresholds are breached.
+* Implement a workflow-timing analyzer that identifies which provisioning steps consume the most time.
+* Write a diagnostic API that returns actionable failure information while redacting secrets and sensitive identifiers.
+* Implement tests for missing trace context, delayed events, telemetry loss, and high-cardinality labels.
+
+**Platform Security**
+* Implement a Kubernetes manifest policy validator that rejects privileged containers, unapproved registries, and missing resource limits.
+* Write a role-based authorization service that enforces least privilege for developers, platform operators, and deployment controllers.
+* Implement an audit logger that records who initiated a platform operation, what resource was affected, and whether it succeeded.
+* Build a credential-expiration monitor that alerts before short-lived deployment credentials expire.
+* Write a secret-redaction utility that removes credentials and sensitive values from provisioning errors and application logs.
+* Implement a signed-artifact verification step before a deployment can be promoted.
+* Write authorization tests for cross-tenant access, privilege escalation, revoked credentials, and unauthorized production deployments.
+
+**Integrated GitOps & Platform Engineering Challenges**
+* Build a complete self-service workflow that generates a Spring Boot service, creates its repository, provisions its environment, and deploys it through Argo CD.
+* Implement a multi-environment promotion engine that validates CI results, artifact provenance, GitOps synchronization, and runtime health before advancing a release.
+* Build a GitOps drift detector that identifies unauthorized live changes and produces an auditable remediation report.
+* Implement a platform recovery workflow that resumes partially completed provisioning operations after controller restarts or cloud API failures.
+* Design a Backstage integration that displays service ownership, provisioning status, GitOps health, deployment history, and operational metrics.
+* Build a multi-tenant platform API with idempotency, quotas, short-lived credentials, authorization, and immutable audit events.
+* Implement a golden-path compliance checker that scans generated repositories for insecure dependencies, missing tests, exposed secrets, and incorrect deployment settings.
+* Create an end-to-end test that simulates a faulty Git commit, detects a failed rollout, prevents promotion, and verifies safe recovery.
+* Build a platform SLO dashboard backend that correlates deployment failures, reconciliation lag, provisioning duration, and tenant-level usage.
+* Implement a secure environment-lifecycle workflow that provisions resources, continuously validates policy compliance, and safely decommissions expired environments.

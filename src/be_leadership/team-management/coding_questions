@@ -1,0 +1,30 @@
+* Write a Java class to represent a team member with name, role, skills, and experience.
+* Implement a Java enum for team roles such as DEVELOPER, TECH_LEAD, QA_ENGINEER, and DEVOPS_ENGINEER.
+* Write a Java program to assign tasks to team members based on their skills.
+* Implement a Java service to track tasks assigned to each team member.
+* Write a Java program to calculate the number of completed, pending, and overdue tasks for each developer.
+* Implement a Java class to represent a task with priority, status, assignee, and deadline.
+* Write a Java program to identify team members who are overloaded based on their assigned tasks.
+* Implement a task allocation algorithm that distributes work based on team members' capacity and skills.
+* Write a Java program to calculate the average task completion time for a team.
+* Implement a Java service to identify tasks that are blocked by dependencies.
+* Use the Strategy pattern to support different task assignment strategies.
+* Use the Observer pattern to notify team members when task assignments or priorities change.
+* Implement the Factory pattern to create different types of team tasks.
+* Write a Java program to group team members by technical skills and experience level.
+* Implement a Java service to track team members' training goals and skill development progress.
+* Write JUnit tests for a task assignment service.
+* Use Mockito to test a team management service that sends task notifications.
+* Create a Spring Boot REST API to manage team members, tasks, and assignments.
+* Implement REST endpoints to retrieve tasks assigned to a specific team member.
+* Create a Spring Data JPA entity model for teams, team members, projects, and tasks.
+* Implement validation to prevent assigning a task to an inactive team member.
+* Write a Java service to prevent duplicate task assignments.
+* Implement exception handling for missing team members and invalid task IDs in Spring Boot.
+* Write a Java program to calculate team workload using task estimates and available working hours.
+* Implement a service to record team decisions with timestamps and responsible members.
+* Write a multithreaded Java program to process independent tasks concurrently and collect their results safely.
+* Design a thread-safe task assignment service that prevents concurrent requests from over-allocating team members.
+* Implement a Java service to generate team performance metrics using completion rate, defect rate, and cycle time.
+* Write integration tests for a Spring Boot team management API using JUnit and MockMvc.
+* Design a scalable team management application using Java, Spring Boot, REST APIs, relational databases, role-based access control, and audit logging.

@@ -1,0 +1,30 @@
+* A security scan reports critical vulnerabilities in the Java base image used by your Spring Boot service. How would you assess the risk, upgrade the image, and validate the fix?
+* Your Docker image contains a database password in a Dockerfile layer. How would you investigate the exposure, rotate the credential, and prevent recurrence?
+* A production container is running as root and has access to unnecessary Linux capabilities. How would you harden it without breaking the application?
+* A developer mounts the Docker socket into a Java container for deployment automation. How would you evaluate the risk and redesign the workflow?
+* A container unexpectedly accesses files outside its intended application directory. How would you investigate permissions, mounts, namespaces, and possible container escape?
+* Your CI/CD pipeline prints private registry credentials in its logs. How would you contain the exposure and redesign authentication?
+* A Spring Boot application requires write access to temporary files, but security policy mandates a read-only root filesystem. How would you configure the required writable paths?
+* A container is launched with the --privileged option to fix a permissions problem. How would you identify the actual requirement and remove unnecessary privileges?
+* A production image passes vulnerability scanning, but the running container still has excessive privileges. How would you address runtime hardening separately from image scanning?
+* An attacker gains access to a container and begins making outbound connections to unknown destinations. How would you investigate and contain the activity?
+* A Java service can connect to a database that should be isolated from other services. How would you investigate Docker network membership and redesign segmentation?
+* A private registry account is compromised, and an attacker pushes an image using a trusted release tag. How would you detect the substitution and prevent future incidents?
+* Your deployment pipeline pulls a mutable image tag and deploys an unexpected version. How would you enforce digest-based deployment and image verification?
+* A critical vulnerability is discovered in a transitive Java dependency after the application has been deployed. How would you identify affected images and coordinate remediation?
+* A security scanner reports a vulnerable operating-system package that is not used by the application. How would you assess exploitability and decide whether to upgrade or remove it?
+* A container consumes all available memory and affects other Java services on the same host. How would you investigate resource limits and prevent recurrence?
+* A Spring Boot container can access the host network unexpectedly after a configuration change. How would you investigate network mode, port publishing, and firewall rules?
+* An application stores API keys in environment variables and includes them in diagnostic output. How would you eliminate the exposure and implement safer secret handling?
+* A developer downloads an unverified public image and uses it as the production base image. How would you assess the supply-chain risk and establish approved-image controls?
+* A container cannot start after you enable a restrictive seccomp profile. How would you identify the blocked system call and safely adjust the policy?
+* Your production container fails after switching to a non-root user because it cannot write to its log directory. How would you correct file ownership and permissions securely?
+* A Java application uses a custom native library, and the security team requires a minimal image. How would you remove unnecessary packages while retaining required runtime dependencies?
+* A Docker host has unrestricted access to the daemon API from a shared network. How would you reduce exposure and enforce authenticated, authorized access?
+* An image build uses a private Maven repository token through a build argument. How would you determine whether the token was exposed and migrate to a secret mount?
+* A vulnerability scanner identifies hundreds of issues across hundreds of microservice images. How would you prioritize fixes and establish a scalable remediation process?
+* A production image contains source code, test reports, and build tools. How would you redesign the build process to reduce the attack surface?
+* A security audit finds that developers can deploy unsigned images to production. How would you implement signing, verification, and release authorization?
+* A malicious dependency is introduced into a Spring Boot application and included in the final image. How would you investigate dependency provenance and strengthen the software supply chain?
+* A container repeatedly restarts under a high volume of requests, potentially allowing resource exhaustion. How would you combine application-level limits and Docker resource controls?
+* Your organization must demonstrate compliance with container security policies across all Java services. How would you automate evidence collection, policy enforcement, and exception management?

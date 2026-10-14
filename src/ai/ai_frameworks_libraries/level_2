@@ -1,0 +1,116 @@
+**LangChain**
+* Design a production LangChain architecture that supports multiple LLM providers, versioned prompts, structured outputs, RAG, and fallback behavior.
+* How would you isolate framework-specific abstractions from core business logic to reduce vendor and library lock-in?
+* How would you prevent retries at multiple framework layers from multiplying requests and increasing costs during provider outages?
+* How would you enforce authorization across retrievers, tools, conversation memory, and cached results?
+* How would you investigate a framework upgrade that silently changes prompt formatting, output parsing, or tool-call behavior?
+* How would you benchmark a LangChain pipeline against a custom orchestration implementation?
+* How would you design observability that traces retrieval, model calls, token consumption, and tool execution without leaking sensitive content?
+
+**LangGraph**
+* Design a durable, long-running agent workflow that supports checkpoints, human approval, retries, compensation, and recovery after process restarts.
+* How would you make graph-node execution idempotent when a workflow resumes after an uncertain tool outcome?
+* How would you control cycles, parallel branches, state growth, and execution budgets in a complex agent graph?
+* How would you manage concurrent updates to shared graph state without losing data or creating nondeterministic outcomes?
+* How would you implement authorization and policy checks at every tool-execution boundary?
+* How would you migrate persisted graph state when the workflow schema changes between application versions?
+* How would you compare graph-based orchestration with a conventional workflow engine for reliability, cost, and debuggability?
+
+**LlamaIndex**
+* Design a large-scale LlamaIndex architecture supporting incremental ingestion, multiple data sources, metadata filtering, reranking, and citation-level grounding.
+* How would you maintain consistency between source documents, node identifiers, embedding versions, and vector-store records?
+* How would you support hybrid retrieval and query routing across several indexes without introducing excessive latency?
+* How would you design index versioning and atomic cutover when reprocessing a large document collection?
+* How would you prevent stale nodes and duplicate embeddings after source updates or partial ingestion failures?
+* How would you evaluate LlamaIndex's built-in abstractions against custom retrieval components for a specialized enterprise use case?
+* How would you protect a LlamaIndex pipeline against indirect prompt injection and unauthorized retrieval?
+
+**Semantic Kernel**
+* Design an enterprise AI integration layer that exposes existing business services through Semantic Kernel plugins with policy enforcement and auditing.
+* How would you separate model planning from deterministic business execution when an AI-generated function call can trigger a financial or operational action?
+* How would you handle plugin versioning and compatibility when several applications depend on shared AI functions?
+* How would you prevent untrusted model output from bypassing input validation, authorization, or transaction boundaries?
+* How would you optimize plugin orchestration when one request requires multiple model calls and dependent business functions?
+* How would you evaluate the trade-offs between Semantic Kernel orchestration and direct SDK-based implementations?
+* How would you manage prompt, plugin, and model configuration across development, staging, and production?
+
+**Hugging Face Transformers**
+* Design a reproducible fine-tuning pipeline that includes dataset validation, training, evaluation, model artifact versioning, and deployment.
+* How would you fine-tune a model under limited GPU memory using gradient accumulation, mixed precision, quantization, or parameter-efficient methods?
+* How would you investigate a fine-tuned model that performs well on validation data but poorly in production?
+* How would you secure model downloads, pin revisions, validate artifacts, and manage supply-chain risks?
+* How would you compare full fine-tuning, LoRA-style adaptation, and prompt-based approaches for a domain-specific task?
+* How would you deploy multiple transformer models while controlling memory fragmentation, cold-start latency, and concurrency?
+* How would you detect and mitigate training-data leakage, distribution drift, and evaluation contamination?
+
+**PyTorch**
+* Design a distributed training pipeline across multiple GPUs or nodes, including checkpointing, failure recovery, and reproducibility.
+* How would you diagnose a training run that has low GPU utilization despite a GPU-heavy model?
+* How would you optimize training memory using activation checkpointing, mixed precision, gradient accumulation, and efficient attention implementations?
+* How would you identify numerical instability introduced by lower-precision training?
+* How would you deploy a PyTorch model with dynamic batching and concurrent inference while avoiding GPU memory exhaustion?
+* How would you investigate discrepancies between training, validation, and production inference behavior?
+* How would you profile and optimize a model before exporting it to an inference-specific runtime?
+
+**TensorFlow**
+* Design a distributed TensorFlow training system with input-pipeline optimization, checkpoint recovery, evaluation gates, and artifact promotion.
+* How would you diagnose training instability that appears only when distributed execution is enabled?
+* How would you optimize `tf.data` pipelines when accelerator utilization is limited by input processing?
+* How would you deploy the same model across a server, mobile device, and edge device while maintaining acceptable output consistency?
+* How would you manage TensorFlow, Keras, CUDA, and accelerator compatibility across environments?
+* How would you investigate a model whose inference results change after conversion to TensorFlow Lite?
+* How would you benchmark a TensorFlow deployment against PyTorch and ONNX Runtime under identical workloads?
+
+**scikit-learn**
+* Design a reproducible tabular machine-learning workflow that includes preprocessing, cross-validation, model selection, calibration, and deployment.
+* How would you prevent leakage when preprocessing steps interact with time-based splits or grouped observations?
+* How would you handle high-cardinality categorical features, class imbalance, and missing values in a production pipeline?
+* How would you detect model drift and determine when retraining is justified?
+* How would you safely serialize and load models while mitigating risks from untrusted pickle-based artifacts?
+* How would you guarantee parity between offline training transformations and online inference features?
+* How would you explain a model's predictions and monitor fairness and performance across important data segments?
+
+**ONNX Runtime**
+* Design an inference architecture that exports models from different training frameworks into ONNX and serves them through a common runtime.
+* How would you diagnose conversion failures involving dynamic shapes, custom operators, or unsupported operations?
+* How would you optimize latency through graph optimization, quantization, execution-provider selection, and thread tuning?
+* How would you validate numerical equivalence and task-level accuracy after converting or quantizing a model?
+* How would you deploy model versions with zero-downtime cutover and rollback?
+* How would you prevent CPU thread oversubscription when multiple ONNX sessions run concurrently?
+* How would you benchmark ONNX Runtime against native framework inference under equivalent hardware, batch sizes, and workload distributions?
+
+**vLLM**
+* Design a multi-tenant vLLM serving platform that supports model isolation, request prioritization, quotas, streaming, and autoscaling.
+* How would you tune KV-cache utilization and batching when requests have widely varying prompt and generation lengths?
+* How would you diagnose GPU out-of-memory errors that occur only under burst traffic or long-context requests?
+* How would you achieve predictable latency for high-priority requests while maintaining high aggregate token throughput?
+* How would you roll out a new model or quantization configuration without disrupting active requests?
+* How would you handle backpressure, overload rejection, request cancellation, and graceful shutdown?
+* How would you compare vLLM with other inference servers using throughput, time to first token, inter-token latency, and tail latency?
+
+**Ollama**
+* Design a secure local-model serving architecture for a development team that requires private inference and controlled model access.
+* How would you manage multiple models on a host with limited RAM or VRAM while avoiding resource contention?
+* How would you benchmark model quality and latency across different quantization levels?
+* How would you keep model artifacts, configurations, and runtime versions reproducible across developer machines and CI environments?
+* How would you expose local inference to internal services without exposing an unauthenticated endpoint to untrusted networks?
+* How would you handle concurrent requests when local inference capacity is exhausted?
+* How would you decide when to migrate from Ollama to a dedicated inference server or managed model platform?
+
+**Model Context Protocol (MCP)**
+* Design a production MCP architecture connecting multiple AI clients to enterprise systems with least-privilege authorization, auditing, and controlled tool discovery.
+* How would you secure MCP communication, server identity, credentials, and tool execution in a multi-tenant environment?
+* How would you defend against malicious tool descriptions, prompt injection, confused-deputy behavior, and excessive tool permissions?
+* How would you manage protocol compatibility, capability negotiation, and server version upgrades across independently deployed clients and servers?
+* How would you handle retries for MCP tool calls whose execution outcome is uncertain?
+* How would you isolate unreliable MCP servers so that one unavailable integration does not block unrelated workflows?
+* How would you evaluate when MCP is preferable to direct SDK calls, REST APIs, or message-based integration?
+
+**Framework Selection and Trade-offs**
+* Design a decision matrix for selecting an orchestration framework, model development library, inference runtime, and tool-integration protocol for an enterprise AI platform.
+* How would you compare LangChain, LangGraph, LlamaIndex, and Semantic Kernel when requirements include complex workflows, RAG, enterprise integration, and durable execution?
+* How would you decide between PyTorch, TensorFlow, and scikit-learn based on model type, team expertise, training requirements, and deployment constraints?
+* How would you determine whether vLLM, Ollama, ONNX Runtime, or a managed inference service best meets a specific production workload?
+* How would you quantify the total cost of ownership, including hardware, engineering effort, observability, upgrades, licensing, and operational support?
+* How would you minimize framework lock-in while still taking advantage of framework-specific features?
+* How would you design a benchmark and migration strategy that validates quality, performance, security, and maintainability before committing to a framework?

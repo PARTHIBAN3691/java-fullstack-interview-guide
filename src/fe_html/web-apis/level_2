@@ -1,0 +1,30 @@
+* Explain how the browser exposes Web APIs to JavaScript through the Web platform.
+* How do the JavaScript event loop and asynchronous Web APIs work together?
+* What is the difference between tasks, microtasks, and rendering opportunities?
+* How would you design reliable error handling for multiple concurrent Fetch API requests?
+* How do AbortController and AbortSignal help cancel asynchronous operations?
+* How would you prevent race conditions when several API requests update the same UI?
+* How does CORS affect requests made through the Fetch API?
+* What is the difference between a simple CORS request and a preflighted request?
+* How do same-origin policy restrictions affect Web API usage?
+* What are the security risks of storing authentication tokens in localStorage?
+* How would you choose between cookies, localStorage, and sessionStorage for client-side data?
+* How does the BroadcastChannel API enable communication between browser contexts?
+* How would you coordinate state across multiple browser tabs?
+* What are the lifecycle and termination considerations for Web Workers?
+* How do transferable objects improve performance when communicating with Web Workers?
+* What is the difference between structured cloning and transferring an object?
+* How would you use Service Workers to support offline functionality?
+* What is the difference between a Web Worker and a Service Worker?
+* How do Service Workers interact with caching and network requests?
+* How would you implement resilient real-time communication using the WebSocket API?
+* What strategies help recover from unexpected WebSocket disconnections?
+* How would you manage camera and microphone streams securely?
+* What is the purpose of MediaStream and MediaStreamTrack?
+* How would you release camera or microphone resources after a video call?
+* How can the Permissions API be used to inspect permission states?
+* Why should permission checks not replace proper error handling when invoking a Web API?
+* How would you optimize large canvas-based visualizations?
+* How can OffscreenCanvas improve rendering performance?
+* How would you combine Intersection Observer and lazy loading for a large media gallery?
+* How would you design a cross-browser application that relies on several Web APIs?

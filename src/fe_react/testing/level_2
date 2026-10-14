@@ -1,0 +1,30 @@
+* How would you design a testing strategy for a large-scale React application?
+* How do you decide what should be covered by unit, integration, and end-to-end tests?
+* How do you test complex components with multiple state transitions?
+* How do you test components that make multiple concurrent API requests?
+* How do you prevent flaky tests in asynchronous React components?
+* How do you test race conditions in API-driven components?
+* How do you test components that use React Suspense and lazy loading?
+* How do you test error boundaries in React?
+* How do you test components using React Router data loaders and actions?
+* How do you test Redux Toolkit slices and asynchronous thunks?
+* How do you test RTK Query caching and invalidation behavior?
+* How do you test components that use memoization with React.memo, useMemo, and useCallback?
+* How do you test performance-sensitive React components?
+* How do you identify unnecessary re-renders during testing?
+* How do you mock browser APIs such as IntersectionObserver and ResizeObserver?
+* How do you test components that use localStorage or sessionStorage?
+* How do you test WebSocket-based React components?
+* How do you test authentication and role-based access control?
+* How do you test components that depend on feature flags?
+* How do you test accessibility using automated testing tools?
+* How do you combine React Testing Library with MSW for API mocking?
+* What are the advantages of using MSW instead of mocking fetch or Axios directly?
+* How do you test applications that use server-side rendering and hydration?
+* How do you handle test isolation when components share global state?
+* How do you test reusable component libraries across different use cases?
+* How do you structure test utilities for a large React codebase?
+* How do you integrate React tests into a CI/CD pipeline?
+* How do you optimize test execution time in a large project?
+* How do you identify and eliminate flaky tests in continuous integration?
+* How would you migrate a React application from Enzyme to React Testing Library?

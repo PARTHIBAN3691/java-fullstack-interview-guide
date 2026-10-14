@@ -1,0 +1,21 @@
+
+* A Spring Boot application can upload files locally but fails to upload them after deployment to Azure App Service. How would you troubleshoot authentication, network access, and configuration?
+* A Java application throws `OutOfMemoryError` while uploading large files to Blob Storage. How would you redesign the upload implementation?
+* Uploading a 5 GB file takes too long. How would you optimize block size, parallelism, network throughput, and retry behavior?
+* A file upload succeeds in Blob Storage, but the API returns a timeout to the client. How would you prevent duplicate uploads when the client retries?
+* A Blob Storage container contains millions of objects, and listing files has become slow. How would you optimize enumeration and pagination?
+* A production application accidentally overwrites important files. How would you recover the original content and prevent recurrence?
+* Two Java application instances update the same blob simultaneously, causing one update to overwrite the other. How would you prevent lost updates?
+* A SAS token is exposed in application logs. What immediate actions would you take, and how would you improve the credential-handling strategy?
+* A managed identity can access one storage container but receives authorization errors on another. How would you investigate Azure RBAC assignments and scope?
+* A private Blob Storage endpoint works from a developer machine but fails from an Azure-hosted application. How would you troubleshoot private DNS, virtual network integration, and routing?
+* A storage account begins returning HTTP 429 or 503 errors during a bulk upload. How would you implement retries, exponential backoff, and concurrency limits?
+* An uploaded document must be scanned for malware before users can download it. How would you design the upload, scanning, and release workflow?
+* An application processes a blob-created event multiple times, causing duplicate database records. How would you implement idempotent event processing?
+* A business requires uploaded files to be retained for seven years and protected against deletion. How would you implement retention and immutability controls?
+* Users report that downloads are slow in regions far from the storage account. How would you improve global delivery performance?
+* A lifecycle policy moves files to the Archive tier, but users expect immediate downloads. How would you handle rehydration delays and user expectations?
+* A file migration completes, but some uploaded files are corrupted or missing metadata. How would you validate data integrity and reconcile failures?
+* A Java service needs to download a blob, transform its contents, and upload the result without storing the entire file locally. How would you implement streaming?
+* An application needs to support resumable uploads from unreliable client networks. How would you track upload progress and recover unfinished block uploads?
+* A security audit requires private access, encryption, short-lived delegated access, and complete auditability. How would you design and validate the solution?

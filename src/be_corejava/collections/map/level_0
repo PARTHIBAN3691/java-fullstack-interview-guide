@@ -1,0 +1,97 @@
+# Core Java — Collections — Map
+## Level 0 — Easy
+
+### Map Fundamentals
+* What is a Map in Java?
+* Is Map a part of the Collection interface?
+* Can a Map contain duplicate keys?
+* Can a Map contain duplicate values?
+* Can a Map contain null keys and null values?
+* What is the difference between Map and List?
+* What are the commonly used Map implementations in Java?
+* What is the difference between a key and a value in a Map?
+
+### HashMap
+* What is a HashMap in Java?
+* How do you create and initialize a HashMap?
+* How do you add, retrieve, update, and remove entries from a HashMap?
+* What happens when you insert a duplicate key into a HashMap?
+* What is the purpose of the `put()`, `get()`, `remove()`, and `containsKey()` methods?
+* Can a HashMap contain null keys and null values?
+* Does HashMap maintain insertion order?
+* What is the difference between `containsKey()` and `containsValue()`?
+
+### LinkedHashMap
+* What is a LinkedHashMap?
+* What is the difference between HashMap and LinkedHashMap?
+* Does LinkedHashMap maintain insertion order?
+* How does LinkedHashMap handle duplicate keys?
+* What is the difference between insertion-order and access-order LinkedHashMap?
+
+### TreeMap
+* What is a TreeMap?
+* Does TreeMap maintain sorted order?
+* How are keys ordered in a TreeMap?
+* What is the difference between HashMap and TreeMap?
+* Can TreeMap store null keys?
+* How do you retrieve the first and last keys from a TreeMap?
+
+### Hashtable
+* What is a Hashtable in Java?
+* What is the difference between HashMap and Hashtable?
+* Is Hashtable thread-safe?
+* Can Hashtable contain null keys or null values?
+* Why is Hashtable considered a legacy collection?
+
+### Map Iteration and Views
+* How do you iterate over a Map using `keySet()`?
+* How do you iterate over a Map using `values()`?
+* How do you iterate over a Map using `entrySet()`?
+* What is the difference between `keySet()`, `values()`, and `entrySet()`?
+* How do you remove an entry from a Map?
+* What is the purpose of the `forEach()` method on Map?
+
+### Map Methods and Utilities
+* What is the difference between `put()` and `putIfAbsent()`?
+* What does the `getOrDefault()` method do?
+* What is the purpose of the `replace()` method?
+* What is the difference between `remove(key)` and `remove(key, value)`?
+* How do you check whether a Map is empty?
+* How do you clear all entries from a Map?
+
+### Hashing and Key Equality
+* What are `hashCode()` and `equals()`?
+* Why are `hashCode()` and `equals()` important when using HashMap?
+* Can two different keys have the same hash code?
+* What happens when two keys are equal according to `equals()`?
+* Why should immutable objects be preferred as Map keys?
+
+### Generics and Map
+* How do you declare a Map with String keys and Integer values?
+* What is the purpose of generics in Map?
+* What does `Map<String, Object>` mean?
+* How do you create a Map of custom objects?
+* What is the difference between `Map<Object, String>` and `Map<String, String>`?
+
+### Concurrent Maps
+* What is ConcurrentHashMap?
+* What is the difference between HashMap and ConcurrentHashMap?
+* Is ConcurrentHashMap thread-safe?
+* Can ConcurrentHashMap contain null keys or null values?
+* What is the purpose of `putIfAbsent()` in ConcurrentHashMap?
+
+### Map and Streams
+* How do you convert a Map into a Stream?
+* How do you filter Map entries using Streams?
+* How do you sort a Map by its keys?
+* How do you sort a Map by its values?
+* How do you convert a List into a Map using Streams?
+* What is the purpose of `Collectors.toMap()`?
+
+### Map Performance and Complexity
+* What is the average time complexity of `get()` and `put()` in HashMap?
+* What factors affect HashMap performance?
+* Why can TreeMap operations be slower than average HashMap operations?
+* How does the initial capacity of a HashMap affect performance?
+* When would you choose HashMap, LinkedHashMap, or TreeMap?
+

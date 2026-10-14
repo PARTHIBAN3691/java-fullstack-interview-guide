@@ -1,0 +1,104 @@
+**Prompt Engineering Fundamentals**
+* What is Prompt Engineering?
+* Why is prompt design important when working with Large Language Models (LLMs)?
+* What are the main components of a good prompt?
+* What is the difference between an instruction and context in a prompt?
+* How can ambiguous prompts affect model responses?
+* What are common prompt engineering techniques?
+* How does prompt engineering differ from model fine-tuning?
+
+**Zero-Shot Prompting**
+* What is zero-shot prompting?
+* How does zero-shot prompting work without examples?
+* When would you use zero-shot prompting?
+* What are the advantages of zero-shot prompting?
+* What are the limitations of zero-shot prompting?
+* Give an example of a zero-shot prompt for sentiment classification.
+
+**Few-Shot Prompting**
+* What is few-shot prompting?
+* How does few-shot prompting differ from zero-shot prompting?
+* What is an example in the context of few-shot prompting?
+* How many examples should a few-shot prompt contain?
+* What are the benefits of providing examples to an LLM?
+* What are common limitations of few-shot prompting?
+
+**Chain-of-Thought Prompting**
+* What is Chain-of-Thought (CoT) prompting?
+* Why might a multi-step task benefit from structured reasoning instructions?
+* How does a reasoning-oriented prompt differ from a direct-answer prompt?
+* What types of tasks can benefit from stepwise problem-solving approaches?
+* What are the limitations of asking a model to explain its reasoning?
+* How can you verify an answer produced through a reasoning-oriented prompt?
+
+**Role-Based and System Prompting**
+* What is role-based prompting?
+* What is a system prompt?
+* How does a system prompt differ from a user prompt?
+* Why would you assign an AI assistant a specific role?
+* What are some examples of useful system instructions?
+* Should system prompts be used as the only security control in an AI application?
+
+**Structured Output and JSON Prompting**
+* What is structured output prompting?
+* Why would an application request JSON from an LLM?
+* How do JSON outputs differ from free-text responses?
+* What instructions can help an LLM produce valid JSON?
+* What is the difference between valid JSON syntax and a valid business response?
+* Why should generated JSON be validated before use?
+
+**Prompt Templates**
+* What is a prompt template?
+* Why are prompt templates useful in application development?
+* What are template variables?
+* How can a template be reused for different users or tasks?
+* What problems can occur when required template variables are missing?
+* How do prompt templates improve consistency?
+
+**Prompt Chaining**
+* What is prompt chaining?
+* How does prompt chaining differ from sending one large prompt?
+* What is an intermediate output in a prompt chain?
+* Give an example of a task that can be divided into multiple prompts.
+* What are the benefits of breaking a complex task into smaller steps?
+* What are common risks of prompt chaining?
+
+**Context Engineering**
+* What is context engineering?
+* How does context engineering differ from prompt engineering?
+* What types of information can be included in an LLM's context?
+* Why is relevant context important for answer quality?
+* What is the difference between context and conversation history?
+* What happens when too much irrelevant information is supplied?
+
+**Prompt Versioning and Management**
+* What is prompt versioning?
+* Why should prompts be stored and managed systematically?
+* What information should be recorded for a prompt version?
+* Why is it useful to compare a new prompt with a previous version?
+* How can prompt changes affect application behavior?
+* What is a prompt regression?
+
+**Prompt Injection and Jailbreak Prevention**
+* What is prompt injection?
+* What is a jailbreak attempt?
+* How does direct prompt injection differ from indirect prompt injection?
+* Why can user input or retrieved documents contain malicious instructions?
+* Why should an application not rely only on its system prompt for security?
+* What is the purpose of separating trusted instructions from untrusted content?
+
+**Prompt Evaluation and Optimization**
+* What is prompt evaluation?
+* Why should prompts be tested before production deployment?
+* What is a test dataset for prompt evaluation?
+* What are common ways to compare two prompt versions?
+* What is prompt optimization?
+* Why is testing a prompt with only one example insufficient?
+
+**Guardrails and Output Validation**
+* What are guardrails in an AI application?
+* What is output validation?
+* What is the difference between input validation and output validation?
+* Why should generated content be checked before being displayed or processed?
+* What are examples of content that may need to be blocked or filtered?
+* How do guardrails help reduce the risk of unsafe AI responses?

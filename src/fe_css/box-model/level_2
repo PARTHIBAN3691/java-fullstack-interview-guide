@@ -1,0 +1,30 @@
+* Explain how the CSS box model interacts with normal document flow.
+* How does the box model differ between block, inline, and inline-block elements?
+* Explain the detailed rules of vertical margin collapsing.
+* How do adjoining vertical margins collapse when their values are positive and negative?
+* How do empty blocks affect margin collapsing?
+* How do overflow, display: flow-root, and flex containers affect margin collapsing?
+* How does box-sizing affect intrinsic sizing calculations?
+* What is the difference between intrinsic sizing and extrinsic sizing?
+* How do min-content and max-content sizing relate to element dimensions?
+* How do min-width: auto and min-height: auto affect flex and grid items?
+* Why can a flex item refuse to shrink below its content's minimum size?
+* How do box-sizing and percentage widths interact in nested containers?
+* How do percentage heights behave when the containing block has an indefinite height?
+* How does the box model interact with absolute positioning?
+* How do padding and borders affect the dimensions of absolutely positioned elements?
+* What is the difference between the content box, padding box, border box, and margin box?
+* How does the CSS box model relate to getBoundingClientRect()?
+* What is the difference between offsetWidth, clientWidth, and scrollWidth?
+* Why can getBoundingClientRect() return fractional dimensions?
+* How does CSS zoom or browser zoom affect measured element dimensions?
+* How do transforms affect visual dimensions without changing normal layout dimensions?
+* How does overflow: hidden affect the visible area of an element?
+* How can box-sizing inconsistencies cause layout bugs in third-party components?
+* How do replaced elements such as images behave with width, height, and box-sizing?
+* How do aspect-ratio, padding, and fixed dimensions interact?
+* How can border widths cause unexpected overflow in a responsive grid?
+* How would you design a global box-sizing reset for a large application?
+* How do Shadow DOM boundaries affect the application of global box-sizing rules?
+* How would you troubleshoot layout shifts caused by changing border or padding values?
+* How do you optimize a complex layout that contains many nested boxes and overflow constraints?

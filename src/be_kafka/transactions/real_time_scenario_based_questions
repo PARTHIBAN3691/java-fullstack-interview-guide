@@ -1,0 +1,30 @@
+* A transactional producer publishes records but the consumer does not see them with read_committed. How would you investigate?
+* A producer crashes after publishing records but before committing its transaction. What happens to those records?
+* An application restarts and receives a producer fencing exception. How would you diagnose and resolve it?
+* Two application instances accidentally use the same transactional.id. What problems can occur?
+* A transaction repeatedly times out during peak traffic. How would you troubleshoot it?
+* A read_committed consumer appears to be stuck even though new records are arriving. What transaction-related conditions could explain this?
+* A long-running transaction prevents consumers from reading newer records from a partition. How would you identify and resolve the issue?
+* A transaction coordinator broker fails while several applications are committing transactions. What happens next?
+* A producer receives a timeout during commitTransaction(). How would you determine whether to retry, abort, or recover?
+* A consumer processes an input record and publishes an output record, but the application crashes before committing the input offset. How would you prevent duplicate output processing?
+* A consume-transform-produce service occasionally produces duplicate results after restarts. How would you investigate its transaction configuration?
+* A consumer group rebalances while a transactional processing workflow is in progress. How should the application handle the transaction and offsets?
+* A transactional application has high latency compared with a non-transactional producer. How would you optimize it without losing required guarantees?
+* A transaction contains thousands of records across many partitions and frequently fails. How would you redesign the transaction boundaries?
+* A Kafka Streams application reports frequent transaction aborts. Which application and broker metrics would you inspect?
+* A database update succeeds, but publishing the corresponding Kafka event fails. How would you ensure consistency?
+* A Kafka event is published successfully, but a downstream payment API call fails. How would you design recovery without duplicate payments?
+* A service needs to consume Kafka records, update a database, and publish another Kafka event. Why is a Kafka transaction alone insufficient, and what pattern would you use?
+* A producer is fenced after a rolling deployment. How would you verify whether the deployment created overlapping producer instances?
+* A read_committed consumer has lower throughput than expected. How would you distinguish transaction-related delays from ordinary consumer bottlenecks?
+* A transaction commit succeeds, but the application loses its connection before receiving confirmation. How would you recover safely?
+* A transaction abort rate suddenly increases after a broker upgrade. How would you investigate the cause?
+* An application uses a unique transactional.id on every restart and experiences unexpected recovery behavior. What would you change?
+* A team wants to increase transaction.timeout.ms substantially to avoid failures. What risks and alternatives would you discuss?
+* A transaction coordinator repeatedly becomes a hotspot for a large fleet of producers. How would you investigate the distribution and transaction workload?
+* A consumer reads only committed data, but one slow producer transaction delays records on a busy partition. How would you mitigate the impact?
+* A business requires exactly-once processing for inventory updates, but the consumer also calls an external REST API. How would you design the workflow?
+* An application aborts a transaction after some records have already been sent. What will consumers observe under each isolation level?
+* A service must replay input records while preserving exactly-once output processing. How would you manage offsets and transactions?
+* A production system needs to prove that financial events are not duplicated or partially published. What transaction design, persistence, and monitoring controls would you implement?

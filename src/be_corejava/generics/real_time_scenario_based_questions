@@ -1,0 +1,15 @@
+* You are designing a reusable API response wrapper that supports different data types. How would you implement it using generics?
+* A repository layer must support multiple entity types and identifier types. How would you design a reusable generic repository?
+* A method must accept a list of `Integer`, `Double`, or other numeric types and calculate the total. How would you define its generic signature?
+* A utility method must copy elements from one collection to another safely. How would you use bounded wildcards to design the method?
+* A method should read elements from a collection of subclasses of `Number`, but compilation fails when assigning the elements to a `List<Number>`. How would you resolve the issue?
+* A reusable service must accept data from a collection of any type but should not modify the collection. Which generic declaration would you use and why?
+* An application uses raw collections and occasionally throws `ClassCastException`. How would you refactor the code to use generics safely?
+* A developer tries to create an array of a generic type inside a generic class. Why does compilation fail, and what alternatives would you recommend?
+* A generic utility method must sort custom objects based on their natural ordering. How would you constrain the type parameter?
+* A framework must support a generic builder that returns the concrete subtype from chained method calls. How would you design the type parameters?
+* Two overloaded generic methods cause a name-clash compilation error after type erasure. How would you redesign the method signatures?
+* A public API needs to accept both a list of integers and a list of doubles without copying the data. How would you design the method signature?
+* A generic method uses an unchecked cast and produces runtime failures for some input types. How would you redesign it to preserve type safety?
+* A library needs to provide a generic cache that supports different key and value types. How would you design the class and its public methods?
+* A team is building a reusable pagination response for multiple entity types. How would you model the response using generics without duplicating classes?

@@ -1,0 +1,30 @@
+* Write SQL statements to convert a table containing comma-separated phone numbers into a normalized structure.
+* Create normalized Customer and CustomerAddress tables with appropriate primary and foreign keys.
+* Design and implement normalized Student, Course, and Enrollment tables for a many-to-many relationship.
+* Write SQL statements to split employee and department information into separate tables.
+* Write a SQL query to identify duplicate customer records before normalizing a legacy database.
+* Write SQL queries to find rows with inconsistent department names caused by duplicated department data.
+* Create a normalized Order, OrderItem, Customer, and Product schema using MySQL.
+* Write SQL statements to migrate repeated product category information into a separate Category table.
+* Design a normalized employee-project assignment schema and define its candidate keys.
+* Given a table with a composite primary key and partial dependencies, write SQL statements to decompose it into 2NF tables.
+* Given a relation with transitive dependencies, write SQL statements to convert it into 3NF.
+* Write SQL DDL statements to enforce primary keys, foreign keys, UNIQUE constraints, and NOT NULL constraints in a normalized schema.
+* Create SQL queries to verify that a schema migration preserved the original row counts and relationships.
+* Write a SQL query to identify orphan records before introducing foreign-key constraints.
+* Implement a safe SQL migration that separates customer details from order records while preserving existing data.
+* Write SQL queries to compare duplicate values across related tables before and after normalization.
+* Create a normalized database schema for a library management system containing books, authors, members, and loans.
+* Design a normalized schema for an employee payroll system with departments, salary history, and payroll transactions.
+* Given a relation and a set of functional dependencies, determine candidate keys and the highest normal form satisfied.
+* Given a set of functional dependencies, calculate attribute closures and identify candidate keys.
+* Given a relation and its functional dependencies, derive a minimal cover and produce a 3NF decomposition.
+* Analyze a proposed table decomposition and determine whether it is lossless and dependency-preserving.
+* Write a Java JDBC program that migrates repeated customer information into a separate table within a transaction.
+* Implement normalized Customer and Order entities using Spring Data JPA with correct @ManyToOne and @OneToMany mappings.
+* Create a Spring Boot service that persists an order and its order items consistently using a normalized schema.
+* Write an integration test that verifies foreign-key constraints prevent invalid relationships in a normalized schema.
+* Implement a database migration using Flyway or Liquibase to split a denormalized table into normalized tables.
+* Write a Java validation utility that identifies duplicate natural keys before importing legacy data into normalized tables.
+* Implement a Spring Data JPA query that retrieves order details by joining normalized customer, order, and order-item entities.
+* Design and implement a normalized database schema for a high-volume e-commerce application using Java, Spring Boot, and MySQL.

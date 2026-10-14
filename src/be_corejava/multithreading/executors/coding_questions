@@ -1,0 +1,21 @@
+
+* Write a Java program using `ExecutorService` to execute a `Runnable` task.
+* Write a program using `Callable` to calculate a value and retrieve the result using `Future`.
+* Create a fixed thread pool of five threads and execute 20 tasks, printing each task ID and thread name.
+* Write a program demonstrating the difference between `execute()` and `submit()` when a task throws a runtime exception.
+* Write a program that submits multiple tasks and waits for all of them to complete before proceeding.
+* Use `invokeAll()` to execute multiple `Callable` tasks and collect their results.
+* Use `invokeAny()` to return the result of the first successfully completed task.
+* Write a program that cancels a running task using `Future.cancel(true)` and handles interruption correctly.
+* Create a `ThreadPoolExecutor` with a bounded queue and a custom rejection policy.
+* Implement a custom `ThreadFactory` that assigns meaningful names to worker threads.
+* Write a program demonstrating `AbortPolicy` and `CallerRunsPolicy`.
+* Implement graceful executor shutdown using `shutdown()`, `awaitTermination()`, and `shutdownNow()` as a fallback.
+* Create a `ScheduledExecutorService` that executes a task periodically with a fixed delay.
+* Write a program to execute multiple independent tasks concurrently and calculate the total execution time.
+* Implement a bounded-concurrency task processor that limits both active tasks and queued tasks.
+* Write a program that demonstrates how an unbounded queue affects `ThreadPoolExecutor` growth.
+* Implement a timeout mechanism for a task using `Future.get(timeout, unit)`.
+* Write a program that uses separate executors for CPU-intensive and I/O-intensive tasks.
+* Implement a task submission system that tracks completed tasks, failed tasks, and rejected tasks.
+* Write a Java 21+ program using `Executors.newVirtualThreadPerTaskExecutor()` to execute multiple blocking I/O tasks concurrently, and compare its behavior with a traditional fixed thread pool.

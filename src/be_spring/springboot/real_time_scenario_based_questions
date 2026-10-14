@@ -1,0 +1,30 @@
+* Your Spring Boot application starts locally but fails in production. How would you investigate the issue?
+* Your application fails to start because a required bean is missing. How would you troubleshoot the dependency configuration?
+* A new dependency causes unexpected auto-configuration behavior. How would you identify the conflicting configuration?
+* Your application uses different database configurations across development, testing, and production. How would you manage these environments?
+* A Spring Boot application starts successfully but exposes HTTP 404 errors for all REST endpoints. How would you troubleshoot component scanning and request mappings?
+* Your application uses the wrong server port despite configuring server.port. What configuration sources would you inspect?
+* A property defined in application.yml is not being applied. How would you investigate configuration precedence and profile activation?
+* Your application takes several minutes to start after adding new modules. How would you identify the startup bottleneck?
+* A Spring Boot service experiences intermittent database connection timeouts under heavy traffic. How would you investigate connection pooling and database capacity?
+* Your REST API becomes slow when the number of concurrent requests increases. How would you investigate server thread pools, database calls, and downstream dependencies?
+* An application works correctly when run from an IDE but fails when packaged as an executable JAR. What would you investigate?
+* Your application fails after upgrading to Spring Boot 3. How would you investigate Java version, dependency compatibility, and Jakarta namespace changes?
+* A production deployment exposes sensitive Actuator endpoints. How would you secure and restrict access to them?
+* Your service returns HTTP 500 for unexpected exceptions without useful logs. How would you improve error handling and observability?
+* A Spring Boot application consumes excessive memory after running for several hours. How would you investigate heap usage, garbage collection, and object retention?
+* Your application needs to call several external services, one of which frequently times out. How would you implement timeouts and resilience?
+* A new configuration property is required for a feature. How would you implement type-safe configuration and validation?
+* Your application requires different bean implementations for different deployment environments. How would you use profiles or conditional configuration?
+* A service starts accepting requests before a required initialization task finishes. How would you ensure readiness is handled correctly?
+* Your application shuts down during deployment and some in-flight requests fail. How would you implement graceful shutdown?
+* A Spring Boot service works in a single instance but fails when multiple replicas run simultaneously. What state-management or concurrency issues would you investigate?
+* Your application has duplicate beans after introducing a new configuration class. How would you identify and resolve the bean registration conflict?
+* A scheduled job executes multiple times after scaling the application to several replicas. How would you prevent duplicate processing?
+* Your API needs correlation IDs across incoming requests and downstream calls. How would you implement consistent request tracing?
+* Your service has high response times even though CPU usage is low. How would you investigate thread blocking, database waits, and network latency?
+* A deployment needs to roll out new configuration without rebuilding the application artifact. How would you design externalized configuration?
+* Your team needs a common logging, security, and monitoring setup across multiple Spring Boot services. How would you create reusable shared components?
+* A health check reports the application as healthy even though its primary database is unavailable. How would you improve health indicator configuration?
+* Your service experiences repeated failures when a downstream API is unavailable. How would you introduce timeouts, retries, circuit breakers, and fallbacks?
+* You need to migrate a monolithic Spring Boot application into independently deployable services. What architectural and operational considerations would guide the migration?

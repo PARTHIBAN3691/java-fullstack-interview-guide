@@ -1,0 +1,36 @@
+* Write a Jenkins pipeline that runs SAST, SCA, secret scanning, and unit tests before allowing a release build to proceed.
+* Write a GitHub Actions workflow that scans a Java application for vulnerable dependencies and fails when a configured severity threshold is exceeded.
+* Write a CI/CD pipeline step that runs DAST against a deployed staging application and publishes the scan report.
+* Write a pipeline script that applies different security gates for pull requests, development builds, and production releases.
+* Write a script that parses security scan reports and fails the build when new critical or high-severity findings exceed the approved threshold.
+* Write a Python program that combines SAST, DAST, and SCA findings into a normalized report with severity, affected component, and remediation status.
+* Write a script that compares current and previous vulnerability reports and identifies newly introduced findings separately from existing technical debt.
+* Write a script that checks Maven or Gradle dependency reports against a vulnerability database or scanner output and identifies affected dependency versions.
+* Write a script that generates an SBOM in SPDX or CycloneDX format for a software build.
+* Write a Python program that parses an SBOM and identifies components matching a supplied list of vulnerable package names and version ranges.
+* Write a script that checks whether a release artifact has an associated SBOM, vulnerability report, and provenance attestation.
+* Write a CI/CD pipeline step that signs a release artifact using an approved signing mechanism.
+* Write a verification script that validates an artifact's signature against an approved public key or trust policy before deployment.
+* Write a policy that rejects artifacts whose signatures are invalid, whose signer is untrusted, or whose provenance does not match the approved build workflow.
+* Write a script that verifies container image digests and rejects mutable image tags in production deployment manifests.
+* Write a Dockerfile for a Java application that uses a minimal runtime image, a multi-stage build, a non-root user, and no embedded secrets.
+* Write a CI/CD pipeline step that scans container images for operating-system and application dependency vulnerabilities.
+* Write a Kubernetes admission policy that rejects unsigned images or images from unapproved registries, using supported verification mechanisms.
+* Write a Terraform security-scanning pipeline that checks for public exposure, unencrypted storage, and overly permissive IAM policies.
+* Write a policy-as-code rule that rejects infrastructure plans granting wildcard administrative permissions.
+* Write a script that scans Git repositories for exposed secrets without printing the secret values in its output.
+* Write a pre-commit hook that prevents known secret patterns from being committed to Git.
+* Write a Python program that redacts passwords, API keys, and tokens from application logs before they are uploaded to a log platform.
+* Write a script that checks whether CI/CD workflows use pinned versions of third-party actions or plugins according to organizational policy.
+* Write a pipeline configuration that separates untrusted pull-request builds from privileged release jobs and production deployment credentials.
+* Write a script that verifies build provenance contains the expected source repository, commit, builder identity, and build workflow.
+* Write a policy that rejects production deployments when required security scan reports or provenance attestations are missing.
+* Write a script that checks whether cloud deployment credentials have expired or exceed approved privilege requirements.
+* Write a compliance automation script that evaluates infrastructure resources against approved encryption, logging, and access-control policies.
+* Write a program that aggregates compliance findings by policy, environment, severity, and resource owner.
+* Write a script that identifies expiring security exceptions and blocks releases when mandatory approvals or compensating controls are missing.
+* Write a script that verifies security scan results, artifact signatures, and approvals before promoting an artifact from staging to production.
+* Write a program that maps SBOM components to deployed applications and generates an impact report when a vulnerable package is disclosed.
+* Write an automated test that confirms the pipeline blocks a deliberately vulnerable sample dependency and permits a compliant build.
+* Write an automated test suite for security-gate behavior, including scanner outages, false positives, approved exceptions, and expired exceptions.
+* Write a script that generates an audit evidence package containing source revision, build identity, scan results, SBOM, artifact digest, signature verification, and deployment approval.

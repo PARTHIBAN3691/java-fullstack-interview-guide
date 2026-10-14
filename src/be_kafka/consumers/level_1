@@ -1,0 +1,30 @@
+* How do you create a Kafka consumer using the Java client library?
+* How do you configure a Kafka consumer in a Spring Boot application?
+* How do you subscribe a consumer to multiple topics?
+* How do you manually assign partitions to a consumer?
+* How does Kafka determine which partitions are assigned to a consumer?
+* How do you configure a consumer to read messages from the earliest available offset?
+* How do you configure a consumer to read only newly arriving messages?
+* How do you commit offsets synchronously and asynchronously?
+* What are the trade-offs between commitSync() and commitAsync()?
+* How do you handle exceptions during message processing?
+* How do you prevent messages from being lost when a consumer crashes?
+* How do you prevent duplicate business processing when a consumer restarts?
+* How do you implement manual acknowledgment in Spring Kafka?
+* How do you configure batch consumption in Spring Kafka?
+* How do you configure record-level processing in Spring Kafka?
+* How do you control consumer concurrency in a Spring Boot application?
+* How do you configure session.timeout.ms and heartbeat.interval.ms?
+* What is max.poll.interval.ms, and how does it affect consumer stability?
+* How do you handle long-running operations in a Kafka consumer?
+* How do you implement retry logic for transient processing failures?
+* How do you route permanently failed messages to a dead-letter topic?
+* How do you configure a custom deserializer in Java?
+* How do you handle malformed JSON messages in a Spring Kafka consumer?
+* How do you monitor consumer lag and processing throughput?
+* How do you implement graceful shutdown for a Kafka consumer?
+* How do you handle partition revocation and reassignment?
+* How do you configure a consumer to read only selected partitions?
+* How do you use pause() and resume() to control message consumption?
+* How do you secure Kafka consumers using TLS, SASL, and ACLs?
+* How do you write unit and integration tests for Kafka consumers?

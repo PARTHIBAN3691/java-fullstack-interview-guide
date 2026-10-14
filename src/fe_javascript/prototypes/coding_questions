@@ -1,0 +1,30 @@
+* Create an object and display its prototype using Object.getPrototypeOf().
+* Write a program that creates two objects sharing the same prototype.
+* Create a constructor function and add a method to its prototype.
+* Demonstrate prototypal inheritance using Object.create().
+* Write a program to check whether a property belongs directly to an object.
+* Implement a function that lists an object's own properties.
+* Write a program to check whether one object is in another object's prototype chain.
+* Create a constructor function with shared methods and instantiate multiple objects.
+* Demonstrate how an instance inherits a property from its prototype.
+* Override an inherited property and display the result.
+* Write a program that demonstrates a three-level prototype chain.
+* Create an object with no prototype and add custom properties to it.
+* Write a program that safely checks property ownership using Object.hasOwn().
+* Demonstrate the difference between Object.keys() and for...in.
+* Implement inheritance between two constructor functions using Object.create().
+* Write a program that restores the constructor property after replacing a prototype.
+* Demonstrate how instanceof works with constructor functions.
+* Write a program that adds a method to a prototype and uses it from existing instances.
+* Implement a shared calculateArea() method using a prototype.
+* Write a program that demonstrates inherited getters and setters.
+* Create a prototype-based vehicle hierarchy with Vehicle, Car, and ElectricCar objects.
+* Implement a function that retrieves an object's complete prototype chain.
+* Write a program to compare two objects' prototypes.
+* Demonstrate how changing a shared prototype affects multiple instances.
+* Implement a safe object-property merge function that avoids prototype pollution.
+* Write a program that creates a dictionary using Object.create(null).
+* Demonstrate the difference between instance methods and prototype methods.
+* Implement a custom instanceof-like check using Object.prototype.isPrototypeOf().
+* Write a program that uses Reflect.getPrototypeOf() and Reflect.setPrototypeOf().
+* Build a prototype-based employee hierarchy with shared methods and overridden behavior.

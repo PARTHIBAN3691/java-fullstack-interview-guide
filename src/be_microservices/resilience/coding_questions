@@ -1,0 +1,30 @@
+* Write a Java program demonstrating a circuit breaker using Resilience4j.
+* Implement a Spring Boot REST client with a Resilience4j circuit breaker.
+* Configure a circuit breaker with failure-rate threshold, sliding window, and half-open state settings.
+* Implement a retry mechanism using Resilience4j annotations.
+* Write a Java method that retries only transient exceptions and ignores permanent business failures.
+* Implement exponential backoff with randomized jitter for retry attempts.
+* Configure connect and response timeouts for a Spring WebClient.
+* Implement a fallback method for a downstream REST API using Resilience4j.
+* Combine circuit breaker, retry, and time limiter patterns in a Spring Boot service.
+* Implement a semaphore-based bulkhead for a downstream API.
+* Implement a thread-pool bulkhead and compare its behavior with a semaphore bulkhead.
+* Write a rate limiter that restricts requests per time interval using Resilience4j.
+* Implement a WebClient service that handles HTTP 429 responses and respects the Retry-After header.
+* Write a Java service that propagates an end-to-end request deadline to downstream calls.
+* Implement a fallback that serves cached data when a read-only downstream service is unavailable.
+* Write a service that rejects requests when a configurable concurrency limit is reached.
+* Implement a retry mechanism that uses idempotency keys for payment requests.
+* Write unit tests that verify circuit breaker transitions between closed, open, and half-open states.
+* Create an integration test that simulates downstream timeouts and verifies fallback behavior.
+* Implement a mock downstream service that produces intermittent HTTP 500 responses for resilience testing.
+* Write a test that verifies non-retryable exceptions are not retried.
+* Implement resilience for a Kafka consumer using bounded retries and a dead-letter topic.
+* Write a Java component that records circuit breaker state changes and exposes metrics through Micrometer.
+* Implement a resilient service client that combines timeouts, retries, circuit breaking, and bulkheads.
+* Write a test that verifies a failed downstream service cannot exhaust the application's shared thread pool.
+* Implement graceful degradation for a product-catalog service when its recommendation service is unavailable.
+* Write a load test that measures response latency, throughput, and failure rates during a simulated dependency outage.
+* Implement a bounded retry policy that stops retrying when the remaining request deadline is insufficient.
+* Create a resilience test that verifies the system recovers without a retry storm after a downstream service becomes healthy.
+* Design and implement a production-grade resilience framework using Spring Boot, Resilience4j, WebClient, Micrometer, distributed tracing, idempotency, and fault-injection tests.

@@ -1,0 +1,30 @@
+* Explain the complete CSS cascade, including origin, importance, layers, specificity, and source order.
+* How does CSS cascade layer ordering affect specificity?
+* How are specificity conflicts resolved when selectors have equal specificity?
+* How does the :where() pseudo-class differ from :is() in specificity?
+* How does :not() affect selector specificity?
+* Explain how stacking contexts affect z-index calculations.
+* Why can an element with a high z-index appear behind another element?
+* How do positioned elements and transforms influence stacking contexts?
+* Explain margin collapsing and the conditions under which it occurs.
+* How does the containing block determine the positioning of absolute elements?
+* How does position: sticky determine its scroll container and sticking boundary?
+* Why can position: sticky fail to work inside a container?
+* How do intrinsic sizing keywords such as min-content, max-content, and fit-content work?
+* Explain the difference between min-width: auto and min-width: 0 in layout calculations.
+* How does box-sizing interact with percentage widths and padding?
+* What causes horizontal overflow in a responsive layout?
+* How do viewport units behave on mobile browsers with dynamic browser controls?
+* How do CSS custom properties differ from Sass variables?
+* How does var() fallback behavior work when a custom property is missing or invalid?
+* How can inheritance and custom properties be used to implement theming?
+* What is the difference between computed, specified, used, and actual CSS values?
+* How do CSS selectors affect browser style calculation and rendering performance?
+* How can excessive selector complexity make styles difficult to maintain?
+* How does the browser resolve conflicting shorthand and longhand declarations?
+* What is the difference between display: contents and display: none?
+* How can display: contents affect accessibility and document semantics?
+* How do writing modes and text direction influence logical CSS properties?
+* What is the difference between physical properties and logical properties?
+* How would you debug a layout issue caused by multiple stacking contexts and inherited styles?
+* How would you structure a scalable CSS architecture for a large enterprise application?

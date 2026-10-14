@@ -1,0 +1,15 @@
+* A Java service creates millions of temporary objects per minute. How would generational garbage collection handle this workload?
+* An application experiences frequent young GC events but acceptable response times. How would you determine whether tuning is necessary?
+* GC logs show that most objects are being promoted to the old generation after a small number of collections. How would you investigate?
+* A service experiences frequent Full GC events despite successful young GC cycles. How would you identify the underlying cause?
+* An application has high old-generation occupancy after every collection. How would you distinguish a memory leak from a naturally large live-data set?
+* A Java application experiences long young GC pauses after a recent increase in traffic. How would you investigate allocation rate, object survival, and heap configuration?
+* An application frequently fills its Survivor spaces. How would you determine whether the tenuring threshold or heap layout needs adjustment?
+* A workload creates large arrays and buffers that survive multiple GC cycles. How would you investigate their impact on generation occupancy?
+* A service has a high allocation rate but low long-term memory usage. How would you explain its GC behavior and optimize it if necessary?
+* A batch application processes large datasets and retains many objects until processing completes. How would you reduce unnecessary promotion and GC overhead?
+* After a deployment, old-generation occupancy increases even though the request rate remains unchanged. How would you investigate changes in object lifetime and retention?
+* A Java application runs well initially but slows down after several hours because of garbage collection. Which generation-level metrics would you inspect?
+* A production application uses G1 GC, and its logs show frequent young collections followed by mixed collections. How would you interpret the pattern?
+* A service has frequent young GC events and high CPU utilization, but the old generation remains mostly empty. How would you identify the performance bottleneck?
+* You must choose between a generational and a non-generational garbage collector for a latency-sensitive application. What workload characteristics and performance metrics would guide your decision?

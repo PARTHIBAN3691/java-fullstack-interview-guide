@@ -1,0 +1,30 @@
+* Your Spring Boot Docker image is over 900 MB. How would you investigate the image layers and reduce its size?
+* A Docker build downloads all Maven dependencies every time application source code changes. How would you optimize the Dockerfile?
+* Your application builds successfully on a developer's machine but fails in CI because a JAR file cannot be found. How would you investigate the build context and COPY paths?
+* A Docker container exits immediately after startup even though the image builds successfully. How would you investigate ENTRYPOINT, CMD, and application logs?
+* Your Java container does not stop promptly when Docker sends a termination signal. How would you fix the process startup and shutdown configuration?
+* A production security scan identifies that the application runs as root. How would you modify the Dockerfile and verify the runtime user?
+* Your Dockerfile contains database credentials in an ENV instruction. How would you remove the exposure and redesign the build and deployment process?
+* A developer uses a mutable base-image tag, and a later build unexpectedly behaves differently. How would you make the build more reproducible?
+* Your Docker image works locally but fails in production because a required configuration file is missing. How would you redesign configuration handling?
+* A Spring Boot application cannot connect to PostgreSQL because the database hostname is hardcoded as localhost. How would you correct the image and runtime configuration?
+* Your container health check reports failure during application startup, causing the deployment system to restart it repeatedly. How would you adjust the health-check strategy?
+* A container is marked healthy, but the Java application cannot process real requests. How would you improve the health-check endpoint and validation?
+* A new JDK base image causes the application to fail because a required native library is missing. How would you identify and fix the dependency?
+* Your Java container exceeds its memory limit despite a modest configured heap. How would you investigate direct memory, metaspace, thread stacks, and other native allocations?
+* A multi-stage build produces a smaller image, but the runtime fails because a required file was left in the build stage. How would you troubleshoot and fix it?
+* Your Dockerfile copies the entire source repository into the image, including Git history and local build artifacts. How would you reduce the build context?
+* A Maven build becomes slower after a Dockerfile refactoring. How would you inspect layer ordering and restore cache efficiency?
+* Your build requires a private Maven repository token. How would you provide the credential securely without persisting it in image layers?
+* A distroless Java image starts correctly, but production troubleshooting is difficult because common shell utilities are unavailable. How would you handle diagnostics safely?
+* A Java application runs on AMD64 but fails on ARM64 deployment hosts. How would you investigate architecture-specific dependencies and image manifests?
+* A Docker image passes vulnerability scanning today but contains outdated operating-system packages a month later. How would you establish an ongoing update process?
+* The application version embedded in the Docker image does not match the Git commit deployed to production. How would you improve image labels and build metadata?
+* A developer changes a dependency version, but the Docker build continues using unexpected cached artifacts. How would you diagnose and correct the issue?
+* Your Spring Boot application requires different JVM options for development and production. How would you configure these without creating separate, duplicated Dockerfiles?
+* The application needs additional CA certificates to call a third-party HTTPS API, but TLS validation fails in the container. How would you troubleshoot and update the image?
+* A custom jlink runtime reduces image size but causes NoClassDefFoundError or missing-module errors. How would you determine which modules are required?
+* A containerized Java application writes temporary files into a directory that is not writable by the configured non-root user. How would you fix the permissions securely?
+* Your production deployment requires a rapid rollback after a faulty image release. How would you ensure the previous image remains identifiable and available?
+* The Docker build succeeds only when the developer has local files that are not committed to source control. How would you make the build self-contained and reproducible?
+* Your team wants a single Dockerfile strategy for multiple Spring Boot microservices while allowing service-specific runtime configuration. How would you design and maintain it?

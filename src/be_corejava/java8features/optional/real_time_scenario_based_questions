@@ -1,0 +1,21 @@
+
+* A user lookup API may return null when the user does not exist. How would you redesign the service method to return `Optional<User>`?
+* A repository returns `Optional<Employee>`. How would you retrieve the employee's department name without multiple null checks?
+* An employee exists, but their manager or department may be null. How would you safely retrieve the manager's email using `Optional`?
+* A product lookup returns an empty `Optional`. How would you return a default product without executing the fallback logic unnecessarily?
+* A payment service looks up a customer's saved payment method. How would you handle the case where no payment method exists?
+* A configuration service searches for a setting in a database and then in a default configuration. How would you implement this fallback using Java 8?
+* A customer may have an address, and the address may have a postal code. How would you safely retrieve the postal code using `Optional`?
+* A Spring Data JPA repository returns `Optional<Order>`. How would you return an order or throw a custom `OrderNotFoundException`?
+* A service method returns `Optional<String>`, but the caller needs to reject blank strings as well as missing values. How would you implement this?
+* A REST API must return HTTP 404 when a resource is missing. How would you use `Optional` in the service and controller layers?
+* A user profile contains optional phone and email fields. How would you design the service logic without scattering null checks?
+* A legacy method returns null, while a new method returns `Optional`. How would you migrate callers safely?
+* A report generator needs an employee's salary, but the employee or salary record may be absent. How would you handle this case?
+* A fallback method calls a remote service and is expensive. How would you prevent it from being executed when the primary value exists?
+* A chain of repository calls produces nested `Optional` values. How would you simplify the chain?
+* A batch process handles thousands of records, some of which have missing optional fields. How would you process them safely and efficiently?
+* A service returns an empty `Optional` for both missing data and invalid input. How would you redesign the contract to distinguish these cases?
+* A DTO mapper must copy values from a nullable source object into a response object. How would you use `Optional` without making the mapping code difficult to maintain?
+* An API receives a request in which a field can be omitted, explicitly null, or set to a value. Is `Optional` alone sufficient to model all three states?
+* A code review finds extensive use of `Optional.get()` after `isPresent()`. How would you improve the implementation?

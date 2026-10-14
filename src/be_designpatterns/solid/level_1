@@ -1,0 +1,30 @@
+* How would you refactor a Java class that validates input, saves data, and sends email notifications to follow SRP?
+* How can the Strategy design pattern help implement the Open/Closed Principle?
+* How would you add a new payment method without modifying existing payment-processing logic?
+* How can you identify an LSP violation in an inheritance hierarchy?
+* Why can overriding a method to throw UnsupportedOperationException indicate an LSP violation?
+* How would you split a large interface into smaller, client-specific interfaces?
+* How can ISP improve the design of a service layer in Spring Boot?
+* How would you apply DIP to a Java service that directly creates a JDBC repository?
+* How does constructor injection support dependency inversion?
+* How would you replace tightly coupled object creation with dependency injection?
+* What is the difference between dependency inversion and the Dependency Inversion Principle?
+* How can the Factory Method pattern support OCP?
+* How can composition replace inheritance when designing reusable business logic?
+* How would you refactor a class that contains multiple unrelated business responsibilities?
+* How can SRP improve unit testing?
+* How does DIP make mocking dependencies easier in JUnit and Mockito?
+* How would you design separate interfaces for read-only and write operations?
+* How can you prevent subclasses from weakening the guarantees of a superclass?
+* How would you design a notification service that supports email, SMS, and push notifications?
+* How can SOLID principles be applied to a REST controller and service layer?
+* How would you structure repository interfaces to avoid exposing database-specific implementation details?
+* How can ISP reduce unnecessary dependencies between modules?
+* How would you extend a discount calculation system to support new discount strategies?
+* What problems arise when business logic depends directly on static utility methods?
+* How can you apply SOLID principles when integrating a third-party API?
+* How would you refactor a switch statement that selects a different business operation based on type?
+* How can the Template Method and Strategy patterns support SOLID design?
+* How would you review a pull request for SOLID principle violations?
+* How can SOLID principles improve maintainability in a microservice?
+* What trade-offs should you consider when applying SOLID principles to a simple CRUD application?

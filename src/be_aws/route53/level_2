@@ -1,0 +1,20 @@
+* How would you design a globally distributed Java microservices architecture using Route 53 latency-based routing and regional load balancers?
+* How would you implement active-passive disaster recovery across AWS Regions using Route 53 failover routing?
+* How would you design active-active multi-Region traffic routing while accounting for application availability and data consistency?
+* How would you implement weighted routing for a gradual migration from a legacy endpoint to a new Java microservice?
+* How would you design health checks that detect application failures rather than merely confirming that a TCP port is open?
+* How would you prevent DNS failover from routing users to a secondary Region whose database or dependent services are not ready?
+* How would you select TTL values to balance failover responsiveness, DNS query volume, and caching behavior?
+* How would you troubleshoot inconsistent DNS results across different networks and recursive resolvers?
+* How would you design private DNS resolution across multiple VPCs and AWS accounts?
+* How would you configure Route 53 Resolver endpoints and forwarding rules for hybrid cloud connectivity?
+* How would you secure DNS administration using IAM least privilege, logging, and change-control processes?
+* How would you mitigate DNS-based availability risks and reduce the impact of DNS misconfiguration?
+* How would you implement DNSSEC for a Route 53 public hosted zone and validate the registrar's DS record configuration?
+* How would you migrate DNS hosting from another provider to Route 53 without disrupting production traffic?
+* How would you design routing policies for a globally distributed application that must direct users to nearby healthy endpoints?
+* How would you diagnose a situation where Route 53 health checks pass but users cannot access the application?
+* How would you handle dependencies on recursive DNS caching during a regional failover?
+* How would you use Route 53 ARC alongside Route 53 routing policies for controlled recovery in a multi-Region application?
+* How would you estimate Route 53 costs for a large application with many hosted zones, health checks, and DNS queries?
+* How would you automate, test, audit, and roll back DNS changes across development, staging, and production environments?

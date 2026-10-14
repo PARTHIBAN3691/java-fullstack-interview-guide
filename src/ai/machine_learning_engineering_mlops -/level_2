@@ -1,0 +1,153 @@
+**MLOps Fundamentals**
+* Design a multi-tenant MLOps platform supporting hundreds of models, isolated teams, governed data access, shared infrastructure, and controlled production releases.
+* How would you define platform abstractions that support multiple ML frameworks without forcing every team into the same training architecture?
+* How would you guarantee traceability from raw data and source code to model artifacts, deployed endpoints, and predictions?
+* How would you balance platform standardization against the flexibility needed for specialized models and hardware?
+* How would you design failure isolation so that one team's training workloads cannot exhaust resources needed by production inference?
+* How would you establish service-level objectives for training pipelines and inference services?
+* How would you evaluate build-versus-buy trade-offs for orchestration, registries, monitoring, and feature management?
+
+**ML Lifecycle Management**
+* Design a lifecycle state machine with immutable artifacts, promotion gates, approvals, deployment tracking, and retirement policies.
+* How would you coordinate lifecycle transitions when a model is deployed in several regions and environments?
+* How would you prevent race conditions between model promotion, deployment, and rollback operations?
+* How would you manage models with different validation requirements, regulatory classifications, and release cadences?
+* How would you preserve reproducibility when a pipeline stage or framework is no longer supported?
+* How would you design lineage-based impact analysis for changes to datasets, features, training code, and serving dependencies?
+* How would you measure lifecycle bottlenecks without sacrificing validation rigor?
+
+**Experiment Tracking**
+* Design a distributed experiment-tracking architecture for millions of runs, large artifacts, concurrent writers, and multi-team access.
+* How would you guarantee consistent metadata when experiment logging and artifact uploads fail independently?
+* How would you reproduce a run when the original container image, dataset snapshot, or compute hardware is unavailable?
+* How would you detect misleading experiment comparisons caused by different evaluation sets, metric definitions, or random seeds?
+* How would you prevent validation-set overfitting when researchers launch thousands of tuning experiments?
+* How would you optimize artifact retention and metadata indexing without losing evidence required for audits?
+* How would you design experiment lineage that supports both reproducibility and cost attribution?
+
+**Dataset and Model Versioning**
+* Design an immutable versioning strategy for petabyte-scale datasets, distributed training artifacts, and frequently updated models.
+* How would you reconcile dataset corrections with existing models whose training lineage references the old version?
+* How would you make artifact publication atomic when model weights, configuration, tokenizer, feature schema, and evaluation reports are stored separately?
+* How would you verify artifact integrity and provenance before loading a model into production?
+* How would you manage model compatibility when feature definitions, preprocessing logic, and serving libraries evolve independently?
+* How would you design garbage collection for unreferenced datasets and artifacts without deleting assets required for reproducibility?
+* How would you support disaster recovery across regions while maintaining version identity and lineage consistency?
+
+**Feature Stores**
+* Design a feature platform that supports point-in-time correctness, low-latency online serving, offline analytics, versioning, and multi-region availability.
+* How would you preserve consistency when offline backfills and online event processing update the same features concurrently?
+* How would you guarantee point-in-time correctness with late-arriving events and retroactive corrections?
+* How would you migrate feature definitions without breaking hundreds of dependent models?
+* How would you handle feature-store outages when inference requires features that are not safely recomputable online?
+* How would you detect subtle training-serving skew caused by differences in transformation libraries or numerical precision?
+* How would you enforce tenant isolation while supporting shared feature computation and cost-efficient storage?
+
+**Model Registry**
+* Design a model registry that supports immutable artifact references, signatures, validation evidence, approval workflows, and multi-region deployments.
+* How would you prevent a registry tag or alias from changing underneath a deployment process?
+* How would you guarantee that production endpoints run the exact approved artifact rather than a mutable reference?
+* How would you design promotion policies that consider quality, fairness, security, latency, and cost simultaneously?
+* How would you recover registry consistency after a partial failure between promotion and deployment?
+* How would you identify every deployment affected by a compromised model artifact or vulnerable dependency?
+* How would you scale registry metadata queries and artifact delivery across a large enterprise?
+
+**Training Pipeline Automation**
+* Design a fault-tolerant training orchestration system that supports dependencies, retries, distributed jobs, resumable stages, and cost-aware scheduling.
+* How would you implement idempotent pipeline execution when a job can fail after completing external side effects?
+* How would you manage resource contention between expensive training jobs and latency-sensitive inference workloads?
+* How would you design checkpoint recovery for distributed training across worker failures?
+* How would you guarantee that only a validated model artifact is published after concurrent pipeline executions?
+* How would you implement pipeline caching without reusing outputs from incompatible data or configuration versions?
+* How would you optimize end-to-end pipeline latency when preprocessing and evaluation dominate training time?
+
+**Hyperparameter Tuning**
+* Design a distributed tuning platform that supports Bayesian optimization, early stopping, experiment isolation, and compute budgets.
+* How would you tune models under strict GPU-hour and wall-clock limits while maintaining reliable comparisons?
+* How would you account for noisy objectives, failed trials, and varying evaluation costs in optimization decisions?
+* How would you avoid selection bias caused by repeatedly evaluating candidates against the same validation set?
+* How would you tune models when hyperparameters interact and the search space contains conditional parameters?
+* How would you schedule trials across heterogeneous compute resources while maximizing utilization?
+* How would you establish statistical confidence that a tuned candidate truly improves over the baseline?
+
+**Model Validation**
+* Design a model-validation framework that combines offline metrics, statistical uncertainty, subgroup fairness, robustness, latency, and business constraints.
+* How would you evaluate models when ground-truth labels are delayed, incomplete, or subject to selection bias?
+* How would you prevent leakage when records share entities, time windows, or upstream derived features?
+* How would you define acceptance thresholds that account for uncertainty rather than relying on a single metric value?
+* How would you validate model calibration and decision thresholds when error costs vary by business segment?
+* How would you evaluate robustness to distribution shift and adversarial or malformed inputs?
+* How would you compare a candidate model with production using paired evaluation and controlled online experiments?
+
+**Model Deployment Strategies**
+* Design a zero-downtime deployment strategy for large models with strict latency, availability, and rollback requirements.
+* How would you perform shadow and canary releases while ensuring both candidate and production models receive comparable inputs?
+* How would you manage GPU memory, model loading time, replica readiness, and autoscaling during deployment?
+* How would you deploy models with incompatible input schemas while old and new application versions coexist?
+* How would you design multi-model serving that isolates resource-intensive models and protects latency-sensitive endpoints?
+* How would you route traffic across regions while handling model-version skew and regional failures?
+* How would you evaluate deployment strategies for batch models that produce downstream business-critical datasets?
+
+**Model Monitoring**
+* Design a monitoring system that correlates infrastructure health, input data quality, feature drift, delayed labels, and model performance.
+* How would you detect performance degradation when ground truth is sparse or arrives weeks after prediction?
+* How would you establish statistically reliable alerts under seasonal traffic patterns and highly imbalanced outcomes?
+* How would you identify whether a performance drop is caused by drift, feature-pipeline failure, model defects, or changes in user behavior?
+* How would you monitor millions of predictions without retaining sensitive raw inputs or overwhelming the telemetry platform?
+* How would you trace a bad prediction through feature versions, model artifacts, and source-data lineage?
+* How would you design monitoring that supports automated remediation without allowing noisy signals to trigger unsafe actions?
+
+**Data Drift and Concept Drift**
+* Design a drift-detection architecture that distinguishes covariate drift, label shift, and concept drift in production.
+* How would you detect concept drift when labels are delayed, selectively observed, or available only for a subset of predictions?
+* How would you control false positives when monitoring thousands of features and multiple population segments?
+* How would you separate real drift from seasonal variation, upstream schema changes, and instrumentation defects?
+* How would you determine whether drift should trigger investigation, retraining, traffic restriction, or rollback?
+* How would you evaluate drift detectors under changing baselines and nonstationary data?
+* How would you avoid retraining on a drifting dataset before confirming that its labels and quality remain trustworthy?
+
+**Retraining Automation**
+* Design a closed-loop retraining platform that consumes drift signals, validates incoming data, trains candidates, evaluates them, and promotes only approved models.
+* How would you prevent oscillation between model versions when retraining is triggered by noisy performance metrics?
+* How would you manage retraining when data quality is degraded or the observed distribution has changed unexpectedly?
+* How would you prevent a newly trained model from being promoted based solely on metrics from a contaminated evaluation set?
+* How would you implement cooldowns, deduplication, concurrency limits, and budget controls for retraining triggers?
+* How would you coordinate retraining and deployment when multiple regions or customer segments require separate models?
+* How would you audit automated promotion decisions and provide a safe human override?
+
+**Reproducible ML Pipelines**
+* Design a reproducibility system that records data snapshots, code revisions, environment images, feature definitions, random seeds, hardware, and training configuration.
+* How would you reproduce a distributed GPU training run when exact numerical determinism is not guaranteed?
+* How would you distinguish bitwise reproducibility from statistically equivalent results?
+* How would you preserve reproducibility when external datasets and pretrained model dependencies change or disappear?
+* How would you design content-addressed caching for expensive pipeline stages without reusing stale outputs?
+* How would you verify the integrity and provenance of externally supplied model weights and training artifacts?
+* How would you reproduce a historical production prediction using archived model, feature, and request metadata while respecting data-retention constraints?
+
+**CI/CD for Machine Learning**
+* Design an end-to-end ML CI/CD pipeline that tests code, data contracts, feature logic, model quality, container security, and deployment readiness.
+* How would you combine application releases and model releases when they have different versioning and rollback requirements?
+* How would you avoid rebuilding or retraining expensive artifacts unnecessarily while ensuring every change receives sufficient validation?
+* How would you implement progressive delivery with automated quality gates and safe rollback conditions?
+* How would you prevent an artifact validated in staging from being replaced by an unverified artifact in production?
+* How would you secure pipeline identities and supply chains against unauthorized artifact modification?
+* How would you design CI/CD for regulated models requiring approvals, immutable evidence, and separation of duties?
+
+**ML Governance**
+* Design an enterprise governance framework that combines model inventory, risk classification, lineage, access control, validation evidence, and lifecycle approvals.
+* How would you enforce different governance controls for low-risk recommendation models and high-impact decision systems?
+* How would you prove which data, code, features, model version, and approvals were involved in a historical decision?
+* How would you manage privacy deletion requests when training data has contributed to deployed model parameters?
+* How would you detect and respond to unauthorized changes in model artifacts, evaluation reports, or deployment metadata?
+* How would you operationalize fairness and explainability checks across models with different technical characteristics?
+* How would you retain audit evidence while applying data minimization and retention limits?
+
+**Model Rollback and Recovery**
+* Design a recovery architecture that restores model artifacts, registry state, feature dependencies, routing configuration, and inference capacity after a regional failure.
+* How would you perform rollback when the previous model depends on an older feature schema or a retired serving runtime?
+* How would you detect a model-specific failure that does not cause infrastructure health checks to fail?
+* How would you guarantee that rollback operations are safe when multiple deployment controllers operate concurrently?
+* How would you recover from a corrupted registry or deleted artifact while preserving provenance and approval history?
+* How would you prevent a rollback from reintroducing a known security vulnerability or a model that violates current policy?
+* How would you test recovery objectives through controlled failure injection and disaster-recovery exercises?
+

@@ -1,0 +1,30 @@
+* How would you choose between rolling, blue-green, and canary deployment strategies?
+* How does a rolling deployment maintain service availability while replacing application instances?
+* What configuration is required to perform a blue-green deployment?
+* How would you switch traffic safely between blue and green environments?
+* How would you determine the initial traffic percentage for a canary deployment?
+* How would you compare the performance of a canary release against the existing production version?
+* What are the limitations of a recreate deployment?
+* How would you implement a shadow deployment without affecting production responses?
+* How would you design an A/B deployment to compare two application versions?
+* How do feature flags help decouple deployment from release?
+* How would you manage feature flags across development, staging, and production?
+* How would you prevent stale feature flags from increasing application complexity?
+* How does progressive delivery combine automated analysis and incremental traffic shifting?
+* What are the common causes of downtime during a supposedly zero-downtime deployment?
+* How would you deploy a new application version when the database schema changes?
+* What is the expand-and-contract pattern for database migrations?
+* How would you maintain compatibility between old and new application versions during a rolling deployment?
+* How would you handle API contract changes when multiple services are deployed independently?
+* How would you decide whether to roll back or roll forward after a production failure?
+* Which health metrics and thresholds would you use to trigger an automated rollback?
+* How would you prevent automated rollback from repeatedly switching between application versions?
+* How would you validate a deployment using smoke tests, integration tests, and synthetic transactions?
+* How would you verify that background jobs and scheduled tasks are safe during a deployment?
+* How would you manage session state when old and new application instances run simultaneously?
+* How would you ensure that message consumers remain compatible during a rolling deployment?
+* How would you use Kubernetes readiness probes and deployment settings to support zero-downtime releases?
+* How would you implement release approvals and separation of duties in a deployment pipeline?
+* How would you maintain an audit trail for production deployments?
+* How would you coordinate application and database releases across multiple microservices?
+* How would you measure deployment success using change failure rate, deployment frequency, and recovery time?

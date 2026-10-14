@@ -1,0 +1,30 @@
+* How would you design a persistent storage strategy for a production Spring Boot application running in Docker?
+* How do you select between named volumes, bind mounts, tmpfs mounts, and external storage for different workloads?
+* How would you design a backup and recovery strategy for PostgreSQL data stored in Docker volumes?
+* How do you ensure database consistency when backing up a live database volume?
+* How would you migrate a large database volume with minimal downtime?
+* How do you troubleshoot Docker volume corruption or filesystem errors?
+* How do you investigate a sudden increase in volume storage consumption in production?
+* How do you identify and resolve I/O bottlenecks caused by Docker volume storage?
+* How do you troubleshoot poor database performance caused by the underlying storage system?
+* How do you design a storage strategy for multiple Spring Boot instances that need access to shared files?
+* What problems can occur when multiple application instances write to the same shared volume concurrently?
+* How would you implement file locking or coordination when multiple containers access shared files?
+* How do you manage persistent storage when moving containers between Docker hosts?
+* What limitations do local Docker volumes introduce when deploying applications across multiple hosts?
+* How do volume drivers enable integration with network-attached or external storage systems?
+* How would you troubleshoot a volume driver that fails to mount remote storage?
+* How do you design a disaster recovery strategy for Dockerized database workloads?
+* How do you protect sensitive application data stored in Docker volumes?
+* How would you manage encryption for data at rest in persistent container storage?
+* How do you prevent unauthorized containers from accessing sensitive volumes?
+* How do Linux capabilities, user namespaces, and filesystem permissions affect volume access?
+* How would you diagnose SELinux or AppArmor restrictions that prevent a container from accessing a mounted directory?
+* How do you troubleshoot differences in bind-mount behavior across Linux, Windows, and macOS?
+* How would you optimize volume performance for database workloads with high IOPS requirements?
+* How do you investigate inode exhaustion when a filesystem still has free disk space?
+* How do you prevent a container from accidentally filling the host filesystem through a volume?
+* How would you implement retention policies for application-generated files stored in persistent volumes?
+* How do you plan a zero-data-loss migration from one storage backend to another?
+* How do you verify backup integrity and recovery objectives for containerized stateful applications?
+* How would you design observability for volume capacity, latency, mount failures, and storage-related incidents?

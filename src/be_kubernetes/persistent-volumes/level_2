@@ -1,0 +1,30 @@
+* Explain the complete Kubernetes storage architecture, including PVs, PVCs, StorageClasses, CSI drivers, and backend storage systems.
+* How does the CSI controller component differ from the CSI node component?
+* Explain the volume provisioning, attachment, mounting, and unmounting lifecycle.
+* What happens internally when a Pod using a PVC is scheduled to a different node?
+* How do volume binding and Pod scheduling interact in a multi-zone cluster?
+* What challenges arise when using zonal block storage across multiple availability zones?
+* How would you design persistent storage for a highly available database running on Kubernetes?
+* What are the trade-offs between block, file, and object storage for Kubernetes workloads?
+* How do local PersistentVolumes differ from network-attached PersistentVolumes?
+* What are the availability and recovery limitations of local PersistentVolumes?
+* How would you select an appropriate access mode for a distributed application?
+* Why does ReadWriteMany not automatically guarantee safe concurrent writes?
+* How do filesystem locking and application-level consistency affect shared volumes?
+* How does the PV reclaim policy interact with a dynamically provisioned cloud disk?
+* What risks arise when a StorageClass uses the Delete reclaim policy?
+* How would you migrate a workload from one StorageClass to another with minimal downtime?
+* How can you resize a filesystem-backed volume without losing application data?
+* What limitations can prevent a PVC expansion from completing?
+* How do snapshots differ from backups of persistent application data?
+* How do CSI volume snapshots work, and what resources are required?
+* How would you design a backup and disaster recovery strategy for stateful Kubernetes applications?
+* How do volume snapshots and database-native backups complement each other?
+* How do you maintain consistency when taking snapshots of a running database?
+* What happens if a node fails while a volume is attached to it?
+* How would you troubleshoot a volume that remains attached to a failed node?
+* What are the risks of forcing volume detachment while a workload is still using the disk?
+* How do CSI drivers handle topology constraints and volume attachment limits?
+* How would you investigate storage latency affecting Spring Boot response times?
+* How do filesystem choice, IOPS, throughput, and queue depth influence application performance?
+* How would you design a scalable, secure, and highly available storage architecture for hundreds of stateful workloads?

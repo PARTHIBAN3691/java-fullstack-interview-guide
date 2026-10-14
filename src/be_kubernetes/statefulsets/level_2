@@ -1,0 +1,30 @@
+* Explain the architecture and lifecycle of a StatefulSet in Kubernetes.
+* How does a StatefulSet controller maintain stable identity and storage for each Pod?
+* How does StatefulSet reconciliation differ from Deployment reconciliation?
+* How would you design a highly available database using a StatefulSet?
+* How would you deploy a distributed database that requires stable network identities?
+* How would you handle leader election and replication in a StatefulSet-based application?
+* How would you design persistent storage for a StatefulSet across multiple availability zones?
+* How do storage topology and volume binding affect StatefulSet scheduling?
+* How would you recover a StatefulSet when a node hosting a database replica fails?
+* How would you prevent simultaneous attachment of a single-writer volume to incompatible nodes?
+* How would you design disaster recovery for StatefulSet workloads?
+* How would you implement consistent backups for a distributed database running in a StatefulSet?
+* How would you coordinate application-level snapshots with PersistentVolume snapshots?
+* How would you upgrade a StatefulSet with minimal downtime?
+* How does a partitioned RollingUpdate strategy help control StatefulSet updates?
+* How would you recover from a bad StatefulSet revision?
+* What are the risks of using OnDelete as an update strategy?
+* How would you safely scale down a distributed database StatefulSet?
+* Why can deleting a StatefulSet Pod be dangerous for quorum-based systems?
+* How would you handle persistent volume retention when deleting or scaling down a StatefulSet?
+* How do PVC retention policies affect StatefulSet lifecycle management?
+* How would you migrate StatefulSet data between storage backends without losing consistency?
+* How would you design anti-affinity and topology spread constraints for stateful workloads?
+* How would you handle a StatefulSet where one replica remains unready and blocks ordered updates?
+* How would you diagnose DNS and peer-discovery problems in a StatefulSet cluster?
+* How would you implement security and access controls for stateful workloads?
+* How would you manage credentials and TLS certificates for a StatefulSet database cluster?
+* How would you compare StatefulSets with Kubernetes Operators for managing databases?
+* What limitations should you consider when running stateful workloads on Kubernetes?
+* How would you design a production-grade StatefulSet deployment with high availability, monitoring, backups, security, and disaster recovery?

@@ -1,0 +1,30 @@
+* How would you design a distributed system with a strict p99 latency requirement?
+* How would you identify the major contributors to end-to-end latency in a microservices architecture?
+* How does tail latency amplification occur when one request depends on multiple downstream services?
+* Why can p99 latency of a distributed request be significantly worse than the p99 latency of an individual service?
+* How would you model latency when a request makes multiple sequential downstream calls?
+* How would you model latency when multiple downstream services are called in parallel?
+* How can hedged requests reduce tail latency, and what additional load do they introduce?
+* How can request timeouts improve system resilience while potentially affecting latency and availability?
+* How should timeout values be propagated across multiple microservices?
+* How can retries increase latency and cause cascading failures?
+* How would you design retry policies without violating a strict latency budget?
+* What is retry amplification, and how can it affect tail latency?
+* How can circuit breakers help control latency during downstream failures?
+* How can bulkheads prevent one slow dependency from increasing latency across the entire system?
+* How does queueing theory explain rapidly increasing latency as system utilization approaches 100%?
+* How would you use Little's Law to reason about latency, throughput, and concurrency?
+* How can connection pool exhaustion create hidden latency in a high-throughput service?
+* How can thread pool exhaustion increase request latency in a Java-based backend?
+* How can garbage collection pauses contribute to tail latency?
+* How would you reduce latency caused by JVM garbage collection in a latency-sensitive Java service?
+* How can lock contention and synchronized sections increase application latency?
+* How can CPU cache locality and memory access patterns influence latency in high-performance systems?
+* How can serialization formats such as JSON, Protocol Buffers, and Avro affect latency?
+* How would you reduce latency caused by large request and response payloads?
+* How can compression reduce network latency while increasing CPU latency?
+* How would you choose between synchronous RPC, asynchronous messaging, and event-driven communication based on latency requirements?
+* How can geographic distribution and multi-region deployment reduce latency for global users?
+* What consistency trade-offs arise when serving data from geographically distributed replicas?
+* How would you design a low-latency system while maintaining strong consistency where required?
+* How would you troubleshoot a system where average latency is low but p99 latency is extremely high?

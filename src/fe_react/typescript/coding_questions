@@ -1,0 +1,30 @@
+* Create a React functional component with strongly typed props.
+* Define an interface for a User object and display its properties in a React component.
+* Create a component with optional props and default values.
+* Build a typed counter component using useState.
+* Create a component that manages an object in useState with a defined interface.
+* Write a component that manages an array of typed objects.
+* Create a reusable Button component with typed props.
+* Build a component that accepts children using ReactNode.
+* Create a typed input component using ChangeEvent<HTMLInputElement>.
+* Write a form component with typed input and submission events.
+* Create a component that accepts a callback function as a prop.
+* Implement a typed useRef for an HTML input element.
+* Create a strongly typed Context provider for user authentication.
+* Write a custom hook that returns a typed object containing data, loading, and error.
+* Create a generic List component that renders items of any specified type.
+* Build a generic Select component with strongly typed options.
+* Create a component using union types to support different display modes.
+* Implement a discriminated union for payment methods such as card, wallet, and bank transfer.
+* Create a type-safe reducer using discriminated unions for its actions.
+* Define TypeScript interfaces for a nested product API response.
+* Write a typed API service function that returns Promise<Product[]>.
+* Create a custom hook that fetches product data using a generic response type.
+* Implement runtime validation for API responses using a validation library such as Zod.
+* Build a reusable form field component with generic value types.
+* Create a polymorphic Button component that supports an `as` prop.
+* Implement mutually exclusive component props using union types and never.
+* Create a typed Redux Toolkit slice for shopping cart management.
+* Write strongly typed selectors for a Redux Toolkit store.
+* Refactor a JavaScript React component into TypeScript with strict type checking.
+* Build a small e-commerce React application with typed products, cart items, user details, orders, and API responses.

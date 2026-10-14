@@ -1,0 +1,30 @@
+* Create an interface with a default method named display() and implement it in a class.
+* Create an interface with an abstract method and a default method, then implement both behaviors in a class.
+* Create an interface with a default method that returns the sum of two numbers.
+* Create a default method that accepts parameters and returns a formatted employee name.
+* Create a default method that validates whether a given string is empty or null.
+* Create an interface with two default methods and invoke both using an implementing class object.
+* Override a default method in an implementing class and provide a custom implementation.
+* Create two interfaces with the same default method signature and resolve the conflict in an implementing class.
+* Implement a class that explicitly invokes one interface's default implementation using InterfaceName.super.
+* Create a superclass and an interface with methods of the same signature, then demonstrate which implementation is invoked.
+* Create a parent interface and a child interface that overrides a default method.
+* Create two related interfaces that define the same default method and demonstrate method resolution.
+* Create a generic interface with a default method that processes a value of type T.
+* Create a functional interface with one abstract method and multiple default methods, then use it with a lambda expression.
+* Create an interface with a default method that provides a fallback implementation for a service operation.
+* Create an interface with a default method that formats a date and time using the Java 8 Date and Time API.
+* Create an interface with a default method that filters a list using Java 8 Streams.
+* Create an interface with a default method that sorts a list using a Comparator.
+* Create a Collection-related example that demonstrates how default methods support backward-compatible API evolution.
+* Create an example where two interfaces define conflicting default methods and have different behavior.
+* Create an example where a subinterface inherits a default method and a class overrides it.
+* Create an example demonstrating that a superclass's concrete method takes precedence over an interface default method.
+* Create a test using JUnit to verify a default method's return value.
+* Create a test that verifies the conflict-resolution implementation of a class implementing two interfaces.
+* Create a unit test that checks a default method's behavior for null and invalid inputs.
+* Create a default method that delegates business logic to an injected service and demonstrate how to test the design.
+* Refactor repeated method implementations across multiple classes into a suitable interface default method.
+* Create a Java program demonstrating default methods alongside static interface methods.
+* Create an example showing how a default method can call another overridable method and demonstrate dynamic dispatch.
+* Build a small Java application with multiple interfaces, conflicting default methods, overrides, unit tests, and backward-compatible interface evolution.

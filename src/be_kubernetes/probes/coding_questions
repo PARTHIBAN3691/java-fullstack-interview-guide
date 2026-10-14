@@ -1,0 +1,30 @@
+* Write a Kubernetes Pod YAML manifest with an HTTP liveness probe.
+* Write a Kubernetes Pod YAML manifest with an HTTP readiness probe.
+* Write a Kubernetes Pod YAML manifest with a startup probe for a slow-starting Java application.
+* Write a Pod manifest that configures liveness, readiness, and startup probes together.
+* Write a TCP socket liveness probe for a container listening on port 8080.
+* Write an exec probe that verifies a required application file exists.
+* Write a probe configuration using custom initial delay, period, timeout, and failure threshold values.
+* Write a Deployment YAML manifest for a Spring Boot application with readiness and liveness probes.
+* Write a Deployment manifest that uses a startup probe to protect a slow-starting application from premature liveness failures.
+* Write a Pod manifest that uses a named container port in its HTTP probe configuration.
+* Write a Spring Boot Actuator configuration that enables liveness and readiness health groups.
+* Write a Spring Boot configuration that exposes health endpoints on a dedicated management port.
+* Write a Java Spring Boot health indicator that checks whether a required application component is initialized.
+* Write a custom Spring Boot HealthIndicator that reports the availability of a downstream service.
+* Write a Spring Boot configuration that keeps liveness independent of database connectivity.
+* Write a Java health-check endpoint that reports whether application initialization is complete.
+* Write a Java service that tracks cache initialization and exposes its status to a readiness endpoint.
+* Write a Spring Boot configuration that marks an application as not ready while critical startup tasks are running.
+* Write a Java integration test that verifies the liveness endpoint returns a successful HTTP status.
+* Write a Java integration test that verifies the readiness endpoint changes when application initialization is incomplete.
+* Write a Spring Boot test that verifies a failed dependency health check does not incorrectly mark the application as dead.
+* Write a Kubernetes manifest that configures a startup probe with a suitable failure threshold for a slow-starting JVM.
+* Write a Kubernetes manifest that configures probes for a Java application with a custom management port.
+* Write a Deployment manifest that combines probes with rolling-update settings to maintain application availability.
+* Write a Pod manifest with separate liveness and readiness endpoints and appropriate timeout settings.
+* Write a shell command sequence to inspect probe-related Pod events and container restart counts.
+* Write a shell command sequence to inspect current and previous container logs after probe failures.
+* Write a shell command sequence to test an application's health endpoint from inside a running Pod.
+* Write a Java Spring Boot health-check implementation that separates application liveness, readiness, and downstream dependency status.
+* Write a production-ready Kubernetes Deployment for a Spring Boot microservice with startup, readiness, and liveness probes, resource limits, and graceful termination settings.

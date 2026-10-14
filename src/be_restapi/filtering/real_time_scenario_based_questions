@@ -1,0 +1,30 @@
+* Your API returns all records even when a status filter is provided. How would you investigate and fix the issue?
+* A filtering endpoint becomes slow when users combine multiple optional parameters. How would you optimize it?
+* Your API must support filtering customers by name, city, status, and registration date. How would you design the endpoint?
+* Users report that date-range filtering excludes records created on the final day. How would you investigate time boundaries and time zones?
+* A filter works correctly for exact matches but fails for case-insensitive searches. How would you fix it?
+* Your dynamic filtering implementation generates invalid SQL when some parameters are missing. How would you redesign the query construction?
+* A user supplies an unsupported field name in a filter parameter and causes a server error. How would you validate the request?
+* A filtering API accepts operator expressions directly from users. How would you prevent injection and unauthorized query operations?
+* Filtering through a one-to-many relationship returns duplicate customer records. How would you correct the query?
+* A search endpoint works correctly with small datasets but becomes slow with millions of rows. How would you identify the bottleneck?
+* Your API combines filtering and pagination, but records are missing or repeated across pages. How would you investigate sorting and query consistency?
+* A user filters records by department and can see data belonging to another tenant. How would you correct the authorization and filtering design?
+* A report endpoint allows users to filter on sensitive fields they should not be allowed to access. How would you enforce field-level restrictions?
+* A filter returns different results in development and production because the database collations differ. How would you resolve the inconsistency?
+* Your application supports filtering by multiple statuses, but clients send the status list in different formats. How would you standardize the API contract?
+* A query combining several OR conditions returns more records than expected. How would you debug operator precedence and grouping?
+* Your filtering endpoint supports sorting, but users can request sorting by internal database fields. How would you secure the implementation?
+* A client sends hundreds of filter parameters, causing excessive database load. How would you limit query complexity?
+* A filtering API needs to search both relational fields and full-text document content. How would you design the search solution?
+* Your service filters data across two microservices with separate databases. How would you handle the distributed query?
+* Frequently used filter combinations cause repeated expensive database queries. How would you optimize them with indexes or caching?
+* Your search index is updated asynchronously, so filtering results do not immediately reflect database changes. How would you handle the consistency requirement?
+* A business user needs filters such as total amount greater than a threshold and transaction count above a limit. How would you implement aggregate filtering?
+* A customer listing API must support filters on nested address and organization fields. How would you design the repository query?
+* Your API accepts empty strings and null values differently across endpoints. How would you standardize filter semantics?
+* A database execution plan shows a full table scan for a commonly used filter. How would you improve query performance?
+* A filter on a nullable Boolean field produces unexpected results. How would you handle SQL NULL semantics?
+* Your application caches filtered results, but updates to underlying records leave the cache stale. How would you implement invalidation?
+* The same filter expression produces inconsistent results when records are updated during pagination. How would you design stable result navigation?
+* How would you design a production-ready filtering API supporting dynamic criteria, validation, authorization, pagination, sorting, query optimization, and monitoring?

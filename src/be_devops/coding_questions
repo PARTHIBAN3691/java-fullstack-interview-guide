@@ -1,0 +1,18 @@
+* Write a Java program that reads a list of application log entries and identifies the number of `ERROR`, `WARN`, and `INFO` messages.
+* Write a Java program to parse application log entries and find the top five most frequently occurring error messages.
+* Implement a Java utility that validates required environment variables and reports missing configuration values before application startup.
+* Write a Java program that reads a configuration value from an environment variable and falls back to a default value when the variable is missing.
+* Implement a retry utility that executes a Java operation up to a configurable number of attempts when transient failures occur.
+* Write a Java method that implements exponential backoff between retry attempts and stops after a maximum retry count.
+* Implement a Java health-check component that verifies whether a required downstream service is reachable and reports its status.
+* Write a Java program that processes a collection of service health-check results and reports unhealthy services.
+* Implement a Java utility that measures the execution time of a method and logs its duration for performance monitoring.
+* Write a Java program that processes a large collection of records in batches to avoid excessive memory consumption.
+* Implement a Java task executor that limits the number of concurrent operations and handles failures without stopping unrelated tasks.
+* Write a Java utility that masks sensitive values such as passwords, access tokens, and API keys before logging messages.
+* Implement a Java program that compares two application configuration maps and identifies missing, added, or changed properties.
+* Write a Java program that simulates a deployment health check and determines whether a new application version should be promoted or rolled back based on error rate and response-time thresholds.
+* Implement a Java utility that tracks request success and failure counts and calculates the failure percentage over a specified period.
+* Write a Java program that reads service dependency information and identifies services that depend on an unhealthy service.
+* Implement a thread-safe in-memory counter that tracks successful and failed requests across multiple Java threads.
+* Write a Java program that consumes a stream of timestamped application events and identifies periods of unusually high error rates.

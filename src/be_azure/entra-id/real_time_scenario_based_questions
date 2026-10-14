@@ -1,0 +1,28 @@
+* A Spring Boot application integrated with Entra ID suddenly starts returning HTTP 401 responses for all API requests. How would you investigate the root cause?
+* Users can sign in successfully, but every protected API call returns HTTP 403. How would you distinguish an authentication issue from an authorization issue?
+* A Java API rejects valid access tokens because of an audience mismatch. How would you identify the incorrect configuration and fix it?
+* An application works in development but fails with an invalid issuer error in production. How would you troubleshoot the environment-specific configuration?
+* A Spring Boot application uses a client secret that is approaching expiration. How would you rotate the credential without interrupting production traffic?
+* A background Java service can no longer access Microsoft Graph after its permissions were changed. How would you investigate consent, token acquisition, and authorization?
+* A user can access an application directly but cannot access it through SSO. How would you troubleshoot the identity-provider and application configuration?
+* A user has been removed from an Entra ID group but can still perform a restricted operation. How would you investigate token claims, caching, and authorization decisions?
+* A JWT does not contain the expected group claims because the user belongs to many groups. How would you redesign authorization to handle this condition?
+* Two Spring Boot microservices need to communicate securely without a signed-in user. How would you configure their identities, permissions, and token flow?
+* A backend API needs to call Microsoft Graph on behalf of a signed-in user. How would you implement the on-behalf-of flow and handle consent failures?
+* A Java application hosted on Azure App Service must access Azure Key Vault without storing credentials. How would you configure managed identity and validate access?
+* A service deployed to AKS is failing to obtain tokens using workload identity. How would you troubleshoot the Kubernetes service account, federation configuration, and permissions?
+* A multi-tenant SaaS application accidentally allows a user from one tenant to access another tenant's data. How would you investigate and prevent cross-tenant access?
+* A production API starts rejecting tokens after Entra ID signing keys rotate. How would you investigate key discovery, caching, and JWT validation?
+* A token is valid but contains an unexpected role claim, allowing access to an operation that should be restricted. How would you investigate and correct the authorization design?
+* A company wants to disable access immediately when an employee leaves. How would you design the offboarding process and address already-issued access tokens?
+* A Spring Boot application works with interactive login but fails when running as a scheduled background job. How would you select and configure the correct OAuth flow?
+* A Java application receives HTTP 429 responses from Microsoft Graph. How would you implement retry handling, backoff, and request throttling?
+* A security audit finds that an application has excessive Microsoft Graph application permissions. How would you reduce privileges without breaking required functionality?
+* An enterprise application must support users from multiple Entra ID tenants but reject unauthorized tenants. How would you implement tenant validation?
+* An API behind Azure API Management accepts a token intended for a different API. How would you identify the security gap and enforce audience validation?
+* Users experience repeated login prompts after their sessions expire. How would you investigate session configuration, token renewal, and authentication policies?
+* A service principal can authenticate successfully but receives an authorization error when accessing an Azure resource. How would you distinguish Entra ID authentication from Azure RBAC authorization?
+* A production application must migrate from client-secret authentication to managed identity. How would you plan, test, deploy, and validate the migration?
+* A security incident indicates that an application credential may have been compromised. What immediate containment, credential rotation, audit, and recovery steps would you take?
+* A Java API needs different access rules for administrators, support staff, and ordinary users. How would you implement and test the authorization policy?
+* A business-critical application depends on Entra ID and experiences an authentication outage. How would you assess the impact, monitor recovery, and design operational resilience?

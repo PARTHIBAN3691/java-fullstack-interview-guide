@@ -1,0 +1,15 @@
+* Write a Java program that creates short-lived objects to observe young-generation garbage collection.
+* Write a Java program that retains selected objects across multiple collection cycles to investigate object promotion.
+* Write a Java program that creates objects of different lifetimes to compare short-lived and long-lived allocation patterns.
+* Write a Java program that allocates objects repeatedly and records heap usage using `MemoryMXBean`.
+* Write a Java program using `GarbageCollectorMXBean` to report collection counts and collection times.
+* Write a Java program that registers a garbage collection notification listener and records GC events.
+* Write a Java program that generates GC logs to observe young GC and Full GC events.
+* Write a Java program that generates allocation pressure and compares GC behavior under different young-generation configurations.
+* Write a Java program that allocates and retains objects to simulate a high promotion rate.
+* Write a Java program that uses `WeakReference` to demonstrate how object reachability affects garbage collection eligibility.
+* Write a Java program to parse GC logs and extract young GC counts, pause durations, and heap occupancy.
+* Write a Java program to analyze GC logs and identify patterns indicating frequent object promotion.
+* Write a Java program that compares GC behavior under Parallel GC and G1 GC using the same repeatable workload.
+* Write a Java program that measures allocation throughput and compares it with garbage collection activity.
+* Write a Java program that generates a repeatable workload with configurable object lifetimes for generational GC analysis.

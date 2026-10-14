@@ -1,0 +1,30 @@
+* Write a Java program using REST Assured to send a GET request and validate the HTTP status code.
+* Write a REST Assured test to send a POST request with a JSON request body.
+* Write a Java test to validate response headers and content type.
+* Write a REST Assured test to validate specific fields in a nested JSON response.
+* Write a Java method to deserialize a JSON response into a POJO.
+* Write a REST Assured test to validate a response against a JSON schema.
+* Write a Java test to verify that an API returns HTTP 400 for invalid input.
+* Write a parameterized API test using TestNG or JUnit.
+* Write a data-driven API test that reads test cases from a CSV or JSON file.
+* Write a reusable REST Assured request specification with common headers and authentication.
+* Write a Java API client class that encapsulates GET, POST, PUT, PATCH, and DELETE operations.
+* Write a Java utility to extract a token from an authentication response and reuse it in subsequent requests.
+* Write a test to verify that an expired token returns HTTP 401.
+* Write a test to verify that a user without the required role receives HTTP 403.
+* Write a Java test to validate pagination and ensure that records are not duplicated across pages.
+* Write a Java test to verify filtering and sorting using query parameters.
+* Write a test to verify idempotency when the same payment request is submitted multiple times.
+* Write a Java method to retry failed API requests with a maximum attempt count and exponential backoff.
+* Write a test to validate an API's rate-limiting behavior and HTTP 429 response.
+* Write a Java test to verify that an API response completes within a configured time limit.
+* Write a concurrent API test that sends multiple requests using an ExecutorService.
+* Write a Java test to verify that concurrent updates do not silently overwrite each other.
+* Write a test that compares responses from two API versions for backward compatibility.
+* Write a contract test that verifies a service response against a consumer-defined contract.
+* Write a WireMock-based test that simulates a downstream service returning HTTP 500.
+* Write a Java test that verifies API behavior when a downstream service times out.
+* Write a test that polls an asynchronous job-status API until the job completes or times out.
+* Write a Java test to verify webhook signature validation and duplicate-event handling.
+* Write a test that creates API test data before execution and cleans it up afterward.
+* Build a reusable Java API automation framework using REST Assured, TestNG, Maven, logging, reporting, configuration management, and CI/CD integration.

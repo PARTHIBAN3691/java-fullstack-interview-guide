@@ -1,0 +1,30 @@
+* Explain how a database lock manager coordinates concurrent transactions.
+* How do lock compatibility matrices determine whether concurrent operations can proceed?
+* Explain the difference between intention shared, intention exclusive, and shared-intention-exclusive locks.
+* How does lock escalation work, and what are its performance implications?
+* How do deadlock detection algorithms identify cycles in a wait-for graph?
+* What is the difference between deadlock prevention, avoidance, and detection?
+* How can a database resolve deadlocks, and how should an application respond?
+* Why can a transaction experience a deadlock even when it updates different rows from another transaction?
+* How do foreign-key constraints and secondary indexes contribute to lock contention?
+* How do gap locks and next-key locks prevent phantom inserts in MySQL?
+* How does PostgreSQL's MVCC model differ from traditional read-locking approaches?
+* How do predicate locks work under SERIALIZABLE isolation in PostgreSQL?
+* How does SQL Server's row-versioning behavior affect reader-writer blocking?
+* What is the difference between lock-based concurrency control and multiversion concurrency control?
+* How can long-running transactions cause lock queues and reduce throughput?
+* How do you investigate a production incident involving widespread database lock contention?
+* How would you design a lock acquisition strategy for a high-throughput financial transaction system?
+* How can you prevent deadlocks when a transaction updates multiple account records?
+* What are the risks of using SELECT FOR UPDATE in a high-concurrency application?
+* How do lock timeouts, transaction timeouts, and query timeouts differ?
+* How would you implement bounded retries with exponential backoff for deadlock failures?
+* Why can retrying a transaction at the wrong layer cause duplicate business operations?
+* How do optimistic locking and idempotency work together in payment processing?
+* How can distributed application instances coordinate access to a shared database record?
+* What is the difference between database locks and distributed locks?
+* Why should a distributed lock not automatically replace a database transaction or constraint?
+* How would you design concurrency control for a system that reserves inventory across multiple warehouses?
+* How can lock contention be measured using wait events, transaction duration, and database metrics?
+* How do database partitioning and sharding affect lock contention?
+* How would you choose between optimistic locking, pessimistic locking, and serializable transactions for a critical business operation?

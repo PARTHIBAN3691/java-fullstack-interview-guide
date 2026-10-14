@@ -1,0 +1,28 @@
+
+* Explain the internal architecture of virtual threads and how they are scheduled onto carrier threads.
+* How does the virtual thread scheduler differ from the traditional platform thread scheduler?
+* What happens when a virtual thread performs a blocking operation?
+* What are the consequences of synchronizing on a monitor while performing blocking operations in virtual threads?
+* How can you diagnose virtual thread pinning in Java 21?
+* How would you decide between virtual threads, `CompletableFuture`, and reactive programming?
+* How do virtual threads interact with thread-local variables, logging context, and security context propagation?
+* Why can excessive use of `ThreadLocal` increase memory consumption when applications use millions of virtual threads?
+* How would you design a high-concurrency REST service using virtual threads while protecting downstream database connections?
+* Explain the type-matching, guarded-pattern, and exhaustiveness rules for pattern matching in `switch`.
+* How does the compiler determine whether a pattern-matching `switch` is exhaustive?
+* What happens when a pattern-matching `switch` receives `null` without an explicit null-handling case?
+* How do record patterns support nested deconstruction and type inference?
+* What are the differences between record patterns, `instanceof` patterns, and guarded patterns?
+* How would you model a sealed hierarchy of domain events using records and pattern matching for `switch`?
+* What are the design trade-offs of using sequenced collections in APIs that previously accepted general collection types?
+* How does `SequencedMap.reversed()` differ conceptually from copying a map into reverse iteration order?
+* What are the thread-safety and lifecycle considerations when using `MemorySegment` and `Arena`?
+* How does the Foreign Function and Memory API manage memory bounds, lifetime, and access restrictions?
+* What are the risks of accessing native memory and calling native functions through the Foreign Function and Memory API?
+* How does structured concurrency manage task cancellation, failure propagation, and resource cleanup?
+* What limitations should be considered when adopting the Java 21 preview version of structured concurrency?
+* How do scoped values differ from `ThreadLocal` in terms of lifetime, inheritance, and data sharing?
+* What limitations should be considered when adopting scoped values as a preview feature?
+* How do Generational ZGC and non-generational ZGC differ in their garbage-collection strategies?
+* How would you evaluate Generational ZGC for a low-latency, high-throughput application?
+* Which Java 21 features were finalized, which were preview features, and which were incubator APIs?

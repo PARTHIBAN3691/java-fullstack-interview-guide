@@ -1,0 +1,30 @@
+* Explain the request-response lifecycle of a Node.js HTTP server.
+* How does an HTTP server handle multiple client connections?
+* How do you implement routing without using Express.js?
+* How do you read and parse a JSON request body?
+* How do you handle form-urlencoded request data?
+* How do you handle malformed JSON in an incoming request?
+* How do you limit the maximum request body size?
+* How do you implement centralized error handling in an HTTP server?
+* How do you handle unsupported HTTP methods?
+* How do you return appropriate HTTP status codes for different scenarios?
+* How do you stream a large file from an HTTP server?
+* How do you handle errors while streaming a file to a client?
+* How do you detect when a client disconnects before the response is completed?
+* How do you configure request and response timeouts?
+* What is the difference between requestTimeout, headersTimeout, and keepAliveTimeout?
+* What is HTTP keep-alive, and how does it affect server performance?
+* How do you configure an HTTP server to reuse persistent connections?
+* How do you implement graceful shutdown for an HTTP server?
+* How do you prevent new requests from being accepted during shutdown?
+* How do you implement request logging in an HTTP server?
+* How do you measure request-processing time?
+* How do you serve static files securely from an HTTP server?
+* How do you implement CORS handling in a basic HTTP server?
+* How do you configure an HTTPS server using TLS certificates?
+* How do you handle errors such as EADDRINUSE and EACCES?
+* How do you implement health-check and readiness endpoints?
+* How do you test an HTTP server using the Node.js test runner?
+* How do you handle concurrent requests that access shared resources?
+* How do you prevent an HTTP server from blocking the event loop?
+* How do you organize a large HTTP server into reusable modules?

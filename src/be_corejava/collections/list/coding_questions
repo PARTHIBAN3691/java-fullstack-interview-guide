@@ -1,0 +1,28 @@
+# Core Java — Collections — List
+## Coding Questions
+
+### Level 0 — Easy
+* Write a Java program to create a List of integers and print all elements.
+* Write a program to add, update, retrieve, and remove elements from an ArrayList.
+* Write a program to find the largest and smallest numbers in a List.
+* Write a program to reverse a List.
+* Write a program to count how many times a given element occurs in a List.
+* Write a program to sort a List of integers in ascending and descending order.
+
+### Level 1 — Medium
+* Write a program to remove duplicates from a List while preserving insertion order.
+* Write a program to find the intersection of two Lists.
+* Write a program to find the second-largest distinct number in a List.
+* Write a program to sort a List of Employee objects by department and then salary.
+* Write a program to group a List of strings by their length using Streams.
+* Write a program to safely remove all even numbers from a List during traversal.
+* Write a generic method that copies elements from one List to another using appropriate wildcard bounds.
+
+### Level 2 — Difficult
+* Implement a custom dynamic-array List supporting `get()`, `add()`, `remove()`, and automatic resizing.
+* Merge two sorted Lists into a sorted result without sorting the final result again.
+* Compare two Lists as multisets, ignoring order but preserving duplicate counts.
+* Design a thread-safe operation that atomically adds an element only if it is absent.
+* Implement a generic List-copy method that supports compatible source and destination types.
+* Given a very large List of transactions, find the top K transactions by amount with an efficient time and space complexity.
+* Benchmark ArrayList and LinkedList for indexed reads, appends, and middle insertions using JMH.

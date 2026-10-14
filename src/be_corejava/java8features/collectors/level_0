@@ -1,0 +1,20 @@
+* What is the `Collectors` class in Java 8?
+* What is the purpose of the `collect()` method in the Stream API?
+* What is the difference between `collect()` and `forEach()`?
+* What is the difference between `Collectors.toList()` and `Collectors.toSet()`?
+* How do you convert a Stream into a List using Collectors?
+* How do you convert a Stream into a Set using Collectors?
+* How do you convert a Stream of strings into a single string using `Collectors.joining()`?
+* What is the purpose of `Collectors.counting()`?
+* How do you calculate the sum of numbers using `Collectors.summingInt()`?
+* What is the purpose of `Collectors.averagingInt()`?
+* What is the difference between `Collectors.summingInt()` and `Collectors.averagingInt()`?
+* How do you find the maximum value using `Collectors.maxBy()`?
+* How do you find the minimum value using `Collectors.minBy()`?
+* What is the purpose of `Collectors.toMap()`?
+* What happens when `Collectors.toMap()` encounters duplicate keys?
+* What is the purpose of `Collectors.groupingBy()`?
+* What is the purpose of `Collectors.partitioningBy()`?
+* What is the difference between `groupingBy()` and `partitioningBy()`?
+* What is the purpose of `Collectors.mapping()`?
+* What is the purpose of `Collectors.collectingAndThen()`?

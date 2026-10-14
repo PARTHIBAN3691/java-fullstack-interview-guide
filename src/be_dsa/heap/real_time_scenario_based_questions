@@ -1,0 +1,30 @@
+* A customer support platform must process urgent tickets before normal tickets. How would you model ticket priorities using a heap?
+* A real-time monitoring system receives events with different severity levels. How would you ensure the highest-priority event is processed first?
+* A trading application must continuously report the median transaction price from a stream of values. How would you design the solution using two heaps?
+* A log-processing service must identify the top K most frequent error types from millions of events. How would you combine a hash map and a heap?
+* A navigation service uses Dijkstra's algorithm but suffers from excessive priority-queue operations. How would you investigate and optimize it?
+* A task scheduler must execute jobs according to priority, and job priorities may change while waiting. How would you design the data structure?
+* A cloud platform must cancel queued jobs and update their priorities efficiently. Would Java PriorityQueue be sufficient?
+* A data analytics service must find the kth largest transaction amount without sorting the entire dataset. How would you solve this efficiently?
+* A monitoring application must calculate the median CPU utilization over a sliding time window. How would you support both insertion and removal?
+* A messaging system must process the next event based on its scheduled execution time. How would you use a min-heap?
+* A logistics platform must merge delivery schedules from multiple sorted sources. How would you use a priority queue?
+* A data pipeline must merge K sorted files that are too large to load into memory simultaneously. How would you design the merge process?
+* A manufacturing system must connect components at minimum total cost by repeatedly combining the two smallest components. Which heap-based strategy would you use?
+* A search service must return the K nearest locations to a user's coordinates. How would you maintain only the best candidates?
+* A recommendation engine must continuously return the top K products by score while new scores arrive. How would you update the result efficiently?
+* A Java service stores custom job objects in a PriorityQueue, but changing a job's priority does not reorder the queue. Why does this happen, and how would you fix it?
+* A high-throughput application experiences frequent garbage collection while processing heap entries. How would you profile allocations and reduce overhead?
+* A custom binary heap occasionally violates the heap property after deletion. How would you debug its sift-down logic?
+* A priority queue performs well on small datasets but slows down at scale. How would you measure insertion, extraction, and resizing costs?
+* A system must support retrieving both the highest- and lowest-priority tasks efficiently. What data structure would you choose?
+* A distributed job-processing service receives tasks from multiple producers with different priorities. How would you maintain correct ordering within a worker?
+* A streaming analytics platform needs the kth largest value at all times. How would you choose the heap size and update strategy?
+* A financial application must compute rolling medians for millions of transactions. How would you design a memory-efficient heap-based solution?
+* A route-planning service uses lazy deletion in its priority queue and accumulates many obsolete entries. How would you control the extra memory and processing cost?
+* A batch system must sort a dataset larger than available RAM. How could heaps help with external sorting?
+* A Java backend must schedule delayed jobs and allow cancellation before execution. How would you design the queue and track active jobs?
+* A task scheduler must break ties between jobs with equal priority by earliest submission time. How would you implement deterministic ordering?
+* A real-time system must avoid unpredictable pauses during priority-queue resizing. What design alternatives would you consider?
+* A custom heap passes basic tests but fails with duplicate values and empty inputs. What edge cases and invariants would you verify?
+* A Java Spring Boot service exposes APIs for adding, updating, and processing prioritized tasks. How would you design concurrency control, validation, and performance testing?

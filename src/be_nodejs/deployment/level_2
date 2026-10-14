@@ -1,0 +1,30 @@
+* Explain the architecture of a production-grade Node.js deployment.
+* How would you design a highly available deployment architecture for a Node.js application?
+* How would you design a CI/CD pipeline with automated testing, security scanning, and approval gates?
+* How do you implement zero-downtime deployments for a Node.js application?
+* What challenges arise when deploying Node.js applications that maintain long-lived connections?
+* How would you handle graceful shutdown during a rolling deployment?
+* How do readiness and liveness probes differ, and how should they be implemented?
+* How would you design blue-green deployment with automated rollback?
+* How would you implement canary deployment and gradually increase traffic to a new version?
+* How would you determine whether a deployment should be rolled back automatically?
+* How do you manage database schema changes during deployments with multiple application versions running simultaneously?
+* How would you design backward-compatible database migrations?
+* How do you manage secrets across CI/CD systems, containers, and cloud environments?
+* How would you prevent secrets from leaking through build logs, environment variables, or container images?
+* How do you secure a Node.js Docker image against vulnerabilities?
+* How would you run Node.js containers as non-root users and minimize container privileges?
+* How do you implement immutable infrastructure for Node.js deployments?
+* How would you deploy a Node.js application to Kubernetes?
+* What are Deployments, Services, Ingress resources, and ConfigMaps in Kubernetes?
+* How do Kubernetes resource requests and limits affect Node.js applications?
+* How would you tune CPU and memory limits for a Node.js container?
+* How would you investigate memory leaks that occur only in production?
+* How would you collect and centralize logs, metrics, and distributed traces across multiple instances?
+* How would you design autoscaling for a Node.js application based on traffic and resource utilization?
+* How would you manage session state when scaling a Node.js application horizontally?
+* How would you handle deployment failures caused by unavailable external services?
+* How would you implement supply-chain security in a Node.js CI/CD pipeline?
+* How would you promote the same build artifact across development, staging, and production?
+* How would you design disaster recovery for a production Node.js application?
+* What deployment metrics would you track to measure release quality and reliability?

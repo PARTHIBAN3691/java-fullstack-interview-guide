@@ -1,0 +1,21 @@
+
+* Create a Java Spring Boot REST endpoint and expose it through an AWS API Gateway HTTP API.
+* Write a Spring Boot controller that accepts a JSON request through API Gateway and returns a structured JSON response.
+* Implement a Java Lambda handler that processes an API Gateway proxy request and returns an appropriate HTTP status code and response body.
+* Write a Java Lambda handler that extracts path parameters and query parameters from an API Gateway event.
+* Implement request validation in a Spring Boot backend for requests received through API Gateway.
+* Create a Java REST endpoint that returns consistent error responses for validation failures and unexpected exceptions.
+* Implement JWT validation in a Java Spring Boot application for requests forwarded by API Gateway.
+* Write a Java Lambda authorizer that validates a bearer token and returns an authorization policy, using the appropriate event format for the selected API type.
+* Implement a correlation-ID filter in Spring Boot that reads or generates a request ID and includes it in application logs and responses.
+* Write a Spring Boot endpoint that implements idempotency for payment requests using an idempotency key.
+* Implement a Java client that calls an API Gateway endpoint with query parameters, headers, and a JSON request body.
+* Write integration tests for a Spring Boot REST API that is exposed through API Gateway.
+* Create a Java service that handles API Gateway timeout and downstream-service failure scenarios with meaningful error responses.
+* Implement a rate-limiting mechanism in Java using a token-bucket or sliding-window algorithm.
+* Write a Spring Boot filter that validates an incoming API key without logging the key itself.
+* Implement structured logging in Java that records request IDs, response status codes, and processing duration.
+* Create a Java backend endpoint that supports pagination and filtering for requests routed through API Gateway.
+* Write a Java integration test that verifies CORS-related response headers from an API endpoint.
+* Implement a resilient Java HTTP client with connection and request timeouts when calling a downstream service through API Gateway.
+* Design an infrastructure-as-code example using AWS CDK or CloudFormation to create an API Gateway route, its integration, authorization, and logging configuration for a Java backend.

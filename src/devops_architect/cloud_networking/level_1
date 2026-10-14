@@ -1,0 +1,30 @@
+* How would you design a VPC or VNet for a production application with separate web, application, and database tiers?
+* How would you select subnet CIDR ranges for a cloud environment?
+* How would you design public and private subnets across multiple availability zones?
+* How do route tables determine the path taken by traffic between subnets?
+* How would you configure an Internet Gateway and route tables to allow public subnet resources to access the internet?
+* How would you enable private subnet instances to access external software repositories without exposing them directly to the internet?
+* How does a NAT Gateway differ from a NAT instance or a self-managed NAT appliance?
+* How would you design Security Group rules using the principle of least privilege?
+* How would you decide whether a rule belongs in a Security Group or a Network ACL?
+* How do stateful and stateless network filtering differ?
+* How would you configure a load balancer to distribute traffic across multiple application instances?
+* How would you configure TLS termination at a load balancer or reverse proxy?
+* How would you use a reverse proxy to route requests to different backend services?
+* How would you configure DNS records for a highly available application?
+* What is the difference between public DNS, private DNS, and split-horizon DNS?
+* How would you implement service discovery for dynamically scaled microservices?
+* How would you troubleshoot a service that is reachable by IP address but not by hostname?
+* How would you establish a site-to-site VPN between an on-premises data center and a cloud VPC?
+* What are the key considerations when choosing between VPN and AWS Direct Connect or Azure ExpressRoute?
+* How would you configure redundant VPN tunnels for high availability?
+* What are private endpoints, and how do they reduce public network exposure?
+* How would you connect multiple VPCs using VPC peering, and what are its limitations?
+* How does AWS Transit Gateway simplify connectivity between multiple VPCs and on-premises networks?
+* How would you design hub-and-spoke networking in Azure?
+* How would you prevent overlapping IP address ranges across cloud networks?
+* How would you segment production, development, testing, and shared-services networks?
+* How would you restrict east-west traffic between application components?
+* How would you implement Zero Trust principles for application-to-application communication?
+* How would you troubleshoot connectivity using routes, security rules, DNS, and flow logs?
+* How would you monitor network throughput, latency, packet drops, and connection failures?

@@ -1,0 +1,20 @@
+* Write a Java program using AWS SDK for Java 2.x to create an S3 bucket.
+* Write a Java program that uploads a local file to an S3 bucket using `PutObject`.
+* Write a Java program that downloads an S3 object to a local file using `GetObject`.
+* Write a Java program that lists objects in an S3 bucket using paginated requests.
+* Write a Java program that deletes an S3 object by bucket name and key.
+* Write a Java program that retrieves object metadata using `HeadObject`.
+* Write a Java program that generates a pre-signed GET URL for an S3 object.
+* Write a Java program that generates a pre-signed PUT URL for direct browser uploads.
+* Write a Java program that uploads a large file using multipart upload.
+* Write a Java utility that retries failed S3 operations with bounded retries and exponential backoff.
+* Write a Java program that retrieves an object's previous versions from a version-enabled bucket.
+* Write a Java program that restores an object deleted from a version-enabled bucket.
+* Write a Java program that copies an object between two S3 buckets.
+* Write a Java program that retrieves an object using the S3 asynchronous client.
+* Write a Java program that uploads an object with server-side encryption using AWS KMS.
+* Write a Java program that validates the content type, file size, and permitted file extension before uploading a file to S3.
+* Write a Java Lambda handler that processes S3 event notifications and logs the bucket name and object key.
+* Write a Java program that compares object checksums or other integrity metadata after uploading a file.
+* Write a Java integration test that uploads, retrieves, validates, and deletes an object in an isolated S3 test bucket.
+* Design a Java Spring Boot file-storage service that supports multipart uploads, pre-signed URLs, encryption, metadata management, idempotency, audit logging, and secure downloads.

@@ -1,0 +1,85 @@
+**AWS AI and ML Services**
+* A document-processing platform intermittently fails when traffic increases after business hours. How would you trace the failure across S3 events, Lambda, queues, and AI service quotas?
+* An AI application has high latency even though individual model calls appear fast. How would you identify bottlenecks in orchestration, networking, and downstream services?
+* A production deployment starts receiving access-denied errors after an IAM policy change. How would you isolate the missing permission and restore service safely?
+* A regional AWS outage interrupts AI processing. How would you recover queued work and prevent duplicate document processing?
+
+**Amazon Bedrock**
+* A Bedrock application starts returning HTTP 429 errors during a customer launch. How would you investigate quotas, concurrency, retries, and capacity?
+* A model upgrade improves fluency but increases hallucinations and incorrect tool calls. How would you detect the regression and roll back?
+* A RAG application retrieves a malicious document containing instructions to reveal secrets. How would you contain the attack and improve the trust boundaries?
+* Bedrock costs increase sharply even though request volume remains stable. How would you investigate token growth, model selection, repeated requests, and context construction?
+* A fallback model produces incompatible structured responses during a primary-model outage. How would you restore contract compatibility?
+
+**Amazon SageMaker**
+* A new SageMaker endpoint deployment increases p99 latency and GPU utilization. How would you determine whether the cause is model loading, batching, instance sizing, or traffic distribution?
+* A model performs well in validation but poorly in production. How would you investigate data drift, training-serving skew, and preprocessing differences?
+* A failed training job consumes significant GPU hours before crashing. How would you improve checkpointing, retries, and resource utilization?
+* A newly registered model passes technical checks but fails business acceptance tests. How would you prevent its promotion and preserve an audit trail?
+
+**Azure AI Foundry**
+* A model deployed through Azure AI Foundry behaves differently from its evaluation results. How would you compare model versions, prompts, parameters, datasets, and deployment settings?
+* Multiple teams create separate projects with inconsistent safety and logging policies. How would you establish common governance without blocking legitimate experimentation?
+* A production application cannot reach its AI deployment after private networking is enabled. How would you diagnose DNS, identity, endpoint configuration, and network rules?
+* An evaluation pipeline passes in development but fails in the release environment. How would you identify configuration drift and make the process reproducible?
+
+**Azure OpenAI Service**
+* An application receives intermittent 429 errors even though average traffic is below its expected quota. How would you investigate token bursts, concurrency, deployment limits, and retry behavior?
+* A model-version upgrade changes response structure and breaks a downstream Java service. How would you roll back and implement contract-based regression tests?
+* Streaming responses stop midway during high traffic. How would you distinguish client disconnects, gateway timeouts, service throttling, and model failures?
+* A managed identity works in testing but receives authorization failures in production. How would you trace identity assignment, role scope, and deployment configuration?
+
+**Google Vertex AI**
+* A Vertex AI endpoint experiences sudden latency increases after a model rollout. How would you compare serving resources, traffic split, model initialization, and request characteristics?
+* A training pipeline generates different models from apparently identical source code. How would you investigate dataset versions, dependency changes, randomness, and artifact provenance?
+* A model-monitoring alert reports drift but business metrics remain stable. How would you validate the alert and decide whether to retrain?
+* A regional deployment fails over successfully, but predictions become slower and more expensive. How would you evaluate capacity, model parity, and regional dependencies?
+
+**Google Gemini**
+* Gemini starts returning incomplete structured output after a prompt change. How would you identify the cause and protect downstream processing?
+* A multimodal application misclassifies documents containing both images and conflicting text. How would you reproduce the issue and evaluate prompt, model, and preprocessing changes?
+* Gemini calls exceed the application latency objective during peak traffic. How would you investigate token volume, streaming, queueing, quotas, and model selection?
+* A safety filter blocks legitimate customer requests after a configuration change. How would you tune the policy and test both false positives and unsafe bypasses?
+
+**Managed Vector Search Services**
+* A RAG system returns relevant documents for some tenants but unrelated documents for others. How would you investigate metadata filters, tenant identifiers, index configuration, and ingestion?
+* Search quality drops after re-embedding documents. How would you compare vector dimensions, model versions, normalization, and index rebuild status?
+* A document deletion is not reflected in retrieval results. How would you trace event delivery, indexing delay, retries, and deletion propagation?
+* Vector-query latency increases as the corpus grows. How would you evaluate index parameters, filtering, shard or replica configuration, and query patterns?
+
+**Cloud AI Security**
+* A customer discovers that one tenant's information appeared in another tenant's AI response. How would you contain the incident, investigate retrieval and caching, and prevent recurrence?
+* Cloud audit logs reveal unexpected model usage from a production identity. How would you investigate credential compromise and limit further access?
+* An AI agent attempts to execute an unauthorized tool after processing retrieved content. How would you identify the trust-boundary failure and enforce authorization?
+* Sensitive prompts appear in centralized logs. How would you remove or restrict the data, assess exposure, and redesign logging controls?
+
+**Private AI Networking**
+* An AI endpoint works from a developer laptop but fails from a production private subnet. How would you compare DNS resolution, routing, endpoint policies, and firewall rules?
+* A private endpoint is configured, but security monitoring still detects public egress. How would you identify the route and enforce private-only connectivity?
+* AI calls fail intermittently after a network migration. How would you investigate routing changes, DNS caching, TLS, connection limits, and MTU?
+* A disaster-recovery region cannot access the required private AI service. How would you restore service without violating network and residency policies?
+
+**Cloud Model Deployment**
+* A new model release passes readiness checks but times out under real traffic. How would you reproduce the issue and tune warm-up, batching, concurrency, and autoscaling?
+* A canary deployment shows lower latency but worse business outcomes. How would you compare traffic cohorts and decide whether to roll back?
+* GPU memory exhaustion occurs only for long-context requests. How would you inspect memory allocation, concurrency, batching, and request limits?
+* Model weights are updated, but some instances continue returning old outputs. How would you investigate artifact caching, rollout consistency, and version identification?
+
+**Multi-Cloud AI Architecture**
+* The primary cloud AI provider experiences an outage, but the secondary provider produces different responses and tool-call formats. How would you fail over safely?
+* A multi-cloud routing change sends regulated data to a disallowed region. How would you contain the incident and prevent policy bypass?
+* Different providers report inconsistent usage metrics and cost data. How would you normalize reporting and reconcile invoices?
+* A shared AI abstraction hides provider-specific capabilities and causes production failures. How would you redesign the adapter and capability negotiation?
+
+**AI Cost Management**
+* The monthly AI bill doubles while business traffic grows only slightly. How would you identify the cost increase by model, token usage, retries, embeddings, vector queries, and infrastructure?
+* An agent enters a repeated tool-calling loop and consumes the daily budget. How would you stop the loop and introduce hard execution limits?
+* Cost optimization reduces model quality and increases customer support cases. How would you establish quality guardrails and compare cost per successful outcome?
+* One business unit consumes most shared inference capacity. How would you introduce quotas, chargeback, prioritization, and fair allocation?
+
+**Cloud AI Governance**
+* An unapproved model is deployed directly by a development team. How would you detect the deployment, assess risk, and enforce approval controls?
+* An audit requests evidence of which model and prompt version generated a specific response. How would you reconstruct the execution history?
+* A provider changes its data-retention terms. How would you assess affected workloads and migrate or reconfigure services?
+* An AI application fails a safety evaluation after a prompt update. How would you block release, document the risk, and establish a remediation workflow?
+* A newly introduced autonomous agent can modify customer records. How would you establish approval gates, permission boundaries, audit trails, and emergency shutdown procedures?

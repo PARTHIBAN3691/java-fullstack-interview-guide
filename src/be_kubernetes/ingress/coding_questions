@@ -1,0 +1,30 @@
+* Write a Kubernetes Ingress YAML that routes requests for example.com to a Spring Boot Service on port 8080.
+* Create an Ingress manifest that routes requests for api.example.com to one Service and web.example.com to another Service.
+* Write an Ingress YAML that routes `/api` requests to an API Service and `/web` requests to a frontend Service.
+* Create an Ingress manifest that uses Prefix path matching.
+* Write an Ingress YAML that uses Exact path matching for a specific endpoint.
+* Create an Ingress resource that specifies ingressClassName for an NGINX Ingress Controller.
+* Write an Ingress manifest that enables HTTPS using a TLS Secret.
+* Create a TLS Secret using kubectl commands and reference it from an Ingress resource.
+* Write an Ingress configuration that redirects HTTP traffic to HTTPS using controller-supported configuration.
+* Create an Ingress YAML with configurable hostnames and backend Service ports for use in Helm.
+* Write a Helm template that conditionally creates an Ingress when ingress.enabled is true.
+* Create a Helm values.yaml file for configuring Ingress hosts, paths, TLS settings, and annotations.
+* Write an Ingress configuration that rewrites `/api` to `/` before forwarding requests to the backend.
+* Create an Ingress manifest that sets controller-supported request body size and proxy timeout options.
+* Write an Ingress configuration for a Spring Boot application that supports WebSocket connections.
+* Create an Ingress manifest that routes traffic to two separate backend Services based on hostname.
+* Write an Ingress YAML that configures a default backend for unmatched requests.
+* Create a manifest that exposes an application internally while making a separate endpoint available through external Ingress.
+* Write kubectl commands to list Ingress resources, inspect their rules, and describe related events.
+* Write commands to verify Ingress Controller Pods, Services, logs, and backend endpoints.
+* Write a shell script that checks an Ingress endpoint's HTTP status and fails when the response is unsuccessful.
+* Write a shell script that verifies HTTPS connectivity and certificate expiration for an Ingress hostname.
+* Create a Helm-based Ingress configuration that supports separate development, staging, and production hostnames.
+* Write an Ingress manifest that routes requests to a backend Service while preserving the required host header.
+* Create an Ingress configuration for a gRPC backend using the appropriate controller-specific protocol settings.
+* Write an example Ingress configuration that applies rate limiting using controller-supported annotations.
+* Create a manifest and configuration example for an Ingress Controller with TLS termination and backend HTTPS.
+* Write a configuration example for canary routing between stable and candidate application versions using controller-supported features.
+* Write a troubleshooting script that checks DNS resolution, TLS connectivity, HTTP response codes, and backend Service endpoints.
+* Create a production-oriented Ingress configuration for a Spring Boot microservice with HTTPS, routing rules, security controls, and appropriate timeout settings.

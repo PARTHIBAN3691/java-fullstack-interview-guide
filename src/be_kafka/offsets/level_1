@@ -1,0 +1,30 @@
+* How does Kafka store consumer group offsets?
+* What is the __consumer_offsets topic?
+* How are offsets associated with consumer groups?
+* How does a consumer commit offsets automatically?
+* How do you commit offsets manually using the Java Kafka client?
+* What is the difference between commitSync() and commitAsync()?
+* When would you use commitSync() instead of commitAsync()?
+* What are the risks of using commitAsync()?
+* How do you commit offsets after processing a Kafka record?
+* How do you commit offsets for a batch of records?
+* How does manual acknowledgment work in Spring Kafka?
+* What is the difference between RECORD, BATCH, MANUAL, and MANUAL_IMMEDIATE acknowledgment modes?
+* How do consumer rebalances affect committed offsets?
+* What happens to uncommitted offsets during a consumer rebalance?
+* How does a newly assigned consumer determine where to start reading?
+* How does auto.offset.reset work when no committed offset exists?
+* How do you reset offsets for a Kafka consumer group?
+* How do you move a consumer group back to an earlier offset?
+* How do you move a consumer group to the latest offsets?
+* How do you consume a topic from the beginning using offsets?
+* How do you seek to a specific offset using KafkaConsumer?
+* What is seekToBeginning()?
+* What is seekToEnd()?
+* What is the difference between position() and committed() in KafkaConsumer?
+* What is the difference between position and endOffsets?
+* How do you calculate consumer lag using offsets?
+* How do you inspect consumer group offsets using Kafka command-line tools?
+* How do you reset consumer offsets safely in production?
+* How do offsets work with multiple partitions in a consumer group?
+* How do you handle offset commits when message processing fails?

@@ -1,0 +1,30 @@
+* Explain the complete request lifecycle in Spring MVC from DispatcherServlet to the response.
+* How does DispatcherServlet identify the appropriate controller for a request?
+* What is the difference between HandlerMapping and HandlerAdapter?
+* How does Spring MVC resolve a view using ViewResolver?
+* What is the difference between returning a String and returning ModelAndView from a controller?
+* How do you pass data from a controller to a view using the Model interface?
+* How do you bind HTML form fields to a Java object using @ModelAttribute?
+* What is the difference between @ModelAttribute and @RequestBody?
+* How does Spring MVC handle JSON request and response bodies?
+* What is the role of Jackson in Spring MVC applications?
+* How does content negotiation work in Spring MVC?
+* What is the difference between consumes and produces in request mappings?
+* How do you map multiple URL patterns to a single controller method?
+* How do you handle optional request parameters in Spring MVC?
+* How do you validate request data using @Valid and @Validated?
+* What is the difference between BindingResult and MethodArgumentNotValidException?
+* How do you implement global exception handling using @ControllerAdvice?
+* What is the difference between @ExceptionHandler and @ControllerAdvice?
+* How do you create custom error responses for REST controllers?
+* What is the purpose of WebDataBinder in Spring MVC?
+* What is the purpose of Converter and Formatter in Spring MVC?
+* How do you implement file upload functionality using MultipartFile?
+* How do you handle file downloads from a Spring MVC controller?
+* How do interceptors work in Spring MVC?
+* What is the difference between HandlerInterceptor and Servlet Filter?
+* How do you configure an interceptor to run only for specific URL patterns?
+* How do you manage sessions and cookies in Spring MVC?
+* How do you implement pagination and sorting in a Spring MVC application?
+* How do you write controller tests using MockMvc?
+* How do you secure Spring MVC endpoints using Spring Security?

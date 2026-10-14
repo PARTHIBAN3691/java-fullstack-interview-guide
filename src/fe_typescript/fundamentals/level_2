@@ -1,0 +1,30 @@
+* Explain how TypeScript's structural type system determines type compatibility.
+* How does TypeScript infer types across complex expressions?
+* What is the difference between widening and narrowing of literal types?
+* How do control-flow analysis and reachability affect type narrowing?
+* What are distributive conditional types?
+* How do conditional types work with the infer keyword?
+* What are mapped types, and how can you create custom utility types?
+* How do indexed access types work with generic types?
+* What is the difference between keyof T and keyof typeof T?
+* How do recursive types work in TypeScript?
+* What are template literal types, and how can they generate new string types?
+* How does the satisfies operator differ from type assertions?
+* What are branded types, and how can they simulate nominal typing?
+* How can you prevent unintended type widening in configuration objects?
+* What are variance and covariance in TypeScript's type system?
+* How does function parameter variance affect type compatibility?
+* What is the difference between unknown, any, and never in advanced type design?
+* How do declaration merging and module augmentation work?
+* What is the difference between ambient declarations and module declarations?
+* How does TypeScript resolve overloaded function signatures?
+* What are the limitations of TypeScript's compile-time type system?
+* Why can a value that satisfies a TypeScript type still cause a runtime error?
+* How would you design a type-safe API response model using discriminated unions?
+* How can you create a deep readonly utility type using mapped and recursive types?
+* How would you model mutually exclusive object properties using union types?
+* How can you enforce exhaustive checking for union types?
+* What are const type parameters, and how do they improve type inference?
+* How does generic constraint inference work with keyof and indexed access types?
+* How would you design a strongly typed configuration object that rejects unknown properties?
+* How would you migrate a large JavaScript codebase to TypeScript while maintaining type safety?

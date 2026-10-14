@@ -1,0 +1,30 @@
+* Explain how Angular resolves a dependency when a component requests a service.
+* What is the difference between EnvironmentInjector and ElementInjector?
+* How does the Angular hierarchical injector system work?
+* What is the difference between root-level and component-level providers?
+* What happens when the same service is provided at both root and component levels?
+* How do component-level providers affect service instance creation?
+* What is the difference between providedIn: 'root' and registering a service in ApplicationConfig?
+* How do you register providers in a standalone Angular application?
+* How do providers work in an NgModule-based application?
+* What is the difference between providers and viewProviders in a component?
+* What is the purpose of useClass in Angular providers?
+* How do you use useValue to provide a constant or configuration object?
+* What is the purpose of useFactory in Angular dependency injection?
+* How do you use useExisting to create an alias for an existing provider?
+* What is the difference between useClass and useExisting?
+* What is the purpose of InjectionToken?
+* How do you inject an interface-like dependency in Angular?
+* Why can't a TypeScript interface be used directly as a runtime injection token?
+* How do you inject configuration values using InjectionToken?
+* What is the purpose of the @Optional decorator?
+* What is the purpose of the @Self decorator?
+* What is the purpose of the @SkipSelf decorator?
+* What is the purpose of the @Host decorator?
+* How do @Self and @SkipSelf change dependency resolution?
+* How do you provide multiple implementations using the multi-provider pattern?
+* What is the difference between a regular provider and a multi-provider?
+* How do you inject a service conditionally using a factory provider?
+* How do you override a provider in Angular unit tests?
+* How do you use TestBed.configureTestingModule() to configure dependency injection?
+* How do you troubleshoot a NullInjectorError in Angular?

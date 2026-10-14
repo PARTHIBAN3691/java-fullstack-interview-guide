@@ -1,0 +1,30 @@
+* Write a Node.js program that creates a worker thread and prints a message from the worker.
+* Write a worker script that receives a number from the main thread and returns its square.
+* Write a program that passes an object to a worker using workerData and returns a calculated result.
+* Write a program that uses parentPort.postMessage() to send multiple results to the main thread.
+* Write a worker thread that calculates the factorial of a large number.
+* Write a program that calculates prime numbers using a worker thread without blocking the main event loop.
+* Write a worker thread that performs a CPU-intensive loop while the main thread continues handling other operations.
+* Write a program that handles the message, error, and exit events of a worker thread.
+* Write a program that terminates a worker after a specified timeout.
+* Write a worker that reads a task from workerData and returns either a result or a structured error.
+* Write a program that creates multiple worker threads to process an array of independent numerical tasks.
+* Write a worker pool that maintains a fixed number of workers and distributes tasks among them.
+* Write a worker pool that queues tasks when all workers are busy and assigns them when a worker becomes available.
+* Write a worker pool that rejects new tasks when the queue reaches a configured maximum size.
+* Write a worker pool that replaces a worker after an unexpected crash.
+* Write a worker pool that retries failed tasks with a configurable retry limit.
+* Write a worker pool that supports task timeouts and reports timed-out tasks to the caller.
+* Write a worker pool that supports graceful shutdown after all active tasks are completed.
+* Write a program that transfers an ArrayBuffer to a worker instead of copying its contents.
+* Write a program that uses SharedArrayBuffer and Atomics to safely increment a shared counter from multiple workers.
+* Write a program that uses Atomics.wait() and Atomics.notify() to coordinate worker execution.
+* Write a worker-based solution that processes a large array in chunks and combines the results in the main thread.
+* Write a program that calculates the sum of a large array using multiple worker threads.
+* Write a worker-based implementation that parses and processes a large CSV file in parallel.
+* Write a program that uses a worker pool to resize or transform multiple images concurrently.
+* Write a worker thread that performs a CPU-intensive task and reports progress updates to the main thread.
+* Write a program that cancels a queued task before it is assigned to a worker.
+* Write a program that measures and compares the execution time of a CPU-intensive function with and without Worker Threads.
+* Write a worker pool that collects task execution time, success count, failure count, and queue length metrics.
+* Write a complete Node.js worker pool implementation with bounded concurrency, task queuing, error handling, retries, timeouts, worker replacement, and graceful shutdown.

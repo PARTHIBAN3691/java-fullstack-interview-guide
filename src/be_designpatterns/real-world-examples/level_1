@@ -1,0 +1,30 @@
+* Design a Java Singleton configuration service that is shared across multiple application components.
+* Design a thread-safe Singleton audit logger for a high-concurrency application.
+* Design a Factory Method for selecting UPI, credit card, or bank transfer payment processors.
+* Design an Abstract Factory for creating payment-provider-specific clients, requests, and response handlers.
+* Design a Builder for creating a complex insurance policy with optional coverage and validation rules.
+* Design a Prototype-based document management system that creates copies of existing document templates.
+* Design a Strategy-based shipping calculator that selects delivery costs based on location, weight, and delivery speed.
+* Design an Observer-based notification system that informs customers when an order status changes.
+* Design a Command-based banking system that supports deposits, withdrawals, transaction history, and undoable operations.
+* Design a Chain of Responsibility for processing loan applications through eligibility, credit, and approval checks.
+* Design a State-based order system that controls transitions from CREATED to CONFIRMED, SHIPPED, and DELIVERED.
+* Design a Template Method for importing CSV and JSON files using common validation and persistence steps.
+* Design a custom Iterator for traversing paginated customer records from a database.
+* Design a Mediator for coordinating participants, message delivery, and notifications in a chat application.
+* Design a Memento-based editor that supports undo and redo without exposing internal document state.
+* Design a Visitor-based reporting system that calculates tax, salary, and benefits for different employee types.
+* Design an Interpreter for evaluating configurable eligibility rules in a loan application.
+* Design an Adapter that converts a legacy banking API into a standard payment interface.
+* Design a Decorator that adds compression, encryption, and logging to file-processing operations.
+* Design a Facade that coordinates inventory, payment, shipping, and notification services during checkout.
+* Design a Proxy that caches product details and checks authorization before accessing a remote service.
+* Design a Composite structure for representing an organization with departments, managers, and employees.
+* Design a Bridge architecture that supports email, SMS, and push notifications through different delivery providers.
+* Design a Flyweight-based game map that shares immutable terrain objects across thousands of map cells.
+* Design a Spring Boot application that uses Dependency Injection to select different payment strategies.
+* Design a Repository layer for an employee application that supports filtering, pagination, and sorting.
+* Design a DTO mapping layer that separates REST API contracts from database entities.
+* Design an MVC-based leave management application with controllers, services, and views.
+* Design a Service Layer for processing account transfers with validation and transaction management.
+* Design a Unit of Work that coordinates changes to orders, inventory, and payment records within a database transaction.

@@ -1,0 +1,30 @@
+* Your customer database has grown to billions of records, and queries are becoming slower. How would you introduce partitioning?
+* A hash-partitioned database has one shard receiving significantly more traffic than others. How would you investigate and resolve the imbalance?
+* Your e-commerce platform stores orders by customer ID, but some customers place thousands of times more orders than others. How would you prevent hot partitions?
+* A time-series table contains several years of sensor data, and recent writes are slowing historical queries. How would you redesign the partitioning strategy?
+* Your application frequently queries records across several shards. How would you redesign the shard key and data access patterns?
+* A multi-tenant SaaS platform has one large customer consuming most database resources. How would you isolate the tenant without redesigning the entire system?
+* Your database is approaching the storage limit of a single node. How would you shard the data while keeping the application available?
+* You need to add a new database shard to an existing production cluster. How would you rebalance data safely?
+* During resharding, users update records that are being migrated to another shard. How would you prevent lost or conflicting updates?
+* A global uniqueness constraint must be enforced across all database shards. How would you implement it?
+* Your reporting API requires aggregations across all partitions, causing high latency. How would you optimize the architecture?
+* A partitioned table performs full scans despite having partition keys in the query. What would you investigate?
+* Your application partitions orders by creation date, but customers frequently search by email address. How would you support both access patterns efficiently?
+* A Kafka topic receives millions of events per second, but one partition is overloaded. How would you identify and fix the partitioning issue?
+* A Kafka consumer group has fewer partitions than consumers, leaving some consumers idle. How would you address the throughput limitation?
+* Your Kafka application must preserve event order for each account while processing many accounts in parallel. How would you select the partition key?
+* Increasing the number of Kafka partitions changes the mapping of keys to partitions. How would you handle the transition safely?
+* A new region must be added to a distributed database, and some records need to move closer to regional users. How would you plan the migration?
+* A node failure causes several partitions to become unavailable. How would replication and partition reassignment restore service?
+* Your consistent-hashing implementation moves too much data whenever a node is added. How would you improve it?
+* A database shard is nearly full while other shards have plenty of capacity. How would you rebalance data with minimal downtime?
+* A financial application needs customer-level transaction ordering, but transactions must also be queried by date. How would you design the partitioning scheme?
+* Your application needs cross-shard transactions for transferring funds between accounts. How would you preserve business correctness?
+* Historical partitions are rarely accessed but occupy most of the storage budget. How would you implement archival and retention?
+* A late-arriving event belongs to a time partition that has already been archived. How would you process it safely?
+* A partition migration creates duplicate records in the destination shard. How would you detect and reconcile the duplicates?
+* A distributed search application needs to partition documents while supporting queries across several attributes. How would you design the index and routing strategy?
+* A large customer causes uneven cache load because its data maps to one cache partition. How would you redesign the cache key distribution?
+* Your team plans to split a monolithic database into tenant-based shards, but existing reports depend on joins across tenants. How would you handle the transition?
+* You must choose between range partitioning, hash partitioning, and consistent hashing for a high-volume order system. What factors would guide your decision?

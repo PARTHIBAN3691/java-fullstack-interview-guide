@@ -1,0 +1,21 @@
+
+* Why are strings immutable, and what benefits does immutability provide?
+* Explain how the String Constant Pool works with an example.
+* What is the purpose of the `intern()` method?
+* What is the difference between `String s1 = "Java"` and `String s2 = new String("Java")`?
+* How many objects can be created by `new String("Java")`, and under what conditions?
+* What happens when you concatenate string literals at compile time?
+* What is the difference between compile-time and runtime string concatenation?
+* How does the `concat()` method differ from the `+` operator?
+* Why can repeated string concatenation inside a loop cause performance problems?
+* How does `StringBuilder` improve performance during repeated modifications?
+* Is `StringBuilder` thread-safe? How does it differ from `StringBuffer`?
+* What is the difference between `equals()`, `equalsIgnoreCase()`, and `compareTo()`?
+* How does the `compareTo()` method determine the ordering of strings?
+* What is the difference between `split(" ")` and `split("\\s+")`?
+* What is the purpose of `join()` and `String.join()`?
+* What is the difference between `replace()`, `replaceAll()`, and `replaceFirst()`?
+* How do regular expressions work with the `matches()` method?
+* What is the difference between `String.valueOf()` and `toString()`?
+* What is the difference between `String.format()` and `formatted()`?
+* How do you remove leading, trailing, and repeated whitespace from a string?

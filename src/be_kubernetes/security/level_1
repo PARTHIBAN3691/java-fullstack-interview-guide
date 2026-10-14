@@ -1,0 +1,30 @@
+* How does RBAC authorization work in Kubernetes?
+* How do you create a Role with read-only access to Pods?
+* How do you restrict a ServiceAccount to a specific namespace?
+* How do you configure a Pod to run as a non-root user?
+* How do you prevent a container from running in privileged mode?
+* How do you configure read-only root filesystems for containers?
+* How do you drop Linux capabilities from a container?
+* How do you configure seccomp profiles for Kubernetes workloads?
+* How do you use AppArmor profiles to restrict container behavior?
+* How do you configure Pod Security Admission for a namespace?
+* How do you enforce the Restricted Pod Security Standard?
+* How do you securely store database credentials in Kubernetes?
+* How do you enable encryption at rest for Kubernetes Secrets?
+* How do you restrict access to Secrets using RBAC?
+* How do you rotate Kubernetes Secret values safely?
+* How do you configure imagePullSecrets for private registries?
+* How do you enforce image-pull policies in Kubernetes?
+* How do you prevent containers from using untrusted images?
+* How do you configure NetworkPolicies to restrict Pod communication?
+* How do you allow only specific Pods to access a backend service?
+* How do you secure communication between microservices?
+* How do you configure TLS for Kubernetes Ingress?
+* How do you manage TLS certificates in a Kubernetes cluster?
+* How do you secure access to the Kubernetes API server?
+* How do you configure audit logging for security investigations?
+* How do you implement least-privilege access for developers?
+* How do you securely manage ServiceAccount tokens?
+* How do you avoid exposing sensitive values through environment variables?
+* How do you integrate Kubernetes with an external secrets manager?
+* How do you implement security checks in a CI/CD pipeline?

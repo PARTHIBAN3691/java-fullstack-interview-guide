@@ -1,0 +1,20 @@
+* An e-commerce platform generates thousands of order events per second. How would you design a Kinesis-based pipeline to process these events in real time?
+* A Java producer intermittently receives `ProvisionedThroughputExceededException`. How would you troubleshoot and resolve the issue?
+* One shard receives significantly more traffic than the others. How would you identify and resolve the hot-shard problem?
+* A consumer application restarts frequently and reprocesses previously processed records. How would you prevent duplicate business operations?
+* A downstream database becomes slow, causing consumer lag to increase continuously. How would you prevent the system from falling behind?
+* A stream has multiple independent consumers, each requiring low-latency access to all records. How would you choose between standard consumers and enhanced fan-out?
+* A financial application requires ordered processing of transactions for each account. How would you choose partition keys and design the consumer?
+* A Kinesis producer sends batches of 500 records, but some records fail while others succeed. How would you handle retries without duplicating successful writes?
+* A consumer has been offline for 48 hours, and the stream has a 24-hour retention period. What recovery options would you consider?
+* A company needs to ingest application logs from thousands of servers and store them in Amazon S3. How would you choose and configure the appropriate Kinesis service?
+* A real-time analytics system must aggregate user activity events by minute. How would you implement the processing pipeline?
+* A Java application needs to publish events to a stream in another AWS account. How would you configure authentication and authorization?
+* A stream's incoming data rate suddenly doubles during a product launch. How would you scale capacity and validate performance?
+* An application must process sensitive customer events. How would you secure data in transit, at rest, and during downstream delivery?
+* A consumer processes records successfully but crashes before checkpointing. How would you ensure that replaying those records does not corrupt application state?
+* A Lambda function connected to Kinesis repeatedly fails on one malformed record. How would you prevent a single record from blocking progress?
+* A data pipeline must route events to different S3 prefixes based on event type. How would you implement the transformation and delivery?
+* A team wants to replay historical events to rebuild a reporting database. How would you design the replay process without disrupting live consumers?
+* A multi-Region application must continue ingesting events during a regional outage. How would you design its recovery and reconciliation strategy?
+* CloudWatch shows high iterator age but low consumer CPU utilization. What would you investigate before increasing the consumer fleet?

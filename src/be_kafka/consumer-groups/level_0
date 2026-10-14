@@ -1,0 +1,30 @@
+* What is a consumer group in Apache Kafka?
+* Why are consumer groups used in Kafka?
+* What is a Kafka consumer?
+* What is the relationship between a consumer and a consumer group?
+* What is a consumer group ID?
+* What is a group coordinator in Kafka?
+* What is the role of a group coordinator?
+* How does Kafka assign partitions to consumers in a group?
+* Can multiple consumers in the same group consume the same partition simultaneously?
+* What happens when the number of consumers exceeds the number of partitions?
+* What happens when a consumer group has fewer consumers than partitions?
+* Can multiple consumer groups consume the same Kafka topic?
+* What is a consumer group rebalance?
+* What triggers a consumer group rebalance?
+* What is a partition assignment strategy?
+* What is the difference between a consumer group and a Kafka topic?
+* What is an offset in a consumer group?
+* What is a committed offset?
+* What is consumer lag?
+* How does Kafka track consumer group offsets?
+* What is the purpose of the `__consumer_offsets` topic?
+* What is the difference between automatic and manual offset commits?
+* What is the purpose of `group.id` in Kafka consumer configuration?
+* What is the purpose of `enable.auto.commit`?
+* What is the purpose of `auto.offset.reset`?
+* What happens when a new consumer joins an existing group?
+* What happens when a consumer crashes unexpectedly?
+* What is the difference between a static and dynamic consumer group member?
+* How do you list consumer groups in Kafka?
+* What are the basic monitoring metrics for Kafka consumer groups?

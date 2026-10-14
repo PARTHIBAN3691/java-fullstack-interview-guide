@@ -1,0 +1,30 @@
+* Write Java code to create an Azure Service Bus sender using the Azure SDK for Java.
+* Write Java code to send a JSON message to an Azure Service Bus queue.
+* Write Java code to receive and process messages using ServiceBusProcessorClient.
+* Write a Spring Boot service that publishes business events to an Azure Service Bus topic.
+* Write a Spring Boot consumer that processes messages from an Azure Service Bus subscription.
+* Write Java code to authenticate to Service Bus using DefaultAzureCredential and managed identity.
+* Write Java code to configure message IDs, correlation IDs, content types, and application properties.
+* Write Java code to complete, abandon, defer, and dead-letter messages using PeekLock mode.
+* Write a Java message handler that validates JSON payloads and routes invalid messages to the dead-letter queue.
+* Write Java code to configure a Service Bus processor with controlled concurrency and prefetch settings.
+* Write Java code to implement bounded retries with exponential backoff for transient processing failures.
+* Write a Java consumer that distinguishes retryable infrastructure errors from permanent business-validation errors.
+* Write Java code to implement idempotent message processing using a database-backed deduplication table.
+* Write a Spring Boot implementation of the transactional outbox pattern for publishing messages after database transactions.
+* Write Java code to implement a message inbox pattern that prevents duplicate business processing.
+* Write Java code to process session-enabled messages while preserving ordering for each business entity.
+* Write Java code to renew message locks during long-running processing and handle lock-renewal failures.
+* Write Java code to schedule a Service Bus message for future delivery.
+* Write Java code to cancel a scheduled message when the business operation is no longer required.
+* Write Java code to deserialize versioned message payloads and support backward-compatible schema evolution.
+* Write Java code to implement graceful shutdown of a Service Bus processor during Spring Boot application termination.
+* Write a Spring Boot configuration that manages Service Bus clients as reusable beans and closes them safely.
+* Write Java code to query Service Bus-related operational data and publish custom processing metrics.
+* Write Java code to handle Service Bus throttling, network failures, and transient Azure service errors.
+* Write unit tests for a message handler covering success, duplicate delivery, invalid payloads, and database failures.
+* Write integration tests for a Spring Boot Service Bus producer and consumer using an isolated Azure test namespace.
+* Write Java code to replay selected dead-letter messages while preserving identifiers and avoiding duplicate business effects.
+* Write Java code to detect message-processing failures and report queue-processing latency and failure rates.
+* Write a reconciliation service that compares published business events with completed database transactions.
+* Design and implement a resilient Spring Boot messaging service using Azure Service Bus with managed identity, idempotent processing, retries, dead-letter handling, structured logging, and monitoring.

@@ -1,0 +1,30 @@
+* Write a Dockerfile that runs a Spring Boot executable JAR using a Java runtime image.
+* Create a multi-stage Dockerfile that builds a Spring Boot application with Maven and copies only the runtime artifact into the final image.
+* Write a multi-stage Dockerfile for a Java application built with Gradle.
+* Create a Dockerfile that uses a configurable JAR filename through a build argument.
+* Write a Dockerfile that uses WORKDIR, COPY, and ENTRYPOINT to run a Java application.
+* Create a Dockerfile that runs a Spring Boot application as a non-root user.
+* Write a .dockerignore file that excludes Git files, build output, IDE settings, local configuration, and temporary files.
+* Create a Dockerfile that passes Spring profile configuration through an environment variable.
+* Write a Dockerfile that supports runtime JVM options without hardcoding environment-specific values.
+* Create a Dockerfile that separates Maven dependency resolution from source compilation to improve build caching.
+* Write a BuildKit-enabled Dockerfile that caches Maven dependencies across builds.
+* Create a Dockerfile that uses BuildKit secret mounts to access a private Maven repository securely.
+* Write a Dockerfile that copies a Spring Boot layered JAR and optimizes the image layers for dependency reuse.
+* Create a Dockerfile that uses a pinned Java runtime image and runs the application from a dedicated directory.
+* Write a Dockerfile that copies a custom CA certificate into the runtime image and updates the certificate trust store.
+* Create a Dockerfile that runs a Java application with a custom jlink runtime containing the required modules.
+* Write a Dockerfile that adds OCI image labels for application version, source revision, and build metadata.
+* Create a Dockerfile with a health check that verifies a Spring Boot health endpoint.
+* Write a Dockerfile that configures the Java process for graceful shutdown and works with Docker termination signals.
+* Create a Dockerfile that keeps build tools out of the final runtime image using multi-stage builds.
+* Write a shell script that builds a Java Docker image with a version tag and a Git commit identifier.
+* Create a shell script that checks the final image size and reports the image ID and tags after a successful build.
+* Write a shell script that runs a container, waits for its health status, and prints logs if startup fails.
+* Create a Dockerfile suitable for a Java application that uses environment variables to configure database connectivity without embedding credentials.
+* Write a Dockerfile that supports a read-only root filesystem by placing writable temporary files in an appropriate directory.
+* Create a multi-stage Dockerfile that runs unit tests during the build and packages the application only if the tests succeed.
+* Write a Dockerfile strategy that supports AMD64 and ARM64 builds using compatible base images and dependencies.
+* Create a Docker build configuration that produces reproducible artifacts and avoids unnecessary package-manager caches in the final image.
+* Write a CI build script that builds a Java image, scans it for vulnerabilities, and publishes it only if required checks pass.
+* Build a production-ready Dockerfile for a Spring Boot microservice with a small runtime image, secure non-root execution, configurable JVM options, health checks, reproducible versioning, and optimized build caching.

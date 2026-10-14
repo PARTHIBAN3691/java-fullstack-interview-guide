@@ -1,0 +1,91 @@
+**LangChain**
+* Implement a RAG pipeline using LangChain with document loading, chunking, embedding generation, retrieval, and grounded response generation.
+* Create a reusable prompt template and a structured-output parser that validates the generated response against a defined schema.
+* Implement a custom tool with input validation, authorization checks, timeout handling, and structured error responses.
+* Write unit tests for retrievers, prompt construction, output parsing, and provider failures using mocks.
+* Implement a fallback model strategy that activates only for retryable failures and respects an overall request deadline.
+
+**LangGraph**
+* Build a stateful graph with retrieval, answer generation, conditional validation, and a retry path for insufficient evidence.
+* Implement a graph with a tool-calling loop and a maximum-iteration limit.
+* Create a checkpointed workflow that resumes after interruption without repeating completed idempotent operations.
+* Implement a human-approval node before a sensitive tool can execute.
+* Write tests that verify graph transitions, state updates, checkpoint recovery, and failure handling.
+
+**LlamaIndex**
+* Build a document ingestion pipeline that creates nodes, generates embeddings, and stores them in a vector index.
+* Implement metadata-filtered retrieval with source-level citations.
+* Create an incremental indexing job that updates changed documents and removes deleted documents.
+* Implement a retrieval pipeline with hybrid search and a reranking stage.
+* Write tests for stale nodes, duplicate ingestion, empty retrieval results, and citation correctness.
+
+**Semantic Kernel**
+* Implement a custom plugin that exposes a business operation as a validated AI-callable function.
+* Create a prompt-based function and a native function, then orchestrate them in a single workflow.
+* Implement dependency injection for model clients, plugin services, and configuration.
+* Add authorization, timeout handling, and audit logging to a tool-invocation pipeline.
+* Write tests for malformed function arguments, denied permissions, plugin exceptions, and model-client failures.
+
+**Hugging Face Transformers**
+* Load a pretrained transformer and tokenizer and implement inference for a classification or text-generation task.
+* Build a fine-tuning pipeline with a custom dataset, evaluation metrics, checkpointing, and reproducible configuration.
+* Implement batched inference with configurable padding, truncation, and device selection.
+* Compare inference latency and memory usage across full-precision and quantized model configurations.
+* Write an evaluation script that compares a fine-tuned model against a baseline on a held-out dataset.
+
+**PyTorch**
+* Implement a training loop with a dataset, data loader, model, loss function, optimizer, validation phase, and checkpoint saving.
+* Build a custom `torch.nn.Module` and write unit tests for input shapes, output dimensions, and gradient computation.
+* Implement checkpoint recovery that restores model, optimizer, scheduler, and random-number generator state.
+* Profile a model's training and inference paths and report the main CPU, GPU, and data-loading bottlenecks.
+* Implement batched inference with evaluation mode, device management, and safe handling of concurrent requests.
+
+**TensorFlow**
+* Build a Keras classification model with preprocessing, training, validation, and evaluation.
+* Create a `tf.data` pipeline with batching, caching, shuffling, and prefetching.
+* Implement checkpointing and early stopping, then restore the best-performing model.
+* Export a trained model and compare predictions before and after conversion to TensorFlow Lite.
+* Write tests for input validation, output consistency, and model artifact loading.
+
+**scikit-learn**
+* Implement a machine-learning pipeline that combines imputation, feature scaling or encoding, and classification.
+* Compare multiple models using cross-validation and hyperparameter search.
+* Build an evaluation report containing precision, recall, F1-score, ROC-AUC, and a confusion matrix.
+* Implement a reproducible training pipeline that persists preprocessing and model artifacts together.
+* Write tests that detect data leakage and verify consistency between training-time and inference-time transformations.
+
+**ONNX Runtime**
+* Export a trained model to ONNX and implement inference using ONNX Runtime.
+* Build a validation script that compares source-framework predictions with ONNX predictions within defined tolerances.
+* Implement inference using configurable execution providers and input batch sizes.
+* Benchmark native and ONNX inference for latency, throughput, memory usage, and output consistency.
+* Write tests for unsupported input shapes, invalid tensors, unavailable execution providers, and model-loading failures.
+
+**vLLM**
+* Implement a client that sends generation requests to a vLLM server using an OpenAI-compatible API.
+* Build an asynchronous load-testing client that measures time to first token, inter-token latency, throughput, and error rate.
+* Implement streaming response consumption with cancellation and client-disconnect handling.
+* Create a load-test scenario with mixed prompt lengths and output limits to evaluate batching behavior.
+* Implement a model-serving health check that distinguishes process availability from successful model inference.
+
+**Ollama**
+* Build a Java or Python application that invokes an Ollama model through its local API.
+* Implement a local RAG workflow that combines a document retriever with Ollama-based generation.
+* Create a streaming client that processes generated chunks and handles interrupted connections.
+* Implement configurable model selection, generation parameters, timeouts, and error handling.
+* Write integration tests for missing models, unavailable endpoints, malformed responses, and concurrent requests.
+
+**Model Context Protocol (MCP)**
+* Implement a minimal MCP server that exposes a read-only business lookup tool with validated inputs and structured outputs.
+* Build an MCP client that discovers available tools and invokes a selected tool with validated arguments.
+* Implement server-side authorization and audit logging for tool invocations.
+* Write tests for malformed tool arguments, missing capabilities, server timeouts, and authorization failures.
+* Implement a workflow that invokes an MCP tool and validates its result before passing the data to an LLM.
+
+**Framework Selection and Trade-offs**
+* Build a benchmark harness that compares two orchestration frameworks using the same queries, models, retrieval data, and evaluation criteria.
+* Implement an interchangeable model-provider interface that supports a cloud API and a local inference endpoint.
+* Create a proof-of-concept RAG application that can switch between LangChain and LlamaIndex retrieval implementations.
+* Build a comparison report measuring answer quality, retrieval quality, p95 latency, token usage, operational complexity, and estimated cost.
+* Implement a framework-independent test suite that validates authorization, citations, retry behavior, and output schemas across multiple implementations.
+* Create a deployment experiment that compares vLLM, Ollama, and ONNX Runtime where each is technically appropriate for the chosen model and workload.

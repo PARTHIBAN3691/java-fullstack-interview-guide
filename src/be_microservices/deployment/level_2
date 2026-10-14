@@ -1,0 +1,30 @@
+* How would you design a scalable CI/CD platform for hundreds of Java microservices?
+* How do you achieve zero-downtime deployments for a distributed microservices system?
+* How do you design a deployment pipeline with automated quality gates and security scans?
+* How do you manage coordinated deployments when multiple services have dependencies?
+* How do you deploy backward-compatible API and database changes?
+* How do you implement expand-and-contract database migrations during rolling deployments?
+* How do you prevent incompatible application versions from running simultaneously?
+* How do you design progressive delivery with automated canary analysis and rollback?
+* How do you determine whether a deployment should be automatically rolled back?
+* How do you design a secure software supply chain for containerized Java applications?
+* How do you scan Docker images for vulnerabilities and enforce deployment policies?
+* How do you manage image signing, provenance, and software bill of materials in CI/CD?
+* How do you deploy microservices across multiple Kubernetes clusters and regions?
+* How do you design disaster recovery and failover for a production deployment platform?
+* How do you manage Kubernetes capacity during large-scale application rollouts?
+* How do you prevent resource contention between Java microservices on Kubernetes nodes?
+* How do you tune JVM memory settings for containerized Java applications?
+* How do you handle graceful shutdown and in-flight requests during rolling deployments?
+* How do you manage connection draining for HTTP services during termination?
+* How do you design deployment strategies for stateful services and message consumers?
+* How do you prevent duplicate event processing when Kafka consumers restart during deployment?
+* How do you implement GitOps using tools such as Argo CD or Flux?
+* How do you manage infrastructure and application deployment using Infrastructure as Code?
+* How do you separate deployment permissions between developers, CI/CD systems, and production operators?
+* How do you prevent secrets from leaking through build logs, image layers, or pipeline artifacts?
+* How do you manage configuration drift across Kubernetes environments?
+* How do you design observability and alerting to detect deployment-related regressions?
+* How do you deploy a critical financial service while maintaining auditability and rollback safety?
+* How do you balance deployment frequency, reliability, and change failure rate?
+* How do you evaluate the operational cost of a deployment platform and optimize resource utilization?

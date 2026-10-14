@@ -1,0 +1,30 @@
+* How do you identify performance bottlenecks in a Node.js application?
+* How does blocking the event loop affect concurrent requests?
+* How would you detect and measure event-loop delay?
+* How do you optimize CPU-intensive operations in Node.js?
+* How do you offload expensive computations using Worker Threads?
+* How do you configure the libuv thread pool size?
+* What are the risks of increasing UV_THREADPOOL_SIZE?
+* How do you improve throughput when handling many concurrent HTTP requests?
+* How do you implement caching for frequently requested API responses?
+* How would you implement Redis caching in a Node.js application?
+* What is cache invalidation, and how can it affect application correctness?
+* What is the cache-aside pattern, and when would you use it?
+* How do you prevent a cache stampede when many requests need the same expired value?
+* How do you optimize database queries used by a Node.js application?
+* How do indexes improve database query performance?
+* How does connection pooling help under heavy traffic?
+* How do you identify and resolve database connection pool exhaustion?
+* How do you implement pagination for large datasets efficiently?
+* What is the difference between offset pagination and cursor-based pagination?
+* How do you reduce memory consumption when processing large files?
+* How do streams improve performance compared with reading an entire file into memory?
+* How do you implement backpressure when processing streams?
+* How do you optimize JSON serialization and parsing for large payloads?
+* How does gzip or Brotli compression affect API performance?
+* How do you optimize middleware execution in an Express application?
+* How do you measure API latency using percentiles such as p50, p95, and p99?
+* How do you use Node.js profiling tools to identify CPU hotspots?
+* How do you investigate excessive garbage collection in a Node.js process?
+* How do you optimize Docker images and startup time for a Node.js application?
+* How do you perform load testing and interpret the results for a Node.js API?

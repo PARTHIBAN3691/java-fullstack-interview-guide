@@ -1,0 +1,84 @@
+**Artificial Intelligence (AI) Fundamentals**
+* Your organization wants to automate a manual business process using AI, but the requirements are vague. How would you discover the real problem, define success criteria, and choose an appropriate solution?
+* An AI-powered application has high prediction accuracy but receives poor feedback from users. How would you investigate the mismatch between technical performance and business outcomes?
+* A production AI feature behaves inconsistently across departments. How would you determine whether the cause is data quality, model behavior, integration logic, or differing user expectations?
+* An AI project has exceeded its budget without delivering measurable value. How would you reassess feasibility and decide whether to optimize, redesign, or stop the project?
+
+**Types of AI: Narrow AI, General AI, and Superintelligence**
+* A stakeholder claims that a chatbot is equivalent to AGI because it answers questions across many subjects. How would you evaluate and communicate the claim?
+* An AI vendor advertises human-level intelligence based on a limited benchmark. How would you challenge the evidence and define a more credible evaluation plan?
+* An enterprise plans to grant an autonomous AI system access to critical business workflows. How would you establish boundaries, approval controls, and escalation procedures?
+
+**Generative AI vs Traditional AI**
+* A document-processing system uses an LLM, but it occasionally invents invoice values. How would you investigate the failures and determine whether a traditional extraction or validation component should be introduced?
+* A generative solution costs significantly more than an existing classification model while delivering similar business outcomes. How would you compare the approaches and recommend a cost-effective design?
+* An AI assistant produces different answers for repeated requests with identical inputs. How would you investigate model settings, changing context, retrieval results, and output validation?
+* A business team wants to use generated summaries to make financial decisions. How would you establish verification, traceability, and human review before deployment?
+
+**Machine Learning Fundamentals**
+* A customer-churn model performed well during development but its accuracy dropped after a new product launch. How would you investigate data changes, feature drift, and concept drift?
+* A model reports unusually high test accuracy, but business results are poor. How would you investigate data leakage, incorrect labels, and differences between test and production populations?
+* A project team has a small dataset and limited labeling budget. How would you decide which data to collect and which modeling approach to try first?
+* A new model improves an offline metric but increases false positives in production. How would you assess the impact and decide whether to deploy it?
+
+**Supervised Learning**
+* A fraud-detection model misses a growing number of fraudulent transactions despite maintaining high accuracy. How would you investigate class imbalance, thresholds, and changes in fraud patterns?
+* A customer-support classifier frequently assigns new issue categories to the wrong labels. How would you investigate training examples, label definitions, and model limitations?
+* A churn model has excellent overall recall but generates too many false alarms for high-value customers. How would you investigate subgroup performance and adjust the decision policy?
+* A model's predicted probabilities are used to calculate business risk, but observed outcomes differ substantially from predictions. How would you investigate calibration and retrain or recalibrate the model?
+
+**Unsupervised Learning**
+* A customer segmentation model creates clusters that change significantly whenever new data is loaded. How would you investigate scaling, algorithm choice, and cluster stability?
+* An anomaly-detection system generates thousands of alerts, most of which are harmless. How would you improve prioritization and validate whether the detected anomalies are meaningful?
+* A business team cannot explain what its customer clusters represent. How would you evaluate interpretability and make the segments actionable?
+* A clustering pipeline begins grouping customers primarily by geographic region rather than purchasing behavior. How would you identify the cause and correct the feature representation?
+
+**Reinforcement Learning**
+* An optimization agent improves its reward score but causes undesirable behavior in the simulated environment. How would you investigate reward design and define safety constraints?
+* An agent performs well in simulation but fails after deployment to a physical or business environment. How would you investigate the simulation-to-reality gap and plan recovery?
+* An agent explores too aggressively and causes unacceptable costs. How would you constrain exploration, evaluate safer alternatives, and prevent recurrence?
+* A team wants to use historical interaction data to train a decision-making agent without live experimentation. How would you assess the quality and limitations of the available data?
+
+**Deep Learning Fundamentals**
+* A deep learning model overfits after several epochs. How would you use learning curves, data augmentation, regularization, and early stopping to diagnose and resolve the problem?
+* Training time doubles after the dataset grows, while GPU utilization remains low. How would you investigate data loading, preprocessing, batching, and hardware utilization?
+* A model performs well on clean images but fails on low-quality customer uploads. How would you reproduce the failures and improve robustness?
+* A pretrained model achieves better performance than a model trained from scratch but violates latency requirements. How would you evaluate compression, distillation, and alternative architectures?
+
+**Neural Networks**
+* A neural network's training loss becomes NaN after several iterations. How would you investigate learning rate, gradient stability, input normalization, and numerical precision?
+* A network's training loss continues decreasing, but validation performance worsens. How would you identify overfitting and choose an appropriate intervention?
+* A model gives highly confident wrong predictions on unfamiliar inputs. How would you evaluate calibration, uncertainty estimation, and out-of-distribution detection?
+* A new neural network release performs worse for one customer segment even though aggregate accuracy improves. How would you investigate the data and assess whether the release should be rolled back?
+
+**Natural Language Processing (NLP)**
+* An enterprise search feature fails to retrieve relevant documents when users phrase questions differently from the document text. How would you investigate tokenization, embeddings, retrieval, and semantic matching?
+* A sentiment-analysis model misclassifies domain-specific expressions and sarcasm. How would you identify the failure patterns and improve the training and evaluation data?
+* An entity-extraction model starts failing after the company introduces new product names and abbreviations. How would you diagnose vocabulary changes and determine the right update strategy?
+* An NLP service performs well in English but poorly in multilingual customer conversations. How would you assess language coverage, evaluation datasets, and model selection?
+
+**Computer Vision**
+* A warehouse object-detection model misses products under dim lighting and partial occlusion. How would you reproduce the issue and prioritize data, augmentation, and model changes?
+* A production vision model detects objects accurately in development images but fails on images from a newly installed camera. How would you investigate camera differences, image preprocessing, and distribution shift?
+* A quality-inspection model produces too many false rejects on acceptable products. How would you analyze class-specific metrics and adjust the operating threshold?
+* A model's evaluation results are unexpectedly high because images from the same production batch appear in both training and test data. How would you correct the split strategy and reassess performance?
+
+**Speech Recognition and Audio AI**
+* A voice assistant performs poorly for customers speaking with regional accents in noisy environments. How would you identify the major error sources and measure improvements?
+* A call-center transcription system frequently confuses product names and technical abbreviations. How would you improve domain adaptation and verify that the changes help?
+* Streaming transcription is accurate but has unacceptable response delays. How would you investigate audio chunking, model latency, network overhead, and partial-result handling?
+* A speech analytics platform attributes words to the wrong speakers during overlapping conversations. How would you investigate diarization and evaluate the effect on downstream reports?
+
+**AI Model Training, Validation, and Inference**
+* A model performs well in offline tests but returns different predictions in production for the same input. How would you compare preprocessing, dependency versions, model artifacts, and inference configuration?
+* A training pipeline accidentally uses information that would only become available after the prediction time. How would you detect the leakage, redesign validation, and communicate the impact on reported results?
+* A model deployment increases API latency and causes timeouts under peak traffic. How would you investigate model loading, batch size, concurrency, hardware usage, and scaling?
+* A newly deployed model degrades business outcomes even though its offline evaluation passed. How would you use monitoring, shadow traffic, canary deployment, and rollback criteria to resolve the incident?
+* A model-training job fails intermittently due to resource exhaustion. How would you investigate memory use, checkpointing, batch sizes, and recovery procedures?
+
+**AI Evaluation Metrics**
+* A fraud model achieves 99% accuracy but misses most fraudulent transactions. How would you select more suitable metrics and establish a threshold aligned with business costs?
+* A new model improves F1-score but doubles the number of false positives. How would you determine whether the change is acceptable for the business?
+* A model's aggregate metrics are strong, but users report poor results for a specific language or customer segment. How would you design subgroup evaluation and investigate the discrepancy?
+* Two models have similar accuracy but different precision and recall. How would you compare them using operational impact and error costs?
+* A team reports a small improvement based on a single test run. How would you determine whether the improvement is statistically reliable and large enough to justify release?

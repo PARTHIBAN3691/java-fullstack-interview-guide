@@ -1,0 +1,30 @@
+* Create a basic Angular service using Angular CLI.
+* Write a service with a method that returns a string.
+* Inject a service into a component and display its returned value.
+* Create a service that stores and returns a list of employees.
+* Create a service that adds, updates, and deletes employee records.
+* Write a service that fetches data using HttpClient.get().
+* Write a service that sends data using HttpClient.post().
+* Write a service that updates data using HttpClient.put().
+* Write a service that deletes a record using HttpClient.delete().
+* Create a reusable API service that accepts a URL and returns an Observable.
+* Write a service method that handles HTTP errors using catchError().
+* Write a service method that retries a failed API request.
+* Create a service that exposes application configuration through InjectionToken.
+* Write a service using the inject() function instead of constructor injection.
+* Create a service that shares data between two unrelated components using Subject.
+* Create a service that shares the latest user data using BehaviorSubject.
+* Implement a service that exposes an Observable while keeping its Subject private.
+* Write a service that caches an HTTP response using shareReplay().
+* Implement a service that clears cached data after an update request.
+* Write a service that combines data from two API endpoints using forkJoin().
+* Create a service that manages a loading indicator for API requests.
+* Write a service that prevents duplicate requests for the same resource.
+* Create a service with an injectable mock implementation for unit testing.
+* Write a unit test for a service that returns a fixed value.
+* Write a unit test for a service that depends on another service.
+* Test an HTTP service using HttpTestingController.
+* Write a unit test that verifies the HTTP request URL and method.
+* Write a unit test that verifies HTTP error handling.
+* Create a service that supports cancellation of an ongoing search request using RxJS.
+* Implement a service that manages authentication state and notifies subscribed components when the user logs out.

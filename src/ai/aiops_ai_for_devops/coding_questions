@@ -1,0 +1,89 @@
+**AIOps Fundamentals**
+
+* Implement a telemetry ingestion service that accepts logs, metrics, and alert events, normalizes them into a common schema, and assigns correlation identifiers.
+* Build an AIOps evaluation utility that calculates incident detection time, mean time to recovery, alert reduction, and remediation success rate from historical incident records.
+
+**AI-Based Log Analysis**
+
+* Implement a log parser that extracts timestamps, severity, service names, trace IDs, exception types, and normalized error messages from sample Java application logs.
+* Build a log clustering utility that groups similar stack traces and ranks recurring errors by frequency, severity, and affected services.
+
+**Intelligent Alert Correlation**
+
+* Implement an alert correlation engine that groups events based on configurable time windows, service dependencies, severity, and common trace identifiers.
+* Write tests that distinguish related alerts from simultaneous but independent incidents and verify behavior when telemetry arrives out of order.
+
+**Anomaly Detection**
+
+* Implement a rolling-baseline anomaly detector that identifies unusual latency, error-rate, and memory-usage measurements.
+* Build a seasonal anomaly detection evaluation script that measures precision, recall, false-positive rate, and detection delay on timestamped telemetry.
+
+**Root Cause Analysis**
+
+* Implement a root cause ranking utility that combines service dependency graphs, event timestamps, recent deployments, and correlated error rates.
+* Write tests that rank candidate causes, distinguish downstream symptoms from upstream failures, and return an explicit uncertain result when evidence is insufficient.
+
+**Incident Summarization**
+
+* Implement a service that converts incident events into a chronological timeline containing symptoms, suspected causes, confirmed findings, and remediation actions.
+* Build tests that ensure summaries reference actual event IDs, distinguish hypotheses from verified facts, and update correctly when new evidence arrives.
+
+**Predictive Incident Detection**
+
+* Implement a feature-processing pipeline that derives rolling error rates, latency trends, resource utilization, and deployment frequency from historical telemetry.
+* Build a model-evaluation utility that measures precision, recall, prediction lead time, and false alarms without leaking information from after an incident.
+
+**Automated Incident Response**
+
+* Implement a remediation engine that selects an approved action, validates preconditions, executes a mock operation, and verifies post-action health.
+* Write tests for duplicate triggers, action timeouts, retry limits, failed verification, concurrent remediation requests, and circuit-breaker activation.
+
+**AI-Assisted CI/CD**
+
+* Implement a pipeline stage that collects test results, static-analysis findings, dependency vulnerabilities, and deployment metrics into a structured AI review request.
+* Build a release gate that combines deterministic policies, AI recommendations, and canary metrics while ensuring the AI cannot override mandatory checks.
+
+**AI-Generated Infrastructure as Code**
+
+* Implement a validator for generated Terraform plans that detects destructive changes, public resource exposure, missing encryption, and prohibited configurations.
+* Write tests that reject unsafe Kubernetes manifests and Terraform configurations before they reach the deployment stage.
+
+**AI-Assisted Kubernetes Troubleshooting**
+
+* Implement a troubleshooting utility that accepts pod status, Kubernetes events, container logs, resource metrics, and recent changes and returns ranked diagnostic hypotheses.
+* Build a remediation validator that checks namespace, workload identity, disruption budgets, action permissions, and health preconditions before a mock Kubernetes action.
+
+**AI for Cloud Cost Optimization**
+
+* Implement a cloud cost analysis utility that identifies idle resources, oversized instances, unexpected spending changes, and resource utilization anomalies.
+* Build a recommendation engine that estimates savings and rejects actions that violate configured availability, ownership, or disaster-recovery constraints.
+
+**AI-Powered Capacity Planning**
+
+* Implement a capacity forecasting utility that predicts CPU, memory, storage, and request demand from historical measurements.
+* Build a scaling recommendation engine that translates forecast intervals into replica counts and capacity buffers while respecting minimum and maximum limits.
+
+**AI Runbook Automation**
+
+* Implement a runbook execution engine with versioned steps, precondition checks, retries, checkpoints, and post-action verification.
+* Write tests for partial workflow failure, resume after interruption, compensation, approval requirements, and rejection of commands outside an approved action list.
+
+**AI Change Risk Prediction**
+
+* Implement a change-risk scoring service using code-change size, affected services, test coverage, historical failure rate, and service criticality.
+* Build an evaluation utility that compares predicted risk against actual deployment outcomes and checks calibration across services with different amounts of historical data.
+
+**AI-Assisted Security Operations**
+
+* Implement a security-alert enrichment service that combines mock threat intelligence, asset criticality, identity context, and historical incidents into a structured investigation record.
+* Write tests that verify untrusted log and alert content cannot modify system instructions, reveal secrets, or authorize containment actions.
+
+**Human Approval for Automated Remediation**
+
+* Implement an approval workflow that classifies actions by risk, requires authorized reviewers for high-impact actions, and records approval evidence.
+* Write tests for expired approvals, changed target resources, unauthorized approvers, rejected actions, and audit-log completeness.
+
+**Reliability and Safety of AIOps**
+
+* Implement a safe-execution wrapper with action allowlists, bounded retries, timeouts, kill-switch support, and deterministic fallback behavior when AI services fail.
+* Build a fault-injection test suite that simulates stale telemetry, incorrect recommendations, model outages, partial remediation, and cascading failures, then verifies that unsafe actions are blocked.

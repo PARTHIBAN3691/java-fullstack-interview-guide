@@ -1,0 +1,30 @@
+* Explain the architecture of Cloud SQL and how it differs from self-managed database deployments.
+* How would you design a highly available database architecture using Cloud SQL?
+* How does Cloud SQL high availability handle primary-instance failures?
+* How do regional high availability and read replicas differ?
+* How would you design disaster recovery for a critical Cloud SQL database?
+* How would you define and meet recovery time objectives and recovery point objectives for Cloud SQL?
+* How do automated backups differ from point-in-time recovery?
+* How would you plan a major database version upgrade with minimal downtime?
+* How would you perform a zero- or low-downtime schema migration for a production database?
+* How would you size a Cloud SQL instance based on transaction volume, query complexity, and resource utilization?
+* How would you diagnose high CPU utilization when query volume remains stable?
+* How would you investigate database latency caused by lock contention and long-running transactions?
+* How would you optimize HikariCP settings for a horizontally scaled Spring Boot application?
+* How would you calculate safe database connection limits across multiple Cloud Run instances?
+* How would you prevent connection exhaustion during sudden application scale-out?
+* How would you design read/write separation using a Cloud SQL primary and read replicas?
+* How would you handle replication lag when an application requires read-after-write consistency?
+* How would you optimize indexing strategies for high-volume transactional workloads?
+* How would you diagnose query performance degradation after database growth?
+* How would you analyze execution plans and optimize joins, sorting, and filtering?
+* How would you design partitioning for large tables in PostgreSQL or MySQL?
+* How would you prevent deadlocks in a high-concurrency transactional application?
+* How would you implement reliable transaction retries without duplicating business operations?
+* How would you secure Cloud SQL using private IP, IAM, least-privilege access, and encrypted connections?
+* How would you rotate database credentials without causing application downtime?
+* How would you design connectivity between Cloud SQL and workloads deployed across multiple VPCs?
+* How would you migrate an on-premises PostgreSQL or MySQL database to Cloud SQL with minimal downtime?
+* How would you validate data consistency and application correctness after a database migration?
+* How would you optimize Cloud SQL costs while meeting performance and availability requirements?
+* How would you decide between Cloud SQL, AlloyDB, and Cloud Spanner for an enterprise application?

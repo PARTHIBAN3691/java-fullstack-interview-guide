@@ -1,0 +1,30 @@
+* How would you design a FinOps strategy for a large enterprise running hundreds of GCP projects?
+* How would you establish cost ownership across development, testing, staging, and production environments?
+* How would you build a near-real-time cloud cost analytics platform using Cloud Billing exports and BigQuery?
+* How would you distinguish temporary cost spikes from persistent increases in cloud consumption?
+* How would you forecast GCP spending using historical usage, seasonality, and planned traffic growth?
+* How would you optimize infrastructure costs while meeting strict availability and latency SLAs?
+* How would you calculate the trade-off between committed use discounts and workload flexibility?
+* How would you determine the break-even point for committed use discounts for a variable Java workload?
+* How would you design a policy to identify and remediate idle or overprovisioned resources automatically?
+* How would you prevent automated cost-remediation actions from disrupting production workloads?
+* How would you optimize a multi-region microservices architecture to reduce compute and network costs?
+* How would you evaluate the cost impact of synchronous service calls across multiple regions?
+* How would you reduce Cloud Run spending while maintaining low cold-start latency and acceptable throughput?
+* How would you optimize Compute Engine costs using rightsizing, autoscaling, Spot VMs, and committed use discounts?
+* How would you design a workload-placement strategy across Cloud Run, Compute Engine, GKE, and serverless services?
+* How would you optimize Cloud SQL and Cloud Spanner costs for workloads with variable transaction volumes?
+* How would you model database cost against throughput, storage growth, replication, and availability requirements?
+* How would you identify whether poor SQL performance is increasing database and application infrastructure costs?
+* How would you design storage lifecycle policies that balance retrieval latency, durability, compliance, and cost?
+* How would you reduce Cloud Storage costs for a system that stores billions of objects?
+* How would you optimize BigQuery costs for mixed transactional analytics and scheduled reporting workloads?
+* How would you establish cost guardrails using organization policies, IAM, quotas, and infrastructure-as-code?
+* How would you design budget alerts that trigger useful remediation rather than excessive notifications?
+* How would you implement showback and chargeback models when multiple teams share the same GCP resources?
+* How would you attribute shared networking, logging, and platform costs to individual applications?
+* How would you calculate unit economics such as cloud cost per API request, customer, transaction, or order?
+* How would you build a cost anomaly detection system using billing exports and statistical baselines?
+* How would you measure savings from a cost optimization initiative while accounting for business growth?
+* How would you prioritize optimization opportunities based on savings potential, implementation effort, and operational risk?
+* How would you develop a continuous FinOps feedback loop integrated into engineering delivery and architecture reviews?

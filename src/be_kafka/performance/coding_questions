@@ -1,0 +1,30 @@
+* Write a Java Kafka producer that sends messages asynchronously and measures throughput.
+* Write a Java program that measures Kafka producer latency for each message.
+* Write a Spring Boot Kafka producer configured for high throughput.
+* Write a Spring Boot Kafka producer configured for low latency.
+* Write Java code to configure `batch.size`, `linger.ms`, and `compression.type`.
+* Write a Kafka producer that sends messages in batches and measures records per second.
+* Write Java code that compares synchronous and asynchronous Kafka producer performance.
+* Write a Java program that measures the impact of different compression types on producer throughput.
+* Write a Spring Kafka producer using `KafkaTemplate` and asynchronous callbacks to track send latency.
+* Write Java code to monitor producer buffer exhaustion.
+* Write a Kafka consumer that measures records processed per second.
+* Write a Spring Boot Kafka consumer configured with multiple concurrent listener threads.
+* Write a Spring Kafka batch listener that processes multiple records in a single poll.
+* Write Java code that measures consumer processing latency.
+* Write a Kafka consumer that records and reports consumer lag periodically.
+* Write Java code to compare different values of `max.poll.records` and measure throughput.
+* Write a Spring Boot application that dynamically processes Kafka records using a configurable worker pool.
+* Write Java code implementing backpressure when Kafka consumer processing is slower than message arrival.
+* Write a Kafka producer benchmark that measures throughput for different message sizes.
+* Write Java code to compare Kafka producer performance with and without compression.
+* Write a Spring Boot Kafka application that exposes producer and consumer throughput metrics using Micrometer.
+* Write Java code using Kafka `AdminClient` to retrieve partition and broker information for performance analysis.
+* Write Java code to identify partitions with significantly higher traffic than other partitions.
+* Write a Kafka consumer that measures processing time separately from Kafka polling time.
+* Write a Spring Kafka consumer that batches database operations instead of performing one database call per message.
+* Write Java code that demonstrates how increasing consumer concurrency affects throughput.
+* Write a Java benchmark comparing JSON serialization and a binary serialization format for Kafka messages.
+* Write a Spring Boot Kafka application that measures end-to-end message latency from producer to consumer.
+* Write Java code to calculate required Kafka partitions based on target messages per second and per-partition throughput.
+* Write a Java performance test that compares different `batch.size` and `linger.ms` combinations and reports the best configuration.

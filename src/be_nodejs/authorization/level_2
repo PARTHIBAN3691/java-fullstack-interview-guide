@@ -1,0 +1,30 @@
+* How would you design a scalable authorization architecture for a large Node.js application?
+* How would you implement fine-grained authorization using RBAC and ABAC together?
+* How would you design a centralized policy decision service for multiple microservices?
+* What is the difference between a Policy Enforcement Point and a Policy Decision Point?
+* How would you separate authorization policy evaluation from business logic?
+* How would you implement policy-based authorization using an external policy engine?
+* How would you integrate Open Policy Agent (OPA) with a Node.js application?
+* How would you design authorization for a multi-tenant SaaS platform?
+* How would you prevent cross-tenant data leakage at the application and database layers?
+* How would you implement dynamic, context-aware authorization using user attributes and resource attributes?
+* How would you handle permission inheritance in hierarchical organizational structures?
+* How would you implement delegated administration without granting unrestricted privileges?
+* How would you prevent privilege escalation through manipulated JWT claims?
+* How would you handle stale permissions when access tokens contain outdated role information?
+* How would you revoke authorization privileges across distributed services without waiting for token expiration?
+* How would you design authorization caching while ensuring timely permission revocation?
+* How would you prevent time-of-check-to-time-of-use (TOCTOU) authorization vulnerabilities?
+* How would you enforce authorization consistently across REST, GraphQL, and WebSocket interfaces?
+* How would you design resource-level authorization for APIs that expose complex nested objects?
+* How would you prevent insecure direct object reference (IDOR) vulnerabilities?
+* How would you implement attribute-based authorization for sensitive financial operations?
+* How would you enforce separation of duties for high-risk business transactions?
+* How would you implement temporary access grants with expiration and auditability?
+* How would you design delegated access where one user acts on behalf of another?
+* How would you implement authorization across services that use different identity providers?
+* How would you handle policy versioning and policy rollout without disrupting production traffic?
+* How would you make a centralized authorization service resilient when it becomes unavailable?
+* How would you design an authorization audit trail that supports compliance and forensic investigation?
+* How would you detect and prevent privilege escalation in a microservices architecture?
+* What trade-offs would you consider between centralized, decentralized, and hybrid authorization models?

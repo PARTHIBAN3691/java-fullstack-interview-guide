@@ -1,0 +1,30 @@
+* Your Node.js application writes logs to the console locally but does not produce logs in production. How would you troubleshoot the issue?
+* Your application generates too many log entries and fills the disk. How would you control log volume and retention?
+* Your API becomes slower after detailed request logging is introduced. How would you identify and reduce the overhead?
+* Your application logs passwords and access tokens. How would you prevent sensitive data from being exposed?
+* A production error appears in the logs without enough information to identify the affected request. How would you improve the logging design?
+* Logs from multiple microservices cannot be correlated for a single customer request. How would you solve this problem?
+* An asynchronous operation logs the wrong request ID when multiple requests execute concurrently. How would you fix the context propagation?
+* Your application loses buffered logs during a crash. How would you improve log delivery reliability?
+* A logging service becomes unavailable, causing application requests to fail. How would you isolate logging failures from business operations?
+* Your application produces duplicate log entries for every HTTP request. How would you identify the source of duplication?
+* Your logs contain stack traces but omit the original error message. How would you correct the error-logging implementation?
+* Your production logs contain inconsistent timestamp formats across services. How would you standardize them?
+* A log aggregation platform cannot parse some application logs because they contain multiline messages. How would you resolve the issue?
+* Your application generates millions of debug logs during peak traffic. How would you reduce unnecessary logging without losing important information?
+* A security incident requires determining who changed a critical business record. How would you design audit logging for this requirement?
+* Your application logs complete HTTP request bodies, including confidential customer data. How would you redesign request logging?
+* A log file grows indefinitely because rotation is not working. How would you troubleshoot and prevent recurrence?
+* Your service logs an error but continues processing invalid data. How would you improve logging and error-handling behavior?
+* Multiple application instances write to the same log file and produce corrupted or interleaved output. How would you redesign log collection?
+* Your Node.js service experiences high memory usage due to an in-memory logging buffer. How would you diagnose and resolve it?
+* A downstream logging endpoint responds slowly and causes request latency to increase. How would you handle backpressure and delivery failures?
+* Your application logs show a high error rate, but the monitoring dashboard shows no corresponding increase. How would you investigate the discrepancy?
+* A developer changes the production log level to DEBUG, causing a large increase in log volume. How would you control dynamic log-level changes?
+* Logs contain untrusted user input that makes entries appear forged or misleading. How would you prevent log injection?
+* A container restarts and its local log files disappear. How would you ensure logs remain available for investigation?
+* Your distributed application has matching trace IDs in some services but missing IDs in others. How would you troubleshoot propagation?
+* Your team needs different log retention periods for application logs and security audit logs. How would you design the policy?
+* A third-party logging library introduces excessive CPU usage after an upgrade. How would you investigate and mitigate the issue?
+* An incident investigation requires identifying slow API requests across multiple services. What logging fields would you need?
+* You are designing centralized logging for a high-volume financial application. How would you address reliability, security, performance, retention, and auditability?

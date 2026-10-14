@@ -1,0 +1,30 @@
+* You are designing APIs for an e-commerce platform with products, customers, carts, and orders. How would you define the resource model and endpoints?
+* A mobile application uses an API, and a new release requires additional response fields. How would you introduce the changes without breaking older app versions?
+* A payment API receives the same request multiple times because of network retries. How would you prevent duplicate charges?
+* An API returns thousands of records and causes high database load. How would you redesign pagination and filtering?
+* A customer reports that an API returns different results for identical requests. How would you investigate caching, consistency, and concurrent updates?
+* A public API is receiving sudden traffic spikes. How would you protect the system while keeping legitimate requests available?
+* One customer consumes most of the available API capacity. How would you design fair usage limits for all customers?
+* A downstream inventory service becomes slow, causing API requests to time out. How would you prevent cascading failures?
+* Two clients update the same order simultaneously, and one update overwrites the other. How would you redesign the API to prevent lost updates?
+* An API must support both web and mobile clients with different data requirements. Would you choose REST, GraphQL, or a backend-for-frontend approach?
+* Multiple teams develop microservices independently, and API contracts frequently break. How would you improve contract governance and testing?
+* A legacy API needs to be replaced, but thousands of clients still use it. How would you plan versioning, migration, and deprecation?
+* A report-generation request takes several minutes to complete. How would you design the API interaction and status tracking?
+* A webhook consumer is unavailable for several hours. How would you ensure event delivery without overwhelming the consumer after recovery?
+* A webhook provider delivers the same event multiple times. How would you design deduplication and idempotent processing?
+* A multi-tenant SaaS API must ensure that customers can access only their own data. How would you enforce tenant isolation?
+* An API exposes sensitive customer information in error messages. How would you redesign error handling and logging?
+* A service must accept large documents without exhausting application memory. How would you design the upload API?
+* An API must support filtering across millions of database records with predictable latency. What indexing and query-design considerations would you make?
+* A new API requires data from five microservices, but one service is frequently unavailable. How would you design its response and failure behavior?
+* A distributed order-creation API performs inventory reservation, payment, and shipment initiation. How would you design the workflow and recovery process?
+* A client retries a request after a timeout, but the original request may already have succeeded. How would you make the result safe and unambiguous?
+* API latency increases after adding authentication and authorization checks. How would you investigate and optimize the request path?
+* A company wants to expose internal APIs to external partners. How would you design access control, quotas, documentation, and onboarding?
+* A system requires different API limits for free, premium, and enterprise customers. How would you implement the policy consistently across instances?
+* A public API needs to support partial responses to reduce bandwidth usage. How would you design field selection and maintain compatibility?
+* A financial API must prevent clients from accidentally submitting the same transfer twice. What request identifiers, validation, and persistence mechanisms would you use?
+* An API must provide reliable status tracking for a long-running batch process. How would you model job creation, progress, cancellation, and completion?
+* A production deployment introduces a breaking API change and causes client failures. How would you contain the impact and prevent recurrence?
+* You are asked to define API design standards for an enterprise microservices platform. What standards, review processes, and automated checks would you introduce?

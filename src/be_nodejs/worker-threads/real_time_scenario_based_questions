@@ -1,0 +1,30 @@
+* Your Node.js API becomes unresponsive while generating large reports. How would you use Worker Threads to improve responsiveness?
+* Your application performs CPU-intensive image processing for every request. How would you distribute the work across worker threads?
+* A worker thread takes significantly longer than other workers to process tasks. How would you investigate and resolve the issue?
+* Your application creates a new worker for every incoming request, causing high memory usage. How would you redesign the implementation?
+* A worker crashes while processing an important task. How would you detect the failure and retry the task safely?
+* Your worker pool becomes overloaded during peak traffic. How would you implement queue limits and backpressure?
+* Multiple workers need to process a large shared dataset. How would you reduce memory duplication and communication overhead?
+* A worker sends a large result object to the main thread, causing performance degradation. How would you optimize data transfer?
+* Your application uses SharedArrayBuffer, and occasionally produces incorrect results under concurrency. How would you debug the race condition?
+* A worker thread never completes a task because of an infinite loop. How would you prevent it from affecting the overall service?
+* Your application must process thousands of independent CPU-intensive jobs. How would you design worker allocation and task scheduling?
+* A worker pool works correctly in development but fails under production traffic. What metrics and diagnostics would you investigate?
+* Your service needs to shut down gracefully during a deployment while workers are still processing tasks. How would you implement this?
+* A worker thread runs out of memory when processing a large file. How would you redesign the processing pipeline?
+* Your Node.js application performs cryptographic calculations that block request handling. How would you move the workload to worker threads?
+* Multiple workers update a shared counter, but the final count is incorrect. How would you solve the synchronization problem?
+* Your application uses a worker pool, but some workers remain idle while others have long queues. How would you improve load balancing?
+* A task fails after partially updating a database. How would you design transaction handling and retries for worker-based processing?
+* Your API needs to cancel a background computation when the client disconnects. How would you implement cancellation?
+* A worker pool has a growing task queue and increasing response latency. How would you determine whether to add workers or apply load shedding?
+* Your application needs to process large CSV files without blocking HTTP requests. How would you design a streaming and worker-based solution?
+* A worker thread repeatedly crashes due to malformed input. How would you isolate the failure and prevent repeated crashes?
+* Your application runs inside a container with a CPU limit. How would you determine the correct worker pool size?
+* A CPU-intensive task performs faster with one worker than with several workers. What possible causes would you investigate?
+* Your service needs to track worker failures, task durations, and queue depth. How would you implement monitoring and alerting?
+* Your application must process tasks in priority order. How would you design the queue and worker assignment strategy?
+* A worker finishes a task but the main thread never receives the expected result. How would you troubleshoot message communication and lifecycle events?
+* You need to upgrade a worker's implementation without interrupting ongoing jobs. How would you manage worker replacement?
+* Your application processes financial calculations in parallel, and results must remain accurate and auditable. How would you handle deterministic execution, retries, and validation?
+* How would you design a production-ready Node.js worker pool with bounded queues, task timeouts, retries, graceful shutdown, and monitoring?

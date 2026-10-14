@@ -1,0 +1,30 @@
+* How would you design a scalable API automation framework using Java, REST Assured, and TestNG?
+* How do you structure an API testing framework using reusable components and design patterns?
+* How would you implement a maintainable API client layer using Java?
+* How do you design API test suites that can run in parallel without data conflicts?
+* How do you manage test data and test isolation across parallel API executions?
+* How do you validate complex JSON schemas with optional and conditional fields?
+* How do you verify backward compatibility between different API versions?
+* How do you implement contract testing between microservices?
+* How do consumer-driven contract tests differ from integration tests?
+* How do you test APIs when dependent services are unavailable?
+* How do you validate eventual consistency in distributed API workflows?
+* How do you test retry mechanisms and exponential backoff behavior?
+* How do you verify idempotency when requests are retried after timeouts?
+* How do you test concurrent API requests that update the same resource?
+* How do you validate optimistic locking and conflict handling through APIs?
+* How do you test distributed transactions exposed through APIs?
+* How do you validate authentication and authorization across multiple microservices?
+* How do you test OAuth 2.0 and OpenID Connect protected APIs?
+* How do you test APIs against common security vulnerabilities?
+* How do you test rate limits and throttling across multiple clients?
+* How do you design API performance tests for throughput, latency, and concurrency?
+* How do you identify whether API latency originates from the application, database, or a downstream service?
+* How do you test APIs that stream responses or process asynchronous requests?
+* How do you validate webhook delivery, retries, and duplicate events?
+* How do you test APIs that return different response structures based on user permissions?
+* How do you handle sensitive test data and secrets in automated API testing?
+* How do you implement reliable cleanup for test data created across multiple services?
+* How do you prevent false positives caused by overly permissive API assertions?
+* How do you measure API test coverage and identify missing test scenarios?
+* How would you optimize a large API test suite that takes several hours to execute?

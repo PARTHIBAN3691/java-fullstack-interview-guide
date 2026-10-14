@@ -1,0 +1,30 @@
+* Write SQL or database commands to inspect replication status in PostgreSQL.
+* Write SQL commands to inspect replica status and replication lag in MySQL.
+* Write a PostgreSQL query to display WAL sender and receiver status using system views.
+* Write SQL to inspect replication slots and retained WAL in PostgreSQL.
+* Write a MySQL query to inspect replication worker errors and source-replica status.
+* Implement a Spring Boot configuration with separate primary and replica DataSources.
+* Implement an AbstractRoutingDataSource that routes read-only operations to replicas and write operations to the primary.
+* Implement a custom transaction-aware routing strategy that respects Spring's @Transactional(readOnly = true).
+* Write a Java service that routes a write operation to the primary and a subsequent consistency-sensitive read to the primary.
+* Implement a replica health-check component that measures connectivity and tracks replica lag.
+* Implement a Spring Boot routing policy that excludes replicas whose lag exceeds a configurable threshold.
+* Write Java code to fall back to the primary when all eligible read replicas are unavailable.
+* Implement connection-pool configuration for primary and replica DataSources using HikariCP.
+* Implement a failover-aware database connection strategy that refreshes connections after the primary endpoint changes.
+* Write Java retry logic for transient connection failures while preventing unsafe retries of non-idempotent transactions.
+* Implement an idempotency mechanism for a payment request when the database connection fails after a possible commit.
+* Write an integration test that verifies read and write routing across primary and replica DataSources.
+* Write a test that simulates a lagging replica and verifies that consistency-sensitive reads use the primary.
+* Implement a Spring Boot health indicator that reports primary availability and individual replica health.
+* Implement Micrometer metrics for replica lag, routing decisions, connection failures, and failover duration.
+* Write a Java component that switches to the primary for a bounded period after a successful write to support read-after-write consistency.
+* Implement a configurable routing policy that chooses among multiple replicas based on health and observed lag.
+* Write an integration test that simulates replica unavailability and validates the application's fallback behavior.
+* Implement a deployment validation script that checks schema compatibility before enabling a new application version.
+* Write a Java service that compares record counts or selected checksums between primary and replica datasets for validation.
+* Implement an application-level consistency check for critical records after a failover.
+* Write a test that verifies connection pools do not continue using stale connections after a database endpoint change.
+* Implement a Spring Boot readiness check that prevents traffic from being routed to an instance whose database dependencies are unavailable.
+* Write an automated failover test that verifies recovery time, write availability, and application reconnection.
+* Implement a recovery workflow that validates the promoted database, updates connection routing, and verifies application operations before declaring failover complete.

@@ -1,0 +1,30 @@
+* Your Spring Boot REST API has Swagger UI enabled, but some endpoints are missing. How would you troubleshoot the issue?
+* The API implementation has changed, but Swagger UI still displays the old request schema. How would you identify and resolve the inconsistency?
+* Developers frequently forget to document newly created endpoints. How would you enforce documentation as part of the development process?
+* Your API returns HTTP 400 for invalid input, but the documentation describes only HTTP 200 responses. How would you correct the documentation?
+* An endpoint accepts a nested JSON object with many optional fields. How would you document the request structure clearly?
+* Your application uses JWT authentication, but Swagger UI does not send the Bearer token. How would you configure it?
+* Your API exposes internal administrative endpoints in publicly accessible Swagger UI. How would you secure the documentation?
+* A new API version introduces a breaking response change. How would you document the change and support existing consumers?
+* Two microservices use different formats for the same error response. How would you standardize their API documentation?
+* A client generated from your OpenAPI specification fails because a field is documented with the wrong data type. How would you prevent similar issues?
+* Your API supports pagination, but consumers do not understand how to navigate between pages. How would you improve the documentation?
+* A file-upload endpoint accepts multipart form data, but Swagger UI displays an ordinary JSON request body. How would you fix it?
+* A financial API requires an idempotency key for payment creation, but developers frequently omit it. How would you document and enforce this requirement?
+* Your API rate-limits clients, but the documentation does not explain HTTP 429 responses or retry behavior. What would you add?
+* A production release introduces a breaking change that was not detected during review. How would you implement automated contract-diff checks?
+* Several teams maintain separate OpenAPI files with duplicated schemas. How would you reduce duplication and improve consistency?
+* Your API documentation includes sensitive internal server URLs and infrastructure details. How would you prevent information disclosure?
+* A partner integration fails because the documented date format differs from the actual API format. How would you investigate and correct the contract?
+* Your API has several deprecated endpoints still used by external clients. How would you communicate deprecation and plan migration?
+* A backend team changes an enum value, causing a generated client to fail. How would you detect and communicate the compatibility impact?
+* Your application supports multiple API versions, but Swagger UI shows only the latest version. How would you configure version-specific documentation?
+* An endpoint returns different response structures based on the user's role. How would you document the possible response variations?
+* Your CI pipeline generates documentation successfully, but the published specification is outdated. How would you make publishing reliable?
+* A security review finds that Swagger UI allows unauthenticated users to explore sensitive internal APIs. How would you address the issue?
+* Your organization wants API consumers to test endpoints directly from the documentation portal. How would you configure interactive API exploration safely?
+* A microservice processes requests asynchronously and returns HTTP 202. How would you explain job status polling and eventual completion?
+* Your OpenAPI specification contains circular references and becomes difficult to render. How would you resolve the schema design?
+* Multiple teams disagree on naming conventions, error formats, and pagination standards. How would you establish API documentation governance?
+* Your API documentation is technically complete but developers continue asking the same integration questions. How would you improve its usability?
+* How would you implement an end-to-end API documentation process covering specification design, generation, validation, contract testing, versioning, and publishing?

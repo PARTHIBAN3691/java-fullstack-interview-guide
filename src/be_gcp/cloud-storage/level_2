@@ -1,0 +1,30 @@
+* Explain the architecture of Google Cloud Storage and how it provides highly durable object storage.
+* How would you design a scalable file-storage service using Cloud Storage and Spring Boot?
+* How would you support millions of file uploads per day without overwhelming the application servers?
+* How would you design resumable uploads for multi-gigabyte files?
+* How would you implement streaming uploads and downloads to minimize JVM heap usage?
+* How would you optimize parallel uploads and downloads for large objects?
+* How would you choose between Standard, Nearline, Coldline, and Archive storage for a business workload?
+* How would you estimate Cloud Storage costs based on storage class, operations, retrieval, and network egress?
+* How would you design lifecycle rules for long-term document retention and cost optimization?
+* How would you design object naming conventions for a high-volume storage workload?
+* How would you implement concurrency control when multiple services update the same object?
+* How do object generation numbers and metageneration numbers help prevent race conditions?
+* How would you implement conditional writes using generation-match preconditions?
+* How would you design an idempotent file-upload API when clients retry requests?
+* How would you ensure application metadata and uploaded objects remain consistent when a database transaction cannot include Cloud Storage operations?
+* How would you design a reliable workflow for uploading files, scanning them, and publishing them for download?
+* How would you protect a bucket against accidental deletion or overwriting of critical objects?
+* How would you combine object versioning, soft delete, retention policies, and retention locks for data protection?
+* How would you securely share private objects with external users using signed URLs?
+* How would you design fine-grained access control using IAM and uniform bucket-level access?
+* How would you design encryption using customer-managed encryption keys?
+* How would you investigate permission failures involving service accounts and Cloud Storage IAM?
+* How would you design cross-region disaster recovery for critical objects?
+* How would you replicate objects across buckets or regions while controlling cost and consistency expectations?
+* How would you process Cloud Storage events without losing events or duplicating business operations?
+* How would you design a file-processing pipeline using Cloud Storage, Pub/Sub, Cloud Run, and BigQuery?
+* How would you handle duplicate or out-of-order storage event notifications?
+* How would you design a large-scale object migration between buckets with minimal disruption?
+* How would you optimize listing performance for buckets containing millions of objects?
+* How would you benchmark and troubleshoot high-latency Cloud Storage uploads and downloads?

@@ -1,0 +1,30 @@
+* Write a multi-stage Dockerfile that builds a Maven-based Spring Boot application and copies the packaged JAR into a Java runtime image.
+* Write a multi-stage Dockerfile for a Gradle-based Java application using a separate build stage and runtime stage.
+* Write a multi-stage Dockerfile that uses a specific Java version for compilation and a compatible runtime image for execution.
+* Write a Dockerfile that copies pom.xml first, downloads Maven dependencies, then copies source code and builds the application.
+* Write a multi-stage Dockerfile that runs Maven unit tests before packaging the Spring Boot application.
+* Write a Dockerfile with separate build, test, and production targets.
+* Write a Dockerfile that supports a development target with debugging tools and a production target with a minimal runtime.
+* Write a multi-stage Dockerfile that copies only the required application JAR and excludes source files, test reports, and build tools.
+* Write a Dockerfile that uses BuildKit cache mounts to reuse Maven dependencies between builds.
+* Write a Dockerfile that uses a BuildKit secret mount to authenticate with a private Maven repository without embedding credentials in image layers.
+* Write a multi-stage Dockerfile that packages a Spring Boot layered JAR to improve dependency-layer caching.
+* Write a multi-stage Dockerfile that creates a custom Java runtime using jlink and runs the application in the final stage.
+* Write a multi-stage Dockerfile that runs the application as a non-root user in the final image.
+* Write a multi-stage Dockerfile that copies required CA certificates and operating-system libraries into a minimal runtime image.
+* Write a Dockerfile that accepts a build argument for the Java version while keeping the final runtime stage explicit and reproducible.
+* Write a Dockerfile that supports separate targets for compiling the application, running tests, and packaging the production image.
+* Write a Dockerfile that builds a Spring Boot application using Maven Wrapper without requiring Maven to be installed on the host.
+* Write a shell script that builds a specific Docker target and tags the resulting image with the Git commit identifier.
+* Write a shell script that builds and tests a Java image and prevents publishing when tests fail.
+* Write a CI pipeline that builds a multi-stage image, scans it for vulnerabilities, and pushes it only after all required checks pass.
+* Write a Docker Buildx command sequence that builds and publishes a multi-stage Java image for AMD64 and ARM64.
+* Write a shell script that inspects the final image and fails if Maven, the JDK, or unwanted build artifacts are present.
+* Write a script that compares the sizes of single-stage and multi-stage images and reports the percentage reduction.
+* Write a CI/CD pipeline that builds an image once, verifies it, and promotes the same digest through testing, staging, and production.
+* Write a Dockerfile that copies a prebuilt JAR from an external build image using a named stage.
+* Write a multi-stage Dockerfile that builds a Java application from a monorepo subdirectory while keeping the build context controlled.
+* Write a shell script that verifies the expected JAR exists after the build and fails with a clear error message if it is missing.
+* Write a Dockerfile that uses pinned build and runtime base images and supports reproducible Java application packaging.
+* Write a CI pipeline that generates an SBOM, scans the final image, signs it, and publishes the verified image.
+* Write a production-ready multi-stage Dockerfile and build script for a Spring Boot microservice with dependency caching, test validation, minimal runtime contents, and non-root execution.

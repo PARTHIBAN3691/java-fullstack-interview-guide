@@ -1,0 +1,30 @@
+* Explain the internal architecture of the Node.js cluster module.
+* How does the primary process coordinate worker creation and lifecycle management?
+* Explain how connection distribution works under different cluster scheduling policies.
+* What are the trade-offs between round-robin scheduling and operating-system scheduling?
+* How would you design a self-healing cluster that maintains a target number of workers?
+* How would you prevent a crash loop when workers repeatedly fail during startup?
+* How do you implement graceful worker replacement without causing downtime?
+* How can you achieve zero-downtime deployments with clustered Node.js workers?
+* How would you handle long-lived HTTP connections during a rolling restart?
+* How do WebSockets affect load distribution and worker lifecycle management?
+* How would you design session affinity for a clustered application behind a reverse proxy?
+* What are the limitations of sticky sessions when workers restart?
+* How would you coordinate scheduled jobs to prevent every worker from executing the same job?
+* How can you prevent duplicate message processing across workers?
+* How would you implement distributed locking when multiple workers access the same resource?
+* Why should shared mutable state not be maintained only in worker memory?
+* How would you design inter-process communication for high-volume messages?
+* What are the performance implications of sending large messages between workers?
+* How would you prevent a slow worker from affecting overall application availability?
+* How do backpressure and connection saturation affect clustered HTTP servers?
+* How would you detect a worker that is alive but no longer processing requests?
+* How would you design readiness and liveness checks for clustered workers?
+* How do worker count and CPU core count affect throughput and latency?
+* Why can creating more workers than CPU cores sometimes reduce performance?
+* How would you distinguish CPU saturation from event-loop blocking in a cluster?
+* How do clustering and horizontal scaling differ architecturally?
+* When should you use Node.js clustering instead of containers or multiple application instances?
+* How would you handle graceful shutdown when the primary process receives SIGTERM?
+* How do cluster workers interact with external load balancers?
+* What metrics would you collect to evaluate cluster health and performance?

@@ -1,0 +1,15 @@
+* Write a Java program that generates allocation pressure and use GC logs to evaluate the impact of different heap sizes.
+* Write a Java program that creates short-lived and long-lived objects to compare their effects on garbage collection.
+* Write a Java program that generates large object allocations to investigate G1 GC humongous allocation behavior.
+* Write a Java program using `GarbageCollectorMXBean` to collect GC counts and collection times before and after a workload.
+* Write a Java program using `MemoryMXBean` to capture heap usage at regular intervals during a load test.
+* Write a Java program that generates GC logs and compares GC frequency under different `-Xms` and `-Xmx` configurations.
+* Write a Java program that generates allocation pressure and compare GC behavior with G1 GC and Parallel GC.
+* Write a Java program that captures garbage collection notifications and records pause-related metrics.
+* Write a Java program to parse GC logs and calculate average, maximum, and percentile pause durations.
+* Write a Java program to analyze GC logs and calculate the frequency of young GC and Full GC events.
+* Write a Java program to parse GC logs and report heap occupancy before and after each collection.
+* Write a Java program that simulates a memory leak by retaining objects and tracks post-GC heap usage.
+* Write a Java program that uses JFR to record allocation events and identify allocation hotspots.
+* Write a Java program that generates a repeatable workload to compare GC performance across multiple JVM configurations.
+* Write a Java program to produce a GC tuning benchmark report containing throughput, GC count, total pause time, and maximum pause duration.

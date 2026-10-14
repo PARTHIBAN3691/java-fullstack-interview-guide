@@ -1,0 +1,30 @@
+* Write Java code to connect to an Azure Synapse dedicated SQL pool using JDBC.
+* Write a Spring Boot configuration that manages JDBC connections to Synapse using a connection pool.
+* Write Java code to execute a parameterized SELECT query against a Synapse SQL pool.
+* Write Java code to insert a batch of records into a Synapse table using JDBC batch operations.
+* Write Java code to handle SQL exceptions, connection timeouts, and transient failures when querying Synapse.
+* Write Java code to authenticate to Synapse using Microsoft Entra ID and an appropriate supported credential mechanism.
+* Write a Spring Boot service that retrieves database credentials from Azure Key Vault without logging sensitive values.
+* Write Java code to execute a stored procedure in a Synapse dedicated SQL pool.
+* Write Java code to implement pagination when retrieving a large result set from Synapse.
+* Write Java code to process large JDBC result sets without loading all records into memory.
+* Write Java code to implement bounded retries with exponential backoff for transient database failures.
+* Write Java code to validate source record counts against destination record counts after a data load.
+* Write a Spring Boot batch service that loads source data into Synapse and records execution status.
+* Write Java code to implement idempotent data ingestion using business keys and deduplication logic.
+* Write Java code to perform transactional updates and handle rollback when a database operation fails.
+* Write Java code to securely build dynamic SQL queries using an allowlist for table names and parameterized values.
+* Write a Java utility that measures query execution time and publishes application metrics for Synapse operations.
+* Write Java code to handle JDBC connection-pool exhaustion and ensure connections are returned safely.
+* Write unit tests for a Synapse repository using mocked JDBC dependencies.
+* Write integration tests for a Spring Boot application that connects to an isolated Synapse test environment.
+* Write a SQL script to load Parquet files from Azure Data Lake Storage into a dedicated SQL pool using a supported loading approach.
+* Write a SQL query to identify duplicate records based on a business key.
+* Write a SQL query to identify missing records between source and destination datasets.
+* Write a SQL query to calculate daily transaction totals and reconcile them with aggregated source data.
+* Write a SQL script to implement an incremental load based on a watermark column.
+* Write a SQL query to identify data-quality violations such as null business keys, invalid dates, and negative amounts.
+* Write PySpark code for a Synapse notebook that reads Parquet files, validates records, and writes curated output.
+* Write PySpark code to remove duplicate records while retaining the latest record for each business key.
+* Write a Synapse pipeline design that invokes a notebook, validates output counts, and handles failures with retries and alerts.
+* Design and implement a Spring Boot analytics integration service that securely queries Synapse, validates returned data, handles failures, and publishes monitoring metrics.

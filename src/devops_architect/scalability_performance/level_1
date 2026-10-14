@@ -1,0 +1,160 @@
+
+**Horizontal Scaling**
+* How would you design a stateless Spring Boot application to scale horizontally?
+* How would you handle user sessions across multiple application instances?
+* How would you manage distributed locks when several instances execute the same scheduled task?
+* How would you prevent duplicate processing when load balancing sends requests to different instances?
+* How would you identify whether adding more application instances will improve throughput?
+* How would you scale a service that depends on a single shared database?
+
+**Vertical Scaling**
+* How would you determine whether an application needs more CPU, memory, or disk I/O capacity?
+* What application characteristics make vertical scaling more effective than horizontal scaling?
+* How would you handle JVM heap sizing when moving an application to a larger server?
+* How would you assess whether increasing server resources is more cost-effective than adding instances?
+* How would you plan migration from a large server to multiple smaller instances?
+
+**Auto Scaling**
+* How would you configure auto scaling using CPU utilization, request rate, and response latency?
+* Why can CPU-based scaling fail to detect a database-bound application?
+* How would you prevent frequent scale-out and scale-in cycles?
+* How would you determine suitable minimum and maximum instance counts?
+* How would you handle sudden traffic spikes before new instances become ready?
+* How would you ensure new instances pass readiness checks before receiving traffic?
+* How would you configure scale-in protection for instances processing long-running tasks?
+
+**Load Balancing**
+* How would you select a load-balancing algorithm for APIs with different processing times?
+* How do health checks differ from readiness checks and liveness checks?
+* How would you configure load balancing for WebSocket connections?
+* How would you avoid uneven traffic distribution when requests have different resource costs?
+* How would you handle a load balancer routing traffic to instances that are alive but overloaded?
+* How would you design load balancing across multiple availability zones?
+* What are the trade-offs of sticky sessions in a horizontally scaled application?
+
+**Connection Pooling**
+* How would you size a JDBC connection pool for a high-throughput Spring Boot service?
+* How does connection-pool exhaustion affect API latency?
+* How would you troubleshoot connection leaks in a Java application?
+* How do connection-pool size, request concurrency, and database capacity interact?
+* Why can increasing the connection pool size reduce performance?
+* How would you configure connection acquisition timeouts and connection lifetime?
+* How would you identify whether slow queries or insufficient connections are causing request delays?
+
+**Caching**
+* How would you decide which application data should be cached?
+* How would you handle cache invalidation when database records are updated?
+* How would you prevent a cache stampede when a popular key expires?
+* What is the cache-aside pattern, and when would you use it?
+* How would you handle cache misses during a traffic spike?
+* How would you prevent stale cached data from violating business requirements?
+* How would you measure whether caching actually improves application performance?
+
+**CDN**
+* How would you configure CDN caching for static assets and public API responses?
+* How do cache-control headers influence CDN behavior?
+* What is cache invalidation or purging, and when is it needed?
+* How would you serve versioned frontend assets without stale browser or CDN content?
+* How would you prevent sensitive or user-specific responses from being cached publicly?
+* How would you troubleshoot a low CDN cache-hit ratio?
+* How can a CDN reduce origin-server load during a traffic spike?
+
+**Distributed Caching**
+* How would you design a Redis cache for multiple Spring Boot instances?
+* How would you handle cache consistency when the database is updated by multiple services?
+* How would you choose a TTL for frequently changing versus relatively static data?
+* How would you handle cache-node failure or distributed-cache unavailability?
+* What are the trade-offs between local caching and distributed caching?
+* How would you prevent hot keys from overloading a Redis cluster?
+* How would you monitor cache hit ratio, eviction rate, memory utilization, and latency?
+* How would you prevent cache penetration from repeated requests for nonexistent records?
+
+**Queue-Based Scaling**
+* How would you scale consumers based on queue depth and message age?
+* How would you choose the number of consumers for a Kafka topic with a fixed number of partitions?
+* How would you prevent duplicate business processing when messages are redelivered?
+* How would you handle poison messages that repeatedly fail processing?
+* How would you balance consumer throughput against downstream database capacity?
+* How would you estimate the time needed to clear a queue backlog?
+* How would you scale consumers without violating message-ordering requirements?
+
+**Asynchronous Processing**
+* How would you move a long-running operation out of a synchronous REST request?
+* How would you notify a client when an asynchronous job completes?
+* How would you handle failures after a message is accepted but before processing completes?
+* How would you choose between `CompletableFuture`, an executor service, and a message broker?
+* How would you propagate correlation IDs and tracing context across asynchronous boundaries?
+* How would you prevent unbounded thread creation in an asynchronous Java application?
+* How would you handle transaction boundaries when a workflow spans multiple asynchronous services?
+
+**Backpressure**
+* How would you implement backpressure in a Java producer-consumer application?
+* How would you configure bounded executor queues in Spring Boot?
+* What happens when a thread pool uses an unbounded work queue?
+* How would you make a reactive pipeline respond to downstream demand?
+* How would you handle backpressure in Kafka consumers when database writes become slow?
+* How would you choose between blocking producers, rejecting work, and buffering requests?
+* How would you ensure backpressure does not cause excessive client timeouts?
+
+**Capacity Planning**
+* How would you estimate the infrastructure required for a projected increase in API traffic?
+* How would you calculate requests per second per instance and estimate the number of instances needed?
+* How would you plan capacity for seasonal traffic spikes?
+* How would you account for database, cache, and message-broker limits in capacity calculations?
+* How would you determine safe operating thresholds for CPU, memory, connection pools, and queue depth?
+* How would you use historical traffic and growth rates to forecast capacity?
+* How would you estimate capacity after a major application release changes request-processing cost?
+
+**Performance Testing**
+* How would you design a performance-testing strategy for a Spring Boot microservices application?
+* How would you create representative test data for performance testing?
+* How would you distinguish application latency from network and downstream latency?
+* How would you interpret p95 and p99 latency when average latency looks healthy?
+* How would you correlate load-test results with JVM metrics, database metrics, and distributed traces?
+* How would you make performance tests repeatable across CI/CD environments?
+* How would you define performance acceptance criteria for a production release?
+
+**Load Testing**
+* How would you design a load test that simulates realistic user journeys?
+* How would you determine the expected production request rate for a load test?
+* How would you test a system with a mix of read-heavy and write-heavy requests?
+* How would you distinguish a load-generator bottleneck from an application bottleneck?
+* How would you identify the maximum sustainable throughput of a service?
+* How would you compare performance before and after a deployment?
+* How would you test database connection-pool behavior under concurrent load?
+
+**Stress Testing**
+* How would you progressively increase load until a service reaches its breaking point?
+* How would you identify whether the first limiting resource is CPU, memory, threads, connections, or downstream capacity?
+* How would you test recovery after traffic exceeds the application's sustainable capacity?
+* How would you distinguish a gradual performance decline from a sudden system failure?
+* How would you test overload protection and load shedding under extreme traffic?
+* How would you verify that the application does not lose or corrupt data under stress?
+
+**Soak Testing**
+* How would you design a 12- or 24-hour soak test for a Java service?
+* How would you identify a gradual memory leak using heap and garbage-collection metrics?
+* How would you investigate a connection pool that slowly becomes exhausted during a soak test?
+* How would you distinguish normal JVM heap growth from a memory leak?
+* How would you detect file-descriptor leaks and thread growth during long-running tests?
+* How would you monitor latency drift and throughput degradation over time?
+* How would you ensure test data growth does not distort soak-test results?
+
+**Bottleneck Analysis**
+* How would you use Java Flight Recorder, thread dumps, and heap dumps to diagnose a slow service?
+* How would you distinguish CPU-bound processing from I/O-bound processing?
+* How would you identify lock contention in a multithreaded Java application?
+* How would you determine whether slow database queries or connection-pool exhaustion cause high latency?
+* How would you use distributed tracing to identify the slowest dependency in a request path?
+* How would you investigate high garbage-collection pause times?
+* How would you prioritize multiple bottlenecks when fixing one exposes another?
+
+**Latency Optimization**
+* How would you reduce p99 latency when average response time is acceptable?
+* How would you optimize an API that makes several sequential downstream calls?
+* How would you decide whether to parallelize downstream calls?
+* How would you reduce database latency through query optimization, indexing, and connection management?
+* How would you use caching without introducing unacceptable consistency issues?
+* How would you optimize serialization, payload size, and network round trips?
+* How would you investigate tail latency caused by garbage collection or thread scheduling?
+* How would you measure whether an optimization improves real user experience rather than only a benchmark?

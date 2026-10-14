@@ -1,0 +1,36 @@
+* Design an enterprise DevSecOps architecture for hundreds of repositories, multiple CI/CD platforms, and several cloud environments.
+* How would you implement risk-based security gates that balance vulnerability severity, exploitability, delivery speed, and business criticality?
+* How would you prevent vulnerable code from reaching production when SAST, SCA, DAST, and container scanners produce conflicting findings?
+* How would you design a security scanning strategy that avoids duplicate findings across multiple tools?
+* How would you handle a critical vulnerability in a widely used transitive dependency when no fixed version is available?
+* How would you implement dependency risk management across multiple languages, package managers, and private artifact repositories?
+* How would you design a secrets-management strategy that prevents credentials from entering source control, build artifacts, logs, and deployment manifests?
+* How would you respond if a long-lived production credential was exposed in a public repository and copied into several build artifacts?
+* How would you secure self-hosted build agents against malicious pull requests, persistence, and cross-build contamination?
+* How would you isolate untrusted pull-request builds from release pipelines that have access to signing keys or production credentials?
+* How would you secure the CI/CD control plane against compromised plugins, workflow definitions, and unauthorized pipeline modifications?
+* How would you design a secure software supply chain using provenance attestations, SBOMs, artifact signing, and deployment verification?
+* How would you establish trust in an artifact when the source repository is trusted but the build environment may have been compromised?
+* How would you implement key management, rotation, and access controls for software-signing keys?
+* How would you prevent a signed but vulnerable or malicious artifact from being deployed?
+* How would you verify artifact provenance and signatures at deployment time using an admission controller or equivalent policy enforcement mechanism?
+* How would you manage SBOM generation, storage, versioning, and vulnerability matching across a large portfolio of applications?
+* How would you handle an emergency vulnerability disclosure when you must identify every affected production application within hours?
+* How would you secure base container images and establish an approved image catalog for engineering teams?
+* How would you enforce container image policies covering provenance, signatures, vulnerability thresholds, non-root execution, and approved registries?
+* How would you scan multi-stage container builds without missing vulnerable packages in the final image or build dependencies?
+* How would you secure Terraform modules and reusable IaC components against insecure defaults and privilege escalation?
+* How would you detect configuration drift when infrastructure was modified outside the approved IaC pipeline?
+* How would you implement policy as code for cloud IAM, network exposure, encryption, and resource configuration?
+* How would you implement Zero Trust for CI/CD identities, workload identities, artifact repositories, and production deployments?
+* How would you design least-privilege deployment permissions for teams managing multiple applications and environments?
+* How would you prevent a compromised development environment from gaining access to production deployment credentials?
+* How would you enforce compliance requirements continuously without relying only on periodic manual audits?
+* How would you map automated security controls to a compliance framework while maintaining evidence of control execution?
+* How would you preserve auditable evidence of approvals, scans, signatures, exceptions, and deployment decisions?
+* How would you handle security-gate failures in legacy applications that cannot immediately remediate all existing vulnerabilities?
+* How would you distinguish inherited technical debt from vulnerabilities introduced by a new code change?
+* How would you design exception governance with risk ownership, compensating controls, expiry dates, and automatic enforcement?
+* How would you measure DevSecOps maturity using actionable metrics such as remediation time, exploitable vulnerability exposure, and control coverage?
+* How would you integrate runtime security findings into CI/CD decisions without making deployment gates unstable or overly restrictive?
+* How would you design a secure release process that supports reproducible builds, immutable artifacts, verified provenance, and controlled promotion across environments?

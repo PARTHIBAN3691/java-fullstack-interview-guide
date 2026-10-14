@@ -1,0 +1,94 @@
+# Core Java — Collections — Set
+## Level 0 — Easy
+
+### Set Fundamentals
+* What is a Set in Java?
+* What is the difference between Set and List?
+* Can a Set contain duplicate elements?
+* Does the Set interface guarantee insertion order?
+* Can a Set contain null elements?
+* What are the commonly used Set implementations in Java?
+* What is the difference between Set and Collection?
+* How does a Set determine whether an element is a duplicate?
+
+### HashSet
+* What is a HashSet in Java?
+* How do you create and initialize a HashSet?
+* How do you add, remove, and check elements in a HashSet?
+* Does HashSet maintain insertion order?
+* Can HashSet contain null?
+* What happens when you add the same element twice?
+* What is the difference between HashSet and ArrayList?
+* How do you iterate over a HashSet?
+
+### LinkedHashSet
+* What is a LinkedHashSet?
+* What is the difference between HashSet and LinkedHashSet?
+* Does LinkedHashSet maintain insertion order?
+* Can LinkedHashSet contain duplicate elements?
+* Can LinkedHashSet contain null?
+* When would you use LinkedHashSet instead of HashSet?
+
+### TreeSet
+* What is a TreeSet in Java?
+* How does TreeSet maintain its elements?
+* What is the difference between HashSet and TreeSet?
+* How does TreeSet determine the ordering of elements?
+* Can TreeSet contain null elements?
+* What happens when you add duplicate elements to a TreeSet?
+* How do you create a TreeSet with reverse ordering?
+* What is the difference between Comparable and Comparator?
+
+### SortedSet and NavigableSet
+* What is SortedSet?
+* What is NavigableSet?
+* What is the difference between Set and SortedSet?
+* What are `first()` and `last()` used for?
+* What do `lower()`, `floor()`, `ceiling()`, and `higher()` do?
+* What is the purpose of `headSet()`, `tailSet()`, and `subSet()`?
+
+### Set Operations and Utilities
+* How do you find the union of two Sets?
+* How do you find the intersection of two Sets?
+* How do you find the difference between two Sets?
+* How do you check whether one Set contains all elements of another Set?
+* How do you convert a List into a Set?
+* How do you convert a Set into a List?
+* What is the purpose of `addAll()`, `retainAll()`, and `removeAll()`?
+
+### Hashing and Equality
+* What are `equals()` and `hashCode()`?
+* Why are `equals()` and `hashCode()` important in HashSet?
+* Can two different objects have the same hash code?
+* What happens when two objects are equal according to `equals()`?
+* Why should immutable objects be preferred as Set elements?
+
+### Generics and Set
+* How do you declare a Set of Strings?
+* What is the purpose of generics in Set?
+* Can a Set hold custom Java objects?
+* What is the difference between `Set<Object>` and `Set<String>`?
+* What does `Set<?>` mean?
+
+### Concurrent and Synchronized Sets
+* Is HashSet thread-safe?
+* What is `Collections.synchronizedSet()`?
+* What is ConcurrentHashMap-backed key-set storage?
+* What is CopyOnWriteArraySet?
+* What is the difference between HashSet and a concurrent Set implementation?
+* Can multiple threads safely modify an ordinary HashSet?
+
+### Set and Streams
+* How do you create a Stream from a Set?
+* How do you filter elements in a Set using Streams?
+* How do you transform Set elements using `map()`?
+* How do you collect Stream results into a Set?
+* How do you sort Set elements using Streams?
+* How do you remove duplicates from a List using Streams?
+
+### Set Performance and Complexity
+* What is the average time complexity of adding and checking elements in HashSet?
+* Why are TreeSet operations generally slower than HashSet operations?
+* How does LinkedHashSet differ from HashSet in memory usage?
+* What factors affect Set performance?
+* When would you choose HashSet, LinkedHashSet, or TreeSet?

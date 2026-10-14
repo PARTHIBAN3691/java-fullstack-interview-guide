@@ -1,0 +1,30 @@
+* You have a Node.js application where several files need database connection functionality. How would you design a reusable database module?
+* A developer creates a database connection inside every request handler. How would you refactor it using modules?
+* Multiple modules modify the same exported object, causing unexpected behavior. How would you identify and fix the problem?
+* A module contains sensitive configuration values that should not be accessible directly by other modules. How would you design the module?
+* A Node.js application has hundreds of modules and startup time is increasing. How would you investigate module loading and initialization?
+* A production application shows stale configuration values after configuration files are changed. How could module caching be responsible?
+* Two modules depend on each other and one receives incomplete data during startup. How would you diagnose and resolve the circular dependency?
+* A team is migrating a CommonJS application to ES Modules. What migration issues would you expect?
+* A package works correctly with `require()` but fails when imported using `import`. How would you investigate the interoperability issue?
+* A Node.js project has both `.js` and `.mjs` files and developers are confused about how they are interpreted. How would you standardize the module strategy?
+* A project changes `"type": "commonjs"` to `"type": "module"` and many files start failing. What areas would you inspect?
+* A service needs to load different payment-provider implementations based on configuration. How would you design a dynamic module/plugin architecture?
+* An application supports multiple database implementations such as MySQL and PostgreSQL. How would you use modules to keep the business logic independent of the database?
+* A unit test is difficult to write because a service directly imports and creates its dependencies. How would you redesign the modules for better testability?
+* A shared utility module maintains mutable global state, and different requests affect each other. How would you redesign it?
+* A Node.js application has a large `utils.js` file containing hundreds of unrelated functions. How would you break it into maintainable modules?
+* A team wants different modules to expose only public APIs while hiding implementation details. How would you design the module boundaries?
+* A module performs expensive initialization when imported, but only a small percentage of requests use it. How could dynamic imports improve the application?
+* A server application loads an optional reporting library only when a reporting API is called. How would you implement this using Node.js modules?
+* A module is required by 50 different files. How does Node.js caching affect the number of times the module is executed?
+* A developer expects two calls to `require()` to create two independent instances of a module, but they receive the same state. How would you explain this behavior?
+* A module exports a class, but consumers accidentally receive `{}` instead of the class. How would you investigate `module.exports` and `exports` usage?
+* A team accidentally mixes `require`, `module.exports`, `import`, and `export` throughout the same project. What module strategy would you recommend?
+* A production service experiences errors only during startup because modules initialize in an unexpected order. How would you identify and fix the dependency problem?
+* A Node.js application needs different implementations of a service for development, testing, and production. How could modules and dependency injection solve this?
+* A package contains platform-specific implementations for Windows and Linux. How could a module-loading strategy select the appropriate implementation?
+* A large Node.js monorepo contains multiple internal packages. How would you structure modules and package boundaries to avoid tight coupling?
+* A module exposes internal database objects directly, allowing consumers to modify them. How would you redesign the module API to protect encapsulation?
+* A Node.js application has a memory leak caused by objects retained by a cached module. How would you investigate the module cache and retained state?
+* Design a module architecture for a production Node.js REST API containing controllers, services, repositories, configuration, middleware, and shared utilities.

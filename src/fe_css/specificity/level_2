@@ -1,0 +1,30 @@
+* Explain the complete CSS cascade algorithm and the role of specificity within it.
+* How do origin, importance, cascade layers, specificity, and source order interact?
+* Why can a declaration with higher specificity lose to a declaration with lower specificity?
+* How does specificity behave across normal and !important declarations?
+* How does specificity work when author styles conflict with user-agent styles?
+* What happens when important declarations appear in different cascade layers?
+* How does specificity behave between normal declarations in layered and unlayered CSS?
+* Why can unlayered normal styles override normal styles in named cascade layers?
+* How does the order of cascade layers affect important declarations?
+* How does specificity work with the :is() pseudo-class when its arguments have different specificity values?
+* Why can an unused ID inside :is() unexpectedly increase selector specificity?
+* How does :where() help design low-specificity component styles?
+* How is specificity calculated for nested CSS selectors involving multiple parent selectors?
+* What are the specificity implications of using Sass-generated nested selectors?
+* How does specificity behave in Shadow DOM styling?
+* How do ::slotted() and :host() affect specificity in web components?
+* How does specificity interact with CSS custom properties and the cascade?
+* Can a custom property defined on a parent override a value defined directly on a child?
+* How does specificity interact with the revert and revert-layer keywords?
+* What is the difference between revert, revert-layer, and unset?
+* How does specificity work with CSS modules and locally scoped class names?
+* How can global styles unexpectedly override component-specific styles?
+* How would you debug a CSS conflict involving multiple stylesheets and cascade layers?
+* How can you design a scalable CSS architecture with minimal specificity conflicts?
+* What are the trade-offs between BEM, utility-first CSS, and component-scoped styling?
+* How would you identify and eliminate excessive !important declarations in a large application?
+* How does specificity affect the maintainability of design systems?
+* How can CSS specificity conflicts occur when integrating third-party UI libraries?
+* How would you migrate a legacy stylesheet with deeply nested selectors to a low-specificity architecture?
+* How would you build a systematic strategy for debugging complex cascade conflicts?

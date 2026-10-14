@@ -1,0 +1,30 @@
+* How would you design an integration testing strategy for a large enterprise Java application?
+* How do you determine the right balance between unit, integration, and end-to-end tests?
+* How do you test a Spring Boot application that integrates with multiple databases?
+* How do you validate distributed transactions involving multiple services?
+* How do you test transaction consistency when one database operation succeeds and another fails?
+* How do you test applications that use multiple data sources and transaction managers?
+* How do you validate database isolation levels and concurrent transaction behavior?
+* How do you test optimistic locking and pessimistic locking in integration tests?
+* How do you design integration tests for microservices that communicate through REST APIs?
+* How do you test service-to-service authentication and authorization?
+* How do you validate eventual consistency across distributed services?
+* How do you test Kafka-based workflows involving retries and duplicate message delivery?
+* How do you verify idempotency when a message is processed more than once?
+* How do you test dead-letter queue handling and failed-message recovery?
+* How do you test applications that depend on unavailable or unreliable third-party services?
+* How do you decide between real dependencies, mocks, stubs, and containers in integration tests?
+* How do you build reproducible integration test environments using Docker and Testcontainers?
+* How do you test schema migrations and database compatibility across application versions?
+* How do you validate backward compatibility between independently deployed services?
+* How do you design integration tests for OAuth 2.0 and JWT-protected APIs?
+* How do you test connection pool exhaustion and database connection failures?
+* How do you test retry policies, timeouts, and circuit breakers across service boundaries?
+* How do you test race conditions and data consistency under concurrent requests?
+* How do you test an event-driven application where processing order is not guaranteed?
+* How do you isolate test data when integration tests execute in parallel?
+* How do you reduce integration test execution time without reducing confidence?
+* How do you prevent integration tests from depending on execution order?
+* How do you diagnose integration test failures that occur only in CI/CD environments?
+* How do you integrate contract testing with integration testing in a microservices architecture?
+* How would you establish an integration testing framework and quality gates across multiple Java teams?

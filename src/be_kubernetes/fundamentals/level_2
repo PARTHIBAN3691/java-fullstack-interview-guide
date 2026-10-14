@@ -1,0 +1,30 @@
+* Explain the Kubernetes control plane architecture and how its components interact during workload deployment.
+* What happens internally from the moment kubectl submits a Deployment until the application starts receiving traffic?
+* How does the Kubernetes reconciliation loop maintain the desired state of resources?
+* How does Kubernetes scheduling work, and which factors influence Pod placement?
+* How do resource requests, limits, QoS classes, and node pressure affect application reliability?
+* What happens when the Kubernetes API server becomes unavailable?
+* How does etcd maintain cluster state, and why are backups important?
+* How does Kubernetes provide high availability for control-plane components?
+* How do readiness probes, Services, and endpoint updates work together during a rolling deployment?
+* How would you design a Kubernetes platform for multiple Spring Boot microservices across availability zones?
+* How do Horizontal Pod Autoscaler, Cluster Autoscaler, and resource requests interact?
+* How would you diagnose a cluster where Pods remain Pending despite apparently available CPU capacity?
+* How do Kubernetes NetworkPolicies interact with CNI implementations?
+* How would you implement secure service-to-service communication in a Kubernetes microservices architecture?
+* How do RBAC, ServiceAccounts, and least-privilege access work together?
+* What are the security implications of mounting Secrets as volumes versus injecting them as environment variables?
+* How would you manage secrets rotation without causing application downtime?
+* How do StatefulSets and PersistentVolumeClaims behave when a Pod is rescheduled to another node?
+* What are the trade-offs between Ingress, Gateway API, and external LoadBalancer Services?
+* How would you design zero-downtime deployments for a stateful Java application?
+* How do PodDisruptionBudgets help during voluntary disruptions, and what are their limitations?
+* How would you design graceful shutdown for Spring Boot applications during Pod termination?
+* How do requests, limits, JVM heap sizing, and container memory constraints interact?
+* How would you investigate latency caused by CPU throttling in a Java application running in Kubernetes?
+* What are the risks of running too many small Pods versus fewer large Pods?
+* How would you plan Kubernetes upgrades while minimizing service disruption?
+* How do admission controllers and policy engines enforce security and compliance requirements?
+* How would you design multi-tenant isolation for applications sharing the same Kubernetes cluster?
+* How would you diagnose intermittent DNS failures between microservices in a Kubernetes cluster?
+* How would you build disaster recovery for a production Kubernetes platform, including workloads, configuration, and persistent data?

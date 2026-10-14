@@ -1,0 +1,30 @@
+* How would you design a scalable distributed system supporting tens of millions of users?
+* How do you calculate the required application instances, database capacity, and network bandwidth for a target workload?
+* How do you design a system that can scale from thousands to millions of requests per second?
+* How do you prevent cascading bottlenecks when scaling multiple dependent services?
+* How do you balance horizontal scaling with the operational complexity of distributed systems?
+* How do you design auto-scaling policies that respond to traffic changes without causing instability?
+* How do you scale a stateful service without introducing session consistency problems?
+* How do you design distributed caching for a system with high read throughput and frequent updates?
+* How do you handle cache invalidation across multiple application instances and regions?
+* How do you scale a database when both reads and writes increase rapidly?
+* How do you perform online database sharding while maintaining availability?
+* How do you rebalance data when a shard becomes overloaded?
+* How do you design a partitioning strategy that supports high throughput and predictable query latency?
+* How do you scale a distributed transaction workflow across multiple microservices?
+* How do you prevent retry amplification and overload during traffic spikes?
+* How do you design adaptive load shedding and backpressure for an overloaded system?
+* How do you choose between synchronous and asynchronous communication for high-scale workloads?
+* How do you design an event-driven architecture that processes millions of events per second?
+* How do you scale Kafka consumers while preserving ordering for each business entity?
+* How do you manage consumer lag when incoming traffic exceeds processing capacity for an extended period?
+* How do you design multi-region scalability while minimizing cross-region communication?
+* How do you balance data locality, consistency, and scalability in a globally distributed application?
+* How do you scale a Java application while avoiding thread exhaustion and excessive context switching?
+* How do you determine optimal thread-pool sizes for CPU-bound and I/O-bound workloads?
+* How do you identify and resolve JVM memory pressure in a horizontally scaled application?
+* How do you design a multi-tenant architecture that prevents noisy neighbors from consuming all resources?
+* How do you implement fair resource allocation across tenants with different traffic patterns?
+* How do you scale search and analytical workloads without affecting transactional traffic?
+* How do you use workload isolation to improve scalability and predictability?
+* How do you evaluate scalability trade-offs involving cost, throughput, latency, consistency, and reliability?

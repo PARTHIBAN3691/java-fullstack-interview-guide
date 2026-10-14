@@ -1,0 +1,30 @@
+* Create a Spring Cloud Gateway application using Spring Boot and configure a basic route to a downstream service.
+* Configure multiple routes in Spring Cloud Gateway using application.yml.
+* Implement path-based routing for different microservices.
+* Write a custom GatewayFilterFactory to add a request header.
+* Implement a filter that removes sensitive headers before forwarding requests.
+* Create a GlobalFilter that assigns a correlation ID to every incoming request.
+* Implement a filter that measures gateway request processing time.
+* Configure path rewriting to route /api/users/** to a user service endpoint.
+* Implement JWT validation for gateway requests using Spring Security.
+* Configure OAuth 2.0 resource-server security for a Spring Cloud Gateway application.
+* Implement route-level authorization so only users with an ADMIN role can access selected endpoints.
+* Write unit tests for a custom GatewayFilterFactory using JUnit and Mockito.
+* Write integration tests for gateway routing using WebTestClient.
+* Implement Redis-based rate limiting for an API route.
+* Configure different rate limits for different customer tiers.
+* Implement a gateway fallback route using Spring Cloud Circuit Breaker.
+* Configure request timeouts and retries for a downstream service.
+* Implement a retry policy that avoids retrying non-idempotent HTTP requests by default.
+* Configure load-balanced routing using Spring Cloud LoadBalancer and service discovery.
+* Implement a custom route predicate based on a request header.
+* Write a filter that validates required headers and returns HTTP 400 for invalid requests.
+* Implement centralized error handling for gateway routing failures.
+* Configure CORS policies for selected routes in Spring Cloud Gateway.
+* Implement API version routing based on a path prefix or request header.
+* Write a gateway filter that propagates trace and correlation headers to downstream services.
+* Configure structured request logging while masking authorization headers and sensitive query parameters.
+* Implement a tenant-aware routing strategy based on a validated tenant identifier.
+* Write tests that verify rate limiting, authentication failures, timeouts, and fallback responses.
+* Implement graceful shutdown and connection-draining considerations for a Spring Cloud Gateway deployment.
+* Design a production-ready API Gateway using Java, Spring Boot, Spring Cloud Gateway, Redis, OAuth 2.0, service discovery, distributed tracing, rate limiting, resilience patterns, and Kubernetes.

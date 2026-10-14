@@ -1,0 +1,30 @@
+* A Spring Boot application cannot connect to another application using its Kubernetes Service name. How would you troubleshoot the issue?
+* A Service exists, but requests fail because it has no endpoints. What would you inspect?
+* A Pod can communicate with another Pod on the same node but not with Pods on different nodes. How would you investigate?
+* An application works when accessed through port-forwarding but fails through its ClusterIP Service. What could be wrong?
+* A NodePort Service works from inside the cluster but is inaccessible externally. How would you troubleshoot it?
+* A LoadBalancer Service remains in a pending state. What would you check?
+* An Ingress resource exists, but external requests return HTTP 404. How would you identify the cause?
+* An Ingress endpoint returns HTTP 502 or 503 even though the application Pods are running. How would you debug it?
+* A Spring Boot application intermittently fails to resolve another Service's DNS name. What would you investigate?
+* DNS queries become slow during peak traffic. How would you diagnose and improve DNS performance?
+* After a deployment, requests are still reaching old or unready Pods. How would you investigate the traffic-routing behavior?
+* A NetworkPolicy was introduced, and the application can no longer connect to its database. How would you identify the blocked traffic?
+* A default-deny egress policy breaks Service discovery. How would you fix it securely?
+* Two teams share a cluster, and one team's Pods must not communicate with the other team's Pods. How would you enforce isolation?
+* A service works from one namespace but fails from another namespace. What would you check?
+* Users report that their original client IP addresses are missing in application logs. How would you investigate the Service and Ingress configuration?
+* An application experiences intermittent timeouts only when communicating across availability zones. How would you troubleshoot the issue?
+* Network latency increases after enabling a service mesh. How would you isolate the source of latency?
+* A cluster experiences intermittent connection resets during high traffic. Which network metrics and operating-system limits would you inspect?
+* A Kubernetes node shows high packet drops while CPU utilization is normal. How would you investigate?
+* A CNI upgrade causes Pods on newly created nodes to lose network connectivity. How would you troubleshoot the rollout?
+* A network policy works for ingress traffic but unexpectedly blocks outbound API calls. How would you debug the policy rules?
+* A microservice can reach an external API from a node but not from a Pod. What networking components would you inspect?
+* An external database is reachable from some Pods but not others. How would you compare their network paths and policies?
+* A Service becomes intermittently unavailable during rapid Pod scaling. What could be happening with endpoints, readiness, or connection tracking?
+* A Java application maintains long-lived HTTP connections, but requests fail after backend Pods are replaced. How would you investigate connection reuse and endpoint changes?
+* An application experiences large-response failures after moving to an overlay CNI. How would you investigate MTU and fragmentation?
+* A cluster's Service traffic becomes unstable after a firewall change. How would you trace the affected network path?
+* You need to migrate a production application from NodePort exposure to Ingress with TLS and minimal downtime. How would you plan the migration?
+* You need to design secure networking for hundreds of Spring Boot microservices across multiple namespaces. What architecture and controls would you choose?

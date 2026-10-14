@@ -1,0 +1,30 @@
+* How would you design a production-grade logging architecture for a distributed Node.js application?
+* How would you implement structured logging consistently across multiple Node.js services?
+* How would you design a standard log schema for all services in an enterprise application?
+* How would you propagate correlation IDs across asynchronous operations and service boundaries?
+* How would you use AsyncLocalStorage to maintain request context without passing it through every function?
+* What are the limitations of AsyncLocalStorage for contextual logging?
+* How would you correlate logs with distributed traces and metrics?
+* How would you implement trace context propagation using OpenTelemetry?
+* How would you prevent logging from blocking the Node.js event loop?
+* How would you implement asynchronous logging while preserving reliability?
+* What are the trade-offs between synchronous and asynchronous log delivery?
+* How would you handle log loss when an application crashes or terminates unexpectedly?
+* How would you design a buffered logging system with backpressure handling?
+* How would you prevent a logging pipeline from consuming excessive memory?
+* How would you implement log sampling for high-volume applications?
+* How would you design log rotation and retention policies for large production systems?
+* How would you securely transmit logs to a centralized logging platform?
+* How would you protect logs against tampering and unauthorized access?
+* How would you implement data masking and redaction before logging sensitive fields?
+* How would you design separate application, security, and audit logging pipelines?
+* How would you ensure audit logs are durable and suitable for compliance requirements?
+* How would you handle multiline exceptions and stack traces in centralized log systems?
+* How would you optimize Pino or Winston for high-throughput Node.js applications?
+* How would you handle logging failures without hiding the original application error?
+* How would you design logging across services running in containers and Kubernetes?
+* How would you correlate logs from multiple replicas of the same Node.js service?
+* How would you implement dynamic log-level changes without restarting the application?
+* How would you prevent log injection and forged log entries?
+* How would you define log retention, access control, and deletion policies for sensitive data?
+* How would you troubleshoot production incidents using logs, metrics, and distributed traces together?

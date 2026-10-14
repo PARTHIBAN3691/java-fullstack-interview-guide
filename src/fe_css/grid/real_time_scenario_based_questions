@@ -1,0 +1,30 @@
+* You need to display six dashboard cards in three columns on desktop and one column on mobile. How would you implement this using CSS Grid?
+* A product listing page must automatically adjust the number of columns based on available width. Which Grid properties would you use?
+* A dashboard contains a sidebar, header, main content area, and footer. How would you define the grid layout?
+* A grid item is wider than its assigned column and causes horizontal scrolling. How would you troubleshoot it?
+* A product card layout has inconsistent column widths. How would you make the columns consistent?
+* A page requires the first card to span two columns while the remaining cards occupy one column each. How would you configure the grid?
+* A photo gallery must automatically fit as many images as possible into each row. How would you use auto-fit and minmax()?
+* A grid layout has empty spaces after some items are positioned explicitly. How would you investigate the placement behavior?
+* A dashboard widget must span two rows and three columns. How would you implement it?
+* A website needs a responsive layout without defining separate breakpoints for every screen size. How could CSS Grid help?
+* A content area must remain centered with a maximum width while its columns adapt to the viewport. How would you design it?
+* A sidebar should remain fixed in width while the main content takes the remaining space. How would you define the columns?
+* A page layout changes from a two-column design to a single-column design on mobile. How would you implement this?
+* A grid item does not align correctly within its cell. Which alignment properties would you inspect?
+* A team needs consistent column and row spacing across multiple pages. How would you configure the grid?
+* A form requires labels and input fields to align across multiple rows. How would you use CSS Grid?
+* A magazine-style layout contains cards of different sizes. How would you arrange the items using grid placement?
+* A grid has too many narrow columns on large screens. How would you control the minimum and maximum column sizes?
+* A grid item overlaps another item after a responsive breakpoint. How would you debug the issue?
+* A dashboard needs named areas for its header, sidebar, main section, and footer. How would you define grid-template-areas?
+* A card layout must maintain equal column widths even when one card contains long text. What CSS properties would you consider?
+* A reusable component must align its internal columns with the parent layout. When would you consider using subgrid?
+* A product gallery must preserve image proportions while adapting to different screen sizes. How would you combine Grid and aspect-ratio?
+* A data-heavy dashboard contains hundreds of grid items. What layout and rendering concerns would you investigate?
+* A navigation layout must support both left-to-right and right-to-left languages. What Grid behavior should you verify?
+* A team wants to reorder cards visually without changing their DOM order. How would you implement it, and what accessibility concerns arise?
+* A grid layout looks different across browsers. How would you investigate the source of the discrepancy?
+* A page must display a full-width banner above a two-column content area. How would you structure the grid?
+* A design requires the first and last columns to have different widths from the middle columns. How would you configure grid-template-columns?
+* A reusable dashboard layout must support optional widgets and changing screen sizes. How would you design a flexible grid structure?

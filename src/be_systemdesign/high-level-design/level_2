@@ -1,0 +1,30 @@
+* How would you design a globally distributed system with low latency and high availability?
+* How would you design an HLD for a system handling millions of requests per second?
+* How would you estimate infrastructure capacity before implementation?
+* How would you design an active-active architecture across multiple regions?
+* How would you decide between synchronous replication and asynchronous replication?
+* How would you design a system that balances strong consistency and high availability?
+* How would you design a distributed caching layer with reliable invalidation?
+* How would you design a database architecture supporting high read and write throughput?
+* How would you decide when to introduce sharding and how to choose shard keys?
+* How would you design a multi-tenant architecture with strict data isolation?
+* How would you design communication between microservices to minimize coupling?
+* How would you handle distributed transactions in an architecture spanning multiple services?
+* How would you incorporate the saga and transactional outbox patterns into an HLD?
+* How would you design an event-driven architecture with reliable delivery and replay?
+* How would you design resilience against cascading failures and dependency outages?
+* How would you incorporate timeouts, retries, circuit breakers, and bulkheads into the architecture?
+* How would you design an API gateway and service mesh, and when would you need each?
+* How would you design service discovery and configuration management for a large platform?
+* How would you design disaster recovery with defined Recovery Point Objective (RPO) and Recovery Time Objective (RTO)?
+* How would you plan zero-downtime deployments and backward-compatible schema migrations?
+* How would you design observability across hundreds of distributed services?
+* How would you address security threats across API gateways, internal services, and data stores?
+* How would you design a system that supports real-time processing and analytical workloads?
+* How would you design a hybrid architecture combining synchronous APIs and asynchronous events?
+* How would you evaluate the cost implications of different architectural alternatives?
+* How would you migrate a legacy monolith to microservices incrementally?
+* How would you avoid overengineering while designing for future scale?
+* How would you document architecture decisions, assumptions, constraints, and alternatives?
+* How would you evaluate and resolve conflicting non-functional requirements?
+* How would you conduct an architecture review before approving an HLD for implementation?

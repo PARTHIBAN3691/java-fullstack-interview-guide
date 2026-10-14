@@ -1,0 +1,30 @@
+* How do you configure a Eureka Server in a Spring Boot application?
+* How does a microservice register itself with Eureka?
+* How does a service discover another service using Eureka?
+* How do you configure a Spring Cloud Config Server?
+* How does a Spring Cloud Config Client retrieve configuration from the Config Server?
+* How do you manage environment-specific configurations using Spring Cloud Config?
+* How do you refresh configuration properties without restarting a microservice?
+* What is the difference between @RefreshScope and @ConfigurationProperties?
+* How do you configure Spring Cloud Gateway routes?
+* What is the difference between route predicates and gateway filters?
+* How do you implement authentication and authorization at the API Gateway?
+* How does Spring Cloud LoadBalancer distribute requests across service instances?
+* How do you configure OpenFeign to call another microservice?
+* How do you handle exceptions and timeouts in OpenFeign clients?
+* How do you implement a circuit breaker using Resilience4j?
+* What is the difference between a circuit breaker, retry, and rate limiter?
+* What are the CLOSED, OPEN, and HALF_OPEN states of a circuit breaker?
+* How do you configure fallback methods for failed service calls?
+* What is the bulkhead pattern, and how does it improve fault isolation?
+* How do you implement centralized logging across microservices?
+* How do you propagate correlation IDs across service-to-service calls?
+* How do you configure distributed tracing in Spring Boot and Spring Cloud?
+* What is the difference between Micrometer metrics and distributed tracing?
+* How do you publish and consume messages using Spring Cloud Stream?
+* What is the difference between Spring Cloud Stream and Spring Cloud OpenFeign?
+* How do you secure communication between microservices using OAuth 2.0?
+* How do you configure service-to-service authentication using JWT?
+* How do you test Spring Cloud applications using WireMock or Testcontainers?
+* How do you manage version compatibility between Spring Boot and Spring Cloud?
+* How do you troubleshoot service discovery and inter-service communication failures?

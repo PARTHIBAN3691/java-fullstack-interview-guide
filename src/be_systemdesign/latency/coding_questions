@@ -1,0 +1,30 @@
+* Write a Java program to measure the execution latency of a method using System.nanoTime().
+* Write a Java program to calculate average latency for a series of operations.
+* Write a Java program to calculate p50, p95, p99, and p99.9 latency from recorded request timings.
+* Write a Java program that measures latency for database operations and reports percentile statistics.
+* Write a Java program that compares sequential and parallel execution of independent tasks and measures latency.
+* Write a Java program using CompletableFuture to execute multiple independent operations concurrently and reduce response latency.
+* Write a Java program demonstrating how connection pooling can reduce the overhead of repeatedly creating database connections.
+* Write a Java program that implements a simple in-memory cache and compares cached and uncached request latency.
+* Write a Java program that implements a cache with expiration and measures its impact on response latency.
+* Write a Java program that demonstrates the effect of a cache miss on end-to-end latency.
+* Write a Java program that implements a timeout for a slow external service call.
+* Write a Java program using CompletableFuture to cancel or time out a slow downstream operation.
+* Write a Java program implementing a retry mechanism with exponential backoff and a maximum retry limit.
+* Write a Java program demonstrating how aggressive retries can increase overall request latency.
+* Write a Java program implementing a simple circuit breaker to prevent calls to a slow downstream service.
+* Write a Java program that uses a bounded thread pool and measures latency under increasing workloads.
+* Write a Java program demonstrating how an unbounded queue can cause increasing request latency under load.
+* Write a Java program that compares synchronous logging with asynchronous logging from a latency perspective.
+* Write a Java program that measures the performance difference between JSON serialization and a binary serialization approach.
+* Write a Java program that measures latency for different payload sizes and analyzes the effect of response size.
+* Write a Java program that demonstrates batching of multiple requests and compares latency with individual processing.
+* Write a Java program that implements request deadlines and propagates the remaining timeout to downstream operations.
+* Write a Java program that records request latency and periodically calculates p95 and p99 metrics.
+* Write a Java program that simulates a microservice calling multiple downstream services and calculates end-to-end latency.
+* Write a Java program that executes independent downstream calls in parallel and compares the result with sequential execution.
+* Write a Java program that simulates tail latency and demonstrates how a slow dependency affects overall request latency.
+* Write a Java program that implements a bulkhead pattern using separate thread pools for different downstream services.
+* Write a Java program that simulates a cache stampede and implements request coalescing to reduce backend latency.
+* Write a Java program that uses a producer-consumer queue and measures queueing latency separately from processing latency.
+* Design and implement a Java low-latency REST service with caching, connection pooling, timeouts, retries, asynchronous processing, and percentile-based latency monitoring.

@@ -1,0 +1,99 @@
+
+**Database CI/CD**
+* Design a database delivery platform supporting multiple teams, database engines, schema validation, policy enforcement, and auditable production releases.
+* How would you enforce migration immutability, artifact provenance, and promotion of the exact tested migration set?
+* How would you detect conflicting schema changes across parallel feature branches before they reach integration?
+* How would you implement risk-based approvals for additive changes, data backfills, index creation, and destructive migrations?
+* How would you prevent application and database release pipelines from entering inconsistent states during partial failures?
+
+**Database Migrations**
+* Design a migration strategy for a multi-terabyte database that requires schema changes and data transformation with minimal write interruption.
+* How would you execute a long-running backfill using keyset pagination, bounded transactions, checkpoints, and resumable progress?
+* How would you handle migrations that must preserve referential integrity while writes continue?
+* How would you prevent lock amplification, transaction-log exhaustion, and replica lag during large migrations?
+* How would you coordinate cross-service schema changes when deployment order cannot be guaranteed?
+
+**Flyway**
+* How would you recover from a production Flyway failure when the migration history table and actual schema are inconsistent?
+* How would you design a controlled process for repairing migration metadata without concealing incomplete database changes?
+* How would you use Flyway validation and migration checks to prevent checksum drift across environments?
+* How would you manage migrations across hundreds of tenant databases while controlling deployment concurrency and failure isolation?
+* How would you design a Flyway execution model that separates migration privileges from application runtime privileges?
+
+**Liquibase**
+* How would you handle Liquibase changeset checksum mismatches when a historical changeset was edited after deployment?
+* How would you design changelog dependencies and execution ordering for several teams modifying shared database objects?
+* How would you prevent unsafe Liquibase changesets from running against production using preconditions and policy validation?
+* How would you handle partially applied changesets when the database engine does not support transactional DDL for the relevant operation?
+* How would you execute and review generated SQL for multiple database engines while accounting for dialect-specific behavior?
+
+**Schema Versioning**
+* Design a schema-compatibility model that supports several active application versions during rolling deployments.
+* How would you detect and prevent a service from starting when the database schema is outside its supported compatibility range?
+* How would you manage independent schema evolution across bounded contexts when some services still share physical database infrastructure?
+* How would you maintain an auditable mapping between schema revisions, application builds, deployment regions, and data transformations?
+* How would you recover from schema-version divergence across regions after a partial deployment?
+
+**Backward-Compatible Schema Changes**
+* Design an expand-and-contract rollout for renaming a frequently accessed column in a large table with strict availability requirements.
+* How would you maintain correctness when old and new application versions write to different representations of the same data?
+* How would you validate that all consumers have stopped using a deprecated column before removing it?
+* How would you handle a change in a unique constraint or foreign-key relationship while preserving compatibility during rollout?
+* How would you prevent dual-write inconsistencies and define a reliable reconciliation process during a multi-version deployment?
+
+**Zero-Downtime Migrations**
+* Design a zero-downtime migration for a multi-terabyte table that requires a new partition key or a substantial table redesign.
+* How would you create an index online while controlling CPU, I/O, lock duration, and replication impact?
+* How would you safely backfill data while writes continue, including records inserted or updated during the backfill?
+* How would you define objective abort criteria based on lock duration, p99 latency, replication lag, and error rates?
+* How would you coordinate database and application changes across regions with different traffic patterns and rollout speeds?
+
+**Database Rollback Strategies**
+* Design a recovery strategy for a migration that dropped or overwrote data and cannot be reversed by a simple down migration.
+* How would you combine point-in-time recovery, change-data capture, and selective data restoration to minimize data loss?
+* How would you handle a migration that committed successfully on the primary but has not fully propagated to replicas?
+* How would you design forward-fix and compensating-migration procedures for irreversible data transformations?
+* How would you establish recovery decision criteria that account for RPO, RTO, data correctness, and application compatibility?
+
+**Database Backup Automation**
+* Design a backup and recovery architecture for a multi-region production database with strict RPO and RTO requirements.
+* How would you combine full backups, incremental backups, transaction logs, and point-in-time recovery?
+* How would you prove recoverability through automated restore drills and data-integrity verification?
+* How would you protect backups against ransomware, compromised administrator credentials, accidental deletion, and regional outages?
+* How would you coordinate consistent backups across multiple databases participating in a business transaction workflow?
+
+**Database Replication**
+* Design a replication and failover strategy that minimizes data loss while maintaining acceptable write availability.
+* How would you detect and resolve replication divergence after a network partition or replica promotion?
+* How would you handle replication lag that increases continuously during a large data migration?
+* How would you design read routing that provides read-your-writes consistency for critical workflows while using replicas for scalable reads?
+* How would you prevent split-brain writes during failover and safely reintroduce a recovered former primary?
+
+**Database Deployment Pipelines**
+* Design a deployment pipeline that coordinates application releases, schema migrations, compatibility checks, approvals, and progressive rollout across regions.
+* How would you make pipeline execution recoverable after a runner crashes during a non-transactional migration?
+* How would you implement serialization, locking, and idempotency for concurrent migration attempts?
+* How would you prevent a pipeline retry from repeating a destructive data transformation?
+* How would you establish a release gate that combines migration risk, database health, replica health, and application error rates?
+
+**Database Observability**
+* Design an observability architecture that correlates query-level telemetry, application traces, database logs, and infrastructure metrics without excessive overhead.
+* How would you detect database saturation before it causes application-level failures?
+* How would you distinguish a query-plan regression from lock contention, connection queueing, storage latency, and replication pressure?
+* How would you design alerts and dashboards for multi-tenant databases with different traffic profiles and service-level objectives?
+* How would you monitor database changes and associate a performance regression with a specific migration or release?
+
+**Database Performance Monitoring**
+* How would you diagnose a p99 latency regression when average query latency remains stable?
+* How would you identify parameter-sensitive query plans, plan-cache problems, and regressions caused by changing data distributions?
+* How would you evaluate whether adding indexes improves query latency or instead harms write throughput and storage efficiency?
+* How would you investigate performance degradation caused by connection storms, lock escalation, and long-running transactions?
+* How would you design automated performance regression tests for critical queries and migration releases?
+
+**Connection Pool Management**
+* How would you calculate safe connection-pool limits across hundreds of service replicas while preserving capacity for administration and failover?
+* How would you diagnose a cascading failure where slow queries cause pool exhaustion, request queues grow, and retries increase database load?
+* How would you tune HikariCP in a Spring Boot application when database capacity, transaction duration, and traffic vary significantly?
+* How would you handle connection storms during autoscaling, rolling deployments, and regional failover?
+* How would you evaluate connection pooling at the application layer versus a database-aware proxy or managed pooling service?
+* How would you detect and prevent connection leaks caused by long-running transactions, unclosed resources, or asynchronous workflows?

@@ -1,0 +1,100 @@
+# Core Java — Collections — Map
+## Level 2 — Difficult
+
+### Map Fundamentals
+* How would you design a custom Map implementation that preserves the Map contract?
+* What consistency requirements must be maintained among `put()`, `get()`, `remove()`, and collection views?
+* How would you design a Map-based API that prevents callers from modifying internal state?
+* What are the trade-offs between immutable snapshots, unmodifiable views, and live views?
+* How would you choose an appropriate Map for a latency-sensitive, memory-constrained, high-concurrency service?
+
+### HashMap
+* Explain how HashMap resizing redistributes entries across buckets.
+* How does the hash-spreading function help distribute keys across buckets?
+* Under what conditions can a bucket become a tree bin in modern Java HashMap implementations?
+* How do tree bins improve collision handling, and what assumptions affect their performance?
+* Why is HashMap's expected constant-time lookup not an unconditional guarantee?
+* How can hash flooding or adversarial keys affect performance?
+* How would you investigate unexpectedly high CPU usage during HashMap operations?
+* How would you diagnose memory pressure caused by large HashMaps with excessive capacity?
+* What correctness and performance problems can arise from mutable keys?
+* How would you safely publish a prebuilt HashMap to multiple threads when it will never be modified afterward?
+
+### LinkedHashMap
+* How would you implement an LRU cache with LinkedHashMap while enforcing a maximum entry count?
+* What are the limitations of LinkedHashMap as a production cache?
+* How would you make an LRU cache thread-safe without serializing every read unnecessarily?
+* How would you account for cache eviction, stale values, and memory pressure in a Map-based cache?
+* How would you implement eviction based on weighted memory size rather than entry count?
+
+### TreeMap
+* How does a balanced search tree maintain its invariants during insertion and deletion?
+* How do red-black tree rotations affect TreeMap performance?
+* What are the consequences of a non-transitive Comparator in TreeMap?
+* How can comparator equality cause logically distinct keys to overwrite one another?
+* How would you implement efficient range queries using NavigableMap?
+* How would you choose between TreeMap and sorting a collection on demand for a range-query workload?
+
+### Hashtable
+* Why does synchronizing every Hashtable operation fail to guarantee atomicity for a sequence of operations?
+* How would lock contention develop in a heavily shared Hashtable?
+* What migration risks arise when replacing Hashtable with ConcurrentHashMap?
+* How would you preserve required legacy behavior while moving to a concurrent implementation?
+
+### Map Iteration and Views
+* Why does fail-fast behavior not guarantee detection of every concurrent modification?
+* How would you design a stable snapshot of a Map during concurrent updates?
+* What are the correctness implications of modifying a backed collection view?
+* How would you implement consistent iteration over a large Map without blocking writers for a long time?
+* How would you reason about visibility and safe publication when exposing Map views to other threads?
+
+### Map Methods and Utilities
+* How would you use `computeIfAbsent()` safely when the mapping function performs expensive work?
+* What risks arise when a Map remapping function modifies the same Map recursively?
+* How would you implement an atomic update that combines values for a key under concurrency?
+* How would you merge two large Maps efficiently while defining deterministic conflict resolution?
+* How would you preserve ordering and null-handling requirements when creating immutable Maps?
+* How would you design a Map update workflow that remains correct when exceptions occur during value computation?
+
+### Hashing and Key Equality
+* How can inconsistent `equals()` and `hashCode()` implementations lead to duplicate logical keys?
+* How would you diagnose a key that can be retrieved immediately after insertion but not later?
+* How would you design hash codes for composite keys with many fields?
+* What are the risks of including mutable fields in `equals()` and `hashCode()`?
+* How would you investigate poor hash distribution in a production Map?
+* How would you test custom key classes for equality-contract violations?
+
+### Generics and Map
+* How would you design a generic Map-copy utility using appropriate wildcard bounds?
+* How would you prevent heap pollution when legacy raw Maps interact with parameterized Maps?
+* Why can parameterized Map types not be checked fully at runtime?
+* How would you design a type-safe registry mapping class types to handler implementations?
+* How would you handle heterogeneous values in a Map without relying on unsafe casts?
+* What limitations arise when using generic arrays or reflective APIs with parameterized Maps?
+
+### Concurrent Maps
+* How does modern ConcurrentHashMap coordinate concurrent updates at a high level?
+* Why is ConcurrentHashMap's `size()` unsuitable as a reliable synchronization condition while updates continue?
+* How would you implement a per-key counter without lost updates?
+* What is the difference between atomicity of a single Map operation and atomicity of a multi-key transaction?
+* How would you prevent duplicate expensive initialization for the same key under concurrency?
+* What risks arise when a `computeIfAbsent()` mapping function is slow or blocks?
+* How would you design a concurrent cache when expiration, eviction, and refresh must all be supported?
+* How would you reason about memory visibility when one thread publishes a value through ConcurrentHashMap?
+* How would you handle a requirement that several related Map entries must change atomically?
+
+### Map and Streams
+* How would you process a very large Map with Streams while minimizing intermediate allocations?
+* What problems can arise when a parallel Stream collects into a shared mutable Map?
+* How would you choose a concurrent collector for a high-throughput aggregation pipeline?
+* How would you group records by multiple attributes without creating unnecessary nested collections?
+* How would you preserve deterministic results when parallel processing encounters duplicate keys?
+* How would you profile a Map-based Stream pipeline that performs worse than a loop?
+
+### Map Performance and Complexity
+* How would you benchmark HashMap, LinkedHashMap, TreeMap, and ConcurrentHashMap using JMH?
+* How can key distribution, hit ratio, map size, and concurrency affect benchmark results?
+* How would you distinguish CPU overhead from allocation and garbage-collection costs in Map-heavy code?
+* How would you estimate the memory footprint of millions of Map entries?
+* How would you investigate a production latency increase caused by Map resizing?
+* How would you select a Map implementation based on throughput, tail latency, memory usage, and ordering guarantees?

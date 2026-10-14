@@ -1,0 +1,30 @@
+* Explain Angular's hierarchical dependency injection resolution algorithm.
+* How does dependency resolution differ between EnvironmentInjector and ElementInjector hierarchies?
+* How does Angular resolve dependencies across component, route, and application injector boundaries?
+* What happens when a dependency is registered at multiple levels of the injector hierarchy?
+* How do lazy-loaded routes and route-level providers affect service instances?
+* How do route-level providers differ from application-level providers?
+* How does the lifetime of a service instance relate to the injector that creates it?
+* How do you design services with different scopes for different feature areas?
+* How does tree-shakable dependency injection work with providedIn metadata?
+* How can incorrect provider registration cause duplicate service instances?
+* How do useFactory providers support runtime configuration and environment-dependent dependencies?
+* How do you inject dependencies using InjectionToken when the dependency type is generic?
+* How do you implement a multi-provider architecture for extensible application features?
+* How do multi-providers behave across different injector hierarchies?
+* How would you design a plugin system using InjectionToken and multi-providers?
+* How do circular dependencies occur in Angular services, and how can you eliminate them?
+* What causes NG0200 circular dependency errors, and how would you debug them?
+* How does the inject() function determine the active injection context?
+* Why does calling inject() outside an injection context produce an error?
+* How do you use runInInjectionContext() when a dependency must be resolved inside an injection context?
+* How does dependency injection behave in functional route guards and interceptors?
+* How do environment providers work in modern standalone Angular applications?
+* What is the difference between EnvironmentProviders and ordinary providers?
+* How do you use provideAppInitializer() when initialization requires injected dependencies?
+* How do you design testable services that depend on HTTP clients, configuration tokens, and other services?
+* How do you override nested dependencies when testing a component with a complex provider hierarchy?
+* How can dependency injection scope affect state sharing between dynamically created components?
+* How do you prevent accidental service duplication when combining standalone components and legacy NgModules?
+* How does dependency injection interact with server-side rendering and request-specific state?
+* What dependency injection design practices improve maintainability, testability, and performance in large Angular applications?

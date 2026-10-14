@@ -1,0 +1,30 @@
+* Your application crashes with an out-of-memory error while reading a large file. How would you redesign the implementation using streams?
+* A writable stream becomes slower than the readable stream producing data. How would you handle backpressure?
+* Your stream pipeline stops processing after a few chunks without emitting an error. How would you investigate the issue?
+* A file-copy operation occasionally produces incomplete output. How would you identify and fix the problem?
+* Your application receives a very large CSV file and must validate each row without loading the entire file into memory. How would you implement it?
+* A Transform stream performs asynchronous database operations and produces records out of order. How would you preserve ordering?
+* Your custom Writable stream loses data when write() returns false. What is wrong with the implementation?
+* A stream pipeline fails, but other streams remain open and consume resources. How would you fix the cleanup logic?
+* A client disconnects halfway through a large file download. How would you stop unnecessary processing and release resources?
+* Your Express application must stream a large video file to clients. How would you implement it efficiently?
+* A slow HTTP client causes memory usage to increase during a file download. How would you investigate and control buffering?
+* A UTF-8 text file contains corrupted characters after chunk-by-chunk processing. What could cause this, and how would you fix it?
+* Your application must compress and encrypt a large file while copying it to another location. How would you build the pipeline?
+* A file upload must be scanned and validated while the data is arriving. How would you design the streaming workflow?
+* Your stream processor receives malformed records in the middle of a file. How would you handle errors without losing valid records unnecessarily?
+* A database export contains millions of rows and must be streamed to a CSV response. How would you avoid exhausting memory?
+* A Transform stream performs expensive CPU calculations and slows down unrelated HTTP requests. How would you redesign the processing?
+* Your pipeline writes to two destinations, but one destination is significantly slower. How would you manage the different write speeds?
+* A stream-processing service needs to support cancellation when a user cancels a report-generation request. How would you implement it?
+* Your application reads compressed files and transforms their contents before writing the output. How would you structure the pipeline and propagate errors?
+* A stream emits an error after some output has already been written. How would you handle partial output and prevent consumers from treating it as complete?
+* Your custom stream implementation causes high memory usage even though it uses chunks. What would you inspect?
+* Your pipeline must retry a failed remote upload without corrupting or duplicating the output. How would you design the retry strategy?
+* Your service processes incoming network data where individual messages may be split across arbitrary chunks. How would you reconstruct complete messages?
+* A production stream pipeline has high CPU usage and low throughput. How would you identify the bottleneck?
+* Your application processes multiple files concurrently, causing memory usage to spike. How would you limit concurrency?
+* A stream works with small files but fails with large files because of buffering or size assumptions. How would you troubleshoot it?
+* Your team needs to process millions of log records and aggregate statistics in real time. How would you design the stream pipeline?
+* Your application must upload files to cloud storage without creating temporary copies on disk. How would you implement it?
+* How would you design a reliable Node.js streaming service that supports backpressure, cancellation, error handling, monitoring, and graceful shutdown?

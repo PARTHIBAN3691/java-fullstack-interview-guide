@@ -1,0 +1,30 @@
+* Write a Java Spring Boot REST controller that returns a simple health response for deployment to Cloud Run.
+* Create a Dockerfile for a Spring Boot application that listens on the port configured by the Cloud Run PORT environment variable.
+* Write a Spring Boot configuration class that reads database connection details from environment variables.
+* Implement a REST endpoint that validates incoming JSON requests and returns appropriate HTTP status codes.
+* Write a Java service that retrieves a secret from Google Cloud Secret Manager using Application Default Credentials.
+* Implement a Spring Boot REST client that calls another Cloud Run service using an authenticated identity token.
+* Write Java code to publish an event to Google Cloud Pub/Sub after processing an HTTP request.
+* Implement a Pub/Sub push endpoint that validates and processes incoming messages idempotently.
+* Write a Java utility that generates an idempotency key for a payment request and prevents duplicate processing.
+* Implement a Spring Boot endpoint that uses a database transaction to update an account balance safely.
+* Write Java code to configure a connection pool with limits suitable for a Cloud Run deployment.
+* Implement a retry mechanism with exponential backoff and jitter for transient downstream API failures.
+* Write a Java circuit breaker around a remote service call using Resilience4j.
+* Implement request timeouts and bulkhead isolation for a Spring Boot service deployed to Cloud Run.
+* Write Java code that propagates a correlation ID across incoming and outgoing HTTP requests.
+* Implement structured JSON logging in a Spring Boot application with request and correlation identifiers.
+* Write a Spring Boot exception handler that maps validation, timeout, and unexpected errors to suitable HTTP responses.
+* Implement a paginated batch-processing endpoint that avoids loading an entire dataset into memory.
+* Write a Java Cloud Run job that processes records in batches and safely resumes after partial failure.
+* Implement a scheduled batch-processing workflow using Cloud Scheduler to trigger a Cloud Run job.
+* Write Java code to gracefully shut down an executor service and wait for in-flight tasks to complete.
+* Implement a bounded thread pool for concurrent API calls and explain how you would configure it for Cloud Run.
+* Write a load-test client in Java that measures throughput, error rate, and response-time percentiles for a REST endpoint.
+* Implement a simple rate limiter in Java to protect a downstream API from excessive requests.
+* Write Java code that distinguishes retryable from non-retryable HTTP responses when calling a remote service.
+* Implement a Spring Boot endpoint that generates a report asynchronously and returns a job identifier.
+* Write Java code to store job status and results in a database so clients can poll for completion.
+* Implement a health endpoint that checks application readiness without unnecessarily querying every downstream dependency.
+* Write a Java integration test for a Spring Boot service that publishes events to Pub/Sub, using a suitable test double or emulator.
+* Create a CI/CD deployment script that builds a Java container image, pushes it to Artifact Registry, and deploys it to Cloud Run.

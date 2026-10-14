@@ -1,0 +1,30 @@
+* How do you configure Cloud Build to compile a Java application using Maven?
+* How do you configure Cloud Build to build a Spring Boot application using Gradle?
+* How do you define multiple build steps in cloudbuild.yaml?
+* How do you pass environment-specific values using substitutions?
+* How do you configure a build trigger for a GitHub repository?
+* How do you trigger a build only when a specific branch changes?
+* How do you configure a trigger for pull requests?
+* How do you run unit tests as part of a Cloud Build pipeline?
+* How do you make a build fail when unit tests fail?
+* How do you build a Docker image from a Java application?
+* How do you push a Docker image to Artifact Registry from Cloud Build?
+* How do you tag container images with a Git commit SHA?
+* How do you publish Java JAR files to Artifact Registry?
+* How do you configure Maven to download dependencies from a private repository?
+* How do you pass secrets to build steps using Secret Manager?
+* How do you configure IAM permissions for a Cloud Build service account?
+* What is the difference between the build service account and the service account used by a deployed application?
+* How do you configure build logs to be stored in Cloud Logging or Cloud Storage?
+* How do you configure a build timeout in cloudbuild.yaml?
+* How do you use waitFor to control execution order between build steps?
+* How do you run independent build steps in parallel?
+* How do you use artifacts to declare build outputs?
+* How do you configure a build to deploy a container to Cloud Run?
+* How do you use Cloud Build to deploy a Java application to Google Kubernetes Engine?
+* How do you configure environment-specific deployments for development, staging, and production?
+* How do you use approval gates in a Cloud Build deployment workflow?
+* How do you configure build triggers using tags or release branches?
+* How do you reuse build configuration across multiple projects?
+* How do you troubleshoot a build that fails because of a missing dependency?
+* How do you monitor build status, duration, and failure rates?

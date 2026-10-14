@@ -1,0 +1,30 @@
+* How would you design a hash table that supports insertion, lookup, and deletion with expected O(1) time complexity?
+* How do hash function quality and key distribution affect the performance of a hash table?
+* How can adversarial inputs cause hash collision attacks?
+* How would you mitigate hash collision attacks in a public-facing Java application?
+* What are the trade-offs between separate chaining and open addressing?
+* How do linear probing and primary clustering affect lookup performance?
+* What is secondary clustering, and how can quadratic probing reduce it?
+* How does double hashing improve key distribution compared with linear probing?
+* How would you analyze the expected number of probes for successful and unsuccessful searches?
+* How does the load factor affect the expected complexity of open-addressed hash tables?
+* How would you choose an appropriate resizing threshold for a custom hash table?
+* How would you implement incremental rehashing to avoid long pauses during resizing?
+* How would you design a hash table that minimizes memory overhead for millions of entries?
+* How would you handle deletion and tombstones efficiently in an open-addressed hash table?
+* How would you design a hash table for keys with expensive hashCode() calculations?
+* How would you optimize a hash table when keys are long strings?
+* How would you design a hash table that supports custom equality and hashing rules?
+* How would you ensure a custom Java key class obeys the equals() and hashCode() contract?
+* How can mutable keys cause entries to become effectively unreachable in a HashMap?
+* How would you investigate unexpectedly slow HashMap operations despite their average O(1) complexity?
+* How does Java HashMap treeification improve worst-case bucket lookup performance?
+* What are the trade-offs between using a red-black tree and a linked list within a heavily collided bucket?
+* How does ConcurrentHashMap support concurrent access without synchronizing the entire map?
+* What are the risks of using compound operations on a thread-safe map without atomic methods?
+* How would you use computeIfAbsent(), merge(), and putIfAbsent() correctly in concurrent code?
+* How would you design a thread-safe frequency counter for a high-throughput application?
+* How would you compare consistent hashing with ordinary hashing in a distributed system?
+* How does consistent hashing reduce key redistribution when nodes are added or removed?
+* What is rendezvous hashing, and when might it be preferable to consistent hashing?
+* How would you evaluate the time complexity, memory usage, and collision behavior of a custom hash table?

@@ -1,0 +1,30 @@
+* What factors affect Kafka performance?
+* What is Kafka throughput?
+* What is Kafka latency?
+* What is the difference between throughput and latency in Kafka?
+* How does Kafka achieve high throughput?
+* How does batching improve Kafka producer performance?
+* What is the purpose of `batch.size` in Kafka?
+* What is the purpose of `linger.ms` in Kafka?
+* How does compression improve Kafka performance?
+* What compression types are supported by Kafka?
+* What is the impact of `acks` on producer performance?
+* How does `acks=0` affect performance?
+* How does `acks=1` affect performance?
+* How does `acks=all` affect performance?
+* What is producer buffering in Kafka?
+* What is the purpose of `buffer.memory`?
+* What happens when the Kafka producer buffer becomes full?
+* How does the number of partitions affect Kafka throughput?
+* How does consumer parallelism improve Kafka performance?
+* What is consumer lag?
+* How can consumer lag indicate a performance problem?
+* How does message size affect Kafka performance?
+* How does replication affect Kafka performance?
+* How does disk I/O affect Kafka performance?
+* How does network bandwidth affect Kafka performance?
+* Why is sequential disk I/O important for Kafka?
+* How does compression affect CPU usage?
+* How does serialization affect Kafka performance?
+* How does deserialization affect consumer performance?
+* What is the role of batching in Kafka consumers?

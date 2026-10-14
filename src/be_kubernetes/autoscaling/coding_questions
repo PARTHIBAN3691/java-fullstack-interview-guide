@@ -1,0 +1,30 @@
+* Write a Kubernetes HPA YAML manifest to scale a Spring Boot Deployment between two and ten replicas based on CPU utilization.
+* Write an HPA YAML manifest that targets 70 percent average CPU utilization.
+* Write a Kubernetes Deployment YAML file with CPU and memory requests suitable for HPA.
+* Write a Kubernetes manifest that configures HPA behavior with scale-up and scale-down policies.
+* Write a Kubernetes manifest that defines a scale-down stabilization window.
+* Write a Kubernetes manifest that scales a Deployment based on memory utilization.
+* Write a Kubernetes configuration that enables metrics-server for resource metrics collection.
+* Write a Helm template for HPA with configurable minimum replicas, maximum replicas, and CPU target.
+* Write a Kustomize overlay that changes HPA settings between staging and production.
+* Write a Kubernetes configuration that combines HPA with Cluster Autoscaler-compatible workload resource requests.
+* Write a KEDA ScaledObject configuration that scales a Kafka consumer based on consumer lag.
+* Write a KEDA ScaledObject configuration that scales a worker based on queue length.
+* Write a Kubernetes HPA configuration that uses an external metric representing HTTP requests per second.
+* Write a Prometheus Adapter configuration that exposes an application metric through the Kubernetes Custom Metrics API.
+* Write a Spring Boot Actuator configuration that exposes application metrics suitable for autoscaling.
+* Write a Spring Boot application metric that measures requests processed per second.
+* Write a Java program that calculates the desired replica count from current replicas, observed metric value, and target metric value.
+* Write a Java program that reads Kubernetes Deployment replica counts using the Kubernetes Java Client.
+* Write a Java program that retrieves HPA status and reports current replicas, desired replicas, and metric targets.
+* Write a Java program that monitors Pod CPU and memory metrics and identifies workloads approaching their limits.
+* Write a Java integration test that verifies an HPA configuration has the expected minimum and maximum replica counts.
+* Write a load-testing script that generates increasing HTTP traffic against a Spring Boot application deployed on Kubernetes.
+* Write a script that monitors HPA replica changes and records scale-up and scale-down events.
+* Write a script that identifies Pending Pods and reports their scheduling events and resource requests.
+* Write a script that compares requested CPU and memory with actual usage to help tune autoscaling thresholds.
+* Write a Kubernetes manifest that combines HPA with readiness and startup probes for a slow-starting Java service.
+* Write a deployment configuration that supports graceful shutdown when HPA scales down application replicas.
+* Write a test plan that validates scale-up, scale-down, stabilization, and maximum-replica behavior.
+* Write a monitoring dashboard specification for HPA decisions, replica counts, Pod startup time, and node capacity.
+* Write an autoscaling configuration for a Spring Boot Kafka consumer that considers consumer lag, partition count, and downstream processing capacity.

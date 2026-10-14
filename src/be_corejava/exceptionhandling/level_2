@@ -1,0 +1,20 @@
+* How does the Java exception hierarchy work internally?
+* How does exception propagation behave across multiple method calls?
+* What happens when a `return` statement exists in both `try` and `finally` blocks?
+* What happens when both the `try` block and `finally` block throw exceptions?
+* How does try-with-resources handle exceptions thrown during resource closing?
+* What is the difference between the primary exception and a suppressed exception?
+* How do checked exceptions affect API design and backward compatibility?
+* Why are checked exceptions not supported in Java lambda expressions without handling or adaptation?
+* How would you design a custom exception hierarchy for a large application?
+* What are the best practices for preserving the original exception while rethrowing it?
+* What is the difference between rethrowing an exception and wrapping it in another exception?
+* How does precise rethrow work in Java?
+* Can generic methods throw exceptions of a type parameter?
+* What is a sneaky throw, and what risks does it introduce?
+* How do exceptions behave in Java streams and parallel streams?
+* What happens when an exception occurs in a `CompletableFuture` pipeline?
+* How do `CompletionException` and `ExecutionException` differ?
+* How would you handle exceptions thrown by multiple asynchronous tasks?
+* What are the performance implications of using exceptions for normal control flow?
+* How can exception handling accidentally hide application failures?

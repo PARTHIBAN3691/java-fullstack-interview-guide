@@ -1,0 +1,30 @@
+* Write a Java program that compares the health metrics of an existing release and a canary release and decides whether the canary should proceed.
+* Write a Java method that determines whether a deployment should be rolled back based on error rate, p95 latency, and availability thresholds.
+* Implement a deployment state machine with states such as PENDING, DEPLOYING, VALIDATING, SUCCEEDED, FAILED, and ROLLED_BACK.
+* Write a program that validates a deployment transition and rejects invalid state changes.
+* Implement a rolling deployment scheduler that replaces application instances in batches while maintaining a minimum healthy instance count.
+* Write a Java program that simulates blue-green deployment and switches traffic only after the new environment passes validation.
+* Implement a canary rollout controller that increases traffic through configurable stages and pauses when a validation threshold is breached.
+* Write a program that calculates the number of healthy instances remaining during a rolling deployment based on batch size and failure count.
+* Write a function that compares baseline and candidate release metrics and reports regressions in error rate, latency, and throughput.
+* Implement an automated rollback policy that requires multiple consecutive failed validation intervals before triggering recovery.
+* Write a Java program that simulates a circuit breaker for deployment validation and prevents repeated rollout attempts after persistent failures.
+* Implement a feature-flag service that supports enabling, disabling, and evaluating flags for specific user groups.
+* Write a feature-flag evaluator that supports percentage-based rollout and produces deterministic assignments for the same user.
+* Implement a feature-flag kill switch that disables a feature globally while preserving audit information.
+* Write a program that identifies unused feature flags from a supplied list of flags and their recorded application references.
+* Write a Java program that validates backward compatibility between two API response schemas.
+* Implement a version compatibility checker that determines whether a consumer can safely interact with a producer version.
+* Write a program that validates an expand-and-contract database migration plan against the deployment order of old and new application versions.
+* Write a migration validator that rejects a schema change if it removes a column still used by the current application version.
+* Implement a release coordinator that deploys dependent microservices in a valid order based on a dependency graph.
+* Write a program that detects circular dependencies in a deployment dependency graph.
+* Write a script that checks Kubernetes deployment manifests for readiness probes, rolling update settings, and minimum availability configuration.
+* Write a script that detects mutable container image tags in deployment manifests and reports images that should use immutable digests.
+* Write a deployment validation script that runs health checks and smoke tests before marking a release successful.
+* Implement a release policy engine that validates required approvals, test results, security checks, and artifact identity before production deployment.
+* Write a program that compares the artifact digest approved during release review with the digest referenced by the production deployment.
+* Write a script that validates backward-compatible database migration ordering across multiple release versions.
+* Implement a traffic-routing simulator that distributes requests between stable and canary versions according to configurable percentages.
+* Write a program that calculates deployment success rate, change failure rate, mean time to recovery, and rollback frequency from deployment history.
+* Implement a deployment audit logger that records release version, artifact digest, approver, deployment time, validation results, and rollback reason.

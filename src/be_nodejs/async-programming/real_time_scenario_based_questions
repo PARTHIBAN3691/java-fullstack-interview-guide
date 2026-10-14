@@ -1,0 +1,30 @@
+* An API endpoint becomes slow when it performs several database queries sequentially. How would you optimize its asynchronous execution?
+* A Node.js application stops responding while generating a large report. How would you identify and resolve the problem?
+* A Promise rejects inside an async function, but the application does not handle the error correctly. How would you debug it?
+* A third-party API is slow and causes requests to accumulate. How would you implement timeouts and cancellation?
+* A service calls five independent downstream APIs for every request. How would you reduce latency without overwhelming those services?
+* A batch job processes thousands of records and exhausts database connections. How would you control concurrency?
+* A Promise.all() operation fails because one API call rejects, even though other results are useful. How would you redesign the workflow?
+* A payment-processing service retries failed requests and sometimes creates duplicate payments. How would you prevent duplicate processing?
+* A Node.js application experiences high event-loop delay during peak traffic. How would you investigate and fix it?
+* An asynchronous task completes after the HTTP client has disconnected. How would you handle cancellation and cleanup?
+* A file-processing application reads files faster than it can write results. How would you manage backpressure?
+* A background job must process records in order, but you also need concurrent execution. How would you balance these requirements?
+* A service experiences intermittent failures when calling a remote API. How would you implement retries with exponential backoff and jitter?
+* An asynchronous operation never settles, causing requests to remain pending. How would you detect and recover from it?
+* A server receives thousands of events per second through EventEmitter. How would you prevent memory growth and processing delays?
+* A database connection pool becomes exhausted because asynchronous operations are not releasing connections. How would you investigate it?
+* A large Promise chain consumes excessive memory during a batch operation. How would you restructure the processing?
+* A CPU-intensive encryption operation delays all incoming HTTP requests. How would you redesign the execution model?
+* Two concurrent requests update the same account balance and produce an incorrect result. How would you prevent the race condition?
+* A scheduled task overlaps with its previous execution because the previous Promise has not completed. How would you prevent overlapping runs?
+* An application uses process.nextTick() recursively and timers stop firing promptly. Why does this happen, and how would you fix it?
+* A downstream service has strict rate limits. How would you implement asynchronous processing that respects those limits?
+* A request involves several asynchronous steps, and you need to preserve correlation IDs across all of them. How would you implement this?
+* A background job must continue processing remaining records even when some records fail. How would you collect and report failures?
+* An API must return partial results within a deadline while slower operations continue or are cancelled. How would you design it?
+* A Node.js service shuts down during deployment while asynchronous tasks are still running. How would you implement graceful shutdown?
+* A queue-based application receives tasks faster than workers can process them. How would you prevent unbounded queue growth?
+* A service makes concurrent requests to the same resource and performs redundant database reads. How would you coalesce duplicate asynchronous operations?
+* Unit tests for async functions pass individually but fail intermittently when run together. How would you diagnose timing issues and shared state?
+* You must design a reliable asynchronous workflow involving payment authorization, inventory reservation, and order creation. How would you handle timeouts, retries, and partial failures?

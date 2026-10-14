@@ -1,0 +1,21 @@
+
+* Write a YAML CloudFormation template to create an Amazon S3 bucket with a configurable bucket name.
+* Create a CloudFormation template that provisions an EC2 instance and its security group.
+* Write a template that creates a Lambda function with an execution role and a CloudWatch log group.
+* Create a CloudFormation template that provisions an API Gateway HTTP API integrated with a Lambda function.
+* Write a template that creates an Amazon SQS queue and exposes its URL through the `Outputs` section.
+* Create a CloudFormation template that provisions a DynamoDB table with a partition key and configurable billing mode.
+* Write a template that accepts an environment name and uses it to construct resource names through `Fn::Sub`.
+* Create a template using `Mappings` and `Fn::FindInMap` to select an EC2 instance type based on the environment.
+* Write a CloudFormation template that creates a resource only when a parameter enables a condition.
+* Create a parent stack that references outputs from a nested CloudFormation stack.
+* Write a template that exports a VPC ID and imports it into another stack using cross-stack references.
+* Create a template using `DeletionPolicy: Retain` to preserve an S3 bucket when the stack is deleted.
+* Write a CloudFormation template that retrieves a secret dynamically from AWS Secrets Manager.
+* Create a template that defines an IAM role following the principle of least privilege for a Java Lambda function.
+* Write a CloudFormation template that creates an RDS database with appropriate deletion and replacement policies.
+* Create a template with a `CreationPolicy` and `cfn-signal` for an EC2 instance that must complete initialization before deployment succeeds.
+* Write a CloudFormation template for a Java Spring Boot application running on Amazon ECS with a load balancer.
+* Create a template that uses conditions to enable production-only monitoring or backup resources.
+* Write a Java AWS SDK v2 program that validates a CloudFormation template and creates a change set for review.
+* Write a Java AWS SDK v2 program that describes a CloudFormation stack, retrieves its outputs, and reports failed stack events.

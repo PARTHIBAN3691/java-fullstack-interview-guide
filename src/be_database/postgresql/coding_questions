@@ -1,0 +1,30 @@
+* Write a PostgreSQL CREATE TABLE statement for customers with an auto-generated primary key, unique email, and mandatory creation timestamp.
+* Write a PostgreSQL query to retrieve the five most recent orders for each customer.
+* Write a query to find duplicate email addresses and return their occurrence counts.
+* Write a query to delete duplicate records while retaining the record with the smallest ID.
+* Write a query using ROW_NUMBER to identify the highest-paid employee in each department.
+* Write a query using RANK and DENSE_RANK to rank employees by salary within each department.
+* Write a query using a recursive CTE to retrieve all descendants of a given employee in an organizational hierarchy.
+* Write a query to calculate a running total of payments ordered by payment date.
+* Write a query to find customers who have not placed any orders using NOT EXISTS or an appropriate JOIN.
+* Write a query to return monthly revenue and month-over-month revenue growth.
+* Write a query to paginate orders using keyset pagination instead of large OFFSET values.
+* Write an UPSERT statement that inserts a customer or updates the customer's details when the email already exists.
+* Write a transaction that transfers money between two accounts and rolls back both updates if either operation fails.
+* Write a query that locks an account row before updating its balance to prevent concurrent modification problems.
+* Write a query using SELECT ... FOR UPDATE SKIP LOCKED to implement concurrent job processing.
+* Create a partial index for active orders and write a query that can benefit from it.
+* Create a composite index for a query filtering by tenant ID and status and sorting by creation time.
+* Create a GIN index on a JSONB column and write a query that filters by a JSONB attribute.
+* Create a range-partitioned orders table based on order date and write a query that targets a date range.
+* Write a SQL script to identify blocking sessions and the queries involved in a lock wait.
+* Write a query to inspect table sizes, index sizes, and total relation size.
+* Write a Spring Boot repository method using Spring Data JPA to retrieve orders by customer ID and status.
+* Implement a Spring Boot service method using @Transactional to create an order and its order items atomically.
+* Implement a Java JDBC method that inserts a record using PreparedStatement and retrieves the generated ID.
+* Write a Spring Data JPA native query that uses PostgreSQL's RETURNING clause where supported by the chosen execution approach.
+* Implement pagination in Spring Boot using Pageable and a custom query optimized for a large PostgreSQL table.
+* Map a PostgreSQL JSONB column to a Java object and implement serialization and deserialization.
+* Implement optimistic locking using a JPA @Version field and handle concurrent update failures.
+* Configure HikariCP in Spring Boot and implement appropriate handling for connection acquisition timeouts.
+* Implement a retry mechanism for transient PostgreSQL failures while ensuring that non-idempotent transactions are not executed twice.

@@ -1,0 +1,84 @@
+**LLMOps Fundamentals**
+* Your organization has several AI applications, each using different observability tools and quality metrics. How would you standardize LLMOps practices without blocking individual teams?
+* An AI service meets infrastructure SLOs but user satisfaction drops significantly. How would you expand the operational model to include quality and business outcomes?
+* A new AI release increases cloud costs and incident frequency despite passing offline tests. How would you identify gaps in the release and observability lifecycle?
+
+**AI Application Monitoring**
+* Application dashboards show healthy CPU, memory, and HTTP success rates, but users report that responses are slow and incorrect. How would you investigate?
+* Monitoring alerts trigger continuously during normal traffic fluctuations. How would you tune thresholds, baselines, and alert grouping?
+* An AI application spans multiple microservices, and failures appear only during peak demand. How would you correlate application and model telemetry to find the bottleneck?
+
+**Prompt and Response Tracing**
+* A production response contains sensitive information, but the trace backend stores the complete prompt and response. How would you mitigate exposure while preserving diagnostic capability?
+* A single user request invokes three model calls and two tools, but logs cannot establish which step caused the incorrect answer. How would you implement trace correlation?
+* Intermittent failures occur only after a provider retry or fallback. How would you reconstruct the request path and identify the original failure?
+
+**Token Usage and Cost Tracking**
+* Your monthly LLM bill increases sharply, but request volume remains stable. How would you identify changes in token consumption, retries, model routing, or pricing?
+* A tenant exceeds its AI budget because an agent repeatedly invokes tools and regenerates long responses. How would you detect, stop, and prevent recurrence?
+* Provider invoices do not match your internal cost dashboard. How would you reconcile cached tokens, batch requests, failed calls, and asynchronous billing records?
+
+**Latency and Throughput Monitoring**
+* Average response time remains acceptable, but p99 latency violates the service objective. How would you investigate tail latency?
+* Users report that streaming responses pause after the first few tokens. Which metrics and traces would you inspect?
+* The application becomes overloaded when several large-context requests arrive simultaneously. How would you monitor queueing and implement backpressure?
+
+**Model Quality Monitoring**
+* A new model performs well on benchmarks but produces more incomplete answers for a particular customer segment. How would you detect and isolate the regression?
+* User ratings decline, but automated relevance and correctness metrics remain stable. How would you investigate evaluator limitations and changing user expectations?
+* An AI application begins generating unsupported answers after the knowledge base is updated. How would you distinguish model quality changes from retrieval and corpus issues?
+
+**Retrieval and RAG Tracing**
+* The RAG pipeline returns documents quickly, but the final answer omits the key policy exception. How would you trace the retrieval, ranking, context assembly, and generation stages?
+* Retrieval quality suddenly drops after a vector-index rebuild. How would you correlate index versions, embedding versions, search scores, and answer quality?
+* A user receives information from another tenant's document collection. How would you use traces and audit records to investigate the incident without further exposing confidential content?
+
+**Agent Execution Tracing**
+* An agent enters a loop in which it calls the same tool repeatedly until its request times out. How would you identify the loop and establish execution limits?
+* An agent workflow fails after several successful external actions, and a worker restarts before completing the task. How would you trace and recover the workflow safely?
+* An agent completes its task correctly but uses significantly more model calls than expected. How would you investigate planning behavior and establish efficiency alerts?
+
+**Evaluation in Production**
+* Offline evaluations pass, but production users report a new class of failures. How would you sample live traffic, collect labels, and add the failures to regression tests?
+* Production evaluation costs become excessive when every response is sent to a separate judge model. How would you design risk-based sampling and asynchronous evaluation?
+* Automated production scores improve after a judge-model upgrade, but human feedback does not. How would you detect evaluator drift?
+
+**Model Drift and Data Drift**
+* A chatbot's input language distribution changes after expansion into a new region, and quality declines. How would you detect drift and determine the appropriate response?
+* Model quality degrades gradually, but input statistics appear stable. How would you investigate concept drift, provider changes, and evaluator reliability?
+* A drift alert fires after a major business campaign changes the user query mix. How would you distinguish expected seasonal changes from a genuine model problem?
+
+**Feedback Collection**
+* Most users do not provide ratings, but users with negative experiences frequently submit feedback. How would you address selection bias in quality analysis?
+* Feedback records cannot be linked to the prompt or model version that produced the answer. How would you redesign the feedback data model?
+* A malicious user submits large numbers of negative ratings to make one model appear unreliable. How would you detect and mitigate feedback manipulation?
+
+**Incident Management for AI Systems**
+* An external provider changes model behavior, causing incorrect answers across several products without returning HTTP errors. How would you detect, triage, and mitigate the incident?
+* A safety incident occurs in production, but the original prompt and model configuration are unavailable. How would you investigate and improve forensic readiness?
+* A cost spike and a quality decline occur at the same time after deployment. How would you determine whether they share a root cause and coordinate rollback?
+
+**Model and Prompt Versioning**
+* A prompt update is deployed without a version identifier, and the team cannot reproduce a customer complaint. How would you restore traceability?
+* A rollback restores the previous prompt but fails because the vector index and embedding model have also changed. How would you design compatible release artifacts?
+* The provider updates a model behind a stable alias. How would you detect the change and maintain useful historical comparisons?
+
+**Experiment Tracking**
+* Two teams run similar experiments with different datasets and model parameters, then report conflicting conclusions. How would you standardize experiment metadata and reproducibility?
+* A promising experiment cannot be reproduced because its prompt and dataset versions were not recorded. How would you prevent this problem?
+* An experiment improves answer quality but doubles latency and cost. How would you compare trade-offs and decide whether to promote it?
+
+**AI Release Management**
+* A new model passes offline evaluation but causes increased latency during a canary release. How would you decide whether to continue, pause, or roll back?
+* A prompt release passes functional tests but triggers a rise in unsafe outputs during shadow evaluation. How would you enforce release gates?
+* A model, prompt, and retrieval index must be updated together, but a partial deployment could break compatibility. How would you plan a safe rollout?
+
+**OpenTelemetry for AI Applications**
+* Distributed traces stop at an asynchronous message boundary, making it impossible to connect an API request to a worker's model calls. How would you restore context propagation?
+* The telemetry backend becomes overloaded because every prompt and retrieved document is stored as a large span attribute. How would you reduce volume and cardinality?
+* The application loses telemetry when an exporter is unavailable. How would you improve buffering, retry behavior, and graceful degradation?
+
+**AI Audit Logs**
+* An auditor asks which model, prompt, and source documents contributed to a sensitive business decision. How would you retrieve the evidence?
+* A privileged operator changes a prompt in production without approval. How would you detect the change and establish accountability?
+* A deletion request concerns personal information present in traces and audit records. How would you satisfy privacy obligations while preserving required audit integrity?

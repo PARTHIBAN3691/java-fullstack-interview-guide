@@ -1,0 +1,35 @@
+* Write Terraform configuration to create a virtual network, subnet, and security group using input variables.
+* Write a reusable Terraform module for creating virtual machines with configurable instance size, image, subnet, and tags.
+* Write a Terraform module that provisions a managed database with configurable storage, encryption, backups, and network access.
+* Write Terraform configuration that creates multiple resources using `for_each` based on a map of environment-specific settings.
+* Write Terraform configuration that uses `count` to create a configurable number of identical resources.
+* Write Terraform configuration that demonstrates the difference between `count` and `for_each` for resources with stable identities.
+* Write Terraform configuration that defines input variables with types, validation rules, and default values.
+* Write Terraform configuration that exposes resource identifiers, private addresses, and endpoint URLs through output values.
+* Write Terraform configuration that retrieves existing cloud resources using data sources and references them in new resources.
+* Write Terraform configuration that demonstrates `depends_on`, `create_before_destroy`, and `prevent_destroy` for appropriate resources.
+* Write Terraform configuration that uses a remote state backend and reads outputs from another Terraform state.
+* Write a Terraform configuration that separates reusable networking and application infrastructure into independent modules.
+* Write a Terraform configuration that uses provider aliases to provision resources in two cloud regions.
+* Write a Terraform configuration that imports an existing resource into state and documents the corresponding resource definition.
+* Write a Terraform configuration using a `moved` block to rename a resource without recreating it.
+* Write a Terraform configuration that uses a lifecycle precondition or postcondition to validate resource assumptions.
+* Write a Terraform test file that validates the inputs and expected outputs of a reusable module.
+* Write a Terraform test that verifies a security group does not expose administrative ports to the public internet.
+* Write a script that runs `terraform fmt`, `terraform validate`, and a static analysis tool and fails if any required check fails.
+* Write a CI pipeline configuration that runs Terraform plan on pull requests and applies only an approved, saved plan.
+* Write a script that extracts resource additions, changes, and deletions from a Terraform plan in machine-readable format.
+* Write a script that checks Terraform plan output for resource destruction and requires additional approval for critical resources.
+* Write a policy-as-code rule that rejects unencrypted storage, public database access, and unrestricted administrative ingress rules.
+* Write a script that checks Terraform configurations for hardcoded credentials and insecure secret-handling patterns.
+* Write a script that verifies required tags are present on all supported Terraform-managed cloud resources.
+* Write a script that identifies Terraform resources using unpinned provider versions or unapproved module sources.
+* Write a script that detects infrastructure drift by generating a refresh-aware Terraform plan and reporting unexpected changes.
+* Write a Terraform configuration that provisions an AWS infrastructure component using CloudFormation and documents the ownership boundary between the tools.
+* Write a Pulumi program that provisions a network and compute resource using a supported programming language and environment-specific configuration.
+* Write a script that compares Terraform plans across development, staging, and production and reports unexpected differences.
+* Write a script that validates remote-state backend configuration and fails when production state uses an unapproved storage location.
+* Write a script that verifies Terraform state and plan files are not accidentally committed to a Git repository.
+* Write a pipeline step that scans Terraform configuration for security misconfigurations before infrastructure provisioning.
+* Write a script that inventories Terraform modules and reports their versions, resource counts, and environment usage.
+* Write a script that generates an infrastructure change report containing the initiating commit, reviewer, approved plan, and applied resource changes.

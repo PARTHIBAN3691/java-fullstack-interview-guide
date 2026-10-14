@@ -1,0 +1,30 @@
+* Write a JUnit 5 test for a Java method that adds two integers.
+* Write unit tests for a method that checks whether an integer is even or odd.
+* Implement and test a method that returns the factorial of a number, including boundary cases.
+* Write unit tests for a method that checks whether a string is a palindrome.
+* Implement and test a method that reverses a string, including null and empty inputs.
+* Write JUnit tests for a method that finds the maximum value in an integer array.
+* Implement and test a method that validates an email address using basic validation rules.
+* Write parameterized tests for a method that classifies numbers as positive, negative, or zero.
+* Implement a calculator class and write tests for addition, subtraction, multiplication, division, and division by zero.
+* Write tests using assertThrows() for a method that rejects invalid arguments.
+* Implement a method that calculates a discount based on customer type and write tests for every supported type.
+* Write a JUnit 5 test using @CsvSource to verify a method that converts Celsius to Fahrenheit.
+* Implement a method that counts word frequencies in a string and test empty input, repeated words, and case sensitivity.
+* Write unit tests for a method that removes duplicate values from a list while preserving order.
+* Implement an employee salary calculator and test minimum salary, bonus rules, and invalid inputs.
+* Create a service class that depends on a repository interface and test it using Mockito.
+* Write a Mockito test that verifies a repository's findById() method is called with the correct identifier.
+* Implement a service that returns a default value when a repository returns Optional.empty(), and test both outcomes.
+* Write a test for a void service method that delegates to a mocked dependency and verify the interaction.
+* Implement a payment service and use Mockito to test successful payment and payment failure scenarios.
+* Write parameterized unit tests for a password validator covering minimum length, missing digits, and missing special characters.
+* Implement a method that calculates loan interest and test rounding, zero principal, and invalid rates.
+* Write tests for a method that merges two sorted lists, including empty lists and duplicate values.
+* Implement a method that finds the second-largest distinct integer in an array and test edge cases.
+* Write JUnit tests for equals() and hashCode() in a custom Employee class.
+* Implement a method that retries a failed operation a maximum of three times and test the retry count using Mockito.
+* Write a unit test for a CompletableFuture-based method that completes successfully or exceptionally.
+* Implement a date-based eligibility checker and write deterministic tests using an injected Clock.
+* Write unit tests for a method that sorts employees by salary and then by name.
+* Create a Java service with multiple business rules and write a complete JUnit 5 and Mockito test suite covering success, validation failures, exceptions, and boundary conditions.

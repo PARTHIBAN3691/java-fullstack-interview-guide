@@ -1,0 +1,21 @@
+
+* How would you design a highly available architecture for a Java microservices application running on EC2 across multiple Availability Zones?
+* How would you design an Auto Scaling strategy based on CPU utilization, request count, and application-specific metrics?
+* How would you perform a zero-downtime deployment of a Spring Boot application across multiple EC2 instances?
+* How would you implement blue-green or canary deployments for EC2-hosted applications?
+* How would you troubleshoot intermittent high latency in a Java application running on EC2?
+* How would you diagnose CPU saturation, memory pressure, thread exhaustion, and garbage collection pauses on an EC2-hosted JVM?
+* How would you configure JVM heap settings and garbage collection options for an EC2 instance with limited memory?
+* How would you securely manage secrets and configuration for Java applications running on EC2?
+* How would you design network access between EC2 instances in private subnets and AWS services without assigning public IP addresses?
+* How would you troubleshoot connectivity issues involving VPC route tables, security groups, network ACLs, and DNS?
+* How would you design an EC2 architecture that supports disaster recovery across AWS regions?
+* How would you choose between vertical scaling and horizontal scaling for a stateful Java application on EC2?
+* How would you handle session persistence when multiple EC2 instances run behind an Application Load Balancer?
+* How would you automate EC2 provisioning and configuration using Terraform, AWS CloudFormation, or AWS CDK?
+* How would you harden EC2 instances using least-privilege IAM, patch management, encryption, and security monitoring?
+* How would you investigate an EC2 instance that becomes unhealthy after a deployment even though its status checks pass?
+* How would you optimize EC2 and EBS costs while meeting strict application performance requirements?
+* How would you design a self-healing architecture using Auto Scaling, health checks, CloudWatch alarms, and automated remediation?
+* How would you migrate a Java monolith from on-premises servers to EC2 with minimal downtime?
+* How would you decide whether a Java workload should run on EC2, ECS, EKS, or AWS Lambda?

@@ -1,0 +1,30 @@
+* Explain how Angular constructs and executes the HTTP interceptor chain internally.
+* How does interceptor ordering affect request processing and response processing?
+* What is the difference between configuring functional interceptors and registering class-based interceptors through dependency injection?
+* How would you migrate a legacy class-based interceptor to a functional interceptor?
+* How do you implement access-token refresh when multiple requests receive HTTP 401 simultaneously?
+* How do you ensure that only one token-refresh request runs while other failed requests wait for its result?
+* How do you prevent an authentication interceptor from intercepting its own token-refresh request?
+* How do you avoid infinite retry loops when token refresh fails?
+* How do you safely retry the original request after refreshing an access token?
+* How do you handle refresh-token expiration and force the user to sign in again?
+* How would you implement an interceptor that retries transient errors using exponential backoff?
+* How do you ensure retry logic does not duplicate non-idempotent operations?
+* How do you implement request deduplication for identical GET requests in an interceptor?
+* How would you implement caching with an interceptor while supporting cache invalidation?
+* What are the risks of caching authenticated responses in a shared application cache?
+* How do you use HttpContextToken to configure per-request retry, caching, or authentication behavior?
+* How do you design an interceptor chain for authentication, logging, error handling, retries, and loading indicators?
+* How can interceptor order change which errors are logged or retried?
+* How do you prevent sensitive authorization headers from being sent to third-party domains?
+* How do you implement domain-specific authentication rules for multiple backend APIs?
+* How do you measure API latency without double-counting requests when retries occur?
+* How do you distinguish a request's total duration from the duration of each retry attempt?
+* How do you handle progress events when an interceptor transforms HTTP event streams?
+* How do you implement a loading interceptor that ignores background polling and silent refresh requests?
+* How do you prevent memory leaks in interceptors that maintain shared state or subscriptions?
+* What challenges arise when HTTP interceptors depend on services that also make HTTP calls?
+* How do you avoid circular dependencies involving interceptors and authentication services?
+* How do interceptors behave during server-side rendering, and what security concerns must be considered?
+* How would you design reusable interceptors for a large application with multiple teams and backend services?
+* How would you troubleshoot an interceptor that works in development but fails in production?

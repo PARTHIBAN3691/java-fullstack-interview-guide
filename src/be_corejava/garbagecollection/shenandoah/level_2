@@ -1,0 +1,20 @@
+* Explain the complete lifecycle of a Shenandoah GC cycle, from initial marking to final reference updates.
+* How does Shenandoah GC maintain application correctness while relocating objects concurrently?
+* How do Brooks pointers and load-reference barriers work together during object relocation?
+* What are the performance costs associated with load-reference barriers?
+* How does Shenandoah GC maintain consistency when application threads modify object references during concurrent evacuation?
+* How does Shenandoah GC handle objects that cannot be evacuated because of insufficient reserve space?
+* What happens when Shenandoah GC cannot keep up with the application's allocation rate?
+* How does Shenandoah GC manage concurrent marking while application threads continue allocating objects?
+* What is the difference between normal and degenerated GC cycles in Shenandoah?
+* What is a Full GC in Shenandoah, and under what circumstances might it occur?
+* How does Shenandoah GC balance concurrent garbage collection work against application CPU consumption?
+* What are the trade-offs between Shenandoah GC and ZGC in terms of barriers, relocation, and latency?
+* How does Shenandoah GC behave when the heap contains a large live-data set?
+* How can high allocation rates affect Shenandoah GC cycle frequency and CPU consumption?
+* How would you investigate recurring degenerated GC cycles in a production application?
+* How would you tune Shenandoah GC for a latency-sensitive application running with limited CPU resources?
+* How does the choice of heap size influence Shenandoah GC performance?
+* How do weak, soft, and phantom references interact with Shenandoah GC?
+* How would you compare Shenandoah GC and G1 GC using p99 latency, throughput, CPU usage, and allocation rate?
+* What workload characteristics would make Shenandoah GC a poor choice?

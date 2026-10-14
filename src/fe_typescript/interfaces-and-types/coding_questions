@@ -1,0 +1,30 @@
+* Define a Person interface with name and age properties and create an object that implements it.
+* Create an Employee interface with id, name, department, and optional salary properties.
+* Define a Product type alias with id, name, price, and category properties.
+* Create an interface containing a method signature and implement it in a class.
+* Create two interfaces and implement both in a single class.
+* Define an interface that extends another interface and add additional properties.
+* Create an interface that extends two interfaces and combines their properties.
+* Define a type alias that combines two object types using an intersection.
+* Create a union type that represents a string, number, or boolean value.
+* Define a function type alias for a function that accepts two numbers and returns a number.
+* Create a callable interface for a function that accepts a string and returns a boolean.
+* Define an interface with a constructor signature for creating Employee objects.
+* Create an interface with an index signature for storing string-based configuration values.
+* Create a generic Repository<T> interface with add(), findById(), and getAll() methods.
+* Implement a generic repository interface in a class.
+* Use keyof and indexed access types to create a function that retrieves a property from an object.
+* Use Partial<T> to create a type for updating only selected Employee properties.
+* Use Pick<T, K> to create a type containing only an employee's id and name.
+* Use Omit<T, K> to create a type that excludes sensitive user properties.
+* Create a discriminated union for successful and failed API responses.
+* Create a type that restricts an order status to Pending, Processing, Shipped, or Delivered.
+* Implement exhaustive checking for an order-status union using the never type.
+* Create a type that prevents an object from containing both card-payment and UPI-payment properties.
+* Use satisfies to validate a configuration object while preserving its inferred property types.
+* Create a recursive DeepReadonly<T> utility type for nested objects.
+* Create a generic event-map interface that associates event names with payload types.
+* Extend an existing interface through declaration merging and demonstrate the resulting type.
+* Create a mapped type that makes all properties of an interface nullable.
+* Create a type-safe paginated API response using generic interfaces.
+* Build a small e-commerce domain model using interfaces, type aliases, generics, and discriminated unions.

@@ -1,0 +1,61 @@
+# Core Java — Collections — List
+## Real-Time Scenario-Based Questions
+
+### ArrayList
+* A service stores millions of records in an ArrayList and experiences frequent latency spikes during bulk imports. How would you investigate the cause and reduce latency?
+* A batch job repeatedly inserts records at index zero and becomes progressively slower as the input grows. What is the likely cause, and how would you redesign the operation?
+* An API returns an ArrayList that callers can modify, causing unexpected changes in application state. How would you fix the design?
+* A memory profile shows that a long-lived ArrayList retains objects that are no longer logically needed. How would you identify and resolve the retention?
+* A method unexpectedly removes the wrong value from a `List<Integer>`. How would you investigate overload resolution and correct the code?
+
+### LinkedList
+* A team replaced ArrayList with LinkedList because the application performs frequent insertions, but performance became worse. How would you identify the bottleneck?
+* A report-generation loop repeatedly accesses elements by index on a LinkedList and takes several minutes. What is happening, and how would you fix it?
+* A queue built on LinkedList experiences high allocation and garbage-collection overhead. How would you assess alternative data structures?
+* A custom linked-list implementation occasionally loses nodes after removal operations. How would you debug and test the pointer updates?
+
+### Vector and Stack
+* A legacy service uses Vector, but concurrent requests still produce duplicate business operations. How would you determine why method-level synchronization is insufficient?
+* A codebase uses Stack for request processing and has difficulty handling concurrency and performance requirements. How would you modernize it?
+* A shared List uses separate `contains()` and `add()` calls, resulting in duplicate entries under load. How would you make the operation atomic?
+
+### Iterator and ListIterator
+* A batch process throws `ConcurrentModificationException` while removing invalid records. How would you fix the code and prevent recurrence?
+* A background thread updates a List while another thread iterates over it. How would you choose an appropriate consistency model?
+* A UI workflow needs to insert and remove items during bidirectional traversal. How would you implement this safely?
+* A team catches and ignores `ConcurrentModificationException` to keep processing. What risks does this introduce, and what would you recommend instead?
+
+### Sorting and Comparators
+* A production report displays records in an inconsistent order when timestamps are equal. How would you make the sorting deterministic?
+* Sorting fails with an exception after a new Comparator is introduced. How would you investigate the Comparator contract?
+* An API must sort records by priority descending, timestamp ascending, and nullable name alphabetically. How would you implement and test the ordering?
+* A sort works for small values but produces incorrect results for extreme integers. What implementation defect would you look for?
+
+### List Utilities and Common Operations
+* A nightly job removes duplicates from a very large List and exceeds its runtime window. How would you improve its time and memory usage?
+* Two services compare Lists to detect changes, but logically equivalent records are treated as different. How would you investigate equality and comparison logic?
+* An API returns an unmodifiable List, but consumers still observe its contents changing. How could this happen, and how would you provide a stable snapshot?
+* A batch pipeline repeatedly scans one List to find matches in another, creating a performance bottleneck. How would you optimize it while preserving duplicate semantics?
+
+### Generics and Wildcards with List
+* A generic utility method cannot accept both a List of Integer and a List of Number as intended. How would you redesign its signature?
+* A raw List introduced into a legacy module causes a `ClassCastException` far away from the original code. How would you locate the source and prevent recurrence?
+* A shared utility must copy values from a source List into a destination List with different compatible generic types. How would you design the method signature?
+
+### Thread Safety and Concurrent Lists
+* A configuration service uses CopyOnWriteArrayList, but updates become very slow after the number of entries increases. How would you diagnose the problem and choose an alternative?
+* A synchronized List still throws `ConcurrentModificationException` during iteration. How would you investigate and fix the synchronization strategy?
+* Two concurrent requests both check that a user is absent from a List and then add the user, creating duplicates. How would you fix the race condition?
+* A service needs frequent reads, rare writes, and stable iteration during updates. Which List implementation would you evaluate, and what trade-offs would you measure?
+
+### Streams and List Processing
+* A Stream pipeline processing millions of records uses too much memory because of intermediate collections. How would you refactor it?
+* A parallel Stream produces incorrect totals under load. How would you investigate shared mutable state and accumulation logic?
+* A Stream pipeline is slower than a traditional loop in a latency-sensitive endpoint. How would you measure and improve it?
+* A pipeline must transform records while collecting validation failures without losing valid results. How would you structure the processing?
+
+### List Performance and Complexity
+* An endpoint's response time increases sharply as the number of List elements grows. How would you profile the algorithm and identify quadratic behavior?
+* A collection benchmark shows LinkedList outperforming ArrayList, but production results show the opposite. How would you validate the benchmark?
+* A service suffers from frequent garbage collection after adding a large temporary List per request. How would you reduce allocation pressure?
+* A high-throughput application needs predictable read latency with occasional bulk updates. How would you evaluate the data structure, memory footprint, and concurrency requirements?

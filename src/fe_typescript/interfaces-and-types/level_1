@@ -1,0 +1,30 @@
+* What are the major differences between interfaces and type aliases?
+* When would you prefer an interface over a type alias?
+* When would you prefer a type alias over an interface?
+* How does declaration merging work with interfaces?
+* Can type aliases be reopened or merged like interfaces?
+* What happens when two interfaces with the same name are declared in the same scope?
+* How do you extend an interface with additional properties?
+* How do you combine multiple interfaces using intersection types?
+* What is the difference between extending an interface and implementing an interface?
+* Can an interface extend a type alias?
+* Under what conditions can an interface extend another type?
+* How do you define an interface for a function signature?
+* What is a callable interface?
+* How do you define a constructor signature in an interface?
+* What is the difference between a function type alias and a callable interface?
+* How do you define an index signature in an interface?
+* What is the difference between string and number index signatures?
+* How do you define an interface with dynamic property names?
+* How do generics work with interfaces?
+* How do you create a generic interface for a repository?
+* Can a generic interface extend another generic interface?
+* How do you use keyof with interfaces and type aliases?
+* What are mapped types, and how do they relate to type aliases?
+* How do utility types such as Partial, Required, Pick, and Omit work with interfaces?
+* How do you create a type from the properties of an existing interface?
+* What is the difference between readonly properties and readonly arrays?
+* How do discriminated unions work with type aliases?
+* How can interfaces and type aliases model API request and response objects?
+* What is excess property checking, and how does it affect object literals?
+* How can you ensure that an object satisfies a type without losing its inferred type?

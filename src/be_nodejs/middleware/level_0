@@ -1,0 +1,30 @@
+* What is middleware in Node.js?
+* Why is middleware used in Node.js applications?
+* What is middleware in Express.js?
+* How does middleware work in an Express application?
+* What is the purpose of app.use()?
+* What is the purpose of next() in middleware?
+* What are the different types of middleware in Express.js?
+* What is application-level middleware?
+* What is router-level middleware?
+* What is built-in middleware in Express.js?
+* What is third-party middleware in Express.js?
+* What is custom middleware?
+* What are req, res, and next in middleware?
+* How do you create a simple custom middleware?
+* How do you register middleware in an Express application?
+* What happens if middleware does not call next() or send a response?
+* What is the difference between middleware and route handlers?
+* How do you execute multiple middleware functions for a single route?
+* How do you pass data from one middleware to another?
+* What is the purpose of express.json()?
+* What is the purpose of express.urlencoded()?
+* What is the purpose of express.static()?
+* What is the purpose of express.Router()?
+* What is error-handling middleware?
+* How do you identify error-handling middleware in Express.js?
+* What is the difference between next() and next(err)?
+* How do you log requests using middleware?
+* How do you handle 404 errors using middleware?
+* Can middleware modify the request and response objects?
+* Why does middleware execution order matter?

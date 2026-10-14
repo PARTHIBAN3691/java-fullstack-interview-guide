@@ -1,0 +1,83 @@
+**MCP Fundamentals and Architecture**
+* How would you design an MCP-based architecture that connects an LLM application to databases, internal APIs, and document repositories?
+* How does MCP separate tool implementation from the LLM application that consumes the tool?
+* How would you choose between MCP and a direct REST API integration for a particular use case?
+* How should an application handle differences in MCP server capabilities and protocol versions?
+
+**MCP Hosts, Clients, and Servers**
+* How would you design a host that manages multiple MCP clients connected to independent servers?
+* How should an MCP host isolate server sessions and prevent one server's failures from affecting other integrations?
+* How would you manage connection lifecycle, initialization, capability negotiation, and shutdown?
+* How would you handle an MCP server becoming unavailable while a host is processing a user request?
+
+**MCP Tools**
+* How would you define a reliable tool schema with required fields, optional fields, constraints, and meaningful descriptions?
+* How would you distinguish read-only tools from tools that create, update, or delete business data?
+* How would you handle long-running tool execution and communicate progress to the client?
+* How would you design idempotency and retry behavior for tools that perform external side effects?
+
+**MCP Resources**
+* How would you expose files, database records, or application context as MCP resources?
+* How would you design resource URIs and handle invalid or inaccessible resource identifiers?
+* How would you decide whether information should be exposed as a resource or returned through a tool?
+* How would you enforce user-specific access controls when retrieving MCP resources?
+
+**MCP Prompts**
+* How would you design reusable MCP prompts for different business workflows?
+* How would you validate prompt arguments and handle missing required values?
+* How would you manage prompt versioning without breaking existing clients?
+* How would you prevent a prompt template from exposing sensitive instructions or internal information?
+
+**MCP Transport Mechanisms**
+* How would you choose between stdio and Streamable HTTP for local development, remote deployment, and production workloads?
+* How would you handle transport disconnections, request timeouts, and reconnection behavior?
+* How would you configure a remote MCP server behind a reverse proxy or API gateway?
+* How would you distinguish transport-level failures from JSON-RPC and application-level failures?
+
+**MCP Server Development**
+* How would you structure an MCP server so that protocol handling is separated from business logic?
+* How would you validate tool inputs and return structured, actionable errors?
+* How would you implement health checks, graceful shutdown, and connection management?
+* How would you test tool handlers, resource handlers, and protocol interactions independently?
+
+**MCP Integration with LLM Applications**
+* How would you integrate MCP tool discovery into an LLM application's request lifecycle?
+* How would you select relevant tools when multiple MCP servers expose similar capabilities?
+* How would you handle tool results that exceed the LLM's context window?
+* How would you preserve conversation context and tool-call history across multiple model interactions?
+
+**MCP Integration with Java and Spring Boot**
+* How would you expose existing Spring service methods as MCP tools without duplicating business logic?
+* How would you configure an MCP client in a Spring Boot application to connect to a remote server?
+* How would you integrate MCP tool execution with Spring dependency injection, validation, and exception handling?
+* How would you test MCP endpoints and tool execution using Spring Boot test infrastructure?
+
+**MCP Authentication and Authorization**
+* How would you secure a remote MCP server using OAuth-based authentication?
+* How would you enforce authorization at the individual tool and resource level?
+* How would you handle token expiration, renewal, revocation, and insufficient permissions?
+* How would you prevent a client from using one user's credentials to access another user's resources?
+
+**MCP Tool Discovery and Execution**
+* How would you refresh tool definitions when an MCP server adds, removes, or changes a tool?
+* How would you validate discovered tool schemas before making them available to an LLM?
+* How would you handle malformed arguments, unsupported tool names, and invalid execution results?
+* How would you prevent duplicate side effects when a client retries a timed-out tool invocation?
+
+**MCP Security and Trust Boundaries**
+* How would you mitigate prompt injection through MCP tool descriptions, resource contents, and tool results?
+* How would you validate remote server identities and restrict access to trusted MCP endpoints?
+* How would you prevent an MCP server from accessing files or network destinations outside its intended scope?
+* How would you separate user authorization, model-generated decisions, and actual execution permissions?
+
+**MCP Error Handling and Observability**
+* How would you propagate correlation IDs across the host, MCP client, MCP server, and downstream APIs?
+* How would you distinguish transient errors from permanent errors and apply appropriate retry policies?
+* Which metrics would you collect to monitor MCP tool latency, error rate, and server availability?
+* How would you log tool inputs and outputs without exposing credentials or sensitive business data?
+
+**MCP Deployment and Governance**
+* How would you deploy and scale remote MCP servers for multiple application teams?
+* How would you manage configuration, secrets, environment separation, and server upgrades?
+* How would you maintain an approved registry of MCP servers and their available capabilities?
+* How would you enforce ownership, access reviews, audit requirements, and lifecycle management for MCP integrations?

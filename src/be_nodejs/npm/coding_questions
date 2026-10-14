@@ -1,0 +1,30 @@
+* Create a Node.js project using npm init and configure a basic start script.
+* Write a package.json file with start, test, and development scripts.
+* Install the lodash package and write a program that uses one of its utility functions.
+* Install Express using npm and create a basic HTTP server.
+* Create a project with separate dependencies and devDependencies.
+* Write npm scripts to start a Node.js application in development and production modes.
+* Create an npm script that runs a custom JavaScript file with command-line arguments.
+* Write a program that reads an environment variable configured through an npm script.
+* Create a package.json configuration with a specific Node.js engine requirement.
+* Write a package.json file that restricts a dependency to a compatible minor version range.
+* Create a script that checks whether a required environment variable exists before starting the application.
+* Write a script that reports the installed version of a selected npm package.
+* Create a project that uses npm ci for a reproducible dependency installation.
+* Write a shell script that installs dependencies and runs tests, failing if any command fails.
+* Create an npm package that exports a reusable string utility function.
+* Prepare a package.json file for publishing a scoped package to the npm registry.
+* Create a package configuration that includes only the required files in the published package.
+* Write a Node.js utility that checks package.json for missing required dependencies.
+* Create npm scripts for linting, unit testing, and generating a production build.
+* Configure npm scripts to run tests before building the application.
+* Create a package.json file that defines a custom command using an installed CLI tool.
+* Configure a project with separate scripts for development, staging, and production.
+* Create an npm workspace containing two packages: a shared utility library and a Node.js application.
+* Write a workspace configuration that allows one local package to import another workspace package.
+* Create a package with both CommonJS and ES module entry points using conditional exports.
+* Write a script that lists outdated npm dependencies and summarizes their current and latest versions.
+* Create a script that parses npm audit JSON output and reports high-severity vulnerabilities.
+* Configure package.json overrides to replace a vulnerable transitive dependency version.
+* Write a CI pipeline script that installs dependencies with npm ci and runs the test suite.
+* Create a complete Node.js project configuration with dependency management, testing scripts, version requirements, and publishing metadata.

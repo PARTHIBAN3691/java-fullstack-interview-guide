@@ -1,0 +1,35 @@
+* Create a functional interface `Greeting` with one abstract method and implement it using a lambda expression.
+* Create a functional interface `Calculator` that accepts two integers and returns their sum. Implement it using a lambda expression.
+* Create a functional interface `StringProcessor` that accepts a string and returns its length.
+* Create a functional interface `NumberChecker` that checks whether a number is even.
+* Use the built-in `Predicate<Integer>` interface to check whether a number is positive.
+* Use the built-in `Function<String, Integer>` interface to convert a string into its length.
+* Use the built-in `Consumer<String>` interface to print a message.
+* Use the built-in `Supplier<Double>` interface to generate a random number.
+* Use `BiPredicate<String, String>` to check whether two strings are equal, ignoring case.
+* Use `BiFunction<Integer, Integer, Integer>` to multiply two integers.
+* Use `UnaryOperator<Integer>` to square a number.
+* Use `BinaryOperator<Integer>` to find the maximum of two integers.
+* Use `Predicate<Integer>` to filter even numbers from a list.
+* Combine two predicates using `and()` to check whether a number is positive and even.
+* Combine two predicates using `or()` to check whether a number is negative or greater than 100.
+* Use `Predicate.negate()` to filter numbers that do not satisfy a given condition.
+* Use `Function.andThen()` to convert a string to uppercase and then calculate its length.
+* Use `Function.compose()` to apply two transformations in the correct order.
+* Use `Consumer.andThen()` to print a value and then log that the operation has completed.
+* Use a method reference to replace a lambda expression that prints each element of a list.
+* Use a constructor reference to create objects through a functional interface.
+* Create a generic functional interface that accepts an input of type `T` and returns a result of type `R`.
+* Implement the Strategy design pattern using a functional interface for different discount calculations.
+* Implement a reusable method that accepts a `Predicate<Employee>` and filters a list of employees based on the supplied condition.
+* Implement a reusable method that accepts a `Function<Employee, String>` and extracts a selected employee attribute.
+* Create a validation framework using a list of `Predicate<String>` instances to validate a password against multiple rules.
+* Create a custom functional interface whose abstract method declares a checked exception, and use it to execute an operation that may fail.
+* Adapt a method that throws a checked exception so it can be used in a Stream pipeline without duplicating exception-handling logic.
+* Implement a callback mechanism using a custom functional interface that receives the result of a completed operation.
+* Create a method that accepts a `Supplier<List<String>>` and invokes it only when the list is required.
+* Demonstrate the difference between a lambda expression and an anonymous inner class when accessing `this`.
+* Demonstrate how effectively final local variables can be captured by a lambda expression.
+* Create overloaded methods that accept different functional interfaces, demonstrate a lambda ambiguity, and resolve it using an explicit cast or typed variable.
+* Use `IntPredicate`, `IntFunction`, and `ToIntFunction` in a program that processes integers without unnecessary boxing.
+* Implement a function-composition utility that accepts multiple `Function<Integer, Integer>` transformations and applies them sequentially.

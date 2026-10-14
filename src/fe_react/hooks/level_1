@@ -1,0 +1,30 @@
+* Explain the lifecycle behavior of useEffect in functional components.
+* What is the difference between useEffect and useLayoutEffect?
+* How does React compare dependencies in useEffect?
+* How do you prevent unnecessary executions of useEffect?
+* How do you update state based on its previous value?
+* Why should functional state updates be used in certain situations?
+* What is a stale closure in React Hooks?
+* How can you fix stale closure issues in useEffect?
+* How do you manage multiple related state variables using Hooks?
+* When should you use useReducer instead of useState?
+* How does useContext help with state sharing?
+* What are the limitations of useContext?
+* How do you prevent unnecessary re-renders when using Context?
+* How does useMemo improve performance?
+* When should you avoid using useMemo?
+* How does useCallback help optimize child components?
+* Why does useCallback not always improve performance?
+* How do you use useRef to access a DOM element?
+* How can useRef store a mutable value without triggering a re-render?
+* How do you implement event listeners using useEffect?
+* How do you handle API calls using useEffect?
+* How do you cancel an API request when a component unmounts?
+* How do you handle loading and error states with Hooks?
+* How do you share logic between components using custom Hooks?
+* What naming convention should custom Hooks follow?
+* How do you test custom Hooks?
+* How do you use useId in React?
+* What is the purpose of useImperativeHandle?
+* What is the difference between useEffect and useInsertionEffect?
+* How do you debug performance issues related to Hooks?

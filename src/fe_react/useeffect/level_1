@@ -1,0 +1,30 @@
+* Explain the lifecycle of useEffect in a React functional component.
+* How does React compare dependency values in the useEffect dependency array?
+* What happens when an object is included in the dependency array?
+* Why can functions in the dependency array cause repeated effect execution?
+* What is a stale closure in useEffect?
+* How do you prevent stale state values inside useEffect?
+* What is the exhaustive-deps ESLint rule?
+* Why should all reactive dependencies be included in the dependency array?
+* How do you avoid unnecessary useEffect executions?
+* How do you prevent infinite loops caused by useEffect?
+* How do you fetch API data and handle loading and error states using useEffect?
+* How do you cancel an API request when a component unmounts?
+* How do you use AbortController with useEffect?
+* How do you prevent race conditions during API requests?
+* How do you clean up setInterval and setTimeout inside useEffect?
+* How do you subscribe and unsubscribe from WebSocket events using useEffect?
+* How do you add and remove browser event listeners using useEffect?
+* How do you synchronize React state with localStorage using useEffect?
+* How do you handle multiple side effects in a single component?
+* When should you split logic into multiple useEffect hooks?
+* How do you create a custom hook that uses useEffect?
+* How do you synchronize component state with props using useEffect?
+* What is the difference between useEffect and useMemo?
+* What is the difference between useEffect and useCallback?
+* How does useEffect behave when a component's props change?
+* How do React Strict Mode and useEffect interact?
+* How do you test useEffect-based API calls?
+* How do you test cleanup functions in useEffect?
+* How do you debug an effect that runs more often than expected?
+* When should you avoid using useEffect altogether?

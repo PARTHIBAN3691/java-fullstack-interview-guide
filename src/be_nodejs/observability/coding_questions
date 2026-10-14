@@ -1,0 +1,30 @@
+* Write a Node.js program that logs messages using different log levels.
+* Create an Express middleware that logs the HTTP method, URL, status code, and response time.
+* Implement structured JSON logging using Pino or Winston.
+* Write middleware that generates a unique request ID for every incoming request.
+* Modify an Express application to include the request ID in every log entry.
+* Write a utility function that logs errors with their stack traces and contextual information.
+* Implement log redaction to remove passwords, authorization headers, and access tokens.
+* Write a Node.js endpoint that returns process uptime and memory usage.
+* Create an Express health-check endpoint that reports whether the application is running.
+* Implement separate liveness and readiness endpoints for a Node.js service.
+* Write a program that measures HTTP request duration using performance APIs.
+* Create an Express middleware that counts total requests and failed requests.
+* Implement a metrics endpoint that exposes request counters and latency histograms for Prometheus.
+* Write a Node.js program that records heap usage and RSS memory at regular sampling intervals.
+* Create a program that measures event-loop delay using Node.js performance hooks.
+* Write a script that detects when memory usage exceeds a configured threshold and emits a warning.
+* Implement an Express error-handling middleware that logs errors with request context.
+* Create a Node.js application instrumented with OpenTelemetry.
+* Add OpenTelemetry tracing to an Express application and create spans for custom business operations.
+* Write a program that propagates trace context across outbound HTTP requests.
+* Instrument a database operation so that it appears as a span in a distributed trace.
+* Create a background worker that records processing duration, success count, and failure count.
+* Write a program that correlates logs with trace IDs and span IDs.
+* Implement a configurable sampling strategy for application tracing.
+* Create an Express middleware that records response-time metrics by route and HTTP status.
+* Write a program that periodically exports custom metrics to a monitoring backend.
+* Implement graceful shutdown that stops accepting new requests and flushes pending telemetry.
+* Create a telemetry exporter configuration with error handling and bounded retry behavior.
+* Write unit tests for logging middleware, health-check endpoints, and metrics collection.
+* Build a complete Node.js observability module that combines structured logging, metrics, distributed tracing, health checks, and centralized error reporting.

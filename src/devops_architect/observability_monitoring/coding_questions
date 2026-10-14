@@ -1,0 +1,38 @@
+* Write a Java Spring Boot endpoint that exposes application health and readiness information using Spring Boot Actuator.
+* Write a Spring Boot configuration that exposes application metrics through Micrometer and Prometheus.
+* Write a Java program that records request counts, response statuses, and request latency using Micrometer.
+* Write a Java interceptor or filter that records request duration and error counts for REST endpoints.
+* Write a Java logging configuration that emits structured JSON logs containing timestamp, service name, request ID, and trace ID.
+* Write a Java example that propagates correlation IDs across outbound HTTP calls.
+* Write a Java example that instruments a service operation using OpenTelemetry spans and records relevant attributes and errors.
+* Write a Java example that propagates trace context across an asynchronous task or message-processing workflow.
+* Write a PromQL query that calculates the request rate per second for each service.
+* Write a PromQL query that calculates the percentage of HTTP requests returning 5xx responses over a five-minute window.
+* Write a PromQL query that calculates p50, p95, and p99 request latency from histogram buckets.
+* Write a PromQL query that identifies the top five services by request error rate.
+* Write a PromQL query that identifies Kubernetes pods with high CPU utilization relative to their resource limits.
+* Write a PromQL query that detects frequent container restarts over a specified time window.
+* Write a PromQL query that calculates the percentage of successful requests against a defined availability SLO.
+* Write a PromQL query or recording-rule example that calculates error-budget burn rate for a service.
+* Write a Grafana dashboard definition that displays request rate, error rate, latency percentiles, and resource saturation.
+* Write a Grafana alert rule that fires when an API's p95 latency exceeds a defined threshold for a sustained period.
+* Write an OpenTelemetry Collector configuration that receives OTLP data and exports traces to a supported tracing backend.
+* Write an OpenTelemetry Collector configuration that receives telemetry, applies batching and memory-limiting processors, and exports data to configured backends.
+* Write an OpenTelemetry Collector configuration that filters sensitive attributes and drops unwanted telemetry before export.
+* Write a Jaeger-based tracing setup for a sample microservices application and demonstrate trace-context propagation between services.
+* Write a log-processing pipeline that parses JSON application logs and extracts timestamp, severity, service name, request ID, and trace ID.
+* Write an Elasticsearch query that finds the most frequent error messages for a selected service during a specified time range.
+* Write a Splunk Search Processing Language (SPL) query that calculates error rates grouped by service and time interval.
+* Write a Python program that parses application logs and groups errors by service, exception type, and time window.
+* Write a Python program that calculates request availability, latency percentiles, and error rates from a sample request dataset.
+* Write a Python program that calculates an error budget for a service given its SLO target and observed failure rate.
+* Write a Python program that detects an SLO burn-rate violation using configurable short-term and long-term windows.
+* Write a Python program that reads resource-utilization metrics and applies the USE methodology to identify saturation risks.
+* Write a Python program that analyzes request rate, error rate, and duration metrics using the RED methodology.
+* Write a Python program that correlates trace spans by trace ID and identifies the slowest service in a distributed request.
+* Write a Python program that detects missing telemetry intervals and reports affected services and time ranges.
+* Write a script that compares expected application targets with Prometheus scrape targets and reports missing or unhealthy targets.
+* Write a script that identifies metrics with excessive label cardinality and recommends candidate labels for review.
+* Write a Kubernetes monitoring configuration that collects pod, node, and application metrics and makes them available to a Prometheus-compatible backend.
+* Write an automated test that verifies an application exposes the required metrics, health endpoints, and trace-context headers.
+* Write an observability validation script that checks whether every critical service has dashboards, actionable alerts, defined SLIs, and an approved SLO.

@@ -1,0 +1,30 @@
+* A Spring Boot application returns HTTP 500 errors, but the corresponding stack traces are missing from Cloud Logging. How would you investigate the issue?
+* A production service generates thousands of error logs per minute after a deployment. How would you identify the root cause and reduce alert noise?
+* A developer can access application logs but cannot view Admin Activity audit logs. How would you investigate the IAM permissions involved?
+* An application logs sensitive customer information in request payloads. What immediate remediation and long-term safeguards would you implement?
+* A distributed transaction crosses three Java microservices, but the logs cannot be correlated. How would you implement request IDs and trace context propagation?
+* A Cloud Run service logs requests locally during testing, but logs are missing after deployment. How would you investigate stdout, stderr, logging configuration, and permissions?
+* A GKE application produces duplicate log entries after a logging agent or application configuration change. How would you isolate the source of duplication?
+* An alert based on an error log triggers repeatedly even though the service is healthy. How would you redesign the log filter, metric, and alerting policy?
+* A production incident occurs, but the relevant logs have already expired. How would you improve retention and preservation for critical services?
+* A log sink exports records to BigQuery, but the expected records are missing. How would you investigate sink filters, permissions, exclusions, and destination configuration?
+* A security team needs immediate notification when an administrator changes a sensitive IAM policy. How would you implement audit-log-based detection and alerting?
+* A Java application becomes slower after detailed request logging is enabled. How would you identify and reduce logging overhead?
+* A service emits large multiline stack traces that are difficult to search. How would you improve structured exception logging?
+* An incident response team needs to identify all requests associated with a specific trace ID. How would you search and correlate the relevant log entries?
+* A high-volume application exceeds its logging budget after a traffic increase. How would you reduce ingestion without losing critical diagnostic information?
+* An application writes JSON logs, but Logs Explorer treats them as plain text. How would you investigate the logging format and ingestion path?
+* Audit logs show an unexpected deletion of a production resource. How would you determine who performed the action and what happened before and after it?
+* A log-based metric stops reporting failures after an application schema change. How would you diagnose the query and payload-field mismatch?
+* A log sink starts failing after a destination project's IAM policy changes. How would you troubleshoot cross-project permissions?
+* A Pub/Sub log export pipeline falls behind during a traffic spike. How would you investigate backlog, subscriber capacity, retries, and message processing?
+* A production issue affects only one region, but logs from several regions use inconsistent resource labels. How would you normalize and compare the evidence?
+* A developer accidentally logs authorization headers and session tokens. How would you contain the exposure and prevent future incidents?
+* A business-critical operation succeeds, but its completion log is missing because the process terminates unexpectedly. How would you improve auditability and reliability?
+* A team wants to retain security logs for years but application debug logs for only a few days. How would you design log routing and retention?
+* A Cloud Logging query times out or returns too many entries during an incident. How would you refine the query for faster investigation?
+* A Java service records exceptions but does not include the relevant user request or transaction identifier. How would you improve the log context?
+* An audit requires proof of which service account accessed a sensitive dataset. Which logs would you inspect, and how would you correlate them?
+* A team migrates from plain-text logging to structured JSON, and existing dashboards stop working. How would you migrate queries and metrics safely?
+* A critical alert is missed because the log-based metric only matches one error-message format. How would you make detection resilient to changing messages?
+* An organization needs centralized logging across multiple projects while preventing one team's developers from accessing another team's sensitive logs. How would you design the solution?

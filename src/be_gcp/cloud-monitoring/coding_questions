@@ -1,0 +1,30 @@
+* Write a Java program using the Google Cloud Monitoring client library to list available metric descriptors.
+* Write a Java program that queries a time series for a specified Google Cloud metric.
+* Write a Java utility that constructs a time interval for querying Cloud Monitoring metrics.
+* Write a Java program that retrieves CPU utilization metrics for a Compute Engine instance.
+* Write a Java program that queries request count and latency metrics for a Cloud Run service.
+* Write a Java program that publishes a custom metric using the Cloud Monitoring API.
+* Write a Java program that publishes a custom metric with service name, environment, and operation labels.
+* Write a Java utility that validates custom metric labels and prevents unbounded cardinality.
+* Write a Java program that records the processing duration of a business transaction as a custom metric.
+* Write a Spring Boot interceptor that records HTTP request counts and response latency.
+* Write a Spring Boot filter that records response status codes and request duration for monitoring.
+* Write a Java utility that records application-level success and failure counters.
+* Write a Java program that calculates average and percentile latency from a collection of request-duration measurements.
+* Write a Java utility that calculates an error rate from total request and failed request counts.
+* Write a Java program that evaluates an error rate against a configurable alert threshold.
+* Write a Java utility that calculates SLO compliance and remaining error budget from availability data.
+* Write a Java program that calculates multi-window error-budget burn rates using supplied time-series data.
+* Write a Java program that retrieves monitoring metrics for a specified service and time range.
+* Write a Java utility that aggregates metric samples by service, environment, and region.
+* Write a Java program that detects missing metric samples within an expected reporting interval.
+* Write a Java service that publishes JVM heap usage and garbage collection metrics for monitoring.
+* Write a Java program that measures thread-pool utilization and reports saturation metrics.
+* Write a Spring Boot scheduled job that checks application health metrics and records a monitoring result.
+* Write a Java program that queries Cloud Monitoring metrics and correlates anomalous periods with timestamps from application logs.
+* Write a Java utility that identifies services whose p95 or p99 latency exceeds a configurable SLO threshold.
+* Write unit tests for a custom metric publisher, including successful publication, permission errors, and quota failures.
+* Write unit tests for an SLO calculator covering availability, error budgets, burn rates, and missing samples.
+* Write unit tests for a latency analyzer that calculates percentiles and handles empty or invalid datasets.
+* Write a Java program that creates or updates an alerting policy using the Cloud Monitoring API.
+* Write a Java integration test strategy for validating custom metrics, dashboards, and alert policies in a test Google Cloud project.

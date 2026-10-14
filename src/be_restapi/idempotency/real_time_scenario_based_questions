@@ -1,0 +1,30 @@
+* A customer submits a payment request, but the client times out before receiving the response. The customer retries and gets charged twice. How would you investigate and fix the issue?
+* Two identical payment requests arrive simultaneously at different application instances. How would you ensure only one payment is initiated?
+* A payment gateway processes a payment successfully, but your service crashes before updating the idempotency record. How would you recover safely?
+* An API receives the same idempotency key with a different payment amount. How should the API respond?
+* A request is marked IN_PROGRESS, but the application instance processing it crashes. How would you determine whether to retry or recover the operation?
+* A database transaction commits successfully, but the application receives a connection timeout. How would you prevent the client retry from duplicating the operation?
+* Your API uses Redis to store idempotency keys, but Redis loses data during failover. What business risks arise, and how would you mitigate them?
+* A client retries a payment request after the idempotency key has expired. How would you prevent an accidental duplicate charge?
+* A customer uses the same idempotency key for two different orders. How would you scope keys and validate requests?
+* An API gateway retries POST requests automatically. How would you ensure that retries do not create duplicate orders?
+* A payment provider supports idempotency keys, but your internal ledger service does not. How would you prevent duplicate ledger entries?
+* A service publishes an event twice after a transaction succeeds. How would you make downstream consumers idempotent?
+* A message consumer updates the database but crashes before acknowledging the message. How would you prevent duplicate processing after redelivery?
+* An order workflow successfully reserves inventory but fails while creating a payment. How would you recover without duplicating the inventory reservation?
+* A user clicks the checkout button multiple times within a few seconds. How would you protect the API against duplicate order creation?
+* A load balancer sends retries to different application instances. Why does in-memory idempotency fail, and what would you change?
+* Your idempotency table grows rapidly and affects database performance. How would you manage retention and cleanup safely?
+* A retry arrives while the original request is still processing. Should the API wait, return a conflict, or replay a response? Explain your design.
+* A payment gateway times out, and you cannot determine whether the transaction succeeded. How would you reconcile the outcome before retrying?
+* Two services generate different request fingerprints for semantically identical JSON payloads. How would you make fingerprinting consistent?
+* A deployment changes the format of stored idempotency responses. How would you preserve compatibility with retries during the rollout?
+* A client sends a new idempotency key for every retry. Why does this defeat the mechanism, and how would you improve the client contract?
+* A regional outage causes the same request to reach two regions. How would you prevent duplicate processing across regions?
+* An idempotency key is accidentally shared across different customers. What security and correctness problems could occur?
+* A batch payment request contains 100 payments, and 20 fail after the remaining payments succeed. How would you design idempotency and retry behavior?
+* A fraud-check service times out after the payment has been authorized. How would you resume the workflow without repeating completed side effects?
+* A business operation succeeds, but serialization of the response fails. How would you handle subsequent requests using the same key?
+* A duplicate request returns HTTP 409 instead of the original successful response. Is this acceptable, and what API contract would you establish?
+* Your idempotency mechanism prevents duplicate requests but creates excessive database locking under peak traffic. How would you optimize it?
+* Production monitoring shows a sudden increase in idempotency conflicts. How would you determine whether the cause is client retries, a network issue, or a defect?

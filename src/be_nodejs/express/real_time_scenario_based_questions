@@ -1,0 +1,30 @@
+* Your Express API returns a 404 response for a valid endpoint. How would you troubleshoot the issue?
+* An API request remains pending indefinitely. How would you identify whether middleware or a controller is responsible?
+* A middleware function is executed multiple times for a single request. What could cause this behavior?
+* Your Express application receives malformed JSON and returns an unhandled error. How would you fix it?
+* An API works locally but fails behind an Nginx reverse proxy. How would you investigate the problem?
+* Your Express API becomes slow when traffic increases. How would you identify the bottleneck?
+* A controller contains database queries, validation, and business logic in one function. How would you refactor it?
+* Two middleware functions modify the same request property. How would you prevent unexpected behavior?
+* Your application returns an incorrect HTTP status code for validation failures. How would you standardize error responses?
+* A downstream payment service takes 30 seconds to respond. How would you protect your Express API from hanging requests?
+* A client retries a payment request after a network timeout, causing duplicate payments. How would you prevent this?
+* Your Express application crashes when an asynchronous route handler rejects a promise. How would you resolve the issue?
+* An API endpoint is accessible without authentication even though authentication middleware exists. How would you troubleshoot it?
+* Users can access administrator endpoints despite having regular user roles. How would you correct the authorization design?
+* An Express application experiences high memory consumption while uploading large files. How would you investigate and fix it?
+* A file upload API accepts unsupported file types. How would you secure the upload process?
+* Your API returns different response formats for similar errors. How would you introduce a consistent response structure?
+* CORS errors occur only when the frontend is deployed to production. How would you troubleshoot them?
+* An Express application runs correctly on one server but fails when multiple instances are deployed. What would you investigate?
+* Rate limiting works on one instance but can be bypassed by distributing requests across multiple instances. How would you fix it?
+* Your Express application loses user sessions after a deployment. What could be the cause, and how would you address it?
+* A database connection pool becomes exhausted under heavy traffic. How would you identify and resolve the issue?
+* An API endpoint processes the same order multiple times because of concurrent requests. How would you prevent duplicate processing?
+* A middleware adds significant latency to every API request. How would you measure and optimize its performance?
+* Your Express application reports successful responses even when database operations fail. How would you correct the error-handling flow?
+* A health-check endpoint returns success while the database is unavailable. How would you redesign the health checks?
+* Logs from multiple Express services cannot be correlated during an incident. How would you improve observability?
+* A graceful shutdown causes active requests to fail during deployment. How would you implement a safer shutdown sequence?
+* Your Express API exposes stack traces and internal database details to clients. How would you fix this security issue?
+* You need to migrate a monolithic Express application into independently deployable services. How would you plan the migration?

@@ -1,0 +1,30 @@
+* Explain the lifecycle of an ES6 module from loading to evaluation.
+* How does the JavaScript engine resolve module dependencies?
+* What are live bindings in ES6 modules?
+* How do live bindings differ from copied values?
+* Why can an imported binding not be reassigned by the importing module?
+* How does the module system handle circular dependencies?
+* What is the difference between linking and evaluating a module?
+* How can circular dependencies expose uninitialized bindings?
+* What is the temporal dead zone in the context of cyclic module dependencies?
+* How does top-level await affect module evaluation?
+* What happens when a module containing top-level await is imported?
+* How can top-level await affect dependency evaluation order?
+* What are the limitations and risks of using top-level await?
+* How does dynamic import() affect application startup performance?
+* How would you implement code splitting using dynamic imports?
+* How does tree shaking work with static ES module imports and exports?
+* Why can dynamic property access or certain side effects limit tree shaking?
+* What is the sideEffects field in package.json, and how can bundlers use it?
+* How do CommonJS and ES modules differ in their dependency analysis?
+* Why can mixing CommonJS and ES modules create interoperability challenges?
+* How do Node.js package exports and imports fields control module resolution?
+* What are conditional exports in package.json?
+* How do browser module resolution and Node.js module resolution differ?
+* How do import maps influence module resolution in browsers?
+* How can duplicate module instances occur when the same module is resolved through different paths?
+* What are the consequences of loading multiple instances of a stateful module?
+* How would you design a plugin architecture using JavaScript modules?
+* How can modules help enforce boundaries between application layers?
+* How would you diagnose a module resolution error in a production build?
+* How would you design a large application to minimize circular dependencies and improve code splitting?

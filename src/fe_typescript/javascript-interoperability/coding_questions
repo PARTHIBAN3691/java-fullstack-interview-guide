@@ -1,0 +1,30 @@
+* Create a JavaScript file and import its function into a TypeScript file.
+* Configure a TypeScript project to include both JavaScript and TypeScript source files.
+* Enable checkJs and demonstrate type checking in a JavaScript file.
+* Use @ts-check in a JavaScript file and fix a parameter type error.
+* Add JSDoc annotations to a JavaScript function that accepts two numbers and returns a number.
+* Define a JavaScript object type using JSDoc @typedef and reuse it in multiple functions.
+* Write a JavaScript function with optional parameters and document it using JSDoc.
+* Create a generic JavaScript function using the JSDoc @template tag.
+* Write a JavaScript class and create a declaration file that describes its public API.
+* Create a declaration file for a JavaScript module that exports a function.
+* Declare types for a JavaScript utility library that does not provide TypeScript definitions.
+* Import and use a JavaScript class from a TypeScript module.
+* Create a TypeScript function and call it from a JavaScript module after compilation.
+* Configure a project to compile JavaScript files while excluding their output from a specific build.
+* Create a CommonJS module using module.exports and consume it from TypeScript.
+* Create an ECMAScript module with named exports and import it into TypeScript.
+* Demonstrate how esModuleInterop affects importing a CommonJS dependency.
+* Write a declaration file for a JavaScript module that exports a constructor and static methods.
+* Create a JavaScript module with callback functions and add type information using JSDoc.
+* Use import type in a JavaScript JSDoc annotation to reference a TypeScript type.
+* Create a type-safe TypeScript wrapper around an untyped JavaScript function.
+* Write a declaration file that describes overloaded functions in a JavaScript library.
+* Create a TypeScript project that imports JSON configuration and uses its properties safely.
+* Configure package.json and TypeScript settings for a library that supports ESM and CommonJS consumers.
+* Create a JavaScript module with dynamically assigned properties and define a suitable TypeScript interface for it.
+* Write a TypeScript adapter that validates unknown values returned by a JavaScript library.
+* Demonstrate module augmentation by extending the declarations of a third-party JavaScript package.
+* Create a JavaScript function with a discriminated return structure and document its types for TypeScript consumers.
+* Build a small mixed JavaScript and TypeScript project with shared type declarations and strict checking.
+* Create a reusable typed wrapper for a legacy JavaScript API and demonstrate safe usage from TypeScript.

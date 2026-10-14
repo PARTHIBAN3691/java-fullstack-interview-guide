@@ -1,0 +1,30 @@
+* Write a Dockerfile for a Java Spring Boot application that builds the JAR and runs it in a separate runtime stage.
+* Write a multi-stage Dockerfile for a Node.js application that installs dependencies, builds the application, and copies only the production output into the final image.
+* Write a Dockerfile that runs an application as a non-root user and exposes only the required application port.
+* Write a Dockerfile that uses a configurable application profile and supports environment variables without embedding secrets.
+* Write a Dockerfile that uses a distroless Java runtime image to execute a packaged application.
+* Write a Dockerfile that uses BuildKit secret mounts to access a private package repository without storing credentials in image layers.
+* Write a Dockerfile that uses cache mounts to improve dependency installation performance during repeated builds.
+* Write a Docker Compose configuration for a Spring Boot application and PostgreSQL database with a persistent named volume.
+* Write a Docker Compose configuration that places frontend, backend, and database containers on appropriately isolated networks.
+* Write a Docker Compose configuration that defines CPU and memory resource constraints for application services.
+* Write a Docker Compose configuration with health checks and service startup dependencies for an application and its database.
+* Write a shell script that builds a Docker image, tags it with a Git commit identifier, and pushes it to a private registry.
+* Write a script that checks whether a container image reference uses an immutable digest rather than a mutable tag.
+* Write a script that compares the SHA-256 digest of a locally built image with the digest of the image stored in a registry.
+* Write a CI pipeline step that scans a container image and fails when critical vulnerabilities exceed the configured policy.
+* Write a script that parses container image scan results and summarizes vulnerabilities by severity and package.
+* Write a script that lists running containers, their image references, restart counts, and health status.
+* Write a script that detects containers running as root or using privileged mode and reports the security risks.
+* Write a script that identifies containers without configured CPU or memory limits.
+* Write a script that inspects container exit codes and recent logs to summarize possible startup failures.
+* Write a shell script that stops a container gracefully, waits for a configurable timeout, and reports whether forced termination was required.
+* Write a Docker health-check command that validates a Spring Boot application's readiness endpoint.
+* Write a script that verifies that a container's writable layer has not exceeded a configured storage threshold.
+* Write a Docker Compose configuration that uses read-only root filesystems and explicitly configured writable temporary directories.
+* Write a script that checks Dockerfiles for risky instructions such as embedding credentials, using privileged execution, or copying unnecessary files.
+* Write a script that verifies that all production image references in deployment manifests match approved image digests.
+* Write a multi-platform Docker build command or CI pipeline step that builds and publishes images for both AMD64 and ARM64.
+* Write a script that compares two Docker image manifests and reports differences in architecture, digest, and layer metadata.
+* Write a script that inventories image tags in a registry and identifies candidates for cleanup based on age and deployment usage.
+* Write a Docker Compose configuration that demonstrates graceful shutdown, restart policies, health checks, and persistent storage for a containerized service.

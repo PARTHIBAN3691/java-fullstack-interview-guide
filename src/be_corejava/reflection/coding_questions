@@ -1,0 +1,21 @@
+
+* Write a Java program to obtain a `Class` object using `Class.forName()`, `.class`, and `getClass()`.
+* Write a program that prints the class name, superclass, and implemented interfaces of a given object.
+* Write a program that lists all public methods of a class using Reflection.
+* Write a program that lists all declared methods, including private methods, of a class.
+* Write a program that lists the fields of a class, including their names, types, and modifiers.
+* Write a program that retrieves and invokes a method dynamically using its name.
+* Write a program that invokes an overloaded method by specifying its parameter types.
+* Write a program that creates an object using a no-argument constructor through Reflection.
+* Write a program that invokes a parameterized constructor using `Constructor.newInstance()`.
+* Write a program that reads and modifies a private field using Reflection, handling access restrictions appropriately.
+* Write a program that invokes a private method using Reflection and handles `InvocationTargetException`.
+* Write a program that retrieves runtime annotations from a class and its methods.
+* Create a custom `@Required` annotation and use Reflection to validate annotated fields.
+* Write a program that checks whether a method is static, final, abstract, or synchronized.
+* Write a program that extracts generic type information from a field declared as `List<String>`.
+* Write a program that inspects a class's generic superclass and resolves a type parameter when possible.
+* Write a program that identifies synthetic and bridge methods in a class.
+* Write a program that loads a class by name from a configuration file and instantiates it through a common interface.
+* Write a program that scans a class for methods annotated with a custom annotation and invokes them.
+* Write a small Reflection-based dependency injection container that creates objects and injects dependencies through annotated constructors.

@@ -1,0 +1,30 @@
+* How would you configure a Maven project to use dependencies from a private artifact repository?
+* How do Maven dependency scopes affect the build and runtime classpaths?
+* What is the difference between Maven's `dependencyManagement` and `dependencies` sections?
+* How does Maven resolve transitive dependencies when multiple versions are present?
+* How would you exclude an unwanted transitive dependency in Maven?
+* What is the difference between the Gradle `implementation`, `api`, `compileOnly`, and `runtimeOnly` configurations?
+* How does Gradle's dependency resolution differ from Maven's?
+* What is the Gradle Wrapper, and why should it be committed to version control?
+* How would you manage npm dependencies using `package.json` and `package-lock.json`?
+* What is the difference between `npm install` and `npm ci`?
+* How do semantic version ranges affect dependency resolution in npm?
+* How would you configure Nexus or Artifactory as a proxy for public package repositories?
+* What is the difference between a hosted repository, a proxy repository, and a repository group?
+* How would you organize artifact repositories across development, testing, and production environments?
+* How do container registries manage image tags and image digests?
+* Why is a container image digest more reliable than a mutable tag for identifying an image?
+* How would you enforce versioning standards across multiple teams and repositories?
+* How would you identify and resolve dependency version conflicts in a Java project?
+* How would you prevent accidental upgrades of transitive dependencies?
+* How would you integrate dependency vulnerability scanning into a CI pipeline?
+* What is the difference between software composition analysis and static application security testing?
+* How would you configure a pipeline to fail when a dependency has a critical vulnerability?
+* Why should build artifacts be immutable after publication?
+* How would you promote the same artifact from development to staging and production?
+* What factors can cause two builds of the same source revision to produce different artifacts?
+* How can build caches improve performance, and what risks do they introduce?
+* How would you generate an SBOM for a Java or Node.js application?
+* What is the difference between SPDX and CycloneDX SBOM formats?
+* How would you verify the integrity of an artifact downloaded from a repository?
+* What metrics would you track to evaluate build and artifact management effectiveness?

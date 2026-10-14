@@ -1,0 +1,30 @@
+* A Java application throws StackOverflowError when processing deeply nested recursive calls. How would you identify the cause and resolve it?
+* A production application throws OutOfMemoryError: Java heap space. How would you determine whether the problem is excessive allocation or a memory leak?
+* An application runs successfully for several hours but eventually throws OutOfMemoryError: Metaspace. What would you investigate?
+* A service creates thousands of worker threads and eventually fails with an inability to create native threads. How would you diagnose the issue?
+* An application has low Heap usage but its operating-system memory consumption continues to increase. Which Runtime Data Areas and native allocations would you investigate?
+* A developer believes that increasing `-Xmx` will fix every JVM memory problem. How would you explain why this is incorrect?
+* Two threads update fields of the same object. Explain how the shared Heap and thread-private stacks affect the situation.
+* A method creates a large object and returns it to another method. Explain how the object reference and object lifetime are handled.
+* A recursive method creates temporary objects at each level and eventually fails. How would you distinguish Stack exhaustion from Heap exhaustion?
+* A long-running application repeatedly creates class loaders to load plugins. Metaspace usage keeps increasing. How would you investigate class unloading and class-loader leaks?
+* A web application stores request objects in a static collection. Heap usage increases continuously. Explain how Runtime Data Areas help identify the issue.
+* A developer assumes that all local variables are always stored in Stack memory. How would you explain the effects of JIT optimization?
+* A method executes slowly for some time and then becomes faster after JIT compilation. Explain what changes and what remains logically consistent in Runtime Data Areas.
+* An application has sufficient free Heap memory but fails while allocating a large direct ByteBuffer. What would you investigate?
+* A Java process uses more physical memory than its configured `-Xmx` limit. How would you explain and diagnose the difference?
+* A service fails after increasing its thread pool size even though the business workload has not changed. Which memory areas might be responsible?
+* A Java application works with a small input but fails with a large input due to deeply nested method calls. How would you identify the relevant memory constraint?
+* A production system experiences frequent full garbage collections followed by OutOfMemoryError. How would you analyze Heap usage and object retention?
+* An application throws OutOfMemoryError: GC overhead limit exceeded. What would you examine in the Heap and garbage-collection logs?
+* A plugin-based application unloads plugins, but memory usage does not decrease. How would you check for retained class loaders and class metadata?
+* A Java application calls a native library that allocates large amounts of memory. Heap dumps do not explain the total memory usage. What additional diagnostics would you use?
+* A developer increases `-Xss` to resolve StackOverflowError, but the application now fails to create more threads. Explain why this can happen.
+* A multithreaded application experiences memory pressure after each request creates several temporary objects. How would you determine whether the issue is allocation rate, retention, or thread-stack usage?
+* A method is optimized by the JIT compiler, and a debugger appears to show unexpected local-variable values. How can optimized execution explain this behavior?
+* An application throws OutOfMemoryError: Metaspace after repeatedly redeploying a web application. What common references can prevent class-loader unloading?
+* A service shows stable Heap usage but continuously increasing native memory usage. How would you narrow down the responsible memory category?
+* A Java program creates many short-lived objects and experiences frequent garbage collection. Which Runtime Data Area is most directly involved, and what evidence would you collect?
+* A production application fails only under high concurrency. How would you investigate the interaction among thread stacks, Heap allocation, garbage collection, and native memory?
+* A developer wants to know whether a local object can be optimized away by the JIT compiler. What factors would you examine, and how would you verify the optimization?
+* Design a diagnostic approach for a JVM process experiencing memory exhaustion without an obvious Java Heap leak.

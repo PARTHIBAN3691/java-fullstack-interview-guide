@@ -1,0 +1,30 @@
+* How do you configure an emptyDir Volume in a Pod?
+* How do you share files between two containers using a common Volume?
+* How do you configure a hostPath Volume for a container?
+* How do you create a PersistentVolume using a local storage path?
+* How do you create a PersistentVolumeClaim and attach it to a Pod?
+* How do you configure dynamic provisioning using a StorageClass?
+* How do you mount a PVC into a Spring Boot application?
+* How do you configure a Volume to store application logs?
+* How do you configure a Volume mount with read-only access?
+* How do you mount a ConfigMap as a Volume in a Java application?
+* How do you mount a Secret as a Volume instead of using environment variables?
+* How do you update files mounted from a ConfigMap?
+* How do you handle Secret rotation when Secrets are mounted as Volumes?
+* How do you configure memory-backed emptyDir storage?
+* How do you set a size limit for an emptyDir Volume?
+* How do you configure subPath for mounting a specific directory or file?
+* What are the limitations of using subPath with projected configuration updates?
+* How do you configure a Pod to use multiple Volumes?
+* How do you use a PVC with a StatefulSet?
+* How do you configure storage requests and access modes in a PVC?
+* How do you expand a PVC when the application requires more storage?
+* How do you configure a StorageClass with volumeBindingMode set to WaitForFirstConsumer?
+* How do you troubleshoot a PVC stuck in Pending state?
+* How do you troubleshoot a VolumeMount error caused by incorrect permissions?
+* How do you configure securityContext settings for mounted storage?
+* How do you preserve application data when a Pod is deleted and recreated?
+* How do you back up and restore data stored in a PVC?
+* How do you migrate application data between PersistentVolumes?
+* How do you monitor Volume capacity and storage consumption?
+* How do you safely delete a PVC without accidentally losing important data?

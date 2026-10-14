@@ -1,0 +1,30 @@
+* Write a Dockerfile to package and run a Spring Boot application from an executable JAR.
+* Create a multi-stage Dockerfile that builds a Java application using Maven and copies the JAR into a runtime image.
+* Write a Dockerfile for a Java application built with Gradle.
+* Create a Dockerfile that runs the application as a non-root user.
+* Write a .dockerignore file for a Java project that excludes Git metadata, build output, IDE files, and local configuration.
+* Write Docker commands to build an image, tag it with a version, and run a container.
+* Write Docker commands to inspect a container, view its logs, execute a shell command, and copy a file from it.
+* Create a Docker Compose file for a Spring Boot application and PostgreSQL database.
+* Extend a Compose configuration to include Redis and connect it to a Java service.
+* Create a Docker network and connect two containers so they can communicate using container DNS names.
+* Write Docker commands to configure port mapping and environment variables for a Spring Boot container.
+* Create a named volume and configure a PostgreSQL container to persist database data.
+* Write a Dockerfile that supports runtime configuration through environment variables.
+* Create a Docker Compose health check for PostgreSQL and configure an application dependency on a healthy database.
+* Write a shell script that checks container status and captures logs when a container exits unexpectedly.
+* Create a shell script that reports the CPU and memory usage of running containers.
+* Write a Dockerfile that optimizes Maven dependency caching using proper COPY instruction ordering.
+* Create a multi-stage Dockerfile that excludes Maven and other build tools from the final runtime image.
+* Write a Dockerfile that configures a Java application to handle termination signals correctly.
+* Create a Docker Compose configuration with separate application and database networks.
+* Write a deployment script that starts a specific image version, waits for health checks, and reports failures.
+* Create a Docker configuration that uses a pinned base-image version and runs the application with configurable JVM options.
+* Write a script that identifies dangling images, stopped containers, and unused resources without deleting persistent data.
+* Create a Docker setup that mounts an external application configuration file as read-only.
+* Write a Java Spring Boot health endpoint suitable for a container health check.
+* Create a Compose-based integration testing setup that starts a database, runs tests, and cleans up test containers afterward.
+* Write a script that collects a Java heap dump from a running container and saves it outside the container filesystem.
+* Create a Docker build script that tags images with both a release version and a Git commit identifier.
+* Write a CI/CD pipeline script that builds a Java image, runs tests, scans for vulnerabilities, and publishes the image only after successful validation.
+* Build a complete containerized Spring Boot application with a multi-stage Dockerfile, PostgreSQL persistence, environment-based configuration, health checks, secure non-root execution, logging, and documented deployment commands.

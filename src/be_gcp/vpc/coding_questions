@@ -1,0 +1,30 @@
+* Write a Java program using the Google Cloud Java client libraries to retrieve VPC network details.
+* Write a Java method that retrieves subnet information using the Compute Engine API.
+* Implement a Java method that lists all VPC networks in a Google Cloud project.
+* Write a Java method that retrieves subnet CIDR ranges and identifies potentially overlapping ranges.
+* Implement a Java utility that validates IPv4 CIDR notation before creating a subnet.
+* Write a Java method that checks whether an IP address belongs to a specified subnet.
+* Implement a Java method that calculates the first and last usable addresses for an IPv4 subnet.
+* Write a Java program that retrieves firewall rules for a Google Cloud project.
+* Implement a Java method that identifies firewall rules allowing unrestricted access to sensitive ports.
+* Write a Java method that retrieves routes associated with a VPC network.
+* Implement a Java program that lists VM instances without external IP addresses.
+* Write a Java utility that identifies VMs whose network tags match specified firewall-rule targets.
+* Implement a Java method that retrieves Cloud NAT configuration details.
+* Write a Java program that checks whether a subnet has Private Google Access enabled.
+* Implement a Java method that lists VPC Network Peering connections and their states.
+* Write a Java method that retrieves the configuration of a Cloud VPN tunnel.
+* Implement a Java utility that compares network configurations between development and production projects.
+* Write a Java program that retrieves VPC Flow Logs configuration for selected subnets.
+* Implement a Java method that detects overly broad firewall source ranges such as 0.0.0.0/0.
+* Write a Java validation utility that checks whether required firewall ports are open for an application.
+* Implement a Java service that validates network configuration before deploying a Spring Boot microservice.
+* Write a Spring Boot health indicator that checks connectivity to a private database endpoint.
+* Implement a Java connectivity checker that performs DNS resolution and TCP connection tests for a configured endpoint.
+* Write a Java method that retries transient network failures using exponential backoff.
+* Implement a Java utility that distinguishes DNS resolution failures, connection timeouts, and connection refusals.
+* Write a Java program that queries Google Cloud APIs using Application Default Credentials to inspect VPC resources.
+* Implement a Java method that detects subnets with low remaining IP address capacity using available subnet metadata.
+* Write a Java utility that validates a proposed network configuration against approved CIDR ranges and firewall policies.
+* Implement a Java service that generates a report of VPCs, subnets, routes, firewall rules, and NAT configurations.
+* Design and implement a Java-based network compliance checker that detects insecure firewall rules, missing private access settings, and unexpected external IP addresses.

@@ -1,0 +1,30 @@
+* Create a functional component wrapped with React.memo.
+* Build a parent and child component to demonstrate how React.memo prevents unnecessary re-renders.
+* Create a component that uses useMemo to calculate the sum of a large array.
+* Build a search component that uses useMemo to filter a list of products.
+* Create a component that uses useMemo to sort a list without repeating the calculation on unrelated state changes.
+* Write a component that uses useCallback to memoize an event handler.
+* Build a parent-child example using React.memo and useCallback together.
+* Create a component that passes a memoized object to a child using useMemo.
+* Write a component that demonstrates why an inline object causes a memoized child to re-render.
+* Create a component that demonstrates why an inline function causes a memoized child to re-render.
+* Build a counter that uses useCallback with a functional state update.
+* Create a component that demonstrates the difference between useMemo and useCallback.
+* Implement a memoized list item component for displaying a collection of users.
+* Build a shopping cart where individual product components avoid unnecessary re-renders.
+* Create a form with multiple memoized input components.
+* Write a component that memoizes a derived value based on multiple dependencies.
+* Build a component that uses React.memo with a custom props comparison function.
+* Create an example demonstrating the risks of ignoring a prop in a custom comparison function.
+* Write a component that demonstrates stale closures in useCallback and fixes the issue.
+* Build a Context-based application and optimize its consumers to reduce unnecessary re-renders.
+* Create a component that uses useMemo to memoize a computed configuration object.
+* Write a component that uses memoization to avoid repeating an expensive data transformation.
+* Build a parent component that updates frequently while a memoized child receives stable props.
+* Create a component that compares render behavior before and after adding React.memo.
+* Implement a memoized table row component and measure its rendering behavior.
+* Write a component that demonstrates how immutable updates work with React.memo.
+* Create a component that shows why mutating an object can prevent expected updates.
+* Build a component with an expensive calculation and profile its performance before and after useMemo.
+* Create a component that uses useCallback for a stable event handler passed to a subscription.
+* Refactor a component with excessive memoization into a simpler implementation while preserving performance.

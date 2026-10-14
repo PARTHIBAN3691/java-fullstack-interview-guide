@@ -1,0 +1,30 @@
+* Explain the internal lifecycle of a Testcontainers-managed container during JUnit execution.
+* How does Testcontainers discover and communicate with the Docker daemon?
+* How does Testcontainers determine and expose dynamically mapped ports?
+* How does the reusable container lifecycle differ from the standard JUnit container lifecycle?
+* What are the risks of enabling reusable containers in a development environment?
+* How do you design a shared container strategy for a large integration test suite?
+* How do you avoid test interference when multiple tests share one database container?
+* How do you design parallel integration testing using Testcontainers?
+* How do you isolate schemas, databases, or records for parallel test execution?
+* How do you test database locking and concurrent transactions using Testcontainers?
+* How do you validate database migrations across multiple database versions?
+* How do you test compatibility against multiple versions of PostgreSQL or MySQL?
+* How do you build custom container images for integration testing?
+* How do you create a custom GenericContainer for an internal service?
+* How do you configure environment variables, exposed ports, and startup commands?
+* What are wait strategies in Testcontainers?
+* How do you implement a custom wait strategy for an application container?
+* How do you troubleshoot a container that starts successfully but is not ready to accept requests?
+* How do you use Testcontainers with Docker networks to test service-to-service communication?
+* How do you configure network aliases between multiple containers?
+* How do you test a microservices workflow using several dependent containers?
+* How do you test service discovery and network failures between containers?
+* How do you test Kafka consumer retries and dead-letter topics using Testcontainers?
+* How do you test transactional messaging patterns using a real broker container?
+* How do you test Redis caching and expiration behavior using Testcontainers?
+* How do you test an application that depends on PostgreSQL, Kafka, and Redis simultaneously?
+* How do you manage Testcontainers execution in remote or restricted CI environments?
+* How do you run Testcontainers when Docker socket access is unavailable?
+* How do you optimize integration test performance without sacrificing database realism?
+* How do you ensure Testcontainers tests are deterministic, isolated, and reproducible?

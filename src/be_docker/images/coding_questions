@@ -1,0 +1,30 @@
+* Write a Dockerfile to package a simple Java application using a specified JDK base image.
+* Write a multi-stage Dockerfile that builds a Maven-based Spring Boot application and copies only the packaged JAR into the runtime image.
+* Write a Dockerfile that uses a specific Java runtime version and starts a Spring Boot application.
+* Write a Dockerfile that runs a Java application as a non-root user.
+* Write a Dockerfile that uses a slim runtime image while retaining the operating-system dependencies required by the application.
+* Write a Dockerfile that copies the Maven pom.xml before copying the Java source code to improve build caching.
+* Write a .dockerignore file for a Maven-based Java project.
+* Write a Dockerfile that packages a Gradle-based Spring Boot application using multiple build stages.
+* Write a Dockerfile that exposes the application port and starts the application with configurable JVM options.
+* Write a Dockerfile that supports a configurable Spring profile without hardcoding environment-specific configuration.
+* Write a shell script that builds a Docker image, tags it with a version, and checks whether the build succeeded.
+* Write a shell script that authenticates with a container registry and pushes a versioned Java application image.
+* Write a shell script that lists local Docker images matching a given repository name.
+* Write a script that finds dangling images and displays them before offering to remove them.
+* Write a script that removes unused images older than a specified retention period while protecting images used by running containers.
+* Write a script that inspects a Docker image and extracts its repository, tag, image ID, and size.
+* Write a CI pipeline configuration that builds a Spring Boot image, runs tests, scans the image, and publishes it only when all checks pass.
+* Write a Docker Buildx command sequence that builds and publishes a Java image for AMD64 and ARM64 platforms.
+* Write a Dockerfile that uses BuildKit cache mounts to reuse Maven dependencies between builds.
+* Write a Dockerfile that uses BuildKit secret mounts to access a private Maven repository without embedding credentials in the image.
+* Write a Dockerfile that builds a Spring Boot application with layered JAR support to improve dependency caching.
+* Write a Dockerfile that uses jlink to create a reduced Java runtime image for a simple application.
+* Write a shell script that compares the local image digest with the digest reported by a registry.
+* Write a script that tags a tested image with a release version and a Git commit identifier.
+* Write a CI/CD script that promotes an existing image between environments without rebuilding it.
+* Write a deployment script that pulls an image by digest and starts a Spring Boot container with externalized configuration.
+* Write a script that checks whether an image tag exists in a registry before attempting a deployment.
+* Write a validation script that fails the pipeline if an image contains a disallowed root user configuration or fails a vulnerability scan.
+* Write a script that reports the largest layers in a Docker image and identifies opportunities to reduce its size.
+* Write a complete Dockerfile and build script for a production-ready Spring Boot image with reproducible dependencies, a minimal runtime stage, and a versioned image tag.

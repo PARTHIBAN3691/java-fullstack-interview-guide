@@ -1,0 +1,20 @@
+* How would you analyze GC logs from a production application experiencing intermittent long pauses?
+* How can you calculate the average, maximum, and percentile GC pause durations from GC logs?
+* How would you determine the allocation rate and promotion rate from GC logs?
+* How can GC logs help identify premature promotion of objects into the old generation?
+* How do you identify repeated Full GC events and determine their underlying cause?
+* How can you identify evacuation failures in G1 GC logs?
+* How would you analyze concurrent marking phases using G1 GC logs?
+* How can GC logs reveal humongous object allocation problems in G1 GC?
+* How do you identify a possible memory leak when post-GC heap usage steadily increases?
+* How would you distinguish a memory leak from a temporary increase in live objects?
+* How do you interpret GC logs when the heap expands or contracts?
+* How can GC logs help identify an inappropriate heap-size configuration?
+* How would you correlate GC logs with Java Flight Recorder (JFR) events?
+* How would you analyze GC logs from a containerized application experiencing memory pressure?
+* How can you identify whether GC overhead is affecting application throughput?
+* How would you analyze a case where GC pause times are low but application latency remains high?
+* How can you determine whether a long pause was caused by garbage collection or another JVM operation?
+* How would you compare GC logs from two different JVM configurations?
+* How can automated GC log analysis be integrated into a CI/CD or production-monitoring pipeline?
+* How would you analyze GC behavior across multiple application instances to identify a node-specific issue?

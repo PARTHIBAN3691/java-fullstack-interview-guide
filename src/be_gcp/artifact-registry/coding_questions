@@ -1,0 +1,30 @@
+* Write a Java program that constructs an Artifact Registry Docker image URI from project ID, location, repository name, and image name.
+* Write a Java utility that validates whether a Docker image reference follows the expected Artifact Registry hostname and repository format.
+* Write a Java program that parses an Artifact Registry image URI and extracts its project, location, repository, image name, and tag.
+* Write a Java utility that validates release tags and rejects tags that do not follow a semantic versioning convention.
+* Write a Java program that reads a list of image references and identifies duplicate image tags.
+* Write a Java utility that compares two container image references and determines whether their immutable digests match.
+* Write a Java program that groups Artifact Registry image references by project and repository.
+* Write a Java program that filters a list of image metadata records and identifies images older than a configurable retention period.
+* Write a Java utility that identifies untagged image records from a list of artifact metadata objects.
+* Write a Java program that produces a deployment manifest using an image digest rather than a mutable tag.
+* Write a Spring Boot service that accepts a container image reference and validates its format before allowing deployment.
+* Write a Spring Boot REST endpoint that returns approved container image references from a configured allowlist.
+* Write a Spring Boot service that checks whether an image reference belongs to an approved Artifact Registry repository.
+* Write a Java program using the Google Cloud client libraries to list repositories in a configured Google Cloud project.
+* Write a Java program using the Google Cloud client libraries to list Docker images stored in an Artifact Registry repository.
+* Write a Java program that retrieves artifact metadata and prints image tags and digests.
+* Write a Java utility that handles Google Cloud API pagination when listing a large number of artifacts.
+* Write a Java program that handles API errors such as permission denied, resource not found, and quota exceeded when accessing Artifact Registry.
+* Write a Java service that retries transient Artifact Registry API failures using exponential backoff and jitter.
+* Write a Java program that reads artifact metadata and generates a report of image versions grouped by repository.
+* Write a Spring Boot scheduled job that checks artifact metadata and reports images older than a configured number of days.
+* Write a Java program that evaluates image metadata against configurable cleanup rules without deleting any artifacts.
+* Write a Java service that compares staging and production image digests to verify that the same artifact is deployed.
+* Write a Java program that verifies an image digest against an expected release manifest before deployment.
+* Write a Spring Boot REST API that receives a release request and validates the image reference against an approved repository and digest.
+* Write a Java program that reads a JSON vulnerability report and identifies images containing critical or high-severity findings.
+* Write a Java service that blocks a release when a vulnerability report exceeds a configured severity threshold.
+* Write unit tests for an Artifact Registry image URI parser, covering invalid hostnames, missing repositories, tags, and digests.
+* Write unit tests for a cleanup-policy evaluator, covering active releases, rollback versions, expired images, and exempt repositories.
+* Write a Java integration test that verifies Artifact Registry client behavior using mocked API responses, pagination, and permission failures.

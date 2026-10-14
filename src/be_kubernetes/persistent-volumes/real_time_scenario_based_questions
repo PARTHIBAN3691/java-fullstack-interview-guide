@@ -1,0 +1,30 @@
+* A Spring Boot application stores uploaded files in a container directory, and the files disappear after the Pod restarts. How would you fix the issue?
+* A PVC remains in Pending state even though a StorageClass exists. How would you troubleshoot it?
+* A Pod remains in ContainerCreating and reports a volume mount failure. What would you investigate?
+* A dynamically provisioned PVC cannot be bound because no matching storage is available. How would you identify the root cause?
+* A PVC is bound to a PV, but the application cannot read or write files. How would you troubleshoot permissions and mount configuration?
+* A PostgreSQL Pod is recreated on another node and fails to mount its existing volume. What would you inspect?
+* A StatefulSet Pod is deleted, and a new Pod starts with unexpected data. How would you investigate the PVC and volume configuration?
+* A database Pod is stuck because its volume is still attached to a failed node. How would you recover the workload safely?
+* A PVC is deleted accidentally, but the underlying storage may still exist. What recovery options would you investigate?
+* A PersistentVolume was released after its PVC was deleted and cannot be bound to a new claim. How would you handle it?
+* A StorageClass uses the Delete reclaim policy, and a team wants to retain data after deleting a PVC. How would you change the process?
+* A production database needs additional disk capacity, but PVC expansion fails. How would you troubleshoot the problem?
+* A PVC is Pending because the requested storage topology does not match the nodes where the Pod can run. How would you resolve the scheduling conflict?
+* An application works on one node but fails when scheduled on another node due to storage attachment restrictions. What would you check?
+* Multiple replicas of a Spring Boot application need to access shared uploaded files. How would you select and configure the storage solution?
+* Two application Pods mount a shared volume and overwrite each other's files. How would you address the concurrency problem?
+* A Java application experiences slow file writes after migration to Kubernetes. How would you determine whether storage is the bottleneck?
+* A database experiences high disk latency during peak traffic. Which storage metrics and backend settings would you investigate?
+* A storage backend reaches its IOPS limit, and application response times increase. How would you mitigate the problem?
+* A CSI driver upgrade causes new Pods to fail mounting volumes. How would you troubleshoot and recover?
+* A cluster upgrade leaves some volumes in an attachment or mount error state. How would you investigate the storage lifecycle?
+* A team wants to migrate persistent data from a local volume to cloud block storage without losing data. How would you plan the migration?
+* A database backup succeeds, but the restored database is inconsistent. How would you review the backup and snapshot strategy?
+* A team relies only on volume snapshots for disaster recovery. What failure scenarios and recovery requirements would you evaluate?
+* A production database must survive an availability-zone outage. How would you design storage replication, failover, and recovery?
+* A PVC is bound successfully, but the Pod cannot be scheduled because the volume is available only in another zone. How would you diagnose and fix it?
+* A volume remains attached after a workload has been terminated, preventing a replacement Pod from starting. How would you investigate safely?
+* A Kubernetes namespace is deleted, and a team needs to determine whether its persistent data can be recovered. What would you check?
+* A compliance requirement mandates encrypted persistent data and controlled access. How would you implement storage encryption and access controls?
+* You need to run a highly available Spring Boot application with persistent file storage across multiple replicas. What storage architecture would you recommend?

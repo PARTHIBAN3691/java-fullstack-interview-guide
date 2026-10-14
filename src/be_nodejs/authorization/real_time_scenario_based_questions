@@ -1,0 +1,30 @@
+* A regular user can access an administrator-only API by modifying a request. How would you investigate and fix the issue?
+* A user changes a record ID in the URL and accesses another user's information. How would you prevent this IDOR vulnerability?
+* A user is removed from the Admin role but continues to have administrator privileges. What could cause this, and how would you fix it?
+* A multi-tenant application allows users from one company to access another company's records. How would you investigate the issue?
+* A user has multiple roles, and one role denies an operation while another allows it. How would you define the authorization policy?
+* A manager should access only employees in their department. How would you implement this rule?
+* An employee can view a financial record but should not be allowed to modify it. How would you enforce this requirement?
+* An API allows users to update their own profile, but they can also modify their role field. How would you prevent privilege escalation?
+* A user can download a document by guessing its URL, even though the document is not listed in their account. How would you secure file access?
+* A payment API must allow only authorized finance users to approve transactions above a threshold. How would you implement this?
+* A user has a valid JWT but lacks the required permission for a sensitive endpoint. How should the API respond?
+* A microservice trusts role information supplied directly by another service without verifying the caller's identity. How would you redesign the authorization flow?
+* A centralized authorization service becomes unavailable, and requests start failing across multiple microservices. How would you handle the failure safely?
+* A permission update takes several minutes to affect API access because of caching. How would you improve revocation behavior?
+* A GraphQL endpoint returns unauthorized nested fields even though the main resource is accessible. How would you fix the authorization checks?
+* A WebSocket user retains access to privileged events after their role is revoked. How would you enforce updated permissions?
+* An external partner should access only selected APIs and resources for a limited period. How would you implement delegated access?
+* A support engineer needs temporary access to customer data to resolve an incident. How would you grant and audit that access?
+* Two users have the same role but should have different permissions based on department and location. Which authorization model would you choose?
+* A background job processes requests on behalf of users but does not preserve the original user's permissions. How would you secure it?
+* An administrator accidentally grants excessive permissions to a large group of users. How would you limit the impact and recover safely?
+* A new authorization policy denies legitimate requests after deployment. How would you roll back or disable the policy safely?
+* A user can access an API through the backend even though the frontend hides the corresponding button. What does this indicate, and how would you fix it?
+* A service accepts an access token with the correct signature but the wrong audience. How would you prevent unauthorized access?
+* A user can access an order but should not see its payment details. How would you implement field-level authorization?
+* A manager changes departments, but their previous department's data remains accessible. How would you address stale organizational permissions?
+* An authorization check passes, but the user's permission is revoked before the database update completes. How would you prevent unauthorized updates?
+* A SaaS platform allows customer administrators to manage their own users but not platform-wide settings. How would you separate these permissions?
+* Auditors require a complete record of who accessed or modified sensitive resources. How would you implement authorization auditing?
+* You must migrate an application from hardcoded role checks to a centralized policy engine without introducing security gaps. How would you approach the migration?

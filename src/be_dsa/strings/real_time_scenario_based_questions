@@ -1,0 +1,30 @@
+* A Java application processes millions of log messages and needs to identify repeated error patterns. How would you design an efficient string-processing solution?
+* An API receives user names and must compare them without case sensitivity. How would you handle locale-sensitive case conversion correctly?
+* A search service must find a keyword in large documents with minimal latency. Which string-matching algorithm would you choose and why?
+* A log analysis system must find all occurrences of several thousand patterns in each incoming log file. How would you optimize pattern matching?
+* A text editor needs to highlight every occurrence of a search term as the user types. How would you implement incremental search efficiently?
+* A data ingestion service receives millions of strings and must group anagrams together. How would you reduce time and memory consumption?
+* A payment application receives transaction identifiers as strings and must validate their format. How would you implement robust validation?
+* A customer database contains duplicate names with inconsistent capitalization and whitespace. How would you normalize and compare these values?
+* A service must find the longest common prefix among millions of product codes. How would you design the solution?
+* A search API must return suggestions as users type prefixes. How would you use a trie and optimize memory usage?
+* A document-processing service must detect palindromic patterns in very large text inputs. Which algorithm would you use?
+* A chat application needs to detect repeated characters and compress messages before transmission. How would you design the compression logic?
+* A text comparison tool must calculate differences between two large documents. How would you use the longest common subsequence or edit distance?
+* A spell-checking service must suggest words within a small edit distance of a misspelled word. How would you design the algorithm?
+* A URL-shortening service needs to validate and decode identifiers containing letters and digits. How would you implement safe string conversion?
+* A file-processing service must split CSV records where fields may contain quoted commas. Why is simple String.split() insufficient, and how would you parse the input?
+* An application receives Unicode names containing accented characters and supplementary characters. How would you avoid incorrect character counts and comparisons?
+* A multilingual search service must normalize equivalent Unicode text before matching. How would you handle Unicode normalization?
+* A production service creates large numbers of temporary strings and experiences high garbage-collection pressure. How would you investigate and optimize allocations?
+* A Java application concatenates strings inside a large loop and performs poorly. How would you identify and fix the bottleneck?
+* A log parser must find the smallest text window containing all required keywords. How would you implement an efficient sliding-window algorithm?
+* A monitoring system must detect suspicious repeated substrings in incoming requests. How would you identify and validate those patterns?
+* A document service must determine whether one text is a rotation of another without creating multiple unnecessary copies. How would you solve it?
+* A security-sensitive API validates passwords against configurable patterns. How would you avoid catastrophic regex backtracking?
+* A search service must match multiple keywords against a continuously streamed text. How would you process input without loading the entire text into memory?
+* A text-processing application needs to remove duplicate characters while preserving order. How would you handle Unicode code points and maintain linear complexity?
+* A product catalog must rank similar product names despite insertions, deletions, and substitutions. Which string similarity techniques would you consider?
+* A batch job must compare two very large files line by line and identify changed content efficiently. How would you design the comparison?
+* A service needs to find the longest repeated substring in customer-generated text. Which algorithm would you choose for large inputs?
+* A Java REST API receives extremely long strings from untrusted clients. How would you prevent excessive memory usage and algorithmic denial-of-service attacks?

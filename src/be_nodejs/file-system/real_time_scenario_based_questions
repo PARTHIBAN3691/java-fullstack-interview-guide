@@ -1,0 +1,30 @@
+* Your Node.js API becomes unresponsive while reading a large file. How would you identify and fix the issue?
+* A file-reading operation fails with ENOENT in production but works locally. How would you troubleshoot it?
+* Your application receives EACCES when writing a file on a Linux server. What would you investigate?
+* Two requests update the same JSON file simultaneously, and some data is lost. How would you prevent this?
+* A server crashes after processing thousands of files because of exhausted file descriptors. How would you diagnose and resolve it?
+* Your application needs to process a directory containing millions of files. How would you design the processing workflow?
+* A file upload API allows users to specify filenames containing ../ sequences. How would you secure it?
+* A file watcher misses changes during periods of heavy activity. How would you make the processing reliable?
+* Your application processes the same file multiple times because of duplicate watcher events. How would you prevent duplicate processing?
+* A file is read while another process is writing to it, resulting in incomplete data. How would you handle this?
+* A large file copy operation consumes too much memory. How would you redesign it using streams?
+* A stream pipeline stops unexpectedly when the destination disk becomes full. How would you handle the failure?
+* Your application must process incoming files in order, but multiple files arrive simultaneously. How would you guarantee ordering?
+* Several workers attempt to process the same file at the same time. How would you coordinate them?
+* Your application writes a configuration file, but a crash leaves it partially updated. How would you prevent this?
+* A file-processing service needs to resume after a server restart without reprocessing completed files. How would you design it?
+* Your application needs to verify that downloaded files are not corrupted. How would you implement integrity checks?
+* A temporary-file directory grows continuously and fills the disk. How would you implement cleanup safely?
+* File paths behave differently between Windows development machines and Linux production servers. How would you resolve the problem?
+* A symbolic link points outside the intended storage directory. How would you prevent unauthorized file access?
+* Your service processes files from multiple directories, but one directory contains malformed files. How would you isolate failures?
+* A file-processing task blocks other requests because it performs CPU-intensive parsing. How would you improve responsiveness?
+* The libuv thread pool becomes saturated due to heavy file-system activity. How would you identify and mitigate the bottleneck?
+* A deployment changes directory permissions and breaks file writes. How would you make deployment and permission management reliable?
+* Your application must handle a file being deleted between existence checking and reading. How would you make the operation robust?
+* A critical file must be written without exposing partially written content to readers. How would you implement this?
+* Your service must process files exactly once even if a worker crashes during processing. How would you approach the design?
+* A directory contains files with duplicate names from different upload sources. How would you avoid collisions?
+* Your application must monitor a directory across multiple server instances. Why might fs.watch() alone be insufficient, and what alternatives would you consider?
+* You need to build a production-grade file ingestion service. How would you handle validation, concurrency, retries, failures, monitoring, and recovery?

@@ -1,0 +1,30 @@
+* How would you design a Docker Compose architecture for a Spring Boot microservices application with PostgreSQL, Redis, and RabbitMQ?
+* How would you separate application, database, and infrastructure services into isolated networks?
+* How would you design startup dependencies without relying exclusively on depends_on?
+* How would you handle database readiness and connection retries in a distributed application?
+* How would you implement graceful shutdown for Spring Boot services managed by Docker Compose?
+* How would you minimize downtime when updating multiple interdependent services?
+* How would you manage database schema migrations when multiple application instances start simultaneously?
+* How would you prevent concurrent migration attempts from multiple application containers?
+* How would you manage secrets in Compose deployments without storing credentials in source control?
+* What are the limitations of environment variables for managing sensitive information?
+* How would you make Docker Compose deployments reproducible across development, testing, and staging environments?
+* How would you manage image versioning and prevent unexpected deployments caused by mutable tags?
+* How would you design health checks that distinguish container startup, application readiness, and dependency availability?
+* How would you troubleshoot a Compose application in which services can resolve each other's names but cannot establish connections?
+* How would you diagnose intermittent DNS or network failures between Compose services?
+* How would you investigate a service that repeatedly restarts because of dependency failures?
+* How would you control CPU and memory consumption across several Java services running on the same host?
+* How would you investigate JVM memory pressure when multiple Spring Boot containers share a host?
+* How would you persist logs, metrics, and diagnostic artifacts beyond container recreation?
+* How would you design backup and restore procedures for a database managed by Docker Compose?
+* How would you handle volume ownership and file permission issues across different host operating systems?
+* How would you safely rotate credentials used by multiple Compose services?
+* How would you configure a reverse proxy and TLS termination for a Compose-based application?
+* How would you secure internal service communication and restrict unnecessary host port exposure?
+* How would you structure Compose overrides to avoid duplicating configuration across environments?
+* How would you use profiles to manage optional dependencies and developer tooling?
+* How would you debug a mismatch between the Compose configuration you authored and the configuration Docker actually applies?
+* How would you implement a controlled rollback when a newly deployed application image fails its health check?
+* How would you evaluate whether Docker Compose remains suitable as the number of services and deployment requirements grow?
+* How would you migrate a Compose-based application to Kubernetes while preserving configuration, networking, storage, and health-check behavior?

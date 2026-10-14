@@ -1,0 +1,21 @@
+
+* Two threads increment a shared counter 100,000 times each, but the final result is less than 200,000. How would you explain and fix the problem?
+* Multiple users are updating the same bank account balance concurrently. How would you prevent lost updates and ensure the balance remains consistent?
+* An e-commerce application allows two threads to purchase the last available product simultaneously. How would you synchronize inventory updates?
+* A synchronized method is causing high request latency in a Spring Boot application. How would you investigate and optimize it?
+* Two threads acquire Lock A and Lock B in different orders and the application hangs. How would you diagnose and resolve the deadlock?
+* A static variable is accessed by multiple instances of a class, but each instance uses its own synchronized method. Why might race conditions still occur?
+* A developer uses `synchronized(this)` in a library class, and an external caller synchronizes on the same instance. What risks does this create?
+* An application updates a user's account balance and transaction count together. How would you ensure both updates remain consistent?
+* A synchronized method calls a slow external REST API while holding a lock. What problems could arise, and how would you redesign it?
+* A singleton bean in Spring contains mutable instance fields accessed by multiple requests. How would you assess its thread safety?
+* A developer declares a counter `volatile` but still gets incorrect results when multiple threads increment it. Why does this happen?
+* An application experiences frequent thread blocking on a shared cache object. How would you reduce lock contention?
+* A synchronized method invokes another synchronized method on the same object. Could this cause a self-deadlock?
+* Two threads repeatedly acquire and release locks but neither makes meaningful progress. How would you distinguish livelock from deadlock?
+* A thread-safe collection is used, but a check-then-act operation still produces inconsistent results. How would you fix the compound operation?
+* A shared configuration object is updated while other threads are reading it. How would you design safe visibility and update behavior?
+* An application performs a large batch update under a single synchronized block. What are the performance risks, and how would you improve concurrency?
+* A production thread dump shows several threads in `BLOCKED` state. How would you identify the lock owner and the source of contention?
+* A multithreaded service must guarantee that only one thread executes a particular operation at a time across all instances of a class. How would you implement this?
+* A synchronized section works correctly in testing but becomes a bottleneck under production traffic. How would you measure and improve its performance?

@@ -1,0 +1,30 @@
+* Write a Java Kafka producer configured with SASL/PLAIN authentication.
+* Write a Java Kafka consumer configured with SASL/SCRAM authentication.
+* Write a Java Kafka producer configured with SASL_SSL.
+* Write a Java Kafka consumer configured to trust a broker certificate using a truststore.
+* Write a Java Kafka client configuration that enables TLS hostname verification.
+* Write a Spring Boot Kafka producer configuration that reads credentials from environment variables.
+* Write a Spring Boot Kafka consumer configuration that uses SASL/SCRAM authentication.
+* Write Java code to load Kafka security properties from an external configuration source.
+* Write Java code that creates a Kafka producer without hardcoding credentials in the source code.
+* Write a Java utility that validates required Kafka security properties at application startup.
+* Write Java code using Kafka `AdminClient` to describe topic metadata with authenticated access.
+* Write a Java utility that creates topic-level ACLs using Kafka's administrative APIs.
+* Write Java code using `AdminClient` to list ACLs for a Kafka resource.
+* Write Java code to add a read permission for a specific consumer principal and topic.
+* Write Java code to grant a producer principal write access to a specific topic.
+* Write Java code to grant a consumer principal permission to access a consumer group.
+* Write Java code to remove an obsolete Kafka ACL safely.
+* Write a Spring Boot health indicator that checks authenticated connectivity to Kafka.
+* Write Java code that classifies Kafka authentication and authorization exceptions for monitoring.
+* Write a Java application that reports Kafka connection failures without logging passwords or tokens.
+* Write a Java configuration example for Kafka clients using mutual TLS.
+* Write a Java utility that checks certificate expiry and generates an alert before expiration.
+* Write a Spring Boot configuration that loads Kafka credentials from a secrets manager integration.
+* Write Java code to configure OAuth bearer-token authentication for a Kafka client using a supported token callback handler.
+* Write a Java test that verifies a producer cannot write to a topic without the required ACL.
+* Write an integration test that verifies a consumer can read from an authorized topic but is denied access to an unauthorized topic.
+* Write a Java test that validates Kafka TLS certificate trust and hostname verification.
+* Write a Spring Boot integration test that verifies authenticated producer and consumer behavior.
+* Write a Java utility that audits topic ACLs against an application-to-topic permission matrix.
+* Write an automated security test suite that validates Kafka authentication, authorization, TLS configuration, and secret-handling behavior.

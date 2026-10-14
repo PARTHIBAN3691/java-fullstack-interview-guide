@@ -1,0 +1,30 @@
+* Write a JUnit 5 integration test for a Spring Boot service that reads data from a database.
+* Create a Spring Boot integration test using @SpringBootTest and explain what application components it loads.
+* Write an integration test for a JPA repository using @DataJpaTest.
+* Implement a repository integration test that verifies save, find, update, and delete operations.
+* Write a test that verifies a service correctly coordinates repository operations and business logic.
+* Create a MockMvc integration test for a REST controller that creates a customer.
+* Write a Spring Boot integration test that validates HTTP status codes, headers, and response bodies.
+* Implement an integration test that verifies request validation and appropriate error responses.
+* Write a test that verifies database transaction rollback when a service method throws an exception.
+* Create an integration test that verifies relationships between two JPA entities.
+* Write a Testcontainers-based integration test using PostgreSQL and Spring Boot.
+* Configure Maven to execute unit tests and integration tests in separate phases.
+* Write a WireMock integration test for a service that calls an external REST API.
+* Implement an integration test that verifies timeout and error handling for a downstream HTTP service.
+* Write a Spring Security integration test for a JWT-protected endpoint.
+* Create an integration test that verifies role-based access control across a REST API.
+* Write a Kafka integration test that publishes a message and verifies consumer processing.
+* Implement a test that verifies duplicate Kafka messages do not create duplicate database records.
+* Write an integration test that validates retry handling and dead-letter queue processing.
+* Create an integration test for an application that uses two database connections.
+* Write a test that verifies optimistic locking when two transactions update the same entity.
+* Implement a concurrency integration test that sends multiple simultaneous requests using ExecutorService.
+* Write a test that verifies Redis cache behavior when a database record is updated.
+* Create an integration test that verifies database schema migrations using Flyway or Liquibase.
+* Write a test that validates a complete order workflow involving customer, inventory, payment, and order services.
+* Implement an integration test for eventual consistency between a database update and an asynchronously published event.
+* Write a test that verifies circuit-breaker behavior when a downstream service becomes unavailable.
+* Create an integration test that checks database connection cleanup after an exception.
+* Implement an integration test that verifies API backward compatibility between two service versions.
+* Build a Spring Boot integration testing framework using JUnit 5, Testcontainers, WireMock, REST Assured, Kafka testing utilities, and CI/CD integration.

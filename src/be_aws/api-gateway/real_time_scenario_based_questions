@@ -1,0 +1,21 @@
+
+* You have three Spring Boot microservices for customers, orders, and payments. How would you expose them through a single API Gateway endpoint?
+* A client receives HTTP 429 responses during peak traffic. How would you identify whether the cause is API Gateway throttling or a downstream service limit?
+* A Java backend works when accessed directly but returns HTTP 502 or 504 errors through API Gateway. How would you investigate the issue?
+* Your organization needs centralized JWT validation for several microservices. How would you configure API Gateway authorization?
+* A public API must be accessible only to internal applications inside a VPC. How would you design the API Gateway endpoint and network access?
+* An API must allow only approved browser origins. How would you configure CORS and avoid treating CORS as an authentication mechanism?
+* An API Gateway endpoint exposes sensitive customer information. What security controls would you implement at the gateway and backend layers?
+* A Lambda-backed API becomes slow because the Lambda function experiences cold starts. How would you investigate and improve response times?
+* A Spring Boot service deployed behind a private load balancer is unreachable from API Gateway. How would you troubleshoot VPC link configuration, routing, and security groups?
+* A new API version must be released without disrupting existing consumers. How would you plan deployment, versioning, and backward compatibility?
+* Your backend receives duplicate payment requests because clients retry after timeouts. How would you implement idempotency and safe retry behavior?
+* CloudWatch shows high API Gateway latency but low backend processing time. What could cause the difference, and how would you investigate it?
+* An API must support both authenticated users and machine-to-machine clients. How would you choose the authorization mechanisms?
+* A customer should be limited to 100 requests per minute while other customers have different limits. How would you design the rate-limiting strategy?
+* Your API integrates with an external payment provider that occasionally becomes unavailable. How would you prevent failures from propagating across the system?
+* An API Gateway endpoint must invoke a Java microservice running on private ECS tasks. How would you configure the integration?
+* A production deployment introduces increased 5xx responses. How would you use metrics, logs, tracing, and deployment controls to identify and roll back the issue?
+* Your API needs request and response transformations to maintain a stable public contract while backend services evolve. How would you implement this?
+* A team wants to use API keys as the only security mechanism for a sensitive customer API. What are the risks, and what would you recommend?
+* You are designing an API platform for multiple teams. How would you standardize authentication, logging, throttling, custom domains, deployment, and monitoring?

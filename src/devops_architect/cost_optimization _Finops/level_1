@@ -1,0 +1,105 @@
+
+**Cloud Cost Management**
+* How would you analyze a sudden increase in monthly cloud spending?
+* How do you distinguish cost increases caused by business growth from those caused by inefficiency?
+* How would you build a monthly cloud cost report for engineering and finance teams?
+* How do you compare actual spending, forecast spending, and budget variance?
+* How would you prioritize optimization opportunities based on potential savings and engineering effort?
+
+**Resource Tagging**
+* How would you enforce mandatory tags across cloud accounts and subscriptions?
+* How do you discover and remediate resources with missing or inconsistent tags?
+* How would you handle resources that cannot be tagged directly?
+* How do you design a standardized tagging taxonomy across development, staging, and production?
+* How would you prevent teams from bypassing tagging requirements when creating resources through infrastructure as code?
+
+**Cost Allocation**
+* How would you allocate shared networking, monitoring, and security costs across application teams?
+* How do you allocate costs for shared Kubernetes clusters?
+* What is showback, and how does it differ from chargeback?
+* How would you allocate costs when resources support multiple products or business units?
+* How do you reconcile cloud provider billing data with internal finance reports?
+
+**Reserved Instances**
+* How do you determine whether a workload is suitable for a reserved instance commitment?
+* How do you calculate reservation utilization and coverage?
+* How do instance-family, region, operating-system, and tenancy requirements affect reservation flexibility?
+* How would you handle reservations when an application migrates to a different instance family?
+* How do you balance reservation discounts against the risk of overcommitment?
+
+**Savings Plans**
+* How do you estimate an appropriate savings-plan commitment using historical hourly usage?
+* How do commitment flexibility and scope affect savings-plan selection?
+* How do you measure commitment utilization and effective savings?
+* What is the difference between compute-oriented and instance-specific commitment models where supported?
+* How would you manage commitments for workloads with seasonal or rapidly changing demand?
+
+**Spot Instances**
+* How would you design a fault-tolerant application to run on spot instances?
+* How do interruption notices influence workload shutdown and checkpointing?
+* How would you combine spot and on-demand capacity in a production cluster?
+* How do capacity shortages affect the reliability of spot-based workloads?
+* How would you monitor actual spot savings after accounting for retries and interruptions?
+
+**Right-Sizing**
+* How would you right-size an instance using CPU, memory, network, and disk metrics?
+* How do you account for seasonal traffic and short-lived utilization spikes?
+* How would you identify memory pressure that average utilization metrics hide?
+* How do you validate performance after downsizing a production database or application server?
+* How would you rank right-sizing recommendations by risk and expected savings?
+
+**Auto Scaling**
+* How do target tracking, step scaling, and scheduled scaling differ?
+* How do you choose scaling metrics for queue-based workloads?
+* How would you configure scale-in protection for long-running jobs?
+* How can aggressive scale-out and scale-in policies increase costs?
+* How do you prevent scaling oscillations and capacity shortages?
+
+**Storage Optimization**
+* How do you design lifecycle policies for logs, backups, and application data?
+* How do retrieval fees and minimum storage durations affect archival decisions?
+* How would you optimize snapshot retention without compromising recovery requirements?
+* How do object versioning and incomplete multipart uploads contribute to storage costs?
+* How do you evaluate compression and deduplication when balancing cost and performance?
+
+**Data Transfer Costs**
+* How would you identify the main sources of inter-region and cross-zone transfer costs?
+* How can caching and content delivery reduce repeated data transfers?
+* How would you compare centralized and distributed architectures from a data transfer cost perspective?
+* How do NAT gateways, load balancers, and private endpoints affect networking costs?
+* How would you estimate the cost of transferring large datasets between cloud providers?
+
+**Kubernetes Cost Optimization**
+* How do you identify workloads with oversized CPU and memory requests?
+* How do pod requests, limits, and actual usage affect node utilization and scheduling?
+* How do cluster autoscaler and horizontal pod autoscaler work together?
+* How would you optimize namespaces that share the same Kubernetes cluster?
+* How do you detect and reduce the cost of overprovisioned nodes and underutilized clusters?
+
+**Idle Resource Detection**
+* How would you detect idle instances, unattached disks, stale snapshots, and unused load balancers?
+* How do you distinguish truly idle resources from resources used infrequently?
+* How would you automate idle-resource reports using billing and monitoring data?
+* How would you implement an approval process before stopping or deleting candidate resources?
+* How do you track the realized savings after an idle resource is removed?
+
+**Budget Alerts**
+* How would you create budgets for multiple accounts, projects, environments, and teams?
+* How do actual-cost alerts differ from forecasted-cost alerts?
+* How would you route alerts to the correct resource owners?
+* How do delayed billing data and credits affect budget alert accuracy?
+* How would you reduce alert fatigue while ensuring material overruns are escalated?
+
+**Cost Governance**
+* How would you enforce approved instance types, regions, and storage classes?
+* How do policy-as-code tools help prevent expensive or noncompliant resource provisioning?
+* How would you define an exception process for urgent workloads that exceed cost policies?
+* How do you measure cost governance effectiveness across engineering teams?
+* How would you introduce cost accountability without discouraging teams from scaling when business demand requires it?
+
+**FinOps Architecture**
+* How would you design a centralized cloud cost dashboard across multiple accounts and regions?
+* How do billing exports, resource inventory, monitoring metrics, and ownership metadata fit together?
+* How would you model shared costs, amortized commitments, credits, and discounts in a reporting platform?
+* How would you build a cost anomaly detection pipeline?
+* How would you integrate cost reports into CI/CD pipelines and engineering workflows?

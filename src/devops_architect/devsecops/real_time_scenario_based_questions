@@ -1,0 +1,34 @@
+* A SAST scan identifies a critical SQL injection vulnerability just before a production release. How would you validate the finding, assess exploitability, and decide whether to block the release?
+* A SAST tool reports hundreds of findings in a legacy application, making the security backlog unmanageable. How would you prioritize new vulnerabilities, existing debt, and high-risk code paths?
+* A DAST scan detects a possible authentication bypass in a staging environment, but developers cannot reproduce it. How would you investigate the request flow, test configuration, and potential false positive?
+* An SCA scan identifies a critical vulnerability in a transitive Java dependency used by several microservices. How would you identify affected applications, determine reachability, and coordinate remediation?
+* A critical dependency vulnerability has no available patched version. How would you assess exposure, apply compensating controls, and define an exception or upgrade strategy?
+* A developer accidentally commits an API key to a Git repository. How would you revoke the credential, investigate usage, clean up repository history where appropriate, and prevent recurrence?
+* Secret scanning passes, but credentials are discovered inside a Docker image. How would you identify the build stage or configuration that introduced them and prevent secrets from entering image layers?
+* A container image passes vulnerability scanning but runs as root and exposes unnecessary ports. How would you extend the security policy to cover configuration and runtime risks?
+* A production deployment is blocked because the base image contains a critical vulnerability, but the application team believes the affected package is unused. How would you evaluate reachability, exposure, compensating controls, and release risk?
+* An IaC scan identifies a publicly accessible storage bucket and an overly permissive IAM policy. How would you prioritize and remediate the findings before deployment?
+* A Terraform plan passes security checks, but the deployed cloud resource later becomes publicly exposed. How would you investigate configuration drift, external changes, and gaps in continuous compliance?
+* An SBOM is generated during the build, but a newly disclosed vulnerability affects one of its dependencies. How would you identify every affected artifact and production deployment?
+* A software artifact is signed successfully, but the signing key may have been compromised. How would you assess the trust boundary, identify affected releases, and revoke or replace signing credentials?
+* A container image has a valid signature but was built by an unauthorized pipeline. How would you verify its provenance, builder identity, source commit, and approved build workflow?
+* A deployment pipeline downloads a dependency from an unexpected repository. How would you investigate repository configuration, dependency substitution, artifact integrity, and supply-chain risk?
+* A third-party CI/CD action is compromised and attempts to exfiltrate pipeline secrets. How would you contain the incident, rotate exposed credentials, and secure future workflow execution?
+* An untrusted pull request executes code on a self-hosted runner that also handles production releases. How would you isolate the runner, investigate potential compromise, and redesign build-environment separation?
+* A critical vulnerability is detected after an artifact has been promoted to production. How would you trace its provenance, identify affected deployments, and coordinate mitigation or rollback?
+* A security gate blocks every build because a scanner service is temporarily unavailable. How would you define fail-open versus fail-closed behavior based on risk and control criticality?
+* A development team repeatedly requests exceptions for high-severity findings to meet release dates. How would you implement risk ownership, expiry, compensating controls, and escalation?
+* A compliance audit requests evidence that every production release passed required security checks. How would you retrieve verifiable records of scan results, approvals, signatures, and deployment identity?
+* Different teams use different scanners and severity mappings, producing inconsistent release decisions. How would you standardize policies while accommodating technology-specific risks?
+* A Kubernetes cluster accepts an image from an unapproved registry even though the CI pipeline enforces registry restrictions. How would you implement independent deployment-time admission controls?
+* A valid image signature is verified, but the image contains a vulnerable package that was introduced after the last scan. How would you connect signature verification, SBOM analysis, vulnerability policy, and release freshness?
+* A production service uses an expired certificate or stale secret because credentials are manually distributed. How would you introduce automated secret rotation and least-privilege workload identity?
+* A deployment service account has cluster-admin permissions even though it only needs to update one application. How would you reduce privileges without interrupting deployment workflows?
+* An emergency release contains a high-severity vulnerability but is required to restore a critical business service. How would you evaluate the risk, enforce an authorized exception, and ensure follow-up remediation?
+* A build passes SAST, SCA, and secret scanning but is later found to contain malicious code introduced by a compromised developer account. How would you strengthen code review, build provenance, signing, and release verification?
+* An organization needs to prove that all deployed artifacts have approved provenance and current vulnerability assessments. How would you build automated inventory, verification, and compliance reporting?
+* A security policy change unexpectedly blocks deployments across multiple business units. How would you stage policy rollout, test representative workloads, and recover safely?
+* A vulnerability scanner produces a false positive that blocks a critical release. How would you validate the finding, record evidence, and grant a controlled exception without disabling the security gate globally?
+* A compliance requirement changes and requires encryption or stricter access controls on existing resources. How would you identify noncompliant resources, remediate them safely, and continuously prevent regression?
+* A compromised build agent may have modified compiled artifacts without changing source code. How would you investigate build integrity and determine whether previously signed releases can still be trusted?
+* A company wants to enforce Zero Trust for development, build, deployment, and production operations. How would you design identity-based access, short-lived credentials, isolated execution, and continuous verification?

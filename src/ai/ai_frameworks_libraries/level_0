@@ -1,0 +1,103 @@
+**LangChain**
+* What is LangChain, and what problems does it solve in AI application development?
+* What are the main components of LangChain?
+* What is the difference between a prompt template and a model invocation?
+* What are chains, tools, retrievers, and agents in LangChain?
+* How does LangChain integrate with LLM providers and vector databases?
+* What is the purpose of output parsers in LangChain?
+
+**LangGraph**
+* What is LangGraph, and why was it introduced?
+* What are nodes, edges, and state in LangGraph?
+* What is the difference between a directed graph and a conditional edge?
+* How does LangGraph support cyclic workflows?
+* What are checkpoints in LangGraph?
+* How does LangGraph differ from a simple sequential chain?
+
+**LlamaIndex**
+* What is LlamaIndex, and what problems does it address?
+* What are documents, nodes, indexes, and retrievers in LlamaIndex?
+* What is the purpose of a query engine?
+* How does LlamaIndex support retrieval-augmented generation (RAG)?
+* What are data connectors in LlamaIndex?
+* How does LlamaIndex integrate with vector stores?
+
+**Semantic Kernel**
+* What is Semantic Kernel?
+* What are plugins, functions, and planners in Semantic Kernel?
+* How does Semantic Kernel integrate AI capabilities into existing applications?
+* What is the difference between native functions and prompt-based functions?
+* How does Semantic Kernel support dependency injection?
+* Which programming languages and application ecosystems can use Semantic Kernel?
+
+**Hugging Face Transformers**
+* What is the Hugging Face Transformers library?
+* What are tokenizers, models, and configuration objects?
+* What is the difference between a pretrained model and a fine-tuned model?
+* What are pipelines in Transformers?
+* What is the role of the Hugging Face Hub?
+* How can Transformers be used for text classification and text generation?
+
+**PyTorch**
+* What is PyTorch, and what is it commonly used for?
+* What are tensors in PyTorch?
+* What is automatic differentiation?
+* What are `torch.nn.Module` and `torch.optim` used for?
+* What is the difference between training mode and evaluation mode?
+* What is the purpose of a PyTorch `DataLoader`?
+
+**TensorFlow**
+* What is TensorFlow?
+* What are tensors and computational graphs in TensorFlow?
+* What is the role of Keras in the TensorFlow ecosystem?
+* What are layers, models, and optimizers?
+* What is the difference between training and inference?
+* What are TensorFlow SavedModel and TensorFlow Lite used for?
+
+**scikit-learn**
+* What is scikit-learn, and which machine-learning tasks does it support?
+* What is the difference between supervised and unsupervised learning?
+* What are estimators, transformers, and predictors in scikit-learn?
+* What is the purpose of a `Pipeline`?
+* How do `fit()`, `transform()`, and `predict()` differ?
+* What are common classification, regression, and clustering algorithms available in scikit-learn?
+
+**ONNX Runtime**
+* What is ONNX, and why is it useful for model interoperability?
+* What is ONNX Runtime?
+* What is the difference between a model training framework and an inference runtime?
+* What is an execution provider in ONNX Runtime?
+* How can a PyTorch model be exported to ONNX?
+* What are the basic steps to run inference using an ONNX model?
+
+**vLLM**
+* What is vLLM, and what problem does it solve?
+* What is continuous batching?
+* What is the purpose of PagedAttention?
+* How does vLLM support high-throughput LLM inference?
+* What is the difference between model serving and model training?
+* How can an application send requests to a model served by vLLM?
+
+**Ollama**
+* What is Ollama, and how does it simplify local LLM execution?
+* What is a model tag in Ollama?
+* How can you download and run a model using Ollama?
+* What is the purpose of a Modelfile?
+* How can an application communicate with Ollama through its API?
+* What are the benefits and limitations of running models locally?
+
+**Model Context Protocol (MCP)**
+* What is the Model Context Protocol (MCP)?
+* Why was MCP introduced?
+* What are MCP clients and MCP servers?
+* What are tools, resources, and prompts in MCP?
+* How does MCP differ from a direct REST API integration?
+* Why is MCP useful when connecting AI applications to external systems?
+
+**Framework Selection and Trade-offs**
+* What factors should be considered when choosing an AI framework?
+* How do application frameworks differ from model training libraries?
+* What is the difference between a local inference runtime and a cloud model API?
+* How do development speed, flexibility, and operational complexity influence framework selection?
+* Why should framework licensing and model licensing be evaluated separately?
+* Why is it important to evaluate a framework with a representative proof of concept?

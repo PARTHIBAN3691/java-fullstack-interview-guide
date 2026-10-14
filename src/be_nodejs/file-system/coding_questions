@@ -1,0 +1,30 @@
+* Write a Node.js program to create a text file and write content into it.
+* Write a program to read a text file asynchronously using callbacks.
+* Write a program to read a file using async/await and fs/promises.
+* Write a program to append content to an existing file.
+* Write a program to rename a file and handle errors.
+* Write a program to delete a file if it exists.
+* Write a program to create a nested directory structure recursively.
+* Write a program to list all files in a directory.
+* Write a program to find the size of a file in bytes.
+* Write a program to copy a file from one directory to another.
+* Write a program to move a file to another directory.
+* Write a program to read a JSON file, update a property, and save the changes.
+* Write a program to find all files with a specific extension in a directory.
+* Write a program to recursively list files in all subdirectories.
+* Write a program to count the number of lines, words, and characters in a text file.
+* Write a program to read a large file line by line without loading it entirely into memory.
+* Write a program to copy a large file using createReadStream() and createWriteStream().
+* Write a program to use stream/promises pipeline() for copying a file safely.
+* Write a program to calculate the SHA-256 checksum of a file using streams.
+* Write a program to monitor a directory for newly created files.
+* Write a program to process files in a directory with a configurable concurrency limit.
+* Write a program to handle ENOENT, EACCES, and other common file-system errors.
+* Write a program to create a temporary file and remove it after processing.
+* Write a program to validate a user-provided file path and prevent path traversal.
+* Write a program to create a file exclusively so that an existing file is not overwritten.
+* Write a program to update a JSON file safely using a temporary file and rename operation.
+* Write a program to detect duplicate files by comparing their content hashes.
+* Write a program to implement a retry mechanism for transient file-system failures.
+* Write a program to process files in batches and resume from the last successfully processed file.
+* Build a file-processing service that supports streaming, validation, bounded concurrency, error handling, logging, and graceful recovery.

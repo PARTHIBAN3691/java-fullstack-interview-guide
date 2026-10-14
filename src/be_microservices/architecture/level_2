@@ -1,0 +1,30 @@
+* How would you design a highly available microservices platform for an enterprise application?
+* How do you define service boundaries using domain-driven design and bounded contexts?
+* How do you decide the appropriate granularity of a microservice?
+* How do you prevent a distributed monolith when designing microservices?
+* How do you design a system that supports high throughput and low latency?
+* How do you manage distributed transactions without using a global database transaction?
+* How do you implement reliable event publishing using the transactional outbox pattern?
+* How do you handle eventual consistency in business-critical workflows?
+* How do you design idempotent consumers and deduplication mechanisms?
+* How do you handle out-of-order events and duplicate message delivery?
+* How do you design a resilient architecture for cascading downstream failures?
+* How do you determine appropriate retry, timeout, and circuit-breaker policies?
+* How do you design multi-region microservices with disaster recovery requirements?
+* How do you choose between a service mesh and application-level communication controls?
+* How do you manage zero-downtime deployments across dependent services?
+* How do you implement canary releases and blue-green deployments?
+* How do you design secure service-to-service communication using mutual TLS?
+* How do you manage distributed identity, authorization, and service credentials?
+* How do you scale stateful and stateless microservices differently?
+* How do you manage data ownership when multiple services require the same business information?
+* How do you design CQRS and event sourcing, and what trade-offs do they introduce?
+* How do you handle schema compatibility across independently deployed services?
+* How do you optimize JVM performance in a high-throughput microservices environment?
+* How do you identify and resolve latency caused by excessive inter-service communication?
+* How do you design observability across hundreds of services?
+* How do you implement tenant isolation in a multi-tenant microservices platform?
+* How do you manage rate limits and resource quotas across distributed services?
+* How do you choose between synchronous orchestration and asynchronous event-driven workflows?
+* How do you plan a strangler migration from a legacy monolith to microservices?
+* How do you evaluate the total cost, complexity, and operational overhead of microservices architecture?

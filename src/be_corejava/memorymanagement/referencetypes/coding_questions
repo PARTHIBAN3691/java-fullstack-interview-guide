@@ -1,0 +1,21 @@
+
+* Write a Java program that demonstrates a strong reference to an object.
+* Write a Java program that demonstrates how an object can become eligible for garbage collection after its strong reference is set to `null`.
+* Write a Java program that creates a `WeakReference` to an object and checks the result of `get()`.
+* Write a Java program that creates a `SoftReference` and observes its behavior while the object remains softly reachable.
+* Write a Java program that creates a `PhantomReference` and demonstrates why its `get()` method returns `null`.
+* Write a Java program that uses a `ReferenceQueue` with multiple `WeakReference` instances.
+* Write a Java program that polls a `ReferenceQueue` and processes enqueued reference wrappers.
+* Write a Java program that uses `WeakHashMap` to associate metadata with objects without strongly retaining the keys.
+* Write a Java program that demonstrates why a `WeakHashMap` entry may remain while its value strongly references its key.
+* Modify the preceding program to remove the unintended strong reference from the value.
+* Implement a simple weak-reference-based listener registry and demonstrate how listeners can be collected when no strong references remain.
+* Implement a bounded cache with explicit maximum size and eviction, then compare it conceptually with a soft-reference-based cache.
+* Write a Java program that uses `PhantomReference` and `ReferenceQueue` to demonstrate post-reachability cleanup coordination.
+* Write a Java program that tracks phantom references in a collection until they are enqueued, and explain why the reference objects themselves must remain strongly reachable for tracking.
+* Write a Java program that demonstrates why calling `System.gc()` does not guarantee immediate reference clearing or object reclamation.
+* Write a Java program that compares the behavior of `HashMap` and `WeakHashMap` when keys have no remaining strong references.
+* Write a Java program that uses `Reference.reachabilityFence()` in a native-resource wrapper example and explain its purpose.
+* Write a Java program that uses `try-with-resources` to release an external resource deterministically rather than relying on garbage collection.
+* Write a Java program that demonstrates how a strong reference held in a static collection can prevent an object referenced through `WeakReference` from being reclaimed.
+* Design a test that uses weak references and a `ReferenceQueue` to observe object reachability changes without assuming a fixed garbage collection schedule.

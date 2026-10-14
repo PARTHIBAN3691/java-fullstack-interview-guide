@@ -1,0 +1,30 @@
+* Write Java code to initialize a Cloud Spanner client using Application Default Credentials.
+* Create a Spring Boot configuration class that manages a reusable Cloud Spanner client.
+* Write Java code to create a Cloud Spanner database and execute DDL statements.
+* Implement a Java method that inserts a customer record using Cloud Spanner mutations.
+* Write Java code to retrieve a customer by primary key using the Cloud Spanner Java client.
+* Implement an update operation that changes a customer's email address.
+* Write Java code to delete a record from a Cloud Spanner table.
+* Implement a parameterized SQL query using Statement and bind parameters.
+* Write Java code to retrieve query results using ResultSet and safely close resources.
+* Implement pagination for a large Cloud Spanner query using an appropriate query or keyset-pagination strategy.
+* Write Java code that inserts multiple records efficiently using buffered mutations or batch writes.
+* Implement a read-write transaction that transfers money between two accounts atomically.
+* Write Java code that updates an account balance only when sufficient funds are available.
+* Implement transaction retry handling for transient aborted transactions.
+* Write Java code that prevents duplicate payment processing using an idempotency key and a transaction.
+* Implement a transaction that inserts an order and its order items atomically.
+* Write Java code to record the commit timestamp of a transaction for auditing.
+* Implement a query that joins customer and order tables and returns a summarized result.
+* Write Java code to execute a read-only transaction for consistent reads across multiple queries.
+* Implement a method that performs a timestamp-bound read using the Cloud Spanner Java client.
+* Write SQL and Java code to create and query a secondary index.
+* Implement a repository method that retrieves records using a composite primary key.
+* Write Java code that processes a large result set incrementally without storing all rows in a collection.
+* Implement a batch-update process that limits transaction size and handles partial failures safely.
+* Write a Java utility that generates distributed identifiers suitable for a high-write-throughput Cloud Spanner table.
+* Implement a Spring Boot service that handles transaction failures and maps them to appropriate HTTP responses.
+* Write an integration test for a Cloud Spanner repository using the Cloud Spanner emulator.
+* Implement a health check that verifies Cloud Spanner connectivity without running an expensive query.
+* Write Java code to capture query latency and transaction-abort metrics for application monitoring.
+* Implement a migration validation utility that compares record counts and selected checksums between a source database and Cloud Spanner.

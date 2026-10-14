@@ -1,0 +1,30 @@
+* A Synapse pipeline fails while copying data from Azure Data Lake Storage into a dedicated SQL pool; how would you identify the root cause and recover the load?
+* A daily ETL pipeline that normally completes in 30 minutes now takes three hours; how would you investigate the performance regression?
+* A dedicated SQL pool query becomes slow after the fact table grows significantly; how would you analyze distribution, statistics, and query execution?
+* A distributed join causes excessive data movement and spills; how would you identify the bottleneck and optimize the query?
+* A large table has uneven data distribution, and a few compute nodes are overloaded; how would you diagnose and correct data skew?
+* A Synapse pipeline loads duplicate records after a retry; how would you redesign the pipeline to make retries idempotent?
+* A pipeline succeeds technically but produces fewer records than the source; how would you implement reconciliation and identify missing data?
+* A Spark notebook runs successfully with a small dataset but fails with production-scale data; how would you investigate memory pressure, shuffles, and partitioning?
+* A serverless SQL query against data lake files suddenly becomes expensive; how would you reduce scanned data and improve query efficiency?
+* A Java Spring Boot service intermittently fails to connect to a Synapse dedicated SQL pool; how would you investigate networking, authentication, and connection pooling?
+* A Java application experiences JDBC connection timeouts during peak analytical workloads; how would you identify whether the issue is in the client, network, or SQL pool?
+* A production application stores Synapse database credentials in configuration files; how would you migrate to a secure identity-based authentication approach?
+* A Synapse pipeline cannot access Azure Data Lake Storage after an RBAC change; how would you investigate managed identity permissions and storage authorization?
+* A workspace becomes inaccessible after private endpoint and DNS configuration changes; how would you troubleshoot connectivity?
+* A data warehouse query returns inconsistent results after concurrent ETL operations; how would you investigate transaction boundaries and pipeline coordination?
+* A scheduled pipeline starts before its upstream data source has finished publishing files; how would you prevent incomplete data ingestion?
+* A Spark job fails intermittently during a shuffle-intensive transformation; how would you investigate executor failures, partition sizing, and resource limits?
+* A new ETL release changes column types and breaks downstream SQL scripts; how would you manage schema evolution and backward compatibility?
+* A pipeline processes data successfully but misses late-arriving records; how would you design a watermark or lookback strategy?
+* A financial report generated from Synapse does not match the source transaction system; how would you perform reconciliation and trace the discrepancy?
+* A dedicated SQL pool experiences high concurrency and queries are queued for long periods; how would you investigate workload management and resource allocation?
+* An application query works in development but times out in production because of a much larger dataset; how would you investigate and optimize it?
+* A Synapse deployment pipeline fails because environment-specific linked services and workspace references are incorrect; how would you correct the deployment strategy?
+* A critical data pipeline fails overnight, and downstream reports are delayed; how would you design alerting, automated recovery, and escalation?
+* A team wants near-real-time analytical data, but the current batch pipeline refreshes only once every hour; how would you assess and redesign the ingestion architecture?
+* A pipeline reports success even though several source files were skipped; how would you strengthen validation and completion checks?
+* A Java batch service submits many concurrent queries to Synapse and degrades the performance of other workloads; how would you control concurrency and isolate workloads?
+* A security review finds that analysts can access sensitive customer records beyond their responsibilities; how would you implement least-privilege data access?
+* Storage and compute costs rise after a new analytics workload is introduced; how would you identify the cost drivers and optimize resource usage?
+* The organization needs to recover Synapse analytics operations after a regional outage; how would you plan and validate disaster recovery?

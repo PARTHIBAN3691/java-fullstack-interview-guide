@@ -1,0 +1,30 @@
+* A search input triggers an API call on every keystroke. How would you reduce unnecessary requests using RxJS?
+* A user types a new search term before the previous API call completes. How would you ensure only the latest result is displayed?
+* Multiple Angular components need the same API data. How would you share the response without repeated HTTP calls?
+* An API intermittently fails. How would you implement automatic retries with a maximum retry count?
+* An API call should be retried with increasing delays. How would you implement exponential backoff?
+* Three independent APIs must complete before rendering a dashboard. Which RxJS operator would you use?
+* One API request depends on the result of another API request. How would you chain them?
+* An application must call several APIs sequentially. How would you implement this?
+* A user can trigger the same submit action repeatedly, but only one request should run at a time. Which operator would you use?
+* A user clicks a refresh button multiple times, and every request must complete in order. How would you implement this?
+* A component subscribes to a long-running stream and causes a memory leak. How would you fix it?
+* An Observable should stop emitting when the component is destroyed. How would you implement this?
+* A dashboard needs to refresh its data every 30 seconds. How would you implement polling?
+* Polling should pause when the user navigates away from the page. How would you handle it?
+* An API returns duplicate data repeatedly. How would you prevent unnecessary UI updates?
+* A loading spinner should appear when an API starts and disappear on success or failure. How would you implement this?
+* A component needs to display cached data immediately and refresh it in the background. How would you design the stream?
+* A shared user profile must be updated and reflected across multiple components. How would you use BehaviorSubject?
+* A user logs out while several API requests are in progress. How would you manage cancellation and cleanup?
+* A sequence of API calls should stop if any request fails. Which RxJS approach would you use?
+* An API failure should display an error message but allow the user to retry manually. How would you design the stream?
+* A form should validate input only after the user stops typing for a short duration. Which operators would you use?
+* Two form fields must be combined to trigger an API request only when both values change. How would you implement this?
+* A button should ignore clicks while an API request is running. Which RxJS operator would you use?
+* A live notification stream should update the UI without creating multiple WebSocket connections. How would you handle sharing?
+* A component needs the latest value from one stream whenever another stream emits. Which operator would you use?
+* An API returns an empty result, and the UI must display a default value. How would you handle it?
+* A data stream should continue after one individual item causes an error. How would you structure error handling?
+* Two independent data streams must be combined, but the UI should update whenever either stream changes. Which operator would you use?
+* A user rapidly switches between tabs, and each tab loads data asynchronously. How would you prevent stale responses from appearing?

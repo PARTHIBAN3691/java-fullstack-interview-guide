@@ -1,0 +1,19 @@
+
+* Your application throws `ClassNotFoundException` only in production. How would you investigate the classpath, module path, and ClassLoader configuration?
+* Your application throws `NoClassDefFoundError` even though the class exists in the deployment artifact. How would you identify the root cause?
+* A plugin framework loads classes with the same fully qualified name from two different JAR files. How would you prevent class identity and casting problems?
+* Your application server deploys and undeploys applications repeatedly, but Metaspace usage continues to grow. How would you investigate potential ClassLoader leaks?
+* A custom ClassLoader causes `ClassCastException` between two instances of a class with the same name. How would you diagnose the issue?
+* Your application uses a third-party library that relies on the thread context ClassLoader. How would you troubleshoot resource or class discovery failures?
+* A class throws `ExceptionInInitializerError` during startup, and later access results in `NoClassDefFoundError`. How would you investigate the sequence of failures?
+* Your application has circular static dependencies between multiple classes. How would you diagnose incorrect initialization values?
+* A modular application needs to load plugins that have conflicting dependency versions. How would you design the ClassLoader hierarchy?
+* Your application starts quickly but becomes much faster after several minutes. How would you determine whether JIT compilation is responsible?
+* A Java service experiences high CPU usage during startup because of compilation activity. How would you investigate JIT compiler behavior?
+* A long-running numerical loop initially runs slowly and later becomes faster. How would you explain the role of profiling, compilation, and OSR?
+* Your application's latency suddenly increases after a method was optimized by the JIT compiler. How would you investigate deoptimization and runtime profiling?
+* A production JVM reports code-cache exhaustion. What metrics, logs, and JVM options would you inspect?
+* A performance benchmark reports that a simple Java method executes faster in one run than another. How would you account for JIT warm-up, dead-code elimination, and benchmark design?
+* Your service shows good performance in testing but poor performance under production workloads. How would you investigate JIT profiling and optimization assumptions?
+* Your team wants to reduce startup time for a Java microservice. How would you distinguish class-loading costs from JIT compilation costs?
+* Your application dynamically generates classes and loads them at runtime. How would you measure the impact on class loading, Metaspace, and JIT compilation?

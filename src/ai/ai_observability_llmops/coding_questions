@@ -1,0 +1,84 @@
+**LLMOps Fundamentals**
+* Implement a reusable LLMOps pipeline that records model requests, runs evaluations, publishes metrics, and supports release gating.
+* Build a configuration-driven monitoring component that supports multiple model providers and environment-specific thresholds.
+* Write unit and integration tests for an LLMOps workflow covering model invocation, evaluation failure, and release rejection.
+
+**AI Application Monitoring**
+* Implement a Spring Boot health and metrics endpoint that reports application availability, model-provider health, and dependency status.
+* Build a metrics collector that records request counts, error rates, latency distributions, and model-specific failures.
+* Write tests that verify alert conditions, metric labels, and dashboard aggregation for multiple tenants and model providers.
+
+**Prompt and Response Tracing**
+* Implement a request-tracing component that correlates API requests, prompt construction, model calls, retries, and downstream tool invocations.
+* Build a trace sanitizer that masks sensitive prompt fields and response content before exporting telemetry.
+* Write tests that verify correlation identifiers remain consistent across asynchronous operations and fallback model calls.
+
+**Token Usage and Cost Tracking**
+* Implement a cost calculator that supports provider-specific token pricing, input tokens, output tokens, cached tokens, and model versions.
+* Build a per-request and per-tenant usage aggregator with configurable budget limits and threshold alerts.
+* Write tests for missing usage metadata, pricing changes, failed requests, retries, and discrepancies between estimated and reported costs.
+
+**Latency and Throughput Monitoring**
+* Implement a metrics collector for time to first token, inter-token latency, total latency, throughput, and error rate.
+* Build a load-test client that generates concurrent streaming requests with configurable input and output lengths.
+* Write tests that calculate latency percentiles and detect violations of configured performance objectives.
+
+**Model Quality Monitoring**
+* Implement a quality-monitoring pipeline that records correctness, relevance, groundedness, safety, and user-feedback metrics.
+* Build a configurable alerting component that detects quality degradation across model versions and user segments.
+* Write tests that validate quality thresholds, incomplete evaluation data, and delayed ground-truth labels.
+
+**Retrieval and RAG Tracing**
+* Implement trace spans for query rewriting, embedding generation, vector search, metadata filtering, reranking, and generation.
+* Build a RAG diagnostic report that links retrieved document identifiers and relevance scores to the final answer.
+* Write tests that identify missing retrieval stages, empty results, stale index versions, and retrieval latency regressions.
+
+**Agent Execution Tracing**
+* Implement a trace model for agent runs, planning steps, tool calls, tool results, state transitions, and final outcomes.
+* Build a detector for repeated tool calls, excessive model invocations, circular execution patterns, and workflow timeouts.
+* Write tests for parallel tool execution, retries, checkpoint recovery, and partial telemetry loss.
+
+**Evaluation in Production**
+* Implement a sampled production-evaluation pipeline that sends selected traces to an asynchronous evaluator.
+* Build a component that correlates evaluation scores and human feedback with the original request and deployment versions.
+* Write tests for sampling rates, evaluation queue failures, delayed results, and privacy-aware trace processing.
+
+**Model Drift and Data Drift**
+* Implement a drift detector for input feature distributions, embedding distributions, request categories, and model-quality metrics.
+* Build a monitoring job that compares recent production windows against a versioned baseline and emits configurable alerts.
+* Write tests for stable distributions, genuine drift, seasonal shifts, insufficient sample sizes, and noisy metrics.
+
+**Feedback Collection**
+* Implement a feedback API that records ratings, comments, timestamps, user or tenant identifiers, and trace references.
+* Build an aggregation job that calculates feedback trends while detecting duplicates and suspicious rating patterns.
+* Write tests for invalid submissions, privacy redaction, feedback deduplication, and missing trace references.
+
+**Incident Management for AI Systems**
+* Implement an incident detector that groups related quality, latency, provider, and cost alerts into a single incident.
+* Build an incident record containing severity, affected model and prompt versions, trace references, timeline, owner, and remediation status.
+* Write tests for alert deduplication, severity escalation, incident closure, and post-incident regression-test creation.
+
+**Model and Prompt Versioning**
+* Implement a version registry for prompts, model identifiers, model parameters, embedding configurations, and retrieval-index versions.
+* Build a release manifest that links deployed artifacts to evaluation reports and deployment timestamps.
+* Write tests for immutable versions, rollback selection, incompatible artifacts, and historical trace reconstruction.
+
+**Experiment Tracking**
+* Implement an experiment tracker that records hypotheses, parameters, dataset versions, prompts, model versions, evaluation results, and cost.
+* Build a comparison report that ranks experiments by quality, latency, throughput, and cost.
+* Write tests that verify experiment reproducibility, metadata completeness, and comparisons across repeated runs.
+
+**AI Release Management**
+* Implement a release gate that checks quality, safety, performance, cost, and compatibility thresholds before deployment.
+* Build a canary-monitoring component that compares candidate and baseline models using live metrics and automated rollback rules.
+* Write tests for deployment approval, failed release gates, rollback execution, and compatible model-prompt-index combinations.
+
+**OpenTelemetry for AI Applications**
+* Instrument a Spring Boot LLM client with OpenTelemetry spans for prompt construction, model invocation, retries, and response processing.
+* Implement custom span attributes and metrics for model identifiers, token usage, prompt versions, and latency.
+* Write tests that verify trace context propagation across asynchronous tasks and ensure sensitive data is excluded from exported spans.
+
+**AI Audit Logs**
+* Implement an append-only audit logging component for prompt changes, model deployments, evaluation approvals, and privileged tool executions.
+* Build an audit query API that filters events by actor, timestamp, model version, prompt version, and action type.
+* Write tests for tamper detection, access control, event ordering, retention rules, and sensitive-data redaction.

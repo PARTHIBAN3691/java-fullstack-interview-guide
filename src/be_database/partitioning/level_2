@@ -1,0 +1,30 @@
+* Explain the internal working of partition pruning in a relational database.
+* How does the database optimizer select partitions during query execution?
+* How can an unsuitable partition key cause data skew and performance bottlenecks?
+* How do you identify and resolve uneven data distribution across partitions?
+* What is partition skew, and how does it affect throughput?
+* How does partitioning affect index maintenance and query planning?
+* How do local and global indexes differ in partitioned database architectures?
+* What are the trade-offs between range, list, and hash partitioning for high-volume workloads?
+* How would you design a partitioning strategy for a multi-terabyte transaction table?
+* How do partitioning and sharding complement or differ from each other in distributed systems?
+* How does partitioning affect parallel query execution?
+* How can partition-wise joins improve performance?
+* What challenges arise when joining tables partitioned on different keys?
+* How do partition boundaries affect query performance and maintenance?
+* How would you prevent hot partitions in a high-write database?
+* How would you redesign a partition key when most traffic targets the current date?
+* How do partitioning strategies affect concurrent INSERT and UPDATE operations?
+* How does partitioning interact with transaction isolation and row-level locking?
+* How can partition maintenance operations affect active transactions?
+* How do you perform online partition maintenance with minimal downtime?
+* How would you migrate a large production table to a partitioned design without losing writes?
+* How do partitioning and replication affect failover and disaster recovery?
+* How would you manage partition metadata and schema changes across multiple environments?
+* How do partitioning strategies differ for OLTP and OLAP workloads?
+* How would you partition a table that must support both time-range queries and customer-specific lookups?
+* How do composite partitioning strategies address multiple access patterns?
+* How can partitioning affect backup, restore, and data archival procedures?
+* How do you benchmark the benefits of partitioning against a well-indexed non-partitioned table?
+* How would you troubleshoot a query that scans all partitions despite filtering on the partition key?
+* How would you design a scalable partitioning strategy for a high-throughput Java and Spring Boot application?

@@ -1,0 +1,30 @@
+* Write a Spring Boot REST endpoint that reads a custom request header using @RequestHeader.
+* Write a Spring Boot endpoint that returns a custom response header.
+* Write a Spring Boot filter that adds an X-Correlation-ID response header.
+* Write a Spring Boot interceptor that validates a mandatory request header.
+* Write a Spring Boot endpoint that handles a missing optional header with a default value.
+* Write a Spring Boot endpoint that accepts multiple values for a request header.
+* Write a Spring Boot controller that returns HTTP 415 when the request Content-Type is unsupported.
+* Write a Spring Boot endpoint that supports JSON and XML response formats through content negotiation.
+* Write a Spring WebClient example that sends Authorization and custom correlation headers.
+* Write a Java HttpClient example that adds custom headers to a REST API request.
+* Write an Express.js middleware that validates an X-Client-Version header.
+* Write an Express.js middleware that adds X-Correlation-ID to every response.
+* Write an Express.js route that reads a bearer token from the Authorization header.
+* Write an Express.js endpoint that returns different representations based on the Accept header.
+* Write a Node.js HTTP server that returns Content-Type and Cache-Control headers.
+* Write a function that validates whether a required set of HTTP headers is present.
+* Write a function that validates a custom header against an allowed list of values.
+* Write a REST API test that verifies the Content-Type response header.
+* Write a REST API test that verifies a custom response header and its expected value.
+* Write a Spring Boot integration test that verifies a missing required header returns HTTP 400.
+* Write an automated test that checks CORS response headers.
+* Write a Spring Boot filter that removes a sensitive internal header before returning a response.
+* Write middleware that propagates a correlation ID to a downstream REST API call.
+* Write a function that safely extracts the bearer token from an Authorization header.
+* Write a Spring Boot endpoint that returns an ETag for a resource.
+* Write an endpoint that processes If-None-Match and returns HTTP 304 when the resource has not changed.
+* Write a REST endpoint that uses If-Match to prevent updates when a resource version is stale.
+* Write middleware that adds Cache-Control: no-store to sensitive API responses.
+* Write a unit test that verifies invalid or malformed header values are rejected.
+* Write a coding solution that redacts Authorization and Cookie headers before logging a request.

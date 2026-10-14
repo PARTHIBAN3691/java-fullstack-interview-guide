@@ -1,0 +1,20 @@
+* How does reachability analysis work internally in the JVM?
+* What are the different object reachability states defined by Java?
+* How does the JVM handle objects that become unreachable but are part of a circular reference?
+* Why does Java garbage collection not depend on reference counting alone?
+* How does the JVM identify and process objects that are eligible for collection?
+* What is the difference between live data size, allocated heap size, and committed heap memory?
+* Why can an application experience an `OutOfMemoryError` even when garbage collection is running frequently?
+* What is GC overhead limit exceeded, and under what circumstances can it occur?
+* How can object allocation rate influence garbage collection performance?
+* How does object lifetime influence generational garbage collection efficiency?
+* What are the trade-offs between stop-the-world collectors and concurrent collectors?
+* How do garbage collectors differ in their approach to compaction and fragmentation?
+* What is the difference between heap exhaustion and native memory exhaustion?
+* How can direct buffers, thread stacks, and metaspace contribute to memory pressure outside the Java heap?
+* How does class unloading relate to garbage collection?
+* How can strong references unintentionally prevent objects from being collected?
+* How would you distinguish a memory leak from a temporarily high allocation rate?
+* What is the impact of finalization on garbage collection performance and object lifecycle?
+* Why can explicit calls to `System.gc()` negatively affect application performance?
+* How would you choose a garbage collector based on application throughput, latency, and heap size?

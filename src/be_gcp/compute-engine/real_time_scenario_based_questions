@@ -1,0 +1,30 @@
+* A Spring Boot application running on Compute Engine suddenly returns HTTP 502 errors. How would you investigate the application, reverse proxy, and load balancer?
+* A Java application becomes unresponsive during peak traffic. How would you analyze CPU, memory, thread dumps, garbage collection, and system resources?
+* A VM runs out of memory after several hours of production traffic. How would you identify a memory leak and prevent recurrence?
+* Your application works when accessed locally on the VM but cannot be reached externally. How would you troubleshoot firewall rules, IP addresses, routing, and application binding?
+* A VM becomes unreachable over SSH after a configuration change. How would you regain access and diagnose the underlying problem?
+* A VM is unexpectedly terminated or recreated during a maintenance event. How would you ensure application availability and data durability?
+* A managed instance group creates additional VMs, but the new instances fail health checks. How would you troubleshoot startup scripts, application readiness, and firewall configuration?
+* A rolling update causes a production outage because the new application version fails to start. How would you improve deployment validation and rollback?
+* A deployment succeeds on one VM but fails on other instances due to different Java versions or configuration. How would you make deployments consistent?
+* Application latency increases after moving the workload to a smaller machine type. How would you evaluate CPU, memory, disk, and network bottlenecks?
+* A VM's persistent disk is almost full, causing the application to fail while writing logs. How would you recover service and prevent recurrence?
+* A VM cannot access Cloud Storage even though it has a service account attached. How would you investigate IAM roles, OAuth scopes, and application credentials?
+* A private VM cannot download dependencies from external repositories. How would you troubleshoot routing, Cloud NAT, DNS, and firewall rules?
+* A VM can connect to Cloud SQL initially but loses connectivity during periods of high load. How would you investigate connection pooling, networking, and database limits?
+* A managed instance group scales too slowly during a traffic spike. How would you improve scaling behavior and protect the application during startup?
+* Autoscaling creates too many VM instances, causing a large increase in cost. How would you tune scaling policies, cooldown behavior, and capacity limits?
+* A zonal outage affects application instances in a production environment. How would you design and execute recovery across zones?
+* A VM's CPU utilization remains low, but response times are high. How would you investigate thread contention, network latency, locks, and downstream dependencies?
+* A Java service experiences long garbage collection pauses after a deployment. How would you compare JVM settings and workload behavior between versions?
+* A security audit discovers an overly permissive firewall rule exposing SSH to the internet. How would you remediate access without locking out administrators?
+* An application needs to access a private API on another VPC network. How would you establish secure connectivity and troubleshoot routing or firewall failures?
+* A VM's service account key has been accidentally committed to a source repository. How would you contain the incident and replace the authentication approach?
+* A new VM image contains an outdated dependency or operating system package. How would you patch the image and roll out the updated version safely?
+* A disk snapshot exists, but a restored VM does not start correctly. How would you diagnose boot configuration, filesystem, and image compatibility issues?
+* A background Java process stops unexpectedly when an SSH session closes. How would you configure reliable process supervision?
+* Application logs are scattered across multiple VMs, making incident investigation difficult. How would you centralize logging and correlate requests?
+* A VM-based service must handle large file uploads and downloads efficiently. How would you choose between local disks, persistent disks, and Cloud Storage?
+* A production deployment needs to support rollback without losing user-generated data. How would you separate application releases from persistent state?
+* A VM migration to another zone causes unexpected latency to Cloud SQL and other services. How would you investigate resource placement and network paths?
+* Your organization wants to migrate a manually configured fleet of VMs to repeatable infrastructure. How would you introduce Terraform, instance templates, and automated deployments?

@@ -1,0 +1,30 @@
+* A Spring Boot application running on a Compute Engine VM cannot connect to a Cloud SQL instance using a private IP. How would you troubleshoot the issue?
+* A private VM can communicate with other VMs but cannot access external package repositories. How would you investigate the problem?
+* A VM without an external IP cannot download application dependencies during deployment. How would you enable secure outbound connectivity?
+* Two VPC networks are peered, but workloads in one network cannot access resources behind a third network. How would you explain and resolve the limitation?
+* A firewall rule change causes production API traffic to fail. How would you identify the blocking rule and restore connectivity?
+* A database subnet is accidentally configured with an overly broad ingress firewall rule. How would you contain the exposure and prevent recurrence?
+* A Cloud Run service cannot access an internal API hosted on Compute Engine. How would you investigate its VPC connectivity configuration?
+* A GKE workload cannot reach a private service in another VPC. How would you investigate routes, firewall rules, DNS, and peering?
+* A production VM can reach an IP address but cannot resolve the corresponding hostname. How would you troubleshoot DNS?
+* Two teams create subnets with overlapping CIDR ranges, preventing the planned network connection. How would you resolve the issue?
+* A private VM can access Google APIs in one subnet but not another. How would you investigate Private Google Access and routing?
+* Cloud NAT is configured, but outbound connections from private VMs still fail. How would you diagnose the issue?
+* An application experiences intermittent connection failures after a Cloud VPN tunnel fails over. How would you investigate routing and tunnel health?
+* An on-premises application cannot connect to a private service in Google Cloud after a network migration. How would you troubleshoot the hybrid connection?
+* A new firewall rule allows traffic from the wrong source range. How would you correct it while minimizing production risk?
+* A Java microservice can connect to a database in development but not in production. How would you compare the two VPC configurations?
+* A team requires private access to Google APIs without sending traffic through the public internet. How would you design the network path?
+* A company wants multiple application teams to share a central VPC while retaining separate project ownership. How would you configure Shared VPC?
+* VPC Flow Logs show unexpected outbound traffic from a production VM. How would you identify the destination and assess the security impact?
+* A private GKE cluster cannot pull container images from Artifact Registry. How would you troubleshoot connectivity and permissions?
+* An application becomes unreachable after a custom route is introduced. How would you identify route priority and next-hop issues?
+* A service migration to another region introduces high network latency. How would you investigate routing, service placement, and network paths?
+* A private workload must call a third-party API, but organization policy prohibits direct internet egress. How would you design a controlled egress solution?
+* A new VPC peering connection is active, but the expected traffic still does not flow. How would you investigate subnet routes, firewall rules, and address ranges?
+* A Cloud SQL instance must be accessed privately by applications in multiple projects. How would you design the required connectivity?
+* An organization discovers that development workloads can reach production databases. How would you isolate the environments?
+* Network traffic is dropped after a VPN migration, even though the tunnel is up. How would you investigate route advertisements, firewall rules, and MTU issues?
+* A production deployment fails because the subnet has insufficient available IP addresses. How would you plan and execute an IP capacity expansion?
+* A security team wants all outbound traffic from selected projects to pass through centralized inspection. How would you design and validate the architecture?
+* A regional network outage affects application connectivity. How would you design failover and test recovery without exposing private services?

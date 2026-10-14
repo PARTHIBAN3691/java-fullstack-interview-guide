@@ -1,0 +1,15 @@
+* Write a Java program that creates short-lived objects and generates garbage collection activity for Shenandoah GC analysis.
+* Write a Java program that allocates and retains objects to study Shenandoah GC behavior with a large live-data set.
+* Write a Java program that creates sustained allocation pressure to investigate Shenandoah GC cycle frequency.
+* Write a Java program using `GarbageCollectorMXBean` to report collection counts and collection times while Shenandoah GC is enabled.
+* Write a Java program using `MemoryMXBean` to monitor heap usage during a sustained workload.
+* Write a Java program that registers garbage collection notifications and records available GC event details.
+* Write a Java program that generates GC logs using Shenandoah GC and analyze the cycle phases.
+* Write a Java program that generates a repeatable allocation workload to compare Shenandoah GC with G1 GC.
+* Write a Java program that allocates objects with configurable lifetimes to compare short-lived and long-lived allocation patterns.
+* Write a Java program that generates high allocation pressure and records application throughput alongside GC metrics.
+* Write a Java program to parse Shenandoah GC logs and extract pause durations, cycle counts, and event types.
+* Write a Java program to calculate average and maximum GC pause durations from Shenandoah GC logs.
+* Write a Java program to identify degenerated and Full GC events from a Shenandoah GC log file.
+* Write a Java program to compare throughput and GC activity across multiple heap-size configurations.
+* Write a Java benchmarking program that measures throughput, average latency, p99 latency, CPU usage, and GC behavior for Shenandoah GC and G1 GC.

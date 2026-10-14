@@ -1,0 +1,30 @@
+* How would you design a highly available private container registry for enterprise Java microservices?
+* How do Docker registries store image manifests, configuration metadata, and filesystem layers?
+* Explain the role of the OCI image specification in container registries.
+* How do Docker Registry HTTP API operations support image pushes and pulls?
+* How does a registry handle image layer deduplication and content-addressable storage?
+* How do image digests help verify image integrity across registries?
+* How would you guarantee that the image tested in CI is exactly the image deployed to production?
+* How would you design immutable image promotion across development, staging, and production?
+* How do you implement registry authentication and authorization using enterprise identity systems?
+* How would you design least-privilege access for CI pipelines, developers, and production deployment systems?
+* How would you rotate registry credentials without disrupting production deployments?
+* How do you secure registry access using TLS and certificate validation?
+* How would you configure a private registry behind a reverse proxy or enterprise load balancer?
+* How would you troubleshoot registry connectivity failures involving DNS, TLS certificates, proxies, and firewalls?
+* How do image signing and signature verification help establish image authenticity?
+* How would you integrate image signing and provenance verification into a Java microservice delivery pipeline?
+* How would you generate and store a software bill of materials for each published image?
+* How would you enforce vulnerability scanning before allowing images to be deployed?
+* How do registry retention policies interact with image digests, tags, and shared layers?
+* How would you prevent a cleanup policy from deleting images required for rollback?
+* How would you design a disaster recovery strategy for a private image registry?
+* How would you migrate images between two registries while preserving tags and verifying digests?
+* How do cross-region replication and registry caching improve deployment reliability?
+* How would you optimize registry storage and network bandwidth for hundreds of Java microservices?
+* How do multi-platform manifests support images built for AMD64 and ARM64?
+* How would you troubleshoot an image that is available in a registry but cannot be pulled on a particular CPU architecture?
+* How would you design a registry strategy for a hybrid environment using on-premises infrastructure and multiple cloud providers?
+* How would you investigate inconsistent image availability across replicated registries?
+* How would you implement audit logging and monitoring for registry access, pushes, pulls, and administrative changes?
+* How would you establish enterprise-wide governance for image naming, versioning, security, retention, and release promotion?

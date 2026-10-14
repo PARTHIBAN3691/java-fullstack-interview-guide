@@ -1,0 +1,30 @@
+* How do you manage database transactions using JDBC?
+* How do you disable autocommit and commit a transaction manually in Java?
+* How do you handle exceptions and roll back a JDBC transaction?
+* How does Spring's @Transactional annotation work internally?
+* What is the difference between declarative and programmatic transaction management in Spring?
+* What are the different transaction propagation types supported by Spring?
+* What is the difference between REQUIRED and REQUIRES_NEW propagation?
+* When would you use SUPPORTS, MANDATORY, NOT_SUPPORTED, and NEVER propagation?
+* What is the difference between NESTED and REQUIRES_NEW transactions?
+* How does transaction isolation work with Spring's @Transactional annotation?
+* How do you configure a transaction timeout in Spring Boot?
+* How does Spring determine whether a transaction should be rolled back?
+* Why does Spring roll back by default for unchecked exceptions but not checked exceptions?
+* How do rollbackFor and noRollbackFor work?
+* Why might @Transactional fail when a method calls another transactional method in the same class?
+* What is the difference between class-level and method-level @Transactional annotations?
+* How do transactions behave when an exception is caught and suppressed inside a transactional method?
+* How do you manage transactions when using Spring Data JPA?
+* What is the role of PlatformTransactionManager in Spring?
+* What is the difference between JpaTransactionManager and DataSourceTransactionManager?
+* How do transaction boundaries affect Hibernate session and persistence-context behavior?
+* What is the difference between flush and commit in JPA?
+* How do pessimistic and optimistic locking help maintain transaction consistency?
+* How do you handle concurrent updates to the same database record?
+* How do you detect and resolve database deadlocks?
+* How do you implement retry logic for transient transaction failures?
+* How do you ensure idempotency when retrying a failed transaction?
+* How do you manage transactions across multiple database operations in a service layer?
+* How do you test transaction rollback behavior in Spring Boot?
+* How do you configure transaction management when an application uses multiple DataSources?

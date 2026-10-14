@@ -1,0 +1,30 @@
+* How would you design a serverless architecture using Java Cloud Functions for an enterprise application?
+* How would you decide between Cloud Functions, Cloud Run, and GKE for a Java microservice?
+* How would you design event-driven processing for millions of messages using Pub/Sub and Cloud Functions?
+* How would you implement idempotency when events can be delivered multiple times or out of order?
+* How would you handle duplicate events when processing financial transactions?
+* How would you design a reliable retry and dead-letter strategy for failed event processing?
+* How would you prevent retry storms when a downstream service is unavailable?
+* How would you control concurrency and scaling when a sudden event spike occurs?
+* How would you estimate memory, CPU, timeout, and concurrency requirements for a Java function?
+* How would you optimize cold-start latency for Java-based functions?
+* How would you reduce Java application startup time and memory consumption in a serverless environment?
+* How would you manage database connection pools when functions scale horizontally?
+* How would you prevent database connection exhaustion during sudden traffic spikes?
+* How would you design a function that must coordinate updates across multiple downstream services?
+* How would you handle partial failures when a function invokes several external APIs?
+* How would you implement distributed tracing across functions, Pub/Sub, and downstream services?
+* How would you secure function-to-function communication across multiple Google Cloud projects?
+* How would you implement least-privilege IAM for function deployment and execution?
+* How would you manage secrets and credential rotation without embedding sensitive values in application code?
+* How would you protect an HTTP-triggered function from unauthorized access, abuse, and excessive requests?
+* How would you design a function that processes large files without exceeding memory or execution limits?
+* How would you process long-running jobs that exceed a function's execution timeout?
+* How would you ensure exactly-once business effects when the event delivery mechanism may provide at-least-once delivery?
+* How would you implement deduplication using an idempotency key and a persistent data store?
+* How would you design backward-compatible event schemas for independently deployed producers and consumers?
+* How would you manage deployment versions, traffic migration, and rollback for second-generation functions?
+* How would you implement CI/CD with automated tests, security scanning, and environment promotion?
+* How would you design observability for high-volume functions using structured logs, metrics, and traces?
+* How would you investigate rising invocation costs and optimize resource utilization?
+* How would you design disaster recovery and regional resilience for critical event-driven functions?

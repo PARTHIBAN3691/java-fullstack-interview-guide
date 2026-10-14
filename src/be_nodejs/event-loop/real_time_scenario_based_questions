@@ -1,0 +1,30 @@
+* Your Node.js API becomes unresponsive whenever a large JSON file is processed. How would you identify and fix the event-loop blocking?
+* An API has high response latency even though CPU usage is low. How would you determine whether the event loop is waiting for I/O or blocked by another operation?
+* Your application executes recursive process.nextTick() calls, and database requests stop progressing. Why does this happen, and how would you fix it?
+* A Promise-heavy application experiences delayed HTTP responses during peak traffic. How would you investigate microtask starvation?
+* A setTimeout() callback executes later than its configured delay. What could cause this behavior?
+* Your tests sometimes observe setImmediate() executing before setTimeout() and sometimes the reverse. How would you explain the result?
+* A file-processing service slows down when many password-hashing operations run concurrently. How would you investigate thread-pool contention?
+* Your application performs many DNS lookups, and unrelated file-system operations become slower. What would you investigate?
+* A CPU-intensive report-generation task blocks all incoming API requests. How would you redesign the processing flow?
+* Your application uses worker threads, but overall performance becomes worse after increasing the worker count. How would you diagnose the problem?
+* A streaming API consumes excessive memory when downstream clients are slow. How would you use backpressure to protect the event loop?
+* Your service experiences intermittent latency spikes during garbage collection. How would you measure and reduce their impact?
+* A production application has high event-loop utilization and increasing request timeouts. What metrics and profiling tools would you use?
+* An application starts many asynchronous operations at once, causing a large backlog of callbacks. How would you introduce concurrency limits?
+* A database query is asynchronous, but request processing still becomes slow under load. What event-loop and resource-related issues would you investigate?
+* A timer-based job executes late when the application receives heavy traffic. How would you make the job more reliable?
+* A server uses synchronous file reads during every request. How would you replace them without changing the API behavior?
+* Your application has low CPU usage but a high monitorEventLoopDelay() reading. What possible causes would you investigate?
+* A Promise callback schedules more Promise callbacks continuously, preventing timers from running promptly. How would you resolve the starvation?
+* A CPU-intensive task is moved to a worker thread, but the main application still experiences delays. What other bottlenecks would you investigate?
+* A high-volume API performs large-scale JSON parsing and validation. How would you reduce event-loop latency?
+* A background task competes with request handling for CPU resources. How would you isolate and schedule the workload?
+* Your service experiences a burst of incoming events that overwhelms the callback-processing rate. How would you introduce buffering and backpressure?
+* A production incident shows increasing response times but no obvious errors. How would event-loop metrics help identify the root cause?
+* An application uses setImmediate() to divide a long computation into smaller chunks. What benefits and limitations does this approach have?
+* A batch-processing job must run alongside an HTTP server without causing unacceptable latency. How would you structure the job?
+* Your application performs CPU-intensive regular-expression matching on user input. How could this affect the event loop, and how would you mitigate the risk?
+* A service becomes slow after increasing UV_THREADPOOL_SIZE. How would you determine whether the new setting caused resource contention?
+* A server handles thousands of open sockets but processes requests slowly. How would you distinguish socket readiness issues from JavaScript execution bottlenecks?
+* You need to investigate an event-loop performance regression introduced by a new release. How would you benchmark, profile, and compare the versions?

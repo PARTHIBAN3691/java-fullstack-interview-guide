@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a Kafka producer request from `send()` to broker acknowledgement.
+* How does the Kafka producer internally maintain batches for different partitions?
+* How does the producer accumulator work?
+* How does the sender thread work inside the Kafka producer?
+* How does Kafka determine the broker to which a producer request should be sent?
+* How does producer metadata management work?
+* How does the producer react when partition leadership changes?
+* How does producer idempotence prevent duplicate records?
+* How does the producer sequence number mechanism work?
+* What happens when an idempotent producer receives an out-of-order sequence response?
+* How do retries interact with message ordering?
+* How does `max.in.flight.requests.per.connection` affect ordering and throughput?
+* How would you tune a Kafka producer for millions of messages per second?
+* How would you tune a Kafka producer for ultra-low latency?
+* How would you balance `batch.size`, `linger.ms`, and `compression.type` for high throughput?
+* How does producer memory usage grow under heavy traffic?
+* How would you diagnose producer buffer exhaustion?
+* How would you diagnose high producer latency?
+* How would you diagnose low producer throughput?
+* How does producer partition skew affect performance?
+* How would you design a partitioning strategy for a high-volume producer?
+* How does producer idempotence affect performance?
+* How do Kafka transactions work from the producer perspective?
+* How does a transactional producer differ from an idempotent producer?
+* How would you implement exactly-once publishing using Kafka transactions?
+* What happens when a producer crashes after sending a message but before receiving the acknowledgement?
+* How would you prevent duplicate business operations when producer retries occur?
+* How does `acks=all` interact with replication and producer reliability?
+* How would you design a producer for high availability across multiple brokers?
+* How would you troubleshoot intermittent `NotEnoughReplicasException` from a producer?

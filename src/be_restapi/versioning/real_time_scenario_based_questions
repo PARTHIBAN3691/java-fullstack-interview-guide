@@ -1,0 +1,30 @@
+* Your existing v1 API returns a customer's full name, but the new requirement separates it into first name and last name. How would you introduce this change?
+* A new API version changes a response field from a string to a number. How would you avoid breaking existing clients?
+* A mobile application uses v1, while a web application needs v2. How would you support both clients in the same Spring Boot application?
+* Your organization wants to migrate all consumers from v1 to v2, but some clients cannot be updated immediately. How would you plan the migration?
+* A client continues using a deprecated API version after the announced sunset date. How would you handle the request?
+* A v2 controller duplicates almost all the business logic from v1. How would you refactor the architecture?
+* An API gateway routes v2 requests to a service that supports only v1. How would you detect and resolve the compatibility issue?
+* A database schema change is required for v2, but v1 must continue working during deployment. How would you coordinate the migration?
+* A new mandatory request field is introduced, and older clients start receiving validation errors. How would you fix the rollout?
+* Your API adds a new response field, but an older client fails because it rejects unknown JSON properties. How would you maintain compatibility?
+* A team changes the meaning of an existing status field without changing the API version. What risks does this create, and how would you address them?
+* Different microservices release API versions at different times. How would you prevent integration failures?
+* A public API has five active versions, increasing maintenance costs. How would you decide which versions to retire?
+* Your monitoring shows that 30% of traffic still uses v1. How would you identify the consumers and plan migration?
+* A client requires a custom response format that differs from the standard v2 contract. How would you handle the requirement?
+* A new v2 API introduces a different authentication requirement. How would you roll it out without disrupting v1 consumers?
+* An API gateway must route requests based on the Accept header rather than the URL. How would you implement and test this behavior?
+* A new API version changes pagination semantics, causing clients to skip records. How would you investigate and prevent the issue?
+* A response DTO is shared between v1 and v2, and a change for v2 unexpectedly affects v1. How would you redesign the DTO structure?
+* A legacy client cannot support the new response structure. How would you use an adapter or translation layer to preserve compatibility?
+* Your team wants to remove an old endpoint, but its usage is not documented. How would you determine whether removal is safe?
+* A breaking change passes unit tests but causes failures for an external integration. How would you improve your testing strategy?
+* A new API version is deployed gradually, but some requests fail only on certain application instances. How would you investigate the rollout?
+* Two teams define different meanings for the same version number across related services. How would you establish consistent versioning conventions?
+* A security fix must be applied to all API versions. How would you avoid maintaining separate security implementations?
+* Your v2 API changes an enum response value, causing an older client to fail. How would you make the contract more resilient?
+* A downstream service removes a field still required by your v1 API. How would you preserve the existing public contract?
+* A new API version must be released without a coordinated deployment of every consuming service. How would you achieve this?
+* Your organization wants to introduce API deprecation headers and sunset dates. How would you implement and monitor the policy?
+* You need to migrate a high-traffic API from URI versioning to header versioning. How would you minimize disruption to consumers?

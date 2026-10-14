@@ -1,0 +1,70 @@
+
+**Database CI/CD**
+* A database pipeline passes validation but fails in production because the migration assumes an object that differs across environments. How would you identify the inconsistency and prevent future releases from relying on undocumented schema state?
+* Two teams merge database changes in parallel, and both migrations modify the same table. How would you detect the conflict, determine a safe ordering, and prevent similar deployment collisions?
+* A pipeline reports success even though a migration partially completed and left an index missing. How would you investigate the migration history and actual schema, restore consistency, and improve pipeline verification?
+
+**Database Migrations**
+* A migration that updates millions of records is running for hours, increasing transaction-log usage and replication lag. How would you stop further impact, resume safely, and redesign the backfill?
+* A production migration fails after adding a column but before creating its required index. How would you assess the partially applied state and decide whether to resume, repair, or compensate?
+* A foreign-key migration causes unexpected locking during peak traffic. How would you identify the lock chain and redesign the migration to minimize disruption?
+
+**Flyway**
+* Flyway reports a checksum mismatch in production after a developer edits a migration that has already run in staging. How would you establish the correct source of truth and repair the release process?
+* A Flyway migration fails halfway through because the database engine does not roll back all DDL operations. How would you inspect the real schema, recover safely, and prevent blind retries?
+* A new service instance starts during a rolling deployment and attempts to run migrations while another instance is already migrating. How would you prevent concurrency issues and separate deployment responsibilities?
+
+**Liquibase**
+* Liquibase reports a changeset as executed, but the expected database object is missing after an interrupted deployment. How would you validate the actual database state and recover without corrupting changelog history?
+* A Liquibase precondition behaves differently across development and production because the schemas are not identical. How would you identify the environment discrepancy and make the precondition reliable?
+* A changeset containing multiple DDL statements fails on a database engine that cannot transactionally roll back the operation. How would you recover and make the changeset safer?
+
+**Schema Versioning**
+* Two production regions run different schema versions after a regional deployment failure. How would you assess compatibility, restore a safe release state, and bring the regions back into alignment?
+* A newly deployed application starts successfully but fails when it encounters an older schema in one tenant database. How would you detect compatibility gaps before application startup?
+* A shared database is changed by an emergency script that bypasses version control. How would you reconstruct the schema history and restore an auditable migration process?
+
+**Backward-Compatible Schema Changes**
+* A new application version writes to a new column while older instances continue updating the old column. Data begins to diverge. How would you restore consistency and complete the migration safely?
+* A deprecated column is removed after the team believes all consumers have migrated, but a scheduled batch job fails overnight. How would you recover and improve dependency discovery?
+* A new non-null constraint causes production writes to fail because older clients omit the new field. How would you resolve the immediate outage and redesign the rollout?
+
+**Zero-Downtime Migrations**
+* Adding an index to a large table causes increased latency and replication lag even though the database supports online index creation. How would you investigate resource contention and choose safer execution parameters?
+* A backfill runs concurrently with user updates, causing some records to contain inconsistent transformed values. How would you reconcile affected rows and ensure the next backfill is race-safe?
+* A migration is expected to finish in ten minutes but starts producing lock waits and breaching latency objectives after two minutes. What metrics and abort criteria would you use to decide whether to stop it?
+
+**Database Rollback Strategies**
+* An application rollback succeeds, but the previous application version cannot read the schema introduced by the failed release. How would you restore compatibility without unnecessarily restoring the entire database?
+* A migration accidentally modifies business-critical data, and the normal down migration would lose newer valid updates. How would you reconstruct the intended data and choose a recovery strategy?
+* A release fails after the database migration commits but before all application instances are upgraded. How would you determine whether to continue forward, roll back the application, or apply a compensating migration?
+
+**Database Backup Automation**
+* A scheduled backup job reports success, but a recovery drill reveals that the backup is incomplete or unusable. How would you investigate the failure and implement stronger verification?
+* A ransomware incident affects the production database and the credentials used to manage its backups. How would you identify a trustworthy recovery point and prevent backup compromise from recurring?
+* A regional outage occurs, and the team discovers that the most recent recoverable backup is older than the required RPO. How would you recover service and address the architecture gap?
+
+**Database Replication**
+* A read replica falls several minutes behind during a traffic spike, causing users to see outdated order status. How would you determine the cause and route consistency-sensitive reads safely?
+* The primary database fails, and two replicas have different replication positions. How would you choose a promotion candidate, evaluate potential data loss, and prevent split-brain writes?
+* Replication lag increases during a schema migration and remains high after the migration finishes. How would you identify whether the cause is write volume, long transactions, index work, or replica capacity?
+
+**Database Deployment Pipelines**
+* A deployment runner crashes after the database migration executes but before the pipeline records success. How would you determine the actual migration state and make pipeline recovery idempotent?
+* Two release pipelines attempt to modify the same production schema concurrently. How would you serialize the changes and communicate the blocked release status?
+* An application rollout starts before a required migration is fully complete, causing errors in new instances. How would you coordinate release sequencing and health gates?
+
+**Database Observability**
+* Application latency rises, but database CPU and average query duration look normal. How would you investigate pool wait time, lock waits, network latency, and tail latency?
+* A database monitoring dashboard shows rising connections and deadlocks, but alerts do not fire. How would you review thresholds, cardinality, alert windows, and service-level indicators?
+* A new release causes one SQL query to become slow, but database logs do not identify the originating service. How would you improve trace correlation and query attribution?
+
+**Database Performance Monitoring**
+* A critical endpoint's p99 latency increases sharply after a data import, while average latency remains unchanged. How would you identify plan regressions, skewed data distributions, and queries affecting the tail?
+* Database CPU is low, yet API requests queue for connections and time out. How would you distinguish connection acquisition delays from database execution delays?
+* Adding several indexes improves reads but significantly degrades write throughput. How would you measure the trade-offs and identify which indexes should be retained?
+
+**Connection Pool Management**
+* HikariCP reports connection timeouts during a traffic spike, but the database is not at its maximum connection count. How would you investigate leaked connections, long transactions, pool sizing, and connection validation?
+* Autoscaling doubles the number of application replicas, and the database becomes overloaded by connection creation. How would you establish a safe connection budget and mitigate the immediate impact?
+* After a database failover, application instances continue using stale or broken connections. How would you recover the pool, validate failover behavior, and avoid a connection storm?

@@ -1,0 +1,20 @@
+* Write a Java method to retrieve a Cosmos DB document using its `id` and partition key.
+* Create a Spring Boot REST API to insert a customer document into Cosmos DB.
+* Write a Java method to retrieve documents using pagination and continuation tokens.
+* Implement ETag-based optimistic concurrency when updating a Cosmos DB document.
+* Write Java code to partially update selected fields of a Cosmos DB document.
+* Implement a repository class that supports Cosmos DB CRUD operations.
+* Create a Spring Boot service that retrieves orders by customer ID.
+* Implement exception handling for Cosmos DB `404`, `409`, and `429` responses.
+* Write Java code to handle Cosmos DB throttling with appropriate retry behavior.
+* Implement an idempotent transaction-creation API that prevents duplicate inserts.
+* Write a Java program that processes a large number of Cosmos DB documents without loading all documents into memory.
+* Implement an asynchronous Cosmos DB operation using the Java SDK.
+* Write a method that updates a document only if its ETag has not changed.
+* Implement a Spring Boot search API that minimizes unnecessary cross-partition queries.
+* Use Java Streams to group customer documents by a specified attribute.
+* Write a Java program to identify duplicate transaction IDs before persisting records to Cosmos DB.
+* Implement a batch-processing solution for inserting multiple documents into Cosmos DB.
+* Create a repository method that supports filtering, sorting, and pagination.
+* Implement a Java service that handles Cosmos DB failures using timeouts, retries, and fallback mechanisms.
+* Write a Java program to compare the RU consumption of two alternative Cosmos DB query approaches.

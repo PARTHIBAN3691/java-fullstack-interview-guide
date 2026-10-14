@@ -1,0 +1,20 @@
+* A Java Spring Boot application runs on three EC2 instances behind an ALB. One instance becomes unhealthy. How does the ALB respond, and how would you investigate the failure?
+* Users receive HTTP 502 errors after a new Java application deployment. How would you determine whether the issue is caused by the ALB, target configuration, or application?
+* An ALB returns HTTP 503 even though EC2 instances are running. What would you check?
+* An ALB returns HTTP 504 during peak traffic. How would you identify whether the cause is an application timeout, database delay, or downstream service latency?
+* A Spring Boot service takes 45 seconds to initialize, but the ALB health check starts after deployment. How would you prevent premature traffic routing?
+* A microservices application has `/orders`, `/payments`, and `/customers` endpoints. How would you configure ALB rules to route each path to the correct target group?
+* Two application versions need to receive 90% and 10% of traffic during a canary release. How would you implement the traffic distribution?
+* An application requires WebSocket connections that must remain associated with a particular backend. How would you configure the load balancer and application?
+* Client IP addresses appear to be identical in Java application logs. How would you preserve and safely interpret the original client IP?
+* A public-facing ALB works, but its private EC2 targets cannot be reached. How would you troubleshoot security groups, routes, network ACLs, and listener configuration?
+* A Java service scales from two to twenty instances, but traffic remains uneven. How would you investigate target health, stickiness, connection reuse, and traffic patterns?
+* During an Auto Scaling scale-in event, active requests fail because instances terminate too early. How would you configure deregistration delay and graceful shutdown?
+* An HTTPS endpoint fails after a certificate renewal. How would you troubleshoot the ACM certificate, listener configuration, domain name, and TLS settings?
+* An internal ALB must route requests between several backend services without exposing them publicly. How would you design the network and security configuration?
+* A Java microservice uses gRPC, while another exposes REST endpoints. How would you select and configure the appropriate load balancer and listener protocols?
+* An ALB health check succeeds, but users receive application-level errors. How would you improve health checks and application readiness reporting?
+* A sudden increase in traffic causes both ALB request counts and Java thread-pool queue sizes to rise. How would you determine whether to scale the application or optimize request processing?
+* A deployment requires zero downtime while replacing all existing EC2 targets. How would you coordinate target registration, health checks, traffic shifting, and deregistration?
+* A security audit finds that backend instances accept direct internet traffic even though an ALB is present. How would you close this exposure?
+* A production outage affects only one Availability Zone. How would you use ALB metrics, target health, and network diagnostics to restore availability?

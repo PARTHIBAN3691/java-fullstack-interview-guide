@@ -1,0 +1,30 @@
+* Write a Node.js program to connect to a MySQL database and verify the connection.
+* Write a Node.js program to connect to PostgreSQL using a connection pool.
+* Write a Node.js program to connect to MongoDB and retrieve documents from a collection.
+* Implement CRUD operations using a relational database driver.
+* Write an Express.js API that inserts a customer record into a database.
+* Create an API endpoint that retrieves customers using parameterized SQL queries.
+* Write an API endpoint to update a customer's details and handle missing records.
+* Implement a delete operation that validates the record identifier before executing the query.
+* Write a reusable database connection module that can be imported by multiple services.
+* Implement environment-based database configuration using environment variables.
+* Write code that acquires a connection from a pool, executes a query, and releases the connection safely.
+* Implement centralized error handling for database operations in an Express.js application.
+* Write a function that inserts an order and its order items within a single transaction.
+* Implement transaction commit and rollback using async/await.
+* Write code that transfers money between two accounts while maintaining transactional consistency.
+* Implement optimistic locking to prevent concurrent updates from overwriting one another.
+* Write a parameterized query that supports filtering, sorting, and pagination.
+* Implement cursor-based pagination for retrieving a large collection of records.
+* Write a bulk-insert function that processes large datasets in batches.
+* Implement a retry mechanism for transient database errors with exponential backoff and a retry limit.
+* Write code that implements idempotent order creation using a unique request identifier.
+* Implement a database health-check endpoint that reports connection availability.
+* Write code that measures query execution time and logs slow queries without exposing sensitive data.
+* Implement a repository layer that separates database operations from business logic.
+* Create an ORM model with one-to-many relationships between customers and orders.
+* Write code that avoids the N+1 query problem when retrieving customers and their orders.
+* Implement a database migration that adds a new column while preserving compatibility with existing application versions.
+* Write an integration test that creates test data, verifies database operations, and cleans up safely.
+* Implement a read/write database strategy that sends writes to the primary and eligible reads to a replica.
+* Build a production-ready database integration module with connection pooling, graceful shutdown, transaction support, structured logging, and error handling.

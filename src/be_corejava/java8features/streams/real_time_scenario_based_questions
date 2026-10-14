@@ -1,0 +1,26 @@
+
+* You have a list of employees. How would you filter employees whose salary is greater than ₹100,000?
+* You need to find the second-highest salary from a list of employees. How would you solve it using Streams?
+* You need to find the third-highest distinct salary from an employee list. How would you implement it?
+* You have employee records with department and salary fields. How would you find the highest-paid employee in each department?
+* You need to calculate the average salary for each department. How would you implement it using `groupingBy()` and `averagingDouble()`?
+* You have a list of employees. How would you group employees by department and count the employees in each department?
+* You need to partition employees into two groups based on whether their salary exceeds a specified threshold. How would you use `partitioningBy()`?
+* You receive a list of duplicate customer records. How would you remove duplicates based on customer ID rather than the default `equals()` implementation?
+* You need to convert a list of employees into a Map keyed by employee ID. How would you handle duplicate IDs?
+* You have a list of orders. How would you calculate the total order amount using Streams?
+* You need to find the most frequently occurring word in a large list of words. How would you approach the problem using Streams?
+* You need to find the first transaction matching a set of conditions. Which Stream operations would you use?
+* You have a list of nested order items. How would you flatten all order items into a single Stream?
+* You need to merge multiple lists of product codes, remove duplicates, sort them, and return the first ten codes. How would you design the pipeline?
+* A Stream pipeline is executing an expensive service call inside `map()`. How would you reduce unnecessary calls?
+* A parallel Stream produces inconsistent totals because multiple threads update a shared variable. How would you fix it?
+* A Stream-based report is slower than the equivalent loop for a large dataset. How would you investigate the performance difference?
+* You need to group employees by department and then sort employees within each department by salary. How would you implement this?
+* You need to collect employee names by department into comma-separated strings. How would you use downstream Collectors?
+* You need to process a large file line by line without loading the entire file into memory. How would you use Streams?
+* An API response contains nested lists of permissions. How would you flatten the data, remove duplicates, and return the sorted permissions?
+* You need to calculate the total revenue by product category from millions of transaction records. How would you evaluate sequential versus parallel Streams?
+* You need to find whether all orders have valid payment statuses. Which matching operation would you use, and why?
+* A `Collectors.toMap()` operation fails because multiple records have the same key. How would you modify the Collector to merge duplicate values?
+* You need to transform a list of database entities into DTOs and return only DTOs satisfying a business rule. How would you structure the Stream pipeline?

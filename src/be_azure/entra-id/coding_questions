@@ -1,0 +1,30 @@
+* Write a Spring Boot application that integrates with Microsoft Entra ID using Spring Security and OpenID Connect.
+* Write a Spring Boot REST API configured as an OAuth 2.0 resource server that validates Entra ID access tokens.
+* Write a Java program that acquires an access token using MSAL for Java and the client credentials flow.
+* Write a Java program that calls Microsoft Graph using an access token obtained through MSAL for Java.
+* Write a Spring Boot security configuration that validates JWT issuer and audience claims.
+* Write a Java method that extracts user ID, tenant ID, and role claims from a validated JWT.
+* Write a Spring Security configuration that maps Entra ID app roles to application authorities.
+* Write a Spring Boot REST API that allows access to an endpoint only for users with a specified app role.
+* Write a Java implementation that distinguishes missing authentication from insufficient authorization and returns appropriate HTTP status codes.
+* Write a Java program that securely loads Entra ID tenant ID and client configuration from environment variables.
+* Write a Spring Boot application that authenticates to Azure Key Vault using managed identity.
+* Write a Java program that acquires a token using a user-assigned managed identity in an Azure-hosted environment.
+* Write a Spring Boot service that calls Microsoft Graph and handles HTTP 401, 403, and 429 responses.
+* Write a Java implementation of retry handling with exponential backoff for transient Microsoft Graph API failures.
+* Write a Spring Boot security component that validates tenant IDs before allowing access to a multi-tenant API.
+* Write a Java authorization component that checks application-specific permissions in addition to Entra ID role claims.
+* Write a Spring Boot application that secures communication between two microservices using OAuth 2.0 client credentials flow.
+* Write a Java implementation that uses the on-behalf-of flow to call a downstream API for a signed-in user.
+* Write a Spring Boot configuration that supports JWT bearer-token authentication and method-level authorization.
+* Write unit tests for a Spring Boot REST API that verifies access for authorized users and rejects unauthorized users.
+* Write integration tests that verify JWT issuer, audience, expiration, and role validation.
+* Write a Java program that handles token acquisition failures and logs diagnostic details without exposing secrets.
+* Write a Spring Boot service that caches access tokens appropriately and refreshes them when required by the chosen authentication library.
+* Write a Java program that retrieves users from Microsoft Graph using pagination.
+* Write a Java program that retrieves group membership information from Microsoft Graph and handles pagination and throttling.
+* Write a Spring Boot implementation that supports multiple Entra ID tenants while preventing unauthorized tenant access.
+* Write a Java configuration example that authenticates using a certificate instead of a client secret where supported.
+* Write a Spring Boot health-check endpoint that verifies application readiness without exposing sensitive identity information.
+* Write a Java implementation that uses managed identity to access an Azure resource without storing client credentials in application code.
+* Write a test suite that verifies an application rejects an ID token when an API access token is required.

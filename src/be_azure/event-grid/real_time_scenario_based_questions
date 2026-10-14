@@ -1,0 +1,30 @@
+* An Azure Blob Storage upload must trigger a processing workflow. How would you design the solution using Event Grid?
+* An Azure Function subscribed to Event Grid occasionally fails while processing events. How would you troubleshoot and recover?
+* The same event is processed twice, resulting in duplicate database records. How would you prevent this?
+* An event subscription is not receiving events from a storage account. How would you investigate the issue?
+* Your custom Event Grid topic receives events, but the subscriber does not process them. What would you check?
+* A subscriber endpoint is unavailable for several minutes. How would Event Grid handle the events, and what recovery options are available?
+* Your system must preserve failed events for later analysis. How would you configure dead-lettering?
+* A dead-lettered event must be replayed after a bug fix. How would you reprocess it safely?
+* A topic receives events from multiple business domains, but each subscriber needs only certain event types. How would you configure filtering?
+* Your application needs to route events based on a property inside the event data. How would you configure advanced filtering?
+* A consumer receives events out of order and produces incorrect business results. How would you redesign the processing logic?
+* A Java Spring Boot service needs to publish custom events to Azure Event Grid. How would you implement authentication and event publishing?
+* Multiple microservices need to react independently to order-created events. How would you structure topics and subscriptions?
+* Your company wants to route events across multiple Azure subscriptions. How would you design the permissions and routing?
+* A publisher suddenly generates a large burst of events. How would you assess capacity, throttling, and consumer scalability?
+* Event delivery latency has increased in production. Which metrics, logs, and configuration settings would you investigate?
+* An unauthorized application attempts to publish events to a custom topic. How would you secure the publisher endpoint?
+* A business event contains sensitive customer information. How would you minimize exposure while distributing the event?
+* Your architecture requires durable queuing and ordered processing for certain workflows. Would you use Event Grid alone or integrate another messaging service? Explain your choice.
+* Your IoT solution must process device telemetry and react to device state changes. How would you evaluate Event Grid, MQTT, and Event Hubs?
+* An event schema changes, breaking several downstream consumers. How would you introduce schema versioning and backward compatibility?
+* Your system needs to process only events associated with a particular tenant. How would you isolate and filter tenant-specific events?
+* A downstream API enforces rate limits, causing frequent event-processing failures. How would you protect the endpoint and recover from failures?
+* Your team needs to deploy Event Grid resources consistently across development, testing, and production. How would you automate the infrastructure?
+* A regional outage affects the event-processing application. How would you design recovery and minimize business disruption?
+* Your organization requires auditability of event publishing and processing. How would you implement logging, monitoring, and access controls?
+* A consumer repeatedly fails on malformed events. How would you isolate poison events without blocking healthy processing?
+* Your system processes payment-related events and must prevent duplicate financial transactions. How would you implement idempotency and reconciliation?
+* Multiple subscriptions receive the same event, but one subscriber is failing continuously. How would you ensure independent recovery?
+* How would you design a secure, highly available, cost-effective Event Grid solution for an enterprise microservices platform?

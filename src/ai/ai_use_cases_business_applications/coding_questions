@@ -1,0 +1,99 @@
+**Enterprise Knowledge Assistants**
+
+* Implement a document ingestion API that stores document metadata, chunks text, and associates each chunk with tenant and access-control information.
+* Write integration tests for a RAG endpoint that verify citation generation, document filtering, missing context, and unauthorized retrieval.
+
+**Customer Support Chatbots**
+
+* Implement a chatbot conversation service with persistent session history, configurable context limits, and escalation to a human support queue.
+* Write tests for refund-policy questions, unsupported claims, provider timeouts, conversation resets, and unauthorized customer-record access.
+
+**AI Coding Assistants**
+
+* Build a code-review utility that accepts a source-code diff and validates the response against a structured review schema.
+* Implement automated checks that reject generated code containing prohibited patterns and test integration with a mock pull-request workflow.
+
+**Document Intelligence**
+
+* Implement a document-processing pipeline that extracts text from sample PDFs, normalizes the extracted content, and produces schema-validated JSON.
+* Write tests for missing fields, malformed documents, low-confidence extraction, duplicate processing, and invalid arithmetic totals.
+
+**Contract and Legal Document Analysis**
+
+* Implement a clause extraction service that returns clause type, extracted text, risk category, and source-page references.
+* Build a contract comparison utility that identifies added, removed, and modified clauses and tests whether every risk finding references supporting source text.
+
+**Invoice and Financial Document Processing**
+
+* Implement an invoice validator that checks line-item totals, tax calculations, currency consistency, required fields, and duplicate invoice identifiers.
+* Build an invoice-processing workflow with approval thresholds, idempotent ERP submission, and retry handling for downstream failures.
+
+**Enterprise Search**
+
+* Implement a search API that combines mock keyword-search and vector-search results with metadata filtering and configurable ranking.
+* Write tests that verify document deletion, permission revocation, tenant isolation, and ranking behavior for a set of representative queries.
+
+**Text Summarization**
+
+* Implement a hierarchical summarization pipeline that processes long documents in chunks and combines intermediate summaries.
+* Build an evaluation utility that checks source coverage, citation support, required facts, and consistency between the source document and the final summary.
+
+**Information Extraction**
+
+* Implement a schema-driven extraction service that converts unstructured text into typed entities, dates, amounts, and relationships.
+* Write tests for missing values, ambiguous names, conflicting facts, invalid JSON, incorrect data types, and low-confidence fields.
+
+**Recommendation Systems**
+
+* Implement a basic recommendation engine using content similarity and user-item interaction history.
+* Build an offline evaluation utility that calculates precision@K, recall@K, and ranking quality on a held-out dataset.
+
+**Natural Language to SQL**
+
+* Implement a natural-language-to-SQL service using a mock LLM, database schema metadata, and a structured query-generation response.
+* Build a SQL validation layer that rejects write statements, unauthorized tables, multiple statements, and queries exceeding configured execution limits.
+
+**AI-Powered Analytics**
+
+* Implement a conversational analytics endpoint that converts a business question into a validated query, executes it against a mock dataset, and summarizes the actual results.
+* Write tests for incorrect metric definitions, empty results, unsupported causal claims, malformed queries, and inconsistent aggregations.
+
+**Fraud Detection**
+
+* Implement a transaction-scoring service that combines configurable transaction features and returns a risk score with an explainable list of contributing factors.
+* Build an evaluation script that calculates precision, recall, F1 score, and false-positive rate on an imbalanced transaction dataset.
+
+**Predictive Maintenance**
+
+* Implement a sensor-data processing pipeline that calculates rolling statistics and flags equipment whose measurements exceed configurable thresholds.
+* Build a model-evaluation utility that measures precision, recall, false-alarm rate, and prediction lead time using timestamped failure records.
+
+**Workflow Automation**
+
+* Implement an AI-assisted workflow that classifies an incoming request, applies deterministic business rules, and routes uncertain cases for human approval.
+* Write tests for retries, duplicate events, partial failures, compensation, invalid transitions, and workflow resumption after a simulated crash.
+
+**AI for Software Development**
+
+* Build a test-generation utility that accepts a Java method and produces structured test-case suggestions, including edge cases and expected outcomes.
+* Implement a pull-request validation workflow that combines static-analysis results, test outcomes, dependency checks, and mock AI review findings.
+
+**AI for DevOps and AIOps**
+
+* Implement a log-anomaly detection utility that groups similar log messages, identifies unusual patterns, and assigns configurable severity scores.
+* Build an incident-correlation component that combines mock logs, metrics, traces, and deployment events into a ranked list of probable causes.
+
+**AI for IT Operations**
+
+* Implement an IT operations assistant that retrieves runbook steps for an incident and generates a structured troubleshooting plan.
+* Build a remediation executor that enforces action allowlists, role-based permissions, approval requirements, execution timeouts, and audit logging.
+
+**AI for Cybersecurity**
+
+* Implement a security-alert triage service that classifies mock alerts by severity and returns evidence supporting each classification.
+* Write tests that simulate malicious instructions embedded in emails or log entries and verify that untrusted content cannot authorize security actions.
+
+**AI for Business Process Automation**
+
+* Implement an email-to-workflow service that extracts request details, validates required fields, applies deterministic rules, and creates a mock business transaction.
+* Build an automation-monitoring utility that tracks completion rates, processing time, exception frequency, duplicate actions, and human intervention rates.

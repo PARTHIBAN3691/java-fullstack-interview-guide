@@ -1,0 +1,30 @@
+* Your production application stores user passwords in plain text. How would you remediate the issue safely?
+* A user can access another user's account details by changing an ID in the request URL. How would you investigate and fix the vulnerability?
+* Your JWT authentication works, but users can continue accessing the application after their accounts are disabled. How would you address this?
+* A stolen JWT remains valid for several hours. How would you reduce the risk and support token revocation?
+* Your application receives thousands of login attempts from different IP addresses. How would you defend against credential stuffing?
+* A developer accidentally commits an API key to a public Git repository. What immediate and long-term actions would you take?
+* An attacker exploits an API filter parameter to manipulate a MongoDB query. How would you prevent NoSQL injection?
+* Your application fetches user-provided URLs and may access internal network services. How would you prevent SSRF?
+* A malicious file is uploaded through your Express API. How would you improve upload validation and isolation?
+* A security scanner reports a critical vulnerability in a transitive npm dependency. How would you assess and remediate it?
+* Your application becomes vulnerable after a compromised npm package is installed. How would you investigate the supply-chain incident?
+* Your browser-based application stores access tokens in localStorage. What risks would you assess, and what alternatives would you consider?
+* Your application uses cookies for authentication, and a cross-site request triggers an unwanted transaction. How would you mitigate CSRF?
+* Your API is accessible from untrusted origins because CORS allows every origin. How would you correct the configuration?
+* Your logs contain passwords and authorization headers. How would you remove the exposure and prevent recurrence?
+* A user with a regular account can invoke administrator-only API endpoints. How would you redesign authorization?
+* Your password-reset endpoint allows repeated attempts to guess reset tokens. How would you secure the workflow?
+* An attacker uses a path traversal payload to download files outside the intended directory. How would you fix the issue?
+* Your Node.js application executes a shell command using user input and is vulnerable to command injection. How would you remediate it?
+* A session cookie is accessible to JavaScript and transmitted over HTTP. How would you harden the cookie configuration?
+* Your application uses weak or expired TLS certificates. How would you restore secure communication?
+* A security incident requires identifying all requests made using a compromised account. What logging and monitoring capabilities would you need?
+* Your multi-tenant API allows one tenant to access another tenant's records. How would you enforce tenant isolation?
+* A dependency update introduces unexpected network activity during installation. How would you investigate the package and protect the build pipeline?
+* Your refresh-token endpoint allows the same token to be reused after rotation. How would you detect and handle token reuse?
+* Your API returns detailed stack traces and database errors to external clients. How would you change the error-handling design?
+* A malicious client sends oversized JSON payloads to exhaust server memory. How would you protect the application?
+* Your service stores sensitive customer data without encryption. How would you introduce encryption and key management?
+* An attacker exploits prototype pollution through a third-party library. How would you assess the impact and mitigate the vulnerability?
+* How would you investigate, contain, and recover from a suspected security breach in a production Node.js payment service?

@@ -1,0 +1,30 @@
+* A Java application creates multiple database connection managers because different modules instantiate the Singleton class independently. How would you investigate and fix the problem?
+* A Singleton works correctly in development but creates duplicate instances during a production deployment involving serialization. How would you diagnose and prevent this?
+* A Singleton initializes a remote API client during application startup, causing the application to fail when the remote service is temporarily unavailable. How would you redesign initialization?
+* A Spring Boot application uses a Singleton to store request-specific user information, causing data leakage between concurrent requests. How would you fix the design?
+* A payment application supports several payment providers, and every new provider requires modifications to a large switch statement. How would you apply the Factory Method pattern?
+* A factory creates the correct payment implementation but returns inconsistent request and response types for different providers. How would you redesign the object creation model?
+* A reporting application generates PDF, CSV, and Excel reports, each requiring related format-specific components. How would you decide between Factory Method and Abstract Factory?
+* A database application supports PostgreSQL and MySQL, with vendor-specific connection, query, and transaction components. How would you use Abstract Factory to keep the components compatible?
+* A factory class has grown to hundreds of lines and contains business rules, validation, and object construction. How would you refactor it?
+* A Spring Boot application has many implementations of the same interface, and the wrong implementation is selected at runtime. How would you improve factory selection and configuration?
+* A REST API accepts a complex request containing customer details, payment information, and optional preferences. How would you use Builder to create a validated immutable request object?
+* A Builder allows creation of an order without a customer identifier or required payment details. How would you prevent invalid objects from being constructed?
+* A team uses a Builder for every simple data-transfer object, increasing code volume without clear benefits. How would you decide which Builders to retain?
+* An application clones an object using Object.clone, but nested collections remain shared between the original and copied instances. How would you implement safe deep copying?
+* A Prototype-based document editor copies a document containing cyclic references and shared child objects. How would you preserve the intended object graph?
+* A factory caches created service instances for performance, but the instances contain mutable state and produce incorrect results under concurrent requests. How would you redesign the cache?
+* A legacy Java application directly creates database repositories using new throughout its codebase, making unit testing difficult. How would you introduce a factory or dependency injection incrementally?
+* A factory creates objects that open files and network connections, but these resources are not closed consistently. How would you redesign object ownership and cleanup?
+* A multi-tenant application must create tenant-specific clients with different credentials and configuration. Which creational pattern or combination would you use?
+* A plugin-based application must load new implementations without modifying the central factory every time. How would you design extensible registration and discovery?
+* A Singleton-based cache works in a single JVM but becomes inconsistent when the application scales to multiple instances. How would you determine whether Singleton is the right abstraction?
+* A factory creates expensive objects on every request, causing high latency and memory pressure. How would you investigate whether caching, reuse, or a different design is appropriate?
+* A new requirement introduces version-specific document formats with different sets of related objects. How would you extend the existing creation architecture?
+* A Builder contains many optional parameters and complex cross-field validation. How would you simplify its design while preserving correctness?
+* A prototype object contains security-sensitive data, and cloning unintentionally copies credentials into objects that should not retain them. How would you address this?
+* A Singleton implementation uses double-checked locking but lacks volatile on its instance field. How would you explain the risk and correct the implementation?
+* A factory returns a generic interface, but callers repeatedly cast the result to concrete classes. How would you improve the factory contract?
+* A Spring Boot application mixes factory-created objects with container-managed beans, resulting in inconsistent lifecycle callbacks. How would you resolve the lifecycle mismatch?
+* A team proposes object pooling for frequently created lightweight Java objects. How would you determine whether pooling is justified?
+* A major refactoring replaces direct constructors with multiple layers of factories and builders, making object creation harder to follow. How would you simplify the design?

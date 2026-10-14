@@ -1,0 +1,73 @@
+# Core Java — Collections — Map
+## Real-Time Scenario-Based Questions
+
+### HashMap
+* A production API uses a HashMap to cache customer records, but lookup latency increases sharply as the cache grows. How would you investigate the root cause and improve performance?
+* A developer inserts a custom Employee object as a key, changes its employee ID, and can no longer retrieve the entry. Why does this happen, and how would you fix it?
+* A batch job unexpectedly overwrites customer records that have different business identifiers. How would you investigate the key equality and hash-code implementation?
+* A service experiences long pauses when loading a large HashMap from a database. How would you investigate resizing, capacity planning, and allocation costs?
+* A HashMap performs poorly because thousands of keys have identical or similar hash codes. How would you diagnose and resolve the problem?
+* A developer shares a HashMap between request threads and production data becomes inconsistent. How would you redesign access to the Map?
+* A cache uses a HashMap but grows continuously and causes an OutOfMemoryError. How would you identify the retention cause and implement an eviction strategy?
+
+### LinkedHashMap
+* A service requires the most recently used configuration entries to remain cached, but the current LinkedHashMap cache returns stale entries. How would you investigate access order, eviction, and refresh logic?
+* An LRU cache built using LinkedHashMap works correctly in development but produces inconsistent results under concurrent requests. How would you make it thread-safe?
+* A LinkedHashMap-based cache uses too much memory because entries vary greatly in size. How would you design a size-aware eviction policy?
+* An API must preserve insertion order in its response, but a refactoring changes the Map implementation and breaks the output order. How would you prevent this regression?
+
+### TreeMap
+* A TreeMap intermittently loses logically distinct records after a new Comparator is introduced. How would you investigate comparator equality and fix the issue?
+* A reporting service needs efficient queries over a range of timestamps. How would you design the key ordering and range-query operations?
+* Sorting millions of keys through a TreeMap makes a batch job too slow. How would you determine whether TreeMap is appropriate or whether sorting on demand would be better?
+* A TreeMap throws an exception when processing null or inconsistent keys. How would you diagnose and handle the invalid ordering assumptions?
+
+### Hashtable
+* A legacy application experiences high lock contention on a shared Hashtable during peak traffic. How would you confirm the bottleneck and select a replacement?
+* A developer replaces Hashtable with ConcurrentHashMap, but the business workflow still creates duplicate records. How would you identify the non-atomic sequence of operations?
+* A migration from Hashtable to ConcurrentHashMap changes null-handling behavior and causes failures. How would you identify and address the compatibility issue?
+
+### Map Iteration and Views
+* A scheduled job throws ConcurrentModificationException while deleting expired entries from a HashMap. How would you fix the iteration logic?
+* An API returns `keySet()` to another component, and that component unintentionally removes entries from the original Map. How would you prevent this side effect?
+* A report must process a consistent snapshot of a Map while another thread continues updating it. How would you implement the required consistency?
+* A concurrent monitoring dashboard reads Map metrics while workers update them. How would you choose between snapshot data and weakly consistent iteration?
+
+### Map Methods and Utilities
+* A service uses `containsKey()` followed by `put()` to initialize values, but concurrent requests create duplicate initialization work. How would you redesign the operation?
+* A `computeIfAbsent()` mapping function calls back into the same Map and produces unexpected behavior. How would you diagnose and refactor the logic?
+* Two data sources provide records with overlapping keys, and a merge operation silently discards important values. How would you define and implement conflict resolution?
+* A Stream-based conversion to Map fails at runtime because several objects produce the same key. How would you fix the collector and decide whether to merge, group, or reject duplicates?
+* An application must distinguish a missing key from a key explicitly mapped to null. How would you implement this correctly?
+
+### Hashing and Key Equality
+* A customer lookup returns no result even though the same customer object was used during insertion. How would you inspect `equals()` and `hashCode()`?
+* A Map contains entries that appear to represent duplicate business keys. How would you investigate equality-contract violations?
+* After a deployment, Map lookups become slower because a custom key class was modified. How would you validate hash distribution and key design?
+* A team uses a mutable DTO as a Map key, and updates to DTO fields break lookups. How would you redesign the key?
+
+### Generics and Map
+* A generic utility cannot accept Maps with compatible key and value types. How would you redesign its generic signature?
+* A legacy raw Map causes a ClassCastException in a distant service layer. How would you trace the invalid value to its source and prevent recurrence?
+* A handler registry stores different handler implementations in a Map and relies on unchecked casts. How would you make the registry type-safe?
+* A Map collector fails because of duplicate keys and generic type inference issues. How would you correct the collection logic and types?
+
+### Concurrent Maps
+* A service uses ConcurrentHashMap for request counters, but counts are lower than expected under load. How would you investigate lost updates and choose an atomic counting approach?
+* Multiple requests call `computeIfAbsent()` for the same key, and the initialization method is slow. How would you avoid excessive contention and duplicate expensive work?
+* A concurrent cache stores user sessions, but several related entries must be updated together. How would you ensure the required consistency?
+* A high-traffic service experiences increased latency after switching from HashMap to ConcurrentHashMap. How would you measure contention and investigate the access pattern?
+* A background cleanup task removes entries while request threads access the same ConcurrentHashMap. How would you design the cleanup logic safely?
+* A team assumes ConcurrentHashMap makes a multi-step business operation atomic, but inconsistent state appears in production. How would you explain and fix the design?
+
+### Map and Streams
+* A reporting pipeline groups millions of events into a Map and exceeds its memory limit. How would you reduce allocations and select a more efficient aggregation strategy?
+* A parallel Stream produces inconsistent totals because its aggregation logic modifies shared Map values. How would you correct the collector or reduction logic?
+* A Stream-based Map conversion fails only when production data contains duplicate identifiers. How would you handle duplicates and add regression tests?
+* A Map-processing pipeline becomes slower after parallelization. How would you profile the pipeline and determine whether parallel execution is beneficial?
+
+### Map Performance and Complexity
+* A production service suffers from a sudden increase in latency after a large configuration Map is loaded. How would you investigate resizing, allocation, and garbage collection?
+* A service processes millions of key-value pairs and experiences frequent full garbage collections. How would you profile the Map's memory footprint and redesign storage if necessary?
+* A benchmark shows HashMap outperforming TreeMap, but the business requirement needs sorted range queries. How would you evaluate the performance trade-off?
+* An API must preserve insertion order, support frequent reads, and handle occasional updates. How would you select the Map implementation and validate it with realistic benchmarks?

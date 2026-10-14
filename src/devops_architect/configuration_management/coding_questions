@@ -1,0 +1,30 @@
+* Write an Ansible playbook that installs and configures Nginx idempotently on a group of Linux servers.
+* Write an Ansible playbook that creates a system user, configures directory permissions, and deploys an application configuration file.
+* Write an Ansible role for deploying a Java Spring Boot application with configurable Java versions, service settings, and environment variables.
+* Write an Ansible role that supports both Ubuntu and Red Hat-based systems using operating-system-specific variables and tasks.
+* Write an Ansible inventory with separate development, staging, and production groups and environment-specific variables.
+* Write an Ansible dynamic inventory configuration that discovers virtual machines from a cloud provider using supported inventory plugins.
+* Write an Ansible playbook that uses handlers to restart a service only when its configuration file changes.
+* Write an Ansible playbook that validates a configuration file before replacing the existing production configuration.
+* Write an Ansible playbook that deploys a configuration change to a small batch of servers, validates health, and proceeds only when checks pass.
+* Write an Ansible playbook that encrypts sensitive variables using Ansible Vault and consumes them without printing their values.
+* Write an Ansible playbook that retrieves a secret from an external secrets manager and configures an application securely.
+* Write an Ansible playbook that detects a configuration difference and reports it without modifying the target server.
+* Write a script that compares the approved configuration baseline with actual server configuration and reports drift.
+* Write a Python program that compares two environment-specific configuration files and reports added, removed, and modified keys.
+* Write a Python program that validates configuration files against a schema and reports missing or invalid fields.
+* Write a program that loads configuration from defaults, a configuration file, environment variables, and command-line arguments using a defined precedence order.
+* Write a Java program that loads externalized application configuration and validates mandatory properties before application startup.
+* Write a Java program that supports dynamic configuration refresh without restarting the application and safely validates new values.
+* Write a Java class that implements a feature-flag evaluator with enabled status, percentage rollout, and user-targeting rules.
+* Write a feature-flag service that supports global kill switches, audit logging, and safe default behavior when configuration is unavailable.
+* Write a program that compares configuration versions and rolls back to a previous approved version when validation fails.
+* Write a script that detects hardcoded passwords, API keys, and tokens in configuration files before they are committed.
+* Write a script that checks whether all production services use approved TLS settings and logging levels.
+* Write a script that identifies configuration values that differ unexpectedly across application instances in the same environment.
+* Write a script that validates environment-specific configuration against a common baseline while allowing explicitly approved overrides.
+* Write a configuration deployment script that stages changes, performs health checks, and automatically rolls back on failure.
+* Write a program that detects stale configuration caches by comparing the active configuration version across service instances.
+* Write a script that checks configuration repository changes for required reviewers, schema validation, and security policy compliance.
+* Write a script that identifies potentially obsolete feature flags by comparing registered flags against references in application source code.
+* Write a script that generates a configuration audit report containing the change author, version, approval status, deployment time, and rollback history.

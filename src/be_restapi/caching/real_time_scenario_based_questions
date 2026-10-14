@@ -1,0 +1,30 @@
+* Your REST API takes three seconds to respond because it queries the database for every request. How would you introduce caching?
+* A GET endpoint returns outdated customer information after a successful database update. How would you fix the cache invalidation issue?
+* Your API receives a sudden traffic spike, and the database becomes overloaded when popular cache entries expire. How would you prevent this?
+* Your application runs on multiple instances, and one instance returns updated data while another returns stale data. How would you troubleshoot the inconsistency?
+* Redis becomes unavailable, and API response times increase significantly. How would you design graceful degradation?
+* Your cache hit ratio is low despite frequently repeated requests. How would you identify the reason?
+* A cached response for one user is accidentally returned to another user. How would you investigate and prevent the data leak?
+* Your API caches product details, but product prices change frequently. How would you balance performance and data freshness?
+* A popular API endpoint causes thousands of identical database queries when its cache expires. How would you coordinate cache refreshes?
+* Your cache memory usage grows continuously until the application becomes unstable. How would you diagnose and resolve the issue?
+* An API returns HTTP 304 correctly, but clients still download the complete response body. How would you troubleshoot the conditional request implementation?
+* Your API caches paginated results, but users see duplicate or missing records when new data is inserted. How would you address the problem?
+* A database transaction rolls back, but the cache contains the uncommitted value. How would you prevent inconsistent cached data?
+* Two application instances update the same cached resource concurrently, and an older value overwrites a newer value. How would you prevent stale writes?
+* A REST API caches HTTP 404 responses, and newly created resources remain unavailable to clients. How would you fix the behavior?
+* Your API uses Redis, but network latency makes cache lookups slower than expected. How would you investigate and optimize the cache layer?
+* A tenant-specific API response is cached using only the resource ID, causing cross-tenant data exposure. How would you redesign the cache key?
+* Your system uses local caches and Redis, but invalidation updates only Redis. How would you keep both cache levels consistent?
+* An external service updates data without notifying your application. How would you prevent your cache from remaining stale indefinitely?
+* Your API experiences high traffic during a product launch. How would you warm the cache and protect the database?
+* A cached response contains confidential fields that should be visible only to administrators. How would you redesign response caching and authorization?
+* A financial balance endpoint must remain accurate after every transaction. Would you cache it, and what safeguards would you apply?
+* A cache key contains user-controlled query parameters, allowing attackers to create excessive unique entries. How would you prevent cache pollution?
+* Your API's hit ratio is high, but overall response latency is still poor. What other metrics and components would you investigate?
+* A Redis failover causes cache misses across all application instances at once. How would you reduce the resulting database load?
+* Your application needs to cache large API responses, but the cache has a strict memory limit. How would you decide what to retain?
+* A cache invalidation event is lost between microservices. How would you detect and recover from the inconsistency?
+* Your API returns stale data during deployments because old and new application versions use incompatible cache formats. How would you handle cache versioning?
+* Your application must support millions of requests per minute while keeping frequently accessed data reasonably fresh. How would you design the caching strategy?
+* How would you investigate a production incident where caching reduced database traffic but introduced incorrect API responses?

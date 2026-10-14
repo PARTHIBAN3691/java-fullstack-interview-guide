@@ -1,0 +1,30 @@
+* Explain the complete request flow from an external client to a Spring Boot Pod through Kubernetes Ingress.
+* How does an Ingress Controller watch Kubernetes resources and translate them into routing configuration?
+* What happens internally when an Ingress resource is created or modified?
+* How would you design Ingress routing for dozens of microservices with different domains and URL paths?
+* How would you configure highly available Ingress Controllers across multiple nodes and availability zones?
+* What are the trade-offs between deploying one shared Ingress Controller and separate controllers for different teams?
+* How would you implement TLS termination, TLS passthrough, and end-to-end TLS encryption?
+* What are the security implications of terminating TLS at the Ingress Controller instead of at the application?
+* How would you manage certificate issuance and renewal using cert-manager?
+* How would you handle certificate rotation without interrupting production traffic?
+* How do wildcard certificates and wildcard host rules differ in their behavior and security implications?
+* How would you secure an Ingress Controller against HTTP request smuggling and malformed requests?
+* How would you implement authentication and authorization at the Ingress layer?
+* How would you integrate an external identity provider with an Ingress Controller?
+* How would you implement rate limiting across multiple Ingress Controller replicas?
+* How would you prevent one tenant's traffic from overwhelming other applications behind a shared Ingress Controller?
+* How do proxy timeouts, application timeouts, and load balancer timeouts interact?
+* How would you troubleshoot intermittent 502 and 504 errors across the Ingress-to-Service-to-Pod request path?
+* How do connection reuse, keep-alive, and upstream connection pooling affect application performance?
+* How would you configure sticky sessions, and when would session affinity be inappropriate?
+* How would you expose gRPC services through Ingress while preserving protocol compatibility?
+* How would you route traffic to multiple versions of a service for canary releases?
+* How would you perform blue-green deployments using Ingress routing and separate backend Services?
+* How would you design a zero-downtime migration from one Ingress Controller to another?
+* How would you troubleshoot conflicting host and path rules defined by different teams?
+* How do Ingress annotations create portability and maintainability challenges across controller implementations?
+* What are the limitations of Kubernetes Ingress compared with Gateway API for advanced traffic management?
+* How would you configure observability for Ingress using access logs, metrics, distributed tracing, and alerts?
+* How would you design disaster recovery for an externally exposed application when the Ingress Controller or cluster fails?
+* How would you manage DNS, external load balancers, TLS certificates, and routing during a multi-cluster migration?

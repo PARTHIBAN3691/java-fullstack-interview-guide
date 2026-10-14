@@ -1,0 +1,109 @@
+**AI Application Architecture**
+
+* Your AI application has grown from a chatbot into a platform supporting document analysis, customer support, and business automation. Releases are becoming risky because workflows share the same orchestration code. How would you refactor the architecture, isolate failures, and migrate without disrupting users?
+* After a production release, streaming responses work in the browser but fail intermittently behind the load balancer. How would you investigate connection handling, timeouts, buffering, and resource exhaustion?
+
+**LLM-Powered Microservices**
+
+* An LLM-powered service experiences slow responses, causing upstream Java microservices to exhaust their thread pools. How would you identify the bottleneck and introduce timeouts, concurrency limits, asynchronous processing, and fallback behavior?
+* A business operation invokes an LLM and then updates two downstream services. A timeout occurs after one update succeeds, and a retry duplicates the operation. How would you restore correctness and prevent recurrence?
+
+**Enterprise AI Platform Design**
+
+* Multiple product teams have independently integrated different AI providers. Costs are unpredictable, security policies are inconsistent, and no team can trace usage centrally. How would you consolidate capabilities into an enterprise platform while allowing controlled team autonomy?
+* A new platform release changes model routing and causes a spike in latency across several applications. How would you detect the shared impact, isolate the faulty change, roll it back, and prevent similar regressions?
+
+**RAG System Design**
+
+* Users report that a RAG assistant cites outdated policies even though the source documents have been updated. Investigate ingestion lag, versioning, chunk replacement, retrieval caches, and index consistency.
+* A user receives information from a document belonging to another department. Explain how you would investigate the authorization path, metadata filters, caching, and prompt construction, then close the security gap.
+* Following a bulk document migration, retrieval relevance drops sharply. How would you evaluate chunking, embeddings, index configuration, metadata quality, and reranking using a representative evaluation set?
+
+**AI Agent Platform Design**
+
+* An agent creates duplicate purchase orders after a worker crashes and restarts. How would you redesign checkpoints, tool execution, idempotency, approval gates, and recovery?
+* An agent repeatedly calls the same tool and consumes a large budget without completing its task. How would you introduce execution limits, loop detection, observability, and safe termination?
+* A malicious document instructs an agent to export confidential data through an available tool. How would you contain the attack and redesign trust boundaries, tool authorization, and approval policies?
+
+**Multi-Model Routing Architecture**
+
+* Your primary model provider has rising latency, but its error rate remains low. A simple failover rule does not activate, and customer requests exceed their latency targets. How would you redesign routing signals and test the new policy?
+* A fallback model responds faster but produces less accurate results and has different structured-output behavior. How would you implement capability-aware fallback and validate output compatibility?
+* A provider introduces a price increase. How would you evaluate alternative models using production-like quality, safety, latency, and cost measurements before changing routing?
+
+**AI Gateway Design**
+
+* A new AI gateway becomes the bottleneck after several applications migrate to it. How would you identify whether the issue is connection pooling, token accounting, policy checks, logging, or provider latency?
+* A network interruption occurs after a provider generates a response but before the gateway records usage. How would you reconcile billing and retries while avoiding duplicate charges?
+* One tenant floods the gateway with long-running streaming requests. How would you preserve fairness and availability for other tenants?
+
+**Shared AI Services for Multiple Teams**
+
+* A shared embedding service is upgraded, and several teams discover that their existing vector indexes no longer match the new embedding dimensions. How would you manage compatibility, index migration, and rollback?
+* A central AI team is overwhelmed by support requests from many product teams. How would you improve service ownership, documentation, self-service onboarding, and incident escalation?
+
+**Multi-Tenant AI Architecture**
+
+* A customer discovers that a cached response contains another customer's information. How would you determine whether the leak originated in cache keys, retrieval filters, conversation state, or tenant identity propagation?
+* An enterprise customer requests a dedicated region and encryption key, while the platform currently uses shared infrastructure. How would you implement isolation and migration without affecting other tenants?
+* A customer requests complete deletion of its data, but copies remain in embeddings, backups, caches, and evaluation pipelines. How would you define and verify the deletion workflow?
+
+**AI Caching Architecture**
+
+* A semantic cache returns a plausible but incorrect answer after the underlying policy document changes. How would you investigate cache similarity thresholds, freshness requirements, and invalidation?
+* Traffic spikes for a popular question, causing thousands of identical requests to reach the model because the cache is cold. How would you implement request coalescing, TTL jitter, and controlled cache warming?
+* A cache optimization reduces costs significantly but causes permission-sensitive answers to be reused across users. How would you fix the design and build regression tests?
+
+**AI Rate Limiting and Quota Management**
+
+* A tenant's token usage exceeds its monthly budget despite request-count limits being enforced correctly. How would you identify the missing controls and implement token-aware admission and accounting?
+* Two gateway regions independently admit requests against the same tenant quota, causing significant overconsumption. How would you redesign distributed quota enforcement?
+* A provider starts returning rate-limit errors even though your gateway's configured limits have not been reached. How would you reconcile local limits, provider quotas, token bursts, and concurrency?
+
+**High-Availability AI Systems**
+
+* Your primary model provider has a regional outage, and failover traffic overwhelms the secondary provider. How would you prevent cascading failure and define controlled degradation?
+* The AI API is healthy, but its vector database is unavailable. Product teams disagree on whether the API should return an error, use cached data, or provide a reduced response. How would you establish behavior by use case?
+* During a deployment, active streaming sessions are interrupted and clients retry the entire request. How would you improve deployment strategy, stream handling, and client recovery?
+
+**AI Data Privacy Architecture**
+
+* Security monitoring discovers sensitive identifiers in prompts and application logs. How would you trace the data flow, stop further exposure, handle retained copies, and validate remediation?
+* A model provider changes its data-processing terms. How would you assess the impact on existing workloads and migrate sensitive use cases to approved providers or private inference?
+* A deletion request succeeds in the primary database, but the deleted content can still be retrieved from a vector index. How would you establish deletion propagation guarantees?
+
+**Low-Latency AI Inference**
+
+* Your AI endpoint meets its average latency target but frequently violates p99 latency during peak traffic. How would you isolate queueing, context length, retrieval, provider congestion, and resource contention?
+* Streaming begins quickly but stalls midway through generation. How would you distinguish provider token-generation delays, proxy buffering, network problems, and downstream backpressure?
+* A new reranking stage improves answer quality but pushes latency beyond the product's limit. How would you evaluate parallel execution, conditional reranking, model choice, and quality-latency trade-offs?
+
+**Scalable AI Workloads**
+
+* A sudden traffic surge creates a growing inference queue while autoscaling takes several minutes to add capacity. How would you implement admission control, priority queues, predictive scaling, and overload behavior?
+* Batch embedding jobs starve interactive chat requests during business hours. How would you separate workloads and enforce scheduling, concurrency, and resource priorities?
+* An inference deployment scales out successfully but throughput does not improve because accelerator memory is saturated. How would you investigate model size, batching, context length, and memory allocation?
+
+**AI Cost Optimization**
+
+* Your monthly AI bill doubles despite relatively stable request volume. How would you attribute the increase to model mix, context length, retries, caching, retrieval, or background workloads?
+* A cheaper model reduces infrastructure spend but increases support escalations because answer quality deteriorates. How would you evaluate total cost per successful task and establish routing thresholds?
+* A large enterprise customer exhausts its budget during a critical workflow. How would you enforce budgets without abruptly corrupting long-running work?
+
+**AI Disaster Recovery**
+
+* A regional outage takes down your inference gateway and vector database. The secondary region is available but contains an older index. How would you restore service while controlling data freshness and authorization risk?
+* A faulty indexing pipeline corrupts both the active index and its latest backup. How would you recover from source documents, validate the rebuilt index, and prevent recurrence?
+* A disaster recovery drill reveals that model configuration, secrets, and evaluation assets are missing in the secondary region. How would you address these gaps and verify recovery objectives?
+
+**Enterprise AI Governance**
+
+* An application team deploys an unapproved model to meet a delivery deadline. How would you discover the deployment, assess risk, contain it, and improve the approved onboarding path?
+* An audit asks why an AI system gave a specific answer six months ago, but the model and prompt have changed since then. How would you reconstruct the original decision and identify missing evidence?
+* A prompt update passes functional tests but introduces unsafe outputs in production. How would you improve approval gates, regression evaluation, staged rollout, and rollback procedures?
+
+**AI Architecture Trade-offs**
+
+* A regulated workload needs strict data residency, low latency, high answer quality, and a constrained budget. How would you compare managed APIs, regional providers, self-hosted models, and hybrid deployment?
+* Two teams propose opposing architectures: a centralized AI gateway and direct model access from each service. How would you resolve the disagreement using operational evidence and explicit decision criteria?
+* A caching strategy cuts costs but serves stale information, while disabling it breaks the latency SLO. How would you establish acceptable freshness classes and design a risk-based caching policy?

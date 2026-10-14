@@ -1,0 +1,30 @@
+* A consumer expects an integer field, but the provider changes it to a string. How would contract testing detect the incompatibility?
+* A provider removes a response field that one consumer still requires. How would you identify the affected consumers before deployment?
+* A new consumer expects an additional optional field from a provider. How would you verify compatibility with the existing provider?
+* Three microservices depend on a shared customer API, and each expects a different response structure. How would you manage their contracts?
+* A provider passes its unit tests but breaks a downstream consumer after deployment. How would contract testing prevent this issue?
+* A Pact verification test passes locally but fails in Jenkins. How would you troubleshoot the discrepancy?
+* A Pact Broker contains outdated contracts from retired consumers. How would you clean them up without disrupting active deployments?
+* A provider changes its HTTP status code from 200 to 204 for a successful request. How would you assess the impact on consumers?
+* A provider adds a new mandatory request parameter. How would you determine whether existing consumers will break?
+* An API response contains a dynamically generated timestamp that changes on every request. How would you define a reliable contract?
+* A consumer contract passes even though the provider returns incorrect business data. What limitations of contract testing does this reveal?
+* A provider verification test fails because a downstream database is unavailable. How would you isolate the contract failure from the infrastructure failure?
+* A payment service and an order service are deployed independently. How would you verify their API compatibility before release?
+* A Kafka producer changes an event schema while several consumers are running older versions. How would you validate compatibility?
+* A message consumer expects a field that is absent from newly published events. How would you detect and handle the breaking change?
+* A provider serves multiple API versions simultaneously. How would you organize and verify contracts for each version?
+* A consumer team publishes a contract that is too strict about response fields. How would you reduce unnecessary coupling?
+* A consumer team publishes a contract that is too permissive and misses a real incompatibility. How would you improve it?
+* A deployment pipeline must release five interdependent microservices. How would you use contract verification to determine a safe deployment order?
+* A provider changes an internal implementation without changing its external behavior. How would you ensure contract tests remain stable?
+* A service uses OAuth 2.0, and contract tests fail because tokens expire during verification. How would you make the tests reliable?
+* A new consumer must be onboarded to an existing provider without affecting current consumers. How would you implement and validate its contract?
+* A provider needs to make a breaking API change while supporting older consumers during migration. How would you plan the transition?
+* A contract test fails after a provider adds an optional JSON field. How would you determine whether the failure represents a real compatibility issue?
+* A team wants to replace many end-to-end tests with contract tests. Which scenarios would you retain as end-to-end tests?
+* A Spring Cloud Contract test generates a stub that does not match the provider's actual behavior. How would you investigate the mismatch?
+* A microservice has hundreds of consumers, making full contract verification slow. How would you optimize the verification process?
+* A consumer and provider use different Java versions and serialization libraries. How would you ensure their contracts remain compatible?
+* A release is blocked because one obsolete consumer contract fails verification. How would you resolve the issue safely?
+* You are introducing contract testing into an enterprise Java platform with dozens of teams. How would you establish standards, tooling, and CI/CD integration?

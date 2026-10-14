@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a Spring-managed transaction from method invocation to commit or rollback.
+* How does TransactionInterceptor interact with transaction attributes and PlatformTransactionManager?
+* How does Spring determine whether to create a new transaction, join an existing transaction, or suspend one?
+* Explain the internal behavior of all Spring transaction propagation modes.
+* How does REQUIRES_NEW suspend an outer transaction, and what resources remain associated with it?
+* How does NESTED propagation differ from REQUIRES_NEW at the database level?
+* What limitations affect NESTED propagation when using JPA and Hibernate?
+* How do transaction synchronization callbacks execute during commit and rollback?
+* What is the difference between beforeCommit, afterCommit, and afterCompletion callbacks?
+* How would you publish a message reliably after a database transaction commits?
+* What consistency problems can occur when an external API call is made inside a database transaction?
+* How would you implement the transactional outbox pattern to coordinate database updates and event publishing?
+* How does Spring handle rollback-only status when nested method calls participate in the same transaction?
+* Why can an inner transactional method mark an outer transaction rollback-only even when its exception is caught?
+* How do transaction isolation levels influence locking, throughput, and consistency?
+* How would you diagnose deadlocks caused by concurrent transactions?
+* How would you prevent lost updates when multiple transactions modify the same record?
+* What is the difference between optimistic locking and pessimistic locking in transactional applications?
+* How do transaction boundaries affect Hibernate's persistence context and dirty checking?
+* How can lazy loading fail when an entity is accessed outside its transaction?
+* How do multiple transaction managers work in a Spring application with multiple data sources?
+* How do you select a specific transaction manager using @Transactional?
+* What are the challenges of coordinating transactions across multiple databases?
+* What is the difference between two-phase commit and the saga pattern?
+* How would you design a distributed business process without relying on a global ACID transaction?
+* How do asynchronous methods interact with thread-bound Spring transactions?
+* Why does a transaction not automatically propagate to a newly created thread?
+* How do transaction boundaries behave when combining @Async and @Transactional?
+* How would you troubleshoot connection-pool exhaustion caused by long-running or suspended transactions?
+* How would you design transaction boundaries for high-throughput payment processing while maintaining correctness?

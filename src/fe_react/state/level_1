@@ -1,0 +1,30 @@
+* What is the difference between useState and useReducer?
+* How does React manage state internally?
+* Why does React batch state updates?
+* What is a functional state update?
+* When should you use a functional state update?
+* What is the difference between setCount(count + 1) and setCount(prev => prev + 1)?
+* How do you update nested objects in state?
+* How do you update a specific object inside an array stored in state?
+* How do you add and remove items from an array stored in state?
+* How do you avoid mutating arrays and objects in state?
+* How do you share state between sibling components?
+* What is lifting state up in React?
+* When should state be moved to a parent component?
+* What is prop drilling, and how does it relate to state management?
+* How can the Context API help manage shared state?
+* What is the difference between local state and shared state?
+* How do you manage form input values using state?
+* What is the difference between controlled and uncontrolled components?
+* How do you synchronize state with props?
+* Why can copying props into state cause problems?
+* What is the difference between derived state and stored state?
+* How do you prevent unnecessary re-renders caused by state updates?
+* How does state behave when a component re-renders?
+* When does React preserve or reset component state?
+* How do keys affect state preservation in lists?
+* How do you manage loading, success, and error states for API calls?
+* How do you handle race conditions when updating state from API responses?
+* How do you persist state across page refreshes?
+* How do you test components that use state?
+* How do you debug unexpected state updates in React?

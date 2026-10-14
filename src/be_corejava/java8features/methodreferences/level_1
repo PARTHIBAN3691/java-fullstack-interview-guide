@@ -1,0 +1,25 @@
+* What is the difference between `ClassName::staticMethod` and `object::instanceMethod`?
+* What is the difference between `object::instanceMethod` and `ClassName::instanceMethod`?
+* How does Java determine which method to invoke when using a method reference?
+* How does the target functional interface determine the signature of a method reference?
+* How do method references work with the `Predicate`, `Function`, `Consumer`, and `Supplier` interfaces?
+* How do you replace a lambda expression with a static method reference?
+* How do you replace a lambda expression with an instance method reference?
+* How do you use `String::toUpperCase` with the Stream API?
+* How do you use `String::length` to transform a Stream of strings?
+* How do you use `Integer::compare` with a Comparator?
+* How do you use `Comparator.comparing()` with method references?
+* How do you sort employees by salary using a method reference?
+* How do you sort employees by name and then by salary using method references?
+* How do you use a constructor reference to create objects from a Stream?
+* How do you use `ArrayList::new` as a constructor reference?
+* How do you use constructor references with custom classes that have parameterized constructors?
+* How do method references work with overloaded constructors?
+* How do method references work with overloaded static methods?
+* How do method references work with overloaded instance methods?
+* What happens when a method reference matches more than one possible overload?
+* How can explicit type information resolve an ambiguous method reference?
+* How do you use `this::methodName` to reference a method of the current object?
+* How do you use `super::methodName` to reference a superclass method?
+* Can method references refer to methods that throw checked exceptions?
+* What are the limitations of method references compared with lambda expressions?

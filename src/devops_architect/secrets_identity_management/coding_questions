@@ -1,0 +1,154 @@
+# Secrets & Identity Management — Coding Questions
+
+## Secrets Management
+* Implement a Spring Boot configuration component that retrieves database credentials from an external secrets provider instead of hardcoding them.
+* Write a Java utility that masks passwords, API keys, and access tokens before logging request or configuration data.
+* Implement a secret-validation utility that checks required secrets during application startup without printing their values.
+* Write a Java program that detects potential secrets in configuration files using configurable patterns.
+* Implement a secret cache with a configurable TTL, thread-safe access, and safe refresh behavior.
+* Write unit tests for a secrets-provider abstraction that supports multiple environments and mock implementations.
+
+## HashiCorp Vault
+* Write a Java service using the Vault client or Spring Cloud Vault to retrieve a secret from a KV secrets engine.
+* Implement a Vault authentication integration that obtains credentials through a supported workload authentication method.
+* Write a Java component that refreshes cached Vault secrets when their configured TTL expires.
+* Implement error handling for Vault authentication failures, authorization failures, timeouts, and temporary unavailability.
+* Write a utility that retrieves a dynamic database credential and configures a database connection pool to use it.
+* Write unit tests that mock Vault responses, including token expiration, secret-not-found errors, and transient failures.
+
+## AWS Secrets Manager
+* Write a Java AWS SDK integration that retrieves a database secret using `GetSecretValue`.
+* Implement a Spring Boot configuration component that loads an AWS Secrets Manager secret using the AWS SDK.
+* Write a Java utility that retrieves a secret using an IAM role or another supported workload credential provider without hardcoded AWS keys.
+* Implement a thread-safe secret cache that reduces AWS Secrets Manager API calls while respecting a configurable refresh interval.
+* Write a Java program that reads the appropriate secret version using version identifiers or staging labels.
+* Implement retry and error-handling logic for throttling, access-denied errors, timeouts, and missing secrets.
+
+## Azure Key Vault
+* Write a Java application that retrieves a secret from Azure Key Vault using the Azure SDK and managed identity.
+* Implement a Spring Boot service that retrieves a particular secret version from Key Vault.
+* Write a utility that distinguishes authentication failures from authorization and network-access failures.
+* Implement a thread-safe cache for Key Vault secrets with configurable expiration and refresh behavior.
+* Write unit tests for a Key Vault integration using mocked SDK responses.
+* Implement an application-startup validation component that verifies required secrets are accessible without logging their values.
+
+## Google Secret Manager
+* Write a Java application that retrieves a secret version from Google Secret Manager using the Google Cloud client library.
+* Implement secret access using Application Default Credentials or an appropriate workload identity configuration.
+* Write a utility that retrieves the latest enabled secret version and handles missing or disabled versions.
+* Implement a thread-safe secret cache with TTL-based refresh and appropriate error handling.
+* Write unit tests for secret retrieval failures, IAM permission errors, and temporary API unavailability.
+* Implement a configuration component that retrieves secrets from different Google Cloud projects based on the deployment environment.
+
+## Secret Rotation
+* Write a Java utility that detects when a cached secret has reached its refresh threshold and reloads it safely.
+* Implement a credential-rotation workflow with separate steps for generating, validating, publishing, and activating a new credential.
+* Write a program that verifies a new database credential before switching application connections to it.
+* Implement a rotation state machine that supports retries, failure tracking, and recovery from partially completed operations.
+* Write unit tests for rotation failures occurring before and after the secret store is updated.
+* Implement a mechanism to ensure multiple application instances can process rotation notifications without performing conflicting updates.
+
+## Dynamic Secrets
+* Write a Java service that retrieves dynamic database credentials and tracks their lease expiration.
+* Implement a scheduled credential-renewal component that renews a lease before expiry when supported by the provider.
+* Write a connection-pool management component that safely transitions to newly issued database credentials.
+* Implement a cleanup job that identifies expired credentials and invokes revocation through the appropriate secrets provider.
+* Write a retry mechanism for temporary failures during dynamic credential renewal without creating excessive requests.
+* Write unit tests for lease renewal, revocation, expired credentials, and connection-pool recovery.
+
+## Encryption
+* Write a Java utility that encrypts and decrypts sensitive data using authenticated encryption with AES-GCM.
+* Implement encryption and decryption methods that use unique nonces and correctly validate authentication tags.
+* Write a Java program that generates a cryptographically secure random data encryption key.
+* Implement envelope encryption in which a KMS-protected key encrypts a data encryption key used for application data.
+* Write a utility that encrypts selected fields of a customer object before database persistence and decrypts them after retrieval.
+* Implement unit tests for invalid ciphertext, incorrect keys, corrupted data, and authentication-tag failures.
+* Write a program that migrates encrypted records from one encryption format to another while preserving data integrity.
+
+## KMS — Key Management Service
+* Write a Java integration that uses a cloud KMS to encrypt and decrypt a small piece of application data.
+* Implement envelope encryption using a KMS to protect a generated data encryption key.
+* Write a Java utility that stores encrypted data together with the metadata required for decryption, without exposing plaintext keys.
+* Implement error handling for KMS access denial, throttling, timeout, and disabled-key scenarios.
+* Write a program that uses a key identifier from external configuration rather than hardcoding a cloud key ARN or resource name.
+* Implement unit tests using a mocked KMS client for encryption, decryption, and key-access failures.
+
+## IAM — Identity and Access Management
+* Write a Spring Boot service that calls a protected API using credentials obtained from the supported cloud identity provider.
+* Implement an authorization component that checks whether the current identity has permission to perform a requested operation.
+* Write a utility that evaluates a simplified set of IAM-like allow and deny rules, including explicit-deny precedence.
+* Implement a least-privilege permission-checking abstraction for a service that accesses multiple cloud resources.
+* Write unit tests for allowed requests, denied requests, missing permissions, and invalid identities.
+* Implement structured authorization-denial logging that records the decision context without exposing credentials or sensitive resource data.
+
+## RBAC — Role-Based Access Control
+* Implement RBAC in Spring Boot using roles and permissions stored in a relational database.
+* Write a method-level authorization annotation such as `@RequiresRole` and implement enforcement for supported method invocations.
+* Implement a service that checks whether a user has permission to access a specified resource based on assigned roles.
+* Write a program that calculates effective permissions when roles inherit permissions from parent roles.
+* Implement unit tests for role assignment, role removal, permission inheritance, and denied access.
+* Implement a mechanism to invalidate cached authorization decisions after a role or permission change.
+
+## ABAC — Attribute-Based Access Control
+* Implement an ABAC authorization service that evaluates subject, resource, action, and environment attributes.
+* Write a Java policy evaluator that supports conditions such as department equality, tenant matching, and resource ownership.
+* Implement a tenant-isolation check that prevents users from accessing resources belonging to another tenant.
+* Write unit tests for missing attributes, conflicting conditions, invalid attribute values, and denied access.
+* Implement a policy-validation utility that rejects unsupported operators and malformed policy definitions.
+* Write a Java program that evaluates RBAC and ABAC decisions together according to a defined authorization policy.
+
+## Service Accounts
+* Implement a Spring Boot application that accesses a cloud resource using a service account or workload identity without embedding a static key.
+* Write a utility that validates the availability of required service-account permissions during application startup.
+* Implement a service that inventories configured service accounts and reports unused or excessively privileged identities based on supplied metadata.
+* Write a credential-provider abstraction that supports local development credentials and production workload credentials without storing production keys in source code.
+* Implement unit tests for missing credentials, insufficient permissions, and credential-provider failures.
+* Write a program that redacts service-account key material from diagnostic output and exception messages.
+
+## Workload Identity
+* Implement a Java cloud-client integration that uses the platform's supported workload identity mechanism.
+* Write a Kubernetes deployment configuration that associates a workload with the intended Kubernetes service account.
+* Implement a Java service that obtains cloud credentials through the supported identity provider and accesses a protected resource.
+* Write a configuration validator that checks required workload identity settings, such as audience, issuer, and subject where applicable.
+* Implement unit tests for missing federation configuration, invalid identity tokens, and insufficient cloud permissions.
+* Write a migration utility that identifies applications configured with static cloud keys and produces a report for transitioning them to workload identity.
+
+## Short-Lived Credentials
+* Implement a Java token manager that tracks credential expiration and refreshes credentials before they expire.
+* Write a thread-safe token cache that prevents concurrent requests from unnecessarily refreshing the same credential.
+* Implement a credential-provider abstraction that supports obtaining, refreshing, and invalidating short-lived credentials.
+* Write a utility that handles token-expiration responses by refreshing credentials and retrying eligible requests safely.
+* Implement retry logic that uses bounded backoff and jitter to avoid a synchronized credential-renewal storm.
+* Write unit tests for expired tokens, concurrent refresh requests, refresh failures, and clock-skew scenarios.
+
+## Certificate Management
+* Write a Java utility that loads an X.509 certificate and displays its subject, issuer, validity period, and serial number.
+* Implement a program that checks whether a certificate will expire within a configurable number of days.
+* Write a certificate-validation utility that checks validity dates, hostname verification, and trust-chain validation using appropriate Java APIs.
+* Implement a Java HTTPS client that uses a configured trust store to validate the server certificate.
+* Write a utility that detects missing intermediate certificates in a supplied certificate chain.
+* Implement a monitoring component that reports certificate-expiration status without exposing private keys.
+* Write unit tests for expired certificates, untrusted issuers, hostname mismatches, and invalid certificate chains.
+
+## PKI — Public Key Infrastructure
+* Write a Java program that loads an X.509 certificate and verifies a digital signature using the corresponding public key.
+* Implement a utility that generates a public/private key pair using a secure algorithm and appropriate key sizes.
+* Write a program that verifies a certificate chain against a configured trust store.
+* Implement a Java utility that validates a Certificate Signing Request (CSR) using appropriate cryptographic libraries.
+* Write a program that verifies a message signature and detects tampered data.
+* Implement a mutual TLS client configuration that presents a client certificate and validates the server certificate.
+* Write unit tests for untrusted root CAs, expired intermediate certificates, invalid signatures, and missing client certificates.
+* Implement a certificate-validation utility that checks revocation using a configured CRL or OCSP mechanism.
+
+## Integrated Security Coding Challenges
+* Build a Spring Boot REST API that retrieves a database credential from a cloud secrets manager, connects to the database, and never exposes the credential in logs.
+* Build a microservice authentication flow that uses workload identity to retrieve a short-lived credential and access a protected cloud resource.
+* Implement an end-to-end secret-rotation workflow that validates the replacement credential, switches the consumer, verifies connectivity, and supports recovery.
+* Build a secure configuration service that integrates secret retrieval, encryption, caching, and access-control checks.
+* Implement a certificate-expiration monitoring service that scans configured endpoints and raises alerts before certificates expire.
+* Build a small authorization framework that combines RBAC, ABAC, and workload identity checks for protected REST endpoints.
+* Implement an auditable secret-access service that records who or what requested a secret, which resource was accessed, and whether access was allowed, without logging the secret value.
+* Build a failure-resilient secrets integration that handles provider outages, rate limits, stale cached values, and credential-expiration events.
+* Write integration tests that verify secret rotation, credential revocation, authorization failures, and application recovery.
+* Design and implement a security-focused proof of concept that demonstrates secret retrieval, short-lived credentials, encrypted data storage, and mutual TLS between two Java microservices.
+

@@ -1,0 +1,30 @@
+* Write a Java implementation that demonstrates separation of concerns using layered architecture.
+* Write a Spring Boot application structured using Controller, Service, and Repository layers.
+* Write a Java example that applies Clean Architecture with domain, application, and infrastructure layers.
+* Write a Java implementation of the Dependency Inversion Principle using interfaces and dependency injection.
+* Write a Java example demonstrating hexagonal architecture with inbound and outbound ports.
+* Write a Java implementation that uses the Strategy pattern to support interchangeable business rules.
+* Write a Java implementation that applies the Factory pattern to create different payment providers.
+* Write a Java implementation of the Adapter pattern to integrate an external legacy API.
+* Write a Java implementation that uses the Decorator pattern to add logging and metrics to a service.
+* Write a Spring Boot REST API with request validation, centralized exception handling, and consistent error responses.
+* Write a Spring Boot implementation that supports API versioning without breaking existing consumers.
+* Write a Java implementation of an idempotent payment-processing service.
+* Write a Spring Boot service that uses timeouts, retries, and a circuit breaker for downstream calls.
+* Write a Java implementation of the transactional outbox pattern for reliably publishing domain events.
+* Write a Java consumer that processes duplicate Kafka events safely using idempotency controls.
+* Write a Java implementation that coordinates a distributed business workflow using the Saga pattern.
+* Write a Spring Boot implementation that separates domain events from infrastructure-specific messaging code.
+* Write a Java implementation that uses CQRS to separate command handling from query handling.
+* Write a Java implementation that demonstrates optimistic locking for concurrent database updates.
+* Write a Spring Boot implementation that uses caching while supporting cache invalidation.
+* Write a Java example that applies the Repository pattern without coupling domain logic to a specific database.
+* Write an architecture test using ArchUnit that prevents controllers from directly accessing repositories.
+* Write an ArchUnit test that enforces dependency rules between domain, application, and infrastructure packages.
+* Write a Java implementation that propagates correlation IDs across service calls for distributed tracing.
+* Write a Spring Boot REST client that supports connection timeouts, response timeouts, and structured error handling.
+* Write a Java implementation that applies the Bulkhead pattern to isolate failures between downstream services.
+* Write a Spring Boot configuration that supports externalized settings for development, test, and production environments.
+* Write a Java implementation that uses feature flags to support incremental architectural migration.
+* Write a Java example that demonstrates backward-compatible event schema evolution.
+* Write a sample project structure and automated architecture tests for a scalable Spring Boot microservices platform.

@@ -1,0 +1,30 @@
+* How would you push a Spring Boot Docker image to Docker Hub?
+* How do you tag a Java application image for a private registry?
+* How do you configure Docker authentication for a private registry?
+* How do you push a Docker image to a registry hosted on a cloud platform?
+* How would you configure a private container registry for an enterprise Java project?
+* What is the difference between Docker Hub, Amazon Elastic Container Registry, Azure Container Registry, and Google Artifact Registry?
+* How do you configure a Spring Boot CI/CD pipeline to push images to a registry?
+* How do you authenticate a CI/CD pipeline with a private Docker registry?
+* Why should CI/CD pipelines use short-lived credentials or access tokens where supported?
+* How can you prevent registry credentials from appearing in build logs?
+* How do you configure a registry URL and image name using CI/CD variables?
+* How do you tag Docker images using a Git commit hash and release version?
+* How would you manage development, testing, staging, and production image tags?
+* How do you pull a private image from a registry when deploying a Java application?
+* How do you configure Docker Compose to use images from a private registry?
+* How do you configure Kubernetes to pull images from a private registry?
+* What is an image pull secret, and when is it required?
+* How do you troubleshoot an unauthorized error when pulling a private image?
+* How do you troubleshoot a manifest unknown error during an image pull?
+* How do you check whether a specific image tag exists in a registry?
+* How can you inspect image metadata and digests for an image stored in a registry?
+* How do you configure image retention and cleanup policies in a registry?
+* Why is it important to delete old image versions from a private registry?
+* How do registry permissions and role-based access control work?
+* How can you restrict a developer's access to production image repositories?
+* What is the difference between immutable tags and mutable tags?
+* How do you configure a registry to prevent overwriting release tags?
+* How can you reduce image pull time in a CI/CD pipeline?
+* How do you configure a registry mirror or pull-through cache?
+* How do you promote an existing image between environments without rebuilding it?

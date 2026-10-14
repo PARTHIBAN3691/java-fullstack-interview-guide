@@ -1,0 +1,30 @@
+* How would you design a consumer-driven contract testing strategy for a large microservices ecosystem?
+* How do you manage hundreds of consumer contracts for a shared provider?
+* How do you prevent conflicting expectations between multiple consumers?
+* How do you design a contract testing framework that supports REST, messaging, and event-driven services?
+* How do you implement contract testing for services that use different programming languages?
+* How do you manage backward and forward compatibility across independently deployed services?
+* How do you validate that a provider change is compatible with every active consumer?
+* How do you implement can-I-deploy checks using a Pact Broker?
+* How do you design a deployment pipeline that verifies compatibility across multiple service versions?
+* How do you handle contracts for APIs with optional fields and evolving schemas?
+* How do you test contracts involving polymorphic JSON payloads and complex nested structures?
+* How do you validate contracts containing dynamic values without making tests overly permissive?
+* How do you implement contract testing for OAuth 2.0-protected APIs?
+* How do you test contracts involving pagination, filtering, and sorting?
+* How do you perform contract testing for asynchronous workflows with eventual consistency?
+* How do you define contracts for Kafka events when producers and consumers are deployed independently?
+* How do you handle message ordering, duplicate delivery, and schema evolution in event contracts?
+* How do you implement contract testing for gRPC services?
+* How do you manage contract compatibility when using Protocol Buffers or Avro schemas?
+* How do you distinguish schema compatibility from behavioral compatibility?
+* How do you prevent consumer contracts from becoming tightly coupled to provider implementation details?
+* How do you design contract tests that remain stable despite provider-side refactoring?
+* How do you handle breaking contract changes that must be released across several services?
+* How do you migrate from integration-heavy testing to a contract-testing strategy?
+* How do you prevent stale or obsolete contracts from blocking deployments?
+* How do you design a contract verification strategy for multi-tenant APIs?
+* How do you handle sensitive data and secrets in contract test fixtures?
+* How do you optimize contract verification when a provider has thousands of consumer interactions?
+* How do you integrate contract test results with release governance and observability?
+* How would you evaluate Pact versus Spring Cloud Contract for an enterprise Java platform?

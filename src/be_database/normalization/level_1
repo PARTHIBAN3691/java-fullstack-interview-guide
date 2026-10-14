@@ -1,0 +1,30 @@
+* How do you normalize an unnormalized table into First Normal Form?
+* How do you identify repeating groups in a database table?
+* How do you convert a table from 1NF to 2NF?
+* How do you identify partial functional dependencies in a table?
+* How do you convert a table from 2NF to 3NF?
+* How do you identify transitive dependencies in a relational schema?
+* How do you determine whether a table satisfies BCNF?
+* Can a table satisfy 3NF but violate BCNF? Explain with an example.
+* How do you identify candidate keys from a set of functional dependencies?
+* What is attribute closure, and how is it used to find candidate keys?
+* What is a minimal cover of functional dependencies?
+* How do you decompose a table into smaller tables while preserving data?
+* What is a lossless-join decomposition?
+* What is dependency preservation in database normalization?
+* Can a decomposition be lossless but fail to preserve all functional dependencies?
+* How do you verify whether a decomposition is lossless?
+* What is the difference between 3NF synthesis and BCNF decomposition?
+* How do you normalize a student-course-enrollment table?
+* How do you normalize an employee-department-project table?
+* How do you handle many-to-many relationships during normalization?
+* How do you represent multivalued attributes in a normalized schema?
+* How do nullable columns and optional relationships affect database design?
+* How do normalization and foreign-key constraints work together?
+* How does normalization affect SQL joins and query complexity?
+* How does normalization influence indexing and query performance?
+* When would you choose a denormalized table over a fully normalized schema?
+* How do you normalize an existing production database without losing data?
+* How do you identify normalization problems in an existing MySQL schema?
+* How do normalization principles apply when designing entities in Spring Data JPA?
+* How do you validate that a normalized schema preserves existing business rules?

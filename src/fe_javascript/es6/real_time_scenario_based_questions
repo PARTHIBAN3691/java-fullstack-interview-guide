@@ -1,0 +1,30 @@
+* You are migrating an old JavaScript application to ES6. How would you replace var declarations safely?
+* A loop creates multiple event handlers that all print the same index. How would you fix it using let?
+* You need to construct a user profile message containing a name and age. How would you use template literals?
+* An API function should use a default page size when no value is provided. How would you implement it using default parameters?
+* You receive a large configuration object but need only three properties. How would you use object destructuring?
+* You need to swap two variables without using a temporary variable. How would you implement this with destructuring?
+* You need to merge default settings with user-provided settings. How would you use the spread operator?
+* A function accepts an unknown number of arguments. How would you process them using the rest parameter?
+* You need to create an object with a property name determined at runtime. How would you use computed property names?
+* You need to expose utility functions from a shared module. How would you organize named exports and imports?
+* An application has a default configuration and several utility functions. How would you structure its ES6 module exports?
+* Two modules depend on each other. How would you investigate and resolve circular dependency issues?
+* An API request must load user data and order history together. How would you use Promise.all()?
+* You need to display whichever of several API requests responds first. Which promise method would you consider, and what are its limitations?
+* A promise-based operation fails intermittently. How would you handle rejection and implement retry logic?
+* You need to preserve the surrounding object's this value inside a callback. When would an arrow function help?
+* A class must inherit common functionality from a parent class. How would you implement this using extends and super?
+* You need a method that belongs to the class rather than individual instances. How would you implement it?
+* You need unique product IDs without duplicates. How would you use Set?
+* You need to store product details by product ID while preserving insertion order. Would you use Map or Object, and why?
+* You need to associate private metadata with objects without preventing garbage collection. When would WeakMap be useful?
+* You need to process a sequence of values lazily rather than building a complete array. How could generators help?
+* You are integrating a custom collection with for...of. How would you make it iterable?
+* A module should be loaded only when the user opens a particular screen. How could dynamic import() help?
+* A promise callback runs after a synchronous log statement. Explain why this happens.
+* A nested destructuring expression throws an error when an API field is missing. How would you make it safer?
+* You need to transform legacy callback-based code into promise-based code. How would you approach the migration?
+* A derived class throws an error while accessing this during construction. How would you investigate the use of super()?
+* You need to build an object with concise methods and shorthand properties. Which ES6 object literal features would you use?
+* Your application must support older browsers that lack some ES6 features. How would you plan compatibility and transpilation?

@@ -1,0 +1,21 @@
+
+* Write a Java program that demonstrates two threads incrementing a shared counter and producing a race condition.
+* Modify the shared-counter program using `synchronized` to ensure thread-safe updates.
+* Write a Java program that uses `AtomicInteger` to implement a thread-safe counter.
+* Write a Java program demonstrating the difference between `volatile` and `AtomicInteger`.
+* Implement a thread-safe singleton using the initialization-on-demand holder idiom.
+* Implement a thread-safe singleton using correct double-checked locking.
+* Write a Java program that demonstrates a deadlock between two threads acquiring locks in different orders.
+* Modify the deadlock example to prevent deadlock by enforcing a consistent lock acquisition order.
+* Write a producer-consumer program using `wait()` and `notifyAll()`.
+* Implement the producer-consumer pattern using `BlockingQueue`.
+* Write a Java program that uses `CountDownLatch` to wait for multiple worker threads to finish.
+* Write a Java program that uses `CyclicBarrier` to coordinate multiple worker threads.
+* Write a Java program that uses `Semaphore` to limit access to a resource to a fixed number of threads.
+* Write a Java program using `ReentrantLock` and `tryLock()` to handle lock acquisition without waiting indefinitely.
+* Write a Java program that uses `ConcurrentHashMap` to safely update shared data from multiple threads.
+* Write a Java program that submits tasks to `ExecutorService` and collects results using `Future`.
+* Write a Java program that uses `Callable` and `Future` to return results from concurrent tasks.
+* Write a Java program that uses `CompletableFuture` to execute independent tasks concurrently and combine their results.
+* Write a Java program that demonstrates cancellation, interruption, and graceful shutdown of an executor.
+* Write a Java program that uses virtual threads to execute many I/O-bound tasks and compare the design with a platform-thread-based implementation.

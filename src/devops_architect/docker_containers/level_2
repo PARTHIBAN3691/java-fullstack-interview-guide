@@ -1,0 +1,30 @@
+* How would you design a standardized Docker image build platform for hundreds of microservices?
+* Explain the interaction between the Docker daemon, containerd, OCI runtimes, namespaces, and control groups when a container starts.
+* How would you investigate a container that starts successfully but immediately exits without useful application logs?
+* How would you diagnose a Docker image that builds successfully on one architecture but fails on another?
+* How would you design a multi-stage build that separates compilation, testing, and runtime dependencies while preserving reproducibility?
+* How would you prevent secrets from leaking into Docker image layers, build arguments, build logs, or image history?
+* How would you use BuildKit secret mounts and cache mounts to improve build security and performance?
+* How would you investigate unexpectedly large Docker images when the final stage already uses a minimal base image?
+* How would you identify and remove unnecessary layers without breaking application behavior?
+* How would you manage base image updates while balancing security patching, reproducibility, and operational stability?
+* How would you guarantee that an image promoted to production is exactly the image tested in staging?
+* How would you design image signing, provenance verification, and admission policies for a container supply chain?
+* How would you prevent a compromised CI runner from publishing malicious images to a trusted registry?
+* How would you enforce vulnerability policies for images containing operating-system packages and application dependencies?
+* How would you handle a critical vulnerability in a base image used by hundreds of deployed containers?
+* How would you design an exception process for vulnerabilities that have no available fix?
+* How would you investigate a container escape risk involving excessive Linux capabilities or privileged execution?
+* How would you implement rootless containers while preserving required networking, storage, and application functionality?
+* What security trade-offs arise when using distroless images, and how would you debug production issues without a shell?
+* How would you design container networking for isolated application tiers that require selective communication?
+* How would you diagnose DNS resolution failures, port conflicts, and packet drops in Docker networking?
+* How would you design persistent storage for containers that require data durability, backup, and recovery?
+* How would you recover from filesystem permission problems when a container runs as a non-root user with a mounted volume?
+* How would you tune CPU and memory limits for a latency-sensitive Java application running in a container?
+* How would you investigate a container repeatedly being killed due to memory exhaustion despite apparently low application heap usage?
+* How would you design container health checks that detect application failures without causing unnecessary restarts?
+* How would you handle graceful shutdown when a container receives SIGTERM during active requests?
+* How would you investigate containers that remain in a stopping state because the application does not terminate properly?
+* How would you establish image retention, cleanup, replication, and disaster recovery policies for a private registry?
+* How would you measure and improve container image security, build speed, startup time, and resource efficiency across an organization?

@@ -1,0 +1,30 @@
+* Explain the complete Kubernetes packet flow from an external client to a Pod, including the LoadBalancer, Ingress controller, Service, and CNI.
+* How does Kubernetes networking maintain connectivity when Pods move between nodes?
+* Compare overlay networking and underlay networking in Kubernetes.
+* How do VXLAN and BGP-based networking differ in Kubernetes CNI implementations?
+* What are the performance implications of overlay networking?
+* How does kube-proxy implement Service virtual IPs, and what alternatives exist?
+* What are the limitations of iptables-based Service load balancing at large cluster scale?
+* How does eBPF-based networking differ from traditional kube-proxy networking?
+* How do Cilium and Calico differ in their networking and policy capabilities?
+* How does Kubernetes handle source NAT and destination NAT?
+* Explain the impact of externalTrafficPolicy: Local on traffic routing and client IP preservation.
+* How can asymmetric routing affect Kubernetes application connectivity?
+* How do MTU mismatches cause intermittent connectivity problems in overlay networks?
+* How would you troubleshoot packet loss between Pods running on different nodes?
+* How can conntrack table exhaustion affect Kubernetes networking?
+* How do NetworkPolicies interact with existing firewall rules and cloud security groups?
+* What are the limitations of standard Kubernetes NetworkPolicies?
+* How would you implement default-deny ingress and egress policies without breaking DNS?
+* How can you design network isolation for multi-tenant Kubernetes clusters?
+* How do IPv4, IPv6, and dual-stack networking work in Kubernetes?
+* What are the challenges of enabling dual-stack Services and Pods?
+* How does topology-aware routing improve traffic locality?
+* What are the trade-offs between session affinity and even traffic distribution?
+* How can DNS caching cause stale Service discovery information?
+* How do you design Kubernetes networking for high availability across multiple availability zones?
+* What networking challenges arise when using a service mesh such as Istio?
+* How do sidecar proxies affect latency, connection management, and network troubleshooting?
+* How would you investigate intermittent TCP connection resets between microservices?
+* How do connection tracking, network policies, and load balancing interact under high traffic?
+* How would you design a scalable Kubernetes networking architecture for thousands of microservices?

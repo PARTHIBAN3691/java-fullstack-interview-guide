@@ -1,0 +1,144 @@
+**AI Data Pipelines**
+* Design a large-scale AI data platform that supports batch ingestion, streaming updates, document processing, feature computation, and vector indexing.
+* How would you provide exactly-once business effects when pipeline stages rely on systems with at-least-once delivery?
+* How would you implement schema evolution and backward compatibility across independently deployed pipeline stages?
+* How would you support deterministic replay of historical data after transformation logic changes?
+* How would you isolate bad data without blocking healthy partitions or creating unbounded backlogs?
+* How would you design pipeline orchestration with dependency tracking, retries, checkpoints, and recovery objectives?
+* How would you optimize pipeline cost while maintaining freshness, reliability, and quality SLAs?
+
+**Data Collection and Ingestion**
+* Design an ingestion platform for millions of daily records from APIs, databases, event streams, and file repositories with different delivery guarantees.
+* How would you reconcile source-system changes, deleted records, duplicate events, and delayed updates?
+* How would you design ingestion that remains correct when source APIs provide neither stable ordering nor reliable update timestamps?
+* How would you implement schema registry and contract validation across independently owned source systems?
+* How would you prevent an upstream outage from causing cascading failures throughout downstream AI pipelines?
+* How would you enforce tenant-specific data access and regional processing restrictions at ingestion time?
+* How would you design backfill and replay capabilities without corrupting current production state?
+
+**Document Processing Pipelines**
+* Design a fault-tolerant document-processing system for millions of mixed-format documents, including scanned files, tables, images, and multilingual content.
+* How would you maintain stable document identity when files are renamed, moved, or re-uploaded?
+* How would you detect partial extraction failures and prevent incomplete documents from being published to RAG indexes?
+* How would you preserve structural relationships between tables, headings, footnotes, images, and extracted text?
+* How would you optimize OCR and parsing cost by routing documents to different processing engines?
+* How would you maintain document-level and chunk-level lineage through reprocessing and version changes?
+* How would you prevent malicious files, parser vulnerabilities, and embedded prompt injections from compromising downstream AI workflows?
+
+**Data Cleaning and Normalization**
+* Design a versioned data-cleaning framework that applies domain-specific rules across heterogeneous datasets while preserving source provenance.
+* How would you detect semantic duplicates across records with different languages, formats, and entity identifiers?
+* How would you distinguish legitimate outliers from data corruption in rapidly changing production data?
+* How would you prevent cleaning and imputation logic from leaking information across training and test splits?
+* How would you manage evolving normalization rules without making historical datasets irreproducible?
+* How would you measure the downstream effect of a cleaning-rule change on feature distributions and model quality?
+* How would you design reversible transformations when original data must be preserved for audit or recovery?
+
+**Data Quality and Validation**
+* Design a data-quality framework with schema contracts, distribution checks, anomaly detection, quarantine, and publication gates.
+* How would you define quality SLAs when upstream sources are incomplete or naturally noisy?
+* How would you detect subtle semantic drift when records continue passing schema validation?
+* How would you distinguish real distribution changes from ingestion defects or sampling changes?
+* How would you design quality checks that scale across thousands of datasets without creating excessive false alarms?
+* How would you connect data-quality incidents to affected features, models, and production predictions?
+* How would you safely publish partial datasets when a subset of records fails quality thresholds?
+
+**Metadata and Data Lineage**
+* Design end-to-end lineage across source systems, transformations, training datasets, feature stores, embeddings, and model artifacts.
+* How would you reconstruct the exact source data and transformation versions responsible for a historical prediction?
+* How would you represent lineage across asynchronous events, branching workflows, and many-to-many joins?
+* How would you maintain metadata consistency across multiple cloud platforms and data catalogs?
+* How would you enforce privacy policies when lineage metadata itself may contain sensitive identifiers?
+* How would you identify the downstream impact of a source schema change or data-quality incident?
+* How would you preserve lineage through dataset compaction, index rebuilds, and data-retention operations?
+
+**Feature Engineering**
+* Design a point-in-time-correct feature pipeline for a model that uses historical customer behavior and real-time events.
+* How would you prevent target leakage when features are generated from future events or post-outcome fields?
+* How would you handle high-cardinality, sparse, and rapidly changing features at large scale?
+* How would you maintain parity between offline training transformations and low-latency online inference?
+* How would you version feature logic and safely migrate models that depend on older feature definitions?
+* How would you detect feature drift and distinguish it from changes in label distribution?
+* How would you optimize feature computation cost when several models share overlapping transformations?
+
+**Feature Stores**
+* Design a feature-store architecture that supports point-in-time training joins, low-latency online reads, versioning, and governance.
+* How would you guarantee correct historical feature values when events arrive late or are corrected retroactively?
+* How would you reconcile offline and online stores after partial writes, replication delays, or outages?
+* How would you implement atomic feature-definition changes while existing models continue using earlier versions?
+* How would you detect and resolve training-serving skew across multiple models and deployment environments?
+* How would you balance feature freshness, online latency, storage cost, and consistency requirements?
+* How would you implement tenant isolation and access controls for shared features without duplicating all feature data?
+
+**Training Data Management**
+* Design a reproducible dataset platform that supports immutable snapshots, versioned labels, provenance, approvals, and scalable access.
+* How would you split data when records are correlated by customer, device, document, or time?
+* How would you detect leakage across related records and repeated entities in large datasets?
+* How would you manage dataset lineage when labels and source records change after a model has been trained?
+* How would you support rollback to an earlier dataset and reproduce the associated training run?
+* How would you assess the effect of class imbalance, label noise, and distribution shift on evaluation reliability?
+* How would you govern access to datasets containing sensitive information while enabling authorized experimentation?
+
+**Data Labeling and Annotation**
+* Design a large-scale human-annotation platform with quality sampling, reviewer adjudication, active learning, and auditability.
+* How would you measure label reliability when there is no universally correct answer or annotators disagree legitimately?
+* How would you detect systematic annotator bias and inconsistencies across languages or demographic groups?
+* How would you select examples for annotation to maximize information gain while controlling cost?
+* How would you manage taxonomy changes without making historical labels incomparable?
+* How would you combine expert-reviewed labels, crowd annotations, and model-generated labels with different confidence levels?
+* How would you prevent sensitive data exposure while annotators review real-world examples?
+
+**Synthetic Data**
+* Design a synthetic-data pipeline that preserves important statistical relationships while minimizing disclosure of sensitive training information.
+* How would you evaluate privacy risk, fidelity, diversity, and downstream model utility of generated data?
+* How would you detect memorization or near-duplicates of real records in synthetic outputs?
+* How would you generate useful rare-event examples without introducing unrealistic correlations?
+* How would you prevent feedback loops in which models are repeatedly trained on their own synthetic outputs?
+* How would you compare synthetic-data augmentation against collecting more real-world data?
+* How would you document provenance, generation settings, validation evidence, and permitted uses of synthetic datasets?
+
+**Data Privacy and Governance**
+* Design a privacy-aware AI data platform that enforces purpose limitation, consent, residency, retention, and access policies across all derived assets.
+* How would you propagate a deletion request through raw data, transformed tables, features, embeddings, training snapshots, and backups?
+* How would you determine whether a trained model or generated dataset retains information that must be removed or remediated?
+* How would you enforce policy changes when derived data has been replicated across multiple clouds or regions?
+* How would you prevent sensitive data from appearing in logs, lineage metadata, model inputs, or evaluation artifacts?
+* How would you provide auditable evidence of compliance without storing prohibited content?
+* How would you design policy enforcement that remains effective when pipelines are replayed or run by service identities?
+
+**Streaming Data for AI**
+* Design a low-latency streaming feature pipeline that handles out-of-order events, late arrivals, deduplication, recovery, and online serving.
+* How would you maintain consistent feature state during consumer restarts and partition rebalancing?
+* How would you handle backpressure when inference demand exceeds the throughput of downstream feature computation?
+* How would you guarantee correct windowed aggregations when historical events are corrected or arrive beyond the allowed lateness period?
+* How would you reconcile streaming-derived features with batch recomputation after an outage?
+* How would you manage schema evolution and event compatibility across independently deployed producers and consumers?
+* How would you detect silent data loss when the streaming platform reports healthy consumer status?
+
+**Vector Index Pipelines**
+* Design a distributed vector-indexing pipeline supporting large document corpora, concurrent updates, retries, validation, and zero-downtime index replacement.
+* How would you guarantee that every indexed vector maps to the correct source, chunk, document version, and embedding model?
+* How would you prevent partially indexed documents from becoming visible during a multi-batch update?
+* How would you optimize throughput while controlling embedding API quotas, vector-store write limits, and memory usage?
+* How would you detect vector corruption, dimension mismatches, missing chunks, and stale metadata at scale?
+* How would you design deterministic recovery after a pipeline failure between embedding generation and index publication?
+* How would you evaluate retrieval quality before promoting a newly built index to production?
+
+**Incremental Indexing and Reindexing**
+* Design a zero-downtime reindexing strategy when a new embedding model changes vector dimensions and retrieval semantics.
+* How would you coordinate source change events with long-running indexing jobs to prevent stale writes?
+* How would you identify the minimal set of documents requiring reprocessing after parser, chunking, or embedding changes?
+* How would you validate completeness and correctness before switching traffic to a replacement index?
+* How would you support rollback when a new index passes technical checks but degrades search relevance?
+* How would you control compute and storage costs when old and new indexes coexist during migration?
+* How would you reconcile concurrent document updates, deletions, and full reindex snapshots?
+
+**Data Retention and Deletion**
+* Design a deletion framework that tracks and removes data across raw storage, derived datasets, caches, vector stores, and backups.
+* How would you prove that a deleted document cannot be retrieved from any active AI pipeline or RAG index?
+* How would you handle deletion requests while a training job, embedding job, or reindexing job is processing the same data?
+* How would you reconcile legal holds with ordinary retention schedules and deletion requests?
+* How would you maintain tamper-evident deletion audit records without retaining deleted personal data?
+* How would you manage backup expiration and disaster recovery so deleted records are not unintentionally restored?
+* How would you assess the need for model retraining or other remediation when deleted data has already contributed to a trained model?
+

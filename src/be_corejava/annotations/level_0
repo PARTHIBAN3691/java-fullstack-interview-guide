@@ -1,0 +1,50 @@
+# Core Java → Annotations → Level 0 (Easy)
+
+## Annotation Fundamentals
+* What is an annotation in Java?
+* Why are annotations used in Java?
+* How are annotations different from comments?
+* What is the basic syntax for declaring an annotation?
+* Where can annotations be applied in Java?
+* Can annotations have parameters or values?
+* What is the purpose of the `@` symbol in Java?
+* Are annotations part of the Java language or a third-party feature?
+* Can a class have multiple annotations?
+* Can annotations be applied to methods, fields, constructors, and parameters?
+
+## Built-in Annotations
+* What is the purpose of the `@Override` annotation?
+* Why is `@Deprecated` used?
+* What is the purpose of `@SuppressWarnings`?
+* What happens if a method marked with `@Override` does not actually override a superclass method?
+* Can `@Override` be applied to a method that implements an interface method?
+* What is the purpose of `@FunctionalInterface`?
+* Is `@FunctionalInterface` mandatory for defining a functional interface?
+* What is the purpose of `@SafeVarargs`?
+* What is the difference between `@Deprecated` and `@SuppressWarnings`?
+* What is the purpose of `@Documented`?
+
+## Custom Annotations
+* How do you create a custom annotation in Java?
+* What is the purpose of the `@interface` keyword?
+* Can a custom annotation contain methods?
+* Can annotation elements have default values?
+* What data types are allowed as annotation element types?
+* Can an annotation element have a `String` value?
+* Can an annotation contain an array of values?
+* What is the purpose of the `default` keyword inside an annotation declaration?
+* Can a custom annotation extend another annotation?
+* Can annotations be used to attach metadata to a class?
+
+## Annotation Usage
+* What is the purpose of annotating a class?
+* How can you annotate a method parameter?
+* Can annotations be applied to local variables?
+* Can annotations be applied to constructors?
+* What is the difference between annotating a field and annotating a method?
+* Can annotations be used on interface methods?
+* Can annotations be applied to enum constants?
+* What happens if an annotation's required element is not provided?
+* How do you provide values to annotation elements?
+* Can an annotation be used without specifying an element value when that element has a default?
+

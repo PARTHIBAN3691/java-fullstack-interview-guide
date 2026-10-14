@@ -1,0 +1,30 @@
+* How do you create a separate worker file and execute it from the main thread?
+* How do you implement communication between the main thread and multiple workers?
+* How do you handle messages containing objects and arrays between worker threads?
+* How does structured cloning work when passing data between threads?
+* What types of data can be transferred between Worker Threads?
+* What is the difference between cloning and transferring an ArrayBuffer?
+* How do you use transferable objects to reduce data-copying overhead?
+* What is SharedArrayBuffer, and how can it be used with Worker Threads?
+* What is Atomics in JavaScript, and why is it useful for worker threads?
+* How do you synchronize access to shared memory between worker threads?
+* How do you handle exceptions thrown inside a worker thread?
+* How do you implement graceful shutdown of worker threads?
+* How do you limit the number of worker threads created by an application?
+* What is a worker thread pool, and why is it useful?
+* How do you implement a basic worker pool in Node.js?
+* How do you distribute CPU-intensive tasks across a worker pool?
+* How do you return a worker to the pool after task completion?
+* How do you handle worker failures and replace failed workers?
+* How do you implement task queues for worker threads?
+* How do you prevent tasks from being assigned to busy workers?
+* How do you pass environment variables to worker threads?
+* How do Worker Threads interact with the Node.js module system?
+* Can a worker thread use CommonJS and ES modules?
+* How do you debug a worker thread in Node.js?
+* How do you measure execution time and performance improvements using Worker Threads?
+* How do you manage worker lifecycle events in a long-running application?
+* How do you handle worker timeouts when a task takes too long?
+* How do you prevent unhandled errors from affecting the main application?
+* How do you test code that creates and communicates with worker threads?
+* How do you decide between using Worker Threads, child processes, and asynchronous APIs?

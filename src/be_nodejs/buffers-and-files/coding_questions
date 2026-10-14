@@ -1,0 +1,30 @@
+* Write a Node.js program that reads a text file asynchronously using fs/promises.
+* Write a program that reads a file into a Buffer and prints its byte length.
+* Implement a function that writes a string to a file using fs/promises.
+* Write a program that appends data to an existing file without replacing its contents.
+* Implement a function that copies a file using asynchronous file system APIs.
+* Write a program that creates a directory and writes a file inside it.
+* Implement a function that retrieves file size, modification time, and permissions.
+* Write a program that reads a large file using fs.createReadStream().
+* Implement a file-copy operation using createReadStream(), createWriteStream(), and stream.pipeline().
+* Write a program that processes a large text file line by line.
+* Implement a function that calculates the SHA-256 checksum of a file using a stream.
+* Write a program that converts a file's contents into Base64 without loading the entire file into memory.
+* Implement a function that reads a specific number of bytes from a file using a file descriptor.
+* Write a program that updates a specific byte range in a binary file.
+* Implement a binary file parser that reads fixed-size records from a stream.
+* Write a function that safely concatenates Buffer chunks while controlling memory usage.
+* Implement a file-processing pipeline that transforms incoming chunks and writes the results to another file.
+* Write a program that handles stream errors and closes file resources correctly.
+* Implement a directory scanner that recursively finds files matching a particular extension.
+* Write a program that processes files with a configurable concurrency limit.
+* Implement a file watcher that detects changes and debounces repeated notifications.
+* Write a function that waits until a file has been completely written before processing it, using an appropriate producer-consumer contract.
+* Implement atomic file replacement by writing to a temporary file and renaming it into place.
+* Write a program that uses fsync() when durable file writes are required.
+* Implement a resumable file-processing function that stores and restores a processing checkpoint.
+* Write a program that streams a large file through a compression pipeline.
+* Implement a file-upload endpoint in Express.js that streams uploaded content to disk with size limits.
+* Write a function that validates uploaded file paths and prevents path traversal.
+* Implement a file-processing function that cleans up temporary files after success, failure, or cancellation.
+* Build a complete Node.js file-processing module with streaming, Buffer manipulation, checksum verification, bounded concurrency, and unit tests.

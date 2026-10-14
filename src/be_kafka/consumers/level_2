@@ -1,0 +1,30 @@
+* How would you design a high-throughput Kafka consumer for millions of messages per day?
+* How would you optimize a consumer that spends most of its time waiting for database operations?
+* How would you determine the optimal values for max.poll.records, fetch.min.bytes, and fetch.max.wait.ms?
+* How would you tune consumer concurrency based on partition count and processing capacity?
+* How would you design a consumer that guarantees ordering for each business entity?
+* How would you handle out-of-order processing when using asynchronous execution?
+* How would you prevent offset commits from advancing beyond successfully processed records?
+* How would you implement idempotent processing for financial transactions?
+* How would you coordinate Kafka offset commits with relational database transactions?
+* How would you implement exactly-once processing between Kafka topics using transactions?
+* What are the limitations of Kafka exactly-once semantics when interacting with external databases?
+* How would you design a retry architecture that avoids blocking a partition for transient failures?
+* How would you prevent poison messages from repeatedly interrupting consumption?
+* How would you implement bounded retries with exponential backoff and dead-letter routing?
+* How would you minimize consumer group rebalances during rolling deployments?
+* How would you handle consumer lag that grows despite increasing the number of consumer instances?
+* How would you investigate uneven processing caused by hot partitions?
+* How would you design a consumer that supports replay without affecting the production consumer group?
+* How would you recover safely when committed offsets fall outside the retained log range?
+* How would you handle duplicate messages caused by retries, rebalances, and application restarts?
+* How would you implement backpressure when downstream services cannot keep up with Kafka traffic?
+* How would you design a consumer that processes batches while maintaining reliable offset management?
+* How would you manage memory usage when consumers receive large batches of messages?
+* How would you investigate frequent poll timeouts and heartbeat failures?
+* How would you design consumer health checks that distinguish application health from Kafka connectivity?
+* How would you implement schema evolution and backward-compatible deserialization?
+* How would you design a multi-tenant consumer that prevents one tenant from starving other tenants?
+* How would you scale consumers automatically using consumer lag and processing-rate metrics?
+* How would you optimize consumer fetch behavior for small messages versus large messages?
+* How would you design a resilient consumer architecture across multiple Kafka clusters or regions?

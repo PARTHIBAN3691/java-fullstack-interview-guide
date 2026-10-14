@@ -1,0 +1,30 @@
+* How would you design a scalable Java test automation framework from scratch?
+* How would you design an automation framework for a large microservices application?
+* How would you structure a framework supporting UI, REST API, database, and messaging tests?
+* How do you apply SOLID principles when designing a test automation framework?
+* How do you prevent duplicated automation code across hundreds of tests?
+* How do you design reusable components without creating an over-engineered framework?
+* How do you implement parallel test execution safely?
+* How do you prevent shared test data from causing failures during parallel execution?
+* How do you design thread-safe test utilities?
+* How do you manage WebDriver instances when tests execute in parallel?
+* How do you design a framework that supports multiple browsers?
+* How do you implement cross-browser testing efficiently?
+* How do you design environment-independent automated tests?
+* How do you manage configuration for development, QA, staging, and production-like environments?
+* How do you design reliable synchronization for dynamic applications?
+* How do you handle flaky tests caused by asynchronous application behavior?
+* How do you identify whether a failure is caused by the test or the application?
+* How do you implement automatic failure diagnostics in a test framework?
+* How do you capture logs, screenshots, network traces, and request/response data on failures?
+* How do you design a retry mechanism without hiding genuine application defects?
+* How do you integrate test automation with CI/CD pipelines?
+* How do you optimize a test suite containing thousands of automated tests?
+* How do you implement test selection based on tags or test categories?
+* How do you design contract tests for microservices?
+* How do you automate end-to-end workflows across multiple services?
+* How do you manage test data when tests interact with distributed systems?
+* How do you handle eventual consistency in automated tests?
+* How do you automate asynchronous Kafka-based workflows?
+* How do you maintain backward compatibility when application APIs change?
+* How do you measure automation ROI, coverage, execution time, and maintenance cost?

@@ -1,0 +1,106 @@
+
+**Unit Testing in Pipelines**
+* What is unit testing, and why is it important in a CI/CD pipeline?
+* What is the difference between unit testing and integration testing?
+* At which stage of a CI pipeline should unit tests run?
+* How do JUnit and Mockito help test Java applications?
+* What is code coverage, and why should it not be treated as the only measure of test quality?
+* What should happen when a unit test fails during a pipeline execution?
+
+**Integration Testing**
+* What is integration testing in DevOps?
+* How does integration testing differ from unit testing?
+* Why do applications need integration tests for databases and external services?
+* What is the role of test containers in integration testing?
+* How can integration tests be automated in a CI/CD pipeline?
+
+**API Testing**
+* What is API testing, and why is it important for backend services?
+* What are HTTP status codes, and how can they be validated in API tests?
+* How do you test REST API request headers, query parameters, and request bodies?
+* What is the difference between positive and negative API testing?
+* Which tools can be used for API testing in a CI/CD pipeline?
+
+**Contract Testing**
+* What is contract testing?
+* How does contract testing differ from integration testing?
+* What are consumers and providers in contract testing?
+* Why is contract testing useful in a microservices architecture?
+* What is the purpose of a consumer-driven contract?
+
+**End-to-End Testing**
+* What is end-to-end (E2E) testing?
+* How does E2E testing differ from API testing?
+* What are the common challenges of automating E2E tests?
+* Which tools can be used for browser-based E2E testing?
+* Why are E2E tests generally slower than unit tests?
+
+**Smoke Testing**
+* What is smoke testing?
+* When should smoke tests run in a deployment pipeline?
+* What is the difference between smoke testing and sanity testing?
+* Which application checks should be included in a smoke test suite?
+* Why should smoke tests be fast and reliable?
+
+**Regression Testing**
+* What is regression testing?
+* Why is regression testing necessary after a code change?
+* What is the difference between manual and automated regression testing?
+* How can regression tests be integrated into CI/CD pipelines?
+* What is a regression test suite?
+
+**Performance Testing**
+* What is performance testing?
+* What is the difference between load testing and stress testing?
+* What are response time, throughput, and latency?
+* Why should performance tests be run before production releases?
+* Which tools can be used for performance testing?
+
+**Security Testing**
+* What is security testing in a DevOps pipeline?
+* What are Static Application Security Testing (SAST) and Dynamic Application Security Testing (DAST)?
+* What is software composition analysis (SCA)?
+* Why should dependency vulnerabilities be checked during builds?
+* What is the purpose of secrets scanning?
+
+**Infrastructure Testing**
+* What is infrastructure testing?
+* Why should infrastructure configurations be tested before deployment?
+* What is Infrastructure as Code (IaC) testing?
+* How can infrastructure validation prevent production incidents?
+* What is the difference between infrastructure testing and application testing?
+
+**Terraform Testing**
+* How do you validate Terraform configuration?
+* What is the purpose of `terraform fmt`?
+* What is the difference between `terraform validate` and `terraform plan`?
+* Why should Terraform plans be reviewed before applying changes?
+* How can automated tests detect insecure Terraform configurations?
+
+**Container Testing**
+* What should be tested in a Docker container image?
+* How can you validate a Dockerfile before building an image?
+* Why should container images be scanned for vulnerabilities?
+* What is the difference between image testing and container runtime testing?
+* How can container health checks be validated?
+
+**Kubernetes Testing**
+* How can Kubernetes manifests be validated before deployment?
+* What is the difference between readiness and liveness probes?
+* How do you test whether a Kubernetes deployment is healthy?
+* Why should resource requests and limits be validated?
+* What is the purpose of Kubernetes smoke tests?
+
+**Deployment Verification**
+* What is deployment verification?
+* What is the difference between deployment success and application health?
+* How can health endpoints be used after deployment?
+* What is a deployment rollback trigger?
+* Why should logs and metrics be checked after a release?
+
+**Production Testing**
+* What is production testing?
+* What is the difference between production testing and staging testing?
+* What is a canary release?
+* What is synthetic monitoring?
+* Why must production tests avoid destructive operations and sensitive data exposure?

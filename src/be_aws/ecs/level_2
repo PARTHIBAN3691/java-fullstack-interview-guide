@@ -1,0 +1,21 @@
+
+* How would you design a highly available ECS architecture for Java microservices across multiple Availability Zones?
+* How would you choose between ECS on Fargate and ECS on EC2 for a large production workload?
+* How would you implement zero-downtime deployments for an ECS-hosted Spring Boot application?
+* How do rolling deployments, blue-green deployments, and canary deployments differ in ECS?
+* How would you configure deployment circuit breakers and automatic rollback for an ECS service?
+* How would you design ECS task and service auto scaling for unpredictable traffic spikes?
+* How would you troubleshoot an ECS service that cannot reach its desired task count?
+* How would you diagnose memory exhaustion, CPU throttling, and JVM garbage collection issues in Java containers?
+* How would you configure JVM heap sizing when running Spring Boot containers with strict ECS memory limits?
+* How would you securely manage secrets, IAM permissions, and network access for ECS tasks?
+* How would you implement service discovery and secure communication between ECS microservices?
+* How would you design centralized logging, metrics, tracing, and alerting for ECS workloads?
+* How would you handle graceful shutdown and in-flight HTTP requests during ECS deployments?
+* How would you implement resilience when an ECS service depends on RDS, SQS, and downstream APIs?
+* How would you design blue-green deployments using ECS, CodeDeploy, and an Application Load Balancer?
+* How would you manage multiple environments using ECS task definitions and infrastructure as code?
+* How would you optimize image size, startup time, and deployment speed for Java containers?
+* How would you implement cross-account image access and secure container image promotion through ECR?
+* How would you troubleshoot networking failures between Fargate tasks and AWS services in private subnets?
+* How would you evaluate the security, availability, performance, and cost trade-offs of ECS versus EKS?

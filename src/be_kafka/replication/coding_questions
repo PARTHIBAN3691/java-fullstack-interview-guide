@@ -1,0 +1,30 @@
+* Write Java code using Kafka `AdminClient` to retrieve the replication factor of a topic.
+* Write Java code using `AdminClient` to list all replicas for each partition of a topic.
+* Write Java code to retrieve the leader broker for every partition of a Kafka topic.
+* Write Java code to display the ISR list for each partition.
+* Write a Java program that identifies partitions with fewer ISR replicas than expected.
+* Write Java code using `AdminClient` to identify under-replicated partitions.
+* Write a Spring Boot monitoring component that reports replication health for Kafka topics.
+* Write Java code to create a Kafka topic with replication factor 3.
+* Write Java code to create a topic with configurable partition count and replication factor.
+* Write Java code that checks whether a topic satisfies a required replication factor.
+* Write a Java utility that compares the configured replication factor with the actual replica assignments.
+* Write Java code to identify partitions whose leaders are concentrated on a single broker.
+* Write Java code that reports partitions with no available leader.
+* Write a Spring Boot actuator endpoint that exposes Kafka partition and replica health.
+* Write Java code using `AdminClient` to describe a topic and inspect its partition metadata.
+* Write a Java monitoring task that alerts when the ISR count falls below a configured threshold.
+* Write Java code to calculate the expected storage requirement for a topic based on replication factor.
+* Write a Java utility that estimates additional storage required when increasing a topic's replication factor.
+* Write Java code that validates whether a topic has replicas distributed across the required availability zones using available broker rack metadata.
+* Write a Spring Boot application that periodically monitors under-replicated partitions and exposes metrics through Micrometer.
+* Write an integration test that verifies a Kafka topic is created with the expected replication factor.
+* Write a Kafka integration test that demonstrates how a producer configured with `acks=all` behaves when replicas become unavailable.
+* Write Java code to handle producer failures caused by insufficient in-sync replicas.
+* Write Java code that records producer latency and correlates spikes with replication-related errors.
+* Write a Kafka cluster health-check utility that reports unavailable leaders, under-replicated partitions, and ISR counts.
+* Write Java code that uses `AdminClient` to inspect replica assignments before and after a replica reassignment.
+* Write a Spring Boot service that checks whether critical topics meet minimum durability requirements.
+* Write Java code to compare replication configurations across multiple Kafka topics and flag deviations.
+* Write an automated test that validates a topic's replication factor and `min.insync.replicas` configuration.
+* Write a Java-based Kafka operations utility that generates a report of replication health, broker leadership distribution, and partition availability.

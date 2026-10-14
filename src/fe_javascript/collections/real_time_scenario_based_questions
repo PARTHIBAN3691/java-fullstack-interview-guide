@@ -1,0 +1,30 @@
+* An API returns thousands of user records. How would you store and search them efficiently?
+* A shopping cart must maintain product IDs and quantities. Which collection would you use and why?
+* A system must prevent duplicate email addresses from being stored in a list. How would you use a Set?
+* An application needs to map user IDs to user details. Would you use a Map or Object?
+* A dashboard must group transactions by status and calculate totals for each group. How would you implement it?
+* A product catalog needs sorting, filtering, and searching. Which array methods would you use?
+* A search feature needs to find common items between two lists. How would you calculate their intersection?
+* A system must identify records present in one dataset but missing from another. How would you find the difference?
+* An API returns duplicate objects with the same ID. How would you remove duplicates while preserving the required record?
+* A large dataset must be processed without repeatedly creating unnecessary intermediate arrays. How would you optimize it?
+* A cache must remember recently accessed API responses and evict the least recently used entry. Which collection would you use?
+* An application stores temporary metadata for DOM elements without preventing garbage collection. Would you use a WeakMap or Map?
+* A permissions system needs to associate roles with sets of allowed actions. How would you model the data?
+* A real-time leaderboard must keep user scores and retrieve users by ID. Which data structures would you choose?
+* A log-processing application must count how many times each error code occurs. How would you implement frequency counting?
+* A reporting application must group employees by department and calculate the average salary. How would you process the collection?
+* An application needs to merge two arrays of objects while resolving duplicate IDs. How would you design the merge?
+* A frontend state-management system must update a nested object without mutating the original state. How would you do it?
+* A data-import feature must compare old and new records and identify additions, removals, and changes. Which collection operations would help?
+* A system needs to preserve insertion order while storing unique values. Which collection would you choose?
+* An application uses objects as keys in a lookup table. What limitations might occur, and when would Map be better?
+* A data-processing pipeline must iterate through a large dataset lazily instead of loading all results at once. How could iterators or generators help?
+* A task manager needs fast lookups by task ID and ordered iteration through tasks. Which collection would you use?
+* A system must maintain a list of unique active sessions and support quick membership checks. How would you represent the sessions?
+* A financial report must calculate totals by account number from millions of transactions. How would you structure the aggregation?
+* A cache retains large objects longer than expected. How would you investigate whether its collection structure is causing memory retention?
+* A UI must display only the first 20 matching results from a large collection. How would you reduce unnecessary processing?
+* A backend response contains nested arrays and objects that need cloning before modification. How would you avoid accidental shared references?
+* An application needs to compare two collections of objects by business keys rather than object references. How would you implement the comparison?
+* A production application experiences slow collection operations as data grows. How would you identify the bottleneck and choose a better data structure?

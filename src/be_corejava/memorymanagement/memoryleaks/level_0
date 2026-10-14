@@ -1,0 +1,21 @@
+
+* What is a memory leak in Java?
+* Why can memory leaks occur even though Java provides automatic garbage collection?
+* What are the common causes of memory leaks in Java applications?
+* What is the difference between a memory leak and an `OutOfMemoryError`?
+* How does garbage collection help prevent memory leaks?
+* What makes an object eligible for garbage collection?
+* Can an object cause a memory leak if it is no longer required by the application?
+* How can static variables cause memory leaks?
+* How can collections such as `ArrayList` and `HashMap` cause memory leaks?
+* Can an object become eligible for garbage collection while a reference variable still exists?
+* What is an unreachable object?
+* What is an object reference chain, and how can it contribute to a memory leak?
+* How can an unclosed resource cause a memory leak?
+* Can event listeners cause memory leaks in Java applications?
+* How can an application accidentally retain objects for longer than necessary?
+* What are the common symptoms of a memory leak?
+* How can increasing heap size hide a memory leak?
+* What is the relationship between memory leaks and garbage collection frequency?
+* Which Java tools can help detect memory leaks?
+* What coding practices help prevent memory leaks?

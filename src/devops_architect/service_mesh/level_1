@@ -1,0 +1,35 @@
+* How would you decide whether a microservices application needs a service mesh?
+* How would you introduce a service mesh into an existing Kubernetes environment?
+* How does Istio separate control-plane responsibilities from data-plane responsibilities?
+* How does Linkerd manage service proxies and service identity?
+* How does the sidecar pattern intercept inbound and outbound service traffic?
+* What are the advantages and disadvantages of deploying a sidecar proxy with every application pod?
+* How does service discovery work when a new microservice instance is created or removed?
+* How does a service mesh integrate with Kubernetes Services and DNS?
+* How would you configure Istio to route traffic between different versions of a service?
+* How would you route 90% of traffic to a stable version and 10% to a canary version?
+* How would you route requests based on HTTP headers, paths, or request metadata?
+* How would you configure retries for transient failures without causing excessive load?
+* How would you choose appropriate connection and request timeout values for a microservice?
+* What is the difference between application-level retries and service-mesh retries?
+* How would you prevent retries at multiple layers from amplifying traffic during an outage?
+* How do circuit breakers protect downstream services from overload?
+* How do connection pools, pending-request limits, and outlier detection contribute to resilience?
+* How would you implement rate limiting for service-to-service traffic?
+* What is the difference between local rate limiting and globally coordinated rate limiting?
+* How would you configure mTLS between services in Istio?
+* What is the difference between permissive and strict mTLS modes in Istio?
+* How does a service mesh issue, rotate, and validate workload certificates?
+* How would you enforce authorization policies between services?
+* How would you prevent an unauthorized workload from invoking a sensitive backend service?
+* How would you inject delays or HTTP errors to test application resilience?
+* How would you use service-mesh telemetry to identify latency, error rates, and traffic volume?
+* How would you correlate service-mesh metrics with application logs and distributed traces?
+* How would you monitor traffic between services without modifying application code?
+* How would you integrate Istio or Linkerd with Prometheus and Grafana?
+* How would you perform a canary deployment with automated health checks and rollback?
+* How would you troubleshoot a service that works when called directly but fails through the service mesh?
+* How would you configure ingress and egress traffic policies for a service mesh?
+* How would you handle external services that are not part of the service mesh?
+* How would you upgrade a service mesh while minimizing application disruption?
+* What are the operational and performance trade-offs of adopting a service mesh?

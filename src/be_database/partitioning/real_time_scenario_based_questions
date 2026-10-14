@@ -1,0 +1,30 @@
+* An orders table has grown to hundreds of millions of rows, and queries filtering by order date are becoming slow. How would you evaluate and implement range partitioning?
+* A partitioned MySQL table still performs full scans across multiple partitions. How would you investigate partition pruning and the query execution plan?
+* A transaction-processing application experiences high write latency because most new records target a single date partition. How would you reduce the hot-partition problem?
+* A monthly reporting query becomes slow after the table is partitioned. How would you investigate partition selection, indexes, and aggregation behavior?
+* A production table must retain only the last 12 months of audit data. How would you design partitioning and archival to remove old data efficiently?
+* A new partition must be added to a large table while the application continues accepting writes. How would you perform the change safely?
+* A team partitions a customer table by customer ID, but queries filtering by transaction date become slower. How would you reassess the partitioning strategy?
+* A partitioned table receives uneven data volumes, with one partition much larger than the others. How would you identify the cause and rebalance the data?
+* An application inserts records into a partitioned table and encounters errors because some values do not match an existing partition. How would you prevent this issue?
+* A MySQL partitioning migration fails because a unique key does not include the partitioning column. How would you redesign the schema while preserving uniqueness?
+* A large DELETE statement takes hours to remove historical records. How could partitioning simplify the retention process?
+* A Spring Boot application performs bulk inserts into a partitioned table, but throughput does not improve. How would you investigate indexes, partition routing, and batch size?
+* A join between two large partitioned tables performs poorly because their partitioning schemes differ. How would you optimize the join?
+* A query filters on a function applied to the partition key and no longer prunes partitions efficiently. How would you rewrite the query?
+* A production database experiences lock contention during partition maintenance. How would you minimize disruption to active transactions?
+* A business requires customer-specific queries and date-range reports on the same transaction table. How would you choose a partition key and indexing strategy?
+* A partitioned table performs well for recent data but poorly for older partitions. How would you investigate statistics, indexes, and data distribution?
+* A deployment adds a new partition boundary incorrectly, causing inserts near month-end to fail. How would you diagnose and correct the partition definition?
+* A database administrator wants to partition every large table to improve performance. How would you evaluate whether partitioning is justified for each workload?
+* A table is partitioned by year, but most queries access a single month. How would you determine whether finer-grained partitions would help?
+* A high-volume event table uses hash partitioning, but date-based archival becomes difficult. How would you redesign the strategy to support both workload and retention requirements?
+* A table partitioned by region experiences uneven load because one region generates most transactions. How would you reduce the imbalance?
+* A Java service starts timing out after a partitioning change, although individual queries appear correct. How would you investigate execution plans, metadata, and connection-pool behavior?
+* A large table must be migrated to partitioning without losing writes from concurrent application requests. How would you plan data synchronization, cutover, and rollback?
+* A reporting workload needs to aggregate data across all partitions, causing high resource consumption. How would you improve reporting without degrading transactional traffic?
+* A partitioned table has thousands of partitions, and metadata operations become expensive. How would you determine an appropriate partition granularity?
+* A database upgrade changes partition-pruning behavior and increases query latency. How would you compare execution plans and validate the new configuration?
+* A partitioning design improves reads but increases write overhead because every partition has multiple indexes. How would you optimize the trade-off?
+* A financial application needs to archive old transactions while preserving auditability and referential integrity. How would you design the partition lifecycle?
+* How would you investigate a production incident involving partition skew, inefficient pruning, slow bulk inserts, and increased database CPU usage?

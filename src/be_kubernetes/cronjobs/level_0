@@ -1,0 +1,30 @@
+* What is a CronJob in Kubernetes?
+* Why are CronJobs used in Kubernetes?
+* What is the difference between a Job and a CronJob?
+* What is the role of a Job in Kubernetes?
+* How does a Kubernetes CronJob work?
+* What is the purpose of the schedule field in a CronJob?
+* What is the syntax used to define a CronJob schedule?
+* What does the asterisk (*) mean in a CronJob schedule?
+* How do you schedule a CronJob to run every minute?
+* How do you schedule a CronJob to run every hour?
+* How do you schedule a CronJob to run daily at midnight?
+* How do you schedule a CronJob to run every Sunday?
+* What is the purpose of the timeZone field in a CronJob?
+* What is the role of the concurrencyPolicy field?
+* What is the difference between Allow, Forbid, and Replace concurrency policies?
+* What is the purpose of startingDeadlineSeconds?
+* What is the purpose of successfulJobsHistoryLimit?
+* What is the purpose of failedJobsHistoryLimit?
+* What is the purpose of suspend in a CronJob?
+* What is the difference between a CronJob and a Linux cron task?
+* Can a CronJob execute a Spring Boot application?
+* Can a CronJob run a shell script inside a container?
+* How do you create a CronJob using a YAML manifest?
+* How do you list CronJobs in a Kubernetes namespace?
+* How do you check the execution history of a CronJob?
+* How do you manually trigger a Job from an existing CronJob?
+* What happens when a CronJob execution fails?
+* Does Kubernetes guarantee that a CronJob runs exactly once?
+* How do you delete a CronJob?
+* What are common use cases for Kubernetes CronJobs?

@@ -1,0 +1,36 @@
+* How would you design a highly available Kubernetes control plane across multiple availability zones?
+* How would you troubleshoot API Server latency caused by high request volume or admission webhook delays?
+* How would you recover a Kubernetes cluster when etcd becomes unavailable or its data becomes corrupted?
+* How would you safely perform an etcd backup and restore while minimizing cluster downtime?
+* How would you investigate a Scheduler bottleneck when many Pods remain Pending despite available cluster capacity?
+* How would you diagnose a controller reconciliation loop that repeatedly fails and generates excessive API requests?
+* How would you design node pools with taints, tolerations, affinity, and topology spread constraints for different workloads?
+* How would you investigate Pods that remain Pending because of resource constraints, affinity rules, volume attachment issues, or quota limits?
+* How would you perform a zero-downtime Deployment rollout when new Pods take several minutes to become ready?
+* How would you prevent a Deployment rollout from exhausting cluster capacity or violating application availability requirements?
+* How would you manage StatefulSet upgrades when Pods depend on stable identities, persistent storage, and ordered startup?
+* How would you design a highly available application that requires persistent storage across node failures and availability-zone outages?
+* How would you troubleshoot a PersistentVolumeClaim that remains Pending despite a valid StorageClass?
+* How would you design storage provisioning, reclaim policies, snapshots, and recovery for stateful production workloads?
+* How would you diagnose a Kubernetes Service that has no endpoints even though its Pods are running?
+* How would you troubleshoot intermittent HTTP 502 and 504 errors across Ingress, Service, and application layers?
+* How would you design secure east-west traffic policies for hundreds of microservices using NetworkPolicies?
+* How would you implement default-deny NetworkPolicies without disrupting DNS, monitoring, and required service communication?
+* How would you secure Kubernetes Secrets using encryption at rest, least-privilege RBAC, and an external secrets manager?
+* How would you design RBAC for developers, operators, CI/CD service accounts, and security administrators across multiple namespaces?
+* How would you prevent privilege escalation through overly permissive Roles, ClusterRoles, or service account permissions?
+* How would you design admission policies that prevent privileged containers, unsigned images, and containers running as root?
+* How would you investigate a container that is repeatedly OOMKilled even though its configured memory limit appears sufficient?
+* How would you tune HPA behavior when application traffic changes rapidly and replica counts oscillate?
+* How would you configure autoscaling when CPU utilization does not accurately represent application demand?
+* How would you coordinate HPA, VPA, and Cluster Autoscaler without creating conflicting scaling decisions?
+* How would you diagnose a Cluster Autoscaler that cannot scale up even though application Pods remain Pending?
+* How would you optimize cluster utilization while preventing noisy-neighbor issues and maintaining workload reliability?
+* How would you design Helm charts for multiple environments without duplicating large amounts of configuration?
+* How would you manage Helm release failures when a chart upgrade changes immutable fields or breaks backward compatibility?
+* How would you design an Operator using a CRD and reconciliation loop to manage a stateful distributed application?
+* How would you prevent an incorrectly implemented Operator from causing endless reconciliation or excessive API Server load?
+* How would you safely upgrade CRDs when existing custom resources must remain compatible with older controller versions?
+* How would you implement multi-cluster service discovery, traffic routing, and failover across regions?
+* How would you design disaster recovery for Kubernetes workloads, including cluster configuration, persistent data, secrets, and DNS failover?
+* How would you enforce consistent security policies, observability, and deployment governance across multiple Kubernetes clusters?

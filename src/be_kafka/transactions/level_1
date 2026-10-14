@@ -1,0 +1,30 @@
+* How do you configure a transactional Kafka producer in Java?
+* How do you implement a transaction using KafkaProducer APIs?
+* Why must a transactional producer call initTransactions() before beginning transactions?
+* Why must each active transactional producer instance have a unique transactional.id?
+* What happens if two active producers use the same transactional.id?
+* How do you configure a Kafka consumer to read only committed records?
+* How do you implement transactional message publishing in Spring Kafka?
+* What is the purpose of KafkaTransactionManager in Spring Kafka?
+* How do you configure a Kafka transaction manager with a ProducerFactory?
+* What is the difference between a local Kafka transaction and a database transaction?
+* How does Kafka handle records written by an aborted transaction?
+* How does the Last Stable Offset affect read_committed consumers?
+* What is the role of the high watermark in Kafka transactions?
+* How does Kafka determine whether a transaction has committed or aborted?
+* What happens if commitTransaction() times out?
+* How should an application handle exceptions during a transaction?
+* What is the difference between aborting a transaction and retrying a message?
+* How do transactions interact with producer retries?
+* How do idempotence and transactions work together?
+* How can a Kafka consumer process records and publish results transactionally?
+* How do you implement consume-transform-produce processing with Kafka transactions?
+* What is the purpose of sendOffsetsToTransaction()?
+* How can consumed offsets be committed atomically with produced records?
+* What is the difference between manually committing offsets and transactional offset commits?
+* How do Kafka transactions behave when a consumer group rebalances?
+* What is the purpose of transaction.timeout.ms?
+* How do max.block.ms and delivery.timeout.ms affect transactional producers?
+* How do you configure transaction support in a Spring Boot application?
+* How do you test Kafka transaction commit and rollback behavior?
+* What are common causes of Kafka transaction timeout errors?

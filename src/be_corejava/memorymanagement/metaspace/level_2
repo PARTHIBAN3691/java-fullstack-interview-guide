@@ -1,0 +1,21 @@
+
+* Explain how HotSpot manages Metaspace using chunks, arenas, and class-loader-associated allocation structures.
+* What is the role of class-loader data structures in Metaspace allocation and reclamation?
+* How does class unloading reclaim Metaspace, and what conditions prevent unloading?
+* How does class-loader reachability influence the reclamation of class metadata?
+* What is the relationship between Metaspace garbage collection thresholds and garbage collection cycles?
+* How does the JVM decide when to trigger garbage collection in response to Metaspace pressure?
+* Why can increasing `-XX:MaxMetaspaceSize` delay a failure without fixing the underlying problem?
+* How would you distinguish a Metaspace leak from legitimate growth caused by dynamic class generation?
+* How can a Java agent that repeatedly transforms or generates classes cause Metaspace growth?
+* How can thread context class loaders contribute to class-loader leaks?
+* How can application-server redeployment lead to class-loader retention?
+* How would you analyze class-loader statistics to identify which loaders are responsible for Metaspace growth?
+* What information can `jcmd VM.classloader_stats` provide during a Metaspace investigation?
+* How can `jcmd GC.class_stats` help investigate class metadata usage when supported by the JVM?
+* How would you use class-loading and class-unloading logs to investigate a suspected Metaspace leak?
+* How does compressed class space differ from the broader Metaspace allocation area?
+* What happens when compressed class space is exhausted while other native memory remains available?
+* How can container memory limits affect an application with high Metaspace usage?
+* How would you distinguish `OutOfMemoryError: Metaspace` from `OutOfMemoryError: Compressed class space`?
+* How would you design a production-safe diagnostic strategy for a Metaspace leak that appears only after several days?

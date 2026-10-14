@@ -1,0 +1,30 @@
+* How would you create a Docker Compose configuration for a Spring Boot application and a PostgreSQL database?
+* How do you build a Java application image directly from a Dockerfile using Docker Compose?
+* How would you configure different Spring profiles using Docker Compose?
+* How do you pass database credentials and connection URLs through environment variables?
+* How would you configure a named volume to persist PostgreSQL data?
+* How would you configure a custom bridge network for multiple application services?
+* How do you connect a Spring Boot service to PostgreSQL using the Compose service name?
+* How would you add Redis to an existing Spring Boot Docker Compose environment?
+* How would you configure a health check for a PostgreSQL service?
+* How would you ensure that a Spring Boot application waits until PostgreSQL is ready?
+* What is the difference between depends_on with service_started and service_healthy conditions?
+* How would you configure restart policies for application and database services?
+* How do you rebuild and recreate only one service in a Compose application?
+* How would you view logs for one service and follow them continuously?
+* How do you run a one-time database migration using Docker Compose?
+* How would you configure separate development and production Compose files?
+* How do you override service configuration using multiple Compose files?
+* How would you use profiles to start optional services such as monitoring tools?
+* How do you scale a stateless application service using Docker Compose?
+* What limitations does container_name introduce when scaling a service?
+* How would you configure an Nginx reverse proxy in front of multiple application services?
+* How do you prevent a database port from being exposed to the host unnecessarily?
+* How would you manage application configuration using an environment file?
+* What is the difference between interpolation in Compose files and environment variables inside containers?
+* How would you debug a service that exits immediately after docker compose up?
+* How do you inspect the resolved Compose configuration before starting containers?
+* How would you remove unused Compose resources without deleting important database data?
+* How would you configure resource limits for services in a Compose deployment?
+* How do you configure a service to use a prebuilt image from a private container registry?
+* What are the best practices for organizing a Compose file for a multi-service Java application?

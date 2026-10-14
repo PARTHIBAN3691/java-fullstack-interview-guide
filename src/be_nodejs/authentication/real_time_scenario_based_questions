@@ -1,0 +1,30 @@
+* Users are randomly logged out after your Node.js application scales to multiple instances. How would you investigate the issue?
+* A user can access protected APIs even after their JWT has expired. What could be wrong, and how would you fix it?
+* A stolen access token is being used by an attacker until it expires. How would you reduce the impact?
+* Users experience authentication failures immediately after JWT signing keys are rotated. How would you troubleshoot the problem?
+* Your refresh-token endpoint issues multiple valid refresh tokens for the same session. How would you prevent token reuse and race conditions?
+* A user logs out, but their access token continues to work. How would you implement effective token revocation?
+* Your application stores JWTs in localStorage. A security review identifies this as a risk. How would you redesign token storage?
+* An attacker repeatedly submits login requests using leaked username and password combinations. How would you protect the application?
+* Your login API reveals whether a username exists through different error messages and response times. How would you address this?
+* A password-reset link is reused several times after a successful password change. How would you prevent this?
+* A user changes their password, but previously issued refresh tokens remain usable. How would you invalidate existing sessions?
+* Your OAuth login flow sometimes logs users into the wrong account after redirects. What would you investigate?
+* An attacker manipulates the redirect URI during OAuth authentication. How would you prevent the attack?
+* A malicious website triggers authenticated requests using a victim's browser cookies. How would you protect against CSRF?
+* A cross-site scripting vulnerability exposes authentication credentials. How would you reduce the damage and prevent recurrence?
+* Users are unable to authenticate after the Redis session store becomes unavailable. How would you design resilient session handling?
+* An application uses multiple identity providers, and user identities do not map consistently across them. How would you solve the problem?
+* A JWT contains an administrator role, but the user has since been demoted. How would you prevent stale privileges from being accepted?
+* A microservice accepts a JWT issued for a different audience. How would you correct the token-validation process?
+* A Node.js API must authenticate requests from both browser users and machine-to-machine clients. How would you design the authentication flows?
+* A payment API requires stronger verification for high-value transactions. How would you implement step-up authentication?
+* An attacker steals a refresh token and uses it after the legitimate user has refreshed their session. How would reuse detection work?
+* A multi-tenant application accidentally accepts a valid token belonging to another tenant. How would you prevent cross-tenant access?
+* Your identity provider becomes unavailable during peak traffic. How should existing sessions and new login attempts behave?
+* Users report repeated MFA challenges on every login. How would you investigate device recognition and session policies?
+* A WebSocket connection remains active after the user's authentication session expires. How would you enforce reauthentication or disconnection?
+* Your authentication logs contain passwords or bearer tokens. How would you contain the exposure and improve logging practices?
+* A service-to-service API accepts requests from an unauthenticated internal application. How would you secure internal communication?
+* Your application must support enterprise SSO for multiple customers with different identity providers. How would you design tenant-specific configuration?
+* You need to migrate from custom JWT authentication to a centralized identity provider without disrupting active users. How would you plan the migration?

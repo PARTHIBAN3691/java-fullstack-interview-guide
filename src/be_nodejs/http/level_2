@@ -1,0 +1,30 @@
+* Explain how Node.js processes HTTP requests internally using the event loop and libuv.
+* How does Node.js handle multiple concurrent HTTP connections?
+* How does HTTP request processing differ between Node.js and a traditional thread-per-request server?
+* What is the difference between HTTP/1.1, HTTP/2, and HTTP/3?
+* How does HTTP/2 multiplexing improve performance compared with HTTP/1.1?
+* How does Node.js support HTTP/2 using the built-in http2 module?
+* What is the difference between HTTP pipelining and HTTP/2 multiplexing?
+* How does connection pooling work in Node.js HTTP clients?
+* How would you tune HTTP Agent settings for a high-throughput application?
+* How do keep-alive connections affect latency and resource consumption?
+* How would you prevent slow clients from exhausting server resources?
+* How do request timeouts, header timeouts, and socket timeouts differ?
+* How would you implement request cancellation using AbortController?
+* How do you handle backpressure when streaming HTTP request and response bodies?
+* How would you implement a reverse proxy using Node.js HTTP primitives?
+* How would you implement a custom HTTP router without Express.js?
+* How do you prevent HTTP request smuggling in a Node.js application?
+* How would you defend against oversized request bodies and slow HTTP attacks?
+* How do you implement secure HTTPS communication and certificate validation?
+* How do TLS handshakes and certificate verification affect HTTP connection performance?
+* How would you implement mutual TLS authentication for service-to-service communication?
+* How do caching headers such as Cache-Control, ETag, and Last-Modified work?
+* How would you implement conditional HTTP requests using ETag and If-None-Match?
+* How do HTTP compression and content negotiation work?
+* How would you implement retries without causing duplicate side effects?
+* How do you propagate trace IDs and correlation IDs across HTTP service calls?
+* How would you implement graceful shutdown while preserving active HTTP connections?
+* How would you diagnose high socket usage, connection resets, and HTTP latency in production?
+* How would you design a resilient HTTP client with timeouts, retries, and circuit breakers?
+* How would you benchmark and optimize a Node.js HTTP server under high concurrency?

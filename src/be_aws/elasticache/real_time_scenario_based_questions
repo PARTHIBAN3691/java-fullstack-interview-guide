@@ -1,0 +1,21 @@
+
+* A Spring Boot API takes two seconds to fetch frequently requested product details from a database. How would you use ElastiCache to reduce response time?
+* Your application has a high cache hit rate, but database CPU utilization continues to increase. How would you investigate the remaining database load?
+* Thousands of requests arrive when a popular product's cache entry expires. How would you prevent a cache stampede?
+* Users continue seeing outdated account information after a successful database update. How would you investigate and correct the cache invalidation logic?
+* Redis memory usage reaches its limit, and important cache entries are being evicted. How would you identify the cause and choose a suitable remediation?
+* A Java application experiences intermittent Redis connection timeouts during peak traffic. How would you investigate connection pooling, network configuration, and server-side resource usage?
+* ElastiCache performs an automatic failover, and the application experiences a burst of errors. How would you improve connection handling, retries, and resilience?
+* Multiple application instances need to enforce a limit of 100 API requests per customer per minute. How would you implement a distributed rate limiter?
+* Two services update the same cached customer profile concurrently, causing lost updates. How would you address the race condition?
+* A distributed lock expires while the process holding it is still running. How would you prevent the process from overwriting newer data?
+* Your application uses Redis to store user sessions, but users are randomly logged out during deployments. How would you investigate session TTL, serialization, failover, and cache configuration?
+* A payment API sometimes processes the same request twice because clients retry after timeouts. How would you use Redis-based idempotency safely?
+* ElastiCache CPU utilization is low, but application latency is high. Which network, connection, command, and key-level metrics would you investigate?
+* Your team needs to cache database query results across multiple microservices. How would you choose cache keys, TTLs, ownership, and invalidation mechanisms?
+* A cache outage causes a sudden surge in database traffic and threatens production availability. How would you implement a fallback strategy and protect the database?
+* Your application caches large Java objects, causing excessive network traffic and serialization overhead. How would you optimize the data representation?
+* A Redis cluster experiences uneven traffic because one key receives most requests. How would you diagnose and mitigate the hot-key problem?
+* A company needs to cache frequently accessed configuration data that changes occasionally. How would you balance freshness, availability, and database load?
+* You need to migrate from a self-managed Redis cluster to Amazon ElastiCache with minimal downtime. How would you plan replication, validation, cutover, and rollback?
+* Management wants to reduce database costs while preserving application response times. How would you measure whether ElastiCache is delivering the expected performance and cost benefits?

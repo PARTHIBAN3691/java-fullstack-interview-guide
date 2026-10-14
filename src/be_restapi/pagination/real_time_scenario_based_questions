@@ -1,0 +1,30 @@
+* A REST API returns 100,000 records in one response and frequently runs out of memory. How would you introduce pagination?
+* An API becomes progressively slower when clients request page numbers near 100,000. How would you investigate and improve performance?
+* Users report duplicate records across consecutive pages. What could cause this, and how would you fix it?
+* Records are missing when users navigate through pages while new records are being inserted. How would you address the issue?
+* A paginated endpoint returns different records for the same page across repeated requests. What could be causing this behavior?
+* An API sorts records by creation date, but many records share the same timestamp. How would you make pagination deterministic?
+* A Spring Boot endpoint uses Page and generates a very expensive COUNT query. How would you optimize it?
+* A mobile application needs only to know whether more records exist. Would you use Page, Slice, or cursor pagination, and why?
+* A client requests a page size of one million and overloads the database. How would you protect the API?
+* A user requests page number -1 and receives HTTP 500. How would you correct the validation and error handling?
+* An API returns an empty page when the requested page is beyond the available results. What response behavior would you recommend?
+* A frontend expects one-based page numbers, but the backend uses zero-based page numbering. How would you handle the mismatch?
+* A cursor-based API skips records when multiple records share the same timestamp. How would you redesign the cursor?
+* A client modifies a cursor to retrieve records belonging to another tenant. How would you secure cursor handling?
+* A cursor becomes invalid after a deployment changes the query or cursor format. How would you support compatibility and versioning?
+* An API uses offset pagination with a database query that scans millions of rows. How would you redesign the query?
+* A reporting API requires an accurate total count, but counting records takes longer than fetching the page. What alternatives would you consider?
+* A REST endpoint joins several one-to-many tables and returns duplicate parent entities across pages. How would you redesign the query?
+* A paginated API returns duplicate parent records because database joins multiply rows. How would you fix the pagination strategy?
+* A customer directory supports filtering, sorting, and pagination. How would you validate and combine these parameters safely?
+* A client changes its sorting criteria while continuing to use an existing cursor. How should the API respond?
+* A search endpoint uses relevance-based sorting, but documents change scores between page requests. How would you reduce missing or duplicate results?
+* A microservice aggregates paginated results from three downstream APIs. How would you combine their results without returning inconsistent pages?
+* A database failover causes pagination requests to return different data ordering. What design choices could reduce this problem?
+* A public API receives repeated requests for the same expensive pages. How would you introduce caching without serving incorrect results?
+* A user exports a large dataset through a paginated API, but records change during the export. How would you ensure reliable results?
+* A cursor expires while a client is navigating a large result set. How should the API and client recover?
+* A client needs both next-page and previous-page navigation using cursor pagination. How would you implement this?
+* Production metrics show that most API latency comes from deep pagination and count queries. How would you prioritize improvements?
+* Your team needs to migrate an existing page-and-size API to cursor pagination without breaking current consumers. How would you plan the migration?

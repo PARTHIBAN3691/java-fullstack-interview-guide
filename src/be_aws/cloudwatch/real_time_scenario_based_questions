@@ -1,0 +1,21 @@
+
+* A Java Spring Boot application running on EC2 experiences a sudden increase in response time. How would you use CloudWatch to identify the root cause?
+* Your production application has intermittent HTTP 500 errors, but EC2 CPU utilization remains normal. How would you investigate the issue?
+* A CloudWatch alarm shows high CPU utilization, but the application appears healthy. How would you validate the alarm and decide what action to take?
+* Your Spring Boot application logs are available locally but are missing from CloudWatch. How would you troubleshoot the log delivery pipeline?
+* A microservices application produces too many logs, resulting in unexpectedly high CloudWatch costs. How would you reduce the cost without losing essential diagnostic information?
+* A CloudWatch alarm fails to send an SNS notification during a production incident. How would you investigate the failure?
+* Your team needs a dashboard showing request count, error rate, and latency for each microservice. How would you design it?
+* An EC2 instance has low CPU utilization but is running out of memory. How would you detect and alert on the issue?
+* A Java application running in ECS or EKS restarts frequently. Which CloudWatch metrics and logs would you inspect?
+* Your Lambda function experiences occasional timeouts. How would you use CloudWatch logs, metrics, and alarms to diagnose the problem?
+* A deployment introduces a significant increase in application errors. How would you use CloudWatch to compare the behavior before and after deployment?
+* A business team wants an alert whenever payment failures exceed a defined threshold within five minutes. How would you implement it?
+* Your application processes messages from Amazon SQS, and the queue backlog keeps growing. Which CloudWatch metrics would you monitor?
+* Logs from multiple AWS accounts need to be searchable from a central operations account. How would you implement centralized observability?
+* Your CloudWatch alarm repeatedly triggers during normal traffic spikes. How would you tune the alarm to avoid unnecessary alerts?
+* A service becomes unavailable even though its EC2 instance and CPU metrics look normal. How would you detect the failure using synthetic monitoring or application-level metrics?
+* Your application emits sensitive customer data in logs. How would you address the issue and prevent further exposure?
+* A production incident occurs, but the required metrics are missing because custom metrics were never configured. How would you improve the monitoring strategy?
+* Your team needs to retain application logs for one year while keeping monitoring costs under control. How would you design the retention and archival strategy?
+* After migrating a Java monolith to microservices, troubleshooting becomes difficult because logs are distributed across many services. How would you improve observability using CloudWatch?

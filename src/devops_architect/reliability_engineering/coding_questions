@@ -1,0 +1,100 @@
+
+**Availability and Reliability**
+* Write a Java program to calculate service availability from total observation time and downtime intervals.
+* Implement a utility that calculates the percentage of successful requests over a rolling time window.
+* Write a program to calculate end-to-end availability for services arranged in series and parallel, given their individual availability values.
+* Implement a sliding-window error-rate calculator for an API.
+* Design a Java component that records service failures and recovery times to calculate mean time to recovery (MTTR).
+
+**Resilience and Fault Tolerance**
+* Implement a Java service wrapper that returns a fallback response when a downstream dependency fails.
+* Write a fault-tolerant event processor that handles transient exceptions without losing accepted events.
+* Implement an idempotent request handler that prevents duplicate order creation.
+* Design a Java component that tracks failed operations and allows safe recovery after a process restart.
+* Implement a health-status aggregator that determines whether a service is healthy, degraded, or unavailable based on dependency health.
+
+**High Availability and Disaster Recovery**
+* Implement a Java client that switches between primary and secondary service endpoints when the primary becomes unavailable.
+* Write a health-check mechanism that removes unhealthy instances from a list of eligible endpoints.
+* Implement a recovery-point calculator using timestamped database checkpoints and transaction logs.
+* Design a Java utility that verifies backup metadata and checks whether a backup satisfies a specified RPO.
+* Write a failover coordinator that prevents multiple application instances from simultaneously promoting themselves as the primary node.
+
+**Failure Domains and Fault Isolation**
+* Implement a Java task executor with separate thread pools for independent downstream services.
+* Write a tenant-aware request limiter that prevents one tenant from consuming the entire service capacity.
+* Implement a resource-allocation mechanism that reserves a minimum number of worker threads for critical operations.
+* Design a Java component that groups service instances by failure domain and selects instances from distinct domains.
+* Write a fault-isolation mechanism that disables requests to one failing dependency without affecting unrelated dependencies.
+
+**Graceful Degradation**
+* Implement a product-search service that returns core product data when the recommendation service is unavailable.
+* Write a Java fallback mechanism that serves cached data when a downstream API times out.
+* Design a feature-priority mechanism that disables non-essential functionality when system resource utilization crosses configured thresholds.
+* Implement a response aggregator that returns successful results from available services and identifies failed components.
+* Write a fallback policy that distinguishes safe stale data from data that must always be fetched fresh.
+
+**Backpressure**
+* Implement a bounded producer-consumer queue using Java concurrency utilities.
+* Write a message-processing pipeline that blocks, slows, or rejects producers when consumers cannot keep up.
+* Implement a queue-depth monitor that triggers alerts when backlog crosses configurable thresholds.
+* Design a Java worker pool that limits concurrent tasks and rejects submissions when capacity is exhausted.
+* Write a consumer that pauses message intake when downstream processing exceeds a latency threshold and resumes after recovery.
+
+**Load Shedding**
+* Implement a Java request-admission controller that rejects excess requests after a configured concurrency limit is reached.
+* Write a priority-based load-shedding mechanism that preserves critical requests and rejects lower-priority work first.
+* Implement a token-bucket rate limiter for an API gateway.
+* Design a per-tenant rate limiter with independent quotas and configurable burst capacity.
+* Write a load-shedding component that considers queue depth, response latency, and active-request count before admitting work.
+
+**Circuit Breakers**
+* Implement a circuit breaker in Java with closed, open, and half-open states.
+* Add configurable failure thresholds, an open-state wait duration, and a limited number of recovery probes.
+* Extend a circuit breaker to consider slow calls as well as failed calls.
+* Implement a thread-safe circuit breaker that behaves correctly when multiple threads invoke it concurrently.
+* Write unit tests for circuit-breaker state transitions, concurrent calls, and recovery after a dependency becomes healthy.
+* Implement a circuit-breaker metrics component that records state changes, rejected calls, and failed requests.
+
+**Bulkheads**
+* Implement a bulkhead using a bounded thread pool for calls to an external service.
+* Implement a semaphore-based bulkhead that limits the number of concurrent calls.
+* Design a bulkhead with independent concurrency limits for payment, inventory, and notification services.
+* Write a Java component that rejects excess work when a bulkhead is full and releases permits reliably after exceptions or timeouts.
+* Implement tests proving that exhaustion of one resource pool does not affect another pool.
+
+**Retry Policies and Timeout Strategies**
+* Implement an exponential-backoff retry mechanism with configurable maximum attempts and maximum delay.
+* Extend the retry mechanism to add randomized jitter and avoid synchronized retry storms.
+* Write a retry policy that retries only explicitly configured transient exceptions and HTTP status codes.
+* Implement a deadline-aware service client that stops attempting work after the end-to-end request deadline.
+* Design a retry mechanism with a shared retry budget to limit additional traffic during failures.
+* Implement an idempotency-key mechanism for safely retrying payment or order-creation requests.
+* Write tests for retry exhaustion, interruption, timeout handling, and cancellation.
+* Implement a Java wrapper that distinguishes connection timeout, response timeout, and overall request deadline.
+
+**Chaos Engineering**
+* Write a Java fault-injection wrapper that can simulate latency, exceptions, and intermittent dependency failures in a test environment.
+* Implement a configurable dependency simulator that produces failures at a specified probability.
+* Write an automated resilience test that verifies an API continues operating when a non-critical dependency becomes unavailable.
+* Implement a test harness that measures recovery time after a simulated service outage.
+* Design a chaos experiment that injects failures into one service instance while verifying that healthy instances continue serving requests.
+* Write assertions that verify circuit breakers, retries, and fallbacks behave correctly under injected failures.
+
+**Error Budgets**
+* Implement a Java error-budget calculator based on the SLO target, total eligible requests, and failed requests.
+* Write a rolling-window calculator that determines the remaining error budget over a configured measurement period.
+* Implement a burn-rate calculator that compares the observed error rate with the allowed error rate.
+* Design an alert evaluator that detects fast and slow error-budget consumption.
+* Write a release-gating component that allows or blocks deployments based on error-budget policy.
+* Implement unit tests for error-budget calculations involving zero traffic, boundary values, and changing SLO targets.
+
+**Integrated Reliability Engineering Challenges**
+* Design and implement a resilient Java REST client combining timeouts, bounded retries, exponential backoff, jitter, a circuit breaker, and a fallback.
+* Build a simulated microservices workflow with order, payment, and inventory services; inject failures and prevent duplicate transactions.
+* Implement an overload-protection layer combining admission control, a bounded queue, bulkheads, and load shedding.
+* Build a reliability test harness that injects latency and failures, then reports availability, error rate, p95/p99 latency, and recovery time.
+* Implement an asynchronous event-processing pipeline with bounded buffering, retry limits, dead-letter handling, idempotent consumers, and backpressure.
+* Design a multi-region failover simulation that models health checks, promotion of a standby, recovery objectives, and prevention of split-brain writes.
+* Build an SLO monitoring component that tracks request success and latency, calculates error-budget consumption, and generates burn-rate alerts.
+* Write an end-to-end test that verifies a service remains operational when one dependency slows down, another fails, and traffic rises beyond normal capacity.

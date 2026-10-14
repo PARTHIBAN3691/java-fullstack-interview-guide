@@ -1,0 +1,30 @@
+* How does TypeScript infer generic type parameters in complex function calls?
+* How do generic constraints and default type parameters work together in functions?
+* What are conditional types, and how can they be used to derive function return types?
+* How does the ReturnType utility type work with functions?
+* What is the difference between Parameters<T> and ConstructorParameters<T>?
+* How do you extract the parameter types of an overloaded function?
+* What are variadic tuple types, and how can they be used in function declarations?
+* How do you preserve argument types when writing a generic wrapper function?
+* What is the difference between overload signatures and variadic tuple-based function typing?
+* How do you type a function that accepts a variable number of strongly typed arguments?
+* What are higher-order generic functions, and how do you preserve their type parameters?
+* How can you type a function pipeline while preserving intermediate return types?
+* What is the difference between covariance and contravariance in function types?
+* How does strictFunctionTypes affect function parameter compatibility?
+* Why can function parameter variance cause type-safety issues?
+* How does TypeScript determine compatibility between overloaded function types?
+* What are distributive conditional types, and how can they affect function return types?
+* How can you define a function that returns different types based on its input?
+* How do mapped types and conditional types help build strongly typed utility functions?
+* How would you type a memoization function without losing the original function signature?
+* How would you create a strongly typed event handler registration function?
+* How do you preserve the this type when wrapping an existing function?
+* What are assertion functions, and how can they validate input at runtime while narrowing types?
+* How would you design a generic retry function for asynchronous operations?
+* How do you type a function that accepts either synchronous or asynchronous callbacks?
+* How would you model a function that returns a discriminated union based on its input?
+* What are the limitations of TypeScript's ability to infer types from overloaded functions?
+* How can recursive conditional types be used to transform function argument types?
+* How would you design a strongly typed middleware pipeline using higher-order functions?
+* How can you maintain type safety when composing multiple generic functions?

@@ -1,0 +1,30 @@
+* An order service calls the payment service, which takes several seconds to respond. How would you improve the communication design?
+* A downstream service becomes unavailable, causing multiple upstream services to fail. How would you prevent cascading failures?
+* A REST request times out, but the downstream service may have completed the operation. How would you handle retries safely?
+* A microservice frequently receives HTTP 429 responses from an external API. How would you handle rate limiting?
+* Two services communicate successfully in development but fail to discover each other in Kubernetes. How would you troubleshoot the issue?
+* A service registry contains unhealthy instances, causing requests to fail intermittently. How would you resolve the problem?
+* A WebClient call works for small traffic volumes but exhausts resources under high concurrency. How would you investigate?
+* A synchronous workflow requires calls to six downstream services, increasing overall latency. How would you redesign the communication flow?
+* A Kafka consumer processes messages more slowly than the producer publishes them. How would you handle growing consumer lag?
+* A message is delivered twice, resulting in duplicate order creation. How would you prevent duplicate business effects?
+* Events arrive out of order, causing a service to update its state incorrectly. How would you address ordering requirements?
+* A Kafka consumer crashes after updating the database but before acknowledging the message. How would you prevent inconsistent processing?
+* A downstream API changes a response field, breaking an older consumer. How would you prevent similar compatibility failures?
+* A service requires both low latency and reliable delivery for critical business events. How would you choose the communication mechanism?
+* A payment service needs to notify an order service without tightly coupling their availability. How would you design the interaction?
+* A microservice forwards the wrong user's access token to a downstream service. How would you correct the authentication and token propagation design?
+* Correlation IDs disappear when a REST request triggers a Kafka event and a background consumer. How would you restore end-to-end traceability?
+* A service retries failed requests indefinitely, increasing downstream load. How would you implement bounded retries and backoff?
+* An external service has a strict request-rate limit shared across multiple application instances. How would you coordinate request throttling?
+* A downstream service is healthy but receives uneven traffic across its instances. How would you investigate load balancing?
+* A large JSON response causes high CPU usage and garbage collection activity. How would you optimize payload handling?
+* A service must transfer millions of records to another service without loading everything into memory. How would you design the communication?
+* A gRPC client fails when the server certificate is rotated. How would you improve certificate management?
+* A service-to-service request succeeds through the API gateway but fails when sent directly to the service. How would you investigate routing and security?
+* A downstream service becomes slow, and the upstream request threads remain blocked while waiting. How would you protect the upstream service?
+* A deployment introduces a new API version while older service instances are still running. How would you maintain compatibility?
+* A workflow combines REST calls, Kafka events, and database updates, but the final business status becomes inconsistent. How would you diagnose and recover it?
+* Multiple services independently retry the same failed operation, creating a traffic spike during recovery. How would you coordinate retries?
+* An internal microservice is accidentally exposed publicly. What communication and network-security controls would you introduce?
+* You are designing service communication for a high-volume financial platform. How would you combine REST, asynchronous messaging, deadlines, idempotency, security, and distributed tracing?

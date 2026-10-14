@@ -1,0 +1,30 @@
+* How would you design a centralized secrets-management architecture for hundreds of Spring Boot microservices?
+* How do you design secret access policies using least privilege across multiple projects and environments?
+* How would you implement zero-downtime database credential rotation for a Java application?
+* How do you coordinate secret rotation with connection pools such as HikariCP?
+* How would you design a secret caching strategy that balances latency, cost, and rotation freshness?
+* How do you prevent stale cached credentials from causing production authentication failures?
+* How would you handle Secret Manager API rate limits in a high-throughput microservice?
+* How do you implement retries with exponential backoff without amplifying an outage?
+* How would you design graceful degradation when Secret Manager becomes temporarily unavailable?
+* What are the trade-offs between startup-time secret retrieval and runtime secret retrieval?
+* How would you prevent a compromised service account from exposing secrets across unrelated applications?
+* How do IAM Conditions and resource-level IAM policies help restrict secret access?
+* How would you implement separation of duties for secret creation, access, rotation, and destruction?
+* How do you audit secret access and investigate suspicious access patterns?
+* How would you detect unusual secret access using Cloud Audit Logs and Cloud Monitoring?
+* How do you manage secrets across multiple regions while meeting availability and data-residency requirements?
+* What are the trade-offs between automatic and user-managed secret replication?
+* How would you design a disaster-recovery strategy for critical secrets?
+* How do you manage secret version lifecycle policies and prevent accidental destruction?
+* How would you safely roll back to a previous secret version after a failed rotation?
+* How do you prevent secrets from leaking through exception messages, heap dumps, tracing, and diagnostics?
+* How would you secure Secret Manager access from workloads running outside Google Cloud?
+* What are the security implications of using service account keys instead of workload identity or Application Default Credentials?
+* How would you design a multi-tenant application that accesses tenant-specific secrets?
+* How do you prevent a confused-deputy problem in a centralized secrets service?
+* How would you implement secret rotation automation using Cloud Scheduler, Cloud Run, and Secret Manager?
+* How would you design idempotent secret rotation workflows that can recover after partial failure?
+* How do you manage secret dependencies when rotating credentials for several interconnected services?
+* How would you optimize Secret Manager costs without weakening security or rotation requirements?
+* How would you validate the security and resilience of a Secret Manager integration before production release?

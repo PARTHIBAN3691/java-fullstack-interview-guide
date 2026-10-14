@@ -1,0 +1,30 @@
+* How would you design a highly available API Gateway for a large enterprise microservices platform?
+* How do you prevent the API Gateway from becoming a single point of failure?
+* How do you scale an API Gateway to support high request throughput and low latency?
+* How do you choose between a managed API Gateway and a self-hosted Spring Cloud Gateway?
+* How do you design gateway routing for hundreds of independently deployed microservices?
+* How do you manage route configuration dynamically without restarting gateway instances?
+* How do you design centralized authentication and authorization without creating a security bottleneck?
+* How do you validate JWTs efficiently while supporting key rotation and token revocation requirements?
+* How do you prevent distributed rate limiting from becoming inconsistent across gateway instances?
+* How do you design rate limits for individual users, API keys, tenants, and IP addresses?
+* How do you handle cascading failures when multiple downstream services become unavailable?
+* How do you choose timeout, retry, and circuit-breaker settings for different types of APIs?
+* How do you prevent retry storms and excessive load on recovering services?
+* How do you implement tenant-aware routing in a multi-tenant application?
+* How do you enforce API quotas and usage policies for external consumers?
+* How do you support canary releases and blue-green deployments through the gateway?
+* How do you design backward-compatible API versioning across multiple microservices?
+* How do you ensure end-to-end traceability across gateway, service mesh, and backend services?
+* How do you optimize gateway memory usage and connection management under heavy traffic?
+* How do you troubleshoot event-loop blocking in Spring Cloud Gateway?
+* How do you prevent blocking database or HTTP calls from degrading a reactive gateway?
+* How do you design secure communication between the gateway and internal services using mTLS?
+* How do you defend the gateway against DDoS attacks, request smuggling, and malicious payloads?
+* How do you handle large file uploads and streaming responses through an API Gateway?
+* How do you design a gateway strategy for REST, gRPC, and WebSocket traffic?
+* How do you manage secrets, certificates, and signing keys securely across gateway instances?
+* How do you implement graceful shutdown and connection draining during gateway deployments?
+* How do you design observability and alerting for gateway latency, errors, and saturation?
+* How do you avoid duplicating business logic between the gateway and downstream services?
+* How do you evaluate the trade-offs between an API Gateway, a service mesh, and a backend-for-frontend architecture?

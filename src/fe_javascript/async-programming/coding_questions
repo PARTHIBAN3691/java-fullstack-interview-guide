@@ -1,0 +1,30 @@
+* Write a JavaScript program using setTimeout() to print a message after two seconds.
+* Write a program that demonstrates the execution order of synchronous code and setTimeout().
+* Write a program that demonstrates the execution order of synchronous code, Promise callbacks, and timer callbacks.
+* Write a callback-based function that reads simulated data and executes a callback when complete.
+* Convert a callback-based asynchronous function into a Promise-based function.
+* Write a program that chains three Promises sequentially.
+* Write a program that handles Promise rejection using catch().
+* Write a program that uses finally() to perform cleanup after a Promise settles.
+* Write a program that executes three asynchronous operations using Promise.all().
+* Write a program that collects both successful and failed results using Promise.allSettled().
+* Write a program that returns the first settled result using Promise.race().
+* Write a program that returns the first fulfilled result using Promise.any().
+* Implement a Promise-based delay function.
+* Implement a function that adds a timeout to a Promise.
+* Implement a function that retries an asynchronous operation up to three times.
+* Implement exponential backoff for retrying a failed API request.
+* Write a function that fetches data using fetch() and handles HTTP errors correctly.
+* Write a program that executes asynchronous tasks sequentially using async callbacks or Promises.
+* Write a program that executes multiple asynchronous tasks concurrently.
+* Implement a concurrency limiter that allows only three asynchronous tasks to run at once.
+* Implement a Promise pool that processes an array of tasks with a configurable concurrency limit.
+* Implement a function that cancels a fetch request using AbortController.
+* Write a program that debounces an asynchronous search request.
+* Implement request deduplication so concurrent calls with the same key share one Promise.
+* Write a program that prevents stale API responses from updating the UI.
+* Implement a function that runs a task repeatedly without overlapping executions.
+* Write a program that processes an array of records asynchronously while continuing after individual failures.
+* Implement a simple asynchronous task queue.
+* Write a program that uses queueMicrotask() and setTimeout() to demonstrate their execution order.
+* Implement a function that fetches data from multiple APIs, applies a timeout, retries failures, and returns successful results with error details for failed requests.

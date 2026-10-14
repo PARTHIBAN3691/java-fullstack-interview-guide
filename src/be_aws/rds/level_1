@@ -1,0 +1,20 @@
+* Explain the architecture of Amazon RDS in a production environment.
+* How do you configure a Spring Boot application to connect to an RDS MySQL or PostgreSQL database?
+* What is the difference between a JDBC URL for a local database and an RDS database?
+* How do you configure database credentials securely using AWS Secrets Manager or Systems Manager Parameter Store?
+* What is the difference between RDS Multi-AZ DB instance deployments and Multi-AZ DB clusters?
+* How does automatic failover work in an RDS Multi-AZ deployment?
+* How do read replicas improve database read scalability?
+* What are the limitations of read replicas compared with Multi-AZ deployments?
+* How do you configure an RDS instance to be accessible only from application servers within a VPC?
+* How do security groups and network ACLs affect Java application connectivity to RDS?
+* What is the purpose of RDS Proxy?
+* How does RDS Proxy help manage database connections from AWS Lambda?
+* How would you configure HikariCP connection pooling in a Spring Boot application connecting to RDS?
+* What are the differences between connection pool size, maximum pool size, and connection timeout?
+* How do automated backups and point-in-time recovery work in Amazon RDS?
+* What is the difference between a DB snapshot and point-in-time recovery?
+* How do you monitor CPU utilization, free storage, database connections, and read/write latency in CloudWatch?
+* What is Performance Insights, and how can it help diagnose database performance issues?
+* How do you perform a database engine version upgrade with minimal downtime?
+* How can AWS Database Migration Service (DMS) be used to migrate a database into Amazon RDS?

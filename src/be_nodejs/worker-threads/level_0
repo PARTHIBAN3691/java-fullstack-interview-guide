@@ -1,0 +1,30 @@
+* What are Worker Threads in Node.js, and why are they used?
+* What problem do Worker Threads solve in Node.js applications?
+* What is the difference between the main thread and a worker thread?
+* How do you import the Worker class from the worker_threads module?
+* What is the worker_threads module in Node.js?
+* How do you create a worker thread in Node.js?
+* What is the purpose of the Worker constructor?
+* What is the difference between Worker Threads and the Event Loop?
+* Are Worker Threads suitable for CPU-intensive tasks?
+* Can Worker Threads improve the performance of I/O-intensive operations?
+* What is the difference between Worker Threads and child processes?
+* What is the difference between Worker Threads and the cluster module?
+* How do you pass data from the main thread to a worker thread?
+* How do you send data from a worker thread to the main thread?
+* What is the purpose of the postMessage() method?
+* What is the purpose of the message event in Worker Threads?
+* How do you listen for messages from a worker thread?
+* What is the purpose of the workerData property?
+* How do you access data passed through workerData?
+* What is the purpose of the parentPort object?
+* What is the difference between parentPort and workerData?
+* How do you detect when a worker thread exits?
+* What is the purpose of the exit event?
+* How do you handle errors in a worker thread?
+* What is the purpose of the error event?
+* How do you terminate a worker thread?
+* What is the purpose of the terminate() method?
+* Can multiple worker threads run simultaneously in Node.js?
+* What are the limitations of Worker Threads?
+* How do you check whether the current execution is running inside a worker thread?

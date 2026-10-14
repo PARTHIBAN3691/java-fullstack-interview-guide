@@ -1,0 +1,30 @@
+* Write a Node.js program that measures the execution time of a synchronous function.
+* Create an Express middleware that records request processing time and response status.
+* Write a program that measures CPU and memory usage using the process module.
+* Implement an asynchronous function that processes multiple independent tasks concurrently using Promise.all().
+* Modify a concurrent processing program to limit the number of tasks running at the same time.
+* Write a program that demonstrates how a synchronous CPU-intensive operation blocks the event loop.
+* Rewrite a blocking file-reading operation using asynchronous file-system APIs.
+* Create a Worker Thread that performs a CPU-intensive calculation without blocking the main thread.
+* Implement a reusable Worker Thread pool for processing multiple CPU-intensive tasks.
+* Create a Node.js application that uses the cluster module to start multiple worker processes.
+* Write a program that measures event-loop delay using the Node.js performance hooks.
+* Implement an in-memory cache with expiration times and a maximum number of entries.
+* Create a Redis cache-aside implementation for an Express API endpoint.
+* Implement request coalescing so concurrent requests for the same uncached resource share one operation.
+* Write a function that implements cursor-based pagination for a database query.
+* Create an Express endpoint that uses a database connection pool and handles connection errors safely.
+* Rewrite a program that reads an entire large file into memory using streams.
+* Implement a streaming CSV processor that maintains bounded memory usage.
+* Write a Node.js stream pipeline that handles backpressure and propagates errors.
+* Create an API endpoint that compresses responses using gzip or Brotli.
+* Write a program that benchmarks JSON serialization and parsing for different payload sizes.
+* Implement a rate limiter that restricts requests per client.
+* Create middleware that limits concurrent requests to a downstream service.
+* Write a retry mechanism with exponential backoff and jitter for transient failures.
+* Implement a circuit breaker that stops repeated calls to an unhealthy downstream service.
+* Write a program that measures the duration and success rate of outbound HTTP requests.
+* Create a script that generates a CPU profile for a Node.js application and explain how to inspect it.
+* Write a program that captures heap usage over time and reports when it exceeds a configurable threshold.
+* Create a load-testing script that measures throughput, error rate, and response-time percentiles for an API.
+* Build a performance-optimized Node.js API with caching, connection pooling, request timeouts, structured metrics, and bounded concurrency.

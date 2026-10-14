@@ -1,0 +1,113 @@
+**Responsible AI**
+* How would you incorporate Responsible AI principles into the software development lifecycle?
+* How would you evaluate whether an AI feature is appropriate for a particular business use case?
+* How would you balance model performance, usability, fairness, privacy, and safety?
+* How would you establish measurable Responsible AI acceptance criteria before production deployment?
+
+**AI Risk Management**
+* How would you conduct an AI risk assessment covering likelihood, impact, exposure, and mitigation?
+* How would you classify AI use cases by risk and determine which controls each category requires?
+* How would you create a risk register for an LLM application that uses external tools and private data?
+* How would you monitor emerging risks after a model or application has been deployed?
+
+**Hallucination Detection and Mitigation**
+* How would you design a hallucination-detection pipeline for a RAG application?
+* How would you measure factual consistency between generated answers and retrieved source documents?
+* How would you handle questions for which the knowledge base contains insufficient evidence?
+* How would you combine retrieval, citation validation, confidence thresholds, and human review to reduce hallucinations?
+
+**Prompt Injection**
+* How would you defend an LLM application against indirect prompt injection in documents, emails, and web pages?
+* How would you separate trusted system instructions from untrusted retrieved content?
+* How would you prevent injected instructions from triggering unauthorized tool calls?
+* How would you test whether prompt injection defenses remain effective after model and prompt updates?
+
+**Jailbreak Attacks**
+* How would you build a jailbreak evaluation dataset for a production LLM?
+* How would you detect attempts to bypass policy using role-play, encoded instructions, or multi-turn conversations?
+* How would you distinguish legitimate requests about sensitive topics from attempts to obtain prohibited assistance?
+* How would you measure jailbreak resistance without excessively blocking legitimate user requests?
+
+**Data Poisoning**
+* How would you identify suspicious samples in a training dataset?
+* How would you validate data integrity when training data comes from multiple external sources?
+* How would you detect targeted poisoning that affects only a specific trigger phrase or input pattern?
+* How would you mitigate poisoning risks in fine-tuning and synthetic-data generation pipelines?
+
+**Model Inversion and Data Leakage**
+* How would you test whether a model memorizes confidential training examples?
+* How would you reduce the risk of training-data extraction from an LLM?
+* How would you evaluate whether model outputs reveal membership in a sensitive dataset?
+* How would you distinguish leakage caused by model memorization from leakage caused by application retrieval or logging?
+
+**Sensitive Information and PII Protection**
+* How would you implement PII detection and redaction before sending prompts to an external model provider?
+* How would you prevent sensitive information from appearing in logs, traces, analytics, and model outputs?
+* How would you enforce data-retention and deletion policies across prompts, embeddings, caches, and fine-tuned artifacts?
+* How would you protect sensitive data when an AI application uses multiple external tools and services?
+
+**AI Output Validation**
+* How would you validate model-generated JSON against a strict schema before processing it?
+* How would you detect semantically incorrect outputs that pass syntactic validation?
+* How would you prevent invalid AI-generated SQL, code, or business commands from being executed?
+* How would you design validation and retry behavior when the model repeatedly produces malformed output?
+
+**Content Moderation**
+* How would you design input and output moderation for a multilingual AI application?
+* How would you handle ambiguous content that could be either educational or harmful?
+* How would you tune moderation thresholds to balance safety, user experience, and false-positive rates?
+* How would you combine automated classifiers with human review for high-risk content?
+
+**Guardrails and Policy Enforcement**
+* How would you design layered guardrails around an LLM, retrieval pipeline, and tool execution layer?
+* How would you enforce business rules that must not be overridden by prompt instructions?
+* How would you test guardrails for bypasses, conflicting policies, and unexpected model outputs?
+* How would you implement fail-closed behavior for high-risk operations when a safety check is unavailable?
+
+**AI Access Control**
+* How would you implement role-based or attribute-based access control for LLM tools and data sources?
+* How would you enforce row-level or document-level authorization in a RAG pipeline?
+* How would you prevent the model from using its own tool-selection decisions to bypass user permissions?
+* How would you manage service identities, delegated credentials, and token scopes for AI agents?
+
+**AI Supply-Chain Security**
+* How would you verify the integrity and origin of a downloaded model artifact?
+* How would you assess the security of third-party model packages, inference runtimes, and plugins?
+* How would you maintain a software bill of materials and track vulnerabilities in AI dependencies?
+* How would you establish approval gates for new models, datasets, and external AI services?
+
+**Model Governance and Auditability**
+* How would you maintain traceability from a deployed model to its dataset, training configuration, evaluation results, and approval record?
+* How would you design audit logs that support incident investigation without storing unnecessary sensitive data?
+* How would you establish model ownership, release approval, periodic reviews, and retirement procedures?
+* How would you demonstrate that a production model continues to meet its documented safety requirements?
+
+**Explainability and Transparency**
+* How would you explain a model's output to a business user without presenting unsupported reasoning as fact?
+* How would you provide citations and evidence for AI-generated answers?
+* How would you choose between feature attribution, example-based explanations, and evidence-grounded natural-language summaries?
+* How would you assess whether explanations are faithful to the actual model behavior?
+
+**Bias and Fairness**
+* How would you measure disparities in model performance across relevant demographic or user groups?
+* How would you distinguish data imbalance from model behavior that creates unfair outcomes?
+* How would you evaluate fairness when demographic attributes are unavailable or legally restricted?
+* How would you monitor for bias introduced by synthetic data, retrieval results, or human feedback?
+
+**Copyright and Data Provenance**
+* How would you track the origin, license, and permitted uses of datasets used for model training?
+* How would you handle a request to remove data that has been incorporated into a training corpus or fine-tuned model?
+* How would you evaluate copyright risks associated with generated content and source-document retrieval?
+* How would you establish provenance for generated answers that combine multiple sources?
+
+**Regulatory Compliance**
+* How would you map applicable legal and regulatory obligations to technical controls and evidence?
+* How would you assess whether a proposed AI use case requires a formal impact assessment or additional oversight?
+* How would you handle data residency, retention, access, and deletion requirements in a multi-region AI application?
+* How would you keep AI compliance documentation current as models, data sources, and regulations change?
+
+**Human Oversight**
+* How would you determine which AI decisions require mandatory human review?
+* How would you design escalation workflows for low-confidence, policy-sensitive, or high-impact outputs?
+* How would you prevent human reviewers from blindly trusting AI recommendations?
+* How would you measure reviewer accuracy, override rates, escalation latency, and the effectiveness of human oversight?

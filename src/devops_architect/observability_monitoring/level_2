@@ -1,0 +1,37 @@
+* Design an end-to-end observability architecture for hundreds of microservices deployed across multiple Kubernetes clusters and cloud regions.
+* How would you design a scalable telemetry pipeline that handles metrics, logs, and traces without overwhelming storage or processing resources?
+* How would you decide which telemetry data should be collected at the application, infrastructure, platform, and business levels?
+* How would you design a consistent observability standard across Java, Node.js, Python, and Go services?
+* How would you implement OpenTelemetry instrumentation across a large organization while minimizing application-code changes?
+* How would you design a highly available OpenTelemetry Collector architecture with batching, retries, memory limits, and backpressure handling?
+* How would you prevent telemetry loss during collector restarts, network failures, or backend outages?
+* How would you choose between head-based and tail-based trace sampling for a high-throughput application?
+* How would you ensure that rare errors and high-latency traces are retained while controlling telemetry costs?
+* How would you troubleshoot missing or broken distributed traces caused by incorrect context propagation or asynchronous processing?
+* How would you design trace propagation across REST, gRPC, Kafka, and asynchronous job-processing workflows?
+* How would you correlate metrics, logs, and traces across multiple observability backends?
+* How would you troubleshoot a Prometheus deployment that consumes excessive memory due to high-cardinality time series?
+* How would you design Prometheus federation, remote write, or a long-term metrics architecture for multiple clusters?
+* How would you handle metric naming, labels, histogram buckets, and recording rules consistently across teams?
+* How would you design a Grafana dashboard hierarchy that supports service-level, cluster-level, and executive-level visibility?
+* How would you optimize Elasticsearch indexing, shard allocation, retention, and query performance for large log volumes?
+* How would you design a Splunk ingestion architecture that controls licensing costs while preserving security and operational visibility?
+* How would you select between Prometheus, the Elastic Stack, Splunk, and commercial APM platforms for different observability requirements?
+* How would you detect anomalous latency or error patterns when static alert thresholds are insufficient?
+* How would you design multi-window, multi-burn-rate alerts for SLO error-budget consumption?
+* How would you calculate availability SLOs when requests have different importance, latency requirements, or failure definitions?
+* How would you define SLIs for asynchronous workflows where a request is accepted immediately but processing completes later?
+* How would you avoid misleading availability measurements caused by synthetic checks, retries, partial failures, or low traffic?
+* How would you use error budgets to balance release velocity, reliability improvements, and operational risk?
+* How would you design alerting for a multi-region application to distinguish regional failures from global incidents?
+* How would you prevent alert storms when a shared database, network component, or downstream service fails?
+* How would you design Kubernetes monitoring that distinguishes application resource problems from node pressure, scheduling issues, and cluster-level failures?
+* How would you monitor Kubernetes control-plane components and managed-cluster resources when direct access to control-plane nodes is unavailable?
+* How would you identify CPU throttling, memory pressure, OOM kills, and noisy-neighbor issues from Kubernetes telemetry?
+* How would you design cloud monitoring across multiple accounts, subscriptions, projects, and regions?
+* How would you correlate cloud provider metrics with application-level traces to identify infrastructure-related latency?
+* How would you estimate observability costs and implement retention, sampling, aggregation, and cardinality controls?
+* How would you ensure observability data is protected against unauthorized access and accidental exposure of secrets or personal data?
+* How would you design telemetry retention and audit controls to satisfy operational, security, and compliance requirements?
+* How would you validate monitoring coverage for every critical dependency and identify blind spots in production?
+* How would you design an observability maturity roadmap that progresses from basic infrastructure monitoring to proactive, SLO-driven operations?

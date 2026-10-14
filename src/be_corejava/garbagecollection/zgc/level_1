@@ -1,0 +1,20 @@
+* How does ZGC manage the Java heap?
+* What are the major phases of a ZGC collection cycle?
+* What is concurrent marking in ZGC?
+* What is concurrent relocation in ZGC?
+* What is a relocation set in ZGC?
+* What are colored pointers in ZGC?
+* What is the purpose of load barriers in ZGC?
+* How does ZGC relocate objects while application threads continue executing?
+* What is the purpose of safepoints in ZGC?
+* What is the difference between concurrent GC work and stop-the-world GC work in ZGC?
+* How does ZGC handle object references when an object is relocated?
+* What is the role of forwarding information in ZGC?
+* How does ZGC handle allocation while garbage collection is in progress?
+* What is the difference between Generational ZGC and non-generational ZGC?
+* How does Generational ZGC use young and old generations?
+* What is the purpose of the `-XX:+ZGenerational` option in Java versions that support it?
+* How do you configure ZGC in a Java application?
+* How do `-Xms` and `-Xmx` affect ZGC?
+* How can GC logs help diagnose ZGC performance issues?
+* Which metrics should you monitor when evaluating ZGC?

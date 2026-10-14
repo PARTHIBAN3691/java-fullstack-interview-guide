@@ -1,0 +1,30 @@
+* Your Helm installation fails with a YAML parsing error. How would you identify the template responsible for the failure?
+* A Helm upgrade succeeds, but the Spring Boot application does not start. How would you troubleshoot the rendered configuration and Kubernetes events?
+* Your Deployment is updated manually, but a subsequent Helm upgrade unexpectedly reverts the changes. Why does this happen, and how would you prevent it?
+* A Helm upgrade fails because a Kubernetes resource already exists but belongs to another Release. How would you resolve the ownership conflict safely?
+* Your team needs different replica counts and resource limits for development, staging, and production. How would you structure the values files?
+* A chart works in development but fails in production because a required value is missing. How would you validate configuration before deployment?
+* A Helm upgrade gets stuck waiting for Pods to become Ready. What commands and checks would you use to find the root cause?
+* Your production release fails halfway through an upgrade. How would you recover while minimizing downtime?
+* A rollback restores the old Deployment image, but the application still fails because a database migration has already run. How would you handle the recovery?
+* A shared Helm Chart update unintentionally changes resources for multiple microservices. How would you redesign the chart and its versioning strategy?
+* Your values.yaml contains database passwords committed to Git. How would you remove the exposure and improve secrets management?
+* A Helm chart installs correctly on one Kubernetes cluster but fails on another because of API version differences. How would you make the chart portable?
+* A Helm dependency update unexpectedly changes dependency versions and breaks deployment. How would you ensure reproducible builds?
+* Your CI/CD pipeline reports that Helm deployment succeeded, but application validation fails immediately afterward. How would you improve the release pipeline?
+* A Helm hook creates a migration Job that remains stuck and blocks upgrades. How would you troubleshoot and safely recover?
+* Your chart creates a new PersistentVolumeClaim on each release, causing unexpected storage consumption. How would you identify and fix the template issue?
+* Two Helm Releases attempt to manage the same Kubernetes ConfigMap. How would you resolve the conflict and establish clear ownership?
+* A chart upgrade attempts to modify an immutable field in a Service or StatefulSet. What options would you consider to apply the change safely?
+* A production Helm rollback removes or fails to restore an important configuration resource. How would you investigate release history and resource ownership?
+* Your organization wants to standardize probes, resource limits, security contexts, and labels across all Spring Boot deployments. How would you enforce these requirements in Helm Charts?
+* Your team wants to deploy a canary version of a microservice using Helm. How would you combine chart configuration with traffic routing?
+* A Helm Chart renders successfully but fails Kubernetes admission policies. How would you add pre-deployment validation to catch the problem earlier?
+* Your GitOps controller repeatedly reverts manual changes made to Helm-managed resources. How would you explain and resolve the behavior?
+* An upgrade unexpectedly deletes a resource that was manually added to a Helm-managed application. How would you investigate the release manifest and ownership?
+* A Helm Release is marked failed even though the application is serving traffic. How would you distinguish Helm operation status from actual application health?
+* Your chart uses conditional templates, and disabling a feature unexpectedly removes a resource required by another component. How would you redesign the conditions?
+* A new chart version changes default values and breaks existing applications that do not override them. How would you maintain backward compatibility?
+* You need to deploy the same Java application to multiple clusters with cluster-specific ingress, storage, and scaling settings. How would you organize the chart configuration?
+* A deployment pipeline must guarantee that the exact chart artifact tested in staging is promoted to production. How would you implement artifact versioning and promotion?
+* Your team needs an emergency rollback while GitOps reconciliation is enabled. How would you coordinate the rollback with the source of truth?

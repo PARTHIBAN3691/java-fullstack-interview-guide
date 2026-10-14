@@ -1,0 +1,30 @@
+* A setTimeout callback runs after a Promise.then callback. Explain why.
+* A zero-millisecond timer executes after several console.log statements. Explain the execution order.
+* A web page becomes unresponsive while processing a large array. How would you identify and fix the issue?
+* A Promise callback runs before a timer even though the timer was registered first. Why?
+* A nested setTimeout callback executes later than expected. What factors could explain the delay?
+* A UI animation appears jerky when a large calculation runs. How would you use the event loop model to improve it?
+* A recursive Promise.then chain prevents timers from executing. What is happening?
+* A user clicks a button, but the click handler appears delayed. How would you investigate event-loop blocking?
+* A setInterval callback does not run at perfectly regular intervals. Explain why.
+* An async function prints some messages immediately and others later. How would you determine their execution order?
+* An awaited Promise causes the remaining function code to execute later. Explain the scheduling behavior.
+* A Promise is resolved inside a timer callback. In what order will the Promise continuation and subsequent timer callbacks run?
+* A web application needs to process millions of records without freezing the UI. What approach would you recommend?
+* A backend API built with Node.js has increasing response times during CPU-heavy processing. How would you investigate?
+* A Node.js service has high event-loop delay despite low database latency. What could be the cause?
+* A browser page receives frequent WebSocket messages and becomes sluggish. How could you manage message processing?
+* A search input triggers expensive work for every keystroke. How would you reduce the impact on the event loop?
+* A developer assumes setTimeout(callback, 0) runs immediately after the current function. How would you correct this assumption?
+* A UI update is scheduled using requestAnimationFrame(), but the page is running in a background tab. What should the developer consider?
+* A large task must be split into smaller chunks. How would you schedule the chunks while keeping the interface responsive?
+* A Web Worker completes a calculation, but the UI updates only after the current task finishes. Why?
+* A Node.js application uses process.nextTick() recursively and other callbacks stop progressing. How would you fix it?
+* An application has many Promise callbacks and delayed rendering. How would you determine whether microtask starvation is occurring?
+* Two independent asynchronous operations finish in an unexpected order. How would you reason about the event loop and their completion times?
+* A timer runs later under heavy CPU load than under light load. Why is this expected?
+* A third-party library performs synchronous work inside a Promise callback. Why can it still block the browser?
+* A server handles many concurrent requests but slows down when one request performs heavy computation. How would you redesign the processing?
+* A developer needs an animation to run before the next browser repaint. Which scheduling mechanism should they consider?
+* A production issue occurs only under heavy traffic and involves delayed callbacks. What monitoring data would you collect?
+* You need to explain the event loop to a Java developer familiar with threads and executors. How would you compare the models?

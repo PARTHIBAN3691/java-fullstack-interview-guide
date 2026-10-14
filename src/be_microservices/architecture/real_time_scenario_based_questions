@@ -1,0 +1,30 @@
+* A monolithic Java application is becoming difficult to maintain. How would you determine whether to migrate to microservices?
+* A newly created microservice has too many dependencies on other services. How would you improve the design?
+* A downstream service becomes unavailable, causing failures across the platform. How would you prevent cascading failures?
+* Two microservices update the same business entity and produce inconsistent data. How would you resolve the ownership and consistency problem?
+* An order service saves an order but fails to publish the corresponding Kafka event. How would you ensure reliable event delivery?
+* A payment event is processed twice, causing duplicate transactions. How would you prevent this?
+* A Saga workflow fails halfway through an order process. How would you implement compensation and recovery?
+* A service responds successfully, but its database update is delayed. How would you manage consistency expectations for consumers?
+* Your platform experiences high latency because one request calls several services sequentially. How would you optimize the request flow?
+* A shared database is used by five microservices. How would you gradually establish service-level data ownership?
+* A new service deployment breaks older consumers because its API contract changed. How would you prevent this?
+* Kafka consumers are falling behind during peak traffic. How would you investigate and scale processing?
+* Events arrive out of order and produce incorrect business state. How would you address ordering and versioning?
+* A service keeps retrying a failing downstream API and overloads it. How would you improve resilience?
+* Your team is deciding whether to use REST or asynchronous messaging for order processing. How would you evaluate the options?
+* A microservice works in development but fails in production due to configuration differences. How would you improve configuration management?
+* A Kubernetes deployment repeatedly restarts because the application fails its health checks. How would you troubleshoot the problem?
+* A critical service becomes a bottleneck during a seasonal traffic spike. How would you scale it safely?
+* A database schema migration must happen while old and new application versions run simultaneously. How would you plan the migration?
+* An API Gateway outage affects all external requests. How would you improve availability and reduce the impact?
+* A service stores sensitive customer data and must comply with strict security requirements. How would you design access controls and auditability?
+* Distributed traces show a request taking several seconds across multiple services. How would you identify the primary bottleneck?
+* A team proposes splitting a small application into many microservices. How would you assess whether the complexity is justified?
+* A legacy monolith must be migrated incrementally without disrupting existing customers. How would you apply the strangler pattern?
+* A downstream service returns HTTP 429 during heavy traffic. How would you design backpressure and rate-limit handling?
+* A multi-region deployment experiences temporary network partitioning. How would you handle availability and consistency trade-offs?
+* One tenant consumes most of the shared platform resources. How would you isolate tenants and enforce quotas?
+* A service team wants to deploy independently, but its database changes require coordinated releases. How would you reduce this dependency?
+* Production incidents repeatedly occur because teams cannot identify which service owns a failure. What architectural and operational changes would you introduce?
+* You must design a payment-processing platform using Java and Spring Boot microservices. How would you address idempotency, reconciliation, security, resilience, and auditability?

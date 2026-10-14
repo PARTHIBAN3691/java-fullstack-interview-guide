@@ -1,0 +1,30 @@
+* How would you implement a thread-safe Singleton using synchronized methods?
+* How does double-checked locking work in a Singleton implementation?
+* Why is the volatile keyword required in double-checked locking?
+* How can reflection break a Singleton implementation?
+* How can serialization create multiple instances of a Singleton?
+* How would you prevent a Singleton from being duplicated during deserialization?
+* How would you implement the Factory Method pattern using interfaces and concrete classes?
+* How can the Factory Method pattern eliminate complex conditional object creation?
+* How would you implement an Abstract Factory for creating related database components?
+* How can the Abstract Factory pattern support multiple database vendors?
+* How would you implement the Builder pattern for an immutable Java object?
+* How can the Builder pattern validate mandatory fields before object creation?
+* How would you implement a Builder using method chaining?
+* How can you create a reusable generic Builder in Java?
+* How would you implement the Prototype pattern using Java's Cloneable interface?
+* Why can the clone method be problematic when implementing the Prototype pattern?
+* How would you implement deep cloning for an object containing nested mutable objects?
+* How can copy constructors be used as an alternative to cloning?
+* How would you use a factory to select a payment-processing implementation?
+* How can Spring dependency injection work with Factory Method implementations?
+* How would you register and discover multiple factory implementations in Spring Boot?
+* How can you combine Builder and Factory patterns in the same application?
+* How would you test a Singleton class that maintains internal state?
+* How would you mock a factory-created dependency during unit testing?
+* How can you avoid exposing concrete implementation classes to clients?
+* How would you implement object pooling, and how does it differ from the GoF creational patterns?
+* How can generics improve type safety in a factory implementation?
+* How would you use configuration properties to select an object factory in Spring Boot?
+* How can you avoid creating unnecessary intermediate objects during object construction?
+* What are common implementation mistakes when using creational design patterns?

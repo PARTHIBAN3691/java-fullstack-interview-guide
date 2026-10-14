@@ -1,0 +1,20 @@
+* Write a Java program using AWS SDK for Java 2.x to retrieve a parameter with `GetParameter`.
+* Write a Java program that retrieves a `SecureString` parameter with decryption enabled.
+* Write a Java program that retrieves multiple named parameters using `GetParameters`.
+* Write a Java program that retrieves all parameters under a specified hierarchy using `GetParametersByPath`.
+* Write a Java utility that creates a new parameter using `PutParameter`.
+* Write a Java program that updates an existing parameter value and creates a new parameter version.
+* Write a Java program that deletes a parameter by name using AWS SDK for Java 2.x.
+* Write a Java program that lists parameter versions and identifies the latest version.
+* Write a Java program that retrieves a parameter by version or label.
+* Write a Java utility that handles missing parameters, access-denied errors, and throttling exceptions.
+* Write a Java configuration service that retrieves parameters and exposes them to a Spring Boot application.
+* Write a Spring Boot configuration component that loads non-sensitive application properties from Parameter Store.
+* Write a Java service that caches parameter values using a configurable time-to-live.
+* Write a Java utility that refreshes cached configuration without restarting the application.
+* Write a Java program that reads parameters from different paths based on the active Spring profile.
+* Write a Java program that validates required parameters during application startup and fails with a clear error when configuration is missing.
+* Write a Java program that retrieves encrypted parameters using the default AWS credentials provider chain.
+* Write a Java unit test using JUnit 5 and Mockito to test a service that reads configuration from Parameter Store.
+* Write a Java integration test that verifies parameter creation, retrieval, encryption, and cleanup in an isolated AWS test environment.
+* Design a reusable Java configuration library that integrates Parameter Store with Spring Boot, supports caching and refresh, enforces least privilege, and avoids logging sensitive values.

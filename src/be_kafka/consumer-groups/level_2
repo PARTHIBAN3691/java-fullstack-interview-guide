@@ -1,0 +1,30 @@
+* How would you design consumer groups to process millions of events per second?
+* How would you determine consumer parallelism based on partition count, throughput, and processing latency?
+* How would you minimize consumer group rebalances in a high-throughput production system?
+* How would you investigate repeated group rebalances caused by slow message processing?
+* How would you distinguish consumer lag caused by insufficient capacity from lag caused by broker or network issues?
+* How would you design a consumer group that preserves ordering for each customer or order?
+* How would you handle uneven partition workloads that cause some consumers to lag more than others?
+* How would you select a partition assignment strategy for a large, frequently changing consumer group?
+* How would you design static consumer membership for workloads with predictable instance identities?
+* What are the trade-offs between static membership and faster failure detection?
+* How would you tune `max.poll.records`, `max.poll.interval.ms`, and processing concurrency together?
+* How would you handle long-running database operations without triggering repeated rebalances?
+* How would you design graceful shutdown and partition revocation handling in a consumer group?
+* How would you ensure offsets are committed only after the corresponding business processing succeeds?
+* How would you prevent duplicate business operations when a consumer crashes after processing but before committing offsets?
+* How would you implement exactly-once processing between Kafka topics using transactions?
+* What challenges arise when coordinating Kafka offsets with an external relational database?
+* How would you use the transactional outbox or idempotency patterns to improve end-to-end processing reliability?
+* How would you safely migrate a consumer application to a new group ID without losing required events?
+* How would you perform a controlled replay of historical messages without disrupting the production consumer group?
+* How would you isolate workloads that require different processing speeds and retry policies?
+* How would you design a consumer group for multi-tenant event processing while preventing tenant starvation?
+* How would you detect and mitigate a rebalance storm across hundreds of consumer instances?
+* How would you investigate a group that appears stable but has growing lag on only a few partitions?
+* How would you design consumer scaling policies based on lag, processing rate, and partition assignment constraints?
+* How would you handle consumer group recovery when committed offsets point beyond the available retained data?
+* How would you plan a broker upgrade or cluster migration to minimize consumer group disruption?
+* How would you monitor group coordinator health and identify coordinator-related instability?
+* How would you design multi-region consumer processing while avoiding duplicate business effects during failover?
+* How would you define service-level objectives for consumer lag, processing latency, and recovery time?

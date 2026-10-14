@@ -1,0 +1,30 @@
+* Explain the JVM Runtime Data Area specification and distinguish it from a particular JVM implementation.
+* How does the JVM create and initialize Runtime Data Areas when a Java application starts?
+* Explain how class loading, linking, initialization, and Runtime Data Areas interact during execution.
+* How does the runtime constant pool support symbolic references and their resolution?
+* What happens when a method's bytecode is interpreted and later compiled by the JIT compiler with respect to Runtime Data Areas?
+* How can JIT compilation and escape analysis influence object allocation and the observable behavior of memory usage?
+* Can an object that logically belongs to the Heap be optimized so that no physical Heap allocation occurs? Explain scalar replacement and its limitations.
+* How do stack frames differ between interpreted execution and compiled execution in a HotSpot JVM?
+* How can a JIT compiler eliminate local variables or keep values in CPU registers without violating Java semantics?
+* How do deoptimization and deoptimization metadata help a JVM return from compiled code to interpreted execution?
+* How does the JVM preserve correct exception handling and stack traces when compiled code is deoptimized?
+* What is on-stack replacement, and how can it affect execution while a method is already running?
+* How do safepoints interact with thread execution and garbage collection?
+* How does garbage collection coordinate access to Heap objects while application threads are running?
+* Why is it inaccurate to assume that every Java local variable always occupies a fixed location on the Java Stack?
+* How do native calls interact with Java Stack frames and the Native Method Stack?
+* What are the risks of native code allocating memory outside the Java Heap?
+* How can direct byte buffers consume native memory even when Java Heap usage appears low?
+* How can Metaspace exhaustion occur while the Java Heap still has sufficient free space?
+* How can class loaders cause class metadata to remain reachable and contribute to Metaspace growth?
+* Explain the relationship between class unloading, class-loader reachability, and Metaspace reclamation.
+* How can thread creation lead to native memory exhaustion even when Heap usage is low?
+* What is the difference between Java heap exhaustion, native memory exhaustion, and Java Stack overflow?
+* How can a JVM process consume substantially more memory than the maximum Heap size specified by `-Xmx`?
+* How would you investigate an application that crashes with `OutOfMemoryError: Metaspace`?
+* How would you investigate an application that crashes with `OutOfMemoryError: unable to create native thread`?
+* How can Native Memory Tracking help analyze JVM memory consumption?
+* How do garbage collector implementation details affect the physical organization and management of Heap memory?
+* How can JVM diagnostic tools distinguish Heap usage, class metadata usage, thread stacks, and native memory?
+* What are the limitations of using Heap dumps alone to diagnose all Runtime Data Area memory problems?

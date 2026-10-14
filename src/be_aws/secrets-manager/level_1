@@ -1,0 +1,21 @@
+
+* How do you retrieve a secret from AWS Secrets Manager using Java and the AWS SDK v2?
+* How do you configure AWS SDK credentials for a Java application running on an EC2 instance?
+* How can a Spring Boot application retrieve database credentials from AWS Secrets Manager?
+* How do you configure a Java application to use the default AWS credentials provider chain?
+* How do you grant an application permission to retrieve a specific secret using IAM?
+* What is the difference between `GetSecretValue` and `BatchGetSecretValue`?
+* How do you retrieve a particular version of a secret?
+* What is the purpose of `VersionId` and `VersionStage`?
+* How do you store and retrieve JSON-formatted secrets?
+* How do you handle exceptions when retrieving secrets using the AWS SDK?
+* How can you avoid retrieving the same secret from AWS Secrets Manager on every request?
+* What caching strategies can be used when accessing secrets from a Java application?
+* How do you configure automatic rotation for an Amazon RDS database secret?
+* How does Secrets Manager integrate with AWS Lambda during secret rotation?
+* How can an application access secrets securely without hardcoding AWS credentials?
+* How do you configure Secrets Manager access for an ECS task?
+* How do you configure Secrets Manager access for an EKS workload?
+* What is the difference between resource-based policies and identity-based IAM policies for secrets?
+* How can you access Secrets Manager from a private subnet without public internet access?
+* How do you monitor secret retrieval activity using AWS CloudTrail?

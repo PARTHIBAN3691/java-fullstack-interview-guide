@@ -1,0 +1,30 @@
+* How would you optimize a Dockerfile for a Maven-based Spring Boot application?
+* How do you create a multi-stage Dockerfile that separates compilation from runtime execution?
+* How can you reduce the size of a Java application image without changing application functionality?
+* How does copying pom.xml before source code improve Docker build caching?
+* How do you optimize Docker layer ordering to avoid unnecessary rebuilds?
+* How can BuildKit cache mounts reduce Maven dependency download time?
+* How would you optimize a Docker image for a Gradle-based Java application?
+* How do you use .dockerignore to reduce build context transfer time?
+* How can you identify which image layers consume the most space?
+* What is the difference between optimizing image build time and container startup time?
+* How can Spring Boot layered JARs improve Docker build efficiency?
+* How do you choose between Alpine, slim, and standard Java base images?
+* What compatibility issues can arise when using Alpine-based Java images?
+* How can you reduce the number of operating-system packages in a production image?
+* How do you run a Java application as a non-root user without increasing image complexity?
+* How can JVM heap settings be configured for a container with a memory limit?
+* How do you prevent a Java application from exceeding its container memory allocation?
+* How do you use container-aware JVM settings to optimize Java memory usage?
+* How can CPU limits affect Java garbage collection and application throughput?
+* How would you optimize the startup time of a Spring Boot container?
+* How can you reduce the time required to pull large Docker images during deployment?
+* What is the difference between build cache, image cache, and runtime cache?
+* How can remote BuildKit caches improve CI/CD pipeline performance?
+* How would you optimize Docker Compose for local development with multiple Java services?
+* How can health checks affect container startup and orchestration behavior?
+* How do you diagnose excessive disk usage caused by Docker images, containers, and logs?
+* How can Docker logging configuration prevent container logs from consuming excessive disk space?
+* How do you optimize the number of layers without unnecessarily combining unrelated Dockerfile instructions?
+* How can you use Docker buildx to improve multi-platform image builds?
+* How would you measure and compare Docker optimization improvements before and after a change?

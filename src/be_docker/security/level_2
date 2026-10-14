@@ -1,0 +1,30 @@
+* How would you design a comprehensive Docker security strategy for an enterprise Spring Boot microservices platform?
+* Explain the major security boundaries between a container, the Docker daemon, and the host operating system.
+* How can a container escape its isolation, and what controls help reduce the risk?
+* Why can access to the Docker socket effectively grant host-level privileges?
+* How would you secure Docker daemon access in a shared development or production environment?
+* How do Linux namespaces and cgroups contribute to container isolation?
+* How do Linux capabilities reduce the privileges available to a container?
+* How would you design a container security policy using seccomp, AppArmor, or SELinux?
+* What are the security implications of running privileged containers?
+* How would you investigate and mitigate a container escape vulnerability affecting the host?
+* How do user namespaces and rootless Docker reduce security risks?
+* What operational limitations should be considered when adopting rootless Docker?
+* How would you enforce non-root execution, read-only filesystems, and dropped capabilities across many services?
+* How do you assess and manage vulnerabilities in both Java dependencies and operating-system packages?
+* How would you prioritize vulnerability remediation when a critical CVE affects the Java base image?
+* How do image digests and immutable tags help prevent image substitution attacks?
+* How would you implement image signing, provenance verification, and admission controls in a production delivery pipeline?
+* How do software bills of materials improve vulnerability investigation and dependency governance?
+* How would you prevent secrets from leaking through image layers, build caches, logs, and CI artifacts?
+* How would you design secure secret injection and rotation for Spring Boot services?
+* How do TLS, certificate validation, and mutual TLS protect communication between containerized services?
+* How would you implement network segmentation for public APIs, internal services, and sensitive databases?
+* How do firewall rules and Docker network configuration interact to affect container security?
+* How would you detect unexpected outbound connections from a compromised container?
+* How would you harden a Docker host that runs multiple business-critical Java services?
+* How would you prevent resource exhaustion attacks against containerized Java applications?
+* How do JVM memory limits and container resource limits contribute to denial-of-service protection?
+* How would you establish a secure image supply chain from source code to production deployment?
+* How would you monitor Docker security events and investigate suspicious container behavior?
+* How would you develop an enterprise container security standard that balances developer productivity, compliance, and production risk?

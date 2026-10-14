@@ -1,0 +1,30 @@
+* Explain the lifecycle of Runtime Data Areas from JVM startup to application termination.
+* How does the JVM allocate memory for local variables and objects during method execution?
+* Explain the difference between thread-shared and thread-private Runtime Data Areas.
+* How are method calls managed using stack frames?
+* How does a stack frame store local variables, an operand stack, and a reference to runtime constant-pool information?
+* How are object references handled between Stack and Heap memory?
+* What happens to local variables and object references when a method completes?
+* Can multiple threads access the same Heap objects? Explain with an example.
+* Can two threads have separate stacks while sharing the same Heap? How?
+* How are class metadata and runtime constant-pool information represented in the JVM?
+* What is the relationship between the Method Area and the HotSpot Metaspace implementation?
+* How did the memory representation of class metadata change from PermGen to Metaspace in HotSpot?
+* Is the Method Area necessarily implemented as one contiguous memory region? Explain.
+* Are String objects stored in the Heap or Method Area in modern Java? Explain the distinction between String objects and the string pool.
+* Where is the reference variable stored when an object is created inside a method?
+* Where is an object stored when it is created inside a method and returned to the caller?
+* How does recursion affect Stack memory usage?
+* How does a large number of local variables affect Stack memory usage?
+* What is the role of the runtime constant pool in Java execution?
+* How does the JVM use the PC Register when executing Java bytecode?
+* What happens to the PC Register while a thread executes a native method?
+* How does the Native Method Stack differ from the Java Stack?
+* What are the common memory-related exceptions associated with Runtime Data Areas?
+* How can a memory leak occur even when Heap memory is managed by garbage collection?
+* How does garbage collection relate to Heap memory and object reachability?
+* Does garbage collection reclaim Java Stack frames? Explain.
+* How can increasing the Java thread stack size affect an application?
+* What is the relationship between the `-Xms` and `-Xmx` JVM options and Runtime Data Areas?
+* What is the relationship between the `-Xss` JVM option and Java Stack memory?
+* How can JVM memory settings help diagnose Runtime Data Area problems?

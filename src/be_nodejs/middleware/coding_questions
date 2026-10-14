@@ -1,0 +1,30 @@
+* Write a custom middleware that logs the HTTP method and URL.
+* Write middleware that logs request processing time.
+* Write middleware that adds a custom header to every response.
+* Write middleware that attaches a unique request ID to the request object.
+* Write middleware that validates a required request header.
+* Write middleware that checks whether a request contains a valid JSON body.
+* Write middleware that validates required fields in a user registration request.
+* Write middleware that returns a custom 404 response for unknown routes.
+* Write centralized error-handling middleware for an Express application.
+* Write middleware that catches asynchronous errors and forwards them to the error handler.
+* Write authentication middleware that validates a JWT.
+* Write authorization middleware that allows only users with the ADMIN role.
+* Write middleware that checks whether a user owns the requested resource.
+* Write middleware that applies different authorization policies to different routes.
+* Write middleware that implements rate limiting for an API.
+* Write middleware that limits request-body size and rejects oversized requests.
+* Write middleware that configures CORS for an allowlist of origins.
+* Write middleware that redacts passwords and access tokens before logging requests.
+* Write middleware that measures response time and records the final HTTP status code.
+* Write middleware that uses AsyncLocalStorage to propagate correlation IDs.
+* Write middleware that enforces a configurable request timeout.
+* Write middleware that rejects unsupported HTTP methods with a 405 response.
+* Write middleware that checks an idempotency key before processing a payment request.
+* Write middleware that validates uploaded file size and allowed file types.
+* Write middleware that implements a maintenance-mode response based on configuration.
+* Write middleware that loads a user from the database and attaches the user details to the request.
+* Write middleware that checks whether a resource belongs to the current tenant.
+* Write unit tests for custom middleware covering success, failure, and next() behavior.
+* Write integration tests to verify middleware ordering and error propagation across routes.
+* Build a reusable middleware framework with authentication, authorization, validation, logging, rate limiting, and centralized error handling.

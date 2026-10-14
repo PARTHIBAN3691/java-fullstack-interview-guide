@@ -1,0 +1,30 @@
+* How would you containerize a Spring Boot application using Docker?
+* How do you create a Docker image from a Java executable JAR?
+* What are the steps involved in building, tagging, and running a Docker image?
+* How would you reduce the size of a Java Docker image?
+* What is the difference between a base image and a custom image?
+* How does Docker layer caching improve build performance?
+* How would you configure environment variables for a containerized Spring Boot application?
+* How would you run a Java container with a specific Spring profile?
+* How do you map a container port to a host port?
+* How would you connect a Java application container to a PostgreSQL container?
+* What is a Docker bridge network, and when would you use it?
+* What is the difference between a named volume and a bind mount?
+* How would you persist database data when a container is removed?
+* How do you copy files between the host and a running container?
+* How would you inspect a container's configuration and state?
+* How do you execute commands inside a running container?
+* How would you configure a container to restart automatically after a failure?
+* What is the difference between Docker restart policies and application-level recovery?
+* How would you troubleshoot a container that exits immediately after startup?
+* How do you limit CPU and memory usage for a container?
+* How would you configure a health check for a Java application?
+* What is the difference between container health status and container running status?
+* How would you manage Docker images across development, testing, and production environments?
+* How do you remove unused containers, images, networks, and volumes?
+* What is the difference between docker rm and docker rmi?
+* How would you securely manage database credentials for a containerized application?
+* How do you use Docker Compose to start multiple related services?
+* How would you troubleshoot a container that cannot connect to another container?
+* What are the benefits of running containers as non-root users?
+* What Docker best practices would you follow when deploying a Java application?

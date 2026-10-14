@@ -1,0 +1,30 @@
+* How does the useContext() hook work internally at a high level?
+* How do you create a reusable custom hook for consuming context?
+* How do you manage authentication state using Context API?
+* How do you implement dark and light themes using Context API?
+* How do you share language preferences across components?
+* How do you update context values from deeply nested components?
+* How do you combine useState() with Context API?
+* How do you combine useReducer() with Context API?
+* What is the difference between useContext() and Context.Consumer?
+* How do you provide multiple contexts to a component tree?
+* What happens when nested Providers use the same context?
+* How does React determine which Provider value to use?
+* How do you define TypeScript types for context values?
+* How do you handle nullable context values safely?
+* Why should you create a custom hook for context access?
+* How do you avoid duplicating context logic across components?
+* How do you separate context creation from Provider implementation?
+* How do you prevent unnecessary object creation in a Provider?
+* How does React.memo() interact with context updates?
+* Does React.memo() prevent re-renders caused by context changes?
+* How do you test components that depend on context?
+* How do you mock context values during unit testing?
+* How do you set up context for an entire application?
+* How do you organize multiple context files in a React project?
+* What are the limitations of Context API?
+* When should you avoid using Context API?
+* What is the difference between context and Redux?
+* What is the difference between context and Zustand?
+* How do you handle loading and error states in context?
+* How do you persist context state across page refreshes?

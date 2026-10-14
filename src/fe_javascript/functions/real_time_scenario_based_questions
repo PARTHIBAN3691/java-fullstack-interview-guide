@@ -1,0 +1,30 @@
+* You have repeated business logic across multiple files. How would you refactor it into reusable functions?
+* A function returns undefined unexpectedly. How would you investigate the issue?
+* A function declaration works before its definition, but a function expression does not. Why?
+* A callback loses access to the expected this value. How would you fix it?
+* You need a function that executes only once even if it is called multiple times. How would you implement it?
+* A function needs to accept any number of input values. How would you design its parameters?
+* You need to provide default values for optional API parameters. How would you implement them?
+* A function modifies an object passed by another module, causing unexpected side effects. How would you prevent this?
+* You need to maintain a private counter without exposing its variable globally. How would you use closures?
+* A nested function needs access to variables from its parent function. How does lexical scope help?
+* A recursive function causes a stack overflow for large inputs. How would you redesign it?
+* You need to calculate Fibonacci numbers efficiently. Would you use recursion, iteration, or memoization, and why?
+* A function performs an expensive calculation repeatedly with identical inputs. How would you optimize it?
+* You need to transform an array of objects using reusable business rules. How could higher-order functions help?
+* You need to execute several validation functions against a user object. How would you compose the functions?
+* A function accepts a callback, but the callback is executed immediately instead of later. What could be wrong?
+* You need to create a reusable logging wrapper around existing functions. How would you use a higher-order function?
+* A function should run only after the user stops typing for 500 milliseconds. How would you implement it?
+* A resize handler executes too frequently and affects performance. How would you throttle it?
+* You need to reuse a function with some arguments already fixed. How would you implement partial application?
+* You need to convert a function with multiple arguments into a chain of single-argument functions. How would you use currying?
+* An asynchronous function fails, but the calling code does not handle the error. How would you improve error handling?
+* You need to pass a function into a generic retry mechanism. How would you design the higher-order function?
+* A function relies on global variables and is difficult to unit test. How would you refactor it?
+* A closure retains a large object longer than expected. How would you investigate and reduce memory usage?
+* A method works correctly when called directly but fails when passed as a callback. How would you preserve its context?
+* You need to create multiple functions that each maintain independent state. How would closures help?
+* A function should validate input, transform data, and return a result without changing external state. How would you design it as a pure function?
+* You need to wrap an existing function to measure execution time without changing its implementation. How would you do it?
+* You are reviewing a large JavaScript codebase. How would you identify functions that are difficult to reuse, test, or maintain?

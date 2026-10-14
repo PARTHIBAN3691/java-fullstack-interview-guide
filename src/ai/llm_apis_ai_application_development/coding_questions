@@ -1,0 +1,98 @@
+**OpenAI API**
+* Implement a Java service that sends a request to the OpenAI API and maps the response into a typed application DTO.
+* Implement a configurable OpenAI client that supports model selection, connection timeouts, response timeouts, and request correlation IDs.
+* Write unit tests for successful responses, malformed payloads, rate limits, authentication failures, and provider timeouts using mocked HTTP responses.
+* Implement a conversation-context manager that limits token usage while preserving recent messages and important historical context.
+
+**Anthropic Claude API**
+* Implement a Java client for Claude's Messages API with configurable model, system instructions, and token limits.
+* Write a response parser that handles text blocks, tool-use blocks, refusals, and incomplete responses.
+* Implement a provider adapter that converts an internal conversation representation into Claude-specific request and response objects.
+* Write tests for malformed tool arguments, empty content blocks, rate-limit responses, and interrupted requests.
+
+**Google Gemini API**
+* Implement a Java service that calls Gemini with configurable generation parameters and validates the returned text.
+* Create a request builder that supports text-only prompts and image-plus-text inputs.
+* Implement response parsing and error mapping for successful generation, safety-related outcomes, quota errors, and malformed responses.
+* Write contract tests that verify the application's expected behavior against representative Gemini request and response payloads.
+
+**Azure OpenAI Service**
+* Implement a Spring Boot client that calls a configured Azure OpenAI deployment using externalized endpoint, deployment, and API-version settings.
+* Implement an authentication strategy that supports Microsoft Entra ID credentials without hardcoding secrets.
+* Write integration tests that verify configuration validation, authentication failures, throttling, and deployment-not-found errors.
+* Implement a configuration-driven deployment selector that allows the target deployment to change without modifying business logic.
+
+**AWS Bedrock**
+* Implement a Java service using the AWS SDK to invoke a configured Bedrock model and map the response to an internal DTO.
+* Implement a client using the Converse API and handle model-specific request configuration.
+* Write tests for access-denied errors, throttling, timeout handling, and invalid model identifiers.
+* Implement a streaming response consumer that processes events incrementally and releases resources when the client disconnects.
+
+**Model API Authentication and Authorization**
+* Implement a credential-provider abstraction that supports environment-based development credentials and managed production identities.
+* Write a configuration validator that fails application startup when required credentials or endpoint settings are missing.
+* Implement role-based authorization for model access and tool execution in a Spring Boot application.
+* Write tests proving that secrets are redacted from logs and exception messages.
+* Implement a credential-rotation strategy that can refresh credentials without restarting the application.
+
+**Chat Completions and Response APIs**
+* Define a provider-neutral conversation DTO that represents messages, output items, tool calls, and completion status.
+* Implement adapters that map provider-specific chat-completion and response-oriented payloads into the shared DTO.
+* Write tests for multiple output items, refusal indicators, tool-call responses, incomplete generations, and malformed payloads.
+* Implement persistent conversation history with message ordering, pagination, and protection against concurrent updates.
+
+**Streaming Responses**
+* Implement a Spring Boot SSE endpoint that streams generated text chunks to a frontend client.
+* Write a stream parser that handles chunk boundaries, incomplete events, completion signals, and provider errors.
+* Implement cancellation propagation when the browser disconnects or the client explicitly cancels generation.
+* Write load tests for concurrent streaming sessions, slow consumers, connection failures, and resource cleanup.
+* Implement a streaming state tracker that distinguishes completed, failed, cancelled, and partially delivered responses.
+
+**Function Calling and Tool Calling**
+* Implement a tool registry that maps approved tool names to Java handlers and validates arguments against defined schemas.
+* Build a tool-calling workflow that executes a read-only order lookup and passes its result back to the model.
+* Implement authorization checks that prevent a user from accessing another tenant's data through model-generated tool calls.
+* Write tests for invalid tool names, malformed arguments, repeated calls, tool exceptions, and timeouts.
+* Implement idempotency keys and deduplication for a tool that performs a side-effecting business operation.
+
+**Structured Outputs**
+* Implement a Java DTO and JSON Schema for extracting customer details from unstructured text.
+* Implement schema validation and semantic business-rule validation as separate stages.
+* Write tests for missing required fields, invalid enumerations, unexpected fields, incorrect types, and cross-field validation failures.
+* Implement a versioned output-contract mechanism that supports old and new consumer schemas.
+* Create a validation pipeline that returns structured error details without exposing confidential prompt content.
+
+**Multimodal APIs**
+* Implement an upload endpoint that validates image type, file size, content signature, and access permissions before invoking a multimodal model.
+* Build a document-processing workflow that stores an uploaded file, submits supported content to a model, and returns a typed result.
+* Implement chunked processing for large documents and combine page-level results into a validated response.
+* Write tests for unsupported media formats, corrupt files, oversized payloads, provider failures, and cleanup of temporary resources.
+* Implement a multimodal request abstraction that checks the selected model's supported input modalities before submission.
+
+**Rate Limiting, Retries, and Timeouts**
+* Implement exponential backoff with jitter for retryable provider errors and a configurable maximum attempt count.
+* Create a token-bucket rate limiter that enforces request limits per tenant.
+* Implement an overall request deadline that is propagated through model calls and downstream tool invocations.
+* Write tests for retryable and non-retryable status codes, `Retry-After` handling, cancellation, and retry exhaustion.
+* Implement a circuit breaker and bulkhead around provider calls and test their behavior under simulated failures.
+
+**Token Usage and Cost Management**
+* Implement a token-usage tracker that records input tokens, output tokens, model identifiers, tenant IDs, and feature names.
+* Create a cost estimator using configurable provider/model pricing metadata.
+* Implement per-user and per-tenant token budgets that prevent new requests from exceeding configured limits.
+* Write a conversation-history compactor that preserves recent messages and selected important facts under a token budget.
+* Build a report that compares estimated application costs against provider-reported usage.
+
+**Model Routing and Fallback Strategies**
+* Implement a model router that selects a provider based on task type, latency target, model availability, and configured cost limits.
+* Build a fallback chain that switches providers for eligible transient errors while avoiding retries for invalid requests.
+* Implement health tracking and a cooldown period to prevent rapid switching between unhealthy and healthy providers.
+* Write tests that verify routing decisions for provider outages, throttling, quality thresholds, and budget exhaustion.
+* Implement a shadow-routing mode that evaluates a secondary model without allowing its output to trigger business side effects.
+
+**AI Application Error Handling**
+* Implement a common exception hierarchy for authentication failures, quota errors, provider timeouts, invalid model responses, and tool execution failures.
+* Build a global Spring Boot exception handler that maps internal failures to safe, consistent API error responses.
+* Implement structured logging with correlation IDs and automatic redaction of secrets and sensitive prompt content.
+* Write tests for circuit-breaker activation, fallback exhaustion, partial streaming failures, and graceful cancellation.
+* Implement an observability component that tracks provider availability, latency percentiles, token usage, application-level task success, and error rates.

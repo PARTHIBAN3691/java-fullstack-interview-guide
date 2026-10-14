@@ -1,0 +1,30 @@
+* Write a program that demonstrates synchronous and asynchronous execution in Node.js.
+* Write code that demonstrates the execution order of synchronous statements, process.nextTick(), Promise.then(), setTimeout(), and setImmediate().
+* Create a program that compares process.nextTick() and Promise microtask execution order in CommonJS.
+* Create an ES module that demonstrates the execution order of process.nextTick() and Promise callbacks.
+* Write a program demonstrating how setTimeout() and setImmediate() behave inside an I/O callback.
+* Implement an asynchronous file-reading example that does not block the main thread.
+* Write a program that demonstrates how synchronous file-system operations block other callbacks.
+* Create a recursive next-tick example and explain how it affects I/O processing.
+* Implement a Promise chain that demonstrates microtask scheduling.
+* Write code that divides a CPU-intensive computation into smaller chunks using setImmediate().
+* Implement an Express endpoint that reports event-loop utilization.
+* Write a Node.js script that measures event-loop delay using monitorEventLoopDelay().
+* Implement periodic monitoring of event-loop utilization and delay, with structured logging.
+* Write a benchmark that compares synchronous and asynchronous file operations.
+* Create a program that compares main-thread execution with worker-thread execution for a CPU-intensive task.
+* Implement a worker-thread pool that processes CPU-intensive tasks with a configurable worker limit.
+* Write code that limits the number of concurrent asynchronous operations.
+* Implement a task queue that processes jobs in batches to avoid overwhelming the event loop.
+* Create a streaming pipeline that uses backpressure to process large files efficiently.
+* Write a program that parses a large JSON file incrementally instead of loading the entire file into memory.
+* Implement an API that offloads expensive computations to worker threads.
+* Write a script that measures request latency while a CPU-intensive task runs.
+* Implement a task scheduler that yields to the event loop between batches of work.
+* Create a program that compares event-loop delay before and after moving CPU-intensive work to worker threads.
+* Write code that handles worker-thread errors, exits, and task failures safely.
+* Implement graceful cancellation of long-running asynchronous operations using AbortController.
+* Write a program that demonstrates timer delays when the event loop is blocked.
+* Create a load-testing script that records throughput, response latency, and event-loop delay.
+* Implement an Express middleware that records request duration and associates it with event-loop metrics.
+* Build a production-ready Node.js performance-monitoring utility that tracks event-loop utilization, delay, memory usage, and worker-pool performance.

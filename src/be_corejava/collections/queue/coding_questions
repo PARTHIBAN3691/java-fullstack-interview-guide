@@ -1,0 +1,35 @@
+# Core Java — Collections — Queue
+## Coding Questions
+
+### Level 0 — Easy
+* Write a Java program to create a Queue and add, retrieve, and remove elements.
+* Write a program to demonstrate the difference between `poll()` and `remove()`.
+* Write a program to implement FIFO processing using LinkedList.
+* Write a program to create a PriorityQueue of integers and process elements in priority order.
+* Write a program to create a max-priority queue using a Comparator.
+* Write a program to implement a stack using ArrayDeque.
+* Write a program to iterate over a Queue and print its elements.
+* Write a program to reverse the elements of a Queue.
+
+### Level 1 — Medium
+* Write a program to merge two sorted arrays using a PriorityQueue.
+* Write a program to find the Kth-largest element in an array using a PriorityQueue.
+* Write a program to generate the first N numbers in a sequence using a Queue.
+* Write a program to implement a producer-consumer workflow using BlockingQueue.
+* Write a program to reverse the first K elements of a Queue.
+* Write a program to generate binary numbers from 1 to N using a Queue.
+* Write a program to implement a sliding-window maximum using a Deque.
+* Write a program to maintain a stable priority order for tasks with equal priorities.
+* Write a program to process a stream of integers and maintain the K largest values using a PriorityQueue.
+
+### Level 2 — Difficult
+* Implement a custom circular-array Queue supporting enqueue, dequeue, peek, and resizing.
+* Implement a custom linked-list-based Queue with O(1) insertion and removal.
+* Design a bounded producer-consumer system using BlockingQueue with graceful shutdown.
+* Implement a task scheduler that supports priority, FIFO tie-breaking, and cancellation.
+* Implement a sliding-window maximum algorithm using a monotonic Deque in O(n) time.
+* Given a stream of numbers, calculate the running median using two PriorityQueues.
+* Design a bounded work queue with configurable overload behavior and metrics.
+* Implement a multi-threaded task-processing pipeline that handles interruption, retries, and graceful shutdown.
+* Write a benchmark using JMH to compare ArrayDeque, LinkedList, ArrayBlockingQueue, and LinkedBlockingQueue.
+* Design a queue-based system that processes tasks in FIFO order per customer while allowing concurrent processing across customers.

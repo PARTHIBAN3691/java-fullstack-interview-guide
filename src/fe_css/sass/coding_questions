@@ -1,0 +1,30 @@
+* Declare Sass variables for primary color, secondary color, and font size, then use them in a CSS rule.
+* Write SCSS to style a button using nested selectors.
+* Use the parent selector (&) to define hover, focus, and active states for a button.
+* Create a Sass partial for common variables and load it using @use.
+* Create a Sass module containing reusable typography variables and mixins.
+* Write a mixin that applies common padding and border-radius styles to a card.
+* Create a parameterized mixin for setting font size, weight, and line height.
+* Write a mixin with default arguments for margin and padding.
+* Create a mixin that accepts keyword arguments and generates responsive styles.
+* Write a Sass function that converts pixels to rem units.
+* Create a Sass function that returns a spacing value from a predefined scale.
+* Use @each to generate CSS classes for primary, secondary, and danger button variants.
+* Use a Sass map to define colors and generate corresponding utility classes.
+* Write a Sass @for loop to generate margin utility classes.
+* Use @each to generate responsive width classes from a map of breakpoints.
+* Create a placeholder selector and use @extend to share common styles.
+* Write SCSS demonstrating the difference between a mixin and @extend.
+* Use @forward to expose selected variables and mixins from a Sass module.
+* Create a nested Sass map for typography settings and retrieve a heading font size.
+* Write a Sass function that validates a spacing value and raises an error for invalid input.
+* Create a configurable breakpoint mixin using Sass variables and parameters.
+* Build a reusable media-query mixin for mobile, tablet, and desktop breakpoints.
+* Create a Sass map for z-index layers and use it to style a modal and dropdown.
+* Write SCSS that generates CSS custom properties from a Sass color map.
+* Implement light and dark themes using Sass maps and CSS custom properties.
+* Refactor deeply nested SCSS selectors into simpler, maintainable component selectors.
+* Create a reusable grid mixin that accepts column count and gap values.
+* Write Sass code that demonstrates local variable scope and the !global flag.
+* Migrate a small stylesheet from the legacy @import syntax to @use and @forward.
+* Build a modular Sass architecture containing abstracts, base styles, components, layouts, and themes.

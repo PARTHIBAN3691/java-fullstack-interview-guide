@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK for Java 2.x to publish a custom metric named `OrderCount` to Amazon CloudWatch.
+* Write a Java program to retrieve CPU utilization metrics for a specific EC2 instance using the CloudWatch `GetMetricStatistics` API.
+* Write a Java program using `GetMetricData` to retrieve multiple CloudWatch metrics in a single request.
+* Write a Java program to create a CloudWatch alarm when EC2 CPU utilization exceeds 80% for five consecutive minutes.
+* Write a Java program to describe existing CloudWatch alarms and print their names and current states.
+* Write a Java program to retrieve the latest log events from a specified CloudWatch log stream.
+* Write a Java program to create a CloudWatch log group and configure its retention period.
+* Write a Java program to create a CloudWatch log stream and publish log events to it.
+* Write a Java program to execute a CloudWatch Logs Insights query and retrieve its results.
+* Write a Java program to publish custom application metrics with dimensions such as service name and environment.
+* Write a Spring Boot service that publishes order-processing success and failure metrics to CloudWatch.
+* Write a Spring Boot configuration that integrates Micrometer with CloudWatch metrics.
+* Write a Java program to retrieve the state and configuration details of a specified CloudWatch alarm.
+* Write a Java program to create a CloudWatch dashboard containing CPU utilization and network traffic widgets for an EC2 instance.
+* Write a Java program to send custom metrics in batches while respecting CloudWatch API constraints.
+* Write a Java program to handle CloudWatch API throttling using exponential backoff and retry logic.
+* Write a Java program to detect failed payment events from CloudWatch Logs Insights query results.
+* Write a Java program to publish a high-resolution custom metric and configure the appropriate metric storage resolution.
+* Write a Java program to list log groups and identify those without an appropriate retention policy.
+* Design and implement a Spring Boot monitoring component that publishes business metrics, handles AWS SDK errors, and supports configurable metric namespaces and dimensions.

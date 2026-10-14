@@ -1,0 +1,30 @@
+* A payment service becomes unavailable, and multiple upstream services begin failing. How would you prevent cascading failures?
+* A downstream API responds slowly, causing request threads to accumulate. How would you protect your service?
+* A circuit breaker opens during a temporary outage but does not recover after the dependency becomes healthy. How would you investigate?
+* A service retries every failed request three times, and traffic increases sharply during an outage. How would you reduce retry amplification?
+* Two microservices both implement retries, resulting in dozens of downstream attempts for one user request. How would you redesign the retry strategy?
+* A payment request times out, but the payment provider may have processed it successfully. How would you retry safely?
+* An inventory service returns intermittent HTTP 503 responses. How would you configure retries, timeouts, and circuit breaking?
+* A downstream service fails, and your fallback returns cached data that may be outdated. How would you decide whether the fallback is safe?
+* A thread pool becomes exhausted because one external API is slow. How would you isolate the failure?
+* A rate limiter rejects legitimate traffic during a sudden business peak. How would you tune it?
+* A circuit breaker opens because of expected business exceptions rather than infrastructure failures. How would you correct the configuration?
+* A low-volume service experiences occasional failures, causing its circuit breaker to open too frequently. How would you address this?
+* A Kafka consumer repeatedly fails on one malformed message and stops making progress. How would you handle the poison message?
+* A downstream service recovers after a long outage, but retry traffic immediately overloads it again. How would you control recovery traffic?
+* A WebClient request times out, but the remote service continues processing it. How would you prevent duplicate side effects?
+* A microservice has a fallback that returns HTTP 200 even when the business operation failed. What risks does this create, and how would you fix it?
+* A database connection pool is exhausted during peak traffic. Which resilience mechanisms would you apply?
+* A service has separate thread pools for different dependencies, but one dependency still affects unrelated requests. How would you investigate?
+* A regional outage affects one instance group, while another region remains healthy. How would you design failover and traffic routing?
+* Kubernetes repeatedly restarts an application because its readiness endpoint depends on an unavailable external service. How would you redesign the health checks?
+* A circuit breaker uses a long open-state wait duration, delaying recovery after the dependency becomes healthy. How would you tune it?
+* A bulkhead rejects requests even though the downstream service is healthy. How would you identify whether the issue is pool sizing or application throughput?
+* A retry mechanism uses fixed delays, and all clients retry at the same time. How would you avoid synchronized traffic spikes?
+* A third-party API imposes strict rate limits. How would you prevent your microservices from exceeding those limits?
+* A business workflow partially completes before a downstream service fails. How would you recover without corrupting business state?
+* A fallback uses stale product prices during a checkout operation. How would you prevent incorrect orders?
+* During a traffic spike, the service becomes overloaded before the circuit breaker opens. How would you improve overload protection?
+* A dependency intermittently returns HTTP 429 responses. How would you honor rate limits and configure retry delays?
+* A chaos experiment introduces network latency, packet loss, and service restarts. How would you verify that the system degrades gracefully?
+* You are designing resilience for a high-volume financial platform. How would you combine deadlines, retries, idempotency, circuit breakers, bulkheads, monitoring, and recovery procedures?

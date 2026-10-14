@@ -1,0 +1,30 @@
+* Write a JUnit 5 unit test for a Spring service using Mockito.
+* Write a Spring Boot test using @SpringBootTest.
+* Write a Spring Boot controller test using @WebMvcTest.
+* Write a MockMvc test for a GET endpoint.
+* Write a MockMvc test for a POST endpoint with JSON request data.
+* Write a MockMvc test that verifies HTTP status and JSON response fields.
+* Write a MockMvc test for request validation failure.
+* Write a MockMvc test for a path variable.
+* Write a MockMvc test for query parameters.
+* Write a MockMvc test for custom HTTP headers.
+* Write a test for a Spring @ControllerAdvice exception handler.
+* Write a unit test for a service using @Mock and @InjectMocks.
+* Write a Spring test using @MockBean to mock a repository.
+* Write a test that verifies a repository method is called exactly once.
+* Write a @DataJpaTest for a Spring Data JPA repository.
+* Write a repository integration test for a custom JPQL query.
+* Write a repository test that verifies entity persistence and retrieval.
+* Write a Spring test using an embedded H2 database.
+* Write a Spring test using @Sql to insert test data.
+* Write a test that verifies transaction rollback behavior.
+* Write a Spring Security test for an authenticated user.
+* Write a Spring Security test for an unauthorized user.
+* Write a Spring Security test for role-based access using @WithMockUser.
+* Write a MockMvc test for an endpoint protected by @PreAuthorize.
+* Write a Spring Boot test using Testcontainers with PostgreSQL.
+* Write a Spring Boot integration test that uses a containerized database.
+* Write a test for a REST client using WireMock or MockWebServer.
+* Write a Spring Boot test for a Kafka producer and consumer.
+* Write a Spring Boot test for a scheduled service.
+* Write an integration test for an Order API covering controller, service, repository, database, and error handling.

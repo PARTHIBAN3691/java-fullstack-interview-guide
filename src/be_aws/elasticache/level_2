@@ -1,0 +1,21 @@
+
+* How would you design a distributed caching architecture for a high-traffic Java microservices platform?
+* How would you choose between Redis or Valkey and Memcached for a production workload?
+* How would you design a cache-aside strategy that maintains acceptable consistency between a relational database and ElastiCache?
+* How would you prevent cache stampedes when a frequently accessed key expires?
+* How would you prevent cache penetration caused by repeated requests for nonexistent records?
+* How would you handle cache avalanche scenarios in which many keys expire simultaneously?
+* How would you design a Redis-based distributed locking mechanism that safely handles lock expiry and process failure?
+* How would you prevent race conditions when multiple Java services update the same cached object?
+* How would you design a Redis cluster for high availability, horizontal scaling, and predictable latency?
+* How would you troubleshoot increasing cache latency despite sufficient CPU and memory capacity?
+* How would you size ElastiCache memory based on key count, value size, expiration policy, and replication overhead?
+* How would you design cache invalidation across multiple microservices when database changes occur?
+* How would you handle Redis failover without causing a large increase in database load?
+* How would you implement a distributed rate limiter using Redis while accounting for concurrent requests and multiple application instances?
+* How would you implement idempotency for payment or order-processing APIs using Redis?
+* How would you design a session-management solution using ElastiCache for a horizontally scaled Java application?
+* How would you use Redis Pub/Sub or Redis Streams for communication between distributed services, and what delivery guarantees would you consider?
+* How would you secure ElastiCache against unauthorized access, credential exposure, and unencrypted network traffic?
+* How would you plan a migration from a self-managed Redis deployment to Amazon ElastiCache with minimal downtime?
+* How would you compare the cost and performance of ElastiCache with local in-process caching and database read replicas?

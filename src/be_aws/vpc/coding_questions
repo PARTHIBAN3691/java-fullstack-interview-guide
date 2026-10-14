@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to describe the VPCs available in an AWS account.
+* Write a Java program to list all subnets associated with a specified VPC.
+* Implement a Java method to retrieve security group details for a given VPC.
+* Write a Java program to list route tables and their associated subnets using AWS SDK v2.
+* Implement a Java service that retrieves VPC Flow Logs configuration for a specified VPC.
+* Write a Java method to identify subnets that do not have an explicit route to an Internet Gateway.
+* Implement a Java utility that validates whether a CIDR block belongs to a specified VPC address range.
+* Write a Java program that retrieves EC2 instance network interfaces and their associated security groups.
+* Implement a Java service that checks whether an EC2 instance has a public IPv4 address.
+* Write a Java method to identify security group rules that allow inbound access from `0.0.0.0/0` or `::/0`.
+* Implement a Java utility that compares security group rules against a predefined network security policy.
+* Write a Java program to retrieve VPC endpoint details and identify the AWS services they support.
+* Implement a Java health-check component that tests connectivity from a Java application to a configured internal service endpoint.
+* Write unit tests for a VPC inventory service using JUnit and Mockito.
+* Implement a Java method that detects overlapping IPv4 CIDR ranges between VPCs.
+* Write a Java program that uses AWS SDK v2 to retrieve Transit Gateway attachments and their associated VPCs.
+* Implement a Java service that reports missing VPC Flow Logs for resources covered by an organizational security policy.
+* Write a Java utility that checks whether a subnet has a route to a NAT Gateway for outbound connectivity.
+* Implement a Spring Boot REST endpoint that exposes authorized VPC inventory information without revealing sensitive configuration data.
+* Design and implement an AWS network auditing tool in Java that inventories VPCs, subnets, route tables, security groups, and endpoints, and reports potential misconfigurations.

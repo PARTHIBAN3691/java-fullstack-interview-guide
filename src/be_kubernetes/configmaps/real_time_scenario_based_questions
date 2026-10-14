@@ -1,0 +1,30 @@
+* A Spring Boot application starts locally but fails in Kubernetes because a required property is missing. How would you troubleshoot the ConfigMap configuration?
+* You update a ConfigMap, but the running application continues using the old value. How would you investigate?
+* A ConfigMap update changes a mounted file, but the Spring Boot application does not reload the property. How would you resolve this?
+* A Deployment uses ConfigMap values as environment variables. Why does updating the ConfigMap not update existing container environments?
+* A production configuration change causes all application replicas to fail their readiness probes. How would you recover safely?
+* Different Pods of the same microservice appear to use different configuration values. How would you identify the cause?
+* A ConfigMap is accidentally deleted while running Pods still depend on it. What happens, and how would you recover?
+* A newly created Pod remains in ContainerCreating because of a ConfigMap reference. How would you diagnose the issue?
+* A configuration change must be deployed without application downtime. How would you implement the rollout?
+* A team manually edits production ConfigMaps, causing configuration drift. How would you establish controlled configuration management?
+* A Spring Boot application requires different database URLs and feature flags in development, staging, and production. How would you organize the ConfigMaps?
+* A ConfigMap contains a large application configuration file and exceeds the Kubernetes size limit. What alternatives would you consider?
+* A configuration update introduces an invalid timeout value that causes downstream request failures. How would you prevent similar incidents?
+* An application needs to reload feature flags dynamically without restarting Pods. How would you design the configuration mechanism?
+* A ConfigMap update is reflected in some mounted files but not others. How would you investigate the mount configuration and application behavior?
+* A Pod references a ConfigMap from another namespace and fails to start. How would you correct the design?
+* A developer accidentally stores a database password in a ConfigMap. What security actions should be taken?
+* A service account can read every ConfigMap across the cluster. How would you reduce its permissions?
+* A Helm deployment overwrites environment-specific configuration during an upgrade. How would you troubleshoot and prevent recurrence?
+* A Kustomize-generated ConfigMap changes its name after an update, but the Deployment still references the old name. How would you diagnose this?
+* A configuration change requires restarting hundreds of microservices. How would you coordinate the rollout and reduce risk?
+* A production rollback restores the old application image but leaves the new configuration in place. How would you prevent this mismatch?
+* A mounted configuration file is updated while the application is reading it. How would you ensure the application handles configuration changes safely?
+* A microservice uses a ConfigMap to control connection-pool size, and an incorrect value overloads the database. How would you implement validation and recovery?
+* A cluster experiences API Server connectivity problems during a configuration rollout. How would you determine which Pods have received the new configuration?
+* A team wants immutable configuration for auditing and reproducibility. How would you design versioned ConfigMaps and rollout procedures?
+* A feature flag must be enabled gradually for a small percentage of users. Would you use a ConfigMap alone, and what alternatives would you consider?
+* Two application versions require incompatible configuration formats during a rolling deployment. How would you maintain compatibility?
+* A production incident requires identifying exactly which configuration version each Pod was using. How would you design traceability?
+* You need to promote a validated configuration from staging to production across multiple clusters. How would you design the promotion workflow?

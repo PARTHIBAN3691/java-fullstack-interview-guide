@@ -1,0 +1,15 @@
+* A Java application experiences frequent garbage collection and slow response times. How would you investigate the issue?
+* An application uses 90% of its heap memory even after garbage collection. What would you check first?
+* A service throws `OutOfMemoryError` despite frequent garbage collection. How would you identify the root cause?
+* A long-running application gradually consumes more heap memory over several days. How would you determine whether it has a memory leak?
+* A developer sets object references to `null` expecting immediate memory reclamation. How would you explain the actual behavior?
+* A collection contains objects that are no longer needed by the business logic, but the heap dump shows that they remain reachable. How would you investigate?
+* An application has many circular object references. How would you determine whether these objects can be garbage-collected?
+* A production application experiences long Full GC pauses during peak traffic. Which metrics and logs would you inspect?
+* A service has low average heap usage but experiences sudden allocation spikes. How would you diagnose the issue?
+* An application experiences `OutOfMemoryError: Metaspace` while the Java heap has free space. How would you investigate?
+* A service consumes large amounts of off-heap memory while heap metrics look normal. What would you inspect?
+* A developer added `System.gc()` after processing every request to reduce memory usage. What problems could this cause?
+* A memory leak appears only after repeated deployments or class-loader reloads. How would you investigate the possibility of a class-loader leak?
+* A batch-processing application creates millions of temporary objects. How would you determine whether the allocation pattern is affecting throughput?
+* An application must meet strict response-time requirements. How would you select and validate a suitable garbage collection strategy?

@@ -1,0 +1,30 @@
+* How would you design a distributed system that serves millions of requests per second?
+* How would you design a fault-tolerant distributed architecture across multiple regions?
+* How does the CAP theorem apply during a network partition?
+* What are the limitations of the CAP theorem when making practical architecture decisions?
+* How do consensus algorithms help distributed nodes agree on a value?
+* How does the Raft consensus algorithm work?
+* How does Paxos achieve consensus despite node failures?
+* What is the difference between consensus and distributed atomic broadcast?
+* How do leader election algorithms work in distributed systems?
+* How would you prevent split-brain scenarios during leader election?
+* How do fencing tokens protect against stale distributed lock holders?
+* How do quorum systems balance consistency, availability, and latency?
+* How does linearizability differ from sequential consistency and causal consistency?
+* How would you design a strongly consistent distributed key-value store?
+* How do distributed databases maintain consistency across replicas?
+* How do conflict-free replicated data types (CRDTs) support convergent updates?
+* How do you design exactly-once business effects over at-least-once message delivery?
+* What are the challenges of implementing distributed transactions at scale?
+* How does the transactional outbox pattern prevent dual-write inconsistencies?
+* How do sagas handle failures and compensating transactions?
+* How would you design a distributed event-processing platform with replay support?
+* How do backpressure and flow control prevent overload in distributed systems?
+* How would you handle cascading failures across dependent microservices?
+* How do distributed systems manage clock skew and timestamp-based ordering?
+* Why is a global total ordering of events difficult to achieve?
+* How would you design dynamic partition rebalancing without disrupting active traffic?
+* How do you handle hot partitions and uneven workloads in distributed systems?
+* How would you design disaster recovery with defined RPO and RTO targets?
+* How would you build observability across distributed traces, logs, and metrics?
+* How would you evaluate trade-offs among consistency, latency, availability, cost, and complexity?

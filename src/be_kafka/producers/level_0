@@ -1,0 +1,30 @@
+* What is a Kafka producer?
+* What is the responsibility of a Kafka producer?
+* How does a Kafka producer send messages to Kafka?
+* What is a `ProducerRecord` in Kafka?
+* What is the difference between a Kafka producer and a Kafka consumer?
+* What are the main components of a Kafka producer?
+* What is a Kafka topic from a producer's perspective?
+* What is a partition in Kafka?
+* How does a producer select a partition?
+* What is a message key in Kafka?
+* Why is the message key important for a producer?
+* What happens when a producer sends a message without a key?
+* What happens when a producer sends a message with a key?
+* What is serialization in a Kafka producer?
+* Why does a Kafka producer need serializers?
+* What is `key.serializer`?
+* What is `value.serializer`?
+* What is `bootstrap.servers`?
+* What is the purpose of `acks`?
+* What does `acks=0` mean?
+* What does `acks=1` mean?
+* What does `acks=all` mean?
+* What is producer buffering?
+* What is `buffer.memory`?
+* What is `batch.size`?
+* What is `linger.ms`?
+* What is `compression.type`?
+* What is the purpose of `retries` in a Kafka producer?
+* What is producer acknowledgement?
+* What is the difference between synchronous and asynchronous message sending?

@@ -1,0 +1,30 @@
+* How would you design a reusable JUnit 5 testing framework for a large Java application?
+* How does the JUnit Platform discover and execute test classes?
+* How do TestEngine implementations work in JUnit 5?
+* How do JUnit extensions work, and when would you implement a custom extension?
+* What is the difference between an extension and a test lifecycle callback?
+* How do you implement a custom JUnit 5 extension using BeforeEachCallback and AfterEachCallback?
+* How do you implement reusable test configuration using @ExtendWith?
+* How do you manage shared state and test isolation in JUnit?
+* How do you execute JUnit tests in parallel safely?
+* How do you configure parallel test execution in JUnit 5?
+* How do you prevent race conditions when parallel tests share resources?
+* How do you test asynchronous code using CompletableFuture and JUnit?
+* How do you test timeout-sensitive methods using assertTimeout() and assertTimeoutPreemptively()?
+* What is the difference between assertTimeout() and assertTimeoutPreemptively()?
+* How do you test multithreaded Java code without relying on timing assumptions?
+* How do you implement parameterized tests for complex test data objects?
+* How do you create dynamic tests for data-driven scenarios?
+* How do you combine JUnit 5 with Mockito, Spring Boot Test, and Testcontainers?
+* How do you manage test dependencies and lifecycle in Spring Boot integration tests?
+* How do you test transactional service methods and verify rollback behavior?
+* How do you isolate database state across JUnit integration tests?
+* How do you implement conditional test execution using JUnit conditions?
+* How do you write tests that execute only for a specific environment or system property?
+* How do you implement custom annotations for reusable test configurations?
+* How do you debug intermittent JUnit failures in a CI/CD pipeline?
+* How do you identify and eliminate flaky tests caused by shared state or asynchronous execution?
+* How do you improve the execution performance of a large JUnit test suite?
+* How do you integrate JUnit test results with JaCoCo code coverage reports?
+* How do you enforce test execution and coverage quality gates in CI/CD?
+* How would you migrate a large JUnit 4 codebase to JUnit 5 safely?

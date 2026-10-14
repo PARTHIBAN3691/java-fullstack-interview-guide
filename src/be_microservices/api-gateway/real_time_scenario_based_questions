@@ -1,0 +1,30 @@
+* Requests to one microservice are returning HTTP 503 through the gateway, but the service works when accessed directly. How would you investigate?
+* The API Gateway becomes a bottleneck during peak traffic. What metrics and architectural changes would you consider?
+* A gateway route works locally but fails after deployment to Kubernetes. How would you troubleshoot it?
+* A downstream service becomes slow, causing gateway request queues and timeouts to increase. What would you do?
+* A gateway retry policy causes duplicate payment transactions. How would you resolve the issue?
+* A JWT is valid, but requests are rejected by the gateway after a key rotation. How would you investigate?
+* Some users can access administrative APIs despite not having the required role. How would you identify the security gap?
+* One tenant consumes most of the available API capacity, affecting other tenants. How would you implement fair usage limits?
+* Redis becomes unavailable, affecting gateway rate limiting. How would you design the fallback behavior?
+* A new gateway release introduces increased latency across all APIs. How would you isolate and roll back the change?
+* Service discovery returns outdated instances after a deployment. How would you prevent requests from reaching terminated services?
+* A gateway route accidentally exposes an internal administrative endpoint. What immediate and long-term actions would you take?
+* A downstream service returns HTTP 429, and the gateway continues retrying requests. How would you correct the policy?
+* The gateway logs contain access tokens and personal information. How would you address the security and compliance risks?
+* A frontend application receives CORS errors after a gateway configuration change. How would you troubleshoot them?
+* A large file upload fails intermittently through the gateway but succeeds when sent directly to the service. What would you investigate?
+* Gateway instances restart during deployments and interrupt long-running requests. How would you improve deployment behavior?
+* A single global filter adds significant latency to every request. How would you identify and optimize the problem?
+* A reactive gateway experiences high CPU usage and thread starvation. How would you determine whether blocking operations are responsible?
+* A circuit breaker opens during a brief downstream outage and remains unavailable longer than expected. How would you tune the configuration?
+* Different microservices require different authentication rules. How would you design a maintainable gateway security configuration?
+* A new API version must be released without breaking existing consumers. How would you route traffic safely?
+* A canary deployment introduces errors for only a small percentage of requests. How would you detect and stop the rollout?
+* External clients are sending malformed or excessively large requests. How would you protect downstream services?
+* Distributed tracing shows missing spans between the gateway and backend services. How would you investigate context propagation?
+* Gateway health checks report healthy instances even when critical routes cannot reach their downstream services. How would you improve health monitoring?
+* A security audit requires internal microservices to reject requests that bypass the gateway. How would you enforce this?
+* A business requires different rate limits for premium and standard customers. How would you implement the policy?
+* A gateway migration from one platform to another must happen without downtime. How would you plan and execute the migration?
+* A production incident affects every service routed through the gateway. How would you coordinate mitigation, communication, and root-cause analysis?

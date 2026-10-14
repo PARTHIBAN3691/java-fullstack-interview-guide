@@ -1,0 +1,30 @@
+* Explain the complete middleware execution flow in Express.js.
+* How does Express.js determine which middleware should execute?
+* What happens when multiple middleware functions are registered using app.use()?
+* How do you apply middleware only to specific routes?
+* How do you apply middleware to a specific route prefix?
+* How do you create reusable middleware using a separate module?
+* How do you pass custom arguments to middleware functions?
+* How do you create configurable middleware using a factory function?
+* How do you implement authentication middleware in Express.js?
+* How do you implement role-based authorization middleware?
+* How do you validate request parameters using middleware?
+* How do you validate request bodies before reaching a controller?
+* How do you implement centralized error handling using middleware?
+* How do you handle asynchronous errors inside middleware?
+* What is the difference between Express 4 and Express 5 in asynchronous error handling?
+* How do you create middleware that logs request duration and response status?
+* How do you generate and propagate correlation IDs using middleware?
+* How do you implement rate-limiting middleware?
+* How do you configure CORS using middleware?
+* How do you secure HTTP headers using Helmet middleware?
+* How do you implement request-body size limits?
+* How do you prevent middleware from sending duplicate responses?
+* How do you handle middleware that depends on data loaded by previous middleware?
+* How do you skip middleware for selected routes?
+* How do you implement middleware for handling file uploads?
+* How do you write unit tests for custom middleware?
+* How do you mock req, res, and next when testing middleware?
+* How do you measure middleware execution time and performance overhead?
+* How do you organize middleware in a large Express application?
+* What are the differences between middleware and interceptors in other frameworks?

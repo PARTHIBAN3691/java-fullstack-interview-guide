@@ -1,0 +1,30 @@
+* Explain how a relational database query optimizer chooses an execution plan.
+* What are cardinality estimation and selectivity, and how do they influence query execution?
+* How do you analyze an execution plan to identify expensive SQL operations?
+* How do nested-loop, hash, and merge joins differ in execution and performance?
+* Under what conditions can a nested-loop join outperform a hash join?
+* How do composite indexes work, and why does column order matter?
+* What are covering, partial, and function-based indexes?
+* How do indexes affect SELECT, INSERT, UPDATE, and DELETE performance?
+* How do you identify redundant or unused indexes?
+* How do database statistics influence query optimization?
+* How do you optimize a query that joins several large tables?
+* How do you optimize correlated subqueries and repeated calculations?
+* How do window functions affect memory usage and query performance?
+* How do you optimize GROUP BY operations on large datasets?
+* How do you optimize deep pagination for tables containing millions of rows?
+* What are the differences between offset pagination and keyset pagination?
+* How do transaction isolation levels prevent dirty reads, non-repeatable reads, and phantom reads?
+* What are deadlocks, and how do you identify and resolve them?
+* How do optimistic locking and pessimistic locking differ?
+* How do indexes and locking interact during concurrent updates?
+* What is the difference between optimistic concurrency control and multiversion concurrency control (MVCC)?
+* How do partitioning and sharding differ, and when would you choose each?
+* How do recursive queries work, and how can you prevent infinite recursion?
+* How do materialized views differ from regular views, and when are they beneficial?
+* How do you implement idempotent database operations for retryable application requests?
+* How do you design a transaction that updates multiple related tables while maintaining data integrity?
+* How do you handle concurrent balance updates without losing transactions?
+* How do you optimize bulk inserts and updates from a Java application?
+* How do you detect and prevent performance regressions in frequently executed SQL queries?
+* How would you design SQL access patterns for a high-throughput Java application with strict consistency and latency requirements?

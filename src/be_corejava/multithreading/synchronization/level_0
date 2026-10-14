@@ -1,0 +1,21 @@
+
+* What is synchronization in Java?
+* Why is synchronization required in multithreaded applications?
+* What is a race condition?
+* What is a critical section?
+* What is a thread-safe class?
+* What is the `synchronized` keyword in Java?
+* What is a synchronized method?
+* What is a synchronized block?
+* What is the difference between a synchronized method and a synchronized block?
+* What is an intrinsic lock or monitor lock in Java?
+* What is an object's monitor?
+* How does synchronization prevent multiple threads from accessing shared data simultaneously?
+* Can two threads execute two synchronized methods on the same object simultaneously?
+* Can two threads execute a synchronized method on different objects of the same class simultaneously?
+* What is the difference between instance-level and class-level synchronization?
+* How do you declare a static synchronized method?
+* What object lock is acquired when a static synchronized method is invoked?
+* Can a constructor be declared `synchronized`?
+* Can a synchronized method be overridden in a subclass?
+* Does synchronization guarantee the order in which threads acquire a lock?

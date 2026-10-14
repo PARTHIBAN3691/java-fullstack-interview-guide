@@ -1,0 +1,30 @@
+* Your REST API returns 500 errors intermittently in production. How would you investigate the root cause?
+* A client receives a timeout while creating an order, retries the request, and creates duplicate orders. How would you prevent this?
+* Your API becomes slow when returning thousands of records. How would you optimize the endpoint?
+* Multiple clients update the same resource simultaneously, causing lost updates. How would you resolve the issue?
+* A downstream payment service becomes unavailable, causing your API to fail. How would you maintain resilience?
+* Your REST API receives malformed JSON requests and crashes unexpectedly. How would you handle the situation?
+* An endpoint works in Postman but fails when called from a browser because of CORS. How would you troubleshoot it?
+* A user can access another user's account by changing an ID in the URL. How would you identify and fix the vulnerability?
+* Your API is experiencing brute-force login attempts. What protections would you implement?
+* A JWT is valid, but the user can access an endpoint they should not be allowed to use. How would you investigate?
+* An API version change breaks existing mobile clients. How would you resolve the compatibility issue?
+* Your API has inconsistent error response formats across endpoints. How would you standardize them?
+* An external API sometimes responds after your request has timed out. How would you prevent duplicate side effects?
+* Your rate limiter works on one server but fails when the application scales to multiple instances. How would you fix it?
+* A REST API endpoint is vulnerable to SQL injection through a filter parameter. How would you remediate it?
+* Your API receives a large file upload that consumes excessive memory. How would you redesign the endpoint?
+* A client sends the same request multiple times because of network instability. How would you ensure safe processing?
+* A database transaction succeeds, but publishing the related event fails. How would you maintain consistency?
+* Your API depends on three downstream services, and one of them is slow. How would you minimize the overall response time?
+* An API returns HTTP 200 even when a business operation fails. How would you correct the response contract?
+* Your production API has high p99 latency despite acceptable average latency. How would you investigate it?
+* A malicious client sends thousands of expensive filter and sorting combinations. How would you protect the API?
+* A deployment introduces a breaking response field change. How would you roll it out safely?
+* Your API exposes sensitive details in stack traces returned to clients. How would you fix the issue?
+* An endpoint returns duplicate records when clients use pagination during frequent database updates. How would you improve consistency?
+* A REST API is called repeatedly by multiple services, increasing database load. How would you implement effective caching?
+* Your service receives a request with a valid token but a revoked user account. How would you handle authorization and token validity?
+* A long-running report-generation endpoint frequently times out. How would you redesign it using asynchronous processing?
+* Your API must handle a sudden tenfold increase in traffic without overwhelming the database. What changes would you make?
+* How would you design a secure and reliable REST API for a financial transaction platform using Node.js?

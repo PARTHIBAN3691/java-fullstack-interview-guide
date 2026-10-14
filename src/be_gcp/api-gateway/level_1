@@ -1,0 +1,30 @@
+* How do you configure Google Cloud API Gateway to route requests to a Spring Boot application running on Cloud Run?
+* How do you define multiple backend services in an OpenAPI specification?
+* How do you configure different paths and HTTP methods for backend endpoints?
+* How do you configure API key validation in Google Cloud API Gateway?
+* How do you restrict an API so that only authorized clients can invoke it?
+* How do you configure JWT authentication for an API exposed through Google Cloud API Gateway?
+* How does Google Cloud API Gateway validate JWT tokens using an OpenAPI security definition?
+* How do you configure a Google-signed identity token for authenticating to a protected Cloud Run backend?
+* What is the difference between a client JWT and a Google-signed identity token used for backend authentication?
+* How do you configure the API Gateway service account with the minimum permissions required to invoke Cloud Run?
+* How do you configure CORS for a Spring Boot API exposed through Google Cloud API Gateway?
+* How do you configure request and response transformations when the backend expects a different payload format?
+* How do you handle query parameters, path parameters, and request headers in API Gateway?
+* How do you expose multiple Spring Boot microservices through a single API Gateway?
+* How do you implement API versioning using URL paths such as /v1 and /v2?
+* How do you separate development, testing, staging, and production API Gateway deployments?
+* How do you automate API Gateway deployment using Terraform?
+* How do you deploy an OpenAPI configuration through the Google Cloud CLI?
+* How do you manage OpenAPI specifications and API Gateway configuration changes in CI/CD pipelines?
+* How do you configure logging and monitoring for API Gateway using Cloud Logging and Cloud Monitoring?
+* How do you investigate 401 Unauthorized and 403 Forbidden errors at the gateway?
+* How do you troubleshoot 404 Not Found and 502 Bad Gateway responses?
+* How do you identify whether a failed request originates from API Gateway or the backend service?
+* How do you secure communication between API Gateway and a private or authenticated backend?
+* How do you apply quotas and monitor API usage in Google Cloud API Gateway?
+* How do you protect a backend service from excessive traffic when API Gateway is the public entry point?
+* How do you handle API Gateway deployment failures caused by an invalid OpenAPI document?
+* How do you manage service account permissions across multiple Google Cloud projects?
+* How do you test an API Gateway endpoint using Postman or curl?
+* How do you design a reusable API Gateway configuration for several Java microservices?

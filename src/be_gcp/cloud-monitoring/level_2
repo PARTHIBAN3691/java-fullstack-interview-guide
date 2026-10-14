@@ -1,0 +1,30 @@
+* How would you design a centralized monitoring architecture for hundreds of Java microservices across multiple Google Cloud projects?
+* How would you define meaningful SLIs and SLOs for a high-volume payment API?
+* How would you design an alerting strategy that detects real customer impact while minimizing false positives?
+* How would you calculate and manage error budgets for critical enterprise services?
+* How would you implement multi-window, multi-burn-rate alerting for SLO violations?
+* How would you design custom metrics for business transactions without creating excessive metric cardinality?
+* How would you prevent high-cardinality labels from increasing monitoring costs?
+* How would you choose between built-in metrics, custom metrics, and Prometheus metrics?
+* How would you design monitoring for a distributed application spanning Cloud Run, GKE, Pub/Sub, and BigQuery?
+* How would you correlate latency, error rates, saturation, and traffic to identify service degradation?
+* How would you monitor JVM heap usage, garbage collection pauses, thread pools, and connection pools?
+* How would you distinguish memory leaks from normal JVM memory growth using monitoring data?
+* How would you monitor autoscaling behavior and identify capacity bottlenecks?
+* How would you design dashboards for developers, operations teams, and business stakeholders?
+* How would you monitor a multi-region application and detect region-specific failures?
+* How would you design monitoring for service dependencies and cascading failures?
+* How would you monitor asynchronous processing and measure end-to-end event latency?
+* How would you design an alerting strategy for delayed Pub/Sub messages and growing subscriber backlogs?
+* How would you monitor database connection exhaustion and connection-pool saturation?
+* How would you monitor application availability when individual instances are frequently created and terminated?
+* How would you design synthetic monitoring for critical business journeys?
+* How would you integrate Cloud Monitoring with incident-management and on-call workflows?
+* How would you use Cloud Monitoring API quotas and rate limits efficiently when publishing custom metrics?
+* How would you troubleshoot gaps in custom metric data caused by application restarts or exporter failures?
+* How would you implement monitoring-as-code for dashboards, alert policies, and SLOs?
+* How would you manage monitoring configuration consistently across development, staging, and production?
+* How would you design monitoring and alerting for a service with strict latency and availability requirements?
+* How would you distinguish infrastructure incidents from application-level failures using metrics and traces?
+* How would you optimize monitoring costs while preserving essential observability and incident-detection capabilities?
+* How would you build a reliability review process using SLO compliance, error budgets, incident history, and latency trends?

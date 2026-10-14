@@ -1,0 +1,30 @@
+* Explain how browsers interpret and render different HTML input types.
+* How does the browser's constraint validation API work with input elements?
+* What is the difference between validity.valid, validity.valueMissing, and validity.typeMismatch?
+* How do checkValidity(), reportValidity(), and setCustomValidity() work?
+* How does the pattern attribute behave with modern HTML input validation?
+* Why should client-side validation not replace server-side validation?
+* How does the browser serialize different input types during form submission?
+* Why are unchecked checkboxes and radio buttons excluded from form submission?
+* How does an input's name attribute affect the submitted form data?
+* How do disabled, readonly, and hidden inputs differ during form submission?
+* How does the browser handle invalid values assigned to date and number inputs?
+* What happens when a value violates the min, max, or step constraints?
+* How do locale settings affect number, date, and time input interfaces?
+* How do browsers handle unsupported input types?
+* What are the browser compatibility considerations for datetime-local, week, and month inputs?
+* How does the accept attribute influence file selection, and why is it not a security control?
+* What security risks are associated with accepting uploaded files?
+* How should applications validate uploaded file types and sizes on the server?
+* How does autocomplete support browser autofill and password managers?
+* What are the accessibility considerations for custom-styled input controls?
+* How can JavaScript change an input's type dynamically, and what limitations exist?
+* How do input events differ from change events across different input types?
+* How can event handling differ for checkbox, radio, range, and text inputs?
+* What are the differences between valueAsNumber, valueAsDate, and the value property?
+* How do input type="number" and inputmode="numeric" differ?
+* When should inputmode be used instead of input type="number"?
+* How can you prevent accidental changes to numeric values while preserving keyboard accessibility?
+* How do formnovalidate and novalidate affect input validation?
+* How would you implement robust validation for a form containing multiple input types?
+* How would you design a reusable, accessible, and secure input component system for an enterprise application?

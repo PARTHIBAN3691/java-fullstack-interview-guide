@@ -1,0 +1,30 @@
+* Your Spring Boot container starts before PostgreSQL is ready and fails with a connection error. How would you fix the startup behavior?
+* A service connects to localhost:5432 instead of the PostgreSQL Compose service. Why does this fail, and how would you correct it?
+* Your application works when started manually but fails when started through Docker Compose. How would you compare the environment, command, network, and configuration?
+* After running docker compose down and starting the application again, the database appears empty. How would you investigate volume configuration?
+* A developer changes the Dockerfile, but docker compose up continues to run the old application image. How would you troubleshoot the build and recreation process?
+* Your Compose application has five services, but only the Redis service needs to be restarted. How would you do this without unnecessarily disrupting the other services?
+* A PostgreSQL container is running, but the Spring Boot application cannot connect to it. How would you investigate service names, ports, credentials, and network membership?
+* Two developers use different local ports for the same Spring Boot application. How would you make the Compose configuration portable?
+* A service repeatedly restarts because a required environment variable is missing. How would you detect and prevent this configuration error?
+* Your team accidentally commits production database credentials in a Compose file. How would you respond and redesign secret management?
+* A database migration runs successfully on one developer's machine but fails in the CI environment. How would you investigate the image, database version, permissions, and migration order?
+* Multiple application containers attempt to run the same schema migration during startup. How would you prevent race conditions?
+* A health check marks PostgreSQL as healthy, but the application still receives connection failures. How would you investigate the difference between health status and actual readiness?
+* Your application depends on PostgreSQL, Redis, and RabbitMQ, but one dependency becomes unavailable after startup. How should the application and Compose setup recover?
+* A Compose service cannot resolve another service by name after the network configuration changes. How would you troubleshoot it?
+* A production deployment uses the latest image tag and unexpectedly runs different code after a restart. How would you improve release reproducibility?
+* A Compose deployment exposes PostgreSQL to the public host interface even though only the application needs database access. How would you secure the configuration?
+* Application logs disappear after a container is recreated, making production debugging difficult. How would you preserve and collect logs?
+* A database container consumes excessive disk space because its volume grows continuously. How would you investigate and manage storage safely?
+* Your Spring Boot application exceeds its memory limit when the application and monitoring services run together. How would you identify the cause and adjust resource allocation?
+* An application container takes too long to stop and loses in-flight requests during deployment. How would you configure graceful shutdown?
+* An update to the reverse proxy causes every application route to return HTTP 502. How would you investigate service discovery, upstream ports, and health status?
+* Your development Compose file starts monitoring tools, a message broker, and several optional services that are unnecessary for most developers. How would you simplify startup?
+* A production database volume must be backed up before a release. How would you design and verify a consistent backup and restore process?
+* A Compose override file unexpectedly changes a database port and environment variable. How would you inspect the final merged configuration?
+* A team scales a service to multiple instances, but startup fails because every instance uses the same fixed container name. How would you resolve the issue?
+* A new application version is incompatible with the current database schema. How would you plan a safe deployment and rollback?
+* A private registry authentication failure prevents a Compose deployment from pulling images. How would you diagnose and resolve it?
+* Your team needs to run integration tests with a clean database for every test execution. How would you design the Compose lifecycle and cleanup process?
+* A Java microservices system has grown to dozens of services and needs automated recovery, rolling deployments, and service scaling. How would you determine whether to move beyond Docker Compose?

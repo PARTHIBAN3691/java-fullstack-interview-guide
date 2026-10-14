@@ -1,0 +1,30 @@
+* Explain the trade-offs between consistency, concurrency, and performance when selecting transaction isolation levels.
+* How do snapshot isolation and serializable isolation differ in preventing concurrency anomalies?
+* Why can snapshot isolation still allow write skew?
+* How does predicate locking help prevent phantom reads?
+* How does range locking work in databases that support it?
+* How do MVCC snapshots determine which row versions a transaction can read?
+* What is the difference between statement-level snapshots and transaction-level snapshots?
+* How can a transaction observe stale data under snapshot-based isolation?
+* How does SERIALIZABLE isolation affect query concurrency and throughput?
+* How can serializable transactions fail even when the application code appears correct?
+* How do serialization failures differ from deadlocks?
+* How would you design a retry mechanism for serialization failures without duplicating business operations?
+* How can nested Spring transactions affect the effective isolation level?
+* What happens when a method with a stronger isolation level calls another method with an existing transaction?
+* How do Spring transaction propagation settings affect isolation behavior?
+* Why might @Transactional isolation settings be ignored in certain Spring configurations?
+* How do self-invocation and proxy-based transaction management affect isolation configuration?
+* How do isolation levels behave when multiple data sources are involved?
+* How do distributed transactions differ from local database transactions in terms of isolation guarantees?
+* How would you maintain consistency when updating data across multiple services without a distributed transaction?
+* How do long-running transactions affect MVCC cleanup, vacuuming, or undo-log retention?
+* How can connection-pool reuse expose problems if transaction state is not reset correctly?
+* How do isolation levels interact with database replication and read replicas?
+* What consistency problems can arise when a transaction writes to a primary database and reads from a replica?
+* How would you investigate unexpected blocking caused by REPEATABLE READ or SERIALIZABLE?
+* How can you distinguish lock contention, deadlocks, and serialization conflicts using database monitoring?
+* How do isolation levels influence the design of inventory reservation and financial ledger systems?
+* How would you prevent write skew in a system enforcing a cross-row business constraint?
+* How do you evaluate whether stronger isolation is worth its performance cost using production metrics?
+* How would you design an isolation strategy for a Java application with high concurrency and strict financial consistency requirements?

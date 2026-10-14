@@ -1,0 +1,139 @@
+**RAG Fundamentals and Architecture**
+* How would you design a RAG architecture for an enterprise knowledge assistant?
+* How would you separate ingestion, retrieval, orchestration, and generation into services?
+* How would you decide between RAG, fine-tuning, and a combined approach?
+* How would you support multiple business domains with different knowledge sources?
+* How would you handle document updates and deletions without rebuilding the entire knowledge base?
+
+**Basic RAG Pipeline**
+* How would you implement an end-to-end RAG pipeline in a Spring Boot application?
+* How would you pass retrieved context to the LLM while preserving the user's original question?
+* How would you handle empty retrieval results and incomplete model responses?
+* How would you manage request correlation across retrieval and generation?
+* How would you test the complete pipeline using mocked embedding, vector-store, and LLM clients?
+
+**Document Ingestion Pipelines**
+* How would you design an ingestion pipeline that supports scheduled batch imports and event-driven updates?
+* How would you make ingestion idempotent when the same document is processed multiple times?
+* How would you track document versions and determine which chunks require reprocessing?
+* How would you handle partial failures in a batch containing thousands of documents?
+* How would you coordinate source updates, embedding generation, and vector-store writes reliably?
+
+**Document Parsing and Preprocessing**
+* How would you process scanned PDFs that require OCR before text extraction?
+* How would you preserve heading hierarchy, tables, page numbers, and source locations?
+* How would you normalize whitespace, Unicode characters, and malformed text without losing meaning?
+* How would you detect documents that produce empty, corrupted, or low-quality extracted text?
+* How would you handle parsing failures without blocking ingestion of unrelated documents?
+
+**Chunking and Overlap Strategies**
+* How would you select chunk size and overlap for technical documentation?
+* How would you implement structure-aware chunking for headings, paragraphs, tables, and code?
+* How would you prevent important information from being separated across chunks?
+* How would you measure the impact of chunking strategies on retrieval recall and answer quality?
+* How would you reduce duplicate results caused by overlapping chunks?
+
+**Embedding Generation**
+* How would you generate embeddings efficiently for a large document collection?
+* How would you implement batching, bounded concurrency, and retry handling for embedding requests?
+* How would you prevent vectors from incompatible embedding models from being mixed?
+* How would you cache embeddings for unchanged document content?
+* How would you measure embedding-generation failures and ingestion completeness?
+
+**Vector Store Integration**
+* How would you choose a vector store for a production RAG application?
+* How would you design the vector-store schema for document chunks, source identifiers, and access-control metadata?
+* How would you implement upserts and deletes when the source document changes?
+* How would you combine vector similarity search with metadata filtering?
+* How would you handle vector-store unavailability while protecting ingestion and query services?
+
+**Semantic and Hybrid Retrieval**
+* How would you combine dense vector search with BM25 keyword search?
+* What is Reciprocal Rank Fusion, and how can it combine retrieval results?
+* How would you tune the number of retrieved candidates for a RAG query?
+* How would you evaluate retrieval quality for exact identifiers versus natural-language questions?
+* How would you prevent irrelevant documents from reaching the generation stage?
+
+**Query Rewriting and Expansion**
+* How would you rewrite conversational questions into standalone retrieval queries?
+* How would you preserve important entities, dates, identifiers, and constraints during query rewriting?
+* How would you generate multiple query variants and merge their results?
+* How would you avoid query expansion introducing irrelevant or misleading concepts?
+* How would you evaluate whether query rewriting improves retrieval recall and answer accuracy?
+
+**Reranking and Context Compression**
+* How would you combine initial retrieval with a cross-encoder reranker?
+* How would you select the number of candidates to rerank?
+* How would you compress retrieved passages while preserving facts needed to answer the query?
+* How would you handle reranker timeouts without making the entire RAG service unavailable?
+* How would you evaluate whether reranking and compression improve final answer quality?
+
+**Context Window Management**
+* How would you calculate a safe context budget for instructions, conversation history, retrieved chunks, and output?
+* How would you select which chunks to retain when retrieved context exceeds the model's limit?
+* How would you summarize older conversation history without losing key constraints?
+* How would you prevent repeated or contradictory passages from consuming the context window?
+* How would you handle different context-window sizes across model providers?
+
+**Citation and Source Grounding**
+* How would you require the LLM to return citations linked to retrieved chunk identifiers?
+* How would you validate that every citation refers to a source actually retrieved for the request?
+* How would you generate page-level citations for PDF documents?
+* How would you handle answers that contain claims supported by multiple sources?
+* How would you measure citation correctness and claim-level grounding?
+
+**Advanced RAG**
+* How would you decide when to use query rewriting, hybrid retrieval, reranking, or iterative retrieval?
+* How would you implement multi-query retrieval and merge results without excessive latency?
+* How would you route simple questions to basic RAG and complex questions to an advanced pipeline?
+* How would you introduce contextual retrieval while keeping ingestion cost under control?
+* How would you debug an advanced pipeline in which each individual stage appears healthy but final answers remain poor?
+
+**Agentic RAG**
+* How would you implement an agent that decides when to search, retrieve additional context, or answer directly?
+* How would you restrict an agent to approved retrieval tools and authorized data sources?
+* How would you control the number of agent iterations and tool calls?
+* How would you handle a tool failure midway through an agentic retrieval workflow?
+* How would you evaluate whether agentic retrieval improves task completion over conventional RAG?
+
+**GraphRAG**
+* How would you construct a knowledge graph from unstructured documents?
+* How would you combine graph traversal with vector similarity search?
+* How would you represent entity relationships and source provenance?
+* How would you handle conflicting or outdated facts in a knowledge graph?
+* How would you evaluate GraphRAG for multi-hop questions requiring information from several documents?
+
+**Multimodal RAG**
+* How would you build a RAG pipeline for PDFs containing text, tables, diagrams, and images?
+* How would you store and retrieve page-level visual content with text chunks?
+* How would you support retrieval from audio transcripts and video timestamps?
+* How would you manage large media payloads and asynchronous preprocessing?
+* How would you evaluate retrieval and grounding separately for text, images, and tables?
+
+**RAG Evaluation and Benchmarking**
+* How would you build a labeled evaluation dataset containing queries, relevant documents, and expected answers?
+* How would you measure retrieval quality using precision@k, recall@k, and MRR?
+* How would you evaluate faithfulness, answer relevance, and citation correctness?
+* How would you compare RAG configurations using offline evaluation and controlled production experiments?
+* How would you distinguish a retrieval failure from a generation failure?
+
+**RAG Hallucination Reduction**
+* How would you design prompts that require answers to be supported by retrieved evidence?
+* How would you detect when retrieved context does not support a requested claim?
+* How would you implement a confidence or evidence-sufficiency threshold before answering?
+* How would you handle contradictory passages from different source documents?
+* How would you evaluate hallucination rates before and after a pipeline change?
+
+**RAG Security and Access Control**
+* How would you enforce tenant isolation and document-level permissions in vector retrieval?
+* How would you prevent prompt injection contained in retrieved documents from influencing privileged tool execution?
+* How would you handle sensitive information in embeddings, logs, prompts, and generated responses?
+* How would you implement document deletion across source storage, chunk storage, indexes, and caches?
+* How would you test that revoked permissions immediately prevent further retrieval and disclosure?
+
+**RAG Performance and Cost Optimization**
+* How would you identify the main latency contributors across parsing, embedding, retrieval, reranking, and generation?
+* How would you use caching without serving stale or unauthorized content?
+* How would you reduce prompt tokens while preserving retrieval quality?
+* How would you batch ingestion work without degrading online query latency?
+* How would you monitor cost per query, cost per successful answer, and p95/p99 latency?

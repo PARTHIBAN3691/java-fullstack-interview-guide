@@ -1,0 +1,30 @@
+* Explain the architecture of Azure Event Grid with publishers, topics, subscriptions, and handlers.
+* How do you publish custom events to an Azure Event Grid topic?
+* How do you subscribe an Azure Function to Azure Event Grid?
+* How do you configure an Azure Logic App as an Event Grid handler?
+* How do you route events from Azure Blob Storage to an Azure Function?
+* How do you configure subject filtering in an event subscription?
+* What is advanced filtering in Azure Event Grid?
+* How do you filter events based on event type, subject, or data properties?
+* What is the difference between subject filtering and advanced filtering?
+* How do you use prefix and suffix filters in Event Grid?
+* How does Event Grid handle event delivery failures?
+* What is the retry policy in Azure Event Grid?
+* What is the purpose of the dead-letter destination?
+* How do you configure dead-lettering for an event subscription?
+* How do you replay or reprocess events that failed delivery?
+* What is the difference between push delivery and pull delivery in Event Grid?
+* What is the Event Grid Namespace?
+* What is the difference between Event Grid topics and Event Grid namespaces?
+* What is MQTT support in Azure Event Grid?
+* How do you authenticate publishers when sending custom events?
+* How do you secure event subscriptions using managed identities?
+* What role does Azure RBAC play in Event Grid?
+* How do you configure private endpoints for supported Event Grid resources?
+* How do you monitor event delivery failures using Azure Monitor?
+* Which metrics are useful for monitoring Event Grid?
+* How do you troubleshoot an event subscription that is not receiving events?
+* How do you validate an endpoint during event subscription creation?
+* How do you publish events using the Azure SDK?
+* How do you implement an Event Grid publisher in Java?
+* How do you implement an Event Grid subscriber using Azure Functions and Java?

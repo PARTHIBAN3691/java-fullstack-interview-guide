@@ -1,0 +1,119 @@
+**Enterprise CI/CD Platform**
+* A company has 300 engineering teams using inconsistent pipeline implementations. Design a migration strategy to a shared platform without stopping feature delivery.
+* Pipeline queues have increased from minutes to hours after the organization expanded its build fleet. How would you identify the bottleneck and redesign capacity management?
+* A compromised pipeline runner accesses production credentials belonging to unrelated applications. How would you contain the incident, restore trust, and prevent recurrence?
+* A critical CI platform outage occurs during a release deadline. How would you restore essential delivery capabilities without bypassing mandatory security controls?
+
+**Zero-Downtime Deployment Architecture**
+* Users experience intermittent HTTP 5xx errors during rolling deployments despite healthy infrastructure. How would you investigate readiness, connection draining, dependency compatibility, and startup behavior?
+* A database migration succeeds, but rollback to the previous application version fails. How would you recover service and redesign schema migration practices?
+* A canary deployment passes technical health checks but causes a drop in successful payments. How would you detect the business impact and improve release analysis?
+* Two teams deploy incompatible versions of dependent services at the same time. How would you restore compatibility and prevent repeated incidents?
+
+**Multi-Region Deployment Platform**
+* The primary region becomes unreachable while replication is lagging. How would you decide whether to fail over, and how would you assess potential data loss?
+* Both regions accept writes after a network partition. How would you detect split-brain, reconcile conflicting data, and restore a single authoritative state?
+* A regional rollout causes elevated latency, but global health metrics remain normal. How would you isolate the affected region and limit impact?
+* A failback to the original region causes duplicate jobs and stale reads. How would you safely recover and validate consistency?
+
+**Kubernetes Platform for Multiple Teams**
+* One tenant exhausts shared cluster CPU and memory, causing unrelated applications to degrade. How would you contain the incident and redesign resource governance?
+* A team deploys a privileged container that bypasses expected isolation. How would you investigate, contain, and prevent recurrence across the fleet?
+* A cluster upgrade leaves several critical workloads pending because of disruption budgets and insufficient spare capacity. How would you recover safely?
+* Teams report inconsistent DNS and network connectivity across namespaces. How would you distinguish policy errors, CNI failures, and shared infrastructure problems?
+
+**Secure DevSecOps Pipeline**
+* A critical vulnerability is discovered in a shared base image used by hundreds of production services. How would you identify affected artifacts, prioritize remediation, and verify rebuilt images?
+* A signed container image is deployed successfully, but an investigation reveals that its build runner was compromised. How would you determine whether the artifact can still be trusted?
+* A secret appears in pipeline logs and has already been copied into a centralized logging system. How would you contain exposure and clean up downstream copies?
+* Security gates block an urgent production fix because of a newly introduced scanner false positive. How would you handle an exception while preserving evidence and risk ownership?
+
+**GitOps-Based Deployment Architecture**
+* A bad Git commit propagates to 150 clusters and breaks a shared platform component. How would you halt reconciliation, restore service, and prevent fleet-wide recurrence?
+* Git reports the desired state as correct, but production resources continuously drift. How would you diagnose reconciliation conflicts and identify the authoritative owner?
+* A GitOps controller loses access to its repository during a regional outage. How would you maintain service and restore controlled deployment capability?
+* An emergency manual production fix is repeatedly reverted by GitOps. How would you resolve the immediate issue and restore declarative consistency?
+
+**Enterprise Observability Platform**
+* Telemetry ingestion increases tenfold during an incident, and the monitoring platform starts dropping data. How would you protect critical signals and recover ingestion capacity?
+* A cardinality explosion causes metrics storage costs to spike and dashboards to become unavailable. How would you mitigate the issue without losing essential monitoring?
+* Multiple services report healthy status, but users experience severe latency. How would you correlate traces, logs, metrics, and dependency signals to find the root cause?
+* The central alerting system fails at the same time as a production incident. How would you maintain incident detection and improve observability resilience?
+
+**Centralized Logging for Microservices**
+* A traffic surge overwhelms log ingestion and application logs begin dropping. How would you introduce buffering, backpressure, prioritization, and capacity protection?
+* An incident requires reconstructing a payment request across 20 microservices, but correlation IDs are missing in some services. How would you investigate and improve traceability?
+* Sensitive customer data is discovered in logs replicated across several regions. How would you contain exposure, enforce deletion or retention requirements, and prevent recurrence?
+* A logging backend becomes unavailable for several hours. How would you preserve critical logs, manage local disk pressure, and restore ingestion without overwhelming the backend?
+
+**Highly Available Production Platform**
+* An availability-zone outage causes surviving instances to overload and fail. How would you redesign capacity headroom, load shedding, and failover behavior?
+* A shared identity provider failure prevents otherwise healthy services from starting or scaling. How would you restore essential operations and reduce dependency concentration?
+* A dependency outage triggers retry storms across multiple services. How would you stop cascading failures and redesign timeout, retry, and circuit-breaker policies?
+* Production availability falls below its SLO despite each infrastructure component meeting its own target. How would you identify cross-layer and dependency failures?
+
+**Disaster Recovery for Cloud Workloads**
+* A ransomware incident compromises the primary environment and accessible backups. How would you restore from trusted recovery points and prove the restored environment is clean?
+* A regional disaster occurs, but recovery automation depends on identity services in the failed region. How would you recover control-plane access and execute the recovery plan?
+* The application is restored within its RTO, but business data is inconsistent across services. How would you coordinate data validation, replay, and business recovery?
+* A disaster recovery exercise exceeds the agreed RPO by several hours. How would you find the cause, update the architecture, and verify the corrective actions?
+
+**Multi-Cloud DevOps Strategy**
+* A cloud-provider outage affects a critical managed database that has no direct equivalent in the secondary cloud. How would you restore service and reassess portability assumptions?
+* Different cloud providers enforce conflicting identity and network policies. How would you standardize governance without weakening provider-specific security controls?
+* Multi-cloud networking and egress charges rise sharply after failover testing. How would you diagnose cost drivers and optimize recovery design?
+* A shared deployment tool update breaks provisioning in one cloud but not the other. How would you isolate the failure and improve cross-cloud compatibility testing?
+
+**Internal Developer Platform**
+* Developers bypass the internal platform because its templates and provisioning workflows are slower than manual deployment. How would you identify friction and improve adoption?
+* A platform template contains a security misconfiguration used by dozens of teams. How would you remediate deployed services, publish a safe template, and prevent recurrence?
+* A central platform release breaks developer self-service across the organization. How would you restore service and introduce safer platform rollout practices?
+* Teams request incompatible customization of the golden path. How would you balance flexibility, governance, supportability, and developer experience?
+
+**Scalable Container Platform**
+* A sudden traffic spike triggers pod scaling, but new pods remain pending because nodes cannot be provisioned quickly enough. How would you diagnose the scaling path and improve burst capacity?
+* A container registry outage prevents replacement pods from starting during a node failure. How would you restore workload availability and reduce registry dependency risk?
+* IP exhaustion prevents new Kubernetes pods from receiving addresses during a deployment. How would you recover and redesign network capacity planning?
+* A stateful workload cannot reschedule after a zone failure because its storage is zone-bound. How would you restore the service and redesign storage and placement policies?
+
+**Automated Infrastructure Provisioning**
+* An infrastructure apply fails halfway through, leaving cloud resources created but Terraform state incomplete. How would you reconcile actual resources and recover safely?
+* Manual changes accumulate across production accounts, and automated applies threaten to overwrite them. How would you establish ownership and remediate drift?
+* A compromised automation identity attempts to modify critical networking and identity resources. How would you contain its privileges and recover trusted infrastructure state?
+* A shared module update unexpectedly changes resources across multiple environments. How would you limit the blast radius and redesign module promotion?
+
+**Secure Secrets-Management Architecture**
+* A production credential is leaked and cannot be rotated immediately because multiple legacy services depend on it. How would you contain the risk and execute a safe rotation?
+* The secrets-management service becomes unavailable during a production scale-out event. How would you preserve security while maintaining service availability?
+* A workload identity is granted excessive access to secrets across multiple teams. How would you identify affected resources and enforce least privilege?
+* A root or encryption key compromise is suspected. How would you determine the scope, rotate trust anchors, and restore confidence in stored secrets?
+
+**Self-Healing Production Platform**
+* Automated restarts repeatedly recover a service for seconds before it fails again. How would you stop the loop and design cause-aware remediation?
+* A remediation workflow deletes and recreates a stateful resource, causing data loss. How would you contain the impact and redesign safety controls?
+* An autoscaler reacts to a traffic spike by overprovisioning dependent services and exhausting budget. How would you tune scaling policies and define guardrails?
+* Automated failover increases latency because the secondary environment lacks sufficient capacity. How would you improve capacity readiness and validate failover under load?
+
+**Low-Latency Deployment Architecture**
+* Deployment time increases from 15 minutes to 90 minutes as the codebase and test suite grow. How would you profile bottlenecks and redesign pipeline execution?
+* A dependency cache reduces build time but occasionally serves stale or poisoned artifacts. How would you restore integrity while retaining safe caching benefits?
+* Security scans dominate the release critical path for hundreds of repositories. How would you optimize scanning, reuse verified results, and preserve required gates?
+* Production approval queues dominate lead time despite fast automated pipelines. How would you improve the operating process without weakening release controls?
+
+**Cloud Cost Optimization Strategy**
+* Cloud spend rises 40% while traffic remains flat. How would you investigate resource utilization, idle capacity, telemetry volume, data transfer, and billing anomalies?
+* Cost-cutting recommendations reduce standby capacity and cause failover failures during a regional outage. How would you rebalance cost and resilience?
+* Shared Kubernetes costs cannot be attributed accurately to individual teams. How would you implement a fair and explainable allocation model?
+* Spot-instance interruptions cause repeated workload failures and unexpected recovery costs. How would you decide which workloads should use spot, reserved, or on-demand capacity?
+
+**CI/CD for Regulated Financial Applications**
+* An audit finds that production releases lack complete evidence linking source changes to signed artifacts and approvals. How would you close the control gaps and reconstruct historical evidence?
+* A critical security fix must ship while the normal approval workflow is unavailable. How would you execute an authorized emergency release and preserve evidence?
+* Sensitive financial data appears in integration-test logs and shared test artifacts. How would you contain the exposure and redesign test-data controls?
+* A production deployment passes technical tests but violates a required compliance policy. How would you halt or reverse the release and improve preventive controls?
+
+**Enterprise DevOps Operating Model**
+* Development teams blame the platform team for deployment failures while the platform team claims application misconfiguration. How would you establish ownership and resolve the operational gap?
+* Enterprise governance requires extensive approvals, causing release lead time to rise sharply. How would you introduce risk-based controls and self-service guardrails?
+* Teams consistently meet deployment-frequency targets but experience rising incidents and failed changes. How would you redesign performance metrics and incentives?
+* Multiple teams exceed their error budgets while leadership continues to prioritize feature delivery. How would you negotiate reliability investment and enforce accountable decisions?

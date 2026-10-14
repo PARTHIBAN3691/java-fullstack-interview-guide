@@ -1,0 +1,30 @@
+* Write a Kubernetes Deployment YAML for a Spring Boot application with three replicas.
+* Create a Deployment YAML that uses a specified container image, exposes port 8080, and defines appropriate labels and selectors.
+* Write a Deployment manifest with CPU and memory requests and limits for a Java application.
+* Configure readiness, liveness, and startup probes for a Spring Boot application running on port 8080.
+* Write a Deployment YAML that uses the RollingUpdate strategy with customized maxSurge and maxUnavailable values.
+* Create a Deployment manifest that injects application properties through environment variables.
+* Write a Deployment YAML that loads configuration from a ConfigMap.
+* Create a Deployment manifest that reads database credentials from a Kubernetes Secret.
+* Write a Deployment YAML that mounts a ConfigMap as a volume inside a Spring Boot container.
+* Write kubectl commands to create a Deployment and scale it from two to five replicas.
+* Write kubectl commands to update a Deployment's container image and verify rollout completion.
+* Write kubectl commands to inspect rollout history and roll back to a previous revision.
+* Write kubectl commands to pause a rollout, apply a change, and resume the rollout.
+* Write a Deployment YAML with a termination grace period and a preStop hook for graceful shutdown.
+* Create a Deployment manifest that uses a node selector to schedule Pods on designated nodes.
+* Write a Deployment YAML with pod anti-affinity to spread application replicas across nodes.
+* Configure topology spread constraints in a Deployment to distribute Pods across availability zones.
+* Write a Deployment YAML that specifies a service account and a dedicated namespace.
+* Create a Deployment manifest with a security context that runs the Java application as a non-root user.
+* Write a Deployment YAML that uses a specific image digest instead of a mutable image tag.
+* Write a Deployment manifest with a progress deadline and appropriate rollout strategy.
+* Create a Deployment YAML with environment variables sourced from ConfigMaps and Secrets using valueFrom.
+* Write a Kubernetes Service manifest that exposes a Deployment internally on port 80 and forwards traffic to container port 8080.
+* Write a Deployment and Service configuration that allows a rolling update without directly exposing Pod IP addresses.
+* Write a shell script that updates a Deployment image and waits for the rollout to finish.
+* Write a shell script that checks whether all desired Deployment replicas are available and returns a non-zero exit code if they are not.
+* Write a script that retrieves the current image, replica count, and rollout status of a Deployment using kubectl.
+* Write a Deployment manifest that uses a non-default rolling update configuration to minimize downtime while controlling temporary capacity.
+* Write a Deployment YAML for a Spring Boot application with resource limits, probes, graceful termination, and a rolling update strategy.
+* Write a deployment validation script that checks rollout status and triggers a rollback when the rollout fails.

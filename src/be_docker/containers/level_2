@@ -1,0 +1,30 @@
+* Explain how Docker uses Linux namespaces and control groups to isolate containers.
+* How does a container share the host operating system kernel, and what are the implications?
+* How would you investigate a Java container that is repeatedly killed by the operating system?
+* How do container memory limits interact with JVM heap, metaspace, direct buffers, and native memory?
+* How would you size JVM memory for a container with a strict memory limit?
+* How would you diagnose a container that reports high CPU usage but low application throughput?
+* How would you investigate CPU throttling in a containerized Java service?
+* How do container filesystem layers work, and how can image layers affect performance and storage?
+* How would you optimize a multi-stage Docker build for a Spring Boot application?
+* How would you design a secure container image that runs a Java process as a non-root user?
+* How would you handle secrets securely without embedding them in Docker images?
+* How would you investigate a container that cannot resolve another container's hostname?
+* How would you diagnose intermittent connection failures between containers on a bridge network?
+* How would you design persistent storage for a stateful containerized Java application?
+* What risks arise when multiple containers share the same writable volume?
+* How would you implement graceful shutdown for a Spring Boot container receiving termination signals?
+* How do Docker stop timeouts interact with Java shutdown hooks and in-flight HTTP requests?
+* How would you design health checks that distinguish startup, liveness, and readiness concerns?
+* How would you prevent a container from being marked healthy before the Java application is ready?
+* How would you diagnose a container that is healthy according to Docker but cannot serve valid business requests?
+* How would you design rolling application updates while minimizing downtime?
+* What are the limitations of using Docker restart policies for high availability?
+* How would you troubleshoot a container that works locally but fails in a CI/CD environment?
+* How would you manage image tagging, versioning, and rollback in production?
+* How would you scan container images for vulnerabilities and manage base-image updates?
+* How would you diagnose image-pull failures caused by registry authentication, rate limits, or network issues?
+* How would you design resource limits and reservations for multiple Java containers sharing a host?
+* How would you investigate file descriptor exhaustion in a long-running container?
+* How would you capture Java heap dumps and thread dumps from a production container safely?
+* How would you decide when Docker Compose is sufficient and when an orchestrator such as Kubernetes is needed?

@@ -1,0 +1,30 @@
+* Write a Java Singleton configuration manager and test its behavior under concurrent access.
+* Implement a Factory Method for payment providers and add a new provider without changing the client code.
+* Implement an Abstract Factory for creating related banking API clients and request builders.
+* Create a Builder for an insurance policy that validates mandatory fields and conflicting coverage options.
+* Implement a Prototype registry that creates independent deep copies of versioned document templates.
+* Build a Strategy-based pricing engine that calculates discounts, taxes, and shipping costs.
+* Implement an Observer-based order notification system with listener registration, removal, and exception handling.
+* Implement a Command-based banking application that supports execution history, retries, and duplicate-request prevention.
+* Build a Chain of Responsibility for loan validation, credit checks, and approval routing.
+* Implement a State-based order workflow that rejects invalid state transitions.
+* Build a Template Method framework for importing CSV and JSON files with shared validation and persistence logic.
+* Implement a lazy Iterator that reads database records in batches and closes resources safely.
+* Create a Mediator-based chat application with message routing and participant management.
+* Implement a Memento-based text editor that supports multiple undo and redo operations.
+* Implement the Visitor pattern for calculating payroll, tax, and benefits across different employee types.
+* Build an Interpreter for loan eligibility expressions with variables, operator precedence, and syntax validation.
+* Implement an Adapter that converts two different payment provider APIs into a common Java interface.
+* Create a Decorator chain that adds logging, metrics, and timeout handling to a service.
+* Implement a Facade that coordinates inventory, payment, order, and notification services during checkout.
+* Create a Proxy that performs authorization, caching, and audit logging before invoking a remote service.
+* Implement a Composite structure for a company hierarchy and calculate total employee count and salary by department.
+* Build a Bridge implementation supporting multiple notification types and delivery channels.
+* Implement a thread-safe Flyweight factory for shared immutable terrain objects.
+* Build a Spring Boot payment service using Dependency Injection, Strategy, and Factory patterns.
+* Implement a Repository for customer data with pagination, sorting, filtering, and DTO projections.
+* Build a Spring Boot REST API using MVC, DTO, Service Layer, and Repository patterns.
+* Implement an account-transfer service with transaction rollback and optimistic locking.
+* Create a Unit of Work example that coordinates multiple repository changes atomically.
+* Write JUnit and Mockito tests for a Factory and Strategy-based payment engine, including invalid input and provider failures.
+* Build an end-to-end Java enterprise application combining suitable design patterns, persistence, REST APIs, exception handling, and automated tests.

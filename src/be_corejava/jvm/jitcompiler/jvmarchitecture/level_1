@@ -1,0 +1,25 @@
+
+* Explain the complete JVM execution flow from a `.java` file to machine code execution.
+* How does the ClassLoader subsystem interact with the Runtime Data Area?
+* What are the loading, linking, and initialization phases of class loading?
+* What happens during bytecode verification?
+* What is the difference between class preparation and class resolution?
+* How does the JVM initialize static variables and static blocks?
+* What is the difference between the Heap and the Java Virtual Machine Stack?
+* How are local variables, method parameters, and object references stored in a stack frame?
+* Where are objects and arrays allocated in the JVM?
+* Where are class metadata and static fields stored in modern HotSpot JVM implementations?
+* What is the difference between the Method Area specified by the JVM and Metaspace in HotSpot?
+* How does the JVM manage stack frames during method invocation and return?
+* What happens when a Java application encounters `StackOverflowError`?
+* What happens when the JVM cannot allocate additional heap memory?
+* What is the difference between `OutOfMemoryError: Java heap space` and `OutOfMemoryError: Metaspace`?
+* How does the Garbage Collector interact with the Heap?
+* What is the role of the Execution Engine in executing bytecode?
+* How does the JIT compiler improve application performance?
+* What is tiered compilation in the HotSpot JVM?
+* How does the JVM manage native method calls?
+* What is the difference between a Java thread's stack and the Native Method Stack?
+* How do JVM command-line options affect heap size, stack size, and garbage collection?
+* What is the difference between the JVM specification and a specific JVM implementation?
+* How does the JVM architecture support platform independence?

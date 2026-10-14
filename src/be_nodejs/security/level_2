@@ -1,0 +1,30 @@
+* Explain how you would design a comprehensive security architecture for a production Node.js application.
+* How would you implement OAuth 2.0 and OpenID Connect authentication in a Node.js service?
+* What is the difference between OAuth 2.0 authorization and OpenID Connect authentication?
+* How would you secure a microservices architecture using service-to-service authentication?
+* How would you implement fine-grained authorization using roles, permissions, and resource ownership?
+* How would you prevent broken object-level authorization (BOLA) vulnerabilities?
+* How would you design secure token issuance, refresh, rotation, and revocation?
+* How would you prevent JWT algorithm-confusion and signature-validation vulnerabilities?
+* How would you handle key rotation for JWT signing keys without disrupting active sessions?
+* How would you implement multi-factor authentication in a Node.js application?
+* How would you defend against session fixation, session hijacking, and replay attacks?
+* How would you design secure authentication for a distributed application with multiple services?
+* How would you protect an API gateway against credential stuffing, distributed brute-force attacks, and abuse?
+* How would you prevent server-side request forgery (SSRF) in a Node.js application that fetches external URLs?
+* How would you defend against prototype pollution in JavaScript dependencies and application code?
+* How would you prevent command injection when interacting with operating-system processes?
+* How would you secure file upload and download workflows against malware, path traversal, and unauthorized access?
+* How would you prevent race conditions in security-sensitive operations such as coupon redemption or fund transfers?
+* How would you protect sensitive data at rest and in transit?
+* How would you implement encryption-key management and rotation using a key management service?
+* How would you design a secure secrets-management strategy for containers and CI/CD pipelines?
+* How would you secure npm supply-chain dependencies and reduce the risk of malicious packages?
+* How would you investigate a suspected dependency compromise in a production Node.js service?
+* How would you implement Content Security Policy (CSP) and other browser security controls for an application with an Express backend?
+* How would you prevent CSRF in applications that use cookie-based authentication?
+* How would you design tenant isolation for a multi-tenant Node.js platform?
+* How would you securely handle personally identifiable information (PII) in logs, traces, and error reports?
+* How would you implement security monitoring and alerting for suspicious API activity?
+* How would you perform threat modeling for a Node.js microservices application?
+* How would you establish security standards and automated security checks across an enterprise Node.js platform?

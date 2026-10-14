@@ -1,0 +1,30 @@
+* How does TypeScript infer generic types from function arguments?
+* What happens when a generic function receives arguments of different types?
+* How do you define constraints for multiple generic type parameters?
+* What is the difference between a generic constraint and a union type?
+* How do you use keyof in a generic constraint?
+* How do you create a generic function that retrieves an object property safely?
+* What is the purpose of T extends keyof U?
+* How do generic interfaces improve code reusability?
+* How do you implement a generic repository interface?
+* How do you create a generic class that stores and retrieves values?
+* Can a generic class implement a generic interface?
+* How do you extend a generic class?
+* How do generic inheritance and generic constraints work together?
+* How do you define a generic type with multiple type parameters and defaults?
+* What is the difference between a generic type alias and a generic interface?
+* How do you use generics with callback functions?
+* How do you create a generic function that accepts an array and returns its first element?
+* How do you preserve type information when passing generic functions as arguments?
+* How do you use generics with asynchronous functions?
+* How do you define a function returning Promise<T>?
+* What is the relationship between generics and utility types?
+* How does the Partial<T> utility type use generics?
+* How do Pick<T, K> and Omit<T, K> work with generic parameters?
+* What are generic defaults, and when should they be used?
+* How do you create a generic factory function?
+* What are the limitations of generic type inference?
+* How do generic constraints work with interfaces and object properties?
+* What is the difference between T extends object and T extends Record<string, unknown>?
+* How do you use generics to create a type-safe API response wrapper?
+* How can generics reduce code duplication without sacrificing type safety?

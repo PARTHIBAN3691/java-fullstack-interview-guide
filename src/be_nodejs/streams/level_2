@@ -1,0 +1,30 @@
+* Explain the internal architecture of Node.js streams and their interaction with the event loop.
+* How does backpressure propagate through a pipeline containing multiple streams?
+* How would you design a streaming system that processes gigabytes of data with bounded memory usage?
+* How do readable and writable internal buffers interact with highWaterMark?
+* How would you tune highWaterMark for a high-throughput file-processing application?
+* What are the trade-offs between throughput, latency, and memory consumption in stream processing?
+* How would you implement a custom Transform stream that handles asynchronous operations safely?
+* How would you preserve data ordering when a Transform stream performs asynchronous processing?
+* How would you limit concurrent asynchronous operations inside a Transform stream?
+* How would you design a stream pipeline that recovers from transient downstream failures?
+* How would you handle partial writes and errors when streaming data to an external destination?
+* How does pipeline() coordinate stream destruction and error propagation?
+* How would you implement cancellation across a pipeline of multiple streams?
+* How would you prevent memory leaks caused by unhandled stream errors or missing event listeners?
+* How would you debug a stream that stops producing data without emitting an error?
+* How would you detect and resolve a deadlock-like stall caused by incorrect stream consumption?
+* How would you design a streaming ETL pipeline for processing millions of records?
+* How would you stream large database query results to an HTTP response without exhausting memory?
+* How would you implement backpressure when writing to a slow network client?
+* How would you handle a client disconnecting during a file download?
+* How would you design a streaming file-upload service with size limits and content validation?
+* How would you implement a streaming parser for records that may span multiple chunks?
+* How would you handle multibyte characters split across stream chunks?
+* How would you build a fan-out pipeline that sends data to multiple writable destinations?
+* How would you manage backpressure when one destination is much slower than the others?
+* How would you implement a bounded-memory stream pipeline for compression and encryption?
+* How would you profile CPU and memory usage in a complex stream-processing application?
+* How would you design stream processing that supports retries without duplicating output records?
+* How would you make a stream-processing service observable using metrics, logs, and tracing?
+* How would you design a production-grade streaming architecture for large-scale Node.js applications?

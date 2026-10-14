@@ -1,0 +1,30 @@
+* How would you design a comprehensive testing strategy for a large JavaScript application?
+* How do you decide which functionality should be covered by unit, integration, and end-to-end tests?
+* How do you test complex asynchronous workflows involving multiple promises?
+* How would you test race conditions in asynchronous JavaScript code?
+* How do you test event-driven applications with many asynchronous events?
+* How do you test retry logic and exponential backoff?
+* How do you test cancellation using AbortController?
+* How do you test code that uses Web Workers?
+* How do you test functions that depend on browser APIs unavailable in Node.js?
+* How do you handle ESM and CommonJS module differences in testing?
+* How do you mock ES module dependencies without creating brittle tests?
+* How do you test code that depends on network services while keeping tests deterministic?
+* How do contract tests help validate communication between services?
+* What is mutation testing, and how does it measure test effectiveness?
+* How would you use mutation testing to identify gaps in a JavaScript test suite?
+* How do you test memory leaks in long-running JavaScript applications?
+* How do you test performance-sensitive JavaScript code reliably?
+* How would you test security-sensitive functions such as authentication and authorization helpers?
+* How do you test input validation against malicious and unexpected values?
+* How do you test code that uses randomness without making tests unreliable?
+* How do property-based testing and example-based testing differ?
+* How would you use property-based testing to validate complex business rules?
+* What are the challenges of testing code with deeply nested dependencies?
+* How do you test backward compatibility after changing a public JavaScript API?
+* How do you structure a maintainable test suite for a monorepo?
+* How do you integrate JavaScript tests into a CI/CD pipeline?
+* How would you optimize test execution in a large repository?
+* How do you distinguish a flaky test from a genuine intermittent production bug?
+* How do you evaluate test coverage without relying on coverage percentage alone?
+* How would you introduce TDD into an existing JavaScript codebase with limited tests?

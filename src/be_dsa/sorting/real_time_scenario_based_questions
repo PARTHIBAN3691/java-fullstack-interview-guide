@@ -1,0 +1,30 @@
+* An e-commerce application must sort millions of products by price. How would you choose an appropriate sorting strategy?
+* A banking application needs to sort transactions by timestamp while preserving the original order of transactions with identical timestamps. Which sorting properties are important?
+* A Java service sorts employee records by salary and then by joining date. How would you implement the comparator safely?
+* A production service experiences slow sorting when input data is already nearly sorted. Which algorithm or optimization would you investigate?
+* A sorting operation suddenly takes O(n²) time for certain inputs. How would you investigate a possible Quick Sort worst-case scenario?
+* A data-processing pipeline must sort several gigabytes of records but has limited heap memory. How would you implement external sorting?
+* A reporting service must sort customer records by multiple fields, including null values. How would you define the ordering rules?
+* An application needs to display the top 100 highest-priced products from millions of records. Would you sort everything or use a selection algorithm?
+* A Java application sorts custom objects, but the results are inconsistent across executions. How would you investigate the Comparator implementation?
+* A team notices that sorting results change the relative order of records with equal keys. How would you determine whether stability is required?
+* A data import job receives records that are almost sorted. How could the existing order be exploited to improve performance?
+* A financial report must sort monetary values accurately. How would you avoid floating-point comparison issues?
+* A service sorts strings containing uppercase letters, lowercase letters, and Unicode characters. How would you define a consistent ordering?
+* A distributed analytics system needs to sort records across multiple servers. How would you approach partitioning, local sorting, and merging?
+* A database export contains millions of sorted chunks. How would you merge them efficiently without loading all records into memory?
+* A Java application uses Collections.sort() on a LinkedList and has performance concerns. How would you evaluate the implementation and alternatives?
+* A service must sort objects by priority, creation time, and unique ID. How would you ensure deterministic ordering?
+* A monitoring system must continuously maintain the top K values as new measurements arrive. Would full sorting be appropriate?
+* A search service sorts results by relevance score, but many records have identical scores. How would you handle tie-breaking?
+* A batch job must sort integers that all fall within a small known range. Which non-comparison sorting algorithm would you consider?
+* A system needs to sort negative and positive integers using Radix Sort. What changes would you make to handle negative values correctly?
+* A memory-constrained application sorts a large linked list. Which algorithm would you select and why?
+* A high-throughput service sorts large primitive arrays and large object arrays. How would you benchmark the two workloads separately?
+* A code review identifies a sorting implementation that allocates many temporary arrays. How would you reduce allocation overhead?
+* A team wants to use parallel sorting to reduce execution time. What factors would determine whether parallelism helps?
+* A product catalog requires sorting by price, rating, and availability. How would you handle missing ratings and ensure consistent tie-breaking?
+* A log-processing service must sort events by timestamp when timestamps can be equal or missing. How would you define the ordering contract?
+* A Java API throws an exception while sorting a collection of custom objects. How would you investigate an inconsistent comparison contract?
+* A system must sort records in a locale-sensitive order. How would you choose between natural String ordering and locale-aware Collator sorting?
+* A performance test shows that a custom sorting algorithm is slower than Arrays.sort(). How would you investigate and decide whether to retain the custom implementation?

@@ -1,0 +1,22 @@
+
+* Explain the internal representation of strings in modern Java and the role of Compact Strings.
+* How did the internal representation of `String` change in Java 9?
+* What is the difference between UTF-16 code units, Unicode code points, and grapheme clusters?
+* Why might `String.length()` return a different value from the number of visible characters?
+* How would you correctly iterate over all Unicode code points in a string?
+* How does the String Constant Pool interact with garbage collection in modern Java?
+* What are the performance and memory implications of calling `intern()` on a large number of dynamically generated strings?
+* How does the compiler optimize constant string concatenation?
+* How has string concatenation implementation evolved in modern Java, including the use of `invokedynamic`?
+* Why is using `==` for string comparison unreliable even when it sometimes appears to work?
+* How does Java calculate the hash code of a string, and why is it useful in hash-based collections?
+* What problems can arise when strings are used as keys in `HashMap`?
+* Why is `String` suitable for immutable identifiers, cache keys, and configuration values?
+* How would you efficiently process a very large string without creating excessive intermediate objects?
+* What are the time and space complexities of common string operations such as `substring()`, `replace()`, and concatenation?
+* How would you implement case-insensitive comparison correctly when Unicode characters are involved?
+* What is the difference between Unicode normalization and converting a string to lowercase?
+* How can incorrect handling of Unicode affect string validation, searching, and equality checks?
+* What are the security risks of using strings for passwords, and what are the limitations of trying to erase their contents?
+* How would you prevent regular-expression denial-of-service issues when processing untrusted strings?
+

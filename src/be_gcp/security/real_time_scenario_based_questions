@@ -1,0 +1,30 @@
+* A Spring Boot service running on Cloud Run receives permission-denied errors when accessing Cloud Storage. How would you investigate and resolve the issue?
+* A production application uses a service account with excessive project-wide permissions. How would you reduce privileges without interrupting service?
+* A developer accidentally commits a service account JSON key to a public Git repository. What immediate containment and remediation steps would you take?
+* A Java microservice works locally but fails to authenticate after deployment to GKE. How would you troubleshoot its identity configuration?
+* A production service is suspected of using stolen service account credentials. How would you investigate activity and contain the incident?
+* An API hosted on Cloud Run receives a sudden increase in unauthorized requests. How would you distinguish authentication failures from application authorization defects?
+* A public Cloud Storage bucket is discovered to contain confidential customer documents. How would you contain the exposure and determine its scope?
+* A firewall change unintentionally exposes a database to the internet. How would you respond and prevent recurrence?
+* A Spring Boot application logs database passwords during connection failures. How would you eliminate the leak and assess potential exposure?
+* A security audit finds that several developers have Owner permissions on production projects. How would you redesign access and governance?
+* A service account can impersonate another privileged service account. How would you investigate and remove unnecessary impersonation permissions?
+* A third-party application hosted outside GCP needs access to Google Cloud resources. How would you provide access without distributing service account keys?
+* A Cloud Build pipeline deploys a container image with known critical vulnerabilities. How would you prevent deployment and secure the release process?
+* A container image contains a hardcoded API key discovered after deployment. How would you rotate the credential and prevent future occurrences?
+* A Java API accepts JWT tokens but does not validate the audience correctly. How would you identify the risk and fix token validation?
+* A customer can access another customer's records by changing an identifier in an API request. How would you address the authorization vulnerability?
+* A production database contains sensitive data that must be encrypted with organization-controlled keys. How would you implement the required encryption architecture?
+* An encryption key rotation causes application decryption failures. How would you diagnose the problem and restore service?
+* Security Command Center reports a high-risk misconfiguration in a production project. How would you prioritize and remediate it?
+* Cloud Audit Logs show unexpected secret access from a service account outside its normal usage pattern. How would you investigate?
+* A developer needs temporary production access to debug an incident. How would you grant access with minimal privileges and proper auditability?
+* A GKE workload can access resources belonging to an unrelated application. How would you investigate workload identity and network isolation?
+* A public API experiences a distributed denial-of-service attack. How would you protect it using Google Cloud security services?
+* A new organization policy blocks a legitimate production deployment. How would you resolve the conflict without weakening the overall security posture?
+* A compliance review requires proof that sensitive data is encrypted, access is restricted, and administrative actions are audited. How would you gather the evidence?
+* A secret is rotated successfully, but an application continues using the old credential. How would you investigate caching, connection pools, and version selection?
+* An application exposes internal stack traces and sensitive identifiers in HTTP responses. How would you fix error handling and improve observability safely?
+* A production deployment uses an untrusted container image because the release pipeline lacks provenance checks. How would you enforce trusted artifacts?
+* A multi-tenant Java application must isolate customer data while using shared infrastructure. How would you implement and test tenant-level authorization?
+* A security incident requires rapid revocation of access across multiple projects. How would you coordinate identity, secret rotation, network restrictions, and incident evidence preservation?

@@ -1,0 +1,20 @@
+* An employee management application needs to sort employees by salary, department, and name. How would you implement the sorting logic using lambda expressions?
+* An e-commerce application needs to apply different discount rules based on customer type. How would you use lambda expressions to implement the Strategy design pattern?
+* A payment service needs to execute different payment-processing implementations at runtime. How would you pass the processing behavior as a lambda expression?
+* A notification service supports email, SMS, and push notifications. How would you use lambda expressions to simplify notification handling?
+* A legacy application contains many anonymous inner classes for simple operations. How would you refactor them using lambda expressions?
+* A reporting service needs to filter employees by salary, department, and experience. How would you design reusable filtering logic using lambdas?
+* A data-processing service needs to transform a collection through several steps. How would you combine lambda expressions with the Stream API?
+* A file-processing application needs to execute a custom operation for every file. How would you pass the operation as a lambda expression?
+* A service needs to execute callback logic after a database operation completes. How would you implement the callback using a lambda expression?
+* A logging system should construct expensive log messages only when logging is enabled. How would you use a lambda expression to defer message creation?
+* A REST API needs to execute a different validation rule for each request type. How would you implement reusable validation with lambda expressions?
+* A batch-processing application needs to process millions of records. What considerations would you evaluate before using lambda expressions with parallel streams?
+* A lambda expression captures a mutable object that is modified by multiple threads. What concurrency problems could occur, and how would you address them?
+* A method accepts two different functional interface types, and passing a lambda expression causes an ambiguous method call. How would you fix it?
+* A Stream pipeline contains a lambda expression that calls a method throwing a checked exception. How would you handle the exception cleanly?
+* A developer creates a deeply nested lambda expression that is difficult to maintain. How would you refactor it without changing its behavior?
+* An application needs to reuse a complex comparator across several services. How would you define and compose lambda-based comparators?
+* A team observes unexpected behavior when using `this` inside a lambda expression. How would you explain and fix the issue?
+* A parallel Stream produces inconsistent results because its lambda expression modifies shared state. How would you redesign the processing pipeline?
+* A service needs to make business rules configurable without creating a separate class for every rule. How would you use lambda expressions and functional interfaces?

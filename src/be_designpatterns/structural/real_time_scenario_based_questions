@@ -1,0 +1,30 @@
+* Your application integrates three payment gateways, each exposing a different API. How would you use the Adapter pattern to standardize payment processing?
+* A third-party shipping SDK changes its method signatures, breaking multiple services. How would you isolate the impact?
+* A Spring Boot application needs logging, metrics, and tracing around service calls without modifying business classes. Which structural pattern would you consider?
+* A service must cache expensive database lookups while preserving the existing service interface. How would you design the solution?
+* A large document contains thousands of pages, and loading all pages at startup causes memory pressure. How would you use a Proxy?
+* Your application contains a complex checkout workflow involving inventory, payment, shipping, and notifications. How would you simplify the client-facing interface?
+* A product hierarchy contains categories, subcategories, and individual products. How would you model operations that apply to both groups and individual products?
+* Your application supports multiple report formats and multiple output destinations. How could the Bridge pattern reduce class explosion?
+* A text editor creates millions of repeated character objects and consumes too much memory. How would you investigate and apply Flyweight?
+* A Spring service has a transactional method that works when called externally but not during self-invocation. How would you investigate the proxy behavior?
+* A JDK dynamic proxy throws an unexpected UndeclaredThrowableException. How would you investigate and resolve the issue?
+* A decorator adds retry logic around an API call, but it retries non-recoverable validation failures. How would you redesign it?
+* A caching proxy returns outdated account information after updates. How would you design invalidation and consistency?
+* A Composite-based folder structure experiences a stack overflow due to deeply nested directories. How would you address the problem?
+* A Composite tree allows a node to become its own descendant, causing infinite recursion. How would you prevent this?
+* A Facade coordinates multiple services, but partial failures leave an order in an inconsistent state. How would you handle this?
+* A Proxy-based authorization check is bypassed when a service method is invoked internally. How would you close the gap?
+* A Decorator chain produces incorrect results because compression occurs before encryption in the wrong order. How would you define and test the required order?
+* Your team must support both a legacy XML API and a new REST API without changing the domain model. Which structural patterns would you use?
+* A third-party API returns inconsistent data formats, and multiple business services contain conversion logic. How would you centralize the adaptation?
+* A report-generation module supports PDF, Excel, and CSV outputs, and new output types require changes to many classes. How would you redesign it?
+* An application creates duplicate shared configuration objects under heavy concurrency. How would you make the Flyweight factory thread-safe?
+* A Remote Proxy experiences intermittent timeouts and connection failures. How would you make client behavior reliable?
+* A service decorator accidentally drops correlation IDs and tracing information. How would you preserve request context?
+* A Facade has accumulated dozens of unrelated operations and has become difficult to maintain. How would you split its responsibilities?
+* A class hierarchy contains separate classes for every database type and business operation. How could the Bridge pattern simplify the design?
+* A decorator wraps a method returning CompletableFuture but blocks the request thread. How would you correct the implementation?
+* A proxy caches a failed API response and returns the same error to every subsequent request. How would you improve the caching strategy?
+* A Spring Boot application uses class-based proxies, but final classes or methods prevent expected interception. How would you investigate the limitation?
+* Your team is modernizing a legacy monolith. How would you identify suitable places to introduce structural patterns incrementally without destabilizing the application?

@@ -1,0 +1,30 @@
+* Explain the Flexbox layout algorithm at a high level.
+* How does the browser calculate the main size of flex items?
+* How does Flexbox distribute positive free space?
+* How does Flexbox distribute negative free space?
+* Explain the difference between flex-basis: 0, 0%, and auto.
+* How do intrinsic content sizes affect Flexbox layout?
+* Why can min-width: auto cause unexpected overflow?
+* How can min-width: 0 fix text overflow inside a flex item?
+* Explain how flex-grow factors influence space distribution.
+* Explain how scaled flex-shrink factors work.
+* What happens when flex items have different flex-basis values?
+* How do margins affect alignment in a flex container?
+* How do auto margins interact with justify-content?
+* Why might align-content appear not to work?
+* How do align-items: stretch and an explicit height interact?
+* How does writing-mode affect the main and cross axes?
+* How does direction: rtl affect Flexbox layout?
+* What are the accessibility implications of using the order property?
+* How can visual order differ from keyboard navigation order?
+* How would you debug unexpected Flexbox shrinking?
+* How can nested flex containers create sizing problems?
+* How do percentage dimensions behave inside flex containers?
+* How can Flexbox layouts cause horizontal scrolling?
+* How would you design a sticky-footer layout using Flexbox?
+* How can you build equal-height cards with Flexbox?
+* What are the limitations of Flexbox for two-dimensional layouts?
+* When would CSS Grid be preferable to Flexbox?
+* How do flex items behave when their content has an unbreakable long word?
+* How can Flexbox performance be affected in complex nested layouts?
+* How would you troubleshoot a layout that differs across browsers?

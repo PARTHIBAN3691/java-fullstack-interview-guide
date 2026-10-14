@@ -1,0 +1,30 @@
+* Write an SQL query to retrieve only the customer ID, name, and email for active customers instead of selecting all columns.
+* Write an SQL query to retrieve the latest 20 orders efficiently using an appropriate index.
+* Create a composite index for a query filtering orders by customer ID and status and sorting by creation date.
+* Write a query that retrieves customers who have placed at least one order using EXISTS.
+* Rewrite a correlated subquery as a JOIN and explain how you would compare the execution plans.
+* Write a query to find duplicate email addresses without retrieving unnecessary columns.
+* Write a query to calculate department-wise salary totals and optimize the grouping operation.
+* Write a query using ROW_NUMBER to return the latest order for each customer.
+* Write an SQL query for keyset pagination using an indexed creation timestamp and unique ID.
+* Write an SQL query that retrieves the top five highest-value orders without sorting the entire table when an appropriate index can help.
+* Create a partial index for active records and write a query that can use it.
+* Create a covering index for a query that filters by status and returns an order ID and creation timestamp.
+* Write a PostgreSQL query to inspect an execution plan using EXPLAIN ANALYZE and BUFFERS.
+* Write SQL to identify the largest tables and indexes in a PostgreSQL database.
+* Write SQL to find frequently executed or resource-intensive queries using PostgreSQL statistics views.
+* Write a query to aggregate daily transaction totals and discuss how you would optimize it for a large table.
+* Rewrite a query that uses a function on an indexed date column so that it can use a range condition.
+* Write an SQL query using a CTE to eliminate repeated calculation of the same intermediate result.
+* Implement a Spring Data JPA repository method that retrieves only selected columns using an interface projection.
+* Implement a Spring Data JPA query using JOIN FETCH to load related entities without triggering the N+1 query problem.
+* Implement a Spring Boot endpoint with Pageable and a database query designed for efficient pagination.
+* Implement a JDBC batch insert using PreparedStatement and configurable batch sizes.
+* Implement a Spring Boot service that processes records in batches while controlling transaction size.
+* Write a Java method using JdbcTemplate to execute a parameterized query safely.
+* Implement a Spring Data JPA repository method using a native SQL query and appropriate query parameters.
+* Write a Java service that measures database operation latency and records metrics without logging sensitive query parameters.
+* Implement a Spring Boot integration test that verifies query behavior and response time against a realistic test dataset.
+* Write a test that detects unexpected increases in SQL statement counts for a Spring Data JPA operation.
+* Implement a Java benchmarking approach to compare two SQL query strategies under concurrent load.
+* Write a Spring Boot health or monitoring component that tracks connection pool utilization and reports database access latency.

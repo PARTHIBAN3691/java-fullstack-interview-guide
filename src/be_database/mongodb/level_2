@@ -1,0 +1,30 @@
+* Explain MongoDB's architecture and the roles of mongod, mongos, and config servers.
+* How does MongoDB's WiredTiger storage engine manage concurrency and caching?
+* How does MongoDB provide atomicity at the single-document level?
+* How do multi-document transactions work in MongoDB, and what are their limitations?
+* How do snapshot read concern and majority write concern affect consistency?
+* How would you choose appropriate read and write concerns for a financial application?
+* How does MongoDB replication work, and how is a new primary elected?
+* What happens to writes during a replica set primary election?
+* How do retryable writes work, and what failure scenarios do they address?
+* How do change streams work, and how can Java applications consume them reliably?
+* How do resume tokens help recover change-stream consumers after failures?
+* How do you design idempotent consumers for MongoDB change streams?
+* How does shard-key selection affect scalability, query routing, and write distribution?
+* What are the risks of monotonically increasing shard keys?
+* How do hashed shard keys differ from ranged shard keys?
+* What are scatter-gather queries, and how can they be avoided?
+* How do compound indexes support query patterns involving filtering and sorting?
+* How can an index improve read performance while negatively affecting write performance?
+* How do partial, sparse, TTL, and wildcard indexes differ?
+* How would you investigate index inefficiency using explain("executionStats")?
+* How do schema design and document growth affect storage efficiency and performance?
+* What are the limitations of embedding large arrays in MongoDB documents?
+* How would you design pagination for millions of MongoDB records?
+* Why can large skip() offsets be inefficient, and how does keyset pagination help?
+* How do aggregation pipeline optimization and index placement affect performance?
+* How would you optimize a $lookup pipeline over large collections?
+* How do transactions interact with replication, write conflicts, and retry behavior?
+* How would you implement safe transaction retries in Spring Boot without duplicating business operations?
+* How do connection pools, server selection timeouts, and socket timeouts affect Java application reliability?
+* How would you design a highly available, horizontally scalable MongoDB architecture for a high-throughput Java application?

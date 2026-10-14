@@ -1,0 +1,83 @@
+**MCP Fundamentals and Architecture**
+* What is the Model Context Protocol (MCP), and why was it introduced?
+* What problems does MCP solve when connecting LLM applications to external tools and data sources?
+* What are the main components of MCP architecture?
+* How does MCP differ from custom function calling or proprietary tool integrations?
+
+**MCP Hosts, Clients, and Servers**
+* What is an MCP host, and what responsibilities does it have?
+* What is an MCP client, and how does it communicate with an MCP server?
+* What is an MCP server, and what capabilities can it expose?
+* Can one MCP host connect to multiple MCP servers? Explain the use case.
+
+**MCP Tools**
+* What are MCP tools, and how are they different from ordinary functions?
+* How does an MCP server expose tools to an MCP client?
+* What information does a tool definition typically contain?
+* How does an LLM application invoke an MCP tool?
+
+**MCP Resources**
+* What are MCP resources, and what types of data can they expose?
+* How are MCP resources different from MCP tools?
+* What is a resource URI, and why is it important?
+* How can an MCP client discover available resources?
+
+**MCP Prompts**
+* What are MCP prompts, and why are they useful?
+* How does an MCP server expose reusable prompt templates?
+* How are MCP prompts different from system prompts defined directly in an application?
+* What are prompt arguments in MCP?
+
+**MCP Transport Mechanisms**
+* What transport mechanisms are commonly used by MCP?
+* What is the difference between standard input/output (stdio) transport and Streamable HTTP?
+* When would you use stdio transport for an MCP server?
+* What role does JSON-RPC play in MCP communication?
+
+**MCP Server Development**
+* What are the basic steps involved in developing an MCP server?
+* Which capabilities can an MCP server expose?
+* What is the purpose of registering tools and resources on an MCP server?
+* How can an MCP server be tested during development?
+
+**MCP Integration with LLM Applications**
+* How does an LLM application connect to an MCP server?
+* How does MCP tool discovery help an LLM application?
+* How does an application pass tool results back to an LLM?
+* What are the main benefits of MCP-based integration?
+
+**MCP Integration with Java and Spring Boot**
+* How can a Java application integrate with MCP?
+* What is the role of Spring AI in MCP integration?
+* How can a Spring Boot application expose a Java method as an MCP tool?
+* How can a Java application consume tools from an MCP server?
+
+**MCP Authentication and Authorization**
+* Why do MCP clients and servers need authentication?
+* What is the difference between authentication and authorization in MCP?
+* Why should MCP tool access be restricted by user permissions?
+* What is the purpose of access tokens in remote MCP integrations?
+
+**MCP Tool Discovery and Execution**
+* How does a client discover tools exposed by an MCP server?
+* What information is returned when tools are listed?
+* How does a client execute a discovered tool?
+* Why should tool arguments be validated before execution?
+
+**MCP Security and Trust Boundaries**
+* What are the main security risks associated with MCP integrations?
+* Why should an MCP client treat tool output as potentially untrusted?
+* What is the principle of least privilege in MCP?
+* Why should an application avoid automatically trusting every available MCP server?
+
+**MCP Error Handling and Observability**
+* How does MCP represent protocol-level errors?
+* What is the difference between a protocol error and a tool execution error?
+* What information should be logged during MCP tool execution?
+* Why are request IDs useful for troubleshooting MCP interactions?
+
+**MCP Deployment and Governance**
+* What are the common ways to deploy an MCP server?
+* What is the difference between a local MCP server and a remotely hosted MCP server?
+* Why should MCP server versions be managed?
+* What governance policies should be established before an organization adopts MCP?

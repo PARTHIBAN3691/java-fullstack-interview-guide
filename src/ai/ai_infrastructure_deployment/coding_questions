@@ -1,0 +1,99 @@
+**Model Serving Architecture**
+* Implement a Spring Boot inference gateway that routes requests to configurable model-serving endpoints and records latency, status, and model version.
+* Build a request-routing component that supports model selection, timeouts, retries, fallback endpoints, and per-tenant quotas.
+* Write integration tests for provider failure, streaming responses, authentication, and graceful fallback.
+
+**GPU and CPU Inference**
+* Implement a benchmark harness that compares CPU and GPU inference across different batch sizes and input lengths.
+* Build a performance-report generator that records latency percentiles, throughput, memory usage, and hardware configuration.
+* Write tests that validate model output consistency within defined tolerances across supported precision and device configurations.
+
+**GPU Memory Management**
+* Implement a GPU memory estimator that calculates model-weight memory, KV cache requirements, and configurable runtime overhead.
+* Build an admission-control component that estimates request memory demand and rejects or queues requests when capacity is insufficient.
+* Write tests for mixed sequence lengths, concurrent requests, memory limits, and out-of-memory recovery.
+
+**Model Quantization and Optimization**
+* Build a benchmarking pipeline that compares supported precision formats and quantized model variants across memory, latency, throughput, and quality.
+* Implement an evaluation gate that rejects an optimized model when quality metrics fall below configurable thresholds.
+* Write tests that validate model metadata, quantization compatibility, and inference output tolerances.
+
+**Batch vs Online Inference**
+* Implement a batch inference worker that reads input records, processes them in chunks, and writes resumable outputs.
+* Build an API that supports asynchronous inference jobs with job identifiers, status tracking, cancellation, and result retrieval.
+* Write tests for partial batch failure, idempotent retries, job recovery, and priority handling between batch and online traffic.
+
+**Dynamic Batching**
+* Implement a request queue that groups compatible inference requests by maximum batch size and maximum wait time.
+* Build a benchmark that compares dynamic batching configurations using throughput and p95/p99 latency.
+* Write tests for low traffic, burst traffic, request timeouts, incompatible input shapes, and queue saturation.
+
+**Continuous Batching**
+* Implement a simulated continuous-batching scheduler that admits new sequences as existing generations finish.
+* Build a scheduler metrics collector that tracks active sequences, waiting requests, token throughput, and cache occupancy.
+* Write tests for sequence completion, request cancellation, memory limits, starvation prevention, and scheduling fairness.
+
+**Model Caching**
+* Implement a response cache with keys derived from model version, prompt content, inference parameters, and relevant context.
+* Build cache invalidation logic that handles model updates, prompt changes, tenant permissions, and source-data changes.
+* Write tests for cache hits, misses, expiration, concurrent access, authorization isolation, and stale-response prevention.
+
+**Distributed Inference**
+* Implement a client-side load balancer that distributes inference requests across healthy model-serving replicas.
+* Build a distributed benchmark that measures communication overhead, throughput, latency, and failure recovery.
+* Write tests for node unavailability, timeout propagation, retry behavior, and safe request redistribution.
+
+**Model Parallelism**
+* Build a configuration validator that checks tensor-parallel and pipeline-parallel settings against available GPU resources.
+* Implement a benchmark report that compares parallelism configurations using throughput, latency, memory utilization, and communication overhead.
+* Write tests that detect invalid GPU counts, incompatible partition configurations, and insufficient memory capacity.
+
+**Kubernetes for AI Workloads**
+* Create Kubernetes manifests for a GPU-backed inference Deployment, Service, resource requests, configuration, and health probes.
+* Implement a readiness mechanism that prevents requests from reaching a model server until artifact loading and warm-up finish.
+* Write automated deployment tests for pending Pods, failed probes, rolling updates, graceful shutdown, and GPU resource allocation.
+
+**GPU Scheduling and Sharing**
+* Build a Kubernetes configuration that schedules inference workloads onto GPU nodes using resource requests, labels, affinity, and tolerations.
+* Implement a workload-placement validator that checks GPU availability, tenant quotas, and scheduling constraints.
+* Write tests for GPU exhaustion, priority scheduling, isolation policies, and workloads using dedicated versus shared accelerators.
+
+**AI Model Serving with vLLM**
+* Implement a Dockerized vLLM deployment with configurable model identifiers, GPU settings, concurrency limits, and API authentication at the gateway.
+* Build a benchmark client that records time to first token, inter-token latency, total generation time, and tokens per second.
+* Write deployment validation tests for model loading, streaming output, concurrency limits, error handling, and model-version compatibility.
+
+**NVIDIA Triton Inference Server**
+* Create a Triton model repository configuration with model versions, instance groups, and dynamic-batching settings.
+* Implement a client that submits inference requests and records response latency, errors, and throughput.
+* Write tests that validate model readiness, version selection, batch handling, and recovery after a model becomes unavailable.
+
+**Model Deployment with Docker**
+* Create a multi-stage Dockerfile for an inference API with external model artifacts, runtime configuration, and a non-root user.
+* Build a container startup process that validates required artifacts and dependencies before marking the service ready.
+* Write deployment tests for GPU access, configuration injection, image compatibility, artifact download failures, and graceful shutdown.
+
+**Autoscaling AI Workloads**
+* Implement an autoscaling policy simulator that uses queue depth, active requests, token throughput, and GPU utilization.
+* Build a scale-down controller that drains requests before terminating inference replicas.
+* Write tests for sudden traffic spikes, delayed model startup, scaling oscillations, and recovery after overload.
+
+**Model Registry and Artifact Management**
+* Implement a model artifact registry that records immutable versions, checksums, provenance, runtime requirements, and evaluation results.
+* Build a promotion workflow that validates artifacts and approvals before allowing deployment to the next environment.
+* Write tests for corrupted artifacts, incompatible runtime versions, rollback, and missing model dependencies.
+
+**High Availability for AI Services**
+* Implement a health-aware inference router that removes unhealthy replicas and restores them after successful recovery checks.
+* Build a graceful shutdown handler that stops accepting new requests while allowing active streaming requests to finish within a deadline.
+* Write tests for replica failure, zone failover, load redistribution, readiness transitions, and recovery under limited capacity.
+
+**AI Disaster Recovery**
+* Implement a backup manifest for model artifacts, serving configuration, registry metadata, and deployment manifests.
+* Build a recovery validation script that verifies checksums, dependencies, service health, and inference quality after restoration.
+* Write tests that simulate region loss, artifact-store failure, missing dependencies, and recovery-time objective violations.
+
+**Inference Cost Optimization**
+* Implement a cost calculator that compares model configurations using hardware rates, utilization, token throughput, and successful-task rate.
+* Build a routing policy that selects an appropriate model based on quality requirements, latency objectives, and cost budgets.
+* Write tests for budget enforcement, idle-capacity detection, quantized model selection, cache benefits, and cost-aware autoscaling.

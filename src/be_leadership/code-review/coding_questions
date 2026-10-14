@@ -1,0 +1,30 @@
+* Write a Java method that validates a user's input and handles invalid values appropriately.
+* Refactor a long Java method into smaller methods following the Single Responsibility Principle.
+* Identify and remove duplicated logic from two Java service methods.
+* Refactor Java code to replace deeply nested conditional statements with a cleaner design.
+* Write a Java program demonstrating proper exception handling and meaningful error messages.
+* Refactor code that uses repeated string literals to use constants or enums appropriately.
+* Write unit tests using JUnit 5 for a Java service method with success and failure scenarios.
+* Use Mockito to test a service that depends on a repository interface.
+* Write a parameterized JUnit test for validating multiple invalid input values.
+* Refactor a Java class to depend on interfaces instead of concrete implementations.
+* Implement a Strategy pattern to replace a complex conditional business logic block.
+* Review and fix a Java method that can throw a NullPointerException.
+* Write a Java method using streams to process a collection without unnecessary intermediate operations.
+* Identify and fix a resource leak in code that reads a file or database connection.
+* Implement a thread-safe counter and explain the concurrency risks in a non-thread-safe version.
+* Fix a race condition in a Java class shared by multiple threads.
+* Write a Java program that uses CompletableFuture with proper exception handling and timeouts.
+* Implement a bounded retry mechanism that avoids retrying non-recoverable errors.
+* Write a method that validates API input and returns appropriate validation errors.
+* Refactor a Spring service to keep transaction boundaries and business logic clear.
+* Write a repository method that uses parameterized queries to prevent SQL injection.
+* Implement a pagination method for retrieving records from a large database table.
+* Review and optimize a Java method that performs repeated database calls inside a loop.
+* Write a JUnit test that verifies a transactional service rolls back after a failure.
+* Implement a simple cache with a clear expiration policy and thread-safe access.
+* Refactor a REST controller to separate request validation, business logic, and response mapping.
+* Write a Java method that safely processes a list containing null values and duplicate elements.
+* Implement a code review checklist validator that checks naming, method length, and missing tests in a simplified Java source model.
+* Write a Java program to compare two versions of a configuration object and identify breaking changes.
+* Design a Java-based pull request review workflow with review comments, severity levels, approvals, and audit history.

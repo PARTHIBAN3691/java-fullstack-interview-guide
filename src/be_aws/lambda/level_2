@@ -1,0 +1,20 @@
+* Explain the AWS Lambda execution environment lifecycle, including initialization, invocation, reuse, and shutdown.
+* How would you optimize a Java Lambda function with a large dependency graph to reduce cold-start latency?
+* Compare AWS Lambda SnapStart, provisioned concurrency, and ordinary execution-environment reuse.
+* How does Lambda concurrency work, and how would you calculate concurrency for a high-throughput workload?
+* What happens when a Lambda function reaches its account concurrency quota or reserved concurrency limit?
+* How would you design a Java Lambda application to handle millions of requests per day while controlling costs?
+* How would you ensure idempotent processing when Lambda retries an event?
+* Explain the differences between Lambda retry behavior for asynchronous invocation, API Gateway requests, and SQS event source mappings.
+* How do batch size, batching window, visibility timeout, and partial batch responses affect SQS-triggered Lambda processing?
+* How would you prevent duplicate processing when a Lambda function consumes events from Kinesis or DynamoDB Streams?
+* How would you troubleshoot a Lambda function that experiences intermittent timeouts despite having sufficient memory?
+* How would you optimize JVM settings, memory allocation, initialization logic, and connection reuse for Java Lambda?
+* How would you securely connect a Lambda function to a private database in a VPC?
+* What networking and connection-management problems can arise when many Lambda execution environments connect to the same database?
+* How would you design a reliable asynchronous processing architecture using Lambda, SQS, retries, and a dead-letter queue?
+* How would you implement distributed tracing and correlate requests across API Gateway, Lambda, and downstream services?
+* How would you deploy Lambda functions using blue-green or canary releases and automatically roll back unhealthy deployments?
+* How would you manage Lambda versions, aliases, traffic shifting, and provisioned concurrency across environments?
+* How would you choose between Lambda, ECS, and EKS for a long-running Java microservice?
+* How would you design a multi-account, multi-Region Lambda architecture with secure access, observability, and disaster recovery?

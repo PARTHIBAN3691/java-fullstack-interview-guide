@@ -1,0 +1,30 @@
+* A child component does not display the latest value passed by its parent. How would you troubleshoot the issue?
+* A developer tries to modify a prop inside a child component. Why is this incorrect, and how would you redesign the data flow?
+* A deeply nested component requires several props that are only passed through intermediate components. How would you reduce prop drilling?
+* A parent component passes a callback to a child, but the callback uses outdated state. How would you fix it?
+* A component re-renders whenever its parent updates, even though its displayed props have not changed. How would you investigate it?
+* A memoized child component re-renders because the parent creates a new object prop on every render. How would you optimize it?
+* A component requires a default title when no title prop is provided. How would you implement this?
+* A reusable button component accepts many Boolean props, resulting in conflicting combinations. How would you redesign its API?
+* A component accepts either an image URL or an icon component, but not both. How would you model this using TypeScript?
+* A child component needs to notify its parent when a form is submitted. How would you design the callback prop?
+* A list item component requires an identifier and a click handler. How would you define and validate its props?
+* A reusable layout component must render arbitrary nested elements. How would you implement it using props.children?
+* A component needs to render different content supplied by its parent. How would you choose between children, an element prop, and a render prop?
+* A higher-order component adds authentication information to a wrapped component. How would you preserve the original prop types?
+* A component forwards all received props to a DOM element and produces warnings about invalid attributes. How would you fix it?
+* A TypeScript component reports an error because a required prop is missing. How would you investigate and resolve it?
+* A component receives an array of records that is accidentally mutated during sorting. How would you prevent changes to the parent's data?
+* A Context provider and props both provide the same value. How would you simplify the component design?
+* A shared component has too many props and is difficult to maintain. How would you split or redesign its API?
+* A child component must support both a default layout and a fully customizable layout. How would you design its props?
+* A component must accept either a loading state or loaded data, with different required properties for each state. How would you model the props?
+* A callback prop is invoked multiple times because the event handler is called during rendering. How would you correct it?
+* A reusable table component needs configurable columns, rows, and cell rendering. How would you design its props?
+* A server component passes a callback function to a client component and causes a serialization error. How would you redesign the boundary?
+* A child component should update its internal state when a particular prop changes. How would you determine whether derived state is necessary?
+* A form component needs to support both controlled and uncontrolled usage. How would you design the props?
+* A parent component passes a large object to several children, and small changes trigger many re-renders. How would you optimize the data flow?
+* A component library needs backward-compatible prop changes across multiple applications. How would you evolve its API safely?
+* A component accepts a custom CSS class and additional HTML attributes. How would you forward them while preserving accessibility?
+* A team uses prop drilling extensively for global user information. How would you decide whether to introduce Context or another state management approach?

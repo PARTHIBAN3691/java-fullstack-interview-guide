@@ -1,0 +1,30 @@
+* How would you design a structural pattern-based architecture for integrating multiple payment providers with different APIs?
+* How can you combine Adapter, Bridge, and Decorator patterns without creating excessive abstraction?
+* How would you implement a thread-safe Flyweight factory for millions of shared objects?
+* How would you manage the lifecycle and eviction of Flyweight objects in a long-running application?
+* What are the memory and garbage-collection implications of using Flyweight objects?
+* How can dynamic proxies intercept method calls while preserving exception semantics and return types?
+* What limitations do JDK dynamic proxies have compared with class-based proxies?
+* How does Spring's proxy-based AOP affect self-invocation of annotated methods?
+* Why can Spring's transactional behavior fail when a method is invoked from another method in the same class?
+* How would you design a Decorator chain that supports retries, timeouts, metrics, tracing, and circuit breaking?
+* How would you ensure the correct ordering of decorators for reliability and observability?
+* How can a Proxy pattern implement authorization without leaking security concerns into business logic?
+* How would you prevent a caching proxy from returning stale data in a distributed system?
+* How can a Remote Proxy handle network failures, timeouts, and serialization errors?
+* How would you design a Bridge-based framework that supports multiple rendering engines and output formats?
+* How can the Composite pattern support large hierarchical structures without excessive recursive calls?
+* How would you prevent cycles in a Composite object graph?
+* How can a Facade preserve transaction consistency when coordinating multiple backend services?
+* What are the risks of turning a Facade into a God Object?
+* How would you design an Adapter layer that isolates a domain model from a frequently changing third-party SDK?
+* How can structural design patterns be applied in a hexagonal architecture?
+* How would you combine a Proxy with dependency injection while keeping the application testable?
+* How would you implement a dynamic proxy that records execution time and propagates exceptions correctly?
+* How can you design a Decorator that preserves generic types and fluent API behavior?
+* What challenges arise when decorating asynchronous methods that return CompletableFuture?
+* How would you implement a caching proxy that safely handles concurrent requests for the same key?
+* How can you measure whether Flyweight provides a meaningful memory improvement?
+* How would you refactor a legacy system with deep inheritance into a Bridge- or Decorator-based design?
+* How can structural patterns help isolate database technologies and external infrastructure from business logic?
+* What criteria would you use to evaluate whether a structural pattern improves maintainability or merely adds complexity?

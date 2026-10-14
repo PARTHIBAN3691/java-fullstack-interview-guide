@@ -1,0 +1,30 @@
+* Explain how Node.js uses libuv to perform asynchronous file system operations.
+* How do asynchronous file operations differ from synchronous file operations internally?
+* How does the libuv thread pool affect file system performance?
+* How would you process a multi-gigabyte file using bounded memory?
+* How would you design a high-throughput file-processing pipeline using Buffers and streams?
+* How would you implement backpressure across multiple file transformation stages?
+* How would you optimize Buffer allocation when processing millions of small file chunks?
+* What are the memory implications of Buffer.slice() and Buffer.subarray() during file processing?
+* How would you prevent a small Buffer view from retaining a large underlying allocation?
+* How would you implement random-access reads and writes using file descriptors?
+* How would you safely perform concurrent writes to different regions of the same file?
+* How would you prevent data corruption when multiple processes update the same file?
+* How would you implement atomic file replacement in Node.js?
+* What is the difference between writing data successfully and ensuring it is durable on disk?
+* How would you use fsync() or related operations when durability is important?
+* How would you design a crash-safe file-processing workflow?
+* How would you resume processing a large file after an application restart?
+* How would you implement checkpointing for long-running file transformations?
+* How would you handle partial writes and incomplete reads when using file descriptors?
+* How would you detect file changes while processing a file that another process may modify?
+* How would you design a file watcher that handles duplicate, delayed, or missed change notifications?
+* How would you safely process files arriving in a directory while avoiding partially written files?
+* How would you prevent symlink-based and path traversal attacks in a file-processing service?
+* How would you process untrusted files while limiting memory, CPU, disk usage, and execution time?
+* How would you implement streaming decompression and compression for very large files?
+* How would you design a resumable upload system using file streams and temporary files?
+* How would you calculate a checksum while streaming a file without reading it twice?
+* How would you optimize file processing on systems with limited memory and file descriptors?
+* How would you diagnose high event-loop latency caused by file processing?
+* What trade-offs would you consider between Buffers, streams, worker threads, and external processing tools?

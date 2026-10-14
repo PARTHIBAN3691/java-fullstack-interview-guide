@@ -1,0 +1,30 @@
+* A Kubernetes cluster is running, but newly created Pods remain in Pending state. How would you investigate the architecture and identify the bottleneck?
+* The API Server becomes unavailable, but existing Spring Boot applications continue serving requests. Why does this happen, and what are the operational risks?
+* The etcd cluster loses quorum. What happens to Kubernetes control plane operations, and how would you recover?
+* A worker node suddenly crashes while hosting several production microservices. How does Kubernetes recover the workloads?
+* A Deployment reports the desired number of replicas, but fewer Pods are Ready. How would you troubleshoot the issue?
+* A Spring Boot application works inside its Pod but cannot communicate with another microservice. How would you investigate networking and service discovery?
+* An application is accessible through a ClusterIP Service but not through the external load balancer. How would you troubleshoot the traffic path?
+* DNS resolution between Pods becomes intermittent during peak traffic. Which components and metrics would you inspect?
+* A rolling deployment causes temporary downtime even though multiple replicas are configured. How would you redesign the deployment strategy?
+* A Java application repeatedly restarts because of memory limits. How would you distinguish a JVM memory issue from a container memory-limit issue?
+* Pods are frequently evicted during peak workloads. How would you identify resource pressure and prevent recurrence?
+* The Horizontal Pod Autoscaler does not scale a CPU-intensive application despite increased traffic. What would you investigate?
+* A cluster has sufficient total CPU capacity, but new Pods cannot be scheduled. What scheduling constraints could explain this?
+* A single microservice consumes excessive resources and affects other applications. How would you enforce workload isolation?
+* A node upgrade causes disruption to a critical application. How would you use PodDisruptionBudgets and workload configuration to reduce the impact?
+* A Kubernetes Service routes traffic to unhealthy application instances. How would you investigate readiness probes and endpoint management?
+* A Spring Boot application starts slowly and fails its liveness probe repeatedly. How would you correct the probe and startup configuration?
+* A PersistentVolumeClaim remains Pending after deploying a stateful application. How would you diagnose the storage architecture?
+* A stateful application loses access to its volume after a node failure. How would you investigate storage attachment and recovery?
+* A team accidentally exposes an internal service publicly. Which Kubernetes networking and access-control settings would you review?
+* Two teams deploy applications with conflicting resource requirements in the same cluster. How would you establish resource governance?
+* A production cluster experiences intermittent API Server latency. How would you distinguish etcd latency, request overload, and controller bottlenecks?
+* A cluster upgrade fails because some workloads cannot be rescheduled. How would you plan upgrades and validate workload compatibility?
+* A new release introduces errors for only a small percentage of users. How would you implement canary analysis and automatic rollback?
+* A critical application must remain available during an entire availability-zone failure. How would you distribute workloads and dependencies?
+* A multi-region deployment must continue serving requests after a regional outage. How would you design traffic routing, data replication, and recovery?
+* A microservices platform requires secure communication across namespaces. How would you combine RBAC, NetworkPolicies, and mutual TLS?
+* A cluster has many unused resources and increasing cloud costs. How would you improve capacity utilization without compromising availability?
+* Monitoring shows healthy Pods, but users experience high application latency. How would you trace the issue across ingress, networking, JVM, and downstream services?
+* A company wants to run hundreds of Spring Boot microservices across development, staging, and production. How would you design cluster boundaries, deployment governance, secrets, and observability?

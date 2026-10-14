@@ -1,0 +1,30 @@
+* Explain Redis's architecture, event loop, I/O model, and command execution model.
+* How does Redis achieve high throughput despite primarily executing commands on a main thread?
+* How do Redis persistence mechanisms affect durability, latency, and recovery time?
+* How do you choose between RDB, AOF, and no persistence for different workloads?
+* How do Redis replication and asynchronous replication affect data consistency?
+* How does Redis Sentinel detect failures and perform failover?
+* Explain Redis Cluster hash slots, hash tags, and key distribution.
+* What limitations do multi-key commands and transactions have across Redis Cluster slots?
+* How do you design a highly available Redis deployment across availability zones?
+* How do you investigate replication lag and data loss risks during failover?
+* How do Redis eviction policies affect application behavior under memory pressure?
+* How do you estimate Redis memory consumption and prevent out-of-memory incidents?
+* How do large keys and hot keys affect latency and cluster performance?
+* How do you identify and resolve Redis hot-key and uneven-sharding problems?
+* How do you optimize Redis commands that scan or process large collections?
+* Why should KEYS be avoided in production, and how does SCAN work?
+* How do pipelining and batching affect throughput, memory consumption, and tail latency?
+* How do Redis Lua scripts provide atomic execution, and what are their operational risks?
+* How do Redis Functions and Lua scripting differ in supported Redis versions and deployment models?
+* How would you implement a distributed lock with lease expiration, ownership verification, and safe release?
+* What are the limitations of Redis-based distributed locks when processes pause or networks partition?
+* How do you implement a robust distributed rate limiter using a Lua script?
+* How would you design cache consistency between Redis and a relational database?
+* How do you prevent cache stampedes, cache penetration, and cache avalanche?
+* How do versioned cache keys and event-driven invalidation help manage stale data?
+* How do you use an outbox pattern to reliably propagate database changes to Redis?
+* How do Redis Streams consumer groups handle pending messages, acknowledgments, and consumer recovery?
+* How do you design idempotent consumers when processing Redis Stream messages?
+* How do Redis ACLs, TLS, network isolation, and secret rotation contribute to security?
+* How would you design Redis for a high-throughput Java application with strict latency, availability, and data-recovery requirements?

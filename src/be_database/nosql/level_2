@@ -1,0 +1,30 @@
+* Explain the CAP theorem and its practical implications for distributed NoSQL databases.
+* How do CAP and PACELC differ when reasoning about distributed database trade-offs?
+* How do quorum reads and quorum writes work in distributed databases?
+* How do replication strategies affect consistency, availability, and latency?
+* How do leader-based and leaderless replication architectures differ?
+* What is the difference between synchronous and asynchronous replication?
+* How do conflict resolution strategies work in distributed NoSQL systems?
+* What are vector clocks, and how can they help track concurrent updates?
+* How do multi-leader replication and conflict resolution affect application correctness?
+* How do distributed transactions differ from single-node transactions?
+* How would you maintain business consistency across multiple NoSQL collections or services?
+* How do sharding strategies affect data distribution and query performance?
+* How would you select a shard key for a high-throughput application?
+* What problems can arise from hot partitions, and how would you mitigate them?
+* How do consistent hashing and range-based partitioning differ?
+* How do secondary indexes affect query performance and write throughput in distributed NoSQL databases?
+* How would you design a schema migration strategy for a schema-flexible database?
+* How do you handle backward compatibility when document structures evolve?
+* How do write-ahead logs, replication logs, and recovery mechanisms differ across NoSQL database architectures?
+* How would you design disaster recovery and backup strategies for a distributed NoSQL deployment?
+* How do you guarantee idempotent processing when a message consumer writes to a NoSQL database?
+* How would you coordinate database updates and message publication without losing events?
+* How do change streams or database change-data-capture mechanisms support event-driven architectures?
+* How do you handle duplicate and out-of-order events in a distributed application?
+* How would you design a distributed caching strategy using Redis without serving stale or inconsistent data?
+* How do Redis persistence mechanisms such as RDB snapshots and AOF affect recovery and performance?
+* How would you prevent cache invalidation races when multiple application instances update the same entity?
+* How do you evaluate NoSQL consistency guarantees for payment, inventory, and order-processing systems?
+* How would you benchmark a NoSQL database under realistic production workloads?
+* How would you design a highly available, horizontally scalable NoSQL architecture for a Java microservices platform?

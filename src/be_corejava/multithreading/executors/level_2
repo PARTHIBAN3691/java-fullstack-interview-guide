@@ -1,0 +1,21 @@
+
+* Explain the internal working of `ThreadPoolExecutor` when a new task is submitted.
+* How does `ThreadPoolExecutor` decide whether to create a new thread, queue a task, or reject it?
+* How do core pool size, maximum pool size, and queue capacity interact under heavy load?
+* Why can an unbounded queue prevent a thread pool from growing beyond its core pool size?
+* What problems can arise from using an unbounded task queue in a production application?
+* How would you determine the optimal thread pool size for CPU-bound and I/O-bound workloads?
+* How do you implement backpressure when task submissions exceed processing capacity?
+* Compare `AbortPolicy`, `CallerRunsPolicy`, `DiscardPolicy`, and `DiscardOldestPolicy`.
+* How would you implement a custom `RejectedExecutionHandler`?
+* How do thread factories help with thread naming, daemon configuration, and uncaught exception handling?
+* What is the difference between `allowCoreThreadTimeOut()` and the default core-thread behavior?
+* How do you prevent thread starvation when tasks depend on other tasks in the same executor?
+* What problems can occur when calling `Future.get()` from a task running in the same limited thread pool?
+* How can you propagate tracing IDs, security context, or diagnostic context across executor threads?
+* How do you handle task cancellation and interruption correctly in long-running tasks?
+* What is the difference between graceful shutdown and immediate shutdown in a production service?
+* How would you design an executor with bounded concurrency and bounded queue capacity?
+* How do virtual threads in modern Java change the way you approach task execution compared with traditional thread pools?
+* When would you use `Executors.newVirtualThreadPerTaskExecutor()` instead of a fixed thread pool?
+* How would you monitor executor health using active thread count, pool size, queue size, completed task count, and rejected task count?

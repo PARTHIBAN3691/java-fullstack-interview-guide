@@ -1,0 +1,18 @@
+* How would you configure the Cosmos DB Java SDK in a Spring Boot application?
+* What is the difference between `CosmosClient`, `CosmosDatabase`, and `CosmosContainer`?
+* Why should you avoid creating a new `CosmosClient` for every request?
+* How would you configure Cosmos DB credentials securely in a Java application?
+* How would you implement CRUD operations using the Cosmos DB Java SDK?
+* How would you map a Cosmos DB JSON document to a Java POJO?
+* How would you implement pagination when querying Cosmos DB?
+* What is a continuation token?
+* How would you use continuation tokens in a Java REST API?
+* What happens when a query does not specify the partition key?
+* What is a cross-partition query?
+* What are the performance implications of cross-partition queries?
+* How would you reduce RU consumption for a frequently executed query?
+* What is indexing in Cosmos DB?
+* How would you use ETags for optimistic concurrency?
+* What is the difference between replacing an item and patching an item?
+* How would you handle Cosmos DB exceptions in a Java application?
+* How would you implement retry logic for transient Cosmos DB failures?

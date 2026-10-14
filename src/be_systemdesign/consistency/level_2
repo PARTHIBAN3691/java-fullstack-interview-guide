@@ -1,0 +1,30 @@
+* How would you design a strongly consistent distributed key-value store?
+* How would you implement linearizable reads and writes across multiple nodes?
+* How does consensus help maintain consistency in distributed systems?
+* How does the Raft consensus algorithm maintain a consistent log?
+* How does Paxos achieve agreement despite node failures?
+* What is the relationship between consensus and linearizability?
+* Why does strong consistency often increase write latency?
+* How do network partitions affect consistency guarantees?
+* How do you design a system that prioritizes consistency over availability?
+* How can quorum-based systems behave during network partitions?
+* Why is quorum overlap alone not always sufficient for strong consistency?
+* How do leases and fencing tokens help prevent stale leaders from writing?
+* How do epochs or terms prevent outdated leaders from modifying data?
+* How would you handle split-brain scenarios in a distributed database?
+* How do distributed transactions maintain consistency across services?
+* What is two-phase commit, and what are its consistency trade-offs?
+* How does a saga differ from a distributed ACID transaction?
+* How can the transactional outbox pattern prevent inconsistent database and event states?
+* How do CDC pipelines maintain consistency between source and target systems?
+* How would you preserve ordering across concurrent distributed writes?
+* How can Lamport timestamps help reason about event ordering?
+* What are the limitations of physical timestamps in distributed systems?
+* How would you resolve conflicts in a multi-leader replication architecture?
+* What are CRDTs, and how do they support convergence without centralized coordination?
+* When are CRDTs unsuitable for maintaining business invariants?
+* How do you maintain consistency between a database and a distributed cache?
+* How would you design consistency guarantees for a multi-region application?
+* How do geo-replication and cross-region failover affect consistency?
+* How would you measure and monitor consistency violations in production?
+* How would you balance consistency, latency, availability, and operational complexity?

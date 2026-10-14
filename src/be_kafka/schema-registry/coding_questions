@@ -1,0 +1,30 @@
+* Write a Java Kafka producer that publishes Avro records using Confluent Schema Registry.
+* Write a Java Kafka consumer that deserializes Avro records using Schema Registry.
+* Write a Spring Boot Kafka producer configured with `KafkaAvroSerializer`.
+* Write a Spring Boot Kafka consumer configured with `KafkaAvroDeserializer`.
+* Write an Avro schema for a customer event with customer ID, name, and email fields.
+* Write an Avro schema for a payment event containing transaction ID, amount, currency, and timestamp.
+* Generate Java classes from an Avro schema and publish instances to Kafka.
+* Write Java code that creates and publishes an Avro `SpecificRecord`.
+* Write Java code that creates and publishes an Avro `GenericRecord`.
+* Write Java code to configure Schema Registry URL and authentication properties.
+* Write Java code that registers an Avro schema using the Schema Registry REST API.
+* Write Java code to retrieve a schema by schema ID using the Schema Registry client.
+* Write Java code to list schema versions for a subject.
+* Write Java code to retrieve the compatibility setting for a schema subject.
+* Write Java code that checks whether a new Avro schema is compatible with a registered subject.
+* Write a Java utility that validates schema compatibility as part of a CI/CD pipeline.
+* Write a Spring Boot Kafka application that publishes an event with an optional Avro field.
+* Write an Avro schema evolution example that adds a field with a default value.
+* Write an Avro schema evolution example that safely removes a field.
+* Write a Java test that verifies backward compatibility between two Avro schema versions.
+* Write a Java test that verifies behavior when a consumer reads records written with an older schema.
+* Write a Spring Boot integration test that publishes and consumes Avro records using Embedded Kafka or Testcontainers.
+* Write Java code that handles schema registration failures and reports useful diagnostics.
+* Write Java code that handles Avro deserialization exceptions in a Kafka consumer.
+* Write a Spring Kafka error-handling configuration for records that cannot be deserialized.
+* Write Java code to implement a custom schema naming strategy or configure a supported naming strategy.
+* Write Java code that measures Avro serialization and deserialization performance.
+* Write a Java program that compares serialized payload sizes for JSON and Avro representations of the same event.
+* Write a Spring Boot health indicator that checks connectivity to Schema Registry.
+* Write an automated test that verifies schema compatibility and successful event processing across producer and consumer versions.

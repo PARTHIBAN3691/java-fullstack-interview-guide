@@ -1,0 +1,30 @@
+* Write a Java program to manage a Product Backlog containing user stories, priorities, and statuses.
+* Implement a Java class to represent a Sprint with its goal, start date, end date, and backlog items.
+* Write a Java method to calculate Sprint completion percentage based on completed and planned work.
+* Implement a Java program to calculate team velocity from completed story points across multiple Sprints.
+* Write a Java method to calculate Sprint capacity based on team availability and planned leave.
+* Implement a Java class to manage user stories with acceptance criteria and Definition of Done checks.
+* Write a Java program to identify incomplete stories at the end of a Sprint.
+* Use Java Streams to group backlog items by priority, assignee, and status.
+* Implement a Java method to calculate remaining work for a Sprint burndown chart.
+* Write a Java program to track blockers and their resolution status.
+* Implement a service that identifies stories blocked by unfinished dependencies.
+* Write a Java program to calculate the average velocity and variability across recent Sprints.
+* Implement a Sprint planning service that selects backlog items based on priority and available capacity.
+* Write unit tests using JUnit 5 for a Sprint completion calculation service.
+* Use Mockito to test a service that retrieves backlog items from a repository.
+* Implement validation for invalid Sprint dates and stories that lack acceptance criteria.
+* Write a Java program to generate a Sprint report containing planned work, completed work, and carryover items.
+* Implement a retrospective action tracker with owners, due dates, and completion status.
+* Use the Strategy pattern to support different estimation methods for Scrum backlog items.
+* Implement the Observer pattern to notify team members when a Sprint blocker is created or resolved.
+* Use the State pattern to manage story statuses such as NEW, IN_PROGRESS, IN_REVIEW, DONE, and BLOCKED.
+* Write a Java method to identify recurring blockers across several Sprints.
+* Implement a service that detects whether a proposed backlog item exceeds the team's remaining Sprint capacity.
+* Write a Java program to compare planned and actual Sprint outcomes over several iterations.
+* Implement a REST API using Spring Boot to create Sprints, manage backlog items, and update story statuses.
+* Write a Java method to calculate the percentage of stories meeting the Definition of Done.
+* Implement a dependency management service that identifies circular dependencies between backlog items.
+* Write a Java program to simulate Sprint planning with capacity limits and prioritized work.
+* Implement a reporting service that aggregates delivery metrics across multiple Scrum Teams.
+* Design a Java-based Scrum management system supporting Product Backlogs, Sprint planning, capacity tracking, dependencies, burndown reporting, and retrospective actions.

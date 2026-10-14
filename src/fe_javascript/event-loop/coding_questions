@@ -1,0 +1,30 @@
+* Write a program that demonstrates synchronous execution using console.log().
+* Write a program that demonstrates the execution order of synchronous code and setTimeout().
+* Write a program that compares setTimeout(callback, 0) with synchronous statements.
+* Write a program that demonstrates Promise.then() execution relative to setTimeout().
+* Write a program that combines synchronous code, Promise.resolve(), and setTimeout() and predicts the output.
+* Write a program with multiple Promise.then() callbacks and determine their execution order.
+* Write a program that uses queueMicrotask() and setTimeout() to demonstrate microtask scheduling.
+* Write a program that queues a microtask from inside another microtask and observes the execution order.
+* Write an async function that logs messages before and after await and explain the output.
+* Write a program that compares await Promise.resolve() with setTimeout().
+* Write a program that resolves a Promise inside a timer and logs the continuation order.
+* Write a program that demonstrates nested setTimeout() callbacks.
+* Write a program that demonstrates how a long synchronous loop delays a timer callback.
+* Write a program that implements a simple task queue using an array and callbacks.
+* Write a program that processes an array in chunks using setTimeout() to yield between chunks.
+* Write a program that uses requestAnimationFrame() to update an animation counter.
+* Write a program that compares requestAnimationFrame() with setTimeout() for repeated visual updates.
+* Write a program that uses a Web Worker to perform a CPU-intensive calculation.
+* Write a program that sends data from the main thread to a Web Worker and receives the result.
+* Write a program that demonstrates how a rejected Promise is handled without blocking synchronous execution.
+* Write a program that uses Promise.all() with asynchronous operations that complete at different times.
+* Write a program that implements a basic debounce function for a search input.
+* Write a program that implements a basic throttle function for frequent events.
+* Write a Node.js program that compares setTimeout(), setImmediate(), and Promise callbacks.
+* Write a Node.js program that demonstrates process.nextTick() and Promise microtask scheduling.
+* Write a Node.js program that measures event-loop delay using the perf_hooks module.
+* Write a Node.js program that demonstrates how a synchronous CPU-intensive task delays other callbacks.
+* Write a program that schedules recurring work without allowing one large computation to block the UI.
+* Write a program that logs the execution order of nested Promises and timers.
+* Write a program that demonstrates event-loop starvation and then refactors it to allow other tasks to progress.

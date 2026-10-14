@@ -1,0 +1,20 @@
+* Explain the complete AWS IAM policy evaluation logic, including explicit denies, allows, permission boundaries, session policies, and SCPs.
+* How do identity-based policies interact with resource-based policies for cross-account access?
+* How does the IAM policy evaluation process differ for same-account and cross-account requests?
+* What are session policies, and how do they restrict permissions granted to an assumed role?
+* How can you implement cross-account access between multiple AWS accounts without creating IAM users in each account?
+* Explain the differences between IAM roles, resource-based policies, permission boundaries, and SCPs in a multi-account architecture.
+* How does IAM role chaining work, and what limitations should be considered?
+* What is the maximum role session duration, and how does it interact with role chaining?
+* How do web identity federation and OIDC providers enable applications to access AWS resources?
+* How can an application running in EKS securely access AWS services using IAM Roles for Service Accounts (IRSA) or EKS Pod Identity?
+* How can you enforce least-privilege permissions for dynamically created AWS resources?
+* How do IAM Access Analyzer and policy validation help identify excessive permissions?
+* How would you design a centralized identity and access management strategy for a large AWS organization?
+* How can you restrict IAM role assumption to specific principals, external IDs, or organization IDs?
+* What is the confused deputy problem, and how can an external ID help mitigate it?
+* How would you investigate an access request that is allowed by one policy but denied by another?
+* How can you use IAM condition keys to enforce encryption, secure transport, and resource ownership requirements?
+* How would you implement emergency access while minimizing the risk of privilege escalation?
+* How can you detect and prevent privilege escalation through IAM policy modifications?
+* How would you audit IAM users, roles, policies, and credentials across hundreds of AWS accounts?

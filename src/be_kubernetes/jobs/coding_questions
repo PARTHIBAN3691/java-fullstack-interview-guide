@@ -1,0 +1,30 @@
+* Write a Kubernetes Job YAML that runs a Java application from a container image.
+* Create a Job manifest that executes a Spring Boot executable JAR with the required command and arguments.
+* Write a Job YAML that runs a task to completion with restartPolicy set to Never.
+* Create a Job manifest that retries failed Pods up to a configured backoffLimit.
+* Write a Job YAML with activeDeadlineSeconds to limit the maximum execution time.
+* Create a Job manifest with five completions and a parallelism value of two.
+* Write an Indexed Job manifest that processes ten independent task indexes.
+* Create a Job manifest that configures podFailurePolicy for selected container exit codes.
+* Write a Job YAML that injects database connection properties from a ConfigMap and credentials from a Secret.
+* Create a Job manifest that mounts a PersistentVolumeClaim for batch input and output files.
+* Write a Job YAML with CPU and memory requests and limits for a Java batch process.
+* Create a Job manifest that uses a dedicated ServiceAccount.
+* Write a Job YAML that uses node affinity and tolerations to run on designated worker nodes.
+* Create a Job manifest with ttlSecondsAfterFinished for automatic cleanup.
+* Write a suspended Job manifest and explain how to resume it using kubectl.
+* Write a CronJob YAML that runs a Java batch application every day at midnight.
+* Create a CronJob manifest with concurrencyPolicy set to Forbid.
+* Write a CronJob configuration that retains a limited number of successful and failed Job histories.
+* Create a Job manifest that runs a database migration using a Spring Boot application.
+* Write a Java method that processes a batch of records idempotently using a unique business key.
+* Write Java code that divides a large collection of records into independent partitions for parallel processing.
+* Write Java code that records batch checkpoints so a failed process can resume from the last completed partition.
+* Write Java code that handles transient API failures with bounded retries and exponential backoff.
+* Write Java code that prevents duplicate processing by using a database uniqueness constraint and transactional operations.
+* Write a shell script that creates a Kubernetes Job and waits for its completion.
+* Write kubectl commands to inspect Job conditions, list associated Pods, and retrieve logs from failed executions.
+* Write a shell script that detects a failed Job and collects its description, events, and container logs.
+* Write a script that deletes and recreates a failed Job safely while preserving required input and output data.
+* Write a validation script that verifies expected output records before reporting a batch Job as successful.
+* Design a complete Kubernetes batch-processing solution using Java, Indexed Jobs, retries, checkpointing, monitoring, and safe recovery.

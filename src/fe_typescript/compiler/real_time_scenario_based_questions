@@ -1,0 +1,30 @@
+* Your project contains hundreds of TypeScript files, and compilation is slow. How would you identify and fix the bottleneck?
+* Your TypeScript application compiles locally but fails during the CI build. How would you investigate the issue?
+* A developer receives different compiler errors locally and in production. What configuration and environment differences would you check?
+* Your project needs to support both modern browsers and older browsers. How would you configure the target and module options?
+* A TypeScript application uses path aliases successfully in the editor but fails at runtime. How would you troubleshoot the problem?
+* Your team wants to enforce strict type checking gradually in a legacy JavaScript project. How would you configure the compiler?
+* A library compiles successfully, but consumers cannot resolve its exported types. How would you investigate the declaration files and package configuration?
+* Your application uses both CommonJS and ECMAScript modules. How would you configure TypeScript to avoid module compatibility issues?
+* A dependency update introduces many errors from third-party declaration files. How would you diagnose the issue without hiding important errors?
+* Your monorepo has separate frontend, backend, and shared packages. How would you configure project references?
+* A developer changes a shared interface, and several dependent packages need rebuilding. How would you optimize the build process?
+* Your team wants to debug the original TypeScript source in the browser. How would you configure source maps?
+* A production build must generate JavaScript and declaration files but exclude test files. How would you configure tsconfig.json?
+* Your CI pipeline should fail when TypeScript contains type errors but should not generate output files. Which compiler options would you use?
+* A project contains unused variables and parameters that are causing inconsistent code quality. How would you enforce compiler checks?
+* Your application uses a JavaScript library without TypeScript declarations. How would you provide type information?
+* A TypeScript project compiles with one Node.js version but fails with another. How would you investigate module resolution and runtime compatibility?
+* A package works when imported from source but fails after publishing to npm. What would you check in its build and package configuration?
+* Your team wants separate compiler settings for development, testing, and production. How would you structure the configuration files?
+* The compiler reports that a property does not exist on a type even though it exists at runtime. How would you investigate the type definitions and inference?
+* A developer disables strict mode to fix compilation errors. How would you address the underlying problems without compromising type safety?
+* Your project has circular imports that produce unexpected runtime behavior. How would you investigate the dependency graph and emitted JavaScript?
+* A build produces JavaScript files in unexpected directories. Which compiler options and project settings would you inspect?
+* Your application requires different module resolution behavior for Node.js and a bundler. How would you configure the project?
+* Your team wants to publish a reusable TypeScript SDK for multiple module systems. How would you design its compilation and packaging process?
+* A TypeScript upgrade introduces new diagnostics across the codebase. How would you plan and execute a safe migration?
+* The build pipeline repeatedly recompiles unchanged files. How would you use incremental compilation and build caching to improve performance?
+* Your team wants custom static checks for forbidden API usage. How could you use the TypeScript Compiler API to implement them?
+* A declaration file incorrectly claims that an API always returns a string, but it sometimes returns undefined. How would you correct the typing and prevent related runtime failures?
+* You need to establish consistent TypeScript builds across multiple developer machines and CI agents. What configuration and dependency-management practices would you follow?

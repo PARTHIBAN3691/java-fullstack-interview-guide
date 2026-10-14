@@ -1,0 +1,26 @@
+
+* What is the difference between `Optional.of()`, `Optional.ofNullable()`, and `Optional.empty()`?
+* What is the difference between `isPresent()` and `ifPresent()`?
+* What is the difference between `orElse()`, `orElseGet()`, and `orElseThrow()`?
+* How does `orElseThrow()` work in Java 8?
+* How can you throw a custom exception when an `Optional` is empty?
+* What is the purpose of `map()` in `Optional`?
+* What is the purpose of `flatMap()` in `Optional`?
+* What is the difference between `map()` and `flatMap()` in `Optional`?
+* How does `filter()` work with `Optional`?
+* What happens when the mapping function passed to `map()` returns null?
+* What happens when the predicate passed to `filter()` returns false?
+* How do you chain multiple `Optional` operations?
+* How do you retrieve a nested property safely using `Optional`?
+* How do you handle a potentially null value returned by a service method?
+* How can you convert a nullable return value into an `Optional`?
+* Can `Optional` be used as a method parameter? What are the drawbacks?
+* Why is `Optional` generally recommended as a method return type rather than a field type?
+* Should an entity class use `Optional` for its fields?
+* How do you use `Optional` with `findById()` in Spring Data JPA?
+* How do you handle an empty `Optional` returned by a repository?
+* How do you combine `Optional` with Java 8 Streams?
+* How do you convert an `Optional` into a Stream in Java 8?
+* How do you avoid nested `if` statements using `Optional`?
+* How do you handle exceptions while processing values inside an `Optional`?
+* What are the limitations of `Optional` in Java 8?

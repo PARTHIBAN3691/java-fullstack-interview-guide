@@ -1,0 +1,30 @@
+* Create a counter component using useState with increment, decrement, and reset buttons.
+* Write a component that toggles a Boolean state value.
+* Create a component that manages multiple state variables.
+* Write a component that stores and displays an object in state.
+* Implement an immutable update of a nested object in state.
+* Create a todo list with add, edit, delete, and complete operations using useState.
+* Write a component that adds and removes items from an array stored in state.
+* Implement a counter that increments correctly when the update function is called multiple times.
+* Create a controlled form with name, email, and password fields using state.
+* Write a component that resets form state after successful submission.
+* Implement a parent component that shares state between two sibling components.
+* Create a temperature converter using shared state.
+* Build a shopping cart that updates item quantities and calculates the total price.
+* Implement a useReducer-based counter with increment, decrement, and reset actions.
+* Create a todo application using useReducer.
+* Write a reducer that manages loading, success, and error states for an API request.
+* Implement a Context provider to share the current user's information across components.
+* Create a theme switcher using Context API and React state.
+* Persist a theme preference using localStorage and React state.
+* Implement a custom hook that manages a Boolean state value.
+* Write a custom hook that manages form field values and validation errors.
+* Implement a search component that filters a list based on state.
+* Create a component that prevents stale API responses from updating the current state.
+* Implement an optimistic update for a todo item with rollback when the API request fails.
+* Create a component that supports undo and redo for text input.
+* Implement a multi-step form using useReducer.
+* Build a shopping cart shared across multiple components using Context API.
+* Write a component that uses useTransition to keep a large list responsive during filtering.
+* Create a component that uses useDeferredValue to defer expensive filtering.
+* Build a state management solution for an e-commerce application with cart, user, product filters, and checkout state.

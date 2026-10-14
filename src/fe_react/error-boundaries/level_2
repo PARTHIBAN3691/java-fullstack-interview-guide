@@ -1,0 +1,30 @@
+* How does React propagate rendering errors to the nearest Error Boundary?
+* How does React determine which Error Boundary should handle an error?
+* What happens when an Error Boundary itself throws an error?
+* How would you design a hierarchical Error Boundary architecture for a large application?
+* How would you isolate failures in independent dashboard widgets?
+* How would you design Error Boundaries for micro-frontend applications?
+* How do Error Boundaries behave during concurrent rendering?
+* How do Error Boundaries interact with React Suspense?
+* What is the difference between a rendering error and a rejected Promise in React?
+* How would you handle errors from asynchronous operations that complete after rendering?
+* How would you handle errors from event handlers that Error Boundaries do not catch?
+* How would you handle rejected Promises in event handlers and asynchronous callbacks?
+* How would you forward an asynchronous error into an Error Boundary?
+* How do React Router error boundaries differ from component-level Error Boundaries?
+* How would you implement error recovery after a failed lazy-loaded module?
+* How would you prevent an Error Boundary from repeatedly rendering a failing component?
+* How would you design retry logic that avoids infinite retry loops?
+* How would you preserve or reset component state during Error Boundary recovery?
+* How would you implement error reporting with correlation IDs and contextual metadata?
+* How would you prevent sensitive user data from being included in error logs?
+* How would you integrate Error Boundaries with monitoring tools such as Sentry?
+* How would you measure the effectiveness of Error Boundaries in production?
+* How would you distinguish errors caused by application bugs from temporary service failures?
+* How would you handle errors that occur while rendering server components?
+* How do framework-level error handling mechanisms differ from client-side Error Boundaries?
+* How would you design Error Boundaries for server-side rendering and hydration failures?
+* How would you handle errors in a React application with multiple independently deployed modules?
+* How would you create a reusable Error Boundary with TypeScript?
+* How would you design an Error Boundary API that supports custom fallback renderers?
+* What architectural trade-offs arise when deciding how broadly to place Error Boundaries?

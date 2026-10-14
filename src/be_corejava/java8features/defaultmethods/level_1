@@ -1,0 +1,25 @@
+* What problem do default methods solve when adding new methods to existing interfaces?
+* How do default methods support backward compatibility in Java libraries?
+* What happens when a class implements two interfaces that define the same default method signature?
+* How can a class resolve a conflict between two inherited default methods?
+* How do you explicitly invoke a particular interface's default method using `InterfaceName.super.methodName()`?
+* What happens when a superclass defines a method with the same signature as an interface default method?
+* Does a superclass method take precedence over an interface default method?
+* What happens when a class overrides a default method and calls the interface implementation using `InterfaceName.super`?
+* Can one interface override a default method inherited from another interface?
+* Can an abstract class implement an interface and leave its default method unoverridden?
+* Can a subinterface convert an inherited default method into an abstract method?
+* What happens if two unrelated interfaces define default methods with the same signature and compatible return types?
+* What happens if two interfaces define methods with the same signature but incompatible return types?
+* How does method resolution work when a class implements an interface and its subinterface?
+* Can an interface inherit a default method from a parent interface and use it without redeclaring it?
+* What is the difference between a default method and an inherited concrete method from a superclass?
+* How do default methods interact with method overriding and dynamic dispatch?
+* Can a default method be overloaded?
+* Can a default method throw checked exceptions?
+* How can default methods be used to provide optional behavior in an interface?
+* What are the limitations of using default methods as an alternative to abstract classes?
+* How do default methods affect the design of interfaces in large Java applications?
+* How do default methods work alongside static interface methods?
+* Can a default method call a static method defined in the same interface?
+* What are the potential design drawbacks of adding too many default methods to an interface?

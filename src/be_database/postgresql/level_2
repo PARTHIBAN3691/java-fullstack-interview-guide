@@ -1,0 +1,30 @@
+* Explain PostgreSQL's internal architecture, including shared buffers, WAL, background processes, and storage.
+* How does MVCC work internally, and how does PostgreSQL determine which row versions are visible to a transaction?
+* How does PostgreSQL handle concurrent updates to the same row?
+* How do READ COMMITTED and REPEATABLE READ differ in PostgreSQL?
+* How does PostgreSQL's SERIALIZABLE isolation level prevent serialization anomalies?
+* How do you diagnose and resolve long-running transactions and transaction ID wraparound risks?
+* How does autovacuum work, and how would you tune it for a high-write workload?
+* What causes table and index bloat, and how can you reduce it?
+* How do you diagnose a query that performs a sequential scan despite having an index?
+* How do you optimize a complex query involving joins, aggregations, and window functions?
+* How do PostgreSQL statistics influence query planning, and how do you handle inaccurate estimates?
+* How do you choose between B-tree, GIN, GiST, BRIN, and Hash indexes?
+* How do expression indexes and partial indexes improve query performance?
+* How do covering indexes and INCLUDE columns work in PostgreSQL?
+* How do partition pruning and partition-wise joins improve query performance?
+* How would you choose between range, list, and hash partitioning?
+* How do you perform partition maintenance without disrupting production traffic?
+* How does PostgreSQL write-ahead logging support durability and crash recovery?
+* What is the difference between synchronous and asynchronous replication?
+* How do streaming replication and logical replication differ?
+* How would you design high availability and automated failover for PostgreSQL?
+* How do replication slots affect WAL retention and disk usage?
+* How do you perform point-in-time recovery using base backups and archived WAL files?
+* How would you investigate replication lag and reduce its impact?
+* How do you prevent connection exhaustion in a high-concurrency Spring Boot application?
+* How do HikariCP pool size, connection timeout, and database capacity affect throughput?
+* How do transaction propagation and isolation settings in Spring affect PostgreSQL concurrency?
+* How do you prevent SQL injection when using JDBC, JPA, and native SQL queries?
+* How would you implement optimistic and pessimistic locking with Spring Data JPA and PostgreSQL?
+* How would you design PostgreSQL for a multi-tenant, high-volume application with strict availability and security requirements?

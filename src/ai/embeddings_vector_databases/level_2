@@ -1,0 +1,97 @@
+**Embedding Fundamentals**
+* Design a distributed embedding service that processes millions of documents daily while supporting incremental updates and deletion.
+* How would you detect embedding-space drift when the source data distribution changes?
+* How would you evaluate whether an embedding model preserves the semantic relationships needed by a specialized business domain?
+* How would you design deduplication and content hashing so unchanged documents are not repeatedly embedded?
+* How would you maintain reproducibility across preprocessing changes, model versions, and provider upgrades?
+
+**Text and Multimodal Embeddings**
+* Design a cross-modal retrieval system that searches text, images, and audio using a common ranking strategy.
+* How would you handle modality-specific quality differences when combining text and image retrieval results?
+* How would you migrate a multimodal corpus when a new model changes embedding dimensions or alignment?
+* How would you prevent one modality from dominating retrieval because of score-distribution differences?
+* How would you evaluate cross-modal retrieval under multilingual, noisy, and domain-specific conditions?
+
+**Semantic Similarity**
+* Design a semantic matching system that distinguishes paraphrases, related concepts, contradictions, and unrelated content.
+* How would you calibrate similarity thresholds when false positives and false negatives have different business costs?
+* How would you detect semantic drift across embedding model releases using a stable evaluation corpus?
+* How would you evaluate similarity quality when ground-truth relevance judgments are incomplete or biased?
+* How would you distinguish semantic similarity from entailment and factual consistency in a high-impact retrieval workflow?
+
+**Cosine Similarity and Distance Metrics**
+* How would you investigate a ranking discrepancy between cosine similarity and dot-product search after a model migration?
+* How would vector normalization, embedding norms, and distance transformations affect ranking behavior?
+* How would you select a distance metric when the model documentation and empirical retrieval results appear inconsistent?
+* How would you design a benchmark comparing cosine, dot-product, and Euclidean distance across representative query distributions?
+* How would you prevent metric mismatches between embedding generation, index configuration, and query execution?
+
+**Vector Indexing**
+* Design an indexing strategy for billions of vectors with strict latency, memory, and availability requirements.
+* How would you compare HNSW, IVF-based indexes, and quantization-based approaches for a specific workload?
+* How would you perform index rebuilds and compaction without unacceptable query degradation?
+* How would you handle concurrent writes, index freshness, deletion propagation, and snapshot consistency?
+* How would you select index parameters using a multi-objective optimization of recall, latency, memory, and ingestion throughput?
+
+**Approximate Nearest Neighbor (ANN) Search**
+* Design an ANN evaluation framework that measures recall, latency percentiles, throughput, and resource consumption against exact search.
+* How would you maintain recall under highly selective metadata filters?
+* How would you tune ANN search dynamically for queries with different latency budgets and relevance requirements?
+* How would you investigate a system where ANN recall remains high on a benchmark but production relevance declines?
+* How would you combine coarse filtering, ANN retrieval, and exact reranking while controlling tail latency?
+
+**Vector Database Architecture**
+* Design a highly available, multi-tenant vector-search platform supporting billions of vectors and frequent incremental ingestion.
+* How would you partition and shard vectors to balance query fan-out, data locality, tenant isolation, and rebalancing cost?
+* How would you maintain consistency between source documents, chunk records, metadata, and vector indexes?
+* How would you design disaster recovery, point-in-time restoration, and regional failover for vector data?
+* How would you prevent noisy-neighbor workloads from degrading latency for other tenants?
+
+**Metadata Filtering**
+* Design a secure vector-search authorization model with document-level permissions, tenant isolation, and dynamic access revocation.
+* How would you optimize highly selective filters that cause ANN search to return too few candidates?
+* How would you manage metadata updates when authorization changes must take effect immediately?
+* How would you combine partitioning, filter-aware indexes, and post-filter oversampling for complex query predicates?
+* How would you prove that caching and fallback retrieval cannot return records that violate the current access policy?
+
+**Hybrid Search**
+* Design a hybrid retrieval engine that combines lexical search, dense vectors, sparse vectors, metadata filters, and reranking.
+* How would you calibrate scores from retrieval systems with different score distributions?
+* How would you tune fusion weights for multiple query categories without overfitting to one evaluation set?
+* How would you support exact identifier matches while preserving semantic retrieval for vague natural-language queries?
+* How would you determine whether a retrieval-quality problem should be addressed by chunking, embeddings, lexical search, fusion, or reranking?
+
+**Reranking**
+* Design a two-stage retrieval pipeline that meets strict latency targets while improving ranking quality with a cross-encoder.
+* How would you select candidate-set size when larger sets improve recall but increase reranking latency and cost?
+* How would you evaluate reranking bias across languages, content types, and document lengths?
+* How would you use cached or asynchronous reranking without serving stale or incorrectly authorized results?
+* How would you distinguish retrieval failures from reranking failures in production evaluation?
+
+**Chunking Strategies**
+* Design a chunking system for heterogeneous enterprise data containing PDFs, tables, source code, HTML, and structured records.
+* How would you combine semantic boundaries, token limits, document structure, and overlap in a chunking algorithm?
+* How would you preserve relationships between table headers and rows when chunking complex documents?
+* How would you re-chunk and re-embed a large corpus when chunking logic changes without losing source traceability?
+* How would you evaluate chunking strategies using retrieval recall, answer faithfulness, storage overhead, and cost?
+
+**Embedding Model Selection**
+* Design an offline evaluation framework for selecting embedding models across multiple business domains and languages.
+* How would you decide between a larger high-quality model and a smaller low-latency model using measured task-level outcomes?
+* How would you detect model-specific bias, poor domain coverage, and degraded retrieval for rare terminology?
+* How would you evaluate models with different dimensions, context limits, normalization behavior, and licensing constraints?
+* How would you run a controlled model migration using shadow traffic and an evaluation gate before production rollout?
+
+**Embedding Versioning**
+* Design a zero-downtime migration from one embedding model to another across a large production corpus.
+* How would you coordinate dual writes, backfills, consistency checks, index rebuilds, cutover, and rollback?
+* How would you prevent queries embedded with one model version from being searched against incompatible document vectors?
+* How would you maintain reproducibility when preprocessing code, tokenization, model configuration, and source content change independently?
+* How would you retire an old embedding version while preserving auditability and the ability to restore historical search behavior?
+
+**Vector Database Performance Optimization**
+* Design a performance-tuning process for a vector database whose workload includes high ingestion rates, complex filters, and strict p99 latency targets.
+* How would you diagnose memory pressure caused by HNSW graphs, vector storage, replicas, and query concurrency?
+* How would you optimize quantization and compression while measuring their effect on recall and ranking quality?
+* How would you balance ingestion compaction, index maintenance, cache warming, and online query traffic?
+* How would you build capacity forecasts using vector count, dimensionality, metadata overhead, replica count, index type, and growth rate?

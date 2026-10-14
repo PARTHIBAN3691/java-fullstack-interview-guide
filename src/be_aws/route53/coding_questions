@@ -1,0 +1,20 @@
+* Write a Java program using AWS SDK for Java 2.x to list Route 53 hosted zones.
+* Write a Java program that retrieves DNS record sets from a specified hosted zone.
+* Write a Java program that creates an A record in a Route 53 hosted zone.
+* Write a Java program that creates an Alias record pointing to an Application Load Balancer.
+* Write a Java program that updates a Route 53 DNS record using a change batch.
+* Write a Java program that deletes a DNS record from a hosted zone.
+* Write a Java program that submits a DNS change and waits for its change status to become `INSYNC`.
+* Write a Java program that retrieves the status of a Route 53 change request.
+* Write a Java utility that validates record names, record types, and required record values before submitting DNS changes.
+* Write a Java program that creates a weighted routing record set for a canary deployment.
+* Write a Java program that configures failover routing records for primary and secondary endpoints.
+* Write a Java program that lists Route 53 health checks and retrieves their configuration.
+* Write a Java program that creates a Route 53 health check for an HTTP endpoint.
+* Write a Java utility that parses DNS lookup results and reports the resolved IP addresses and response times.
+* Write a Java program that uses the AWS SDK to associate a private hosted zone with a VPC.
+* Write a Java program that retrieves Route 53 query logging configuration for a hosted zone.
+* Write a Java program that handles Route 53 API throttling, validation errors, and retryable failures.
+* Write a Java integration test that verifies DNS records point to the expected application endpoint.
+* Write a Java utility that compares current Route 53 records with a desired configuration and reports differences before deployment.
+* Design a Java-based DNS deployment tool that validates records, applies changes, monitors propagation status, records an audit trail, and supports rollback.

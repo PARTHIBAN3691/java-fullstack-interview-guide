@@ -1,0 +1,30 @@
+* How do you choose an appropriate shard key for a database?
+* How do you implement range-based sharding?
+* How do you implement hash-based sharding?
+* How does consistent hashing distribute records across shards?
+* How do you route database queries to the correct shard?
+* How do you design a shard lookup service?
+* How do you prevent uneven data distribution across shards?
+* How do you identify and resolve hot shards?
+* How do you handle queries that do not include the shard key?
+* How do you implement pagination across multiple shards?
+* How do you perform sorting and aggregation across shards?
+* How do you maintain uniqueness constraints across multiple shards?
+* How do you generate globally unique IDs in a sharded system?
+* How do you handle joins between tables stored on different shards?
+* How do you manage transactions involving multiple shards?
+* How do you maintain referential integrity across shards?
+* How do you implement sharding in a Java application using Spring Boot and JDBC?
+* How do you configure database connections for multiple shards?
+* How do connection pools affect a sharded database architecture?
+* How do you handle shard failures and retry database operations safely?
+* How do you replicate data within each shard?
+* How do you back up and restore individual shards?
+* How do you monitor shard health, latency, and data distribution?
+* How do you add a new shard without causing significant downtime?
+* How do you migrate data from one shard to another?
+* How do you maintain backward compatibility during shard migration?
+* How do you handle schema changes across all shards?
+* How do you secure data access across multiple shards?
+* How do you test a sharded database architecture?
+* How do you determine whether sharding is necessary or database optimization is sufficient?

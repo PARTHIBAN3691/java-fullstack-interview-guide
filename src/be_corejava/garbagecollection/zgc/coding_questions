@@ -1,0 +1,15 @@
+* Write a Java program that creates short-lived objects to generate ZGC collection activity.
+* Write a Java program that creates long-lived objects to study ZGC behavior with a large live-data set.
+* Write a Java program that generates sustained allocation pressure and records memory usage during ZGC cycles.
+* Write a Java program using `GarbageCollectorMXBean` to report collection counts and collection times while ZGC is enabled.
+* Write a Java program using `MemoryMXBean` to monitor heap usage before and after garbage collection.
+* Write a Java program that registers garbage collection notifications and records available GC event details.
+* Write a Java program that generates GC logs with ZGC enabled and analyze the collection cycle phases.
+* Write a Java program that generates a repeatable workload to compare ZGC and G1 GC.
+* Write a Java program with configurable object sizes and lifetimes to study ZGC behavior under different allocation patterns.
+* Write a Java program that generates high allocation pressure and records throughput alongside GC metrics.
+* Write a Java program to parse ZGC logs and extract collection cycle counts, pause durations, and event types.
+* Write a Java program to calculate average and maximum GC pause durations from ZGC logs.
+* Write a Java program that compares heap usage and GC activity across multiple `-Xmx` configurations.
+* Write a Java benchmarking program that compares ZGC and Generational ZGC using a repeatable workload.
+* Write a Java benchmarking program that compares G1 GC, Shenandoah GC, and ZGC using throughput, average latency, p99 latency, CPU usage, and memory consumption.

@@ -1,0 +1,24 @@
+
+* How do records reduce boilerplate code compared with ordinary Java classes?
+* How are the `equals()`, `hashCode()`, and `toString()` methods generated for records?
+* How do you access the components of a record?
+* Can you declare additional instance fields inside a record?
+* Can you declare static fields and static methods inside a record?
+* What is the difference between a compact constructor and a canonical constructor in a record?
+* How do you validate record component values during construction?
+* Can a record declare overloaded constructors?
+* Can records be generic?
+* How do records handle mutable objects passed as constructor arguments?
+* What is the difference between shallow immutability and deep immutability in records?
+* How does pattern matching for `instanceof` eliminate explicit casting?
+* What are the scope and flow-scoping rules of pattern variables?
+* How does pattern matching for `instanceof` behave with logical operators such as `&&` and `||`?
+* What is the difference between pattern matching for `instanceof` and traditional type checking?
+* Is `Stream.toList()` guaranteed to return a mutable list?
+* What happens if you attempt to modify the list returned by `Stream.toList()`?
+* How does `Stream.toList()` differ from `Collectors.toUnmodifiableList()`?
+* How does `mapMulti()` differ from `flatMap()`?
+* In what situations can `mapMulti()` be more suitable than `flatMap()`?
+* How does the Java 16 `jpackage` tool help distribute Java applications?
+* How does the Foreign-Memory Access API differ from traditional direct byte buffers?
+* What are the benefits of Unix-domain socket channels for local inter-process communication?

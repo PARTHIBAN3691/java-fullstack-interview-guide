@@ -1,0 +1,21 @@
+
+* What is the difference between `getMethod()` and `getDeclaredMethod()`?
+* What is the difference between `getField()` and `getDeclaredField()`?
+* How do you invoke a private method using Reflection?
+* How can you access a private field using Reflection?
+* What is the purpose of `setAccessible(true)`?
+* What is the difference between `isAccessible()` and `canAccess()`?
+* How do you invoke a constructor that accepts parameters using Reflection?
+* How can you retrieve a method's parameter types and return type?
+* How can you retrieve annotations present on a class or method?
+* How can you determine whether a method is static, final, abstract, or synchronized?
+* What is the difference between `Class.newInstance()` and `Constructor.newInstance()`?
+* Why was `Class.newInstance()` deprecated?
+* How does Reflection handle exceptions thrown by an invoked method?
+* What is `InvocationTargetException`, and how do you retrieve its underlying cause?
+* How can you inspect generic type information using `ParameterizedType`?
+* What is the difference between `getType()` and `getGenericType()` for a field?
+* How can you determine the declared exception types of a method?
+* How can you inspect nested, inner, and anonymous classes using Reflection?
+* How does Reflection interact with Java arrays and primitive types?
+* What are the performance implications of using Reflection compared with direct method calls?

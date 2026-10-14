@@ -1,0 +1,41 @@
+
+* Write a Java program to create a new file using the `File` class.
+* Write a Java program to check whether a file exists and print its absolute path.
+* Write a Java program to display a file's name, size, and readability status.
+* Write a Java program to create a directory and verify whether the operation succeeded.
+* Write a Java program to list all files and directories inside a given directory.
+* Write a Java program to delete a file if it exists.
+* Write a Java program to write a string into a text file using `FileWriter`.
+* Write a Java program to read a text file character by character using `FileReader`.
+* Write a Java program to read a text file line by line using `BufferedReader`.
+* Write a Java program to write multiple lines into a file using `BufferedWriter`.
+* Write a Java program to append a new line to an existing file without overwriting its contents.
+* Write a Java program to copy a text file using `FileReader` and `FileWriter`.
+* Write a Java program to copy a binary file using `FileInputStream` and `FileOutputStream`.
+* Write a Java program to copy a file using buffered byte streams.
+* Write a Java program to count the number of lines, words, and characters in a text file.
+* Write a Java program to count how many times a specified word occurs in a text file.
+* Write a Java program to find and print all lines containing a specified keyword.
+* Write a Java program to read a CSV file line by line and print each record.
+* Write a Java program to merge two text files into a third file.
+* Write a Java program to concatenate multiple input streams using `SequenceInputStream`.
+* Write a Java program to demonstrate the difference between `flush()` and `close()`.
+* Write a Java program to read primitive data types using `DataInputStream` and write them using `DataOutputStream`.
+* Write a Java program to serialize an `Employee` object into a file using `ObjectOutputStream`.
+* Write a Java program to deserialize an `Employee` object from a file using `ObjectInputStream`.
+* Write a Java program to demonstrate the effect of the `transient` keyword during object serialization.
+* Write a Java program to define `serialVersionUID` in a serializable class.
+* Write a Java program to implement custom serialization using `writeObject()` and `readObject()`.
+* Write a Java program to read and write data at a specified position using `RandomAccessFile`.
+* Write a Java program to update a fixed-length record at a particular file offset using `RandomAccessFile`.
+* Write a Java program to copy a large file using a configurable buffer size.
+* Write a Java program to read a UTF-8 encoded text file explicitly using `InputStreamReader`.
+* Write a Java program to write a text file using a specified character encoding.
+* Write a Java program to handle `FileNotFoundException` and `IOException` while reading a file.
+* Write a Java program to demonstrate automatic resource management using try-with-resources.
+* Write a Java program to demonstrate suppressed exceptions when resource closure fails.
+* Write a Java program to process a large file line by line while retaining only the number of matching records.
+* Write a Java program to read a file, skip blank lines, and write only non-empty lines to another file.
+* Write a Java program to split a large text file into smaller files based on a maximum number of lines per file.
+* Write a Java program to compare two files byte by byte and determine whether their contents are identical.
+* Write a Java program to calculate a file's checksum while reading it using a buffered input stream.

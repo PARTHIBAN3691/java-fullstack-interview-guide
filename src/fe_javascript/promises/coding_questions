@@ -1,0 +1,30 @@
+* Write a program that creates a Promise and resolves it with a message.
+* Write a program that creates a rejected Promise and handles the error using catch().
+* Write a program that demonstrates the pending, fulfilled, and rejected states of a Promise.
+* Write a program that uses then(), catch(), and finally() in a Promise chain.
+* Write a program that demonstrates the execution order of synchronous code and Promise callbacks.
+* Write a program that chains multiple then() handlers to transform a value.
+* Write a program that returns a Promise from a then() callback and processes its result.
+* Write a program that throws an error inside a then() callback and handles it later.
+* Write a program that recovers from a rejected Promise by returning a fallback value from catch().
+* Write a program that demonstrates how finally() behaves for fulfilled and rejected Promises.
+* Write a program that converts a callback-based function into a Promise.
+* Write a program that uses Promise.resolve() and Promise.reject().
+* Write a program that executes three asynchronous tasks sequentially using Promise chaining.
+* Write a program that executes three asynchronous tasks concurrently using Promise.all().
+* Write a program that demonstrates how Promise.all() behaves when one task rejects.
+* Write a program that uses Promise.allSettled() to collect the results of successful and failed tasks.
+* Write a program that uses Promise.race() to return the first settled result.
+* Write a program that uses Promise.any() to return the first fulfilled result.
+* Write a program that handles the AggregateError produced when Promise.any() rejects all inputs.
+* Write a program that uses async/await to call a Promise-based API and handles errors.
+* Write a program that demonstrates why an unawaited Promise rejection is not caught by a surrounding try/catch.
+* Write a program that implements a timeout for a Promise-based operation.
+* Write a program that cancels a fetch request using AbortController.
+* Write a program that retries a failed asynchronous operation with a maximum retry count.
+* Write a program that implements exponential backoff for retrying an API request.
+* Write a program that processes an array of tasks with a maximum concurrency limit.
+* Write a program that implements a Promise pool for processing a large list of items.
+* Write a program that executes independent tasks concurrently and then runs a dependent task.
+* Write a program that implements a fallback value when an asynchronous operation fails.
+* Write a program that builds a reusable asynchronous workflow with error handling, retries, timeout, and cancellation.

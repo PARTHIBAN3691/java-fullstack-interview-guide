@@ -1,0 +1,30 @@
+* How do you prevent cross-site scripting (XSS) in JavaScript?
+* What is the difference between reflected, stored, and DOM-based XSS?
+* How can you prevent CSRF attacks in a web application?
+* How does the same-origin policy protect web applications?
+* What is Cross-Origin Resource Sharing (CORS), and how does it work?
+* What is the difference between CORS and the same-origin policy?
+* How do you securely store authentication tokens in a browser?
+* What are the security risks of storing JWTs in localStorage?
+* How do HttpOnly cookies help protect authentication credentials?
+* How do you validate and sanitize user input?
+* What is the difference between input sanitization, validation, and output encoding?
+* Why should frontend validation never replace backend validation?
+* How do you safely render user-generated HTML?
+* What are the risks of using document.write()?
+* How can prototype pollution create security vulnerabilities?
+* What is an open redirect vulnerability?
+* How can JavaScript applications prevent open redirect attacks?
+* What is clickjacking, and how can it be prevented?
+* What is Subresource Integrity (SRI)?
+* How does Content Security Policy help prevent script injection?
+* What is the principle of least privilege in application security?
+* How do you securely handle errors without exposing sensitive information?
+* What are the security risks of logging tokens or personal data?
+* How can you protect API requests from unauthorized access?
+* What is rate limiting, and why is it important for APIs?
+* How do you prevent sensitive data from appearing in browser URLs?
+* What are the risks of dynamically constructing URLs from user input?
+* How do you manage environment variables and secrets in JavaScript applications?
+* How can dependency vulnerabilities be identified using npm audit?
+* What security considerations apply when using third-party JavaScript packages?

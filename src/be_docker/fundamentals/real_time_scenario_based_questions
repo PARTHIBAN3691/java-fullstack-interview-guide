@@ -1,0 +1,30 @@
+* Your Spring Boot application works locally but fails after being containerized. How would you investigate the root cause?
+* A container starts and exits immediately with exit code 1. How would you identify the underlying application or configuration issue?
+* A Java container repeatedly exits with code 137 under production load. How would you investigate memory limits and operating-system termination?
+* Your Spring Boot application cannot connect to PostgreSQL because the database hostname is configured as localhost. How would you fix the configuration?
+* A containerized service cannot communicate with another container even though both are running. How would you troubleshoot networking?
+* A Docker image has grown significantly after a minor code change. How would you identify unnecessary layers and optimize the build?
+* A Java container consumes more memory than expected despite a small configured heap. How would you investigate native memory, metaspace, direct buffers, and thread stacks?
+* Your application container restarts whenever the database becomes temporarily unavailable. How would you improve resilience and startup behavior?
+* A deployment causes requests to fail because containers are stopped before ongoing requests complete. How would you implement graceful shutdown?
+* Your application loses uploaded files after the container is recreated. How would you preserve the data?
+* A database container is accidentally removed along with its data. What recovery options would you investigate, and how would you prevent recurrence?
+* A container is marked healthy, but users receive HTTP 500 responses. How would you investigate application-level health?
+* Your Docker image contains credentials that were added during the build. How would you remediate the exposure and prevent it in future builds?
+* A vulnerability scan identifies an outdated Java runtime in production images. How would you update the image and validate compatibility?
+* Your Java container works on AMD64 but fails on an ARM64 machine. How would you investigate architecture compatibility?
+* A developer's Docker image works locally but fails in CI because a required file is missing. How would you investigate the build context and pipeline?
+* Your team cannot reproduce a production issue because the latest image tag has been overwritten. How would you improve image versioning?
+* A container cannot write to a mounted directory after the application is switched to a non-root user. How would you diagnose and fix permissions?
+* A Docker host runs out of disk space even though application containers appear small. How would you investigate image layers, logs, and volumes?
+* Your application has intermittent latency spikes when CPU limits are enabled. How would you diagnose container CPU throttling?
+* A Java application needs a heap dump for an out-of-memory incident, but the container is automatically removed after exiting. How would you preserve diagnostic artifacts?
+* A container cannot access an external HTTPS API because certificate validation fails. How would you investigate the trust store and certificates?
+* Your production deployment pulls a newer base image unexpectedly and behaves differently. How would you make image builds reproducible?
+* Two application containers try to bind the same host port. How would you resolve the conflict while supporting multiple instances?
+* A Docker registry is temporarily unavailable during deployment. How would you reduce the impact on production releases?
+* Your team needs separate configuration for development, testing, and production without rebuilding the application for every environment. How would you design the configuration strategy?
+* A containerized application starts successfully but takes several minutes before it can process requests. How would you configure startup and readiness checks?
+* A service consumes increasing memory over several days, and restarting the container temporarily fixes the problem. How would you investigate whether the cause is a memory leak?
+* Your team wants to deploy several Java microservices with centralized logs, metrics, and distributed tracing. How would you design the container platform?
+* Your Docker-based application has grown to dozens of services and requires automated scaling and rolling deployments. How would you decide whether to adopt an orchestrator?

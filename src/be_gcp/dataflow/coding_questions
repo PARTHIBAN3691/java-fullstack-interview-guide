@@ -1,0 +1,30 @@
+* Write a Java Apache Beam pipeline that reads text files from Cloud Storage and counts the number of lines.
+* Implement a Java Dataflow pipeline that reads JSON messages from Pub/Sub and writes parsed records to BigQuery.
+* Write a DoFn that transforms raw JSON event strings into validated Java domain objects.
+* Implement a ParDo transform that filters transaction records based on amount and status.
+* Write a Java pipeline that groups transactions by customer ID and calculates total transaction value.
+* Implement a CombineFn that calculates count, sum, minimum, maximum, and average for a collection of transaction amounts.
+* Write a pipeline that reads CSV files from Cloud Storage and writes transformed data to BigQuery.
+* Implement a dead-letter output using TupleTag and tagged outputs for invalid records.
+* Write a Java pipeline that uses fixed windows to calculate the number of events received every minute.
+* Implement sliding-window aggregation for monitoring API request counts over the last five minutes.
+* Write a session-window pipeline that groups user activity events into sessions.
+* Implement a pipeline that handles late-arriving events using allowed lateness and suitable triggers.
+* Write a Java transform that deduplicates events using a stable event ID and an appropriate time-bounded strategy.
+* Implement a keyed stateful DoFn that tracks the number of events received for each customer.
+* Write a stateful DoFn that maintains a running total for each account and emits periodic updates using timers.
+* Implement a pipeline that enriches transaction events using a side input containing customer reference data.
+* Write a pipeline that joins two PCollections by customer ID using CoGroupByKey.
+* Implement a dynamic BigQuery destination that routes records to different tables based on event type.
+* Write a Java Dataflow pipeline that reads Avro records and converts them into a normalized output schema.
+* Implement a pipeline that batches records before writing them to an external service.
+* Write a Java DoFn that calls an external REST API with bounded retries and exponential backoff.
+* Implement an idempotent event-processing transform that detects repeated business event IDs.
+* Write a Java pipeline that uses TestPipeline and PAssert to verify filtering and aggregation logic.
+* Implement a unit test for a custom CombineFn that calculates transaction totals correctly.
+* Write Java code that configures PipelineOptions for project, region, staging location, temporary location, and worker settings.
+* Implement a pipeline that writes malformed input records to Cloud Storage for later inspection and replay.
+* Write a Java pipeline that reads a large collection of files and processes them incrementally without loading the full dataset into memory.
+* Implement a pipeline that exports aggregated metrics to BigQuery and records processing timestamps.
+* Write a Java utility that collects Dataflow job metrics and reports processed elements, failed records, and processing latency.
+* Implement a parameterized Dataflow pipeline using a template so operators can configure input paths, output tables, and processing options at runtime.

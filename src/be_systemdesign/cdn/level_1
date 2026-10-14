@@ -1,0 +1,30 @@
+* How do you choose a CDN provider for an enterprise application?
+* How do you configure a CDN in front of a web application?
+* How does a CDN determine whether content can be cached?
+* How do Cache-Control headers affect CDN caching?
+* What is the difference between Cache-Control, Expires, and ETag?
+* How do ETag and Last-Modified headers help reduce bandwidth usage?
+* How do you configure different TTL values for different types of content?
+* How do you prevent a CDN from caching sensitive or user-specific responses?
+* How do you configure cache keys using query parameters, cookies, and request headers?
+* How do query strings affect CDN cache hit ratios?
+* How do you handle cache invalidation after deploying a new application version?
+* What is cache busting, and how does versioned asset naming work?
+* How do you implement a cache purge for a specific URL or group of URLs?
+* What is the difference between full cache purge and selective cache invalidation?
+* How do you configure a CDN to serve compressed content such as Brotli or Gzip?
+* How does a CDN support HTTP/2 and HTTP/3?
+* How do you configure HTTPS certificates for a CDN?
+* What is the difference between TLS termination at the CDN and TLS termination at the origin?
+* How do you protect an origin server so that requests cannot bypass the CDN?
+* How do origin shielding and tiered caching work?
+* How do you handle CDN cache misses during sudden traffic spikes?
+* How do you prevent cache stampedes at the origin?
+* How do you serve stale content while the origin is temporarily unavailable?
+* How do you configure a CDN for video streaming and large file delivery?
+* How do signed URLs and signed cookies protect private CDN content?
+* How do you use a CDN to protect applications against DDoS attacks?
+* How do Web Application Firewalls (WAFs) integrate with CDNs?
+* How do you monitor CDN cache hit ratio, latency, bandwidth, and origin traffic?
+* How do you troubleshoot unexpectedly low CDN cache hit ratios?
+* How do you test CDN behavior before deploying changes to production?

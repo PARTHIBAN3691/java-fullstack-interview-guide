@@ -1,0 +1,30 @@
+* Write a BigQuery SQL query that calculates daily GCP spending by project using exported Cloud Billing data.
+* Write a BigQuery SQL query that identifies the top ten most expensive GCP services for a given month.
+* Implement a BigQuery query that compares actual monthly costs with the previous month and calculates percentage change.
+* Write a SQL query that identifies projects whose spending exceeds a configured monthly threshold.
+* Implement a BigQuery query that calculates cost per transaction using billing data and application transaction counts.
+* Write Java code that queries Cloud Billing export data in BigQuery and generates a monthly cost report.
+* Implement a Java service that retrieves budget and billing information using the appropriate Google Cloud APIs.
+* Write Java code to send a notification when cloud spending exceeds a configured threshold.
+* Implement a scheduled Spring Boot job that compares current spending with historical daily averages.
+* Write Java code to calculate cost per API request from total cloud spending and request-count metrics.
+* Implement a Java utility that compares monthly spending across projects and identifies the largest increases.
+* Write a Java service that detects spending anomalies using a rolling average and a configurable deviation threshold.
+* Implement Java code to generate a report of cost allocation by project, service, environment, and application label.
+* Write a Terraform configuration that creates a GCP billing budget with threshold-based notifications.
+* Implement Terraform labels and naming conventions that support cost allocation across environments and teams.
+* Write Terraform configuration for a Compute Engine VM using a cost-appropriate machine type and controlled disk sizing.
+* Implement Terraform configuration for a managed instance group with autoscaling and minimum and maximum instance limits.
+* Write a script using the gcloud CLI to list Compute Engine instances and identify stopped or potentially unused resources.
+* Implement a cleanup script that identifies unattached persistent disks and requires explicit confirmation before deletion.
+* Write Java code that retrieves Compute Engine instance metadata and exports application-level cost attribution labels or identifiers.
+* Implement a Spring Boot endpoint that exposes request count, processing duration, and business transaction metrics for unit-cost analysis.
+* Write Java code to instrument a service with Micrometer metrics that help correlate workload volume with resource consumption.
+* Implement a Cloud Storage lifecycle configuration that transitions eligible objects to cheaper storage classes or deletes expired objects.
+* Write a BigQuery SQL query that identifies expensive queries by bytes processed and execution frequency.
+* Implement Java code that estimates the cost of processing a batch based on record count and measured resource consumption.
+* Write a Java utility that compares two deployment configurations and estimates their expected infrastructure cost differences.
+* Implement a scheduled automation that shuts down eligible non-production VMs outside configured working hours.
+* Write Java code that evaluates resource utilization metrics and recommends candidate Compute Engine machine types for rightsizing.
+* Implement a Java report that tracks optimization initiatives, estimated savings, verified savings, and implementation status.
+* Write a CI/CD pipeline check that validates resource-sizing and cost-control policies before deploying GCP infrastructure.

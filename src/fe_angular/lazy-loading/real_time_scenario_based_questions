@@ -1,0 +1,30 @@
+* Your Angular application's initial load is slow because all feature modules are loaded eagerly. How would you introduce lazy loading?
+* A dashboard contains reports, administration, and user-management features. How would you decide which features should be lazy-loaded?
+* A lazy-loaded route works when navigating from the home page but fails when its URL is entered directly. How would you troubleshoot it?
+* A user navigates to a lazy-loaded feature and sees a blank screen. What would you inspect first?
+* Your application has a large initial bundle even after lazy loading several routes. How would you identify the cause?
+* An unauthorized user can navigate to a restricted lazy-loaded route. How would you protect the route and the underlying data?
+* A feature module creates a second instance of a shared service. How would you investigate the dependency injection configuration?
+* A route guard prevents access to a lazy-loaded feature, but the feature's JavaScript is still downloaded. Is this expected, and how would you reduce unnecessary downloads?
+* Your application has ten lazy-loaded routes, but users commonly visit only two of them. How would you improve navigation performance?
+* The first visit to a lazy-loaded page is slow, but subsequent visits are fast. How would you explain and optimize this behavior?
+* A business application needs to preload frequently used features after login. How would you implement selective preloading?
+* A restricted administration feature must not be preloaded for ordinary users. How would you design the preloading strategy?
+* After deployment, users receive ChunkLoadError when opening lazy-loaded routes. How would you resolve the issue?
+* A browser retains an old application version while the server serves new lazy-loaded chunks. How would you prevent version mismatch problems?
+* A lazy-loaded route works in development but fails after production deployment. What build and hosting configurations would you inspect?
+* Your Angular application uses standalone components and no feature NgModules. How would you implement lazy loading?
+* A nested lazy-loaded route does not resolve its child component. How would you debug the route configuration?
+* Two lazy-loaded features require shared user data. How would you share the state without duplicating services?
+* The application downloads a large third-party charting library on the initial page even though charts are shown only in reports. How would you optimize the bundle?
+* A lazy-loaded feature imports a shared module containing many unrelated components. How could this affect bundle size?
+* A custom preloading strategy causes excessive network traffic on mobile devices. How would you improve it?
+* A route uses CanActivate, but the application should prevent the route from matching for certain users. Which guard would you consider and why?
+* Your team wants different preloading rules for public, authenticated, and administrative routes. How would you structure the configuration?
+* Server-side rendering introduces issues with a dynamically imported browser-only library. How would you investigate the problem?
+* A service worker serves stale application files after deployment, causing lazy-loading failures. How would you diagnose and fix it?
+* A lazy-loaded route works, but its associated CSS or assets are missing in production. What would you check?
+* Users on slow networks experience long delays when opening rarely visited routes. What loading indicators and performance improvements would you introduce?
+* A feature is loaded lazily but its dependencies are duplicated across several chunks. How would you analyze and optimize the build?
+* How would you measure whether lazy loading actually improves the application's real-world performance?
+* How would you design a scalable lazy-loading strategy for an enterprise application with dozens of feature areas?

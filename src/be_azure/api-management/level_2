@@ -1,0 +1,21 @@
+
+* Design an enterprise API gateway architecture using Azure API Management for multiple Spring Boot microservices.
+* How would you design a secure API platform supporting internal services, external partners, and public consumers?
+* How would you implement OAuth 2.0 authorization with Microsoft Entra ID for APIs exposed through APIM?
+* How would you design different authorization policies for user-based access, application identities, and role-based access?
+* How would you prevent unauthorized clients from bypassing APIM and accessing backend services directly?
+* How would you implement mutual TLS authentication between API consumers, APIM, and backend services?
+* How would you design rate limiting and quota enforcement for different API products and customer tiers?
+* How would you implement resilient backend communication using retries, timeouts, circuit breakers, and appropriate error handling?
+* How would you design API versioning and backward compatibility for a large collection of Java microservices?
+* How would you implement canary releases or gradual backend traffic routing using APIM policies?
+* How would you handle partial backend failures without creating excessive retries or cascading failures?
+* How would you design caching for read-heavy APIs while ensuring data consistency and appropriate cache invalidation?
+* How would you securely manage certificates, secrets, and backend credentials using Azure Key Vault and managed identities?
+* How would you configure APIM for private backend services running in AKS or a private virtual network?
+* How would you design high availability and disaster recovery for Azure API Management across regions?
+* How would you troubleshoot high latency when APIM is in front of multiple Spring Boot services?
+* How would you implement centralized logging, distributed tracing, and correlation IDs across APIM and Java microservices?
+* How would you prevent API abuse, injection attacks, excessive payloads, and denial-of-service patterns?
+* How would you manage APIM policies, API definitions, products, and named values consistently across multiple environments?
+* How would you evaluate Azure API Management versus Azure Application Gateway, Azure Front Door, and a custom Spring Cloud Gateway?

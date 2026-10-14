@@ -1,0 +1,30 @@
+* What are streams in Node.js?
+* Why are streams used in Node.js?
+* What are the different types of streams in Node.js?
+* What is a Readable stream?
+* What is a Writable stream?
+* What is a Duplex stream?
+* What is a Transform stream?
+* What is the difference between Readable and Writable streams?
+* What is the difference between Duplex and Transform streams?
+* What is the purpose of the stream module in Node.js?
+* How do you create a readable stream using the fs module?
+* How do you create a writable stream using the fs module?
+* What is the purpose of the data event in a readable stream?
+* What is the purpose of the end event?
+* What is the purpose of the finish event?
+* What is the purpose of the error event in streams?
+* What is the difference between the end and finish events?
+* What is the purpose of the pipe() method?
+* What is the difference between pipe() and reading an entire file into memory?
+* What is the purpose of the pipeline() function?
+* What is stream buffering?
+* What is a stream chunk?
+* What is the highWaterMark option in Node.js streams?
+* What is backpressure in streams?
+* Why is backpressure important when processing large files?
+* What is the difference between flowing mode and paused mode in readable streams?
+* What is the purpose of the close event?
+* How do you copy a file using streams in Node.js?
+* How do you handle errors while reading or writing streams?
+* What is the difference between object mode and byte mode in streams?

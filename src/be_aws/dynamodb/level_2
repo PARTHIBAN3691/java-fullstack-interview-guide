@@ -1,0 +1,21 @@
+
+* How would you design a single-table DynamoDB model for an e-commerce platform supporting customers, orders, products, and payments?
+* What is single-table design, and how does it differ from designing multiple tables around individual entities?
+* How would you identify access patterns before designing a DynamoDB data model?
+* How would you choose partition keys to prevent hot partitions and uneven traffic distribution?
+* How would you handle a hot partition caused by a highly popular product or customer?
+* How would you implement write sharding, and what trade-offs does it introduce?
+* How do adaptive capacity and partition-level throughput limits affect DynamoDB performance?
+* How would you design GSIs for multiple access patterns while controlling storage and write costs?
+* How would you migrate a large relational database to DynamoDB with minimal downtime?
+* How would you maintain data consistency between DynamoDB and an external relational database?
+* How would you implement optimistic concurrency control for simultaneous updates from multiple Java services?
+* How would you design idempotent processing for events delivered through DynamoDB Streams?
+* How would you handle transaction conflicts and conditional-check failures in a high-concurrency application?
+* How would you design a globally distributed application using DynamoDB global tables?
+* How do DynamoDB global tables handle replication, conflict resolution, and concurrent updates across regions?
+* How would you choose between strongly consistent reads, eventually consistent reads, and transactional operations?
+* How would you design a data archival strategy using TTL, DynamoDB Streams, and Amazon S3?
+* How would you diagnose high read/write throttling even when the table's overall capacity appears sufficient?
+* How would you optimize DynamoDB cost for a workload with unpredictable traffic and large volumes of historical data?
+* How would you design observability for DynamoDB using CloudWatch metrics, structured application logs, and alarms?

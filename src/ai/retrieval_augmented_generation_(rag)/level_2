@@ -1,0 +1,76 @@
+**RAG Fundamentals and Architecture**
+* Design a multi-tenant enterprise RAG platform supporting millions of documents, frequent updates, strict access control, and high availability.
+* How would you establish consistency between the source-of-truth document repository, ingestion state, vector index, and citation metadata?
+* How would you evolve a RAG architecture from a monolithic service into independently scalable ingestion, retrieval, and generation services?
+* How would you support multiple LLM and embedding providers while avoiding provider-specific dependencies throughout the application?
+* How would you design disaster recovery and regional failover while preserving data residency and document permissions?
+
+**Basic RAG Pipeline**
+* Design a production RAG pipeline with bounded latency, source citations, token budgets, retry policies, and graceful degradation.
+* How would you make a multi-stage RAG request traceable and reproducible across document versions, embedding versions, and model versions?
+* How would you guarantee that retries do not duplicate ingestion operations or produce inconsistent persisted conversation state?
+* How would you introduce asynchronous processing for expensive queries without compromising the user experience?
+* How would you define end-to-end success when retrieval, generation, and citation validation can independently fail?
+
+**Document Ingestion Pipelines**
+* Design an event-driven ingestion system that processes millions of documents daily with exactly-once business effects despite at-least-once event delivery.
+* How would you coordinate distributed parsing, chunking, embedding, and indexing while supporting checkpoint recovery and partial retries?
+* How would you handle source-document deletion, late-arriving events, and out-of-order updates?
+* How would you prevent an ingestion backlog from overwhelming embedding providers or starving online retrieval traffic?
+* How would you implement a reconciliation process that detects and repairs inconsistencies across the source repository and vector index?
+
+**Document Parsing and Preprocessing**
+* Design a document-understanding pipeline for complex PDFs, scanned files, tables, diagrams, multilingual content, and malformed documents.
+* How would you preserve document structure and source provenance through parsing transformations and downstream chunking?
+* How would you detect silent extraction corruption that produces plausible but factually incomplete text?
+* How would you handle parser sandboxing, malicious files, resource exhaustion, and untrusted document content?
+* How would you introduce a new parser version and reprocess affected documents without interrupting production search?
+
+**Chunking and Overlap Strategies**
+* Design an adaptive chunking strategy that handles prose, code, tables, legal documents, and long technical specifications.
+* How would you optimize chunk boundaries using retrieval evaluations rather than relying on fixed token-count heuristics?
+* How would you preserve cross-chunk relationships when an answer requires information distributed across a document?
+* How would you migrate a large corpus to a new chunking strategy while maintaining citations and supporting rollback?
+* How would you quantify the trade-off between chunk granularity, retrieval recall, duplicated context, embedding cost, and generation quality?
+
+**Embedding Generation**
+* Design a distributed embedding service with batching, rate-limit coordination, idempotency, model versioning, and dead-letter processing.
+* How would you perform an embedding-model migration while query traffic and document ingestion continue?
+* How would you detect model or preprocessing drift and determine whether to re-embed the corpus?
+* How would you maintain reproducibility when embedding providers update models without exposing all implementation details?
+* How would you prioritize embedding jobs under constrained provider quotas while keeping critical documents fresh?
+
+**Vector Store Integration**
+* Design a vector-store abstraction that supports multiple backends while preserving filtering, ranking, pagination, and consistency semantics.
+* How would you handle vector-index rebuilds, replication lag, and schema changes with strict availability requirements?
+* How would you implement secure tenant isolation when tenants share physical collections or index partitions?
+* How would you maintain synchronization between relational metadata and vector records when distributed transactions are unavailable?
+* How would you choose between a managed vector service, relational database with vector support, and self-hosted ANN infrastructure?
+
+**Semantic and Hybrid Retrieval**
+* Design a retrieval architecture that combines dense vectors, BM25, metadata filters, sparse vectors, and reranking under a strict latency budget.
+* How would you calibrate retrieval scores from multiple systems with incompatible score distributions?
+* How would you improve recall for rare technical identifiers without degrading semantic retrieval for natural-language questions?
+* How would you handle retrieval quality degradation as corpus size, domain diversity, and document duplication increase?
+* How would you optimize candidate generation and fusion using query-type-specific evaluation data?
+
+**Query Rewriting and Expansion**
+* Design a query-planning component that decides between rewriting, multi-query expansion, decomposition, and direct retrieval.
+* How would you prevent an LLM-based rewriter from dropping negation, dates, entity names, or explicit user constraints?
+* How would you control latency and cost when query expansion produces multiple retrieval requests?
+* How would you evaluate rewritten queries independently from the final retrieval and generation stages?
+* How would you defend query rewriting against prompt injection embedded in conversation history or user-supplied content?
+
+**Reranking and Context Compression**
+* Design a retrieval pipeline that combines hybrid candidate generation, cross-encoder reranking, deduplication, and evidence-preserving compression.
+* How would you determine whether context compression removes critical qualifications or changes the meaning of source evidence?
+* How would you adapt reranking depth and compression effort to query complexity and latency requirements?
+* How would you preserve source offsets and citation integrity when compressing or transforming passages?
+* How would you implement fallback behavior when the reranker is unavailable or the compressed context fails validation?
+
+**Context Window Management**
+* Design a context-budgeting algorithm that accounts for system instructions, conversation history, retrieved evidence, tool outputs, and expected response length.
+* How would you handle long-running conversations that exceed the context window while preserving important user constraints and prior decisions?
+* How would you avoid information loss when summarizing conflicting or time-sensitive evidence?
+* How would you allocate context dynamically based on query complexity, evidence strength, and model-specific token limits?
+* How would you detect when context truncation removes evidence required to support the final

@@ -1,0 +1,30 @@
+* What is an HTTP server in Node.js?
+* What is the purpose of the built-in http module?
+* How do you create an HTTP server using Node.js?
+* What is the purpose of http.createServer()?
+* What is the purpose of server.listen()?
+* How do you specify the port number for an HTTP server?
+* How do you check whether an HTTP server is running?
+* What are the request and response objects in an HTTP server?
+* What is the purpose of the request callback in createServer()?
+* How do you read the HTTP request method?
+* How do you read the request URL?
+* How do you send a response from an HTTP server?
+* What is the difference between res.write() and res.end()?
+* How do you set an HTTP response status code?
+* How do you set response headers?
+* What is the purpose of the Content-Type header?
+* How do you return a JSON response from an HTTP server?
+* How do you handle GET requests?
+* How do you handle POST requests?
+* How do you handle PUT and DELETE requests?
+* How do you implement a basic route in an HTTP server?
+* How do you return a 404 response for an unknown route?
+* What is the purpose of the URL class in Node.js?
+* How do you read query parameters from a request?
+* How do you read request headers?
+* What is the difference between HTTP and HTTPS servers?
+* How do you handle errors while starting an HTTP server?
+* How do you stop an HTTP server?
+* What is the purpose of server.close()?
+* What are common use cases for a Node.js HTTP server?

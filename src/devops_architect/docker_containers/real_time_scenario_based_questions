@@ -1,0 +1,35 @@
+* A Docker container works on a developer's machine but fails in the CI environment. How would you identify differences in architecture, environment variables, permissions, and runtime configuration?
+* A container exits immediately after startup, and `docker logs` shows no useful error. How would you investigate the entry point, process signals, logging configuration, and exit code?
+* A new Docker image is three times larger than the previous release despite only a small application change. How would you identify the source of image growth?
+* A Docker build takes 15 minutes because dependency installation runs on every build. How would you optimize Dockerfile instruction ordering and cache usage?
+* A build cache is unexpectedly reused after a dependency change, resulting in an incorrect application image. How would you investigate and correct the caching strategy?
+* A production image contains compiler tools, package managers, and development dependencies. How would you redesign the Dockerfile using multi-stage builds?
+* A developer accidentally includes a private key in a Docker image and pushes it to a registry. How would you contain the incident, rotate credentials, and prevent recurrence?
+* A container image passes vulnerability scanning but is later found to contain a malicious dependency. How would you investigate the supply chain and strengthen verification?
+* A critical vulnerability is reported in the base image used by 200 services. How would you prioritize rebuilding, testing, publishing, and deploying fixed images?
+* A registry tag was overwritten with a different image, and production deployments now run inconsistent binaries. How would you restore consistency and prevent mutable-tag risks?
+* A production container cannot pull an image from a private registry after credentials are rotated. How would you diagnose authentication, authorization, and credential configuration?
+* A container can resolve a database hostname but cannot establish a TCP connection. How would you investigate network membership, port configuration, firewall rules, and service availability?
+* Two containers can communicate by IP address but not by service name. How would you troubleshoot Docker DNS and network configuration?
+* A containerized application cannot access a host service using `localhost`. How would you explain the networking behavior and configure the correct connection?
+* A database container loses its data after being removed and recreated. How would you identify the storage configuration error and recover the data if possible?
+* A container runs successfully without a mounted volume but fails with a permission-denied error when a volume is attached. How would you resolve user, ownership, and mount-permission issues?
+* A Java container is killed under load even though its configured heap is below the container memory limit. How would you investigate native memory, thread stacks, direct buffers, and other memory consumers?
+* A CPU-intensive container degrades the performance of neighboring services. How would you use CPU limits, quotas, and monitoring to isolate the workload?
+* A health check reports a container as unhealthy, but the application still responds to user requests. How would you identify an incorrect health-check command or threshold?
+* A container repeatedly restarts because its health check depends on an external service that is temporarily unavailable. How would you redesign the health checks and recovery behavior?
+* A container fails to stop gracefully and is forcibly terminated during deployments. How would you inspect signal handling, PID 1 behavior, shutdown hooks, and termination timeouts?
+* A rootless container cannot bind to a required port or access a mounted directory. How would you diagnose the restriction without reverting to unrestricted root execution?
+* A distroless container fails in production, but the image has no shell or common diagnostic utilities. How would you debug the issue safely?
+* A container image works on an x86-64 CI runner but fails on an ARM-based deployment host. How would you diagnose architecture-specific binaries and build a multi-platform image?
+* A production incident requires checking files inside a running container, but the production image does not contain debugging tools. How would you investigate without modifying the immutable production image?
+* A Docker daemon becomes unavailable and affects multiple containers on a host. How would you assess the impact, recover the workload, and reduce the single-host dependency?
+* A containerized service receives SIGTERM during a long-running transaction and exits before completing it. How would you implement graceful shutdown and safe request draining?
+* A private registry runs out of storage because old image tags and layers are retained indefinitely. How would you implement cleanup without deleting images required for active deployments or rollback?
+* An image scanner reports vulnerabilities in packages that the application does not use. How would you validate reachability, assess risk, and document any justified exception?
+* A security audit discovers that several containers run in privileged mode and have unnecessary Linux capabilities. How would you reduce privileges without breaking application functionality?
+* A production deployment uses an image tag instead of a digest, and the image changes between validation and deployment. How would you enforce immutable image references?
+* A container's filesystem fills up because the application writes temporary files inside its writable layer. How would you diagnose the growth and redesign temporary storage?
+* An application container can access internal services that it should not be allowed to reach. How would you redesign network segmentation and restrict connectivity?
+* A team wants to reduce deployment time by pulling images from a local registry mirror, but the mirror sometimes serves outdated images. How would you design cache validation and image integrity checks?
+* Container build times and image sizes vary widely across teams. How would you introduce common base images, Dockerfile standards, security gates, and performance metrics?

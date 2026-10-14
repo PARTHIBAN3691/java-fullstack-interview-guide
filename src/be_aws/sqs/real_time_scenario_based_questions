@@ -1,0 +1,21 @@
+
+* A Java producer successfully sends messages to SQS, but consumers do not receive them. How would you troubleshoot the issue?
+* A consumer processes a message successfully, but the same message appears again later. What could cause this, and how would you prevent duplicate business processing?
+* A message is deleted before the database transaction commits, resulting in lost business data. How would you redesign the processing flow?
+* A consumer takes longer than the visibility timeout to process a message. How would you prevent another consumer from processing it simultaneously?
+* The SQS queue depth keeps increasing even though consumers are running. How would you identify and resolve the bottleneck?
+* A message repeatedly fails because of malformed JSON. How would you isolate the message and prevent endless retries?
+* Messages in a FIFO queue are not being processed as quickly as expected. How would you investigate message group IDs and consumer concurrency?
+* A Java application receives an SQS message but encounters `AccessDeniedException` while deleting it. How would you troubleshoot IAM and queue policies?
+* A batch send operation returns partial failures. How would you ensure failed messages are retried without duplicating successful sends?
+* A payment-processing service must not charge a customer twice if an SQS message is redelivered. How would you implement idempotency?
+* A downstream database becomes overloaded during a sudden increase in queue traffic. How would you implement backpressure and controlled concurrency?
+* A message reaches the dead-letter queue after repeated processing failures. How would you investigate, correct, and safely replay it?
+* A consumer crashes after completing an external API call but before deleting the SQS message. How would you handle the resulting redelivery?
+* Your application must process orders in order for each customer but allow different customers' orders to be processed concurrently. How would you design the FIFO message groups?
+* An application must process messages with payloads larger than the SQS message-size limit. What alternative design would you use?
+* A Java consumer experiences intermittent throttling while receiving messages from SQS. How would you improve polling and retry behavior?
+* A production queue contains old messages that have not been processed for several hours. Which CloudWatch metrics and application logs would you inspect?
+* A business requirement states that every committed order must eventually be processed asynchronously. How would you design reliable publication and recovery?
+* Two microservices consume related events, but one service frequently processes an event before the other has completed its work. How would you address the dependency?
+* Your team plans to migrate synchronous REST communication to SQS-based asynchronous processing. What changes are needed for error handling, observability, retries, and consistency?

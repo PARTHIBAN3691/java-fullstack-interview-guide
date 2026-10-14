@@ -1,0 +1,30 @@
+* What is an offset in Apache Kafka?
+* Why does Kafka use offsets?
+* Where is a Kafka offset maintained?
+* Is a Kafka offset unique across the entire cluster?
+* Is an offset unique across partitions?
+* What is the relationship between an offset and a partition?
+* What is the difference between an offset and a message ID?
+* What is the latest offset in a Kafka partition?
+* What is the earliest offset in a Kafka partition?
+* What is a committed offset?
+* What is an uncommitted offset?
+* What is consumer offset management?
+* Why does a Kafka consumer need to commit offsets?
+* What is automatic offset committing?
+* What is manual offset committing?
+* What is enable.auto.commit in Kafka?
+* What happens when a consumer commits an offset?
+* What happens if a consumer crashes before committing an offset?
+* What happens if a consumer commits an offset before processing a message?
+* How do offsets help Kafka provide at-least-once delivery?
+* How do offsets affect duplicate message processing?
+* What is consumer offset lag?
+* What is the difference between current offset and committed offset?
+* What is the difference between committed offset and log end offset?
+* What is offset reset in Kafka?
+* What is auto.offset.reset?
+* What does auto.offset.reset=earliest mean?
+* What does auto.offset.reset=latest mean?
+* What is offset retention?
+* Can a Kafka consumer manually seek to a specific offset?

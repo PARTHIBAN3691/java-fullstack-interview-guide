@@ -1,0 +1,30 @@
+* Write a Java method that authenticates a user by verifying a username and a securely hashed password.
+* Write a Spring Boot REST API endpoint that accepts login credentials and returns an authentication response.
+* Implement password hashing and verification using BCrypt in Java.
+* Write a Java method that generates a signed JWT containing a user ID and expiration time.
+* Write a Java method that validates a JWT signature and extracts the authenticated user's claims.
+* Implement a Spring Security filter that extracts and validates a Bearer token from an HTTP request.
+* Write a Spring Boot configuration that secures all API endpoints except selected public endpoints.
+* Implement a custom authentication entry point that returns a consistent JSON response for HTTP 401 errors.
+* Write a REST API endpoint that returns HTTP 403 when an authenticated user lacks the required permission.
+* Implement refresh token generation and validation in a Java REST API.
+* Write a service that rotates refresh tokens and rejects reuse of an old token.
+* Implement logout functionality that revokes a refresh token and prevents future token renewal.
+* Write a JWT validation method that checks issuer, audience, expiration, and allowed signing algorithms.
+* Implement JWT verification using public keys obtained from a JWKS endpoint.
+* Write a Java service that supports signing-key rotation while accepting tokens signed by currently trusted keys.
+* Implement API key authentication in Spring Boot using securely stored key hashes.
+* Write a REST API endpoint that rotates an API key and invalidates the previous key.
+* Implement a login rate limiter that restricts repeated authentication attempts by account and client IP.
+* Write a password reset API using single-use, time-limited reset tokens.
+* Implement OAuth 2.0 login integration using Spring Security and OpenID Connect.
+* Configure a Spring Boot resource server to validate OAuth 2.0 access tokens.
+* Write a Java test using MockMvc to verify that a protected endpoint rejects unauthenticated requests.
+* Write integration tests for successful login, invalid credentials, expired JWTs, and malformed tokens.
+* Write tests that verify refresh token rotation and rejection of reused refresh tokens.
+* Implement authentication for service-to-service communication using OAuth 2.0 client credentials.
+* Write a Java method that validates a token's scopes before allowing access to a protected resource.
+* Implement an authentication audit logger that records login successes and failures without exposing passwords or tokens.
+* Write tests to verify that password changes invalidate existing refresh tokens.
+* Implement secure cookie-based authentication with HttpOnly, Secure, and SameSite settings in a Spring Boot application.
+* Build a complete Spring Boot REST API authentication module with password hashing, JWT validation, refresh token rotation, logout, role-aware security configuration, exception handling, and automated tests.

@@ -1,0 +1,30 @@
+* A Kafka consumer updates a customer database and crashes before committing its offset. When the consumer restarts, the event is processed again. How would you prevent duplicate database updates?
+* A producer receives a timeout while publishing an order event, but the broker may already have stored it. How would you handle the uncertainty without creating duplicate orders?
+* A payment event is processed twice after a consumer group rebalance. How would you investigate the cause and make the processing idempotent?
+* Your Kafka application loses messages during a broker restart. Which producer, replication, and broker configurations would you investigate?
+* A producer uses acks=1 and reports successful sends, but messages are lost after a leader failure. Why might this happen, and how would you improve durability?
+* A high-throughput application uses acks=all but experiences increased latency and producer failures. How would you tune the configuration without weakening reliability unnecessarily?
+* Your consumer commits offsets before processing records, and a server crash causes some records to be skipped. How would you correct the offset management strategy?
+* A consumer processes records before committing offsets, resulting in duplicate processing after crashes. How would you design a reliable recovery mechanism?
+* An idempotent producer is enabled, but customers still receive duplicate notifications. Why can this happen, and how would you prevent business-level duplicates?
+* A Kafka transaction commits successfully, but a downstream REST API call is repeated after an application restart. How would you handle this external side effect?
+* Your application consumes records from one topic and publishes results to another. A crash occurs between the two operations. How would you prevent lost or inconsistent output?
+* A transactional consumer produces output records, but downstream consumers can see uncommitted results. How would you investigate and correct the configuration?
+* A read_committed consumer appears to be lagging behind the high watermark. How could open transactions explain the behavior?
+* A producer's transactions repeatedly time out during large batches. How would you identify the bottleneck and adjust the transaction design?
+* A consumer group rebalance occurs while a record is being processed. How would you avoid unsafe commits and duplicate side effects?
+* A payment service must process each event once at the business level, even when Kafka delivers it multiple times. What architecture and database constraints would you implement?
+* A database transaction succeeds, but the Kafka offset commit fails. How would you recover without corrupting business state?
+* A Kafka event must trigger an external banking API call, and that API does not support idempotency keys. How would you reduce the risk of duplicate operations?
+* A producer is configured with idempotence disabled and several requests in flight. Messages occasionally appear duplicated or out of order after retries. How would you investigate?
+* A topic has replication factor three, but acknowledged records are still lost during a cluster incident. Which replication and leader-election settings would you review?
+* A consumer uses automatic offset commits and occasionally skips events during long-running processing. How would you redesign the consumer?
+* A retry topic delays failed events, causing later events for the same customer to be processed first. How would you preserve the required business ordering?
+* A transactional producer is restarted with an incorrect transactional ID strategy, and transaction fencing occurs. How would you resolve the issue?
+* An application replays several days of historical events and accidentally repeats financial side effects. How would you design safe replay controls?
+* Your team claims exactly-once processing because producer idempotence is enabled. How would you explain the gaps and validate the actual end-to-end guarantee?
+* A consumer processes messages from Kafka and writes to both a database and another topic. How would you prevent partial completion across these systems?
+* A network partition causes the producer to retry while the consumer continues processing older records. How would you assess ordering, durability, and duplicate risks?
+* Kafka throughput drops after enabling transactions. How would you profile transaction size, commit frequency, batching, and broker performance?
+* Your service must guarantee that every accepted order is either processed successfully or recoverably recorded. How would you combine Kafka delivery settings, retries, and dead-letter handling?
+* During a production incident, you need to determine whether records were lost, duplicated, or merely delayed. Which Kafka offsets, logs, metrics, and business identifiers would you inspect?

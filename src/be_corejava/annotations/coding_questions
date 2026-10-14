@@ -1,0 +1,86 @@
+# Core Java → Annotations → Coding Questions
+
+## Custom Annotation Basics
+* Create a custom `@Developer` annotation with `name`, `experience`, and `role` elements.
+* Create a `@Priority` annotation that accepts an integer value and has a default priority.
+* Create a `@FeatureFlag` annotation with a feature name and an enabled/disabled default value.
+* Create a `@RequiredField` annotation that can be applied only to fields.
+* Create a `@LogExecution` annotation that can be applied only to methods.
+* Create a `@ReadOnly` annotation that can be applied to classes and methods.
+* Create a custom annotation with an array-valued element and demonstrate its usage.
+* Create a custom annotation whose element is an enum.
+* Create a custom annotation containing another custom annotation as an element.
+* Create a repeatable `@Role` annotation that allows multiple roles to be assigned to a class.
+
+## Retention Policies and Targets
+* Create an annotation with `RetentionPolicy.RUNTIME` and retrieve it through reflection.
+* Create a custom annotation with `RetentionPolicy.CLASS` and investigate its availability in compiled class files.
+* Create a source-retained annotation for compile-time documentation or tooling.
+* Create an annotation restricted to constructors and demonstrate valid usage.
+* Create an annotation that supports fields, methods, and parameters.
+* Create a `TYPE_USE` annotation and apply it to a generic type argument.
+* Create a `TYPE_PARAMETER` annotation and apply it to a generic type declaration.
+* Create an annotation that can be applied to other annotation declarations.
+* Create a custom annotation with `@Documented` and verify its appearance in generated Javadoc.
+* Create a custom annotation with `@Inherited` and test its behavior across a class hierarchy.
+
+## Reflection-Based Annotation Processing
+* Write a program that retrieves all annotations declared on a class.
+* Write a utility that checks whether a class has a particular annotation.
+* Write a program that retrieves a custom annotation from a method and prints its element values.
+* Write a program that scans declared fields and identifies those marked with `@RequiredField`.
+* Write a program that finds all methods annotated with `@LogExecution`.
+* Write a utility that retrieves annotations declared on method parameters.
+* Write a program that retrieves annotations from superclass methods and handles overridden methods.
+* Write a utility that discovers annotated classes within a supplied set of classes.
+* Write a program that retrieves all instances of a repeatable annotation using `getAnnotationsByType()`.
+* Write a utility that resolves annotation metadata from a class and its superclass hierarchy.
+
+## Annotation-Driven Validation
+* Create a `@MinValue` annotation for numeric fields and validate the values using reflection.
+* Create a `@MaxLength` annotation for strings and validate object fields.
+* Create a `@NotBlank` annotation and implement a validator for string fields.
+* Create a `@ValidEmail` annotation and implement basic email-format validation.
+* Create a `@Range` annotation with minimum and maximum values.
+* Create a `@ValidateObject` annotation that triggers validation of selected fields.
+* Build a reusable validation engine that discovers and executes multiple validation annotations on a class.
+* Extend the validation engine to return all validation errors rather than stopping at the first failure.
+* Implement validation that supports nested objects and collections.
+* Design a mechanism to detect conflicting or invalid annotation configurations before processing an object.
+
+## Annotation-Driven Method Execution
+* Create a `@MeasureExecutionTime` annotation and write a mechanism to measure annotated method execution time.
+* Create a `@LogArguments` annotation and build a method-interception mechanism that logs method arguments.
+* Create a `@Retry` annotation with configurable retry count and delay.
+* Implement a retry mechanism that retries a method when a specified exception occurs.
+* Create a `@RequiresRole` annotation and implement role-based method authorization.
+* Create a `@CacheResult` annotation and implement a simple cache for annotated method results.
+* Create a `@MaskSensitiveData` annotation and use it to mask selected fields before logging.
+* Create an `@AuditAction` annotation that captures method name, execution time, and outcome.
+* Create an annotation-driven mechanism that prevents concurrent execution of a particular operation.
+* Implement an annotation-based rate-limiting mechanism for selected methods.
+
+## Annotation Processing and Code Generation
+* Implement a custom annotation processor that validates classes marked with `@Entity`.
+* Create an annotation processor that checks whether annotated classes contain a required method.
+* Write an annotation processor that generates a simple metadata class for every class marked with `@GenerateMetadata`.
+* Create a processor that validates the allowed values of an annotation element at compile time.
+* Write a processor that generates a registry of classes annotated with `@Component`.
+* Create an annotation processor that reports an error when two annotated members have conflicting names.
+* Build a processor that generates a builder class for a selected Java class.
+* Create an annotation processor that generates a simple mapper between two data classes.
+* Implement a processor that validates the use of a custom annotation on supported Java elements only.
+* Write tests that compile sample source files and verify the output and diagnostics of a custom annotation processor.
+
+## Advanced Reflection and Type Annotations
+* Write a program that inspects annotations on generic type arguments using `AnnotatedParameterizedType`.
+* Create a utility that inspects annotations on array component types.
+* Implement a utility that retrieves declared annotations without accidentally including inherited class annotations.
+* Write a program that compares `getAnnotation()` with `getDeclaredAnnotation()` for a class hierarchy.
+* Build an annotation metadata cache that supports concurrent reads and avoids unnecessary repeated reflection.
+* Design a cache that does not unnecessarily retain class loaders after plugin unloading.
+* Implement deterministic conflict resolution when the same custom annotation appears at multiple levels of a class hierarchy.
+* Create a utility that identifies methods with a particular annotation while accounting for overridden methods.
+* Write a test demonstrating how annotation lookup behaves on interface methods, implementation methods, and proxy classes.
+* Design a reusable annotation inspection library with unit tests for retention, inheritance, repeatability, and target restrictions.
+

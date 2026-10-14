@@ -1,0 +1,30 @@
+* A consumer processes a payment successfully but crashes before committing the offset. When it restarts, the payment is processed again. How would you prevent duplicate business processing?
+* A consumer commits offsets before processing records, and the application crashes during processing. Some messages are never processed. How would you correct the design?
+* Consumer lag suddenly becomes zero, but the business team reports that events are not being processed. How would you investigate the committed offsets and consumer position?
+* A newly deployed consumer starts reading only new messages instead of historical messages. Which offset configuration would you inspect?
+* A consumer group unexpectedly starts processing records from the beginning of a topic. What could cause this behavior?
+* A consumer group unexpectedly starts from the latest records after a restart. How would you determine why its previous committed offsets were not used?
+* Two consumer instances appear to process the same partition during a deployment. How would you investigate rebalancing and offset commits?
+* A consumer uses commitAsync(), and duplicate messages appear after a broker failure. How would you analyze the commit sequence?
+* A consumer processes records asynchronously, and offsets are committed out of order. What data-loss scenario could occur, and how would you fix it?
+* A Kafka consumer has ten records in flight, but record 5 fails while records 6 through 10 succeed. How would you manage offsets safely?
+* A production team wants to replay records from yesterday at 10:00 AM without affecting current processing. How would you design the offset-based replay?
+* A consumer group has millions of records of lag and the team wants to skip directly to the latest data. How would you safely reset its offsets?
+* A business-critical consumer accidentally committed offsets far ahead of its processing position. How would you investigate whether messages were lost and recover them?
+* A consumer loses its group membership while trying to commit offsets. What exception or behavior would you expect, and how would you recover?
+* A consumer is repeatedly rebalanced and never commits stable offsets. How would you investigate the relationship between processing time, poll behavior, and group membership?
+* A consumer processes a record successfully, but the offset commit repeatedly fails. How would you design recovery to avoid both message loss and uncontrolled duplicates?
+* A database transaction succeeds, but the Kafka offset commit fails. How would you prevent the database update from being applied twice?
+* A Kafka application must guarantee exactly-once processing while writing results to another Kafka topic. How would you use transactions and offsets?
+* A consumer group was inactive for several weeks and now cannot resume from its previous position. How would you investigate offset retention?
+* A topic has multiple partitions, and the team wants to replay only one customer's events. How would you determine the partition and offset range required?
+* A consumer has a large lag even though its committed offset appears close to the end offset. What other metrics or definitions would you investigate?
+* A consumer reads records successfully but committed offsets do not advance. How would you identify whether the problem is application logic or Kafka connectivity?
+* During a rolling deployment, consumers repeatedly reprocess the same records. How would you improve offset handling and graceful shutdown?
+* A consumer needs to pause processing temporarily while retaining its current position. How would you use pause(), resume(), and offset commits?
+* A downstream service becomes slow, and the consumer begins processing records asynchronously. How would you ensure offsets are not committed before the corresponding business operations complete?
+* A team manually resets offsets in production and accidentally skips thousands of financial events. What controls would you introduce around offset-reset operations?
+* A disaster recovery process moves consumers to another Kafka cluster. How would you migrate or reconstruct the required consumer offsets?
+* A consumer needs to start from the earliest available record only when no committed offset exists. How would you configure this behavior?
+* A consumer must periodically checkpoint its progress while processing a long-running workflow. How would you design offset commits without causing duplicate or lost work?
+* A Kafka Streams application is restored after failure and appears to replay some records. How would you explain offset and state-store recovery behavior?

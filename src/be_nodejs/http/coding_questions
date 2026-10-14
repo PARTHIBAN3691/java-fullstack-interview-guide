@@ -1,0 +1,30 @@
+* Write a Node.js program to create an HTTP server that returns a welcome message.
+* Write an HTTP server that returns different responses for GET, POST, PUT, and DELETE requests.
+* Write a program that reads the request method and URL and displays them in the response.
+* Write a program to parse query parameters from an incoming HTTP request.
+* Write a program to read request headers and return selected headers in JSON format.
+* Write a program to read a JSON request body and return a JSON response.
+* Write an HTTP server that validates incoming request data and returns appropriate status codes.
+* Write a program that implements basic routing using the built-in http module.
+* Write a program that returns a custom 404 response for unknown routes.
+* Write a program that handles unsupported HTTP methods with a 405 response.
+* Write a program that streams a large file to the client using createReadStream().
+* Write a program that accepts a file upload and writes the incoming data to disk using streams.
+* Write a program that handles malformed JSON and oversized request bodies safely.
+* Write a program that creates an HTTP client request using the built-in http module.
+* Write a program that calls an external HTTPS API and parses its JSON response.
+* Write a program that implements request timeouts using AbortController.
+* Write a program that cancels an HTTP request when a specified deadline is exceeded.
+* Write a program that configures an HTTP Agent with keep-alive and connection limits.
+* Write a program that implements an HTTPS server using TLS certificates.
+* Write a program that adds request logging and correlation IDs to every HTTP request.
+* Write a program that implements conditional GET requests using ETag and If-None-Match.
+* Write a program that supports gzip compression for HTTP responses.
+* Write a program that implements a retry mechanism for transient HTTP failures.
+* Write a program that respects Retry-After when an HTTP client receives a 429 response.
+* Write a program that implements a simple reverse proxy using Node.js HTTP APIs.
+* Write a program that handles client disconnections and cleans up active streams.
+* Write a program that implements graceful shutdown for an HTTP server.
+* Write unit tests for HTTP endpoints using Node.js built-in testing tools.
+* Write a program that measures HTTP response time, status codes, and request throughput.
+* Build a production-ready Node.js HTTP server with routing, body validation, structured logging, timeout handling, security controls, and graceful shutdown.

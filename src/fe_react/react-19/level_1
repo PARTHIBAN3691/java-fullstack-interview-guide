@@ -1,0 +1,30 @@
+* How does useActionState manage the result of an Action?
+* What arguments does the function passed to useActionState receive?
+* How do you display pending and error states using useActionState?
+* How does useFormStatus access the status of a parent form?
+* Why must useFormStatus be called from a component inside the relevant form?
+* How does useOptimistic provide optimistic UI updates?
+* What happens when an optimistic Action succeeds or fails?
+* How does the use Hook read a Promise inside a component?
+* How does the use Hook read Context?
+* How does the use Hook differ from useContext?
+* Can the use Hook be called conditionally or inside loops?
+* How does React 19 improve ref handling for function components?
+* What is the relationship between ref as a prop and forwardRef?
+* How do callback refs support cleanup functions in React 19?
+* What changes were made to callback refs in React 19?
+* How do you use Actions with standard HTML form elements?
+* How do form Actions differ from traditional onSubmit handlers?
+* How do Actions work with pending states and error handling?
+* How do you reset a form after a successful Action?
+* How do you integrate useActionState with server-side form processing?
+* How do Server Functions work in a React application?
+* How are Server Functions different from ordinary JavaScript functions?
+* What security considerations apply to Server Functions?
+* How do Server Components reduce the amount of JavaScript sent to the browser?
+* Can Server Components use state and browser event handlers directly?
+* How do Client Components interact with Server Components?
+* How does React 19 support document metadata such as title and meta tags?
+* How do stylesheet precedence and resource hints improve loading performance?
+* How does React 19 improve compatibility with custom HTML elements?
+* What are the important migration considerations when moving from React 18 to React 19?

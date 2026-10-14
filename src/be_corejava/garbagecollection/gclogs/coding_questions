@@ -1,0 +1,16 @@
+* Write a Java program and configure JVM arguments to enable GC logging.
+* Write a Java program that generates short-lived objects to produce young GC events for log analysis.
+* Write a Java program that allocates and retains objects to observe changes in heap occupancy.
+* Write a Java program that generates allocation pressure and records GC activity using `GarbageCollectorMXBean`.
+* Write a Java program that records garbage collection counts and collection times at regular checkpoints.
+* Write a Java program using `MemoryMXBean` to capture heap usage before and after garbage collection.
+* Write a Java program that generates GC logs and demonstrate how to configure log file output and rotation using JVM arguments.
+* Write a Java program that allocates large arrays to investigate humongous allocation behavior under G1 GC.
+* Write a Java program that generates GC logs under different heap-size configurations and compares the results.
+* Write a Java program that captures GC notifications using `NotificationListener` and `GarbageCollectorMXBean`.
+* Write a Java program that parses GC log lines and extracts timestamps, pause durations, and GC event types.
+* Write a Java program to calculate average and maximum GC pause durations from a GC log file.
+* Write a Java program to count young GC and Full GC events from a GC log file.
+* Write a Java program to summarize GC pause durations by event type from a GC log file.
+* Write a Java program to identify intervals with frequent GC events from a GC log file.
+* Write a Java program that compares two GC log files and reports differences in event counts and pause durations.

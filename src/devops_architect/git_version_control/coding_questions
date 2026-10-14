@@ -1,0 +1,96 @@
+**Git Fundamentals**
+* Write a Python script that parses `git log` output and generates a report of commits, authors, dates, and changed files.
+* Implement a script that detects uncommitted changes and prevents a release operation when the working tree is not in the expected state.
+* Write a utility that compares two Git references and lists added, modified, deleted, and renamed files.
+* Implement an automated recovery helper that identifies recent branches and reflog entries relevant to a deleted commit without modifying repository history.
+
+**Branching Strategies**
+* Write a Git automation script that validates branch names against configurable naming conventions.
+* Implement a branch-cleanup tool that identifies merged, stale, and inactive branches while protecting configured branches.
+* Write a CI workflow that validates a proposed branch merge against required tests and policy checks.
+* Implement a release-readiness checker that verifies required changes and checks have reached the intended release branch.
+
+**GitFlow**
+* Write a script that creates a release branch from `develop` and validates the branch naming and version metadata.
+* Implement a hotfix propagation checker that detects whether a hotfix commit exists in all required maintenance branches.
+* Write a utility that compares release and development branches and reports commits that have not been propagated.
+* Implement automated tests for GitFlow branch transitions, release closure, and hotfix synchronization.
+
+**Trunk-Based Development**
+* Write a CI script that blocks trunk updates when mandatory tests fail.
+* Implement a feature-flag configuration validator that detects expired flags, missing owners, and unsafe default values.
+* Write a tool that measures trunk build health, integration frequency, and the age of open feature branches.
+* Implement a rollout checker that verifies a feature flag's allowed environments and percentage-based rollout limits.
+
+**Feature Branches**
+* Write a script that identifies feature branches that have not been updated within a configurable period.
+* Implement a utility that reports commits in a feature branch that are not present in the target branch.
+* Write a branch synchronization checker that detects conflicts with the latest main branch before a pull request is merged.
+* Implement a cleanup workflow that protects open pull requests and active branches while deleting eligible merged branches.
+
+**Pull Requests**
+* Write a pull-request policy validator that checks required reviewers, linked work items, test results, and change descriptions.
+* Implement a tool that invalidates or rechecks approvals when new commits are pushed to a pull request.
+* Write a merge-queue simulation that validates pull requests against an updated target branch in sequence.
+* Implement an audit report that links pull requests, reviewed commits, CI runs, approvals, and resulting merge commits.
+
+**Code Reviews**
+* Write a CODEOWNERS validation script that checks whether changed files have the required owners.
+* Implement a review-metrics tool that calculates review turnaround time, time to first review, and unresolved-comment counts.
+* Write a pull-request analyzer that flags unusually large changes, unrelated file groups, and missing test modifications.
+* Implement a risk classifier that recommends reviewer groups based on file paths, security-sensitive components, and change metadata.
+
+**Merge vs Rebase**
+* Write a script that compares two branches and reports commits that would be introduced by a merge.
+* Implement a conflict-detection tool that checks whether a feature branch can be integrated with its target branch.
+* Write a recovery utility that uses reflog information to help locate commits after an accidental rebase or reset.
+* Implement automated tests that verify merge, squash, and rebase workflows preserve required source and review traceability.
+
+**Git Tags**
+* Write a release-tagging script that creates an annotated tag and validates semantic-version formatting.
+* Implement a release verification utility that compares a Git tag's commit SHA with the source revision recorded in a build artifact.
+* Write a script that audits tags for duplicates, unexpected movement, missing signatures, and inconsistent naming.
+* Implement a release manifest generator that records repository, tag, commit SHA, artifact digest, and build provenance.
+
+**Git Hooks**
+* Write a pre-commit hook that checks formatting and blocks commits containing prohibited file types.
+* Implement a commit-message validator for Conventional Commits with configurable scopes and allowed types.
+* Write a secret-scanning hook that detects likely credentials and avoids printing sensitive values in its findings.
+* Implement a cross-platform hook test harness that checks expected behavior under supported shells and operating systems.
+
+**Monorepo vs Polyrepo**
+* Write a dependency-graph tool that identifies projects affected by changes to a shared library in a monorepo.
+* Implement a CI selector that runs only affected tests while including all required transitive dependencies.
+* Write a repository analysis script that reports repository size, project count, ownership metadata, and build duration.
+* Implement a migration utility that maps selected directories to destination repositories while preserving commit history and reference metadata.
+
+**Release Branches**
+* Write a backport-tracking tool that verifies whether a production fix exists in all required release branches.
+* Implement a release-candidate validator that checks required commits, test results, version metadata, and artifact provenance.
+* Write a script that identifies divergence between a release branch and main and summarizes unpropagated fixes.
+* Implement a branch policy checker that enforces release freezes and permits only approved categories of changes.
+
+**Semantic Versioning**
+* Write a semantic-version parser that validates MAJOR.MINOR.PATCH values and pre-release identifiers.
+* Implement a version-bump utility that calculates the next version from structured commit messages.
+* Write an API compatibility checker that flags removed or modified public interfaces between releases.
+* Implement a dependency validator that detects incompatible version constraints across service manifests.
+
+**Commit Strategies**
+* Write a commit-message linter that enforces Conventional Commits and required issue references.
+* Implement a changelog generator that groups commits by feature, fix, breaking change, and maintenance category.
+* Write a script that identifies commits touching unrelated file groups or exceeding configurable change-size thresholds.
+* Implement a release audit tool that maps deployed artifact versions to commits, pull requests, authors, and approvals.
+
+**Repository Governance**
+* Write a repository audit script that checks branch protections, required reviews, status checks, and default-branch settings.
+* Implement a permissions report that identifies stale collaborators, excessive privileges, and inactive automation identities.
+* Write a governance compliance checker that validates CODEOWNERS coverage and required security workflows across repositories.
+* Implement an exception-tracking tool that records the reason, owner, expiry date, approval, and audit history for governance exceptions.
+
+**GitOps Repository Design**
+* Write a GitOps manifest validator that checks environment separation, image digest pinning, required labels, and deployment policies.
+* Implement a promotion utility that updates the image digest in a target environment through a reviewed Git change.
+* Write a configuration-drift report that compares desired manifests with supplied observed-resource snapshots.
+* Implement a repository structure validator that checks application ownership, environment overlays, shared platform configuration, and policy placement.
+* Write a rollout guard that stops further environment promotion when deployment health checks fail or required approvals are missing.

@@ -1,0 +1,31 @@
+* Write a Java Kafka consumer that commits offsets automatically.
+* Write a Java Kafka consumer with enable.auto.commit=false.
+* Implement manual offset commits using commitSync().
+* Implement manual offset commits using commitAsync().
+* Write a Java consumer that commits offsets only after successful message processing.
+* Implement a consumer that commits offsets for a batch of processed records.
+* Write a Java program that retrieves the committed offset for a consumer group.
+* Implement a Java utility that retrieves the current position of a consumer partition.
+* Write a Java program that retrieves the beginning and end offsets for all partitions of a topic.
+* Implement a Java utility that calculates consumer lag using committed offsets and end offsets.
+* Write a consumer that starts reading from the earliest available offset.
+* Write a consumer that starts reading from the latest offset when no committed offset exists.
+* Implement seekToBeginning() for selected Kafka partitions.
+* Implement seekToEnd() for selected Kafka partitions.
+* Write a Java consumer that seeks to a specific offset before processing records.
+* Implement a Kafka consumer that replays a configurable range of offsets.
+* Write a Java program that resets a consumer group's offsets using AdminClient.
+* Implement an AdminClient utility that moves a consumer group to the beginning of a topic.
+* Implement an AdminClient utility that moves a consumer group to the latest offsets.
+* Write a Spring Kafka listener using manual acknowledgment.
+* Implement a Spring Kafka listener that acknowledges a record only after successful database processing.
+* Write a Spring Kafka configuration using MANUAL_IMMEDIATE acknowledgment mode.
+* Implement a consumer that pauses a partition when downstream processing fails and resumes it after recovery.
+* Write a Java consumer that safely handles commit failures and retries the commit operation.
+* Implement asynchronous message processing while ensuring offsets are committed only in the correct partition order.
+* Write a transactional Kafka producer-consumer workflow that uses sendOffsetsToTransaction().
+* Implement exactly-once Kafka processing where consumed offsets and produced records are committed atomically.
+* Write a Java program that identifies consumer groups with high offset lag.
+* Implement a Kafka monitoring utility that compares committed offsets with log end offsets for every partition.
+* Write an integration test that verifies records are reprocessed when the consumer crashes before committing its offset.
+* Implement an integration test that verifies no records are skipped when offsets are committed only after successful processing.

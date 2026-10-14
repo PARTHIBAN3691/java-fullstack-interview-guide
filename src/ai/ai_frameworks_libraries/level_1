@@ -1,0 +1,116 @@
+**LangChain**
+* How would you build a RAG pipeline using LangChain components?
+* How would you create reusable prompt templates for multiple LLM providers?
+* How would you integrate a vector store retriever with a conversational chain?
+* How would you implement structured output validation when the model returns malformed data?
+* How would you add retries, timeouts, and fallback models to a LangChain application?
+* How would you test chains and tools independently without making real LLM API calls?
+* How would you manage conversation history without exceeding the context window?
+
+**LangGraph**
+* How would you design a stateful workflow with conditional branching in LangGraph?
+* How would you implement an agent that alternates between reasoning, tool execution, and response generation?
+* How would you persist and restore workflow state using checkpoints?
+* How would you implement human approval before executing a sensitive tool?
+* How would you handle node failures and retry only the affected step?
+* How would you prevent an agent from repeatedly cycling through the same nodes?
+* How would you test graph transitions and state updates deterministically?
+
+**LlamaIndex**
+* How would you build a document ingestion and retrieval pipeline using LlamaIndex?
+* How do vector indexes, keyword indexes, and summary indexes differ?
+* How would you configure metadata filters for retrieval?
+* How would you implement document updates and deletions in a LlamaIndex application?
+* How would you integrate a reranker into the retrieval pipeline?
+* How would you evaluate retrieval quality independently of answer generation?
+* How would you connect LlamaIndex to a relational database or an enterprise document repository?
+
+**Semantic Kernel**
+* How would you develop a custom plugin that exposes existing business logic to an AI application?
+* How would you register and invoke native and prompt-based functions?
+* How would you use dependency injection to manage model clients and plugin dependencies?
+* How would you implement function calling while validating arguments and enforcing authorization?
+* How would you manage conversation history and context across multiple interactions?
+* How would you test Semantic Kernel plugins without invoking an actual LLM?
+* How would you integrate Semantic Kernel into an existing .NET or Java-based enterprise architecture?
+
+**Hugging Face Transformers**
+* How would you select and load a pretrained model and tokenizer for a specific NLP task?
+* How would you fine-tune a pretrained model using a custom labeled dataset?
+* How would you use batching, padding, and truncation to improve inference throughput?
+* How would you choose between full fine-tuning and parameter-efficient fine-tuning methods?
+* How would you save, version, and reload model artifacts for deployment?
+* How would you use quantization to reduce memory consumption?
+* How would you evaluate a model using task-appropriate metrics and a held-out dataset?
+
+**PyTorch**
+* How would you implement a complete training loop using a dataset, loss function, optimizer, and backpropagation?
+* How would you diagnose exploding or vanishing gradients?
+* How would you use GPU acceleration and mixed-precision training?
+* How would you save checkpoints and resume training after interruption?
+* How would you prevent data leakage between training, validation, and test sets?
+* How would you profile a PyTorch model to identify CPU, GPU, or data-loading bottlenecks?
+* How would you prepare a PyTorch model for production inference?
+
+**TensorFlow**
+* How would you build and train a neural network using Keras?
+* How would you use `tf.data` to build an efficient input pipeline?
+* How would you implement early stopping and checkpointing?
+* How would you diagnose GPU memory usage and training bottlenecks?
+* How would you save and serve a trained TensorFlow model?
+* How would you use TensorFlow Lite for resource-constrained devices?
+* How would you compare TensorFlow training and inference performance with an equivalent PyTorch implementation?
+
+**scikit-learn**
+* How would you build a complete machine-learning pipeline with preprocessing, feature transformation, and model training?
+* How would you use cross-validation and hyperparameter search to compare models?
+* How would you prevent data leakage when scaling or encoding features?
+* How would you handle class imbalance in a classification problem?
+* How would you evaluate classification models using precision, recall, F1-score, and ROC-AUC?
+* How would you serialize and load a trained model for inference?
+* How would you build reproducible experiments using fixed random seeds and versioned datasets?
+
+**ONNX Runtime**
+* How would you export a model from PyTorch or TensorFlow to ONNX and validate its output?
+* How would you select an execution provider for CPU, GPU, or specialized hardware?
+* How would you compare ONNX inference latency and memory usage with the source framework?
+* How would you handle unsupported operators during model conversion?
+* How would you optimize an ONNX graph for inference?
+* How would you use dynamic input shapes while maintaining model compatibility?
+* How would you deploy ONNX Runtime behind a REST API with batching and concurrency controls?
+
+**vLLM**
+* How would you deploy an LLM using vLLM's OpenAI-compatible serving interface?
+* How would continuous batching improve throughput compared with processing requests individually?
+* How would you configure maximum model length, batch token limits, and GPU memory utilization?
+* How would you handle request cancellation and generation timeouts?
+* How would you monitor queue depth, token throughput, and GPU memory usage?
+* How would you choose between quantized and full-precision model serving?
+* How would you load-test vLLM under mixed short-prompt and long-context workloads?
+
+**Ollama**
+* How would you integrate Ollama with a local RAG application?
+* How would you configure model parameters such as temperature, context length, and output limits?
+* How would you run an Ollama model behind an application service rather than expose it directly?
+* How would you manage local model storage and remove unused models?
+* How would you evaluate response latency and memory usage across different local models?
+* How would you use structured output or tool-calling capabilities when supported by the selected model?
+* How would you secure access to a local Ollama endpoint in a shared development environment?
+
+**Model Context Protocol (MCP)**
+* How would you implement an MCP server that exposes internal business data through tools and resources?
+* How do MCP tools differ from MCP resources, and when would you use each?
+* How would you configure and manage MCP server connections in an AI application?
+* How would you validate tool arguments and return structured results?
+* How would you handle MCP server timeouts, connection failures, and protocol errors?
+* How would you implement authentication and authorization for an MCP server?
+* How would you test MCP tools independently and in end-to-end agent workflows?
+
+**Framework Selection and Trade-offs**
+* How would you choose between LangChain, LangGraph, and LlamaIndex for an enterprise RAG application?
+* When would you use Semantic Kernel instead of a Python-oriented orchestration framework?
+* How would you decide between PyTorch and TensorFlow for model development?
+* When would ONNX Runtime be preferable to running inference in the original model framework?
+* How would you choose between vLLM, Ollama, and a managed model API for production serving?
+* How would you compare operational costs, hardware requirements, licensing, and developer productivity?
+* How would you design a proof of concept that evaluates quality, latency, reliability, and maintainability?

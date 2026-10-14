@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK for Java 2.x to create a DynamoDB table with a partition key and a sort key.
+* Write a Java program to insert an item into DynamoDB using `PutItem`.
+* Write a Java program to retrieve an item using `GetItem`.
+* Write a Java program to update selected attributes using `UpdateItem`.
+* Write a Java program to delete an item using `DeleteItem`.
+* Write a Java program using `DynamoDbEnhancedClient` to map a Java POJO to a DynamoDB table.
+* Write a Java program to query orders by customer ID and sort key using a key condition expression.
+* Write a Java program to paginate DynamoDB query results using `lastEvaluatedKey` or the Enhanced Client's page abstractions.
+* Write a Java program to retrieve items using a `FilterExpression` and explain its effect on read capacity consumption.
+* Write a Java program to implement a conditional update that changes an order status only if its current status is `PENDING`.
+* Write a Java program to perform batch writes and retry unprocessed items with exponential backoff.
+* Write a Java program to perform a transactional update that modifies an order and reserves inventory atomically.
+* Write a Java program to implement optimistic locking with a version attribute.
+* Write a Java program to query a Global Secondary Index using AWS SDK for Java 2.x.
+* Write a Java program to scan a table safely using pagination and a configurable page size.
+* Write a Java program to enable and consume DynamoDB Streams using the appropriate AWS service integration.
+* Write a Spring Boot repository and service layer for CRUD operations on a DynamoDB `Product` entity.
+* Write a Java program to handle `ProvisionedThroughputExceededException` and implement bounded retries with exponential backoff.
+* Write a Java program to implement idempotent event processing by storing event identifiers in DynamoDB with conditional writes.
+* Design and implement a Spring Boot order service using DynamoDB that supports customer order queries, pagination, conditional status updates, validation, exception handling, and unit tests.

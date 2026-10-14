@@ -1,0 +1,21 @@
+
+* How would you design a highly available EKS architecture across multiple Availability Zones?
+* How would you choose between managed node groups, self-managed nodes, and Fargate for EKS workloads?
+* How would you design a production Kubernetes platform for multiple Java microservices?
+* How would you implement zero-downtime deployments for Spring Boot applications running on EKS?
+* How would you implement blue-green or canary deployments using Kubernetes and an appropriate deployment tool?
+* How would you design autoscaling across Pods and worker nodes to handle unpredictable traffic?
+* How would you troubleshoot a situation where Pods remain in `Pending` status even though the EKS cluster is healthy?
+* How would you diagnose JVM memory issues, container OOM kills, CPU throttling, and garbage collection pauses in EKS?
+* How would you calculate appropriate JVM heap settings when a Java container has a strict Kubernetes memory limit?
+* How would you secure EKS using IAM, Kubernetes RBAC, network controls, encryption, and least-privilege access?
+* How would you implement secure communication between microservices running in different namespaces?
+* How would you design secrets management using AWS Secrets Manager or Systems Manager Parameter Store?
+* How would you troubleshoot DNS resolution and service discovery issues within an EKS cluster?
+* How would you design persistent storage for stateful workloads using EBS CSI and EFS CSI drivers?
+* How would you implement centralized observability using CloudWatch, Prometheus, Grafana, and distributed tracing?
+* How would you perform a Kubernetes cluster upgrade while minimizing application downtime?
+* How would you implement multi-tenant workload isolation in a shared EKS cluster?
+* How would you optimize EKS costs using workload rightsizing, autoscaling, Spot Instances, and suitable compute options?
+* How would you design disaster recovery for EKS across AWS regions?
+* How would you decide whether a Java microservices platform should run on EKS, ECS, or AWS Lambda?

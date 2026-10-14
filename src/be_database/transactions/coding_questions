@@ -1,0 +1,30 @@
+* Write a JDBC program that disables autocommit, executes two updates, and commits both changes together.
+* Write a JDBC program that rolls back all changes when an exception occurs during a transaction.
+* Implement a Spring Boot service method using @Transactional to create an order and its order items atomically.
+* Implement a service method that uses rollbackFor to roll back a transaction when a checked exception occurs.
+* Write a Spring Boot example demonstrating REQUIRED and REQUIRES_NEW transaction propagation.
+* Implement a test that verifies an outer transaction rollback does not undo a committed REQUIRES_NEW transaction.
+* Write a Spring Boot example that demonstrates why self-invocation can bypass transactional proxy behavior.
+* Implement a transaction timeout for a long-running service operation.
+* Write a Spring Data JPA entity using @Version to support optimistic locking.
+* Implement optimistic-lock conflict handling and return an appropriate response when concurrent updates occur.
+* Write a JDBC method that uses SELECT ... FOR UPDATE to lock an account row before updating its balance.
+* Implement an atomic inventory update that succeeds only when sufficient stock is available.
+* Write SQL and Java code to transfer money between two accounts while preserving atomicity and consistency.
+* Implement an idempotency-key mechanism that prevents duplicate payment requests from creating multiple transactions.
+* Write a Java service that retries a transaction after a transient serialization failure with a bounded retry policy.
+* Implement retry handling for deadlock failures while ensuring that the complete transaction is retried.
+* Write a Spring Boot integration test that runs concurrent updates and verifies that no lost updates occur.
+* Implement a service that persists an order and records an outbox event in the same database transaction.
+* Write a scheduled Spring Boot worker that publishes outbox events and safely handles duplicate delivery.
+* Implement an idempotent Kafka consumer that updates the database and records processed message IDs transactionally.
+* Write a Java example that demonstrates the difference between flush and commit using JPA.
+* Implement a service that uses TransactionTemplate for programmatic transaction management.
+* Configure transaction management for two DataSources and demonstrate the limitations of a local transaction manager.
+* Implement a saga workflow for order creation with payment, inventory reservation, and compensating actions.
+* Write a Java method that handles an uncertain transaction outcome after a connection failure without blindly repeating the operation.
+* Implement a batch-processing service that commits records in configurable chunks and resumes after failure.
+* Write an integration test that verifies transaction rollback when a database constraint violation occurs.
+* Implement a concurrency test that demonstrates a lost update under one isolation strategy and prevents it under another.
+* Write a service that separates database transaction work from an external HTTP call while maintaining reliable business state.
+* Implement transaction metrics that record duration, rollback count, timeout count, and deadlock-related failures.

@@ -1,0 +1,30 @@
+* Explain the relationship between semantic HTML, the accessibility tree, and assistive technologies.
+* How does the browser compute an element's accessible name?
+* What is the accessible name computation algorithm?
+* How do aria-labelledby, aria-label, and native HTML labels interact when determining an accessible name?
+* How can incorrect ARIA roles and states make an otherwise semantic component inaccessible?
+* What is the difference between a role, an accessible name, and an accessible description?
+* How do implicit and explicit ARIA roles differ?
+* What are the risks of overriding native HTML semantics with ARIA roles?
+* How do aria-expanded, aria-controls, and aria-haspopup support accessible interactive components?
+* How would you implement an accessible modal dialog using the dialog element?
+* What is the difference between dialog and a custom modal implemented with div elements?
+* How should keyboard focus be managed when a modal opens and closes?
+* What are focus traps, and when are they appropriate?
+* How do inert and aria-hidden differ when managing background content around a modal?
+* How do live regions work, and when should aria-live be used?
+* What is the difference between aria-live="polite" and aria-live="assertive"?
+* How can excessive live-region announcements harm the screen reader experience?
+* How would you implement an accessible autocomplete or combobox?
+* What accessibility requirements apply to custom tabs, menus, and listboxes?
+* How do keyboard interaction patterns differ between a menu and a list of ordinary links?
+* How can Shadow DOM and web components affect accessibility?
+* What are accessible element internals, and how can they help custom elements expose semantics?
+* How do accessible names and descriptions differ for complex data visualizations?
+* How can HTML structure support accessible error summaries in long forms?
+* How do you make dynamically inserted content discoverable to screen readers?
+* What is the difference between WCAG Level A, AA, and AAA conformance?
+* What are the four WCAG principles: perceivable, operable, understandable, and robust?
+* How do WCAG requirements relate to semantic HTML and keyboard accessibility?
+* What limitations do automated accessibility scanners have compared with manual testing?
+* How would you establish an accessibility strategy for a large enterprise web application?

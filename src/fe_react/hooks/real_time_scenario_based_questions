@@ -1,0 +1,30 @@
+* A component repeatedly calls an API after every render. How would you identify and fix the issue?
+* An API response overwrites newer data with an older response. How would you solve this using Hooks?
+* A search input should call an API only after the user stops typing. How would you implement this?
+* A component displays stale state inside an interval callback. How would you fix it?
+* A timer continues running after a component is removed. How would you handle cleanup?
+* A component re-renders whenever its parent re-renders. How would you investigate whether useMemo or useCallback helps?
+* A Context update causes many unrelated components to re-render. How would you optimize it?
+* Two state variables must always be updated together. Would you use useState or useReducer, and why?
+* A form contains many fields with complex validation. How would you manage its state using Hooks?
+* A component must read and update localStorage while keeping the UI synchronized. How would you design a custom Hook?
+* A component must track the previous value of a prop. How would you implement this using useRef?
+* A page needs to detect whether the user has scrolled past a certain position. How would you create a reusable Hook?
+* A component must subscribe to WebSocket messages and unsubscribe when unmounted. How would you implement it?
+* Multiple components need the same API-fetching logic. How would you extract it into a custom Hook?
+* A component enters an infinite render loop after adding a dependency to useEffect. How would you troubleshoot it?
+* A child component receives a callback that changes on every render. How would you address the performance issue?
+* A component must focus an input immediately after rendering. Which Hook would you use?
+* A dashboard needs to poll several APIs at different intervals. How would you structure the Hooks?
+* A component must cancel an in-progress fetch when the user changes the selected item. How would you implement it?
+* A component must respond to browser resize events without leaking event listeners. How would you build a Hook?
+* A shared custom Hook unexpectedly causes duplicated network requests. How would you investigate the behavior?
+* A React application must support server-side rendering, but a Hook accesses window during initialization. How would you fix it?
+* A component needs to defer an expensive filtering operation while keeping typing responsive. Which Hook would you choose?
+* A shopping cart must update the UI immediately before the server confirms the update. How would you use optimistic state?
+* A component's effect runs twice during development. How would you determine whether this is expected behavior?
+* A component depends on an object created during rendering, causing useEffect to run repeatedly. How would you resolve it?
+* A custom Hook returns a function that unexpectedly uses outdated props. How would you correct it?
+* An external store updates frequently, but React components must remain consistent. Which Hook would you consider?
+* A component needs to expose a limited imperative API to its parent. How would you implement it?
+* A large component has many interdependent state updates. How would you refactor it using custom Hooks and useReducer?

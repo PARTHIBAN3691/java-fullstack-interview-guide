@@ -1,0 +1,30 @@
+* How does Kafka's distributed architecture work from producer to consumer?
+* How does Kafka distribute partitions across brokers?
+* How do you decide the number of partitions for a topic?
+* How do you choose an appropriate replication factor for production?
+* How does Kafka elect a partition leader when a broker fails?
+* How does Kafka handle broker failures without losing messages?
+* What is the role of min.insync.replicas in Kafka reliability?
+* What is the difference between acks=0, acks=1, and acks=all?
+* How do producer acknowledgments interact with replication?
+* How does Kafka maintain ordering within a partition?
+* How do you design a topic to preserve ordering for a specific business entity?
+* How does Kafka assign partitions to consumers in a consumer group?
+* What happens when the number of consumers exceeds the number of partitions?
+* What happens when a consumer joins or leaves a consumer group?
+* What is a consumer group rebalance, and how does it affect processing?
+* What is the difference between range, round-robin, and sticky partition assignment strategies?
+* How does Kafka's partitioning strategy affect throughput and ordering?
+* How do you design topic naming conventions for enterprise applications?
+* How do you separate topics for different environments and business domains?
+* How does Kafka store messages on disk?
+* What is the role of the commit log in Kafka architecture?
+* How do retention time and retention size affect Kafka storage?
+* How does log compaction work, and when should you use it?
+* What is the difference between at-most-once, at-least-once, and exactly-once processing?
+* How do Kafka producers and consumers recover from temporary network failures?
+* How do you secure Kafka communication using TLS and SASL?
+* How do you implement access control using Kafka ACLs?
+* How do you monitor broker health, partition availability, and consumer lag?
+* How do you design Kafka topics for multiple microservices?
+* How do you integrate Kafka architecture with Spring Boot applications?

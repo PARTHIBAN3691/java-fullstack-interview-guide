@@ -1,0 +1,30 @@
+* How do you implement range-based sharding for a large customer database?
+* How do you implement hash-based sharding for an order management system?
+* How does consistent hashing distribute data across multiple database nodes?
+* How do virtual nodes help improve shard distribution?
+* How do you select a shard based on a customer ID in a Java application?
+* How do you implement shard routing in a Spring Boot application?
+* What is the role of a shard registry or shard metadata table?
+* How do you configure multiple DataSources in Spring Boot for different shards?
+* How do you implement dynamic DataSource routing using AbstractRoutingDataSource?
+* How do you manage connection pools for multiple shards?
+* How do you generate globally unique IDs across multiple shards?
+* How do Snowflake-style IDs help in sharded systems?
+* How do you handle unique constraints when data is distributed across shards?
+* How do you design indexes for tables inside individual shards?
+* How do you perform pagination across multiple shards?
+* How do you execute aggregate queries such as COUNT, SUM, and AVG across shards?
+* How do you implement cross-shard search in a Java application?
+* How do you handle JOIN operations when related records reside on different shards?
+* How do you manage database transactions involving multiple shards?
+* How do you implement retries when one shard becomes temporarily unavailable?
+* How do you detect an overloaded shard and redistribute traffic?
+* How do you perform shard rebalancing with minimal downtime?
+* How do you migrate data from one shard to another without losing writes?
+* How do you maintain schema consistency across all shards?
+* How do you apply database migrations across a sharded environment?
+* How do you monitor shard-level latency, connection usage, and query performance?
+* How do you handle failover when a shard's primary database becomes unavailable?
+* How do you test shard routing and data isolation in Spring Boot?
+* How do you implement tenant-based sharding for a multi-tenant application?
+* How do you decide whether a database requires sharding or whether indexing and read replicas are sufficient?

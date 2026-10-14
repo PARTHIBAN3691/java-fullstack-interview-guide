@@ -1,0 +1,30 @@
+* An employee table stores department name and department location for every employee, causing repeated data. How would you normalize the schema?
+* A student enrollment table stores multiple course IDs in a single column. How would you redesign it to satisfy 1NF?
+* An order table stores customer name and address for every order, and customer address updates require modifying many rows. How would you eliminate the update anomaly?
+* A table uses a composite primary key, but some columns depend on only part of that key. How would you identify and resolve the 2NF violation?
+* A product table stores category name and category description alongside every product. How would you identify a transitive dependency and normalize the design?
+* A sales database contains duplicate customer and product information, causing inconsistent reports. How would you redesign the schema and migrate existing records?
+* A table satisfies 3NF but violates BCNF because of overlapping candidate keys. How would you decompose the relation?
+* A proposed BCNF decomposition loses the ability to enforce a functional dependency without joining tables. How would you evaluate whether 3NF is a better choice?
+* A normalized order database requires several joins to display a customer order summary, and the API response is slow. How would you optimize the design without creating data inconsistencies?
+* A reporting dashboard performs expensive joins across many normalized tables. Would you denormalize, introduce materialized reporting tables, or optimize queries? Explain your approach.
+* A legacy database stores multiple phone numbers in a single field. How would you normalize the data while preserving all existing records?
+* A project assignment table repeats employee, project, and department details. How would you identify candidate keys and decompose the table?
+* A customer can have multiple addresses and multiple contact numbers, and the current schema produces duplicate combinations. How would you model these independent multivalued attributes?
+* A database migration splits a large customer table into customer and customer-address tables. How would you preserve relationships, prevent data loss, and validate the migration?
+* An application inserts an order and duplicates customer details in the same table. How would you redesign the schema and update the Java persistence layer?
+* A developer creates one large table to avoid joins, but updates to product details become inconsistent. How would you explain the trade-offs and propose a better schema?
+* A normalized schema introduces multiple foreign-key relationships, and application inserts fail because of constraint violations. How would you investigate the data model and transaction sequence?
+* A business rule states that each employee belongs to one department, but the schema allows multiple departments per employee. How would you enforce the rule correctly?
+* A table contains duplicate records because its natural key was not identified. How would you discover the candidate key and clean up the data safely?
+* An application needs to support historical customer addresses while preserving normalized customer data. How would you model address history?
+* A normalized schema causes an e-commerce product listing API to execute many queries. How would you improve read performance while retaining a reliable source of truth?
+* A reporting process copies normalized data into a denormalized table every night, but reports become stale. How would you redesign the synchronization process?
+* A team wants to denormalize customer information into every order record to improve performance. How would you assess the impact on storage, updates, and data consistency?
+* A database has a table with several nullable columns representing different types of entities. How would you determine whether the table should be decomposed?
+* A schema redesign changes primary keys and foreign keys in a production application. How would you migrate the database and Java entities without disrupting existing requests?
+* Two normalized tables are joined frequently using columns without appropriate indexes. How would you distinguish a normalization issue from an indexing issue?
+* A developer decomposes a table into smaller tables, but joining them produces unexpected duplicate rows. How would you identify a lossy decomposition or incorrect join condition?
+* A system stores independent employee skills and certifications in the same table, producing unnecessary combinations. How would you determine whether 4NF applies?
+* A Java application uses JPA relationships that do not match the normalized database schema. How would you correct entity mappings and transaction handling?
+* How would you review and redesign a poorly normalized production database while balancing integrity, query performance, and migration risk?

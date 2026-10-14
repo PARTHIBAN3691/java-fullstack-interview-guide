@@ -1,0 +1,104 @@
+# Secrets & Identity Management — Level 1 (Medium)
+
+## Secrets Management
+* How would you securely provide database credentials to a Spring Boot application?
+* How would you manage secrets separately across development, testing, staging, and production?
+* How would you prevent secrets from appearing in application logs, exception messages, and CI/CD output?
+* How would you detect and respond to secrets accidentally committed to Git?
+
+## HashiCorp Vault
+* How does an application authenticate with Vault?
+* How do Vault tokens, policies, and secret engines work together?
+* How does Vault's KV secrets engine differ from its database secrets engine?
+* How would you configure an application to retrieve secrets securely from Vault?
+
+## AWS Secrets Manager
+* How would an EC2 instance, ECS task, or Lambda function retrieve a secret securely?
+* How does AWS Secrets Manager integrate with AWS KMS?
+* How do secret versions and staging labels support rotation?
+* How would you configure automatic rotation for a database credential?
+
+## Azure Key Vault
+* How would a Spring Boot application running in Azure retrieve a secret using managed identity?
+* What is the difference between Key Vault access policies and Azure RBAC?
+* How do soft delete and purge protection help protect secrets?
+* How would you configure secret versioning and automatic rotation in Azure Key Vault?
+
+## Google Secret Manager
+* How would a Google Cloud workload retrieve a secret without storing credentials in the application?
+* How do secret versions and version aliases support safe deployments?
+* How would you grant a service account access to a single secret rather than an entire project?
+* How would you audit secret access and detect unexpected usage?
+
+## Secret Rotation
+* How would you rotate a database password without restarting the application?
+* How would you manage old and new credentials during a rotation window?
+* How can an application detect and reload a newly rotated secret?
+* What metrics and alerts would you configure to detect failed rotations?
+
+## Dynamic Secrets
+* How can Vault generate temporary database credentials?
+* How should an application handle a dynamic secret approaching expiration?
+* What happens when a dynamic secret lease expires or is revoked?
+* How would you configure a dynamic credential with minimum required database privileges?
+
+## Encryption
+* How does TLS protect data exchanged between a client and a server?
+* Why is AES commonly used for application data encryption?
+* How does envelope encryption work?
+* How would you encrypt sensitive customer data stored in a relational database?
+
+## KMS — Key Management Service
+* How does envelope encryption reduce the need to send large amounts of data to a KMS?
+* How does an application use a KMS to encrypt and decrypt data?
+* How do IAM policies control access to encryption keys?
+* What is the difference between disabling a key and scheduling it for deletion?
+
+## IAM — Identity and Access Management
+* What is the difference between identity-based and resource-based policies?
+* How would you separate IAM permissions across development, testing, and production?
+* How would you troubleshoot an access-denied error when an identity appears to have the required permission?
+* How would you grant a microservice access to one resource without granting broad cloud permissions?
+
+## RBAC — Role-Based Access Control
+* How would you design roles for developers, operators, and auditors?
+* Why is assigning permissions through roles preferable to assigning them individually?
+* How would you manage role inheritance and permission changes?
+* How would you prevent developers from accessing production secrets unnecessarily?
+
+## ABAC — Attribute-Based Access Control
+* How would you use user, resource, and environment attributes to authorize access?
+* How would you implement tenant-based access policies using ABAC?
+* How would you troubleshoot a request denied by an attribute-based policy?
+* How would you prevent unauthorized users from changing attributes used in access decisions?
+
+## Service Accounts
+* How would you assign least-privilege permissions to a service account?
+* How would you manage credentials for a service account used by a scheduled job?
+* How would you audit which applications use a particular service account?
+* How would you replace long-lived service account keys with managed identity or federation?
+
+## Workload Identity
+* How does a Kubernetes workload authenticate to a cloud provider without a static key?
+* How does a cloud provider validate the identity of an external workload?
+* What is the relationship between a Kubernetes service account and a cloud IAM identity?
+* How would you troubleshoot a workload that cannot obtain cloud credentials?
+
+## Short-Lived Credentials
+* How should an application renew credentials before they expire?
+* How would you handle API requests that fail because an access token has expired?
+* What is the difference between refreshing a token and obtaining new credentials?
+* How would you handle clock skew when validating expiring credentials?
+
+## Certificate Management
+* How does a client validate a server certificate during a TLS handshake?
+* What is the difference between a self-signed certificate and a CA-issued certificate?
+* How would you automate certificate renewal for a web application?
+* How would you troubleshoot a certificate-chain or hostname-mismatch error?
+
+## PKI — Public Key Infrastructure
+* How does a CA establish trust in a certificate?
+* What is the difference between a certificate chain and a trust store?
+* What are CRLs and OCSP, and how do they support certificate revocation?
+* How does mutual TLS (mTLS) use certificates to authenticate both the client and server?
+

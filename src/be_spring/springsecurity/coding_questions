@@ -1,0 +1,30 @@
+* Create a Spring Boot application with HTTP Basic authentication and protect selected REST endpoints.
+* Configure a SecurityFilterChain that permits public endpoints and requires authentication for all other endpoints.
+* Implement in-memory authentication with separate USER and ADMIN roles.
+* Create a database-backed authentication system using UserDetailsService and Spring Data JPA.
+* Implement user registration with BCryptPasswordEncoder and password validation.
+* Create a custom UserDetails implementation that loads roles and authorities from a database.
+* Implement a custom AuthenticationProvider for authenticating users against a custom data source.
+* Configure custom AuthenticationEntryPoint and AccessDeniedHandler implementations for REST APIs.
+* Implement role-based authorization using hasRole() and hasAuthority().
+* Create a service method protected by @PreAuthorize that permits access only to authorized users.
+* Implement resource-level authorization that allows users to access only their own records unless they have an administrative authority.
+* Configure a stateless REST API using SessionCreationPolicy.STATELESS.
+* Build a JWT authentication system with token generation, signature verification, expiry validation, and authorization.
+* Configure Spring Security OAuth2 Resource Server to validate JWTs issued by an external identity provider.
+* Implement a custom JWT claim converter that maps identity-provider roles into Spring Security authorities.
+* Configure OAuth 2.0 login with an external OpenID Connect identity provider.
+* Implement OAuth 2.0 client credentials for service-to-service communication.
+* Configure CORS for a REST API while restricting allowed origins, methods, and headers.
+* Implement CSRF protection for a session-based web application.
+* Write a custom security filter and register it at the appropriate position in the security filter chain.
+* Configure multiple SecurityFilterChain beans for public APIs, protected APIs, and actuator endpoints.
+* Implement session fixation protection and concurrent session restrictions.
+* Create a secure password-reset workflow using expiring, single-use tokens.
+* Implement a custom authorization decision based on user permissions and the requested resource.
+* Write MockMvc tests for authenticated requests, unauthenticated requests, and forbidden requests.
+* Write security tests for @PreAuthorize methods using spring-security-test.
+* Test JWT validation failures involving expired tokens, invalid signatures, and incorrect issuer or audience claims.
+* Implement a mechanism to invalidate user sessions when an account is disabled or a password is changed.
+* Configure security event logging without recording passwords, access tokens, or other sensitive credentials.
+* Build a production-ready Spring Security application with database authentication, JWT validation, role-based access control, resource ownership checks, secure error responses, and comprehensive security tests.

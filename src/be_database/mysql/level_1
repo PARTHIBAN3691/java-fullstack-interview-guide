@@ -1,0 +1,30 @@
+* How do you connect a Java application to MySQL using JDBC?
+* What is the difference between Statement, PreparedStatement, and CallableStatement?
+* How does PreparedStatement help prevent SQL injection?
+* How do you manage database connections in a Spring Boot application?
+* How do you configure MySQL connectivity in application.properties or application.yml?
+* What is the role of MySQL Connector/J in a Java application?
+* How do you implement CRUD operations using JDBC?
+* How do you handle SQLException and SQLState values in Java?
+* How does Spring Data JPA interact with MySQL?
+* What is the difference between JdbcTemplate, JPA, and Hibernate?
+* How do you configure connection pooling using HikariCP?
+* What are auto-commit and manual transaction management in JDBC?
+* How do you implement transaction management using @Transactional in Spring Boot?
+* What is the difference between commit and rollback?
+* What are the different transaction isolation levels supported by MySQL InnoDB?
+* How does InnoDB handle concurrent transactions?
+* What is the difference between READ COMMITTED and REPEATABLE READ in MySQL?
+* How do you identify and resolve deadlocks in MySQL?
+* What is the difference between row-level locking and table-level locking?
+* How do you use EXPLAIN to analyze a MySQL query?
+* What is the difference between a single-column index and a composite index?
+* How does the order of columns in a composite index affect query performance?
+* What is a covering index, and how does it improve query performance?
+* What is the difference between an index scan and a full table scan?
+* How do you optimize a query that uses multiple joins?
+* What is the difference between a correlated subquery and a join?
+* How do you implement pagination using LIMIT and OFFSET?
+* How do you use window functions such as ROW_NUMBER(), RANK(), and DENSE_RANK()?
+* What is the difference between a CTE and a derived table in MySQL?
+* How do you back up and restore a MySQL database?

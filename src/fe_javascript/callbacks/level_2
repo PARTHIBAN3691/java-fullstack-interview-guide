@@ -1,0 +1,30 @@
+* Explain the execution flow of nested synchronous and asynchronous callbacks.
+* How does the event loop schedule callbacks registered by timers and event listeners?
+* What is the difference between a task queue and a microtask queue when callbacks are executed?
+* How can deeply nested callbacks affect code readability and maintainability?
+* How would you design a callback-based API that supports reliable error handling?
+* How would you implement an error-first callback pattern from scratch?
+* How can you guarantee that a callback is invoked exactly once?
+* How would you handle callback reentrancy, where a callback triggers the same operation again?
+* What is callback starvation, and under what circumstances can it occur?
+* How can recursive callback execution cause stack overflow?
+* How would you implement sequential asynchronous operations using callbacks?
+* How would you implement parallel asynchronous operations using callbacks?
+* How would you implement a callback-based task queue with concurrency limits?
+* How would you handle cancellation in a callback-based asynchronous API?
+* How can you prevent race conditions when multiple callbacks update shared state?
+* How would you implement a timeout mechanism for a callback-based operation?
+* How can you implement retry logic with callbacks and exponential backoff?
+* How would you handle partial failures when executing multiple callback-based operations?
+* How can you propagate errors through several levels of nested callbacks?
+* What are the risks of throwing exceptions inside asynchronous callbacks?
+* How would you convert a callback API that can return synchronously into a predictable asynchronous API?
+* How would you design a callback API that supports optional callbacks and default behavior?
+* How can callback functions cause memory leaks through closures and retained references?
+* How would you implement a once-only callback wrapper?
+* How would you implement a callback-based version of Promise.all()?
+* How would you implement a callback-based version of Promise.race()?
+* How can you bridge callback-based APIs with async/await?
+* What are the challenges of testing asynchronous callback-based functions?
+* How would you measure and optimize performance in a callback-heavy application?
+* How would you refactor a large callback-based codebase into a more maintainable asynchronous architecture?

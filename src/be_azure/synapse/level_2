@@ -1,0 +1,30 @@
+* How would you design an enterprise data analytics architecture using Azure Synapse Analytics?
+* How do you choose between Synapse dedicated SQL pools, serverless SQL pools, and Spark pools?
+* How would you design a scalable data warehouse for billions of records?
+* How do you choose distribution keys to minimize data movement in a dedicated SQL pool?
+* How would you troubleshoot data skew in a distributed Synapse SQL workload?
+* How do you optimize large joins, aggregations, and complex analytical queries in Synapse?
+* How would you diagnose excessive data movement during distributed query execution?
+* How do you design partitioning and distribution strategies for large fact and dimension tables?
+* How do you optimize columnstore row groups and compression for analytical workloads?
+* How would you implement incremental loading and change data capture for large datasets?
+* How do you design an idempotent data pipeline that can safely restart after partial failure?
+* How would you implement data quality checks and reconciliation across ingestion pipelines?
+* How do you coordinate multiple pipelines while preventing resource contention?
+* How would you optimize Spark workloads for memory usage, partitioning, and shuffle performance?
+* How do you decide between Spark transformations and SQL-based transformations in Synapse?
+* How would you implement slowly changing dimensions in a Synapse data warehouse?
+* How do you design a medallion architecture using Azure Data Lake Storage and Synapse?
+* How would you implement data lineage and metadata management across Synapse pipelines?
+* How do you secure sensitive analytical data using column-level security, row-level security, and data masking?
+* How would you design private networking and identity controls for a Synapse workspace?
+* How do you securely connect Java microservices to Synapse without storing database credentials?
+* How would you manage JDBC connection pools and concurrency for high-volume Java workloads?
+* How do you prevent SQL injection in Java applications querying Synapse?
+* How would you optimize Synapse costs across SQL pools, Spark pools, storage, and pipeline execution?
+* How do you design workload isolation for ETL jobs and interactive analytical queries?
+* How would you troubleshoot intermittent query failures caused by resource limits or workload contention?
+* How do you implement disaster recovery and business continuity for Synapse workspaces and data?
+* How would you deploy Synapse artifacts consistently across development, testing, and production?
+* How do you design monitoring for pipeline latency, data freshness, query performance, and data quality?
+* How would you build a secure and cost-efficient enterprise analytics platform integrating Synapse with Java applications?

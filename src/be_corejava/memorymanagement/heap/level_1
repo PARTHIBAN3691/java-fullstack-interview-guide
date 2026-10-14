@@ -1,0 +1,21 @@
+
+* Explain the different regions of Java heap memory.
+* What is the difference between the Young Generation and the Old Generation?
+* What are Eden space, Survivor spaces, and Tenured space?
+* How are newly created objects allocated in the heap?
+* What happens when an object survives multiple garbage collection cycles?
+* What is object promotion in heap memory?
+* What is the difference between Minor GC, Major GC, and Full GC?
+* How does the JVM determine whether an object is eligible for garbage collection?
+* Can two reference variables point to the same heap object?
+* What happens to heap objects when a local reference variable goes out of scope?
+* How does the heap behave when multiple threads create objects concurrently?
+* What is a memory leak in Java if garbage collection is automatic?
+* What is the difference between heap exhaustion and a memory leak?
+* What causes `java.lang.OutOfMemoryError: Java heap space`?
+* How do `-Xms` and `-Xmx` affect application performance?
+* What is the relationship between heap size and garbage collection frequency?
+* How does the JVM use thread-local allocation buffers (TLABs)?
+* What is escape analysis, and how can it influence object allocation?
+* Can the JVM optimize away an object allocation?
+* How would you inspect heap usage using Java monitoring tools?

@@ -1,0 +1,30 @@
+* How do you implement global exception handling in a Spring Boot REST API?
+* How do you create a custom exception class for business errors?
+* How do you map different exception types to appropriate HTTP status codes?
+* How do you handle ResourceNotFoundException in a REST API?
+* How do you handle validation errors using @Valid and @Validated?
+* How do you handle MethodArgumentNotValidException globally?
+* How do you handle ConstraintViolationException in Spring Boot?
+* How do you customize error responses for invalid JSON request bodies?
+* How do you handle HttpMessageNotReadableException?
+* How do you handle missing request parameters and type conversion errors?
+* How do you handle MethodNotAllowedException and unsupported HTTP methods?
+* How do you create a standard error response DTO for all REST endpoints?
+* How do you include an error code, message, timestamp, and request path in an error response?
+* How do you implement field-level validation error messages?
+* How do you handle database constraint violations in a REST API?
+* How do you handle duplicate records and return HTTP 409 Conflict?
+* How do you handle exceptions thrown by service and repository layers?
+* How do you propagate exceptions across controller, service, and repository layers?
+* How do you distinguish business exceptions from technical exceptions?
+* How do you handle authentication and authorization errors consistently?
+* How do you customize error responses from Spring Security?
+* How do you handle timeouts when calling an external REST API?
+* How do you handle downstream HTTP 4xx and 5xx responses using WebClient?
+* How do you implement retry logic for transient failures?
+* How do you handle database connection failures gracefully?
+* How do you log exceptions without exposing sensitive information?
+* How do you include correlation IDs or trace IDs in error responses?
+* How do you test exception handling using JUnit and MockMvc?
+* How do you handle unexpected exceptions without returning internal implementation details?
+* How do you configure Spring Boot error handling for production environments?

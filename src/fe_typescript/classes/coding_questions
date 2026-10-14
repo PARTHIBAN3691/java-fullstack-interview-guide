@@ -1,0 +1,30 @@
+* Create a Person class with name and age properties and a method to display the details.
+* Create a Student class with a constructor that initializes studentId, name, and marks.
+* Create a Rectangle class with methods to calculate area and perimeter.
+* Create a BankAccount class with deposit(), withdraw(), and getBalance() methods.
+* Create a class with public, private, and protected members and demonstrate their accessibility.
+* Create a class with readonly properties and demonstrate how they can be initialized.
+* Create a class with static properties and methods to count the number of created instances.
+* Create an Employee class using constructor parameter properties.
+* Create a class with getters and setters to validate a person's age.
+* Create a class with overloaded methods to support different input types.
+* Create a base Animal class and derive Dog and Cat classes that override a common method.
+* Create a Vehicle base class and derive Car and Bike classes using inheritance.
+* Create a base class and derived class that demonstrate the correct use of super().
+* Create an abstract Shape class with abstract area() and concrete display() methods.
+* Create a class that implements two interfaces with different method requirements.
+* Create a generic Box<T> class that stores and returns a value of type T.
+* Create a generic Repository<T> class with add(), findById(), and getAll() methods.
+* Create a generic class constrained to objects that contain an id property.
+* Create a singleton Logger class using a private constructor.
+* Create a class that uses a private constructor and a static factory method to create instances.
+* Create a fluent QueryBuilder class whose methods can be chained.
+* Create a class hierarchy for payment methods such as CardPayment and UpiPayment.
+* Create a Product class with a calculated priceAfterDiscount getter.
+* Create an Order class that contains multiple Product objects and calculates the total amount.
+* Create a class that uses composition to combine an Engine object with a Car object.
+* Create a mixin that adds timestamp-related functionality to different classes.
+* Create a class with a static initialization block and demonstrate when it executes.
+* Create a class with a private # field and demonstrate how it differs from a TypeScript private field.
+* Create a generic abstract base class and implement it in two concrete subclasses.
+* Design a notification system using an abstract Notification class and EmailNotification and SmsNotification subclasses.

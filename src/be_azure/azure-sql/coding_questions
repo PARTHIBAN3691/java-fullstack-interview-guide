@@ -1,0 +1,21 @@
+
+* Write a Java JDBC program that connects to Azure SQL Database and retrieves all records from an `Employee` table.
+* Develop a Spring Boot REST API that performs CRUD operations on an Azure SQL Database using Spring Data JPA.
+* Create a JPA entity for an `Employee` table with an identity-generated primary key, name, department, and salary.
+* Write a Spring Data JPA repository query that retrieves employees whose salaries exceed a specified amount.
+* Implement a Java JDBC batch insert operation that efficiently inserts thousands of employee records into Azure SQL.
+* Develop a Spring Boot service that uses `@Transactional` to update an order and its associated order items atomically.
+* Implement optimistic locking in a JPA entity using the `@Version` annotation and handle concurrent update failures.
+* Write Java code that configures HikariCP connection pooling with appropriate maximum pool size, connection timeout, and idle timeout settings.
+* Implement a Spring Boot configuration that obtains Azure SQL connection settings from environment variables rather than hardcoded credentials.
+* Develop a Java application that authenticates to Azure SQL using Microsoft Entra ID and managed identity.
+* Write Java code that catches SQL exceptions and classifies transient failures separately from permanent SQL errors.
+* Implement a retry mechanism for transient database failures while preventing unsafe retries of non-idempotent transactions.
+* Write a SQL query using `ROW_NUMBER()` to retrieve the highest-paid employee in each department.
+* Develop a SQL query using `DENSE_RANK()` to retrieve the top three distinct salary levels in each department.
+* Write a SQL query to calculate average salary by department and return only departments whose average salary exceeds a given threshold.
+* Implement pagination and sorting in a Spring Boot REST API backed by Azure SQL Database.
+* Create a Flyway migration that adds a new column and index to an existing Azure SQL table while supporting a rolling application deployment.
+* Write an integration test for a Spring Boot repository that validates transaction rollback when a database operation fails.
+* Develop a Java batch-processing service that reads records in chunks, uses JDBC batching, and limits transaction size to control memory and database load.
+* Design and implement a resilient Spring Boot application that uses Azure SQL with managed identity, connection pooling, transaction management, health checks, and structured error handling.

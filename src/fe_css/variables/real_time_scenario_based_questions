@@ -1,0 +1,30 @@
+* A screen reader announces an image filename instead of meaningful content. How would you fix the HTML?
+* A form input has a placeholder but no visible label. How would you make it accessible?
+* Keyboard users cannot reach a custom dropdown. How would you investigate and resolve the issue?
+* A page uses heading elements only for visual styling, resulting in an incorrect heading hierarchy. How would you refactor it?
+* A website uses color alone to indicate successful and failed form fields. How would you improve the design?
+* A button contains only a search icon and has no accessible name. How would you fix it?
+* A screen reader announces a button as "button" without explaining its purpose. How would you improve its accessible name?
+* A user cannot understand which field caused a form submission error. How would you provide accessible error feedback?
+* A validation message appears visually but is not announced by a screen reader. How would you address this?
+* A data table has multiple header rows and is difficult to navigate with a screen reader. How would you improve its structure?
+* A navigation menu works with a mouse but not with a keyboard. What changes would you make?
+* A modal opens, but keyboard focus remains behind it. How would you correct the focus behavior?
+* After a modal closes, keyboard focus returns to the beginning of the page. What should happen instead?
+* A dynamically updated notification is visible but not announced to assistive technology. How would you implement it?
+* A screen reader announces the same status message repeatedly. How would you reduce unnecessary announcements?
+* A decorative icon is announced unnecessarily by screen readers. How would you hide it from the accessibility tree?
+* An informative image is hidden from screen readers because it uses an empty alt attribute. How would you correct it?
+* A video contains speech but has no captions. What accessibility improvements are needed?
+* A user zooms the browser to 200%, and important content becomes clipped. How would you improve the HTML and layout?
+* A web page has several navigation sections, and screen reader users struggle to distinguish them. How would you label the landmarks?
+* A custom tab component does not support arrow-key navigation. How would you implement an appropriate keyboard interaction pattern?
+* A web application uses positive tabindex values throughout the page. What problems can this create, and how would you fix them?
+* A form indicates required fields only through red text. How would you communicate this information accessibly?
+* A link opens a new tab without warning users. How would you communicate this behavior appropriately?
+* A single-page application changes routes without moving focus or announcing the new page context. How would you improve accessibility?
+* A custom checkbox looks correct but cannot be toggled using the keyboard. How would you redesign it?
+* A page contains multiple main elements that confuse landmark navigation. How would you correct the structure?
+* An autocomplete component announces every keystroke result too aggressively. How would you improve its screen reader announcements?
+* An accessibility scanner reports missing ARIA attributes on native buttons and inputs. How would you determine whether the warnings are valid?
+* You are auditing an enterprise website against WCAG 2.2 AA. How would you combine automated checks, keyboard testing, and screen reader testing?

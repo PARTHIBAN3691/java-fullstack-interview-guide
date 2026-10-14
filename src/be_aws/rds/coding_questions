@@ -1,0 +1,20 @@
+* Write a Java Spring Boot application that connects to an Amazon RDS MySQL database using JDBC.
+* Write a Spring Boot configuration class that configures a PostgreSQL RDS datasource using environment-based configuration.
+* Write a Java program using JDBC to connect to RDS and execute a parameterized SELECT query.
+* Write a Java program that inserts, updates, and deletes records in an RDS database using prepared statements.
+* Write a Spring Data JPA repository and service that perform CRUD operations against an RDS database.
+* Write a Spring Boot REST API that stores and retrieves customer records from RDS.
+* Write a Java service that manages database transactions using Spring's `@Transactional` annotation.
+* Write a Java program that configures HikariCP connection pooling for an RDS-backed application.
+* Write a Java utility that handles SQL exceptions, connection timeouts, and transient connection failures.
+* Write a Java program that retrieves RDS database credentials from AWS Secrets Manager using AWS SDK for Java 2.x.
+* Write a Java program that retrieves non-sensitive database configuration from Systems Manager Parameter Store.
+* Write a Java program that connects to RDS Proxy and executes a database query.
+* Write a Java utility that retries transient database operations using bounded retries and exponential backoff without blindly repeating non-idempotent transactions.
+* Write a Spring Boot health indicator that checks database connectivity and reports readiness appropriately.
+* Write a Java program that measures database connection acquisition time and query execution latency.
+* Write a Java integration test that verifies Spring Data JPA CRUD operations against a test database.
+* Write a Java program that executes a paginated query to retrieve millions of records without loading all results into memory.
+* Write a Java migration utility that applies versioned database schema changes and records migration history.
+* Write a Java program that retrieves RDS instance metadata using AWS SDK for Java 2.x and reports its endpoint and status.
+* Design a production-ready Java Spring Boot application using Amazon RDS, secure credentials, HikariCP, transaction management, connection monitoring, retry handling, and Multi-AZ failover support.

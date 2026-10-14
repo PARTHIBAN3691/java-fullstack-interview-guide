@@ -1,0 +1,30 @@
+* Your application response time increases significantly as the database grows. How would you identify and resolve the bottleneck?
+* A frequently executed query takes several seconds in production. How would you investigate and optimize it?
+* Your database reaches its maximum connection limit during peak traffic. How would you resolve the issue?
+* A read replica is several seconds behind the primary database. How would you handle consistency-sensitive requests?
+* A database primary node fails during a payment transaction. How would you recover safely?
+* Two users attempt to purchase the final item in inventory simultaneously. How would you prevent overselling?
+* A banking application must prevent concurrent withdrawals from creating a negative balance. How would you design the database operations?
+* A payment is committed in the database, but the application times out before returning a response. How would you prevent duplicate payments on retry?
+* A database deadlock occurs frequently during high traffic. How would you diagnose and reduce it?
+* A large table has grown to billions of rows. How would you improve query performance and manage storage?
+* One shard receives most of the traffic because a few customers generate unusually high workloads. How would you address the hot shard?
+* A new feature requires changing a heavily used production table without downtime. How would you perform the migration?
+* Your organization needs to move from a single database to a sharded architecture. How would you plan the transition?
+* A database migration must run while multiple application versions are active. How would you maintain compatibility?
+* Your application stores customer data in multiple microservice databases, and the records become inconsistent. How would you resolve the issue?
+* An order is stored successfully, but publishing its event fails. How would you ensure the database and messaging system remain consistent?
+* A reporting query slows down customer-facing transactions. How would you isolate analytical workloads from transactional workloads?
+* A database restore completes successfully, but some recent transactions are missing. How would you investigate the recovery process?
+* Your system must continue operating during a regional outage. How would you design cross-region replication and failover?
+* A new index improves reads but slows down writes. How would you evaluate whether to keep it?
+* A frequently updated counter produces incorrect totals under concurrency. How would you redesign the update mechanism?
+* A multi-tenant application has strict requirements to isolate customer data. How would you select the database isolation strategy?
+* A customer requests deletion of personal data, including copies in replicas, caches, and backups. How would you handle the lifecycle?
+* A database upgrade requires a change in storage format. How would you minimize downtime and reduce rollback risk?
+* Your team needs to choose between PostgreSQL and MongoDB for a product catalog with complex filtering. How would you evaluate the options?
+* A distributed database returns conflicting values after a network partition. How would you determine whether the behavior matches its consistency guarantees?
+* A data pipeline loads duplicate records into an analytics database. How would you make ingestion idempotent?
+* Database storage costs are increasing rapidly. How would you identify archival, compression, partitioning, or retention opportunities?
+* Your application must support millions of users but only a small percentage are active simultaneously. How would you size and scale the database?
+* You are designing a financial ledger where historical transactions must never be silently overwritten. What schema and operational controls would you introduce?

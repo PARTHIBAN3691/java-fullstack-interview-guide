@@ -1,0 +1,30 @@
+* How would you architect an enterprise data processing platform using Azure Databricks and ADLS Gen2?
+* How would you design a highly scalable Databricks solution for processing several terabytes of data daily?
+* How would you optimize a Spark application suffering from excessive shuffle operations?
+* How would you troubleshoot a Spark job with extremely long-running stages?
+* How would you identify and resolve data skew in a production Spark application?
+* How would you decide the optimal number and size of Spark executors for a workload?
+* How do driver memory and executor memory affect Spark application performance?
+* How does Spark determine the number of tasks for a stage?
+* How would you optimize a Spark job that contains multiple large joins?
+* When would you use broadcast joins, sort-merge joins, or shuffle hash joins?
+* How would you optimize a Spark application with a very large number of small files?
+* How would you handle small-file problems in Delta Lake?
+* How does Delta Lake maintain transaction consistency across concurrent writes?
+* How would you implement Delta Lake schema evolution safely in production?
+* How would you design an incremental ingestion framework using Delta Lake?
+* How would you implement Change Data Capture processing using Azure Databricks?
+* How would you implement idempotent processing in Databricks?
+* How would you design fault-tolerant Databricks pipelines that can resume after failures?
+* How would you handle late-arriving and out-of-order data in a Databricks pipeline?
+* How would you optimize a Databricks workload where the same large dataset is repeatedly accessed?
+* How would you investigate high executor GC time in a Spark application?
+* How would you troubleshoot an OutOfMemoryError occurring on Spark executors?
+* How would you troubleshoot a driver OutOfMemoryError?
+* How would you secure sensitive data processed by Azure Databricks?
+* How would you design access control for Databricks users, clusters, jobs, and data?
+* How would you securely connect Databricks to Azure Key Vault and ADLS?
+* How would you design a CI/CD strategy for Databricks notebooks, jobs, and Spark applications?
+* How would you deploy a Java-based Spark application to Databricks across development, QA, and production?
+* How would you monitor and optimize the cost of a large Databricks environment?
+* How would you design disaster recovery for an Azure Databricks-based data platform?

@@ -1,0 +1,30 @@
+* How do you choose an appropriate load-balancing algorithm?
+* How does round-robin load balancing work when servers have different capacities?
+* How does least-connections load balancing handle long-lived requests?
+* How does weighted round-robin distribute traffic among heterogeneous servers?
+* How does consistent hashing minimize request remapping when servers change?
+* How do Layer 4 and Layer 7 load balancers differ in routing decisions?
+* How does a Layer 7 load balancer route requests based on hostnames and paths?
+* How do health checks detect unavailable backend servers?
+* How do you configure health-check intervals and failure thresholds?
+* How does a load balancer handle a backend server that becomes unhealthy?
+* How do sticky sessions work, and when should they be avoided?
+* How can session state be managed without sticky sessions?
+* How do TLS termination and TLS passthrough differ?
+* How does connection pooling improve load-balancer performance?
+* How does connection draining support graceful deployments?
+* How do you prevent a load balancer from becoming a bottleneck?
+* How do you scale load balancers horizontally?
+* How do active-active and active-passive load-balancer architectures differ?
+* How do DNS-based and proxy-based load balancing differ?
+* How does global server load balancing route traffic across regions?
+* How do load balancers handle WebSocket connections?
+* How do load balancers distribute gRPC traffic?
+* How do rate limiting and request routing work together?
+* How do you protect a load balancer against traffic spikes and connection exhaustion?
+* How do retries at the load-balancer layer affect backend load?
+* How do you monitor request latency, error rates, and backend utilization?
+* How do you configure load balancing for stateless microservices?
+* How does autoscaling interact with load-balancer target registration?
+* How do you deploy a new backend version without interrupting active requests?
+* How do you troubleshoot uneven traffic distribution across backend servers?

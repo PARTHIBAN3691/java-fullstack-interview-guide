@@ -1,0 +1,21 @@
+
+* Write a Dockerfile to package a Java 21 Spring Boot application for deployment to EKS using a multi-stage build.
+* Write a Kubernetes Deployment YAML manifest for a Spring Boot application with three replicas.
+* Write a Kubernetes Service YAML manifest to expose a Java application inside the cluster.
+* Write Kubernetes YAML manifests for ConfigMap and Secret resources and configure a Spring Boot application to consume them.
+* Write a Kubernetes Deployment manifest with CPU and memory requests and limits for a Java container.
+* Write a Kubernetes Deployment manifest with startup, readiness, and liveness probes for a Spring Boot application.
+* Write a Kubernetes Horizontal Pod Autoscaler manifest that scales a Java application based on CPU utilization.
+* Write Kubernetes manifests for a rolling deployment strategy with appropriate availability settings.
+* Write a Kubernetes manifest for a PodDisruptionBudget that protects a replicated Java application during voluntary disruptions.
+* Write a Kubernetes Ingress manifest to expose a Spring Boot application through an AWS Application Load Balancer.
+* Write a Kubernetes manifest that uses a service account to grant an application access to AWS resources through an appropriate workload identity mechanism.
+* Write a Kubernetes PersistentVolumeClaim manifest and configure a Java application to use persistent storage.
+* Write a Kubernetes NetworkPolicy manifest that restricts traffic to a Java microservice.
+* Write a Kubernetes Job manifest to run a Java batch-processing application.
+* Write a Kubernetes CronJob manifest to execute a scheduled Java task.
+* Write a shell script using `kubectl` to identify Pods that are not running and collect their diagnostic information.
+* Write a Java program using the Kubernetes Java client to list Pods in a specified namespace.
+* Write a Java program using the Kubernetes Java client to retrieve the status and restart count of Pods in a namespace.
+* Write a Java program using the Kubernetes Java client to create or update a Kubernetes Deployment for a Spring Boot service.
+* Design and implement a CI/CD pipeline for a Java microservice using Docker, Amazon ECR, Amazon EKS, automated testing, image scanning, rolling deployment, health checks, and rollback support.

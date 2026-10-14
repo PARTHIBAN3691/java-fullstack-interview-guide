@@ -1,0 +1,30 @@
+* A Node.js application crashes with an out-of-memory error while reading a large CSV file. How would you redesign the processing?
+* A service processes a 10 GB file and must keep memory usage below a fixed limit. How would you implement it?
+* A file-copy operation produces incomplete output when the source file is very large. How would you investigate the problem?
+* A file upload endpoint consumes excessive memory under concurrent traffic. How would you redesign the upload pipeline?
+* A file-processing service receives chunks faster than it can write them to disk. How would you handle backpressure?
+* A file contains UTF-8 characters that become corrupted after being processed in chunks. How would you fix the issue?
+* A service writes data to a file, but the file becomes corrupted when the application crashes. How would you improve durability?
+* Two requests update the same file simultaneously, and one request overwrites the other's changes. How would you prevent data loss?
+* A background job reads a file while another process modifies it. How would you ensure consistent processing?
+* A file watcher triggers the same processing job multiple times for one file. How would you prevent duplicate execution?
+* A directory watcher occasionally misses file changes in production. How would you make the processing workflow reliable?
+* A file arrives in an input directory before the producer finishes writing it. How would you detect when it is ready for processing?
+* A file-processing job must resume after a server restart without processing every record again. How would you implement checkpointing?
+* A large binary file must be updated at specific offsets without loading the entire file into memory. How would you implement it?
+* A service experiences too many open file descriptors while processing thousands of files. How would you diagnose and resolve it?
+* A file transformation pipeline has multiple stages, and one stage fails after writing partial output. How would you clean up and recover?
+* A file-processing service must calculate a checksum and transform the contents in one pass. How would you design the stream pipeline?
+* A malicious user uploads a file with a path containing directory traversal sequences. How would you protect the filesystem?
+* An uploaded file is renamed to a harmless extension but contains unexpected content. How would you validate it safely?
+* A service processes compressed files and experiences memory spikes during decompression. How would you prevent resource exhaustion?
+* A production deployment changes file permissions and causes read/write failures. How would you troubleshoot the issue?
+* A file-copy service must preserve required metadata while copying files across directories. How would you implement it?
+* A log-processing application must handle files that grow continuously without repeatedly reading the entire file. How would you design it?
+* A large file must be uploaded over an unreliable connection and resumed after interruption. How would you implement resumable uploads?
+* A service writes temporary files but leaves them behind after failed operations. How would you ensure reliable cleanup?
+* A file is replaced while a process is reading it, resulting in inconsistent application behavior. How would you design safer file replacement?
+* A Node.js application shows high CPU usage and event-loop delays during file transformations. How would you identify the bottleneck?
+* A batch job processes thousands of files concurrently and overloads the disk. How would you limit concurrency?
+* A file-processing system must reject malformed binary records without terminating the entire batch. How would you design error handling?
+* You need to design a production-grade file-processing service with streaming, retries, checkpoints, integrity checks, and recovery. What architecture would you choose?

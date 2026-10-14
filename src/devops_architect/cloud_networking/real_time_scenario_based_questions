@@ -1,0 +1,35 @@
+* An application deployed in a public subnet cannot be accessed from the internet. How would you troubleshoot the route table, public IP assignment, security rules, and load balancer configuration?
+* A virtual machine in a private subnet cannot download operating system updates. How would you diagnose NAT configuration, routing, DNS resolution, and egress filtering?
+* Two instances in the same VPC cannot communicate even though they have valid private IP addresses. How would you investigate Security Groups, Network ACLs, routes, and host firewalls?
+* A newly created subnet has no connectivity to other subnets in the same VPC. How would you investigate route-table associations and network filtering?
+* An application works from one availability zone but fails from another. How would you compare subnet routes, security rules, NAT paths, and load balancer health checks?
+* A private application can reach a managed database by IP address but fails when using its DNS hostname. How would you investigate private DNS zones, resolver configuration, and endpoint records?
+* A DNS record has been updated, but some clients continue connecting to the old endpoint. How would you investigate TTLs, resolver caches, and application-level DNS caching?
+* A reverse proxy returns HTTP 502 errors even though backend servers appear healthy. How would you diagnose upstream connectivity, TLS settings, timeout values, and health checks?
+* A load balancer reports all targets as unhealthy, but direct requests to the application instances succeed. How would you investigate health-check paths, ports, protocols, and security rules?
+* A load-balanced application experiences intermittent connection resets during traffic spikes. How would you investigate connection limits, backend saturation, timeouts, and scaling behavior?
+* A service in one VPC cannot access a private endpoint located in another VPC. How would you investigate endpoint scope, routing, DNS, and access policies?
+* A team accidentally exposes a database service through a public IP address. How would you contain the exposure and redesign access using private networking?
+* An on-premises application cannot access a cloud-hosted application after a site-to-site VPN configuration change. How would you investigate tunnel state, routes, IP ranges, and firewall rules?
+* A VPN tunnel is established, but only one direction of communication works. How would you diagnose asymmetric routing, missing return routes, and stateful firewall behavior?
+* VPN connectivity drops during peak business hours. How would you investigate tunnel limits, bandwidth, packet loss, MTU, and provider-side issues?
+* A dedicated Direct Connect or ExpressRoute circuit fails, but the backup VPN does not take over. How would you investigate BGP advertisements, route preference, and failover configuration?
+* A new VPC cannot communicate with an existing VPC through the Transit Gateway. How would you inspect attachments, route tables, propagation, and security rules?
+* A route change causes traffic from several application VPCs to bypass centralized firewall inspection. How would you identify and correct the routing policy?
+* Two business units use overlapping CIDR ranges, preventing direct network connectivity. How would you propose a migration, address translation, or application-proxy solution?
+* An application can reach a public cloud service endpoint but fails when switched to a private endpoint. How would you diagnose private DNS, endpoint policies, routes, and security controls?
+* Applications in an on-premises network resolve a cloud private endpoint to a public IP address. How would you investigate conditional forwarding and DNS resolver integration?
+* A microservice intermittently fails to discover another service after autoscaling. How would you investigate stale DNS records, service registry health, caching, and deregistration behavior?
+* A compromised virtual machine attempts to scan other workloads across the VPC. How would you contain lateral movement using network segmentation, security rules, and centralized monitoring?
+* A security audit identifies unrestricted inbound SSH and RDP access across multiple subnets. How would you remediate the rules without interrupting approved administration workflows?
+* A production deployment introduces new microservices, but network rules prevent service-to-service communication. How would you identify the required traffic flows while maintaining least privilege?
+* A Kubernetes service is reachable from within the cluster but not through the expected private load balancer. How would you investigate service configuration, subnet selection, health checks, and network policies?
+* A network redesign introduces unexpected latency between application and database tiers. How would you isolate routing detours, cross-zone traffic, inspection appliances, and MTU issues?
+* Cloud network costs increase significantly after centralizing outbound traffic through a shared hub. How would you investigate NAT processing, cross-zone transfer, inspection routing, and data locality?
+* Network flow logs show rejected traffic, but the team cannot identify which security rule is responsible. How would you correlate flow logs, route tables, firewall logs, and configuration history?
+* An organization wants to apply Zero Trust principles to a hybrid application estate. How would you design identity-aware access, workload authentication, network segmentation, and continuous policy enforcement?
+* A multi-region application continues sending traffic to a failed region because DNS health checks do not detect the outage. How would you redesign health checks and traffic failover?
+* A new firewall deployment causes some large requests to fail while small requests work. How would you investigate MTU mismatch, path MTU discovery, and packet fragmentation?
+* A cloud network change passes testing but disrupts production connectivity because of an unexpected route propagation rule. How would you improve change validation, staged rollout, and rollback?
+* A private subnet has redundant outbound connectivity, but failover produces long connection interruptions. How would you analyze route convergence, connection state, and application retry behavior?
+* A company wants to centralize DNS, internet egress, and network inspection for hundreds of cloud accounts. How would you design a scalable architecture that avoids shared-service bottlenecks?

@@ -1,0 +1,30 @@
+* A child component re-renders whenever its parent updates, even though its props appear unchanged. How would you investigate the issue?
+* A memoized component keeps re-rendering because its parent passes an inline object. How would you fix it?
+* A React.memo component receives a callback that changes on every render. How would you optimize it?
+* An expensive filtering operation runs every time unrelated state changes. How would you solve this using useMemo?
+* A dashboard displays thousands of records and becomes slow during filtering. How would you identify the bottleneck and optimize it?
+* A memoized child component does not update when the underlying data changes because the parent mutates an object. How would you fix it?
+* A custom React.memo comparison function prevents a component from updating when its displayed data changes. How would you troubleshoot it?
+* A useCallback function always receives an outdated state value. How would you correct the dependency or update strategy?
+* A useMemo calculation runs on every render despite having a dependency array. What would you investigate?
+* A component uses useMemo for every variable and becomes difficult to maintain. How would you decide which memoization to remove?
+* A component re-renders whenever a Context provider updates an unrelated value. How would you reduce unnecessary rendering?
+* A memoized list item re-renders whenever any item in the list changes. How would you optimize the data and component structure?
+* A parent component passes a newly created array to every child during rendering. How would you stabilize the array reference?
+* A form has many fields, and typing into one field causes all fields to re-render. How would you use component separation and memoization?
+* A page has an expensive sorting operation and a responsive search input. How would you combine memoization with suitable React scheduling techniques?
+* A memoized component re-renders when its children are recreated on every parent render. How would you investigate and improve it?
+* A component uses a custom comparison function that takes longer than rendering the component itself. How would you improve the design?
+* A developer uses useMemo to prevent a required side effect from executing. Why is this unreliable, and what should be used instead?
+* A useEffect runs repeatedly because an object dependency is recreated on each render. How would you resolve it?
+* A component performs expensive calculations even when the user changes only an unrelated UI setting. How would you profile and optimize it?
+* A large table remains slow even after wrapping each row with React.memo. What additional techniques would you consider?
+* A component subscribes to an external event source, and changing callback identity causes repeated unsubscribe and subscribe operations. How would you address it?
+* A memoized component behaves differently in development and production. How would you investigate Strict Mode and rendering behavior?
+* A team wants to add React.memo to every component to improve performance. How would you explain the trade-offs and define an optimization strategy?
+* A project adopts React Compiler. How would you reassess existing manual memoization?
+* A component uses a memoized value as a resource that must remain stable for correctness. Why is this design unsafe, and how would you redesign it?
+* A frequently updated parent contains a computationally expensive child that rarely needs new data. How would you isolate and optimize the child?
+* A memoized component receives a function prop that closes over frequently changing state. How would you balance correct behavior with stable references?
+* A performance optimization reduces render counts but does not improve user-perceived speed. How would you identify the actual bottleneck?
+* After introducing memoization, memory usage increases and the code becomes harder to maintain. How would you evaluate whether the optimization is worthwhile?

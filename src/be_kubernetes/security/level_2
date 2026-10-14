@@ -1,0 +1,30 @@
+* Explain the Kubernetes security architecture from API requests to container execution.
+* How does the Kubernetes authorization chain work with authentication, RBAC, and admission controllers?
+* How would you design a least-privilege RBAC model for a large enterprise cluster?
+* How would you prevent privilege escalation through misconfigured RoleBindings?
+* How do Kubernetes ServiceAccount tokens work, and how can projected tokens improve security?
+* How would you secure etcd against unauthorized access and data exposure?
+* How does encryption at rest work for Kubernetes Secrets?
+* How would you implement automated Secret rotation without application downtime?
+* How would you design a zero-trust security model for Kubernetes workloads?
+* How would you enforce default-deny ingress and egress policies across namespaces?
+* What are the limitations of Kubernetes NetworkPolicies?
+* How do CNI plugins affect the enforcement of NetworkPolicies?
+* How would you implement mutual TLS between microservices running in Kubernetes?
+* How would you compare service-mesh security with application-managed TLS?
+* How would you enforce signed container images using admission policies?
+* How would you integrate image vulnerability scanning with deployment admission controls?
+* How would you implement policy-as-code using Kyverno or OPA Gatekeeper?
+* How would you prevent workloads from mounting sensitive host paths?
+* How would you secure workloads that require Linux capabilities?
+* How would you evaluate the security implications of hostNetwork and hostPID?
+* How would you protect Kubernetes nodes against container escape vulnerabilities?
+* How would you isolate workloads belonging to different tenants?
+* How would you design secure multi-tenant Kubernetes namespaces?
+* How would you implement runtime threat detection for suspicious container activity?
+* How would you investigate an unexpected privileged container in production?
+* How would you secure Kubernetes control-plane components in a self-managed cluster?
+* How would you integrate Kubernetes audit logs with a SIEM platform?
+* How would you implement secure workload identity for applications accessing cloud services?
+* How would you prevent supply-chain attacks in container build and deployment pipelines?
+* How would you balance strict security policies with application availability and operational flexibility?

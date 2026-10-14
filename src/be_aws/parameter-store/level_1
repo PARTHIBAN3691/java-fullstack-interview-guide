@@ -1,0 +1,20 @@
+* How can a Java application retrieve configuration values from Parameter Store using AWS SDK for Java 2.x?
+* What is the difference between `GetParameter`, `GetParameters`, and `GetParametersByPath`?
+* How do you retrieve a `SecureString` parameter with decryption enabled?
+* How can you organize parameters by application, environment, and configuration category?
+* How would you configure Parameter Store access for a Java Spring Boot application?
+* How can Spring Boot externalized configuration work with AWS Systems Manager Parameter Store?
+* What are the available approaches for integrating Parameter Store with Spring Boot configuration?
+* How can you configure AWS credentials for a Java application running locally versus on EC2?
+* Why should a Java application running on EC2 use an IAM role instead of hardcoded AWS credentials?
+* What IAM permissions are required to read ordinary parameters and encrypted `SecureString` parameters?
+* How does a KMS key policy interact with IAM permissions when retrieving encrypted parameters?
+* What is the difference between using the AWS-managed KMS key and a customer-managed KMS key?
+* How can you update an existing parameter without changing its name?
+* How does parameter versioning work?
+* What are parameter labels, and how can they help manage configuration versions?
+* How can a Java application handle `ParameterNotFound`, throttling, and access-denied errors?
+* How can you reduce API calls when multiple application components need the same parameters?
+* What is parameter caching, and how does it affect configuration freshness?
+* How can Parameter Store parameters be deployed using AWS CloudFormation?
+* How can you monitor Parameter Store access and changes using CloudTrail and CloudWatch?

@@ -1,0 +1,26 @@
+
+* Explain the internal architecture of the HotSpot Execution Engine and its interaction with JVM runtime components.
+* How does the JVM transition a method from interpreted execution to compiled execution?
+* How do invocation counters and back-edge counters contribute to compilation decisions?
+* How does tiered compilation balance startup performance and peak execution performance?
+* How does the C1 compiler differ from the C2 compiler in optimization strategy?
+* How does the JVM use profiling data to make speculative optimizations?
+* How does method inlining affect virtual method dispatch and polymorphic call sites?
+* What is the difference between monomorphic, bimorphic, and megamorphic call sites?
+* How can polymorphic call sites affect JIT optimization opportunities?
+* How does escape analysis enable scalar replacement of objects?
+* Why does scalar replacement not necessarily mean that every object is allocated on the stack?
+* How can lock elimination optimize synchronized blocks?
+* What are the risks and limitations of aggressive JIT optimizations?
+* Explain how on-stack replacement allows a running loop to transition to compiled code.
+* How does the JVM deoptimize compiled code and reconstruct interpreter state?
+* What is uncommon-trap handling in HotSpot, and how does it relate to speculative optimization?
+* How does the JVM manage compiled methods in the code cache?
+* What happens when the code cache becomes full?
+* How can code-cache segmentation affect JIT compilation?
+* How would you diagnose excessive compilation activity or repeated deoptimization?
+* How do garbage collection, memory allocation, and JIT optimization interact?
+* How does the Execution Engine behave when Java code invokes native methods through JNI?
+* How would you distinguish CPU bottlenecks caused by application logic from JIT compilation overhead?
+* How can Java Microbenchmark Harness (JMH) help evaluate Execution Engine optimizations?
+* Why can manual microbenchmarks produce misleading results due to dead-code elimination, constant folding, and warm-up?

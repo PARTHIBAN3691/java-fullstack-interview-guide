@@ -1,0 +1,119 @@
+
+**Enterprise CI/CD Architecture**
+* Design a reusable CI/CD pipeline template that supports build, unit testing, security scanning, artifact publication, environment promotion, and post-deployment verification.
+* Implement a pipeline configuration validator that checks required stages, approval gates, artifact immutability, and production deployment rules.
+* Write a release orchestrator that promotes the same artifact digest through development, staging, and production while recording every transition.
+* Implement a deployment-state tracker that can recover from interrupted pipeline execution without repeating completed operations.
+* Write automated tests for a pipeline framework covering stage failures, timeouts, retries, and invalid deployment configurations.
+
+**Centralized vs Decentralized DevOps**
+* Implement a policy evaluation library that applies organization-wide rules while allowing explicitly approved team-specific extensions.
+* Write a service-ownership validator that checks whether each pipeline and deployment target has an accountable team.
+* Build a configuration validator that compares team pipelines with a central baseline and reports permitted and prohibited deviations.
+* Implement an exception-management utility that records justification, owner, approval, expiration, and audit history.
+* Write tests for shared policy enforcement, team overrides, expired exceptions, and unauthorized policy changes.
+
+**Shared CI/CD Platforms**
+* Implement a tenant-aware job scheduler that applies concurrency limits, resource quotas, and fair allocation across teams.
+* Write a pipeline-library version resolver that identifies incompatible consumers before a shared template upgrade.
+* Build a runner-health monitor that tracks queue time, capacity, job failures, and tenant-specific resource usage.
+* Implement a pipeline execution wrapper that isolates environment variables, temporary files, credentials, and execution logs between tenants.
+* Write tests for runner failures, tenant isolation, scheduling fairness, and shared-template compatibility.
+
+**Multi-Team Pipelines**
+* Implement a dependency-graph builder that determines a valid build and deployment order for a collection of microservices.
+* Write a release coordinator that supports partial success, bounded retries, compatibility checks, and safe recovery.
+* Build a conflict detector that prevents concurrent pipelines from deploying incompatible versions into the same environment.
+* Implement a change-impact analyzer that identifies downstream services affected by an API or shared-library change.
+* Write tests for dependency cycles, failed downstream stages, concurrent releases, and partially completed deployments.
+
+**Multi-Account Cloud Strategy**
+* Write a cloud-account configuration validator that checks required security, logging, networking, tagging, and budget controls.
+* Implement a provisioning workflow that creates a new account from a standard landing-zone configuration and verifies compliance.
+* Build a role-assumption validator that ensures a pipeline identity can access only its approved account and environment.
+* Write a report generator that compares policy compliance and cost allocation across multiple accounts.
+* Implement tests for invalid account mappings, unauthorized cross-account access, missing controls, and provisioning failures.
+
+**Multi-Region Deployments**
+* Implement a regional deployment orchestrator that deploys in controlled waves and promotes only when regional health checks pass.
+* Write a rollout controller that pauses or rolls back a regional release when latency, error rate, or availability crosses configured thresholds.
+* Build a configuration validator that detects missing or inconsistent region-specific settings before deployment.
+* Implement a release-state tracker that records independent deployment status and artifact version for every region.
+* Write tests for regional failure, partial rollout, unavailable health checks, and safe recovery.
+
+**Multi-Cluster Kubernetes**
+* Write a cluster-fleet inventory tool that reports Kubernetes versions, policy status, deployment health, and workload ownership.
+* Implement a rollout controller that deploys to clusters in waves and halts promotion when a cluster fails health validation.
+* Build a configuration-drift detector that compares desired Kubernetes resources with observed cluster state.
+* Implement a cluster-target validator that prevents deployment to unauthorized clusters or environments.
+* Write tests for partial cluster failures, unreachable clusters, version incompatibility, and conflicting resource ownership.
+
+**Enterprise Artifact Management**
+* Implement an artifact promotion utility that verifies digests and provenance before moving an artifact between repositories or environments.
+* Write an artifact-retention calculator that preserves required rollback versions while identifying safe cleanup candidates.
+* Build a vulnerability-response tool that maps affected package versions to deployed application artifacts.
+* Implement a repository access validator that restricts publication, deletion, and promotion according to role.
+* Write tests for digest mismatches, missing provenance, unauthorized publication, and retention-policy edge cases.
+
+**Enterprise Secrets Management**
+* Implement a secrets-access policy validator that checks service identity, environment, scope, and least-privilege requirements.
+* Write a secret-rotation coordinator that updates dependent services in stages and verifies successful credential adoption.
+* Build a pipeline-log scanner that detects likely secret leakage and prevents sensitive values from being published.
+* Implement a short-lived credential acquisition wrapper that avoids writing credentials to persistent files or logs.
+* Write tests for rotation failure, expired credentials, unauthorized access, and secret-redaction behavior.
+
+**DevSecOps Governance**
+* Implement a pipeline policy engine that evaluates vulnerability severity, artifact provenance, dependency status, and required security approvals.
+* Write a security-exception tracker that blocks expired exceptions and generates reports for overdue remediation.
+* Build an SBOM validation utility that checks required metadata and verifies dependency policy compliance.
+* Implement a release gate that verifies artifact signatures and provenance attestations before deployment.
+* Write tests for policy bypass attempts, unsigned artifacts, vulnerable dependencies, and invalid security exceptions.
+
+**Compliance Pipelines**
+* Implement a compliance-evidence collector that links source changes, approvals, test results, artifacts, and deployment records.
+* Write a policy validator that applies different compliance rules based on environment, application classification, and region.
+* Build a compliance report generator that identifies missing approvals, incomplete evidence, and policy violations.
+* Implement an emergency-release workflow that records justification, authorization, compensating controls, and retrospective review.
+* Write tests for missing evidence, invalid approval sequences, policy changes, and emergency-release exceptions.
+
+**Auditability**
+* Implement an audit-event schema that records actor identity, timestamp, source commit, artifact digest, target environment, and operation result.
+* Write a correlation service that links pipeline execution IDs to artifact records and production deployment events.
+* Build a tamper-evidence verifier that detects modification or deletion of stored audit records.
+* Implement a query tool that reconstructs the deployment history of a given production artifact.
+* Write tests for missing correlation identifiers, inconsistent timestamps, duplicate events, and altered audit records.
+
+**Platform Engineering**
+* Implement a service catalog API that stores service ownership, repository, deployment target, dependencies, and operational metadata.
+* Write a platform API that provisions a standard application environment using validated configuration and controlled permissions.
+* Build a platform health dashboard data service that aggregates availability, provisioning duration, failure rate, and adoption metrics.
+* Implement a golden-path template version manager with compatibility validation and deprecation notifications.
+* Write tests for failed provisioning, invalid service metadata, API compatibility, and platform dependency outages.
+
+**Developer Self-Service**
+* Implement a self-service provisioning API with role-based authorization, idempotency, input validation, and execution tracking.
+* Write a resource-creation workflow that enforces ownership tags, budget limits, approved regions, and lifecycle expiration.
+* Build a status API that exposes provisioning progress, diagnostic logs, and safe retry options without leaking secrets.
+* Implement a self-service deployment endpoint that validates the requested environment and the caller's authorization.
+* Write tests for duplicate requests, unauthorized actions, partial provisioning, and quota exhaustion.
+
+**Golden Paths**
+* Create an application-template generator that produces a standard service structure with tests, observability, health checks, and CI/CD configuration.
+* Implement a template validator that checks dependency versions, security settings, required metadata, and deployment readiness.
+* Write a migration utility that upgrades template-managed configuration while preserving explicitly approved customizations.
+* Build a compliance checker that detects application repositories diverging from required golden-path controls.
+* Write tests for template compatibility, unsupported customizations, invalid dependencies, and migration rollback.
+
+**Organizational Scalability**
+* Implement a metrics aggregator that calculates deployment frequency, lead time, change failure rate, and recovery time by team.
+* Write an ownership resolver that maps services, repositories, pipelines, and infrastructure resources to accountable teams.
+* Build a dependency analyzer that identifies excessive cross-team dependencies and high-impact shared services.
+* Implement a platform-capacity simulator that estimates runner demand and queue time as team and deployment volume increase.
+* Write tests for missing ownership data, duplicated service records, metric normalization, and dependency cycles.
+
+**DevOps Governance**
+* Implement a governance policy validator that checks production approval, separation of duties, artifact integrity, and deployment authorization.
+* Write an exception workflow that supports risk classification, approval, expiration, evidence collection, and revocation.
+* Build a compliance dashboard data service that reports policy violations, exception age, audit completeness, and remediation status.
+* Implement a deployment authorization check that prevents manual or automated changes from bypassing mandatory controls.
+* Write tests for emergency changes, self-approval attempts, expired exceptions, and inconsistent policies across CI/CD systems.

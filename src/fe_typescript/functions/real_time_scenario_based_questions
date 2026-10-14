@@ -1,0 +1,30 @@
+* You are building a calculator application. How would you create reusable functions for addition, subtraction, multiplication, and division with proper types?
+* Your API utility must accept different request payloads and return corresponding response types. How would you design a generic function?
+* You need to validate user registration data before submitting it to a server. How would you use type guards and assertion functions?
+* Your application has multiple payment methods with different input requirements. How would you design a type-safe payment processing function?
+* You need a reusable function that accepts an array and a callback to transform each element. How would you type the function?
+* A callback-based API must support success and error handlers. How would you define the callback signatures?
+* Your application uses arrow functions as event handlers, but a regular function loses the expected this context. How would you fix it?
+* You need a function that accepts optional configuration parameters with default values. How would you define and validate those parameters?
+* Your application needs a retry mechanism for failed HTTP requests. How would you implement a generic asynchronous retry function?
+* You are implementing a logging utility that accepts different numbers of arguments. How would you use rest parameters?
+* Your function should return a string for one input type and a number for another. How would you model this relationship?
+* You need to compose multiple transformation functions while preserving their input and output types. How would you design the composition utility?
+* Your application has a function that accepts a callback but must preserve the callback's original parameter types. How would you use generics?
+* You are creating a debounce utility for search input. How would you preserve the original function's parameter and return types?
+* Your application needs a memoization function for expensive calculations. How would you implement it without losing type safety?
+* You need a function that accepts only objects containing an id property. How would you use generic constraints?
+* Your application supports synchronous and asynchronous validators. How would you define a common function type for both?
+* You need to create a type-safe event system where each event has a different payload. How would you define event handler functions?
+* A function accepts unknown data from an external API. How would you validate and narrow the type before processing it?
+* You need to implement a middleware chain where each middleware receives a request and passes it to the next function. How would you type the chain?
+* Your application requires a function that executes only when a feature flag is enabled. How would you model the callback and return type?
+* You need to create a strongly typed factory function that returns different object types based on its arguments. How would you implement it?
+* A utility function must preserve the this context of a method passed to it. How would you type and implement the utility?
+* You are designing a reusable sorting utility that supports different object properties. How would you use generics and keyof?
+* Your application requires a function to process multiple API responses with different shapes. How would you handle union types safely?
+* You need a function that transforms an array of objects into a dictionary indexed by id. How would you define its generic types?
+* A callback accepts fewer parameters than the function providing it. How does TypeScript handle this situation?
+* Your application must handle errors from asynchronous functions consistently. How would you design a typed error-handling wrapper?
+* You need to expose a public library function while hiding its internal implementation types. How would you design its function signature?
+* Your team is building a reusable utility library. How would you design function types that balance flexibility, inference, and type safety?

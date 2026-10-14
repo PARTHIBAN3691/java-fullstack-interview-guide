@@ -1,0 +1,30 @@
+* How does TypeScript infer types from JavaScript code when checkJs is enabled?
+* How does JSDoc-based type checking differ from native TypeScript type checking?
+* What are the limitations of expressing advanced TypeScript types through JSDoc?
+* How do you model generic JavaScript APIs using JSDoc templates?
+* How do you express union types and nullable values in JSDoc?
+* How do you document callback signatures and higher-order functions using JSDoc?
+* How can declaration files accurately represent overloaded JavaScript functions?
+* How do you describe a JavaScript library that exports both a constructor and static methods?
+* How do you declare types for dynamically generated properties in a JavaScript library?
+* How do you model a CommonJS module that exports a function with additional properties?
+* How do export assignments differ from named exports in declaration files?
+* How do default imports behave when consuming CommonJS modules under different compiler settings?
+* How do NodeNext and Bundler module resolution differ when resolving JavaScript packages?
+* How do package.json exports and conditional exports affect JavaScript and TypeScript interoperability?
+* How do ESM and CommonJS interoperability issues affect runtime behavior even when compilation succeeds?
+* How would you create dual ESM and CommonJS builds for a reusable TypeScript library?
+* How do declaration maps improve debugging and navigation across JavaScript and TypeScript projects?
+* How do you publish a JavaScript library with accurate TypeScript declarations?
+* How do you prevent declaration files from exposing internal implementation details?
+* How do you augment third-party JavaScript module declarations without modifying node_modules?
+* What risks arise when a declaration file claims a JavaScript function is safer than it actually is?
+* How do you validate runtime data when the JavaScript library's type declarations are incomplete?
+* How can a JavaScript library with dynamic behavior be represented using safer TypeScript wrapper types?
+* How do you design a typed adapter around an untyped JavaScript dependency?
+* How can TypeScript's strictness options be introduced gradually into a legacy JavaScript project?
+* How do circular dependencies behave when JavaScript and TypeScript modules import each other?
+* How do module resolution, file extensions, and package type settings influence Node.js interoperability?
+* How would you debug a runtime error caused by an incorrect default import from a CommonJS package?
+* How can you use the TypeScript Compiler API to inspect JavaScript files and their inferred types?
+* How would you design a long-term migration strategy for a large JavaScript codebase while preserving backward compatibility?

@@ -1,0 +1,30 @@
+* How would you design a highly available load-balancing architecture for millions of requests per second?
+* How would you eliminate a load balancer as a single point of failure?
+* How would you design a multi-region load-balancing strategy with automatic failover?
+* How would you choose between DNS-based, anycast-based, and proxy-based global load balancing?
+* How would you design a load balancer that minimizes p99 latency under highly variable workloads?
+* How would you handle a sudden traffic spike when backend autoscaling takes several minutes?
+* How would you prevent cascading failures when multiple backend instances become unhealthy?
+* How would you design adaptive load balancing using real-time latency and capacity metrics?
+* How would you balance traffic across servers with different CPU, memory, and connection capacities?
+* How would you prevent overload when the least-connections algorithm routes traffic to a slow server?
+* How would you design consistent hashing for millions of keys and frequently changing backend membership?
+* How would you handle hot keys or uneven traffic distribution in a consistent-hashing architecture?
+* How would you design connection draining for long-lived WebSocket and streaming connections?
+* How would you support zero-downtime deployments across multiple backend versions?
+* How would you implement canary releases and weighted traffic shifting at the load-balancer layer?
+* How would you design blue-green deployments with fast and reliable traffic switching?
+* How would you handle session affinity when backend instances are dynamically added or removed?
+* How would you design load balancing for multi-tenant applications with noisy-neighbor isolation?
+* How would you prevent retry storms and duplicate requests during backend failures?
+* How would you coordinate timeouts, retries, circuit breakers, and health checks across multiple layers?
+* How would you design load balancing for a service mesh with thousands of service instances?
+* How would you handle stale service-discovery information during rapid instance replacement?
+* How would you design load balancing for UDP-based protocols and connectionless traffic?
+* How would you secure load-balancer endpoints against DDoS attacks and malicious traffic?
+* How would you preserve client IP information across multiple proxy and load-balancer layers?
+* How would you design a load balancer that routes requests based on tenant, geography, or request priority?
+* How would you prevent a global load balancer from routing traffic to a healthy but overloaded region?
+* How would you evaluate the trade-offs between centralized and client-side load balancing?
+* How would you benchmark a load balancer without making the load generator the bottleneck?
+* How would you design observability and automated remediation for a large-scale load-balancing platform?

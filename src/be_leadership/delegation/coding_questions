@@ -1,0 +1,30 @@
+* Write a Java program to represent tasks assigned to team members with owners, priorities, and deadlines.
+* Implement a Task class with status values such as TODO, IN_PROGRESS, BLOCKED, and COMPLETED.
+* Write a Java method to assign tasks based on developer skills and task requirements.
+* Implement a task allocation service using interfaces and dependency injection.
+* Write a Java program to calculate each developer's assigned workload.
+* Implement a method that identifies overloaded team members based on task estimates and available capacity.
+* Write a Java program to prioritize tasks based on urgency, business impact, and dependencies.
+* Implement a delegation service that validates whether a team member is eligible for a task.
+* Write a Java method to prevent assigning a task to an unavailable team member.
+* Implement a task reassignment mechanism when an assigned developer becomes unavailable.
+* Use Java streams to find tasks that are overdue or blocked.
+* Write a Java program to identify tasks without an assigned owner.
+* Implement a dependency tracker that prevents a task from starting before its prerequisites are completed.
+* Write a Java class that records task ownership changes and the reasons for reassignment.
+* Implement role-based permissions for task assignment and approval.
+* Write unit tests using JUnit 5 for a task delegation service.
+* Use Mockito to test task allocation when a developer lacks the required skills.
+* Implement the Strategy pattern to support different task allocation strategies.
+* Implement the Observer pattern to notify team members when tasks are assigned or reassigned.
+* Use the State pattern to control valid task lifecycle transitions.
+* Write a Java program to calculate task completion rates for each developer.
+* Implement a service that identifies tasks at risk of missing their deadlines.
+* Write a Java method to distribute tasks fairly based on capacity, skills, and existing workload.
+* Implement an escalation mechanism for overdue tasks and unresolved blockers.
+* Write a thread-safe Java component that supports concurrent task assignments without duplicate ownership.
+* Implement exception handling for invalid task assignments and unauthorized reassignment.
+* Write a Java program to generate a report of task ownership, workload, dependencies, and progress.
+* Implement a Spring Boot REST API to create tasks, assign owners, update status, and track progress.
+* Write a Java program to record delegated decisions and verify whether the assignee has the required authority.
+* Design a Java-based delegation management system that supports skill matching, workload balancing, task ownership, approvals, notifications, and audit history.

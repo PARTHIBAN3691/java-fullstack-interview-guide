@@ -1,0 +1,30 @@
+* A Java Spring Boot API experiences intermittent latency spikes, but CPU utilization remains low. How would you investigate the issue using Cloud Monitoring?
+* A production service's HTTP 5xx error rate suddenly increases after deployment. Which metrics and alerting signals would you inspect first?
+* A dashboard shows normal average latency, but customers report slow requests. How would you investigate percentiles and latency distribution?
+* A Java application experiences frequent garbage collection pauses and occasional out-of-memory errors. How would you monitor and diagnose the problem?
+* An alert triggers repeatedly whenever CPU utilization briefly exceeds a threshold. How would you reduce alert noise without missing genuine incidents?
+* A Cloud Run service receives increasing traffic, but its response latency also rises. How would you investigate concurrency, instance scaling, and downstream dependencies?
+* A GKE application has healthy pods, but the service is unavailable to users. How would you investigate application metrics, service routing, load balancing, and uptime checks?
+* A Pub/Sub subscription backlog grows continuously even though consumers are running. How would you identify whether the issue is message volume, processing latency, or consumer capacity?
+* A scheduled BigQuery pipeline misses its data freshness SLA. How would you monitor the pipeline and identify the failing stage?
+* A custom metric stops appearing after a Java application deployment. How would you troubleshoot metric publishing, authentication, resource labels, and API errors?
+* A service's error rate increases only in one region. How would you isolate regional problems using dashboards and metric labels?
+* An application reports successful requests, but the business team sees fewer completed transactions than expected. How would you introduce business-level metrics and reconciliation alerts?
+* A database experiences connection exhaustion during traffic spikes. Which application and infrastructure metrics would help identify the root cause?
+* A production service meets its average latency target but violates its p99 latency objective. How would you investigate and improve the SLO?
+* A critical API has a 99.9% availability objective, and its error budget is being consumed rapidly. How would you quantify the burn rate and prioritize corrective actions?
+* A monitoring dashboard shows gaps during application restarts. How would you distinguish actual service downtime from missing metric samples?
+* A new deployment causes a gradual increase in memory usage over several hours. How would you determine whether this is a memory leak or expected workload behavior?
+* A service has a healthy uptime check but users cannot complete a critical workflow. How would you improve synthetic monitoring to cover the complete journey?
+* A monitoring alert is firing even though the application has recovered. How would you investigate evaluation windows, missing data, and incident closure behavior?
+* A Cloud Monitoring dashboard becomes difficult to use because hundreds of services and metrics are displayed. How would you redesign it for operational clarity?
+* An organization discovers that custom metrics are generating excessive time-series cardinality. How would you identify and reduce the cause?
+* An API's latency increases whenever a downstream service slows down. How would you correlate metrics across service boundaries to identify the dependency causing the delay?
+* A Java service has high request latency, normal CPU usage, and an exhausted thread pool. What metrics would you inspect, and how would you diagnose the bottleneck?
+* A monitoring policy fails to detect an outage because it relies only on CPU and memory thresholds. How would you redesign the monitoring strategy?
+* A team wants to monitor an external payment provider's availability and response time. How would you implement synthetic checks and alerting?
+* A production incident affects multiple microservices, but each team has separate dashboards and alert policies. How would you build a centralized observability view?
+* A monitoring integration generates too many API requests and encounters quota errors. How would you redesign metric publishing and batching?
+* An alert detects high latency but does not provide enough information for incident response. How would you improve the dashboard, labels, logs, and trace links?
+* A service frequently scales up and down, causing inconsistent per-instance metrics. How would you aggregate metrics at the service level?
+* Management wants a weekly reliability report covering availability, latency, error-budget consumption, and incidents. How would you design the metrics and reporting process?

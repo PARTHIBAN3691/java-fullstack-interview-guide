@@ -1,0 +1,30 @@
+* How does Node.js propagate errors through the event loop?
+* How do you handle errors in nested asynchronous operations?
+* How do you handle errors when using Promise.all()?
+* What is the difference between Promise.all() and Promise.allSettled() for error handling?
+* How do you handle errors when using Promise.race()?
+* How do you propagate errors from one async function to another?
+* How do you handle errors in an async Express route handler?
+* How does Express error-handling middleware differ from regular middleware?
+* What is the correct signature of Express error-handling middleware?
+* Why should error-handling middleware be registered after application routes?
+* How do you forward an error to Express error-handling middleware?
+* How do you handle errors in file-system operations using Node.js?
+* How do you handle errors when connecting to a database?
+* How do you handle timeouts when calling an external API?
+* How do you distinguish validation errors from business logic errors?
+* What is a custom error class, and why would you create one?
+* How do you create an error hierarchy for a Node.js application?
+* What is the difference between operational errors and programmer errors?
+* How do you preserve the original error when wrapping it in a custom error?
+* What is the cause property of an Error object?
+* How do you implement centralized error handling in an Express application?
+* How do you map application errors to appropriate HTTP status codes?
+* How do you validate request data and return meaningful error responses?
+* How do you handle malformed JSON request bodies in Express?
+* How do you handle errors when a response has already been sent?
+* How do you prevent sensitive stack traces from reaching API clients?
+* How do you log errors with request IDs and contextual information?
+* How do you implement structured logging for errors?
+* How do you handle process-level uncaught exceptions and unhandled rejections?
+* How do you write unit tests for error-handling logic?

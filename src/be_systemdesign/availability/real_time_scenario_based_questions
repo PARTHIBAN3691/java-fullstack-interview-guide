@@ -1,0 +1,30 @@
+* Your Spring Boot application runs on a single server, and the server failure causes complete downtime. How would you redesign the architecture?
+* A production API must achieve 99.99% availability. How would you translate this requirement into an architecture and monitoring strategy?
+* One application instance becomes unresponsive but continues passing a basic TCP health check. How would you improve failure detection?
+* A load balancer continues routing requests to an unhealthy instance. How would you troubleshoot and resolve the issue?
+* Your primary database fails during peak traffic. How would you ensure automatic failover and minimize data loss?
+* A database replica is several minutes behind the primary database. How would this affect failover and read consistency?
+* Two database nodes both believe they are the primary after a network partition. How would you handle this split-brain situation?
+* A payment service depends on an unavailable banking API. How would you maintain service availability without creating duplicate payments?
+* A downstream inventory service becomes slow, causing requests to accumulate across multiple microservices. How would you prevent a cascading failure?
+* A retry mechanism increases traffic during an outage and makes the problem worse. How would you redesign the retry policy?
+* A cache cluster becomes unavailable, causing every request to hit the database. How would you protect the database and preserve essential functionality?
+* A message broker is unavailable for 20 minutes. How would you ensure producers and consumers recover without losing important events?
+* A deployment introduces a defect that affects only some users. How would you roll back safely while maintaining availability?
+* A database schema change must be deployed without stopping application traffic. How would you plan the migration?
+* One availability zone becomes unavailable during a major sales event. How would your system continue handling requests?
+* An entire cloud region fails. How would you redirect traffic and preserve data integrity in another region?
+* DNS caching delays traffic redirection after a regional failure. How would you reduce recovery time?
+* A highly available application has redundant servers, but all instances depend on one centralized authentication service. How would you address this dependency?
+* A critical service reaches CPU and connection-pool limits during a traffic spike. How would you use load shedding and capacity controls?
+* Your monitoring dashboard reports 99.99% availability, but customers report frequent failed transactions. How would you investigate the discrepancy?
+* A system meets its availability target but frequently violates its latency target. How would you evaluate the overall user experience?
+* A financial transaction succeeds in one region, but the region fails before the update reaches the secondary region. How would you handle recovery and reconciliation?
+* A failover test reveals that the secondary database cannot handle production traffic. How would you improve disaster recovery readiness?
+* Your team wants to perform infrastructure maintenance without interrupting requests. Which deployment and traffic-management techniques would you use?
+* A service repeatedly switches between healthy and unhealthy states. How would you prevent unnecessary failovers?
+* An external provider is unavailable, but some application features can still operate independently. How would you implement graceful degradation?
+* A shared Redis cluster fails and causes session loss for all users. How would you redesign session management and caching?
+* A Kafka consumer group falls behind during a sudden traffic increase. How would you maintain availability while recovering processing capacity?
+* A regional failover succeeds, but returning to the primary region causes conflicting writes. How would you design a safe failback process?
+* You are designing availability for a banking application where downtime and transaction loss have serious business consequences. How would you define the architecture, SLOs, RTO, and RPO?

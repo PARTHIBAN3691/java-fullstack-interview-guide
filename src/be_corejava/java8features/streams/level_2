@@ -1,0 +1,26 @@
+
+* Explain the internal working of the Stream API and how a Stream pipeline is executed.
+* How does lazy evaluation improve the performance of Stream pipelines?
+* How does short-circuiting work in operations such as `findFirst()`, `anyMatch()`, and `limit()`?
+* What is the difference between stateless and stateful intermediate operations?
+* Why can `sorted()` and `distinct()` require additional processing compared with `filter()`?
+* How does the Stream API handle encounter order?
+* What is the difference between ordered and unordered Streams?
+* How does `unordered()` affect Stream processing and performance?
+* How does `Spliterator` support Stream traversal and parallel processing?
+* How does the Stream API split data for parallel execution?
+* What is the role of the common ForkJoinPool in parallel Streams?
+* What are the risks of using parallel Streams in a web application?
+* How do you decide whether a Stream should be sequential or parallel?
+* What problems can arise when a parallel Stream modifies a shared mutable object?
+* Why should Stream operations generally be stateless and non-interfering?
+* What is the difference between `forEach()` and `forEachOrdered()` in parallel Streams?
+* How does the combiner function work in a three-argument `reduce()` operation?
+* Why must the identity and accumulator functions in `reduce()` satisfy specific requirements?
+* How do you handle duplicate keys when collecting objects into a Map?
+* How do you implement a custom Collector using the `Collector` interface?
+* What are the roles of the supplier, accumulator, combiner, and finisher in a Collector?
+* What is the difference between `Collectors.groupingBy()` and `Collectors.groupingByConcurrent()`?
+* How do you avoid excessive intermediate collections in a complex Stream pipeline?
+* How do you identify and resolve performance issues in a large Stream-processing pipeline?
+* When would a traditional loop be preferable to a Stream pipeline in production code?

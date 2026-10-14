@@ -1,0 +1,96 @@
+# Core Java — Collections — Set
+## Level 2 — Difficult
+
+### Set Fundamentals
+* How would you design a custom Set implementation that preserves the Set contract?
+* What behavioral guarantees must be maintained for uniqueness, equality, iteration, and optional operations?
+* How would you expose a Set through a public API without allowing callers to mutate internal state?
+* What are the trade-offs between a defensive copy, an unmodifiable view, and an immutable Set?
+* How would you select a Set implementation for a high-throughput service with strict memory constraints?
+* How can a mutable Set element violate application invariants even when the Set implementation itself is correct?
+
+### HashSet
+* Explain how HashSet's underlying HashMap stores elements and represents membership.
+* How do collision handling and resizing affect worst-case performance?
+* How can adversarial or poorly distributed hash codes affect a HashSet?
+* How would you diagnose a HashSet that uses unexpectedly high memory despite containing relatively few elements?
+* How would you estimate initial capacity for a HashSet when the expected number of distinct elements is known?
+* Why is average constant-time membership testing not an unconditional guarantee?
+* How would you design a custom key class to provide reliable equality and hashing?
+* How would you safely publish a prebuilt HashSet to multiple threads when it will never be modified afterward?
+
+### LinkedHashSet
+* How does LinkedHashSet combine hash-based membership with insertion-order iteration?
+* How would you compare LinkedHashSet with HashSet followed by sorting for a repeated-read workload?
+* What memory and garbage-collection trade-offs arise when using LinkedHashSet for millions of elements?
+* How would you preserve first-seen order while deduplicating a large event stream?
+* How would you design a bounded, insertion-ordered uniqueness cache with explicit eviction behavior?
+
+### TreeSet
+* How do balanced-tree invariants maintain efficient TreeSet operations?
+* What are the consequences of a Comparator that is non-transitive or inconsistent?
+* How can comparator equality cause logically distinct objects to be treated as duplicates?
+* How would you implement efficient range queries using NavigableSet?
+* How would you maintain an ordered set of time intervals while supporting frequent insertion, deletion, and nearest-neighbor lookup?
+* How would you investigate TreeSet operations that produce unexpected results after a Comparator change?
+* When would sorting data on demand be more efficient than maintaining a TreeSet continuously?
+
+### SortedSet and NavigableSet
+* How would you design range-query behavior with precise inclusive and exclusive boundaries?
+* How do backed range views affect correctness when the original Set changes?
+* How would you use NavigableSet to find predecessor and successor values efficiently?
+* How would you maintain a sorted set of expiring timestamps and efficiently retrieve expired entries?
+* What consistency concerns arise when exposing a NavigableSet range view to another component?
+* How would you design a scheduling system that needs efficient nearest-slot lookup and collision prevention?
+
+### Set Operations and Utilities
+* How would you compute the union, intersection, and symmetric difference of very large Sets efficiently?
+* How would you compare two collections as multisets while preserving duplicate counts?
+* How would you remove duplicates while preserving order and minimizing memory usage?
+* How would you design a Set API that supports safe snapshots for concurrent readers?
+* How would you implement an efficient membership index for millions of business identifiers?
+* What are the trade-offs between using a Set, a sorted array, and a hash-based lookup structure for a mostly read-only dataset?
+
+### Hashing and Equality
+* How can violations of the `equals()` and `hashCode()` contract cause duplicate logical elements in a HashSet?
+* How would you investigate a Set that accepts an element already present according to business rules?
+* How would you design equality and hashing for composite domain objects?
+* Why can using mutable domain objects as Set elements cause difficult-to-reproduce bugs?
+* How would you test custom equality implementations against contract requirements?
+* How would you diagnose poor hash distribution and distinguish it from other performance bottlenecks?
+
+### Generics and Set
+* How would you implement a generic Set-copy method using wildcard bounds?
+* Why can generic Set types not be checked completely at runtime?
+* How would you prevent heap pollution when raw Set types interact with parameterized types?
+* How would you design a type-safe registry of handlers using Sets and class tokens?
+* What are the limitations of wildcard types when adding elements to a Set?
+* How would you design a generic utility that performs union or intersection without unnecessarily restricting compatible input types?
+
+### Concurrent and Synchronized Sets
+* How does CopyOnWriteArraySet implement membership and iteration behavior?
+* Why can CopyOnWriteArraySet be inefficient when the number of elements or write frequency grows?
+* How would you implement an atomic check-and-add operation across multiple concurrent requests?
+* What consistency guarantees do concurrent hash-based Sets provide during iteration?
+* How would you choose between external locking, a synchronized Set, and a concurrent hash-based Set?
+* How would you design a concurrent Set that supports high write throughput and accurate membership checks?
+* How would you avoid race conditions when a business operation requires several Set modifications to happen atomically?
+* How would you safely shut down a service that continues to update a shared Set during termination?
+
+### Set and Streams
+* How would you process millions of elements with Streams while avoiding excessive intermediate allocations?
+* What correctness problems arise when a parallel Stream writes into a shared mutable Set?
+* How would you preserve encounter order while removing duplicates in a parallel pipeline?
+* How would you choose a collector for HashSet, LinkedHashSet, or TreeSet output?
+* How would you diagnose a Stream pipeline whose `distinct()` operation consumes excessive memory?
+* How would you perform scalable deduplication when the complete dataset cannot fit in memory?
+* How would you make duplicate detection deterministic when processing data in parallel?
+
+### Set Performance and Complexity
+* How would you benchmark HashSet, LinkedHashSet, and TreeSet using JMH?
+* How can element count, hash distribution, hit ratio, and data locality affect benchmark results?
+* How would you estimate memory usage for millions of Set entries?
+* How would you distinguish resizing overhead from poor hash distribution in production?
+* How would you optimize a membership-check-heavy application without compromising correctness?
+* How would you select between in-memory Sets, sorted collections, and external storage for very large datasets?
+

@@ -1,0 +1,30 @@
+* How would you design a highly available replicated database for millions of transactions per day?
+* How do you guarantee strong consistency in a replicated distributed system?
+* What trade-offs exist between consistency, availability, and partition tolerance?
+* How do consensus protocols such as Raft and Paxos support safe leader election and replication?
+* How does a replicated state machine maintain consistent state across nodes?
+* How do you prevent split-brain during a network partition?
+* How do fencing tokens help prevent writes from an outdated leader?
+* How do you design leader election when network delays make failure detection unreliable?
+* How do you choose replication quorum sizes to balance latency, availability, and consistency?
+* Under what conditions can read and write quorums guarantee overlapping replica sets?
+* How do you prevent stale reads after a leader failover?
+* How do you guarantee that acknowledged writes survive failover?
+* How do write-ahead logs support database replication and crash recovery?
+* How do log sequence numbers help replicas track and recover missing changes?
+* How do you handle divergent replication histories after a network partition?
+* How do you reconcile conflicting writes in a multi-leader architecture?
+* How do conflict-free replicated data types (CRDTs) help resolve concurrent updates?
+* How do you design multi-region replication for a globally distributed application?
+* How do you balance replication latency against regional availability?
+* How do you prevent cascading replication lag during a sudden write spike?
+* How do you perform zero-downtime migration between replication architectures?
+* How do you rebuild a replica efficiently when the primary database contains terabytes of data?
+* How do you recover a replica that has fallen too far behind to use incremental replication?
+* How do you maintain transactional consistency when data spans multiple replicated databases?
+* How do you design replication for a financial ledger that cannot tolerate lost acknowledged transactions?
+* How do you handle replication conflicts when the same entity is updated in multiple regions?
+* How do you design replication for event-driven systems with replayable event logs?
+* How do you evaluate the impact of replication on storage costs, network bandwidth, and write throughput?
+* How do you test failover correctness under concurrent writes and partial network failures?
+* How would you design a replication strategy that supports disaster recovery with strict RPO and RTO targets?

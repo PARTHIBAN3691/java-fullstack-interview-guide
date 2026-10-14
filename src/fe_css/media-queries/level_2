@@ -1,0 +1,30 @@
+* Explain how media query evaluation interacts with the CSS cascade and specificity.
+* How does source order affect styles when multiple media queries match?
+* How do CSS range context comparisons work in media queries?
+* What is the difference between width, device-width, and viewport width?
+* Why is device-width generally less useful than width for responsive layouts?
+* How do viewport units behave on mobile browsers with dynamic browser controls?
+* How can browser zoom affect media query evaluation?
+* How do media queries behave when a browser window is resized dynamically?
+* What is the difference between media queries and container queries?
+* When should container queries be preferred over viewport media queries?
+* How can you combine media queries with container queries in a component-based application?
+* How do prefers-color-scheme and manually selected themes interact?
+* How would you design a dark-mode system that supports both system preferences and user overrides?
+* How can prefers-reduced-motion be applied consistently across an application?
+* How do resolution media queries work with device pixel ratios?
+* How would you write media queries for high-density displays without unnecessarily duplicating styles?
+* What are the accessibility implications of hiding content at certain breakpoints?
+* How can responsive breakpoints affect keyboard navigation and focus visibility?
+* How would you design responsive typography using clamp() alongside media queries?
+* How can you reduce the number of media queries in a large CSS codebase?
+* What are the trade-offs between a mobile-first and desktop-first architecture in a large application?
+* How can CSS custom properties work alongside media queries for theme and layout changes?
+* How would you prevent conflicting media queries across multiple component stylesheets?
+* How do media queries interact with CSS cascade layers?
+* How can you implement responsive layouts for ultra-wide screens without breaking readability?
+* How would you support responsive layouts across embedded webviews and desktop browsers?
+* How can media queries affect layout stability and perceived performance?
+* How would you investigate a responsive layout issue that occurs only on certain browser sizes?
+* How can automated visual regression testing validate responsive breakpoints?
+* How would you establish a maintainable responsive design system for a large enterprise application?

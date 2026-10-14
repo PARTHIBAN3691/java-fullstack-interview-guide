@@ -1,0 +1,18 @@
+# Core Java — Date and Time API
+## Level 0 — Easy
+
+1. What is the Java Date and Time API, and in which Java version was it introduced?
+2. Why was the `java.time` API introduced when Java already had `Date` and `Calendar`?
+3. What are the differences between `LocalDate`, `LocalTime`, and `LocalDateTime`?
+4. What is the difference between `LocalDateTime` and `ZonedDateTime`?
+5. What is the purpose of the `Instant` class?
+6. What is the difference between `Period` and `Duration`?
+7. How do you get the current date and time using the Java Date and Time API?
+8. How do you create a specific date using `LocalDate`?
+9. How do you parse a date string into a `LocalDate`?
+10. How do you format a date using `DateTimeFormatter`?
+11. What is the purpose of the `Month` and `DayOfWeek` enums?
+12. How do you add or subtract days, months, and years from a date?
+13. How do you check whether a year is a leap year?
+14. What do the `isBefore()` and `isAfter()` methods do?
+15. Are classes in the `java.time` API mutable or immutable?

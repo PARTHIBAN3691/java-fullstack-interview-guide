@@ -1,0 +1,26 @@
+
+* An application receives user input containing leading and trailing Unicode whitespace. How would you normalize it using Java 11 String methods?
+* A validation service must reject strings containing only whitespace. How would you implement this using `isBlank()`?
+* A log-processing application needs to read a multiline String and process each line separately. How would you use `String.lines()`?
+* A report generator needs to create a separator consisting of 100 hyphens. How would you use `String.repeat()`?
+* A file-processing service reads and writes small configuration files. How would `Files.readString()` and `Files.writeString()` simplify the implementation?
+* A configuration file must always be read using UTF-8 regardless of the operating system. How would you ensure consistent character encoding?
+* A service needs to append audit records to a file without overwriting existing content. How would you use `Files.writeString()` with appropriate open options?
+* A Stream pipeline must filter out blank strings using a method reference. How could `Predicate.not()` improve readability?
+* A microservice must call an external REST API using only standard Java libraries. How would you implement the HTTP request using Java 11?
+* An external API requires a JSON POST request with an authorization header. How would you construct the request and handle the response?
+* An external service sometimes responds slowly. How would you configure connection and request timeouts using the Java 11 HTTP Client?
+* An API client must make several independent HTTP calls concurrently. How would you use `sendAsync()` and `CompletableFuture`?
+* An external API returns HTTP 429 or HTTP 503 responses intermittently. How would you design retry handling with backoff?
+* A downstream service returns a large JSON response. How would you avoid unnecessary memory consumption while receiving the response?
+* An API endpoint redirects requests to another host. What security checks should be considered before following the redirect?
+* A service needs to communicate with an internal API that requires mutual TLS. How would you configure the HTTP Client?
+* An application must call an API through a corporate proxy. How would you configure the HTTP Client to use the proxy?
+* A production Java service experiences unexplained latency spikes. How would Java Flight Recorder help identify the cause?
+* A Java application running in a container experiences unexpected memory pressure. Which Java 11 JVM and monitoring capabilities would you investigate?
+* A team wants to run a small Java utility without maintaining a separate compilation step. How could Java 11's single-source-file launch feature help?
+* A Java 8 application uses removed Java EE and CORBA modules. What should the team verify during migration to Java 11?
+* A codebase uses `trim()` throughout its validation logic, but Unicode whitespace is not handled as expected. How would you modernize the code?
+* A batch job processes large text files and risks exhausting heap memory. When would you prefer streaming file APIs over `Files.readString()`?
+* A service needs to enforce a maximum number of concurrent HTTP requests while preserving asynchronous execution. How would you design the solution?
+* An HTTP request succeeds at the transport level but returns a non-2xx status code. How would you separate transport failures from application-level failures?

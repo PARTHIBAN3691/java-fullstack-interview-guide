@@ -1,0 +1,30 @@
+* A production consumer group experiences continuous rebalances, and consumer lag increases rapidly. How would you investigate and resolve the issue?
+* A consumer group has ten consumers but only four topic partitions. How would you explain the unused consumer capacity and improve the design?
+* A Spring Boot Kafka consumer stops receiving messages after a deployment, even though the application is running. How would you troubleshoot the group membership and partition assignment?
+* One consumer instance processes messages much more slowly than the others. How would you identify the bottleneck and restore balanced processing?
+* A consumer group loses processing capacity after one instance crashes. How would you verify partition reassignment and recovery?
+* A database call takes longer than `max.poll.interval.ms`, causing repeated rebalances. How would you redesign message processing?
+* Consumer lag grows during peak traffic but returns to normal overnight. How would you determine whether scaling consumers would help?
+* A team accidentally deploys two applications with the same consumer group ID. How would you identify the impact and separate their processing requirements?
+* A new consumer group is created for analytics, but it unexpectedly reprocesses a large backlog. How would you investigate offset initialization and retention?
+* A consumer group starts reading from the latest offset after a restart and misses older unprocessed events. How would you diagnose and correct the configuration?
+* A consumer crashes after updating the database but before committing its Kafka offset. How would you prevent duplicate business transactions?
+* A consumer commits offsets before its database transaction completes, and some business updates are missing. How would you correct the processing sequence?
+* A consumer group has low average lag but one partition has millions of pending messages. How would you investigate partition skew and consumer assignment?
+* During a rolling deployment, consumers repeatedly leave and rejoin the group. How would you minimize rebalances?
+* A consumer group cannot recover because its committed offsets are outside the retained log range. How would you assess the data-loss risk and recover safely?
+* A group coordinator changes frequently, and consumers experience temporary processing interruptions. How would you investigate broker health and coordinator behavior?
+* An autoscaler increases consumer replicas, but throughput does not improve. How would you determine whether partition count or another bottleneck limits scaling?
+* A consumer group uses manual commits, but offsets advance inconsistently after batch processing failures. How would you correct the commit strategy?
+* A poison message repeatedly fails and blocks progress on a partition. How would you design retries and dead-letter handling?
+* A new group ID is introduced during migration, and the application processes old events twice. How would you prevent duplicate business effects?
+* A consumer group processes payment events from multiple tenants, but one tenant's traffic dominates the workload. How would you isolate or rebalance processing?
+* A consumer group has frequent heartbeat timeouts even though CPU utilization is low. How would you investigate networking, garbage collection, and polling behavior?
+* A production incident requires replaying yesterday's events for a subset of customers. How would you replay the data without affecting the live consumer group?
+* A Kafka consumer group loses throughput after a broker upgrade. How would you distinguish coordinator problems from fetch latency and application processing issues?
+* A consumer group appears healthy, but the business dashboard shows delayed order processing. How would you trace the delay across Kafka and downstream services?
+* A consumer group fails to rejoin after a network interruption. How would you investigate session timeouts, coordinator discovery, and client logs?
+* A consumer group uses static membership, but a replaced instance cannot join because its previous identity is still active. How would you resolve the conflict?
+* A consumer application uses asynchronous processing and commits offsets out of order. How would you preserve correct offset progression?
+* An organization wants separate retry behavior for transient database failures and invalid business events. How would you design consumer groups and retry topics?
+* A disaster-recovery exercise switches consumption to another Kafka cluster. How would you validate offsets, replay behavior, ordering, and duplicate prevention?

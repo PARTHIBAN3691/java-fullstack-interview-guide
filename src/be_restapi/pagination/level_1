@@ -1,0 +1,30 @@
+* How do you implement pagination in a Spring Boot REST API?
+* How do you use PageRequest to create a Pageable object?
+* What is the difference between Page, Slice, and List in Spring Data JPA?
+* How does Spring Data JPA generate pagination queries?
+* How do you return pagination metadata in a REST API response?
+* How do you implement pagination using LIMIT and OFFSET in SQL?
+* How do you implement pagination using the ROW_NUMBER function?
+* How do you combine pagination with sorting?
+* How do you combine pagination with filtering criteria?
+* How do you validate page number and page size parameters?
+* How do you enforce a maximum page size in Spring Boot?
+* How do you implement a default sorting order for paginated results?
+* Why should paginated queries use deterministic sorting?
+* What happens when multiple records have the same sort value?
+* How do you avoid duplicate records across pages?
+* How do you avoid missing records when data changes between page requests?
+* What is the difference between offset pagination and keyset pagination?
+* How does cursor-based pagination work?
+* What information should a cursor contain?
+* How do you implement cursor-based pagination using Spring Data JPA?
+* How do you implement pagination for a one-to-many relationship?
+* How do you paginate DTO projections instead of loading complete entities?
+* How do you return pagination links such as next, previous, first, and last?
+* How do you handle an out-of-range page request?
+* How do you optimize the database count query used by Page?
+* When should you use Slice instead of Page?
+* How do you implement pagination for native SQL queries?
+* How do you test the first, middle, last, and empty pages?
+* How do you document pagination parameters in OpenAPI or Swagger?
+* How do you implement pagination in a Node.js or Express REST API?

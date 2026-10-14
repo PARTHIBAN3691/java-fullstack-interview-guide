@@ -1,0 +1,30 @@
+* A Spring Boot application deployed to Cloud Run intermittently fails to connect to Cloud SQL. How would you investigate connectivity, authentication, and connection pooling?
+* Your application starts returning database connection timeout errors during peak traffic. How would you identify the root cause and restore service?
+* Cloud SQL CPU utilization reaches 95% after a new application release. How would you investigate queries, indexes, and database resource usage?
+* A frequently executed SQL query that previously took milliseconds now takes several seconds. How would you troubleshoot the execution plan and data growth?
+* Your Cloud SQL instance runs out of available connections after Cloud Run scales to hundreds of instances. How would you redesign connection management?
+* A database transaction updates an account balance but fails before writing the transaction history. How would you ensure atomicity and data consistency?
+* Two concurrent requests attempt to update the same inventory record, causing overselling. How would you prevent race conditions?
+* Your application experiences deadlocks during high-volume order processing. How would you investigate lock ordering and transaction boundaries?
+* A read replica shows stale data immediately after a successful payment. How would you handle replication lag and read-after-write consistency?
+* The Cloud SQL primary instance fails during a business-critical transaction. How would you investigate failover behavior and verify transaction outcomes?
+* A database upgrade is required, but the application cannot tolerate extended downtime. How would you plan and execute the upgrade?
+* Your team needs to migrate a multi-terabyte PostgreSQL database from an on-premises server to Cloud SQL. How would you minimize downtime and validate the migration?
+* A database migration completes, but some records differ between the source and target databases. How would you reconcile the differences?
+* An application cannot connect to Cloud SQL after private IP is enabled. How would you troubleshoot VPC connectivity, DNS, routing, and firewall configuration?
+* Your service begins failing after database credentials are rotated. How would you diagnose secret versions, connection pools, and authentication settings?
+* A security audit finds that an application uses a database account with excessive privileges. How would you implement least-privilege access without disrupting production?
+* A production database is accidentally modified by a faulty batch job. How would you recover the required data using backups or point-in-time recovery?
+* Cloud SQL storage is approaching its configured limit. How would you prevent an outage and plan storage growth?
+* Your application response time increases even though Cloud SQL CPU and memory utilization appear normal. How would you investigate locks, network latency, and connection-pool waits?
+* A scheduled batch job locks tables and slows down customer-facing requests. How would you redesign the job to reduce its production impact?
+* A Spring Boot application reports successful transactions, but duplicate orders appear in the database. How would you investigate retries, idempotency, and transaction boundaries?
+* After enabling high availability, the application experiences transient connection errors during failover. How would you make the application recover automatically?
+* Your organization requires regional disaster recovery for Cloud SQL. How would you design backups, replication, failover, and recovery testing?
+* A database maintenance window causes unexpected application errors. How would you improve retry behavior, connection recovery, and operational planning?
+* A new index improves query speed but increases write latency and storage consumption. How would you evaluate its overall impact?
+* Cloud SQL costs increase significantly after a traffic spike. How would you determine whether the cause is instance sizing, storage, replicas, backups, or query inefficiency?
+* Your application must support both read-heavy dashboards and write-heavy transactional APIs. How would you design primary and replica usage?
+* An application deployed to GKE cannot authenticate to Cloud SQL after its workload identity configuration changes. How would you troubleshoot IAM and database authentication?
+* A critical API needs a strict p99 latency target while sharing Cloud SQL with reporting workloads. How would you isolate and optimize workloads?
+* Your team needs to perform a database schema change while old and new application versions run simultaneously. How would you ensure backward compatibility?

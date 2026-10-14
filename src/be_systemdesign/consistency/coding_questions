@@ -1,0 +1,30 @@
+* Write a Java program demonstrating how two threads can produce a lost update when modifying a shared counter.
+* Implement a thread-safe counter using synchronized methods.
+* Implement a thread-safe counter using AtomicInteger.
+* Write a Java program that demonstrates the difference between visibility and atomicity.
+* Implement optimistic locking using a version field in a Java entity.
+* Write a method that updates a record only when its version matches the expected version.
+* Implement a retry mechanism for optimistic locking failures with a maximum retry count.
+* Write a Java program that simulates a stale read from a replica.
+* Implement a simple primary-replica store with synchronous replication.
+* Extend a primary-replica store to simulate asynchronous replication lag.
+* Implement a read-after-write consistency mechanism using a session version.
+* Write a Java class that rejects updates with an older version number.
+* Implement last-write-wins conflict resolution using versioned records.
+* Write a program that detects concurrent updates using version vectors.
+* Implement a basic quorum read and write simulation across five replicas.
+* Write a Java method that determines whether read and write quorums overlap.
+* Implement a versioned key-value store that detects conflicting writes.
+* Write a program that merges two sets of updates using a simple grow-only set CRDT.
+* Implement a counter CRDT that merges replica states without double-counting increments.
+* Write a Java program that demonstrates idempotent processing of duplicate events.
+* Implement an idempotency-key store for payment requests.
+* Write a method that processes events in sequence-number order and rejects outdated events.
+* Implement a transactional outbox entity and repository method using Spring Data JPA.
+* Write a Java service that updates an entity using a database transaction.
+* Implement a money transfer method that debits and credits accounts atomically.
+* Write a SQL query using row-level locking to prevent concurrent withdrawals from overspending an account.
+* Implement a compare-and-set update using SQL and a version column.
+* Write a Java simulation of two competing leaders and use fencing tokens to reject stale writes.
+* Implement a reconciliation job that compares source records with replicated records and reports mismatches.
+* Write unit tests that verify concurrent updates do not violate an account balance invariant.

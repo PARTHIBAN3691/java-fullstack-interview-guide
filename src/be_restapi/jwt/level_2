@@ -1,0 +1,30 @@
+* Explain the complete JWT authentication lifecycle in a distributed microservices architecture.
+* How would you design a secure JWT-based authentication system for a high-traffic application?
+* How do you rotate JWT signing keys without disrupting active users?
+* How does a JWT key ID (kid) help select the correct signing key?
+* How would you securely distribute and manage public keys across multiple services?
+* How do JWKS endpoints work, and how should services cache public keys?
+* How would you handle signing-key rotation when old tokens are still valid?
+* What are the security differences between HS256, RS256, and ES256?
+* What risks arise when a JWT verifier accepts an unexpected signing algorithm?
+* How would you prevent algorithm-confusion vulnerabilities?
+* Why must a JWT verifier validate the issuer, audience, expiration, and signature?
+* What is the difference between a signed JWT and an encrypted JWT?
+* When would you use JSON Web Encryption (JWE) instead of a signed JWT?
+* How would you prevent token replay attacks?
+* What are the limitations of revoking JWTs before their expiration time?
+* How would you implement token revocation in a stateless architecture?
+* What are the trade-offs between a token denylist, short-lived access tokens, and token introspection?
+* How would you design refresh-token rotation with reuse detection?
+* What should happen if an already-rotated refresh token is presented again?
+* How would you detect and respond to refresh-token theft?
+* How do access-token expiration and refresh-token expiration differ?
+* How would you handle concurrent refresh requests from the same client?
+* How can JWT claim size affect HTTP request size and gateway performance?
+* Why should sensitive personal or business data generally be excluded from JWT claims?
+* How would you handle authorization changes when a JWT contains stale role information?
+* How would you design tenant-aware authorization using JWT claims?
+* How do JWTs interact with OAuth 2.0 and OpenID Connect?
+* What is the difference between an OAuth access token and an OpenID Connect ID token?
+* How would you validate JWTs issued by an external identity provider?
+* How would you design JWT authentication for services communicating across multiple trust boundaries?

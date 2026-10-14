@@ -1,0 +1,30 @@
+* What is error handling in Apache Kafka?
+* Why is error handling important in Kafka applications?
+* What are the common types of errors in Kafka consumers?
+* What are the common types of errors in Kafka producers?
+* What is the difference between a transient error and a permanent error?
+* What is an exception in a Kafka consumer?
+* What happens when a Kafka consumer fails to process a message?
+* What is a retry mechanism in Kafka?
+* What is the purpose of a Dead Letter Topic (DLT)?
+* What is the difference between retrying a message and sending it to a DLT?
+* What is a poison pill message in Kafka?
+* What is a deserialization error in Kafka?
+* What is a serialization error in Kafka?
+* What is a processing exception in a Kafka listener?
+* What is the role of offset commits in Kafka error handling?
+* What happens if a consumer crashes while processing a message?
+* What is the difference between automatic and manual acknowledgment?
+* What is a retry policy in Kafka?
+* What is a backoff policy?
+* What is fixed backoff in Kafka error handling?
+* What is exponential backoff?
+* What is the purpose of logging Kafka processing errors?
+* How can you identify failed messages in Kafka?
+* What is a Kafka consumer rebalance, and how can it affect error handling?
+* What is the role of exception handling in Spring Kafka?
+* What is the difference between record-level and batch-level error handling?
+* What is a consumer timeout, and how can it affect processing?
+* How can invalid messages be handled in a Kafka application?
+* Why should Kafka error handling be monitored?
+* What are the basic best practices for error handling in Kafka?

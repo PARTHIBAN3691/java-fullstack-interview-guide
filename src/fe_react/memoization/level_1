@@ -1,0 +1,30 @@
+* How does React.memo determine whether a component should re-render?
+* What is the difference between shallow comparison and deep comparison?
+* Why can inline objects cause memoized components to re-render?
+* Why can inline functions reduce the effectiveness of React.memo?
+* How does useMemo help stabilize object and array references?
+* How does useCallback help React.memo optimize child components?
+* What happens when a dependency is missing from a useMemo dependency array?
+* What happens when a dependency is missing from a useCallback dependency array?
+* How do stale closures affect memoized callbacks?
+* How do you correctly update state inside a memoized callback?
+* How can functional state updates reduce useCallback dependencies?
+* Can useMemo be used to memoize JSX elements?
+* How do you memoize an expensive filtering or sorting operation?
+* How do you optimize a parent-child component relationship using memoization?
+* How does passing children affect React.memo?
+* How can Context providers reduce the effectiveness of memoization?
+* How do you optimize components that consume frequently changing Context values?
+* What is the difference between memoization and caching?
+* Is useMemo a guarantee that a value will always be retained?
+* Why should useMemo not be used to implement essential program logic?
+* How do you measure whether memoization actually improves performance?
+* How do React DevTools Profiler and browser performance tools help analyze re-renders?
+* What is the difference between rendering a component and committing its changes?
+* How can React.memo help optimize large lists?
+* Why is memoization alone insufficient for optimizing very large lists?
+* How do stable keys and memoization work together in list rendering?
+* How can custom comparison functions be used with React.memo?
+* What risks are associated with custom comparison functions?
+* How do you decide whether to use React.memo or optimize the component's parent?
+* How does React Compiler affect the need for manual memoization?

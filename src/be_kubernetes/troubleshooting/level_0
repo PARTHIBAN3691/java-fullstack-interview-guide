@@ -1,0 +1,30 @@
+* What is Kubernetes troubleshooting?
+* What are the common issues encountered in Kubernetes clusters?
+* How do you check the status of Pods in Kubernetes?
+* How do you view logs of a running Pod?
+* How do you view logs of a previously terminated container?
+* What is the difference between kubectl get and kubectl describe?
+* How do you identify why a Pod is in Pending state?
+* What is CrashLoopBackOff in Kubernetes?
+* What causes an ImagePullBackOff error?
+* What does the ErrImagePull status indicate?
+* What is the difference between Pending, Running, and Failed Pod phases?
+* How do you identify which node a Pod is running on?
+* How do you check events in a Kubernetes namespace?
+* How do you troubleshoot a Pod stuck in ContainerCreating?
+* What is the OOMKilled status?
+* How do you identify whether a container exceeded its memory limit?
+* How do you troubleshoot a Service that is not accessible?
+* How do you check whether a Service has endpoints?
+* How do you verify DNS resolution inside a Kubernetes cluster?
+* How do you check the status of a Deployment?
+* What does a failed Deployment rollout mean?
+* How do you restart a Kubernetes Deployment?
+* How do you check CPU and memory usage of Pods?
+* How do you troubleshoot a PVC stuck in Pending state?
+* How do you check whether a Kubernetes node is Ready?
+* What does the NotReady status indicate for a node?
+* How do you check Kubernetes resource quotas?
+* How do you identify configuration errors in a Pod manifest?
+* How do you troubleshoot failed liveness and readiness probes?
+* What are the most commonly used kubectl commands for troubleshooting?

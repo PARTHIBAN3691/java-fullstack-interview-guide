@@ -1,0 +1,30 @@
+* Explain the architecture of Google Cloud Dataflow and how it executes Apache Beam pipelines.
+* How does Dataflow distribute work across workers and rebalance processing tasks?
+* How does Dataflow optimize an Apache Beam pipeline graph before execution?
+* How would you design a high-throughput streaming pipeline processing millions of events per second?
+* How would you optimize a Dataflow pipeline with high system lag and increasing backlog?
+* How do event time, processing time, and ingestion time differ in distributed stream processing?
+* How do watermarks and triggers interact when events arrive out of order?
+* How would you design a pipeline that correctly handles late-arriving events over an extended period?
+* How would you choose between fixed, sliding, and session windows for a business use case?
+* How would you handle data skew when one key receives a disproportionate share of events?
+* How would you mitigate hot keys in GroupByKey and Combine operations?
+* How would you optimize a pipeline that performs expensive joins using side inputs?
+* How would you choose between side inputs, CoGroupByKey, and external lookups for enrichment?
+* How would you implement stateful stream processing without allowing unbounded state growth?
+* How would you design deduplication for events that may be delivered more than once?
+* How would you achieve effectively-once business processing when integrating Pub/Sub, Dataflow, and external databases?
+* How do Dataflow exactly-once processing guarantees differ from end-to-end exactly-once business outcomes?
+* How would you design idempotent writes to BigQuery from a streaming Dataflow pipeline?
+* How would you manage schema evolution in a pipeline consuming JSON or Avro events?
+* How would you implement dynamic destinations for writing records to multiple BigQuery tables?
+* How would you optimize BigQuery writes using Storage Write API capabilities?
+* How would you design dead-letter handling and replay for permanently invalid records?
+* How would you troubleshoot repeated worker failures caused by memory pressure or oversized elements?
+* How would you investigate a pipeline where CPU utilization is high but throughput remains low?
+* How would you tune worker count, machine type, and autoscaling settings to balance throughput and cost?
+* How would you design a safe update strategy for a long-running streaming pipeline that uses state and timers?
+* How would you handle incompatible changes to a stateful Dataflow pipeline during deployment?
+* How would you design regional resilience and recovery for a critical streaming pipeline?
+* How would you optimize Dataflow costs for workloads with unpredictable traffic and long idle periods?
+* How would you compare Dataflow with Dataproc, BigQuery SQL, and self-managed Apache Flink for a data-processing workload?

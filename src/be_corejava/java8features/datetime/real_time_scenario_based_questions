@@ -1,0 +1,20 @@
+* An application is used by customers in India, the United States, and the United Kingdom. How would you display the current time according to each user's time zone?
+* A flight booking system stores departure and arrival times across different countries. Which Java date-time classes would you use and why?
+* An e-commerce application needs to schedule an order for delivery on a specific local date. How would you represent and persist the delivery date?
+* A distributed system receives event timestamps from multiple services running in different time zones. How would you normalize and compare these timestamps?
+* A payroll application calculates employee service duration from joining date to the current date. How would you calculate the duration accurately?
+* A subscription system renews subscriptions monthly. How would you handle renewals when the target month has fewer days than the original renewal date?
+* A billing system calculates late fees when a payment is received after the due date. How would you determine the number of overdue calendar days?
+* A system schedules a meeting for 9:00 AM in New York. How would you ensure the meeting remains at 9:00 AM local time after daylight saving changes?
+* A global application stores a timestamp in UTC but must display the corresponding local time. How would you perform the conversion?
+* A REST API accepts dates in multiple formats from external clients. How would you validate and parse the input consistently?
+* A reporting application must calculate sales for a business day in a specific time zone. How would you determine the correct start and end instants?
+* A hospital application stores a patient's date of birth. Why might `LocalDate` be more appropriate than `LocalDateTime`?
+* A logging service needs to calculate elapsed execution time with precision. Which Java date-time classes or timing APIs would you use?
+* A booking application must prevent reservations for dates in the past. How would you implement this validation and make it testable?
+* A recurring payment system runs on the last day of every month. How would you calculate the next payment date reliably?
+* A global notification service must send reminders at 8:00 AM in each user's local time. How would you model and schedule the notifications?
+* A user reports that an event appears on the previous calendar day after traveling to another country. How would you investigate and fix the issue?
+* A legacy application uses `Date`, `Calendar`, and `SimpleDateFormat` throughout its codebase. How would you migrate it incrementally to the Java 8 Date and Time API?
+* A service stores a local date-time without its time zone, and users in different regions see inconsistent results. How would you redesign the data model?
+* A financial system must produce reproducible reports for a fixed historical date even when the system clock changes. How would you design the date-dependent logic?

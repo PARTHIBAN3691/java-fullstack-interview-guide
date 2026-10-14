@@ -1,0 +1,21 @@
+
+* How do you create and configure an AWS Glue ETL job?
+* How do you use a Glue crawler to discover schema from files stored in Amazon S3?
+* How do you configure an AWS Glue job to read data from S3 and write transformed data back to S3?
+* How do you connect AWS Glue to Amazon RDS or another JDBC-compatible data source?
+* How do you configure IAM roles and permissions for AWS Glue jobs?
+* How do you use the Glue Data Catalog with Amazon Athena?
+* How do you handle schema changes when new columns are added to source data?
+* How do you transform a DynamicFrame into a Spark DataFrame?
+* How do you handle null values, malformed records, and duplicate records in Glue ETL jobs?
+* How do you partition output data in S3 to improve query performance?
+* How do you choose between CSV, JSON, Parquet, and Avro for Glue ETL workloads?
+* How do you configure job bookmarks to process only new or modified data?
+* How do you schedule Glue jobs using triggers or EventBridge?
+* How do you orchestrate multiple Glue jobs using workflows?
+* How do you monitor Glue job execution using CloudWatch logs and metrics?
+* How do you troubleshoot an AWS Glue job that fails because of insufficient memory?
+* How do you configure retries and job timeouts for Glue ETL jobs?
+* How do you optimize Spark transformations and joins in AWS Glue?
+* How do you manage Glue job parameters across development, staging, and production?
+* How do you deploy AWS Glue jobs using infrastructure as code and a CI/CD pipeline?

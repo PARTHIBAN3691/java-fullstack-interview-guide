@@ -1,0 +1,30 @@
+* A Cloud Build pipeline fails during Maven compilation even though the same command works on a developer's laptop. How would you investigate the difference?
+* A Java application builds successfully, but the Docker image push fails with a permission-denied error. How would you troubleshoot IAM and repository configuration?
+* A build trigger does not execute after a developer pushes a commit to GitHub. How would you investigate the trigger configuration and event delivery?
+* A pipeline runs for every branch even though it should run only for the main branch. How would you correct the trigger filters?
+* A pull request pipeline has started exposing sensitive environment variables in its logs. What immediate and preventive actions would you take?
+* A production deployment fails because the Cloud Build service account cannot access a target project. How would you resolve cross-project permissions securely?
+* A Spring Boot build passes unit tests but fails during container startup after deployment. How would you separate build-time and runtime problems?
+* A build downloads an unexpected version of a Java dependency. How would you investigate dependency resolution and prevent supply-chain risks?
+* A Maven build takes 15 minutes longer than usual after a repository or dependency change. How would you identify the bottleneck?
+* A multi-module Java build fails intermittently when several steps execute in parallel. How would you investigate dependencies and execution order?
+* A build succeeds but the expected JAR file is missing from the published artifacts. How would you troubleshoot output paths and artifact declarations?
+* A Docker image is built successfully but cannot be pulled by a GKE cluster. How would you investigate image references, IAM, and cluster configuration?
+* A pipeline deploys an older image because a mutable tag was reused. How would you redesign image tagging and promotion?
+* A critical vulnerability is detected after an image has been built but before production deployment. How would you prevent the release and trigger remediation?
+* A production deployment succeeds technically but fails its health checks. How would you automate validation and rollback?
+* A build trigger allows an untrusted contributor's code to access a privileged service account. How would you redesign the pipeline security boundary?
+* An external CI/CD platform must trigger Cloud Build without storing a long-lived service account key. How would you configure secure authentication?
+* A pipeline fails because Secret Manager access was removed during an IAM cleanup. How would you diagnose the failure without exposing secret values?
+* A build is marked successful, but the deployment step never runs. How would you investigate step dependencies, waitFor settings, and conditional execution?
+* Multiple teams share a Cloud Build service account, and an audit finds excessive permissions. How would you introduce least-privilege service accounts?
+* Build queues grow during peak release periods. How would you investigate quotas, concurrency, and build-worker capacity?
+* A production release needs to be deployed to three regions, but one regional deployment fails. How would you design safe retries and consistent release state?
+* A team wants automatic deployments for development but approval-based deployments for production. How would you implement the workflow?
+* A pipeline repeatedly retries a failed deployment and creates duplicate resources. How would you make the deployment process idempotent?
+* A developer changes cloudbuild.yaml to bypass security checks. How would you enforce protected pipeline configuration and mandatory validation?
+* An organization needs proof that the image running in production was built from a specific commit. How would you implement traceability and provenance verification?
+* A Cloud Build pipeline fails after a Google Cloud API or IAM configuration change. How would you isolate configuration errors from service issues?
+* A team migrating from Jenkins needs to preserve build history, artifact versions, and deployment approvals. How would you plan the migration?
+* A pipeline builds and publishes an image successfully but deploys it to the wrong environment. How would you prevent environment mix-ups?
+* A company wants to reduce CI/CD costs without compromising build security or release reliability. What measurements and optimizations would you introduce?

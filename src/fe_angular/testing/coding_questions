@@ -1,0 +1,30 @@
+* Write a Jasmine unit test for a simple Angular component.
+* Write a test that verifies component initialization in ngOnInit().
+* Write a unit test for a component method that calculates a total.
+* Write a test that simulates a button click and verifies the result.
+* Write a test for an Angular component with @Input() and @Output().
+* Create a mock service and inject it into a component test.
+* Write a unit test for a service that returns a fixed value.
+* Write a unit test for a service that depends on another service.
+* Test an Angular service that makes an HTTP GET request.
+* Use HttpTestingController to verify the URL and HTTP method.
+* Write tests for successful and failed HTTP POST requests.
+* Write a test that verifies an HTTP interceptor adds a custom header.
+* Write a test for an Angular route guard.
+* Write a unit test for a custom Angular pipe.
+* Write a unit test for a structural directive.
+* Write a test that verifies reactive form validation.
+* Write a test that submits a form and checks the emitted event.
+* Write a test for an Observable that emits multiple values.
+* Use fakeAsync() and tick() to test a delayed operation.
+* Write a test for a search component that uses debounceTime().
+* Test that switchMap() prevents stale search results from being displayed.
+* Write a test that verifies a component unsubscribes when destroyed.
+* Write a test for a component that uses the async pipe.
+* Write a unit test for a service that shares data using BehaviorSubject.
+* Write a unit test for a Signal-based counter component.
+* Write tests for an NgRx reducer that handles success and failure actions.
+* Write a test for an NgRx selector that filters active employees.
+* Write a test for an NgRx Effect that calls an API.
+* Write a test that verifies a component displays loading, success, empty, and error states.
+* Write a complete Angular testing example covering a component, service, HTTP interaction, and error handling.

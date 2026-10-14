@@ -1,0 +1,30 @@
+* Explain the internal Redux dispatch and reducer execution flow.
+* How does Redux Toolkit use Immer to support immutable state updates?
+* What is the difference between mutating syntax and actual mutation inside a Redux Toolkit reducer?
+* How would you design a scalable Redux architecture for a large enterprise application?
+* How do you normalize relational data in Redux state?
+* What is createEntityAdapter, and when would you use it?
+* How do normalized state structures improve performance?
+* How do you prevent unnecessary re-renders caused by unstable selector results?
+* How do useSelector equality functions affect component rendering?
+* What are the trade-offs between shallow equality and reference equality in selectors?
+* How do you create memoized selectors with multiple input selectors?
+* How do you handle selector memoization when components receive different parameters?
+* How do you manage concurrent API requests using createAsyncThunk?
+* How do you cancel an asynchronous thunk using AbortController or the thunk API?
+* How do you prevent outdated API responses from overwriting newer Redux state?
+* How do you implement optimistic updates with Redux Toolkit?
+* How do you roll back optimistic updates when a server request fails?
+* What is Redux Toolkit Query (RTK Query)?
+* How does RTK Query differ from createAsyncThunk?
+* How does RTK Query manage caching and request deduplication?
+* How do cache tags and automated invalidation work in RTK Query?
+* How do you implement pagination and infinite queries using RTK Query?
+* How do you handle authentication token refresh with RTK Query?
+* How do you manage WebSocket connections and real-time updates in Redux?
+* How do you implement custom middleware for logging, analytics, or error reporting?
+* How do you handle serializability requirements in Redux state and actions?
+* Why should Promises, functions, and class instances generally not be stored in Redux state?
+* How do you persist selected Redux state while excluding sensitive or transient data?
+* How would you migrate a legacy Redux application to Redux Toolkit incrementally?
+* How do you profile and optimize a Redux application with frequent state updates?

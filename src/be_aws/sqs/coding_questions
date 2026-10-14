@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to send a message to an existing SQS queue.
+* Write a Java program to receive messages from SQS using long polling.
+* Implement a Java method that deletes an SQS message using its receipt handle.
+* Write a Java program to create an SQS queue and retrieve its queue URL.
+* Implement a Spring Boot service that publishes an order event to SQS as a JSON message.
+* Write a Java consumer that deserializes an SQS message into a POJO and validates the required fields.
+* Implement a message-processing service that deletes a message only after successful business processing.
+* Write unit tests for an SQS producer using JUnit and Mockito.
+* Implement exception handling and bounded exponential backoff for transient SQS API failures.
+* Write a Java method that sends multiple messages using `SendMessageBatchRequest` and handles partial failures.
+* Implement a Java consumer that uses message attributes to route messages to different business handlers.
+* Write a Java method that extends the visibility timeout while a long-running message is being processed.
+* Implement a dead-letter queue configuration with a redrive policy and a message-reprocessing utility.
+* Write a Java service that uses an idempotency key to prevent duplicate order processing.
+* Implement a FIFO queue producer using message group IDs and deduplication IDs.
+* Write a concurrent Java SQS consumer using `ExecutorService` with a configurable maximum number of worker threads.
+* Implement a Spring Boot integration that publishes messages to an SNS topic and receives them through an SQS subscription.
+* Write a Java health-monitoring component that reports queue depth and processing failures without exposing sensitive payloads.
+* Implement a transactional outbox pattern in Spring Boot to publish database events reliably to SQS.
+* Design and implement an end-to-end SQS processing service with long polling, idempotent processing, retry handling, dead-letter queues, structured logging, and graceful shutdown.

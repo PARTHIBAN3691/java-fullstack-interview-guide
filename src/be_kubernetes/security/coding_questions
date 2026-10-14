@@ -1,0 +1,30 @@
+* Write a Kubernetes YAML manifest for a ServiceAccount dedicated to a Java Spring Boot application.
+* Write a Role YAML manifest that permits listing and reading Pods in a specific namespace.
+* Write a RoleBinding manifest that grants the Role to a dedicated ServiceAccount.
+* Write a ClusterRole manifest that grants read-only access to Deployments across namespaces.
+* Write a Pod manifest that runs a container as a non-root user.
+* Write a Deployment manifest with runAsNonRoot enabled and privilege escalation disabled.
+* Write a Pod YAML manifest that drops all Linux capabilities and adds only one required capability.
+* Write a Deployment manifest that uses a read-only root filesystem.
+* Write a Pod manifest that applies a seccomp RuntimeDefault profile.
+* Write a namespace manifest that enforces the Restricted Pod Security Standard.
+* Write a Kubernetes Secret manifest containing sample database credentials using base64 encoding.
+* Write a Deployment manifest that consumes Secret values through environment variables.
+* Write a Pod manifest that mounts a Secret as a read-only volume.
+* Write a NetworkPolicy that denies all ingress traffic to Pods in a namespace.
+* Write a NetworkPolicy that permits ingress only from Pods with a specific label.
+* Write a NetworkPolicy that permits a frontend Pod to communicate with a backend Pod on TCP port 8080.
+* Write a NetworkPolicy that restricts egress traffic to DNS and a specific backend service.
+* Write a Deployment manifest that pulls images from a private container registry using imagePullSecrets.
+* Write an Ingress manifest that enables HTTPS using a Kubernetes TLS Secret.
+* Write a Pod manifest that uses a projected ServiceAccount token with a defined expiration.
+* Write a Kubernetes YAML manifest that mounts a trusted custom CA certificate into a Java application.
+* Write a Kyverno policy that rejects containers running in privileged mode.
+* Write an OPA Gatekeeper constraint that prevents workloads from running as root.
+* Write a policy that rejects container images that do not use an approved registry.
+* Write a Kubernetes manifest that restricts a container from mounting hostPath volumes.
+* Write a secure Deployment manifest for a Spring Boot application with resource limits, non-root execution, and a read-only filesystem.
+* Write a Spring Boot configuration example that retrieves database credentials from mounted Kubernetes Secret files.
+* Write Java code that loads a mounted TLS truststore and configures an HTTPS client securely.
+* Write a CI/CD pipeline step that scans a container image and fails the build when critical vulnerabilities are found.
+* Write a Kubernetes security validation checklist or automated script that checks workloads for privileged mode, root execution, privilege escalation, and missing resource limits.

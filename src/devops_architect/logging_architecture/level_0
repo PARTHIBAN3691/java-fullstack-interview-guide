@@ -1,0 +1,36 @@
+* What is logging architecture, and why is it important in a distributed application?
+* What is centralized logging?
+* Why should logs from multiple microservices be collected in a centralized logging platform?
+* What is structured logging?
+* What is the difference between structured logging and plain-text logging?
+* What is JSON logging?
+* What are the advantages of using JSON-formatted logs?
+* What is log aggregation?
+* What is log indexing?
+* What is the difference between log aggregation and log indexing?
+* What is log retention?
+* Why are log retention policies required?
+* What is log rotation?
+* What is the difference between log rotation and log retention?
+* What is log correlation?
+* What is a correlation ID?
+* Why is a correlation ID important in a microservices architecture?
+* What is distributed request tracing?
+* What is the difference between a correlation ID and a trace ID?
+* What is the ELK Stack?
+* What is Elasticsearch, and what role does it play in logging?
+* What is Logstash?
+* What is Kibana?
+* What is the difference between Logstash and Elasticsearch?
+* What is Fluent Bit?
+* What is Fluentd?
+* What is the difference between Fluent Bit and Fluentd?
+* What is the typical flow of logs through an ELK-based logging architecture?
+* What is cloud-native logging?
+* How does logging work in Kubernetes?
+* What is sensitive-data masking in logs?
+* Why should passwords, access tokens, and personal information not be logged?
+* What is the difference between log filtering and log masking?
+* What is log parsing?
+* What is a log ingestion pipeline?
+* What is the difference between application logs, access logs, and audit logs?

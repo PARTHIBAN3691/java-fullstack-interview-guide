@@ -1,0 +1,160 @@
+
+**GitOps Principles**
+* Design a GitOps operating model for hundreds of microservices across development, staging, and production clusters, including repository ownership, promotion, approvals, and rollback.
+* How would you guarantee that production changes remain auditable when emergency fixes, automated controllers, and infrastructure operators can all modify cluster state?
+* How would you prevent configuration drift when multiple controllers manage overlapping Kubernetes resources?
+* How would you design GitOps workflows for applications whose infrastructure, database schema, and application versions must be coordinated?
+* How would you separate source-code CI, artifact promotion, and deployment reconciliation while preserving end-to-end provenance?
+* How would you recover from a compromised Git repository without trusting the compromised deployment definitions?
+* How would you design progressive delivery so that a Git change can be automatically promoted only after health and business metrics meet release criteria?
+
+**Argo CD**
+* Design an Argo CD architecture for multiple clusters and teams with strong project isolation, least-privilege access, and centralized governance.
+* How would you scale Argo CD when thousands of applications generate large reconciliation workloads?
+* How would you prevent automated pruning or self-healing from deleting critical resources during a faulty repository change?
+* How would you manage cluster bootstrap, CRDs, operators, and dependent applications without circular dependencies?
+* How would you safely promote a release across environments while ensuring the same immutable artifact is used in every environment?
+* How would you design disaster recovery for Argo CD itself when the cluster hosting the controller is unavailable?
+* How would you investigate persistent OutOfSync states caused by admission webhooks, mutating controllers, defaulted fields, or field ownership conflicts?
+* How would you secure Argo CD repository credentials and cluster credentials against compromise of its control plane?
+
+**Flux**
+* Design a Flux architecture for managing hundreds of clusters from shared and environment-specific Git repositories.
+* How would you control reconciliation load and prevent a large repository update from overwhelming the Kubernetes API server?
+* How would you organize Flux dependencies for CRDs, operators, infrastructure components, and application workloads?
+* How would you recover a cluster when Flux cannot reach its source repository or its source credentials have expired?
+* How would you design progressive promotion across environments using Flux reconciliation and automated validation?
+* How would you secure source authentication, SOPS decryption, and controller service accounts across tenant boundaries?
+* How would you debug a cluster where Flux reports successful reconciliation but the application is not operational?
+* How would you restore GitOps control after accidental deletion or corruption of Flux custom resources?
+
+**Declarative Infrastructure**
+* Design a declarative infrastructure model that manages cloud resources, Kubernetes clusters, identity, networking, and application dependencies across multiple environments.
+* How would you handle state migration, concurrent changes, and failed applies in a shared Terraform-based platform?
+* How would you detect drift without automatically overwriting legitimate emergency changes?
+* How would you enforce policy checks before infrastructure changes reach production?
+* How would you manage breaking module changes when hundreds of environments consume shared infrastructure modules?
+* How would you recover from a partial infrastructure apply that creates some resources but fails before completing dependencies?
+* How would you protect IaC state files, sensitive outputs, provider credentials, and plan artifacts?
+* How would you design reproducible infrastructure deployments across cloud providers without hiding important provider-specific differences?
+
+**Kubernetes GitOps**
+* Design a GitOps deployment model for multiple Kubernetes clusters, including cluster bootstrap, tenant isolation, policy enforcement, and progressive delivery.
+* How would you prevent a faulty global manifest change from impacting every cluster simultaneously?
+* How would you coordinate CRD upgrades and operator changes when older application manifests depend on the previous schema?
+* How would you manage secret encryption, decryption permissions, and key rotation across GitOps-managed clusters?
+* How would you implement safe multi-cluster promotion with validation gates and automated rollback?
+* How would you prevent conflicts between GitOps reconciliation, admission webhooks, autoscalers, and other Kubernetes controllers?
+* How would you recover a cluster when GitOps configuration is valid but the source repository or deployment controller is unavailable?
+* How would you prove which commit, artifact digest, and policy decisions produced a running workload?
+
+**Platform Engineering**
+* Design a platform engineering operating model for an organization with hundreds of developers, multiple product domains, and several cloud providers.
+* How would you prioritize platform investments using developer lead time, operational burden, adoption, reliability, and total cost?
+* How would you balance standardized golden paths with legitimate workload-specific requirements?
+* How would you define clear ownership boundaries between platform engineering, SRE, security, and application teams?
+* How would you migrate teams from manually managed infrastructure to a platform without stopping feature delivery?
+* How would you design a platform product roadmap based on developer feedback rather than infrastructure-team assumptions?
+* How would you prevent a centralized platform from becoming a bottleneck for every application change?
+* How would you measure whether platform engineering improves outcomes rather than merely increasing tool adoption?
+
+**Internal Developer Platform**
+* Design an IDP that supports self-service service creation, infrastructure provisioning, deployment, observability, and decommissioning at enterprise scale.
+* How would you design a control plane that coordinates long-running workflows across source control, cloud APIs, CI/CD, and GitOps?
+* How would you handle partial failure and compensation when provisioning creates a database but fails to configure networking or credentials?
+* How would you support multiple tenants while isolating permissions, quotas, secrets, and infrastructure state?
+* How would you design platform capabilities so they remain available when an underlying cloud API or GitOps controller is degraded?
+* How would you expose extensibility to product teams without allowing arbitrary privileged code execution?
+* How would you design platform APIs and workflows for backward compatibility across multiple generations of templates?
+* How would you establish an IDP reliability target and calculate its impact on engineering delivery when the platform is unavailable?
+
+**Developer Self-Service**
+* Design a self-service workflow that provisions an application, database, messaging resources, secrets, monitoring, and GitOps deployment from one developer request.
+* How would you prevent duplicate resources when a user retries a request after a timeout but the original provisioning operation is still running?
+* How would you implement authorization, quota enforcement, approvals, and auditability across asynchronous provisioning steps?
+* How would you support safe cancellation and cleanup when a provisioning workflow fails halfway through?
+* How would you prevent developers from using self-service APIs to bypass network, data-residency, or production-access controls?
+* How would you design temporary environments that automatically expire without deleting resources that are still in use?
+* How would you make workflows recoverable after the platform control plane restarts?
+* How would you reduce self-service failure rates when failures originate from multiple cloud providers and external tools?
+
+**Golden Paths**
+* Design versioned golden paths for REST APIs, event consumers, scheduled jobs, and batch applications with appropriate security and operational defaults.
+* How would you roll out a breaking golden-path update to hundreds of services without causing coordinated production failures?
+* How would you enforce critical security controls while allowing controlled customization of optional template features?
+* How would you detect outdated golden-path consumers and automate safe migration recommendations?
+* How would you prevent template-generated repositories from diverging from the platform's supported standards over time?
+* How would you measure golden-path quality using onboarding time, deployment frequency, failure rates, and developer satisfaction?
+* How would you design a deprecation strategy when teams depend on an unsupported runtime or infrastructure module?
+* How would you prevent a golden path from embedding stale dependencies, insecure defaults, or exposed credentials?
+
+**Platform APIs**
+* Design a platform API for long-running provisioning workflows with idempotency, authorization, cancellation, retries, and audit records.
+* How would you implement durable workflow state when the platform API process restarts during a cloud-resource creation operation?
+* How would you handle partial failure across non-transactional external APIs without creating orphaned resources?
+* How would you version platform APIs and their schemas while maintaining compatibility with older developer tooling?
+* How would you protect privileged platform APIs against confused-deputy attacks and tenant-boundary violations?
+* How would you design API quotas and concurrency controls so one team cannot starve the platform for others?
+* How would you correlate a platform API request with Git commits, infrastructure changes, deployment events, and audit logs?
+* How would you build a consistent abstraction over multiple cloud providers while preserving access to provider-specific capabilities?
+
+**Developer Portals**
+* Design a developer portal that combines a software catalog, templates, environment operations, deployment status, ownership, and operational documentation.
+* How would you maintain accurate catalog metadata across thousands of repositories and services?
+* How would you prevent stale ownership metadata from sending incidents to the wrong team?
+* How would you design portal authorization so that discovering a service is allowed more broadly than performing privileged actions on it?
+* How would you integrate service health and deployment information without making the portal dependent on one observability vendor?
+* How would you measure portal effectiveness beyond page views, including task completion time and reduction in support requests?
+* How would you design a migration strategy from a legacy portal to a new platform without disrupting developer workflows?
+* How would you handle sensitive metadata, internal topology, and security findings in a portal used by many engineering teams?
+
+**Backstage**
+* Design a Backstage deployment for a large organization with custom plugins, multiple identity providers, and tenant-aware authorization.
+* How would you scale catalog ingestion and processing when repositories, components, and entity relationships grow substantially?
+* How would you secure software templates that create repositories, configure cloud resources, or trigger production deployments?
+* How would you prevent a malicious or compromised template from exfiltrating credentials or creating unauthorized infrastructure?
+* How would you design a custom plugin that starts a long-running provisioning workflow and exposes status without blocking the portal request?
+* How would you keep catalog entities consistent when repository metadata, ownership systems, and deployment platforms disagree?
+* How would you upgrade Backstage and plugins without breaking templates or integrations used by development teams?
+* How would you diagnose a plugin that works locally but fails in production because of backend permissions, network access, or identity configuration?
+
+**Environment Provisioning**
+* Design an environment-provisioning engine that handles dependencies, concurrent requests, partial failures, retries, cleanup, and auditability.
+* How would you provision short-lived test environments that faithfully reproduce production dependencies while controlling cost?
+* How would you ensure two provisioning workflows cannot accidentally manage the same cloud resource or infrastructure state?
+* How would you manage environment-specific configuration without creating large numbers of nearly identical infrastructure definitions?
+* How would you recover when cloud resources are created successfully but their identifiers are lost because the orchestration process crashes?
+* How would you prevent environment deletion from removing shared databases, network components, or resources still used by other teams?
+* How would you validate policy compliance continuously after provisioning rather than only at creation time?
+* How would you design multi-cloud provisioning when provider APIs have different failure semantics and eventual-consistency behavior?
+
+**Self-Service Deployment**
+* Design a self-service deployment workflow that supports canary releases, progressive promotion, automated verification, and rollback.
+* How would you coordinate application releases with backward-compatible database migrations and asynchronous event-schema changes?
+* How would you enforce separation of duties without making routine deployments dependent on manual platform-team intervention?
+* How would you handle a release that is successfully synchronized by GitOps but fails business-level health checks?
+* How would you implement safe deployment cancellation when traffic has shifted partially to a new version?
+* How would you prove that an emergency deployment is traceable, authorized, and followed by appropriate review?
+* How would you prevent simultaneous deployment requests from creating conflicting releases for the same service?
+* How would you expose rollout progress and actionable diagnostics without exposing privileged cluster details?
+
+**Platform Observability**
+* Design platform observability across GitOps controllers, Kubernetes clusters, provisioning workflows, developer portals, and cloud APIs.
+* How would you trace one developer request through repository creation, infrastructure provisioning, reconciliation, and application readiness?
+* How would you distinguish an application outage from a shared platform failure affecting many teams?
+* How would you define platform SLIs and SLOs for deployment success, provisioning latency, reconciliation lag, and developer task completion?
+* How would you detect slow degradation in GitOps reconciliation before it becomes a widespread deployment incident?
+* How would you control telemetry cardinality and storage cost while retaining useful per-team diagnostics?
+* How would you preserve audit and troubleshooting evidence during a platform outage when the central logging service is unavailable?
+* How would you correlate security-policy denials, deployment failures, and infrastructure changes while preventing sensitive-data exposure?
+
+**Platform Security**
+* Design a zero-trust security model for an IDP that provisions cloud infrastructure and deploys workloads across multiple Kubernetes clusters.
+* How would you prevent a compromised Git repository, Backstage plugin, or CI runner from obtaining unrestricted production access?
+* How would you implement short-lived credentials, workload identity, least privilege, and automated revocation for platform workflows?
+* How would you enforce signed artifacts, software provenance, vulnerability policies, and admission controls throughout the deployment chain?
+* How would you design policy-as-code that blocks insecure deployments while providing clear, actionable feedback to developers?
+* How would you protect GitOps decryption keys and prevent a repository compromise from exposing production secrets?
+* How would you audit and investigate a malicious platform API call that created unauthorized infrastructure?
+* How would you isolate tenants when platform controllers need elevated permissions to provision resources on their behalf?
+* How would you implement emergency access without creating permanent privilege escalation or bypassing audit requirements?

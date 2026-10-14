@@ -1,0 +1,30 @@
+* A Spring Boot application behind a Google Cloud load balancer suddenly returns HTTP 502 errors. How would you investigate the load balancer, backend health, application logs, and network connectivity?
+* A production application returns HTTP 503 errors during peak traffic. How would you determine whether the issue is caused by unhealthy backends, insufficient capacity, or application failures?
+* Users experience intermittent HTTP 504 Gateway Timeout errors when calling a Java REST API. How would you investigate backend latency, timeout settings, and downstream dependencies?
+* A backend instance is healthy according to monitoring but is marked unhealthy by the load balancer. How would you troubleshoot health-check paths, ports, firewall rules, and response codes?
+* A global application is fast for users in one region but slow for users in another region. How would you investigate routing, backend placement, latency, and regional capacity?
+* A deployment causes a sudden increase in failed requests because old instances terminate before traffic drains. How would you implement graceful shutdown and connection draining?
+* A Java application stores user sessions in local memory, causing users to lose sessions when traffic moves between instances. How would you redesign session management?
+* A load balancer sends requests to only a subset of backend instances. How would you investigate backend health, balancing mode, capacity, and connection behavior?
+* A new release must receive only 10% of production traffic before a complete rollout. How would you implement a controlled canary deployment?
+* A primary region becomes unavailable, and the application must continue serving users from a secondary region. How would you configure global routing and failover?
+* An internal microservice is unexpectedly accessible from the public internet. How would you investigate forwarding rules, backend exposure, firewall policies, and routing configuration?
+* A load balancer health check fails after a Spring Boot application changes its management endpoint configuration. How would you restore health checks without exposing sensitive endpoints?
+* A backend application has long-running API requests that are terminated before completion. How would you analyze timeout settings across the load balancer, application server, and client?
+* A Java application uses WebSockets and disconnects users during periods of high traffic. How would you investigate connection limits, timeouts, backend restarts, and session handling?
+* A traffic spike overwhelms the database even though the load balancer successfully distributes requests across instances. How would you protect downstream dependencies and control request concurrency?
+* Cloud Armor blocks legitimate API requests after a security policy update. How would you investigate rule priorities, matched requests, logs, and false positives?
+* HTTPS requests fail after a certificate update, while HTTP requests still work. How would you investigate certificate status, target proxies, DNS, and TLS configuration?
+* A Cloud Run backend returns errors when accessed through a serverless NEG. How would you investigate service configuration, backend settings, permissions, and request timeouts?
+* A GKE application is reachable through a Kubernetes Service but not through its external load balancer. How would you investigate Gateway or Ingress configuration, health checks, and firewall rules?
+* Load balancer costs rise significantly after an application release. How would you analyze request volume, data processing, logging, network traffic, and configuration changes?
+* Requests are distributed across backends, but response times remain inconsistent. How would you compare instance utilization, JVM garbage collection, connection pools, and downstream service latency?
+* A backend autoscaling group takes several minutes to add capacity during a traffic spike. How would you reduce the impact of scaling delays?
+* A new URL-map rule causes requests for one microservice to reach the wrong backend. How would you diagnose host and path matching, rule priorities, and routing configuration?
+* A company needs to expose public APIs while keeping administrative endpoints private. How would you design external and internal load balancing and access controls?
+* A backend must be removed for maintenance without interrupting active requests. How would you perform the change safely?
+* A disaster recovery exercise shows that traffic fails over successfully, but the secondary region returns application errors. How would you validate configuration, secrets, dependencies, and data readiness?
+* Users report that DNS resolves correctly but cannot establish a connection to the load balancer. How would you investigate forwarding rules, IP addresses, firewall rules, and TLS configuration?
+* A global load balancer routes traffic to a region whose application deployment is outdated. How would you prevent incompatible versions from receiving traffic?
+* A security review requires that all public application traffic use HTTPS and that backends cannot be accessed directly. How would you enforce and verify these requirements?
+* A Java API has normal average latency but a high 99th-percentile response time behind the load balancer. How would you isolate tail latency and identify the responsible layer?

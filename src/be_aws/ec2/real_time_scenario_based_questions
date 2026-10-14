@@ -1,0 +1,21 @@
+
+* A Spring Boot application running on EC2 becomes slow during peak traffic. How would you identify whether the bottleneck is CPU, memory, the JVM, the database, or the network?
+* Your EC2 instance passes system status checks but the application is unavailable. How would you troubleshoot the problem?
+* After a deployment, new EC2 instances launch successfully but fail the load balancer health checks. How would you investigate and resolve the issue?
+* Your Auto Scaling group keeps launching and terminating instances repeatedly. How would you identify the root cause?
+* A Java application works when started manually but fails after the EC2 instance reboots. How would you fix the startup configuration?
+* An application needs to access S3, but requests fail with an access-denied error. How would you investigate the EC2 instance role and IAM policy?
+* Your EC2-hosted service is exposed to the internet, and a security review finds SSH open to all IP addresses. How would you remediate the risk?
+* A production EC2 instance runs out of disk space because application logs continue growing. How would you resolve the incident and prevent recurrence?
+* CPU utilization is normal, but the Java application experiences frequent out-of-memory errors. Which JVM and operating-system metrics would you investigate?
+* A deployment must happen without interrupting requests from active users. How would you implement a rolling or blue-green deployment?
+* An EC2 instance in a private subnet cannot download dependencies from an external repository. How would you diagnose routing, NAT, DNS, and security configuration?
+* An application needs persistent storage that survives stopping or replacing an EC2 instance. How would you select and configure the appropriate storage?
+* Your company needs to run development EC2 instances only during office hours. How would you automate startup and shutdown without affecting production?
+* A Spot Instance is interrupted while processing a long-running batch job. How would you design the application to recover safely?
+* One Availability Zone experiences an outage, and the application must continue serving requests. How would you design the EC2 deployment for resilience?
+* A new EC2 instance is healthy, but it receives no traffic from the Application Load Balancer. What would you inspect?
+* An application becomes unavailable after the EC2 instance type is changed. How would you troubleshoot compatibility, resource limits, and network configuration?
+* CloudWatch reports a sudden increase in EC2 network traffic and AWS costs. How would you identify the source and reduce unnecessary data transfer?
+* Your team needs to patch hundreds of EC2 instances consistently. How would you automate patching, validation, and rollback?
+* Management wants a secure and repeatable deployment process for Java applications across development, staging, and production EC2 environments. How would you design it?

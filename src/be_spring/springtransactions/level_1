@@ -1,0 +1,30 @@
+* How does Spring implement declarative transaction management internally?
+* How does @Transactional work with Spring AOP proxies?
+* Why might @Transactional not work when a method is called from another method in the same class?
+* What is the difference between transaction propagation and transaction isolation?
+* Explain the behavior of REQUIRED propagation when a transaction already exists.
+* Explain the behavior of REQUIRES_NEW when a transaction already exists.
+* What happens when a REQUIRES_NEW transaction fails but the outer transaction continues?
+* What is the difference between REQUIRED and NESTED propagation?
+* How does NESTED propagation work with database savepoints?
+* What happens when a method annotated with MANDATORY is called without an existing transaction?
+* How does SUPPORTS propagation behave when a transaction exists versus when it does not?
+* What happens when a transactional method throws a checked exception?
+* How do rollbackFor and noRollbackFor affect transaction rollback?
+* What is the difference between marking a transaction rollback-only and explicitly rolling it back?
+* What does UnexpectedRollbackException mean in Spring transaction management?
+* What is the difference between local and global transaction management?
+* What is the difference between a local database transaction and a distributed transaction?
+* How do transaction isolation levels affect concurrent database operations?
+* What are dirty reads, non-repeatable reads, and phantom reads?
+* What is the difference between READ_COMMITTED and REPEATABLE_READ?
+* How does SERIALIZABLE isolation affect performance and concurrency?
+* What is the purpose of TransactionSynchronizationManager?
+* How do transaction managers coordinate with JPA and Hibernate?
+* How do transactions interact with Spring Data JPA repository methods?
+* What is the effect of readOnly = true on a database transaction?
+* How do transaction timeouts work, and what are their limitations?
+* How do you configure transaction management using @EnableTransactionManagement?
+* How do you implement programmatic transaction management using TransactionTemplate?
+* How do you test rollback behavior in a Spring Boot application?
+* How do you handle exceptions while preserving transactional consistency?

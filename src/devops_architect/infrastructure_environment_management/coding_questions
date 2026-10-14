@@ -1,0 +1,92 @@
+
+**Development Environment**
+* Write a script that validates required JDK, Node.js, Maven or Gradle, and environment-variable versions before a project build starts.
+* Create a Docker Compose configuration for a Spring Boot service, a database, and a message broker with configurable ports and health checks.
+* Implement a build-time validation that fails when required environment-specific configuration values are missing.
+* Write a script that compares tool versions from a project manifest with the versions installed on a developer workstation.
+
+**QA Environment**
+* Implement a test-data reset utility that restores a known database state before an automated integration-test suite runs.
+* Write an automated health-check program that validates application endpoints and dependency readiness before QA tests begin.
+* Create a CI pipeline stage that deploys an artifact to QA, waits for readiness, executes tests, and records the results.
+* Implement a test-environment lock or lease mechanism to prevent conflicting test suites from modifying the same shared resources.
+
+**UAT Environment**
+* Implement a deployment approval gate that prevents promotion until required UAT sign-off records exist.
+* Write a utility that verifies the deployed artifact digest against the release candidate approved for UAT.
+* Create a test-data preparation script that loads synthetic business data and validates required relationships.
+* Implement an audit-record generator that captures the release version, configuration revision, test evidence, approver, and timestamp.
+
+**Staging Environment**
+* Create a CI/CD pipeline that deploys an immutable artifact to staging, executes smoke tests, and publishes a release-readiness report.
+* Implement an automated database-migration validation step that checks migration success and application compatibility.
+* Write a health-check tool that verifies critical service dependencies, TLS configuration, and network connectivity.
+* Implement a rollback script that restores the previous application version while preserving compatible persistent data.
+
+**Production Environment**
+* Create a deployment pipeline with approval checks, canary rollout, health validation, and automated rollback conditions.
+* Implement a script that verifies artifact signatures or digests before production deployment.
+* Write a readiness checker that evaluates error rate, latency, resource utilization, and dependency health after deployment.
+* Implement a release audit report that links source commit, artifact digest, infrastructure revision, configuration version, and deployment outcome.
+
+**Environment Isolation**
+* Write a Kubernetes manifest set that separates development and production workloads using namespaces, service accounts, and resource quotas.
+* Implement a policy check that rejects deployments referencing production secrets from non-production namespaces.
+* Create network policies that allow approved service communication while denying unintended cross-environment traffic.
+* Write an automated test that verifies a QA workload cannot access a protected production endpoint or resource.
+
+**Environment Promotion**
+* Implement a CI/CD pipeline that promotes the same container image digest from QA to UAT, staging, and production.
+* Write a release-manifest validator that rejects promotion when artifact identity, test evidence, or required approvals are missing.
+* Implement a promotion-status tracker that records each environment, deployed digest, configuration revision, and result.
+* Create an automated compatibility check for a coordinated release involving multiple microservices.
+
+**Configuration Separation**
+* Implement a Spring Boot configuration validator that checks required properties for each deployment environment.
+* Write a utility that compares configuration keys across environments while excluding secret values from output.
+* Implement a secret-rotation workflow that updates credentials and verifies that application instances can use the new secret.
+* Create a configuration-change validator that rejects prohibited production values and invalid combinations of properties.
+
+**Infrastructure Consistency**
+* Write a Terraform module for a service environment with configurable sizing but consistent mandatory tags, networking, and security controls.
+* Implement a CI pipeline that runs formatting, validation, security-policy checks, and Terraform plan review before applying changes.
+* Create a script that compares declared infrastructure configuration with a cloud inventory and reports missing or unexpected resources.
+* Write a policy-as-code rule that rejects public storage access or overly permissive security-group rules.
+
+**Ephemeral Environments**
+* Implement a GitHub Actions workflow that creates a unique environment for each pull request and assigns an expiry timestamp.
+* Write a cleanup controller that discovers expired environments and removes their owned resources safely.
+* Implement resource quotas and per-environment cost tags for dynamically provisioned infrastructure.
+* Create an idempotent provisioning script that can safely resume after partial failure without duplicating resources.
+
+**Preview Environments**
+* Build a pull-request automation workflow that deploys a preview, publishes its URL, and updates the deployment status on the pull request.
+* Implement a preview-lifecycle handler that updates deployments on new commits and tears them down when the pull request closes.
+* Write an authorization check that restricts preview access to approved reviewers.
+* Create an automated validation that confirms a preview URL serves the expected commit and reports its health status.
+
+**Environment Provisioning**
+* Implement a REST API that accepts environment-provisioning requests, validates parameters, and returns a trackable request identifier.
+* Create a workflow engine that provisions network, compute, identity, and application resources in dependency order.
+* Implement retry handling with exponential backoff, idempotency keys, and status transitions for asynchronous provisioning.
+* Write a reconciliation loop that compares desired environment state with actual state and retries recoverable failures.
+* Implement quota and policy validation that rejects provisioning requests exceeding approved resource limits.
+
+**Environment Teardown**
+* Implement an idempotent teardown API that safely handles repeated deletion requests.
+* Write a cleanup controller that deletes dependent resources in the correct order and reports incomplete cleanup.
+* Create an orphan-resource scanner that identifies expired or unowned resources using ownership metadata and tags.
+* Implement a retention policy that preserves required audit logs and release artifacts while removing temporary compute resources.
+
+**Infrastructure Drift**
+* Write a script that runs Terraform plan in a controlled pipeline and classifies drift as expected, unexpected, or potentially destructive.
+* Implement a drift-detection report that identifies resource changes and links each change to its infrastructure owner.
+* Create a policy check that prevents automatic remediation of destructive changes until explicit approval is received.
+* Implement a reconciliation workflow that records the observed change, proposed action, approval status, and final result.
+
+**Production Parity**
+* Write an environment-comparison tool that compares runtime versions, infrastructure settings, feature flags, and dependency versions without exposing secrets.
+* Implement a configuration-parity test that checks selected production-critical settings against staging.
+* Create a synthetic-load test that validates autoscaling, timeout handling, and dependency resilience under configurable traffic.
+* Implement a deployment-readiness gate that blocks promotion when critical parity checks fail.
+* Write a defect-diagnostics utility that collects comparable runtime, resource, network, and dependency metadata from staging and production.

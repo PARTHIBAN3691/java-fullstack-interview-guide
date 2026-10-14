@@ -1,0 +1,30 @@
+* How would you design an enterprise CI/CD architecture for multiple Java microservices using Azure DevOps?
+* How would you design a multi-stage YAML pipeline for Dev, QA, UAT, and Production environments?
+* How would you implement zero-downtime deployment for a Spring Boot application using Azure DevOps?
+* How would you design a deployment strategy using Blue-Green deployment in Azure?
+* How would you implement Canary deployment using Azure DevOps and Azure Kubernetes Service?
+* How would you design a rollback strategy for a failed production deployment?
+* How would you implement automated rollback based on application health checks?
+* How would you manage secrets securely across multiple Azure DevOps environments?
+* How would you prevent secrets from being exposed in pipeline logs?
+* How would you design a secure Azure DevOps architecture following least-privilege principles?
+* How would you manage service connections for multiple Azure subscriptions?
+* How would you implement workload identity or managed identity instead of long-lived credentials in CI/CD?
+* How would you optimize a slow Azure DevOps pipeline for a large Java monorepo?
+* How would you implement dependency caching for Maven or Gradle builds?
+* How would you run multiple microservice builds in parallel while maintaining dependency order?
+* How would you design reusable YAML templates for hundreds of microservices?
+* How would you manage different configurations for multiple deployment environments?
+* How would you implement artifact versioning and traceability across CI/CD stages?
+* How would you ensure that exactly the same artifact tested in QA is deployed to Production?
+* How would you design a secure Docker build and image promotion process?
+* How would you integrate container vulnerability scanning into Azure DevOps?
+* How would you implement infrastructure provisioning and application deployment in the same CI/CD process?
+* How would you manage Terraform state securely when Terraform is executed through Azure DevOps?
+* How would you design CI/CD for an application deployed across multiple Azure regions?
+* How would you design disaster recovery and deployment processes for a multi-region application?
+* How would you implement deployment approvals and separation of duties for production?
+* How would you audit who deployed a particular version of an application to production?
+* How would you implement automated quality gates that prevent defective builds from reaching production?
+* How would you design a pipeline that supports hundreds of microservices with independent releases?
+* How would you handle backward compatibility between independently deployed microservices?

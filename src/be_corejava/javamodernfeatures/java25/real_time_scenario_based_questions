@@ -1,0 +1,19 @@
+
+* Your team uses Java to teach programming to beginners. How could compact source files and instance `main` methods simplify the initial learning experience?
+* You need to create a small command-line utility without the boilerplate of a conventional Java class. How would you implement it in Java 25?
+* Your application imports many packages from the same module. How could module import declarations simplify the source code?
+* Your build fails because two imported modules expose types with the same simple name. How would you resolve the ambiguity?
+* Your constructor must validate an input value before calling a superclass constructor. How could flexible constructor bodies help?
+* A superclass constructor invokes an overridable method that depends on subclass state. How could flexible constructor bodies help you initialize that state safely?
+* Your application processes mixed numeric values using pattern matching. How would you evaluate the Java 25 preview of primitive patterns?
+* Your team wants to use primitive patterns but must deploy on a Java release that does not support them. How would you manage compatibility?
+* Your REST service propagates an immutable request context across nested method calls and virtual threads. How could scoped values help?
+* Your application uses `ThreadLocal` for request metadata, but concurrency and memory overhead have become concerns. How would you assess scoped values?
+* Your service executes multiple related tasks and needs coordinated cancellation when one task fails. How would you evaluate structured concurrency in Java 25?
+* Your data-processing service must group stream elements into windows or emit multiple results from a sequence. How could the Gatherers API help?
+* Your security service needs to encode public keys and certificates as PEM data. How would you evaluate the Java 25 preview API?
+* Your application has a long startup time because classes are loaded and linked during execution. How could ahead-of-time caching help?
+* Your microservice runs in a memory-constrained container. How would you evaluate compact object headers and their effect on memory usage?
+* Your low-latency service experiences frequent garbage collection under heavy allocation. How would you assess Generational ZGC?
+* Your organization wants to upgrade from Java 21 to Java 25. How would you identify source incompatibilities, deprecated features, preview APIs, and runtime changes?
+* Your team wants to adopt Java 25 preview features in production. What testing, deployment, and upgrade risks would you evaluate?

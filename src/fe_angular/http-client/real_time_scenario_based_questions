@@ -1,0 +1,30 @@
+* Your Angular application must display a list of employees from a REST API. How would you implement the service, component, and error handling?
+* An API call succeeds in Postman but fails in Angular with a CORS error. How would you investigate and resolve the issue?
+* Users are being logged out when an access token expires. How would you implement token refresh without interrupting their work?
+* Several API requests return HTTP 401 at the same time. How would you ensure that only one token refresh request is executed?
+* A search API is called on every keystroke and creates unnecessary backend load. How would you optimize it?
+* An API sometimes takes 20 seconds to respond. How would you implement a timeout, loading indicator, and user-friendly error message?
+* A product listing API is called repeatedly when navigating between pages. How would you avoid unnecessary network requests?
+* Your dashboard needs data from five independent APIs. How would you load them efficiently and handle partial failures?
+* One API depends on the result of another API. How would you sequence the requests using RxJS?
+* A user clicks the Save button multiple times and creates duplicate records. How would you prevent duplicate submissions?
+* An HTTP request continues after the user navigates away from a component. How would you manage its lifecycle?
+* An API intermittently returns HTTP 503. How would you implement retries with an appropriate delay?
+* A POST request times out, and you do not know whether the backend processed it. How would you prevent duplicate transactions?
+* Your application must attach a correlation ID to every API request. How would you implement this?
+* Different backend services require different authorization headers. How would you design the interceptor logic?
+* Your application receives inconsistent error formats from multiple backend services. How would you normalize them?
+* A file upload must show percentage progress and support cancellation. How would you implement it?
+* A user downloads a large report, but the browser receives a JSON error instead of a file. How would you troubleshoot the response configuration?
+* The same API is called by multiple components at the same time. How would you share its result efficiently?
+* A cached API response becomes outdated after an update operation. How would you invalidate the cache?
+* An API returns HTTP 204 No Content, and your application incorrectly assumes a response body exists. How would you handle this?
+* A request works locally but fails in production due to a different API base URL. How would you configure environment-specific endpoints?
+* Your interceptor accidentally retries authentication requests indefinitely. How would you fix the design?
+* A backend returns HTTP 429 Too Many Requests. How should the Angular application respond?
+* The UI must display stale data while refreshing it from the server. How would you design this behavior?
+* A user changes filters quickly, and older API responses overwrite newer results. How would you prevent this race condition?
+* You need to call a third-party API without exposing sensitive credentials in the browser. How would you design the integration?
+* An API response contains thousands of records and slows down the UI. How would you optimize retrieval and rendering?
+* Your application must support global API error notifications without showing duplicate messages. How would you implement this?
+* How would you diagnose a production issue where API latency increases only for certain endpoints?

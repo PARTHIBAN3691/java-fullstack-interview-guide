@@ -1,0 +1,30 @@
+* Write an optimized multi-stage Dockerfile for a Maven-based Spring Boot application using a Java runtime image for the final stage.
+* Write a Dockerfile that copies pom.xml first, downloads dependencies, and then copies source code to maximize build cache reuse.
+* Write a .dockerignore file for a Spring Boot project that excludes build output, Git files, IDE files, logs, and temporary files.
+* Write a multi-stage Dockerfile that uses BuildKit cache mounts for Maven dependencies.
+* Write a multi-stage Dockerfile that builds a Gradle-based Java application and copies only the required artifact into the runtime image.
+* Write a Dockerfile that uses a Spring Boot layered JAR to improve dependency-layer reuse between releases.
+* Write a multi-stage Dockerfile that creates a custom Java runtime using jlink and runs a Spring Boot application.
+* Write a Dockerfile that runs a Java application as a non-root user and avoids unnecessary operating-system packages.
+* Write a Dockerfile that accepts JVM options through environment variables without hardcoding environment-specific settings.
+* Write a Docker Compose configuration that sets CPU and memory limits for a Spring Boot application and its database service.
+* Write a shell script that builds a Docker image and records its build duration and final image size.
+* Write a shell script that compares the image sizes of two Docker tags and calculates the percentage reduction.
+* Write a shell script that lists the largest local Docker images and identifies dangling images.
+* Write a shell script that reports container CPU, memory, network, and block I/O statistics for running Java services.
+* Write a shell script that checks Docker disk usage and reports images, containers, volumes, and build cache usage.
+* Write a safe cleanup script that removes eligible dangling images and unused build cache while protecting running containers.
+* Write a script that builds a Spring Boot image and fails if its size exceeds a configurable threshold.
+* Write a CI pipeline that caches Maven dependencies, runs tests, builds a multi-stage image, and scans the final image for vulnerabilities.
+* Write a Dockerfile and CI configuration that use a remote BuildKit cache to accelerate repeated builds.
+* Write a shell script that compares cold and warm Docker build durations and reports the difference.
+* Write a Java configuration example that sets container-appropriate JVM memory options for a Spring Boot application.
+* Write a Spring Boot Docker configuration that exposes JVM diagnostic options through environment variables without embedding secrets.
+* Write a shell script that collects Java process memory metrics and Docker container memory metrics for troubleshooting.
+* Write a Docker Compose configuration that limits log-file size and retains a configurable number of rotated log files.
+* Write a shell script that measures the startup time of a Dockerized Spring Boot application by polling its health endpoint.
+* Write a load-testing script that compares response latency and throughput before and after a Docker image optimization.
+* Write a CI script that validates the final image does not contain Maven, source files, or unnecessary build artifacts.
+* Write a multi-platform Docker Buildx command sequence that builds and publishes optimized AMD64 and ARM64 Java images.
+* Write a CI pipeline that compares image size, build duration, vulnerability count, and startup time against a baseline before approving a release.
+* Write a production-ready Docker optimization workflow for a Spring Boot microservice that includes multi-stage builds, dependency caching, JVM resource configuration, security scanning, image-size checks, and performance benchmarking.

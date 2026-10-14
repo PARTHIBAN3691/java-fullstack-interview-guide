@@ -1,0 +1,30 @@
+* A feature passes unit tests but fails during integration testing. How would you identify the root cause?
+* A critical production defect occurs even though all test cases passed. How would you investigate the testing gap?
+* Requirements change frequently during a sprint. How would you keep test cases updated?
+* A developer reports that a defect cannot be reproduced in the QA environment. How would you investigate it?
+* A release is scheduled for tomorrow, but several high-priority defects remain open. How would you assess release readiness?
+* The application has thousands of test cases, and the regression suite takes eight hours to execute. How would you reduce execution time?
+* A test passes locally but fails intermittently in Jenkins. How would you troubleshoot the issue?
+* Two automated tests fail because they modify the same test data. How would you resolve the conflict?
+* A business-critical calculation has high code coverage but still produces incorrect results. How would you improve testing?
+* A new feature has incomplete acceptance criteria. How would you identify the necessary test scenarios?
+* A third-party API is unavailable during testing. How would you validate your application's behavior?
+* An application processes messages asynchronously, and test results are inconsistent. How would you make the tests reliable?
+* A database migration succeeds in development but fails in production-like environments. How would you investigate the problem?
+* A defect occurs only when multiple users update the same record simultaneously. How would you reproduce and test it?
+* A production incident reveals that invalid input was not handled correctly. How would you prevent similar defects?
+* The QA team reports many low-severity defects, but a critical business workflow remains untested. How would you reprioritize testing?
+* A new developer adds code without sufficient unit tests. How would you enforce testing standards?
+* An automation suite reports 100% pass rate, but users continue to experience failures. How would you evaluate test effectiveness?
+* A service depends on five downstream microservices, some of which are unstable. How would you design reliable tests?
+* A shared QA environment is frequently unavailable because several teams deploy simultaneously. How would you improve the testing process?
+* The team needs to test a payment workflow involving authorization, capture, refunds, and reconciliation. How would you structure the test coverage?
+* A defect is fixed, but a related feature breaks after the deployment. How would you improve regression testing?
+* A test case fails because its expected result depends on the current date and time. How would you make the test deterministic?
+* A production bug cannot be reproduced using the available test data. How would you investigate and improve test-data management?
+* Management wants to reduce testing time without increasing production risk. What changes would you recommend?
+* A new requirement introduces complex combinations of input values. Which test-design techniques would you use?
+* A team has strong unit testing but weak integration testing. How would you identify and address the missing coverage?
+* Multiple defects are reported for the same business requirement. How would you identify their common root cause?
+* An application must support backward compatibility with an older client. How would you design the necessary tests?
+* You are responsible for testing a large Java application before a major release. How would you define the overall testing strategy?

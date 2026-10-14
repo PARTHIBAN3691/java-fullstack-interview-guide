@@ -1,0 +1,30 @@
+* How would you write a Dockerfile for a Spring Boot application packaged as an executable JAR?
+* How would you build a Java application image using Maven inside a Dockerfile?
+* How would you build a Java application image using Gradle?
+* How would you create a multi-stage Dockerfile for a Spring Boot application?
+* What are the advantages of multi-stage builds for Java applications?
+* How would you separate the build environment from the Java runtime environment?
+* How would you choose an appropriate base image for a Java application?
+* What is the difference between JDK and JRE images, and when would you use each?
+* How would you reduce the size of a Java Docker image?
+* How does Docker layer caching work during a Maven build?
+* How would you optimize dependency downloads to improve Docker build performance?
+* Why should dependency files be copied before application source files in a Dockerfile?
+* How would you use .dockerignore to prevent unnecessary files from entering the build context?
+* How would you pass build-time arguments into a Dockerfile?
+* How would you pass runtime configuration to a Spring Boot application?
+* How would you configure Spring profiles through Docker environment variables?
+* How would you run a Java process using ENTRYPOINT and pass additional arguments through CMD?
+* How would you ensure that the Java process receives termination signals correctly?
+* How would you run a containerized Java application as a non-root user?
+* How would you configure a Dockerfile for a Spring Boot application with an external configuration file?
+* How would you expose the application port and publish it when running the container?
+* How would you add labels to identify the application version and build metadata?
+* How would you configure a Dockerfile for a Java application that requires additional certificates?
+* How would you troubleshoot a Docker build that fails because a required file cannot be found?
+* How would you troubleshoot a container that starts but exits immediately?
+* How would you configure a health check for a Java application in a Dockerfile?
+* How would you ensure that health-check tooling is available without unnecessarily increasing image size?
+* How would you build a Docker image for a Spring Boot application that connects to PostgreSQL?
+* How would you avoid embedding passwords and API keys in a Dockerfile?
+* How would you maintain consistent Dockerfile behavior across development and CI/CD environments?

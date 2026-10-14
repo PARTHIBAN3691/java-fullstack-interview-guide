@@ -1,0 +1,139 @@
+**Calling LLM APIs from Java**
+* What is an LLM API, and how can a Java application invoke one?
+* How do HTTP clients such as `RestClient`, `WebClient`, and `HttpClient` differ when calling an LLM API?
+* How do you send an API key in an HTTP request securely?
+* What are the common request and response fields in a chat completion API?
+* How should a Java application handle an unsuccessful LLM API response?
+
+**Spring AI Fundamentals**
+* What is Spring AI, and why is it useful for integrating AI capabilities into Spring applications?
+* What are the main abstractions provided by Spring AI?
+* How does Spring AI simplify integration with different AI model providers?
+* What is the role of Spring Boot auto-configuration in Spring AI?
+* How do you configure an AI model provider in a Spring Boot application?
+
+**Spring AI Chat Models**
+* What is a chat model in Spring AI?
+* What is the purpose of the `ChatModel` and `ChatClient` abstractions?
+* What are system, user, and assistant messages?
+* What is the difference between a prompt and a response?
+* How do you configure model parameters such as temperature and maximum output tokens?
+
+**Spring AI Embeddings**
+* What are embeddings, and why are they useful in AI applications?
+* What is an embedding model in Spring AI?
+* What is the difference between text and vector representations?
+* Why must query embeddings and indexed document embeddings use compatible embedding models?
+* What are common use cases for embeddings in Java applications?
+
+**Spring AI Vector Stores**
+* What is a vector store, and how does Spring AI integrate with it?
+* What are the main responsibilities of the `VectorStore` abstraction?
+* What is similarity search?
+* What is the purpose of metadata associated with a document in a vector store?
+* Which vector databases or search engines can be integrated with Spring AI?
+
+**Spring AI Advisors**
+* What is an Advisor in Spring AI?
+* Why are advisors useful in a chat application?
+* How can an advisor modify a request before it reaches a model?
+* How can an advisor process or enrich a model response?
+* What is the difference between an advisor and a chat model?
+
+**Spring AI RAG Pipelines**
+* What is retrieval-augmented generation (RAG)?
+* What are the main steps in a basic RAG pipeline?
+* Why is document chunking necessary for RAG?
+* How does retrieved context help an LLM generate an answer?
+* What is the difference between a RAG application and a model fine-tuning approach?
+
+**Spring AI Tool Calling**
+* What is tool calling in an LLM application?
+* How does Spring AI support defining tools using Java methods?
+* What is the difference between a model requesting a tool call and the application executing it?
+* How does a tool return its result to the model?
+* Why should tool inputs be validated before execution?
+
+**Spring AI MCP Integration**
+* What is the Model Context Protocol (MCP)?
+* What roles do MCP clients and MCP servers play?
+* How can a Spring Boot application connect to an MCP server?
+* What are MCP tools, resources, and prompts?
+* How does MCP differ from a direct REST API integration?
+
+**Spring AI Chat Memory**
+* What is chat memory, and why is it required in conversational applications?
+* What is the difference between conversation history and model context?
+* How can Spring AI associate messages with a conversation ID?
+* What are the differences between in-memory and persistent chat memory?
+* Why should chat history be limited or summarized?
+
+**Streaming AI Responses with Spring Boot**
+* What is streaming in an AI application?
+* How does streaming differ from waiting for a complete model response?
+* What are Server-Sent Events (SSE)?
+* How can a Spring Boot application return a streamed AI response?
+* How should a client handle a stream that ends unexpectedly?
+
+**AI Integration with REST APIs**
+* How can a Spring Boot REST controller expose an AI-powered feature?
+* What is the role of a service layer in an AI-enabled REST API?
+* How should a REST API validate user prompts and request parameters?
+* What HTTP status codes are useful for AI API errors?
+* Why should internal model-provider errors not be returned directly to clients?
+
+**Reactive AI Applications**
+* What is reactive programming in Spring WebFlux?
+* What are `Mono` and `Flux`?
+* How does non-blocking I/O help AI applications?
+* What is the difference between synchronous and reactive AI invocation?
+* Why should blocking calls be avoided on reactive event-loop threads?
+
+**AI Rate Limiting and Resilience**
+* Why do LLM providers enforce rate limits?
+* What is a timeout, and why is it important for AI requests?
+* What is a circuit breaker?
+* What is exponential backoff?
+* How do retries differ from fallbacks?
+
+**Secure AI API Integration**
+* Why should AI provider API keys not be hardcoded in Java source code?
+* How can Spring Boot load secrets from environment variables or a secrets manager?
+* Why should user input be treated as untrusted in AI applications?
+* What is prompt injection?
+* Why should AI requests and responses be handled carefully in application logs?
+
+**AI Microservices Architecture**
+* How can AI capabilities be separated into a dedicated microservice?
+* What are the benefits of an AI service behind an API gateway?
+* How should one microservice communicate with an AI-enabled microservice?
+* Why should model-provider details be hidden behind an application service interface?
+* What responsibilities should remain in the business service rather than the AI service?
+
+**AI Integration with Kafka**
+* How can Kafka support asynchronous AI processing?
+* What is the difference between synchronous AI invocation and event-driven AI processing?
+* Why might an AI request be placed on a Kafka topic?
+* What is a consumer group?
+* How should a Kafka consumer handle a failed AI request?
+
+**AI Integration with Databases**
+* How can a Spring Boot application combine relational database queries with AI-generated responses?
+* What is the difference between storing chat history in a relational database and storing embeddings in a vector store?
+* How can Spring Data repositories support AI-powered business features?
+* Why should AI-generated SQL be validated before execution?
+* How can database records be used as grounding context for an LLM?
+
+**Testing Spring AI Applications**
+* Why should AI integration code be tested independently of a real model provider?
+* How can a mock model response be used in a Spring Boot test?
+* What is the difference between a unit test and an integration test for an AI application?
+* Why can AI output vary between repeated executions of the same prompt?
+* What should be tested when validating a RAG application?
+
+**Productionizing AI Applications in Java**
+* What should be monitored in a production AI-enabled Spring Boot application?
+* Why are request IDs and correlation IDs useful for AI requests?
+* What is the purpose of health checks in an AI microservice?
+* Why should model names and deployment configuration be externalized?
+* What are common production risks when adding an LLM to an existing Java application?

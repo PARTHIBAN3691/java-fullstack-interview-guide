@@ -1,0 +1,30 @@
+* A BigQuery query that previously completed in seconds now takes several minutes. How would you investigate the performance regression?
+* A dashboard query scans terabytes of data every time a user opens the dashboard. How would you reduce its cost and latency?
+* A scheduled query fails intermittently because the source table is not available on time. How would you make the pipeline reliable?
+* A data ingestion job inserts duplicate records after retrying a failed batch. How would you design an idempotent ingestion process?
+* A daily ETL pipeline processes billions of records and regularly exceeds its processing window. How would you optimize it?
+* A BigQuery table has grown significantly, and queries filtering by transaction date have become expensive. What changes would you make?
+* A clustered table performs poorly for a frequently used query. How would you investigate whether the clustering strategy is effective?
+* A query joining two large tables consumes excessive resources. How would you investigate join order, filtering, data distribution, and execution stages?
+* A streaming pipeline delivers duplicate and out-of-order financial transactions. How would you maintain accurate analytical results?
+* A source application adds a new field to its JSON payload, causing ingestion failures. How would you handle schema evolution?
+* A business team reports that yesterday's sales figures changed after the daily report was published. How would you investigate late-arriving data and aggregation logic?
+* A production data pipeline partially succeeds and updates only some target tables. How would you recover without creating inconsistent results?
+* A Java Spring Boot application intermittently receives BigQuery job errors. How would you distinguish transient failures from query or permission problems?
+* A Java service submits a BigQuery query and times out while waiting for the result. How would you handle asynchronous execution and safe retries?
+* A developer accidentally grants broad access to a dataset containing sensitive customer information. How would you contain the exposure and prevent recurrence?
+* A reporting team needs access to selected customer fields but must not see personally identifiable information. How would you implement secure access?
+* Two teams maintain separate datasets containing the same business entities but report different totals. How would you establish a reliable source of truth?
+* A monthly reconciliation process finds a mismatch between the source database and BigQuery. How would you identify missing, duplicated, or transformed records?
+* BigQuery query costs increase sharply after a new dashboard is released. How would you identify the responsible queries and control the spend?
+* A large backfill must run while real-time ingestion continues. How would you prevent the backfill from overwriting newer data?
+* A production schema change breaks multiple downstream SQL queries. How would you introduce schema changes safely?
+* An organization wants to migrate analytical workloads from a relational database to BigQuery. How would you plan data migration, validation, and cutover?
+* A dataset must be shared with an external business partner without exposing the underlying tables. How would you design the access model?
+* A critical table was accidentally modified, and historical values are needed for an audit. What recovery options would you evaluate?
+* A BigQuery pipeline must meet a strict data freshness SLA. How would you monitor freshness, detect delays, and trigger recovery?
+* A query produces different results when executed by two analysts. How would you investigate permissions, parameters, time zones, and data changes?
+* A company needs to retain financial records for several years while minimizing storage costs. How would you design retention and archival policies?
+* A batch load succeeds, but downstream reports continue to show old data. How would you troubleshoot job completion, dependencies, caching, and refresh logic?
+* A data platform team wants to isolate interactive dashboard workloads from large batch transformations. How would you configure workload management?
+* A new application needs to query BigQuery frequently for low-latency transactional requests. How would you assess whether BigQuery is appropriate and propose an alternative if necessary?

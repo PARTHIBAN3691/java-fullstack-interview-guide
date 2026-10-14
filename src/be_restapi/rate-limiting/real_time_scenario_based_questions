@@ -1,0 +1,30 @@
+* A REST API receives thousands of requests from a single client within seconds. How would you protect the service?
+* Your Spring Boot application runs on five instances behind a load balancer. How would you enforce one shared rate limit across all instances?
+* A client receives HTTP 429 responses but continues retrying immediately. How would you address this behavior?
+* Your Redis server becomes unavailable while enforcing rate limits. How should the API behave?
+* A customer reports that legitimate requests are being blocked because many users share the same public IP address. How would you investigate and resolve this?
+* One enterprise customer has several API keys but must share a single overall quota. How would you design the solution?
+* A free-tier customer should make 100 requests per minute, while a premium customer should make 1,000. How would you implement these policies?
+* Your API gateway enforces a limit of 100 requests per minute, but users can exceed it by calling different application instances. What could be wrong?
+* A payment API must prevent duplicate financial operations while enforcing request limits. How would you combine rate limiting with idempotency?
+* A login endpoint is receiving repeated password attempts from different IP addresses. How would you design appropriate rate limits?
+* A public search API experiences sudden traffic spikes during a marketing campaign. How would you protect backend resources while allowing legitimate traffic?
+* A bulk-import endpoint consumes significantly more resources than a normal read endpoint. How would you apply different rate limits?
+* A customer exceeds the rate limit because their application automatically retries failed requests. How would you coordinate retry behavior and rate-limit responses?
+* A mobile application sends duplicate API requests because of poor network connectivity. How would you avoid unnecessary rate-limit consumption where appropriate?
+* A distributed rate limiter allows more requests than the configured limit during concurrent traffic. How would you identify and fix the race condition?
+* Your API serves multiple tenants, and one tenant consumes most of the available capacity. How would you isolate tenant traffic?
+* Your rate limiter uses an in-memory counter, but the limit is bypassed whenever the application restarts. How would you fix the design?
+* Your Redis-based rate limiter introduces significant latency to every API request. How would you optimize it?
+* An API must enforce both 20 requests per second and 10,000 requests per day. How would you implement both constraints?
+* Your system receives a sudden burst of requests that should be accepted up to a configured burst capacity. Which algorithm would you choose and why?
+* An API is deployed in two cloud regions, and clients can send requests to either region. How would you enforce a global quota?
+* Your organization needs different limits for administrators, regular users, and unauthenticated clients. How would you structure the policy?
+* An expensive report-generation API causes database overload despite staying within its request-per-minute limit. How would you improve the protection?
+* A rate-limiting policy is changed while requests are actively being processed. How would you apply the new policy safely?
+* Your monitoring shows a sharp increase in HTTP 429 responses after a deployment. How would you investigate the cause?
+* A legitimate integration partner needs a temporary increase in its API quota. How would you support this without changing the global policy?
+* A client rotates API keys to bypass its individual quota. How would you detect and prevent this abuse?
+* A rate limiter blocks requests during a traffic spike, but the backend remains overloaded. What additional controls would you introduce?
+* Your API must distinguish between an exceeded request-rate limit and an exhausted monthly subscription quota. How would you model and communicate these conditions?
+* You need to roll out rate limiting gradually to production without unexpectedly blocking existing consumers. How would you approach the rollout?

@@ -1,0 +1,21 @@
+
+* Design a secure, scalable container image management strategy for an enterprise Java microservices platform using Azure Container Registry.
+* How would you design a CI/CD pipeline that builds, tests, scans, signs, and promotes Java container images across environments?
+* How would you enforce immutable image promotion across development, staging, and production?
+* How would you secure ACR access using Microsoft Entra ID, managed identities, least-privilege roles, and private endpoints?
+* How would you design cross-region image distribution using ACR geo-replication?
+* How would you troubleshoot slow image pulls from ACR by AKS nodes across different regions?
+* How would you implement vulnerability scanning and prevent deployment of images containing critical vulnerabilities?
+* How would you implement image signing and verification to improve software supply-chain security?
+* How would you prevent secrets from being embedded in Docker images during Java application builds?
+* How would you optimize Java container images using multi-stage builds, minimal base images, and dependency-layer caching?
+* How would you manage container image versions and prevent production deployments from accidentally using outdated images?
+* How would you configure private endpoints, private DNS, and network rules for an ACR instance used by private AKS clusters?
+* How would you troubleshoot an AKS workload that cannot pull an image from a private ACR?
+* How would you design image replication and recovery strategies for a regional Azure outage?
+* How would you implement automated image cleanup without deleting versions currently used by production workloads?
+* How would you manage ACR authentication when using AKS managed identities or Microsoft Entra Workload ID?
+* How would you integrate infrastructure as code to provision ACR, access roles, network settings, and diagnostic configuration?
+* How would you investigate registry throttling, storage limits, or HTTP 429 responses during large-scale deployments?
+* How would you design a disaster recovery process for a registry that contains hundreds of critical microservice images?
+* How would you balance registry SKU, replication, security features, storage, and network costs for a large enterprise?

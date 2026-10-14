@@ -1,0 +1,21 @@
+
+* Design a Java Azure Functions architecture for processing millions of events per day.
+* Explain how Azure Functions scale dynamically and how scaling differs across hosting plans.
+* How would you minimize cold-start latency for a Java Azure Function?
+* How do you design an Azure Function to be idempotent when the same event is delivered more than once?
+* How would you handle duplicate messages and at-least-once delivery in event-driven processing?
+* How do concurrency settings and host-level configuration affect Java Azure Functions performance?
+* How would you manage thread pools and asynchronous processing inside a Java Azure Function?
+* How would you prevent a long-running function from exceeding execution limits?
+* How would you design a reliable background processing pipeline using Azure Functions, Service Bus, and a dead-letter queue?
+* How would you implement retry, backoff, and poison-message handling for a Java Azure Function?
+* How would you securely connect an Azure Function to private databases and storage accounts using managed identity?
+* How would you handle distributed transactions when an Azure Function updates a database and publishes an event?
+* How would you implement the transactional outbox pattern with Azure Functions?
+* How would you design a Java Azure Function that processes large files without loading the entire file into memory?
+* How would you implement distributed tracing and correlation IDs across multiple Azure Functions?
+* How would you choose between Azure Functions, Azure Container Apps, and Azure App Service for a Java workload?
+* How would you deploy Azure Functions with zero or minimal downtime while preserving trigger processing?
+* How would you manage configuration and secrets across development, staging, and production environments?
+* How would you optimize memory, CPU, execution duration, and cost for a high-volume Java Function App?
+* How would you design disaster recovery and regional failover for an event-driven Azure Functions architecture?

@@ -1,0 +1,30 @@
+* How would you design a sharding architecture for a database containing billions of records?
+* How do you select a shard key that balances data distribution, query patterns, and future growth?
+* How do you design a resharding strategy that minimizes downtime and data movement?
+* How do you use consistent hashing to minimize data redistribution when adding or removing shards?
+* How do virtual nodes improve distribution in a consistent-hashing architecture?
+* How do you handle shard-key changes when records must be redistributed?
+* How do you design online shard migration with dual writes, change data capture, and reconciliation?
+* How do you prevent data loss and duplicate processing during shard migration?
+* How do you maintain consistency while reads and writes are routed between old and new shards?
+* How do you handle hot keys when a small number of records receive most of the traffic?
+* How do you design adaptive sharding for rapidly changing workloads?
+* How do you prevent sequential shard keys from creating write hotspots?
+* How do you design a globally distributed sharded database across multiple regions?
+* How do you balance data residency requirements with global query performance?
+* How do you implement cross-shard transactions while controlling latency and failure risk?
+* How do you design distributed joins and aggregations without overwhelming the network?
+* How do you provide globally consistent reads across independently replicated shards?
+* How do you handle shard failover while preventing split-brain writes?
+* How do you maintain unique business identifiers across shards and regions?
+* How do you design a distributed ID generator that remains available during network partitions?
+* How do you handle schema evolution when different shards are temporarily running different schema versions?
+* How do you design shard rebalancing without overloading production databases?
+* How do you ensure that backup and restore operations preserve consistency across related shards?
+* How do you design shard placement to minimize cross-shard access for related entities?
+* How do you manage shard metadata and routing changes without introducing a single point of failure?
+* How do you design a sharded database that supports tenant isolation and noisy-neighbor protection?
+* How do you handle partial failures in queries spanning multiple shards?
+* How do you implement observability for shard-level saturation, skew, and routing errors?
+* How do you evaluate the trade-offs between application-level sharding and database-native sharding?
+* How would you evolve a monolithic database into a sharded architecture without a major service interruption?

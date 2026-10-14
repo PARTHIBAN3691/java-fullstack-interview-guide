@@ -1,0 +1,30 @@
+* How would you design a caching architecture for a high-traffic REST API platform?
+* How do you choose between local in-memory caching, distributed caching, and HTTP caching?
+* What are the trade-offs between Redis and Caffeine for API response caching?
+* How do you design a multi-level caching strategy using local and distributed caches?
+* How do you maintain cache consistency across multiple application instances?
+* How do you implement distributed cache invalidation when a database record changes?
+* How do you prevent cache stampede, cache avalanche, and cache penetration?
+* What is the difference between cache warming, lazy loading, and proactive refresh?
+* How do you design a cache-aside strategy for millions of frequently accessed records?
+* How do you handle cache invalidation in an event-driven microservices architecture?
+* How do you use database change events to keep cached API responses synchronized?
+* How do you handle race conditions between cache updates and database transactions?
+* How do you prevent stale writes when multiple requests update the same resource concurrently?
+* How do you implement versioned cache keys to simplify invalidation?
+* How do you handle negative caching for resources that do not exist?
+* What are the risks of caching HTTP 404 and 500 responses?
+* How do you cache authorization-sensitive API responses safely?
+* How do you prevent cache poisoning and cache key manipulation attacks?
+* How do you design cache keys for APIs with complex query parameters and different representations?
+* How do you handle cache invalidation when one database entity affects several API responses?
+* How do you optimize caching for APIs with highly dynamic data?
+* How do you balance freshness requirements against cache hit ratio and database load?
+* How do you design a cache strategy for financial data that requires strict consistency?
+* How do you implement stale-while-revalidate behavior for frequently requested resources?
+* How do you prevent thundering-herd problems in a distributed cache?
+* How do you handle Redis failover, replication lag, and temporary unavailability?
+* How do you estimate memory requirements and configure eviction policies for a large cache?
+* How do you monitor cache latency, hit ratio, eviction rate, and backend load?
+* How do you benchmark an API with and without caching under realistic workloads?
+* How would you design a resilient caching architecture that degrades gracefully during cache outages?

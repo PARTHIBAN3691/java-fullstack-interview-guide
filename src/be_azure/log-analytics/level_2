@@ -1,0 +1,30 @@
+* How would you design a centralized Log Analytics architecture for multiple Azure subscriptions and environments?
+* How would you decide between a centralized workspace and multiple Log Analytics workspaces?
+* How do you design workspace isolation for production, testing, and development environments?
+* How would you optimize Log Analytics ingestion and query costs for a high-volume Java application?
+* How do you choose between Analytics, Basic, and Auxiliary log plans where supported?
+* How do you configure table-level retention and long-term data retention?
+* How do you implement least-privilege access to sensitive application logs?
+* How would you prevent secrets, tokens, and personally identifiable information from being stored in logs?
+* How do you troubleshoot ingestion delays across multiple Azure resources?
+* How would you investigate missing telemetry caused by incorrect diagnostic settings or data collection rules?
+* How do you optimize expensive KQL queries that use multiple joins and aggregations?
+* How do you detect abnormal application behavior using KQL and Azure Monitor alerts?
+* How would you design alert rules to reduce duplicate alerts and alert fatigue?
+* How do you correlate logs, metrics, and distributed traces across microservices?
+* How would you trace a request across Java services hosted on Azure Kubernetes Service?
+* How do you monitor Java application performance without introducing excessive telemetry overhead?
+* How do you design monitoring for applications that process millions of events per day?
+* How would you implement environment-specific monitoring and alert thresholds?
+* How do you troubleshoot throttling, query timeouts, or resource limits affecting Log Analytics queries?
+* How do you use cross-workspace queries while maintaining security and performance?
+* How would you implement disaster recovery and continuity for centralized monitoring?
+* How do you monitor the health of the logging pipeline itself?
+* How would you handle duplicate, delayed, or out-of-order log records?
+* How do you use KQL to detect unusual error rates and latency spikes?
+* How do you integrate Log Analytics with Azure Managed Grafana or other visualization tools?
+* How would you manage Log Analytics configuration consistently using Terraform, Bicep, or ARM templates?
+* How do you securely automate Log Analytics queries using Azure managed identities?
+* How would you design a monitoring strategy for a Java application deployed across multiple regions?
+* How do you validate that logging changes do not violate compliance or data-retention requirements?
+* How would you measure the effectiveness, reliability, and cost efficiency of an enterprise Log Analytics solution?

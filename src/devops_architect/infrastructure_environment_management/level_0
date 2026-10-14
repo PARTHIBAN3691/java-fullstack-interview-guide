@@ -1,0 +1,105 @@
+
+**Development Environment**
+* What is a development environment, and why is it required?
+* What tools and configurations are typically required to set up a development environment?
+* How do developers manage environment-specific dependencies?
+* What is the difference between a local development environment and a shared development environment?
+* How do environment variables help configure an application during development?
+
+**QA Environment**
+* What is a QA environment, and how does it differ from a development environment?
+* Who is responsible for deploying applications to the QA environment?
+* Why should the QA environment resemble production?
+* What types of testing are typically performed in the QA environment?
+* How do teams manage test data in a QA environment?
+
+**UAT Environment**
+* What is User Acceptance Testing (UAT)?
+* Who typically validates an application in the UAT environment?
+* How does UAT differ from QA testing?
+* Why is business-user approval important before production deployment?
+* What types of defects are commonly identified during UAT?
+
+**Staging Environment**
+* What is a staging environment?
+* How does staging differ from QA and UAT?
+* Why is staging used before production deployment?
+* What components should be available in a staging environment?
+* How can staging help validate deployment procedures?
+
+**Production Environment**
+* What is a production environment?
+* What responsibilities do development and operations teams have in production?
+* Why should production access be restricted?
+* What monitoring and logging capabilities are essential in production?
+* Why are backups and disaster recovery important in production environments?
+
+**Environment Isolation**
+* What is environment isolation?
+* Why should development, testing, and production environments be isolated?
+* What risks arise when multiple environments share the same database?
+* How can separate credentials improve environment isolation?
+* What is the difference between logical and physical environment isolation?
+
+**Environment Promotion**
+* What does environment promotion mean in a software delivery lifecycle?
+* What is the typical promotion path from development to production?
+* Why should the same application artifact be promoted across environments?
+* What approvals might be required before promoting a release?
+* What is the difference between deploying an artifact and promoting a release?
+
+**Configuration Separation**
+* What is environment-specific configuration?
+* Why should application configuration be separated from application code?
+* What are common examples of development and production configuration differences?
+* How can environment variables be used to separate configurations?
+* Why should secrets not be stored in source code?
+
+**Infrastructure Consistency**
+* What does infrastructure consistency mean?
+* Why should environments use consistent infrastructure definitions?
+* What problems can occur when QA and production use different infrastructure?
+* How can Infrastructure as Code (IaC) improve consistency?
+* What is configuration drift?
+
+**Ephemeral Environments**
+* What is an ephemeral environment?
+* When would a team create a temporary environment?
+* What are the benefits of ephemeral environments?
+* How does an ephemeral environment differ from a permanent development environment?
+* Why should ephemeral environments be automatically removed?
+
+**Preview Environments**
+* What is a preview environment?
+* How is a preview environment associated with a pull request?
+* How do preview environments help developers and reviewers?
+* What is the difference between a preview environment and a staging environment?
+* What information should a preview deployment provide to a reviewer?
+
+**Environment Provisioning**
+* What is environment provisioning?
+* What are the common steps involved in provisioning an environment?
+* Which tools can automate environment provisioning?
+* What is the difference between infrastructure provisioning and application deployment?
+* Why is repeatable provisioning important?
+
+**Environment Teardown**
+* What is environment teardown?
+* When should a temporary environment be destroyed?
+* What resources should be removed during teardown?
+* Why must teardown processes be idempotent?
+* What risks arise when temporary environments are not cleaned up?
+
+**Infrastructure Drift**
+* What is infrastructure drift?
+* What are common causes of infrastructure drift?
+* How can manual infrastructure changes create drift?
+* How can teams detect infrastructure drift?
+* Why should infrastructure changes be managed through version control?
+
+**Production Parity**
+* What is production parity?
+* Why should non-production environments resemble production?
+* Which infrastructure differences can affect application behavior?
+* How can production parity reduce deployment risks?
+* Why might exact production parity be difficult or expensive to achieve?

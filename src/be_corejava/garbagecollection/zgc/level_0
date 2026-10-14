@@ -1,0 +1,20 @@
+* What is Z Garbage Collector (ZGC) in Java?
+* Why was ZGC introduced?
+* What are the main goals of ZGC?
+* From which Java version was ZGC introduced?
+* From which Java version did ZGC become a production feature?
+* What is the primary advantage of ZGC?
+* What is a stop-the-world pause?
+* How does ZGC minimize garbage collection pause times?
+* What is concurrent garbage collection?
+* What is the difference between latency and throughput in garbage collection?
+* What is the purpose of the `-XX:+UseZGC` JVM option?
+* How can you check whether ZGC is enabled in a Java application?
+* What is the difference between ZGC and G1 GC?
+* What is the difference between ZGC and Shenandoah GC?
+* Does ZGC eliminate all garbage collection pauses?
+* Is ZGC suitable for applications with large heaps?
+* What is the difference between generational and non-generational ZGC?
+* Which Java versions support Generational ZGC?
+* How do you enable GC logging when using ZGC?
+* What are the main advantages and limitations of ZGC?

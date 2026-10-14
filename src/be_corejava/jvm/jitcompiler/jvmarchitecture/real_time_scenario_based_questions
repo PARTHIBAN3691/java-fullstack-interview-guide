@@ -1,0 +1,19 @@
+
+* Your Java application throws `OutOfMemoryError: Java heap space` under heavy traffic. How would you use JVM architecture concepts to investigate the issue?
+* Your application throws `OutOfMemoryError: Metaspace` after repeated deployments. How would you investigate class loading and class unloading?
+* Your service experiences `StackOverflowError` only for certain requests. How would you identify the recursive call or excessive stack usage?
+* Your application has high heap usage but low CPU utilization. How would you determine whether the problem is related to object retention, garbage collection, or blocking threads?
+* Your Java process consumes substantially more memory than the configured maximum heap. How would you investigate native memory, thread stacks, direct buffers, and JVM overhead?
+* Your application starts successfully but fails during class initialization. How would you investigate class loading, linking, static initialization, and initialization errors?
+* A custom ClassLoader loads duplicate versions of a library and causes `ClassCastException`. How would you diagnose the issue using JVM class identity rules?
+* Your microservice experiences long garbage-collection pauses. How would you investigate heap layout, allocation patterns, and the selected collector?
+* Your application is slow immediately after startup but becomes faster later. How would you investigate interpretation, JIT compilation, and warm-up?
+* Your production application has high CPU usage but no obvious application-level bottleneck. How would you investigate JIT compilation, garbage collection, thread activity, and native calls?
+* A multithreaded service suffers from excessive thread creation and memory consumption. How would you assess thread stacks, platform threads, and virtual threads?
+* Your service allocates many temporary objects and generates heavy garbage-collection activity. How would you investigate allocation behavior and possible JIT optimizations?
+* Your application uses direct byte buffers and experiences native memory exhaustion. How would you distinguish heap usage from off-heap memory usage?
+* A framework dynamically loads classes and creates proxies. How would you assess its effects on class metadata, class unloading, and Metaspace?
+* Your application hangs during a garbage-collection event. How would you use thread dumps and JVM diagnostic tools to investigate thread states and safepoints?
+* Your team needs to tune JVM memory for a container with a strict memory limit. How would you account for heap, Metaspace, thread stacks, direct memory, and other native allocations?
+* Your service works correctly on one operating system but exhibits different memory behavior on another. How would you distinguish JVM specification guarantees from implementation-specific behavior?
+* Your application has high latency and low throughput despite sufficient CPU and heap capacity. How would you investigate synchronization, thread contention, JIT behavior, and blocking operations?

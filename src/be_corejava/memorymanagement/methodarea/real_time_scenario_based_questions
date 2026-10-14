@@ -1,0 +1,21 @@
+
+* A Spring Boot application throws `OutOfMemoryError: Metaspace` while heap utilization remains low. How would you investigate the issue?
+* An application server experiences increasing memory usage after every deployment. How would you determine whether class metadata is being retained?
+* A Java application generates dynamic proxy classes for each request. How could this affect metadata memory usage, and how would you diagnose it?
+* A plugin-based system uses multiple custom class loaders. How would you ensure that metadata associated with unused plugins can be reclaimed?
+* A developer claims that all static variables are stored directly in the Method Area. How would you clarify this statement using the JVM specification and HotSpot implementation?
+* A production service has stable heap usage but a steadily increasing number of loaded classes. What could cause this behavior?
+* A legacy application running on Java 7 experiences PermGen exhaustion. What options would you consider to investigate and resolve the problem?
+* An application upgraded from Java 7 to Java 8 starts reporting Metaspace exhaustion instead of PermGen exhaustion. What changed, and what remains conceptually similar?
+* A custom class loader is retained by a thread context class loader after application shutdown. What problems could result?
+* A framework upgrade increases the number of generated classes significantly. How would you determine whether this is expected or a metadata leak?
+* A developer assumes that calling `System.gc()` will immediately free all unused class metadata. How would you explain the limitations of this assumption?
+* An application throws `OutOfMemoryError: Compressed class space`. What does this indicate, and which JVM settings would you examine?
+* A microservice loads classes dynamically based on configuration changes. How would you monitor class-loading trends and detect abnormal growth?
+* A Java application has many loaded classes, but the class count stops growing while Metaspace usage continues to rise. What additional evidence would you collect?
+* A service runs correctly in a development environment but experiences metadata-related memory problems in production. What environmental and workload differences would you investigate?
+* A team wants to reduce memory consumption by unloading classes that are no longer needed. What class-loader design and lifecycle changes would you recommend?
+* An application experiences high memory usage after hot redeployment in a servlet container. How would you investigate class-loader retention and cleanup?
+* A developer confuses the Method Area with the execution stack while debugging recursive method calls. How would you explain the difference?
+* You must diagnose metadata-related memory growth without restarting a production application. Which JVM tools and metrics would you collect?
+* After fixing a suspected class-loader leak, how would you validate that class unloading occurs and metadata usage stabilizes over repeated deployment cycles?

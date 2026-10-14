@@ -1,0 +1,30 @@
+* Write a Java Spark application that reads a text file from Cloud Storage and counts the frequency of each word.
+* Write a Java Spark job that reads CSV data from Cloud Storage and writes the result as Parquet.
+* Write a Java Spark application that filters invalid records and writes valid records to a separate output location.
+* Write a Java Spark job that groups transaction records by customer ID and calculates the total transaction amount.
+* Write a Java Spark application that joins customer data with transaction data using Spark SQL.
+* Write a Java Spark job that removes duplicate records based on a business key.
+* Write a Java Spark application that calculates daily transaction totals from timestamped records.
+* Write a Java Spark job that identifies records with missing mandatory fields and writes them to a quarantine dataset.
+* Write a Java Spark application that reads partitioned Parquet files and filters records by date.
+* Write a Java Spark job that aggregates large datasets while minimizing unnecessary shuffles.
+* Write a Java Spark application that uses broadcast joins for a large dataset and a small reference dataset.
+* Write a Java Spark job that repartitions output data to reduce the number of small files.
+* Write a Java Spark application that handles malformed CSV records without terminating the entire job.
+* Write a Java Spark job that calculates the top N products by sales for each region.
+* Write a Java Spark application that calculates a rolling seven-day average of daily sales.
+* Write a Java Spark job that detects duplicate payments using transaction IDs and timestamps.
+* Write a Java Spark application that implements an idempotent batch transformation using a stable business key.
+* Write a Java Spark job that writes results to a temporary Cloud Storage location before publishing the completed output.
+* Write a Java Spark application that reads input and output paths from command-line arguments.
+* Write a Java Spark job that accepts date ranges and environment-specific configuration through application arguments.
+* Write a Java Spark application that reads JSON records from Cloud Storage and converts them into a structured DataFrame.
+* Write a Java Spark job that calculates customer-level totals and writes aggregated data to BigQuery.
+* Write a Java Spark application that reads data from BigQuery, transforms it, and writes results back to a separate table.
+* Write a Java Spark job that implements a configurable retry mechanism for transient failures in an external API integration.
+* Write a Java Spark application that validates a dataset against a configurable schema before processing.
+* Write a Java Spark job that calculates per-partition record counts and identifies skewed partitions.
+* Write a Java Spark application that records job start time, completion time, processed record count, and failure details.
+* Write a Java program using the Google Cloud Dataproc client library to submit a Spark job and retrieve its status.
+* Write a Java program using the Dataproc client library to create an ephemeral cluster, submit a job, and delete the cluster after completion.
+* Write a Java program that orchestrates a Dataproc job submission, polls for completion, and handles job failure without losing diagnostic information.

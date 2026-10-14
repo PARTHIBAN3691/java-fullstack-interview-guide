@@ -1,0 +1,70 @@
+**MCP Fundamentals and Architecture**
+* An LLM application integrates with five internal systems using custom adapters, and every API change requires application code changes. How would you migrate to MCP and measure the benefits?
+* After introducing MCP, the application discovers tools successfully but cannot complete user requests reliably. How would you isolate architecture, orchestration, and tool-execution problems?
+* Your organization wants to standardize MCP across several teams using different LLM providers. How would you design common integration contracts and governance?
+
+**MCP Hosts, Clients, and Servers**
+* An MCP host connects to several servers, and one server hangs during initialization, preventing the entire application from becoming available. How would you isolate startup and connection failures?
+* Multiple user sessions share an MCP client configuration, and requests occasionally use the wrong user's context. How would you investigate and fix the session-isolation issue?
+* A remote MCP server becomes unavailable during concurrent tool calls. How would you handle in-flight requests, reconnect safely, and preserve user-visible task status?
+
+**MCP Tools**
+* An MCP tool updates a customer record, but the client times out and retries the operation. Duplicate updates appear in the system. How would you redesign execution and recovery?
+* An LLM repeatedly selects an administrative tool when a read-only tool would satisfy the request. How would you improve tool selection and enforce independent execution policies?
+* A newly introduced tool accepts arbitrary file paths and unintentionally exposes files outside the intended directory. How would you contain the issue and redesign input validation?
+
+**MCP Resources**
+* An MCP resource returns confidential records because the server filters results only after retrieval. How would you redesign authorization and data filtering?
+* A user can access a resource directly but cannot retrieve it through the LLM application. How would you determine whether the problem lies in URI handling, discovery, authorization, or client orchestration?
+* Resource responses become increasingly slow as a repository grows to millions of records. How would you investigate indexing, pagination, caching, and access-control overhead?
+
+**MCP Prompts**
+* A prompt update improves output quality but causes a downstream workflow to fail because the expected response format changes. How would you manage prompt versions and compatibility?
+* A team exposes an internal prompt through MCP, unintentionally revealing sensitive operational instructions. How would you respond and prevent similar exposure?
+* Different applications use the same MCP prompt but obtain inconsistent results after a model upgrade. How would you evaluate prompt behavior and introduce regression tests?
+
+**MCP Transport Mechanisms**
+* A local MCP server works through stdio but fails when migrated to Streamable HTTP behind a reverse proxy. How would you troubleshoot transport, headers, sessions, and proxy behavior?
+* Production requests intermittently fail because connections close before long-running tool operations complete. How would you identify the responsible timeout and design recovery?
+* A remote MCP service receives unexpected requests from internal network destinations. How would you investigate potential SSRF or unsafe endpoint configuration?
+
+**MCP Server Development**
+* An MCP server works correctly in local testing but becomes unresponsive under concurrent production traffic. How would you inspect blocking calls, thread pools, resource limits, and downstream dependencies?
+* A tool handler throws an internal exception that exposes stack traces and configuration details to the client. How would you correct error handling and protect sensitive information?
+* A new server release changes a tool schema, causing multiple existing clients to fail. How would you restore service and introduce safer contract evolution?
+
+**MCP Integration with LLM Applications**
+* An application discovers hundreds of tools across several MCP servers, increasing token usage and causing incorrect tool selection. How would you improve tool filtering and selection?
+* The model invokes a tool successfully, but the final answer ignores the tool result and invents a different outcome. How would you enforce evidence-based response generation?
+* A downstream MCP server fails halfway through a multi-tool request. How would you preserve completed results, decide whether to retry, and communicate partial completion?
+
+**MCP Integration with Java and Spring Boot**
+* A Spring Boot MCP server performs well locally but experiences thread starvation when tools call slow external APIs. How would you redesign concurrency and timeout handling?
+* An existing Spring service contains business logic that the team duplicates inside MCP tool handlers. Bugs appear because the implementations diverge. How would you refactor the codebase?
+* A Java MCP client intermittently fails after token expiration, while other application endpoints continue to work. How would you troubleshoot token propagation, renewal, and security configuration?
+* A Spring Boot deployment introduces latency after enabling detailed MCP logging and tracing. How would you optimize observability without losing diagnostic coverage?
+
+**MCP Authentication and Authorization**
+* A remote MCP server accepts a valid token but allows access to tools outside the user's role. How would you investigate the authorization gap?
+* A privileged MCP server calls an internal API using its own credentials, unintentionally bypassing the user's access restrictions. How would you address the confused-deputy risk?
+* A token intended for one service is forwarded to another MCP server. How would you contain the incident and redesign audience validation and token handling?
+
+**MCP Tool Discovery and Execution**
+* A server adds a privileged tool, and the client automatically makes it available to the LLM without a security review. How would you redesign discovery and approval?
+* A tool schema changes while requests are in progress, producing invalid arguments and inconsistent results. How would you manage schema caching, versioning, and in-flight execution?
+* Tool execution times out, but the external operation may have succeeded. How would you determine the outcome and prevent duplicate side effects?
+
+**MCP Security and Trust Boundaries**
+* A malicious MCP server provides a tool description containing instructions to reveal system information. The LLM follows those instructions. How would you investigate and strengthen trust boundaries?
+* An MCP integration accepts a user-supplied remote server URL and can access internal infrastructure. How would you mitigate SSRF and restrict outbound connectivity?
+* An agent uses an approved MCP tool to retrieve sensitive information and then passes it to an unauthorized downstream tool. How would you enforce data-flow controls across tool boundaries?
+
+**MCP Error Handling and Observability**
+* Users report that MCP operations fail intermittently, but the application records only a generic error message. How would you introduce correlation IDs, distributed traces, and actionable error classification?
+* A tool returns success, yet the downstream business transaction is missing. How would you distinguish a false-success response from delayed processing or eventual consistency?
+* A sudden increase in MCP latency occurs after a deployment. How would you use traces and metrics to isolate whether the model, transport, server, or downstream dependency is responsible?
+
+**MCP Deployment and Governance**
+* Multiple teams deploy MCP servers with inconsistent authentication and logging configurations. How would you establish minimum production standards without blocking delivery?
+* An MCP server is found to expose a high-risk tool that was never approved by the organization. How would you contain access, assess impact, and establish ongoing governance?
+* A breaking server upgrade must be deployed while many clients depend on the existing version. How would you plan compatibility testing, phased rollout, and rollback?

@@ -1,0 +1,30 @@
+* Explain the error propagation model in Node.js across synchronous code, callbacks, Promises, and async/await.
+* How does the Node.js event loop affect asynchronous error handling?
+* Why can a try...catch block fail to catch an error thrown inside a later callback?
+* How would you design a centralized error-handling architecture for a large Node.js application?
+* How would you define a reusable hierarchy of domain-specific and infrastructure-specific errors?
+* How would you distinguish recoverable errors from fatal application errors?
+* How would you handle an uncaught exception without leaving the application in an inconsistent state?
+* Why is continuing execution after an uncaught exception generally unsafe?
+* How would you implement graceful shutdown after a fatal process-level error?
+* How would you prevent unhandled Promise rejections in a large codebase?
+* How do you handle errors from concurrently executing asynchronous operations?
+* How would you implement partial-success behavior when multiple independent operations run concurrently?
+* How would you design retry logic with exponential backoff and jitter?
+* How would you prevent retries from amplifying an outage?
+* How do idempotency and retry policies work together when handling failed requests?
+* How would you classify transient, permanent, and business-rule errors?
+* How would you design error handling for external API integrations?
+* How would you combine timeouts, retries, circuit breakers, and fallbacks?
+* How would you propagate cancellation through multiple asynchronous operations?
+* How would you preserve error causes and stack traces across application layers?
+* How would you design consistent error response formats for REST APIs?
+* How would you implement correlation IDs and distributed tracing for errors across microservices?
+* How would you prevent duplicate logging when errors propagate through multiple layers?
+* How would you handle database transaction failures and rollback errors?
+* How would you handle an error that occurs after a database transaction commits but before the client receives the response?
+* How would you ensure that background job failures do not crash the entire application?
+* How would you implement dead-letter handling for repeatedly failing queue messages?
+* How would you handle errors during graceful shutdown when active requests are still running?
+* How would you monitor error rates and trigger alerts based on error budgets?
+* What design principles would you follow to make a Node.js application resilient to unexpected failures?

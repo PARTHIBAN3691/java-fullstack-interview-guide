@@ -1,0 +1,35 @@
+* Write a program using a static method reference to convert a string into an integer with `Integer.parseInt()`.
+* Write a program using `System.out::println` to print every element in a list of strings.
+* Write a program using `String::toUpperCase` to convert a list of strings to uppercase.
+* Write a program using `String::length` to convert a list of strings into a list of their lengths.
+* Write a program using `Integer::compare` to compare two integers through a functional interface.
+* Write a program using `String::isEmpty` to filter empty strings from a list.
+* Write a program using `Objects::nonNull` to remove null values from a list.
+* Write a program using `Math::abs` to convert a list of integers into their absolute values.
+* Write a program using `String::valueOf` to convert a list of integers into a list of strings.
+* Write a program using `ArrayList::new` to create an empty ArrayList through a `Supplier`.
+* Write a program using `Employee::new` to create Employee objects through a constructor reference.
+* Write a program using `StringBuilder::new` as a constructor reference.
+* Write a program using a constructor reference to create DTO objects from a list of entity names.
+* Write a program using `Employee::getName` to extract employee names from a list of employees.
+* Write a program using `Employee::getSalary` to sort employees by salary.
+* Write a program using `Comparator.comparing(Employee::getName)` to sort employees alphabetically.
+* Write a program to sort employees by department and then by salary using method references.
+* Write a program using `this::printMessage` to pass an instance method as a callback.
+* Write a program using `super::display` to reference a superclass method from a subclass.
+* Write a program using a custom functional interface and a static method reference to perform a calculation.
+* Write a program using a custom functional interface to reference an instance method on a specific object.
+* Write a program using an unbound instance method reference to compare two strings with `String::compareTo`.
+* Write a program to replace `number -> Integer.parseInt(number)` with a method reference.
+* Write a program to replace `employee -> employee.getName()` with a method reference.
+* Write a program to replace `value -> System.out.println(value)` with a method reference.
+* Write a program that demonstrates an overloaded static method reference and resolves the target type explicitly.
+* Write a program that demonstrates overloaded constructors and selects the appropriate constructor reference.
+* Write a generic factory method that accepts a constructor reference and creates objects of the specified type.
+* Write a program that uses `Function.andThen()` to combine a method reference that trims a string with one that converts it to uppercase.
+* Write a program that uses `Predicate` composition and method references to filter strings based on custom validation methods.
+* Write a program that demonstrates a method reference to an overridden instance method and verifies dynamic dispatch.
+* Write a program that adapts a method throwing a checked exception so it can be invoked through a compatible functional interface.
+* Write a program that compares equivalent lambda expressions and method references for filtering, sorting, and mapping a collection.
+* Write a program that uses method references to transform a list of employees into DTO objects and collect the results.
+* Write a program that accepts a method reference as a callback, executes it later, and verifies the expected result.

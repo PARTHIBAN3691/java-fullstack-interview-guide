@@ -1,0 +1,30 @@
+* Create a Eureka Server application and configure it to register multiple microservices.
+* Build a Eureka Client microservice that registers itself and exposes a REST endpoint.
+* Create two Spring Boot microservices and enable service-to-service communication through Eureka.
+* Implement service-to-service communication using Spring Cloud OpenFeign.
+* Configure OpenFeign with connection timeouts, read timeouts, and error handling.
+* Create a Spring Cloud Config Server backed by a Git repository.
+* Build a Config Client that loads environment-specific properties from the Config Server.
+* Implement refreshable configuration using @RefreshScope and Spring Boot Actuator.
+* Create a Spring Cloud Gateway application with routes for two downstream microservices.
+* Configure Gateway route predicates based on path, HTTP method, and request headers.
+* Write a custom Spring Cloud Gateway filter that adds a correlation ID to each request.
+* Implement authentication at the API Gateway using Spring Security OAuth 2.0 Resource Server support.
+* Configure Spring Cloud LoadBalancer for service-to-service communication.
+* Implement a circuit breaker using Resilience4j for a downstream REST call.
+* Add fallback handling to an OpenFeign client using circuit breaker integration.
+* Configure retry, timeout, circuit breaker, and bulkhead policies for a remote service call.
+* Write unit tests for a service that uses a circuit breaker and verify its fallback behavior.
+* Implement a custom health indicator that checks the availability of a downstream service.
+* Configure Micrometer metrics and distributed tracing for two communicating microservices.
+* Propagate a correlation ID across Gateway, service, and downstream HTTP calls.
+* Create a Spring Cloud Stream producer and consumer using a message broker.
+* Implement a consumer that safely handles duplicate messages using an idempotency key.
+* Build an event-driven workflow using Spring Cloud Stream and implement failure handling.
+* Implement a transactional outbox pattern for reliable event publishing from a Spring Boot service.
+* Create a REST API with distributed rate limiting across multiple Gateway instances.
+* Implement OAuth 2.0 token propagation between an API Gateway and downstream services.
+* Write integration tests for service discovery and inter-service communication using Testcontainers.
+* Create contract tests that verify compatibility between a Spring Cloud OpenFeign consumer and its provider.
+* Implement a saga workflow with compensating actions for a multi-service business transaction.
+* Build a complete Spring Cloud microservices application with Gateway, Eureka, Config Server, OpenFeign, Resilience4j, security, messaging, distributed tracing, and automated tests.

@@ -1,0 +1,30 @@
+* What is Docker optimization?
+* Why is Docker image optimization important?
+* What are the benefits of reducing Docker image size?
+* What is the difference between image optimization and container optimization?
+* How can you check the size of a Docker image?
+* How do you list all Docker images and their sizes?
+* What is a lightweight base image?
+* How does choosing the correct base image improve performance?
+* What is a multi-stage Docker build?
+* How do multi-stage builds reduce image size?
+* What is Docker layer caching?
+* How does Docker reuse cached layers during image builds?
+* What is the purpose of a .dockerignore file?
+* Which files should typically be excluded using .dockerignore in a Java project?
+* Why should unnecessary files be excluded from a Docker build context?
+* What is the difference between a JDK image and a runtime-only Java image?
+* Why should build tools be excluded from the final production image?
+* What is the purpose of combining RUN instructions in a Dockerfile?
+* How can unnecessary packages increase Docker image size?
+* What is the difference between a running container and a stopped container in terms of resource usage?
+* How can you view CPU and memory usage of Docker containers?
+* What is the purpose of the docker stats command?
+* How can you remove dangling Docker images?
+* What is the difference between docker image prune and docker system prune?
+* How can unused Docker volumes affect disk usage?
+* What is the difference between image size and container writable-layer size?
+* How can you limit the memory available to a Docker container?
+* How can you limit the CPU resources available to a Docker container?
+* Why should Docker images use specific version tags instead of latest?
+* What are the basic steps to optimize a Docker image for a Spring Boot application?

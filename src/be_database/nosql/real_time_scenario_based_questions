@@ -1,0 +1,30 @@
+* A Spring Boot application experiences intermittent timeouts when connecting to MongoDB. How would you investigate network connectivity, connection pooling, authentication, and server availability?
+* A document database query becomes slow after the collection grows to millions of records. How would you analyze the query plan and improve performance?
+* Multiple requests create duplicate customer documents during peak traffic. How would you enforce uniqueness and handle concurrent writes?
+* Two application instances update the same document, and one overwrites the other's changes. How would you prevent lost updates?
+* A product document contains an increasingly large array of order history, causing performance problems. How would you redesign the data model?
+* A Redis cache serves stale product prices after updates in the database. How would you fix cache invalidation and consistency?
+* A Redis instance becomes unavailable, causing a sudden increase in database traffic. How would you protect the database and application?
+* A cache stampede occurs when a popular key expires, and thousands of requests hit the database simultaneously. How would you mitigate the problem?
+* A Redis-based rate limiter produces incorrect counts under concurrent requests. How would you make the operation atomic?
+* A Cassandra application experiences high latency because requests access multiple partitions. How would you redesign the partition key and query patterns?
+* A Cassandra table has a hot partition because most records share the same partition key. How would you distribute the workload?
+* A distributed database returns stale data after a successful write. How would you investigate its consistency level and replication behavior?
+* A MongoDB replica set elects a new primary during peak traffic, causing write failures. How would you improve application resilience?
+* A multi-document transaction fails during concurrent updates. How would you investigate write conflicts and implement safe retries?
+* A NoSQL migration introduces a new field, but older application versions cannot process the updated documents. How would you handle schema evolution?
+* A message consumer crashes after writing to a NoSQL database but before acknowledging the message. How would you prevent duplicate business processing?
+* An event-driven service updates MongoDB and publishes a Kafka message, but the two operations occasionally become inconsistent. How would you redesign the workflow?
+* A Redis cache loses data after a restart. How would you investigate persistence settings, replication, and recovery procedures?
+* A distributed NoSQL cluster experiences uneven storage and CPU utilization across nodes. How would you investigate partition distribution and rebalance the workload?
+* A query works efficiently in development but becomes expensive in production because of data distribution. How would you identify and fix the problem?
+* A document database collection contains inconsistent field types and missing mandatory fields. How would you validate existing records and prevent future invalid data?
+* A Java application exhausts its NoSQL connection pool under load. How would you diagnose connection leaks, slow operations, and pool configuration?
+* A distributed database loses availability during a network partition. How would you evaluate its consistency and availability requirements?
+* A service must reserve the last available item across several application instances. How would you implement concurrency control using the selected NoSQL database?
+* A high-volume event-processing application needs to retain data for only a fixed period. How would you implement TTL or time-based retention safely?
+* A NoSQL database's replication lag causes inconsistent reads across services. How would you address read-after-write requirements?
+* A Redis cache contains millions of keys, and memory usage continues increasing. How would you identify oversized keys, expiration problems, and eviction-policy issues?
+* A team plans to migrate from MySQL to MongoDB to improve scalability. How would you evaluate the data model, transaction requirements, query patterns, and migration risks?
+* A NoSQL database performs well for simple reads but struggles with complex reporting queries. How would you design an appropriate analytical data flow?
+* How would you investigate a production incident involving NoSQL latency, replication lag, hot partitions, connection failures, and inconsistent application data?

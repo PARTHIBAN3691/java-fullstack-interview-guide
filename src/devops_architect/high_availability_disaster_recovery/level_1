@@ -1,0 +1,141 @@
+
+**High Availability Architecture**
+* How would you design a highly available Spring Boot application with minimal single points of failure?
+* How would you identify hidden dependencies that could cause a system-wide outage?
+* How would you design health checks for application instances, databases, caches, and external services?
+* How would you ensure deployments do not interrupt active user requests?
+* How would you calculate end-to-end availability when an application depends on multiple services?
+* How would you design graceful degradation when a non-critical dependency becomes unavailable?
+
+**Active-Active**
+* How would you distribute traffic between active application instances in different regions?
+* How would you prevent conflicting writes when two active regions update the same business entity?
+* How would you handle session management in an active-active architecture?
+* How would you manage duplicate requests during retries and regional routing changes?
+* How would you design active-active deployments when a downstream dependency supports only one active connection?
+* What are the trade-offs between synchronous and asynchronous replication in active-active systems?
+
+**Active-Passive**
+* How would you configure a standby environment to take over when the primary becomes unavailable?
+* How would you keep the passive environment sufficiently up to date without paying for full active capacity?
+* How would you prevent the standby environment from becoming stale?
+* How would you validate that the standby has enough capacity to serve all production traffic?
+* How would you prevent split-brain behavior when the primary appears to recover during failover?
+* How would you handle failback after the original primary becomes healthy?
+
+**Multi-AZ**
+* How would you deploy application servers and databases across multiple availability zones?
+* How would you handle the loss of one zone without overloading the remaining zones?
+* How would you distribute capacity so that a single-zone failure does not violate latency objectives?
+* How would you configure load balancers and health checks for multi-AZ routing?
+* How would you reduce cross-zone traffic costs without sacrificing availability?
+* How would you test application recovery after losing an entire availability zone?
+
+**Multi-Region**
+* How would you route users to the nearest healthy region?
+* How would you design regional failover while minimizing DNS and client-connection delays?
+* How would you synchronize configuration, secrets, and certificates across regions?
+* How would you decide whether both regions should accept writes?
+* How would you handle regional data residency requirements?
+* How would you monitor replication lag and regional health?
+* How would you prevent a traffic surge in one region from overloading the failover region?
+
+**Disaster Recovery**
+* How would you select a disaster recovery strategy based on business criticality, RTO, RPO, and cost?
+* How would you recover an application when its compute infrastructure, database, and identity dependencies are affected simultaneously?
+* How would you restore service when the primary region is unavailable but the DR region is healthy?
+* How would you validate application configuration, networking, permissions, and secrets in the recovery environment?
+* How would you prioritize restoration of services with dependencies on one another?
+* How would you design a recovery runbook that can be executed consistently by different engineers?
+
+**Backup Strategies**
+* How would you design a backup schedule for a high-transaction relational database?
+* How would you combine full, incremental, differential, and transaction-log backups?
+* How would you protect backups from accidental deletion, ransomware, and compromised production credentials?
+* How would you determine retention periods for operational, compliance, and archival backups?
+* How would you ensure backups remain consistent when the database is actively processing transactions?
+* How would you validate backup integrity and detect incomplete backup jobs?
+* How would you design backups for databases, object storage, application configuration, and infrastructure definitions?
+
+**Restore Strategies**
+* How would you restore a database to a specific point before accidental data deletion?
+* How would you restore an application when its database is available but its encryption keys are missing?
+* How would you estimate restoration time for a large database?
+* How would you validate restored data before directing production traffic to the recovered environment?
+* How would you handle transactions that occurred after the selected recovery point?
+* How would you reduce recovery time through parallel restoration, pre-provisioned resources, and automated validation?
+
+**RPO**
+* How would you determine an acceptable RPO for a payment-processing system?
+* How would you estimate potential data loss from asynchronous replication lag?
+* How would you meet a five-minute RPO using backups and transaction logs?
+* How would you measure actual RPO during a disaster recovery drill?
+* How would you explain the cost implications of reducing RPO to business stakeholders?
+* How would you distinguish the configured RPO from the RPO actually achieved during an incident?
+
+**RTO**
+* How would you break down RTO into detection, decision, failover, validation, and traffic-restoration time?
+* How would you meet a 30-minute RTO when database restoration alone takes several hours?
+* How would you reduce recovery time using infrastructure as code and automated runbooks?
+* How would you measure the actual RTO during recovery testing?
+* How would you handle a service that meets its RTO only when all recovery steps succeed on the first attempt?
+* How would you prioritize dependencies to restore critical business functionality first?
+
+**Disaster Recovery Testing**
+* How would you conduct a DR test without affecting production traffic?
+* How would you verify that restored data satisfies the defined RPO?
+* How would you validate application functionality after failover rather than checking only infrastructure health?
+* How would you test recovery when the primary environment cannot be accessed?
+* How would you measure gaps between planned and actual recovery time?
+* How would you prevent a DR drill from accidentally creating split-brain writes or duplicate processing?
+* How would you track and resolve findings from recurring DR exercises?
+
+**Failover**
+* How would you decide when to initiate failover during a partial outage?
+* How would you coordinate application, database, and network failover?
+* How would you prevent requests from reaching the old primary after traffic has switched?
+* How would you handle in-flight requests and transactions during failover?
+* How would you safely fail back to the original environment after recovery?
+* How would you validate data consistency before reopening writes after failover?
+
+**Automatic Failover**
+* How would you implement automatic failover using health checks, quorum, and fencing?
+* How would you reduce false failovers caused by transient network problems?
+* How would you prevent both primary and standby nodes from accepting writes?
+* How would you design automatic failover when health checks disagree about primary availability?
+* How would you make failover idempotent so repeated automation attempts do not create inconsistent state?
+* How would you monitor and alert on failover duration, failures, and repeated failover events?
+
+**Database Replication**
+* How would you choose between synchronous and asynchronous database replication?
+* How would you measure replication lag and determine whether it threatens the RPO?
+* How would you promote a replica without losing more data than the business permits?
+* How would you handle stale reads from replicas after a successful write?
+* How would you prevent replication lag from causing inconsistent user experiences?
+* How would you recover when replication breaks because of a schema change or incompatible data format?
+* How would you scale read traffic using replicas without overwhelming the primary?
+
+**Cross-Region Replication**
+* How would you configure cross-region database replication for a disaster recovery environment?
+* How would you monitor replication lag during peak traffic?
+* How would you choose between cross-region synchronous replication and asynchronous replication?
+* How would you handle a network partition between regions?
+* How would you promote a secondary region while preserving data consistency?
+* How would you prevent split-brain writes when connectivity between regions is interrupted?
+* How would you test cross-region recovery without disrupting production?
+
+**Backup Encryption**
+* How would you encrypt backups using a cloud KMS?
+* How would you rotate encryption keys without making historical backups unrecoverable?
+* How would you design least-privilege access to backup data and encryption keys?
+* How would you recover when the backup is available but the KMS key is disabled or inaccessible?
+* How would you separate backup administration from key administration?
+* How would you validate encryption and key-access permissions during a DR exercise?
+
+**Business Continuity**
+* How would you perform a business impact analysis for a system with multiple dependent services?
+* How would you prioritize recovery when several critical applications fail simultaneously?
+* How would you maintain essential business operations while the primary system is unavailable?
+* How would you define recovery responsibilities and escalation paths across engineering, operations, and business teams?
+* How would you handle a disaster that affects a cloud provider and a critical third-party service simultaneously?
+* How would you validate communication plans for customers, employees, regulators, and leadership?

@@ -1,0 +1,30 @@
+* Write a Kubernetes DaemonSet YAML manifest that runs a simple container on every eligible worker node.
+* Write a DaemonSet manifest that deploys a Fluent Bit logging agent on every worker node.
+* Write a DaemonSet manifest that mounts the host container log directory into the container.
+* Write a DaemonSet manifest that collects node-level metrics using a monitoring agent.
+* Write a DaemonSet manifest with CPU and memory requests and limits.
+* Write a DaemonSet manifest with readiness, liveness, and startup probes.
+* Write a DaemonSet manifest that schedules Pods only on nodes with a specific label.
+* Write a DaemonSet manifest that uses node affinity to target a dedicated node pool.
+* Write a DaemonSet manifest with tolerations for control plane node taints.
+* Write a DaemonSet manifest that uses a dedicated service account.
+* Write a Kubernetes RBAC configuration that grants a DaemonSet read-only access to required cluster resources.
+* Write a DaemonSet manifest using a hostPath volume with appropriate read-only mount settings.
+* Write a DaemonSet manifest with a RollingUpdate strategy and a controlled maxUnavailable value.
+* Write a DaemonSet manifest using the OnDelete update strategy.
+* Write a DaemonSet manifest with a restricted security context and a non-root container user where supported.
+* Write a Helm template that deploys a configurable DaemonSet with node selectors, tolerations, and resource limits.
+* Write a Kustomize overlay that configures different DaemonSet settings for development and production.
+* Write a kubectl command sequence to inspect DaemonSet status, rollout history, and Pod placement.
+* Write a shell script that identifies nodes without a Ready Pod from a specified DaemonSet.
+* Write a shell script that reports DaemonSet Pods in Pending, CrashLoopBackOff, or ImagePullBackOff states.
+* Write a script that monitors DaemonSet rollout progress and reports nodes where the new version is not Ready.
+* Write a Kubernetes manifest that deploys a node-level agent only on Linux nodes.
+* Write a DaemonSet manifest that supports separate container images for multiple CPU architectures through a multi-platform image.
+* Write a DaemonSet configuration that limits log-agent resource consumption while collecting logs from host directories.
+* Write a Kubernetes manifest that configures graceful termination for a node-level logging agent.
+* Write a Java program using the Kubernetes Java Client to list DaemonSets in a namespace.
+* Write a Java program using the Kubernetes Java Client to retrieve desired, scheduled, available, and ready DaemonSet counts.
+* Write a Java program using the Kubernetes Java Client to identify nodes where a specified DaemonSet has no Ready Pod.
+* Write a Java program that watches DaemonSet events and reports rollout failures.
+* Write a complete DaemonSet deployment solution for a production logging agent with secure host access, resource controls, health checks, monitoring, and safe rolling updates.

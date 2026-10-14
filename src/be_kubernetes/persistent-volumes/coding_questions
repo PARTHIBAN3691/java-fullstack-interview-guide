@@ -1,0 +1,30 @@
+* Write a PersistentVolume YAML manifest that defines a storage capacity of 10Gi and ReadWriteOnce access.
+* Write a PersistentVolumeClaim YAML manifest requesting 5Gi of storage.
+* Write a StorageClass YAML manifest for dynamic provisioning using a CSI provisioner.
+* Write a Pod YAML manifest that mounts a PVC at /app/data.
+* Write a Deployment YAML manifest that mounts a PVC into a Spring Boot application container.
+* Write a StatefulSet YAML manifest that uses volumeClaimTemplates to provide storage for each replica.
+* Write a PostgreSQL Deployment or StatefulSet manifest that mounts persistent storage at the database data directory.
+* Write a PVC manifest that specifies a particular StorageClass and access mode.
+* Write a StorageClass manifest that enables volume expansion.
+* Write a PersistentVolume manifest with a Retain reclaim policy.
+* Write a manifest that mounts a PVC as read-only inside a container.
+* Write a Pod manifest that uses an init container to create directories on a mounted persistent volume.
+* Write a Pod manifest that configures fsGroup to help manage access to a mounted volume.
+* Write a manifest for a headless Service and StatefulSet with persistent storage for each replica.
+* Write a StorageClass manifest that uses WaitForFirstConsumer volume binding.
+* Write a Kubernetes manifest that mounts two separate PVCs at different paths in a Spring Boot container.
+* Write a manifest that exposes a shared persistent volume to multiple Pods, assuming the storage backend supports the required access mode.
+* Write a manifest for a CronJob that runs a database backup process using persistent storage.
+* Write a Job manifest that runs a one-time data migration between two mounted volumes.
+* Write a VolumeSnapshot and VolumeSnapshotClass manifest using the required CSI snapshot support.
+* Write a YAML configuration that defines storage resource requests and limits appropriate for a stateful workload.
+* Write a Kubernetes manifest that runs a Spring Boot application with persistent uploads and configurable storage paths.
+* Write a Java Spring Boot service that saves uploaded files to a configurable directory mounted from a PVC.
+* Write a Java method that reads and writes files using a configurable persistent-storage path.
+* Write a Spring Boot integration test that verifies file persistence through the application's storage service.
+* Write a Java utility that checks available disk space for a configured application data directory.
+* Write a shell command sequence to inspect PVC status, PV details, StorageClass configuration, and related events.
+* Write a shell command sequence to investigate a volume mount failure using Pod descriptions and container logs.
+* Write a shell script that verifies whether a mounted application directory is writable and reports filesystem capacity.
+* Write a Kubernetes storage configuration for a production Spring Boot service that includes persistent data, backup scheduling, resource requests, and appropriate storage policies.

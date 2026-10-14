@@ -1,0 +1,30 @@
+* How would you design an indexing strategy for a large transactional database?
+* How do you choose between a clustered index, non-clustered index, and composite index for a high-volume table?
+* How would you optimize a query that joins several large tables and performs multiple aggregations?
+* How do you design composite indexes for queries with multiple equality predicates and range predicates?
+* How does column order affect index efficiency when a query uses equality, range, and sorting conditions?
+* How would you optimize a query when the database optimizer consistently chooses a poor execution plan?
+* How do parameter-sensitive queries affect index usage and execution plans?
+* How would you diagnose parameter sniffing and determine whether indexing is part of the problem?
+* How do database statistics and data distribution influence index selection?
+* How would you index a table containing hundreds of millions of records with a skewed data distribution?
+* How do you design covering indexes without creating excessive index size?
+* How would you balance read performance against write throughput in an OLTP system?
+* How do indexes influence concurrency, row locking, and deadlocks?
+* How would you add an index to a large production table while minimizing downtime?
+* What are online and concurrent index creation, and how do they differ across database engines?
+* How would you manage index creation when storage capacity is limited?
+* How do you identify and eliminate redundant indexes without affecting production queries?
+* How would you investigate a query that becomes slower after an index is created?
+* How do you optimize indexes for keyset pagination versus offset-based pagination?
+* How would you design indexes for soft deletes and queries that filter on active records?
+* How do partial or filtered indexes improve performance for selective query patterns?
+* How do expression-based or function-based indexes help with computed search conditions?
+* How would you design indexes for JSON fields or semi-structured data in a relational database?
+* How do partitioning and indexing work together for very large tables?
+* How would you choose indexes for a table with frequent bulk inserts and periodic analytical queries?
+* How do index maintenance operations affect replication, transaction logs, and database availability?
+* How would you investigate index-related performance differences between development and production?
+* How do you evaluate whether a query needs a new index or a rewrite instead?
+* How would you design an indexing strategy for a multi-tenant SaaS database?
+* How do you establish measurable criteria for index effectiveness, maintenance cost, and storage overhead?

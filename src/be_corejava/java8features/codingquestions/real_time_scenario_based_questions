@@ -1,0 +1,20 @@
+* Given a list of employees with ID, name, department, and salary, write a Java 8 program to find the highest-paid employee in each department.
+* Given employee records containing duplicate IDs, write a Java 8 program to retain the employee with the highest salary for each ID.
+* Given a list of transactions, write a Java 8 program to group transactions by customer and calculate the total transaction amount for each customer.
+* Given a list of orders, write a Java 8 program to find the top five customers based on total purchase value.
+* Given a list of products with category and price, write a Java 8 program to find the cheapest product in each category.
+* Given a list of employee records, write a Java 8 program to partition employees into salary-above-threshold and salary-at-or-below-threshold groups.
+* Given a list of words from application logs, write a Java 8 program to identify the top ten most frequent error messages.
+* Given a list of API response times, write a Java 8 program to calculate the average, maximum, and minimum response times.
+* Given a list of transactions, write a Java 8 program to detect duplicate transactions based on transaction ID.
+* Given a list of orders containing multiple line items, write a Java 8 program to flatten the order data and calculate the total quantity sold for each product.
+* Given a list of employees, write a Java 8 program to find employees whose salaries are higher than the average salary of their departments.
+* Given a list of customer records, write a Java 8 program to convert the list into a map while handling duplicate customer IDs.
+* Given a list of strings containing null and blank values, write a Java 8 program to safely filter and normalize the valid strings.
+* Given an optional configuration value, write a Java 8 program to supply a default value, transform the value, and execute an action only when present.
+* Given two independent remote-service calls, write a Java 8 program using `CompletableFuture` to execute them concurrently and combine their results.
+* Given a remote-service call that may fail, write a Java 8 program using `CompletableFuture` to handle the exception and provide a fallback result.
+* Given a large collection of records, write a Java 8 program to compare sequential and parallel Stream processing while preserving correct results.
+* Given a list of employees, write a Java 8 program to sort by department, then salary in descending order, and then name in ascending order.
+* Given a collection of sales records, write a Java 8 program to calculate department-wise revenue using `groupingBy()` and downstream collectors.
+* Given a list of events with timestamps, write a Java 8 program to group events by calendar date using the Date and Time API.

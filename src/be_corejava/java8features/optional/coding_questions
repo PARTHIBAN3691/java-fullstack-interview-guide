@@ -1,0 +1,36 @@
+
+* Write a Java 8 program to create an empty `Optional<String>` and check whether it contains a value.
+* Write a Java 8 program to create an `Optional` using `Optional.of()` and print its value.
+* Write a Java 8 program to handle a nullable string using `Optional.ofNullable()`.
+* Write a Java 8 program to return a default name when an `Optional<String>` is empty.
+* Write a Java 8 program to demonstrate the difference between `orElse()` and `orElseGet()` using a method that prints when it is executed.
+* Write a Java 8 program to throw a custom exception when an `Optional<Employee>` is empty.
+* Write a Java 8 program to use `ifPresent()` to print a value only when it is available.
+* Write a Java 8 program to convert an `Optional<String>` to uppercase using `map()`.
+* Write a Java 8 program to filter an optional integer and retain it only when it is greater than 100.
+* Write a Java 8 program to retrieve an employee's name from an `Optional<Employee>`.
+* Write a Java 8 program to retrieve an employee's department name when both employee and department can be absent.
+* Write a Java 8 program to demonstrate the difference between `map()` and `flatMap()` using an `Employee` class whose department getter returns `Optional<Department>`.
+* Write a Java 8 program to chain multiple `Optional` operations to retrieve a customer's city from a potentially nullable customer object.
+* Write a Java 8 program to convert a nullable method return value into an `Optional` without throwing a `NullPointerException`.
+* Write a Java 8 program to use `Optional` with a list of employees and print the name of an employee whose ID matches a given value.
+* Write a Java 8 program to find an employee by ID using a repository-like method that returns `Optional<Employee>`.
+* Write a Java 8 program to retrieve an employee's salary or return zero when the employee is not found.
+* Write a Java 8 program to retrieve the first available value from two `Optional<String>` objects.
+* Write a Java 8 program to implement fallback logic using multiple optional configuration values.
+* Write a Java 8 program to use `Optional` with Java 8 Streams to find the maximum salary from a list of employees.
+* Write a Java 8 program to find the first employee whose salary exceeds a specified threshold and handle the case where no employee matches.
+* Write a Java 8 program to convert a list of nullable values into a list containing only non-null values using `Optional` and Streams.
+* Write a Java 8 program to demonstrate how `Optional.map()` handles a mapping function that returns null.
+* Write a Java 8 program to demonstrate how `Optional.flatMap()` avoids nested `Optional` objects.
+* Write a Java 8 program to implement a method `findEmployeeById(long id)` that returns `Optional<Employee>`.
+* Write a Java 8 program to implement `getEmployeeName(long id)` by using `Optional` and returning a default name when the employee is absent.
+* Write a Java 8 program to safely retrieve the postal code from `Optional<Customer>` when the customer's address may be absent.
+* Write a Java 8 program to validate an optional username and return it only when it is non-empty and meets a minimum length.
+* Write a Java 8 program to use `Optional.orElseThrow()` to handle a missing order in an order management service.
+* Write a Java 8 program to handle a checked exception while processing a value inside an `Optional`.
+* Write a Java 8 program to compare the behavior of traditional null checks with an equivalent `Optional`-based implementation.
+* Write a Java 8 program to demonstrate why `orElse()` may evaluate an expensive fallback even when the value is present.
+* Write a Java 8 program to combine two optional values to produce a result only when both values are present.
+* Write a Java 8 program to implement a method that returns an optional discount percentage for a customer and applies a default discount when no value is found.
+* Write a Java 8 program to write unit tests for a method returning `Optional<Employee>`, covering present, empty, and exception scenarios.

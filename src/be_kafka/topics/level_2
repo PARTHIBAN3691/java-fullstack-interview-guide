@@ -1,0 +1,30 @@
+* How would you design a topic strategy for a large enterprise with hundreds of microservices?
+* How do partition counts influence throughput, latency, and resource utilization?
+* How do you determine the optimal partition count for a high-throughput topic?
+* What are the risks of increasing partitions after a topic is in production?
+* How can adding partitions affect ordering for messages with the same key?
+* How would you design a topic for strict per-customer message ordering?
+* How do you choose between a few large topics and many small topics?
+* How does Kafka handle topic metadata across brokers?
+* What happens during leader election for a topic partition?
+* How do unclean leader elections affect data durability?
+* How do you configure topic durability for critical financial transactions?
+* How do replication factor and min.insync.replicas work together?
+* What are the trade-offs between retention-based deletion and log compaction?
+* How would you design a compacted topic for maintaining the latest state of millions of entities?
+* How do you handle key skew and hot partitions in a Kafka topic?
+* How would you migrate a topic to a different partitioning strategy without losing ordering guarantees?
+* How do you plan a zero-downtime migration from an old topic to a new topic?
+* How can topic configuration changes affect existing messages?
+* How do you manage topic configuration drift across environments?
+* How would you design topic isolation for multiple tenants?
+* What are the security and operational risks of allowing automatic topic creation?
+* How do Kafka ACLs interact with topic creation and topic access?
+* How would you implement topic governance and ownership across teams?
+* How do you manage schema compatibility when multiple producers share a topic?
+* How would you handle a topic whose data volume grows faster than expected?
+* How do you estimate storage requirements for a topic with a known message rate and retention period?
+* How do partition reassignment and replica movement affect production workloads?
+* How do you diagnose a topic with high under-replicated partition counts?
+* How would you design topic retention for replayability, compliance, and storage cost?
+* What factors determine whether a business event should have its own topic or share a domain topic?

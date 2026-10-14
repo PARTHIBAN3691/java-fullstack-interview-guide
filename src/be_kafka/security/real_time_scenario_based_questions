@@ -1,0 +1,30 @@
+* A Kafka producer suddenly receives `SaslAuthenticationException` after a deployment. How would you investigate the cause?
+* A consumer authenticates successfully but receives `TopicAuthorizationException`. How would you troubleshoot the ACL configuration?
+* Kafka clients can connect locally but fail in production with TLS handshake errors. What would you investigate?
+* A certificate expires on one Kafka broker, causing some clients to fail. How would you restore service and prevent recurrence?
+* A team has stored SASL passwords directly in application configuration files committed to Git. How would you remediate the security risk?
+* A production Kafka cluster still uses PLAINTEXT listeners. How would you migrate it to encrypted communication without disrupting applications?
+* A consumer can read messages from a topic but should not be able to access other topics. How would you enforce this restriction?
+* A producer has permission to write to a topic but fails while retrieving cluster metadata. What permissions or configuration issues would you investigate?
+* A consumer works until its OAuth token expires and then starts failing. How would you implement reliable token renewal?
+* An application team requests wildcard ACL permissions for convenience. How would you evaluate and limit the requested access?
+* A compromised application credential may have been used to access sensitive events. What immediate containment and investigation steps would you take?
+* Kafka authentication failures increase sharply after password rotation. How would you diagnose the problem without exposing credentials?
+* A broker restart causes clients to fail certificate validation because of hostname mismatches. How would you resolve the issue safely?
+* A new microservice needs to produce events and consume from a specific consumer group. How would you provision only the required permissions?
+* Two business units share the same Kafka cluster but must not access each other's data. How would you design tenant isolation?
+* A Kafka administrator has unrestricted access to all topics and cluster operations. How would you reduce the risk of excessive privilege?
+* A Spring Boot application accidentally logs its Kafka JAAS configuration. How would you contain the exposure and prevent it from happening again?
+* Kafka brokers use TLS, but inter-broker communication still uses an insecure listener. How would you identify and fix this configuration?
+* An attacker repeatedly attempts authentication against Kafka brokers. How would you detect, investigate, and mitigate the activity?
+* A security audit finds that unused Kafka ACLs remain active for former applications. How would you clean up permissions safely?
+* Schema Registry rejects requests even though the Kafka producer authenticates successfully. How would you investigate the separate authentication and authorization configurations?
+* A Kafka Connect connector can connect to the broker but cannot create or write to its target topic. How would you diagnose the missing permissions?
+* A team wants to rotate broker certificates while maintaining availability. How would you plan the rollout and validate client compatibility?
+* A developer needs temporary production access for troubleshooting. How would you grant time-limited access and ensure it is revoked?
+* A financial platform requires sensitive payment events to be encrypted in transit and at rest. How would you design and validate the controls?
+* A Kafka consumer group can read a topic but fails to commit offsets. Which consumer-group permissions and client configurations would you inspect?
+* A client reports intermittent SSL handshake failures only when connecting to certain brokers. How would you isolate certificate, listener, and truststore differences?
+* A production incident requires revoking a compromised SASL credential. How would you coordinate credential rotation across multiple services?
+* A company needs separate security policies for developers, operators, and applications. How would you implement role-based access with Kafka ACLs and operational controls?
+* You are responsible for a Kafka security review. How would you validate authentication, authorization, encryption, secrets management, auditing, and recovery procedures?

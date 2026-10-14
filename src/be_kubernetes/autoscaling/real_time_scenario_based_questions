@@ -1,0 +1,30 @@
+* A Spring Boot application receives a sudden traffic spike, but HPA does not increase the replica count. How would you troubleshoot it?
+* HPA shows unknown CPU metrics for all Pods. Which Kubernetes components and configurations would you inspect?
+* HPA scales from three to twenty replicas, but the new Pods remain Pending. How would you investigate the cluster capacity issue?
+* The application scales up during peak traffic but takes several minutes to become Ready. How would you reduce the scaling delay?
+* HPA continuously scales up and down every few minutes. How would you stabilize the scaling behavior?
+* CPU utilization remains low, but API response times increase significantly. How would you design autoscaling for this application?
+* A Java application reaches its memory limit and restarts before HPA can react. How would you redesign its resource configuration and scaling strategy?
+* After increasing the replica count, the application experiences more database connection timeouts. How would you prevent downstream overload?
+* A Kafka consumer group experiences rapidly increasing lag, but HPA does not scale the consumers. How would you troubleshoot the metrics integration?
+* A Kafka consumer application scales to fifty replicas, but only twelve consumers can actively process partitions. How would you optimize scaling?
+* Cluster Autoscaler does not add nodes even though several Pods are Pending. What scheduling constraints and cloud configuration issues would you investigate?
+* New nodes are provisioned, but application Pods remain unscheduled. How would you trace the issue?
+* An application has a five-minute startup time, causing repeated scale-up events during traffic spikes. How would you improve the autoscaling design?
+* HPA reaches maxReplicas during peak traffic, and request latency continues increasing. How would you identify the next bottleneck?
+* A memory-based HPA does not scale down after traffic decreases because JVM memory usage remains high. How would you handle this behavior?
+* A VPA recommendation increases CPU requests, and HPA subsequently scales differently. How would you analyze the interaction?
+* A cloud cluster scales down nodes during a traffic lull, then immediately scales them up again. How would you reduce unnecessary infrastructure churn?
+* A production service must maintain at least five available replicas during a zone failure. How would you combine autoscaling, topology spread, and disruption budgets?
+* A service receives unpredictable bursts of requests lasting only a few seconds. How would you balance responsiveness, stability, and cost?
+* A scheduled batch application has predictable nightly workloads. How would you combine scheduled scaling and HPA?
+* A background worker consumes messages from a queue, but queue depth grows even after scaling. How would you determine whether processing capacity or a downstream dependency is the bottleneck?
+* A service scales based on CPU utilization but becomes overloaded because requests are I/O-bound. Which alternative metrics would you evaluate?
+* The HPA controller recommends more replicas than the cluster can support. How would you coordinate Pod autoscaling and node autoscaling?
+* A deployment is being rolled out while HPA is actively scaling it. What problems could occur, and how would you validate the behavior?
+* A Spring Boot application suffers from long garbage-collection pauses after scale-up. How would you investigate JVM and container resource interactions?
+* Autoscaling works in staging but fails in production. How would you compare metrics availability, resource requests, policies, and cluster capacity?
+* A team wants to autoscale based on HTTP requests per second using Prometheus. How would you design and validate the metric pipeline?
+* A production application has strict cost limits but must meet an availability SLO. How would you choose minReplicas, maxReplicas, and scaling policies?
+* During a node scale-down, critical application Pods are evicted and cause service disruption. How would you redesign workload placement and disruption protection?
+* You must demonstrate that autoscaling can handle twice the normal production traffic. How would you design a load test and define success criteria?

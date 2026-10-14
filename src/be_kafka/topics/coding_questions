@@ -1,0 +1,30 @@
+* Write a Java program using Kafka AdminClient to create a topic with six partitions and a replication factor of three.
+* Write a Java program to list all topics in a Kafka cluster.
+* Write a Java program to describe a topic and print its partition details.
+* Write a Java program to check whether a topic exists before creating it.
+* Write a Java program to create multiple topics from a configuration list.
+* Write a Java program to delete a topic using Kafka AdminClient.
+* Write a Spring Boot configuration that creates a topic using the NewTopic bean.
+* Write a Spring Boot startup validation that checks whether required topics exist.
+* Write a Java program to retrieve topic configurations, including retention.ms and cleanup.policy.
+* Write a Java program to update a topic's retention period using incrementalAlterConfigs.
+* Write a Java program to increase a topic's partition count using AdminClient.
+* Write a Java program to retrieve the partition count and replication factor of a topic.
+* Write a Java program to identify partitions that have no available leader.
+* Write a Java program to list under-replicated partitions using Kafka cluster metadata or administrative metrics.
+* Write a Java producer that publishes customer events to a topic using customerId as the key.
+* Write a Java consumer that subscribes to a topic and processes messages from all assigned partitions.
+* Write a Java producer that publishes different event types to a shared topic using a common event envelope.
+* Write a Java program that reads topic names from application configuration and validates them at startup.
+* Write a Java program to create a compacted topic with appropriate topic configurations.
+* Write a Java program to configure a topic with a specified replication factor and min.insync.replicas.
+* Write a Java program to calculate approximate topic storage requirements from message size, throughput, retention, and replication factor.
+* Write a Java program to inspect topic partition offsets and estimate the number of retained records.
+* Write a Java program to implement a topic migration that copies records from an old topic to a new topic.
+* Write a Java program to preserve message keys and relevant headers while migrating records between topics.
+* Write a Java program to publish versioned events to a topic with schema validation.
+* Write a Java program to handle topic creation timeouts and retry administrative operations safely.
+* Write a Java program to compare expected topic configurations with actual cluster configurations.
+* Write a Java program to validate that a topic's partition count and replication factor meet application requirements.
+* Write a Java program to consume a compacted topic and build a local key-value state map.
+* Write a Java program to implement a Spring Boot health indicator that checks the availability and metadata of required Kafka topics.

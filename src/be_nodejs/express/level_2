@@ -1,0 +1,30 @@
+* Explain the internal request-processing flow of Express.js.
+* How does Express.js resolve matching routes when multiple routes are defined?
+* What happens when multiple middleware functions match the same request?
+* How would you design a reusable middleware framework for an Express application?
+* How do you implement centralized error handling for synchronous and asynchronous operations?
+* How does error propagation differ across Express 4 and Express 5?
+* How would you design a scalable Express application using layered architecture?
+* How do you prevent duplicate route definitions and route conflicts?
+* How would you implement API versioning in Express.js?
+* How do you implement request validation without duplicating validation logic?
+* How do you prevent mass assignment vulnerabilities in Express APIs?
+* How do you protect an Express application against SQL injection and NoSQL injection?
+* How do you mitigate Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and HTTP header attacks?
+* How do you secure cookies and session management in Express.js?
+* How do you implement rate limiting across multiple Express instances?
+* How do you handle distributed session storage in a horizontally scaled Express application?
+* How do you implement idempotency for payment-related Express endpoints?
+* How do you prevent race conditions in concurrent API requests?
+* How do you handle large request payloads without exhausting server memory?
+* How do you stream large files through Express without buffering the entire file?
+* How do you implement graceful shutdown while active requests are being processed?
+* How do you propagate correlation IDs across Express services?
+* How do you implement structured logging and distributed tracing in Express?
+* How do you optimize Express middleware for high-throughput APIs?
+* How do you diagnose memory leaks in a long-running Express application?
+* How do you implement health checks and readiness checks for Express services?
+* How do you design reliable retry and timeout policies for downstream API calls?
+* How do you implement Content Security Policy and other security headers in Express?
+* How do you test Express applications under high concurrency?
+* How would you migrate a large Express application from JavaScript to TypeScript?

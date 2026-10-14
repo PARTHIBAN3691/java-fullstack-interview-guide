@@ -1,0 +1,29 @@
+* A Java Spring Boot build that normally takes 5 minutes is suddenly taking 30 minutes in Azure DevOps. How would you investigate and optimize the pipeline?
+* A production deployment succeeds in Azure DevOps, but the application is not responding correctly. How would you investigate the deployment and decide whether to roll back?
+* A pipeline is failing because Maven dependencies cannot be downloaded. How would you troubleshoot the issue?
+* A production pipeline accidentally exposes a secret in its logs. What would you do immediately and how would you prevent recurrence?
+* A developer pushes code directly to the main branch without a pull request. How would you prevent this from happening?
+* Two developers modify the same files and the pull request has merge conflicts. How would you resolve the issue safely?
+* A deployment works correctly in QA but fails in Production because of configuration differences. How would you investigate and redesign the configuration management?
+* A production deployment introduces a serious performance problem. How would you implement an automated rollback strategy?
+* A pipeline successfully deploys a new version, but the application health check starts failing. How would you design the pipeline to detect and handle this automatically?
+* Multiple microservices need to be deployed independently, but some services have dependencies on others. How would you design the CI/CD process?
+* A Docker image is successfully built but cannot be pushed to Azure Container Registry. How would you troubleshoot the problem?
+* A Kubernetes deployment from Azure DevOps completes successfully, but the pods immediately enter CrashLoopBackOff. How would you investigate the issue?
+* A pipeline works on a Microsoft-hosted agent but fails on a self-hosted agent. How would you identify the environmental difference?
+* A self-hosted Azure DevOps agent is running out of disk space during builds. How would you troubleshoot and resolve the issue?
+* A Java application passes unit tests but fails integration tests in the pipeline. How would you investigate the difference between local and pipeline environments?
+* A production deployment requires manual approval, but the approval is delaying an urgent release. How would you balance release speed and production safety?
+* A pipeline deploys the wrong application version to Production. How would you identify how this happened and prevent it?
+* A team wants to ensure that the exact artifact tested in QA is deployed to Production. How would you design the pipeline?
+* A vulnerability is discovered in a third-party Java dependency after deployment. How would you update the dependency and prevent similar vulnerabilities from reaching production?
+* A pipeline is triggering multiple times for a single commit. How would you investigate and fix the trigger configuration?
+* A Terraform deployment partially succeeds and then fails. How would you recover the environment safely?
+* A production deployment changes infrastructure unexpectedly because of a Terraform configuration change. How would you prevent this in future deployments?
+* A release needs to be deployed gradually to only a small percentage of users. How would you implement this using Azure DevOps and Azure services?
+* A deployment to one Azure region succeeds while deployment to another region fails. How would you design the pipeline to handle this situation?
+* A critical production release needs to be rolled back to the previous version within minutes. How would you design the deployment and artifact strategy to support this?
+* A pipeline contains hundreds of duplicated YAML steps across microservices. How would you refactor it for maintainability?
+* A developer accidentally commits credentials into an Azure Repos Git repository. What actions would you take to secure the system and clean up the repository?
+* A pipeline has started consuming significantly more build-agent time and increasing Azure DevOps costs. How would you identify and reduce the unnecessary consumption?
+* A production application requires a database schema change as part of deployment. How would you design the CI/CD process to safely deploy the application and database changes?

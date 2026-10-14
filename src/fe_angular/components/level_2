@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of an Angular component from creation to destruction.
+* How does Angular determine when a component should be checked during change detection?
+* How does OnPush change detection work with object references and immutable data?
+* What problems can occur when mutating an object passed through an input property?
+* How do signals work inside Angular components?
+* What is the difference between signal-based inputs and traditional @Input properties?
+* How do you use input(), output(), and model() in modern Angular components?
+* How do computed signals and effects help manage component state?
+* How do you prevent unnecessary component re-rendering in a large Angular application?
+* What is the difference between smart and presentational components?
+* How do you design reusable components without tightly coupling them to business logic?
+* How do you build a component that supports projected content and multiple projection slots?
+* How does content projection differ from passing data through @Input?
+* How do you dynamically create and destroy components at runtime?
+* What is ViewContainerRef, and how is it used for dynamic component rendering?
+* How do you load a component dynamically using modern Angular APIs?
+* How do you implement a custom component that works with Angular reactive forms?
+* What is ControlValueAccessor, and how does it integrate a custom component with Angular forms?
+* How do you implement validation in a reusable form component?
+* How do you manage subscriptions and prevent memory leaks in components?
+* How do takeUntilDestroyed() and DestroyRef help manage component cleanup?
+* How do you handle asynchronous data in components using RxJS and the async pipe?
+* What is the difference between storing Observable data and subscribing manually in a component?
+* How do you avoid ExpressionChangedAfterItHasBeenCheckedError?
+* How do component providers differ from application-level providers?
+* How does dependency injection scope affect component instances and their services?
+* How do you improve component performance when rendering thousands of records?
+* How do Angular components behave during server-side rendering and hydration?
+* How do you make Angular components accessible and compatible with keyboard navigation?
+* How would you architect a component library for reuse across multiple Angular applications?

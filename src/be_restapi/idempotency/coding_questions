@@ -1,0 +1,30 @@
+* Write a Spring Boot REST endpoint that accepts an Idempotency-Key request header when creating a payment.
+* Write a Java method that validates an idempotency key for null, blank, and invalid values.
+* Create a JPA entity for storing an idempotency key, request fingerprint, processing status, response status, and response body.
+* Write a Spring Data JPA repository method that retrieves an idempotency record by key and customer ID.
+* Write a database migration that adds a unique constraint for the appropriate idempotency-key scope.
+* Write a Spring Boot service that checks whether an idempotency key has already been processed.
+* Write a Java implementation that returns the previously stored response for a completed duplicate request.
+* Write a Spring Boot filter or interceptor that extracts an idempotency key from incoming requests.
+* Write a Java function that calculates a stable request fingerprint from a canonicalized JSON payload.
+* Write a Java method that detects reuse of the same idempotency key with a different request fingerprint.
+* Write a Spring Boot API that returns HTTP 409 when an idempotency key is reused with a different payload.
+* Write a Java implementation that tracks idempotency states such as IN_PROGRESS, COMPLETED, and FAILED.
+* Write a transactional Spring service that creates an order and completes its idempotency record atomically.
+* Write a concurrency-safe implementation that prevents simultaneous requests from processing the same key.
+* Write a Java implementation that uses a database unique constraint to handle concurrent idempotency-key creation.
+* Write a Redis-based idempotency implementation using atomic key creation and an expiration period.
+* Write a Java service that handles duplicate requests while the original request is still in progress.
+* Write a recovery job that identifies stale IN_PROGRESS records and safely reconciles their outcomes.
+* Write a Spring Boot integration test that submits the same payment request twice and verifies only one payment is created.
+* Write a concurrent test that sends 100 requests with the same idempotency key and verifies a single business operation.
+* Write a test that verifies the API rejects the same idempotency key when the request payload changes.
+* Write a test that verifies repeated requests receive the original HTTP status code and response body.
+* Write a test that simulates a database timeout after a transaction commit and verifies duplicate processing is prevented.
+* Write a Java implementation that retries a downstream payment request using the same idempotency key.
+* Write a service that stores a payment result and its idempotency record within one database transaction.
+* Write a transactional outbox implementation that publishes events safely after an idempotent business operation.
+* Write an idempotent message consumer that records processed event IDs before applying business changes.
+* Write a Java cleanup job that removes expired idempotency records without deleting records for active operations.
+* Write a Spring Boot endpoint that exposes metrics for duplicate requests, in-progress requests, and key conflicts.
+* Write a complete coding solution for an idempotent payment API that handles concurrent requests, retries, failures, and recovery.

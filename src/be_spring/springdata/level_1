@@ -1,0 +1,30 @@
+* How does Spring Data JPA create repository implementations at runtime?
+* Explain the internal working of JpaRepository during a save operation.
+* What is the difference between save() and saveAndFlush()?
+* What is the difference between flush() and commit()?
+* How does Spring Data JPA determine whether an entity is new or existing?
+* What is the purpose of the @Modifying annotation?
+* How do you write custom JPQL queries using @Query?
+* How do you execute native SQL queries using Spring Data JPA?
+* How do you pass named parameters to a repository query?
+* What is the difference between positional and named query parameters?
+* How do you implement pagination using PageRequest and Pageable?
+* What is the difference between Page, Slice, and List in Spring Data JPA?
+* How do you implement sorting using Sort and Pageable?
+* How do you create dynamic queries using the Specification interface?
+* What is the purpose of the Criteria API in JPA?
+* What are projections in Spring Data JPA?
+* What is the difference between interface-based and class-based projections?
+* How do you implement auditing using Spring Data JPA?
+* What are @CreatedDate, @LastModifiedDate, and @CreatedBy?
+* What is the difference between eager and lazy fetching?
+* What is the difference between CascadeType and FetchType?
+* What is the purpose of orphanRemoval in JPA?
+* What is the difference between OneToOne, OneToMany, ManyToOne, and ManyToMany relationships?
+* What is the N+1 query problem, and how can it be resolved?
+* What is the difference between JPQL JOIN FETCH and @EntityGraph?
+* How do you implement optimistic locking using @Version?
+* What is the difference between optimistic and pessimistic locking?
+* How do you handle database transactions across multiple repository operations?
+* How do you test Spring Data JPA repositories using @DataJpaTest?
+* How do you configure multiple data sources in a Spring Boot application using Spring Data JPA?

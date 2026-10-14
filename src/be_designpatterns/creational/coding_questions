@@ -1,0 +1,30 @@
+* Implement a thread-safe Singleton class in Java using eager initialization.
+* Implement a lazy-initialized Singleton using a static inner helper class.
+* Implement an enum-based Singleton and demonstrate how it behaves during serialization.
+* Write a Singleton implementation using double-checked locking and explain through code why volatile is required.
+* Write a JUnit test to verify that concurrent threads obtain the same Singleton instance.
+* Implement the Factory Method pattern for creating different notification senders such as email, SMS, and push notifications.
+* Refactor a switch-based payment processor into a Factory Method implementation.
+* Implement a factory registry that discovers payment implementations by payment type.
+* Create a Spring Boot factory that selects a payment provider based on configuration and request attributes.
+* Implement the Abstract Factory pattern for creating PostgreSQL-specific and MySQL-specific database components.
+* Create an Abstract Factory for related UI components such as buttons, menus, and dialogs for different themes.
+* Write unit tests that verify each Abstract Factory creates compatible product families.
+* Implement the Builder pattern for an immutable Employee class with mandatory and optional fields.
+* Create a Builder for a payment request that validates required fields and rejects invalid combinations.
+* Implement a staged Builder that enforces the order of required construction steps at compile time.
+* Write a generic Builder implementation that supports fluent method chaining in an inheritance hierarchy.
+* Implement the Prototype pattern for cloning a document containing nested mutable objects.
+* Write a deep-copy implementation that handles collections and preserves required object relationships.
+* Refactor a Cloneable-based implementation to use copy constructors and compare the behavior.
+* Implement a Prototype registry that stores named templates and returns independent copies.
+* Create a Java factory that constructs different report generators using a common interface.
+* Implement a factory that creates tenant-specific service clients based on tenant configuration.
+* Refactor a legacy service that uses direct object construction into a dependency-injected Spring Boot design.
+* Write a Java example demonstrating the difference between a Factory and a Service Locator.
+* Implement a factory with validation that returns meaningful errors for unsupported product types.
+* Create a factory that caches reusable immutable objects and remains thread-safe under concurrent access.
+* Write a test demonstrating the problem with shallow copying an object that contains a mutable list.
+* Implement a safe copying strategy for an object graph with nested collections and shared references.
+* Build a Spring Boot application that combines Builder for request construction with Factory Method for provider selection.
+* Write integration and unit tests to verify object creation, invalid configuration handling, thread safety, and resource cleanup.

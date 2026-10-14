@@ -1,0 +1,30 @@
+* Write a Jest test case to verify that a function adds two numbers correctly.
+* Write unit tests for a function that checks whether a number is even or odd.
+* Write Jest tests for a function that returns the factorial of a number, including edge cases.
+* Write test cases for a function that validates an email address.
+* Write tests for a function that throws an exception when given invalid input.
+* Write a Jest test to verify that an asynchronous function resolves with the expected value.
+* Write a Jest test to verify that an asynchronous function rejects with the expected error.
+* Write a test using fake timers to verify a function that executes after a delay.
+* Write tests for an Express.js GET endpoint using Supertest.
+* Write tests for an Express.js POST endpoint that validates the request body.
+* Write integration tests for an Express.js API that returns customer details.
+* Write tests to verify that an API returns HTTP 400 for invalid input and HTTP 404 for missing records.
+* Write a Jest test that mocks a service method and verifies that it was called with the correct arguments.
+* Write tests for an Express.js authentication middleware that validates a JWT.
+* Write tests to verify that authorization middleware blocks users without the required role.
+* Write a unit test for a service that calls a repository using a mocked repository implementation.
+* Write an integration test that inserts, retrieves, and deletes a record from a test database.
+* Write a test for a function that retries a failed asynchronous operation three times.
+* Write tests for an EventEmitter that emits success and error events.
+* Write tests for a function that reads a JSON file using the Node.js file system module.
+* Write tests for a stream-processing function that transforms incoming text to uppercase.
+* Write tests to verify that a stream correctly handles malformed input and emits errors.
+* Write a test for a caching function that returns cached data and refreshes expired entries.
+* Write tests for an API endpoint that supports pagination, sorting, and filtering.
+* Write tests to verify that repeated payment requests with the same idempotency key do not create duplicate transactions.
+* Write a test suite that verifies database transaction rollback when an operation fails.
+* Write a test that simulates a downstream API timeout and verifies the fallback response.
+* Write tests for a function that processes multiple records concurrently and collects individual failures.
+* Write a Node.js test suite that checks whether a function meets a specified performance threshold.
+* Write a complete Jest and Supertest test suite for a small Express.js CRUD API, including success cases, validation errors, authentication failures, and database failures.

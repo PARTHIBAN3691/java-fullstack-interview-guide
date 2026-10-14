@@ -1,0 +1,16 @@
+
+* Your REST API returns employee details, and your DTO classes contain only fields, constructors, and accessors. How could records simplify these DTOs?
+* Your application uses records for request validation. How would you reject null or invalid component values during construction?
+* A record contains a list of roles, and callers can modify the original list after construction. How would you protect the record's data?
+* Your team is deciding whether to convert existing domain classes into records. What factors would you evaluate before making the change?
+* Your code checks an object's type using `instanceof` and then explicitly casts it. How would you refactor the code using Java 16 pattern matching?
+* A complex conditional expression uses a pattern variable across multiple Boolean operators. How would you ensure that the variable is only accessed within its valid scope?
+* Your service converts a stream of database results into a list and later modifies that list. What issue could arise after replacing `Collectors.toList()` with `Stream.toList()`?
+* Your data-processing pipeline converts each input into zero or more outputs. How would you evaluate `mapMulti()` against `flatMap()`?
+* Your company needs to distribute a Java desktop application to users who do not have Java installed. How could `jpackage` help?
+* A Java application uses internal JDK APIs and fails after migration to Java 16. How would you investigate and resolve the compatibility issue?
+* Your application uses direct byte buffers for off-heap data processing. How would you assess the Foreign-Memory Access API introduced in Java 16?
+* Two local processes need to exchange data on the same machine. How could Unix-domain socket channels be useful?
+* Your analytics service performs numerical operations over large arrays. How would you evaluate the Java 16 Vector API?
+* Your build pipeline must support multiple operating systems and package a custom Java runtime. How would you approach packaging with `jpackage`?
+* Your team wants to adopt Java 16 features while maintaining compatibility with existing production systems. How would you prioritize standard features, preview features, and incubator APIs?

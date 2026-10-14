@@ -1,0 +1,30 @@
+* How would you design a highly available centralized configuration platform for hundreds of microservices?
+* How do you prevent the Config Server from becoming a single point of failure?
+* How do you design configuration management across multiple regions and availability zones?
+* How do you manage configuration consistency across independently deployed microservices?
+* How do you safely roll out configuration changes to thousands of application instances?
+* How do you implement canary configuration releases and gradual rollout?
+* How do you detect and recover from a configuration change that causes widespread failures?
+* How do you design automatic rollback for invalid configuration changes?
+* How do you manage configuration versioning and audit trails across environments?
+* How do you prevent configuration drift between development, staging, and production?
+* How do you design configuration access controls using least privilege?
+* How do you integrate HashiCorp Vault or a cloud secrets manager with Spring Boot?
+* How do you rotate database passwords and API credentials without downtime?
+* How do you manage certificate rotation for service-to-service communication?
+* How do you distinguish application configuration from secrets and feature flags?
+* How do you avoid exposing secrets through environment variables, logs, diagnostics, or actuator endpoints?
+* How do you design a configuration strategy for Kubernetes and Spring Cloud Config together?
+* How do you decide between Spring Cloud Config, Kubernetes ConfigMaps, and a managed configuration service?
+* How do you manage dynamic configuration without causing inconsistent behavior across service instances?
+* How do you handle configuration changes that require coordinated updates across multiple services?
+* How do you design backward-compatible configuration changes during rolling deployments?
+* How do you manage configuration schema evolution across application versions?
+* How do you validate configuration changes before promoting them to production?
+* How do you design fail-safe behavior when the configuration repository or Config Server is unavailable?
+* How do you balance startup availability with the need to retrieve the latest configuration?
+* How do you cache configuration safely while maintaining acceptable freshness?
+* How do you prevent configuration refresh events from overwhelming a large microservices platform?
+* How do you manage tenant-specific configuration securely in a multi-tenant system?
+* How do you design feature-flag evaluation and emergency kill switches for distributed services?
+* How do you establish governance, ownership, and approval workflows for enterprise configuration changes?

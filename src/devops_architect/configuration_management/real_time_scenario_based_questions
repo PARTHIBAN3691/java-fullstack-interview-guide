@@ -1,0 +1,35 @@
+* An Ansible playbook succeeds in development but fails in production because some variables are undefined. How would you diagnose variable precedence, inventory configuration, and environment-specific differences?
+* An Ansible playbook repeatedly changes a configuration file on every execution even though the intended configuration has not changed. How would you identify and correct the idempotency issue?
+* An Ansible role works on Ubuntu servers but fails on Red Hat-based servers. How would you redesign the role to support operating-system differences?
+* A dynamic inventory suddenly excludes several newly provisioned cloud instances. How would you troubleshoot inventory filters, cloud permissions, and metadata synchronization?
+* An Ansible deployment fails on one host halfway through a multi-host rollout. How would you recover safely and prevent inconsistent configurations?
+* An Ansible Vault password is accidentally exposed in CI/CD logs. How would you contain the incident, rotate affected secrets, and prevent recurrence?
+* A team stores database passwords in plain-text Ansible variables committed to Git. How would you migrate to secure secret storage without disrupting deployments?
+* An application starts failing after a database password is rotated, even though the secret store contains the new value. How would you investigate caching, configuration propagation, and connection-pool behavior?
+* A production server's configuration differs from the approved Git version because an engineer made an emergency manual change. How would you validate the change and reconcile the configuration safely?
+* An automated drift-remediation job repeatedly overwrites a legitimate operational change. How would you redesign ownership, exception handling, and reconciliation?
+* A configuration update changes the database endpoint for some application instances but not others. How would you identify partial propagation and restore consistency?
+* A centralized configuration service becomes unavailable, and newly starting application instances cannot load their settings. How would you design fallback behavior and recovery?
+* An invalid configuration value causes all application instances to fail during startup. How would you improve validation and prevent a similar outage?
+* A configuration change increases request timeouts across multiple microservices and triggers cascading failures. How would you identify the faulty parameter and execute a safe rollback?
+* A Spring Boot application behaves differently in staging and production even though the same container image is deployed. How would you compare externalized configuration, environment variables, secrets, and active profiles?
+* An application has configuration values defined in command-line arguments, environment variables, and configuration files, but the wrong value is being used. How would you determine precedence and fix the source?
+* A new application release requires a configuration schema change, but older application instances are still running. How would you preserve backward compatibility during rollout?
+* A security policy requires credentials to be rotated every 30 days, but some legacy services cannot reload secrets dynamically. How would you design a rotation process with minimal downtime?
+* A feature flag is enabled globally by mistake, exposing an unfinished feature to all users. How would you contain the impact and improve targeting, approval, and rollback controls?
+* Two microservices evaluate the same feature flag differently because their configuration caches have different refresh intervals. How would you restore consistent behavior?
+* A feature flag is disabled, but users continue experiencing the feature because some application instances retain stale configuration. How would you troubleshoot cache invalidation and propagation?
+* A dynamic configuration update changes thread-pool settings and causes application performance to degrade. How would you validate configuration changes and support automatic rollback?
+* A configuration repository contains duplicated environment files, and the production configuration is missing a recent security fix. How would you restructure configuration reuse and validation?
+* An Ansible playbook modifies SSH configuration and accidentally locks out remote administration. How would you recover access and introduce safeguards for sensitive configuration changes?
+* A configuration deployment changes firewall rules and unexpectedly blocks health checks and monitoring agents. How would you diagnose dependencies and introduce pre-deployment validation?
+* A secret rotation updates the password but fails to update the dependent application's configuration. How would you coordinate secret rotation and application reloads?
+* A production deployment succeeds, but a missing configuration parameter causes background jobs to fail hours later. How would you improve validation, observability, and post-deployment checks?
+* A configuration rollback restores the previous settings but also reintroduces an insecure endpoint. How would you separate configuration history from security policy enforcement?
+* A team wants to manage Kubernetes ConfigMaps and Secrets through Ansible while another team manages them through GitOps. How would you establish clear ownership and prevent conflicting updates?
+* An organization has hundreds of feature flags, including several that are no longer used. How would you identify safe candidates for removal and prevent accidental deletion of active flags?
+* A configuration management pipeline applies changes to every production server at once, causing a widespread outage. How would you introduce staged rollout, health validation, and automatic stop conditions?
+* An audit finds inconsistent TLS settings and logging levels across production servers. How would you establish a standard configuration baseline and enforce compliance continuously?
+* A parameter change requires restarting a service, but restarting all instances simultaneously would cause downtime. How would you plan a rolling configuration update with health checks and rollback?
+* An application continues using an old configuration after a deployment because values are embedded in the container image. How would you redesign configuration externalization?
+* A configuration service returns stale values after a successful update because of caching at multiple layers. How would you trace propagation delays and define a reliable consistency model?

@@ -1,0 +1,23 @@
+# Core Java — Date and Time API
+## Level 1 — Medium
+
+1. What is the difference between `LocalDateTime`, `OffsetDateTime`, and `ZonedDateTime`?
+2. How does Java represent time zones using `ZoneId`?
+3. What is the difference between a time zone and a UTC offset?
+4. How do you convert a `LocalDateTime` from one time zone to another?
+5. How do you calculate the number of days between two dates?
+6. What is the difference between `ChronoUnit.DAYS.between()` and `Period.between()`?
+7. How do you calculate working days between two dates, excluding weekends?
+8. How do you find the first and last day of a month using `TemporalAdjusters`?
+9. Is `DateTimeFormatter` thread-safe?
+10. How does Java handle invalid date values, such as February 30?
+11. What happens when you add one month to January 31 using `LocalDate`?
+12. How do you convert between legacy `Date` and the modern Date and Time API?
+13. How do you convert an `Instant` to a `LocalDateTime` in a specific time zone?
+14. How do you calculate a person's age from their date of birth?
+15. How do you compare two `ZonedDateTime` values representing the same instant in different time zones?
+16. What is the difference between `with()`, `plus()`, and `minus()`?
+17. How do you identify whether a date falls on a weekend?
+18. How do you parse a date string in a non-standard format such as `dd-MM-yyyy`?
+19. How do you handle optional time components when parsing date-time input?
+20. What is the difference between `Clock.systemDefaultZone()` and `Clock.systemUTC()`?

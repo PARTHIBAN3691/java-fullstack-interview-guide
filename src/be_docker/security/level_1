@@ -1,0 +1,30 @@
+* How would you secure a Dockerfile for a Spring Boot application?
+* How do you create a production Docker image that runs as a non-root user?
+* How do multi-stage builds improve Docker image security?
+* How can you reduce the attack surface of a Java container image?
+* How do you select and maintain secure Java base images?
+* How would you scan a Docker image for operating-system and Java dependency vulnerabilities?
+* How do you remediate vulnerabilities in a base image without breaking the application?
+* How do you prevent secrets from being included in Docker image layers?
+* How do BuildKit secret mounts differ from passing credentials through build arguments?
+* How do you securely access a private Maven repository during a Docker build?
+* How should database passwords and API keys be supplied to a Spring Boot container?
+* What is the difference between Docker secrets and ordinary environment variables?
+* How do you configure Docker Compose to supply sensitive configuration securely?
+* How do you prevent credentials from appearing in application logs or CI/CD output?
+* How do you configure a container with a read-only root filesystem?
+* How do you provide writable temporary directories when a container uses a read-only filesystem?
+* How do you drop unnecessary Linux capabilities when running a container?
+* What is the role of seccomp in Docker container security?
+* How do AppArmor and SELinux help protect containers?
+* How do you restrict container CPU, memory, and process usage to reduce denial-of-service risks?
+* How do you isolate a database container from public network access?
+* How do you restrict communication between Spring Boot microservices using Docker networks?
+* How do you secure access to a private Docker registry?
+* How do you rotate registry credentials used by CI/CD pipelines?
+* How do you prevent unauthorized users from pushing images to a production repository?
+* What is image signing, and how does it help verify image authenticity?
+* How do you generate a software bill of materials for a Java Docker image?
+* How do you configure Docker daemon access securely?
+* Why is mounting the Docker socket into a container dangerous?
+* How would you implement Docker security checks in a CI/CD pipeline?

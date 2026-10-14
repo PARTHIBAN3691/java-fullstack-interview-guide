@@ -1,0 +1,30 @@
+* A React page takes several seconds to load initially. How would you identify the cause and improve its loading time?
+* A parent component re-renders frequently and causes many child components to re-render. How would you optimize the component tree?
+* A dashboard displays thousands of records and becomes unresponsive when filtering. How would you improve its performance?
+* A search input becomes slow while filtering a large dataset on every keystroke. How would you solve the issue?
+* A React application makes the same API request multiple times unnecessarily. How would you investigate and fix it?
+* A large table becomes slow when users sort and paginate records. What optimization techniques would you consider?
+* A component repeatedly re-renders because it receives a newly created object as a prop. How would you resolve it?
+* A Context provider updates frequently and causes unrelated components to re-render. How would you optimize it?
+* A page loads slowly because it imports every feature at startup. How would you implement code splitting?
+* A React application has a large initial JavaScript bundle. How would you identify unnecessary dependencies and reduce bundle size?
+* A route takes too long to load because its components are imported eagerly. How would you implement route-based lazy loading?
+* A large form becomes sluggish when users type into individual fields. How would you reduce rendering overhead?
+* An API response arrives after the user has navigated to another page and updates outdated state. How would you prevent this?
+* A component becomes slower after introducing useMemo and useCallback everywhere. How would you investigate the regression?
+* A React application experiences memory usage growth after remaining open for several hours. How would you identify memory leaks?
+* An image-heavy page loads slowly on mobile devices. How would you optimize image delivery and rendering?
+* A page has poor Largest Contentful Paint despite having a small React component tree. What other factors would you investigate?
+* A page responds slowly to user interactions because a large calculation blocks the main thread. How would you improve responsiveness?
+* A server-rendered React page displays hydration warnings and becomes interactive slowly. How would you investigate the issue?
+* A component consumes rapidly changing external data and causes excessive rendering. How would you manage its subscriptions efficiently?
+* A list contains thousands of items with different row heights. How would you optimize scrolling performance?
+* A third-party chart library significantly increases the initial bundle size. How would you reduce its impact?
+* A production application performs well locally but slowly for real users. How would you identify environment-specific bottlenecks?
+* A recent release improves render counts but worsens user-perceived performance. How would you investigate the difference?
+* A React application has poor Interaction to Next Paint (INP). How would you find and reduce long-running event handlers?
+* A user sees a blank screen while a lazy-loaded component is downloading. How would you improve the loading experience?
+* An application repeatedly fetches unchanged data when users navigate between routes. How would you reduce network overhead?
+* A dashboard updates several widgets every second and consumes excessive CPU. How would you redesign its update strategy?
+* A production release increases bundle size unexpectedly. How would you detect and prevent similar regressions?
+* Your team wants to introduce performance optimizations across a large React application. How would you prioritize, measure, and validate the improvements?

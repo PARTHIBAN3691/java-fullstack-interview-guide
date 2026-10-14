@@ -1,0 +1,30 @@
+* Write a JUnit 5 unit test for a Java service and explain where it fits in the testing strategy.
+* Write a Mockito-based unit test for a service with repository dependencies.
+* Write an integration test for a Spring Boot service using a real database.
+* Write a MockMvc test for a REST controller and validate its HTTP response.
+* Write a parameterized JUnit test covering positive, negative, and boundary inputs.
+* Write a JUnit test that verifies exception handling for invalid business input.
+* Write a test utility that executes a selected group of tests based on tags.
+* Write a Maven configuration that separates unit tests and integration tests.
+* Write a JUnit 5 test suite for smoke tests and another for regression tests.
+* Write a Java utility that generates test data for different business scenarios.
+* Write a test that verifies database rollback after a failed transaction.
+* Write an API test that validates response status, body, headers, and response time.
+* Write a contract test that verifies a consumer's expected API response structure.
+* Write a test that validates backward compatibility between two API response versions.
+* Write a test that verifies a Kafka event is published after a successful business operation.
+* Write a test that verifies an event-driven workflow across multiple service components.
+* Write a Java utility that categorizes test failures by error type.
+* Write a test reporting utility that calculates pass rate, failure rate, and skipped-test count.
+* Write a Java utility that identifies tests exceeding a configured execution-time threshold.
+* Write a JUnit 5 test using tags to separate fast tests from slow integration tests.
+* Write a test that validates retry and fallback behavior when an external service fails.
+* Write a performance test for a REST endpoint using a suitable Java performance testing tool.
+* Write a test that verifies role-based authorization for different user roles.
+* Write an integration test using Testcontainers for a Java application backed by PostgreSQL.
+* Write a test that validates application behavior when a database connection is unavailable.
+* Write a test that verifies graceful handling of downstream service timeouts.
+* Write a CI pipeline configuration that runs unit tests on every commit and integration tests on a scheduled or release build.
+* Write a Java utility that maps business requirements to corresponding automated test identifiers.
+* Write a test selection mechanism that runs tests associated with changed modules.
+* Design a complete Java testing framework with unit, integration, API, contract, performance, and security test layers.

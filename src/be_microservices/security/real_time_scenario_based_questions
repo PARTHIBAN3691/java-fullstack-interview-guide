@@ -1,0 +1,30 @@
+* A client presents an expired JWT but continues receiving successful responses from a service. How would you investigate?
+* A user can access another customer's order by changing the order ID in the URL. How would you fix the vulnerability?
+* A microservice trusts the X-User-ID header supplied by the caller. What security risks does this create?
+* An API gateway validates JWTs, but downstream services are directly accessible. How would you secure the internal services?
+* A JWT signing key is compromised while thousands of tokens are still valid. How would you respond?
+* A user retains access to a protected resource after their role has been removed. How would you enforce timely authorization changes?
+* A service needs to call another service without an interactive user session. How would you implement secure machine-to-machine authentication?
+* A downstream service receives a valid JWT intended for a different API. How would you prevent token misuse?
+* A microservice logs complete authorization headers during error handling. How would you mitigate the exposure?
+* A refresh token is stolen and used from another device. How would you detect and respond to the incident?
+* Two tenants share the same database, and a query accidentally returns records from both tenants. How would you prevent cross-tenant data exposure?
+* A developer disables CSRF protection to fix a login issue in a browser-based application. How would you assess whether this is safe?
+* A Spring Boot API allows requests from every origin and accepts credentials. How would you correct its CORS configuration?
+* A service-to-service certificate expires unexpectedly, causing production requests to fail. How would you improve certificate lifecycle management?
+* A secrets file containing production database credentials is accidentally committed to source control. What immediate and long-term actions would you take?
+* An attacker repeatedly calls a password-reset endpoint to enumerate valid user accounts. How would you mitigate the abuse?
+* A dependency update introduces a critical vulnerability into a widely used Java library. How would you assess and remediate the risk?
+* A payment API accepts duplicate requests using the same transaction reference. How would you prevent unauthorized or duplicate financial operations?
+* A compromised service account attempts to access unrelated internal services. How would you contain the attack?
+* A Kafka consumer processes sensitive customer data from messages that have no verified producer identity. How would you secure the messaging workflow?
+* An OAuth 2.0 access token is leaked through a URL or browser history. How would you prevent this exposure?
+* A mobile client embeds a confidential OAuth client secret in its application package. How would you redesign the authentication flow?
+* A service accepts unsigned or incorrectly validated JWTs due to weak token validation. How would you fix and test the implementation?
+* A background worker processes a job after the initiating user's permissions have been revoked. How should authorization be handled?
+* A production database backup contains sensitive information without encryption. What remediation and preventive controls would you introduce?
+* An API gateway becomes unavailable during a security-policy update. How would you preserve both availability and security?
+* An attacker exploits excessive request rates to exhaust API resources. How would you combine rate limiting, quotas, and abuse detection?
+* A security audit discovers that all microservices share the same database credentials. How would you improve credential isolation and rotation?
+* A user can access administrative endpoints despite having only a standard user role. How would you investigate the authorization failure?
+* You are designing security for a financial microservices platform. How would you combine identity management, least privilege, encryption, auditability, secrets management, and incident response?

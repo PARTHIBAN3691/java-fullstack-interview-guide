@@ -1,0 +1,21 @@
+
+* Design a highly available Azure Application Gateway architecture for a Java microservices platform.
+* Explain how Application Gateway v2 autoscaling works and how you would size capacity for variable traffic.
+* How would you configure Application Gateway for zone redundancy and regional high availability?
+* How would you design path-based routing for multiple Spring Boot microservices while maintaining independent deployments?
+* How would you implement end-to-end TLS with certificate rotation and minimal service disruption?
+* How would you troubleshoot intermittent HTTP 502 errors when the backend Spring Boot application appears healthy?
+* How would you diagnose HTTP 504 errors caused by slow downstream dependencies in a Java application?
+* How do backend request timeouts, connection draining, and graceful application shutdown interact during deployments?
+* How would you design Application Gateway routing when backend services use different host headers and TLS certificates?
+* How would you securely expose an application through a public Application Gateway while keeping backend services private?
+* How would you configure WAF custom rules, managed rule sets, exclusions, and prevention mode for a Java REST API?
+* How would you investigate false-positive WAF blocks affecting legitimate JSON requests to a Spring Boot API?
+* How would you design a multi-region architecture using Application Gateway within each region and Azure Front Door globally?
+* How would you troubleshoot asymmetric routing or connectivity problems between Application Gateway and backend services?
+* How would you configure and validate health probes for applications that have separate liveness and readiness endpoints?
+* How would you manage client IP forwarding and trusted proxy configuration in Spring Boot behind Application Gateway?
+* How would you prevent incorrect redirects or redirect loops when TLS terminates at Application Gateway?
+* How would you design monitoring and alerting for backend health, failed requests, latency, and WAF detections?
+* How would you migrate from a legacy load balancer to Application Gateway with minimal downtime?
+* How would you optimize Application Gateway performance and cost while meeting security and availability requirements?

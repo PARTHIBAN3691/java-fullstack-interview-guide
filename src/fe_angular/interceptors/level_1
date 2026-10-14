@@ -1,0 +1,30 @@
+* Explain the complete request and response flow through multiple HTTP interceptors.
+* How do you implement a functional interceptor that adds a bearer token?
+* How do you implement a class-based interceptor that adds common HTTP headers?
+* How do you handle HTTP 401 Unauthorized errors inside an interceptor?
+* How do you handle HTTP 403 Forbidden errors differently from HTTP 401 errors?
+* How do you implement centralized error handling using an HTTP interceptor?
+* How do you use catchError() inside an interceptor?
+* What is the difference between returning throwError() and returning EMPTY from an interceptor?
+* How do you log request duration and response status using an interceptor?
+* How do you add a correlation ID to every outgoing HTTP request?
+* How do you exclude login and token-refresh endpoints from authentication interception?
+* How do you configure different interceptors for different API services?
+* How do you pass request-specific metadata to an interceptor using HttpContext?
+* What is HttpContextToken, and when would you use it?
+* How do you enable or disable an interceptor for a particular request?
+* How do you implement a global loading indicator without tracking unrelated requests?
+* How do you prevent a loading indicator from remaining visible after an HTTP error?
+* How do you handle multiple concurrent requests in a loading interceptor?
+* How do you implement retry logic inside an interceptor?
+* Why should retry logic distinguish between network errors and HTTP status codes?
+* How do you configure a timeout for selected API requests?
+* How do you implement request and response logging without exposing sensitive information?
+* How do you preserve existing headers when adding new headers?
+* What happens when two interceptors modify the same request header?
+* How do you write unit tests for functional HTTP interceptors?
+* How do you test class-based interceptors using HttpTestingController?
+* How do you mock dependencies injected into a functional interceptor?
+* What is the role of Angular dependency injection in HTTP interceptors?
+* How do interceptors interact with RxJS operators?
+* What are common mistakes when registering HTTP interceptors in Angular?

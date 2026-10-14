@@ -1,0 +1,30 @@
+* A GET API returns HTTP 200, but some mandatory fields are missing from the response. How would you identify and report the defect?
+* A POST API creates duplicate orders when the client retries after a timeout. How would you test and diagnose the issue?
+* An API works correctly in development but fails in the QA environment. How would you investigate the difference?
+* An API returns HTTP 500 intermittently under normal traffic. How would you reproduce and troubleshoot the issue?
+* A protected API returns HTTP 401 even when a valid token is supplied. How would you investigate the problem?
+* A user with a read-only role can successfully delete a resource through an API. What tests would you perform?
+* An API accepts invalid email addresses and negative amounts. How would you improve the test coverage?
+* A paginated API returns duplicate records between pages. How would you identify the root cause?
+* An API returns correct data but takes five seconds to respond instead of the required 500 milliseconds. How would you investigate it?
+* A downstream payment service is unavailable, causing an order API to fail. How would you test error handling and recovery?
+* A payment API times out after processing a transaction. How would you verify that retrying the request does not charge the customer twice?
+* Two concurrent requests update the same account balance. How would you test for lost updates and data inconsistency?
+* A microservice publishes an event after returning a successful response, but the event is delayed. How would you validate eventual consistency?
+* An API response changes after a backend deployment, breaking an existing consumer. How would you detect the breaking change before release?
+* A new API version introduces optional fields and changes an existing field's data type. How would you test backward compatibility?
+* Your API automation suite passes locally but fails intermittently in Jenkins. How would you diagnose the issue?
+* Parallel API tests create conflicting records and fail unpredictably. How would you redesign test data management?
+* An API has a rate limit of 100 requests per minute. How would you test the limit, reset behavior, and response headers?
+* An API accepts a very large request body and consumes excessive memory. How would you test its limits and error handling?
+* A file upload API accepts unsupported file types. How would you test validation, security, and error responses?
+* A search API returns correct results for exact matches but incorrect results for combinations of filters. How would you test it systematically?
+* A webhook is delivered multiple times after network failures. How would you verify that the consumer handles duplicate events safely?
+* An asynchronous API returns HTTP 202, but the requested job never completes. How would you test job status and timeout handling?
+* An API returns different fields for administrators and standard users. How would you verify field-level authorization?
+* A service returns HTTP 429 during a load test. How would you determine whether the rate limiter is behaving correctly?
+* An API passes functional tests but fails under 1,000 concurrent users. How would you isolate the bottleneck?
+* An API returns personal information that should be hidden from unauthorized users. How would you design security test cases?
+* A database update succeeds, but the API returns an error because the response connection fails. How would you verify the final data state?
+* An API migration replaces an old endpoint with a new endpoint. How would you compare behavior and validate the migration?
+* You need to test an end-to-end checkout flow involving customer, inventory, payment, and order APIs. How would you design the test workflow?

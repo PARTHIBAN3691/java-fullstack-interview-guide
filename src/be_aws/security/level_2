@@ -1,0 +1,21 @@
+
+* Design a secure multi-account AWS architecture for a Java microservices platform using centralized identity and security controls.
+* How would you implement fine-grained authorization across hundreds of microservices while following the principle of least privilege?
+* Explain how IAM policy evaluation works when identity policies, resource policies, permission boundaries, SCPs, and explicit denies interact.
+* How would you securely enable cross-account access to an S3 bucket without distributing long-lived credentials?
+* Design an end-to-end encryption architecture for sensitive customer data stored in Amazon RDS, S3, and application caches.
+* How would you implement envelope encryption in Java using AWS KMS and protect data encryption keys?
+* How would you rotate KMS keys and application secrets without causing production downtime?
+* Design a zero-trust security model for Java microservices communicating across private AWS networks.
+* How would you secure service-to-service communication using TLS, workload identity, and authorization policies?
+* How would you protect a Java application against SSRF attacks that could expose EC2 instance metadata credentials?
+* How would you detect and mitigate credential theft involving an IAM role used by an application?
+* Design a secure CI/CD pipeline that prevents secrets from leaking and restricts deployment permissions.
+* How would you implement centralized security logging, threat detection, and alerting across multiple AWS accounts?
+* How would you investigate a suspected data exfiltration incident involving S3 and CloudTrail?
+* How would you securely expose a public REST API while protecting it against abuse, injection attacks, and unauthorized access?
+* Explain how to secure an EKS-based Java application using workload identity, network policies, secret management, and admission controls.
+* How would you design a secure multi-tenant application while preventing cross-tenant data access?
+* How would you establish and enforce encryption, audit logging, and access-control requirements for regulated data?
+* How would you assess the security risks of using third-party libraries and container base images in a Java application?
+* How would you design a disaster recovery strategy that protects encryption keys, secrets, audit logs, and sensitive backups?

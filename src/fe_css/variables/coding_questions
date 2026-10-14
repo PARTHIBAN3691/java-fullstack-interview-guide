@@ -1,0 +1,30 @@
+* Write an accessible HTML document with a proper doctype, language attribute, page title, and semantic structure.
+* Create an accessible navigation bar using nav, ul, li, and anchor elements.
+* Build a webpage with a logical heading hierarchy and appropriate landmark elements.
+* Create an informative image with meaningful alternative text and a decorative image with an empty alt attribute.
+* Build an accessible login form with associated labels, required fields, and appropriate input types.
+* Create a registration form using fieldset and legend to group related controls.
+* Write HTML for an accessible search form with a clearly labeled search input and submit button.
+* Create an accessible data table with caption, column headers, and appropriate scope attributes.
+* Build an accessible audio and video section with controls, captions, and supporting text.
+* Create an icon-only button with an accessible name.
+* Write HTML demonstrating the difference between aria-label and aria-labelledby.
+* Create a form field that uses aria-describedby to associate instructions and an error message.
+* Build an accessible validation example using aria-invalid and an associated error message.
+* Create a status notification region using aria-live="polite".
+* Write HTML demonstrating when aria-hidden="true" should be used for decorative content.
+* Build a keyboard-accessible disclosure widget using details and summary.
+* Create a modal dialog using the dialog element and demonstrate how it can be opened and closed.
+* Build an accessible image link whose accessible name explains the destination.
+* Create an accessible list of navigation landmarks with distinct labels when necessary.
+* Write HTML for a progress indicator with an accessible name and current value.
+* Create an accessible form with a required-field explanation and an error summary linked to invalid fields.
+* Build a custom tab interface and implement the required keyboard interaction pattern with JavaScript.
+* Create an accessible autocomplete component with appropriate combobox roles, states, and keyboard behavior.
+* Build a dialog that moves focus into the dialog when opened and restores focus to the triggering control when closed.
+* Create a live search results section that announces meaningful updates without overwhelming screen reader users.
+* Write HTML for an accessible SVG icon with a title or suitable accessible labeling strategy.
+* Create a page that respects prefers-reduced-motion for nonessential visual effects.
+* Build an accessible dropdown that supports keyboard navigation, Escape to close, and correct focus management.
+* Create a page demonstrating semantic HTML alternatives to unnecessary ARIA roles and attributes.
+* Develop a small accessible webpage and document how you would test it with keyboard navigation, a screen reader, and automated accessibility tools.

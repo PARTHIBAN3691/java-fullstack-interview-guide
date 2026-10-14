@@ -1,0 +1,94 @@
+**AI Application Architecture**
+
+* How would you separate the presentation layer, orchestration layer, retrieval layer, model integration layer, and persistence layer in an enterprise AI application?
+* How would you design synchronous and asynchronous AI workflows while maintaining consistent application behavior?
+
+**LLM-Powered Microservices**
+
+* How would you define service boundaries between prompt management, model inference, retrieval, and business operations?
+* How would you prevent an unreliable or slow LLM dependency from exhausting the connection pools and worker threads of downstream microservices?
+
+**Enterprise AI Platform Design**
+
+* How would you design a reusable AI platform that supports multiple teams, model providers, vector stores, and deployment environments?
+* Which platform capabilities should be centralized, and which should remain configurable by individual product teams?
+
+**RAG System Design**
+
+* How would you design document ingestion, chunking, embedding generation, indexing, retrieval, reranking, and answer generation?
+* How would you improve retrieval quality when relevant documents exist but the generated answers remain inaccurate?
+
+**AI Agent Platform Design**
+
+* How would you design an agent execution loop that supports planning, tool invocation, observation, and completion?
+* How would you persist agent state and recover an execution interrupted during a multi-step workflow?
+
+**Multi-Model Routing Architecture**
+
+* How would you route requests based on task complexity, model capability, latency, cost, and data sensitivity?
+* How would you implement fallback routing when a primary model provider returns timeouts or rate-limit errors?
+
+**AI Gateway Design**
+
+* How would you implement centralized authentication, model-provider abstraction, token accounting, policy enforcement, and observability in an AI gateway?
+* How would you prevent the gateway from becoming a performance bottleneck or single point of failure?
+
+**Shared AI Services for Multiple Teams**
+
+* How would you design a shared embedding service or document-processing service with consistent APIs and independently scalable workloads?
+* How would you manage API versioning, backward compatibility, and service-level objectives for shared AI capabilities?
+
+**Multi-Tenant AI Architecture**
+
+* How would you isolate tenant-specific prompts, conversation history, retrieval indexes, and model configurations?
+* How would you enforce tenant-level budgets, quotas, and access policies across shared infrastructure?
+
+**AI Caching Architecture**
+
+* How would you combine exact-response caching, embedding caching, retrieval caching, and semantic caching in a RAG application?
+* How would you prevent stale or cross-tenant cached responses when documents, permissions, or prompts change?
+
+**AI Rate Limiting and Quota Management**
+
+* How would you implement rate limiting using requests per minute, tokens per minute, concurrent requests, and monthly budgets?
+* How would you distribute quota enforcement across multiple gateway instances without allowing significant overconsumption?
+
+**High-Availability AI Systems**
+
+* How would you design an AI application that remains operational when a model provider, vector database, or embedding service fails?
+* How would circuit breakers, bounded retries, timeouts, and bulkheads work together in an AI request path?
+
+**AI Data Privacy Architecture**
+
+* How would you implement data classification, PII redaction, encryption, and access control throughout an AI request lifecycle?
+* How would you enforce retrieval-time authorization so a model cannot expose documents that the current user is not permitted to access?
+
+**Low-Latency AI Inference**
+
+* How would you reduce latency through streaming, prompt optimization, parallel retrieval, connection reuse, and model selection?
+* How would you measure p50, p95, and p99 latency separately for retrieval, model inference, and end-to-end responses?
+
+**Scalable AI Workloads**
+
+* How would you scale inference workers, embedding pipelines, document ingestion, and retrieval independently?
+* How would you design backpressure and queue management when incoming AI requests exceed available inference capacity?
+
+**AI Cost Optimization**
+
+* How would you establish cost attribution by tenant, application, model, environment, and request?
+* How would you decide when to use a smaller model, cache a response, shorten a prompt, or process work asynchronously?
+
+**AI Disaster Recovery**
+
+* How would you define recovery time objective (RTO) and recovery point objective (RPO) for AI services and their dependent data stores?
+* How would you recover vector indexes, model configurations, prompts, and evaluation datasets after regional infrastructure failure?
+
+**Enterprise AI Governance**
+
+* How would you implement approval workflows, model inventories, audit logs, data-retention rules, and policy enforcement?
+* How would you govern changes to prompts, models, retrieval sources, and agent tools across development, staging, and production?
+
+**AI Architecture Trade-offs**
+
+* How would you compare managed model APIs, self-hosted open-weight models, and hybrid deployment for an enterprise workload?
+* How would you evaluate the trade-offs between centralized governance and team autonomy, or between caching efficiency and response freshness?

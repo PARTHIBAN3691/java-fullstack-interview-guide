@@ -1,0 +1,98 @@
+
+**Bash**
+* Write a Bash script that scans a directory for files older than a configurable number of days, supports dry-run mode, and logs every proposed or completed deletion.
+* Write a script that executes a command, captures standard output and standard error separately, enforces a timeout, and returns the correct exit status.
+* Implement a Bash function that retries a command using exponential backoff with a maximum retry count and a configurable timeout.
+* Write a script that processes a large input file safely, handles filenames containing spaces, and writes results to an atomic output file.
+* Implement a script that prevents concurrent execution using a lock, detects stale execution state, and cleans up resources on exit.
+
+**Python**
+* Write a Python utility that reads a configuration file, validates required fields, executes a sequence of tasks, and records structured logs and execution status.
+* Implement an API client with timeouts, retryable-status handling, exponential backoff, rate-limit support, and safe secret handling.
+* Write a concurrent file-processing program with a configurable worker limit, graceful cancellation, and per-file error reporting.
+* Implement a resumable job processor that checkpoints completed items and safely handles interruption and restart.
+* Write unit tests for an automation module that invokes external commands, including successful execution, timeouts, failures, and malformed output.
+
+**PowerShell**
+* Write a PowerShell script that checks service health on a list of remote servers, records per-server results, and returns a meaningful overall exit code.
+* Implement an advanced function with validated parameters, structured error handling, verbose logging, and support for `-WhatIf`.
+* Write a bulk resource-update script that supports dry-run mode, bounded concurrency, retry logic, and a summary report.
+* Create a reusable PowerShell module for configuration validation, logging, and safe execution of external commands.
+* Write Pester tests for a script that manages service state, including permission failures, unavailable servers, and unexpected command output.
+
+**Shell Scripting**
+* Write a portable shell script that validates input parameters, checks required dependencies, and produces consistent exit codes.
+* Implement a cleanup script that deletes only approved temporary files, validates the target path, and supports a dry run.
+* Write a script that updates a configuration file atomically and preserves the previous valid version if an error occurs.
+* Implement a multi-host execution script that records success and failure per host and supports safe retries.
+* Create a shell-script test suite covering invalid inputs, command failures, interrupted execution, and cleanup behavior.
+
+**CLI Automation**
+* Write a script that authenticates with a cloud CLI, verifies the active account and region, and refuses to run when the target environment is incorrect.
+* Implement a CLI wrapper that parses structured JSON output, validates required fields, and handles command failures consistently.
+* Write a bulk resource-management script with bounded concurrency, rate-limit handling, and a resumable progress file.
+* Implement a deployment command wrapper with preflight checks, approval input, post-operation verification, and a nonzero exit code on failure.
+* Create automated tests using mocked CLI responses to cover authentication errors, timeouts, throttling, and partial success.
+
+**API Automation**
+* Write a program that retrieves all pages from a paginated REST API and handles timeouts, retries, and rate limits.
+* Implement an API workflow that creates or updates a resource idempotently and safely handles ambiguous request outcomes.
+* Write an OAuth 2.0 client that obtains, caches, and refreshes access tokens without logging credentials.
+* Implement a workflow that calls multiple APIs, records checkpoints, and compensates for completed steps when a later step fails.
+* Write contract tests that validate response schemas, required headers, error responses, and backward compatibility.
+
+**Infrastructure Automation**
+* Write an automation script that compares the desired infrastructure configuration with observed resource state and reports drift.
+* Implement a preflight validator that rejects infrastructure changes violating specified encryption, tagging, network, or identity policies.
+* Write a resource-provisioning workflow that handles dependencies, retries transient failures, and cleans up resources after partial failure.
+* Implement a concurrency-control mechanism that prevents two automation runs from modifying the same infrastructure state simultaneously.
+* Create automated tests for infrastructure plans using mocked provider responses and representative policy violations.
+
+**Deployment Automation**
+* Write a deployment script that performs pre-deployment checks, deploys a versioned artifact, waits for readiness, and validates application behavior.
+* Implement a canary deployment controller that gradually increases traffic only when configured error-rate and latency thresholds are met.
+* Write a rollback workflow that detects failed health checks and restores the last known-good application version.
+* Implement a deployment lock that prevents conflicting releases while recording the artifact version, environment, and operator identity.
+* Create deployment tests covering failed startup, unhealthy dependencies, partial rollout, and database migration compatibility.
+
+**Operational Automation**
+* Write a disk-usage monitoring script that produces a report, applies configurable thresholds, and safely identifies eligible cleanup candidates.
+* Implement a service-recovery workflow with health checks, bounded restart attempts, cooldown periods, and escalation.
+* Write an automation task that collects logs and diagnostic information from multiple hosts and reports missing or incomplete results.
+* Implement a job that verifies backup freshness and integrity and raises an alert when required recovery points are unavailable.
+* Create tests for an operational script that simulate service failures, permission errors, timeouts, and partial execution.
+
+**Scheduled Jobs**
+* Write a scheduled-job runner that prevents overlapping execution and records start time, completion time, duration, and status.
+* Implement a job that detects missed execution windows and supports configurable catch-up, skip, or coalescing behavior.
+* Write an idempotent data-processing job that checkpoints progress and resumes safely after a crash.
+* Implement failure notifications with bounded retries, escalation thresholds, and protection against duplicate notifications.
+* Create tests for schedule calculations involving time zones, daylight-saving transitions, delayed execution, and scheduler restarts.
+
+**Event-Driven Automation**
+* Write an event handler that deduplicates events using an idempotency key and safely handles repeated delivery.
+* Implement an event-processing worker with bounded concurrency, retry policies, and dead-letter handling.
+* Write a handler that validates event schemas, rejects malformed payloads, and records traceable execution metadata.
+* Implement a replay tool that reprocesses selected failed events without repeating completed side effects.
+* Create tests for duplicate events, out-of-order delivery, downstream timeouts, and event bursts.
+
+**Self-Healing Automation**
+* Write a recovery controller that detects unhealthy services, attempts bounded remediation, verifies recovery, and escalates unresolved failures.
+* Implement a cooldown and circuit-breaker mechanism that prevents repeated recovery attempts during a persistent outage.
+* Write a remediation script that collects diagnostics before changing system state and records before-and-after evidence.
+* Implement a health-check engine that distinguishes process availability from application readiness and critical transaction health.
+* Create tests proving that a recovery workflow stops when retry limits are reached and does not trigger conflicting remediation actions.
+
+**Runbooks**
+* Create an executable runbook that performs precondition checks, presents decision points, executes approved actions, and validates recovery.
+* Implement a runbook runner that records step-level status and resumes from a safe checkpoint after partial failure.
+* Write a runbook validation utility that checks required metadata, ownership, version, permissions, rollback instructions, and verification steps.
+* Implement an approval gate for high-risk steps with an auditable record of the approver and execution result.
+* Create automated tests for runbook success paths, failed steps, timeouts, incorrect environment selection, and recovery behavior.
+
+**Automation Governance**
+* Write a policy validator that rejects automation scripts missing an owner, version, required tests, or risk classification.
+* Implement a script-scanning utility that detects hard-coded credentials, unsafe shell execution patterns, and prohibited privileged operations.
+* Create an execution wrapper that records the initiating identity, script version, target environment, requested actions, and final outcome.
+* Implement a risk-based approval mechanism that requires additional authorization for destructive or production-wide operations.
+* Write a compliance-report generator that identifies unowned scripts, overdue reviews, outdated dependencies, missing audit evidence, and excessive permissions.

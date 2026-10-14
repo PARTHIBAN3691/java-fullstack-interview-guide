@@ -1,0 +1,30 @@
+* Design a high-level architecture for an e-commerce platform supporting millions of users.
+* Design an HLD for a URL-shortening service with high read traffic.
+* Design a payment processing platform with idempotency, retries, and reliable transaction handling.
+* Design a banking system that supports account balances, transfers, and transaction history.
+* Design an online food delivery platform with order tracking and real-time notifications.
+* Design a ride-sharing application that matches drivers and passengers in real time.
+* Design a video streaming platform that supports millions of concurrent viewers.
+* Design a social media platform with feeds, likes, comments, and notifications.
+* Design a chat application that supports real-time messaging and message history.
+* Design a file-storage service with upload, download, replication, and access control.
+* Design a notification platform that sends email, SMS, and push notifications.
+* Design an inventory management system that prevents overselling during concurrent purchases.
+* Design a ticket-booking platform that prevents multiple users from reserving the same seat.
+* Design a search service that supports full-text search and filtering across millions of records.
+* Design a logging platform that collects and searches logs from thousands of services.
+* Design a monitoring platform that collects metrics and triggers alerts.
+* Design a rate-limiting service shared by multiple application instances.
+* Design an authentication platform supporting OAuth 2.0, OpenID Connect, and single sign-on.
+* Design a multi-tenant SaaS platform with configurable customer-specific features.
+* Design a reporting platform that processes large datasets without affecting transactional workloads.
+* An application is experiencing high latency because several services call each other synchronously. How would you redesign the HLD?
+* A database has become a bottleneck as traffic grows. What architectural changes would you propose?
+* A single region outage makes the entire platform unavailable. How would you redesign deployment and failover?
+* Two microservices maintain inconsistent copies of the same business data. How would you resolve the architectural issue?
+* A message broker becomes unavailable while the system continues receiving requests. How should the architecture handle this?
+* A system must support both real-time updates and historical analytics. How would you separate the workloads?
+* A legacy monolith must be decomposed without interrupting existing business operations. How would you plan the transition?
+* A platform needs to support customers across several countries with different regulatory requirements. How would you approach the HLD?
+* Infrastructure costs have increased sharply after a major scaling exercise. How would you optimize the architecture?
+* Business stakeholders require higher availability, lower latency, and lower cost simultaneously. How would you prioritize and justify trade-offs?

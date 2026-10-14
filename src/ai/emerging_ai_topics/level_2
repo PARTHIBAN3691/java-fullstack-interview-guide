@@ -1,0 +1,79 @@
+**Multimodal Large Language Models**
+
+* Design a multimodal AI platform that processes text, images, audio, and video streams while meeting enterprise requirements for throughput, data privacy, and latency. How would you route requests to suitable models and unify their outputs?
+* How would you evaluate cross-modal grounding, temporal understanding, hallucinations, and performance across different modalities when no single benchmark adequately represents production usage?
+
+**Vision-Language Models**
+
+* Design a visual reasoning system for complex industrial scenes that combines image regions, OCR, spatial relationships, and domain-specific knowledge. How would you establish evidence for every generated conclusion?
+* How would you detect and mitigate failures caused by small objects, unusual camera angles, occlusion, high-resolution images, and adversarial visual inputs?
+
+**Speech-to-Text and Text-to-Speech**
+
+* Design a multilingual speech platform with streaming transcription, speaker identification, speech synthesis, and domain-specific vocabulary across noisy environments.
+* How would you optimize word error rate, first-audio latency, prosody, interruption handling, and computational cost when recognition and synthesis models have different resource requirements?
+
+**Real-Time Voice Agents**
+
+* Design a real-time voice agent supporting full-duplex audio, interruption, tool calling, authentication, and handoff to human operators. How would you coordinate independent streaming components without losing conversation state?
+* How would you maintain natural turn-taking under network jitter, slow model responses, speech-recognition errors, and tool latency while preventing stale audio from being played after an interruption?
+
+**Graph-Based AI**
+
+* Design a graph-learning system that combines relational structure, node features, and temporal events to predict links or identify anomalous entities at large scale.
+* How would you handle graph sampling, changing topology, high-degree nodes, graph partitioning, and feature leakage during training and inference?
+
+**Knowledge Graphs for AI**
+
+* Design an enterprise knowledge graph that integrates conflicting facts from multiple source systems, supports temporal validity, and preserves source-level provenance.
+* How would you combine graph traversal, vector retrieval, and LLM reasoning for multi-hop questions while ensuring authorization is enforced across every connected entity?
+
+**Neuro-Symbolic AI**
+
+* Design a neuro-symbolic architecture for a regulated decision process in which an LLM interprets unstructured evidence but deterministic constraints must govern the final decision.
+* How would you represent uncertainty, contradictory evidence, incomplete facts, and rule changes while ensuring the system never treats a plausible model output as a proven logical conclusion?
+
+**Small Language Models (SLMs)**
+
+* Design a model-selection and serving platform that dynamically routes tasks between specialized SLMs and larger models based on quality requirements, latency, privacy, and cost.
+* How would you fine-tune or distill a small model without amplifying teacher-model errors, reducing rare-case performance, or introducing unacceptable safety regressions?
+
+**On-Device and Edge AI**
+
+* Design an edge AI architecture for thousands of intermittently connected devices with different hardware capabilities, local data constraints, and strict inference deadlines.
+* How would you manage quantized model compatibility, signed model updates, rollback, hardware acceleration, and security when devices cannot reliably reach a central control plane?
+
+**Federated Learning**
+
+* Design a federated learning system across organizations that cannot centralize raw data and have heterogeneous devices, unequal data distributions, and intermittent connectivity.
+* How would you assess privacy leakage from model updates, poisoning attacks, client-selection bias, aggregation robustness, and the communication cost of training?
+
+**AI Reasoning Models**
+
+* Design an adaptive inference architecture that allocates additional reasoning effort only to difficult tasks and verifies high-impact conclusions with independent checks.
+* How would you measure actual reasoning reliability when a model produces convincing explanations but still returns incorrect answers, and how would you control cost without hiding uncertainty?
+
+**Long-Term Memory for AI Agents**
+
+* Design a persistent agent memory architecture that supports episodic events, semantic facts, user preferences, temporal updates, provenance, and scoped access across multiple sessions.
+* How would you resolve contradictory memories, prevent prompt injection from being stored as trusted knowledge, and guarantee deletion across vector indexes, summaries, caches, and backups?
+
+**Computer-Use Agents**
+
+* Design a secure computer-use agent for enterprise workflows involving dynamic interfaces, multiple applications, sensitive records, and irreversible operations.
+* How would you prevent an agent from executing actions based on misleading screenshots, hidden UI instructions, stale state, or incorrect assumptions about whether a transaction succeeded?
+
+**Synthetic Data and Simulation**
+
+* Design a synthetic data platform for rare-event training and safety evaluation, combining simulators, generative models, privacy controls, and real-world validation.
+* How would you quantify the gap between simulated and real environments, identify synthetic-data artifacts, and prevent a model from learning shortcuts that fail in production?
+
+**AI Benchmarking and Leaderboards**
+
+* Design an evaluation framework for comparing proprietary and open-weight models across task accuracy, robustness, safety, cost, latency, and multilingual performance.
+* How would you establish statistically meaningful rankings, detect contamination, handle evaluator-model bias, and prevent teams from optimizing for the benchmark instead of real-world outcomes?
+
+**Open-Weight Model Ecosystems**
+
+* Design a production serving platform for multiple open-weight models with versioned artifacts, hardware-aware scheduling, quantization options, security scanning, and reproducible deployments.
+* How would you assess supply-chain risks, model licenses, unsafe fine-tunes, compromised artifacts, and dependency vulnerabilities while preserving the ability to roll back to a trusted model version?

@@ -1,0 +1,30 @@
+* What is a Kafka consumer?
+* Why are Kafka consumers used in distributed applications?
+* What are the main responsibilities of a Kafka consumer?
+* How does a Kafka consumer read messages from a topic?
+* What is the difference between a Kafka producer and a consumer?
+* What is a Kafka topic subscription?
+* What is the difference between subscribing to a topic and assigning partitions manually?
+* What is a consumer group?
+* What is the purpose of the group.id configuration?
+* What is a partition assignment in Kafka?
+* What is an offset in Kafka?
+* What is a committed offset?
+* What is the difference between automatic and manual offset commits?
+* What is the purpose of enable.auto.commit?
+* What is the purpose of auto.offset.reset?
+* What happens when a consumer starts reading a topic for the first time?
+* What happens when a consumer restarts after a failure?
+* What is consumer lag?
+* What is polling in Kafka consumers?
+* What is the purpose of the poll() method?
+* What is the purpose of max.poll.records?
+* What is the difference between poll() and commitSync()?
+* What is the role of the KafkaConsumer class in Java?
+* What is the purpose of ConsumerRecord?
+* What is the purpose of ConsumerRecords?
+* What is a deserializer in Kafka?
+* What is the difference between StringDeserializer and JsonDeserializer?
+* What is the purpose of key.deserializer and value.deserializer?
+* What happens when a consumer receives a message it cannot deserialize?
+* What are the basic configuration properties required to create a Kafka consumer?

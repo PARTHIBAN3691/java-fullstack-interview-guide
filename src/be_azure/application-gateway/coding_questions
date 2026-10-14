@@ -1,0 +1,21 @@
+
+* Develop a Spring Boot REST API with separate `/api/orders` and `/api/payments` endpoints that can be routed through different Application Gateway path-based rules.
+* Implement a Spring Boot health endpoint that returns the application readiness status for use by an Application Gateway health probe.
+* Create a Spring Boot REST API that exposes separate liveness and readiness endpoints and explain how each should be used.
+* Write a Spring Boot configuration that correctly processes `X-Forwarded-For`, `X-Forwarded-Proto`, and forwarded host information from a trusted proxy.
+* Implement a request filter that generates or propagates a correlation ID and includes it in application logs.
+* Develop a Spring Boot API that logs the request URI, correlation ID, response status, and processing time for troubleshooting gateway errors.
+* Write a REST controller that returns appropriate HTTP status codes for client errors, server errors, and successful requests behind Application Gateway.
+* Implement centralized exception handling using `@ControllerAdvice` for a Java REST API exposed through Application Gateway.
+* Create a Spring Boot service that applies connection and read timeouts when calling a downstream microservice.
+* Implement a circuit breaker and fallback response for a downstream service that frequently times out.
+* Develop a Spring Boot endpoint that supports graceful shutdown and stops accepting new work while in-flight requests complete.
+* Write an integration test that verifies health-probe endpoints return the expected status codes without requiring user authentication.
+* Implement a Spring Boot API with configurable context paths so it can be deployed behind path-based routing rules.
+* Write Java code to validate and normalize forwarded headers only when requests originate from a trusted proxy.
+* Create a Spring Boot interceptor that records request latency and exposes metrics for monitoring gateway-to-backend performance.
+* Implement structured JSON logging in a Spring Boot application, including correlation IDs for integration with Azure monitoring tools.
+* Write a test suite that verifies API behavior when requests arrive with HTTP versus HTTPS forwarded-protocol headers.
+* Develop a Java REST API that supports backward-compatible endpoint versions, such as `/api/v1/orders` and `/api/v2/orders`.
+* Create a deployment validation script that sends requests through the Application Gateway endpoint and checks backend health, HTTPS behavior, and expected API responses.
+* Design a Java Spring Boot microservices application and provide the Azure infrastructure configuration needed for Application Gateway listeners, backend pools, health probes, TLS, and path-based routing.

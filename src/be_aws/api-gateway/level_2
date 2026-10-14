@@ -1,0 +1,21 @@
+
+* Explain the complete request lifecycle through API Gateway, from client request to backend response.
+* How would you design API Gateway for a microservices architecture with multiple Java Spring Boot services?
+* How do you implement centralized authentication and authorization for multiple backend services?
+* How would you integrate API Gateway with a private Application Load Balancer using a VPC link?
+* What are the architectural differences between API Gateway private integrations and public HTTP integrations?
+* How do you prevent API Gateway throttling from causing cascading failures in downstream microservices?
+* How would you design rate limiting for individual customers, API keys, and authenticated users?
+* How do API Gateway throttling limits interact with usage plans, account-level quotas, and backend concurrency?
+* How would you implement request validation, schema enforcement, and consistent error responses across APIs?
+* How would you secure an API against replay attacks, token misuse, and unauthorized requests?
+* How do you manage secrets and backend credentials when API Gateway invokes private services?
+* How would you implement canary deployments or safe API version migrations using stages and deployment strategies?
+* How would you troubleshoot latency across API Gateway, Lambda, and a downstream Java microservice?
+* What are the differences between API Gateway caching and application-level caching?
+* How would you design an API Gateway architecture for high availability and resilience across backend dependencies?
+* How do you handle large request and response payloads when API Gateway has service-specific payload limits?
+* How would you propagate correlation IDs and distributed tracing context from API Gateway to Java microservices?
+* How would you implement mutual TLS for a custom API Gateway domain, and what limitations should be considered?
+* How do you choose between API Gateway, an Application Load Balancer, and a self-managed gateway for a given workload?
+* How would you manage API Gateway infrastructure using AWS CloudFormation, AWS CDK, or Terraform across multiple environments?

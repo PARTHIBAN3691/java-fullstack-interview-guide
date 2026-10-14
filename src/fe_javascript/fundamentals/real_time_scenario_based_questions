@@ -1,0 +1,30 @@
+* A variable behaves differently when declared with var and let inside a loop. How would you explain the difference?
+* A variable is accessible before its declaration in one case but throws an error in another. What JavaScript concept explains this?
+* An API returns null for one field and undefined for another. How would you handle both safely?
+* A condition unexpectedly executes when a variable contains an empty array. Why does this happen?
+* A configuration value of 0 is replaced by a default value using ||. How would you fix the logic?
+* A value can be either null or undefined, and you need to apply a default only for those cases. Which operator would you use?
+* Two objects contain identical property values but fail an equality check. Why?
+* A function receives an object and modifies one of its properties, unexpectedly affecting the caller's data. How would you prevent this?
+* A calculation involving decimal currency values produces an inaccurate result. How would you address floating-point precision?
+* An API returns a numeric value as a string. How would you convert and validate it safely?
+* A user enters an invalid number into a form. How would you distinguish invalid input from a valid zero?
+* A large application has conflicting global variable names. How would you reduce global scope pollution?
+* A deeply nested API response causes an error when an optional property is missing. How would you prevent it?
+* A conditional statement behaves unexpectedly because the string "false" is treated as true. How would you handle it?
+* A comparison returns true with == but false with ===. Explain the likely cause.
+* A loop skips some elements because break and continue are used incorrectly. How would you debug it?
+* A return statement followed by a line break unexpectedly returns undefined. What language behavior causes this?
+* A Java developer expects integer division behavior from Java in a JavaScript calculation. What differences should they consider?
+* A system must process identifiers larger than Number.MAX_SAFE_INTEGER. Which JavaScript data type would you consider?
+* A variable declared with const contains an object whose properties can still be changed. Why?
+* A developer uses typeof to identify null values and gets an unexpected result. How would you correct the check?
+* A numeric input contains whitespace or invalid characters. How would you validate it before calculation?
+* A value from local storage is read as a string but expected to be an object. How would you convert it?
+* A conditional expression combines && and || and produces an unexpected result. How would you improve readability and correctness?
+* A production bug occurs because an empty string is treated as a missing value. How would you distinguish these cases?
+* A JavaScript application needs to support very large integers and ordinary decimal calculations. How would you choose between Number and BigInt?
+* A developer assumes const makes an object immutable. How would you explain and address the issue?
+* A function returns different results for null, undefined, 0, and an empty string. How would you test these cases systematically?
+* A legacy codebase depends heavily on implicit type coercion. How would you modernize it safely?
+* You need to review JavaScript fundamentals for a code interview. Which core language behaviors would you test with small output-prediction examples?

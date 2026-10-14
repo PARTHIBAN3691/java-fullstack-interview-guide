@@ -1,0 +1,30 @@
+* Write an Angular route configuration that lazy-loads a feature module using loadChildren.
+* Create a lazy-loaded feature module containing a list component and a detail component.
+* Write a standalone Angular route configuration that lazy-loads a component using loadComponent.
+* Implement lazy loading for a standalone feature that exports its own Routes array.
+* Configure a parent lazy-loaded route with multiple child routes.
+* Implement nested lazy loading for a dashboard containing reports and settings features.
+* Write a route configuration that lazy-loads an administration feature.
+* Implement a lazy-loaded route with a route parameter such as /users/:id.
+* Configure a lazy-loaded route with a redirect to its default child route.
+* Write a wildcard route configuration that handles unknown URLs alongside lazy-loaded features.
+* Implement a CanMatch guard that restricts access to an administrative route.
+* Write a lazy-loaded route protected by a CanActivate guard.
+* Implement role-based route matching for administrator and standard-user features.
+* Create a custom preloading strategy that preloads only routes with a data.preload flag.
+* Configure PreloadAllModules for a module-based Angular application.
+* Implement selective preloading for standalone lazy-loaded routes.
+* Write a route configuration that uses route-level providers for a lazy-loaded feature.
+* Implement a shared service that allows two lazy-loaded features to access common state.
+* Write unit tests that verify lazy-loaded route definitions and navigation behavior.
+* Write a test that verifies an unauthorized user cannot activate a protected lazy-loaded route.
+* Implement a loading indicator while a lazy-loaded component is being downloaded.
+* Write code that handles navigation errors caused by failed lazy-loaded imports.
+* Implement a strategy to recover from a ChunkLoadError without triggering an infinite reload loop.
+* Write a lazy-loaded feature that dynamically imports a charting component only when the user opens the reports page.
+* Configure lazy-loaded routes with breadcrumbs using route data.
+* Implement lazy loading for a feature with standalone components and child routes.
+* Write code that preloads selected routes only after the user has authenticated.
+* Implement a custom preloading strategy that skips routes when the network connection is slow, where browser network information is available.
+* Write a test that verifies a custom preloading strategy loads only eligible routes.
+* Create a complete Angular routing example combining lazy loading, route guards, route-level providers, and custom preloading.

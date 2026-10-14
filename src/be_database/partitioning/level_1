@@ -1,0 +1,30 @@
+* How do you implement range partitioning in MySQL?
+* How do you implement list partitioning in MySQL?
+* How do you implement hash partitioning in MySQL?
+* How do you create a partitioned table using SQL DDL statements?
+* How do you add a new partition to an existing MySQL table?
+* How do you remove or drop a partition safely?
+* How do you reorganize partitions in MySQL?
+* How do you inspect the partitions of a MySQL table?
+* How do you use EXPLAIN to verify partition pruning?
+* How does partition pruning work when filtering by a date range?
+* How does the choice of partition key affect query performance?
+* What are the limitations of MySQL partitioning?
+* Why must partitioning columns be considered when defining unique keys in MySQL?
+* How do indexes work on partitioned MySQL tables?
+* How do you design monthly partitions for an audit-log table?
+* How would you partition an orders table based on order date?
+* How would you partition a transaction table based on customer ID?
+* What is the difference between range partitioning and range sharding?
+* How do partitioned tables affect INSERT, UPDATE, and DELETE operations?
+* How do partitioned tables affect joins between large tables?
+* How do you handle queries that filter on columns other than the partition key?
+* How can partitioning improve data archival and retention?
+* How do you remove old data efficiently using partition operations?
+* How do partitioning and indexing work together?
+* How do you test query performance before and after partitioning?
+* How do you migrate data from a non-partitioned table to a partitioned table?
+* How do transactions behave when they access multiple partitions?
+* How does partitioning differ between MySQL, PostgreSQL, and Oracle?
+* How do you monitor partition sizes and data distribution?
+* When would you avoid partitioning a database table?

@@ -1,0 +1,30 @@
+* You have an OrderController, OrderService, and OrderRepository. How would you design unit and integration tests for each layer?
+* A Spring Boot controller test takes several seconds to start because the complete application context is loaded. How would you optimize it?
+* A @SpringBootTest is failing because a required external service is unavailable. How would you isolate the dependency?
+* A controller returns HTTP 400 for invalid input. How would you write a test to verify the validation and error response?
+* A service calls a repository and an external payment service. How would you test the service without calling the real payment API?
+* A REST endpoint is protected by Spring Security. How would you test both authorized and unauthorized requests?
+* A user with the wrong role can access an admin endpoint. How would you test and identify the security configuration issue?
+* A Spring Data JPA query works in development but fails in production. How would you create a meaningful repository integration test?
+* A repository test passes with H2 but fails against PostgreSQL in production. What would you investigate?
+* Your team wants database-realistic integration tests without installing a database locally. How would you use Testcontainers?
+* A transaction should roll back when a downstream operation fails. How would you test this behavior?
+* Two concurrent requests update the same database record and produce inconsistent results. How would you test the concurrency behavior?
+* A Spring service publishes an application event after saving an order. How would you test that the event is published correctly?
+* A Kafka consumer processes messages asynchronously, and your test sometimes passes and sometimes fails. How would you make the test reliable?
+* A scheduled job runs every five minutes, but you need to test it without waiting five minutes. How would you approach the test?
+* A Spring Boot application uses Redis caching. How would you test cache hit and cache miss behavior?
+* A controller uses @ControllerAdvice for exception handling. How would you verify the correct error response?
+* A service uses @Transactional, but the expected rollback is not happening. How would you investigate this through testing?
+* A test using @MockBean passes, but the production application fails because the actual bean configuration is incorrect. What type of test is missing?
+* A large test suite has hundreds of @SpringBootTest classes and takes 30 minutes to execute. How would you reduce execution time?
+* A test modifies the ApplicationContext and causes unrelated tests to fail. How would you identify and isolate the problem?
+* A Spring application has multiple profiles such as dev, test, and prod. How would you ensure tests use the correct configuration?
+* An external payment API occasionally returns HTTP 500. How would you test retry and fallback behavior without calling the real API?
+* A REST API uses pagination and sorting. How would you test different page sizes, sorting options, and boundary conditions?
+* A controller accepts a multipart file upload. How would you test valid, invalid, and oversized files?
+* A Spring application uses OAuth2 authentication. How would you test endpoints with different user identities and scopes?
+* A WebFlux endpoint returns data asynchronously. How would you test its response and error behavior?
+* A Spring Batch job processes millions of records. How would you test job configuration and processing logic without processing millions of records?
+* Your integration tests fail only when executed in parallel. What could cause this and how would you fix it?
+* How would you decide whether a Spring test should be a unit test, slice test, or full integration test?

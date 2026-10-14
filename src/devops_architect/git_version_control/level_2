@@ -1,0 +1,111 @@
+**Git Fundamentals**
+* Explain how Git object storage, commit graphs, refs, and reflogs support history management and recovery.
+* How would you investigate repository corruption or missing objects in a critical production repository?
+* How would you recover uncommitted or unreachable work after an accidental hard reset, branch deletion, or rebase?
+* How would you optimize Git performance for a repository with a very large history and many binary assets?
+* How would you migrate a repository while preserving required history, tags, branch protections, and auditability?
+
+**Branching Strategies**
+* Design a branching strategy for hundreds of developers delivering independent services while maintaining shared libraries and release coordination.
+* How would you balance release stability, integration frequency, parallel development, and rollback simplicity?
+* How would you migrate from a heavily customized GitFlow process to continuous delivery with minimal disruption?
+* How would you handle emergency fixes across several supported product lines without creating divergent histories?
+* How would you define branching policies that adapt to risk and deployment frequency rather than enforcing one model universally?
+
+**GitFlow**
+* Design a GitFlow implementation for a product with multiple concurrent release trains, long-term support versions, and urgent security patches.
+* How would you prevent duplicated fixes and merge conflicts across `main`, `develop`, release branches, and hotfix branches?
+* How would you automate release stabilization, release-candidate promotion, and branch synchronization?
+* How would you determine whether GitFlow's coordination overhead has become a delivery bottleneck?
+* How would you adapt or replace GitFlow for independently deployed microservices with different release schedules?
+
+**Trunk-Based Development**
+* Design a trunk-based delivery workflow that keeps main releasable while supporting hundreds of daily commits and multiple teams.
+* How would you handle incomplete, incompatible, or risky changes without maintaining long-lived feature branches?
+* How would you design feature-flag ownership, lifecycle management, auditing, and automatic stale-flag detection?
+* How would you isolate and recover from a bad commit that immediately affects shared integration pipelines?
+* How would you measure whether trunk-based development is improving integration health and delivery performance?
+
+**Feature Branches**
+* Design a feature-branch workflow for a large organization where changes frequently span shared libraries and dependent services.
+* How would you manage feature dependencies without creating a chain of long-lived branches?
+* How would you minimize integration risk when a feature requires incompatible database and API changes?
+* How would you prevent feature branches from becoming unofficial long-term maintenance branches?
+* How would you define branch expiry and automated cleanup policies without deleting active work?
+
+**Pull Requests**
+* Design an enterprise pull-request workflow with risk-based approvals, automated policy checks, merge queues, and auditable emergency exceptions.
+* How would you prevent race conditions when many pull requests modify the same protected branch?
+* How would you maintain trustworthy required status checks when workflows or CI definitions can be modified by the proposed change?
+* How would you handle approval invalidation, reviewer independence, and time-of-check versus time-of-merge risks?
+* How would you scale pull-request automation without allowing compromised automation identities to bypass governance?
+
+**Code Reviews**
+* How would you design a review process for high-risk changes that require architectural, security, operational, and domain expertise?
+* How would you detect review bottlenecks across hundreds of repositories without incentivizing rubber-stamp approvals?
+* How would you handle a disagreement over a critical design decision when delivery deadlines conflict with maintainability?
+* How would you establish reviewer independence and prevent approval conflicts of interest in regulated teams?
+* How would you use automated analysis, ownership rules, and risk classification to allocate reviewer effort efficiently?
+
+**Merge vs Rebase**
+* How would you define organization-wide merge policies that preserve traceability while keeping history understandable?
+* How would you recover when an incorrect force-push rewrites a shared branch used by several teams?
+* How would you reconstruct the original history after a complex rebase has duplicated or dropped commits?
+* How would you preserve provenance and auditability when using squash merges in a regulated repository?
+* How would you manage merge queues and rebasing when several pull requests change the same shared dependencies?
+
+**Git Tags**
+* Design an immutable release-tagging strategy with signed tags, artifact provenance, and controlled release promotion.
+* How would you detect and respond to a tag that has been moved or recreated after a production artifact was published?
+* How would you ensure a tag points to the exact source revision used to build and deploy an artifact?
+* How would you manage release tags across long-term support branches and parallel product versions?
+* How would you secure signing keys and verify release signatures across distributed build and deployment systems?
+
+**Git Hooks**
+* Design a hook strategy that provides fast developer feedback while enforcing non-bypassable controls on the server or CI side.
+* How would you standardize hook distribution across operating systems, shells, and development environments?
+* How would you defend against malicious or compromised hooks executing code during repository operations?
+* How would you design secret scanning that balances false positives, performance, and reliable enforcement?
+* How would you investigate inconsistent hook execution when GUI clients, command-line tools, and automated agents behave differently?
+
+**Monorepo vs Polyrepo**
+* Design a repository strategy for an enterprise with hundreds of services, shared libraries, different compliance boundaries, and independent release schedules.
+* How would you implement affected-project detection and dependency-aware CI in a monorepo without missing transitive impacts?
+* How would you preserve ownership boundaries and access controls when teams share a repository?
+* How would you migrate selected projects from a monorepo to separate repositories while preserving history and build reproducibility?
+* How would you compare total operational cost, developer productivity, release independence, and security isolation across both models?
+
+**Release Branches**
+* Design a release management strategy supporting concurrent product versions, security backports, release candidates, and extended support.
+* How would you prevent a fix from being applied to one release line but omitted from other supported lines?
+* How would you automate cherry-pick validation and detect conflicts or behavioral differences across release branches?
+* How would you manage urgent production fixes during a release freeze without losing traceability?
+* How would you determine when a release branch should be archived, maintained, or removed?
+
+**Semantic Versioning**
+* Design a versioning strategy for public APIs, internal libraries, container images, and independently deployed microservices.
+* How would you detect breaking changes automatically and enforce compatibility policies in CI?
+* How would you manage dependency constraints when services consume several incompatible versions of a shared library?
+* How would you prevent version ambiguity when tags, package metadata, and deployed artifacts disagree?
+* How would you evolve a public API while supporting multiple consumer versions and controlled deprecation timelines?
+
+**Commit Strategies**
+* Design a commit and merge policy that balances readable history, bisectability, rollback simplicity, and audit requirements.
+* How would you enforce signed commits or verified identities across a distributed engineering organization?
+* How would you automate changelog generation when commit messages are inconsistent or commits are squashed?
+* How would you preserve authorship and review traceability after rebasing, squashing, cherry-picking, and backporting changes?
+* How would you investigate a regression when a commit contains several logically unrelated changes?
+
+**Repository Governance**
+* Design centralized governance for thousands of repositories with standardized branch protections, CODEOWNERS, security checks, and controlled exceptions.
+* How would you prevent administrators or automation identities from silently bypassing critical repository controls?
+* How would you design least-privilege access across contractors, internal teams, bots, and external contributors?
+* How would you respond to a compromised maintainer account that changes branch protection and publishes malicious code?
+* How would you provide auditable evidence of repository compliance while avoiding excessive manual administration?
+
+**GitOps Repository Design**
+* Design a GitOps repository architecture for hundreds of applications, multiple clusters, regional failover, and progressive delivery.
+* How would you separate platform-level configuration, tenant-level configuration, and application-level desired state without creating ownership conflicts?
+* How would you prevent a malicious commit from propagating to every cluster through automated reconciliation?
+* How would you implement progressive promotion, immutable artifact references, policy enforcement, and rollback across environments?
+* How would you recover GitOps operations after repository compromise, controller failure, or accidental deletion of critical configuration?

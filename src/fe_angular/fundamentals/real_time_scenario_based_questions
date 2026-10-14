@@ -1,0 +1,30 @@
+* You are building an Angular application for an enterprise portal with hundreds of screens. How would you structure the application?
+* A component contains thousands of lines of code with UI logic, API calls, and business rules. How would you refactor it?
+* Multiple components need to access the same customer information. How would you design a reusable solution?
+* A parent component needs to send customer information to a child component. How would you implement the communication?
+* A child component needs to notify the parent when a user completes an action. How would you design the communication?
+* Several unrelated components need to share application state. Which Angular mechanisms would you consider?
+* An Angular application becomes slow when displaying a large list containing thousands of records. How would you improve rendering performance?
+* A component using `OnPush` does not update when an object property is changed. What could be the reason?
+* An Angular application performs unnecessary API calls whenever a component is displayed. How would you investigate the component lifecycle and API invocation?
+* A component continues consuming resources after the user navigates away from the page. How would you identify and prevent the problem?
+* An application has complex nested components and data must travel through many component levels. How would you avoid excessive `@Input()` and `@Output()` chaining?
+* A common business rule is duplicated across multiple Angular components. Where would you move the logic and why?
+* An application needs authentication information across many components. How would you design an authentication service?
+* An Angular application has multiple feature areas such as customers, orders, payments, and reports. How would you organize the application structure?
+* A page contains several expensive child components that are not immediately visible. How would you improve initial rendering performance?
+* An Angular application has a large initial bundle and slow first-page loading. What techniques would you use to reduce the startup time?
+* A team is migrating an older NgModule-based application toward standalone components. What migration strategy would you follow?
+* An application has inconsistent UI behavior because different components directly modify shared objects. How would you introduce safer state management?
+* A form contains many fields and complex validation rules. How would you decide between template-driven and reactive forms?
+* A user changes a form value and several components need to react to the change. How would you design the data flow?
+* An Angular application needs to display data from multiple APIs on a dashboard. How would you structure the services and components?
+* A component requires a service with a different configuration than the rest of the application. How would you configure dependency injection?
+* An application has multiple implementations of the same service interface depending on the environment. How would you configure Angular providers?
+* A production Angular application has poor performance but development mode appears fast. What areas would you investigate?
+* A component receives data asynchronously and initially displays undefined values. How would you design the template and component logic safely?
+* A route should not be accessible unless the user is authenticated. How would you implement this requirement?
+* A large application has many routes that users rarely access. How would you use lazy loading to improve performance?
+* A common header, navigation menu, and footer are required across many pages. How would you structure these components?
+* A team wants to standardize reusable UI components across multiple Angular projects. How would you design a shared component library?
+* Design the high-level Angular architecture for a large enterprise application with authentication, routing, reusable components, API integration, state management, lazy loading, and performance optimization.

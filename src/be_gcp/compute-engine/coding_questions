@@ -1,0 +1,30 @@
+* Write a Bash startup script that installs Java and starts a Spring Boot application on a Compute Engine VM.
+* Write a systemd service configuration to run a Spring Boot JAR and restart it automatically after failure.
+* Write a Bash script that checks whether a Java application is running and restarts it if necessary.
+* Write a Java health-check endpoint that a Compute Engine load balancer can use to verify application readiness.
+* Implement a Spring Boot REST API that returns application version and instance information for deployment verification.
+* Write Java code to read configuration values from environment variables on a Compute Engine VM.
+* Implement Java code that uses Application Default Credentials to access a Cloud Storage bucket from a VM.
+* Write Java code that retrieves instance metadata from the Compute Engine metadata server.
+* Implement a Java service that uses the VM's attached service account to call a Google Cloud API.
+* Write a Terraform configuration to create a Compute Engine VM with a service account and firewall configuration.
+* Write a Terraform configuration that creates an instance template and a managed instance group for a Java application.
+* Implement a Terraform configuration that distributes VM instances across multiple zones.
+* Write a Bash script that builds a Spring Boot application and deploys the JAR to a VM using SSH.
+* Implement a deployment script that performs a health check and rolls back if the new application version fails.
+* Write a Bash script to create a persistent disk snapshot before performing a production deployment.
+* Write a script that checks disk utilization and sends an alert when a filesystem exceeds a threshold.
+* Implement a Java REST client that calls another service through an internal load balancer.
+* Write Java code to configure connection and read timeouts for an external API called by a VM-hosted service.
+* Implement a Spring Boot application that gracefully shuts down and finishes in-flight requests before termination.
+* Write a Java utility that records JVM heap usage, garbage collection metrics, and application response times.
+* Implement a Java scheduled task that periodically checks the availability of a downstream service.
+* Write a Bash script that collects CPU, memory, disk, and network diagnostics from a Linux VM.
+* Implement a startup script that retrieves application configuration from Secret Manager without storing secrets in source code.
+* Write a Java application that uploads diagnostic logs to Cloud Storage after a failure.
+* Implement a Spring Boot service that stores session state in Redis instead of local VM memory.
+* Write a Java batch processor that checkpoints progress so processing can resume after a VM restart.
+* Implement a CI/CD pipeline that builds a Docker image, publishes it to Artifact Registry, and deploys it to Compute Engine.
+* Write a Terraform configuration that creates a health check and configures a managed instance group for autohealing.
+* Implement a Java integration test that verifies an application works with its required Google Cloud services.
+* Write a deployment automation script that verifies application health across all instances before completing a rolling update.

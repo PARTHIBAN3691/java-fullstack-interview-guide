@@ -1,0 +1,15 @@
+* What is garbage collection tuning in Java?
+* Why is GC tuning required for Java applications?
+* What are the main goals of GC tuning?
+* What is the difference between throughput and latency in garbage collection?
+* What is a GC pause, and how does it affect application performance?
+* What is the difference between heap size and heap occupancy?
+* What is the purpose of the `-Xms` JVM option?
+* What is the purpose of the `-Xmx` JVM option?
+* What is the purpose of the `-XX:+UseG1GC` JVM option?
+* What is the purpose of the `-XX:MaxGCPauseMillis` JVM option?
+* How do you enable GC logging to analyze application performance?
+* What is the difference between young GC and Full GC?
+* How does increasing the heap size affect garbage collection?
+* What is the difference between a memory leak and high allocation pressure?
+* Which metrics should be monitored before tuning garbage collection?

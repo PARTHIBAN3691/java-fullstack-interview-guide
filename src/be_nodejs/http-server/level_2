@@ -1,0 +1,30 @@
+* Explain how Node.js processes incoming HTTP connections internally.
+* How do the event loop and libuv support concurrent HTTP request processing?
+* How does the single-threaded JavaScript execution model affect HTTP server performance?
+* How would you design an HTTP server to handle thousands of concurrent connections?
+* How would you identify and resolve event-loop blocking in an HTTP server?
+* How would you optimize an HTTP server for high throughput and low latency?
+* How do socket connections and HTTP keep-alive affect memory and resource usage?
+* How would you tune HTTP server timeout settings for different types of clients?
+* How would you prevent slow clients from exhausting server resources?
+* How would you implement request cancellation when a client disconnects?
+* How would you handle backpressure when receiving or sending large request bodies?
+* How would you implement a streaming response without buffering the entire payload?
+* How would you implement secure static-file serving while preventing path traversal and symbolic-link attacks?
+* How would you defend an HTTP server against oversized requests and denial-of-service attacks?
+* How would you mitigate HTTP request smuggling when running behind a reverse proxy?
+* How would you implement rate limiting across multiple HTTP server instances?
+* How would you implement authentication and authorization without using Express.js?
+* How would you implement mutual TLS for secure service-to-service HTTP communication?
+* How would you implement conditional GET requests using ETag and Last-Modified?
+* How would you design an HTTP server that supports HTTP/2?
+* How would you implement a reverse proxy using the built-in HTTP APIs?
+* How would you implement graceful shutdown while allowing active requests to complete?
+* How would you manage long-running requests during rolling deployments?
+* How would you diagnose socket exhaustion, connection resets, and memory leaks?
+* How would you implement structured logs, correlation IDs, and distributed tracing?
+* How would you build a resilient HTTP server with timeouts, retries, and circuit breakers for downstream calls?
+* How would you design a health-check strategy that distinguishes liveness from readiness?
+* How would you benchmark HTTP server throughput and latency under realistic load?
+* How would you deploy an HTTP server across multiple CPU cores?
+* How would you design a production-grade HTTP server framework with routing, middleware, validation, and centralized error handling?

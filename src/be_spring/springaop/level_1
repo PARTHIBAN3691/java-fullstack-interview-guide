@@ -1,0 +1,30 @@
+* How do you create a custom aspect in Spring Boot?
+* How do you define a pointcut expression in Spring AOP?
+* What does the execution() pointcut designator represent?
+* How do you apply advice to all methods in a particular package?
+* How do you apply advice to methods with a specific annotation?
+* What is the difference between execution() and within() pointcut expressions?
+* What is the purpose of the args() pointcut designator?
+* How do you combine multiple pointcut expressions?
+* What is a named pointcut, and why is it useful?
+* How do you access method arguments inside an advice?
+* How do you retrieve the method signature from a JoinPoint?
+* How do you access the target object and proxy object in an advice?
+* How do you execute the original method from @Around advice?
+* What happens if you do not call proceed() inside @Around advice?
+* How do you measure method execution time using Spring AOP?
+* How do you implement logging using Spring AOP?
+* How do you implement exception logging using Spring AOP?
+* How do you implement performance monitoring using Spring AOP?
+* What is the difference between JDK dynamic proxies and CGLIB proxies?
+* When does Spring use JDK dynamic proxies?
+* When does Spring use CGLIB proxies?
+* What are the limitations of Spring AOP proxy-based interception?
+* Why does self-invocation bypass Spring AOP advice?
+* How does Spring AOP work with dependency injection?
+* Can Spring AOP intercept private methods?
+* Can Spring AOP intercept static methods?
+* How do you order multiple aspects using @Order?
+* What happens when multiple advice methods apply to the same join point?
+* How do you test a Spring AOP aspect using JUnit and Mockito?
+* What are the common mistakes when implementing Spring AOP?

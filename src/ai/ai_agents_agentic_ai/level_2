@@ -1,0 +1,94 @@
+**AI Agent Fundamentals**
+* How would you design an agent platform that supports thousands of concurrent tasks with bounded latency and cost?
+* How would you decide dynamically whether an agent should continue reasoning, invoke a tool, delegate a task, or stop?
+* How would you guarantee that an agent's final response is supported by verified execution results rather than its own assumptions?
+
+**Agent Architecture**
+* How would you architect a distributed agent platform with stateless workers, persistent state, event-driven execution, and tenant isolation?
+* How would you prevent tight coupling between agent planning logic and provider-specific tool-calling formats?
+* How would you support versioned agent definitions, backward-compatible state transitions, and safe production rollouts?
+
+**Agent Planning and Reasoning**
+* How would you plan tasks with uncertain outcomes, changing constraints, and dependencies that become visible only during execution?
+* How would you evaluate alternative plans based on expected success probability, latency, token consumption, and business risk?
+* How would you detect a plan that is internally consistent but infeasible because of tool limitations or permission constraints?
+
+**Tool Calling and Tool Execution**
+* How would you achieve effectively-once business effects when an agent can retry a timed-out tool call whose result is unknown?
+* How would you design tool execution with idempotency keys, transactional boundaries, compensation, and reconciliation?
+* How would you prevent time-of-check-to-time-of-use vulnerabilities when permissions or target resources change between planning and execution?
+
+**Agent Memory**
+* How would you design a multi-tenant memory architecture that supports semantic retrieval, access control, provenance, and deletion?
+* How would you prevent memory poisoning and cross-user information leakage?
+* How would you measure whether retrieved memories improve task success rather than introduce stale or misleading context?
+
+**Short-Term and Long-Term Memory**
+* How would you design memory consolidation from working context into durable long-term records?
+* How would you reconcile conflicting memories created at different times or from different sources?
+* How would you implement retention policies and deletion guarantees across caches, vector indexes, backups, and derived summaries?
+
+**Autonomous vs Human-in-the-Loop Agents**
+* How would you design risk-based autonomy levels that adapt to action impact, uncertainty, and user authorization?
+* How would you prevent an agent from bypassing human approval by decomposing a prohibited action into individually permitted steps?
+* How would you balance autonomous throughput with approval queues, reviewer workload, and service-level objectives?
+
+**ReAct Pattern**
+* How would you prevent an unbounded ReAct loop from exhausting token budgets or repeatedly invoking side-effecting tools?
+* How would you design loop termination using task completion criteria, progress signals, and resource budgets?
+* How would you evaluate whether a ReAct agent's intermediate actions contribute to successful outcomes?
+
+**Reflection and Self-Correction**
+* How would you design reflection that uses external validators and execution evidence rather than relying only on the same model's judgment?
+* How would you prevent reflection loops from amplifying hallucinations or repeatedly modifying a correct result?
+* How would you compare the cost and benefit of self-correction against independent verification or a second-model review?
+
+**Multi-Agent Systems**
+* How would you coordinate heterogeneous agents with different capabilities, latency profiles, and trust levels?
+* How would you prevent communication loops, deadlocks, redundant work, and cascading failures in a multi-agent system?
+* How would you evaluate whether adding agents improves overall quality enough to justify increased coordination cost and attack surface?
+
+**Agent Orchestration**
+* How would you design a durable orchestration engine that supports parallel branches, retries, compensation, cancellation, and recovery?
+* How would you handle partial failure when some parallel agents have completed irreversible actions and others have failed?
+* How would you enforce global budgets and deadlines across nested agents and delegated tool calls?
+
+**Agent Communication Protocols**
+* How would you design versioned agent communication contracts across independently deployed services?
+* How would you secure inter-agent messages against spoofing, replay, privilege escalation, and unauthorized delegation?
+* How would you handle backpressure, message ordering, duplicate delivery, and incompatible protocol versions in an asynchronous agent network?
+
+**Agent State and Checkpointing**
+* How would you checkpoint a distributed workflow while preserving consistency between agent state and external side effects?
+* How would you handle concurrent updates, stale checkpoints, schema migrations, and recovery after partial commits?
+* How would you design replay semantics that reconstruct an execution without repeating non-idempotent external actions?
+
+**Agent Workflow Design**
+* How would you combine durable workflows, event-driven agents, and deterministic state machines for high-impact business processes?
+* How would you support workflow version upgrades while thousands of executions are paused at human approval gates?
+* How would you design compensation and reconciliation for workflows that span multiple services without a shared transaction?
+
+**Agent Permissions and Sandboxing**
+* How would you enforce least privilege dynamically when an agent delegates work to another agent?
+* How would you isolate untrusted code execution while preventing container escape, secret exfiltration, and unauthorized network access?
+* How would you implement defense in depth using scoped credentials, policy enforcement, resource limits, and audit trails?
+
+**Agent Reliability and Evaluation**
+* How would you build a statistically meaningful evaluation framework for nondeterministic, multi-step agent behavior?
+* How would you detect regressions when model versions, prompts, tools, memory policies, or orchestration logic change?
+* How would you measure reliability across task success, correctness, policy violations, recovery, cost, and latency?
+
+**Agent Observability**
+* How would you trace a distributed agent execution across asynchronous queues, nested agents, and external services?
+* How would you design telemetry that enables debugging without logging confidential prompts, credentials, or sensitive user data?
+* How would you detect silent failures in which an agent reports success despite incomplete or incorrect external side effects?
+
+**Agent Security and Prompt Injection**
+* How would you design a threat model for indirect prompt injection, malicious tools, memory poisoning, and agent-to-agent privilege escalation?
+* How would you prevent an untrusted document from influencing an agent to perform unauthorized actions despite instruction hierarchy?
+* How would you implement defense in depth when prompt-level safeguards cannot guarantee that a model will ignore malicious instructions?
+
+**Human Approval and Escalation**
+* How would you bind an approval decision to an immutable action payload so that the agent cannot alter the action after approval?
+* How would you design separation of duties, multi-party approval, and risk-based escalation for sensitive operations?
+* How would you handle approval revocation, expired approvals, changed execution context, and audit requirements in a distributed workflow?

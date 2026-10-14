@@ -1,0 +1,30 @@
+* Create a Spring Boot application that connects to MongoDB using Spring Data MongoDB.
+* Create a Java document class with @Document, @Id, and appropriate field mappings.
+* Implement CRUD operations using MongoRepository for a Customer collection.
+* Implement CRUD operations using MongoTemplate for an Order collection.
+* Create a repository method that retrieves orders by customer ID and status.
+* Write a custom @Query method that finds documents matching multiple criteria.
+* Implement pagination and sorting for a MongoDB collection using Spring Data.
+* Write a Java method that updates selected fields using MongoTemplate and Update.
+* Implement an upsert operation that inserts a document when no matching record exists.
+* Create a compound index for customer ID and creation date, and verify that the query uses it.
+* Write a MongoDB aggregation pipeline that groups orders by customer and calculates total order value.
+* Implement an aggregation pipeline using $match, $group, $project, and $sort in Spring Data MongoDB.
+* Write a MongoTemplate aggregation that joins order documents with customer documents using $lookup.
+* Implement schema validation for a collection and write tests for invalid documents.
+* Create a Java service that handles duplicate-key exceptions and returns a meaningful API response.
+* Implement optimistic concurrency control for a MongoDB document using a version field or Spring Data's versioning support.
+* Write a Spring Boot service that performs a multi-document transaction using MongoTransactionManager.
+* Implement a retry strategy for transient MongoDB transaction failures with bounded attempts and backoff.
+* Write a service that uses an idempotency key to prevent duplicate order creation.
+* Implement keyset pagination using a stable sort field and the last-seen document identifier.
+* Write a Java program that consumes MongoDB change streams and processes inserted or updated documents.
+* Implement change-stream resume handling using resume tokens and idempotent event processing.
+* Create a Java bulk-write operation that inserts or updates many documents efficiently.
+* Write a service that uses a TTL index to expire temporary session documents.
+* Implement a repository query that filters documents using $in, $and, and $or operators.
+* Create an integration test for a MongoRepository using Testcontainers and a real MongoDB instance.
+* Write concurrent integration tests to verify that simultaneous updates do not silently overwrite each other.
+* Implement centralized exception handling for MongoDB connectivity, timeout, duplicate-key, and transaction failures.
+* Write a Java diagnostic utility that measures MongoDB query execution time and logs slow operations.
+* Design and implement a Spring Boot order-management service using MongoDB with appropriate schema design, indexing, validation, and concurrency control.

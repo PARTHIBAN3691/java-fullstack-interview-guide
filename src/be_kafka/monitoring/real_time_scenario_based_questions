@@ -1,0 +1,30 @@
+* Consumer lag for a critical payment consumer group suddenly increases. How would you investigate whether the problem is with Kafka, the consumer application, or a downstream service?
+* One Kafka broker shows 90% disk utilization while other brokers are below 50%. How would you investigate the uneven storage distribution?
+* Under-replicated partitions suddenly increase after a broker restart. What metrics and logs would you inspect first?
+* Kafka producer latency increases significantly during peak traffic, but CPU usage is low. How would you determine whether disk, network, batching, or broker queues are responsible?
+* A consumer group shows increasing lag even though all consumers appear healthy. How would you identify the bottleneck?
+* A single partition has extremely high traffic compared with the others. How would you detect the hot partition and determine its cause?
+* Kafka brokers show frequent garbage-collection pauses and request latency spikes. How would you diagnose and resolve the JVM issue?
+* Consumer lag periodically spikes every few minutes and then returns to normal. What would you investigate?
+* A production Kafka cluster reports several offline partitions. What would be your immediate actions and investigation steps?
+* A broker repeatedly leaves and rejoins the cluster. Which metrics and logs would you examine to determine the cause?
+* Producer error rates increase after a configuration change. How would you identify the changed configuration and assess its impact?
+* A Kafka Streams application has increasing processing latency but normal broker metrics. How would you determine whether the issue is in the application topology or state store?
+* A critical consumer commits offsets successfully but business processing is slow. Which application-level metrics would you add to distinguish Kafka lag from processing lag?
+* Kafka disk usage grows continuously despite retention policies being configured. How would you investigate the cause?
+* A consumer group suddenly performs frequent rebalances. How would you monitor and diagnose the problem?
+* A cluster has healthy CPU and memory metrics, but network utilization is close to its maximum. How would you confirm network saturation and reduce the impact?
+* After increasing topic partitions, consumer lag improves for some workloads but not others. How would you analyze the partition and consumer distribution?
+* Kafka replication latency increases during a large data ingestion job. How would you determine whether brokers are becoming overloaded?
+* A production alert reports high consumer lag, but users are not experiencing delays. How would you validate whether the alert represents a real business impact?
+* Your monitoring system generates hundreds of Kafka alerts during a broker outage. How would you redesign alert dependencies and suppression to avoid alert storms?
+* A Kafka cluster experiences intermittent request timeouts with no obvious CPU or disk issue. How would you use broker metrics, network metrics, and logs to investigate?
+* A new consumer deployment causes consumer lag and rebalance activity to spike. How would you determine whether the deployment introduced the problem?
+* A Kafka Connect sink connector stops processing messages while Kafka consumer lag continues to increase. How would you diagnose the connector?
+* A Kafka Streams application takes 20 minutes to restore state after a restart. Which metrics would you inspect and how would you reduce recovery time?
+* A transaction-heavy Kafka application shows increasing transaction abort rates. How would you investigate producer, broker, and application metrics?
+* A multi-region Kafka replication pipeline falls behind during peak hours. How would you monitor replication lag and identify the limiting resource?
+* A Kafka cluster is approaching its storage capacity. How would you forecast when capacity will be exhausted and plan expansion?
+* Your organization wants 99.99% availability for a Kafka-based payment platform. Which Kafka SLIs, SLOs, dashboards, and alerts would you define?
+* During a production incident, you need to determine whether Kafka caused an API latency increase. How would you correlate Kafka metrics with application traces and API metrics?
+* You are asked to build a centralized monitoring platform for 50 Kafka clusters. How would you design metric collection, dashboards, alerting, retention, and access control?

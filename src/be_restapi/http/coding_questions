@@ -1,0 +1,30 @@
+* Write a Java HttpClient program that sends a GET request to a REST endpoint.
+* Write a Java HttpClient program that sends a POST request with a JSON body.
+* Write a Java HttpClient program that sends PUT, PATCH, and DELETE requests.
+* Write a Java program that adds custom headers to an HTTP request.
+* Write a Java program that reads the HTTP status code and response body.
+* Write a Spring Boot REST endpoint that returns HTTP 201 after creating a resource.
+* Write a Spring Boot REST endpoint that returns HTTP 204 after successfully deleting a resource.
+* Write a Spring Boot exception handler that maps validation errors to HTTP 400.
+* Write a Spring Boot exception handler that returns HTTP 404 when a resource does not exist.
+* Write a Spring Boot API that returns HTTP 409 when a resource version conflicts with an update.
+* Write a Java HTTP client that handles non-2xx responses without losing the error body.
+* Write a Java HTTP client that configures connection and request timeouts.
+* Write a Java HTTP client that reuses connections and supports concurrent requests.
+* Write a Spring WebClient example that performs a GET request and converts the response into a Java object.
+* Write a Spring WebClient example that sends a POST request with a JSON payload.
+* Write a Spring WebClient example that handles HTTP 4xx and 5xx responses using onStatus.
+* Write a Spring WebClient example that applies a timeout to a downstream HTTP call.
+* Write a Java HTTP client that retries transient failures with exponential backoff and jitter.
+* Write a Java implementation that honors the Retry-After header when retrying HTTP 429 responses.
+* Write a Java method that classifies HTTP status codes into success, client error, and server error categories.
+* Write a Spring Boot endpoint that supports conditional GET requests using ETag.
+* Write a Spring Boot endpoint that uses If-Match to prevent concurrent updates.
+* Write a REST API test that verifies status codes, response headers, and JSON response bodies.
+* Write an integration test that verifies HTTP 401 and HTTP 403 responses for different authorization failures.
+* Write a Java program that measures HTTP request duration and records status codes.
+* Write a Java program that downloads a large file using streaming instead of loading the entire response into memory.
+* Write a Java program that uploads a file to an HTTP endpoint using multipart/form-data.
+* Write a Spring Boot endpoint that returns HTTP 202 Accepted and a job-status URL for asynchronous processing.
+* Write a Java HTTP client that propagates a correlation ID to downstream requests.
+* Write a coding solution for an idempotent payment API that prevents duplicate processing of retried HTTP requests.

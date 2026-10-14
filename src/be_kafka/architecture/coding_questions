@@ -1,0 +1,30 @@
+* Write a Java program using Spring Kafka to create a Kafka producer and publish a message.
+* Implement a Spring Boot Kafka consumer that reads messages from a specified topic.
+* Write a Java configuration class that defines Kafka producer and consumer factories.
+* Implement a Kafka producer that publishes order events using the order ID as the partition key.
+* Write a Java consumer that processes messages while preserving per-order ordering.
+* Implement a custom Kafka partitioner in Java based on a business entity identifier.
+* Write a Java program that retrieves topic metadata, including partitions and replicas, using the Kafka AdminClient.
+* Implement a Java utility that creates a topic with a configurable partition count and replication factor.
+* Write a Java program that lists topics and describes their configurations using AdminClient.
+* Implement a Java method that checks partition leader availability and identifies under-replicated partitions using available cluster metrics or administrative metadata.
+* Write a Spring Kafka consumer with manual offset acknowledgment.
+* Implement a consumer that commits offsets only after successful business processing.
+* Write a Java consumer that handles duplicate events using an idempotency key.
+* Implement a Spring Kafka error handler with bounded retries and dead-letter topic publishing.
+* Write a Java configuration that enables retry topics for recoverable processing failures.
+* Implement a Kafka producer with idempotence enabled and suitable reliability settings.
+* Write a Java example that uses Kafka transactions to publish multiple related records atomically.
+* Implement a Spring Kafka listener that processes records in batches.
+* Write a Java program that monitors consumer lag using consumer-group metadata and monitoring metrics.
+* Implement a Java utility that validates Kafka topic naming conventions before deployment.
+* Write a Java program that detects missing or incompatible event schema versions using schema-registry integration.
+* Implement a Spring Boot consumer that routes invalid messages to a dead-letter topic.
+* Write a Java integration test for a Kafka producer and consumer using an embedded or containerized Kafka test environment.
+* Implement a consumer shutdown mechanism that stops polling safely and commits eligible offsets.
+* Write a Java utility that measures producer throughput and end-to-end message processing latency.
+* Implement a Kafka consumer that supports controlled replay from a configured offset or timestamp.
+* Write a Java program that retrieves consumer-group offsets and identifies partitions with excessive lag.
+* Implement a Java service that validates event ordering using entity IDs and sequence numbers.
+* Write a Spring Boot application that combines Kafka publishing, database updates, and an outbox pattern to improve consistency.
+* Design and implement a Java-based Kafka observability module that tracks throughput, consumer lag, processing failures, retry counts, and broker health indicators.

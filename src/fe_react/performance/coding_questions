@@ -1,0 +1,30 @@
+* Write a React component that uses React.memo to prevent unnecessary re-renders.
+* Create a component that uses useMemo to cache the result of an expensive calculation.
+* Write a parent-child example using React.memo and useCallback.
+* Build a searchable list that uses useMemo to filter a large dataset.
+* Implement a debounced search input that calls an API after the user stops typing.
+* Create a throttled scroll handler using a custom React Hook.
+* Implement lazy loading for a component using React.lazy and Suspense.
+* Create a route-based code-splitting example using dynamic imports.
+* Build a paginated list that renders only the records for the current page.
+* Implement list virtualization for a large collection of items.
+* Create a component that fetches data and cancels the request when it is no longer needed.
+* Write a custom Hook that prevents outdated API responses from updating component state.
+* Build a form with many fields and optimize the rendering of individual field components.
+* Create a Context-based application and reduce unnecessary re-renders among its consumers.
+* Implement a component that uses useTransition to keep a search interface responsive.
+* Create a component that uses useDeferredValue to defer expensive filtering.
+* Build an example that compares rendering behavior before and after applying memoization.
+* Write a component that displays thousands of records with sorting and filtering.
+* Implement a custom Hook that measures component render durations using supported React profiling tools.
+* Create an example using the React Profiler component to measure rendering performance.
+* Build an image gallery that uses lazy loading and responsive image sizes.
+* Implement an infinite-scrolling list with proper request handling and cleanup.
+* Create a component that moves CPU-intensive calculations into a Web Worker.
+* Write a custom Hook that registers and cleans up event listeners without causing unnecessary re-subscriptions.
+* Build a dashboard that refreshes data periodically and cleans up its timers correctly.
+* Create a component that avoids unnecessary effects caused by unstable object dependencies.
+* Implement a component that uses useSyncExternalStore to subscribe to an external data source.
+* Configure a production build to analyze bundle size and identify large dependencies.
+* Create a performance monitoring example that records Web Vitals using an appropriate library.
+* Refactor a slow React component into smaller components and validate the performance improvement with profiling.

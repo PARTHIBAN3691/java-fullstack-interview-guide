@@ -1,0 +1,30 @@
+* Your organization's GCP bill increases by 40% in one month without a similar increase in customer traffic. How would you identify the services and projects responsible?
+* A production Compute Engine fleet has low average CPU utilization but high monthly costs. How would you rightsize the fleet without affecting availability?
+* Cloud Run costs increase after a new release even though request volume remains stable. How would you investigate instance scaling, concurrency, CPU allocation, and execution duration?
+* A development team forgets to stop non-production VMs overnight. How would you automate shutdown and prevent accidental interruption of critical workloads?
+* A team purchases committed use discounts but later migrates its workloads to another service. How would you evaluate the financial impact and improve future commitment planning?
+* A batch-processing service runs continuously but performs useful work only during certain periods. How would you reduce compute costs using scheduling, autoscaling, or Spot VMs?
+* Cloud SQL costs increase after database storage and traffic grow. How would you determine whether rightsizing, query optimization, or architectural changes offer the best savings?
+* A Cloud Spanner workload has low throughput during most of the day but requires high capacity during peak periods. How would you evaluate capacity configuration and autoscaling options?
+* A Cloud Storage bucket contains years of documents that are rarely accessed. How would you reduce storage costs without violating retention requirements?
+* Storage costs unexpectedly increase after object versioning is enabled. How would you identify version growth and configure appropriate lifecycle policies?
+* BigQuery costs increase after a new reporting dashboard is released. How would you identify expensive queries and optimize partitioning, clustering, and query patterns?
+* Cloud Logging costs rise because several Java microservices generate excessive debug logs. How would you reduce ingestion volume while preserving troubleshooting capabilities?
+* Network egress charges increase after a multi-region deployment. How would you investigate data transfer paths, regional placement, caching, and response payload sizes?
+* Several teams share a GCP project, but management cannot determine which application consumes the most resources. How would you implement cost allocation and showback?
+* A billing budget alert fires only after a large amount has already been spent. How would you improve forecasting, alert thresholds, and detection latency?
+* A cost anomaly occurs during a production incident when retry storms dramatically increase API calls. How would you control retries and limit spending while preserving recovery?
+* A Java microservice is deployed on oversized Compute Engine instances because of conservative capacity estimates. How would you benchmark the workload and select a suitable machine type?
+* Your organization wants to move a low-traffic Spring Boot service from Compute Engine to Cloud Run. How would you compare total costs, performance, and operational overhead?
+* A team proposes using Spot VMs for a critical order-processing service. How would you assess interruption risk, checkpointing, retries, and cost savings?
+* A production workload requires multi-region availability, but the proposed architecture doubles compute and database costs. How would you evaluate alternative designs?
+* Cloud SQL read replicas reduce query latency but substantially increase monthly spending. How would you determine whether the replicas provide sufficient business value?
+* A team uses expensive machine types to avoid latency issues caused by inefficient SQL queries. How would you separate infrastructure-sizing problems from application inefficiencies?
+* A cloud migration reduces server maintenance but increases network and managed-service charges. How would you perform a total-cost-of-ownership analysis?
+* An automated cleanup job is about to delete old disks and snapshots, but some belong to critical applications. How would you introduce ownership checks, retention safeguards, and approval workflows?
+* A shared GKE or Compute Engine platform has idle capacity reserved for multiple teams. How would you optimize utilization without causing resource contention?
+* Your company wants to reduce GCP spending by 20% within a quarter. How would you prioritize opportunities, establish baselines, and report verified savings?
+* A billing export reveals high costs from a service that application teams rarely use. How would you validate the data, identify the owner, and safely remove or redesign the resource?
+* An autoscaling policy reduces compute costs but causes latency spikes during sudden traffic growth. How would you balance scaling speed, minimum capacity, and cost?
+* A new application meets all performance targets but has a high cost per transaction. How would you redesign the architecture and establish measurable unit-cost goals?
+* The finance team reports a large difference between forecasted and actual cloud spending. How would you investigate workload growth, pricing changes, resource leakage, and forecast assumptions?

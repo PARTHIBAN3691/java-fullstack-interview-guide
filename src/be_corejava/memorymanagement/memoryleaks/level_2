@@ -1,0 +1,21 @@
+
+* Explain how to identify a memory leak by analyzing heap usage across multiple garbage collection cycles.
+* How would you distinguish a memory leak from a workload-related increase in object allocation?
+* Explain how dominator trees and retained-size analysis help identify leak suspects in a heap dump.
+* How would you identify the GC root retaining an unexpectedly large object graph?
+* How can class loader references prevent classes and their associated objects from being reclaimed?
+* Explain how thread pools and `ThreadLocal` values can cause memory retention across requests.
+* How can `CompletableFuture` chains or callbacks retain large objects longer than expected?
+* How can reactive streams and improperly managed subscriptions cause memory leaks?
+* How can a singleton Spring bean unintentionally retain request-scoped or session-related objects?
+* How can Hibernate persistence contexts and first-level caches contribute to excessive memory retention during batch processing?
+* How can an ORM application process millions of records without retaining all managed entities in memory?
+* How can direct byte buffers cause native memory pressure even when Java heap usage appears normal?
+* How would you distinguish Java heap exhaustion from direct memory exhaustion and native memory exhaustion?
+* How can JNI code or third-party native libraries introduce memory leaks that garbage collection cannot resolve?
+* How can soft, weak, and phantom references affect memory retention and leak diagnosis?
+* Why can finalizers or delayed cleanup mechanisms cause resource retention, and what modern alternatives should be used?
+* How would you investigate a memory leak that appears only after repeated application redeployments?
+* How would you diagnose a production memory leak when generating a heap dump could temporarily affect service availability?
+* How can allocation profiling and heap-dump analysis complement each other during leak investigation?
+* How would you design a repeatable test to verify that a suspected memory leak has been fixed?

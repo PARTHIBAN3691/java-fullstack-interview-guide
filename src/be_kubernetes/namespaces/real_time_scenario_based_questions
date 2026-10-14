@@ -1,0 +1,30 @@
+* Your Spring Boot application works in the default Namespace but fails when deployed into a new Namespace. How would you troubleshoot the configuration?
+* A Pod cannot connect to a Service in another Namespace. How would you investigate DNS resolution, Service endpoints, and NetworkPolicies?
+* A team cannot create additional Pods because its Namespace has reached its ResourceQuota. How would you identify the limit and resolve the issue safely?
+* A developer can view resources in the development Namespace but cannot access the staging Namespace. How would you troubleshoot the RBAC configuration?
+* Your production application is accidentally deployed into the development Namespace. How would you prevent this mistake in the CI/CD pipeline?
+* A Namespace remains stuck in Terminating after an application is deleted. How would you investigate finalizers and remaining resources?
+* A team reports that its Pods are being throttled even though the cluster has sufficient CPU capacity. How would you investigate Namespace quotas, container limits, and node utilization?
+* Two teams deploy Services with the same name in different Namespaces. How does Kubernetes resolve their DNS names, and how would you avoid confusion?
+* A Pod in the development Namespace can unexpectedly access a production database. How would you investigate and enforce network isolation?
+* A Secret required by a Spring Boot application exists in another Namespace, but the Pod cannot mount it. How would you resolve the issue securely?
+* A team creates hundreds of Jobs and exhausts the Namespace's Pod quota. How would you prevent recurring resource exhaustion?
+* A ResourceQuota is applied, but developers can still create workloads without specifying resource requests. How would you enforce appropriate defaults?
+* An application can resolve a Service by its fully qualified DNS name but cannot connect to it. How would you determine whether the problem is networking, endpoints, or application configuration?
+* A ClusterRoleBinding unintentionally grants a developer access across all Namespaces. How would you identify and correct the excessive permissions?
+* A NetworkPolicy blocks monitoring agents from scraping metrics in a restricted Namespace. How would you allow monitoring without opening unnecessary traffic?
+* A production Namespace is deleted accidentally, disrupting several microservices. How would you recover and prevent a recurrence?
+* A new Namespace does not receive the standard security policies and quotas used by other teams. How would you automate consistent provisioning?
+* A Helm deployment succeeds in staging but fails in production because the target Namespace does not exist. How would you make the deployment pipeline reliable?
+* A PersistentVolumeClaim remains Pending after a workload is moved to another Namespace. How would you investigate storage provisioning and namespace-scoped claims?
+* A team needs permission to restart Deployments but must not modify Secrets or RBAC resources. How would you design its Role and RoleBinding?
+* A development application cannot reach the cluster's DNS service after a default-deny egress policy is introduced. How would you correct the policy?
+* A Namespace quota allows the initial deployment but prevents a rolling update from creating temporary Pods. How would you address the capacity and quota requirements?
+* A shared monitoring Service must be accessed by workloads in multiple Namespaces. How would you configure discovery and connectivity securely?
+* A namespace provisioning controller creates the Namespace but fails to create its associated RoleBindings and ResourceQuotas. How would you design retries and reconciliation?
+* A team moves an application to a new Namespace but forgets to migrate its ConfigMaps and Secrets. How would you plan a safe migration?
+* A user can create a Pod in a restricted Namespace and attempts to gain access to sensitive node resources. Which additional security controls would you apply?
+* Multiple teams use the same cluster, and one team's workload causes resource pressure that affects others. How would you identify the tenant and limit the impact?
+* Your organization needs to apply different retention and monitoring policies to development and production Namespaces. How would you implement this consistently?
+* A Namespace deletion is blocked by a custom resource whose controller is unavailable. How would you safely diagnose and resolve the finalizer issue?
+* Your company wants hundreds of isolated application environments on a shared cluster. How would you design Namespace creation, access control, quotas, networking, monitoring, and cleanup?

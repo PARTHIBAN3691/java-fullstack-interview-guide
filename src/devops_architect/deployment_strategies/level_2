@@ -1,0 +1,30 @@
+* How would you design a deployment platform that supports rolling, blue-green, canary, shadow, and A/B deployment strategies across hundreds of microservices?
+* How would you implement progressive delivery using service-mesh traffic routing and automated metric analysis?
+* How would you design a canary analysis system that distinguishes deployment-induced regressions from normal production traffic variations?
+* How would you prevent a canary deployment from producing misleading results due to uneven traffic distribution or differences in user behavior?
+* How would you implement blue-green deployment for a stateful application that uses persistent storage and background processing?
+* How would you design a shadow deployment for a high-volume API while controlling additional infrastructure costs and downstream side effects?
+* How would you ensure that shadow traffic cannot trigger duplicate payments, emails, or other irreversible operations?
+* How would you design A/B testing for a distributed application where user sessions span multiple services?
+* How would you handle feature-flag evaluation consistently across services during a partial rollout?
+* How would you design a feature-flag platform with auditability, targeting rules, kill switches, and safe defaults?
+* How would you prevent feature-flag configuration failures from making critical application functionality unavailable?
+* How would you achieve zero-downtime deployment when application startup takes several minutes and old instances must remain available?
+* How would you deploy a breaking API change when old and new client versions must coexist for several months?
+* How would you implement expand-and-contract database migrations when both old and new application versions write to the same tables?
+* How would you handle a database migration that cannot be reversed after new data has been written?
+* How would you design rollback and roll-forward strategies for a release involving application code, schema changes, and data transformations?
+* How would you prevent an automated rollback from causing data inconsistency across dependent microservices?
+* How would you design automated rollback based on error rates, latency percentiles, saturation, and business-level metrics?
+* How would you select deployment validation thresholds that minimize false positives without allowing harmful releases?
+* How would you handle a deployment where infrastructure health checks pass but business transactions fail?
+* How would you design deployment orchestration when multiple services have dependencies and cannot be upgraded simultaneously?
+* How would you coordinate deployment strategies across regions while minimizing blast radius?
+* How would you design a release governance model that supports emergency releases without bypassing essential controls?
+* How would you enforce separation of duties, approval policies, and traceability in a regulated production environment?
+* How would you implement progressive delivery for asynchronous event-driven services with consumers processing messages from shared queues?
+* How would you handle message schema evolution during a canary rollout involving producers and consumers deployed at different times?
+* How would you design a deployment strategy for services that maintain long-lived WebSocket connections?
+* How would you prevent connection draining and load-balancer behavior from causing request failures during rolling deployments?
+* How would you design a safe release strategy for machine-learning models where application code and model versions change independently?
+* How would you evaluate deployment strategies using reliability, infrastructure cost, recovery time, and customer impact?

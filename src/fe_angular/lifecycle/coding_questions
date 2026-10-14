@@ -1,0 +1,30 @@
+* Create an Angular component that logs each lifecycle hook in execution order.
+* Write a component that initializes data in ngOnInit().
+* Implement ngOnChanges() to detect changes to an input property.
+* Write a component that compares previous and current input values using SimpleChanges.
+* Create a child component that reacts when its parent's input data changes.
+* Implement a component using ngDoCheck() to detect a custom change in an object.
+* Write a component that accesses an element using @ViewChild() after view initialization.
+* Implement @ContentChild() to access projected content after content initialization.
+* Write a component that subscribes to an Observable and unsubscribes in ngOnDestroy().
+* Implement takeUntilDestroyed() to automatically clean up an Observable subscription.
+* Write a component that uses DestroyRef to release resources when it is destroyed.
+* Implement a component that creates and cleans up a timer during its lifecycle.
+* Write code that adds a browser event listener and removes it when the component is destroyed.
+* Create a component that loads data from an API during initialization and handles errors.
+* Implement logic that prevents duplicate API calls during component initialization.
+* Write a component that refreshes its data when an Angular route parameter changes without recreating the component.
+* Implement a dynamic component using ViewContainerRef and destroy it correctly.
+* Write code that uses ChangeDetectorRef to handle a specific manual change-detection scenario.
+* Implement an OnPush component that updates correctly when its input data changes.
+* Write a component that uses signals and an effect with appropriate cleanup logic.
+* Implement afterNextRender() to perform DOM-related work after rendering.
+* Write an example that distinguishes ngAfterViewInit() from afterNextRender().
+* Implement a component that safely handles browser-only APIs in an SSR-compatible application.
+* Write a unit test that verifies ngOnInit() is called during component initialization.
+* Write a unit test that verifies ngOnChanges() responds to updated input values.
+* Write a unit test that verifies ngOnDestroy() performs cleanup.
+* Test that a component unsubscribes from an Observable when destroyed.
+* Write a test that verifies a child component receives and processes updated input data.
+* Implement a test that detects unintended component recreation during route navigation.
+* Create a complete example demonstrating input changes, view initialization, API subscription cleanup, and component destruction.

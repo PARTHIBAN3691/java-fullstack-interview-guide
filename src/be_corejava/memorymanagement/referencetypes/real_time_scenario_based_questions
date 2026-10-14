@@ -1,0 +1,21 @@
+
+* An application maintains a cache using `SoftReference`, but its hit rate drops unexpectedly under memory pressure. How would you redesign the cache?
+* A listener registry causes a memory leak because registered listeners are never removed. How could weak references help, and what trade-offs would you consider?
+* A `WeakHashMap` contains fewer entries after garbage collection than expected. How would you investigate the behavior?
+* A developer uses a `WeakHashMap` for caching, but the map entries never disappear because the values reference their keys. How would you identify and fix the problem?
+* A long-running application stores many `WeakReference` objects in a list. How could the reference wrappers themselves cause memory growth?
+* A cache uses weak references, but objects disappear before subsequent requests can reuse them. How would you address the requirement?
+* A Java application needs to observe when objects become weakly reachable. How would you use `ReferenceQueue` to implement this?
+* A native library allocates resources that must be released after the associated Java object is no longer reachable. How would you design a cleanup mechanism using phantom references?
+* A team proposes replacing `try-with-resources` with phantom-reference-based cleanup for database connections. What risks would you explain?
+* A weak-reference-based event system sometimes fails to notify listeners because no other strong reference retains them. How would you fix the design?
+* An application experiences unpredictable memory reclamation after introducing soft references. How would you investigate whether reference processing is affecting performance?
+* A resource wrapper uses native memory and may become unreachable before a native operation finishes. How could `Reference.reachabilityFence()` help?
+* A developer expects `WeakReference.get()` to return `null` immediately after calling `System.gc()`. How would you explain the incorrect assumption?
+* A cache retains large objects even though it uses weak references. What additional reference paths would you investigate?
+* A background cleanup thread processes a `ReferenceQueue` but falls behind under heavy load. How would you make cleanup reliable without retaining objects unnecessarily?
+* An application stores weak references to user sessions, but sessions disappear while users are still active. What design issue might be responsible?
+* A monitoring tool needs to associate metadata with objects without keeping those objects alive. Which reference strategy would you choose?
+* A service uses a weak-reference map for canonicalizing objects. How would you evaluate whether the design is correct and beneficial?
+* After introducing weak references, an application still shows increasing heap usage. How would you distinguish retained reference wrappers from retained application objects?
+* You need to implement resource cleanup that is safe even when garbage collection is delayed. Which primary cleanup strategy would you recommend, and where might reference types provide supplementary support?

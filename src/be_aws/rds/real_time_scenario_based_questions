@@ -1,0 +1,20 @@
+* A Spring Boot application deployed on EC2 cannot connect to an RDS database. How would you troubleshoot the JDBC URL, DNS resolution, routing, security groups, credentials, and database status?
+* A production application starts returning database connection timeout errors after a traffic spike. How would you identify whether the issue is connection pooling, network latency, or RDS capacity?
+* An RDS instance fails over during peak traffic, and the Java application begins returning SQL exceptions. How would you restore connectivity and prevent repeated failures?
+* A Java application uses HikariCP, but the RDS database reports too many connections. How would you calculate and configure an appropriate pool size?
+* Database reads are slow, but writes perform normally. How would you determine whether a read replica, indexing changes, or query optimization would help?
+* A reporting workload consumes most of the database resources and affects transactional APIs. How would you isolate the reporting workload from the primary application?
+* A company needs high availability but also wants to scale read traffic. How would you combine Multi-AZ deployment and read replicas?
+* A Spring Boot application stores database credentials in a properties file committed to Git. How would you migrate to secure credential management?
+* A database password is rotated, but application instances continue using the old password. How would you implement credential refresh and connection-pool recovery?
+* An RDS database reaches 95% storage utilization. How would you prevent an outage and determine whether storage autoscaling is sufficient?
+* CloudWatch shows high database CPU utilization and increasing query latency. How would you identify expensive queries and determine whether to scale the instance?
+* A new application release introduces a schema change that is incompatible with the previous application version. How would you plan a safe deployment and rollback?
+* A production database was accidentally deleted. How would you recover it using available snapshots, backups, and point-in-time recovery?
+* An application must comply with strict data-security requirements. How would you configure private networking, KMS encryption, TLS, IAM authentication where supported, and auditing?
+* A Lambda-based Java service creates too many concurrent database connections during an event spike. How would you use RDS Proxy and concurrency controls?
+* A company wants to migrate its on-premises PostgreSQL database to RDS with minimal downtime. How would you plan the migration and cutover?
+* A read replica has significant replication lag. How would you investigate the cause and protect the application from stale reads?
+* A database upgrade must happen without a prolonged outage. How would you plan compatibility testing, backups, replica promotion where appropriate, and failover?
+* A cross-Region disaster recovery exercise shows that recovery takes longer than expected. How would you improve replication, failover procedures, and application configuration?
+* RDS costs have increased significantly over three months. How would you investigate instance sizing, storage, I/O, backups, replicas, and idle resources?

@@ -1,0 +1,30 @@
+* A POST request successfully creates a customer, but the API returns HTTP 200. Would you change the status code, and why?
+* A DELETE request succeeds, but the controller returns HTTP 204 with a response body. How would you correct it?
+* A client receives HTTP 401 even though its access token is valid. How would you investigate the issue?
+* A user is authenticated but lacks permission to access a resource. Which status code should the API return?
+* Your API returns HTTP 500 whenever request validation fails. How would you fix the exception-handling strategy?
+* A client submits a customer record with an email address that already exists. Which status code would you return and why?
+* Two clients update the same account simultaneously, and one update fails because the version has changed. Which status code should be returned?
+* A client sends an unsupported Content-Type, and the API responds with HTTP 500. How would you correct the behavior?
+* A request uses an unsupported HTTP method, but the API returns HTTP 400. How would you diagnose and fix it?
+* Your API gateway returns HTTP 502 when a downstream service returns HTTP 400. How would you determine the correct status-code mapping?
+* A downstream service is temporarily unavailable, but your API returns HTTP 404. How would you redesign the error mapping?
+* A report-generation request is accepted for background processing. Which status code and response structure would you use?
+* A background job is accepted successfully but fails several minutes later. How should the client discover the failure?
+* A rate-limited client keeps retrying immediately after receiving HTTP 429. How would you communicate the retry interval?
+* Your service is overloaded and rejects requests temporarily. When would HTTP 503 be more appropriate than HTTP 429?
+* A downstream service does not respond before the configured timeout. How would you distinguish HTTP 504 from HTTP 503?
+* A client sends an expired ETag in an If-Match request. Which status code should the API return?
+* A client requests a resource that has been permanently moved to another URI. How would you communicate the change?
+* A client requests a cached resource whose representation has not changed. How would you use HTTP 304?
+* A mobile application depends on HTTP 200 for all responses and checks an error field in the body. How would you improve the API contract without abruptly breaking the client?
+* An API returns HTTP 200 even when a payment fails due to insufficient funds. How would you represent the outcome correctly?
+* A payment request times out, and the client does not know whether the payment was processed. How would you handle the status code and prevent duplicate processing?
+* Your API returns HTTP 403 for nonexistent resources, revealing inconsistent behavior between endpoints. How would you address the security concern?
+* A client receives HTTP 422 for malformed JSON and HTTP 400 for a valid JSON request that violates a business rule. How would you standardize the behavior?
+* A microservice returns HTTP 200 with an error message in its response body. How should the consuming service interpret and handle this response?
+* Your monitoring shows a sudden increase in HTTP 5xx responses after deployment. How would you identify whether the problem is in the application or its dependencies?
+* An API returns HTTP 202 but provides no way to check the operation's status. How would you redesign the endpoint?
+* A client receives HTTP 503 during a database maintenance window. What response headers and retry behavior would you consider?
+* A REST API uses HTTP 404 for every exception to hide implementation details. What problems can this cause, and how would you improve it?
+* Multiple teams return different status codes for the same business error. How would you establish and enforce a common convention?

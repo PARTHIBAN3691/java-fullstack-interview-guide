@@ -1,0 +1,30 @@
+* A Java application maintains a frequently updated sequence of tasks. How would you decide whether a linked list is more suitable than an ArrayList?
+* A music player must support next, previous, and repeat operations. How would you design its playlist using a linked list?
+* A browser must maintain navigation history and support moving backward and forward. Which linked list structure would you choose?
+* A caching service must remove the least recently used entry in O(1) time. How would you combine a HashMap and a doubly linked list?
+* A job-processing service frequently inserts and removes tasks from both ends of a queue. How would you implement the queue efficiently?
+* A linked list processing method becomes slow when finding elements by index. How would you explain the performance issue and improve the design?
+* A production service occasionally encounters an infinite loop while traversing a linked list. How would you identify and diagnose a cycle?
+* A data structure has a cycle, and the application needs to find where the cycle begins. How would you solve it without using extra memory?
+* A Java application must remove a node from a linked list, but only the node reference is available. What limitations should be considered?
+* A data pipeline receives two sorted linked lists and must combine them into one sorted list without allocating additional nodes. How would you implement it?
+* A large linked list must be sorted while using limited memory. Which sorting algorithm would you choose and why?
+* A financial application stores large integers as linked lists and needs to add them efficiently. How would you handle carry propagation?
+* A text-processing application needs to check whether a sequence represented as a linked list is a palindrome. How would you do this with O(1) extra space?
+* A system must find the kth element from the end of a linked list in a single traversal. How would you implement it?
+* A data structure contains duplicate values, and duplicates must be removed without additional storage. How would you solve the problem?
+* A custom linked list occasionally loses nodes after deletion operations. How would you inspect pointer updates and identify the bug?
+* A doubly linked list has inconsistent previous and next references after several operations. How would you verify and restore its invariants?
+* A service must rotate a linked list by a very large K value. How would you optimize the operation?
+* A network packet-processing system must reorder nodes in groups of K without changing their values. How would you perform the transformation?
+* A system must combine thousands of sorted linked lists with minimal processing overhead. How would you select an efficient merging strategy?
+* A linked list contains nodes with random pointers that reference arbitrary nodes in the same list. How would you clone it without retaining references to the original list?
+* A Java service uses a linked list as a cache but experiences high memory usage and garbage-collection pressure. How would you investigate and optimize it?
+* A real-time application needs constant-time insertion and deletion when it already has a node reference. Which linked list design would you use?
+* A collaborative application requires safe iteration while other threads modify a linked list. What synchronization or alternative data structure would you consider?
+* A scheduler needs to maintain a circular sequence of workers and repeatedly move to the next worker. How would a circular linked list help?
+* A service must split a circular linked list evenly between two processing workers. How would you handle odd and even list lengths?
+* A Java application uses recursive linked list reversal and crashes on extremely large inputs. How would you redesign the algorithm?
+* A backend API accepts linked list values and performs reversal, merging, and cycle detection. How would you validate inputs and test edge cases?
+* A code review reveals that a linked list operation unexpectedly uses O(n²) time. How would you identify the repeated traversals and optimize it?
+* A team is deciding between a custom linked list and Java's ArrayDeque for a high-throughput queue. What performance and memory factors would you evaluate?

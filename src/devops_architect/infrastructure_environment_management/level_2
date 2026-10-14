@@ -1,0 +1,105 @@
+
+**Development Environment**
+* Design a reproducible developer workstation setup for a large Java, Angular, and microservices codebase with dozens of dependencies.
+* How would you build a development environment that supports offline work while maintaining dependency integrity?
+* How would you prevent differences in JDK, Node.js, package managers, and build-tool versions from causing inconsistent results?
+* How would you migrate a team from individually configured laptops to standardized container-based development environments?
+* How would you diagnose a defect caused by operating-system differences, native libraries, or filesystem behavior?
+
+**QA Environment**
+* Design a multi-tenant QA platform that supports concurrent regression, integration, performance, and security testing.
+* How would you isolate test workloads while sharing expensive infrastructure safely?
+* How would you guarantee that test results are reproducible when dependent services and test data change frequently?
+* How would you design environment capacity allocation and scheduling for competing teams?
+* How would you prevent test-environment instability from producing false-positive release failures?
+
+**UAT Environment**
+* Design a controlled UAT release process where business sign-off, test evidence, and artifact identity must be auditable.
+* How would you manage a UAT environment when multiple release candidates require independent validation?
+* How would you preserve UAT evidence and configuration history after the environment is refreshed?
+* How would you handle a production-critical fix that must bypass a lengthy UAT cycle without compromising governance?
+* How would you design masked or synthetic data provisioning that preserves important data relationships and business scenarios?
+
+**Staging Environment**
+* Design a staging architecture for microservices with dependencies on external systems, Kafka, databases, and third-party APIs.
+* How would you validate production-like load, autoscaling, failover, and resilience when staging capacity is constrained?
+* How would you test backward-compatible database migrations across multiple application versions?
+* How would you keep staging stable while multiple teams deploy continuously?
+* How would you determine whether a production defect is caused by environment differences, configuration, data, or application code?
+
+**Production Environment**
+* Design a deployment architecture that supports canary releases, progressive delivery, automated rollback, and approval controls.
+* How would you separate duties across infrastructure provisioning, application deployment, and production incident response?
+* How would you implement regional isolation and disaster recovery without allowing configuration drift between regions?
+* How would you enforce immutable infrastructure while supporting emergency production remediation?
+* How would you establish evidence that a production release matches the approved source revision, artifact digest, configuration, and infrastructure state?
+
+**Environment Isolation**
+* Design an environment-isolation strategy for a regulated organization with many teams, shared cloud accounts, and sensitive data.
+* How would you evaluate namespace isolation against separate clusters and separate cloud accounts for hostile or high-risk workloads?
+* How would you prevent cross-environment privilege escalation through CI/CD identities, cloud roles, Kubernetes service accounts, or secrets?
+* How would you design network segmentation that still permits controlled access to shared observability and artifact services?
+* How would you test that environment isolation controls cannot be bypassed by compromised developer credentials?
+
+**Environment Promotion**
+* Design a promotion pipeline that guarantees artifact immutability, provenance, policy compliance, and environment-specific configuration.
+* How would you coordinate promotion of multiple interdependent microservices when compatibility must be preserved?
+* How would you handle a release that is approved in UAT but becomes invalid after a critical vulnerability is discovered?
+* How would you support progressive production promotion across regions with explicit stop and rollback criteria?
+* How would you design a release ledger that captures artifact digests, source commits, test evidence, approvals, configuration revisions, and deployment outcomes?
+
+**Configuration Separation**
+* Design a configuration-management model for hundreds of services across multiple regions and environments.
+* How would you handle secret rotation without causing application downtime or inconsistent credentials across services?
+* How would you prevent configuration drift when application settings are managed by both GitOps and an external configuration service?
+* How would you roll out a feature flag or configuration change safely when application versions have different configuration schemas?
+* How would you detect and recover from configuration changes that are syntactically valid but semantically incorrect?
+
+**Infrastructure Consistency**
+* Design reusable IaC modules that allow environment-specific scaling while enforcing mandatory security and networking controls.
+* How would you safely refactor Terraform state and module structures across many existing environments?
+* How would you prevent concurrent infrastructure changes from creating race conditions or inconsistent state?
+* How would you design policy-as-code checks that reject insecure infrastructure changes before deployment?
+* How would you reconcile infrastructure resources managed partly by Terraform and partly by cloud-native controllers?
+
+**Ephemeral Environments**
+* Design an ephemeral environment platform for hundreds of pull requests with automated quotas, expiry, cleanup, and cost attribution.
+* How would you decide which dependencies should be provisioned per environment and which should be shared?
+* How would you support realistic integration testing when dependencies include stateful services and external vendors?
+* How would you prevent a malicious pull request from using ephemeral infrastructure to access production resources or exfiltrate secrets?
+* How would you ensure that cleanup is reliable when the provisioning controller, CI pipeline, or cloud API is unavailable?
+
+**Preview Environments**
+* Design a secure preview-environment architecture that supports public-facing frontend previews and private backend dependencies.
+* How would you prevent preview deployments from exposing unreleased functionality or sensitive application data?
+* How would you manage database schema compatibility when multiple preview environments use different feature branches?
+* How would you scale preview-environment creation and teardown without overwhelming Kubernetes API servers or cloud quotas?
+* How would you make preview environments representative enough for meaningful validation without duplicating the full production stack?
+
+**Environment Provisioning**
+* Design an environment-provisioning control plane with declarative requests, asynchronous reconciliation, retries, and status reporting.
+* How would you model environment dependencies as a directed acyclic graph and recover when an intermediate provisioning step fails?
+* How would you enforce tenant quotas, approved templates, cost limits, and security policies in a self-service provisioning platform?
+* How would you make provisioning idempotent across concurrent requests and repeated reconciliation?
+* How would you handle partial success when infrastructure exists but application deployment or identity configuration fails?
+
+**Environment Teardown**
+* Design a teardown controller that reliably deletes dependent resources in the correct order while preserving audit records.
+* How would you protect production resources from accidental deletion caused by incorrect selectors, labels, or ownership references?
+* How would you handle resources that have deletion protection, finalizers, retained storage, or dependencies outside the cloud account?
+* How would you design orphan detection and garbage collection for resources whose parent environment record has disappeared?
+* How would you make teardown safe during controller crashes, network partitions, and repeated deletion requests?
+
+**Infrastructure Drift**
+* Design a continuous drift-detection system that distinguishes approved manual changes, emergency remediation, unauthorized changes, and provider-managed defaults.
+* How would you reconcile drift across thousands of resources without overwhelming cloud APIs or creating destructive plans?
+* How would you prevent GitOps reconciliation and Terraform automation from fighting over the same resources?
+* How would you build a drift-remediation workflow with risk scoring, change approval, automatic repair, and audit evidence?
+* How would you detect drift in runtime settings that are not fully represented in declarative infrastructure definitions?
+
+**Production Parity**
+* Design a strategy for achieving meaningful production parity across Kubernetes, networking, databases, message brokers, identity, and observability.
+* How would you validate production behavior when cost constraints prevent matching production-scale hardware and traffic?
+* How would you reproduce rare production failures involving concurrency, regional latency, resource pressure, or dependency degradation?
+* How would you use production telemetry and sanitized traffic replay to improve lower-environment fidelity while protecting sensitive data?
+* How would you measure production parity and prioritize gaps that pose the greatest release risk?

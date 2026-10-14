@@ -1,0 +1,30 @@
+* Design a distributed Java application that uses Singleton-like shared services without assuming a single instance across multiple JVMs.
+* Design a highly concurrent configuration service and determine whether Singleton is appropriate or container-managed lifecycle is preferable.
+* Design an extensible payment platform using Factory Method and Strategy that supports new providers without modifying existing business logic.
+* Design an Abstract Factory for multiple banking providers with different authentication, transaction, and reconciliation APIs.
+* Design a staged Builder that prevents the creation of invalid payment requests at compile time.
+* Design a Prototype registry for versioned document templates while preserving deep-copy correctness and object identity.
+* Design a pricing engine that combines Strategy, Factory, and Chain of Responsibility for discounts, taxes, and eligibility rules.
+* Design an event-driven notification platform using Observer concepts, asynchronous processing, retries, and idempotent consumers.
+* Design a Command framework for financial operations that supports durable execution, retries, cancellation, and auditability.
+* Design a loan approval workflow using Chain of Responsibility and State while handling parallel approvals and invalid transitions.
+* Design a report generation framework using Template Method and Strategy without creating a rigid inheritance hierarchy.
+* Design a database iterator that streams millions of records using bounded memory and safely releases database resources.
+* Design a Mediator for an enterprise workflow without turning it into a centralized God Object.
+* Design a Memento-based versioning system for large documents while minimizing snapshot storage and protecting sensitive data.
+* Design a Visitor-based compliance reporting system and evaluate its suitability when new domain types are frequently introduced.
+* Design a secure business-rule Interpreter that supports expressions, variables, operator precedence, validation, and execution limits.
+* Design an Adapter layer that normalizes multiple payment provider APIs and maps provider-specific errors to domain exceptions.
+* Design a Decorator architecture that adds metrics, tracing, retries, caching, and timeouts while avoiding duplicate payment operations.
+* Design a checkout Facade that coordinates distributed services and handles partial failures using compensating actions.
+* Design a Proxy layer that combines authorization, caching, audit logging, and rate limiting for remote service calls.
+* Design a Composite organizational model that supports recursive calculations, access control, and large hierarchies.
+* Design a Bridge architecture that allows independent evolution of notification types, delivery providers, and delivery policies.
+* Design a thread-safe Flyweight factory for a high-volume simulation while separating shared immutable data from per-request state.
+* Design a Spring Boot payment system combining Dependency Injection, Factory, Strategy, Repository, and transactional processing.
+* Design a repository architecture for a multi-tenant banking application with tenant isolation and optimized query execution.
+* Design a DTO and mapping strategy for multiple API versions while preserving backward compatibility and avoiding excessive mapping overhead.
+* Design a layered enterprise application that separates MVC, Service Layer, Repository, and domain responsibilities.
+* Design a reliable account-transfer workflow using Unit of Work, transaction boundaries, idempotency, and concurrency control.
+* Design an extensible Java application that combines multiple GoF and enterprise patterns while minimizing unnecessary abstractions.
+* Evaluate the maintainability, performance, security, and testing trade-offs of design patterns in a large-scale financial application.

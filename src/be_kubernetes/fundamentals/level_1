@@ -1,0 +1,30 @@
+* How do you deploy a Spring Boot application to a Kubernetes cluster?
+* What happens internally when you create a Deployment using kubectl apply?
+* How does Kubernetes maintain the desired number of application replicas?
+* How do Pods communicate with each other within a Kubernetes cluster?
+* How does service discovery work in Kubernetes?
+* How do you expose a Java application outside a Kubernetes cluster?
+* What is the difference between a Deployment, StatefulSet, and DaemonSet?
+* When would you use a Job or CronJob instead of a Deployment?
+* How do you configure environment-specific properties for a Spring Boot application?
+* How do ConfigMaps and Secrets differ?
+* How does Kubernetes perform health checks on application containers?
+* What is the difference between readiness, liveness, and startup probes?
+* How do resource requests and limits affect Pod scheduling and execution?
+* How do you scale an application manually in Kubernetes?
+* What is Horizontal Pod Autoscaling, and how does it work?
+* What is the role of Ingress in Kubernetes?
+* How do PersistentVolumes and PersistentVolumeClaims work?
+* How does Kubernetes handle a container that crashes repeatedly?
+* What is the difference between a Pod restart and a Deployment rollout?
+* How do you troubleshoot a Pod in Pending state?
+* What is the difference between CrashLoopBackOff and ImagePullBackOff?
+* How do you manage application configuration across development, staging, and production?
+* How do rolling updates and rollbacks work in Kubernetes?
+* How do you restrict communication between Pods using NetworkPolicies?
+* What is a ServiceAccount, and when would an application need one?
+* How do Kubernetes namespaces help isolate application environments?
+* How do you monitor CPU and memory usage for Kubernetes workloads?
+* How do you retrieve application logs from a running Pod?
+* How does Kubernetes handle traffic when a Pod becomes unready?
+* How do you secure sensitive configuration used by a Spring Boot application?

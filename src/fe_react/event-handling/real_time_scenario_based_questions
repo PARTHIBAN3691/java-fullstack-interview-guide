@@ -1,0 +1,30 @@
+* A button click triggers an API request twice. How would you identify and fix the issue?
+* Clicking a child element also triggers the parent's click handler. How would you prevent this behavior?
+* A form submission refreshes the page unexpectedly. How would you fix it?
+* A search input sends an API request on every keystroke. How would you reduce unnecessary requests?
+* A dropdown should close when the user clicks outside it. How would you implement this behavior?
+* A keyboard shortcut works multiple times after navigating between pages. How would you debug duplicate event listeners?
+* A component's event handler uses outdated state values. How would you fix the stale closure problem?
+* A child component re-renders whenever its parent renders because the callback reference changes. How would you optimize it?
+* A user rapidly clicks the Submit button and creates duplicate records. How would you prevent duplicate submissions?
+* A click handler works on a regular element but behaves differently inside a React portal. How would you investigate it?
+* A native DOM listener and a React event handler both execute for the same interaction. How would you understand their propagation order?
+* A modal should close when Escape is pressed but remain open when other keys are pressed. How would you implement this?
+* A custom input component does not respond correctly to keyboard events. How would you debug the issue?
+* A long list has expensive click handlers and becomes slow during interaction. How would you improve performance?
+* A drag-and-drop interface behaves inconsistently on touchscreens and desktop browsers. How would you handle the events?
+* A component adds a window event listener but forgets to remove it. What problems can occur, and how would you fix them?
+* A checkbox updates the UI incorrectly because the event handler uses the wrong value. How would you debug it?
+* A nested menu closes before the user can click a submenu item. How would you investigate event propagation?
+* A React component must support copy-and-paste operations with validation. Which events would you use?
+* A dashboard needs global keyboard shortcuts that work only when a particular modal is open. How would you design the event handling?
+* A button's onClick prop is accidentally assigned the result of a function call. What happens, and how would you correct it?
+* A reusable table component needs row-click behavior and independent action buttons inside each row. How would you avoid unwanted event bubbling?
+* A form must validate fields on blur and submit. How would you coordinate the event handlers?
+* An asynchronous click handler fails, but the error is not displayed by the Error Boundary. Why, and how would you handle the failure?
+* A scroll handler causes excessive rendering while the user scrolls a page. How would you optimize it?
+* A component's event listener continues running after the component is removed. How would you identify the leak?
+* A user presses Enter in a form and accidentally triggers the wrong action. How would you fix the keyboard interaction?
+* A third-party library attaches native event listeners that conflict with React handlers. How would you debug and resolve the conflict?
+* A multi-step form must prevent navigation while required fields are invalid. How would you implement the event handling?
+* How would you test a component where clicking a parent, child, and action button produces different behaviors?

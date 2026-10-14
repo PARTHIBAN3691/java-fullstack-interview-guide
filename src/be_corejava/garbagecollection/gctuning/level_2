@@ -1,0 +1,20 @@
+* How would you develop a systematic GC tuning strategy for a Java application with high throughput and strict latency requirements?
+* How do you determine the optimal heap size using live-set size, allocation rate, and GC pause metrics?
+* How would you tune G1 GC when concurrent marking cannot finish before the heap runs out of available space?
+* How would you investigate repeated evacuation failures and Full GC events in G1 GC?
+* How would you tune G1 GC when pause times exceed the configured `MaxGCPauseMillis` target?
+* How do you balance the number of GC worker threads against application thread throughput?
+* How can excessive concurrent GC activity increase CPU utilization and reduce application throughput?
+* How would you tune garbage collection for a large heap with a high live-data footprint?
+* How would you investigate high GC overhead when post-GC heap occupancy remains relatively low?
+* How would you identify and reduce allocation hotspots using Java Flight Recorder and GC logs?
+* How do you evaluate whether a memory leak or high object retention is limiting the effectiveness of GC tuning?
+* How would you tune garbage collection in a container where CPU and memory resources are restricted?
+* How do CPU quotas and container memory limits influence garbage collector behavior?
+* How would you compare G1 GC, Parallel GC, ZGC, and Shenandoah for a latency-sensitive workload?
+* How do you decide whether a workload would benefit from switching from G1 GC to ZGC?
+* How would you investigate a case where increasing heap size reduces GC frequency but worsens tail latency?
+* How do humongous allocations and remembered-set processing influence G1 GC tuning decisions?
+* How would you tune garbage collection when the application has a high promotion rate from young to old generation?
+* How would you design a controlled benchmark to compare multiple GC configurations reliably?
+* How would you distinguish a GC tuning problem from lock contention, database latency, or slow external services?

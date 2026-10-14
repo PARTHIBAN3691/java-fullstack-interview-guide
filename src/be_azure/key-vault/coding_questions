@@ -1,0 +1,30 @@
+* Write a Java program using the Azure SDK to retrieve a secret from Azure Key Vault.
+* Write a Java program that creates a SecretClient using DefaultAzureCredential.
+* Write a Java program that retrieves a specific version of a Key Vault secret.
+* Write a Spring Boot service that retrieves database credentials from Azure Key Vault.
+* Write a Spring Boot configuration that integrates Azure Key Vault using Spring Cloud Azure.
+* Write a Java program that authenticates to Key Vault using a managed identity.
+* Write a Java program that uses a user-assigned managed identity to access Key Vault.
+* Write a Java implementation that handles Key Vault authentication and authorization exceptions separately.
+* Write a Java method that retrieves a secret with timeout and retry handling for transient failures.
+* Write a Spring Boot component that caches a secret with a configurable time-to-live.
+* Write a Java implementation that refreshes cached secrets after a rotation interval.
+* Write a Spring Boot service that detects an expired or unavailable secret and reports a meaningful health status.
+* Write a Java program that retrieves a certificate from Azure Key Vault using the Azure SDK.
+* Write a Java program that uses a Key Vault key for a supported cryptographic operation without exporting the key material.
+* Write a Java implementation of envelope encryption using a data-encryption key and a Key Vault-managed key.
+* Write a Spring Boot application that loads environment-specific secrets from separate Key Vault instances.
+* Write a Java implementation that prevents secret values from being written to application logs.
+* Write unit tests for a Key Vault service that cover successful retrieval, missing secrets, authorization errors, and transient failures.
+* Write integration tests that verify a deployed Java application can access Key Vault using managed identity.
+* Write a Java program that lists secret metadata without printing the secret values.
+* Write a Java implementation that detects an upcoming secret expiration and triggers an alert.
+* Write a Spring Boot service that supports credential rotation without requiring a full application restart.
+* Write a Java implementation that handles Key Vault throttling using exponential backoff and jitter.
+* Write a Java program that validates the expected format of a retrieved database connection string before using it.
+* Write a Terraform or Bicep configuration that creates a Key Vault with RBAC authorization, soft delete, and purge protection.
+* Write an Azure DevOps YAML pipeline that retrieves a Key Vault secret securely without printing it to pipeline logs.
+* Write a Java application configuration that uses environment variables for non-secret settings and Key Vault for sensitive values.
+* Write a Java implementation that validates access to Key Vault during application readiness checks without exposing secret contents.
+* Write a test case that verifies a Spring Boot application does not continue using a stale credential after secret rotation.
+* Write a Java service that records secret-access outcomes and correlation IDs without logging sensitive values.

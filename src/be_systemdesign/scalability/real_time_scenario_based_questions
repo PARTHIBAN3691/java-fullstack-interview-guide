@@ -1,0 +1,30 @@
+* Your e-commerce application receives ten times its normal traffic during a festival sale. How would you scale the system without downtime?
+* Your Spring Boot application runs on multiple instances, but users lose their sessions when requests reach different servers. How would you solve this?
+* Application servers scale automatically, but the database becomes the bottleneck. What changes would you make to the architecture?
+* Your application handles a high read volume but relatively few writes. How would you reduce database load and improve response times?
+* A product becomes extremely popular, causing one database shard to receive most of the traffic. How would you resolve the hot-shard problem?
+* Your message queue backlog grows continuously even after increasing the number of consumers. How would you investigate and improve throughput?
+* A Java application experiences thread exhaustion during peak traffic. How would you identify the cause and scale it safely?
+* Your application has high CPU utilization but low request throughput. What would you investigate before adding more servers?
+* A service scales horizontally, but performance does not improve because every request calls the same downstream API. How would you redesign the dependency?
+* Your cache reduces database reads, but a sudden expiration of popular keys overloads the database. How would you prevent a cache stampede?
+* Your application requires globally distributed users to receive low-latency responses. How would you design regional deployments and data access?
+* A large database table has billions of records, and query performance degrades as the data grows. How would you scale the data layer?
+* Your API experiences sudden traffic spikes that overwhelm downstream services. How would you implement backpressure and load shedding?
+* Your application uses a shared database connection pool, and increasing server instances causes connection exhaustion. How would you address it?
+* Your team needs to support a growing number of tenants with highly variable traffic. How would you isolate and allocate resources fairly?
+* A Kafka topic has insufficient partitions to utilize all consumer instances. How would you improve processing scalability?
+* Increasing Kafka partitions improves throughput but breaks assumptions about message ordering. How would you redesign the processing strategy?
+* Your distributed rate limiter becomes a bottleneck because every request requires a centralized lookup. How would you scale it?
+* Your file-processing service must handle millions of large files daily. How would you design storage, processing, and asynchronous workflows?
+* Your system performs a large aggregation across multiple database shards for every dashboard request. How would you improve scalability?
+* A new feature introduces expensive database queries and slows down unrelated API endpoints. How would you isolate the workload?
+* Your application experiences long garbage collection pauses during high traffic. How would you investigate JVM behavior and determine whether scaling or tuning is needed?
+* Your auto-scaling policy adds servers only after response times have already degraded. How would you improve the scaling policy?
+* A scheduled job executes on every application instance after horizontal scaling, causing duplicate processing. How would you ensure single execution or safe coordination?
+* Your application needs to support both transactional APIs and heavy analytical reporting. How would you scale the two workloads independently?
+* A downstream service has strict rate limits, but your application traffic continues to grow. How would you protect the dependency while maintaining acceptable user experience?
+* Your multi-region deployment generates excessive cross-region database traffic. How would you reduce network cost and latency?
+* Your system meets its throughput target but fails its p99 latency objective during peak load. How would you identify and resolve the bottleneck?
+* Infrastructure costs increase rapidly as traffic grows, even though CPU utilization remains low. How would you investigate resource inefficiency?
+* You must design a scalable payment platform that supports high transaction volume, strict correctness, and reliable recovery. What architectural decisions would you prioritize?

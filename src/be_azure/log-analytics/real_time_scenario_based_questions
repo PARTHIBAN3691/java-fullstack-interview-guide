@@ -1,0 +1,30 @@
+* A Java Spring Boot API hosted on Azure App Service is returning HTTP 500 errors, but the application dashboard shows no obvious issue; how would you investigate using Log Analytics?
+* Application logs have stopped appearing in the workspace after a deployment; how would you identify the root cause?
+* Logs from one production subscription are missing, while logs from other subscriptions are arriving normally; how would you troubleshoot the issue?
+* A Java microservice has high response times, but CPU and memory metrics look normal; how would you use Log Analytics to investigate?
+* A production application generates thousands of exceptions within a few minutes; how would you identify the primary failure and its impact?
+* An alert for application errors is firing repeatedly even though the service is healthy; how would you investigate and correct the alert configuration?
+* Log Analytics query costs have increased significantly after a new application release; how would you identify the expensive queries and reduce costs?
+* A KQL query that previously completed in seconds now takes several minutes; how would you troubleshoot and optimize it?
+* An Azure resource has diagnostic settings configured, but no resource logs are visible; what would you verify?
+* A Spring Boot application is writing logs to its local filesystem, but those logs are not available in Azure Monitor; how would you design the collection pipeline?
+* A distributed transaction passes through four Java microservices, and one service intermittently fails; how would you correlate the logs to identify the failing component?
+* Users report intermittent API timeouts, but the errors disappear before developers can reproduce them; how would you use queries and alerts to capture the issue?
+* Application Insights shows failed requests, but the corresponding exception details are missing; how would you investigate the telemetry configuration?
+* Logs from a production application contain access tokens and sensitive customer information; how would you contain the exposure and prevent recurrence?
+* A workspace is approaching its expected ingestion budget because of verbose debug logging; how would you reduce ingestion without losing critical production evidence?
+* A monitoring alert arrives 15 minutes after a service failure; how would you determine whether the delay is caused by ingestion, query execution, or alert evaluation?
+* A Java application deployed to AKS produces logs from some pods but not others; how would you troubleshoot collection and configuration inconsistencies?
+* A team has created separate Log Analytics workspaces for every microservice, making cross-service troubleshooting difficult; how would you improve the architecture?
+* A scheduled query alert stopped triggering after a table or telemetry schema changed; how would you diagnose and fix it?
+* After a region-wide deployment, error rates increase only for users in one region; how would you isolate the affected resources and compare regional telemetry?
+* A security team needs to investigate suspicious activity across Azure resources and application logs; how would you build the required queries and access controls?
+* A new release increases average API latency by 40 percent; how would you compare telemetry before and after the deployment?
+* A workspace contains duplicate application events, causing inaccurate dashboards and alerts; how would you identify and handle the duplicates?
+* A Log Analytics query returns different results from the expected business metrics; how would you validate time filters, aggregation logic, and event completeness?
+* A production incident requires retaining logs beyond the workspace's normal retention period; how would you preserve the evidence and meet retention requirements?
+* An automated monitoring process receives authorization failures when querying Log Analytics; how would you troubleshoot its identity, permissions, and token configuration?
+* A Java batch-processing application completes successfully but processes fewer records than expected; how would you use logs to identify missing or skipped records?
+* A central monitoring team needs to query logs from multiple workspaces without granting broad access to every user; how would you design secure access?
+* An application team wants to reduce logging costs but is concerned about losing information needed for incident investigations; how would you decide which logs to retain?
+* After migrating a Java application to Azure, the existing monitoring dashboards no longer show reliable data; how would you validate the new telemetry pipeline end to end?

@@ -1,0 +1,30 @@
+* Explain how JSX is transformed into JavaScript during compilation.
+* What is the difference between the classic JSX transform and the automatic JSX runtime?
+* How does the React JSX runtime work?
+* What is the difference between jsx(), jsxs(), and React.createElement()?
+* How does Babel compile JSX into JavaScript?
+* What role does the TypeScript compiler play in JSX transformation?
+* What are the differences between .jsx and .tsx files?
+* How does JSX type checking work in TypeScript?
+* How do you define custom JSX intrinsic elements in TypeScript?
+* How does React distinguish between HTML tags and custom components in JSX?
+* Why must custom component names begin with an uppercase letter?
+* How are expressions evaluated inside JSX?
+* Why can statements such as if and for not be used directly inside JSX expressions?
+* How can complex conditional JSX be refactored for readability?
+* How does React reconcile elements produced by JSX?
+* How do keys influence reconciliation when JSX elements are reordered?
+* How can unstable keys cause state to appear in the wrong list item?
+* What is the difference between an element, a component, and a React node?
+* How does JSX represent component composition?
+* How do you build reusable layout components using the children prop?
+* How do render props work with JSX?
+* How do you use the spread operator to pass props in JSX?
+* What problems can arise from spreading unknown props onto DOM elements?
+* How does JSX handle boolean attributes?
+* How do you prevent invalid DOM attributes from being rendered?
+* How do you safely render user-generated content in JSX?
+* What are the implications of using dangerouslySetInnerHTML with untrusted data?
+* How does JSX behave during server-side rendering and hydration?
+* What causes hydration mismatches involving JSX output?
+* How can you optimize large JSX trees for readability and performance?

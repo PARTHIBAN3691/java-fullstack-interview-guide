@@ -1,0 +1,30 @@
+* Create a TypeScript module that exports a variable and import it into another file.
+* Create a module that exports a function to calculate the sum of two numbers and use it in another file.
+* Create a class named Employee, export it from one file, and instantiate it from another file.
+* Create a module with multiple named exports and import all of them into another file.
+* Create a module with a default export and import it into another file.
+* Create a module that exports both a default class and named utility functions.
+* Write a program that renames an imported function using an import alias.
+* Create an interface named User, export it from one module, and use it in another module.
+* Create a type alias for a product and import the type into a separate file.
+* Write an example using import type to import an interface without a runtime import.
+* Create two modules where one imports a function from the other and returns a calculated result.
+* Create a barrel file that re-exports functions from three utility modules.
+* Write a program that imports a class through a barrel file and creates an object.
+* Create a module that exports a constant object containing application configuration.
+* Create a module that exports an enum and use its values in another module.
+* Create a module that exports a generic function and import it into another file.
+* Create a module that exports an abstract class and extend it from another module.
+* Write a program that demonstrates module-level variables and shows that they are not directly accessible from other modules.
+* Create two modules with conflicting exported names and resolve the conflict using aliases.
+* Write a dynamic import example that loads a module only when a function is called.
+* Create a module that exports an asynchronous function and consume it using async/await.
+* Create a TypeScript module that imports a JSON configuration file and accesses its properties.
+* Configure path aliases in tsconfig.json and demonstrate their usage in source files.
+* Create a project with separate modules for a controller, service, and repository.
+* Implement a UserService module that imports a UserRepository and retrieves user data.
+* Create a module that imports a third-party JavaScript function and provides a custom declaration file for it.
+* Create an example demonstrating circular dependencies, then refactor it to remove the cycle.
+* Configure a TypeScript project to compile modules using CommonJS and explain the generated imports.
+* Configure a TypeScript project to use ES modules and demonstrate imports and exports.
+* Create a small TypeScript library with a public entry point, type declarations, and multiple internal modules.

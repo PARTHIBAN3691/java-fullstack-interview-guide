@@ -1,0 +1,30 @@
+* Create a Spring Boot REST microservice to manage customer records using CRUD operations.
+* Implement a REST client using WebClient to communicate with another microservice.
+* Configure Spring Cloud Gateway to route requests to multiple backend services.
+* Implement service registration and discovery using Spring Cloud Netflix Eureka.
+* Create a centralized configuration setup using Spring Cloud Config.
+* Implement JWT-based authentication and authorization for a microservice.
+* Write a Java service that calls two downstream services concurrently using CompletableFuture.
+* Implement request timeouts and controlled retries for a downstream REST API.
+* Configure a circuit breaker using Resilience4j.
+* Implement a fallback mechanism when a downstream service is unavailable.
+* Create a Spring Boot Kafka producer and consumer for order events.
+* Implement idempotent event processing to prevent duplicate business operations.
+* Implement the transactional outbox pattern using Spring Boot and JPA.
+* Write a Saga orchestration service for an order workflow involving inventory and payment services.
+* Implement compensating actions when a distributed business transaction fails.
+* Create a Java service that uses optimistic locking to prevent concurrent updates.
+* Implement API versioning in a Spring Boot REST application.
+* Write integration tests for REST endpoints using JUnit, Mockito, and MockMvc.
+* Implement contract tests to validate compatibility between a producer service and its consumers.
+* Configure distributed tracing and correlation IDs across multiple Spring Boot services.
+* Implement structured logging while masking sensitive information.
+* Create a Spring Boot service with health, readiness, and liveness endpoints.
+* Implement Redis caching for frequently accessed data in a microservice.
+* Write a Kafka consumer that handles transient failures, retries, and dead-letter topics.
+* Implement an idempotency-key mechanism for a payment API.
+* Design a service that handles duplicate and out-of-order events using event IDs and aggregate versions.
+* Implement pagination and filtering for a REST API that exposes large datasets.
+* Write a Java program to simulate a distributed service failure and demonstrate circuit-breaker behavior.
+* Design a Docker Compose setup to run multiple Spring Boot microservices with supporting infrastructure.
+* Design a production-ready microservices system using Java, Spring Boot, API Gateway, service discovery, Kafka, database-per-service, OAuth 2.0, observability, resilience patterns, and Kubernetes.

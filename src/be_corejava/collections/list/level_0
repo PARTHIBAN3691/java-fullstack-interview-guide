@@ -1,0 +1,82 @@
+# Core Java — Collections — List
+## Level 0 — Easy
+
+### List Fundamentals
+* What is a List in Java?
+* What is the difference between List and Collection?
+* Can a List contain duplicate elements?
+* Can a List contain null values?
+* Does a List maintain insertion order?
+* What are the commonly used List implementations in Java?
+
+### ArrayList
+* What is an ArrayList?
+* How do you create and initialize an ArrayList?
+* How do you add, retrieve, update, and remove elements from an ArrayList?
+* How do you find the size of an ArrayList?
+* How do you check whether an ArrayList contains an element?
+* What is the difference between `add()` and `set()`?
+
+### LinkedList
+* What is a LinkedList in Java?
+* What is the difference between ArrayList and LinkedList?
+* How do you add elements at the beginning and end of a LinkedList?
+* How do you retrieve the first and last elements of a LinkedList?
+* Can LinkedList be used as a Queue or Deque?
+
+### Vector and Stack
+* What is a Vector in Java?
+* What is the difference between ArrayList and Vector?
+* What is a Stack in Java?
+* What are the `push()`, `pop()`, and `peek()` methods?
+* Why is Deque often preferred over Stack?
+
+### Iterator and ListIterator
+* What is an Iterator?
+* How do you iterate over a List using a for loop?
+* How do you iterate over a List using an enhanced for loop?
+* What is the difference between Iterator and ListIterator?
+* How do you remove elements safely while iterating?
+
+### Sorting and Comparators
+* How do you sort a List in Java?
+* What is the difference between `Comparable` and `Comparator`?
+* How do you sort a List of Strings?
+* How do you sort a List of integers in descending order?
+* How do you sort a List of custom objects by a field?
+
+### List Utilities and Common Operations
+* How do you convert an array into a List?
+* How do you convert a List into an array?
+* How do you merge two Lists?
+* How do you remove duplicate elements from a List?
+* How do you check whether two Lists are equal?
+* What is the difference between `Collections.sort()` and `List.sort()`?
+
+### Generics and Wildcards with List
+* Why are generics used with List?
+* What is the difference between `List<Object>` and `List<String>`?
+* What does `List<?>` mean?
+* What is the purpose of `List<? extends Number>`?
+* What is the purpose of `List<? super Integer>`?
+
+### Thread Safety and Concurrent Lists
+* Is ArrayList thread-safe?
+* What does thread safety mean?
+* What is `Collections.synchronizedList()`?
+* What is `CopyOnWriteArrayList`?
+* What is the difference between ArrayList and CopyOnWriteArrayList?
+
+### Streams and List Processing
+* How do you create a Stream from a List?
+* How do you filter a List using Streams?
+* How do you transform elements using `map()`?
+* How do you collect Stream results into a List?
+* What is the difference between `filter()` and `map()`?
+
+### List Performance and Complexity
+* What is the time complexity of retrieving an element from an ArrayList by index?
+* What is the time complexity of adding an element at the end of an ArrayList?
+* Why can inserting at the beginning of an ArrayList be expensive?
+* Why can LinkedList be useful for certain insertion and removal operations?
+* How do you choose between ArrayList and LinkedList?

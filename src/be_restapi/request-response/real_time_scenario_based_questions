@@ -1,0 +1,30 @@
+* A client sends a valid JSON request, but Spring Boot fails to deserialize it into the DTO. How would you investigate the issue?
+* An API returns HTTP 200 even when a business operation fails. How would you redesign its response handling?
+* A client reports that a required field is missing from the API response after a deployment. How would you identify the root cause?
+* An external client sends additional JSON fields that are not present in your DTO. How would you decide whether to accept or reject the request?
+* A request contains an invalid date format, and the API returns a generic HTTP 500 response. How would you correct the behavior?
+* A client sends null for a field that must not be null. How would you validate the request and return a meaningful error?
+* A PATCH request must update one field while preserving all other fields. How would you distinguish an omitted field from a field explicitly set to null?
+* A REST API returns a JPA entity directly, exposing internal database fields. How would you redesign the response?
+* A downstream service returns an unexpected response structure. How would your application handle the failure?
+* An API aggregates data from three downstream services, but one service times out. What response should the API return?
+* A mobile application depends on an existing response field name, but the backend team wants to rename it. How would you introduce the change safely?
+* A financial API returns an incorrect decimal value because of floating-point precision. How would you fix the request-response model?
+* A client reports inconsistent timestamps because services use different timezones. How would you standardize date-time handling?
+* An API response contains a password or access token because an entity is serialized directly. How would you prevent this security issue?
+* Your API returns detailed Java exception messages to clients. How would you replace them with safe, structured error responses?
+* A large file-upload request causes excessive memory consumption. How would you improve request processing?
+* A response contains thousands of records and causes high latency. How would you optimize the response contract and processing?
+* Two microservices use different JSON naming conventions. How would you maintain compatibility between them?
+* A request passes basic validation but violates a business rule involving two fields. How would you implement the validation?
+* An API client receives HTTP 400 but cannot determine which field is invalid. How would you improve the error response?
+* A request times out at the client, but the server completes the operation successfully. How would you prevent duplicate processing during retries?
+* A controller returns null, and the client receives an unexpected response. How would you define and handle this behavior?
+* A new optional response field breaks an older client due to strict JSON parsing. How would you address the compatibility issue?
+* An API supports JSON and XML, but the response format does not match the client's Accept header. How would you debug it?
+* A request contains an unknown enum value from an external system. How would you handle it without unnecessarily breaking integrations?
+* A response must include pagination details, total record count, and links to the next page. How would you design the response structure?
+* An API gateway adds a correlation ID, but the ID is missing from downstream logs and the final response. How would you propagate it?
+* An application logs complete request and response bodies, creating a risk of exposing sensitive customer data. How would you redesign logging?
+* A response serialization error occurs after a database transaction has committed. How would you reduce the risk of inconsistent client expectations?
+* Multiple teams independently implement error responses with different formats. How would you establish and enforce a common API contract?

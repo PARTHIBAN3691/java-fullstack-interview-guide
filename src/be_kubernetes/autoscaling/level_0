@@ -1,0 +1,30 @@
+* What is autoscaling in Kubernetes?
+* Why is autoscaling required in Kubernetes?
+* What are the different types of autoscaling in Kubernetes?
+* What is Horizontal Pod Autoscaler (HPA)?
+* What is Vertical Pod Autoscaler (VPA)?
+* What is Cluster Autoscaler?
+* What is the difference between HPA, VPA, and Cluster Autoscaler?
+* How does Kubernetes HPA work?
+* Which metrics can HPA use to scale applications?
+* What is the role of CPU utilization in autoscaling?
+* What is the role of memory utilization in autoscaling?
+* What is a target metric in HPA?
+* What is the minimum replica count in HPA?
+* What is the maximum replica count in HPA?
+* What is the purpose of the metrics-server in Kubernetes?
+* How do you check the current HPA status?
+* How do you create an HPA using kubectl?
+* What is the difference between manual scaling and automatic scaling?
+* What is a replica in Kubernetes?
+* How does HPA change the number of Pod replicas?
+* Can HPA scale a Deployment and a StatefulSet?
+* What happens when CPU utilization exceeds the configured target?
+* What happens when application traffic decreases?
+* What is the difference between scaling up and scaling down?
+* What are resource requests and limits in Kubernetes?
+* Why are CPU requests important for HPA?
+* Can HPA work without resource requests configured?
+* What is custom-metrics-based autoscaling?
+* What is the difference between reactive and predictive autoscaling?
+* What are the main benefits and limitations of Kubernetes autoscaling?

@@ -1,0 +1,30 @@
+* How do distributed databases maintain strong consistency?
+* How does eventual consistency work in practice?
+* How does synchronous replication differ from asynchronous replication?
+* How can replication lag cause stale reads?
+* How do quorum reads and writes work?
+* What is a read quorum?
+* What is a write quorum?
+* How do you choose read and write quorum sizes?
+* How does a quorum-based system improve consistency?
+* What is the relationship between quorum intersection and consistency?
+* How does leader-based replication maintain consistency?
+* How does leaderless replication work?
+* What is read-after-write consistency, and how can it be implemented?
+* How can a system provide read-your-writes consistency?
+* How can monotonic reads be maintained across multiple replicas?
+* How does causal consistency differ from eventual consistency?
+* How does vector clock metadata help track causal relationships?
+* What are version vectors, and how are they used?
+* How can concurrent updates create consistency conflicts?
+* How can last-write-wins conflict resolution fail?
+* What are the trade-offs of timestamp-based conflict resolution?
+* How does a distributed database detect conflicting writes?
+* How do transactions provide consistency?
+* What is the role of isolation levels in database consistency?
+* How does optimistic concurrency control prevent lost updates?
+* How do version numbers help prevent stale writes?
+* How can cache invalidation affect consistency?
+* How do message queues affect consistency between services?
+* How can retries create inconsistent application state?
+* How do you test consistency in a distributed application?

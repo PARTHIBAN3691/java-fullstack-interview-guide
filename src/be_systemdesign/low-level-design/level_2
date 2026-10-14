@@ -1,0 +1,30 @@
+* How would you design an extensible object model for a domain with frequently changing business rules?
+* How do you balance SOLID principles with avoiding unnecessary abstraction?
+* How do you identify and resolve violations of the Liskov Substitution Principle in a complex inheritance hierarchy?
+* How would you redesign a monolithic service class containing multiple business responsibilities?
+* How do you apply dependency inversion when integrating legacy code that cannot be modified?
+* How do you design a domain model that protects business invariants across multiple operations?
+* How do you distinguish between an anemic domain model and a rich domain model?
+* How do you apply Domain-Driven Design concepts such as entities, value objects, aggregates, and repositories?
+* How do you identify aggregate boundaries in a complex business domain?
+* How do you enforce aggregate invariants when multiple application services update related data?
+* How do you decide between inheritance, composition, delegation, and interfaces in a large object model?
+* How do you design a plugin architecture that allows new implementations to be added without changing the core application?
+* How do you prevent abstraction leakage between application layers?
+* How do you manage cross-cutting concerns such as logging, authorization, metrics, and auditing in an LLD?
+* How do you apply the Decorator or Proxy pattern without making the object model difficult to understand?
+* How do you design thread-safe classes when shared mutable state is unavoidable?
+* How do you design immutable domain objects while supporting complex state transitions?
+* How do you prevent race conditions when multiple threads operate on the same domain entity?
+* How do you model complex workflows using the State, Strategy, and Command patterns?
+* How do you choose between a state machine and a collection of conditional statements?
+* How do you avoid overusing design patterns in an object-oriented system?
+* How do you identify code smells that indicate a poor low-level design?
+* How do you refactor a system with deep inheritance and excessive coupling?
+* How do you design an LLD that remains testable when external dependencies include databases, APIs, and message brokers?
+* How do you maintain backward compatibility when changing public interfaces and domain models?
+* How do you design versioned domain objects and translate between different representations?
+* How do you apply the Open/Closed Principle when business rules are configured dynamically?
+* How do you handle transaction boundaries and consistency across collaborating domain objects?
+* How do you evaluate competing class designs based on maintainability, extensibility, performance, and complexity?
+* How do you evolve a low-level design safely as requirements change during iterative development?

@@ -1,0 +1,20 @@
+* A Java Spring Boot application running on EC2 needs to read files from a specific S3 bucket. How would you configure IAM access securely?
+* A Lambda function receives an `AccessDenied` error when accessing DynamoDB. How would you troubleshoot the issue?
+* A developer needs read-only access to CloudWatch logs but must not access EC2 or S3. How would you configure IAM?
+* Two AWS accounts need to share access to an S3 bucket. How would you design the cross-account permissions?
+* A production application uses hardcoded AWS access keys in its configuration file. How would you eliminate this security risk?
+* A developer accidentally receives administrator privileges. How would you identify and reduce excessive permissions?
+* An EC2 application must access an AWS service without storing credentials on the instance. What would you implement?
+* A third-party vendor needs temporary access to selected resources in your AWS account. How would you grant and revoke access securely?
+* A company wants to prevent developers from creating IAM users or assigning administrator permissions. How would you enforce this?
+* A user can access an S3 bucket through the AWS CLI but cannot access it through the console. How would you investigate the difference?
+* A role assumption request fails even though the role's permissions policy allows the required action. What would you check?
+* A Java application deployed in EKS needs access to Secrets Manager. How would you configure identity and permissions?
+* An application must access resources in three AWS accounts with different permission requirements. How would you design role assumption?
+* A security audit discovers unused IAM access keys that have not been rotated for several months. What actions would you take?
+* A user has an IAM policy allowing S3 access, but an SCP denies the same operation. What will happen, and how would you resolve it?
+* An organization requires all users to use MFA for sensitive operations. How would you enforce the requirement?
+* A developer needs permission to restart specific EC2 instances but must not terminate them. How would you implement this restriction?
+* An application can assume an IAM role, but its API calls fail with `AccessDenied`. How would you distinguish trust-policy problems from permission-policy problems?
+* A company wants to grant temporary production access only after approval. How would you implement an auditable access workflow?
+* CloudTrail reports an unexpected `AssumeRole` event. How would you investigate the source, principal, and potential security impact?

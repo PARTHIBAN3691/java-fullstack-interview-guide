@@ -1,0 +1,135 @@
+**Calling LLM APIs from Java**
+* Implement a reusable Java HTTP client that sends chat requests, parses responses, and supports configurable timeouts.
+* Write a provider adapter that maps a common application request into two different LLM provider request formats.
+* Implement exponential backoff with jitter for retryable HTTP errors and a strict maximum retry budget.
+* Write unit tests for timeouts, malformed JSON, connection failures, HTTP 429, and HTTP 5xx responses.
+
+**Spring AI Fundamentals**
+* Create a Spring Boot application using Spring AI and configure a chat model through externalized properties.
+* Implement a model-provider abstraction that can be selected through Spring configuration.
+* Write a startup validator that rejects missing credentials, invalid model settings, and unsupported configuration combinations.
+* Create a Spring Boot test that replaces the real model with a deterministic mock implementation.
+
+**Spring AI Chat Models**
+* Implement a `ChatClient`-based service that accepts a user question and returns a typed Java DTO.
+* Write a prompt template that combines system instructions, validated user input, and application context.
+* Implement response validation with bounded retry or fallback behavior when model output does not match the expected schema.
+* Create tests for empty responses, invalid structured output, provider failures, and model-selection configuration.
+
+**Spring AI Embeddings**
+* Implement a document embedding service that processes batches and stores document IDs, model versions, and vectors.
+* Write a resumable ingestion job that checkpoints completed documents and retries failed batches.
+* Implement an embedding-version validation component that rejects incompatible query and document vectors.
+* Create a benchmark program that compares retrieval relevance for two embedding models on a fixed dataset.
+
+**Spring AI Vector Stores**
+* Implement document upsert, similarity search, metadata filtering, and deletion using Spring AI's `VectorStore` abstraction.
+* Write a repository service that requires a tenant identifier for every retrieval request.
+* Implement an index migration process that writes to a new vector store, validates results, and switches traffic safely.
+* Create integration tests for duplicate ingestion, metadata filtering, document deletion, and retrieval ranking.
+
+**Spring AI Advisors**
+* Implement a custom advisor that adds request-scoped context to a prompt without modifying unrelated requests.
+* Write an advisor that records latency and outcome metrics without logging sensitive prompt content.
+* Implement and test an advisor chain with retrieval, memory, and output-validation responsibilities.
+* Create tests that verify advisor ordering and detect duplicate prompt modifications.
+
+**Spring AI RAG Pipelines**
+* Implement a RAG service that retrieves relevant documents, assembles a bounded prompt, and generates an answer.
+* Write a document chunker with configurable chunk size and overlap and tests for empty or oversized documents.
+* Implement citation extraction that associates generated claims or references with retrieved document identifiers.
+* Create a RAG evaluation test suite that measures retrieval recall, answer relevance, and citation validity.
+* Implement incremental re-indexing when a document is created, updated, or deleted.
+
+**Spring AI Tool Calling**
+* Define a Java tool for retrieving order status and expose it to an AI conversation through Spring AI.
+* Implement tool-argument validation, authorization checks, and structured error responses.
+* Add idempotency keys to a tool that performs a business operation and test duplicate invocation handling.
+* Create tests for malformed tool arguments, unauthorized users, tool timeouts, and repeated tool calls.
+* Implement a tool-execution budget that limits the number of calls and total execution time per request.
+
+**Spring AI MCP Integration**
+* Implement an MCP client integration that discovers eligible tools and invokes a selected tool.
+* Create a mock MCP server that exposes a test resource and tool for integration testing.
+* Implement an allowlist that restricts which discovered tools can be exposed to an LLM.
+* Write tests for MCP server disconnection, tool schema changes, authorization failures, and timeouts.
+* Implement correlation-ID propagation from a Spring Boot request through an MCP tool invocation.
+
+**Spring AI Chat Memory**
+* Implement conversation memory keyed by tenant, user, and conversation ID.
+* Write a persistent chat-history service with configurable retention and deletion policies.
+* Implement a token-budgeting component that truncates or summarizes older conversation history.
+* Create concurrency tests for two simultaneous requests updating the same conversation.
+* Write tests proving that one tenant cannot retrieve another tenant's conversation history.
+
+**Streaming AI Responses with Spring Boot**
+* Implement an SSE controller that streams AI response chunks to a browser client.
+* Write a streaming service that propagates client cancellation to the upstream model request.
+* Implement heartbeats and configurable stream timeouts for long-running responses.
+* Create integration tests for partial responses, client disconnections, upstream failures, and stream completion.
+* Implement metrics for time to first token, total duration, and stream interruption rate.
+
+**AI Integration with REST APIs**
+* Build a REST endpoint that validates requests, invokes an AI service, and returns a stable application-level response.
+* Implement centralized exception handling that maps provider errors into safe HTTP responses.
+* Add idempotency support to an endpoint that can trigger a business operation through AI tool calling.
+* Write integration tests for authentication, authorization, input validation, request limits, and error contracts.
+* Generate OpenAPI documentation for a synchronous AI endpoint and a streaming endpoint.
+
+**Reactive AI Applications**
+* Implement a WebFlux endpoint that streams model output using `Flux`.
+* Write a reactive pipeline that combines asynchronous retrieval with model invocation and propagates errors correctly.
+* Implement timeout and cancellation propagation through a multi-stage reactive workflow.
+* Use `StepVerifier` to test success, error, cancellation, and backpressure scenarios.
+* Demonstrate how to isolate a blocking AI SDK call from reactive event-loop threads.
+
+**AI Rate Limiting and Resilience**
+* Integrate Resilience4j retry, circuit breaker, bulkhead, and timeout policies around an AI client.
+* Implement a distributed per-tenant rate limiter for multiple Spring Boot instances.
+* Write tests that verify retries do not occur for permanent authentication or validation errors.
+* Implement a fallback model strategy with output-schema validation and provider-specific metrics.
+* Create a load test that verifies the service stays within concurrency and request-rate limits under burst traffic.
+
+**Secure AI API Integration**
+* Implement a secret-provider abstraction that loads and refreshes API credentials without embedding them in source code.
+* Write an input validation and redaction component for sensitive fields in user prompts.
+* Implement authorization checks for retrieval and tool calls based on the authenticated user's tenant and role.
+* Create security tests for prompt injection, cross-tenant access, oversized prompts, and unauthorized tools.
+* Implement structured audit logging that records execution metadata without storing raw sensitive prompts or responses.
+
+**AI Microservices Architecture**
+* Build a Spring Boot AI gateway that routes requests to provider-specific adapters behind a common interface.
+* Implement a correlation-ID filter that propagates request identifiers across downstream service calls.
+* Write a resilience layer that prevents model-provider failures from exhausting business-service resources.
+* Implement an asynchronous AI job API with submission, status retrieval, cancellation, and result expiration.
+* Create contract tests that validate API compatibility between the AI service and its consumers.
+
+**AI Integration with Kafka**
+* Implement a Kafka consumer that processes AI jobs and publishes results to a separate topic.
+* Add idempotency and retry handling to a consumer that invokes a model provider.
+* Implement retry topics and a dead-letter topic for permanently failed AI jobs.
+* Write tests for duplicate events, out-of-order document updates, consumer restarts, and replay.
+* Implement metrics for consumer lag, model latency, retry count, and failed-job rate.
+
+**AI Integration with Databases**
+* Implement a Spring Data service that retrieves authorized business records and constructs bounded model context.
+* Create a schema-aware natural-language-to-SQL prototype that validates generated queries before execution.
+* Implement a read-only query executor with statement timeouts, row limits, and tenant restrictions.
+* Write an asynchronous workflow that performs inference outside a long-running database transaction.
+* Create integration tests for transaction rollback, stale data, concurrent updates, and vector-index synchronization.
+
+**Testing Spring AI Applications**
+* Write unit tests using mocked `ChatModel`, embedding clients, and tool implementations.
+* Implement a golden-dataset regression test that compares model outputs against expected structural and quality criteria.
+* Create a Testcontainers-based integration test for a database-backed vector store.
+* Write tests for RAG retrieval precision, recall, citation correctness, and unauthorized document exclusion.
+* Implement fault-injection tests for timeouts, throttling, circuit-breaker activation, and provider failover.
+* Build a CI quality gate that blocks a release when configured AI-quality metrics regress beyond acceptable thresholds.
+
+**Productionizing AI Applications in Java**
+* Implement a Spring Boot actuator or Micrometer integration that records request counts, latency, token usage, and provider errors.
+* Add OpenTelemetry tracing across prompt construction, retrieval, model invocation, and tool execution.
+* Implement a feature flag that enables gradual rollout of a new prompt or model version.
+* Create a health-check strategy that distinguishes application health from optional AI-provider availability.
+* Implement per-tenant budget enforcement and alerts for unexpected AI spending.
+* Build an operational dashboard and alert rules for latency, rate-limit errors, retrieval quality, and cost anomalies.

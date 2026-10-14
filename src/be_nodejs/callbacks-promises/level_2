@@ -1,0 +1,30 @@
+* Explain the internal behavior of Promise resolution and thenable assimilation.
+* How does the JavaScript microtask queue affect Promise callback execution?
+* What is the difference between the Promise resolution procedure and Promise settlement?
+* How does Promise chaining propagate values and errors through multiple asynchronous steps?
+* How would you implement a custom Promise-like abstraction?
+* How would you convert a legacy callback API into a Promise API while preserving backward compatibility?
+* How would you design a function that supports both callback-based and Promise-based invocation safely?
+* What problems can arise when a callback is invoked more than once?
+* How would you prevent a callback-based operation from completing more than once?
+* How would you handle synchronous exceptions thrown before a callback is registered?
+* How would you design cancellation for a Promise-based operation?
+* Why does Promise.race() not automatically cancel the losing operations?
+* How would you implement a timeout that also cancels the underlying asynchronous operation?
+* How would you implement a Promise queue with limited concurrency?
+* How would you implement a Promise pool that preserves result order?
+* How would you handle fail-fast behavior versus collecting all errors in a Promise workflow?
+* How would you implement retries with exponential backoff and jitter using Promises?
+* How would you prevent duplicate side effects when retrying a Promise-based operation?
+* How would you prevent memory leaks caused by unresolved Promises or retained handlers?
+* How would you diagnose an unhandled Promise rejection in a large Node.js application?
+* How would you combine callback-based streams with Promise-based application logic?
+* How would you implement a Promise wrapper around an EventEmitter-based API?
+* How would you coordinate multiple dependent operations while ensuring cleanup after failures?
+* How would you implement a timeout and fallback strategy for multiple downstream Promise calls?
+* How would you design a Promise-based workflow that supports partial success and detailed error aggregation?
+* How would you preserve request context across callback and Promise boundaries?
+* How do asynchronous race conditions occur in Promise-based code despite JavaScript's single-threaded execution model?
+* How would you implement a semaphore to limit concurrent Promise execution?
+* How would you design robust error propagation across multiple layers of Promise-based services?
+* What trade-offs would you consider when choosing callbacks, Promises, async/await, and event-driven APIs?

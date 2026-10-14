@@ -1,0 +1,30 @@
+* Create a Spring @Configuration class that declares a custom service bean using @Bean.
+* Write a configuration class that creates a bean with constructor arguments.
+* Implement a configuration class that injects one bean into another.
+* Create two beans of the same interface and resolve injection using @Primary.
+* Use @Qualifier to inject a specific implementation of an interface.
+* Create a custom configuration property in application.properties and inject it using @Value.
+* Implement a type-safe configuration class using @ConfigurationProperties.
+* Bind nested YAML properties to a Java configuration class.
+* Bind a list and a map from application.yml using @ConfigurationProperties.
+* Implement configuration validation using @Validated and Jakarta Bean Validation annotations.
+* Write a configuration class that loads an external properties file using @PropertySource.
+* Create development and production profiles with different database configurations.
+* Implement profile-specific beans using @Profile.
+* Write a Spring Boot application that activates a profile through an environment variable.
+* Implement a conditional bean using @ConditionalOnProperty.
+* Create a bean only when a specific class is present using @ConditionalOnClass.
+* Implement a fallback bean using @ConditionalOnMissingBean.
+* Write a configuration class that excludes a specific Spring Boot auto-configuration.
+* Implement a custom auto-configuration class and register it through AutoConfiguration.imports.
+* Create a configuration class that registers two DataSource beans with separate configuration properties.
+* Configure two transaction managers for separate databases.
+* Write a test that verifies a @Configuration class registers the expected beans.
+* Implement a Spring Boot test that verifies property binding from application-test.yml.
+* Write a test that checks configuration validation when a required property is missing.
+* Implement a test that verifies conditional bean creation based on a property value.
+* Write a test that confirms a profile-specific bean is loaded only when the profile is active.
+* Implement a configuration class that provides a default timeout when no property is configured.
+* Create a configuration properties class that safely handles a secret supplied through an environment variable.
+* Implement a feature toggle controlled by an application property and use it to enable or disable a service operation.
+* Build a complete Spring Boot configuration module with type-safe properties, validation, profile-specific settings, conditional beans, custom auto-configuration, and automated tests.

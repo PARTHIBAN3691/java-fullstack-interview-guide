@@ -1,0 +1,30 @@
+* A form refreshes the page when the user clicks Submit. How would you fix the issue?
+* A controlled input cannot be edited because its value does not change while typing. How would you debug it?
+* A form contains 20 fields, and each keystroke causes the entire form to re-render. How would you optimize it?
+* A registration form requires email validation and password confirmation. How would you implement the validation?
+* A username availability API returns outdated results when the user types quickly. How would you prevent race conditions?
+* A form submission creates duplicate records when the user clicks Submit multiple times. How would you prevent this?
+* An API returns validation errors for specific fields. How would you display those errors beside the corresponding inputs?
+* A checkout form contains country and state dropdowns, where the state options depend on the selected country. How would you implement it?
+* A user loses all entered data when navigating between steps in a multi-step form. How would you preserve the values?
+* A long application form must save progress automatically. How would you implement autosave safely?
+* A form should warn users before leaving the page with unsaved changes. How would you implement this?
+* A user uploads a large file and wants to see upload progress and cancel the operation. How would you design the form?
+* A form contains dynamically added phone number fields. How would you add, remove, and validate them?
+* A date field must not allow a date earlier than today. How would you implement the validation?
+* A form field becomes required only when another checkbox is selected. How would you implement conditional validation?
+* A backend rejects a form even though client-side validation passes. How would you communicate the server-side errors?
+* A form has dependent fields that reset when a parent selection changes. How would you avoid inconsistent state?
+* A React form library causes unexpected field values after removing a row from a dynamic field array. How would you investigate it?
+* An asynchronous validation request completes after the field value has changed. How would you prevent the old result from being applied?
+* A form should support keyboard-only navigation and accessible error announcements. What changes would you make?
+* A user submits a form while an earlier request is still processing. How would you handle concurrent requests?
+* A form needs to upload multiple files with file type and size restrictions. How would you implement validation?
+* A large form receives its initial values from an API after the component mounts. How would you populate the fields correctly?
+* A form should retain entered values after a browser refresh. What persistence strategy would you use?
+* A payment form must avoid exposing sensitive information in logs. How would you handle errors and debugging safely?
+* A reusable input component works with text fields but fails with checkboxes. How would you correct its value handling?
+* A form submission succeeds on the server, but the UI continues showing the loading state. How would you debug it?
+* A form uses both React Hook Form and local useState(), resulting in inconsistent values. How would you simplify state management?
+* A form schema changes based on the user's selected account type. How would you implement dynamic validation?
+* How would you design and test an enterprise form that includes conditional fields, asynchronous validation, file uploads, and API submission?

@@ -1,0 +1,30 @@
+* Write a Java program using the Azure SDK to publish an event to Azure Event Hubs.
+* Write a Java program that configures an EventHubProducerClient using Microsoft Entra ID authentication.
+* Write a Java program that creates an EventDataBatch and publishes multiple events.
+* Write a Java program that handles batch-size limits when publishing events.
+* Write a Java program that consumes events from a specific Event Hubs partition.
+* Write a Java program that consumes events using EventHubConsumerClient and a consumer group.
+* Write a Java program that configures EventProcessorClient with a Blob Storage checkpoint store.
+* Write a Java program that updates checkpoints after successful event processing.
+* Write a Java consumer that resumes processing from the last stored checkpoint after a restart.
+* Write a Java implementation that uses an idempotency key to prevent duplicate event processing.
+* Write a Spring Boot service that publishes domain events to Azure Event Hubs.
+* Write a Spring Boot consumer that processes incoming events and stores results in a relational database.
+* Write a Java implementation that validates event payloads before processing them.
+* Write a Java consumer that handles malformed events without terminating the entire processing loop.
+* Write a Java implementation that retries transient Event Hubs failures using exponential backoff and jitter.
+* Write a Java producer that handles throttling and transient network errors without uncontrolled retries.
+* Write a Java program that assigns partition keys based on customer IDs.
+* Write a Java program that serializes and deserializes event payloads using JSON.
+* Write a Java consumer that processes events concurrently while preserving ordering for each customer.
+* Write a Java implementation that records event-processing failures and supports controlled replay.
+* Write a Java program that tracks event offsets and processing latency for monitoring.
+* Write a Java consumer that handles downstream database failures and avoids checkpointing unprocessed events.
+* Write a Spring Boot implementation of the transactional outbox pattern for publishing database changes to Event Hubs.
+* Write a Java program that connects to Event Hubs using a managed identity in an Azure-hosted environment.
+* Write a Java program that publishes events to Event Hubs through the Kafka-compatible endpoint.
+* Write a Java Kafka consumer configuration for reading events from Azure Event Hubs.
+* Write a Java program that reads event data from Event Hubs Capture files stored in Azure Data Lake Storage.
+* Write unit tests for a Java event processor that cover duplicate events, malformed payloads, and transient failures.
+* Write an integration test that verifies a Java producer can publish events and a consumer can process them.
+* Write a Java implementation that propagates correlation IDs through an event stream and logs them during processing.

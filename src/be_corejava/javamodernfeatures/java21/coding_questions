@@ -1,0 +1,25 @@
+
+* Write a Java 21 program that creates and starts a virtual thread using `Thread.startVirtualThread()`.
+* Write a Java 21 program that creates virtual threads using `Thread.ofVirtual()` and waits for their completion.
+* Write a Java program using `Executors.newVirtualThreadPerTaskExecutor()` to execute multiple concurrent tasks.
+* Write a Java program that compares virtual-thread execution with a fixed platform-thread pool for blocking tasks.
+* Write a Java program that demonstrates how to handle exceptions thrown by tasks running in virtual threads.
+* Write a Java program that uses a record pattern to extract the components of an `Employee` record.
+* Write a Java program that uses nested record patterns to process a customer record containing an address record.
+* Write a Java program that uses pattern matching for `switch` to process strings, integers, and other object types.
+* Write a Java program that uses a guarded pattern with the `when` clause to categorize integers.
+* Write a Java program that uses a sealed interface, records, and pattern matching for `switch` to process payment outcomes.
+* Write a Java program that demonstrates null handling in pattern matching for `switch`.
+* Write a Java program that uses unnamed patterns and variables to ignore unnecessary values.
+* Write a Java program that uses `SequencedCollection` to access and modify the first and last elements.
+* Write a Java program that demonstrates `getFirst()`, `getLast()`, `addFirst()`, and `addLast()` on a sequenced collection.
+* Write a Java program that uses `reversed()` to iterate through a sequenced collection in reverse order.
+* Write a Java program that demonstrates first-entry, last-entry, and reverse-order operations using `SequencedMap`.
+* Write a Java program that uses the Foreign Function and Memory API to allocate a `MemorySegment` within an `Arena`.
+* Write a Java program that demonstrates memory allocation, access, and cleanup using the Foreign Function and Memory API.
+* Write a Java program that uses structured concurrency to run multiple subtasks and coordinate their results.
+* Write a Java program that demonstrates cancellation and failure handling with the Java 21 preview Structured Concurrency API.
+* Write a Java program that demonstrates the Java 21 preview Scoped Values API for sharing request context.
+* Write a Java program that benchmarks a CPU-intensive workload using platform threads and virtual threads.
+* Write a Java program that demonstrates a suitable use case for Generational ZGC and documents the JVM configuration required to enable it.
+* Write a Java program that uses records, sealed interfaces, and pattern matching to implement a simple order-processing workflow.

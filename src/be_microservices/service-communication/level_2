@@ -1,0 +1,30 @@
+* How would you design a communication strategy for hundreds of microservices?
+* How do you decide which service interactions should be synchronous versus asynchronous?
+* How do you prevent cascading failures across a chain of synchronous service calls?
+* How do you establish end-to-end timeout budgets across multiple downstream calls?
+* How do you propagate deadlines across synchronous and asynchronous service boundaries?
+* How do you prevent retry amplification across multiple service layers?
+* How do you design idempotent service communication when requests may be delivered more than once?
+* How do you handle ambiguous outcomes when a downstream service times out after completing an operation?
+* How do you maintain consistency when a workflow spans synchronous APIs and asynchronous events?
+* How do you design reliable request-response messaging over Kafka or RabbitMQ?
+* How do you preserve message ordering while scaling consumers horizontally?
+* How do you choose partition keys for high-throughput Kafka-based communication?
+* How do you manage backpressure when downstream services cannot keep up with incoming requests?
+* How do you prevent thread pool and connection pool exhaustion during high traffic?
+* How do you optimize WebClient for high-concurrency workloads?
+* How do you choose between HTTP/2, gRPC, and REST for low-latency communication?
+* How do you handle large payloads efficiently between microservices?
+* How do you design streaming communication for large datasets?
+* How do you implement service discovery and load balancing in a multi-region environment?
+* How do you handle stale service registry entries and unhealthy service instances?
+* How do you propagate identity and authorization context across multiple service boundaries?
+* How do you implement mTLS and workload identity for internal communication?
+* How do you prevent clients from bypassing API gateway security controls?
+* How do you manage API contract evolution across independently deployed services?
+* How do you use consumer-driven contract testing to prevent integration failures?
+* How do you design communication patterns for services with different availability requirements?
+* How do you reduce network latency and serialization overhead in a high-throughput platform?
+* How do you trace a request that crosses REST calls, Kafka events, and background workers?
+* How do you design graceful degradation when several downstream dependencies fail simultaneously?
+* How would you establish standards for communication protocols, retries, timeouts, observability, and security across an enterprise microservices platform?

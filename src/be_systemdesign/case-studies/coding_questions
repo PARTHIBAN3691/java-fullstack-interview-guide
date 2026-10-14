@@ -1,0 +1,30 @@
+* Write a Java program to implement a thread-safe LRU cache.
+* Implement a URL shortening service with URL creation, retrieval, and unique key generation.
+* Write a Java method that calculates requests per second from total requests and time duration.
+* Implement a token-bucket rate limiter in Java.
+* Create a Spring Boot REST API for an e-commerce product catalog with pagination and filtering.
+* Implement an order service that validates inventory before creating an order.
+* Write Java code to prevent duplicate payment requests using idempotency keys.
+* Implement a thread-safe inventory reservation service that prevents stock from becoming negative.
+* Create a Java producer-consumer example using a bounded BlockingQueue.
+* Implement retry logic with exponential backoff and jitter for a remote service call.
+* Write a Java example that combines timeout, retry, and circuit breaker behavior using Resilience4j.
+* Implement a notification service that routes messages to email, SMS, and push notification providers.
+* Write Java code to process queued jobs with retry handling and a dead-letter queue strategy.
+* Implement a distributed lock abstraction for protecting a critical business operation.
+* Write a Java program that demonstrates optimistic locking for concurrent entity updates using JPA.
+* Implement a pagination utility that supports offset-based and cursor-based pagination.
+* Create a Spring Boot REST API that uploads and downloads files using object storage.
+* Implement a cache-aside service using Redis and a database repository.
+* Write Java code to deduplicate events using a unique event identifier.
+* Implement a Java worker that can safely retry a task after a crash without duplicating business effects.
+* Create a Spring Boot service that publishes domain events after a successful database transaction.
+* Implement a transactional outbox pattern for reliable event publishing.
+* Write Java code to aggregate streaming events into time-window-based metrics.
+* Implement a simple consistent hashing algorithm for distributing keys across multiple servers.
+* Write a Java example that demonstrates the Saga pattern for an order workflow with compensation actions.
+* Implement a reconciliation utility that compares transaction records from two systems and identifies mismatches.
+* Create a Spring Boot health-check API that reports the status of databases, caches, and downstream services.
+* Write an integration test that simulates a downstream service failure and verifies fallback behavior.
+* Implement a Java service that supports graceful shutdown while allowing in-flight requests to finish.
+* Design and implement a mini distributed order-processing system using Spring Boot, REST APIs, a message broker, Redis, database persistence, retries, idempotency, and automated tests.

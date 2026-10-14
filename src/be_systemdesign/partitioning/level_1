@@ -1,0 +1,30 @@
+* How do you choose a partition key for a large database table?
+* How do you decide between range-based and hash-based partitioning?
+* How does consistent hashing distribute data across nodes?
+* How do you minimize data skew across partitions?
+* How do you identify and resolve a hot partition?
+* How does partition pruning improve database query performance?
+* How do you partition a database table based on a timestamp?
+* How do you partition a table using multiple columns?
+* How do you design a partitioning strategy for a multi-tenant application?
+* How do you partition customer data while preserving tenant isolation?
+* How do you handle queries that span multiple partitions?
+* How do you implement pagination across partitioned data?
+* How do you maintain indexes in a partitioned database?
+* How do local indexes differ from global indexes in partitioned databases?
+* How do you partition data when query patterns change over time?
+* How do you handle inserts and updates in a partitioned database?
+* How do you distribute writes across multiple database shards?
+* How do you route a request to the correct partition?
+* How do you manage partition metadata and routing information?
+* How do you rebalance partitions when adding a new database node?
+* How do you migrate data between partitions without significant downtime?
+* How do you handle partition splits and merges?
+* How does Kafka partitioning work, and how is a partition selected for a message?
+* How does Kafka maintain message ordering within a partition?
+* How do consumer groups distribute partitions among consumers?
+* What happens when the number of Kafka consumers exceeds the number of partitions?
+* How do you partition data for time-series workloads?
+* How do you design partitioning for an event store?
+* How do you monitor partition size, distribution, and query performance?
+* How do you decide between application-level sharding and database-managed partitioning?

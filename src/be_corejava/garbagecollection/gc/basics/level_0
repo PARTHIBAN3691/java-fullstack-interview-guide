@@ -1,0 +1,20 @@
+* What is garbage collection in Java?
+* Why does Java require garbage collection?
+* What is the role of the JVM in garbage collection?
+* What is an object eligible for garbage collection?
+* How can an object become eligible for garbage collection?
+* What is heap memory in Java?
+* What is the difference between stack memory and heap memory?
+* What is the difference between an object and a reference variable?
+* Can we force garbage collection in Java?
+* What is the purpose of `System.gc()`?
+* What is the purpose of `Runtime.getRuntime().gc()`?
+* Does calling `System.gc()` guarantee that garbage collection will occur?
+* What is the difference between garbage collection and memory deallocation?
+* What happens to an object when its reference is set to `null`?
+* Can an object become eligible for garbage collection while its method is executing?
+* What is the purpose of the `finalize()` method?
+* Is `finalize()` still recommended in modern Java?
+* What is a memory leak in Java?
+* What are strong references in Java?
+* How can you check the memory usage of a Java application?

@@ -1,0 +1,85 @@
+# Core Java — Collections — Queue
+## Level 2 — Difficult
+
+### Queue Fundamentals
+* How would you design a custom Queue implementation that preserves FIFO semantics and the Queue contract?
+* How would you handle partial processing failures without losing queued tasks?
+* How would you design queue behavior for retries, delayed tasks, and poison messages?
+* What consistency guarantees would you require when several producers and consumers operate concurrently?
+* How would you prevent starvation when different classes of tasks share a queue?
+* How would you design a queue abstraction that supports bounded capacity, metrics, and graceful shutdown?
+
+### PriorityQueue
+* Explain the heap invariants maintained by PriorityQueue during insertion and removal.
+* How would you implement a stable priority queue that preserves insertion order among equal-priority elements?
+* How would you handle tasks whose priorities change while they are waiting in a PriorityQueue?
+* Why can repeatedly removing and reinserting elements become expensive when priorities change frequently?
+* How would you implement a top-K algorithm using PriorityQueue with \(O(n \log k)\) time complexity?
+* How would you implement a priority scheduler that supports cancellation and priority updates?
+* What happens when a Comparator is inconsistent or violates transitivity?
+* How would you benchmark a PriorityQueue against sorting a collection for a workload that processes all elements?
+
+### ArrayDeque
+* How would you implement a circular array-based Deque with correct wraparound and resizing behavior?
+* What invariants must be maintained when adding or removing elements at both ends of a circular buffer?
+* How would you optimize a sliding-window maximum algorithm using a monotonic Deque?
+* What edge cases arise when implementing a Deque that supports null values?
+* How would you design a fixed-capacity Deque with explicit overflow behavior?
+* How would you test a custom Deque implementation for correctness under repeated wraparound and resizing?
+
+### LinkedList as a Queue
+* How would you implement a custom linked queue that avoids unnecessary node allocations?
+* How would you diagnose pointer corruption in a custom linked queue under repeated removals?
+* How would you compare a node-based queue and a circular-array queue in terms of cache locality and allocation pressure?
+* What synchronization strategy would you use if multiple threads must share a custom linked queue?
+* How would you preserve FIFO behavior if processing and queue removal can fail independently?
+
+### Deque Fundamentals
+* How would you use a monotonic Deque to solve sliding-window maximum in linear time?
+* How would you design a work-stealing algorithm using double-ended queues?
+* What trade-offs arise when workers take tasks from opposite ends of a Deque?
+* How would you ensure correct task ownership when a Deque is shared by multiple workers?
+* How would you evaluate whether a concurrent work-stealing Deque is preferable to a shared BlockingQueue?
+
+### BlockingQueue Fundamentals
+* How would you design a producer-consumer pipeline that applies backpressure instead of accumulating unbounded work?
+* What deadlock risks can arise when a thread holds a lock while blocking on a full queue?
+* How would you implement graceful shutdown when producers and consumers are blocked on queue operations?
+* How would you handle interruption and cancellation without losing required work?
+* How would you choose between blocking, timed, and non-blocking queue operations?
+* How would you guarantee that accepted tasks are either processed or explicitly accounted for during shutdown?
+* How would you prevent one slow consumer from causing system-wide latency growth?
+
+### ArrayBlockingQueue and LinkedBlockingQueue
+* How would you size a bounded BlockingQueue using measured arrival rates, service rates, and latency targets?
+* How do different queue capacities affect throughput, tail latency, and memory usage?
+* How would you diagnose contention in a high-throughput ArrayBlockingQueue?
+* Under what workload might LinkedBlockingQueue outperform ArrayBlockingQueue, and what costs should be measured?
+* How would you handle a queue that remains full for extended periods?
+* How would you implement overload policies such as rejection, timed waiting, or controlled dropping?
+* How would you prevent a large queue from hiding a downstream processing bottleneck?
+
+### ConcurrentLinkedQueue
+* What does lock-free progress mean, and how does it differ from wait-free progress?
+* How does a non-blocking queue differ from a blocking queue in terms of thread scheduling and resource usage?
+* Why does using a lock-free queue not automatically make an entire workflow lock-free?
+* How would you handle backpressure when using ConcurrentLinkedQueue?
+* What are the risks of maintaining external counters for a ConcurrentLinkedQueue?
+* How would you investigate high CPU usage caused by repeated polling on an empty non-blocking queue?
+* How would you evaluate whether a non-blocking queue is appropriate for a latency-sensitive application?
+
+### Queue Iteration and Operations
+* How would you process a queue while allowing concurrent producers without losing accepted tasks?
+* How would you define snapshot versus weakly consistent iteration requirements for a concurrent queue?
+* What are the risks of using `size()` to decide whether a concurrent queue has enough work?
+* How would you safely batch-process queued elements while maintaining fairness?
+* How would you handle partial failures when using `drainTo()` to transfer elements into a collection?
+* How would you design observability for queue depth, waiting time, throughput, and rejection counts?
+
+### Queue Performance and Complexity
+* How would you benchmark queue implementations using JMH under both single-threaded and multi-threaded workloads?
+* How would you distinguish queue-operation overhead from task-processing time?
+* How do CPU cache locality, garbage collection, contention, and thread scheduling affect queue performance?
+* How would you investigate a queue that has low throughput despite having available CPU capacity?
+* How would you choose a queue implementation based on throughput, latency, fairness, memory limits, and ordering requirements?
+* How would you identify whether queueing delay or processing delay dominates end-to-end response time?

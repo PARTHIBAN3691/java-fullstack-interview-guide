@@ -1,0 +1,30 @@
+* Your Spring Boot application publishes order events to Kafka, but consumers do not receive them. How would you investigate the problem?
+* A Kafka consumer group experiences rapidly increasing lag during peak traffic. How would you identify the bottleneck and scale the consumers?
+* One Kafka broker fails during business hours. How would you verify that the cluster remains available and determine whether any messages were lost?
+* A producer reports successful sends, but downstream consumers cannot find some records after a broker failure. Which configurations and logs would you inspect?
+* Your application requires strict ordering of events for each customer. How would you design topic keys and partitioning?
+* A topic has 12 partitions, but your application runs 20 consumers in the same consumer group. Explain the resulting behavior and possible improvements.
+* A single partition receives most of the traffic and causes consumer lag. How would you diagnose and fix the hot-partition problem?
+* A consumer repeatedly joins and leaves its group, causing frequent rebalances. How would you identify and resolve the issue?
+* Your producer's throughput is low even though the Kafka cluster has sufficient capacity. How would you investigate batching, compression, acknowledgments, and network latency?
+* A consumer processes a message twice after restarting. How would you investigate offset commits and implement idempotent processing?
+* Your business team wants to replay events from the last seven days. How would you configure retention and implement safe replay?
+* A Kafka topic is growing rapidly and filling broker disks. How would you analyze retention settings and reduce storage pressure?
+* A compacted topic is expected to retain the latest customer state, but consumers still encounter older records. How would you explain and verify compaction behavior?
+* A broker restart causes producer errors and delayed message delivery. How would you distinguish expected leader-election delays from a cluster configuration problem?
+* Your application uses a replication factor of three, but some partitions have fewer in-sync replicas than expected. How would you investigate the cause and protect data durability?
+* A consumer cannot deserialize messages after a producer deployment changes the payload format. How would you restore compatibility without losing events?
+* A team wants to increase a topic's partition count to improve throughput, but the application depends on key-based ordering. What risks would you evaluate before making the change?
+* A new consumer deployment causes a large rebalance and a temporary processing outage. How would you minimize the impact of future deployments?
+* A producer sends messages successfully, but a read_committed consumer cannot see them immediately. What transactional conditions could explain this behavior?
+* Your Kafka cluster is healthy at the broker level, but end-to-end message latency is high. How would you trace latency across producers, brokers, and consumers?
+* An application writes the same business event to Kafka and a relational database. A crash occurs between the two writes. How would you prevent inconsistent state?
+* A financial services application requires durable events, strict authorization, and auditability. How would you configure Kafka and design the surrounding application?
+* A Kafka cluster experiences high disk utilization, high request latency, and under-replicated partitions simultaneously. How would you prioritize investigation and recovery?
+* Your team plans to migrate an existing Kafka deployment from ZooKeeper to KRaft. What compatibility, operational, and rollback considerations would you address?
+* A consumer group is not using all available partitions because some consumers remain idle. How would you investigate partition assignment and consumer subscription?
+* A downstream service becomes slower, and Kafka consumer lag increases until the service is restarted. How would you redesign the consumer to handle backpressure?
+* Your organization needs disaster recovery for Kafka events across two regions. How would you design replication, failover, and duplicate handling?
+* A security audit finds that an application can read topics unrelated to its business function. How would you correct Kafka authentication and authorization?
+* Your Kafka deployment works in development but fails under production load. Which performance metrics and workload characteristics would you compare?
+* You are designing a new event-driven microservices platform. How would you decide which data belongs in Kafka events, how topics should be structured, and how consumers should evolve independently?

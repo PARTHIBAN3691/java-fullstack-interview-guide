@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to publish a text message to an existing SNS topic.
+* Write a Java program to create an SNS topic and print its ARN.
+* Implement a Spring Boot service that publishes an order-created event to SNS as a JSON message.
+* Write a Java method to publish an SNS message with custom message attributes.
+* Implement a Java method that publishes messages to an SNS FIFO topic using a message group ID and deduplication ID.
+* Write a Java service that validates an event before publishing it to SNS.
+* Implement exception handling for SNS publishing failures, including access-denied and throttling errors.
+* Write unit tests for an SNS publisher service using JUnit and Mockito.
+* Implement a Spring Boot REST endpoint that accepts a notification request and publishes it to SNS.
+* Write a Java class that maps an `OrderCreatedEvent` object to a JSON payload before publishing it.
+* Implement a reusable SNS publisher interface with an AWS SDK v2 implementation.
+* Write a Java method that attaches correlation IDs and event types to SNS message attributes.
+* Implement an exponential backoff retry strategy for transient SNS publishing failures, with bounded retries.
+* Write a Java method that uses `PublishBatchRequest` to publish multiple messages and handles partial batch failures.
+* Implement an SNS-to-SQS integration configuration and write a test that verifies the expected event payload.
+* Write a Java utility to validate SNS HTTP notification signatures before trusting incoming notification messages.
+* Implement a Java consumer that processes SNS-originated SQS messages idempotently using a unique event ID.
+* Design a transactional outbox implementation in Spring Boot that reliably publishes committed database events to SNS.
+* Implement a message-filtering strategy that routes order, payment, and shipment events to different subscribers.
+* Design and implement an end-to-end notification service using Spring Boot, SNS, SQS, structured logging, retry handling, and dead-letter queues.

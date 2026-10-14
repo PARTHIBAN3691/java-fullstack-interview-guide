@@ -1,0 +1,30 @@
+* Your Spring Boot repository tests pass with H2 but fail in production PostgreSQL. How would you use Testcontainers to reproduce the issue?
+* A Testcontainers test fails because Docker is not available on the CI agent. How would you investigate and resolve the environment problem?
+* Your integration test fails intermittently because the database container is not ready when the application starts. How would you fix it?
+* Your team has 500 integration tests, and every test starts a new PostgreSQL container. How would you reduce execution time?
+* Multiple tests share one database container and occasionally read each other's records. How would you isolate test data?
+* A Spring Boot test cannot connect to PostgreSQL because the JDBC URL contains an incorrect port. How would you debug it?
+* Your Flyway migration succeeds against H2 but fails against PostgreSQL. How would you test and validate the migration?
+* An application uses PostgreSQL-specific JSONB queries. How would you test these queries reliably?
+* You need to test an application that uses PostgreSQL and Redis together. How would you configure both containers?
+* A Kafka consumer test passes locally but fails in CI because the broker is not ready. How would you make the test reliable?
+* Your application uses Kafka, PostgreSQL, and Redis, and a business transaction spans these components. How would you test the complete workflow?
+* A database container starts but exits unexpectedly during the test. What logs and container details would you inspect?
+* Your Testcontainers suite runs slowly because large datasets are inserted before every test. How would you optimize data initialization?
+* A test modifies the database schema and causes other tests to fail. How would you prevent this interference?
+* You need to verify database rollback when a Spring service throws an exception. How would you write the integration test?
+* A new PostgreSQL version is being introduced. How would you use Testcontainers to validate compatibility before deployment?
+* A service communicates with another container through an internal hostname, but the connection fails. How would you investigate Docker networking?
+* Your organization restricts pulling images from public Docker registries. How would you configure Testcontainers for approved internal images?
+* Your CI agents run tests in parallel, and container resource exhaustion causes failures. How would you address this?
+* A container is marked as started, but its HTTP endpoint returns errors during initialization. How would you configure readiness checks?
+* Your application uses multiple data sources, each with a different database type. How would you create reliable integration tests?
+* You need to test a database migration from an older schema to a newer schema while preserving existing records. How would you approach this?
+* Your Testcontainers tests leave temporary resources behind after a failure. How would you investigate cleanup and lifecycle management?
+* You need to test retry behavior when a database becomes temporarily unavailable. How would you simulate and validate the failure?
+* A team wants to reuse one database container across all test classes to improve speed. What isolation and maintenance risks would you explain?
+* Your application must work with two supported database versions. How would you run the same integration tests against both?
+* A Spring Boot application starts before the dynamic database properties are registered. How would you correct the test configuration?
+* Your integration test depends on a third-party API that is unavailable in CI. How would you replace the dependency with a containerized mock service?
+* A team wants to use Testcontainers in a Kubernetes-based CI pipeline. What infrastructure and execution considerations would you review?
+* How would you design a maintainable Testcontainers testing strategy for a large Java microservices application?

@@ -1,0 +1,30 @@
+* Explain how browsers construct the accessibility tree from semantic HTML.
+* How does semantic HTML influence the accessibility tree and assistive technologies?
+* How do implicit ARIA roles differ from explicitly assigned ARIA roles?
+* What is the first rule of ARIA, and why should native HTML semantics be preferred?
+* How can incorrect ARIA attributes override or weaken native HTML semantics?
+* How do landmark elements help screen-reader users navigate a complex webpage?
+* What problems can occur when a page contains multiple navigation landmarks without accessible names?
+* How would you design a semantic structure for a large enterprise dashboard?
+* How would you structure nested articles and sections without creating an unclear document hierarchy?
+* How do heading structure and landmark structure complement each other?
+* How can semantic HTML be used to build accessible data tables?
+* How would you represent complex tables with grouped headers using semantic HTML?
+* What are the accessibility implications of using headings only for visual styling?
+* How can CSS visual order differ from the logical reading order of semantic HTML?
+* Why should DOM order and visual order be considered separately?
+* How would you make a custom interactive component accessible while preserving semantic meaning?
+* What limitations arise when generic elements are used for interactive controls?
+* How do semantic HTML elements contribute to progressive enhancement?
+* How can semantic HTML improve resilience when CSS or JavaScript fails?
+* What are the SEO benefits and limitations of semantic HTML?
+* Does using semantic elements automatically improve search-engine rankings? Explain.
+* How would you identify redundant or conflicting ARIA roles in an existing application?
+* How can semantic HTML reduce the amount of custom JavaScript needed for accessibility?
+* How would you evaluate whether an element should be an <article>, <section>, or <div>?
+* What considerations apply when choosing between native disclosure elements and custom widgets?
+* How do the <details> and <summary> elements provide built-in interaction semantics?
+* How would you semantically represent dates, measurements, citations, and deleted content?
+* How can automated accessibility tools identify semantic HTML problems, and what can they miss?
+* How would you audit a large application for inconsistent semantic markup?
+* How would you establish semantic HTML standards for a team building a reusable component library?

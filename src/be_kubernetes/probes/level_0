@@ -1,0 +1,30 @@
+* What are probes in Kubernetes?
+* Why are probes required in Kubernetes?
+* What are the different types of Kubernetes probes?
+* What is a liveness probe?
+* What is a readiness probe?
+* What is a startup probe?
+* What is the difference between liveness and readiness probes?
+* What is the difference between readiness and startup probes?
+* What is the difference between liveness and startup probes?
+* How does Kubernetes use probes to monitor container health?
+* What happens when a liveness probe fails?
+* What happens when a readiness probe fails?
+* What happens when a startup probe fails?
+* What is an initialDelaySeconds field?
+* What is the purpose of periodSeconds?
+* What does timeoutSeconds specify?
+* What is failureThreshold in a probe configuration?
+* What is successThreshold in a probe configuration?
+* What is the default value of failureThreshold?
+* What is the default value of periodSeconds?
+* What probe handler types are supported by Kubernetes?
+* What is an HTTP GET probe?
+* What is a TCP socket probe?
+* What is an exec probe?
+* What is the difference between HTTP and TCP probes?
+* What is the purpose of the probe port field?
+* Can a Pod have multiple probes configured?
+* Can readiness and liveness probes use different endpoints?
+* How do probes affect traffic routing to a Kubernetes Service?
+* How can you check probe failures using kubectl?

@@ -1,0 +1,30 @@
+* Create a Spring MVC controller that returns a simple welcome page.
+* Build a Spring MVC application with a controller, service, model, and view.
+* Implement CRUD endpoints for an Employee resource using Spring MVC.
+* Write controller methods using @GetMapping, @PostMapping, @PutMapping, and @DeleteMapping.
+* Create an endpoint that accepts path variables and query parameters.
+* Implement a controller that accepts JSON using @RequestBody and returns a JSON response.
+* Create a form submission flow using @ModelAttribute and server-side validation.
+* Implement custom validation for an Employee request DTO using Bean Validation.
+* Write a controller method that uses BindingResult to return validation errors.
+* Create global exception handling using @ControllerAdvice and @ExceptionHandler.
+* Implement a standardized REST error response containing status, message, timestamp, and request path.
+* Create a custom Converter that converts a String value into a domain-specific Java object.
+* Implement a custom Formatter for converting dates in request parameters.
+* Write a Spring MVC interceptor that logs request duration and correlation IDs.
+* Configure an interceptor to apply only to selected URL patterns.
+* Implement a servlet filter that adds a correlation ID to every HTTP request.
+* Create a file upload endpoint using MultipartFile with file-size and file-type validation.
+* Implement a file download endpoint that streams content to the HTTP response.
+* Create a controller that supports pagination and sorting for employee records.
+* Implement content negotiation for JSON and XML responses.
+* Write a custom HandlerMethodArgumentResolver for injecting the current authenticated user into controller methods.
+* Implement a custom annotation for validating a controller method parameter.
+* Create an asynchronous controller using DeferredResult for a long-running operation.
+* Implement an asynchronous request using Callable and configure appropriate timeout handling.
+* Write MockMvc tests for successful requests, invalid input, and missing resources.
+* Test a controller interceptor and verify that it executes before and after request handling.
+* Write integration tests for global exception handling and validation responses.
+* Implement API versioning using request headers or URL paths in Spring MVC.
+* Secure a Spring MVC endpoint using Spring Security and role-based access control.
+* Build a complete Spring MVC application with DTOs, validation, global exception handling, interceptors, pagination, security, and comprehensive tests.

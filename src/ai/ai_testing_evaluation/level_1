@@ -1,0 +1,113 @@
+**AI Testing Fundamentals**
+* How would you create a testing strategy covering prompts, models, retrieval, tools, APIs, and user-facing behavior?
+* How would you test a nondeterministic application without requiring exact text equality?
+* How would you determine the right balance between unit, integration, end-to-end, and evaluation tests?
+* How would you define quality gates that must pass before an AI application can be released?
+
+**LLM Evaluation Metrics**
+* How would you select evaluation metrics for summarization, question answering, classification, and code generation?
+* How would you combine task-specific metrics with relevance, groundedness, safety, and human preference scores?
+* How would you evaluate open-ended responses when multiple answers can be correct?
+* How would you interpret conflicting metrics, such as improved relevance but reduced factual accuracy?
+
+**Functional Testing of AI Applications**
+* How would you test LLM API integration, including timeouts, rate limits, retries, malformed responses, and provider errors?
+* How would you mock model responses in deterministic application unit tests while retaining separate real-model evaluation tests?
+* How would you test structured outputs against JSON schemas and business rules?
+* How would you verify that user identity, authorization, and conversation context are handled correctly across requests?
+
+**Prompt Regression Testing**
+* How would you design a regression suite to compare two versions of a system prompt?
+* How would you detect subtle behavioral changes when generated responses differ in wording but retain the same meaning?
+* How would you test prompt templates with missing variables, long inputs, multilingual content, and conflicting instructions?
+* How would you integrate prompt regression tests into a continuous integration pipeline?
+
+**Golden Dataset Testing**
+* How would you construct a golden dataset for an enterprise chatbot with multiple intents and user groups?
+* How would you handle questions with multiple valid answers or answers that change over time?
+* How would you prevent golden datasets from becoming biased toward common scenarios?
+* How would you establish review and approval workflows for adding or modifying golden examples?
+
+**Groundedness and Faithfulness Evaluation**
+* How would you evaluate whether each factual claim in a generated answer is supported by the supplied context?
+* How would you distinguish retrieval-grounding failures from generation-faithfulness failures?
+* How would you handle answers supported by several passages that partially contradict one another?
+* How would you measure groundedness when the response contains both factual statements and reasonable inferences?
+
+**Answer Relevance**
+* How would you measure answer relevance when a response contains correct information but misses the user's main intent?
+* How would you evaluate relevance for multi-part questions and multi-turn conversations?
+* How would you detect irrelevant details, incomplete answers, and unnecessary verbosity?
+* How would you design a rubric that separates relevance from correctness and completeness?
+
+**Retrieval Precision and Recall**
+* How would you calculate precision@k, recall@k, and mean reciprocal rank for a retrieval system?
+* How would you select the value of k for a RAG pipeline?
+* How would you evaluate retrieval when a question has multiple relevant documents or passages?
+* How would you diagnose a system with high recall but low precision?
+
+**Hallucination Evaluation**
+* How would you create a test dataset containing answerable, unanswerable, and ambiguous questions?
+* How would you measure unsupported claims at the sentence or claim level?
+* How would you evaluate whether a model correctly abstains when the retrieved context lacks evidence?
+* How would you distinguish factual errors caused by stale knowledge from hallucinations caused by unsupported generation?
+
+**LLM-as-a-Judge**
+* How would you design a judge prompt with explicit criteria, scoring ranges, and examples?
+* How would you reduce position bias, verbosity bias, and preference for the judge's own response style?
+* How would you compare LLM-judge scores against a human-labeled reference set?
+* How would you decide when judge disagreement requires human adjudication?
+
+**Human Evaluation**
+* How would you create annotation guidelines for factuality, helpfulness, safety, and completeness?
+* How would you measure inter-annotator agreement and investigate disagreement?
+* How would you reduce reviewer fatigue and anchoring during pairwise model comparisons?
+* How would you select a representative human-evaluation sample within a limited budget?
+
+**Adversarial Testing**
+* How would you generate adversarial cases that challenge instruction following, factuality, and input robustness?
+* How would you test Unicode manipulation, encoding variations, malformed inputs, and unusually long prompts?
+* How would you distinguish genuine robustness failures from irrelevant changes in response wording?
+* How would you prioritize adversarial test cases by exploitability, impact, and likelihood?
+
+**Red Teaming**
+* How would you scope a red-team exercise for an LLM application that can access private documents and execute tools?
+* How would you create a threat model covering prompt injection, data exfiltration, unsafe tool use, and privilege escalation?
+* How would you reproduce and document a red-team finding so that engineers can reliably validate the fix?
+* How would you define severity levels and retesting criteria for AI security findings?
+
+**AI Safety Testing**
+* How would you test refusal behavior across disallowed requests and legitimate educational or defensive requests?
+* How would you measure false refusals and unsafe compliance using a labeled safety evaluation dataset?
+* How would you test moderation, policy enforcement, and output filtering as separate controls?
+* How would you validate that safety improvements do not create significant regressions in task usefulness?
+
+**RAG Evaluation Frameworks**
+* How would you evaluate context precision, context recall, answer relevance, faithfulness, and answer correctness in a RAG system?
+* How would you select an evaluation framework based on the application's architecture and available ground truth?
+* How would you create reference datasets containing questions, expected answers, source documents, and relevance labels?
+* How would you combine component-level metrics with end-to-end user outcome metrics?
+
+**Agent Workflow Testing**
+* How would you test agent planning, tool selection, argument generation, and final-response quality independently?
+* How would you verify that an agent recovers correctly from tool failures and partial results?
+* How would you test state persistence and checkpoint recovery across interrupted workflows?
+* How would you detect unnecessary tool calls, infinite loops, and repeated actions?
+
+**Load and Performance Testing**
+* How would you design load tests for streaming LLM APIs with variable input and output token lengths?
+* How would you measure p50, p95, and p99 latency, throughput, token consumption, and error rates?
+* How would you test rate limiting, concurrency limits, backpressure, and graceful degradation?
+* How would you distinguish model inference bottlenecks from retrieval, orchestration, networking, and database bottlenecks?
+
+**Model Regression Testing**
+* How would you compare a new model version against the current production model using identical test conditions?
+* How would you detect regressions across different task categories rather than relying on one aggregate score?
+* How would you establish acceptable regression thresholds for quality, safety, latency, and cost?
+* How would you handle evaluation variability caused by nondeterministic decoding and provider-side changes?
+
+**Evaluation Dataset Management**
+* How would you version datasets, labels, evaluation rubrics, and data-processing pipelines together?
+* How would you detect contamination between training, validation, test, and production-derived evaluation datasets?
+* How would you refresh evaluation datasets without losing the ability to compare results with earlier releases?
+* How would you protect confidential data and control access to sensitive evaluation examples?

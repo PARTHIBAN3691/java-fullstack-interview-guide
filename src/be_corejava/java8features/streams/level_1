@@ -1,0 +1,26 @@
+
+* What is lazy evaluation in Java Streams?
+* Why are intermediate operations executed lazily?
+* What happens when a Stream pipeline contains intermediate operations but no terminal operation?
+* What is the difference between `map()` and `flatMap()`?
+* What is the difference between `findFirst()` and `findAny()`?
+* What is the difference between `anyMatch()`, `allMatch()`, and `noneMatch()`?
+* What is the difference between `reduce()` and `collect()`?
+* How does the `reduce()` operation work?
+* What is the purpose of `Collectors.toList()`?
+* What is the difference between `Collectors.toList()` and `Collectors.toSet()`?
+* How does `Collectors.joining()` work?
+* How do you group objects using `Collectors.groupingBy()`?
+* How do you partition a collection using `Collectors.partitioningBy()`?
+* What is the difference between `groupingBy()` and `partitioningBy()`?
+* How do you calculate the sum and average of numeric values using Streams?
+* How do you find the minimum and maximum values in a Stream?
+* How do you sort objects using a custom Comparator in Streams?
+* How do you remove duplicate objects based on their default equality implementation?
+* How do you convert a Stream of strings into a comma-separated string?
+* How do you convert a Stream into a Map using `Collectors.toMap()`?
+* What happens when `Collectors.toMap()` encounters duplicate keys?
+* What is the difference between `mapToInt()`, `mapToLong()`, and `mapToDouble()`?
+* What are primitive Streams, such as `IntStream` and `LongStream`?
+* What is the difference between sequential and parallel Streams?
+* What are the common pitfalls when using side effects inside Stream operations?

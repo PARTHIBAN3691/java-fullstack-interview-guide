@@ -1,0 +1,98 @@
+
+**Database CI/CD**
+* What is Database CI/CD, and how does it differ from application CI/CD?
+* Why should database changes be included in the software delivery pipeline?
+* What are the common stages of a database CI/CD pipeline?
+* How do automated database tests improve release quality?
+* What risks arise when database changes are deployed manually?
+
+**Database Migrations**
+* What is a database migration?
+* Why are database migrations required during application upgrades?
+* What is the difference between a schema migration and a data migration?
+* What information should a database migration script contain?
+* Why should database migration scripts be version-controlled?
+
+**Flyway**
+* What is Flyway, and why is it used in database deployments?
+* What is the purpose of Flyway versioned migration scripts?
+* What naming convention is commonly used for Flyway migration files?
+* What is the role of the Flyway schema history table?
+* What is the difference between versioned and repeatable migrations?
+
+**Liquibase**
+* What is Liquibase, and what problems does it solve?
+* What are changesets in Liquibase?
+* What is the difference between XML, YAML, JSON, and SQL changelogs?
+* What is the purpose of the Liquibase changelog table?
+* What are preconditions in Liquibase?
+
+**Schema Versioning**
+* What is database schema versioning?
+* Why should database schema changes have version numbers?
+* How can teams track the schema version deployed to each environment?
+* What is the difference between database schema versioning and application versioning?
+* Why should migration history be retained?
+
+**Backward-Compatible Schema Changes**
+* What is a backward-compatible database schema change?
+* Why is backward compatibility important during application deployments?
+* What is the expand-and-contract migration pattern?
+* Why is adding a nullable column often safer than immediately adding a required column?
+* What risks arise when a column is renamed or dropped while older application versions are running?
+
+**Zero-Downtime Migrations**
+* What is a zero-downtime database migration?
+* Why should database changes avoid blocking application traffic?
+* How can database schema changes be deployed while the application remains available?
+* What is the difference between an online migration and a maintenance-window migration?
+* Why should long-running database operations be monitored during deployment?
+
+**Database Rollback Strategies**
+* What is a database rollback?
+* How does a database rollback differ from an application rollback?
+* Why can reverting a database migration be more difficult than reverting application code?
+* What is a forward-fix strategy?
+* Why should rollback procedures be tested before production deployment?
+
+**Database Backup Automation**
+* Why should database backups be automated?
+* What is the difference between a full backup and an incremental backup?
+* What are Recovery Point Objective (RPO) and Recovery Time Objective (RTO)?
+* Why should backup integrity be verified?
+* Why should backup files be protected from unauthorized access?
+
+**Database Replication**
+* What is database replication?
+* What is the difference between synchronous and asynchronous replication?
+* What is the difference between a primary-replica architecture and multi-primary replication?
+* How can replication improve read scalability?
+* What is replication lag, and why does it matter?
+
+**Database Deployment Pipelines**
+* What are the typical stages of a database deployment pipeline?
+* How can database migrations be executed automatically during a release?
+* Why should database changes be validated in a non-production environment first?
+* What is the purpose of a deployment approval gate?
+* How can a pipeline prevent the same migration from being applied incorrectly more than once?
+
+**Database Observability**
+* What is database observability?
+* What is the difference between database logs, metrics, and traces?
+* Which database metrics should be monitored continuously?
+* How can slow-query logs help identify application issues?
+* Why should database monitoring alerts include actionable context?
+
+**Database Performance Monitoring**
+* Which metrics are useful for monitoring database performance?
+* What is query latency?
+* What is the difference between CPU utilization and database query execution time?
+* How can slow queries affect application response times?
+* Why should database connection counts be monitored?
+
+**Connection Pool Management**
+* What is a database connection pool?
+* Why do applications use connection pooling?
+* What is the purpose of maximum pool size and minimum idle connections?
+* What is connection acquisition timeout?
+* What problems can occur when a connection pool is too small or too large?

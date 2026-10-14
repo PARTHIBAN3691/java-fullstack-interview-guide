@@ -1,0 +1,30 @@
+* Implement a basic hash table in Java using an array and separate chaining.
+* Implement a custom hash table using open addressing and linear probing.
+* Implement a custom hash table using quadratic probing.
+* Implement a hash table using double hashing for collision resolution.
+* Write a Java method to calculate the load factor of a custom hash table.
+* Implement dynamic resizing and rehashing in a custom Java hash table.
+* Implement insertion, lookup, and deletion for a hash table that uses separate chaining.
+* Implement deletion using tombstones in a hash table that uses open addressing.
+* Create a Java class representing a custom key and correctly override equals() and hashCode().
+* Write a Java program to count the frequency of each element in an array using HashMap.
+* Write a Java program to find duplicate elements in an array using HashSet.
+* Solve the two-sum problem in Java using HashMap.
+* Write a Java program to find the first non-repeating character in a string.
+* Write a Java method to check whether two strings are anagrams using a frequency map.
+* Write a Java program to group anagrams from a list of strings.
+* Write a Java solution to find the intersection of two arrays using hashing.
+* Write a Java method to find the longest consecutive sequence in an array using HashSet.
+* Write a Java program to find the longest substring without repeating characters using a HashSet or HashMap.
+* Implement an LRU cache in Java using HashMap and a doubly linked list.
+* Implement an LFU cache in Java using hash-based data structures.
+* Write a Java program to find the top K frequent elements using a HashMap and priority queue.
+* Implement a hash-based index for employee records using employee ID as the key.
+* Write a Java program to compare the performance of HashMap, TreeMap, and a custom hash table for insertions and lookups.
+* Create a Java multithreaded frequency counter using ConcurrentHashMap and atomic update methods.
+* Write a Java program that demonstrates why changing a key's hashCode-related fields after insertion can break HashMap lookups.
+* Implement a consistent hashing ring in Java and distribute keys across several server nodes.
+* Extend the consistent hashing implementation to support adding and removing nodes with minimal key redistribution.
+* Write a Java program to measure collision frequency and lookup performance under different hash functions and load factors.
+* Implement a custom hash table that supports null values, resizing, and collision handling, and test its edge cases.
+* Create a Java Spring Boot REST API that stores and retrieves key-value records using a hash-based data structure, supports concurrent requests, and includes unit tests and performance benchmarks.

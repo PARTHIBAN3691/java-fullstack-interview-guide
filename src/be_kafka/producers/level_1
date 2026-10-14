@@ -1,0 +1,30 @@
+* How do you create a Kafka producer in Java?
+* How do you configure a Kafka producer using `ProducerConfig`?
+* How does `KafkaProducer.send()` work?
+* What is the difference between `send()` and `send().get()`?
+* How do you handle Kafka producer callbacks?
+* What information is available in `RecordMetadata`?
+* How do you determine the partition to which a message was sent?
+* How do you configure a custom Kafka partitioner?
+* How does the default Kafka partitioner work?
+* How does a producer handle records with null keys?
+* How does a producer handle records with non-null keys?
+* How do `batch.size` and `linger.ms` improve producer throughput?
+* How does producer compression work?
+* How do you choose between `gzip`, `snappy`, `lz4`, and `zstd`?
+* How does `acks` affect producer reliability and performance?
+* How does the `retries` configuration work?
+* What is the purpose of `delivery.timeout.ms`?
+* What is `request.timeout.ms`?
+* What is `max.block.ms`?
+* What happens when the producer buffer is full?
+* What is `max.in.flight.requests.per.connection`?
+* How does idempotent producer mode work?
+* How do you enable idempotence for a Kafka producer?
+* What is the relationship between idempotence and retries?
+* How does Kafka producer batching work internally?
+* How does a Kafka producer handle broker failures?
+* How do you handle serialization exceptions in a producer?
+* How do you handle `TimeoutException` from a producer?
+* How do you configure a Kafka producer in Spring Boot?
+* How does `KafkaTemplate` simplify Kafka producer development?

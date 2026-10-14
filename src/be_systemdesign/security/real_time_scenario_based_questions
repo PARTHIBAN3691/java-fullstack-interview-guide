@@ -1,0 +1,30 @@
+* A user changes the user ID in an API request and accesses another customer's order. How would you fix the authorization design?
+* Your Spring Boot application accepts expired JWTs under certain conditions. How would you investigate and correct the validation logic?
+* An employee leaves the organization, but their access token remains valid for several hours. How would you design timely access revocation?
+* A microservice is compromised, and its credentials allow access to every other service. How would you reduce the blast radius?
+* A payment API receives the same signed request multiple times, resulting in duplicate payment attempts. How would you prevent replay and duplicate processing?
+* A database backup containing customer information is exposed. What encryption, access-control, and incident-response measures would you apply?
+* A developer accidentally commits production credentials to a Git repository. How would you respond and prevent recurrence?
+* Your application logs contain access tokens and customer personal information. How would you contain the exposure and redesign logging?
+* A third-party OAuth provider becomes unavailable, preventing users from logging in. How would you manage availability without weakening security?
+* An API key is leaked and is being used from unfamiliar locations. How would you detect abuse, revoke access, and rotate credentials?
+* A user has a valid role but should not access a particular customer's records. How would you implement object-level authorization?
+* A multi-tenant application accidentally returns data belonging to another tenant. How would you investigate and prevent cross-tenant data exposure?
+* A JWT is accepted even though it was signed using an unexpected algorithm. How would you fix the token validation process?
+* An attacker repeatedly attempts passwords against multiple accounts from different IP addresses. How would you design effective protection?
+* A public API is being overwhelmed by automated requests from many IP addresses. How would you combine rate limiting, bot detection, and abuse monitoring?
+* A service communicates with a downstream API over an unencrypted internal network. How would you secure the communication?
+* An internal service trusts requests based only on their source IP address. How would you redesign its identity and authorization model?
+* A production encryption key is suspected to be compromised. How would you rotate it and protect previously encrypted data?
+* A malicious file is uploaded through an otherwise authenticated endpoint. How would you prevent malware execution and unauthorized file access?
+* A stored XSS vulnerability allows an attacker to execute scripts in another user's browser. How would you remediate it?
+* A state-changing API can be triggered from a malicious website while a user is logged in. How would you protect against CSRF?
+* A dependency update introduces a critical vulnerability in a transitive Java library. How would you assess and remediate the risk?
+* A Kafka consumer processes sensitive customer events, but unauthorized applications can subscribe to the topic. How would you secure the messaging infrastructure?
+* An administrator can access production customer records without a business justification. How would you introduce least privilege and auditable access?
+* A service account has broad permissions across cloud resources. How would you reduce its privileges without disrupting production?
+* A security audit requires proof of who accessed or changed a sensitive record. How would you design the audit trail?
+* A failover causes the application to use a backup service with weaker authorization rules. How would you ensure security remains consistent during failover?
+* Your application must integrate with multiple identity providers using different protocols. How would you build a secure, maintainable identity integration layer?
+* A security team detects suspicious requests that exploit differences between proxy and application HTTP parsing. How would you investigate request smuggling risks?
+* You are designing a financial platform handling sensitive customer data and payments. How would you combine identity, authorization, encryption, auditability, and fraud controls?

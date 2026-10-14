@@ -1,0 +1,21 @@
+
+* Write a Spring Boot REST controller that exposes a customer API and can be published through Azure API Management.
+* Create an OpenAPI specification for a Spring Boot REST API with GET, POST, PUT, and DELETE operations.
+* Write an APIM inbound policy that validates a required subscription key before forwarding a request.
+* Write an APIM policy that validates a JWT issued by Microsoft Entra ID.
+* Create an APIM policy that limits requests to a specified number per time window.
+* Write an APIM policy that returns a custom HTTP response when a request exceeds the allowed quota.
+* Implement an APIM policy that adds a correlation ID to incoming requests and forwards it to the Java backend.
+* Write an APIM policy that rewrites an incoming URL to match a Spring Boot backend endpoint.
+* Create an APIM policy that adds or removes HTTP headers before forwarding a request.
+* Write an APIM policy that transforms a JSON response from a Java service into a different response structure.
+* Implement an APIM policy that routes requests to different backend services based on a request header.
+* Write an APIM policy that restricts API access to specified IP address ranges.
+* Create an APIM policy that caches eligible GET responses and returns cached results when appropriate.
+* Implement an APIM policy that obtains a backend access token using a managed identity.
+* Write a Spring Security configuration that validates JWT tokens for a backend API exposed through APIM.
+* Implement a Java request filter that propagates correlation IDs across downstream REST calls.
+* Write unit and integration tests for a Spring Boot API that verify JWT authentication, authorization, and error handling.
+* Create an Azure DevOps pipeline that deploys OpenAPI definitions and APIM policies across development, staging, and production.
+* Implement a Java client that calls an APIM-protected endpoint using OAuth 2.0 access tokens and handles HTTP 401, 403, and 429 responses.
+* Design and implement an end-to-end API management solution using Spring Boot, Azure API Management, Microsoft Entra ID, managed identity, Azure Key Vault, centralized monitoring, and automated deployment.

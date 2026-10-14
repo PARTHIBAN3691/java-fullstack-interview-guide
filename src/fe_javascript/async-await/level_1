@@ -1,0 +1,30 @@
+* How does async/await simplify Promise handling?
+* What is the difference between returning a value and returning Promise.resolve() from an async function?
+* How does try...catch handle rejected Promises when using await?
+* What happens if an awaited Promise rejects without a surrounding try...catch?
+* How do you handle errors when calling multiple async functions?
+* What is the difference between sequential and parallel execution using async/await?
+* How do you execute multiple asynchronous tasks sequentially?
+* How do you execute multiple asynchronous tasks concurrently using Promise.all()?
+* What is the difference between Promise.all() and Promise.allSettled()?
+* What happens when one Promise rejects inside Promise.all()?
+* What is the purpose of Promise.race()?
+* What is the purpose of Promise.any()?
+* Can you use await inside a regular non-async function?
+* What is top-level await in JavaScript?
+* Where is top-level await supported?
+* What happens when await is used with a non-Promise value?
+* How do you use async/await with the Fetch API?
+* Why should you check response.ok when using fetch()?
+* How do you handle HTTP errors separately from network errors?
+* How do you pass parameters to an async function?
+* How can one async function call and await another async function?
+* What is the difference between await inside a loop and Promise.all()?
+* Why can await inside a for...of loop be useful?
+* What are the problems with using await inside Array.forEach()?
+* How do you correctly process an array using asynchronous operations?
+* How do you use async/await with Promise-based file or database APIs?
+* How do you add a timeout to an asynchronous operation?
+* What is the purpose of AbortController when working with async/await?
+* How do finally blocks work with asynchronous operations?
+* How do you prevent unhandled Promise rejections?

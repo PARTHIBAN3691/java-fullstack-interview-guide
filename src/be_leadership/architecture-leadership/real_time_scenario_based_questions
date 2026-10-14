@@ -1,0 +1,30 @@
+* Your organization has a large Java monolith that is becoming difficult to maintain. How would you assess whether to modernize it or migrate to microservices?
+* Two development teams propose different architectures for a new business platform. How would you evaluate the proposals and reach a decision?
+* A new business requirement conflicts with the current architecture. How would you assess the impact and guide the team toward a solution?
+* A microservices platform experiences cascading failures when one downstream service becomes unavailable. How would you redesign the architecture?
+* Multiple teams implement authentication and logging differently across their Spring Boot services. How would you establish common architectural standards?
+* A system meets its functional requirements but fails under peak traffic. How would you lead the investigation and architecture redesign?
+* A database has become the primary bottleneck in a distributed application. How would you evaluate indexing, caching, partitioning, and service-level changes?
+* A team wants to introduce Kafka for every inter-service communication. How would you evaluate whether event-driven communication is justified?
+* A critical business workflow spans five microservices and occasionally leaves inconsistent data. How would you design reliable transaction coordination?
+* An enterprise application must support zero-downtime releases while multiple teams deploy independently. What architectural and operational practices would you establish?
+* A legacy system contains tightly coupled modules, and a complete rewrite is too risky. How would you plan incremental modernization?
+* A security review discovers that internal services trust requests without validating caller identity. How would you define a secure target architecture?
+* A new platform has high cloud costs despite moderate traffic. How would you lead an architecture and cost-efficiency review?
+* Two teams independently build the same shared capability, creating duplication and inconsistent behavior. How would you address the problem?
+* Developers frequently introduce circular dependencies between Java modules. How would you improve modularity and enforce architectural boundaries?
+* A business stakeholder demands a fixed delivery date for a feature that requires substantial architectural changes. How would you manage scope, risk, and expectations?
+* A proposed cloud migration improves scalability but increases operational complexity and cost. How would you assess the trade-offs?
+* A distributed application experiences duplicate payment processing because messages are delivered more than once. How would you redesign the processing flow?
+* A service migration introduces breaking API changes for several consumers. How would you establish a safer API evolution strategy?
+* Your architecture review process has become a bottleneck for delivery teams. How would you redesign governance while maintaining appropriate controls?
+* A team rejects a recommended architecture standard because it does not fit its use case. How would you handle the exception and evaluate whether the standard needs revision?
+* An application must support active-active deployment across regions while maintaining business data consistency. How would you approach the architecture?
+* A new technology has been selected by senior management without an adequate technical assessment. How would you evaluate it and communicate the risks?
+* A production incident reveals that the system has no clear ownership boundaries between teams. How would you improve architecture ownership and operational accountability?
+* A company is moving from project-based delivery to product-oriented teams. How would you align architecture ownership with team responsibilities?
+* A legacy application has undocumented business rules embedded in stored procedures and Java code. How would you lead discovery and modernization?
+* An enterprise platform needs stronger auditability and data privacy controls without significantly affecting performance. How would you incorporate these requirements?
+* A team proposes a shared database for all microservices to simplify reporting. How would you evaluate the short-term benefits and long-term architectural risks?
+* A platform team wants to enforce a standard technology stack, while product teams want freedom to choose tools. How would you define a balanced governance model?
+* How would you lead a post-incident architecture review after a major outage and convert the findings into measurable improvements?

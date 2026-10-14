@@ -1,0 +1,21 @@
+
+* A Java Spring Boot Docker image builds successfully on a developer machine but fails when pushed to Azure Container Registry. How would you troubleshoot the issue?
+* An Azure DevOps pipeline receives an unauthorized error while pushing an image to ACR. How would you investigate credentials and RBAC assignments?
+* An AKS deployment fails with `ImagePullBackOff` even though the image exists in ACR. How would you diagnose authentication, image naming, network, and permission issues?
+* A production deployment pulls an outdated image because the pipeline reused the same tag. How would you prevent this problem?
+* A container image contains a critical vulnerability discovered after deployment. How would you assess the impact and replace the image safely?
+* A Java application image is several gigabytes in size and takes too long to deploy. How would you optimize the Dockerfile and build pipeline?
+* A registry is inaccessible from an AKS cluster after private endpoint configuration. How would you troubleshoot DNS resolution, routing, and access permissions?
+* An application deployment works in development but fails in production because the image is missing from the production registry. How would you design image promotion and replication?
+* Multiple teams share one ACR instance and require isolated repository access. How would you configure permissions and governance?
+* A developer accidentally pushes a broken image with the production tag. How would you recover and prevent similar mistakes?
+* A cleanup job deletes image versions that are still required for rollback. How would you redesign image retention and deletion safeguards?
+* Image pulls become slow during a large production rollout across multiple AKS nodes. How would you investigate caching, replication, throttling, and network performance?
+* A registry's storage usage has increased unexpectedly. How would you identify duplicate layers, unused images, and retention opportunities?
+* A security audit finds database credentials embedded in a container image. What immediate remediation steps would you take, and how would you prevent recurrence?
+* A CI/CD pipeline needs to deploy an image only after successful unit tests, integration tests, and security scanning. How would you implement these quality gates?
+* A Java service is migrated to a new base image and starts failing at runtime. How would you investigate compatibility, certificates, JVM settings, and operating-system dependencies?
+* An AKS cluster can pull images using administrator credentials but fails when using managed identity. How would you troubleshoot identity configuration and role assignments?
+* A regional Azure outage prevents deployments from accessing the primary ACR endpoint. How would you design regional resilience and validate failover behavior?
+* Your organization requires traceability from a source-code commit to the exact container image deployed in production. How would you implement provenance, digest tracking, and release records?
+* A deployment must be rolled back to a previously approved Java image without rebuilding it. How would you design immutable artifact promotion and rollback?

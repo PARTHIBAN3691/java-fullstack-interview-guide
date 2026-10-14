@@ -1,0 +1,97 @@
+**Embedding Fundamentals**
+* How would you build an embedding pipeline for documents stored in object storage?
+* How would you normalize text before generating embeddings?
+* How would you determine whether two embedding vectors are comparable?
+* How would you evaluate embedding quality for a domain-specific dataset?
+* How would you handle embedding generation failures during a large ingestion job?
+
+**Text and Multimodal Embeddings**
+* How would you implement semantic search across text descriptions and product images?
+* How would you handle different preprocessing requirements for text, images, and audio?
+* How would you compare vectors generated from different modalities?
+* How would you design a retrieval pipeline that supports both text-to-image and image-to-text search?
+* How would you evaluate multimodal retrieval quality across different content types?
+
+**Semantic Similarity**
+* How would you select a similarity threshold for duplicate-question detection?
+* How would you evaluate semantic similarity for domain-specific terminology?
+* How would you distinguish semantically equivalent statements from statements that merely share keywords?
+* How would you handle negation, contradictory statements, and context-dependent meanings?
+* How would you measure precision and recall for a semantic retrieval system?
+
+**Cosine Similarity and Distance Metrics**
+* When would you use cosine similarity, dot product, or Euclidean distance?
+* How does vector normalization affect cosine similarity and dot-product ranking?
+* Why can cosine similarity and Euclidean distance produce different rankings?
+* How would you select a distance metric for a particular embedding model?
+* How would you implement and unit-test cosine similarity for vectors in Java?
+
+**Vector Indexing**
+* How would you choose an index configuration for a dataset containing millions of vectors?
+* What are the main differences between HNSW and IVF-style vector indexes?
+* How do index construction parameters affect ingestion time, memory consumption, and search quality?
+* How would you balance index build time against query latency?
+* How would you handle index updates when records are inserted, updated, or deleted frequently?
+
+**Approximate Nearest Neighbor (ANN) Search**
+* How would you measure ANN recall against exact nearest-neighbor results?
+* How do search parameters affect the trade-off between recall and latency?
+* How would you tune HNSW search parameters for a latency-sensitive application?
+* When would exact search be more appropriate than ANN search?
+* How would you diagnose a decline in retrieval recall after a dataset grows substantially?
+
+**Vector Database Architecture**
+* How would you design a vector database schema for a multi-tenant document-search application?
+* How would you choose between a managed vector database and a self-hosted deployment?
+* How would you handle vector persistence, backups, replication, and recovery?
+* How would you store document identifiers, chunk text, metadata, and embeddings consistently?
+* How would you design ingestion and query paths separately for scalability?
+
+**Metadata Filtering**
+* How would you implement tenant-specific vector search while preventing cross-tenant data leakage?
+* How do selective and non-selective metadata filters affect vector-search performance?
+* How would you filter by access permissions, document type, timestamp, and language?
+* When is pre-filtering preferable to post-filtering?
+* How would you test whether filtered ANN search returns enough relevant results?
+
+**Hybrid Search**
+* How would you combine BM25 results with vector-search results?
+* What is Reciprocal Rank Fusion (RRF), and when would you use it?
+* How would you tune the relative contribution of lexical and semantic retrieval?
+* How would you handle exact identifiers, product codes, and error messages alongside natural-language queries?
+* How would you evaluate hybrid search against keyword-only and vector-only baselines?
+
+**Reranking**
+* How would you design a retrieval pipeline that retrieves many candidates and reranks a smaller subset?
+* What are the latency and computational trade-offs of cross-encoder reranking?
+* How would you choose the number of candidates passed to a reranker?
+* How would you measure the impact of reranking on retrieval precision and downstream answer quality?
+* How would you handle reranker failures without making the entire search service unavailable?
+
+**Chunking Strategies**
+* How would you select chunk size and overlap for technical documentation?
+* How would you implement structure-aware chunking for headings, paragraphs, tables, and code blocks?
+* How would you prevent important context from being separated across chunk boundaries?
+* How would you avoid excessive overlap that increases embedding cost and duplicate search results?
+* How would you preserve source-document references and chunk positions for citations?
+
+**Embedding Model Selection**
+* How would you compare embedding models using a representative retrieval evaluation dataset?
+* How would you assess model quality across multilingual queries and technical terminology?
+* How would you compare models with different vector dimensions and pricing?
+* How would you evaluate query-document asymmetry and model-specific query or document prefixes?
+* How would you choose an embedding model for low-latency online search versus large-scale batch ingestion?
+
+**Embedding Versioning**
+* How would you migrate millions of vectors to a new embedding model without interrupting search?
+* How would you keep model versions and vector dimensions consistent during ingestion?
+* How would you support rollback after a new embedding model reduces retrieval quality?
+* How would you detect documents that have not been re-embedded after a model upgrade?
+* How would you design a dual-index strategy during an embedding migration?
+
+**Vector Database Performance Optimization**
+* How would you diagnose high p95 and p99 vector-search latency?
+* How would you tune index parameters, filter selectivity, batch sizes, and query concurrency?
+* How would you reduce memory consumption for a large vector collection?
+* How would you optimize ingestion throughput without degrading online query latency?
+* How would you use caching and connection pooling to improve performance?

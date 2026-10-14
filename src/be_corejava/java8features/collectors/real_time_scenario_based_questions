@@ -1,0 +1,19 @@
+* An organization has thousands of employees. How would you group them by department and calculate the average salary for each department?
+* An HR system needs to identify the highest-paid employee in every department. How would you solve this using Collectors?
+* A payroll application needs the total salary expenditure for each department. How would you implement this using a single Stream pipeline?
+* A reporting system needs employee count, average salary, maximum salary, and minimum salary for every department. How would you generate the report using Collectors?
+* An e-commerce application has a list of orders. How would you group orders by status and count the orders in each status?
+* A product catalog contains duplicate product IDs. How would you convert the products into a Map and resolve duplicates by retaining the product with the latest price?
+* A transaction-processing system needs to calculate the total transaction amount for each customer. How would you implement this using `groupingBy()` and a downstream collector?
+* A log-processing application needs to group log messages by severity and collect each group's messages into a comma-separated string. How would you implement it?
+* An employee directory needs to group employees by department and then by job title. How would you create the nested Map structure?
+* A recruitment system needs to partition candidates into selected and rejected groups based on their scores. How would you use `partitioningBy()`?
+* A shopping application needs to group products by category and return only their product names. How would you combine `groupingBy()` and `mapping()`?
+* A finance application needs to calculate total income and total expenses from transactions in one processing pipeline. How would you use `Collectors.teeing()`?
+* A monitoring application processes millions of events. How would you decide between `groupingBy()` and `groupingByConcurrent()`?
+* A large dataset must be processed in parallel and collected into a Map. What considerations would you evaluate before choosing a concurrent Collector?
+* A reporting API must return an immutable List of employee names. How would you use `collectingAndThen()` to achieve this?
+* An analytics application needs the top three products by revenue within each category. How would you design the Stream and Collector pipeline?
+* A customer service system needs to group support tickets by priority and calculate the average resolution time for each priority. How would you implement this?
+* A data-import process may encounter duplicate keys and invalid records. How would you design the collection process to handle duplicates and validation safely?
+* A custom reporting framework requires a reusable Collector that accumulates domain-specific statistics. How would you design, test, and validate it?

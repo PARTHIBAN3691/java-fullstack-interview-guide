@@ -1,0 +1,25 @@
+* Explain the complete method-resolution rules for default methods when a class implements multiple interfaces.
+* Explain the "class wins" rule in Java method resolution with an example involving a superclass and an interface default method.
+* Explain the "most specific interface wins" rule when a class implements an interface hierarchy containing default methods.
+* How does Java resolve a default method conflict when two unrelated interfaces provide implementations with the same signature?
+* What happens if one interface extends two interfaces that define conflicting default methods?
+* How can an interface explicitly resolve conflicting default methods inherited from its parent interfaces?
+* What happens when an interface inherits a default method and a superclass declares an abstract method with the same signature?
+* How does the Java compiler determine whether a default method implementation is inherited, overridden, or ambiguous?
+* What are the implications of default methods for binary compatibility when an existing library interface is updated?
+* Can adding a default method to an existing interface introduce source compatibility problems? Explain with examples.
+* Can adding a default method to a widely implemented interface cause runtime linkage problems?
+* How would you design default methods in a public API to minimize compatibility risks?
+* How do default methods interact with covariant return types in interface inheritance?
+* How are conflicting default methods handled when their return types are covariant?
+* Can a default method invoke another interface's default method without explicitly naming the interface? Under what circumstances?
+* Why can't a class invoke an interface default method using `super.methodName()` directly?
+* What is the difference between `InterfaceName.super.methodName()` and `super.methodName()`?
+* How do default methods affect multiple inheritance of behavior while avoiding multiple inheritance of class state?
+* How would you debug a compilation error caused by conflicting default methods in a complex interface hierarchy?
+* How do default methods influence API evolution in frameworks such as Java Collections?
+* What design principles should be followed when introducing default methods into an interface used by multiple teams?
+* How would you test a default method inherited by multiple implementing classes?
+* What are the risks of placing business-critical logic inside default methods?
+* How would you refactor duplicated behavior across implementing classes into a default method without breaking existing implementations?
+* How do default methods differ conceptually from traits or mixins in other programming languages?

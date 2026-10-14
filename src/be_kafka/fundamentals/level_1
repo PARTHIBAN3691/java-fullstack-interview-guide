@@ -1,0 +1,30 @@
+* How does Apache Kafka work internally?
+* Explain the complete message flow from a producer to a consumer.
+* How does Kafka distribute messages across partitions?
+* How does Kafka decide which partition receives a message?
+* What happens when a Kafka broker goes down?
+* How does Kafka elect a new partition leader?
+* What is the difference between a leader replica and a follower replica?
+* How does Kafka maintain message ordering?
+* Is message ordering guaranteed across multiple partitions?
+* How does a consumer group distribute partitions among consumers?
+* What happens when the number of consumers exceeds the number of partitions?
+* What happens when a new consumer joins an existing consumer group?
+* What is a consumer group rebalance?
+* What is the difference between automatic and manual offset commits?
+* How does Kafka retain messages after they have been consumed?
+* What is the difference between time-based retention and size-based retention?
+* How does log compaction work in Kafka?
+* What is the difference between deleting and compacting a topic?
+* How do producer acknowledgments work in Kafka?
+* What is the difference between acks=0, acks=1, and acks=all?
+* What is the purpose of replication factor and min.insync.replicas?
+* What is the difference between at-most-once and at-least-once delivery?
+* What is exactly-once processing in Kafka?
+* How does Kafka handle duplicate messages?
+* What is the difference between synchronous and asynchronous message production?
+* How do serializers and deserializers work in Kafka?
+* How do you configure a Kafka producer and consumer in Spring Boot?
+* What is the difference between Kafka and RabbitMQ?
+* How do you monitor Kafka consumer lag?
+* How do you troubleshoot a Kafka consumer that is not receiving messages?

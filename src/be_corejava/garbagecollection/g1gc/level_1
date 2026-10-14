@@ -1,0 +1,20 @@
+* How does G1 GC organize the Java heap?
+* What is a heap region in G1 GC?
+* How is G1 GC different from the traditional generational garbage collectors?
+* What are young GC, mixed GC, and full GC in G1?
+* What is the purpose of the remembered set in G1 GC?
+* What is a collection set in G1 GC?
+* What is a humongous object in G1 GC?
+* How does G1 GC identify regions with the most reclaimable garbage?
+* What is the role of concurrent marking in G1 GC?
+* What is the difference between concurrent and stop-the-world GC phases?
+* What is the purpose of the root region scan in G1 GC?
+* What is the role of the SATB (Snapshot-At-The-Beginning) algorithm in G1 GC?
+* What is the purpose of the `-XX:MaxGCPauseMillis` option?
+* How do `-Xms` and `-Xmx` affect G1 GC?
+* What is the difference between `-XX:G1HeapRegionSize` and `-XX:G1ReservePercent`?
+* How do you enable GC logging in modern Java versions?
+* How would you analyze a G1 GC log to identify frequent garbage collection pauses?
+* What is the difference between allocation failure and evacuation failure?
+* How does G1 GC handle objects promoted from the young generation?
+* What is the difference between G1 GC and Parallel GC?

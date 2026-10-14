@@ -1,0 +1,30 @@
+* How would you design an observability platform for thousands of microservices across multiple regions?
+* How do you establish end-to-end trace continuity across HTTP, messaging, and asynchronous processing?
+* How do you implement distributed tracing when services use different programming languages and frameworks?
+* How do you diagnose high p99 latency when average latency remains normal?
+* How do you identify the root cause of intermittent failures across a distributed request path?
+* How do you design high-cardinality metrics without overwhelming the monitoring backend?
+* How do you distinguish high-cardinality labels from useful metric dimensions?
+* How do you design adaptive sampling for distributed traces under high traffic?
+* What are the trade-offs between head-based and tail-based trace sampling?
+* How do you ensure telemetry collection does not significantly affect application performance?
+* How do you design a reliable telemetry pipeline when the observability backend becomes unavailable?
+* How do you handle telemetry buffering, retries, backpressure, and data loss?
+* How do you prevent observability agents from becoming a single point of failure?
+* How do you design multi-tenant access control for centralized logs, metrics, and traces?
+* How do you define SLOs for APIs with different latency and availability requirements?
+* How do you implement error-budget policies and connect them to release decisions?
+* How do you design alerting based on SLO burn rates rather than fixed thresholds?
+* How do you detect anomalies when traffic patterns vary significantly by time of day?
+* How do you correlate application telemetry with infrastructure and network telemetry?
+* How do you investigate cascading failures using traces, metrics, and logs?
+* How do you distinguish a slow dependency from a slow application thread or garbage collection pause?
+* How do you detect thread starvation, connection pool exhaustion, and lock contention in Java services?
+* How do you design observability for event-driven systems where processing may occur minutes after a request?
+* How do you preserve trace context across Kafka messages and consumer retries?
+* How do you design telemetry schemas that remain compatible across application versions?
+* How do you prevent sensitive data leakage and enforce data retention policies in telemetry pipelines?
+* How do you reduce observability costs while retaining enough information for incident investigation?
+* How do you design dashboards that support both executive SLO reporting and deep technical debugging?
+* How do you measure the effectiveness of an observability platform?
+* How do you use observability data to support capacity planning and predict future resource exhaustion?

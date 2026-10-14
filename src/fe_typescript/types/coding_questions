@@ -1,0 +1,30 @@
+* Declare variables using string, number, boolean, null, and undefined types.
+* Create a function that accepts two numbers and returns their sum with explicit types.
+* Create a function with optional and default parameters.
+* Create a function that accepts a union of string and number and handles both cases safely.
+* Define an interface for an Employee with name, id, and salary properties.
+* Define a type alias for a Product and create an array of Product objects.
+* Create a tuple representing an employee's name, age, and active status.
+* Create an enum for order status and use it in a function.
+* Create a function type alias for a callback that receives a string and returns a boolean.
+* Create a generic function that returns the first element of an array.
+* Create a generic function that accepts two values of the same type.
+* Create a generic repository interface with methods to find, save, and delete entities.
+* Implement a generic constraint that requires an object to contain an id property.
+* Create a function that uses keyof to safely access an object's property.
+* Create a function that uses indexed access types to return a property value.
+* Implement a custom type guard that identifies whether a value is a string or a number.
+* Create a discriminated union for success and error API responses.
+* Write an exhaustive switch statement that uses never to detect missing union cases.
+* Create a custom type predicate for validating an Employee object.
+* Implement a utility type that makes all properties of an object readonly.
+* Implement a custom utility type that makes selected properties optional.
+* Create a type that extracts the return type of a function.
+* Create a mapped type that converts every property of an interface into a nullable property.
+* Implement a DeepPartial<T> type that recursively makes nested object properties optional.
+* Create a conditional type that determines whether a type extends string.
+* Create a generic function whose return type depends on the input type.
+* Create a type-safe event emitter using event names and associated payload types.
+* Use template literal types to generate event names from object property names.
+* Create a configuration object using satisfies while preserving its literal value types.
+* Build a type-safe API response model with generics, discriminated unions, and runtime validation.

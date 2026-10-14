@@ -1,0 +1,30 @@
+* Write a JDBC program that updates a record inside a transaction and commits the changes.
+* Write a JDBC example that uses SELECT FOR UPDATE to lock a row before updating it.
+* Implement a Spring Boot service method that uses @Transactional and pessimistic locking.
+* Create a Spring Data JPA repository method using @Lock(LockModeType.PESSIMISTIC_WRITE).
+* Implement optimistic locking in a JPA entity using the @Version annotation.
+* Write a Java service that catches OptimisticLockException and returns a meaningful conflict response.
+* Implement a retry mechanism for deadlock failures with a maximum attempt count and exponential backoff.
+* Write a Spring Boot example that distinguishes deadlock exceptions from lock timeout exceptions.
+* Create a JUnit test in which two threads update the same database record concurrently.
+* Write an integration test that verifies optimistic locking rejects a stale update.
+* Implement an inventory reservation method that prevents stock from becoming negative under concurrent requests.
+* Write a service that transfers money between two accounts while locking the account records in a consistent order.
+* Implement a booking service that prevents duplicate room reservations using database constraints and appropriate locking.
+* Create a Spring Data JPA method that acquires a pessimistic lock with a configured timeout.
+* Write a JDBC example that sets a transaction isolation level and demonstrates its effect on concurrent updates.
+* Implement a service that uses optimistic locking for low-contention updates and handles conflicts safely.
+* Write a Java program that demonstrates a deadlock using two database records and then fixes it by changing lock order.
+* Implement a transaction that updates multiple rows while minimizing the risk of deadlocks.
+* Write a Spring Boot service that uses TransactionTemplate to control transaction boundaries around lock-sensitive operations.
+* Create an integration test that verifies database locks are released after transaction rollback.
+* Implement a payment service that combines database transactions, optimistic locking, and idempotency keys.
+* Write a repository query that locks a selected record for update and handles the case where the record does not exist.
+* Implement bounded retries for transient database concurrency failures without retrying non-recoverable business exceptions.
+* Write a Java service that records lock wait duration, transaction duration, and retry counts for monitoring.
+* Create a Testcontainers-based test that verifies locking behavior against a real MySQL or PostgreSQL database.
+* Implement a batch update process that processes records in small chunks to reduce lock contention.
+* Write a Spring Boot example that demonstrates how transaction propagation affects lock lifetime.
+* Implement a concurrency-safe job-processing mechanism using a database status column and row-level locking.
+* Write a SQL diagnostic query to identify blocking sessions and lock waits for a supported database.
+* Design and implement a concurrency-control strategy for a high-throughput order-processing service using Java, Spring Boot, and a relational database.

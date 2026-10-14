@@ -1,0 +1,30 @@
+* How would you design a database architecture for a system handling millions of transactions per day?
+* How would you choose between a single database, read replicas, and sharding for a growing application?
+* How do B-tree and LSM-tree storage structures differ, and when is each preferable?
+* How do write-ahead logs help databases recover after a crash?
+* How do MVCC and snapshot isolation work?
+* What anomalies can occur under snapshot isolation?
+* How do serializable transactions prevent concurrency anomalies?
+* How would you design a distributed transaction across multiple databases?
+* How do two-phase commit and saga patterns differ?
+* How would you maintain consistency between a relational database and a message broker?
+* How does the transactional outbox pattern prevent dual-write inconsistencies?
+* How would you design a multi-region database architecture?
+* How do quorum reads and writes work in distributed databases?
+* How do consensus protocols support strongly consistent database replication?
+* How would you handle split-brain scenarios during database failover?
+* How do you design automatic failover without losing committed transactions?
+* How would you rebalance shards with minimal application downtime?
+* How would you handle cross-shard joins and transactions?
+* How would you migrate a multi-terabyte database with minimal downtime?
+* How would you perform a backward-compatible schema migration while old and new application versions run simultaneously?
+* How do you design a database for high write throughput and low-latency reads?
+* How would you handle hot partitions and uneven shard distribution?
+* How do you choose between event sourcing and traditional relational persistence?
+* How would you design a database for time-series or high-volume event data?
+* How would you implement data retention, archival, and deletion policies at scale?
+* How would you design multi-tenant database isolation and data access controls?
+* How would you prevent duplicate processing and maintain idempotency at the database layer?
+* How would you design disaster recovery with explicit RPO and RTO targets?
+* How would you identify whether a bottleneck comes from the database, network, application, or query plan?
+* How would you balance consistency, availability, latency, cost, and operational complexity in database architecture?

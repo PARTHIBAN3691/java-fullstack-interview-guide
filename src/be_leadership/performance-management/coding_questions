@@ -1,0 +1,30 @@
+* Write a Java program to maintain performance review records for software developers.
+* Implement a Java class to track employee goals, target dates, and completion status.
+* Write a Java method to calculate goal completion percentages for an employee.
+* Implement a performance scoring system using configurable weights for quality, delivery, collaboration, and reliability.
+* Write a Java program to calculate sprint commitment completion rates from planned and completed story points.
+* Implement a Java class to record performance feedback from managers, peers, and stakeholders.
+* Write a Java method to identify overdue development goals.
+* Use Java Streams to group developers by performance review status.
+* Implement a Java program to calculate defect density using delivered code size and defect count.
+* Write a Java method to calculate the percentage of tasks completed within agreed deadlines.
+* Implement a performance dashboard data model for individual and team metrics.
+* Write unit tests using JUnit 5 for a performance score calculation service.
+* Use Mockito to test a service that retrieves performance review records from a repository.
+* Implement validation for incomplete or invalid performance review data.
+* Write a Java program to compare current performance indicators with previous review periods.
+* Implement a configurable goal evaluation strategy using the Strategy design pattern.
+* Use the Observer pattern to notify managers when performance goals become overdue.
+* Implement a workflow using the State pattern for review statuses such as DRAFT, IN_REVIEW, COMPLETED, and ACKNOWLEDGED.
+* Write a Java method to calculate rolling averages for engineering metrics across multiple sprints.
+* Implement a service that identifies recurring defect patterns from code review and bug tracking records.
+* Write a Java program to generate a report showing goal progress, strengths, and improvement areas.
+* Implement a service to create and track performance improvement plans with milestones and review dates.
+* Write a Java method to calculate deployment frequency and change failure rate from deployment records.
+* Implement a service that aggregates team-level metrics without exposing confidential individual review details.
+* Write unit tests to verify that performance ratings are calculated consistently across different employee roles.
+* Implement a REST API using Spring Boot to create, update, and retrieve performance reviews.
+* Write a Java program to detect missing performance review records for a review cycle.
+* Implement pagination and filtering for an API that retrieves employee performance records.
+* Design a Java service that stores performance review history while maintaining an audit trail of changes.
+* Design a scalable Java-based performance management system supporting goals, feedback, reviews, development plans, and engineering metrics.

@@ -1,0 +1,100 @@
+**AWS AI and ML Services**
+* Implement a Java service that uploads a document to Amazon S3 and initiates an AI-processing workflow.
+* Write a Spring Boot component that invokes an AWS AI service using the AWS SDK and handles credentials through an IAM role.
+* Implement an idempotent event handler that processes S3 notifications without creating duplicate AI jobs.
+* Write unit tests for timeout, throttling, access-denied, and transient service failures using mocked AWS SDK clients.
+
+**Amazon Bedrock**
+* Implement a Spring Boot REST endpoint that invokes an Amazon Bedrock foundation model and returns a validated response.
+* Write a Java client that consumes streamed model output and supports cancellation when the HTTP client disconnects.
+* Implement bounded retries with exponential backoff and jitter for retryable Bedrock API errors.
+* Build a model-routing component that selects a model based on configured capability, latency, and cost constraints.
+* Write tests that validate structured model output against a Java DTO and reject malformed responses.
+* Implement request-level token and cost tracking with configurable budgets and per-tenant limits.
+
+**Amazon SageMaker**
+* Implement a Python pipeline that prepares a dataset, launches model training, and records the resulting artifact.
+* Write a deployment script that registers a model and promotes it only after automated evaluation passes.
+* Implement an inference client with timeout handling, correlation IDs, and structured error reporting.
+* Create tests that compare predictions from a candidate model against a baseline using a configurable tolerance.
+* Implement a monitoring job that calculates prediction statistics and raises an alert when a defined threshold is exceeded.
+
+**Azure AI Foundry**
+* Implement a Spring Boot client that invokes a model deployment through Azure AI Foundry using managed identity.
+* Write a configuration loader that selects model endpoints and deployment settings by environment without embedding secrets in source code.
+* Implement a model-evaluation runner that records prompt version, model identifier, dataset version, and evaluation metrics.
+* Create integration tests that validate authentication failures, unavailable deployments, throttling, and malformed model output.
+
+**Azure OpenAI Service**
+* Implement a Java service that calls an Azure OpenAI deployment using Microsoft Entra ID authentication.
+* Write a streaming endpoint that relays model output to a client while handling disconnects and upstream errors.
+* Implement retry logic for HTTP 429 and transient 5xx responses, including a maximum retry budget.
+* Create a request validator that enforces input-size, token-budget, and allowed-model constraints.
+* Write contract tests that validate response schemas across two configured model deployments.
+* Implement per-tenant request quotas and metrics for token usage, latency, and failure rate.
+
+**Google Vertex AI**
+* Implement a Python workflow that submits a Vertex AI training job and records the model artifact and evaluation results.
+* Write a deployment pipeline that sends a small percentage of traffic to a candidate model and supports rollback.
+* Implement a Java client that invokes a Vertex AI endpoint with request deadlines and structured error handling.
+* Create a validation job that compares candidate and baseline model predictions on a fixed test dataset.
+* Write tests for service-account authorization, endpoint unavailability, and prediction-schema mismatches.
+
+**Google Gemini**
+* Implement a Java or Python client that sends text and image inputs to a Gemini model and validates the returned response.
+* Write a parser that converts structured model output into a typed object and safely handles invalid JSON.
+* Implement a streaming response consumer with cancellation, timeout, and partial-response handling.
+* Create a test harness that compares multiple Gemini model configurations on a fixed evaluation dataset.
+* Implement request-budget enforcement using configured token limits and model-specific cost estimates.
+
+**Managed Vector Search Services**
+* Implement a document ingestion pipeline that generates embeddings and upserts vectors with tenant and document metadata.
+* Write a retrieval method that applies mandatory tenant filters to every vector search request.
+* Implement an embedding-version migration that writes to a new index and validates retrieval quality before switching traffic.
+* Create tests for duplicate ingestion, document updates, deletion propagation, and out-of-order events.
+* Implement a benchmark utility that measures retrieval latency and recall across different index configurations.
+* Write a hybrid retrieval component that combines keyword search, vector search, and configurable reranking.
+
+**Cloud AI Security**
+* Implement a secrets-provider abstraction that loads credentials from a managed secret store rather than hardcoding keys.
+* Write an authorization component that checks tenant permissions before model invocation, retrieval, or tool execution.
+* Implement input and output redaction for configured sensitive data patterns without logging raw prompts.
+* Create tests that attempt cross-tenant access, unauthorized model selection, prompt injection, and unapproved tool execution.
+* Implement audit events containing identity, model version, policy decision, and correlation ID while excluding sensitive payloads.
+
+**Private AI Networking**
+* Write an infrastructure-as-code configuration that exposes a managed AI service through a private endpoint and restricts public access where supported.
+* Implement deployment validation checks for private DNS resolution, endpoint reachability, and required outbound destinations.
+* Create an automated connectivity test that distinguishes DNS failures, TCP timeouts, TLS errors, and authorization failures.
+* Write policy checks that detect AI service configurations that allow unintended public network access.
+
+**Cloud Model Deployment**
+* Implement a model-serving health endpoint that reports readiness only after model loading and dependency initialization complete.
+* Write a canary router that distributes traffic by configured weights and supports immediate rollback.
+* Implement a bounded request queue with backpressure and timeouts for overloaded inference endpoints.
+* Create a load-test harness that measures p50, p95, and p99 latency, throughput, error rate, and resource utilization.
+* Write a deployment validation script that checks model artifact checksums, version metadata, and configuration compatibility before rollout.
+
+**Multi-Cloud AI Architecture**
+* Implement a provider-neutral Java interface for text generation, streaming, embeddings, and structured output.
+* Write separate adapters for AWS Bedrock, Azure OpenAI, and Google Vertex AI while preserving provider-specific error details.
+* Implement a policy-based router that selects providers using capability, region, latency, and cost constraints.
+* Create contract tests that verify consistent application-level response formats across provider adapters.
+* Implement circuit breakers and provider failover while preventing retries from duplicating non-idempotent tool actions.
+* Write tests ensuring that requests containing restricted data cannot be routed to unauthorized providers or regions.
+
+**AI Cost Management**
+* Implement a cost calculator that estimates inference spending from model pricing, input tokens, output tokens, and request volume.
+* Write a usage aggregator that calculates daily cost by tenant, team, environment, model, and cloud provider.
+* Implement hard request and token budgets that stop further noncritical inference when configured limits are exceeded.
+* Create a cost anomaly detector that compares current usage with a historical baseline and emits alerts.
+* Implement a caching layer that avoids repeated model calls for eligible requests while respecting tenant isolation and data freshness.
+* Write a load-test scenario that measures cost per successful task under different model sizes and concurrency levels.
+
+**Cloud AI Governance**
+* Implement a model inventory API that tracks model owner, provider, version, approved regions, risk level, and lifecycle status.
+* Write a deployment-policy validator that rejects unapproved models, missing evaluation evidence, and invalid data-residency settings.
+* Implement an audit-event pipeline that connects source dataset versions, prompt versions, model versions, evaluation results, and deployment identifiers.
+* Create automated compliance tests for least-privilege access, encryption settings, logging policies, and public endpoint restrictions.
+* Implement a release gate that blocks model promotion when safety, groundedness, or business-quality metrics fall below configured thresholds.
+* Write a model-retirement workflow that identifies dependent applications, prevents new invocations, and records migration approvals.

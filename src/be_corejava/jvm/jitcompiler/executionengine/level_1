@@ -1,0 +1,26 @@
+
+* Explain the complete execution flow from Java source code to machine instructions.
+* How does the Execution Engine interact with the ClassLoader and runtime data areas?
+* How does the Interpreter execute bytecode instructions?
+* How does the JIT compiler identify frequently executed methods and loops?
+* What is a hot method in the JVM?
+* What is a hot loop, and how does the JVM optimize it?
+* What is the difference between method-level compilation and loop-level optimization?
+* What are the C1 and C2 compilers in the HotSpot JVM?
+* What is tiered compilation in Java?
+* How does tiered compilation combine interpretation and JIT compilation?
+* What are compilation levels in the HotSpot JVM?
+* What is the purpose of profiling information during JIT compilation?
+* What is method inlining, and how does it improve execution performance?
+* What is dead-code elimination in JIT compilation?
+* What is constant folding, and how does it optimize Java code?
+* What is escape analysis, and how can it improve performance?
+* What is lock elision or lock elimination in JIT compilation?
+* What is loop unrolling, and how can it improve performance?
+* What is on-stack replacement (OSR)?
+* What is deoptimization in the JVM?
+* What happens when a JIT optimization assumption becomes invalid?
+* What is the code cache in the HotSpot JVM?
+* How does the JVM execute native methods?
+* What is the difference between Java bytecode execution and native method execution?
+* How can JVM options influence the behavior of the Execution Engine?

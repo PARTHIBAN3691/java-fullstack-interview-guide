@@ -1,0 +1,30 @@
+* Write a React application with Home, About, and Contact routes using React Router.
+* Create a navigation menu using Link and NavLink.
+* Implement a custom 404 page for unknown routes.
+* Create a dynamic product details route using a product ID.
+* Write a component that reads route parameters using useParams.
+* Implement search functionality using URL query parameters.
+* Write a component that reads and updates query parameters using useSearchParams.
+* Implement programmatic navigation using useNavigate.
+* Pass navigation state from one route to another.
+* Create nested dashboard routes with Overview, Profile, and Settings pages.
+* Implement a shared layout with a header, sidebar, and Outlet.
+* Create an index route for a dashboard layout.
+* Implement a protected route for authenticated users.
+* Create an administrator-only route using role-based access control.
+* Redirect unauthenticated users to the login page.
+* Redirect users to their originally requested page after login.
+* Implement different dashboard routes for Admin, Manager, and Employee roles.
+* Create a product listing page that navigates to a product details page.
+* Implement pagination using URL query parameters.
+* Preserve search filters in the URL when navigating between pages.
+* Implement lazy loading for route components using React.lazy and Suspense.
+* Create a loading indicator that appears while a route component loads.
+* Implement a common layout for public pages and a separate layout for authenticated pages.
+* Build breadcrumbs for nested routes.
+* Implement a route-level error page using React Router error handling.
+* Create a route loader that fetches product details before rendering the page.
+* Implement a route action to process a form submission.
+* Create a component that navigates to the previous page using useNavigate.
+* Write tests for a component that depends on useParams and useNavigate.
+* Build a complete routing structure for an e-commerce application with public, customer, and admin routes.

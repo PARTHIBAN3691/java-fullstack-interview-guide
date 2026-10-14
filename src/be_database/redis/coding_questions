@@ -1,0 +1,30 @@
+* Write Java code using RedisTemplate to store a string value with an expiration time.
+* Write a Spring Boot service that retrieves a customer from Redis and falls back to PostgreSQL when the cache misses.
+* Implement cache-aside caching in Spring Boot using @Cacheable.
+* Implement cache invalidation using @CacheEvict when a customer record is updated or deleted.
+* Configure RedisCacheManager with different TTL values for different cache names.
+* Create a custom cache key using multiple method parameters in Spring's caching abstraction.
+* Write Java code to serialize and deserialize a Java object stored in Redis using JSON.
+* Implement a Redis counter that increments atomically and expires after a configured duration.
+* Implement a fixed-window rate limiter using Redis and an atomic Lua script.
+* Implement a token-bucket rate limiter using Redis and Lua scripting.
+* Write Java code to use Redis pipelining for retrieving multiple keys efficiently.
+* Implement a RedisTemplate operation that retrieves multiple values using MGET where appropriate.
+* Implement a distributed lock with a unique ownership token, lease expiration, and safe release.
+* Write a Lua script that releases a Redis lock only when the stored token matches the owner's token.
+* Implement retry and timeout handling for transient Redis connection failures in a Spring Boot service.
+* Implement graceful fallback to a database when Redis is unavailable without overwhelming the database.
+* Write Java code to publish an event using Redis Pub/Sub and implement a subscriber.
+* Implement a Redis Streams producer that adds an order event to a stream.
+* Implement a Redis Streams consumer group that reads messages and acknowledges successful processing.
+* Implement retry handling and dead-letter processing for repeatedly failing Redis Stream messages.
+* Write Java code that processes a Redis Stream message idempotently to avoid duplicate order creation.
+* Implement a Spring Boot repository or service that uses Redis hashes to store and retrieve customer fields.
+* Write Java code to maintain a sorted set of users ranked by score and retrieve the top ten users.
+* Implement a leaderboard using Redis sorted sets and Spring Boot.
+* Implement a cache key versioning strategy to support changes in serialized object structure.
+* Write a Java service that invalidates Redis cache entries only after a successful database transaction commit.
+* Implement a database outbox consumer that updates Redis cache entries reliably and handles duplicate events.
+* Write a health indicator for Redis connectivity in Spring Boot Actuator.
+* Implement metrics collection for cache hits, cache misses, Redis latency, and fallback database calls.
+* Write an integration test for a Spring Boot Redis caching service that verifies cache hits, expiration, invalidation, and database fallback.

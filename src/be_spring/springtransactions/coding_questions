@@ -1,0 +1,30 @@
+* Create a Spring Boot service method that updates two database entities within a single transaction.
+* Implement a money transfer service using @Transactional to debit and credit two accounts atomically.
+* Write a program that demonstrates automatic rollback when an unchecked exception occurs.
+* Demonstrate how a checked exception affects rollback behavior and configure rollbackFor accordingly.
+* Implement a service using noRollbackFor for a specified business exception.
+* Create two service classes to demonstrate REQUIRED propagation.
+* Implement a service using REQUIRES_NEW and demonstrate independent transaction commits.
+* Write a program that demonstrates how an inner REQUIRES_NEW transaction behaves when the outer transaction rolls back.
+* Implement NESTED propagation and demonstrate savepoint-based rollback where supported.
+* Write examples demonstrating SUPPORTS, MANDATORY, NOT_SUPPORTED, and NEVER propagation.
+* Implement a service using TransactionTemplate for programmatic transaction management.
+* Configure a transaction timeout and demonstrate how timeout-related failures are handled.
+* Create a read-only service method using @Transactional(readOnly = true).
+* Implement optimistic locking using JPA's @Version annotation.
+* Implement pessimistic locking using LockModeType.PESSIMISTIC_WRITE.
+* Write an integration test that verifies a transaction rolls back when an exception occurs.
+* Write a test that demonstrates UnexpectedRollbackException when a participating transaction marks the shared transaction rollback-only.
+* Implement a service that uses two transaction managers for separate data sources.
+* Create a custom transaction synchronization callback that executes logic after commit.
+* Implement reliable event publishing using a transactional outbox table.
+* Write a scheduled publisher that reads unpublished outbox records and marks them as processed safely.
+* Implement a retryable transactional operation that avoids duplicate processing through an idempotency key.
+* Create a batch-processing service that commits records in configurable chunks.
+* Write a test demonstrating the difference between transaction isolation levels using concurrent transactions.
+* Implement an account update service that prevents lost updates under concurrent requests.
+* Create a Spring Boot example showing why @Transactional does not apply to self-invocation.
+* Implement an asynchronous database operation with its own explicit transaction boundary.
+* Build a saga-style workflow with compensating actions for a multi-step business transaction.
+* Write an integration test that verifies database rollback and message-publishing behavior.
+* Build a production-ready transaction-management example with propagation, rollback rules, concurrency control, idempotency, outbox publishing, and comprehensive tests.

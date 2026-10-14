@@ -1,0 +1,36 @@
+* Your development team releases features quickly, but production incidents have increased significantly. How would you identify root causes and improve the delivery process?
+* Development and operations teams blame each other whenever a deployment fails. How would you establish shared ownership and improve outcomes?
+* Your organization has adopted CI/CD tools, but releases remain slow because of manual approvals and organizational silos. How would you apply CALMS to address the problem?
+* A production outage occurred because of a configuration error introduced during deployment. Management wants to identify the individual responsible. How would you conduct the incident review and prevent recurrence?
+* A CI pipeline takes 45 minutes to complete, and developers frequently bypass tests to release urgent fixes. How would you reduce pipeline duration without weakening quality?
+* A build passes in testing but fails in production because a different artifact was deployed. How would you redesign artifact promotion and traceability?
+* A new deployment causes errors for 10% of users. How would you detect the issue, halt the rollout, and restore a stable version?
+* A database schema change is incompatible with the currently running application version. How would you coordinate the deployment and prevent downtime?
+* A Terraform plan unexpectedly proposes replacing a production database. How would you investigate the change and prevent data loss?
+* Two engineers modify the same Terraform state concurrently, resulting in inconsistent infrastructure changes. How would you recover and prevent recurrence?
+* A manual security-group change causes production infrastructure to drift from the IaC configuration. How would you detect and remediate the drift?
+* A configuration management run restarts every production instance simultaneously. How would you contain the impact and redesign the rollout process?
+* A secret is committed to a configuration repository and used by a running production service. What immediate remediation and long-term controls would you implement?
+* An automation script deletes files required by a running application. How would you recover the service and make the automation safer?
+* An automated retry mechanism increases traffic against an already overloaded downstream service. How would you redesign the retry strategy?
+* A critical vulnerability is discovered in a dependency shared by multiple production microservices. How would you assess exposure, prioritize remediation, and coordinate releases?
+* A security scan blocks an urgent release because of a high-severity finding. How would you evaluate the risk and determine the appropriate action?
+* A CI/CD runner is compromised, and an attacker attempts to access production credentials. How would you contain the incident and redesign the pipeline security model?
+* Developers bypass the internal developer platform because its workflows are slower than their custom scripts. How would you identify the friction and improve adoption?
+* A platform upgrade breaks deployment workflows for multiple teams. How would you manage backward compatibility, communication, and migration?
+* A GitOps controller repeatedly reverts an emergency production fix. How would you resolve the immediate issue and restore a controlled source of truth?
+* A change to a shared Kubernetes manifest breaks several applications after reconciliation. How would you limit the blast radius and improve validation?
+* A new immutable infrastructure image contains a runtime defect and has been deployed to multiple instances. How would you roll back safely and prevent reuse of the faulty image?
+* An application stores user sessions and uploaded files locally, but autoscaling frequently replaces instances. How would you redesign the architecture to prevent session loss and data loss?
+* A critical application runs on a manually configured server, and no one knows all the changes made to it. How would you migrate toward replaceable infrastructure safely?
+* An organization has invested heavily in DevOps tools but still experiences frequent outages and long recovery times. How would you assess its maturity and prioritize improvements?
+* One team reports high deployment frequency but also has a high change failure rate. How would you evaluate its actual delivery performance?
+* Developers need several days to configure their local environments, and CI feedback takes 30 minutes. How would you improve developer experience and reduce delivery delays?
+* Your organization wants to automate every deployment to production, but the application handles critical business transactions. How would you decide which safeguards are necessary?
+* Your platform team receives constant requests for infrastructure, access, and deployment support. How would you improve self-service while preserving security and auditability?
+* A new Terraform module version changes default networking behavior and unintentionally exposes an application service. How would you contain the issue and prevent similar module regressions?
+* Your deployment pipeline retries a failed release automatically, but each retry increases production load and causes more failures. How would you change the recovery strategy?
+* A production incident reveals that application logs, metrics, and traces are spread across disconnected tools. How would you improve observability and cross-team diagnosis?
+* A shift-left security tool produces hundreds of false positives, and developers have started ignoring its findings. How would you restore trust in the security process?
+* An infrastructure replacement causes application downtime because the load balancer removes healthy instances too early. How would you diagnose and correct the rollout behavior?
+* A team meets its deployment-frequency target by releasing small changes but ignores reliability and customer impact. How would you redesign its performance measurements?

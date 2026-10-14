@@ -1,0 +1,30 @@
+* A REST API has an average latency of 100 ms but p99 latency of 5 seconds. How would you investigate the problem?
+* A payment API must respond within 300 ms for 99.9% of requests. How would you design the architecture to meet this latency requirement?
+* A microservice makes five sequential downstream API calls, and the overall response time is too high. How would you reduce latency?
+* Three downstream services are independent and currently called sequentially. How would parallel execution affect latency?
+* A database query normally takes 20 ms but occasionally takes several seconds. How would you investigate the tail latency?
+* A production service experiences high latency only during traffic spikes. What metrics and system components would you investigate?
+* A service has sufficient CPU capacity but latency keeps increasing as traffic grows. How would you determine whether queueing or connection-pool exhaustion is responsible?
+* A Java application experiences periodic latency spikes every few minutes. How would you investigate garbage collection and JVM behavior?
+* A database-backed API has high latency because the connection pool is exhausted. How would you diagnose and resolve the issue?
+* A global application provides good latency in one region but poor latency for users in another continent. How would you redesign the system?
+* An e-commerce application serves product images and static content slowly to international users. How would you use a CDN to reduce latency?
+* A search API returns large JSON responses and has high response latency. What changes could reduce serialization and network overhead?
+* A payment service retries a slow downstream payment provider three times, causing requests to take several seconds. How would you redesign the timeout and retry strategy?
+* A microservice calls a downstream service with a 2-second timeout, but the client has a 1-second latency SLO. What is wrong with this design?
+* A downstream service becomes slow, and soon all upstream services also become slow. How would you prevent this cascading latency problem?
+* A service experiences very high p99 latency but normal p50 latency. How would you use distributed tracing to identify the source?
+* A cache reduces average response time but occasionally produces very high latency during cache misses. How would you handle this?
+* A popular product causes a cache stampede and database latency increases dramatically. How would you prevent the problem?
+* An API performs multiple database queries for every request. How would you redesign the data access pattern to reduce latency?
+* A high-volume application uses synchronous logging and experiences increased request latency. How would you redesign logging?
+* A service waits for an external API before returning a response, but the external API is unreliable. How could asynchronous processing improve perceived latency?
+* A user-facing application requires a fast response, but a background operation can take several minutes. How would you design the request flow?
+* A Java application has high latency because many threads are blocked waiting for I/O. How would you redesign the service?
+* A service has low CPU utilization but high latency. What possible bottlenecks would you investigate?
+* A system has high throughput but unacceptable latency. How would you determine whether batching, queueing, or resource contention is responsible?
+* A database read is geographically distant from the application server. How would you reduce the network latency without compromising required consistency?
+* A multi-region application requires users to read their latest writes with low latency. How would you design data placement and routing?
+* A service's p99 latency increases after introducing a new microservice dependency. How would you determine whether the dependency is responsible?
+* A system has a strict 100 ms latency budget and several downstream dependencies. How would you allocate the latency budget across the components?
+* Design a low-latency architecture for a high-volume payment API and explain how you would monitor and protect its latency SLO.

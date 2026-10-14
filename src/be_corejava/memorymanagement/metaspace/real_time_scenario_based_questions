@@ -1,0 +1,21 @@
+
+* A Spring Boot application runs normally for several hours and then throws `OutOfMemoryError: Metaspace`. How would you investigate the root cause?
+* Metaspace usage increases after every deployment, even though the application handles approximately the same traffic. What would you inspect?
+* A Tomcat application shows increasing Metaspace usage after repeated WAR redeployments. How would you identify a class-loader leak?
+* A microservice uses Hibernate and runtime bytecode generation, and Metaspace grows continuously. How would you determine whether the growth is expected?
+* A Java application dynamically generates thousands of classes. What changes would you consider to control Metaspace usage?
+* A production service experiences `OutOfMemoryError: Metaspace` despite having plenty of free Java heap memory. How would you explain and troubleshoot the issue?
+* After increasing `-XX:MaxMetaspaceSize`, the application runs longer but eventually fails again. What does this suggest?
+* A Java agent was introduced in the latest release, and Metaspace usage increased sharply. How would you investigate whether the agent is responsible?
+* A plugin-based application loads classes through multiple custom class loaders. How would you ensure unused plugins can be unloaded?
+* A thread pool retains a custom thread context class loader after application redeployment. What problems could this cause?
+* An application server reports that old application class loaders remain reachable after shutdown. What references would you investigate?
+* Metaspace usage rises during startup but stabilizes afterward. How would you determine whether this is normal behavior?
+* The number of loaded classes increases continuously while request volume remains stable. What diagnostic steps would you take?
+* The number of loaded classes stabilizes, but Metaspace usage continues to rise. What other factors would you investigate?
+* A containerized Java application is killed by the operating system even though heap usage is within its configured limit. How would you investigate Metaspace and other native memory consumption?
+* A service throws `OutOfMemoryError: Compressed class space`. What does this indicate, and which JVM settings would you examine?
+* A legacy application uses many dynamically generated proxy classes. How would you identify unnecessary class generation?
+* A framework upgrade causes higher Metaspace consumption without a corresponding increase in business workload. How would you compare the old and new versions?
+* You need to collect Metaspace diagnostics in production without restarting the application. Which JVM diagnostic commands and metrics would you use?
+* After implementing a suspected class-loader leak fix, how would you verify that class unloading and Metaspace reclamation are working correctly?

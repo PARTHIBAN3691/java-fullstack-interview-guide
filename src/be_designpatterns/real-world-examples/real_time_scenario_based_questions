@@ -1,0 +1,30 @@
+* A banking application creates multiple configuration manager instances across different modules. How would you investigate the Singleton implementation and determine whether a container-managed bean is more appropriate?
+* A payment platform adds a new provider every month, and developers repeatedly modify a large switch statement. How would you combine Factory Method and Strategy to simplify provider onboarding?
+* An insurance application creates policy objects with dozens of optional fields, and invalid combinations reach production. How would you redesign object construction using Builder?
+* A document management application copies templates, but changes to one copied document unexpectedly affect the original. How would you correct the Prototype implementation?
+* An e-commerce platform supports multiple discount rules that overlap and change frequently. How would you combine Strategy and Chain of Responsibility to make the pricing engine maintainable?
+* An order notification system loses events when a subscriber fails during processing. How would you redesign the Observer-based solution for reliability?
+* A financial application retries a payment command after a timeout and sometimes charges the customer twice. How would you redesign command execution for idempotency?
+* A loan approval workflow has conditional approval stages, and requests sometimes skip mandatory checks. How would you combine Chain of Responsibility and State to enforce valid processing?
+* A report generator duplicates validation and persistence logic across PDF, CSV, and Excel implementations. How would you refactor it using Template Method and Strategy?
+* A batch-processing service loads millions of database records into memory before processing them. How would you implement lazy iteration and bounded resource usage?
+* A chat application uses a central Mediator that now contains authentication, persistence, moderation, and notification logic. How would you split its responsibilities?
+* A document editor stores a complete copy of a large document for every keystroke, causing memory exhaustion. How would you redesign Memento storage?
+* A compliance reporting application frequently adds new domain object types, requiring changes to every Visitor implementation. How would you evaluate alternatives to Visitor?
+* A loan application allows administrators to define business rules, but malformed or expensive expressions cause production problems. How would you secure and validate the Interpreter?
+* A legacy payment provider returns inconsistent status codes and response formats. How would you use Adapter to create a consistent interface for business services?
+* A service needs caching, metrics, logging, and retries, but the added wrappers make execution order difficult to understand. How would you organize Decorators and validate their behavior?
+* A checkout process reserves inventory, charges a payment, and creates an order across multiple services. How would you handle failures without assuming a single database transaction?
+* A remote service is accessed through a Proxy that caches customer details, but revoked permissions are not reflected immediately. How would you address cache invalidation and authorization?
+* An organization chart contains thousands of nested departments, and recursive salary calculations become slow. How would you optimize the Composite implementation?
+* A notification platform supports many message types and multiple delivery providers, and every combination requires a new class. How would you redesign it using Bridge?
+* A simulation engine creates millions of terrain objects with repeated properties. How would you apply Flyweight while ensuring that per-cell state remains independent?
+* A Spring Boot payment service selects the wrong implementation when multiple Strategy beans are registered. How would you improve runtime selection and configuration validation?
+* A Repository implementation returns full entity graphs for a dashboard that needs only a few fields. How would you optimize queries and introduce DTO projections?
+* A REST API exposes database entities, and schema changes break mobile and web clients. How would you introduce DTOs and versioned contracts safely?
+* An account transfer updates debit and credit records, but partial failures leave balances inconsistent. How would you establish transaction boundaries and concurrency controls?
+* A legacy enterprise application uses Service Locator, Singleton, and static utility classes extensively. How would you refactor it incrementally toward Dependency Injection and testable services?
+* A team introduces several design patterns for a simple CRUD feature, making the implementation much harder to understand. How would you identify and remove unnecessary abstractions?
+* A high-throughput Java application experiences latency after adding multiple Decorators and proxies. How would you profile the execution path and preserve only valuable abstractions?
+* A production incident reveals that design-pattern implementations are difficult to test because they rely on global state and direct object creation. How would you redesign them for unit and integration testing?
+* A large enterprise team needs consistent design-pattern usage across multiple Java services. How would you define guidelines and validate that patterns solve real problems rather than add complexity?

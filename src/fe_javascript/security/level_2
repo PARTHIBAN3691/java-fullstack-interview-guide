@@ -1,0 +1,30 @@
+* Explain the browser security model and its major components.
+* How does the browser enforce the same-origin policy across documents, scripts, and network requests?
+* Explain the difference between XSS, CSRF, SSRF, and injection vulnerabilities.
+* How would you design a comprehensive defense against stored and DOM-based XSS?
+* How do CSP directives such as script-src, nonce, and strict-dynamic improve security?
+* What are CSP bypasses, and how would you investigate them?
+* How does a CSRF token work, and what limitations does it have?
+* How do SameSite cookies, CSRF tokens, and Origin validation work together?
+* How would you securely implement JWT-based authentication and token refresh?
+* What are JWT algorithm-confusion attacks, token replay, and token theft?
+* How would you design secure session management for a browser-based application?
+* How do refresh-token rotation and reuse detection help mitigate token theft?
+* What are the risks of accepting untrusted postMessage events?
+* How should origin validation be implemented when using window.postMessage()?
+* How can prototype pollution lead to privilege escalation or remote code execution in some environments?
+* How would you identify and mitigate prototype pollution in a dependency chain?
+* What are the security implications of dynamically importing JavaScript modules from untrusted sources?
+* How can dependency confusion and typosquatting attacks affect JavaScript projects?
+* How would you establish a software supply-chain security strategy for an npm application?
+* What are the limitations of Subresource Integrity when managing third-party scripts?
+* How do CORS misconfigurations expose sensitive API responses?
+* Why is allowing arbitrary origins with credentialed CORS requests dangerous?
+* How would you design a secure Content Security Policy for a complex single-page application?
+* What are the security risks of using eval(), Function(), and string-based timers?
+* How would you securely handle file uploads from a JavaScript frontend?
+* How can client-side secrets be exposed even when code is minified or obfuscated?
+* What are the security implications of insecure deserialization and unsafe object merging?
+* How would you threat-model a JavaScript application that handles payments or personal data?
+* How do security headers such as HSTS, X-Content-Type-Options, and frame-ancestors mitigate attacks?
+* How would you investigate a suspected account takeover caused by stolen browser tokens?

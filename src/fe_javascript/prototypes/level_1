@@ -1,0 +1,30 @@
+* How does JavaScript resolve properties through the prototype chain?
+* What is the difference between classical inheritance and prototypal inheritance?
+* How do you implement inheritance using constructor functions?
+* How can you add a method to a constructor's prototype?
+* What happens when you add a property directly to an instance instead of its prototype?
+* How does method lookup work in the prototype chain?
+* What happens when an object overrides an inherited property?
+* How do you check whether a property is inherited or owned?
+* What is the difference between Object.create() and the new keyword?
+* How does the new operator use prototypes?
+* What happens if you replace a constructor's prototype object?
+* Why should methods generally be defined on a constructor's prototype?
+* What is the difference between prototype-based methods and instance methods?
+* How does inheritance work with multiple levels of prototypes?
+* Can you inherit from a null prototype?
+* What is an object with no prototype, and when is it useful?
+* How does the instanceof operator work with prototypes?
+* What happens if you modify a prototype after creating instances?
+* How does the constructor property behave after replacing a prototype?
+* How can you preserve the constructor property when replacing a prototype?
+* What is the difference between Object.keys() and for...in for inherited properties?
+* How do you prevent an object from having its prototype changed?
+* What is the difference between Object.freeze() and Object.preventExtensions() regarding prototypes?
+* How do getters and setters work with prototypes?
+* How does the prototype chain work for arrays?
+* How does the prototype chain work for functions?
+* What is the relationship between Function.prototype and Object.prototype?
+* How can you share common behavior between unrelated objects?
+* What are the potential risks of modifying built-in prototypes?
+* Why is __proto__ generally discouraged in favor of standard APIs?

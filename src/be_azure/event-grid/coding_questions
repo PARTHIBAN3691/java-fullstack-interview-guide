@@ -1,0 +1,30 @@
+* Write a Java program that creates an Event Grid publisher client using the Azure SDK.
+* Write a Java program that publishes a custom event to an Azure Event Grid topic.
+* Create a Java event model containing event ID, subject, event type, event time, and data.
+* Write a Java program that publishes multiple custom events in a single operation.
+* Create a Spring Boot service that publishes an order-created event to Azure Event Grid.
+* Implement a configuration class that initializes the Event Grid client using environment-based configuration.
+* Write a Java Azure Function that receives and processes Event Grid events.
+* Create an Azure Function that processes a Blob Storage event and logs the blob URL.
+* Write a Java method that validates the event type before processing the event.
+* Implement a Java event handler that routes different event types to different service methods.
+* Write a Java program that detects duplicate events using the event ID.
+* Implement an idempotent event processor that records processed event IDs in a database.
+* Create a Java service that retries transient downstream API failures with bounded exponential backoff.
+* Write a Java method that distinguishes retryable exceptions from permanent processing failures.
+* Implement a dead-letter processing service that reads failed event records and reprocesses them safely.
+* Write unit tests for an Event Grid publisher service using mocked dependencies.
+* Write unit tests for an event handler that processes valid events and rejects unsupported event types.
+* Implement an integration test for a Spring Boot Event Grid publisher using a testable client abstraction.
+* Create a sample event payload using the Event Grid schema and deserialize it into Java objects.
+* Create a sample CloudEvents payload and process it in a Java application.
+* Write a Java method that validates required fields in an incoming event payload.
+* Implement a consumer that handles out-of-order events using an aggregate version or sequence field.
+* Create a Spring Boot REST endpoint that accepts an event and passes it to a business service for processing.
+* Write code that records event processing status, failure reason, and retry count in a database.
+* Implement structured logging and correlation IDs for event publishing and processing.
+* Create a Java service that publishes events using managed identity or an appropriate Azure credential configuration.
+* Write an infrastructure-as-code example that provisions an Event Grid topic and event subscription using Bicep or Terraform.
+* Create a deployment configuration that connects an Event Grid subscription to an Azure Function.
+* Implement an event-processing workflow that publishes an order event, processes it idempotently, and handles failures.
+* Build a small Java Spring Boot application demonstrating Event Grid publishing, event handling, retries, dead-letter recovery, monitoring, and unit testing.

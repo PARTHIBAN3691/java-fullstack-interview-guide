@@ -1,0 +1,30 @@
+* Write a Spring Boot Kafka consumer that sends failed records to a Dead Letter Topic.
+* Implement a DefaultErrorHandler with a DeadLetterPublishingRecoverer and a fixed backoff policy.
+* Write Java configuration to route failed messages from orders to orders.DLT.
+* Implement a custom DeadLetterPublishingRecoverer that routes different exception types to different Dead Letter Topics.
+* Write a Kafka consumer that validates incoming JSON and sends invalid records to a Dead Letter Topic.
+* Implement a Spring Kafka ErrorHandlingDeserializer configuration for handling deserialization failures.
+* Write a custom exception classifier that distinguishes retryable and non-retryable exceptions.
+* Implement exponential backoff for retrying failed Kafka records before dead-letter publishing.
+* Write a Java method that extracts the original topic, partition, and offset from dead-letter headers.
+* Implement a dead-letter message metadata model containing the original key, payload, exception type, timestamp, and source offset.
+* Write a Kafka producer that republishes a failed message while preserving its key and selected headers.
+* Implement a dead-letter replay consumer that validates a record before sending it back to the original topic.
+* Write an idempotency mechanism to prevent duplicate business processing during dead-letter replay.
+* Implement a replay attempt counter using Kafka message headers.
+* Write a Spring Kafka configuration that uses different retry policies for transient and permanent failures.
+* Implement a custom recoverer that sends validation failures and infrastructure failures to separate topics.
+* Write a unit test that verifies a failed record is published to a Dead Letter Topic.
+* Write an EmbeddedKafka integration test that verifies dead-letter routing and original message preservation.
+* Implement a test for a deserialization failure that occurs before the listener method is invoked.
+* Write a test verifying that a non-retryable exception sends the record directly to the Dead Letter Topic.
+* Implement a Java service that reads dead-letter records and filters them by source topic and exception type.
+* Write a controlled replay service that republishes selected dead-letter records only after operator approval.
+* Implement a dead-letter message sanitizer that removes sensitive fields before publishing the record.
+* Write a Kafka listener that tracks dead-letter processing success and failure metrics.
+* Implement a retry limit that prevents messages from cycling indefinitely between the source topic, retry topic, and Dead Letter Topic.
+* Write a Java utility that creates a deterministic replay identifier from the source topic, partition, offset, and message key.
+* Implement a dead-letter handler that preserves original partition information in message headers.
+* Write a Spring Boot actuator metric or Micrometer counter for tracking dead-letter publishing failures.
+* Implement a batch Kafka listener recovery strategy that isolates failed records without unnecessarily replaying successful records.
+* Write an integration test that verifies failed-record recovery behavior when the Dead Letter Topic producer encounters an exception.

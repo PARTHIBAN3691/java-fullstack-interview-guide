@@ -1,0 +1,30 @@
+* Write a Java program using SLF4J to log messages at DEBUG, INFO, WARN, and ERROR levels.
+* Write a Spring Boot application configuration that produces structured JSON logs using Logback.
+* Write a Java utility that creates a consistent log format containing timestamp, service name, severity, and correlation ID.
+* Write a Java servlet filter that generates or propagates a request correlation ID for every HTTP request.
+* Write a Spring Boot interceptor that adds a request ID to the logging context using MDC.
+* Write a Java utility that removes authorization headers, passwords, and tokens from log messages.
+* Write a Java exception handler that logs exceptions with request IDs and returns appropriate HTTP error responses.
+* Write a Spring Boot REST controller that logs request processing duration without logging sensitive payloads.
+* Write a Java program using the Google Cloud Logging client library to write a structured log entry.
+* Write a Java program that creates a Cloud Logging log entry with a custom severity and JSON payload.
+* Write a Java program that queries Cloud Logging entries for a specified project and time range.
+* Write a Java utility that builds Logging Query Language filters using validated service names, severity levels, and timestamps.
+* Write a Java program that retrieves ERROR-level log entries for a particular Cloud Run service.
+* Write a Java program that searches log entries using a trace ID or correlation ID.
+* Write a Java utility that parses structured JSON logs and groups errors by exception type.
+* Write a Java program that calculates the number of errors per service from a collection of log records.
+* Write a Java program that identifies services whose error rate exceeds a configurable threshold.
+* Write a Java utility that detects repeated error messages and summarizes their occurrence frequency.
+* Write a Java program that exports selected log records to a CSV report for incident investigation.
+* Write a Java program that creates a log-based metric using the appropriate Google Cloud API.
+* Write a Java program that lists configured log sinks and reports their destination and filter configuration.
+* Write a Java program that retrieves log entries with pagination and processes results without loading all records into memory.
+* Write a Spring Boot service that publishes selected application log events to Pub/Sub for downstream processing.
+* Write a Java consumer that reads exported log events from Pub/Sub and handles duplicate deliveries safely.
+* Write a Java utility that validates structured log entries against a required logging schema.
+* Write unit tests for a request correlation filter, including missing IDs, valid IDs, and propagation behavior.
+* Write unit tests for a sensitive-data redaction utility covering passwords, tokens, email addresses, and authorization headers.
+* Write unit tests for a Cloud Logging query builder covering severity filters, timestamps, resource labels, and invalid input.
+* Write a Java integration test that verifies structured logging and correlation IDs in a deployed test environment.
+* Write a Cloud Build pipeline that runs logging-related unit tests and validates application logging configuration before deployment.

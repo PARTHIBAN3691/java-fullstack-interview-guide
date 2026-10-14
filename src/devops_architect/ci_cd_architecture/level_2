@@ -1,0 +1,30 @@
+* How would you design a scalable CI/CD architecture for hundreds of Java microservices maintained by multiple teams?
+* How would you design a reusable pipeline framework that supports different programming languages, build tools, and deployment targets?
+* How would you design a pipeline architecture that separates trusted build workloads from untrusted pull-request workloads?
+* How would you guarantee artifact immutability and provenance from source commit through production deployment?
+* How would you design a multi-region CI/CD architecture with high availability and disaster recovery?
+* How would you manage build agent isolation, workload scheduling, and autoscaling for a high-volume pipeline platform?
+* How would you secure self-hosted runners against malicious pull requests, persistent compromise, and credential theft?
+* How would you design short-lived credentials and least-privilege permissions for pipeline deployments across multiple cloud accounts?
+* How would you implement software supply-chain security using artifact signing, provenance verification, dependency scanning, and controlled promotion?
+* How would you design a pipeline that builds an artifact once and promotes the exact same artifact through multiple environments?
+* How would you optimize a pipeline where compilation, testing, container image creation, and security scanning have complex dependencies?
+* How would you implement distributed caching without introducing stale artifacts, cache poisoning, or cross-branch contamination?
+* How would you prevent race conditions when multiple pipelines update shared environments or deploy the same service concurrently?
+* How would you design approval gates that support separation of duties, emergency releases, and auditable exceptions?
+* How would you determine whether production approval should be manual, policy-based, risk-based, or fully automated?
+* How would you design progressive delivery with automated canary analysis and rollback based on service-level indicators?
+* How would you orchestrate deployments across dependent microservices while maintaining compatibility and minimizing downtime?
+* How would you handle backward-incompatible database migrations within an automated deployment architecture?
+* How would you design pipeline recovery when a deployment partially succeeds across multiple services or regions?
+* How would you migrate from Jenkins to GitHub Actions, GitLab CI/CD, Azure Pipelines, or AWS CodePipeline without disrupting active delivery workflows?
+* How would you decide whether to centralize CI/CD infrastructure or let each application team manage its own pipelines?
+* How would you design governance controls that enforce security and compliance while allowing teams to customize their pipeline stages?
+* How would you manage reusable pipeline templates and safely roll out breaking changes to hundreds of repositories?
+* How would you optimize CI/CD cost while maintaining build reliability, throughput, and acceptable feedback times?
+* How would you design an artifact-retention and cleanup strategy that preserves release reproducibility and audit requirements?
+* How would you prevent an unauthorized pipeline modification from bypassing production controls?
+* How would you implement end-to-end traceability from a source commit to build logs, test results, artifact digest, deployment, and production runtime?
+* How would you design deployment orchestration for services that must be released in a specific order with health checks between stages?
+* How would you handle pipeline execution during a source-control outage or artifact-repository outage?
+* How would you measure CI/CD platform effectiveness using lead time, deployment frequency, failure rates, recovery time, throughput, and cost?

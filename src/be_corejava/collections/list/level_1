@@ -1,0 +1,81 @@
+# Core Java — Collections — List
+## Level 1 — Medium
+
+### List Fundamentals
+* How does List differ from Set in terms of ordering, duplicates, and access?
+* What happens when you modify a List while iterating over it?
+* How does the List interface support polymorphism?
+* How do `equals()` and `hashCode()` affect List operations?
+* What is the difference between an unmodifiable List and an immutable List?
+
+### ArrayList
+* How does ArrayList manage its internal storage?
+* What happens when an ArrayList reaches its capacity?
+* What is the difference between initial capacity and size?
+* Why can repeated insertions in the middle of an ArrayList be expensive?
+* What is the difference between `Arrays.asList()` and `new ArrayList<>()`?
+* What happens when you call `remove(1)` versus `remove(Integer.valueOf(1))` on a `List<Integer>`?
+
+### LinkedList
+* How does a doubly linked list work internally?
+* Why does LinkedList have slower indexed access than ArrayList?
+* What is the performance difference between inserting at a known node and searching for an insertion position?
+* How does LinkedList implement both List and Deque?
+* When might LinkedList perform worse than ArrayList even with frequent insertions and removals?
+
+### Vector and Stack
+* Why are Vector methods synchronized, and what overhead can that introduce?
+* Does using Vector make a multi-step operation automatically thread-safe?
+* How can Stack operations be implemented using Deque?
+* What problems can arise from using the legacy Stack class in modern applications?
+
+### Iterator and ListIterator
+* What is `ConcurrentModificationException`?
+* What is the difference between fail-fast and weakly consistent iteration?
+* How does ListIterator support bidirectional traversal?
+* Can you modify a List through a ListIterator while iterating?
+* Why is removing elements through an enhanced for loop problematic?
+
+### Sorting and Comparators
+* How do you sort a List using multiple fields?
+* How do you handle null values in a Comparator?
+* What happens when a Comparator violates its contract?
+* How do you sort objects by one field ascending and another descending?
+* Why should a Comparator ideally be consistent with `equals()` in some use cases?
+
+### List Utilities and Common Operations
+* What is the difference between `List.of()`, `Arrays.asList()`, and `new ArrayList<>()`?
+* How do `Collections.unmodifiableList()` and `List.copyOf()` differ?
+* How do `removeAll()`, `retainAll()`, and `removeIf()` work?
+* How would you find the intersection of two Lists?
+* How would you preserve insertion order while removing duplicates?
+* What are the risks of using a mutable object as a List element when its equality-related fields change?
+
+### Generics and Wildcards with List
+* Explain the PECS principle with examples.
+* Why is `List<Integer>` not a subtype of `List<Number>`?
+* When should you use `List<? extends T>` as a method parameter?
+* When should you use `List<? super T>` as a method parameter?
+* What limitations apply when adding elements to a List declared with an extends wildcard?
+
+### Thread Safety and Concurrent Lists
+* How does CopyOnWriteArrayList support concurrent iteration?
+* What are the trade-offs of CopyOnWriteArrayList?
+* Why must you synchronize externally when iterating over a synchronized List?
+* How does the iterator of CopyOnWriteArrayList differ from an ArrayList iterator?
+* How would you choose between a synchronized List and CopyOnWriteArrayList?
+
+### Streams and List Processing
+* How do you remove duplicates from a List using Streams?
+* How do you group List elements using `Collectors.groupingBy()`?
+* How do you sort a List using a Stream without modifying the original List?
+* What is the difference between `Stream.toList()` and `Collectors.toList()`?
+* How do you handle null elements when processing a List with Streams?
+* When should you avoid parallel streams for List processing?
+
+### List Performance and Complexity
+* Compare the time complexity of common ArrayList and LinkedList operations.
+* How does ArrayList resizing affect performance?
+* Why can ArrayList outperform LinkedList in real applications despite insertion costs?
+* How would you choose an initial capacity for a List when the approximate size is known?
+* How can repeated linear searches in a List create a performance bottleneck?

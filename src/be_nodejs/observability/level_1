@@ -1,0 +1,30 @@
+* How do you implement structured logging in a Node.js application?
+* How do you configure different log levels for development and production?
+* How do you use a logging library such as Pino or Winston?
+* How do you include request IDs in Express application logs?
+* How do you correlate logs across multiple HTTP requests?
+* How do you prevent passwords, tokens, and sensitive information from appearing in logs?
+* How do you implement centralized logging for multiple Node.js services?
+* How do you measure API response time using Express middleware?
+* How do you collect request counts, error counts, and latency metrics?
+* How do you expose application metrics for Prometheus?
+* What is the difference between a counter, gauge, histogram, and summary metric?
+* How do you measure the latency distribution of an API endpoint?
+* What are percentiles such as p50, p95, and p99, and why are they useful?
+* How do you monitor event-loop delay in Node.js?
+* How do you detect event-loop blocking in a production application?
+* How do you monitor heap usage and garbage-collection activity?
+* How do you identify a memory leak using Node.js diagnostic tools?
+* How do you create liveness and readiness endpoints in Express?
+* How do you distinguish application health from dependency health?
+* How do you instrument an Express application with OpenTelemetry?
+* What is the role of spans, trace IDs, and span IDs in distributed tracing?
+* How do you propagate trace context between Node.js services?
+* How do you trace outbound HTTP requests to external services?
+* How do you instrument database queries for distributed tracing?
+* How do you correlate application logs with distributed traces?
+* How do you configure sampling for distributed tracing?
+* How do you define useful alerts for API latency and error rates?
+* What is the difference between an SLI, SLO, and SLA?
+* How do you monitor a Node.js application running in Docker or Kubernetes?
+* How do you use APM tools to identify slow endpoints and bottlenecks?

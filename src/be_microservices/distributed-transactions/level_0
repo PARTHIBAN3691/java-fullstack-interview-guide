@@ -1,0 +1,30 @@
+* What is a distributed transaction?
+* Why are distributed transactions required in microservices architecture?
+* What is the difference between a local transaction and a distributed transaction?
+* What is ACID in database transactions?
+* What are the four properties of ACID?
+* What is transaction consistency?
+* What is transaction atomicity?
+* What is a transaction boundary?
+* Why is transaction management challenging in microservices?
+* What happens when a business operation involves multiple microservices?
+* What is a database transaction?
+* What is the role of @Transactional in Spring Boot?
+* Can @Transactional manage transactions across multiple independent databases by default?
+* What is two-phase commit (2PC)?
+* What are the two phases of two-phase commit?
+* What is a transaction coordinator?
+* What is a participant in a distributed transaction?
+* What is the role of a transaction manager?
+* What is the Saga pattern?
+* What is a compensating transaction?
+* What is the difference between rollback and compensation?
+* What is eventual consistency?
+* What is the difference between strong consistency and eventual consistency?
+* What is the role of messaging in distributed transactions?
+* What is the Transactional Outbox pattern?
+* What is the role of a message broker in distributed transaction processing?
+* What is idempotency in transaction processing?
+* Why are retries important in distributed transactions?
+* What is a transaction timeout?
+* What are common failure scenarios in distributed transactions?

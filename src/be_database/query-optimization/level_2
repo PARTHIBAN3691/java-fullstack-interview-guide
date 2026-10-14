@@ -1,0 +1,30 @@
+* Explain how a cost-based query optimizer chooses an execution plan.
+* How do cardinality estimates, selectivity, and data distribution affect query planning?
+* How do you diagnose a query whose execution plan changes unexpectedly after a deployment?
+* How do parameter-sensitive queries cause performance problems, and how would you investigate them?
+* How do you identify and resolve inefficient nested-loop, hash, and merge joins?
+* Under what conditions can a nested-loop join outperform a hash join?
+* How do memory limits and disk spills affect sorting, hashing, and aggregation operations?
+* How do you optimize queries that process billions of rows?
+* How do index selectivity and write overhead influence index design?
+* How do you determine whether an index should be removed because it provides little benefit?
+* How do you optimize queries involving multiple large tables with skewed data distributions?
+* How do partition pruning and partition-wise joins reduce query execution costs?
+* How do materialized views improve reporting performance, and what consistency trade-offs do they introduce?
+* How would you design a pre-aggregation strategy for expensive analytical queries?
+* How do query plans differ between OLTP and OLAP workloads?
+* How do lock contention and transaction isolation affect perceived query performance?
+* How do long-running transactions contribute to bloat and degraded query performance in PostgreSQL?
+* How do you identify whether a bottleneck is caused by CPU, memory, disk I/O, or network latency?
+* How do database buffer caches affect repeated query execution?
+* How do you investigate cache misses and excessive physical reads?
+* How do prepared statement plan caching and generic versus custom plans affect PostgreSQL performance?
+* How do you optimize queries against JSON or JSONB columns?
+* How do you optimize full-text search and wildcard searches on large datasets?
+* How do you optimize pagination when the requested page is very deep in a large result set?
+* How do you optimize database access when Hibernate generates inefficient SQL?
+* How do you prevent excessive database round trips in a distributed Java application?
+* How do you optimize transaction boundaries to reduce lock duration without compromising consistency?
+* How do you benchmark database performance under realistic concurrency and data volume?
+* How would you establish query performance baselines and detect regressions automatically?
+* How would you design a query optimization strategy for a multi-tenant application with uneven tenant workloads?

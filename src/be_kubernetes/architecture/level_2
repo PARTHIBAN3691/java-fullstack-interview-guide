@@ -1,0 +1,30 @@
+* Explain the internal request flow from kubectl to the API Server, admission controllers, etcd, and controllers.
+* How does Kubernetes achieve high availability for its control plane?
+* How would you design an etcd cluster for reliability, performance, and disaster recovery?
+* What are the architectural implications of running a large number of Pods across many worker nodes?
+* How does Kubernetes implement eventual consistency between desired and actual cluster state?
+* What happens when the API Server becomes unavailable while existing applications are running?
+* How does Kubernetes handle leader election for control plane components?
+* How would you design a multi-zone Kubernetes cluster for high availability?
+* How would you architect a multi-region Kubernetes deployment for disaster recovery?
+* What are the trade-offs between a single large cluster and multiple smaller clusters?
+* How would you isolate workloads belonging to different teams or tenants?
+* How do network policies enforce communication boundaries between microservices?
+* How would you design secure service-to-service communication using mutual TLS?
+* How would you integrate Kubernetes with a service mesh such as Istio?
+* What are the architectural differences between Kubernetes Service networking and service-mesh traffic management?
+* How would you design zero-downtime deployments for critical Spring Boot applications?
+* How do PodDisruptionBudgets influence application availability during maintenance?
+* How would you design autoscaling for applications with unpredictable traffic patterns?
+* How do requests, limits, CPU throttling, and memory pressure affect application performance?
+* How would you prevent a noisy-neighbor problem in a shared Kubernetes cluster?
+* How would you design persistent storage for stateful workloads across node failures?
+* What are the limitations of StatefulSets when deploying distributed databases?
+* How would you manage secrets securely across multiple clusters and environments?
+* How would you implement GitOps-based deployment architecture using Argo CD or Flux?
+* How would you integrate Kubernetes with a CI/CD pipeline for controlled production releases?
+* How would you implement canary deployments and blue-green deployments in Kubernetes?
+* How would you design observability using Prometheus, Grafana, OpenTelemetry, and centralized logging?
+* How would you troubleshoot a cluster where Pods remain in Pending, CrashLoopBackOff, or Terminating states?
+* How would you design cluster capacity planning and workload placement for a high-throughput Java platform?
+* How would you establish Kubernetes security using RBAC, admission policies, image scanning, and runtime protection?

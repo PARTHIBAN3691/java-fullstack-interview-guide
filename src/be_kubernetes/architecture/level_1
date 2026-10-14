@@ -1,0 +1,30 @@
+* Explain the complete architecture of a Kubernetes cluster.
+* How do the control plane and worker nodes communicate?
+* How does the API Server process a Kubernetes resource request?
+* How does etcd store and maintain Kubernetes cluster state?
+* How does the Scheduler select a worker node for a Pod?
+* How do Kubernetes controllers reconcile the actual state with the desired state?
+* What happens internally when you create a Deployment?
+* How does a ReplicaSet maintain the required number of Pods?
+* How does Kubernetes perform service discovery between applications?
+* What is the difference between ClusterIP, NodePort, and LoadBalancer Services?
+* How does the Kubernetes networking model enable Pod-to-Pod communication?
+* What is a Container Network Interface (CNI) plugin?
+* How does DNS resolution work inside a Kubernetes cluster?
+* What is the role of CoreDNS in Kubernetes architecture?
+* How does Ingress differ from a Kubernetes Service?
+* What is the role of an Ingress Controller?
+* How do readiness, liveness, and startup probes work?
+* How does Kubernetes handle a worker node failure?
+* How does Kubernetes reschedule Pods when a node becomes unavailable?
+* How do resource requests and limits influence Pod scheduling?
+* What are taints, tolerations, node selectors, and affinity rules?
+* How does Horizontal Pod Autoscaler work?
+* What is the difference between Horizontal Pod Autoscaler and Cluster Autoscaler?
+* How do ConfigMaps and Secrets support application configuration?
+* How does Kubernetes manage persistent storage for stateful applications?
+* What is the difference between StatefulSet and Deployment at the architectural level?
+* How do rolling updates and rollbacks work in Kubernetes?
+* How do Kubernetes Namespaces support resource isolation?
+* How would you expose a Spring Boot application securely outside a Kubernetes cluster?
+* How would you design communication between multiple Spring Boot microservices deployed on Kubernetes?

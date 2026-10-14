@@ -1,0 +1,30 @@
+* Explain the architecture of Angular's testing utilities.
+* How does Angular's dependency injection system work inside TestBed?
+* How do you configure standalone components in Angular tests?
+* How do you test a standalone component that imports other standalone components?
+* How do you override component metadata or providers during testing?
+* How do you isolate a component from its child components during unit testing?
+* How do you test a component with complex RxJS pipelines?
+* How do you test debounceTime() and switchMap() behavior?
+* How do you test cancellation of an ongoing HTTP request?
+* How do you test retry logic and exponential backoff?
+* How do you test NgRx reducers, selectors, and effects?
+* How do you test Angular Signals and computed state?
+* How do you test components that use OnPush change detection?
+* How do you test dynamic component creation using ViewContainerRef?
+* How do you test content projection and ng-template rendering?
+* How do you test components that use ViewChild and ContentChild?
+* How do you test route resolvers and lazy-loaded routes?
+* How do you test functional HTTP interceptors?
+* How do you test authentication and authorization logic?
+* How do you handle timers, promises, and Observables in asynchronous tests?
+* How do you avoid flaky tests caused by asynchronous operations?
+* What are the limitations of fakeAsync()?
+* How do you test error handling without coupling tests to implementation details?
+* How do you design reusable test utilities for a large Angular application?
+* How do you decide whether to mock, stub, or use a real dependency?
+* What is the difference between a test double, mock, stub, and spy?
+* How do you test accessibility requirements in Angular components?
+* How do you test Angular applications rendered using server-side rendering?
+* How do you optimize test execution time in a large Angular workspace?
+* How do you establish an effective testing strategy for an enterprise Angular application?

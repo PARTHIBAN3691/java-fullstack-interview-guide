@@ -1,0 +1,30 @@
+* What is Docker Compose?
+* Why is Docker Compose used in Java application development?
+* What is the purpose of the docker-compose.yml file?
+* What is the difference between Docker and Docker Compose?
+* What is a service in Docker Compose?
+* What is the difference between a service and a container in Docker Compose?
+* What is the purpose of the services section in a Compose file?
+* What is the purpose of the image property in Docker Compose?
+* What is the purpose of the build property in Docker Compose?
+* What is the difference between image and build in Docker Compose?
+* What is the purpose of the ports property?
+* What is the difference between ports and expose in Docker Compose?
+* What is the purpose of the environment property?
+* How do you pass environment variables to a container using Docker Compose?
+* What is the purpose of the volumes property?
+* What is the difference between named volumes and bind mounts in Docker Compose?
+* What is the purpose of the networks property?
+* How do services communicate with each other in Docker Compose?
+* What is the purpose of the depends_on property?
+* Does depends_on guarantee that a database is ready to accept connections?
+* What is the purpose of the restart property?
+* What is the purpose of the container_name property?
+* What is the difference between docker compose up and docker compose start?
+* What is the difference between docker compose stop and docker compose down?
+* How do you rebuild an image using Docker Compose?
+* How do you view logs for a service in Docker Compose?
+* How do you list the services defined in a Compose application?
+* How do you execute a command inside a running Compose service?
+* What is the purpose of the .env file in Docker Compose?
+* How would you use Docker Compose to run a Spring Boot application and a PostgreSQL database?

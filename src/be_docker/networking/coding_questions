@@ -1,0 +1,30 @@
+* Write a Dockerfile for a Spring Boot application that listens on port 8080 and can be accessed through Docker port publishing.
+* Write a Docker Compose file containing a Spring Boot service and a PostgreSQL service connected through a user-defined network.
+* Write a Docker Compose configuration with separate frontend, backend, and database networks.
+* Write a Docker Compose file that allows the application to reach PostgreSQL while preventing direct host access to the database port.
+* Write a Docker Compose configuration that publishes the application on a specific host interface and port.
+* Write a Docker Compose file in which a Spring Boot service connects to PostgreSQL using the database service name.
+* Write a Docker Compose configuration that connects a reverse proxy to a frontend network and a backend service to both frontend and database networks.
+* Write a Docker Compose file with an explicitly named bridge network and multiple Java microservices.
+* Write a Docker Compose configuration that assigns a static IP address to a container using a custom subnet.
+* Write a Docker Compose file that configures an application to access a service running on the Docker host, accounting for Linux and Docker Desktop differences.
+* Write a shell script that lists running containers, their network attachments, IP addresses, and published ports.
+* Write a shell script that inspects a Docker network and reports all attached containers.
+* Write a shell script that verifies whether a specified container is attached to a required Docker network.
+* Write a shell script that checks whether a host port is already in use before starting a container.
+* Write a diagnostic script that tests DNS resolution and TCP connectivity to a specified host and port from a container.
+* Write a shell script that identifies containers with unexpectedly published database ports.
+* Write a shell script that creates a Docker bridge network if it does not already exist and connects a container to it.
+* Write a script that disconnects a container from one network and connects it to another while handling errors safely.
+* Write a Docker Compose configuration that uses service health checks and application startup dependencies for a Java service and its database.
+* Write a Spring Boot configuration that externalizes a dependent service URL so it can use Docker Compose DNS names.
+* Write a Java method using WebClient to call another Spring Boot microservice with connection and response timeouts.
+* Write a Java service method that handles connection failures when calling another containerized REST API.
+* Write a Java configuration class that creates a WebClient with configurable base URL, connection timeout, and response timeout.
+* Write a Spring Boot integration test that verifies communication with a dependent HTTP service using a controlled test environment.
+* Write a Docker Compose configuration that places a database on an internal network and a reverse proxy on a separately published frontend network.
+* Write a Docker Compose configuration for multiple Spring Boot services that communicate through service names without publishing every service port to the host.
+* Write a shell script that checks DNS resolution, TCP connectivity, and HTTP health endpoints for a containerized application.
+* Write a Docker Compose configuration with IPv6 enabled for a custom network and an application service.
+* Write a diagnostic script that collects container network inspection output and relevant host port mappings for incident analysis.
+* Write a production-oriented Docker Compose configuration for Spring Boot microservices with network segmentation, restricted port publishing, health checks, and explicit service-to-service connectivity.

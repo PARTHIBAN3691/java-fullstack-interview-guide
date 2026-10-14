@@ -1,0 +1,30 @@
+* How would you design a highly available Java application architecture using Compute Engine?
+* How would you distribute VM instances across zones to tolerate a zonal failure?
+* How would you design disaster recovery for a critical application hosted on Compute Engine?
+* How would you choose between standalone VMs, managed instance groups, Cloud Run, and GKE?
+* How would you size Compute Engine instances based on JVM heap usage, CPU utilization, and request throughput?
+* How would you tune JVM memory settings for a VM with limited memory?
+* How would you investigate frequent garbage collection pauses on a Java application running on Compute Engine?
+* How would you design autoscaling for a workload with sudden traffic spikes and variable request latency?
+* How would you select CPU-based versus load-based autoscaling signals?
+* How would you design rolling deployments without interrupting active requests?
+* How would you implement blue-green deployments for applications hosted on Compute Engine?
+* How would you perform a safe rollback after a failed VM application deployment?
+* How would you configure a managed instance group with autoscaling, health checks, and autohealing?
+* How would you design stateless application instances when requests can reach different VMs?
+* How would you manage session state across multiple VM instances?
+* How would you design persistent storage for applications that must survive VM replacement?
+* How would you choose between Persistent Disk, Hyperdisk, Local SSD, and Cloud Storage for different workloads?
+* How would you optimize disk IOPS and throughput for a database or file-processing workload?
+* How would you design network segmentation and least-privilege firewall rules for production VMs?
+* How would you secure VM access using OS Login, IAM, and Identity-Aware Proxy?
+* How would you prevent service account credential exposure on Compute Engine?
+* How would you troubleshoot outbound connectivity failures from a private VM without an external IP address?
+* How would you design private VM internet access using Cloud NAT?
+* How would you optimize a multi-tier application using internal load balancing and private networking?
+* How would you investigate high CPU utilization when application traffic is stable?
+* How would you troubleshoot a VM that becomes unresponsive despite apparently normal CPU utilization?
+* How would you automate patch management and operating system updates across hundreds of VMs?
+* How would you design immutable VM deployments using instance templates and managed instance groups?
+* How would you implement centralized logging, metrics, alerting, and distributed tracing across VM instances?
+* How would you optimize Compute Engine costs using machine sizing, committed use discounts, Spot VMs, and scheduling?

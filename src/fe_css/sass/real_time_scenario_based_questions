@@ -1,0 +1,30 @@
+* A project contains repeated color and spacing values across hundreds of CSS rules. How would you use Sass to centralize them?
+* Multiple developers maintain separate stylesheets and duplicate the same mixins. How would you organize shared Sass modules?
+* A legacy project uses @import extensively. How would you migrate it to @use and @forward?
+* A nested SCSS file generates overly complex selectors. How would you simplify the nesting?
+* A design system requires configurable colors, fonts, and spacing values. How would you structure its Sass variables?
+* A team wants to generate button styles for primary, secondary, and danger variants. How would you use mixins or maps?
+* A responsive application needs standard breakpoints shared across components. How would you define and reuse them in Sass?
+* A project generates hundreds of utility classes using loops. How would you prevent unnecessary CSS output?
+* A Sass mixin needs to accept different padding and margin values. How would you design its parameters?
+* Several components require the same hover and focus styles. Would you use a mixin or @extend, and why?
+* A Sass variable is not available in another file. How would you troubleshoot the module and namespace configuration?
+* A developer changes a shared Sass variable, but some components do not reflect the expected value. How would you investigate?
+* A team needs different themes for multiple customers. How would you combine Sass configuration with CSS custom properties?
+* A project requires light and dark modes that users can switch without recompiling the stylesheet. How would you implement this?
+* A Sass map contains nested typography settings for headings and body text. How would you retrieve and generate the corresponding CSS?
+* A reusable grid mixin must support different column counts and gaps. How would you design it?
+* A mixin generates repeated CSS declarations across many components. How would you decide whether to keep the mixin or use @extend?
+* A compilation pipeline fails after a Sass dependency upgrade. How would you diagnose the breaking change?
+* A legacy Sass codebase produces deprecation warnings. How would you prioritize and resolve them?
+* A component library needs consistent spacing and typography utilities. How would you generate them from Sass maps?
+* A Sass function receives invalid input and produces unexpected CSS. How would you validate the arguments?
+* A project needs standardized z-index values for modals, dropdowns, and tooltips. How would you model them in Sass?
+* A large stylesheet has deeply nested selectors and frequent specificity conflicts. How would you refactor it?
+* A team wants to share Sass variables and mixins between multiple applications. How would you package and expose the modules?
+* A component's Sass styles accidentally depend on variables from another component. How would you improve module isolation?
+* A CI build compiles Sass successfully on one machine but fails on another. What would you investigate?
+* A team wants to detect invalid Sass configuration values before producing CSS. How could Sass validation be implemented?
+* A Sass loop generates incorrect class names for responsive utilities. How would you debug interpolation and loop logic?
+* A frontend team wants to test reusable Sass functions and mixins. What testing strategy would you recommend?
+* An enterprise application needs a maintainable Sass architecture that supports themes, components, and shared utilities. How would you design it?

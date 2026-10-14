@@ -1,0 +1,97 @@
+**AWS AI and ML Services**
+* What are the major AI and machine learning services available in AWS?
+* What is the difference between Amazon Bedrock and Amazon SageMaker?
+* How do Amazon S3, AWS Lambda, and Amazon API Gateway support AI application development?
+* What are Amazon Comprehend, Amazon Textract, and Amazon Rekognition used for?
+* How do IAM roles control access to AWS AI services?
+
+**Amazon Bedrock**
+* What is Amazon Bedrock, and what problems does it solve?
+* What are foundation models in Amazon Bedrock?
+* What is the difference between Amazon Bedrock and hosting an LLM on your own infrastructure?
+* What are model IDs and inference profiles in Amazon Bedrock?
+* How can an application invoke a foundation model through the Bedrock API?
+
+**Amazon SageMaker**
+* What is Amazon SageMaker, and what are its primary capabilities?
+* What is the difference between SageMaker training jobs and inference endpoints?
+* What are SageMaker notebooks and Studio?
+* What is a SageMaker model registry?
+* How does SageMaker support the machine learning lifecycle?
+
+**Azure AI Foundry**
+* What is Azure AI Foundry, and what capabilities does it provide?
+* What is the role of a project in Azure AI Foundry?
+* What are model catalogs and model deployments?
+* How does Azure AI Foundry integrate with other Azure services?
+* What is the difference between a model catalog entry and a deployed model?
+
+**Azure OpenAI Service**
+* What is Azure OpenAI Service?
+* How does Azure OpenAI differ from using the OpenAI API directly?
+* What are deployments, models, and endpoints in Azure OpenAI?
+* How is Microsoft Entra ID used to authenticate Azure OpenAI applications?
+* What are quotas and rate limits in Azure OpenAI?
+
+**Google Vertex AI**
+* What is Google Vertex AI, and what capabilities does it provide?
+* What is the difference between Vertex AI model training and online prediction?
+* What is Vertex AI Model Garden?
+* How does Vertex AI integrate with Google Cloud Storage and BigQuery?
+* What is the purpose of Vertex AI pipelines?
+
+**Google Gemini**
+* What is Gemini, and how is it used in Google Cloud AI applications?
+* What is the difference between Gemini models accessed through Vertex AI and the Gemini Developer API?
+* What are multimodal capabilities in Gemini?
+* What is a context window in a Gemini model?
+* How can a Java application invoke a Gemini model?
+
+**Managed Vector Search Services**
+* What is a managed vector search service?
+* What is the difference between a vector database and a traditional relational database?
+* What are embeddings, and why are they used for semantic search?
+* What are metadata filters in vector search?
+* What factors should be considered when choosing a managed vector search service?
+
+**Cloud AI Security**
+* What are the main security risks associated with cloud-hosted AI applications?
+* How do IAM and role-based access control protect AI resources?
+* Why should API keys and model credentials be stored in a secrets manager?
+* What is encryption at rest and in transit?
+* Why is data privacy important when using managed AI models?
+
+**Private AI Networking**
+* What is private networking for cloud AI services?
+* What is the difference between a public endpoint and a private endpoint?
+* What are VPCs, VNets, and private subnets?
+* What is the purpose of private DNS in AI service connectivity?
+* How do firewalls and network security groups protect AI workloads?
+
+**Cloud Model Deployment**
+* What are the common ways to deploy AI models in the cloud?
+* What is the difference between serverless inference and dedicated model endpoints?
+* What are online inference and batch inference?
+* What is a model artifact?
+* Why are health checks and monitoring important for deployed models?
+
+**Multi-Cloud AI Architecture**
+* What is a multi-cloud AI architecture?
+* What are the benefits and challenges of using AI services across multiple cloud providers?
+* What is vendor lock-in in cloud AI?
+* What is the difference between multi-cloud and hybrid cloud?
+* Which architectural components can be shared across cloud AI platforms?
+
+**AI Cost Management**
+* What are the major cost drivers in cloud AI applications?
+* How do token-based pricing and provisioned-capacity pricing differ?
+* How can caching reduce AI inference costs?
+* What are budgets, alerts, and usage quotas?
+* Why should AI costs be monitored separately for development, testing, and production?
+
+**Cloud AI Governance**
+* What is cloud AI governance?
+* Why are model inventories and ownership records important?
+* What is the role of audit logging in AI governance?
+* What are data residency and data retention requirements?
+* How do policies and access controls support responsible AI deployment?

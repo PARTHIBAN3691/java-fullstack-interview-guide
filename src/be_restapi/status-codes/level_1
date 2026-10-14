@@ -1,0 +1,30 @@
+* How do you return specific HTTP status codes from a Spring Boot REST controller?
+* What is the difference between returning ResponseEntity and using @ResponseStatus?
+* How do you return HTTP 201 Created with a Location header?
+* How do you return HTTP 204 No Content after successfully deleting a resource?
+* When should a REST API return HTTP 202 instead of HTTP 200?
+* What status code should be returned when a resource is successfully updated?
+* What status code should be returned when a resource is created asynchronously?
+* How should an API respond when a requested resource does not exist?
+* How do you distinguish authentication failures from authorization failures using status codes?
+* What status code should be returned when a request contains invalid JSON?
+* What status code should be returned when request validation fails?
+* When should HTTP 409 Conflict be used in a REST API?
+* What is the difference between HTTP 400 and HTTP 422?
+* When should an API return HTTP 405 instead of HTTP 404?
+* How should an API respond when the client sends an unsupported Content-Type?
+* How should an API respond when it cannot produce a representation acceptable to the client?
+* When should HTTP 429 be returned instead of HTTP 503?
+* How do you handle exceptions globally using @RestControllerAdvice?
+* How do you map custom Java exceptions to appropriate HTTP status codes?
+* How can ResponseStatusException be used in Spring Boot?
+* How do you prevent internal exceptions from always becoming HTTP 500 responses?
+* How should a REST API handle database constraint violations?
+* What status code should be returned when a duplicate record is submitted?
+* How should an API respond when an optimistic locking conflict occurs?
+* What status code should be returned when a downstream service is unavailable?
+* How should an API handle downstream connection timeouts?
+* What is the purpose of the Retry-After header with HTTP 429 or 503?
+* How do you test HTTP status codes using MockMvc?
+* How can API documentation specify the possible status codes for an endpoint?
+* Why should a REST API use consistent status codes across all endpoints?

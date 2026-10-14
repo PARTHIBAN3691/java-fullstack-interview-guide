@@ -1,0 +1,65 @@
+# Core Java — Collections — Queue
+## Real-Time Scenario-Based Questions
+
+### Queue Fundamentals
+* A backend service processes incoming jobs in FIFO order, but some jobs are lost when processing fails. How would you investigate the queue lifecycle and redesign failure handling?
+* A service receives requests faster than it can process them, causing memory usage to increase continuously. How would you introduce backpressure and control queue growth?
+* A task-processing system must preserve ordering for each customer but process different customers concurrently. How would you design the queueing strategy?
+* A queue-based workflow experiences increasing end-to-end latency even though each individual task takes very little time. How would you identify the bottleneck?
+* A system needs graceful shutdown without abandoning accepted tasks. How would you coordinate producers, consumers, and queued work?
+
+### PriorityQueue
+* A job scheduler processes high-priority tasks first, but some tasks wait indefinitely. How would you identify and prevent starvation?
+* A task's priority changes while it is waiting in a PriorityQueue, but it is still processed according to its old priority. Why does this happen, and how would you fix it?
+* A scheduler must preserve arrival order for jobs with the same priority. How would you implement deterministic tie-breaking?
+* A service needs to process the top 100 highest-value events from millions of records. How would you choose an efficient data structure and algorithm?
+* A production scheduler experiences incorrect ordering after a Comparator change. How would you validate the ordering contract and test edge cases?
+
+### ArrayDeque
+* A single-threaded request processor uses LinkedList as a queue and creates excessive short-lived objects. How would you evaluate replacing it with ArrayDeque?
+* A sliding-window calculation becomes slow because it scans every element in the current window. How would you optimize it using a Deque?
+* A custom circular-buffer Deque loses elements after repeated wraparound operations. How would you debug the head, tail, and resizing logic?
+* A team shares an ArrayDeque across multiple worker threads and occasionally loses tasks. How would you redesign access to make it safe?
+
+### LinkedList as a Queue
+* A queue built with LinkedList has high garbage-collection activity under heavy traffic. How would you profile allocation pressure and evaluate alternatives?
+* A multi-threaded application uses LinkedList as a shared queue and produces inconsistent results. How would you replace the unsafe design?
+* A FIFO queue's performance deteriorates as the number of queued elements grows. How would you investigate memory locality, allocation overhead, and processing delays?
+
+### Deque Fundamentals
+* A service needs to find the maximum value in every sliding window of a large data stream. How would you use a monotonic Deque to improve performance?
+* A worker pool needs to distribute tasks among workers while allowing idle workers to take work from others. How would you evaluate a work-stealing design?
+* A stack-based implementation is producing unexpected ordering when refactored to Deque. How would you verify the semantics of the chosen operations?
+
+### BlockingQueue Fundamentals
+* Producers block for long periods because a bounded BlockingQueue is full. How would you identify whether the bottleneck is queue capacity or slow consumers?
+* Consumers wait indefinitely because no new tasks arrive during shutdown. How would you design a reliable shutdown signal or termination protocol?
+* A producer thread is interrupted while blocked on `put()`. How should the application handle the interruption and task ownership?
+* A batch application occasionally deadlocks because threads hold locks while inserting into a full queue. How would you investigate and fix the lock-ordering problem?
+* A service must protect itself against traffic spikes without dropping all incoming work. How would you implement a controlled overload strategy?
+
+### ArrayBlockingQueue and LinkedBlockingQueue
+* A production application uses an unbounded LinkedBlockingQueue, and the JVM eventually runs out of memory. How would you identify the cause and select an appropriate capacity?
+* A bounded ArrayBlockingQueue remains full and causes request threads to time out. How would you determine the right overload policy?
+* A queue's throughput decreases sharply after increasing the number of producers and consumers. How would you compare contention, queue implementation, and workload distribution?
+* A downstream database becomes slow, and the queue begins accumulating tasks. How would you protect the application while preserving important work?
+* A system has strict memory limits and needs predictable queue storage. How would you choose between ArrayBlockingQueue and LinkedBlockingQueue?
+
+### ConcurrentLinkedQueue
+* A worker continuously polls an empty ConcurrentLinkedQueue, causing high CPU usage. How would you redesign the worker to avoid busy waiting?
+* A service uses ConcurrentLinkedQueue for incoming events, but memory usage grows during peak traffic. How would you introduce backpressure and queue limits?
+* A team assumes ConcurrentLinkedQueue blocks until an item is available, causing workers to spin. How would you correct the consumer design?
+* A concurrent monitoring task uses `size()` to decide when processing is complete and occasionally terminates too early. How would you redesign the completion condition?
+* A non-blocking queue performs poorly under contention. How would you determine whether the queue, thread scheduling, or surrounding workflow is responsible?
+
+### Queue Iteration and Operations
+* A batch processor removes elements from a queue during iteration and encounters inconsistent processing behavior. How would you redesign the iteration logic?
+* A service drains a large number of tasks into a batch, but partial batch failures cause uncertainty about which tasks were completed. How would you handle retries and task ownership?
+* A monitoring dashboard reports a queue as empty even though tasks are being added concurrently. How would you interpret the observation and design reliable metrics?
+* A queue-processing service needs to process tasks in batches while maintaining latency targets for newly arriving work. How would you choose the batch size and scheduling policy?
+
+### Queue Performance and Complexity
+* A production service has a growing queue depth and rising response times, but CPU utilization is low. How would you investigate blocked workers, downstream dependencies, and scheduling?
+* A queue migration improves average throughput but worsens tail latency. How would you measure and identify the source of the regression?
+* A service processes millions of small tasks and experiences frequent garbage collection. How would you evaluate queue allocation overhead and task batching?
+* A performance test shows that ArrayDeque is faster than a concurrent queue, but production requires multiple producers and consumers. How would you design a realistic comparison?

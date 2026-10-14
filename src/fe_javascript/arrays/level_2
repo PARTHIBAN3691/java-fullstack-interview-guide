@@ -1,0 +1,30 @@
+* Explain how JavaScript arrays differ from arrays in statically typed languages such as Java.
+* Are JavaScript arrays true arrays or objects? Explain their behavior.
+* How does JavaScript handle array indices and the length property?
+* What happens to the length property when an element is added at a distant index?
+* What is a sparse array, and how does it affect array iteration methods?
+* How do map(), forEach(), and filter() behave when array elements are deleted during iteration?
+* What are the differences between mutating and non-mutating array methods?
+* How can unexpected array mutation cause bugs in large applications?
+* How does the spread operator create a shallow copy of a nested array?
+* How would you deep-clone an array containing nested objects?
+* What are the limitations of structuredClone() when copying arrays?
+* How does reference equality affect comparisons between arrays?
+* Why does comparing two arrays with === usually return false?
+* How would you compare two arrays for value equality?
+* How does the reduce() method work when no initial accumulator value is supplied?
+* What edge cases should be considered when using reduce() on an empty array?
+* How would you implement a custom version of map()?
+* How would you implement a custom version of filter()?
+* How would you implement a custom version of reduce()?
+* How do stable sorting guarantees affect sorting arrays of objects?
+* How would you sort an array of objects using multiple criteria?
+* How can you group an array of objects by a specific property?
+* How would you efficiently remove duplicates from a large array of objects?
+* What is the difference between Set-based deduplication and deduplication using filter()?
+* How would you find the intersection and difference between two arrays?
+* How would you flatten an arbitrarily nested array without using flat(Infinity)?
+* How would you rotate an array by a given number of positions efficiently?
+* How do time and space complexity affect the choice of array operations?
+* How would you optimize repeated searches in a large array?
+* When would a Map, Set, typed array, or linked data structure be preferable to a regular array?

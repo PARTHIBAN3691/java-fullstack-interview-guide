@@ -1,0 +1,30 @@
+* Explain how callbacks work with synchronous functions.
+* Explain how callbacks work with asynchronous operations.
+* What is callback hell, and why does it occur?
+* How can callback hell be avoided?
+* What is the difference between nested callbacks and sequential callbacks?
+* How do callbacks work with the setTimeout() function?
+* How do callbacks work with event listeners?
+* How can you pass arguments to a callback using bind()?
+* How can you pass arguments to a callback using an arrow function?
+* What is the difference between callback execution and callback registration?
+* How does the this keyword behave inside a callback function?
+* How can you preserve the this context when passing a callback?
+* What is the difference between call(), apply(), and bind() when working with callbacks?
+* How can callbacks be used to implement reusable functions?
+* How do callbacks work with map(), filter(), and reduce()?
+* What happens if a callback throws an exception?
+* How can errors be handled in callback-based asynchronous code?
+* What is an error-first callback pattern?
+* Why is the error-first callback convention commonly used in Node.js?
+* How can you prevent a callback from being executed more than once?
+* What is an inversion of control problem in callback-based programming?
+* How can callbacks lead to tightly coupled code?
+* What is the difference between callbacks and Promises?
+* How can a callback-based function be converted into a Promise?
+* How can you execute multiple asynchronous callback operations in sequence?
+* How can you execute multiple callback-based operations in parallel?
+* How can you return a result from an asynchronous callback operation?
+* What are the limitations of using callbacks for asynchronous programming?
+* How can you debug deeply nested callbacks?
+* How do callbacks interact with the JavaScript event loop?

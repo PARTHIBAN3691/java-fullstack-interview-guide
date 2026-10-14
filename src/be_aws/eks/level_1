@@ -1,0 +1,21 @@
+
+* How do you deploy a Java Spring Boot application to Amazon EKS?
+* How do you containerize a Java application using Docker before deploying it to EKS?
+* How do you push a container image to Amazon ECR and use it in a Kubernetes Deployment?
+* How do you configure CPU and memory requests and limits for a Java container?
+* How do you expose an EKS application using a Kubernetes Service and AWS Load Balancer Controller?
+* What is the difference between the AWS Load Balancer Controller and the Kubernetes Ingress resource?
+* How do you configure application environment variables using ConfigMaps and Secrets?
+* How do you configure a readiness probe, liveness probe, and startup probe for a Spring Boot application?
+* How do you configure horizontal pod autoscaling in EKS?
+* What is the difference between Horizontal Pod Autoscaler, Vertical Pod Autoscaler, and Cluster Autoscaler?
+* How do you configure EKS managed node groups and select suitable EC2 instance types?
+* How do you configure IAM permissions for applications running inside EKS Pods?
+* What is IAM Roles for Service Accounts (IRSA)?
+* What is EKS Pod Identity, and how does it help applications access AWS services?
+* How do you configure persistent storage for EKS workloads using Amazon EBS or Amazon EFS?
+* How do you configure centralized application logging and monitoring for EKS?
+* How do you troubleshoot a Pod in `CrashLoopBackOff` status?
+* What is the difference between `kubectl logs`, `kubectl describe`, and `kubectl get events`?
+* How do you perform rolling updates and rollbacks for Kubernetes Deployments?
+* How do you configure network policies and security groups to control communication between workloads?

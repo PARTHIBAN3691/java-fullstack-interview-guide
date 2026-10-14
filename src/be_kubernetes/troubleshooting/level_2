@@ -1,0 +1,30 @@
+* Explain a systematic troubleshooting methodology for production Kubernetes incidents.
+* How would you troubleshoot a Java application that experiences intermittent latency under high traffic?
+* How would you distinguish application memory leaks from Kubernetes memory-limit issues?
+* How would you analyze Java heap usage, garbage collection, and container memory metrics together?
+* How would you investigate CPU throttling that occurs even when node CPU utilization appears low?
+* How would you troubleshoot a Pod that remains Running but stops processing requests?
+* How would you investigate a Deployment rollout that is blocked by readiness failures?
+* How would you troubleshoot cascading failures across multiple Spring Boot microservices?
+* How would you diagnose intermittent packet loss between Kubernetes nodes?
+* How would you investigate a Service that has healthy endpoints but still returns connection timeouts?
+* How would you troubleshoot CoreDNS failures affecting only certain namespaces?
+* How would you diagnose discrepancies between Service routing, EndpointSlices, and actual Pod readiness?
+* How would you investigate a node that repeatedly becomes NotReady and recovers automatically?
+* How would you troubleshoot container runtime failures affecting multiple Pods on the same node?
+* How would you diagnose persistent volume attachment failures across availability zones?
+* How would you investigate storage latency that causes application timeouts and failed health probes?
+* How would you identify resource contention caused by CPU requests, limits, and node overcommitment?
+* How would you troubleshoot HPA and Cluster Autoscaler when neither increases capacity as expected?
+* How would you diagnose scheduling failures caused by taints, tolerations, affinity, and resource constraints?
+* How would you troubleshoot a Kubernetes API server that responds slowly or becomes unavailable?
+* How would you investigate etcd latency and its impact on Kubernetes control-plane operations?
+* How would you analyze audit logs to identify the source of unexpected changes to production resources?
+* How would you troubleshoot intermittent TLS handshake failures between microservices?
+* How would you investigate certificate expiration and trust-chain problems in a service mesh?
+* How would you distinguish application errors from ingress-controller, load-balancer, and network failures?
+* How would you investigate production incidents where application logs are missing or incomplete?
+* How would you correlate metrics, logs, traces, Kubernetes events, and Java thread dumps during an incident?
+* How would you troubleshoot a memory leak when the application restarts before diagnostic data can be collected?
+* How would you design automated health checks and alerts that detect problems before customer impact?
+* How would you conduct root-cause analysis for a major Kubernetes outage and prevent recurrence?

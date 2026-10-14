@@ -1,0 +1,30 @@
+* Write a Spring Boot REST endpoint that returns HTTP 200 for a successful GET request.
+* Implement a POST endpoint that returns HTTP 201 Created after saving a resource.
+* Write a DELETE endpoint that returns HTTP 204 No Content.
+* Implement a controller that returns different status codes based on the business operation result.
+* Use ResponseEntity to return a response body with a configurable HTTP status code.
+* Create a custom Java exception annotated with @ResponseStatus(HttpStatus.NOT_FOUND).
+* Implement a global exception handler using @RestControllerAdvice for resource-not-found exceptions.
+* Write an exception handler that returns HTTP 400 for invalid request parameters.
+* Implement validation handling that returns HTTP 400 with field-level error details.
+* Create a custom error response DTO containing status, error code, message, timestamp, and request path.
+* Implement an exception handler that maps duplicate-resource exceptions to HTTP 409.
+* Write a controller that returns HTTP 401 for authentication failures and HTTP 403 for authorization failures.
+* Implement an endpoint that returns HTTP 415 when the request Content-Type is unsupported.
+* Write a Spring Boot endpoint that returns HTTP 429 when a client exceeds a configured rate limit.
+* Implement a REST endpoint that returns HTTP 202 and a status URL for an asynchronous operation.
+* Write an endpoint that returns HTTP 503 when a required dependency is temporarily unavailable.
+* Implement an exception handler that distinguishes downstream timeouts from other server failures.
+* Write a method that maps application exceptions to appropriate HTTP status codes.
+* Implement a standard Problem Details response using Spring Boot's error-handling facilities.
+* Write a controller test using MockMvc to verify HTTP 201 and the Location header.
+* Write unit tests that verify HTTP 400 responses for invalid request payloads.
+* Write integration tests for HTTP 401, 403, and 404 behavior.
+* Implement tests that verify HTTP 409 for concurrent resource updates.
+* Write a test that verifies an empty response body for HTTP 204.
+* Implement a controller that supports conditional requests using ETag and If-Match.
+* Write tests that verify HTTP 304 for an unchanged cached resource.
+* Implement retry logic that retries transient HTTP 503 responses but not permanent HTTP 4xx responses.
+* Write a method that translates downstream HTTP status codes into appropriate API responses.
+* Implement centralized status-code constants or mappings for a Spring Boot application.
+* Build a complete Spring Boot REST API with consistent HTTP status codes, global exception handling, structured error responses, and automated tests.

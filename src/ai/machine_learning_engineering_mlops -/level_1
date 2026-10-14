@@ -1,0 +1,151 @@
+**MLOps Fundamentals**
+* How would you design an end-to-end MLOps platform for multiple teams and models?
+* How would you separate data engineering, model development, training, and deployment responsibilities?
+* How would you choose between managed MLOps services and self-hosted tools?
+* How would you standardize ML project templates across an organization?
+* How would you manage secrets, credentials, and permissions in ML pipelines?
+* How would you measure the maturity of an organization's MLOps practices?
+
+**ML Lifecycle Management**
+* How would you manage transitions from experimentation to staging and production?
+* How would you track dependencies between datasets, features, experiments, models, and deployments?
+* How would you handle model lifecycle changes when a model is no longer supported?
+* How would you enforce quality gates between lifecycle stages?
+* How would you manage multiple model versions serving different business use cases?
+* How would you coordinate model lifecycle workflows across data science and engineering teams?
+
+**Experiment Tracking**
+* How would you track parameters, metrics, datasets, code commits, and artifacts for every training run?
+* How would you compare experiments across different algorithms and dataset versions?
+* How would you prevent concurrent training jobs from overwriting experiment metadata?
+* How would you organize experiments across teams, projects, and environments?
+* How would you identify the best experiment when different metrics favor different models?
+* How would you manage experiment artifact storage as the number of runs grows?
+* How would you reproduce an experiment from its recorded metadata?
+
+**Dataset and Model Versioning**
+* How would you version large datasets stored in object storage without copying every file?
+* How would you link a model artifact to the exact dataset snapshot and source-code revision used for training?
+* How would you manage schema changes between dataset versions?
+* How would you compare model versions in terms of metrics, features, artifacts, and dependencies?
+* How would you handle a model trained on a dataset that is later corrected?
+* How would you manage retention of obsolete dataset and model versions?
+* How would you ensure model artifacts remain compatible with their serving environment?
+
+**Feature Stores**
+* How would you choose between an offline feature store, an online feature store, and a hybrid design?
+* How would you prevent training-serving skew?
+* How would you implement point-in-time-correct feature retrieval for training?
+* How would you handle delayed feature updates and stale online values?
+* How would you version feature definitions used by multiple models?
+* How would you monitor feature freshness and availability?
+* How would you decide whether a feature belongs in the feature store or should be computed at inference time?
+
+**Model Registry**
+* How would you design a model promotion workflow with automated validation and manual approval?
+* How would you store evaluation metrics, training lineage, signatures, and deployment compatibility in a registry?
+* How would you prevent an unapproved model from being deployed to production?
+* How would you handle concurrent promotion requests for different model versions?
+* How would you manage aliases or stage labels when several deployments use the same model?
+* How would you track which production endpoints are serving a particular registry version?
+* How would you implement registry access control and audit logging?
+
+**Training Pipeline Automation**
+* How would you orchestrate ingestion, validation, feature generation, training, evaluation, and model registration?
+* How would you make each pipeline stage idempotent and safely retryable?
+* How would you schedule training jobs based on data availability rather than fixed time intervals?
+* How would you handle partial pipeline failures without repeating expensive completed stages?
+* How would you parallelize independent training tasks?
+* How would you implement pipeline-level timeouts, checkpoints, and failure notifications?
+* How would you test pipeline logic without launching expensive production-scale training jobs?
+
+**Hyperparameter Tuning**
+* How would you choose between grid search, random search, Bayesian optimization, and successive halving?
+* How would you define search spaces for continuous, categorical, and conditional hyperparameters?
+* How would you manage compute budgets and parallelism during tuning?
+* How would you prevent the validation dataset from becoming overfit through repeated tuning?
+* How would you handle noisy metrics across repeated training runs?
+* How would you compare tuning results across different compute environments?
+* How would you stop unpromising trials early without discarding potentially useful configurations?
+
+**Model Validation**
+* How would you choose evaluation metrics for classification, regression, ranking, and imbalanced datasets?
+* How would you validate models against business thresholds as well as statistical metrics?
+* How would you detect leakage in validation and test datasets?
+* How would you evaluate fairness across relevant subgroups?
+* How would you validate model calibration and confidence estimates?
+* How would you compare a candidate model with the current production model?
+* How would you design validation gates that automatically block model promotion?
+
+**Model Deployment Strategies**
+* How would you choose between batch, synchronous online, asynchronous, and streaming inference?
+* How would you implement a canary deployment for a model serving API?
+* How would you compare blue-green deployment with rolling deployment for ML services?
+* How would you run shadow inference without affecting customer-visible predictions?
+* How would you manage backward compatibility between model inputs and API schemas?
+* How would you scale model replicas based on latency, throughput, or resource utilization?
+* How would you deploy a large model while controlling startup time and memory usage?
+
+**Model Monitoring**
+* How would you monitor prediction quality when ground-truth labels arrive days or weeks later?
+* How would you distinguish infrastructure incidents from model-quality degradation?
+* How would you set alert thresholds for latency, error rate, feature freshness, and prediction distributions?
+* How would you associate production predictions with model and feature versions?
+* How would you monitor models when prediction traffic changes by time of day or season?
+* How would you collect prediction feedback while protecting sensitive data?
+* How would you avoid alert fatigue from normal fluctuations in model metrics?
+
+**Data Drift and Concept Drift**
+* How would you detect data drift using statistical tests or distribution-distance measures?
+* How would you distinguish real drift from changes in sampling or instrumentation?
+* How would you detect concept drift when labels are delayed?
+* How would you establish baseline distributions for numeric and categorical features?
+* How would you identify which features contribute most to observed drift?
+* How would you decide whether drift requires investigation, retraining, or rollback?
+* How would you monitor drift without storing unnecessary sensitive input data?
+
+**Retraining Automation**
+* How would you trigger retraining when drift, new data volume, or model degradation crosses a threshold?
+* How would you prevent retraining from starting repeatedly during a prolonged incident?
+* How would you compare a retrained candidate against the current production model?
+* How would you prevent automatic deployment of a model that passes technical checks but fails business requirements?
+* How would you manage training-data snapshots for recurring retraining jobs?
+* How would you implement cooldown periods and maximum retraining frequency?
+* How would you track the cost and success rate of automated retraining runs?
+
+**Reproducible ML Pipelines**
+* How would you reproduce a model trained months earlier when source data and dependencies have changed?
+* How would you pin package versions, container images, data snapshots, and configuration files?
+* How would you handle nondeterministic GPU operations?
+* How would you separate deterministic pipeline stages from inherently stochastic training steps?
+* How would you record hardware and runtime information for each training run?
+* How would you verify that a rebuilt model meets expected performance tolerances?
+* How would you manage reproducibility across local development, CI, and cloud training environments?
+
+**CI/CD for Machine Learning**
+* How would you structure CI pipelines for data validation, unit testing, feature tests, and model evaluation?
+* How would you design CD gates for model registration and production deployment?
+* How would you test a pipeline when full model training takes several hours?
+* How would you manage model artifacts separately from application code releases?
+* How would you automate container scanning and dependency vulnerability checks for model-serving images?
+* How would you promote a validated model across development, staging, and production environments?
+* How would you implement deployment approval and rollback automation?
+
+**ML Governance**
+* How would you maintain traceability from training data through model versions to production predictions?
+* How would you implement role-based access for training data, experiment artifacts, and model deployment?
+* How would you document model limitations, intended use, and known failure modes?
+* How would you establish approval workflows for high-risk models?
+* How would you monitor fairness, explainability, and policy compliance over time?
+* How would you handle audit requests requiring evidence of training provenance and deployment approvals?
+* How would you prevent unauthorized model artifacts from entering production?
+
+**Model Rollback and Recovery**
+* How would you automate rollback when model-quality or serving-health thresholds are violated?
+* How would you recover a model-serving system after a failed deployment?
+* How would you manage rollback when the new model requires a different input schema?
+* How would you restore registry metadata and artifacts after accidental deletion?
+* How would you design disaster recovery for model artifacts, configuration, and feature dependencies?
+* How would you avoid rolling back to a model that depends on a broken upstream feature pipeline?
+* How would you validate recovery before returning the service to normal traffic?
+

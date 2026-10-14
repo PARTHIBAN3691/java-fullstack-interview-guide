@@ -1,0 +1,140 @@
+**AI Data Pipelines**
+* How would you design an end-to-end pipeline for ingesting documents, generating embeddings, and making them searchable?
+* How would you separate ingestion, transformation, validation, and publication stages?
+* How would you implement retries, checkpoints, and recovery for failed pipeline stages?
+* How would you monitor pipeline freshness, throughput, and processing failures?
+* How would you make data processing idempotent?
+* How would you manage schema changes without breaking downstream AI consumers?
+
+**Data Collection and Ingestion**
+* How would you ingest data from REST APIs, relational databases, object storage, and Kafka into a unified AI platform?
+* How would you handle API pagination, rate limits, authentication, and transient errors?
+* How would you design ingestion checkpoints to resume from the last successfully processed record?
+* How would you handle duplicate records when multiple source systems contain the same information?
+* How would you validate source data before allowing it into downstream processing?
+* How would you securely ingest data from external sources with different access policies?
+
+**Document Processing Pipelines**
+* How would you build a document-processing pipeline for scanned PDFs, tables, images, and mixed-format files?
+* How would you select between direct text extraction and OCR?
+* How would you preserve page numbers, headings, tables, and source references during extraction?
+* How would you handle malformed documents, encrypted PDFs, and unsupported formats?
+* How would you implement chunking strategies for different document types?
+* How would you design document processing to be idempotent and recoverable?
+* How would you detect when a source document has changed and requires reprocessing?
+
+**Data Cleaning and Normalization**
+* How would you normalize dates, currencies, units, and inconsistent categorical values across data sources?
+* How would you decide whether to drop, impute, or retain records with missing values?
+* How would you identify duplicates when records have different formatting but represent the same entity?
+* How would you clean extracted text without removing important domain-specific information?
+* How would you handle outliers in numerical features?
+* How would you prevent preprocessing rules from producing inconsistent results between training and inference?
+
+**Data Quality and Validation**
+* How would you define automated quality checks for a pipeline processing millions of records?
+* How would you validate schemas, ranges, uniqueness, referential integrity, and freshness?
+* How would you implement quality thresholds that block publication of a defective dataset?
+* How would you distinguish a source-data issue from a transformation defect?
+* How would you validate data distributions before model training?
+* How would you quarantine invalid records while allowing valid records to continue processing?
+* How would you monitor data quality trends over time?
+
+**Metadata and Data Lineage**
+* How would you design a metadata schema for documents, datasets, transformations, and derived embeddings?
+* How would you trace a model input back to its original source record?
+* How would you track dataset versions and transformation-code versions together?
+* How would you record lineage across asynchronous processing stages?
+* How would you handle lineage when data is joined from multiple sources?
+* How would you use metadata to support access filtering and retention policies?
+
+**Feature Engineering**
+* How would you build reusable transformations for categorical, numerical, and temporal features?
+* How would you prevent data leakage when engineering features from historical data?
+* How would you handle high-cardinality categorical features?
+* How would you detect and treat outliers without distorting valid observations?
+* How would you ensure that training and production inference use the same feature transformations?
+* How would you manage feature definitions as business rules change?
+* How would you test feature transformations with known input-output examples?
+
+**Feature Stores**
+* How would you decide which features should be stored in an offline store, an online store, or both?
+* How would you keep online feature values synchronized with offline historical values?
+* How would you implement point-in-time correct feature retrieval for training datasets?
+* How would you manage feature definitions, ownership, versioning, and access controls?
+* How would you handle stale online features when upstream events are delayed?
+* How would you detect and prevent training-serving skew?
+* How would you evaluate whether a feature store is justified for a small ML platform?
+
+**Training Data Management**
+* How would you create reproducible training datasets from changing source tables?
+* How would you split time-series data into training, validation, and test sets?
+* How would you detect leakage caused by duplicate entities across dataset splits?
+* How would you track dataset lineage, feature versions, labels, and preprocessing parameters?
+* How would you manage imbalanced classes during dataset preparation?
+* How would you establish approval and access controls for production training datasets?
+* How would you compare two dataset versions to explain changes in model performance?
+
+**Data Labeling and Annotation**
+* How would you design an annotation workflow with task assignment, review, adjudication, and quality measurement?
+* How would you measure agreement between annotators?
+* How would you identify low-quality labels and inconsistent annotation guidelines?
+* How would you prioritize examples for human review?
+* How would you manage label changes and maintain dataset version history?
+* How would you use active learning to reduce manual labeling effort?
+* How would you combine human labels and machine-generated pre-labels safely?
+
+**Synthetic Data**
+* How would you generate synthetic records while preserving realistic relationships between fields?
+* How would you evaluate whether synthetic data resembles real data without copying sensitive information?
+* How would you use synthetic data to test rare events and edge cases?
+* How would you detect distribution shifts between real and synthetic datasets?
+* How would you prevent synthetic examples from introducing incorrect labels or artifacts?
+* How would you compare model performance trained on real-only versus mixed datasets?
+* How would you document synthetic data generation methods and assumptions?
+
+**Data Privacy and Governance**
+* How would you classify datasets by sensitivity and enforce access policies accordingly?
+* How would you identify and redact PII before sending documents to an external model provider?
+* How would you enforce consent, purpose limitation, and data minimization in an AI pipeline?
+* How would you manage data access approvals and audit records across multiple teams?
+* How would you apply encryption, key management, and secure transfer to data pipelines?
+* How would you implement data residency restrictions across cloud regions?
+* How would you handle a deletion request that affects raw files, derived features, embeddings, and training datasets?
+
+**Streaming Data for AI**
+* How would you build a Kafka pipeline that transforms incoming events into features for an online prediction service?
+* How would you handle out-of-order events and late-arriving data?
+* How would you implement event deduplication and idempotent stream processing?
+* How would you manage consumer lag when downstream feature computation becomes slow?
+* How would you distinguish event-time windows from processing-time windows?
+* How would you recover stream-processing state after a failure?
+* How would you monitor event freshness and feature availability for online inference?
+
+**Vector Index Pipelines**
+* How would you implement document chunking, embedding generation, metadata enrichment, and vector upsert?
+* How would you prevent partially indexed documents from becoming visible to retrieval?
+* How would you choose batch sizes for embedding requests and vector writes?
+* How would you track embedding-model version, chunking configuration, and source-document version?
+* How would you implement retry and dead-letter handling for failed embedding batches?
+* How would you measure indexing throughput and retrieval freshness?
+* How would you delete orphaned vectors when document parsing or ingestion fails midway?
+
+**Incremental Indexing and Reindexing**
+* How would you detect source changes using CDC, timestamps, hashes, or version numbers?
+* How would you reindex only affected documents when the embedding model changes?
+* How would you perform a full index rebuild with minimal search downtime?
+* How would you prevent an older indexing job from overwriting a newer document version?
+* How would you validate a replacement index before switching production traffic?
+* How would you handle deleted documents and failed index updates during a migration?
+* How would you estimate the cost and duration of a full reindex compared with incremental processing?
+
+**Data Retention and Deletion**
+* How would you implement retention policies across object storage, databases, caches, and vector indexes?
+* How would you propagate deletion events to every derived data store?
+* How would you verify that a deleted document can no longer be retrieved through RAG?
+* How would you manage retention periods for training snapshots and model evaluation datasets?
+* How would you distinguish logical deletion from physical removal and backup expiration?
+* How would you maintain auditable deletion evidence without retaining the deleted content itself?
+* How would you handle legal holds that temporarily prevent deletion?
+

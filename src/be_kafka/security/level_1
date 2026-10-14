@@ -1,0 +1,30 @@
+* How do you configure a Kafka producer to use SASL/PLAIN?
+* How do you configure a Kafka consumer to use SASL/SCRAM?
+* How do you configure TLS encryption between Kafka clients and brokers?
+* How do you configure mutual TLS authentication in Kafka?
+* How do you generate certificates for Kafka brokers and clients?
+* How do you configure Kafka broker listeners for PLAINTEXT, SSL, and SASL_SSL?
+* What is the difference between SASL_SSL and SASL_PLAINTEXT?
+* How do you configure a Java Kafka producer with authentication properties?
+* How do you configure a Java Kafka consumer with a truststore?
+* How do you configure authentication in Spring Boot Kafka applications?
+* How do you configure `spring.kafka.properties.security.protocol`?
+* How do you configure JAAS settings for Kafka clients?
+* How do you create Kafka ACLs using the Kafka command-line tools?
+* How do you grant a producer permission to write to a topic?
+* How do you grant a consumer permission to read from a topic?
+* Why does a consumer group require separate authorization permissions?
+* What is the difference between topic-level and cluster-level ACLs?
+* What is the role of `allow.everyone.if.no.acl.found`?
+* What is the purpose of the Kafka `super.users` configuration?
+* How do you troubleshoot `TopicAuthorizationException`?
+* How do you troubleshoot `SaslAuthenticationException`?
+* How do you troubleshoot TLS handshake failures in Kafka?
+* How do you securely store Kafka credentials in a Spring Boot application?
+* How do you rotate Kafka passwords without exposing them in source code?
+* How do you configure Schema Registry authentication separately from Kafka broker authentication?
+* How do you secure communication between Kafka Connect and Kafka brokers?
+* How do you secure Kafka monitoring and administrative endpoints?
+* How do you audit authentication and authorization failures?
+* How do you implement least-privilege access for Kafka applications?
+* How do you prevent credentials from appearing in application logs?

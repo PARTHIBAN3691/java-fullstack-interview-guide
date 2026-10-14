@@ -1,0 +1,30 @@
+* Explain how JavaScript creates and manages variable bindings during execution.
+* How do the creation phase and execution phase affect variable declarations?
+* What is the difference between a variable environment and a lexical environment?
+* How do Environment Records work in JavaScript?
+* Explain the relationship between execution contexts and variable scope.
+* Why does accessing a let variable before its declaration throw a ReferenceError?
+* Why can a var variable be accessed before its declaration without throwing the same error?
+* How does hoisting behave differently for variables, functions, and classes?
+* How does variable shadowing interact with the temporal dead zone?
+* What happens when an inner block declares a variable with the same name as an outer variable?
+* How do closures capture variables rather than simply copying their values?
+* What causes the classic loop-variable closure problem with var?
+* Why does let solve many closure-related loop problems?
+* How do immediately invoked function expressions help isolate variables?
+* How do JavaScript modules prevent accidental global variable pollution?
+* What are the implications of declaring variables on the global object?
+* How do global lexical bindings differ from global object properties?
+* How does const enforce binding immutability without guaranteeing object immutability?
+* How do destructuring assignments interact with variable declarations?
+* What happens when destructuring declarations encounter missing properties?
+* How do default values in destructuring interact with undefined and null?
+* How do variable declarations behave inside try, catch, and finally blocks?
+* How does a catch parameter's scope differ from variables declared outside the catch block?
+* What are the consequences of redeclaring variables across different lexical scopes?
+* How can circular module dependencies affect access to imported bindings?
+* Why are imported ES module bindings read-only from the importing module?
+* How can closures unintentionally retain large objects and increase memory usage?
+* How can variable shadowing make debugging complex applications difficult?
+* How would you diagnose a ReferenceError caused by an unexpected scope or declaration order?
+* How would you refactor a legacy codebase that heavily uses var into safer modern declarations?

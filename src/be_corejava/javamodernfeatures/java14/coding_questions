@@ -1,0 +1,36 @@
+
+* Write a Java 14 program to declare a `Person` record with name and age components and print its values.
+* Write a Java 14 program to demonstrate the automatically generated accessor methods of a record.
+* Write a Java 14 program to demonstrate the generated `equals()`, `hashCode()`, and `toString()` methods of a record.
+* Write a Java 14 program to create an `Employee` record with employee ID, name, and salary.
+* Write a Java 14 program to validate record components using a compact constructor.
+* Write a Java 14 program to create a record with a custom canonical constructor.
+* Write a Java 14 program to create a record with an overloaded constructor that supplies a default value.
+* Write a Java 14 program to demonstrate how to declare static fields and static methods inside a record.
+* Write a Java 14 program to implement an interface using a record.
+* Write a Java 14 program to demonstrate why a record cannot extend an ordinary class.
+* Write a Java 14 program to create a record containing a list and implement defensive copying.
+* Write a Java 14 program to demonstrate the difference between shallow immutability and deep immutability using a record.
+* Write a Java 14 program to use a record as a key in a `HashMap`.
+* Write a Java 14 program to return a value from a switch expression based on an integer input.
+* Write a Java 14 program to calculate a discount based on an order category using a switch expression.
+* Write a Java 14 program to convert an enum value into a human-readable description using a switch expression.
+* Write a Java 14 program to demonstrate multiple case labels sharing the same result in a switch expression.
+* Write a Java 14 program to use a block inside a switch expression and return a value using `yield`.
+* Write a Java 14 program to calculate a payment processing fee using a switch expression with multiple statements in a case.
+* Write a Java 14 program to demonstrate the difference between traditional switch fall-through and arrow-style switch labels.
+* Write a Java 14 program to create a multiline SQL query using a text block.
+* Write a Java 14 program to create a multiline JSON String using a text block.
+* Write a Java 14 program to demonstrate incidental indentation handling in text blocks.
+* Write a Java 14 program to use `stripIndent()` to normalize the indentation of a multiline String.
+* Write a Java 14 program to use `translateEscapes()` to process escape sequences in a String.
+* Write a Java 14 program to use `formatted()` to substitute values into a text block.
+* Write a Java 14 program to demonstrate pattern matching for `instanceof` with a String object.
+* Write a Java 14 program to use pattern matching for `instanceof` to process different object types without explicit casts.
+* Write a Java 14 program to demonstrate pattern-variable scope in an `if` statement.
+* Write a Java 14 program to demonstrate helpful NullPointerException messages using a chained object dereference.
+* Write a Java 14 program to combine records and switch expressions to calculate an order summary based on order type.
+* Write a Java 14 program to model payment methods using records and calculate fees with a switch expression.
+* Write a Java 14 program to use pattern matching for `instanceof` and records to validate different data object types.
+* Write a Java 14 program to compile and run a small example using a Java 14 preview feature with the appropriate preview flags.
+* Write a Java 14 program to compare a traditional DTO implementation with an equivalent record implementation.

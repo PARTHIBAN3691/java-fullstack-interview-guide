@@ -1,0 +1,25 @@
+* What is the difference between `Collectors.groupingBy()` and `Collectors.toMap()`?
+* How does `Collectors.groupingBy()` work internally at a high level?
+* How do you group employees by department using `Collectors.groupingBy()`?
+* How do you count employees in each department using `Collectors.groupingBy()` and `Collectors.counting()`?
+* How do you calculate the average salary of employees in each department?
+* How do you calculate the total salary for each department?
+* How do you find the highest-paid employee in each department using Collectors?
+* How do you find the lowest-paid employee in each department using Collectors?
+* How do you collect employee names by department into a `List<String>`?
+* How do you collect employee names by department into a comma-separated string?
+* How do you use `Collectors.mapping()` as a downstream collector?
+* How do you use `Collectors.collectingAndThen()` with `Collectors.toList()`?
+* How do you collect elements into an unmodifiable List?
+* How do you use `Collectors.toCollection()` to collect elements into a specific collection implementation?
+* How do you create a `Map` with a custom key and value using `Collectors.toMap()`?
+* How do you resolve duplicate keys when using `Collectors.toMap()`?
+* How do you merge values for duplicate keys using a merge function in `Collectors.toMap()`?
+* How do you sort the values in a Stream before collecting them into a List?
+* How do you collect a Stream into a `TreeSet`?
+* How do you partition employees into high-salary and low-salary groups?
+* How do you count even and odd numbers using `Collectors.partitioningBy()`?
+* How do you group words by their length using `Collectors.groupingBy()`?
+* How do you group strings by their first character?
+* How do you calculate the sum, average, minimum, maximum, and count using `Collectors.summarizingInt()`?
+* What is the difference between `Collectors.summarizingInt()` and using separate collectors for sum, average, minimum, maximum, and count?

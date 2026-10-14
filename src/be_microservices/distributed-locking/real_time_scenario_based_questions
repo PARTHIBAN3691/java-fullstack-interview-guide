@@ -1,0 +1,30 @@
+* Two instances of a Spring Boot service process the same scheduled job simultaneously. How would you prevent duplicate execution?
+* A Redis lock expires while the original process is still executing. Another instance acquires the lock. How would you prevent concurrent updates?
+* A service crashes after acquiring a lock but before releasing it. How would you recover?
+* A lock release request times out, and the application cannot determine whether the lock was released. What would you do?
+* Redis fails over to a replica, and two service instances believe they own the same lock. How would you address the risk?
+* A payment service uses a distributed lock to prevent duplicate payments, but duplicate transactions still occur. How would you investigate?
+* Two services acquire locks in different orders and become deadlocked. How would you resolve the design?
+* A distributed lock has a long lease time, causing delayed recovery after crashes. How would you improve availability without sacrificing correctness?
+* A short lease time causes long-running tasks to lose their locks frequently. How would you choose a safer approach?
+* A batch-processing job takes longer than expected and its lock expires midway through execution. How would you handle the remaining work?
+* A network partition isolates a lock holder from Redis but not from the database. How would you prevent stale writes?
+* A scheduled job runs across multiple Kubernetes replicas, but only one instance should execute it. How would you implement coordination?
+* Multiple instances update the same inventory record concurrently. How would you choose between distributed locking and optimistic locking?
+* A lock key is accidentally shared by two unrelated business operations. How would you diagnose and prevent the collision?
+* A service restarts and retries a business operation after losing its lock. How would you make the operation safe?
+* A Redisson watchdog keeps renewing a lock while the application is stuck. How would you prevent an unhealthy process from blocking progress indefinitely?
+* A lock holder pauses for a long garbage-collection event and resumes after another instance has acquired the lock. How would you protect the resource?
+* A distributed lock service becomes a performance bottleneck during peak traffic. How would you reduce contention?
+* A tenant's scheduled jobs interfere with jobs from other tenants because they use the same lock key. How would you correct the design?
+* A database transaction rolls back after the application has already acquired a distributed lock. How should the lock lifecycle be managed?
+* An external payment API responds slowly while a distributed lock is held. How would you reduce lock duration while preserving correctness?
+* A service acquires a lock successfully but loses its connection to the lock provider during processing. How should it behave?
+* A developer implements lock release using a simple Redis DEL command. What correctness problem can occur, and how would you fix it?
+* A distributed lock appears to work in testing but fails under concurrent production load. How would you reproduce and diagnose the issue?
+* Two application versions use different lock-key formats during a rolling deployment. How would you avoid coordination failures?
+* A business operation requires updating two separate databases under one logical lock. What consistency limitations and alternatives would you consider?
+* A lock is repeatedly acquired by one worker while other workers wait indefinitely. How would you address starvation?
+* A microservice uses distributed locking to prevent duplicate Kafka event processing. What additional safeguards would you introduce?
+* Your application must guarantee that an expired lock owner cannot update a critical financial record. How would you design the database interaction?
+* You are designing a distributed scheduler for thousands of jobs across multiple regions. How would you address ownership, failover, retries, and duplicate execution?

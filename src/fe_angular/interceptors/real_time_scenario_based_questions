@@ -1,0 +1,30 @@
+* Your application must attach an access token to every protected API request. How would you implement the interceptor and exclude public endpoints?
+* Multiple API calls return HTTP 401 at the same time. How would you refresh the token once and retry all affected requests?
+* The refresh-token API also returns HTTP 401, causing an infinite loop. How would you prevent this?
+* A user is unexpectedly logged out whenever one backend service returns HTTP 403. How would you correct the error-handling logic?
+* Your application integrates with two backend services that require different authorization tokens. How would you design the interceptor rules?
+* A third-party payment API must not receive your application's bearer token. How would you prevent credential leakage?
+* An API request fails intermittently with HTTP 503. How would you implement safe retries with exponential backoff?
+* A payment POST request times out and may already have been processed by the backend. How would you avoid duplicate payment submissions?
+* The loading spinner disappears while another API request is still running. How would you redesign the loading interceptor?
+* A background polling request keeps the loading spinner visible continuously. How would you exclude background requests?
+* The application logs sensitive authorization headers in production. How would you secure the logging interceptor?
+* API calls are slower after enabling retry logic. How would you determine whether retries or backend latency are responsible?
+* A request is logged twice whenever a retry occurs. How would you distinguish the original request from individual attempts?
+* A custom request header disappears after passing through multiple interceptors. How would you identify and fix the issue?
+* An interceptor modifies the request body and accidentally changes the original data object. How would you prevent unintended side effects?
+* Some requests need caching while others must always fetch fresh data. How would you control this behavior per request?
+* A cached employee response remains outdated after an update operation. How would you invalidate the cache?
+* An interceptor retries requests that should never be retried, including validation failures. How would you refine the retry policy?
+* A request to an external identity provider fails because your interceptor adds an internal API header. How would you correct the configuration?
+* A circular dependency occurs between the authentication interceptor and authentication service. How would you resolve it?
+* Your application has functional and class-based interceptors, but the class-based interceptor is not executed. What would you investigate?
+* A global error interceptor displays duplicate notifications for the same failure. How would you prevent duplicate messages?
+* A user changes screens while several requests are in progress. How should loading-state tracking and request cancellation work?
+* An interceptor must attach a trace ID to every API call and preserve it across retries. How would you implement this?
+* The same request needs to bypass authentication and caching for a particular operation. How would you use HttpContextToken?
+* A large file download stops reporting progress after an interceptor is introduced. How would you investigate the event stream?
+* Your team needs to add interceptors for logging, authentication, retries, and error handling. How would you determine their order?
+* An API returns HTTP 429 with a Retry-After header. How would you implement rate-limit-aware retry behavior?
+* An interceptor works in the browser but behaves differently during server-side rendering. How would you diagnose the issue?
+* How would you design and test a reusable interceptor framework for an enterprise Angular application?

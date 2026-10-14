@@ -1,0 +1,30 @@
+* Explain the internal architecture of the Spring IoC container.
+* How does Spring resolve dependencies during bean creation?
+* Explain the complete lifecycle of a singleton Spring bean from instantiation to destruction.
+* What happens internally when ApplicationContext.refresh() is invoked?
+* How does Spring register BeanDefinitions before creating singleton beans?
+* What is the difference between BeanDefinition, BeanFactory, and ApplicationContext?
+* How does Spring resolve circular dependencies internally?
+* Why can Spring resolve some setter-based circular dependencies but not constructor-based circular dependencies?
+* How does Spring handle early singleton references during circular dependency resolution?
+* How would you design a Spring application to eliminate circular dependencies?
+* How does Spring determine bean initialization and destruction order?
+* What is the difference between singleton bean creation and prototype bean creation internally?
+* How does Spring handle concurrent access to singleton beans?
+* Are Spring singleton beans thread-safe by default? Explain the implications.
+* How would you design a thread-safe Spring service that processes concurrent requests?
+* How does Spring create and manage beans defined through @Bean methods?
+* How does proxyBeanMethods affect configuration class behavior?
+* What is the difference between full and lite configuration mode?
+* How does Spring's type-based autowiring resolve generic dependencies?
+* How does Spring resolve dependencies using generic types and qualifiers?
+* What are FactoryBean and its use cases in Spring?
+* What is the difference between FactoryBean and a normal Spring bean?
+* How do BeanFactoryPostProcessor implementations modify bean definitions?
+* How do BeanPostProcessor implementations participate in bean initialization?
+* How would you implement a custom BeanPostProcessor?
+* How does Spring's event publishing mechanism work internally?
+* What are the limitations of synchronous application event processing?
+* How would you implement asynchronous event handling in Spring?
+* How does Spring handle bean creation failures and application context startup errors?
+* How would you troubleshoot memory leaks caused by Spring singleton beans or application listeners?

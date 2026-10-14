@@ -1,0 +1,21 @@
+
+* Write a multi-stage Dockerfile for a Java 21 Spring Boot application that builds the JAR and runs it in a minimal runtime image.
+* Create a Dockerfile that runs a Spring Boot JAR with configurable JVM options and an appropriate container entry point.
+* Write a shell script that builds a Java application image, tags it with a Git commit SHA, authenticates to ACR, and pushes the image.
+* Develop an Azure CLI script to create an Azure Container Registry and assign the necessary permissions to a CI/CD identity.
+* Write a GitHub Actions workflow that builds, tests, scans, and pushes a Java container image to Azure Container Registry.
+* Develop an Azure DevOps YAML pipeline that builds a Spring Boot application and pushes a versioned Docker image to ACR.
+* Write a pipeline step that records the pushed image digest and publishes it as a release artifact.
+* Create an automation script that verifies an image exists in ACR before allowing a deployment to proceed.
+* Write a script that lists repositories and image tags in ACR and identifies candidate images for cleanup based on age and usage.
+* Implement a pipeline quality gate that rejects an image when a vulnerability scan exceeds the configured severity threshold.
+* Write a Kubernetes Deployment manifest that pulls a Java application image from a private Azure Container Registry.
+* Develop an infrastructure-as-code configuration using Terraform or Bicep to provision ACR with appropriate access and network settings.
+* Write an Azure CLI script to configure a managed identity with the required image-pull permissions for an Azure workload.
+* Create a script that promotes an approved image between environments by preserving its immutable digest.
+* Write a script that compares image digests across development, staging, and production registries to verify artifact consistency.
+* Implement a Java Spring Boot health endpoint that can be used to verify the running container after deployment.
+* Write a Docker Compose configuration for a Java microservice and its dependencies, explaining how the image can be built and published to ACR.
+* Create a CI/CD workflow that uses build caching to reduce the time required to build Java container images.
+* Write a deployment validation script that verifies the deployed application's version and image digest against the approved release manifest.
+* Design and implement a secure end-to-end pipeline for a Java microservice that builds an image, scans it, publishes it to ACR, deploys it to AKS, and supports rollback to a previously approved digest.

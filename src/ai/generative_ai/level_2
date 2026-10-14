@@ -1,0 +1,111 @@
+**Generative AI Fundamentals**
+* Design a framework for deciding when to use prompting, retrieval-augmented generation, fine-tuning, or a traditional Machine Learning solution.
+* How would you quantify hallucination risk in a high-impact application where incorrect answers can cause financial or operational damage?
+* How would you architect a Generative AI system with constrained outputs, auditable decisions, and deterministic validation?
+* How would you balance response quality, latency, privacy, and inference cost under strict service-level objectives?
+* How would you distinguish model limitations from prompt defects, missing context, and faulty application orchestration?
+* How would you establish a continuous evaluation process for a generative application whose requirements evolve over time?
+
+**Large Language Models (LLMs)**
+* Explain how next-token prediction during pre-training can support instruction following, summarization, reasoning, and code generation.
+* How would you evaluate whether a model's apparent reasoning ability generalizes beyond familiar benchmarks?
+* How would you diagnose repetitive outputs, premature stopping, or incoherent generation in a production LLM?
+* How would you design an LLM gateway that supports model routing, fallback, rate limits, tenant isolation, and usage tracking?
+* How would you manage model-version changes that cause subtle regressions in production responses?
+* How would you test an LLM application for prompt sensitivity, instruction conflicts, and inconsistent outputs?
+
+**Transformer Architecture**
+* Derive the computational and memory complexity of standard self-attention with respect to sequence length and hidden dimension.
+* How do grouped-query attention and multi-query attention reduce inference costs compared with multi-head attention?
+* What are rotary positional embeddings and other positional-encoding approaches, and what trade-offs do they introduce?
+* How would you diagnose quality degradation when extending a model beyond its original context length?
+* How do key-value caches accelerate autoregressive generation, and what are their memory trade-offs?
+* How would you evaluate architectural optimizations for long-context inference without compromising output quality?
+
+**Attention Mechanism and Self-Attention**
+* Explain the role of scaling by the square root of key dimension in dot-product attention.
+* How would you analyze attention-memory bottlenecks for long-sequence workloads?
+* Compare standard attention with approximate or memory-efficient attention techniques.
+* How do attention masks affect causal generation, padding, and packed sequences?
+* What are the limitations of using attention weights as an explanation of a model's behavior?
+* How would you optimize attention computation for low-latency inference under GPU memory constraints?
+
+**Tokenization and Tokens**
+* How would you investigate a sudden increase in token consumption after changing a tokenizer or model?
+* How would you design token-budget enforcement for a multi-tenant LLM service with strict cost limits?
+* How can tokenizer design affect code generation, multilingual prompts, and rare domain-specific terms?
+* How would you safely truncate or chunk inputs while preserving important semantic and structural boundaries?
+* How would you test whether tokenization differences are degrading retrieval or downstream generation quality?
+* How would you estimate the impact of tokenizer changes on throughput, context utilization, and operating cost?
+
+**Embeddings**
+* How would you evaluate embedding quality for semantic retrieval when labeled relevance data is limited?
+* How would you design an embedding migration when the new model produces vectors in a different dimensional space?
+* How would you diagnose a vector search system whose results degrade after changes in embedding model or preprocessing?
+* How would you balance embedding dimensionality, index size, retrieval latency, and semantic quality?
+* How would you combine dense retrieval, sparse retrieval, and reranking for difficult enterprise search queries?
+* How would you detect embedding-space bias or poor representation of domain-specific terminology?
+
+**Context Windows**
+* Design a context-management strategy for a long-running assistant with large document collections and lengthy conversations.
+* How would you prioritize context when system instructions, user history, retrieved evidence, and output requirements compete for a limited token budget?
+* How would you detect and mitigate failures caused by information being lost or ignored in long contexts?
+* How would you compare long-context processing with retrieval-based approaches for large document repositories?
+* How would you prevent untrusted retrieved content from overriding trusted instructions within a large context?
+* How would you optimize context length to balance answer quality, latency, and cost?
+
+**Temperature, Top-P, and Sampling**
+* Explain how temperature and nucleus sampling interact to change the token distribution during generation.
+* How would you design repeatable evaluation when the model uses stochastic decoding?
+* How would you tune generation settings for a workload that mixes deterministic extraction with creative responses?
+* How would you investigate quality regressions when sampling parameters remain unchanged but the model version changes?
+* How would you measure diversity without rewarding incoherence or factual errors?
+* How would you implement request-specific decoding policies with guardrails for safety-critical tasks?
+
+**Model Parameters and Quantization**
+* Estimate the memory required to host a model based on parameter count, weight precision, and runtime overhead.
+* How would you select between quantization approaches for a model with strict latency and accuracy requirements?
+* How would you diagnose quality degradation after quantizing a model?
+* How do weight quantization, activation quantization, and KV-cache quantization affect inference?
+* How would you benchmark quantized models across hardware configurations and concurrency levels?
+* How would you determine whether a quantized model meets acceptance criteria for a domain-specific workload?
+
+**Pre-training, Fine-tuning, and Inference**
+* How would you determine whether to fine-tune a model, use retrieval, or change the prompt when a domain-specific task performs poorly?
+* Explain the trade-offs between full fine-tuning and parameter-efficient methods such as LoRA.
+* How would you prevent training-data leakage between fine-tuning datasets and evaluation datasets?
+* How would you evaluate catastrophic forgetting or regression on general capabilities after fine-tuning?
+* How would you manage training-data provenance, model artifacts, versioning, and rollback in a production lifecycle?
+* How would you optimize inference throughput when model weights, KV cache, and concurrency compete for GPU memory?
+
+**Open-Source vs Proprietary Models**
+* Design a model-selection scorecard that accounts for licensing, data governance, quality, latency, resilience, and total cost.
+* How would you design a hybrid architecture that routes requests between hosted proprietary models and self-hosted open-weight models?
+* How would you reduce vendor lock-in while preserving access to model-specific capabilities?
+* How would you assess the security implications of downloading, validating, and deploying third-party model weights?
+* How would you compare total cost under variable workloads, including idle GPU capacity, scaling, API pricing, and operational staffing?
+* How would you handle a provider outage or sudden model deprecation without violating application service-level objectives?
+
+**Multimodal AI**
+* Design a multimodal application that jointly analyzes documents, images, audio recordings, and video while preserving evidence provenance.
+* How would you align timestamps, text transcripts, visual frames, and audio segments for a video-understanding system?
+* How would you evaluate cross-modal grounding and detect cases where a model invents relationships between modalities?
+* How would you handle conflicting evidence from text, image, and audio inputs?
+* How would you optimize multimodal inference when image resolution, video duration, and audio length vary significantly?
+* How would you secure multimodal pipelines against malicious images, hidden instructions, sensitive audio, and unsafe generated outputs?
+
+**Image, Audio, Video, and Code Generation**
+* How would you optimize a diffusion-based image-generation pipeline for latency and memory without unacceptable quality loss?
+* How would you evaluate temporal consistency, object identity, and physical plausibility in generated video?
+* How would you build safeguards for synthetic speech and voice generation to reduce impersonation and misuse?
+* How would you validate AI-generated code using tests, static analysis, dependency checks, and sandboxed execution?
+* How would you detect and mitigate copyright, licensing, privacy, and provenance risks in generated content?
+* How would you design a content-generation service that supports multiple modalities while isolating failures and tracking per-modality costs?
+
+**Model Selection and Benchmarking**
+* How would you build a representative evaluation suite that avoids benchmark contamination and overfitting to public tests?
+* How would you compare proprietary and open-weight models fairly when their tokenizers, context limits, and inference interfaces differ?
+* How would you measure quality-cost trade-offs across model sizes and quantization levels?
+* How would you combine automated metrics, expert review, adversarial tests, and online feedback into a model acceptance process?
+* How would you use confidence intervals or repeated trials to distinguish genuine improvements from evaluation noise?
+* How would you design a continuous benchmarking pipeline that detects regressions after model, prompt, or infrastructure changes?

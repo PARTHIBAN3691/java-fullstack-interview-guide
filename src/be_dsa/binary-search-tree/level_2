@@ -1,0 +1,30 @@
+* How do you design a self-balancing BST, and why is balancing necessary?
+* What is an AVL tree, and how does it maintain balance after insertions and deletions?
+* What is a Red-Black Tree, and how does it differ from an AVL tree?
+* How do you perform left and right rotations in a BST-based self-balancing tree?
+* How do you maintain subtree sizes to support efficient Kth-smallest queries?
+* How would you augment a BST to support rank and select operations efficiently?
+* How do you implement a BST that supports duplicate keys and maintains their frequencies?
+* How do you implement a BST with parent pointers and maintain them during deletion?
+* How do you delete a node with two children while preserving the BST property?
+* How do you find the largest BST subtree in an arbitrary binary tree in O(N) time?
+* How do you recover a BST in which exactly two node values have been swapped?
+* How do you find the inorder predecessor and successor of a key that does not exist in the BST?
+* How do you find the median of a BST efficiently when subtree sizes are maintained?
+* How do you support range-sum queries in a BST with minimal traversal?
+* How would you design a BST that supports efficient insertion, deletion, search, and range queries?
+* How do you construct a balanced BST from a large sorted dataset without loading the entire dataset into memory?
+* How do you convert a BST into a balanced BST while preserving all values?
+* How do you identify and repair violations of the BST property in a corrupted tree?
+* How do you determine whether two different insertion sequences produce the same BST?
+* How do you count the number of structurally unique BSTs that can be formed using N distinct keys?
+* How do you generate all structurally unique BSTs containing values from 1 to N?
+* How do you find the maximum-sum BST subtree inside a binary tree?
+* How do you find the minimum number of nodes that must be inserted to make a BST height-balanced?
+* How do you optimize BST operations when the input is adversarial and keys arrive in sorted order?
+* How do concurrent insertions and deletions affect the correctness of a shared BST?
+* How would you design thread-safe BST operations in Java?
+* How do you handle stack overflow when recursive operations traverse a highly skewed BST?
+* How would you implement persistent BST versions without modifying previously created trees?
+* How do you compare BSTs with B-trees and hash-based indexes for database workloads?
+* How would you design a memory-efficient BST for a dataset containing millions of records?

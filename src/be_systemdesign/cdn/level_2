@@ -1,0 +1,30 @@
+* How would you design a global CDN architecture for millions of concurrent users?
+* How do CDN providers route requests to the most appropriate edge location?
+* How do Anycast routing, DNS-based routing, and latency-based routing differ?
+* How would you design a multi-CDN architecture for high availability?
+* How do you implement automatic traffic steering between multiple CDN providers?
+* How do you prevent CDN failover from causing excessive origin traffic?
+* How would you design cache key normalization to maximize cache reuse without serving incorrect content?
+* How do you handle content negotiation when responses vary by language, device, or compression format?
+* How do you prevent cache poisoning caused by incorrect cache keys or untrusted request headers?
+* How do you protect against cache deception and cache confusion vulnerabilities?
+* How would you design a secure CDN architecture for authenticated and personalized content?
+* How do you balance cacheability and data freshness for frequently updated content?
+* How do you design reliable cache invalidation across thousands of edge locations?
+* How do you prevent invalidation storms from overwhelming CDN control planes or origin servers?
+* How would you implement versioned content delivery to minimize cache purge requirements?
+* How do you design origin shielding for applications with multiple regions?
+* How do you protect the origin during a cache cold start or a large-scale cache purge?
+* How would you design stale-while-revalidate and stale-if-error behavior for resilient content delivery?
+* How do you handle CDN caching when the origin returns different responses based on cookies or authorization headers?
+* How would you design CDN delivery for dynamic APIs with strict freshness and authorization requirements?
+* How do you integrate edge computing or edge functions into a CDN architecture?
+* How do you decide which business logic should run at the edge versus in the origin application?
+* How would you design adaptive bitrate video delivery using a CDN?
+* How do you handle live streaming with low latency and high concurrency through a CDN?
+* How do you design secure delivery of large software packages and downloadable files?
+* How do you prevent unauthorized sharing of signed CDN URLs?
+* How would you design CDN security controls against DDoS attacks, bots, and abusive traffic?
+* How do you measure end-to-end CDN performance across different geographies and network conditions?
+* How do you optimize CDN costs while maintaining latency, availability, and cache freshness objectives?
+* How would you design a CDN strategy for a globally distributed application with strict security, availability, and compliance requirements?

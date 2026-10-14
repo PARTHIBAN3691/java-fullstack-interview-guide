@@ -1,0 +1,30 @@
+* Your REST API returns HTTP 500 for every type of failure, including invalid input and missing records. How would you improve the error-handling design?
+* A client receives HTTP 200 even though the business operation failed. How would you investigate and correct the behavior?
+* Your API returns a full Java stack trace to external clients. What risks does this create, and how would you fix it?
+* A request contains invalid JSON, and the API returns an unclear error message. How would you provide a consistent validation response?
+* Your service returns HTTP 404 for an existing record because the database lookup fails intermittently. How would you distinguish missing data from infrastructure failures?
+* A duplicate email registration causes a database constraint violation and returns HTTP 500. How would you map the failure to an appropriate response?
+* Your API calls a downstream service that occasionally times out. How would you implement timeout handling, retries, and fallback behavior?
+* A downstream service returns HTTP 400, but your API converts it into HTTP 500. How would you determine whether to propagate or translate the error?
+* Your API retries every failed request, including invalid requests, increasing system load. How would you design selective retry policies?
+* A client retries a payment request after receiving a timeout, and the payment is processed twice. How would you prevent duplicate transactions?
+* One microservice completes an order operation, but another service fails during inventory reservation. How would you handle the partial failure?
+* Your database becomes unavailable during peak traffic. How should the API respond, and how would you prevent resource exhaustion?
+* A database deadlock causes intermittent transaction failures. How would you identify the issue and implement safe retry behavior?
+* Your global exception handler catches all exceptions but loses the original root cause. How would you redesign exception propagation and logging?
+* A validation error occurs in a nested request object, but the API does not return the field-specific message. How would you fix it?
+* Your API returns HTTP 401 for authenticated users whose permissions are insufficient. How would you correct the security error mapping?
+* Multiple microservices return different error formats for the same business failure. How would you standardize their responses?
+* A circuit breaker opens during a downstream outage, but clients still experience long response times. How would you investigate timeout and fallback configuration?
+* An API gateway returns HTTP 502 while the underlying service returns HTTP 400. How would you trace the error through the system?
+* Your application logs contain customer passwords and access tokens when exceptions occur. How would you remediate the exposure?
+* A production issue is difficult to trace because requests across services have no common correlation ID. How would you implement end-to-end tracing?
+* A background job fails after the original API has returned HTTP 202 Accepted. How would you communicate the failure to the client?
+* A request times out, but the backend operation continues and modifies data. How would you handle cancellation and consistency?
+* Your API experiences a sudden increase in HTTP 503 responses after a deployment. How would you investigate the root cause?
+* An optimistic locking exception occurs when two users update the same record. How would you communicate the conflict and allow safe recovery?
+* Your service returns HTTP 429 after rate limiting, but clients retry immediately and worsen the traffic spike. How would you improve the response and retry guidance?
+* A client depends on the exact structure of your error response, and a new release changes its fields. How would you maintain backward compatibility?
+* Your API returns HTTP 500 when an external provider rejects a request for a business reason. How would you distinguish provider errors from internal failures?
+* Your monitoring shows a high error rate, but logs do not clearly identify whether failures are caused by clients, databases, or downstream services. How would you improve observability?
+* How would you investigate a production incident involving payment failures, duplicate retries, database timeouts, and inconsistent error responses across microservices?

@@ -1,0 +1,30 @@
+* How would you design a secure, highly available API architecture using Google Cloud API Gateway and Spring Boot microservices?
+* How would you design API Gateway authentication using OAuth 2.0 and OpenID Connect when the identity provider issues JWT access tokens?
+* How would you validate JWT issuer, audience, expiration, and required claims at the gateway?
+* How would you handle token expiration, key rotation, and JSON Web Key Set (JWKS) changes?
+* How would you distinguish consumer authentication from service-to-service authentication in a gateway architecture?
+* How would you secure a Cloud Run backend so that requests can only be invoked by the API Gateway service account?
+* How would you configure least-privilege IAM across API Gateway, Cloud Run, Secret Manager, and deployment pipelines?
+* How would you expose private backend services without making them publicly accessible?
+* How would you design API Gateway routing for dozens of microservices with independent deployment lifecycles?
+* How would you implement backward-compatible API evolution when several clients use different API versions?
+* How would you manage breaking changes in OpenAPI specifications across multiple environments?
+* How would you design a CI/CD pipeline that validates, tests, deploys, and rolls back API Gateway configurations safely?
+* How would you provision API Gateway, API configurations, service accounts, IAM bindings, and backends using Terraform?
+* How would you prevent configuration drift between Terraform-managed infrastructure and manual Google Cloud changes?
+* How would you implement a canary or blue-green release strategy when API Gateway configuration changes are involved?
+* How would you design global traffic management and regional resilience when Google Cloud API Gateway is part of the architecture?
+* How would you determine whether API Gateway or an external load-balancing layer should handle a particular routing requirement?
+* How would you protect backend services against traffic spikes, abusive clients, and distributed denial-of-service attacks?
+* How would you design rate limiting when API Gateway's available quota mechanisms do not meet per-user or per-tenant requirements?
+* How would you implement tenant-aware authorization for a multi-tenant Spring Boot application behind API Gateway?
+* How would you propagate trace context and correlation IDs from API Gateway to downstream Java services?
+* How would you troubleshoot latency introduced by API Gateway, authentication checks, network routing, and backend processing?
+* How would you investigate intermittent 5xx errors when gateway logs show successful authentication but backend requests fail?
+* How would you design observability dashboards for request volume, latency percentiles, status codes, and backend failures?
+* How would you protect sensitive information from being exposed in API Gateway logs?
+* How would you handle large request payloads, upload limits, and backend timeout constraints in a gateway architecture?
+* How would you implement idempotency and safe retry behavior for payment APIs exposed through API Gateway?
+* How would you design a gateway strategy for public APIs and internal APIs with different security requirements?
+* How would you evaluate Google Cloud API Gateway versus Apigee for advanced API lifecycle management, monetization, and policy enforcement?
+* How would you design an API Gateway architecture that meets strict security, availability, auditability, and latency requirements for a financial application?

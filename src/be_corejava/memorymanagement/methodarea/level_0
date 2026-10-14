@@ -1,0 +1,21 @@
+
+* What is the Method Area in Java?
+* Why does the JVM need the Method Area?
+* What kind of information is stored in the Method Area?
+* Is the Method Area part of the JVM runtime data areas?
+* Is the Method Area shared among all threads?
+* What is the difference between the Method Area and the Java heap?
+* What is the difference between the Method Area and stack memory?
+* Where are class metadata and method information stored?
+* Are static variables stored in the Method Area?
+* Where are Java objects created using the `new` keyword stored?
+* Are local variables stored in the Method Area?
+* What is the relationship between the Method Area and class loading?
+* What happens when a class is loaded into the JVM?
+* Is the Method Area a logical or physical memory area?
+* Is the Method Area implementation defined by the JVM specification?
+* What is the relationship between the Method Area and Metaspace?
+* What was PermGen in earlier HotSpot JVM versions?
+* How did Java 8 change the implementation of class metadata storage?
+* Can the Method Area grow dynamically?
+* What can happen if the JVM cannot allocate enough memory for class metadata?

@@ -1,0 +1,30 @@
+* Write a Dockerfile to containerize a Spring Boot application for deployment to GKE.
+* Write Kubernetes Deployment and Service YAML manifests for a Java REST API.
+* Write a Kubernetes manifest that deploys a Spring Boot application with three replicas.
+* Write a Kubernetes ConfigMap and Deployment manifest to configure a Java application using environment variables.
+* Write a Kubernetes Secret manifest and demonstrate how a Java application can read injected credentials securely.
+* Write a Kubernetes Deployment manifest with readiness, liveness, and startup probes for a Spring Boot application.
+* Write a Kubernetes manifest that defines CPU and memory requests and limits for a Java container.
+* Write a HorizontalPodAutoscaler manifest that scales a Java application based on CPU utilization.
+* Write a Kubernetes Service manifest that exposes a Java application internally using ClusterIP.
+* Write a Kubernetes Gateway or Ingress configuration to expose a Spring Boot application through HTTPS.
+* Write a Kubernetes Deployment manifest that supports rolling updates with controlled surge and unavailable replicas.
+* Write a Kubernetes manifest that defines a PodDisruptionBudget for a highly available Java service.
+* Write Kubernetes manifests that deploy two Spring Boot microservices and allow one to access the other through Kubernetes service discovery.
+* Write a Kubernetes NetworkPolicy that restricts a backend service to receive traffic only from an authorized frontend namespace.
+* Write a Kubernetes manifest that schedules selected workloads onto a dedicated node pool using node selectors or affinity.
+* Write a Kubernetes manifest that uses taints and tolerations to isolate a Java workload on dedicated nodes.
+* Write a Helm chart for deploying a Spring Boot microservice with configurable replicas, image tags, resources, and service settings.
+* Write a Kubernetes Job manifest that runs a one-time Java database migration before a new application version is deployed.
+* Write a Kubernetes CronJob manifest that executes a scheduled Java batch-processing application.
+* Write a Java Spring Boot health endpoint suitable for Kubernetes readiness and liveness probes.
+* Write a Java program that reads application configuration from environment variables and validates required settings at startup.
+* Write a Spring Boot configuration example that retrieves secrets from Google Cloud Secret Manager using Workload Identity Federation for GKE.
+* Write a Java application configuration that connects securely to Cloud SQL from GKE using an appropriate Cloud SQL connectivity method.
+* Write a Kubernetes manifest that configures a service account for a workload accessing Google Cloud APIs through Workload Identity Federation for GKE.
+* Write a shell script using gcloud and kubectl to deploy a new Spring Boot container image and wait for rollout completion.
+* Write a CI/CD pipeline configuration that builds a Java application, creates a container image, pushes it to Artifact Registry, and deploys it to GKE.
+* Write a Kubernetes deployment strategy that performs a canary rollout and allows traffic to be shifted gradually between application versions.
+* Write a script that collects pod status, recent events, and container logs when a GKE deployment fails.
+* Write a Kubernetes manifest that configures resource quotas and limit ranges for a development namespace.
+* Write an automated deployment verification script that checks pod readiness, service endpoints, and application health before declaring a release successful.

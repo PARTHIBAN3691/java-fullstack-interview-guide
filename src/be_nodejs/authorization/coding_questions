@@ -1,0 +1,30 @@
+* Write Express.js middleware that allows access only to authenticated users with the Admin role.
+* Implement reusable authorization middleware that checks whether a user has a required permission.
+* Create an API endpoint that allows users to retrieve only their own profile.
+* Write middleware that checks resource ownership before allowing an update.
+* Implement role-based authorization for Admin, Manager, and Employee roles.
+* Write a function that checks whether a user has any of several required roles.
+* Implement permission inheritance for a hierarchy of roles.
+* Create a permission-checking service that retrieves user permissions from a database.
+* Implement authorization using roles and permissions stored in JWT claims.
+* Write middleware that validates OAuth 2.0 scopes for an API endpoint.
+* Implement tenant-aware authorization middleware for a multi-tenant Express.js application.
+* Write a database query that retrieves records belonging only to the authenticated user's tenant.
+* Implement field-level authorization that removes restricted fields from API responses.
+* Create an update endpoint that prevents users from modifying protected fields such as role and tenantId.
+* Implement an authorization policy that allows managers to access records belonging to their department.
+* Write a function that checks whether a user can perform an action on a specific resource.
+* Implement authorization for nested resources such as orders and order items.
+* Create middleware that returns consistent HTTP 401 and HTTP 403 responses.
+* Implement authorization auditing that records denied requests without logging sensitive data.
+* Write unit tests for role-based authorization middleware, including allowed and denied requests.
+* Create integration tests that verify users cannot access resources belonging to another tenant.
+* Implement permission caching with a strategy for invalidating entries after role changes.
+* Write middleware that checks whether a user can download a particular file.
+* Implement temporary permissions that expire automatically after a configured time.
+* Create an authorization service that supports RBAC and attribute-based rules.
+* Integrate Open Policy Agent with a Node.js API to evaluate authorization policies.
+* Implement a policy decision function that considers user attributes, resource attributes, and requested actions.
+* Write a GraphQL resolver that enforces authorization for both parent resources and nested fields.
+* Implement authorization checks for WebSocket events and handle permission revocation.
+* Build a complete Express.js authorization module with role management, permission management, resource ownership checks, and audit logging.

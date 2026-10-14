@@ -1,0 +1,30 @@
+* Explain the complete sequence of Angular component lifecycle hooks.
+* How does ngOnChanges() behave when an @Input() property changes?
+* Why might ngOnChanges() not run when a property of an input object is mutated?
+* What is the difference between ngOnChanges() and ngDoCheck()?
+* When should you use ngDoCheck() instead of ngOnChanges()?
+* How do lifecycle hooks behave when a parent component passes data to a child component?
+* What happens when an input property receives its initial value?
+* Why does ngOnChanges() run before ngOnInit() for an initialized component with inputs?
+* How do ngAfterContentInit() and ngAfterContentChecked() interact with projected content?
+* How do ngAfterViewInit() and ngAfterViewChecked() interact with child components?
+* How do you access a child component using @ViewChild()?
+* When is a @ViewChild() query available during the component lifecycle?
+* What is the difference between @ViewChild() and @ContentChild()?
+* How do lifecycle hooks behave when an *ngIf condition creates and destroys a component?
+* How do lifecycle hooks behave when an *ngFor list adds or removes components?
+* What happens to a component's subscriptions when the component is destroyed?
+* How do you unsubscribe from Observables in ngOnDestroy()?
+* What is takeUntilDestroyed(), and how does it help manage component lifecycles?
+* How do lifecycle hooks interact with asynchronous API calls?
+* Why should complex business logic generally not be placed in a constructor?
+* How do lifecycle hooks interact with change detection?
+* What is the purpose of ChangeDetectorRef in lifecycle-related scenarios?
+* Why can changing bound values in ngAfterViewInit() cause an ExpressionChangedAfterItHasBeenCheckedError?
+* How do lifecycle hooks behave in components using ChangeDetectionStrategy.OnPush?
+* What is the difference between component initialization and route activation?
+* How do lifecycle hooks behave when navigating between routes that reuse the same component?
+* How do you clean up timers and event listeners during component destruction?
+* Can a lifecycle hook be declared as async, and what should you consider when doing so?
+* How do Angular lifecycle hooks work with standalone components?
+* How would you unit-test the lifecycle hooks of an Angular component?

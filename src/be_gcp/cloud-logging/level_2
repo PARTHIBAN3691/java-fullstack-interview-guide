@@ -1,0 +1,30 @@
+* How would you design a centralized logging architecture for hundreds of Java microservices across multiple Google Cloud projects?
+* How would you establish consistent structured logging standards across multiple development teams?
+* How would you design a correlation ID strategy across REST APIs, Pub/Sub consumers, and asynchronous workflows?
+* How would you correlate Cloud Logging entries with Cloud Trace spans and Cloud Monitoring metrics?
+* How would you design log routing for security, operational, and business analytics teams?
+* How would you choose between log buckets, log sinks, BigQuery exports, and Pub/Sub exports for different requirements?
+* How would you design log retention policies to meet regulatory and audit requirements while controlling costs?
+* How would you prevent sensitive information from being stored in logs across multiple applications?
+* How would you implement log redaction or data minimization before sensitive data reaches centralized storage?
+* How would you design IAM policies that restrict access to security logs while allowing developers to inspect application logs?
+* How would you investigate unauthorized access using Cloud Audit Logs?
+* How would you design a reliable alerting strategy using log-based metrics without generating excessive false positives?
+* How would you detect rare errors or sudden increases in exception rates using log-based metrics?
+* How would you design log-based metrics for latency, failed requests, and business transaction outcomes?
+* How would you investigate missing logs when an application reports errors but Cloud Logging shows no corresponding entries?
+* How would you troubleshoot log ingestion delays during a high-traffic incident?
+* How would you optimize a Java logging pipeline to minimize application latency and resource consumption?
+* How would you prevent synchronous logging from becoming a bottleneck in high-throughput applications?
+* How would you handle log duplication when applications use multiple logging appenders or export mechanisms?
+* How would you design log collection for GKE workloads using stdout, stderr, and platform-integrated logging?
+* How would you troubleshoot inconsistent resource labels across Cloud Run, GKE, and Compute Engine logs?
+* How would you design a logging architecture for multi-region applications with centralized security monitoring?
+* How would you route selected logs to different destinations based on severity, service, or business domain?
+* How would you implement reliable downstream log processing when Pub/Sub consumers experience failures?
+* How would you control logging costs in a system generating billions of log entries per day?
+* How would you distinguish application failures from infrastructure failures using log fields and resource metadata?
+* How would you design audit logging for a financial application that requires traceability of sensitive operations?
+* How would you build a forensic investigation process using audit logs, application logs, and trace information?
+* How would you implement CI/CD checks that prevent insecure or unstructured logging practices?
+* How would you define measurable logging SLOs for completeness, availability, query latency, and cost?

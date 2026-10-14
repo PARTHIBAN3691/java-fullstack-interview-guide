@@ -1,0 +1,30 @@
+* A Spring Boot application intermittently fails to connect to MongoDB after deployment. How would you investigate the connection configuration, network, authentication, and server availability?
+* A MongoDB query that was fast initially becomes slow as the collection grows to millions of documents. How would you identify the bottleneck and optimize it?
+* A production API returns duplicate-key errors when multiple requests create the same customer record. How would you prevent duplicates and handle concurrent requests?
+* Two application instances update the same document, and one update overwrites the other. How would you prevent lost updates?
+* An order document contains an embedded array of items that grows continuously, causing performance problems. How would you redesign the document structure?
+* A MongoDB collection has several indexes, but queries are still slow. How would you inspect query plans and determine whether the indexes are appropriate?
+* An aggregation pipeline processes millions of records and causes high CPU usage. How would you optimize its stages and indexing strategy?
+* A Spring Boot service experiences connection pool exhaustion during peak traffic. How would you investigate connection usage, query duration, and pool configuration?
+* A MongoDB replica set elects a new primary during peak traffic, and writes begin failing. How would you make the Java application resilient to elections?
+* A user reads stale data immediately after updating a document. How would you investigate read preference, read concern, and replication lag?
+* A payment service must update two documents atomically. How would you decide whether to use a multi-document transaction or redesign the document model?
+* A transaction fails with a transient transaction error. How would you implement a safe retry strategy?
+* A retry mechanism creates duplicate orders after a timeout even though the original write may have succeeded. How would you make the operation idempotent?
+* A change-stream consumer crashes after processing an event but before saving its resume token. How would you prevent duplicate business processing after recovery?
+* A change-stream consumer misses events during a prolonged outage. How would you investigate resume-token validity and recovery options?
+* A sharded collection develops a hot shard because most writes target the same shard key range. How would you redesign the shard key?
+* A query performs a scatter-gather operation across every shard. How would you improve query targeting?
+* A TTL index does not delete expired documents at the exact expected time. How would you explain and handle this behavior?
+* A migration introduces inconsistent document structures across collections. How would you validate, migrate, and enforce the new schema safely?
+* A field sometimes contains a string and sometimes a number, causing application mapping errors. How would you fix the data and prevent recurrence?
+* A repository method derived from its name generates an inefficient query. How would you replace it with a better query and verify the improvement?
+* A MongoDB deployment experiences high disk usage and cache pressure. How would you identify whether indexes, document growth, or workload patterns are responsible?
+* A bulk import takes too long and affects live application traffic. How would you optimize batch size, indexing, and write concern?
+* A service must query records by customer ID and creation date, but the compound index does not improve performance. How would you analyze field order and query selectivity?
+* A Spring Boot application works locally but fails to authenticate against a secured production MongoDB cluster. How would you investigate credentials, roles, TLS, and connection settings?
+* A reporting API uses skip-based pagination and becomes increasingly slow on later pages. How would you redesign pagination?
+* A primary accepts writes, but the business requires that acknowledged records survive a replica-set failover. How would you choose the appropriate write concern?
+* A data synchronization service needs to process MongoDB changes and publish messages to a broker without losing events. How would you design reliable event delivery?
+* A collection reaches the BSON document size limit because too much data is embedded in one document. How would you redesign the schema?
+* How would you investigate a production incident involving high query latency, replication lag, connection pool exhaustion, and increased application errors?

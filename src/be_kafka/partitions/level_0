@@ -1,0 +1,30 @@
+* What is a partition in Kafka?
+* Why does Kafka divide a topic into partitions?
+* How is a Kafka topic related to partitions?
+* Can a Kafka topic have multiple partitions?
+* What is the default number of partitions for a Kafka topic?
+* How do you specify the number of partitions when creating a Kafka topic?
+* What is a partition number in Kafka?
+* What is the range of partition numbers in a Kafka topic?
+* How are records distributed across partitions?
+* What is a partition key in Kafka?
+* Why is the message key important for partitioning?
+* What happens when a Kafka producer sends a message without a key?
+* What happens when a Kafka producer sends a message with a key?
+* How does Kafka maintain ordering within a partition?
+* Does Kafka guarantee ordering across partitions?
+* Can records from different partitions have the same offset?
+* Is an offset unique across the entire Kafka topic?
+* What is the relationship between partition and offset?
+* Can a partition exist without a topic?
+* Can two topics share the same partition?
+* What is the purpose of partition replication?
+* What is the difference between a partition and a replica?
+* What is a leader partition replica?
+* What is a follower partition replica?
+* What happens when a partition leader fails?
+* What is the ISR in Kafka?
+* How does partition count affect Kafka scalability?
+* Can the number of partitions of a Kafka topic be increased?
+* Can Kafka partitions be deleted individually?
+* Why should partition count be planned carefully?

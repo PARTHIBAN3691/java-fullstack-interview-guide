@@ -1,0 +1,21 @@
+
+* Two threads update the same bank account balance simultaneously, producing an incorrect result. How would you fix the race condition?
+* A Spring Boot application processes multiple requests concurrently and occasionally returns inconsistent data. How would you investigate thread safety?
+* A service has a shared `ArrayList` that is modified by multiple threads. What problems can occur, and how would you address them?
+* Two services acquire database-related locks in opposite orders and hang during peak traffic. How would you diagnose and prevent the deadlock?
+* A thread pool becomes saturated because tasks spend most of their time waiting for external APIs. How would you improve throughput?
+* A CPU-intensive service performs worse after increasing the thread pool size. What could explain this behavior?
+* A shared counter produces incorrect results even though its variable is declared `volatile`. How would you fix it?
+* A singleton Spring bean stores request-specific data in instance variables. What concurrency issues could arise?
+* A cache uses `ConcurrentHashMap`, but duplicate expensive computations still occur for the same key. How would you prevent redundant work safely?
+* A producer thread generates data faster than a consumer can process it. How would you implement backpressure or bounded buffering?
+* Multiple worker threads must wait until all initialization tasks complete. Which concurrency utility would you use?
+* A task should proceed only after three independent services have completed their work. How would you coordinate the tasks?
+* A high-volume application experiences starvation, where some tasks wait indefinitely. How would you investigate and resolve it?
+* A service needs to limit concurrent calls to a third-party API to five at a time. Which concurrency mechanism would you choose?
+* A concurrent workflow must support cancellation and propagate failures from worker tasks. How would you design it?
+* A virtual-thread-based application creates thousands of concurrent tasks but experiences database connection pool exhaustion. How would you resolve the bottleneck?
+* A concurrency bug disappears when debug logging is enabled. What does this suggest, and how would you reproduce the issue?
+* An application needs a thread-safe read-heavy configuration store with infrequent updates. Which synchronization strategy would you consider?
+* A production application intermittently hangs, and a thread dump shows several threads in `BLOCKED` state. How would you investigate?
+* A batch processing system must preserve ordering for some tasks while allowing unrelated tasks to execute concurrently. How would you design the execution model?

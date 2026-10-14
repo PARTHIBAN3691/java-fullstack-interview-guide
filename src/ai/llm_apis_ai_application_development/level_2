@@ -1,0 +1,104 @@
+**OpenAI API**
+* Design a multi-tenant AI gateway that supports multiple OpenAI models, streaming, tool calling, and per-tenant usage limits.
+* How would you migrate from a chat-completion-based implementation to a response-oriented API while preserving backward compatibility?
+* How would you handle context-window exhaustion in long-running conversations without losing important business information?
+* How would you build a resilient client that handles provider degradation, partial streaming responses, cancellation, and bounded retries?
+* How would you compare model versions using offline evaluations, shadow traffic, and controlled production experiments?
+
+**Anthropic Claude API**
+* How would you build a Claude integration that supports long-context workflows while controlling token consumption and latency?
+* How would you design a provider adapter when Claude's tool-use protocol differs from other providers?
+* How would you evaluate prompt caching and other provider-specific optimizations without changing application behavior?
+* How would you handle interrupted multi-step tool-use conversations while preserving consistency and preventing duplicate operations?
+* How would you design regression tests for model-version changes that may alter tool selection or response quality?
+
+**Google Gemini API**
+* How would you architect a Gemini integration that supports text, images, audio, and structured output through a common application interface?
+* How would you manage model-version changes and provider-specific generation behavior in a production system?
+* How would you build a robust workflow around long-running or asynchronous model operations where supported?
+* How would you enforce safety policies while maintaining useful responses for legitimate requests?
+* How would you compare Gemini against other providers for latency-sensitive, multimodal, and structured-extraction workloads?
+
+**Azure OpenAI Service**
+* Design a production architecture using Azure OpenAI with private networking, managed identity, centralized secrets management, and observability.
+* How would you manage deployment-specific quotas, regional availability, and failover between Azure regions?
+* How would you migrate model deployments while minimizing downtime and preserving application compatibility?
+* How would you enforce tenant isolation and prevent one application's traffic from consuming another application's quota?
+* How would you investigate intermittent throttling even when the average request rate appears to be below the configured quota?
+
+**AWS Bedrock**
+* Design a multi-model Bedrock service using IAM least privilege, centralized observability, regional resilience, and usage attribution.
+* How would you handle differences between the Converse API, direct model invocation, and streaming invocation?
+* How would you design cross-region model fallback while accounting for data residency and regulatory requirements?
+* How would you troubleshoot access-denied errors caused by IAM policies, model access requirements, or organizational restrictions?
+* How would you evaluate and deploy a new foundation model without exposing all production traffic to it immediately?
+
+**Model API Authentication and Authorization**
+* Design a credential architecture for a multi-cloud AI platform that supports API keys, managed identities, IAM roles, and workload federation.
+* How would you rotate credentials across hundreds of services without service interruption?
+* How would you prevent a compromised application credential from being used to access every model or tenant?
+* How would you implement authorization for individual tools, models, data sources, and sensitive operations?
+* How would you audit credential usage and investigate suspected credential leakage across distributed services?
+
+**Chat Completions and Response APIs**
+* How would you design a conversation orchestration layer that supports multiple provider protocols without exposing vendor-specific types to business services?
+* How would you preserve conversation consistency when concurrent requests attempt to update the same session?
+* How would you handle provider responses containing multiple output items, refusal indicators, tool calls, and incomplete status?
+* How would you migrate persisted conversation records when the application's message representation changes?
+* How would you design idempotency and request deduplication for client retries across multi-step generation workflows?
+
+**Streaming Responses**
+* Design an end-to-end streaming architecture that supports thousands of concurrent users, browser disconnects, cancellation, and upstream provider failures.
+* How would you implement backpressure when model output arrives faster than the downstream client can consume it?
+* How would you handle a network failure after some response chunks have already been delivered?
+* How would you support moderation or policy checks during streaming without exposing disallowed content?
+* How would you test for resource leaks, stalled streams, duplicate chunks, and incomplete termination under load?
+
+**Function Calling and Tool Calling**
+* Design a secure tool-execution framework for database queries, external REST APIs, and business transactions.
+* How would you prevent prompt injection from causing the model to invoke unauthorized tools or exfiltrate confidential data?
+* How would you coordinate multiple dependent tool calls while enforcing deadlines, concurrency limits, and failure recovery?
+* How would you make side-effecting tools safe under retries, duplicate calls, and interrupted conversations?
+* How would you implement human approval for high-risk actions without losing the context of the original request?
+
+**Structured Outputs**
+* Design a schema-governed extraction service that supports multiple model providers and evolving business contracts.
+* How would you handle models that claim structured-output support but still produce incomplete or semantically invalid results?
+* How would you validate nested data, cross-field constraints, domain rules, and reference-data consistency?
+* How would you introduce a new output schema while allowing older consumers to continue working?
+* How would you measure extraction accuracy and detect silent quality degradation when model versions change?
+
+**Multimodal APIs**
+* Design a multimodal document-processing pipeline for large PDFs, images, audio recordings, and video clips.
+* How would you manage upload validation, object storage, preprocessing, model limits, asynchronous processing, and result delivery?
+* How would you prevent hidden instructions in images or documents from influencing privileged tool execution?
+* How would you handle personally identifiable information, retention requirements, and data-residency constraints in multimodal processing?
+* How would you evaluate accuracy across OCR, visual reasoning, speech recognition, and cross-modal retrieval?
+
+**Rate Limiting, Retries, and Timeouts**
+* Design a distributed rate limiter that coordinates request and token budgets across multiple application instances and provider accounts.
+* How would you implement adaptive concurrency control when provider latency and throttling change dynamically?
+* How would you prevent retry amplification across API gateways, service clients, workflow engines, and provider SDKs?
+* How would you design deadline propagation for a workflow that invokes multiple models and tools?
+* How would you distinguish an upstream timeout from an ambiguous outcome in a non-idempotent operation?
+
+**Token Usage and Cost Management**
+* Design a real-time cost attribution platform for multiple providers, tenants, models, cached tokens, and multimodal requests.
+* How would you enforce hard budget limits when actual token usage is only known after generation?
+* How would you detect and prevent runaway agent loops that repeatedly invoke models and tools?
+* How would you optimize cost without unacceptable degradation in answer quality or task completion rate?
+* How would you reconcile estimated token costs with provider-reported usage and billing records?
+
+**Model Routing and Fallback Strategies**
+* Design a policy-based routing engine that selects models using task complexity, data sensitivity, latency targets, cost limits, and availability.
+* How would you prevent cascading failures when multiple providers share infrastructure or experience correlated outages?
+* How would you perform quality-aware fallback when a successful HTTP response still contains an unusable answer?
+* How would you run shadow evaluations and gradual traffic shifts without duplicating side effects?
+* How would you determine when to fail fast, retry the same model, switch providers, or return a degraded result?
+
+**AI Application Error Handling**
+* Design a unified failure-handling framework for provider errors, tool failures, invalid outputs, safety refusals, and application timeouts.
+* How would you implement circuit breakers, bulkheads, bounded retries, fallback, and recovery without conflicting policies?
+* How would you handle failures after partial output has been streamed to a user?
+* How would you build distributed tracing across an orchestration workflow containing several model calls and external tools?
+* How would you distinguish service availability from AI task success when monitoring an AI application?

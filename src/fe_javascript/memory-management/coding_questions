@@ -1,0 +1,30 @@
+* Write a JavaScript program that creates objects and demonstrates how references are assigned.
+* Write a program that demonstrates the difference between copying primitive values and copying object references.
+* Write a program that shows how two variables can reference the same object.
+* Write a program that removes references to an object by updating variables and collection entries.
+* Write a program that demonstrates a closure retaining access to variables from its outer function.
+* Write a program that creates a counter using a closure and explains its retained state.
+* Write a program that demonstrates how an uncleared interval can retain references to objects.
+* Write a program that creates and removes a DOM event listener correctly.
+* Write a program that clears a timeout and an interval when they are no longer needed.
+* Write a program that demonstrates a Map retaining object keys and compares its behavior with WeakMap.
+* Write a program that uses WeakMap to associate metadata with objects without adding properties to them.
+* Write a program that uses WeakSet to track object membership.
+* Write a program that implements a cache with a maximum number of entries.
+* Write a program that implements a least-recently-used (LRU) cache to limit retained data.
+* Write a program that removes obsolete entries from an array without retaining unnecessary objects.
+* Write a program that processes a large array in smaller chunks to limit peak memory usage.
+* Write a program that compares creating a new object on every iteration with reusing an object where appropriate.
+* Write a program that uses ArrayBuffer and TypedArray to store numeric data efficiently.
+* Write a program that transfers an ArrayBuffer to a Web Worker using transferable objects.
+* Write a program that demonstrates how a detached DOM element can remain referenced by JavaScript.
+* Write a program that implements explicit cleanup for a component's timers and event listeners.
+* Write a Node.js program that reports process.memoryUsage() at regular intervals.
+* Write a Node.js program that measures heap usage before and after processing a large dataset.
+* Write a Node.js program that streams a large file instead of loading the entire file into memory.
+* Write a program that processes large data in batches and releases references to completed batches.
+* Write a program that uses WeakRef and explains why dereferencing its target may return undefined.
+* Write a program that uses FinalizationRegistry for a non-critical cleanup demonstration.
+* Write a program that demonstrates why FinalizationRegistry must not be relied on for deterministic cleanup.
+* Write a program that uses heap snapshots in a controlled test to investigate suspected object retention.
+* Write a program that simulates repeated resource creation and cleanup, then explains how to verify whether memory usage stabilizes.

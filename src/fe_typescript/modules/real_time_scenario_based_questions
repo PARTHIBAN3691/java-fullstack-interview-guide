@@ -1,0 +1,30 @@
+* Your TypeScript application has multiple files sharing common utility functions. How would you organize them into modules?
+* A function exported from one file cannot be imported into another file. How would you investigate the issue?
+* Your application reports that a module has no exported member, even though the function exists. How would you troubleshoot it?
+* A developer accidentally creates two default exports in one file. What error would occur, and how would you fix it?
+* Your team wants to expose several services through a single entry point. How would you implement this using a barrel file?
+* A barrel file causes unexpected initialization behavior. How would you identify and resolve the problem?
+* A project uses CommonJS dependencies but your TypeScript application uses ES modules. How would you integrate them?
+* Your application works locally but fails to resolve modules after deployment. What would you check?
+* A third-party JavaScript library has no TypeScript declarations. How would you provide the required types?
+* Your project has circular dependencies between service modules. How would you refactor the design?
+* Your team wants to replace long relative imports with short aliases. How would you configure TypeScript?
+* An import path alias works in the TypeScript compiler but fails at runtime. How would you fix it?
+* Your application needs to load a large reporting module only when the user opens the reporting page. How would you implement lazy loading?
+* A module is imported by several components, increasing the application's initial bundle size. How would you investigate and reduce it?
+* Your team is migrating from CommonJS to ES modules. What changes would you plan and validate?
+* A TypeScript package works in a Node.js project but fails in a browser-based application. How would you investigate the incompatibility?
+* Your application imports a type that should not exist in the generated JavaScript. How would you implement a type-only import?
+* A module works with one TypeScript compiler configuration but fails with another. Which configuration options would you compare?
+* Your monorepo contains multiple packages with shared TypeScript types. How would you structure the modules and package dependencies?
+* A library consumer reports that the package's types are found but its runtime entry point is missing. How would you debug the package configuration?
+* Your project uses a package with conditional exports. How would you ensure TypeScript resolves the correct entry point?
+* A file is unexpectedly treated as a global script instead of a module. How would you correct it?
+* Two packages export members with the same name. How would you avoid naming conflicts when importing them?
+* Your team wants to expose internal implementation details only within one package. How would you design the module boundaries?
+* A module's default import works in development but fails after compilation. Which interoperability settings and runtime formats would you inspect?
+* Your application needs different implementations for browser and Node.js environments. How would you organize the module exports?
+* A developer changes a module's exported function signature and breaks several consumers. How would you design a safer public API?
+* Your build process includes unused exports in the production bundle. How would you investigate tree shaking and module formats?
+* A workspace package resolves to stale compiled output instead of the latest source. How would you diagnose and correct the configuration?
+* How would you organize modules in a large enterprise TypeScript application with controllers, services, repositories, and shared utilities?

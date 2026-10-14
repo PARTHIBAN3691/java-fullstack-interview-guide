@@ -1,0 +1,30 @@
+* How would you design an end-to-end Docker optimization strategy for a large Spring Boot microservices platform?
+* How do you balance image size, security, startup time, and runtime performance when selecting a Java base image?
+* How does Docker BuildKit's dependency graph affect build execution and caching?
+* How would you design a reproducible Docker build that maximizes cache reuse without using stale artifacts?
+* How do remote build caches work in distributed CI environments, and what security risks should be considered?
+* How would you optimize image builds in a monorepo containing dozens of Java microservices?
+* How can jlink be used to create a minimal Java runtime, and what are its limitations for Spring Boot applications?
+* How would you determine the minimum Java modules required for a custom runtime image?
+* How can Java class data sharing improve application startup, and what deployment constraints should be considered?
+* How would you optimize JVM heap, metaspace, direct memory, and thread-stack usage within a container memory limit?
+* How would you diagnose a Java container that experiences frequent garbage collection despite having sufficient host memory?
+* How do CPU quotas and CPU throttling affect JVM performance inside Docker?
+* How would you distinguish a Docker resource limit from a Java memory leak?
+* How do container memory limits interact with JVM container awareness across different Java versions?
+* How would you optimize Spring Boot startup time without sacrificing observability or reliability?
+* How would you profile a containerized Java application experiencing high CPU usage?
+* How do filesystem drivers and writable container layers affect I/O performance?
+* When should application data be stored in volumes instead of a container's writable layer?
+* How would you optimize Docker networking for latency-sensitive Java microservices?
+* How can excessive logging, large log messages, and synchronous appenders affect container performance?
+* How would you optimize image distribution for a fleet of hosts that frequently deploy updated Java services?
+* How do image digests, layer reuse, and registry caching influence deployment efficiency?
+* How would you prevent a Docker optimization from accidentally removing required certificates, native libraries, or timezone data?
+* How do security scanning requirements affect the choice of minimal base images?
+* How would you automate Dockerfile quality checks and optimization policies across an enterprise?
+* How would you compare a layered Spring Boot JAR, a standard executable JAR, and a custom Java runtime image?
+* How can you optimize build performance while still running unit tests, integration tests, and vulnerability scans?
+* How would you establish performance benchmarks for image build time, image pull time, startup latency, memory consumption, and throughput?
+* How would you investigate a regression where the optimized image is smaller but the application consumes more memory?
+* How would you design a continuous optimization process that preserves image reproducibility, security, and production stability?

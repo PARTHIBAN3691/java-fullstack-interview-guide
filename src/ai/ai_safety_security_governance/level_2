@@ -1,0 +1,113 @@
+**Responsible AI**
+* How would you design an end-to-end Responsible AI framework spanning product design, model selection, training, deployment, monitoring, and retirement?
+* How would you resolve conflicts between accuracy, fairness, privacy, safety, and business performance using measurable acceptance criteria?
+* How would you operationalize Responsible AI controls across teams that use different model providers and deployment architectures?
+* How would you establish evidence that an AI system remains within its approved intended use as user behavior and model capabilities evolve?
+
+**AI Risk Management**
+* How would you build a quantitative and qualitative AI risk model that accounts for uncertain failure probabilities, business impact, exposure, and control effectiveness?
+* How would you conduct threat modeling for an agentic AI system with persistent memory, external tools, and delegated permissions?
+* How would you determine residual risk after technical controls have been implemented and decide whether a system is safe to release?
+* How would you establish continuous risk reassessment triggered by model changes, new integrations, incidents, or distribution shifts?
+
+**Hallucination Detection and Mitigation**
+* How would you detect unsupported claims in multi-hop RAG responses when different claims rely on different source documents?
+* How would you evaluate factuality at the claim level while accounting for uncertainty, conflicting sources, and incomplete evidence?
+* How would you design an abstention strategy that reduces unsupported answers without making the system unnecessarily unhelpful?
+* How would you distinguish hallucination reduction caused by genuine grounding from improvements caused by conservative or incomplete answers?
+
+**Prompt Injection**
+* How would you design defense in depth against indirect prompt injection when the model must process untrusted content and invoke privileged tools?
+* How would you prevent an attacker from using a sequence of apparently harmless tool calls to exfiltrate protected data?
+* How would you evaluate prompt injection resilience across multiple models, languages, modalities, and long-running agent workflows?
+* How would you enforce independent policy decisions when model-based input filtering cannot reliably determine whether content contains malicious instructions?
+
+**Jailbreak Attacks**
+* How would you design a red-team framework that measures jailbreak success across direct, multi-turn, encoded, and multimodal attacks?
+* How would you distinguish model-level safety failures from application-level failures in tool routing, retrieval, and output handling?
+* How would you prevent adaptive attackers from exploiting differences between moderation models, the generation model, and downstream validators?
+* How would you measure safety improvements while detecting over-refusal and regression on legitimate sensitive-topic requests?
+
+**Data Poisoning**
+* How would you detect low-volume targeted poisoning that creates a backdoor without noticeably changing overall validation metrics?
+* How would you establish trustworthy dataset provenance and integrity across collection, transformation, synthetic generation, and training?
+* How would you investigate a model that produces anomalous outputs only when a rare trigger pattern appears?
+* How would you design recovery procedures for a poisoned fine-tuned model when the original training dataset is partially unavailable?
+
+**Model Inversion and Data Leakage**
+* How would you evaluate model memorization and extraction risk without exposing sensitive training examples during testing?
+* How would you assess membership-inference and model-inversion risks for models trained on confidential or regulated datasets?
+* How would you mitigate leakage across training data, retrieval systems, application caches, observability pipelines, and shared inference services?
+* How would you evaluate privacy-utility trade-offs when applying differential privacy or other privacy-preserving training techniques?
+
+**Sensitive Information and PII Protection**
+* How would you implement end-to-end data protection across user input, prompt construction, model inference, tool execution, memory, logging, and output delivery?
+* How would you prevent indirect disclosure of sensitive data through summaries, embeddings, generated explanations, or repeated targeted queries?
+* How would you implement deletion and retention guarantees when information has influenced fine-tuned model parameters or derived artifacts?
+* How would you design privacy controls for a multi-tenant AI platform that supports different jurisdictions, data classifications, and model providers?
+
+**AI Output Validation**
+* How would you design a layered validation system for AI-generated commands that can change financial, customer, or infrastructure state?
+* How would you validate semantic correctness when no deterministic ground-truth answer exists?
+* How would you prevent time-of-check-to-time-of-use vulnerabilities between output validation, authorization, and downstream execution?
+* How would you design schema evolution and backward-compatible validation for models that produce structured outputs consumed by multiple services?
+
+**Content Moderation**
+* How would you evaluate moderation quality across languages, dialects, context-dependent meaning, and adversarially altered text?
+* How would you design moderation cascades that combine fast classifiers, specialized models, contextual analysis, and human escalation?
+* How would you optimize moderation thresholds under asymmetric costs for false negatives and false positives?
+* How would you monitor moderation drift and recalibrate policies without introducing inconsistent treatment across user groups?
+
+**Guardrails and Policy Enforcement**
+* How would you enforce high-impact policies independently of the LLM while keeping the guardrail architecture maintainable and extensible?
+* How would you prevent policy bypass through tool chaining, delegated agents, encoded payloads, or alternative output formats?
+* How would you design policy versioning, conflict resolution, auditability, and emergency policy updates across distributed AI services?
+* How would you validate that fail-safe behavior works when guardrail services, identity providers, or policy engines become unavailable?
+
+**AI Access Control**
+* How would you design fine-grained authorization for AI agents that access multiple systems on behalf of users with different privilege levels?
+* How would you prevent confused-deputy attacks, privilege escalation, and cross-tenant data leakage in tool-enabled AI systems?
+* How would you propagate user identity and authorization context through asynchronous workflows without relying on model-generated claims?
+* How would you handle dynamic permission revocation during long-running agent workflows and cached retrieval sessions?
+
+**AI Supply-Chain Security**
+* How would you establish a verifiable chain of custody for base models, fine-tuned adapters, datasets, containers, dependencies, and deployment artifacts?
+* How would you detect compromised model repositories, malicious model-loading code, vulnerable serialization formats, and tampered artifacts?
+* How would you design a software and model bill of materials with vulnerability scanning, provenance verification, and release-policy enforcement?
+* How would you respond to a newly disclosed vulnerability in a model-serving framework used by multiple production AI services?
+
+**Model Governance and Auditability**
+* How would you design a governance framework that links intended use, risk classification, data lineage, evaluation evidence, approvals, and runtime monitoring?
+* How would you provide auditability for nondeterministic AI outputs while preserving privacy and avoiding excessive retention of prompts?
+* How would you prove which model, prompt, policy version, retrieval corpus, and tool configuration contributed to a disputed output?
+* How would you manage governance across multiple regions, teams, third-party providers, and independently deployed model versions?
+
+**Explainability and Transparency**
+* How would you evaluate whether a generated explanation faithfully represents the evidence and factors that influenced a model output?
+* How would you explain uncertainty and limitations in high-impact AI decisions without implying guarantees the model cannot provide?
+* How would you design explanation and provenance interfaces for users, auditors, developers, and regulators with different information needs?
+* How would you validate explanations under model drift, prompt changes, retrieval updates, and changing input distributions?
+
+**Bias and Fairness**
+* How would you define appropriate fairness metrics when different metrics conflict and the business context has unequal error costs?
+* How would you evaluate intersectional disparities when sample sizes are small and demographic data is incomplete?
+* How would you distinguish genuine fairness improvements from changes caused by threshold selection, data shifts, or measurement artifacts?
+* How would you establish continuous fairness monitoring and remediation without unnecessarily collecting or exposing sensitive demographic data?
+
+**Copyright and Data Provenance**
+* How would you build a provenance system that links model outputs to source documents, dataset licenses, transformation history, and training runs?
+* How would you assess and respond to claims that generated content reproduces protected material?
+* How would you handle conflicting license obligations, data deletion requests, and model artifacts that were trained on affected data?
+* How would you design a governance process for synthetic data whose content may indirectly reproduce protected or confidential source material?
+
+**Regulatory Compliance**
+* How would you translate changing legal obligations into testable technical controls, evidence artifacts, monitoring requirements, and accountable ownership?
+* How would you design an AI compliance program for a global platform subject to different privacy, data-residency, and sector-specific requirements?
+* How would you demonstrate traceability from an AI risk assessment to implemented controls, test results, incidents, and corrective actions?
+* How would you manage compliance when a third-party model provider changes its terms, capabilities, training disclosures, or data-processing practices?
+
+**Human Oversight**
+* How would you design human oversight for high-impact decisions when reviewers face automation bias, high workload, and limited time?
+* How would you define override authority, escalation thresholds, separation of duties, and accountability across AI and human decision-makers?
+* How would you prevent human approval from becoming a superficial step in which reviewers approve actions without adequate evidence?
+* How would you evaluate whether human oversight meaningfully reduces harm rather than simply increasing workflow latency?

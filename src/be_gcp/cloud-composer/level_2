@@ -1,0 +1,30 @@
+* How would you design a Cloud Composer architecture for orchestrating hundreds of enterprise data pipelines?
+* How would you organize DAGs for multiple business domains while minimizing operational coupling?
+* How would you design a reliable workflow that coordinates BigQuery, Dataflow, Cloud Storage, and external APIs?
+* How would you implement idempotent tasks so that retries do not produce duplicate business records?
+* How would you design a DAG to recover safely after a partial failure?
+* How would you handle backfills for months of historical data without overwhelming downstream systems?
+* How would you design dependency management when one pipeline must wait for another pipeline's successful completion?
+* How would you prevent duplicate processing when a DAG is retried or manually triggered multiple times?
+* How would you choose appropriate Airflow pools, queues, and concurrency limits for high-volume workflows?
+* How would you optimize Cloud Composer performance when the scheduler falls behind?
+* How would you investigate excessive scheduler load caused by hundreds of frequently parsed DAG files?
+* How would you decide between dynamic task mapping and generating tasks during DAG parsing?
+* How would you design workflows for large numbers of dynamically discovered input files?
+* How would you manage DAG code, Python dependencies, and provider packages across Composer environment upgrades?
+* How would you safely upgrade a Cloud Composer environment while minimizing pipeline downtime?
+* How would you design secure authentication for DAGs that access multiple Google Cloud projects?
+* How would you manage secrets without storing credentials in DAG files or plain-text Airflow variables?
+* How would you implement least-privilege IAM for Cloud Composer environments and task execution?
+* How would you isolate workloads with different security, performance, and availability requirements?
+* How would you design data quality checks and prevent downstream processing when validation fails?
+* How would you implement a data freshness SLA across multiple dependent pipelines?
+* How would you build a centralized retry, alerting, and incident-management strategy for DAG failures?
+* How would you design a workflow that handles late-arriving events and out-of-order source data?
+* How would you orchestrate long-running asynchronous jobs without keeping worker tasks occupied unnecessarily?
+* How would you implement cross-DAG dependencies without creating tightly coupled workflows?
+* How would you design disaster recovery for DAG definitions, environment configuration, connections, and variables?
+* How would you troubleshoot memory exhaustion or worker failures during large data-processing tasks?
+* How would you optimize Cloud Composer costs without compromising reliability or recovery capabilities?
+* How would you implement CI/CD for DAG code with automated linting, unit tests, integration tests, and controlled promotion?
+* How would you compare Cloud Composer with Workflows, Cloud Scheduler, and Dataflow for different orchestration requirements?

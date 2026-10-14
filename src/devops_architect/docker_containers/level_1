@@ -1,0 +1,30 @@
+* Explain how the Docker client communicates with the Docker daemon.
+* How does Docker use container runtimes to create and run containers?
+* What happens internally when you execute `docker run`?
+* How would you choose an appropriate base image for a Java Spring Boot application?
+* What is the difference between an image tag and an image digest?
+* How do Docker image layers improve build and distribution efficiency?
+* How does Docker's build cache work, and what causes cache invalidation?
+* How would you order Dockerfile instructions to maximize build-cache reuse?
+* What are the risks of copying the entire source directory before installing dependencies?
+* How do multi-stage builds reduce the size of production images?
+* How would you create a Docker image for a Java application using a multi-stage build?
+* How would you build a secure and efficient Docker image for a Node.js application?
+* What is the difference between `COPY` and `ADD` in a Dockerfile?
+* How do `EXPOSE` and published ports differ?
+* What is the difference between bridge, host, none, and overlay networking?
+* How can containers communicate with one another using Docker networks?
+* How would you troubleshoot a container that cannot connect to another container by service name?
+* How do named volumes differ from anonymous volumes and bind mounts?
+* How would you persist database data across container recreation?
+* How would you configure a container to access a private registry securely?
+* How would you scan Docker images for operating-system and application dependency vulnerabilities?
+* What is the difference between image scanning and runtime container security monitoring?
+* How would you reduce the attack surface of a container image?
+* How do Linux capabilities, seccomp, and namespaces contribute to container security?
+* How would you configure CPU and memory limits for a container?
+* What happens when a container exceeds its configured memory limit?
+* How do Docker health checks differ from container process status?
+* How would you configure a health check for a Spring Boot application?
+* How do restart policies affect container lifecycle and recovery?
+* What are the advantages and limitations of rootless Docker and distroless images?

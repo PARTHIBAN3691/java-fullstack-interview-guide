@@ -1,0 +1,30 @@
+* Explain the complete Angular Router navigation lifecycle, including route recognition, guards, resolvers, activation, and navigation events.
+* How does Angular determine which route to match when multiple route configurations could match a URL?
+* How does route configuration order affect URL matching?
+* How would you design a routing architecture for a large enterprise Angular application?
+* How do you implement role-based authorization for nested routes?
+* How do you prevent unauthorized route activation while keeping backend APIs secure?
+* What are the limitations of using route guards as the only security mechanism?
+* How do CanMatch and CanActivate differ in lazy-loading scenarios?
+* How would you implement a functional route guard using inject()?
+* How do you handle asynchronous authentication checks inside route guards?
+* How do you redirect unauthenticated users to login and preserve their intended destination?
+* How would you implement a resolver that handles API failures and redirects appropriately?
+* What happens when a resolver returns an Observable that never completes?
+* How do you coordinate multiple resolvers for a route?
+* How do you prevent duplicate API calls between a resolver and the destination component?
+* How do route-level providers affect dependency injection and service instances?
+* How do route reuse strategies affect component creation and destruction?
+* How would you implement a custom RouteReuseStrategy to preserve component state?
+* What are the trade-offs of retaining inactive routed components?
+* How do you handle unsaved form changes when a user navigates away?
+* How would you implement a CanDeactivate guard for a reactive form?
+* How do lazy loading and preloading strategies work together?
+* How would you implement a custom preloading strategy based on route metadata?
+* How do you manage route state when navigating between pages with the same component?
+* How would you handle deep links and browser refreshes in a production deployment?
+* How do you configure server fallback rules for Angular routes?
+* How would you design URL structures for multi-tenant applications?
+* How do you handle query parameter changes without unnecessarily reinitializing a component?
+* How would you diagnose memory leaks caused by subscriptions to router events?
+* How do you instrument Angular Router navigation for performance monitoring and troubleshooting?

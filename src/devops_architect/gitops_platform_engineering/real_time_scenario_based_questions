@@ -1,0 +1,97 @@
+
+**GitOps Principles**
+* A developer manually changes a production Deployment to resolve an urgent incident, but the GitOps controller immediately reverts the change. How would you restore service, preserve auditability, and incorporate the permanent fix into Git?
+* A faulty configuration commit causes hundreds of services to fail across multiple clusters. How would you contain the rollout, identify affected services, roll back safely, and prevent a repeat?
+* An emergency production fix works, but the Git repository still contains the previous configuration. How would you reconcile the difference and establish a safe emergency-change process?
+* A security audit discovers that some production resources cannot be traced to an approved Git commit. How would you investigate unmanaged resources and establish complete change provenance?
+
+**Argo CD**
+* Argo CD reports applications as Synced, but users receive errors because the workloads are not ready. How would you investigate the difference between synchronization status, Kubernetes health, and business health?
+* After upgrading Argo CD, reconciliation latency increases and hundreds of applications remain OutOfSync. How would you isolate controller saturation, manifest differences, and API-server pressure?
+* An incorrect pruning configuration deletes resources that should have remained in production. How would you restore the resources, protect critical objects, and test deletion behavior safely?
+* Argo CD loses access to its Git repository during a regional outage. How would you preserve running workloads, restore controller access, and avoid unintended changes during recovery?
+
+**Flux**
+* Flux repeatedly fails to reconcile because an upstream repository contains an invalid manifest. How would you identify the blocking change, restore the last valid configuration, and prevent bad commits from reaching production?
+* After rotating Git credentials, Flux can no longer retrieve its source. How would you recover authentication without exposing credentials or weakening repository security?
+* A Flux upgrade causes custom resources to reconcile in the wrong order. How would you investigate dependency configuration and restore the correct deployment sequence?
+* A large repository update creates reconciliation delays across many clusters. How would you reduce the blast radius and improve controller capacity and rollout strategy?
+
+**Declarative Infrastructure**
+* A Terraform apply fails after creating networking resources but before creating the database. A retry reports conflicting resources. How would you recover state and finish provisioning without destructive recreation?
+* An engineer makes an emergency cloud-console change, and the next infrastructure plan proposes reversing it. How would you investigate the drift, preserve the intended fix, and restore declarative ownership?
+* A shared infrastructure module change breaks dozens of environments. How would you contain the rollout, identify incompatible consumers, and introduce safer versioning and testing?
+* A production infrastructure state file becomes inaccessible during an incident. How would you recover state securely and prevent concurrent or conflicting changes during recovery?
+
+**Kubernetes GitOps**
+* A CRD upgrade is committed before the operator version that supports it. Reconciliation fails across several clusters. How would you restore compatibility and design safer dependency sequencing?
+* A new NetworkPolicy blocks application traffic after a GitOps rollout. How would you identify the responsible change, restore connectivity, and test policies before future releases?
+* A manifest change succeeds in staging but fails in production because of cluster-specific differences. How would you isolate the differences and improve environment validation?
+* Two controllers repeatedly overwrite the same Kubernetes field, causing deployment instability. How would you identify ownership conflicts and establish a single source of authority?
+
+**Platform Engineering**
+* Developers report that the platform takes several days to provision a simple service, while the platform team believes its automation is working correctly. How would you investigate the complete developer journey and prioritize improvements?
+* Application teams bypass the golden path because it does not support a required workload. How would you identify the missing capability and improve adoption without weakening standards?
+* The platform team becomes a bottleneck for routine infrastructure changes. How would you identify manual approval dependencies and introduce safe self-service workflows?
+* A platform feature is widely adopted but increases deployment failures and support tickets. How would you evaluate whether to roll it back, redesign it, or improve onboarding?
+
+**Internal Developer Platform**
+* A developer requests a new service through the IDP, but repository creation succeeds while database provisioning fails. How would you resume or compensate the workflow and prevent orphaned resources?
+* The IDP becomes unavailable during a production deployment, while existing applications continue running. How would you restore platform functionality without unnecessarily disrupting workloads?
+* One tenant consumes all available provisioning capacity, delaying requests from other teams. How would you introduce quotas, fairness, and capacity isolation?
+* A platform upgrade breaks templates used by hundreds of services. How would you roll back the platform, protect existing services, and introduce backward-compatible template evolution?
+
+**Developer Self-Service**
+* Developers repeatedly submit provisioning requests because the UI times out before showing completion. Duplicate environments are created. How would you make requests idempotent and expose reliable operation status?
+* A developer uses a self-service API to provision a database outside the approved network boundary. How would you contain the exposure and enforce policy at the correct layers?
+* Temporary test environments accumulate and increase cloud costs significantly. How would you implement ownership, expiration, exception handling, and automated cleanup?
+* A provisioning workflow partially succeeds, then fails because a cloud API is rate-limited. How would you retry safely, resume progress, and provide actionable feedback to the developer?
+
+**Golden Paths**
+* A golden-path template introduces a vulnerable dependency into hundreds of newly generated services. How would you identify affected repositories, mitigate the risk, and improve template validation?
+* Teams remain on an older template version because migration is difficult. How would you prioritize upgrades and provide a practical migration path?
+* A new security requirement conflicts with a team's application-specific configuration. How would you distinguish mandatory controls from optional conventions and resolve the conflict?
+* A golden-path upgrade changes deployment defaults and causes production rollout failures. How would you investigate the change, roll back safely, and add regression coverage?
+
+**Platform APIs**
+* A platform API times out after creating cloud resources but before returning the resource identifiers. Clients retry and create duplicates. How would you recover existing operations and implement idempotency?
+* A provisioning API creates a database but fails to configure its network rules. How would you manage partial failure, retries, cleanup, and final state reporting?
+* A compromised developer token invokes an API to create privileged infrastructure. How would you contain the incident, investigate audit records, and improve authorization boundaries?
+* A platform API upgrade breaks an older CLI used by several engineering teams. How would you restore compatibility and implement versioned contracts and deprecation controls?
+
+**Developer Portals**
+* The service catalog lists an outdated owner for a critical service, delaying incident response. How would you correct the metadata and prevent stale ownership from recurring?
+* Developers can view deployment information but cannot determine why a rollout failed. How would you integrate actionable diagnostics while protecting sensitive cluster data?
+* A portal migration breaks service templates and documentation links. How would you restore developer workflows and implement a safer migration strategy?
+* Teams report that the portal contains duplicate services and conflicting metadata. How would you establish authoritative data sources and reconcile catalog entities?
+
+**Backstage**
+* A Backstage software template creates repositories successfully but fails during GitOps registration. How would you trace the workflow, recover partial operations, and improve error handling?
+* A custom plugin is compromised and begins requesting privileged infrastructure actions. How would you contain the incident, audit its activity, and tighten authorization?
+* Backstage catalog ingestion becomes slow after onboarding thousands of repositories. How would you identify bottlenecks and improve processing and refresh behavior?
+* A Backstage upgrade breaks a custom plugin used for production deployment. How would you restore functionality and introduce compatibility tests for future upgrades?
+
+**Environment Provisioning**
+* A provisioning workflow creates a network and database but fails before application deployment. Repeated retries create additional resources. How would you recover and make each step safely repeatable?
+* A cleanup job deletes a shared resource used by another environment. How would you investigate ownership metadata and implement dependency-aware deletion safeguards?
+* A new environment is provisioned successfully but violates encryption and network policies. How would you remediate it and enforce compliance continuously?
+* A cloud provider experiences intermittent API failures, leaving hundreds of environment requests in an unknown state. How would you reconcile actual resources with platform workflow records?
+
+**Self-Service Deployment**
+* A deployment is synchronized by GitOps, but readiness checks fail and production traffic starts returning errors. How would you stop promotion, restore the previous healthy version, and investigate the failure?
+* A database schema migration succeeds, but the new application version fails and the old version cannot use the changed schema. How would you restore compatibility and improve deployment sequencing?
+* Two developers trigger releases for the same service simultaneously, causing conflicting deployment changes. How would you serialize or coordinate releases safely?
+* An emergency release bypasses normal approval controls and later causes a production incident. How would you restore safe operations while retaining a controlled emergency pathway?
+
+**Platform Observability**
+* GitOps reconciliation latency rises across all clusters, but application metrics remain healthy. How would you identify the platform bottleneck before teams are unable to deploy?
+* Developers report that provisioning takes too long, but each individual cloud API appears healthy. How would you trace end-to-end workflow duration and identify hidden waits or retries?
+* A platform outage affects multiple teams, but centralized logging is also unavailable. How would you preserve enough independent telemetry to diagnose and recover?
+* Platform dashboards show high deployment success rates, yet developers report frequent failed releases. How would you investigate metric definitions, denominator errors, and missing business outcomes?
+
+**Platform Security**
+* A compromised CI runner obtains a production deployment credential with broad cluster access. How would you revoke access, assess impact, and redesign short-lived credentials and workload identity?
+* A GitOps repository contains plaintext secrets in its commit history. How would you contain exposure, rotate affected credentials, and prevent recurrence?
+* A developer discovers a way to bypass admission policies through a self-service deployment path. How would you close the gap and verify enforcement across every deployment entry point?
+* A golden-path template uses an outdated container image with a critical vulnerability. How would you block further deployments, identify running instances, and coordinate remediation?
+* A Backstage plugin can provision resources across tenants because it uses a shared privileged service account. How would you isolate tenant permissions and audit prior actions?

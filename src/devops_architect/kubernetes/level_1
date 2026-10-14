@@ -1,0 +1,35 @@
+* Explain how the API Server, Scheduler, Controller Manager, and etcd work together when a Pod is created.
+* What happens internally when you execute `kubectl apply` on a Deployment manifest?
+* How does the Kubernetes Scheduler select a suitable worker node for a Pod?
+* How do Kubernetes controllers reconcile the actual cluster state with the desired state?
+* What happens when etcd becomes unavailable?
+* How would you troubleshoot a worker node that changes to the NotReady state?
+* How does a ReplicaSet maintain the desired number of Pods?
+* How does a Deployment perform a rolling update?
+* What is the difference between Recreate and RollingUpdate deployment strategies?
+* When would you choose a StatefulSet instead of a Deployment?
+* How does a DaemonSet ensure that Pods run on eligible worker nodes?
+* How do Jobs and CronJobs handle retries and failed executions?
+* How does a Kubernetes Service route traffic to the correct Pods?
+* How does Ingress route external HTTP and HTTPS traffic to services?
+* What is the difference between an Ingress resource and an Ingress controller?
+* How would you manage environment-specific configuration using ConfigMaps and Secrets?
+* How are Kubernetes Secrets stored, and how can access to them be restricted?
+* How do namespaces, labels, and selectors help organize a large Kubernetes cluster?
+* How would you configure resource requests and limits for a Java Spring Boot application?
+* What happens when a container exceeds its CPU limit or memory limit?
+* How do startup, readiness, and liveness probes differ?
+* How would you troubleshoot a Pod that repeatedly restarts because of failed liveness probes?
+* How does the Horizontal Pod Autoscaler calculate the desired replica count?
+* What metrics and prerequisites are required for CPU-based HPA scaling?
+* How does the Vertical Pod Autoscaler differ from the Horizontal Pod Autoscaler?
+* How does the Cluster Autoscaler decide when to add or remove worker nodes?
+* How do PersistentVolumes, PersistentVolumeClaims, and StorageClasses work together?
+* How would you configure NetworkPolicies to restrict communication between frontend, backend, and database Pods?
+* How does Kubernetes RBAC control access to cluster resources?
+* How do Helm charts, values files, and releases work?
+* What is the difference between a Helm chart and a Kubernetes manifest?
+* How do CRDs and Operators extend Kubernetes functionality?
+* How would you secure a Kubernetes cluster against unauthorized access and vulnerable container images?
+* What are the common challenges in operating applications across multiple Kubernetes clusters?
+* How would you monitor application health, resource utilization, and deployment status in Kubernetes?

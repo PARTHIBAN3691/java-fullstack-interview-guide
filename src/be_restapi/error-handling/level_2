@@ -1,0 +1,30 @@
+* How would you design a centralized error-handling architecture for a large enterprise REST API platform?
+* How do you define a consistent error taxonomy across multiple microservices?
+* How do you design a standard error response based on RFC 9457 Problem Details for HTTP APIs?
+* What are the advantages of using ProblemDetail in Spring Boot?
+* How do you map domain-specific business errors to HTTP status codes consistently?
+* How do you prevent internal exceptions from leaking database details, stack traces, or secrets?
+* How do you design an exception hierarchy for a large Spring Boot application?
+* How do you distinguish retryable exceptions from non-retryable exceptions?
+* How do you implement retries with exponential backoff and jitter?
+* How do you prevent retry storms when a downstream service is failing?
+* How do you combine retries, timeouts, and circuit breakers for external API calls?
+* How do you handle partial failures in a microservices architecture?
+* How do you design error handling for distributed transactions and compensating actions?
+* How do you handle errors when a request succeeds in one service but fails in another?
+* How do you prevent duplicate operations when a client retries a request after a timeout?
+* How do you implement idempotency for payment and order APIs?
+* How do you handle errors in asynchronous processing when the original HTTP request has already completed?
+* How do you design dead-letter queues and retry policies for failed messages?
+* How do you handle cancellation and timeout propagation across multiple downstream services?
+* How do you preserve the original cause of an exception while adding business context?
+* How do you prevent sensitive data from appearing in application logs and distributed traces?
+* How do you implement correlation IDs and distributed tracing for failed API requests?
+* How do you handle errors consistently at the API gateway and individual microservice layers?
+* How do you distinguish client-caused errors from infrastructure failures for monitoring and alerting?
+* How do you design error responses that are useful to clients without exposing implementation details?
+* How do you handle database deadlocks, optimistic locking failures, and transaction rollbacks?
+* How do you manage error response compatibility when evolving a versioned REST API?
+* How do you test failure scenarios such as network partitions, dependency outages, and partial service failures?
+* How do you monitor error rates, latency, retry counts, and circuit-breaker states in production?
+* How would you design a resilient error-handling framework for a high-throughput financial REST API?

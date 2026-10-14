@@ -1,0 +1,30 @@
+* A REST API becomes slow in production, but CPU and memory usage appear normal. How would you investigate the issue?
+* One microservice returns HTTP 500 errors intermittently. How would you identify the root cause using logs, metrics, and traces?
+* A request passes through six microservices, and the overall response time increases significantly. How would you locate the slowest dependency?
+* Logs from different services cannot be correlated for the same request. How would you fix the logging and context propagation design?
+* Distributed traces stop at an asynchronous Kafka consumer. How would you identify and correct the missing trace context?
+* Prometheus memory usage increases continuously because of excessive metric labels. How would you diagnose and resolve the cardinality problem?
+* Grafana dashboards show inconsistent request counts across services. How would you investigate the discrepancy?
+* A downstream payment service becomes slow, causing timeouts across multiple services. How would observability help detect and mitigate the cascading failure?
+* A service passes its liveness check but cannot connect to the database. How would you improve its health checks?
+* A Kubernetes deployment repeatedly restarts a service because its liveness probe fails during startup. How would you correct the configuration?
+* JVM garbage collection pauses cause intermittent API latency spikes. Which metrics and traces would you analyze?
+* A Kafka consumer group experiences growing lag even though the application is running. How would you investigate the bottleneck?
+* A production incident generates millions of log entries and increases logging costs. How would you improve the logging strategy?
+* An alert fires repeatedly during normal traffic fluctuations. How would you reduce alert noise without hiding real incidents?
+* A service reports a low average response time, but users experience occasional long delays. How would you investigate tail latency?
+* A database connection pool becomes exhausted during peak traffic. What telemetry would help identify the cause?
+* A scheduled job fails silently, and no alert is generated. How would you improve its observability?
+* An external API times out, but the application logs do not show whether the request reached the provider. How would you investigate?
+* A new application release increases error rates without increasing CPU usage. How would you compare telemetry between versions?
+* A trace contains duplicate spans and inconsistent service names. How would you troubleshoot instrumentation?
+* Sensitive customer information appears in centralized application logs. How would you prevent further exposure and handle the incident?
+* A telemetry collector becomes unavailable, causing gaps in metrics and traces. How would you design for resilience?
+* A high-volume service generates too many traces for the tracing backend to process. How would you introduce an appropriate sampling strategy?
+* A multi-tenant platform needs observability without allowing one tenant to access another tenant's telemetry. How would you design access controls?
+* An API has a 99.9% availability SLO, and its error budget is being consumed rapidly. How would you investigate and prioritize remediation?
+* Two dependent services report healthy status, but requests between them fail because of network policies. How would you diagnose the issue?
+* A memory leak develops gradually over several days. Which metrics, logs, and diagnostic tools would you use?
+* An application reports successful requests even though downstream processing fails asynchronously. How would you improve end-to-end visibility?
+* During an incident, logs show symptoms but do not identify the failing dependency. What additional instrumentation would you introduce?
+* You are responsible for observability across a large microservices platform. How would you establish standards, dashboards, alerting, and incident-response practices?

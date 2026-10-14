@@ -1,0 +1,30 @@
+* Write a Java program to generate a concise project status summary from a list of tasks.
+* Implement a Java class that stores project updates with status, owner, risks, and next steps.
+* Write a Java program to send notifications when a task changes from IN_PROGRESS to BLOCKED.
+* Implement a notification service using interfaces so that email, SMS, and chat notifications can be supported.
+* Write a Java program demonstrating the Observer pattern for broadcasting project status updates.
+* Implement the Strategy pattern to generate technical summaries for developers and business stakeholders.
+* Write a Java method that converts a list of project tasks into a summary grouped by status.
+* Use Java streams to identify overdue tasks and generate an escalation report.
+* Implement a Java class that records meeting decisions, action items, owners, and due dates.
+* Write a Java program to validate that every meeting action item has an owner and due date.
+* Implement a simple escalation workflow for unresolved blockers using Java enums and classes.
+* Write a Java program that prioritizes stakeholder messages based on severity and urgency.
+* Implement a Java service that prevents duplicate notifications for the same incident update.
+* Write a Java program to maintain an audit trail of project status changes.
+* Implement a message formatter that creates concise incident updates from structured incident data.
+* Write unit tests using JUnit 5 for a project notification service.
+* Use Mockito to test that the correct stakeholders are notified when a release is delayed.
+* Implement a Java method that summarizes task completion percentages for a weekly status report.
+* Write a Java program to identify tasks that have no updates for a specified number of days.
+* Implement a meeting action tracker with methods to create, update, complete, and list action items.
+* Write a Java program using CompletableFuture to collect status updates from multiple services concurrently.
+* Implement exception handling for a notification service when an external messaging provider fails.
+* Write a thread-safe Java component that records incident updates from multiple concurrent sources.
+* Implement a retry mechanism for transient failures in sending stakeholder notifications.
+* Write a Java program to redact sensitive information from incident messages before distribution.
+* Implement role-based filtering so that technical details are shared only with authorized audiences.
+* Write a Java method that converts detailed technical risks into a structured summary containing impact, probability, and mitigation.
+* Implement a Java class that detects conflicting project updates and flags them for review.
+* Write a REST API using Spring Boot to create and retrieve project status updates.
+* Design a Java-based communication management system that supports announcements, stakeholder groups, acknowledgments, and an audit history.

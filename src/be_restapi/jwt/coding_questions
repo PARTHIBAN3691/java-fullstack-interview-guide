@@ -1,0 +1,30 @@
+* Write a Java method that generates a JWT containing subject, issuer, and expiration claims.
+* Write a Java method that parses a JWT and extracts its claims.
+* Write a Java method that validates a JWT signature using a shared HS256 secret.
+* Write a Java method that validates a JWT using an RSA public key.
+* Write a Spring Boot REST endpoint that issues an access token after successful authentication.
+* Write a Spring Security configuration that protects REST endpoints using JWT authentication.
+* Write a JWT authentication filter that extracts a bearer token from the Authorization header.
+* Write a Spring Boot filter that validates token expiration and returns HTTP 401 for expired tokens.
+* Write a Java method that validates the issuer and audience claims of a JWT.
+* Write a Java method that rejects JWTs using algorithms outside an explicit allowlist.
+* Write a Spring Boot endpoint that permits public access to login and registration but protects other endpoints.
+* Write a Spring Security configuration that applies role-based authorization using JWT claims.
+* Write a Java method that extracts a user's roles from a validated JWT and maps them to Spring Security authorities.
+* Write a Spring Boot authentication service that issues short-lived access tokens and refresh tokens.
+* Write a refresh-token endpoint that validates the refresh token and issues a new access token.
+* Write a Java implementation of refresh-token rotation with reuse detection.
+* Write a service that revokes refresh tokens when a user logs out.
+* Write a JWT validation component that supports public-key retrieval from a JWKS endpoint.
+* Write a Java implementation that caches JWKS signing keys and refreshes them when an unknown key ID is encountered.
+* Write a Spring Boot exception handler that returns consistent HTTP 401 and HTTP 403 responses.
+* Write a unit test that verifies a valid JWT is accepted.
+* Write a unit test that verifies an expired JWT is rejected.
+* Write a unit test that verifies a JWT with a tampered signature is rejected.
+* Write a unit test that verifies tokens with incorrect issuer or audience values are rejected.
+* Write an integration test that verifies public and protected REST endpoints using JWT authentication.
+* Write a concurrency test that submits simultaneous refresh requests using the same refresh token.
+* Write a Java service that implements token revocation using a denylist with token expiration.
+* Write a Spring Boot component that validates tenant claims and prevents cross-tenant authorization.
+* Write a Java method that redacts bearer tokens from application logs.
+* Write a complete Spring Boot JWT authentication solution with token generation, validation, role-based authorization, refresh-token rotation, and automated tests.

@@ -1,0 +1,30 @@
+* How would you prove the correctness of Merge Sort using mathematical induction?
+* How would you derive the recurrence relation and time complexity of Merge Sort?
+* How does the choice of pivot affect Quick Sort performance?
+* How would you prevent Quick Sort from degrading to O(n²) on adversarial input?
+* What is randomized Quick Sort, and how does random pivot selection improve expected performance?
+* How does three-way partitioning improve Quick Sort when an array contains many duplicate values?
+* How would you implement an iterative Quick Sort using an explicit stack?
+* How would you implement an iterative Merge Sort without recursion?
+* How would you optimize Merge Sort for small subarrays?
+* What is TimSort, and how does it exploit existing runs in partially sorted data?
+* Why does Java use different sorting strategies for primitive arrays and object arrays?
+* How does Dual-Pivot Quick Sort differ from traditional Quick Sort?
+* How would you implement an external sorting algorithm for data that does not fit into memory?
+* How would you perform a multiway merge of sorted files efficiently?
+* How would you sort billions of records when only limited RAM is available?
+* How would you count inversions in an array in O(n log n) time?
+* How would you find the Kth largest element using Quickselect, and what is its worst-case complexity?
+* How would you implement a deterministic selection algorithm with worst-case linear time complexity?
+* How would you sort an array of integers in the range 0 to K using Counting Sort?
+* How would you adapt Radix Sort to handle negative integers correctly?
+* How would you compare the performance of Radix Sort and comparison-based sorting for large integer datasets?
+* How would you sort a large collection of strings efficiently?
+* How would you sort records using multiple keys while preserving stable ordering?
+* How would you find the smallest range containing at least one element from each of K sorted arrays?
+* How would you find the median of two sorted arrays without merging them?
+* How would you sort an array containing many repeated values while minimizing comparisons?
+* How would you determine whether a sorting algorithm is stable through a practical test?
+* How would you sort a linked list efficiently, and why is Merge Sort often preferred for linked lists?
+* How would you design a parallel sorting algorithm for a large multicore Java application?
+* How would you benchmark sorting algorithms fairly while accounting for JVM warm-up, allocation, and input distribution?

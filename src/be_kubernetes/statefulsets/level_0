@@ -1,0 +1,30 @@
+* What is a StatefulSet in Kubernetes?
+* Why do we need StatefulSets in Kubernetes?
+* What are the key features of a StatefulSet?
+* What is the difference between a StatefulSet and a Deployment?
+* What is a Pod identity in a StatefulSet?
+* How does a StatefulSet provide stable network identities?
+* What is a headless Service?
+* Why is a headless Service used with StatefulSets?
+* What is a volumeClaimTemplate in a StatefulSet?
+* How does persistent storage work with StatefulSets?
+* What is the purpose of a PersistentVolumeClaim in a StatefulSet?
+* What is the difference between a StatefulSet and a ReplicaSet?
+* How are StatefulSet Pod names generated?
+* What is the purpose of the serviceName field in a StatefulSet?
+* What is an ordinal index in a StatefulSet?
+* How does Kubernetes create StatefulSet Pods?
+* What is the default Pod creation order in a StatefulSet?
+* What is the purpose of the replicas field in a StatefulSet?
+* How does a StatefulSet handle Pod deletion?
+* What happens to persistent volumes when a StatefulSet Pod is deleted?
+* What is the purpose of the podManagementPolicy field?
+* What is the difference between OrderedReady and Parallel Pod management?
+* What is the purpose of updateStrategy in a StatefulSet?
+* What is the difference between RollingUpdate and OnDelete strategies?
+* How does a StatefulSet handle scaling?
+* Can StatefulSet Pods have different persistent volumes?
+* How does DNS work for StatefulSet Pods?
+* What are common applications deployed using StatefulSets?
+* Can a StatefulSet run without persistent storage?
+* How do you inspect StatefulSet Pods using kubectl?

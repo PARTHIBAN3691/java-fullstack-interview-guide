@@ -1,0 +1,30 @@
+* Explain how the CSS transition lifecycle works when a property value changes.
+* How does the browser determine which properties should transition when styles change?
+* Explain the relationship between computed values and CSS transitions.
+* How does the browser handle a new transition when an existing transition is still running?
+* What happens when a transition is interrupted and then reversed?
+* Explain transition reversal shortening and how it affects perceived animation duration.
+* How do transition-property, transition-duration, transition-delay, and transition-timing-function work together?
+* How does the order of values in the transition shorthand affect property interpretation?
+* What happens when the number of transition properties differs from the number of duration values?
+* How does the browser match multiple transition values when their list lengths differ?
+* Why can transitioning height from auto to a fixed value be difficult?
+* How can intrinsic-size interpolation be used to transition between auto and explicit dimensions in supporting browsers?
+* What is the difference between transitioning layout properties and composited properties?
+* Why are transform and opacity often preferred for performance-sensitive transitions?
+* How can transitions trigger layout, paint, and compositing work?
+* What are the performance implications of transitioning width, height, margin, or top?
+* How can will-change influence rendering performance, and why should it be used carefully?
+* How do CSS transitions interact with stacking contexts and transform properties?
+* How can transitions be coordinated across multiple nested elements?
+* How can CSS transitions be combined with JavaScript events without creating timing bugs?
+* How can transitionend events behave when multiple properties are transitioning?
+* Why might transitionend not fire for a particular element?
+* How should transitioncancel events be handled in interactive interfaces?
+* How can you prevent stale JavaScript callbacks from running after a transition is canceled?
+* How do transitions behave when an element is removed from the DOM before completion?
+* How can transitions be implemented accessibly for users who prefer reduced motion?
+* What are the limitations of CSS transitions compared with CSS keyframe animations?
+* How do transitions interact with cascade layers and dynamically changing styles?
+* How would you debug a transition that works in one browser but fails in another?
+* How would you design a reusable transition system for a large-scale web application?

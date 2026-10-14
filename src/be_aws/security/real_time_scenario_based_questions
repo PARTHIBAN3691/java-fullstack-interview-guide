@@ -1,0 +1,21 @@
+
+* A Java application deployed on EC2 unexpectedly receives `AccessDeniedException` when accessing S3. How would you investigate the IAM and resource-policy configuration?
+* A developer accidentally commits AWS access keys to a Git repository. What immediate containment and long-term preventive actions would you take?
+* A production microservice has administrator-level IAM permissions. How would you reduce its permissions without disrupting business functionality?
+* An application retrieves database credentials from Secrets Manager, but the credentials appear in application logs. How would you contain and remediate the exposure?
+* A Java application running in a private subnet cannot access AWS KMS. How would you troubleshoot connectivity and authorization?
+* A security group allows inbound access from `0.0.0.0/0` to a database port. How would you assess and remediate the risk?
+* A public API receives a sudden increase in malicious requests. How would you use API Gateway, AWS WAF, throttling, and monitoring to mitigate the attack?
+* A security alert indicates unusual API calls made using an EC2 instance role. How would you investigate whether the credentials were compromised?
+* An S3 bucket containing customer data was accidentally made public. What steps would you take to restrict access, assess exposure, and prevent recurrence?
+* A Java application is vulnerable to SSRF and runs on EC2 with an attached IAM role. How could the vulnerability lead to credential theft, and how would you mitigate it?
+* A service uses static AWS credentials stored in application properties. How would you migrate it to temporary credentials using an IAM role?
+* A cross-account application integration fails despite the target account granting access. How would you investigate trust policies, permissions, and explicit denies?
+* An application uses an outdated TLS configuration. How would you enforce secure protocols and cipher suites across the application and load balancer?
+* A developer has permission to decrypt production data through KMS but should not have that access. How would you restrict decryption permissions?
+* A container image containing a critical vulnerability has already been deployed to production. How would you contain the risk and improve the release process?
+* Multiple microservices share the same database credentials. How would you redesign secret ownership, access policies, and credential rotation?
+* CloudTrail shows repeated failed authentication attempts followed by a successful login from an unusual source. How would you investigate and respond?
+* A multi-tenant Java application returns one customer's data to another customer under certain requests. How would you investigate and prevent the authorization flaw?
+* A CI/CD pipeline exposes production secrets in build logs. How would you redesign secret injection, masking, and deployment permissions?
+* A company requires proof that sensitive data is encrypted and that production access is auditable. How would you demonstrate compliance using AWS security controls?

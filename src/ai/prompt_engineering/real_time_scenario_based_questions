@@ -1,0 +1,83 @@
+**Prompt Engineering Fundamentals**
+* An AI assistant produces inconsistent answers for similar customer questions. How would you investigate prompt ambiguity, context differences, model settings, and evaluation coverage?
+* A prompt works well in a proof of concept but fails with production inputs containing misspellings, abbreviations, and incomplete details. How would you diagnose and improve its robustness?
+* A business stakeholder keeps adding instructions to a prompt until it becomes excessively long and expensive. How would you simplify the prompt while preserving required behavior?
+* A prompt change improves response quality for one workflow but breaks another workflow that shares the same instructions. How would you isolate the conflict and prevent future regressions?
+
+**Zero-Shot Prompting**
+* A zero-shot ticket classifier performs well on common issues but frequently misclassifies new categories. How would you investigate instruction clarity, label definitions, and the need for examples?
+* A zero-shot model forces every incoming request into one of five categories even when none applies. How would you implement and evaluate an abstention or unknown-category option?
+* A zero-shot prompt works in English but produces inconsistent classifications in Tamil and other supported languages. How would you investigate language coverage and evaluation data?
+* A traditional classifier and a zero-shot LLM achieve similar quality, but the LLM costs substantially more. How would you compare their business value and deployment trade-offs?
+
+**Few-Shot Prompting**
+* A few-shot classifier performs well on test examples similar to its demonstrations but fails on uncommon customer requests. How would you improve example coverage and test generalization?
+* Changing the order of examples changes the model's classification. How would you quantify order sensitivity and stabilize performance?
+* A prompt becomes too long after adding more examples, increasing cost and causing context-limit errors. How would you select a smaller, more representative example set?
+* An example accidentally contains a confidential customer record. How would you remove the exposure, investigate prompt logs, and prevent recurrence?
+
+**Chain-of-Thought Prompting**
+* An AI assistant explains a multi-step calculation convincingly but returns the wrong total. How would you investigate the reasoning failure and introduce deterministic calculation and verification?
+* A reasoning-oriented prompt increases response time and token usage without improving correctness. How would you compare direct answering, decomposition, and tool-assisted execution?
+* A multi-step prompt chain fails because an early stage extracts the wrong information, which later stages treat as correct. How would you add validation and error isolation?
+* A reviewer asks for an explanation of an AI decision, but the generated explanation does not match the evidence used. How would you improve explanation faithfulness and independently verify the decision?
+
+**Role-Based and System Prompting**
+* A customer-support assistant begins providing answers outside its intended scope after a user asks it to ignore previous instructions. How would you investigate the issue and improve layered defenses?
+* Two teams use the same system prompt but receive different behavior because their applications construct context differently. How would you standardize instruction assembly and regression testing?
+* A system prompt tells the assistant not to reveal confidential information, but the application includes unnecessary secrets in its context. How would you reduce exposure and enforce access control?
+* A business rule changes, and several AI assistants continue following outdated instructions. How would you manage prompt ownership, updates, testing, and rollout?
+
+**Structured Output and JSON Prompting**
+* A model returns valid JSON, but several required invoice fields contain invented values. How would you prevent fabrication and validate values against the source document?
+* A downstream service fails because the model changes a field from a number to a string. How would you enforce schema validation and manage schema compatibility?
+* An LLM occasionally wraps JSON in Markdown fences, causing parsing failures. How would you address the problem without relying on fragile string manipulation?
+* A generated JSON response passes schema validation but requests an unauthorized account update. How would you introduce business-rule validation and authorization before execution?
+
+**Prompt Templates**
+* A shared prompt-template change breaks multiple applications that depend on different variable names. How would you identify affected consumers and introduce backward-compatible changes?
+* A user-controlled template variable contains instructions intended to override the system prompt. How would you prevent injection and verify the fix?
+* A prompt works with short inputs but exceeds context limits when a customer uploads a long document. How would you improve template design and context budgeting?
+* Production logs show a response failure, but the team cannot identify which template version was used. How would you improve version tracking and observability?
+
+**Prompt Chaining**
+* A document-processing workflow has five LLM stages, and the final output is frequently wrong even though each stage appears successful. How would you inspect intermediate outputs and locate error propagation?
+* A middle stage times out after earlier stages have completed, causing the entire workflow to restart and duplicate costs. How would you implement checkpoints, retries, and idempotency?
+* A multi-stage workflow exceeds its response-time objective during peak traffic. How would you identify critical-path bottlenecks and determine which stages can run in parallel?
+* A prompt chain generates an invalid intermediate result that causes an unsafe downstream action. How would you enforce validation and fail-safe handling between stages?
+
+**Context Engineering**
+* An enterprise assistant gives outdated answers because it includes old conversation history alongside current policy documents. How would you prioritize authoritative and fresh context?
+* An assistant ignores relevant information from a large retrieved context. How would you investigate relevance ranking, ordering, truncation, and evidence selection?
+* A retrieved PDF contains instructions telling the assistant to reveal confidential data. How would you isolate untrusted document content and prevent unauthorized tool use?
+* Users from one tenant receive information retrieved from another tenant's documents. How would you investigate context assembly, retrieval filters, and authorization enforcement?
+
+**Prompt Versioning and Management**
+* A new prompt version improves benchmark scores but causes customer complaints after release. How would you investigate the discrepancy and roll back safely?
+* Multiple developers edit prompts directly in production configuration, making changes difficult to audit. How would you introduce version control, review, and deployment governance?
+* A model upgrade and prompt update are released simultaneously, making it difficult to identify the source of a regression. How would you redesign release and evaluation practices?
+* A shared prompt is used by dozens of services, and a small change breaks several consumers. How would you implement compatibility tests, staged rollout, and impact analysis?
+
+**Prompt Injection and Jailbreak Prevention**
+* A retrieved web page contains malicious instructions that cause an assistant to attempt an unauthorized tool call. How would you investigate the attack path and strengthen tool authorization?
+* A user tricks an AI assistant into disclosing confidential information included in the context. How would you investigate data exposure and redesign data minimization and access controls?
+* A prompt-injection filter blocks many legitimate requests while missing indirect attacks in documents. How would you evaluate false positives and false negatives and improve defense in depth?
+* An AI agent reads email attachments and can send messages on behalf of employees. How would you threat-model indirect prompt injection and enforce confirmation for sensitive actions?
+* A jailbreak succeeds in bypassing the model's refusal instructions, but the request is still blocked by a downstream policy service. How would you verify that the security boundary is correctly enforced?
+* A security incident involves a malicious instruction embedded in an image or document rather than typed by the user. How would you preserve evidence, assess impact, and update adversarial tests?
+
+**Prompt Evaluation and Optimization**
+* A revised prompt performs better in a small manual test but causes more failures in production. How would you build a representative evaluation dataset and diagnose the regression?
+* An LLM-as-a-judge evaluator prefers longer responses even when they contain unnecessary information. How would you detect evaluator bias and improve the scoring rubric?
+* A prompt performs well on English requests but poorly on regional-language inputs. How would you introduce language-specific evaluation and compare candidate improvements?
+* Prompt optimization improves average quality but increases latency and token costs beyond the service budget. How would you select a suitable operating point?
+* A team repeatedly tunes prompts against the same benchmark until scores rise, but production performance remains unchanged. How would you detect benchmark overfitting and validate generalization?
+
+**Guardrails and Output Validation**
+* An AI assistant returns a response that violates company policy even though the system prompt includes the relevant restriction. How would you investigate and implement stronger enforcement?
+* A generated SQL query is syntactically valid but attempts to access unauthorized tables. How would you validate and restrict queries before execution?
+* An output safety filter incorrectly blocks harmless customer-support responses. How would you measure false positives and improve policy handling?
+* A guardrail service becomes unavailable during peak traffic. How would you define fail-open versus fail-closed behavior for different categories of requests?
+* A model returns personally identifiable information in a summary even though the user is not authorized to access it. How would you investigate data access, context construction, and output screening?
+* An application accepts schema-valid AI output and automatically initiates a financial transaction. How would you add authorization, business-rule checks, approval controls, and auditability?
+

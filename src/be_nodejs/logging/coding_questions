@@ -1,0 +1,30 @@
+* Write a Node.js program that logs messages using console.log(), console.warn(), and console.error().
+* Write a reusable logger module that can be imported into multiple files.
+* Write a program that implements DEBUG, INFO, WARN, and ERROR log levels.
+* Write a program that logs messages with timestamps and severity levels.
+* Write a program that writes log messages to a file using the fs module.
+* Write a program that appends log entries to a file asynchronously.
+* Write a program that implements JSON-formatted logging.
+* Write a program that creates a Winston logger with console and file transports.
+* Write a program that creates a Pino logger with structured JSON output.
+* Write a program that configures the log level using an environment variable.
+* Write a program that logs an error message along with its stack trace.
+* Write Express middleware that logs the HTTP method, URL, status code, and response time.
+* Write middleware that generates a unique correlation ID for every incoming request.
+* Write a program that propagates correlation IDs to outgoing HTTP requests.
+* Write a program that uses AsyncLocalStorage to maintain request context across asynchronous operations.
+* Write a program that masks passwords, access tokens, and other sensitive fields before logging.
+* Write a program that implements configurable log-file rotation and retention.
+* Write a program that handles file-logging errors without crashing the application.
+* Write a program that records audit logs for user login and critical data changes.
+* Write a program that filters log messages according to the configured log level.
+* Write a program that sends structured logs to a centralized logging endpoint.
+* Write a program that implements buffered logging with a configurable buffer size.
+* Write a program that handles logging backpressure when the destination is slow.
+* Write a program that prevents duplicate HTTP request logs in Express.js.
+* Write unit tests that verify the correct log level and message are produced.
+* Write a program that implements log redaction for nested JSON objects.
+* Write a program that logs application startup, shutdown, and uncaught errors safely.
+* Write a program that includes service name, environment, and request ID in every log entry.
+* Write a program that correlates request logs with trace IDs using OpenTelemetry context.
+* Build a production-ready logging module with structured logging, correlation IDs, sensitive-data redaction, configurable log levels, rotation, error handling, and centralized log delivery.

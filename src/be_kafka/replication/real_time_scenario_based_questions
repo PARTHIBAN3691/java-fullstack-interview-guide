@@ -1,0 +1,30 @@
+* A Kafka broker crashes, and several partitions become unavailable. How would you investigate and restore service?
+* A topic has replication factor 3, but multiple partitions have only one replica in the ISR. What risks does this create?
+* Producers start receiving `NotEnoughReplicasException` after a broker failure. How would you troubleshoot the problem?
+* Producers receive `NotEnoughReplicasAfterAppendException` during heavy traffic. What could be happening?
+* A producer configured with `acks=all` is experiencing high latency. How would you investigate the replication path?
+* A broker repeatedly enters and leaves the ISR for several partitions. How would you identify the root cause?
+* Under-replicated partitions increase suddenly during peak traffic. Which broker, disk, and network metrics would you examine?
+* One follower replica is consistently behind its leader. How would you determine whether disk I/O, network bandwidth, or broker load is responsible?
+* A partition leader fails immediately after acknowledging a payment event. How would you assess whether the event could be lost?
+* A cluster uses replication factor 3 but all replicas for a partition are placed in the same availability zone. What is wrong with this design?
+* You need to configure a topic for a payment platform that must minimize data loss during broker failures. What settings would you choose and why?
+* A team sets replication factor to 5 to improve reliability, but producer latency and network traffic increase. How would you evaluate the trade-offs?
+* A cluster has replication factor 3 and `min.insync.replicas=2`. One broker fails while another replica is already out of sync. What happens to writes?
+* A broker returns after being offline for several hours and begins catching up. How would you monitor recovery and protect cluster performance?
+* A production team wants to reduce the replication factor to save storage. What risks and capacity considerations would you evaluate?
+* Replica reassignment causes disk utilization and network traffic to spike across the cluster. How would you control the impact?
+* A rolling restart triggers repeated leader elections and temporary producer errors. How would you improve the maintenance process?
+* A partition has a healthy leader but its follower replicas repeatedly fail to catch up. What would you investigate?
+* A topic reports zero under-replicated partitions, but the business is concerned about durability during simultaneous failures. What else should you verify?
+* An operator enables unclean leader election to improve availability. What data-loss risks should be discussed before enabling it?
+* A Kafka cluster loses an availability zone. How would rack-aware placement and ISR configuration affect recovery?
+* Producers are able to publish records even though one follower broker is unavailable. Explain why this can happen and which configurations determine the outcome.
+* A topic's replication factor is 3, but a new topic accidentally gets replication factor 1. How would you detect and correct the configuration drift?
+* A broker restart causes a large replication backlog and increased consumer lag. How would you determine whether replication recovery is affecting consumers?
+* A cluster experiences frequent controller changes and partition leader movements. How would you investigate the relationship between cluster metadata and replication health?
+* A business asks whether Kafka replication eliminates the need for backups. How would you explain the limitations and propose a recovery strategy?
+* A disaster recovery exercise requires restoring Kafka events in another region. How would you compare local replication with cross-cluster replication?
+* A partition's leader is healthy, but writes fail because the ISR is smaller than the configured minimum. How would you restore write availability without unnecessarily weakening durability?
+* During a network partition, different brokers have inconsistent connectivity. How would Kafka's leader election and replication mechanisms protect consistency?
+* You need to perform a Kafka broker upgrade with minimal downtime and strong durability guarantees. How would you plan and validate the upgrade?

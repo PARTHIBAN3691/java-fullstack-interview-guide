@@ -1,0 +1,30 @@
+* How would you design a zero-trust security architecture for Java microservices deployed across multiple GCP projects?
+* How would you implement centralized IAM governance across multiple Google Cloud organizations and projects?
+* How would you design a least-privilege access model for hundreds of microservices?
+* How would you prevent privilege escalation through service account impersonation?
+* How would you design secure cross-project service-to-service communication?
+* How would you migrate from long-lived service account keys to keyless authentication?
+* How would you implement Workload Identity Federation for a hybrid cloud environment?
+* How would you design defense-in-depth security for a public-facing Spring Boot application?
+* How would you prevent SSRF, injection, broken access control, and other OWASP API risks in a cloud-native application?
+* How would you implement end-to-end encryption for sensitive data across Java services?
+* How would you design envelope encryption using Cloud KMS and application-level data encryption?
+* How would you implement automated key rotation without disrupting running services?
+* How would you design a secrets-management strategy that supports rotation, auditing, and environment isolation?
+* How would you secure communication between GKE workloads using workload identity and network controls?
+* How would you implement network segmentation for applications, databases, and administrative services?
+* How would you design private-only access to sensitive backend services while supporting external clients?
+* How would you secure ingress and egress traffic for a multi-service GCP architecture?
+* How would you implement centralized security monitoring using Cloud Audit Logs, Cloud Logging, and Security Command Center?
+* How would you detect suspicious service account activity using audit events and behavioral signals?
+* How would you design automated incident response for compromised credentials?
+* How would you investigate and contain a suspected data exfiltration incident in Google Cloud?
+* How would you protect sensitive information from accidental exposure through logs, traces, metrics, and error responses?
+* How would you implement security gates in a CI/CD pipeline using dependency scanning, container scanning, and policy enforcement?
+* How would you secure the software supply chain for Java applications built and deployed through Cloud Build?
+* How would you implement Binary Authorization and enforce trusted container deployments?
+* How would you design secure multi-tenant authorization for a Java SaaS application running on GCP?
+* How would you enforce separation of duties between developers, security administrators, and production operators?
+* How would you design disaster recovery while preserving encryption keys, IAM controls, and auditability?
+* How would you evaluate the security impact of granting project-wide roles instead of resource-level permissions?
+* How would you build a continuous compliance architecture that detects and remediates configuration drift?

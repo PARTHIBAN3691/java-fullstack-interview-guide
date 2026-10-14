@@ -1,0 +1,30 @@
+* A controlled input cannot be edited because its value does not update while typing. How would you debug it?
+* A form refreshes the page when the user clicks Submit. How would you fix the issue?
+* A registration form requires email validation and password confirmation. How would you implement it?
+* A form has 30 fields, and every keystroke causes the entire form to re-render. How would you optimize it?
+* A username availability API returns outdated results when the user types quickly. How would you prevent stale validation results?
+* Users accidentally submit the same form multiple times. How would you prevent duplicate records?
+* The backend returns validation errors for specific fields. How would you display the errors beside the correct inputs?
+* A checkout form has country and state dropdowns, where state options depend on the selected country. How would you implement it?
+* A multi-step application form loses entered values when the user moves backward. How would you preserve the data?
+* A long application form must automatically save progress. How would you implement autosave?
+* Users should receive a warning before leaving a form with unsaved changes. How would you implement it?
+* A form allows users to upload large files and cancel an upload. How would you design the upload process?
+* A user can dynamically add multiple addresses to a form. How would you manage and validate the fields?
+* A date field must reject dates earlier than today. How would you implement the validation?
+* A field becomes mandatory only when another checkbox is selected. How would you handle conditional validation?
+* Client-side validation passes, but the server rejects the form. How would you communicate the backend errors?
+* Changing a parent dropdown should reset dependent fields. How would you avoid inconsistent form state?
+* Removing a dynamic field causes the wrong values to appear in other fields. How would you debug it?
+* An asynchronous validation request finishes after the user has changed the input. How would you prevent outdated results from being applied?
+* A form must support keyboard-only navigation and screen readers. What accessibility improvements would you make?
+* A user submits a form while an earlier request is still processing. How would you handle concurrent submissions?
+* A form supports multiple file uploads with type and size restrictions. How would you implement validation?
+* An API provides initial form values after the component mounts. How would you populate the form correctly?
+* Form values should remain available after a browser refresh. What persistence strategy would you use?
+* A payment form contains sensitive data that must not appear in application logs. How would you handle logging safely?
+* A reusable input component works for text fields but fails for checkboxes. How would you fix the component?
+* A form submission succeeds on the server, but the loading indicator never disappears. How would you debug it?
+* Formik or React Hook Form and local useState() maintain conflicting values. How would you simplify state management?
+* A form's validation rules change according to the selected account type. How would you implement dynamic schemas?
+* How would you design and test an enterprise form with conditional fields, asynchronous validation, file uploads, and API submission?

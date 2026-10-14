@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a Kubernetes Volume from provisioning to mounting and release.
+* How does Kubernetes coordinate PersistentVolumes, PersistentVolumeClaims, and StorageClasses?
+* How does the CSI architecture work in Kubernetes?
+* How would you design persistent storage for a highly available Java microservices platform?
+* How would you choose between block storage, file storage, and object storage for Kubernetes workloads?
+* How would you design storage for a database running in a StatefulSet?
+* How do access modes differ from actual concurrent read and write capabilities of a storage backend?
+* How would you troubleshoot volume attachment failures across availability zones?
+* How does WaitForFirstConsumer affect volume provisioning and Pod scheduling?
+* How would you design storage for workloads that require low latency and high IOPS?
+* How would you handle storage failures without causing application data corruption?
+* How would you expand PersistentVolumes with minimal application downtime?
+* How would you migrate data between StorageClasses with different performance characteristics?
+* How would you implement consistent backups for a database using CSI VolumeSnapshots?
+* How do VolumeSnapshotClasses, VolumeSnapshots, and VolumeSnapshotContents work together?
+* How would you restore a PVC from a VolumeSnapshot after accidental data deletion?
+* How would you design disaster recovery for stateful workloads across availability zones or regions?
+* How do reclaim policies affect the lifecycle and security of persistent data?
+* What are the differences between Retain, Delete, and other supported reclaim-policy behavior?
+* How would you prevent data loss when deleting a StatefulSet or scaling it down?
+* How would you troubleshoot stale mounts and volumes that remain attached to unavailable nodes?
+* How would you investigate filesystem corruption in a mounted PersistentVolume?
+* How would you handle storage permissions when a container runs as a non-root user?
+* How would you optimize storage performance for Java applications that generate large log files?
+* How would you decide between emptyDir, PVC, and application-level object storage?
+* How would you secure sensitive data stored on persistent volumes?
+* How would you design multi-tenant storage isolation within a shared Kubernetes cluster?
+* How would you diagnose storage latency using application metrics, node metrics, and CSI driver logs?
+* How would you plan a storage backend migration without losing data or violating application consistency?
+* How would you design a production-grade Kubernetes storage strategy covering performance, durability, security, backup, and recovery?

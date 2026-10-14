@@ -1,0 +1,30 @@
+* Explain the difference between Subject, BehaviorSubject, ReplaySubject, and AsyncSubject.
+* What is the difference between cold and hot Observables?
+* What is the difference between synchronous and asynchronous Observables?
+* Explain the difference between map() and switchMap().
+* Explain the difference between switchMap(), mergeMap(), concatMap(), and exhaustMap().
+* What is the difference between mergeMap() and concatMap()?
+* What is the difference between debounceTime() and throttleTime()?
+* What is the difference between combineLatest() and forkJoin()?
+* What is the difference between combineLatest() and zip()?
+* What is the difference between of() and from()?
+* What is the difference between catchError() and retry()?
+* How does the shareReplay() operator work?
+* What is the purpose of the takeUntil() operator?
+* How do you handle errors in an RxJS pipeline?
+* How do you prevent memory leaks caused by subscriptions?
+* How do you unsubscribe automatically when an Angular component is destroyed?
+* What is the async pipe, and how does it work with Observables?
+* What is the difference between subscribing manually and using the async pipe?
+* How do you transform an Observable response using pipe()?
+* How do you combine multiple HTTP requests using RxJS?
+* How do you execute HTTP requests sequentially?
+* How do you execute multiple HTTP requests in parallel?
+* How do you share Observable data between Angular components?
+* How do you use BehaviorSubject for state management?
+* How do you filter duplicate values from an Observable?
+* How do you handle loading and error states using RxJS?
+* What is the difference between EMPTY and of(null)?
+* What is the purpose of the startWith() operator?
+* What is the purpose of the withLatestFrom() operator?
+* How do you debug an RxJS pipeline?

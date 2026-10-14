@@ -1,0 +1,21 @@
+
+* Write a Java 15 program using a text block to store and print a multiline SQL query.
+* Write a Java 15 program using a text block to represent a JSON object with nested fields.
+* Write a Java program that demonstrates the difference between a regular string literal and a text block.
+* Write a Java program that demonstrates how incidental indentation is handled in text blocks.
+* Write a Java program that uses `String.formatted()` to generate a formatted employee report.
+* Write a Java program that uses `String.stripIndent()` to normalize indentation in a multiline string.
+* Write a Java program that uses `String.translateEscapes()` to process newline, tab, and quote escape sequences.
+* Write a Java program that compares the output of `trim()`, `strip()`, and `stripIndent()` for suitable input strings.
+* Create a sealed interface named `PaymentMethod` that permits `CreditCard`, `BankTransfer`, and `Wallet` implementations.
+* Write a Java program demonstrating a sealed class with `final`, `sealed`, and `non-sealed` permitted subclasses.
+* Create a sealed class hierarchy to represent different employee types and enforce the permitted subclasses.
+* Write a Java program that demonstrates a sealed interface implemented by a record and a final class.
+* Write a Java program that demonstrates how an invalid permitted subclass declaration is rejected by the compiler.
+* Write a Java program that uses a sealed hierarchy to model success and failure outcomes for a payment operation.
+* Write a Java 15 program that generates a multiline HTML template using a text block and `String.formatted()`.
+* Write a Java program that demonstrates a hidden class using the appropriate lookup and class-definition APIs.
+* Write a Java program that compares the behavior of an ordinary dynamically loaded class and a hidden class.
+* Write a Java program that demonstrates a text block containing escaped quotes, backslashes, and multiple lines.
+* Write a Java program that demonstrates a sealed class hierarchy and validates the allowed types at runtime.
+* Write a Java 15 program that combines text blocks and string formatting to generate a configuration file.

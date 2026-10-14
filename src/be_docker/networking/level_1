@@ -1,0 +1,30 @@
+* How do you configure networking for a Spring Boot application running in Docker?
+* How do you connect a Spring Boot container to a PostgreSQL container using a user-defined bridge network?
+* How do you configure a Docker Compose application with separate application and database services?
+* How does Docker's embedded DNS resolve service names within a user-defined network?
+* Why should a Spring Boot application connect to a database using its service name instead of localhost?
+* How do you expose a Spring Boot application on port 8080 to the host machine?
+* How do you publish a container port on a specific host IP address?
+* What is the difference between publishing a port and exposing a port?
+* How do you prevent a database container from being accessible directly from the host?
+* How do you configure communication between containers on separate user-defined bridge networks?
+* How can a container join multiple Docker networks?
+* How do you configure a reverse proxy container to communicate with multiple application containers?
+* How does Docker Compose provide service discovery between containers?
+* How do you troubleshoot DNS resolution failures between Docker containers?
+* How do you inspect the IP address and network settings of a container?
+* How can you test connectivity between containers without installing diagnostic tools in the application image?
+* How do you configure a container to access a service running on the Docker host?
+* Why does connecting to localhost from a container usually fail when the target service runs on the host?
+* How do host networking and bridge networking differ on Linux?
+* What limitations should you consider when using host networking on Docker Desktop?
+* How do you configure an overlay network for services running across multiple Docker hosts?
+* What is the role of a Docker network driver in container communication?
+* How do you configure static IP addresses for containers, and why should service names usually be preferred?
+* How can firewall rules and host port bindings affect Docker networking?
+* How do you configure a Spring Boot application to call another microservice using Docker Compose service discovery?
+* How do you troubleshoot connection refused errors between a Java application and a database container?
+* How do you configure a container to use a custom DNS server?
+* How do you diagnose port conflicts when starting multiple containers?
+* How can you isolate database traffic from public-facing application traffic using Docker networks?
+* How do you verify that only intended ports are published to the host?

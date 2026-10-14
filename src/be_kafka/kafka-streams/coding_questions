@@ -1,0 +1,30 @@
+* Write a Java Kafka Streams application that reads records from an input topic and writes them to an output topic.
+* Implement a KStream pipeline that filters records based on a field in the message value.
+* Write a Kafka Streams application that transforms order events into a simplified output model.
+* Implement a topology using mapValues() to calculate a derived value without changing the record key.
+* Write a Java example that changes message keys using selectKey() and publishes the result.
+* Implement a word-count application using Kafka Streams.
+* Write a Kafka Streams application that counts events by customer ID.
+* Implement a sum aggregation that calculates total transaction amounts per account.
+* Write a Kafka Streams application that groups events by key and calculates minimum, maximum, and average values.
+* Implement a tumbling-window aggregation that calculates sales totals every five minutes.
+* Write a hopping-window aggregation that calculates overlapping transaction totals.
+* Implement a stream-to-stream join that correlates order-created and payment-completed events.
+* Write a KStream-KTable join that enriches order events with customer information.
+* Implement a KTable-KTable join that combines customer profiles and customer account details.
+* Write a GlobalKTable join that enriches events using globally replicated reference data.
+* Implement a custom Serde for a Java domain object using JSON serialization.
+* Write a Kafka Streams application that handles late-arriving events using a configured grace period.
+* Implement a stateful transformer that maintains a count of events for each customer.
+* Write a Kafka Streams application that detects duplicate event IDs using a state store.
+* Implement a persistent key-value state store and use it to maintain per-account balances.
+* Write a Kafka Streams topology that routes invalid records to a Dead Letter Topic while processing valid records.
+* Implement a custom processing exception handler for a Kafka Streams application.
+* Write a Java application that configures exactly-once processing using Kafka Streams configuration properties.
+* Implement a Kafka Streams application with a custom TimestampExtractor.
+* Write a TopologyTestDriver test that verifies filtering and transformation behavior.
+* Implement a TopologyTestDriver test for a windowed aggregation with multiple input events.
+* Write a test that verifies a KStream-KTable join produces the expected enriched records.
+* Implement a Kafka Streams application that suppresses intermediate results and emits only final windowed aggregates.
+* Write a Java utility that exposes Kafka Streams state, task, and processing-latency metrics.
+* Implement a Kafka Streams topology that reads transaction events, calculates per-customer totals, and publishes alerts when a configured spending threshold is exceeded.

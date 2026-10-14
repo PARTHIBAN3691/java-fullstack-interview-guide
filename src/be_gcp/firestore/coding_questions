@@ -1,0 +1,30 @@
+* Write a Java program using the Firestore client library to create a document in a collection.
+* Write a Java program to retrieve a Firestore document by its document ID.
+* Write a Java program to update selected fields in an existing Firestore document.
+* Write a Java program to delete a Firestore document and handle the case where it does not exist.
+* Write a Java program to retrieve all documents from a Firestore collection.
+* Write a Java program to query documents where a specified field matches a given value.
+* Write a Java program to filter Firestore documents by multiple field conditions.
+* Write a Java program to sort Firestore query results by timestamp in descending order.
+* Write a Java program to implement cursor-based pagination using startAfter.
+* Write a Java program to map Firestore document data to a Java POJO.
+* Write a Spring Boot REST controller that creates, retrieves, updates, and deletes Firestore documents.
+* Write a Spring Boot service that uses the Firestore Java client and handles database exceptions.
+* Write a Java program that performs multiple Firestore writes using a batch operation.
+* Write a Java program that transfers an amount between two account documents using a Firestore transaction.
+* Write a Java program that atomically decrements inventory only when sufficient stock is available.
+* Write a Java program that implements an idempotent order-creation operation using a client-supplied request ID.
+* Write a Java program that uses document update time to detect concurrent modifications.
+* Write a Java program that queries documents within a specified timestamp range.
+* Write a Java program that retrieves documents in batches and processes a large collection without loading all records into memory.
+* Write a Java program that validates required fields before writing a document to Firestore.
+* Write a Java program that implements a distributed counter using multiple counter shards.
+* Write a Java program that stores order events in a subcollection instead of an ever-growing array in the parent document.
+* Write a Java program that implements retry with exponential backoff for transient Firestore failures.
+* Write a Java program that uses the Firestore Emulator for integration testing.
+* Write a Java program that creates a document only if a document with the specified ID does not already exist.
+* Write a Java program that performs a bulk import from a CSV file into Firestore with error handling and resumable processing.
+* Write a Java program that queries records using a compound filter and handles missing-index errors appropriately.
+* Write a Java program that implements tenant-scoped data access so every query includes the tenant identifier.
+* Write a Java program that publishes a Pub/Sub message after a successful Firestore update while accounting for duplicate processing and failure recovery.
+* Write a Java program that implements a Firestore repository layer with pagination, validation, exception handling, and unit tests.

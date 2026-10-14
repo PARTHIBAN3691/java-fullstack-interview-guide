@@ -1,0 +1,23 @@
+
+* Write a Java program that repeatedly invokes a method to observe potential JIT warm-up effects.
+* Write a Java program that compares the execution time of a computationally intensive loop before and after warm-up.
+* Write a Java program that compares interpreted execution with JIT-enabled execution using appropriate JVM options.
+* Write a Java program that demonstrates a frequently invoked method suitable for investigating JIT compilation.
+* Write a Java program that demonstrates method inlining opportunities through small, frequently called methods.
+* Write a Java program that demonstrates constant folding opportunities using compile-time constants and runtime values.
+* Write a Java program that demonstrates dead-code elimination risks in a microbenchmark.
+* Write a Java program that demonstrates how unused computation can be eliminated by the JIT compiler.
+* Write a Java program that creates temporary objects in a tight loop to investigate escape analysis and allocation optimization.
+* Write a Java program that compares local object usage with an object escaping through a returned reference.
+* Write a Java program that uses synchronized blocks to investigate possible lock-elimination optimizations.
+* Write a Java program with a long-running loop to investigate on-stack replacement using JVM diagnostic options.
+* Write a Java program that uses polymorphic method calls to investigate differences in JIT optimization behavior.
+* Write a Java program that uses `System.nanoTime()` to measure execution time across multiple warm-up and measurement iterations.
+* Write a JMH benchmark that compares two implementations of the same computational task.
+* Write a JMH benchmark that compares monomorphic and polymorphic method-call patterns.
+* Write a Java program and appropriate JVM options to log JIT compilation activity.
+* Write a Java program that demonstrates how to inspect compiled methods using available HotSpot diagnostic tools.
+* Write a Java program that repeatedly allocates objects and use JVM monitoring tools to investigate allocation and garbage-collection behavior.
+* Write a Java program that invokes a native method through JNI and measures the overhead of repeated Java-to-native calls.
+* Write a Java program that compares a loop-based implementation with a stream-based implementation using JMH.
+* Write a Java program that investigates the impact of JVM compilation settings on startup time and steady-state performance.

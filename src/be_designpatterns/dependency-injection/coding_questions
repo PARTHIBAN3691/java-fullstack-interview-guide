@@ -1,0 +1,30 @@
+* Implement constructor-based Dependency Injection in plain Java using an interface and two implementations.
+* Refactor a Java class that creates its dependencies using new to use constructor injection.
+* Create a Spring Boot application that injects a repository into a service using constructor injection.
+* Implement a notification service with email, SMS, and push implementations, and inject the appropriate implementation.
+* Configure two beans implementing the same interface and resolve the ambiguity using @Qualifier.
+* Configure multiple implementations of an interface and select the default implementation using @Primary.
+* Create a Spring Boot configuration class that registers a third-party library object using @Bean.
+* Implement a service that injects all implementations of a payment interface into a List.
+* Implement a factory that selects a payment strategy from injected implementations using a payment type.
+* Create a Spring Boot application that selects a service implementation using @Profile.
+* Use @ConditionalOnProperty to register a payment provider only when a configuration property is enabled.
+* Implement configuration binding using @ConfigurationProperties and inject the configuration into a service.
+* Write a Java example that demonstrates constructor injection and setter injection, then compare their testability.
+* Refactor a field-injected service to constructor injection and write JUnit tests using Mockito.
+* Write a unit test that replaces a database repository with a mock without starting the Spring context.
+* Implement a Spring service that uses ObjectProvider to obtain a fresh prototype-scoped dependency for each operation.
+* Create a Spring Boot example that injects a request-scoped bean into a singleton service using a scoped proxy.
+* Implement a Java application that detects and prevents circular dependencies in a manually managed dependency graph.
+* Refactor two Spring services with circular constructor dependencies into a design with clear responsibilities.
+* Implement a standalone Java Dependency Injection container that registers and resolves interface implementations.
+* Extend the custom container to support constructor injection and detect circular dependencies.
+* Create a Spring Boot application that injects a third-party API client configured with a base URL and timeout.
+* Implement an optional dependency using ObjectProvider and define behavior when the dependency is unavailable.
+* Write a Spring Boot integration test that overrides a production bean with a test implementation.
+* Implement a custom condition that registers a bean based on application configuration.
+* Create a BeanPostProcessor that logs bean initialization and demonstrate its execution order.
+* Implement a BeanFactoryPostProcessor that modifies bean definitions before bean initialization.
+* Write a test demonstrating why a manually created object does not automatically receive Spring dependencies.
+* Refactor code that retrieves services repeatedly through ApplicationContext.getBean() into constructor injection.
+* Build and test a multi-provider payment service that uses Dependency Injection, runtime strategy selection, and proper error handling.

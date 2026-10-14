@@ -1,0 +1,30 @@
+* How do you design an observability strategy for a microservices application?
+* How do you decide which application events should be logged?
+* How do you implement structured logging in a Spring Boot application?
+* How do you configure different log levels for different Java packages?
+* How do you prevent sensitive information from appearing in application logs?
+* How do you implement correlation IDs across multiple microservices?
+* How do you propagate trace context between services?
+* How do you instrument a Java application using OpenTelemetry?
+* How do you collect application metrics using Micrometer?
+* How do you expose Spring Boot application metrics through Actuator?
+* How do you integrate Prometheus with a Spring Boot application?
+* How do you build Grafana dashboards for application health and performance?
+* How do you measure request latency using percentiles such as p50, p95, and p99?
+* How do you distinguish average latency from tail latency?
+* How do you define meaningful SLIs and SLOs for an API?
+* How do you configure alerts based on error rate and latency?
+* How do you avoid alert fatigue in production environments?
+* How do you monitor JVM heap usage, garbage collection, and thread activity?
+* How do you identify memory leaks using application metrics and logs?
+* How do you monitor database connection pools and query performance?
+* How do you trace requests across services that communicate through message queues?
+* How do you correlate logs and traces during incident investigation?
+* How do you monitor asynchronous processing and consumer lag?
+* How do you monitor application dependencies such as databases, caches, and external APIs?
+* How do you implement centralized logging for multiple application instances?
+* How do you manage log retention and rotation?
+* How do you control observability data volume and storage costs?
+* How do you test that instrumentation and telemetry export are working correctly?
+* How do you implement health endpoints without exposing sensitive system information?
+* How do you choose between OpenTelemetry, Micrometer, Prometheus, and vendor-specific agents?

@@ -1,0 +1,30 @@
+* Implement a simple majority-voting function in Java for a set of node responses.
+* Write a Java program that determines whether a cluster has a quorum based on its available nodes.
+* Implement a Java class representing a distributed node with leader, follower, and candidate states.
+* Write Java code to simulate leader election using randomized election timeouts.
+* Implement a simple heartbeat mechanism that detects when a leader stops responding.
+* Write a Java program that simulates a node becoming unavailable and triggers a new election.
+* Implement a simplified Raft term-management mechanism that rejects messages from stale terms.
+* Create a Java class representing a Raft log entry with term, index, and command fields.
+* Implement a method that determines whether a log entry has received enough acknowledgments to be committed.
+* Write Java code that simulates log replication from a leader to multiple followers.
+* Implement a simplified Raft log consistency check between a leader and a follower.
+* Write a Java method that selects a leader from a set of candidate nodes based on term and voting rules.
+* Implement a voting mechanism that ensures each Raft node grants at most one vote per term.
+* Write a Java program that simulates a network partition in a five-node consensus cluster.
+* Implement a Java method that determines whether a node can commit an operation given the current cluster membership and available replicas.
+* Write unit tests for quorum calculations when nodes fail or recover.
+* Implement a simple replicated state machine that applies committed commands in log order.
+* Write a Java program that simulates two competing leader candidates and verifies that conflicting leadership is not committed within the same term.
+* Implement a simplified log reconciliation process that removes conflicting uncommitted entries.
+* Write a Java class that tracks cluster membership and validates safe transitions between configurations.
+* Implement fencing tokens using monotonically increasing generations for distributed lock ownership.
+* Write a Java example that rejects writes from an expired or stale lock owner.
+* Implement a snapshot mechanism for a replicated state machine and restore its state from a snapshot.
+* Write a Java program that simulates leader failure during log replication and resumes replication after reelection.
+* Implement a simplified Paxos proposer that sends prepare requests with increasing proposal numbers.
+* Write Java code that simulates Paxos acceptors and tracks the highest promised proposal number.
+* Implement a test that verifies a majority-based consensus algorithm cannot commit conflicting values under supported crash-failure assumptions.
+* Write a fault-injection test that introduces message delays, dropped messages, and node crashes into a consensus simulation.
+* Implement metrics collection for leader changes, election duration, quorum availability, and log replication lag.
+* Design and implement a simplified Raft-based coordination service in Java with leader election, log replication, persistence, failure simulation, and automated safety tests.

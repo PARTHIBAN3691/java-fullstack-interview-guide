@@ -1,0 +1,30 @@
+* Write a Java program that simulates multiple workers processing requests concurrently.
+* Implement a thread-safe request counter to measure throughput.
+* Write a Java program using ExecutorService to process a large number of tasks concurrently.
+* Implement a bounded thread pool that limits concurrent task execution.
+* Write a Java program that demonstrates the difference between CPU-bound and I/O-bound task execution.
+* Implement a simple round-robin load balancer that distributes requests across server instances.
+* Implement a least-connections load balancer in Java.
+* Write a load balancer that supports weighted server selection.
+* Implement a health-aware load balancer that avoids unavailable servers.
+* Write a Java utility that tracks request latency and calculates average and percentile latency.
+* Implement a token-bucket rate limiter that supports concurrent requests.
+* Implement a distributed rate-limiting simulation using a shared counter abstraction.
+* Write a Java program that uses a bounded BlockingQueue to apply backpressure.
+* Implement a producer-consumer system that dynamically adjusts the number of workers based on queue depth.
+* Write a Java program that simulates auto-scaling based on CPU utilization and request backlog.
+* Implement a thread-safe LRU cache to reduce repeated database lookups.
+* Write a cache-aside implementation with expiration and concurrent access handling.
+* Implement a single-flight mechanism that prevents concurrent cache misses from triggering duplicate backend calls.
+* Write a Java program that partitions a large dataset across multiple workers for parallel processing.
+* Implement a consistent-hashing algorithm to distribute requests across multiple service instances.
+* Write a Java program that simulates horizontal scaling and measures the effect on throughput.
+* Implement a batch-processing service that groups small requests to reduce downstream overhead.
+* Write a Java consumer that processes queued messages concurrently while preserving per-key ordering.
+* Implement a retry mechanism with exponential backoff and jitter for transient downstream failures.
+* Write a Java program that applies load shedding when active requests exceed a configured threshold.
+* Implement a semaphore-based concurrency limiter for a downstream API.
+* Write a scheduled-task coordinator that prevents duplicate execution across multiple application instances.
+* Implement a Java service that records per-tenant request counts and enforces tenant-specific quotas.
+* Write a program that compares sequential processing, fixed-thread-pool processing, and bounded-queue processing.
+* Build a Spring Boot application with a load balancer, caching, metrics, rate limiting, and asynchronous processing to demonstrate scalability.

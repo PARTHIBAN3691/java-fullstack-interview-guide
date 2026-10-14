@@ -1,0 +1,30 @@
+* A Spring MVC application returns HTTP 404 even though the controller method exists. How would you troubleshoot request mappings and servlet configuration?
+* A controller method is not invoked for a valid URL. How would you investigate DispatcherServlet and HandlerMapping behavior?
+* Two controller methods match the same request, causing an ambiguous mapping exception. How would you resolve the conflict?
+* A REST endpoint returns HTTP 415 Unsupported Media Type. How would you investigate request headers and message converters?
+* A client receives HTTP 406 Not Acceptable from a controller. How would you troubleshoot content negotiation?
+* A controller receives null values for fields in a JSON request body. How would you investigate DTO mapping and HttpMessageConverter configuration?
+* A form submission fails validation, but the user does not see the validation messages. How would you debug BindingResult and view rendering?
+* A REST API returns HTTP 400 for valid input. How would you investigate request binding, type conversion, and validation?
+* A global exception handler does not handle an exception thrown by a controller. What would you inspect?
+* An interceptor runs twice for a single request. How would you investigate interceptor registration and servlet dispatch behavior?
+* A servlet filter executes, but the expected Spring MVC interceptor does not. How would you diagnose the request flow?
+* A controller stores user-specific information in an instance variable and returns incorrect data under concurrent traffic. How would you fix the issue?
+* A file upload endpoint consumes excessive memory and causes application instability. How would you redesign the upload flow?
+* Large file downloads fail because of response buffering or connection timeouts. How would you investigate and optimize the endpoint?
+* A controller response is unexpectedly serialized as JSON instead of rendering a view. How would you investigate annotations and return-value handling?
+* A legacy application uses JSP views, but the configured ViewResolver cannot locate them. How would you troubleshoot view resolution?
+* An endpoint returns HTTP 500 when a request parameter contains an invalid number. How would you implement proper type-conversion error handling?
+* A REST API exposes internal exception messages and stack traces to clients. How would you improve exception handling and error responses?
+* A controller accepts fields that should not be editable by clients, allowing unauthorized changes. How would you prevent mass assignment?
+* A long-running request blocks a Tomcat request thread and reduces throughput. How would you evaluate asynchronous request processing?
+* An asynchronous controller response times out even though the downstream operation eventually completes. How would you investigate timeouts and async lifecycle handling?
+* An API works in Postman but fails in a browser due to cross-origin restrictions. How would you configure CORS correctly?
+* A controller test passes with mocked dependencies but fails in the full application. How would you investigate configuration and integration differences?
+* A request works through the application server but fails behind a reverse proxy. How would you investigate forwarded headers, context paths, and URL rewriting?
+* A Spring MVC application uses sessions to store large objects and experiences memory pressure. How would you redesign session management?
+* A controller returns duplicate records because a client retries a POST request after a timeout. How would you make the operation idempotent?
+* A request correlation ID is present in controller logs but missing from downstream service logs. How would you propagate the context?
+* A security filter rejects a request before it reaches the controller. How would you identify the responsible security rule?
+* An API migration changes the response format and breaks existing consumers. How would you introduce versioning and backward compatibility?
+* Your team needs standardized validation, logging, metrics, and error handling across all controllers. How would you design a reusable Spring MVC solution?

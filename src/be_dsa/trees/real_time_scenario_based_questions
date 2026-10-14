@@ -1,0 +1,30 @@
+* A Java application experiences StackOverflowError while traversing a deeply nested tree. How would you investigate and redesign the traversal?
+* A product catalog stores products in a hierarchical category structure. How would you represent the tree and retrieve all descendants of a category?
+* An organization stores employee-manager relationships as a hierarchy. How would you find the reporting chain between two employees?
+* A file system represents directories and files as a tree. How would you calculate the total size of a directory, including all nested directories?
+* A permission system uses hierarchical inheritance. How would you determine whether a user inherits access to a resource from an ancestor node?
+* A search application uses a BST but lookup performance has degraded to O(n). How would you diagnose the problem and improve performance?
+* A database index must support efficient lookup, insertion, and deletion on disk. Why might a B+ Tree be more appropriate than a binary tree?
+* A real-time application requires predictable lookup performance from a tree structure. How would you choose between an AVL Tree and a Red-Black Tree?
+* A reporting service needs to display an organization's hierarchy level by level. How would you implement the traversal efficiently?
+* A monitoring dashboard must display the left view and right view of a hierarchical structure. How would you compute both views?
+* A dependency-management system stores nested dependencies as a tree. How would you detect invalid cycles if the structure becomes a graph?
+* A data migration job needs to transfer a large tree between services. How would you serialize and deserialize the structure safely?
+* A configuration service must compare two hierarchical configurations and identify differences. How would you design the tree comparison algorithm?
+* A search feature must find the nearest common parent of two categories. Which tree algorithm would you use?
+* A tree-based recommendation system needs to retrieve all nodes within distance K of a selected node. How would you implement this efficiently?
+* A hierarchical monitoring system must determine the time required for an alert to propagate from one node to all connected nodes. How would you model and calculate the propagation time?
+* A tree contains millions of nodes and must be traversed under a strict memory limit. Which traversal strategies would you consider?
+* A production application uses recursive tree traversal and fails only for certain large inputs. How would you reproduce the issue and test an iterative solution?
+* A data structure service needs to support concurrent reads and writes to a shared BST. What thread-safety and consistency issues must be addressed?
+* A tree is frequently updated and must remain balanced. Which self-balancing tree would you choose, and why?
+* An analytics service needs the kth smallest value in a dynamically changing BST. How would you avoid traversing the entire tree for every query?
+* A category hierarchy must support frequent subtree moves. How would you design the representation and update operations?
+* A tree-based cache must support fast insertions, deletions, and ordered traversal. Which data structure would you use?
+* A binary tree has two swapped values and violates the BST property. How would you restore it without rebuilding the entire tree?
+* A service must find the largest valid BST subtree in an arbitrary binary tree. How would you compute the result in a single traversal?
+* A Java application must compare two serialized trees received from untrusted clients. How would you validate the input and prevent malformed data from causing excessive resource consumption?
+* A tree traversal service must return nodes grouped by vertical columns. How would you handle horizontal distances and nodes sharing the same position?
+* A large complete binary tree must be counted efficiently without visiting every node. Which properties would you exploit?
+* A hierarchical data service must find the maximum path sum even when node values are negative. How would you handle edge cases?
+* A team is choosing between a binary tree, a trie, and a B-Tree for a search feature. What requirements would guide the decision?

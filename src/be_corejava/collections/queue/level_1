@@ -1,0 +1,90 @@
+# Core Java — Collections — Queue
+## Level 1 — Medium
+
+### Queue Fundamentals
+* What is the difference between exception-throwing and special-value-returning Queue methods?
+* How does Queue behavior change when the queue is bounded?
+* Why does the Queue interface not guarantee a specific ordering policy?
+* How would you choose between FIFO ordering and priority-based ordering?
+* What happens if a Queue implementation does not support a particular operation?
+* How would you design a queue-based workflow that handles temporary processing failures?
+
+### PriorityQueue
+* How is PriorityQueue implemented internally?
+* What is a binary heap?
+* What is the difference between a min-heap and a max-heap?
+* How does PriorityQueue maintain heap order after insertion and removal?
+* Why is searching for an arbitrary element in PriorityQueue generally linear time?
+* How do `Comparable` and `Comparator` affect PriorityQueue ordering?
+* How would you create a PriorityQueue of custom Job objects ordered by priority?
+* What happens when the priority of an object changes after insertion?
+* How would you handle equal-priority elements when deterministic ordering is required?
+
+### ArrayDeque
+* How does ArrayDeque store elements internally?
+* How does ArrayDeque grow when its internal capacity is insufficient?
+* Why is ArrayDeque generally preferred over Stack for stack operations?
+* Why is ArrayDeque not thread-safe?
+* How does ArrayDeque differ from LinkedList in memory allocation and locality?
+* How would you use ArrayDeque to implement a sliding-window algorithm?
+* What are the trade-offs of using ArrayDeque for frequent additions and removals at both ends?
+
+### LinkedList as a Queue
+* How does LinkedList implement both Queue and Deque?
+* What is the time complexity of adding and removing elements at either end of LinkedList?
+* Why can LinkedList have higher memory overhead than ArrayDeque?
+* How would you implement a FIFO task queue using LinkedList?
+* What issues could occur if a LinkedList is accessed concurrently without synchronization?
+* When would LinkedList be a poor choice for a high-throughput queue?
+
+### Deque Fundamentals
+* What is the difference between `push()` and `offerFirst()`?
+* How can a Deque be used to implement both a queue and a stack?
+* How would you use a Deque to detect palindromes?
+* How can Deque help solve sliding-window maximum problems?
+* Why is ArrayDeque often recommended for single-threaded stack and queue operations?
+* How would you prevent incorrect behavior when the same Deque is accessed by multiple threads?
+
+### BlockingQueue Fundamentals
+* Explain the difference between `put()`, `offer()`, and `add()`.
+* Explain the difference between `take()`, `poll()`, and `remove()`.
+* What is backpressure in a producer-consumer system?
+* How does a bounded BlockingQueue help control memory usage?
+* What is the difference between waiting for queue capacity and rejecting new tasks?
+* How can interruption affect a thread blocked in `put()` or `take()`?
+* What are the risks of choosing an excessively large queue capacity?
+
+### ArrayBlockingQueue and LinkedBlockingQueue
+* What are the memory and synchronization trade-offs between ArrayBlockingQueue and LinkedBlockingQueue?
+* Why might ArrayBlockingQueue be suitable for predictable memory usage?
+* How does the configured capacity of LinkedBlockingQueue affect producer behavior?
+* What happens when producers outpace consumers in a bounded queue?
+* How would you choose queue capacity based on throughput and processing time?
+* How can queue capacity contribute to latency and memory pressure?
+* What should an application do when `offer()` returns false?
+
+### ConcurrentLinkedQueue
+* How does ConcurrentLinkedQueue support concurrent access without using a single global lock for every operation?
+* Why is ConcurrentLinkedQueue suitable for non-blocking producer-consumer workflows?
+* What is the difference between a blocking queue and a non-blocking queue?
+* Why should the result of `size()` not be used as a synchronization condition in a changing ConcurrentLinkedQueue?
+* What iteration consistency does ConcurrentLinkedQueue provide?
+* How would you handle overload when using an unbounded ConcurrentLinkedQueue?
+* What is the difference between thread safety and blocking behavior?
+
+### Queue Iteration and Operations
+* What happens if a queue is modified while it is being iterated over?
+* How do fail-fast and weakly consistent iterators differ?
+* Why is repeatedly calling `size()` in a concurrent queue loop potentially problematic?
+* How would you safely drain multiple elements from a BlockingQueue?
+* How would you remove selected elements from a queue while preserving the required ordering?
+* What are the trade-offs between polling one element at a time and using `drainTo()`?
+
+### Queue Performance and Complexity
+* How would you compare ArrayDeque, LinkedList, and PriorityQueue for a given workload?
+* How does object allocation affect LinkedList queue performance?
+* How does heap maintenance affect PriorityQueue performance?
+* Why can an unbounded queue cause memory problems even when individual operations are fast?
+* How would you select a bounded queue capacity for a producer-consumer application?
+* How would you benchmark queue implementations fairly?
+

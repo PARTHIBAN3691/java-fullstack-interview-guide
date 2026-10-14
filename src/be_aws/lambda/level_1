@@ -1,0 +1,20 @@
+* Explain the lifecycle of a Java AWS Lambda invocation.
+* What is the difference between the `RequestHandler` and `RequestStreamHandler` interfaces in the Java Lambda runtime?
+* How do you configure a Java Lambda function using the AWS Management Console, CLI, or infrastructure as code?
+* How do you package a Java Lambda application using Maven or Gradle?
+* What is the difference between a ZIP deployment package and a container image deployment?
+* How do you configure environment variables and external configuration for a Lambda function?
+* How does the Lambda execution role differ from the IAM permissions of the user deploying the function?
+* How can a Lambda function securely access Amazon S3, DynamoDB, or Secrets Manager?
+* What is a Lambda layer, and when would you use one in a Java application?
+* What is the difference between reserved concurrency and provisioned concurrency?
+* What is AWS Lambda cold start, and how can you reduce its impact on Java applications?
+* What is AWS Lambda SnapStart, and how can it improve Java startup performance?
+* How do you reuse database connections and SDK clients across Lambda invocations?
+* What happens when a Lambda function times out or throws an exception?
+* How does retry behavior differ between synchronous and asynchronous Lambda invocations?
+* How do Lambda dead-letter queues and destinations help with failed asynchronous invocations?
+* How can you configure Amazon API Gateway to invoke a Java Lambda function?
+* How does Lambda integrate with Amazon SQS, and what is an event source mapping?
+* How can you monitor Lambda duration, errors, throttles, and concurrency using CloudWatch?
+* How do you write unit and integration tests for a Java Lambda function?

@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of an asynchronous operation in Node.js.
+* How does the event loop coordinate callbacks and asynchronous I/O?
+* What happens internally when setTimeout() is executed?
+* How does process.nextTick() differ from Promise.then()?
+* What is the execution priority between process.nextTick() and Promise microtasks in CommonJS?
+* How does microtask execution differ between CommonJS and ES modules?
+* What happens when multiple Promise callbacks are queued?
+* How does Node.js process timers with different delays?
+* Is setTimeout(fn, 0) guaranteed to execute immediately?
+* How does setImmediate() behave when called inside an I/O callback?
+* Why can the execution order of setTimeout() and setImmediate() vary?
+* How does the poll phase handle incoming I/O events?
+* What happens when there are no pending callbacks or active handles?
+* How does Node.js handle file-system operations without blocking the main thread?
+* What is the role of the libuv thread pool?
+* Which Node.js operations commonly use the libuv thread pool?
+* What is the default size of the libuv thread pool?
+* How can you configure the libuv thread pool size?
+* What is the difference between asynchronous I/O and thread-pool execution?
+* How do CPU-intensive tasks affect event-loop responsiveness?
+* What is event-loop blocking?
+* How do Promises affect event-loop execution?
+* Can an infinite Promise chain block the event loop?
+* What is event-loop starvation?
+* How can recursive process.nextTick() calls starve I/O operations?
+* How do you measure event-loop delay in Node.js?
+* What is the purpose of monitorEventLoopDelay()?
+* How do worker threads help with CPU-intensive operations?
+* What is the difference between worker_threads and the libuv thread pool?
+* How do you debug unexpected callback execution order in Node.js?

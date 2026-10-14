@@ -1,0 +1,119 @@
+**Enterprise CI/CD Platform**
+* Design a multi-tenant CI/CD control plane and execution plane that supports thousands of pipelines, isolated runners, and geographically distributed teams.
+* How would you guarantee artifact immutability, provenance, and reproducibility across heterogeneous build environments?
+* How would you design pipeline authorization so that a compromised repository cannot obtain production deployment credentials?
+* How would you handle a CI platform outage during a critical security patch release while preserving integrity and auditability?
+
+**Zero-Downtime Deployment Architecture**
+* Design a release architecture supporting independently deployed microservices, incompatible schema changes, and progressive traffic shifting.
+* How would you guarantee safe rollback when a release has already performed irreversible business operations?
+* How would you prevent simultaneous deployments from causing dependency incompatibilities across hundreds of services?
+* How would you design automated release analysis that distinguishes deployment-induced failures from unrelated production incidents?
+
+**Multi-Region Deployment Platform**
+* Design an active-active architecture that addresses regional failure, data consistency, traffic routing, and regional capacity constraints.
+* How would you maintain correctness for globally distributed writes when network partitions prevent coordination?
+* How would you prevent split-brain and duplicate processing during failover and failback?
+* How would you design progressive regional rollouts with independent health criteria and controlled blast radius?
+
+**Kubernetes Platform for Multiple Teams**
+* Design a multi-tenant Kubernetes platform supporting regulated workloads, privileged platform components, and teams with different trust levels.
+* How would you choose between shared clusters, dedicated clusters, and account-level isolation for different workload classes?
+* How would you enforce admission control, runtime security, network segmentation, and resource governance consistently across clusters?
+* How would you upgrade cluster versions, service meshes, and critical operators across hundreds of clusters without systemic disruption?
+
+**Secure DevSecOps Pipeline**
+* Design a zero-trust software supply-chain architecture from source commit through build, signing, artifact storage, and runtime verification.
+* How would you defend against compromised build agents, malicious dependencies, poisoned caches, and artifact substitution?
+* How would you design risk-based vulnerability policies that account for exploitability, reachability, compensating controls, and remediation deadlines?
+* How would you recover trust after a signing key or CI runner fleet is compromised?
+
+**GitOps-Based Deployment Architecture**
+* Design a GitOps architecture for hundreds of clusters, multiple regions, hierarchical configuration, and controlled production promotion.
+* How would you resolve conflicting configuration ownership between platform policies, team repositories, and emergency production changes?
+* How would you prevent a malicious or erroneous Git change from propagating across the entire fleet?
+* How would you design disaster recovery for GitOps controllers, repositories, credentials, and reconciliation state?
+
+**Enterprise Observability Platform**
+* Design a telemetry platform that ingests metrics, logs, and traces from thousands of services while meeting availability and retention requirements.
+* How would you control telemetry cardinality, sampling bias, ingestion bursts, and backend cost without losing critical diagnostic signals?
+* How would you design tenant isolation, data residency, access controls, and sensitive-data redaction across observability backends?
+* How would you prevent an observability-platform outage from causing alerting blindness during an application incident?
+
+**Centralized Logging for Microservices**
+* Design a resilient, multi-region logging architecture with buffering, backpressure, durable ingestion, searchable storage, and archival.
+* How would you preserve ordering and correlation for critical audit events while scaling ingestion horizontally?
+* How would you handle malformed events, duplicate delivery, replay, schema evolution, and ingestion failures?
+* How would you provide rapid incident search while meeting long-term retention and immutable audit requirements?
+
+**Highly Available Production Platform**
+* Design a platform that meets strict availability objectives despite failures across compute, networking, identity, DNS, storage, and external dependencies.
+* How would you model correlated failures and shared dependencies when calculating end-to-end availability?
+* How would you design overload protection and graceful degradation for traffic surges combined with partial dependency failures?
+* How would you prevent failover from overloading the surviving capacity and triggering a second outage?
+
+**Disaster Recovery for Cloud Workloads**
+* Design a recovery architecture for critical workloads with distinct RTO/RPO targets, cross-region replication, immutable backups, and automated recovery.
+* How would you recover when the primary cloud account, identity provider, or infrastructure automation credentials are compromised?
+* How would you ensure database consistency across distributed services during a coordinated recovery?
+* How would you validate recovery objectives continuously without depending exclusively on annual disaster recovery exercises?
+
+**Multi-Cloud DevOps Strategy**
+* Design a multi-cloud operating model that balances portability, resilience, security, compliance, and provider-native capabilities.
+* How would you handle inconsistent identity models, networking, policy engines, managed services, and observability across providers?
+* How would you design application failover when cloud-native databases have incompatible replication and consistency models?
+* How would you determine whether active-active multi-cloud, warm standby, or a single primary provider with secondary recovery is justified?
+
+**Internal Developer Platform**
+* Design an internal developer platform with a service catalog, self-service provisioning, reusable templates, policy enforcement, and production readiness checks.
+* How would you make the platform extensible without allowing inconsistent security, observability, and deployment practices?
+* How would you design platform APIs and lifecycle management to avoid tightly coupling every application to one implementation?
+* How would you measure platform value through developer experience, cognitive load, delivery performance, reliability, and total cost?
+
+**Scalable Container Platform**
+* Design a container platform that scales across regions and clusters while supporting workloads with very different resource, isolation, and latency requirements.
+* How would you handle scheduler bottlenecks, control-plane limits, IP exhaustion, registry outages, and autoscaler lag at scale?
+* How would you design safe cluster upgrades when workloads use stateful storage, disruption budgets, and strict availability objectives?
+* How would you establish workload placement policies that account for fault domains, capacity reservations, latency, and cost?
+
+**Automated Infrastructure Provisioning**
+* Design an enterprise provisioning platform with self-service requests, reusable modules, policy-as-code, approvals, drift detection, and automated teardown.
+* How would you recover from a partially completed deployment when resources were created but state persistence failed?
+* How would you enforce organizational guardrails across Terraform, cloud-native templates, and manually created resources?
+* How would you design infrastructure provisioning that remains secure and recoverable when the central state backend is unavailable?
+
+**Secure Secrets-Management Architecture**
+* Design a secrets architecture using workload identity, short-lived credentials, dynamic database secrets, automated rotation, and audited access.
+* How would you recover from a compromised root credential or secrets-management control plane?
+* How would you rotate encryption keys and secrets without breaking long-running applications or distributed transactions?
+* How would you prevent secret exposure through debug endpoints, crash dumps, telemetry, sidecars, and deployment metadata?
+
+**Self-Healing Production Platform**
+* Design a self-healing system that detects faults, diagnoses likely causes, chooses remediation, validates recovery, and escalates when automation fails.
+* How would you prevent automated remediation from creating cascading restarts, repeated failovers, or destructive recovery actions?
+* How would you combine SLO signals, dependency health, anomaly detection, and change events to decide when to remediate?
+* How would you make automated recovery safe for stateful services and operations that are not idempotent?
+
+**Low-Latency Deployment Architecture**
+* Design an end-to-end deployment platform with strict lead-time targets across source validation, build, testing, security verification, approval, and rollout.
+* How would you optimize a large monorepo pipeline without skipping transitive dependency tests or required compliance checks?
+* How would you design globally distributed runners and artifact caches while preserving isolation and supply-chain integrity?
+* How would you quantify and optimize deployment latency when approval queues, shared infrastructure, and test environments dominate execution time?
+
+**Cloud Cost Optimization Strategy**
+* Design a FinOps architecture that attributes shared infrastructure costs, forecasts spend, detects anomalies, and enforces workload-level budgets.
+* How would you optimize costs for highly variable workloads without violating SLOs during peak demand?
+* How would you allocate costs for shared Kubernetes clusters, observability platforms, networking, and idle standby regions?
+* How would you prioritize savings when recommendations conflict with resilience, security, performance, or engineering productivity?
+
+**CI/CD for Regulated Financial Applications**
+* Design an auditable release platform with immutable evidence, separation of duties, signed artifacts, traceable approvals, and controlled emergency changes.
+* How would you prove which source, dependencies, build environment, and approval chain produced a production artifact?
+* How would you maintain rapid security patch delivery when normal release approvals or audit systems are temporarily unavailable?
+* How would you design retention, access controls, evidence export, and recovery to meet applicable financial and organizational requirements?
+
+**Enterprise DevOps Operating Model**
+* Design an enterprise operating model spanning product teams, platform engineering, SRE, security, architecture, and compliance.
+* How would you scale shared platform governance without creating a centralized approval bottleneck for every release?
+* How would you align team-level delivery metrics with business outcomes and system-wide reliability?
+* How would you handle repeated SLO violations, conflicting ownership, and incentives that reward deployment speed over production quality?

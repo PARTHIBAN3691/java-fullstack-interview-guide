@@ -1,0 +1,30 @@
+* A Java Spring Boot application deployed to Azure App Service suddenly receives authorization failures when accessing Azure Key Vault; how would you investigate the root cause?
+* A production application uses hardcoded client secrets that are nearing expiration; how would you migrate to a more secure authentication approach without downtime?
+* A managed identity has been granted excessive permissions across multiple Azure resources; how would you assess and reduce its access safely?
+* A Java API accepts JWTs but unauthorized users can access restricted endpoints; how would you investigate the authentication and authorization configuration?
+* A production service starts receiving expired or invalid access tokens after an identity-provider configuration change; how would you diagnose and fix the issue?
+* A Key Vault secret is rotated, but the Java application continues using the old value; how would you update the secret-refresh strategy safely?
+* A security audit discovers passwords and access tokens in application logs; how would you contain the exposure, assess the impact, and prevent recurrence?
+* An Azure-hosted Java API is exposed to the internet even though it should be accessible only through a private network; how would you secure it?
+* A microservice can access a database directly despite not having the expected application role; how would you investigate the authorization boundary?
+* A Java service running in AKS cannot authenticate to Azure resources after a workload identity configuration change; how would you troubleshoot it?
+* A production API experiences a sudden increase in failed login attempts and suspicious requests; how would you investigate and respond using Azure security tools?
+* An attacker is suspected of obtaining a service principal credential; what immediate containment, investigation, and recovery steps would you take?
+* A developer accidentally commits a production secret to a source-code repository; how would you respond beyond simply deleting the commit?
+* A certificate used for outbound TLS communication expires unexpectedly and causes production API failures; how would you restore service and prevent recurrence?
+* A WAF begins blocking legitimate requests after a new API deployment; how would you investigate the rule triggers without weakening security unnecessarily?
+* A Java application needs to call Microsoft Graph and an internal API, but the current permission configuration grants excessive access; how would you redesign it?
+* A third-party library used by a Spring Boot application has a critical vulnerability; how would you assess exploitability, prioritize remediation, and validate the fix?
+* A developer can access production secrets despite being assigned only a development role; how would you investigate RBAC inheritance and access paths?
+* A private endpoint has been configured for Azure SQL Database, but the application continues connecting through a public endpoint; how would you troubleshoot DNS and network routing?
+* A security policy blocks a production deployment because a resource configuration violates compliance requirements; how would you resolve the issue without bypassing governance controls?
+* An application continues to operate after its managed identity permissions are revoked; how would you determine whether cached tokens, existing connections, or another identity explain the behavior?
+* A multi-tenant Spring Boot application accidentally exposes one tenant's records to another tenant; how would you investigate and correct the authorization and data-isolation flaws?
+* Azure Monitor reports repeated Key Vault access failures from an unfamiliar workload; how would you distinguish a misconfiguration from a possible security incident?
+* A production application must continue operating during a temporary Key Vault outage; how would you design caching and failure handling without creating unacceptable secret-exposure risks?
+* An Azure DevOps pipeline deploys an application using a highly privileged service connection; how would you replace it with a least-privilege identity?
+* A penetration test identifies SQL injection and broken access control in a Java REST API; how would you prioritize remediation and verify that the vulnerabilities are fixed?
+* A security team suspects that sensitive data is being exfiltrated from an Azure-hosted application; how would you investigate network activity, identity events, and application telemetry?
+* A Java application works in development but fails in production because outbound network access is restricted; how would you identify the required dependencies and preserve network security?
+* A user reports that MFA is being bypassed for a sensitive application; how would you investigate conditional access, token flows, and application-level controls?
+* An enterprise needs to demonstrate that only authorized identities can access production resources and secrets; how would you collect evidence and validate the controls?

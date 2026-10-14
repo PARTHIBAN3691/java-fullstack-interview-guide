@@ -1,0 +1,30 @@
+* Explain how React schedules and executes useEffect callbacks.
+* What is the difference between the render phase and the commit phase for effects?
+* Why does useEffect run after the browser has had an opportunity to paint?
+* How does useEffect behave during concurrent rendering?
+* How does React Strict Mode help detect unsafe effect logic?
+* Why might an effect run twice during development but not production?
+* How do you make an effect safe when React performs an extra setup and cleanup cycle?
+* How do stale closures cause bugs in asynchronous effects?
+* How do you design effects that depend on frequently changing objects or functions?
+* How can useMemo and useCallback help stabilize effect dependencies?
+* Why should useMemo and useCallback not be used as substitutes for correct effect logic?
+* How do you prevent race conditions when multiple asynchronous operations run inside an effect?
+* How do you ensure that only the latest API response updates component state?
+* What is the difference between aborting a request and ignoring its stale response?
+* How do you coordinate multiple dependent API requests inside useEffect?
+* How do you avoid waterfalls and duplicate requests caused by effects?
+* Why can fetching data directly in useEffect be inefficient in larger applications?
+* When should you use a server-state library instead of manually fetching data in useEffect?
+* How do you design a custom hook that safely manages subscriptions?
+* How do you prevent memory leaks caused by effects?
+* How do effects interact with component identity and React keys?
+* How do you handle effects when a component mounts and unmounts rapidly?
+* What is the difference between useEffect and useLayoutEffect in performance-sensitive components?
+* How do you handle DOM measurements without causing visible layout flicker?
+* How do you use useEffect to integrate third-party JavaScript libraries?
+* How do you synchronize state with an external system without creating update loops?
+* How do you design effects for applications that use server-side rendering?
+* Why does useEffect not execute during server-side rendering?
+* How do you test effect behavior under Strict Mode?
+* How would you refactor a component containing many interdependent effects into maintainable custom hooks?

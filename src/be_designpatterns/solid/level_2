@@ -1,0 +1,30 @@
+* How would you redesign a legacy Java application in which several classes violate multiple SOLID principles?
+* How can you apply SRP without creating too many small classes?
+* How do you determine the correct responsibility boundaries for classes in a domain-driven design?
+* How would you design an extensible payment-processing framework that follows all five SOLID principles?
+* How can OCP be achieved without introducing an excessive number of interfaces and abstractions?
+* How would you detect subtle LSP violations involving preconditions, postconditions, and invariants?
+* How does the Liskov Substitution Principle relate to behavioral subtyping?
+* How would you handle a subclass that requires stricter validation than its superclass?
+* How can ISP be applied to versioned REST APIs and evolving service contracts?
+* How would you apply DIP across multiple layers in a hexagonal architecture?
+* How do SOLID principles influence ports-and-adapters architecture?
+* How would you prevent an abstraction from leaking database-specific behavior into the domain layer?
+* How can SOLID principles be applied when using event-driven architecture?
+* How would you design an extensible rules engine that supports new rules without modifying existing implementations?
+* How can you balance DIP with the complexity introduced by dependency injection containers?
+* How would you refactor a service with many injected dependencies while preserving SRP?
+* How do you distinguish a genuine SRP violation from a class that legitimately coordinates multiple collaborators?
+* How can OCP conflict with simplicity when business requirements change unpredictably?
+* How would you evaluate whether inheritance or composition is more appropriate for a framework extension point?
+* How can SOLID principles help isolate changes caused by third-party library upgrades?
+* How would you design interfaces that remain stable while implementations evolve independently?
+* How can the Interface Segregation Principle be applied to large enterprise service contracts?
+* How would you apply SOLID principles to asynchronous processing with message queues?
+* How do SOLID principles affect transaction boundaries in Spring services?
+* How would you redesign a monolithic service that mixes authorization, business rules, persistence, and external API calls?
+* How can you apply SOLID while maintaining backward compatibility for existing consumers?
+* How would you use static analysis, architecture tests, and code reviews to identify SOLID violations?
+* How can SOLID principles improve fault isolation and testability in distributed systems?
+* How would you measure the practical benefits of a SOLID-based refactoring?
+* Can strict adherence to SOLID make an application harder to understand, and how would you avoid that?

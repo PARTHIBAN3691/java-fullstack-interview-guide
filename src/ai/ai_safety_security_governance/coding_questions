@@ -1,0 +1,94 @@
+**Responsible AI**
+* Implement a pre-deployment checklist validator that checks whether an AI release has documented intended use, risk classification, evaluation results, and approval status.
+* Build a reporting component that combines safety, fairness, privacy, and performance metrics into a release-readiness report.
+* Write tests that prevent deployment when required Responsible AI evidence is missing or a mandatory acceptance criterion fails.
+
+**AI Risk Management**
+* Implement an AI risk register with likelihood, impact, mitigation, ownership, residual risk, and review dates.
+* Build a risk-scoring function that classifies AI use cases using configurable criteria and approval thresholds.
+* Write tests that verify high-risk changes trigger reassessment and cannot be deployed without the required approvals.
+
+**Hallucination Detection and Mitigation**
+* Implement a claim-extraction and evidence-matching pipeline that compares generated claims with retrieved source passages.
+* Build a citation validator that verifies source references and flags citations that do not support the associated claims.
+* Write an evaluation harness that measures unsupported-claim rates, abstention rates, and answer coverage on a labeled dataset.
+
+**Prompt Injection**
+* Implement a content-processing pipeline that distinguishes trusted application instructions from untrusted external text.
+* Build an authorization layer that blocks tool execution unless an independent policy check permits the requested action.
+* Write adversarial tests for direct and indirect prompt injection through documents, retrieved passages, and tool outputs.
+
+**Jailbreak Attacks**
+* Build a test harness that evaluates an LLM against a configurable set of adversarial prompts and safety criteria.
+* Implement a moderation pipeline that records detection outcomes, policy decisions, and false-positive and false-negative labels.
+* Write regression tests that compare jailbreak resistance and legitimate-request completion across model versions.
+
+**Data Poisoning**
+* Implement a dataset-quality pipeline that detects suspicious duplicates, label inconsistencies, anomalous samples, and unexpected distribution shifts.
+* Build a provenance validator that verifies data source identifiers, integrity hashes, and approval status before training.
+* Write tests that identify rare trigger patterns and flag suspicious correlations between inputs and target labels.
+
+**Model Inversion and Data Leakage**
+* Implement a privacy evaluation harness that tests a model for memorized-string exposure using controlled synthetic canary examples.
+* Build a response scanner that identifies possible sensitive-data disclosure before an output is delivered.
+* Write tests that evaluate access boundaries and leakage detection while avoiding the use of real confidential data in test fixtures.
+
+**Sensitive Information and PII Protection**
+* Implement a PII detection and redaction pipeline for prompts, retrieved content, tool arguments, and model responses.
+* Build a data-retention service that tracks sensitive data across logs, caches, vector stores, and derived artifacts.
+* Write tests that verify unauthorized sensitive values are redacted and deletion requests propagate to registered storage systems.
+
+**AI Output Validation**
+* Implement a structured-output validator that checks model-generated JSON against a schema and domain-specific business rules.
+* Build a safe execution pipeline that validates AI-generated SQL or commands, checks authorization, and requires approval for destructive operations.
+* Write tests for malformed output, valid schemas with invalid business values, and changes to execution context after validation.
+
+**Content Moderation**
+* Implement an input and output moderation middleware that supports configurable categories, thresholds, and policy actions.
+* Build an evaluation script that calculates precision, recall, false-positive rate, and false-negative rate from labeled moderation data.
+* Write tests for multilingual inputs, ambiguous contexts, malformed payloads, and moderation-service failures.
+
+**Guardrails and Policy Enforcement**
+* Implement a policy engine that evaluates AI requests and tool actions against configurable allow, deny, and escalation rules.
+* Build middleware that applies input validation, tool authorization, output inspection, and audit logging.
+* Write tests that verify prohibited actions remain blocked when the LLM ignores instructions or the policy service becomes unavailable.
+
+**AI Access Control**
+* Implement role-based or attribute-based authorization for AI tools, resources, and downstream operations.
+* Build a RAG retrieval filter that enforces document-level permissions before returning content to the model.
+* Write tests for cross-tenant isolation, revoked permissions, delegated identities, and privilege-escalation attempts.
+
+**AI Supply-Chain Security**
+* Implement an artifact manifest that records model hashes, dataset versions, library dependencies, licenses, and provenance metadata.
+* Build a deployment gate that verifies artifact integrity and checks dependencies against a configurable vulnerability policy.
+* Write tests that reject unapproved artifacts, mismatched hashes, and missing provenance records.
+
+**Model Governance and Auditability**
+* Implement an audit-event service that records model versions, prompt and policy versions, source references, tool calls, approvals, and outcome metadata.
+* Build a model registry integration that links each release to its evaluation reports, risk assessment, and deployment history.
+* Write tests that verify audit records are tamper-evident, access-controlled, and sanitized of unnecessary sensitive data.
+
+**Explainability and Transparency**
+* Implement a response formatter that attaches source citations, uncertainty indicators, and known limitations to generated answers.
+* Build an explanation-evaluation pipeline that checks whether each explanation claim is supported by available evidence.
+* Write tests that detect missing citations, unsupported explanations, and misleading confidence statements.
+
+**Bias and Fairness**
+* Implement an evaluation script that calculates group-level performance and selected fairness metrics from labeled predictions.
+* Build a monitoring component that detects disparities and distribution shifts across approved evaluation groups.
+* Write tests that verify metric calculations, minimum sample-size requirements, and handling of missing or unreliable group data.
+
+**Copyright and Data Provenance**
+* Implement a data-lineage registry that tracks source URLs or identifiers, licenses, collection dates, transformations, and training runs.
+* Build a provenance lookup that connects generated response citations and model releases to available source records.
+* Write tests that flag missing license metadata and propagate approved removal requests through downstream data assets.
+
+**Regulatory Compliance**
+* Implement a compliance-control registry that maps applicable requirements to technical controls, evidence artifacts, owners, and review dates.
+* Build an automated report that identifies missing compliance evidence and overdue control reviews.
+* Write tests that prevent release when mandatory jurisdiction-specific controls or approval records are missing.
+
+**Human Oversight**
+* Implement an escalation engine that routes AI decisions to reviewers based on risk level, confidence thresholds, and policy rules.
+* Build an approval workflow that records reviewer identity, decision, rationale, timestamp, and the exact action approved.
+* Write tests that verify expired approvals, altered action payloads, missing reviewers, and unavailable approval services cannot authorize prohibited operations.

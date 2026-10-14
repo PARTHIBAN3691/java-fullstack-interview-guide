@@ -1,0 +1,105 @@
+# Core Java — Collections — Map
+## Level 1 — Medium
+
+### Map Fundamentals
+* Why is Map not a subtype of the Collection interface?
+* What is the difference between a Map's collection views and independent copies?
+* What happens when a Map key is modified after insertion?
+* How does Map distinguish between an absent key and a key mapped to null?
+* What is the difference between an unmodifiable Map and an immutable Map?
+* How would you choose a Map implementation based on ordering, concurrency, and performance requirements?
+
+### HashMap
+* Explain the internal working of HashMap at a high level.
+* How does HashMap calculate the bucket index from a key's hash?
+* What happens when multiple keys map to the same bucket?
+* What is a hash collision?
+* What is the load factor in HashMap?
+* What is the purpose of resizing in HashMap?
+* What is the difference between initial capacity and threshold?
+* How does HashMap handle collisions using linked nodes and tree bins?
+* What problems can arise when a key's `hashCode()` changes after insertion?
+* Why should mutable objects generally be avoided as HashMap keys?
+
+### LinkedHashMap
+* How does LinkedHashMap maintain insertion order?
+* How does access-order LinkedHashMap differ from insertion-order LinkedHashMap?
+* How can LinkedHashMap be used to implement a simple least-recently-used cache?
+* What is the purpose of `removeEldestEntry()`?
+* What is the memory overhead of LinkedHashMap compared with HashMap?
+* How would you implement a bounded cache using LinkedHashMap?
+
+### TreeMap
+* How does TreeMap maintain sorted key order?
+* What is the role of Comparable and Comparator in TreeMap?
+* What happens when a Comparator considers two distinct keys equal?
+* What are `firstKey()`, `lastKey()`, `lowerKey()`, `higherKey()`, and `subMap()` used for?
+* What is the average time complexity of TreeMap operations?
+* How would you sort custom objects as TreeMap keys?
+* What problems can occur when a TreeMap Comparator is inconsistent with `equals()`?
+
+### Hashtable
+* Why are Hashtable methods synchronized?
+* Why can Hashtable perform poorly under high concurrency?
+* What is the difference between Hashtable and ConcurrentHashMap?
+* Why is ConcurrentHashMap generally preferred for modern concurrent applications?
+* How would you migrate a legacy Hashtable-based application to a modern Map implementation?
+
+### Map Iteration and Views
+* What is the difference between fail-fast iteration and weakly consistent iteration?
+* What happens when a Map is structurally modified during iteration?
+* How do Map views reflect changes made to the underlying Map?
+* How would you safely remove entries while iterating over a Map?
+* Why can iterating through `keySet()` and calling `get()` be less efficient than iterating through `entrySet()`?
+* What is the difference between a backed view and a snapshot copy?
+
+### Map Methods and Utilities
+* What is the difference between `computeIfAbsent()`, `computeIfPresent()`, and `compute()`?
+* How does `merge()` work?
+* What is the difference between `replaceAll()` and `forEach()`?
+* How do you merge two Maps when duplicate keys are present?
+* What happens when `Collectors.toMap()` encounters duplicate keys?
+* How do you collect duplicate keys using a custom merge function?
+* How would you handle null values when using Map convenience methods?
+
+### Hashing and Key Equality
+* Explain the contract between `equals()` and `hashCode()`.
+* What happens if two equal objects return different hash codes?
+* What happens if two unequal objects return the same hash code?
+* Why should `equals()` and `hashCode()` use consistent fields?
+* How can a poorly implemented `hashCode()` degrade Map performance?
+* How would you diagnose a Map lookup that fails for a key that appears to exist?
+
+### Generics and Map
+* How would you define a Map whose values can be instances of multiple related classes?
+* What is the difference between `Map<String, Number>` and `Map<String, ? extends Number>`?
+* How do wildcards affect reading and writing Map values?
+* How would you write a generic method that copies entries from one Map into another?
+* What is the difference between `Map<? extends K, ? extends V>` and `Map<K, V>`?
+* How do type erasure and raw Map types create runtime risks?
+
+### Concurrent Maps
+* How does ConcurrentHashMap support concurrent access?
+* How does ConcurrentHashMap differ between older Java implementations and modern Java implementations?
+* What is the purpose of atomic Map operations such as `compute()` and `putIfAbsent()`?
+* Why is `containsKey()` followed by `put()` not necessarily atomic?
+* What consistency guarantees do ConcurrentHashMap iterators provide?
+* When would you use ConcurrentHashMap instead of synchronizing a HashMap?
+* What are the limitations of using ConcurrentHashMap for compound business operations?
+
+### Map and Streams
+* How do you group objects into a Map using `Collectors.groupingBy()`?
+* How do you count occurrences of each word using a Map and Streams?
+* How do you sort a Map by value while preserving the resulting order?
+* How do you convert a List of objects into a Map using a selected key and value?
+* How do you handle duplicate keys when collecting a Stream into a Map?
+* What is the difference between `groupingBy()` and `toMap()`?
+* How do you create a Map with a specific implementation using Stream collectors?
+
+### Map Performance and Complexity
+* What factors determine the performance of HashMap lookups?
+* How do capacity and load factor influence resizing frequency and memory usage?
+* Why can frequent resizing increase application latency?
+* How would you estimate the initial capacity for a Map with a known number of entries?
+* Why might TreeMap be a better choice than HashMap despite its higher average operation cost?
+* How would you measure Map performance under realistic workloads?

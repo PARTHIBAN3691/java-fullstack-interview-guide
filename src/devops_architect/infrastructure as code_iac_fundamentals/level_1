@@ -1,0 +1,30 @@
+* How would you structure a Terraform project for multiple environments such as development, staging, and production?
+* How do Terraform providers communicate with cloud platforms?
+* How would you configure and pin provider versions in a Terraform project?
+* What is the difference between a Terraform resource, data source, variable, and output?
+* How would you design reusable Terraform modules for networking, compute, and database infrastructure?
+* What are the advantages and disadvantages of deeply nested Terraform modules?
+* How would you pass variables and outputs between Terraform modules?
+* What is the difference between root modules and child modules?
+* How would you manage Terraform state in a team environment?
+* How would you configure remote state using an object-storage backend?
+* How does state locking prevent concurrent infrastructure modifications?
+* What would you do if a Terraform state lock remained after a failed pipeline?
+* What is the difference between Terraform workspaces and separate environment configurations?
+* How would you manage sensitive input variables and outputs?
+* How does Terraform's `sensitive` attribute work, and what limitations does it have?
+* What is the difference between `count` and `for_each` in Terraform?
+* How do `depends_on` and Terraform's implicit dependency graph work?
+* How do `create_before_destroy`, `prevent_destroy`, and `ignore_changes` affect resource lifecycle?
+* What is the difference between refreshing state, planning changes, and applying changes?
+* How would you detect infrastructure drift when configuration is not frequently applied?
+* What is the difference between importing existing infrastructure and recreating it?
+* How would you handle a resource that was deleted manually outside Terraform?
+* How would you test Terraform modules before deploying infrastructure?
+* How would you validate Terraform code using formatting, validation, linting, and security scanning?
+* How would you detect publicly exposed storage, overly permissive security groups, and unencrypted resources in IaC?
+* How would you manage secrets required during infrastructure provisioning?
+* How do CloudFormation stacks and change sets work?
+* What are the differences between Terraform state management and CloudFormation's resource tracking?
+* How does Pulumi use general-purpose programming languages to define infrastructure?
+* How would you implement an infrastructure provisioning pipeline with plan review, approval, and controlled apply stages?

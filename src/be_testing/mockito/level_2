@@ -1,0 +1,31 @@
+* Explain how Mockito creates and manages mock objects internally.
+* How does Mockito use Byte Buddy to create mocks?
+* What is the difference between mocking, stubbing, and verification?
+* How does Mockito handle method calls that have not been explicitly stubbed?
+* What are Mockito default answers?
+* What is RETURNS_DEFAULTS in Mockito?
+* What is RETURNS_SMART_NULLS?
+* What is RETURNS_DEEP_STUBS and why should it generally be used carefully?
+* How do strict stubs work in Mockito?
+* What is UnnecessaryStubbingException?
+* What is PotentialStubbingProblem?
+* How do strictness settings affect Mockito tests?
+* What is lenient() in Mockito and when should it be used?
+* How do you mock static methods using Mockito?
+* What is MockedStatic?
+* What are the risks of mocking static methods?
+* How do you mock constructors using Mockito?
+* What is MockedConstruction?
+* How do you mock final classes and final methods in modern Mockito?
+* What is the difference between Mockito core and Mockito inline capabilities?
+* How do you mock private methods, and why is it generally discouraged?
+* How do spies work in Mockito?
+* What is the difference between spy() and mock()?
+* What is the difference between @Spy and @Mock?
+* What problems can occur when using spies?
+* Why can when(spy.method()) cause unexpected behavior?
+* How does doReturn() differ from when() when working with spies?
+* How do you partially mock an object using Mockito?
+* How do you mock a generic method safely?
+* How do you test asynchronous code using Mockito?
+* What are the limitations of Mockito when testing highly coupled code?

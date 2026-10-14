@@ -1,0 +1,30 @@
+* A node suddenly becomes unreachable, but it may still be processing requests. How would you handle this situation?
+* Two nodes believe they are the leader simultaneously. How would you prevent conflicting writes?
+* A network partition separates a distributed database into two groups. How should each group behave?
+* A service becomes unavailable because one of its downstream dependencies is slow. How would you prevent cascading failures?
+* A message is delivered multiple times to a payment consumer. How would you prevent duplicate financial transactions?
+* Messages arrive out of order and produce an incorrect account balance. How would you restore correct processing?
+* A distributed lock expires while the original process is still running. How would you prevent stale writes?
+* A leader crashes immediately after acknowledging a write. How would you determine whether the write survives failover?
+* Replication lag causes users to see outdated information after updating their profiles. How would you address it?
+* A distributed service experiences intermittent timeouts even though all nodes appear healthy. How would you investigate?
+* A retry storm overloads a service after a temporary outage. How would you prevent recurrence?
+* One partition receives most of the traffic and becomes a bottleneck. How would you rebalance the workload?
+* A message broker is unavailable while producers continue generating events. How would you handle buffering, backpressure, and recovery?
+* A consumer crashes after updating the database but before acknowledging a message. How would you prevent duplicate business effects?
+* Two regions accept conflicting updates to the same customer record. How would you reconcile the changes?
+* A distributed cache contains stale data after a database update. How would you design invalidation and consistency?
+* A dependency failure causes requests to accumulate and exhaust application threads. How would you contain the failure?
+* A distributed transaction updates two services, but the second service fails. How would you restore business consistency?
+* A service deployment introduces incompatible message formats between old and new consumers. How would you handle the rollout?
+* A node rejoins a cluster after being offline for several hours. How would it synchronize its state safely?
+* A distributed system reports successful writes but loses recent data after a regional failover. How would you investigate?
+* A scheduled job executes simultaneously on multiple application instances. How would you ensure only the intended work is performed?
+* A distributed rate limiter produces inconsistent request limits across regions. How would you improve its accuracy?
+* A system must process millions of events while preserving order per customer. How would you partition and consume the events?
+* Clock differences between servers cause events to appear in the wrong order. How would you handle ordering correctly?
+* A service discovery registry contains stale instances, causing requests to fail intermittently. How would you resolve the problem?
+* A distributed system must continue accepting orders during a temporary inventory-service outage. How would you balance availability and correctness?
+* A cluster loses quorum after multiple node failures. What operations should remain available, and how would recovery work?
+* A new region must be added without significant downtime or data inconsistency. How would you migrate traffic and replicate state?
+* How would you investigate a production incident involving elevated latency, increased retries, and partial data inconsistency across multiple services?

@@ -1,0 +1,30 @@
+* How would you design a microservices platform capable of handling millions of requests per minute?
+* How do you estimate infrastructure capacity for an expected increase in traffic?
+* How do you calculate the number of service instances required for a target throughput and latency?
+* How do you design horizontal scaling when services have uneven traffic patterns?
+* How do you prevent autoscaling delays from causing service degradation during sudden traffic spikes?
+* How do you choose scaling metrics beyond CPU and memory utilization?
+* How do you design predictive autoscaling for workloads with recurring traffic patterns?
+* How do you avoid autoscaling oscillations and unnecessary infrastructure costs?
+* How do you design a distributed caching strategy for a high-read, low-latency application?
+* How do you maintain cache consistency across multiple application instances?
+* How do you prevent cache stampedes, cache penetration, and hot-key problems?
+* How do you design a data partitioning strategy that avoids hot partitions?
+* How do you scale writes when a single relational database becomes the bottleneck?
+* How do you choose between database sharding, partitioning, replication, and denormalization?
+* How do you handle cross-shard queries and transactions?
+* How do you scale a Kafka-based event-processing system while preserving required ordering guarantees?
+* How do you manage consumer lag when event production exceeds processing capacity?
+* How do you design backpressure across a chain of synchronous and asynchronous microservices?
+* How do you prevent thread pool, connection pool, and queue saturation under sustained overload?
+* How do you optimize JVM garbage collection for high-throughput, low-latency services?
+* How do you design a service architecture that supports independent scaling of individual components?
+* How do you prevent a shared dependency from limiting the scalability of otherwise independent services?
+* How do you design multi-region deployments for global traffic distribution and low latency?
+* How do you scale a system while preserving tenant isolation and fair resource allocation?
+* How do you handle hot tenants that consume disproportionate amounts of shared resources?
+* How do you optimize service-to-service communication overhead at high request volumes?
+* How do you balance throughput, latency, availability, and infrastructure cost?
+* How do you design graceful load shedding when demand exceeds available capacity?
+* How do you establish capacity-planning practices using SLOs, load tests, and production telemetry?
+* How would you evolve a monolithic application into independently scalable microservices without introducing excessive network overhead?

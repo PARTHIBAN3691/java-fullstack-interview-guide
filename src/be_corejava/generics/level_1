@@ -1,0 +1,20 @@
+* What is the difference between bounded and unbounded type parameters?
+* What is an upper-bounded type parameter?
+* What is a lower-bounded wildcard?
+* What is an unbounded wildcard in Java?
+* What is the difference between `T`, `?`, and `Object` in generic declarations?
+* What is the difference between `List<?>`, `List<Object>`, and `List<T>`?
+* What is the purpose of the `extends` keyword in generic type bounds?
+* How does the `super` keyword work with generic wildcards?
+* What is the difference between `T extends Number` and `? extends Number`?
+* What is a bounded type parameter with multiple bounds?
+* Can a generic type parameter extend a class and implement multiple interfaces?
+* Why are generic types invariant in Java?
+* Why can't a `List<Integer>` be assigned to a `List<Number>` reference?
+* What is wildcard capture in Java generics?
+* What is the PECS principle, and how does it help when designing generic APIs?
+* Why can't generic type parameters be instantiated directly using `new T()`?
+* Why can't generic arrays be created directly?
+* Can static fields or static methods use a class's type parameter?
+* Can constructors be generic in Java?
+* What are bridge methods, and how are they related to type erasure?

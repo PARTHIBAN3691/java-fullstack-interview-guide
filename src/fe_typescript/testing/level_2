@@ -1,0 +1,30 @@
+* How would you design a comprehensive testing strategy for a large TypeScript application?
+* How do you decide which parts of an application should have unit, integration, or end-to-end tests?
+* How do you test complex business logic involving multiple dependent services?
+* How do you test asynchronous workflows with multiple Promises and error conditions?
+* How do you prevent flaky tests in asynchronous TypeScript applications?
+* How do you test concurrent operations and race conditions?
+* How do you mock complex dependency graphs without making tests brittle?
+* How do you test code that uses dependency injection containers?
+* How do you test event-driven systems implemented in TypeScript?
+* How do you test message producers and consumers without relying on external infrastructure?
+* How do you test retry mechanisms and exponential backoff logic?
+* How do you test caching logic, expiration policies, and cache invalidation?
+* How do you test transactional business logic involving multiple repositories?
+* How do you test code that interacts with external REST APIs?
+* How do you implement contract testing between TypeScript services?
+* What is the difference between consumer-driven contract testing and integration testing?
+* How do you test backward compatibility when API response models change?
+* How do you validate runtime data when TypeScript types are erased during compilation?
+* How do you combine schema validation with unit and integration testing?
+* How do you test database migrations and repository implementations?
+* How do you use test containers or disposable infrastructure for integration testing?
+* How do you test security-sensitive functionality such as authentication and authorization?
+* How do you test role-based access control in a TypeScript backend?
+* How do you test performance and scalability in a Node.js application?
+* How do you identify memory leaks through automated tests?
+* How do you test a TypeScript application that uses WebSockets?
+* How do you test worker threads and background jobs?
+* How do you improve mutation testing results in a TypeScript project?
+* How do you optimize test execution time in a large monorepo?
+* How do you establish meaningful quality gates using coverage, static analysis, and test results?

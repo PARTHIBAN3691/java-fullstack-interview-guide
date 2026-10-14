@@ -1,0 +1,15 @@
+* Write a Java program that creates objects and demonstrates when they become eligible for garbage collection.
+* Write a Java program that creates a large number of short-lived objects to study allocation pressure.
+* Write a Java program that creates and retains objects to simulate increasing heap occupancy.
+* Write a Java program that allocates large byte arrays to investigate humongous object allocation under G1 GC.
+* Write a Java program that intentionally retains object references and demonstrates a potential memory leak.
+* Write a Java program that uses `WeakReference` to observe how an object behaves after its strong reference is removed.
+* Write a Java program that uses `SoftReference` and examines its behavior under memory pressure.
+* Write a Java program that registers a `NotificationListener` with `GarbageCollectorMXBean` to capture garbage collection notifications.
+* Write a Java program using `MemoryMXBean` to monitor heap usage before and after garbage collection.
+* Write a Java program using `ManagementFactory` to report garbage collector names, collection counts, and collection times.
+* Write a Java program that repeatedly allocates objects and records memory usage at fixed intervals.
+* Write a Java program that generates GC logs using G1 GC and analyze the results using JVM logging options.
+* Write a Java program that generates allocation pressure and compare GC behavior with different heap sizes.
+* Write a Java program to compare garbage collection metrics when running with G1 GC and Parallel GC.
+* Write a Java program that uses JFR events to investigate allocation hotspots and garbage collection pauses.

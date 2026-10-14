@@ -1,0 +1,30 @@
+* Explain the React 19 rendering model and its relationship to concurrent rendering.
+* How do Actions integrate with React's transition and pending-state mechanisms?
+* How does useActionState coordinate asynchronous updates and form state?
+* How would you handle validation errors returned from a Server Function using useActionState?
+* How do you prevent duplicate form submissions in React 19?
+* How would you implement optimistic updates with useOptimistic and reconcile them with server responses?
+* What happens when an optimistic update fails, and how should the UI recover?
+* How does the use Hook integrate Promise resolution with Suspense?
+* What happens when a Promise passed to use rejects?
+* What are the constraints on Promises passed to the use Hook?
+* How does React preserve or reset state when a component suspends?
+* How do Server Components affect the client bundle and application architecture?
+* Explain the serialization constraints between Server Components and Client Components.
+* How do Server Functions cross the client-server boundary?
+* Why must Server Function inputs be validated on the server?
+* How would you secure Server Functions against unauthorized requests and tampered input?
+* How do React 19 Actions interact with caching and revalidation in a framework?
+* How would you design error boundaries for asynchronous form Actions?
+* How do ref-as-a-prop changes affect reusable component libraries?
+* How do callback ref cleanup functions work during unmounting and ref replacement?
+* What migration issues can arise from removing forwardRef in a React 19 codebase?
+* How do React 19 metadata hoisting and resource hints affect rendering and loading?
+* How would you prevent duplicate stylesheet insertion when components are dynamically loaded?
+* How does React 19 handle hydration errors compared with earlier versions?
+* How do you diagnose hydration mismatches involving dates, browser-only values, and server-rendered content?
+* How do React 19 improvements for custom elements affect property and attribute handling?
+* How would you test a component that uses useActionState, useFormStatus, and useOptimistic together?
+* How do you handle accessibility announcements for pending and optimistic UI states?
+* How would you profile a React 19 application using Actions and Server Components?
+* How would you plan a safe migration from React 18 to React 19 in a large production application?

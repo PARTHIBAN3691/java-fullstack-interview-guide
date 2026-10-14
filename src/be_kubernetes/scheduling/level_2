@@ -1,0 +1,30 @@
+* Explain the internal architecture and scheduling cycle of kube-scheduler.
+* How does kube-scheduler use scheduling plugins during filtering, scoring, reserving, binding, and post-binding?
+* What is the difference between the scheduling cycle and the binding cycle?
+* How does the scheduler account for CPU, memory, ephemeral storage, and extended resources?
+* How do Pod resource requests differ from actual resource consumption during scheduling?
+* How do init containers affect effective Pod resource requests?
+* How do Pod overhead and RuntimeClass affect scheduling calculations?
+* How does Kubernetes handle scheduling when a node has sufficient CPU but insufficient memory?
+* How do topology spread constraints interact with node affinity and taints?
+* What are the trade-offs between required and preferred Pod anti-affinity at large cluster scale?
+* How can strict Pod anti-affinity cause unschedulable workloads?
+* How would you design scheduling rules for a Java microservice that must have replicas across three availability zones?
+* How does Pod priority interact with preemption and PodDisruptionBudgets?
+* What limitations should be considered when using priority classes and preemption in production?
+* How does the scheduler handle Pods with persistent volumes tied to particular zones?
+* How can volume binding and node selection create scheduling deadlocks or unschedulable Pods?
+* How does the scheduler behave when a node becomes unhealthy during scheduling?
+* What are the implications of scheduling workloads on nodes with heterogeneous CPU architectures?
+* How would you schedule workloads that require GPUs or other extended resources?
+* How do custom scheduler profiles and scheduling plugins influence placement decisions?
+* When would you use a custom scheduler instead of the default Kubernetes Scheduler?
+* How would you investigate scheduling latency in a cluster with thousands of nodes and Pods?
+* How do scheduler cache updates and API-server state changes affect scheduling decisions?
+* How can scheduler scoring preferences lead to uneven resource utilization across nodes?
+* How do descheduler policies differ from scheduler placement decisions?
+* How would you rebalance workloads after adding new worker nodes to a cluster?
+* How do node pressure, kubelet eviction, and scheduler decisions interact?
+* How can overprovisioning improve scheduling responsiveness during sudden workload bursts?
+* How would you design scheduling policies for multi-tenant clusters with workload isolation and resource fairness?
+* How would you optimize scheduling for a large Spring Boot microservices platform while balancing availability, cost, and utilization?

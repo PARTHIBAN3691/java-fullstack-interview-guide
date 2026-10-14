@@ -1,0 +1,101 @@
+**LLMOps Fundamentals**
+* What is LLMOps, and how does it differ from traditional MLOps and DevOps?
+* What are the key stages of the LLMOps lifecycle?
+* Why are observability, evaluation, and monitoring important for production LLM applications?
+* What are the major operational challenges of deploying LLM-powered applications?
+
+**AI Application Monitoring**
+* What is AI application monitoring?
+* Which metrics should be monitored in a production AI application?
+* What is the difference between application health monitoring and AI quality monitoring?
+* How do logs, metrics, and traces help troubleshoot AI applications?
+
+**Prompt and Response Tracing**
+* What is prompt tracing in an LLM application?
+* What information should be captured for a model request and response?
+* Why is correlation between prompts, model responses, and user requests important?
+* What sensitive information should be excluded or masked in prompt traces?
+
+**Token Usage and Cost Tracking**
+* What are input tokens, output tokens, and total tokens?
+* How does token consumption affect LLM application cost?
+* Why should token usage be tracked for every model request?
+* What is the difference between estimated cost and actual provider-reported cost?
+
+**Latency and Throughput Monitoring**
+* What is latency in an LLM application?
+* What is the difference between time to first token and total response time?
+* What is throughput, and how is it measured in AI systems?
+* Why are p50, p95, and p99 latency metrics important?
+
+**Model Quality Monitoring**
+* What is model quality monitoring?
+* Which quality dimensions should be monitored in a production LLM application?
+* Why is production model quality different from offline benchmark performance?
+* How can user feedback help identify quality problems?
+
+**Retrieval and RAG Tracing**
+* What is retrieval tracing in a RAG application?
+* Which retrieval details should be captured for a query?
+* Why should retrieved documents and generated answers be correlated?
+* How can tracing help identify whether a RAG failure originated in retrieval or generation?
+
+**Agent Execution Tracing**
+* What is agent execution tracing?
+* What is the difference between tracing a single LLM call and tracing an entire agent workflow?
+* Why should tool calls and tool results be recorded?
+* What are agent execution steps, spans, and workflow identifiers?
+
+**Evaluation in Production**
+* What is production evaluation for an LLM application?
+* How does online evaluation differ from offline evaluation?
+* Why should production responses be sampled for quality evaluation?
+* What are the benefits of evaluating real user interactions?
+
+**Model Drift and Data Drift**
+* What is model drift?
+* What is data drift, and how does it differ from model drift?
+* What are common indicators of changing input distributions?
+* Why should drift monitoring be combined with quality monitoring?
+
+**Feedback Collection**
+* Why is user feedback important for AI applications?
+* What are explicit and implicit feedback signals?
+* How can thumbs-up and thumbs-down feedback be used to improve AI quality?
+* What information should be associated with a feedback record?
+
+**Incident Management for AI Systems**
+* What is an AI incident?
+* How does AI incident management differ from traditional application incident management?
+* What information should be included in an AI incident report?
+* Why should AI incidents have severity levels and escalation procedures?
+
+**Model and Prompt Versioning**
+* Why should model versions be tracked in production?
+* What is prompt versioning?
+* How can model and prompt version identifiers help reproduce a failure?
+* Why should changes to system prompts be reviewed and recorded?
+
+**Experiment Tracking**
+* What is experiment tracking in LLMOps?
+* Which parameters and results should be recorded for an AI experiment?
+* Why should experiments record model versions, prompts, datasets, and evaluation results?
+* How does experiment tracking support reproducibility?
+
+**AI Release Management**
+* What is AI release management?
+* How does releasing an LLM application differ from releasing a traditional software application?
+* What are canary releases and shadow deployments?
+* Why should an AI release have rollback criteria?
+
+**OpenTelemetry for AI Applications**
+* What is OpenTelemetry?
+* What are traces, spans, metrics, and logs in OpenTelemetry?
+* How can OpenTelemetry help monitor an LLM application?
+* What is distributed tracing, and why is it useful for AI microservices?
+
+**AI Audit Logs**
+* What are AI audit logs?
+* Which events should be recorded in an AI audit trail?
+* How are audit logs different from application debug logs?
+* Why are timestamps, identities, and version identifiers important for auditability?

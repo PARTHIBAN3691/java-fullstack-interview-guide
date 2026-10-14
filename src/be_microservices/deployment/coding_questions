@@ -1,0 +1,30 @@
+* Write a Dockerfile to package a Spring Boot application into a container.
+* Create a multi-stage Dockerfile that builds a Java application and runs it using a smaller runtime image.
+* Write a Docker Compose file to run a Spring Boot service with a PostgreSQL database.
+* Create Kubernetes YAML manifests for a Spring Boot Deployment and Service.
+* Configure a Kubernetes Deployment with multiple replicas and rolling-update settings.
+* Write Kubernetes manifests for ConfigMaps and Secrets used by a Java microservice.
+* Configure readiness, liveness, and startup probes for a Spring Boot application.
+* Create a Kubernetes Ingress configuration to route requests to multiple microservices.
+* Write a Jenkins pipeline that builds a Java application, runs tests, creates a Docker image, and publishes it to a registry.
+* Implement a CI pipeline that fails when unit tests or code-quality checks do not pass.
+* Write a pipeline stage that scans a container image for known vulnerabilities before deployment.
+* Implement a deployment pipeline that promotes the same immutable image from staging to production.
+* Write a Kubernetes rollout and rollback script with checks for deployment health.
+* Implement a smoke-test script that validates critical REST endpoints after deployment.
+* Write a Spring Boot health endpoint using Spring Boot Actuator and configure it for Kubernetes probes.
+* Configure graceful shutdown in Spring Boot to allow in-flight requests to complete.
+* Write a Java program that reports application build version and Git commit information through an endpoint.
+* Create a deployment validation script that checks service availability, response codes, and latency thresholds.
+* Write a Helm chart for deploying a configurable Spring Boot microservice.
+* Create a Helm values structure for development, staging, and production environments.
+* Write a Kubernetes manifest with CPU and memory requests and limits suitable for a Java container.
+* Implement a pipeline that performs backward-compatibility tests before deploying a new API version.
+* Write a deployment strategy configuration for a canary release and define validation criteria.
+* Implement a post-deployment test suite using JUnit and WebTestClient.
+* Write a script to detect stale Docker image tags and enforce immutable versioning.
+* Create a GitOps deployment configuration that synchronizes Kubernetes manifests from a Git repository.
+* Implement a database migration pipeline using Flyway or Liquibase with pre-deployment validation.
+* Write a Java integration test that verifies graceful shutdown and recovery behavior.
+* Design a deployment pipeline that supports approval gates, artifact signing, security scanning, and automated rollback.
+* Design an end-to-end production deployment solution for Java microservices using Jenkins, Docker, Kubernetes, Helm, GitOps, observability, security controls, and disaster recovery.

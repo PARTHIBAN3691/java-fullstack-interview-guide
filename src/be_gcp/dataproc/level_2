@@ -1,0 +1,30 @@
+* Explain the architecture of a production-grade Dataproc environment processing terabytes of data.
+* How would you choose between Dataproc, Dataproc Serverless, and Dataflow for a large-scale ETL workload?
+* How do you optimize Spark partitioning and parallelism for a Dataproc workload?
+* How do you diagnose and resolve data skew in a Spark job running on Dataproc?
+* How do you identify and resolve excessive garbage collection in Spark executors?
+* How do you troubleshoot frequent executor failures caused by out-of-memory errors?
+* How do you tune Spark shuffle operations for large datasets on Dataproc?
+* How do you optimize joins between a large dataset and a small reference dataset?
+* How do you determine appropriate executor memory, cores, and instance counts?
+* How do you optimize Dataproc autoscaling for workloads with unpredictable demand?
+* How do you design fault-tolerant Spark jobs that can recover from worker failures?
+* How do you handle checkpointing and recovery in long-running Spark workloads?
+* How do you optimize Dataproc jobs that repeatedly read and write data to Cloud Storage?
+* How do you choose file formats, compression codecs, and file sizes for Spark output?
+* How do you prevent the small-files problem in a Dataproc data lake?
+* How do you configure Dataproc for private IP-only operation with restricted egress?
+* How do you design least-privilege IAM permissions for multiple Dataproc workloads?
+* How do you protect sensitive data processed by Spark jobs on Dataproc?
+* How do you manage dependencies and ensure reproducible deployments across Dataproc image upgrades?
+* How do you implement CI/CD for Java Spark applications deployed to Dataproc?
+* How do you make Dataproc jobs idempotent when they may be retried?
+* How do you coordinate concurrent Dataproc jobs that update the same output datasets?
+* How do you design a scalable data pipeline using Dataproc, Cloud Storage, and BigQuery?
+* How do you optimize BigQuery connector usage from Spark on Dataproc?
+* How do you troubleshoot slow Spark stages using the Spark UI and execution metrics?
+* How do you distinguish CPU bottlenecks, disk I/O bottlenecks, network bottlenecks, and shuffle bottlenecks?
+* How do you estimate and control Dataproc costs for workloads with strict budgets?
+* How do you design disaster recovery for critical Dataproc batch pipelines across regions?
+* How do you safely upgrade Dataproc clusters while maintaining application compatibility?
+* How would you evaluate whether a workload should move from long-lived Dataproc clusters to ephemeral or serverless execution?

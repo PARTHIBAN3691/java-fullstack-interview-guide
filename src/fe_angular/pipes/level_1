@@ -1,0 +1,30 @@
+* Explain the lifecycle and execution of an Angular pipe.
+* What is the difference between pure and impure pipes in terms of change detection?
+* When does Angular execute a pure pipe?
+* When does Angular execute an impure pipe?
+* Why can an impure pipe affect application performance?
+* How do you create a custom pipe that filters a list of employees?
+* How do you create a custom pipe that sorts an array of objects?
+* How do you implement a custom pipe that searches text without case sensitivity?
+* How do you pass multiple parameters to a custom pipe?
+* How do you chain DatePipe, uppercase, and other built-in pipes?
+* How do you format a date using DatePipe with a custom format?
+* How do you specify a locale for currency and number formatting?
+* What is the difference between CurrencyPipe and DecimalPipe?
+* How does AsyncPipe work with Observables?
+* How does AsyncPipe work with Promises?
+* How does AsyncPipe automatically manage subscriptions?
+* What happens when the Observable reference used by AsyncPipe changes?
+* How do you use AsyncPipe with the Angular OnPush change detection strategy?
+* Why might a pure pipe not run when an object or array is mutated?
+* How do you make a pure pipe respond to changes in an array?
+* How do standalone pipes differ from pipes declared in NgModules?
+* How do you import a standalone pipe into a standalone component?
+* How do you write unit tests for a custom pipe?
+* How do you test a pipe that accepts multiple parameters?
+* How do you test built-in pipes that depend on locale formatting?
+* How do you handle invalid input values in a custom formatting pipe?
+* How do you reuse a custom pipe across multiple feature modules?
+* Can a pipe inject a service using Angular dependency injection?
+* What are the limitations of using pipes for complex business logic?
+* How do pipes affect template readability and maintainability?

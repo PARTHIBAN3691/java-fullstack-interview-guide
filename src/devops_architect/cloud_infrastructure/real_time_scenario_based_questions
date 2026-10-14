@@ -1,0 +1,35 @@
+* A production application experiences intermittent outages despite running across multiple availability zones. How would you investigate dependencies, load balancing, and regional failure boundaries?
+* A virtual machine workload becomes significantly slower after migrating to the cloud. How would you diagnose compute sizing, storage performance, network latency, and noisy-neighbor effects?
+* A containerized service experiences a sudden traffic spike, but autoscaling does not add capacity quickly enough. How would you investigate scaling metrics, startup time, quotas, and capacity availability?
+* A serverless application starts returning throttling errors during peak traffic. How would you diagnose concurrency limits, downstream bottlenecks, and retry behavior?
+* A serverless function occasionally times out while calling a managed database. How would you investigate connection management, network configuration, query latency, and execution limits?
+* A cloud object-storage bucket is accidentally exposed publicly and contains sensitive files. How would you contain the exposure, investigate access, and prevent recurrence?
+* A database application experiences high latency after moving from block storage to a different cloud storage configuration. How would you investigate IOPS, throughput, queue depth, and storage limits?
+* A managed database fails over to a standby instance, but the application continues connecting to the old endpoint. How would you diagnose connection pooling, DNS caching, and failover behavior?
+* A cloud application becomes unavailable because its database connection count exceeds the managed database limit after autoscaling. How would you correct the scaling design?
+* A load balancer returns HTTP 502 errors even though application instances are running. How would you investigate health checks, backend protocols, timeouts, and security rules?
+* A DNS change is made during a regional migration, but some users continue reaching the old environment. How would you investigate TTLs, recursive caches, and client-side DNS behavior?
+* A CDN serves outdated content after a production deployment. How would you investigate cache keys, TTLs, invalidation, and origin behavior?
+* A cloud region becomes unavailable, and the application fails to fail over to the secondary region. How would you identify dependencies that were not replicated or automated?
+* A multi-region deployment succeeds, but users receive inconsistent data depending on the region they access. How would you investigate replication lag, conflict resolution, and consistency requirements?
+* A regional disaster recovery exercise reveals that the secondary environment takes hours to become operational. How would you reduce recovery time and validate the recovery process?
+* An on-premises application cannot reach a cloud database after a network change. How would you troubleshoot routing, VPN or dedicated connectivity, DNS, and firewall rules?
+* Two cloud networks use overlapping IP ranges, preventing private connectivity after an acquisition. How would you design a migration or network translation strategy?
+* A hybrid cloud connection becomes unstable during business hours. How would you isolate bandwidth saturation, routing changes, VPN tunnel issues, and provider incidents?
+* A CI/CD pipeline can provision cloud resources in development but receives authorization failures in production. How would you investigate IAM roles, federation, permission boundaries, and organizational policies?
+* An engineer's cloud access key is leaked in a public repository. How would you contain the incident, investigate activity, rotate credentials, and reduce future exposure?
+* A cloud security audit finds unrestricted inbound access and excessive IAM permissions across several accounts. How would you prioritize remediation and enforce preventive controls?
+* An organization wants to deploy the same application to AWS and Azure, but its database and messaging services are platform-specific. How would you decide what to abstract and what to implement separately?
+* A multi-cloud application suffers an outage because a shared identity provider is unavailable. How would you reduce the common failure dependency?
+* Cloud bills increase by 40% after a successful product launch, but application traffic increased only slightly. How would you investigate compute utilization, storage growth, data transfer, and managed-service charges?
+* A development environment runs continuously despite being used only during office hours. How would you implement safe scheduling and automated shutdown?
+* A database is consistently overprovisioned, while performance metrics show low utilization. How would you rightsize it without introducing production risk?
+* Cross-region replication costs rise sharply after an application change. How would you identify unnecessary replication, chatty services, and large data transfers?
+* An application uses spot or preemptible compute instances, and interruptions cause failed background jobs. How would you redesign workloads for graceful interruption and recovery?
+* An organization needs strict RTO and RPO targets but has a limited disaster recovery budget. How would you choose replication, backup, warm standby, or active-active architecture?
+* A cloud migration deadline is approaching, but several applications still depend on local file systems and fixed IP addresses. How would you prioritize migration risks and redesign dependencies?
+* A CDN and regional load balancer are configured correctly, but traffic still overloads one application region. How would you investigate DNS routing policies, health checks, session affinity, and traffic distribution?
+* A cloud provider quota prevents a production autoscaling group from adding instances during a traffic surge. How would you plan quota management and alternative capacity options?
+* A cloud application meets availability targets but fails its latency SLO for users in distant regions. How would you evaluate CDN placement, regional deployment, caching, and data locality?
+* A company wants to consolidate three cloud providers to reduce cost, but some workloads rely on unique managed services. How would you assess migration costs, lock-in, operational complexity, and business risk?
+* An organization has no reliable mapping between cloud spending and business services. How would you implement tagging standards, cost allocation, budgets, and ownership reporting?

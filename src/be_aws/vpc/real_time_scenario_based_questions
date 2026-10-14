@@ -1,0 +1,21 @@
+
+* A Java application deployed on an EC2 instance cannot connect to an external API. How would you troubleshoot its VPC routing and outbound connectivity?
+* An EC2 instance in a public subnet has a public IP address but cannot access the internet. What configurations would you check?
+* An application in a private subnet cannot download dependencies from an external repository. How would you investigate the issue?
+* A Spring Boot application cannot connect to an RDS database even though both resources are in the same VPC. How would you troubleshoot the connection?
+* An ECS task running in a private subnet cannot retrieve a secret from AWS Secrets Manager. How would you diagnose endpoint connectivity, DNS, routing, and IAM permissions?
+* An EC2 instance can reach S3 only through a NAT Gateway, resulting in high costs. How would you optimize the architecture?
+* Two VPCs have overlapping CIDR blocks, preventing the planned peering connection. What alternatives would you evaluate?
+* A Java microservice can connect to an internal load balancer from one subnet but not another. How would you isolate the problem?
+* A security group allows inbound application traffic, but the connection still fails. How would you investigate NACLs, route tables, DNS, and return traffic?
+* A private application subnet suddenly loses outbound connectivity after a network change. What would you inspect first?
+* An application can resolve an RDS hostname but cannot establish a TCP connection. How would you narrow down the failure?
+* A company needs private communication between VPCs in multiple AWS accounts and regions. Would you choose peering or Transit Gateway, and why?
+* VPC Flow Logs show rejected connections from a Java application to a database. How would you determine whether the issue is caused by security groups or NACLs?
+* An EKS application cannot communicate with a service in another VPC. How would you investigate pod networking, routing, DNS, and network policies?
+* A company wants to eliminate public IP addresses from all application servers while preserving access to required AWS services. How would you redesign the VPC?
+* NAT Gateway charges have increased significantly after a microservices deployment. How would you identify traffic patterns and reduce costs?
+* A new deployment requires private access to SQS and SNS without routing service traffic through the public internet. How would you configure the required VPC endpoints?
+* An on-premises application cannot reach a private Java service hosted in AWS. How would you troubleshoot VPN or Direct Connect routing and security?
+* A production migration introduces intermittent connection timeouts between microservices in different subnets. How would you investigate network paths, ephemeral ports, and connection limits?
+* A disaster recovery environment in another Region must communicate securely with replicated application and database resources. How would you design and test network connectivity?

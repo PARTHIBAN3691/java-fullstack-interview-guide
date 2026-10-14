@@ -1,0 +1,30 @@
+* Write a Java method that allows a maximum of N requests within a specified time window.
+* Implement a fixed-window rate limiter using Java and ConcurrentHashMap.
+* Write a thread-safe in-memory rate limiter using synchronized blocks.
+* Implement a token bucket rate limiter in Java with configurable capacity and refill rate.
+* Implement a leaky bucket rate limiter in Java.
+* Write a sliding-window rate limiter using a queue of request timestamps.
+* Implement a sliding-window counter rate limiter that uses less memory than storing every request timestamp.
+* Write a Java class that tracks request counts separately for each client API key.
+* Implement a rate limiter that allows different request limits for different users.
+* Write a Spring Boot servlet filter that rejects requests exceeding a configured limit.
+* Implement a Spring MVC interceptor that enforces a per-client request limit.
+* Write a REST controller that returns HTTP 429 when a client exceeds its rate limit.
+* Implement a custom error response containing the status, error message, and retry-after duration.
+* Write a Java utility method that calculates the number of seconds until a rate-limit window resets.
+* Implement a Redis-backed fixed-window rate limiter using atomic counter operations.
+* Write a Redis Lua script that increments a request counter and sets its expiry atomically.
+* Implement a distributed rate limiter that supports multiple Spring Boot instances.
+* Write a rate limiter that supports both requests-per-second and requests-per-day constraints.
+* Implement a weighted rate limiter where different API operations consume different numbers of tokens.
+* Write a Java class that supports separate rate limits for free, premium, and enterprise customers.
+* Implement a rate limiter with configurable policies loaded from application properties.
+* Write unit tests for a token bucket rate limiter using JUnit.
+* Write concurrent tests that verify a rate limiter does not allow more requests than the configured limit.
+* Implement integration tests that verify HTTP 429 and Retry-After behavior in a Spring Boot application.
+* Write a method that calculates a client's remaining request allowance.
+* Implement a rate limiter that supports a temporary increase in a customer's quota.
+* Write a Java implementation that distinguishes rate-limit exhaustion from a daily quota being exhausted.
+* Implement a fail-open or fail-closed strategy for a Redis-backed rate limiter.
+* Write a rate limiter that records rejected requests and exposes metrics for monitoring.
+* Design and implement a complete Spring Boot REST API rate-limiting solution using Redis, configurable policies, HTTP 429 responses, and automated tests.

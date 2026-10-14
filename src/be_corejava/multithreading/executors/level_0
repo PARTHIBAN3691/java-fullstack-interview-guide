@@ -1,0 +1,21 @@
+
+* What is the Executor framework in Java?
+* Why was the Executor framework introduced?
+* What is the difference between creating a thread manually and using an Executor?
+* What is the `Executor` interface?
+* What is the `ExecutorService` interface?
+* What is the difference between `Executor` and `ExecutorService`?
+* What is a `Runnable` task?
+* How do you submit a task to an `ExecutorService`?
+* What is the purpose of the `execute()` method?
+* What is the purpose of the `submit()` method?
+* What is the difference between `execute()` and `submit()`?
+* What is a thread pool?
+* Why should we use a thread pool instead of creating a new thread for every task?
+* What is `Executors.newFixedThreadPool()`?
+* What is `Executors.newSingleThreadExecutor()`?
+* What is `Executors.newCachedThreadPool()`?
+* What is `Executors.newScheduledThreadPool()`?
+* What is the purpose of the `shutdown()` method?
+* What is the difference between `shutdown()` and `shutdownNow()`?
+* How do you check whether an `ExecutorService` has terminated?

@@ -1,0 +1,30 @@
+* Explain the complete OAuth 2.0 authorization flow.
+* How does the Authorization Code grant work?
+* How does the Client Credentials grant work?
+* When should you use Authorization Code with PKCE?
+* How do you configure OAuth 2.0 authentication in Spring Boot?
+* How do you configure a Spring Boot application as an OAuth 2.0 resource server?
+* How do you configure a Spring Boot application as an OAuth 2.0 client?
+* How do you obtain an access token from an authorization server?
+* How does a client use an access token to call a protected REST API?
+* How do scopes control access to API resources?
+* What is the difference between delegated access and application-level access?
+* How does a refresh token work?
+* What is the difference between access-token expiration and refresh-token expiration?
+* How should client secrets be stored securely?
+* How do you configure client authentication for a confidential application?
+* What is the difference between public and confidential OAuth clients?
+* How does PKCE protect the Authorization Code flow?
+* What is the difference between the code verifier and code challenge?
+* Why should the state parameter be validated?
+* How do redirect URI validation and exact matching improve security?
+* How do you validate an OAuth 2.0 access token in a REST API?
+* What is the difference between JWT access-token validation and opaque-token introspection?
+* What is an OAuth 2.0 token introspection endpoint?
+* What is the purpose of a token revocation endpoint?
+* What is the difference between HTTP 401 and HTTP 403 in OAuth-protected APIs?
+* How do you configure role-based authorization using OAuth scopes in Spring Security?
+* How do you handle insufficient_scope errors?
+* How do you test OAuth 2.0 flows using Postman?
+* How do you propagate an access token when calling downstream services?
+* What are common OAuth 2.0 configuration mistakes in REST APIs?

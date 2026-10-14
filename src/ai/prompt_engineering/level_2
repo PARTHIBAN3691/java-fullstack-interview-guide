@@ -1,0 +1,118 @@
+**Prompt Engineering Fundamentals**
+* Design a systematic methodology for improving prompts in a complex enterprise workflow with multiple task types and strict reliability requirements.
+* How would you distinguish prompt-related failures from model limitations, retrieval defects, and application orchestration errors?
+* How would you design prompts that remain robust when user inputs vary in length, language, format, and ambiguity?
+* How would you optimize prompt quality under simultaneous constraints on token budget, latency, cost, and correctness?
+* How would you prevent prompt improvements for one use case from causing regressions in other use cases?
+* How would you establish measurable acceptance criteria for prompts used in high-impact business decisions?
+* How would you design prompt behavior for abstention, uncertainty, and escalation when evidence is insufficient?
+
+**Zero-Shot Prompting**
+* How would you determine whether zero-shot performance is sufficient for a high-volume production classification workload?
+* How would you measure zero-shot robustness across distribution shifts, multilingual inputs, and rare categories?
+* How would you design a zero-shot classification prompt that supports calibrated abstention when no category is appropriate?
+* How would you reduce sensitivity to prompt wording when the model is expected to follow a stable task definition?
+* How would you compare zero-shot LLM classification against a supervised model under strict cost and latency constraints?
+* How would you detect hidden failure patterns that are masked by a strong aggregate zero-shot accuracy score?
+
+**Few-Shot Prompting**
+* How would you select few-shot examples using diversity, coverage, difficulty, and representativeness criteria?
+* How would you detect and mitigate example-order sensitivity in a few-shot prompt?
+* How would you construct a few-shot evaluation strategy that prevents examples from leaking into test cases?
+* How would you optimize example selection when the context window is constrained and each example has a different token cost?
+* How would you handle conflicting demonstrations or examples that are only partially relevant to the current input?
+* How would you determine whether dynamic example retrieval is more effective than a fixed few-shot prompt?
+* How would you compare few-shot prompting, retrieval-based examples, and fine-tuning for a rapidly changing task?
+
+**Chain-of-Thought Prompting**
+* How would you evaluate multi-step problem-solving accuracy without treating generated reasoning text as a faithful record of internal model computation?
+* How would you design a task-decomposition strategy that detects and isolates errors at individual stages?
+* How would you compare direct-answer prompting, decomposition, tool-assisted computation, and independent verification?
+* How would you control token usage and latency when reasoning-oriented prompts generate unnecessarily long responses?
+* How would you evaluate whether an explanation is factually consistent with the final answer?
+* How would you design a reliable workflow for numerical reasoning that delegates arithmetic to deterministic tools?
+* How would you prevent an incorrect intermediate result from contaminating later stages of a complex workflow?
+
+**Role-Based and System Prompting**
+* How would you design a hierarchy of trusted instructions for an application with organization-wide policies, tenant-specific rules, and user preferences?
+* How would you resolve conflicts among system instructions, retrieved business policies, user requests, and tool outputs?
+* How would you test system-prompt adherence under adversarial, ambiguous, multilingual, and unusually long inputs?
+* How would you prevent role instructions from unintentionally granting the model authority it should not possess?
+* How would you separate policy enforcement, identity verification, authorization, and natural-language instruction following?
+* How would you manage system-prompt changes across multiple services without introducing inconsistent behavior?
+* How would you design safe escalation when a user request is outside the assistant's permitted scope?
+
+**Structured Output and JSON Prompting**
+* How would you design a schema-driven extraction pipeline that handles partial data, conflicting source values, and uncertain fields?
+* How would you validate nested JSON structures and enforce cross-field business constraints?
+* How would you prevent a model from fabricating required values when source information is missing?
+* How would you compare native constrained decoding with prompt-only JSON generation for reliability and latency?
+* How would you recover from invalid outputs without allowing repeated repair attempts to exceed cost and latency limits?
+* How would you design versioned output schemas so model changes do not break downstream consumers?
+* How would you secure an application that uses model-generated JSON to trigger financial transactions or privileged operations?
+
+**Prompt Templates**
+* How would you design a centralized prompt-template platform for many teams while allowing controlled customization?
+* How would you prevent template-variable injection when values contain instructions, markup, or adversarial text?
+* How would you manage template dependencies, shared fragments, schema changes, and backward compatibility?
+* How would you build automated tests that detect template regressions across multiple models and languages?
+* How would you deploy prompt-template changes gradually and roll back only the affected templates?
+* How would you design prompt-template observability without logging confidential inputs or sensitive outputs?
+* How would you support tenant-specific prompt customization without allowing one tenant to influence another tenant's configuration?
+
+**Prompt Chaining**
+* How would you design a fault-tolerant prompt chain with conditional branching, parallel steps, bounded retries, and recovery checkpoints?
+* How would you prevent cascading errors when each stage has a non-zero probability of failure?
+* How would you decide which stages should use deterministic code, an LLM, retrieval, or an external tool?
+* How would you optimize a multi-stage workflow for critical-path latency and total token cost?
+* How would you make prompt-chain execution auditable and reproducible when intermediate outputs are non-deterministic?
+* How would you implement idempotency and deduplication when a failed workflow must resume from an intermediate stage?
+* How would you test the full chain and individual stages independently?
+
+**Context Engineering**
+* Design a context-assembly system that combines conversation history, enterprise retrieval, user permissions, and task-specific instructions under a fixed token budget.
+* How would you rank context by relevance, freshness, authority, and trustworthiness?
+* How would you prevent indirect prompt injection when retrieved content must be included in the context?
+* How would you design memory summarization that preserves critical facts while minimizing distortion and stale information?
+* How would you compare long-context prompting, retrieval-augmented generation, and hierarchical summarization for large document collections?
+* How would you evaluate context completeness and grounding independently from the quality of the generated response?
+* How would you enforce tenant-level data isolation when context is assembled from multiple data sources?
+
+**Prompt Versioning and Management**
+* Design a prompt-management lifecycle with version control, evaluation gates, approval, canary deployment, and rollback.
+* How would you trace a production response to the exact prompt version, model version, context, and decoding configuration used?
+* How would you detect and attribute regressions when prompts, retrieval logic, and model versions change together?
+* How would you manage prompt experiments without exposing users to unapproved or unsafe variants?
+* How would you define compatibility rules for shared prompts used by applications with different output schemas?
+* How would you build a prompt registry with ownership, access controls, audit history, and automated retirement of obsolete versions?
+* How would you keep evaluation reproducible while protecting sensitive prompt inputs and outputs?
+
+**Prompt Injection and Jailbreak Prevention**
+* Design a defense-in-depth architecture against direct and indirect prompt injection in an LLM application with retrieval and tool calling.
+* How would you threat-model an assistant that can read documents, send email, query databases, and invoke external APIs?
+* How would you ensure that untrusted content cannot grant permissions, override trusted policy, or authorize privileged actions?
+* How would you test for data exfiltration through model responses, tool calls, hidden document instructions, and multi-step attacks?
+* How would you handle a jailbreak that bypasses the prompt-level refusal instructions but is blocked by downstream authorization?
+* How would you measure the effectiveness of prompt-injection defenses using adversarial test suites and attack-success rates?
+* How would you protect against indirect injection in retrieved code, PDFs, web pages, images, and tool responses?
+* How would you design incident response for a prompt-injection event that causes an unauthorized action or sensitive-data exposure?
+
+**Prompt Evaluation and Optimization**
+* How would you design a statistically robust prompt-evaluation framework for non-deterministic outputs across multiple task categories?
+* How would you prevent benchmark overfitting when iteratively tuning prompts against a fixed evaluation set?
+* How would you combine task-specific metrics, human review, LLM-as-a-judge, safety testing, and production feedback?
+* How would you evaluate prompt robustness against paraphrases, adversarial inputs, missing context, and distribution shift?
+* How would you establish a quality-cost-latency frontier for prompt variants and select a production configuration?
+* How would you design a continuous evaluation pipeline that identifies regressions after prompt, model, or retrieval updates?
+* How would you compare prompt variants when improvements differ across customer segments or languages?
+* How would you measure uncertainty in evaluation results and define statistically defensible release thresholds?
+
+**Guardrails and Output Validation**
+* Design a layered safety architecture that combines input screening, policy checks, constrained generation, output validation, and human approval.
+* How would you validate LLM-generated SQL or code before execution in a production environment?
+* How would you enforce data-access policies when the model is asked to summarize or transform sensitive information?
+* How would you design guardrails that minimize false negatives without blocking legitimate business requests excessively?
+* How would you detect and prevent schema-valid but semantically unsafe outputs?
+* How would you handle disagreement between a model-based safety classifier and deterministic business policies?
+* How would you monitor guardrail bypasses, false positives, and policy drift while protecting user privacy?
+* How would you design fail-safe behavior when a guardrail service is unavailable or returns an uncertain result?

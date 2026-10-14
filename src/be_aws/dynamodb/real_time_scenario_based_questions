@@ -1,0 +1,21 @@
+
+* An e-commerce application experiences throttling during a flash sale. How would you investigate the issue and improve DynamoDB performance?
+* A Java Spring Boot service needs to retrieve all orders belonging to a customer, sorted by order date. How would you design the partition key, sort key, and query?
+* Your application frequently uses `Scan` to retrieve records by status. How would you redesign the table to support efficient queries?
+* Two microservices update the same account balance concurrently. How would you prevent lost updates?
+* A particular tenant generates most of the traffic in a multi-tenant DynamoDB table. How would you prevent that tenant from creating a hot partition?
+* A batch job fails because some items were not processed by `BatchWriteItem`. How would you implement retries without losing data?
+* A Java application receives duplicate events from DynamoDB Streams. How would you ensure downstream processing is idempotent?
+* A product catalog needs lookups by product ID, category, and brand. How would you model the table and indexes?
+* Your application requires a query for all pending orders across customers. How would you support this access pattern efficiently?
+* A DynamoDB table has high read costs despite a low request count. How would you investigate item sizes, consistency settings, indexes, and access patterns?
+* An application must update an order and reserve inventory atomically. How would you design the transaction?
+* Your service experiences frequent conditional-check failures during order processing. How would you determine whether the failures are expected concurrency controls or application defects?
+* A global application requires low-latency access in multiple AWS regions. How would you evaluate DynamoDB global tables and their consistency trade-offs?
+* A migration from PostgreSQL to DynamoDB is planned while the existing application remains live. How would you synchronize writes and validate data during the transition?
+* A DynamoDB table grows rapidly because old session records are never removed. How would you implement expiration and archival?
+* A service needs to retrieve more than one megabyte of query results. How would you implement pagination and handle continuation keys?
+* A GSI is not returning an item immediately after a successful write. How would you explain and handle the consistency behavior?
+* A production deployment introduces a sudden increase in DynamoDB latency. Which CloudWatch metrics, SDK metrics, and application logs would you examine?
+* A multi-tenant application must isolate each customer's data. How would you design partition keys and IAM controls to reduce cross-tenant data exposure?
+* A team proposes replacing a relational database with DynamoDB to improve scalability. What access-pattern, consistency, operational, and cost considerations would you evaluate before approving the change?

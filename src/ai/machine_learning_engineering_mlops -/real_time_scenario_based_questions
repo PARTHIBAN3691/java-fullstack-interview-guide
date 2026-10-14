@@ -1,0 +1,85 @@
+**MLOps Fundamentals**
+* A data science team can train models locally but cannot reproduce results in production. How would you identify the missing MLOps capabilities and establish a reliable workflow?
+* Several teams deploy models independently, causing inconsistent security, monitoring, and release processes. How would you standardize the platform without blocking team delivery?
+* A shared training cluster becomes overloaded and starts affecting online inference. How would you isolate workloads and restore service-level objectives?
+
+**ML Lifecycle Management**
+* A model remains in staging for weeks because ownership and promotion criteria are unclear. How would you establish lifecycle responsibilities and measurable release gates?
+* A model is retired from production but remains referenced by scheduled jobs and downstream systems. How would you identify dependencies and complete decommissioning safely?
+* A model is deployed to one region but its lifecycle status is not updated in the registry. How would you reconcile actual deployment state with lifecycle metadata?
+
+**Experiment Tracking**
+* A model performs well in a notebook, but the team cannot identify the exact dataset and parameters used. How would you reconstruct the experiment and prevent recurrence?
+* Artifact uploads fail intermittently while experiment metrics continue to be recorded. How would you detect incomplete runs and recover missing artifacts?
+* Two teams report conflicting results for the same experiment name. How would you investigate naming collisions, dataset differences, and concurrent writes?
+
+**Dataset and Model Versioning**
+* A production model must be reproduced for an audit, but its original dataset was overwritten. How would you reconstruct or recover the training data and document any limitations?
+* A newly deployed model loads successfully but produces incorrect predictions because its preprocessing configuration differs from training. How would you trace version incompatibility?
+* Storage costs rise sharply because every dataset version contains a complete copy. How would you introduce deduplication or snapshot-based storage without breaking reproducibility?
+
+**Feature Stores**
+* A production model starts producing incorrect results after a feature transformation changes. How would you identify training-serving skew and restore compatible feature versions?
+* Online feature values remain stale even though the offline pipeline has completed successfully. How would you investigate event delays, replication, and cache behavior?
+* A historical backfill overwrites newer online feature values. How would you correct the data and prevent future stale writes?
+
+**Model Registry**
+* A deployment pipeline promotes a model that has not completed required fairness checks. How would you identify the governance gap and enforce approval controls?
+* A mutable model alias changes during a production release, causing different replicas to load different versions. How would you stabilize artifact selection and verify deployed versions?
+* A registry database is restored from an older backup, and its metadata no longer matches deployed models. How would you reconcile the registry with live deployments?
+
+**Training Pipeline Automation**
+* A pipeline fails after completing an expensive distributed training stage but before model registration. How would you resume execution without unnecessarily repeating completed work?
+* Scheduled training jobs overlap and exhaust compute capacity. How would you implement concurrency controls, prioritization, and resource-aware scheduling?
+* A pipeline repeatedly retries a permanently invalid dataset and generates excessive cost. How would you distinguish transient failures from non-retryable defects?
+
+**Hyperparameter Tuning**
+* A tuning run consumes its entire GPU budget without producing a better model. How would you evaluate the search strategy, objective, early stopping, and experiment setup?
+* The best hyperparameter configuration changes significantly between runs. How would you investigate random variation, dataset differences, and noisy evaluation?
+* A tuning service launches too many concurrent trials and starves production workloads. How would you implement quotas, scheduling, and budget enforcement?
+
+**Model Validation**
+* A candidate model has higher overall accuracy but significantly worse recall for a critical customer segment. How would you evaluate the trade-off and decide whether to promote it?
+* Offline validation is strong, but an online experiment shows worse business outcomes. How would you investigate population differences, leakage, and evaluation design?
+* A model passes all statistical checks but exceeds the production latency target. How would you incorporate operational constraints into model acceptance?
+
+**Model Deployment Strategies**
+* A canary release shows increased errors only under peak traffic. How would you isolate capacity limits, model behavior, and traffic-routing differences before deciding to roll back?
+* A shadow model produces different predictions from production for identical inputs. How would you compare preprocessing, feature versions, model artifacts, and inference configuration?
+* A large model takes several minutes to load, causing deployment readiness failures. How would you improve startup behavior and maintain sufficient serving capacity?
+
+**Model Monitoring**
+* Production model accuracy drops, but CPU, memory, latency, and error rates remain normal. How would you investigate data drift, feature changes, and delayed labels?
+* Monitoring alerts trigger every day during normal seasonal traffic changes. How would you improve baselines, alert thresholds, and anomaly detection?
+* Ground-truth labels arrive several weeks after predictions. How would you detect early signs of quality degradation and validate the monitoring signals?
+
+**Data Drift and Concept Drift**
+* Input distributions change after a new customer segment enters production, but prediction accuracy has not yet declined. How would you assess the drift and determine the appropriate response?
+* Model quality deteriorates while input distributions appear stable. How would you investigate concept drift, label changes, and measurement problems?
+* A drift detector repeatedly triggers retraining because of weekly seasonality. How would you distinguish expected periodic variation from meaningful changes?
+
+**Retraining Automation**
+* Drift alerts trigger repeated retraining jobs, and new candidates perform worse than the current model. How would you control triggers and strengthen candidate validation?
+* An automated retraining job uses corrupted labels and produces a candidate that passes a weak evaluation gate. How would you contain the release and improve data and model quality controls?
+* Two retraining pipelines attempt to promote different candidates simultaneously. How would you manage concurrency and ensure atomic promotion?
+
+**Reproducible ML Pipelines**
+* A model retrained with the same code and configuration produces different results after a GPU-driver update. How would you identify environmental differences and assess reproducibility?
+* A critical model must be reconstructed after a team has deleted its original training environment. How would you recover artifacts, dependencies, datasets, and configuration?
+* A pipeline cache returns stale features after source data changes. How would you identify missing cache keys and establish reliable invalidation?
+
+**CI/CD for Machine Learning**
+* A model passes offline tests but fails after production deployment because its container lacks a runtime dependency. How would you improve build and release validation?
+* An urgent model fix must be released, but the full training and evaluation pipeline takes several hours. How would you shorten the release path without bypassing critical controls?
+* A compromised dependency is discovered in a model-serving image already deployed to production. How would you identify affected releases, remediate the supply chain, and roll out a verified replacement?
+
+**ML Governance**
+* An audit requests the approval history, training data version, and evaluation evidence for a production model, but the records are incomplete. How would you reconstruct the evidence and close the governance gaps?
+* A model is found to violate a newly introduced data-use policy. How would you identify affected datasets and deployments and coordinate remediation?
+* A team changes a model artifact directly in production without updating the registry. How would you detect the unauthorized change and restore traceability?
+
+**Model Rollback and Recovery**
+* A newly deployed model causes a sudden increase in business-critical errors while infrastructure health remains normal. How would you trigger a safe rollback and verify recovery?
+* A rollback restores the previous model but fails because the old feature schema is no longer available. How would you recover service without introducing further compatibility risks?
+* A regional outage removes access to the primary model registry and artifact store. How would you restore inference using verified backups and maintain auditability?
+

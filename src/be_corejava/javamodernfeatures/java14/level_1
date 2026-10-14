@@ -1,0 +1,26 @@
+
+* How are records different from ordinary Java classes?
+* Why are records considered shallowly immutable?
+* How do you create a record with a compact constructor?
+* How do you validate record components inside a compact constructor?
+* Can you declare additional instance fields in a record?
+* Can you declare static fields and static methods in a record?
+* Can you override accessor methods in a record?
+* How do you create a custom canonical constructor for a record?
+* What is the difference between a canonical constructor and a compact constructor?
+* Can a record have overloaded constructors?
+* How do records handle equality when compared with ordinary classes?
+* What happens if a record contains a mutable object such as a `List`?
+* How do switch expressions return values?
+* Why must a switch expression be exhaustive?
+* How does `yield` work when a switch expression uses a block?
+* How does fall-through behavior differ between traditional switch statements and arrow-style switch expressions?
+* Can multiple case labels share the same result in a switch expression?
+* What happens when a switch expression does not cover all possible values?
+* How do text blocks handle indentation and incidental whitespace?
+* What is the purpose of the `stripIndent()` method?
+* What is the purpose of the `translateEscapes()` method?
+* How does `formatted()` simplify String formatting?
+* How does pattern matching for `instanceof` reduce redundant type casting?
+* What are the limitations of Java 14's preview pattern matching for `instanceof`?
+* How do helpful NullPointerException messages help identify the expression that caused a failure?

@@ -1,0 +1,21 @@
+
+* Explain the end-to-end process of building a Java Spring Boot Docker image and pushing it to Azure Container Registry.
+* How do you create an optimized Dockerfile for a Java 21 Spring Boot application?
+* What is a multi-stage Docker build, and how does it reduce the final image size?
+* How do you authenticate a CI/CD pipeline to Azure Container Registry securely?
+* What is the difference between admin-user authentication, service principal authentication, and managed identity authentication for ACR?
+* How do you configure Azure role-based access control for pushing and pulling container images?
+* What is the difference between the `AcrPull` and `AcrPush` roles, and how does repository-level access affect permissions?
+* How do you configure Azure DevOps to build and push Java application images to ACR?
+* How do you integrate GitHub Actions with Azure Container Registry?
+* How can Azure Container Registry Tasks automatically build an image when source code changes?
+* How do you tag images using application versions, Git commit IDs, and build numbers?
+* Why should mutable tags such as `latest` be avoided for production deployments?
+* How do you scan container images for vulnerabilities in Azure Container Registry?
+* How do you configure image retention and cleanup policies?
+* What is the purpose of geo-replication in Azure Container Registry?
+* How do you configure private network access to Azure Container Registry?
+* What is the difference between public network access, private endpoints, and trusted-service access?
+* How do you troubleshoot authentication failures while pushing or pulling container images?
+* How do you deploy an image from ACR to Azure App Service or Azure Kubernetes Service?
+* How do you monitor registry usage, image push and pull operations, and storage consumption?

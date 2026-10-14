@@ -1,0 +1,30 @@
+* A Java REST API performs well with 100 users but slows significantly with 2,000 users. How would you investigate the issue?
+* Your application meets its average response time target but fails its P99 latency target. What would you check first?
+* During a load test, CPU utilization reaches 95% while throughput stops increasing. How would you troubleshoot this?
+* A Spring Boot application experiences frequent full garbage collections under heavy load. How would you identify the root cause?
+* A Java service starts returning HTTP 503 errors when concurrent users increase. How would you investigate?
+* Your application has a database connection pool of 50 connections, but requests begin timing out at peak load. How would you diagnose the issue?
+* A load test shows that response times increase after 30 minutes, even though the request rate remains constant. What could be causing this?
+* Your load testing tool reports high response times, but application monitoring shows low CPU and memory utilization. What would you investigate?
+* A REST API performs well in isolation but slows down when its dependent services are included. How would you isolate the bottleneck?
+* Your load generator reaches 100% CPU before the target application becomes saturated. How would you redesign the test?
+* A Java application processes 5,000 requests per second in testing but only 1,500 in production. How would you investigate the difference?
+* Your load test creates duplicate orders because requests are retried after timeouts. How would you improve the test and application behavior?
+* A Kafka consumer falls behind as the event production rate increases. How would you measure and address the bottleneck?
+* An application scales from two instances to eight instances, but throughput barely improves. What would you investigate?
+* A database query takes 20 milliseconds with one user but 800 milliseconds under concurrent load. How would you diagnose the issue?
+* A load test passes for 15 minutes but fails after two hours. How would you determine whether the issue is a memory leak or resource exhaustion?
+* Your Spring Boot application has increasing thread counts and intermittent timeouts under load. How would you investigate thread pool behavior?
+* A downstream payment service has a strict rate limit. How would you load test your application without overwhelming that dependency?
+* During a traffic spike, autoscaling takes several minutes to add instances. How would you test and evaluate this behavior?
+* A new Java release increases P95 response time by 30%. How would you compare the old and new versions to identify the regression?
+* Your application meets throughput requirements but exceeds the maximum allowed error rate. How would you analyze the results?
+* A load test passes with cached data but fails when the cache is cold. How would you investigate the difference?
+* A microservices application experiences cascading timeouts during peak traffic. How would you reproduce and analyze the issue?
+* You need to simulate 20,000 users with realistic login, search, and checkout behavior. How would you design the workload?
+* A Java batch-processing service handles normal traffic but accumulates a large processing backlog during peak hours. How would you test its capacity?
+* Your team wants to release a change that improves average latency but worsens P99 latency. How would you evaluate the release?
+* A load test produces inconsistent results across repeated runs. What factors would you investigate?
+* A production incident occurs at twice the expected traffic level. How would you use load testing to validate a corrective fix?
+* You need to define performance SLAs for a newly developed Java API. What metrics and thresholds would you establish?
+* How would you present a load test failure, its root cause, and the recommended fixes to a technical lead?

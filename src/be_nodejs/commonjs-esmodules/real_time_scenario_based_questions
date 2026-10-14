@@ -1,0 +1,30 @@
+* Your Node.js application throws "require is not defined in ES module scope." How would you identify and fix the issue?
+* After adding "type": "module" to package.json, your existing application fails to start. How would you troubleshoot it?
+* A project contains both CommonJS and ES module files. How would you configure their extensions and package boundaries?
+* A third-party dependency uses CommonJS, but your application uses ES modules. How would you integrate the dependency?
+* Your CommonJS application needs to load an ES module that uses top-level await. How would you implement the integration?
+* An ES module cannot import a package subpath that appears to exist in node_modules. How would you investigate the package exports configuration?
+* A library works with require() but fails when imported using import. How would you identify the compatibility issue?
+* Your package must support both legacy CommonJS applications and modern ES module applications. How would you structure its exports?
+* After publishing a dual-format package, users report that a singleton service is initialized twice. How would you investigate the dual-package hazard?
+* A circular dependency causes a service to be undefined during startup. How would you resolve the dependency cycle?
+* An imported value does not reflect updates made by the exporting module. How would you investigate the difference between CommonJS exports and ES module bindings?
+* Your Jest or another test runner fails when loading ES modules. How would you configure the testing environment?
+* A development server needs to reload changed modules without restarting the entire application. How would module caching affect your approach?
+* Your application uses __dirname extensively and fails after migration to ES modules. How would you replace those references?
+* A JSON configuration file loads successfully with require() but fails with a static import. How would you resolve the issue for your Node.js version?
+* Your application uses dynamic plugin loading, and some plugins are CommonJS while others are ES modules. How would you design a robust loader?
+* A production application starts slowly because several modules use top-level await. How would you diagnose and optimize initialization?
+* A package works locally but fails after deployment because the module format is interpreted differently. What configuration and packaging details would you inspect?
+* Your monorepo contains packages using different module systems. How would you prevent module-format conflicts between packages?
+* A dependency update changes a package from CommonJS to ES modules and breaks your service. How would you handle the migration safely?
+* Two versions of a dependency are unexpectedly loaded in the same application. How would you investigate module resolution and caching?
+* A package consumer receives an error when importing an internal file path. How would you determine whether the exports field is blocking the import?
+* Your application needs to support a Node.js version that does not support a particular ES module feature. How would you maintain compatibility?
+* A worker thread or child process loads a module using a different configuration than the main application. How would you troubleshoot the issue?
+* A TypeScript project compiles successfully but fails at runtime because its generated module format differs from the package configuration. How would you fix it?
+* A CommonJS module exports a function with additional properties, but an ES module consumer cannot access those properties as expected. How would you diagnose the interop behavior?
+* A module has side effects that execute twice after a migration to ES modules. How would you trace the cause?
+* Your team wants to migrate a large production codebase from CommonJS to ES modules gradually. How would you plan and validate the migration?
+* A package uses conditional exports, but different consumers receive different implementations. How would you test and debug the resolution behavior?
+* Your application requires deterministic startup order across modules with asynchronous initialization. How would you design the module initialization flow?

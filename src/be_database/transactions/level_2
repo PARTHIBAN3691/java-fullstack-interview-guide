@@ -1,0 +1,30 @@
+* Explain how database transactions are implemented internally using logs, locks, and concurrency control.
+* How does MVCC provide transaction isolation without requiring every reader to block writers?
+* How do PostgreSQL and MySQL differ in their handling of MVCC and transaction isolation?
+* How do READ COMMITTED, REPEATABLE READ, and SERIALIZABLE differ in real-world concurrency scenarios?
+* How can a transaction encounter a serialization failure, and how should the application recover?
+* How do you prevent lost updates when multiple requests modify the same business entity?
+* How do optimistic locking and pessimistic locking compare under high concurrency?
+* How do deadlocks arise when multiple transactions acquire locks in different orders?
+* How do you analyze a deadlock graph or database deadlock report?
+* How do long-running transactions affect lock contention, MVCC cleanup, and database performance?
+* How do transaction boundaries influence connection-pool utilization and application throughput?
+* How does Spring's transaction interceptor manage transaction creation, commit, and rollback?
+* How does proxy-based transaction management affect private methods, self-invocation, and method visibility?
+* How do transaction propagation and isolation interact when one transactional method calls another?
+* What happens when a REQUIRES_NEW transaction commits but the outer transaction later rolls back?
+* How do rollback-only markers affect transaction completion?
+* What is the transactional outbox pattern, and how does it help coordinate database updates and message publishing?
+* Why is a database transaction generally unable to atomically commit a database update and an external HTTP API call?
+* How do distributed transactions and two-phase commit work?
+* What are the limitations of two-phase commit in microservices architectures?
+* How does the saga pattern handle long-running business transactions across multiple services?
+* What is the difference between choreography-based and orchestration-based sagas?
+* How do idempotency keys prevent duplicate processing when clients retry requests?
+* How would you design a reliable payment transaction when the client times out after the database commit?
+* How do transaction isolation and locking affect inventory reservation under high concurrency?
+* How do you design transaction boundaries for bulk processing without holding locks for too long?
+* How do nested transactions differ across databases and transaction managers?
+* How do read-only transactions influence query execution, ORM behavior, and database resource usage?
+* How do you maintain transaction consistency when a Java application reads from replicas and writes to a primary database?
+* How would you design transaction management for a high-throughput financial application requiring consistency, durability, and resilience?

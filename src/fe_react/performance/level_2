@@ -1,0 +1,30 @@
+* Explain the React rendering pipeline and its impact on application performance.
+* How do the render and commit phases differ in React?
+* How does concurrent rendering improve responsiveness?
+* What is the purpose of transitions in React, and when would you use useTransition?
+* How does useDeferredValue help keep a user interface responsive?
+* How do React.memo, useMemo, and useCallback interact in a complex component tree?
+* How does React Compiler affect manual memoization strategies?
+* How would you diagnose a performance problem involving thousands of components?
+* How do you distinguish CPU-bound rendering from network-bound loading?
+* How do you profile long tasks on the browser main thread?
+* How do you optimize an application with frequent state updates?
+* How would you design a state architecture to minimize unnecessary re-renders?
+* How do normalized state structures improve performance?
+* How can structural sharing reduce unnecessary component updates?
+* How do you optimize Context-based state management in a large application?
+* How do external stores and useSyncExternalStore help manage subscriptions efficiently?
+* How do you optimize a virtualized list with dynamic row heights?
+* What are the trade-offs between pagination, infinite scrolling, and virtualization?
+* How do you optimize server-side rendering and streaming in React?
+* How do you reduce hydration costs in a large React application?
+* How do you identify and resolve hydration mismatches that affect performance?
+* How would you optimize a React application with a very large JavaScript bundle?
+* How do dynamic imports, tree shaking, and dependency analysis work together?
+* How do you optimize caching strategies for API responses and static assets?
+* How do service workers affect application loading performance?
+* How do you optimize expensive computations without blocking the main thread?
+* How do you prevent memory leaks caused by subscriptions, timers, and event listeners?
+* How would you investigate increasing memory usage during prolonged application sessions?
+* How do you establish performance budgets and enforce them in CI/CD pipelines?
+* How do you measure real-user performance and correlate it with application changes?

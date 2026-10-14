@@ -1,0 +1,30 @@
+* Explain the complete HTTP request-response lifecycle in Node.js.
+* How do you read request headers in a Node.js HTTP server?
+* How do you read query parameters from an HTTP request?
+* How do you parse the URL using the URL class?
+* How do you read request body data from an incoming HTTP request?
+* How do you handle JSON request bodies without Express.js?
+* How do you handle form-urlencoded request bodies?
+* How do you implement routing using the built-in HTTP module?
+* How do you return different responses based on HTTP methods?
+* How do you set the response status code and headers?
+* What is the difference between res.setHeader() and res.writeHead()?
+* What is the difference between req.url and the URL pathname?
+* How do you handle requests with unsupported HTTP methods?
+* How do you implement a 404 response in a Node.js HTTP server?
+* How do you handle malformed HTTP request bodies?
+* What are the request and response stream objects in Node.js?
+* What is the difference between IncomingMessage and ServerResponse?
+* How do you stream a large file as an HTTP response?
+* How do you handle client disconnections during a response?
+* What is HTTP keep-alive, and how does Node.js support it?
+* What is the difference between HTTP persistent connections and non-persistent connections?
+* What is the purpose of the Connection header?
+* How do you configure request timeouts in Node.js HTTP servers?
+* How do you make HTTP requests to external APIs using Node.js?
+* What is the difference between the built-in http and https modules?
+* How do you configure an HTTPS server using TLS certificates?
+* What is the purpose of the Agent class in Node.js HTTP clients?
+* How do you handle HTTP request and response errors?
+* How do you test an HTTP server using Node.js?
+* How do you implement basic request logging for an HTTP server?

@@ -1,0 +1,31 @@
+* A Spring Boot API that queries PostgreSQL becomes slow after a production deployment. How would you investigate the issue and identify the root cause?
+* A query that previously completed in milliseconds now takes several seconds after millions of rows are inserted. How would you troubleshoot and optimize it?
+* A PostgreSQL query uses a sequential scan even though an index exists on the filtering column. How would you determine why?
+* A production database experiences high CPU usage during peak traffic. How would you identify the queries and operations responsible?
+* A PostgreSQL database runs out of disk space even though the application data volume has not increased significantly. How would you investigate WAL growth, table bloat, and replication slots?
+* Autovacuum is unable to keep up with a high-volume update workload. What would you inspect and change?
+* Two concurrent requests attempt to update the same account balance. How would you prevent lost updates and maintain data consistency?
+* A money-transfer transaction updates one account but fails before updating the other. How would you ensure atomicity and safe recovery?
+* A Spring Boot application reports deadlocks intermittently during concurrent order processing. How would you identify the conflicting statements and prevent recurrence?
+* Users report inconsistent results when multiple requests update the same records. How would you investigate transaction isolation and concurrency behavior?
+* A PostgreSQL connection pool reaches its maximum size, causing API requests to time out. How would you diagnose connection leaks, slow queries, and pool misconfiguration?
+* Database connections remain active after application requests have completed. How would you investigate transaction boundaries and connection lifecycle issues?
+* A query with LIMIT and OFFSET becomes progressively slower on later pages. How would you redesign pagination?
+* A table containing hundreds of millions of audit records needs partitioning without significant downtime. How would you plan and execute the migration?
+* A partitioned table query scans partitions that should not contain matching records. How would you diagnose partition pruning?
+* A PostgreSQL primary server fails, and the application must resume writes quickly. How would you design and validate failover?
+* A standby database has several minutes of replication lag during peak writes. How would you investigate and mitigate the lag?
+* A logical replication consumer falls behind and retains excessive WAL on the publisher. How would you recover safely?
+* A database migration fails halfway through a deployment, leaving the application and schema incompatible. How would you recover and prevent recurrence?
+* A new application version introduces a schema change that is incompatible with the previous version still running. How would you deploy the change safely?
+* A JSONB column is frequently queried by nested attributes, but response times are poor. How would you choose indexes and validate improvements?
+* An UPSERT operation creates unexpected contention when many requests insert or update the same business key. How would you investigate and reduce contention?
+* A batch job updates millions of records and blocks user-facing transactions. How would you redesign the batch processing?
+* A report query performs expensive aggregations over transactional tables and affects online API latency. How would you isolate and optimize reporting workloads?
+* A PostgreSQL database experiences a sudden increase in transaction ID age. How would you investigate wraparound risk and remediate it?
+* A point-in-time recovery is required after an accidental bulk DELETE. What backups and WAL information are needed, and how would you validate the recovered data?
+* A Java application intermittently receives connection-reset and serialization-failure errors. How would you distinguish transient failures from application or database defects?
+* A database upgrade is required with minimal downtime and rollback risk. How would you plan compatibility checks, migration, validation, and cutover?
+* A multi-tenant application must prevent one tenant from accessing another tenant's records. How would you enforce tenant isolation in PostgreSQL and Spring Boot?
+* A query becomes slower after a large data distribution change, but the SQL has not changed. How would you investigate planner statistics and execution-plan changes?
+* A production release causes database latency to increase while application CPU remains low. How would you correlate application metrics, connection pool metrics, PostgreSQL activity, and query plans?

@@ -1,0 +1,21 @@
+
+* A Spring Boot application works locally but cannot connect to Azure SQL after deployment. How would you troubleshoot the JDBC URL, firewall, authentication, and network configuration?
+* Your application starts returning SQL connection timeout errors during peak traffic. How would you determine whether the issue is connection pooling, database capacity, or network latency?
+* After scaling an App Service from two instances to ten, Azure SQL starts rejecting new connections. How would you resolve the connection surge?
+* A Java application receives intermittent transient SQL errors during database failover. How would you make the application recover safely?
+* A transaction commits successfully in Azure SQL, but the application times out before receiving the response and retries the operation. How would you prevent duplicate business transactions?
+* A production API becomes slow after a new database release. How would you use Query Store, execution plans, and application telemetry to identify the regression?
+* Two users update the same order simultaneously, causing one update to overwrite the other. How would you prevent lost updates?
+* A Spring Data JPA application encounters deadlocks during bulk updates. How would you investigate transaction boundaries, locking order, and indexes?
+* A database reaches its configured resource limits during month-end processing. How would you identify the bottleneck and plan capacity changes?
+* A Java application must connect to Azure SQL without storing database passwords. How would you configure managed identity and database permissions?
+* An application can resolve the Azure SQL hostname but cannot establish a connection through a private endpoint. How would you troubleshoot DNS, routing, and firewall settings?
+* A database administrator restores Azure SQL to an earlier point in time after accidental data deletion. How would you validate and redirect the Java application to the recovered database?
+* A schema migration adds a non-nullable column and causes failures in an older application version. How would you redesign the migration and deployment sequence?
+* A critical database must remain available if its primary Azure region becomes unavailable. How would you configure regional recovery and validate application failover?
+* A reporting workload slows down transactional APIs. How would you isolate analytical reads from transactional workloads?
+* A Java application uses excessive database connections because each microservice creates its own pool. How would you establish safe connection limits across the platform?
+* Azure SQL CPU utilization is low, but query response times remain high. What database waits, blocking, network, and application-level factors would you investigate?
+* A batch job inserts millions of records and causes transaction log pressure and lock contention. How would you optimize the ingestion process?
+* An application migration to Azure SQL produces differences in query behavior and execution plans. How would you validate compatibility and performance before production rollout?
+* A compliance audit requires encrypted connections, private network access, auditing, and least-privilege permissions. How would you implement and verify these controls?

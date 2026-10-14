@@ -1,0 +1,30 @@
+* Implement an Adapter in Java that converts a third-party payment gateway API into a common PaymentProcessor interface.
+* Create a Facade class that coordinates inventory, payment, and shipping services for an order checkout workflow.
+* Implement a Decorator that adds logging to a Java service without modifying the original implementation.
+* Create a notification service using decorators to add encryption, logging, and retry behavior.
+* Implement a Composite pattern representing files and directories, with an operation to calculate total size.
+* Build an organization hierarchy using Composite, supporting departments, teams, and employees.
+* Implement a Bridge pattern that separates message types from delivery channels such as email and SMS.
+* Create a Bridge-based report system supporting PDF, Excel, and CSV formats with different output destinations.
+* Implement a Proxy that lazily loads a large document only when its content is requested.
+* Create a protection proxy that checks user permissions before allowing access to a service.
+* Implement a caching proxy around a repository method using a Map.
+* Build a thread-safe Flyweight factory that reuses immutable objects based on shared intrinsic state.
+* Implement a text-rendering application that shares character formatting objects using the Flyweight pattern.
+* Create a Java dynamic proxy using InvocationHandler to log method names and execution times.
+* Implement a dynamic proxy that measures execution duration and correctly propagates target exceptions.
+* Write a JUnit test for an Adapter that translates third-party payment responses into application-domain responses.
+* Implement a Decorator chain that adds metrics and retry behavior around an external API client.
+* Create a Spring Boot service that uses an interface-based proxy to record execution time.
+* Implement a Composite structure with methods to add, remove, and display hierarchical nodes.
+* Add cycle detection to a Composite tree so that a node cannot become its own descendant.
+* Implement a Facade for a banking workflow that coordinates account validation, balance checks, and fund transfers.
+* Create a virtual proxy that loads a large image from storage only when it is first displayed.
+* Implement a Remote Proxy simulation that invokes a remote-service interface and handles timeout exceptions.
+* Create an Adapter for a legacy temperature service that converts Fahrenheit values into a Celsius-based domain model.
+* Implement a Decorator for a Java HTTP client that adds request headers without changing the underlying client.
+* Build a caching proxy that supports concurrent requests for the same key without duplicate database calls.
+* Implement a Bridge pattern for notifications that supports multiple message types and multiple delivery providers.
+* Write a Java example combining Adapter and Facade to simplify access to a legacy inventory system.
+* Implement a Spring Boot application that wraps a repository with a caching decorator and supports cache invalidation after updates.
+* Build a small Java application demonstrating all seven Gang of Four structural design patterns, with unit tests for the key behaviors.

@@ -1,0 +1,30 @@
+* Create a Node.js REST API using Express that returns a welcome message.
+* Implement CRUD endpoints for a user resource using an in-memory array.
+* Create a GET endpoint that retrieves a user by ID using route parameters.
+* Implement an endpoint that filters products using query parameters.
+* Create a POST endpoint that validates and creates a new product.
+* Implement PUT and PATCH endpoints for updating a resource.
+* Create a DELETE endpoint that returns the appropriate HTTP status code.
+* Write Express middleware that logs the HTTP method, URL, status code, and response time.
+* Implement centralized error-handling middleware for an Express application.
+* Create an asynchronous route handler that retrieves records from a database.
+* Implement request validation using a schema validation library.
+* Create a REST API endpoint that supports pagination, filtering, and sorting.
+* Implement cursor-based pagination for a large collection of records.
+* Create a file-upload API with file type and size validation.
+* Implement JWT-based authentication middleware for protected endpoints.
+* Create role-based authorization middleware for administrator and regular-user roles.
+* Implement API rate limiting using Express middleware.
+* Create an endpoint that returns a consistent error response for validation and business errors.
+* Implement idempotency-key handling for an order creation endpoint.
+* Write an API endpoint that prevents concurrent updates using a version number.
+* Implement a Redis cache for a frequently accessed GET endpoint.
+* Create a REST API client using the built-in fetch API with timeouts and error handling.
+* Implement retry logic with exponential backoff for safe outbound HTTP requests.
+* Create a circuit breaker around a downstream REST API call.
+* Write integration tests for CRUD endpoints using a Node.js testing framework.
+* Create an OpenAPI specification for a user management REST API.
+* Implement request correlation IDs and include them in application logs.
+* Create a long-running report API that returns HTTP 202 and a job ID, with a separate endpoint to check job status.
+* Implement an endpoint that publishes an event reliably after committing a database transaction using the transactional outbox pattern.
+* Build a complete REST API using Node.js and Express with authentication, authorization, validation, pagination, rate limiting, centralized error handling, logging, and automated tests.

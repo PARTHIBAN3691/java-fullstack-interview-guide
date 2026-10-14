@@ -1,0 +1,20 @@
+* Write a Java Spring Boot REST endpoint that returns a health status suitable for an ALB health check.
+* Write a Spring Boot health endpoint that reports application readiness separately from liveness.
+* Write a Java REST API that returns HTTP 200 when the service is healthy and HTTP 503 when a required dependency is unavailable.
+* Write a Java filter that extracts the client IP from `X-Forwarded-For` while trusting forwarding headers only from a correctly configured proxy chain.
+* Write a Java Spring Boot application that logs request IDs and trace IDs for requests received through an ALB.
+* Write a Java program using AWS SDK for Java 2.x to describe an Elastic Load Balancing v2 load balancer.
+* Write a Java program using AWS SDK v2 to list target groups associated with an ALB.
+* Write a Java program that retrieves the health status and reason codes of targets in a target group.
+* Write a Java program that registers an EC2 instance with a target group.
+* Write a Java program that deregisters a target and handles AWS API exceptions.
+* Write a Java program that retrieves ALB listener configurations and displays their protocols and ports.
+* Write a Java program that creates a target group with an HTTP health check using AWS SDK v2.
+* Write a Java program that retrieves ALB attributes and reports whether access logging is enabled.
+* Write a Java program that queries CloudWatch metrics for ALB request count, target response time, and HTTP error counts.
+* Write a Java utility that parses ALB access logs and summarizes requests by status code, target, and latency.
+* Write a Java program that detects targets remaining unhealthy beyond a configured threshold and generates an alert.
+* Write a Java integration test that verifies a Spring Boot health endpoint returns the expected status codes.
+* Write a Java test that simulates a slow downstream dependency and verifies the application's timeout behavior.
+* Design a Java-based deployment utility that validates target health before shifting traffic to a new target group.
+* Design a Java Spring Boot microservices architecture deployed behind an ALB with health checks, HTTPS, graceful shutdown, observability, and zero-downtime deployment support.

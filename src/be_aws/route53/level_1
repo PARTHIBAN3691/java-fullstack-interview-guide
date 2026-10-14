@@ -1,0 +1,20 @@
+* Explain the end-to-end DNS resolution process when a user accesses a Java Spring Boot application through a custom domain.
+* How do you configure a Route 53 hosted zone for a domain registered with another registrar?
+* How do you create an Alias record pointing to an Application Load Balancer?
+* Why can an Alias record point to certain AWS resources without a conventional DNS TTL setting?
+* How does Route 53 integrate with CloudFront, API Gateway, S3 website endpoints, and Elastic Load Balancing?
+* What is the difference between simple, weighted, latency-based, failover, geolocation, geoproximity, and multivalue answer routing?
+* How does weighted routing support canary deployments?
+* How does latency-based routing select an endpoint?
+* How does failover routing work with primary and secondary resources?
+* How do Route 53 health checks affect DNS failover decisions?
+* What is the difference between endpoint health checks and calculated health checks?
+* How do private hosted zones work with VPCs?
+* How can you configure split-horizon DNS for internal and external access to the same domain?
+* What is a DNS delegation, and how do NS records support it?
+* How do DNS caching and TTL values affect the propagation of DNS changes?
+* How would you troubleshoot an `NXDOMAIN` response for a domain managed by Route 53?
+* How do DNSSEC and DNS query logging improve DNS security and visibility?
+* How can Route 53 Resolver support DNS resolution between connected VPCs and on-premises networks?
+* How do you monitor Route 53 health checks and DNS query activity?
+* How can you automate Route 53 record creation and updates using AWS CLI, SDKs, or infrastructure as code?

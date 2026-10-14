@@ -1,0 +1,21 @@
+
+* Create a `Student` class implementing `Serializable` and write a program to serialize and deserialize a `Student` object.
+* Write a Java program that serializes multiple objects to a file and reads them back.
+* Create a serializable `Employee` class with a declared `serialVersionUID` and demonstrate successful deserialization.
+* Write a program demonstrating how transient fields behave after deserialization.
+* Write a program demonstrating that static fields are not restored as serialized instance state.
+* Implement custom serialization using private `writeObject()` and `readObject()` methods.
+* Create a serializable class containing a non-serializable field and implement custom logic to restore that field.
+* Write a program that serializes two objects referencing the same child object and verifies that their references remain shared after deserialization.
+* Create a serializable class that contains a circular reference and demonstrate serialization and deserialization.
+* Implement a Singleton class using `Serializable` and preserve its identity using `readResolve()`.
+* Write a program using `writeReplace()` to substitute an object with a serialization proxy.
+* Implement the serialization proxy pattern for an immutable class and validate its state during deserialization.
+* Create a class extending a non-serializable superclass and restore the superclass state correctly after deserialization.
+* Implement `Externalizable` for a class with multiple fields and write matching `writeExternal()` and `readExternal()` methods.
+* Write a program that demonstrates the behavior of `ObjectOutputStream.reset()` when serializing a modified object more than once.
+* Write a program that demonstrates the difference between `writeObject()` and `writeUnshared()`.
+* Implement a custom `ObjectInputFilter` that allows only specified classes and limits object graph depth.
+* Write a program that handles `InvalidClassException` when serialized data is incompatible with the current class.
+* Create a serialization compatibility example where a new optional field is added while old serialized data remains readable.
+* Write a program that serializes a collection of objects, measures the output size, and compares it with a JSON-based representation.

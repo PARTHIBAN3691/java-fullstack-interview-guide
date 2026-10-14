@@ -1,0 +1,20 @@
+* Explain how type erasure works internally in Java generics.
+* What information about generic types is retained at runtime after type erasure?
+* Why can't Java overload methods using parameterizations that erase to the same signature?
+* Why can't a generic class extend `Throwable`?
+* Why can't `instanceof` generally test against a parameterized type such as `List<String>`?
+* What is heap pollution in Java generics?
+* How can unchecked casts cause runtime `ClassCastException` errors?
+* What is a reifiable type, and which generic types are reifiable?
+* What is the purpose of `@SafeVarargs`, and when can it be used?
+* What is the difference between covariance, contravariance, and invariance?
+* How does Java implement covariance for arrays but invariance for generic collections?
+* How does wildcard capture enable operations on generic collections?
+* How would you design a generic repository interface that supports multiple entity types and identifier types?
+* How would you implement a generic method that accepts a collection of objects extending `Number` and returns their sum?
+* How would you design a type-safe generic factory without relying on unchecked casts?
+* How do recursive type bounds work, such as `T extends Comparable<T>`?
+* What is the purpose of the Curiously Recurring Template Pattern (CRTP) in Java generics?
+* How do generic methods interact with overloaded methods and type inference?
+* How can generic type inference produce unexpected compilation errors with lambdas and method references?
+* What are the limitations of Java generics compared with reified generics in other programming languages?

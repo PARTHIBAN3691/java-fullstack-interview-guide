@@ -1,0 +1,111 @@
+**Generative AI Fundamentals**
+* What is Generative AI, and how does it work at a high level?
+* What types of content can Generative AI create?
+* How does Generative AI differ from traditional rule-based systems?
+* What are some real-world applications of Generative AI in enterprise software?
+* What are hallucinations in Generative AI?
+* What are the main limitations of Generative AI systems?
+
+**Large Language Models (LLMs)**
+* What is a Large Language Model (LLM)?
+* How does an LLM generate a response to a user prompt?
+* What is the difference between an LLM and a traditional NLP model?
+* What are some common use cases for LLMs?
+* What is the difference between a base language model and an instruction-tuned model?
+* Why can an LLM generate plausible but factually incorrect answers?
+
+**Transformer Architecture**
+* What is the Transformer architecture?
+* Why did Transformers become popular in modern AI applications?
+* What are the encoder and decoder components in a Transformer?
+* What is the difference between encoder-only, decoder-only, and encoder-decoder models?
+* What is the role of positional information in a Transformer?
+* Why are Transformers suitable for processing language?
+
+**Attention Mechanism and Self-Attention**
+* What is the attention mechanism in a neural network?
+* What is self-attention?
+* What are query, key, and value vectors?
+* Why does a Transformer use attention to process tokens?
+* What is multi-head attention?
+* How does attention help a model relate words in a sentence?
+
+**Tokenization and Tokens**
+* What is a token in an LLM?
+* What is tokenization?
+* How do tokens differ from words and characters?
+* Why do different models use different tokenizers?
+* What are special tokens?
+* Why does token count matter when using an LLM API?
+
+**Embeddings**
+* What is an embedding in Generative AI?
+* How is text converted into an embedding vector?
+* What does semantic similarity mean?
+* How do embeddings differ from token IDs?
+* What are some common use cases for embeddings?
+* Why can similar meanings have similar embedding representations?
+
+**Context Windows**
+* What is a context window in an LLM?
+* What types of information occupy the context window?
+* What happens when a prompt exceeds the model's context limit?
+* How do context windows affect conversation history?
+* What is the difference between context length and model memory?
+* Why is context-window size important in enterprise applications?
+
+**Temperature, Top-P, and Sampling**
+* What is temperature in text generation?
+* What is top-p sampling?
+* What is the difference between greedy decoding and sampling?
+* How does temperature affect the diversity of generated responses?
+* What does deterministic generation mean?
+* Why can identical prompts produce different outputs?
+
+**Model Parameters and Quantization**
+* What are model parameters?
+* How do model size and parameter count relate to one another?
+* What is quantization in AI?
+* Why is quantization used when deploying LLMs?
+* What is the difference between model parameters and inference settings?
+* How can quantization affect model quality and memory usage?
+
+**Pre-training, Fine-tuning, and Inference**
+* What is pre-training?
+* What is fine-tuning?
+* What is inference?
+* How does fine-tuning differ from pre-training?
+* What is instruction tuning?
+* Why is a trained model needed before an application can use it for inference?
+
+**Open-Source vs Proprietary Models**
+* What is an open-weight AI model?
+* What is a proprietary AI model?
+* How do open-weight and proprietary models differ in accessibility?
+* What are the benefits of using a hosted commercial LLM API?
+* What are the benefits of running a model on your own infrastructure?
+* What factors influence the choice between open-weight and proprietary models?
+
+**Multimodal AI**
+* What is multimodal AI?
+* Which types of input and output can a multimodal model support?
+* How does multimodal AI differ from text-only AI?
+* What are common use cases for image-and-text models?
+* What is the difference between multimodal input and multimodal output?
+* What challenges arise when processing multiple data modalities?
+
+**Image, Audio, Video, and Code Generation**
+* How does AI image generation work at a high level?
+* What is text-to-speech generation?
+* What is AI video generation?
+* How can Generative AI assist with code generation?
+* What are prompts and conditioning inputs in content generation?
+* What are common quality and safety challenges in generated images, audio, video, and code?
+
+**Model Selection and Benchmarking**
+* What is an AI model benchmark?
+* Why should models be evaluated before being selected for an application?
+* What are accuracy, latency, and throughput in model evaluation?
+* What is the difference between a general-purpose and a domain-specific model?
+* Why is model performance on a benchmark not a guarantee of production performance?
+* What factors should be considered when choosing an LLM for an application?

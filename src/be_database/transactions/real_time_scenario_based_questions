@@ -1,0 +1,30 @@
+* A money-transfer API debits one account but fails before crediting the destination account. How would you investigate the transaction boundary and ensure atomic rollback?
+* A customer submits a payment request twice because the first request times out. How would you prevent duplicate payment processing?
+* Two users purchase the last available item simultaneously, causing inventory to become negative. How would you prevent the race condition?
+* A Spring Boot service updates the database successfully, but an exception occurs later in the method. Why might the transaction not roll back, and how would you fix it?
+* A method annotated with @Transactional calls another transactional method in the same class, but the expected transaction behavior does not occur. How would you investigate proxy-based transaction management?
+* A checked exception occurs during a transactional operation, but the database changes are committed. How would you configure the rollback rules correctly?
+* An exception is caught inside a transactional method, and the transaction unexpectedly fails at commit time. How would you investigate rollback-only status?
+* An outer transaction rolls back, but an audit record created in a REQUIRES_NEW transaction remains committed. Is this expected, and how would you handle the business requirement?
+* Multiple concurrent requests update the same customer record, and some updates are silently overwritten. How would you implement optimistic locking or pessimistic locking?
+* A production application experiences frequent database deadlocks during order processing. How would you identify the conflicting statements and prevent recurrence?
+* A long-running report holds database resources and delays critical transactions. How would you separate workloads and shorten transaction duration?
+* A Spring Boot application exhausts its HikariCP connection pool during peak traffic because transactions remain open while calling external services. How would you redesign the workflow?
+* A database transaction commits successfully, but publishing the corresponding Kafka event fails. How would you prevent the database and messaging systems from becoming inconsistent?
+* A Kafka event is published successfully, but the database transaction rolls back. How would you redesign the event publishing workflow?
+* A distributed order-processing workflow updates inventory, payment, and shipping across separate services. How would you coordinate the workflow and compensate for failures?
+* A payment service receives a serialization failure during concurrent updates. How would you retry the transaction without duplicating external side effects?
+* An application uses READ COMMITTED isolation but still produces incorrect totals during concurrent operations. How would you determine whether stronger isolation or explicit locking is needed?
+* A transaction reads the same record twice and receives different values. How would you explain and address this behavior using transaction isolation?
+* A transaction commits, but the application loses the database connection before receiving the response. How would you determine the transaction outcome safely?
+* A bulk update fails after processing thousands of records. How would you decide between rolling back the entire batch and processing smaller transactions?
+* A Spring Boot service uses two DataSources, but only one database participates in the transaction. How would you investigate the transaction-manager configuration?
+* An application calls an external payment gateway while holding a database transaction open. How would you redesign the sequence to reduce lock duration and handle partial failure?
+* A transaction times out during a high-traffic operation, but the application retries it automatically. How would you prevent duplicate writes and retry storms?
+* A record is updated by another transaction between a validation query and an UPDATE statement. How would you prevent this time-of-check-to-time-of-use problem?
+* A transaction is marked rollback-only even though the original exception was handled. How would you find the source and correct the transaction flow?
+* A JPA entity appears updated in Java, but the change is not visible in the database before the transaction completes. How would you investigate persistence-context flushing?
+* A transaction passes unit tests but fails under concurrent production traffic. How would you reproduce and validate the concurrency issue?
+* A database failover occurs while a transaction is in progress. How would you handle an unknown commit outcome and restore application consistency?
+* A business workflow requires updating a database and invoking several external APIs, but there is no distributed transaction coordinator. How would you design recovery, retries, and compensation?
+* How would you investigate, fix, and prevent recurring transaction incidents using transaction logs, lock monitoring, tracing, and concurrency tests?

@@ -1,0 +1,30 @@
+* How would you design a consensus-based distributed system that tolerates multiple node failures?
+* How do Raft and Paxos preserve safety when messages are delayed or nodes recover after crashes?
+* Why does a majority-based consensus algorithm typically require 2f + 1 nodes to tolerate f crash failures?
+* What is the difference between crash fault tolerance and Byzantine fault tolerance?
+* How does Practical Byzantine Fault Tolerance (PBFT) achieve agreement in the presence of malicious nodes?
+* Why do Byzantine fault-tolerant protocols typically require at least 3f + 1 replicas to tolerate f Byzantine faults?
+* How do leader-based and leaderless consensus protocols compare in terms of latency and throughput?
+* How does the FLP impossibility result affect consensus in asynchronous distributed systems?
+* How do practical consensus algorithms make progress despite the FLP impossibility result?
+* How do quorum intersection and voting rules prevent conflicting decisions?
+* How does a consensus protocol handle a leader that becomes isolated but continues accepting client requests?
+* How do terms, epochs, and fencing tokens prevent stale leaders from corrupting shared state?
+* How would you design dynamic membership changes in a Raft cluster without compromising safety?
+* What is joint consensus in Raft, and why is it useful during cluster reconfiguration?
+* How do snapshotting and log compaction improve the performance of replicated state machines?
+* How do you safely restore a consensus cluster from snapshots and persisted logs?
+* How does consensus differ from two-phase commit in distributed transaction processing?
+* How can consensus be combined with transaction protocols to coordinate distributed business operations?
+* How do consensus algorithms behave under asymmetric network partitions?
+* How do clock skew and timing assumptions affect leader leases and failure detection?
+* What are the risks of using time-based leases instead of quorum-based fencing for distributed coordination?
+* How would you design consensus across multiple geographic regions while minimizing write latency?
+* How do WAN latency and quorum placement affect consensus throughput and availability?
+* How would you design a consensus-backed metadata service for a large distributed storage system?
+* How does a distributed database use consensus to agree on write ordering and commit decisions?
+* How would you prevent consensus traffic from becoming a bottleneck in a high-throughput system?
+* How do batching and pipelining improve consensus performance, and what trade-offs do they introduce?
+* How do you distinguish a slow node from a failed node without perfect failure detection?
+* How would you diagnose a consensus cluster that repeatedly changes leaders and fails to commit entries?
+* How would you evaluate the safety, liveness, availability, latency, and operational cost of a consensus-based architecture?

@@ -1,0 +1,30 @@
+* What is a ConfigMap in Kubernetes?
+* Why do we use ConfigMaps in Kubernetes?
+* What type of data can be stored in a ConfigMap?
+* What is the difference between a ConfigMap and a Secret?
+* How do you create a ConfigMap using kubectl?
+* How do you create a ConfigMap using a YAML manifest?
+* How do you list ConfigMaps in a Kubernetes namespace?
+* How do you view the contents of a ConfigMap?
+* How do you delete a ConfigMap?
+* Can a ConfigMap store multiple key-value pairs?
+* Can a ConfigMap store application configuration files?
+* How do you pass ConfigMap values as environment variables?
+* How do you mount a ConfigMap as a volume?
+* What is the difference between environment variable injection and volume mounting?
+* Can multiple Pods use the same ConfigMap?
+* Can a ConfigMap be shared across namespaces?
+* What happens if a Pod references a nonexistent ConfigMap?
+* What happens when a ConfigMap is updated?
+* Are ConfigMaps encrypted by default?
+* What is the maximum size of a ConfigMap?
+* Can a ConfigMap contain database connection details?
+* How do you reference a ConfigMap in a Deployment?
+* What is the purpose of the data field in a ConfigMap manifest?
+* What is the difference between data and binaryData in a ConfigMap?
+* Can ConfigMaps store YAML and properties files?
+* How do you inject Spring Boot application properties using a ConfigMap?
+* What is the difference between a ConfigMap and hardcoded application configuration?
+* Can ConfigMap values be used in command-line arguments?
+* How do you verify that a container received the expected ConfigMap values?
+* What are the advantages of using ConfigMaps in microservices architecture?

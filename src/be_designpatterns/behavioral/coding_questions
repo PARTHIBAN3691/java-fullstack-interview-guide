@@ -1,0 +1,30 @@
+* Implement the Strategy pattern in Java for calculating discounts based on customer type.
+* Refactor a payment-processing switch statement into separate Strategy implementations.
+* Create a Spring Boot application that selects a payment Strategy using dependency injection and a payment type.
+* Implement the Observer pattern in Java for notifying subscribers when an account balance changes.
+* Write a thread-safe event publisher that supports listener registration, removal, and notification.
+* Implement asynchronous observer notification using an ExecutorService.
+* Write a Java example that prevents duplicate event processing using an idempotency key.
+* Implement the Command pattern for bank account deposit and withdrawal operations.
+* Extend the Command implementation to support undo and redo operations.
+* Implement a command queue that supports retries, cancellation, and execution status tracking.
+* Create a Spring Boot endpoint that submits commands for asynchronous background processing.
+* Implement the Chain of Responsibility pattern for validating a customer registration request.
+* Create a validation chain for processing a payment through authentication, balance validation, and transaction-limit checks.
+* Implement a configurable responsibility chain in Spring Boot using injected handler beans.
+* Write unit tests that verify handler ordering, short-circuiting, and exception handling in a responsibility chain.
+* Implement the State pattern for an order lifecycle with valid and invalid state transitions.
+* Write a Java payment state machine that supports authorization, capture, failure, and refund.
+* Add concurrency protection to a state-based order-processing implementation.
+* Implement the Template Method pattern for generating PDF and CSV reports using shared processing steps.
+* Refactor a template algorithm that contains too many optional hooks into a composition-based design.
+* Implement a custom Iterator that traverses a collection of employee objects.
+* Write a lazy iterator that reads database records in batches rather than loading the entire dataset.
+* Implement a Mediator that coordinates communication between a chat room's users.
+* Write a Java example that refactors tightly coupled UI components to communicate through a Mediator.
+* Implement the Memento pattern to save and restore the state of a text editor.
+* Extend the Memento implementation to maintain multiple snapshots and support undo operations.
+* Implement the Visitor pattern to calculate the total area of different geometric shapes.
+* Add a new operation to a Visitor-based object hierarchy and write unit tests for it.
+* Implement an arithmetic expression interpreter supporting addition, subtraction, multiplication, and parentheses.
+* Write JUnit tests for a behavioral-pattern-based order workflow, including success paths, invalid transitions, concurrency, and failure handling.

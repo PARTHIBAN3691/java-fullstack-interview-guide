@@ -1,0 +1,30 @@
+* Explain how pure pipes are evaluated during Angular change detection.
+* How does Angular determine whether the arguments of a pure pipe have changed?
+* Why does mutating a nested property not necessarily trigger a pure pipe?
+* How do immutable data patterns improve the reliability of pure pipes?
+* How would you optimize a custom pipe that processes thousands of records?
+* What are the trade-offs between pure pipes, computed signals, and component-level transformations?
+* When would you choose a computed signal instead of a custom pipe?
+* How do pure pipes interact with ChangeDetectionStrategy.OnPush?
+* How can an impure pipe cause repeated expensive calculations?
+* How would you diagnose performance problems caused by a custom pipe?
+* How do you design a pipe that handles large arrays without mutating the original data?
+* How would you implement a reusable filtering pipe that supports multiple criteria?
+* What are the risks of using pipes for sorting or filtering large datasets?
+* How do you avoid unnecessary object allocation inside a custom pipe?
+* How would you cache expensive computations performed by a custom pipe?
+* What are the differences between pipe transformation and memoization?
+* How does AsyncPipe mark a component for checking when a new value arrives?
+* How does AsyncPipe help manage Observable subscriptions during component destruction?
+* What are the potential issues when repeatedly creating new Observable references in a template?
+* How would you prevent repeated HTTP requests when using AsyncPipe?
+* How do pipes behave in Angular server-side rendering and hydration?
+* How would you handle locale-specific formatting in a multi-language application?
+* How do LOCALE_ID and registerLocaleData() affect Angular's built-in formatting pipes?
+* How would you create a custom pipe that formats large monetary values using configurable currencies?
+* How do you handle timezone differences when formatting dates in Angular?
+* How would you design a pipe that supports nullable values, invalid inputs, and fallback formats?
+* What are the trade-offs between making a custom pipe pure and impure?
+* How do you test a custom pipe that depends on an injected service?
+* How would you refactor a complex custom pipe into reusable services and smaller transformations?
+* How would you establish coding standards for pipe design in a large Angular application?

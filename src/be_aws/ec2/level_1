@@ -1,0 +1,21 @@
+
+* How do you launch an EC2 instance and deploy a Java Spring Boot application on it?
+* How do you configure a Java application to start automatically when an EC2 instance boots?
+* How do you securely connect to an EC2 instance without exposing SSH or RDP to the entire internet?
+* How do IAM roles for EC2 instances work, and why are they preferable to hardcoded AWS credentials?
+* How do you configure an EC2 instance to access Amazon S3 using an IAM instance profile?
+* How do you monitor EC2 CPU utilization, network traffic, and disk performance using CloudWatch?
+* How do you monitor memory and filesystem utilization on an EC2 instance?
+* What is EC2 user data, and how can it automate application installation during instance initialization?
+* What is the difference between user data and instance metadata?
+* What is EC2 Instance Metadata Service (IMDS), and why should IMDSv2 be preferred?
+* How do you resize an EC2 instance, and what operational considerations are involved?
+* How do you attach, detach, and expand an EBS volume?
+* How do you create an AMI from an existing EC2 instance?
+* How do you configure an Auto Scaling group with a launch template?
+* How does an Elastic Load Balancer distribute requests across EC2 instances?
+* How do you configure HTTPS for a Java application running on EC2?
+* How do you troubleshoot an EC2 instance that is running but cannot be accessed through SSH?
+* How do you troubleshoot an application that is running on EC2 but is not reachable through a browser?
+* How do you reduce EC2 costs using right-sizing, scheduling, and purchasing options?
+* How do you deploy a Java application on EC2 using a CI/CD pipeline?

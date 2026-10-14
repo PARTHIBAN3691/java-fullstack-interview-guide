@@ -1,0 +1,30 @@
+* A Spring Boot application writes files to a container directory, but the files disappear after the Pod is recreated. How would you fix the storage design?
+* A Pod remains in Pending state because its PVC cannot be bound. How would you troubleshoot the StorageClass, access mode, and available capacity?
+* A database Pod is rescheduled to another node, but its PVC cannot be attached. How would you investigate the issue?
+* A container can mount a PVC but receives Permission denied when writing files. How would you troubleshoot ownership, filesystem permissions, and securityContext settings?
+* A Java application writes large temporary files to emptyDir and the node runs out of disk space. How would you prevent recurrence?
+* A Pod uses a memory-backed emptyDir and is unexpectedly OOMKilled. How would you investigate the interaction between temporary storage and memory limits?
+* A PVC is Bound, but the application cannot see the expected files. How would you inspect the VolumeMount configuration and filesystem contents?
+* A ConfigMap Volume is updated, but the application continues using the old configuration. How would you investigate file propagation and application reload behavior?
+* A Secret mounted as a Volume is rotated, but the Java application continues using the old credentials. How would you resolve the issue?
+* A database StatefulSet requires 100Gi of storage, but its PVC remains Pending because of an unsupported StorageClass. How would you correct the configuration?
+* A storage backend supports ReadWriteOnce, but the team expects the same volume to be writable by Pods on different nodes. How would you explain and redesign the solution?
+* A production database runs out of disk space, and its PVC needs expansion. How would you increase capacity while minimizing downtime?
+* A PersistentVolume uses the Delete reclaim policy, and a PVC is accidentally deleted. What could happen to the data, and what recovery options would you investigate?
+* A PersistentVolume uses the Retain reclaim policy, but the old data must be reused by a new PVC. How would you reclaim and validate the volume safely?
+* A node fails while a database Pod is writing data. How would you evaluate storage consistency and recover the workload?
+* A Pod is stuck in Terminating because its volume cannot be unmounted. How would you investigate the kubelet, CSI driver, and node state?
+* A StatefulSet is scaled down, and the team wants to remove unused PVCs. How would you identify the correct claims and prevent accidental data loss?
+* A volume mount works on one node but fails on another node in a different availability zone. How would you investigate topology constraints?
+* A backup Job completes successfully, but restoring its files produces an inconsistent database. How would you improve backup consistency?
+* A VolumeSnapshot is created, but a new PVC cannot be restored from it. How would you troubleshoot snapshot support, compatibility, and provisioning?
+* A Java application experiences slow file writes after moving to a different StorageClass. How would you compare IOPS, throughput, latency, and filesystem settings?
+* A container running as a non-root user cannot write to a mounted network filesystem. How would you investigate UID/GID mapping and storage permissions?
+* Multiple containers in one Pod must share generated files, but the files must disappear when the Pod is removed. Which Volume type would you choose and why?
+* An application uses subPath to mount a single configuration file, but changes to the ConfigMap are not reflected. How would you redesign the mount or reload mechanism?
+* A node-local PersistentVolume is used by a stateful application, and the node becomes permanently unavailable. What recovery options are available?
+* A PVC remains Bound even though the storage backend is unhealthy. How would you detect the failure and prevent the application from silently losing access?
+* A storage migration requires moving data from one cloud provider to another. How would you plan data transfer, validation, cutover, and rollback?
+* A security audit discovers that sensitive application files are stored on an unencrypted persistent volume. How would you assess the risk and implement encryption?
+* A shared persistent volume is used by several application replicas, causing concurrent file-write conflicts. How would you redesign the storage and application architecture?
+* How would you plan and execute a disaster-recovery drill for a stateful Java application, including volume restoration, data validation, and service recovery?

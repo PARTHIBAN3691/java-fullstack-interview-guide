@@ -1,0 +1,30 @@
+* Write a function that accepts another function as a callback and executes it.
+* Write a program that passes a named function as a callback.
+* Write a program that uses an arrow function as a callback.
+* Write a function that accepts two numbers and a callback to perform an arithmetic operation.
+* Write a program that uses a callback with setTimeout() to display a message after two seconds.
+* Write a program that uses setInterval() with a callback to display a counter.
+* Write a program that uses addEventListener() to handle a button click through a callback.
+* Write a program that uses map() with a callback to square every number in an array.
+* Write a program that uses filter() with a callback to select even numbers.
+* Write a program that uses reduce() with a callback to calculate the sum of an array.
+* Write a function that accepts a callback and passes multiple arguments to it.
+* Write a program that demonstrates the difference between synchronous and asynchronous callbacks.
+* Write a program that demonstrates the execution order of nested callbacks.
+* Implement a callback-based function that simulates fetching user details.
+* Implement an error-first callback function that returns either an error or a result.
+* Write a program that handles errors in a callback-based asynchronous operation.
+* Implement a function that executes a callback exactly once.
+* Implement a function that executes three asynchronous tasks sequentially using callbacks.
+* Implement a function that executes multiple asynchronous tasks in parallel using callbacks.
+* Write a program that demonstrates callback hell and then refactor it into a cleaner structure.
+* Convert a callback-based function into a Promise-based function.
+* Write a function that wraps a callback-based API so it can be used with async/await.
+* Implement a callback-based timeout mechanism for an asynchronous operation.
+* Implement retry logic for a callback-based operation with a maximum number of attempts.
+* Implement a callback-based task queue that processes tasks one at a time.
+* Implement a callback-based parallel execution utility with a configurable concurrency limit.
+* Implement a function that accepts success and error callbacks and validates input before execution.
+* Write a program that prevents duplicate callback execution when multiple events occur.
+* Implement a callback-based version of Promise.all() that preserves input result order.
+* Build a callback-based data-processing pipeline that validates, transforms, and saves records while handling errors at every stage.

@@ -1,0 +1,105 @@
+
+**Cloud Cost Management**
+* Monthly cloud spending increases by 40% while customer traffic increases by only 8%. How would you investigate the variance, identify the largest cost drivers, and prioritize corrective actions?
+* Finance reports that the cloud bill differs significantly from the engineering dashboard. How would you reconcile billing data, credits, discounts, amortization, and reporting delays?
+* A team reduces compute spending, but total application cost increases because database, logging, and network costs rise. How would you investigate the shifted costs and evaluate the overall result?
+* An organization has several cloud accounts and no consolidated cost visibility. How would you establish a baseline, identify ownership, and create a measurable optimization roadmap?
+* A proposed cost reduction could increase API latency during peak traffic. How would you quantify the trade-off and decide whether to implement the change?
+
+**Resource Tagging**
+* A monthly cost report cannot attribute 25% of spending because resources are missing owner and project tags. How would you recover ownership and prevent future gaps?
+* A team renames its cost-center tag values, breaking existing dashboards and reports. How would you handle taxonomy changes without losing historical continuity?
+* Resources created by an autoscaling controller do not inherit the required tags. How would you correct the tagging mechanism and verify compliance across existing resources?
+* Teams apply inconsistent environment tags, causing production spending to appear under development. How would you normalize the data and enforce standards at provisioning time?
+* An automated cleanup system selects an untagged database for deletion, but the database is business-critical. How would you improve ownership discovery and deletion safeguards?
+
+**Cost Allocation**
+* A shared Kubernetes cluster costs significantly more than expected, and individual product teams dispute their allocated shares. How would you define a transparent allocation model?
+* The finance team requires chargeback for shared networking and observability services. How would you choose allocation drivers and validate that they fairly represent consumption?
+* A business unit reports lower cloud costs after moving workloads into a shared account, but total organizational costs remain unchanged. How would you identify the allocation issue?
+* An application uses shared compute, storage, and data transfer across several products. How would you attribute costs using measurable consumption data?
+* An audit identifies a mismatch between the cloud invoice and departmental chargeback reports. How would you trace and resolve the discrepancy?
+
+**Reserved Instances**
+* A team purchases a large reservation based on projected growth, but the workload migration is delayed by six months. How would you quantify unused commitment risk and identify mitigation options?
+* Reservation coverage is high, yet the effective savings are lower than expected because the workload's instance family and region changed. How would you investigate the mismatch?
+* A business-critical workload has stable baseline usage and highly variable peak usage. How would you determine which portion should use reservations?
+* Multiple accounts have unused reservations while another account continues to pay on-demand rates. How would you investigate commitment sharing and eligible usage?
+* A reservation is approaching expiration, but a modernization project is scheduled to reduce compute demand. How would you decide whether to renew, resize the commitment, or move to another pricing model?
+
+**Savings Plans**
+* A savings plan is underutilized after several applications migrate to serverless services. How would you quantify the commitment impact and adjust future purchases?
+* A commitment appears attractive based on monthly usage, but hourly usage fluctuates substantially. How would you reassess the commitment level using hourly data?
+* Two teams disagree over how shared commitment discounts should be attributed. How would you design transparent allocation and reporting?
+* An organization has high on-demand spending alongside unused commitments. How would you determine whether the issue is coverage, scope, sharing, or workload compatibility?
+* A proposed architecture change reduces compute usage substantially. How would you evaluate its effect on existing commitments and the timing of new purchases?
+
+**Spot Instances**
+* A spot interruption affects a batch-processing cluster and causes repeated job failures. How would you introduce checkpointing, retries, and fallback capacity?
+* A workload has achieved large spot discounts but misses its completion SLA because of frequent interruptions. How would you balance cost, interruption risk, and execution deadlines?
+* Spot capacity becomes unavailable in one availability zone during peak demand. How would you maintain service availability while controlling fallback costs?
+* A production Kubernetes cluster uses spot nodes, and an interruption evicts several replicas simultaneously. How would you improve workload distribution and disruption handling?
+* Reported spot savings are high, but total spending has increased because failed jobs are repeatedly recomputed. How would you measure the actual end-to-end cost?
+
+**Right-Sizing**
+* Monitoring shows that several virtual machines average 8% CPU utilization, but they experience periodic latency spikes. How would you determine whether they can safely be downsized?
+* A database is right-sized based on average memory use, then begins swapping and suffering query timeouts during peak periods. How would you recover and improve the sizing process?
+* A cost recommendation tool proposes reducing production capacity by 50%. How would you validate the recommendation before implementation?
+* Teams ignore right-sizing recommendations because previous changes caused incidents. How would you introduce evidence-based testing, staged rollout, and rollback?
+* A service is downsized successfully, but downstream database and network costs increase. How would you reassess the optimization using end-to-end cost and performance metrics?
+
+**Auto Scaling**
+* A web application scales out rapidly during traffic spikes but scales in too slowly, increasing monthly costs. How would you tune scaling policies without harming availability?
+* A queue-processing service receives a large backlog after a dependency outage. Autoscaling launches hundreds of workers and overloads the database. How would you coordinate scaling with downstream capacity?
+* A service repeatedly scales up and down around a CPU threshold. How would you diagnose oscillation and stabilize the scaling policy?
+* A business experiences predictable seasonal traffic, but reactive autoscaling adds capacity too late. How would you introduce predictive or scheduled scaling?
+* Autoscaling reduces compute spending but causes cold-start delays and missed SLOs. How would you balance warm capacity, scaling delay, and cost?
+
+**Storage Optimization**
+* Object storage spending rises sharply because of versioning and incomplete multipart uploads. How would you identify the sources and introduce safe lifecycle rules?
+* A team moves frequently accessed data to archival storage and then incurs unexpectedly high retrieval costs. How would you correct the storage-tier policy?
+* Snapshot storage grows continuously even though application compute capacity remains stable. How would you identify retention problems and remove only safe-to-delete snapshots?
+* A log-retention reduction saves money but conflicts with audit and incident-investigation requirements. How would you define retention classes and approval controls?
+* A database storage tier is changed to a cheaper option, causing latency and I/O throttling. How would you evaluate the full cost-performance trade-off?
+
+**Data Transfer Costs**
+* A multi-region application sees a large increase in inter-region transfer costs after a new microservice is introduced. How would you trace traffic patterns and determine whether to change the service architecture?
+* A cloud bill shows unexpectedly high NAT gateway and data-processing charges. How would you identify the responsible workloads and compare alternative networking designs?
+* A centralized logging platform receives data from hundreds of services across regions. How would you reduce transfer costs without compromising observability?
+* A team moves large datasets between clouds for analytics and incurs substantial egress charges. How would you compare data-local processing, compression, and transfer scheduling?
+* Introducing a CDN reduces origin requests but does not lower total network spending as expected. How would you investigate cache hit rates, response sizes, regional pricing, and remaining egress?
+
+**Kubernetes Cost Optimization**
+* A Kubernetes cluster has many nodes running at low utilization, while some workloads remain pending because of scheduling constraints. How would you investigate requests, limits, affinity, and node-pool configuration?
+* The platform team reduces pod CPU requests, but production latency and throttling increase. How would you determine the correct requests and limits?
+* Several teams share a Kubernetes cluster, but one namespace consumes most of the resources. How would you implement fair allocation, quotas, and workload-specific accountability?
+* Cluster autoscaling fails to reduce node count because of restrictive disruption budgets and workloads that cannot be rescheduled. How would you diagnose and resolve the blockers?
+* Kubernetes infrastructure spending increases even though application traffic is flat. How would you investigate idle nodes, requests, replicas, storage, networking, and observability overhead?
+
+**Idle Resource Detection**
+* A cost report identifies virtual machines with almost no CPU activity, but some are used for disaster recovery. How would you classify resources before recommending remediation?
+* Hundreds of unattached disks and old snapshots have accumulated across accounts. How would you identify safe deletion candidates and verify backup dependencies?
+* An automated idle-resource process stops a production resource during a quiet period. How would you contain the impact and redesign detection and approval controls?
+* Teams repeatedly recreate resources after automated cleanup, eliminating the expected savings. How would you identify the underlying provisioning behavior and establish ownership?
+* An idle-resource dashboard reports substantial savings, but the cloud bill barely changes. How would you verify actual deletion, billing effects, replacement resources, and savings attribution?
+
+**Budget Alerts**
+* A team receives a budget alert only after a major spending increase has already occurred. How would you improve forecasting, alert timing, and escalation?
+* A budget system produces frequent false alarms because spending is seasonal. How would you introduce seasonality-aware forecasts and meaningful thresholds?
+* A production team ignores cost alerts because they arrive without resource ownership or actionable details. How would you improve alert routing and remediation guidance?
+* A cloud budget is exceeded because of an unexpected data-transfer spike. How would you investigate the cause and decide whether to adjust the budget or correct the architecture?
+* An automated budget response proposes shutting down production services. How would you separate notification from enforcement and introduce risk-based safeguards?
+
+**Cost Governance**
+* Engineering teams repeatedly bypass approved instance-size policies to meet delivery deadlines. How would you establish an exception process while retaining cost visibility and accountability?
+* A new policy blocks legitimate high-memory workloads and delays production delivery. How would you revise the policy using risk-based rules and documented exceptions?
+* Finance wants aggressive savings, while application teams prioritize reliability and delivery speed. How would you define shared metrics and resolve conflicting priorities?
+* An audit finds unapproved resources, missing tags, and inconsistent cost-center allocation across accounts. How would you establish remediation ownership and measure sustained compliance?
+* A cost optimization initiative reports projected savings, but finance cannot verify realized reductions. How would you establish a credible baseline and track actual savings?
+
+**FinOps Architecture**
+* An enterprise has separate cloud billing systems, inconsistent tag taxonomies, and multiple dashboards showing different totals. How would you design a unified cost data platform?
+* Billing exports arrive late and are corrected after monthly reports have been generated. How would you design ingestion, reconciliation, historical restatement, and dashboard refresh?
+* A FinOps platform identifies an expensive resource but cannot map it to a business owner. How would you enrich resource metadata and route recommendations?
+* Anomaly detection identifies a major cost spike but cannot explain its cause. How would you correlate billing records with deployments, resource inventory, and telemetry?
+* Engineering teams want cost feedback during pull requests, while finance requires invoice-level accuracy. How would you design the architecture to support both timely estimates and reconciled financial reporting?

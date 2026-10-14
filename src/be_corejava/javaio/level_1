@@ -1,0 +1,26 @@
+
+* What is the difference between byte streams and character streams, and when would you use each?
+* What is the difference between `InputStreamReader` and `FileReader`?
+* What is the purpose of `OutputStreamWriter`?
+* How does `BufferedInputStream` improve input performance?
+* How does `BufferedOutputStream` improve output performance?
+* What is the difference between `BufferedReader.readLine()` and `Reader.read()`?
+* What is the difference between `FileInputStream.read()` and `FileReader.read()`?
+* How do you copy the contents of one file into another using Java IO?
+* How do you append data to an existing file?
+* How do you read a binary file using Java IO?
+* How do you write binary data using `DataOutputStream`?
+* What is the purpose of `DataInputStream` and `DataOutputStream`?
+* What is the difference between `ObjectInputStream` and `DataInputStream`?
+* What is Java object serialization?
+* What is the purpose of the `Serializable` interface?
+* What is the purpose of the `transient` keyword during serialization?
+* What is the purpose of `ObjectOutputStream` and `ObjectInputStream`?
+* What is the difference between `File` and `RandomAccessFile`?
+* How do you read or write data at a specific position in a file using `RandomAccessFile`?
+* What is the purpose of the `SequenceInputStream` class?
+* What is the difference between `flush()` and `close()`?
+* What is the try-with-resources statement, and how does it help with Java IO?
+* How do you handle `FileNotFoundException` and `IOException`?
+* How do you read a file line by line without loading the entire file into memory?
+* What are the limitations of the `File` class in Java IO?

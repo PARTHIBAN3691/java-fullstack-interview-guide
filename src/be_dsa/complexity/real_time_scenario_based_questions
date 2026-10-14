@@ -1,0 +1,30 @@
+* A Java API works well with 1,000 records but becomes very slow with 1 million records. How would you analyze its time complexity?
+* A nested-loop implementation takes several minutes to process customer records. How would you identify and reduce its complexity?
+* A duplicate-detection process uses O(n²) time. How would you redesign it for large datasets?
+* A production service performs repeated linear searches on a large list. How would you determine whether hashing or binary search is more suitable?
+* A Java application experiences high memory usage after introducing a caching mechanism. How would you analyze its space complexity?
+* A HashMap-based implementation becomes unexpectedly slow under heavy traffic. How would you investigate its complexity and collision behavior?
+* A sorting operation becomes a bottleneck when processing millions of transactions. How would you evaluate alternative algorithms?
+* A recursive method causes StackOverflowError for large inputs. How would you analyze its recursion depth and space complexity?
+* A recursive algorithm performs duplicate calculations. How would memoization change its time and space complexity?
+* A dynamic programming solution improves execution time but consumes too much memory. How would you optimize its space complexity?
+* A service processes two collections of different sizes. How would you determine whether O(n + m) or O(n * m) behavior is occurring?
+* A batch job processes records in nested loops, but each loop has a different upper bound. How would you calculate its complexity?
+* A Java ArrayList frequently resizes while adding millions of elements. How would you analyze the amortized cost and improve performance?
+* A binary search implementation performs poorly on a linked list. How would you explain the data-structure impact on complexity?
+* A search feature needs to support frequent updates and fast lookups. How would you compare arrays, balanced trees, and hash-based structures?
+* A graph-processing service slows down as connections increase. How would you evaluate its complexity in terms of vertices and edges?
+* A graph algorithm works on sparse graphs but consumes excessive memory on dense graphs. How would you investigate its representation?
+* A shortest-path calculation is too slow for a large road network. How would you analyze its complexity and choose a suitable implementation?
+* A Java service repeatedly sorts data before performing searches. How would you decide whether sorting once or using a different structure is more efficient?
+* An algorithm is O(n log n), but another implementation with O(n²) is faster for small inputs. How would you explain and validate this result?
+* A performance test shows inconsistent results between two Java algorithms. How would you account for JIT compilation, garbage collection, and warm-up?
+* A microservice has strict latency requirements but limited memory. How would you evaluate the trade-off between time and space complexity?
+* A database-backed API fetches a large dataset and then filters it in Java. How would you assess whether the overall processing strategy is efficient?
+* A team claims that an algorithm is O(n) because it has only one visible loop. How would you verify the claim when the loop calls other methods?
+* A method calls another method inside a loop, and that method contains a nested loop. How would you calculate the total complexity?
+* A real-time application cannot tolerate unpredictable worst-case execution time. How would you assess the suitability of its data structures and algorithms?
+* A high-throughput service performs millions of priority-queue operations. How would you estimate its processing cost and identify possible bottlenecks?
+* An algorithm uses O(n) extra memory to reduce execution time. How would you decide whether the trade-off is acceptable?
+* A batch-processing pipeline has several stages with different complexities. How would you estimate the overall processing cost?
+* A code review identifies an inefficient algorithm but provides no performance measurements. How would you combine asymptotic analysis and benchmarking to justify a change?

@@ -1,0 +1,30 @@
+* How would you design a scalable state management architecture for an enterprise React application?
+* How do you determine which data belongs in component state, Context, Redux, or a server-state library?
+* How do you separate server state from client state?
+* Why might Redux not be the best solution for every React application?
+* How does Redux's unidirectional data flow work?
+* Explain the complete Redux data flow from dispatching an action to rendering updated UI.
+* How does Redux Toolkit simplify complex state management?
+* How do you design multiple slices for a large Redux application?
+* How do you manage dependencies between different Redux slices?
+* How do you prevent tightly coupled Redux slices?
+* How do you handle complex asynchronous workflows using Redux Toolkit?
+* How do you cancel an in-flight API request when a component unmounts?
+* How do you handle race conditions between concurrent API requests?
+* How do you implement optimistic updates with rollback in Redux?
+* How do you manage cache invalidation and refetching using RTK Query?
+* What is the difference between RTK Query and createAsyncThunk?
+* How do you avoid duplicating server data in Redux and component state?
+* How do you design normalized state for relational entities?
+* How do memoized selectors improve performance in large applications?
+* How do you identify and fix unnecessary Redux-driven re-renders?
+* What are the performance limitations of using Context API for frequently changing state?
+* How would you split Context providers to improve rendering performance?
+* How do you implement feature-based state management in a modular application?
+* How do you persist only selected parts of Redux state?
+* How do you handle sensitive information when persisting application state?
+* How do you migrate an application from Context API to Redux Toolkit?
+* How do you implement undo and redo functionality using Redux?
+* How do you manage state across micro-frontends?
+* How do you make state management compatible with server-side rendering?
+* How would you design a state management strategy for a large application with offline support and data synchronization?

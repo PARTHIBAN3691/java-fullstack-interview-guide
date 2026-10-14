@@ -1,0 +1,26 @@
+
+* Explain the internal implementation and design principles of `Optional` in Java 8.
+* Why is `Optional` not intended to be used as a general-purpose replacement for every nullable reference?
+* How does `Optional.map()` handle a mapping function that returns null?
+* How does `Optional.flatMap()` differ from `map()` when the mapping function returns an `Optional`?
+* What happens when the mapping function passed to `flatMap()` returns null?
+* Why does `Optional.flatMap()` reject a mapper that returns null?
+* How does Java infer generic types when chaining `Optional` operations?
+* How would you handle a chain of nullable objects without creating deeply nested `Optional` instances?
+* How do you combine two independent `Optional` values when both are required to produce a result?
+* How do you implement fallback logic across multiple `Optional` values in Java 8?
+* How would you distinguish between a missing value and an operation that failed?
+* Why should exceptions not generally be represented as empty `Optional` values?
+* What are the performance implications of using `Optional` in a high-throughput application?
+* How would you evaluate the overhead of `Optional` compared with traditional null checks?
+* Why can `orElse()` cause unexpected performance problems when its default expression is expensive?
+* How would you avoid eagerly executing an expensive fallback operation?
+* How do checked exceptions complicate the use of lambdas with `Optional` methods?
+* How would you safely invoke a method that can throw a checked exception while processing an `Optional`?
+* What are the serialization concerns when using `Optional` in DTOs or entity classes?
+* Why can using `Optional` in public API parameters make an API less convenient?
+* How would you design a service method that must distinguish between not-found, invalid input, and system failure?
+* How can `Optional` chaining reduce readability when business logic becomes complex?
+* How would you test methods that return `Optional` for present, empty, and exceptional cases?
+* What is the difference between `Optional<T>` and `OptionalInt`, `OptionalLong`, and `OptionalDouble`?
+* How would you decide between returning `Optional<T>`, returning null, or throwing an exception in a public method?

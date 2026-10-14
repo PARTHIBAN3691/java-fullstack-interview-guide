@@ -1,0 +1,30 @@
+* Explain how the modern Sass module system works.
+* How does @use differ from @forward in terms of module loading and public APIs?
+* How can you expose selected variables and mixins from a Sass module?
+* What are the advantages of Sass modules over the legacy @import system?
+* How does Sass determine variable scope inside nested rules, mixins, and functions?
+* How do !default and !global behave differently?
+* How would you design a configurable Sass design system using !default variables?
+* How do Sass maps support nested configuration structures?
+* How would you safely retrieve values from deeply nested Sass maps?
+* How can Sass functions and mixins be combined to build reusable layout utilities?
+* Explain the trade-offs between @extend and mixins in large stylesheets.
+* Why can @extend generate unexpected selectors across unrelated components?
+* How would you prevent excessive CSS output when generating utility classes with Sass loops?
+* How can Sass interpolation be used to generate selectors and property names?
+* What are the risks of using interpolation extensively in Sass?
+* How do Sass calculations interact with CSS calc() and runtime custom properties?
+* Why can Sass fail to calculate expressions involving incompatible units?
+* How do modern Sass color functions differ from legacy color functions?
+* How would you implement a theme system using Sass maps and CSS custom properties?
+* How can Sass support light and dark themes while allowing runtime theme switching?
+* How would you migrate a legacy Sass project from @import to @use and @forward?
+* How can circular module dependencies affect a Sass architecture?
+* How would you structure a large Sass codebase to avoid circular dependencies?
+* How can Sass deprecation warnings be identified and resolved during compilation?
+* How would you test Sass functions and mixins?
+* How can Sass compilation be integrated into a CI/CD pipeline?
+* What are the performance implications of large Sass-generated stylesheets?
+* How would you debug a Sass compilation error involving nested modules and namespaces?
+* How can Sass and CSS Modules be used together in a component-based frontend application?
+* How would you design a scalable Sass architecture for a large enterprise application?

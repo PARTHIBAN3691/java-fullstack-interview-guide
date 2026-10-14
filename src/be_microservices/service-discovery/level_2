@@ -1,0 +1,30 @@
+* Explain the internal architecture of Eureka service discovery.
+* How does Eureka maintain its service registry across multiple instances?
+* What consistency guarantees does a service registry provide?
+* How do you design service discovery for a large-scale microservices platform?
+* How do you prevent a service registry from becoming a single point of failure?
+* How does Eureka self-preservation affect availability and consistency?
+* How would you tune heartbeat intervals and lease expiration for production?
+* What are the trade-offs between aggressive health detection and network stability?
+* How do you handle stale service registry entries during network partitions?
+* How does client-side caching affect service discovery consistency?
+* How do you design service discovery across multiple data centers?
+* How would you implement service discovery across multiple Kubernetes clusters?
+* How do you integrate service discovery with a service mesh?
+* What is the difference between control-plane discovery and data-plane routing?
+* How does DNS caching affect dynamic service discovery?
+* How do you handle DNS propagation delays during service scaling?
+* How can service discovery support canary releases and weighted routing?
+* How do you implement zone-aware instance selection?
+* How do you avoid sending traffic to unhealthy instances that remain registered?
+* How would you design secure service registration to prevent unauthorized services?
+* How do mutual TLS and service discovery work together?
+* How do you manage service identity and authentication in a dynamic environment?
+* How would you migrate from Eureka-based discovery to Kubernetes-native discovery?
+* How do you prevent registry overload during mass service restarts?
+* What happens to service discovery during a large-scale network partition?
+* How would you design a registry that supports millions of service instances?
+* How do you monitor registry health, registration latency, and discovery failures?
+* How would you implement custom service discovery for a legacy application?
+* How do service discovery and load balancing interact during rolling deployments?
+* What architectural trade-offs would influence your choice between Eureka, Consul, DNS, and a service mesh?

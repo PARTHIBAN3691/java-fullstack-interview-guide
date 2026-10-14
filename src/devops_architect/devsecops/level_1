@@ -1,0 +1,36 @@
+* How would you integrate DevSecOps practices into an existing CI/CD pipeline?
+* How would you define security responsibilities across development, operations, and security teams?
+* How would you introduce shift-left security without significantly slowing down development?
+* How would you configure SAST scanning for a Java Spring Boot application?
+* How would you integrate DAST scanning into a pipeline for a deployed web application?
+* How would you decide which vulnerabilities should fail a build?
+* How would you integrate SCA tools to detect vulnerable open-source dependencies?
+* How would you handle transitive dependency vulnerabilities in Maven or Gradle projects?
+* How would you distinguish an exploitable dependency vulnerability from a vulnerability in unused code?
+* How would you integrate secret scanning into Git commits, pull requests, and CI/CD pipelines?
+* What steps would you take if a developer accidentally commits a production API key to Git?
+* How would you prevent secrets from appearing in build logs, pipeline variables, and container images?
+* How would you scan Docker images for operating-system and application dependency vulnerabilities?
+* How would you choose between scanning container images during development, at build time, and at deployment time?
+* How would you secure a Dockerfile against common security risks?
+* How would you scan Terraform or Kubernetes manifests for misconfigurations?
+* How would you detect publicly exposed cloud resources or overly permissive IAM policies in IaC?
+* How would you generate an SBOM during a software build?
+* How would you choose between SPDX and CycloneDX SBOM formats?
+* How would you use an SBOM to identify applications affected by a newly disclosed vulnerability?
+* How would you secure third-party actions, plugins, and reusable CI/CD workflows?
+* How would you implement software signing and artifact verification in a release pipeline?
+* How would you verify that a downloaded dependency or container image has not been tampered with?
+* How would you establish artifact provenance and trace a production binary back to its source commit and build process?
+* How would you implement least-privilege permissions for CI/CD service accounts?
+* How would you apply Zero Trust principles to build agents, deployment pipelines, and production environments?
+* How would you configure security gates for SAST, SCA, secret scanning, and image scanning?
+* How would you prevent a critical vulnerability from reaching production while allowing approved emergency releases?
+* How would you manage security exceptions and ensure that they expire or are reviewed?
+* How would you prioritize vulnerabilities using severity, exploitability, exposure, and business impact?
+* How would you reduce false positives from automated security tools?
+* How would you implement automated compliance checks for infrastructure and application releases?
+* How would you enforce security policies consistently across multiple repositories and teams?
+* How would you secure Kubernetes workloads using admission policies, image verification, and runtime restrictions?
+* How would you protect CI/CD pipelines against unauthorized changes and compromised build agents?
+* How would you monitor security findings over time and measure remediation performance?

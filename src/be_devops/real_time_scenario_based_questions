@@ -1,0 +1,18 @@
+* A Java application passes all CI pipeline stages but fails to start in production with an `UnsupportedClassVersionError`. How would you identify the root cause, fix it, and prevent recurrence?
+* After deploying a new Spring Boot release, the application's response time increases significantly and CPU usage rises. How would you investigate the issue, identify the root cause, and restore performance?
+* A Java application works locally but fails in the Docker container because it cannot connect to the database. How would you diagnose and resolve the issue?
+* A deployment introduces a memory leak, and the Java process gradually consumes all available memory. How would you identify the leak, mitigate the production impact, and validate the fix?
+* A new release causes repeated application restarts because Kubernetes readiness and liveness probes fail. How would you distinguish application startup delays from genuine health failures and resolve the problem?
+* A production deployment fails after a database schema migration has already completed. How would you restore service while protecting existing data and maintaining compatibility?
+* A shared Java library update fixes a security vulnerability but breaks several dependent microservices. How would you assess the impact, coordinate the fix, and safely deploy compatible versions?
+* A Java application's CI pipeline takes 25 minutes to complete because of slow builds and repeated tests. How would you identify bottlenecks and reduce pipeline execution time without compromising quality?
+* A secret is accidentally printed in a Java application's CI build logs. What immediate containment steps would you take, and what controls would prevent similar incidents?
+* After a successful deployment, some application instances return HTTP 500 errors while others work correctly. How would you investigate differences between instances, configuration, and runtime behavior?
+* A Java microservice deployment succeeds, but downstream services start returning timeout errors. How would you determine whether the problem is caused by application changes, network connectivity, connection pools, or dependency failures?
+* During a rolling deployment, old and new Java application versions run simultaneously and produce inconsistent behavior because of an incompatible API change. How would you restore compatibility and prevent recurrence?
+* A production Java application experiences frequent `OutOfMemoryError` exceptions during peak traffic, but the same application works correctly in staging. How would you investigate differences in traffic, heap configuration, and memory usage?
+* A release passes automated tests but introduces a critical business logic defect that affects customer transactions. How would you stop further impact, roll back or roll forward, and validate data consistency?
+* A deployment to one production region fails while other regions remain healthy. How would you isolate the problem, maintain availability, and coordinate recovery?
+* A production incident occurs immediately after a dependency upgrade, but application logs do not reveal the root cause. How would you use metrics, distributed traces, dependency analysis, and rollback testing to diagnose it?
+* An enterprise application requires an urgent security patch, but its normal release process requires several approval stages. How would you deliver the fix quickly while maintaining security checks, traceability, and required approvals?
+* After a deployment, the application reports healthy status, but users experience intermittent failures. How would you improve health checks and post-deployment validation to detect this issue before it affects more users?

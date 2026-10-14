@@ -1,0 +1,30 @@
+* A Spring Boot container exits immediately after deployment. How would you identify the root cause and validate the fix?
+* A Docker container keeps restarting every few seconds. Which commands and logs would you inspect first?
+* Your Java application works on a developer's machine but fails with a database connection error inside Docker. How would you investigate?
+* A Spring Boot service is running, but requests to its published port return connection refused. How would you troubleshoot the issue?
+* Two containers on the same Docker network cannot communicate, even though both are running. How would you isolate the problem?
+* A containerized application suddenly starts returning HTTP 500 errors after a new image deployment. How would you determine whether the image or configuration caused the issue?
+* A Java container is terminated with exit code 137 during peak traffic. How would you identify the cause and prevent recurrence?
+* Your Spring Boot application reports OutOfMemoryError, but the JVM heap appears to be below its configured maximum. How would you investigate?
+* A Docker container reports that it is healthy, but users cannot access the application. How would you determine whether the health check is insufficient?
+* A container cannot connect to PostgreSQL after a Docker Compose restart. How would you distinguish a startup-order issue from a networking issue?
+* A Docker image builds successfully on one machine but fails on another. How would you investigate environmental differences?
+* A container cannot download Maven dependencies during a build, while the host machine has internet access. What would you check?
+* An application starts correctly but fails when writing uploaded files to a mounted directory. How would you diagnose and fix the permission issue?
+* A production container becomes unresponsive without exiting. How would you collect evidence before restarting it?
+* Docker logs consume all available disk space on the host. How would you restore service and prevent the issue from recurring?
+* After a deployment, a container unexpectedly uses an old application version. How would you determine whether the wrong image was deployed or cached?
+* A Java application becomes significantly slower after being containerized. How would you compare its resource usage and performance with the non-containerized version?
+* Your application experiences intermittent DNS failures when calling another service by container name. How would you reproduce and diagnose the problem?
+* A container can access a database by IP address but not by hostname. What does this suggest, and how would you verify it?
+* A Spring Boot service passes its startup health check but fails readiness checks under load. How would you investigate?
+* After increasing the number of application containers, database connections are exhausted. How would you determine whether connection pooling or deployment scaling is responsible?
+* A container repeatedly fails because its configuration file is missing, although the file exists on the host. How would you inspect the volume mount and application path?
+* A deployment fails on an ARM-based machine but works on an x86-64 server. How would you investigate image compatibility?
+* A containerized service cannot establish HTTPS connections because of certificate validation errors. How would you identify the missing or incorrect trust configuration?
+* A container receives SIGTERM during deployment but does not shut down before the orchestrator's timeout. How would you investigate application shutdown behavior?
+* After a Docker host reboot, several containers fail to reconnect to their dependencies. How would you identify startup, network, and dependency readiness issues?
+* One container consumes most of the host CPU and affects other services. How would you identify the bottleneck and limit the impact?
+* A new Docker security policy causes an application to fail when accessing a mounted file. How would you investigate permissions and security restrictions?
+* A Spring Boot application starts locally but fails in the container because a required environment variable is absent. How would you detect and prevent this configuration error?
+* A recurring production incident has been resolved by restarting the container several times. How would you establish the actual root cause and implement a permanent fix?

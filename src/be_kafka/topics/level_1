@@ -1,0 +1,30 @@
+* How do you create a Kafka topic with a specific partition count using Java?
+* How do you configure a topic's replication factor?
+* How do you create topics programmatically using Kafka AdminClient?
+* What is the difference between topic-level and broker-level configurations?
+* How do you increase the number of partitions in an existing topic?
+* Can you decrease the partition count of an existing topic?
+* What happens to key-based message distribution when partitions are added?
+* How does Kafka determine which partition receives a message?
+* What happens when a producer sends a message without a key?
+* How does a partition key affect message ordering?
+* How do you configure retention by time and by size?
+* What is the difference between delete and compact cleanup policies?
+* How does log compaction work for a topic?
+* What is a tombstone message in a compacted topic?
+* How do you configure a topic for compacted event data?
+* What is the difference between retention and compaction?
+* How do you configure minimum in-sync replicas for a topic?
+* How does the replication factor affect topic availability?
+* What is the relationship between partitions and consumer parallelism?
+* What happens when a consumer group has more consumers than partitions?
+* How do you handle topic creation failures in a Spring Boot application?
+* How do you configure a topic using Spring Kafka's NewTopic bean?
+* How can you validate that a required topic exists at application startup?
+* How do you handle messages published to the wrong topic?
+* How do you migrate data from one topic to another?
+* How do you configure different retention policies for different topics?
+* How do you monitor topic partition sizes?
+* How do you identify under-replicated partitions for a topic?
+* How do you safely delete and recreate a topic in a development environment?
+* How do you design topic names for multiple business domains and environments?

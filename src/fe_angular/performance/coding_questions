@@ -1,0 +1,30 @@
+* Create an Angular component using ChangeDetectionStrategy.OnPush.
+* Write a component that uses trackBy to optimize rendering a list of employees.
+* Implement a large list using Angular CDK virtual scrolling.
+* Refactor a component to remove expensive function calls from its template.
+* Create a pure pipe that transforms a list of records efficiently.
+* Implement memoization for an expensive data transformation in an Angular service.
+* Write a search component using debounceTime(), distinctUntilChanged(), and switchMap().
+* Implement HTTP request cancellation when a user changes search criteria.
+* Create an Angular service that caches GET responses using RxJS.
+* Implement request deduplication so concurrent callers share the same HTTP request.
+* Write a service that invalidates cached data after a successful update request.
+* Implement lazy loading for a feature module or standalone component.
+* Configure a custom preloading strategy for frequently accessed routes.
+* Write a component that uses Angular signals to derive values without repeated calculations.
+* Implement an OnPush component that correctly updates when its input data changes.
+* Create a reactive form with optimized validation for a large number of controls.
+* Implement pagination for a table containing thousands of records.
+* Write a Web Worker that performs CPU-intensive data processing without blocking the UI.
+* Implement chunked processing for a large array to keep the browser responsive.
+* Write code that measures execution time for a data transformation using the Performance API.
+* Implement a component that loads an image lazily and reserves its dimensions to prevent layout shifts.
+* Configure an Angular application for a production build with optimized assets and bundle budgets.
+* Write code to dynamically import a charting library only when the chart component is opened.
+* Implement cleanup for subscriptions and event listeners using takeUntilDestroyed().
+* Create a signal-based component that minimizes unnecessary template updates.
+* Write a test that verifies a debounced search sends only the expected API requests.
+* Implement unit tests for an HTTP caching service, including cache invalidation.
+* Write a performance test that measures the rendering time of a large list.
+* Create a script or CI check that detects when the application's bundle size exceeds a defined budget.
+* Build a complete Angular performance optimization example combining OnPush, lazy loading, request caching, virtual scrolling, and subscription cleanup.

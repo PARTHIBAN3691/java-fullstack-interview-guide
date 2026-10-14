@@ -1,0 +1,30 @@
+* Write a Node.js program that reads a text file using createReadStream().
+* Write a program that writes data to a file using createWriteStream().
+* Implement file copying using readable and writable streams.
+* Create a program that pipes a readable stream into a writable stream.
+* Write a program that uses stream.pipeline() to copy a file safely.
+* Create a custom Readable stream that generates a sequence of numbers.
+* Implement a custom Writable stream that collects incoming chunks.
+* Create a custom Transform stream that converts incoming text to uppercase.
+* Write a Transform stream that replaces selected words in a text stream.
+* Implement a Transform stream that counts lines, words, and characters.
+* Write a program that compresses a file using a readable stream, a gzip stream, and a writable stream.
+* Create a program that decompresses a gzip file using streams.
+* Implement a pipeline that reads a file, compresses it, encrypts it, and writes the result.
+* Write a program that demonstrates backpressure by checking the return value of writable.write().
+* Implement a custom Writable stream that emits data only after the drain event when required.
+* Create a program that processes a large CSV file one row at a time.
+* Write a streaming CSV processor that validates each record and writes valid records to a new file.
+* Implement a Transform stream that parses newline-delimited JSON records.
+* Create a program that uses for await...of to consume a readable stream.
+* Write a program that converts a readable stream into a string while correctly handling UTF-8 chunk boundaries.
+* Implement a stream pipeline that propagates errors and destroys connected streams when necessary.
+* Create a program that cancels a stream pipeline using AbortController.
+* Write an Express endpoint that streams a large file to the HTTP response.
+* Implement a file-upload endpoint that streams incoming data to disk without buffering the entire file.
+* Create a Transform stream that calculates a running total from numeric records.
+* Implement a custom stream that limits the size of each output chunk.
+* Write a program that processes multiple files concurrently with a configurable concurrency limit.
+* Create a pipeline that reads records, transforms them asynchronously, and preserves their original order.
+* Implement a streaming HTTP proxy that forwards an upstream response while respecting backpressure and client disconnects.
+* Build a complete Node.js streaming application that supports large-file processing, compression, validation, backpressure, cancellation, error handling, and performance monitoring.

@@ -1,0 +1,21 @@
+
+* How do you connect a Java Spring Boot application to Amazon ElastiCache for Redis or Valkey?
+* How do you configure Spring Data Redis in a Spring Boot application?
+* How do you configure a Redis connection factory and `RedisTemplate`?
+* What is the difference between `RedisTemplate` and `StringRedisTemplate`?
+* How do you configure Redis serialization for Java objects?
+* How do you implement caching using Spring's `@Cacheable` annotation with ElastiCache?
+* What is the difference between `@Cacheable`, `@CachePut`, and `@CacheEvict`?
+* How do you configure cache TTL for different caches in Spring Boot?
+* How do you implement cache invalidation when database records are updated?
+* How do you configure Redis authentication and in-transit encryption?
+* What is the difference between Redis replication and Redis cluster mode?
+* How do primary and replica nodes work in Amazon ElastiCache?
+* What is the difference between Multi-AZ and automatic failover in ElastiCache?
+* How do you monitor cache hit rate, memory usage, and evictions using CloudWatch?
+* How do you troubleshoot connection timeouts between a Java application and ElastiCache?
+* How do you implement distributed locking using Redis?
+* How do you prevent stale cache entries when multiple application instances update the same data?
+* How do you use Redis hashes, lists, sets, sorted sets, and streams from Java?
+* How do you implement a rate limiter using Redis in a distributed Java application?
+* How do you optimize ElastiCache costs by selecting suitable node types and scaling strategies?

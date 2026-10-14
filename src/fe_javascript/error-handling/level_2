@@ -1,0 +1,30 @@
+* Explain the JavaScript exception propagation mechanism across nested function calls.
+* How does the JavaScript runtime create and propagate an Error object?
+* What is the difference between operational errors and programmer errors?
+* How would you design a centralized error-handling strategy for a large JavaScript application?
+* How would you design a hierarchy of custom error classes for an application?
+* How can custom errors preserve the original cause of an exception?
+* What is the purpose of the cause property in the Error constructor?
+* How would you implement error wrapping without losing the original stack trace?
+* How do errors propagate through nested Promise chains?
+* What happens when an error is thrown inside a Promise executor?
+* What happens when an async function throws an error before or after an await expression?
+* How do you handle multiple errors from concurrently executing asynchronous operations?
+* How would you implement a retry mechanism with exponential backoff and error classification?
+* How would you distinguish retryable errors from non-retryable errors?
+* How would you implement timeout handling for an asynchronous operation?
+* How can AbortController be used to cancel operations and handle cancellation errors?
+* How would you prevent duplicate logging when an error propagates through multiple layers?
+* How do you handle errors in event listeners and asynchronous callbacks?
+* Why might try...catch fail to catch an error thrown later inside a timer callback?
+* How would you handle errors from Web Workers?
+* How would you design a resilient API client with centralized error handling?
+* How would you implement a fallback strategy when an external service fails?
+* What is the difference between fail-fast and graceful-degradation error-handling strategies?
+* How would you handle partial failures when using Promise.allSettled()?
+* How would you preserve error context across service and application layers?
+* How would you avoid leaking sensitive data through error messages and stack traces?
+* How would you capture, report, and correlate errors in a production application?
+* How would you design error handling for a critical payment workflow?
+* How would you test error paths, rejected Promises, and exceptional conditions?
+* How would you detect and recover from errors that leave an application in an inconsistent state?

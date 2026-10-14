@@ -1,0 +1,30 @@
+* Explain the complete Spring Boot startup lifecycle from SpringApplication.run() to application readiness.
+* How does Spring Boot discover and load auto-configuration classes internally?
+* How has auto-configuration registration changed between Spring Boot 2 and Spring Boot 3?
+* How does Spring Boot resolve configuration properties from multiple property sources?
+* Explain the precedence order of configuration sources in Spring Boot.
+* How do Config Data imports and profile-specific configuration work in Spring Boot?
+* How would you implement your own Spring Boot starter for a reusable internal library?
+* How would you design a custom auto-configuration module with conditional bean registration?
+* How does Spring Boot handle circular dependencies, and why can they be problematic?
+* How do bean definitions and dependency injection affect application startup performance?
+* How would you diagnose slow startup in a large Spring Boot application?
+* How do lazy initialization and bean initialization order affect application behavior?
+* How do Spring Boot applications support graceful shutdown?
+* How do embedded server thread pools affect application throughput and latency?
+* How would you configure connection pools for a high-traffic Spring Boot application?
+* How does Spring Boot integrate transaction management with Spring Data JPA?
+* How would you prevent database connection leaks in a Spring Boot application?
+* How do Spring Boot applications handle configuration refresh, and what are the limitations?
+* How would you secure configuration properties containing passwords, API keys, and tokens?
+* How do Spring Boot Actuator endpoints affect application security?
+* How would you expose custom application metrics using Micrometer?
+* How do Spring Boot applications integrate distributed tracing and observability?
+* How would you troubleshoot memory leaks in a production Spring Boot service?
+* How would you optimize a Spring Boot application experiencing high CPU usage and thread contention?
+* What considerations are involved in migrating a Spring Boot 2 application to Spring Boot 3?
+* What changes are required when migrating from Java EE APIs to Jakarta EE APIs in Spring Boot 3?
+* How does Spring Boot support native image compilation using GraalVM?
+* What are the trade-offs between executable JAR deployment and traditional WAR deployment?
+* How would you design a Spring Boot application for horizontal scaling and stateless operation?
+* How would you architect a Spring Boot application to support resilience, observability, security, and maintainability?

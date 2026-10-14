@@ -1,0 +1,30 @@
+* How does Spring Boot process an incoming HTTP request?
+* What is the request-response lifecycle in a Spring MVC application?
+* What is the role of DispatcherServlet in request processing?
+* How does Spring Boot map a JSON request body to a Java object?
+* How does Jackson perform JSON serialization and deserialization?
+* How do you handle optional fields in a request DTO?
+* How do you validate request payloads using @Valid and Bean Validation?
+* What is the difference between @NotNull, @NotBlank, and @NotEmpty?
+* How do you handle validation errors and return meaningful error responses?
+* How do you customize JSON serialization using Jackson annotations?
+* What is the purpose of @JsonProperty?
+* What is the purpose of @JsonIgnore?
+* How do you handle date and time fields in request and response DTOs?
+* How do you configure date formats for JSON request-response payloads?
+* How do you handle unknown JSON properties during deserialization?
+* How do you handle missing fields and null values in request payloads?
+* What is the difference between an empty request body and a JSON null value?
+* How do you return different HTTP status codes from a Spring Boot controller?
+* How do you create a consistent response structure across REST endpoints?
+* How do you implement global exception handling using @ControllerAdvice?
+* What is the difference between @ExceptionHandler and @ControllerAdvice?
+* How do you return custom error details without exposing internal exceptions?
+* How do you support pagination metadata in a REST API response?
+* How do you handle large request and response payloads efficiently?
+* How do you prevent sensitive information from appearing in API responses?
+* How do you handle enum values in JSON requests and responses?
+* How do you version request and response DTOs when API requirements change?
+* How do you test request-response payloads using MockMvc?
+* How do you verify HTTP status codes, headers, and response bodies in API tests?
+* How do you handle backward compatibility when changing a response structure?

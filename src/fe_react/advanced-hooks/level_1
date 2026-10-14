@@ -1,0 +1,30 @@
+* How do you manage complex state transitions using useReducer()?
+* How do you decide whether to use useState() or useReducer()?
+* How do you prevent unnecessary recalculations using useMemo()?
+* How do you prevent unnecessary child renders using useCallback()?
+* Why does useCallback() not automatically improve performance?
+* How do you use useRef() to store mutable values between renders?
+* How do you access a DOM element using useRef()?
+* How do you measure DOM dimensions using useLayoutEffect()?
+* Why can useLayoutEffect() block browser painting?
+* How do you implement a custom Hook that tracks the previous state?
+* How do you implement a custom Hook for debouncing user input?
+* How do you implement a custom Hook for handling API requests?
+* How do you avoid stale closures in useEffect()?
+* How do you handle changing dependencies in a custom Hook?
+* How do you cancel an asynchronous operation when a component unmounts?
+* How do you use AbortController with React Hooks?
+* How do you use useTransition() for non-urgent state updates?
+* How does useDeferredValue() differ from debouncing?
+* How do you use useId() to generate accessible form identifiers?
+* How do you subscribe to an external store using useSyncExternalStore()?
+* What problems can occur when implementing a custom external-store subscription?
+* How do you expose an imperative API using useImperativeHandle()?
+* When should you avoid using useImperativeHandle()?
+* How do you debug custom Hooks using useDebugValue()?
+* How do you test custom Hooks that depend on asynchronous operations?
+* How do you prevent memory leaks in effects and custom Hooks?
+* How do you handle effect dependencies when using objects and functions?
+* How do React StrictMode and effect cleanup interact during development?
+* How do you optimize expensive filtering operations with useMemo() and useDeferredValue()?
+* How do you identify whether memoization is actually improving performance?

@@ -1,0 +1,30 @@
+* You need to maintain a counter without exposing its internal variable globally. How would you use a closure?
+* A webpage creates multiple independent counters. How would you ensure that each counter maintains its own state?
+* Event handlers created inside a loop all display the same index. How would you fix the problem using closures?
+* A button click handler must remember the configuration available when it was registered. How would you implement it?
+* A search function must wait until the user stops typing before calling an API. How would you use a closure to implement debouncing?
+* A scroll handler should execute at most once within a specified interval. How would you implement throttling using closures?
+* A function repeatedly calculates the same expensive result. How would you use closures to cache the result?
+* You need to expose methods for depositing and withdrawing money while hiding the account balance. How would you use closures?
+* Multiple asynchronous requests must retain their own request identifiers. How would closures help?
+* A callback uses outdated state after a component has been updated. How would you diagnose and fix the closure-related issue?
+* A long-running application experiences increasing memory usage because callbacks retain large objects. How would you investigate the closures involved?
+* You need to create customized greeting functions for different users. How would you use a function factory and closures?
+* A validation library must create reusable validators with different configuration values. How would you design it using closures?
+* A module must expose only selected functions while hiding helper variables and implementation details. How would you use closures?
+* A logging utility must remember a prefix and log level across multiple calls. How would you implement it with closures?
+* A function should execute only once even when called repeatedly. How would you implement this using a closure?
+* An API client needs to retain authentication configuration without exposing it through global variables. How would you structure the closure?
+* A cache must preserve previously computed values between function calls. How would you implement a closure-based cache?
+* A group of event handlers must share a common state variable. How would you decide whether to use one shared closure or separate closures?
+* A timer callback must access variables from the function that created it. How does closure behavior make this possible?
+* A financial application needs to prevent direct modification of a transaction's internal state. How can closures provide encapsulation?
+* A function factory creates hundreds of functions, and memory consumption increases. How would you determine whether closures are responsible?
+* A retry utility must remember the number of attempts across asynchronous callbacks. How would you use a closure?
+* A permission-checking utility must retain user-specific configuration between calls. How would you implement it safely?
+* A middleware pipeline needs to preserve configuration and state between requests. How can closures help?
+* A JavaScript application needs to maintain private state without using classes. How would you implement it using closures?
+* A closure-based cache returns outdated data after the underlying data changes. How would you design cache invalidation?
+* A function must retain its initial configuration while allowing selected settings to be updated later. How would you structure the closure?
+* A team is deciding between closures and private class fields for encapsulation. What factors would influence your choice?
+* How would you troubleshoot a production bug caused by a closure capturing an unexpected variable?

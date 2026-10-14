@@ -1,0 +1,21 @@
+
+* Design a production-grade AKS architecture for multiple Spring Boot microservices with high availability and scalability.
+* How would you design an AKS cluster across Availability Zones to minimize application downtime?
+* How would you choose between a private AKS cluster and a public AKS cluster?
+* How would you design secure network connectivity between AKS, Azure SQL Database, Azure Key Vault, and external APIs?
+* How would you implement workload identity for Java microservices accessing multiple Azure services?
+* How would you secure secrets and certificates in AKS using Azure Key Vault and the Secrets Store CSI Driver?
+* How would you design a zero-downtime deployment strategy for Java microservices running in AKS?
+* How would you configure HPA, Cluster Autoscaler, and pod resource requests to handle unpredictable traffic?
+* How would you troubleshoot Java heap memory issues and out-of-memory errors in Kubernetes containers?
+* How would you configure JVM heap sizing and garbage collection for memory-constrained AKS workloads?
+* How would you design ingress, TLS termination, and network policies for a multi-service AKS application?
+* How would you implement blue-green or canary deployments for Spring Boot applications in AKS?
+* How would you design centralized observability using Azure Monitor, Application Insights, and OpenTelemetry?
+* How would you implement distributed tracing across Java microservices deployed in AKS?
+* How would you manage cluster upgrades while minimizing disruption to production workloads?
+* How would you implement pod disruption budgets, topology spread constraints, and anti-affinity for critical services?
+* How would you secure the software supply chain with image scanning, signed images, and controlled deployment permissions?
+* How would you design disaster recovery for AKS workloads across Azure regions?
+* How would you troubleshoot intermittent service-to-service connectivity failures in a large AKS cluster?
+* How would you optimize AKS infrastructure and workload costs without compromising availability or performance?

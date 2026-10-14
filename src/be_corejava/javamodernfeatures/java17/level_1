@@ -1,0 +1,23 @@
+
+* How do sealed classes restrict which classes can extend them?
+* What rules must permitted subclasses of a sealed class follow?
+* How do sealed classes improve maintainability in large applications?
+* How do sealed classes differ from abstract classes and interfaces?
+* Can a sealed class permit a record as one of its subclasses?
+* How do sealed classes work with records and enums?
+* How would you design a sealed hierarchy for payment methods?
+* How do records reduce boilerplate code compared with conventional classes?
+* Can records extend other classes or implement interfaces?
+* How do compact constructors work in records?
+* How does pattern matching for `instanceof` simplify type checking and casting?
+* How does flow scoping determine where a pattern variable can be accessed?
+* What are the limitations of pattern matching for `instanceof` in Java 17?
+* How does `HexFormat` convert byte arrays into hexadecimal strings?
+* How can `HexFormat` be configured to use a custom delimiter and prefix?
+* What is the difference between `HexFormat` and manually converting bytes to hexadecimal strings?
+* How does the `RandomGenerator` interface unify different random number generators?
+* What is the difference between `Random`, `SplittableRandom`, and the newer `RandomGenerator` API?
+* How can you select a random generator algorithm by name in Java 17?
+* What is the difference between the standard Java 17 APIs and the incubator Foreign Function and Memory API?
+* What changes were introduced by JEP 403 regarding strong encapsulation?
+* How can strong encapsulation affect applications that rely on internal JDK APIs?

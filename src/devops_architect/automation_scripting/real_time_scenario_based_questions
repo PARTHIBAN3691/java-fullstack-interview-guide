@@ -1,0 +1,98 @@
+
+**Bash**
+* A nightly Bash script intermittently deletes the wrong files because filenames contain spaces and special characters. How would you identify the root cause, correct the script, and prevent recurrence?
+* A deployment script reports success even though one command in a pipeline failed. How would you investigate exit-code propagation and fix the failure-handling strategy?
+* A maintenance script stops halfway through execution and leaves temporary files and partially updated configuration behind. How would you make the operation recoverable and safe to rerun?
+* A Bash job runs successfully on a developer's machine but fails in cron because environment variables and executable paths differ. How would you troubleshoot and standardize the runtime environment?
+* Two instances of the same script modify a shared file simultaneously, producing corrupted output. How would you implement locking and atomic updates?
+
+**Python**
+* A Python automation process gradually consumes more memory and eventually crashes while processing millions of records. How would you profile the application and reduce resource consumption?
+* An API automation script creates duplicate customer records after a network timeout. How would you determine whether the original request succeeded and prevent duplicate side effects?
+* A Python script works locally but fails in the CI agent because of dependency and interpreter differences. How would you make the execution reproducible?
+* A parallel automation task intermittently updates the same resource from multiple workers. How would you diagnose the race condition and introduce safe coordination?
+* An automation workflow fails after completing three of five stages. How would you design checkpointing, recovery, and compensation for the completed stages?
+
+**PowerShell**
+* A PowerShell script reports successful completion even though several remote server operations failed. How would you improve error handling and per-host reporting?
+* A bulk account-management script locks out users because it applies an incorrect rule. How would you stop the rollout, assess the impact, and add safeguards?
+* Remote PowerShell automation fails after a credential rotation. How would you investigate authentication, permissions, remoting configuration, and secret distribution?
+* A PowerShell process becomes slower after running for several hours and accumulates remote sessions. How would you diagnose and resolve resource leaks?
+* An administrator needs to preview a destructive change across hundreds of servers before applying it. How would you implement dry-run behavior, approvals, and execution evidence?
+
+**Shell Scripting**
+* A portable shell script behaves differently on Ubuntu and Alpine Linux. How would you isolate portability assumptions and validate the supported environments?
+* A cleanup script removes files still being used by a running service. How would you establish safe preconditions and prevent recurrence?
+* A shell script is interrupted during configuration replacement, leaving the system unable to start. How would you redesign the update to be atomic and recoverable?
+* A script receives untrusted input from an environment variable and executes an unintended command. How would you investigate the vulnerability and secure the input handling?
+* A multi-host maintenance script succeeds on some machines but fails on others. How would you track progress and resume without repeating unsafe operations?
+
+**CLI Automation**
+* A cloud CLI command times out while creating a production resource, and the resource's actual state is unknown. How would you determine whether to retry, wait, or reconcile state?
+* A CLI automation pipeline suddenly fails after an agent image update changes the installed CLI version. How would you identify the compatibility issue and prevent future regressions?
+* A script deploys resources into the wrong cloud region because it inherits an unexpected CLI profile. How would you prevent environment and account confusion?
+* A bulk CLI operation hits API throttling and leaves half the resources updated. How would you resume safely and control concurrency?
+* A production CLI command accidentally exposes a sensitive resource publicly. How would you contain the exposure, identify the cause, and add preventive policy checks?
+
+**API Automation**
+* An API intermittently returns HTTP 429 and 503 responses during a large automation run. How would you implement backoff, rate limiting, and recovery?
+* An automation workflow creates a resource successfully, but the response is lost and the client retries. How would you prevent duplicate creation?
+* An OAuth token expires halfway through a long-running workflow. How would you renew credentials safely without losing progress or exposing secrets?
+* A downstream API changes a response field from optional to required, causing the automation to fail in production. How would you diagnose the compatibility issue and improve contract testing?
+* An API workflow updates three systems, but the fourth update fails. How would you reconcile inconsistent states and determine whether compensation or manual intervention is required?
+
+**Infrastructure Automation**
+* An infrastructure pipeline detects drift because an operator manually changed a production resource during an incident. How would you distinguish emergency changes from unauthorized changes and reconcile the state?
+* A provisioning workflow creates a network but fails before creating dependent resources. How would you resume or roll back without leaving orphaned resources?
+* Two infrastructure pipelines attempt to modify the same state simultaneously. How would you prevent conflicting changes and recover from state-lock failures?
+* A new automated policy unexpectedly blocks legitimate production deployments. How would you validate the policy, assess the blast radius, and roll out a corrected rule?
+* Infrastructure changes succeed in staging but expose an overly permissive network rule in production. How would you identify the missing controls and prevent similar changes?
+
+**Deployment Automation**
+* A new application version passes deployment checks but causes a sharp increase in latency after traffic is shifted. How would you automate detection, traffic reduction, and rollback?
+* A deployment fails after a database migration has already modified production data. How would you recover safely when the migration cannot simply be reversed?
+* Two pipelines deploy different versions of the same service concurrently, creating inconsistent application state. How would you enforce deployment coordination?
+* A deployment reports success, but a critical downstream integration is unavailable. How would you improve post-deployment verification and rollback criteria?
+* A release artifact differs between testing and production despite using the same source commit. How would you trace artifact provenance and ensure reproducible promotion?
+
+**Operational Automation**
+* Automated disk cleanup frees space but unexpectedly removes files required by a service. How would you restore service, identify the unsafe assumptions, and add safeguards?
+* A service-restart script repeatedly restarts a healthy service because the health check is too aggressive. How would you correct the health criteria and add cooldowns?
+* A routine operational script launches too many concurrent jobs and causes a production resource spike. How would you introduce throttling and workload prioritization?
+* An automated log-collection task fails silently for a subset of hosts during an incident. How would you establish complete execution visibility and detect missing results?
+* A maintenance workflow succeeds on most servers but leaves a minority in an inconsistent configuration. How would you reconcile the fleet and prove that all systems reached the desired state?
+
+**Scheduled Jobs**
+* A billing job runs twice after a scheduler restart and produces duplicate transactions. How would you make the processing idempotent and reconcile affected records?
+* A scheduled data-processing job misses its execution window during an outage and overlaps with the next scheduled run. How would you define catch-up and concurrency behavior?
+* A cron job works manually but fails under its scheduled account because of permissions and missing environment variables. How would you diagnose and correct the execution context?
+* A daylight-saving transition causes a scheduled report to run at an unexpected time. How would you define and test the intended schedule semantics?
+* A scheduled job starts taking four times longer as data volume increases. How would you identify bottlenecks and protect downstream systems from overlapping runs?
+
+**Event-Driven Automation**
+* A storage event triggers the same automation multiple times, causing duplicate processing. How would you introduce deduplication and safe retry handling?
+* An event arrives before a dependent resource is ready, and the automation fails repeatedly. How would you implement dependency checks and delayed retries?
+* A burst of incoming events overwhelms downstream services. How would you introduce backpressure, concurrency limits, and queue-based buffering?
+* An event consumer crashes after performing a side effect but before acknowledging the event. How would you avoid duplicate side effects when processing resumes?
+* A faulty event handler generates more events that trigger itself, causing an automation loop. How would you stop the loop and prevent recurrence?
+
+**Self-Healing Automation**
+* A service repeatedly crashes, and automatic restarts temporarily restore it but hide the underlying defect. How would you introduce restart limits, diagnostic collection, and escalation?
+* A health check marks a service healthy even though customers cannot complete transactions. How would you redesign health signals and recovery decisions?
+* Multiple self-healing controllers attempt to repair the same infrastructure resource and continuously undo each other's changes. How would you identify conflicting ownership and establish control boundaries?
+* A regional failure triggers automated failover, but the secondary region lacks sufficient capacity. How would you make failover safer and account for recovery capacity?
+* A remediation script unexpectedly increases incident impact. How would you stop automation safely, revert harmful actions, and introduce risk-based approval controls?
+
+**Runbooks**
+* An incident responder follows a runbook but encounters a missing step after the application architecture changes. How would you correct the runbook and establish ongoing validation?
+* An automated runbook completes some steps before encountering a permission error. How would you safely resume execution without duplicating completed side effects?
+* An operator accidentally runs a production remediation against the staging environment—or vice versa. How would you prevent environment-selection errors?
+* A runbook requires an emergency action that could cause customer downtime. How would you combine automated diagnostics, human approval, and post-action verification?
+* Several teams maintain conflicting instructions for the same incident. How would you establish a single trusted procedure and measure adoption?
+
+**Automation Governance**
+* An unreviewed script with excessive privileges deletes production resources. How would you contain the incident and strengthen approval, permission, and audit controls?
+* Teams independently create similar automation scripts with inconsistent security practices. How would you standardize reusable components without blocking team autonomy?
+* A compliance audit asks who changed a production resource, which script was used, and what the before-and-after state was. How would you produce reliable evidence?
+* A critical automation has no clear owner, outdated dependencies, and exposed credentials. How would you assess and remediate its operational and security risks?
+* A governance policy blocks emergency remediation during a major incident. How would you design a controlled break-glass process with accountability and retrospective review?

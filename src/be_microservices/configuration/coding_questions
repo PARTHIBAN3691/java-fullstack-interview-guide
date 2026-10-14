@@ -1,0 +1,30 @@
+* Create a Spring Boot application that reads custom properties from application.properties using @Value.
+* Implement a configuration class using @ConfigurationProperties to bind multiple related properties.
+* Create separate development, testing, and production profiles using Spring Boot.
+* Write a Java configuration class that provides default values when optional properties are missing.
+* Implement configuration validation using @ConfigurationProperties and Bean Validation annotations.
+* Write JUnit tests to verify configuration binding and validation.
+* Create a Spring Cloud Config Server backed by a Git repository.
+* Configure a Spring Cloud Config Client to retrieve environment-specific properties from the Config Server.
+* Implement shared configuration and service-specific overrides for two Spring Boot microservices.
+* Write integration tests to verify that a microservice loads the correct configuration profile.
+* Implement a custom Spring Boot startup validation that fails fast when mandatory configuration is missing.
+* Configure external database connection properties without hardcoding credentials in source code.
+* Implement runtime configuration refresh using Spring Cloud and @RefreshScope.
+* Configure Spring Cloud Bus to broadcast configuration refresh events to multiple services.
+* Write a REST endpoint that safely reports selected non-sensitive application configuration values.
+* Implement a configuration property masking utility for sensitive values in logs.
+* Integrate a Spring Boot application with a secrets manager to retrieve database credentials.
+* Implement a feature flag service that enables or disables a feature through configuration.
+* Write a Java component that validates a configuration version before applying a configuration update.
+* Implement a configuration change audit service that records the changed property, timestamp, and responsible user.
+* Write tests to verify that invalid configuration updates do not replace the last valid configuration.
+* Implement a controlled retry strategy for retrieving remote configuration during application startup.
+* Create a Spring Boot application that reads ConfigMaps and Secrets when deployed in Kubernetes.
+* Implement a configuration-based timeout and retry policy for calls made through WebClient.
+* Write a Java service that validates configuration compatibility between two microservice versions.
+* Implement a safe runtime configuration update mechanism with validation and atomic replacement of in-memory settings.
+* Write integration tests for configuration refresh failures and recovery behavior.
+* Implement a tenant-aware configuration provider that prevents one tenant's settings from leaking into another tenant's context.
+* Design a configuration rollout mechanism that supports versioning, approval, canary deployment, and rollback.
+* Design an enterprise configuration management solution using Java, Spring Boot, Spring Cloud Config, Git, a secrets manager, Kubernetes, audit logging, and automated validation.

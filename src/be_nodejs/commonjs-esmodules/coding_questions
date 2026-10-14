@@ -1,0 +1,30 @@
+* Write a CommonJS module that exports a function to add two numbers.
+* Create a CommonJS module that exports multiple utility functions and import them into another file.
+* Write a CommonJS module that exports an object containing a name, version, and function.
+* Demonstrate the difference between exports and module.exports with a working example.
+* Create an ES module that exports a named function and import it into another file.
+* Write an ES module that exports both named and default values.
+* Import named exports and rename them using the as keyword.
+* Use a namespace import to access multiple exports from an ES module.
+* Create a Node.js project configured to use ES modules through package.json.
+* Demonstrate the use of .cjs and .mjs files in the same project.
+* Write a program that dynamically imports a module based on a runtime condition.
+* Use createRequire() inside an ES module to load a CommonJS dependency.
+* Replace __dirname and __filename with import.meta.url and fileURLToPath().
+* Write an example demonstrating CommonJS module caching.
+* Create two modules with a circular dependency and demonstrate how to resolve the design problem.
+* Write an ES module that uses top-level await to load asynchronous configuration.
+* Create a package.json configuration that exposes separate CommonJS and ES module entry points.
+* Implement conditional exports for a package that supports both require() and import.
+* Write a test that verifies the behavior of a CommonJS module.
+* Write a test for an ES module that mocks one of its dependencies.
+* Create a plugin loader that dynamically imports ES modules from a directory.
+* Implement a module loader that handles both CommonJS and ES module plugins with clear error handling.
+* Write an example that imports a CommonJS module into an ES module and accesses its default export.
+* Demonstrate how an ES module can import a built-in Node.js module using named imports.
+* Create a library with a shared implementation and separate CommonJS and ES module entry points.
+* Write a program that detects and reports module-loading failures with useful error details.
+* Create a configuration loader that supports both JSON files and JavaScript modules.
+* Write a demonstration showing how live bindings work when an ES module exports an updated variable.
+* Implement a small application that uses dynamic imports to load optional functionality only when required.
+* Develop a migration example that converts a multi-file CommonJS application into ES modules while preserving its functionality.

@@ -1,0 +1,30 @@
+* How do you configure a CronJob to execute a Spring Boot batch application?
+* How do you configure a CronJob to run a Java JAR file?
+* How do you pass command-line arguments to a CronJob container?
+* How do you configure environment variables for a CronJob?
+* How do you inject ConfigMap values into a CronJob?
+* How do you inject Secret values into a CronJob?
+* How do you configure CPU and memory requests and limits for a CronJob?
+* How do you configure a CronJob to execute a database cleanup task?
+* How do you configure a CronJob to call a REST API periodically?
+* How do you configure a CronJob to process files from persistent storage?
+* How do you configure a CronJob to run in a specific time zone?
+* How do you prevent overlapping executions of a CronJob?
+* How does the Forbid concurrency policy behave when a previous Job is still running?
+* What happens when the Replace concurrency policy is used?
+* How do you configure a deadline for starting a scheduled Job?
+* How do you control how many successful and failed Jobs are retained?
+* How do you configure retry behavior using backoffLimit?
+* What is the difference between backoffLimit and startingDeadlineSeconds?
+* How do activeDeadlineSeconds and Job retries work together?
+* How do you configure a CronJob to suspend future executions?
+* How do you resume a suspended CronJob?
+* How do you monitor CronJob execution status and failures?
+* How do you troubleshoot a CronJob that is not creating Jobs?
+* How do you troubleshoot a Job whose Pod repeatedly fails?
+* How do you configure service accounts and RBAC permissions for CronJob workloads?
+* How do you configure a CronJob to run database migrations safely?
+* How do you package a Spring Boot batch process for execution in Kubernetes?
+* How do you test a CronJob without waiting for its scheduled time?
+* How do you configure a CronJob using Helm charts?
+* How do you manage CronJob configurations across development, staging, and production?

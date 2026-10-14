@@ -1,0 +1,21 @@
+
+* A Glue job that previously completed in 20 minutes now takes two hours. How would you investigate data volume, Spark execution plans, skew, and resource utilization?
+* A Glue crawler creates unexpected tables or infers incorrect column types from S3 files. How would you diagnose and correct the schema discovery process?
+* A source system adds new columns without notifying the data engineering team. How would you prevent schema changes from breaking downstream Athena queries?
+* A daily Glue job processes the same records multiple times after a retry. How would you redesign the pipeline to support idempotent processing?
+* A Glue job fails intermittently while reading data from Amazon RDS. How would you investigate JDBC connections, networking, database limits, and retry behavior?
+* Your pipeline processes millions of records, but a few partitions contain most of the data. How would you diagnose and resolve data skew?
+* A Glue job writes thousands of tiny Parquet files to S3, slowing down Athena queries. How would you optimize partitioning and file sizes?
+* A production ETL job fails halfway through a multi-stage transformation. How would you restart processing without corrupting previously written output?
+* Your Glue job must process only newly arrived files in S3. How would you configure job bookmarks and manage late-arriving data?
+* A Glue job succeeds, but downstream Athena queries return incomplete results. How would you investigate catalog metadata, partition registration, and output consistency?
+* A company needs to combine customer data from S3 with transaction data from a relational database. How would you design the Glue job, join strategy, and data validation?
+* A data pipeline must detect and quarantine invalid records without failing the entire batch. How would you implement error handling and data quality rules?
+* Glue job costs increase sharply after data volumes grow. How would you identify the main cost drivers and optimize worker allocation and processing?
+* Your Glue job runs inside a VPC but cannot access a required S3 bucket. How would you troubleshoot IAM policies, VPC endpoints, routing, and security configuration?
+* A pipeline must maintain historical customer attributes while incorporating daily updates. How would you implement slowly changing dimensions?
+* Multiple teams need to share catalog tables while maintaining appropriate data access restrictions. How would you design permissions and governance?
+* A Glue workflow depends on several upstream jobs, and one failure prevents downstream processing. How would you configure retries, conditional triggers, and failure notifications?
+* Your source data arrives late or out of order. How would you handle reprocessing, watermarking, and duplicate detection?
+* A large dataset contains sensitive customer information. How would you secure data in transit and at rest and restrict access to sensitive columns?
+* Your organization is migrating a legacy ETL platform to AWS Glue. How would you plan the migration, validate data correctness, compare performance, and cut over safely?

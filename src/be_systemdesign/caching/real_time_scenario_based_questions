@@ -1,0 +1,30 @@
+* A product catalog API receives millions of requests per day and repeatedly queries the same database records. How would you introduce caching?
+* Your application has a high cache hit ratio, but API latency remains high. How would you investigate the bottleneck?
+* A cached product price remains outdated after a database update. How would you fix the cache invalidation strategy?
+* Multiple Spring Boot instances maintain separate local caches, and users receive inconsistent responses. How would you resolve this issue?
+* Redis becomes unavailable during peak traffic, causing database CPU utilization to reach 100%. How would you protect the database?
+* A popular cache entry expires, and thousands of requests simultaneously query the database. How would you prevent this cache stampede?
+* A large number of nonexistent user IDs are requested repeatedly, causing excessive database queries. How would you prevent cache penetration?
+* All cache entries expire at the same time after a deployment, resulting in a traffic spike against the database. How would you prevent this cache avalanche?
+* One product receives significantly more traffic than all other products and overloads a single Redis shard. How would you address the hot-key problem?
+* A cache eviction policy removes frequently accessed data, causing the database load to increase. How would you choose a better eviction policy?
+* Redis memory usage continuously increases until the cache starts evicting important entries. How would you investigate and resolve the issue?
+* A two-level cache uses Caffeine locally and Redis centrally, but the local cache returns stale values after an update. How would you synchronize the layers?
+* A banking application caches account balances, but users must always see sufficiently fresh information. How would you design the caching strategy?
+* A user loses access to a resource, but the authorization decision remains cached. How would you prevent unauthorized access?
+* A multi-tenant SaaS platform uses Redis for caching customer data. How would you prevent one tenant from reading another tenant's cached information?
+* A database update succeeds, but the subsequent cache invalidation fails. How would you ensure eventual cache consistency?
+* A service updates a database and publishes a cache invalidation event, but the application crashes between the two operations. How would you prevent missed invalidation events?
+* A distributed cache experiences failover, and some recently written entries are missing. How would you handle the resulting stale reads and database load?
+* A new application version changes the cache key format. How would you migrate existing cache entries safely?
+* A search API supports pagination, sorting, and filtering. How would you design cache keys to avoid collisions and incorrect responses?
+* An e-commerce application caches shopping cart data, but users frequently update the same cart from multiple devices. How would you maintain consistency?
+* A report-generation API produces expensive results that are reused for several hours. How would you cache the results and handle invalidation?
+* A news application requires popular articles to load quickly while newly published articles appear almost immediately. How would you balance cache performance and freshness?
+* A Redis cluster has low overall utilization, but one node experiences high CPU usage. How would you investigate uneven traffic distribution?
+* A cache migration causes database query volume to increase dramatically. How would you perform the migration without overloading the database?
+* A service experiences frequent cache misses after every deployment. How would you improve cache warming and startup behavior?
+* A distributed application needs to invalidate millions of related cache entries after a bulk data update. How would you avoid a large invalidation storm?
+* A microservice caches data owned by another service, but the owning service frequently changes its data model. How would you coordinate cache updates?
+* An application must remain operational when both Redis and one database replica fail. How would you design fallback behavior and protect the remaining infrastructure?
+* You are designing caching for a global application with users in multiple regions. How would you handle regional caches, invalidation propagation, data freshness, and failover?

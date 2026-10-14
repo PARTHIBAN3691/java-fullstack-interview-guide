@@ -1,0 +1,30 @@
+* A service updates two database tables, but only one update remains after an exception. How would you investigate transaction boundaries and rollback behavior?
+* A method annotated with @Transactional commits even though an exception was thrown. What possible causes would you investigate?
+* An inner service method fails, but the outer service catches the exception and continues. The final transaction still rolls back. How would you explain this behavior?
+* A transactional method works when called through another bean but fails when invoked from the same class. How would you fix the issue?
+* A payment operation deducts money from one account but fails to credit another account. How would you guarantee atomicity?
+* An external payment API times out while a database transaction remains open. How would you redesign the workflow?
+* A database transaction commits successfully, but the corresponding Kafka event is not published. How would you prevent this inconsistency?
+* An event is published before the database transaction commits, and consumers observe data that is not yet available. How would you correct the design?
+* A REQUIRES_NEW operation commits successfully, but the outer transaction later rolls back. How should the business process handle this outcome?
+* A transaction fails with UnexpectedRollbackException even though the original exception was caught. How would you identify the rollback-only marker?
+* A service uses NESTED propagation, but rolling back the nested operation also affects the entire transaction. How would you investigate transaction-manager and savepoint support?
+* Concurrent requests update the same account balance and produce an incorrect final value. How would you implement appropriate locking and transaction boundaries?
+* A transaction encounters a deadlock only during peak traffic. How would you analyze SQL execution order, locks, and transaction duration?
+* A report query returns inconsistent results while other transactions are updating the same records. How would you select an appropriate isolation level?
+* A long-running transaction holds database connections and exhausts the connection pool. How would you reduce transaction duration?
+* A method marked readOnly = true still performs a database update. How would you explain the limitations of read-only transaction settings?
+* A transaction timeout is configured, but a slow external HTTP call continues running. Why might the timeout not cancel the external operation?
+* A checked business exception occurs, but the transaction commits unexpectedly. How would you configure rollback rules?
+* A JPA entity is modified after its transaction completes, but the database does not reflect the change. How would you explain entity state and persistence-context behavior?
+* An asynchronous task needs to update the database, but it cannot see the caller's transaction. How would you design transaction management for the task?
+* Two databases must be updated as part of a single business operation. How would you choose between distributed transactions and eventual consistency?
+* A transaction is rolled back, but an email notification has already been sent. How would you redesign the notification workflow?
+* A service calls another transactional service using a different transaction manager, and the operations do not roll back together. How would you investigate the configuration?
+* A production service experiences frequent lock-wait timeouts. How would you determine whether the issue is isolation level, indexing, or long-running transactions?
+* A batch job processes thousands of records in one transaction and fails near completion. How would you redesign transaction chunking and recovery?
+* A retry mechanism re-executes a failed transaction and creates duplicate business records. How would you make the operation idempotent?
+* A transaction commits, but an after-commit callback fails while sending an event. How would you ensure reliable event delivery?
+* A database operation succeeds, but a subsequent remote service call fails and the business workflow becomes inconsistent. How would you implement compensation or a saga?
+* A transactional service behaves differently in unit tests and integration tests. How would you investigate test-managed transactions and proxy behavior?
+* Your team needs consistent transaction boundaries across multiple service methods. How would you design a maintainable transaction-management strategy?

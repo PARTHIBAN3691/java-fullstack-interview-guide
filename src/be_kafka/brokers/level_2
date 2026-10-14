@@ -1,0 +1,30 @@
+* How would you design a Kafka broker cluster for millions of messages per second?
+* How would you determine the optimal broker count based on throughput, storage, and availability requirements?
+* How would you calculate the storage capacity required for Kafka brokers?
+* How would you estimate broker network bandwidth for a given message rate and replication factor?
+* How would you optimize broker performance when disk I/O is the primary bottleneck?
+* How would you investigate high request latency across multiple Kafka brokers?
+* How would you design broker placement across availability zones to tolerate infrastructure failures?
+* How would you configure rack awareness to reduce correlated replica failures?
+* How would you balance partition leaders across brokers in a large cluster?
+* How would you diagnose uneven disk utilization across brokers?
+* How would you migrate partitions from an overloaded broker to other brokers safely?
+* How would you perform broker replacement while preserving replication and availability?
+* How would you recover a broker after its data disk becomes corrupted?
+* How would you handle a broker failure when some partitions have no available in-sync replicas?
+* What are the risks of enabling unclean leader election, and when might it be considered?
+* How do min.insync.replicas and producer acknowledgments influence broker-level durability?
+* How would you tune broker thread pools for high producer and consumer traffic?
+* How would you investigate request queue saturation and network processing delays?
+* How would you tune JVM heap, garbage collection, and operating-system settings for Kafka brokers?
+* How would you diagnose frequent garbage collection pauses on a broker?
+* How would you plan broker capacity for traffic spikes and uneven partition workloads?
+* How would you optimize broker storage for high-throughput sequential writes and log retention?
+* How would you manage broker upgrades when the cluster uses KRaft mode?
+* How would you troubleshoot controller instability and metadata propagation delays in KRaft?
+* How would you design secure inter-broker communication across separate network zones?
+* How would you isolate noisy tenants using quotas and broker-level resource controls?
+* How would you evaluate the impact of replication traffic on broker throughput and network costs?
+* How would you design broker monitoring and alerting to detect failures before applications are affected?
+* How would you plan capacity and operational procedures for a multi-region Kafka deployment?
+* How would you determine whether broker scaling, partition reassignment, or application optimization is the best solution for a throughput bottleneck?

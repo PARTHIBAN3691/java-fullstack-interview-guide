@@ -1,0 +1,30 @@
+* Your Node.js API becomes slow during peak traffic, and database connections are frequently exhausted. How would you investigate and resolve the issue?
+* Your application works correctly in development but experiences intermittent database timeouts in production. How would you troubleshoot the problem?
+* A database connection is created for every incoming request, causing high resource usage. How would you redesign connection management?
+* Your application reports successful order creation, but related order items are missing from the database. How would you ensure atomicity?
+* Two users update the same account balance simultaneously, and one update is lost. How would you prevent this issue?
+* A payment request times out after the database commits the transaction. How would you prevent duplicate payments when the client retries?
+* A database server restarts unexpectedly, and all existing connections fail. How should the Node.js application recover?
+* A bulk import processes hundreds of thousands of records and consumes excessive memory. How would you redesign the import process?
+* An API endpoint retrieves thousands of records and becomes increasingly slow as the table grows. How would you optimize pagination and querying?
+* Your ORM generates hundreds of queries for a single API request. How would you identify and eliminate the N+1 query problem?
+* A database migration fails halfway through a production deployment. How would you recover safely?
+* Your team must add a non-null column to a large table without causing downtime. How would you plan the migration?
+* A transaction remains open for a long time and blocks other database operations. How would you identify and resolve the problem?
+* Multiple requests produce database deadlocks during concurrent updates. How would you reduce the frequency of deadlocks?
+* Your application needs to read frequently accessed data while ensuring writes go to the primary database. How would you implement read/write routing?
+* Users report stale data immediately after updating their profiles because reads are routed to replicas. How would you address consistency requirements?
+* A database query performs well with a small dataset but becomes slow when production data grows. How would you diagnose and optimize it?
+* An application running across multiple Node.js instances exceeds the database connection limit. How would you calculate and control total connections?
+* Your API intermittently returns duplicate records after retrying failed database operations. How would you make the operations idempotent?
+* A database outage causes repeated retries that overwhelm the database after recovery. How would you prevent a retry storm?
+* Your service must update a customer record and publish an event to a message broker. How would you prevent database and event inconsistencies?
+* A microservice needs information owned by another service's database. How would you design the integration without tightly coupling the services?
+* Your application needs to store audit history for every financial transaction. How would you design the schema and transaction flow?
+* Sensitive customer information is stored in the database. How would you protect it through access control, encryption, and secure configuration?
+* A developer accidentally logs SQL parameters containing personal information. How would you improve database logging practices?
+* Integration tests pass locally but fail intermittently in CI because database state is shared. How would you isolate the tests?
+* A database connection pool appears healthy, but requests still wait for a long time to execute queries. What would you investigate?
+* Your API performs several sequential queries that could potentially run concurrently. How would you determine whether parallel execution is safe and beneficial?
+* A database schema change breaks an older application instance during a rolling deployment. How would you prevent this compatibility issue?
+* Your Node.js application must support temporary database unavailability without losing incoming business operations. How would you design buffering, retries, and recovery?

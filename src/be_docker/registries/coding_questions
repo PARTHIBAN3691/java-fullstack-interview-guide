@@ -1,0 +1,30 @@
+* Write a shell script that tags a Spring Boot Docker image with a version and pushes it to Docker Hub.
+* Write a shell script that tags a local image with a private registry hostname, repository name, and release version.
+* Write a script that authenticates with a container registry using credentials supplied securely through environment variables or a secret store.
+* Write a script that checks whether a Docker image exists in a registry before attempting to pull it.
+* Write a script that pulls an image from a private registry and verifies that the pull succeeded.
+* Write a shell script that pushes a Java application image only when the build and test stages succeed.
+* Write a CI pipeline that builds a Spring Boot image, tags it with the Git commit hash, and pushes it to a private registry.
+* Write a CI pipeline that creates separate development, staging, and production tags for a tested Docker image.
+* Write a script that inspects an image and prints its repository, tag, image ID, and digest where available.
+* Write a script that compares a local Docker image digest with the digest recorded by a registry.
+* Write a script that checks registry authentication and reports useful errors without printing credentials.
+* Write a Docker Compose configuration that pulls a Spring Boot application image from a private registry.
+* Write a Kubernetes Deployment manifest for a Java application that uses an image pull secret to access a private registry.
+* Write a shell script that promotes an existing image from a staging repository to a production repository without rebuilding the application.
+* Write a script that verifies the presence of a release tag and digest before allowing deployment.
+* Write a CI pipeline that scans a Docker image for vulnerabilities and blocks publication when policy thresholds are exceeded.
+* Write a CI pipeline that generates a software bill of materials and stores it alongside the published Java image.
+* Write a CI pipeline that signs a published image and verifies the signature before deployment.
+* Write a script that checks whether a registry repository contains an expected set of release tags.
+* Write a script that lists image tags and digests for a repository using the registry's supported API or CLI.
+* Write a cleanup script that identifies old image tags based on a retention policy and produces a dry-run report before deletion.
+* Write a script that copies an image between registries and verifies the destination digest against the source digest.
+* Write a CI/CD configuration that uses short-lived registry credentials and least-privilege permissions for image publication.
+* Write a script that retries a failed image push with bounded exponential backoff and clear error reporting.
+* Write a Docker Buildx command sequence that builds and publishes an AMD64 and ARM64 Spring Boot image to a registry.
+* Write a script that validates image naming conventions and release-tag formats before pushing an artifact.
+* Write a CI pipeline that builds an image once, publishes it to a staging repository, verifies it, and promotes the same digest to production.
+* Write a registry health-check script that validates endpoint availability, TLS connectivity, and authenticated access.
+* Write an automated validation script that checks image provenance, signatures, vulnerability results, and required release metadata.
+* Write a production-ready CI/CD pipeline for a Spring Boot microservice that builds, tests, scans, signs, publishes, verifies, and promotes Docker images through controlled environments.

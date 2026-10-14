@@ -1,0 +1,79 @@
+**Multimodal Large Language Models**
+
+* How would you build a multimodal application that accepts text, images, and PDFs and returns grounded answers with source references?
+* How would you manage image resolution, token consumption, context limits, and latency when processing large numbers of images?
+
+**Vision-Language Models**
+
+* How would you combine object detection, OCR, visual question answering, and language generation for document or image understanding?
+* How would you evaluate visual grounding and prevent a model from describing objects or details that are not present in an image?
+
+**Speech-to-Text and Text-to-Speech**
+
+* How would you design a speech pipeline that combines streaming transcription, language detection, punctuation restoration, and speech synthesis?
+* How would you handle noisy audio, overlapping speakers, interruptions, and domain-specific terms while balancing recognition accuracy and latency?
+
+**Real-Time Voice Agents**
+
+* How would you design a voice agent that supports streaming audio, speech recognition, LLM inference, speech generation, and interruption handling?
+* How would you manage turn detection, cancellation of ongoing responses, conversation state, and end-to-end latency?
+
+**Graph-Based AI**
+
+* How would you represent entities and relationships as a graph and use graph traversal to answer multi-hop questions?
+* How would you decide between graph neural networks, graph embeddings, and conventional graph algorithms for a particular use case?
+
+**Knowledge Graphs for AI**
+
+* How would you build a knowledge graph from structured databases, documents, and entity-extraction pipelines?
+* How would you combine graph retrieval with vector search in a RAG application while preserving provenance and access permissions?
+
+**Neuro-Symbolic AI**
+
+* How would you combine an LLM with a deterministic rule engine to solve tasks requiring both language understanding and strict business constraints?
+* How would you validate that generated symbolic expressions satisfy type rules, domain constraints, and logical consistency?
+
+**Small Language Models (SLMs)**
+
+* How would you select between a small model, a larger hosted model, and a fine-tuned model for a specific enterprise task?
+* How would you use quantization, distillation, prompt design, and task-specific evaluation to improve an SLM's performance?
+
+**On-Device and Edge AI**
+
+* How would you deploy an AI model to mobile or edge devices with limited memory, compute, battery, and network connectivity?
+* How would you manage model updates, offline operation, device compatibility, and privacy-sensitive inference?
+
+**Federated Learning**
+
+* How would you design a federated learning workflow involving multiple clients that train locally and share model updates?
+* How would you handle unreliable clients, non-identically distributed data, communication overhead, and model aggregation?
+
+**AI Reasoning Models**
+
+* How would you evaluate whether a reasoning model provides meaningful improvements over a faster general-purpose model?
+* How would you control reasoning latency, token consumption, tool use, and verification effort for different task complexities?
+
+**Long-Term Memory for AI Agents**
+
+* How would you design a memory system that extracts useful facts from conversations and retrieves relevant memories in future sessions?
+* How would you manage memory relevance, summarization, expiration, conflicting facts, and user-requested deletion?
+
+**Computer-Use Agents**
+
+* How would you build a computer-use agent that interprets screenshots, selects UI actions, and verifies the results of those actions?
+* How would you handle changing layouts, modal dialogs, slow page loads, authentication challenges, and failed interactions?
+
+**Synthetic Data and Simulation**
+
+* How would you generate synthetic training data for a task with limited labeled examples and validate its usefulness?
+* How would you detect duplication, unrealistic samples, privacy leakage, and distribution differences between synthetic and real data?
+
+**AI Benchmarking and Leaderboards**
+
+* How would you build a benchmark suite that evaluates correctness, robustness, latency, cost, and safety across multiple models?
+* How would you prevent data leakage, benchmark overfitting, and misleading comparisons caused by different evaluation settings?
+
+**Open-Weight Model Ecosystems**
+
+* How would you deploy an open-weight model locally and choose an inference engine, quantization level, and serving configuration?
+* How would you evaluate model licensing, security updates, community support, and operational responsibility before adopting an open-weight model?

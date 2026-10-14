@@ -1,0 +1,21 @@
+
+* Design a scalable Java-based file storage service using Azure Blob Storage for millions of users.
+* How would you upload multi-gigabyte files without exhausting Java heap memory?
+* Explain how block blob uploads work and how block size and parallelism affect throughput.
+* How would you implement resumable uploads when a client connection fails halfway through a large file transfer?
+* How would you design a secure file upload and download API using Spring Boot and Azure Blob Storage?
+* How would you prevent unauthorized access to blobs while allowing temporary access to specific files?
+* How would you implement least-privilege access using managed identities and Azure RBAC?
+* How would you design a multi-tenant storage architecture that isolates each tenant's data?
+* How would you handle concurrent updates to the same blob using ETags and conditional requests?
+* How would you prevent duplicate file processing when an upload event is delivered more than once?
+* How would you design an event-driven pipeline using Blob Storage events, Event Grid, and Azure Functions?
+* How would you process millions of files reliably without overwhelming downstream Java microservices?
+* How would you design disaster recovery using blob redundancy options, versioning, soft delete, and geo-redundancy?
+* Explain the differences between LRS, ZRS, GRS, RA-GRS, GZRS, and RA-GZRS.
+* How would you optimize storage costs using access tiers, lifecycle policies, and retention requirements?
+* How would you design a secure file-sharing mechanism using short-lived SAS tokens and controlled permissions?
+* How would you troubleshoot intermittent upload failures, throttling, and HTTP 503 responses from Blob Storage?
+* How would you optimize download latency for large files accessed by users across different geographic regions?
+* How would you migrate terabytes of files from an on-premises file server to Azure Blob Storage while preserving metadata and validating integrity?
+* How would you design a compliance-ready storage solution with encryption, immutable blobs, retention policies, auditing, and controlled deletion?

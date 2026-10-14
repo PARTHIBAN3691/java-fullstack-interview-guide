@@ -1,0 +1,30 @@
+* Create a template-driven login form with username and password fields.
+* Create a reactive registration form with name, email, and password fields.
+* Create a reactive form using FormBuilder with required and email validators.
+* Write a form that displays validation messages when a field is touched and invalid.
+* Implement a password and confirm-password form with a custom cross-field validator.
+* Create a form that uses setValue() and patchValue() to update control values.
+* Create a reactive form with nested FormGroups for employee and address details.
+* Create a FormArray that allows users to add and remove phone numbers dynamically.
+* Create a dynamic list of employee skills using FormArray and validate each entry.
+* Implement a custom validator that checks whether a value contains only alphanumeric characters.
+* Implement a validator that ensures a password contains uppercase letters, lowercase letters, digits, and special characters.
+* Create an asynchronous validator that checks username availability using an Angular service.
+* Implement a form that validates a minimum age using a custom validator.
+* Create a form where selecting a checkbox conditionally adds or removes required validation.
+* Implement dependent country and state dropdowns using reactive forms.
+* Create a form that uses updateOn: 'blur' to validate fields after focus leaves them.
+* Build a reactive form with typed FormGroup and FormControl definitions.
+* Implement a form that retrieves disabled control values using getRawValue().
+* Create a custom input component that implements ControlValueAccessor.
+* Write unit tests for a custom validator that checks matching password fields.
+* Write unit tests for an asynchronous validator that checks whether an email is already registered.
+* Implement a reactive form that maps backend validation errors to individual controls.
+* Create a file-upload form that validates file type and maximum file size.
+* Build a multi-step form that validates each step before allowing navigation.
+* Implement autosave using valueChanges, debounceTime(), distinctUntilChanged(), and switchMap().
+* Create a form that supports both create and edit modes using API data.
+* Implement a dynamic form generator using field configuration objects and validators.
+* Write unit tests for a reactive form using Angular TestBed, including invalid input and successful submission.
+* Create a product order form with dynamic line items, quantity validation, and calculated totals.
+* Build a complete employee form with nested groups, dynamic skills, custom validators, server-side errors, and comprehensive unit tests.

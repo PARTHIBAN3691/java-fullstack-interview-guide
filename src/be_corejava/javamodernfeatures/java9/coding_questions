@@ -1,0 +1,36 @@
+
+* Write a Java 9 program to create an immutable list using `List.of()` and demonstrate what happens when you try to add an element.
+* Write a Java 9 program to create an immutable Set using `Set.of()` and demonstrate how duplicate elements are handled.
+* Write a Java 9 program to create an immutable Map using `Map.of()`.
+* Write a Java 9 program to create a Map with more than ten key-value pairs using `Map.ofEntries()` and `Map.entry()`.
+* Write a Java 9 program to demonstrate that `List.of()` rejects null elements.
+* Write a Java 9 program to demonstrate the difference between `Arrays.asList()` and `List.of()`.
+* Write a Java 9 interface with a private instance method used by two default methods.
+* Write a Java 9 interface with a private static method shared by multiple static methods.
+* Write a Java 9 program using `Optional.ifPresentOrElse()` to handle both present and empty values.
+* Write a Java 9 program using `Optional.or()` to provide a fallback `Optional` when the original value is empty.
+* Write a Java 9 program to convert an `Optional<String>` into a Stream using `Optional.stream()`.
+* Write a Java 9 program to flatten a list of `Optional<Integer>` objects and collect only the present values.
+* Write a Java 9 program to demonstrate the use of `Stream.takeWhile()` on an ordered Stream of integers.
+* Write a Java 9 program to demonstrate the use of `Stream.dropWhile()` on an ordered Stream of integers.
+* Write a Java 9 program to compare the results of `filter()` and `takeWhile()` using the same input data.
+* Write a Java 9 program to generate a sequence of integers using the three-argument `Stream.iterate()` method.
+* Write a Java 9 program to use `Stream.ofNullable()` to create an empty or single-element Stream based on a nullable value.
+* Write a Java 9 program to filter null values from a list using `Stream.ofNullable()` and `flatMap()`.
+* Write a Java 9 modular application with two modules, where one module exports a package and the other requires it.
+* Write a Java 9 module descriptor using `requires`, `exports`, and `requires transitive`.
+* Write a Java 9 modular application that declares a service interface using `uses` and a provider using `provides ... with`.
+* Write a Java 9 program to explore expressions, variables, and method calls interactively using JShell.
+* Write a Java 9 program to retrieve the current process ID using `ProcessHandle.current()`.
+* Write a Java 9 program to inspect a process using `ProcessHandle.Info` and print the available command and start-time information.
+* Write a Java 9 program to list the IDs of currently running processes using `ProcessHandle.allProcesses()`.
+* Write a Java 9 program to inspect a process's descendants using the Process API.
+* Write a Java 9 program to check whether a process is alive before attempting to terminate it.
+* Write a Java 9 program to create a simple publisher and subscriber using the `Flow` API.
+* Write a Java 9 program to implement a basic `Flow.Subscriber` that requests items and processes received values.
+* Write a Java 9 program to demonstrate how a subscriber can cancel its subscription after receiving a specified number of items.
+* Write a Java 9 program to implement a simple `Flow.Processor` that transforms published integer values.
+* Write a Java 9 program to demonstrate how a `Flow.Subscription` controls demand through `request(n)`.
+* Write a Java 9 program to create a modular project and compile it using the module path from the command line.
+* Write a Java 9 program to demonstrate how an unexported package is inaccessible to another named module.
+* Write a Java 9 program to compare a conventional nullable-value check with a Java 9 `Optional`-based implementation.

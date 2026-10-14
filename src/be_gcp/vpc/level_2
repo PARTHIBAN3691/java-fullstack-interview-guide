@@ -1,0 +1,30 @@
+* How would you design a scalable VPC architecture for hundreds of Java microservices across multiple environments?
+* How would you design a hub-and-spoke network topology in Google Cloud?
+* What are the trade-offs between Shared VPC, VPC Network Peering, and Private Service Connect?
+* How would you design network segmentation for public APIs, application services, and private databases?
+* How would you prevent lateral movement between workloads in different application tiers?
+* How would you design centralized egress control for workloads across multiple projects?
+* How would you route outbound traffic from private workloads through centralized security appliances?
+* How would you design hybrid connectivity between Google Cloud and multiple on-premises data centers?
+* How would you implement redundant Cloud VPN tunnels with dynamic routing?
+* How would you design high-availability Cloud Interconnect connectivity?
+* How would you plan IP address allocation for a multi-region, multi-project enterprise network?
+* How would you resolve overlapping CIDR ranges between acquired organizations?
+* How would you design network connectivity for workloads across multiple Google Cloud regions?
+* How would you evaluate transitive routing requirements when using VPC Network Peering?
+* How would you design a secure network architecture for a regulated financial application?
+* How would you isolate production workloads from non-production environments at the network level?
+* How would you design private connectivity for Cloud Run, GKE, Cloud SQL, and internal APIs?
+* How would you choose between Private Service Connect and private services access for managed services?
+* How would you design centralized DNS resolution across multiple VPC networks?
+* How would you investigate asymmetric routing in a hybrid cloud network?
+* How would you troubleshoot packet drops caused by firewall rules, routes, or MTU mismatches?
+* How would you design an egress architecture that restricts outbound traffic to approved destinations?
+* How would you minimize the risk of accidentally exposing private workloads to the internet?
+* How would you design network observability using VPC Flow Logs, firewall logging, and Network Intelligence Center?
+* How would you use hierarchical firewall policies to enforce organization-wide network controls?
+* How would you implement infrastructure as code for VPCs, subnets, routes, firewall rules, and NAT?
+* How would you roll out a network CIDR change without disrupting production services?
+* How would you design disaster recovery for a multi-region application while preserving network isolation?
+* How would you troubleshoot connectivity failures that occur only under high traffic or during failover?
+* How would you optimize VPC network design for security, availability, scalability, and operational cost?

@@ -1,0 +1,89 @@
+**AIOps Fundamentals**
+
+* What is AIOps, and how does it differ from traditional IT operations monitoring?
+* How can AI and machine learning help operations teams detect and resolve incidents?
+
+**AI-Based Log Analysis**
+
+* How can AI identify errors, recurring patterns, and unusual behavior in application logs?
+* What are the challenges of analyzing unstructured logs from multiple services?
+
+**Intelligent Alert Correlation**
+
+* What is alert correlation, and how can AI reduce duplicate alerts?
+* How can alerts from different services be grouped into a single incident?
+
+**Anomaly Detection**
+
+* What is anomaly detection in IT operations?
+* What is the difference between rule-based anomaly detection and machine-learning-based detection?
+
+**Root Cause Analysis**
+
+* What is root cause analysis, and how can AI assist with identifying the source of an incident?
+* How can logs, metrics, traces, and deployment events help determine the root cause?
+
+**Incident Summarization**
+
+* What is an AI-generated incident summary?
+* What information should an incident summary contain for engineers and management?
+
+**Predictive Incident Detection**
+
+* What is predictive incident detection, and how can it help prevent outages?
+* Which historical metrics and operational signals can be used to predict incidents?
+
+**Automated Incident Response**
+
+* What is automated incident response, and how does it differ from automated alerting?
+* Which incident-response actions are suitable for automation?
+
+**AI-Assisted CI/CD**
+
+* How can AI assist with code reviews, pipeline failures, test analysis, and deployment decisions?
+* How can AI-generated recommendations be integrated into a CI/CD pipeline?
+
+**AI-Generated Infrastructure as Code**
+
+* How can AI generate Terraform, Kubernetes manifests, or other infrastructure configuration?
+* Why should AI-generated infrastructure code be validated before deployment?
+
+**AI-Assisted Kubernetes Troubleshooting**
+
+* How can AI help diagnose Kubernetes pod failures, scheduling issues, and resource constraints?
+* Which Kubernetes events, logs, and resource metrics are useful for AI-assisted troubleshooting?
+
+**AI for Cloud Cost Optimization**
+
+* How can AI identify unnecessary cloud spending and underutilized resources?
+* What is the difference between cloud cost monitoring and AI-assisted cost optimization?
+
+**AI-Powered Capacity Planning**
+
+* How can AI predict future CPU, memory, storage, and network requirements?
+* Why should capacity planning account for traffic patterns and seasonal demand?
+
+**AI Runbook Automation**
+
+* What is a runbook, and how can AI help execute operational procedures?
+* Why should automated runbook actions include validation and error handling?
+
+**AI Change Risk Prediction**
+
+* How can AI estimate the risk of a software deployment or infrastructure change?
+* Which historical deployment signals can help predict a change-related failure?
+
+**AI-Assisted Security Operations**
+
+* How can AI help security teams analyze alerts, logs, and suspicious activities?
+* Why must AI-assisted security decisions be auditable?
+
+**Human Approval for Automated Remediation**
+
+* Why might an AI-recommended remediation require human approval?
+* Which factors should determine whether an operational action can execute automatically?
+
+**Reliability and Safety of AIOps**
+
+* What reliability risks arise when AI participates in production operations?
+* How can teams prevent incorrect AI recommendations from causing service disruptions?

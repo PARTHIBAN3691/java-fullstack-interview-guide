@@ -1,0 +1,30 @@
+* Your HTTP server starts successfully, but clients cannot connect. How would you troubleshoot the issue?
+* Your server fails to start because the configured port is already in use. How would you diagnose and resolve it?
+* Your HTTP server becomes unresponsive when a large request arrives. How would you identify the root cause?
+* A POST endpoint receives an empty request body even though the client sends data. How would you troubleshoot it?
+* Your server crashes when a client sends malformed JSON. How would you fix the request-handling logic?
+* A client receives ERR_HTTP_HEADERS_SENT from your server. What could cause this error?
+* Your server sends a 200 response even though a database operation failed. How would you correct the response flow?
+* An HTTP server becomes slow when many clients download large files simultaneously. How would you optimize it?
+* Your server experiences frequent ECONNRESET errors. How would you investigate the cause?
+* Clients experience timeouts even though your application logic completes quickly. What server and network settings would you inspect?
+* Your server keeps idle connections open for too long, consuming resources. How would you tune keep-alive and timeout settings?
+* A client disconnects while a large response is being streamed. How would you stop unnecessary work and release resources?
+* Your server accepts requests during shutdown and loses some responses. How would you implement graceful shutdown?
+* A rolling deployment terminates active requests before they complete. How would you improve the shutdown strategy?
+* Your HTTP server behaves correctly locally but returns 502 errors behind a reverse proxy. How would you investigate it?
+* A reverse proxy and your Node.js server interpret request headers differently. How would you assess the risk of HTTP request smuggling?
+* Your static-file server allows users to access files outside the configured directory. How would you fix the security vulnerability?
+* An attacker sends extremely large request bodies and exhausts server memory. How would you protect the server?
+* Your server's CPU usage remains high even when traffic is low. How would you investigate event-loop activity and background tasks?
+* Your application returns stale responses because of incorrect caching headers. How would you implement proper cache validation?
+* A health-check endpoint returns success even though a critical dependency is unavailable. How would you redesign readiness checks?
+* Your server performs well on one CPU core but cannot use additional cores effectively. How would you scale it?
+* An HTTPS server fails after its TLS certificate expires. How would you detect and prevent this issue?
+* Your service receives repeated requests from one client and overloads downstream systems. How would you introduce rate limiting?
+* Your HTTP server occasionally returns incomplete files during concurrent downloads. How would you investigate stream handling?
+* A long-running request prevents a client from receiving timely responses. How would you isolate or cancel slow operations?
+* Your server's memory usage grows with the number of open connections. How would you determine whether the cause is a leak or expected connection overhead?
+* Your HTTP server needs to support thousands of concurrent uploads while preserving data integrity. How would you design the ingestion process?
+* You need to migrate a basic Node.js HTTP server to a production deployment with monitoring and zero-downtime releases. What would your approach be?
+* You are building a lightweight HTTP server without Express.js. How would you design routing, middleware, security, observability, and error handling?

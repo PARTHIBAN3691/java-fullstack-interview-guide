@@ -1,0 +1,20 @@
+* What is Shenandoah Garbage Collector in Java?
+* Why was Shenandoah GC introduced?
+* What are the main goals of Shenandoah GC?
+* Which Java distributions support Shenandoah GC?
+* From which Java version was Shenandoah GC introduced?
+* What is the difference between pause time and total garbage collection time?
+* What is a stop-the-world pause?
+* How does Shenandoah GC aim to reduce application pause times?
+* What is concurrent garbage collection?
+* What is the difference between concurrent and stop-the-world garbage collection?
+* What is heap compaction?
+* What is the difference between Shenandoah GC and G1 GC?
+* What is the purpose of the `-XX:+UseShenandoahGC` JVM option?
+* How can you check whether Shenandoah GC is enabled in a Java application?
+* What are the main advantages of Shenandoah GC?
+* What are the potential disadvantages of using Shenandoah GC?
+* Is Shenandoah GC suitable for latency-sensitive applications?
+* Does Shenandoah GC eliminate all garbage collection pauses?
+* What is the difference between throughput and latency in garbage collection?
+* How can you enable GC logging when using Shenandoah GC?

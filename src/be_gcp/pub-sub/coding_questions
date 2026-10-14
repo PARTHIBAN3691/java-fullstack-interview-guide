@@ -1,0 +1,30 @@
+* Write a Java program using the Google Cloud Pub/Sub client library to create a topic.
+* Write a Java program to create a pull subscription for an existing Pub/Sub topic.
+* Write a Java program that publishes a plain-text message to a Pub/Sub topic.
+* Write a Java program that publishes a JSON event containing an order ID, customer ID, and amount.
+* Write a Java program that consumes messages using the Pub/Sub StreamingPull API.
+* Write a Java program that acknowledges a message only after successful business processing.
+* Write a Java program that handles message-processing exceptions and allows failed messages to be retried.
+* Write a Spring Boot service that publishes order-created events to Pub/Sub.
+* Write a Spring Boot subscriber that consumes payment events and invokes a business service.
+* Write a Java program that publishes messages with attributes such as event type, correlation ID, and tenant ID.
+* Write a Java program that configures publisher batching to improve message throughput.
+* Write a Java subscriber that configures flow control to limit outstanding messages and memory consumption.
+* Write a Java program that extends message acknowledgment deadlines during long-running processing.
+* Write a Java subscriber that shuts down gracefully while handling in-flight messages.
+* Write a Java program that uses ordering keys to publish customer-specific events in order.
+* Write a Java program that implements an idempotent consumer using a database table of processed event IDs.
+* Write a Java program that detects duplicate payment events and prevents repeated financial transactions.
+* Write a Java program that validates incoming Pub/Sub JSON messages against a predefined event schema.
+* Write a Java program that extracts a message's attributes and deserializes its payload into a Java POJO.
+* Write a Java program that implements retry handling with exponential backoff for transient downstream failures.
+* Write a Java program that routes permanently failed messages to a dead-letter workflow.
+* Write a Java program that records processing status, event ID, correlation ID, and error details for each message.
+* Write a Spring Boot REST endpoint configured to receive authenticated Pub/Sub push requests.
+* Write a Java program that verifies and processes an authenticated push message from Pub/Sub.
+* Write a Java program that uses a database transaction and an idempotency key to process an order event safely.
+* Write a Java implementation of the transactional outbox pattern for publishing database changes to Pub/Sub.
+* Write a Java program that republishes messages from a dead-letter subscription after correcting the underlying issue.
+* Write a Java integration test for a Pub/Sub publisher and subscriber using the Pub/Sub emulator.
+* Write a Java program that publishes a batch of events and handles individual publish futures and failures.
+* Write a Java program that implements an event-processing pipeline with configurable concurrency, backpressure, retry handling, and graceful shutdown.

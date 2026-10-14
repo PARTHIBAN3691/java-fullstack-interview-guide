@@ -1,0 +1,30 @@
+* Explain the difference between safe and idempotent HTTP methods with examples.
+* Why is GET considered a safe and idempotent method?
+* Why is POST generally not considered idempotent?
+* Why is PUT considered idempotent?
+* Why is DELETE considered idempotent even if repeated requests return different status codes?
+* How do you decide between POST and PUT when creating a resource?
+* When should you use PATCH instead of PUT?
+* What is the difference between full resource replacement and partial resource modification?
+* How should a REST API handle a PUT request for a nonexistent resource?
+* How should a REST API handle a DELETE request for a nonexistent resource?
+* Can a PATCH request be idempotent?
+* What is the difference between JSON Merge Patch and JSON Patch?
+* How does the HEAD method differ from GET?
+* How does the OPTIONS method help clients discover supported HTTP methods?
+* What is the purpose of the Allow header?
+* How should an API respond when a client uses an unsupported HTTP method?
+* What is the difference between HTTP 405 Method Not Allowed and HTTP 501 Not Implemented?
+* Why should GET requests generally not modify server-side state?
+* What are the risks of placing sensitive data in GET query parameters?
+* How do HTTP methods affect browser caching?
+* How do HTTP methods influence automatic retries in HTTP clients?
+* How can an idempotency key make a POST request safe to retry?
+* How should an API handle concurrent PUT requests updating the same resource?
+* How can ETag and If-Match prevent lost updates during PATCH operations?
+* How do HTTP methods map to CRUD operations?
+* Can a REST API use POST for searching or filtering large datasets?
+* What are the disadvantages of using GET with a request body?
+* How should a REST API design bulk update and bulk delete operations?
+* How do HTTP method semantics affect API documentation?
+* How would you test that an endpoint correctly implements its declared HTTP method?

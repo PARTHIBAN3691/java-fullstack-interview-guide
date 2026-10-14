@@ -1,0 +1,30 @@
+* How do you design an event-driven architecture for a microservices application?
+* How do producers and consumers communicate through a message broker?
+* How does publish-subscribe messaging work?
+* How does Apache Kafka differ from RabbitMQ?
+* How do you choose between Kafka, RabbitMQ, and cloud-managed messaging services?
+* How do Kafka topics and partitions work?
+* How do consumer groups distribute event processing?
+* How do you preserve event ordering in a distributed system?
+* What are at-most-once, at-least-once, and exactly-once delivery semantics?
+* How do you handle duplicate event delivery?
+* How do you implement idempotent consumers?
+* How do you handle failed event processing?
+* What is a dead-letter queue, and when should it be used?
+* How do retry policies work in event-driven systems?
+* How do you implement exponential backoff for failed messages?
+* How do you handle poison messages?
+* How do you manage event schemas and schema evolution?
+* What is schema compatibility, and why is it important?
+* How do you handle backward and forward compatibility in event contracts?
+* How do you monitor consumer lag in Kafka?
+* What causes consumer lag, and how do you reduce it?
+* How do you scale event consumers horizontally?
+* What is backpressure in event-driven systems?
+* How do you prevent a slow consumer from affecting the entire system?
+* How do you secure event brokers and protect sensitive event payloads?
+* How do you trace a business transaction across asynchronous services?
+* What is the transactional outbox pattern?
+* What is change data capture, and how does it support event-driven systems?
+* What is event sourcing, and how does it differ from event notification?
+* How do you test event producers and consumers?

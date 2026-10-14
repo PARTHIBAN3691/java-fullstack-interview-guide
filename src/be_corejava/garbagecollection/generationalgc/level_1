@@ -1,0 +1,20 @@
+* How does generational garbage collection work internally in the JVM?
+* Why are most newly created Java objects allocated in the young generation?
+* How does the JVM determine whether an object should be promoted to the old generation?
+* What is object aging in generational garbage collection?
+* What is the purpose of the tenuring threshold?
+* How does the `-XX:MaxTenuringThreshold` JVM option influence object promotion?
+* What is the difference between Eden space and Survivor spaces during a young GC?
+* How does the JVM decide which Survivor space to use after garbage collection?
+* What happens when Survivor spaces do not have enough capacity for surviving objects?
+* What is the difference between object promotion and object allocation directly into the old generation?
+* How does generational garbage collection reduce the amount of work performed during collection?
+* What is the remembered set, and why is it useful when collecting generations or regions?
+* What is the card table, and how does it help track references between generations?
+* What is the difference between minor GC and Full GC in terms of pause time and scope?
+* How do allocation rate and object lifetime influence young GC frequency?
+* How does the JVM handle references from old-generation objects to young-generation objects?
+* How does generational garbage collection behave differently in Serial GC, Parallel GC, and G1 GC?
+* What is the difference between the traditional generational heap layout and G1's region-based layout?
+* How can GC logs be used to understand object promotion and generation occupancy?
+* Why can frequent young GC events be normal for a high-throughput Java application?

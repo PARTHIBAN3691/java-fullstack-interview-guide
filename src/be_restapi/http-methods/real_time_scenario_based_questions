@@ -1,0 +1,30 @@
+* A GET endpoint updates the last-accessed timestamp in the database. Is this consistent with HTTP semantics, and what would you change?
+* A client retries a POST request after a timeout and creates duplicate orders. How would you prevent duplicate processing?
+* A PUT request updates a customer's address but unintentionally clears other fields. How would you correct the endpoint design?
+* A PATCH request changes a customer's email but also resets unrelated profile fields. How would you investigate the issue?
+* A DELETE request returns HTTP 204 on the first call and HTTP 404 on the second call. Is this necessarily a violation of idempotency?
+* Two users update the same account using PUT, and one update overwrites the other. How would you prevent lost updates?
+* A payment API receives simultaneous POST requests with the same idempotency key. How would you ensure only one payment is created?
+* A client reuses an idempotency key with a different request body. How should the API respond?
+* A POST request creates a resource successfully, but the response is lost. How should the client safely recover?
+* A bulk update endpoint partially succeeds before a network failure. How would you design safe retries?
+* A developer uses GET to trigger a fund transfer. What risks does this introduce, and how would you redesign it?
+* A REST API supports GET and POST but returns HTTP 500 for PUT and PATCH. How would you investigate the implementation?
+* An API returns HTTP 405 for DELETE requests even though the controller implements deletion. What would you check?
+* An OPTIONS request returns no Allow header. How would you diagnose the problem?
+* A browser-based client fails during a CORS preflight request for a PATCH operation. How would you troubleshoot it?
+* A reverse proxy blocks PATCH requests after a gateway configuration change. How would you isolate the issue?
+* An API uses POST for all operations, including retrieval and deletion. What design problems could arise?
+* A client sends PUT to create a resource, but the server generates a different resource ID on every retry. How would you correct the design?
+* A PATCH request succeeds, but repeating it increments a counter twice. What does this reveal about idempotency?
+* A DELETE request triggers asynchronous deletion across several services. What should the API return, and how should clients track completion?
+* A user can access a protected resource by changing the HTTP method from GET to HEAD. What security issue might exist?
+* An API uses method override through a request header, and a proxy strips that header. How would you troubleshoot the inconsistent behavior?
+* A client sends a GET request with a JSON body, but the server ignores the body. How would you redesign the API request?
+* A mobile application automatically retries PUT requests after connectivity returns. How would you verify that the operations are retry-safe?
+* An update endpoint accepts both PUT and PATCH but implements identical behavior for both. What problems can this cause?
+* A REST API needs to update thousands of records in one operation. How would you choose between bulk PATCH, POST, and asynchronous job processing?
+* A resource is deleted successfully, but repeated DELETE requests return HTTP 500. How would you fix the endpoint's behavior?
+* A gateway allows POST requests to an endpoint but blocks DELETE requests for an administrator. How would you diagnose routing and authorization rules?
+* A legacy client uses POST for partial updates, while newer clients use PATCH. How would you support both without inconsistent behavior?
+* A production incident reveals that a retry mechanism repeats non-idempotent operations. How would you redesign retries across the service?

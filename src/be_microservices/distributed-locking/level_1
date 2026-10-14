@@ -1,0 +1,30 @@
+* How do you implement distributed locking using Redis in Java?
+* How do you acquire a Redis lock atomically?
+* Why should a Redis lock use a unique value for each lock owner?
+* How do you safely release a Redis lock without deleting another owner's lock?
+* How do you configure lock expiration and acquisition timeouts?
+* How do you implement distributed locking using Spring Boot and Redis?
+* How do you implement distributed locking using Redisson?
+* What is the difference between Redisson locks and manually implemented Redis locks?
+* How does Redisson's watchdog mechanism work?
+* How do you implement distributed locking using a database table?
+* How do you use a unique constraint to prevent duplicate business operations?
+* How do you implement distributed locking using PostgreSQL advisory locks?
+* What are the advantages and disadvantages of database-based distributed locks?
+* How do you implement a lock using ZooKeeper?
+* How do you handle lock acquisition failures in a Spring Boot service?
+* How do you prevent a lock from being held indefinitely?
+* How do you choose an appropriate lock lease time?
+* How do you handle exceptions while a distributed lock is held?
+* How do you prevent two scheduled jobs from running simultaneously across multiple instances?
+* How do you use distributed locking to prevent duplicate scheduled task execution?
+* How do you coordinate inventory updates across multiple service instances?
+* How do you use distributed locks to prevent duplicate order processing?
+* How do you combine distributed locking with database transactions?
+* How do you monitor lock contention and lock acquisition failures?
+* How do you prevent lock-key collisions between different business operations?
+* How do you implement lock naming conventions for multiple tenants?
+* How do you handle network failures during lock acquisition or release?
+* How do you test distributed locking behavior using JUnit and integration tests?
+* How do you prevent a service from performing work after its lock has expired?
+* How do you decide whether distributed locking is necessary or whether idempotency is sufficient?

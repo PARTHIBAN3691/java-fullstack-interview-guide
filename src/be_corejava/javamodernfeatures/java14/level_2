@@ -1,0 +1,26 @@
+
+* Explain the design goals of records and why they are intended primarily as transparent data carriers.
+* How does the Java compiler generate the canonical constructor and accessor methods for a record?
+* What restrictions apply to record inheritance, fields, and instance initialization?
+* How would you ensure defensive copying when a record contains a mutable collection?
+* How do you validate and normalize record components without explicitly assigning every field in a compact constructor?
+* How would you implement a record that contains nested records and enforces validation rules?
+* What are the implications of using records as JPA entities or mutable domain models?
+* How do record equality and hash-code semantics affect their use as Map keys?
+* How would you evolve a record's component list while maintaining API compatibility?
+* How do serialization and deserialization considerations differ for records and ordinary classes?
+* How do switch expressions improve control-flow safety compared with traditional switch statements?
+* How does the compiler check exhaustiveness for switch expressions over enums?
+* What happens when a switch expression encounters a null selector in Java 14?
+* How would you handle checked exceptions inside a switch expression?
+* How do nested switch expressions affect readability and maintainability?
+* What are the risks of relying on preview features in production code?
+* How does Java 14 pattern matching for `instanceof` improve type safety and readability?
+* What are the scope rules for pattern variables introduced by `instanceof`?
+* Why can a pattern variable be used only where the compiler can prove that the pattern matched?
+* How do text blocks determine incidental indentation when lines have different indentation levels?
+* How do `stripIndent()`, `translateEscapes()`, and `formatted()` help when building multiline SQL or JSON strings?
+* What security concerns should be considered when using text blocks to construct SQL queries?
+* How do helpful NullPointerException messages identify the failing dereference in a chained expression?
+* What are the limitations of helpful NullPointerException messages when debugging production failures?
+* How would you plan the migration from Java 11 to Java 14 while accounting for preview features and future compatibility?

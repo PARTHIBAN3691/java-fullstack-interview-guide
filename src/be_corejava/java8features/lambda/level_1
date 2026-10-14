@@ -1,0 +1,25 @@
+* What is the difference between expression lambdas and block lambdas?
+* What is target typing in lambda expressions?
+* How does Java infer the parameter and return types of a lambda expression?
+* When should you explicitly specify parameter types in a lambda expression?
+* What does it mean for a local variable to be effectively final?
+* Why must local variables captured by a lambda expression be final or effectively final?
+* Can a lambda expression modify an instance variable of the enclosing class?
+* Can a lambda expression modify a static variable?
+* How does the meaning of `this` differ between a lambda expression and an anonymous inner class?
+* Can a lambda expression access private methods of its enclosing class?
+* Can a lambda expression throw checked exceptions?
+* How do you handle checked exceptions inside a lambda expression?
+* What happens when a lambda expression is used with overloaded methods?
+* How can you resolve ambiguity when a lambda expression matches multiple overloaded methods?
+* How do you sort a list using a lambda expression and `Comparator`?
+* How do you sort a list of objects by multiple fields using lambda expressions?
+* How do you filter a collection using a lambda expression and the Stream API?
+* How do you transform collection elements using lambda expressions?
+* How do you use lambda expressions with `Predicate`, `Function`, `Consumer`, and `Supplier`?
+* How do you chain multiple lambda-based operations?
+* How do you compose functions using `andThen()` and `compose()`?
+* What is the difference between a lambda expression and a closure?
+* Can a lambda expression access variables from an enclosing method?
+* Can a lambda expression be serialized?
+* What are the common mistakes developers make when writing lambda expressions?

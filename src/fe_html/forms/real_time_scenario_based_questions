@@ -1,0 +1,30 @@
+* A login form submits but the server does not receive the username. How would you debug the HTML?
+* A form contains several buttons, and clicking the wrong button submits the form. How would you fix it?
+* A user refreshes a page and accidentally submits the same payment form again. How would you prevent duplicate submissions?
+* A registration form should validate an email address before submission. How would you implement HTML validation?
+* A form accepts invalid data despite using the required attribute. What additional validation is necessary?
+* A user selects a checkbox, but its value is missing from the submitted request. What would you investigate?
+* A disabled input displays the correct value but is missing from the request. How would you handle this requirement?
+* A file upload form submits the filename but not the file contents. What HTML attributes should you check?
+* A file upload form works with small files but fails with large files. What areas would you investigate?
+* A dropdown must allow users to select multiple skills. Which HTML control and attributes would you use?
+* A form contains many fields, and users struggle to understand which ones belong together. How would you improve the structure?
+* A password confirmation field must match the password field. How would you implement validation using JavaScript alongside HTML validation?
+* A form uses placeholder text instead of labels, making it difficult for screen reader users. How would you improve it?
+* A date input accepts values that violate the application's business rules. How would you validate them?
+* A user enters a value outside the allowed numeric range. How would you provide useful feedback?
+* A form needs to submit different actions depending on which submit button is clicked. How would you use submit-button attributes?
+* A form should submit data using POST and upload a document. How would you configure method and enctype?
+* A hidden field contains a user role, and users can modify it in browser developer tools. How would you address this security issue?
+* A form has multiple radio buttons, but users can select more than one option. What is likely wrong with the HTML?
+* A user presses Enter in a search field, but the form does not submit as expected. How would you investigate it?
+* A form shows a validation error visually, but screen readers do not announce it. How would you correct the markup and behavior?
+* A user submits a long form with several invalid fields. How would you guide the user to the first error and summarize all errors?
+* A form contains an input outside the form element but must submit its value with the form. How can you implement this?
+* A form works in one browser but behaves differently in another. How would you investigate native validation and input-type support?
+* A checkout form must retain non-sensitive user-entered values after a validation error. How would you design the interaction?
+* A form needs to send repeated values for selected categories. How do repeated control names affect the submitted data?
+* A banking form must prevent unauthorized requests that change account information. What protections are needed beyond HTML?
+* A developer uses GET to submit sensitive information. What risks does this create, and how should the form be changed?
+* A form must support browser autofill for a user's name, email, and address. Which autocomplete values would you use?
+* You are building a reusable enterprise form component. How would you combine semantic HTML, accessibility, validation, and server-side security?

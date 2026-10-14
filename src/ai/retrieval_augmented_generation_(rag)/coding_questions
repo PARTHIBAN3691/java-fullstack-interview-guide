@@ -1,0 +1,129 @@
+**RAG Fundamentals and Architecture**
+* Implement a provider-independent RAG orchestration service in Java that coordinates retrieval, context construction, generation, and citation validation.
+* Define interfaces for document ingestion, embedding generation, retrieval, and LLM generation, and provide mock implementations for testing.
+* Implement request tracing that records stage durations, model identifiers, document versions, and retrieval metadata without logging sensitive content.
+* Write integration tests for empty retrieval, partial provider failure, invalid citations, and successful grounded answers.
+
+**Basic RAG Pipeline**
+* Build a Spring Boot REST endpoint that accepts a user question, retrieves relevant chunks, constructs a prompt, and returns a generated answer.
+* Implement an answer DTO containing response text, source references, retrieval metadata, and completion status.
+* Write unit tests for the complete RAG workflow using mocked embedding, vector-store, and LLM clients.
+* Implement timeout handling and safe error mapping for failures in each pipeline stage.
+
+**Document Ingestion Pipelines**
+* Implement an ingestion worker that reads document events and processes documents idempotently.
+* Build a document-version tracker that detects changes and schedules reprocessing only when necessary.
+* Implement a retry queue and dead-letter mechanism for failed parsing, embedding, and vector-store operations.
+* Write tests for duplicate events, out-of-order updates, interrupted batches, and document deletion.
+* Implement a reconciliation job that compares source documents against indexed document versions.
+
+**Document Parsing and Preprocessing**
+* Implement a document-parser interface with separate adapters for PDF, Word, HTML, and plain-text inputs.
+* Build a preprocessing component that normalizes text while preserving headings, page numbers, and source offsets.
+* Implement validation for empty extraction results, malformed files, unsupported formats, and excessive document sizes.
+* Write tests for OCR-derived text, tables, Unicode content, corrupted documents, and parser timeouts.
+
+**Chunking and Overlap Strategies**
+* Implement a configurable chunker supporting fixed-size chunks, overlap, and structure-aware boundaries.
+* Build a chunking strategy that preserves headings, code blocks, table headers, and source-document references.
+* Implement chunk deduplication and stable chunk identifiers based on source versions and chunking configuration.
+* Write tests for oversized paragraphs, empty input, Unicode text, overlapping boundaries, and citation offsets.
+* Create an evaluation utility that compares multiple chunking configurations using retrieval recall@k.
+
+**Embedding Generation**
+* Implement a Java embedding client that supports batch requests, bounded concurrency, retries, and configurable model versions.
+* Build an embedding cache keyed by normalized content hash, model version, and preprocessing version.
+* Implement a migration-safe mechanism that routes document embeddings to the correct versioned index.
+* Write tests for rate limits, timeouts, invalid dimensions, partial batch failures, and duplicate processing.
+
+**Vector Store Integration**
+* Implement a vector-store repository interface supporting upsert, similarity search, metadata filtering, and deletion.
+* Build a tenant-aware retrieval method that enforces document access filters.
+* Implement source-document deletion across chunk records, vectors, and cached retrieval results.
+* Write integration tests for index consistency, metadata preservation, unavailable storage, and tenant isolation.
+
+**Semantic and Hybrid Retrieval**
+* Implement a retriever that combines vector search and BM25 results using Reciprocal Rank Fusion.
+* Build a query evaluator that calculates precision@k, recall@k, MRR, and nDCG from labeled relevance judgments.
+* Implement document deduplication and source-level diversification for merged retrieval results.
+* Write tests for exact identifier queries, semantic queries, empty result sets, duplicate candidates, and ranking ties.
+
+**Query Rewriting and Expansion**
+* Implement a query-rewriting service that converts follow-up questions into standalone queries using conversation history.
+* Build a multi-query retrieval component that generates alternative queries and merges their results.
+* Implement validation that detects removed negation, dates, identifiers, and explicit user constraints.
+* Write tests for ambiguous follow-ups, contradictory instructions, malformed rewrites, and query expansion timeouts.
+
+**Reranking and Context Compression**
+* Implement a two-stage retrieval pipeline with an initial retriever and a configurable reranking client.
+* Build a context compressor that removes redundant passages while retaining source identifiers and provenance.
+* Implement a fallback mechanism that uses initial retrieval rankings when the reranker fails.
+* Write tests for reranker timeouts, duplicate candidates, compressed-context validation, and citation preservation.
+
+**Context Window Management**
+* Implement a token-budget calculator that allocates tokens to instructions, conversation history, retrieved evidence, and expected output.
+* Build a context selector that ranks and deduplicates chunks before fitting them within a model-specific token budget.
+* Implement conversation summarization that preserves critical constraints and recent messages.
+* Write tests for oversized inputs, contradictory context, model-specific limits, and evidence lost during truncation.
+
+**Citation and Source Grounding**
+* Implement a response format that associates answer claims with retrieved chunk identifiers and source metadata.
+* Build a citation validator that rejects references to sources not retrieved for the current request.
+* Implement page-level and section-level citation resolution for document chunks.
+* Write tests for fabricated citations, missing source references, stale document versions, and unauthorized citation links.
+* Create an evaluation utility that measures citation coverage and claim-level evidence support.
+
+**Advanced RAG**
+* Implement a query router that selects basic retrieval, hybrid retrieval, query rewriting, or multi-stage retrieval based on query characteristics.
+* Build an iterative retrieval workflow that stops when evidence sufficiency or a maximum iteration budget is reached.
+* Implement evidence deduplication and contradiction detection across multiple retrieval stages.
+* Write tests comparing basic and advanced pipelines for latency, retrieval quality, and grounded-answer success.
+
+**Agentic RAG**
+* Implement an agent loop that can call an approved retrieval tool, inspect results, and decide whether further retrieval is required.
+* Build a tool registry with argument validation, access-control checks, step limits, and execution deadlines.
+* Implement checkpointing so an agent can resume after a transient tool failure without repeating completed operations.
+* Write tests for infinite-loop prevention, unauthorized tool calls, prompt injection, and tool timeout handling.
+* Implement an evaluation harness comparing agentic retrieval with a deterministic RAG baseline.
+
+**GraphRAG**
+* Implement a graph data model for entities, relationships, source documents, and provenance.
+* Build an entity-resolution component that links aliases to canonical entity identifiers.
+* Implement a retrieval workflow that combines graph traversal with vector similarity search.
+* Write tests for multi-hop questions, duplicate entities, conflicting relationships, and source-document deletion.
+* Build a graph-evaluation utility that measures retrieval coverage for labeled entity and relationship queries.
+
+**Multimodal RAG**
+* Implement a multimodal ingestion interface that processes text, image, and audio inputs through appropriate adapters.
+* Build a document-processing workflow that preserves page numbers, image references, and video timestamps.
+* Implement an asynchronous job API for large media files with bounded concurrency and retry handling.
+* Write tests for unsupported modalities, corrupted uploads, OCR failures, missing timestamps, and partial processing.
+* Implement a retrieval response format that links generated claims to text passages or media segments.
+
+**RAG Evaluation and Benchmarking**
+* Build an evaluation runner that executes a fixed set of queries against multiple RAG configurations.
+* Implement metrics for retrieval precision@k, recall@k, MRR, nDCG, faithfulness, and citation coverage.
+* Create a regression-testing pipeline that compares model, prompt, chunking, and retrieval changes.
+* Implement a test-data format that records queries, relevant documents, expected evidence, and evaluation criteria.
+* Build a report that compares quality, latency, token usage, and estimated cost across pipeline versions.
+
+**RAG Hallucination Reduction**
+* Implement a response-validation stage that checks whether generated claims are supported by retrieved evidence.
+* Build an abstention policy for requests with insufficient or contradictory context.
+* Implement a source-grounded prompt template that distinguishes evidence from instructions contained in retrieved documents.
+* Write tests for unsupported claims, conflicting passages, empty retrieval, and incorrect citations.
+* Implement a hallucination-evaluation harness using labeled supported and unsupported claims.
+
+**RAG Security and Access Control**
+* Implement tenant-aware retrieval with mandatory authorization filters applied to every query.
+* Build a permission-aware cache that invalidates results when document access changes.
+* Implement a secure document-deletion workflow that removes source records, chunks, vectors, graph artifacts, and cached content.
+* Write tests for cross-tenant access attempts, revoked permissions, indirect prompt injection, and unauthorized citations.
+* Implement audit events for document access and retrieval decisions without storing unnecessary sensitive prompt data.
+
+**RAG Performance and Cost Optimization**
+* Implement distributed timing instrumentation for parsing, embedding, retrieval, reranking, and generation.
+* Build a caching layer with document-version-aware keys and explicit invalidation.
+* Implement adaptive retrieval depth and context compression based on query complexity and token budgets.
+* Write load tests for concurrent ingestion and online queries, measuring p50, p95, p99 latency, throughput, and error rate.
+* Build a cost-reporting component that attributes embedding, retrieval, reranking, and generation costs to tenants and features.

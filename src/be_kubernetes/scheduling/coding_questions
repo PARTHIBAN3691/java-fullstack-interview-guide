@@ -1,0 +1,30 @@
+* Write a Pod YAML manifest that uses nodeSelector to schedule a Java application onto nodes labeled environment=production.
+* Write a Pod manifest that uses required node affinity to select a specific worker-node group.
+* Write a Pod manifest that uses preferred node affinity to favor nodes in a particular availability zone.
+* Write a Pod manifest that tolerates a specific node taint.
+* Write a Pod manifest that combines node affinity and tolerations for dedicated application nodes.
+* Write a Deployment manifest that spreads Spring Boot replicas across different worker nodes using Pod anti-affinity.
+* Write a Deployment manifest that distributes replicas across availability zones using topology spread constraints.
+* Write a Deployment manifest that combines node affinity, Pod anti-affinity, and resource requests.
+* Write a Pod manifest that specifies CPU and memory requests and limits.
+* Write a Pod manifest that defines ephemeral-storage requests and limits for a batch application.
+* Write a PriorityClass manifest for a critical production application.
+* Write a Deployment manifest that assigns a custom PriorityClass to application Pods.
+* Write a Pod manifest that requests an extended resource such as a GPU.
+* Write a Pod manifest that specifies a supported CPU architecture using node affinity.
+* Write a StatefulSet manifest that schedules Pods with persistent volumes while respecting storage topology.
+* Write a StorageClass manifest that uses WaitForFirstConsumer volume binding.
+* Write a Deployment manifest that uses topology spread constraints with a defined maximum skew and unsatisfiable-domain policy.
+* Write a PodDisruptionBudget manifest that maintains a minimum number of available application replicas during voluntary disruptions.
+* Write a DaemonSet manifest that deploys a node-level monitoring agent across eligible worker nodes.
+* Write a manifest that combines node labels, taints, and tolerations for a dedicated database node group.
+* Write a kubectl command sequence to label nodes and verify their labels.
+* Write a kubectl command sequence to cordon and drain a worker node safely.
+* Write a kubectl command sequence to inspect Pod scheduling events and identify the reason for a Pending state.
+* Write a kubectl command sequence to inspect node allocatable resources and current Pod resource requests.
+* Write a kubectl command sequence to inspect taints, tolerations, and node affinity for an unschedulable Pod.
+* Write a shell script that lists Pending Pods and displays their scheduling-related events.
+* Write a shell script that reports CPU and memory requests for Pods across worker nodes.
+* Write a Kubernetes configuration that isolates batch workloads from latency-sensitive services using priority classes, node affinity, and taints.
+* Write a Deployment configuration for a Spring Boot application that supports safe rolling updates and multi-zone scheduling.
+* Write a production-ready Kubernetes scheduling configuration for Java microservices that balances availability, resource efficiency, workload isolation, and autoscaling.

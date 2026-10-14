@@ -1,0 +1,30 @@
+* Explain the architecture of a global external Application Load Balancer in Google Cloud.
+* How do you choose the correct load balancer type for HTTP, HTTPS, TCP, and UDP workloads?
+* How do you design a highly available Java microservices platform across multiple Google Cloud regions?
+* How do you configure cross-region failover for a globally distributed application?
+* How do you design load balancing for a Spring Boot application with unpredictable traffic spikes?
+* How do you tune health checks to detect backend failures without causing unnecessary backend removal?
+* How do you troubleshoot intermittent HTTP 502, 503, and 504 errors behind a Google Cloud load balancer?
+* How do backend timeout settings interact with application response times and client timeouts?
+* How do you design load balancing for long-running REST API requests and streaming responses?
+* How do you handle WebSocket connections and long-lived connections through a load balancer?
+* How do you design session management for horizontally scaled Java applications without relying on sticky sessions?
+* How do you configure connection draining to achieve graceful shutdown during rolling deployments?
+* How do you design weighted traffic splitting for canary releases and gradual rollouts?
+* How do you implement active-active regional deployments with a global load balancer?
+* How do you implement active-passive disaster recovery using health checks and failover?
+* How do you design load balancing for GKE workloads using Gateway API and supported load balancing integrations?
+* How do you choose between a GKE Ingress-based solution and Gateway API for production traffic management?
+* How do you secure an internet-facing load balancer using Cloud Armor, TLS policies, and appropriate backend access controls?
+* How do you prevent direct access to backend services that are intended to be reachable only through a load balancer?
+* How do you design load balancing for serverless applications using Cloud Run and serverless NEGs?
+* How do you optimize load balancing for applications serving static and dynamic content using Cloud CDN?
+* How do you analyze load balancer logs to identify regional latency, backend saturation, and request failures?
+* How do you investigate uneven traffic distribution across backend instances?
+* How do you determine whether a latency problem originates at the load balancer, application, network, or database layer?
+* How do you design health checks for applications that depend on multiple downstream services?
+* How do you prevent cascading failures when backends become overloaded?
+* How do you plan capacity and autoscaling for backends behind a global load balancer?
+* How do you estimate load balancing costs for a high-throughput application serving global users?
+* How do you migrate from a legacy load balancer to a Google Cloud Application Load Balancer with minimal downtime?
+* How do you design infrastructure-as-code modules for reusable, secure, multi-environment load balancer deployments?

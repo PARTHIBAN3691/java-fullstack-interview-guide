@@ -1,0 +1,20 @@
+* Explain the end-to-end process of retrieving a `SecureString` parameter, including IAM authorization, KMS decryption, and application access.
+* How would you design a centralized configuration-management strategy using Parameter Store across development, testing, staging, and production?
+* How would you organize hierarchical parameters for hundreds of Java microservices deployed across multiple AWS accounts?
+* How would you securely share configuration across AWS accounts without granting broad access to parameter paths?
+* How would you design KMS key policies and IAM permissions for least-privilege access to sensitive parameters?
+* How would you prevent a Java application from accidentally logging decrypted secrets?
+* How would you implement parameter caching with a configurable time-to-live while balancing API costs and configuration freshness?
+* How would you handle parameter updates without restarting a running Java application?
+* How would you implement dynamic configuration refresh in a Spring Boot microservice that reads values from Parameter Store?
+* How would you prevent inconsistent configuration when several parameters must change together?
+* How would you design rollback procedures when a new parameter value causes a production incident?
+* How would you handle Parameter Store API throttling during simultaneous startup of hundreds of Java application instances?
+* How would you reduce startup latency when a Java application must load many parameters during initialization?
+* How would you design fallback behavior when Parameter Store becomes temporarily unavailable?
+* How would you compare Parameter Store and Secrets Manager for database credentials, API keys, and frequently rotated secrets?
+* How would you implement automated parameter creation and updates using AWS CDK, CloudFormation, or Terraform?
+* How would you audit parameter access and detect unauthorized configuration changes across multiple AWS accounts?
+* How would you design a disaster-recovery strategy for applications that depend on parameters in a specific AWS Region?
+* How would you migrate hardcoded configuration and secrets from application repositories to Parameter Store without disrupting production?
+* How would you test a Java application that depends on Parameter Store while keeping unit tests independent of AWS infrastructure?

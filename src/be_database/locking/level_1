@@ -1,0 +1,30 @@
+* How do you implement pessimistic locking in JDBC?
+* How do you implement optimistic locking using Spring Data JPA?
+* How does @Lock work in a Spring Data JPA repository?
+* What is the difference between PESSIMISTIC_READ and PESSIMISTIC_WRITE?
+* How do you use SELECT FOR UPDATE in a Java application?
+* How does transaction management affect the lifetime of a database lock?
+* What happens when a transaction holding a lock takes too long to complete?
+* How can you configure lock timeouts in Spring Boot and JPA?
+* How do you handle PessimisticLockException in a Spring Boot application?
+* How do you handle OptimisticLockException during concurrent updates?
+* How do you detect a deadlock in MySQL or PostgreSQL?
+* How do you identify sessions waiting for database locks?
+* How can you prevent deadlocks when updating multiple database rows?
+* Why should transactions acquire locks in a consistent order?
+* How do indexes reduce or increase lock contention?
+* How does locking behavior differ between MySQL InnoDB and PostgreSQL?
+* How does SQL Server implement shared and exclusive locks?
+* What is the difference between row locks and gap locks in MySQL?
+* What are next-key locks, and when are they used?
+* How does MVCC reduce locking between readers and writers?
+* Can a normal SELECT query block an UPDATE statement? Explain with database-specific examples.
+* How do optimistic locking and transaction isolation work together?
+* How do you implement retry logic after an optimistic locking conflict?
+* How do you distinguish a lock timeout from a deadlock exception in Java?
+* What happens when a Spring @Transactional method calls another transactional method?
+* How can transaction propagation affect lock duration?
+* How do connection pools influence transactions that hold locks?
+* How can batch updates increase lock contention?
+* How would you test concurrent updates using JUnit?
+* When would you choose optimistic locking over pessimistic locking in a Spring Boot application?

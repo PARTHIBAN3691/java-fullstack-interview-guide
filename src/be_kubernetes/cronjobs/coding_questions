@@ -1,0 +1,30 @@
+* Write a Kubernetes CronJob YAML manifest that runs a container every five minutes.
+* Write a CronJob manifest that executes a Spring Boot executable JAR daily at midnight.
+* Write a CronJob manifest that runs every Sunday at 2:00 AM.
+* Write a CronJob manifest that executes a shell script inside a container.
+* Write a CronJob manifest with CPU and memory requests and limits.
+* Write a CronJob manifest that injects application settings from a ConfigMap.
+* Write a CronJob manifest that injects database credentials from a Secret.
+* Write a CronJob manifest that uses a dedicated service account.
+* Write a CronJob manifest with a Forbid concurrency policy.
+* Write a CronJob manifest with a Replace concurrency policy and explain its implications.
+* Write a CronJob manifest with startingDeadlineSeconds and a specified time zone.
+* Write a CronJob manifest that retains a limited number of successful and failed Jobs.
+* Write a CronJob manifest with backoffLimit and activeDeadlineSeconds.
+* Write a CronJob manifest that suspends scheduled executions.
+* Write a kubectl command sequence to create, inspect, suspend, and resume a CronJob.
+* Write a kubectl command to manually create a Job from an existing CronJob.
+* Write a shell script that identifies failed Jobs created by a specified CronJob.
+* Write a shell script that retrieves logs from the latest failed CronJob execution.
+* Write a Helm template for a CronJob with configurable schedule, image, resources, and concurrency policy.
+* Write a Kustomize configuration that defines different CronJob schedules for staging and production.
+* Write a Spring Boot batch application that accepts date and processing-mode arguments from a Kubernetes CronJob.
+* Write a Java service that processes database records in batches and checkpoints the last successfully processed record.
+* Write a Java implementation that makes a scheduled database cleanup operation idempotent.
+* Write a Java implementation that uses a database lock to prevent two scheduled workers from processing the same task concurrently.
+* Write a Java program that implements retry with exponential backoff for transient failures in a batch-processing workflow.
+* Write a Spring Boot integration test that validates the business behavior of a scheduled batch process.
+* Write a Java program that records job execution start time, end time, processed-record count, and failure details.
+* Write a Java program that resumes a failed batch process using a persisted checkpoint.
+* Write a Kubernetes CronJob configuration that executes a database migration with controlled retries and a strict deadline.
+* Write a complete Spring Boot and Kubernetes CronJob solution for a daily reconciliation process with idempotency, monitoring, retries, and failure alerts.

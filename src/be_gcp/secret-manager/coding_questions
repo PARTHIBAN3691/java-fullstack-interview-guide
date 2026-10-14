@@ -1,0 +1,30 @@
+* Write a Java program using the Google Cloud Secret Manager client library to access a secret.
+* Write a Java method to retrieve the latest version of a secret using its project ID and secret ID.
+* Implement a Java method that retrieves a specific secret version by version number.
+* Write a Java method that creates a secret with automatic replication.
+* Write a Java method that adds a new secret version containing a database password.
+* Write a Java method that decodes the secret payload returned by Secret Manager.
+* Implement a Java method that handles a missing secret and returns a meaningful application error.
+* Write a Java service class that encapsulates Secret Manager operations for a Spring Boot application.
+* Create a Spring Boot configuration class that loads a database password from Secret Manager.
+* Implement a Spring Boot component that retrieves an API key during application initialization.
+* Write a Java method that retrieves a secret using Application Default Credentials.
+* Implement a Java method that validates required secret configuration before the application starts.
+* Write unit tests for a Secret Manager service using mocked client-library responses.
+* Implement exception handling for permission-denied, not-found, and transient API errors.
+* Write a Java method that retries transient Secret Manager failures using exponential backoff.
+* Implement a timeout-aware secret retrieval method using the Google Cloud Java client library.
+* Write a Java cache that stores secret values for a configurable duration.
+* Extend the cache to support explicit invalidation after secret rotation.
+* Implement a secret provider interface with Google Cloud Secret Manager and a local test implementation.
+* Write a Spring Boot service that selects different secret identifiers based on the active profile.
+* Implement a method that retrieves a secret without logging its payload or sensitive exception details.
+* Write a Java method that creates a secret with user-managed replication across specified locations.
+* Implement a method that disables a specific secret version.
+* Write a Java method that destroys a secret version after validating an application-level approval flag.
+* Implement a method that lists secret versions and identifies the latest enabled version.
+* Write a Java program that checks whether a secret exists before attempting to create it.
+* Implement an idempotent secret-provisioning method that handles concurrent creation attempts.
+* Write a Spring Boot integration test that verifies secret retrieval using a mock or emulator-free test double.
+* Implement a secret rotation workflow that updates a secret version and validates the new credential before switching application traffic.
+* Design and code a Java secret-provider abstraction with caching, retry handling, observability, and rotation-aware invalidation.

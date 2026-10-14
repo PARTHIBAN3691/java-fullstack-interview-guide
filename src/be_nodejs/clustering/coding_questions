@@ -1,0 +1,30 @@
+* Write a Node.js program that checks whether the current process is the primary process.
+* Write a program that creates one worker process for each available CPU core.
+* Implement a basic HTTP server using the Node.js cluster module.
+* Write a clustered HTTP server that returns the worker ID for each request.
+* Implement a configurable worker count using an environment variable.
+* Write code that logs worker creation, online, and exit events.
+* Implement automatic worker replacement when a worker exits unexpectedly.
+* Write code that limits worker restarts to a maximum number within a time window.
+* Implement a primary process that sends a message to every worker.
+* Write a worker that receives IPC messages and sends a response to the primary process.
+* Implement communication between two workers through the primary process.
+* Write code that gracefully disconnects a worker and waits for its server connections to close.
+* Implement SIGTERM handling for a clustered HTTP application.
+* Write a program that tracks the number of active workers and maintains a configured target.
+* Implement a worker health-check mechanism with heartbeat messages.
+* Write middleware that logs the worker ID, request URL, and response status.
+* Implement a clustered API that exposes worker health and process memory usage.
+* Write a program that distributes a simple computational task across multiple workers.
+* Implement a worker pool that assigns tasks to available workers.
+* Write code that detects an unresponsive worker and replaces it safely.
+* Implement a rolling restart that replaces workers one at a time.
+* Write a clustered server that handles startup failures without entering an infinite restart loop.
+* Implement a shared session store using Redis for a clustered Express application.
+* Write code that uses a shared Redis counter to enforce a global request limit across workers.
+* Implement a distributed lock to ensure that only one worker executes a scheduled task.
+* Write a worker-based job processor that prevents duplicate processing using job identifiers.
+* Implement graceful shutdown that stops accepting new work while allowing active requests to finish.
+* Write a clustered WebSocket server and explain how you would manage cross-worker messaging.
+* Create a load-testing script to compare single-process and clustered HTTP server performance.
+* Write a production-ready clustered server with worker monitoring, controlled restarts, structured logging, and graceful shutdown.

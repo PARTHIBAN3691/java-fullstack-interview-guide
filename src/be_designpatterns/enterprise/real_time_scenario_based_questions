@@ -1,0 +1,30 @@
+* A Spring Boot controller contains validation, business logic, SQL queries, and response formatting in one method. How would you refactor it using enterprise patterns?
+* Multiple services contain duplicate database access code for the same business entity. How would you introduce a Repository or DAO layer?
+* A REST API exposes JPA entities directly, and a database schema change breaks several client applications. How would you introduce DTOs safely?
+* A Service Layer has grown to thousands of lines and handles unrelated business workflows. How would you split its responsibilities?
+* A Repository method loads thousands of entities when the API needs only a few fields. How would you redesign the data access path?
+* A Hibernate application experiences an N+1 query problem after introducing lazy-loaded relationships. How would you investigate and fix it?
+* A business operation updates customer details, payment records, and order information, but only some updates are committed after an error. How would you investigate transaction boundaries?
+* A long-running process keeps a persistence context open and returns stale entity data. How would you redesign the Unit of Work and persistence-context lifecycle?
+* Two concurrent requests update the same account record, and one update silently overwrites the other. How would you apply optimistic locking?
+* An external payment provider returns inconsistent error formats, forcing business services to contain provider-specific conditions. How would you introduce a Gateway?
+* A business operation makes several remote calls and frequently exceeds the API response-time limit. How would you redesign it using a Remote Facade or another suitable pattern?
+* A Business Delegate adds multiple layers but provides no meaningful abstraction or resilience. How would you decide whether to retain or remove it?
+* A legacy application retrieves repositories and services through ApplicationContext.getBean() throughout the codebase. How would you replace the Service Locator approach?
+* A transaction script has accumulated hundreds of conditional rules for loans and repayments. How would you determine whether to introduce a richer Domain Model?
+* A JPA entity contains persistence annotations, API response formatting, and business calculations. How would you separate its responsibilities?
+* A DTO mapper recursively maps bidirectional entity relationships and causes a StackOverflowError. How would you redesign the mapping?
+* A bulk import job performs one database query per record and takes several hours to complete. How would you optimize data access while preserving business validation?
+* A new API version requires additional response fields, but older consumers must continue working. How would you evolve the DTO and mapping design?
+* A Service Layer publishes an event before the database transaction commits, and consumers process data for a transaction that later rolls back. How would you fix the consistency issue?
+* A payment service updates the database and publishes a message to a broker, but either operation can fail independently. How would you use a suitable enterprise pattern to prevent lost events?
+* A repository abstraction supports only simple CRUD operations, forcing developers to load entire tables for complex reports. How would you improve the query design?
+* A microservice has repositories that directly access tables owned by other bounded contexts. How would you correct the data ownership and architectural boundaries?
+* An external API is unreliable, and transient failures cause cascading errors in the application. How would you enhance the Gateway layer?
+* A persistence exception reaches the REST client as an internal SQL error. How would you improve exception translation and API error handling?
+* A domain service contains business rules that should belong to individual entities, making unit tests difficult. How would you improve the domain model?
+* An enterprise application uses generic base repositories for every entity, but custom query requirements have made the abstraction complex. How would you simplify it?
+* A read-heavy application spends too much time hydrating full entity graphs for reporting. How would you separate read queries from write operations?
+* A migration from a legacy DAO architecture to Spring Data JPA introduces transaction and lazy-loading regressions. How would you validate and roll out the migration?
+* An application has multiple service layers that simply delegate to each other, increasing latency and making debugging difficult. How would you determine which layers are valuable?
+* A production incident reveals inconsistent error handling and transaction management across modules. How would you establish consistent enterprise application patterns?

@@ -1,0 +1,30 @@
+* An unauthenticated user enters a protected URL directly. How would you redirect the user to the login page?
+* A user logs in successfully but is redirected to the home page instead of the originally requested page. How would you preserve and restore the requested URL?
+* An authenticated user can open a page that requires an administrator role. How would you implement role-based route protection?
+* A parent route is protected, but one of its child routes should be accessible only to managers. How would you configure the guards?
+* A user tries to leave an edit form with unsaved changes. How would you prevent navigation and ask for confirmation?
+* A guard redirects to the login page repeatedly, creating an infinite navigation loop. How would you debug and fix it?
+* An authentication service checks the user's session through an API. How would you implement an asynchronous guard that waits for the result?
+* A permission API fails during navigation. How would you handle the error without accidentally granting access?
+* A user's access token expires while navigating to a protected page. How would you coordinate token refresh and route protection?
+* Two guards are configured on the same route, but the second guard's expected logic is not executed. How would you investigate guard ordering and return values?
+* A lazy-loaded feature should be available only when a feature flag is enabled. How would you implement this using CanMatch?
+* Two routes use the same URL pattern, but only one should match for a particular user role. How would you configure route matching?
+* A user loses permission while the application is open. How would you prevent further access to restricted routes?
+* A route requires both authentication and subscription validation. How would you combine the checks and handle failures?
+* A CanDeactivate guard needs to display an asynchronous modal dialog. How would you return the user's decision to Angular Router?
+* A guard calls router.navigate() and returns false, causing confusing navigation behavior. How would you refactor it?
+* A functional guard throws an injection-context error. How would you investigate its use of inject()?
+* A guard works in the browser but fails during server-side rendering. What dependencies and browser-specific APIs would you inspect?
+* A route guard passes unit tests but fails during actual navigation. How would you test the route configuration and router integration?
+* A user can bypass a UI restriction by calling a backend endpoint directly. How would you address the security issue?
+* A multi-tenant application must prevent users from accessing routes belonging to another tenant. How would you design the authorization checks?
+* A route guard and HTTP interceptor both attempt to refresh an expired token. How would you prevent duplicate refresh requests?
+* A permission check returns cached data even after the user's role changes. How would you update or invalidate the cached authorization state?
+* A guard depends on a resolver that fetches data needed for the page. How would you decide which logic belongs in the guard and which belongs in the resolver?
+* A route contains multiple nested child routes with different permissions. How would you avoid duplicating authorization logic?
+* A user bookmarks a restricted page and returns to it after logging in. How would you restore navigation safely?
+* A guard's Observable never emits, leaving navigation pending. How would you identify and prevent this problem?
+* A guard returns false for an unauthorized user, but the application should display an access-denied page. How would you implement the redirect?
+* A feature route should be available to users with either a support role or an administrator role. How would you implement the authorization rule?
+* You need to design and test route protection for an enterprise application with authentication, role-based permissions, feature flags, and unsaved-change handling. How would you approach it?

@@ -1,0 +1,30 @@
+* Write a functional HTTP interceptor that adds a bearer token to outgoing requests.
+* Write a class-based HTTP interceptor that adds a custom application header.
+* Implement a functional interceptor that logs request URLs and response status codes.
+* Write an interceptor that measures the duration of each HTTP request.
+* Implement a global error interceptor using catchError() and throwError().
+* Write an interceptor that handles HTTP 401 and redirects the user to the login page.
+* Implement an interceptor that handles HTTP 403 without automatically logging out the user.
+* Write an interceptor that excludes login and refresh-token endpoints from authentication headers.
+* Implement an interceptor that adds a correlation ID to every outgoing request.
+* Write a functional interceptor that reads its dependencies using inject().
+* Implement an interceptor that uses HttpContextToken to skip authentication for selected requests.
+* Write an interceptor that uses HttpContextToken to enable or disable retry behavior per request.
+* Implement an interceptor that retries transient failures with exponential backoff.
+* Write an interceptor that respects the Retry-After header for HTTP 429 responses.
+* Implement a token-refresh interceptor that retries the original request after obtaining a new token.
+* Write code that ensures concurrent HTTP 401 responses share a single token-refresh operation.
+* Implement a loading interceptor that tracks multiple concurrent HTTP requests.
+* Write an interceptor that excludes background requests from loading-state tracking.
+* Implement a logging interceptor that redacts authorization headers and other sensitive fields.
+* Write an interceptor that attaches a trace ID and preserves it across retries.
+* Implement a caching interceptor for GET requests using RxJS.
+* Write code to invalidate cached GET responses after successful mutation requests.
+* Implement an interceptor that prevents internal authorization headers from being sent to external domains.
+* Write an interceptor that adds different headers based on the destination API URL.
+* Implement an interceptor that normalizes backend error responses into a common error structure.
+* Write unit tests for a functional interceptor using provideHttpClient(), withInterceptors(), and provideHttpClientTesting().
+* Write unit tests to verify that an interceptor adds the correct authorization header.
+* Write a unit test that verifies an interceptor excludes a public endpoint.
+* Write tests for retry behavior, including the maximum retry count and non-retryable HTTP errors.
+* Write unit tests to verify token refresh, concurrent requests, and refresh-token failure handling.

@@ -1,0 +1,35 @@
+* A production API returns HTTP 500 errors, but the request cannot be traced across all microservices. How would you investigate missing correlation IDs, inconsistent log formats, and context propagation?
+* A request ID appears in the gateway logs but not in downstream service logs. How would you identify where the ID is lost and implement a reliable propagation strategy?
+* Logs from multiple services use different timestamp formats and time zones, making incident investigation difficult. How would you standardize timestamps and account for clock skew?
+* A Java service produces plain-text logs while other services produce JSON logs. How would you introduce structured logging without breaking existing log consumers?
+* Fluent Bit collects container logs, but only some events reach Elasticsearch. How would you investigate input configuration, buffering, backpressure, retries, and output errors?
+* Fluentd memory usage increases continuously during peak traffic and eventually causes restarts. How would you diagnose buffer configuration, queue growth, parsing overhead, and destination availability?
+* Logstash ingestion latency increases after a new grok parsing rule is deployed. How would you identify the expensive processing stage and optimize the pipeline?
+* Elasticsearch receives log events, but Kibana searches return no results. How would you investigate index patterns, timestamp fields, mappings, time filters, and ingestion errors?
+* Elasticsearch disk usage reaches its configured watermark and indexing begins to fail. How would you stabilize the cluster and redesign retention, rollover, and storage allocation?
+* A sudden traffic spike generates ten times the normal log volume. How would you prevent data loss while protecting application performance and controlling storage costs?
+* A logging backend becomes unavailable for 20 minutes. How would you preserve important events and determine which logs were lost during recovery?
+* A collector restarts after an output timeout and sends the same log records again. How would you identify duplicates and decide whether deduplication is necessary?
+* Kubernetes pods terminate quickly, and their final error messages never appear in centralized logs. How would you investigate container logging, collector timing, buffering, and node-level collection?
+* A pod writes logs to an application-specific file, but the Kubernetes logging platform only collects stdout and stderr. How would you design reliable file-log collection?
+* A service's logs contain stack traces with access tokens and customer information. How would you stop further exposure, implement masking, and handle already indexed records?
+* A security review discovers that sensitive headers are logged by the API gateway before application-level masking occurs. How would you move redaction earlier in the pipeline?
+* A developer includes an entire HTTP request body in error logs, causing large storage growth and privacy risks. How would you replace this with safe, targeted diagnostic fields?
+* A client can supply arbitrary correlation IDs, making it difficult to distinguish legitimate requests during an investigation. How would you validate or generate IDs at the trust boundary while preserving cross-service correlation?
+* An asynchronous Kafka consumer processes a message, but its logs cannot be linked to the original HTTP request. How would you propagate trace context and correlation metadata through the message headers?
+* A scheduled job fails hours after its triggering request completes, and the original trace context is unavailable. How would you design correlation for long-running asynchronous workflows?
+* Application logs report successful database calls, but distributed traces show significant database-related latency. How would you correlate timestamps, trace spans, database metrics, and log events?
+* A new logging format causes existing Kibana dashboards and alerts to stop working. How would you roll out schema changes compatibly and validate downstream dependencies?
+* Elasticsearch creates thousands of unexpected fields after a deployment, causing mapping growth and indexing failures. How would you identify dynamic-field expansion and constrain the schema?
+* Log retention policies delete security audit records earlier than expected. How would you investigate lifecycle policies, index aliases, rollover rules, and policy precedence?
+* Application teams can search one another's sensitive logs in a shared logging cluster. How would you redesign tenant isolation, authorization, and index access policies?
+* A centralized logging platform becomes overloaded during a major outage because every service increases its error logging. How would you implement sampling, rate controls, priority queues, and reserved capacity?
+* Logs arrive several minutes late, so incident dashboards and alerts lag behind actual production failures. How would you measure ingestion delay and identify the slowest pipeline stage?
+* The log collector reports healthy status, but an important class of application events is missing. How would you detect silent drops and validate end-to-end log delivery?
+* An application team enables debug logging in production and causes disk exhaustion on worker nodes. How would you mitigate the incident and implement safeguards for log rotation and volume limits?
+* A cloud migration changes service names, namespaces, and metadata fields, making centralized log searches unreliable. How would you normalize metadata and preserve compatibility?
+* Logs from multiple cloud regions must be retained centrally, but data-transfer costs are increasing. How would you evaluate local collection, regional aggregation, filtering, and centralized archival?
+* An incident response team needs to search billions of log records quickly, but broad queries take several minutes. How would you improve index design, time filtering, field selection, and query efficiency?
+* A compliance team requires long-term audit-log retention, while application teams want short retention for debug logs. How would you separate data streams, access controls, and lifecycle policies?
+* During a security incident, a team deletes suspicious log records while attempting to clean up sensitive data. How would you preserve investigation evidence and apply controlled remediation?
+* A logging platform migration must happen without interrupting log collection or losing audit events. How would you design dual shipping, validation, cutover, and rollback?

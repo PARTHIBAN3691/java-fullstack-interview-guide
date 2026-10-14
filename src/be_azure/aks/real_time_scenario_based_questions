@@ -1,0 +1,21 @@
+
+* A Spring Boot application deployed to AKS enters `CrashLoopBackOff` immediately after deployment. How would you investigate the root cause?
+* A Java microservice works locally but fails to start in AKS because configuration properties are missing. How would you troubleshoot the deployment?
+* A pod cannot pull an image from Azure Container Registry and reports `ImagePullBackOff`. What would you check?
+* An AKS-hosted Java application cannot access Azure Key Vault. How would you investigate workload identity, RBAC, network access, and identity configuration?
+* A Spring Boot service is running, but Kubernetes marks its pods as not ready. How would you diagnose the readiness probe?
+* A Java application is repeatedly terminated with exit code 137. How would you determine whether it is caused by memory limits or another issue?
+* An application experiences long garbage collection pauses after deployment to AKS. How would you analyze JVM metrics, container limits, and heap configuration?
+* Traffic increases sharply, but the number of application pods does not increase. How would you troubleshoot HPA configuration and metrics?
+* The HPA increases replicas, but new pods remain pending because no nodes have enough capacity. How would you investigate and resolve the issue?
+* A rolling deployment causes temporary downtime for a Spring Boot service. How would you improve readiness probes, replica configuration, and rollout settings?
+* An application is accessible inside the cluster but cannot be reached externally. How would you troubleshoot the service, ingress, DNS, and Azure networking configuration?
+* Two microservices in different namespaces cannot communicate even though both are running. How would you investigate service discovery and network policies?
+* A Java application cannot connect to Azure SQL Database from AKS, although the database is reachable from a developer machine. How would you troubleshoot private networking, DNS, firewall rules, and credentials?
+* A production pod continues using an old secret after the secret value is updated in Azure Key Vault. How would you design reliable secret refresh and application reload behavior?
+* An AKS cluster upgrade causes some Java application pods to be evicted. How would you minimize disruption during future upgrades?
+* Application logs are available, but distributed requests cannot be traced across microservices. How would you implement end-to-end correlation and tracing?
+* A new container image contains a critical vulnerability and has already been deployed to production. How would you contain the risk and improve the CI/CD pipeline?
+* A private AKS cluster cannot be accessed by the deployment pipeline. How would you troubleshoot private DNS, network connectivity, and identity permissions?
+* A Java microservice experiences intermittent latency during peak traffic despite having enough replicas. How would you investigate resource throttling, connection pools, garbage collection, and downstream dependencies?
+* Your organization needs to deploy the same Spring Boot application across development, staging, and production AKS clusters. How would you manage configuration, secrets, deployment approvals, and rollback?

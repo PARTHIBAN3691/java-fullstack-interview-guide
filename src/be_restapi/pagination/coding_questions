@@ -1,0 +1,30 @@
+* Write a Spring Boot REST endpoint that accepts page and size query parameters.
+* Write a Spring Data JPA repository method that returns a Page of customer records.
+* Write a Java service method that uses PageRequest to retrieve a requested page.
+* Write a Spring Boot controller that returns page content, totalElements, totalPages, and hasNext.
+* Write a Java method that validates page numbers and page sizes.
+* Write a Spring Boot configuration that enforces a maximum page size.
+* Write a REST endpoint that supports pagination with multiple sorting fields.
+* Write a Spring Data JPA query that combines filtering and pagination.
+* Write a native SQL query that implements LIMIT and OFFSET pagination.
+* Write a SQL query that implements keyset pagination using an indexed ID column.
+* Write a Java method that implements cursor pagination using a timestamp and a unique ID.
+* Write a Spring Boot endpoint that returns next and previous cursor tokens.
+* Write a Java implementation that validates and decodes an opaque cursor token.
+* Write a Java implementation that signs a cursor token and verifies its integrity.
+* Write a pagination API that binds a cursor to the original filter and sort parameters.
+* Write a Spring Data JPA implementation that uses Slice instead of Page to avoid an exact total-count query.
+* Write a REST API that returns pagination links for first, previous, next, and last pages.
+* Write a Spring Boot endpoint that returns HTTP 400 for invalid pagination parameters.
+* Write a Java method that safely maps client-supplied sort fields to approved database columns.
+* Write a repository query that paginates DTO projections instead of loading full JPA entities.
+* Write a solution that paginates parent entities correctly when a one-to-many join produces duplicate rows.
+* Write an integration test that verifies page size, page content, sorting, and pagination metadata.
+* Write a test that verifies consecutive pages contain no duplicate records when sort values are identical.
+* Write a test that verifies cursor pagination handles records with identical timestamps.
+* Write a Java method that generates a stable next-page cursor from the last record in a result set.
+* Write a pagination service that handles expired, malformed, and tampered cursor tokens.
+* Write a Java implementation that caches frequently requested pages while respecting filters and sorting.
+* Write a Spring Boot endpoint that supports cursor pagination for a large transaction history.
+* Write a performance test that compares offset pagination and keyset pagination on a large dataset.
+* Write a complete Spring Boot pagination solution with filtering, sorting, cursor navigation, validation, and automated tests.

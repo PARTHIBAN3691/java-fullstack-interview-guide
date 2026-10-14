@@ -1,0 +1,21 @@
+
+* Write a Java program that uses `ManagementFactory.getMemoryPoolMXBeans()` to display available memory pools and their usage.
+* Write a Java program that identifies Metaspace and reports its current usage, committed memory, and maximum memory when available.
+* Write a Java program that periodically records Metaspace usage and prints a warning when usage exceeds a configured threshold.
+* Write a Java program that uses `ClassLoadingMXBean` to report the number of currently loaded, total loaded, and unloaded classes.
+* Write a Java program that uses `ManagementFactory.getClassLoadingMXBean()` to monitor class-loading activity over time.
+* Write a Java program that dynamically loads a class using a custom class loader and explain how class metadata is associated with that loader.
+* Write a Java program that creates multiple custom class loaders and loads the same class name through each loader.
+* Write a Java program that demonstrates why two classes with the same fully qualified name but different defining class loaders are different JVM types.
+* Write a Java program that demonstrates the conditions required for a custom class loader and its classes to become eligible for unloading.
+* Write a Java program that repeatedly creates custom class loaders and loads classes, then investigate class unloading using JVM diagnostics.
+* Write a Java program that demonstrates how retaining a custom class loader in a static collection can prevent class unloading.
+* Modify the preceding program to remove the retained class-loader reference and investigate whether unloading becomes possible.
+* Write a Java program that uses `WeakReference` to observe when a custom class loader becomes weakly reachable, while explaining why this alone does not prove that unloading has completed.
+* Write a Java program that generates runtime proxies repeatedly and design a test to monitor class-loading and Metaspace trends.
+* Write a Java program that records loaded-class counts before and after repeatedly invoking a dynamic class-generation operation.
+* Design a diagnostic script using supported `jcmd` commands to collect class-loader statistics and JVM memory information.
+* Write a Java program that compares heap memory usage and Metaspace usage using JVM management APIs.
+* Design a monitoring utility that records class-loading count, unloaded-class count, and Metaspace usage at regular application checkpoints.
+* Write a test plan to reproduce a Metaspace leak caused by repeated class-loader creation and retained references.
+* Design a regression test and monitoring strategy to verify that a class-loader leak fix prevents unbounded Metaspace growth over repeated deployment cycles.

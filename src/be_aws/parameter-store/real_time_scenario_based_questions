@@ -1,0 +1,20 @@
+* A Java Spring Boot application needs database connection properties from Parameter Store. How would you configure and retrieve them securely?
+* A production application retrieves a `SecureString` parameter but receives an access-denied error. How would you troubleshoot IAM and KMS permissions?
+* A developer accidentally commits a database password to Git. How would you move the secret to Parameter Store and handle the exposed credential?
+* Multiple Java microservices need different configuration values stored under a common parameter hierarchy. How would you design naming conventions and IAM access?
+* A new parameter value causes a production application failure. How would you roll back to the previous known-good version?
+* An application must refresh its feature-flag configuration every few minutes without restarting. How would you implement caching and refresh?
+* Hundreds of Lambda functions start simultaneously and all request parameters from Parameter Store. How would you avoid throttling and startup delays?
+* A Java application works locally but fails to retrieve parameters when deployed to EC2. What credentials, IAM roles, Region settings, and network conditions would you investigate?
+* A team wants developers to read development parameters but prevents them from accessing production parameters. How would you enforce this separation?
+* A `SecureString` parameter is encrypted using a customer-managed KMS key, but the application cannot decrypt it. What would you inspect?
+* A Java service reads configuration at startup, but administrators update the parameter while the service is running. How would you ensure that configuration changes take effect safely?
+* An application requires several related parameters to be updated together. How would you avoid using a partially updated configuration?
+* Parameter Store API requests are increasing significantly, leading to higher costs and throttling. How would you optimize retrieval and caching?
+* A microservice must run in private subnets without internet access and retrieve configuration from Parameter Store. How would you configure connectivity?
+* A company wants to deploy identical application code across multiple AWS accounts while keeping environment-specific values separate. How would you structure the parameters?
+* An application accidentally prints a decrypted API key in its logs. How would you remediate the exposure and prevent recurrence?
+* A Java application must continue operating during a brief Parameter Store outage. How would you design cached configuration and fallback behavior?
+* A configuration change must be reviewed, approved, deployed, and audited. How would you implement the configuration-management workflow?
+* A security audit discovers that several IAM roles can read every parameter in the account. How would you reduce permissions safely?
+* A company needs to migrate thousands of application properties from configuration files into Parameter Store. How would you automate migration, validation, and rollback?

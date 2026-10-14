@@ -1,0 +1,30 @@
+* Explain the major stages involved in TypeScript compilation.
+* How does the TypeScript compiler perform type checking?
+* What is the difference between syntactic analysis and semantic analysis?
+* What happens when you compile a TypeScript file with strict mode enabled?
+* How do you configure different JavaScript output versions using the target option?
+* What is the difference between ES5, ES2015, and ESNext targets?
+* What is the difference between module and moduleResolution options?
+* How does TypeScript resolve imported modules during compilation?
+* What is the difference between classic and Node.js module resolution?
+* What is the purpose of the baseUrl and paths compiler options?
+* How do path aliases work in a TypeScript project?
+* What is the difference between files, include, and exclude in tsconfig.json?
+* How does TypeScript handle multiple tsconfig.json files?
+* What is the purpose of the extends property in tsconfig.json?
+* How do you create separate development and production TypeScript configurations?
+* What is the difference between noEmit and emitDeclarationOnly?
+* How do source maps help during debugging?
+* What is the difference between declaration files and source map files?
+* How does TypeScript generate declaration files?
+* What is the purpose of the skipLibCheck option?
+* What is the difference between strictNullChecks and strictPropertyInitialization?
+* What is the purpose of noImplicitAny?
+* What is the purpose of noUnusedLocals and noUnusedParameters?
+* How does incremental compilation improve build performance?
+* What is the purpose of the incremental compiler option?
+* What is the purpose of the tsbuildinfo file?
+* How does the watch option detect source code changes?
+* What is the difference between tsc --watch and a bundler's watch mode?
+* How do you compile TypeScript files that use JavaScript libraries without type definitions?
+* How do you troubleshoot a TypeScript compiler error caused by incompatible library types?

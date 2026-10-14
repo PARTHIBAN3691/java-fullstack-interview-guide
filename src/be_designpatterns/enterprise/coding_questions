@@ -1,0 +1,30 @@
+* Implement the Repository pattern in Java using Spring Data JPA for a Customer entity.
+* Implement a DAO using JDBC with prepared statements and proper resource management.
+* Create a Spring Boot REST API with Controller, Service, Repository, Entity, and DTO layers.
+* Refactor a controller containing business logic and database operations into separate application layers.
+* Implement DTO-to-entity and entity-to-DTO mapping for an Order application.
+* Write a MapStruct mapper for Customer, Address, and Order DTOs.
+* Implement pagination and sorting using Spring Data JPA repositories.
+* Write a repository query that retrieves only selected fields using a DTO projection.
+* Implement a Service Layer method that updates an order and its items in a single transaction.
+* Write a Spring Boot example that uses @Transactional and rolls back changes when a business operation fails.
+* Implement optimistic locking using @Version in a JPA entity.
+* Write a JPA example that demonstrates the N+1 query problem and fixes it using an appropriate fetch strategy.
+* Implement a lazy-loading strategy for a large collection of related entities without loading all records at once.
+* Create a Java example of the Active Record pattern and compare it with a Data Mapper implementation.
+* Implement a Transaction Script for processing a payment and refactor it into a domain-oriented design.
+* Create a Unit of Work example that coordinates updates across multiple repositories within one transaction.
+* Implement an Identity Map for a simple in-memory persistence layer.
+* Build a Gateway class that calls an external REST API using Spring WebClient and handles timeouts and errors.
+* Implement a Remote Facade that combines customer, order, and payment information into a single response.
+* Create a Business Delegate that isolates a client from an external service implementation.
+* Refactor a Service Locator implementation to use constructor-based dependency injection.
+* Implement centralized REST exception handling using @RestControllerAdvice and custom exception types.
+* Create versioned request and response DTOs for a Spring Boot API while preserving backward compatibility.
+* Implement a bulk-import service using JDBC batching or JPA batching and validate its performance.
+* Write a read-only reporting repository that returns DTO projections instead of complete JPA entities.
+* Implement a Spring Boot service that uses a Transactional Outbox to persist business changes and outgoing events atomically.
+* Write tests that verify rollback behavior when a multi-repository business operation fails.
+* Implement a custom Repository method that performs a complex database query without exposing persistence details to the controller.
+* Refactor a large anemic domain model into entities and domain services that encapsulate business rules.
+* Write integration tests for a layered Spring Boot application covering transactions, persistence, DTO mapping, and error handling.

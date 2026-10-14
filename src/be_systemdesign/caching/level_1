@@ -1,0 +1,30 @@
+* How do you decide which data should be cached in an application?
+* How do you choose an appropriate TTL for cached data?
+* How do you implement the cache-aside pattern in a Java application?
+* How does read-through caching differ from cache-aside caching?
+* How do you keep cached data synchronized with database updates?
+* How do you invalidate cache entries when the underlying database changes?
+* How do you implement caching in Spring Boot using Spring Cache?
+* What is the purpose of @Cacheable in Spring Boot?
+* What is the difference between @Cacheable, @CachePut, and @CacheEvict?
+* How do you configure Redis as a cache provider in Spring Boot?
+* How do you configure different TTL values for different cache regions?
+* How do you cache the results of expensive database queries?
+* How do you prevent caching of null or empty results?
+* How do you implement cache keys for methods with multiple parameters?
+* How do you handle cache key collisions?
+* How do you monitor cache hit ratio, latency, and memory usage?
+* How do you choose between Redis and an in-memory cache such as Caffeine?
+* How do you implement a two-level cache using local memory and Redis?
+* How do you handle cache invalidation across multiple application instances?
+* How do you prevent cache stampedes when popular entries expire?
+* What is cache penetration, and how can it be prevented?
+* What is cache avalanche, and how can it be mitigated?
+* How do you use TTL jitter to reduce simultaneous cache expiration?
+* How do you handle Redis failures without bringing down the application?
+* How do you prevent stale cache values from overwriting newer values?
+* How do you cache paginated API responses?
+* How do you cache frequently accessed reference data?
+* How do you handle cache invalidation in a microservices architecture?
+* How do you secure sensitive information stored in a cache?
+* How do you test caching behavior in a Spring Boot application?

@@ -1,0 +1,30 @@
+* Multiple components contain the same API-fetching logic. How would you extract it into a reusable custom hook?
+* A search input sends an API request on every keystroke. How would you implement a debouncing custom hook?
+* An API request returns outdated data after a user changes the search term. How would you prevent stale results?
+* A component unmounts while an API request is running. How would you prevent unnecessary work and handle cleanup?
+* Several components use the same custom hook, but each displays different data. How would you explain and design this behavior?
+* Two components need to share the same live state. Would a custom hook alone solve this requirement? How would you implement it?
+* A custom hook causes repeated API calls because its dependencies change on every render. How would you debug and fix it?
+* Your application needs a reusable form-validation mechanism across several forms. How would you design the custom hook?
+* A form has dependent fields and complex validation rules. How would you organize the hook logic?
+* A dashboard needs reusable pagination for several API endpoints. How would you design the pagination hook?
+* A large list needs infinite scrolling without loading duplicate records. How would you implement the custom hook?
+* Your application needs to track network connectivity and display offline notifications. How would you implement this functionality?
+* A user preference should persist after refreshing the browser. How would you design a localStorage custom hook?
+* Two browser tabs need to stay synchronized when the user changes a preference. How would you implement this?
+* A component needs to detect clicks outside a dropdown to close it. How would you create a reusable hook?
+* Several components need keyboard shortcuts with proper event cleanup. How would you design the hook?
+* A WebSocket connection should be reused safely and cleaned up when no longer needed. How would you approach the design?
+* Your API sometimes fails due to temporary network issues. How would you implement retry behavior in a custom hook?
+* Multiple components request the same resource simultaneously. How would you avoid duplicate network requests?
+* A custom hook works in normal rendering but behaves differently under Strict Mode. How would you investigate it?
+* A hook returns a new object on every render and causes downstream effects to run repeatedly. How would you resolve it?
+* Your team has many custom hooks with duplicated logic. How would you refactor them into a reusable hook library?
+* A custom hook accesses window or localStorage during server rendering and throws an error. How would you fix it?
+* A hook uses timers and event listeners but causes memory leaks. How would you identify and fix the problem?
+* A data-fetching hook must support loading, empty, error, and success states. How would you design its return contract?
+* Your application needs optimistic UI updates with rollback when an API request fails. How would you implement the hook?
+* A component needs to track the previous value of a prop or state variable. How would you create a reusable hook?
+* A custom hook accepts a callback that changes frequently, causing repeated subscriptions. How would you optimize it?
+* Your application uses TypeScript and requires a generic data-fetching hook for multiple response types. How would you design it?
+* How would you decide whether a complex piece of shared logic should become a custom hook or use a library such as TanStack Query?

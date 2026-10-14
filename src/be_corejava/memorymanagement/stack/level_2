@@ -1,0 +1,21 @@
+
+* Explain the JVM specification's runtime data areas and how JVM stacks fit into that model.
+* Describe the local variable array, operand stack, and frame data associated with a JVM stack frame.
+* How does the JVM use stack frames to support method invocation and return?
+* How does dynamic linking work in a JVM stack frame?
+* How are exceptions propagated through stack frames?
+* How does the JVM distinguish a `StackOverflowError` from an `OutOfMemoryError` related to thread creation?
+* How can stack size, thread count, and native memory limits interact in a production application?
+* Why can increasing `-Xss` resolve a recursion failure but introduce other resource constraints?
+* How would you estimate the stack-memory requirements of a service that creates thousands of platform threads?
+* How does stack usage differ between platform threads and virtual threads?
+* Why should developers avoid assuming that virtual threads consume the same amount of native stack memory as platform threads?
+* How can just-in-time compilation and runtime optimizations influence the physical handling of local variables without changing Java language semantics?
+* What is escape analysis, and how can it influence object allocation even when references originate in stack frames?
+* Why is it inaccurate to say that every local variable is always physically stored on the stack?
+* How can stack traces help identify accidental recursion or circular method invocation?
+* How would you investigate a `StackOverflowError` caused by cyclic object serialization or recursive `toString()` methods?
+* How can a large number of deeply nested method calls affect stack usage across multiple threads?
+* How would you diagnose native-thread creation failures when the Java heap still has sufficient free memory?
+* How can stack dumps and native memory diagnostics complement each other when investigating thread-related failures?
+* How would you design a robust solution for processing deeply nested input without relying on unrestricted recursion?

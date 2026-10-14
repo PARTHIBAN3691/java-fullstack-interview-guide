@@ -1,0 +1,30 @@
+* Write a shell script that checks whether an application service is healthy and returns an appropriate exit code for a CI/CD pipeline.
+* Write a script that calculates deployment success rate, failed deployment rate, rollback rate, and mean time to recovery from deployment and incident logs.
+* Write a Jenkins Pipeline or equivalent CI/CD pipeline definition that builds a Java application, runs unit tests, packages the artifact, and publishes it.
+* Write a deployment script that validates an artifact, deploys it, checks application health, and restores the previous version if validation fails.
+* Write a Terraform configuration to provision a virtual network, subnet, and security group with restricted inbound access.
+* Write a script that parses an infrastructure plan output and flags potentially destructive changes for manual review.
+* Write an Ansible playbook that installs a Java runtime, configures an application service, and ensures the service is running.
+* Write a script that compares configuration files across two environments and reports differences in required settings.
+* Implement a retry utility with configurable maximum attempts, timeouts, and exponential backoff.
+* Write a script that scans configuration files for common secret patterns and reports file locations without exposing secret values.
+* Write a pipeline validation script that fails when a dependency scan report contains vulnerabilities above a configured severity threshold.
+* Write a Kubernetes manifest for a Java application with resource requests, limits, readiness probes, and liveness probes.
+* Write a script that compares the intended application version in Git with the version currently deployed in Kubernetes.
+* Implement a script that detects unhealthy instances from health-check results and marks them for replacement.
+* Write a script that compares running container image digests against an approved release manifest.
+* Write a service-template generator that creates a standard Java Spring Boot project structure with configurable project metadata.
+* Implement a command-line tool that validates a service configuration against an internal developer platform template.
+* Write a script that analyzes CI pipeline logs and identifies the slowest stages to help reduce developer feedback time.
+* Implement a utility that calculates deployment frequency, change failure rate, and recovery time from sample operational records.
+* Write a script that inventories deployed services and reports which ones lack mandatory monitoring, health checks, or ownership metadata.
+* Write a shell script that validates mandatory environment variables before starting a Java Spring Boot application.
+* Implement a script that checks Kubernetes deployment health and stops a rollout when the error rate exceeds a configurable threshold.
+* Write a Terraform module that provisions an application service with configurable CPU, memory, networking, and environment variables.
+* Write an Ansible playbook that applies a configuration change gradually and verifies service health after each batch.
+* Implement a utility that validates infrastructure configuration against a set of security and compliance rules.
+* Write a script that compares application deployment versions across multiple environments and identifies version drift.
+* Write a script that validates Kubernetes manifests for missing resource limits, health probes, and required security settings.
+* Implement a program that analyzes pipeline execution records and identifies the stages contributing most to delivery delays.
+* Write a script that verifies whether a deployment artifact matches its approved checksum before deployment.
+* Implement a simple CLI tool that generates a new service repository structure from a predefined golden-path template.

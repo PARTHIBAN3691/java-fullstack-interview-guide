@@ -1,0 +1,21 @@
+
+* Explain the architecture of a highly available Java microservice deployed on Azure App Service.
+* How would you design a deployment strategy that supports zero downtime and rapid rollback?
+* What happens to existing requests and application instances during an App Service slot swap?
+* How do you handle database schema changes when deploying a new version of a Spring Boot application?
+* How would you investigate memory leaks and excessive garbage collection in a Java application hosted on Azure App Service?
+* How do you tune JVM memory settings for a Java application running in a constrained App Service plan?
+* How would you troubleshoot intermittent latency spikes in an App Service-hosted REST API?
+* Explain how App Service autoscaling interacts with stateless application design and session management.
+* How would you configure a Java application to access Azure SQL Database securely using managed identity?
+* How would you design network connectivity between App Service, Azure Key Vault, and a private database?
+* Explain the differences between App Service regional redundancy, zone redundancy, and multi-region deployment.
+* How would you implement disaster recovery for a critical Java application hosted on Azure App Service?
+* How do you configure end-to-end TLS and secure communication between App Service and downstream services?
+* How would you diagnose connection pool exhaustion in a Spring Boot application deployed to App Service?
+* How would you troubleshoot intermittent HTTP 502 and 503 errors in Azure App Service?
+* How do you implement distributed tracing across an App Service-hosted Java application and downstream microservices?
+* How would you design a secure CI/CD pipeline with approvals, deployment slots, and rollback capabilities?
+* How do you manage secrets and prevent sensitive configuration values from appearing in application logs?
+* How would you optimize App Service Plan selection and scaling to balance performance, availability, and cost?
+* How would you migrate a Java application from an on-premises application server to Azure App Service with minimal downtime?

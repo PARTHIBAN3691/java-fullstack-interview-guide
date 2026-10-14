@@ -1,0 +1,28 @@
+* Write a Java Spark program to create a SparkSession and initialize a Spark application.
+* Write a Java program using Spark to read a CSV file from Azure Data Lake Storage.
+* Write a Java Spark program to read a Parquet file and display its schema.
+* Write a Java Spark program to filter records from a DataFrame based on a condition.
+* Write a Java Spark program to group records and calculate aggregate values.
+* Write a Java Spark program to remove duplicate records from a DataFrame.
+* Write a Java Spark program to perform an inner join between two DataFrames.
+* Write a Java Spark program to perform a left outer join between two DataFrames.
+* Write a Java Spark program demonstrating a broadcast join.
+* Write a Java Spark program to repartition a large DataFrame based on a key.
+* Write a Java Spark program demonstrating the difference between repartition and coalesce.
+* Write a Java Spark program to handle null values in a DataFrame.
+* Write a Java Spark program to read JSON data and transform it into a required schema.
+* Write a Java Spark program to write transformed data into a Delta table.
+* Write a Java Spark program to implement an incremental data load into a Delta table.
+* Write a Java Spark program to perform an upsert using Delta Lake MERGE.
+* Write a Java Spark program to identify duplicate transactions based on transaction ID.
+* Write a Java Spark program to implement a simple data-quality validation framework.
+* Write a Java Spark program to process a large dataset while minimizing unnecessary shuffles.
+* Write a Java Spark program that handles failures and retries when processing input files.
+* Write a Java program that invokes the Azure Databricks REST API to trigger a job.
+* Write a Java program that checks the status of a Databricks job using its job run ID.
+* Write a Spring Boot REST API that triggers an Azure Databricks workflow.
+* Write a Spring Boot service that triggers a Databricks job asynchronously and exposes its execution status.
+* Write a Java program that reads Databricks configuration securely from environment variables or Azure Key Vault.
+* Write a Java Spark program to process only newly arrived files from an Azure Data Lake location.
+* Write a Java Spark program to handle malformed input records without terminating the complete job.
+* Write a Java Spark program to calculate partition-level record counts for troubleshooting data distribution.

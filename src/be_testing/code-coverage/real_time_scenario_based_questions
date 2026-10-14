@@ -1,0 +1,30 @@
+* Your Java application reports 95% line coverage, but production defects remain frequent. How would you investigate the gap?
+* A project has 100% statement coverage but only 60% branch coverage. What does this indicate, and how would you improve it?
+* Your JaCoCo report shows that an if-else statement is covered, but one logical outcome is never executed. How would you investigate it?
+* A critical payment calculation method has low coverage. How would you prioritize additional tests?
+* Your team is required to maintain at least 80% code coverage. How would you achieve the target without sacrificing test quality?
+* A new feature reduces overall code coverage from 85% to 78%. How would you identify the uncovered code and resolve the issue?
+* A Maven build fails because JaCoCo reports coverage below the configured threshold. How would you troubleshoot and fix the failure?
+* JaCoCo generates an empty report even though JUnit tests pass. What would you check?
+* Coverage reports differ between local execution and Jenkins. How would you investigate the discrepancy?
+* A multi-module Spring Boot application reports coverage for only one module. How would you correct the configuration?
+* Your integration tests execute service methods, but important business rules are not asserted. How would you improve the test suite?
+* A method contains multiple nested conditions, and achieving branch coverage is difficult. How would you design effective test cases?
+* A catch block is never covered because the expected exception is difficult to reproduce. How would you test this path?
+* A private method contains complex business logic but is not directly covered by tests. What approach would you take?
+* A controller has high code coverage, but invalid request scenarios are untested. How would you improve coverage and confidence?
+* Your application uses asynchronous message consumers, but their execution is missing from the coverage report. How would you investigate?
+* A Java application forks separate JVMs during integration testing, resulting in incomplete coverage data. How would you configure coverage collection?
+* Generated classes and DTOs lower the overall coverage percentage. How would you handle exclusions appropriately?
+* A developer adds tests that execute lines of code but do not verify expected results. How would you evaluate the quality of these tests?
+* The team reaches 100% line coverage, but mutation testing reveals many surviving mutants. What does this tell you?
+* A legacy application has only 25% coverage, and management wants a rapid improvement. How would you plan the work?
+* A frequently modified module has high coverage, while a business-critical module has low coverage. How would you prioritize improvements?
+* A coverage quality gate blocks a small documentation-only change because of an existing legacy coverage deficit. How would you design a fair policy?
+* A flaky test causes inconsistent coverage results across builds. How would you diagnose and stabilize the pipeline?
+* Coverage drops after a refactoring even though the application behavior remains unchanged. How would you investigate?
+* Your team needs to measure coverage only for code changed in a pull request. How would you implement this?
+* A service relies heavily on external APIs, and its integration tests are expensive. How would you achieve meaningful coverage with mocks and contract tests?
+* A production incident reveals an untested boundary condition in an interest calculation. How would you prevent similar gaps?
+* Two teams report different coverage percentages for the same codebase. How would you standardize the measurement process?
+* You are responsible for code coverage across 50 microservices. How would you establish consistent reporting, thresholds, and quality gates?

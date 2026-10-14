@@ -1,0 +1,21 @@
+
+* Your team manually creates EC2 instances, security groups, and load balancers. How would you migrate the infrastructure to CloudFormation?
+* A CloudFormation stack fails while creating an RDS database. How would you identify the root cause and safely retry the deployment?
+* An infrastructure update unexpectedly replaces a production database. What template settings and deployment practices could have prevented this?
+* Your development, testing, and production environments require the same architecture but different instance sizes. How would you design reusable templates?
+* A developer manually changes a security group in the AWS Console, causing the actual infrastructure to differ from the template. How would you detect and resolve the drift?
+* A stack update fails and leaves the stack in `UPDATE_ROLLBACK_FAILED`. What steps would you take to recover it safely?
+* Your application consists of API Gateway, Lambda, DynamoDB, and IAM resources. How would you define and deploy the entire infrastructure using CloudFormation?
+* A CloudFormation deployment requires a database password. How would you avoid exposing the password in templates, logs, or deployment parameters?
+* Multiple application teams need to deploy shared networking infrastructure without accidentally modifying one another's resources. How would you structure the stacks and permissions?
+* A production deployment must update several resources while protecting critical resources from accidental deletion. How would you use change sets and stack policies?
+* Your organization needs to deploy a common IAM role and security baseline across 50 AWS accounts. How would you use StackSets?
+* A resource must be retained when its stack is deleted, but replaced resources should follow a different lifecycle policy. How would you configure the template?
+* A CloudFormation template contains repeated definitions for similar Lambda functions. How would you reduce duplication and improve maintainability?
+* A resource must be created only in production, while other resources must be created in every environment. How would you use parameters, mappings, and conditions?
+* Your CI/CD pipeline deploys a CloudFormation stack, but the deployment role lacks permission to create one resource. How would you diagnose and fix the IAM issue securely?
+* A nested stack fails during an application deployment. How would you trace the failure through the parent and child stacks?
+* A team needs to update an existing infrastructure stack without overwriting manually maintained resources. How would you plan the adoption and drift-remediation process?
+* A deployment must roll out to multiple AWS Regions with controlled risk. How would you organize the templates, pipeline stages, and validation steps?
+* Your Java Spring Boot application needs an SQS queue, an IAM role, and a CloudWatch log group. How would you define the infrastructure alongside the application deployment?
+* A CloudFormation custom resource times out during deletion. How would you investigate its Lambda implementation and ensure the required response is returned?

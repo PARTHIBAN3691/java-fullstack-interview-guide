@@ -1,0 +1,21 @@
+
+* A Spring Boot application gradually consumes more heap memory over several days. How would you investigate the issue?
+* An application throws `OutOfMemoryError: Java heap space` during peak traffic. What steps would you take to identify the root cause?
+* A service experiences frequent garbage collection despite having a large heap. How would you troubleshoot it?
+* After increasing `-Xmx`, an application becomes slower rather than faster. What could explain this behavior?
+* A Java application works correctly in a local environment but runs out of heap memory inside a Docker container. How would you investigate?
+* A batch job processes millions of records and eventually exhausts heap memory. How would you redesign its memory usage?
+* A cache improves response time but causes continuous heap growth. How would you identify whether the cache is responsible?
+* A collection stores objects that are no longer required by the business logic. How would you identify and fix the retention issue?
+* A production service experiences long Full GC pauses and temporary unavailability. What diagnostic steps would you follow?
+* Heap usage rises sharply during report generation and then drops after garbage collection. How would you determine whether this is expected behavior?
+* A team proposes increasing heap size to fix an OutOfMemoryError. What evidence would you collect before approving the change?
+* A large JSON response causes excessive heap allocation. How would you reduce memory pressure?
+* An application creates many temporary objects while processing requests. What techniques could reduce allocation overhead?
+* A memory leak appears only after a new release. How would you compare heap dumps from the old and new versions?
+* A service has low average heap usage but occasionally fails during traffic spikes. How would you investigate peak allocation requirements?
+* A long-running application retains class loader references after redeployment. How could this cause heap-related problems?
+* An application uses a large in-memory map for session data. How would you prevent unbounded heap growth?
+* A Java service must operate within a strict memory limit. How would you choose heap settings and validate them under load?
+* An application shows acceptable heap usage but the process is terminated because of memory pressure. What other memory consumers would you investigate?
+* After changing the garbage collector, latency improves but throughput decreases. How would you evaluate the trade-off?

@@ -1,0 +1,30 @@
+* A Java service calculates Fibonacci values recursively and becomes slow for large inputs. How would you redesign it using dynamic programming?
+* An API repeatedly calculates the same subproblem for multiple requests. How would memoization improve performance, and what caching concerns would you consider?
+* A pricing engine must select products within a fixed budget to maximize value. How would you model this as a knapsack problem?
+* A delivery application must find the minimum-cost path through a grid of locations. How would you formulate the DP state and transition?
+* A travel application must calculate the cheapest route through a sequence of stages with restricted transitions. How would you design the DP solution?
+* A financial application must determine the maximum profit from stock transactions with a limited number of trades. How would you model the states?
+* An inventory system must minimize the number of packages needed to fulfill a target quantity. How would you formulate the problem using coin change DP?
+* A payment application must determine whether a transaction amount can be formed using a set of permitted denominations. How would you solve it efficiently?
+* A text comparison service must measure the minimum edits required to transform one string into another. How would you implement edit distance?
+* A document comparison tool must find the longest common subsequence between two versions of a document. How would you implement and optimize it?
+* A search service must determine whether a user-entered phrase can be segmented into known dictionary terms. How would you apply word break DP?
+* A resource allocation service must distribute limited resources across tasks to maximize total benefit. How would you model and solve the optimization problem?
+* A scheduling system must choose non-overlapping jobs with maximum total profit. How would you combine sorting, binary search, and DP?
+* A manufacturing application must determine the least expensive way to combine components with different processing costs. How could interval DP help?
+* A game engine must calculate the maximum score obtainable from a sequence of moves. How would you identify the states and transitions?
+* A robot must navigate a grid with blocked cells and movement restrictions. How would you count valid paths using dynamic programming?
+* A route-planning application must find the minimum accumulated cost when moving through a triangular network. How would you formulate the solution?
+* A Java application uses a two-dimensional DP array and runs out of memory on large inputs. How would you reduce its space consumption?
+* A DP implementation returns incorrect results for arrays containing zeros or repeated values. How would you investigate its initialization and transitions?
+* A team changes a knapsack implementation from two-dimensional to one-dimensional DP, but the results become incorrect. How would you identify an iteration-order bug?
+* A production algorithm must return the actual optimal sequence, not just the maximum score. How would you reconstruct the solution from DP states?
+* A recommendation engine must select a combination of items under several constraints. How would you decide whether classic knapsack DP is sufficient or a multidimensional state is needed?
+* A fraud-detection service must evaluate sequences of events against state-dependent rules. How would you determine whether DP is appropriate?
+* A batch process repeatedly solves the same DP problem for many related inputs. How would you reuse computations without creating stale or excessive cache entries?
+* A large string-processing task has too many DP states and causes high memory usage. How would you redesign the state representation?
+* A system needs to count valid numbers within a range subject to digit restrictions. How would you apply digit DP?
+* A graph-processing service must find the longest path in a directed acyclic graph. How would you use topological ordering and DP?
+* A tree-based planning system must choose non-adjacent nodes to maximize total value. How would you design a tree DP solution?
+* A Java service must solve a combinatorial optimization problem within a strict response-time limit. How would you evaluate DP complexity and possible optimizations?
+* A code review reveals a recursive solution with overlapping subproblems but no memoization. How would you prove the performance improvement of a DP redesign?

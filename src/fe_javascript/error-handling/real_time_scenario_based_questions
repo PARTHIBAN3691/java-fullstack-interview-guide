@@ -1,0 +1,30 @@
+* A user submits an empty form, causing an application error. How would you validate the input and handle the error?
+* An API request returns HTTP 500. How would you handle the failure and provide a useful message to the user?
+* A fetch() request returns HTTP 404, but the Promise resolves successfully. Why does this happen, and how would you handle it?
+* An API returns invalid JSON. How would you prevent the application from crashing?
+* A Promise rejects without a catch handler. How would you identify and fix the problem?
+* A nested asynchronous operation fails several layers below the calling function. How would you propagate the error?
+* A payment API times out, but the payment may already have been processed. How would you handle the error without causing duplicate payments?
+* A third-party service fails intermittently. How would you implement retries and fallback behavior?
+* A user uploads an unsupported file type. How would you validate the file and report the error?
+* A database or API operation fails after some changes have already been made. How would you maintain application consistency?
+* A JavaScript application displays a blank page after an unexpected exception. How would you diagnose the issue?
+* Multiple API requests run concurrently, and some succeed while others fail. How would you display partial results?
+* An async function throws an error, but the calling code does not catch it. How would you correct the error-handling flow?
+* An exception occurs inside setTimeout(), but the surrounding try...catch does not catch it. Why, and how would you handle it?
+* A callback-based library reports errors through a callback parameter. How would you integrate it safely?
+* An application logs the same error multiple times as it propagates through different layers. How would you prevent duplicate logging?
+* A custom validation function throws different error types. How would you distinguish and handle them?
+* An API returns sensitive information in its error response. How would you prevent this information from reaching the user or application logs?
+* A background task fails while processing one record out of thousands. How would you continue processing the remaining records?
+* A network request is cancelled when the user navigates away. How would you distinguish cancellation from a genuine failure?
+* A critical operation fails after several dependent operations have completed. How would you recover or compensate for the completed work?
+* An application needs to display user-friendly messages while preserving technical details for debugging. How would you implement this?
+* A production application experiences intermittent unhandled Promise rejections. How would you investigate the root cause?
+* A retry mechanism repeatedly calls an unavailable service and increases server load. How would you improve the retry strategy?
+* A file-processing task must always release resources, whether it succeeds or fails. How would you structure error handling?
+* A third-party API changes its response format unexpectedly. How would you validate responses and prevent downstream failures?
+* An application needs a fallback response when a recommended service becomes unavailable. How would you implement graceful degradation?
+* A frontend application must report errors to a monitoring service without interrupting normal execution. How would you design it?
+* A user sees a generic error message, but developers need enough context to investigate the issue. How would you structure error reporting?
+* How would you troubleshoot a production issue where the application continues running but produces incorrect results after an exception?

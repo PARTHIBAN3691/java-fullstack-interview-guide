@@ -1,0 +1,30 @@
+* A Spring Boot application deploys successfully to App Engine but returns HTTP 500 for every request. How would you investigate startup logs, runtime configuration, and application exceptions?
+* An App Engine deployment fails because the configured Java runtime is unsupported. How would you identify the supported runtime and update the deployment configuration?
+* A Java application works locally but fails after deployment because it depends on local filesystem paths. How would you redesign the application for the App Engine runtime?
+* An App Engine application experiences sudden traffic spikes and creates too many instances. How would you tune autoscaling and protect downstream services?
+* A production application starts returning HTTP 503 during peak traffic. How would you investigate instance capacity, scaling behavior, and dependency failures?
+* A new App Engine version introduces a critical production bug. How would you roll back traffic to the previous version with minimal disruption?
+* A new release works for some users but fails for others because traffic is split across incompatible versions. How would you investigate and resolve the issue?
+* A Spring Boot application on App Engine intermittently fails to connect to Cloud SQL. How would you investigate connectivity, IAM, connection limits, and pooling?
+* Cloud SQL connections reach their maximum after App Engine scales up. How would you redesign connection pooling and control instance scaling?
+* An application experiences long garbage-collection pauses and increasing memory usage. How would you diagnose and optimize the Java runtime?
+* An App Engine service makes slow calls to an external payment provider. How would you investigate timeouts and improve resilience?
+* A request takes longer than the allowed request deadline because it performs several synchronous operations. How would you redesign the processing flow?
+* A business workflow must continue after the initial HTTP request returns. How would you use Cloud Tasks or Pub/Sub with an App Engine service?
+* A scheduled billing job executes twice and creates duplicate invoices. How would you make the job idempotent and prevent concurrent execution?
+* An App Engine application needs access to a third-party API key. How would you store, retrieve, rotate, and audit the secret securely?
+* A security audit discovers that the App Engine service account has excessive permissions. How would you reduce its privileges without interrupting production?
+* An application can access public services but cannot connect to an internal backend. How would you investigate the network and connectivity requirements of the selected App Engine environment?
+* A Java service experiences high latency only during cold starts. How would you investigate startup behavior and choose appropriate scaling settings?
+* Cloud Monitoring shows acceptable average latency but frequent customer complaints about slow requests. How would you investigate latency percentiles and individual traces?
+* An application logs sensitive customer information in production. How would you redesign structured logging and prevent exposure of sensitive data?
+* A database schema migration must happen while two App Engine versions are receiving traffic. How would you ensure backward compatibility during deployment?
+* A production release must be deployed to a small percentage of users before full rollout. How would you implement and validate a canary deployment?
+* An App Engine service needs to call a protected Cloud Run backend. How would you configure service-to-service authentication and IAM?
+* A large number of asynchronous tasks accumulate in a queue because downstream processing is slow. How would you control concurrency, retries, and backpressure?
+* A scheduled job must process thousands of records without exceeding request deadlines. How would you split the work into reliable batches?
+* An enterprise application must recover from a regional disruption. How would you define recovery objectives and validate the recovery strategy?
+* A Spring Boot application incurs unexpectedly high App Engine costs despite moderate traffic. How would you investigate scaling configuration, instance utilization, and background work?
+* A team wants to deploy App Engine resources using Terraform, but developers also make manual console changes. How would you detect and prevent configuration drift?
+* An App Engine application must meet strict availability and latency objectives. How would you establish monitoring, alerting, capacity planning, and incident-response procedures?
+* An organization is deciding whether to keep a Java application on App Engine or migrate it to Cloud Run. How would you compare runtime constraints, scaling, networking, cost, and operational requirements?

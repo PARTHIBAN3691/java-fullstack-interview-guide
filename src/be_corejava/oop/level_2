@@ -1,0 +1,21 @@
+
+* Explain the method resolution process when a superclass reference points to a subclass object.
+* What happens when a subclass overrides a method and invokes `super.method()`?
+* How does field hiding differ from method overriding in Java?
+* What is the difference between covariant return types and method overloading?
+* How do access modifiers affect inheritance and method overriding?
+* Why can an overriding method not reduce the visibility of the inherited method?
+* What are the consequences of calling an overridable method from a constructor?
+* How does constructor execution proceed across a multilevel inheritance hierarchy?
+* What is the diamond problem, and how does Java resolve it for interface default methods?
+* How would you design an immutable class using OOP principles?
+* How can encapsulation be violated even when all fields are declared private?
+* What is the difference between shallow copying and deep copying of objects?
+* How do composition and delegation help reduce tight coupling?
+* What is the Liskov Substitution Principle, and how does it relate to inheritance?
+* What is the Open/Closed Principle, and how can polymorphism support it?
+* How do the Single Responsibility and Dependency Inversion principles influence object-oriented design?
+* What is the difference between inheritance-based reuse and composition-based reuse?
+* How do generics interact with polymorphism, and why is generic type information erased at runtime?
+* What is the difference between `equals()` and `==` when comparing objects?
+* How would you refactor a deeply nested inheritance hierarchy into a more maintainable object-oriented design?

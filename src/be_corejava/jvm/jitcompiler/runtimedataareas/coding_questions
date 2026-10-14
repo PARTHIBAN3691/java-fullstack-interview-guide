@@ -1,0 +1,30 @@
+* Write a Java program that demonstrates local variables and object references, and explain which Runtime Data Areas are involved.
+* Write a Java program that creates multiple objects and explain how their references and object storage differ.
+* Write a Java program that demonstrates method calls and returns, identifying when stack frames are created and removed.
+* Write a recursive Java method that demonstrates StackOverflowError, and explain how to reproduce it safely in a test environment.
+* Write an iterative version of a recursive algorithm to reduce Java Stack usage.
+* Write a Java program that creates several threads and demonstrates that each thread has its own execution stack.
+* Write a Java program in which multiple threads access a shared object, and explain how the object is shared through the Heap.
+* Write a Java program that creates a large number of objects and demonstrate how Heap usage changes over time.
+* Write a Java program that intentionally retains objects in a collection to demonstrate a memory leak pattern.
+* Write a Java program that releases references to temporary objects and explain why garbage collection is not guaranteed to run immediately.
+* Write a Java program that creates many short-lived objects and explain how to investigate its allocation behavior.
+* Write a Java program that uses a static collection to retain objects and explain why those objects may remain reachable.
+* Write a Java program that uses a custom class loader to load a class and explain the relationship between the class loader and class metadata.
+* Write a Java program that dynamically loads and unloads plugins, then describe how you would verify whether their class loaders become eligible for collection.
+* Write a Java program that creates a large number of threads and explain how to investigate thread-stack memory consumption.
+* Write a Java program that uses a direct ByteBuffer and compare its memory behavior with a heap-backed ByteBuffer.
+* Write a Java program that recursively processes a nested data structure and then refactor it to use an explicit stack.
+* Write a Java program that generates a high allocation rate and explain how to inspect the resulting garbage-collection behavior.
+* Write a Java program that invokes a native method, and explain the role of native execution and native memory.
+* Write a Java program with multiple method calls and local variables, then use a debugger to inspect stack frames.
+* Write a Java program that creates a large number of String objects and compare ordinary String creation with string interning.
+* Write a Java program that loads classes dynamically and explain the distinction between Heap objects and class metadata.
+* Write a Java program that can trigger OutOfMemoryError: Java heap space in a controlled test, and explain how to set safe memory limits.
+* Write a Java program that can trigger StackOverflowError in a controlled test, and explain how to configure the thread stack size.
+* Write a Java program that repeatedly creates temporary objects and design a benchmark to compare allocation patterns.
+* Write a Java program with a long-running thread and explain how its stack differs from the shared Heap.
+* Write a Java program that uses reflection to inspect loaded classes and explain why class metadata is managed separately from ordinary Heap objects.
+* Write a Java program that demonstrates how retaining a reference in a static field can prevent an object from becoming eligible for garbage collection.
+* Write a Java program suitable for profiling with Java Flight Recorder to examine allocation rate, garbage collection, and thread activity.
+* Design and implement a Java diagnostic exercise that compares Heap exhaustion, Stack overflow, Metaspace exhaustion, and native-thread creation failure, explaining how each would be investigated.

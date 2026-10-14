@@ -1,0 +1,30 @@
+* How would you design a Singleton that remains safe under concurrency, reflection, and serialization?
+* Why is an enum-based Singleton generally safer than a manually implemented Singleton?
+* How would you handle Singleton initialization when construction requires external resources?
+* How can global Singleton state affect dependency management, testing, and application lifecycle?
+* How would you decide whether a Singleton should be replaced with a dependency-injected service?
+* How would you design a Factory Method implementation that supports runtime plugin registration?
+* How would you avoid a large factory class containing hundreds of conditional branches?
+* How would you design a factory registry that supports extensibility without introducing unnecessary complexity?
+* How would you implement an Abstract Factory for multiple payment providers with provider-specific clients and request models?
+* How would you ensure that products created by an Abstract Factory remain compatible with one another?
+* How would you design a Builder for a complex immutable object with nested objects and conditional validation?
+* How would you prevent invalid object states when using a Builder with optional and mandatory fields?
+* How would you compare a traditional Builder with staged builders that enforce construction steps at compile time?
+* How would you implement a reusable Builder without losing fluent method return types in an inheritance hierarchy?
+* How would you design a Prototype registry for dynamically configured object templates?
+* How would you handle deep copying of cyclic object graphs in a Prototype implementation?
+* How would you preserve invariants when cloning domain objects that contain mutable collections?
+* How would you evaluate serialization-based cloning versus copy constructors and dedicated mapping logic?
+* How would you design a factory architecture that supports backward compatibility when new product types are introduced?
+* How would you separate object construction from dependency lifecycle management in Spring Boot?
+* How would you prevent a factory from becoming tightly coupled to the concrete implementations it creates?
+* How would you design testable object creation for a legacy application that directly instantiates dependencies using new?
+* How would you select between Factory Method, Abstract Factory, and dependency injection for a large enterprise application?
+* How would you handle resource cleanup when a factory creates objects that own connections or other external resources?
+* How would you manage thread safety when a factory caches and reuses created instances?
+* How would you distinguish a factory from a Service Locator and assess the architectural trade-offs?
+* How would you design a multi-tenant object factory that creates tenant-specific service implementations?
+* How would you optimize a high-throughput object creation path without prematurely introducing object pooling?
+* How would you evolve a creational-pattern implementation without breaking existing client code?
+* How would you evaluate the performance, memory, complexity, and maintainability trade-offs of different creational patterns?

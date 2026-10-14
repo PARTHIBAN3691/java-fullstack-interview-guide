@@ -1,0 +1,21 @@
+
+* You are designing an employee management system with permanent employees, contractors, and interns. How would you apply inheritance and polymorphism?
+* An e-commerce application supports multiple payment methods, including credit cards, UPI, and net banking. How would you design the payment processing classes using abstraction and polymorphism?
+* A notification service supports email, SMS, and push notifications. How would you make it extensible without modifying existing business logic whenever a new channel is added?
+* A banking application must prevent direct modification of account balances. How would you apply encapsulation to enforce business rules?
+* A subclass inherits a method but needs different behavior for a specific operation. How would you decide between overriding, composition, and delegation?
+* A base class has many subclasses, and adding a new feature requires changes across most of them. What design problems might exist, and how would you improve the hierarchy?
+* Two interfaces implemented by the same class define the same default method. How would you resolve the conflict?
+* A superclass constructor calls a method overridden by a subclass, but the subclass's fields are not initialized yet. What problem could occur, and how would you prevent it?
+* A class exposes a private list through a getter. How could external code still modify its internal state, and how would you protect it?
+* A reporting system supports PDF, Excel, and CSV generation. How would you design the classes to follow the Open/Closed Principle?
+* A service depends directly on a concrete database implementation, making unit testing difficult. How would you use abstraction and dependency inversion to improve testability?
+* A developer uses inheritance only to reuse a few utility methods. Why might composition be a better option?
+* A shopping cart contains products, while an order contains order items. How would you model the relationships using association, aggregation, and composition?
+* A subclass strengthens preconditions or weakens postconditions compared with its superclass. Which OOP principle is violated, and how would you correct it?
+* An application needs to support different discount strategies without creating a subclass for every possible discount combination. How would you design it?
+* An API returns a superclass reference, but the actual object is a subclass. How would you safely determine and use subtype-specific behavior?
+* A class has too many responsibilities, making changes risky and testing difficult. How would you apply the Single Responsibility Principle?
+* A team creates a large interface that forces implementing classes to provide irrelevant methods. Which design principle is violated, and how would you redesign the interfaces?
+* An immutable configuration object contains a mutable list. What additional steps are required to make the object truly immutable?
+* You are reviewing an object-oriented design with deep inheritance, duplicated logic, and tightly coupled classes. What changes would you recommend and why?

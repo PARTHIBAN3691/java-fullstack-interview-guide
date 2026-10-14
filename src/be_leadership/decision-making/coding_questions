@@ -1,0 +1,30 @@
+* Write a Java program that compares two solution options using configurable evaluation criteria.
+* Implement a Java class to represent a technical decision, including context, options, rationale, and outcome.
+* Write a Java method that prioritizes tasks based on business impact, urgency, and risk.
+* Implement a decision matrix in Java that assigns weighted scores to competing technical solutions.
+* Write a Java program to rank technology options based on cost, performance, maintainability, and security.
+* Implement an enum representing decision statuses such as PROPOSED, UNDER_REVIEW, APPROVED, and REJECTED.
+* Write a Java method to validate that a technical decision contains its rationale and associated risks.
+* Implement a decision log that records decisions, owners, timestamps, and supporting evidence.
+* Write a Java program to calculate risk scores using probability and impact.
+* Implement a Java class that compares delivery estimates against available team capacity.
+* Use Java streams to identify high-priority tasks from a list of project tasks.
+* Write a Java program to evaluate build-versus-buy options using configurable cost and risk factors.
+* Implement the Strategy pattern to support different decision-making approaches.
+* Implement the Observer pattern to notify stakeholders when a technical decision is approved or rejected.
+* Use the State pattern to manage a decision's lifecycle and prevent invalid state transitions.
+* Write a Java method that identifies dependencies affected by a proposed API change.
+* Implement a rule-based decision engine using Java interfaces and configurable business rules.
+* Write a Java program that evaluates release readiness based on test results, security findings, and unresolved defects.
+* Implement a service that recommends whether a task should be escalated based on severity and business impact.
+* Write unit tests using JUnit 5 for a decision matrix and its scoring rules.
+* Use Mockito to test a decision service that retrieves cost and performance metrics from external systems.
+* Implement exception handling for invalid decision criteria and missing evaluation data.
+* Write a Java program that compares two architectural configurations and reports their trade-offs.
+* Implement a decision audit trail that records changes to assumptions, scores, and final recommendations.
+* Write a Java method to calculate the expected risk exposure of several competing options.
+* Implement a prioritization algorithm that balances technical debt reduction with business feature delivery.
+* Write a Java program using CompletableFuture to gather evaluation results from multiple services concurrently.
+* Implement a decision recommendation service that supports configurable weights and thresholds.
+* Write a Spring Boot REST API to create, evaluate, approve, and retrieve technical decisions.
+* Design a Java-based decision management application that supports alternatives, weighted criteria, risk analysis, approvals, audit history, and outcome tracking.

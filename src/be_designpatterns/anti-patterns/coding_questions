@@ -1,0 +1,30 @@
+* Write a Java example of a God Object and refactor it into classes following the Single Responsibility Principle.
+* Write a Java program demonstrating duplicated validation logic and refactor it into a reusable component.
+* Refactor a Java method containing deeply nested if-else statements into a cleaner implementation.
+* Replace magic numbers in a Java payment-processing example with enums and named constants.
+* Implement a Java example that demonstrates tight coupling, then refactor it using constructor-based dependency injection.
+* Create a Java example with circular dependencies and redesign it to remove the cycle.
+* Refactor a large Java service that validates an order, saves it, and sends a notification into separate responsibilities.
+* Implement a Strategy-based solution to replace a long conditional statement for payment methods.
+* Refactor a Factory implementation that contains duplicated object creation logic.
+* Write a Java example of Feature Envy and move the behavior to the appropriate class.
+* Convert a data-only Java class into a domain model that encapsulates business rules.
+* Refactor a deep inheritance hierarchy into composition-based Java classes.
+* Implement a Java value object for a monetary amount instead of passing raw double values throughout the application.
+* Refactor a Java method that catches and ignores all exceptions into proper exception handling.
+* Write a Java example demonstrating the Singleton anti-pattern caused by shared mutable state.
+* Refactor a static utility class that directly accesses external resources into an injectable service.
+* Create a Java example demonstrating the Shotgun Surgery anti-pattern and redesign the code to localize changes.
+* Refactor repeated transaction-status checks into a clear, maintainable design.
+* Implement a Java solution that replaces boolean method flags with meaningful types or separate strategies.
+* Write a Java program that demonstrates an anemic domain model and refactor it to encapsulate business behavior.
+* Refactor a Java service with excessive responsibilities into a controller, service, repository, and notification component.
+* Write a Spring Boot example that avoids circular dependencies between two services.
+* Implement a Spring Boot exception-handling approach that avoids converting all failures into successful HTTP responses.
+* Refactor a repository abstraction that hides important query behavior into a more explicit design.
+* Write a Java example demonstrating hidden shared mutable state and make it thread-safe without relying on global variables.
+* Refactor duplicated discount-calculation logic into a maintainable object-oriented design.
+* Implement a Java solution that replaces scattered object creation with a suitable Factory while avoiding unnecessary abstraction.
+* Write a Spring Boot example that separates API DTOs from persistence entities.
+* Create a JUnit test suite that characterizes the behavior of a legacy class before refactoring it.
+* Write a Java example and tests demonstrating how to refactor an anti-pattern incrementally while preserving existing behavior.

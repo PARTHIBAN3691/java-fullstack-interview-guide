@@ -1,0 +1,30 @@
+* How do you configure streaming replication in PostgreSQL?
+* How do you configure primary-replica replication in MySQL?
+* What are the prerequisites for configuring PostgreSQL streaming replication?
+* What are the prerequisites for configuring MySQL binary log replication?
+* How do replication slots work in PostgreSQL?
+* What is the purpose of WAL archiving in PostgreSQL replication?
+* How do binary logs and relay logs work in MySQL?
+* How do you monitor replication status in PostgreSQL?
+* How do you monitor replication status in MySQL?
+* How do you measure replication lag in a production environment?
+* How do you identify whether replication lag is caused by network latency or replica processing delays?
+* How do you configure a Spring Boot application to use separate read and write database connections?
+* How do you implement read-write routing using Spring's AbstractRoutingDataSource?
+* How do you configure multiple DataSources in Spring Boot?
+* How do you prevent read-only transactions from being routed to the primary database unnecessarily?
+* How do you ensure write operations always go to the primary database?
+* How do you handle a read-after-write request when replicas are asynchronous?
+* How do you configure connection pools for primary and replica databases?
+* How do you implement health checks for primary and replica database connections?
+* How do you handle replica unavailability in a Java application?
+* How do you configure connection timeouts and retries during database failover?
+* How do you distinguish a replica that is unavailable from one that is healthy but lagging?
+* How do you validate data consistency between a primary database and its replicas?
+* How do you handle schema migrations in a replicated database environment?
+* How do you prevent application deployments from breaking replication compatibility?
+* How do you configure PostgreSQL synchronous_standby_names and synchronous_commit?
+* How do MySQL GTIDs simplify replication management?
+* How do replication filters affect data consistency?
+* How do you perform a controlled switchover from primary to standby?
+* How do you test database failover and application recovery?

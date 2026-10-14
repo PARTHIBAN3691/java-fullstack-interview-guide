@@ -1,0 +1,30 @@
+* Write a Kubernetes YAML manifest for a StatefulSet with three replicas.
+* Write a headless Service manifest required by a StatefulSet.
+* Write a StatefulSet manifest that uses a volumeClaimTemplate for persistent storage.
+* Write a StatefulSet manifest that uses a specific StorageClass and requests 10Gi of storage per replica.
+* Write a StatefulSet manifest for a MySQL database with persistent storage.
+* Write a StatefulSet manifest for a PostgreSQL database with readiness, liveness, and startup probes.
+* Write a StatefulSet manifest that loads database credentials from a Kubernetes Secret.
+* Write a StatefulSet manifest that configures CPU and memory requests and limits.
+* Write a StatefulSet manifest with pod anti-affinity to spread replicas across nodes.
+* Write a StatefulSet manifest using topology spread constraints across availability zones.
+* Write a StatefulSet manifest that uses the Parallel podManagementPolicy.
+* Write a StatefulSet manifest that uses the OnDelete update strategy.
+* Write a StatefulSet manifest that performs a partitioned rolling update.
+* Write a StatefulSet manifest that uses a PVC retention policy to retain storage when the StatefulSet is deleted or scaled down.
+* Write a StatefulSet manifest with a graceful termination period and a preStop hook.
+* Write a StatefulSet manifest that mounts a TLS certificate and private key from a Secret.
+* Write a StatefulSet manifest with a read-only root filesystem and non-root container execution.
+* Write a NetworkPolicy that allows database replication traffic only between Pods belonging to the same StatefulSet application.
+* Write a PodDisruptionBudget for a three-replica stateful application.
+* Write a Kubernetes Job manifest that performs a database backup using credentials from a Secret.
+* Write a CronJob manifest that runs scheduled backups for a database StatefulSet.
+* Write a shell command sequence to inspect StatefulSet status, Pod readiness, PVCs, and storage events.
+* Write kubectl commands to scale a StatefulSet and verify the creation order of its Pods.
+* Write a shell script that identifies StatefulSet Pods whose PVCs are not Bound.
+* Write a shell script that checks whether every StatefulSet replica is Ready.
+* Write a shell script that lists the persistent volume claims associated with each StatefulSet replica.
+* Write a Kubernetes manifest for a StatefulSet using a ConfigMap for non-sensitive database configuration.
+* Write a manifest that configures a StatefulSet to use a mounted persistent volume for application data.
+* Write a deployment-validation script that checks StatefulSet rollout status and stops if any replica is unhealthy.
+* Write a disaster-recovery runbook or automation script for restoring a database StatefulSet from a backup and validating data integrity.

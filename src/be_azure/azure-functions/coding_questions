@@ -1,0 +1,21 @@
+
+* Write a Java Azure Function using `@FunctionName` and `@HttpTrigger` that accepts a GET request and returns a greeting.
+* Implement an HTTP-triggered Java function that accepts a JSON request body and converts it into a Java POJO.
+* Develop a Java Azure Function that validates an incoming order request and returns appropriate HTTP status codes.
+* Write a Java Azure Function that accepts an order ID, retrieves the order from a database, and returns the result as JSON.
+* Implement a Timer-triggered Java function that runs periodically and logs the execution timestamp.
+* Write a Java Azure Function that reads a message from Azure Queue Storage and processes the message payload.
+* Implement a Blob Storage-triggered Java function that reads a file and calculates its record count.
+* Develop an Event Hub-triggered Java function that parses incoming JSON events and validates required fields.
+* Write Java code for an Azure Function that uploads processed data to Azure Blob Storage using the Azure SDK.
+* Implement a Java Azure Function that accesses Azure Key Vault using managed identity.
+* Develop an idempotent message-processing function that uses a database table to track processed event IDs.
+* Write Java code to implement exponential backoff for retrying transient failures from an external REST API.
+* Implement a poison-message handling strategy for a queue-triggered function after a configured number of failed attempts.
+* Develop a Java Azure Function that processes a large CSV file using streaming rather than loading the entire file into memory.
+* Write a function that calls an external REST API using Java's `HttpClient` with connection and request timeouts.
+* Implement a Java Azure Function that publishes an event to Azure Service Bus after validating an order.
+* Write a unit test for an HTTP-triggered Java Azure Function that verifies the response status and response body.
+* Implement structured logging with correlation IDs in a Java Azure Function to support distributed tracing.
+* Develop a Java Azure Function that implements a transactional outbox workflow for reliable event publishing.
+* Design and implement a Java Azure Functions workflow for order processing, including HTTP ingestion, Service Bus messaging, database persistence, retries, dead-letter handling, and monitoring.

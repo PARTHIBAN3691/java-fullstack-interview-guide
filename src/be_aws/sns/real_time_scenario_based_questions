@@ -1,0 +1,21 @@
+
+* A Spring Boot application successfully publishes messages to SNS, but the subscribed SQS queue receives no messages. How would you troubleshoot the issue?
+* An SNS topic has multiple subscribers, but only one subscriber receives notifications. What configurations would you verify?
+* A Java service publishes duplicate order-created events after a network timeout. How would you prevent duplicate business processing?
+* An SNS message reaches an SQS queue, but the consumer fails to deserialize the JSON payload. How would you investigate and resolve the issue?
+* A production notification service experiences intermittent `AuthorizationError` exceptions while publishing to SNS. How would you troubleshoot IAM roles and topic policies?
+* A subscriber's HTTP endpoint is temporarily unavailable. How does SNS handle delivery, and what configuration changes would you consider?
+* An SNS subscription remains pending confirmation. How would you diagnose and resolve the issue?
+* A Java application publishes events before its database transaction commits. Subscribers occasionally process events for rolled-back transactions. How would you redesign the flow?
+* Your application needs to send different event types to different SQS queues using one SNS topic. How would you implement message filtering?
+* A high-volume event system experiences increased SNS publishing latency and throttling. How would you investigate and improve throughput?
+* An SNS-to-SQS integration delivers a message without the expected application payload structure. How would you investigate raw message delivery and subscription settings?
+* A downstream consumer repeatedly fails to process certain messages. How would you prevent poison messages from blocking progress and support recovery?
+* Two events for the same order are processed out of order, causing inconsistent state. How would you redesign the SNS-based event flow?
+* A business requires strict event ordering for payment notifications. Would you choose an SNS standard or FIFO topic, and how would you configure it?
+* A Java application must notify subscribers in another AWS account. How would you configure the topic policy, subscription, and target permissions?
+* A security review finds that an SNS topic policy allows overly broad publishing access. How would you restrict it without breaking legitimate publishers?
+* A notification platform must process events even if a subscriber is offline for several hours. How would you design message durability and recovery?
+* A production incident requires tracing an order event from a Java publisher through SNS to an SQS consumer. What identifiers, logs, and metrics would you use?
+* A team wants to migrate synchronous REST calls between microservices to asynchronous SNS notifications. What reliability and consistency concerns would you address?
+* SNS publishing costs are increasing rapidly. How would you analyze message volume, payload sizes, subscription patterns, and unnecessary notifications?

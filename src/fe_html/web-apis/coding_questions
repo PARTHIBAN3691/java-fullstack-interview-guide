@@ -1,0 +1,30 @@
+* Write JavaScript code to retrieve JSON data using the Fetch API.
+* Create a function using async and await to fetch data and handle errors.
+* Write code to cancel a Fetch API request using AbortController.
+* Store a username in localStorage and retrieve it when the page loads.
+* Create a sessionStorage example that stores temporary form data.
+* Write JavaScript to remove a specific item from localStorage.
+* Build a small application that synchronizes a theme preference across browser tabs.
+* Write code to retrieve the user's latitude and longitude using the Geolocation API.
+* Create a page that displays an appropriate error message when location access fails.
+* Use the History API to update the URL without reloading the page.
+* Write JavaScript to handle browser back and forward navigation using popstate.
+* Implement a drag-and-drop interface using the HTML Drag and Drop API.
+* Write code to read a selected text file using the File API.
+* Create a file preview using URL.createObjectURL() and revoke the object URL when appropriate.
+* Draw a rectangle and a circle using the Canvas API.
+* Create a Web Worker that performs a computationally expensive task.
+* Write code to send data to and receive messages from a Web Worker.
+* Use AbortController to cancel an ongoing task when a component is removed.
+* Implement lazy loading using the Intersection Observer API.
+* Write code that observes element size changes using the Resize Observer API.
+* Create a button that switches an element into fullscreen mode.
+* Use the Page Visibility API to pause an animation when the page is hidden.
+* Access the user's camera using the MediaDevices API and display the video stream.
+* Write JavaScript to stop all tracks in a MediaStream when the user ends a video session.
+* Create a basic WebSocket client that connects to a server and handles messages.
+* Implement WebSocket reconnection with a delay after an unexpected disconnection.
+* Use the Clipboard API to copy text when a user clicks a button.
+* Create a notification feature using the Notifications API with permission handling.
+* Build a small offline-capable webpage using a Service Worker and Cache API.
+* Develop a web application that combines Fetch, localStorage, Intersection Observer, and Web Workers to retrieve, cache, display, and process data efficiently.

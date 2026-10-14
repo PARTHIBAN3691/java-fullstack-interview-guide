@@ -1,0 +1,35 @@
+* Write Terraform configuration to create an AWS VPC with public and private subnets across two availability zones.
+* Write Terraform configuration to create an Azure Virtual Network with separate web, application, and database subnets.
+* Write Terraform configuration to create a GCP VPC with custom subnet ranges and appropriate firewall rules.
+* Write Terraform configuration that associates separate route tables with public and private AWS subnets.
+* Write Terraform configuration that creates an Internet Gateway and routes public subnet traffic through it.
+* Write Terraform configuration that creates a NAT Gateway with the required public IP and private-subnet routes.
+* Write Terraform configuration to create Security Groups that permit HTTPS traffic to a load balancer and only application traffic to backend instances.
+* Write Terraform configuration to create Network ACL rules that allow approved inbound and outbound traffic while accounting for return traffic.
+* Write Terraform configuration to provision an application load balancer with target groups, health checks, and listener rules.
+* Write Terraform configuration to provision a reverse proxy tier with private backend instances and TLS termination.
+* Write Terraform configuration to create public and private DNS records for an application.
+* Write Terraform configuration to configure private DNS resolution for a private service endpoint.
+* Write Terraform configuration to establish VPC peering between two networks and configure the required routes.
+* Write Terraform configuration to create an AWS Transit Gateway with VPC attachments and dedicated route-table associations.
+* Write Terraform configuration to create a hub-and-spoke network topology with centralized inspection and controlled inter-spoke communication.
+* Write Terraform configuration for a site-to-site VPN with customer gateway, VPN gateway, and required routes.
+* Write Terraform configuration to create private connectivity to a supported managed cloud service without public endpoint access.
+* Write Terraform configuration to enable VPC or VNet flow logs and send them to a centralized logging destination.
+* Write a Python program that parses network flow logs and summarizes accepted and rejected traffic by source, destination, port, and protocol.
+* Write a Python script that identifies cloud security rules permitting unrestricted access to SSH, RDP, or database ports.
+* Write a script that compares subnet CIDR ranges and identifies overlapping address blocks across a list of networks.
+* Write a Python program that validates route-table configurations against an approved network architecture specification.
+* Write a script that checks whether every private subnet has the required routes for approved internal services and outbound access.
+* Write a Python program that performs DNS lookups for a list of services and reports resolution failures, resolved addresses, and response times.
+* Write a script that checks application endpoints in multiple regions and reports HTTP status codes, latency, and connection failures.
+* Write a Python program that monitors VPN tunnel status and generates an alert when connectivity remains unavailable beyond a configured threshold.
+* Write a script that compares BGP route advertisements from primary and backup connectivity links and identifies missing expected prefixes.
+* Write a program that analyzes load balancer health-check results and identifies unhealthy targets and recurring failure patterns.
+* Write a script that inventories cloud network resources and reports unused subnets, unattached gateways, redundant routes, and unassociated network security rules.
+* Write a Terraform module that accepts CIDR ranges and subnet definitions as inputs and creates a reusable multi-zone network.
+* Write a Terraform configuration that creates separate network environments for development, testing, and production with restricted connectivity between them.
+* Write a policy-as-code rule that rejects infrastructure changes exposing management ports to unrestricted public IP ranges.
+* Write a script that verifies Zero Trust network policies by checking whether each workload communication path has an explicit approved rule.
+* Write a script that correlates DNS logs, network flow logs, and firewall logs to help diagnose failed service-to-service connections.
+* Write a network validation program that checks connectivity requirements between application tiers against a declared source-destination-port matrix.

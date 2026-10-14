@@ -1,0 +1,30 @@
+* An e-commerce platform experiences a tenfold increase in traffic during a flash sale. How would you redesign the system to handle the load?
+* A payment service occasionally charges customers twice when requests are retried. How would you investigate and redesign the payment workflow?
+* A food delivery application shows drivers as available even after they have accepted orders. How would you redesign the availability and assignment mechanisms?
+* A social media news feed takes several seconds to load for users following thousands of accounts. How would you optimize feed generation?
+* A video streaming platform experiences buffering during peak hours. How would you identify bottlenecks and improve content delivery?
+* A ticket booking system oversells seats when many users book simultaneously. How would you ensure that each seat is allocated safely?
+* An online banking application must remain available during a database failure without compromising transaction correctness. How would you design failover and recovery?
+* A notification service delivers the same notification multiple times after a consumer restart. How would you prevent duplicate business effects?
+* A search service becomes unavailable when its indexing service fails. How would you decouple search queries from indexing operations?
+* A distributed application experiences high latency because every request calls multiple downstream services sequentially. How would you redesign the communication flow?
+* A file storage service must support large files, resumable uploads, and secure downloads. How would you design the storage and transfer architecture?
+* A payment reconciliation job discovers transactions missing from one system but present in another. How would you design automated detection and resolution?
+* A multi-region application continues accepting writes in two regions during a network partition. How would you prevent conflicting updates?
+* A microservices deployment causes cascading failures because multiple services retry failed requests simultaneously. How would you stabilize the system?
+* A database reaches its connection limit during peak traffic. How would you identify the cause and redesign connection management?
+* A distributed cache fails and causes a sudden increase in database traffic. How would you protect the database and restore normal operation?
+* A job processing platform must recover after a worker crashes halfway through a task. How would you handle retries, checkpoints, and duplicate execution?
+* A financial application must process millions of transactions while maintaining a complete audit trail. How would you design storage and event processing?
+* A ride-booking application assigns the same driver to multiple riders. How would you design concurrency control and assignment consistency?
+* An inventory system must support multiple warehouses and real-time stock updates. How would you prevent overselling and handle delayed updates?
+* A global API platform must enforce customer-specific rate limits across multiple regions. How would you coordinate quotas and handle network partitions?
+* A legacy monolith must be decomposed into microservices without interrupting business operations. How would you plan the migration?
+* A real-time dashboard receives millions of events but must display metrics within seconds. How would you design ingestion, aggregation, and query processing?
+* A banking system must recover from a regional outage with minimal data loss. How would you design replication, backups, RTO, and RPO?
+* A SaaS platform has multiple tenants with different workloads and service-level requirements. How would you prevent noisy-neighbor problems?
+* An authentication service outage prevents users from accessing all applications. How would you remove this critical dependency and improve resilience?
+* A distributed order workflow fails after payment succeeds but before inventory is reserved. How would you recover the order without creating inconsistent business state?
+* A large application must migrate from one database to another while continuing to accept writes. How would you perform the migration and validate consistency?
+* A platform's infrastructure cost increases significantly after scaling to meet traffic demands. How would you optimize cost without violating availability and latency targets?
+* You are asked to design a new enterprise platform from scratch. How would you prioritize requirements, architecture decisions, risk analysis, capacity planning, and implementation phases?

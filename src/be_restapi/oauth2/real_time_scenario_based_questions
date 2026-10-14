@@ -1,0 +1,30 @@
+* A user completes login successfully but receives HTTP 401 when calling a protected API. How would you troubleshoot the OAuth flow?
+* A client receives an access token, but the resource server rejects it because of an audience mismatch. How would you resolve the configuration?
+* An application receives an authorization code but fails to exchange it for an access token. What would you investigate?
+* A mobile application uses the Authorization Code flow without PKCE. What security risks exist, and how would you correct the implementation?
+* An OAuth client accepts arbitrary redirect URIs. How would you assess and fix the vulnerability?
+* A user reports that the application redirects to an unexpected website after login. How would you investigate redirect URI validation?
+* A refresh token is stolen and used after the legitimate user has refreshed it. How would you detect and respond to the incident?
+* A microservice forwards a user's access token to an unrelated downstream service. What security risks does this create?
+* A backend service uses the Client Credentials grant but shares one client secret across all services. How would you redesign the authentication model?
+* A resource server accepts an ID token as an API access token. Why is this dangerous, and how would you fix it?
+* An API accepts a token with the correct signature but an incorrect issuer. Which validations are missing?
+* A token contains the required scope, but the user accesses another tenant's data. How would you strengthen authorization?
+* A resource server uses opaque-token introspection, but the authorization server becomes unavailable. How would you balance security and availability?
+* A user loses access immediately after logout in one environment but retains access in another. How would you investigate token revocation behavior?
+* A client repeatedly requests new access tokens because refresh-token handling is incorrect. How would you troubleshoot and reduce token requests?
+* An authorization server rotates its signing keys, and several resource servers start rejecting tokens. How would you resolve the issue?
+* A service receives HTTP 403 with an insufficient_scope error. How should the client and API owner investigate the problem?
+* A production API leaks access tokens into application logs. What immediate and long-term actions would you take?
+* A browser-based application stores long-lived refresh tokens in local storage. What risks exist, and what alternatives would you consider?
+* Two OAuth clients share the same client ID and secret across development and production. What problems could this cause?
+* An attacker replays a stolen bearer token from another device. What controls could reduce the risk?
+* A client uses broad scopes such as admin:all for every API call. How would you redesign scope allocation?
+* An API gateway validates access tokens, but backend services trust client-supplied identity headers. How would you secure the service boundary?
+* An external identity provider changes its issuer URL during migration. How would you update the integration safely?
+* A scheduled job calls a protected API but has no user present to authorize access. Which OAuth flow should it use, and why?
+* A frontend application needs to access an API on behalf of a signed-in user. Which OAuth flow would you recommend?
+* A service needs to call another service while preserving user-specific authorization. How would you choose between token forwarding and token exchange?
+* A client secret is exposed in a public source-code repository. What incident-response steps would you take?
+* A token issued for a test environment is accepted in production. What audience, issuer, key-management, or environment-isolation controls may be missing?
+* Your organization is migrating from a legacy authentication mechanism to OAuth 2.0. How would you plan the migration without disrupting existing API clients?

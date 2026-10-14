@@ -1,0 +1,30 @@
+* Explain the end-to-end architecture of a Spring Cloud-based microservices platform.
+* How would you design a highly available Eureka Server deployment?
+* What are Eureka self-preservation and heartbeat mechanisms, and how do they affect service discovery?
+* How does Spring Cloud Gateway handle routing, filtering, and request forwarding internally?
+* How would you design an API Gateway to avoid becoming a single point of failure?
+* How would you implement dynamic routing and service discovery through Spring Cloud Gateway?
+* How do you secure an API Gateway while avoiding duplicated security logic across services?
+* How would you design centralized configuration management with Spring Cloud Config for multiple environments?
+* How would you handle configuration changes that require coordinated updates across multiple microservices?
+* What are the consistency and availability trade-offs of centralized configuration in a distributed system?
+* How would you prevent cascading failures when multiple downstream services become unavailable?
+* How do circuit breakers, retries, timeouts, and bulkheads interact, and how should they be ordered?
+* How would you prevent retry storms and excessive load during downstream service failures?
+* How would you design a resilient OpenFeign client for high-throughput production traffic?
+* How would you implement load balancing when service instances have different capacities?
+* What are the limitations of client-side load balancing compared with service-mesh-based load balancing?
+* How would you design distributed tracing across asynchronous messaging and synchronous HTTP calls?
+* How would you propagate tracing context through Kafka messages using Spring Cloud Stream?
+* How would you handle duplicate message delivery and idempotent processing in event-driven microservices?
+* How would you design reliable event publishing using the transactional outbox pattern?
+* How would you manage distributed transactions across services without relying on a global database transaction?
+* How would you implement a saga pattern in a Spring Cloud-based application?
+* How would you ensure backward compatibility when multiple microservices deploy independently?
+* How would you implement rate limiting across multiple Gateway instances?
+* How would you prevent authentication token propagation from exposing credentials to unintended downstream services?
+* How would you design service-to-service authorization for a large microservices ecosystem?
+* How would you identify and resolve memory, connection-pool, and thread-pool bottlenecks in a Spring Cloud system?
+* How would you implement observability using logs, metrics, traces, and health indicators?
+* How would you plan a migration from Netflix Ribbon and Hystrix to Spring Cloud LoadBalancer and Resilience4j?
+* How would you evaluate whether Spring Cloud, a service mesh, or a combination of both is appropriate for a production platform?

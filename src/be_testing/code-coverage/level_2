@@ -1,0 +1,30 @@
+* How would you design a code coverage strategy for a large enterprise Java application?
+* How do you determine an appropriate coverage threshold for a production codebase?
+* How do you balance code coverage targets with test quality and maintainability?
+* How do you distinguish meaningful coverage from tests that execute code without validating behavior?
+* How do you improve branch coverage in code containing deeply nested conditions?
+* How do you measure condition coverage for compound Boolean expressions?
+* How do you distinguish branch coverage from modified condition/decision coverage?
+* How do you measure coverage for exception paths that are difficult to trigger?
+* How do you test defensive code paths that depend on rare system failures?
+* How do you measure code coverage in a multithreaded Java application?
+* How do you interpret coverage results for asynchronous tasks and background jobs?
+* How do you measure coverage for reflection-based code and dynamically invoked methods?
+* How do you handle coverage instrumentation in applications using multiple class loaders?
+* How do you measure coverage in a multi-module Maven or Gradle project?
+* How do you aggregate coverage reports across multiple modules?
+* How do you prevent integration tests from masking gaps in unit test coverage?
+* How do you measure coverage for code that interacts with databases, queues, and external APIs?
+* How do you configure JaCoCo for unit, integration, and end-to-end test execution?
+* How do you merge coverage execution data from multiple test stages?
+* How do you implement changed-code coverage for pull requests?
+* How do you distinguish newly introduced coverage gaps from legacy coverage gaps?
+* How do you enforce coverage quality gates without blocking unrelated changes?
+* How do you handle coverage fluctuations caused by nondeterministic tests?
+* How do you investigate a coverage report that shows zero coverage despite successful test execution?
+* How do you measure coverage when tests run inside Docker containers or separate JVM processes?
+* How do you compare code coverage tools such as JaCoCo, Cobertura, and IntelliJ coverage?
+* How does mutation testing complement code coverage analysis?
+* How do you use coverage data to identify untested business-critical logic?
+* How do you evaluate coverage metrics for microservices with different testing strategies?
+* How would you build an automated coverage governance framework for hundreds of Java repositories?

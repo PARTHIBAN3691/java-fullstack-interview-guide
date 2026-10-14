@@ -1,0 +1,30 @@
+* How would you design a highly available cloud architecture for a globally distributed enterprise application?
+* How would you design a cloud landing zone with account or subscription separation, centralized networking, identity, logging, and security governance?
+* How would you establish consistent architecture standards across AWS, Azure, and GCP without hiding important platform differences?
+* How would you select a compute architecture for workloads with unpredictable traffic, long-running jobs, and strict latency requirements?
+* How would you design a cloud-native application that combines virtual machines, containers, managed services, and serverless functions?
+* How would you handle cold starts, execution limits, and concurrency throttling in a serverless architecture?
+* How would you design storage for a workload that requires low-latency database access, durable object storage, and long-term archival?
+* How would you migrate a large on-premises relational database to a managed cloud database with minimal downtime?
+* How would you design database failover and recovery when the primary region becomes unavailable?
+* How would you choose between synchronous and asynchronous cross-region data replication?
+* How would you design a multi-region application when global data consistency conflicts with latency and availability requirements?
+* How would you design a cloud network topology that isolates production, non-production, shared services, and management workloads?
+* How would you troubleshoot asymmetric routing, overlapping IP ranges, and transitive connectivity issues in a hybrid cloud network?
+* How would you design private connectivity between on-premises data centers and multiple cloud providers with redundant paths?
+* How would you design global traffic routing using DNS, health checks, regional load balancers, and CDN caching?
+* How would you prevent stale DNS records and long-lived client connections from delaying regional failover?
+* How would you design autoscaling for a system where application capacity depends on database connections and downstream service limits?
+* How would you prevent autoscaling from creating cascading failures during a sudden traffic surge?
+* How would you design cross-account or cross-subscription IAM with least privilege and centralized identity federation?
+* How would you detect and contain compromised cloud credentials across multiple accounts and regions?
+* How would you design a zero-trust security model for workloads distributed across cloud and on-premises environments?
+* How would you design disaster recovery to meet strict recovery time and recovery point objectives across multiple regions?
+* How would you test regional disaster recovery without disrupting production traffic?
+* How would you decide which workloads should run in hybrid cloud versus fully cloud-native environments?
+* How would you evaluate multi-cloud resilience benefits against duplicated operations, data transfer costs, and platform-specific dependencies?
+* How would you design a multi-cloud deployment strategy that avoids unnecessary portability abstractions while maintaining operational consistency?
+* How would you implement infrastructure governance, policy enforcement, and compliance reporting across AWS, Azure, and GCP?
+* How would you optimize cloud costs using rightsizing, autoscaling, committed-use discounts, spot capacity, and storage lifecycle policies?
+* How would you investigate a sudden increase in cross-region data transfer costs and reduce unnecessary network traffic?
+* How would you build a cloud financial management model that allocates shared infrastructure costs accurately to application teams?

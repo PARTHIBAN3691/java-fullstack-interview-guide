@@ -1,0 +1,21 @@
+
+* How do you configure a Java application to authenticate with AWS using the default credentials provider chain?
+* How does the AWS SDK for Java obtain temporary credentials from an IAM role?
+* How do you implement least-privilege access for a Java microservice?
+* How do IAM policy statements use `Effect`, `Action`, `Resource`, and `Condition`?
+* What is the difference between an explicit deny and an implicit deny in IAM?
+* How do IAM roles and resource-based policies work together when accessing an S3 bucket?
+* How do you securely manage application credentials using AWS Secrets Manager?
+* How do you encrypt and decrypt sensitive application data using AWS KMS from Java?
+* What is envelope encryption, and when would you use it?
+* How do you configure HTTPS and TLS for a Java application hosted on AWS?
+* How would you protect a REST API using Amazon API Gateway and AWS IAM authorization?
+* How do you implement OAuth 2.0 or JWT-based authentication for a Spring Boot microservice deployed on AWS?
+* How do you securely store and rotate database credentials for an Amazon RDS database?
+* How do you use AWS CloudTrail to investigate suspicious API activity?
+* How do you configure security groups to restrict access to an application running on EC2?
+* How do VPC endpoints improve the security of private access to AWS services?
+* How do you prevent sensitive data from appearing in application logs and monitoring systems?
+* How do you protect an application from SQL injection, cross-site scripting, and insecure deserialization?
+* How do AWS WAF and AWS Shield differ in the threats they help mitigate?
+* How do you scan container images for vulnerabilities before deploying a Java microservice to Amazon ECS or EKS?

@@ -1,0 +1,95 @@
+**AI Agent Fundamentals**
+* What is an AI agent, and how does it differ from a traditional chatbot?
+* What are the core components of an AI agent?
+* What is Agentic AI, and what problems does it solve?
+* What is the difference between an AI model and an AI agent?
+
+**Agent Architecture**
+* What are the main layers of an AI agent architecture?
+* What are the responsibilities of the model, tools, memory, and orchestration components?
+* What is the difference between a single-agent architecture and a multi-agent architecture?
+
+**Agent Planning and Reasoning**
+* What is planning in an AI agent?
+* How does an AI agent break a complex task into smaller steps?
+* What is the difference between reasoning and execution in an AI agent?
+
+**Tool Calling and Tool Execution**
+* What is tool calling in an AI agent?
+* How does an AI agent decide which tool to invoke?
+* What is the difference between a tool call and a normal model response?
+
+**Agent Memory**
+* Why does an AI agent need memory?
+* What is the difference between agent memory and an LLM's context window?
+* How can an agent use previous interactions to improve its responses?
+
+**Short-Term and Long-Term Memory**
+* What is short-term memory in an AI agent?
+* What is long-term memory in an AI agent?
+* How do short-term and long-term memory differ in storage, retrieval, and persistence?
+
+**Autonomous vs Human-in-the-Loop Agents**
+* What is an autonomous AI agent?
+* What is a human-in-the-loop AI agent?
+* When should an AI agent ask a human for approval?
+
+**ReAct Pattern**
+* What does ReAct stand for in AI agent design?
+* How does the Reasoning and Acting pattern work?
+* Why does a ReAct agent alternate between reasoning and tool execution?
+
+**Reflection and Self-Correction**
+* What is reflection in an AI agent?
+* How can an AI agent identify and correct its own mistakes?
+* What is the difference between reflection and retrying the same operation?
+
+**Multi-Agent Systems**
+* What is a multi-agent system?
+* Why would a system use multiple specialized AI agents instead of one agent?
+* What are the common challenges of multi-agent systems?
+
+**Agent Orchestration**
+* What is agent orchestration?
+* What is the role of an orchestrator in an AI agent system?
+* What is the difference between sequential and parallel agent execution?
+
+**Agent Communication Protocols**
+* Why do AI agents need communication protocols?
+* How can agents exchange messages, tasks, and results?
+* What is the purpose of a shared message schema between agents?
+
+**Agent State and Checkpointing**
+* What is agent state?
+* What is checkpointing in an AI agent workflow?
+* Why is preserving agent state important when a workflow is interrupted?
+
+**Agent Workflow Design**
+* What is an AI agent workflow?
+* What is the difference between a deterministic workflow and an autonomous agent workflow?
+* What factors should be considered when designing an agent workflow?
+
+**Agent Permissions and Sandboxing**
+* Why should an AI agent have restricted permissions?
+* What is sandboxing in AI agent execution?
+* What is the principle of least privilege, and how does it apply to agents?
+
+**Agent Reliability and Evaluation**
+* How can the reliability of an AI agent be measured?
+* What is the difference between task success rate and response quality?
+* Why should AI agent workflows be tested with repeatable evaluations?
+
+**Agent Observability**
+* What is observability in an AI agent system?
+* What logs and metrics should be collected for agent executions?
+* Why is tracing important when an agent invokes multiple tools?
+
+**Agent Security and Prompt Injection**
+* What is prompt injection in an AI agent?
+* How can malicious instructions enter an agent through external content?
+* Why should tool outputs be treated as potentially untrusted input?
+
+**Human Approval and Escalation**
+* What is human approval in an AI agent workflow?
+* What is escalation in an AI agent system?
+* Which types of agent actions should require human approval?

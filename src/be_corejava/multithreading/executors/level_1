@@ -1,0 +1,21 @@
+
+* What is the difference between `Runnable` and `Callable` when submitting tasks to an executor?
+* What is a `Future`, and how does it work with `ExecutorService`?
+* How does the `Future.get()` method behave when the task has not completed?
+* What is the difference between `Future.get()` and `Future.isDone()`?
+* How can you cancel a task submitted to an `ExecutorService`?
+* What is the difference between `Future.cancel(true)` and `Future.cancel(false)`?
+* What happens when an exception occurs inside a task submitted using `execute()`?
+* How are exceptions handled when a task is submitted using `submit()`?
+* What is the difference between `newFixedThreadPool()` and `newCachedThreadPool()`?
+* What happens when all threads in a fixed thread pool are busy and new tasks are submitted?
+* What is the default task queue used by `Executors.newFixedThreadPool()`?
+* What are the limitations of using the factory methods provided by the `Executors` class?
+* How do you create a thread pool using `ThreadPoolExecutor` directly?
+* What are core pool size and maximum pool size in `ThreadPoolExecutor`?
+* What is the purpose of the keep-alive time in a thread pool?
+* What is a `RejectedExecutionHandler`?
+* What are the different rejection policies available in `ThreadPoolExecutor`?
+* How can you wait for all submitted tasks to complete before shutting down an executor?
+* What is the purpose of `invokeAll()` and `invokeAny()`?
+* How does `ScheduledExecutorService` differ from a regular `ExecutorService`?

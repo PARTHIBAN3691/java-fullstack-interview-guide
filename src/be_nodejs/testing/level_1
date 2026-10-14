@@ -1,0 +1,30 @@
+* How do you structure a testing strategy for a Node.js application?
+* How do you write unit tests for functions that depend on external services?
+* How do you test Express.js routes using Jest and Supertest?
+* What is Supertest, and how does it help test HTTP endpoints?
+* How do you test GET, POST, PUT, and DELETE API endpoints?
+* How do you validate HTTP status codes and response bodies in API tests?
+* How do you test request validation and error responses?
+* How do you test middleware in an Express.js application?
+* How do you mock a database dependency in a unit test?
+* How do you test database integration using a real test database?
+* What is the difference between mocking, stubbing, and spying?
+* How do you mock an imported module in Jest?
+* How do you test a function that uses Node.js callbacks?
+* How do you test rejected Promises and thrown exceptions?
+* How do you test timeout and retry logic?
+* How do you test code that uses setTimeout() or setInterval()?
+* What are fake timers in Jest, and when should you use them?
+* How do you test event-driven code using EventEmitter?
+* How do you test file-system operations without modifying real files?
+* How do you test code that reads environment variables?
+* How do you isolate test cases to prevent shared-state issues?
+* How do you test authentication middleware using mocked user data?
+* How do you test authorization rules for different user roles?
+* How do you test JWT-based authentication in a Node.js application?
+* How do you test an API that calls an external REST service?
+* How do you test pagination, filtering, and sorting in APIs?
+* How do you generate and interpret a code coverage report?
+* What is the difference between line coverage, branch coverage, and function coverage?
+* How do you run tests in watch mode during development?
+* How do you handle test setup and cleanup in a Node.js project?

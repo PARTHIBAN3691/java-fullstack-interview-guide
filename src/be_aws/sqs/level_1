@@ -1,0 +1,21 @@
+
+* How do you send a message to an SQS queue using AWS SDK for Java v2?
+* How do you receive messages from SQS using Java?
+* How do you delete a message from SQS after processing it successfully?
+* How do you create an SQS queue programmatically using Java?
+* How do you configure a Spring Boot application to send and receive SQS messages?
+* How do you configure IAM permissions for a Java application to access a specific SQS queue?
+* What is the difference between `SendMessageRequest` and `SendMessageBatchRequest`?
+* How do you process multiple messages in a single SQS receive request?
+* What is the difference between message visibility timeout and message retention period?
+* How do you configure long polling for an SQS queue?
+* How do you configure a dead-letter queue and its redrive policy?
+* How does the `maxReceiveCount` setting affect message processing?
+* How do you configure an SQS FIFO queue with message group IDs and deduplication IDs?
+* How do message ordering and deduplication work in FIFO queues?
+* How do you handle exceptions when processing SQS messages in Java?
+* How do you prevent a message from being processed concurrently by multiple consumers?
+* How do you configure server-side encryption for an SQS queue?
+* How do you monitor queue depth, message age, and processing failures using CloudWatch?
+* How do you integrate an SNS topic with an SQS queue?
+* How do you write unit tests for an SQS producer and consumer using JUnit and Mockito?

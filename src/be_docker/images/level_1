@@ -1,0 +1,30 @@
+* How do you create a Docker image for a Spring Boot application?
+* How do you build a Docker image using a custom Dockerfile name?
+* How do you tag a local image before pushing it to a registry?
+* How do you push a Docker image to Docker Hub?
+* How do you authenticate with a private Docker registry?
+* How do you pull a private image and run a container from it?
+* What is the difference between docker build and docker buildx build?
+* How does Docker layer caching work during image builds?
+* How can you optimize a Dockerfile to reuse cached layers?
+* Why should dependency files be copied before application source code in a Java Dockerfile?
+* How do you reduce the size of a Spring Boot Docker image?
+* What is the difference between Alpine-based and Debian-based Java images?
+* What are the trade-offs of using a slim base image?
+* How do multi-stage builds work in Docker?
+* How would you create a multi-stage Docker image for a Maven-based Java application?
+* How do you inspect the layers that contribute most to an image's size?
+* How can you remove unused and dangling images safely?
+* What is the difference between docker image prune and docker system prune?
+* How do you retag an existing image without rebuilding it?
+* What happens when you pull an image tag that already exists locally?
+* How can you identify the source and build history of a Docker image?
+* How do you configure image naming and tagging in a CI/CD pipeline?
+* How can you create separate Docker images for development and production?
+* How do you manage application configuration without embedding it in an image?
+* Why should secrets not be copied into Docker image layers?
+* How do you use .dockerignore to improve image build performance?
+* How can you build a Docker image for a specific CPU architecture?
+* How do you verify that an image pushed to a registry matches the local image?
+* How do you troubleshoot a failed Docker image pull?
+* How do you handle image versioning and rollback in a Spring Boot deployment?

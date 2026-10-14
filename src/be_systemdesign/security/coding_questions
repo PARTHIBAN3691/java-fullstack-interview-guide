@@ -1,0 +1,30 @@
+* Write a Java utility that securely hashes passwords using Argon2 or bcrypt.
+* Implement password verification without storing plain-text passwords.
+* Write a Java method that generates a cryptographically secure random token.
+* Implement JWT creation and validation with signature, expiration, issuer, and audience checks.
+* Write a Spring Security configuration that protects REST endpoints using role-based access control.
+* Implement method-level authorization in a Spring Boot service.
+* Write a Java filter that validates bearer tokens and rejects malformed authorization headers.
+* Implement a secure refresh-token rotation mechanism with reuse detection.
+* Write a Java service that checks token revocation against a centralized store.
+* Implement an authorization policy that verifies whether a user owns the requested resource.
+* Write a Java utility that uses parameterized SQL queries to prevent SQL injection.
+* Implement input validation for a REST API using Jakarta Bean Validation.
+* Write a Spring Boot exception handler that returns safe error responses without exposing internal details.
+* Implement a logging filter that masks passwords, access tokens, and sensitive personal information.
+* Write a Java utility that encrypts and decrypts data using authenticated encryption such as AES-GCM.
+* Implement a key-rotation mechanism that supports decrypting data encrypted with older key versions.
+* Write a Java example that signs a payload using a digital signature and verifies its integrity.
+* Implement a secure file-upload endpoint with file-size limits, content validation, and safe storage paths.
+* Write a rate limiter using the token-bucket algorithm to protect an API.
+* Implement a brute-force protection mechanism that tracks failed login attempts and applies temporary lockouts.
+* Write a Java method that compares secrets or authentication tokens without ordinary early-exit string comparison.
+* Implement a multi-tenant authorization check that verifies tenant ownership before database access.
+* Write a Spring Security configuration that enables CSRF protection for cookie-based browser authentication.
+* Implement a request-signing mechanism that verifies timestamp, nonce, and request signature to reduce replay attacks.
+* Write a Java service that creates tamper-evident audit events for sensitive operations.
+* Implement a Kafka producer and consumer configuration using TLS and SASL authentication.
+* Write a unit test suite for authorization rules, including cross-user and cross-tenant access attempts.
+* Implement secure secret retrieval through an external secrets manager rather than hardcoded configuration.
+* Write a Java utility that validates uploaded file metadata and prevents path traversal.
+* Build a Spring Boot application integrating OAuth 2.0 resource-server authentication, fine-grained authorization, audit logging, and secure error handling.

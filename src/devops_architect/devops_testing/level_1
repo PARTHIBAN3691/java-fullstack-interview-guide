@@ -1,0 +1,120 @@
+
+**Unit Testing in Pipelines**
+* How would you configure a Maven or Gradle pipeline to execute unit tests and publish test reports?
+* How would you prevent flaky unit tests from blocking every build while preserving release quality?
+* How would you enforce minimum code coverage for changed code rather than the entire codebase?
+* How would you test Spring Boot services that depend on external APIs without calling those APIs?
+* How would you parallelize unit tests without introducing shared-state failures?
+* How would you distinguish test failures from build infrastructure failures?
+
+**Integration Testing**
+* How would you test a Spring Boot service that depends on PostgreSQL, Kafka, and Redis?
+* How would you use Testcontainers to create reproducible integration-test environments?
+* How would you manage test database initialization and cleanup in parallel pipeline jobs?
+* How would you test retry logic, transaction boundaries, and failure recovery across service dependencies?
+* How would you handle integration tests that depend on third-party systems with limited availability?
+* How would you reduce integration-test execution time without removing meaningful coverage?
+
+**API Testing**
+* How would you automate REST API tests using REST Assured or Postman in a CI/CD pipeline?
+* How would you validate API schemas, response headers, status codes, and business rules?
+* How would you test authentication, authorization, token expiry, and invalid credentials?
+* How would you test pagination, sorting, filtering, rate limiting, and idempotency?
+* How would you manage test data for APIs that create or modify persistent records?
+* How would you test API compatibility when multiple clients use different API versions?
+
+**Contract Testing**
+* How would you introduce consumer-driven contract testing across independently deployed microservices?
+* How would you use Pact or a similar tool to publish, verify, and version contracts?
+* How would you prevent a provider deployment from breaking existing consumers?
+* How would you handle a contract change that is backward-compatible for some consumers but not others?
+* How would you integrate contract verification into pull-request and deployment pipelines?
+* How would you manage contract tests when consumers and providers are released at different times?
+
+**End-to-End Testing**
+* How would you design E2E tests for a multi-service business workflow?
+* How would you manage test users, database state, and cleanup for parallel browser tests?
+* How would you reduce flaky E2E tests caused by asynchronous processing and network delays?
+* How would you decide which scenarios belong in E2E tests versus API or integration tests?
+* How would you run browser tests across multiple browsers and viewport sizes?
+* How would you capture screenshots, logs, and traces when an E2E test fails?
+
+**Smoke Testing**
+* How would you design a smoke-test suite that validates a release within a few minutes?
+* How would you run smoke tests after Kubernetes deployments and block traffic when critical checks fail?
+* How would you test critical user journeys without modifying production business data?
+* How would you distinguish a transient dependency failure from a failed deployment?
+* How would you design smoke tests for services that depend on databases, caches, and message brokers?
+* How would you decide when smoke-test failures should trigger an automatic rollback?
+
+**Regression Testing**
+* How would you select regression tests based on the files, modules, and APIs changed in a commit?
+* How would you maintain regression coverage for a legacy application with limited automated tests?
+* How would you detect and quarantine flaky regression tests without hiding genuine defects?
+* How would you prioritize regression tests when the pipeline execution-time budget is limited?
+* How would you run regression tests against backward-compatible API and database changes?
+* How would you measure whether a regression suite detects defects effectively?
+
+**Performance Testing**
+* How would you design a load test that reflects realistic user behavior and traffic distribution?
+* How would you establish performance baselines and acceptable p95/p99 latency thresholds?
+* How would you integrate JMeter, Gatling, or k6 into a release pipeline?
+* How would you test an application under sudden traffic spikes and sustained overload?
+* How would you distinguish application bottlenecks from database, network, and infrastructure bottlenecks?
+* How would you prevent performance tests from overwhelming shared test environments?
+
+**Security Testing**
+* How would you integrate SAST, DAST, SCA, and secret scanning into a CI/CD pipeline?
+* How would you establish severity thresholds that block releases without overwhelming developers with false positives?
+* How would you manage vulnerability exceptions, expiry dates, and security approvals?
+* How would you test authentication and authorization controls in REST APIs?
+* How would you prevent secrets from appearing in pipeline logs, artifacts, or test reports?
+* How would you test container images and third-party dependencies before deployment?
+
+**Infrastructure Testing**
+* How would you test IaC changes before provisioning cloud resources?
+* How would you use policy-as-code to enforce networking, encryption, tagging, and access-control requirements?
+* How would you test infrastructure modules independently of application deployments?
+* How would you validate network connectivity, DNS, IAM permissions, and storage access after provisioning?
+* How would you test infrastructure changes safely in an ephemeral environment?
+* How would you detect infrastructure drift through automated tests?
+
+**Terraform Testing**
+* How would you combine `terraform fmt`, `validate`, `plan`, security scanning, and policy checks in a pipeline?
+* How would you test reusable Terraform modules without affecting production resources?
+* How would you use Terratest to verify that provisioned infrastructure behaves as expected?
+* How would you test Terraform changes that require cloud credentials while minimizing privilege exposure?
+* How would you detect unintended resource replacement or deletion before applying a Terraform plan?
+* How would you test module changes across development, staging, and production configurations?
+
+**Container Testing**
+* How would you test a container image for vulnerabilities, excessive size, and unnecessary packages?
+* How would you verify that a container runs as a non-root user and follows least-privilege principles?
+* How would you test application startup, graceful shutdown, signal handling, and health checks?
+* How would you validate image provenance, signatures, and software bills of materials (SBOMs)?
+* How would you test containers under CPU, memory, filesystem, and network restrictions?
+* How would you ensure that the same tested image is promoted across environments?
+
+**Kubernetes Testing**
+* How would you validate Kubernetes manifests using schema validation, policy checks, and server-side dry runs?
+* How would you test readiness, liveness, and startup probes under realistic failure conditions?
+* How would you test autoscaling, rolling updates, disruption budgets, and pod rescheduling?
+* How would you verify network policies, RBAC, secrets access, and service-to-service connectivity?
+* How would you test Helm charts across multiple values files and deployment environments?
+* How would you investigate a deployment that is marked available but fails application-level tests?
+
+**Deployment Verification**
+* How would you implement post-deployment health checks and automatic rollback in a CI/CD pipeline?
+* How would you verify that all expected application instances run the intended artifact version?
+* How would you validate database connectivity, message consumption, and external dependency health after deployment?
+* How would you compare error rate, latency, and resource utilization before and after a release?
+* How would you verify deployment success when services start asynchronously?
+* How would you prevent an automated rollback from triggering repeatedly because of an unrelated dependency outage?
+
+**Production Testing**
+* How would you design safe synthetic transactions for production monitoring?
+* How would you run canary analysis using error rates, latency, and business metrics?
+* How would you validate a new release without exposing all users to it?
+* How would you test production failover without creating unnecessary customer impact?
+* How would you manage production test identities, access permissions, and data cleanup?
+* How would you distinguish a release regression from a temporary production traffic anomaly?

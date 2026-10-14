@@ -1,0 +1,30 @@
+* A child component throws an error during rendering and the entire page disappears. How would you prevent this?
+* A dashboard contains ten independent widgets, and one widget crashes. How would you ensure the other widgets remain usable?
+* A third-party charting library throws a rendering error. How would you isolate the failure?
+* A lazy-loaded component fails to load because of a network issue. How would you handle the error and allow recovery?
+* Your Error Boundary displays a fallback UI, but clicking Retry does not restore the component. How would you investigate it?
+* A component keeps crashing immediately after the Error Boundary resets. How would you prevent repeated failures?
+* Your application has separate sections for navigation, user profile, and payments. Where would you place Error Boundaries?
+* An event handler throws an exception, but the Error Boundary does not catch it. Why does this happen, and how would you handle it?
+* An API request fails inside useEffect(), but the Error Boundary does not display its fallback UI. How would you handle the failure?
+* An asynchronous callback throws an error after the component has rendered. How would you make the error visible to the Error Boundary?
+* A component inside Suspense throws an error instead of suspending. How would React handle the situation?
+* A nested Error Boundary fails to handle an error, and the parent boundary displays its fallback UI. How would you debug this behavior?
+* Your fallback component throws another error while rendering. What happens, and how would you design a safer fallback?
+* Users report that the application becomes blank after a rendering failure. How would you investigate and improve recovery?
+* Your production application catches errors but does not record useful debugging information. How would you improve error reporting?
+* An Error Boundary logs the same error multiple times in development. How would you investigate the behavior?
+* Your application uses React Router, and a route fails while loading data. Would you use a React Error Boundary or a router error boundary?
+* A payment form crashes, but the rest of the application must remain accessible. How would you isolate the failure?
+* Your Error Boundary logs complete component properties containing sensitive information. How would you secure the logging implementation?
+* A failed dynamic import continues failing even after the user clicks Retry. How would you handle browser caching and module-loading behavior?
+* Your application uses micro-frontends, and one remote module crashes. How would you prevent it from affecting the host application?
+* A rendering error occurs during server-side rendering. Why might a client-side Error Boundary not handle it?
+* Users see different fallback screens for the same class of errors in different application sections. How would you standardize error handling?
+* An Error Boundary resets when a parent re-renders, causing a failing component to mount repeatedly. How would you fix the design?
+* Your team wants to send errors to Sentry with the current route and user session context. How would you implement it safely?
+* A component works normally but crashes only after receiving certain API data. How would you isolate the rendering failure?
+* Your application needs to distinguish a temporary API failure from a fatal rendering error. How would you design the error-handling strategy?
+* A component's state is lost after an Error Boundary recovery. How would you decide whether the state should be preserved or reset?
+* A large application has hundreds of components and no consistent error-handling strategy. How would you introduce Error Boundaries incrementally?
+* How would you test whether a failure in one application section leaves unrelated sections operational?

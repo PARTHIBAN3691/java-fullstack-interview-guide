@@ -1,0 +1,30 @@
+* Write a Java consumer contract test using Pact and JUnit 5 for a simple GET API.
+* Write a Pact consumer test for a POST API that creates a customer.
+* Implement a Pact provider verification test for a customer service.
+* Configure Pact dependencies in a Maven-based Java project.
+* Write a consumer contract that validates an HTTP response status, headers, and JSON body.
+* Create a contract test that validates required and optional JSON fields.
+* Write a Pact test that handles dynamically generated IDs and timestamps.
+* Implement a consumer contract test for an API that requires a bearer token.
+* Write a contract test for an API that supports pagination and sorting.
+* Create a provider verification test that checks both successful and error responses.
+* Write a Spring Cloud Contract DSL definition for a customer retrieval API.
+* Implement a Spring Cloud Contract test for a POST endpoint with request validation.
+* Configure Spring Cloud Contract to generate provider tests and WireMock stubs.
+* Write a Java test that verifies a provider against multiple consumer contracts.
+* Implement a Pact Broker configuration for publishing and retrieving contracts.
+* Write a CI validation step that checks provider compatibility before deployment.
+* Implement a deployment compatibility check using Pact's can-I-deploy workflow.
+* Write a contract test that detects a breaking change in a required response field.
+* Implement a contract test for a Kafka event producer and validate its message payload.
+* Write a Java test that validates Avro schema compatibility for an event-driven service.
+* Create a contract test for an asynchronous message consumer with duplicate-event handling.
+* Write a contract test for a service that communicates through gRPC and Protocol Buffers.
+* Implement a test that validates backward compatibility between two API versions.
+* Write a Java utility that compares two OpenAPI specifications and identifies potentially breaking changes.
+* Implement a contract test that verifies an API's error response for invalid input.
+* Write a test that validates response field types and rejects incompatible schema changes.
+* Create a contract-testing setup for two Spring Boot microservices using Pact.
+* Write an automated test that verifies consumer contracts against a provider running in a test environment.
+* Implement a contract test suite that runs in parallel while isolating test data and provider state.
+* Build an end-to-end contract testing pipeline using Java, Spring Boot, Pact or Spring Cloud Contract, Maven, and CI/CD integration.

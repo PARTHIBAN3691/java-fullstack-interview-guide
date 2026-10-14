@@ -1,0 +1,30 @@
+* Your Spring Boot application fails to start because two beans implement the same interface. How would you resolve the issue?
+* A service has several dependencies injected using @Autowired, and the application fails with NoSuchBeanDefinitionException. How would you troubleshoot it?
+* Your application fails during startup because of a circular dependency between two service classes. How would you redesign the classes?
+* A singleton Spring bean stores request-specific data in an instance variable, causing users to receive incorrect results. How would you fix the issue?
+* A prototype-scoped bean is injected into a singleton service, but the same instance is reused. Why does this happen, and how would you obtain a new instance when needed?
+* Your application creates a bean twice because of incorrect component scanning and configuration. How would you investigate and resolve the duplicate registration?
+* A bean requires another bean to be initialized first. How would you guarantee the required initialization order?
+* Your application performs expensive initialization for a bean that is rarely used. How would you optimize its creation?
+* A Spring application fails because a required dependency is not available in the active profile. How would you diagnose the problem?
+* Your service depends on a third-party class that cannot be annotated with @Component. How would you register it as a Spring bean?
+* A singleton bean contains a mutable HashMap accessed by multiple request threads. How would you make the implementation safe?
+* Your application performs a database operation inside @PostConstruct, but the operation fails during startup. How would you redesign initialization?
+* A @PreDestroy method is not executed when the application shuts down unexpectedly. What lifecycle limitations should you consider?
+* A BeanPostProcessor changes the behavior of multiple beans unexpectedly. How would you isolate and debug the issue?
+* Your application context takes several seconds to initialize because many beans are created eagerly. How would you investigate and optimize startup time?
+* A custom FactoryBean returns an object of an unexpected type, causing dependency injection failures. How would you troubleshoot it?
+* An application event listener performs a long-running task and delays the publishing request. How would you redesign event processing?
+* Two services publish and consume application events, but event handling occurs in the same thread. How would you make processing asynchronous?
+* A Spring singleton service works correctly in development but fails under production concurrency. How would you investigate thread safety?
+* A bean implements both InitializingBean and defines a @PostConstruct method. In what order are these callbacks invoked?
+* Your application has many conditional bean definitions, and the wrong implementation is being selected. How would you identify the reason?
+* A dependency is available in the application context, but injection fails because of generic type differences. How would you resolve it?
+* Your application registers a listener repeatedly during context initialization, causing duplicate event processing. How would you prevent this?
+* A long-lived singleton bean retains references to objects that should have been released. How would you investigate potential memory leaks?
+* Your application needs to perform cleanup when the Spring context closes. Which lifecycle mechanisms would you use?
+* A service constructor performs network calls, making application startup unreliable. How would you redesign the initialization strategy?
+* Your application uses field injection extensively, making unit testing difficult. How would you refactor the dependency injection design?
+* A configuration class uses @Bean methods that call each other, but bean instances are unexpectedly created multiple times. How would you investigate proxyBeanMethods behavior?
+* A Spring application must support different implementations of a service for different customers. How would you design the bean selection strategy?
+* You need to standardize bean lifecycle handling, dependency injection, and event processing across multiple modules. How would you approach the architecture?

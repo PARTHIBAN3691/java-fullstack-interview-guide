@@ -1,0 +1,30 @@
+* Explain how execution contexts are created when a function is invoked.
+* How does the call stack manage nested function calls?
+* Explain the difference between lexical scope and dynamic scope.
+* How does a closure retain access to variables after its outer function has completed?
+* What are the memory implications of closures?
+* How can closures unintentionally cause memory retention?
+* Explain how function declarations are initialized during the creation phase.
+* How does the temporal dead zone affect function expressions assigned to let or const?
+* How does this binding differ among regular functions, arrow functions, and constructor calls?
+* Explain implicit, explicit, and default this binding in JavaScript.
+* How do call(), apply(), and bind() differ?
+* Why does bind() return a new function instead of invoking the original function immediately?
+* How can you implement your own version of the bind() method?
+* How does the prototype chain affect functions used as constructors?
+* What is the difference between a constructor function and an ES6 class?
+* How do function parameters behave when objects or arrays are passed as arguments?
+* Why is JavaScript described as pass-by-value, even when objects are passed to functions?
+* How can mutation of an object parameter affect the caller's data?
+* Explain recursion stack overflow and techniques to prevent it.
+* What is tail recursion, and does JavaScript guarantee tail-call optimization?
+* How can currying improve function reuse and composition?
+* How would you implement function composition using reduce()?
+* How can you implement memoization for an expensive function?
+* What are the limitations of memoization when arguments are objects?
+* How can you implement a once-only function that executes only on its first call?
+* How can you implement a debounce function using closures?
+* How can you implement a throttle function while preserving this and arguments?
+* How do async functions and returned Promises behave when an error is thrown?
+* How can you design higher-order functions that preserve the original function's this and arguments?
+* How would you test a function that depends on external services without invoking those services directly?

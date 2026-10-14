@@ -1,0 +1,35 @@
+* A production API suddenly experiences increased latency, but CPU and memory utilization remain normal. How would you use metrics, logs, traces, and dependency telemetry to identify the bottleneck?
+* Users report intermittent HTTP 500 errors, but the application dashboard shows a low overall error rate. How would you investigate traffic distribution, aggregation windows, sampling, and endpoint-level metrics?
+* A request passes through six microservices and takes five seconds to complete. How would you use distributed tracing to identify which service or dependency contributes the most latency?
+* Distributed traces stop at the first service even though downstream services complete their requests. How would you investigate trace-context propagation across HTTP clients, messaging, and asynchronous executors?
+* A Spring Boot application experiences frequent garbage collection pauses and rising response times. Which JVM metrics, logs, and traces would you inspect first?
+* An application has normal average latency but a significantly increased p99 latency. How would you investigate tail latency, outliers, queueing, and downstream dependencies?
+* Prometheus memory usage grows continuously after a new release. How would you identify high-cardinality labels, unbounded metric dimensions, and excessive time-series creation?
+* Prometheus stops scraping several targets after a Kubernetes deployment. How would you investigate service discovery, target configuration, network access, and scrape timeouts?
+* Grafana dashboards show gaps in metrics during a traffic spike. How would you investigate scrape intervals, ingestion limits, backend availability, and query behavior?
+* A critical alert fires repeatedly even though the service is healthy. How would you investigate threshold selection, missing data, alert evaluation windows, and metric aggregation?
+* An alert does not fire during a real outage because the service receives very little traffic. How would you design better low-traffic detection and synthetic monitoring?
+* The Elastic Stack receives logs from only some application pods. How would you investigate log collection agents, parsing failures, permissions, buffering, and ingestion limits?
+* Elasticsearch indexing latency increases and dashboards become slow. How would you investigate shard sizing, cluster health, indexing pressure, disk utilization, and expensive queries?
+* Splunk ingestion costs increase sharply after debug logging is enabled across all services. How would you identify high-volume sources and control logging without losing critical diagnostic information?
+* OpenTelemetry Collector instances restart due to memory pressure during a traffic spike. How would you investigate batching, memory limiting, queue sizes, exporter retries, and backpressure?
+* A telemetry backend becomes unavailable, and the collector starts dropping data. How would you design buffering, retry policies, and failure handling to minimize telemetry loss?
+* A tail-sampling configuration retains error traces but misses important slow successful requests. How would you revise sampling policies and validate the retained trace population?
+* A trace shows an HTTP 200 response, but the customer operation still fails. How would you correlate downstream responses, business events, logs, and asynchronous processing status?
+* A Kubernetes pod repeatedly restarts, but application logs disappear after each restart. How would you preserve container logs and correlate restarts with node and deployment events?
+* A Kubernetes deployment is healthy according to readiness checks, but users experience intermittent failures. How would you investigate ingress metrics, service endpoints, resource throttling, and application-level telemetry?
+* A cluster experiences high CPU usage, but no single pod appears to consume excessive CPU. How would you investigate node-level utilization, system processes, resource requests, and aggregation gaps?
+* A cloud-hosted service becomes slow in one region while other regions remain healthy. How would you correlate regional infrastructure metrics, network latency, application traces, and dependency health?
+* An SLO dashboard reports 99.9% availability, but customers report frequent failures during peak hours. How would you verify the SLI definition, traffic weighting, measurement window, and excluded failure categories?
+* A service exceeds its error-budget consumption target early in the month. How would you investigate burn rates and recommend changes to releases, capacity, or reliability work?
+* A business workflow is asynchronous, and messages are accepted successfully but processed several minutes late. How would you define meaningful SLIs and monitor end-to-end completion time?
+* A database is nearing resource saturation, causing failures across many services. How would you use the USE methodology and distributed traces to identify the root cause and affected services?
+* A service has elevated request latency, increased error rates, normal traffic volume, and high connection-pool utilization. How would you apply the RED methodology to narrow down the cause?
+* A monitoring platform triggers hundreds of alerts after a shared network component fails. How would you introduce dependency-aware alerting, deduplication, and incident grouping?
+* A dashboard shows conflicting availability values across the application, cloud monitoring, and APM platforms. How would you reconcile measurement windows, definitions, sampling, and aggregation?
+* A new application release introduces a performance regression, but no deployment marker exists in the dashboards. How would you correlate release metadata, metric changes, and traces to identify the regression?
+* Observability data contains authentication tokens and sensitive request payloads. How would you stop further exposure, sanitize telemetry, restrict access, and handle retained data?
+* A team wants to reduce monitoring costs by 40% without compromising incident response. How would you prioritize metric retention, trace sampling, log levels, and high-cardinality data reduction?
+* A disaster-recovery exercise reveals that monitoring dashboards and alerts are unavailable during a regional outage. How would you design cross-region monitoring, alert routing, and independent health checks?
+* A critical dependency fails, but the alerting system reports only downstream service errors rather than the dependency outage. How would you improve dependency health monitoring and root-cause visibility?
+* An organization wants all teams to adopt standard dashboards and SLOs, but services have different traffic patterns and business requirements. How would you define reusable standards without forcing inappropriate metrics or thresholds?

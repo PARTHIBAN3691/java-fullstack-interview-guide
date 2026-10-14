@@ -1,0 +1,30 @@
+* How do you implement secure authentication in a Node.js application?
+* How do you hash and verify passwords using bcrypt or Argon2?
+* How do you securely implement JWT authentication in Express?
+* How do you validate JWT signatures, expiration times, and expected claims?
+* How do you implement refresh tokens and token rotation?
+* How do you revoke a JWT before its expiration time?
+* How do you securely store authentication tokens in a browser-based application?
+* What are the security trade-offs between cookies and browser storage for authentication tokens?
+* How do you protect cookie-based authentication against CSRF?
+* How do you implement role-based access control in Express?
+* How do you prevent users from accessing resources belonging to other users?
+* How do you validate and sanitize request parameters and request bodies?
+* How do you prevent SQL injection when using a database with Node.js?
+* How do you prevent NoSQL injection in MongoDB applications?
+* How do you protect an Express application against XSS?
+* How do you configure CORS securely for a production application?
+* How do you implement rate limiting for login and password-reset endpoints?
+* How do you protect APIs against brute-force and credential-stuffing attacks?
+* How do you securely manage secrets across development, testing, and production?
+* How do you prevent sensitive information from appearing in application logs?
+* How do you configure security-related HTTP headers using Helmet?
+* How do you validate file uploads to prevent malicious file execution?
+* How do you prevent path traversal attacks when accessing files?
+* How do you securely execute operating-system commands from Node.js?
+* How do you identify and remediate vulnerable npm dependencies?
+* How do you configure HTTPS and TLS termination for a Node.js application?
+* How do you prevent mass-assignment vulnerabilities in REST APIs?
+* How do you securely implement password-reset functionality?
+* How do you handle authentication and authorization errors without exposing sensitive details?
+* How do you perform security testing for a Node.js REST API?

@@ -1,0 +1,20 @@
+* An employee management application needs to print every employee's name. How would you replace the corresponding lambda expression with a method reference?
+* An e-commerce application needs to convert product names to uppercase. How would you use a method reference in a Stream pipeline?
+* A payment application needs to convert transaction amount strings into numeric values. How would you use a static method reference?
+* A reporting service needs to sort employees by salary and then by employee name. How would you use method references with `Comparator.comparing()`?
+* A data-processing application needs to create a new DTO object for each database entity. How would you use constructor references?
+* A logging framework needs to pass a logging operation as a reusable behavior. How would you use an instance method reference?
+* A service needs to execute a method on the current object when a callback completes. How would you use `this::methodName`?
+* A subclass overrides a method but also needs to invoke the superclass implementation as a callback. How would you use `super::methodName`?
+* A collection-processing pipeline contains several simple lambda expressions that call existing methods. How would you identify which expressions can be replaced with method references?
+* A Java application has overloaded methods with similar parameter types, and a method reference causes a compilation error. How would you investigate and resolve it?
+* A generic factory needs to create different domain objects without hardcoding their constructors. How would you design it using constructor references?
+* A Stream pipeline uses `String::length` to transform strings into integers. How would you ensure the target functional interface matches the method signature?
+* A service needs to sort objects using a method that accepts a custom comparator. How would you pass the comparator using a method reference?
+* A legacy application uses anonymous inner classes for simple callbacks. How would you refactor them using lambda expressions and method references?
+* A method reference points to an overloaded method that throws a checked exception. How would you adapt it to the target functional interface?
+* A team is debating whether to use `System.out::println` or `value -> System.out.println(value)`. How would you decide which is more readable?
+* An API processes large collections using method references. What would you evaluate before claiming they improve performance?
+* A DTO mapping framework needs reusable object-construction logic for multiple entity types. How would you use constructor references and generic functional interfaces?
+* A Stream pipeline combines filtering, transformation, and output operations. How would you use method references where appropriate without reducing readability?
+* A framework needs to accept a method reference from a client and invoke it later. How would you define the functional interface and method signature?

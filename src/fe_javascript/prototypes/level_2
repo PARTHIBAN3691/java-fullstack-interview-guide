@@ -1,0 +1,30 @@
+* Explain the complete prototype chain of an ordinary JavaScript object.
+* How are [[Prototype]] and the prototype property different at the specification level?
+* How does the JavaScript engine perform property lookup across a prototype chain?
+* What happens when a property exists on multiple levels of the prototype chain?
+* How does the this keyword behave when calling an inherited prototype method?
+* Why does extracting an inherited method sometimes cause this-related bugs?
+* How can you use Object.create() to implement delegation-based inheritance?
+* How do constructor functions and prototype delegation work together?
+* What happens when a constructor returns an object explicitly?
+* How does instanceof behave when Symbol.hasInstance is customized?
+* How can prototype manipulation affect JavaScript engine optimization?
+* What are hidden classes or shapes, and how can prototype changes affect performance?
+* Why can changing an object's prototype at runtime be expensive?
+* How do property descriptors interact with inherited properties?
+* How does assignment behave when an inherited property is writable?
+* What happens when an inherited property is an accessor with a setter?
+* How do proxies interact with prototype-related operations?
+* How does Reflect.getPrototypeOf() differ from Object.getPrototypeOf()?
+* What restrictions apply to proxy getPrototypeOf traps?
+* How does Object.setPrototypeOf() behave with non-extensible objects?
+* How can prototype pollution occur?
+* What are the security implications of prototype pollution?
+* How can you prevent prototype pollution when processing untrusted objects?
+* Why can merging user-controlled objects create prototype-related vulnerabilities?
+* How do null-prototype objects help mitigate prototype pollution?
+* What are the limitations of using hasOwnProperty() directly on untrusted objects?
+* How do Object.hasOwn() and hasOwnProperty() differ?
+* How does the prototype chain interact with ES6 classes?
+* What is the difference between a class's prototype and its static inheritance chain?
+* How would you debug unexpected behavior caused by a modified prototype?

@@ -1,0 +1,30 @@
+* How does the Node.js architecture support parallel execution through Worker Threads?
+* How do Worker Threads differ from the main thread in terms of event loops and JavaScript execution contexts?
+* How would you design a scalable worker pool for a high-throughput Node.js application?
+* How do you determine the optimal number of worker threads for a CPU-intensive workload?
+* How can excessive worker creation reduce application performance?
+* How would you implement dynamic worker pool scaling based on CPU utilization and queue length?
+* How do you implement task scheduling and load balancing across worker threads?
+* How would you implement task prioritization in a worker pool?
+* How do you implement cancellation of queued and currently executing tasks?
+* How would you handle a worker that becomes unresponsive without blocking the main thread?
+* How do you implement task timeouts and automatic worker replacement?
+* How do you design a worker pool that supports graceful shutdown during application deployment?
+* How do you prevent memory leaks in long-running worker pools?
+* How do you manage memory consumption when transferring large datasets to workers?
+* How do SharedArrayBuffer and Atomics help reduce communication overhead?
+* What race conditions can occur when multiple workers access shared memory?
+* How would you implement a lock-free data structure using Atomics?
+* What are the trade-offs between message passing and shared-memory communication?
+* How do you prevent deadlocks when coordinating multiple workers?
+* How do you optimize CPU-bound algorithms using Worker Threads?
+* How do you benchmark Worker Threads against a single-threaded implementation?
+* How do you handle backpressure when tasks arrive faster than workers can process them?
+* How would you implement reliable task execution when a worker crashes midway through processing?
+* How do you design idempotent tasks to safely retry failed worker operations?
+* How do Worker Threads interact with garbage collection and memory limits?
+* How would you profile CPU usage and memory consumption across worker threads?
+* How do you design observability for worker pools, including queue depth, task latency, and failure rates?
+* How do you secure worker communication when processing untrusted input?
+* How would you deploy and scale Worker Threads in a containerized Node.js application?
+* What architectural trade-offs would you consider when choosing Worker Threads over a distributed job-processing system?

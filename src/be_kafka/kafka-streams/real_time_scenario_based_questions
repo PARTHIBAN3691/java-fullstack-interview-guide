@@ -1,0 +1,30 @@
+* Explain the internal architecture of Kafka Streams, including tasks, stream threads, partitions, and state stores.
+* How does Kafka Streams achieve fault tolerance for stateful processing?
+* How do changelog topics support state-store recovery?
+* What is the role of repartition topics in Kafka Streams?
+* How can key-changing operations trigger repartitioning?
+* How does Kafka Streams maintain state across application restarts?
+* Explain exactly-once processing in Kafka Streams and its limitations.
+* How do transactions coordinate input offsets, output records, and state updates?
+* What is the difference between at-least-once and exactly-once processing in Kafka Streams?
+* How do you design stateful stream processing for millions of events per second?
+* How do RocksDB state stores work, and how would you tune them?
+* What are the trade-offs between persistent and in-memory state stores?
+* How do you optimize memory, disk usage, and cache settings in Kafka Streams?
+* How does Kafka Streams handle task migration during a rebalance?
+* What causes long rebalance times in Kafka Streams, and how can they be reduced?
+* How do standby replicas reduce state restoration time?
+* How does Kafka Streams handle out-of-order and late-arriving events?
+* How do grace periods and window retention affect correctness and storage?
+* How do you choose between event-time windowing and processing-time-based logic?
+* How would you design joins between streams with different event arrival rates?
+* How do GlobalKTable joins differ from partitioned KTable joins in scalability and consistency?
+* How do you manage schema evolution in Kafka Streams applications?
+* How would you handle poison pill records without stopping stream processing?
+* How do you implement reliable error routing for Kafka Streams processing failures?
+* How do you debug data loss or duplicate output in a Kafka Streams topology?
+* How do you optimize repartitioning and reduce network shuffling?
+* How would you scale a Kafka Streams application when a single partition becomes a bottleneck?
+* How do you deploy and upgrade Kafka Streams applications without disrupting processing?
+* How would you design disaster recovery for Kafka Streams state stores and internal topics?
+* How would you benchmark and troubleshoot high latency, state restoration delays, and growing processing lag in a Kafka Streams application?

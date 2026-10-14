@@ -1,0 +1,30 @@
+* Explain how the Node.js event loop, libuv, and the V8 engine interact under heavy workloads.
+* How would you design a Node.js application to handle hundreds of thousands of concurrent connections?
+* How would you identify whether a production bottleneck is caused by CPU, memory, I/O, or an external dependency?
+* How would you optimize a service with high CPU usage but low request throughput?
+* How would you diagnose event-loop starvation caused by recursive microtasks?
+* How can long-running synchronous JavaScript operations affect the responsiveness of a Node.js service?
+* How would you design a Worker Thread pool for CPU-intensive jobs?
+* What factors determine the optimal number of Worker Threads for a workload?
+* How would you balance traffic across multiple Node.js processes on a multi-core machine?
+* What are the trade-offs between clustering, Worker Threads, and separate worker services?
+* How would you investigate a memory leak involving closures, event listeners, or retained references?
+* How do heap snapshots help identify memory leaks, and what are their production risks?
+* How would you reduce garbage collection pauses in a memory-intensive application?
+* How would you optimize a Node.js service that processes large JSON documents?
+* How would you design streaming data processing with bounded memory usage and backpressure?
+* How would you optimize database access when connection pool contention dominates request latency?
+* How would you identify and resolve N+1 database query problems?
+* How would you design a caching strategy that balances latency, consistency, and memory usage?
+* How would you prevent cache stampedes and hot-key bottlenecks in a distributed cache?
+* How would you optimize an API when p99 latency is high but average latency is acceptable?
+* How would you investigate tail latency caused by garbage collection, network delays, or downstream services?
+* How would you tune request timeouts, connection limits, and keep-alive settings for a high-throughput HTTP service?
+* How would you optimize an application that performs thousands of outbound HTTP requests concurrently?
+* How would you implement concurrency limits and rate limiting to protect downstream dependencies?
+* How would you determine whether compression improves overall performance or merely shifts the bottleneck to CPU?
+* How would you use flame graphs and CPU profiles to identify inefficient code paths?
+* How would you design a performance regression testing strategy for a large Node.js codebase?
+* How would you estimate infrastructure capacity using throughput, latency, resource utilization, and workload characteristics?
+* How would you optimize a Node.js microservices platform while accounting for network and serialization overhead?
+* How would you establish performance budgets and service-level objectives for a production Node.js platform?

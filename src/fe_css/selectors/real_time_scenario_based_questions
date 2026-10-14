@@ -1,0 +1,30 @@
+* A CSS rule is not applied even though the selector appears correct. How would you troubleshoot the issue?
+* Two selectors apply different colors to the same element. How would you determine which rule wins?
+* A class selector and an ID selector define conflicting styles. Which style normally takes precedence, and why?
+* A global paragraph selector unexpectedly changes text inside reusable components. How would you fix it?
+* A stylesheet contains deeply nested selectors that are difficult to maintain. How would you refactor them?
+* A navigation menu needs different styles for the first and last items. Which selectors would you use?
+* A table needs alternating row colors. How would you implement the styles using structural pseudo-classes?
+* A form must highlight invalid required fields. Which selectors would you use?
+* A button should show a focus indicator for keyboard users without showing it unnecessarily for pointer interactions. Which pseudo-class would help?
+* A card should receive special styling when it contains an error message. How could :has() help?
+* A developer needs to style all links whose href begins with a particular path. Which attribute selector would you use?
+* A form contains multiple inputs with the same class but different types. How would you select only email inputs?
+* A CSS rule should apply to direct child list items but not nested list items. Which combinator would you use?
+* A developer confuses :nth-child() with :nth-of-type(). How would you explain the difference using a practical example?
+* A reusable component's styles conflict with another component using the same class name. How would you prevent the conflict?
+* A team uses !important to fix selector conflicts throughout a project. How would you improve the selector strategy?
+* A stylesheet contains many ID selectors that make overrides difficult. How would you simplify it?
+* A heading needs an icon before its text without modifying the HTML. Which pseudo-element would you use?
+* A navigation link should be styled differently when its destination matches a specific URL pattern. How would you use attribute selectors?
+* A container should receive styles only when it has at least one child matching a specific selector. How would you approach this?
+* A developer uses :where() to simplify a reset stylesheet. What specificity benefit does it provide?
+* A component needs different styles for disabled, checked, and required form controls. Which pseudo-classes would you combine?
+* A layout uses complex sibling relationships to style adjacent elements. How would you verify that the selectors target the intended elements?
+* A stylesheet behaves differently after a CSS refactor involving nested selectors. How would you investigate specificity changes?
+* A team wants consistent selector naming across multiple frontend projects. What naming convention would you recommend?
+* A pseudo-element displays decorative content that is also important to the user. What accessibility concerns should be considered?
+* A selector using :has() causes compatibility concerns in an older browser environment. What alternatives could you consider?
+* A component must style its root element differently when it contains a particular child. How would you implement this?
+* A large stylesheet contains overlapping selectors that make debugging difficult. How would you identify and remove redundant rules?
+* An enterprise frontend project needs predictable CSS behavior across hundreds of components. How would you establish selector guidelines?

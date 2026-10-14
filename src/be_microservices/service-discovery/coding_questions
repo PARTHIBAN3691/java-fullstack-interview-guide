@@ -1,0 +1,30 @@
+* Create a Spring Boot Eureka Server application and configure it to run on a custom port.
+* Create a Spring Boot microservice that registers itself with a Eureka Server.
+* Configure two Spring Boot microservices to register with the same Eureka Server.
+* Implement a service consumer that discovers a provider by its registered service name.
+* Implement a REST endpoint in one service and invoke it from another using OpenFeign and Eureka.
+* Implement a service-to-service call using WebClient and Spring Cloud LoadBalancer.
+* Implement a service-to-service call using RestTemplate with service discovery and load balancing.
+* Configure application names and instance IDs for multiple instances of the same microservice.
+* Write a Spring Boot configuration that enables service registration while disabling registry fetching.
+* Write a configuration that allows a service to fetch registry information without registering itself.
+* Implement a custom health indicator that reports whether a microservice is ready to receive traffic.
+* Configure Eureka client heartbeat and registry-fetch intervals.
+* Implement a service consumer that handles the case when no healthy provider instances are available.
+* Write a custom load-balancing strategy that prefers instances in the same availability zone.
+* Implement a service discovery lookup that retrieves available instances by service name.
+* Write a test that verifies a microservice successfully registers with a service registry.
+* Write an integration test for a service-to-service call using service discovery.
+* Implement a fallback mechanism when the service registry is temporarily unavailable.
+* Configure multiple Eureka Server instances and demonstrate peer replication.
+* Write a Spring Boot configuration to secure the Eureka Server endpoint using Spring Security.
+* Implement a readiness check that prevents a service from accepting traffic before initialization completes.
+* Create a Docker Compose configuration for Eureka Server and two discoverable Spring Boot services.
+* Create Kubernetes manifests for a service and Deployment, then invoke it using Kubernetes DNS.
+* Write a custom service instance filter that excludes instances marked as unhealthy.
+* Implement retry handling when a discovered service instance becomes unavailable between lookup and invocation.
+* Create a test that simulates an unavailable Eureka Server and verifies client behavior.
+* Implement a discovery-aware client that logs the selected service instance before sending a request.
+* Write a configuration for blue-green deployment using distinct service versions and controlled routing.
+* Implement a monitoring endpoint that reports service registration status and the number of discovered instances.
+* Design and implement a small service registry with registration, deregistration, heartbeat, and lookup APIs.

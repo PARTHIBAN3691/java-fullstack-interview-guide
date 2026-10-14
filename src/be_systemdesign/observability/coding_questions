@@ -1,0 +1,30 @@
+* Write a Java program that logs application events using SLF4J and Logback.
+* Configure structured JSON logging in a Spring Boot application.
+* Implement a request filter that generates a correlation ID when one is not provided.
+* Propagate a correlation ID through HTTP requests using a Spring interceptor.
+* Write a Java utility that adds request context to logs using MDC.
+* Implement a custom Spring Boot Actuator health indicator.
+* Expose custom application metrics using Micrometer.
+* Create a counter metric that tracks successful and failed payment requests.
+* Implement a timer metric that measures API request duration.
+* Record request latency and expose percentile metrics using Micrometer.
+* Create a Spring Boot endpoint that exposes application statistics safely.
+* Write a Prometheus configuration that scrapes metrics from a Spring Boot service.
+* Create PromQL queries to calculate request rate, error rate, and p95 latency.
+* Write PromQL queries that identify high JVM heap usage and frequent garbage collection.
+* Implement an alert rule that detects a sustained increase in API error rate.
+* Create an SLO calculation using total successful requests and total valid requests.
+* Implement a Java service that records business events separately from diagnostic logs.
+* Instrument a Spring Boot REST API with OpenTelemetry tracing.
+* Create custom OpenTelemetry spans around database operations and external API calls.
+* Propagate W3C trace context across HTTP requests using OpenTelemetry.
+* Implement trace context propagation through Kafka message headers.
+* Write a Kafka consumer that records processing duration and failed-message counts.
+* Implement a Java component that measures queue processing lag.
+* Write a custom exception handler that logs errors with trace and correlation identifiers.
+* Implement a logging filter that masks passwords, authorization headers, and access tokens.
+* Write a Java utility that measures execution time for selected methods without logging sensitive arguments.
+* Implement a scheduled task that checks dependency health and records the results as metrics.
+* Create a test that verifies a custom Micrometer counter is incremented when a request fails.
+* Write a test that verifies correlation IDs are included in application logs.
+* Build a Spring Boot observability example integrating Actuator, Micrometer, Prometheus metrics, and OpenTelemetry tracing.

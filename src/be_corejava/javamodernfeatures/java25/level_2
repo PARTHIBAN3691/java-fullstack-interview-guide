@@ -1,0 +1,28 @@
+
+* Explain the compilation and execution model of compact source files and instance `main` methods.
+* How would you convert a compact source file into a conventional Java class with explicit declarations?
+* What compatibility concerns should be considered when using compact source files in an educational codebase?
+* How are implicit imports handled in compact source files in Java 25?
+* How do module import declarations interact with the Java Platform Module System?
+* What happens when multiple imported modules expose types with identical simple names?
+* How would you diagnose ambiguous type references caused by module imports?
+* Explain the safety rules that govern statements executed before `super()` or `this()` in flexible constructors.
+* Why must statements before an explicit constructor invocation avoid referencing the object under construction?
+* How can flexible constructor bodies prevent unsafe publication of partially initialized objects?
+* Explain how primitive patterns extend pattern matching to primitive values and primitive type conversions.
+* How do primitive patterns interact with numeric widening, narrowing, and type compatibility?
+* How would you handle null references and primitive values in pattern-matching code?
+* What limitations remain in the third preview of primitive patterns in Java 25?
+* How would you design a migration plan for code using preview language features across Java releases?
+* Explain the lifecycle and binding rules of scoped values in nested execution contexts.
+* How do scoped values behave when used with virtual threads and structured concurrency?
+* What are the limitations of Java 25's fifth preview of structured concurrency?
+* How would you compare the Java 25 Gatherers API with custom collectors and traditional stream pipelines?
+* What are the performance considerations when implementing stateful or windowed stream gatherers?
+* How do stable values differ from final fields and lazy initialization patterns?
+* What security considerations apply when encoding and decoding cryptographic objects using PEM formats?
+* How does ahead-of-time class loading and linking differ from traditional runtime class loading?
+* How would you measure the startup and warm-up benefits of ahead-of-time caching?
+* What trade-offs arise when using compact object headers in memory-constrained applications?
+* How would you evaluate Generational ZGC for a latency-sensitive application with a high allocation rate?
+* How would you classify Java 25 features into permanent, preview, incubator, and experimental categories?

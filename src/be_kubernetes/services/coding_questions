@@ -1,0 +1,30 @@
+* Write a Kubernetes YAML manifest for a ClusterIP Service exposing a Spring Boot application on port 8080.
+* Write a NodePort Service manifest that exposes an application running on container port 8080.
+* Write a LoadBalancer Service manifest for a Java REST API.
+* Write a Service manifest that maps port 80 to targetPort 8080.
+* Write a Service manifest that exposes both HTTP and management ports for a Spring Boot application.
+* Write a Deployment and Service manifest that exposes a Java application with three replicas.
+* Write a Service manifest using multiple labels to select the correct backend Pods.
+* Write a headless Service manifest for a StatefulSet.
+* Write a StatefulSet manifest with a headless Service for stable network identities.
+* Write a Service manifest that configures ClientIP session affinity.
+* Write a Service manifest that sets externalTrafficPolicy to Local.
+* Write a Service manifest that exposes an application using a specific nodePort.
+* Write a Service manifest that exposes HTTPS traffic on port 443 to a container port of 8443.
+* Write a selectorless Service manifest for an external backend.
+* Write EndpointSlice YAML for manually registering an external backend address.
+* Write a Service manifest that exposes a Java application only within the cluster.
+* Write a NetworkPolicy that allows traffic to a backend only from Pods labeled app: frontend.
+* Write a NetworkPolicy that permits traffic to a backend on TCP port 8080 only from a specific namespace.
+* Write a Kubernetes manifest that exposes a Spring Boot application's health endpoint through a separate internal Service.
+* Write a shell command sequence to list Services and inspect their associated EndpointSlices.
+* Write kubectl commands to identify Pods that match a Service selector.
+* Write kubectl commands to debug a Service that has no endpoints.
+* Write kubectl commands to test Service DNS resolution from a temporary diagnostic Pod.
+* Write a shell script that checks whether every Service with a selector has at least one ready backend endpoint.
+* Write a shell script that identifies Services whose targetPort does not match the expected container port.
+* Write Java code using Spring WebClient to call another microservice through its Kubernetes Service DNS name.
+* Write a Spring Boot configuration example that externalizes a backend Service URL using a Kubernetes ConfigMap.
+* Write a Kubernetes manifest that supports graceful termination of a Java application behind a Service.
+* Write a Deployment and Service configuration that supports rolling updates with readiness and liveness probes.
+* Write an automated test plan or script to verify Service reachability, DNS resolution, backend endpoint health, and external exposure.

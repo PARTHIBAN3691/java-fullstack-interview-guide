@@ -1,0 +1,74 @@
+# Core Java — Collections — Queue
+## Level 0 — Easy
+
+### Queue Fundamentals
+* What is a Queue in Java?
+* What is the purpose of the Queue interface?
+* What is the FIFO principle?
+* What are the commonly used Queue implementations in Java?
+* What is the difference between Queue and List?
+* What is the difference between `add()` and `offer()`?
+* What is the difference between `remove()` and `poll()`?
+* What is the difference between `element()` and `peek()`?
+* Can a Queue contain duplicate elements?
+* Can a Queue contain null elements?
+
+### PriorityQueue
+* What is a PriorityQueue in Java?
+* How does PriorityQueue determine the order of elements?
+* What is the default ordering of a PriorityQueue?
+* How do you create a PriorityQueue with reverse ordering?
+* Can PriorityQueue contain duplicate elements?
+* Can PriorityQueue contain null elements?
+* How do you insert, retrieve, and remove elements from a PriorityQueue?
+* Does iterating over a PriorityQueue return elements in sorted order?
+* What is the difference between Queue and PriorityQueue?
+
+### ArrayDeque
+* What is ArrayDeque in Java?
+* What is the difference between ArrayDeque and LinkedList when used as a Queue?
+* How do you add elements at the beginning and end of an ArrayDeque?
+* How do you remove elements from both ends of an ArrayDeque?
+* Can ArrayDeque contain null elements?
+* Can ArrayDeque be used as a Queue and a Stack?
+* What are the commonly used methods of ArrayDeque?
+
+### LinkedList as a Queue
+* How can LinkedList be used as a Queue?
+* Which Queue methods are supported by LinkedList?
+* What is the difference between `addFirst()` and `addLast()`?
+* What is the difference between `removeFirst()` and `removeLast()`?
+* When would you use LinkedList as a Queue?
+* What are the limitations of using LinkedList for queue processing?
+
+### Deque Fundamentals
+* What is a Deque in Java?
+* What is the difference between Queue and Deque?
+* What does double-ended queue mean?
+* How do you insert elements at both ends of a Deque?
+* How do you retrieve and remove elements from both ends?
+* What is the difference between `offerFirst()` and `offerLast()`?
+* How can Deque be used to implement a stack?
+
+### BlockingQueue Fundamentals
+* What is a BlockingQueue?
+* Why is BlockingQueue useful in multithreaded applications?
+* What is the difference between Queue and BlockingQueue?
+* What does a bounded BlockingQueue mean?
+* What happens when a bounded BlockingQueue is full?
+* What happens when a BlockingQueue is empty and a consumer tries to take an element?
+
+### ArrayBlockingQueue and LinkedBlockingQueue
+* What is ArrayBlockingQueue?
+* What is LinkedBlockingQueue?
+* What is the difference between ArrayBlockingQueue and LinkedBlockingQueue?
+* Is ArrayBlockingQueue bounded?
+* Can LinkedBlockingQueue be configured with a capacity?
+* Can either of these queues contain null elements?
+
+### ConcurrentLinkedQueue
+* What is ConcurrentLinkedQueue?
+* Is ConcurrentLinkedQueue thread-safe?
+* What is the difference between ConcurrentLinkedQueue and LinkedList?
+* Does ConcurrentLinkedQueue block when it is empty?
+* When

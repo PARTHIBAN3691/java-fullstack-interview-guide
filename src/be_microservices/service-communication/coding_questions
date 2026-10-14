@@ -1,0 +1,30 @@
+* Write a Spring Boot service that calls another microservice using RestTemplate.
+* Implement a REST client using WebClient to retrieve data from a downstream service.
+* Write an OpenFeign client interface for communicating with an order service.
+* Implement a WebClient request with custom headers, query parameters, and path variables.
+* Write a REST client that handles HTTP 4xx and 5xx responses.
+* Configure connection and response timeouts for a Spring Boot HTTP client.
+* Implement a WebClient client with Resilience4j circuit breaker and retry support.
+* Write a fallback mechanism for a downstream service using Spring Boot.
+* Implement service discovery using Spring Cloud Netflix Eureka.
+* Configure a load-balanced OpenFeign client to call a service registered with Eureka.
+* Write a Kafka producer that publishes order events to a topic.
+* Implement a Kafka consumer that processes order events and handles processing failures.
+* Write a RabbitMQ producer and consumer using Spring AMQP.
+* Implement retry handling and a dead-letter queue for failed RabbitMQ messages.
+* Write an idempotent message consumer that prevents duplicate database updates.
+* Implement correlation ID propagation using a servlet filter and WebClient.
+* Configure distributed tracing for REST calls between two Spring Boot microservices.
+* Write a WebClient interceptor or filter that propagates appropriate authentication headers to a downstream service.
+* Implement an OAuth 2.0 client that obtains a service access token for outbound requests.
+* Write a Kafka producer and consumer that propagate trace context through message headers.
+* Implement a request-response messaging pattern using Kafka with correlation IDs and bounded timeouts.
+* Write a reactive WebClient pipeline that limits concurrent downstream requests.
+* Implement a bulkhead that isolates calls to two different downstream services.
+* Write a service client that propagates an end-to-end deadline across multiple downstream calls.
+* Implement pagination when retrieving large datasets from a downstream REST API.
+* Write an integration test for a REST client using WireMock.
+* Implement consumer-driven contract tests for two independently deployed Spring Boot services.
+* Write a test that simulates a downstream timeout and verifies safe retry behavior.
+* Implement a resilient communication client with bounded retries, exponential backoff, circuit breaking, and structured logging.
+* Design and implement a production-grade microservices communication solution using Spring Boot, WebClient, OpenFeign, Kafka, service discovery, OAuth 2.0, distributed tracing, and automated integration tests.

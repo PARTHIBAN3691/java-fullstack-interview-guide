@@ -1,0 +1,79 @@
+**Multimodal Large Language Models**
+
+* Implement a multimodal request-processing service that validates text and image inputs, routes requests to a mock model adapter, and returns a structured response with usage metadata.
+* Write integration tests for unsupported media types, oversized images, provider timeouts, malformed model responses, and missing source references.
+
+**Vision-Language Models**
+
+* Implement an image-analysis pipeline that combines mock OCR results, detected object regions, and a model-generated description into a structured JSON response.
+* Build an evaluation utility that compares predicted object labels and spatial relationships with ground-truth annotations.
+
+**Speech-to-Text and Text-to-Speech**
+
+* Implement a streaming transcription service that accepts audio chunks, emits partial and final transcripts, and handles cancellation and connection failures.
+* Build an evaluation utility that calculates word error rate from reference transcripts and predicted transcripts, including normalization for punctuation and capitalization.
+
+**Real-Time Voice Agents**
+
+* Implement a voice-agent state machine covering listening, transcription, response generation, speech playback, interruption, and cancellation.
+* Write tests for overlapping audio chunks, interrupted responses, delayed tool results, duplicate action requests, and recovery after a disconnected session.
+
+**Graph-Based AI**
+
+* Implement a graph traversal utility that identifies connected components, shortest paths, and relationships between entities.
+* Build a graph anomaly detector that flags unusual node connections using configurable degree and neighborhood-based features.
+
+**Knowledge Graphs for AI**
+
+* Implement a knowledge graph service that stores entities, typed relationships, source references, and temporal validity.
+* Write tests for multi-hop queries, conflicting facts, stale relationships, provenance tracking, and authorization failures during graph traversal.
+
+**Neuro-Symbolic AI**
+
+* Implement a decision service that converts mock LLM-extracted facts into a typed representation and evaluates them against deterministic business rules.
+* Write tests that reject contradictory facts, missing required evidence, invalid logical expressions, and decisions that violate mandatory constraints.
+
+**Small Language Models (SLMs)**
+
+* Implement a model-routing service that selects between mock small and large models based on task type, latency limits, confidence signals, and configured cost thresholds.
+* Build a benchmark utility that compares model accuracy, response latency, token usage, and structured-output validity across a representative test dataset.
+
+**On-Device and Edge AI**
+
+* Implement an offline inference wrapper that queues requests locally, persists operation identifiers, and synchronizes results when connectivity returns.
+* Write tests for interrupted synchronization, duplicate events, limited storage, incompatible model versions, and rollback to a previously installed model.
+
+**Federated Learning**
+
+* Implement a simplified federated learning simulation with multiple clients, local model updates, and a central aggregation step.
+* Build tests for unavailable clients, unequal client dataset sizes, non-IID data, invalid model updates, and deterministic aggregation.
+
+**AI Reasoning Models**
+
+* Implement an inference-routing utility that selects a fast or reasoning-oriented mock model according to task complexity, latency limits, and a configurable budget.
+* Build an evaluation harness that checks final-answer correctness, constraint satisfaction, execution time, token consumption, and verification failures across different task categories.
+
+**Long-Term Memory for AI Agents**
+
+* Implement a memory service that stores facts with timestamps, provenance, confidence, expiration policies, and user or tenant scope.
+* Write tests for memory retrieval, contradictory updates, outdated facts, prompt-injection content, authorization boundaries, and deletion across all mock memory stores.
+
+**Computer-Use Agents**
+
+* Implement a computer-use state machine that accepts mock screenshots and proposed UI actions, validates allowed actions, and verifies the resulting application state.
+* Write tests for stale screenshots, unexpected dialogs, failed clicks, ambiguous outcomes, restricted operations, and mandatory confirmation before irreversible actions.
+
+**Synthetic Data and Simulation**
+
+* Implement a synthetic-data generation pipeline using configurable templates or a mock generator, followed by schema validation, deduplication, and quality checks.
+* Build an evaluation script that compares synthetic and real datasets using feature distributions, class balance, duplicate rates, and model performance on held-out real-world data.
+
+**AI Benchmarking and Leaderboards**
+
+* Implement a benchmark runner that executes the same test cases against multiple model adapters and records correctness, latency, token usage, and cost.
+* Build a leaderboard generator that calculates aggregate and category-level metrics, identifies missing results, and preserves model, prompt, dataset, and evaluator versions for reproducibility.
+
+**Open-Weight Model Ecosystems**
+
+* Implement a model artifact validation utility that checks expected checksums, configuration compatibility, tokenizer metadata, and approved model versions before loading.
+* Build a model-serving configuration tool that compares quantization settings and runtime parameters using mock benchmark results, while tracking artifact provenance and rollback versions.

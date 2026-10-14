@@ -1,0 +1,30 @@
+* Write a Java program using Kafka AdminClient to retrieve broker metadata for a cluster.
+* Implement a Java utility that lists the broker IDs and hostnames returned by Kafka cluster metadata.
+* Write a Java program that describes all topics and their partition leaders using AdminClient.
+* Implement a Java method that identifies partitions whose leader is unavailable.
+* Write a Java utility that reports the replica assignments for each partition.
+* Implement a Java program that retrieves the in-sync replica information available through Kafka administrative metadata.
+* Write a Java method that checks whether a topic's replication factor meets a configured minimum.
+* Implement a Java utility that identifies topics with partitions assigned to a specified broker.
+* Write a Java program that retrieves topic configurations and reports effective retention settings.
+* Implement a Java method that validates bootstrap server configuration before starting a Spring Boot application.
+* Write a Java utility that parses Kafka broker listener configuration and validates endpoint syntax.
+* Implement a Java program that uses AdminClient to create a topic with a specified partition count and replication factor.
+* Write a Java utility that describes consumer groups and identifies their assigned topic partitions.
+* Implement a Java method that retrieves consumer-group offsets and calculates lag using available end-offset information.
+* Write a Java program that checks broker connectivity using Kafka client metadata requests.
+* Implement a Java health-check component that distinguishes Kafka connection failures from topic metadata failures.
+* Write a Spring Boot health indicator that checks Kafka broker availability without publishing test business events.
+* Implement a Java utility that compares partition distribution across brokers and flags significant imbalances.
+* Write a Java method that estimates Kafka storage requirements from message size, message rate, retention, and replication factor.
+* Implement a Java program that calculates approximate replication storage overhead for a given topic configuration.
+* Write a Java utility that validates topic partition assignments before a planned broker migration.
+* Implement a Java administrative service that creates and deletes topics with appropriate error handling.
+* Write a Java method that handles Kafka AdminClient timeouts and closes administrative resources safely.
+* Implement a Java monitoring component that records producer request latency, consumer fetch latency, and application-side error rates.
+* Write a Java utility that parses broker metrics and identifies sustained increases in request queue size or request latency.
+* Implement a Java program that validates required Kafka TLS settings and rejects insecure production configuration.
+* Write a Java utility that checks whether a Kafka cluster has enough brokers to support a required replication factor.
+* Implement a Java service that generates a report of broker availability, topic partition assignments, replication factor, and offline partitions.
+* Write a Java integration test that verifies application behavior when a Kafka broker becomes unavailable in a test cluster.
+* Design and implement a Java-based Kafka cluster health monitor that checks connectivity, partition leadership, replication status, and consumer lag, and exposes the results through Spring Boot Actuator.

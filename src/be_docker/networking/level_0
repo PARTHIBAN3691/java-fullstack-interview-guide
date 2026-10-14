@@ -1,0 +1,30 @@
+* What is Docker networking?
+* Why is networking required in Docker?
+* What are the different network drivers available in Docker?
+* What is the default network driver in Docker?
+* What is the difference between bridge, host, none, and overlay networks?
+* What is a Docker bridge network?
+* What is the default bridge network?
+* What is the difference between the default bridge and a user-defined bridge network?
+* What is a Docker network interface?
+* What is a container IP address?
+* How does a Docker container communicate with another container?
+* How can you list Docker networks?
+* How can you create a Docker network?
+* How can you remove a Docker network?
+* How can you inspect a Docker network?
+* How do you connect a running container to a Docker network?
+* How do you disconnect a container from a Docker network?
+* What is port mapping in Docker?
+* What is the difference between EXPOSE and the -p option?
+* How do you map a container port to a host port?
+* What is the purpose of the -P option in Docker?
+* How can you find the ports exposed by a running container?
+* What is the difference between localhost inside a container and localhost on the host?
+* Can two containers use the same internal port?
+* What is Docker DNS?
+* How can containers communicate using container names?
+* Why is a user-defined bridge network recommended for application containers?
+* What happens when two containers are connected to different bridge networks?
+* How does a container access the internet?
+* How can you troubleshoot a container that cannot connect to another container?

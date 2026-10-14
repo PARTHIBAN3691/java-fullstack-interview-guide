@@ -1,0 +1,30 @@
+* How do you configure a Dead Letter Topic using Spring Kafka?
+* How does DefaultErrorHandler work with Dead Letter Topic publishing?
+* What is DeadLetterPublishingRecoverer in Spring Kafka?
+* How do you configure a retry policy before sending a message to a Dead Letter Topic?
+* How do you specify the destination topic for failed messages?
+* How does Spring Kafka determine the Dead Letter Topic name?
+* How can you customize the Dead Letter Topic naming convention?
+* How do you preserve the original Kafka message key when publishing to a Dead Letter Topic?
+* How do you preserve message headers when forwarding a failed record?
+* How can you include the original topic, partition, and offset in dead-letter metadata?
+* What is the difference between handling record listener exceptions and batch listener exceptions?
+* How do you handle deserialization failures using ErrorHandlingDeserializer?
+* How can you route different exception types to different Dead Letter Topics?
+* How do you configure a fixed backoff before dead-letter publishing?
+* How does exponential backoff work with Kafka retries?
+* What is the difference between blocking retries and non-blocking retries?
+* How do retry topics interact with Dead Letter Topics in Spring Kafka?
+* How do you configure retryable and non-retryable exceptions?
+* How do you prevent infinite retry loops for invalid messages?
+* What happens if publishing to the Dead Letter Topic itself fails?
+* How do producer acknowledgments affect Dead Letter Topic reliability?
+* How do you configure serialization for dead-letter messages?
+* How can you include exception details in dead-letter message headers?
+* How do you test Dead Letter Topic behavior using EmbeddedKafka?
+* How do you verify that the original consumer offset is handled correctly after recovery?
+* How do you configure a separate consumer group to inspect dead-letter messages?
+* How do you replay dead-letter messages to the original topic?
+* How do you avoid duplicate processing when replaying dead-letter messages?
+* How do you secure a Dead Letter Topic using Kafka ACLs?
+* How do you monitor dead-letter message counts and processing failures?

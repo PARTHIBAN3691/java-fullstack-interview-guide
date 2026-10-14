@@ -1,0 +1,21 @@
+
+* Design a highly available Azure SQL architecture for a Java-based enterprise application.
+* How would you choose between Azure SQL Database, Azure SQL Managed Instance, and SQL Server on Azure Virtual Machines for a legacy Java application?
+* How would you optimize a Spring Boot application experiencing high database latency against Azure SQL?
+* How would you diagnose connection pool exhaustion when multiple Java application instances connect to the same Azure SQL database?
+* How would you design connection pooling and concurrency limits for a horizontally scaled Java microservices platform?
+* How would you implement resilient transaction handling when Azure SQL experiences transient connectivity failures?
+* How would you prevent duplicate transaction processing when an application retries after a database timeout?
+* How would you troubleshoot deadlocks and blocking in Azure SQL caused by concurrent Java transactions?
+* How would you choose between optimistic and pessimistic locking for concurrent updates in a Spring Boot application?
+* How would you design database schema migrations that remain compatible with old and new application versions during rolling deployments?
+* How would you configure Azure SQL high availability, zone redundancy, and disaster recovery?
+* What is the difference between zone redundancy, failover groups, and geo-replication in Azure SQL?
+* How would you implement disaster recovery with minimal data loss and downtime across Azure regions?
+* How would you secure Azure SQL access using managed identities, least-privilege permissions, private endpoints, and Microsoft Entra authentication?
+* How would you troubleshoot an application that connects successfully from a developer machine but fails from Azure App Service?
+* How would you investigate parameter-sensitive queries, execution plan regressions, and unexpected full table scans?
+* How would you optimize a database experiencing high CPU, excessive logical reads, and poor query performance?
+* How would you design a multi-tenant application using Azure SQL Database with appropriate data isolation?
+* How would you manage database capacity and cost when workload demand varies significantly throughout the day?
+* How would you migrate a large on-premises SQL Server database to Azure SQL with minimal downtime and data validation?

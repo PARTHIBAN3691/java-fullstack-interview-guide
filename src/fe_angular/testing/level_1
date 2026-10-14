@@ -1,0 +1,30 @@
+* Explain the Angular testing process using TestBed.
+* What is the difference between TestBed.createComponent() and TestBed.inject()?
+* What is the difference between ComponentFixture.detectChanges() and whenStable()?
+* What is the purpose of fixture.debugElement?
+* What is the difference between DebugElement and nativeElement?
+* How do you test component inputs and outputs?
+* How do you test an @Input() property?
+* How do you test an @Output() EventEmitter?
+* How do you test a component that depends on an Angular service?
+* How do you provide a mock service in TestBed?
+* What is the difference between useValue, useClass, and useFactory in test providers?
+* How do you test an Angular service that uses HttpClient?
+* What is HttpTestingController?
+* How do you verify HTTP requests in Angular unit tests?
+* How do you test successful and failed HTTP responses?
+* How do you test asynchronous code in Angular?
+* What is the difference between async/await, fakeAsync(), and waitForAsync() in Angular tests?
+* What are tick() and flushMicrotasks() used for?
+* How do you test Observables in Angular?
+* How do you test a component that uses the async pipe?
+* How do you test reactive forms in Angular?
+* How do you test form validation errors?
+* How do you test template-driven forms?
+* How do you test route navigation in Angular?
+* How do you test route guards?
+* How do you test HTTP interceptors?
+* How do you test Angular pipes with different inputs?
+* How do you test directives?
+* How do you test lifecycle hooks such as ngOnInit()?
+* How do you measure and improve code coverage?

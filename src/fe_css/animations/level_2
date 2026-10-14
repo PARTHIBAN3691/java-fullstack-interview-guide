@@ -1,0 +1,30 @@
+* Explain how browsers render and composite CSS animations.
+* What are the differences between layout, paint, and compositing during animation?
+* Why can animating width and height cause performance problems?
+* How do transform and opacity animations reduce layout and paint work?
+* What is the role of the compositor thread in CSS animations?
+* How do you identify animation performance bottlenecks using browser developer tools?
+* What is the difference between CSS animations and the Web Animations API?
+* When should you use CSS animations instead of JavaScript-based animations?
+* How do you coordinate complex animation sequences using CSS alone?
+* How do animation events such as animationstart, animationiteration, and animationend work?
+* How do you detect when a CSS animation has completed?
+* What are the limitations of animationend events?
+* How do you handle animations when an element is removed from the DOM?
+* How do you avoid race conditions when multiple animations affect the same element?
+* How do CSS animations interact with stacking contexts and z-index?
+* How do transform properties affect an element's containing block?
+* How do you implement smooth 3D transitions while managing backface visibility?
+* What is the purpose of backface-visibility in 3D animations?
+* How do you design reusable animation utilities using CSS custom properties?
+* How do you implement dynamic animation durations using CSS variables?
+* How do you optimize staggered animations for thousands of elements?
+* What are the risks of excessive use of will-change?
+* When should you use will-change, and when should you avoid it?
+* How do you support reduced motion without removing important state feedback?
+* How do you manage animations across responsive breakpoints?
+* How do you prevent animation flickering during page load?
+* How do you build interruptible animations that respond to rapid user interactions?
+* How do you create scroll-driven animations using modern CSS features?
+* What are CSS animation timelines, and how do scroll timelines work?
+* How do you test animation performance and accessibility across browsers?

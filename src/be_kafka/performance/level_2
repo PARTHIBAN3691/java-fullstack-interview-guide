@@ -1,0 +1,29 @@
+* How would you design a Kafka system capable of processing millions of messages per second?
+* How would you calculate the required Kafka partition count for a target throughput?
+* How would you tune Kafka for low-latency versus high-throughput workloads?
+* How do batching and compression create a throughput-versus-latency trade-off?
+* How does replication factor affect Kafka write performance?
+* How does `min.insync.replicas` affect write latency?
+* How does `acks=all` impact high-throughput producers?
+* How does producer idempotence affect performance?
+* How do Kafka transactions affect producer throughput and latency?
+* How would you optimize a transactional Kafka application?
+* How does JVM garbage collection affect Kafka broker performance?
+* How would you diagnose Kafka broker CPU saturation?
+* How would you diagnose Kafka broker disk saturation?
+* How would you diagnose Kafka broker network saturation?
+* How does page cache contribute to Kafka performance?
+* Why can Kafka perform well with sequential disk writes?
+* How does partition count affect broker memory and metadata overhead?
+* How can too many partitions negatively affect Kafka performance?
+* How does partition leadership distribution affect broker performance?
+* How would you detect and resolve uneven partition load?
+* How would you optimize Kafka for large messages?
+* What are the performance implications of increasing Kafka message size?
+* How would you handle a workload containing both very small and very large messages?
+* How would you optimize consumer performance when message processing is CPU-intensive?
+* How would you optimize consumer performance when message processing is I/O-intensive?
+* How would you prevent consumer processing from becoming the throughput bottleneck?
+* How would you design backpressure for a high-throughput Kafka consumer?
+* How would you determine whether Kafka itself or the application is responsible for high consumer lag?
+* How would you benchmark Kafka performance before production deployment?

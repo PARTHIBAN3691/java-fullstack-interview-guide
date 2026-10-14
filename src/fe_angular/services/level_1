@@ -1,0 +1,30 @@
+* Explain the different ways to provide a service in Angular.
+* What is the difference between root-level and module-level service providers?
+* What is the difference between root-level and component-level service instances?
+* How does Angular dependency injection resolve a service dependency?
+* What is hierarchical dependency injection in Angular?
+* What is the difference between providedIn: 'root' and providedIn: 'any'?
+* How do you share data between unrelated components using a service?
+* How do you pass data between components using BehaviorSubject in a service?
+* How do you implement a reusable API service using HttpClient?
+* What is the difference between returning an Observable and subscribing inside a service?
+* Why is it generally preferable to return an Observable from a service?
+* How do you handle HTTP errors inside a service?
+* How do you centralize error handling for service API calls?
+* How do you implement loading-state management in a service?
+* How do you cache API responses in an Angular service?
+* How do you prevent duplicate HTTP requests from multiple components?
+* What is the difference between a singleton service and a service instance provided at component level?
+* Can a service be injected into another service?
+* How do you inject services using the inject() function?
+* What is the difference between constructor injection and the inject() function?
+* How do you configure a service using InjectionToken?
+* How do you provide different implementations of a service?
+* What are useClass, useValue, useFactory, and useExisting providers?
+* How do you mock a service in Angular unit tests?
+* How do you test a service that uses HttpClient?
+* What is HttpTestingController, and why is it used?
+* How do you test error responses from an HTTP service?
+* How do you manage service dependencies in standalone Angular applications?
+* What happens when a service is provided in both root and component providers?
+* How do you organize services in a large Angular application?

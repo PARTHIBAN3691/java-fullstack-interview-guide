@@ -1,0 +1,30 @@
+* A PostgreSQL container is deleted and recreated, and all database records appear to be missing. How would you investigate the volume configuration and recover the data?
+* A Spring Boot application cannot write uploaded documents to a mounted directory. How would you identify whether the problem is caused by permissions, ownership, or mount configuration?
+* A Docker Compose service starts successfully but reports that its data directory is empty. How would you determine whether the wrong volume or mount path is being used?
+* A developer deletes a container assuming its data will remain available, but the application loses important files. How would you explain the cause and prevent recurrence?
+* A database container starts with an empty data directory after a deployment. How would you verify whether a new anonymous volume was created instead of reusing the existing volume?
+* Two Java application containers use the same volume and intermittently overwrite each other's generated files. How would you investigate and prevent data conflicts?
+* A production database becomes slow after its Docker volume grows significantly. How would you investigate storage latency, filesystem capacity, and database-level issues?
+* A Docker host runs out of disk space even though the application containers appear small. How would you identify whether volumes, logs, or unused images are consuming the space?
+* A container running as a non-root user receives permission-denied errors on a bind mount. How would you resolve the issue without granting unnecessary privileges?
+* A volume backup completes successfully, but the restored database fails to start. How would you investigate backup consistency and restoration correctness?
+* A team needs to move a large PostgreSQL database from one Docker host to another with minimal downtime. How would you plan the migration?
+* A Docker volume becomes inaccessible after a host reboot. How would you investigate the storage mount, Docker configuration, and filesystem state?
+* A Spring Boot application writes report files into a volume, but the files are not visible in the expected host directory. How would you troubleshoot the mount type and path?
+* A container mounts a configuration directory, but the files originally present in the image are no longer visible. Why might this happen, and how would you fix it?
+* A developer accidentally runs docker volume prune in a shared environment. How would you assess the impact and attempt recovery?
+* A database volume is shared between containers on the same host. One container updates files while another reads inconsistent data. How would you determine whether shared access is appropriate?
+* A containerized application needs to store temporary authentication tokens that must not persist after the container stops. How would you choose and configure the storage mechanism?
+* A remote storage volume fails to mount during deployment, preventing a Java service from starting. How would you isolate the storage driver, network, and authentication issues?
+* An application deployment creates a new volume every time a container is recreated. How would you correct the Compose configuration and prevent data fragmentation?
+* A database migration requires moving data from a named volume to a new storage location. How would you validate data completeness and minimize downtime?
+* A Spring Boot application works on Linux but fails to access a bind-mounted directory on a developer's Windows machine. How would you investigate platform-specific differences?
+* A production container can read files from a volume but cannot update them. How would you diagnose read-only mount settings and filesystem permissions?
+* A Docker host reports that disk space is available, but applications fail to create new files. How would you investigate inode exhaustion and filesystem limits?
+* A shared volume contains sensitive customer documents, and an unrelated container can access them. How would you investigate the exposure and improve isolation?
+* An application generates millions of small files in a persistent volume, and file operations become slower over time. How would you investigate and improve the storage design?
+* A database backup is taken by copying its live data directory while the database is running. How would you assess the backup's consistency and recommend a safer approach?
+* After a storage backend migration, the application starts but some uploaded documents are missing. How would you compare the source and destination and validate recovery?
+* A volume fills up during a batch-processing job and causes the application to fail. How would you identify the cause, restore service, and prevent recurrence?
+* A containerized application requires persistent files across multiple Docker hosts. How would you evaluate shared storage or object storage instead of a local volume?
+* A production incident requires proving that database backups can be restored within the required recovery time. How would you design and test the recovery process?

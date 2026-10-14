@@ -1,0 +1,30 @@
+* Write a Spring Boot application with a custom aspect that logs before every service method execution.
+* Write an aspect using @AfterReturning to log the return value of a service method.
+* Write an aspect using @AfterThrowing to log exceptions thrown by service methods.
+* Implement an execution-time monitoring aspect using @Around advice and System.nanoTime().
+* Create a custom @LogExecution annotation and intercept only annotated methods.
+* Write a pointcut that intercepts all public methods in a specified service package.
+* Write a pointcut that intercepts methods whose names begin with save.
+* Create a named pointcut and reuse it in multiple advice methods.
+* Write an aspect that logs method names and arguments using JoinPoint.
+* Implement an aspect that records the execution duration and method outcome for each service invocation.
+* Write an @Around advice that calls proceed() and returns the original method result unchanged.
+* Write an aspect that logs exceptions and rethrows them without changing the exception type.
+* Create two aspects for logging and auditing, and configure their order using @Order.
+* Implement a custom @Auditable annotation and use it to intercept selected business methods.
+* Write an aspect that masks sensitive arguments before writing log messages.
+* Create an aspect that records successful and failed payment service invocations.
+* Implement a reusable aspect that logs method execution only when a configurable feature flag is enabled.
+* Write a pointcut that intercepts methods in a package and its subpackages.
+* Write a pointcut that intercepts methods accepting a specific parameter type.
+* Implement an aspect that captures the declaring class, method signature, and execution duration.
+* Write a Spring Boot test that verifies a custom aspect is invoked when a proxied service method is called.
+* Write a test demonstrating why self-invocation bypasses proxy-based Spring AOP advice.
+* Create an example that demonstrates the difference between JDK dynamic proxies and CGLIB proxies.
+* Implement an aspect that measures service execution time without swallowing exceptions.
+* Write a custom annotation for performance monitoring and intercept only annotated methods.
+* Implement an aspect that adds correlation information to service logs without storing request data in shared mutable fields.
+* Create an aspect that validates method arguments before allowing the target method to execute.
+* Write a program demonstrating how @Before, @AfterReturning, @AfterThrowing, and @Around advice behave for successful and failed method calls.
+* Implement an aspect that excludes methods annotated with a custom @SkipLogging annotation.
+* Build a complete Spring Boot example combining logging, auditing, execution-time monitoring, and ordered aspects.

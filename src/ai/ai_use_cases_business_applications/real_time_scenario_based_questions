@@ -1,0 +1,99 @@
+**Enterprise Knowledge Assistants**
+
+* Employees report that the assistant provides outdated policy information despite recent document updates. How would you trace ingestion delays, indexing, retrieval ranking, caching, and source versioning?
+* A manager receives confidential information from another department through an assistant response. How would you contain the incident, identify the authorization failure, assess exposure, and prevent recurrence?
+
+**Customer Support Chatbots**
+
+* The support chatbot begins inventing refund commitments, and complaint volume increases after a prompt update. How would you diagnose the regression, restore reliable behavior, and introduce safeguards?
+* During a major outage, chatbot traffic increases tenfold and the model provider begins throttling requests. How would you prioritize urgent customers, reduce overload, and maintain human escalation?
+
+**AI Coding Assistants**
+
+* An AI coding assistant generates code that passes unit tests but introduces a security vulnerability. How would you identify the gap in the development workflow and improve automated checks?
+* Developer productivity appears to improve, but production defects and code review times increase. How would you determine whether the assistant is creating net value?
+
+**Document Intelligence**
+
+* A document extraction service processes thousands of invoices successfully, but finance discovers incorrect totals in a subset of scanned documents. How would you trace the failure and introduce confidence-based validation?
+* After an OCR engine upgrade, extraction accuracy falls for tables and multi-page documents. How would you isolate the regression and roll out a corrected pipeline?
+
+**Contract and Legal Document Analysis**
+
+* The contract assistant flags routine clauses as high-risk while missing an unusual liability clause. How would you improve the evaluation dataset, risk taxonomy, evidence grounding, and human-review process?
+* A contract template changes, but the assistant continues using old clause references. How would you manage template versioning and validate analysis against the current source?
+
+**Invoice and Financial Document Processing**
+
+* An AI system extracts a valid-looking invoice total that differs from the sum of line items and taxes. How would you detect the discrepancy and prevent incorrect posting or payment?
+* Duplicate invoices enter through email and an ERP integration, resulting in duplicate payment risk. How would you implement deduplication, reconciliation, and idempotent processing?
+
+**Enterprise Search**
+
+* Employees complain that search returns relevant documents too low in the results. How would you determine whether the problem is query interpretation, indexing, metadata, ranking, or user feedback?
+* A former employee's permissions are revoked, but the person can still retrieve indexed content through a cached result. How would you investigate and fix permission propagation?
+
+**Text Summarization**
+
+* An executive summary omits a critical exception from a lengthy operational report. How would you investigate source selection, chunking, aggregation, and evaluation?
+* A summarization service produces contradictory summaries for the same report across two versions. How would you introduce reproducibility checks, version tracking, and factual consistency validation?
+
+**Information Extraction**
+
+* An extraction pipeline produces valid JSON but silently swaps customer identifiers between similar records. How would you detect the error, assess downstream impact, and improve entity matching?
+* A model upgrade improves average extraction accuracy but performs worse on a small set of critical fields. How would you introduce field-level quality gates and controlled rollout?
+
+**Recommendation Systems**
+
+* A recommendation engine begins promoting popular products almost exclusively, reducing discovery of relevant niche items. How would you diagnose ranking bias and improve diversity?
+* A production model increases clicks but decreases completed purchases and customer retention. How would you revise evaluation metrics and experimentation criteria?
+
+**Natural Language to SQL**
+
+* Business users report that an analytics assistant gives incorrect revenue totals because it joins multiple one-to-many tables. How would you diagnose the generated query and prevent similar semantic errors?
+* A generated SQL query scans a large production table and causes database resource exhaustion. How would you enforce query validation, read-only access, limits, and workload isolation?
+
+**AI-Powered Analytics**
+
+* An AI analytics assistant reports revenue growth, but the dashboard shows a decline. How would you investigate metric definitions, query generation, filters, aggregation, and data freshness?
+* The assistant presents a correlation as proof that a campaign caused increased sales. How would you correct the output and introduce safeguards against unsupported causal claims?
+
+**Fraud Detection**
+
+* Fraud losses rise even though the model's offline validation metrics remain strong. How would you investigate data drift, label delays, adversarial behavior, and production feature mismatches?
+* A fraud model begins blocking legitimate transactions after a seasonal sales event. How would you balance rapid risk mitigation with minimizing customer disruption?
+
+**Predictive Maintenance**
+
+* A maintenance model generates repeated alerts for equipment that continues operating normally. How would you assess sensor quality, calibration, false alarms, and maintenance thresholds?
+* Equipment failures increase despite apparently accurate model predictions. How would you investigate alert lead time, maintenance scheduling, missing data, and whether teams act on the predictions?
+
+**Workflow Automation**
+
+* An AI workflow approves a request using an outdated policy and updates a downstream system. How would you stop further incorrect actions, correct existing records, and prevent stale-policy decisions?
+* A workflow times out after updating one system but before updating another. How would you recover the process without duplicating actions or losing audit history?
+
+**AI for Software Development**
+
+* An AI-generated dependency upgrade passes tests but breaks compatibility in production. How would you improve impact analysis, integration testing, canary deployment, and rollback?
+* A team begins accepting AI-generated pull requests without understanding their changes. How would you establish engineering controls without eliminating the productivity benefits?
+
+**AI for DevOps and AIOps**
+
+* AIOps generates hundreds of duplicate alerts during a production incident and hides the original root cause. How would you improve correlation, deduplication, prioritization, and incident timelines?
+* An automated remediation restarts a service repeatedly and worsens an outage. How would you introduce action limits, preconditions, approval gates, and automatic stop conditions?
+
+**AI for IT Operations**
+
+* An IT assistant recommends an obsolete runbook that no longer matches the production environment. How would you detect stale operational knowledge and establish runbook ownership and versioning?
+* An AI agent receives permission to troubleshoot a server and attempts a destructive operation. How would you prevent the action and redesign authorization and execution controls?
+
+**AI for Cybersecurity**
+
+* A security assistant marks a malicious email as safe because the message contains instructions designed to manipulate the model. How would you investigate the prompt-injection path and improve threat-analysis safeguards?
+* An AI-assisted security system generates excessive false-positive alerts following a new deployment. How would you recalibrate prioritization while ensuring genuine threats remain detectable?
+
+**AI for Business Process Automation**
+
+* An AI workflow misclassifies a batch of customer requests and triggers incorrect downstream actions. How would you contain the issue, identify affected transactions, and safely reverse or correct completed work?
+* Automation initially reduces processing time but exception rates increase as business rules change. How would you improve monitoring, exception handling, rule ownership, and ongoing evaluation?

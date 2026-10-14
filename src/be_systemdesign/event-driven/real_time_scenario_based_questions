@@ -1,0 +1,30 @@
+* An order is saved in the database, but publishing the OrderCreated event fails. How would you prevent inconsistent state?
+* A payment consumer processes the same event twice after restarting. How would you prevent duplicate charges?
+* An inventory service receives OrderCreated events out of order. How would you prevent incorrect stock updates?
+* Kafka consumer lag increases rapidly during peak traffic. How would you identify and resolve the bottleneck?
+* A consumer crashes after updating the database but before committing its offset. What happens when it restarts?
+* A poison message repeatedly fails and blocks progress in a partition. How would you handle it?
+* A downstream service is unavailable for 30 minutes while events continue arriving. How would you prevent data loss and control backlog growth?
+* A broker outage occurs while multiple services are publishing business-critical events. How would you recover safely?
+* Two consumers update the same customer record based on concurrent events. How would you maintain consistency?
+* A producer publishes an event successfully but receives a timeout and retries. How would you avoid duplicate business effects?
+* A new event field breaks an older consumer after deployment. How would you design safer schema evolution?
+* A consumer group frequently rebalances and processing latency increases. How would you investigate?
+* One Kafka partition receives most of the traffic because of an unsuitable partition key. How would you redistribute the workload?
+* A customer order requires payment authorization, inventory reservation, and shipping confirmation. How would you coordinate the workflow?
+* Payment authorization succeeds, but inventory reservation fails. How would you compensate for the completed operation?
+* A search index is several minutes behind the primary database. How would you improve synchronization and user experience?
+* A new consumer must process historical events without affecting live processing. How would you implement replay safely?
+* A reporting service needs to rebuild its projections after a schema change. How would you design the replay process?
+* Events from multiple producers arrive with different timestamps and inconsistent ordering. How would you determine the correct processing order?
+* A consumer processes messages faster than the database can handle writes. How would you implement backpressure?
+* An event contains sensitive customer information and is consumed by multiple services. How would you protect the data?
+* A business-critical event is accidentally deleted or expires from the broker. How would you recover and prevent recurrence?
+* A producer and consumer are deployed independently and use different event schema versions. How would you ensure compatibility?
+* A multi-region application must continue processing events during a regional outage. How would you design replication and failover?
+* A scheduled batch job and an event consumer process the same business record simultaneously. How would you prevent conflicting updates?
+* An event-driven workflow gets stuck because a completion event is never emitted. How would you detect and recover the workflow?
+* A downstream service is overwhelmed by a sudden event burst. How would you protect it without losing messages?
+* A financial ledger consumes transaction events and must never apply a transaction twice. How would you design the processing pipeline?
+* Multiple teams publish events to a shared platform with inconsistent naming and payload formats. How would you establish governance?
+* How would you troubleshoot an incident where events are accepted by the broker but business state is delayed or incorrect?

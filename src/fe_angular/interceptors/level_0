@@ -1,0 +1,30 @@
+* What is an HTTP interceptor in Angular?
+* Why do we use HTTP interceptors in Angular applications?
+* What is the purpose of HttpInterceptor in Angular?
+* What is the difference between an HTTP interceptor and an HTTP service?
+* How do you create an HTTP interceptor in Angular?
+* What is the difference between functional and class-based HTTP interceptors?
+* What is the purpose of HttpRequest in an interceptor?
+* What is the purpose of HttpHandler in a class-based interceptor?
+* What is the purpose of HttpHandlerFn in a functional interceptor?
+* What is the purpose of HttpEvent in Angular HTTP interceptors?
+* How do you register a functional interceptor in a standalone Angular application?
+* How do you register a class-based interceptor using HTTP_INTERCEPTORS?
+* What is the purpose of provideHttpClient()?
+* What is the purpose of withInterceptors()?
+* What is the purpose of withInterceptorsFromDi()?
+* How do you add an authorization token to outgoing HTTP requests?
+* How do you log outgoing HTTP requests using an interceptor?
+* How do you inspect HTTP responses inside an interceptor?
+* How do you handle HTTP errors inside an interceptor?
+* Can an interceptor modify an HTTP request?
+* Why is HttpRequest immutable in Angular?
+* What is the purpose of the clone() method on HttpRequest?
+* How do you add custom headers inside an interceptor?
+* Can multiple HTTP interceptors be registered in Angular?
+* In what order are HTTP interceptors executed?
+* What is the difference between request interception and response interception?
+* How do you exclude a specific API endpoint from an interceptor?
+* Can an interceptor modify the response returned by an API?
+* How do you use an interceptor to display a global loading indicator?
+* What are common use cases for HTTP interceptors?

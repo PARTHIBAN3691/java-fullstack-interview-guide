@@ -1,0 +1,30 @@
+* Write a Java program using the Google Cloud BigQuery client library to execute a simple SQL query.
+* Write a Java program that lists all datasets in a specified Google Cloud project.
+* Write a Java program that lists all tables in a BigQuery dataset.
+* Write a Java program that retrieves the schema of a BigQuery table.
+* Write a Java program that executes a parameterized query using named query parameters.
+* Write a Java program that executes a parameterized query using positional query parameters.
+* Write a Java program that waits for a BigQuery query job to complete and handles job failures.
+* Write a Java utility that handles BigQuery job timeouts without blindly resubmitting a query.
+* Write a Java program that retrieves query results using pagination.
+* Write a Java program that converts BigQuery query results into Java DTO objects.
+* Write a Spring Boot REST endpoint that accepts date filters and queries transaction data from BigQuery.
+* Write a Spring Boot service that executes a parameterized BigQuery query and returns aggregated sales totals.
+* Write a Spring Boot service that validates query parameters before executing an analytical query.
+* Write a Java utility that maps BigQuery data types to suitable Java types.
+* Write a Java program that loads a CSV file into a BigQuery table using a load job.
+* Write a Java program that inserts rows into BigQuery using the supported client-library insertion mechanism.
+* Write a Java program that performs an upsert using a BigQuery MERGE statement.
+* Write a Java program that identifies duplicate business keys in a BigQuery table.
+* Write a Java program that generates a reconciliation report comparing source totals with BigQuery totals.
+* Write a Java utility that calculates the percentage difference between source and target record counts.
+* Write a Java program that retrieves BigQuery job metadata and reports execution duration and bytes processed.
+* Write a Java service that rejects a query when its estimated processing cost exceeds a configured threshold.
+* Write a Java program that detects failed BigQuery jobs and categorizes errors for retry or investigation.
+* Write a Java retry utility that uses exponential backoff and jitter for transient BigQuery API failures.
+* Write a Java program that processes a large BigQuery result set in pages without loading every record into memory.
+* Write a Spring Boot scheduled job that checks whether critical BigQuery tables have been refreshed within an SLA.
+* Write a Java service that compares source and target schemas and reports incompatible changes.
+* Write a Java program that validates incoming JSON records against an expected BigQuery schema.
+* Write a Java utility that generates parameterized SQL for date-partitioned reporting tables while preventing SQL injection.
+* Write unit tests for a BigQuery repository layer using mocked client responses, including successful queries, empty results, timeouts, and permission errors.

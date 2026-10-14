@@ -1,0 +1,30 @@
+* Write a Spring Boot REST controller that implements GET, POST, PUT, PATCH, and DELETE for a customer resource.
+* Write a Spring Boot endpoint that retrieves a customer by ID using GET.
+* Write a Spring Boot endpoint that creates a customer and returns HTTP 201 with a Location header.
+* Write a Spring Boot endpoint that replaces an existing customer using PUT.
+* Write a Spring Boot endpoint that updates only selected customer fields using PATCH.
+* Write a Spring Boot endpoint that deletes a customer and returns HTTP 204.
+* Write a Spring Boot endpoint that supports HEAD requests for checking resource availability.
+* Write a Spring Boot endpoint that returns supported HTTP methods through OPTIONS.
+* Write a Spring Boot example that returns HTTP 405 when a method is unsupported.
+* Write a Spring Boot controller that distinguishes full updates from partial updates.
+* Write a PATCH implementation that ignores omitted fields but handles explicit null values correctly.
+* Write a Java method that determines whether an HTTP method is safe or idempotent.
+* Write a Java HttpClient program that sends GET, POST, PUT, PATCH, and DELETE requests.
+* Write a Spring WebClient example that sends a PATCH request with a JSON payload.
+* Write a Spring Boot integration test that verifies the behavior of all supported HTTP methods.
+* Write an automated test that verifies GET requests do not modify business data.
+* Write an automated test that verifies repeated PUT requests produce the same final resource state.
+* Write an automated test that verifies repeated DELETE requests do not cause server errors.
+* Write an implementation of an idempotency-key mechanism for a payment-creation POST endpoint.
+* Write a Java service that detects reuse of an idempotency key with a different request payload.
+* Write a Spring Boot filter or interceptor that validates idempotency keys for selected endpoints.
+* Write a concurrent test that sends multiple POST requests with the same idempotency key and verifies only one operation is created.
+* Write a Spring Boot endpoint that uses ETag and If-Match to prevent conflicting PUT requests.
+* Write a PATCH endpoint that returns HTTP 412 when the supplied precondition fails.
+* Write a REST API implementation that supports bulk updates with per-item success and failure results.
+* Write a Java method that safely retries idempotent HTTP operations with bounded exponential backoff.
+* Write a Java HTTP client that retries POST requests only when an idempotency key is present.
+* Write a Spring Boot authorization test that verifies permissions separately for GET, POST, PUT, PATCH, and DELETE.
+* Write an integration test that verifies CORS preflight behavior for PUT, PATCH, and DELETE.
+* Write a coding solution that supports legacy POST-based updates alongside PUT and PATCH without duplicating business logic.

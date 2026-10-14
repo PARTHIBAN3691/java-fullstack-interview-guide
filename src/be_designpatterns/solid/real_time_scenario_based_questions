@@ -1,0 +1,30 @@
+* A Java service validates requests, writes to a database, sends emails, and generates reports. How would you refactor it to follow SRP?
+* Your team must add UPI payments to a system that currently supports cards only. How would you apply OCP?
+* A new payment provider requires changes across several existing classes. How would you redesign the system to minimize future modifications?
+* A subclass of Account throws an exception when withdrawing money, although the base class permits withdrawals. How would you investigate the LSP violation?
+* A read-only reporting service implements a large repository interface containing create, update, and delete methods. How would you apply ISP?
+* A Spring Boot service directly creates a concrete database repository using the new keyword. How would you redesign it using DIP?
+* Unit tests for a business service require a running database because the service creates its own database connections. How would you improve the design?
+* A notification service contains a long switch statement for email, SMS, and push notifications. How would you make it extensible?
+* A production change to invoice formatting unexpectedly breaks payment calculations. Which SOLID principles might have been violated?
+* Several teams depend on a large shared interface, and a minor interface change breaks multiple services. How would you address this?
+* A legacy superclass contains methods that some subclasses cannot meaningfully implement. How would you redesign the hierarchy?
+* A Spring Boot service has twelve constructor dependencies and performs unrelated business operations. How would you determine whether SRP is violated?
+* Adding a new shipping provider requires editing the controller, service, and repository layers. How would you reduce this coupling?
+* A third-party API client is used directly throughout the application. How would you isolate the integration behind an abstraction?
+* A discount engine requires code changes every time marketing introduces a new discount type. How would you redesign it?
+* A subclass changes the meaning of a superclass method and causes incorrect business results. How would you detect and fix the problem?
+* A shared interface contains dozens of methods, but each implementation uses only a few. How would you split the contract safely?
+* A team introduces an interface for every class, making the codebase difficult to navigate. How would you simplify the design without abandoning SOLID?
+* A service mixes authorization checks with order processing and database persistence. How would you separate its responsibilities?
+* An external payment provider changes its request format, forcing changes to domain logic. How would you isolate the impact?
+* A new tax calculation rule requires modifications to many unrelated classes. Which design principles would you apply?
+* A message consumer directly calls several concrete services and is difficult to test. How would you redesign its dependencies?
+* A repository interface exposes database-specific query objects to business services. How would you reduce infrastructure coupling?
+* A class has a single responsibility but depends on many unrelated utility classes. How would you assess its design?
+* A refactoring introduces interfaces and factories but makes a straightforward CRUD flow much more complicated. How would you decide whether to retain the changes?
+* Two subclasses of the same base class produce different results for a method that callers expect to behave consistently. How would you resolve the design issue?
+* A microservice must support multiple authentication providers without repeatedly changing core business logic. How would you apply SOLID?
+* A service's unit tests require extensive mocking because its dependencies are tightly coupled. How would you improve its architecture?
+* A new feature breaks existing behavior despite adding a separate implementation. How would you investigate whether OCP or LSP has been violated?
+* Your team is refactoring a legacy application under strict release deadlines. How would you prioritize SOLID improvements while minimizing regression risk?

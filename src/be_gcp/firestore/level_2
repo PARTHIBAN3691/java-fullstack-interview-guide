@@ -1,0 +1,30 @@
+* Explain the internal data model and storage characteristics of Firestore.
+* How would you design a Firestore schema for a large-scale e-commerce application?
+* How do you decide between embedding data in a document and using subcollections?
+* How do you model one-to-many and many-to-many relationships in Firestore?
+* How do you avoid hotspotting caused by sequential document IDs or monotonically increasing fields?
+* How do you design high-throughput writes for a Firestore collection?
+* How do you optimize queries that scan large numbers of indexed entries?
+* How do composite indexes affect query performance and storage costs?
+* How do Firestore transactions provide consistency, and what limitations should you consider?
+* How do you handle transaction contention when multiple clients update the same document?
+* How would you implement optimistic concurrency control using document update time?
+* How do you design an idempotent write workflow for retryable Firestore operations?
+* How do you implement distributed counters to avoid write contention?
+* How do you design pagination when records are continuously inserted or updated?
+* How do you handle Firestore's document size and index-entry limits in a large application?
+* How do you reduce index storage costs while preserving query requirements?
+* How do you secure Firestore access for both mobile clients and trusted backend services?
+* How do Firestore security rules differ from authorization checks performed by a Java backend?
+* How do you prevent unauthorized access when a backend service uses privileged credentials?
+* How would you design tenant isolation in a multi-tenant Firestore application?
+* How do you implement a reliable event-driven architecture using Firestore triggers and Cloud Functions?
+* How do you prevent duplicate processing when Firestore-triggered events are delivered more than once?
+* How do you design a change-data processing pipeline using Firestore, Pub/Sub, and Dataflow?
+* How do you handle consistency when Firestore data must be synchronized with BigQuery or an external SQL database?
+* How do you plan a migration from a relational database to Firestore?
+* How do you implement schema evolution when Firestore documents have different field versions?
+* How do you evaluate Firestore against Cloud SQL, Bigtable, and Spanner for a specific workload?
+* How do you design backup, point-in-time recovery, and disaster recovery for Firestore?
+* How do you monitor latency, contention, index usage, and billing for a production Firestore application?
+* How would you estimate Firestore costs for a workload with millions of daily reads and writes?

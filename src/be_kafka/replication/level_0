@@ -1,0 +1,30 @@
+* What is replication in Kafka?
+* Why does Kafka use replication?
+* What is a replica in Kafka?
+* What is the difference between a partition and a replica?
+* What is a replication factor?
+* What does a replication factor of 1 mean?
+* What does a replication factor of 3 mean?
+* What is a leader replica in Kafka?
+* What is a follower replica in Kafka?
+* What is the role of the partition leader?
+* What is the role of follower replicas?
+* Can a Kafka partition have multiple replicas?
+* Can multiple replicas of the same partition reside on the same broker?
+* What is an ISR in Kafka?
+* What is the full form of ISR?
+* What is the difference between ISR and all replicas?
+* What is an out-of-sync replica?
+* What is an under-replicated partition?
+* What happens when a Kafka broker fails?
+* What is leader election in Kafka?
+* What is a preferred replica?
+* What is preferred replica election?
+* What is the purpose of `replication.factor`?
+* What is the purpose of `min.insync.replicas`?
+* What is the purpose of `acks=all`?
+* How does replication improve Kafka availability?
+* Does replication protect Kafka data against every type of failure?
+* What happens when a follower replica falls behind the leader?
+* How can you check the replication factor of a Kafka topic?
+* How does replication affect Kafka storage requirements?

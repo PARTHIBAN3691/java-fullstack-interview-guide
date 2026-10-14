@@ -1,0 +1,30 @@
+* Create a simple Spring Boot application with a REST endpoint that returns a welcome message.
+* Build a CRUD REST API for an Employee entity using Spring Boot.
+* Create a Spring Boot REST controller with GET, POST, PUT, and DELETE endpoints.
+* Implement constructor-based dependency injection in a Spring Boot service.
+* Create a Spring Boot application with separate controller, service, and repository layers.
+* Configure a custom application port using application.properties.
+* Create profile-specific configuration for development and production environments.
+* Implement type-safe configuration using @ConfigurationProperties.
+* Write a custom configuration class that registers a bean using @Bean.
+* Implement conditional bean creation using @ConditionalOnProperty.
+* Create a custom Spring Boot auto-configuration class and register it correctly.
+* Build a reusable Spring Boot starter for a shared logging library.
+* Implement global exception handling using @RestControllerAdvice and @ExceptionHandler.
+* Create a custom exception and return a structured error response from a REST API.
+* Implement request validation using @Valid and Bean Validation annotations.
+* Write a Spring Boot application that uses CommandLineRunner to initialize startup data.
+* Implement a custom health indicator for an external service using Spring Boot Actuator.
+* Expose custom application metrics using Micrometer.
+* Write unit tests for a service class using JUnit and Mockito.
+* Write a controller test using @WebMvcTest and MockMvc.
+* Write an integration test using @SpringBootTest for a REST endpoint.
+* Implement a Spring Data JPA repository with pagination and sorting.
+* Configure database connectivity using externalized configuration properties.
+* Implement transaction management for a service method using @Transactional.
+* Create a REST client using RestClient or WebClient to call an external API.
+* Configure request timeouts and error handling for an external HTTP service call.
+* Implement graceful shutdown configuration for a Spring Boot application.
+* Create a scheduled task using @Scheduled and configure its execution interval.
+* Build a Spring Boot application with Actuator endpoints secured using Spring Security.
+* Create a production-ready Spring Boot REST API with validation, global exception handling, structured logging, health checks, metrics, and integration tests.

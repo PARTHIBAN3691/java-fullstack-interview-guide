@@ -1,0 +1,30 @@
+* What is a Volume in Kubernetes?
+* Why do we need Volumes in Kubernetes?
+* What are the different types of Volumes supported by Kubernetes?
+* What is the difference between a container filesystem and a Kubernetes Volume?
+* What is an emptyDir Volume?
+* What happens to an emptyDir Volume when a container restarts?
+* What happens to an emptyDir Volume when a Pod is deleted?
+* What is a hostPath Volume?
+* What are the risks of using hostPath Volumes?
+* What is a PersistentVolume (PV)?
+* What is a PersistentVolumeClaim (PVC)?
+* What is the difference between a PersistentVolume and a PersistentVolumeClaim?
+* What is a StorageClass in Kubernetes?
+* What is dynamic volume provisioning?
+* What is static volume provisioning?
+* What is the difference between ephemeral and persistent storage?
+* What is a volumeMount in Kubernetes?
+* What is the difference between a Volume and a volumeMount?
+* What is the purpose of mountPath in a container specification?
+* Can multiple containers in a Pod share the same Volume?
+* What is the difference between readOnly and read-write Volume mounts?
+* What is a ConfigMap Volume?
+* How can a Kubernetes Secret be mounted as a Volume?
+* What is a CSI driver?
+* What is the Container Storage Interface (CSI)?
+* What are the common access modes for PersistentVolumes?
+* What is the difference between ReadWriteOnce, ReadOnlyMany, and ReadWriteMany?
+* What is volume binding in Kubernetes?
+* How do you check the status of a PersistentVolumeClaim?
+* How do you troubleshoot a Volume that is not mounted inside a container?

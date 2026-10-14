@@ -1,0 +1,30 @@
+* A Spring Boot payment service is deployed on Cloud Run, and you need to expose it securely through Google Cloud API Gateway. How would you design the architecture and configure authentication?
+* A client receives 401 Unauthorized responses even though it sends a JWT. How would you troubleshoot the OpenAPI security configuration, token issuer, audience, and expiration?
+* API Gateway returns 403 Forbidden when invoking a protected Cloud Run backend. How would you identify whether the issue is caused by IAM permissions or client authorization?
+* API Gateway works in development but fails in production because the backend uses a different service account. How would you diagnose and resolve the configuration difference?
+* A public API experiences a sudden traffic spike that threatens the availability of Java microservices. How would you protect the backend and monitor gateway traffic?
+* A Spring Boot application is migrated from a virtual machine to Cloud Run, and existing API clients must continue using the same public endpoint. How would you perform the migration?
+* Several Java microservices must be exposed under one domain with different URL paths. How would you configure routing and backend authentication?
+* A frontend application receives CORS errors when calling an API Gateway endpoint. How would you troubleshoot the gateway and backend CORS configurations?
+* An API Gateway deployment fails after a developer changes the OpenAPI document. How would you identify invalid fields, unsupported extensions, or incorrect backend definitions?
+* A production release introduces a new API version that breaks existing clients. How would you manage versioning, compatibility, and rollback?
+* API Gateway reports successful request handling, but users experience high end-to-end latency. How would you isolate gateway, network, and backend latency?
+* A Cloud Run backend returns 500 errors only under heavy traffic. How would you use Cloud Logging, Cloud Monitoring, and application metrics to investigate?
+* A payment API occasionally processes the same transaction twice after clients retry timed-out requests. How would you design idempotency across the gateway and Spring Boot service?
+* An organization requires only authenticated corporate applications to access an API. How would you choose between API keys, JWT validation, IAM authentication, and network restrictions?
+* A multi-tenant SaaS platform must prevent one tenant from accessing another tenant's data. How would you enforce authorization at the gateway and application layers?
+* An API key has been exposed in a public repository. How would you revoke or rotate the key and reduce the impact of future credential leaks?
+* A backend service account has excessive IAM permissions. How would you reduce its privileges without disrupting API Gateway traffic?
+* A Java microservice must be deployed in a private environment while remaining accessible through API Gateway. How would you evaluate supported backend connectivity and authentication options?
+* An API must accept requests from mobile applications and browser clients. How would you handle authentication, CORS, API keys, and abuse prevention?
+* The organization requires full audit trails for API access to sensitive customer records. How would you configure logging, correlation IDs, retention, and access controls?
+* A gateway configuration works locally but fails after Terraform deployment. How would you investigate dependency ordering, IAM propagation, and OpenAPI configuration differences?
+* A CI/CD pipeline accidentally deploys an incorrect API configuration to production. How would you implement validation, approval gates, and rollback procedures?
+* API Gateway returns 404 for one endpoint even though the corresponding Spring Boot controller exists. How would you inspect path matching, HTTP methods, base paths, and backend routing?
+* A downstream service requires Google-signed identity tokens, but clients send their own JWT access tokens. How would you configure the two authentication layers correctly?
+* The identity provider rotates signing keys and some requests begin failing JWT validation. How would you investigate key discovery, token headers, and validation settings?
+* A financial API must enforce different request limits for different customers. How would you decide whether gateway quotas are sufficient or a dedicated rate-limiting component is required?
+* API Gateway logs contain sensitive request information that should not be retained. How would you minimize exposure and design secure application-level logging?
+* A team needs separate gateway configurations for development, testing, staging, and production. How would you manage environment-specific backend URLs and service accounts?
+* The organization is deciding between Google Cloud API Gateway and Apigee for a growing external API program. How would you compare requirements, cost, operational complexity, and governance features?
+* A production API must remain available during backend deployment and configuration changes. How would you plan releases, health checks, resilience, and recovery procedures?

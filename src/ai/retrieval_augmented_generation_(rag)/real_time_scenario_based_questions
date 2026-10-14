@@ -1,0 +1,119 @@
+**RAG Fundamentals and Architecture**
+* An enterprise RAG assistant frequently returns irrelevant answers even though all services are healthy. How would you trace the complete pipeline and identify the failing stage?
+* A company wants to make confidential HR, finance, and engineering documents searchable through one assistant. How would you design the architecture and isolation boundaries?
+* After a release, users receive outdated information even though source documents were updated. How would you investigate synchronization, indexing, caching, and versioning?
+* The team is debating RAG versus fine-tuning for frequently changing internal policies. How would you evaluate the alternatives against update frequency, quality, cost, and security?
+
+**Basic RAG Pipeline**
+* A RAG endpoint returns HTTP 200 but produces answers unsupported by the retrieved documents. How would you instrument the pipeline and determine whether retrieval or generation is responsible?
+* The service works for individual requests but fails under concurrent traffic. How would you investigate shared state, connection pools, rate limits, and resource contention?
+* An LLM request fails after retrieval succeeds, causing the entire user operation to fail. How would you design recovery and user-facing error handling?
+* A production answer cannot be reproduced during an incident. How would you capture sufficient query, context, model, and configuration metadata to investigate it safely?
+
+**Document Ingestion Pipelines**
+* An event is delivered multiple times and produces duplicate chunks in the vector store. How would you implement idempotency and clean up existing duplicates?
+* A source document is updated while an older ingestion job is still running. How would you prevent stale content from overwriting the latest version?
+* Thousands of documents remain stuck in a processing state after a worker restart. How would you recover the backlog and make processing state reliable?
+* A document deletion succeeds in the source system, but its content remains retrievable through RAG. How would you identify every derived artifact that must be removed?
+
+**Document Parsing and Preprocessing**
+* Answers derived from a PDF omit critical footnotes and table values. How would you diagnose the extraction pipeline and introduce structural validation?
+* A parser upgrade causes a large increase in empty chunks. How would you compare versions, isolate affected document types, and roll back or reprocess safely?
+* Scanned documents contain incorrect OCR output that produces plausible but false answers. How would you detect extraction quality problems before indexing?
+* A malicious or corrupted document causes excessive memory consumption during parsing. How would you contain the resource impact and improve file-processing isolation?
+
+**Chunking and Overlap Strategies**
+* A support assistant retrieves a paragraph containing a technical term but misses the adjacent conditions that change its meaning. How would you redesign chunking and evaluate the fix?
+* Increasing overlap improves recall but significantly raises embedding costs and duplicate retrievals. How would you determine an appropriate configuration?
+* A document's tables and headings are separated into unrelated chunks, leading to incorrect answers. How would you preserve structural relationships?
+* A chunking change improves one document category but degrades another. How would you design a category-aware evaluation and decide whether adaptive chunking is justified?
+
+**Embedding Generation**
+* An embedding provider starts throttling ingestion jobs, and the knowledge base falls behind source updates. How would you implement coordinated rate limiting, batching, and backpressure?
+* A model upgrade creates vectors with a different dimension, causing indexing failures. How would you isolate versions and recover the partially processed corpus?
+* Embedding jobs complete successfully, but relevant documents are not returned in search. How would you verify vector compatibility, model configuration, and indexing?
+* A retry mechanism generates multiple embeddings and writes duplicate records after transient timeouts. How would you make the workflow idempotent?
+
+**Vector Store Integration**
+* The vector store becomes unavailable during a large ingestion job. How would you preserve progress, avoid losing updates, and resume processing safely?
+* A schema change causes some chunks to lose their source metadata. How would you restore provenance and prevent incomplete records from being indexed?
+* A database migration increases query latency and causes filtered searches to return fewer results. How would you investigate index settings, query semantics, and metadata compatibility?
+* A vector store returns relevant documents from an unauthorized tenant. How would you contain the incident and prove that tenant isolation works across all retrieval paths?
+
+**Semantic and Hybrid Retrieval**
+* A search assistant cannot find exact error codes even though semantically similar documents are returned. How would you add lexical retrieval and verify that exact matches improve?
+* Hybrid retrieval reduces recall because one retrieval source dominates the final ranking. How would you investigate score fusion and tune the ranking?
+* Users complain that top results contain repeated chunks from the same document. How would you introduce deduplication and diversify evidence?
+* Search quality declines as the corpus expands to include multiple business domains. How would you investigate embedding quality, filtering, query distribution, and retrieval strategy?
+
+**Query Rewriting and Expansion**
+* A follow-up question such as “What about the previous year?” retrieves unrelated documents because earlier context was lost. How would you construct a standalone query while preserving the intended reference?
+* Query expansion improves recall but increases irrelevant results and cost. How would you evaluate the variants and decide which should be retained?
+* A rewriter removes an important negation or product identifier, causing a wrong answer. How would you preserve critical query constraints?
+* An attacker embeds instructions in conversation history that manipulate the rewriting step. How would you isolate untrusted input and validate rewritten queries?
+
+**Reranking and Context Compression**
+* Initial retrieval includes the correct document, but the final answer uses a lower-ranked irrelevant passage. How would you diagnose and improve reranking?
+* A reranker increases latency beyond the service-level objective. How would you adjust candidate count, batching, model selection, and fallback?
+* Context compression reduces prompt size but removes an exception clause that changes the answer. How would you detect semantic loss and validate compressed evidence?
+* The reranking service fails during peak traffic. How would you preserve useful retrieval results without causing a full RAG outage?
+
+**Context Window Management**
+* A conversation works initially but begins producing incomplete answers after many follow-up questions. How would you diagnose context overflow and improve history management?
+* Retrieved evidence exceeds the model's context limit, and simple truncation removes the most relevant passage. How would you implement relevance-aware context selection?
+* A context summarizer omits a user's earlier constraint and causes a recommendation to violate it. How would you preserve critical state and test summarization?
+* A provider model change reduces the available context budget. How would you adapt token allocation across instructions, history, evidence, and output?
+
+**Citation and Source Grounding**
+* The assistant generates convincing answers with citations that point to nonexistent pages. How would you validate citation identifiers and source offsets?
+* A correct answer cites a related document that does not actually support the stated claim. How would you implement claim-level grounding evaluation?
+* Documents are re-chunked after an update, and saved citations no longer point to the correct passages. How would you maintain stable source references?
+* Users can access citations to documents they are not authorized to read. How would you enforce permissions during citation generation and link resolution?
+
+**Advanced RAG**
+* A multi-stage RAG pipeline has good retrieval metrics but poor end-user answer quality. How would you investigate context selection, synthesis, and evidence conflicts?
+* An advanced pipeline introduces query rewriting, reranking, and verification, but latency doubles. How would you identify which stages contribute measurable value?
+* A query requires information from several documents, but each retrieval stage returns only part of the evidence. How would you implement iterative retrieval and verify completeness?
+* A configuration change improves benchmark performance but causes production regressions. How would you use representative evaluations, shadow traffic, and controlled rollout?
+
+**Agentic RAG**
+* An agent repeatedly searches the same knowledge base without reaching a conclusion. How would you detect loops and introduce step, time, and token budgets?
+* An agent invokes an internal tool based on malicious instructions found in a retrieved document. How would you enforce authorization outside the model?
+* A tool fails after several successful retrieval steps, leaving the workflow incomplete. How would you recover without repeating unnecessary work?
+* Agentic RAG performs better on complex questions but is much more expensive on simple questions. How would you design adaptive routing and compare task-level outcomes?
+
+**GraphRAG**
+* A GraphRAG system produces incorrect answers because two entities with similar names are merged. How would you investigate entity resolution and repair affected relationships?
+* Answers requiring connections across multiple documents are incomplete despite relevant graph nodes existing. How would you debug graph traversal, relationship extraction, and retrieval depth?
+* A source document is deleted, but derived relationships remain in the graph. How would you implement provenance-aware deletion and reconciliation?
+* Graph-based retrieval improves multi-hop questions but substantially increases latency. How would you benchmark traversal depth and combine graph retrieval with vector search?
+
+**Multimodal RAG**
+* A document assistant retrieves text correctly but misses important information contained in diagrams. How would you redesign ingestion and multimodal retrieval?
+* Video search returns relevant clips but citations point to incorrect timestamps. How would you preserve alignment through transcription, chunking, and retrieval?
+* OCR and visual extraction disagree about a table value, causing an unsupported answer. How would you reconcile conflicting evidence and indicate uncertainty?
+* Large media files overwhelm synchronous ingestion workers. How would you redesign processing around object storage, asynchronous jobs, and bounded concurrency?
+
+**RAG Evaluation and Benchmarking**
+* A new retrieval strategy improves recall@k but reduces answer faithfulness. How would you investigate the additional irrelevant context and downstream synthesis?
+* Automated LLM-based evaluation reports improvement, but human reviewers find no benefit. How would you assess judge bias and validate the evaluation dataset?
+* The benchmark contains mostly simple questions, while production traffic contains complex multi-document questions. How would you create a representative evaluation suite?
+* After a model upgrade, retrieval metrics remain stable but user satisfaction declines. How would you investigate generation quality, citations, and task completion?
+
+**RAG Hallucination Reduction**
+* The assistant confidently answers a question even though retrieved documents contain no supporting evidence. How would you introduce evidence sufficiency checks and abstention?
+* Two authoritative documents contain conflicting policy information. How would you determine which source takes precedence and prevent unsupported synthesis?
+* Hallucinations increase after context compression is introduced. How would you determine whether key evidence was removed or altered?
+* The model cites a source correctly but makes a claim that contradicts it. How would you detect the inconsistency and measure the regression?
+
+**RAG Security and Access Control**
+* A user receives confidential information through a cached answer after their access has been revoked. How would you investigate and fix cache invalidation and authorization enforcement?
+* Retrieved content includes instructions to expose environment variables or call privileged tools. How would you prevent indirect prompt injection from causing data disclosure?
+* A deleted document remains present in summaries, graph relationships, and vector indexes. How would you implement comprehensive deletion and verify completion?
+* Security testing discovers that query rewriting and reranking can access content outside the user's permitted scope. How would you establish authorization invariants across the entire pipeline?
+
+**RAG Performance and Cost Optimization**
+* RAG p99 latency rises sharply during peak hours while average latency remains acceptable. How would you identify queueing, provider throttling, retrieval fan-out, and resource contention?
+* Monthly AI costs increase despite stable user traffic. How would you attribute spending to repeated ingestion, query expansion, reranking, and oversized contexts?
+* Caching improves latency but occasionally returns stale policy information. How would you design version-aware cache keys and invalidation?
+* Ingestion workloads compete with online retrieval and cause user-facing timeouts. How would you isolate resources, apply backpressure, and prioritize workloads?

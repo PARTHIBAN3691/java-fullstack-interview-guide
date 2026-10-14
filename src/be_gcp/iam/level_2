@@ -1,0 +1,30 @@
+* Explain the Google Cloud IAM authorization model and how policy evaluation works.
+* How do IAM policies, deny policies, and principal access boundary policies differ?
+* How does IAM policy inheritance work across organizations, folders, projects, and resources?
+* How would you design least-privilege IAM for a large microservices architecture?
+* How do you design a secure service account strategy for hundreds of Java microservices?
+* How do you eliminate long-lived service account keys across an enterprise?
+* How does Workload Identity Federation authenticate external workloads without service account keys?
+* How do you configure Workload Identity Federation for workloads running outside Google Cloud?
+* How does service account impersonation work, and what permissions are required?
+* How do you prevent privilege escalation through service account impersonation?
+* How do you restrict who can attach a privileged service account to a compute resource?
+* How do you separate the permissions to create service accounts, grant roles, and use service accounts?
+* How do you design IAM boundaries between development, testing, staging, and production projects?
+* How do you implement fine-grained IAM Conditions for resource-level access control?
+* How do you use deny policies to prevent access even when an allow policy grants permissions?
+* How do you design centralized IAM governance across multiple Google Cloud projects?
+* How do you detect and remediate excessive permissions using IAM Recommender and audit logs?
+* How do you investigate a permission-denied error when the expected IAM role is already granted?
+* How do you troubleshoot access failures caused by inherited policies, deny policies, or IAM Conditions?
+* How do you implement separation of duties for production deployments and security administration?
+* How do you design IAM for a multi-tenant SaaS application hosted on Google Cloud?
+* How do you securely grant a Java application access to multiple Google Cloud services with different permission requirements?
+* How do you prevent developers from accessing production data while allowing deployments?
+* How do you manage IAM policy changes safely using infrastructure as code and CI/CD?
+* How do you detect unauthorized changes to IAM policies and service account permissions?
+* How do you rotate and revoke service account credentials without disrupting production workloads?
+* How do you design IAM for cross-project access between GKE, Cloud Run, BigQuery, and Cloud Storage?
+* How do you manage IAM at scale while avoiding policy sprawl and excessive group memberships?
+* How do you evaluate the security impact of granting roles/owner or roles/editor to a service account?
+* How would you design an enterprise IAM review process that continuously validates least privilege and compliance?

@@ -1,0 +1,30 @@
+* How do you configure HPA for a Spring Boot application?
+* How do you configure HPA using a Kubernetes YAML manifest?
+* How do you configure autoscaling based on CPU utilization?
+* How do you configure autoscaling based on memory utilization?
+* How do you configure minimum and maximum replicas for HPA?
+* How does HPA calculate average CPU utilization across Pods?
+* Why does HPA use CPU requests when calculating CPU utilization percentages?
+* What happens if CPU requests are not configured for application containers?
+* How do you install and configure metrics-server in a Kubernetes cluster?
+* How do you troubleshoot an HPA that displays unknown metrics?
+* How do you configure HPA for a Deployment using kubectl autoscale?
+* How do you monitor the number of replicas managed by HPA?
+* What is the purpose of the HPA behavior configuration?
+* How do scaleUp and scaleDown policies work in HPA?
+* What is the stabilization window in Kubernetes autoscaling?
+* How do you prevent frequent scaling up and down?
+* What is scaling hysteresis, and why is it useful?
+* How does HPA interact with the Kubernetes Scheduler?
+* How does Cluster Autoscaler work with HPA?
+* What happens when HPA requests more Pods than the cluster can accommodate?
+* How do Pod resource requests affect Cluster Autoscaler decisions?
+* How do you configure HPA using custom application metrics?
+* How do you use Prometheus metrics with Kubernetes autoscaling?
+* What is the role of the Kubernetes Metrics API?
+* How do you scale a Spring Boot application based on HTTP request rate?
+* How do you configure autoscaling based on message queue depth?
+* How do you use KEDA for event-driven autoscaling?
+* How do you configure autoscaling for a background Kafka consumer application?
+* How do you test autoscaling behavior under simulated traffic?
+* How do you configure autoscaling for different environments using Helm?

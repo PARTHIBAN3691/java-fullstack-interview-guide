@@ -1,0 +1,30 @@
+* A ReplicaSet is configured for three replicas, but only two Pods are running. How would you troubleshoot the issue?
+* A Pod managed by a ReplicaSet is deleted manually, but no replacement appears. What would you inspect?
+* A ReplicaSet shows three desired replicas and three current replicas, but only one Pod is Ready. How would you investigate?
+* A ReplicaSet cannot create Pods because the cluster has insufficient CPU and memory. How would you resolve the issue?
+* A ReplicaSet creates Pods, but they immediately enter CrashLoopBackOff. How would you identify the root cause?
+* A ReplicaSet reports FailedCreate events after a deployment change. How would you investigate quotas, admission policies, and Pod specifications?
+* Two ReplicaSets unexpectedly manage Pods with overlapping labels. How would you diagnose and correct the selectors?
+* A standalone ReplicaSet accidentally adopts an orphaned Pod. How would you investigate the ownership and selector configuration?
+* A ReplicaSet is deleted, and its Pods also disappear. How would you preserve the Pods during future maintenance?
+* A ReplicaSet is deleted, but its Pods continue running. How would you determine whether cascading deletion was disabled?
+* A Deployment rollout creates a new ReplicaSet, but the old ReplicaSet continues running all its replicas. What would you inspect?
+* A new ReplicaSet cannot become available because its Spring Boot application fails readiness probes. How would you troubleshoot the rollout?
+* A Deployment temporarily runs more Pods than its desired replica count during an update. How would you determine whether this is expected?
+* A team manually scales a ReplicaSet managed by a Deployment, but the replica count changes again. Why might this happen?
+* An HPA scales a Java application up, but the ReplicaSet cannot create additional Pods. How would you investigate capacity and scaling limits?
+* A worker node fails, leaving several ReplicaSet-managed Pods unavailable. How would you assess recovery and scheduling?
+* A ReplicaSet has enough Pods, but all of them are scheduled on one worker node. How would you improve availability?
+* A production rollout causes too many Pods to become unavailable at once. How would you adjust the Deployment strategy?
+* A ReplicaSet is stuck with fewer replicas than desired after a cluster upgrade. How would you inspect controller activity and events?
+* A Pod has the correct application image but is not associated with the expected ReplicaSet. How would you verify its ownerReferences and labels?
+* A ReplicaSet cannot create Pods because a required image cannot be pulled. How would you identify the image registry issue?
+* A ReplicaSet reaches the desired number of Pods, but the application remains unavailable because downstream services are failing. How would you distinguish infrastructure health from application health?
+* A new ReplicaSet uses an incorrect configuration and causes production errors. How would you roll back safely?
+* A Deployment has multiple old ReplicaSets after several releases. How does Kubernetes decide which ReplicaSets to retain?
+* A namespace reaches its Pod quota, preventing a ReplicaSet from scaling. How would you resolve the issue without disrupting critical workloads?
+* A ReplicaSet cannot schedule Pods because of node affinity and taint constraints. How would you identify the scheduling conflict?
+* During node maintenance, several Pods are evicted, and the service experiences downtime. How would you coordinate replica distribution and disruption budgets?
+* A ReplicaSet-managed service experiences uneven traffic across its Pods. How would you investigate readiness, Service endpoints, and load balancing?
+* A controller outage occurs while the application Pods continue serving traffic. What should happen after the controller recovers?
+* You need to deploy a Spring Boot service with multiple replicas, safe rolling updates, autoscaling, and multi-zone resilience. How would you design the resources?

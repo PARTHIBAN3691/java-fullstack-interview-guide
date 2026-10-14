@@ -1,0 +1,30 @@
+* How does React associate hook state with component instances when custom hooks are used?
+* Why must custom hooks follow the Rules of Hooks?
+* What happens if a custom hook calls another hook conditionally?
+* How do custom hooks behave during React re-renders?
+* Why does calling the same custom hook in two components not automatically share state?
+* How would you design a custom hook that supports request cancellation?
+* How would you prevent stale closures in custom hooks?
+* How would you prevent race conditions when multiple API requests are triggered rapidly?
+* How would you design a data-fetching hook that supports caching?
+* How would you implement request deduplication in a custom hook?
+* How would you implement retry logic with exponential backoff in a custom hook?
+* How would you design a custom hook that supports polling and cleanup?
+* How would you implement an optimistic update pattern in a custom hook?
+* How would you design a custom hook for cursor-based pagination?
+* How would you build a custom hook that supports infinite scrolling with intersection observers?
+* How would you prevent unnecessary re-renders caused by unstable custom hook return values?
+* When should useMemo() or useCallback() be used inside a custom hook?
+* How do you avoid stale dependencies in useEffect() within a custom hook?
+* How would you design a custom hook that manages WebSocket connections?
+* How would you handle reconnection and cleanup in a WebSocket custom hook?
+* How would you implement a custom hook for synchronizing state across browser tabs?
+* How would you design a custom hook that integrates with an external state store?
+* When should useSyncExternalStore() be used in a custom hook?
+* How do custom hooks interact with React Strict Mode in development?
+* What challenges arise when custom hooks are used with concurrent rendering?
+* How would you make a custom hook safe for server-side rendering?
+* What should you consider when using custom hooks with React Server Components?
+* How would you design type-safe generic custom hooks in TypeScript?
+* How would you structure and maintain a large library of shared custom hooks?
+* How would you evaluate whether logic belongs in a custom hook, utility function, or component?

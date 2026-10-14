@@ -1,0 +1,30 @@
+* An e-commerce application must generate all product bundles whose total price matches a target budget. How would you use backtracking to find valid bundles?
+* A scheduling system must assign employees to shifts while respecting availability and maximum working hours. How would you model and solve the problem?
+* A delivery application needs to find routes through a grid containing blocked roads. How would you implement backtracking and avoid revisiting locations?
+* A puzzle application needs to solve Sudoku boards of varying difficulty. How would you optimize the algorithm when basic backtracking becomes slow?
+* A financial application must identify combinations of transactions that sum to a reconciliation difference. How would you handle negative amounts and duplicate values?
+* A password-testing utility must generate all strings that satisfy specific character and length constraints. How would you prune invalid combinations early?
+* A text-processing service must split a string into valid dictionary words. How would you avoid exploring paths that cannot produce a valid segmentation?
+* A game engine must place N queens on a chessboard without conflicts. How would you represent the board and validate each placement efficiently?
+* A warehouse system must select product quantities to satisfy an order while minimizing unused capacity. How would you formulate the search and prune unnecessary branches?
+* A network-planning application needs to determine whether a graph supports a Hamiltonian cycle. How would you implement the search and handle large graphs?
+* A route planner must find a low-cost path that visits a required set of locations exactly once. How would you combine backtracking with lower-bound estimates?
+* A word-search game must find hundreds of dictionary words in a large grid. How would you reduce repeated traversal and unnecessary searches?
+* A report generator must create all valid combinations from thousands of candidate records. How would you control memory consumption and return results incrementally?
+* A Java API generates valid parentheses for a given number of pairs, but the output contains invalid sequences. How would you identify and correct the recursive state logic?
+* A backtracking solution produces duplicate subsets when input values repeat. How would you modify the algorithm to eliminate duplicates?
+* A production batch job runs for hours while exploring a large search space. How would you add time limits, cancellation, and useful progress metrics?
+* A scheduling algorithm finds valid assignments but misses some possible solutions. How would you verify the completeness of its search and constraint checks?
+* A puzzle solver becomes exponentially slower as the board size increases. How would you profile the algorithm and choose better branching heuristics?
+* A Java implementation occasionally corrupts its board state after returning from recursion. How would you investigate incorrect undo operations?
+* A service must find the first valid configuration rather than enumerate every possible configuration. How would you modify the search to terminate early?
+* A configuration generator must enforce dependencies between settings and prohibit conflicting combinations. How would you represent constraints and prune invalid partial configurations?
+* A resource-allocation engine must divide tasks among machines while respecting capacity limits. How would you apply backtracking with symmetry breaking?
+* A graph-coloring application must color connected network nodes using as few colors as possible. How would you formulate the optimization problem and reduce the search space?
+* A cryptarithmetic puzzle solver returns incorrect arithmetic assignments. How would you validate column-wise constraints and carry handling?
+* A file-selection service must find all groups of files that meet a target storage size. How would you avoid unnecessary branches when file sizes are non-negative?
+* A Java service must generate permutations of a large collection but cannot store all results in memory. How would you design an on-demand generator?
+* A parallel search implementation produces inconsistent results under concurrent execution. How would you isolate state and coordinate worker tasks?
+* A backtracking API receives malformed or excessively large requests. How would you validate inputs and prevent resource exhaustion?
+* A business rule engine must explain why a partial configuration is invalid. How would you design constraint checks that return useful diagnostic information?
+* A team is deciding between backtracking, dynamic programming, and greedy algorithms for a combinatorial problem. How would you evaluate the problem structure and choose an approach?

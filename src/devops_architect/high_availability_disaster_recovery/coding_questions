@@ -1,0 +1,137 @@
+
+**High Availability Architecture**
+* Implement a Java health-check aggregator that determines whether an application is healthy based on database, cache, and downstream-service status.
+* Write a service registry that tracks healthy instances and removes unavailable instances from routing.
+* Implement a dependency-aware readiness check for a Spring Boot application.
+* Design a Java component that calculates end-to-end availability from the availability of dependent services.
+* Write a concurrency-safe service that prevents duplicate job execution across multiple application instances.
+
+**Active-Active**
+* Implement an idempotent request processor that prevents duplicate business operations when the same request reaches two regions.
+* Write a Java conflict-detection component that identifies concurrent updates to the same entity using version numbers.
+* Implement a request-routing simulator that distributes traffic between regions according to configured weights and regional health.
+* Design a conflict-resolution strategy for replicated records with version information and timestamps.
+* Write tests for concurrent updates, duplicate requests, and conflicting event delivery.
+
+**Active-Passive**
+* Implement a failover state machine with primary, standby, promotion-in-progress, and recovery states.
+* Write a Java component that promotes a standby only after validating primary failure and required readiness conditions.
+* Implement a fencing mechanism that prevents an outdated primary from accepting writes after promotion.
+* Write a failback coordinator that verifies replication status before switching traffic to the recovered primary.
+* Implement tests for interrupted failover, repeated promotion requests, and concurrent recovery attempts.
+
+**Multi-AZ**
+* Implement a Java load-balancing simulator that distributes requests across availability zones and excludes unhealthy instances.
+* Write a capacity calculator that determines whether the remaining zones can handle production traffic after one zone fails.
+* Implement a zone-failure simulation that measures request failures, throughput, and recovery time.
+* Design a health-monitoring component that detects zone-wide failures rather than isolated instance failures.
+* Write a test that verifies the application continues serving critical requests after simulated loss of one zone.
+
+**Multi-Region**
+* Implement a regional routing component that selects the nearest healthy region from configured health and latency data.
+* Write a failover simulator that moves traffic to a recovery region when the primary region becomes unavailable.
+* Implement a regional health monitor that considers application and dependency health.
+* Write a data-version validation utility that identifies whether a recovery region meets a configured replication-lag threshold.
+* Implement tests for regional isolation, routing changes, and prevention of conflicting writes.
+
+**Disaster Recovery**
+* Build a Java recovery orchestrator that executes recovery steps in dependency order and records the status of each step.
+* Implement a recovery-runbook executor that supports retries, timeouts, and safe resumption after interruption.
+* Write a dependency graph algorithm that determines the correct order for restoring services.
+* Implement a recovery-readiness checker that validates application configuration, database access, secrets, and downstream connectivity.
+* Write a recovery report generator that compares actual restoration time and data-loss estimates with the configured RTO and RPO.
+* Design a recovery workflow that validates business transactions before declaring a service fully recovered.
+
+**Backup Strategies**
+* Implement a backup-schedule calculator that determines backup frequency from a target RPO.
+* Write a Java utility that validates backup metadata, checksums, timestamps, and expected artifact completeness.
+* Implement a backup-retention policy that preserves daily, weekly, and monthly recovery points.
+* Build a manifest generator that records the database checkpoint, transaction-log range, encryption-key identifier, and backup version.
+* Write a backup verification service that detects missing artifacts and alerts when the recovery-point target is at risk.
+* Implement tests for incomplete backups, duplicate backup jobs, and retention-policy boundary conditions.
+
+**Restore Strategies**
+* Implement a restore-plan generator that selects the required full, incremental, differential, and transaction-log backups for a target recovery point.
+* Write a Java component that validates whether all required backup artifacts are available before restoration begins.
+* Implement a recovery workflow that performs pre-restore checks, restoration, integrity validation, and readiness checks.
+* Build a reconciliation utility that compares records in a recovered dataset with a trusted transaction log.
+* Write an idempotent recovery-step executor that can resume safely after a failed restoration step.
+* Implement a validation component that checks business invariants, such as non-negative inventory and balanced ledger entries.
+
+**Recovery Point Objective (RPO)**
+* Implement an RPO calculator that measures the difference between the failure time and the latest recoverable committed transaction.
+* Write a replication-lag monitor that raises an alert when lag exceeds the configured RPO.
+* Implement a recovery-point selector that chooses the latest valid backup or checkpoint before a specified timestamp.
+* Build a calculator that estimates potential data loss from replication lag and backup intervals.
+* Write unit tests for zero RPO, missing checkpoints, delayed replication, and timestamps at boundary conditions.
+
+**Recovery Time Objective (RTO)**
+* Implement a recovery-time calculator that measures detection, decision, promotion, validation, and traffic-restoration durations.
+* Write a Java recovery orchestrator that executes independent recovery tasks concurrently and dependent tasks sequentially.
+* Implement an RTO monitor that alerts when the remaining recovery-time budget becomes insufficient.
+* Build a recovery report that compares planned and actual duration for each recovery step.
+* Write a prioritization algorithm that restores critical services before non-essential services when recovery resources are limited.
+
+**Disaster Recovery Testing**
+* Implement a DR-test framework that records simulated failure conditions, recovery steps, validation results, and actual RTO/RPO.
+* Write a Java test that simulates a primary-service failure and verifies traffic is routed to the recovery service.
+* Implement a recovery validation suite that checks database connectivity, application health, and critical business transactions.
+* Build a test-result comparator that identifies recovery regressions between successive DR exercises.
+* Write a safety guard that prevents a recovery test from targeting production resources unintentionally.
+* Implement a test that verifies recovery automation can resume after the controller restarts mid-execution.
+
+**Failover**
+* Implement a Java failover state machine with explicit transition rules and validation before each transition.
+* Write a failover controller that stops routing traffic to an unhealthy primary and directs requests to a healthy standby.
+* Implement a failback mechanism that checks data synchronization and service readiness before switching traffic back.
+* Build an idempotent failover command processor that safely handles duplicate commands.
+* Write tests for in-flight requests, interrupted transactions, delayed health checks, and repeated failover attempts.
+
+**Automatic Failover**
+* Implement a health-check monitor that uses consecutive failures and recovery checks to reduce false failover triggers.
+* Write a Java component that uses a lease or fencing token to enforce single-writer ownership.
+* Implement a failover controller that validates quorum or an equivalent safe promotion condition before changing primary ownership.
+* Build a retryable recovery workflow that handles partial success when database promotion succeeds but traffic routing fails.
+* Write concurrent tests that verify only one recovery controller can promote a standby at a time.
+* Implement metrics for failure-detection time, promotion duration, recovery success rate, and repeated failovers.
+
+**Database Replication**
+* Implement a replication-lag monitor that calculates delay from source and replica progress timestamps.
+* Write a Java routing component that directs consistency-sensitive reads to the primary and eligible reads to replicas.
+* Implement a version-aware read mechanism that avoids returning data older than a known committed version.
+* Build a promotion-readiness checker that validates replica health, replication progress, and required recovery metadata.
+* Write a replication-status aggregator that distinguishes healthy, delayed, stopped, and failed replication.
+* Implement tests for stale reads, replica disconnection, delayed replication, and primary failure.
+
+**Cross-Region Replication**
+* Implement a Java monitor that tracks replication lag independently for multiple recovery regions.
+* Write a region-selection algorithm that chooses a recovery target based on health, data freshness, and available capacity.
+* Implement a failover guard that blocks promotion when replication lag exceeds a configurable threshold unless an authorized override is provided.
+* Build a reconciliation utility that compares source and recovery-region record versions after a simulated network partition.
+* Write tests for replication interruption, regional isolation, stale checkpoints, and recovery-region promotion.
+
+**Backup Encryption**
+* Implement a Java backup-metadata validator that verifies encryption status and required key identifiers before restoration.
+* Write a key-access readiness check that confirms a recovery identity has the required decrypt permissions.
+* Implement a key-rotation metadata tracker that preserves the mapping between backup generations and their encryption keys.
+* Build a restore preflight check that detects missing or inaccessible encryption keys before starting a lengthy restore.
+* Write tests for key-permission failures, disabled keys, missing metadata, and key rotation.
+* Design a secure recovery workflow that retrieves decryption credentials through an approved secrets or KMS interface without logging sensitive material.
+
+**Business Continuity**
+* Implement a Java service-priority scheduler that restores critical business services before non-essential services.
+* Write a business-impact calculator that maps service downtime and affected transaction volume to configurable impact categories.
+* Implement a continuity-status dashboard backend that aggregates recovery progress across teams and services.
+* Build a communication-event tracker that records incident updates, escalation status, and stakeholder acknowledgments.
+* Write a reconciliation job that identifies business transactions left incomplete during an outage.
+* Implement a continuity-readiness checker that validates alternate endpoints, recovery credentials, and required operational dependencies.
+
+**Integrated High Availability & Disaster Recovery Challenges**
+* Design a Spring Boot application with multi-AZ deployment, database replication, health checks, and safe automatic failover.
+* Build a multi-region order-processing simulation that supports regional failover, idempotent requests, replication-lag monitoring, and post-recovery reconciliation.
+* Implement an end-to-end recovery orchestrator that restores infrastructure, databases, secrets, and application services in dependency order.
+* Build a backup-and-restore verification tool that validates checksums, encryption-key availability, data integrity, and actual RPO/RTO.
+* Implement a failure-injection test that simulates loss of a primary database, one availability zone, and a regional dependency while measuring business-service availability.
+* Design a failover workflow that uses fencing, recovery checkpoints, readiness gates, and idempotent state transitions to prevent split-brain.
+* Build a DR-test report generator that compares recovery objectives against measured detection, promotion, restoration, and validation times.
+* Implement a business-continuity simulation that prioritizes critical transactions, limits duplicate processing, and reconciles unfinished workflows after recovery.

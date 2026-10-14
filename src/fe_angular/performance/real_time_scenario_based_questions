@@ -1,0 +1,30 @@
+* An Angular dashboard takes several seconds to become interactive. How would you identify the bottleneck and improve startup performance?
+* A component renders thousands of records and freezes the browser. How would you optimize the list?
+* Scrolling becomes slow when a page contains many table rows. How would you implement virtual scrolling or pagination?
+* A component updates frequently even when its input data has not changed. How would you investigate unnecessary change detection?
+* A search field sends an API request for every keystroke. How would you reduce backend load and improve responsiveness?
+* Users see old API data after navigating between pages. How would you implement caching without serving stale data indefinitely?
+* Multiple components request the same API simultaneously. How would you prevent duplicate network requests?
+* The initial JavaScript bundle exceeds the application's performance budget. How would you reduce its size?
+* A third-party charting library significantly increases startup time, although charts are displayed only on one page. How would you optimize loading?
+* An Angular application works well on desktop but performs poorly on low-end mobile devices. How would you investigate the difference?
+* A component calls an expensive method from its template, and the method executes repeatedly. How would you refactor it?
+* A large reactive form becomes sluggish while users type. How would you optimize validation and change detection?
+* The application experiences memory growth after users repeatedly navigate between routes. How would you identify and fix the leak?
+* Lighthouse reports poor Largest Contentful Paint. What changes would you consider first?
+* Users experience delayed responses after clicking buttons, despite fast API responses. How would you investigate INP and main-thread blocking?
+* The page layout shifts when images and API-driven content load. How would you reduce CLS?
+* A lazy-loaded page takes too long to open on the first visit. How would you balance lazy loading and preloading?
+* A production build is significantly larger than expected. How would you analyze dependency sizes and tree shaking?
+* A component uses OnPush but still renders more often than expected. What would you investigate?
+* A CPU-intensive data transformation blocks the browser UI. How would you move or split the work?
+* Server-side rendering improves initial content display, but hydration takes too long. How would you optimize it?
+* An Angular application displays duplicated content or hydration errors after server rendering. How would you troubleshoot the issue?
+* An application becomes slow after introducing frequent polling. How would you optimize polling frequency and request handling?
+* A large data grid updates every second and causes excessive rendering. How would you design an efficient update strategy?
+* Users on slow networks wait too long for images and fonts. How would you optimize asset delivery?
+* The application has good lab performance scores but poor real-user performance. How would you investigate field data?
+* A production release causes a sudden increase in JavaScript execution time. How would you identify the regression?
+* Performance tests pass locally but fail in CI. How would you make performance measurements more reliable?
+* The application has frequent garbage collection pauses during complex interactions. How would you use browser profiling tools to find the cause?
+* How would you create a practical performance optimization plan for a large enterprise Angular application?

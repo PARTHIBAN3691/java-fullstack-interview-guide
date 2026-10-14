@@ -1,0 +1,30 @@
+* Write a Java program demonstrating a local database transaction using JDBC.
+* Implement a Spring Boot service method using @Transactional and explain its transaction boundary.
+* Create two Spring Boot services that coordinate an order workflow using the Saga pattern.
+* Implement a choreography-based Saga using Kafka events.
+* Implement an orchestration-based Saga using a dedicated Saga coordinator.
+* Write a Java class representing Saga state, including current step, status, retry count, and error details.
+* Implement compensating actions for order creation, inventory reservation, and payment authorization.
+* Write an idempotent Kafka consumer that prevents duplicate business processing.
+* Implement a database table for storing processed message IDs and enforce uniqueness.
+* Build a Transactional Outbox implementation using Spring Boot, JPA, and a relational database.
+* Write an Outbox publisher that retries failed event publishing without losing events.
+* Implement an Inbox pattern that atomically records message processing and updates business data.
+* Write a Debezium-based event publishing configuration for an Outbox table.
+* Implement a Saga orchestrator that persists workflow state after each successful step.
+* Write recovery logic that resumes incomplete Saga instances after an application restart.
+* Implement retry handling with exponential backoff and bounded attempts for transient transaction failures.
+* Write a dead-letter handling mechanism for messages that repeatedly fail processing.
+* Implement a compensation handler that is idempotent and safe to execute multiple times.
+* Create a REST API to query the current status and history of a distributed transaction.
+* Write a Java service that distinguishes transient infrastructure failures from permanent business failures.
+* Implement an order workflow with order creation, inventory reservation, payment authorization, and compensation.
+* Write integration tests that verify Saga compensation when the payment service fails.
+* Implement concurrent inventory reservation using database transactions and optimistic locking.
+* Write a test that simulates a crash after database commit but before event publication.
+* Implement reconciliation logic that identifies mismatches between orders and payment records.
+* Write a payment workflow that handles provider timeouts and ambiguous outcomes using idempotency keys.
+* Implement a transaction event versioning strategy that supports backward-compatible event consumers.
+* Create a Java program that simulates duplicate and out-of-order message delivery in a distributed workflow.
+* Implement a recovery job that identifies stuck Saga instances and retries or escalates them safely.
+* Design and code a production-grade distributed order transaction using Spring Boot, Kafka, JPA, the Transactional Outbox pattern, idempotent consumers, Saga compensation, observability, and reconciliation.

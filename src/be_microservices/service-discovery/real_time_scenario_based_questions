@@ -1,0 +1,30 @@
+* A newly deployed Spring Boot microservice is not appearing in Eureka. How would you investigate the issue?
+* A service is registered in Eureka, but other services receive connection refused errors. How would you troubleshoot it?
+* Eureka shows an instance as available even though the application has crashed. What could cause this?
+* During a network outage, Eureka starts retaining stale service instances. How would you handle this?
+* A service has ten instances, but requests are consistently routed to only two. How would you investigate the problem?
+* After increasing the number of service instances, request latency increases instead of decreasing. How would you analyze the issue?
+* A microservice frequently registers and deregisters because of container restarts. How would you stabilize discovery?
+* Eureka Server becomes unavailable, but existing service-to-service calls continue working. Why might this happen?
+* A service starts successfully but cannot register because of an incorrect hostname or IP address. How would you fix it?
+* A service consumer discovers an instance with an unreachable container IP. How would you troubleshoot the configuration?
+* A new service version is deployed, but consumers continue calling the old instances. What would you check?
+* During a rolling deployment, some requests reach terminating instances. How would you prevent this?
+* A Eureka cluster has inconsistent registry information across server nodes. How would you diagnose the issue?
+* A sudden restart of many microservices causes a spike in Eureka traffic. How would you mitigate it?
+* Services work locally but fail to discover one another in Docker Compose. What would you investigate?
+* A Kubernetes application resolves a service name locally but fails across namespaces. How would you debug it?
+* A microservice must discover dependencies across two Kubernetes clusters. How would you design the solution?
+* A service must route requests only to instances in the same availability zone when possible. How would you implement this?
+* A critical payment service must avoid routing requests to unhealthy instances. How would you combine health checks, discovery, and load balancing?
+* A new service instance is registered before it is ready to process requests. How would you prevent premature traffic?
+* A service registry is under heavy load during a flash-sale event. How would you improve resilience and performance?
+* A registry becomes unavailable during an autoscaling event. How should existing and newly created instances behave?
+* An unauthorized application attempts to register itself under the name of a trusted payment service. How would you prevent this?
+* A company is migrating from Eureka to Kubernetes-native discovery without downtime. How would you plan the migration?
+* A service must support canary deployment with only five percent of traffic going to the new version. How would discovery and routing work?
+* DNS-based discovery returns an old IP address after a service replacement. How would you reduce the impact?
+* A downstream service has changed its port, but consumers still attempt connections using the old port. How would you troubleshoot it?
+* A microservice has multiple network interfaces and registers an inaccessible address. How would you configure correct instance registration?
+* Monitoring reports increased service-discovery latency, but application response times are normal. How would you investigate?
+* You must design service discovery for hundreds of microservices across several regions. What architecture and failure-handling mechanisms would you choose?

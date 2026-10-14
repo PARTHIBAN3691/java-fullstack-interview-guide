@@ -1,0 +1,30 @@
+* Create a Spring Boot REST endpoint that accepts a JSON request and returns a JSON response.
+* Create a Java DTO for a customer request containing name, email, and phone number.
+* Create a response DTO that returns customer ID, name, and creation timestamp.
+* Implement a REST endpoint that returns ResponseEntity with HTTP 201 Created.
+* Implement a REST endpoint that returns HTTP 204 No Content after a successful deletion.
+* Write a controller that accepts path variables, query parameters, and a JSON request body.
+* Create nested request DTOs and validate them using @Valid.
+* Implement custom validation for an email address and phone number in a request DTO.
+* Create a global exception handler using @RestControllerAdvice.
+* Implement a custom error response containing timestamp, status, error code, message, and path.
+* Write an exception handler that returns field-level validation errors for invalid requests.
+* Configure Jackson to rename a Java field in the JSON response using @JsonProperty.
+* Use @JsonIgnore to prevent a sensitive field from appearing in a response.
+* Implement custom JSON serialization for a date-time field.
+* Write a Java program that serializes a DTO into JSON using ObjectMapper.
+* Write a Java program that deserializes JSON into a Java DTO using ObjectMapper.
+* Configure Jackson to ignore unknown JSON properties during deserialization.
+* Implement a PATCH request that updates only fields supplied by the client.
+* Create a response wrapper containing success status, message, data, and timestamp.
+* Implement an API endpoint that returns a paginated response with content, page number, page size, and total elements.
+* Write a controller test using MockMvc to verify the response status and JSON body.
+* Write a test that verifies HTTP 400 is returned when request validation fails.
+* Write unit tests for a global exception handler.
+* Implement a filter that adds a correlation ID to each response and propagates it through request processing.
+* Write a logging interceptor that masks sensitive request and response fields.
+* Implement a custom exception-to-HTTP-status mapping for common application exceptions.
+* Create a DTO mapping method that converts a JPA entity into a response DTO without exposing internal fields.
+* Write a REST endpoint that returns different response representations based on the Accept header.
+* Implement a request-size validation mechanism that rejects oversized JSON payloads.
+* Build a complete Spring Boot REST API with validated request DTOs, response DTOs, consistent error handling, secure logging, and MockMvc tests.

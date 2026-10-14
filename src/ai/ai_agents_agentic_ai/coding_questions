@@ -1,0 +1,94 @@
+**AI Agent Fundamentals**
+* Implement a basic AI agent loop that accepts a goal, selects an action, observes the result, and stops when a completion condition is met.
+* Write unit tests for an agent that must distinguish a completed task from an incomplete or failed task.
+* Implement an execution budget that limits an agent by maximum steps, elapsed time, and model-call count.
+
+**Agent Architecture**
+* Implement an agent interface that supports interchangeable LLM providers, tools, memory stores, and result validators.
+* Build a modular agent pipeline with separate planning, execution, and verification components.
+* Write tests that verify the agent continues to work when one model provider is replaced by another.
+
+**Agent Planning and Reasoning**
+* Implement a task planner that converts a goal into dependent subtasks and executes them in dependency order.
+* Write a plan validator that rejects unsupported tools, missing prerequisites, and invalid execution sequences.
+* Implement replanning when a task fails or an observation invalidates an earlier assumption.
+
+**Tool Calling and Tool Execution**
+* Implement a tool registry that validates tool names, argument schemas, permissions, and execution results.
+* Write an idempotent tool-execution wrapper that handles retries, timeouts, and duplicate request identifiers.
+* Implement exponential backoff with jitter and a circuit breaker for unreliable external tools.
+
+**Agent Memory**
+* Implement a memory manager that stores, searches, ranks, and retrieves relevant agent memories.
+* Write a memory policy that filters irrelevant information and limits retrieved context to a token budget.
+* Implement tests for memory isolation to ensure one user's private records cannot be retrieved by another user.
+
+**Short-Term and Long-Term Memory**
+* Implement a session memory store and a persistent long-term memory repository with different retention policies.
+* Write a memory summarizer that preserves key facts, timestamps, source references, and unresolved questions.
+* Implement memory expiration and deletion across a database and a vector index, with tests that verify deletion.
+
+**Autonomous vs Human-in-the-Loop Agents**
+* Implement a policy engine that classifies actions as autonomous, approval-required, or prohibited.
+* Build a workflow that pauses for human approval and resumes using a persisted execution state.
+* Write tests verifying that a rejected or expired approval cannot trigger the underlying action.
+
+**ReAct Pattern**
+* Implement a ReAct-style execution loop that alternates between action selection, tool invocation, and observation processing.
+* Add safeguards for repeated actions, maximum loop iterations, token budgets, and task deadlines.
+* Write tests that verify the agent terminates when it receives an error, reaches its goal, or detects a repeated state.
+
+**Reflection and Self-Correction**
+* Implement a reflection stage that checks an agent result against explicit acceptance criteria.
+* Build a correction loop that reruns failed steps while limiting the number of revisions.
+* Write tests using an independent validator to distinguish valid corrections from unsupported self-assessments.
+
+**Multi-Agent Systems**
+* Implement a multi-agent task coordinator that distributes subtasks to specialized agents and aggregates their results.
+* Write a conflict-resolution component that compares contradictory agent outputs using explicit validation rules.
+* Implement timeout, cancellation, and partial-result handling when one of several parallel agents fails.
+
+**Agent Orchestration**
+* Implement an orchestration engine that supports sequential steps, parallel branches, conditional transitions, and retries.
+* Build a recovery mechanism that resumes a workflow from its last durable checkpoint.
+* Write integration tests for partial failures and compensation when a multi-step workflow cannot complete.
+
+**Agent Communication Protocols**
+* Define a versioned message schema for agent requests, responses, task status, errors, and delegated work.
+* Implement an asynchronous message consumer that safely handles duplicate and out-of-order messages.
+* Write contract tests to verify compatibility between agents using different protocol versions.
+
+**Agent State and Checkpointing**
+* Implement checkpoint persistence and restoration for a long-running agent workflow.
+* Build a versioned state migration function and test restoration from older checkpoint formats.
+* Implement a recovery strategy that reconciles checkpoint status with the actual outcome of external operations.
+
+**Agent Workflow Design**
+* Implement a workflow combining deterministic validation, model-based classification, tool execution, and conditional approval.
+* Build cancellation and timeout handling for a workflow with parallel steps and external side effects.
+* Write tests for workflow versioning, compensation, retries, and resumption after a worker restart.
+
+**Agent Permissions and Sandboxing**
+* Implement a permission policy that restricts tool access by user, agent identity, action type, and resource scope.
+* Build a sandbox execution wrapper with CPU, memory, time, filesystem, and network restrictions.
+* Write security tests that verify an agent cannot access unauthorized tools, files, environment variables, or resources.
+
+**Agent Reliability and Evaluation**
+* Implement an evaluation harness that runs a dataset of agent tasks and calculates success rate, tool accuracy, latency, and cost.
+* Build a regression test suite that compares agent performance across model, prompt, and tool versions.
+* Implement fault-injection tests for tool failures, malformed responses, rate limits, and interrupted workflows.
+
+**Agent Observability**
+* Implement structured logging and distributed tracing for agent steps, model calls, tool invocations, and state transitions.
+* Build a metrics collector that calculates task duration, token usage, retry counts, failure rates, and tool latency.
+* Write tests verifying that observability records redact sensitive data while retaining correlation identifiers.
+
+**Agent Security and Prompt Injection**
+* Implement a tool-output handling layer that labels external content as untrusted and prevents it from directly granting permissions.
+* Write adversarial tests for prompt injection delivered through retrieved documents, tool results, and agent messages.
+* Implement a security policy that blocks unauthorized actions even when the model proposes them.
+
+**Human Approval and Escalation**
+* Implement an approval service that binds a reviewer decision to an immutable action payload and expiration time.
+* Build an escalation mechanism that routes unresolved tasks to an alternate reviewer when approval times out.
+* Write tests verifying that changed payloads, revoked approvals, expired approvals, and unauthorized reviewers cannot authorize execution.

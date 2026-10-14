@@ -1,0 +1,30 @@
+* A DaemonSet is configured to run on every worker node, but some nodes have no corresponding Pod. How would you troubleshoot the issue?
+* A new worker node joins the cluster, but the logging DaemonSet does not start on it. What would you investigate?
+* A DaemonSet Pod remains Pending on a node with sufficient CPU and memory. How would you diagnose scheduling constraints?
+* A DaemonSet runs on worker nodes but not on control plane nodes. How would you investigate taints and tolerations?
+* After a cluster upgrade, several DaemonSet Pods fail to become Ready. How would you identify the root cause?
+* A rolling update of a node monitoring DaemonSet causes a temporary monitoring gap. How would you redesign the update strategy?
+* A DaemonSet update gets stuck because new Pods fail their readiness probes. How would you recover safely?
+* A log collector DaemonSet consumes excessive CPU on nodes with high application traffic. How would you optimize it?
+* A logging agent DaemonSet fills the node filesystem during a logging backend outage. How would you prevent disk exhaustion?
+* A DaemonSet using hostPath cannot read container log files. How would you investigate volume mounts and host filesystem paths?
+* A DaemonSet Pod fails with a permission error when accessing host resources. How would you troubleshoot security contexts and permissions?
+* A security agent requires privileged access, but the cluster enforces strict Pod Security Admission policies. How would you deploy it securely?
+* A DaemonSet works on x86 nodes but fails on ARM nodes. How would you resolve image and architecture compatibility issues?
+* A cluster has different node pools for GPU workloads and general applications. How would you target the appropriate DaemonSet to each pool?
+* Cluster Autoscaler adds new nodes, but node-level agents take too long to become ready. How would you reduce workload startup delays?
+* A node-level networking DaemonSet is unavailable on several nodes, causing networking problems. How would you investigate and recover?
+* A DaemonSet Pod restarts frequently because its memory limit is too low. How would you tune resource settings across heterogeneous nodes?
+* A DaemonSet is consuming resources on every node even though only a subset of nodes requires its functionality. How would you change its scheduling design?
+* A node upgrade removes a worker while its DaemonSet Pod is processing buffered logs. How would you reduce log loss?
+* A new DaemonSet version introduces a host-level configuration error across many nodes. How would you stop the rollout and recover?
+* A DaemonSet is healthy according to Kubernetes, but its metrics are missing from the monitoring backend. How would you investigate the complete data path?
+* A logging agent is deployed as a DaemonSet, but logs from newly created containers are missing. How would you troubleshoot log discovery and file access?
+* A DaemonSet has all expected Pods running, but its numberReady count is lower than expected. What conditions would you inspect?
+* A cluster has hundreds of nodes, and a DaemonSet rollout creates significant resource pressure. How would you control rollout speed?
+* A DaemonSet must run on selected nodes while tolerating a dedicated infrastructure-node taint. How would you configure its scheduling?
+* A node security agent needs host PID and network namespace access. What risks would you evaluate before deploying it?
+* A DaemonSet is deleted accidentally, removing node-level monitoring across the cluster. How would you restore service and prevent recurrence?
+* A logging DaemonSet cannot reach its external backend because of a NetworkPolicy or firewall change. How would you troubleshoot the data path?
+* Two DaemonSets attempt to manage the same host configuration file. How would you identify and resolve the conflict?
+* You need to deploy a new node-level agent across a production cluster with minimal risk. How would you plan validation, rollout, monitoring, and rollback?

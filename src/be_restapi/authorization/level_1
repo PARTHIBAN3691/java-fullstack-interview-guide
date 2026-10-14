@@ -1,0 +1,30 @@
+* How do you implement role-based authorization in a Spring Boot REST API?
+* How do you restrict specific endpoints to users with particular roles?
+* How do you implement method-level authorization using Spring Security?
+* What is the purpose of @PreAuthorize and @PostAuthorize?
+* What is the difference between @Secured and @PreAuthorize?
+* How do you enable method-level security in Spring Security?
+* How do you authorize API requests using JWT claims?
+* How do you validate OAuth 2.0 scopes in a REST API?
+* How do you implement permission-based authorization instead of role-based authorization?
+* How do you assign multiple roles and permissions to a user?
+* How do you implement hierarchical roles, such as ADMIN inheriting USER permissions?
+* How do you restrict users to accessing only their own records?
+* How do you implement resource ownership checks in a REST API?
+* How do you prevent users from accessing other users' records by changing an ID in the URL?
+* How do you implement authorization for CRUD operations with different permissions?
+* How do you implement tenant-level authorization in a multi-tenant application?
+* How do you enforce authorization consistently across multiple controllers?
+* How do you implement custom authorization logic in Spring Security?
+* How do you authorize requests based on user attributes such as department or location?
+* How do you handle authorization when a user's roles or permissions change?
+* How do you implement dynamic authorization rules stored in a database?
+* How do you handle authorization failures consistently across REST endpoints?
+* How do you test role-based and permission-based authorization?
+* How do you implement authorization for file downloads and uploads?
+* How do you secure administrative endpoints from ordinary users?
+* How do you prevent mass assignment from bypassing authorization rules?
+* How do you implement authorization for nested resources, such as orders belonging to customers?
+* How do you apply authorization rules at the API gateway and service layers?
+* How do you document required roles and permissions for REST API endpoints?
+* How do you troubleshoot a request that returns HTTP 403 even when the user has the expected role?

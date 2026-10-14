@@ -1,0 +1,30 @@
+* Write a Spring Boot configuration that enables OAuth 2.0 resource-server JWT validation.
+* Write a Spring Security configuration that protects REST endpoints using OAuth 2.0 access tokens.
+* Write a Spring Boot endpoint that requires a specific OAuth scope for access.
+* Write a Spring Security configuration that maps JWT scope claims to granted authorities.
+* Write a Java HttpClient program that calls a protected REST API using a bearer access token.
+* Write a Spring WebClient example that sends an OAuth 2.0 access token to a downstream service.
+* Write a Spring Boot OAuth 2.0 client configuration using Authorization Code with PKCE.
+* Write a Spring Boot service that obtains an access token using the Client Credentials grant.
+* Write a Java method that calls an OAuth 2.0 token endpoint and parses the token response.
+* Write a Java method that validates a JWT access token's issuer, audience, expiration, and signature.
+* Write a Spring Boot configuration that validates opaque access tokens using token introspection.
+* Write a Java method that handles HTTP 401 responses by obtaining a valid token and retrying safely when appropriate.
+* Write a Spring Security configuration that permits public endpoints while protecting all other API routes.
+* Write a Spring Boot endpoint that returns HTTP 403 when the authenticated client lacks the required scope.
+* Write a unit test that verifies requests without an access token are rejected.
+* Write an integration test that verifies valid, expired, malformed, and incorrectly scoped access tokens.
+* Write a test that verifies a token issued for the wrong audience is rejected.
+* Write a Java implementation that securely caches access tokens for Client Credentials requests until shortly before expiry.
+* Write a thread-safe token manager that prevents multiple concurrent requests from unnecessarily obtaining the same access token.
+* Write a Java implementation that refreshes an access token using a refresh token.
+* Write a secure refresh-token rotation flow that detects reuse of an old refresh token.
+* Write a Spring Boot configuration that validates OAuth 2.0 issuer and audience settings from application properties.
+* Write a Java method that redacts access tokens and client secrets from logs.
+* Write a Spring Security configuration that enforces different scopes for read, create, update, and delete operations.
+* Write a Java implementation that retries a downstream API call after acquiring a valid access token while avoiding unsafe retries.
+* Write a Spring Boot integration test that verifies a Client Credentials client cannot access endpoints requiring user-delegated scopes.
+* Write a Java implementation that validates the state parameter in an OAuth authorization callback.
+* Write a secure OAuth callback handler that validates the authorization response and exchanges the authorization code.
+* Write a Spring Boot configuration that supports OAuth 2.0 JWT signing-key rotation through a JWKS endpoint.
+* Write a complete Spring Boot OAuth 2.0 solution with protected REST endpoints, scope-based authorization, token validation, and automated tests.

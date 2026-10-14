@@ -1,0 +1,30 @@
+* Write a Java program that authenticates with Google Cloud using Application Default Credentials.
+* Implement a Spring Boot REST endpoint protected by Spring Security.
+* Write a Spring Security configuration that requires authentication for all endpoints except health checks.
+* Implement role-based authorization for ADMIN and USER roles in a Spring Boot application.
+* Write a Java method that validates a JWT's signature, issuer, audience, and expiration.
+* Implement a Spring Boot resource server that validates OAuth 2.0 bearer tokens.
+* Write a Java service that retrieves a database password from Google Cloud Secret Manager.
+* Implement a Java method that accesses a Cloud Storage bucket using Application Default Credentials.
+* Write a Java method that handles Google Cloud permission-denied errors without exposing sensitive details.
+* Implement a Java utility that masks API keys, passwords, and tokens before logging.
+* Write a Spring Boot exception handler that returns safe error responses without exposing stack traces.
+* Implement a Java method that validates user authorization before accessing a tenant-specific record.
+* Write unit tests for a Spring Security configuration that checks role-based access restrictions.
+* Implement a test that verifies an unauthenticated request receives HTTP 401.
+* Implement a test that verifies an authenticated user without the required role receives HTTP 403.
+* Write a Java method that validates request parameters to reduce injection and input-validation risks.
+* Implement a secure configuration loader that rejects missing or insecure production settings.
+* Write a Java service that accesses Secret Manager using a narrowly scoped workload identity.
+* Implement a Java method that encrypts and decrypts sensitive application data using authenticated encryption.
+* Write a Java integration that uses Cloud KMS to perform cryptographic operations without exporting key material.
+* Implement a Java method that validates an uploaded file's size, content type, and allowed file format.
+* Write a Spring Boot filter that adds appropriate security headers to HTTP responses.
+* Implement rate limiting for a Java REST API to reduce abuse and brute-force attempts.
+* Write a Java method that retries transient Google Cloud API errors without retrying authorization failures.
+* Implement a service that records security-relevant events without logging credentials or sensitive payloads.
+* Write a Java program that checks whether a secret exists and verifies that the application has the required access.
+* Implement a method that validates the configuration of a Google Cloud service account before deployment.
+* Write a Java utility that detects insecure HTTP URLs and rejects them for sensitive service integrations.
+* Implement a security test that verifies one tenant cannot access another tenant's resources.
+* Design and implement a Spring Boot security module with JWT validation, role-based authorization, safe logging, secret retrieval, and unit tests.

@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a Kafka consumer offset from record consumption through commit and recovery.
+* How does Kafka guarantee offset ordering within a partition?
+* How does the __consumer_offsets topic provide fault tolerance for committed offsets?
+* How are consumer group offsets replicated and recovered?
+* How does offset management affect at-most-once, at-least-once, and exactly-once processing?
+* How would you design offset management for a high-throughput Kafka consumer?
+* How do commitSync() and commitAsync() behave during consumer failures and rebalances?
+* What happens if an asynchronous offset commit completes after a newer commit?
+* How does Kafka prevent an older offset commit from overwriting a newer offset?
+* How do consumer generation IDs and group membership affect offset commits?
+* What happens when a consumer tries to commit an offset after losing its group assignment?
+* How does offset commit behavior change during a consumer rebalance?
+* How would you safely commit offsets when processing records asynchronously?
+* How would you handle multiple in-flight records while maintaining correct offset ordering?
+* How would you design offset management for parallel processing within a single partition?
+* How can incorrect offset commits cause message loss?
+* How can incorrect offset management cause duplicate processing?
+* How would you implement exactly-once processing using Kafka transactions and offsets?
+* How are consumed offsets committed as part of a Kafka transaction?
+* What is sendOffsetsToTransaction(), and when is it used?
+* How does Kafka Streams manage offsets differently from a basic KafkaConsumer?
+* How do offset commits interact with retry topics and Dead Letter Topics?
+* How would you reset offsets safely after a production bug?
+* How would you replay only a selected range of offsets from a Kafka topic?
+* How would you recover a consumer group after its committed offsets have expired?
+* How does offset retention interact with consumer group inactivity?
+* How would you diagnose a consumer that starts from unexpected offsets after deployment?
+* How would you prevent offset corruption during blue-green or rolling deployments?
+* How would you design offset management when processing depends on an external database transaction?
+* How would you validate offset correctness during a disaster recovery or Kafka cluster migration?

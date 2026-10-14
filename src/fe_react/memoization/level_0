@@ -1,0 +1,30 @@
+* What is memoization in React?
+* Why is memoization used in React applications?
+* What problems does memoization solve?
+* What is React.memo?
+* What is the purpose of useMemo?
+* What is the purpose of useCallback?
+* What is the difference between React.memo, useMemo, and useCallback?
+* How does memoization help improve React performance?
+* What is a re-render in React?
+* Does memoization prevent all component re-renders?
+* What is a pure component in React?
+* What is the difference between React.memo and PureComponent?
+* How do you wrap a functional component with React.memo?
+* How do you memoize a calculated value using useMemo?
+* How do you memoize a function using useCallback?
+* What is a dependency array in useMemo?
+* What is a dependency array in useCallback?
+* When does useMemo recalculate a value?
+* When does useCallback return a new function reference?
+* What is referential equality in JavaScript?
+* How does referential equality affect React memoization?
+* Can memoization improve the performance of expensive calculations?
+* Does React.memo compare props by default?
+* What is shallow comparison in React?
+* Can React.memo prevent re-renders caused by a component's own state updates?
+* Can React.memo prevent re-renders caused by Context updates?
+* What happens when a memoized component receives new props?
+* Can you memoize objects and arrays in React?
+* What are the disadvantages of excessive memoization?
+* When should you avoid memoization in React?

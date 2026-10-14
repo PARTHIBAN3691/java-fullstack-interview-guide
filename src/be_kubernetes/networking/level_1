@@ -1,0 +1,30 @@
+* Explain how a request travels from one Pod to another Pod in the same Kubernetes cluster.
+* How does a ClusterIP Service route traffic to backend Pods?
+* How does Kubernetes update Service endpoints when Pods are replaced?
+* How does kube-proxy participate in Kubernetes networking?
+* What is the difference between iptables and IPVS modes in kube-proxy?
+* How does Kubernetes provide network connectivity across different nodes?
+* Explain the role of the CNI plugin during Pod creation.
+* How does CoreDNS resolve Kubernetes Service names?
+* What is the difference between a short Service name and a fully qualified Service domain name?
+* How can a Pod communicate with a Service in another namespace?
+* How do you expose an application externally using NodePort?
+* How do you expose an application externally using LoadBalancer?
+* How does an Ingress controller route HTTP requests to different Services?
+* How do host-based and path-based Ingress routing differ?
+* How do you configure TLS for an Ingress resource?
+* What is the difference between Ingress and Gateway API?
+* How do readiness probes affect traffic routing to Pods?
+* What happens to network traffic when a Pod becomes unready?
+* How do NetworkPolicies control ingress and egress traffic?
+* What prerequisites must a CNI plugin satisfy for NetworkPolicies to work?
+* How do you restrict a Pod so that it can communicate only with selected Pods?
+* How can you allow a Pod to access an external database securely?
+* How do you troubleshoot DNS resolution failures inside a Pod?
+* How do you troubleshoot a Service that has no endpoints?
+* How can you test connectivity between two Pods?
+* How do environment variables and DNS differ for Kubernetes Service discovery?
+* How does external traffic reach a Pod through a LoadBalancer Service?
+* What is the role of externalTrafficPolicy in a Service?
+* How do you configure communication between applications in different namespaces?
+* How can you identify whether a connectivity issue is caused by DNS, routing, or application configuration?

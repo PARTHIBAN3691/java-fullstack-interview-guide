@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to retrieve a secret from AWS Secrets Manager using its ARN.
+* Write a Java program to retrieve a secret by name and print its value without hardcoding AWS credentials.
+* Write a Java method that retrieves a JSON secret and extracts the database username and password.
+* Implement a reusable Java service class that encapsulates AWS Secrets Manager operations.
+* Write a Java program that retrieves a specific secret version using `VersionId`.
+* Implement exception handling for `ResourceNotFoundException`, `AccessDeniedException`, and general AWS SDK failures.
+* Write a Java method that retrieves a secret and deserializes its JSON value into a Java POJO.
+* Implement a Spring Boot service that retrieves API credentials from Secrets Manager.
+* Write unit tests for a Java secrets service using JUnit and Mockito.
+* Write a Java method that caches a retrieved secret with a configurable time-to-live.
+* Implement cache invalidation in Java when a secret version changes.
+* Write a Java method that retries secret retrieval after transient failures using exponential backoff.
+* Implement a Java configuration class that creates an AWS SDK v2 `SecretsManagerClient`.
+* Write a Spring Boot integration test for retrieving secrets from a mocked Secrets Manager client.
+* Implement a Java method that retrieves a secret without exposing its value in application logs or exception messages.
+* Write a Java program that retrieves a secret using an assumed IAM role.
+* Implement a Java health indicator that reports Secrets Manager connectivity without exposing secret values.
+* Write a Java method that validates the required fields in a JSON secret before using it to configure a database connection.
+* Implement a secret provider interface and an AWS Secrets Manager implementation so that the application can switch providers without changing business logic.
+* Design and implement a Java component that retrieves, caches, refreshes, and safely invalidates secrets used by a Spring Boot microservice.

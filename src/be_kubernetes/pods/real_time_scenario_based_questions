@@ -1,0 +1,30 @@
+* A Spring Boot Pod remains in Pending state after deployment. How would you identify whether the issue is insufficient resources, node selectors, taints, or storage?
+* A Pod enters CrashLoopBackOff immediately after starting. What commands and logs would you inspect?
+* A Pod is Running, but the application cannot receive requests. How would you distinguish application health issues from Service or network problems?
+* A Pod is marked Ready even though the application cannot process requests. How would you improve its readiness probe?
+* A Pod repeatedly restarts because its liveness probe fails during application startup. How would you correct the probe configuration?
+* A Java application is terminated during a rolling deployment, causing failed in-flight requests. How would you implement graceful shutdown?
+* A container is OOMKilled even though the worker node has available memory. How would you investigate container memory limits and JVM memory usage?
+* A Spring Boot Pod experiences high latency under load while CPU utilization appears low. How would you investigate throttling, garbage collection, and thread contention?
+* A Pod works on one worker node but fails on another. How would you investigate node-specific configuration, networking, and runtime differences?
+* A Pod remains in ContainerCreating state for several minutes. What would you check?
+* A Pod reports ImagePullBackOff after a deployment. How would you diagnose registry authentication, image names, and network connectivity?
+* A container exits with code 137. What are the possible causes, and how would you identify the actual cause?
+* A container exits with code 1, but its logs do not show a useful error. What additional diagnostic steps would you take?
+* A Pod is evicted because of node disk pressure. How would you identify the source of ephemeral-storage consumption?
+* A Pod is repeatedly evicted from a memory-constrained node. How would you improve resource requests and workload placement?
+* Two containers in the same Pod need to communicate over HTTP, but both attempt to bind to the same port. How would you resolve the conflict?
+* A sidecar proxy consumes excessive CPU and delays application startup. How would you investigate and optimize the Pod?
+* An init container never completes, preventing the application container from starting. How would you troubleshoot the dependency?
+* A Pod cannot access a Secret after it is updated. How would you investigate the mount or environment-variable behavior?
+* A Pod has the correct configuration but continues using an old value after a ConfigMap update. How would you resolve the issue?
+* A Pod is Running, but its persistent data is missing after rescheduling. How would you investigate the volume configuration?
+* A Deployment rollout is stuck because new Pods never become Ready. How would you troubleshoot the rollout without causing downtime?
+* A node becomes NotReady, and its Pods remain unavailable. How would you investigate eviction, rescheduling, and application recovery?
+* A Pod is stuck in Terminating state because a process does not exit. How would you identify the process and recover safely?
+* A critical workload is scheduled onto a single worker node despite having multiple replicas. How would you distribute Pods across nodes?
+* A high-priority Pod cannot be scheduled because the cluster lacks sufficient resources. How would you prioritize workloads and recover capacity?
+* A Pod can resolve DNS names but cannot establish TCP connections to downstream services. How would you troubleshoot the issue?
+* A Java container starts successfully but fails because its configured JVM heap exceeds the container memory limit. How would you correct the configuration?
+* A production application needs to run as a non-root user, use a read-only root filesystem, and access a writable data directory. How would you configure the Pod securely?
+* You need to deploy a stateful Spring Boot service with graceful termination, health probes, resource limits, and high availability. How would you design its Pod configuration?

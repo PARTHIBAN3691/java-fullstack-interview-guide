@@ -1,0 +1,20 @@
+* How do you decide whether an application needs GC tuning?
+* How do you choose an appropriate initial heap size and maximum heap size?
+* How does the choice of garbage collector affect application throughput and latency?
+* How would you tune G1 GC for an application with strict response-time requirements?
+* How does `-XX:MaxGCPauseMillis` influence G1 GC behavior?
+* What is the role of `-XX:InitiatingHeapOccupancyPercent` in G1 GC?
+* What is adaptive IHOP, and how does it help G1 GC?
+* What is the purpose of `-XX:G1ReservePercent`?
+* How does `-XX:G1HeapRegionSize` influence G1 GC?
+* How do you identify excessive object allocation using GC logs?
+* How can object pooling affect garbage collection performance?
+* Why can increasing the heap size sometimes make GC pauses longer?
+* How do you tune garbage collection for a batch-processing application?
+* How do you tune garbage collection for a low-latency REST API?
+* How do you identify whether Full GC events are caused by insufficient heap space?
+* What is the difference between tuning for throughput and tuning for pause time?
+* How can reducing temporary object creation improve GC performance?
+* How do you measure GC overhead before and after a tuning change?
+* How do you configure GC logging to validate tuning changes?
+* How do you safely test GC tuning changes before deploying them to production?

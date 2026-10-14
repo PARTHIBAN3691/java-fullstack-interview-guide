@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of an Angular HttpClient request, including interceptors and backend handling.
+* How does Angular's HTTP interceptor chain work when multiple interceptors are configured?
+* What is the difference between functional and class-based HTTP interceptors?
+* How do you implement token refresh when an API returns HTTP 401?
+* How do you prevent multiple simultaneous requests from triggering duplicate token refresh operations?
+* How do you prevent infinite retry loops in HTTP interceptors?
+* How do you implement centralized API error handling for an enterprise Angular application?
+* How do you distinguish retryable errors from non-retryable errors?
+* Why can retrying a POST request be dangerous, and how can idempotency help?
+* How do you implement request deduplication for identical API calls?
+* How do you cache HTTP responses using RxJS operators?
+* How do you invalidate cached responses after create, update, or delete operations?
+* How do cold Observables affect repeated HttpClient subscriptions?
+* How can multiple subscriptions cause duplicate HTTP requests?
+* How do shareReplay() and caching interact with HTTP Observables?
+* How do you prevent memory leaks when subscribing to long-running HTTP streams?
+* How do you coordinate multiple dependent HTTP requests without creating nested subscriptions?
+* How do you execute independent API requests in parallel using forkJoin()?
+* What happens when one request in forkJoin() fails?
+* How do you handle partial failures when calling multiple APIs?
+* How do you implement request cancellation when users rapidly change search terms?
+* How do you manage concurrent API requests while preserving response order?
+* How do you use HttpContext to pass request-specific metadata to interceptors?
+* How do you implement different timeout policies for different API endpoints?
+* How do you handle APIs that return binary files instead of JSON?
+* How do you download a file with a custom filename using HttpClient?
+* How do you configure HttpClient to report progress events?
+* How do you test interceptors, retry logic, and error handling without calling a real backend?
+* How do you secure HTTP communication between an Angular frontend and a backend API?
+* How would you design a reusable HTTP layer for a large enterprise Angular application?

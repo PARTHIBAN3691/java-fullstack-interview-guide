@@ -1,0 +1,111 @@
+**Generative AI Fundamentals**
+* Explain the typical architecture of a Generative AI application, from user input to generated output.
+* How do prompts, model weights, and inference parameters influence generated responses?
+* Compare autoregressive generation with diffusion-based generation.
+* What causes hallucinations, and what techniques can reduce their impact?
+* How would you determine whether a problem is better solved with Generative AI or deterministic business logic?
+* How do you evaluate the usefulness and reliability of generated content?
+
+**Large Language Models (LLMs)**
+* Explain how an autoregressive LLM predicts the next token.
+* How do base models, instruction-tuned models, and chat models differ?
+* What are system, developer, and user instructions in a chat-based LLM application?
+* How does an LLM handle instructions, examples, and context within a prompt?
+* What are the limitations of an LLM's learned knowledge?
+* How do model size, training data, and inference configuration affect output quality?
+
+**Transformer Architecture**
+* Explain the high-level data flow through a decoder-only Transformer.
+* How does a causal language model prevent access to future tokens during training?
+* Compare encoder-only, decoder-only, and encoder-decoder architectures and their use cases.
+* What are residual connections and layer normalization in a Transformer?
+* What are feed-forward network layers responsible for within a Transformer block?
+* How do Transformer computational and memory requirements scale with sequence length?
+
+**Attention Mechanism and Self-Attention**
+* Explain how query, key, and value vectors are used to calculate attention.
+* How does scaled dot-product attention work?
+* What is the difference between self-attention and cross-attention?
+* How does multi-head attention allow a model to learn different token relationships?
+* What is causal attention masking, and why is it important for text generation?
+* Why can standard self-attention become expensive for long sequences?
+
+**Tokenization and Tokens**
+* Compare word-level, character-level, and subword tokenization.
+* What are Byte Pair Encoding (BPE) and WordPiece?
+* Why might a single word consume multiple tokens?
+* How can tokenization affect multilingual and domain-specific text?
+* How would you estimate token usage for an LLM request and response?
+* What are the effects of tokenizer mismatch when using an embedding model and a generation model together?
+
+**Embeddings**
+* How do dense embeddings represent semantic relationships between text passages?
+* Explain cosine similarity and how it is used to compare embedding vectors.
+* What is the difference between sparse and dense representations?
+* How do embedding models differ from generative language models?
+* How do embedding dimensions and model choice influence retrieval quality?
+* Why should embedding vectors from incompatible model versions not be mixed casually?
+
+**Context Windows**
+* How does a context window constrain the amount of conversation history or retrieved content sent to a model?
+* What are the trade-offs between providing more context and reducing inference cost?
+* How would you summarize or truncate conversation history when the context limit is approached?
+* Why does information placed in the middle of a long prompt sometimes receive less attention?
+* How do context windows affect long-document summarization and retrieval-augmented generation?
+* How would you calculate a safe token budget for instructions, history, retrieved documents, and output?
+
+**Temperature, Top-P, and Sampling**
+* Compare temperature, top-p, and top-k sampling.
+* How does temperature modify the probability distribution over candidate tokens?
+* Why can low temperature still produce different responses in some systems?
+* When would you use deterministic decoding versus more diverse sampling?
+* How would you tune generation settings for structured extraction versus creative writing?
+* How would you evaluate whether generation settings improve output quality rather than merely changing style?
+
+**Model Parameters and Quantization**
+* Explain the relationship between parameter count, numerical precision, and model memory requirements.
+* Compare full-precision, half-precision, and lower-bit quantized model weights.
+* What is the difference between quantizing weights and quantizing activations?
+* How can quantization reduce inference cost and increase throughput?
+* What are the trade-offs between quantization quality, latency, and hardware compatibility?
+* How do model parameters differ from runtime parameters such as temperature and maximum output tokens?
+
+**Pre-training, Fine-tuning, and Inference**
+* Compare pre-training, supervised fine-tuning, and inference.
+* What is the difference between fine-tuning a model and supplying examples in a prompt?
+* How does instruction tuning change model behavior?
+* What is transfer learning, and how is it applied to LLMs?
+* How do training and inference differ in terms of memory usage and compute requirements?
+* How would you evaluate whether a task needs fine-tuning or can be solved through prompting?
+
+**Open-Source vs Proprietary Models**
+* Compare self-hosted open-weight models with hosted proprietary APIs for enterprise applications.
+* How do licensing, commercial-use restrictions, and model access affect architecture decisions?
+* How would you compare data privacy and security across self-hosted and hosted model options?
+* What operational responsibilities arise when an organization hosts its own model?
+* How do model updates, version stability, and vendor dependency influence the choice?
+* How would you compare total cost of ownership for hosted APIs and self-hosted inference?
+
+**Multimodal AI**
+* How do multimodal models combine textual and visual information?
+* What is the difference between early fusion, late fusion, and shared-representation approaches?
+* How would you design an application that accepts both text and images?
+* What challenges arise when aligning information from audio, video, and text?
+* How do modality-specific encoders and shared embedding spaces differ?
+* How would you evaluate a multimodal model beyond ordinary text-generation metrics?
+
+**Image, Audio, Video, and Code Generation**
+* Compare diffusion models and autoregressive approaches for generating content.
+* How do image-generation systems use prompts, conditioning, and guidance?
+* What is the difference between text-to-speech, speech-to-speech, and voice cloning?
+* What are the key challenges in generating temporally consistent video?
+* How would you evaluate AI-generated code for correctness, security, and maintainability?
+* How can output constraints and automated validators improve generated content?
+
+**Model Selection and Benchmarking**
+* How would you compare two LLMs using a task-specific evaluation dataset?
+* What is the difference between offline benchmarks and online production evaluation?
+* How do latency, throughput, token limits, and rate limits influence model selection?
+* How would you evaluate model quality when human judgments are needed?
+* Why should benchmark results be compared under consistent prompting and inference settings?
+* How would you compare models using quality, cost per request, and failure rate?

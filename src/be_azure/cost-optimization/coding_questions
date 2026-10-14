@@ -1,0 +1,20 @@
+* Write a Java program to calculate the cost per transaction using total Azure infrastructure cost and transaction volume.
+* Write a Java program to analyze monthly Azure resource-cost records and identify the resources with the highest spending.
+* Implement a Java method that groups Azure cost records by resource group and calculates the total cost for each group.
+* Write Java code to compare the monthly cost of two hosting configurations based on instance price, instance count, and operating hours.
+* Implement a Java program that processes application metrics and identifies compute instances with consistently low CPU utilization.
+* Write a Java method to calculate the estimated monthly savings from shutting down a non-production environment outside business hours.
+* Implement a Java program to compare cost per request before and after introducing caching.
+* Write a Java program to analyze Cosmos DB request metrics and identify operations with the highest RU consumption.
+* Implement a Java method that calculates cost per successful transaction while excluding failed or cancelled transactions.
+* Write Java code to aggregate telemetry ingestion volumes by service and identify services exceeding configured thresholds.
+* Implement a Java program that compares monthly spending against a budget and calculates the projected month-end cost.
+* Write Java code to detect a sudden increase in Azure resource costs by comparing current spending with historical averages.
+* Implement a Java service that retrieves Azure cost data through the appropriate Azure APIs and generates a report by resource group.
+* Write a Java program to evaluate resource utilization data and recommend candidate resources for rightsizing based on configurable thresholds.
+* Implement a Java method that calculates cost savings as a percentage of baseline spending and verifies whether a target reduction has been achieved.
+* Write a Java program to compare the cost per transaction of two application deployments while accounting for differences in request volume.
+* Implement a Spring Boot REST API that returns a cost summary grouped by Azure service, resource group, and time period.
+* Write Java code to identify unused or underutilized resources from Azure inventory and cost records, producing recommendations without automatically deleting resources.
+* Implement a Java-based cost anomaly detection process that compares daily spending with historical patterns and generates alerts.
+* Design and implement a Java service that collects cost and performance metrics, correlates them with application releases, and produces a report showing cost changes and performance impact.

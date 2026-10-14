@@ -1,0 +1,21 @@
+
+* Explain the Java Memory Model and its role in ensuring correct concurrent execution.
+* What are the main guarantees provided by the happens-before relationship?
+* How can instruction reordering affect concurrent programs?
+* What is safe publication of an object, and why is it important?
+* What is double-checked locking, and why must the shared instance field be declared `volatile` in a correct implementation?
+* How can deadlocks occur when multiple locks are acquired in different orders?
+* How would you detect and prevent deadlocks in a production application?
+* What is the difference between deadlock, livelock, and starvation?
+* How does `ReentrantReadWriteLock` improve concurrency for read-heavy workloads?
+* What are the trade-offs between optimistic and pessimistic locking?
+* How does `StampedLock` support optimistic reads, and what limitations should developers consider?
+* How do compare-and-set (CAS) operations work?
+* What is the ABA problem in lock-free algorithms, and how can it be addressed?
+* What is false sharing, and how can it affect performance?
+* How does `ConcurrentHashMap` support concurrent access without synchronizing the entire map for every operation?
+* How do thread pools improve resource management, and how can poorly configured pools cause performance problems?
+* How would you choose between a fixed thread pool, a work-stealing pool, and a virtual-thread-per-task executor?
+* How do virtual threads change the design of highly concurrent Java applications?
+* How can blocking I/O, CPU-bound work, and thread contention affect concurrency strategies differently?
+* How would you investigate a concurrency bug that appears intermittently under production load?

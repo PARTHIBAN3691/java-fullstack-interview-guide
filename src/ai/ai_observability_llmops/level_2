@@ -1,0 +1,101 @@
+**LLMOps Fundamentals**
+* How would you architect an enterprise LLMOps platform supporting multiple teams, model providers, regions, and security boundaries?
+* How would you establish unified governance for model evaluation, deployment, observability, and incident response?
+* How would you define SLOs for systems whose output quality is probabilistic and whose dependencies are partly external?
+* How would you balance observability completeness, privacy, retention, and telemetry cost at enterprise scale?
+
+**AI Application Monitoring**
+* How would you build a monitoring architecture that correlates infrastructure, application, model, retrieval, and business-outcome metrics?
+* How would you detect quality degradation when user behavior and input distributions change at the same time?
+* How would you design adaptive alerting for highly variable latency, cost, and quality metrics?
+* How would you prevent high-cardinality labels and large trace payloads from overwhelming the observability platform?
+
+**Prompt and Response Tracing**
+* How would you implement end-to-end trace reconstruction when requests cross multiple services, queues, model providers, and agent workers?
+* How would you design trace sampling that retains rare failures and high-risk outputs while limiting telemetry volume?
+* How would you ensure prompt and response traces are reproducible without retaining raw sensitive content?
+* How would you correlate model retries, fallback providers, cached responses, and partial streaming failures in a single logical trace?
+
+**Token Usage and Cost Tracking**
+* How would you build a multi-tenant cost attribution platform that supports provider-specific pricing, cached tokens, batch inference, and changing price schedules?
+* How would you detect and prevent runaway costs caused by recursive agents, repeated retries, or unexpectedly long outputs?
+* How would you reconcile billing records with distributed traces when requests are retried, partially completed, or billed asynchronously?
+* How would you optimize cost per successful task rather than minimizing token cost alone?
+
+**Latency and Throughput Monitoring**
+* How would you define useful latency SLOs for streaming applications with different prompt sizes, output lengths, and model routes?
+* How would you distinguish queueing delays, model time-to-first-token delays, generation speed, and downstream processing time?
+* How would you use trace exemplars and histogram metrics to investigate tail latency at high concurrency?
+* How would you forecast capacity and enforce backpressure when demand exceeds provider or inference-server limits?
+
+**Model Quality Monitoring**
+* How would you estimate production quality when only a biased or delayed subset of responses has ground-truth labels?
+* How would you detect subtle degradation in faithfulness or safety before it becomes visible in user ratings?
+* How would you build segment-aware quality monitoring without creating excessive multiple-comparison false positives?
+* How would you distinguish genuine model drift from evaluator drift, changing retrieval corpora, and annotation inconsistency?
+
+**Retrieval and RAG Tracing**
+* How would you trace and diagnose quality failures across query rewriting, retrieval, reranking, context assembly, and answer generation at scale?
+* How would you monitor index freshness, embedding-version compatibility, permission filtering, and retrieval distribution changes?
+* How would you identify when retrieval quality improves but answer quality deteriorates because of context ordering or generation behavior?
+* How would you design privacy-aware traces for RAG systems that access confidential, tenant-specific document collections?
+
+**Agent Execution Tracing**
+* How would you model nested agent workflows, delegated agents, parallel tool calls, and resumable execution in distributed traces?
+* How would you detect and quantify cascading tool failures, retry storms, circular delegation, and unbounded agent loops?
+* How would you reconstruct an agent's execution path after partial telemetry loss or process restarts?
+* How would you correlate task success, policy compliance, tool efficiency, and cost across complex agent trajectories?
+
+**Evaluation in Production**
+* How would you design a continuous evaluation system combining shadow traffic, sampled live requests, delayed labels, and human review?
+* How would you prevent online evaluation from adding excessive cost or creating feedback loops that bias future model behavior?
+* How would you detect evaluator drift and calibrate automated quality scores against changing human judgments?
+* How would you build statistically defensible release decisions from noisy, delayed, and nonuniform production evaluation data?
+
+**Model Drift and Data Drift**
+* How would you design drift detection for high-dimensional embeddings and semantic distributions rather than simple numeric input features?
+* How would you distinguish data drift, concept drift, provider-side model changes, and retrieval-corpus changes when labels are sparse?
+* How would you set detection thresholds that balance early warning against alert fatigue?
+* How would you design automated responses to drift while preventing unvalidated model or prompt changes from reaching production?
+
+**Feedback Collection**
+* How would you design a feedback system that prevents selection bias, duplicate submissions, and manipulation of quality metrics?
+* How would you connect implicit user behavior with explicit feedback while accounting for confounding factors?
+* How would you govern the use of feedback data for fine-tuning, prompt optimization, and evaluation-set expansion?
+* How would you detect feedback poisoning and prevent malicious submissions from influencing future model behavior?
+
+**Incident Management for AI Systems**
+* How would you coordinate incident response when a provider-side model change causes widespread quality degradation without an infrastructure alert?
+* How would you design automated rollback based on combined quality, safety, latency, and cost signals?
+* How would you reconstruct the causal chain of an incident across model versions, prompt deployments, retrieval indexes, and external tools?
+* How would you define ownership and escalation when the failure originates from an external model provider or an opaque third-party service?
+
+**Model and Prompt Versioning**
+* How would you design a release manifest that captures all artifacts needed to reproduce an AI deployment across environments?
+* How would you manage compatibility between model versions, embedding versions, vector indexes, prompt templates, and tool schemas?
+* How would you support immutable historical versions while allowing controlled promotion, rollback, and emergency fixes?
+* How would you reproduce failures when provider aliases point to updated models and exact inference reproducibility is impossible?
+
+**Experiment Tracking**
+* How would you design an experiment platform that supports concurrent experiments, shared datasets, model registries, and reproducible evaluation?
+* How would you prevent leakage and selection bias when repeatedly tuning prompts against a fixed evaluation set?
+* How would you compare experiments statistically when runs have different costs, durations, sample sizes, and nondeterministic outputs?
+* How would you manage lineage between source code, prompt artifacts, datasets, evaluation results, and production releases?
+
+**AI Release Management**
+* How would you build a progressive delivery strategy for AI changes with offline evaluation, shadow testing, canary traffic, and automatic rollback?
+* How would you define release gates for rare but severe safety failures that cannot be ruled out by a small test sample?
+* How would you coordinate atomic or backward-compatible releases when prompts, models, vector indexes, and tool contracts change together?
+* How would you safely release a model update when the provider does not support pinning the exact underlying model artifact?
+
+**OpenTelemetry for AI Applications**
+* How would you design a vendor-neutral telemetry schema for model calls, agent steps, retrieval operations, token usage, and evaluation results?
+* How would you instrument AI workflows with OpenTelemetry while controlling sensitive attributes, span sizes, and high-cardinality dimensions?
+* How would you preserve distributed trace context across asynchronous messaging, streaming responses, and resumed agent workflows?
+* How would you handle sampling, batching, exporter failures, and telemetry backpressure without affecting application availability?
+
+**AI Audit Logs**
+* How would you build a tamper-evident audit architecture that records AI decisions, policy checks, model changes, and privileged tool actions?
+* How would you establish evidence lineage from an AI response back to the prompt, model version, retrieved sources, and applicable policies?
+* How would you implement retention, access controls, deletion workflows, and legal holds for audit records containing sensitive information?
+* How would you reconcile immutable audit requirements with privacy regulations and requests to delete personal data?

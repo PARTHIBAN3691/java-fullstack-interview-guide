@@ -1,0 +1,30 @@
+* Write Java code to authenticate to Azure services using DefaultAzureCredential without storing credentials in source code.
+* Write a Spring Boot service that retrieves a secret from Azure Key Vault using the Azure SDK for Java.
+* Write Java code to handle Key Vault authentication failures, throttling, timeouts, and transient service errors.
+* Write a Spring Boot configuration that loads externalized secrets securely without logging their values.
+* Write Java code to access Azure Storage using a managed identity instead of an account key.
+* Write a Spring Security configuration that validates JWTs issued by Microsoft Entra ID.
+* Write a Spring Boot REST API that restricts access based on JWT scopes and application roles.
+* Write Java code to validate JWT issuer, audience, expiration, and signature through a trusted security library.
+* Write a Spring Boot resource server configuration using OAuth 2.0 and OIDC.
+* Write Java code to acquire an access token using the OAuth 2.0 client credentials flow with a supported identity library.
+* Write a Spring Boot service that calls a protected downstream API using a managed identity or supported token-acquisition mechanism.
+* Write Java code to propagate authentication context and correlation IDs across microservice calls without exposing access tokens in logs.
+* Write a Spring Security method-level authorization example using role-based access controls.
+* Write Java code to implement tenant-aware authorization that prevents access to another tenant's resources.
+* Write a Spring Boot filter that rejects requests with missing or invalid bearer tokens and returns appropriate HTTP status codes.
+* Write Java code to configure secure HTTP client communication with certificate and hostname verification enabled.
+* Write Java code to retrieve a certificate from Azure Key Vault and integrate it into an approved TLS configuration.
+* Write a Java utility that validates configuration values and prevents secrets from being written to application logs.
+* Write unit tests for a Key Vault integration service covering successful retrieval, access denial, throttling, and service outages.
+* Write unit tests for a Spring Security configuration covering missing tokens, expired tokens, invalid audiences, and insufficient roles.
+* Write integration tests for a Spring Boot API protected by Microsoft Entra ID using appropriate test identities or controlled token fixtures.
+* Write Java code to handle token expiration and refresh through a supported authentication library.
+* Write Java code to implement bounded retries with exponential backoff for transient Azure identity and Key Vault errors.
+* Write a Spring Boot actuator configuration that exposes health endpoints without revealing sensitive environment or configuration details.
+* Write a Java logging component that masks sensitive fields such as passwords, tokens, and payment-related identifiers.
+* Write a CI/CD validation script or Java utility that detects hardcoded secrets in application configuration before deployment.
+* Write a Java service that checks certificate expiration and reports upcoming expiry through a monitoring mechanism.
+* Write Java code to record security audit events for sensitive business operations without storing credentials or unnecessary personal data.
+* Write a Spring Boot integration that verifies required security configuration at startup and fails safely when mandatory controls are missing.
+* Design and implement a secure Java microservice that authenticates with Microsoft Entra ID, retrieves secrets from Key Vault, enforces role-based authorization, and emits security audit events.

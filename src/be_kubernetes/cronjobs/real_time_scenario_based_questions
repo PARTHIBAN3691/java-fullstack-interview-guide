@@ -1,0 +1,30 @@
+* A CronJob is scheduled every five minutes but has not created a Job for the last hour. How would you troubleshoot it?
+* A CronJob creates multiple Jobs for the same scheduled time. How would you investigate and prevent duplicate business processing?
+* A scheduled Spring Boot batch job runs longer than five minutes and overlaps with the next execution. How would you resolve the issue?
+* A CronJob works in development but fails in production because of a time-zone difference. How would you troubleshoot it?
+* A daily report-generation CronJob fails intermittently because the database is unavailable. How would you design retries and recovery?
+* A CronJob repeatedly creates Pods that enter CrashLoopBackOff. How would you identify the root cause?
+* A Job fails after processing half a million records. How would you resume processing without repeating completed work?
+* A financial reconciliation CronJob must not create duplicate settlement records after a restart. How would you design idempotency?
+* A CronJob is suspended for several hours and then resumed. How would you determine which missed executions should run?
+* A scheduled Job starts several hours late during a cluster incident. Which scheduling settings and controller conditions would you investigate?
+* A CronJob is configured with Forbid, but some expected executions are missing. How would you investigate the behavior?
+* A Replace concurrency policy terminates an active batch process before it finishes. How would you prevent data inconsistency?
+* A batch Job retries after an external API request times out, but the external service may already have processed the request. How would you avoid duplicate side effects?
+* Hundreds of CronJobs start at midnight and overload the database. How would you redesign the schedule and resource allocation?
+* A CronJob completes successfully, but the expected business records are missing. How would you investigate application-level processing and Job status?
+* A scheduled Spring Boot application cannot load a required ConfigMap after deployment. How would you diagnose the issue?
+* A CronJob needs access to a database password, but the credentials must be rotated regularly. How would you design secure credential management?
+* A Job is stuck in Terminating because the application does not handle SIGTERM correctly. How would you fix graceful shutdown?
+* A CronJob Pod is evicted because of node memory pressure. How would you improve resource sizing and workload resilience?
+* A large data-export CronJob exceeds its active deadline. How would you optimize execution and choose an appropriate timeout?
+* A batch Job succeeds at the Kubernetes level but exits before all asynchronous application tasks finish. How would you correct the application lifecycle?
+* A CronJob needs to process Kafka messages and commit progress reliably. How would you handle retries, offsets, and duplicate processing?
+* A production CronJob must run only once across two Kubernetes clusters. How would you coordinate execution?
+* A scheduled task depends on another Job that has not completed. How would you manage dependencies and avoid race conditions?
+* A CronJob runs successfully but its logs disappear before the team investigates the incident. How would you improve log retention and observability?
+* A new application release changes the batch data format while an older CronJob execution is still running. How would you manage version compatibility?
+* A team wants to trigger a CronJob manually during an incident without disrupting its normal schedule. How would you perform and monitor the manual execution?
+* A scheduled cleanup Job accidentally deletes records still needed by another application. How would you introduce safeguards and controlled execution?
+* A batch process must handle ten million records within a two-hour maintenance window. How would you partition the work and monitor progress?
+* A critical scheduled task must recover automatically after a cluster outage while avoiding duplicate processing. How would you design the overall workflow?

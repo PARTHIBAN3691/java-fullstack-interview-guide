@@ -1,0 +1,18 @@
+* How would you choose a partition key for a high-volume application?
+* What characteristics make a good Cosmos DB partition key?
+* What is a hot partition, and how can it occur?
+* How would you identify a hot partition in production?
+* How would you redesign a poor partition-key strategy without breaking existing application functionality?
+* How would you design a Cosmos DB data model for millions of customers and billions of transactions?
+* How would you handle queries that require multiple access patterns?
+* What are the trade-offs between normalization and denormalization in Cosmos DB?
+* How would you optimize a query that consumes excessive RUs despite having indexes?
+* How would you distinguish between a Cosmos DB bottleneck and a Java application bottleneck?
+* How would you design retry behavior for HTTP 429 responses?
+* What problems can aggressive retry logic create?
+* What consistency models does Cosmos DB provide?
+* How would you choose a consistency model for a banking-like application?
+* How would you maintain data consistency between Cosmos DB and another database?
+* How would you implement a distributed transaction involving multiple Cosmos DB containers?
+* How would you design idempotent operations when Cosmos DB is used behind a REST API?
+* How would you optimize high-volume batch operations against Cosmos DB?

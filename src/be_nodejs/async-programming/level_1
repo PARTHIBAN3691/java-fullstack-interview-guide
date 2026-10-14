@@ -1,0 +1,30 @@
+* Explain how the Node.js event loop handles asynchronous operations.
+* What are the different phases of the Node.js event loop?
+* How does the event loop differ from the call stack?
+* What is the difference between process.nextTick() and queueMicrotask()?
+* What is the execution order of synchronous code, Promises, and timers?
+* How do callbacks differ from Promises?
+* How do Promises help avoid callback hell?
+* How do you convert a callback-based API into a Promise-based API?
+* How do you use async/await with file system operations?
+* How do you handle multiple asynchronous operations sequentially?
+* How do you execute multiple independent asynchronous operations concurrently?
+* What is the difference between sequential execution and concurrent execution using Promise.all()?
+* What happens when one Promise rejects inside Promise.all()?
+* How does Promise.allSettled() differ from Promise.all()?
+* When would you use Promise.race() in a real application?
+* How do you implement a timeout for an asynchronous operation?
+* How do you handle errors in nested async/await calls?
+* What is the purpose of try/catch/finally with async/await?
+* How do you propagate errors across asynchronous function calls?
+* How do you use async/await with database queries?
+* How do you handle asynchronous HTTP requests in Node.js?
+* How do you prevent unhandled Promise rejections?
+* What is the difference between concurrency and parallelism in Node.js?
+* How do asynchronous I/O operations differ from CPU-intensive operations?
+* How do you limit the number of concurrent asynchronous tasks?
+* How do you process a large array asynchronously without overwhelming a downstream service?
+* What is the difference between an asynchronous function and a function executed by a worker thread?
+* How do EventEmitter callbacks fit into asynchronous programming?
+* How do streams support asynchronous data processing in Node.js?
+* How do you write unit tests for asynchronous functions?

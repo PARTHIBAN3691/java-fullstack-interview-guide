@@ -1,0 +1,30 @@
+* Explain the internal workflow Helm follows when installing or upgrading a Release.
+* How does Helm track Release revisions and maintain release history?
+* How does Helm determine which Kubernetes resources must be created, updated, or deleted during an upgrade?
+* How does Helm perform a three-way merge during upgrades, and what implications does it have for manually modified resources?
+* What happens when a Helm upgrade fails after some resources have already been updated?
+* How do atomic upgrades and the wait option affect Helm deployment behavior?
+* What are the limitations of Helm rollback when database schemas or external systems have changed?
+* How would you design reusable Helm Charts for dozens of Spring Boot microservices?
+* How would you structure a Helm repository for multiple applications and environments?
+* What are the trade-offs between one chart per microservice and a shared application chart?
+* How would you manage chart versioning separately from application image versioning?
+* What is the difference between appVersion and version in Chart.yaml?
+* How would you manage breaking changes in a shared Helm Chart used by many teams?
+* How do Helm dependencies affect chart packaging, versioning, and release management?
+* How would you prevent sensitive information from being exposed in Helm values, rendered manifests, or release metadata?
+* Why can storing plaintext credentials in values.yaml be risky, and what alternatives would you use?
+* How would you integrate Helm with External Secrets Operator or a cloud secrets manager?
+* How do Helm hooks differ from ordinary Kubernetes resources, and what are their failure modes?
+* How would you design a pre-upgrade hook for database migration without risking application downtime?
+* How do hook deletion policies and hook weights affect execution order and cleanup?
+* How would you troubleshoot an upgrade that hangs because Helm is waiting for resources to become ready?
+* How would you manage immutable Kubernetes fields during Helm upgrades?
+* How do resource ownership annotations and labels affect conflicts between Helm Releases?
+* What happens if a Kubernetes resource already exists but is not managed by the Helm Release being installed?
+* How would you safely migrate an existing manually managed Deployment into Helm management?
+* How would you test Helm templates using linting, rendering, schema validation, and integration tests?
+* How would you implement policy checks to prevent insecure Kubernetes resources from being deployed through Helm?
+* How would you design a GitOps workflow using Helm and a controller such as Argo CD or Flux?
+* How would you manage Helm Releases across multiple clusters while keeping configuration consistent?
+* How would you implement a reliable promotion and rollback strategy for Helm-based production deployments?

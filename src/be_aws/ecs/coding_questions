@@ -1,0 +1,21 @@
+
+* Write a Dockerfile to package a Java 21 Spring Boot application using a multi-stage build.
+* Write a Dockerfile that runs a Spring Boot application as a non-root user.
+* Write a Docker Compose configuration to run a Spring Boot application and a database locally before deploying to ECS.
+* Write a Java program using AWS SDK for Java 2.x to list ECS clusters in a specified region.
+* Write a Java program to list ECS services running within a given cluster.
+* Write a Java program to describe ECS tasks and retrieve their status, task definition ARN, and container exit codes.
+* Write a Java program to start a new ECS task using `RunTask`.
+* Write a Java program to stop an ECS task using `StopTask` after validating its current status.
+* Write a Java program to update an ECS service to use a new task definition revision.
+* Write a Java program to retrieve stopped ECS tasks and report their failure reasons.
+* Write a Java program to retrieve ECS service deployment details and identify deployments that have not stabilized.
+* Write a Java program to register an ECS task definition with a container image, CPU, memory, and environment variables.
+* Write a Java program to retrieve CloudWatch metrics for ECS CPU and memory utilization.
+* Write a Java program to query ECS application logs using CloudWatch Logs Insights.
+* Write a Java program to describe ECS service events and identify common task startup failures.
+* Write a Spring Boot application that exposes health and readiness endpoints suitable for container orchestration.
+* Write a Spring Boot application that handles graceful shutdown and stops accepting new requests before termination.
+* Write a Java program to retrieve an ECS task's configured IAM task role and validate expected configuration metadata.
+* Write a Java program to deploy an ECS service update and poll until the service reaches a stable state, with timeout and error handling.
+* Design and implement a CI/CD pipeline for a Java microservice using Docker, Amazon ECR, Amazon ECS, automated tests, health checks, and rollback support.

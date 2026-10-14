@@ -1,0 +1,75 @@
+
+**Development Environment**
+* A Java Spring Boot application works on one developer's laptop but fails on another because of JDK, dependency, or operating-system differences. How would you isolate the root cause and standardize the setup?
+* After upgrading Node.js, several developers can no longer build the Angular frontend, while CI still passes. How would you investigate and resolve the inconsistency?
+* A new engineer takes two days to configure a local environment because documentation is incomplete and dependencies are scattered. How would you improve onboarding and measure the result?
+
+**QA Environment**
+* A regression test passes in the morning but fails after another team deploys to the shared QA environment. How would you determine whether the issue is caused by application code, shared state, test data, or environment contention?
+* The QA database has stale data and inconsistent schemas compared with the current application release. How would you restore a reliable testing baseline without disrupting active testing?
+* A performance test reports severe latency, but the QA cluster is CPU-throttled and running several unrelated workloads. How would you establish whether the application or environment is responsible?
+
+**UAT Environment**
+* Business users report that a critical workflow fails in UAT even though all QA tests passed. How would you reproduce the issue, prioritize the fix, and protect the UAT sign-off process?
+* A UAT refresh removes evidence and test data required for final business approval. How would you recover the evidence and prevent the same problem in future releases?
+* Business stakeholders approve a release candidate, but a late configuration change modifies its behavior. How would you determine whether the previous sign-off remains valid?
+
+**Staging Environment**
+* A service works in staging but fails after production deployment because production uses a different database connection pool and stricter network policies. How would you identify the parity gap and prevent recurrence?
+* Several teams continuously deploy to staging, causing unstable integration tests and unreliable release decisions. How would you restore environment ownership, scheduling, and release confidence?
+* A database migration succeeds in staging but causes long-running locks in production. How would you investigate the differences and redesign the migration validation process?
+
+**Production Environment**
+* A production release causes elevated error rates while staging remains healthy. What evidence would you gather first, and how would you decide whether to roll back?
+* A production hotfix is applied manually, but the next automated deployment overwrites it. How would you preserve service stability and reconcile the fix with the approved deployment process?
+* A production deployment succeeds technically, but users experience intermittent failures due to missing configuration in one region. How would you detect, mitigate, and prevent the issue?
+
+**Environment Isolation**
+* A developer testing a new feature accidentally writes data to the production database. How would you investigate the access path, contain the impact, and redesign isolation controls?
+* A Kubernetes service account in QA can retrieve a secret intended for production. How would you trace the privilege escalation and prevent similar cross-environment access?
+* A shared Kafka cluster allows test consumers to read production events because topic naming and authorization rules are inconsistent. How would you remediate the exposure and verify isolation?
+
+**Environment Promotion**
+* The exact same application artifact passes QA but behaves differently in UAT. How would you verify artifact identity, configuration differences, and dependency versions?
+* A release is approved for production, but the deployment pipeline rebuilds the artifact instead of promoting the tested one. How would you correct the pipeline and establish release traceability?
+* A critical vulnerability is discovered after UAT approval but before production deployment. How would you invalidate or reassess the release and communicate the decision?
+
+**Configuration Separation**
+* A production outage begins immediately after a configuration-only change, even though no application code was deployed. How would you identify the changed setting, determine the blast radius, and restore service?
+* A secret is rotated in the secret manager, but some application instances continue using the old credential. How would you troubleshoot propagation, caching, and connection lifecycle behavior?
+* A feature flag is enabled in staging but accidentally enabled in production through a shared configuration source. How would you contain the issue and redesign configuration boundaries?
+
+**Infrastructure Consistency**
+* Terraform plans show unexpected changes to production resources that were not intentionally modified. How would you determine whether the cause is drift, provider upgrades, module changes, or state inconsistency?
+* A shared IaC module update improves development environments but unintentionally reduces production capacity. How would you roll back safely and introduce stronger module-release controls?
+* A manually changed firewall rule fixes an incident but is removed during the next infrastructure apply. How would you capture the emergency change and reconcile it safely?
+
+**Ephemeral Environments**
+* Pull requests create hundreds of temporary environments, and the cloud bill rises sharply because some environments never expire. How would you identify orphaned resources and introduce reliable lifecycle controls?
+* An ephemeral integration environment is created successfully, but its database provisioning fails halfway through. How would you recover or clean up partial resources without affecting other environments?
+* A temporary environment unexpectedly gains access to production credentials through a shared CI secret. How would you contain the risk and redesign identity and secret distribution?
+
+**Preview Environments**
+* A reviewer opens a pull-request preview and sees behavior from an older commit. How would you trace the deployment to its source revision and ensure previews update reliably?
+* A public preview exposes internal API endpoints and test user information. How would you remove the exposure, investigate access, and strengthen preview security?
+* Several preview environments fail because they compete for the same database schema and test records. How would you isolate state and retain useful integration coverage?
+
+**Environment Provisioning**
+* Developers submit environment requests that remain stuck in a provisioning state even though the cloud resources have been created. How would you trace the workflow and recover the environment without duplicating resources?
+* A self-service request provisions infrastructure but fails while configuring application identity and access. How would you handle partial success, retries, and user-visible status?
+* Teams create environments outside the approved templates to bypass provisioning delays. How would you improve the platform experience while enforcing security and cost policies?
+
+**Environment Teardown**
+* A pull request is closed, but its Kubernetes namespace, load balancer, persistent volume, and cloud resources remain. How would you locate the leak and implement reliable cleanup?
+* Teardown deletes a namespace but leaves cloud load balancers and DNS records behind. How would you identify ownership gaps and validate complete resource removal?
+* A teardown job fails after deleting the database but before removing dependent infrastructure. How would you design safe retries and prevent inconsistent cleanup?
+
+**Infrastructure Drift**
+* A production administrator changes an autoscaling setting manually during an incident, and drift detection flags it the next morning. How would you decide whether to restore the declared state or update the source of truth?
+* Terraform and a Kubernetes operator continuously reverse each other's changes to a resource. How would you identify ownership conflicts and establish a single authoritative controller?
+* A drift-remediation job proposes deleting a critical resource that appears absent from the state file. How would you prevent destructive automation and validate the state before acting?
+
+**Production Parity**
+* A defect occurs only under production traffic and cannot be reproduced in staging. How would you compare runtime configuration, concurrency, traffic patterns, dependencies, and resource limits?
+* Production uses a managed database with features unavailable in staging's local database. How would you improve test fidelity without incurring the full production cost?
+* A release passes functional tests but fails in production due to different DNS behavior, TLS settings, and network timeouts. How would you systematically close the parity gaps?

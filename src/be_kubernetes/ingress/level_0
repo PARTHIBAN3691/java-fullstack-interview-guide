@@ -1,0 +1,30 @@
+* What is Ingress in Kubernetes?
+* Why is Ingress used in Kubernetes?
+* What is an Ingress resource?
+* What is an Ingress Controller?
+* What is the difference between Ingress and a Kubernetes Service?
+* What is the difference between Ingress and NodePort?
+* What is the difference between Ingress and LoadBalancer?
+* What are the main components required to configure Ingress?
+* What is the purpose of the rules section in an Ingress resource?
+* What is the purpose of the host field in an Ingress rule?
+* What is the purpose of the paths section in an Ingress resource?
+* What is the role of the backend service in an Ingress rule?
+* What is path-based routing in Kubernetes Ingress?
+* What is host-based routing in Kubernetes Ingress?
+* What is the purpose of the pathType field?
+* What is the difference between Prefix, Exact, and ImplementationSpecific path types?
+* What is the purpose of the ingressClassName field?
+* What is an IngressClass?
+* How do you list Ingress resources in a Kubernetes namespace?
+* How do you describe an Ingress resource using kubectl?
+* How do you create an Ingress resource using a YAML file?
+* How do you expose a Spring Boot application through Ingress?
+* What is TLS termination in Kubernetes Ingress?
+* How do you configure HTTPS for an Ingress resource?
+* What is the purpose of the tls section in an Ingress manifest?
+* How are TLS certificates referenced by an Ingress resource?
+* What is the relationship between DNS records and Kubernetes Ingress?
+* What happens when an Ingress rule references a Service that does not exist?
+* Can one Ingress resource route traffic to multiple Services?
+* What is the difference between an Ingress resource and an Ingress Controller?

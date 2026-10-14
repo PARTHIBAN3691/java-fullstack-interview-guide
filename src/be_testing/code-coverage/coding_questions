@@ -1,0 +1,30 @@
+* Write a Java program with unit tests that achieve 100% statement coverage.
+* Write JUnit tests for an if-else method and achieve complete branch coverage.
+* Write tests for a method containing multiple Boolean conditions and compare statement and condition coverage.
+* Create a Java method with a switch statement and write tests covering every branch.
+* Write JUnit tests for a method with multiple return statements.
+* Write tests that cover both successful and exceptional execution paths of a Java method.
+* Write a Java class and JUnit tests to demonstrate the difference between line coverage and branch coverage.
+* Configure JaCoCo in a Maven project and generate an HTML coverage report.
+* Configure JaCoCo in a Gradle project and generate a coverage report.
+* Write a Maven configuration that fails the build when line coverage falls below 80%.
+* Configure JaCoCo to enforce separate minimum thresholds for line and branch coverage.
+* Create a multi-module Maven project and aggregate coverage reports across modules.
+* Write JUnit tests that improve coverage for a Java service containing nested conditional logic.
+* Write tests for a Java method that validates null values, empty strings, and boundary conditions.
+* Write tests to cover exception handling in a service that calls a repository.
+* Write JUnit and Mockito tests for a Spring Boot service with mocked dependencies.
+* Write MockMvc tests for a Spring Boot controller and measure its coverage.
+* Write tests for a Java Stream pipeline that includes filtering, mapping, and exception handling.
+* Write tests for a method that uses Optional and multiple fallback branches.
+* Create tests for a multithreaded Java method and configure coverage collection for the test execution.
+* Configure JaCoCo to collect coverage from integration tests executed by Maven Failsafe.
+* Write a Maven configuration that merges unit-test and integration-test coverage data.
+* Write a script or Java utility that reads a JaCoCo XML report and extracts line and branch coverage percentages.
+* Write a utility that compares coverage reports from two builds and identifies coverage regressions.
+* Implement a coverage quality gate that checks whether changed Java classes meet a minimum threshold.
+* Write a test suite for a financial calculation method covering normal, boundary, and invalid inputs.
+* Use mutation testing with PIT to evaluate whether existing coverage adequately validates application behavior.
+* Configure a CI pipeline to publish JaCoCo reports and fail when required coverage thresholds are not met.
+* Write tests for a Java method with nested try-catch-finally blocks and verify each relevant execution path.
+* Build a sample Java project with JUnit, Mockito, JaCoCo, Maven, and CI integration to enforce code coverage standards.

@@ -1,0 +1,30 @@
+* A Spring Boot application fails at startup because two beans implement the same interface. How would you investigate and resolve the ambiguity?
+* A service works in development but fails in production with NoSuchBeanDefinitionException. How would you troubleshoot component scanning, profiles, and configuration?
+* Two Spring services depend on each other through constructor injection, preventing application startup. How would you redesign the dependency graph?
+* A singleton service receives a prototype-scoped bean through constructor injection, but the same prototype instance is reused for every operation. How would you fix this?
+* A REST API needs a request-specific user context, but a singleton service stores that context in an instance variable. How would you redesign the implementation?
+* A payment application supports multiple providers, and the implementation must be selected according to the payment method at runtime. How would you use Dependency Injection?
+* A team uses @Autowired field injection across hundreds of classes, making unit tests difficult. How would you migrate toward constructor injection safely?
+* A Spring Boot application contains many @Primary annotations, and the wrong implementation is injected in some modules. How would you improve dependency selection?
+* A class creates its own repository and notification service using new, bypassing the Spring container. How would you refactor it for better testability?
+* A third-party library requires constructor parameters that are not Spring beans. How would you configure and inject the library object?
+* A service is annotated with @Component but is not detected by Spring. How would you investigate package scanning and application configuration?
+* An application uses @Profile for different payment gateways, but the production profile activates the wrong implementation. How would you troubleshoot it?
+* A service requires all implementations of a notification interface, but only one implementation is injected. How would you configure the dependency correctly?
+* A singleton bean depends on a request-scoped bean and fails when invoked from a background scheduler. How would you handle the scope mismatch?
+* A prototype-scoped object opens a file resource, but the Spring container does not automatically manage its full destruction lifecycle. How would you ensure cleanup?
+* Application startup becomes slow after introducing many eager singleton beans that initialize remote clients. How would you improve startup performance without hiding initialization failures?
+* A service depends on a concrete payment implementation, and adding another provider requires changing business logic. How would you apply the Dependency Inversion Principle?
+* A Spring Boot application contains a large number of conditional bean definitions that are difficult to maintain. How would you simplify the configuration?
+* Unit tests unexpectedly connect to a real database even though the repository should be mocked. How would you diagnose the dependency injection configuration?
+* A manually created object requires a Spring-managed service, but its dependency remains null. How would you integrate the object with the Spring container?
+* A dependency is injected successfully, but calls to a transactional method do not start a transaction. How would you investigate proxying and object creation?
+* A circular dependency appears only after adding a new service to an existing module. How would you identify the architectural issue and prevent recurrence?
+* A multi-tenant application needs separate API clients and credentials for each tenant. How would you design dependency creation and runtime selection?
+* A service uses ApplicationContext.getBean() in many methods to retrieve dependencies dynamically. How would you refactor it to avoid Service Locator behavior?
+* A Spring Boot application creates duplicate external clients because several configuration classes define equivalent beans. How would you investigate and consolidate them?
+* A bean fails during initialization because its configuration depends on another bean that is not ready. How would you diagnose the lifecycle ordering?
+* A large integration test loads the entire Spring context and runs slowly. How could you use Dependency Injection and test configuration to reduce test startup time?
+* A developer introduces a generic factory and several layers of interfaces to inject a simple dependency. How would you determine whether the design is overengineered?
+* A dependency is optional for some deployment environments but mandatory for others. How would you model the dependency and validate configuration safely?
+* A modular application has dependencies crossing domain boundaries and causing widespread changes. How would you restructure the dependency graph?

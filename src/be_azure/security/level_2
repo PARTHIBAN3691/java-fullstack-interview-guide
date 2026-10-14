@@ -1,0 +1,30 @@
+* How would you design an end-to-end security architecture for an enterprise Java microservices platform hosted on Azure?
+* How would you implement zero-trust security for Java applications deployed across multiple Azure subscriptions?
+* How do you design least-privilege RBAC across development, testing, and production environments?
+* How would you secure communication between microservices using managed identities and Microsoft Entra ID?
+* How do you prevent credential leakage when Java applications authenticate to Azure services?
+* How would you design centralized secrets management and automated rotation using Azure Key Vault?
+* How do you handle Key Vault throttling, temporary outages, and secret-rotation failures in a production Java application?
+* How would you design OAuth 2.0 and OIDC authentication for a distributed Spring Boot architecture?
+* How do you implement token validation and authorization across multiple Spring Boot resource servers?
+* How would you secure service-to-service communication without using long-lived client secrets?
+* How do you prevent JWT replay attacks and mitigate token theft?
+* How would you implement fine-grained authorization for multi-tenant Java applications?
+* How do you securely handle token acquisition, caching, renewal, and expiration in a Java application?
+* How would you protect sensitive data in application logs, distributed traces, and monitoring systems?
+* How do you design network segmentation for public APIs, application services, databases, and administrative access?
+* How would you use Private Link, private DNS, and network controls to isolate Azure PaaS services?
+* How do you prevent data exfiltration from Azure-hosted applications?
+* How would you secure an Azure Kubernetes Service environment hosting Java microservices?
+* How do you implement workload identity for applications running in AKS?
+* How would you secure container images, dependencies, runtime configuration, and deployment pipelines?
+* How do you integrate Microsoft Defender for Cloud recommendations into a security remediation workflow?
+* How would you implement continuous security monitoring using Microsoft Sentinel and Azure Monitor?
+* How do you investigate and respond to a compromised managed identity?
+* How would you design encryption and key-management strategies for sensitive financial data?
+* How do you manage certificate expiration, renewal, revocation, and trust validation across distributed services?
+* How would you implement secure configuration and policy enforcement using Azure Policy and infrastructure as code?
+* How do you design disaster recovery while maintaining security controls and identity permissions?
+* How would you implement threat modeling and security reviews for a new Java API?
+* How do you balance security, performance, availability, and operational complexity in a highly available Azure architecture?
+* How would you establish measurable security controls and compliance evidence for an enterprise Azure platform?

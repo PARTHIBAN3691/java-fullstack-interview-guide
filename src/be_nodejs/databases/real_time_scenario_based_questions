@@ -1,0 +1,30 @@
+* Your application becomes slow after a database table grows to millions of records. How would you investigate and improve performance?
+* A frequently executed query performs a full table scan. How would you identify the cause and optimize it?
+* Your database CPU usage reaches 100% during peak traffic. How would you identify the queries responsible?
+* Two users update the same bank account simultaneously, causing an incorrect balance. How would you prevent this?
+* An e-commerce application creates an order but fails to update inventory. How would you maintain data consistency?
+* Your application experiences frequent deadlocks during concurrent transactions. How would you troubleshoot and resolve them?
+* A database connection limit is reached after scaling the application to multiple instances. How would you address the issue?
+* A database replica returns stale customer data immediately after an update. How would you handle read consistency?
+* Your primary database fails during a production transaction. How would you design failover and recovery?
+* A large database table needs a new index without disrupting production traffic. How would you approach the change?
+* Your application requires searching products by name, category, price, and availability. How would you design the schema and indexes?
+* An API becomes slow because it executes multiple joins on large tables. How would you investigate and optimize the queries?
+* A reporting query affects the performance of transactional operations. How would you separate or optimize the workloads?
+* Your database storage is growing rapidly because old transaction records are retained indefinitely. How would you manage retention and archiving?
+* A migration introduces a new mandatory column and breaks older application instances. How would you prevent this during deployment?
+* A Redis cache contains outdated values after database updates. How would you keep cached data consistent?
+* Your application needs to process millions of records overnight. How would you design batch processing without exhausting memory or database connections?
+* A database backup completes successfully, but restoration fails during a disaster-recovery test. How would you improve the backup strategy?
+* A sharded database receives most requests on a single shard. How would you diagnose and resolve the data-distribution problem?
+* Your application requires globally unique identifiers across multiple database shards. How would you generate them?
+* A financial application must maintain an accurate audit trail for every account transaction. How would you design the database?
+* An application frequently filters and sorts data using different combinations of columns. How would you select appropriate indexes?
+* A database query performs well in testing but becomes slow in production. What differences would you investigate?
+* Your application needs to support millions of users across multiple geographic regions. How would you design the database architecture?
+* A customer deletion request must remove or anonymize personal information across multiple related tables. How would you implement it safely?
+* An application must support full-text product searches with relevance ranking. Would you use a database or a dedicated search engine, and why?
+* A scheduled job accidentally processes the same records twice. How would you ensure idempotency and prevent duplicate updates?
+* Your database storage is almost full, and write operations are failing. How would you restore service and prevent recurrence?
+* A database upgrade introduces query-plan changes and increases response times. How would you diagnose and mitigate the regression?
+* You need to choose between PostgreSQL, MongoDB, and Redis for a new service. What requirements and trade-offs would guide your decision?

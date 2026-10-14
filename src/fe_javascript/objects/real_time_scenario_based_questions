@@ -1,0 +1,30 @@
+* You need to represent an employee with a name, ID, department, and salary. How would you design the object?
+* An API returns a nested JSON object containing customer and address details. How would you access the required properties safely?
+* A property name is stored in a variable, but dot notation does not retrieve its value. How would you fix it?
+* You need to merge default configuration settings with user-provided settings. How would you handle duplicate properties?
+* Updating a copied object unexpectedly changes the original object. What is the likely cause?
+* You need to clone a deeply nested object without sharing nested references. What approach would you choose?
+* Two objects contain the same properties and values but fail an equality check. How would you compare their contents?
+* A property exists on an object's prototype, but hasOwnProperty() returns false. Why?
+* A loop unexpectedly processes inherited properties. How would you restrict iteration to an object's own properties?
+* A user profile contains an optional nested address. How would you access the city without throwing an error?
+* You need to prevent accidental modification of application configuration. Which object protection mechanism would you choose?
+* A frozen object contains a nested object that can still be modified. Why does this happen, and how would you address it?
+* You need to create multiple objects that share common methods. How would you avoid duplicating those methods?
+* An object method works correctly when called directly but fails when passed as a callback. How would you preserve its this context?
+* A developer uses an arrow function as an object method and receives an unexpected this value. How would you fix it?
+* You need to create an object without inheriting from Object.prototype. Which approach would you use?
+* An application uses dynamic property names received from input data. What precautions would you take when assigning those properties?
+* You need to track metadata for objects without adding properties to them. Which data structure would you consider?
+* An object contains a circular reference and JSON.stringify() throws an error. How would you handle serialization?
+* A nested object must be updated without mutating the original application state. How would you implement the update?
+* You need to expose a property that calculates a value dynamically when accessed. How would you use a getter?
+* A property should be readable but not directly writable. How could you define this behavior?
+* A library must inspect all own string and symbol properties of an object. Which reflection methods would you use?
+* A deep-cloning solution fails when the object contains a Date, Map, or Set. How would you choose a suitable cloning strategy?
+* You need to determine whether an object belongs to a particular class. How would you use instanceof, and what are its limitations?
+* A prototype modification causes unexpected behavior across several objects. How would you diagnose and prevent the issue?
+* An application stores shared objects in multiple components, causing unexpected data changes. How would you redesign state handling?
+* You need to compare objects containing nested arrays and objects. How would you implement a reliable deep-equality check?
+* A large application uses Object.assign() to update nested configuration data, but nested properties are unexpectedly overwritten. Why?
+* You are designing a reusable JavaScript library. How would you decide which properties should be public, read-only, or private?

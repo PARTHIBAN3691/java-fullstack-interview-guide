@@ -1,0 +1,30 @@
+* Write a Kubernetes ConfigMap YAML manifest containing application name, environment, and log level.
+* Write a Kubernetes Deployment YAML file that injects ConfigMap values as environment variables.
+* Write a Kubernetes Deployment YAML file that uses envFrom to load all ConfigMap entries into a container.
+* Write a Kubernetes Pod manifest that references individual ConfigMap keys using configMapKeyRef.
+* Write a Kubernetes manifest that mounts a ConfigMap as a volume inside a Spring Boot container.
+* Write a Kubernetes manifest that mounts only selected ConfigMap keys as files.
+* Write a ConfigMap YAML manifest containing a Spring Boot application.properties file.
+* Write a ConfigMap YAML manifest containing an application.yml file for Spring Boot.
+* Write a kubectl command sequence to create, inspect, update, and delete a ConfigMap.
+* Write a Kubernetes manifest that uses an immutable ConfigMap.
+* Write a Deployment manifest that triggers a rolling update when a ConfigMap checksum changes.
+* Write a Helm template that generates a ConfigMap from values.yaml.
+* Write a Helm template that supports separate ConfigMap values for development and production.
+* Write a Kustomize configuration that generates a ConfigMap and updates its name when the content changes.
+* Write a Spring Boot configuration class that validates required properties at application startup.
+* Write a Java program that reads application properties and fails fast when mandatory configuration values are missing.
+* Write a Spring Boot example that reads feature flags and timeout values supplied through environment variables.
+* Write a Java unit test that verifies application behavior for different configuration values.
+* Write a Spring Boot integration test that validates application startup with a test configuration.
+* Write a Kubernetes manifest that uses a ConfigMap to configure readiness and liveness probe parameters where supported by the relevant Pod fields.
+* Write a Java utility that validates a configuration file's required keys before a deployment.
+* Write a script that compares ConfigMap values across development, staging, and production namespaces.
+* Write a script that identifies Deployments referencing a specified ConfigMap.
+* Write a script that reports Pods whose containers use a specified ConfigMap through environment variables or volume mounts.
+* Write a Kubernetes configuration that combines a ConfigMap for non-sensitive settings with a Secret for credentials.
+* Write a Spring Boot configuration-reload example that safely refreshes supported application settings at runtime.
+* Write a Kubernetes manifest that mounts a versioned ConfigMap and deploys a new application version using it.
+* Write a CI/CD pipeline step that validates configuration files before applying Kubernetes manifests.
+* Write a script that records the checksum and version of a ConfigMap during deployment for audit purposes.
+* Write a deployment workflow that promotes a validated ConfigMap from staging to production and supports rollback to the previous version.

@@ -1,0 +1,30 @@
+* A registration form must validate email, password, and confirm password fields. How would you implement the form and cross-field validation?
+* A form submission is triggered even though required fields are invalid. How would you investigate and prevent it?
+* A validation error appears immediately when the page loads. How would you display errors only after user interaction?
+* A username must be checked against a backend API for availability. How would you implement asynchronous validation without excessive API calls?
+* A user changes a username several times quickly, and older API responses arrive late. How would you prevent stale validation results?
+* An edit form receives data from an API after the component initializes. How would you populate the form correctly?
+* A form contains multiple addresses that users can add or remove dynamically. How would you implement it using FormArray?
+* A form has nested customer, address, and payment details. How would you structure its FormGroups?
+* A disabled field contains an important identifier, but the identifier is missing from form.value. How would you retrieve it?
+* A form has hundreds of controls and becomes slow when values change. How would you identify and optimize the performance bottleneck?
+* A reusable date-picker component does not update its value when used with formControlName. How would you troubleshoot its ControlValueAccessor implementation?
+* A custom dropdown updates the displayed value but does not mark the form control as touched. How would you fix it?
+* A form should validate a discount code only after the user stops typing. How would you implement debouncing and asynchronous validation?
+* A user selects a country, and the available states must change accordingly. How would you update the dependent controls and validators?
+* A form has conditional fields that become required only when a checkbox is selected. How would you manage the validators and control state?
+* A backend rejects a form submission because an email address already exists. How would you display the server-side validation error?
+* A multi-step application form must preserve entered values when users navigate between steps. How would you design the form state?
+* A user should not be able to proceed to the next step until the current step is valid. How would you implement this behavior?
+* A form supports both creating a new employee and editing an existing employee. How would you manage initialization and validation differences?
+* An autosave feature sends an API request on every keystroke. How would you reduce unnecessary requests and handle failed saves?
+* A dynamic form is generated from backend metadata containing field types and validation rules. How would you build a maintainable solution?
+* A form's submit button remains disabled even after all required fields are completed. How would you debug the form status and validation logic?
+* A form reset clears the input values but leaves unexpected validation messages visible. How would you reset the controls and their states correctly?
+* A reactive form uses setValue() and throws an error when a new field is added. How would you resolve the mismatch?
+* A custom validator works on one field but fails when the same field is inside a nested FormGroup. How would you investigate the validator?
+* A form's valueChanges subscription continues firing after the component is destroyed. How would you manage subscription cleanup?
+* A file-upload form must validate file size and type before submission. How would you implement client-side validation?
+* A user can select multiple products with individual quantities and prices. How would you model and validate the form?
+* A complex form must be accessible to keyboard and screen-reader users. How would you implement labels, error announcements, and focus management?
+* You need to build a reusable enterprise form library with typed controls, custom validators, dynamic fields, and automated tests. How would you design it?

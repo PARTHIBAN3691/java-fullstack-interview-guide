@@ -1,0 +1,52 @@
+# Core Java → Annotations → Real-Time Scenario-Based Questions
+
+## Annotation Discovery and Runtime Behavior
+* A custom annotation is visible in source code but cannot be retrieved through reflection. How would you identify the root cause?
+* A framework discovers annotated classes locally but fails to discover them after deployment. What would you investigate?
+* A class has a custom annotation, but a subclass does not appear to inherit it. How would you troubleshoot the behavior?
+* An annotation works on a parent class but not on an overridden method. What could explain this?
+* A runtime annotation lookup returns `null` even though the annotation appears in the source code. How would you debug it?
+* An annotation works in IntelliJ but fails in a packaged JAR. What configuration or build differences would you inspect?
+* A framework scans thousands of classes at startup and initialization is too slow. How would you optimize annotation discovery?
+* An annotation is present in a dependency but is not recognized by the application. How would you investigate classpath and class-loader issues?
+
+## Spring and Framework Integration
+* A Spring service has `@Transactional`, but the database changes are not rolled back when an exception occurs. How would you investigate?
+* A method annotated with `@Transactional` works when called from another bean but not when called from the same class. What is the likely cause?
+* A custom annotation intended to enforce authorization is present on a controller method, but the authorization logic never executes. How would you debug it?
+* A component is annotated with `@Service`, but Spring does not create a bean for it. What would you check?
+* A custom annotation is applied to an interface method, but the framework does not recognize it on the implementation. How would you resolve the issue?
+* A Spring application uses composed annotations, but one of the expected configuration attributes is ignored. What would you inspect?
+* An annotation-driven validation rule works for controller requests but not for direct service invocations. What might be different between the two paths?
+* A custom annotation works in one microservice but not another despite using the same source code. How would you compare the configurations?
+
+## Custom Annotation Implementation
+* Your team creates a `@RetryOnFailure` annotation, but annotated methods are executed only once. How would you trace the problem?
+* A custom logging annotation is applied to a private method, but the logging interceptor never runs. What could cause this?
+* A developer adds a required element to a widely used custom annotation, causing compilation failures across multiple modules. How would you redesign the change?
+* A custom annotation accepts invalid configuration values, and failures occur only at runtime. How would you shift validation earlier?
+* A repeatable annotation works for one declared instance but fails when multiple instances are added. How would you debug its container declaration and retrieval?
+* A custom annotation is intended to mask personal information, but sensitive values still appear in production logs. How would you investigate all code paths?
+* Two annotations on the same method define conflicting policies. How would you design conflict detection and precedence?
+* A team uses annotations for business rules that change frequently. How would you decide whether to keep the configuration in annotations or move it to external configuration?
+
+## Annotation Processing and Build Pipeline
+* A generated class is missing after compilation even though the source annotation processor is present. What would you investigate?
+* An annotation processor generates the same class more than once and compilation fails. How would you prevent duplicate generation?
+* A processor works with one JDK but fails after a Java upgrade. How would you diagnose compatibility issues?
+* A generated source file is available locally but missing in the CI pipeline. What build configuration would you inspect?
+* An annotation processor fails only during incremental compilation. How would you isolate the issue?
+* A processor reports an error against the wrong source element. How would you improve diagnostic reporting?
+* Two annotation processors generate incompatible code for the same class. How would you investigate and resolve the conflict?
+* A generated mapper compiles but maps a newly added field incorrectly. What checks would you add to the processor or build pipeline?
+
+## Performance, Concurrency, and Memory
+* An application performs repeated reflection-based annotation scans on every API request. How would you improve performance?
+* A shared annotation metadata cache produces inconsistent results under concurrent access. How would you troubleshoot it?
+* A long-running application experiences class-loader memory leaks after repeated redeployments. How could annotation caching contribute?
+* Application startup time increases after adding several annotation-driven libraries. How would you identify the main contributors?
+* A framework caches annotation metadata, but dynamically loaded plugins are not recognized after initialization. How would you address cache invalidation?
+* An annotation-driven audit mechanism adds noticeable latency to every request. How would you profile and optimize it?
+* An annotation-based authorization mechanism fails open when metadata is missing. How would you redesign the failure behavior?
+* A production issue occurs because annotation values differ between compiled modules. How would you inspect the packaged artifacts and build versions?
+

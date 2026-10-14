@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a Promise in JavaScript.
+* How does the Promise constructor work?
+* When does the Promise executor function execute?
+* Why does the Promise executor execute synchronously?
+* When are then() and catch() callbacks executed?
+* What is the difference between Promise resolution and fulfillment?
+* What happens when resolve() is called with another Promise?
+* What happens when a Promise resolves with a thenable object?
+* How does Promise chaining propagate values between then() handlers?
+* What happens when a then() callback returns a normal value?
+* What happens when a then() callback returns a Promise?
+* What happens when a then() callback throws an exception?
+* How does error propagation work in Promise chains?
+* How can catch() recover from a rejected Promise?
+* What happens when catch() returns a value?
+* What happens when catch() throws another error?
+* How does finally() behave when a Promise is fulfilled or rejected?
+* Does finally() modify the resolved value or rejection reason?
+* What happens if the callback passed to finally() throws an error?
+* What is the difference between sequential and parallel Promise execution?
+* How does Promise.all() handle successful and rejected Promises?
+* What happens when one Promise in Promise.all() rejects?
+* How does Promise.allSettled() differ from Promise.all()?
+* How does Promise.race() determine its result?
+* How does Promise.any() differ from Promise.race()?
+* What happens when Promise.any() receives only rejected Promises?
+* How can you execute asynchronous tasks sequentially using Promises?
+* How can you execute multiple asynchronous tasks concurrently?
+* How do async/await and Promises work together?
+* How can you convert a callback-based API into a Promise-based API?

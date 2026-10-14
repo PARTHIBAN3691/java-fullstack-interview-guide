@@ -1,0 +1,30 @@
+* Write a docker-compose.yml file for a Spring Boot application and PostgreSQL database.
+* Create a Docker Compose configuration that builds a Java application from its Dockerfile and exposes port 8080.
+* Write a Compose file that passes the PostgreSQL URL, username, and password to a Spring Boot service through environment variables.
+* Create a Compose configuration with PostgreSQL persistent storage using a named volume.
+* Add Redis to an existing Spring Boot and PostgreSQL Compose configuration.
+* Create a Compose configuration with Spring Boot, PostgreSQL, and RabbitMQ connected through a custom network.
+* Write a Docker Compose health check for PostgreSQL and configure the application to depend on a healthy database.
+* Create a Compose file with separate application and database networks.
+* Write a Compose configuration that prevents the PostgreSQL port from being published to the host.
+* Create a Compose setup that uses an .env file for configurable host ports and non-secret application settings.
+* Write development and production Compose override files for a Spring Boot application.
+* Create a Compose configuration that uses profiles to start optional services such as Redis and a monitoring dashboard.
+* Write a Compose file that runs a one-time database migration service before the application starts.
+* Create a Compose configuration for an Nginx reverse proxy and two instances of a stateless Java application.
+* Write a Compose configuration that mounts application configuration as a read-only file.
+* Create a Compose setup that runs PostgreSQL with persistent data and a separate backup service.
+* Write a shell script that starts the Compose application, waits for health checks, and reports startup failures.
+* Create a shell script that collects logs and service status when a Compose service exits unexpectedly.
+* Write a deployment script that pulls a specific image version, recreates the required service, and checks its health.
+* Create a Compose configuration that pins image versions instead of relying on the latest tag.
+* Write a Compose file with CPU and memory limits appropriate for a containerized Spring Boot application.
+* Create a Compose configuration that uses a private registry image and supports configurable image tags.
+* Write a Compose configuration that supports graceful application shutdown and a configurable stop timeout.
+* Create a Compose file with separate development, testing, and production configurations while minimizing duplication.
+* Write a Compose configuration for integration testing that starts PostgreSQL and the Spring Boot application with isolated test data.
+* Create a test automation script that starts the required Compose services, executes integration tests, and cleans up containers afterward.
+* Write a Compose configuration for Spring Boot, PostgreSQL, Redis, and Prometheus with suitable service dependencies.
+* Create a Compose setup that supports database backups and document the commands needed to restore the database.
+* Write a script that inspects the merged Compose configuration and validates required environment variables before deployment.
+* Build a complete Docker Compose project for a Spring Boot microservices application with PostgreSQL, Redis, health checks, persistent storage, environment-based configuration, logging, and documented startup and cleanup commands.

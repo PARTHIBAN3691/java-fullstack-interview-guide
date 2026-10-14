@@ -1,0 +1,30 @@
+* A component displays the correct value in the browser, but its unit test fails. How would you debug it?
+* A component depends on a service that calls an external API. How would you test the component without making real HTTP requests?
+* An Angular service makes duplicate HTTP requests during a test. How would you identify and fix the issue?
+* An HTTP test fails because no request was captured. How would you troubleshoot HttpTestingController usage?
+* A test passes individually but fails when the entire test suite runs. What could cause this?
+* A component test fails because the template has unknown child components. How would you resolve it?
+* A standalone component test fails because an imported dependency is missing. How would you fix the test configuration?
+* A button click does not update the expected DOM value during testing. What steps would you follow?
+* A component uses an Observable that emits asynchronously. How would you test the rendered result?
+* A test involving setTimeout() or debounceTime() takes too long. How would you make it deterministic?
+* A route guard redirects unauthorized users. How would you test both authorized and unauthorized cases?
+* An HTTP interceptor adds an authorization header. How would you verify it in a unit test?
+* A reactive form should reject invalid email addresses. How would you test its validation behavior?
+* A component emits an event when a user submits a form. How would you verify the emitted payload?
+* A component uses OnPush change detection and its test does not reflect updated inputs. How would you investigate?
+* A service uses BehaviorSubject to share state. How would you test initial and subsequent values?
+* A component has a memory leak caused by an unmanaged subscription. How would you identify and prevent it?
+* A test suite contains too many mocks and breaks whenever implementation details change. How would you improve the tests?
+* A test passes even when the expected business logic is incorrect. How would you improve test assertions?
+* A team has low unit-test coverage for critical business logic. How would you prioritize testing?
+* A CI pipeline fails because tests behave differently in the local environment. How would you investigate?
+* A test suite takes several minutes to run. What strategies would you use to reduce execution time?
+* An API request fails, and the component should display an error message. How would you test this end-to-end behavior at the component level?
+* A component loads data in ngOnInit(). How would you verify initialization behavior without over-testing lifecycle implementation details?
+* A feature uses NgRx Effects to load data. How would you test successful responses and API failures?
+* A component displays different templates for loading, empty, and error states. How would you test each state?
+* A developer changes a component's template and unintentionally breaks accessibility. How would you catch this through testing?
+* A lazy-loaded route works in development but fails during navigation tests. How would you investigate it?
+* An Angular application uses both Signals and RxJS. How would you test state changes and asynchronous emissions?
+* How would you design a testing strategy covering unit, integration, and E2E tests for a critical payment workflow?

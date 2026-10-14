@@ -1,0 +1,30 @@
+* A Spring Boot API becomes slow because every request retrieves the same data from PostgreSQL. How would you introduce Redis caching and measure the improvement?
+* A cached customer record continues returning old values after the database record is updated. How would you identify the cause and implement reliable cache invalidation?
+* Redis cache hit ratio drops suddenly during peak traffic, and database CPU usage increases significantly. How would you investigate the cache misses and reduce database load?
+* A popular cache key expires, causing thousands of requests to query the database simultaneously. How would you prevent a cache stampede?
+* Redis memory reaches its configured limit, and keys start disappearing unexpectedly. How would you investigate the eviction policy and memory usage?
+* Redis latency increases from milliseconds to hundreds of milliseconds, but application CPU remains low. How would you investigate slow commands, network latency, and Redis resource contention?
+* One Redis Cluster node receives much more traffic than the other nodes. How would you identify hot keys and rebalance the workload?
+* A Redis key contains millions of collection entries, and commands involving that key cause latency spikes. How would you redesign the data model and access pattern?
+* A Spring Boot application experiences Redis connection timeouts after a traffic increase. How would you investigate connection limits, client configuration, network latency, and command execution?
+* Redis becomes temporarily unavailable during a failover, causing application errors. How would you design graceful degradation and recovery?
+* A Redis primary fails before recent writes are replicated to its replica. How would you assess possible data loss and choose appropriate durability settings?
+* Redis Sentinel repeatedly triggers failovers during brief network interruptions. How would you investigate and stabilize the deployment?
+* A Redis Cluster migration causes CROSSSLOT errors in multi-key operations. How would you redesign key naming and hash-slot placement?
+* Two application instances attempt to process the same scheduled job simultaneously. How would you coordinate execution with Redis while handling lock expiration and process crashes?
+* A service acquires a Redis distributed lock but continues working after its lease expires. How would you prevent unsafe concurrent updates?
+* A distributed rate limiter allows more requests than the configured limit during concurrent traffic. How would you make the counter and expiry update atomic?
+* A Redis Pub/Sub subscriber disconnects briefly and misses important events. How would you redesign the messaging mechanism to support recovery?
+* A Redis Streams consumer crashes after processing a message but before acknowledging it. How would you handle redelivery and prevent duplicate business operations?
+* A Redis Streams consumer group accumulates a large pending-message list. How would you diagnose the backlog and recover abandoned messages?
+* A Java application stores serialized objects in Redis, but a deployment with changed Java classes cannot deserialize older entries. How would you handle serialization compatibility?
+* Redis cache keys created by different application versions conflict because they use inconsistent key formats. How would you design namespacing and versioned keys?
+* A database transaction commits successfully, but the corresponding Redis cache update fails. How would you ensure eventual consistency?
+* A Redis outage causes all application requests to fail because the cache is treated as mandatory. How would you implement a safe fallback to the database?
+* A production incident reveals that Redis contains sensitive customer information accessible to an unauthorized service. How would you investigate and improve access control?
+* Redis disk usage grows continuously even though the dataset appears stable. How would you inspect AOF growth, rewrite behavior, snapshots, and persistence configuration?
+* A Redis deployment experiences high replication lag during large write bursts. How would you investigate network throughput, replica performance, and command volume?
+* A cache optimization reduces database load but increases application memory usage and response latency. How would you evaluate serialization, payload size, and cache granularity?
+* A multi-tenant application uses Redis for session data, but tenant keys are not properly isolated. How would you redesign key namespacing and access controls?
+* A new release changes the Redis value structure while older application instances are still running. How would you plan a backward-compatible cache migration?
+* How would you investigate, remediate, and prevent recurring Redis performance incidents using metrics, slow logs, application tracing, and load tests?

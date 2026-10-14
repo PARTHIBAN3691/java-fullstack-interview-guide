@@ -1,0 +1,30 @@
+* A product catalog contains millions of records sorted by product ID. How would you implement efficient product lookup in Java?
+* A service performs binary search on an unsorted array and sometimes returns incorrect results. How would you diagnose and fix the issue?
+* A customer lookup API must support millions of searches per second. How would you choose between binary search, hashing, and a database index?
+* A sorted array contains multiple records with the same timestamp. How would you find the earliest and latest matching records efficiently?
+* A monitoring system needs to find the first time a metric crossed a threshold in a time-ordered dataset. How would you use binary search?
+* A scheduling service must find the earliest available time slot satisfying several constraints. How could binary search on the answer help?
+* A large application stores frequently searched data in an ArrayList. How would you evaluate whether binary search is beneficial?
+* A Java application uses LinkedList and attempts binary search through repeated indexed access. Why might performance be poor, and how would you improve it?
+* A search API occasionally returns the wrong result near the middle of a very large integer range. How would you investigate midpoint overflow?
+* A rotated sorted array is used to store time-series data after a circular buffer wraps around. How would you search for a target efficiently?
+* A service needs to locate the first log entry after a given timestamp in millions of sorted log records. Which searching strategy would you use?
+* A pricing engine must find the minimum price satisfying a business rule that becomes true monotonically as the price increases. How would you solve it?
+* A resource-allocation system needs to minimize the maximum workload assigned to each worker. How could binary search on the answer be applied?
+* A distributed service must locate records in a dataset too large to fit in memory. What searching techniques and storage structures would you consider?
+* A search endpoint handles both exact-match and range queries. How would you decide between a HashMap, binary search, and a tree-based index?
+* A Java application uses Arrays.binarySearch() but returns an unexpected negative value. How would you interpret and handle the result?
+* A search feature must return all records whose keys fall within a specified range. How would you use lower-bound and upper-bound searches?
+* A real-time monitoring dashboard must find the earliest threshold violation while new measurements arrive continuously. How would you maintain searchable data?
+* A database-backed service performs slow searches because it retrieves every record before searching in Java. How would you redesign the solution?
+* A service searches for usernames without considering case differences. How would you ensure consistent comparison and ordering?
+* A generic Java library must support searching custom objects by multiple fields. How would you design the Comparator and search API?
+* A system searches for values in a matrix with sorted rows and columns. Which algorithm would you select and why?
+* A data ingestion pipeline periodically inserts records into a sorted array. How would insertion costs affect your choice of searching structure?
+* A search operation must handle missing values, empty collections, null inputs, and duplicate keys. How would you define its contract?
+* A performance test shows binary search is slower than a linear scan for small arrays. How would you explain the result and determine the crossover point?
+* A search algorithm works in development but fails with production-sized arrays. What boundary conditions, data types, and memory limitations would you investigate?
+* A Java application searches strings containing Unicode characters. How would you ensure comparison and sorting rules are consistent?
+* A service needs to find a feasible solution under a monotonic constraint, but its binary-search loop sometimes never terminates. How would you debug the boundary updates?
+* A high-throughput API needs predictable latency when searching sorted data. How would you evaluate array-based search against a tree-based index?
+* A team proposes replacing database indexes with application-level binary search. What factors would you evaluate before accepting the design?

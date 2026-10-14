@@ -1,0 +1,20 @@
+* Explain the major phases of the G1 GC marking cycle and their execution order.
+* How does G1 GC balance pause-time targets against throughput?
+* How does G1 GC estimate the collection time for candidate regions?
+* How does G1 GC determine which old-generation regions should be collected during a mixed GC?
+* How does the concurrent marking cycle interact with young GC events?
+* What happens when G1 GC cannot evacuate objects because there is insufficient free heap space?
+* What are evacuation failure and Full GC, and how are they related?
+* How does G1 GC manage remembered sets and cross-region references?
+* What causes remembered-set processing to consume excessive GC time?
+* How can humongous object allocation affect G1 GC performance?
+* How would you investigate repeated Full GC events in an application using G1 GC?
+* What is the difference between G1 GC's adaptive IHOP and a fixed initiating heap occupancy threshold?
+* How do `-XX:InitiatingHeapOccupancyPercent` and `-XX:G1UseAdaptiveIHOP` influence concurrent marking?
+* How would you tune G1 GC for low latency without causing excessive CPU consumption?
+* How can increasing heap size sometimes increase GC pause duration?
+* How would you distinguish a memory leak from high allocation pressure using GC logs?
+* How do weak, soft, and phantom references interact with garbage collection?
+* How does G1 GC handle reference processing and class unloading?
+* What are the trade-offs of changing the G1 region size?
+* How would you compare G1 GC with ZGC and Shenandoah for a latency-sensitive application?

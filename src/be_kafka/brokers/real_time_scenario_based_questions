@@ -1,0 +1,30 @@
+* One Kafka broker goes down during peak traffic, and several producers start reporting errors. How would you investigate the issue?
+* A broker is running, but clients cannot connect to it. How would you troubleshoot listeners, advertised listeners, DNS, and firewall rules?
+* A Kafka cluster reports multiple under-replicated partitions. How would you identify whether the cause is broker overload, network latency, or disk performance?
+* One broker has significantly higher CPU utilization than the others. How would you investigate and rebalance the workload?
+* A broker's disk is almost full, and producers are still publishing messages. How would you recover without causing data loss?
+* A follower replica repeatedly falls out of the ISR. How would you diagnose replication lag?
+* A partition leader fails, and consumers experience a temporary interruption. How would you investigate leader election and improve availability?
+* A cluster has enough brokers, but partition leaders are concentrated on a single broker. How would you redistribute the leadership load?
+* A newly added broker receives no partitions. How would you investigate and rebalance the cluster?
+* A broker removal operation causes increased consumer lag. How would you identify the cause and minimize the impact?
+* A rolling broker restart causes repeated consumer-group rebalances. How would you adjust the maintenance procedure?
+* A broker experiences frequent garbage collection pauses, causing producer timeouts. How would you investigate JVM and workload behavior?
+* Broker network throughput reaches its limit after increasing the replication factor. How would you determine the required capacity?
+* Several brokers experience high disk latency after a traffic increase. How would you determine whether the issue is storage saturation or excessive log-segment activity?
+* One broker stores substantially more data than its peers. How would you investigate partition placement, retention settings, and message distribution?
+* Clients can connect to brokers inside the VPC but not from an external network. How would you troubleshoot advertised addresses and network access?
+* A broker becomes unavailable after a configuration change. How would you isolate the faulty setting and recover the node?
+* Kafka reports offline partitions even though all broker processes appear healthy. How would you investigate replica availability and metadata state?
+* A broker loses its local data directory after a storage failure. How would you restore service and rebuild replicas?
+* An application experiences intermittent timeouts only when sending large messages. How would you investigate broker limits, request handling, and network constraints?
+* A cluster becomes unstable after increasing the number of partitions significantly. How would you evaluate metadata overhead and broker resource usage?
+* A broker's request queue grows continuously while network processor idle time drops. How would you diagnose the bottleneck?
+* A security audit finds that clients can connect to brokers without the required authentication. How would you secure the listeners and validate access?
+* A broker upgrade in a KRaft cluster causes metadata-related errors. How would you investigate version compatibility and controller quorum health?
+* A cluster experiences a zone outage, and multiple replicas become unavailable simultaneously. How would you evaluate rack awareness and replica placement?
+* A broker is repeatedly restarted by an orchestration platform because its health check fails under heavy load. How would you improve health checks and recovery behavior?
+* A single high-volume topic overwhelms one broker despite a multi-broker cluster. How would you analyze partition placement and redistribute the workload?
+* Broker storage costs increase unexpectedly after retention settings are changed. How would you identify the source of additional disk usage?
+* Producers report successful acknowledgments, but a broker failure leads to missing records. How would you investigate durability settings and replica state?
+* A production Kafka cluster needs additional brokers without interrupting critical consumers. How would you plan expansion, partition reassignment, and post-migration validation?

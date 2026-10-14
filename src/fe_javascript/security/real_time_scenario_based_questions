@@ -1,0 +1,30 @@
+* A user reports that a malicious script runs when they open a page containing submitted comments. How would you investigate and prevent the issue?
+* Your application stores JWTs in localStorage. A security audit flags this design. How would you evaluate and improve it?
+* A frontend developer places a production API secret in a JavaScript configuration file. What risks does this create, and how would you fix it?
+* Your API works from Postman but fails in the browser because of CORS. How would you troubleshoot the issue securely?
+* A malicious website submits requests using an authenticated user's browser session. How would you investigate and mitigate the CSRF risk?
+* A third-party npm package introduces a suspicious post-install script. What steps would you take?
+* A security scanner reports an outdated dependency with a critical vulnerability. How would you assess and remediate it?
+* A user-controlled string is inserted into the DOM using innerHTML. How would you redesign the implementation?
+* Your application redirects users to a URL received from a query parameter. How would you prevent open redirect attacks?
+* A developer uses eval() to process a value received from an API. How would you replace this implementation?
+* An authentication cookie is missing the HttpOnly, Secure, and SameSite attributes. What changes would you recommend?
+* A browser application accepts postMessage events from any origin. How would you secure the message handler?
+* A CSP deployment blocks legitimate scripts and allows unsafe-inline. How would you move toward a stronger policy?
+* A user can modify frontend role values and access an admin screen. How would you ensure authorization is enforced correctly?
+* A production log accidentally contains access tokens. What immediate and long-term actions would you take?
+* An application merges user-controlled JSON into a configuration object and begins behaving unexpectedly. How would you investigate prototype pollution?
+* A payment page loads JavaScript from several third-party domains. How would you assess the supply-chain risk?
+* A user reports that their session remains active after logout. How would you investigate session invalidation and token revocation?
+* Your API exposes detailed stack traces and internal paths in error responses. How would you fix the issue?
+* A developer assumes client-side validation prevents malicious requests. How would you explain and demonstrate the security gap?
+* A web application allows arbitrary file uploads and previews the uploaded content. What vulnerabilities would you assess?
+* A security audit finds that credentialed CORS requests are permitted from untrusted origins. How would you remediate the configuration?
+* A dependency update breaks functionality but fixes a high-severity security issue. How would you manage the release?
+* A single-page application contains personal information in query strings. How would you reduce the exposure?
+* A browser extension or injected script appears to access application data. How would you investigate the possible attack vectors?
+* A user can bypass a frontend subscription check by calling an API directly. How would you redesign authorization?
+* An application uses third-party analytics scripts on a sensitive page. How would you limit their access to sensitive data?
+* A security test identifies a clickjacking vulnerability on an account-management page. How would you protect the page?
+* A token is stolen from a user's browser and reused from another device. How would you contain the incident and prevent recurrence?
+* You are responsible for securing a JavaScript application before launch. How would you prioritize the security assessment?

@@ -1,0 +1,30 @@
+* Write a Java Kafka producer that publishes a message to a topic.
+* Write a Java Kafka consumer that subscribes to a topic and prints received messages.
+* Create a Spring Boot Kafka producer using KafkaTemplate.
+* Implement a Spring Boot Kafka listener using @KafkaListener.
+* Write Java configuration for a Kafka producer factory and KafkaTemplate.
+* Write Java configuration for a Kafka consumer factory and ConcurrentKafkaListenerContainerFactory.
+* Implement a producer that publishes messages with a custom key.
+* Write a consumer that reads a message's key, value, topic, partition, and offset.
+* Implement a Kafka producer that sends messages asynchronously and handles callback errors.
+* Write a consumer that manually acknowledges a record after successful processing.
+* Implement a Kafka consumer with a custom consumer group ID.
+* Write a Java program that creates a Kafka topic with a specified partition count and replication factor.
+* Implement a Kafka AdminClient utility that lists topics and describes their partitions.
+* Write a Java producer that configures acks, retries, batching, and compression.
+* Implement an idempotent Kafka producer using Java client configuration.
+* Write a Spring Boot consumer that handles processing failures with DefaultErrorHandler.
+* Implement a Kafka consumer that sends failed messages to a Dead Letter Topic.
+* Write a Java consumer that processes records in batches.
+* Implement a Kafka consumer that seeks to a specific offset and replays records.
+* Write a Java utility that measures consumer lag using consumer group offset information.
+* Implement a producer and consumer using JSON serialization and deserialization.
+* Write a Spring Boot Kafka application that publishes and consumes order events using a shared event model.
+* Implement a transactional producer that publishes related records to multiple Kafka topics.
+* Write a Kafka integration test using EmbeddedKafka to verify message production and consumption.
+* Implement an idempotent consumer that prevents duplicate database updates using event IDs.
+* Write a Java utility that inspects partition metadata and identifies partitions without a healthy leader.
+* Implement a consumer rebalance listener that logs partition assignments and revocations.
+* Write a Kafka application that uses a schema-compatible event model and validates incoming records.
+* Implement a producer-consumer workflow that propagates a correlation ID through message headers.
+* Write an integration test that simulates consumer failure and verifies that records can be processed again safely.

@@ -1,0 +1,30 @@
+* How do you perform file operations using async/await in Node.js?
+* How do you use fs/promises for asynchronous file operations?
+* How do callbacks work in the fs module?
+* How do you read a file line by line in Node.js?
+* How do you copy a file from one directory to another?
+* How do you move a file between directories?
+* How do you recursively create nested directories?
+* How do you recursively delete a directory and its contents?
+* How do you read and write JSON files in Node.js?
+* How do you update a specific property in a JSON file?
+* How do you check file permissions in Node.js?
+* How do you change file permissions using fs.chmod()?
+* How do you retrieve file metadata using fs.stat()?
+* What is the difference between fs.stat() and fs.lstat()?
+* How do you work with symbolic links in Node.js?
+* How do you monitor file changes using fs.watch()?
+* What are the limitations of fs.watch()?
+* How do you handle large files efficiently?
+* What is the difference between file operations and streams?
+* How do you create a readable stream from a file?
+* How do you write data using a writable stream?
+* How do you copy a file using streams and pipeline()?
+* How do you handle file-operation errors such as EACCES and ENOENT?
+* How do you prevent blocking the event loop during file operations?
+* How do you safely generate file paths using the path module?
+* How do you avoid overwriting an existing file accidentally?
+* How do you process all files in a directory asynchronously?
+* How do you implement file upload storage using the fs module?
+* How do you write unit tests for file-system operations?
+* How do you clean up temporary files after processing?

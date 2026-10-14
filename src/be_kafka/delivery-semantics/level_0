@@ -1,0 +1,30 @@
+* What are delivery semantics in Apache Kafka?
+* What are the three main Kafka delivery semantics?
+* What is at-most-once delivery in Kafka?
+* What is at-least-once delivery in Kafka?
+* What is exactly-once delivery in Kafka?
+* What is the difference between at-most-once and at-least-once delivery?
+* What is the difference between at-least-once and exactly-once delivery?
+* How does Kafka provide reliable message delivery?
+* What is a Kafka producer acknowledgment?
+* What is the purpose of the acks configuration in Kafka?
+* What does acks=0 mean for a Kafka producer?
+* What does acks=1 mean for a Kafka producer?
+* What does acks=all mean for a Kafka producer?
+* What is the role of the producer retry configuration?
+* What is the purpose of enable.idempotence in Kafka?
+* What is an idempotent Kafka producer?
+* What is a duplicate message in Kafka?
+* Why can duplicate messages occur in Kafka?
+* What is a consumer offset in Kafka?
+* How does offset committing affect message delivery?
+* What is automatic offset committing in Kafka?
+* What is manual offset committing in Kafka?
+* What happens if a consumer crashes before committing an offset?
+* What happens if a consumer commits an offset before processing a message?
+* What is the purpose of Kafka transactions?
+* What is the difference between producer reliability and consumer reliability?
+* Does Kafka guarantee that a message is processed exactly once by a business application?
+* What is the role of replication in Kafka message durability?
+* How does min.insync.replicas affect message reliability?
+* Why are delivery semantics important in distributed systems?

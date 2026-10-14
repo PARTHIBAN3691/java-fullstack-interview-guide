@@ -1,0 +1,30 @@
+* What is a Kafka broker?
+* Why are Kafka brokers required in a Kafka cluster?
+* What are the main responsibilities of a Kafka broker?
+* What is the difference between a Kafka broker and a Kafka cluster?
+* How does a Kafka broker store messages?
+* What is a broker ID in Kafka?
+* How is a unique broker ID assigned in Kafka?
+* What is the role of a broker in producer communication?
+* What is the role of a broker in consumer communication?
+* What is a Kafka topic partition?
+* How are partitions distributed across Kafka brokers?
+* What is a partition leader?
+* What is a partition follower?
+* What is the difference between a leader broker and a follower replica?
+* What is replication in Kafka brokers?
+* What is a replication factor?
+* What is an in-sync replica (ISR)?
+* What happens when a Kafka broker goes down?
+* What is a controller broker?
+* What is the role of the Kafka controller?
+* What is the difference between a broker and a controller?
+* What is KRaft mode in Kafka?
+* What was the role of ZooKeeper in older Kafka deployments?
+* What is a bootstrap server?
+* What is the purpose of the advertised.listeners configuration?
+* What is the difference between listeners and advertised listeners?
+* What is the default port commonly used by Kafka brokers?
+* What is a Kafka log segment?
+* What is the purpose of the Kafka broker configuration file?
+* What are the basic monitoring metrics for a Kafka broker?

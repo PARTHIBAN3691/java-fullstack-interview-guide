@@ -1,0 +1,30 @@
+* Your order service must send order confirmation emails asynchronously. How would you design the solution using a message queue?
+* A payment service publishes payment events, but the notification service is temporarily unavailable. How would you prevent message loss?
+* Your consumer processes the same payment message twice, causing duplicate records. How would you fix the issue?
+* A consumer crashes after updating the database but before acknowledging the message. How would you ensure safe recovery?
+* Your Kafka consumer lag increases continuously during peak traffic. How would you investigate and resolve it?
+* A queue contains millions of pending messages after a downstream service outage. How would you recover safely?
+* A single message repeatedly fails and blocks processing of subsequent messages. How would you handle it?
+* Your application requires strict ordering of financial transactions for each customer. How would you design the messaging architecture?
+* Two microservices must exchange events without depending on each other's availability. How would you implement this?
+* Your inventory service receives duplicate order-created events. How would you prevent incorrect stock deductions?
+* A message broker becomes unavailable during a production deployment. How should producers and consumers behave?
+* Your application must process messages in parallel while preserving order for each order ID. How would you achieve this?
+* A consumer takes several minutes to process each message, and the broker redelivers messages prematurely. How would you resolve the problem?
+* Your organization needs to replay events from the last 24 hours after deploying a bug fix. How would you design replay safely?
+* A downstream API allows only 100 requests per second, but your queue receives 10,000 messages per second. How would you manage the backlog?
+* A producer successfully receives an acknowledgment, but the expected business event is missing downstream. How would you troubleshoot it?
+* Your business requires that an order database update and event publication remain consistent. How would you design the transaction flow?
+* A consumer deployment triggers frequent Kafka partition rebalances and processing delays. How would you reduce the disruption?
+* A message payload changes between service versions, causing deserialization failures. How would you support backward compatibility?
+* Your application uses multiple queues for email, payments, and reporting. How would you isolate failures and resource consumption?
+* A queue backlog grows even though consumers appear healthy. What metrics and bottlenecks would you investigate?
+* Your application must process high-priority payment messages before low-priority analytics messages. How would you design the solution?
+* A regional outage affects your message broker. How would you maintain business continuity in another region?
+* A producer publishes events faster than consumers can process them. How would you apply backpressure and autoscaling?
+* Your event-processing pipeline must avoid losing messages during rolling deployments. What deployment and acknowledgment strategies would you use?
+* A consumer updates a database and then calls an external payment API. How would you handle retries without repeating the payment?
+* Your system requires auditability and the ability to reconstruct business state from historical events. How would you design retention and replay?
+* Several teams share a Kafka cluster, and one team's workload affects others. How would you implement isolation and quotas?
+* A message is sent to a dead-letter queue, but the operations team needs to recover it after fixing the issue. How would you design redrive?
+* You must choose between Kafka, RabbitMQ, and Amazon SQS for a large e-commerce platform. What requirements and trade-offs would guide your decision?

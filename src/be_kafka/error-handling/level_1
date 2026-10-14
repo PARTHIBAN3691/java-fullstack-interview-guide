@@ -1,0 +1,30 @@
+* How do you configure error handling in Spring Kafka?
+* What is DefaultErrorHandler in Spring Kafka?
+* How does CommonErrorHandler work in Spring Kafka?
+* What is the purpose of DeadLetterPublishingRecoverer?
+* How do you configure a retry policy using DefaultErrorHandler?
+* How do you configure a fixed backoff for failed Kafka records?
+* How do you implement exponential backoff for message retries?
+* How do you configure exceptions that should not be retried?
+* How do you classify exceptions as retryable or non-retryable?
+* How do you send failed messages to a Dead Letter Topic?
+* How do you preserve message keys and headers when handling errors?
+* How do you configure ErrorHandlingDeserializer in Spring Kafka?
+* How do you handle deserialization failures that occur before the listener method is invoked?
+* What is the difference between DefaultErrorHandler and SeekToCurrentErrorHandler?
+* How do acknowledgment modes affect error recovery?
+* How do you handle exceptions in a batch Kafka listener?
+* How do you handle partial batch failures?
+* What is the difference between blocking retries and non-blocking retries?
+* How do retry topics work in Spring Kafka?
+* How do you prevent infinite retry loops?
+* How do you handle errors when publishing a failed record to a DLT?
+* How do you configure a custom Kafka error handler?
+* How do you handle producer send failures in a Spring Boot application?
+* How do Kafka producer callbacks help with asynchronous error handling?
+* How do you handle Kafka serialization exceptions?
+* How do you configure logging for Kafka consumer exceptions?
+* How do you monitor retry counts and failed message rates?
+* How do you write unit tests for Kafka error handlers?
+* How do you test DLT publishing with EmbeddedKafka?
+* How do you handle errors without blocking the entire consumer application?

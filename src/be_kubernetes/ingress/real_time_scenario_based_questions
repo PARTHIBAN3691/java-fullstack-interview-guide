@@ -1,0 +1,30 @@
+* Your Spring Boot application is running and its Service is healthy, but users cannot access it through Ingress. How would you troubleshoot the issue?
+* An Ingress resource exists, but its address field remains empty. What would you check first?
+* Users receive a 404 response when accessing a configured URL, although the backend Service works correctly. How would you investigate host rules, path rules, and path types?
+* Your application returns 502 Bad Gateway intermittently during peak traffic. How would you isolate whether the issue is in Ingress, the Service, or the application?
+* Your Ingress Controller returns 503 Service Unavailable immediately after a deployment. How would you investigate backend endpoints and readiness probes?
+* HTTPS works, but HTTP requests are not redirected to HTTPS. How would you configure and verify the redirect?
+* A valid TLS certificate is configured, but browsers show a certificate warning. How would you investigate the certificate, hostname, and Secret configuration?
+* Your TLS certificate expires unexpectedly in production. How would you restore service and prevent the issue from recurring?
+* Two applications need to share one domain but use different URL paths. How would you configure routing without causing path conflicts?
+* Your Spring Boot application expects requests under `/api`, but Ingress forwards requests with an unexpected prefix. How would you resolve the path-rewriting issue?
+* A microservice works through internal cluster access but fails through Ingress because it generates incorrect absolute URLs. What application and proxy settings would you inspect?
+* Your application experiences long-running requests, and Ingress returns 504 Gateway Timeout before the backend finishes. How would you identify the correct timeout configuration?
+* WebSocket connections work internally but fail when routed through Ingress. How would you troubleshoot protocol and timeout settings?
+* Users are intermittently logged out after requests reach different Pods. How would you investigate session handling and Ingress affinity?
+* A new Ingress rule unintentionally redirects traffic from an existing application. How would you diagnose the conflicting configuration and safely fix it?
+* A shared Ingress Controller becomes overloaded when one application experiences a traffic spike. How would you isolate and protect other applications?
+* Your organization needs separate public and internal endpoints for the same application. How would you design the Ingress and network access controls?
+* Requests from a trusted client are rejected because of an incorrect CORS configuration. How would you determine whether CORS should be handled at Ingress or application level?
+* A new Ingress Controller is deployed, but some requests still reach the old controller. How would you investigate DNS, external load balancers, and IngressClass configuration?
+* The team wants to deploy a canary version of a Java service receiving only a small percentage of production traffic. How would you implement and validate traffic splitting?
+* After enabling authentication at Ingress, health checks and monitoring probes begin failing. How would you secure the endpoint without breaking operational checks?
+* A backend application is healthy, but its response time increases significantly after enabling Ingress. How would you investigate connection reuse, TLS overhead, and controller resource usage?
+* Your application must accept requests up to 50 MB, but uploads fail through Ingress. How would you diagnose request body size limits and timeouts?
+* Client IP addresses appear as the Ingress Controller's IP in application logs. How would you configure forwarded headers and trusted proxy handling safely?
+* A production rollout changes the backend Service port, causing external requests to fail. How would you recover and prevent similar configuration errors?
+* Your cluster uses multiple Ingress Controllers, and a resource is handled by the wrong controller. How would you correct its class configuration?
+* Security testing identifies that an application is publicly accessible despite an intended internal-only configuration. How would you investigate exposure paths and enforce access restrictions?
+* Your team wants to migrate from NGINX Ingress to Gateway API with minimal downtime. How would you plan the migration and validate routing behavior?
+* A cluster failure makes the public endpoint unavailable even though the application runs in another cluster. How would you design cross-cluster failover and DNS recovery?
+* Your company needs to expose hundreds of microservices securely with centralized TLS management, monitoring, and rate limiting. How would you design the overall ingress architecture?

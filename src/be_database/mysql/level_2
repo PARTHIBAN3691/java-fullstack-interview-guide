@@ -1,0 +1,30 @@
+* Explain the internal architecture of MySQL, including the server layer and storage engines.
+* How does the InnoDB storage engine manage data pages, buffer pools, and redo logs?
+* How does InnoDB implement clustered indexes and secondary indexes?
+* How does the InnoDB buffer pool improve database performance?
+* What is the difference between redo logs, undo logs, and the binary log?
+* How does MySQL recover committed transactions after a crash?
+* How does InnoDB implement MVCC?
+* How do undo logs support consistent reads and transaction rollback?
+* How do gap locks and next-key locks work in InnoDB?
+* How does MySQL prevent phantom reads under REPEATABLE READ?
+* How do deadlocks occur in InnoDB, and how does the engine detect them?
+* How would you analyze a deadlock using SHOW ENGINE INNODB STATUS?
+* How does MySQL choose an execution plan, and how can you influence its decisions?
+* How do cardinality estimates and table statistics affect index selection?
+* How would you optimize a query that uses an index but still performs poorly?
+* How do composite indexes, covering indexes, and index condition pushdown affect query performance?
+* What are the trade-offs of adding indexes to a high-write table?
+* How do partitioning and indexing differ in their impact on query performance?
+* How would you investigate a query that causes temporary tables, filesorts, and high disk I/O?
+* How do common table expressions and window functions affect execution plans?
+* How does connection pooling affect MySQL scalability and resource utilization?
+* How would you diagnose connection pool exhaustion in a Java and Spring Boot application?
+* How do MySQL replication and binary log formats work?
+* What are the differences between asynchronous, semisynchronous, and group replication approaches?
+* How would you handle replication lag and stale reads in a Java application?
+* How do you design safe database schema migrations for a high-availability application?
+* How would you perform an online schema change on a large production table?
+* How do you ensure transaction consistency when a Java service updates multiple related tables?
+* How would you design a high-throughput MySQL database for a payment or order-processing system?
+* How would you diagnose and resolve a production incident involving slow queries, lock contention, replication lag, and connection failures?

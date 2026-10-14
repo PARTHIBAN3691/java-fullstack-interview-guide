@@ -1,0 +1,104 @@
+# Secrets & Identity Management — Level 0 (Easy)
+
+## Secrets Management
+* What is secrets management, and why is it important?
+* What types of information are considered secrets?
+* Why should secrets not be hardcoded in source code?
+* What is the difference between a secret and a configuration value?
+
+## HashiCorp Vault
+* What is HashiCorp Vault, and what problems does it solve?
+* What is a Vault secret engine?
+* What is the difference between static and dynamic secrets in Vault?
+* What is a Vault policy?
+
+## AWS Secrets Manager
+* What is AWS Secrets Manager, and when would you use it?
+* What is the purpose of a secret version?
+* What is the `GetSecretValue` API used for?
+* How does AWS Secrets Manager help protect application credentials?
+
+## Azure Key Vault
+* What is Azure Key Vault?
+* What is the difference between a secret, a key, and a certificate in Key Vault?
+* What is an Azure managed identity?
+* What is the purpose of Azure RBAC in Key Vault access control?
+
+## Google Secret Manager
+* What is Google Secret Manager?
+* What is the difference between a secret and a secret version?
+* How does Google Secret Manager control access to secret values?
+* What is the purpose of IAM permissions for Secret Manager?
+
+## Secret Rotation
+* What is secret rotation, and why is it necessary?
+* What is the difference between manual and automatic secret rotation?
+* What is the difference between rotating and revoking a secret?
+* What are the risks of using the same secret for a long time?
+
+## Dynamic Secrets
+* What are dynamic secrets?
+* How do dynamic secrets differ from static credentials?
+* What is a secret lease or time-to-live (TTL)?
+* What are the benefits of issuing temporary credentials?
+
+## Encryption
+* What is encryption, and why is it used?
+* What is the difference between symmetric and asymmetric encryption?
+* What is the difference between encryption, hashing, and encoding?
+* What is the difference between encryption at rest and encryption in transit?
+
+## KMS — Key Management Service
+* What is a Key Management Service (KMS)?
+* What is the difference between a data encryption key and a key-encryption key?
+* What is the difference between provider-managed and customer-managed encryption keys?
+* What are encryption-key rotation and key revocation?
+
+## IAM — Identity and Access Management
+* What is Identity and Access Management (IAM)?
+* What is the difference between authentication and authorization?
+* What is the principle of least privilege?
+* What is the difference between a human identity and a workload identity?
+
+## RBAC — Role-Based Access Control
+* What is Role-Based Access Control (RBAC)?
+* What are users, roles, and permissions in RBAC?
+* What is the difference between a role and a permission?
+* How does RBAC help implement least-privilege access?
+
+## ABAC — Attribute-Based Access Control
+* What is Attribute-Based Access Control (ABAC)?
+* What types of attributes can be used for access-control decisions?
+* How does ABAC differ from RBAC?
+* What is an access-control policy?
+
+## Service Accounts
+* What is a service account?
+* How does a service account differ from a human user account?
+* Why should applications use separate service accounts?
+* Why is sharing one service account across multiple applications risky?
+
+## Workload Identity
+* What is workload identity?
+* Why is workload identity preferred over hardcoded cloud credentials?
+* What is workload identity federation?
+* How does workload identity help secure applications running in Kubernetes?
+
+## Short-Lived Credentials
+* What are short-lived credentials?
+* How do short-lived credentials differ from long-lived credentials?
+* What are the security benefits of reducing credential lifetime?
+* What is the purpose of a token expiration time?
+
+## Certificate Management
+* What is a digital certificate?
+* What information does an X.509 certificate contain?
+* What is the difference between a public key and a private key?
+* Why must certificates be renewed before expiration?
+
+## PKI — Public Key Infrastructure
+* What is Public Key Infrastructure (PKI)?
+* What is the role of a Certificate Authority (CA)?
+* What is the difference between a root CA and an intermediate CA?
+* What is a Certificate Signing Request (CSR)?
+

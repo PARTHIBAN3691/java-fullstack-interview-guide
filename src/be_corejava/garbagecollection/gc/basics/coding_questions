@@ -1,0 +1,15 @@
+* Write a Java program that creates an object and makes it eligible for garbage collection.
+* Write a Java program that demonstrates object eligibility for garbage collection after a reference is reassigned.
+* Write a Java program that demonstrates how circular references can become eligible for garbage collection.
+* Write a Java program that creates multiple objects and removes references to selected objects.
+* Write a Java program using `WeakReference` to observe the behavior of an object after its strong reference is removed.
+* Write a Java program using `ReferenceQueue` to detect when weakly referenced objects are enqueued.
+* Write a Java program using `MemoryMXBean` to monitor heap memory usage.
+* Write a Java program using `GarbageCollectorMXBean` to display garbage collection counts and collection times.
+* Write a Java program using `ManagementFactory` to display JVM memory-pool information.
+* Write a Java program that allocates objects repeatedly and records heap usage over time.
+* Write a Java program that creates and retains objects to simulate a memory leak.
+* Write a Java program that demonstrates how a static collection can unintentionally retain object references.
+* Write a Java program that creates many short-lived objects to investigate allocation pressure.
+* Write a Java program that uses `-Xms`, `-Xmx`, and GC logging options to observe garbage collection behavior.
+* Write a Java program that generates a heap dump on an `OutOfMemoryError` and explain how you would analyze the dump.

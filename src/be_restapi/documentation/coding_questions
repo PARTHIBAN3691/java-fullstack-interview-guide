@@ -1,0 +1,30 @@
+* Create a basic OpenAPI specification for a REST API that manages employees.
+* Write a YAML OpenAPI document describing GET, POST, PUT, and DELETE employee endpoints.
+* Create an OpenAPI specification that documents request parameters, request bodies, responses, and HTTP status codes.
+* Add reusable Employee and ErrorResponse schemas to an OpenAPI specification.
+* Configure Springdoc OpenAPI in a Spring Boot application using Maven.
+* Configure Springdoc OpenAPI in a Spring Boot application using Gradle.
+* Write a Spring Boot controller that documents an endpoint using @Operation and @ApiResponse.
+* Use @Parameter to document path parameters and query parameters in a REST API.
+* Use @Schema to document Java DTO fields, descriptions, examples, and required properties.
+* Write a Spring Boot endpoint that documents validation errors for invalid request fields.
+* Configure Swagger UI with a custom API title, description, version, and contact information.
+* Configure an HTTP Bearer security scheme for JWT authentication in OpenAPI.
+* Write a Spring Security and Springdoc configuration that allows Swagger UI access while protecting business endpoints.
+* Document a file-upload endpoint using multipart/form-data in OpenAPI.
+* Document a paginated REST API with page, size, sort, and response metadata.
+* Define reusable HTTP error responses for 400, 401, 403, 404, and 500 status codes.
+* Create an OpenAPI specification for an API that supports multiple versions.
+* Document a deprecated endpoint and specify its replacement endpoint.
+* Write a Java configuration that groups Spring Boot endpoints into separate OpenAPI documentation groups.
+* Generate an OpenAPI JSON specification from a Spring Boot application.
+* Write a test that verifies the OpenAPI documentation endpoint returns a valid response.
+* Implement a CI validation step that checks an OpenAPI YAML file for structural errors.
+* Write a script that compares two OpenAPI specifications and identifies potentially breaking changes.
+* Create reusable OpenAPI schemas for nested objects and polymorphic response models.
+* Document an asynchronous job-processing API with job submission, status polling, and completion responses.
+* Write an OpenAPI specification for a payment API that includes idempotency keys and common error responses.
+* Create a contract test that verifies an API response conforms to its documented schema.
+* Configure automated API documentation generation and validation during a Maven build.
+* Write a script that detects REST controller endpoints missing from the generated OpenAPI specification.
+* Build a complete Spring Boot API documentation module with Springdoc OpenAPI, reusable schemas, JWT security definitions, standardized errors, versioned documentation, automated validation, and CI/CD publishing.

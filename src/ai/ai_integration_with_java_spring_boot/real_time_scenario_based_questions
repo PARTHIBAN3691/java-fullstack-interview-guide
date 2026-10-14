@@ -1,0 +1,100 @@
+**Calling LLM APIs from Java**
+* A Java service starts timing out on LLM requests after a dependency upgrade. How would you isolate connection-pool, TLS, timeout, and response-parsing issues?
+* The provider returns HTTP 200 but occasionally sends an incomplete or unexpected response structure. How would you protect downstream processing and diagnose the issue?
+* A streaming request fails after the user has received several tokens. How would you handle the partial response and determine whether retrying is safe?
+
+**Spring AI Fundamentals**
+* A Spring Boot application fails at startup after upgrading Spring AI. How would you investigate dependency alignment, starter changes, and auto-configuration conditions?
+* Two model providers work independently, but one fails when selected through shared configuration. How would you isolate provider-specific assumptions?
+* A configuration change causes inconsistent model behavior across instances. How would you identify configuration drift and restore a consistent deployment?
+
+**Spring AI Chat Models**
+* A model starts returning invalid JSON after a prompt modification, breaking a downstream service. How would you identify the regression and implement a safe rollback?
+* Chat latency increases as conversation history grows. How would you investigate token usage, history management, and context-window limits?
+* A fallback model returns different tool-call structures from the primary model. How would you preserve a stable application contract?
+
+**Spring AI Embeddings**
+* Search relevance drops after an embedding model upgrade. How would you determine whether existing document vectors and new query vectors are incompatible?
+* Bulk embedding ingestion stops halfway because of provider throttling. How would you resume safely without duplicating or losing documents?
+* Two teams generate different embeddings for the same document. How would you trace preprocessing, model configuration, and version metadata?
+
+**Spring AI Vector Stores**
+* A vector search returns duplicate documents after a re-ingestion job. How would you identify the ID and upsert strategy causing duplicates?
+* A tenant receives search results for documents it should not access. How would you contain the exposure and enforce mandatory filtering?
+* Vector retrieval latency rises sharply after a large index update. How would you investigate index configuration, ingestion contention, and query patterns?
+
+**Spring AI Advisors**
+* Adding a memory advisor causes repeated messages to appear in the final prompt. How would you trace advisor ordering and shared state?
+* A custom logging advisor unexpectedly records sensitive information. How would you remove the exposure and add regression tests?
+* An advisor increases response latency significantly. How would you isolate its processing cost and decide whether to optimize or remove it?
+
+**Spring AI RAG Pipelines**
+* The model gives confident but incorrect answers even though relevant documents exist. How would you inspect ingestion, chunking, retrieval, reranking, and prompt assembly?
+* Users continue receiving information from documents that were deleted yesterday. How would you trace index updates and stale retrieval records?
+* RAG answers contain unsupported claims without citations. How would you improve source grounding and test the results?
+
+**Spring AI Tool Calling**
+* An AI assistant submits the same business operation twice after a timeout. How would you identify the duplicate-execution path and implement idempotency?
+* A model attempts to call an administrative tool for a user without permission. How would you ensure authorization is enforced outside the model?
+* A tool repeatedly fails and the model keeps trying alternative arguments. How would you introduce execution limits and escalation?
+
+**Spring AI MCP Integration**
+* An MCP server becomes unavailable during a conversation. How would you degrade gracefully and prevent the failure from cascading?
+* A new MCP server version changes a tool's schema and breaks production calls. How would you detect incompatibility and roll back?
+* A discovered MCP tool exposes an operation that the application should not permit. How would you enforce allowlists and authorization before model exposure?
+
+**Spring AI Chat Memory**
+* A user sees responses containing another conversation's history. How would you investigate conversation IDs, tenant isolation, and shared state?
+* Concurrent requests append messages in the wrong order. How would you reproduce the race condition and implement ordering controls?
+* Chat memory grows until prompts exceed the context window. How would you introduce summarization, retention, and token-budget enforcement?
+
+**Streaming AI Responses with Spring Boot**
+* Users receive the complete response only after a long delay even though the model supports streaming. How would you investigate application buffering and proxy configuration?
+* Client disconnections leave expensive upstream generation requests running. How would you propagate cancellation and verify resource cleanup?
+* A reverse proxy closes long-lived streams unexpectedly. How would you distinguish idle timeouts, buffering, and keepalive problems?
+
+**AI Integration with REST APIs**
+* An API client retries after a timeout and triggers duplicate business actions. How would you introduce idempotency and clarify request outcomes?
+* An AI endpoint becomes a target for unusually large prompts and automated abuse. How would you implement admission controls without blocking legitimate requests?
+* A model-provider error exposes internal details to clients. How would you normalize errors and preserve diagnostic information securely?
+
+**Reactive AI Applications**
+* A WebFlux application becomes unresponsive when model traffic increases. How would you check for blocking operations on event-loop threads?
+* A slow client causes streamed output buffers to grow. How would you apply backpressure and bound memory usage?
+* A reactive pipeline stops responding after cancellation. How would you trace cancellation propagation and clean up upstream resources?
+
+**AI Rate Limiting and Resilience**
+* All application instances begin retrying the provider at the same time after a throttling event. How would you prevent synchronized retries and request amplification?
+* A circuit breaker opens during a short provider slowdown and blocks too many legitimate requests. How would you tune thresholds and recovery behavior?
+* The fallback model is also saturated during a primary-provider outage. How would you prioritize requests and prevent cascading failure?
+
+**Secure AI API Integration**
+* A retrieved document contains instructions to reveal system prompts and invoke an external URL. How would you defend the application against indirect prompt injection and unauthorized tool use?
+* API credentials appear in an exception trace uploaded to a centralized logging system. How would you contain the leak and redesign secret handling?
+* A generated database query returns records belonging to another tenant. How would you investigate authorization enforcement and prevent recurrence?
+
+**AI Microservices Architecture**
+* The AI service becomes a bottleneck for several independent business services. How would you isolate workloads and decide what to cache or process asynchronously?
+* A provider migration requires changes in multiple consuming services. How would you redesign the integration boundary to reduce coupling?
+* An AI service outage causes unrelated checkout APIs to fail. How would you redesign timeouts, bulkheads, fallbacks, and dependency boundaries?
+
+**AI Integration with Kafka**
+* Kafka consumer lag grows while AI requests are being throttled. How would you adjust concurrency, retries, partitioning, and provider admission controls?
+* A consumer crashes after receiving an AI result but before committing its offset. How would you prevent duplicate downstream side effects?
+* Out-of-order document events cause older embeddings to overwrite newer content. How would you use versions, idempotency, and ordering controls?
+
+**AI Integration with Databases**
+* A model receives stale customer information because the database changed after retrieval. How would you handle freshness and transaction boundaries?
+* Database locks increase during an AI workflow that performs slow model calls. How would you shorten transactions and redesign the workflow?
+* AI-generated SQL consumes excessive database resources. How would you add query validation, timeouts, row limits, and read-only restrictions?
+
+**Testing Spring AI Applications**
+* A prompt change passes unit tests but causes a production-quality regression. How would you introduce evaluation datasets and release gates?
+* Integration tests pass locally but fail in CI because provider responses and quotas vary. How would you isolate deterministic tests from live-provider tests?
+* A Spring AI upgrade changes advisor behavior and breaks RAG results. How would you detect the regression and validate the rollback?
+
+**Productionizing AI Applications in Java**
+* Model latency, token usage, and error rates rise simultaneously after a deployment. How would you correlate telemetry and determine whether to roll back?
+* Customers report more hallucinations, but infrastructure metrics look healthy. How would you measure answer quality and investigate retrieval or prompt changes?
+* An AI provider outage causes a backlog of requests and a sharp cost increase during recovery. How would you control replay, prioritize traffic, and restore service safely?
+* An audit requires identifying which prompt, model, and source documents contributed to a historical answer. How would you reconstruct the execution without exposing unnecessary personal data?

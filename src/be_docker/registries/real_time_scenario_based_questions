@@ -1,0 +1,30 @@
+* Your Spring Boot image builds successfully, but the CI/CD pipeline fails while pushing it to Docker Hub. How would you investigate the problem?
+* A deployment pipeline receives an unauthorized error when pushing to a private registry. How would you identify whether the issue is authentication, authorization, or repository naming?
+* A production Kubernetes deployment fails with ImagePullBackOff after a new Java image is published. How would you investigate registry credentials, image tags, and network access?
+* Your application image is available locally but cannot be found in the private registry. How would you verify the image name, tag, and push operation?
+* A deployment references the latest tag but starts an older application version. How would you investigate tag mutability and image caching?
+* A release tag was accidentally overwritten by a developer. How would you prevent this from happening again?
+* Your CI pipeline stores registry credentials in plain-text configuration. How would you remediate the exposure and redesign credential management?
+* A private registry certificate expires, and production servers can no longer pull Java application images. How would you restore access safely?
+* A registry becomes unavailable during a production deployment. How would you minimize downtime and improve deployment resilience?
+* Your private registry runs out of storage because old image versions accumulate. How would you identify safe cleanup candidates and implement retention policies?
+* A cleanup job deletes an image needed for an emergency rollback. How would you redesign retention and release-promotion practices?
+* Your organization operates registries in multiple regions, but a new image is available in only one region. How would you investigate replication delays and consistency?
+* A container image digest differs between the build pipeline and production deployment. How would you investigate whether the wrong artifact was promoted?
+* A vulnerability scanner detects a critical vulnerability in a published Spring Boot image. How would you block further deployment, rebuild the image, and replace affected releases?
+* Your security team requires signed images, but the current pipeline pushes unsigned artifacts. How would you introduce signing and deployment-time verification?
+* A developer can push images to a production repository even though they should have read-only access. How would you investigate and correct registry permissions?
+* A Java application image can be pulled from Docker Hub but not from the enterprise registry. How would you compare authentication, network, TLS, and repository configuration?
+* Your CI pipeline repeatedly downloads the same large base images and takes too long to complete. How would you optimize registry caching and build agents?
+* An image push fails with a blob upload or unexpected end-of-file error. How would you investigate network stability, storage capacity, proxies, and registry health?
+* Your company wants to migrate thousands of images from one registry provider to another. How would you plan the migration and verify image integrity?
+* A multi-platform image runs correctly on AMD64 servers but fails on ARM64 servers. How would you verify manifest selection and platform-specific dependencies?
+* A production server cannot pull an image because the image tag was removed during registry cleanup. How would you recover the deployment and prevent recurrence?
+* A registry is exposed to the public internet even though it contains internal business applications. How would you secure access and assess potential exposure?
+* Your organization requires different teams to access separate image repositories. How would you implement repository-level access controls and audit their effectiveness?
+* An application deployment succeeds in staging but fails in production because the image is not available in the production registry. How would you design a reliable promotion workflow?
+* A registry mirror serves a stale image after a new release is published. How would you investigate caching behavior and ensure the correct artifact is deployed?
+* A CI pipeline pushes an image before security scanning finishes, allowing a vulnerable image to be deployed. How would you restructure the release gates?
+* A production rollback fails because the previously deployed image digest is no longer available. How would you improve artifact retention and rollback validation?
+* Registry authentication starts failing after a service account credential rotation. How would you identify affected pipelines and deploy a safe credential rotation strategy?
+* Your enterprise needs high availability, regional disaster recovery, image signing, vulnerability scanning, and controlled release promotion. How would you design the registry architecture and operating procedures?

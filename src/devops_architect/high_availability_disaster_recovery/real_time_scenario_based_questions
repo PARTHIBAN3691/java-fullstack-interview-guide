@@ -1,0 +1,102 @@
+
+**High Availability Architecture**
+* Your Spring Boot application is deployed across multiple instances, but a failure in the shared database makes the entire application unavailable. How would you identify the architectural single point of failure, restore service, and improve end-to-end availability?
+* A deployment introduces a configuration defect that causes every instance to fail health checks. How would you contain the incident, recover the previous version, and prevent a similar correlated failure?
+* Your application servers are healthy, but customers cannot complete transactions because a shared identity service is unavailable. How would you assess the blast radius, preserve safe functionality, and improve dependency resilience?
+* Your service meets its infrastructure availability target but repeatedly misses business transaction targets. How would you improve health indicators, monitoring, and service-level objectives?
+
+**Active-Active**
+* Two regions accept payments simultaneously during a network partition, resulting in conflicting updates to the same account. How would you contain the issue, reconcile data, and prevent recurrence?
+* Both regions remain healthy, but traffic shifts unevenly and overloads one region. How would you diagnose routing behavior and rebalance capacity?
+* A client retries a request after a regional timeout, and both regions process it. How would you establish idempotency and verify that duplicate business effects are eliminated?
+* An active-active deployment introduces replication conflicts after a new application version changes the data model. How would you restore compatibility and safely roll out schema changes?
+
+**Active-Passive**
+* The primary region fails, but the standby cannot serve production traffic because its capacity is too low. How would you recover service and redesign standby-capacity validation?
+* The standby is promoted, then the original primary reconnects and begins accepting writes. How would you stop split-brain and reconcile any divergent transactions?
+* A warm standby passes health checks but uses outdated secrets and configuration. How would you restore the environment and make readiness checks validate operational dependencies?
+* Failback causes a second outage because the original primary is behind the active standby. How would you synchronize data, validate consistency, and execute a safer failback?
+
+**Multi-AZ**
+* One availability zone fails during peak traffic, and the surviving zones experience CPU and database saturation. How would you stabilize the system and correct capacity assumptions?
+* The application remains available after losing a zone, but latency increases significantly. How would you identify cross-zone calls, network bottlenecks, and resource contention?
+* A shared deployment change breaks instances in every availability zone at the same time. How would you reduce correlated failures through rollout controls and configuration validation?
+* The database fails over successfully, but applications continue using connections to the old primary. How would you restore database connectivity and verify transaction integrity?
+
+**Multi-Region**
+* A region becomes unavailable, and global traffic routing switches users to another region, which then becomes overloaded. How would you control traffic, prioritize essential requests, and restore stable operation?
+* Regional health checks report healthy status even though users cannot complete transactions because a regional dependency is failing. How would you improve end-to-end health evaluation?
+* Cross-region replication falls behind during peak traffic. A regional failure then causes more data loss than the agreed RPO. How would you investigate the replication bottleneck and improve recovery guarantees?
+* A regional network partition leaves both regions running. How would you determine which region can accept writes and safely restore normal multi-region operation?
+
+**Disaster Recovery**
+* A production region is lost, and the business requires recovery within 30 minutes with no more than five minutes of data loss. How would you execute the recovery plan, verify the objectives, and document gaps?
+* The DR environment is available, but the team cannot deploy because the primary CI/CD platform is down. How would you restore service using independent recovery artifacts and procedures?
+* A ransomware incident affects production and its replicated data. How would you select a clean recovery point and validate the restored environment before reconnecting users?
+* The application is running in the recovery region, but customers cannot complete workflows because the message broker and identity dependencies were not restored. How would you identify recovery-order gaps and improve dependency orchestration?
+
+**Backup Strategies**
+* A scheduled backup reports success, but a restore attempt reveals missing transaction logs. How would you determine the affected recovery window, restore service, and improve backup validation?
+* An attacker deletes backups using compromised production credentials. How would you recover and redesign account separation, immutability, and access controls?
+* Backups are retained for 30 days, but a data-corruption issue is discovered after 45 days. How would you address the recovery gap and define a suitable retention policy?
+* Database backups succeed, but associated object-storage data and configuration cannot be restored to a consistent point. How would you coordinate cross-system backups and recovery checkpoints?
+
+**Restore Strategies**
+* A database restoration takes six hours, exceeding the business RTO of one hour. How would you reduce recovery time and validate the improved approach?
+* The database has been restored, but replaying transaction logs causes duplicate business events. How would you reconcile the data and make recovery replay safe?
+* A restored application cannot decrypt historical records because the required key is unavailable. How would you recover securely and prevent the dependency from being missed in future drills?
+* The restored database passes technical checks but contains inconsistent balances across related records. How would you validate business invariants and determine whether further recovery is required?
+
+**RPO**
+* A database replica has a seven-minute replication lag, but the agreed RPO is five minutes. What actions would you take before and during a failover, and how would you close the gap?
+* Backups meet the database RPO, but events in the message broker are several hours behind. How would you identify the mismatch and establish recovery objectives for each data store?
+* The team reports that the RPO was met, but some transactions committed just before the outage are missing. How would you measure actual data loss and correct the reporting process?
+* Replication is paused during maintenance and a failure occurs unexpectedly. How would you determine the actual recovery point and communicate the business impact?
+
+**RTO**
+* An outage takes 45 minutes to detect, 20 minutes to approve failover, and 30 minutes to restore the database. The RTO is 60 minutes. How would you analyze the timeline and prioritize improvements?
+* Automated failover completes within the target, but customer transactions remain unavailable because DNS and client connections have not recovered. How would you measure end-to-end RTO and reduce the remaining delay?
+* Infrastructure is restored quickly, but application validation takes several hours because tests are manual. How would you automate recovery validation without weakening correctness checks?
+* The team meets the RTO during one drill but misses it during the next. How would you identify variability and make recovery performance more predictable?
+
+**Disaster Recovery Testing**
+* A DR drill successfully promotes the standby database, but no one verifies payment processing or event delivery. How would you expand the test to validate complete business functionality?
+* A recovery drill accidentally routes production traffic to the test environment. How would you contain the impact and introduce stronger isolation and safety checks?
+* Every DR test finds missing permissions, secrets, or network rules. How would you establish ownership and prove corrective actions remain effective?
+* The recovery plan has never been tested without access to the primary region. How would you conduct a controlled exercise that validates independent recovery capability?
+
+**Failover**
+* Failover redirects traffic successfully, but in-flight requests are duplicated after clients retry. How would you determine which operations completed and implement safe idempotent recovery?
+* The database primary fails during a write transaction, and the client receives a timeout. How would you establish the transaction outcome before allowing a retry?
+* Failover succeeds, but background workers in both environments process the same queue. How would you prevent duplicate consumers or conflicting job ownership?
+* Failback begins before replication has caught up, causing data loss. How would you stop the process, reconcile state, and introduce explicit readiness gates?
+
+**Automatic Failover**
+* A transient network issue triggers repeated automatic failovers. How would you tune health signals, thresholds, and stabilization windows while maintaining acceptable recovery time?
+* The failover controller promotes a standby even though the primary is still accepting writes. How would you introduce fencing and single-writer guarantees?
+* Automatic database promotion succeeds, but the routing update fails. How would you make the workflow recoverable, idempotent, and observable?
+* Two recovery controllers execute simultaneously after a control-plane interruption. How would you prevent conflicting actions and safely resume automation?
+
+**Database Replication**
+* A primary database fails while its replica is several seconds behind. How would you decide whether to promote it, estimate potential data loss, and reconcile missing transactions?
+* Read replicas become heavily lagged during peak traffic, causing users to see outdated records. How would you adjust routing and consistency behavior?
+* A schema migration causes replication to fail, and the DR replica stops receiving updates. How would you restore replication without compromising data integrity?
+* After a failover, database writes succeed but application reads return stale data. How would you identify replica-routing and consistency issues?
+
+**Cross-Region Replication**
+* Cross-region replication falls behind because transaction volume doubles. How would you distinguish bandwidth limits from source or target processing constraints and restore the required RPO?
+* The primary region becomes isolated but continues accepting writes, while the DR region is promoted. How would you prevent split-brain and reconcile regional divergence?
+* Object replication reports success, but the DR application cannot access the replicated objects because permissions and encryption settings differ. How would you correct the recovery configuration?
+* A region fails while replication is paused for maintenance. How would you recover using the latest safe checkpoint and improve maintenance safeguards?
+
+**Backup Encryption**
+* The production account is compromised, and the attacker disables the KMS key used by backups. How would you regain recovery capability and improve separation of key administration?
+* A DR exercise fails because the recovery account lacks permission to decrypt backups. How would you fix the access model and test the entire restore path?
+* A key-rotation change makes older backups inaccessible. How would you restore historical data and redesign key lifecycle management?
+* Backups are encrypted, but the encryption keys and recovery credentials are stored in the same compromised environment. How would you reduce the shared blast radius?
+
+**Business Continuity**
+* A cloud-region outage interrupts order processing, payments, and customer support tools. How would you prioritize business functions and communicate the recovery plan?
+* A critical third-party payment provider is unavailable for several hours. How would you preserve business operations without creating duplicate payments or unsafe financial decisions?
+* Engineering restores the application, but the business team cannot reconcile transactions that occurred during the outage. How would you coordinate technical recovery and business reconciliation?
+* A disaster affects both the primary office and the primary cloud region. How would you activate alternate working procedures, independent access, and communication channels?

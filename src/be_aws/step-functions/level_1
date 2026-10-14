@@ -1,0 +1,21 @@
+
+* How do you create a state machine using the AWS Management Console?
+* How do you define a Step Functions workflow using Amazon States Language (ASL)?
+* How do you start a Step Functions execution using AWS SDK for Java v2?
+* How do you retrieve the execution status of a Step Functions workflow from Java?
+* How do you pass input data to a state machine execution?
+* How do you access and transform JSON data between states using `InputPath`, `Parameters`, `ResultPath`, and `OutputPath`?
+* What is the difference between `Retry` and `Catch` in Step Functions?
+* How do you implement retry policies with exponential backoff?
+* How do you handle failures in a multi-step workflow?
+* How do you implement conditional branching using a Choice state?
+* How do you execute multiple tasks concurrently using a Parallel state?
+* What is the difference between Inline Map and Distributed Map?
+* How do you invoke a Lambda function directly from a Step Functions workflow?
+* How do you integrate Step Functions with Amazon SQS and SNS?
+* How do you invoke an AWS service API directly from a Task state without using Lambda?
+* How do you configure IAM execution roles for Step Functions?
+* How do you pass execution input and task results between workflow states?
+* How do you configure timeouts for tasks and state machine executions?
+* How do you monitor workflow executions using Amazon CloudWatch and AWS X-Ray?
+* How do you test and debug a Step Functions workflow locally or in AWS?

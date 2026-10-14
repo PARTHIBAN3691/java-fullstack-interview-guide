@@ -1,0 +1,26 @@
+* Write a Jenkins Declarative Pipeline that checks out a Java project, builds it using Gradle or Maven, runs unit tests, packages the application, and archives the artifact.
+* Write a GitHub Actions workflow that builds a Java Spring Boot application and runs unit tests for every pull request targeting the main branch.
+* Write a GitLab CI/CD YAML configuration with separate build, test, security-scan, artifact-publishing, and deployment stages.
+* Write an Azure Pipelines YAML definition that builds a Java application, publishes its artifact, and deploys it to a staging environment.
+* Define an AWS CodePipeline workflow that integrates source retrieval, automated build and test, manual production approval, and deployment.
+* Write a pipeline script that promotes the same versioned artifact from testing to staging and production without rebuilding it.
+* Write a shell script that validates required environment variables and credentials before starting a deployment.
+* Write a script that verifies an artifact's checksum against an approved checksum file before deployment.
+* Implement a script that detects a failed health check after deployment and triggers rollback to the previous stable application version.
+* Write a pipeline script that executes independent test suites in parallel and combines their results into a final quality-gate decision.
+* Write a script that identifies the slowest stages from pipeline execution logs and generates a performance report.
+* Implement a cache-key strategy for Java dependencies based on build files and runtime versions, and document when the cache should be invalidated.
+* Write a script that prevents concurrent deployments of the same service to the same environment.
+* Write a pipeline validation script that fails when a dependency scan report contains vulnerabilities above a configurable severity threshold.
+* Write a script that scans pipeline configuration files for hardcoded secrets and reports their locations without printing secret values.
+* Write a script that verifies an artifact's signature and provenance before allowing production deployment.
+* Write a script that compares the currently deployed application version with the intended release version and reports version drift.
+* Write a deployment script that performs a rolling update in batches and verifies service health after each batch.
+* Write a script that implements a configurable manual-approval timeout and safely stops a deployment if approval is not received.
+* Write a pipeline script that validates mandatory metadata such as source commit, build number, artifact version, and release identifier.
+* Write a script that determines which application modules require testing based on changed files in a monorepo.
+* Write a script that detects recursive pipeline triggers caused by commits created by the pipeline itself.
+* Write a cleanup script that removes expired build artifacts while preserving the latest releases and artifacts referenced by active deployments.
+* Write a script that collects build duration, queue time, test failure rate, deployment failure rate, and rollback frequency from pipeline records.
+* Write a Kubernetes deployment validation script that checks readiness status, rollout completion, and recent application error rates before marking a release successful.
+* Write a pipeline configuration that builds a container image, scans it for vulnerabilities, tags it with an immutable version, and

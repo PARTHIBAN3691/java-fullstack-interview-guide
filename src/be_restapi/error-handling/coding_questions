@@ -1,0 +1,30 @@
+* Write a Java method that throws a custom exception when a requested employee does not exist.
+* Create a ResourceNotFoundException class and use it in a Spring Boot REST API.
+* Implement global exception handling using @RestControllerAdvice and @ExceptionHandler.
+* Write a standard ErrorResponse DTO containing timestamp, status, error code, message, and path.
+* Implement a global handler that returns HTTP 404 for ResourceNotFoundException.
+* Write a handler that returns HTTP 409 when a duplicate record is created.
+* Implement request validation using @Valid and return field-level validation errors.
+* Write a global exception handler for MethodArgumentNotValidException.
+* Handle malformed JSON requests and return a consistent HTTP 400 response.
+* Implement an exception handler for missing request parameters and invalid parameter types.
+* Create a custom BusinessException class that contains a business error code and HTTP status.
+* Write a Spring Boot controller that returns different HTTP status codes for different failure scenarios.
+* Implement a handler that maps database constraint violations to appropriate API error responses.
+* Write a Java service that distinguishes missing database records from database connectivity failures.
+* Implement WebClient error handling for downstream HTTP 4xx and 5xx responses.
+* Write a WebClient request that applies a timeout and converts timeout failures into a controlled API error.
+* Implement retry logic with exponential backoff for transient downstream failures.
+* Write a service that combines retries and circuit-breaker behavior using Resilience4j.
+* Implement an idempotent payment endpoint that prevents duplicate processing after client retries.
+* Write a Spring Security configuration that returns consistent JSON responses for authentication and authorization failures.
+* Implement a correlation ID filter that adds a request ID to logs and error responses.
+* Write a global exception handler that logs internal details while returning safe messages to clients.
+* Implement a ProblemDetail response for validation failures using Spring Boot.
+* Write JUnit tests for a service that throws custom business exceptions.
+* Write MockMvc tests that verify HTTP 400, 401, 403, 404, 409, and 500 responses.
+* Implement tests that verify unexpected exceptions never expose stack traces or sensitive information.
+* Write a service that handles optimistic locking failures and returns HTTP 409 Conflict.
+* Implement error handling for an asynchronous job and expose its failure status through a status endpoint.
+* Write an integration test that simulates a downstream service timeout and verifies the fallback response.
+* Build a complete Spring Boot REST API error-handling module with custom exceptions, Problem Details responses, validation handling, WebClient error mapping, correlation IDs, retry policies, secure logging, and automated tests.

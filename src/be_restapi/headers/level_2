@@ -1,0 +1,30 @@
+* How does HTTP header processing differ between HTTP/1.1, HTTP/2, and HTTP/3?
+* What are the security risks associated with trusting client-supplied headers?
+* How can HTTP request smuggling occur due to conflicting message-framing headers?
+* Why can conflicting Content-Length and Transfer-Encoding headers be dangerous?
+* How do you prevent HTTP response splitting vulnerabilities?
+* How can attackers exploit improperly validated forwarding headers?
+* What is the difference between Forwarded and X-Forwarded-For?
+* How should an application determine the original client IP behind multiple proxies?
+* How do you configure trusted proxy handling securely?
+* How do security headers help protect REST API consumers?
+* What are the purposes of Strict-Transport-Security, X-Content-Type-Options, and Content-Security-Policy?
+* How do Cache-Control directives such as no-store, private, and public differ?
+* How do Vary headers influence shared-cache behavior?
+* How can incorrect Vary headers cause cache poisoning or data leakage?
+* How do conditional requests using If-Modified-Since and Last-Modified work?
+* How do ETag-based conditional requests reduce bandwidth and improve consistency?
+* How would you design an idempotency mechanism using request headers?
+* What are the limitations of using custom headers for API versioning?
+* How do you handle header propagation across asynchronous service boundaries?
+* How do distributed tracing headers such as traceparent and tracestate work?
+* How would you prevent trace-context spoofing or abuse?
+* What are the implications of large HTTP headers on server memory and performance?
+* How do you configure maximum header sizes at the application, proxy, and gateway layers?
+* How do duplicate headers affect security-sensitive processing?
+* How should a REST API handle deprecated or unsupported headers?
+* How do you design a consistent header policy across microservices?
+* How do HTTP headers interact with TLS termination at a load balancer?
+* How can header normalization differences between gateways and applications create vulnerabilities?
+* How do you prevent authentication and authorization decisions from relying on spoofable headers?
+* How would you troubleshoot intermittent failures caused by headers being stripped or rewritten?

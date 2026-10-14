@@ -1,0 +1,15 @@
+* A production REST API experiences long response-time spikes during garbage collection. How would you evaluate whether Shenandoah GC could improve latency?
+* An application uses Shenandoah GC, but its CPU utilization increases significantly after deployment. How would you investigate the cause?
+* Shenandoah GC reports recurring degenerated cycles under peak traffic. What metrics and log entries would you examine?
+* A service experiences `OutOfMemoryError` even though Shenandoah GC is running frequently. How would you investigate heap occupancy and allocation pressure?
+* An application has a large live-data set and experiences high memory usage under Shenandoah GC. How would you determine whether the heap is appropriately sized?
+* A service has low GC pause times but reduced throughput after switching to Shenandoah GC. How would you identify the source of overhead?
+* Shenandoah GC frequently starts new cycles because the application allocates objects rapidly. How would you investigate and tune the application?
+* A latency-sensitive application runs in a container with strict CPU limits. How would you determine whether Shenandoah GC is appropriate for the environment?
+* An application experiences degenerated GC after running successfully for several hours. How would you distinguish an allocation-rate problem from insufficient heap capacity?
+* GC logs show that concurrent marking and evacuation consume substantial CPU time. How would you reduce the impact on application performance?
+* A service has predictable low latency with G1 GC but uses more CPU with Shenandoah GC. How would you decide which collector to retain?
+* After switching to Shenandoah GC, average response time improves but p99 latency remains high. How would you investigate the remaining latency spikes?
+* A Java application has frequent large object allocations and cannot maintain stable GC cycle times. How would you investigate the allocation pattern?
+* A production application experiences memory pressure despite low stop-the-world pause durations. How would you investigate reserve-space requirements and concurrent collection progress?
+* You need to choose between Shenandoah GC, ZGC, and G1 GC for a high-throughput service with strict latency targets. How would you design a fair comparison?

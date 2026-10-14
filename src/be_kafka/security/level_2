@@ -1,0 +1,30 @@
+* Explain the complete authentication and authorization flow when a Kafka client connects to a broker.
+* How does SASL authentication differ from TLS client certificate authentication?
+* How does Kafka map an authenticated identity to an authorization principal?
+* How would you design Kafka security for hundreds of microservices across multiple environments?
+* How would you implement least-privilege ACLs for producers, consumers, and administrative applications?
+* How would you design certificate issuance, renewal, and revocation for a large Kafka cluster?
+* How would you rotate TLS certificates without causing a prolonged production outage?
+* How would you rotate SASL credentials without interrupting producers and consumers?
+* How would you migrate from PLAINTEXT to SASL_SSL with minimal downtime?
+* How would you enforce encryption in transit across all Kafka listeners?
+* How would you protect Kafka credentials in Kubernetes deployments?
+* How would you integrate Kafka authentication with an enterprise identity provider?
+* How does OAuth 2.0 bearer-token authentication work with Kafka?
+* How would you handle OAuth token expiry and renewal in a long-running Kafka client?
+* How would you secure Kafka across multiple trust boundaries or business units?
+* How would you isolate tenants using ACLs, separate clusters, or separate listeners?
+* How would you prevent unauthorized applications from consuming sensitive payment events?
+* How would you secure inter-broker communication independently from client connections?
+* How would you distinguish broker authentication failures from authorization failures?
+* How would you investigate a principal that authenticates successfully but cannot access a topic?
+* What security risks arise from granting broad cluster-level ACL permissions?
+* How would you securely manage superuser credentials and administrative access?
+* How would you design audit logging for security-sensitive Kafka operations?
+* How would you detect brute-force attempts or repeated authentication failures?
+* How would you secure Kafka metadata, topic names, consumer groups, and administrative operations?
+* How would you protect data at rest in Kafka log directories and backups?
+* How would you manage encryption keys and certificate secrets across development, staging, and production?
+* How would you securely integrate Kafka with Schema Registry, Kafka Connect, and Kafka Streams?
+* How would you perform a security assessment of a Kafka cluster before production deployment?
+* How would you design a disaster recovery strategy that preserves Kafka security configurations and identities?

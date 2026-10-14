@@ -1,0 +1,30 @@
+* A Java Cloud Function works locally but fails after deployment. How would you investigate runtime configuration, dependencies, permissions, and logs?
+* An HTTP-triggered function returns HTTP 403 even though the caller is a valid application. How would you troubleshoot IAM authentication and identity tokens?
+* A Pub/Sub-triggered function processes the same message multiple times. How would you prevent duplicate business operations?
+* A function processes payment events, but retries occasionally create duplicate transactions. How would you redesign the processing flow?
+* A Cloud Storage-triggered function fails when a large file is uploaded. How would you investigate memory limits, execution time, and file-processing strategy?
+* An event-driven function repeatedly fails because a downstream API is unavailable. How would you configure retries, backoff, and dead-letter handling?
+* A sudden traffic spike causes database connection exhaustion. How would you control concurrency and protect the database?
+* A Java function experiences high cold-start latency after deployment. How would you investigate and reduce startup overhead?
+* A function's execution time increases significantly after a new dependency is added. How would you identify the performance bottleneck?
+* An HTTP function times out while calling several downstream services. How would you investigate network latency, blocking calls, and timeout configuration?
+* A function writes data to BigQuery, but some records are missing after successful invocations. How would you investigate asynchronous operations and error handling?
+* Two events for the same customer arrive simultaneously and update the same record. How would you prevent race conditions and inconsistent state?
+* A function receives events in a different order from the order in which they were generated. How would you handle ordering requirements?
+* A new deployment introduces errors for a subset of requests. How would you diagnose the issue and roll back safely?
+* A runtime service account suddenly loses access to Cloud Storage after an IAM policy change. How would you investigate and restore least-privilege access?
+* A function needs to access a private API hosted in a VPC. How would you configure networking and connectivity?
+* A scheduled function sometimes runs longer than its expected interval, causing overlapping executions. How would you prevent duplicate processing?
+* A function contains a hardcoded API key discovered during a security review. What immediate remediation and long-term changes would you make?
+* A function is repeatedly retried even though its errors are permanent, such as invalid input. How would you distinguish retryable and non-retryable failures?
+* A function processes messages successfully but fails to acknowledge or complete event processing correctly. How would you investigate event delivery and retry behavior?
+* An application needs to process a 10 GB file, but the function cannot handle the workload within its resource limits. How would you redesign the architecture?
+* A Cloud Function invokes another function and experiences intermittent authentication failures. How would you configure service-to-service authentication?
+* An organization needs to process millions of Pub/Sub messages while maintaining predictable latency and cost. How would you design scaling and concurrency controls?
+* A function deployment succeeds, but monitoring shows no invocations despite incoming events. How would you troubleshoot triggers, event routing, and subscriptions?
+* A team wants to migrate a Java Spring Boot service to Cloud Functions. How would you evaluate framework compatibility, startup overhead, and request-processing requirements?
+* A function processes records from an external API, but rate limits cause frequent failures. How would you implement throttling and controlled retries?
+* An event processing pipeline must guarantee that failed messages can be investigated and replayed later. How would you implement dead-letter handling and replay?
+* A production function starts generating excessive logs and increasing logging costs. How would you improve log levels, sampling, and observability?
+* A function must update a database and publish a message, but the second operation fails after the first succeeds. How would you prevent inconsistent business state?
+* A company requires highly available event processing across regions. How would you design regional failover, duplicate protection, and recovery procedures?

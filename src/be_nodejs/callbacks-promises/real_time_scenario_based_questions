@@ -1,0 +1,30 @@
+* A Node.js application contains deeply nested callbacks that are difficult to maintain. How would you refactor the code?
+* A callback-based database operation sometimes returns an error but continues executing subsequent logic. How would you troubleshoot it?
+* A callback is accidentally invoked twice, resulting in duplicate database updates. How would you prevent this?
+* A Promise chain stops executing after one operation fails. How would you identify where the error is lost?
+* A Promise rejection is not caught by the surrounding error handler. What could cause this, and how would you fix it?
+* An API response is sent before a Promise-based database operation finishes. How would you correct the control flow?
+* A service calls three independent APIs sequentially and has high response latency. How would you optimize it using Promises?
+* A Promise.all() workflow fails when one task rejects, but the remaining results are still needed. How would you redesign it?
+* A batch job processes thousands of records using Promise.all() and exhausts database connections. How would you limit concurrency?
+* A third-party callback API must be integrated into a Promise-based codebase. How would you wrap it safely?
+* A legacy function sometimes invokes its callback synchronously and sometimes asynchronously, causing unpredictable behavior. How would you make it consistent?
+* A Promise-based HTTP request times out, but the underlying request continues consuming resources. How would you solve this?
+* A payment operation is retried after a timeout and creates duplicate transactions. How would you prevent duplicate side effects?
+* A Promise chain contains several catch() handlers, and an error is accidentally swallowed. How would you redesign the error handling?
+* A cleanup operation must run regardless of whether an asynchronous task succeeds or fails. How would you implement it?
+* A background job must retry failed tasks but stop after a maximum number of attempts. How would you implement the retry workflow?
+* A callback-based file API is being migrated to fs/promises, but existing consumers still depend on callbacks. How would you manage the migration?
+* A Promise-based workflow must cancel remaining network requests when a critical step fails. How would you implement cancellation?
+* A service combines EventEmitter events with Promise-based operations and occasionally misses an event. How would you investigate the issue?
+* Two asynchronous operations update the same record and produce inconsistent data. How would you coordinate their execution?
+* A Promise-based task queue grows indefinitely during a traffic spike. How would you apply backpressure and concurrency control?
+* An API aggregates results from multiple services, some of which fail intermittently. How would you return partial results and report errors?
+* A Promise returned by a nested function is not returned by its caller, causing unexpected execution order. How would you diagnose the problem?
+* A production service experiences an increase in unhandled rejections after a deployment. How would you investigate the regression?
+* A Promise.finally() cleanup handler throws an error and changes the final outcome of the operation. How would you handle this safely?
+* A legacy callback API returns results through both an event and a callback. How would you prevent duplicate processing?
+* A service must call downstream APIs with a concurrency limit and a per-request timeout. How would you design the workflow?
+* Unit tests for Promise-based code pass individually but fail intermittently when executed together. How would you troubleshoot timing and shared-state issues?
+* A file-processing workflow must execute steps in order, retry transient failures, and clean up temporary files on permanent failure. How would you structure the Promises?
+* You must refactor a large callback-driven Node.js service into Promises without changing its external API behavior. How would you plan and test the migration?

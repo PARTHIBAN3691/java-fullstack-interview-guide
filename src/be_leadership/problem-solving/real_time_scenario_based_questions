@@ -1,0 +1,30 @@
+* A Spring Boot application suddenly starts returning HTTP 500 errors in production. How would you investigate the issue?
+* A Java service experiences high CPU utilization after a new release. How would you identify the root cause?
+* Your application runs normally for several hours and then crashes with an OutOfMemoryError. How would you troubleshoot it?
+* A production API becomes slow, but CPU and memory utilization appear normal. What would you investigate?
+* Two microservices disagree about the status of a customer transaction. How would you identify the source of inconsistency?
+* A payment request is processed twice because of a retry mechanism. How would you investigate and prevent recurrence?
+* A database connection pool becomes exhausted during peak traffic. How would you diagnose and resolve the problem?
+* A scheduled Java job occasionally processes the same records multiple times. How would you identify the cause?
+* A production issue cannot be reproduced in the development or test environments. How would you approach troubleshooting?
+* Your team encounters intermittent deadlocks after introducing parallel processing. How would you investigate the issue?
+* A new deployment causes response times to increase significantly, but error rates remain low. What steps would you take?
+* A downstream service becomes unavailable and causes failures across multiple dependent services. How would you contain the impact?
+* A bug affects only a small percentage of users and cannot be reproduced consistently. How would you narrow down the problem?
+* A developer proposes a quick fix for a critical production defect, while another recommends a larger refactoring. How would you decide?
+* Two teams blame each other for an integration failure. How would you lead the investigation?
+* A production incident occurs during a major customer demonstration. How would you prioritize actions and communicate with stakeholders?
+* A recent Java upgrade causes unexpected garbage collection pauses. How would you identify and address the regression?
+* Your team repeatedly fixes the same category of defect. How would you determine why previous fixes were ineffective?
+* An API works correctly under normal traffic but fails during peak load. How would you reproduce and diagnose the problem?
+* A developer changes a shared utility class, causing failures in several unrelated modules. How would you identify the impact and prevent recurrence?
+* A critical incident has no clear owner because multiple teams share responsibility for the service. How would you coordinate resolution?
+* A database migration succeeds technically but causes incorrect business data. How would you contain the issue and restore consistency?
+* Monitoring shows increased latency, but application logs contain no obvious errors. What additional diagnostic techniques would you use?
+* A hotfix resolves a production issue but introduces a regression in another feature. How would you manage recovery and improve the release process?
+* Your team must choose between temporarily disabling a feature and accepting a known production risk. How would you make the decision?
+* A recurring memory leak is suspected, but heap dumps are inconclusive. What additional evidence would you collect?
+* A critical service experiences cascading failures because retries amplify downstream traffic. How would you redesign the failure-handling approach?
+* Business stakeholders demand an immediate fix, but the root cause is not yet confirmed. How would you manage expectations and technical risk?
+* A developer claims that increasing server resources will fix a performance issue. How would you verify whether that is the right solution?
+* After resolving a major incident, how would you lead the post-incident review and ensure that corrective actions are completed?

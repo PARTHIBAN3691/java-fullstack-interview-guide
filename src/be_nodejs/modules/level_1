@@ -1,0 +1,30 @@
+* Explain the complete process of creating and exporting a custom Node.js module.
+* How does module.exports work internally?
+* What happens if you assign a new object to exports?
+* Why does assigning exports = {} not replace module.exports?
+* Can a Node.js module export a class? Explain with an example.
+* How do you export and import constants from a custom module?
+* How do you share utility functions across multiple Node.js files?
+* How does Node.js resolve a module when require() is called?
+* What are the steps involved in Node.js module resolution?
+* What is the difference between relative and absolute module paths?
+* How does Node.js locate modules inside the node_modules directory?
+* What happens if a required module cannot be found?
+* How does module caching improve application performance?
+* How can you remove a module from require.cache?
+* What are the risks of modifying require.cache?
+* What is the difference between CommonJS and ECMAScript modules?
+* How do you enable ES modules in a Node.js project?
+* What is the purpose of the type field in package.json?
+* What is the difference between .js, .cjs, and .mjs files?
+* How do you use import and export in ES modules?
+* What is the difference between named exports and default exports?
+* How do you import a specific named export from another module?
+* How do you rename an imported export?
+* What is a circular dependency in Node.js?
+* What problems can circular dependencies cause?
+* How can you avoid circular dependencies in a Node.js application?
+* How do you use dynamic import() in Node.js?
+* What is the difference between static import and dynamic import?
+* How do you import JSON files in CommonJS and ES modules?
+* How do you organize modules in a large Node.js application?

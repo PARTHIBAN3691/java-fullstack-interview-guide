@@ -1,0 +1,30 @@
+* Explain the internal architecture of Kafka transactions, including the transaction coordinator and transaction log.
+* How does Kafka achieve atomic writes across multiple partitions?
+* How does Kafka provide exactly-once semantics for consume-transform-produce workflows?
+* What is the difference between Kafka's exactly-once semantics and end-to-end exactly-once business processing?
+* How does Kafka use producer IDs, epochs, and sequence numbers to support transactional processing?
+* What is a producer epoch, and how does it help fence zombie producers?
+* How does transactional.id provide recovery and fencing across producer restarts?
+* How does Kafka distinguish between committed, aborted, and ongoing transactions?
+* Explain the relationship between the transaction coordinator, partition leaders, and transaction markers.
+* What happens internally when a Kafka transaction is committed?
+* What happens internally when a Kafka transaction is aborted?
+* How does the Last Stable Offset prevent read_committed consumers from observing incomplete transactions?
+* What are the performance trade-offs of enabling Kafka transactions?
+* How does transaction size affect throughput, latency, and broker resource utilization?
+* How would you choose transaction.timeout.ms for a high-throughput application?
+* What are the risks of keeping Kafka transactions open for too long?
+* How do transaction coordinator failures affect active transactions?
+* How does Kafka recover transactions after a broker restart?
+* What happens when the transaction coordinator becomes unavailable during commit?
+* How do you design retries when the outcome of commitTransaction() is uncertain?
+* How do Kafka transactions interact with partition reassignment and leader elections?
+* How do transactions interact with consumer group rebalancing and offset management?
+* How would you design exactly-once processing for a Kafka Streams application?
+* What is the difference between Kafka Streams EOS v2 and manually managed producer transactions?
+* How do you handle transactions that span multiple input and output partitions?
+* Why can Kafka transactions not atomically commit changes to an external relational database?
+* How would you combine Kafka transactions with the transactional outbox pattern?
+* How would you design a reliable workflow involving Kafka, a database, and an external payment API?
+* How do transaction markers affect log retention and log compaction?
+* What monitoring metrics would you use to detect transaction coordinator bottlenecks and transaction failures?

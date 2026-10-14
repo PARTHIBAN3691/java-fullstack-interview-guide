@@ -1,0 +1,30 @@
+* Write a Kubernetes Service YAML that exposes a Spring Boot application internally using ClusterIP.
+* Write a Deployment and Service YAML for a Spring Boot application listening on port 8080.
+* Write a NodePort Service YAML that exposes a Spring Boot application on a specified node port.
+* Write a LoadBalancer Service YAML for an application that must be accessed externally.
+* Write an Ingress YAML that routes requests for api.example.com to a Spring Boot Service.
+* Write an Ingress YAML that routes /orders and /payments to two different backend Services.
+* Write an Ingress YAML that enables HTTPS using a Kubernetes TLS Secret.
+* Write a Kubernetes Service YAML that selects Pods using multiple labels.
+* Write a Service YAML that maps external port 80 to application port 8080.
+* Write a headless Service YAML for a StatefulSet.
+* Write a StatefulSet and headless Service YAML for a clustered Java application.
+* Write a NetworkPolicy that allows ingress traffic only from Pods with a specific label.
+* Write a NetworkPolicy that allows traffic to a Spring Boot application only from a designated namespace.
+* Write a default-deny ingress NetworkPolicy for a namespace.
+* Write a default-deny egress NetworkPolicy while permitting DNS queries.
+* Write a NetworkPolicy that allows a Java application to connect to a database on TCP port 5432.
+* Write a NetworkPolicy that permits ingress on port 8080 only from selected application Pods.
+* Write a NetworkPolicy that allows egress only to selected Pods and a required TCP port.
+* Write a Kubernetes manifest that configures an application to call another Service using its fully qualified DNS name.
+* Write a Spring Boot configuration that externalizes a downstream Service URL using an environment variable.
+* Write a Java program using Spring WebClient to call another microservice through its Kubernetes Service DNS name.
+* Write a Java health-check client that distinguishes DNS resolution failures from HTTP error responses.
+* Write a Java retry mechanism for transient downstream connection failures with a maximum retry count.
+* Write a Java WebClient configuration with connection and response timeouts for calls between microservices.
+* Write a Java integration test that verifies connectivity to a mock downstream HTTP service.
+* Write a shell command sequence to inspect a Service, its endpoints, and its selected Pods.
+* Write a shell command sequence to test DNS resolution and TCP connectivity from a temporary diagnostic Pod.
+* Write a Kubernetes manifest for a temporary diagnostic Pod containing network troubleshooting utilities.
+* Write a manifest that configures readiness and liveness probes for a Spring Boot application exposed through a Service.
+* Write a Kubernetes configuration for a production microservice with internal Service exposure, TLS-enabled Ingress, and restricted NetworkPolicy access.

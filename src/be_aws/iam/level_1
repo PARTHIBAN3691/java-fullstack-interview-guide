@@ -1,0 +1,20 @@
+* Explain the structure of an AWS IAM policy document.
+* What are the `Effect`, `Action`, `Resource`, and `Condition` elements in an IAM policy?
+* What is the difference between identity-based and resource-based policies?
+* How do IAM policies attached to users, groups, and roles work?
+* How does AWS evaluate multiple IAM policies when determining access?
+* What is the difference between an explicit deny and an implicit deny?
+* How do IAM roles allow an EC2 instance to access an S3 bucket?
+* What is an instance profile, and how is it associated with an EC2 instance?
+* What is the difference between IAM roles and IAM users for application authentication?
+* What are temporary security credentials, and how do they differ from long-term credentials?
+* What is AWS Security Token Service (STS)?
+* How does the `AssumeRole` API work?
+* What is cross-account IAM role access?
+* What is the difference between a role trust policy and a permissions policy?
+* What are permission boundaries, and how do they restrict permissions?
+* What are service control policies (SCPs) in AWS Organizations?
+* What is the difference between an IAM policy and an SCP?
+* How can IAM conditions restrict access based on IP address, region, or resource tags?
+* How do IAM roles and policies support secure access from AWS Lambda?
+* How can you troubleshoot an `AccessDenied` error in AWS?

@@ -1,0 +1,30 @@
+* Explain the complete authentication lifecycle in Spring Security, from request arrival to authorization.
+* How does SecurityContextHolder manage the security context across a request?
+* What are the differences between ThreadLocal-based and explicit SecurityContext propagation?
+* How does Spring Security select and invoke an AuthenticationProvider?
+* How would you implement a custom authentication filter and integrate it into the security filter chain?
+* How do multiple SecurityFilterChain beans work, and how is the matching chain selected?
+* How would you design separate security policies for REST APIs, actuator endpoints, and browser-based applications?
+* How do request authorization rules interact with method-level security?
+* How would you implement fine-grained authorization based on user permissions and resource ownership?
+* How would you prevent insecure direct object reference (IDOR) vulnerabilities in a Spring Boot application?
+* How does Spring Security handle CSRF protection for session-based applications?
+* What security risks arise when disabling CSRF protection for browser-accessible APIs?
+* How would you implement secure cookie-based authentication with appropriate SameSite, Secure, and HttpOnly settings?
+* How do session fixation protection and concurrent session control work?
+* What are the trade-offs between stateful sessions and stateless JWT authentication?
+* How would you implement JWT validation using issuer, audience, expiry, and signature checks?
+* What are the security implications of JWT access-token expiration and refresh-token rotation?
+* How would you implement token revocation when JWTs are otherwise stateless?
+* What is the difference between JWT decoding and JWT validation?
+* How would you configure asymmetric signing keys and key rotation for JWT validation?
+* How does OAuth 2.0 Authorization Code flow with PKCE work?
+* What is the difference between OAuth 2.0 and OpenID Connect?
+* How would you implement role mapping from an external identity provider into Spring Security authorities?
+* How would you secure service-to-service communication using OAuth 2.0 client credentials?
+* How would you propagate authenticated identity across multiple microservices without blindly forwarding user tokens?
+* How would you prevent privilege escalation when implementing custom authorization logic?
+* What are the security implications of using custom authentication filters before or after standard Spring Security filters?
+* How would you avoid authentication bypasses caused by incorrect request matcher ordering?
+* How would you investigate authentication failures, authorization failures, and security-context propagation issues in production?
+* How would you design a defense-in-depth security architecture for a high-traffic Spring Boot application?

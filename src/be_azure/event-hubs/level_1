@@ -1,0 +1,30 @@
+* How would you create an Event Hubs namespace and event hub for a Java application?
+* How do you publish events to Azure Event Hubs using the Azure SDK for Java?
+* How do you configure an EventHubProducerClient in Java?
+* How do you send multiple events using EventDataBatch?
+* How do you configure an EventHubConsumerClient in Java?
+* How do you consume events from a specific partition?
+* How do you read events using a consumer group?
+* How do you configure multiple independent consumer applications for the same event hub?
+* How do you implement checkpointing in an Event Hubs consumer?
+* What is the purpose of the Azure Blob Storage checkpoint store?
+* How do you configure Blob Storage for checkpointing in a Java application?
+* How do you handle transient errors when publishing events?
+* How do you implement retries without causing duplicate business processing?
+* How do you choose an appropriate partition key for an event stream?
+* How does partition-key selection affect event ordering and load distribution?
+* How do you handle events that arrive with missing or invalid partition keys?
+* How do you scale event consumers when the incoming event volume increases?
+* How do you process events concurrently while preserving ordering requirements?
+* How do you configure Event Hubs Capture to store events in Azure Data Lake Storage?
+* How do you consume Event Hubs data using Azure Functions?
+* How do you integrate Azure Event Hubs with Azure Databricks?
+* How do you connect Kafka clients to Azure Event Hubs?
+* How do you authenticate Java applications to Event Hubs using Microsoft Entra ID?
+* How do you use managed identity instead of connection strings in Azure-hosted applications?
+* How do you configure role-based access control for Event Hubs producers and consumers?
+* How do you monitor incoming messages, outgoing messages, and throttling?
+* How do you identify and troubleshoot consumer lag?
+* How do you handle malformed events without stopping the consumer?
+* How do you manage event schemas when multiple producers and consumers are involved?
+* How would you configure Event Hubs for development, QA, and production environments?

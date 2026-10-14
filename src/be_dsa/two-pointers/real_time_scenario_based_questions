@@ -1,0 +1,30 @@
+* An e-commerce service receives a sorted list of product prices and must find two products whose combined price matches a customer's budget. How would you solve this efficiently?
+* A payment application needs to identify pairs of transactions whose combined amount equals a specified threshold. How would you handle duplicate amounts and duplicate transaction records?
+* A data-processing pipeline must remove duplicate values from a sorted dataset containing millions of records. How would you implement this with minimal extra memory?
+* A reporting service merges two large sorted datasets but cannot allocate another large array. How would you design the merge operation?
+* A monitoring system records temperature readings and must find the pair with the smallest difference. How would you solve it when the data is sorted?
+* A shopping application must recommend three products whose combined price is closest to a user's budget. How would you design the algorithm?
+* A logistics service needs to find three package weights whose total is below a shipping limit. How would you optimize the search?
+* A financial analytics system needs to count all triplets of transaction values whose total is below a specified threshold. How would you avoid a cubic-time solution?
+* A dashboard displays water levels between vertical barriers and needs to calculate the maximum capacity. How would you solve the container-with-most-water problem?
+* A rainfall analytics service stores elevation values and must calculate trapped rainwater without allocating an additional array. How would you use two pointers?
+* A data-cleaning service receives arrays containing zeros and nonzero values. How would you move zeros to the end while preserving the order of nonzero elements?
+* A color-sorting service receives an array containing only three category values. How would you sort it in one pass without using a library sort?
+* A text editor must determine whether a user-entered phrase is a palindrome while ignoring spaces, punctuation, and letter case. How would you implement the check?
+* A text-validation API allows one character deletion when validating palindromes. How would you determine whether an input meets this rule?
+* A source-code comparison tool must compare strings containing backspace markers without constructing fully processed copies. How would you solve this?
+* A database migration job must merge two sorted ID lists and identify their common IDs. How would you avoid unnecessary lookups and duplicate results?
+* A linked-list-based job queue may accidentally contain a cycle. How would you detect the cycle and identify its starting node?
+* A service must determine whether two linked lists eventually share the same node. How would you find the intersection efficiently?
+* A memory-constrained application must determine whether a singly linked list is a palindrome without copying its elements into another collection. How would you approach it?
+* A large array must be partitioned around a pivot before quicksort continues. How would you choose and move pointers to handle duplicate values correctly?
+* A search API needs the kth smallest value from two sorted data sources without combining their complete datasets. Which algorithm would you use?
+* A real-time analytics system must find the median of two sorted data streams represented as arrays. How would you minimize the search space?
+* A pricing engine needs to identify the minimum difference between prices from two independently sorted product catalogs. How would you solve it efficiently?
+* A service groups records satisfying a condition into one contiguous section with minimal swaps. How would you use a sliding window or two-pointer approach?
+* A string-processing service must find the longest substring without repeated characters. How would you maintain the pointer boundaries and character positions?
+* An API must find the smallest contiguous range of positive transaction amounts whose sum reaches a target. How would you solve it with a sliding window?
+* A system receives negative and positive numbers and needs to find a subarray with a target sum. Why might a basic sliding-window approach fail, and what alternative would you use?
+* A performance-critical Java service uses nested loops to compare sorted arrays and is too slow. How would you determine whether a two-pointer solution is applicable?
+* A team observes that a two-pointer algorithm skips valid results when duplicate values appear. How would you debug the pointer movement and prevent duplicate output?
+* A production algorithm uses two pointers but occasionally enters an infinite loop on boundary inputs. How would you investigate and test the termination conditions?

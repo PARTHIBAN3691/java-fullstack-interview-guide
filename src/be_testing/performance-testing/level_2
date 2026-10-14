@@ -1,0 +1,30 @@
+* How would you design a performance testing strategy for a large-scale Java application?
+* How do you determine the maximum sustainable throughput of an application?
+* How do you identify the saturation point of a system?
+* How do you distinguish CPU-bound, memory-bound, and I/O-bound workloads?
+* How would you investigate high P99 latency when average response time is normal?
+* How do you identify memory leaks using performance test results?
+* How do you diagnose excessive garbage collection during a performance test?
+* How do you analyze Java thread dumps during a performance investigation?
+* How do you use Java Flight Recorder for performance analysis?
+* How do you use JVM metrics to correlate application performance with system behavior?
+* How do you identify thread pool starvation?
+* How do you identify connection pool exhaustion?
+* How do you determine whether a database or application layer is the bottleneck?
+* How do database locks affect application performance under concurrency?
+* How do you analyze performance bottlenecks in distributed Java applications?
+* How do you evaluate performance across multiple microservice dependencies?
+* How do retries and timeouts affect overall system performance?
+* How can a retry storm cause cascading performance degradation?
+* How do you evaluate the performance impact of synchronous versus asynchronous processing?
+* How do you test the performance of message-driven Java applications?
+* How do you measure consumer lag and processing throughput?
+* How do you evaluate horizontal scalability of a Java application?
+* How do you determine whether adding application instances improves throughput linearly?
+* How do you test autoscaling performance?
+* How do you evaluate performance during rolling deployments?
+* How do you design a soak test to detect long-term performance degradation?
+* How do you identify resource leaks that appear only after several hours?
+* How do you estimate infrastructure requirements from performance test results?
+* How do you distinguish application performance problems from infrastructure problems?
+* How do you perform root-cause analysis for a performance regression?

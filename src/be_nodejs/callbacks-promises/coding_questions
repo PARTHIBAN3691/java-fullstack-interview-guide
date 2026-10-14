@@ -1,0 +1,30 @@
+* Write a callback-based function that reads a file using the Node.js fs module.
+* Implement an error-first callback that performs a simple arithmetic operation.
+* Write a function that accepts a callback and invokes it after an asynchronous operation.
+* Implement a function that converts a callback-based file-reading API into a Promise.
+* Create a Promise that resolves after a specified delay.
+* Write a Promise that rejects when an input value is invalid.
+* Implement a Promise chain that reads a file, transforms its contents, and writes the result.
+* Write a function that demonstrates error propagation through multiple then() handlers.
+* Implement a Promise chain with catch() and finally() for error handling and cleanup.
+* Convert a callback-based database function into a Promise-based function using util.promisify().
+* Write a function that executes three asynchronous tasks sequentially using Promises.
+* Implement concurrent execution of independent tasks using Promise.all().
+* Write a program that collects both successful and failed results using Promise.allSettled().
+* Implement a function that returns the first successful result from multiple asynchronous operations.
+* Write a function that races multiple Promises and returns the first settled result.
+* Implement a retry function with a configurable maximum number of attempts.
+* Add exponential backoff and jitter to a Promise-based retry function.
+* Implement a Promise timeout wrapper that rejects when an operation exceeds a deadline.
+* Extend the timeout wrapper to cancel the underlying operation using AbortController.
+* Write a function that limits the number of concurrently executing Promise-based tasks.
+* Implement a Promise pool that processes an array of tasks while preserving result order.
+* Write a function that aggregates errors from multiple asynchronous operations.
+* Implement a function that executes a callback exactly once, even if the underlying API invokes it multiple times.
+* Create a Promise wrapper for an EventEmitter that resolves when a specific event occurs and rejects on an error event.
+* Implement a Promise-based task queue with concurrency control and graceful shutdown.
+* Write a function that combines callback-based and Promise-based APIs while handling errors correctly.
+* Implement a Promise-based workflow with validation, database persistence, and notification steps.
+* Write unit tests for a function that resolves, rejects, and throws synchronously.
+* Implement a batch-processing function that retries failed records without reprocessing successful records.
+* Build a complete asynchronous utility module containing promisification, retries, timeouts, cancellation, concurrency limiting, and error aggregation.

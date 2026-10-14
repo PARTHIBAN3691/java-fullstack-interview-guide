@@ -1,0 +1,30 @@
+* Explain React's rendering and reconciliation process in detail.
+* How does React determine which parts of the UI need to be updated?
+* What is Fiber architecture in React?
+* How does React Fiber support interruptible rendering?
+* What is the difference between render phase and commit phase?
+* How does React preserve component state between renders?
+* What causes React to reset a component's state?
+* How do component type and key affect state preservation?
+* How does React batch state updates?
+* What is automatic batching in React 18 and later?
+* How does concurrent rendering differ from synchronous rendering?
+* What is the purpose of transitions in React?
+* What is the difference between urgent updates and transition updates?
+* How do Suspense boundaries affect rendering?
+* How does React handle errors during rendering?
+* What is hydration in React?
+* What causes hydration mismatches?
+* What is the difference between CSR, SSR, and static rendering?
+* How do React Server Components differ from client components?
+* What are the architectural trade-offs of server-side rendering?
+* How does React StrictMode help identify potential bugs?
+* Why can effects or rendering logic appear to execute more than once in development?
+* How would you optimize a React application with frequent unnecessary re-renders?
+* What is the difference between memoization and reconciliation?
+* How do React.memo(), useMemo(), and useCallback() differ?
+* How would you identify and fix expensive component rendering?
+* How do state colocation and component composition improve performance?
+* How would you design a scalable component architecture for a large React application?
+* How do React's rendering concepts influence accessibility and user experience?
+* What architectural factors would you consider when choosing React for an enterprise application?

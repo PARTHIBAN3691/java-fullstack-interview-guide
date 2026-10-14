@@ -1,0 +1,31 @@
+* You have an OrderService that depends on OrderRepository and PaymentService. How would you unit test OrderService using Mockito?
+* A service calls an external payment API that should not be invoked during unit testing. How would you mock it?
+* Your repository returns Optional.empty(), and the service should throw a custom exception. How would you test this using Mockito?
+* A service calls a repository three times, but your test expects only one call. How would you identify and fix the issue?
+* Your Mockito test passes locally but fails in CI because of unnecessary stubbing. How would you investigate?
+* A mocked method is not returning the value configured with when().thenReturn(). What could be wrong?
+* Your test fails with PotentialStubbingProblem. What does it mean and how would you resolve it?
+* A service calls an external API with a generated request object. How would you verify that the correct request was sent?
+* You need to verify a complex object passed to a mocked method. Would you use ArgumentCaptor, eq(), or a custom matcher?
+* A void method should throw an exception when called with invalid data. How would you mock and test this behavior?
+* A service calls different repository methods depending on the input. How would you verify that the correct method was called?
+* You need to verify that a notification service is not called when payment fails. How would you write the Mockito test?
+* A service performs two dependent calls where the second call uses the result of the first. How would you stub this scenario?
+* A method returns different results on consecutive calls. How would you configure the mock?
+* A production class contains static utility calls that make unit testing difficult. How would you approach the test using Mockito?
+* A legacy class creates a dependency using new inside the method. How would you test it with Mockito, and what design improvement would you recommend?
+* Your test uses @Mock and @InjectMocks, but the mock is null. What could be missing?
+* A Mockito test unexpectedly executes the real implementation of a method. What could be the cause?
+* You are using a spy and a real method is being executed during stubbing. How would you prevent this?
+* A service contains five dependencies and the Mockito test has become difficult to maintain. How would you improve the design?
+* Your test verifies many internal method calls and breaks whenever implementation changes. How would you redesign the test?
+* A repository method is called with a dynamically generated UUID. How would you verify the invocation without hardcoding the UUID?
+* An API client throws different exceptions for different error conditions. How would you mock and test each scenario?
+* A mocked method receives a list of objects, and you need to verify the exact contents of that list. How would you do it?
+* You need to verify that calls to Repository A happen before calls to Repository B. How would you test this using Mockito?
+* A test suite contains hundreds of Mockito mocks and runs slowly. How would you investigate the performance issue?
+* A mock is shared across multiple tests and previous interactions affect later tests. How would you prevent test contamination?
+* A service uses CompletableFuture and calls a mocked dependency asynchronously. How would you verify the interaction reliably?
+* A Mockito test becomes overly dependent on implementation details. What changes would make the test more behavior-focused?
+* You are migrating a large JUnit 4 application to JUnit 5. How would you migrate Mockito initialization and annotations?
+* Your team wants to use deep stubs extensively to simplify tests. What problems could this introduce and what alternative would you recommend?

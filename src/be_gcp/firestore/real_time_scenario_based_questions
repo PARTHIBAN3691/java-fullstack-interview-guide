@@ -1,0 +1,30 @@
+* A Spring Boot application using Firestore experiences a sudden increase in read latency. How would you investigate the root cause?
+* A Firestore query fails because a required composite index is missing. How would you resolve the issue and prevent it in production?
+* A collection receives millions of writes per hour, and write latency increases significantly. How would you investigate hotspotting?
+* Multiple users update the same account document simultaneously, causing transaction retries. How would you redesign the data model?
+* A Firestore transaction fails intermittently under high concurrency. How would you diagnose contention and improve reliability?
+* A Java service creates duplicate orders when clients retry requests after network timeouts. How would you implement idempotency?
+* A Firestore collection has grown to millions of documents, and pagination has become inefficient. How would you optimize it?
+* A query that filters by status and sorts by creation time fails for certain combinations of fields. How would you troubleshoot the query and indexes?
+* A multi-tenant application must ensure that customers cannot access each other's records. How would you implement tenant isolation?
+* A mobile application can access documents belonging to other users because of incorrect security rules. How would you fix and test the rules?
+* A backend service running on Cloud Run receives permission-denied errors when accessing Firestore. How would you troubleshoot IAM and authentication?
+* A Firestore-triggered Cloud Function processes the same order more than once. How would you prevent duplicate downstream actions?
+* A Firestore trigger sometimes executes out of order, causing incorrect order status updates. How would you design a safe processing strategy?
+* A batch import partially completes before the application crashes. How would you resume the import without duplicating or corrupting data?
+* A collection contains inconsistent document structures because different application versions write different fields. How would you manage schema evolution?
+* A document exceeds Firestore's maximum document size because it contains a growing list of events. How would you redesign the schema?
+* An application stores thousands of child records inside a single document and experiences frequent update conflicts. How would you restructure the data?
+* A dashboard performs too many individual document reads and exceeds its budget. How would you optimize the read pattern?
+* A product catalog requires filtering by category, price, rating, and availability. How would you design the schema and indexes?
+* An application needs to display real-time changes while also supporting offline access. How would you implement this using Firestore?
+* A service must update inventory and create an order atomically. How would you determine whether a transaction or batched write is appropriate?
+* A Firestore application must synchronize updates to BigQuery for analytics. How would you design a reliable synchronization pipeline?
+* A migration from PostgreSQL to Firestore produces inconsistent relationships and duplicated records. How would you validate and correct the migration?
+* A production deployment introduces a new required field in Firestore documents and breaks older application instances. How would you roll out the schema change safely?
+* A distributed counter returns delayed or approximate totals under heavy write traffic. How would you design the counter and reporting strategy?
+* Firestore billing rises sharply even though the number of active users remains stable. How would you identify unnecessary reads, writes, and index costs?
+* A backend service experiences transient Firestore API failures during peak traffic. How would you design retry, backoff, and timeout handling?
+* A company requires regional data residency and high availability for its Firestore application. How would you choose the database location and recovery strategy?
+* An administrator accidentally deletes important Firestore documents. How would you recover the data and reduce the risk of future accidental deletion?
+* A Java application performs well in development but experiences high latency in production. How would you compare client configuration, network latency, query design, and database metrics?

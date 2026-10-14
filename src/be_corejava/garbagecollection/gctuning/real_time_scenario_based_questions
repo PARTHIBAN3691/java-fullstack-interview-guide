@@ -1,0 +1,15 @@
+* A production REST API experiences frequent latency spikes during peak traffic. How would you determine whether GC is the root cause and tune the application accordingly?
+* A Java application experiences frequent young GC events and high CPU usage. How would you investigate allocation pressure and decide which tuning changes to make?
+* A service experiences repeated Full GC events even after the heap size has been increased. How would you identify the underlying cause?
+* G1 GC pause times exceed the service-level objective despite setting `-XX:MaxGCPauseMillis=100`. How would you investigate and improve the situation?
+* A batch-processing service requires maximum throughput rather than low pause times. Which GC tuning strategy would you evaluate?
+* An application has a large heap and a high live-data footprint, causing long evacuation pauses. How would you investigate the problem?
+* GC logs show increasing old-generation occupancy and frequent mixed collections. How would you determine whether the application is retaining too many objects?
+* A G1 GC application reports evacuation failures during traffic spikes. What configuration, allocation, and heap metrics would you examine?
+* A containerized Java service is terminated by the operating system even though the maximum Java heap is configured below the container memory limit. How would you investigate and tune its memory usage?
+* After changing the GC configuration, average latency improves but p99 latency worsens. How would you analyze the trade-off?
+* A new application release increases object allocation without changing traffic volume. How would you identify the allocation hotspots and validate improvements?
+* A service has low GC pause times but high CPU consumption due to garbage collection. How would you optimize the balance between throughput and latency?
+* An application experiences periodic Full GC events after running successfully for several hours. How would you investigate heap occupancy, allocation rates, and concurrent marking?
+* A team proposes increasing the heap size to solve an `OutOfMemoryError`. What evidence would you collect before deciding whether that change is appropriate?
+* You need to select a garbage collector for a high-throughput payment service with strict p99 latency requirements. How would you evaluate collectors and validate the final configuration?

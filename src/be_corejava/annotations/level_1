@@ -1,0 +1,95 @@
+# Core Java → Annotations → Level 1 (Medium)
+
+## Retention Policies
+* What is the purpose of `@Retention`?
+* What are the three retention policies available in Java?
+* What is the difference between `RetentionPolicy.SOURCE`, `CLASS`, and `RUNTIME`?
+* What is the default retention policy if `@Retention` is not specified?
+* Why would you choose `RetentionPolicy.RUNTIME` for a custom annotation?
+* Can an annotation with `RetentionPolicy.SOURCE` be accessed using reflection?
+* What happens to annotations with `RetentionPolicy.CLASS` at runtime?
+* How does the retention policy affect annotation processing?
+* Which retention policy is suitable for compiler-only checks?
+* How would you choose a retention policy for an annotation used by a runtime framework?
+
+## Annotation Targets
+* What is the purpose of `@Target`?
+* What are the common `ElementType` values?
+* What happens if `@Target` is not specified on a custom annotation?
+* What is the difference between `ElementType.TYPE`, `METHOD`, and `FIELD`?
+* How do `ElementType.PARAMETER` and `ElementType.LOCAL_VARIABLE` differ?
+* What is `ElementType.ANNOTATION_TYPE` used for?
+* What is `ElementType.TYPE_USE`?
+* What is the difference between `TYPE_USE` and `TYPE_PARAMETER`?
+* How can you restrict a custom annotation to methods only?
+* How would you allow an annotation on both fields and methods?
+
+## Annotation Elements and Defaults
+* What are the valid return types for annotation elements?
+* Why can annotation elements not return arbitrary objects?
+* Can an annotation element have a generic return type?
+* Can annotation elements have parameters?
+* Can annotation elements throw exceptions?
+* What happens when a required annotation element has no default value?
+* How are array-valued annotation elements specified?
+* Can an annotation element use an enum as its type?
+* Can one annotation element use another annotation as its type?
+* How are nested annotations represented in annotation declarations?
+
+## Meta-Annotations
+* What are meta-annotations in Java?
+* What is the purpose of `@Inherited`?
+* Does `@Inherited` apply to interfaces?
+* Does `@Inherited` work for method-level annotations?
+* What is the purpose of `@Repeatable`?
+* How does `@Documented` affect generated Javadoc?
+* What happens when a custom annotation is not marked with `@Documented`?
+* How do `@Retention` and `@Target` work together?
+* Can you create a custom meta-annotation?
+* What limitations should you understand when using `@Inherited`?
+
+## Reflection and Annotations
+* What is reflection in Java?
+* How can you retrieve annotations from a class at runtime?
+* How do `getAnnotation()` and `getDeclaredAnnotation()` differ?
+* What is the difference between `getAnnotations()` and `getDeclaredAnnotations()`?
+* How can you retrieve annotations from a method?
+* How can you inspect annotations on a field?
+* How do you retrieve an annotation's element values?
+* What happens when you try to retrieve a runtime annotation that is not present?
+* How can you check whether a class has a particular annotation?
+* What is the relationship between runtime retention and reflection?
+
+## Repeatable Annotations
+* What problem does `@Repeatable` solve?
+* How do you declare a repeatable annotation?
+* What is a container annotation?
+* What requirements must a container annotation satisfy?
+* How do `getAnnotationsByType()` and `getAnnotation()` behave with repeatable annotations?
+* How would you retrieve all instances of a repeatable annotation?
+* What compatibility concerns arise when converting a single-use annotation into a repeatable annotation?
+
+## Annotation Processing
+* What is annotation processing in Java?
+* What is the role of `javax.annotation.processing.Processor`?
+* What is the difference between compile-time and runtime annotation processing?
+* What is the purpose of `AbstractProcessor`?
+* What is the role of `RoundEnvironment`?
+* What does `@SupportedAnnotationTypes` specify?
+* What does `@SupportedSourceVersion` specify?
+* How can an annotation processor generate source code?
+* How is an annotation processor discovered by the Java compiler?
+* How do annotation processors differ from reflection-based frameworks?
+
+## Standard Annotations and Type Safety
+* How does `@Override` help catch programming errors?
+* What restrictions does `@FunctionalInterface` enforce?
+* How does `@Deprecated` communicate API evolution?
+* What is the difference between `@Deprecated` and the `forRemoval` attribute?
+* How does `@SuppressWarnings` work?
+* Why should warning suppression be kept as narrow as possible?
+* What is the purpose of `@SafeVarargs`?
+* Why is `@SafeVarargs` restricted to certain method declarations?
+* What is the purpose of the `since` element in `@Deprecated`?
+* How do annotations improve compile-time type safety?
+

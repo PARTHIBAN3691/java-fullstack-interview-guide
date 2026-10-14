@@ -1,0 +1,30 @@
+* Your TypeScript service passes manual testing but fails in production. How would you improve its automated test coverage?
+* A unit test passes locally but fails in the CI/CD pipeline. How would you investigate the issue?
+* Your test suite contains intermittent failures caused by asynchronous operations. How would you stabilize it?
+* An API service depends on an external payment provider. How would you test its business logic without making real payments?
+* Your application retries failed API requests several times. How would you verify retry counts, delays, and final error handling?
+* A database repository is difficult to unit test because it creates its own database connection. How would you refactor it?
+* Your service contains multiple dependencies, and mocking them makes the test difficult to maintain. How would you simplify the design?
+* A developer changes a function signature, but the existing tests still pass despite incorrect behavior. How would you improve the tests?
+* Your application has several conditional branches, but code coverage is low. How would you identify missing test cases?
+* A function handles empty arrays, null values, and invalid input. How would you test all relevant edge cases?
+* Your API response sometimes contains unexpected fields or missing properties. How would you test runtime validation?
+* Your application processes messages from a queue. How would you test duplicate messages and message-processing failures?
+* A background job must not process the same transaction twice. How would you test idempotency?
+* Your service caches frequently requested data. How would you test cache hits, expiration, and invalidation?
+* A scheduled task uses timers and runs at specific intervals. How would you test it without waiting for real time to pass?
+* Your authentication service has different permissions for administrators and regular users. How would you test authorization rules?
+* Your TypeScript application integrates with a third-party API that frequently changes. How would you detect contract changes early?
+* A production bug was caused by an unhandled Promise rejection. How would you reproduce it and prevent recurrence?
+* Your test suite takes 30 minutes to execute. How would you reduce its execution time without sacrificing important coverage?
+* Multiple developers run tests in parallel, causing shared test data to conflict. How would you resolve the problem?
+* Your tests depend on environment variables and behave differently across environments. How would you make them deterministic?
+* A database integration test passes on one machine but fails on another. How would you investigate environmental dependencies?
+* Your team wants to replace Jest with Vitest. What compatibility and migration issues would you evaluate?
+* Your code coverage is 95%, but production defects remain frequent. How would you evaluate the quality of your tests?
+* A service calls multiple downstream APIs, and one API failure should not break the entire workflow. How would you test partial failures?
+* Your application must handle duplicate payment requests safely. How would you design unit and integration tests for idempotency?
+* A TypeScript monorepo contains multiple packages with shared utilities. How would you test dependencies between packages?
+* A bug appears only when two asynchronous operations finish in a particular order. How would you reproduce and test the race condition?
+* Your application needs backward compatibility with older API clients. How would you create automated compatibility tests?
+* How would you design a testing strategy for a high-volume enterprise TypeScript application before a major release?

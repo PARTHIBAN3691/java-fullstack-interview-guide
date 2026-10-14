@@ -1,0 +1,21 @@
+
+* You are developing a dependency injection framework. How would you use Reflection to identify injectable fields and constructors?
+* A framework must create objects based on class names configured in a properties file. How would you implement dynamic class loading and object creation?
+* You need to build a validation framework that discovers custom annotations on fields and methods. How would you design it using Reflection?
+* A private field can be accessed in a local test but fails in production after migrating to Java 17. What would you investigate?
+* Your application uses Reflection to invoke thousands of methods per second, and performance is degrading. How would you profile and optimize it?
+* A method invoked reflectively throws an exception, but the caller sees only `InvocationTargetException`. How would you expose meaningful error details?
+* A plugin system loads implementations dynamically from external modules. How would you discover implementations and handle class-loader boundaries?
+* A serialization framework must inspect fields, including inherited fields, while respecting encapsulation. How would you design its field-discovery logic?
+* An ORM framework needs to map database columns to entity fields and invoke constructors dynamically. How would you use Reflection while handling inaccessible members?
+* A test framework needs to discover methods annotated with `@Test` and execute them. What Reflection APIs would you use?
+* A configuration framework needs to populate private fields from environment variables. What are the design and security considerations?
+* Two methods have the same name but different parameter types. How would your framework identify and invoke the correct overload?
+* A generic repository framework must inspect an entity type inherited through a parameterized superclass. How would you resolve the actual generic type?
+* A Reflection-based mapper incorrectly handles compiler-generated bridge methods. How would you identify and filter those methods?
+* A framework works on the classpath but fails after migration to a modular application. How would you diagnose module access issues?
+* A plugin is loaded by a custom class loader, but the application cannot cast its object to an apparently identical interface. What could cause this behavior?
+* You need to inspect runtime annotations that may be inherited from a superclass. How would you account for Java's annotation inheritance rules?
+* A framework needs to invoke private constructors to instantiate classes. How would you handle access restrictions and constructor failures?
+* A code scanner must identify whether a class contains a particular method signature without instantiating the class. How would you implement it?
+* Your team is using Reflection to access private fields throughout the codebase. How would you evaluate whether to retain Reflection or replace it with a safer design?

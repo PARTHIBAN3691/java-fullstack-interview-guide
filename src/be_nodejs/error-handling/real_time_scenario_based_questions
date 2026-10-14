@@ -1,0 +1,30 @@
+* Your Node.js API crashes whenever an external service returns an unexpected response. How would you investigate and prevent the crash?
+* An async Express route throws an error, but the client receives no response. How would you troubleshoot the error propagation?
+* Your application logs unhandled Promise rejections during peak traffic. How would you identify and fix the root cause?
+* A database connection fails intermittently, causing API requests to return HTTP 500. How would you distinguish transient failures from permanent failures?
+* An external payment API times out after processing a payment. How would you handle retries without charging the customer twice?
+* Your API returns HTTP 200 even when a business operation fails. How would you improve the error-handling design?
+* A malformed JSON request causes an unexpected server error instead of HTTP 400. How would you correct the middleware configuration?
+* A validation error and a database error are both returned as HTTP 500. How would you design appropriate error classification and status mapping?
+* Your error logs contain passwords and authorization tokens. What immediate and long-term actions would you take?
+* A custom error handler accidentally exposes stack traces in production. How would you prevent information leakage?
+* A downstream service is unavailable, and your application retries every request immediately. How would you prevent a retry storm?
+* Multiple parallel API calls run through Promise.all(), and one failure causes the entire operation to reject. How would you handle partial results?
+* A background job fails repeatedly and blocks subsequent jobs in the queue. How would you isolate the failure and recover processing?
+* A database transaction fails, and its rollback also throws an error. How would you preserve the original failure and report the rollback problem?
+* An Express middleware catches an error but calls next() multiple times, causing unexpected behavior. How would you diagnose and prevent this?
+* Your application sends an HTTP response and then encounters another error while processing additional work. How would you avoid attempting to send a second response?
+* A worker process crashes after an unhandled exception while processing an order. How would you recover safely without losing or duplicating the order?
+* An API returns HTTP 500 for a missing customer record. How would you distinguish not-found errors from unexpected failures?
+* A third-party API returns HTTP 429 during peak traffic. How would you handle rate limiting and retry delays?
+* Your microservice logs an error, but you cannot trace which incoming request caused it. How would you introduce correlation IDs?
+* Production error rates increase after a new deployment, but the logs contain only generic messages. How would you improve observability and investigate the regression?
+* A Promise rejection occurs inside a timer callback and bypasses the surrounding try...catch block. Why does this happen, and how would you fix it?
+* Your API receives repeated invalid requests that generate large volumes of error logs. How would you protect the application and reduce unnecessary logging?
+* An external service returns an invalid response format without an HTTP error status. How would you validate the response and handle the failure?
+* A circuit breaker opens because of repeated downstream failures, but the downstream service has recovered. How should the application restore traffic safely?
+* A client disconnects while a long-running operation is in progress. How would you cancel unnecessary work and clean up resources?
+* An error is caught and rethrown by several layers, resulting in duplicate log entries. How would you improve error ownership and logging?
+* A scheduled job partially updates records before failing. How would you make the job resumable and safe to retry?
+* An application begins shutting down while requests are active, and some operations fail unexpectedly. How would you implement graceful shutdown?
+* Your service experiences intermittent failures that do not appear in local testing. How would you reproduce, diagnose, and monitor the issue?

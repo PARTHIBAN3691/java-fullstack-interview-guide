@@ -1,0 +1,30 @@
+* Explain the complete request flow from a client to a Kubernetes Service and its backend Pod.
+* How does kube-proxy implement Service networking?
+* How do iptables, IPVS, and eBPF-based implementations differ in Service routing?
+* How does Kubernetes maintain Service-to-Pod mappings using EndpointSlices?
+* How does Kubernetes handle traffic when backend Pods are added or removed?
+* How would you design Service networking for a large microservices platform?
+* How would you troubleshoot a Service that has valid endpoints but cannot route traffic?
+* How would you investigate a Service that works from one node but fails from another?
+* How would you analyze DNS resolution failures for ClusterIP Services?
+* How do CoreDNS and Kubernetes Services work together?
+* How does session affinity affect load distribution across Pods?
+* How would you design a Service for stateful applications requiring stable network identities?
+* How do headless Services support service discovery in StatefulSets?
+* How would you expose a Service externally while minimizing direct node exposure?
+* How would you design a highly available LoadBalancer Service across multiple availability zones?
+* How do cloud load balancers integrate with Kubernetes Services?
+* What are the security implications of exposing applications using NodePort?
+* How would you restrict access to an internal Service using NetworkPolicies?
+* How do readiness probes and terminating endpoints affect traffic during rolling updates?
+* How would you prevent requests from reaching Pods during graceful shutdown?
+* How would you configure graceful connection draining for long-lived HTTP connections?
+* How would you troubleshoot connection resets during a Deployment rollout?
+* How would you design Service discovery for Java Spring Boot microservices?
+* How does Kubernetes Service discovery compare with client-side service discovery?
+* How would you diagnose uneven traffic distribution across Service endpoints?
+* What are the trade-offs between a Service mesh and native Kubernetes Services?
+* How would you use topology-aware routing to reduce cross-zone traffic?
+* How would you investigate high latency between a Service and its backend Pods?
+* How would you design Services for multi-tenant applications with strict network isolation?
+* How would you validate Service networking changes without causing production downtime?

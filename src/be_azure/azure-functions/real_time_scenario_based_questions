@@ -1,0 +1,21 @@
+
+* A Java Azure Function works locally but fails after deployment. How would you troubleshoot runtime, configuration, and dependency issues?
+* An HTTP-triggered function returns HTTP 500 intermittently. How would you investigate the root cause?
+* A Timer-triggered function executes at unexpected times. How would you validate its schedule and timezone configuration?
+* A Queue-triggered function processes the same message multiple times. How would you make the processing idempotent?
+* A Java function takes several seconds to respond after a period of inactivity. How would you reduce cold-start latency?
+* An Event Hub-triggered function falls behind the incoming event stream. How would you identify and resolve the processing bottleneck?
+* A function fails repeatedly while processing a malformed message. How would you implement retry limits and dead-letter handling?
+* A function processes an order and updates the database, but fails before publishing the corresponding event. How would you ensure consistency?
+* A function runs out of memory while processing a large Blob Storage file. How would you redesign the processing strategy?
+* A Java Function App experiences unexpected cost increases after a traffic spike. How would you investigate execution volume and optimize costs?
+* A function cannot access Azure Key Vault even though managed identity is enabled. How would you troubleshoot identity permissions and network access?
+* A function cannot connect to a private database after being deployed. How would you investigate virtual network integration, DNS, and firewall rules?
+* Multiple instances of a scheduled function process the same business task. How would you prevent duplicate execution?
+* A Java function experiences intermittent database connection failures under high concurrency. How would you investigate and resolve connection pool exhaustion?
+* An HTTP-triggered function takes longer than the API gateway timeout. How would you redesign the workflow?
+* A production deployment introduces a bug while queue messages continue arriving. How would you roll back safely and recover failed messages?
+* Application Insights shows failures but cannot correlate them across several functions. How would you implement distributed tracing?
+* A function needs to call an external API with strict rate limits. How would you prevent throttling and handle HTTP 429 responses?
+* Your application must process critical events even during a regional Azure outage. How would you design regional redundancy and recovery?
+* A business requires processing every incoming event exactly once. How would you explain the practical delivery guarantees and design deduplication and idempotency?

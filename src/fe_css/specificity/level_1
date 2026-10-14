@@ -1,0 +1,30 @@
+* How is CSS specificity calculated using the ID, class, and element selector categories?
+* Compare the specificity of div, .container, and #header.
+* What is the specificity of #main .content p?
+* How does specificity work when multiple classes are applied to one element?
+* What is the specificity of div.container.highlight?
+* Compare div p and .container p in terms of specificity.
+* What is the specificity of ul li a.active?
+* How does the :not() pseudo-class affect specificity?
+* How is specificity calculated for :is()?
+* How is specificity calculated for :where()?
+* What is the difference between :is() and :where() regarding specificity?
+* How does :has() contribute to selector specificity?
+* What is the specificity of an attribute selector combined with a class selector?
+* How does an inline style compare with an ID selector?
+* Can multiple class selectors override an ID selector?
+* How does the cascade layer affect which CSS declaration wins?
+* What is the relationship between specificity and CSS cascade origin?
+* How does !important interact with specificity?
+* Can a low-specificity selector override a high-specificity selector?
+* How does CSS specificity behave with inherited properties?
+* What is the specificity of :nth-child(2)?
+* How does the selector inside :nth-child(2 of .item) affect specificity?
+* What happens when two selectors have identical specificity but different source order?
+* How does specificity work with nested selectors in CSS preprocessors?
+* How does the CSS nesting selector (&) affect specificity?
+* How can you refactor CSS to reduce specificity conflicts?
+* What is specificity creep, and why is it problematic?
+* How do utility classes influence specificity management?
+* How can component-based CSS architectures prevent specificity conflicts?
+* What are common mistakes developers make when calculating specificity?

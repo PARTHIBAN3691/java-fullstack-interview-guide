@@ -1,0 +1,104 @@
+# Secrets & Identity Management — Level 2 (Difficult)
+
+## Secrets Management
+* How would you design centralized secrets management for hundreds of microservices deployed across multiple cloud providers?
+* How would you migrate hardcoded secrets to a centralized platform without downtime?
+* How would you design emergency secret revocation, auditing, and access reviews for a large enterprise?
+* How would you ensure an application can recover safely when the secrets platform becomes unavailable?
+
+## HashiCorp Vault
+* How would you design Vault high availability, disaster recovery, and secure unsealing for production?
+* How would you troubleshoot Vault token renewal failures across a large fleet of services?
+* How would you rotate dynamic database credentials without interrupting active connection pools?
+* How would you diagnose Vault latency, audit-device failures, or storage and replication problems during an outage?
+
+## AWS Secrets Manager
+* How would you design cross-account secret access with resource policies, IAM, and KMS?
+* How would you troubleshoot services that continue using an old secret after rotation?
+* How would you optimize secret caching and API usage without creating unacceptable security or availability risks?
+* How would you recover from secret deletion or a compromised AWS identity while preserving application availability?
+
+## Azure Key Vault
+* How would you design secure Key Vault access across multiple subscriptions and environments?
+* How would you troubleshoot a managed identity that authenticates successfully but cannot retrieve a secret?
+* How would you rotate database credentials stored in Key Vault when multiple application instances and connection pools are active?
+* How would you design private network access, monitoring, recovery, and purge protection for production Key Vault instances?
+
+## Google Secret Manager
+* How would you manage secret access and replication across multiple Google Cloud projects?
+* How would you handle rotation when multiple services cache different secret versions?
+* How would you investigate a `PERMISSION_DENIED` error involving service accounts, IAM policies, and project boundaries?
+* How would you design reliable secret retrieval during regional failures or a Google Cloud service disruption?
+
+## Secret Rotation
+* How would you implement zero-downtime rotation when a database supports only one active password?
+* How would you coordinate rotation across hundreds of microservice instances with different deployment schedules?
+* How would you recover when a rotation workflow updates the secret store but fails to update the target system?
+* How would you design idempotent rotation workflows with retries, rollback, audit trails, and automated recovery?
+
+## Dynamic Secrets
+* How would you implement dynamic database credentials for a large microservices platform?
+* How would you prevent connection-pool failures when dynamic credentials expire or are revoked?
+* How would you design safe credential renewal when the secrets platform is temporarily unavailable?
+* How would you handle lease cleanup and credential revocation when thousands of short-lived credentials are issued concurrently?
+
+## Encryption
+* How would you design data encryption across microservices and multiple cloud providers while maintaining key isolation?
+* How would you migrate billions of encrypted records to a new encryption key without downtime?
+* How would you investigate a suspected encryption-key compromise and determine which data needs re-encryption?
+* How would you balance encryption performance, regulatory requirements, tenant isolation, and disaster recovery?
+
+## KMS — Key Management Service
+* How would you design key management for a multi-tenant application requiring strict tenant-level isolation?
+* How would you rotate KMS keys while preserving access to historical encrypted data?
+* How would you troubleshoot KMS throttling or widespread decryption failures during a production traffic spike?
+* How would you design key recovery, separation of duties, and emergency access without weakening normal security controls?
+
+## IAM — Identity and Access Management
+* How would you design least-privilege IAM for hundreds of microservices across multiple accounts, subscriptions, or projects?
+* How would you prevent privilege escalation through overly broad policies and role assumptions?
+* How would you investigate and contain a compromised workload identity?
+* How would you reduce excessive permissions without breaking production workloads?
+
+## RBAC — Role-Based Access Control
+* How would you design RBAC for a multi-tenant platform with thousands of users and resources?
+* How would you prevent role explosion as teams, environments, and resource types increase?
+* How would you migrate direct permissions to centralized roles without interrupting existing workflows?
+* How would you audit effective permissions when roles inherit permissions across multiple groups and scopes?
+
+## ABAC — Attribute-Based Access Control
+* How would you design ABAC policies for thousands of services, tenants, and resources?
+* How would you prevent users from manipulating attributes to gain unauthorized access?
+* How would you test complex policies combining identity, resource, and environment attributes?
+* How would you migrate from RBAC to ABAC while maintaining backward compatibility and auditable access decisions?
+
+## Service Accounts
+* How would you design service-account isolation for hundreds of microservices and deployment pipelines?
+* How would you respond if a service account's private key were exposed in a public repository?
+* How would you rotate or revoke credentials without disrupting dependent services?
+* How would you detect unused service accounts, excessive privileges, credential abuse, and suspicious access patterns?
+
+## Workload Identity
+* How would you design workload identity for multiple Kubernetes clusters running across AWS, Azure, and Google Cloud?
+* How would you prevent a compromised pod from impersonating another workload?
+* How would you establish secure federation between an external identity provider and cloud IAM?
+* How would you migrate from static service account keys to workload identity without causing deployment or authentication failures?
+
+## Short-Lived Credentials
+* How would you design credential renewal for thousands of instances without creating a synchronized renewal spike?
+* How would you prevent outages when credentials expire during long-running requests or database transactions?
+* How would you contain access when a stolen short-lived token remains valid until expiration?
+* How would you choose credential lifetimes that balance security, availability, latency, and operational complexity?
+
+## Certificate Management
+* How would you automate certificate issuance, renewal, deployment, and revocation across hundreds of services?
+* How would you prevent certificate expiration from causing a widespread production outage?
+* How would you rotate certificates across load balancers, service meshes, and application instances without downtime?
+* How would you respond to a private-key compromise involving multiple dependent services?
+
+## PKI — Public Key Infrastructure
+* How would you design an internal PKI for service-to-service authentication across multiple environments?
+* How would you protect a root CA private key and limit its exposure to routine operations?
+* How would you respond to a compromised intermediate CA and determine the scope of affected certificates?
+* How would you rotate a CA and distribute updated trust bundles without breaking existing TLS connections?
+

@@ -1,0 +1,20 @@
+* How does Shenandoah GC organize and manage the Java heap?
+* What are the major phases of a Shenandoah GC cycle?
+* What is concurrent marking in Shenandoah GC?
+* What is concurrent evacuation in Shenandoah GC?
+* What is concurrent compaction, and how does Shenandoah use it?
+* What is the purpose of the initial mark phase?
+* What is the purpose of the final mark phase?
+* What is the purpose of the final update references phase?
+* What are forwarding pointers in Shenandoah GC?
+* What is the purpose of the Brooks pointer in Shenandoah GC?
+* How does Shenandoah GC allow objects to move while application threads are running?
+* What is the role of the load-reference barrier in Shenandoah GC?
+* What is the difference between Shenandoah GC and G1 GC in object relocation?
+* What is the difference between Shenandoah GC and Parallel GC?
+* How does Shenandoah GC handle allocation while concurrent evacuation is in progress?
+* What is the purpose of Shenandoah's concurrent cleanup phase?
+* What are evacuation reserve regions, and why are they important?
+* How do you configure Shenandoah GC in a Java application?
+* How do you enable Shenandoah GC logging in Java 17 or later?
+* Which metrics should you monitor when evaluating Shenandoah GC performance?

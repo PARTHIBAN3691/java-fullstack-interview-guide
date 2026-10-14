@@ -1,0 +1,30 @@
+* Explain the Promise resolution procedure in JavaScript.
+* What is a thenable, and how does Promise assimilation work?
+* How does the JavaScript engine prevent a Promise from settling more than once?
+* What happens when resolve() is called before reject() in the same Promise executor?
+* Explain how Promise reactions are scheduled as microtasks.
+* What is the difference between Promise settlement and execution of its handlers?
+* How does the microtask queue affect Promise chaining?
+* What happens when a Promise callback queues another Promise callback?
+* How can recursive Promise chains cause microtask starvation?
+* How do unhandled Promise rejections arise?
+* How can unhandled Promise rejections be detected in browsers and Node.js?
+* How does error propagation differ between synchronous exceptions and rejected Promises?
+* Why does a try/catch block not catch a rejection from an unawaited Promise?
+* How does try/catch behave with await inside an async function?
+* What happens when an async function returns a Promise?
+* How does returning versus awaiting a Promise affect error handling and stack traces?
+* How would you implement a Promise-based timeout mechanism?
+* How would you implement cancellation for a Promise-based operation?
+* Why does Promise itself not provide a built-in cancellation method?
+* How can AbortController be used to cancel fetch requests?
+* How would you implement retry logic with exponential backoff?
+* How would you limit the number of concurrently executing Promises?
+* How would you implement a Promise pool for processing a large collection of tasks?
+* How would you handle partial failures when multiple asynchronous operations run concurrently?
+* What are the limitations of Promise.all() for large collections of tasks?
+* How would you implement a timeout for Promise.race() without leaving unnecessary timers running?
+* What is the difference between concurrency and parallelism in Promise-based code?
+* How can Promise chains accidentally create memory retention in long-running applications?
+* How would you design a robust error-handling strategy for a Promise-heavy application?
+* How would you debug an asynchronous workflow in which a Promise remains pending indefinitely?

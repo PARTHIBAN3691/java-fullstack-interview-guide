@@ -1,0 +1,30 @@
+* Implement a Java class hierarchy demonstrating encapsulation, inheritance, polymorphism, and abstraction.
+* Design a payment processing module using an interface and multiple payment provider implementations.
+* Implement a notification service supporting email, SMS, and push notifications using the Strategy pattern.
+* Implement a factory that creates different types of vehicles based on input.
+* Implement a Builder pattern for creating an immutable Employee object.
+* Implement a Singleton pattern and explain how to make it thread-safe.
+* Implement a Decorator pattern that adds logging and metrics to a service.
+* Implement an Adapter that integrates a legacy payment API with a new payment interface.
+* Implement an Observer pattern for notifying subscribers when an order status changes.
+* Implement a Command pattern supporting execution, undo, and redo.
+* Implement a State pattern for a vending machine with IDLE, HAS_MONEY, DISPENSING, and OUT_OF_STOCK states.
+* Implement a Strategy pattern for calculating shipping costs using different shipping providers.
+* Implement a Template Method pattern for generating PDF and CSV reports.
+* Implement a Chain of Responsibility for processing authentication and authorization requests.
+* Implement a simple parking lot with vehicles, parking spots, floors, and ticket generation.
+* Implement a library management system with books, members, borrowing, returns, and reservations.
+* Implement a vending machine that handles product selection, payment, dispensing, and refunds.
+* Implement a basic elevator system that processes floor requests and selects an elevator.
+* Implement a movie ticket booking system with theatres, shows, seats, and reservations.
+* Implement a shopping cart supporting product quantities, discounts, taxes, and total calculation.
+* Implement a hotel reservation system with room availability, bookings, cancellations, and pricing strategies.
+* Implement a chessboard model with pieces and validation of basic movement rules.
+* Implement an immutable bank account transaction model that validates deposits and withdrawals.
+* Implement a thread-safe inventory service that prevents stock from becoming negative.
+* Implement a workflow engine with configurable steps, conditional transitions, and retry handling.
+* Implement a payroll system with different employee types and salary calculation strategies.
+* Implement a rule engine that evaluates customer eligibility using interchangeable rules.
+* Implement a repository abstraction with in-memory and database-backed implementations.
+* Implement a domain model using entities, value objects, aggregates, and repositories for a simple order management system.
+* Refactor a large Java service containing multiple responsibilities into smaller classes following SOLID principles.

@@ -1,0 +1,30 @@
+* How would you design an end-to-end security architecture for a large microservices platform?
+* How do you implement zero-trust security across services, workloads, and users?
+* How do you design centralized identity and access management for multiple applications?
+* How do you secure service-to-service communication without relying only on network boundaries?
+* How do you design a token-based authentication system that supports revocation, rotation, and short-lived credentials?
+* How do you prevent JWT algorithm-confusion attacks and improper signature validation?
+* How do you securely implement OAuth 2.0 authorization code flow with PKCE?
+* How do you choose between OAuth 2.0, OpenID Connect, SAML, and API keys for different use cases?
+* How do you design fine-grained authorization using RBAC, ABAC, and policy-based access control?
+* How do you prevent confused-deputy attacks and insecure delegation between services?
+* How do you design secure multi-tenant data isolation at the application, database, and infrastructure layers?
+* How do you design encryption at rest and in transit while maintaining manageable key rotation?
+* How do you implement envelope encryption using a key management service?
+* How do you rotate encryption keys without interrupting access to existing data?
+* How do you design secrets management for thousands of services and deployment environments?
+* How do you prevent replay attacks in distributed authentication and payment workflows?
+* How do you protect APIs against credential stuffing, distributed brute-force attacks, and automated abuse?
+* How do you secure asynchronous workflows where messages may be delayed, replayed, or duplicated?
+* How do you design tamper-resistant audit trails for financial and security-sensitive operations?
+* How do you prevent sensitive data leakage through logs, metrics, traces, and error messages?
+* How do you design a secure software supply chain for Java applications and container images?
+* How do you mitigate software dependency risks, compromised packages, and vulnerable transitive dependencies?
+* How do you threat-model a distributed application using assets, trust boundaries, attack surfaces, and abuse cases?
+* How do you design security controls that remain effective during service outages and failover?
+* How do you secure internal APIs against SSRF, request smuggling, and confused trust boundaries?
+* How do you prevent race conditions and time-of-check-to-time-of-use vulnerabilities in authorization logic?
+* How do you implement secure key storage and cryptographic operations without exposing secrets to application code?
+* How do you design incident response and credential revocation for a compromised service identity?
+* How do you balance security, latency, availability, and operational complexity in a global architecture?
+* How do you establish measurable security objectives and continuously validate them in production?

@@ -1,0 +1,105 @@
+
+**Cloud Cost Management**
+* How would you build a cloud cost optimization strategy for a multi-cloud enterprise with fluctuating demand and strict availability requirements?
+* How would you distinguish price changes, usage growth, architectural inefficiency, and billing adjustments in a cost variance analysis?
+* How would you design a unit-economics model that measures cloud cost per customer, transaction, API request, or business outcome?
+* How would you prioritize savings when the largest cost reductions conflict with performance, resilience, or engineering delivery goals?
+* How would you measure realized savings while accounting for business growth, inflation, negotiated discounts, and changing workloads?
+
+**Resource Tagging**
+* How would you enforce tagging across resources that are created indirectly by managed services or controllers?
+* How would you design a policy engine that validates tags during provisioning and continuously detects noncompliance afterward?
+* How would you reconcile ownership when resources are shared, transferred between teams, or orphaned after project closure?
+* How would you prevent tag manipulation from corrupting cost allocation and chargeback reports?
+* How would you evolve a global tagging taxonomy without breaking existing billing pipelines, dashboards, and policies?
+
+**Cost Allocation**
+* How would you design a defensible allocation model for shared platform, network, observability, and security costs?
+* How would you allocate costs for serverless systems where consumption is shared and individual workloads are difficult to isolate?
+* How would you reconcile amortized reservation costs, unused commitments, credits, refunds, and negotiated discounts?
+* How would you compare allocation models based on actual consumption, provisioned capacity, headcount, and business value?
+* How would you detect cross-team cost shifting or incorrect allocation caused by incomplete ownership metadata?
+
+**Reserved Instances**
+* How would you optimize reservation purchases across regions, accounts, instance families, and changing workload requirements?
+* How would you determine the break-even point between on-demand usage and a long-term reservation commitment?
+* How would you manage reservation expiration and renewal without accumulating unused commitments?
+* How would you model risk-adjusted savings when demand forecasts are uncertain?
+* How would you evaluate the trade-off between maximizing discount utilization and retaining capacity flexibility?
+
+**Savings Plans**
+* How would you calculate an optimal commitment level from variable hourly usage while minimizing both uncovered usage and unused commitments?
+* How would you combine savings plans, reservations, and spot capacity to optimize a mixed workload portfolio?
+* How would you account for commitment sharing across accounts when some teams grow and others reduce consumption?
+* How would you forecast the effect of workload migrations and architecture changes on existing commitments?
+* How would you automate commitment recommendations while ensuring finance approval and preventing overcommitment?
+
+**Spot Instances**
+* How would you design a large-scale workload platform that combines spot capacity, fallback capacity, checkpointing, and queue-based recovery?
+* How would you optimize for interruption risk, spot price or discount variation, capacity availability, and workload completion time?
+* How would you prevent a spot interruption across many nodes from causing a cascading application failure?
+* How would you evaluate spot savings after including restart overhead, duplicated work, storage, data transfer, and fallback capacity?
+* How would you implement placement and diversification strategies across supported pools while meeting workload performance requirements?
+
+**Right-Sizing**
+* How would you build a right-sizing engine that combines historical metrics, workload forecasts, service-level objectives, and performance tests?
+* How would you identify hidden bottlenecks when CPU averages appear low but latency remains high?
+* How would you right-size stateful systems where reducing memory or IOPS can cause significant recovery or performance risks?
+* How would you safely automate resource-size changes with canary rollout, rollback thresholds, and owner approval?
+* How would you distinguish genuine optimization from shifting bottlenecks to databases, networks, or downstream services?
+
+**Auto Scaling**
+* How would you design autoscaling policies for a bursty, multi-tier application with different scaling times across components?
+* How would you optimize scaling decisions using queue depth, request latency, concurrency, and cost constraints?
+* How would you prevent scale-in from disrupting in-flight requests, long-running jobs, and stateful workloads?
+* How would you combine predictive scaling with reactive scaling when traffic patterns change unexpectedly?
+* How would you calculate the trade-off between spare capacity, scaling delay, availability risk, and infrastructure cost?
+
+**Storage Optimization**
+* How would you design a lifecycle strategy for petabyte-scale data with compliance retention, recovery objectives, and variable access patterns?
+* How would you optimize total storage cost when retrieval fees, request charges, replication, versioning, and minimum retention periods are significant?
+* How would you determine whether data compression, deduplication, or format conversion justifies its processing cost?
+* How would you optimize database storage and IOPS without violating latency and durability requirements?
+* How would you detect runaway snapshot growth and automate safe cleanup while preserving recovery points and legal holds?
+
+**Data Transfer Costs**
+* How would you redesign a multi-region application to reduce cross-zone and cross-region data transfer without weakening availability?
+* How would you evaluate the cost trade-offs among centralized processing, regional processing, caching, replication, and data locality?
+* How would you identify hidden data transfer costs caused by service meshes, observability pipelines, NAT gateways, and repeated API calls?
+* How would you estimate the financial and operational trade-offs of migrating a high-volume data pipeline between cloud providers?
+* How would you optimize egress while preserving encryption, privacy, disaster recovery, and regulatory requirements?
+
+**Kubernetes Cost Optimization**
+* How would you optimize a multi-tenant Kubernetes platform using workload requests, quotas, node pools, and per-namespace cost allocation?
+* How would you combine vertical pod autoscaling, horizontal pod autoscaling, and cluster autoscaling without causing resource instability?
+* How would you design node consolidation that respects disruption budgets, topology constraints, and stateful workloads?
+* How would you allocate shared control-plane, networking, logging, and observability costs to individual teams?
+* How would you optimize Kubernetes cost while maintaining latency SLOs and sufficient capacity during sudden traffic spikes?
+
+**Idle Resource Detection**
+* How would you build a continuous idle-resource detection platform that combines inventory, metrics, billing data, and ownership metadata?
+* How would you identify resources that appear idle from CPU metrics but remain critical for failover, scheduled processing, or disaster recovery?
+* How would you design a risk-based remediation engine that distinguishes notification, stop, resize, and deletion actions?
+* How would you prevent automated cleanup from deleting resources protected by legal retention, backup, or disaster-recovery policies?
+* How would you prove that detected savings were actually realized rather than offset by replacement resources or increased downstream costs?
+
+**Budget Alerts**
+* How would you design cost anomaly detection that accounts for seasonality, delayed billing data, credits, and business growth?
+* How would you prioritize budget alerts based on forecasted overspend, business criticality, and time remaining in the billing period?
+* How would you build an automated escalation workflow that notifies owners, opens tickets, and triggers approved remediation without interrupting critical workloads?
+* How would you reduce false positives while detecting rapidly growing costs before the monthly budget is exceeded?
+* How would you design a budget system that separates soft alerts from enforceable spending guardrails and controlled exceptions?
+
+**Cost Governance**
+* How would you design a cost governance framework for a large organization with decentralized engineering teams and centralized financial accountability?
+* How would you combine policy-as-code, budgets, resource quotas, approval workflows, and continuous compliance monitoring?
+* How would you prevent shadow IT and unapproved resource provisioning while allowing emergency production changes?
+* How would you measure governance maturity using allocation coverage, policy compliance, forecast accuracy, and realized savings?
+* How would you handle disputes between engineering teams and finance when allocation rules do not reflect business value or actual resource consumption?
+
+**FinOps Architecture**
+* How would you design a scalable FinOps data platform that ingests billing exports, inventory, usage metrics, commitment data, and ownership metadata from multiple cloud providers?
+* How would you handle late-arriving billing records, corrections, duplicate ingestion, changing schemas, and historical restatements?
+* How would you design a normalized cost data model that supports invoice reconciliation, amortized cost, unit economics, forecasting, and team-level allocation?
+* How would you combine rules-based recommendations, anomaly detection, and machine learning while making recommendations explainable and auditable?
+* How would you integrate FinOps with infrastructure as code, CI/CD, Kubernetes, observability, and internal developer portals?

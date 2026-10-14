@@ -1,0 +1,30 @@
+* A Spring Boot API becomes slow after the employee table grows from thousands to millions of rows. How would you investigate and optimize the SQL queries?
+* A query executes quickly in development but takes several seconds in production. How would you compare data volume, indexes, statistics, execution plans, and database configuration?
+* A query performs a full table scan despite having an index on the filtering column. How would you determine why the index is not being used?
+* A newly created composite index does not improve query performance. How would you investigate index column order, selectivity, and the actual query plan?
+* An API retrieves the same information using many individual SQL statements. How would you reduce database round trips without making the query unnecessarily complex?
+* A report query involving multiple JOINs and aggregations consumes excessive database CPU. How would you identify the expensive operations and optimize the query?
+* A query using OFFSET and LIMIT becomes slower on later pages. How would you redesign pagination for a large table?
+* An employee report returns duplicate records after additional tables are joined. How would you identify the cause and correct the query?
+* A salary calculation query returns incorrect results because some salary values are NULL. How would you investigate SQL NULL semantics and fix the calculation?
+* A query using NOT IN unexpectedly returns no records because the subquery contains NULL values. How would you diagnose and correct the issue?
+* Two concurrent requests update the same bank account balance, causing one update to overwrite the other. How would you prevent lost updates?
+* A money-transfer transaction updates the debit account but fails before updating the credit account. How would you ensure atomicity and safe recovery?
+* Deadlocks occur intermittently when multiple services update related tables in different orders. How would you identify the cause and prevent recurrence?
+* A query that uses a correlated subquery becomes slow when the number of parent records increases. How would you rewrite and benchmark it?
+* A database migration introduces a new JOIN, causing several application endpoints to become slower. How would you identify the regression and validate the fix?
+* A bulk update locks millions of rows and blocks user-facing requests. How would you redesign the update process?
+* A Java application experiences SQL timeouts even though the same query runs quickly when executed manually. How would you investigate parameter values, connection acquisition, transaction settings, and execution plans?
+* A query returns different results under concurrent transactions. How would you investigate isolation levels and transaction boundaries?
+* A unique constraint violation occurs during simultaneous user registrations. How would you handle the race condition in Java and SQL?
+* A reporting query calculates total revenue across a large transactions table and frequently times out. How would you optimize aggregation, indexing, and precomputation?
+* A query using multiple OR conditions fails to use indexes efficiently. How would you evaluate alternative query structures?
+* An API uses SELECT * to retrieve large records, but it only needs three columns. How would you optimize the query and the Java object mapping?
+* A SQL query works correctly for most customer IDs but becomes extremely slow for a few specific IDs. How would you investigate data skew and parameter-sensitive execution plans?
+* A new index improves read performance but causes INSERT and UPDATE operations to slow down. How would you evaluate the trade-off?
+* A database connection pool is exhausted because transactions remain open during lengthy application processing. How would you redesign transaction boundaries?
+* A query returns correct results but consumes excessive memory in the Java application. How would you optimize result-set size, fetching, and streaming?
+* A production deployment changes the schema while older application instances are still running. How would you maintain backward compatibility?
+* A batch job processes millions of records but fails halfway through and restarts from the beginning. How would you design resumable and idempotent processing?
+* A query returns incorrect totals because JOINs multiply rows before aggregation. How would you restructure the query to preserve the correct results?
+* How would you investigate, resolve, and prevent recurring SQL performance incidents using query logs, execution plans, database metrics, and automated tests?

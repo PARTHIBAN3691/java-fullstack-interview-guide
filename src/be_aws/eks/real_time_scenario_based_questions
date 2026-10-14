@@ -1,0 +1,21 @@
+
+* A Spring Boot application works locally but enters `CrashLoopBackOff` after deployment to EKS. How would you investigate the container logs, startup command, configuration, and resource limits?
+* Your Pods remain in `Pending` status because Kubernetes cannot schedule them. How would you investigate resource requests, node capacity, taints, tolerations, and affinity rules?
+* An application deployed to EKS is running, but users receive HTTP 503 responses. How would you troubleshoot the Ingress or load balancer, target health, service selectors, and readiness probes?
+* A Java application is repeatedly terminated with `OOMKilled`. How would you determine whether the problem is caused by the JVM heap, native memory, container limits, or a memory leak?
+* Horizontal Pod Autoscaler does not increase the number of Pods during a traffic spike. How would you troubleshoot metrics availability, resource requests, and scaling configuration?
+* New Pods cannot start because the cluster has insufficient compute capacity. How would you investigate node autoscaling and scheduling constraints?
+* An EKS application needs to read objects from S3 but receives an access-denied error. How would you troubleshoot IRSA or EKS Pod Identity, IAM policies, and service account configuration?
+* Your application can reach another service by IP address but not by Kubernetes service name. How would you investigate CoreDNS and cluster networking?
+* A deployment introduces intermittent failures because old and new application versions run simultaneously. How would you implement backward-compatible changes and a safe rollout strategy?
+* A Java service needs to connect securely to Amazon RDS from a private EKS cluster. How would you configure networking, security groups, DNS, and database credentials?
+* Pods restart during node maintenance, causing temporary application errors. How would you configure PodDisruptionBudgets, readiness checks, and graceful shutdown?
+* Your EKS cluster has high CPU costs, but most Pods use only a small portion of their requested CPU. How would you right-size workloads and node groups?
+* An EKS workload needs persistent storage, but the Pod fails to mount its volume. How would you troubleshoot persistent volume claims, storage classes, IAM permissions, and CSI drivers?
+* Your company requires different access permissions for developers, operators, and CI/CD pipelines. How would you configure IAM and Kubernetes RBAC?
+* CloudWatch shows that application logs are missing for some Pods. How would you investigate log collection, container output, agent configuration, and IAM permissions?
+* A cluster upgrade causes some workloads to become unavailable. How would you investigate deprecated APIs, node compatibility, PodDisruptionBudgets, and rollout status?
+* An application must handle sudden traffic increases without excessive resource consumption. How would you configure requests, limits, HPA, and node autoscaling?
+* A Kubernetes Secret containing database credentials must be rotated without exposing the secret or causing downtime. How would you design the rotation process?
+* A production EKS cluster is unavailable in one AWS region. How would you restore the service using a disaster recovery environment in another region?
+* Your team needs a repeatable deployment process for Java microservices across development, staging, and production EKS clusters. How would you design the CI/CD pipeline, approvals, security checks, and rollback process?

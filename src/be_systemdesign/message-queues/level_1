@@ -1,0 +1,30 @@
+* How do you decide whether to use a message queue in an application?
+* How does a message queue decouple microservices?
+* How does asynchronous processing improve application performance?
+* How do you configure a producer and consumer in a messaging system?
+* What is the difference between competing consumers and pub-sub consumers?
+* How do you handle message acknowledgment in a consumer?
+* What happens when a consumer fails while processing a message?
+* How do you implement retry policies for failed messages?
+* How do you configure a dead-letter queue?
+* How do you handle duplicate messages?
+* How do you maintain message ordering across consumers?
+* How do you scale message consumers horizontally?
+* How do you handle a sudden increase in message volume?
+* What is backpressure in message processing?
+* How do you prevent a consumer from being overwhelmed?
+* How do message brokers persist messages?
+* What is the difference between durable queues and persistent messages?
+* How do you handle poison messages?
+* How do you configure message retention?
+* How do you monitor queue depth and consumer lag?
+* How do you handle network failures between producers and brokers?
+* How do you secure message queues?
+* How do you implement authentication and authorization for messaging?
+* How do you serialize and deserialize messages?
+* What are the advantages and disadvantages of JSON, Avro, and Protobuf for message payloads?
+* How do you manage schema changes in message-driven systems?
+* How do you implement delayed message processing?
+* How do you schedule messages for future processing?
+* How do you test message-driven applications?
+* How do you choose between Kafka, RabbitMQ, and Amazon SQS?

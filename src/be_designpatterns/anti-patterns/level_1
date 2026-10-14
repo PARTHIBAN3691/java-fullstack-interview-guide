@@ -1,0 +1,30 @@
+* How do you identify a God Object in an existing Java application?
+* How would you refactor a class that contains business logic, database access, validation, and logging?
+* How can you eliminate duplicated logic across multiple Java service classes?
+* How would you replace magic numbers and strings with meaningful constants or enums?
+* How can dependency injection help reduce tight coupling in Java applications?
+* How would you identify and resolve circular dependencies between Spring beans?
+* How can you refactor a method containing deeply nested if-else statements?
+* How would you break a large service class into smaller, cohesive classes?
+* How can the Strategy pattern help eliminate repeated conditional logic?
+* How can the Factory pattern help avoid scattered object creation logic?
+* How can the Template Method pattern help reduce duplicated algorithm steps?
+* How would you refactor a class that has too many responsibilities?
+* How can interfaces help prevent implementation-specific dependencies?
+* How would you identify Feature Envy in a Java class?
+* How can encapsulation help eliminate excessive getter and setter usage?
+* How would you refactor a Data Class containing no meaningful behavior?
+* How can composition help avoid inappropriate inheritance?
+* How would you replace primitive obsession in a financial application?
+* How can you prevent utility classes from becoming dumping grounds for unrelated methods?
+* How would you refactor a Singleton that manages multiple unrelated resources?
+* How can you avoid swallowing exceptions in Java applications?
+* How would you improve code that catches Exception for every operation?
+* How can you prevent an overly generic base class from becoming difficult to maintain?
+* How would you remove unnecessary abstraction from an overengineered application?
+* How can you identify unnecessary object creation without prematurely optimizing?
+* How would you refactor a method that performs validation, persistence, notifications, and reporting?
+* How can static analysis tools help identify design problems?
+* How would you use unit tests to support anti-pattern refactoring?
+* How can code reviews prevent anti-patterns from spreading?
+* How would you measure whether a refactoring has improved maintainability?

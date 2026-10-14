@@ -1,0 +1,30 @@
+* Implement an LRU cache in Java using LinkedHashMap.
+* Implement an LRU cache in Java using a HashMap and a doubly linked list.
+* Implement an LFU cache in Java.
+* Write a Java method that calculates the cache hit ratio from cache hit and miss counts.
+* Implement a simple in-memory key-value cache with TTL support.
+* Write a Java cache implementation that removes expired entries during reads.
+* Implement a thread-safe in-memory cache using ConcurrentHashMap.
+* Create a Spring Boot service method that uses @Cacheable to cache database query results.
+* Implement cache eviction using @CacheEvict when a product is updated.
+* Write a Spring Boot example using @CachePut to update a cached value.
+* Configure Redis as a Spring Boot cache provider with a custom TTL.
+* Implement different TTL values for product details and reference data in Spring Cache.
+* Write a Java method that builds a deterministic cache key from multiple request parameters.
+* Implement cache-aside logic using Redis and a database repository.
+* Write a test that verifies repeated service calls use the cached result instead of querying the repository again.
+* Write a Spring Boot integration test that verifies cache invalidation after updating an entity.
+* Implement a negative caching strategy for frequently requested nonexistent records.
+* Write a Java method that adds random jitter to a cache entry's expiration time.
+* Implement request coalescing so concurrent requests for the same missing key trigger only one database lookup within an application instance.
+* Write a Java example that falls back to a database when Redis is unavailable, with appropriate timeouts and concurrency limits.
+* Implement version-based cache keys to prevent stale values from being served after an update.
+* Create a Spring Boot example that publishes a cache invalidation event after a successful database transaction.
+* Implement a consumer that processes cache invalidation events and safely handles duplicate event delivery.
+* Write a Java program that simulates cache stampede behavior and demonstrates a mitigation strategy.
+* Implement a token-bucket rate limiter that protects the database when cache misses increase sharply.
+* Write a Java example that uses Caffeine as a local cache and Redis as a distributed cache.
+* Implement a cache key strategy that isolates cached values by tenant ID and user permissions.
+* Write a test that simulates Redis failure and verifies that the application degrades gracefully.
+* Implement a cache warming process that loads frequently accessed product records before traffic increases.
+* Design and implement a Spring Boot caching solution using Redis with TTL, cache invalidation, stampede protection, monitoring, and automated tests.

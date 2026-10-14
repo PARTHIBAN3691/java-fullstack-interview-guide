@@ -1,0 +1,119 @@
+
+**Enterprise CI/CD Architecture**
+* What is enterprise CI/CD architecture, and how does it differ from a project-specific CI/CD pipeline?
+* What are the main components of an enterprise CI/CD platform?
+* What is the difference between continuous integration, continuous delivery, and continuous deployment?
+* Why should build, test, security scanning, and deployment stages be standardized?
+* What are the benefits of separating application pipelines from shared platform infrastructure?
+
+**Centralized vs Decentralized DevOps**
+* What is centralized DevOps?
+* What is decentralized DevOps?
+* What is the difference between a centralized platform team and embedded DevOps engineers?
+* What are the advantages and disadvantages of centralized DevOps?
+* How can organizations maintain common standards while allowing teams autonomy?
+
+**Shared CI/CD Platforms**
+* What is a shared CI/CD platform?
+* Why do enterprises create reusable pipeline templates?
+* What are shared build agents and self-hosted runners?
+* How do shared pipeline libraries reduce duplication?
+* Why should shared CI/CD platform components be versioned?
+
+**Multi-Team Pipelines**
+* What challenges arise when multiple teams use the same CI/CD platform?
+* How do pipeline permissions differ from application repository permissions?
+* What is pipeline parameterization?
+* Why should each team have separate pipeline execution logs?
+* How can pipeline templates support different application types?
+
+**Multi-Account Cloud Strategy**
+* Why do enterprises separate cloud resources into multiple accounts, subscriptions, or projects?
+* What is the difference between production and non-production cloud accounts?
+* How do cloud accounts help with access control and cost allocation?
+* What is a landing zone?
+* Why should enterprises standardize account provisioning?
+
+**Multi-Region Deployments**
+* What is a multi-region deployment?
+* What is the difference between active-active and active-passive architectures?
+* Why do enterprises deploy applications across multiple regions?
+* What are the basic challenges of deploying the same application to multiple regions?
+* What is regional failover?
+
+**Multi-Cluster Kubernetes**
+* Why might an enterprise operate multiple Kubernetes clusters?
+* What is the difference between a single-cluster and multi-cluster architecture?
+* Why would production and non-production workloads use separate clusters?
+* What is a Kubernetes cluster context?
+* What are the basic challenges of managing cluster configuration consistently?
+
+**Enterprise Artifact Management**
+* What is an artifact repository?
+* What is the difference between source code and a build artifact?
+* Why should enterprises use immutable artifact versions?
+* What are container image registries?
+* Why should artifact retention and cleanup policies be defined?
+
+**Enterprise Secrets Management**
+* What is secrets management?
+* What is the difference between a secret and ordinary application configuration?
+* Why should passwords, API keys, and certificates not be stored in source code?
+* What is a secrets manager or vault?
+* Why should access to production secrets be restricted?
+
+**DevSecOps Governance**
+* What is DevSecOps governance?
+* How does DevSecOps integrate security into CI/CD?
+* What are software composition analysis and static application security testing?
+* Why should security checks run before production deployment?
+* What is a security policy gate?
+
+**Compliance Pipelines**
+* What is a compliance pipeline?
+* Why do regulated organizations automate compliance checks?
+* What are policy-as-code checks?
+* How can CI/CD verify infrastructure configuration against security standards?
+* Why should compliance checks produce evidence?
+
+**Auditability**
+* What is auditability in enterprise DevOps?
+* What information should be recorded for a production deployment?
+* Why should deployment logs be retained?
+* What is the difference between operational logging and an audit trail?
+* Why is it important to identify who initiated a production change?
+
+**Platform Engineering**
+* What is platform engineering?
+* How does platform engineering relate to DevOps?
+* What is an internal developer platform?
+* What problems does a platform engineering team solve?
+* Who are the customers of an internal developer platform?
+
+**Developer Self-Service**
+* What is developer self-service?
+* What development tasks can be offered through self-service portals?
+* How does self-service reduce dependency on platform teams?
+* Why should self-service operations enforce permissions?
+* What is the difference between self-service and unrestricted access?
+
+**Golden Paths**
+* What is a golden path in platform engineering?
+* Why do organizations provide approved application templates?
+* How do golden paths improve consistency?
+* Can developers customize a golden path?
+* Why should golden paths be maintained and versioned?
+
+**Organizational Scalability**
+* What does organizational scalability mean in enterprise DevOps?
+* How does team growth affect CI/CD platform design?
+* Why are ownership boundaries important in large engineering organizations?
+* How can shared standards reduce operational complexity?
+* What is the role of documentation in scaling DevOps practices?
+
+**DevOps Governance**
+* What is DevOps governance?
+* Why do enterprises define deployment and release policies?
+* What is separation of duties?
+* How do approval workflows support production governance?
+* Why should governance rules be reviewed periodically?

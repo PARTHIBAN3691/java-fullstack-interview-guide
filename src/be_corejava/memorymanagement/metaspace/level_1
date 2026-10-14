@@ -1,0 +1,21 @@
+
+* Explain the internal structure and memory management of Metaspace.
+* How does Metaspace allocate memory for class metadata?
+* What is the role of class loaders in Metaspace management?
+* What is the relationship between class loading, class metadata, and Metaspace usage?
+* How does Metaspace differ from the Java heap in terms of allocation and reclamation?
+* What is the difference between `MetaspaceSize` and `MaxMetaspaceSize`?
+* What is the purpose of `-XX:MinMetaspaceFreeRatio` and `-XX:MaxMetaspaceFreeRatio`?
+* What is compressed class space in the HotSpot JVM?
+* How does compressed class space relate to Metaspace?
+* What is the purpose of the `-XX:CompressedClassSpaceSize` option?
+* How can dynamically generated classes increase Metaspace usage?
+* How can frameworks such as Spring, Hibernate, and bytecode-generation libraries affect Metaspace?
+* How can repeated application redeployments cause Metaspace growth?
+* What conditions must be met before a class can be unloaded?
+* Why might a class loader remain reachable and prevent its classes from being unloaded?
+* How can you monitor Metaspace usage using JVM monitoring tools?
+* How can `jcmd` help diagnose Metaspace consumption?
+* How can JVM logs help identify class loading and unloading activity?
+* What is the difference between Metaspace exhaustion and Java heap exhaustion?
+* How would you investigate a gradual increase in Metaspace usage in a long-running application?

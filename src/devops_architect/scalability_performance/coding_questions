@@ -1,0 +1,144 @@
+
+**Horizontal and Vertical Scaling**
+* Implement a Java REST service that can run across multiple instances without storing session state locally.
+* Write a distributed job scheduler that ensures only one instance executes a particular scheduled task at a time.
+* Implement a load-distribution simulator that assigns requests to multiple workers using round-robin and least-loaded strategies.
+* Write a Java program that estimates the number of application instances required from request rate, per-instance throughput, and target utilization.
+* Implement a concurrency-safe service that processes requests from multiple instances without creating duplicate business records.
+
+**Auto Scaling**
+* Implement a scaling-policy simulator that increases or decreases instance count based on CPU utilization and request rate.
+* Write a Java component that applies scale-out and scale-in cooldown periods to avoid oscillating instance counts.
+* Implement a worker autoscaler that uses queue depth, oldest-message age, and average processing time.
+* Write a capacity estimator that calculates the number of workers needed to process a queue backlog within a target duration.
+* Implement a scale-in eligibility check that prevents termination of workers with active transactions or unacknowledged messages.
+
+**Load Balancing**
+* Implement a round-robin load balancer that distributes requests across healthy service instances.
+* Implement a least-connections load balancer that selects the instance with the fewest active requests.
+* Extend a load balancer to support weighted routing based on instance capacity.
+* Write a health-check registry that removes unhealthy instances and restores them after successful recovery checks.
+* Implement a load balancer that avoids routing requests to instances whose concurrency limits have been reached.
+
+**Connection Pooling**
+* Implement a simple bounded connection-pool simulator with acquire, release, timeout, and maximum-capacity behavior.
+* Write a Java component that tracks active, idle, and waiting connection counts.
+* Implement a connection lease mechanism that ensures resources are released when an operation throws an exception.
+* Write a pool-sizing calculator using request rate, average connection-hold time, and maximum database capacity.
+* Implement a concurrency test that detects connection leaks and verifies that all borrowed connections are eventually returned.
+
+**Caching**
+* Implement an LRU cache using a `HashMap` and a doubly linked list.
+* Implement a thread-safe cache with configurable TTL and expiration behavior.
+* Write a cache-aside service that reads from a cache first and queries a repository on a cache miss.
+* Implement a cache-stampede prevention mechanism that allows only one loader to refresh a particular key at a time.
+* Write a negative-caching mechanism for nonexistent records with a shorter TTL than valid records.
+* Implement cache statistics that calculate hit ratio, miss ratio, eviction count, and average lookup latency.
+* Write tests that verify cache invalidation after database updates and handle concurrent reads and writes.
+
+**CDN**
+* Implement a Java cache-control policy generator for static assets, public content, and user-specific responses.
+* Write a cache-key generator that handles query parameters consistently while excluding irrelevant parameters.
+* Implement a URL versioning strategy for static assets so that new releases do not depend on stale cached files.
+* Build a cache-hit-ratio calculator from origin-request and total-request metrics.
+* Implement a simple edge-cache simulator that supports TTL expiration and explicit invalidation.
+
+**Distributed Caching**
+* Implement a Redis-backed caching service using Spring Data Redis.
+* Write a distributed cache-aside implementation with configurable TTL and repository fallback.
+* Implement a cache-invalidation listener that processes database-change events idempotently.
+* Design a hot-key mitigation mechanism that uses local caching or request coalescing to reduce repeated distributed-cache lookups.
+* Write a fallback strategy that protects the database when the distributed cache becomes unavailable.
+* Implement a version-aware cache update mechanism that prevents an older event from overwriting newer data.
+* Write integration tests for cache misses, expiration, invalidation, concurrent access, and cache-server failure.
+
+**Queue-Based Scaling**
+* Implement a producer-consumer application using a bounded Java `BlockingQueue`.
+* Write a queue monitor that reports depth, arrival rate, processing rate, and estimated drain time.
+* Implement a worker-pool controller that adjusts consumer concurrency within configured minimum and maximum limits.
+* Write a message consumer with bounded retries, dead-letter handling, and idempotent processing.
+* Implement a Kafka consumer-scaling estimator that considers partition count and per-consumer processing capacity.
+* Write a backlog-draining simulator that calculates the time needed to clear queued messages under different arrival and processing rates.
+
+**Asynchronous Processing**
+* Implement an asynchronous REST endpoint using Spring Boot that accepts a job and returns HTTP 202 with a job identifier.
+* Write a job-status API that tracks queued, running, completed, and failed states.
+* Implement a Java service using `CompletableFuture` to execute independent downstream calls concurrently.
+* Write an asynchronous task processor using a bounded `ThreadPoolExecutor` with an explicit rejection policy.
+* Implement idempotent event processing to prevent duplicate order creation after message redelivery.
+* Write a retryable background job that preserves failure details and resumes safely after a process restart.
+* Implement correlation-ID propagation and timing metrics across asynchronous task execution.
+
+**Backpressure**
+* Implement a bounded producer-consumer pipeline that blocks or rejects producers when the queue is full.
+* Write a custom `RejectedExecutionHandler` that applies an explicit overload policy when a Java executor reaches capacity.
+* Implement a request-admission controller that limits active requests and returns an appropriate overload response.
+* Build a producer that reduces its publishing rate when consumer lag exceeds a configurable threshold.
+* Implement a queue controller that supports pause, resume, and bounded draining.
+* Write a simulation that compares blocking, dropping, and rejection strategies when arrival rate exceeds processing capacity.
+* Implement tests that verify bounded memory use and stable recovery after a sustained traffic spike.
+
+**Capacity Planning**
+* Write a Java calculator that estimates required instances from peak requests per second, per-instance capacity, and target utilization.
+* Implement a capacity model that estimates CPU, memory, connection-pool, and database requirements for projected traffic.
+* Write a calculator that determines the additional capacity needed to survive the loss of one availability zone.
+* Implement a workload-growth forecast using historical traffic and configurable growth rates.
+* Write a cost estimator that compares vertical scaling, horizontal scaling, and queue-based processing.
+* Implement a headroom calculator that accounts for expected peak traffic and a configurable failure reserve.
+
+**Performance Testing**
+* Write a Java benchmark that measures operations per second and average, p95, and p99 latency.
+* Implement a warm-up phase that separates JVM startup and JIT-compilation effects from steady-state measurements.
+* Write a test harness that records throughput, errors, and response-time percentiles during concurrent execution.
+* Implement a performance regression checker that compares benchmark results against configurable thresholds.
+* Write a utility that calculates latency percentiles from a collection of recorded request durations.
+* Implement a repeatable benchmark runner that records JVM version, configuration, workload size, and test results.
+
+**Load Testing**
+* Implement a concurrent HTTP load generator with configurable request rate, duration, and worker count.
+* Write a load-test client that supports a mix of read and write operations with configurable traffic proportions.
+* Implement an open-arrival-rate load generator that schedules requests independently of previous request completion.
+* Write a test that measures the maximum sustainable throughput before latency and error rates exceed configured limits.
+* Implement a load-test report that includes requests per second, error rate, average latency, p95, p99, and timeout count.
+* Write a comparison tool that identifies performance regressions between two test runs.
+
+**Stress Testing**
+* Implement a load ramp that progressively increases concurrent requests until a configured failure threshold is reached.
+* Write a stress-test harness that identifies the throughput saturation point and records resource metrics.
+* Implement a recovery test that measures how quickly a service returns to normal after the load is reduced.
+* Write a test client that injects slow requests, connection failures, and timeouts into a controlled environment.
+* Implement an overload test that verifies bounded queues, rejection policies, and circuit breakers prevent uncontrolled resource growth.
+
+**Soak Testing**
+* Implement a long-running test harness that sends requests at a steady rate and periodically records heap usage, thread count, and response latency.
+* Write a memory-growth detector that flags sustained increases in memory usage after accounting for garbage collection.
+* Implement a resource-leak test that tracks open connections, file handles where observable, and active threads over time.
+* Write a soak-test report that compares early-run and late-run throughput and latency percentiles.
+* Implement a scheduled workload generator that exercises periodic jobs, cache expiration, and connection reuse during a long-running test.
+
+**Bottleneck Analysis**
+* Write a Java utility that calculates the contribution of individual downstream calls to total request latency.
+* Implement a request-timing interceptor for Spring Boot that records endpoint execution time and tags requests by outcome.
+* Build a program that analyzes thread-dump summaries to identify large groups of blocked or waiting threads.
+* Write a log-analysis tool that identifies slow endpoints and ranks them by frequency and total accumulated latency.
+* Implement a benchmark that compares sequential execution with concurrent execution of independent I/O-bound tasks.
+* Write a report generator that correlates request latency, error rate, queue depth, and resource-utilization metrics.
+
+**Latency Optimization**
+* Implement a Java service that executes independent downstream calls concurrently and combines the results within a shared deadline.
+* Write a request-timeout utility that propagates the remaining deadline to subsequent operations.
+* Implement a cache with request coalescing so concurrent cache misses for the same key share one database lookup.
+* Optimize a Java aggregation endpoint by eliminating repeated repository calls and unnecessary object allocations; demonstrate the change through benchmarks.
+* Write a database pagination example that compares offset-based and keyset-based pagination under large datasets.
+* Implement a batch-processing service that groups database writes to reduce round trips while preserving required transaction semantics.
+* Write a benchmark that compares different JVM configurations and reports throughput and tail-latency changes.
+
+**Integrated Scalability & Performance Challenges**
+* Design a Spring Boot API that combines horizontal scaling, load balancing, distributed caching, bounded concurrency, and database connection pooling.
+* Build a queue-based order-processing service that supports burst traffic, autoscaling consumers, bounded retries, idempotency, and backpressure.
+* Implement an end-to-end performance test for an order API with database and cache dependencies, and identify the first bottleneck as traffic increases.
+* Design a scalable notification service that handles millions of queued messages while enforcing per-customer limits and controlling downstream throughput.
+* Build a load-test experiment that compares synchronous processing with asynchronous queue-based processing using throughput, p95/p99 latency, error rate, and resource usage.
+* Implement a resilience test in which the cache becomes unavailable, the database slows down, and traffic spikes simultaneously; verify that the application remains bounded and recovers safely.
+* Build a performance-monitoring component that calculates latency percentiles, cache-hit ratio, queue lag, connection-pool utilization, and throughput, then flags likely bottlenecks.
+* Design a capacity-planning exercise that uses benchmark data to estimate instance count, database capacity, cache size, and cost for normal traffic, peak traffic, and one-zone failure.

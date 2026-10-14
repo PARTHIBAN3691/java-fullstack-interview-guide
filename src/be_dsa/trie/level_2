@@ -1,0 +1,30 @@
+* How do you implement a compressed Trie to reduce memory usage for large dictionaries?
+* How does a radix tree differ from a standard Trie?
+* How does a Patricia Trie compress chains of single-child nodes?
+* How do you implement deletion in a compressed Trie while preserving its structure?
+* How do you design a Trie that supports efficient insertion, deletion, prefix counting, and word frequency queries?
+* How do you find the kth lexicographically smallest word stored in a Trie?
+* How do you find the longest common prefix of all words using a Trie without scanning every word repeatedly?
+* How do you find the longest string that is a prefix of every other string in a collection?
+* How do you implement autocomplete with frequency-based ranking and efficient top K retrieval?
+* How do you update autocomplete rankings efficiently when word frequencies change frequently?
+* How do you implement wildcard matching with multiple wildcard characters in a Trie?
+* How do you implement a dictionary that supports regular-expression-like pattern matching?
+* How do you use a Trie and backtracking to find all dictionary words in a character grid?
+* How do you optimize Word Search II by pruning Trie branches after finding words?
+* How do you find the maximum XOR pair in an array using a binary Trie in O(n) time?
+* How do you find the maximum XOR of a value with array elements restricted to a given range?
+* How do you use a persistent binary Trie to answer range-based maximum XOR queries?
+* How do you count pairs of numbers whose XOR is smaller than a given threshold using a binary Trie?
+* How do you use a Trie to count subarrays whose XOR equals a specified value?
+* How do you count distinct substrings using a suffix Trie, and what are its memory limitations?
+* How do suffix Tries compare with suffix arrays and suffix trees?
+* How do you implement an Aho-Corasick automaton for matching multiple patterns in one text?
+* How do failure links improve multi-pattern matching in an Aho-Corasick automaton?
+* How do you support Unicode text in a Trie without assuming a fixed alphabet size?
+* How do you design a thread-safe Trie for concurrent reads and writes?
+* How would you implement a lock-free or fine-grained-lock Trie, and what challenges would arise?
+* How do you minimize memory usage when storing millions of words with overlapping prefixes?
+* How do you design a distributed autocomplete system using partitioned Trie structures?
+* How do you support incremental Trie updates without rebuilding the entire index?
+* How would you benchmark a Trie against HashMap, TreeMap, and sorted-array-based prefix lookup for large datasets?

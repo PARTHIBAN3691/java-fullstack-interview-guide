@@ -1,0 +1,99 @@
+**Enterprise Knowledge Assistants**
+
+* Design a multi-department knowledge assistant over millions of documents with document-level permissions, multilingual retrieval, citations, incremental indexing, and tenant isolation. How would you prevent information leakage and stale answers?
+* How would you evaluate retrieval and generation independently, build a representative evaluation dataset, and improve performance when users report plausible but unsupported answers?
+
+**Customer Support Chatbots**
+
+* Design an enterprise support assistant that handles millions of conversations, accesses customer-specific records, supports multiple languages, and transfers conversations to human agents without losing context.
+* How would you prevent a chatbot from inventing refund policies, exposing another customer's data, or performing unauthorized account actions while still providing useful answers?
+
+**AI Coding Assistants**
+
+* Design an AI coding assistant for a large monorepo with hundreds of services, multiple languages, internal libraries, strict security policies, and repository-specific coding standards.
+* How would you measure the effect of AI coding assistance on delivery speed, defect rates, review effort, maintainability, and developer productivity without relying solely on lines of code generated?
+
+**Document Intelligence**
+
+* Design a document intelligence platform processing millions of mixed-format documents with asynchronous extraction, confidence scoring, human review, schema versioning, and auditability.
+* How would you detect and recover from silent extraction failures where the output is syntactically valid but important values, table relationships, or document sections are incorrect?
+
+**Contract and Legal Document Analysis**
+
+* Design a contract analysis platform that identifies obligations, clause dependencies, deviations from approved templates, and risky provisions while preserving evidence for every finding.
+* How would you prevent unsupported legal conclusions and ensure that uncertainty, conflicting clauses, jurisdiction-specific rules, and human review are represented in the output?
+
+**Invoice and Financial Document Processing**
+
+* Design an invoice-processing system that handles multiple currencies, tax regimes, purchase-order matching, duplicate submissions, approval hierarchies, and integration failures across financial systems.
+* How would you prevent hallucinated amounts or supplier identities from triggering payments, and how would you maintain a complete audit trail from source document to financial posting?
+
+**Enterprise Search**
+
+* Design a unified enterprise search platform spanning relational databases, document repositories, collaboration tools, and ticketing systems with different permission models.
+* How would you guarantee that permission revocations and document deletions propagate to indexes and caches quickly enough to prevent unauthorized disclosure?
+
+**Text Summarization**
+
+* Design a summarization service for large, evolving collections of reports with source attribution, audience-specific summaries, change detection, and strict factual accuracy requirements.
+* How would you prevent important exceptions from disappearing in hierarchical summarization and detect contradictions between summaries generated at different stages?
+
+**Information Extraction**
+
+* Design a schema-driven extraction platform that supports heterogeneous documents, nested entities, cross-document relationships, confidence calibration, and human correction.
+* How would you detect when a model consistently extracts plausible but incorrect values and safely introduce a new model or extraction schema without disrupting downstream consumers?
+
+**Recommendation Systems**
+
+* Design a recommendation platform that supports real-time personalization, cold-start users, inventory changes, business constraints, and low-latency ranking at high traffic volumes.
+* How would you address feedback loops, popularity bias, filter bubbles, fairness concerns, and online experimentation while optimizing long-term business outcomes?
+
+**Natural Language to SQL**
+
+* Design a natural-language analytics interface over a large enterprise database with sensitive columns, complex joins, business-specific terminology, and expensive analytical queries.
+* How would you prevent semantic errors, unauthorized data access, SQL injection, resource exhaustion, and confidently presented but incorrect business conclusions?
+
+**AI-Powered Analytics**
+
+* Design a conversational analytics platform that translates ambiguous business questions into governed metrics, executes queries, explains results, and supports follow-up questions.
+* How would you ensure metric consistency across departments, detect unsupported causal claims, and reproduce an insight after the underlying data or semantic model changes?
+
+**Fraud Detection**
+
+* Design a real-time fraud detection system that processes high-volume transactions, combines streaming features with machine learning, and returns decisions within a strict latency budget.
+* How would you address delayed fraud labels, adversarial adaptation, model drift, explainability requirements, and the cost of false declines versus missed fraud?
+
+**Predictive Maintenance**
+
+* Design a predictive maintenance platform for geographically distributed industrial equipment with intermittent connectivity, high-frequency sensor streams, limited failure labels, and expensive maintenance operations.
+* How would you avoid data leakage from future maintenance information, account for equipment-specific behavior, and translate predictions into actionable maintenance schedules?
+
+**Workflow Automation**
+
+* Design a durable AI-assisted workflow engine that supports long-running processes, conditional branches, human approvals, external APIs, retries, and compensation.
+* How would you prevent prompt injection, duplicate financial actions, invalid state transitions, and unrecoverable workflows when AI-generated decisions interact with deterministic business processes?
+
+**AI for Software Development**
+
+* Design an enterprise software engineering assistant that supports requirements analysis, code generation, testing, code review, dependency upgrades, and secure deployment across many repositories.
+* How would you enforce policy gates and evaluate AI-generated changes when tests are incomplete, dependencies are vulnerable, and model outputs vary between runs?
+
+**AI for DevOps and AIOps**
+
+* Design an AIOps platform that correlates telemetry across thousands of services, identifies probable root causes, and recommends or executes remediation under controlled conditions.
+* How would you distinguish correlation from causation, avoid alert-feedback loops, and ensure automated remediation does not amplify an incident?
+
+**AI for IT Operations**
+
+* Design an enterprise IT operations copilot that handles incidents, service requests, access workflows, infrastructure diagnostics, and runbook execution across hybrid environments.
+* How would you authorize high-impact actions, preserve operational evidence, and recover safely when a multi-step remediation succeeds partially?
+
+**AI for Cybersecurity**
+
+* Design an AI-assisted security operations platform that prioritizes alerts, correlates threats, investigates suspicious behavior, and supports analyst-approved containment actions.
+* How would you defend against adversarial inputs, data poisoning, prompt injection, false positives, and unsafe autonomous response actions?
+
+**AI for Business Process Automation**
+
+* Design an enterprise process automation platform that handles unstructured inputs, policy-driven decisions, approvals, exceptions, and transactional updates across legacy and modern systems.
+* How would you quantify end-to-end business value, maintain compliance evidence, and ensure process correctness when the AI model, business rules, and source systems evolve independently?

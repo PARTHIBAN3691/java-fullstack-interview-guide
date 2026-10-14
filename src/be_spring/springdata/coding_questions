@@ -1,0 +1,30 @@
+* Create an Employee entity and implement CRUD operations using Spring Data JPA.
+* Create a Spring Boot application with an entity, JpaRepository, service, and REST controller.
+* Write derived query methods to find employees by name, department, salary, and joining date.
+* Implement a JPQL query using @Query to retrieve employees whose salary exceeds a given value.
+* Write a native SQL query using @Query and named parameters.
+* Implement an update query using @Modifying and @Query.
+* Implement a delete query using @Modifying and @Query.
+* Create a paginated employee search API using Pageable and PageRequest.
+* Implement sorting by multiple columns using Spring Data JPA.
+* Create an endpoint that returns a Slice of results instead of a Page.
+* Implement dynamic filtering using JpaSpecificationExecutor and Specification.
+* Create interface-based and DTO-based projections for an employee report.
+* Implement a OneToMany and ManyToOne relationship between Department and Employee entities.
+* Implement a ManyToMany relationship between Student and Course entities.
+* Demonstrate cascading persistence and orphanRemoval with parent-child entities.
+* Implement auditing using @CreatedDate and @LastModifiedDate.
+* Implement optimistic locking using the @Version annotation.
+* Write a service method that transfers money between two accounts within a transaction.
+* Demonstrate transaction rollback when an exception occurs during a multi-step operation.
+* Write a test that verifies repository operations using @DataJpaTest.
+* Implement a custom repository using EntityManager and a custom query.
+* Create a Specification-based search with optional filters for department, salary, and joining date.
+* Implement an EntityGraph to load an entity and its required relationships efficiently.
+* Demonstrate the N+1 query problem and fix it using JOIN FETCH or batch fetching.
+* Implement batch inserts and updates for thousands of records using Hibernate configuration.
+* Create a keyset-pagination query using an indexed identifier and a stable ordering.
+* Implement a bulk update and handle persistence-context synchronization correctly.
+* Write an integration test that verifies optimistic locking under concurrent updates.
+* Configure two data sources and route repository operations to the appropriate database.
+* Build a production-ready Spring Data JPA application with validation, transaction management, pagination, auditing, concurrency control, database migrations, and integration tests.

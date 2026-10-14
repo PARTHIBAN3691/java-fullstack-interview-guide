@@ -1,0 +1,30 @@
+* Write a Java program that simulates a primary node replicating data to a secondary node.
+* Implement a simple in-memory key-value store with one primary and multiple replicas.
+* Write a Java program that asynchronously propagates updates from a primary to replicas.
+* Implement synchronous replication where a write succeeds only after the required replicas acknowledge it.
+* Implement a replication factor configuration for a simulated distributed storage system.
+* Write a Java class that tracks replication lag using log sequence numbers.
+* Implement a replica health monitor using heartbeats and failure timeouts.
+* Write a Java program that detects when a replica falls behind the primary.
+* Implement a read router that sends writes to the primary and reads to available replicas.
+* Write a Java utility that routes a read to the primary when read-after-write consistency is required.
+* Implement a retry mechanism for failed replication operations.
+* Write a replication worker that processes changes from a write-ahead log in sequence.
+* Implement a checkpoint mechanism that records the last successfully replicated log position.
+* Write a Java program that resumes replication from the last checkpoint after a failure.
+* Implement a replica recovery process that applies missing changes from the primary.
+* Write a Java program that simulates leader election among several replica nodes.
+* Implement a simple quorum-read and quorum-write mechanism for replicated key-value data.
+* Write a program that detects conflicting versions of a record received from multiple leaders.
+* Implement a conflict-resolution strategy using version numbers and timestamps, including its limitations.
+* Write a Java program that demonstrates last-write-wins conflict resolution for multi-leader replication.
+* Implement a version-vector structure to track concurrent updates to replicated records.
+* Write a Java program that simulates split-brain and rejects writes from a leader with an outdated fencing token.
+* Implement a replica manager that detects failed nodes and reassigns replication responsibilities.
+* Write a Java utility that calculates replication lag and reports whether a replica meets a configured recovery objective.
+* Implement a replication pipeline that batches changes to reduce network overhead.
+* Write a Java program that verifies data consistency between a primary and its replicas using checksums.
+* Implement a safe replica bootstrap process that copies a snapshot and then applies subsequent log changes.
+* Write a Kafka producer and consumer example that demonstrates partition replication and message acknowledgments.
+* Implement an integration test that simulates primary failure during concurrent writes and validates recovery behavior.
+* Build a Spring Boot application that demonstrates primary-replica routing, replication monitoring, health checks, and failover handling.

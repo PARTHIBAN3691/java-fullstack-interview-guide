@@ -1,0 +1,30 @@
+* Explain how Spring's TestContext Framework manages the ApplicationContext during tests.
+* How does Spring cache ApplicationContext instances between test classes?
+* How can excessive ApplicationContext creation affect test execution time?
+* How do you optimize a large Spring Boot test suite?
+* What is the difference between @SpringBootTest and @WebMvcTest internally?
+* When should you use @SpringBootTest(webEnvironment = RANDOM_PORT)?
+* What is the difference between MockMvc testing and testing with TestRestTemplate?
+* What is the difference between TestRestTemplate and WebTestClient?
+* How do you test asynchronous Spring MVC endpoints?
+* How do you test reactive Spring WebFlux applications?
+* How do you test WebFlux controllers using WebTestClient?
+* How do you test Spring Security filters?
+* How do you test OAuth2-protected Spring Boot endpoints?
+* How do you test method-level security such as @PreAuthorize?
+* How do you test transactions involving multiple repository operations?
+* How do you verify transaction rollback behavior?
+* How do you test optimistic locking in Spring Data JPA?
+* How do you test pessimistic locking behavior?
+* How do you test database concurrency scenarios?
+* How do you test multiple data sources in a Spring Boot application?
+* How do you test applications using Testcontainers?
+* What are the advantages of Testcontainers over embedded databases?
+* How do you test Kafka producers and consumers in Spring Boot?
+* How do you test asynchronous message processing reliably?
+* How do you test Spring Batch jobs?
+* How do you test scheduled jobs without making tests slow or flaky?
+* How do you test Spring caching with different cache providers?
+* How do you test external service integrations without calling real external systems?
+* How do you combine WireMock or MockWebServer with Spring Boot tests?
+* How do you identify and eliminate flaky Spring integration tests?

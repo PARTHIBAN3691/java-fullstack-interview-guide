@@ -1,0 +1,26 @@
+
+* Explain the type-inference rules used by the Java compiler for local variables declared using `var`.
+* Why is `var` restricted to local variables with initializers?
+* How does `var` behave when the initializer is a generic method invocation?
+* How can target typing differences affect the inferred type of a `var` declaration?
+* How does `var` interact with wildcard types and generic collections?
+* What are the potential maintainability risks of using `var` extensively in a large enterprise codebase?
+* How would you define coding guidelines for using `var` in a team project?
+* How does `var` behave when used with anonymous classes and intersection types?
+* Why does `var` not eliminate Java's static type checking?
+* How do immutable collection factory methods differ from defensive copying?
+* How do `List.copyOf()` and `Collections.unmodifiableList()` differ when the original collection is subsequently modified?
+* Why are collections returned by `copyOf()` shallowly immutable rather than deeply immutable?
+* How would you safely create an immutable snapshot of a collection containing mutable objects?
+* What are the behavioral implications of calling `Set.copyOf()` on a collection containing duplicate values?
+* How would you handle null values before converting a legacy collection to an immutable collection using `copyOf()`?
+* How does AppCDS differ from ordinary Class-Data Sharing?
+* How can AppCDS reduce startup time and memory consumption in containerized Java applications?
+* What deployment steps are required to benefit from an AppCDS archive?
+* What is the role of the `GarbageCollectorMXBean` and related management interfaces in observing garbage collection?
+* How does the experimental Graal compiler differ from the default HotSpot JIT compilers?
+* What risks should be considered before enabling an experimental compiler in production?
+* How does Java 10's container awareness influence heap sizing and CPU availability in a container?
+* How would you diagnose an `OutOfMemoryError` in a Java application running under a strict container memory limit?
+* How would you benchmark the startup and memory improvements from AppCDS in a production-like environment?
+* How would you plan a Java 10 migration while preserving application behavior, deployment compatibility, and operational stability?

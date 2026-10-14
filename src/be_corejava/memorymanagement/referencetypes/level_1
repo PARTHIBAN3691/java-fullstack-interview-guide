@@ -1,0 +1,21 @@
+
+* Explain the differences between strong, soft, weak, and phantom references.
+* How does the garbage collector treat an object referenced only by a strong reference?
+* Under what conditions can an object referenced only by a `WeakReference` be reclaimed?
+* When might the garbage collector clear a `SoftReference`?
+* Why should soft references not be used as a predictable cache eviction mechanism?
+* What is the purpose of `PhantomReference` if its `get()` method always returns `null`?
+* How does a `ReferenceQueue` work with weak and phantom references?
+* What is the difference between an object becoming eligible for garbage collection and a reference being cleared?
+* Can a `WeakReference` guarantee when an object will be garbage collected?
+* What happens when `WeakReference.get()` returns `null`?
+* How can `WeakHashMap` help prevent certain memory retention problems?
+* How does `WeakHashMap` differ from `HashMap` in key reference handling?
+* What happens to a `WeakHashMap` entry when its key becomes weakly reachable and is reclaimed?
+* What are the limitations of using weak references in application caches?
+* How can strong references accidentally defeat the purpose of weak references?
+* What is the difference between `Reference.clear()` and `Reference.enqueue()`?
+* How can you use a `ReferenceQueue` to detect when weakly referenced objects have been cleared?
+* What is the difference between weak references and `ThreadLocal` values in terms of memory retention?
+* How do reference types behave when objects are part of a circular reference chain?
+* How would you choose an appropriate reference type for a cache, listener registry, or resource-tracking mechanism?

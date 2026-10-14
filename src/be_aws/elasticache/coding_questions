@@ -1,0 +1,21 @@
+
+* Write a Java program using Spring Data Redis to connect to a Redis-compatible ElastiCache endpoint.
+* Write a Java program using `RedisTemplate` to store and retrieve a string key-value pair.
+* Write a Java program to cache a Java object using Redis and configure appropriate serialization.
+* Write a Spring Boot service using `@Cacheable` to cache product details retrieved from a database.
+* Write a Spring Boot service using `@CachePut` and `@CacheEvict` to update and invalidate cached product data.
+* Write a Java program to set a key with a configurable TTL and retrieve the remaining expiration time.
+* Write a Java program to implement cache-aside logic using a repository and Redis.
+* Write a Java program to prevent cache stampedes by allowing only one request to refresh an expired cache entry.
+* Write a Java program to implement a distributed rate limiter using Redis and atomic operations.
+* Write a Java program to implement a distributed lock using Redis with a unique lock token and safe release logic.
+* Write a Java program to implement an idempotency key for a payment API using Redis and expiration.
+* Write a Java program to store and retrieve user session information using Redis hashes.
+* Write a Java program to use Redis sorted sets to maintain a leaderboard ordered by score.
+* Write a Java program to implement a sliding-window rate limiter using Redis sorted sets.
+* Write a Java program to publish messages using Redis Pub/Sub and consume them from another Java process.
+* Write a Java program to process messages using Redis Streams and consumer groups.
+* Write a Java program to handle Redis connection failures using timeouts, bounded retries, and fallback behavior.
+* Write a Java program to collect cache hit and miss counts and publish application metrics to CloudWatch.
+* Write a Java program to implement cache invalidation after a database transaction commits successfully.
+* Design and implement a Spring Boot caching module using Amazon ElastiCache, Spring Data Redis, configurable TTLs, cache metrics, exception handling, and unit tests.

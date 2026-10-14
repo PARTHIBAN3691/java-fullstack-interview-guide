@@ -1,0 +1,30 @@
+* Create a Spring Boot application that connects to MongoDB using Spring Data MongoDB.
+* Implement CRUD operations for a Customer document using MongoRepository.
+* Write a MongoTemplate query that filters documents by multiple fields and sorts the results.
+* Implement a MongoDB aggregation pipeline that calculates total sales by customer.
+* Create a compound index for a MongoDB collection and verify its impact using explain execution statistics.
+* Implement optimistic concurrency control for MongoDB documents using Spring Data versioning support.
+* Write a Spring Boot service that executes a multi-document MongoDB transaction.
+* Implement bounded retries for transient MongoDB transaction failures without duplicating business operations.
+* Create a Spring Boot service that uses Redis for cache-aside data access.
+* Implement a Redis cache with configurable TTL and cache invalidation after database updates.
+* Write a Java program using Redis atomic operations to implement a rate limiter.
+* Implement a distributed lock using Redis and explain how to handle lease expiration and safe release.
+* Write a Java service that prevents cache stampedes using locking or request coalescing.
+* Implement a Redis-based idempotency mechanism for processing repeated API requests.
+* Create a Spring Data Cassandra application that inserts and retrieves time-series records.
+* Design a Cassandra table with an appropriate partition key and clustering columns for a specified query pattern.
+* Write a Java program that executes Cassandra queries using an appropriate consistency level.
+* Implement pagination for a Cassandra query using paging state.
+* Create a Java service that handles NoSQL connection timeouts, retries, and transient failures.
+* Implement centralized exception handling for duplicate-key errors, validation failures, and database connectivity issues.
+* Write a change-stream consumer that processes MongoDB document changes and handles resume tokens.
+* Implement an idempotent event consumer that stores processed event identifiers in a NoSQL database.
+* Design a Java service that updates a NoSQL database and publishes an event reliably using the transactional outbox pattern.
+* Create an integration test for a MongoDB repository using Testcontainers.
+* Write a concurrency test that verifies simultaneous updates do not silently overwrite MongoDB document changes.
+* Implement a cache invalidation strategy that prevents stale Redis entries after database updates.
+* Write a Java program that measures NoSQL query latency and records timeout and retry metrics.
+* Implement a batch-write process that processes documents in bounded chunks and handles partial failures.
+* Create a NoSQL schema migration utility that supports both old and new document formats during rollout.
+* Design and implement a scalable Java Spring Boot service using an appropriate NoSQL database, covering data modeling, indexing, consistency, caching, resilience, and monitoring.

@@ -1,0 +1,30 @@
+* What is a Schema Registry in Kafka?
+* Why do we need Schema Registry in Kafka applications?
+* What problems does Schema Registry solve?
+* What is a schema in Kafka?
+* What is the relationship between Kafka and Schema Registry?
+* What is Apache Avro?
+* What is the difference between Avro, JSON, and Protobuf?
+* What is a schema subject in Schema Registry?
+* What is a schema version?
+* What is a schema ID?
+* How does a Kafka producer use Schema Registry?
+* How does a Kafka consumer use Schema Registry?
+* What is schema serialization?
+* What is schema deserialization?
+* What is the role of a serializer in Schema Registry integration?
+* What is the role of a deserializer in Schema Registry integration?
+* What is schema evolution?
+* What is backward compatibility?
+* What is forward compatibility?
+* What is full compatibility?
+* What is the difference between backward and forward compatibility?
+* What is the purpose of a schema compatibility setting?
+* What happens when a producer sends a record using an incompatible schema?
+* Can multiple Kafka topics use the same schema?
+* What is the difference between a topic name and a schema subject?
+* What is the purpose of the Schema Registry REST API?
+* What is the difference between a schema and a schema ID?
+* What is the purpose of the schema's default value?
+* What happens when a required field is missing from a record?
+* How do you configure Schema Registry in a Kafka application?

@@ -1,0 +1,30 @@
+* How would you design a highly available Spring Boot application using Google App Engine?
+* How would you choose between App Engine Standard and Flexible for a Java microservices application?
+* How would you migrate a legacy Java application running on virtual machines to App Engine?
+* How would you migrate an existing Spring Boot application from App Engine Standard to Cloud Run?
+* How would you design zero-downtime deployments with traffic splitting, validation, and rollback?
+* How would you implement a canary deployment strategy using multiple App Engine versions?
+* How would you prevent incompatible database schema changes from breaking older App Engine versions during a rollout?
+* How would you configure autoscaling for unpredictable traffic spikes while controlling operational cost?
+* How would you diagnose excessive instance creation and unexpected scaling costs?
+* How would you optimize Spring Boot startup time and memory consumption in App Engine Standard?
+* How would you investigate thread starvation, connection pool exhaustion, and request timeouts in App Engine?
+* How would you design a connection pooling strategy for Cloud SQL when App Engine scales to many instances?
+* How would you prevent database connection exhaustion during sudden traffic spikes?
+* How would you securely access private resources such as Cloud SQL, Memorystore, or internal services from App Engine?
+* How would you design IAM permissions using least privilege for App Engine service accounts?
+* How would you implement secret rotation for database passwords and external API credentials?
+* How would you design a resilient integration between App Engine and downstream microservices?
+* How would you handle retries, exponential backoff, circuit breaking, and idempotency in a Java application on App Engine?
+* How would you process long-running tasks without exceeding HTTP request deadlines?
+* How would you design reliable asynchronous processing using App Engine, Cloud Tasks, and Pub/Sub?
+* How would you ensure that scheduled App Engine Cron jobs do not execute duplicate business operations?
+* How would you trace a request across App Engine, Cloud SQL, and downstream APIs using distributed tracing?
+* How would you establish service-level indicators and service-level objectives for an App Engine application?
+* How would you investigate intermittent latency when average response times look healthy but the 99th percentile is high?
+* How would you design disaster recovery and data protection for a business-critical App Engine application?
+* How would you handle regional failure scenarios and recovery requirements for App Engine workloads?
+* How would you implement infrastructure as code for App Engine services, versions, IAM, and supporting resources?
+* How would you secure an App Engine application against abusive traffic, injection attacks, and unauthorized access?
+* How would you evaluate App Engine versus Cloud Run, GKE, and Compute Engine for a Java enterprise workload?
+* How would you design a cost-efficient App Engine architecture for a multi-tenant enterprise application with strict availability requirements?

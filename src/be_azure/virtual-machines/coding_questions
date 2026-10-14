@@ -1,0 +1,30 @@
+* Write a Java Spring Boot application configuration that allows a JAR application to run reliably on an Azure Linux VM.
+* Write a Linux shell script to start a Spring Boot JAR and record its process ID and logs.
+* Write a systemd service configuration to run a Java Spring Boot application and restart it after unexpected failure.
+* Write a shell script to check whether a Java process is running and restart the service if it is unavailable.
+* Write a shell script to monitor disk utilization and report when a filesystem exceeds a configured threshold.
+* Write a script to rotate and archive Java application logs while preserving recent logs for troubleshooting.
+* Write Java code to expose application health and readiness endpoints using Spring Boot Actuator.
+* Write Java code to implement graceful shutdown so an application can finish in-flight requests before termination.
+* Write Java code to retrieve secrets from Azure Key Vault using managed identity on an Azure VM.
+* Write Java code to access Azure Blob Storage using DefaultAzureCredential without storing account keys.
+* Write Java code to authenticate to Azure services using the VM's managed identity.
+* Write Java code to publish custom application metrics that can be collected by Azure Monitor.
+* Write a Java utility that records JVM memory usage, garbage collection statistics, and thread counts.
+* Write a Java program to detect and report slow API requests with correlation IDs and structured logging.
+* Write Java code to implement a resilient REST client with connection timeouts, read timeouts, and bounded retries.
+* Write Java code to configure a database connection pool with appropriate maximum connections and timeout settings.
+* Write a Java service that handles termination signals and stops background processing safely.
+* Write a Java utility to validate mandatory environment variables and configuration values at application startup.
+* Write a shell script that downloads a versioned JAR artifact, verifies its checksum, and deploys it to an Azure VM.
+* Write a deployment script that performs a health check after starting a Java application and rolls back on failure.
+* Write an Azure CLI script to create a Linux VM with managed identity and the required network configuration.
+* Write an infrastructure-as-code template to provision an Azure VM, managed disk, NSG, and monitoring configuration.
+* Write an Azure CLI or PowerShell script to start, stop, restart, and report the status of selected VMs.
+* Write a script to collect CPU, memory, disk, and application log information from a Linux VM for incident analysis.
+* Write a script to validate that required Java versions, application directories, permissions, and service configurations exist on a VM.
+* Write unit tests for a Spring Boot health endpoint that verifies application and downstream dependency status.
+* Write integration tests for a Java service that retrieves Azure Key Vault secrets using an appropriate test identity.
+* Write a monitoring component that detects repeated application restarts and publishes an alert event.
+* Write an automated validation script that checks the health of all application instances behind an Azure load balancer.
+* Design and implement a highly available Java deployment on Azure Virtual Machine Scale Sets with managed identity, secure configuration, monitoring, automated deployment, and rollback support.

@@ -1,0 +1,30 @@
+* Explain the event loop processing model defined by the HTML standard.
+* What happens when a microtask queues another microtask during microtask processing?
+* Why can an infinite microtask chain prevent timers and rendering from progressing?
+* Explain the difference between a task source and a task queue in browser event-loop terminology.
+* How does the event loop interact with rendering and requestAnimationFrame()?
+* What is the difference between requestAnimationFrame() and setTimeout() for animation?
+* How does requestIdleCallback() fit into browser scheduling?
+* Why is the exact execution order of timers not always guaranteed?
+* How do timer clamping and nested timers affect setTimeout() behavior?
+* Explain how Promise resolution and thenable assimilation affect callback scheduling.
+* How does async/await translate conceptually into Promise-based continuation scheduling?
+* What is the difference between an async function's synchronous execution and its resumed continuation?
+* How do exception propagation and rejected Promises interact with the event loop?
+* How can an unhandled Promise rejection be reported by the runtime?
+* Explain how the browser event loop handles tasks from different task sources.
+* Why should developers avoid assuming a universal FIFO order across all browser task sources?
+* How does JavaScript's run-to-completion model affect shared state?
+* Can two ordinary JavaScript callbacks execute simultaneously on the same agent? Explain.
+* How do Web Workers communicate with the main thread?
+* What are structured cloning and transferable objects in worker communication?
+* How can a CPU-intensive loop freeze the browser even when asynchronous callbacks are queued?
+* How would you break a large computation into smaller tasks without blocking the UI?
+* How can a task scheduler improve responsiveness in a complex web application?
+* What are the trade-offs between yielding with setTimeout() and yielding with scheduler APIs?
+* How do Node.js event-loop phases affect timer, I/O, and immediate callbacks?
+* Why can process.nextTick() cause starvation in Node.js?
+* How do Promise microtasks and process.nextTick() interact in Node.js?
+* How can event-loop delay be measured and monitored in a Node.js service?
+* How does event-loop blocking affect throughput and latency in a backend application?
+* How would you diagnose a production issue caused by event-loop starvation?

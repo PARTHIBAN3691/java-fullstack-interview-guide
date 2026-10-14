@@ -1,0 +1,30 @@
+* Create a Spring Boot REST controller that exposes separate v1 and v2 endpoints using URI versioning.
+* Implement two controller methods that handle different API versions with the same HTTP method and resource path.
+* Create separate request DTOs for v1 and v2 of a customer API.
+* Create separate response DTOs for v1 and v2 while sharing the same service layer.
+* Implement header-based API versioning using Spring MVC request mapping.
+* Implement query parameter versioning for a Spring Boot REST API.
+* Implement media type versioning using the Accept header.
+* Write a custom request-mapping strategy that selects a controller based on an API version header.
+* Create a service that maps a canonical customer model to different version-specific response DTOs.
+* Implement an adapter that converts a legacy v1 request into the internal domain model.
+* Write a mapper that converts v1 and v2 request DTOs into the same domain object.
+* Implement version-specific validation rules for request DTOs.
+* Create a controller that returns HTTP 400 for malformed version information.
+* Implement a fallback response for requests that specify an unsupported API version.
+* Write unit tests that verify v1 and v2 return their expected response structures.
+* Write MockMvc tests for URI-based API version routing.
+* Write MockMvc tests for header-based API version routing.
+* Implement integration tests that verify old API behavior remains unchanged after a v2 release.
+* Write a contract test that detects removal of a required response field.
+* Implement a compatibility test that verifies new optional response fields do not break the v1 contract.
+* Create an OpenAPI configuration that documents v1 and v2 endpoints separately.
+* Implement a deprecation response header for an older API version.
+* Write a filter that adds version-related metadata to API responses.
+* Implement a mechanism to record API version usage for monitoring.
+* Write a method that rejects requests for retired API versions with a documented error response.
+* Implement version-aware rate limits for v1 and v2 API consumers.
+* Create an adapter that translates a new downstream response into the legacy v1 response format.
+* Implement a feature-flag-based rollout that enables v2 behavior for selected clients.
+* Write an integration test that verifies API compatibility during a database schema migration.
+* Build a complete Spring Boot REST API with URI-based versioning, separate DTOs, shared business logic, backward-compatibility tests, deprecation headers, and API usage metrics.

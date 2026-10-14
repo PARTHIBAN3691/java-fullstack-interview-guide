@@ -1,0 +1,20 @@
+* What is the order in which `try`, `catch`, and `finally` blocks execute?
+* What happens when an exception occurs inside a `catch` block?
+* What happens if an exception occurs inside a `finally` block?
+* Can a `finally` block execute without a `catch` block?
+* Can a `catch` block handle multiple exception types?
+* What is multi-catch in Java, and how is it implemented?
+* Why must subclass exceptions be caught before superclass exceptions?
+* What is the difference between `final`, `finally`, and `finalize()`?
+* Can we catch `Throwable` directly?
+* Can a method override declare a broader checked exception than the overridden method?
+* Can an overriding method omit the exception declared by the parent method?
+* Can a constructor throw an exception?
+* Can static initialization blocks throw exceptions?
+* What happens when a checked exception is thrown from a method that does not declare it?
+* What is exception propagation in Java?
+* How does exception chaining work?
+* What is the purpose of `getCause()` and `getMessage()`?
+* What is try-with-resources, and which interface supports it?
+* What is the difference between `AutoCloseable` and `Closeable`?
+* What are suppressed exceptions in Java?

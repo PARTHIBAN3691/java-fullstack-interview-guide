@@ -1,0 +1,30 @@
+* Explain how modern JavaScript engines implement generational garbage collection.
+* What is the difference between young-generation and old-generation garbage collection?
+* What is the purpose of incremental garbage collection?
+* What is concurrent garbage collection, and how can it reduce application pauses?
+* What is a stop-the-world garbage collection pause?
+* How do garbage collectors identify live objects in a heap graph?
+* What is the difference between shallow size and retained size in a heap snapshot?
+* What is a dominator tree in memory profiling?
+* How can retaining paths help identify the source of a memory leak?
+* How do closures and lexical environments influence object reachability?
+* How can a single global reference prevent a large object graph from being collected?
+* How can event listener references create indirect retention paths?
+* How can detached DOM trees remain reachable after being removed from the document?
+* What are ephemerons, and why are they relevant to WeakMap garbage collection?
+* Why does WeakMap not provide a reliable way to determine when an object will be garbage-collected?
+* Why is garbage collection timing nondeterministic in JavaScript?
+* Why is it generally unsafe to rely on finalization for resource cleanup?
+* What is FinalizationRegistry, and what are its limitations?
+* What are the risks of using FinalizationRegistry for critical cleanup operations?
+* How can large temporary allocations create memory pressure even when objects are eventually collected?
+* How can object churn affect garbage collection and application latency?
+* What is the difference between a JavaScript heap leak and a browser or native-memory leak?
+* How can ArrayBuffer and TypedArray allocations affect memory usage?
+* What is the role of SharedArrayBuffer in shared memory scenarios?
+* How can Web Workers influence memory usage in browser applications?
+* How can structured cloning and transferable objects affect memory consumption?
+* How would you investigate memory growth in a Node.js service over several hours?
+* How can heap snapshots be compared to identify retained objects?
+* How would you distinguish a genuine memory leak from a garbage collection cycle or temporary workload spike?
+* How would you design a memory-efficient architecture for processing large datasets in JavaScript?

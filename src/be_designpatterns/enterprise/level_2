@@ -1,0 +1,30 @@
+* How would you design enterprise application layers to enforce dependency direction and separation of concerns?
+* How would you prevent the Service Layer from becoming a large collection of unrelated business operations?
+* How would you design a Repository abstraction that supports complex queries without hiding important database behavior?
+* How would you prevent a generic Repository implementation from becoming an inflexible abstraction?
+* How would you decide between Spring Data JPA repositories, custom DAOs, and direct JDBC for high-performance operations?
+* How would you implement Unit of Work semantics across multiple repositories in a single transaction?
+* How would you manage transaction boundaries when one business operation updates several aggregates?
+* How would you prevent the Identity Map pattern from returning stale data in long-running persistence contexts?
+* How would you control entity loading to avoid N+1 queries and excessive memory consumption?
+* How would you design DTO mapping for deeply nested object graphs while preventing recursive mapping and performance problems?
+* How would you version DTOs and API contracts without breaking existing consumers?
+* How would you design a Remote Facade that reduces network round trips while preserving clear service boundaries?
+* How would you handle partial failures when a Remote Facade coordinates multiple downstream services?
+* How would you design a Gateway that handles timeouts, retries, circuit breakers, and error translation?
+* How would you prevent a Business Delegate from becoming a redundant layer that simply forwards every method call?
+* How would you replace an overused Service Locator with constructor injection in a legacy application?
+* How would you decide between Domain Model and Transaction Script for a complex financial workflow?
+* How would you separate domain logic from persistence logic when using JPA entities?
+* How would you handle optimistic locking conflicts when multiple requests update the same entity?
+* How would you design transaction handling when database updates and message publication must remain consistent?
+* How would you implement the Transactional Outbox pattern alongside a Service Layer?
+* How would you design CQRS read models without duplicating business logic across layers?
+* How would you organize repositories and domain services around bounded contexts in a domain-driven design architecture?
+* How would you prevent an anemic domain model when business rules are spread across application services?
+* How would you design a Gateway abstraction that supports multiple external providers with different request and response formats?
+* How would you handle schema evolution when entity models and DTO contracts change independently?
+* How would you optimize data access for bulk processing without bypassing essential business invariants?
+* How would you test enterprise application layers when the persistence context, transactions, and external services interact?
+* How would you migrate a tightly coupled legacy application toward a layered architecture incrementally?
+* How would you evaluate the trade-offs between maintainability, performance, and abstraction in enterprise pattern selection?

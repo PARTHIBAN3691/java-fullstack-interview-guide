@@ -1,0 +1,40 @@
+* Write a Kubernetes Deployment YAML for a Java Spring Boot application with three replicas, resource requests, resource limits, and container ports.
+* Write a Deployment YAML that configures rolling updates with `maxSurge` and `maxUnavailable` to minimize downtime.
+* Write a Kubernetes manifest that configures startup, readiness, and liveness probes for a Spring Boot application.
+* Write a Kubernetes Service YAML that exposes a Deployment internally using ClusterIP.
+* Write an Ingress manifest that routes `/api` requests to a backend Service and enables TLS.
+* Write a ConfigMap and Deployment configuration that injects application configuration through environment variables.
+* Write a Secret manifest and Pod configuration that consumes credentials without hardcoding them into the application image.
+* Write a Kubernetes manifest that deploys a StatefulSet with a headless Service and persistent volume claims.
+* Write a DaemonSet manifest that deploys a logging agent on every eligible worker node.
+* Write a Job manifest that runs a database migration once and defines an appropriate retry policy.
+* Write a CronJob manifest that runs a scheduled cleanup task and prevents concurrent executions.
+* Write a HorizontalPodAutoscaler manifest that scales a Deployment based on CPU utilization.
+* Write a Kubernetes manifest that defines resource requests and limits for multiple containers in a Pod.
+* Write a NetworkPolicy that denies all ingress traffic to a namespace by default.
+* Write a NetworkPolicy that allows frontend Pods to access backend Pods only on a specified port.
+* Write Kubernetes RBAC manifests that allow a service account to read Pods and Services within a specific namespace.
+* Write a Role and RoleBinding that allow a developer to inspect Deployments without modifying production resources.
+* Write a PersistentVolumeClaim manifest that requests storage from a specified StorageClass.
+* Write a Helm chart structure for a microservice with configurable image, replica count, resource limits, and service settings.
+* Write a Helm template that conditionally enables an Ingress resource based on values supplied for an environment.
+* Write a Helm values configuration that supports development, staging, and production without duplicating the entire chart.
+* Write a CRD manifest that defines a custom resource with required fields, validation rules, and a versioned schema.
+* Write pseudocode or a controller implementation that reconciles a custom resource and updates the status to reflect the actual state.
+* Write a Kubernetes manifest that runs a container as a non-root user with a read-only root filesystem and dropped Linux capabilities.
+* Write a Pod manifest that uses a dedicated service account and disables automatic service-account token mounting when it is unnecessary.
+* Write a Kubernetes manifest that configures node affinity, pod anti-affinity, and topology spread constraints for a highly available application.
+* Write a PodDisruptionBudget manifest that maintains a minimum number of available replicas during voluntary disruptions.
+* Write a script using `kubectl` that lists Pods with their namespace, node, restart count, and current status.
+* Write a script that identifies Pods in Pending, CrashLoopBackOff, ImagePullBackOff, and OOMKilled states and summarizes their recent events.
+* Write a script that compares desired Deployment replicas with available replicas and reports unhealthy Deployments.
+* Write a script that identifies Kubernetes workloads without CPU or memory requests and limits.
+* Write a script that checks all production Deployment manifests for privileged containers, root execution, and missing security contexts.
+* Write a script that validates Kubernetes manifests against required labels, probes, resource settings, and image digest policies.
+* Write a script that checks whether all Pods selected by a Service are ready and whether the Service has usable endpoints.
+* Write a script that detects stale Kubernetes Jobs and completed Pods based on configurable retention rules.
+* Write a script that compares resource versions across two Kubernetes clusters and reports differences in Deployments, Services, ConfigMaps, and namespaces.
+* Write a script that validates Helm chart templates before deployment and fails when required values are missing.
+* Write a script that verifies whether the image digest deployed in production matches the digest approved by the CI/CD pipeline.
+* Write a multi-cluster deployment workflow that deploys to a staging cluster first and promotes the same image digest to production after validation.
+* Write a disaster-recovery validation script that checks the availability of required Kubernetes resources, persistent volume claims, and application health endpoints after restoration.

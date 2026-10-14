@@ -1,0 +1,21 @@
+
+* How can a static collection cause a memory leak even after the application finishes processing its data?
+* Explain how an unbounded cache can lead to memory leaks.
+* How can registering event listeners without unregistering them cause memory leaks?
+* How can anonymous inner classes retain references to their enclosing objects?
+* How can non-static inner classes unintentionally retain an outer class instance?
+* How can a `ThreadLocal` cause memory leaks in a thread pool?
+* Why is failing to remove values from `ThreadLocal` particularly risky in application servers?
+* How can a `HashMap` or `ArrayList` retain objects that are no longer needed?
+* How can improper handling of JDBC connections, streams, and sockets lead to resource leaks?
+* What is the difference between a Java heap memory leak and a native resource leak?
+* How can a class loader leak occur in a web application?
+* How can scheduled tasks and executor services retain objects indefinitely?
+* How can a callback or lambda expression unintentionally retain a large object graph?
+* How can improper cache eviction policies contribute to memory leaks?
+* How can heap dumps help identify objects responsible for memory leaks?
+* What is the difference between shallow size and retained heap size when investigating a suspected leak?
+* How can garbage collection logs help identify a potential memory leak?
+* How would you use VisualVM or Java Mission Control to investigate increasing heap usage?
+* How can Java Flight Recorder help diagnose memory retention issues?
+* What is the difference between a memory leak and high but legitimate memory usage?

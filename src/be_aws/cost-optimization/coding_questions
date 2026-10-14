@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK for Java 2.x to retrieve monthly AWS costs grouped by service using the Cost Explorer API.
+* Write a Java program to retrieve daily AWS expenditure for a specified date range.
+* Write a Java program to retrieve AWS costs grouped by account ID and service.
+* Write a Java program to compare actual monthly spending against a predefined budget threshold.
+* Write a Java program to identify EC2 instances whose average CPU utilization is below a configurable threshold using CloudWatch metrics.
+* Write a Java program to retrieve AWS Cost Explorer forecasts for the next month.
+* Write a Java program to list EC2 instances that are stopped and report their associated EBS volumes.
+* Write a Java program to identify unattached EBS volumes and calculate their potential monthly storage cost using configured pricing assumptions.
+* Write a Java program to retrieve S3 bucket size and storage metrics and flag buckets that may benefit from lifecycle policies.
+* Write a Java program to retrieve AWS cost data grouped by cost allocation tags.
+* Write a Spring Boot service that periodically retrieves AWS cost data and exposes a REST API for monthly expenditure reports.
+* Write a Java program to detect a percentage increase in daily AWS spending and generate an alert.
+* Write a Java program to identify resources missing mandatory cost allocation tags using AWS resource APIs.
+* Write a Java program to generate a cost report grouped by AWS account, service, and environment.
+* Write a Java program that compares the monthly cost of two proposed compute configurations using configurable pricing inputs.
+* Write a Java program to retrieve Savings Plans utilization and coverage information through the appropriate AWS billing APIs.
+* Write a Java program to automate the shutdown of eligible non-production EC2 instances based on configurable schedules and exclusion tags.
+* Write a Java program to analyze AWS Cost and Usage Report data and identify the services contributing most to cost increases.
+* Write a Java program to create a scheduled cost-reporting job using Spring Boot scheduling and AWS SDK for Java 2.x.
+* Design and implement a Spring Boot cost optimization service that collects AWS spending data, identifies potential savings, applies safety checks, and publishes recommendations through a REST API.

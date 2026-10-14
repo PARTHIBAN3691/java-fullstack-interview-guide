@@ -1,0 +1,35 @@
+* Write Terraform configuration to provision a virtual network, subnet, compute instance, and security rules in AWS.
+* Write Terraform configuration to provision equivalent networking and compute resources in Azure using the Azure provider.
+* Write Terraform configuration to provision a virtual machine and cloud storage resources in GCP using the Google provider.
+* Write a reusable Terraform module that provisions a compute instance with configurable region, size, network, and tags.
+* Write Terraform configuration that deploys a load balancer and multiple application instances across availability zones.
+* Write Terraform configuration that creates a private object-storage bucket with encryption, versioning, and restricted access.
+* Write Terraform configuration that provisions a managed relational database with encryption, backups, and private network access.
+* Write Terraform configuration that provisions a serverless function and grants it least-privilege access to a storage resource.
+* Write Terraform configuration that creates separate development and production environments with independent state and configuration.
+* Write a cloud-init script that installs an application, configures its service, and starts it automatically when a virtual machine is provisioned.
+* Write a Python program using a cloud provider SDK to list virtual machines and identify instances that have been stopped for longer than a configured period.
+* Write a script that identifies cloud storage buckets with public access enabled and generates a remediation report.
+* Write a script that inventories cloud resources across regions and reports missing mandatory tags.
+* Write a script that compares cloud resource utilization against configured thresholds and identifies candidates for rightsizing.
+* Write a script that detects unattached block-storage volumes and reports their size, age, and estimated cost.
+* Write a program that calculates the monthly cost of virtual machines using hourly rates, runtime hours, and storage costs.
+* Write a script that analyzes cloud billing exports and summarizes spending by service, region, account, and application tag.
+* Write a script that detects a sudden increase in cloud spending compared with a rolling baseline and generates an alert.
+* Write a Terraform configuration that sets up an autoscaling group with minimum, maximum, and desired capacity.
+* Write a Terraform configuration that creates a DNS health-check policy for routing traffic between primary and secondary regions.
+* Write a script that verifies application health endpoints in multiple regions and reports availability and response latency.
+* Write a program that simulates regional failover based on health-check results and a configurable recovery policy.
+* Write a script that validates backup age and recovery-point objectives for cloud databases and storage resources.
+* Write a script that checks whether required infrastructure components exist in a disaster recovery region.
+* Write a Terraform configuration that creates private connectivity between an on-premises network and a cloud virtual network using supported connectivity resources.
+* Write a script that inventories IAM users, roles, and permissions and flags overly broad access policies.
+* Write a script that checks whether cloud compute resources expose administrative ports to unrestricted public IP ranges.
+* Write a Python program that analyzes application request metrics and recommends a basic autoscaling threshold based on observed workload.
+* Write a script that identifies large cross-region data transfers from billing or monitoring exports and ranks the likely cost drivers.
+* Write a script that compares resource configurations across AWS, Azure, and GCP and reports differences against an approved baseline.
+* Write a CI/CD pipeline configuration that validates infrastructure code, scans for security misconfigurations, generates a plan, and requires approval before provisioning.
+* Write a Terraform configuration that provisions a multi-region application architecture with regional load balancing, replicated storage, and health-based traffic routing.
+* Write a script that validates cloud resource encryption, backup settings, public exposure, and required tags against an organizational policy.
+* Write a script that inventories cloud resources and identifies idle instances, unused addresses, unattached disks, and underutilized databases.
+* Write a script that generates a cloud architecture inventory containing resources, regions, network dependencies, security controls, and cost ownership.

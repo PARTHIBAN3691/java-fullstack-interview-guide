@@ -1,0 +1,30 @@
+* How would you implement rate limiting in a Spring Boot REST API?
+* How can you configure rate limits for different REST endpoints?
+* How would you implement rate limiting using a servlet filter?
+* How can a Spring MVC interceptor be used to enforce rate limits?
+* How would you implement rate limiting using Spring WebFlux?
+* How can you identify clients using API keys for rate limiting?
+* How would you apply different rate limits to authenticated and anonymous users?
+* How can rate limiting be implemented using Redis?
+* Why is Redis commonly used for distributed rate limiting?
+* How would you implement a fixed-window counter using Redis?
+* How would you implement a sliding-window rate limiter?
+* How can Redis atomic operations prevent concurrent requests from exceeding a limit?
+* What is the purpose of atomic Lua scripts in Redis-based rate limiting?
+* How would you implement a token bucket algorithm in Java?
+* How would you implement a leaky bucket algorithm in Java?
+* How can you return HTTP 429 with a meaningful error response?
+* How would you calculate and return the Retry-After value?
+* How can you configure rate limiting at the API gateway level?
+* How would you apply different limits to read and write operations?
+* How can rate limits be configured without redeploying the application?
+* How would you handle rate limits for multiple API keys belonging to one customer?
+* How can rate limiting be integrated with Spring Security?
+* How would you avoid race conditions when multiple threads update rate-limit counters?
+* How can you handle rate limiting across multiple application instances?
+* What is the impact of server restarts on an in-memory rate limiter?
+* How would you test a rate limiter using JUnit and Mockito?
+* How can integration tests verify HTTP 429 responses?
+* How would you monitor rate-limit violations?
+* How can rate limiting be applied selectively to expensive API operations?
+* What are the advantages and disadvantages of using an external rate-limiting library?

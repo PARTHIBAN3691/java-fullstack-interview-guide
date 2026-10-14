@@ -1,0 +1,30 @@
+* How does Kafka replicate messages from a leader to follower replicas?
+* How do followers fetch records from the partition leader?
+* How does Kafka determine whether a replica is in sync?
+* What factors can cause a replica to fall out of the ISR?
+* How does Kafka handle a leader broker failure?
+* How does Kafka select a new leader for a partition?
+* What is the difference between clean and unclean leader election?
+* What is the purpose of `unclean.leader.election.enable`?
+* How does `acks=1` behave when follower replicas have not caught up?
+* How does `acks=all` behave when a partition has multiple replicas?
+* How does `min.insync.replicas` work with `acks=all`?
+* What happens when the ISR size falls below `min.insync.replicas`?
+* How does replication factor affect data durability?
+* How does replication factor affect write throughput?
+* How does replication factor affect read performance?
+* How does replication affect network bandwidth consumption?
+* How does Kafka distribute replicas across brokers?
+* What is rack-aware replica assignment?
+* Why should replicas be distributed across different racks or availability zones?
+* How do you configure the replication factor when creating a topic?
+* Can you change the replication factor of an existing Kafka topic?
+* How do you increase the replication factor of an existing topic?
+* What is the difference between replication factor and `min.insync.replicas`?
+* How do you identify under-replicated partitions?
+* How do you monitor ISR changes?
+* What is the purpose of the preferred leader election process?
+* How does Kafka handle a broker that returns after being unavailable?
+* What is the difference between replication and backup?
+* How do replication and retention policies work together?
+* How would you troubleshoot a partition whose replicas are not synchronized?

@@ -1,0 +1,21 @@
+
+* Your AWS bill increases by 40% in one month, but application traffic has increased by only 5%. How would you investigate and resolve the issue?
+* A Java Spring Boot application runs continuously on oversized EC2 instances but experiences very low CPU utilization. How would you right-size the infrastructure?
+* Your production workload has predictable baseline traffic and occasional peaks. How would you select the right combination of Savings Plans, Reserved Instances, and On-Demand capacity?
+* A development environment runs EC2, RDS, and EKS resources overnight and during weekends despite having no users. How would you automate non-production shutdowns safely?
+* Your company operates separate AWS accounts for development, testing, staging, and production. How would you identify cost-saving opportunities across these environments?
+* A large EKS cluster has high infrastructure costs, but individual pods use only a small fraction of allocated CPU and memory. How would you optimize resource utilization?
+* An S3 bucket stores millions of files, including frequently accessed data and several-year-old archives. How would you design a cost-effective lifecycle policy?
+* Your application uses a NAT Gateway for outbound traffic, and data processing costs have increased significantly. How would you investigate and reduce the expense?
+* CloudWatch Logs costs have doubled after a new microservice was deployed. How would you reduce logging costs without losing critical operational information?
+* A database consumes substantial resources even during periods of low traffic. How would you evaluate instance resizing, storage optimization, and serverless alternatives?
+* A team proposes migrating a monolithic Java application to AWS Lambda to reduce infrastructure costs. How would you assess whether this migration would actually save money?
+* Your application uses Spot Instances for batch processing, but interruptions cause repeated job failures and additional costs. How would you redesign the workload?
+* Multiple teams share the same AWS infrastructure, and management wants to know the cost per product or transaction. How would you implement cost allocation?
+* A new release increases API Gateway requests, Lambda invocations, and data transfer costs. How would you identify the main cost drivers and optimize the architecture?
+* Your organization purchases Savings Plans but still has substantial On-Demand compute expenditure. How would you evaluate commitment coverage and utilization?
+* A production workload requires high availability across multiple Availability Zones, but finance asks for a 25% cost reduction. How would you approach the trade-off?
+* AWS Cost Explorer shows unexpected inter-region transfer charges after a microservices deployment. How would you trace and minimize the traffic?
+* An automated cleanup job accidentally risks deleting resources that are temporarily idle but business-critical. How would you make cost remediation safe?
+* Your monthly AWS budget is exceeded because a batch-processing job runs longer than expected. How would you detect the issue earlier and prevent recurrence?
+* Management requests a cost optimization roadmap with measurable savings, performance targets, and risk assessments. How would you prepare and prioritize it?

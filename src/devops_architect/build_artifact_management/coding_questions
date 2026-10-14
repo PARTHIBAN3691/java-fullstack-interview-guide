@@ -1,0 +1,30 @@
+* Write a Maven configuration that declares a dependency, specifies its version, and configures a private artifact repository.
+* Write a Maven configuration using `dependencyManagement` to centralize dependency versions across multiple modules.
+* Write a Maven configuration that excludes a vulnerable transitive dependency and includes a secure compatible version.
+* Write a Gradle build script that declares implementation, test, and runtime dependencies for a Java application.
+* Write a Gradle configuration that enforces a specific version of a dependency across all modules.
+* Write a Gradle task that generates a report containing the resolved dependencies of a project.
+* Write a Gradle task that packages an application and publishes the resulting artifact to a Maven-compatible repository.
+* Write an npm `package.json` configuration with scripts for building, testing, linting, and vulnerability auditing.
+* Write a Node.js script that reads `package-lock.json` and lists direct dependencies with their resolved versions.
+* Write a script that compares two dependency lockfiles and reports added, removed, and upgraded packages.
+* Write a Java program that detects duplicate library names with conflicting versions from a supplied dependency list.
+* Write a Java program that compares two lists of dependency coordinates and reports version differences.
+* Write a Python or Java program that validates artifact names and versions against a defined naming convention.
+* Write a script that verifies an artifact's SHA-256 checksum against a published checksum file.
+* Write a script that rejects artifact publication if the requested release version already exists in the repository.
+* Write a script that promotes an artifact from a staging repository to a production repository without rebuilding it.
+* Write a CI pipeline configuration that builds, tests, scans, and publishes a Java artifact only when all required checks pass.
+* Write a CI pipeline configuration that caches Maven or Gradle dependencies while preserving correct cache invalidation.
+* Write a script that scans build logs for dependency resolution failures and summarizes the affected dependencies.
+* Write a script that parses vulnerability scan output and fails the build when a critical vulnerability exceeds the configured risk threshold.
+* Write a program that filters a vulnerability report by severity, package name, installed version, and fixed version.
+* Write a script that compares an SBOM against a vulnerability database report and lists affected component versions.
+* Write a script that validates the required fields in an SPDX or CycloneDX SBOM before publication.
+* Write a script that compares an SBOM generated from an application package with one generated from its container image.
+* Write a script that extracts container image digests from deployment manifests and checks them against an approved release inventory.
+* Write a CI pipeline configuration that builds a container image, scans it, pushes it to a registry, and records its immutable digest.
+* Write a script that identifies artifact versions referenced by deployment manifests but missing from the artifact repository.
+* Write a script that detects mutable container image tags in Kubernetes deployment manifests and reports their locations.
+* Write a program that checks whether a build manifest records the source commit, build tool version, dependency versions, and artifact checksum.
+* Write a script that compares build metadata from two CI runs and reports differences that may affect reproducibility.

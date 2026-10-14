@@ -1,0 +1,30 @@
+* Explain the internal module-loading mechanism of CommonJS in Node.js.
+* Explain how Node.js wraps a CommonJS module before executing it.
+* How does the CommonJS module wrapper provide require, exports, module, __filename, and __dirname?
+* Explain the module resolution algorithm used by require().
+* How does ES module resolution differ from CommonJS resolution?
+* Why do ES modules use URL-based module identifiers?
+* Explain the linking, instantiation, and evaluation phases of ES modules.
+* How do live bindings work in ES modules?
+* What happens when an imported ES module binding is accessed before initialization?
+* Explain the temporal dead zone in the context of cyclic ES module imports.
+* How do circular dependencies affect application behavior in CommonJS and ES modules?
+* How would you diagnose a circular dependency that produces partially initialized exports?
+* How does Node.js determine the module format when package.json contains a type field?
+* How do nested package.json files affect module format interpretation?
+* What are the risks of relying on ambiguous .js module formats?
+* How do conditional exports support dual CommonJS and ES module packages?
+* What is the dual-package hazard in Node.js?
+* How can a package accidentally create two separate instances of the same logical module?
+* How would you design a library that supports both require() and import?
+* How do named exports from CommonJS modules behave when imported into ES modules?
+* Why can static named imports from CommonJS behave differently from importing the default export?
+* How does createRequire() allow an ES module to use CommonJS resolution?
+* How can fileURLToPath() and import.meta.url replace __filename and __dirname?
+* How do import attributes and JSON module imports work in supported Node.js versions?
+* What are the implications of top-level await for module initialization and application startup?
+* How would you analyze a module-loading deadlock or unresolved top-level await?
+* How do module caches affect hot reloading and test isolation?
+* How would you design a plugin system that supports dynamically loaded ES modules?
+* How do package exports restrictions affect consumers importing internal package files?
+* What architectural and operational factors should guide a large-scale migration from CommonJS to ES modules?

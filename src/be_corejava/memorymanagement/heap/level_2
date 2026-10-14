@@ -1,0 +1,21 @@
+
+* Explain how heap memory is managed by the JVM from object allocation to reclamation.
+* Compare heap memory organization in generational and non-generational garbage collectors.
+* How does G1 GC divide and manage heap memory using regions?
+* How does the Z Garbage Collector (ZGC) manage large heaps and reduce pause times?
+* How does Parallel GC differ from G1 GC in heap management?
+* What is the role of remembered sets and card tables in generational garbage collection?
+* How does a write barrier help garbage collection track references?
+* What is the difference between strong, soft, weak, and phantom references in heap management?
+* How can a large number of short-lived objects affect heap performance?
+* What are humongous objects in G1 GC, and how can they affect heap usage?
+* What is heap fragmentation, and how can a garbage collector address it?
+* How can an application experience long GC pauses even when sufficient heap memory is available?
+* How does the JVM determine the appropriate heap size for a containerized application?
+* What are the risks of setting `-Xmx` too close to the container memory limit?
+* How can heap dumps help identify retained objects and memory leaks?
+* What is a dominator tree in heap dump analysis?
+* How do shallow size and retained size differ when analyzing heap objects?
+* How can static collections unintentionally retain objects and cause heap growth?
+* How do object pooling and caching affect heap usage, and when can they make performance worse?
+* How would you distinguish a genuine memory leak from temporary heap growth caused by workload spikes?

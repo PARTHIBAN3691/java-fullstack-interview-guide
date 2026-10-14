@@ -1,0 +1,30 @@
+* A Spring Boot application deployed to Cloud Run returns HTTP 503 during a sudden traffic spike. How would you investigate and resolve the issue?
+* Your Cloud Run service takes several seconds to respond to its first request after being idle. How would you reduce cold-start latency?
+* A new Cloud Run revision starts successfully but returns HTTP 500 for every request. How would you troubleshoot it?
+* Your Java container repeatedly fails to start because it cannot listen on the expected port. How would you identify and fix the configuration issue?
+* A Cloud Run service is experiencing out-of-memory errors after traffic increases. How would you investigate heap usage, concurrency, and instance memory?
+* Your application works locally but fails in Cloud Run because configuration values are missing. How would you troubleshoot the deployment?
+* A production Cloud Run deployment causes a sharp increase in HTTP 5xx errors. How would you roll back safely?
+* A canary revision has higher latency than the stable revision. How would you determine whether to continue or stop the rollout?
+* Your Cloud Run service scales to hundreds of instances and exhausts the Cloud SQL connection limit. How would you mitigate the incident?
+* A Cloud Run endpoint intermittently times out while calling another microservice. How would you identify the root cause?
+* Your service receives duplicate Pub/Sub events and creates duplicate payment records. How would you make processing idempotent?
+* A scheduled Cloud Run job sometimes processes the same batch twice. How would you prevent duplicate side effects?
+* A Cloud Run job exits successfully but some records remain unprocessed. How would you investigate and redesign the processing flow?
+* Your application performs background tasks that stop unexpectedly after an HTTP response completes. How would you redesign the workload?
+* A Cloud Run service cannot access a secret in Secret Manager after deployment. How would you troubleshoot IAM and secret configuration?
+* A service-to-service request returns HTTP 401 even though both services are deployed successfully. How would you diagnose authentication and token audience issues?
+* A Cloud Run service becomes publicly accessible after a deployment change. How would you investigate and restore the intended access controls?
+* Your application cannot connect to a private database after enabling private networking. How would you troubleshoot routing, DNS, firewall, and IAM settings?
+* A Cloud Run service experiences high p99 latency but normal average latency. How would you investigate slow requests and downstream dependencies?
+* After increasing concurrency, your Java service processes more requests but experiences higher error rates. How would you determine the correct concurrency setting?
+* A new deployment works in one environment but fails in production because of different environment variables and secrets. How would you improve configuration management?
+* Cloud Run scales rapidly and overloads a downstream payment API. How would you protect the dependency while preserving acceptable throughput?
+* Application logs are available, but requests cannot be traced across several Cloud Run services. How would you implement distributed tracing?
+* Your team needs zero-downtime deployments for a customer-facing API. How would you configure revisions, health checks, and traffic splitting?
+* A Cloud Run service's cost increases significantly after a release. How would you investigate instance count, CPU usage, concurrency, and request duration?
+* A Java service frequently exceeds its request timeout while generating large reports. How would you redesign the report-generation workflow?
+* A Cloud Run instance is terminated while processing a critical operation. How would you ensure the operation can safely resume?
+* Your service experiences intermittent connection resets when calling an external API. How would you investigate networking and implement resilience?
+* A container image deployed to Cloud Run contains vulnerable dependencies. How would you improve image scanning, dependency management, and deployment controls?
+* Your organization needs to deploy the same application to multiple regions. How would you design routing, data consistency, failover, and observability?

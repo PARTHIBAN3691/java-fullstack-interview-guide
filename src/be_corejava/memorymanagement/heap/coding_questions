@@ -1,0 +1,21 @@
+
+* Write a Java program that creates multiple objects and demonstrates how references point to heap objects.
+* Write a Java program that demonstrates two references pointing to the same object and modifying shared state.
+* Write a Java program that illustrates how an object becomes eligible for garbage collection when its reference is set to `null`.
+* Write a Java program that demonstrates object eligibility for garbage collection when a local variable goes out of scope.
+* Write a Java program that creates objects inside a loop and measures memory usage before and after allocation.
+* Write a Java program that uses `Runtime.getRuntime()` to print total, free, and maximum JVM heap memory.
+* Write a Java program that periodically reports heap usage while processing a collection of records.
+* Write a Java program that creates a large collection of objects and demonstrates how retained references prevent their reclamation.
+* Write a Java program that simulates a memory leak by continuously adding objects to a static collection.
+* Write a Java program that fixes the preceding memory leak by removing obsolete entries from the collection.
+* Write a Java program that implements a bounded cache to prevent unbounded heap growth.
+* Write a Java program that processes a large dataset in batches instead of loading every record into memory at once.
+* Write a Java program that compares memory usage when processing data with an in-memory list versus a streaming approach.
+* Write a Java program that uses `WeakReference` and demonstrates how weakly referenced objects behave after garbage collection.
+* Write a Java program that uses `SoftReference` and explains why it should not be treated as a predictable cache eviction mechanism.
+* Write a Java program that creates a large object graph suitable for investigating retained heap size with a heap dump.
+* Write a Java program that uses `MemoryMXBean` to obtain JVM heap usage information.
+* Write a Java program that uses `MemoryPoolMXBean` to report memory usage across available heap memory pools.
+* Write a Java program that registers for garbage collection notifications where supported and logs collection events.
+* Design a Java load-testing experiment to compare heap allocation and GC behavior under different `-Xms`, `-Xmx`, and garbage collector configurations.

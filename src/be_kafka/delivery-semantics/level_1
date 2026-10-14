@@ -1,0 +1,30 @@
+* How do you configure at-most-once delivery in a Kafka consumer?
+* How do you configure at-least-once delivery using manual offset commits?
+* How do you configure an idempotent producer in Java?
+* How do acks, retries, and enable.idempotence work together?
+* How do you configure Kafka producer retries in Spring Boot?
+* How does the max.in.flight.requests.per.connection setting affect delivery guarantees?
+* How does automatic offset committing cause message loss or duplicate processing?
+* How do you implement manual acknowledgment in a Spring Kafka listener?
+* What is the difference between acknowledgment modes RECORD, BATCH, and MANUAL?
+* How does Kafka handle a producer timeout when the broker may have received the message?
+* How can producer retries create duplicate messages when idempotence is disabled?
+* How does producer idempotence prevent duplicates caused by retries?
+* What is a producer ID, and how does Kafka use it?
+* What is a producer sequence number, and how does it support idempotence?
+* How do Kafka transactions provide exactly-once processing between Kafka topics?
+* What is the purpose of isolation.level=read_committed?
+* What is the difference between read_committed and read_uncommitted consumers?
+* How do you configure a transactional Kafka producer in Spring Boot?
+* What is a transactional ID, and why must it be configured correctly?
+* How do consumer group rebalances affect offset commits and duplicate processing?
+* How does committing offsets after processing improve at-least-once delivery?
+* How can a database update and Kafka offset commit become inconsistent?
+* How do you implement idempotent message processing in a Java consumer?
+* What is the difference between Kafka-level idempotence and business-level idempotence?
+* How does Kafka's transaction coordinator manage producer transactions?
+* What happens when a Kafka transaction is aborted?
+* How do retry topics and Dead Letter Topics affect delivery semantics?
+* How do replication acknowledgments and unclean leader election affect data durability?
+* How do you test delivery guarantees in a Spring Boot Kafka application?
+* How do you choose appropriate delivery semantics for an event-driven microservice?

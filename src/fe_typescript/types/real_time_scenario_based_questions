@@ -1,0 +1,30 @@
+* A function accepts any type and produces runtime errors. How would you replace any with safer types?
+* An API returns different data structures depending on the status field. How would you model the response using discriminated unions?
+* Your application receives user data with optional properties. How would you prevent undefined-related runtime errors?
+* A shared interface changes and causes compilation errors across multiple modules. How would you manage the impact?
+* A function accepts several related object types but needs to access only their common properties. How would you design its parameter type?
+* Your team needs a reusable function that works with strings, numbers, and custom objects. How would you implement it using generics?
+* A generic function accepts an object but should access only a specific set of properties. How would you use generic constraints?
+* Your API client needs different request and response types for different endpoints. How would you design a type-safe API client?
+* A developer uses type assertions to suppress compiler errors throughout the codebase. What risks does this introduce, and how would you improve the design?
+* Your application has a complex union type, and TypeScript cannot determine which properties are available. How would you implement type narrowing?
+* An object should contain only one of several possible configuration options. How would you model this constraint?
+* Your application needs a type-safe event emitter where each event has different payload properties. How would you design it?
+* You need a reusable utility that makes every property in a nested object optional. How would you implement a DeepPartial type?
+* A function returns different result types depending on its input. How would you preserve the relationship between input and output types?
+* Your team wants to create a reusable type-safe form model. How would you represent field names and their corresponding value types?
+* An external JavaScript library has incomplete type definitions. How would you create safe declarations for it?
+* Your code compiles, but an object contains unexpected properties at runtime. Why does TypeScript's structural typing allow this, and how would you validate the data?
+* A value can be null, undefined, or a valid object. How would you design safe handling under strictNullChecks?
+* Your generic utility works for simple types but fails for nested objects and arrays. How would you extend its type definition?
+* A mapped type incorrectly converts optional properties into required properties. How would you preserve the original property modifiers?
+* You need to transform property names into event names such as userNameChanged. How would you use template literal types and key remapping?
+* Your project has complicated conditional types that slow down compilation. How would you simplify the type design?
+* A function accepts a callback, but strict function checking reports a type incompatibility. How would you investigate variance and parameter types?
+* Your team needs a type-safe configuration object that validates allowed keys while preserving literal values. How would you use satisfies?
+* An application must distinguish successful responses from failures without checking multiple unrelated properties. How would you design a discriminated union?
+* A utility function should accept only non-empty strings. How would you represent and validate this requirement?
+* Your application models permissions using string values, and invalid permission names are being passed. How would you use literal unions or enums to prevent this?
+* You need to create a type-safe dictionary where keys are derived from a union of strings. How would you use Record?
+* A class implements an interface but still allows invalid runtime values. What does TypeScript guarantee, and when is runtime validation necessary?
+* How would you design a reusable type system for a large enterprise application with API models, domain entities, validation, and shared utilities?

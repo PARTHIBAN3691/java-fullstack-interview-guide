@@ -1,0 +1,30 @@
+* Your Kafka producer is sending only 20,000 messages per second while the business requires 200,000. How would you investigate and improve throughput?
+* Producer latency suddenly increases from 10 ms to 500 ms. How would you troubleshoot the issue?
+* Consumer lag is continuously increasing even though all consumer instances are healthy. How would you identify the bottleneck?
+* Kafka brokers show high CPU utilization but low disk utilization. What could be causing this?
+* Kafka brokers show high disk utilization and increasing write latency. How would you investigate?
+* Network utilization on Kafka brokers reaches 95%. How would you determine whether network bandwidth is the bottleneck?
+* A producer application has high CPU usage after enabling compression. How would you decide whether compression is still beneficial?
+* Your application requires extremely low latency and cannot tolerate batching delays. How would you tune the producer?
+* Your application requires maximum throughput and can tolerate some latency. How would you tune `batch.size` and `linger.ms`?
+* A Kafka consumer processes only 500 messages per second while the broker can provide thousands. How would you investigate?
+* A consumer performs a database call for every Kafka message and consumer lag keeps increasing. How would you improve the design?
+* A Spring Kafka application has 20 consumer threads but throughput has not improved. What could be the reasons?
+* Increasing Kafka partitions from 10 to 100 does not improve throughput. How would you investigate?
+* One Kafka broker is heavily loaded while other brokers are mostly idle. How would you identify and fix the imbalance?
+* One partition receives significantly more traffic than the others. How does this affect performance and how would you address it?
+* A Kafka topic contains very large messages and producer throughput has dropped significantly. How would you optimize the system?
+* A consumer experiences frequent garbage collection pauses during peak traffic. How would you diagnose and resolve the issue?
+* Producer requests frequently wait because the producer buffer is full. What configuration or application changes would you consider?
+* Kafka consumers experience high CPU utilization due to JSON deserialization. How would you optimize the consumer?
+* Your Kafka application performs synchronous database writes before committing offsets and throughput is very low. How would you redesign it?
+* A payment-processing Kafka application requires high throughput while maintaining strong delivery guarantees. How would you balance performance and reliability?
+* Enabling `acks=all` significantly increases producer latency. How would you determine whether the configuration can be optimized safely?
+* A transactional Kafka application has much lower throughput than a non-transactional application. How would you investigate?
+* A Kafka Streams application becomes slow after the input traffic increases tenfold. How would you identify the bottleneck?
+* Consumer lag appears only during traffic spikes and returns to normal afterward. How would you determine whether this is acceptable or requires scaling?
+* A Kafka consumer is constantly hitting `max.poll.interval.ms`. How could this affect performance and stability?
+* Your application processes messages in parallel but business requirements require ordered processing for each customer. How would you balance ordering and throughput?
+* A Kafka cluster performs well in testing but becomes slow in production. What production-specific factors would you investigate?
+* You need to increase Kafka throughput without adding more brokers. What configuration and architectural changes would you evaluate?
+* You need to support 1 million events per second with predictable latency. How would you design and benchmark the Kafka architecture?

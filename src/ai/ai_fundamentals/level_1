@@ -1,0 +1,108 @@
+**Artificial Intelligence (AI) Fundamentals**
+* Explain the lifecycle of an AI application, from identifying a business problem to production deployment.
+* How do knowledge-based systems differ from data-driven AI systems?
+* How would you determine whether a business problem requires AI or conventional programming?
+* What are the limitations of AI systems in terms of reliability, explainability, and data dependency?
+* How do data quality and data availability influence AI outcomes?
+
+**Types of AI: Narrow AI, General AI, and Superintelligence**
+* Why are current AI systems generally classified as Narrow AI even when they can perform many different tasks?
+* What capabilities would a system need to demonstrate to qualify as AGI?
+* What technical and governance challenges could arise from developing superintelligent AI?
+* Can a single AI system perform multiple tasks without being considered AGI? Explain how you would assess this.
+* How should organizations evaluate the risks of deploying increasingly capable AI systems?
+
+**Generative AI vs Traditional AI**
+* Compare Generative AI and discriminative models in terms of objectives, outputs, and use cases.
+* How do predictive models, recommendation systems, and generative models differ?
+* What are the strengths and limitations of using Generative AI for enterprise automation?
+* How would you decide between a traditional Machine Learning model and an LLM for a document-processing use case?
+* How do hallucinations, determinism, and output validation affect the choice of AI approach?
+
+**Machine Learning Fundamentals**
+* Explain the end-to-end Machine Learning lifecycle, including data preparation, feature engineering, training, evaluation, and deployment.
+* What is overfitting, and how can it be detected?
+* What is underfitting, and how can it be addressed?
+* Explain the bias-variance trade-off.
+* What is cross-validation, and when would you use it?
+* How do feature selection and feature engineering affect model performance?
+
+**Supervised Learning**
+* Compare logistic regression, decision trees, random forests, and gradient boosting.
+* How would you handle an imbalanced classification dataset?
+* What is the difference between binary, multiclass, and multilabel classification?
+* How do you select an appropriate loss function for a classification or regression problem?
+* How do regularization techniques help supervised models generalize?
+* How would you evaluate a model that predicts customer churn?
+
+**Unsupervised Learning**
+* Compare K-means clustering, hierarchical clustering, and DBSCAN.
+* How would you select the number of clusters for K-means?
+* What are PCA and dimensionality reduction, and how can they help model development?
+* How do you evaluate clustering quality when ground-truth labels are unavailable?
+* How do outliers and feature scaling affect clustering results?
+* How would you use clustering to segment customers or detect unusual transactions?
+
+**Reinforcement Learning**
+* Explain the relationship between states, actions, rewards, and policies.
+* What is the exploration-versus-exploitation trade-off?
+* What is a Markov Decision Process?
+* How does Q-learning differ from policy-gradient approaches at a high level?
+* What are reward shaping and delayed rewards?
+* What challenges arise when transferring an agent trained in simulation to a real environment?
+
+**Deep Learning Fundamentals**
+* Compare CNNs, recurrent neural networks, and Transformers at a high level.
+* What is gradient descent, and how do optimizers such as SGD and Adam differ?
+* What are vanishing and exploding gradients?
+* How do dropout and regularization help prevent overfitting?
+* How do batch size and learning rate influence training?
+* When would you choose Deep Learning over a traditional Machine Learning algorithm?
+
+**Neural Networks**
+* Explain backpropagation and how gradients update network weights.
+* Compare sigmoid, tanh, and ReLU activation functions.
+* What is the purpose of the softmax function in multiclass classification?
+* How do weight initialization and normalization affect training stability?
+* What is the difference between batch normalization and layer normalization?
+* How would you diagnose a neural network whose training loss stops decreasing?
+
+**Natural Language Processing (NLP)**
+* Explain the differences between Bag of Words, TF-IDF, and word embeddings.
+* How does an embedding represent semantic relationships between words or text?
+* What is the difference between traditional NLP pipelines and Transformer-based NLP?
+* How do named entity recognition, text classification, and semantic search differ?
+* What are stop words, vocabulary, and out-of-vocabulary tokens?
+* How would you evaluate an NLP model for sentiment analysis or entity extraction?
+
+**Computer Vision**
+* Compare image classification, object detection, and semantic segmentation.
+* What are convolutional layers, filters, pooling, and feature maps?
+* How does data augmentation improve computer vision model generalization?
+* What is transfer learning, and when is it useful for image recognition?
+* What are Intersection over Union (IoU) and mean Average Precision (mAP)?
+* How would you address class imbalance in an image dataset?
+
+**Speech Recognition and Audio AI**
+* Explain the major stages of an automatic speech recognition pipeline.
+* What are spectrograms, sampling rates, and audio features?
+* How do noise, accents, and speaking speed affect speech recognition?
+* What are Word Error Rate (WER) and Character Error Rate (CER)?
+* How do speaker diarization and speaker recognition differ?
+* How would you design a speech-to-text feature for a multilingual enterprise application?
+
+**AI Model Training, Validation, and Inference**
+* Why should the test dataset remain separate from model development and tuning?
+* How can data leakage occur during preprocessing or feature engineering?
+* What is early stopping, and how does it help training?
+* Compare batch inference and real-time inference.
+* What are online learning and incremental learning?
+* How would you identify and address a large gap between training and validation performance?
+
+**AI Evaluation Metrics**
+* Explain the relationship between precision, recall, and the F1-score.
+* When is ROC-AUC useful, and how does it differ from precision-recall AUC?
+* Which metrics are appropriate for regression problems?
+* How do MAE, MSE, RMSE, and \(R^2\) differ?
+* How would you select an evaluation metric based on business costs and risks?
+* Why can a high-performing offline model perform poorly in production?

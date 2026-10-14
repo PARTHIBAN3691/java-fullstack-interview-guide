@@ -1,0 +1,30 @@
+* How would you determine the optimal number of partitions for a high-throughput Kafka topic?
+* How do you calculate the required partition count based on producer throughput?
+* How do you calculate the required partition count based on consumer throughput?
+* What factors should be considered before increasing partition count?
+* Why can increasing partition count be a breaking change for ordering-sensitive applications?
+* What happens to key-to-partition mapping when partitions are added?
+* How can increasing partitions cause related messages to be routed to different partitions?
+* How would you preserve logical ordering after increasing the number of partitions?
+* How does Kafka's partitioner calculate the target partition for a key?
+* What is the difference between the sticky partitioning behavior and key-based partitioning?
+* How can a poor partition key create a severe partition hotspot?
+* How would you design a partition key for millions of customers with highly uneven traffic?
+* How would you handle a single customer generating 50% of the total Kafka traffic?
+* Can you guarantee global ordering across all partitions? Why or why not?
+* How would you implement ordering for events belonging to the same business entity?
+* How does partition leadership affect Kafka performance?
+* What happens when one broker contains many partition leaders?
+* How would you rebalance partition leadership across brokers?
+* How does Kafka handle partition replicas across brokers?
+* What is the relationship between partition replication factor and availability?
+* How does `min.insync.replicas` affect writes to a partition?
+* What happens when the number of ISR replicas falls below `min.insync.replicas`?
+* How does `acks=all` interact with partition replication?
+* How would you troubleshoot under-replicated partitions?
+* How would you troubleshoot a single partition with significantly higher lag than others?
+* How does partition count affect controller metadata and broker resource usage?
+* What are the operational risks of creating a topic with thousands of partitions?
+* How does a large number of partitions affect Kafka startup and recovery time?
+* How would you migrate from an incorrectly partitioned topic to a correctly partitioned topic?
+* How would you design partitioning for a payment system where all events for an account must remain ordered?

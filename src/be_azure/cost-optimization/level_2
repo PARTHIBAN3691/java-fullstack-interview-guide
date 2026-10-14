@@ -1,0 +1,20 @@
+* How would you design a cost-efficient architecture for a Java microservices application deployed across multiple Azure regions?
+* How would you balance high availability, performance, scalability, and cost when designing Azure infrastructure?
+* How would you determine the right instance size and autoscaling limits for a Java application with unpredictable traffic?
+* How would you identify whether high cloud costs are caused by inefficient application code, excessive resource allocation, or infrastructure architecture?
+* How would you build a cost-per-transaction model for a Java-based payment processing platform hosted on Azure?
+* How would you implement unit economics and allocate Azure costs to individual microservices or business capabilities?
+* How would you evaluate the cost impact of synchronous REST communication versus asynchronous messaging between Java microservices?
+* How would you determine whether AKS is more cost-effective than Azure App Service for a particular workload?
+* How would you optimize JVM memory, CPU requests, and limits for Java workloads running in AKS?
+* How would you prevent Kubernetes autoscaling from creating unnecessary infrastructure costs?
+* How would you optimize Azure networking costs associated with inter-region traffic, NAT Gateway, load balancers, and data transfer?
+* How would you evaluate the cost implications of active-active versus active-passive disaster recovery architectures?
+* How would you optimize a Java application that generates large volumes of telemetry and distributed tracing data?
+* How would you establish automated cost anomaly detection and alerting for Azure workloads?
+* How would you implement automated shutdown and startup of non-production environments while protecting shared resources?
+* How would you compare reserved capacity, savings plans where applicable, and pay-as-you-go pricing using actual workload patterns?
+* How would you prevent cost optimizations from violating security, compliance, performance, or availability requirements?
+* How would you establish FinOps practices across multiple Java development teams and Azure subscriptions?
+* How would you build a continuous cost optimization process using Azure APIs, automation, and CI/CD pipelines?
+* How would you validate that a 30% reduction in Azure spending is sustainable without degrading service quality?

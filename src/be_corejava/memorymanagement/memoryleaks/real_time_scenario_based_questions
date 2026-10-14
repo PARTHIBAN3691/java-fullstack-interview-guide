@@ -1,0 +1,21 @@
+
+* A Spring Boot service starts with low heap usage, but its memory consumption grows continuously over several days. How would you investigate the root cause?
+* A production application experiences repeated Full GC events, and each collection reclaims less memory than the previous one. What could be happening?
+* A static `Map` stores user session information indefinitely. How would you redesign the implementation to prevent memory leaks?
+* An application uses a fixed-size thread pool, but heap usage increases after every request. How would you investigate possible `ThreadLocal` retention?
+* A web application leaks memory only after several redeployments. How would you investigate class loader retention?
+* A Spring singleton service stores request-specific objects in instance variables. What problems can this cause, and how would you fix them?
+* A cache improves response time but eventually causes `OutOfMemoryError`. How would you identify and address the problem?
+* A batch processing service loads millions of database records into a list and retains them until the job finishes. How would you reduce memory retention?
+* A Java application has normal heap usage but its container repeatedly gets killed because of memory pressure. How would you investigate native memory and direct buffer usage?
+* An event-driven application registers listeners dynamically but does not remove them. How would you identify and fix the leak?
+* A scheduled executor retains completed task objects and associated application data. What would you inspect and change?
+* A microservice shows a steadily increasing number of live objects of one particular class. How would you determine whether this is a genuine leak?
+* A memory leak occurs only under high concurrency. How would you reproduce and diagnose it?
+* After a release, the application's average heap usage increases significantly, but request traffic remains unchanged. How would you compare the old and new versions?
+* A team proposes increasing `-Xmx` to resolve recurring memory errors. What evidence would you gather before accepting the change?
+* A Java application opens file streams in multiple code paths, and file descriptors are gradually exhausted. How would you diagnose and fix the resource leak?
+* A reactive application retains large request payloads after responses have completed. What lifecycle and subscription issues would you investigate?
+* A Hibernate batch job gradually consumes heap memory while processing entities. How would you investigate persistence-context growth?
+* A suspected memory leak cannot be reproduced locally but occurs in production after 48 hours. How would you collect useful diagnostic evidence safely?
+* After implementing a fix, heap usage still rises during traffic spikes. How would you prove whether the leak is resolved or merely reduced?

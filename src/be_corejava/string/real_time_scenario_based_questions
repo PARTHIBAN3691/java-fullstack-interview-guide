@@ -1,0 +1,21 @@
+
+* An application creates millions of duplicate string objects and experiences high memory usage. How would you investigate and optimize string storage?
+* A developer compares two strings using `==`, and the code passes tests but fails in production. Why might this happen, and how would you fix it?
+* A service builds a large SQL query by concatenating strings inside a loop. How would you improve its performance and security?
+* A cache uses user-provided strings as keys, but equivalent keys sometimes fail to match. How would you investigate the equality and normalization logic?
+* A text-processing application incorrectly counts emoji as two characters. How would you implement code-point-aware counting?
+* A multilingual application treats visually identical strings as different values. How would you investigate Unicode normalization?
+* A REST API accepts whitespace-only input even though validation should reject it. How would you handle whitespace and empty strings correctly?
+* A log-processing application splits millions of lines using regular expressions and becomes slow. How would you profile and optimize the parsing logic?
+* A method repeatedly converts between `String`, `StringBuilder`, and `StringBuffer`. How would you decide which representation is appropriate?
+* A large application frequently calls `intern()` on user-generated strings. What performance or memory risks could arise?
+* A developer uses `replaceAll()` to replace a literal dot, but the result is unexpected. What is the problem, and how would you correct it?
+* A CSV parser splits every row using a comma, but quoted fields contain commas. Why is `split(",")` insufficient, and what approach would you use?
+* A system compares usernames without considering case, while preserving the original display name. How would you design the comparison and storage logic?
+* A security-sensitive application stores passwords in ordinary strings and attempts to clear them after use. What limitations exist, and what safer practices are available?
+* A service receives extremely long user inputs and experiences high CPU usage during regex validation. How would you investigate potential catastrophic backtracking?
+* A Java application processes large multilingual files but produces incorrect character counts. How would you distinguish byte length, UTF-16 length, code-point count, and grapheme count?
+* A developer uses `StringBuilder` in a shared field accessed by multiple threads. What can go wrong, and how would you redesign the code?
+* A program produces different results when concatenating a constant string and a dynamically generated string. How would you explain the compiler and runtime behavior?
+* A search service needs efficient case-insensitive matching across international text. What considerations would guide the implementation?
+* A microservice spends significant CPU time formatting strings for logs, including messages that are never emitted. How would you reduce unnecessary string creation?

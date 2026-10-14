@@ -1,0 +1,30 @@
+* Your user database has grown to several billion records, and query latency is increasing. How would you decide whether to introduce sharding?
+* One shard receives 70% of all write traffic because the shard key is poorly distributed. How would you resolve the hotspot?
+* A rapidly growing e-commerce platform needs to shard its orders database. Which shard key would you choose, and why?
+* A social media platform needs to store billions of user posts. How would you shard posts while supporting user timelines?
+* A multi-tenant SaaS platform has a few very large customers and thousands of small customers. How would you distribute tenants across shards?
+* A single enterprise tenant overwhelms the shard shared with other tenants. How would you isolate its workload?
+* You add four new database shards, but most existing records remain on the original shards. How would you rebalance the data?
+* During resharding, some records are updated on the old shard while migration is in progress. How would you prevent lost updates?
+* Your shard router caches outdated routing metadata after a migration. How would you prevent incorrect reads and writes?
+* A shard becomes unavailable during a customer checkout. How should the application handle the failure without creating duplicate orders?
+* A reporting query requires aggregating sales across 100 shards and times out. How would you redesign the reporting architecture?
+* A product catalog requires filtering by category, price, and brand, but the data is sharded by product ID. How would you optimize these queries?
+* Your application frequently joins customer and order data located on different shards. How would you reduce cross-shard query costs?
+* A financial application needs a transfer between accounts stored on different shards. How would you maintain correctness and recover from partial failures?
+* A unique email address must remain unique across all user shards. How would you enforce the constraint?
+* A global application needs low-latency access in Asia, Europe, and America. How would you combine sharding and replication?
+* A sequential order ID causes all new writes to land on one shard. How would you redesign the shard key?
+* One shard is nearly full while the others have substantial free space. How would you redistribute data safely?
+* A migration requires moving millions of records without taking the application offline. How would you plan the migration and validate its correctness?
+* During shard migration, duplicate events cause the same record to be inserted twice on the destination shard. How would you prevent this?
+* A database schema change succeeds on some shards but fails on others. How would you recover and maintain application compatibility?
+* A shard replica falls behind the primary, and users receive stale data after writes. How would you address the consistency requirement?
+* A regional outage makes several shards unavailable, but the application must continue serving critical requests. How would you design the failover strategy?
+* A global user ID generator becomes unavailable during a network partition. How would you preserve availability and uniqueness?
+* A sharded database experiences elevated latency even though CPU utilization is low. How would you investigate connection pools, routing, network latency, and lock contention?
+* A customer requests deletion of personal data stored across multiple shards and replicas. How would you guarantee deletion and audit completion?
+* A sharded database backup completes at different times for different shards. How would you restore a consistent application state?
+* A cross-shard search requires ranking results from multiple databases. How would you merge the results efficiently?
+* A shard-routing service becomes a single point of failure. How would you redesign it for high availability?
+* You must migrate a production application from a single PostgreSQL database to a sharded architecture. How would you execute the migration with minimal risk?

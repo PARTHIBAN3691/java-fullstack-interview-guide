@@ -1,0 +1,21 @@
+
+* Explain the Method Area as part of the JVM runtime data areas.
+* What information does the Method Area contain about a loaded class?
+* How are runtime constant pools associated with the Method Area?
+* What is the difference between the runtime constant pool and the string constant pool?
+* How does the Method Area differ from Metaspace in the HotSpot JVM?
+* Is Metaspace the Method Area itself, or an implementation mechanism for it?
+* How did PermGen differ from Metaspace in Java 7 and Java 8?
+* How are method bytecode, class metadata, and method execution related?
+* Where are method frames and local variables stored when a method executes?
+* How does the JVM distinguish class-level metadata from objects instantiated from a class?
+* How are static fields represented and managed in modern HotSpot JVM implementations?
+* How does the lifecycle of class metadata relate to the lifecycle of a class loader?
+* Under what conditions can a loaded class be unloaded?
+* Why is the Method Area shared across threads while JVM stacks are thread-specific?
+* Can the Method Area cause an `OutOfMemoryError`?
+* What is the difference between `OutOfMemoryError: Metaspace` and heap exhaustion?
+* How can dynamically generated classes affect Method Area-related memory usage?
+* How can `ClassLoadingMXBean` help monitor class loading and unloading?
+* Which JVM diagnostic tools can help investigate class metadata usage?
+* How would you explain the Method Area to a developer who confuses it with the heap?

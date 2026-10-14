@@ -1,0 +1,30 @@
+* How would you design a configuration strategy for a large Spring Boot microservices architecture?
+* How does Spring Boot resolve property sources when the same property is defined in multiple locations?
+* How would you troubleshoot unexpected configuration values in a production application?
+* How would you design type-safe configuration using @ConfigurationProperties?
+* How would you validate complex configuration structures during application startup?
+* How would you handle missing or invalid configuration values without allowing the application to start?
+* How would you design configuration for multiple tenants with different runtime settings?
+* How would you manage secrets without storing passwords or API keys in application.properties?
+* How would you integrate Spring Boot with a centralized secrets manager?
+* How would you design external configuration management across development, testing, staging, and production?
+* How would you implement conditional bean registration based on multiple configuration properties?
+* How would you create a custom Spring Boot auto-configuration module?
+* What is the purpose of AutoConfiguration.imports in modern Spring Boot auto-configuration?
+* How would you implement conditional auto-configuration using @ConditionalOnClass and @ConditionalOnMissingBean?
+* How would you troubleshoot an auto-configuration that unexpectedly creates or fails to create a bean?
+* How would you inspect the conditions that caused a Spring Boot auto-configuration to match or not match?
+* How would you avoid circular dependencies between configuration classes?
+* How would you configure multiple DataSource beans in the same Spring Boot application?
+* How would you configure separate transaction managers for multiple databases?
+* How would you manage configuration changes without restarting the application?
+* What are the limitations of changing configuration properties at runtime?
+* How would you design a safe refresh mechanism for configuration-dependent beans?
+* How would you prevent sensitive configuration values from appearing in logs or diagnostic endpoints?
+* How would you implement immutable configuration objects and why might they be beneficial?
+* How would you manage backward compatibility when configuration property names change?
+* How would you design feature toggles using configuration properties?
+* How would you ensure consistent configuration across multiple replicas of a microservice?
+* How would you handle configuration drift between application instances?
+* How would you troubleshoot configuration binding failures involving generics, nested objects, or custom types?
+* How would you design automated tests to verify configuration precedence, profile behavior, and conditional bean creation?

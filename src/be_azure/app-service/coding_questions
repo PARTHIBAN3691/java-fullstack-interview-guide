@@ -1,0 +1,21 @@
+
+* Develop a Java Spring Boot REST API that can be deployed to Azure App Service and exposes a health-check endpoint.
+* Create a Spring Boot application that reads database connection details from environment variables rather than hardcoded values.
+* Implement a Spring Boot configuration class that loads different settings for development, staging, and production using Spring profiles.
+* Develop a REST endpoint that returns application version and build information for deployment verification.
+* Write a Spring Boot health indicator that checks connectivity to a downstream service.
+* Implement a REST API with request validation and centralized exception handling, suitable for deployment to Azure App Service.
+* Develop a Spring Boot service that retrieves secrets from Azure Key Vault using managed identity.
+* Write Java code to access Azure Blob Storage using the Azure SDK and managed identity.
+* Implement a Spring Boot REST API that connects to Azure SQL Database using a configured JDBC connection pool.
+* Configure a HikariCP connection pool for a Spring Boot application and explain the settings needed for production.
+* Implement graceful shutdown handling for a Spring Boot application to reduce the impact of instance restarts.
+* Develop a Java REST API that exposes metrics for monitoring through an observability platform.
+* Write a Spring Boot application that propagates correlation IDs across incoming requests and outgoing HTTP calls.
+* Implement a retry mechanism with exponential backoff for transient failures when calling a downstream service.
+* Develop a Java service that uses timeouts and a circuit breaker when communicating with a remote API.
+* Write a scheduled Spring Boot job and explain how to prevent duplicate execution when the application runs on multiple instances.
+* Implement a REST endpoint that supports graceful degradation when a downstream dependency is unavailable.
+* Create an integration test for a Spring Boot REST API that verifies health-check and readiness behavior.
+* Write a deployment verification script that calls an App Service health endpoint and validates the deployed application version.
+* Design and implement a Spring Boot API that supports stateless authentication, horizontal scaling, and centralized configuration in Azure App Service.

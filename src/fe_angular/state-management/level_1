@@ -1,0 +1,30 @@
+* Explain how to implement shared state using an Angular service and BehaviorSubject.
+* How do you share state between unrelated components?
+* How do you keep application state synchronized across multiple components?
+* What are the advantages and disadvantages of using services for state management?
+* What problems can arise when using a global service to manage application state?
+* How do you avoid direct mutation of shared state?
+* How do you expose read-only state from an Angular service?
+* How do you manage loading, success, and error states?
+* How do you combine multiple state streams using RxJS?
+* What is the difference between BehaviorSubject and ReplaySubject for state management?
+* How do you persist application state across page refreshes?
+* How do you synchronize state with localStorage or sessionStorage?
+* What is NgRx Store, and how does it work?
+* Explain the NgRx data flow from component to Store and back.
+* How do you dispatch an Action in NgRx?
+* How do you update state using a Reducer?
+* How do you select state using a Selector?
+* What are memoized selectors in NgRx?
+* What is the purpose of NgRx Effects?
+* How do Effects handle API calls?
+* What is the difference between NgRx Store and NgRx ComponentStore?
+* What is the difference between NgRx and a service-based state management approach?
+* What is the difference between NgRx and Angular Signals?
+* How do you manage state in a standalone Angular application?
+* How do you share state between parent and child components?
+* How do you manage form state in Angular?
+* How do you handle state changes caused by HTTP responses?
+* How do you debug state changes in an Angular application?
+* How do you test a service that manages application state?
+* How do you test NgRx reducers, selectors, and effects?

@@ -1,0 +1,21 @@
+
+* How do you connect a Java application to DynamoDB using AWS SDK for Java 2.x?
+* How do you configure `DynamoDbClient` and `DynamoDbEnhancedClient` in a Spring Boot application?
+* How do you perform CRUD operations on DynamoDB items using Java?
+* How do you map a Java POJO to a DynamoDB table using the Enhanced Client?
+* How do you design a DynamoDB table for an e-commerce application?
+* How do you retrieve all items matching a partition key using the `Query` operation?
+* How do you implement pagination when querying DynamoDB from Java?
+* How do you implement filtering with DynamoDB queries, and why can filter expressions increase consumed read capacity?
+* How do projection expressions reduce the amount of data returned by DynamoDB?
+* How do you implement conditional updates to prevent overwriting an existing value?
+* How do you use `PutItem`, `UpdateItem`, and `DeleteItem` in Java?
+* How do batch reads and batch writes work in DynamoDB?
+* How do you handle unprocessed items returned by `BatchWriteItem`?
+* What are DynamoDB transactions, and when would you use `TransactWriteItems`?
+* How do you implement optimistic locking using a version attribute?
+* How do you model one-to-many relationships in DynamoDB?
+* How do you choose between a GSI and an LSI for a query requirement?
+* How do you handle throttling exceptions and retry requests in the AWS SDK for Java?
+* How do DynamoDB Streams integrate with AWS Lambda?
+* How do you secure DynamoDB access using IAM roles and least-privilege policies?

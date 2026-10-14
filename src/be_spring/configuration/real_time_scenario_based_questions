@@ -1,0 +1,30 @@
+* Your application uses a different database URL in production than expected. How would you identify which property source overrides the configured value?
+* A Spring Boot application fails during startup because a required configuration property is missing. How would you detect and fix the issue?
+* Your application works locally but fails in a deployment environment because environment variables are not being bound correctly. How would you troubleshoot it?
+* Two beans of the same interface are registered, causing NoUniqueBeanDefinitionException. How would you resolve the ambiguity?
+* A bean defined with @Bean is not available for injection. How would you investigate the configuration issue?
+* Your @ConfigurationProperties class is not receiving values from application.yml. What would you check?
+* A configuration property contains a typo, but the application still starts with an unexpected default value. How would you prevent this?
+* Your development and production environments require different database configurations. How would you implement the separation?
+* A profile-specific bean is unexpectedly created in production. How would you investigate the active profiles and bean conditions?
+* Your application contains a hardcoded API URL that changes between environments. How would you externalize it?
+* A database password is stored in application.properties and committed to source control. How would you remediate the exposure and redesign secret management?
+* Your service needs to connect to two databases with different schemas. How would you configure the DataSource and transaction managers?
+* A configuration change requires a full application restart, causing downtime. How would you design a safer configuration refresh strategy?
+* A configuration property is defined in both an environment variable and a YAML file, but the application uses the unexpected value. How would you debug property precedence?
+* Your custom auto-configuration creates a bean even when the application has already defined its own implementation. How would you correct the conditions?
+* A reusable Spring Boot starter works in one application but fails in another because a required class is missing. How would you design conditional auto-configuration?
+* Your application has several @Configuration classes with circular dependencies. How would you restructure the configuration?
+* A production application exposes credentials through logs or management endpoints. How would you prevent sensitive configuration leakage?
+* Your microservices use inconsistent timeout values for the same downstream service. How would you centralize and standardize those settings?
+* A new configuration property is introduced, but older deployments do not define it. How would you ensure backward compatibility?
+* Your application must enable a feature for selected customers without redeploying the service. How would you design the configuration and feature-toggle mechanism?
+* One replica of a microservice uses different configuration from the other replicas, causing inconsistent behavior. How would you identify and resolve configuration drift?
+* Your application starts successfully, but a nested configuration list is bound in the wrong order or format. How would you troubleshoot the binding?
+* A configuration property must be validated against a business rule before startup completes. How would you implement the validation?
+* Your team wants to override a bean only in integration tests. How would you configure test-specific beans without changing production configuration?
+* An auto-configuration works in a standalone application but fails when packaged as a reusable starter. How would you investigate component scanning and auto-configuration registration?
+* Your application needs different logging levels for different packages without changing Java code. How would you configure them?
+* A service uses @Value extensively, making configuration difficult to test and maintain. How would you refactor it?
+* A new configuration format changes property names used by several services. How would you migrate without breaking existing deployments?
+* You need to enforce common configuration conventions across dozens of Spring Boot services. How would you design the reusable configuration approach?

@@ -1,0 +1,15 @@
+* A production API experiences long GC pauses under G1 GC. How would you evaluate whether switching to ZGC could improve latency?
+* An application has a heap size of several hundred gigabytes and strict latency requirements. How would you evaluate ZGC for this workload?
+* After switching to ZGC, application latency improves but CPU utilization increases significantly. How would you investigate the cause?
+* A service experiences allocation stalls during peak traffic while using ZGC. How would you identify whether allocation rate, heap size, or CPU availability is responsible?
+* ZGC logs show that garbage collection cycles occur frequently, but heap occupancy remains high. How would you investigate object retention?
+* A service throws `OutOfMemoryError` even though ZGC is enabled. How would you investigate the problem?
+* An application has low GC pause times but high p99 response latency. How would you determine whether garbage collection is still the main cause?
+* A containerized Java service uses ZGC and is terminated because of memory pressure. How would you investigate heap usage and native memory consumption?
+* After enabling Generational ZGC, a service shows different collection frequencies and CPU usage. How would you compare the results with non-generational ZGC?
+* A high-throughput application allocates millions of short-lived objects per second. How would you evaluate whether Generational ZGC is appropriate?
+* A service's allocation rate increases after a deployment, and ZGC struggles to reclaim memory quickly enough. How would you investigate and optimize the workload?
+* A Java application has a large live-data set and limited free heap space. How would you determine whether ZGC has enough headroom to perform concurrent collection?
+* Two services use the same ZGC configuration, but one experiences more allocation stalls. What workload and runtime metrics would you compare?
+* A team wants to switch from G1 GC to ZGC solely to reduce latency. How would you design a benchmark to validate the change?
+* You need to choose a garbage collector for a latency-sensitive financial application. How would you compare ZGC, Shenandoah GC, and G1 GC using p99 latency, throughput, CPU consumption, and memory usage?

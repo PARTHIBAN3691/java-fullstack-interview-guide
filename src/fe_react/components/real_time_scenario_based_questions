@@ -1,0 +1,30 @@
+* A component re-renders whenever its parent renders, even though its displayed data has not changed. How would you investigate and optimize it?
+* A child component needs to update its parent's state. How would you design the communication between them?
+* A reusable component has too many Boolean props and becomes difficult to maintain. How would you redesign its API?
+* A form component contains hundreds of fields and becomes slow during user input. How would you improve its rendering performance?
+* A component loses its input values when the user reorders a list. How would you investigate the use of keys?
+* A modal component must render outside its parent container. How would you implement it while preserving accessibility?
+* Multiple components need access to the same authenticated user information. How would you design the component hierarchy?
+* A Context provider update causes many unrelated components to re-render. How would you optimize the design?
+* A shared button component has different styles and behaviors across multiple pages. How would you standardize its API?
+* A component library introduces a breaking prop change that affects several applications. How would you manage the migration?
+* A component crashes because a nested API response is missing a property. How would you make the component resilient?
+* A component uses an effect to derive state from props and enters an update loop. How would you simplify the implementation?
+* A page contains several independent sections, and an error in one section breaks the entire page. How would you isolate failures?
+* A lazy-loaded component displays no useful feedback while its code is downloading. How would you improve the loading experience?
+* A component behaves differently during server rendering and after hydration. How would you identify the cause?
+* A reusable dropdown must support mouse, keyboard, and screen-reader interactions. How would you design the component?
+* A child component receives a new callback on every render and loses memoization benefits. How would you fix it?
+* A list of thousands of components causes slow scrolling and high memory usage. What rendering strategy would you use?
+* A component contains both API calls and complex business logic, making it difficult to test. How would you refactor it?
+* A component subscribes to a WebSocket but continues receiving events after unmounting. How would you fix the cleanup?
+* Two components contain nearly identical UI and business logic. How would you determine the right level of reuse?
+* A component uses many nested ternary expressions for conditional rendering. How would you improve readability?
+* A component must support different layouts while preserving consistent behavior. How would you use composition?
+* A parent component needs to trigger focus or reset behavior in a child component. How would you implement this without excessive coupling?
+* A component works with mouse clicks but fails for keyboard users. How would you identify and fix the accessibility issues?
+* A team wants to replace class components with functional components. How would you approach the migration safely?
+* A shared component uses internal state that becomes inconsistent when its props change. How would you redesign its state ownership?
+* A component library needs to support multiple themes and design systems. How would you structure its styling and configuration?
+* A production page shows unexpected state resets after navigation. How would you investigate component identity and mounting behavior?
+* You are designing a React component architecture for a large enterprise application. How would you balance reusability, isolation, performance, and maintainability?

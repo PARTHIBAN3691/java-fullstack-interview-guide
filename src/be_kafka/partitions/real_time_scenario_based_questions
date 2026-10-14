@@ -1,0 +1,30 @@
+* A Kafka topic has 20 partitions, but one partition has 80% of the traffic. How would you investigate and fix the problem?
+* Your consumer application is processing only 10 of 100 partitions. What could be wrong?
+* A topic has 10 partitions and your consumer group has 20 consumers. What happens and how would you optimize the deployment?
+* A production topic is experiencing increasing consumer lag only on two partitions. How would you troubleshoot it?
+* Your application requires ordering of all events for a customer. How would you choose the partition key?
+* A customer suddenly generates millions of events and creates a hot partition. How would you handle this without losing ordering requirements?
+* You increased a topic from 10 to 30 partitions and discovered that events for the same customer are now going to different partitions. Why did this happen?
+* A payment application requires all transactions for an account to be processed sequentially. How would you design the Kafka partitioning strategy?
+* Your Kafka producer is sending messages with null keys and traffic distribution across partitions is unexpectedly uneven. How would you investigate?
+* A single broker is consuming significantly more CPU than other brokers because it owns many partition leaders. How would you resolve it?
+* A topic has 5 partitions, but consumer throughput has reached its limit. How would you determine whether increasing partitions will solve the problem?
+* A team wants to create 10,000 partitions for a high-volume topic "just in case." How would you evaluate this design?
+* A Kafka topic receives events from multiple regions, and one region generates significantly more traffic. How would you design the partition key?
+* A producer sends related events with different keys, causing them to land on different partitions. How would you identify and correct the issue?
+* After a deployment, records that previously appeared ordered are now processed out of order. How would you investigate whether partitioning caused the problem?
+* A consumer group experiences frequent rebalances after the topic partition count is increased. What could be causing the issue?
+* A partition's disk usage is much higher than all other partitions. What could cause this and how would you investigate?
+* A topic has highly skewed keys, and changing the key is not immediately possible. What temporary solutions could you consider?
+* You need to process customer events in parallel while maintaining per-customer ordering. How would you design the topic and consumer group?
+* A Kafka producer uses a custom partitioner, and after a deployment messages are distributed incorrectly. How would you troubleshoot it?
+* A partition leader fails repeatedly while follower replicas remain healthy. How would you investigate the broker and partition configuration?
+* A topic has replication factor 3, but several partitions have only one ISR. What risks does this create and how would you respond?
+* Producers receive `NotEnoughReplicasException` after a broker failure. How would you diagnose the partition-level problem?
+* A topic has 100 partitions but only one consumer instance is processing records from one partition. How would you determine whether the issue is consumer assignment or partition load?
+* Your application requires strict ordering for orders but high throughput for unrelated orders. What partitioning strategy would you choose?
+* A new business requirement requires partitioning events by region instead of customer. How would you assess the impact on ordering and scalability?
+* A topic is growing rapidly and adding partitions appears to improve throughput only slightly. What other bottlenecks would you investigate?
+* A partition has high producer latency while other partitions are healthy. How would you investigate whether the issue is broker, disk, network, or partition leadership?
+* You need to migrate from 12 partitions to 48 partitions with minimal downtime. How would you design the migration?
+* A Kafka Streams application becomes slower after increasing the number of partitions. What partition-related factors would you investigate?

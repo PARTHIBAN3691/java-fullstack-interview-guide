@@ -1,0 +1,26 @@
+
+* Your application contains a DTO with only fields, a constructor, getters, `equals()`, `hashCode()`, and `toString()`. How could a Java 14 record simplify the implementation?
+* A record contains a list of permissions that must not be modified by callers. How would you protect the record's internal data?
+* A record receives an invalid email address or negative amount during construction. How would you validate the input?
+* A record represents a financial transaction with multiple fields. How would you enforce invariants using a compact constructor?
+* Your application needs a record with a custom constructor that supports a default value for one component. How would you implement it?
+* A developer attempts to extend a custom base class from a record. Why does this fail, and what design alternatives would you consider?
+* A record is being used as a key in a HashMap, but one of its components is mutable. What problems could arise?
+* Your API returns records as immutable response DTOs, but the schema evolves frequently. What compatibility considerations would you evaluate?
+* A method contains a long switch statement that assigns a value to a variable in every branch. How could a switch expression simplify it?
+* A payment service must return different processing fees for different payment types. How would you implement this with a switch expression?
+* A switch expression handles an enum representing order status. How would you ensure that adding a new enum value does not silently leave the logic incomplete?
+* A switch expression needs multiple statements before producing a result. How would you use a block and `yield`?
+* A code review identifies accidental fall-through in a traditional switch statement. How could arrow-style switch labels help prevent the issue?
+* A team wants to generate multiline SQL templates with readable formatting. How could Java 14 text blocks help?
+* A generated JSON payload contains unwanted indentation or escape sequences. How would you use text-block-related String methods to clean it up?
+* A developer uses text blocks to concatenate user-supplied input directly into an SQL query. What security risks would you identify?
+* A method performs an `instanceof` check and then casts the same object to a specific type. How could Java 14 pattern matching simplify the code?
+* A codebase enables Java 14 preview features, but the build server fails to compile the project. What compiler and runtime settings would you check?
+* A production exception contains a deeply nested NullPointerException. How could Java 14's helpful NPE messages help diagnose it?
+* A team plans to adopt Java 14 features but must maintain compatibility with Java 11 in another service. How would you separate standard features from preview-only features?
+* A domain model contains nested data objects that are frequently compared and logged. How could records improve maintainability?
+* A switch expression operates on a String input that may be null. How would you handle the null case safely?
+* A developer assumes a record is deeply immutable because its components cannot be reassigned. How would you explain the limitation using a mutable collection example?
+* An application needs to build multiline JavaScript, SQL, or JSON templates. How would you decide whether text blocks are appropriate?
+* Your team wants to upgrade to Java 14 for language improvements but needs a support strategy beyond that release. What release and migration considerations would you discuss?

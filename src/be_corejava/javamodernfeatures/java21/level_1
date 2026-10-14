@@ -1,0 +1,27 @@
+
+* How do virtual threads reduce the cost of handling many concurrent tasks?
+* How do you create and start a virtual thread using `Thread.ofVirtual()`?
+* How do you create multiple virtual threads using `Executors.newVirtualThreadPerTaskExecutor()`?
+* How do virtual threads differ from threads managed by a traditional fixed thread pool?
+* Are virtual threads intended to make CPU-intensive tasks faster?
+* What are the limitations of using virtual threads for CPU-bound workloads?
+* What is thread pinning, and how can it affect virtual threads?
+* How should blocking I/O operations be handled when using virtual threads?
+* Why should developers avoid pooling virtual threads?
+* How do record patterns simplify extracting data from records?
+* How can nested record patterns be used to destructure complex objects?
+* How does pattern matching for `switch` improve type-based branching?
+* What is the purpose of guarded patterns using the `when` clause?
+* How does Java 21 handle exhaustiveness in pattern matching for `switch`?
+* How do null cases work in pattern matching for `switch`?
+* What is the difference between traditional `switch` statements and pattern matching for `switch`?
+* How do sequenced collections provide consistent operations for first and last elements?
+* Which methods were added to `SequencedMap` in Java 21?
+* How does `SequencedSet` differ from an ordinary `Set`?
+* How does the `reversed()` method behave on a sequenced collection?
+* What are unnamed patterns and variables, and how do they improve readability?
+* What is the purpose of the Foreign Function and Memory API's `Arena` and `MemorySegment` types?
+* How does the Foreign Function and Memory API differ from JNI?
+* How does structured concurrency help manage related concurrent tasks?
+* What is the purpose of scoped values, and how do they differ from `ThreadLocal`?
+* How does Generational ZGC divide objects into generations?

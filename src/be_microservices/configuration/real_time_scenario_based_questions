@@ -1,0 +1,30 @@
+* A microservice starts with the wrong database URL in production. How would you identify the source of the configuration error?
+* A Spring Boot application works locally but fails in production because a required property is missing. How would you troubleshoot it?
+* Multiple microservices use the same property name but require different values. How would you organize the configuration?
+* A configuration change causes several services to fail simultaneously. What immediate actions would you take?
+* The Spring Cloud Config Server becomes unavailable during a new service deployment. How should the deployment behave?
+* A service continues using old configuration after a refresh event. How would you investigate the issue?
+* A property updated in Git is not reflected in the running application. What would you check?
+* One microservice receives the wrong profile-specific configuration after deployment. How would you resolve it?
+* A database password expires, and several services lose database connectivity. How would you implement safer credential rotation?
+* An API key is accidentally committed to a Git configuration repository. What actions would you take?
+* A developer changes a production configuration directly without review. How would you improve governance and auditability?
+* A configuration refresh causes an application to behave inconsistently across instances. How would you diagnose and correct the issue?
+* A feature flag is enabled on some instances but remains disabled on others. How would you investigate configuration propagation?
+* Your platform has hundreds of microservices and configuration files are difficult to maintain. How would you restructure the repository?
+* A shared timeout property is changed and unexpectedly affects multiple services. How would you prevent this type of regression?
+* A Config Server cannot authenticate to a private Git repository after credentials are rotated. How would you troubleshoot it?
+* A Spring Boot application exposes sensitive properties through an actuator endpoint. How would you secure the application?
+* A configuration change requires coordinated updates to an order service and a payment service. How would you manage compatibility during rollout?
+* A Kubernetes Secret is updated, but the application continues using the old credential. How would you resolve the problem?
+* A production deployment must continue even if the Config Server is temporarily unavailable. How would you design startup and caching behavior?
+* A malformed configuration value causes an application to start but behave incorrectly. How would you introduce validation?
+* An emergency feature flag must disable a faulty feature across all service instances within seconds. How would you design the mechanism?
+* Different customers require different rate limits and business rules. How would you manage tenant-specific configuration safely?
+* A configuration repository has no clear history of who changed a production property. How would you introduce traceability?
+* A rolling deployment runs old and new application versions that interpret the same property differently. How would you handle the transition?
+* Configuration refresh events overload the messaging infrastructure during a large deployment. How would you reduce the impact?
+* A developer accidentally includes production settings in a test environment. How would you prevent cross-environment configuration leakage?
+* A certificate used for mutual TLS is about to expire across several services. How would you coordinate rotation without downtime?
+* Your organization is moving from Spring Cloud Config to a managed configuration platform. How would you plan the migration?
+* You are designing configuration management for a financial microservices platform. How would you address security, auditability, availability, validation, and rollback?

@@ -1,0 +1,20 @@
+* Write a Java AWS Lambda handler using the `RequestHandler` interface that accepts a request and returns a greeting.
+* Write a Java Lambda handler using `RequestStreamHandler` to read JSON input from an input stream and write a JSON response.
+* Write a Java Lambda function that accepts an API Gateway request and returns the correct HTTP status code, headers, and JSON body.
+* Write a Java Lambda function that reads an object from Amazon S3 and processes its contents.
+* Write a Java Lambda function that inserts an order into DynamoDB using AWS SDK for Java 2.x.
+* Write a Java Lambda function that retrieves a secret from AWS Secrets Manager without hardcoding credentials.
+* Write a Java Lambda function that publishes a message to Amazon SQS using AWS SDK for Java 2.x.
+* Write a Java Lambda function that sends an event to Amazon EventBridge.
+* Write a Java Lambda function that processes an SQS event batch and reports partial batch failures.
+* Write a Java Lambda function that consumes Kinesis records and decodes each record's Base64-encoded data.
+* Write a Java Lambda function that processes DynamoDB Streams events and identifies inserted, modified, and removed records.
+* Write a Java utility that makes an operation idempotent by storing and checking an event ID in DynamoDB.
+* Write a Java Lambda function that calls an external REST API with connection timeouts, read timeouts, and bounded retries.
+* Write a Java Lambda function that validates incoming JSON payloads and returns meaningful validation errors.
+* Write a Java Lambda function that handles exceptions and maps application errors to appropriate API Gateway HTTP responses.
+* Write a Java Lambda function that reuses an AWS SDK client across invocations while avoiding shared mutable state.
+* Write a Java utility that emits structured JSON logs containing a correlation ID, request ID, processing duration, and error details.
+* Write a Java unit test for a Lambda handler using JUnit 5 and Mockito.
+* Write an integration test for a Java Lambda function that interacts with DynamoDB Local or an isolated AWS test environment.
+* Design a Java-based serverless order-processing application using API Gateway, Lambda, SQS, DynamoDB, idempotency, retries, and a dead-letter queue.

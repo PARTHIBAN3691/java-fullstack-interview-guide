@@ -1,0 +1,30 @@
+* A heading is styled with both an element selector and a class selector. Which style wins, and why?
+* A button has a class selector, but an ID selector applies a different background color. How would you determine the final color?
+* Two stylesheets define the same property with equal specificity. How would you identify which rule wins?
+* A developer adds more nested selectors to fix a styling issue. What long-term problems could this create?
+* A component's styles work locally but break after integrating a global stylesheet. How would you debug the conflict?
+* A third-party library overrides your button styles. How would you fix the issue without adding unnecessary !important declarations?
+* An inline style overrides your stylesheet. What options do you have to change the appearance?
+* A developer uses !important throughout a project. How would you gradually remove these declarations?
+* A parent element defines a text color, but a child has its own color rule. Which color is applied?
+* A CSS rule inside :where() loses to a regular class selector. Why does this happen?
+* A selector using :is() unexpectedly overrides another class selector. How would you investigate its specificity?
+* A developer uses #app .container .card .title for every component. How would you simplify the selectors?
+* A Sass project generates deeply nested selectors that are difficult to override. How would you refactor them?
+* A component's hover style is not applied because another rule overrides it. How would you troubleshoot the issue?
+* A mobile stylesheet fails to override a desktop style even though its media query matches. What could be the reason?
+* A CSS declaration in an unlayered stylesheet overrides a declaration inside a cascade layer. Why?
+* A developer moves styles into a new cascade layer, and some components change appearance. How would you debug the problem?
+* A user stylesheet contains an important declaration that conflicts with an author stylesheet. Which declaration wins?
+* A design system uses utility classes, but component styles override them. How would you resolve the conflict?
+* A modal's z-index and positioning appear correct, but its styling is still overridden. How would you distinguish specificity problems from stacking-context issues?
+* A child component cannot override a color inherited from its parent as expected. How would you diagnose the issue?
+* Two teams maintain separate CSS files and frequently overwrite each other's styles. What conventions would you introduce?
+* A legacy application contains many ID selectors. How would you migrate toward reusable class-based styles?
+* A React component's styles conflict with global CSS rules. What scoping strategies would you consider?
+* A CSS module class works in one component but not another. How would you investigate the issue?
+* A developer changes stylesheet order to fix one issue but breaks another component. What better approach would you recommend?
+* A project uses several UI libraries with conflicting styles. How would you organize the cascade?
+* A nested CSS rule becomes more specific than expected after compilation. How would you inspect and fix it?
+* A team wants consistent styling without increasing selector specificity. What coding guidelines would you establish?
+* You need to debug a production-only styling issue involving inline styles, !important, and cascade layers. What steps would you follow?

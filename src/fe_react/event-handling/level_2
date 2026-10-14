@@ -1,0 +1,30 @@
+* How does React's event delegation system work internally at a high level?
+* How does event propagation work across nested React components?
+* How can React event propagation interact with native DOM event listeners?
+* What happens when stopPropagation() is called in a React event handler?
+* How do React portals affect event propagation?
+* How can native event listeners and React event handlers produce unexpected ordering?
+* How would you debug an event handler that executes twice?
+* How does React Strict Mode affect event handling and component rendering?
+* How would you prevent stale closures in event handlers?
+* How would you design stable event callbacks for frequently re-rendering components?
+* When should useCallback() be used to optimize event handlers?
+* How do event handlers interact with memoized child components?
+* How would you implement a reusable event-listener custom hook?
+* How would you handle global keyboard shortcuts without registering duplicate listeners?
+* How would you manage event listeners safely during component mounting and unmounting?
+* How would you prevent memory leaks caused by native event listeners?
+* How would you handle high-frequency pointer and scroll events efficiently?
+* How would you implement debouncing and throttling for large-scale interactive applications?
+* How would you handle event ordering in complex nested forms?
+* How would you design accessible keyboard interactions for custom UI components?
+* How would you implement robust drag-and-drop behavior using pointer events?
+* How would you manage pointer capture for complex dragging interactions?
+* How would you handle touch and pointer events across mobile and desktop browsers?
+* How would you prevent duplicate form submissions caused by rapid user interactions?
+* How would you handle asynchronous event handlers when a component unmounts?
+* How would you handle errors from Promise-based event handlers?
+* How would you design a reusable event system for communication between independent components?
+* How do browser event loops and React state updates interact during event handling?
+* How would you debug performance issues caused by expensive event handlers?
+* How would you architect event handling for a large React application with complex forms and interactive widgets?

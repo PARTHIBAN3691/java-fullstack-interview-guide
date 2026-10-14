@@ -1,0 +1,30 @@
+* How do you configure transaction isolation levels using Spring Boot and @Transactional?
+* How does @Transactional(isolation = Isolation.READ_COMMITTED) work?
+* What isolation level does Spring use when no isolation level is explicitly specified?
+* How does Spring's Isolation.DEFAULT differ from Isolation.READ_COMMITTED?
+* How do you configure the transaction isolation level using JDBC?
+* How do you set the isolation level using Connection.setTransactionIsolation()?
+* What are the possible values of Connection.setTransactionIsolation()?
+* How does JDBC transaction isolation interact with the database's default isolation level?
+* What happens when a transaction changes its isolation level after executing queries?
+* How can you verify the isolation level currently used by a database session?
+* How does connection pooling affect transaction isolation settings?
+* How do you prevent dirty reads when using JDBC?
+* How do you prevent lost updates when multiple users update the same record?
+* How do optimistic locking and isolation levels work together?
+* How does JPA's @Version annotation help prevent concurrent update conflicts?
+* What is the difference between transaction isolation and entity locking in JPA?
+* How do PESSIMISTIC_READ and PESSIMISTIC_WRITE work in Spring Data JPA?
+* How can you use SELECT FOR UPDATE to prevent concurrent modifications?
+* How do database indexes affect locking behavior under different isolation levels?
+* How does READ COMMITTED behave when two transactions update the same row?
+* How can REPEATABLE READ affect concurrent insert operations?
+* How do isolation levels differ between PostgreSQL, MySQL, and SQL Server?
+* How does MySQL InnoDB implement REPEATABLE READ?
+* How does PostgreSQL implement REPEATABLE READ using MVCC?
+* What is the difference between snapshot isolation and serializable isolation?
+* How can deadlocks occur when transactions use stronger isolation levels?
+* How do you identify and handle deadlock exceptions in Spring Boot?
+* How do you retry a transaction after a serialization failure?
+* How can integration tests verify transaction isolation behavior?
+* How do you choose an isolation level for a high-throughput Java application?

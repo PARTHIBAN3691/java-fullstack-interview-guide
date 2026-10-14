@@ -1,0 +1,30 @@
+* What is a Docker volume, and why is it used?
+* What is the difference between a Docker volume and a container's writable layer?
+* What are the different types of storage available in Docker?
+* What is the difference between a named volume and an anonymous volume?
+* What is a bind mount in Docker?
+* How do you create a Docker volume?
+* How do you list all Docker volumes?
+* How do you inspect a Docker volume?
+* How do you remove a Docker volume?
+* How do you mount a volume when creating a container?
+* What is the purpose of the -v option in the docker run command?
+* What is the purpose of the --mount option in Docker?
+* How do you mount a volume to a specific directory inside a container?
+* What happens to a named volume when its container is deleted?
+* What happens to data stored in a container's writable layer when the container is removed?
+* How do you share files between the host machine and a container?
+* What is the difference between read-only and read-write volume mounts?
+* How do you mount a volume in Docker Compose?
+* Can multiple containers use the same Docker volume?
+* How do you copy files between a host directory and a container?
+* What is the default location where Docker stores local volumes on Linux?
+* What is the purpose of the docker volume prune command?
+* How do you identify which containers are using a particular volume?
+* What happens when you mount a volume over a directory that already contains files in the container?
+* How do Docker volumes help preserve database data?
+* What is the difference between a volume and a temporary filesystem mount?
+* What is a tmpfs mount, and when is it useful?
+* How do you specify a volume name in a Docker Compose file?
+* Why should persistent application data not be stored only inside a container?
+* What basic precautions should you take before deleting a Docker volume?

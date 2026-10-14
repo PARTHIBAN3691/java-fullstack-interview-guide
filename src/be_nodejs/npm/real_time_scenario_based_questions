@@ -1,0 +1,30 @@
+* Your Node.js application works locally but fails in the CI pipeline because a dependency is missing. How would you troubleshoot it?
+* After running npm install, your application starts failing because a package version changed. How would you prevent this issue?
+* Your team sees different dependency versions on different developers' machines. How would you establish consistent installations?
+* An npm install command fails with ERESOLVE. How would you identify the conflicting dependencies and resolve the issue?
+* A newly installed package introduces a security vulnerability. How would you assess and mitigate the risk?
+* Your application depends on a vulnerable transitive dependency that is not directly listed in package.json. How would you fix it?
+* An npm audit fix --force command proposes major version upgrades. How would you decide whether to proceed?
+* Your CI pipeline spends several minutes installing dependencies on every build. How would you optimize it?
+* A deployment fails because the production environment does not install a required package. What would you check?
+* Your application uses a development tool at runtime, but it is listed under devDependencies. How would you fix the deployment?
+* A developer accidentally commits the node_modules directory. How would you correct the repository and prevent recurrence?
+* Your team needs to maintain several Node.js services that share common libraries. How would you use npm workspaces?
+* A shared package changes its public API and breaks multiple applications. How would you manage compatibility and releases?
+* Your organization wants to publish an internal npm package. How would you configure registry access and permissions?
+* A package publishes successfully but consumers receive missing files. How would you investigate the package contents?
+* Your package works with require() but fails for consumers using import. How would you investigate the package configuration?
+* An npm package's postinstall script fails in a restricted CI environment. How would you diagnose and resolve the issue?
+* Your build requires a particular Node.js and npm version. How would you enforce version consistency?
+* A package update causes unexpected behavior in production. How would you roll back safely and identify the breaking change?
+* A developer installs a package globally, and another developer cannot run the same command. How would you make the setup reproducible?
+* Your project needs separate scripts for development, testing, staging, and production. How would you organize package.json scripts?
+* A private package cannot be downloaded by the CI pipeline even though it works locally. What would you investigate?
+* Your team suspects dependency confusion involving a private package name. How would you investigate and prevent it?
+* An npm package contains environment variables or secrets in its published files. How would you mitigate the exposure?
+* Your team wants to publish beta versions without affecting production consumers. How would you use prerelease versions and dist-tags?
+* A dependency update introduces a breaking API change. How would you identify the change and manage the upgrade?
+* Your application has duplicated versions of a large dependency, increasing installation size. How would you investigate and reduce duplication?
+* Your organization needs an approval process before adding new third-party dependencies. How would you implement it?
+* Your team wants to generate a software bill of materials for Node.js dependencies. How would you approach it?
+* How would you design an npm dependency management strategy for a large enterprise Node.js platform?

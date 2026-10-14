@@ -1,0 +1,30 @@
+* Explain Angular's component initialization and destruction process in relation to its change-detection cycle.
+* How does Angular schedule lifecycle hooks during change detection?
+* Why can ngDoCheck() and ngAfterViewChecked() negatively affect application performance?
+* How would you detect changes in a deeply nested object passed through an @Input() property?
+* How does immutable data handling affect ngOnChanges() and OnPush change detection?
+* Why does mutating an input object's properties not necessarily trigger ngOnChanges()?
+* How would you avoid ExpressionChangedAfterItHasBeenCheckedError without using setTimeout() as a workaround?
+* What are the differences between the component lifecycle and the lifecycle of an Angular service?
+* How do provider scopes affect the creation and destruction of services used by components?
+* Under what circumstances can a component be destroyed and recreated during route navigation?
+* How do route reuse strategies affect component lifecycle hooks?
+* How would you manage subscriptions across dynamically created and destroyed components?
+* How do takeUntilDestroyed() and DestroyRef simplify lifecycle cleanup?
+* What is DestroyRef, and how can it be used outside a component class?
+* How do lifecycle hooks interact with dynamically created components using ViewContainerRef?
+* How do lifecycle hooks behave when a component is created using createComponent()?
+* How would you ensure dynamically created components are properly destroyed?
+* How do lifecycle hooks interact with Angular signals and signal-based inputs?
+* What is the role of effect() cleanup when managing resources tied to reactive state?
+* How does Angular's afterNextRender() differ from ngAfterViewInit()?
+* What is the difference between afterNextRender() and afterEveryRender()?
+* How do render callbacks behave during server-side rendering?
+* How would you safely access browser-only APIs during the component lifecycle?
+* How do hydration and server-side rendering affect assumptions about component initialization?
+* How would you prevent duplicate API requests triggered during component initialization?
+* How can lifecycle-related logic be moved into reusable directives or services?
+* How would you diagnose a memory leak caused by components that are repeatedly created and destroyed?
+* How do lifecycle hooks interact with detached change detectors and manual change detection?
+* How would you optimize a component that performs expensive calculations in ngAfterViewChecked()?
+* How would you design lifecycle management for a complex dashboard with dynamic widgets, subscriptions, and asynchronous data?

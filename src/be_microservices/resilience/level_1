@@ -1,0 +1,30 @@
+* How do you implement a circuit breaker using Resilience4j in Spring Boot?
+* How do you configure circuit breaker failure-rate and sliding-window thresholds?
+* How do you configure the open-state wait duration and half-open permitted calls?
+* How do you implement retry logic using Resilience4j?
+* How do you configure retry attempts and wait durations?
+* How do you implement exponential backoff with jitter?
+* How do you configure timeouts for RestClient and WebClient calls?
+* How do you implement fallback methods in Spring Boot?
+* How do you combine circuit breaker, retry, and timeout patterns?
+* What is the correct order for composing retry and circuit breaker decorators?
+* How do you implement the Bulkhead pattern using Resilience4j?
+* What is the difference between semaphore-based and thread-pool bulkheads?
+* How do you implement rate limiting using Resilience4j?
+* How do you prevent retry storms when a downstream service is unavailable?
+* How do you distinguish retryable and non-retryable exceptions?
+* How do you handle HTTP 4xx and 5xx responses in resilient API clients?
+* How do you implement resilience for WebClient-based reactive applications?
+* How do you handle timeouts and cancellations in reactive pipelines?
+* How do you configure connection and response timeouts for downstream APIs?
+* How do you prevent one slow dependency from exhausting application threads?
+* How do you implement graceful degradation when a downstream service fails?
+* How do you cache responses as a fallback for temporarily unavailable services?
+* How do you implement resilience for Kafka consumers and message processing?
+* How do you handle poison messages and repeated consumer failures?
+* How do you monitor circuit breaker state transitions?
+* How do you expose Resilience4j metrics through Micrometer and Prometheus?
+* How do you test circuit breaker behavior using unit and integration tests?
+* How do you simulate downstream service failures during testing?
+* How do you design retry policies for idempotent and non-idempotent operations?
+* How do you choose appropriate timeout values for service-to-service communication?

@@ -1,0 +1,30 @@
+* A React component receives props from an API, but some properties are missing. How would you define the types safely?
+* A component uses useState with an initial value of null and later stores an object. How would you type the state?
+* A child component expects a string prop, but the parent passes a number. How would TypeScript help detect the problem?
+* An API response changes its structure, causing several components to fail compilation. How would you organize and update the types?
+* A component supports different modes, and each mode requires different props. How would you model this using TypeScript?
+* A reusable table component must display different entity types. How would you implement it using generics?
+* A form has different input types and validation rules. How would you create reusable, strongly typed form components?
+* A custom hook returns data, loading status, and an error. How would you define its return type?
+* A component uses an event handler, but TypeScript cannot infer the correct event type. How would you resolve it?
+* A Context provider returns undefined before initialization, causing runtime errors. How would you design its types and initialization?
+* A developer uses any throughout a Redux application. How would you gradually introduce stronger types?
+* A component accepts either a URL or a callback depending on its mode. How would you enforce the correct prop combinations?
+* A third-party JavaScript library has no TypeScript definitions. How would you integrate it safely?
+* A route parameter may be undefined, but the component assumes it is always present. How would you handle this safely?
+* A component receives children, but TypeScript reports a type error. How would you define the children prop correctly?
+* A developer uses type assertions to suppress errors in API data. What risks does this introduce, and how would you improve it?
+* An application has deeply nested API response objects shared across multiple screens. How would you define and maintain their types?
+* A generic component loses type inference when wrapped in React.memo. How would you investigate and resolve it?
+* A large application has inconsistent definitions of the same user object. How would you establish a shared type model?
+* A component should accept either an image source or an icon component, but never both. How would you enforce this rule?
+* Your team wants to enable strict mode in an existing React project. How would you migrate without disrupting development?
+* An API sometimes returns null, an empty array, or a populated array. How would you model and handle these cases?
+* A reusable dropdown should support both single-selection and multi-selection modes. How would you design its types?
+* A payment form has different fields for card, bank transfer, and wallet payments. How would you use discriminated unions?
+* A component's props are becoming difficult to maintain because of many Boolean flags. How would you redesign its type structure?
+* Your React application shares types between frontend and backend projects. How would you organize and version those types?
+* A developer uses an interface to describe API data, assuming it validates the actual response. How would you explain and address this limitation?
+* A custom hook must return different data types depending on its input options. How would you model the relationship using generics?
+* A production build fails because of TypeScript errors that were not noticed during development. How would you improve the development and CI workflow?
+* You are building a large e-commerce application using React and TypeScript. How would you structure shared types for products, users, orders, payments, and API responses?

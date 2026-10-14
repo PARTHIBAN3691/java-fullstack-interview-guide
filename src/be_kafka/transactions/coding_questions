@@ -1,0 +1,30 @@
+* Write a Java program that configures a Kafka producer with a transactional.id and initializes transactions.
+* Write a Java program that begins a transaction, publishes multiple records, and commits the transaction.
+* Write a Java program that publishes records to two Kafka topics in a single transaction.
+* Write a Java program that sends records to multiple partitions within one transaction.
+* Write a Java program that aborts a transaction when message processing fails.
+* Write a Java program that configures a consumer with isolation.level=read_committed.
+* Write a Java program that demonstrates the difference between read_committed and read_uncommitted consumers.
+* Write a Java program that catches transaction-related exceptions and handles abortable and fatal producer errors appropriately.
+* Write a Java program that implements consume-transform-produce processing using sendOffsetsToTransaction().
+* Write a Java program that commits consumed offsets atomically with output records.
+* Write a Java program that configures transactional processing in a Spring Boot application.
+* Write a Spring Boot example that uses KafkaTransactionManager to publish messages transactionally.
+* Write a Spring Boot service that rolls back a Kafka transaction when a processing exception occurs.
+* Write a Java program that demonstrates producer fencing using conflicting transactional.id values.
+* Write a Java program that handles transaction initialization and recovery after a producer restart.
+* Write a Java program that publishes several business events atomically and aborts the entire transaction if one send fails.
+* Write a Java program that implements transactional message processing with explicit error handling and resource cleanup.
+* Write a Java integration test that verifies committed records are visible to read_committed consumers.
+* Write a Java integration test that verifies aborted records are not visible to read_committed consumers.
+* Write a Java integration test that demonstrates how read_uncommitted consumers can observe aborted records.
+* Write a Java integration test that verifies output records and consumed offsets are committed atomically.
+* Write a Spring Boot integration test that validates transactional message publishing using an embedded or containerized Kafka broker.
+* Write a Java program that handles commitTransaction() timeout scenarios without blindly resending business operations.
+* Write a Java program that implements bounded retries around transactional processing while preserving correctness.
+* Write a Java program that publishes events to Kafka after a database transaction using the transactional outbox pattern.
+* Write a Java program that reads an outbox table and publishes events reliably to Kafka.
+* Write a Java program that implements idempotent downstream processing for events that may be delivered more than once.
+* Write a Java program that records transaction duration, abort count, and failure metrics for monitoring.
+* Write a Java program that configures and tests transaction timeout behavior under simulated processing delays.
+* Write a Java program that implements a transactional inventory-update workflow and explains how it handles database consistency and Kafka delivery guarantees.

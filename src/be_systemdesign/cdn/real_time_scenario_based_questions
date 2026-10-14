@@ -1,0 +1,30 @@
+* Your e-commerce website serves product images from its origin server, which becomes overloaded during a sale. How would you introduce a CDN?
+* Users in distant countries experience high latency when accessing your website. How would you use CDN routing and edge caching to improve response times?
+* Your CDN cache hit ratio suddenly drops after a deployment. How would you identify the cause?
+* Users continue seeing an old JavaScript file after a new release. How would you resolve the cache invalidation issue?
+* A CDN caches personalized account information and serves it to the wrong user. How would you investigate and prevent this security incident?
+* Your origin server becomes overloaded after purging millions of CDN cache entries. How would you restore service safely?
+* A CDN continues serving stale product prices after the origin data changes. How would you balance freshness and cache efficiency?
+* Your website uses query parameters for tracking, causing thousands of cache variants for identical content. How would you optimize the cache key?
+* An attacker sends requests with manipulated headers to poison a CDN cache. How would you mitigate the vulnerability?
+* Your application works when accessed through the CDN but fails when users access the origin directly. How would you secure the origin and troubleshoot the configuration?
+* Your CDN provider experiences a regional outage. How would you fail over to another provider without overwhelming the origin?
+* A global content platform has high bandwidth costs despite using a CDN. How would you investigate cache misses, asset sizes, and traffic patterns?
+* A video streaming platform experiences buffering during peak hours. How would you optimize edge distribution, origin capacity, and adaptive bitrate delivery?
+* A live-streaming event attracts millions of viewers simultaneously. How would you protect the origin and deliver content reliably?
+* A private document-sharing platform delivers files through a CDN. How would you enforce access expiration and prevent unauthorized sharing?
+* A user reports that a newly uploaded image is unavailable in some regions but visible in others. How would you investigate propagation, caching, and origin consistency?
+* Your CDN caches API responses that depend on authorization headers. How would you configure caching to avoid cross-user data leakage?
+* Your origin server is temporarily unavailable, but users still need access to previously cached pages. How would you configure stale-content behavior?
+* A CDN WAF blocks legitimate customers while allowing some abusive traffic. How would you tune the security rules without weakening protection?
+* A sudden bot attack generates millions of cache-busting requests. How would you protect the origin and reduce unnecessary cache misses?
+* Your company wants to deploy edge functions for authentication and request routing. How would you decide which operations belong at the edge?
+* Your CDN reports high cache hit ratios, but users still experience poor performance. How would you investigate DNS resolution, TLS negotiation, network latency, and origin response times?
+* A financial application requires that sensitive responses never be stored in shared caches. How would you enforce and verify this requirement?
+* A software distribution platform delivers multi-gigabyte files globally. How would you design resumable downloads, range requests, and cache behavior?
+* A new CDN configuration causes a large percentage of requests to return HTTP 403. How would you debug signed URLs, headers, cookies, and access policies?
+* Your organization uses two CDNs, but traffic is unevenly distributed and costs are rising. How would you improve traffic steering and provider selection?
+* A CDN purge request reports success, but some edge locations continue serving old content. How would you diagnose and mitigate the issue?
+* Your application uses multiple languages and device-specific responses. How would you design cache keys to avoid serving the wrong representation?
+* A cache cold start after a regional outage causes latency and origin traffic to spike. How would you implement cache warming and origin shielding?
+* You are designing a global CDN for a healthcare platform. How would you address availability, privacy, access control, content freshness, and compliance requirements?

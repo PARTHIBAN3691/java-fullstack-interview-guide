@@ -1,0 +1,21 @@
+
+* A Spring Boot API works when called directly but returns HTTP 401 when accessed through APIM. How would you troubleshoot the authentication configuration?
+* An API consumer receives HTTP 403 even though the subscription key is valid. How would you investigate product subscriptions, JWT validation, and authorization policies?
+* A Java backend experiences increased traffic and APIM begins returning HTTP 429 responses. How would you determine whether rate limits or quotas are responsible?
+* APIM returns HTTP 502 or 504 while the backend service appears healthy. How would you investigate DNS, networking, TLS, backend timeouts, and service availability?
+* A backend API has moved to a new URL, but APIM continues routing requests to the old endpoint. How would you troubleshoot the backend configuration and policy overrides?
+* A public API must be accessible only to authenticated partner applications. How would you configure OAuth 2.0, application identities, and subscription requirements?
+* A production API must support both v1 and v2 while consumers migrate gradually. How would you manage versions, revisions, routing, and deprecation?
+* A Java microservice running in a private AKS cluster cannot be reached from APIM. How would you investigate private networking, DNS, routing, and backend connectivity?
+* A client sends requests from a browser and receives CORS errors, although direct API calls work. How would you configure CORS correctly without weakening security?
+* A cached API response continues returning outdated customer information. How would you diagnose the cache policy and implement appropriate invalidation?
+* APIM adds significant latency to an otherwise fast Spring Boot endpoint. How would you determine whether the delay comes from policies, networking, authentication, or the backend?
+* A managed identity configured for APIM cannot retrieve a certificate or secret from Azure Key Vault. How would you investigate identity permissions and Key Vault configuration?
+* A backend service requires a bearer token from Microsoft Entra ID. How would you configure APIM to obtain or use the required token securely?
+* An API exposes sensitive customer data, and a security audit identifies missing authorization checks. How would you enforce access control at the gateway and backend?
+* A policy transformation accidentally removes a required JSON field, causing Java consumers to fail. How would you debug and test the policy safely?
+* A new APIM policy causes production requests to fail. How would you roll back the change and reduce the risk of future policy deployments?
+* An organization needs different rate limits for free-tier and premium-tier customers. How would you design products, subscriptions, and policy enforcement?
+* A downstream Java service becomes slow, and APIM continues forwarding requests until the service is overloaded. How would you implement timeout and resilience controls?
+* An API must route traffic between two backend versions based on a request header or controlled percentage. How would you implement and validate the routing?
+* An organization wants a centralized view of API usage, failures, latency, and consumer behavior across multiple APIM instances. How would you design monitoring and reporting?

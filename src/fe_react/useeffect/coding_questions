@@ -1,0 +1,30 @@
+* Write a React component that updates the document title using useEffect.
+* Create a component that logs a message when it mounts.
+* Write an effect that runs whenever a counter value changes.
+* Create a component that fetches user data using useEffect.
+* Implement loading, success, and error states for an API request.
+* Write a component that fetches data when a user ID changes.
+* Implement an effect with a cleanup function.
+* Create a component that starts and clears an interval using useEffect.
+* Write a countdown timer using useEffect and useState.
+* Implement a window resize listener with proper cleanup.
+* Create a component that registers and removes a keyboard event listener.
+* Write a component that synchronizes a theme preference with localStorage.
+* Implement an API request using AbortController inside useEffect.
+* Write a component that prevents stale API responses from updating state.
+* Create a search component that fetches results when the query changes.
+* Implement a debounced search using useEffect and setTimeout.
+* Create a component that polls an API every 30 seconds and stops polling on unmount.
+* Write a custom hook that fetches data using useEffect.
+* Create a custom hook that tracks the browser's online and offline status.
+* Implement a WebSocket connection with setup and cleanup inside useEffect.
+* Create a component that subscribes to an external event and unsubscribes on cleanup.
+* Write an effect that synchronizes a third-party chart with changing data.
+* Implement two dependent API calls with proper error handling.
+* Create a component that updates its page title based on notification count.
+* Write a component that demonstrates and fixes an infinite useEffect loop.
+* Implement a custom hook that synchronizes a value with localStorage.
+* Create a component that uses useLayoutEffect to measure an element's dimensions.
+* Write tests for a component that fetches data inside useEffect.
+* Test whether a useEffect cleanup function removes an event listener or clears a timer.
+* Build a product details component that handles changing product IDs, request cancellation, loading states, errors, and stale responses.

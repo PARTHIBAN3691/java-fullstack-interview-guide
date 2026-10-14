@@ -1,0 +1,30 @@
+* How does React propagate context updates through the component tree?
+* Why can context updates cause unnecessary re-renders?
+* How do you optimize a context that contains frequently changing values?
+* How can you split a large context into smaller contexts?
+* What is the difference between state context and dispatch context?
+* Why is separating state and dispatch contexts useful?
+* How do you optimize context values using useMemo() and useCallback()?
+* What are the limitations of useMemo() when optimizing context?
+* How would you design a scalable global state solution using Context API?
+* How do you manage complex state transitions using useReducer() and context?
+* How do you prevent stale state issues when updating context?
+* How do concurrent rendering and context updates interact?
+* How does context behave during React Suspense rendering?
+* How does Context API work with React Server Components?
+* What context-related considerations apply to server-side rendering?
+* How do you avoid state leakage between server-rendered requests?
+* How do you handle context initialization from server-provided data?
+* How do you design context boundaries for a large application?
+* How would you debug excessive re-renders caused by context?
+* How do you profile context-driven rendering performance?
+* Can context updates affect components wrapped in React.memo()?
+* How would you implement selectors for consuming specific parts of context state?
+* Why does Context API not provide built-in selector-based subscriptions?
+* How do you avoid coupling unrelated components to a single context?
+* How do you handle asynchronous operations in a context Provider?
+* How would you implement cancellation for asynchronous context operations?
+* How do you design error handling for context-based state management?
+* How do you ensure context values remain type-safe in TypeScript?
+* How would you migrate a Redux application to Context API?
+* What are the architectural trade-offs of using Context API as a state management solution?

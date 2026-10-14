@@ -1,0 +1,25 @@
+* Explain how lambda expressions are implemented by the JVM at a high level.
+* What is the role of `invokedynamic` in the implementation of lambda expressions?
+* How are lambda expressions different from anonymous inner classes at the bytecode level?
+* Are lambda expressions guaranteed to create a new object every time they are evaluated?
+* How does the JVM optimize lambda expression execution?
+* What are the performance differences between lambda expressions and anonymous inner classes?
+* How does variable capture work in lambda expressions?
+* Why does Java restrict the capture of local variables to final or effectively final variables?
+* What happens if a captured object is mutable even though its local reference is effectively final?
+* How does lambda expression type inference work with generic functional interfaces?
+* How do generic types and wildcards affect lambda expressions passed to methods?
+* How do lambda expressions interact with covariant return types?
+* How are checked exceptions handled when lambda expressions are passed to standard functional interfaces?
+* How would you design a reusable functional interface that supports checked exceptions?
+* How does overload resolution work when lambda expressions have implicit parameter types?
+* What are the limitations of using lambda expressions with recursive algorithms?
+* How can recursive behavior be implemented using functional interfaces?
+* How do lambda expressions interact with variable shadowing and scope rules?
+* What is the difference between a lambda expression and a method reference in terms of readability and applicability?
+* How can lambda expressions be used to implement the Strategy design pattern?
+* How can lambda expressions be used to implement callback-based programming?
+* What are the risks of using lambda expressions with shared mutable state in parallel streams?
+* Why should side effects generally be avoided in Stream API lambda expressions?
+* How would you debug a complex Stream pipeline containing multiple lambda expressions?
+* What coding practices help keep nested lambda expressions readable and maintainable?

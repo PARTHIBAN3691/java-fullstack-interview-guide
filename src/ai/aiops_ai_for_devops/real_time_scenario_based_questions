@@ -1,0 +1,89 @@
+**AIOps Fundamentals**
+
+* Your organization has deployed observability tools across hundreds of services, but engineers still investigate incidents manually across multiple dashboards. How would you introduce AIOps incrementally, select the first use cases, and measure operational improvement?
+* After integrating an LLM into incident investigation, engineers report inconsistent recommendations and rising inference costs. How would you diagnose the problem and decide which tasks should use deterministic rules, ML models, or LLMs?
+
+**AI-Based Log Analysis**
+
+* A production deployment generates a new exception pattern across several Java microservices, but the logs use different formats and correlation identifiers. How would you normalize events, identify the common failure, and validate the diagnosis?
+* Log ingestion costs increase sharply because of repetitive stack traces and debug messages. How would you reduce processing and storage costs without losing critical diagnostic evidence?
+
+**Intelligent Alert Correlation**
+
+* A database slowdown triggers hundreds of alerts across dependent services. How would you correlate the symptoms, identify the likely originating event, and avoid opening hundreds of separate incidents?
+* An alert-correlation update starts grouping unrelated failures into one incident. How would you identify the source of the false correlations and safely roll back or recalibrate the model?
+
+**Anomaly Detection**
+
+* A traffic increase during a scheduled promotion triggers repeated anomaly alerts even though service behavior is normal for that period. How would you introduce seasonality-aware baselines and contextual detection?
+* A memory leak develops slowly over several days and remains below static thresholds until an outage occurs. How would you detect the gradual deviation and determine an appropriate alerting window?
+
+**Root Cause Analysis**
+
+* Following a deployment, API latency rises, database connections increase, and several downstream services time out. How would you reconstruct the event timeline and determine whether the deployment, database, or a shared dependency is the root cause?
+* An AI investigation tool confidently identifies a service as the root cause, but engineers find evidence that the service was only affected downstream. How would you improve evidence ranking and communicate uncertainty?
+
+**Incident Summarization**
+
+* During a major outage, the incident channel contains thousands of messages, contradictory hypotheses, and frequent status changes. How would you generate a reliable executive summary and technical timeline?
+* The final incident report attributes an outage to a deployment that was later ruled out. How would you correct the summary, preserve its revision history, and ensure the postmortem reflects verified evidence?
+
+**Predictive Incident Detection**
+
+* A predictive model reports an impending database outage, but previous warnings have frequently been false alarms. How would you validate the signal, establish confidence thresholds, and decide whether to intervene?
+* An application experiences an outage after a previously reliable prediction model fails to warn about a new failure pattern. How would you investigate drift, feature coverage, and retraining requirements?
+
+**Automated Incident Response**
+
+* An automated remediation repeatedly restarts a service, causing cascading failures across dependent services. How would you stop the loop, restore service, and introduce execution limits and post-action verification?
+* A remediation script reports success, but customer-facing error rates remain elevated. How would you prevent false success signals and require end-to-end health verification?
+
+**AI-Assisted CI/CD**
+
+* An AI-generated patch fixes a failing unit test but breaks an integration workflow that the test suite does not cover. How would you improve validation and ensure generated fixes cannot bypass release gates?
+* A deployment-risk model flags a critical release as high-risk shortly before a deadline. How would you assess the evidence, use canary deployment, and make a defensible release decision?
+
+**AI-Generated Infrastructure as Code**
+
+* AI generates a Terraform plan that unintentionally replaces a production database while attempting a minor networking change. How would you detect the risk, prevent application, and improve plan validation?
+* Generated Kubernetes manifests pass syntax validation but expose an internal service publicly. How would you enforce network and security policies independently of the generated output?
+
+**AI-Assisted Kubernetes Troubleshooting**
+
+* Several pods enter `CrashLoopBackOff` immediately after a deployment, while other pods remain healthy. How would you use events, logs, probes, configuration changes, and resource metrics to narrow the root cause?
+* A cluster autoscaler cannot add capacity because of node-pool constraints, while workloads remain pending. How would you distinguish resource shortages from scheduling rules, quotas, and cloud-provider limits before recommending remediation?
+
+**AI for Cloud Cost Optimization**
+
+* Cloud spending rises sharply after a microservices release, although request volume has barely changed. How would you correlate cost data with resource utilization, scaling behavior, network traffic, and deployment changes?
+* An AI cost optimizer recommends removing a low-utilization resource that supports disaster recovery. How would you detect its criticality and prevent financially attractive but operationally unsafe changes?
+
+**AI-Powered Capacity Planning**
+
+* A seasonal traffic spike overwhelms the application before autoscaling adds sufficient capacity. How would you improve forecasting, pre-scaling, safety margins, and dependency capacity planning?
+* Forecasts consistently overestimate memory demand for some services and underestimate it for others. How would you investigate model bias, workload segmentation, and prediction intervals?
+
+**AI Runbook Automation**
+
+* A runbook automation successfully scales an application but fails while updating its load-balancer configuration. How would you resume or compensate for the partial execution without creating further disruption?
+* An AI assistant proposes a command that is valid but unsafe for a stateful production service. How would you prevent execution and strengthen runbook context, preconditions, and action policies?
+
+**AI Change Risk Prediction**
+
+* A low-risk deployment causes a major outage, while several high-risk changes complete successfully. How would you investigate feature quality, training labels, confidence calibration, and decision thresholds?
+* A newly introduced service has no meaningful deployment history, but its release requires a risk assessment. How would you estimate risk using dependency criticality, code changes, test results, and conservative defaults?
+
+**AI-Assisted Security Operations**
+
+* An AI security assistant recommends disabling a legitimate employee account based on an ambiguous anomaly. How would you validate the evidence, require appropriate authorization, and prevent unnecessary disruption?
+* A malicious message embedded in a security alert attempts to instruct the AI to reveal secrets or suppress findings. How would you contain the prompt injection and secure the analysis pipeline?
+
+**Human Approval for Automated Remediation**
+
+* An AI recommends blocking a network range during a suspected attack, but the range also serves critical business partners. How would you present impact evidence and design an appropriate approval path?
+* An approver authorizes a restart, but the target workload changes before the action executes. How would you prevent the stale approval from authorizing an action against the wrong resource?
+
+**Reliability and Safety of AIOps**
+
+* The AI platform loses access to telemetry during an active production incident but continues issuing remediation recommendations using stale data. How would you force safe degradation and prevent unsafe actions?
+* An automated response passes initial tests but causes an unexpected outage after a cloud-provider API changes. How would you detect the regression, stop automation, recover, and strengthen compatibility testing?

@@ -1,0 +1,30 @@
+* How would you design a scalable type architecture for a large React application?
+* How do you create reusable generic components with complex prop types?
+* How do you design discriminated unions for components with multiple modes?
+* How do discriminated unions improve type safety in React applications?
+* How do you enforce mutually exclusive props in a component?
+* How do you type polymorphic components that support an `as` prop?
+* How do you preserve type inference when wrapping components with higher-order components?
+* How do you type custom hooks that return complex objects or tuples?
+* How do you build a generic data-fetching hook with TypeScript?
+* How do you type asynchronous API states such as loading, success, and error?
+* How do you model API response types when some fields are optional or nullable?
+* How do you validate external API data at runtime when TypeScript types are erased?
+* What is the difference between compile-time type safety and runtime validation?
+* How do you use generics to build reusable form components?
+* How do you create type-safe form validation schemas?
+* How do you type dynamic forms whose fields depend on configuration?
+* How do you type reducers and action payloads using discriminated unions?
+* How do you define strongly typed Redux Toolkit slices and selectors?
+* How do you type middleware and asynchronous Redux actions?
+* How do you create a type-safe Context API architecture for a large application?
+* How do you use conditional types in advanced component APIs?
+* What are mapped types, and how can they help build reusable React utilities?
+* What are template literal types, and where might they be useful in React?
+* How do you use keyof and typeof to create type-safe component properties?
+* How do you avoid excessive use of any in a legacy React application?
+* How do you migrate a large JavaScript React codebase to TypeScript incrementally?
+* How do you design shared TypeScript types across multiple frontend modules?
+* How do you type lazy-loaded React components?
+* How do you handle TypeScript types for third-party JavaScript libraries without definitions?
+* How would you optimize developer productivity while maintaining strict TypeScript rules in a large React project?

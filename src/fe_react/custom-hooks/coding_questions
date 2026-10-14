@@ -1,0 +1,30 @@
+* Create a custom useCounter() hook with increment, decrement, and reset functions.
+* Create a custom useToggle() hook for managing Boolean state.
+* Create a custom useInput() hook for handling text input values.
+* Create a custom useDocumentTitle() hook that updates the browser tab title.
+* Create a custom usePrevious() hook that returns the previous value.
+* Create a custom useLocalStorage() hook that synchronizes state with localStorage.
+* Create a custom useSessionStorage() hook for storing session-specific values.
+* Create a custom useWindowSize() hook that tracks window dimensions.
+* Create a custom useOnlineStatus() hook that detects browser connectivity.
+* Create a custom useDebounce() hook for delaying updates to rapidly changing values.
+* Create a custom useThrottle() hook for limiting how frequently a function executes.
+* Create a custom useFetch() hook that fetches data from an API.
+* Extend useFetch() to expose loading, error, and success states.
+* Create a custom useFetch() hook that supports dynamic URL and query parameters.
+* Implement a data-fetching hook that cancels outdated requests using AbortController.
+* Create a custom hook that retries failed API requests with a configurable retry count.
+* Create a custom useForm() hook that manages field values and validation errors.
+* Create a custom usePagination() hook for handling page numbers and page sizes.
+* Create a custom useInfiniteScroll() hook using IntersectionObserver.
+* Create a custom useOnClickOutside() hook for closing dropdowns and modals.
+* Create a custom useEventListener() hook that registers and cleans up browser events.
+* Create a custom useKeyPress() hook that detects when a specified key is pressed.
+* Create a custom useInterval() hook that manages an interval with proper cleanup.
+* Create a custom useTimeout() hook that manages a timeout and allows cancellation.
+* Create a custom useMediaQuery() hook for responsive UI behavior.
+* Create a custom useAuth() hook that consumes authentication context.
+* Create a custom hook that synchronizes a preference across browser tabs using the storage event.
+* Create a custom useWebSocket() hook that connects, receives messages, and cleans up correctly.
+* Write unit tests for a custom useFetch() hook, including loading, success, and error scenarios.
+* Create a generic TypeScript useAsync() hook that manages asynchronous operations and their states.

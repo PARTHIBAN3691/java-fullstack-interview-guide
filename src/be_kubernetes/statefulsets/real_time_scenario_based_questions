@@ -1,0 +1,30 @@
+* A MySQL StatefulSet Pod restarts, but its data must remain available. How would you verify that the correct persistent volume is reattached?
+* A StatefulSet Pod remains in Pending because its PVC cannot bind. How would you troubleshoot the storage and scheduling configuration?
+* A StatefulSet creates the first Pod successfully, but the second Pod is never created. How would you investigate the issue?
+* A StatefulSet update is blocked because one Pod is not Ready. How would you identify the cause and recover safely?
+* A database StatefulSet Pod is rescheduled to another node, but its persistent volume cannot attach. How would you troubleshoot the failure?
+* A StatefulSet replica starts with an empty data directory after a node failure. How would you investigate whether the correct PVC was mounted?
+* A database application loses data after a StatefulSet scale-down. What configuration or operational mistakes could cause this?
+* A team wants to delete a StatefulSet but preserve all database data. What steps would you follow?
+* A three-replica database cluster loses quorum after a rolling update. How would you recover the cluster and prevent recurrence?
+* A StatefulSet has three replicas, but all Pods are scheduled on one node. How would you improve availability?
+* A database Pod starts before its required peer is ready and fails repeatedly. How would you handle startup dependencies?
+* A StatefulSet's headless Service resolves to unexpected Pod addresses. How would you troubleshoot DNS and endpoint readiness?
+* A database replica cannot communicate with other replicas because of a NetworkPolicy. How would you identify and fix the issue?
+* A storage backend experiences high latency, causing database readiness probes to fail. How would you distinguish storage issues from application failures?
+* A StatefulSet rolling update changes the database configuration and causes replication failures. How would you roll back safely?
+* A persistent volume runs out of space, and a database Pod stops accepting writes. How would you expand storage and recover service?
+* A StorageClass has been changed, but existing StatefulSet PVCs still use the old storage class. How would you plan the migration?
+* A StatefulSet Pod is stuck terminating because the application does not shut down gracefully. How would you investigate and resolve the problem?
+* A node failure causes multiple stateful Pods to become unavailable. How would you assess the impact on data availability and cluster quorum?
+* A database backup completes successfully, but the restored StatefulSet cannot start. How would you investigate the recovery process?
+* A StatefulSet uses a shared PVC for multiple replicas, resulting in file conflicts. How would you redesign the storage configuration?
+* A new StatefulSet revision is healthy for one replica but fails for the remaining replicas. How would you perform a controlled rollout?
+* A database requires stable hostnames for replication, but clients cannot resolve individual Pod names. How would you configure the headless Service and DNS?
+* A StatefulSet is scaled down, and an operator notices that unused PVCs remain. How would you verify the retention policy and decide whether cleanup is safe?
+* A critical database StatefulSet needs a Kubernetes version upgrade. How would you plan validation, backup, upgrade, and rollback?
+* A distributed cache running in a StatefulSet loses consistency after a Pod restart. How would you investigate persistence and replication behavior?
+* A StatefulSet uses node-local storage, and the assigned node becomes permanently unavailable. What recovery options are available?
+* A production database requires zero or near-zero downtime during an application update. How would you coordinate Kubernetes rollout behavior with database compatibility?
+* A security audit discovers that all StatefulSet replicas use the same database credentials. How would you improve secret management and rotation?
+* How would you design a complete disaster-recovery drill for a production StatefulSet, including data restoration, DNS, application validation, and failback?

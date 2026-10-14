@@ -1,0 +1,30 @@
+* Write a Spring Boot REST API secured using Spring Security.
+* Implement a JWT authentication filter for a Spring Boot application.
+* Configure a Spring Boot OAuth 2.0 resource server to validate JWT access tokens.
+* Write a Java method that validates JWT expiration, issuer, audience, and signature.
+* Implement role-based authorization using Spring Security authorities.
+* Write a REST controller secured with @PreAuthorize.
+* Implement OAuth 2.0 client credentials flow for service-to-service communication.
+* Configure an OAuth 2.0 authorization code flow with PKCE for a web application.
+* Write a Spring Boot application that integrates with an OpenID Connect identity provider.
+* Implement secure password storage using BCryptPasswordEncoder.
+* Write a refresh-token service that supports token rotation and revocation.
+* Implement an authentication failure handler that returns consistent HTTP error responses without leaking sensitive details.
+* Write a custom authorization component that checks whether a user owns the requested resource.
+* Implement tenant-aware authorization for a multi-tenant order management API.
+* Write a servlet filter that securely records authentication outcomes without logging tokens or passwords.
+* Configure CORS in Spring Security for a specified set of trusted origins.
+* Write an integration test verifying that unauthenticated requests receive HTTP 401 responses.
+* Write tests that verify users cannot access endpoints outside their assigned roles.
+* Implement rate limiting for a REST API using Resilience4j or a gateway-level rate limiter.
+* Write a Java component that retrieves secrets from a dedicated secrets manager rather than hardcoding credentials.
+* Implement validation and parameterized database queries to prevent SQL injection.
+* Write a WebClient configuration that obtains and forwards an appropriate OAuth 2.0 access token to a downstream service.
+* Implement mTLS-based communication between two Java microservices.
+* Write an audit logging component that records who performed a sensitive business operation and when it occurred.
+* Implement JWT signing-key rotation using a key identifier (kid) and a trusted key set.
+* Write a token-validation test suite covering expired tokens, invalid signatures, incorrect audiences, and insufficient scopes.
+* Implement secure error handling that prevents sensitive information from appearing in API responses.
+* Write a Kafka consumer that validates message authenticity and enforces authorization before processing sensitive events.
+* Implement a secure file-upload endpoint with file type validation, size limits, and safe storage practices.
+* Design and implement a production-grade microservices security solution using Spring Security, OAuth 2.0, OpenID Connect, JWT validation, mTLS, secrets management, audit logging, and automated security tests.

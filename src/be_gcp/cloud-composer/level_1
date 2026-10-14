@@ -1,0 +1,30 @@
+* How do you create a Cloud Composer environment?
+* How do you deploy a DAG file to a Cloud Composer environment?
+* How do you define a DAG using Python?
+* How do you configure task dependencies in an Airflow DAG?
+* How do you schedule a DAG to run at a specific time?
+* How do you configure a DAG to run only on weekdays?
+* How do you trigger a DAG manually?
+* How do you pass parameters to a DAG run?
+* How do you configure retries and retry delays for a task?
+* How do you configure execution timeouts for tasks?
+* How do you use PythonOperator in an Airflow DAG?
+* What is the difference between PythonOperator and BashOperator?
+* How do you use BranchPythonOperator to implement conditional execution?
+* How do you use sensors to wait for an external file or event?
+* How do you configure task dependencies using upstream and downstream relationships?
+* How do you use TaskGroups to organize a complex DAG?
+* How do you pass data between tasks using XCom?
+* What are the limitations of using XCom for large datasets?
+* How do you configure Airflow connections to access Google Cloud services?
+* How do you authenticate tasks to Google Cloud using service accounts?
+* How do you execute BigQuery queries from a Cloud Composer DAG?
+* How do you transfer files from Cloud Storage to BigQuery using Airflow operators?
+* How do you trigger a Dataflow job from Cloud Composer?
+* How do you configure email or other notifications when a task fails?
+* How do you monitor DAG runs and task logs in the Airflow UI?
+* How do you handle a DAG that runs longer than expected?
+* How do you prevent overlapping DAG runs?
+* How do you configure catchup and max_active_runs?
+* How do you manage Airflow variables and connections across environments?
+* How do you test DAG definitions before deploying them to production?

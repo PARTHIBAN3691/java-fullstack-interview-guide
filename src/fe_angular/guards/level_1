@@ -1,0 +1,30 @@
+* How do you implement an authentication guard using a service?
+* How do you implement a functional CanActivate guard?
+* How do you protect child routes using CanActivateChild?
+* How do you implement role-based authorization using route guards?
+* How do you distinguish authentication from authorization in Angular?
+* How do you use CanMatch to select routes based on user permissions?
+* How do you implement a CanDeactivate guard for a reactive form?
+* How do you pass route data to a guard?
+* How do you access query parameters and route parameters inside a guard?
+* How do you return a UrlTree to redirect users from a guard?
+* Why is returning a UrlTree generally preferable to calling navigate() inside a guard?
+* How do you combine multiple guards on a route?
+* How do you handle asynchronous authentication checks in a guard?
+* How do you use Observable<boolean> as a guard result?
+* How do you use Promise<boolean> as a guard result?
+* How do you handle API failures while checking user permissions?
+* How do you share authentication state between a guard and components?
+* How do you implement a guard using Angular signals?
+* How do you test a functional route guard?
+* How do you mock dependencies when testing a guard?
+* How do you prevent navigation when a user has unsaved form changes?
+* How do you display a confirmation dialog from a CanDeactivate guard?
+* How do you implement feature-based access control using route metadata?
+* What is the purpose of the data property in Angular route configuration?
+* How do you apply guards to lazy-loaded routes?
+* How do route guards interact with route resolvers?
+* How do you prevent redirect loops in authentication guards?
+* How do you handle expired access tokens during route navigation?
+* What is the difference between hiding a navigation link and protecting its route?
+* What are the best practices for organizing route guards in a large Angular application?

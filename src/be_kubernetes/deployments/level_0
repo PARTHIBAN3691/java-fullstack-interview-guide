@@ -1,0 +1,30 @@
+* What is a Deployment in Kubernetes?
+* Why are Deployments used in Kubernetes?
+* What is the relationship between a Deployment and a Pod?
+* What is the relationship between a Deployment and a ReplicaSet?
+* How do you create a Deployment using a YAML file?
+* What is the purpose of the replicas field in a Deployment?
+* What is the difference between a Pod and a Deployment?
+* What is the purpose of the selector field in a Deployment?
+* What is the role of the template field in a Deployment specification?
+* What is the purpose of the metadata section in a Deployment YAML?
+* How do you check the status of a Deployment?
+* Which kubectl command lists all Deployments in a namespace?
+* How do you describe a Deployment using kubectl?
+* How do you view the Pods managed by a Deployment?
+* What happens when a Deployment is created?
+* How do you scale a Deployment manually?
+* What is a rolling update in Kubernetes?
+* What is a Deployment rollout?
+* How do you restart a Deployment?
+* How do you delete a Deployment?
+* What is the purpose of the status section in a Deployment?
+* What is the difference between desired replicas and available replicas?
+* What is the purpose of the image field in a Deployment container specification?
+* How do you update the container image in a Deployment?
+* What is the purpose of the strategy field in a Deployment?
+* What is the default update strategy for a Deployment?
+* What is a rollout history in Kubernetes?
+* How do you check the rollout status of a Deployment?
+* What happens to existing Pods when a Deployment is deleted?
+* Can a Deployment manage multiple replicas of an application?

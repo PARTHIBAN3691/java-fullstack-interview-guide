@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a failed message through multiple retry topics and a dead-letter topic.
+* How does Spring Kafka implement non-blocking retries internally?
+* What are the limitations of non-blocking retries in Spring Kafka?
+* Why can non-blocking retries lose ordering guarantees for a Kafka partition?
+* How would you design retry topics for a high-throughput payment-processing application?
+* How would you choose retry intervals for transient database failures?
+* How would you design exponential backoff with jitter for Kafka message retries?
+* How would you distinguish transient, permanent, and business-validation failures?
+* How would you prevent retry storms during a downstream service outage?
+* How would you prevent retry topics from overwhelming the original Kafka cluster?
+* How do retry topics affect partition ordering and consumer concurrency?
+* How would you preserve per-customer ordering when messages are retried?
+* How would you handle retry topic partition-count mismatches?
+* How would you design retry topics for messages with different processing priorities?
+* How would you handle schema incompatibility or deserialization errors in a retry pipeline?
+* How do retry topics interact with Kafka transactions?
+* How would you achieve atomic processing when a retry involves database updates and Kafka publishing?
+* How would you prevent duplicate business operations when a message is retried after a consumer crash?
+* How would you coordinate retries with an idempotency key or inbox table?
+* How would you handle a retry topic that is unavailable when a consumer fails?
+* What happens if a retry message is published successfully but the original consumer offset is not committed?
+* How would you make retry processing resilient to broker failures?
+* How would you design a retry strategy for downstream APIs with rate limits?
+* How would you prevent retry messages from being processed before their intended delay?
+* How would you choose between retry topics, in-memory retries, and external scheduling systems?
+* How would you migrate an existing consumer from blocking retries to non-blocking retry topics?
+* How would you design retry-topic retention and cleanup policies?
+* How would you safely replay millions of dead-letter messages without overwhelming downstream systems?
+* How would you monitor retry success rate, retry age, and dead-letter volume across multiple services?
+* How would you design a reusable Spring Kafka retry framework for multiple microservices?

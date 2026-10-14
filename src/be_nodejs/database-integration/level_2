@@ -1,0 +1,30 @@
+* Explain the architecture of database integration in a large-scale Node.js application.
+* How would you design a reusable database access layer for multiple application modules?
+* How would you choose between a native database driver, an ORM, and a query builder?
+* How does Node.js handle concurrent database operations without blocking the event loop?
+* What are the performance implications of using synchronous database operations?
+* How would you size a database connection pool for a high-traffic application?
+* How do you calculate the total possible database connections across multiple application instances?
+* How would you diagnose connection pool exhaustion in production?
+* How would you handle database failover and reconnection?
+* How do you implement retry logic without creating duplicate database operations?
+* How would you design transaction boundaries for a business operation involving multiple tables?
+* What are transaction isolation levels, and how do they affect concurrent requests?
+* How would you prevent lost updates when multiple requests modify the same record?
+* Compare optimistic locking and pessimistic locking in Node.js applications.
+* How would you implement idempotent database writes for payment or order processing?
+* How do you handle deadlocks and transaction retries?
+* How would you optimize complex queries involving multiple joins?
+* How do indexes affect query performance, storage, and write operations?
+* How would you investigate a query that performs well in development but slowly in production?
+* How do you prevent the N+1 query problem in a large ORM-based application?
+* How would you implement read replicas and route read/write operations appropriately?
+* What consistency challenges arise when reading from replicas?
+* How would you manage database migrations without causing application downtime?
+* How would you design backward-compatible schema changes during rolling deployments?
+* How would you handle database connection management in a serverless Node.js application?
+* How would you design database integration for a microservices architecture?
+* Why should separate microservices generally own their respective data?
+* How would you coordinate a business operation that updates data across multiple databases?
+* How would you implement the transactional outbox pattern using Node.js and a relational database?
+* What metrics and tracing data would you collect to monitor database integration in production?

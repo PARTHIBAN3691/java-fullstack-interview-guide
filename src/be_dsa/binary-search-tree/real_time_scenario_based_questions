@@ -1,0 +1,30 @@
+* An e-commerce application stores product IDs in a BST. How would you implement efficient search, insertion, and deletion operations?
+* A financial system needs to retrieve transactions within a specific amount range. How would you use a BST to support range queries?
+* A reporting application inserts customer IDs in ascending order, causing searches to become slow. How would you diagnose and resolve the performance issue?
+* A Java application uses a custom BST but occasionally returns incorrect search results. How would you investigate violations of the BST property?
+* A library management system needs to find the next higher book ID after a given ID. How would you implement this using a BST?
+* A stock-trading application needs to retrieve the Kth-highest price from dynamically changing data. How would you design the BST to support this efficiently?
+* A scheduling application stores tasks by priority and needs to retrieve the smallest and largest priorities frequently. How would you design the tree operations?
+* A data-processing service must validate whether an incoming binary tree is a valid BST. How would you avoid false positives caused by incorrect boundary checks?
+* A financial analytics system needs to calculate the minimum difference between sorted transaction values stored in a BST. How would you solve this efficiently?
+* A product catalog needs to find all product prices between two values. How would you avoid traversing irrelevant subtrees?
+* A legacy Java service has a deeply skewed BST and experiences StackOverflowError during traversal. How would you resolve the issue?
+* A customer database needs to rebuild a BST from sorted customer IDs. How would you construct a balanced tree?
+* A data migration process must serialize a BST and reconstruct it on another server. How would you preserve the tree values and structure efficiently?
+* A service occasionally loses BST ordering after deleting nodes with two children. How would you debug the deletion algorithm?
+* An inventory system needs to find the closest available price to a requested target. How would you implement this without scanning every node?
+* A monitoring system needs to track dynamically changing values and retrieve the median efficiently. How would you augment a BST to support this?
+* A search service needs to identify the largest valid BST subtree within a tree received from an external source. How would you implement the validation in linear time?
+* A multi-user application allows several threads to update the same BST. How would you prevent race conditions and inconsistent tree structure?
+* A Java application must maintain historical versions of a BST so previous states remain accessible after updates. How would you design the data structure?
+* A financial reporting service needs to calculate the sum of all values within a range without visiting every node. What additional information or pruning strategies could help?
+* A system receives duplicate product IDs and must maintain their quantities. How would you handle duplicates without unnecessarily increasing tree height?
+* A production service has unpredictable search latency because its BST is unbalanced. How would you measure the problem and select an appropriate self-balancing tree?
+* A database cache needs ordered key traversal and efficient range scans. How would you compare a BST with a hash map for this requirement?
+* A data import job needs to verify that a supplied preorder sequence represents a valid BST. How would you validate it efficiently?
+* A Java service needs to merge two large BSTs while maintaining sorted output. How would you minimize additional memory usage?
+* An application needs to recover a BST after two node values have been accidentally swapped. How would you identify the misplaced nodes and repair the tree?
+* A ranking service needs to answer repeated Kth-smallest queries while the tree changes frequently. How would subtree-size augmentation improve performance?
+* A system must delete all records with keys outside an allowed range. How would you implement this while preserving the BST property?
+* A production incident reveals that BST operations become slow only for certain input patterns. How would you reproduce the problem and test a balancing strategy?
+* A Java REST API accepts BST values and performs searches and range queries. How would you validate requests, handle empty trees, and return meaningful errors?

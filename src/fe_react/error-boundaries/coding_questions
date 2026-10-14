@@ -1,0 +1,30 @@
+* Create a basic Error Boundary using a React class component.
+* Implement getDerivedStateFromError() to update the error state.
+* Implement componentDidCatch() to log an error and its component stack.
+* Create an Error Boundary that displays a custom fallback message.
+* Build an Error Boundary that accepts fallback UI through props.
+* Create a reusable Error Boundary that wraps arbitrary child components.
+* Implement an Error Boundary around a single dashboard widget.
+* Wrap an entire React application in an Error Boundary.
+* Create nested Error Boundaries for independent application sections.
+* Implement a Retry button that resets an Error Boundary.
+* Create an Error Boundary that resets when a resetKey prop changes.
+* Build an Error Boundary that supports a custom fallback render function.
+* Create an Error Boundary that displays a generic message to users while logging technical details.
+* Implement an Error Boundary with TypeScript interfaces for its props and state.
+* Write a component that intentionally throws an error during rendering and test the fallback UI.
+* Write a React Testing Library test that verifies an Error Boundary catches a rendering error.
+* Test that an Error Boundary displays its fallback when a child component fails.
+* Test that a working sibling component remains available when another component crashes.
+* Implement error reporting from componentDidCatch() using a mock logging service.
+* Create an Error Boundary for a React.lazy() component wrapped in Suspense.
+* Implement error handling for a rejected Promise in an event handler.
+* Implement a custom hook that captures an asynchronous error and forwards it to an Error Boundary.
+* Create a component that handles API errors separately from rendering errors.
+* Integrate a React Error Boundary with a simulated external error-monitoring service.
+* Build a dashboard with separate Error Boundaries for multiple widgets.
+* Implement a safe fallback component that does not depend on the failing component's state.
+* Create an Error Boundary that supports resetting its error state programmatically through a reset key.
+* Write tests for retry behavior when a child component initially fails and then succeeds.
+* Implement an Error Boundary that avoids exposing stack traces in production.
+* Build a sample React application demonstrating parent and child Error Boundary behavior.

@@ -1,0 +1,30 @@
+* You are building an e-commerce application with products of different types. How would you use generics to create a reusable product repository?
+* Your API returns different response types for users, products, and orders. How would you design a generic API response interface?
+* You need a reusable function that returns the first element of an array while preserving its type. How would you implement it?
+* Your application stores data in a cache with different key and value types. How would you design a generic cache class?
+* You are building a database access layer that handles multiple entity types. How would you design a generic repository?
+* Your application needs a function that safely retrieves a property from an object. How would you use keyof and generics?
+* You need to implement a reusable pagination component for different data models. How would you use generic interfaces?
+* Your application processes API responses asynchronously. How would you preserve the response type using Promise<T>?
+* You need to create a reusable form component that supports different data models. How would you define its generic type parameters?
+* Your application supports multiple notification payloads. How would you use generics to create a type-safe notification handler?
+* You need a function that transforms arrays of different types without losing type information. How would you implement it?
+* Your team has duplicated repository implementations for users and products. How would generics help eliminate duplication?
+* You are building a reusable event emitter where each event has a different payload type. How would you model it with generics?
+* Your application has a generic service class that must implement a shared interface. How would you define the class and interface?
+* You need a factory function that creates different service instances based on a supplied type. How would you preserve type safety?
+* Your application requires a utility that makes nested configuration properties optional. How would you design a recursive generic type?
+* You need to restrict a generic function to objects containing an id property. How would you define the constraint?
+* Your application requires a generic sorting function that sorts objects by a selected property. How would you use keyof and indexed access types?
+* You are building a middleware system where each function transforms one data type into another. How would you preserve the types across the pipeline?
+* Your team wants a generic HTTP client that supports typed request and response bodies. How would you design its methods?
+* Your application needs to support both primitive and object values in a reusable container. How would you define the generic class?
+* You need to implement a type-safe event registration API with event-specific callback arguments. How would you model its types?
+* Your generic function infers an overly broad type and loses literal values. How would you improve inference?
+* You need to create a generic wrapper around existing functions without losing their argument and return types. How would you implement it?
+* Your application uses multiple data sources with different result types. How would you create a generic adapter interface?
+* You need to implement a generic retry utility that works with different asynchronous operations. How would you type its parameters and return value?
+* Your application must support different validation schemas with different input types. How would you design a generic validator interface?
+* You need to create a strongly typed state-management store that supports multiple state models. How would you use generics?
+* Your generic class extends another generic class and must preserve the parent's type parameters. How would you implement it?
+* Your team is developing a reusable TypeScript SDK. How would you use generics to provide flexible APIs without excessive type complexity?

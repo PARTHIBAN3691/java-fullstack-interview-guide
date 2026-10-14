@@ -1,0 +1,30 @@
+* Explain the relationship between closures, execution contexts, and lexical environments.
+* How does the JavaScript engine manage lexical environments for closures?
+* Does a closure capture an entire lexical environment or only the variables it uses?
+* How does garbage collection work when closures retain references to outer variables?
+* Under what circumstances can closures cause memory leaks in long-running applications?
+* How would you identify closure-related memory leaks using browser developer tools?
+* How do closures behave when multiple inner functions reference the same mutable variable?
+* What is the difference between shared lexical state and independently captured state?
+* How would you create independent private state for multiple function instances?
+* How can closures be used to implement a private object-oriented interface?
+* How does the module pattern use closures to hide internal implementation details?
+* What are the limitations of using closures for encapsulation compared with JavaScript private class fields?
+* How can closures be used to implement memoization with cache invalidation?
+* How would you implement a closure-based rate limiter?
+* How would you implement a closure-based debouncer with cancellation support?
+* How would you implement a closure-based throttling function with leading and trailing execution?
+* How can closures be used to implement partial application and currying?
+* How would you implement a closure-based function composition utility?
+* How can closures cause stale-state problems in asynchronous applications?
+* How do closures interact with promises and async/await?
+* How would you prevent an asynchronous closure from using outdated application state?
+* What happens when a closure captures a loop variable that is updated asynchronously?
+* How can closures be used to implement a lightweight dependency injection mechanism?
+* How would you design a closure-based API that exposes public methods while protecting internal state?
+* How can closures affect memory usage when thousands of callbacks are registered?
+* What are the trade-offs between closures, classes, and factory functions?
+* How can closures be used to implement a once-only function?
+* How would you implement a closure-based cache that supports expiration?
+* How can closures be used to create composable middleware functions?
+* How would you test and debug complex closure behavior in a production application?

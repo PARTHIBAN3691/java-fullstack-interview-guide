@@ -1,0 +1,101 @@
+# Core Java — Collections — Set
+## Level 1 — Medium
+
+### Set Fundamentals
+* Why does Set not provide indexed access to elements?
+* How does a Set enforce uniqueness?
+* What determines whether two elements are considered duplicates?
+* What is the difference between insertion order, sorted order, and unspecified iteration order?
+* How would you choose a Set implementation based on ordering and performance requirements?
+* What is the difference between an unmodifiable Set and an immutable Set?
+* How can mutable elements affect the correctness of Set operations?
+
+### HashSet
+* How does HashSet work internally?
+* How is HashSet backed by HashMap?
+* How does HashSet handle hash collisions?
+* What happens when two unequal elements have the same hash code?
+* What happens if an element's hash code changes after insertion?
+* How does the load factor affect HashSet performance?
+* What happens when a HashSet reaches its capacity threshold?
+* Why can poor hash-code distribution degrade HashSet performance?
+* Why should custom classes override both `equals()` and `hashCode()` when used in HashSet?
+
+### LinkedHashSet
+* How does LinkedHashSet maintain insertion order?
+* What is the memory overhead of LinkedHashSet compared with HashSet?
+* How does LinkedHashSet behave when an existing element is added again?
+* How would you preserve the first occurrence of each element in a collection?
+* When is insertion order important enough to justify LinkedHashSet's additional memory cost?
+* How does LinkedHashSet differ from sorting a HashSet before iteration?
+
+### TreeSet
+* How does TreeSet work internally?
+* What is the role of a balanced search tree in TreeSet?
+* How does TreeSet determine whether two elements are equivalent for uniqueness?
+* What happens if a Comparator considers two distinct objects equal?
+* Why must elements in a TreeSet be mutually comparable under the selected ordering?
+* How do `subSet()`, `headSet()`, and `tailSet()` behave?
+* What is the difference between `pollFirst()` and `first()`?
+* How can a custom Comparator affect TreeSet ordering and uniqueness?
+
+### SortedSet and NavigableSet
+* What is the difference between `SortedSet` and `NavigableSet`?
+* How do `lower()`, `floor()`, `ceiling()`, and `higher()` differ?
+* What is the difference between inclusive and exclusive range views?
+* How do range views reflect changes in the original Set?
+* How would you find the closest available value to a target using NavigableSet?
+* How would you use NavigableSet to maintain a sorted collection of timestamps?
+* What happens when you modify a backed range view?
+
+### Set Operations and Utilities
+* How would you find the symmetric difference of two Sets?
+* How do `retainAll()` and `removeAll()` modify the target Set?
+* How would you preserve insertion order while removing duplicates from a List?
+* How would you compare two Lists for equality while ignoring order but preserving duplicate counts?
+* What is the difference between Set equality and object identity?
+* How would you perform union and intersection efficiently for large Sets?
+* What are the trade-offs between copying a Set and using a backed view?
+
+### Hashing and Equality
+* Explain the contract between `equals()` and `hashCode()`.
+* What happens if equal objects return different hash codes?
+* How can mutable fields in `equals()` or `hashCode()` cause lookup failures?
+* Why can two unequal objects have the same hash code without violating the contract?
+* How would you debug a HashSet that contains objects that appear to be duplicates?
+* How can an incorrect equality implementation cause data-quality problems in an application?
+
+### Generics and Set
+* What is the difference between `Set<Number>` and `Set<? extends Number>`?
+* How do wildcard bounds affect reading and adding elements?
+* How would you design a generic method that accepts a Set of numeric types?
+* Why is `Set<Integer>` not a subtype of `Set<Number>`?
+* How can raw types cause heap pollution when working with Sets?
+* How would you write a type-safe method to copy elements between compatible Sets?
+
+### Concurrent and Synchronized Sets
+* Why is HashSet unsafe for concurrent modifications?
+* How does `Collections.synchronizedSet()` provide synchronization?
+* Why must iteration over a synchronized Set use the appropriate external synchronization?
+* How does CopyOnWriteArraySet support concurrent iteration?
+* What are the trade-offs of CopyOnWriteArraySet for write-heavy workloads?
+* How can `ConcurrentHashMap.newKeySet()` be used as a concurrent Set?
+* How would you choose between a synchronized Set, CopyOnWriteArraySet, and a concurrent hash-based Set?
+
+### Set and Streams
+* How do you remove duplicates from a List using `distinct()`?
+* What is the difference between `distinct()` and collecting into a Set?
+* How do you collect Stream results into a TreeSet?
+* How do you preserve insertion order when collecting Stream results into a Set?
+* How would you calculate the intersection of two Sets using Streams?
+* What problems can occur when a parallel Stream modifies a shared Set?
+* How do you handle duplicate keys or elements while collecting Stream results?
+
+### Set Performance and Complexity
+* Compare HashSet, LinkedHashSet, and TreeSet operation complexities.
+* How does initial capacity influence HashSet memory usage?
+* Why can resizing temporarily increase allocation and processing costs?
+* How does object allocation affect Set performance?
+* How would you benchmark Set implementations for membership checks and insertion?
+* Why might sorting a List and removing adjacent duplicates be preferable for some workloads?
+

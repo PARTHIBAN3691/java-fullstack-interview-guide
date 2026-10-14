@@ -1,0 +1,30 @@
+* How do you implement data fetching using useEffect() and async/await?
+* Why should an async function generally be defined inside useEffect() rather than passed directly as its callback?
+* How do you prevent an infinite API request loop in useEffect()?
+* How do dependency arrays affect API requests?
+* How do you fetch data based on a selected dropdown value?
+* How do you refetch data when a button is clicked?
+* How do you implement search functionality using API data?
+* How do you implement debounced API requests in React?
+* How do you implement pagination with server-side data fetching?
+* How do you implement sorting and filtering using API parameters?
+* How do you handle multiple API requests in one component?
+* What is the difference between Promise.all() and Promise.allSettled()?
+* How do you fetch independent API resources in parallel?
+* How do you handle dependent API requests?
+* How do you cancel an API request using AbortController?
+* How do you prevent state updates from outdated API responses?
+* What is a race condition in data fetching?
+* How do you handle request timeouts?
+* How do you implement API retries?
+* How do you centralize API calls using an Axios instance?
+* How do you configure request and response interceptors in Axios?
+* How do you attach authentication tokens to API requests?
+* How do you handle token expiration and unauthorized responses?
+* How do you create a reusable data-fetching custom hook?
+* How do you separate API service logic from UI components?
+* How do you test components that fetch data from APIs?
+* How do you mock API calls using Jest or Vitest?
+* How do you handle API response types using TypeScript?
+* How do you avoid unnecessary re-fetching when components re-render?
+* How do you handle stale data while a new request is in progress?

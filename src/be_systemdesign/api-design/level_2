@@ -1,0 +1,30 @@
+* How would you design an API architecture for a large-scale distributed system?
+* How do you choose between REST, GraphQL, gRPC, and asynchronous messaging for different use cases?
+* How would you design an API that handles millions of requests per minute?
+* How do you scale API services horizontally while maintaining consistent behavior?
+* How would you design an API gateway for authentication, routing, rate limiting, and observability?
+* How do you prevent an API gateway from becoming a single point of failure?
+* How do you design API versioning and deprecation policies across hundreds of clients?
+* How do you evolve API contracts without breaking existing consumers?
+* How do you implement consumer-driven contract testing in a microservices architecture?
+* How do you design idempotent APIs in a distributed system where retries are unavoidable?
+* How do you handle exactly-once business processing when network delivery may occur more than once?
+* How do you design APIs that maintain consistency across multiple microservices?
+* How do you handle distributed transactions initiated through an API?
+* How do you design APIs using the Saga pattern for multi-step business workflows?
+* How do you prevent race conditions when multiple clients update the same resource concurrently?
+* How do you design APIs using ETags, conditional requests, and optimistic locking?
+* How do you design secure multi-tenant APIs with tenant-level data isolation?
+* How do you defend APIs against replay attacks, request tampering, and credential abuse?
+* How do you implement fine-grained authorization for APIs in a distributed architecture?
+* How do you design rate limiting across multiple API gateway instances?
+* How do you implement fair rate limiting for different customers and subscription tiers?
+* How do you design APIs that remain available when downstream services fail?
+* How do circuit breakers, bulkheads, and timeouts influence API design?
+* How do you design asynchronous APIs using job resources, polling, and callbacks?
+* How do you design reliable webhook delivery with retries, signatures, and deduplication?
+* How do you handle backpressure when API consumers submit requests faster than services can process them?
+* How do you design API caching while maintaining data freshness and authorization correctness?
+* How do you optimize API payloads and database access to reduce latency?
+* How do you establish end-to-end observability for APIs across distributed services?
+* How would you define an API governance strategy for a large enterprise with multiple teams?

@@ -1,0 +1,94 @@
+**Responsible AI**
+* An AI hiring assistant improves screening speed but appears to reject candidates from certain backgrounds at a higher rate. How would you investigate the issue, evaluate fairness, and decide whether deployment should continue?
+* A business team wants to launch an AI feature quickly, but the intended use, limitations, and safety criteria have not been documented. How would you establish the required controls before release?
+* A production AI system changes behavior after a model-provider update. How would you determine whether the change affects responsible-use commitments and deployment approval?
+
+**AI Risk Management**
+* An AI agent is authorized to update customer records and trigger refunds. A new tool increases its potential impact, but the original risk assessment has not been updated. How would you reassess and mitigate the risk?
+* A low-probability model failure causes a high-impact business incident. How would you investigate why the existing risk assessment and controls did not prevent it?
+* Multiple teams deploy AI services independently, and no one maintains a consolidated risk register. How would you establish organization-wide risk ownership and monitoring?
+
+**Hallucination Detection and Mitigation**
+* A RAG chatbot provides confident but unsupported answers despite retrieving relevant documents. How would you investigate retrieval quality, claim grounding, and generation behavior?
+* A model cites genuine documents that do not actually support its conclusions. How would you detect citation mismatch and improve evidence validation?
+* The system begins refusing too many questions after a hallucination-mitigation update. How would you balance factual reliability with useful answer coverage?
+
+**Prompt Injection**
+* An internal document contains hidden instructions asking an agent to export confidential records. The agent follows them through an approved tool. How would you contain the incident and redesign the security boundaries?
+* A web-browsing agent receives malicious instructions embedded in page content and attempts to access internal network resources. How would you investigate the attack path and prevent recurrence?
+* A prompt-injection defense works in isolated tests but fails in multi-step production workflows. How would you build realistic adversarial tests and enforce independent execution controls?
+
+**Jailbreak Attacks**
+* A user discovers a multi-turn prompt sequence that bypasses the application's safety restrictions. How would you reproduce the issue, measure its scope, and deploy a mitigation?
+* A model upgrade reduces jailbreak success but blocks many legitimate educational requests. How would you assess the trade-off and refine the safety policy?
+* Attackers use encoded text and multilingual phrasing to evade moderation. How would you improve detection and evaluate whether the fix generalizes?
+
+**Data Poisoning**
+* A fine-tuned model starts producing a specific incorrect recommendation only when a rare phrase appears. How would you investigate potential backdoor poisoning and isolate the source?
+* A third-party dataset is discovered to contain manipulated labels after a model has been deployed. How would you assess impact and plan retraining or rollback?
+* A synthetic-data pipeline begins generating large volumes of repetitive, misleading examples. How would you detect the issue and prevent contaminated data from reaching training?
+
+**Model Inversion and Data Leakage**
+* A user extracts fragments of confidential training data by repeatedly changing prompts. How would you investigate memorization, contain exposure, and assess the affected data?
+* An AI service reveals whether a specific person was included in a private training dataset. How would you investigate membership-inference risk and strengthen privacy controls?
+* An incident review finds that sensitive prompts are retained in logs and analytics longer than intended. How would you remediate the exposure and verify deletion?
+
+**Sensitive Information and PII Protection**
+* An LLM application sends unredacted customer identifiers to an external model provider. How would you contain the issue and redesign data minimization and redaction?
+* A model summarizes confidential records and accidentally includes sensitive details in a response intended for a broader audience. How would you improve authorization, output filtering, and testing?
+* A deletion request removes source records but leaves derived embeddings and cached summaries available. How would you implement and verify end-to-end deletion?
+
+**AI Output Validation**
+* An AI-generated SQL statement passes syntax validation but deletes more records than intended. How would you prevent similar incidents using semantic checks, authorization, and safe execution?
+* A model returns JSON that conforms to the schema but contains invalid business values. How would you introduce domain-level validation?
+* A model-generated infrastructure command is validated and then executed after the target environment has changed. How would you prevent stale validation from authorizing a dangerous action?
+
+**Content Moderation**
+* A moderation update blocks harmless discussions of sensitive topics while allowing harmful content phrased indirectly. How would you analyze the errors and improve calibration?
+* A multilingual application experiences increased harmful-content reports for a language poorly represented in its evaluation data. How would you identify coverage gaps and improve testing?
+* A moderation service becomes unavailable, and requests continue reaching the model. How would you design safe degradation and ensure policy enforcement remains effective?
+
+**Guardrails and Policy Enforcement**
+* A model bypasses a prompt-level restriction by encoding a prohibited action in a structured tool request. How would you enforce the policy outside the model?
+* An outage in the policy engine causes high-risk operations to proceed without validation. How would you redesign failure handling and release tests?
+* Different guardrails disagree about whether a request is allowed. How would you define policy precedence, escalation, and auditable decision logic?
+
+**AI Access Control**
+* A user asks an AI assistant to retrieve a document that they cannot access directly, and the RAG pipeline returns it. How would you investigate the authorization failure?
+* An agent uses a privileged service account to complete actions that exceed the initiating user's permissions. How would you redesign delegated authorization?
+* A user's access is revoked while a long-running agent workflow is active. How would you prevent later tool calls from using stale permissions?
+
+**AI Supply-Chain Security**
+* A model artifact downloaded from an external repository contains unexpected executable code in its loading path. How would you contain the risk and establish artifact verification?
+* A critical vulnerability is announced in an inference framework used by several AI services. How would you identify affected systems, prioritize remediation, and verify fixes?
+* A team introduces an unapproved third-party model and dataset directly into production. How would you investigate provenance, licensing, security, and governance gaps?
+
+**Model Governance and Auditability**
+* A regulator or internal auditor asks which model, data sources, and policy version produced a disputed AI decision, but the logs are incomplete. How would you reconstruct the event and improve traceability?
+* Different teams deploy models with inconsistent evaluation and approval records. How would you establish centralized governance without preventing independent delivery?
+* A model's intended use expands beyond its approved scope. How would you reassess risk, document changes, and control continued deployment?
+
+**Explainability and Transparency**
+* An AI system makes a high-impact recommendation and generates a convincing explanation that does not match the evidence. How would you detect and address the discrepancy?
+* Users cannot understand why the model rejected their requests, while developers need detailed diagnostic information. How would you provide explanations suited to each audience?
+* A model update changes recommendations, but the team cannot explain the shift. How would you investigate model behavior, input distribution, and evaluation evidence?
+
+**Bias and Fairness**
+* A model has high overall accuracy but significantly worse error rates for one user group. How would you identify the source and prioritize remediation?
+* A fairness intervention improves one metric but worsens another. How would you select appropriate metrics and document the trade-offs?
+* A production data shift creates disparities that were not present during initial evaluation. How would you detect, investigate, and respond to the drift?
+
+**Copyright and Data Provenance**
+* A customer claims that an AI-generated response reproduces protected text from their material. How would you investigate provenance, reproduction risk, and appropriate remediation?
+* A dataset provider cannot confirm the licensing terms for a portion of the training data. How would you assess whether the data can continue to be used?
+* An organization needs to remove data from its training pipeline after a rights-related request, but derived model artifacts already exist. How would you determine the affected assets and plan remediation?
+
+**Regulatory Compliance**
+* A new regulatory requirement affects data retention and transparency for an AI service already in production. How would you translate it into implementation work and verifiable evidence?
+* An enterprise deploys the same AI feature across multiple countries with different legal obligations. How would you handle regional controls, data residency, and release approvals?
+* An audit discovers that the team cannot demonstrate compliance with its documented AI policies. How would you close the evidence gaps and establish ongoing assurance?
+
+**Human Oversight**
+* A reviewer approves an AI-generated refund recommendation without checking the evidence, and the action causes a financial loss. How would you redesign the review process?
+* Human approval queues become overloaded, causing critical requests to miss service-level objectives. How would you prioritize review based on risk without removing necessary oversight?
+* An AI system repeatedly escalates routine decisions but fails to escalate rare, high-impact cases. How would you recalibrate escalation policies and measure effectiveness?

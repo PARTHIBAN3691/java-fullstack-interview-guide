@@ -1,0 +1,30 @@
+* Your Spring Boot image is 1 GB even after introducing a multi-stage build. How would you investigate which files and layers are increasing the final image size?
+* A Maven build succeeds in the first stage, but the final image fails because the JAR file cannot be found. How would you troubleshoot the COPY instruction and artifact path?
+* Your Docker build downloads all Maven dependencies every time, even when dependencies have not changed. How would you optimize caching?
+* A multi-stage image builds locally but fails in CI because the build stage cannot access a private Maven repository. How would you resolve this securely?
+* Your production image unexpectedly contains Maven, the JDK, and source code. How would you identify why build-stage files entered the final image?
+* Your team needs a development image with debugging tools and a smaller production image. How would you implement both using one Dockerfile?
+* A developer adds a secret to an ARG instruction during the build. How would you determine whether the secret could be exposed and redesign the build?
+* A Spring Boot application passes compilation but fails at runtime because a required shared library is missing from the runtime stage. How would you diagnose and fix the issue?
+* Your final image fails after switching from a full JDK image to a minimal runtime image. How would you identify missing Java modules, libraries, or certificates?
+* A multi-stage build works on AMD64 but fails on ARM64 because a dependency contains native code. How would you investigate and support both platforms?
+* Your integration tests pass in the build stage, but the deployed container fails because the runtime environment differs. How would you improve test coverage and stage parity?
+* A production deployment uses an image built from a different source revision than the one that passed testing. How would you redesign artifact creation and promotion?
+* A Dockerfile change causes the Maven dependency layer to rebuild unnecessarily. How would you inspect cache invalidation and restructure the instructions?
+* A Gradle-based build consumes excessive memory inside Docker and fails intermittently in CI. How would you investigate resource usage and optimize the build?
+* Your build stage produces multiple JAR files, and the final stage sometimes copies the wrong one. How would you make artifact selection deterministic?
+* Your organization requires every production image to run as a non-root user. How would you enforce this in the final stage and validate the result?
+* A vulnerability scan finds build tools and test dependencies in the deployed image. How would you separate build-time and runtime dependencies?
+* A new base image reduces image size but causes TLS connections to fail because trusted certificates are missing. How would you diagnose and resolve the issue?
+* Your CI pipeline runs tests successfully but publishes the image even when a later security scan fails. How would you restructure the pipeline?
+* A remote build cache speeds up builds but occasionally reuses an artifact built with incorrect configuration. How would you validate cache keys and build inputs?
+* Your team maintains 20 Spring Boot services with nearly identical multi-stage Dockerfiles. How would you standardize and maintain these builds?
+* A container starts successfully but cannot locate application configuration because the configuration was copied only into the build stage. How would you correct the image design?
+* Your final image is small but application startup time has increased significantly after introducing jlink. How would you measure and troubleshoot the regression?
+* An image built with Buildx contains the wrong platform-specific binary. How would you verify target-platform settings and artifact compatibility?
+* A production image is rebuilt separately for staging and production, resulting in different image digests. How would you ensure artifact consistency?
+* A Docker build leaks private repository credentials through logs or cached files. How would you investigate the leak and remediate it?
+* Your build stage runs unit tests, but the team also needs integration tests requiring a database. How would you design the pipeline and stage dependencies?
+* A new build stage increases CI execution time without improving the final image. How would you determine whether the stage is necessary and optimize the workflow?
+* Your runtime stage uses a different Linux distribution from the build stage, and the application fails to load native dependencies. How would you establish runtime compatibility?
+* Your organization wants signed, vulnerability-scanned, reproducible Java images with minimal runtime contents. How would you design the end-to-end build and release process?

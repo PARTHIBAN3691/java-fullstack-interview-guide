@@ -1,0 +1,122 @@
+**AWS AI and ML Services**
+* Design an AWS architecture that combines document ingestion, OCR, embeddings, RAG, inference, and human review for millions of documents.
+* How would you design fault isolation and graceful degradation when multiple AWS AI services experience partial outages?
+* How would you optimize a multi-account AI platform while maintaining centralized governance and workload isolation?
+* How would you design an event-driven ML platform with idempotent processing, replay, and dead-letter handling?
+* How would you compare managed foundation-model inference against custom model hosting using total cost of ownership?
+* How would you design disaster recovery for AI applications spanning multiple AWS regions?
+
+**Amazon Bedrock**
+* How would you design a production Bedrock platform with model routing, guardrails, RAG, caching, and observability?
+* How would you implement reliable cross-region inference while preserving data residency and policy constraints?
+* How would you handle model-specific differences in tool calling, structured outputs, context limits, and safety behavior?
+* How would you prevent prompt injection from retrieved documents from triggering unauthorized Bedrock tool calls?
+* How would you design an evaluation framework to compare model quality, groundedness, latency, and cost continuously?
+* How would you manage provisioned throughput, burst traffic, quotas, and backpressure at enterprise scale?
+* How would you implement a model fallback strategy that preserves response contracts and avoids silent quality degradation?
+
+**Amazon SageMaker**
+* Design a multi-team SageMaker platform with reproducible training, governed artifacts, approval workflows, and production deployment controls.
+* How would you optimize GPU utilization for variable-length inference requests and uneven traffic?
+* How would you prevent training-serving skew when feature transformations evolve?
+* How would you implement shadow deployment and statistically sound comparison of candidate models?
+* How would you manage distributed training failures, checkpoint recovery, and reproducibility?
+* How would you design regional disaster recovery for models, artifacts, pipelines, and endpoint configuration?
+* How would you detect model drift and decide whether to retrain, roll back, or continue monitoring?
+
+**Azure AI Foundry**
+* Design an enterprise AI platform using Azure AI Foundry with centralized governance, isolated workloads, evaluation, and production release controls.
+* How would you design model routing when deployments differ in supported features, quota, region, and service-level objectives?
+* How would you enforce consistent safety, evaluation, and logging policies across multiple AI projects?
+* How would you investigate an incident spanning Azure AI Foundry, Azure AI Search, managed identity, and private networking?
+* How would you establish reproducibility for prompts, datasets, model versions, evaluation runs, and deployments?
+* How would you design a controlled rollout that validates quality and safety before full production traffic?
+
+**Azure OpenAI Service**
+* Design a resilient multi-region Azure OpenAI architecture that respects data residency and deployment-specific capacity constraints.
+* How would you prevent retry amplification when multiple application instances simultaneously receive throttling responses?
+* How would you route traffic across deployments while maintaining per-tenant quotas and fairness?
+* How would you safely migrate a production application between model versions when output behavior changes?
+* How would you design end-to-end tracing for streaming requests, tool calls, retrieval, and model retries?
+* How would you handle regional failures when the required model is not deployed or approved in the failover region?
+* How would you build an automated quality gate that blocks releases when groundedness or safety metrics regress?
+
+**Google Vertex AI**
+* Design a governed Vertex AI platform that supports custom training, foundation models, feature preparation, evaluation, and controlled deployment.
+* How would you coordinate distributed training and recover from node failures without losing excessive compute time?
+* How would you implement a canary release for an endpoint and compare quality, latency, and cost before promotion?
+* How would you prevent data leakage across projects, service accounts, datasets, and model artifacts?
+* How would you design a multi-region inference architecture with model availability and residency constraints?
+* How would you automate drift detection, retraining triggers, model approval, and rollback?
+* How would you diagnose latency caused by feature retrieval, network paths, model execution, and response serialization?
+
+**Google Gemini**
+* Design a multimodal Gemini application that processes long documents, images, and video while meeting strict latency and cost objectives.
+* How would you preserve structured-output reliability when model versions produce different JSON schemas or tool-call behavior?
+* How would you evaluate and mitigate hallucinations when multimodal evidence conflicts with textual context?
+* How would you handle safety refusals, token limits, partial streaming responses, and interrupted requests consistently?
+* How would you design provider failover when equivalent Gemini capabilities are unavailable in another model?
+* How would you prevent untrusted multimodal content from influencing privileged tools or downstream workflows?
+* How would you benchmark model quality across realistic business tasks while controlling for evaluation bias?
+
+**Managed Vector Search Services**
+* Design a globally scalable vector retrieval layer with tenant isolation, hybrid search, filtering, reranking, and regional failover.
+* How would you migrate billions of vectors to a new embedding model with minimal downtime and comparable retrieval quality?
+* How would you determine whether poor RAG answers originate from embedding quality, index configuration, filters, or reranking?
+* How would you control index freshness when document updates and deletions arrive out of order?
+* How would you balance recall, latency, memory consumption, and index-build costs at large scale?
+* How would you prevent cross-tenant retrieval leakage when metadata filters are omitted or incorrectly applied?
+* How would you design disaster recovery and consistency checks for vector indexes and their source documents?
+
+**Cloud AI Security**
+* Design a threat model for an AI platform exposed to prompt injection, data exfiltration, compromised credentials, and malicious tools.
+* How would you enforce identity-based authorization at the application, model, retrieval, and tool-execution layers?
+* How would you investigate a suspected leak of sensitive data through prompts, responses, traces, or embeddings?
+* How would you protect AI systems against compromised CI/CD pipelines and tampered model artifacts?
+* How would you implement secret rotation without interrupting long-running inference workloads?
+* How would you design secure multi-tenant inference while preventing memory, cache, log, and retrieval leakage?
+* How would you establish security controls for model supply chains and third-party AI dependencies?
+
+**Private AI Networking**
+* Design private connectivity from on-premises systems to cloud AI endpoints across multiple regions and cloud providers.
+* How would you prevent public network bypass when private endpoints coexist with public service endpoints?
+* How would you troubleshoot intermittent AI API failures caused by private DNS, routing asymmetry, firewall rules, or MTU issues?
+* How would you design high availability for private connectivity without violating data residency restrictions?
+* How would you securely route traffic between private application services, vector search, object storage, and model endpoints?
+* How would you audit and prove that sensitive AI traffic never traverses an unauthorized public path?
+
+**Cloud Model Deployment**
+* Design a model-serving platform that supports GPU scheduling, dynamic batching, autoscaling, canary releases, and multi-region recovery.
+* How would you optimize p95 and p99 latency when model initialization, token generation, and queueing contribute differently?
+* How would you support multiple model versions on shared GPU infrastructure without resource starvation?
+* How would you implement atomic deployment of model weights, tokenizers, preprocessing code, and inference configuration?
+* How would you design rollback when a new model is faster but produces materially worse outputs?
+* How would you decide between active-active inference and active-passive regional failover?
+* How would you prevent autoscaling oscillations under bursty traffic and long-running generation requests?
+
+**Multi-Cloud AI Architecture**
+* Design a multi-cloud AI gateway across AWS, Azure, and Google Cloud with policy-based routing, unified telemetry, and provider-specific adapters.
+* How would you provide consistent semantics when models differ in safety behavior, tokenization, structured output, and tool calling?
+* How would you fail over between providers without sending restricted data to an unauthorized region?
+* How would you compare active-active, active-passive, and workload-segregated multi-cloud deployments?
+* How would you build a portable RAG architecture while accounting for provider-specific vector indexing and retrieval features?
+* How would you measure whether multi-cloud resilience benefits justify duplicated infrastructure and operational complexity?
+* How would you design consistent identity, secrets, audit logging, and governance across cloud providers?
+
+**AI Cost Management**
+* Design an AI FinOps framework that attributes costs across tokens, embeddings, vector queries, GPU hours, storage, networking, and orchestration.
+* How would you optimize cost per successful business outcome without allowing unacceptable quality or safety regressions?
+* How would you detect and contain runaway spending from recursive agents, repeated retries, or unexpectedly long prompts?
+* How would you compare reserved or provisioned capacity against on-demand inference using real utilization and demand forecasts?
+* How would you optimize a workload under simultaneous latency, throughput, accuracy, and monthly budget constraints?
+* How would you forecast costs for model upgrades when tokenization, context use, and output length change?
+* How would you design automated budget enforcement that protects critical workloads while throttling noncritical traffic?
+
+**Cloud AI Governance**
+* Design a cross-cloud AI governance framework covering model inventory, risk classification, approvals, monitoring, and retirement.
+* How would you enforce consistent policies while allowing cloud-specific controls and regional legal requirements?
+* How would you produce an auditable chain connecting source data, embedding versions, prompts, model versions, evaluations, and production outputs?
+* How would you govern autonomous agents that can access business systems and initiate consequential actions?
+* How would you handle a newly discovered model vulnerability or regulatory restriction affecting models already in production?
+* How would you implement continuous compliance checks without exposing sensitive prompts or customer data?
+* How would you establish accountable ownership for AI quality incidents, privacy breaches, cost overruns, and unsafe outputs?

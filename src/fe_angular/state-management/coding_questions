@@ -1,0 +1,30 @@
+* Create an Angular service that stores and shares a username using BehaviorSubject.
+* Implement a service that exposes read-only Observable state to components.
+* Create a counter using Angular Signals with increment, decrement, and reset operations.
+* Use a computed signal to calculate the total price of items in a shopping cart.
+* Implement shared state between two unrelated components using a service.
+* Create a service that manages loading, data, and error states for an API request.
+* Persist selected application state to localStorage and restore it on initialization.
+* Write a function that updates an immutable array of entities in application state.
+* Implement a simple reducer function that handles increment and decrement actions.
+* Create an NgRx Action for loading a list of employees.
+* Write an NgRx Reducer that stores employee data and loading status.
+* Create a Selector that returns the active employees from the Store.
+* Write an NgRx Effect that loads employee data from an API.
+* Handle API failures in an NgRx Effect using catchError().
+* Implement a feature-level NgRx Store for product management.
+* Create a memoized selector that calculates the total value of a shopping cart.
+* Implement pagination state with current page, page size, and total records.
+* Write an NgRx Effect that cancels an earlier search request when a new search action arrives.
+* Implement optimistic updates for a user's favorite product.
+* Write a reducer that updates one entity without mutating the existing state.
+* Create a state service that caches API responses and invalidates the cache after updates.
+* Implement logout logic that clears user-specific application state.
+* Write unit tests for a reducer that handles loading, success, and failure actions.
+* Write unit tests for a memoized selector.
+* Write an NgRx Effect test for a successful API response.
+* Write an NgRx Effect test for an API failure.
+* Implement undo and redo functionality for a simple list editor.
+* Convert an Observable-based state service into one that exposes Angular Signals.
+* Use toSignal() to consume an Observable in an Angular component.
+* Build a small shopping cart using Angular Signals or NgRx, including add, remove, update quantity, and calculate total operations.

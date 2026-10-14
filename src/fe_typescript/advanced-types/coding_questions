@@ -1,0 +1,30 @@
+* Create a function that accepts a union type and safely narrows it.
+* Implement a discriminated union for success and error API responses.
+* Write a generic function that returns the first element of an array.
+* Create a generic function with a constraint that requires an id property.
+* Implement a custom type guard that checks whether a value is a string.
+* Create a type-safe function that accepts only specific string literal values.
+* Implement a type that makes all properties of an object optional.
+* Implement a type that makes all properties of an object readonly.
+* Create a custom utility type that selects specific properties from an object.
+* Implement a custom utility type that excludes specified union members.
+* Write a generic function that extracts a property value using keyof.
+* Implement a type that retrieves the return type of a function.
+* Create a custom DeepPartial utility type for nested objects.
+* Implement a DeepReadonly utility type that handles nested objects and arrays.
+* Create a type that extracts keys whose property values are strings.
+* Implement a mapped type that converts all object properties to Boolean values.
+* Create a conditional type that extracts the element type of an array.
+* Implement a type that unwraps the resolved value of a Promise.
+* Create a generic API response type with success, data, and error fields.
+* Implement a type-safe event emitter using generics and mapped types.
+* Create an XOR type that allows one object shape but not both simultaneously.
+* Implement a function whose return type depends on a literal input parameter.
+* Create a type-safe configuration object using satisfies and as const.
+* Implement exhaustive checking for a discriminated union of payment methods.
+* Create a type that generates valid nested property paths for an object.
+* Implement a type-safe function wrapper that preserves the original function signature.
+* Create a function that combines two tuples while preserving their element types.
+* Implement a type-safe action map that associates event names with payload types.
+* Create a generic function that accepts a non-empty tuple of values.
+* Build a reusable TypeScript utility module containing advanced generic, conditional, mapped, and recursive types.

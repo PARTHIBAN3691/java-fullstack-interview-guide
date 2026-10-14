@@ -1,0 +1,30 @@
+* Write a Node.js function that hashes a password using bcrypt or Argon2 and verifies it during login.
+* Implement an Express login endpoint that validates credentials and returns an authentication token.
+* Create JWT authentication middleware that verifies the signature, expiration, and required claims.
+* Implement authorization middleware that restricts an endpoint to users with an administrator role.
+* Write middleware that verifies resource ownership before allowing a user to access a record.
+* Implement refresh-token rotation with token reuse detection.
+* Create a secure logout mechanism that revokes or invalidates a refresh token.
+* Write an Express middleware that validates request bodies using a schema validation library.
+* Implement parameterized SQL queries to prevent SQL injection.
+* Write a MongoDB query handler that validates and safely handles user-supplied filters.
+* Create an Express configuration that uses Helmet and an appropriate Content Security Policy.
+* Implement rate limiting for login and password-reset endpoints.
+* Write a password-reset workflow that uses cryptographically secure, single-use, expiring tokens.
+* Implement secure cookie-based authentication using HttpOnly, Secure, and appropriate SameSite settings.
+* Create CSRF protection for an Express application that uses cookie-based authentication.
+* Write middleware that configures CORS for an explicit allowlist of trusted origins.
+* Implement a utility that validates uploaded file size, extension, and allowed MIME types.
+* Create a secure file-download endpoint that prevents path traversal and checks resource authorization.
+* Write a Node.js function that safely executes an external command without interpolating untrusted input into a shell command.
+* Implement a utility that redacts passwords, tokens, and other sensitive fields from application logs.
+* Create an Express error handler that returns safe error messages without exposing internal stack traces.
+* Write a function that validates and restricts outbound URLs to reduce SSRF risk.
+* Implement a secure secret-loading utility that reads credentials from environment variables or a secret manager.
+* Create a script that checks npm dependencies for known vulnerabilities and reports high-severity findings.
+* Write a test suite that verifies authentication, authorization, and resource-ownership enforcement.
+* Implement an API key authentication middleware that securely compares credentials and supports key rotation.
+* Create a utility that encrypts and decrypts sensitive application data using authenticated encryption.
+* Implement multi-factor authentication using time-based one-time passwords (TOTP).
+* Write a security test that verifies an ordinary user cannot access administrator-only endpoints.
+* Build a secure Node.js REST API with authentication, authorization, input validation, rate limiting, secret management, security headers, audit logging, and automated security tests.

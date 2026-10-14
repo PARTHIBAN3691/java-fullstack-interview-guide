@@ -1,0 +1,30 @@
+* Your Angular application must redirect users to a login page when they access a protected route without authentication. How would you implement it?
+* A user logs in successfully but is always redirected to the dashboard instead of the originally requested page. How would you preserve the return URL?
+* An unauthorized user can access a restricted page by entering its URL directly. How would you secure the route and the backend API?
+* A route guard makes an API call on every navigation and slows down the application. How would you optimize it?
+* A child route is not displayed even though the URL changes correctly. How would you troubleshoot the router configuration?
+* A wildcard route captures valid URLs before their intended routes. How would you correct the route ordering?
+* A default redirect keeps triggering unexpected navigation. How would you investigate pathMatch and redirect configuration?
+* A component does not refresh when a route parameter changes from one ID to another. How would you handle this?
+* A resolver fails because an API returns HTTP 500. How would you prevent the user from seeing a broken page?
+* A route resolver and component initialization both request the same data. How would you eliminate the duplicate request?
+* A user loses unsaved form data after clicking a navigation link. How would you implement a CanDeactivate guard?
+* A lazy-loaded route works through in-app navigation but fails when its URL is entered directly in the browser. What would you check?
+* A nested dashboard needs separate routes for reports, users, and settings. How would you structure the route hierarchy?
+* A sidebar menu should highlight the active route and its parent. How would you implement this behavior?
+* Your application requires separate login and administration layouts. How would you configure routes and router outlets?
+* A user opens a deep link in a new tab and receives a server 404. How would you fix the production hosting configuration?
+* A user changes filters stored in query parameters, but the displayed data does not update. How would you respond to query parameter changes?
+* A page should preserve filter and pagination parameters when navigating between related routes. How would you implement this?
+* A component is recreated unnecessarily when moving between sibling routes. How would you investigate component reuse and routing configuration?
+* A custom route reuse strategy causes stale data to appear when returning to a page. How would you refresh the component state?
+* An application has hundreds of routes and loads too much JavaScript initially. How would you introduce lazy loading?
+* Some routes should be preloaded after login, but administrative routes should not be preloaded for ordinary users. How would you design the strategy?
+* A route guard returns a Promise that never resolves, leaving navigation stuck. How would you diagnose and fix it?
+* Navigation events are subscribed to in multiple components and cause duplicate analytics events. How would you centralize router event handling?
+* A route resolver and guard execute in an unexpected sequence. How would you inspect the navigation lifecycle?
+* A multi-tenant application must include a tenant identifier in the URL and enforce tenant-specific access. How would you design the routing structure?
+* A user clicks the browser Back button and loses the expected application state. How would you manage navigation state?
+* A route transition triggers repeated API calls and UI flickering. How would you investigate guards, resolvers, and component subscriptions?
+* An application needs breadcrumbs generated from nested route metadata. How would you implement a reusable breadcrumb component?
+* How would you diagnose a production issue where navigation is slow only for routes protected by multiple guards and resolvers?

@@ -1,0 +1,10 @@
+* Given a list of integers, use `Collectors.toList()` to collect all numbers greater than 10 into a new List.
+* Given a list of integers, use `Collectors.toSet()` to remove duplicate values.
+* Given a list of names, use `Collectors.joining()` to create a comma-separated string.
+* Given a list of numbers, calculate their count using `Collectors.counting()`.
+* Given a list of integers, calculate their sum using `Collectors.summingInt()`.
+* Given a list of integers, calculate their average using `Collectors.averagingInt()`.
+* Given a list of integers, find the maximum and minimum values using `Collectors.maxBy()` and `Collectors.minBy()`.
+* Given a list of words, group the words by their length using `Collectors.groupingBy()`.
+* Given a list of integers, partition the numbers into even and odd groups using `Collectors.partitioningBy()`.
+* Given a list of employees, collect all employee names into a List using `Collectors.mapping()`.

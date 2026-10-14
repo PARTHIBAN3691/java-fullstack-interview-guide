@@ -1,0 +1,30 @@
+* A production API response time increases from 200 milliseconds to 4 seconds, and the API depends on several SQL queries. How would you isolate the slow query and identify the root cause?
+* A query performs well in development but becomes slow in production with millions of records. How would you investigate the difference?
+* A frequently executed query performs a full table scan even though an index exists. How would you determine why the optimizer is not using the index?
+* A query becomes slower after adding a new index. How would you investigate the execution plan and index overhead?
+* A composite index exists, but queries filtering on its second column remain slow. How would you redesign the index strategy?
+* A query containing several JOINs consumes excessive CPU and memory. How would you identify the expensive join operation and optimize it?
+* A reporting query spends most of its time sorting and aggregating millions of rows. How would you reduce execution time?
+* A query using OFFSET and LIMIT becomes slower as users navigate to later pages. How would you redesign pagination?
+* A Spring Boot endpoint triggers hundreds of SQL statements for a single request. How would you identify and resolve the N+1 query problem?
+* Hibernate retrieves complete entity objects when the API requires only three fields. How would you reduce database and application overhead?
+* A database query runs quickly when executed manually but slowly through the Java application. How would you compare execution plans, parameters, connection acquisition, and transaction behavior?
+* An API experiences intermittent database timeouts during peak traffic, although individual queries are normally fast. How would you investigate pool saturation, lock waits, and database capacity?
+* A query becomes slow after a large batch insert changes the data distribution. How would you investigate statistics and execution-plan changes?
+* PostgreSQL chooses a nested-loop join for a query involving two large tables, causing severe latency. How would you investigate and resolve the problem?
+* A query spills sorting or hash operations to disk during peak traffic. How would you identify the cause and tune the workload safely?
+* A frequently used search query applies LOWER() to an indexed column and does not perform well. How would you optimize it without changing the search behavior?
+* A search endpoint uses LIKE '%keyword%' against a table containing millions of records. How would you improve search performance?
+* A reporting dashboard repeatedly executes the same expensive aggregation query. How would you reduce database load while managing data freshness?
+* One tenant's queries are slow while other tenants perform normally. How would you investigate data skew, indexing, and workload isolation?
+* A database migration introduces a new JOIN and causes several endpoints to become slower. How would you identify regressions and validate a fix?
+* A Java batch job updates millions of records and blocks online transactions. How would you optimize the SQL, batch size, and transaction boundaries?
+* Database CPU remains high even after adding indexes. How would you determine whether the problem is inefficient SQL, excessive concurrency, or write overhead?
+* A query performs well after the first execution but becomes slower during a later workload. How would you investigate caching, plan changes, and resource contention?
+* An application uses prepared statements, but some parameter values result in very slow execution plans. How would you diagnose parameter-sensitive planning?
+* A REST endpoint makes multiple sequential database calls that could potentially be combined. How would you reduce round trips without creating an unnecessarily complex query?
+* A query optimization reduces execution time but increases lock contention for concurrent users. How would you balance query speed and concurrency?
+* After introducing pagination, the application still loads thousands of entities into memory. How would you optimize database retrieval and Java-side processing?
+* A production release causes query latency to increase even though the SQL text has not changed. How would you compare query plans, statistics, database configuration, and workload?
+* A performance fix improves one query but slows down INSERT and UPDATE operations. How would you evaluate the overall impact of the index changes?
+* How would you investigate, fix, and prevent recurring slow-query incidents using monitoring, query logs, execution plans, and automated regression tests?

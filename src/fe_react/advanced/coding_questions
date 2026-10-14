@@ -1,0 +1,30 @@
+* Implement a custom usePrevious Hook that returns the previous value of a prop or state.
+* Implement a custom useDebounce Hook for delaying rapidly changing input values.
+* Implement a custom useThrottle Hook for limiting how frequently a function executes.
+* Create a useLocalStorage Hook that synchronizes state with browser storage.
+* Implement a custom useFetch Hook with loading, success, and error states.
+* Write a component that uses AbortController to cancel an API request during cleanup.
+* Implement a search component that prevents stale API responses from replacing newer results.
+* Create a component that uses useReducer to manage a multi-step form.
+* Implement a React.memo component and demonstrate when it prevents unnecessary renders.
+* Create a component that uses useMemo to optimize an expensive calculation.
+* Implement a callback passed to a memoized child using useCallback.
+* Build a Context provider that separates frequently changing state from rarely changing state.
+* Implement a custom Hook that subscribes to a browser event and removes the listener on cleanup.
+* Create a timer component that avoids stale closures and cleans up its interval.
+* Implement lazy loading for a route or component using React.lazy() and Suspense.
+* Create an Error Boundary class component with a fallback UI and retry option.
+* Build a modal using React portals with keyboard and focus-management support.
+* Implement a virtualized list that renders only the visible items.
+* Create an accessible autocomplete component with keyboard navigation and asynchronous suggestions.
+* Implement an optimistic update flow that restores previous state when the API request fails.
+* Build a reusable compound component for tabs with shared state and accessible interactions.
+* Implement a Higher-Order Component that checks whether a user is authorized to view a component.
+* Create a custom Hook that exposes an external store using useSyncExternalStore.
+* Implement a component that uses useTransition to keep an interface responsive during filtering.
+* Build a component that uses useDeferredValue to defer expensive rendering while typing.
+* Write tests for a custom Hook that fetches data and handles cancellation.
+* Create a test that verifies a memoized child does not re-render when its props remain unchanged.
+* Implement a reusable Error Boundary strategy for a page containing multiple independent sections.
+* Build a React component that supports server-provided initial data without causing hydration mismatches.
+* Design and implement a scalable React feature module with reusable components, custom Hooks, state management, and unit tests.

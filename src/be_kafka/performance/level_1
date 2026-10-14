@@ -1,0 +1,30 @@
+* How would you tune Kafka producer performance?
+* How would you tune Kafka consumer performance?
+* How do `batch.size` and `linger.ms` work together?
+* How would you choose an appropriate `batch.size`?
+* How would you choose an appropriate `linger.ms`?
+* How does `compression.type` affect producer throughput and latency?
+* When would you choose `lz4` over `gzip` for Kafka compression?
+* What are the performance implications of `zstd` compression?
+* How does increasing the number of partitions affect producer throughput?
+* How does increasing partitions affect consumer throughput?
+* How does `max.in.flight.requests.per.connection` affect producer performance?
+* How does `buffer.memory` affect high-throughput producers?
+* What is the impact of `max.request.size` on producer performance?
+* What is the impact of `fetch.min.bytes` on consumer performance?
+* How does `fetch.max.wait.ms` affect consumer latency?
+* How does `max.poll.records` affect consumer throughput?
+* How does `fetch.max.bytes` affect consumer performance?
+* How does `receive.buffer.bytes` affect Kafka consumer performance?
+* How does `send.buffer.bytes` affect Kafka producer performance?
+* How does consumer concurrency work in Spring Kafka?
+* How would you tune `ConcurrentKafkaListenerContainerFactory` for throughput?
+* How does batch listener mode improve Spring Kafka performance?
+* How does asynchronous Kafka production improve application throughput?
+* How does synchronous `send().get()` affect producer performance?
+* How can excessive logging reduce Kafka application performance?
+* How can inefficient JSON serialization become a Kafka bottleneck?
+* How would you measure producer latency and throughput?
+* How would you measure consumer processing throughput?
+* How can Kafka partition skew affect overall performance?
+* How would you identify whether the bottleneck is producer, broker, or consumer?

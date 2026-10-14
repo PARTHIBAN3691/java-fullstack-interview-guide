@@ -1,0 +1,30 @@
+* How would you design an end-to-end security architecture for hundreds of microservices?
+* How do you implement zero-trust security across a distributed microservices platform?
+* How do you distinguish user authentication from workload identity?
+* How do you design service-to-service authorization using OAuth 2.0 and workload identities?
+* How do you choose between JWT-based authentication and opaque-token introspection?
+* What are the security trade-offs of self-contained JWTs compared with opaque access tokens?
+* How do you revoke or invalidate JWTs before their expiration time?
+* How do you handle key rotation for JWT signing keys without interrupting production traffic?
+* How do you prevent token replay attacks?
+* How do you validate token audience and scope to prevent confused-deputy problems?
+* How do you design fine-grained authorization across multiple microservices?
+* How do you enforce tenant isolation in a multi-tenant microservices platform?
+* How do you prevent insecure direct object reference (IDOR) vulnerabilities?
+* How do you secure asynchronous messaging and Kafka events between services?
+* How do you establish workload identity and rotate certificates for mTLS?
+* How do you handle certificate expiration and revocation in a service mesh?
+* How do you secure internal APIs that are not exposed through the public API gateway?
+* How do you protect against SSRF, request smuggling, and deserialization vulnerabilities?
+* How do you design secure secrets rotation without restarting all service instances?
+* How do you protect sensitive data at rest, in transit, and in application memory?
+* How do you implement field-level encryption for personally identifiable information?
+* How do you manage encryption keys separately from encrypted data?
+* How do you prevent sensitive data from leaking through logs, traces, metrics, or error responses?
+* How do you design a secure API gateway that does not become a single point of security failure?
+* How do you defend APIs against credential stuffing, brute-force attacks, and automated abuse?
+* How do you secure microservices deployed across multiple Kubernetes clusters and regions?
+* How do you implement defense in depth across the application, network, infrastructure, and data layers?
+* How do you design secure authentication and authorization for long-running asynchronous workflows?
+* How do you handle identity propagation when a background worker processes a user-initiated request?
+* How would you conduct a threat model for a financial microservices platform and prioritize security controls?

@@ -1,0 +1,30 @@
+* Explain the internal behavior of React.memo during reconciliation.
+* How does React determine whether memoized component props have changed?
+* How does Object.is comparison affect React.memo, useMemo, and useCallback?
+* Why can deep equality checks be more expensive than re-rendering a component?
+* How would you design a custom comparison function for React.memo?
+* What correctness issues can occur when a custom comparison function ignores a prop?
+* How can memoization create stale closures in complex components?
+* How do you debug a memoized callback that uses outdated state?
+* How can dependency arrays cause unnecessary recalculations or stale values?
+* How do you optimize a component that receives frequently recreated nested objects?
+* How would you design a stable data model for a memoized component tree?
+* How can structural sharing improve memoization effectiveness?
+* How do immutable state updates support shallow comparison?
+* Why can mutating an existing object prevent React from detecting meaningful changes?
+* How do React.memo and useMemo interact during concurrent rendering?
+* Can memoization results be discarded by React, and what does that imply for correctness?
+* How does memoization interact with Suspense and interrupted rendering?
+* How does memoization behave when a component consumes Context?
+* How can splitting Context values improve memoization?
+* How do you optimize components that receive large arrays as props?
+* How would you compare memoization with virtualization for large lists?
+* How do you prevent expensive calculations from running repeatedly without introducing stale data?
+* How does the React Compiler change the role of React.memo, useMemo, and useCallback?
+* What are the trade-offs between automatic memoization and manual memoization?
+* How can memoization increase memory usage or maintenance complexity?
+* How do you identify whether a performance bottleneck comes from rendering, calculation, or DOM updates?
+* How would you profile a component tree with frequent re-renders and expensive child components?
+* How can function identity affect subscriptions, event handlers, and effect execution?
+* How do you avoid unnecessary useEffect executions caused by unstable object dependencies?
+* How would you establish a measurable performance improvement after introducing memoization?

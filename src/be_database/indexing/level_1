@@ -1,0 +1,30 @@
+* How do you create an index using SQL?
+* How do you create a composite index on multiple columns?
+* How do you create a unique index in a relational database?
+* How do you identify existing indexes on a table?
+* How do you determine whether a query is using an index?
+* How do you analyze a query execution plan?
+* How do you decide which columns should be indexed?
+* How does column selectivity influence index design?
+* How does the order of columns in a composite index affect query performance?
+* What is the leftmost-prefix rule for composite indexes?
+* How do indexes support WHERE, JOIN, ORDER BY, and GROUP BY clauses?
+* How do indexes improve queries involving range conditions?
+* Why might a database optimizer choose a table scan instead of an index scan?
+* How do stale database statistics affect index selection?
+* What is the difference between an index seek and an index scan?
+* What is a covering index, and when should you use one?
+* How do you optimize a query that filters and sorts large amounts of data?
+* How do you identify unused or duplicate indexes?
+* How do you identify missing-index opportunities?
+* What is index fragmentation, and how can it affect performance?
+* What is the difference between rebuilding and reorganizing an index?
+* How do indexes affect transaction performance and locking?
+* How do you index foreign-key columns?
+* How do you index columns used in pagination queries?
+* How do you handle indexing for columns with low cardinality?
+* How do indexes behave when queries use functions on indexed columns?
+* How do you optimize indexing for frequently updated tables?
+* How do you create and manage indexes using database migration tools such as Flyway or Liquibase?
+* How do you investigate a slow SQL query from a Java Spring Boot application?
+* How do you measure query performance before and after adding an index?

@@ -1,0 +1,20 @@
+* A Java Spring Boot application needs to upload customer documents to a private S3 bucket. How would you implement secure file uploads?
+* A user receives an `AccessDenied` error when downloading an object even though the application's IAM role has S3 read permissions. How would you investigate bucket policies, KMS permissions, and explicit denies?
+* A Java application crashes while uploading a 5 GB file. How would you resume or restart the upload without unnecessarily retransmitting all data?
+* An application generates a pre-signed URL, but the user receives an authorization error when opening it. How would you troubleshoot URL expiry, credentials, bucket policies, and encryption?
+* An S3 event triggers a Lambda function twice, causing duplicate database records. How would you implement idempotent event processing?
+* A bucket contains millions of objects, and listing them takes too long. How would you implement pagination and optimize the application's object-discovery approach?
+* A production user accidentally deletes an important object. How would you recover it and prevent future accidental deletions?
+* A company needs to retain audit documents for seven years and prevent modification during the retention period. How would you configure S3 Object Lock and retention policies?
+* A Java service must upload encrypted documents using a customer-managed KMS key. What IAM and KMS permissions are required?
+* An S3 upload succeeds, but downstream processing cannot find the object immediately through the application's workflow. How would you investigate event delivery, object keys, and application logic?
+* A company wants to reduce storage costs for files that are rarely accessed after 90 days. How would you implement and validate lifecycle transitions?
+* A Java application needs to share a private object with an external customer for 15 minutes. How would you implement time-limited access?
+* A file-upload service is receiving unexpectedly large files and malicious content. How would you enforce upload limits and introduce validation or malware scanning?
+* An application must serve millions of images globally with low latency. How would you combine S3, CloudFront, caching, and access controls?
+* A bucket in one AWS account must be accessed by a Java application in another account. How would you configure cross-account access securely?
+* A replication rule is configured, but some objects are not appearing in the destination bucket. How would you troubleshoot replication status, permissions, versioning, and KMS encryption?
+* A Java application downloads large files and frequently runs out of memory. How would you implement streaming downloads and proper resource cleanup?
+* A production service overwrites the same object from multiple requests. How would you manage concurrent updates and prevent unintended data loss?
+* A security audit discovers that an S3 bucket is publicly accessible. How would you investigate exposure, restrict access, and review previous access?
+* A data-processing application needs to ingest millions of CSV files from S3 and load them into a database. How would you design a scalable, fault-tolerant pipeline?

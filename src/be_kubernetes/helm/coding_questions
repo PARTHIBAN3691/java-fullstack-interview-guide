@@ -1,0 +1,30 @@
+* Create a basic Helm Chart structure for a Spring Boot application.
+* Write a Chart.yaml file with chart name, chart version, application version, and description.
+* Create a values.yaml file containing the image repository, image tag, replica count, and container port.
+* Write a Deployment template that reads the replica count and image details from values.yaml.
+* Create a Service template that exposes a Spring Boot application internally on port 8080.
+* Write a Helm template that creates an Ingress resource using configurable host and path values.
+* Create a Helm template that configures CPU and memory requests and limits through values.yaml.
+* Write a template that defines readiness, liveness, and startup probes using configurable values.
+* Create a Helm template that conditionally creates an Ingress only when ingress.enabled is true.
+* Write a Helm template using range to generate environment variables from a list in values.yaml.
+* Create a named helper template in _helpers.tpl that generates standard application labels.
+* Write a template using include to reuse common labels in a Deployment and Service.
+* Create a Helm template that validates a required image repository and fails when the value is missing.
+* Write a values.yaml file that supports separate development, staging, and production configurations.
+* Create a Helm template that mounts a ConfigMap into a Spring Boot container.
+* Write a Helm template that references an existing Kubernetes Secret without storing credentials directly in values.yaml.
+* Create a Helm Chart dependency configuration for a Redis subchart.
+* Write a parent chart configuration that passes custom values to a dependency.
+* Create a Helm template that uses .Release.Namespace and .Chart.Version in resource metadata.
+* Write a Helm template for a HorizontalPodAutoscaler with configurable minimum and maximum replicas.
+* Create a Helm template that supports node selectors, tolerations, and affinity settings.
+* Write a Helm hook Job that executes a pre-upgrade database migration.
+* Create a Helm test Pod that verifies connectivity to a deployed Spring Boot Service.
+* Write commands to lint, render, package, install, upgrade, and uninstall a Helm Chart.
+* Write a shell script that runs helm lint and helm template before allowing a chart to be deployed.
+* Write a shell script that performs a Helm upgrade and checks the resulting Release status.
+* Write a script that lists Helm Releases and their revisions in a specified namespace.
+* Write commands to roll back a Helm Release to a specific revision and verify the rollout.
+* Create a Helm Chart with configurable rolling update strategy, graceful termination, and health probes.
+* Build a production-ready Helm Chart for a Spring Boot microservice with Deployment, Service, ConfigMap, autoscaling, security context, and environment-specific values.

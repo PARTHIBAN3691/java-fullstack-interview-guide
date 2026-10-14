@@ -1,0 +1,36 @@
+* How would you design a centralized logging architecture for a Java microservices application?
+* How would you collect logs from applications running across multiple servers and Kubernetes clusters?
+* How would you implement structured JSON logging in a Spring Boot application?
+* Which fields should a standard application log contain in a production environment?
+* How would you configure Logback to produce JSON logs with timestamps, severity, service names, and correlation IDs?
+* How would you standardize log formats across Java, Node.js, Python, and other application technologies?
+* How would you propagate correlation IDs across REST API calls between microservices?
+* How would you preserve correlation IDs when processing asynchronous messages through Kafka or RabbitMQ?
+* How would you distinguish a request ID, correlation ID, and distributed trace ID?
+* How would you correlate application logs with distributed traces using trace IDs and span IDs?
+* How would you troubleshoot a request that passes through several microservices using centralized logs?
+* How would you configure Fluent Bit to collect container logs and forward them to Elasticsearch?
+* How would you configure Fluentd to parse, enrich, and route logs to multiple destinations?
+* When would you choose Fluent Bit over Fluentd for a Kubernetes logging deployment?
+* How would you decide whether to use Fluent Bit, Fluentd, or Logstash in a log ingestion pipeline?
+* How would you configure Logstash to parse JSON logs and normalize their fields?
+* How would you handle malformed log records without interrupting the entire ingestion pipeline?
+* How would you design Elasticsearch index mappings for application logs?
+* How would you choose index naming conventions and index lifecycle policies for centralized logging?
+* How would you troubleshoot logs that are successfully collected but do not appear in Kibana?
+* How would you configure Kibana dashboards and filters for application errors and latency-related events?
+* How would you manage log retention differently for application, security, and audit logs?
+* How would you configure log rotation to prevent local disk exhaustion?
+* How would you handle logs generated faster than the logging pipeline can ingest them?
+* How would you reduce log ingestion costs without losing important production diagnostics?
+* How would you implement different log levels for development, testing, and production?
+* How would you prevent excessive debug logging from affecting application performance?
+* How would you mask passwords, tokens, email addresses, and other sensitive fields before logs are exported?
+* How would you ensure sensitive data is masked before it reaches a centralized logging platform?
+* How would you restrict access to logs containing security-sensitive information?
+* How would you design a cloud-native logging solution for Kubernetes workloads?
+* How would you collect logs from short-lived containers that terminate before a log collector reads their output?
+* How would you troubleshoot missing logs after a Kubernetes pod restart?
+* How would you implement log enrichment with environment, namespace, pod, service, and deployment metadata?
+* How would you monitor the health of log collectors and detect dropped or delayed logs?
+* How would you design alerts based on log patterns, error counts, and application exceptions?

@@ -1,0 +1,30 @@
+* How would you design centralized secrets management for hundreds of Java microservices using Azure Key Vault?
+* How would you design a secure credential-management strategy across Dev, QA, UAT, and Production?
+* How would you eliminate client secrets and database passwords from application configuration files?
+* How would you design authentication for Java applications using managed identities and least-privilege access?
+* How would you choose between system-assigned managed identities, user-assigned managed identities, and service principals?
+* How would you design Key Vault access for applications deployed across multiple Azure subscriptions and tenants?
+* How would you isolate secrets between different applications and business units?
+* How would you design a zero-downtime secret-rotation mechanism for a production Spring Boot application?
+* How would you handle secret rotation when an application uses connection pools that retain old database credentials?
+* How would you prevent an application from continuing to use an expired or revoked secret from its local cache?
+* How would you design caching for frequently accessed secrets while maintaining security and rotation requirements?
+* How would you handle Key Vault throttling when hundreds of application instances retrieve secrets simultaneously?
+* How would you design retry, timeout, and circuit-breaker behavior for Key Vault calls?
+* How would you prevent Key Vault outages from causing widespread application failures?
+* How would you design a secure fallback strategy when Key Vault is temporarily unavailable?
+* How would you protect Key Vault against unauthorized access from compromised application instances?
+* How would you design network isolation using private endpoints, DNS, and firewall rules?
+* How would you implement certificate lifecycle management and automated certificate renewal?
+* How would you design encryption workflows using Key Vault keys without exposing private key material to applications?
+* How would you decide between Key Vault cryptographic operations and application-side encryption?
+* How would you design key rotation for encrypted database fields without losing access to existing data?
+* How would you implement envelope encryption using Azure Key Vault and data-encryption keys?
+* How would you recover a deleted secret or vault while maintaining application availability?
+* How would you design disaster recovery for Key Vault secrets, keys, and certificates?
+* How would you audit and investigate suspicious secret-access activity in a production environment?
+* How would you enforce governance and compliance policies across multiple Key Vault instances?
+* How would you integrate Key Vault with Azure DevOps without exposing secrets in pipeline logs or artifacts?
+* How would you design secure secrets delivery to Java workloads running in AKS?
+* How would you migrate from a legacy secrets-management system to Azure Key Vault without service interruption?
+* How would you design automated secret-expiration detection and rotation workflows for enterprise applications?

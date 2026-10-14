@@ -1,0 +1,30 @@
+* A Fetch API request works locally but fails after deployment. How would you investigate the problem?
+* An API request returns a 404 response, but your application does not enter the catch block. Why might this happen?
+* A webpage sends multiple requests, and older responses overwrite newer results. How would you fix this?
+* A user clicks a search button repeatedly, causing duplicate API requests. How would you prevent unnecessary requests?
+* A website must cancel an API request when the user navigates away. Which Web API would you use?
+* A browser blocks a cross-origin API request. How would you diagnose and resolve the issue?
+* Data stored in localStorage is missing in private browsing mode. How would you handle this situation?
+* A web application needs to synchronize preferences across multiple tabs. Which browser APIs could help?
+* A location-based application cannot obtain the user's coordinates. What would you check?
+* A geolocation feature works over HTTPS but fails on an insecure HTTP page. Why?
+* A user denies camera permission during a video call. How should the application respond?
+* A video call continues accessing the camera after the user leaves the page. How would you fix it?
+* A browser tab consumes too much CPU while processing large datasets. How could Web Workers help?
+* A Web Worker receives a large array of data and processing becomes slow. How could transferable objects help?
+* A webpage must work offline after the user visits it once. Which Web APIs would you combine?
+* A Service Worker continues serving outdated content after a deployment. How would you troubleshoot the cache strategy?
+* A real-time dashboard loses its WebSocket connection when the network changes. How would you recover?
+* A WebSocket server sends messages faster than the UI can render them. How would you manage the message queue?
+* A page needs to load images only when users scroll near them. Which API would you use?
+* A responsive component must react when its container changes size rather than when the window resizes. How would you implement it?
+* A browser blocks a notification request. How would you handle permissions and user interaction?
+* A user copies sensitive content using the Clipboard API, but access is denied. What would you investigate?
+* A file upload feature must validate file type and size before uploading. Which browser APIs would you use?
+* A large canvas animation makes the user interface unresponsive. How would you optimize rendering?
+* A single-page application must support browser back and forward navigation without full page reloads. How would you use the History API?
+* A page performs expensive processing even when hidden in a background tab. How could the Page Visibility API help?
+* A website needs to detect when an element becomes visible to trigger analytics. Which API would you choose?
+* A feature works in one browser but is unsupported in another. How would you implement feature detection and a fallback?
+* A browser permission changes while an application is running. How should the application respond?
+* Your application depends on several Web APIs with different browser support levels. How would you test and manage compatibility?

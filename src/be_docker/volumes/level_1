@@ -1,0 +1,30 @@
+* How do you configure a named volume for a PostgreSQL container?
+* How do you persist MySQL database files using a Docker volume?
+* How do you configure multiple volumes for a single container?
+* How do you mount a volume using Docker Compose and reference it from multiple services?
+* How do you make a volume read-only inside a container?
+* How do you troubleshoot a volume mount that does not appear at the expected container path?
+* How do you investigate permission-denied errors when writing to a mounted volume?
+* How do you configure a bind mount for a Spring Boot application during development?
+* How do you persist application-generated files across container restarts?
+* How do you share log files between a Java container and the host machine?
+* How do you configure volume mounts using the long syntax in Docker Compose?
+* How do you use Docker volume inspection to identify a volume's mount point and driver?
+* How do you back up data stored in a named volume?
+* How do you restore a volume from a backup archive?
+* How do you migrate data from one Docker volume to another?
+* How do you safely remove an unused volume without deleting required application data?
+* How do you mount a volume into a container that runs as a non-root user?
+* How do you handle file ownership differences between a Linux host and a container?
+* How do you use a volume to persist PostgreSQL data when recreating a container?
+* How do you configure separate volumes for database data and application uploads?
+* How do you troubleshoot a Docker Compose volume that appears empty inside a container?
+* How do you distinguish a named-volume mount from a bind mount when inspecting a container?
+* How do you prevent application containers from modifying configuration files mounted from the host?
+* How do you configure a volume for a Spring Boot application that generates PDF or report files?
+* How do you share a common directory between multiple containers without creating conflicting writes?
+* How do you use tmpfs mounts for temporary files that should not persist on disk?
+* How do you manage volume configuration across development, testing, and production environments?
+* How do you identify whether a volume is consuming excessive disk space?
+* How do you handle volume cleanup in a CI/CD pipeline?
+* How do you validate that database data survives container deletion and recreation?

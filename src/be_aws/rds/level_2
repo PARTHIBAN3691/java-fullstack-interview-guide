@@ -1,0 +1,20 @@
+* How would you design a highly available RDS architecture for a mission-critical Java microservices platform?
+* How would you choose between Multi-AZ deployments, read replicas, and cross-Region replicas for availability and disaster recovery?
+* How would you design a database scaling strategy for an application with rapidly growing read and write traffic?
+* How would you diagnose connection exhaustion when hundreds of Spring Boot instances connect to a single RDS database?
+* How would you size HikariCP connection pools across multiple application instances without overwhelming RDS?
+* How would you design a failover strategy that minimizes the impact of an RDS failover on active Java transactions?
+* How should a Java application handle stale connections and transient errors after an RDS failover?
+* How would you optimize slow SQL queries using execution plans, indexes, Performance Insights, and CloudWatch metrics?
+* How would you troubleshoot increasing database latency when CPU utilization remains relatively low?
+* How would you design zero-downtime database schema migrations for a Java application deployed across multiple versions?
+* How would you implement connection pooling and transaction management when using Spring Boot and RDS Proxy?
+* How would you securely rotate RDS credentials without restarting every Java application instance?
+* How would you design encryption, auditing, access control, and network isolation for sensitive production data in RDS?
+* How would you implement cross-Region disaster recovery and measure recovery time objective (RTO) and recovery point objective (RPO)?
+* How would you prevent accidental deletion of production databases and snapshots?
+* How would you plan storage autoscaling and avoid storage exhaustion during peak workloads?
+* How would you investigate deadlocks, long-running transactions, and lock contention in a Spring Boot application?
+* How would you migrate a large on-premises database to RDS with minimal downtime and data inconsistency?
+* How would you optimize RDS costs without compromising availability, performance, or recovery requirements?
+* How would you choose between Amazon RDS, Amazon Aurora, and a self-managed database on EC2 for a high-throughput application?

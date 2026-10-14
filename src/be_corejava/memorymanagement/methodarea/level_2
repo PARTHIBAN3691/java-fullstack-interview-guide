@@ -1,0 +1,21 @@
+
+* Explain the distinction between the JVM specification's Method Area and the HotSpot JVM's concrete memory-management implementation.
+* How does the JVM represent class metadata after a class is loaded and linked?
+* How are the runtime constant pool and the class file's constant pool related?
+* How does the JVM resolve symbolic references from a class file into runtime references?
+* How does class initialization interact with metadata stored for a class?
+* How does the lifecycle of class metadata depend on the defining class loader?
+* What conditions must be satisfied before a class loader and its classes become eligible for unloading?
+* Why can a class remain loaded even when no application code directly references its instances?
+* How can a custom class loader cause a memory leak involving class metadata?
+* How can repeated class generation by proxy libraries increase metadata-related memory usage?
+* How would you distinguish a Method Area-related memory problem from an ordinary Java heap memory leak?
+* How can Metaspace exhaustion occur when the Java heap still has sufficient free memory?
+* What is compressed class space, and how does it relate to HotSpot's metadata storage?
+* How does the JVM manage runtime constant pools for classes loaded by different class loaders?
+* How can class unloading and garbage collection interact without guaranteeing immediate metadata reclamation?
+* Why is it inaccurate to claim that all static fields are physically stored in the Method Area in every JVM implementation?
+* How would you investigate increasing loaded-class counts and Metaspace consumption in a long-running application?
+* How can class-loading logs, class-loader statistics, and heap dumps complement each other during a metadata leak investigation?
+* How would you explain the differences among the Method Area, Metaspace, PermGen, heap, and JVM stack in a technical interview?
+* How might changes in JVM implementation affect the physical location of data while preserving the JVM specification's logical memory model?

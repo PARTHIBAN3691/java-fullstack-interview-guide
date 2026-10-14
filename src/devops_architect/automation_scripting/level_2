@@ -1,0 +1,112 @@
+
+**Bash**
+* How would you design a robust Bash automation framework with configuration loading, structured logging, retries, and reusable modules?
+* How do you reason about `set -e` behavior in functions, command substitutions, conditionals, and pipelines?
+* How would you safely parallelize processing of thousands of files while limiting resource usage?
+* How do you prevent race conditions when multiple Bash processes update the same state or file?
+* How would you implement locking, timeout handling, signal propagation, and reliable cleanup for a critical script?
+* How do you secure a Bash script against command injection, unsafe path expansion, and untrusted input?
+
+**Python**
+* How would you design a concurrent automation engine using threads, processes, or asynchronous I/O?
+* How do you ensure cancellation, timeout propagation, and resource cleanup across a multi-stage automation workflow?
+* How would you build a durable job executor that can resume after a process or host failure?
+* How do you design retry behavior when a request may have succeeded remotely but its response was lost?
+* How would you build a plugin-based automation framework with versioned interfaces and isolated dependencies?
+* How do you test concurrency, race conditions, failure recovery, and deterministic behavior in automation code?
+
+**PowerShell**
+* How would you design a PowerShell automation module for large-scale administration across multiple servers?
+* How do you control concurrency and throttle remote operations while preserving reliable error reporting?
+* How would you implement resumable bulk operations with checkpointing?
+* How do you secure remoting, delegated credentials, and privileged execution?
+* How would you design a PowerShell workflow that supports dry-run mode, approval gates, and rollback?
+* How do you troubleshoot memory growth, session leaks, and intermittent failures in long-running PowerShell automation?
+
+**Shell Scripting**
+* How would you build a cross-platform shell automation library with consistent interfaces and error semantics?
+* How do you ensure atomic file updates and recover safely from interruption during a critical operation?
+* How would you design a script that coordinates changes across several hosts without leaving inconsistent state?
+* How do you prevent deadlocks and stale locks in distributed operational scripts?
+* How would you harden scripts against untrusted environment variables, unsafe temporary directories, and privilege escalation?
+* How do you determine when shell scripting is no longer appropriate and a workflow engine or general-purpose language is needed?
+
+**CLI Automation**
+* How would you build a resilient automation layer over multiple cloud provider CLIs with different authentication and output models?
+* How do you handle asynchronous CLI operations where submission succeeds but the final resource state is unknown?
+* How would you design rate-aware parallel execution across thousands of resources?
+* How do you prevent partial execution from leaving cloud resources in an inconsistent state?
+* How do you detect CLI version incompatibilities and manage reproducible execution environments?
+* How would you implement policy checks and approval gates before high-impact CLI operations?
+
+**API Automation**
+* How would you design a reliable API orchestration workflow spanning multiple services with independent failure modes?
+* How do you handle ambiguous outcomes, idempotency keys, retries, and duplicate requests?
+* How would you build a rate-limit-aware scheduler across APIs with different quotas?
+* How do you manage token rotation, credential revocation, and authorization failures during long-running workflows?
+* How would you design compensation actions when a multi-step API workflow cannot use a single transaction?
+* How do you maintain API automation compatibility across schema evolution and breaking changes?
+
+**Infrastructure Automation**
+* How would you design a drift-detection system that distinguishes intentional changes from unauthorized drift?
+* How do you coordinate infrastructure changes across dependent environments while avoiding state corruption?
+* How do you recover from partially applied changes when the provisioning tool reports an uncertain outcome?
+* How would you implement policy-as-code checks for network exposure, encryption, identity permissions, and resource tagging?
+* How do you design automated infrastructure changes to support blast-radius limits and staged rollouts?
+* How do you handle concurrent infrastructure changes from multiple pipelines or operators?
+
+**Deployment Automation**
+* How would you design progressive delivery using canary analysis, automated promotion, and rollback criteria?
+* How do you determine whether a failed deployment should be rolled back, paused, or allowed to continue?
+* How would you coordinate application, database, and infrastructure changes when backward compatibility is required?
+* How do you ensure deployment safety when a rollback cannot reverse data migrations?
+* How would you design artifact provenance, signature verification, and supply-chain security checks?
+* How do you prevent conflicting deployments across multiple regions and services?
+
+**Operational Automation**
+* How would you build an automation platform that executes operational tasks across thousands of hosts?
+* How do you design safe remediation when monitoring signals are noisy or contradictory?
+* How would you prioritize automation jobs under resource constraints and incident conditions?
+* How do you ensure that a remediation action is not more disruptive than the original failure?
+* How would you build reliable execution records and evidence for regulated operational changes?
+* How do you measure automation's effect on mean time to recovery, toil, and incident recurrence?
+
+**Scheduled Jobs**
+* How would you design a distributed scheduler that guarantees controlled execution despite leader changes and worker failures?
+* How do you handle at-least-once job execution when exactly-once side effects are not inherently available?
+* How would you implement durable scheduling, leases, heartbeats, and recovery of abandoned jobs?
+* How do you prevent a large number of delayed jobs from overwhelming the system after an outage?
+* How would you design dependency-aware scheduling across jobs with different SLAs?
+* How do you maintain schedule correctness across time-zone changes, clock skew, and daylight-saving transitions?
+
+**Event-Driven Automation**
+* How would you design event processing that remains reliable during bursts, consumer failures, and downstream outages?
+* How do you handle duplicate, out-of-order, delayed, and permanently unprocessable events?
+* How would you design replayable event automation without repeating irreversible side effects?
+* How do you control backpressure and prevent retry storms across dependent systems?
+* How would you implement event correlation, deduplication, and causal tracing across distributed workflows?
+* How do you govern event schemas and versioned consumers without breaking existing automations?
+
+**Self-Healing Automation**
+* How would you design a self-healing system that avoids oscillation, cascading remediation, and repeated failed recovery?
+* How do you decide when an automated remediation must stop and escalate to a human?
+* How would you use SLOs, error budgets, and blast-radius limits to constrain remediation?
+* How do you prevent multiple controllers from fighting over the same resource?
+* How would you safely automate recovery in a multi-region service when the root cause is uncertain?
+* How do you prove that self-healing actions improve availability rather than mask recurring defects?
+
+**Runbooks**
+* How would you design a versioned, executable runbook platform with approvals, audit logs, and controlled permissions?
+* How do you support conditional branching, compensation, checkpointing, and recovery after partial execution?
+* How would you prevent runbooks from executing against the wrong account, region, cluster, or environment?
+* How do you validate that runbooks remain correct as system architecture and operational dependencies evolve?
+* How would you design safe automated execution for incident response while preserving human control over risky actions?
+* How do you measure runbook reliability, operator usability, and successful recovery rates?
+
+**Automation Governance**
+* How would you establish a governance model for centrally managed automation while allowing teams to innovate independently?
+* How do you classify automation risk and determine required testing, approval, and execution controls?
+* How would you enforce separation of duties, just-in-time privileges, and traceable production execution?
+* How do you design policy-as-code controls that block unsafe automation without preventing legitimate operations?
+* How would you manage the lifecycle of deprecated, unowned, vulnerable, or duplicated automation assets?
+* How do you demonstrate compliance and reconstruct exactly what an automation changed during an incident?

@@ -1,0 +1,126 @@
+
+**Horizontal Scaling**
+* What is horizontal scaling?
+* What is the difference between horizontal and vertical scaling?
+* What are the advantages and disadvantages of horizontal scaling?
+* Why should a horizontally scaled application avoid storing session state only in local memory?
+* What challenges can arise when multiple application instances process requests concurrently?
+
+**Vertical Scaling**
+* What is vertical scaling?
+* Which resources can be increased through vertical scaling?
+* What are the limitations of vertical scaling?
+* When would you choose vertical scaling over horizontal scaling?
+* What happens when a server reaches its maximum available CPU or memory capacity?
+
+**Auto Scaling**
+* What is auto scaling?
+* What is the difference between reactive and scheduled auto scaling?
+* Which metrics are commonly used to trigger auto scaling?
+* What is scale-out versus scale-in?
+* Why should scale-in operations be handled carefully?
+
+**Load Balancing**
+* What is load balancing, and why is it needed?
+* What is the difference between Layer 4 and Layer 7 load balancing?
+* What are round-robin, least-connections, and weighted load-balancing algorithms?
+* What is a health check in a load balancer?
+* What is session persistence, or sticky-session routing?
+
+**Connection Pooling**
+* What is connection pooling?
+* Why do Java applications use database connection pools?
+* What happens when all connections in a pool are occupied?
+* What is the difference between maximum pool size and minimum idle connections?
+* Why is opening a new database connection for every request inefficient?
+
+**Caching**
+* What is caching, and how does it improve performance?
+* What is the difference between cache hit and cache miss?
+* What are cache-aside, write-through, and write-behind strategies?
+* What is cache invalidation?
+* What is the difference between in-memory caching and distributed caching?
+
+**CDN**
+* What is a Content Delivery Network (CDN)?
+* How does a CDN reduce latency?
+* What types of content are commonly served through a CDN?
+* What is edge caching?
+* What is the difference between a browser cache and a CDN cache?
+
+**Distributed Caching**
+* What is distributed caching?
+* Why would an application use Redis or another distributed cache?
+* What is a cache key?
+* What is a cache time-to-live (TTL)?
+* What challenges arise when cached data is shared across multiple application instances?
+
+**Queue-Based Scaling**
+* What is queue-based scaling?
+* How does a message queue help separate producers from consumers?
+* What is the difference between a message queue and a synchronous API call?
+* How can queue depth be used to trigger consumer scaling?
+* What is a dead-letter queue?
+
+**Asynchronous Processing**
+* What is asynchronous processing?
+* How does asynchronous processing differ from synchronous processing?
+* What are the benefits and drawbacks of asynchronous execution?
+* What is the difference between a thread and a message consumer?
+* Why should long-running tasks often be moved out of the HTTP request path?
+
+**Backpressure**
+* What is backpressure?
+* Why is backpressure important in high-throughput systems?
+* What is a bounded queue?
+* What happens when a producer generates data faster than a consumer can process it?
+* How does backpressure differ from rate limiting?
+
+**Capacity Planning**
+* What is capacity planning?
+* Which metrics are important when estimating application capacity?
+* What is the difference between current utilization and maximum sustainable capacity?
+* Why should capacity planning account for traffic growth?
+* What is headroom, and why is it important?
+
+**Performance Testing**
+* What is performance testing?
+* What is the difference between functional and performance testing?
+* Which performance metrics should be measured for a REST API?
+* What is throughput?
+* What are p50, p95, and p99 response latencies?
+
+**Load Testing**
+* What is load testing?
+* How is load testing different from stress testing?
+* Why should load tests use realistic request patterns?
+* What is concurrent-user load versus request-rate load?
+* What is a baseline performance test?
+
+**Stress Testing**
+* What is stress testing?
+* Why do systems undergo stress testing beyond expected capacity?
+* What is a breaking point?
+* What is graceful degradation during a stress test?
+* Why should recovery after a stress test also be measured?
+
+**Soak Testing**
+* What is soak testing?
+* Why is soak testing also called endurance testing?
+* What kinds of problems can appear only after hours of continuous load?
+* How can memory leaks affect long-running applications?
+* Which metrics should be monitored during a soak test?
+
+**Bottleneck Analysis**
+* What is a performance bottleneck?
+* How can CPU utilization indicate a bottleneck?
+* How can high memory usage affect application performance?
+* What is thread contention?
+* Why should developers measure before optimizing?
+
+**Latency Optimization**
+* What is latency?
+* What is the difference between latency and throughput?
+* What is the difference between average latency and percentile latency?
+* How can database indexes improve response time?
+* How can caching reduce latency?

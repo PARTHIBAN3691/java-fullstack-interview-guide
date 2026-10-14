@@ -1,0 +1,20 @@
+* A company maintains a public Java interface implemented by hundreds of classes. A new optional operation must be added without forcing every implementation to change. How would you use a default method?
+* A class implements two interfaces that both define a default method named `log()`. How would you resolve the compilation error?
+* A framework interface introduces a new default method, but one client application already has a superclass method with the same signature. Which implementation will be used and why?
+* A payment-processing system has multiple payment provider interfaces that define the same default method for transaction validation. How would you design the interface hierarchy to avoid ambiguity?
+* A logging library wants to add a default method for structured logging while preserving compatibility with existing implementations. What considerations would you evaluate?
+* A subinterface needs to customize the default behavior of its parent interface. How would you override the inherited default method?
+* A class implements a parent interface and its child interface, both of which define a default method with the same signature. How does Java determine which implementation to use?
+* Two teams independently add the same default method signature to separate interfaces. A third team's class implements both interfaces. How would you resolve the conflict cleanly?
+* A developer tries to call an interface default method using `super.methodName()` and receives a compilation error. How would you correct the implementation?
+* A legacy class inherits a concrete method from a superclass and implements an interface with a default method of the same signature. Which method takes precedence?
+* A reusable validation interface needs a default method that invokes a required abstract method implemented by each class. How would you design this contract?
+* A Java library needs to add a new method to an existing interface without breaking older implementations. What role can a default method play, and what compatibility risks remain?
+* A team has duplicated utility behavior across many classes implementing the same interface. How would you evaluate whether moving the behavior into a default method is appropriate?
+* An interface hierarchy contains several levels of inheritance and multiple default methods. How would you determine which implementation is selected at runtime?
+* A default method is overridden in an implementing class, but the original interface implementation must still be invoked. How would you achieve this?
+* A functional interface needs to provide a reusable default helper method while remaining usable with lambda expressions. How would you design it?
+* A framework's default method contains business logic that behaves differently for different implementations. How would you decide whether to retain the default method or move the logic into separate classes?
+* A team wants to add a default method that depends on internal implementation details not exposed by the interface. What design issues should be considered?
+* A library upgrade introduces a default method that conflicts with an existing implementation hierarchy. How would you diagnose the issue and plan a compatible fix?
+* A developer adds several default methods to avoid creating a separate service class. How would you review this design from a maintainability and separation-of-concerns perspective?

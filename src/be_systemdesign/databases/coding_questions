@@ -1,0 +1,30 @@
+* Write a SQL query to retrieve the second-highest salary from an employee table.
+* Write a SQL query to find duplicate records based on an email column.
+* Write a SQL query to retrieve the top three highest-paid employees in each department.
+* Write a SQL query to calculate a running total of transactions for each account.
+* Write a SQL query to find customers who have not placed any orders.
+* Write a SQL query to paginate a large dataset using LIMIT and OFFSET.
+* Write a SQL query to implement keyset pagination using an indexed column.
+* Write a SQL query to update a record only when its version number matches an expected value.
+* Write a SQL transaction that transfers money between two accounts atomically.
+* Write a SQL query that prevents an account balance from becoming negative during a withdrawal.
+* Write a SQL query using SELECT FOR UPDATE to demonstrate pessimistic locking.
+* Implement optimistic locking in Java using a version field and Spring Data JPA.
+* Write a Java service method that executes multiple database operations in one transaction.
+* Implement a retry mechanism for transient database failures with a bounded retry count.
+* Write a Java program using JDBC PreparedStatement to execute a parameterized query safely.
+* Implement connection pooling in a Spring Boot application using configuration properties.
+* Write a Spring Data JPA repository method that retrieves records using pagination and sorting.
+* Implement a database-backed idempotency mechanism for payment requests.
+* Write a SQL schema for an order management system with customers, orders, and order items.
+* Design and implement a normalized schema for a banking ledger with accounts and immutable transactions.
+* Write a SQL query to reconcile account balances against ledger entries.
+* Implement a transactional outbox table and a Spring service that writes business data and an event record atomically.
+* Write a Java batch job that processes database records in chunks without loading the entire dataset into memory.
+* Implement a database migration that adds a nullable column and later makes it mandatory safely.
+* Write a SQL query to partition transaction records by transaction date.
+* Implement a Java strategy that routes customer records to shards based on a stable hash of customer ID.
+* Write a Java program that simulates primary-replica replication with configurable lag.
+* Implement a database health check and expose the result through a Spring Boot Actuator endpoint.
+* Write an integration test using Testcontainers to verify transaction rollback behavior.
+* Implement a reconciliation job that compares records across two databases and reports missing or mismatched data.

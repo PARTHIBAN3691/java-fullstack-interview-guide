@@ -1,0 +1,30 @@
+* How do you secure REST APIs in a Spring Boot microservices application?
+* How do you implement authentication using Spring Security?
+* How do you configure JWT-based authentication in Spring Boot?
+* How do you validate JWT signatures, expiration, issuer, and audience?
+* How do you implement role-based authorization using Spring Security?
+* How do you implement method-level security using @PreAuthorize?
+* How do you configure an OAuth 2.0 resource server in Spring Boot?
+* What is the difference between an OAuth 2.0 authorization server and a resource server?
+* How do you implement OAuth 2.0 client credentials flow for service-to-service communication?
+* How do you implement authorization code flow with PKCE for user-facing applications?
+* How do you integrate OpenID Connect with a Spring Boot application?
+* How do you securely manage access tokens and refresh tokens?
+* How do you handle token expiration and refresh failures?
+* How do you implement centralized authentication using an identity provider?
+* How do you secure communication between microservices using mTLS?
+* How do you configure TLS for service-to-service communication?
+* How do you securely propagate user identity across downstream service calls?
+* How do you prevent clients from spoofing identity headers?
+* How do you secure APIs using an API gateway?
+* How do you implement rate limiting and throttling to prevent abuse?
+* How do you configure CORS securely for a Spring Boot REST API?
+* When should CSRF protection be enabled or disabled in a REST API?
+* How do you prevent SQL injection in Java applications?
+* How do you validate and sanitize incoming request data?
+* How do you protect sensitive information in application logs?
+* How do you manage secrets using environment variables or a dedicated secrets manager?
+* How do you securely store passwords using a password-hashing algorithm?
+* How do you implement audit logging for authentication and authorization events?
+* How do you scan Java dependencies for known security vulnerabilities?
+* How do you test authentication, authorization, and access-control rules?

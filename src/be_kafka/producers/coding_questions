@@ -1,0 +1,30 @@
+* Write a Java Kafka producer that sends a simple String message to a topic.
+* Write a Java Kafka producer that sends a JSON object to Kafka.
+* Write a Java producer using `ProducerRecord` with a key and value.
+* Write a Java producer that sends messages asynchronously using a callback.
+* Write a Java producer that sends messages synchronously and handles exceptions.
+* Write Java code to print the partition and offset returned after sending a message.
+* Write a Spring Boot Kafka producer using `KafkaTemplate`.
+* Write a Spring Boot producer that sends messages with a customer ID as the Kafka key.
+* Write Java code to configure `bootstrap.servers`, serializers, and `acks`.
+* Write Java code to configure a producer for high throughput.
+* Write Java code to configure a producer for low latency.
+* Write a Java producer with custom `batch.size` and `linger.ms` settings.
+* Write a Java producer with `lz4` compression enabled.
+* Write a Java producer that retries failed Kafka sends.
+* Write Java code to configure an idempotent Kafka producer.
+* Write a Java program that detects and handles `TimeoutException` during message publishing.
+* Write Java code that handles producer callback failures and logs the failed record.
+* Write a custom Kafka `Partitioner` that routes records based on customer ID.
+* Write a custom Kafka `Partitioner` that distributes records based on region.
+* Write Java code to measure Kafka producer throughput in messages per second.
+* Write Java code to measure end-to-end producer send latency.
+* Write a Spring Boot Kafka producer with configurable retry and backoff settings.
+* Write a Spring Kafka producer that publishes events asynchronously using `KafkaTemplate`.
+* Write Java code to flush all pending Kafka producer records before application shutdown.
+* Write Java code that gracefully closes a Kafka producer.
+* Write a transactional Kafka producer that publishes multiple records atomically.
+* Write a Spring Boot Kafka producer that uses Kafka transactions.
+* Write Java code that publishes a database event using an outbox-style producer design.
+* Write a Java test using an embedded Kafka broker to verify producer behavior.
+* Write a Spring Boot integration test that verifies successful and failed Kafka producer sends.

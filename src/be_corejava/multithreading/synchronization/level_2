@@ -1,0 +1,21 @@
+
+* What is the difference between synchronizing an entire method and synchronizing only a critical section?
+* What is the difference between `synchronized(this)` and `synchronized(MyClass.class)`?
+* Can a thread acquire the same intrinsic lock multiple times?
+* What is reentrant synchronization in Java?
+* What happens when an exception occurs inside a synchronized block?
+* When is a monitor lock released by the JVM?
+* Can a thread acquire a lock on a null reference?
+* What happens when a thread tries to enter a synchronized block whose lock is already held by another thread?
+* Can a synchronized method call another synchronized method on the same object?
+* What is the difference between synchronization and atomicity?
+* What is the difference between synchronization and the `volatile` keyword?
+* Does declaring a reference `volatile` make the referenced object's methods thread-safe?
+* What is the happens-before relationship in Java concurrency?
+* How does synchronization guarantee memory visibility between threads?
+* What is lock contention, and how does it affect application performance?
+* What is the difference between thread safety and immutability?
+* How can you make a mutable class thread-safe using synchronization?
+* Why should you avoid synchronizing on publicly accessible objects or string literals?
+* What is the difference between synchronized collections and concurrent collections?
+* Can synchronization be used to protect multiple shared variables that must be updated together?

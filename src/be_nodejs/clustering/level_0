@@ -1,0 +1,30 @@
+* What is clustering in Node.js?
+* Why is clustering used in Node.js applications?
+* What is the Node.js cluster module?
+* How do you import the cluster module in Node.js?
+* What is the difference between the primary process and a worker process?
+* How do you check whether a process is the primary process?
+* How do you create a worker process using the cluster module?
+* What is the role of the primary process in clustering?
+* What is the role of a worker process in clustering?
+* How can you determine the number of CPU cores available in Node.js?
+* Why is Node.js clustering useful for CPU-intensive workloads?
+* How does clustering help handle multiple HTTP requests?
+* Can multiple worker processes share the same port?
+* What happens when a worker process starts?
+* What is the purpose of the cluster.fork() method?
+* What is the purpose of the cluster.isPrimary property?
+* What is the purpose of the cluster.workers property?
+* What is the purpose of the worker.id property?
+* How do you listen for the online event of a worker?
+* What is the difference between clustering and creating child processes?
+* What happens when a worker process exits?
+* How can you detect a worker process failure?
+* What is the difference between a worker process and a thread?
+* Does each Node.js worker have its own event loop?
+* Does each worker process have its own memory space?
+* Can workers communicate with the primary process?
+* What is the purpose of the worker.send() method?
+* How do you send a message from a worker to the primary process?
+* What are the basic steps to implement clustering in Node.js?
+* What are the limitations of Node.js clustering?

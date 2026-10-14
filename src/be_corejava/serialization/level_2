@@ -1,0 +1,21 @@
+
+* Explain the internal process of Java object serialization, including object graphs, class descriptors, and reference handles.
+* How does Java serialization preserve object identity when the same object is referenced multiple times?
+* How does `serialVersionUID` influence compatibility between serialized data and an updated class?
+* What compatibility problems can occur when fields are added, removed, or changed in a serializable class?
+* What happens when a serialized object is deserialized using a class with an incompatible `serialVersionUID`?
+* How does the serialization mechanism handle inheritance hierarchies and non-serializable superclasses?
+* How would you implement custom serialization for a class containing sensitive fields?
+* What are serialization hooks, and in what order can `writeReplace()`, `writeObject()`, `readObject()`, and `readResolve()` participate in serialization?
+* How can `readResolve()` be used to preserve Singleton identity during deserialization?
+* What are serialization proxy patterns, and why can they be safer than directly serializing an object's internal state?
+* What is the difference between Java native serialization and JSON or Protocol Buffers serialization?
+* Why is native Java serialization often discouraged for long-lived distributed APIs?
+* What security risks are associated with deserializing untrusted data?
+* What is a deserialization gadget chain, and how can it lead to remote code execution?
+* What is the purpose of `ObjectInputFilter`, and how can it restrict deserialization?
+* How can you restrict deserialization by class, object graph depth, reference count, and stream size?
+* What happens if a serializable object contains a non-serializable member that cannot be reconstructed automatically?
+* How would you serialize an immutable class while preserving its invariants during deserialization?
+* What performance and memory considerations arise when serializing large object graphs?
+* How would you design a backward-compatible serialization strategy for a distributed application with independently deployed services?

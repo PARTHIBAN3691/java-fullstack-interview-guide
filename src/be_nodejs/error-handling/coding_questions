@@ -1,0 +1,30 @@
+* Write a JavaScript function that handles a synchronous error using try...catch.
+* Create a custom error class that extends the built-in Error class.
+* Write an async function that handles a rejected Promise using try...catch.
+* Implement an error-first callback function in Node.js.
+* Write code that converts a callback-based file read operation into a Promise.
+* Implement a function that propagates errors from one async function to its caller.
+* Write a function that executes multiple Promises and returns all successful and failed results.
+* Implement a utility that preserves the original error using the cause property.
+* Create custom ValidationError, NotFoundError, and DatabaseError classes.
+* Build Express error-handling middleware that returns a consistent JSON error response.
+* Write an Express route that validates request input and returns HTTP 400 for invalid data.
+* Implement centralized handling for malformed JSON request bodies in Express.
+* Create an Express middleware that assigns a correlation ID to each incoming request.
+* Write error-handling code that prevents sending a second response after headers have been sent.
+* Implement structured error logging with request ID, error type, and stack trace.
+* Write a retry utility that uses exponential backoff and a maximum retry count.
+* Extend the retry utility to use jitter and avoid retrying permanent errors.
+* Implement a timeout wrapper for an asynchronous operation using AbortController.
+* Write code that calls an external API and handles timeouts, HTTP errors, and invalid response data.
+* Implement a database transaction that rolls back when an operation fails.
+* Write code that preserves both the original transaction error and any rollback error.
+* Create an idempotent payment-processing function that safely handles retries.
+* Implement a circuit breaker that opens after repeated failures and allows controlled recovery attempts.
+* Write a background-job processor that retries transient failures and moves exhausted jobs to a dead-letter queue.
+* Implement graceful shutdown that stops accepting new requests and waits for active requests to finish.
+* Write a process-level handler for unhandled rejections that initiates controlled shutdown.
+* Create a reusable error-mapping function that converts domain errors into HTTP status codes.
+* Write unit tests that verify custom errors, error propagation, and HTTP error responses.
+* Implement a logging utility that redacts passwords, tokens, and other sensitive values from error context.
+* Build a production-ready Express error-handling module with custom errors, structured logging, request correlation, safe API responses, and graceful shutdown.

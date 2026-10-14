@@ -1,0 +1,30 @@
+* How do you create and manage tables using PostgreSQL DDL statements?
+* How do you implement one-to-one, one-to-many, and many-to-many relationships in PostgreSQL?
+* How do you write a query using multiple JOINs?
+* How do you retrieve the top N records from a PostgreSQL table?
+* How do LIMIT and OFFSET work, and what are their limitations?
+* How do you implement pagination efficiently in PostgreSQL?
+* How do you write a query using a Common Table Expression (CTE)?
+* What is the difference between a CTE, subquery, and temporary table?
+* How do window functions such as ROW_NUMBER, RANK, and DENSE_RANK work?
+* How do you identify and remove duplicate records safely?
+* How do you perform an UPSERT using INSERT ... ON CONFLICT?
+* How do you use the RETURNING clause in INSERT, UPDATE, and DELETE statements?
+* How do you create a partial index, and when is it useful?
+* How do composite indexes work, and how should their column order be chosen?
+* How do you analyze a query using EXPLAIN and EXPLAIN ANALYZE?
+* What is the difference between an index scan, index-only scan, and sequential scan?
+* What is VACUUM, and why is it required in PostgreSQL?
+* What is the difference between VACUUM, VACUUM FULL, and ANALYZE?
+* How does PostgreSQL's MVCC mechanism work?
+* How do row-level locks differ from table-level locks?
+* How do you detect and resolve deadlocks in PostgreSQL?
+* How do you configure connection pooling for a Java application using PostgreSQL?
+* How do you integrate PostgreSQL with Spring Boot using Spring Data JPA?
+* What is the difference between JDBC, JdbcTemplate, and Spring Data JPA?
+* How do you manage database transactions using Spring's @Transactional annotation?
+* How do you handle PostgreSQL exceptions in a Spring Boot application?
+* How do you execute native SQL queries using Spring Data JPA?
+* How do you map PostgreSQL JSONB columns to Java objects?
+* How do you manage database schema changes using Flyway or Liquibase?
+* How do you configure PostgreSQL connection properties securely in Spring Boot?

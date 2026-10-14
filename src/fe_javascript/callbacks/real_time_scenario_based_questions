@@ -1,0 +1,30 @@
+* An API response must be processed only after the request completes. How would you use a callback?
+* A function needs to execute different logic after a file is read. How would you design its callback interface?
+* A user clicks a button, and an operation should execute in response. How would you register and manage the callback?
+* Multiple API calls depend on the results of earlier calls. How would you avoid callback hell?
+* A callback-based API reports errors through its first argument. How would you handle successful and failed operations?
+* A callback is accidentally executed twice, causing duplicate processing. How would you prevent this?
+* An asynchronous callback updates a UI component after the user has navigated away. How would you avoid the unwanted update?
+* Two callbacks update the same variable and produce inconsistent results. How would you prevent race conditions?
+* A callback function loses access to the expected this context. How would you fix it?
+* A callback is passed as undefined, causing a runtime error. How would you make the API more robust?
+* A callback throws an exception during asynchronous execution. How would you handle the failure safely?
+* A legacy library exposes only callback-based methods. How would you integrate it with Promise-based code?
+* A file-processing pipeline must read, transform, and save data in order. How would you structure the callbacks?
+* A dashboard needs results from several asynchronous operations before rendering. How would you coordinate the callbacks?
+* A search field triggers an asynchronous callback for every keystroke. How would you reduce unnecessary work?
+* A callback-based operation takes too long to finish. How would you add a timeout and report the failure?
+* A network request fails intermittently. How would you implement retries without creating duplicate requests?
+* A callback is invoked synchronously in some cases and asynchronously in others. Why can this be problematic, and how would you fix it?
+* A third-party API invokes a callback with an unexpected response structure. How would you validate and handle the response?
+* A long-running callback task needs to be cancelled when the user clicks a Cancel button. How would you implement cancellation?
+* A batch-processing application must process many records but limit concurrent operations. How would you design the callback flow?
+* A callback-based system must continue processing even if one task fails. How would you handle individual errors?
+* A function accepts both success and failure callbacks. How would you design and document its contract?
+* An event listener is registered repeatedly, causing duplicate callback execution. How would you troubleshoot and fix it?
+* A callback retains large objects after an operation completes. How would you identify and prevent memory leaks?
+* A user submits a payment form twice because a callback is delayed. How would you prevent duplicate payment requests?
+* A callback chain becomes difficult to test. How would you isolate dependencies and test each step?
+* A legacy application contains deeply nested callbacks. How would you refactor it incrementally without breaking existing behavior?
+* A callback-based operation must execute cleanup regardless of success or failure. How would you structure the code?
+* A production application experiences intermittent asynchronous failures. How would you trace callback execution and diagnose the issue?

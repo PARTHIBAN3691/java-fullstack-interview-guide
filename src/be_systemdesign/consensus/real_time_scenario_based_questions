@@ -1,0 +1,30 @@
+* A three-node Raft cluster loses its leader during peak traffic. How should the remaining nodes elect a new leader and resume processing?
+* A five-node consensus cluster loses two nodes. What operations can continue, and why?
+* A three-node cluster loses two nodes and cannot reach a majority. How should the system behave?
+* A network partition separates a five-node cluster into groups of three and two. Which group can continue committing new entries?
+* An isolated leader continues accepting client writes, but it cannot contact a majority. How should the system handle those writes?
+* Two nodes start elections simultaneously and repeatedly fail to elect a leader. How would you investigate and resolve the issue?
+* A Raft follower restarts after being offline for several hours. How should it catch up with the committed log?
+* A node reports that a log entry is committed, but another node does not contain that entry. How would you investigate the inconsistency?
+* A distributed configuration service must ensure that all clients observe committed configuration updates consistently. How would you design it?
+* A Kubernetes control-plane component depends on etcd, and etcd loses quorum. What impact should be expected, and how should recovery be handled?
+* A distributed lock service grants a lock to one client, but the client pauses for a long time and its lease expires. How would you prevent the stale client from modifying shared data?
+* A leader becomes slow rather than completely failing, causing frequent elections. How would you tune the system without compromising correctness?
+* A geographically distributed database must accept writes from users in several regions. How would you choose the consensus group placement and replication strategy?
+* A cluster is expanded from three nodes to five nodes while handling production traffic. How would you perform the membership change safely?
+* A consensus cluster is restored from an old backup while some nodes still contain newer persisted logs. How would you avoid inconsistent recovery?
+* A service uses wall-clock timestamps to determine which leader's writes are valid. Clock skew causes conflicting updates. How would you redesign the protocol?
+* A distributed storage system must elect one coordinator to manage metadata updates. How would you ensure that only the valid leader can commit changes?
+* A payment system uses a consensus-backed ledger to order transactions. How would you ensure that committed transactions remain consistent after node failures?
+* A consensus cluster experiences high network latency between availability zones. How would you determine whether to change quorum placement or deployment topology?
+* A Raft cluster repeatedly elects leaders but rarely commits entries. Which logs, metrics, and network conditions would you investigate?
+* A Byzantine node sends conflicting messages to different replicas. How would a Byzantine fault-tolerant protocol detect or tolerate the behavior?
+* A distributed system must continue operating despite a minority of unavailable nodes. How would you select the cluster size and quorum policy?
+* A metadata service has a growing Raft log that slows down recovery. How would you use snapshots and log compaction safely?
+* A consensus-based service experiences high write latency because each operation waits for multiple network round trips. How would you optimize the protocol?
+* A stale leader attempts to write to a database after a new leader has been elected. How would fencing tokens prevent corruption?
+* A network outage heals, and nodes have different uncommitted log entries. How should the consensus algorithm reconcile their state?
+* A service requires both strong consistency and low latency for global users. How would you explain the trade-offs and evaluate alternative architectures?
+* A team proposes replacing consensus with eventual consistency to improve availability. How would you determine whether the business requirements permit this change?
+* A consensus cluster loses its quorum after an incorrect infrastructure deployment. What recovery procedures would you follow without risking committed data?
+* You are designing a coordination service for distributed jobs. How would you use consensus for leader election, configuration changes, and safe ownership transfer?

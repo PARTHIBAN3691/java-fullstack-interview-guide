@@ -1,0 +1,83 @@
+**Fine-Tuning Fundamentals**
+* What is fine-tuning in machine learning and generative AI?
+* How does fine-tuning differ from training a model from scratch?
+* Why would an organization fine-tune a pretrained language model?
+* What are the major benefits and limitations of fine-tuning?
+
+**Supervised Fine-Tuning (SFT)**
+* What is Supervised Fine-Tuning (SFT)?
+* What types of input-output examples are used in SFT?
+* How does SFT influence a model's behavior?
+* What are the main stages of an SFT pipeline?
+
+**Instruction Tuning**
+* What is instruction tuning, and why is it important for LLMs?
+* How does instruction tuning differ from ordinary language-model pretraining?
+* What does a typical instruction-tuning dataset contain?
+* How does instruction tuning help a model follow user instructions?
+
+**Parameter-Efficient Fine-Tuning (PEFT)**
+* What is Parameter-Efficient Fine-Tuning (PEFT)?
+* Why is PEFT useful when adapting large language models?
+* How does PEFT differ from full-parameter fine-tuning?
+* What are some common PEFT techniques?
+
+**LoRA and QLoRA**
+* What is Low-Rank Adaptation (LoRA)?
+* How does LoRA reduce the number of trainable parameters?
+* What is QLoRA, and how does it differ from LoRA?
+* What is the role of quantization in QLoRA?
+
+**Dataset Preparation and Quality**
+* Why is dataset quality important for fine-tuning?
+* What are common data formats used for instruction fine-tuning?
+* What are duplicate, noisy, and inconsistent training examples?
+* How can sensitive information be identified and removed from a training dataset?
+
+**Training and Validation Splits**
+* Why should training and validation datasets be separated?
+* What is the difference between training, validation, and test datasets?
+* What is overfitting in fine-tuning?
+* Why should data leakage be prevented between dataset splits?
+
+**Synthetic Data Generation**
+* What is synthetic data generation for LLM fine-tuning?
+* Why might an organization use synthetic training examples?
+* What are the risks of training a model on synthetic data?
+* How can synthetic examples be reviewed for quality?
+
+**Retrieval vs Fine-Tuning**
+* What is the difference between Retrieval-Augmented Generation (RAG) and fine-tuning?
+* When is fine-tuning more suitable than RAG?
+* When is RAG more suitable than fine-tuning?
+* Can RAG and fine-tuning be used together?
+
+**Domain Adaptation**
+* What is domain adaptation in language models?
+* Why might a general-purpose LLM perform poorly in a specialized domain?
+* What kinds of domain-specific data can be used for adaptation?
+* How can domain adaptation affect general-purpose capabilities?
+
+**Model Distillation**
+* What is knowledge distillation in machine learning?
+* What are teacher and student models?
+* Why would an organization distill a large language model into a smaller model?
+* What are the main trade-offs of model distillation?
+
+**Quantization**
+* What is model quantization?
+* How does quantization reduce model memory requirements?
+* What is the difference between 16-bit, 8-bit, and 4-bit model representations?
+* How can quantization affect model quality and inference speed?
+
+**Fine-Tuning Evaluation**
+* Why is evaluation necessary after fine-tuning a model?
+* What is the difference between evaluating training loss and evaluating task performance?
+* What are common metrics used to evaluate fine-tuned language models?
+* Why should a fine-tuned model be compared against its base model?
+
+**Model Versioning and Rollback**
+* Why should fine-tuned model versions be tracked?
+* What information should be recorded for each model version?
+* What is model rollback, and when might it be necessary?
+* Why should model artifacts and training configurations be preserved?

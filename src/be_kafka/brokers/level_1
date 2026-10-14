@@ -1,0 +1,30 @@
+* How do Kafka brokers communicate with each other?
+* How does a producer identify the correct broker for a partition?
+* How does a consumer fetch records from a Kafka broker?
+* How does Kafka distribute partitions across multiple brokers?
+* How do you configure a Kafka broker in a production environment?
+* How do you configure broker IDs and listener endpoints?
+* How do listeners and advertised listeners affect connectivity from different networks?
+* How does a broker handle incoming produce requests?
+* How does a broker handle consumer fetch requests?
+* How does a broker replicate partition data to follower replicas?
+* How does a leader broker track in-sync replicas?
+* What happens when a follower replica falls behind the leader?
+* How does Kafka elect a new partition leader after broker failure?
+* What is the relationship between replication factor and broker count?
+* How do you choose the number of brokers for a Kafka cluster?
+* How does Kafka distribute leaders across brokers?
+* How do you identify uneven partition distribution across brokers?
+* How do you add a new broker to an existing Kafka cluster?
+* What steps are required to remove a broker safely?
+* How do you perform partition reassignment between brokers?
+* How do you configure broker-level retention settings?
+* How does a broker manage log segments and delete expired data?
+* How do you monitor broker CPU, memory, disk, and network utilization?
+* How do you investigate under-replicated partitions on a broker?
+* How do you configure TLS and SASL authentication for broker communication?
+* How do you restrict client access to brokers using Kafka ACLs?
+* What is the difference between broker-level and topic-level configuration?
+* How do you configure rack awareness for Kafka brokers?
+* How does Kafka handle disk failures on a broker?
+* How do you perform a rolling restart of brokers without unnecessary downtime?

@@ -1,0 +1,30 @@
+* Create a standalone Angular component that displays a welcome message using interpolation.
+* Create a component with a button that increments a counter when clicked.
+* Create a component that accepts a username through an input property and displays it.
+* Create a parent and child component that exchange data using @Input and @Output.
+* Create a component that displays a list of employees using Angular's @for syntax.
+* Create a component that conditionally displays a message using the @if block.
+* Create a reusable alert component that accepts a message and severity as inputs.
+* Create a child component that emits a selected product ID to its parent.
+* Create two sibling components that share selected customer data through a service.
+* Create a component that uses ngOnInit() to load data from a service.
+* Create a component that uses ngOnChanges() to respond to changes in an input property.
+* Create a component that uses ngOnDestroy() to perform cleanup.
+* Create a component that accesses a child component using @ViewChild.
+* Create a reusable card component that supports custom content through ng-content.
+* Create a component with separate projection slots for a header, body, and footer.
+* Create a component that displays API data using an Observable and the async pipe.
+* Create a component using OnPush change detection and demonstrate how immutable updates refresh the UI.
+* Create a standalone component that uses signals to manage a counter and a computed value.
+* Create a component that uses input() and output() for parent-child communication.
+* Create a reusable search component that emits the search term when the user types.
+* Create a custom toggle component that integrates with reactive forms using ControlValueAccessor.
+* Create a dynamic component host using ViewContainerRef and load a component at runtime.
+* Create a component that renders a configurable form from an array of field definitions.
+* Create a component that filters a list of employees by department and search text.
+* Create a component that implements pagination for a large list of products.
+* Create a component that handles loading, success, empty, and error states when fetching API data.
+* Create a component that uses takeUntilDestroyed() to manage an Observable subscription.
+* Write unit tests for a component using Angular TestBed and verify its rendered text.
+* Write unit tests for a parent-child component interaction, including emitted events and input values.
+* Build a reusable Angular component that accepts data, supports loading and error states, uses OnPush change detection, and includes unit tests for its key behaviors.

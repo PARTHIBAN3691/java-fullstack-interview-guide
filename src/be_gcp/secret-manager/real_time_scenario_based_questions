@@ -1,0 +1,30 @@
+* A Spring Boot application running on Cloud Run fails at startup because it cannot access Secret Manager. How would you investigate and resolve the issue?
+* A Java microservice receives permission-denied errors after deployment to production, although it works locally. How would you troubleshoot the difference?
+* A database password is rotated, but an application continues using the old password. How would you identify the cause and fix it?
+* Several microservices fail simultaneously after a shared secret is updated. How would you investigate the incident and prevent recurrence?
+* A production service experiences increased latency because it retrieves secrets on every request. How would you redesign the integration?
+* Secret Manager becomes temporarily unavailable during a production deployment. How should the application behave?
+* An application starts failing because its cached database credentials have expired. How would you recover without causing another outage?
+* A developer accidentally logs an API key retrieved from Secret Manager. What immediate response and long-term controls would you implement?
+* A service account has been granted project-wide Secret Manager access unnecessarily. How would you reduce the blast radius?
+* An engineer reports that a secret version was disabled unexpectedly. How would you investigate who changed it and restore service?
+* A secret version was destroyed accidentally, and a production service depends on it. How would you assess recovery options?
+* A new secret version was added, but the application retrieves an unexpected version. How would you troubleshoot version selection?
+* A Cloud Run service works in one environment but fails in another because secret names and permissions differ. How would you standardize configuration?
+* A database credential rotation causes HikariCP connection failures. How would you coordinate credential updates and connection renewal?
+* A third-party API key must be rotated without interrupting requests. How would you implement a safe transition?
+* A CI/CD pipeline requires production secrets during deployment. How would you grant access securely without exposing them to build logs?
+* An organization has hundreds of secrets spread across multiple projects with inconsistent naming. How would you introduce governance and ownership?
+* A security audit discovers that many applications use long-lived service account keys to access secrets. How would you migrate them safely?
+* A microservice hosted outside Google Cloud needs access to Secret Manager. How would you authenticate it securely?
+* A service suddenly generates thousands of Secret Manager API requests per minute. How would you diagnose and control the traffic?
+* A secret retrieval request times out intermittently under heavy load. How would you distinguish application, network, and service-side causes?
+* Two environments accidentally use the same database credential. How would you separate their secrets and enforce environment isolation?
+* A secret rotation workflow updates Secret Manager successfully but fails to update the database password. How would you make the workflow recoverable?
+* A team wants to share one secret across multiple projects. How would you evaluate the security and operational trade-offs?
+* A regional outage affects workloads that depend on secrets. How would you design and test regional resilience?
+* An incident response team suspects an attacker accessed a production API key. How would you investigate access logs and contain the exposure?
+* A production application needs a secret immediately after deployment, but the secret has not yet been provisioned. How would you prevent deployment failure?
+* A team wants to retrieve secrets through Kubernetes environment variables instead of a dedicated secret integration. How would you evaluate the security implications?
+* A developer proposes storing secrets in application configuration files encrypted in source control. How would you assess this design against Secret Manager?
+* A company needs auditable approval before critical secrets are rotated or destroyed. How would you design the process and technical controls?

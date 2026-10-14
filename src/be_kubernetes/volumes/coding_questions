@@ -1,0 +1,30 @@
+* Write a Kubernetes Pod manifest that uses an emptyDir Volume mounted at /tmp/app-data.
+* Write a Pod manifest that uses a memory-backed emptyDir with a size limit.
+* Write a Pod manifest that mounts a hostPath Volume at /var/log/app.
+* Write a PersistentVolume manifest with 10Gi capacity and a specified access mode.
+* Write a PersistentVolumeClaim manifest requesting 10Gi of storage.
+* Write a StorageClass manifest for dynamic volume provisioning using a CSI provisioner.
+* Write a Pod manifest that mounts a PVC at /var/lib/app-data.
+* Write a Deployment manifest that mounts persistent storage for a Spring Boot application.
+* Write a Pod manifest with two containers sharing the same emptyDir Volume.
+* Write a Pod manifest that mounts a ConfigMap as a read-only Volume.
+* Write a Pod manifest that mounts a Kubernetes Secret as a read-only Volume.
+* Write a Pod manifest that uses subPath to mount one configuration file into a container.
+* Write a Pod manifest that mounts a PVC with read-only access.
+* Write a StatefulSet manifest with a volumeClaimTemplate that creates a separate PVC for each replica.
+* Write a StorageClass manifest using WaitForFirstConsumer volume binding.
+* Write a PVC manifest that requests storage expansion from an expandable StorageClass.
+* Write a VolumeSnapshotClass and VolumeSnapshot manifest for a CSI storage driver.
+* Write a PVC manifest that restores data from an existing VolumeSnapshot.
+* Write a Pod manifest that runs as a non-root user and mounts a writable PVC.
+* Write a Pod manifest that uses fsGroup to configure group access to mounted storage.
+* Write a Kubernetes Job manifest that backs up application files from a PVC to an external backup destination.
+* Write a CronJob manifest that performs scheduled backups of a persistent application directory.
+* Write a shell script that identifies PVCs that are not Bound across all namespaces.
+* Write a shell script that reports PVC capacity, requested storage, and associated PersistentVolumes.
+* Write kubectl commands to inspect PVC events, StorageClass settings, and volume attachment status.
+* Write a shell script that identifies Pods with mounted PVCs and displays their namespace, Pod name, and claim names.
+* Write a validation script that checks whether a PVC has sufficient requested capacity for an application's storage requirement.
+* Write a shell script that verifies backup file creation and checksums after copying data from a mounted PVC.
+* Write a Java example that writes application files to a configurable persistent directory rather than the container's temporary filesystem.
+* Write an automated storage troubleshooting script that collects PVC, PV, StorageClass, VolumeAttachment, Pod, and CSI-related diagnostic information.

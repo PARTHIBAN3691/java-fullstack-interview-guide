@@ -1,0 +1,21 @@
+
+* What is the difference between a CloudFormation stack and a change set?
+* What is a CloudFormation change set, and why should you review it before deployment?
+* What is the difference between stack creation, stack update, and stack deletion?
+* How do you pass environment-specific values into a CloudFormation template?
+* What are mappings in CloudFormation, and when would you use them?
+* What are conditions in CloudFormation?
+* How do you create resources conditionally using `Conditions` and `Fn::If`?
+* What is the purpose of `DependsOn`?
+* How does CloudFormation determine resource creation order?
+* What are pseudo parameters in CloudFormation?
+* What are dynamic references, and how can they retrieve secrets from AWS Systems Manager Parameter Store or AWS Secrets Manager?
+* How do you reference resources from another CloudFormation stack?
+* What are exports and imports in CloudFormation?
+* What is the difference between nested stacks and cross-stack references?
+* What are stack policies, and how do they protect resources during updates?
+* What is the difference between `DeletionPolicy` and `UpdateReplacePolicy`?
+* What is the purpose of `CreationPolicy` and `cfn-signal`?
+* What is the difference between CloudFormation rollback and rollback triggers?
+* How do you troubleshoot a stack that enters the `CREATE_FAILED` or `UPDATE_ROLLBACK_FAILED` state?
+* How can CloudFormation be integrated into a CI/CD pipeline?

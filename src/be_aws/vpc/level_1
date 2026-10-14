@@ -1,0 +1,21 @@
+
+* How do you create a VPC with public and private subnets across multiple Availability Zones?
+* How do route tables control traffic between subnets and external networks?
+* How do you configure an Internet Gateway to provide internet access to resources in a public subnet?
+* How does a NAT Gateway allow resources in a private subnet to access the internet?
+* How do you configure security groups for a Java application running on EC2?
+* How do you configure NACL rules to control inbound and outbound traffic?
+* What is the difference between stateful security groups and stateless NACLs?
+* How do you allow a Java application in a private subnet to access Amazon S3 without using a NAT Gateway?
+* What is the difference between an S3 gateway endpoint and an interface VPC endpoint?
+* How do you configure a VPC endpoint for AWS Secrets Manager?
+* How does VPC peering work, and what are its routing limitations?
+* What is AWS Transit Gateway, and when would you use it instead of VPC peering?
+* How do you connect an on-premises network to a VPC using AWS Site-to-Site VPN?
+* What is AWS Direct Connect, and how does it differ from Site-to-Site VPN?
+* How do you configure VPC Flow Logs, and what information do they provide?
+* How do you troubleshoot connectivity between an EC2 instance and an Amazon RDS database?
+* How do you configure a private subnet for an ECS or EKS workload?
+* What is the purpose of a VPC DNS hostnames setting and DNS resolution setting?
+* How do you securely connect a Java microservice to an internal Application Load Balancer?
+* How do you troubleshoot a VPC resource that cannot reach an AWS service endpoint?

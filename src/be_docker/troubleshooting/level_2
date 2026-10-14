@@ -1,0 +1,30 @@
+* How would you systematically diagnose intermittent failures across a multi-container Docker application?
+* How do you distinguish an application crash from an operating-system-level container termination?
+* How do you investigate exit code 137 and determine whether the container was killed due to memory pressure?
+* How do you troubleshoot exit code 139 in a containerized application?
+* How do you diagnose a container killed by the Linux OOM killer?
+* How do you investigate Docker daemon failures affecting multiple containers?
+* How do you troubleshoot Docker networking issues involving bridge networks, iptables, and host routing?
+* How do you diagnose intermittent DNS resolution failures between containers?
+* How do you investigate connection leaks and exhausted connection pools in a containerized Java service?
+* How do you troubleshoot thread starvation in a Spring Boot container?
+* How do you analyze JVM heap usage and garbage collection when a container experiences memory pressure?
+* How do you distinguish JVM heap exhaustion from native memory exhaustion inside a container?
+* How do you investigate latency spikes caused by CPU throttling?
+* How do you troubleshoot containers that fail under load but work normally during testing?
+* How do you diagnose file descriptor exhaustion in a long-running container?
+* How do you investigate ephemeral port exhaustion affecting container-to-container communication?
+* How do you troubleshoot storage driver issues and Docker filesystem corruption?
+* How do you identify whether overlay filesystem behavior is contributing to application latency?
+* How do you diagnose container failures caused by incorrect Linux capabilities or security policies?
+* How do you troubleshoot SELinux or AppArmor restrictions affecting container execution?
+* How do you investigate image architecture mismatches across different deployment hosts?
+* How do you debug TLS certificate and trust-store failures in a containerized Java application?
+* How do you troubleshoot DNS, proxy, and certificate issues when Maven dependencies cannot be downloaded during a Docker build?
+* How do you investigate intermittent failures caused by incorrect health-check configuration?
+* How do you determine whether a failed deployment is caused by an image regression, configuration change, or infrastructure issue?
+* How do you diagnose cascading failures when one unhealthy service causes dependent containers to fail?
+* How do you troubleshoot graceful shutdown failures and containers that ignore termination signals?
+* How do you identify resource contention between containers sharing the same Docker host?
+* How do you collect thread dumps, heap dumps, and diagnostic data from a production container without unnecessarily disrupting service?
+* How would you build an evidence-based root-cause analysis process for recurring Docker incidents?

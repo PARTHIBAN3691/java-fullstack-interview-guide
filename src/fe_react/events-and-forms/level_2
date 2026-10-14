@@ -1,0 +1,30 @@
+* How would you design a reusable form architecture for a large React application?
+* How would you manage complex nested form state efficiently?
+* How would you implement cross-field validation?
+* How would you validate a field based on the value of another field?
+* How would you implement asynchronous validation, such as checking username availability?
+* How would you prevent race conditions in asynchronous form validation?
+* How would you handle stale closures in form event handlers?
+* How would you optimize rendering for a form with hundreds of fields?
+* How do controlled inputs behave during frequent state updates?
+* How would you handle dynamic forms generated from a JSON schema?
+* How would you build a reusable form system with TypeScript generics?
+* How would you manage form state using React Hook Form and schema validation?
+* What are the differences between React Hook Form, Formik, and controlled components?
+* How would you integrate Zod or Yup for schema-based validation?
+* How would you implement conditional validation rules using a schema?
+* How would you handle server-side validation errors and map them to individual fields?
+* How would you preserve form state across routes or browser refreshes?
+* How would you prevent accidental loss of unsaved form changes?
+* How would you implement autosave for a long form?
+* How would you handle debounced autosave without submitting outdated data?
+* How would you manage optimistic UI updates in a form?
+* How would you handle concurrent form submissions and request cancellation?
+* How would you design an accessible form with keyboard navigation and screen-reader support?
+* How would you manage focus when validation errors occur?
+* How would you handle file uploads with progress tracking and cancellation?
+* How would you implement drag-and-drop file selection with validation?
+* How would you securely handle sensitive form data?
+* How would you prevent cross-site scripting risks when displaying user-submitted form values?
+* How would you test complex forms with asynchronous validation and API integration?
+* How would you design a scalable form solution that supports localization, reusable fields, and consistent validation?

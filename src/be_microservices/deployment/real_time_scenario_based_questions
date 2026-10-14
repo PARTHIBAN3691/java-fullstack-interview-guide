@@ -1,0 +1,30 @@
+* A Spring Boot microservice works locally but fails after deployment to production. How would you troubleshoot it?
+* A Docker container exits immediately after startup. What would you investigate?
+* A Kubernetes Pod enters CrashLoopBackOff after a release. How would you identify the root cause?
+* A deployment succeeds, but users receive HTTP 503 errors. How would you investigate the issue?
+* A new release increases API response times significantly. How would you detect and roll back the regression?
+* A rolling deployment causes requests to fail while old and new application versions run simultaneously. How would you resolve it?
+* A database schema change breaks the previous application version during deployment. How would you prevent this in future releases?
+* A Docker image works in staging but fails in production because of missing environment variables. How would you improve the pipeline?
+* A Java container is repeatedly terminated because it exceeds its memory limit. How would you investigate JVM and container memory usage?
+* Kubernetes marks a service ready before it can successfully process business requests. How would you improve readiness checks?
+* A deployment is stuck because the new Pods never become healthy. How would you troubleshoot it?
+* A production release must be rolled back, but the database schema has already changed. How would you recover safely?
+* A canary deployment shows increased error rates for a small percentage of users. How would you stop or reverse the rollout?
+* Two microservices must be released together because their API contracts are incompatible. How would you redesign the deployment process?
+* A Jenkins pipeline deploys an older Docker image because tags are reused. How would you prevent this problem?
+* A container image contains credentials in one of its layers. What actions would you take?
+* A Kubernetes node failure causes several microservices to become unavailable. How would you improve resilience?
+* A Kafka consumer deployment causes duplicate processing of business events. How would you handle the issue?
+* A new release causes connection pool exhaustion in a Spring Boot service. How would you diagnose and mitigate it?
+* Production deployments require manual approvals and repeated manual configuration. How would you automate the process safely?
+* Multiple teams deploy to the same Kubernetes cluster and interfere with each other's resources. How would you improve isolation?
+* A service is terminated during a rolling deployment while processing long-running requests. How would you implement graceful shutdown?
+* A critical vulnerability is discovered in the base Docker image used by many services. How would you coordinate remediation?
+* A release passes automated tests but fails under production traffic. How would you improve pre-release validation?
+* A configuration change causes failures across multiple services without a code change. How would you manage configuration rollbacks?
+* A new application version is deployed to several regions, but only one region experiences errors. How would you isolate the problem?
+* Your CI/CD pipeline takes too long because every microservice rebuilds shared dependencies. How would you optimize it?
+* A production deployment must happen with no customer-visible downtime. What deployment and validation steps would you use?
+* An organization wants to move from manually managed servers to Kubernetes. How would you plan the migration?
+* You are responsible for deploying a payment-processing platform. How would you design release approvals, automated checks, monitoring, rollback, and audit trails?

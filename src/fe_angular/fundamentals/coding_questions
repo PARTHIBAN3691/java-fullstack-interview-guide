@@ -1,0 +1,30 @@
+* Create a basic Angular application that displays a welcome message.
+* Create a standalone component that displays employee details using interpolation.
+* Create a component that demonstrates property binding, event binding, and two-way binding.
+* Create a component that displays a list of products using Angular's @for syntax.
+* Create a component that conditionally displays content using the @if block.
+* Create a custom pipe that converts a string to title case.
+* Create a service that manages employee data and inject it into a component.
+* Create a component that demonstrates Angular lifecycle hooks.
+* Configure Angular routing with Home, About, and Contact components.
+* Implement lazy loading for a feature route using loadComponent() or loadChildren().
+* Create a route guard that restricts access to authenticated users.
+* Create an HTTP interceptor that attaches an authorization token to outgoing requests.
+* Create a service that retrieves employee data using HttpClient.
+* Implement centralized HTTP error handling using RxJS catchError().
+* Create a search component that uses debounceTime(), distinctUntilChanged(), and switchMap().
+* Build a reactive login form with required-field and email validation.
+* Create a reusable child component that receives data through input properties and emits events to its parent.
+* Implement shared state between two components using an Angular service and signals.
+* Create a component that uses OnPush change detection and updates its UI through immutable state changes.
+* Implement a loading indicator that tracks multiple concurrent HTTP requests.
+* Create a route configuration with nested routes, lazy loading, and route-level providers.
+* Write unit tests for a service that retrieves data using HttpClientTestingController.
+* Write component tests that verify rendered content and user interactions.
+* Implement a custom structural directive that conditionally displays content.
+* Create a custom validator for a reactive form and write unit tests for it.
+* Build an application that handles loading, success, empty, and error states when calling an API.
+* Implement a reusable pagination component and integrate it with a product list.
+* Create a feature module or standalone feature area with lazy loading and shared services.
+* Optimize a sample Angular application by applying lazy loading, OnPush change detection, and appropriate RxJS operators.
+* Build a complete Angular application with authentication, protected routes, API integration, reactive forms, reusable components, error handling, and automated tests.

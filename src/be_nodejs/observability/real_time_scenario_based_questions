@@ -1,0 +1,30 @@
+* Your Node.js API suddenly experiences high latency, but CPU usage appears normal. How would you investigate the issue?
+* Your application has intermittent 502 and 504 responses. How would you use logs, metrics, and traces to identify the root cause?
+* Production logs show errors but do not identify which incoming request caused them. How would you improve log correlation?
+* A Node.js service consumes increasing memory over several hours and eventually restarts. How would you diagnose the memory leak?
+* Your application's event loop becomes blocked during peak traffic. Which metrics and diagnostic tools would you use?
+* The p99 API latency increases significantly while the average latency remains stable. How would you investigate?
+* A downstream payment service becomes slow, causing failures across multiple services. How would distributed tracing help?
+* Your application logs contain access tokens and customer information. How would you address the security risk?
+* Your Prometheus dashboard shows a sudden increase in request counts that does not match actual traffic. What would you investigate?
+* Grafana dashboards display missing metrics after a deployment. How would you troubleshoot the problem?
+* OpenTelemetry traces stop appearing after a Node.js upgrade. How would you investigate the instrumentation and exporter configuration?
+* Trace IDs are present in one service but missing in the next service. How would you fix context propagation?
+* Your application becomes slower after enabling detailed tracing. How would you reduce instrumentation overhead?
+* The telemetry backend becomes unavailable during a traffic spike. How would you ensure the application continues operating?
+* Your logs are delayed by several minutes during peak traffic. How would you investigate the logging pipeline?
+* A logging library causes high CPU usage because logs are written synchronously. How would you resolve the issue?
+* Your monitoring system generates too many alerts for temporary traffic fluctuations. How would you improve alert quality?
+* A service meets its average response-time target but violates its p99 latency objective. How would you define and investigate the SLO breach?
+* A background worker processes messages slowly, but HTTP endpoint metrics look healthy. How would you extend observability to the worker?
+* A database query is slow only for certain requests. How would you identify the affected query using traces and metrics?
+* Your Kubernetes application repeatedly restarts, but application logs do not explain why. What additional signals would you examine?
+* CPU utilization is high after a new release, but request volume has not changed. How would you isolate the regression?
+* Your team operates 50 Node.js microservices and each uses a different logging format. How would you standardize observability?
+* A trace contains hundreds of spans and becomes difficult to analyze. How would you improve trace design and sampling?
+* Your metrics backend is overloaded because of excessive label cardinality. How would you identify and resolve the problem?
+* An external API fails intermittently, but the local service reports successful request handling. How would you investigate the discrepancy?
+* Your application experiences frequent garbage collection pauses during peak traffic. How would you correlate GC activity with latency?
+* A production incident occurs, but logs, metrics, and traces use inconsistent timestamps. How would you improve correlation?
+* Your organization wants to reduce observability costs while retaining enough data for incident investigation. What strategy would you implement?
+* How would you build an observability dashboard and incident-response workflow for a production Node.js payment platform?

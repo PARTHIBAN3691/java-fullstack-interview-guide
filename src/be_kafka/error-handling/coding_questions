@@ -1,0 +1,30 @@
+* Write a Spring Boot Kafka consumer that handles processing exceptions using DefaultErrorHandler.
+* Implement a DefaultErrorHandler with a fixed backoff and a maximum number of retries.
+* Write a Spring Kafka configuration that sends exhausted records to a Dead Letter Topic.
+* Implement a DeadLetterPublishingRecoverer with a custom destination topic resolver.
+* Write a custom exception classifier that distinguishes retryable and non-retryable exceptions.
+* Implement exponential backoff for transient Kafka consumer failures.
+* Write a Kafka consumer that validates incoming messages and routes invalid records to a DLT.
+* Configure ErrorHandlingDeserializer for handling JSON deserialization failures.
+* Implement a custom Kafka listener error handler for logging and recovery.
+* Write a producer callback that handles asynchronous Kafka send failures.
+* Implement a retry mechanism for HTTP 429 and 503 responses from a downstream service.
+* Write a Spring Kafka listener that uses manual acknowledgment after successful processing.
+* Implement an idempotent consumer that prevents duplicate database updates after retries.
+* Write a DLT consumer that records failed message metadata for later investigation.
+* Implement a replay service that republishes selected DLT messages to the original topic.
+* Write a replay-attempt counter using Kafka message headers to prevent infinite retry cycles.
+* Implement a custom recoverer that routes validation exceptions and infrastructure exceptions to separate topics.
+* Write a batch listener error-handling strategy that identifies and isolates failed records.
+* Implement a consumer that handles database deadlocks with bounded retries and backoff.
+* Write a Kafka configuration that uses different retry policies for different exception types.
+* Implement a structured error log containing correlation ID, topic, partition, offset, and exception type.
+* Write a unit test that verifies a transient exception triggers retries before successful processing.
+* Write an EmbeddedKafka integration test that verifies a failed record reaches the DLT after retries are exhausted.
+* Implement a test for a deserialization error that occurs before the listener method is invoked.
+* Write a test that verifies non-retryable exceptions bypass retry attempts.
+* Implement a custom error handler that tracks the number of processing attempts for each record.
+* Write a service that sanitizes sensitive fields before storing failed payloads in a DLT.
+* Implement a circuit breaker around a downstream API called by a Kafka consumer.
+* Write a recovery workflow that stores failed records for manual approval before replay.
+* Implement an integration test that simulates DLT publishing failure and verifies that the original record is not silently lost.

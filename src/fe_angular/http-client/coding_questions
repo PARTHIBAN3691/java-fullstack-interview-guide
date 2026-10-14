@@ -1,0 +1,30 @@
+* Write an Angular service that retrieves all employees from a REST API using HttpClient.
+* Write a service method to retrieve an employee by ID using a URL path parameter.
+* Implement a POST request to create a new employee.
+* Implement PUT and PATCH methods to update employee details.
+* Implement a DELETE request to remove an employee by ID.
+* Create a typed API service using TypeScript interfaces instead of any.
+* Write a method that passes multiple query parameters to an API using HttpParams.
+* Write a method that sends custom HTTP headers using HttpHeaders.
+* Implement centralized error handling using catchError() and throwError().
+* Create a reusable service that handles HTTP errors and returns user-friendly messages.
+* Write an RxJS pipeline that transforms an API response using map().
+* Implement a search field using debounceTime(), distinctUntilChanged(), and switchMap().
+* Write code that executes three independent API requests in parallel using forkJoin().
+* Implement sequential API requests using switchMap().
+* Write code that retries failed HTTP requests with a delay and a maximum retry count.
+* Implement a request timeout and display an appropriate error message.
+* Create a functional HTTP interceptor that adds a bearer token to outgoing requests.
+* Write an interceptor that logs request duration and response status.
+* Implement an interceptor that handles HTTP 401 responses and initiates token refresh.
+* Write code that prevents concurrent token refresh requests using RxJS.
+* Implement an HTTP caching service that shares the result of repeated GET requests.
+* Write code that invalidates cached data after a successful POST, PUT, PATCH, or DELETE request.
+* Implement cancellation of pending HTTP requests when a component is destroyed.
+* Write a file upload method using FormData and report upload progress.
+* Implement a file download method that retrieves a PDF as a Blob.
+* Write code that handles HTTP 204 responses without expecting a response body.
+* Implement a reusable pagination service that sends page number and page size to an API.
+* Write a unit test for an HttpClient service using provideHttpClientTesting() and HttpTestingController.
+* Write unit tests to verify request URLs, query parameters, headers, and request bodies.
+* Implement a test that verifies HTTP error handling and confirms that no unexpected requests remain.

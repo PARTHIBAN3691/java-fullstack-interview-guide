@@ -1,0 +1,30 @@
+* Create an Angular service using Angular CLI and inject it into a component using constructor injection.
+* Create a service with providedIn: 'root' and demonstrate sharing its state between two components.
+* Create a component-scoped service and demonstrate how its instance differs from a root-provided service.
+* Inject a service using the inject() function in a standalone Angular component.
+* Create a configuration service and provide it using the providers array.
+* Use useValue to provide an application name and inject it into a component.
+* Create an InjectionToken for an API base URL and inject it into a service.
+* Use useClass to select between two implementations of a notification service.
+* Use useExisting to expose an existing service through an alternative injection token.
+* Create a factory provider that selects a payment processor based on a configuration value.
+* Implement an optional dependency using the @Optional decorator.
+* Demonstrate @Self and @SkipSelf using parent and child component providers.
+* Use @Host to restrict dependency resolution to the host element's injector boundary.
+* Create a multi-provider token that collects multiple logging or validation implementations.
+* Implement a plugin registry using InjectionToken and multi-providers.
+* Create a route-level provider that maintains state within a feature route.
+* Write a functional route guard that injects an authorization service.
+* Create a service that injects HttpClient and a configuration token through dependency injection.
+* Write an Angular unit test that replaces a real service with a mock using TestBed providers.
+* Override a component-level provider in a unit test and verify that the mock instance is used.
+* Implement a factory provider that depends on two other services.
+* Refactor two circularly dependent services into a design with a shared third service.
+* Create a standalone Angular application that registers application-wide providers using ApplicationConfig.
+* Implement asynchronous application initialization using provideAppInitializer() and an injected configuration service.
+* Use runInInjectionContext() to resolve a service within a valid injection context.
+* Create a reusable component library service that applications can override through a custom InjectionToken.
+* Implement a route-specific data service and test its dependency injection scope.
+* Write unit tests verifying that root-level services are shared while component-level services are isolated.
+* Create a configurable logging service with a default implementation and an application-specific override.
+* Build a small Angular application that demonstrates root, component, and route-level providers, including unit tests for each service scope.

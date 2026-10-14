@@ -1,0 +1,96 @@
+**AI Data Pipelines**
+* Implement a pipeline that reads source records, validates them, transforms them, and publishes only valid records to a downstream store.
+* Write an idempotent processing function that avoids repeating completed work after a retry.
+* Implement checkpoints and restart recovery for a batch pipeline processing large files.
+* Create unit tests for partial failures, duplicate input records, and schema changes.
+
+**Data Collection and Ingestion**
+* Implement a Java ingestion client that reads a paginated REST API and persists records with retry and checkpoint support.
+* Write a Kafka consumer that validates incoming events and routes invalid records to a dead-letter topic.
+* Implement change detection using source IDs, timestamps, and content hashes.
+* Create tests for rate limits, network failures, duplicate records, and incomplete pagination.
+
+**Document Processing Pipelines**
+* Implement a document-processing service that extracts text, adds source metadata, chunks content, and publishes processing results.
+* Write a parser-selection component that routes PDF, HTML, Word, and plain-text files to appropriate processors.
+* Implement document deduplication using stable identifiers and content hashes.
+* Create tests for malformed files, empty extraction results, OCR failures, and oversized documents.
+
+**Data Cleaning and Normalization**
+* Implement a Java transformation pipeline that normalizes dates, categorical values, whitespace, and numerical fields.
+* Write a duplicate-detection function that compares normalized records using configurable matching rules.
+* Implement missing-value validation with configurable reject, default, and quarantine policies.
+* Create tests proving that valid domain-specific terms are preserved during text normalization.
+
+**Data Quality and Validation**
+* Implement a reusable validation framework for schema checks, null constraints, uniqueness, ranges, and freshness.
+* Write a data-quality gate that blocks publication when configurable thresholds are exceeded.
+* Implement a quarantine mechanism that records invalid data, validation failures, and source identifiers.
+* Create a comparison utility that detects changes in record counts and feature distributions between dataset versions.
+
+**Metadata and Data Lineage**
+* Implement a metadata model that records source ID, source version, transformation version, timestamps, and output identifiers.
+* Write a lineage-tracking service that links source documents to chunks, embeddings, and index records.
+* Implement a query that identifies downstream assets affected by a changed source dataset.
+* Create tests that verify lineage remains intact through retries, reprocessing, and partial failures.
+
+**Feature Engineering**
+* Implement reusable feature transformations for categorical, numerical, and temporal data.
+* Write a point-in-time feature extraction function that prevents future events from leaking into historical training examples.
+* Implement feature validation for missing values, invalid ranges, and unexpected distributions.
+* Create tests that verify training and inference use identical transformation logic.
+
+**Feature Stores**
+* Implement an offline feature repository that retrieves historical feature values for a specified event timestamp.
+* Write an online feature service that returns low-latency values by entity identifier.
+* Implement feature-definition versioning and reject incompatible feature requests.
+* Create tests for stale values, delayed events, missing features, and offline-online consistency.
+
+**Training Data Management**
+* Implement a dataset-snapshot utility that records source versions, filtering criteria, label versions, and preprocessing configuration.
+* Write a dataset-splitting function that prevents records from the same entity from leaking across training and test sets.
+* Implement a dataset-diff tool that compares record counts, label distributions, missing values, and feature statistics.
+* Create tests for reproducibility, class imbalance, duplicate entities, and temporal split boundaries.
+
+**Data Labeling and Annotation**
+* Implement an annotation-task assignment service with task status, reviewer assignment, and audit history.
+* Write a label-quality analyzer that calculates agreement between annotators for a given annotation scheme.
+* Implement an adjudication workflow that flags conflicting labels for expert review.
+* Create tests for label-version updates, incomplete annotations, and reviewer permissions.
+
+**Synthetic Data**
+* Implement a synthetic tabular-data generator with configurable field types, ranges, and constraints.
+* Write a validation utility that compares real and synthetic datasets using distribution and correlation statistics.
+* Implement a duplicate and near-duplicate detector for synthetic records against a reference dataset.
+* Create tests for constraint violations, rare-category coverage, and synthetic-data reproducibility.
+
+**Data Privacy and Governance**
+* Implement a data-classification component that detects configured sensitive fields and assigns sensitivity labels.
+* Write a redaction pipeline that removes or masks sensitive values before data is sent to external AI services.
+* Implement a policy validator that checks region, purpose, access role, and retention requirements before processing.
+* Create tests that verify unauthorized users cannot retrieve sensitive datasets or derived AI assets.
+
+**Streaming Data for AI**
+* Implement a Kafka Streams or equivalent processor that calculates rolling features from incoming events.
+* Write a deduplication component using event IDs and a bounded state store.
+* Implement event-time windowing with configurable late-arrival handling.
+* Create tests for duplicate events, out-of-order messages, consumer restarts, and state recovery.
+
+**Vector Index Pipelines**
+* Implement a vector-ingestion job that chunks documents, generates embeddings, attaches metadata, and upserts vectors.
+* Write a checkpointing mechanism that resumes failed indexing jobs without reprocessing completed documents unnecessarily.
+* Implement index-integrity checks for missing chunks, duplicate IDs, incorrect dimensions, and stale versions.
+* Create tests for provider throttling, partial batch failures, and vector-store write errors.
+
+**Incremental Indexing and Reindexing**
+* Implement a change-detection service that identifies documents requiring re-embedding based on content hashes and model versions.
+* Write a version-aware index writer that prevents stale jobs from overwriting newer document versions.
+* Implement a shadow-index migration that validates a replacement index before switching production traffic.
+* Create tests for concurrent updates, document deletions, rollback, and incomplete index builds.
+
+**Data Retention and Deletion**
+* Implement a deletion orchestrator that propagates document deletion across object storage, relational records, caches, and vector indexes.
+* Write a retention scheduler that identifies expired data using configurable retention periods and legal-hold rules.
+* Implement a deletion-verification job that checks whether deleted document identifiers remain in active indexes.
+* Create tests for partial deletion failures, retry safety, audit records, and backup restoration scenarios.
+

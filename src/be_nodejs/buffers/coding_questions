@@ -1,0 +1,30 @@
+* Write a Node.js program that creates a Buffer from a string and prints its contents.
+* Create a Buffer using Buffer.alloc() and initialize it with specific byte values.
+* Convert a string into a Buffer using UTF-8 encoding and convert it back into a string.
+* Write a program that converts a Buffer to hexadecimal and Base64 representations.
+* Implement a function that checks whether a given value is a Buffer.
+* Write a function that concatenates multiple Buffers into a single Buffer.
+* Implement a function that compares two Buffers for equality.
+* Write a program that copies bytes from one Buffer into another Buffer.
+* Implement a function that extracts a range of bytes and returns an independent copy.
+* Write a function that calculates the byte length of a string using different encodings.
+* Implement a program that writes and reads 16-bit and 32-bit integers using big-endian and little-endian formats.
+* Write a program that stores and retrieves signed integers and floating-point values in a Buffer.
+* Implement a function that writes a UTF-8 string into a Buffer at a specified offset.
+* Write a program that reads a file asynchronously and processes its contents as a Buffer.
+* Implement a streaming file-copy operation using readable and writable streams.
+* Write a function that safely decodes Base64 input into a Buffer and validates the result.
+* Implement a binary message encoder with a length prefix followed by a payload.
+* Write a streaming decoder that reconstructs length-prefixed messages split across multiple chunks.
+* Implement a decoder that handles multiple complete messages in one Buffer chunk.
+* Write a binary parser that reads a message type, payload length, and payload from a Buffer.
+* Implement validation for offsets and lengths before reading binary fields.
+* Write a function that calculates a checksum for a large file using streams.
+* Implement a TCP server that receives binary messages and handles partial message delivery.
+* Write a function that processes Buffer chunks with a configurable maximum memory usage.
+* Implement a streaming UTF-8 decoder that handles multibyte characters split across chunks.
+* Write a program that uses StringDecoder to process UTF-8 data from a readable stream.
+* Implement a benchmark comparing repeated Buffer concatenation with a preallocated Buffer.
+* Write a program that transfers an ArrayBuffer to a worker thread and processes its contents.
+* Implement a function that redacts or clears sensitive bytes in a mutable Buffer when appropriate.
+* Build a Node.js binary-processing module with message encoding, decoding, validation, stream processing, and unit tests.

@@ -1,0 +1,30 @@
+* How do you design a Spring Boot microservice to support horizontal scaling?
+* How do you identify bottlenecks in a microservices application?
+* How do you configure load balancing across multiple service instances?
+* How does client-side load balancing differ from server-side load balancing?
+* How do you scale stateless and stateful microservices differently?
+* How do you externalize session state to support multiple application instances?
+* How do you configure auto-scaling for Spring Boot services in Kubernetes?
+* How do you determine the appropriate number of application instances?
+* How do you use caching to reduce load on downstream services?
+* What is the difference between local caching and distributed caching?
+* How do you implement distributed caching using Redis?
+* How do you prevent cache stampedes during high traffic?
+* How do you choose an appropriate cache expiration policy?
+* How do you scale database access when application traffic increases?
+* How do you optimize database connection pools for horizontally scaled services?
+* How do you identify and resolve slow database queries?
+* How do you use read replicas to improve database read scalability?
+* How do you decide when database sharding is necessary?
+* How do you partition Kafka topics to increase consumer throughput?
+* How do you determine the appropriate number of Kafka partitions?
+* How do you scale Kafka consumers while preserving message ordering?
+* How do you use asynchronous processing to improve API throughput?
+* How do you implement pagination and filtering for large datasets?
+* How do you prevent one heavily used service from becoming a system-wide bottleneck?
+* How do you handle backpressure when downstream services cannot process requests quickly enough?
+* How do you configure timeouts and bulkheads to protect services under high load?
+* How do you measure scalability using load testing and stress testing?
+* How do you use JVM profiling to identify performance bottlenecks?
+* How do you monitor CPU, memory, thread pools, and connection pools under load?
+* How do you maintain service availability during rolling deployments and scaling events?

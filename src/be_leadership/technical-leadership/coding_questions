@@ -1,0 +1,30 @@
+* Write a Java class that demonstrates the SOLID principles through a practical example.
+* Implement the Strategy pattern to support multiple payment processing strategies.
+* Implement the Factory pattern to create different notification providers.
+* Use the Observer pattern to notify services when an order status changes.
+* Implement a Chain of Responsibility for request validation and authorization.
+* Design a thread-safe Singleton in Java and explain its limitations.
+* Write a Java program that uses ExecutorService to process multiple tasks concurrently.
+* Implement a producer-consumer solution using BlockingQueue.
+* Write a thread-safe counter using AtomicInteger and compare it with synchronized.
+* Implement a bounded retry mechanism with exponential backoff.
+* Write a Java service that prevents duplicate requests using an idempotency key.
+* Implement a circuit breaker abstraction for calls to an external service.
+* Write unit tests for a service using JUnit and Mockito.
+* Implement global exception handling in a Spring Boot REST API.
+* Design a REST API with request validation, pagination, sorting, and consistent error responses.
+* Implement a Spring Boot service using constructor injection and explain its benefits.
+* Write a Java program to process a large collection using Streams without unnecessary intermediate allocations.
+* Implement a cache with expiration and thread-safe access.
+* Write a Java program that detects and handles resource leaks using try-with-resources.
+* Implement a service that uses CompletableFuture to call multiple downstream services concurrently.
+* Design a Spring Boot REST API with proper transaction boundaries using @Transactional.
+* Write integration tests for a Spring Boot application using MockMvc and a test database.
+* Implement optimistic locking with JPA to prevent lost updates.
+* Design an event-driven workflow using Spring Boot and a message broker.
+* Implement a transactional outbox pattern to reliably publish domain events.
+* Write a Java program that demonstrates deadlock and then refactor it to avoid deadlock.
+* Implement a service that applies timeouts and handles failures when calling an external REST API.
+* Design a Spring Boot application with OAuth 2.0 resource-server security and role-based authorization.
+* Implement structured logging and correlation IDs for tracing requests across services.
+* Design a scalable Java and Spring Boot system with API gateways, service discovery, observability, resilience, security, automated testing, and CI/CD.

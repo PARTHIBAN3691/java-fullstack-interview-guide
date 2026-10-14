@@ -1,0 +1,21 @@
+
+* Explain how the JVM's reachability analysis determines whether an object can be reclaimed.
+* Explain the difference between strongly reachable, softly reachable, weakly reachable, and phantom reachable objects.
+* How does phantom reachability differ from weak reachability during garbage collection?
+* Why is the timing of soft-reference clearing not guaranteed by the Java specification?
+* How can memory pressure influence the treatment of soft references?
+* Why are weak references not a complete solution for preventing memory leaks?
+* How can a value in a `WeakHashMap` indirectly keep its key strongly reachable and prevent the entry from disappearing?
+* How can reference cycles affect garbage collection when strong references are involved?
+* How do reference processing and reference queues interact with garbage collection?
+* What guarantees does the Java API provide about enqueuing cleared references, and what timing should applications avoid assuming?
+* How can a `PhantomReference` and `ReferenceQueue` help coordinate cleanup of an associated external resource?
+* Why should phantom references not replace deterministic resource cleanup using `try-with-resources`?
+* What are the risks of relying on garbage collection for releasing file handles, sockets, or native memory?
+* How can a weak-reference-based listener registry avoid retaining listener objects unnecessarily?
+* How can a cache built with `SoftReference` exhibit unpredictable hit rates and performance?
+* How would you design a cache that uses explicit size limits and eviction rather than relying on soft-reference behavior?
+* How can reference types be used to track object lifecycle without unintentionally retaining the tracked objects?
+* What is the difference between `Reference.reachabilityFence()` and ordinary strong-reference usage?
+* In what situations can `Reference.reachabilityFence()` be important when interacting with native resources?
+* How would you diagnose a memory leak caused by unexpected strong references in an application that already uses weak references?

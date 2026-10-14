@@ -1,0 +1,21 @@
+
+* What is a thread in Java?
+* What is multithreading, and why is it used?
+* What is the difference between a process and a thread?
+* What are the advantages of using threads in Java?
+* How can you create a thread in Java?
+* What is the difference between extending the `Thread` class and implementing the `Runnable` interface?
+* What is the purpose of the `start()` method?
+* What happens when you call the `run()` method directly instead of calling `start()`?
+* Can you call the `start()` method twice on the same thread object?
+* What are the different states in the Java thread lifecycle?
+* What is the difference between the `NEW` and `RUNNABLE` thread states?
+* What is the purpose of the `sleep()` method?
+* What is the difference between `sleep()` and `yield()`?
+* What is the purpose of the `join()` method?
+* What is the difference between `isAlive()` and `isInterrupted()`?
+* What is the purpose of `currentThread()`?
+* How do you assign a name to a thread?
+* What is thread priority in Java?
+* What is a daemon thread?
+* What is the difference between a user thread and a daemon thread?

@@ -1,0 +1,26 @@
+
+* Explain the JVM architecture in detail, including the ClassLoader subsystem, Runtime Data Areas, Execution Engine, and native interfaces.
+* How does the JVM specification distinguish logical memory areas from their physical implementation?
+* How do class loading, bytecode verification, linking, and initialization contribute to runtime safety?
+* How does class identity depend on both the fully qualified class name and the defining ClassLoader?
+* How does the JVM resolve symbolic references in a class file?
+* How do stack frames store local variables, the operand stack, and runtime constant-pool references?
+* How does the JVM manage method invocation, return values, and exception propagation across stack frames?
+* What happens internally when a Java method invokes another method recursively?
+* How does HotSpot Metaspace differ from the traditional PermGen space used by older JVM implementations?
+* How does class unloading affect Metaspace utilization?
+* How can ClassLoader leaks cause Metaspace exhaustion?
+* How does the JVM coordinate object allocation, garbage collection, and thread-local allocation buffers?
+* How does escape analysis influence object allocation and potential scalar replacement?
+* How does the JIT compiler use profiling data to optimize frequently executed methods?
+* How do speculative optimizations and deoptimization affect JVM execution?
+* How do safepoints support garbage collection and other JVM operations?
+* What is the relationship between safepoints, thread state transitions, and garbage collection?
+* How does the JVM handle synchronization, monitor acquisition, and lock optimization?
+* How does the JVM execute native code through JNI, and what performance costs can arise?
+* How would you distinguish JVM-level memory exhaustion from an operating-system memory limit?
+* How would you investigate a JVM process that consumes high native memory despite a stable Java heap?
+* How do compressed ordinary object pointers (CompressedOops) affect object layout and memory usage?
+* How does the JVM manage direct byte buffers and other off-heap memory?
+* How would you diagnose a JVM that has high CPU usage, frequent garbage collection, and low application throughput?
+* How would you analyze a JVM thread dump, heap dump, and garbage-collection log together?

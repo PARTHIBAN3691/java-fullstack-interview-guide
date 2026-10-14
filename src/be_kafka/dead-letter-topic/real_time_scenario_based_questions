@@ -1,0 +1,30 @@
+* A Kafka consumer repeatedly fails to process a message because a required field is missing. How would you route the message to a Dead Letter Topic and investigate the cause?
+* A production consumer is stuck retrying the same malformed JSON record. How would you stop the retry loop without losing the record?
+* Your Spring Boot Kafka consumer processes thousands of messages per second, and dead-letter volume suddenly increases. How would you investigate the issue?
+* The Dead Letter Topic receives messages, but the original consumer continues to process the same records. What could be wrong?
+* A message is successfully published to the Dead Letter Topic, but the consumer offset is not committed. How would you analyze the resulting duplicates?
+* The Dead Letter Topic broker becomes unavailable during recovery. How should the application behave?
+* A failed message contains sensitive customer information. How would you secure it in the Dead Letter Topic?
+* A downstream payment service returns intermittent errors. How would you decide between retrying the message and sending it to a Dead Letter Topic?
+* A permanent business validation error occurs while processing an order event. How would you prevent unnecessary retries?
+* A Dead Letter Topic grows continuously and consumes most of the Kafka cluster storage. What steps would you take?
+* A team manually republishes dead-letter messages and accidentally creates duplicate payments. How would you redesign the replay workflow?
+* A dead-letter replay causes events to be processed out of order. How would you prevent this from affecting business state?
+* A Kafka message fails because its schema version is incompatible with the consumer. How would you diagnose and recover it?
+* The dead-letter producer fails because the original message exceeds the configured maximum record size. How would you resolve the issue?
+* Your application uses batch listeners, and one record in a batch fails. How would you ensure that valid records are not unnecessarily reprocessed?
+* The consumer is receiving deserialization exceptions before the listener method is invoked. How would you configure dead-letter handling?
+* Messages are routed to the wrong Dead Letter Topic because multiple source topics share a naming convention. How would you correct the routing?
+* The dead-letter message loses its original Kafka key and headers. How would you preserve the information required for recovery?
+* The operations team wants to replay only messages that failed because of a temporary downstream outage. How would you classify and select records?
+* A replayed message fails again and is sent back to the same Dead Letter Topic. How would you prevent an endless replay cycle?
+* A consumer crashes after a business operation fails but before dead-letter publishing finishes. How would you ensure reliable recovery?
+* A financial transaction event reaches the Dead Letter Topic after several retries. How would you make the investigation and replay auditable?
+* A Dead Letter Topic consumer is lagging while failed-message production continues. How would you scale the recovery process?
+* Dead-letter messages contain exception stack traces that expose internal system details. How would you reduce the security risk?
+* The team wants alerts whenever dead-letter messages exceed a threshold for a particular source topic. How would you implement monitoring?
+* A message is valid JSON but violates a business rule. How would you distinguish this failure from a transient infrastructure exception?
+* Your application uses Kafka transactions, but dead-letter publishing and offset recovery do not behave as expected. How would you investigate the transaction configuration?
+* A new application deployment causes a sudden spike in dead-letter messages. How would you determine whether the issue is caused by code, configuration, or data?
+* You need to recover only selected records from a Dead Letter Topic without disturbing other records. How would you design the replay process?
+* Your organization requires dead-letter records to be retained for audit purposes and deleted only after approval. How would you design retention, access control, and cleanup?

@@ -1,0 +1,30 @@
+* Write an SQL query to retrieve all employees whose salary is greater than 50000.
+* Write an SQL query to retrieve the second-highest salary from an employee table.
+* Write an SQL query to retrieve the Nth-highest distinct salary using DENSE_RANK().
+* Write an SQL query to find duplicate email addresses and their occurrence counts.
+* Write an SQL query to delete duplicate records while retaining the row with the smallest ID.
+* Write an SQL query to retrieve the highest-paid employee in each department.
+* Write an SQL query to find employees earning more than their department's average salary.
+* Write an SQL query to retrieve customers who have never placed an order.
+* Write an SQL query to find the latest order for each customer using ROW_NUMBER().
+* Write an SQL query to calculate a running total of transactions ordered by transaction date.
+* Write an SQL query to calculate month-over-month revenue growth.
+* Write an SQL query to retrieve employees who joined in the last 30 days.
+* Write an SQL query to find consecutive login dates for each user.
+* Write an SQL query using a recursive CTE to retrieve all descendants in an employee hierarchy.
+* Write an SQL query to identify departments that have no employees.
+* Write an SQL query to find customers whose total purchase amount exceeds a specified threshold.
+* Write an SQL query to pivot monthly sales records into separate month columns.
+* Write an SQL query to perform an UPSERT using the syntax supported by your database.
+* Write an SQL transaction that transfers money between two accounts and rolls back if either update fails.
+* Write an SQL query that safely updates inventory only when sufficient stock is available.
+* Write an SQL query to implement keyset pagination using a timestamp and unique ID.
+* Write an SQL query to identify blocking sessions and lock waits in PostgreSQL or MySQL.
+* Write an SQL query to inspect table sizes and index sizes in PostgreSQL or MySQL.
+* Write a Java JDBC method using PreparedStatement to retrieve employees by department ID.
+* Implement a Java JDBC method that inserts an order and retrieves its generated primary key.
+* Implement a Spring Boot service using @Transactional to save an order and its order items atomically.
+* Implement a Spring Data JPA repository method using a custom JPQL query with JOIN and filtering conditions.
+* Write a Spring Data JPA query using a projection to retrieve only the required fields.
+* Implement a Java method that executes a JDBC batch insert and handles batch failures appropriately.
+* Write a Java integration test that verifies SQL query correctness, transaction rollback, and concurrent update behavior.

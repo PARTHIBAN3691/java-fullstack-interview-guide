@@ -1,0 +1,30 @@
+* Explain how the browser loads, buffers, decodes, and plays an HTML video.
+* How would you optimize a webpage containing multiple large video files?
+* How do codecs and containers differ in multimedia delivery?
+* What is the difference between MP4, WebM, and Ogg media formats?
+* How do video codecs affect file size, quality, and browser compatibility?
+* How would you troubleshoot a video that works in one browser but not another?
+* What is the role of MIME types when serving audio and video files?
+* How can incorrect Content-Type headers prevent multimedia playback?
+* How do HTTP range requests improve video playback and seeking?
+* What server-side support is required for efficient video seeking?
+* How would you implement lazy loading for embedded video content?
+* What are the trade-offs between preload="metadata" and preload="none"?
+* How can you measure multimedia loading and playback performance?
+* What is the role of the HTMLMediaElement API?
+* How do currentTime, duration, paused, and ended properties work?
+* How do play() and pause() methods control multimedia playback?
+* Why can the play() method return a rejected promise?
+* How would you detect and handle media playback errors using JavaScript?
+* What are the loadedmetadata, canplay, playing, waiting, and ended events?
+* How would you implement a custom video player with keyboard accessibility?
+* How can you synchronize subtitles, animations, and other page elements with video playback?
+* How would you support adaptive bitrate streaming in a browser?
+* What are HLS and MPEG-DASH, and how do they differ from a simple video file?
+* How can Media Source Extensions enable adaptive streaming?
+* What is the role of Encrypted Media Extensions in protected media playback?
+* How do Content Security Policy directives affect embedded multimedia?
+* How can cross-origin media affect canvas processing or media access?
+* How would you prevent layout shifts caused by delayed video loading?
+* How would you design multimedia delivery for users on slow or unstable networks?
+* What strategies help ensure multimedia playback works across desktop and mobile browsers?

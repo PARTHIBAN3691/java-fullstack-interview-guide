@@ -1,0 +1,30 @@
+* A Java API has a 200 ms average response time with 100 users but reaches 2 seconds with 2,000 users. How would you investigate?
+* Your application meets the average response-time SLA but fails the P99 SLA. What would you check?
+* CPU reaches 95% during a performance test while throughput stops increasing. What does this indicate?
+* A Spring Boot application experiences frequent full garbage collections under load. How would you investigate?
+* Response time increases continuously during a two-hour test while traffic remains constant. What could be happening?
+* Your Java application has low CPU usage but very high response times. What bottlenecks would you investigate?
+* A REST API performs well individually but becomes slow when several dependent services are involved. How would you isolate the problem?
+* A database query takes 20 ms with one user but 1 second under load. How would you investigate?
+* A connection pool reaches its maximum size during peak traffic. How would you determine whether the pool size or database is the problem?
+* A Java service shows increasing thread count and intermittent timeouts during a performance test. How would you diagnose it?
+* A new application release increases P95 latency by 40%. How would you identify the root cause?
+* An application scales from two instances to ten instances but throughput increases only slightly. What would you investigate?
+* A cache-enabled performance test passes, but the same test fails with an empty cache. How would you analyze the difference?
+* Your load generator reaches 100% CPU before the target application is saturated. How would you fix the test setup?
+* A microservices application experiences cascading timeouts during peak traffic. How would you reproduce and analyze the issue?
+* A Kafka consumer cannot keep up with the producer rate. How would you measure and improve performance?
+* A batch-processing application creates a growing backlog during peak hours. How would you determine its processing capacity?
+* Your application performs well for 15 minutes but becomes slower after several hours. How would you investigate?
+* A third-party API has strict rate limits and is slowing your performance test. How would you design the test?
+* A payment service has high latency only during concurrent transactions. How would you investigate the issue?
+* An API has good throughput but a high error rate under heavy load. How would you troubleshoot it?
+* Your production environment is larger than the performance test environment. How would you extrapolate test results safely?
+* Performance results vary significantly between repeated executions of the same test. What factors would you investigate?
+* Your application performs well in development but poorly in production. How would you compare the environments?
+* A memory leak appears only after several hours of sustained traffic. How would you prove and locate it?
+* A service experiences sudden latency spikes even though average CPU and memory utilization are normal. What would you investigate?
+* A deployment causes a sudden increase in garbage collection time. How would you determine whether the code or JVM configuration is responsible?
+* An application has acceptable performance at normal traffic but fails during a sudden traffic spike. How would you test and improve its resilience?
+* You need to establish performance SLAs for a new Java API. Which metrics would you define and why?
+* How would you present a performance bottleneck, root cause, evidence, and recommended solution to a technical lead?

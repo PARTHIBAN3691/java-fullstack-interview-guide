@@ -1,0 +1,16 @@
+
+* Your payment service supports card, wallet, and bank transfer payments. How would you use sealed interfaces to restrict the supported payment types?
+* Your application has a fixed set of domain events, and invalid event implementations must be prevented. How could sealed classes help?
+* Your team needs immutable DTOs with less boilerplate. How would you decide whether to use Java 17 records or conventional classes?
+* A record stores a mutable list of permissions, and callers can change the original list after construction. How would you prevent unintended modifications?
+* Your code contains repeated `instanceof` checks followed by explicit casts. How would you refactor it using Java 17 pattern matching?
+* Your application uses a sealed class hierarchy, but a new subtype must be introduced by another module. What design and module restrictions would you consider?
+* A logging service converts byte arrays into hexadecimal strings. How could `HexFormat` simplify the implementation?
+* Your application needs hexadecimal output with a custom separator and a prefix for each byte. How would you implement it with `HexFormat`?
+* Your data-processing service receives hexadecimal input from an external API. How would you validate and convert it safely?
+* Your simulation service generates millions of random values concurrently. How would you evaluate the `RandomGenerator` API and generator selection?
+* Your security review finds that authentication tokens are generated using `Random`. What concerns would you raise, and what alternative would you investigate?
+* Your legacy framework uses reflection to access internal JDK classes and fails after migration to Java 17. How would you investigate and resolve the issue?
+* Your application relies on `--add-opens` flags to run on Java 17. How would you reduce this dependency over time?
+* Your team wants to use pattern matching for `switch` while maintaining Java 17 compatibility. How would you assess its preview status and build requirements?
+* Your organization is migrating from Java 11 to Java 17. How would you identify deprecated APIs, removed components, encapsulation issues, and dependency incompatibilities?

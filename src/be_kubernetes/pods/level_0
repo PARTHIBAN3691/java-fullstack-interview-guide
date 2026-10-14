@@ -1,0 +1,30 @@
+* What is a Pod in Kubernetes?
+* Why is a Pod considered the smallest deployable unit in Kubernetes?
+* What is the difference between a Pod and a container?
+* Can a Pod contain multiple containers?
+* What are the different types of containers that can run inside a Pod?
+* What is a multi-container Pod?
+* What is the purpose of the main container in a Pod?
+* What is an init container?
+* What is a sidecar container?
+* What is the difference between an init container and a sidecar container?
+* How do containers inside the same Pod communicate with each other?
+* Do containers inside a Pod share the same IP address?
+* Can containers inside the same Pod share storage?
+* What is the lifecycle of a Kubernetes Pod?
+* What are the common Pod phases?
+* What is the difference between Pending and Running Pod phases?
+* What does the Succeeded Pod phase indicate?
+* What does the Failed Pod phase indicate?
+* What is the Unknown Pod phase?
+* What is a Pod manifest?
+* What is the purpose of the metadata section in a Pod YAML file?
+* What is the spec section in a Pod manifest?
+* What is the purpose of labels in a Pod?
+* What are annotations in a Pod?
+* What is the difference between labels and annotations?
+* What is a Pod IP address?
+* What is a Pod restart policy?
+* What are the different restart policies supported by Pods?
+* What is the difference between a Pod and a Deployment?
+* How can you list and describe Pods using kubectl?

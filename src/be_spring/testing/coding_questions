@@ -1,0 +1,30 @@
+* Write a JUnit 5 test for a Java method that adds two integers.
+* Write a JUnit test that verifies whether a string is null or empty.
+* Write a parameterized JUnit test to validate multiple email address inputs.
+* Write a JUnit test that verifies an exception is thrown for invalid input.
+* Write a Mockito test for a service method that retrieves a user from a repository.
+* Write a unit test that mocks a repository returning Optional.empty().
+* Write a Mockito test that verifies a repository save method is invoked exactly once.
+* Write a test for a service method that calculates the total price of an order.
+* Write a unit test for a service method that applies a discount based on customer type.
+* Write a JUnit test for a method that filters a list of employees by department.
+* Write a Spring Boot test for a REST controller using MockMvc.
+* Write a MockMvc test that verifies a REST endpoint returns HTTP 200 and a JSON response.
+* Write a controller test that verifies HTTP 404 when a requested resource is missing.
+* Write a controller test that verifies request validation errors return HTTP 400.
+* Write a test for a REST endpoint that accepts query parameters and pagination details.
+* Write a Spring Boot test for a global exception handler using @ControllerAdvice.
+* Write a @DataJpaTest that saves and retrieves an entity from a database.
+* Write a repository test for a custom JPQL query with multiple conditions.
+* Write a test that verifies a transactional service rolls back when an exception occurs.
+* Write a Spring Security test that verifies an unauthenticated request receives HTTP 401.
+* Write a security test that verifies a user with the ADMIN role can access a protected endpoint.
+* Write a test that validates JWT authentication for a secured REST API.
+* Write a Mockito test for a service that calls an external API through WebClient.
+* Write a WireMock test that simulates a successful external API response and a server error.
+* Write a Testcontainers integration test for a Spring Data JPA repository using PostgreSQL.
+* Write a test for a service that retries an operation when a temporary exception occurs.
+* Write a test that verifies a circuit breaker opens after repeated failures.
+* Write a test for a Kafka consumer that processes a message and handles duplicate events safely.
+* Write a test for a Spring Boot service that publishes an application event.
+* Write a complete testing example for a Spring Boot CRUD application using JUnit 5, Mockito, MockMvc, and integration tests.

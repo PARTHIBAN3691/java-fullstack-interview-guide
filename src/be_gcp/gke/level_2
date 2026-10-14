@@ -1,0 +1,30 @@
+* Explain the architecture of a production-grade GKE cluster running multiple Java microservices.
+* How do you choose between GKE Standard and GKE Autopilot for an enterprise workload?
+* How do you design a highly available GKE cluster across multiple zones?
+* How do you design a regional GKE cluster for production workloads?
+* How do you configure multi-cluster deployments across multiple regions?
+* How do you design disaster recovery for Java microservices running on GKE?
+* How do you implement zero-downtime deployments for Spring Boot applications?
+* How do you configure canary and blue-green deployments in GKE?
+* How do you design autoscaling for workloads with unpredictable traffic patterns?
+* How do you tune JVM heap size and garbage collection for Java applications running in containers?
+* How do you diagnose CPU throttling and memory pressure in Java pods?
+* How do you prevent Java containers from being terminated because of out-of-memory errors?
+* How do you determine suitable CPU and memory requests and limits for Java microservices?
+* How do you optimize pod scheduling using node affinity, pod affinity, and anti-affinity?
+* How do you use taints and tolerations to isolate workloads across node pools?
+* How do you configure PodDisruptionBudgets to maintain availability during node upgrades?
+* How do you safely upgrade GKE cluster versions and node pools?
+* How do you implement network policies to restrict communication between microservices?
+* How do you secure GKE workloads using least-privilege IAM and Kubernetes RBAC?
+* How do you prevent privileged containers and enforce workload security policies?
+* How do you secure container images and detect vulnerabilities before deployment?
+* How do you configure Binary Authorization for trusted container deployments?
+* How do you implement secret management using Google Cloud Secret Manager and Workload Identity Federation for GKE?
+* How do you design service-to-service authentication and authorization for Java microservices?
+* How do you troubleshoot DNS resolution and service discovery issues inside GKE?
+* How do you investigate network latency between pods, nodes, and external services?
+* How do you optimize cluster capacity and reduce infrastructure costs without affecting availability?
+* How do you design observability using structured logs, metrics, distributed tracing, and alerting?
+* How do you implement GitOps-based deployment management for GKE?
+* How do you design a secure multi-tenant GKE platform for multiple development teams?

@@ -1,0 +1,30 @@
+* An API call returns a Promise. How would you handle both successful responses and errors?
+* A Promise is rejected, but the error is not displayed to the user. How would you debug the issue?
+* A then() callback returns a value, but the next callback receives undefined. What could be wrong?
+* A Promise chain stops executing after one callback throws an exception. How would you handle the error?
+* Multiple API calls must complete before a page is displayed. Which Promise method would you use?
+* Three independent API calls run sequentially, making a page load slowly. How would you execute them concurrently?
+* An application must process several API responses even if some requests fail. Which Promise method would you consider?
+* You need the first successful result from several redundant service requests. How would you use Promise.any()?
+* You need the first settled result from multiple operations, regardless of success or failure. Which Promise method would you use?
+* A Promise resolves with another Promise. How is the final result determined?
+* A finally() callback changes the expected outcome of a Promise chain. How would you investigate it?
+* A rejected Promise is handled by catch(), but the application still reports an unhandled rejection. What could be happening?
+* An async function calls another asynchronous function without awaiting or returning its Promise. What problems could arise?
+* A try/catch block does not catch an asynchronous error. How would you modify the code?
+* An API request sometimes never completes. How would you introduce a timeout?
+* A user navigates away from a page while a fetch request is still running. How would you cancel the request?
+* An API fails intermittently because of network issues. How would you implement retry logic without overwhelming the server?
+* A batch-processing task creates thousands of concurrent requests and overloads an API. How would you limit concurrency?
+* A workflow requires one operation to finish before the next begins. How would you structure the Promise chain?
+* A workflow has independent operations followed by a dependent operation. How would you organize the execution order?
+* A Promise chain becomes difficult to read because of deeply nested callbacks. How would you refactor it?
+* A background task must continue processing successful results even when individual tasks fail. How would you design it?
+* A Promise-based database operation fails, but the transaction cleanup must still run. Where would you place the cleanup logic?
+* An application displays stale data because multiple asynchronous requests complete in an unexpected order. How would you prevent this?
+* A service must return a fallback value when an API request fails. How would you implement the fallback?
+* A Promise executor contains an asynchronous callback, and its rejection is not caught by the outer Promise. Why?
+* A Promise is created but never settled. How would you identify the source of the pending state?
+* An application becomes unresponsive because a large number of Promise callbacks are continuously queued. How would you address this?
+* You need to run several operations concurrently but stop accepting new work after a failure. How would you design the workflow?
+* You are reviewing production code that uses Promise.all(), retries, timeouts, and cancellation. What failure scenarios would you test?

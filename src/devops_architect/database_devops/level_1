@@ -1,0 +1,101 @@
+
+**Database CI/CD**
+* How would you design a database CI/CD pipeline for a Spring Boot microservices application?
+* How would you validate SQL migration scripts before they reach a shared integration environment?
+* How would you integrate database unit tests and integration tests into a CI pipeline?
+* How would you prevent concurrent pipelines from applying conflicting database changes?
+* How would you handle a database migration that passes development testing but fails in staging?
+
+**Database Migrations**
+* How would you organize migrations for a large database shared by multiple application teams?
+* How would you migrate millions of records without causing excessive locks or transaction-log growth?
+* How would you make a migration safe to retry after a partial failure?
+* How would you separate schema changes from large data backfills?
+* How would you manage migrations that require changes across tables with foreign-key dependencies?
+
+**Flyway**
+* How does Flyway determine which migrations have already been applied?
+* How would you troubleshoot a Flyway checksum mismatch in a production environment?
+* What should you do if a Flyway migration fails after partially changing the schema?
+* How would you configure Flyway in Spring Boot for different deployment environments?
+* When would you use repeatable migrations, and what risks should be considered?
+* How would you manage Flyway migrations across multiple schemas or databases?
+
+**Liquibase**
+* How would you organize Liquibase changelogs for a large application?
+* How do Liquibase preconditions help prevent unsafe changes?
+* How would you handle a failed changeset that partially modified database objects?
+* How would you generate and review SQL before executing a Liquibase deployment?
+* What are the trade-offs between formatted SQL changelogs and declarative changelogs?
+* How would you manage context and label filters across development, staging, and production?
+
+**Schema Versioning**
+* How would you coordinate schema versioning when multiple services share a database?
+* How would you detect that an application version is incompatible with the deployed schema?
+* How would you handle schema-version differences across several production regions?
+* How would you prevent developers from modifying an already-applied migration?
+* How would you design an audit trail for schema changes and approvals?
+
+**Backward-Compatible Schema Changes**
+* How would you rename a column without breaking older application instances?
+* How would you introduce a non-nullable column into a large table containing existing records?
+* How would you deploy a new column while old and new application versions run simultaneously?
+* How would you remove a deprecated database column safely?
+* How would you coordinate API and database compatibility during a rolling deployment?
+
+**Zero-Downtime Migrations**
+* How would you add an index to a large production table while minimizing blocking?
+* How would you perform a large data backfill without exhausting database resources?
+* How would you handle a migration that requires a table rewrite?
+* How would you monitor lock waits and replication lag during a production migration?
+* How would you use dual-read or dual-write strategies during a schema transition, and what consistency risks arise?
+
+**Database Rollback Strategies**
+* How would you roll back an application release when its database migration is not safely reversible?
+* How would you design a compensating migration for a destructive schema change?
+* How would you recover when a migration succeeds but application deployment fails?
+* How would you handle a failed data transformation after some records have already been updated?
+* How would you decide between a database restore, a forward fix, and a compensating migration?
+
+**Database Backup Automation**
+* How would you automate backups and retention policies for production databases?
+* How would you validate that a backup can actually be restored?
+* How would you design point-in-time recovery for a database with frequent writes?
+* How would you encrypt backups and restrict access to backup storage?
+* How would you coordinate backups with schema migrations and high-volume batch processing?
+
+**Database Replication**
+* How would you monitor replication lag and alert when it exceeds an acceptable threshold?
+* How would you handle stale reads from a replica immediately after a write?
+* How would you promote a replica when the primary database becomes unavailable?
+* How would you validate replica consistency after failover?
+* How would you prevent read traffic from overwhelming replicas and indirectly affecting primary performance?
+
+**Database Deployment Pipelines**
+* How would you separate database migration execution from application startup in a microservices deployment?
+* How would you implement approval controls for destructive database changes?
+* How would you prevent two application instances from running the same migration concurrently?
+* How would you promote a tested migration artifact across multiple environments?
+* How would you implement deployment gates based on migration duration, lock risk, and replication lag?
+
+**Database Observability**
+* How would you correlate a slow API request with a slow database query using distributed tracing?
+* How would you define database alerts that distinguish transient spikes from sustained degradation?
+* How would you monitor connection exhaustion, lock contention, deadlocks, and replication lag?
+* How would you reduce sensitive information in database logs while preserving troubleshooting value?
+* How would you establish service-level indicators for database availability and latency?
+
+**Database Performance Monitoring**
+* How would you identify the most expensive queries using execution statistics?
+* How would you determine whether a latency increase is caused by missing indexes, locking, CPU saturation, or storage latency?
+* How would you monitor query plans for regressions after schema changes?
+* How would you investigate database performance degradation that occurs only during peak traffic?
+* How would you distinguish application-side connection wait time from actual database execution time?
+
+**Connection Pool Management**
+* How would you size a connection pool for a service with variable traffic and strict latency requirements?
+* How would you calculate a reasonable aggregate connection budget across multiple service instances?
+* How would you troubleshoot connection pool exhaustion when database CPU utilization is low?
+* How do connection validation, idle timeout, maximum lifetime, and acquisition timeout work together?
+* How would you prevent a connection leak in a Java application using HikariCP?
+* How would you tune pools when several microservices share the same database?

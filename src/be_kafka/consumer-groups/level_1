@@ -1,0 +1,30 @@
+* How does Kafka coordinate consumers within a consumer group?
+* How does the group coordinator manage consumer membership?
+* How does Kafka assign partitions when a consumer joins a group?
+* How does Kafka reassign partitions when a consumer leaves a group?
+* What is the difference between eager and cooperative rebalancing?
+* What are the range, round-robin, sticky, and cooperative sticky assignment strategies?
+* How do you configure a consumer group in a Spring Boot application?
+* How do you configure multiple consumers using the same group ID?
+* How do you configure separate consumer groups for independent business applications?
+* How does Kafka ensure that each partition is assigned to at most one active consumer in a group?
+* How do consumer groups provide parallel message processing?
+* How do you determine the optimal number of consumers for a topic?
+* How do you calculate the maximum consumer parallelism for a topic?
+* What happens when a consumer group has more consumers than available partitions?
+* How do `session.timeout.ms` and `heartbeat.interval.ms` affect group membership?
+* What is the purpose of `max.poll.interval.ms`?
+* How can long-running processing cause consumer group rebalances?
+* How do static membership and `group.instance.id` help reduce unnecessary rebalances?
+* How do you monitor consumer group lag using Kafka command-line tools?
+* How do you investigate a consumer group that is not receiving messages?
+* How do you reset consumer group offsets safely?
+* What is the difference between resetting offsets to earliest, latest, and a specific timestamp?
+* How do committed offsets affect message recovery after a consumer restart?
+* How do manual offset commits help control message-processing reliability?
+* How do you implement retry and dead-letter processing for a consumer group?
+* How do you handle poison messages without blocking an entire partition indefinitely?
+* How do you manage consumer groups during application deployments?
+* How do you configure Kafka consumers to avoid excessive rebalances during rolling deployments?
+* How do you secure consumer groups using Kafka ACLs?
+* How do you test consumer group behavior in a Spring Boot application?

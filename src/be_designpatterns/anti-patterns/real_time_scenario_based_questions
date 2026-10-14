@@ -1,0 +1,30 @@
+* A Java service class has grown to 2,000 lines and handles authentication, business rules, database operations, and notifications. How would you investigate and refactor it?
+* Multiple teams copy the same validation logic into different services, and the implementations gradually diverge. How would you address this problem?
+* A Spring Boot application fails to start because two services depend on each other. How would you investigate the circular dependency and redesign the components?
+* A payment application contains many magic numbers representing transaction statuses and fee thresholds. How would you make the logic safer and easier to maintain?
+* A production defect requires changes to ten unrelated classes whenever a business rule changes. Which anti-patterns might be present, and how would you reduce the change impact?
+* A base class contains dozens of methods, but most subclasses override them with empty implementations. How would you redesign the hierarchy?
+* A Java application uses a Singleton to store user-specific information, causing data leakage between concurrent requests. How would you diagnose and fix the problem?
+* Several controllers contain nearly identical business logic, but each has slightly different behavior. How would you consolidate the logic without introducing a God Object?
+* A developer creates a generic framework for a feature that currently has only one implementation. How would you decide whether to retain or remove the abstraction?
+* A Spring Boot service contains deeply nested conditional statements for discounts, taxes, and payment methods. How would you simplify the design?
+* A legacy application has hundreds of duplicated SQL queries and business rules. How would you identify safe refactoring opportunities?
+* A microservice deployment frequently fails because a shared library change breaks multiple dependent services. How would you investigate and reduce the coupling?
+* A service uses a catch-all exception handler that converts every failure into HTTP 200 with an error message in the response body. How would you correct the design?
+* A production application logs the same exception at every layer, making it difficult to identify the original failure. How would you eliminate the logging anti-pattern?
+* A team introduces interfaces for nearly every class, resulting in dozens of unnecessary files and difficult navigation. How would you evaluate and simplify the design?
+* A domain entity contains only getters and setters, while all business rules are implemented in a large service class. How would you decide whether to change the domain model?
+* A batch-processing application has one manager class responsible for reading files, validating records, writing to the database, and generating reports. How would you split the responsibilities?
+* A Java application uses inheritance to share behavior between unrelated business concepts. New requirements cause frequent regressions. How would you redesign the relationships?
+* A high-traffic service performs expensive optimization work before profiling confirms a performance issue. How would you assess whether the optimization is justified?
+* A developer introduces a global mutable cache to avoid passing data between methods. Concurrent requests begin returning inconsistent results. How would you investigate and redesign the solution?
+* A Spring Boot application contains many static utility methods that directly access environment variables and database connections. How would you improve testability and dependency management?
+* A service method performs validation, persists an order, sends an email, and publishes an event in one transaction. Failures cause inconsistent behavior. How would you restructure the workflow?
+* A monolithic application has packages that depend on each other's internal implementation details. How would you identify the architectural anti-patterns and define better boundaries?
+* A new feature requires changing many subclasses because business logic is distributed throughout a deep inheritance hierarchy. How would you refactor it incrementally?
+* A production incident reveals that one shared helper method has become a critical dependency for dozens of unrelated features. How would you reduce the risk without breaking existing consumers?
+* A team wants to replace an entire legacy module because it contains several anti-patterns, but automated tests are limited. How would you plan a safer migration?
+* A service contains numerous boolean flags that alter the behavior of a single method. How would you decide whether to introduce separate classes or a Strategy implementation?
+* A database repository returns entities directly to every API client, creating tight coupling between persistence and API contracts. How would you correct the design?
+* Static analysis reports hundreds of code smells in an old Java application. How would you distinguish high-risk architectural anti-patterns from low-priority cleanup?
+* After a major refactoring, the number of classes doubles and developers report that the code is harder to understand. How would you determine whether the refactoring has gone too far?

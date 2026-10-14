@@ -1,0 +1,30 @@
+* Write a Kubernetes YAML manifest to deploy Prometheus in a dedicated namespace.
+* Create a Kubernetes Service manifest that exposes Prometheus within the cluster.
+* Write a ServiceMonitor manifest to scrape metrics from a Spring Boot application.
+* Create a PodMonitor manifest for collecting metrics from Pods with specific labels.
+* Write a Kubernetes Deployment manifest for Grafana with persistent storage.
+* Create a ConfigMap containing a Prometheus scrape configuration for a Spring Boot service.
+* Write a Prometheus configuration that discovers Kubernetes Pods using label selectors.
+* Create a Prometheus alerting rule that detects high CPU utilization for a sustained period.
+* Write an alerting rule that detects a high rate of HTTP 5xx responses from a Spring Boot application.
+* Create a PromQL query to calculate the request rate of a Spring Boot service.
+* Write a PromQL query to calculate the 95th percentile HTTP request latency using histogram metrics.
+* Create a PromQL query to identify Pods with frequent container restarts.
+* Write a PromQL query to monitor JVM heap utilization in a Spring Boot application.
+* Create a PromQL query to monitor JVM garbage collection pause duration.
+* Write a PromQL query to identify containers experiencing CPU throttling.
+* Create a PromQL query that detects Pods whose memory usage is close to their configured limits.
+* Write a PromQL query to calculate the percentage of available replicas for a Deployment.
+* Create a Prometheus alert that detects Kubernetes nodes in a NotReady state.
+* Write a Prometheus alert that detects failed or delayed Kubernetes CronJobs.
+* Create a Spring Boot configuration that exposes Prometheus metrics through Micrometer and Actuator.
+* Write a Java custom Micrometer counter to track successfully processed business transactions.
+* Create a Java custom timer to measure the execution time of a batch-processing operation.
+* Write Java code to expose a custom gauge for monitoring the size of an internal processing queue.
+* Create a Spring Boot configuration that tags metrics with service and environment information without introducing high-cardinality labels.
+* Write an OpenTelemetry configuration example for exporting Spring Boot traces to an observability backend.
+* Create a Kubernetes manifest that securely exposes the required Actuator metrics endpoint to Prometheus.
+* Write a shell script that checks Prometheus target health and reports targets that are down.
+* Create a shell script that collects Pod status, restart counts, recent events, and logs for troubleshooting.
+* Write a monitoring validation script that checks application health, HTTP error rate, and latency before and after deployment.
+* Design a complete monitoring configuration for a production Spring Boot application with Prometheus, Grafana, Alertmanager, JVM metrics, Kubernetes metrics, and actionable alerts.

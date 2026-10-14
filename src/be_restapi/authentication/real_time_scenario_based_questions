@@ -1,0 +1,30 @@
+* How would you design an authentication architecture for a large-scale REST API platform?
+* How do you choose between session-based authentication, JWT, opaque tokens, and API keys?
+* What are the security and operational trade-offs of stateless JWT authentication?
+* How do you implement centralized authentication across multiple REST API services?
+* How would you integrate an enterprise identity provider using OAuth 2.0 and OpenID Connect?
+* How do you implement the OAuth 2.0 Authorization Code flow with PKCE securely?
+* How do you validate JWTs using an identity provider's JWKS endpoint?
+* How do you handle JWT signing-key rotation without interrupting active sessions?
+* How do you distinguish between an ID token, access token, and refresh token?
+* How do you validate JWT issuer, audience, signature, expiration, and permitted algorithms?
+* How do you prevent algorithm-confusion attacks and insecure JWT verification?
+* How would you revoke access to a user whose JWT remains valid for another 30 minutes?
+* How do you design secure refresh token rotation and detect refresh token reuse?
+* How do you handle concurrent refresh requests from multiple devices or browser tabs?
+* How do you manage user sessions across multiple devices and support remote logout?
+* How do you secure service-to-service authentication in a microservices architecture?
+* When would you use mutual TLS instead of OAuth 2.0 client credentials?
+* How do you implement workload identity without distributing long-lived client secrets?
+* How do you prevent confused-deputy attacks and enforce correct token audience restrictions?
+* How do you securely propagate user identity across multiple downstream REST APIs?
+* How do you prevent credential stuffing, brute-force attacks, and distributed login abuse?
+* How do you combine MFA, risk-based authentication, and step-up authentication?
+* How do you protect browser-based applications against CSRF and token theft?
+* What are the security trade-offs of storing tokens in browser local storage versus secure cookies?
+* How do you design authentication for APIs that handle sensitive financial transactions?
+* How do you prevent replay attacks and enforce transaction-specific authentication?
+* How do you implement secure key management using a KMS or secrets manager?
+* How do you audit authentication events while preventing credentials and tokens from leaking into logs?
+* How do you migrate from legacy Basic Authentication to OAuth 2.0 or JWT without downtime?
+* How would you design an authentication system that remains secure and available during identity-provider outages?

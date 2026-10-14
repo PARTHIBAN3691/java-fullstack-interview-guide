@@ -1,0 +1,30 @@
+* How would you design enterprise authentication and authorization for a Java microservices platform using Microsoft Entra ID?
+* How would you implement SSO across multiple Spring Boot applications hosted in Azure?
+* How would you design authentication for a public-facing application that has both web and mobile clients?
+* How would you secure communication between microservices using OAuth 2.0 client credentials flow?
+* How would you implement token exchange or on-behalf-of authentication when a backend calls another API on behalf of a signed-in user?
+* How would you choose between managed identity, workload identity federation, and client credentials authentication?
+* How would you eliminate long-lived client secrets from a Java application's authentication architecture?
+* How would you design authorization using app roles, groups, and application-specific permissions?
+* How would you handle large group memberships when group claims are omitted from a JWT?
+* How would you implement fine-grained authorization when Entra ID roles alone are insufficient?
+* How would you validate JWT signing keys and handle signing-key rotation?
+* How would you design token validation for APIs serving requests from multiple Entra ID tenants?
+* How would you prevent token substitution and confused-deputy vulnerabilities in a multi-API architecture?
+* How would you distinguish an ID token from an access token and prevent an API from accepting the wrong token type?
+* How would you handle delegated permissions and application permissions securely across different API operations?
+* How would you design least-privilege Microsoft Graph permissions for an enterprise Java application?
+* How would you secure a daemon or background Java service that accesses Microsoft Graph without an interactive user?
+* How would you design authentication for workloads running in Azure Kubernetes Service?
+* How would you configure workload identity federation for a Kubernetes-hosted Java application?
+* How would you implement tenant isolation in a multi-tenant SaaS application using Entra ID?
+* How would you handle tenant-specific authorization and prevent cross-tenant data access?
+* How would you design identity lifecycle management when employees join, change roles, or leave an organization?
+* How would you integrate Entra ID with an enterprise identity provider using SAML or OIDC?
+* How would you troubleshoot intermittent authentication failures caused by token caching or identity-provider configuration?
+* How would you design a secure authentication strategy for APIs behind Azure API Management?
+* How would you combine API Management token validation with Spring Security authorization?
+* How would you handle certificate-based client authentication and certificate rotation in a Java application?
+* How would you audit and monitor authentication failures, suspicious sign-ins, and application-permission usage?
+* How would you design a disaster-recovery strategy for critical enterprise applications that depend on Entra ID?
+* How would you assess the security risks of granting tenant-wide admin consent to an application?

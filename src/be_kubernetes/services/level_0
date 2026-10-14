@@ -1,0 +1,30 @@
+* What is a Kubernetes Service?
+* Why do we need Services in Kubernetes?
+* What are the different types of Kubernetes Services?
+* What is a ClusterIP Service?
+* What is a NodePort Service?
+* What is a LoadBalancer Service?
+* What is an ExternalName Service?
+* What is the difference between a Pod and a Service?
+* How does a Service communicate with Pods?
+* What is a Service selector?
+* What are Service endpoints?
+* What is an EndpointSlice in Kubernetes?
+* What is the role of labels in Kubernetes Services?
+* What is a Service port?
+* What is a targetPort in a Service?
+* What is a nodePort in a Service?
+* What is the difference between port and targetPort?
+* What is the default Service type in Kubernetes?
+* How does a Service provide stable networking for Pods?
+* Can a Service route traffic to multiple Pods?
+* What happens when a Pod is deleted behind a Service?
+* How does a Service discover matching Pods?
+* What is a headless Service?
+* What is the purpose of clusterIP: None?
+* How do you expose a Deployment using a Service?
+* Can a Service exist without a selector?
+* What is the difference between internal and external Services?
+* How can you check the Services available in a namespace?
+* How do you describe a Kubernetes Service?
+* How do you troubleshoot a Service that cannot reach its Pods?

@@ -1,0 +1,26 @@
+
+* Your organization maintains a large Java application with multiple teams and hundreds of packages. How could Java 9 modules improve encapsulation and dependency management?
+* A modular application fails to start because a required module cannot be found. How would you troubleshoot the issue?
+* A third-party library uses reflection to access a JDK internal package and fails after upgrading to Java 9. How would you investigate and resolve the problem?
+* Your application has several modules, but one module needs access to only a limited public API from another module. How would you design the module declarations?
+* Two modules contain classes in the same package. What problems can arise, and how would you resolve the split-package issue?
+* A legacy application depends on several third-party JARs without explicit module descriptors. How would you approach migration to JPMS?
+* A service-provider implementation must be discovered by a consumer module without directly depending on its implementation class. How would you use the Java 9 module system?
+* Your team wants to experiment with a Java expression without creating a complete class and main method. How would JShell help?
+* An interface contains several default methods with duplicated internal logic. How could Java 9 private interface methods improve maintainability?
+* An API returns a collection that callers must not modify. How could `List.of()` or `Map.of()` help enforce this requirement?
+* A configuration Map must contain several fixed entries and must reject duplicate keys. Which Java 9 factory methods would you consider?
+* A collection must allow null values and later modifications. Why might `List.of()` be unsuitable, and what alternatives would you consider?
+* A repository returns `Optional<Customer>`. How could `Optional.ifPresentOrElse()` simplify handling both existing and missing customers?
+* A fallback configuration source should be evaluated only when the primary `Optional` is empty. How could `Optional.or()` help?
+* A list contains several `Optional<Employee>` values, and you need to process only the employees that are present. How could `Optional.stream()` simplify the pipeline?
+* A sorted Stream contains values until a business threshold is reached. How could `takeWhile()` help process only the leading matching elements?
+* A Stream contains an initial sequence of records that must be skipped while they satisfy a condition. How could `dropWhile()` help?
+* A system generates a sequence of values until a termination condition is met. How could the Java 9 three-argument `Stream.iterate()` method simplify the implementation?
+* A monitoring application must inspect running operating-system processes and retrieve their process IDs and start information. How could `ProcessHandle` help?
+* A Java service needs to terminate a child process after checking its status. How would you use the Process API while handling the possibility that the process has already exited?
+* An application needs asynchronous data exchange between publishers and subscribers with backpressure support. Which Java 9 API would you evaluate?
+* Your application uses a reactive data pipeline, and the consumer cannot keep up with the producer. How does the Flow API support this situation?
+* A Java 9 upgrade introduces unexpected runtime access errors in tests. How would you distinguish module-access problems from ordinary classpath problems?
+* Your team is deciding whether to use Java 9 features in a codebase that must remain compatible with Java 8. What compatibility constraints would you evaluate?
+* A project wants to modernize incrementally rather than migrate everything to JPMS immediately. How would you plan the adoption of Java 9 features?

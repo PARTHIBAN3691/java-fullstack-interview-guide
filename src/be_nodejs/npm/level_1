@@ -1,0 +1,30 @@
+* Explain the complete process of installing and using an npm package in a Node.js application.
+* What happens internally when you execute npm install?
+* What is the difference between npm install and npm ci?
+* When should you use npm ci instead of npm install?
+* What is the difference between npm install package-name and npm install package-name --save-dev?
+* How does npm resolve and install package dependencies?
+* What is a transitive dependency in npm?
+* What is a peer dependency, and when should you use it?
+* What is an optional dependency in package.json?
+* What is the purpose of the overrides field in package.json?
+* What is the difference between package.json and package-lock.json?
+* Why is package-lock.json important for consistent builds?
+* What happens if package.json and package-lock.json are inconsistent?
+* How do you install a specific version of an npm package?
+* How do you install the latest version of a package?
+* What do the version symbols ^ and ~ mean in package.json?
+* How do you identify outdated npm packages?
+* How do you update packages within the permitted version ranges?
+* What is the purpose of npm audit?
+* How do you fix vulnerabilities reported by npm audit?
+* What is the difference between npm audit fix and npm audit fix --force?
+* How do you create and execute custom npm scripts?
+* How do you pass command-line arguments to an npm script?
+* What is the difference between npm run script-name and npm start?
+* How do environment variables work with npm scripts?
+* What is the purpose of the npx command?
+* What is the difference between npm exec and npx?
+* How do you run a package command without installing it globally?
+* How do you publish a package to the npm registry?
+* What is the purpose of the .npmrc configuration file?

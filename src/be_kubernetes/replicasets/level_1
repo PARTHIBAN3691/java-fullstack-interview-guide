@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a ReplicaSet from creation to Pod management.
+* How does a ReplicaSet controller reconcile the actual number of Pods with the desired replica count?
+* How do you configure a ReplicaSet for a Spring Boot application?
+* How do you scale a ReplicaSet from three replicas to six replicas?
+* How do you scale a ReplicaSet using kubectl without editing its YAML manifest?
+* How do you update the container image used by a ReplicaSet?
+* Why is directly updating a ReplicaSet's Pod template generally not recommended for application deployments?
+* How does a ReplicaSet recover when one of its Pods is deleted manually?
+* What happens when a worker node fails while hosting ReplicaSet-managed Pods?
+* How does a ReplicaSet behave when some Pods fail their readiness probes?
+* Does a ReplicaSet replace a Pod that is Running but not Ready?
+* How do labels and selectors affect ReplicaSet ownership?
+* What happens if a ReplicaSet selector does not match its Pod template labels?
+* Why should overlapping ReplicaSet selectors be avoided?
+* How can you determine which ReplicaSet owns a particular Pod?
+* How do ownerReferences help Kubernetes manage dependent resources?
+* What happens to Pods when a ReplicaSet is deleted with cascading deletion enabled?
+* How can you delete a ReplicaSet while keeping its Pods running?
+* What is the difference between scaling a ReplicaSet and scaling a Deployment?
+* How does a Deployment create and manage ReplicaSets?
+* How do rolling updates use multiple ReplicaSets?
+* How does a Deployment roll back to a previous ReplicaSet?
+* How do you troubleshoot a ReplicaSet that cannot create the desired number of Pods?
+* How do resource requests and scheduling constraints affect ReplicaSet scaling?
+* What happens if the cluster does not have enough capacity for additional replicas?
+* How do ReplicaSets interact with Horizontal Pod Autoscalers?
+* Can an HPA scale a ReplicaSet directly, and what should be considered when using a Deployment?
+* How do you monitor the desired and available replica counts?
+* How can you use events to diagnose ReplicaSet creation failures?
+* How would you configure a ReplicaSet with node affinity and resource limits for a Java application?

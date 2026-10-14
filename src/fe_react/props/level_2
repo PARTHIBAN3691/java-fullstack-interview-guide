@@ -1,0 +1,30 @@
+* Explain how React passes props to components during rendering.
+* How does React determine whether a component's props have changed?
+* How does referential equality affect props comparison?
+* How does React.memo perform shallow comparison of props?
+* How do you implement a custom comparison function for React.memo?
+* What risks arise when a custom props comparison function ignores certain properties?
+* How can prop identity affect memoization and rendering performance?
+* How do you design stable object and function props for memoized components?
+* What is the difference between controlled and uncontrolled components in relation to props?
+* How do you design a reusable component API with required, optional, and mutually exclusive props?
+* How do you model mutually exclusive props using TypeScript discriminated unions?
+* How do you type a component that accepts different HTML element props?
+* What is the difference between React.ComponentProps and React.ComponentPropsWithoutRef?
+* How do you use generic props to create reusable TypeScript components?
+* How do you type callback props that return promises?
+* How do you define strongly typed render props in TypeScript?
+* How do you pass refs through components, and how does this differ across React versions?
+* What is the purpose of forwardRef in React?
+* How do higher-order components preserve or transform the wrapped component's props?
+* How do you prevent prop name collisions in higher-order components?
+* What are the limitations of prop drilling in large component trees?
+* How do you decide between props, Context API, and a global state management solution?
+* How do compound components share information without requiring every prop to be passed explicitly?
+* How do you design component APIs that avoid excessive Boolean props?
+* What are the benefits of using discriminated unions instead of many optional props?
+* How do you prevent accidental mutation of objects passed through props?
+* How can prop spreading introduce security or accessibility problems?
+* How do server components and client components affect which props can be passed?
+* Why can function props and non-serializable values be problematic across server-client boundaries?
+* How would you refactor a component that receives too many unrelated props?

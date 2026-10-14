@@ -1,0 +1,30 @@
+* How do you configure a Java application to write logs to Cloud Logging?
+* How do you integrate SLF4J and Logback with Cloud Logging?
+* How do you configure Logback to produce structured JSON logs?
+* How do you write structured logs from a Spring Boot application?
+* How do you include request IDs and correlation IDs in log entries?
+* How do you filter logs by project, service, severity, and time range?
+* How do you write advanced queries using Logging Query Language?
+* How do you filter logs using jsonPayload fields?
+* How do you filter logs using resource.labels fields?
+* How do you search logs using regular expressions or substring matching?
+* How do you create a log-based metric?
+* What is the difference between a counter-based and a distribution-based log metric?
+* How do you create an alerting policy based on a log-based metric?
+* How do you create a log sink that exports logs to BigQuery?
+* How do you export logs to Cloud Storage?
+* How do you route logs to Pub/Sub for downstream processing?
+* What is the difference between a log sink and a log bucket?
+* How do you configure log exclusions?
+* How do you manage log retention policies for different environments?
+* How do you configure access controls for log buckets and log views?
+* How do you grant a developer read-only access to application logs?
+* How do you enable and inspect Data Access audit logs?
+* How do you use Cloud Logging from a Java application through the client library?
+* How do you configure the Cloud Logging API and IAM permissions?
+* How do you correlate application logs with distributed traces?
+* How do you log exceptions and stack traces in a Spring Boot application?
+* How do you avoid logging passwords, access tokens, and personal information?
+* How do you investigate a failed request using its trace ID or request ID?
+* How do you monitor logging volume and reduce unnecessary log ingestion?
+* How do you troubleshoot missing or delayed log entries?

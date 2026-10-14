@@ -1,0 +1,30 @@
+* A webpage uses only <div> elements for its entire layout. How would you improve its semantic structure?
+* A screen-reader user cannot quickly navigate the main content. Which semantic elements would you investigate?
+* A page contains several <nav> elements, and users cannot distinguish them. How would you fix this?
+* A website has multiple <main> elements in the same document. What problems could arise, and how would you correct them?
+* A developer uses <section> for every container, even when the content has no heading. How would you review this implementation?
+* A blog page contains multiple independent posts. How would you structure them semantically?
+* A news article includes related links, author information, and a sidebar. Which semantic elements would you choose?
+* A developer uses <strong> only to make text bold. How would you explain the semantic difference between <strong> and <b>?
+* A clickable <div> works with a mouse but not with a keyboard. How would you replace or improve it?
+* A screen reader announces a navigation menu with an unclear name. How would you make the landmark more understandable?
+* A webpage looks correct visually but has a confusing heading hierarchy. How would you fix the markup?
+* An application uses ARIA roles on every HTML element. How would you simplify and correct the implementation?
+* A developer adds role="button" to a <div> but forgets keyboard interaction. What is missing?
+* A data table is difficult for screen-reader users to understand. How would you improve its semantic markup?
+* A form's input fields have visible text but no associated labels. How would you correct the form?
+* A product page includes a product image and caption. How would you represent them semantically?
+* A published article displays a date that search engines and applications must interpret reliably. Which HTML element would you use?
+* A documentation page contains source code examples. Which semantic elements would you use and why?
+* A website's CSS is disabled, and the content becomes difficult to understand. How could semantic HTML help?
+* A reusable component library uses <div> for buttons, links, and headings. What changes would you recommend?
+* A page uses <article> for every small visual container. How would you determine which containers genuinely represent independent content?
+* An accessibility audit reports redundant ARIA landmarks. How would you identify and resolve them?
+* A developer uses heading tags to increase font size rather than represent document structure. How would you address this?
+* A dashboard has visually reordered cards using CSS grid. How would you ensure the reading order remains meaningful?
+* A website has nested sections without meaningful headings. How would you reorganize its structure?
+* A screen reader cannot distinguish between primary and secondary navigation. How would you resolve the problem?
+* An application must remain usable when JavaScript fails. How can semantic HTML support this requirement?
+* A developer uses <aside> for content that is essential to the main article. How would you decide whether this is appropriate?
+* A semantic HTML refactoring changes the accessibility tree. How would you test for unintended regressions?
+* Your team needs coding standards for semantic HTML across multiple projects. What rules and review practices would you introduce?

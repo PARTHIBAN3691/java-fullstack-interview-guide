@@ -1,0 +1,30 @@
+* Explain how async/await works internally in JavaScript.
+* How is async/await related to generator functions and Promises conceptually?
+* Explain how await interacts with the JavaScript event loop and microtask queue.
+* Does an async function execute synchronously before its first await?
+* What happens to the remaining statements after an await expression?
+* How does execution resume after an awaited Promise settles?
+* Why does await introduce an asynchronous continuation even when the value is already available?
+* How can async/await create performance bottlenecks when used incorrectly?
+* How would you optimize a sequence of independent asynchronous operations?
+* What is the difference between concurrency and parallelism in JavaScript?
+* How do Promise.all(), Promise.allSettled(), Promise.race(), and Promise.any() differ?
+* How would you implement a concurrency limit for multiple asynchronous tasks?
+* How would you cancel an asynchronous operation that does not support cancellation directly?
+* How would you implement a timeout wrapper for an async function?
+* How do you preserve error context when rethrowing errors from nested async functions?
+* What are the risks of swallowing errors in async functions?
+* How would you implement retry logic with exponential backoff using async/await?
+* How would you prevent duplicate API requests when multiple callers request the same data?
+* How would you implement request deduplication for concurrent async calls?
+* How would you handle partial failures when multiple asynchronous operations run concurrently?
+* How would you design a fallback strategy when an external API is unavailable?
+* How can async/await be used to implement a sequential processing pipeline?
+* How would you process a very large dataset without creating too many concurrent requests?
+* What are the limitations of Promise.all() for processing thousands of tasks?
+* How would you implement a queue for asynchronous jobs?
+* How do unhandled Promise rejections affect application reliability?
+* How would you test asynchronous code that depends on timers or network responses?
+* What are common race conditions in async/await code, and how can they be prevented?
+* How does top-level await affect module initialization and dependency loading?
+* How would you design a robust asynchronous service layer for an enterprise application?

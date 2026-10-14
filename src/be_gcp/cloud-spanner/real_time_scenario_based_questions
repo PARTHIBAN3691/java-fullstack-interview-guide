@@ -1,0 +1,30 @@
+* A Spring Boot application using Cloud Spanner experiences intermittent transaction-aborted errors during peak traffic. How would you investigate and resolve the issue?
+* A Cloud Spanner database has high CPU utilization after a new feature is deployed. How would you identify expensive queries and optimize them?
+* Write operations become slow after the application begins using sequential numeric primary keys. How would you diagnose and eliminate hotspotting?
+* A globally distributed application experiences high write latency in one region. How would you investigate the instance configuration and transaction path?
+* Your application occasionally creates duplicate payment records after retrying failed transactions. How would you redesign the transaction and idempotency strategy?
+* A financial transaction must update an account balance and a transaction ledger atomically. How would you implement this using Cloud Spanner?
+* Two concurrent requests attempt to update the same account balance. How would you prevent lost updates and maintain correctness?
+* A query that previously completed in milliseconds now takes several seconds as the table grows. How would you investigate its query plan, indexes, and data distribution?
+* A secondary index improves read latency but significantly increases write latency. How would you determine whether to retain, modify, or remove the index?
+* Cloud Spanner node utilization is low, but one workload experiences poor performance. How would you identify schema, query, or contention bottlenecks?
+* Your database is approaching its storage capacity and monthly budget. How would you forecast growth and optimize storage and instance configuration?
+* A schema change is required while several versions of a Java microservice are running in production. How would you deploy the change safely?
+* Your organization needs to migrate a multi-terabyte PostgreSQL database to Cloud Spanner with minimal downtime. How would you plan the migration?
+* Data written during a migration appears in the source database but is missing from the target. How would you reconcile the data and prevent further inconsistencies?
+* A multi-region application requires strongly consistent account balances but low-latency dashboard reads. How would you choose transaction and read consistency settings?
+* A Cloud Spanner regional configuration suffers an outage. How would you assess availability, failover behavior, and recovery procedures?
+* A transaction frequently aborts when updating multiple rows. How would you redesign the transaction boundaries and access patterns?
+* A large reporting query interferes with the latency of transactional requests. How would you separate or optimize analytical workloads?
+* Your Java application creates too many Cloud Spanner client instances, increasing resource usage. How would you correct the client lifecycle and resource management?
+* Cloud Spanner requests begin failing with permission errors after a service account rotation. How would you investigate IAM and credential configuration?
+* An application deployed to Cloud Run suddenly exceeds its Cloud Spanner connection or session capacity. How would you diagnose client-side resource usage and scaling behavior?
+* A batch job updates millions of records and causes high contention for interactive transactions. How would you redesign the batch workload?
+* A business operation must read consistent data across multiple tables while another service is updating them. How would you select an appropriate transaction or read method?
+* An application needs historical values of records for auditing. How would you use commit timestamps or other appropriate data-retention mechanisms?
+* A Cloud Spanner query returns duplicate rows after a schema and index change. How would you determine whether the issue is in the SQL, joins, or data model?
+* The application experiences latency spikes during node scaling. How would you investigate capacity changes, load distribution, and query behavior?
+* A high-throughput order-processing system needs unique order identifiers without creating a write hotspot. How would you design the identifier strategy?
+* Your team needs to restore a production database to recover from accidental data modification. How would you choose between backup restoration and point-in-time recovery options?
+* A critical service needs an RTO of minutes and a tightly defined RPO. How would you design Cloud Spanner backup, replication, and recovery procedures?
+* Cloud Spanner costs increase after a global rollout even though transaction volume is nearly unchanged. How would you investigate regional configuration, compute capacity, storage, and workload changes?

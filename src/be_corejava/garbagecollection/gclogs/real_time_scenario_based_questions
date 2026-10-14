@@ -1,0 +1,15 @@
+* A production application experiences response-time spikes every few seconds. How would you use GC logs to determine whether garbage collection is responsible?
+* GC logs show frequent young GC events, but the application has no visible memory leak. How would you investigate the allocation pattern?
+* GC logs show that heap usage remains high after every collection. What would you check next?
+* A service experiences repeated Full GC events followed by `OutOfMemoryError`. How would you investigate the root cause?
+* A G1 GC application reports evacuation failures. Which log entries and heap metrics would you examine?
+* A Java application has long GC pauses only during peak traffic. How would you compare peak and off-peak GC logs?
+* A service's GC pause durations increase after a deployment, even though traffic is unchanged. How would you identify the change responsible?
+* GC logs show frequent collections, but CPU utilization remains high even outside GC pauses. How would you proceed?
+* A container restarts because it exceeds its memory limit, but GC logs show sufficient free heap space. How would you investigate memory outside the heap?
+* A production application has GC logs enabled, but the log file grows excessively and consumes disk space. How would you configure log rotation?
+* GC logs are missing after a production restart. What JVM configuration and deployment settings would you verify?
+* Two instances of the same service use identical JVM arguments, but one has significantly longer GC pauses. How would you investigate the difference?
+* GC logs show that the old-generation occupancy increases over several hours. How would you determine whether the cause is a memory leak or a workload pattern?
+* After changing the heap size, GC frequency decreases but pause durations increase. How would you evaluate whether the change improved overall performance?
+* You must prepare a production incident report about a GC-related latency issue. Which log metrics, evidence, and comparisons would you include?

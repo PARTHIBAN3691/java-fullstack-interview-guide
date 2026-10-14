@@ -1,0 +1,30 @@
+* How would you design an enterprise messaging architecture using Azure Service Bus for multiple Java microservices?
+* How do you choose between queues, topics, and subscriptions for a distributed business workflow?
+* How would you design a reliable messaging solution that avoids message loss during application failures?
+* How do you implement effectively-once business processing when message delivery can occur more than once?
+* How would you implement the transactional outbox pattern with Spring Boot and Azure Service Bus?
+* How do you handle the dual-write problem when updating a relational database and publishing a message?
+* How would you design idempotent message consumers in Java?
+* How do you preserve message ordering across concurrent consumers?
+* How would you use sessions to process messages in business-key order?
+* How do you design retry policies for transient failures without creating retry storms?
+* How would you distinguish transient failures from permanent business-processing failures?
+* How do you design dead-letter queue monitoring and automated recovery?
+* How would you replay dead-letter messages safely without duplicating business transactions?
+* How do you size Service Bus capacity for high-throughput enterprise workloads?
+* How do you optimize message throughput while maintaining acceptable latency and ordering?
+* How would you design backpressure when downstream APIs or databases become overloaded?
+* How do you manage message locks for long-running Java processing tasks?
+* How would you handle lock expiration while a consumer is processing a message?
+* How do you use Service Bus transactions, and what are their limitations?
+* How would you coordinate message processing with database transactions in a Spring Boot application?
+* How do you secure Service Bus communication using managed identities, RBAC, and private networking?
+* How would you design network isolation for Service Bus using private endpoints and firewall controls?
+* How do you manage Service Bus connection pooling and client lifecycle in a high-volume Java application?
+* How would you design multi-region messaging and disaster recovery for Azure Service Bus?
+* How do you evaluate Service Bus Geo-Replication or Geo-Disaster Recovery for a business-critical application?
+* How would you migrate a production messaging system to Azure Service Bus with minimal downtime?
+* How do you monitor message age, processing latency, dead-letter rate, and end-to-end business latency?
+* How would you troubleshoot a sudden drop in consumer throughput despite a growing queue backlog?
+* How do you prevent poison messages from repeatedly consuming resources and blocking processing?
+* How would you design a resilient event-driven architecture using Azure Service Bus and Java Spring Boot?

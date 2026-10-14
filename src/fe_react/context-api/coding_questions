@@ -1,0 +1,30 @@
+* Create a ThemeContext that provides a light or dark theme to child components.
+* Write a React component that creates a context using React.createContext().
+* Create a Provider that shares a username with multiple components.
+* Write a component that consumes context using the useContext() hook.
+* Implement a counter using Context API and useState().
+* Implement a counter using Context API and useReducer().
+* Create an authentication context with login and logout methods.
+* Create a custom useAuth() hook to consume authentication context.
+* Implement a language context that switches between English and Tamil.
+* Create a context to share a user's profile across nested components.
+* Implement a shopping cart context with add, remove, and update quantity operations.
+* Create a notification context that supports success and error messages.
+* Implement a context Provider that exposes both state and update functions.
+* Create two separate contexts for theme and authentication.
+* Write a component that consumes two different contexts.
+* Implement nested Providers and demonstrate how the nearest Provider determines the value.
+* Create a TypeScript context with a strongly typed user object.
+* Implement a custom hook that throws an error when used outside its Provider.
+* Write a context Provider that uses useMemo() to stabilize its value object.
+* Optimize a context Provider using useCallback() for its update functions.
+* Split a context into separate state and dispatch contexts.
+* Write a unit test for a component that consumes context.
+* Mock a context Provider in a React Testing Library test.
+* Implement context-based API loading, success, and error states.
+* Create a context that persists user preferences using localStorage.
+* Implement a context Provider that initializes state from stored preferences.
+* Refactor prop drilling across three nested components using Context API.
+* Build a context-based cart summary that updates when cart items change.
+* Demonstrate how a context update can trigger re-renders in consuming components.
+* Refactor a monolithic context into smaller contexts and compare the component structure.

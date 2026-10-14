@@ -1,0 +1,30 @@
+* A Spring Boot application fails to upload files to Cloud Storage after deployment to Cloud Run. How would you investigate authentication, IAM permissions, and bucket configuration?
+* Users report that large file uploads frequently fail after several minutes. How would you investigate timeouts, resumable uploads, and network interruptions?
+* Your Java application experiences out-of-memory errors while uploading large files. How would you redesign the upload implementation?
+* A file upload succeeds, but the application database does not contain the corresponding file metadata. How would you recover and prevent inconsistent states?
+* Multiple users upload files with the same object name, causing one file to overwrite another. How would you redesign object naming and concurrency control?
+* A client retries an upload after a network timeout, creating duplicate objects. How would you implement idempotency?
+* A private file-download endpoint suddenly returns HTTP 403 errors. How would you troubleshoot IAM permissions, signed URLs, and URL expiration?
+* A signed URL expires before a user finishes downloading a large file. How would you redesign the file-access workflow?
+* A bucket containing millions of objects takes too long to list. How would you improve pagination, prefix organization, and application-side processing?
+* Storage costs increase significantly after your application starts retaining uploaded documents indefinitely. How would you identify the cost drivers and implement lifecycle policies?
+* A compliance requirement states that records must not be deleted before a specified date. How would you implement and validate retention controls?
+* An administrator accidentally deletes an important object. How would you recover it and prevent similar incidents?
+* A new application release overwrites existing objects with incorrect content. How would you use object versioning and generation preconditions to recover safely?
+* A Cloud Storage event triggers a processing service multiple times, resulting in duplicate database records. How would you implement idempotent event handling?
+* File-processing jobs fail intermittently because uploaded objects are not yet accessible when notifications arrive. How would you investigate event handling and retry behavior?
+* Your application needs to scan uploaded documents for malware before allowing downloads. How would you design the processing pipeline?
+* A file is uploaded successfully, but its content type is incorrect and browsers download it instead of displaying it. How would you fix the metadata and upload logic?
+* A production service account loses access to a bucket after an IAM policy update. How would you identify the missing permissions and restore least-privilege access?
+* Your organization needs to share confidential documents with external customers for a limited time. How would you implement secure, temporary access?
+* A bucket is accidentally configured for public access. How would you identify the exposure, restrict access, and audit potential data access?
+* An application must transfer terabytes of historical files to a new bucket. How would you plan the migration, validate checksums, and minimize downtime?
+* Your file-processing pipeline receives events out of order. How would you ensure the latest object version is processed correctly?
+* A user uploads a file successfully, but downstream processing fails repeatedly. How would you implement retries, dead-letter handling, and operational recovery?
+* Cloud Storage download latency increases for users in a different geographic region. How would you investigate location, caching, network egress, and delivery options?
+* Your application downloads the same large files repeatedly, increasing latency and egress costs. How would you implement caching or a content-delivery strategy?
+* A critical bucket needs disaster recovery across regions. How would you design replication, recovery testing, and data validation?
+* An object-processing job is interrupted halfway through a large batch. How would you resume processing without repeating completed work?
+* Your team needs to store sensitive documents using customer-managed encryption keys. How would you configure encryption and handle key rotation or access failures?
+* A storage lifecycle rule unexpectedly deletes objects needed by a downstream application. How would you investigate the rule and prevent future data loss?
+* Your organization requires a complete audit trail for file uploads, downloads, updates, and deletions. How would you design logging, audit policies, and monitoring?

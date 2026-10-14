@@ -1,0 +1,25 @@
+* What is the difference between `Function<T, R>` and `BiFunction<T, U, R>`?
+* What is the difference between `Predicate<T>` and `BiPredicate<T, U>`?
+* What is the difference between `Consumer<T>` and `BiConsumer<T, U>`?
+* What is the difference between `UnaryOperator<T>` and `Function<T, R>`?
+* What is the difference between `BinaryOperator<T>` and `BiFunction<T, U, R>`?
+* How do you combine two predicates using `and()`, `or()`, and `negate()`?
+* How do you compose two functions using `compose()` and `andThen()`?
+* What is the difference between `Function.compose()` and `Function.andThen()`?
+* How do you chain multiple functions to transform an input value?
+* How do you combine two consumers using `Consumer.andThen()`?
+* How do you create a predicate that checks whether a string is empty or null?
+* How do you use a supplier to generate values lazily?
+* How do you pass a lambda expression as a method argument?
+* How do you return a lambda expression from a method?
+* What is target typing in the context of lambda expressions and functional interfaces?
+* How does Java determine the target functional interface for a lambda expression?
+* What is the difference between a lambda expression with a block body and one with an expression body?
+* What restrictions apply to local variables captured by lambda expressions?
+* What does effectively final mean, and why is it important for lambda expressions?
+* Can a lambda expression access instance variables and static variables?
+* Can a lambda expression throw checked exceptions?
+* How do overloaded methods interact with lambda expressions and functional interfaces?
+* What happens when a lambda expression matches more than one overloaded method signature?
+* Can a functional interface redeclare a method from the `Object` class, such as `toString()`?
+* How do primitive-specialized functional interfaces such as `IntPredicate`, `IntFunction`, and `ToIntFunction` help avoid boxing and unboxing?

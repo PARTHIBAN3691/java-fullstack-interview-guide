@@ -1,0 +1,15 @@
+* Your Java Spring Boot API normally responds in 200 ms, but after a production release, the response time increases to 3–5 seconds. Application CPU and memory look normal. How would you investigate the issue and identify the root cause?
+* A production API suddenly starts consuming five times more RU/s than normal after a new feature is deployed. How would you identify the cause, optimize the queries, and prevent recurrence?
+* Your Java application starts receiving frequent HTTP 429 responses from Cosmos DB. How would you determine whether the cause is insufficient throughput, a hot partition, or inefficient application queries?
+* A Cosmos DB container has sufficient overall throughput, but requests for one particular customer are becoming slow. How would you investigate and resolve a potential hot partition?
+* Your team selected `country` as the partition key. As the application grows to millions of users, some requests become slow. How would you redesign the partition strategy and migrate existing data?
+* Two Java microservice instances read the same Cosmos DB document and update it simultaneously. How would you prevent one update from overwriting the other?
+* A payment service writes a transaction to Cosmos DB, but a network timeout causes the request to be retried and the transaction is inserted twice. How would you implement idempotency and prevent duplicate transactions?
+* A Java API searches customers by email, but the partition key is `customerId`. The query scans multiple partitions and consumes significant RUs. How would you optimize the search without negatively affecting other access patterns?
+* A Java application retrieves thousands of Cosmos DB documents and stores them all in memory before returning the response. The application eventually throws `OutOfMemoryError`. How would you fix the implementation?
+* Cosmos DB experiences increased latency, causing requests to accumulate in your Java microservice until it becomes unhealthy. How would you prevent cascading failures and recover safely?
+* Your team needs to migrate a production container to a new partition-key strategy. How would you synchronize data, handle concurrent writes, validate consistency, and switch traffic with minimal downtime?
+* A customer updates their profile through one API but occasionally receives stale data from another API immediately afterward. How would you investigate consistency settings and determine the right fix?
+* After deploying a new version of your Java application, Cosmos DB latency increases even though the request volume remains unchanged. How would you compare query metrics, indexing, SDK configuration, and application logs to isolate the cause?
+* Your application works correctly in development but experiences intermittent Cosmos DB connection failures in production. How would you investigate networking, authentication, client lifecycle, and timeout configuration?
+* A business-critical API must remain available during temporary Cosmos DB failures. How would you design timeouts, retries, circuit breakers, and fallback behavior while protecting data consistency?

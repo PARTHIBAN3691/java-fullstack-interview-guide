@@ -1,0 +1,167 @@
+**Calling LLM APIs from Java**
+* How would you implement a reusable Java client for multiple LLM providers?
+* How would you configure connection timeouts, response timeouts, and connection pooling?
+* How would you deserialize different provider response formats into application-level DTOs?
+* How would you handle HTTP 429, 5xx responses, malformed JSON, and network timeouts?
+* How would you implement streaming HTTP responses while preserving backpressure and cancellation?
+* How would you separate authentication, request construction, provider invocation, and response parsing?
+
+**Spring AI Fundamentals**
+* How do Spring AI abstractions reduce coupling to a specific LLM provider?
+* How would you configure different models for development, testing, and production?
+* How do Spring Boot starters and auto-configuration simplify Spring AI integration?
+* How would you override default auto-configuration when custom model configuration is required?
+* How would you manage provider-specific features that are not available through a common abstraction?
+* How would you externalize model parameters and secrets using Spring configuration?
+
+**Spring AI Chat Models**
+* How do `ChatClient`, `ChatModel`, and prompt-related abstractions work together?
+* How would you create reusable prompts using system instructions, user input, and structured context?
+* How would you map model output into a Java record or DTO?
+* How would you handle invalid structured output without allowing it to corrupt downstream business processing?
+* How would you select temperature, output-token limits, and other parameters for a deterministic business task?
+* How would you implement different chat models for different request types?
+
+**Spring AI Embeddings**
+* How would you generate and persist embeddings for thousands of documents?
+* How would you handle embedding API failures during bulk ingestion?
+* How would you select an embedding model based on domain, language, dimensionality, and cost?
+* How would you compare cosine similarity with other distance metrics for a retrieval task?
+* How would you manage document updates when the embedding model or preprocessing logic changes?
+* How would you batch embedding requests without exceeding provider limits?
+
+**Spring AI Vector Stores**
+* How would you configure a vector store in a Spring Boot application?
+* How would you implement similarity search with metadata filters?
+* How would you design the document ID strategy to support updates and deletions?
+* How would you troubleshoot poor search relevance despite successful vector insertion?
+* How would you select between a relational database with vector support and a dedicated vector database?
+* How would you handle index creation, migration, and environment-specific configuration?
+
+**Spring AI Advisors**
+* How would you chain multiple advisors for logging, memory, retrieval, and request transformation?
+* How would you control advisor ordering when one advisor depends on another advisor's output?
+* How would you pass request-specific context through an advisor chain?
+* How would you prevent a logging advisor from capturing sensitive prompts or responses?
+* How would you write unit tests for a custom advisor?
+* How would you troubleshoot unexpected behavior caused by two advisors modifying the same request?
+
+**Spring AI RAG Pipelines**
+* How would you implement document ingestion, chunking, embedding, storage, retrieval, and generation in Spring AI?
+* How would you select chunk size and overlap for a document corpus?
+* How would you combine metadata filtering with similarity search?
+* How would you include citations or document identifiers in generated responses?
+* How would you evaluate retrieval relevance separately from final answer quality?
+* How would you prevent irrelevant or excessively large retrieved context from entering the prompt?
+* How would you support incremental document updates and deletion from the RAG index?
+
+**Spring AI Tool Calling**
+* How would you define a Java method as an AI-callable tool?
+* How would you validate tool arguments and handle exceptions during tool execution?
+* How would you restrict tool availability based on user roles or application context?
+* How would you distinguish model-generated tool-call requests from actual authorized business operations?
+* How would you handle multiple tool calls in one conversation?
+* How would you prevent repeated or recursive tool calls from exhausting resources?
+* How would you test tool-calling workflows without invoking a real LLM?
+
+**Spring AI MCP Integration**
+* How would you configure an MCP client in a Spring Boot application?
+* How would you discover MCP tools and expose eligible tools to an AI model?
+* How would you configure MCP transport and connection lifecycle?
+* How would you integrate an MCP server that exposes business data or application operations?
+* How would you handle MCP timeouts, connection failures, and unavailable tools?
+* How would you enforce authorization when MCP tools are invoked on behalf of a user?
+* How would you test MCP integration using a local or mock server?
+
+**Spring AI Chat Memory**
+* How would you persist conversation history using a database-backed chat memory implementation?
+* How would you isolate conversation memory between users and tenants?
+* How would you limit conversation history to fit a model's context window?
+* How would you summarize older messages while preserving important facts?
+* How would you prevent concurrent requests from corrupting a conversation's history?
+* How would you define retention and deletion policies for stored conversations?
+
+**Streaming AI Responses with Spring Boot**
+* How would you implement SSE streaming from a Spring Boot controller?
+* How would you propagate cancellation from the browser to the upstream model request?
+* How would you handle heartbeats, client disconnects, and partial responses?
+* How would you implement authentication and authorization for a streamed endpoint?
+* How would you distinguish model-generated completion events from transport-level completion?
+* How would you prevent proxies or gateways from buffering streamed responses?
+
+**AI Integration with REST APIs**
+* How would you design an AI endpoint with request validation, authentication, error handling, and observability?
+* How would you version an AI REST API when output schemas change?
+* How would you enforce per-user quotas and request-size limits?
+* How would you map provider-specific errors to stable application-level error responses?
+* How would you implement idempotency for an AI request that triggers a business operation?
+* How would you document AI endpoints using OpenAPI when responses can be streamed?
+
+**Reactive AI Applications**
+* How would you integrate a streaming AI client with Spring WebFlux using `Flux`?
+* How would you prevent blocking SDK calls from occupying reactive event-loop threads?
+* How would you implement cancellation and timeout propagation through a reactive pipeline?
+* How would you combine concurrent AI requests while preserving partial failures?
+* How would you apply backpressure when a client consumes a stream more slowly than the model generates output?
+* How would you test reactive error paths and cancellation behavior with `StepVerifier`?
+
+**AI Rate Limiting and Resilience**
+* How would you combine rate limiting, concurrency limits, timeouts, and circuit breakers for model calls?
+* How would you respect provider retry headers and retry-after instructions?
+* How would you prevent retries at multiple application layers from multiplying request volume?
+* How would you design a fallback model strategy with different latency and cost characteristics?
+* How would you distinguish retryable errors from permanent request or authorization errors?
+* How would you use Resilience4j with Spring Boot to protect an AI dependency?
+* How would you implement per-tenant rate limits when the upstream provider quota is shared?
+
+**Secure AI API Integration**
+* How would you implement API-key rotation without redeploying every application instance?
+* How would you protect AI endpoints against prompt injection and excessive request payloads?
+* How would you redact personal or confidential information before logging model requests?
+* How would you validate model-generated JSON before using it in business logic?
+* How would you enforce least privilege for database access and tool execution initiated by AI?
+* How would you prevent secrets or private documents from leaking through RAG retrieval?
+* How would you protect against server-side request forgery when tools can call external URLs?
+
+**AI Microservices Architecture**
+* How would you separate an AI orchestration service from model adapters, retrieval services, and business APIs?
+* How would you define stable contracts between an AI microservice and existing domain services?
+* How would you handle model-provider failover without changing business-service code?
+* How would you propagate correlation IDs across gateways, AI services, and downstream APIs?
+* How would you prevent an AI service from becoming a synchronous bottleneck for every business transaction?
+* How would you design independent scaling and deployment for retrieval and inference components?
+
+**AI Integration with Kafka**
+* How would you design a Kafka-based pipeline for asynchronous document embedding and summarization?
+* How would you handle duplicate messages when the AI operation is expensive or not naturally idempotent?
+* How would you configure consumer concurrency without exceeding model provider quotas?
+* How would you implement retry topics and dead-letter topics for failed AI requests?
+* How would you preserve ordering when multiple events update the same document's embeddings?
+* How would you propagate trace context and correlation IDs through Kafka messages?
+* How would you handle poison messages and replay failed AI tasks safely?
+
+**AI Integration with Databases**
+* How would you retrieve business records and provide only relevant, authorized context to an LLM?
+* How would you design database tables for conversation history, model metadata, and AI execution records?
+* How would you use database transactions when AI inference occurs between business operations?
+* How would you prevent generated SQL from bypassing tenant restrictions or modifying production data?
+* How would you keep relational source data and vector indexes consistent after updates?
+* How would you implement pagination and result limits for AI-assisted database retrieval?
+
+**Testing Spring AI Applications**
+* How would you mock `ChatModel`, `ChatClient`, and embedding services in unit tests?
+* How would you build deterministic tests for prompts whose production outputs are probabilistic?
+* How would you test RAG retrieval independently from answer generation?
+* How would you create a regression dataset for prompt and model changes?
+* How would you use Testcontainers to test a vector store or database integration?
+* How would you test rate limiting, circuit breakers, timeouts, and provider failover?
+* How would you distinguish functional correctness tests from model-quality evaluations?
+
+**Productionizing AI Applications in Java**
+* How would you expose metrics for token usage, model latency, retrieval latency, and provider error rates?
+* How would you implement distributed tracing across prompt construction, retrieval, model invocation, and tool execution?
+* How would you perform a canary rollout of a new model or prompt version?
+* How would you manage feature flags for AI functionality across application environments?
+* How would you design graceful degradation when the AI provider is unavailable?
+* How would you define service-level objectives for latency, availability, cost, and response quality?
+* How would you maintain an auditable record of model version, prompt version, and retrieval sources?

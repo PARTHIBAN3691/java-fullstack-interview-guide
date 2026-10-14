@@ -1,0 +1,30 @@
+* Your Node.js API works correctly during manual testing but fails in automated tests. How would you investigate the issue?
+* A Jest test suite passes locally but fails intermittently in CI. How would you identify the root cause?
+* An Express.js API returns HTTP 500 when the database is unavailable. How would you test this failure scenario?
+* Your API depends on a third-party payment service that is unreliable. How would you test the integration without making real payments?
+* A test suite takes 20 minutes to complete. How would you reduce execution time without compromising reliability?
+* Two tests pass individually but fail when executed together. How would you investigate shared state or test-order dependencies?
+* A database test leaves records behind and causes subsequent tests to fail. How would you fix the test isolation problem?
+* Your authentication tests pass, but users with insufficient permissions can still access protected endpoints. How would you improve the tests?
+* An API returns the correct response body but an incorrect HTTP status code. How would you catch this through automated testing?
+* A Node.js service processes messages from a queue, and some messages are processed twice. How would you test duplicate processing?
+* Your order service retries failed requests and occasionally creates duplicate orders. How would you design regression tests?
+* A file-upload API works with small files but fails with large files. How would you test file size limits and streaming behavior?
+* A background job uses setInterval() and makes tests run slowly. How would you test it efficiently?
+* A Node.js application uses environment variables for database configuration. How would you test different configurations safely?
+* Your application sends emails after successful registration. How would you test email functionality without sending real emails?
+* A production bug occurs only when multiple requests update the same account simultaneously. How would you reproduce and test it?
+* Your service calls three downstream APIs, and one of them times out. How would you test fallback and error-handling behavior?
+* A cache returns stale customer information after an update. How would you write tests to prevent this regression?
+* Your API must handle 5,000 concurrent requests. How would you validate its performance and identify bottlenecks?
+* A Node.js process consumes increasing memory after repeated requests. How would you build tests to detect a memory leak?
+* Your team changes a response field used by another microservice. How would you detect compatibility issues before deployment?
+* A database migration works on a new database but fails on an existing production-like database. How would you test the migration?
+* A JWT expires while a request is being processed. How would you test token-expiration and refresh behavior?
+* Your application must continue running when an optional external service is unavailable. How would you test graceful degradation?
+* An API has pagination and filtering, but some records are missing across pages. How would you test pagination correctness?
+* A stream-processing service receives malformed input in the middle of a large file. How would you test recovery and error handling?
+* Your CI pipeline runs tests in parallel, and multiple tests modify the same database tables. How would you resolve the conflicts?
+* A release introduces a regression in an existing API endpoint. How would you use automated tests to identify and prevent similar issues?
+* Your Node.js service must process financial transactions exactly once from the business perspective. How would you test idempotency, retries, and reconciliation?
+* How would you design a complete automated testing strategy for a Node.js application before releasing it to production?

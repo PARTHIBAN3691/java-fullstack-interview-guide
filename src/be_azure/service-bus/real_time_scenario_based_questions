@@ -1,0 +1,30 @@
+* A Java consumer receives a Service Bus message, updates the database, and crashes before completing the message; how would you prevent duplicate business updates?
+* A queue's active message count increases continuously while the consumer appears healthy; how would you investigate the bottleneck?
+* Messages are being moved to the dead-letter queue after intermittent database timeouts; how would you determine the root cause and recover the messages safely?
+* A Spring Boot application intermittently receives message-lock-lost errors during processing; how would you investigate and resolve them?
+* A payment message is processed twice, resulting in duplicate payment records; how would you prevent recurrence and repair affected data?
+* A publisher successfully updates the database but fails to publish the corresponding Service Bus message; how would you address the consistency problem?
+* Messages are being delivered out of order, causing an incorrect sequence of business operations; how would you enforce the required ordering?
+* One subscription receives all expected messages, while another subscription appears to miss some; how would you investigate filters, rules, permissions, and consumer behavior?
+* A consumer starts receiving authorization errors after a managed identity or RBAC change; how would you diagnose and restore access?
+* A large backlog develops during peak traffic, and consumers cannot catch up; how would you scale processing without overwhelming downstream systems?
+* A downstream REST API becomes unavailable for 20 minutes, causing repeated message failures; how would you design retries and dead-letter handling?
+* A poison message repeatedly fails processing and consumes significant resources; how would you isolate it and protect other messages?
+* A long-running business operation exceeds the message lock duration; how would you keep processing reliable?
+* A Java application shuts down during a deployment while messages are being processed; how would you implement graceful shutdown and safe message settlement?
+* A Service Bus namespace reaches throttling limits after a sudden increase in traffic; how would you identify the bottleneck and recover?
+* The dead-letter queue grows rapidly after a new application release; how would you identify whether the issue is caused by code, schema changes, permissions, or dependencies?
+* A topic has many subscriptions with different filtering requirements; how would you optimize routing and prevent unintended message delivery?
+* A message contains a schema version that the consumer does not understand; how would you handle backward compatibility and prevent data loss?
+* A Java consumer successfully processes messages in testing but performs poorly in production; how would you investigate concurrency, networking, message size, and downstream dependencies?
+* A database outage causes a backlog of millions of messages; how would you recover processing while protecting database capacity?
+* A business team requests replay of all messages from a particular time window; how would you implement a safe replay strategy?
+* A message expires before it can be processed because of a backlog; how would you investigate TTL settings and improve delivery latency?
+* An application loses connectivity to Service Bus after a network security change; how would you troubleshoot DNS, firewall rules, private endpoints, and authentication?
+* Two Java microservices need to coordinate a multi-step workflow, but one step fails after another has completed; how would you design compensation and recovery?
+* Monitoring shows low queue depth but customers report delayed business transactions; how would you investigate processing latency beyond queue length?
+* A deployment introduces an incompatible message format that breaks older consumers; how would you roll out a backward-compatible schema change?
+* Service Bus messages are received successfully, but business records are missing; how would you trace the message through deserialization, validation, processing, and database commit?
+* A consumer's retry logic causes the same failing message to be retried too frequently; how would you introduce backoff, limits, and dead-letter routing?
+* The organization needs to fail over messaging operations to another region during an Azure outage; how would you plan and validate the recovery process?
+* A production incident requires proving that every accepted business command was processed or explicitly rejected; how would you design correlation, auditing, reconciliation, and monitoring?

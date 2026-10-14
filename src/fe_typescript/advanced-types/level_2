@@ -1,0 +1,30 @@
+* Explain how conditional types are evaluated by the TypeScript compiler.
+* How do distributive conditional types work internally?
+* How would you design a reusable DeepReadonly utility type?
+* How would you implement a DeepPartial utility type that supports arrays and nested objects?
+* How would you implement a type that makes only selected properties optional?
+* How would you create a type-safe object transformation using mapped types?
+* How do you use recursive conditional types in TypeScript?
+* What are the limitations of recursive type aliases?
+* How would you implement a type-level function that flattens nested arrays?
+* How would you create a type that extracts all keys whose values match a specified type?
+* How would you implement a type-safe event emitter using generics and mapped types?
+* How do you model mutually exclusive object properties using never?
+* How would you implement XOR types for two object shapes?
+* How do you create a type-safe API client using generics and conditional types?
+* How would you infer the resolved value type of a nested Promise?
+* How do you preserve function parameter and return types when wrapping a function?
+* How would you create a generic decorator that preserves the original method signature?
+* How do variadic tuple types work?
+* How would you use variadic tuples to type a function that combines multiple function arguments?
+* What are template literal types with recursive conditional types?
+* How would you implement type-safe string paths for deeply nested objects?
+* How would you generate valid property paths using template literal types?
+* How do you create a type that maps a union of objects into a discriminated lookup map?
+* How do you design strongly typed configuration objects with satisfies?
+* How would you infer a type from a runtime configuration object without widening its literal values?
+* How do you implement exhaustive checking for complex nested discriminated unions?
+* What are variance and covariance in TypeScript?
+* How do function parameter types affect assignability and variance?
+* How do you debug excessively complex types and TypeScript compiler performance issues?
+* How would you design a reusable type-level utility library for a large enterprise TypeScript codebase?

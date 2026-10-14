@@ -1,0 +1,20 @@
+* An e-commerce application needs different discount strategies for different customer types. How would you use functional interfaces to implement the Strategy design pattern?
+* A payment application supports multiple payment providers, each with different processing logic. How would you design a functional interface to plug in provider-specific behavior?
+* An employee management system needs to filter employees based on salary, department, and experience. How would you use `Predicate` and predicate composition?
+* A data transformation service needs to convert an input object through several processing steps. How would you combine functions using `compose()` and `andThen()`?
+* A notification system must send email, SMS, or push notifications based on runtime conditions. How would you design the processing logic using functional interfaces?
+* A report-generation application needs to accept different report-generation strategies without creating separate classes for every strategy. How would you use functional interfaces?
+* A logging framework needs to execute expensive log-message construction only when a particular log level is enabled. How could a `Supplier` help?
+* A REST API needs to execute a callback after a database operation completes. How would you model the callback using a functional interface?
+* A validation service needs to run multiple independent validation rules and combine their results. How would you use `Predicate`?
+* A legacy application has multiple implementations of the same small operation using anonymous inner classes. How would you refactor them using lambda expressions?
+* A file-processing service needs to pass different processing behaviors to a reusable method. Which functional interface would you choose, and why?
+* A service method must accept a function that transforms an object and returns a result. How would you define the method using `Function<T, R>`?
+* A batch-processing system needs to execute an operation for each record without returning a result. How would you use `Consumer`?
+* A configuration service needs to retrieve a value only when it is required. How would you use `Supplier` to defer computation?
+* A financial application needs to apply multiple transformations to transaction amounts. How would you compose functions while keeping the code maintainable?
+* A Java Stream pipeline calls a method that throws a checked exception, but the selected functional interface does not permit it. How would you design a clean exception-handling solution?
+* A service has overloaded methods that accept different functional interfaces, and a lambda expression causes an ambiguous method call. How would you resolve the ambiguity?
+* A high-throughput data-processing application experiences unnecessary boxing overhead. How would primitive-specialized functional interfaces improve the design?
+* A reusable framework needs to accept a custom operation that may fail and return either a result or an error. How would you design an appropriate functional interface?
+* A team is deciding whether to use a functional interface, an abstract class, or a regular interface for a new extension point. What design factors would you evaluate?

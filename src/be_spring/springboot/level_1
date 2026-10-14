@@ -1,0 +1,30 @@
+* Explain the internal working of the @SpringBootApplication annotation.
+* How does Spring Boot auto-configuration work internally?
+* How does Spring Boot decide which auto-configuration classes should be applied?
+* What is the role of @ConditionalOnClass in Spring Boot?
+* What is the purpose of @ConditionalOnMissingBean?
+* What is the difference between @ConditionalOnProperty and @ConditionalOnClass?
+* How do you exclude a specific auto-configuration class?
+* What is the purpose of Spring Boot starter parent?
+* What is the difference between spring-boot-starter-parent and the Spring Boot BOM?
+* How does Spring Boot manage dependency versions?
+* What are Spring Boot profiles, and how do you use them?
+* How do you activate a profile using application.properties?
+* What is the difference between @Value and @ConfigurationProperties?
+* How do you bind external configuration properties to a Java class?
+* What is the purpose of the CommandLineRunner interface?
+* What is the difference between CommandLineRunner and ApplicationRunner?
+* What are the different ways to configure a Spring Boot application?
+* How does Spring Boot handle application startup and bean initialization?
+* What is the purpose of SpringApplication.run()?
+* How do you customize the embedded Tomcat server?
+* How do you configure logging levels in Spring Boot?
+* What is the difference between application-level and package-level logging configuration?
+* How do you implement global exception handling in a Spring Boot REST API?
+* What is the purpose of @RestControllerAdvice?
+* How do you validate request payloads using Bean Validation?
+* What is the role of the Spring Boot Actuator?
+* How do you create custom health indicators in Spring Boot?
+* How do you write unit tests for Spring Boot service classes?
+* What is the difference between @SpringBootTest and @WebMvcTest?
+* How do you externalize secrets and environment-specific configuration in Spring Boot?

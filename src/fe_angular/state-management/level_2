@@ -1,0 +1,30 @@
+* Explain the architecture of a large-scale Angular state management solution.
+* How do you decide which state should be local and which should be global?
+* How do you design a scalable state management architecture for an enterprise application?
+* How do you normalize complex entities in NgRx Store?
+* Why should NgRx state generally be immutable?
+* How do you enforce immutability in reducers?
+* What problems can occur when mutable objects are stored in shared state?
+* How do you manage derived state efficiently using memoized selectors?
+* How do you prevent unnecessary component re-rendering caused by state changes?
+* How do you handle concurrent API requests in NgRx Effects?
+* How do you choose between switchMap(), mergeMap(), concatMap(), and exhaustMap() in Effects?
+* How do you handle API failures without terminating an NgRx Effect stream?
+* How do you implement optimistic updates and rollback on API failure?
+* How do you implement undo and redo functionality using state management?
+* How do you manage normalized state for related entities?
+* How do you handle stale data and cache invalidation in a global Store?
+* How do you implement pagination and infinite scrolling with centralized state?
+* How do you prevent race conditions when multiple components update the same state?
+* How do you implement authentication state and handle token expiration?
+* How do you persist selected portions of NgRx state securely?
+* What are the risks of storing sensitive information in browser storage?
+* How do you manage state isolation between users during logout and login?
+* How do you organize feature-level state in a large Angular application?
+* How do lazy-loaded feature stores affect state registration and lifecycle?
+* How do you use Angular Signals for derived and shared application state?
+* How do you integrate Signals with RxJS using toSignal() and toObservable()?
+* How do you choose between NgRx Store, ComponentStore, SignalStore, and service-based state?
+* How do you implement state hydration for server-side rendering?
+* How do you test complex state transitions and asynchronous effects?
+* How do you identify and resolve performance bottlenecks in a state management layer?

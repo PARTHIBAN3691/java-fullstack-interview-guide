@@ -1,0 +1,139 @@
+**RAG Fundamentals and Architecture**
+* What is Retrieval-Augmented Generation (RAG)?
+* Why is RAG used in generative AI applications?
+* What are the main components of a RAG architecture?
+* How does RAG differ from fine-tuning an LLM?
+* What are the advantages and limitations of RAG?
+
+**Basic RAG Pipeline**
+* What are the steps involved in a basic RAG pipeline?
+* What happens during document ingestion, retrieval, and generation?
+* How does a user query reach the LLM in a RAG application?
+* What is the role of a retriever in a RAG pipeline?
+* What is the role of the generator in a RAG pipeline?
+
+**Document Ingestion Pipelines**
+* What is a document ingestion pipeline?
+* What types of documents can be ingested into a RAG system?
+* What is the difference between batch and real-time document ingestion?
+* Why should document ingestion be repeatable and reliable?
+* How do you identify duplicate documents during ingestion?
+
+**Document Parsing and Preprocessing**
+* What is document parsing?
+* Why is preprocessing required before generating embeddings?
+* How would you extract text from PDFs, Word documents, and HTML files?
+* Why is text normalization important in RAG?
+* What challenges arise when processing tables, scanned documents, and special characters?
+
+**Chunking and Overlap Strategies**
+* What is chunking in RAG?
+* Why are documents divided into smaller chunks?
+* What is chunk overlap?
+* What is the difference between fixed-size and semantic chunking?
+* How can inappropriate chunk sizes affect retrieval quality?
+
+**Embedding Generation**
+* What is the purpose of embeddings in RAG?
+* How are document embeddings generated?
+* How are query embeddings used during retrieval?
+* Why should query and document embeddings be compatible?
+* What factors influence embedding quality?
+
+**Vector Store Integration**
+* What is a vector store?
+* How does a RAG application store document chunks and embeddings?
+* What metadata should be stored alongside each chunk?
+* How does a vector store retrieve relevant chunks for a query?
+* What are common vector stores used in RAG applications?
+
+**Semantic and Hybrid Retrieval**
+* What is semantic retrieval?
+* What is keyword-based retrieval?
+* What is hybrid retrieval?
+* Why might hybrid retrieval outperform vector-only retrieval?
+* What is the difference between retrieval relevance and answer relevance?
+
+**Query Rewriting and Expansion**
+* What is query rewriting in RAG?
+* Why might a user's original query need rewriting?
+* What is query expansion?
+* How can synonyms and alternative phrases improve retrieval?
+* What are the risks of changing the user's original query?
+
+**Reranking and Context Compression**
+* What is reranking in a RAG pipeline?
+* Why might retrieved documents need to be reranked?
+* What is context compression?
+* How does a reranker differ from the initial retriever?
+* How can context compression reduce unnecessary tokens?
+
+**Context Window Management**
+* What is an LLM context window?
+* Why can retrieved documents exceed the available context window?
+* How do input tokens and output tokens affect context limits?
+* What is the difference between truncating and summarizing context?
+* Why should a RAG system reserve tokens for the generated answer?
+
+**Citation and Source Grounding**
+* What is source grounding in RAG?
+* Why should generated answers include citations?
+* What information should a citation contain?
+* How can a RAG application link an answer to its source document?
+* What is the difference between a cited answer and a correctly grounded answer?
+
+**Advanced RAG**
+* What is advanced RAG?
+* How does advanced RAG improve on a basic RAG pipeline?
+* What is the purpose of multi-stage retrieval?
+* What is iterative retrieval?
+* When might a basic RAG pipeline be insufficient?
+
+**Agentic RAG**
+* What is Agentic RAG?
+* How does Agentic RAG differ from conventional RAG?
+* What role does an AI agent play in retrieval?
+* What is a retrieval tool in an agentic workflow?
+* What are the benefits and risks of iterative agent-driven retrieval?
+
+**GraphRAG**
+* What is GraphRAG?
+* How does GraphRAG differ from vector-based RAG?
+* What is a knowledge graph?
+* What are entities and relationships in GraphRAG?
+* What kinds of questions benefit from graph-based retrieval?
+
+**Multimodal RAG**
+* What is multimodal RAG?
+* What types of content can a multimodal RAG system process?
+* How can images and tables be incorporated into a RAG pipeline?
+* What is the difference between text-only RAG and multimodal RAG?
+* What challenges arise when retrieving information from images, audio, and video?
+
+**RAG Evaluation and Benchmarking**
+* Why is RAG evaluation important?
+* What is retrieval precision?
+* What is retrieval recall?
+* What is faithfulness in a RAG-generated answer?
+* What is the difference between evaluating retrieval and evaluating generation?
+
+**RAG Hallucination Reduction**
+* What is hallucination in a RAG application?
+* Why can an LLM hallucinate even when relevant documents are retrieved?
+* How can source-grounded prompting reduce hallucinations?
+* What should a RAG system do when no relevant information is found?
+* Why is it important to distinguish missing evidence from an incorrect answer?
+
+**RAG Security and Access Control**
+* What security risks exist in RAG applications?
+* Why must document access permissions be enforced during retrieval?
+* What is prompt injection in a retrieved document?
+* How can a RAG application protect sensitive information?
+* Why should user authorization be checked independently of LLM instructions?
+
+**RAG Performance and Cost Optimization**
+* What factors affect RAG response latency?
+* How can caching improve RAG performance?
+* How does chunk size affect storage and token costs?
+* Why should a RAG application limit the number of retrieved chunks?
+* What metrics should be monitored in a production RAG system?

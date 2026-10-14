@@ -1,0 +1,30 @@
+* A button should smoothly enlarge when hovered. How would you implement the animation?
+* A loading spinner must rotate continuously without causing unnecessary performance overhead. How would you build it?
+* A notification should slide into view, remain visible briefly, and then disappear. How would you implement the animation?
+* A card should flip to reveal additional information when selected. How would you create the effect?
+* A list of items should appear one after another when a page loads. How would you implement staggered animations?
+* A form field should shake when validation fails. How would you design the animation?
+* A modal dialog should fade in when opened and fade out when closed. How would you coordinate both animations?
+* An animation works in Chrome but behaves differently in Safari. How would you debug the issue?
+* A complex animation causes scrolling to become slow. How would you identify and fix the performance bottleneck?
+* An element flickers when its transform animation begins. What could cause this, and how would you investigate?
+* An animation should run only once when a component appears. Which animation properties would you use?
+* A user clicks a button repeatedly while its animation is running. How would you handle repeated interactions?
+* A progress indicator should animate from zero to a target percentage. How would you implement it?
+* A dashboard contains several animated charts. How would you avoid degrading overall rendering performance?
+* A menu should animate open and closed without blocking keyboard interaction. How would you design the behavior?
+* A page contains a large number of animated cards. How would you reduce unnecessary animation work?
+* A logo should continuously pulse, but the effect must stop when the user prefers reduced motion. How would you implement it?
+* An element's animation restarts unexpectedly after a state update. How would you diagnose the cause?
+* A tooltip should appear smoothly when hovering over an icon and remain available to keyboard users. How would you implement it?
+* A page needs different animation durations on mobile and desktop. How would you configure responsive animation rules?
+* A notification animation ends before the JavaScript cleanup executes. How would you make the cleanup reliable?
+* A carousel should transition between slides smoothly while avoiding excessive DOM updates. How would you design the animation?
+* An animation changes an element's width and causes nearby content to jump. How would you redesign it?
+* A transformed element overlaps unrelated content because of stacking behavior. How would you investigate and resolve it?
+* A page uses many will-change declarations and consumes excessive memory. How would you optimize it?
+* A scroll-based animation must remain smooth while the user scrolls through a long page. What techniques would you consider?
+* A modal closes before its fade-out animation finishes. How would you coordinate the closing state and DOM removal?
+* A product image should zoom smoothly on hover without changing the layout. How would you implement it?
+* A developer uses infinite animations on several decorative elements, and users report distraction. How would you improve the experience?
+* How would you design a reusable animation system for an enterprise application with consistent timing, easing, and accessibility rules?

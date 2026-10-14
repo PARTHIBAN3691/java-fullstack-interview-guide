@@ -1,0 +1,30 @@
+* A payment-processing system stores transaction amounts in an array. How would you find the total transaction value while handling invalid or unexpected data?
+* An e-commerce application stores product prices in an array. How would you find the top five highest prices efficiently?
+* A monitoring system records server response times in an array. How would you identify the maximum response time and its corresponding position?
+* A banking application stores daily account balances in an array. How would you identify the largest increase between two consecutive days?
+* A stock-trading application stores daily stock prices. How would you calculate the maximum profit from one buy-and-sell transaction?
+* An analytics service receives millions of integers. How would you identify duplicates while minimizing time and memory usage?
+* A logistics application stores delivery distances in an array. How would you find two locations whose combined distance equals a target?
+* A reporting system stores monthly revenue figures. How would you identify the continuous period with the highest total revenue?
+* A data-import job receives an array containing repeated customer IDs. How would you remove duplicates while preserving the original order?
+* A scheduler stores task priorities in an array. How would you identify the Kth-highest priority without sorting the entire array?
+* An inventory system stores quantities of products, including zeros for out-of-stock items. How would you move zero quantities to the end without changing the order of other quantities?
+* A telemetry service stores CPU utilization values. How would you identify the longest period during which utilization remained above a threshold?
+* A payment gateway stores transaction amounts, including positive and negative adjustments. How would you find a contiguous range whose sum matches a reconciliation difference?
+* A financial application stores daily profit and loss values. How would you identify the maximum cumulative gain over a continuous period?
+* A service receives sorted customer IDs from two databases. How would you merge them efficiently and remove duplicates?
+* A fraud-detection service receives transaction identifiers in an array. How would you detect repeated identifiers and report their frequencies?
+* A shipment-tracking system records package weights. How would you find the smallest missing positive weight identifier when values are expected to form a sequence?
+* A dashboard displays daily sales in a circular reporting window. How would you find the maximum sum of sales over a circular sequence of days?
+* A resource-allocation service stores memory block sizes. How would you find two blocks that together satisfy a requested memory size?
+* A search service receives sorted product IDs but performs searches slowly. How would you choose and implement an efficient search algorithm?
+* A reporting service needs the median of two sorted datasets without merging them because of memory constraints. How would you solve the problem?
+* A game stores player scores in an array. How would you determine the majority score when one score appears in more than half of the entries?
+* A batch-processing application experiences slowdowns while sorting a large array. How would you investigate algorithmic complexity and choose a more appropriate approach?
+* A sensor system records daily temperatures. How would you find the longest consecutive sequence of days with increasing temperatures?
+* A delivery application stores route elevations in an array. How would you calculate the amount of rainwater trapped between elevation points?
+* A financial reconciliation system compares two arrays of transaction IDs. How would you efficiently find missing and unexpected transactions?
+* A data pipeline needs to rotate a large array by a specified number of positions. How would you perform the operation in place?
+* A monitoring system needs the maximum value in every sliding window of size K. How would you design an efficient solution?
+* A Java service processes a very large array and frequently encounters memory pressure. How would you reduce allocations and improve performance?
+* A production API receives an empty array, a null array, or an array with unexpected values. How would you design robust validation and error handling?

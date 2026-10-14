@@ -1,0 +1,27 @@
+* Write an Azure DevOps YAML pipeline to build a Java Spring Boot application using Maven.
+* Write an Azure DevOps YAML pipeline to build a Java application using Gradle.
+* Write an Azure DevOps YAML pipeline that runs unit tests and publishes test results.
+* Write a YAML pipeline that builds a Spring Boot JAR and publishes it as a pipeline artifact.
+* Write a YAML pipeline with separate Build, QA, and Production stages.
+* Write a YAML pipeline that deploys a Spring Boot application to Azure App Service.
+* Write a YAML pipeline that builds a Docker image for a Spring Boot application.
+* Write a YAML pipeline that pushes a Docker image to Azure Container Registry.
+* Write a YAML pipeline that deploys a Docker image to Azure Kubernetes Service.
+* Write a YAML pipeline that uses environment-specific variables for Dev, QA, and Production.
+* Write a YAML pipeline using a variable group for common application configuration.
+* Write a YAML pipeline that requires manual approval before Production deployment.
+* Write a YAML pipeline that executes Maven dependency caching to improve build performance.
+* Write a reusable YAML template for building multiple Java microservices.
+* Write a YAML pipeline that builds multiple microservices in parallel.
+* Write a YAML pipeline that runs SonarQube analysis and fails the build when the quality gate is not passed.
+* Write a YAML pipeline that performs a security scan on a Docker image before deployment.
+* Write a YAML pipeline that deploys only when changes are merged into the main branch.
+* Write a YAML pipeline that supports rollback to a previously published application artifact.
+* Write a YAML pipeline that deploys an application using Blue-Green deployment.
+* Write a YAML pipeline that provisions Azure infrastructure using Terraform.
+* Write a YAML pipeline that runs Terraform plan during pull requests and Terraform apply after approval.
+* Write a YAML pipeline that securely authenticates with Azure without storing credentials directly in the repository.
+* Write a Java or Spring Boot application configuration that reads environment-specific values from environment variables.
+* Write a Java program that exposes a health-check endpoint suitable for CI/CD deployment validation.
+* Write a shell or PowerShell script used by an Azure DevOps pipeline to verify that a deployed Spring Boot application is healthy.
+* Write a YAML pipeline that automatically rolls back when a deployment health check fails.

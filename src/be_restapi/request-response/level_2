@@ -1,0 +1,30 @@
+* How would you design a consistent request-response contract for a large enterprise REST API?
+* How would you design a reusable API response wrapper without making the response structure unnecessarily complex?
+* How would you decide between returning a DTO directly and using ResponseEntity for every endpoint?
+* How would you handle partial updates using PATCH while distinguishing missing fields from explicit null values?
+* How would you design request validation for complex nested DTOs?
+* How would you implement cross-field validation where one field depends on another field?
+* How would you handle polymorphic JSON request payloads in Java?
+* How would you configure Jackson to handle backward-compatible JSON deserialization?
+* How would you manage unknown fields when integrating with external systems that frequently add new properties?
+* How would you prevent breaking changes in response DTOs used by multiple clients?
+* How would you design a standardized error response containing an error code, message, timestamp, and field-level validation details?
+* How would you propagate correlation IDs across requests, services, and responses?
+* How would you implement request and response logging without exposing passwords, tokens, or personal information?
+* How would you handle very large JSON payloads without excessive memory consumption?
+* How would you process streaming request or response bodies in a Java REST API?
+* How would you handle content negotiation when an API supports multiple media types?
+* How would you return different response representations based on the Accept header?
+* How would you handle serialization failures after the controller has completed its business logic?
+* How would you design a consistent exception-to-HTTP-status mapping strategy?
+* How would you prevent internal Java class structures from leaking into public API contracts?
+* How would you handle decimal precision and rounding in financial request-response payloads?
+* How would you ensure consistent timezone handling across distributed services?
+* How would you design idempotent request processing when clients retry after a timeout?
+* How would you distinguish a client-side request timeout from a server-side processing failure?
+* How would you handle partial failures when an API aggregates responses from multiple downstream services?
+* How would you design response schemas that support both legacy clients and newly introduced fields?
+* How would you measure and optimize JSON serialization and deserialization performance?
+* How would you handle request-size limits and reject oversized payloads safely?
+* How would you design secure error responses that are useful to clients but do not disclose implementation details?
+* How would you maintain contract compatibility across independently deployed microservices?

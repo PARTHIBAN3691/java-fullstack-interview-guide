@@ -1,0 +1,30 @@
+* A counter increments by one even when the user clicks a button three times quickly. How would you fix the state update logic?
+* A component displays outdated data after an API response arrives. How would you investigate and resolve the issue?
+* Two sibling components need to display and update the same data. How would you manage their shared state?
+* A deeply nested component needs access to user information without passing props through every component. How would you solve this?
+* Updating one field in an object unexpectedly removes its other fields. What could be wrong with the state update logic?
+* Adding an item to an array in state does not update the UI. How would you troubleshoot it?
+* A component re-renders continuously after a state update. How would you identify the cause?
+* A form loses its values whenever the parent component re-renders. How would you investigate it?
+* A user changes a filter quickly, but an older API response overwrites the latest results. How would you prevent this?
+* A shopping cart must be shared between the product list, header, and checkout pages. How would you design its state management?
+* A dashboard has many widgets that depend on the same API data. How would you avoid duplicated state and unnecessary requests?
+* A modal closes whenever its parent component changes state. How would you preserve its state?
+* A user refreshes the page and loses their selected theme. How would you persist the preference?
+* An application has a large Context provider, and every consumer re-renders whenever any value changes. How would you optimize it?
+* A component copies props into state and displays stale information when the props change. How would you redesign it?
+* A user submits a form twice because the loading state is not updated quickly enough. How would you prevent duplicate submissions?
+* A checkout workflow has several steps and complex transitions. Would you choose useState or useReducer, and why?
+* A user updates a profile, but the UI shows the old data until the page is refreshed. How would you fix the state synchronization?
+* A task management application needs undo and redo support. How would you design its state structure?
+* A search box should update immediately, but filtering thousands of records makes the UI slow. How would you optimize the state-driven rendering?
+* A component's asynchronous callback always reads the initial state value. What is the likely cause, and how would you fix it?
+* A parent component owns too much state and has become difficult to maintain. How would you refactor the state ownership?
+* A user logs out, but their previous account data remains visible in the application. How would you clear or reset the relevant state?
+* A product quantity can never be negative or exceed available stock. How would you enforce these rules in state updates?
+* An application must handle loading, empty, success, and error states consistently across multiple screens. How would you design the state model?
+* Several API calls update overlapping data, causing inconsistent UI values. How would you coordinate those updates?
+* A component loses its state when moving between routes. How would you determine whether the state should be preserved or reset?
+* A list item unexpectedly retains another item's input value after sorting the list. How could React keys and component state explain this?
+* An application stores the same user information in multiple components, and the values become inconsistent. How would you resolve this?
+* You are building a large enterprise React application. How would you decide which state management approach to use for different features?

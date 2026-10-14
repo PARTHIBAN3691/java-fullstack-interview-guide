@@ -1,0 +1,21 @@
+
+* A Spring Boot application works locally but fails to start after deployment to Azure App Service. How would you investigate the issue?
+* After deploying a new version, the application returns HTTP 500 errors. What steps would you take to identify and resolve the problem?
+* Users experience intermittent HTTP 503 errors during peak traffic. How would you diagnose and mitigate the issue?
+* An App Service-hosted application has high response times even though CPU utilization is low. How would you investigate?
+* A deployment causes database connection failures because the application uses an incorrect connection string. How would you prevent this in future deployments?
+* Your application needs to access Azure Key Vault, but managed identity authentication fails. How would you troubleshoot it?
+* A new application version must be deployed without affecting existing users. How would you use deployment slots to achieve this?
+* After a slot swap, the application connects to the wrong database. How would you correct the configuration and prevent recurrence?
+* An application works correctly with one instance but fails when scaled out to multiple instances. What potential issues would you investigate?
+* A Spring Boot application stores user sessions in local memory. What problems could occur during scaling or instance replacement, and how would you solve them?
+* The application's memory consumption increases continuously until the App Service restarts. How would you investigate and fix the issue?
+* An application cannot connect to a database configured with a private endpoint. How would you troubleshoot DNS, networking, and access settings?
+* A Java application deployed through Azure DevOps succeeds in the pipeline but serves an older version. How would you investigate the deployment process?
+* A production release introduces a critical defect. How would you roll back safely while preserving data consistency?
+* Application Insights shows failed dependency calls to a downstream microservice. How would you isolate the cause?
+* Your App Service bill has increased significantly after a traffic spike. How would you optimize scaling and resource utilization?
+* A scheduled background job runs multiple times after the application scales out. How would you ensure the job executes only as intended?
+* Your application needs separate configurations for development, staging, and production. How would you manage configuration and secrets?
+* A critical application must remain available during a regional outage. How would you design the deployment and failover strategy?
+* Your organization requires private access to an App Service-hosted API with no public inbound access. How would you design the network and authentication architecture?

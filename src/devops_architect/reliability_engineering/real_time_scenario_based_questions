@@ -1,0 +1,86 @@
+
+**Site Reliability Engineering (SRE)**
+* Your team experiences repeated production incidents, but every service team claims its own service is healthy. How would you identify the end-to-end reliability problem and establish ownership?
+* A release improves feature delivery speed but doubles the number of incidents. How would you use SRE metrics and operational practices to address the situation?
+* Your team spends most of its sprint handling repetitive operational tasks. How would you identify toil, automate it, and measure the outcome?
+* A critical incident has multiple teams investigating different symptoms with no clear coordinator. How would you organize the response and ensure timely recovery?
+
+**Availability and Reliability**
+* Your API reports 99.99% uptime, but customers frequently report failed transactions. How would you investigate the mismatch between infrastructure availability and user experience?
+* A system's availability drops after introducing a new synchronous dependency. How would you quantify the impact and decide whether to redesign the interaction?
+* A service has frequent short outages that are missed by five-minute monitoring intervals. How would you detect the failures and improve availability measurement?
+* Your service meets its availability target but regularly exceeds its latency target. How would you investigate and report reliability accurately?
+
+**Resilience and Fault Tolerance**
+* A payment service becomes slow, causing order-service threads to accumulate and eventually making the entire application unavailable. How would you restore service and prevent a recurrence?
+* A downstream service fails intermittently, and requests succeed only after multiple attempts. How would you distinguish transient faults from a systemic failure?
+* An application recovers after a restart, but the same failure returns during peak traffic. How would you identify the underlying resilience weakness?
+* A dependency outage causes duplicate business operations after recovery. How would you establish the root cause and make the workflow safe?
+
+**High Availability**
+* One availability zone becomes unavailable during peak traffic. How would you validate failover, capacity, and customer impact?
+* Your application runs across three availability zones, but all instances become unhealthy after a shared configuration change. How would you identify the common failure point and prevent recurrence?
+* Regional failover succeeds, but users continue reaching the failed region. How would you troubleshoot DNS caching, connection reuse, routing, and health checks?
+* Your active-passive database failover causes a long write interruption. How would you reduce recovery time and validate data consistency?
+
+**Disaster Recovery**
+* Your primary cloud region becomes unavailable, and the business requires service restoration within 30 minutes with no more than five minutes of data loss. How would you assess whether your architecture meets those targets?
+* A regional outage occurs, but the disaster recovery environment contains outdated application configuration and missing secrets. How would you recover safely and address the gaps?
+* A database corruption event has replicated to the standby region. How would you recover clean data without losing more transactions than necessary?
+* A disaster recovery drill meets the recovery-time target but loses several minutes of recent transactions. How would you investigate the RPO failure and improve the recovery process?
+
+**Failure Domains and Fault Isolation**
+* A noisy tenant consumes most of the database connection pool and affects every customer. How would you isolate the tenant and protect shared resources?
+* A shared DNS problem causes failures across multiple otherwise healthy services. How would you reduce this common dependency's blast radius?
+* A faulty deployment affects every region simultaneously. How would you change rollout and isolation strategies to prevent another global incident?
+* A background batch job exhausts resources needed by customer-facing APIs. How would you isolate workloads and preserve critical traffic?
+
+**Graceful Degradation**
+* The recommendation service fails during a major sales event, but the product catalog and checkout remain healthy. How would you preserve the shopping journey?
+* A third-party fraud-scoring API becomes slow. How would you decide whether to queue, reject, or safely process transactions through an approved fallback?
+* The cache becomes unavailable and the application starts sending every request to the database. How would you introduce controlled degradation and protect the database?
+* A fallback mechanism returns stale account balances during a dependency outage. How would you prevent incorrect financial decisions while preserving essential functionality?
+
+**Backpressure**
+* A message producer publishes 100,000 events per second, but consumers can process only 30,000. The queue keeps growing. How would you stabilize the pipeline and prevent data loss?
+* A consumer slowdown causes the broker's disk usage to approach its limit. What immediate actions and long-term changes would you make?
+* An API accepts requests faster than its asynchronous workers can process them, causing long delays and timeouts. How would you implement admission control and backpressure?
+* Autoscaling consumers repeatedly scale up and down while queue depth oscillates. How would you diagnose and stabilize the system?
+
+**Load Shedding**
+* Traffic suddenly increases fivefold and API latency exceeds the service objective. How would you determine which requests to shed and which to preserve?
+* An expensive reporting endpoint consumes resources needed for checkout transactions. How would you implement priority-based load shedding?
+* During an outage, rejected requests trigger client retries, increasing traffic even further. How would you stop the feedback loop?
+* A multi-tenant API must protect critical enterprise workloads while remaining fair to other tenants. How would you design overload policies?
+
+**Circuit Breakers**
+* A downstream inventory service begins returning intermittent timeouts. Your service's circuit breaker opens continuously, even after the dependency recovers. How would you diagnose and tune it?
+* After a dependency outage, hundreds of application instances attempt recovery probes simultaneously. How would you prevent a recovery traffic spike?
+* A circuit breaker opens because the local application is overloaded rather than because the dependency is unhealthy. How would you distinguish the causes?
+* A circuit breaker protects the API but causes requests to fail even after the downstream service is healthy. How would you troubleshoot state transitions and recovery behavior?
+
+**Bulkheads**
+* One downstream integration consumes all available request threads, causing unrelated APIs to fail. How would you isolate resource pools and verify the fix?
+* A bulkhead has been configured, but its pool is too small and rejects legitimate traffic during peak hours. How would you tune capacity without losing isolation?
+* Background processing starves customer-facing operations of database connections. How would you separate resource pools and prioritize critical work?
+* A bulkhead prevents thread exhaustion, but queued requests still accumulate and exceed their deadlines. What additional controls would you introduce?
+
+**Retry Policies and Timeout Strategies**
+* A payment request times out after reaching the payment provider. The caller cannot determine whether the payment succeeded. How would you handle the uncertain outcome without charging the customer twice?
+* Several service layers each retry a failed request three times, multiplying traffic during a downstream outage. How would you redesign retry ownership and limits?
+* A request has a two-second end-to-end deadline but spends most of its time waiting on downstream services. How would you allocate timeout budgets and propagate deadlines?
+* A service retries HTTP 500 responses but fails to retry temporary connection failures. How would you investigate the policy and choose retryable errors?
+* After a network interruption, a message consumer reprocesses events and creates duplicate orders. How would you introduce idempotency, bounded retries, and reconciliation?
+
+**Chaos Engineering**
+* Your team believes a service can survive losing one availability zone, but this has never been tested. How would you design a controlled experiment and define success criteria?
+* A chaos experiment injects latency into a downstream service and unexpectedly causes database saturation. How would you investigate the dependency chain and use the results?
+* A production chaos test affects customers more than expected. How would you stop the experiment, recover service, and improve safety controls?
+* A chaos test passes in staging but fails in production because traffic patterns differ. How would you improve experiment design and environment fidelity?
+
+**Error Budgets**
+* Your service consumes 80% of its monthly error budget in the first week. How would you investigate the burn rate and decide whether to pause releases?
+* A product team wants to release a major feature even though the service has exhausted its error budget. How would you negotiate a decision using risk, evidence, and business priorities?
+* A service meets its monthly availability SLO, but a few major incidents have severely affected critical customers. How would you improve the SLI and error-budget policy?
+* Your team introduces a fix that reduces incident count but increases average recovery time. How would you determine whether overall reliability improved?
+* Error-budget alerts fire too frequently and teams begin ignoring them. How would you tune burn-rate alerts and improve incident response?

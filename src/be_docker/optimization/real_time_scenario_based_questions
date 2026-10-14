@@ -1,0 +1,30 @@
+* Your Spring Boot Docker image has increased from 300 MB to 900 MB after a dependency update. How would you identify the source of the increase and reduce the image size?
+* Your CI pipeline takes 12 minutes to build a Java image because Maven dependencies are downloaded on every run. How would you optimize the build?
+* Your Docker image builds quickly on a developer's machine but takes much longer in CI. How would you investigate build context size, cache availability, and build environment differences?
+* Your application starts in 5 seconds locally but takes 40 seconds inside Docker. How would you investigate JVM initialization, resource limits, and application dependencies?
+* A Spring Boot container is repeatedly killed because it exceeds its memory limit. How would you diagnose JVM memory usage and configure suitable limits?
+* Your Java application experiences high CPU usage after deploying an optimized image. How would you determine whether the cause is CPU throttling, garbage collection, or application behavior?
+* After switching to an Alpine-based Java image, your application fails because a native library cannot be loaded. How would you resolve the compatibility issue?
+* Your team uses multi-stage builds, but the final image still contains Maven and unnecessary build files. How would you inspect and correct the Dockerfile?
+* A production image is small, but its startup time has increased after replacing the standard Java runtime with a custom jlink image. How would you investigate the regression?
+* Docker hosts are running out of disk space because of old images, stopped containers, and logs. How would you reclaim space safely without affecting running services?
+* Your Spring Boot service becomes slow when a Docker CPU limit is introduced. How would you determine whether CPU throttling or garbage collection is responsible?
+* The application runs well on a developer's laptop but suffers frequent garbage collection in a container with a 512 MB memory limit. How would you profile and tune the JVM?
+* Your Dockerfile rebuilds the entire application whenever a README file changes. How would you redesign the build context and layer ordering?
+* A security scan requires a newer Java base image, but the new image is larger and has a longer startup time. How would you evaluate the trade-offs?
+* Your application deployment takes several minutes because every host pulls a large image. How would you improve registry usage, layer reuse, and deployment strategy?
+* A Docker image was reduced in size, but the application now fails because CA certificates and timezone data are missing. How would you restore the required runtime components without reintroducing unnecessary packages?
+* Your CI pipeline uses a remote build cache shared across multiple branches. A build unexpectedly reuses an inappropriate artifact. How would you investigate cache keys and isolation?
+* Several Java microservices share the same large base image and deploy frequently. How would you optimize image reuse and reduce total registry storage?
+* Your Spring Boot application generates large volumes of logs, eventually filling the host disk. How would you configure logging and container log rotation?
+* An application experiences high latency under load despite having low average CPU utilization. How would you investigate thread pools, memory pressure, network latency, and resource throttling?
+* After enabling memory limits, the container is killed even though the Java heap appears below the configured limit. How would you investigate native memory, direct buffers, thread stacks, and other process memory?
+* Your team combines every Dockerfile command into a single RUN instruction to reduce layer count, but builds become harder to cache and maintain. How would you redesign the Dockerfile?
+* A multi-platform build produces a larger ARM64 image than the AMD64 image. How would you identify architecture-specific dependencies and optimize both variants?
+* A production release has a smaller image but worse API throughput than the previous release. How would you design a benchmark to isolate image, JVM, and application changes?
+* Your container frequently restarts because its health check times out during startup. How would you distinguish a slow application startup from an overly aggressive health-check configuration?
+* A Java application uses a large amount of memory even when idle. How would you profile heap, metaspace, thread stacks, direct memory, and framework initialization?
+* A new Dockerfile reduces build time but introduces a vulnerability because an outdated dependency layer is reused. How would you balance cache reuse with dependency freshness and security?
+* Your Docker Compose development environment becomes slow when running 15 Spring Boot services. How would you analyze resource contention and optimize local development?
+* Your registry has limited bandwidth, and multiple servers repeatedly download similar large images. How would you improve layer reuse and image distribution?
+* Your team needs measurable proof that Docker optimization improved production performance. Which metrics would you collect, and how would you compare the results safely?

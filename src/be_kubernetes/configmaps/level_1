@@ -1,0 +1,30 @@
+* How do you create a ConfigMap from a properties file using kubectl?
+* How do you create a ConfigMap from a directory containing configuration files?
+* How do you create a ConfigMap from literal key-value pairs?
+* How do you reference individual ConfigMap keys as environment variables?
+* How do you inject all ConfigMap entries as environment variables?
+* How do you mount selected ConfigMap keys into a container?
+* How do you mount a ConfigMap at a specific path inside a Spring Boot container?
+* How do you configure Spring Boot using application.properties stored in a ConfigMap?
+* How do you configure Spring Boot using application.yml stored in a ConfigMap?
+* How do you manage different ConfigMaps for development, staging, and production?
+* How do you use ConfigMaps with Helm charts?
+* How do you manage ConfigMaps using Kustomize?
+* How do you update a ConfigMap using kubectl?
+* How do you apply changes to a ConfigMap using a YAML manifest?
+* What happens to environment variables when a ConfigMap is updated?
+* How are mounted ConfigMap files updated after a configuration change?
+* Why might an application not see updated ConfigMap values immediately?
+* How do you reload Spring Boot configuration after a ConfigMap change?
+* Why might a ConfigMap update require a Pod restart?
+* How can a checksum annotation trigger a Deployment rollout when a ConfigMap changes?
+* How do you prevent configuration drift across Kubernetes environments?
+* How do you validate required ConfigMap keys before application startup?
+* How do you handle missing or invalid configuration values in Spring Boot?
+* How do you use ConfigMaps with init containers?
+* Can an application modify files mounted from a ConfigMap?
+* How do you combine ConfigMap values with container environment variables?
+* What happens when a ConfigMap key contains special characters?
+* How do you inspect ConfigMap-related errors in Pod events?
+* How do you manage configuration changes safely during a rolling deployment?
+* How do you test a Spring Boot application's behavior with different ConfigMap configurations?

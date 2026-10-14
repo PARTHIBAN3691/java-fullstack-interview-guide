@@ -1,0 +1,30 @@
+* Write a generic function that accepts a value and returns the same value.
+* Create a generic function that returns the first element of an array.
+* Create a generic function that returns the last element of an array.
+* Write a generic function that swaps two values and returns them as a tuple.
+* Create a generic Pair<T, U> interface with two differently typed properties.
+* Create a generic Box<T> class that stores and retrieves a value.
+* Implement a generic Stack<T> class with push(), pop(), and peek() methods.
+* Implement a generic Queue<T> class with enqueue() and dequeue() methods.
+* Create a generic Repository<T> interface with add(), findById(), and getAll() methods.
+* Implement a generic repository class that stores objects containing an id property.
+* Write a generic function that retrieves an object's property using keyof and T[K].
+* Create a generic function that filters an array using a typed predicate callback.
+* Implement a generic map function that transforms an array while preserving the output type.
+* Create a generic Result<T, E> type to represent success and failure outcomes.
+* Write a generic API response interface containing data, status, and an optional message.
+* Create a generic service class that implements a generic service interface.
+* Implement a generic factory function that creates an instance of a supplied class.
+* Write a generic function with two type parameters and appropriate constraints.
+* Create a generic type alias with a default type parameter.
+* Implement a generic cache class with typed keys and values.
+* Create a generic pagination response type containing items, page number, and total count.
+* Implement a generic function that sorts objects by a selected property using keyof.
+* Create a generic event emitter that maps event names to their corresponding payload types.
+* Write a DeepPartial<T> utility type that recursively makes object properties optional.
+* Write a DeepReadonly<T> utility type that recursively makes object properties readonly.
+* Implement a generic function wrapper that preserves the original function's parameter and return types.
+* Create a generic retry function that retries a Promise-returning operation a specified number of times.
+* Implement a generic pipe function that composes multiple transformations with compatible input and output types.
+* Create a generic validator interface and implement validators for strings and numbers.
+* Build a generic repository and service layer for an employee management application using TypeScript generics.

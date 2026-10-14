@@ -1,0 +1,30 @@
+* How do you configure a Kafka Streams application using StreamsConfig?
+* How do you define a StreamsBuilder and construct a topology?
+* How do you read records from a Kafka topic using KStream?
+* How do you write processed records to an output topic using to()?
+* How do you implement filtering and transformation pipelines using the Kafka Streams DSL?
+* What is the difference between selectKey() and map()?
+* How does groupBy() differ from groupByKey()?
+* How do you aggregate events using groupByKey() and aggregate()?
+* What is the difference between reduce(), aggregate(), and count()?
+* How do you perform a stream-to-stream join?
+* What is the difference between KStream-KStream, KStream-KTable, and KTable-KTable joins?
+* What are join windows, and why are they required for stream-to-stream joins?
+* How do you configure tumbling, hopping, and sliding windows?
+* What is the difference between event time, processing time, and ingestion time?
+* How does Kafka Streams handle late-arriving events?
+* What is a grace period in windowed operations?
+* How do you configure serdes for keys and values?
+* What are the default serializers and deserializers used by Kafka Streams?
+* How do you implement a custom Serde in Java?
+* What is the purpose of peek() in Kafka Streams?
+* What is the difference between foreach() and peek()?
+* How do you handle exceptions during record processing?
+* What is the role of the uncaught exception handler in Kafka Streams?
+* How do you configure state stores for stateful operations?
+* What is the purpose of the application.id configuration?
+* How does Kafka Streams distribute tasks across application instances?
+* What is the role of num.stream.threads?
+* How do you configure processing guarantees in Kafka Streams?
+* How do you test a Kafka Streams topology using TopologyTestDriver?
+* How do you monitor the health and performance of a Kafka Streams application?

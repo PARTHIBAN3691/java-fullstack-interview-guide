@@ -1,0 +1,23 @@
+
+* Write a Java program that prints the ClassLoader responsible for loading a user-defined class.
+* Write a Java program that displays the ClassLoaders of a user-defined class, a collection class, and a core Java class.
+* Write a Java program that demonstrates the difference between `Class.forName()` and `ClassLoader.loadClass()`.
+* Write a Java program that demonstrates when a static initializer executes during class loading and initialization.
+* Write a Java program that demonstrates the order of static initialization across a superclass and subclass.
+* Write a Java program that demonstrates the behavior of circular static initialization across two classes.
+* Write a Java program that catches and analyzes an initialization failure caused by a static initializer.
+* Implement a custom ClassLoader by overriding `findClass()` to load class bytecode from a specified directory.
+* Write a Java program that loads a class dynamically using a custom ClassLoader.
+* Write a Java program that demonstrates how the same fully qualified class name can represent distinct class types when loaded by different defining ClassLoaders.
+* Write a Java program that demonstrates a `ClassCastException` caused by loading duplicate class definitions through separate ClassLoaders.
+* Write a Java program that demonstrates the thread context ClassLoader and its use in loading a resource.
+* Write a Java program that uses reflection to inspect a dynamically loaded class and invoke one of its methods.
+* Write a Java program that demonstrates lazy class initialization through a static nested holder class.
+* Write a Java program that repeatedly creates and releases custom ClassLoaders and investigates class unloading using weak references.
+* Write a Java program that measures the execution time of a method before and after repeated invocations to observe potential JIT warm-up effects.
+* Write a Java program that runs a computationally intensive loop and compares its initial execution time with later iterations.
+* Write a Java program that uses `System.nanoTime()` to measure repeated method invocations while accounting for warm-up iterations.
+* Write a Java program that demonstrates the effect of method inlining using suitable JVM diagnostic options.
+* Write a Java program that demonstrates how to inspect JIT compilation activity using HotSpot diagnostic logging options.
+* Write a Java program that compares interpreted execution and JIT-compiled execution using appropriate JVM options.
+* Write a Java program that demonstrates how repeated loading of dynamically generated classes can increase Metaspace usage.

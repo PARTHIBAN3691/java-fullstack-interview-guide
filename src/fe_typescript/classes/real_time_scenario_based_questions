@@ -1,0 +1,30 @@
+* You are building an employee management system. How would you design an Employee class with reusable properties and methods?
+* Your application has Admin, Manager, and Employee roles. How would you model these roles using classes and inheritance?
+* You need to prevent external code from changing an account balance directly. How would you design the Account class?
+* A payment application supports card, UPI, and net banking payments. How would you design an extensible payment class hierarchy?
+* You need to ensure that only one configuration manager instance exists. How would you implement this using a class?
+* Your application must create different notification types such as Email, SMS, and Push. How would you structure the classes?
+* A shopping cart must calculate totals for different product types. How would you design the relevant classes?
+* You are implementing a banking system where different accounts calculate interest differently. How would you use abstract classes?
+* A base class method must be customized by child classes. How would you implement method overriding safely?
+* A derived class constructor requires data from its parent class. How would you initialize both classes correctly?
+* You need a reusable API client that works with different response types. How would you design a generic class?
+* Your application contains multiple repositories for users, products, and orders. How would you create a generic repository class?
+* A reporting module supports PDF, Excel, and CSV reports. How would you design classes to make adding new report formats easy?
+* You need to prevent a service class from being instantiated directly. How would you control its construction?
+* A user profile has a calculated fullName property based on firstName and lastName. How would you implement it?
+* You want to validate an object's state whenever a property changes. How would you use getters and setters?
+* Your application has a base Logger class and specialized FileLogger and ConsoleLogger classes. How would you structure them?
+* A class must satisfy two separate contracts, such as Serializable and Auditable. How would you implement both interfaces?
+* You need to create a fluent query builder where method calls can be chained. How would you use polymorphic this types?
+* A legacy class has many responsibilities. How would you refactor it into smaller classes following SOLID principles?
+* You need to model different vehicle types while sharing common behavior. Would you use inheritance, composition, or both?
+* A class contains sensitive information that should not be directly accessible. How would you protect it at runtime?
+* Your application needs to replace a class implementation during testing. How would you design the classes for testability?
+* You need a plugin system that allows new implementations without modifying existing code. How would you design the base class or interface?
+* An e-commerce system has multiple discount strategies. How would you use classes to support changing discount rules?
+* A derived class accidentally changes the expected behavior of its parent class. How would you identify and prevent this design issue?
+* You need to share common functionality across unrelated classes. Would you use inheritance, composition, or mixins?
+* A service requires validated constructor arguments before an instance can be used. How would you enforce this?
+* You need to manage database connections without allowing arbitrary object creation. How would you design the connection manager class?
+* Your application must support different payment providers with provider-specific configuration. How would you combine classes, interfaces, and generics?

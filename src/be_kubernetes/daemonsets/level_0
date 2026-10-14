@@ -1,0 +1,30 @@
+* What is a DaemonSet in Kubernetes?
+* Why do we use DaemonSets in Kubernetes?
+* How does a DaemonSet work?
+* What is the difference between a DaemonSet and a Deployment?
+* What is the difference between a DaemonSet and a StatefulSet?
+* How does Kubernetes ensure that a DaemonSet runs on every eligible node?
+* Can a DaemonSet run more than one Pod on a node?
+* What happens when a new worker node joins a Kubernetes cluster?
+* What happens when a worker node is removed from a cluster?
+* Can a DaemonSet run on control plane nodes?
+* What is the purpose of node selectors in a DaemonSet?
+* What are node affinity rules in Kubernetes?
+* What are taints and tolerations?
+* How do tolerations affect DaemonSet scheduling?
+* Can a DaemonSet run only on selected nodes?
+* What is the purpose of the selector field in a DaemonSet?
+* What is the purpose of the template field in a DaemonSet?
+* What is the role of the DaemonSet controller?
+* How do you create a DaemonSet using a YAML manifest?
+* How do you list DaemonSets in a Kubernetes namespace?
+* How do you check the status of a DaemonSet?
+* How do you view the Pods created by a DaemonSet?
+* How do you update a DaemonSet?
+* How do you delete a DaemonSet?
+* What happens to DaemonSet Pods when the DaemonSet is deleted?
+* What is the purpose of the updateStrategy field?
+* What is the difference between RollingUpdate and OnDelete strategies?
+* Can a DaemonSet use hostPath volumes?
+* What are common use cases for DaemonSets?
+* Why are DaemonSets commonly used for monitoring and logging agents?

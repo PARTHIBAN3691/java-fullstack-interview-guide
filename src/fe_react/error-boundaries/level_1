@@ -1,0 +1,30 @@
+* How do you implement an Error Boundary using a class component?
+* How do you implement getDerivedStateFromError() in an Error Boundary?
+* How do you use componentDidCatch() for error logging?
+* How do you create a reusable Error Boundary component?
+* How do you wrap a specific component with an Error Boundary?
+* How do you wrap an entire application with an Error Boundary?
+* What is the difference between application-level and component-level Error Boundaries?
+* How do you create different fallback UIs for different sections?
+* How do you implement a retry button in an Error Boundary?
+* How do you reset an Error Boundary when its child component changes?
+* How do you handle errors in lazy-loaded components?
+* How do Error Boundaries work with React.lazy() and Suspense?
+* How do you handle errors from dynamically imported components?
+* How do you integrate Error Boundaries with React Router?
+* How do route-level error boundaries differ from React Error Boundaries?
+* How do you capture error details and component stack traces?
+* How do you send caught errors to an external logging service?
+* How do you test Error Boundaries using React Testing Library?
+* How do you simulate a rendering error in a unit test?
+* How do you mock an Error Boundary's fallback UI in tests?
+* How do Error Boundaries behave when a component throws during rendering?
+* How do Error Boundaries interact with React Strict Mode?
+* How do you handle errors thrown by third-party components?
+* How do you prevent an Error Boundary from hiding useful debugging information?
+* How do you combine Error Boundaries with centralized error logging?
+* How do you distinguish recoverable UI errors from critical application errors?
+* How do you implement nested Error Boundaries?
+* How do you handle errors when an Error Boundary's fallback UI also fails?
+* How do you maintain application state when an Error Boundary catches an error?
+* What are the best practices for using Error Boundaries in large React applications?

@@ -1,0 +1,30 @@
+* How do you configure Spring Boot Actuator in a production application?
+* How do you expose only selected Actuator endpoints over HTTP?
+* How do you secure Actuator endpoints using Spring Security?
+* How do you create a custom HealthIndicator in Spring Boot?
+* How do you implement a custom health check for a database dependency?
+* How do you implement a custom health check for an external REST API?
+* How do you customize the response returned by the health endpoint?
+* How do you configure management.endpoint.health.show-details?
+* What is the difference between when-authorized and always for health details?
+* How do you add application metadata to the /actuator/info endpoint?
+* How do you configure custom application information using InfoContributor?
+* How do you expose custom application metrics using Micrometer?
+* What is Micrometer, and how does it integrate with Spring Boot Actuator?
+* How do you measure the number of requests processed by an application?
+* How do you monitor API response times using Actuator metrics?
+* How do you monitor JVM memory usage using Actuator?
+* How do you monitor garbage collection activity using Actuator?
+* How do you monitor thread counts and CPU-related metrics?
+* How do you inspect registered Spring beans using Actuator?
+* How do you inspect request mappings using the mappings endpoint?
+* How do you change application log levels dynamically using the loggers endpoint?
+* How do you configure a separate management port for Actuator?
+* What is the difference between management.server.port and server.port?
+* How do you configure custom health groups?
+* What is the purpose of liveness and readiness health groups?
+* How do you configure Actuator health checks for Kubernetes deployments?
+* How do you disable a specific Actuator endpoint?
+* How do you test custom Actuator endpoints?
+* How do you export Actuator metrics to Prometheus?
+* How do you troubleshoot an Actuator endpoint that returns HTTP 404 or HTTP 403?

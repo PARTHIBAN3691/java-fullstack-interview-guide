@@ -1,0 +1,30 @@
+* Explain the complete CSS specificity calculation for complex selectors.
+* How does specificity behave when using :is(), :not(), and :has()?
+* Why does :where() always contribute zero specificity?
+* How does the specificity of a selector list work inside :is()?
+* How does CSS cascade layer ordering interact with selector specificity?
+* How are conflicting selectors resolved when they have equal specificity?
+* How does the universal selector differ from the :where(*) selector in practical use?
+* How does nesting selectors in modern CSS affect specificity?
+* What are the risks of using deeply nested selectors in a large application?
+* How can complex selectors increase CSS maintenance costs?
+* How would you design a selector strategy for a component-based frontend application?
+* How can attribute selectors be used to style elements based on data attributes?
+* What are the performance considerations of using complex CSS selectors?
+* Why should CSS selector performance generally be considered alongside maintainability rather than in isolation?
+* How does :has() enable parent-like selection in CSS?
+* What are practical limitations and compatibility considerations when using :has()?
+* How can :nth-child() be used to select repeating patterns of elements?
+* How does :nth-child(An+B of selector) differ from a basic :nth-child() expression?
+* How can pseudo-elements be used to create decorative content without adding HTML elements?
+* What are the accessibility implications of using generated content with ::before and ::after?
+* How do structural pseudo-classes behave when text nodes and comments exist between elements?
+* How can you select elements based on their relationship with specific siblings?
+* How can CSS selectors be used to implement styles for validation states in forms?
+* How do selector matching and inheritance differ?
+* How can you avoid unintended global styles caused by broad selectors?
+* How would you troubleshoot a selector that matches multiple unintended elements?
+* How can CSS Modules or scoped styling reduce selector conflicts?
+* How would you migrate a stylesheet with ID-heavy selectors to a class-based architecture?
+* How can you establish a scalable naming convention for selectors across multiple teams?
+* How would you design a maintainable selector architecture for a large enterprise application?

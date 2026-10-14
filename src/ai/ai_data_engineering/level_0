@@ -1,0 +1,112 @@
+**AI Data Pipelines**
+* What is an AI data pipeline, and how does it differ from a traditional data pipeline?
+* What are the typical stages of an AI data pipeline?
+* What is the difference between batch processing and stream processing?
+* Why is data preprocessing important before model training or inference?
+* What is the difference between an offline data pipeline and an online inference pipeline?
+
+**Data Collection and Ingestion**
+* What are the common sources of data used in AI applications?
+* What is the difference between data ingestion and data transformation?
+* What are batch ingestion and real-time ingestion?
+* What is the purpose of an ingestion connector?
+* How do APIs, databases, message queues, and object storage support data ingestion?
+
+**Document Processing Pipelines**
+* What is a document processing pipeline in an AI application?
+* What are the common steps involved in processing PDF, Word, HTML, and text documents?
+* What is OCR, and when is it required?
+* Why is document parsing necessary before generating embeddings?
+* What is the difference between a document, a page, and a text chunk?
+
+**Data Cleaning and Normalization**
+* What is data cleaning, and why is it necessary for AI?
+* What are missing values, duplicate records, and inconsistent data formats?
+* What is data normalization?
+* What is the difference between normalization and standardization?
+* Why should text be cleaned before embedding generation?
+
+**Data Quality and Validation**
+* What is data quality in the context of AI?
+* What are completeness, accuracy, consistency, validity, and uniqueness?
+* What is schema validation?
+* Why should training and inference data be validated?
+* What is the difference between data validation and model validation?
+
+**Metadata and Data Lineage**
+* What is metadata, and why is it important in AI data engineering?
+* What is data lineage?
+* What is the difference between technical metadata and business metadata?
+* Why should source document identifiers be preserved during processing?
+* How can timestamps and version numbers help trace data transformations?
+
+**Feature Engineering**
+* What is feature engineering, and why is it important in machine learning?
+* What is the difference between a raw feature and a derived feature?
+* What are categorical, numerical, and temporal features?
+* What is one-hot encoding?
+* What is the difference between feature selection and feature extraction?
+
+**Feature Stores**
+* What is a feature store?
+* Why do machine learning teams use feature stores?
+* What is the difference between offline and online feature stores?
+* What is feature reuse?
+* How does a feature store help maintain consistency between training and inference?
+
+**Training Data Management**
+* What is training data management?
+* Why should datasets be versioned?
+* What are training, validation, and test datasets?
+* What is data leakage?
+* Why should training datasets include source information and creation timestamps?
+
+**Data Labeling and Annotation**
+* What is data labeling, and why is it required for supervised learning?
+* What is the difference between labeling and annotation?
+* What are classification, object detection, and text annotation tasks?
+* What is inter-annotator agreement?
+* Why are annotation guidelines important?
+
+**Synthetic Data**
+* What is synthetic data?
+* Why might an AI team generate synthetic data instead of collecting only real data?
+* What is the difference between synthetic data and augmented data?
+* What are common risks associated with synthetic datasets?
+* How can synthetic data help with rare or underrepresented scenarios?
+
+**Data Privacy and Governance**
+* What is data governance in AI data engineering?
+* What is personally identifiable information (PII)?
+* What is data minimization?
+* Why are access controls important for AI datasets?
+* What are data residency and data retention policies?
+
+**Streaming Data for AI**
+* What is streaming data, and how is it used in AI applications?
+* What is the difference between event time and processing time?
+* What is a Kafka topic?
+* What is a consumer group?
+* Why are late-arriving events important in streaming pipelines?
+
+**Vector Index Pipelines**
+* What is a vector index pipeline?
+* What are embeddings, and how are they generated from documents?
+* What is the purpose of chunking before vector indexing?
+* What metadata should be stored alongside an embedding?
+* What is the difference between inserting a vector and updating an existing vector?
+
+**Incremental Indexing and Reindexing**
+* What is incremental indexing?
+* How does incremental indexing differ from full reindexing?
+* What is a change data capture (CDC) event?
+* Why should document updates trigger embedding and index updates?
+* When might a full reindex be necessary?
+
+**Data Retention and Deletion**
+* What is a data retention policy?
+* Why must deleted source data sometimes also be removed from AI indexes?
+* What is the difference between soft deletion and hard deletion?
+* Why are deletion audit records useful?
+* What is a data lifecycle policy?
+

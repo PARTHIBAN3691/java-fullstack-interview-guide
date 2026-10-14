@@ -1,0 +1,30 @@
+* A REST API returns HTTP 415 for a valid JSON request. How would you investigate its Content-Type header?
+* A client receives HTTP 406 when calling an endpoint. How would you identify the Accept header issue?
+* An API works in Postman but fails in a browser because of CORS. How would you troubleshoot the relevant headers?
+* A custom response header is visible in server logs but unavailable to frontend JavaScript. What would you check?
+* A gateway removes the Authorization header before forwarding a request. How would you investigate and fix it?
+* A downstream service needs a correlation ID from the incoming request. How would you propagate it safely?
+* Requests behind a load balancer show the load balancer's IP instead of the real client IP. How would you resolve this?
+* A client reports that a response is stale even after the underlying data changes. Which caching headers would you inspect?
+* An API response contains private user information and is being cached by an intermediary. How would you prevent this?
+* Two services interpret duplicate Authorization headers differently. What risks does this create, and how would you address them?
+* An API gateway rejects requests with unusually large cookies and headers. How would you diagnose the issue?
+* A production API experiences intermittent HTTP 400 errors after a proxy upgrade. How would you investigate header parsing?
+* A request contains conflicting Content-Length and Transfer-Encoding headers. How should the infrastructure handle it?
+* A client retries a payment request after a timeout and accidentally creates duplicate payments. How could an idempotency header help?
+* An API uses ETag, but clients still overwrite newer data. How would you use conditional request headers to prevent this?
+* A reverse proxy overwrites X-Forwarded-Proto, causing incorrect HTTP redirects. How would you troubleshoot it?
+* An application trusts X-User-Role to authorize administrative operations. How would you redesign this securely?
+* A browser-based application cannot read a custom pagination header from the API response. What configuration is needed?
+* A microservice receives requests without the traceparent header. How would you trace where the header was lost?
+* A REST API is behind multiple proxies, and the reported client IP can be spoofed. How would you establish a trusted proxy chain?
+* A security scan reports that the API lacks important security headers. Which headers would you add, and where?
+* A cache serves different language responses to users incorrectly. How would you investigate Accept-Language and Vary?
+* A client sends an unsupported custom API header, and different servers respond differently. How would you standardize the behavior?
+* A production deployment introduces HTTP 431 errors. What causes this response, and how would you resolve it?
+* An API's rate-limit information is available in response headers but not documented. How would you improve the API contract?
+* A service migration causes custom headers to disappear between the gateway and backend. How would you isolate the problem?
+* An authentication token appears in application logs because the entire request headers object is logged. How would you prevent this?
+* A CDN caches authenticated API responses unexpectedly. Which headers and CDN rules would you inspect?
+* A client sends If-None-Match but receives a full response every time. How would you troubleshoot the conditional request flow?
+* Different environments return inconsistent security headers. How would you enforce a consistent policy across the API platform?

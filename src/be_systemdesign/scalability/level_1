@@ -1,0 +1,30 @@
+* How do you identify the scalability requirements of an application?
+* How do you estimate infrastructure capacity based on expected user traffic?
+* How do you design a web application to support millions of concurrent users?
+* How do you scale a stateless Java application horizontally?
+* How do you handle user sessions when application instances are distributed across multiple servers?
+* How do you scale an application that depends on shared in-memory state?
+* How do you configure load balancing across multiple application instances?
+* How do you choose between round-robin, least-connections, and weighted load balancing?
+* How do you use caching to reduce database load under heavy traffic?
+* How do you choose between local caching and distributed caching?
+* How do you prevent cache stampedes when traffic increases suddenly?
+* How do you scale a relational database when read traffic grows significantly?
+* How do you decide between read replicas and database sharding?
+* How do you scale write-heavy database workloads?
+* How do you choose a shard key for a large-scale application?
+* How do you handle hot partitions in a distributed database?
+* How do you scale asynchronous processing using message queues?
+* How do you determine the appropriate number of consumers for a message-processing system?
+* How do you implement backpressure when producers generate messages faster than consumers process them?
+* How do you prevent one slow downstream service from limiting the scalability of the entire application?
+* How do you use connection pooling to improve scalability in Java applications?
+* How do thread pools affect application throughput and resource utilization?
+* How do you tune JVM memory and garbage collection for high-throughput applications?
+* How do you use database connection pools effectively when scaling application instances?
+* How do you scale scheduled jobs without executing the same task on multiple instances?
+* How do you implement distributed rate limiting across multiple application instances?
+* How do you scale file uploads and downloads for large numbers of users?
+* How do you use a CDN to reduce load on application servers?
+* How do you monitor system capacity and identify scalability bottlenecks?
+* How do you perform load testing and capacity planning before production deployment?

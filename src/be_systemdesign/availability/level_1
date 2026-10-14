@@ -1,0 +1,30 @@
+* How do you calculate system availability from uptime and downtime?
+* What is the difference between 99%, 99.9%, 99.99%, and 99.999% availability?
+* How do you calculate the permitted downtime for a given availability target?
+* How does a load balancer help maintain application availability?
+* How do you configure health checks to detect unhealthy application instances?
+* How do you design an application with multiple instances across availability zones?
+* How do you prevent a single application server failure from causing downtime?
+* How do active-active and active-passive deployments handle failures differently?
+* How do you implement automatic failover in a distributed application?
+* How do you handle session management in a highly available application?
+* How do you design stateless services to improve availability?
+* How do database replicas improve availability?
+* What is the difference between synchronous and asynchronous replication?
+* How do you handle database failover without losing critical transactions?
+* What are the availability trade-offs of strong consistency and eventual consistency?
+* How do quorum-based systems maintain availability during node failures?
+* What is the role of caching in maintaining availability during database outages?
+* How do message queues help services remain available during downstream failures?
+* How do retries, timeouts, and circuit breakers work together?
+* How do you prevent retry storms from reducing system availability?
+* What is bulkheading, and how does it isolate failures?
+* How do you implement graceful degradation when a dependent service is unavailable?
+* How do rolling deployments reduce application downtime?
+* What is the difference between rolling, blue-green, and canary deployments?
+* How do you design highly available DNS and service discovery?
+* How do you monitor availability using SLIs and SLOs?
+* What is an error budget, and how does it influence deployment decisions?
+* How do backup and disaster recovery strategies differ from high availability?
+* What are Recovery Time Objective (RTO) and Recovery Point Objective (RPO)?
+* How do you test the availability and failover behavior of a distributed application?

@@ -1,0 +1,30 @@
+* A monitoring service receives CPU utilization readings every second and must calculate the maximum utilization over the last five minutes. How would you design the sliding window?
+* A payment analytics system needs the total transaction value over the last 15 minutes. How would you maintain the rolling sum efficiently?
+* A fraud detection service must identify customers making more than K transactions within a rolling time interval. How would you design the window and data structures?
+* An API gateway must limit each client to a fixed number of requests within a rolling time window. How would you implement the sliding-window rate limiter?
+* A log-processing service needs to find the maximum error count within any consecutive five-minute interval. How would you process timestamped log entries efficiently?
+* A stock monitoring application needs the highest and lowest prices over the latest K market updates. Which data structure would you use?
+* A streaming application must calculate the median of the latest 1,000 measurements. How would you maintain the sliding window median?
+* A search service must identify the longest user query without repeated characters. How would you solve this efficiently?
+* A text-analysis service must locate every occurrence of a pattern's anagrams in a large document. How would you implement the solution?
+* A customer analytics system needs to find the longest sequence of purchases containing at most K product categories. How would you model the problem?
+* A delivery application needs to find the shortest sequence of consecutive delivery times whose total exceeds a threshold. How would you solve it?
+* A telemetry service receives negative and positive measurements, and it must find the shortest interval whose sum reaches a threshold. Why might a normal sliding window fail, and what would you use instead?
+* A video-streaming service must detect whether a segment contains at least K consecutive high-latency measurements. How would you implement the detection?
+* A retail application needs to find the maximum sales total over any seven consecutive days. How would you compute it without repeatedly summing seven days?
+* A system must detect the longest period in which at most K failed authentication attempts occur. How would you define and maintain the window?
+* A network monitoring service must track the number of distinct IP addresses in every fixed-size packet window. Which data structures would you use?
+* A service processes events with timestamps that can arrive out of order. How would out-of-order events affect a time-based sliding window?
+* A distributed rate limiter runs on multiple application instances. What challenges arise when implementing a globally consistent sliding window?
+* A real-time dashboard needs rolling averages for millions of incoming events. How would you balance memory usage, accuracy, and update latency?
+* A production service uses a HashMap to maintain window frequencies but has unexpectedly high memory consumption. How would you optimize it?
+* A sliding window algorithm passes normal tests but fails on empty arrays, duplicate values, or K equal to zero. How would you improve its input validation and edge-case handling?
+* A fraud detection algorithm must count subarrays with exactly K distinct transaction types. How would you implement and test the algorithm?
+* A service calculates maximum and minimum values in every window but exceeds its time limit. How would you replace repeated scans with a monotonic deque?
+* A monitoring pipeline must discard old readings as new readings arrive while keeping the latest K values. How would you design an efficient bounded buffer?
+* A Java application computes rolling metrics on a very large array and encounters integer overflow. How would you redesign the calculations?
+* A text-processing application handles Unicode input and produces incorrect character frequencies. How would you decide whether to process UTF-16 code units or Unicode code points?
+* A recommendation engine needs to find the highest-scoring group of K consecutive items. How would you implement the rolling calculation?
+* A streaming service cannot retain the entire event history. Which sliding window structures and expiration strategies would you consider?
+* A concurrent application produces inconsistent rolling totals because multiple threads update the same window. How would you make the design thread-safe?
+* A team must choose between a fixed-size count-based window and a time-based window for production metrics. What requirements would guide the choice?

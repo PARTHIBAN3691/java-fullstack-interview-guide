@@ -1,0 +1,30 @@
+* Create a functional component that displays a welcome message using props.
+* Create a class component that displays employee information.
+* Build a reusable Button component that accepts label, variant, and onClick props.
+* Create a component that renders a list of products using stable keys.
+* Build a parent component that passes data to a child component through props.
+* Create a child component that sends selected data back to its parent through a callback.
+* Implement conditional rendering based on a user's authentication status.
+* Build a reusable Card component that renders arbitrary children.
+* Create a controlled input component that manages its value using useState().
+* Build an uncontrolled input component using useRef().
+* Implement a reusable form component with validation and error messages.
+* Create a reusable Modal component using React portals.
+* Build a Tabs component using compound component composition.
+* Implement a reusable Dropdown component with keyboard navigation.
+* Create a Higher-Order Component that adds authentication checks.
+* Implement a render props component that provides mouse coordinates.
+* Build a custom Hook that shares data-fetching logic between components.
+* Create a memoized child component using React.memo() and stable props.
+* Implement a component that uses useReducer() to manage complex form state.
+* Build a component that lazy-loads another component using React.lazy() and Suspense.
+* Create an Error Boundary component with a fallback interface.
+* Implement a reusable component that handles loading, success, empty, and error states.
+* Build a Context provider that shares theme information with nested components.
+* Create a reusable component that forwards a ref and exposes a focus method using useImperativeHandle().
+* Implement a searchable list component with debounced input.
+* Build a virtualized list component for displaying large datasets.
+* Create an accessible accordion component that supports keyboard interactions.
+* Implement a component that cleans up timers and event listeners when unmounted.
+* Write unit tests for a reusable component covering props, events, and conditional rendering.
+* Design and implement a reusable employee table component with sorting, filtering, pagination, and test coverage.

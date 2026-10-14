@@ -1,0 +1,25 @@
+* A Databricks job that normally completes in 30 minutes is suddenly taking 3 hours. How would you investigate the issue and identify the root cause?
+* A Spark job is failing with executor OutOfMemoryError after processing a large dataset. How would you troubleshoot and fix it?
+* A Databricks job is experiencing severe data skew because one customer has millions of records while others have only a few hundred. How would you solve the problem?
+* A production Databricks pipeline is generating thousands of small files in ADLS. How would you identify the cause and prevent it?
+* A Spark application has high shuffle read and shuffle write and is consuming excessive compute resources. How would you optimize it?
+* A Databricks job fails halfway through processing and rerunning it creates duplicate records. How would you redesign the pipeline to make it idempotent?
+* Two Databricks jobs are simultaneously updating the same Delta table and one job fails because of a concurrent transaction. How would you handle the situation?
+* A Delta table has millions of outdated records that need to be updated daily. How would you design an efficient update strategy?
+* A pipeline receives duplicate events from an upstream system. How would you ensure only the correct records are stored in the Delta table?
+* A source system sends late-arriving transactions after the daily Databricks pipeline has already completed. How would you process those records?
+* A Databricks pipeline processes financial transactions and one day's input contains corrupted records. How would you isolate the bad records without stopping the complete pipeline?
+* A production Spark job is consuming significantly more DBUs than expected. How would you investigate and reduce the cost?
+* A Databricks cluster takes too long to start and is affecting job SLA. What would you investigate and how would you improve it?
+* A Spark application works correctly with 10 GB of data but fails when the data grows to 1 TB. How would you identify the scalability bottleneck?
+* A Java-based Spark application works locally but fails when deployed to Databricks. How would you troubleshoot the deployment?
+* A Databricks job is intermittently failing due to connectivity issues with ADLS Gen2. How would you troubleshoot and make the integration more reliable?
+* A Spring Boot application needs to trigger a Databricks workflow and monitor its completion status. How would you design the integration?
+* A Databricks pipeline needs to access database credentials without exposing them in notebooks or source code. How would you implement this securely?
+* A production Databricks job is processing sensitive customer data and unauthorized users are able to access the output files. How would you investigate and fix the security issue?
+* A Delta table has grown to several terabytes and queries have become increasingly slow. How would you diagnose and optimize the table?
+* A Spark job contains several joins and suddenly starts taking much longer after a data-volume increase. How would you identify which join is causing the problem?
+* A Databricks job succeeds but downstream systems are receiving incomplete data. How would you investigate the pipeline and establish data-quality checks?
+* A scheduled Databricks job did not run overnight and the business process failed the next morning. How would you investigate the incident and prevent recurrence?
+* A Spark job produces different results when executed twice with the same input data. How would you investigate the non-deterministic behavior?
+* A production Databricks cluster is running continuously even when no jobs are executing. How would you identify the cause and reduce unnecessary cost?

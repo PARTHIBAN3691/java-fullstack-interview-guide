@@ -1,0 +1,30 @@
+* A JSX component throws an error because it returns two sibling elements. How would you fix it?
+* A developer uses class instead of className in JSX. What issue could occur, and how would you correct it?
+* A list renders incorrectly after items are reordered. How would you investigate the keys used in JSX?
+* A conditional expression unexpectedly displays 0 on the screen. How would you fix the JSX?
+* A component displays [object Object] instead of the expected content. How would you resolve it?
+* A developer calls an event handler immediately during rendering. How would you correct the JSX?
+* A component needs to display different messages based on user roles. How would you structure the conditional JSX?
+* A table must display records received from an API. How would you generate the table rows using JSX?
+* A component needs to render a list with nested child components. How would you structure the JSX?
+* A reusable card component must support different titles, descriptions, and actions. How would you design its JSX?
+* A parent component needs to wrap arbitrary child elements inside a reusable layout. How would you use props.children?
+* A form must display validation errors only after submission. How would you implement conditional JSX?
+* A button must receive different CSS classes depending on its state. How would you implement this cleanly?
+* A component needs to apply dynamic inline styles based on API data. How would you implement it?
+* An API returns an empty array, and the page should display a fallback message. How would you handle this in JSX?
+* A component must render a loading indicator, error message, or data list. How would you organize the JSX?
+* A developer spreads all API response properties onto a DOM element. What problems might this cause?
+* A component displays user-generated HTML, creating a security concern. How would you handle it safely?
+* A page renders correctly on the client but produces hydration warnings on the server. How would you debug it?
+* A custom component is written with a lowercase name and is treated as an HTML tag. How would you fix it?
+* A developer uses array indexes as keys for a list that supports insertion and deletion. What issues could arise?
+* A component contains deeply nested ternary expressions. How would you refactor it for maintainability?
+* A JSX element requires a dynamic attribute name. How would you implement this?
+* A reusable component needs to forward selected props to a native HTML element without passing invalid attributes. How would you design it?
+* A component needs to render different content depending on whether a prop is null, undefined, or an empty string. How would you handle these cases?
+* A list needs to render a Fragment for each item without adding extra DOM nodes. How would you implement it?
+* A component receives a callback and additional arguments from its parent. How would you pass them correctly in JSX?
+* A TypeScript React component reports a JSX element type error. How would you investigate the component definition and types?
+* A component renders a large nested data structure and becomes difficult to maintain. How would you break the JSX into reusable components?
+* A developer uses dangerouslySetInnerHTML to render content from an external API. What security checks should be considered?

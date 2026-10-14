@@ -1,0 +1,30 @@
+* A Node.js API receives a large file upload and runs out of memory. How would you redesign the upload processing?
+* A small Buffer slice remains referenced for a long time and memory usage keeps increasing. How would you investigate and fix it?
+* A TCP server receives binary messages split across multiple chunks. How would you reconstruct complete messages correctly?
+* A TCP client receives multiple messages in a single chunk. How would you separate the messages?
+* A binary protocol works on one machine but produces incorrect numeric values on another. How would you investigate endianness issues?
+* A file contains UTF-8 text, but characters become corrupted when processing it chunk by chunk. How would you fix the problem?
+* An application uses Buffer.allocUnsafe() and occasionally returns unexpected bytes in generated output. How would you diagnose the issue?
+* A service processes thousands of small Buffers and CPU usage becomes high. How would you optimize allocation and concatenation?
+* A file-processing service needs to transform a 10 GB file without loading it completely into memory. How would you design the solution?
+* A client sends malformed binary input with a length field larger than the actual payload. How would you prevent out-of-bounds reads?
+* A Node.js application consumes much more memory than its JavaScript heap metrics suggest. How would you investigate Buffer and external memory usage?
+* A binary API receives Base64 data that decodes to unexpected bytes. How would you validate and troubleshoot the input?
+* Two services exchange binary data, but one interprets signed integers as unsigned integers. How would you resolve the issue?
+* A service copies every incoming Buffer several times, causing high memory bandwidth usage. How would you reduce unnecessary copies?
+* A small retained Buffer keeps a large network packet allocation alive. How would you reduce memory retention?
+* A worker thread needs to process a large binary payload efficiently. Would you copy or transfer the underlying memory, and why?
+* A streaming service receives data faster than it can process it. How would you implement backpressure?
+* A payment service processes binary transaction records and occasionally reads incorrect field offsets. How would you make the parser safer?
+* A binary protocol contains optional fields and variable-length sections. How would you design a maintainable decoder?
+* A service handles compressed binary payloads and experiences memory spikes during decompression. How would you control resource usage?
+* A user uploads a file containing sensitive information, and the application temporarily stores its contents in Buffers. What security considerations apply?
+* A production service shows increased garbage-collection activity after a release that changed Buffer handling. How would you investigate the regression?
+* A stream ends in the middle of a binary message. How should the decoder handle the incomplete payload?
+* A client sends a valid message followed by a malformed message in the same chunk. How would you handle parsing and connection recovery?
+* A service must calculate a checksum over a large binary file. How would you process it efficiently without loading the entire file?
+* An API must return a binary image instead of JSON. How would you handle Buffer creation, response headers, and streaming?
+* A data pipeline needs to combine thousands of binary chunks into one output Buffer. How would you minimize memory overhead?
+* A containerized Node.js application is terminated because it exceeds its memory limit while processing binary data. How would you diagnose and mitigate the issue?
+* A binary parser accepts attacker-controlled offsets and lengths. How would you prevent denial-of-service and malformed-input vulnerabilities?
+* You need to design a high-throughput TCP service that processes binary messages with minimal latency and memory usage. What Buffer and stream strategies would you choose?

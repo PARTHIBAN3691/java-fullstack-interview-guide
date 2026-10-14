@@ -1,0 +1,30 @@
+* Your Node.js API becomes slow during peak traffic, but CPU usage remains low. How would you investigate the bottleneck?
+* A single API endpoint blocks other requests while performing a large calculation. How would you redesign the implementation?
+* Your service experiences high CPU utilization after a new release. How would you identify the code responsible?
+* Memory usage increases continuously until the Node.js process crashes. How would you diagnose and fix the memory leak?
+* Your API has acceptable average response time but very high p99 latency. What would you investigate?
+* A database query takes only a few milliseconds individually, but the API response takes several seconds. How would you identify the cause?
+* Your application exhausts its database connection pool under concurrent load. How would you resolve the issue?
+* A frequently accessed API endpoint repeatedly queries the same database records. How would you improve its performance?
+* Redis caching reduces database load, but users occasionally receive stale data. How would you balance consistency and performance?
+* Your application experiences a sudden traffic spike that causes thousands of identical cache misses. How would you prevent a cache stampede?
+* Processing a large CSV file causes memory consumption to increase dramatically. How would you redesign the processing pipeline?
+* Your service becomes unresponsive while generating a large JSON response. How would you investigate and optimize it?
+* A Node.js application performs CPU-intensive image processing and cannot keep up with requests. How would you scale the workload?
+* Worker Threads improve CPU utilization but increase overall latency. How would you investigate the issue?
+* Increasing UV_THREADPOOL_SIZE does not improve performance. What would you examine next?
+* Your Express API slows down as the number of middleware functions increases. How would you profile and optimize the request pipeline?
+* An application performs thousands of outbound HTTP calls and occasionally overwhelms a downstream service. How would you control concurrency?
+* Your service experiences frequent garbage collection pauses during peak traffic. How would you reduce their impact?
+* A memory-intensive batch job affects the latency of your HTTP APIs. How would you isolate the workloads?
+* Your application runs efficiently on a developer machine but performs poorly inside a container. What would you investigate?
+* A new database index improves reads but slows down writes. How would you decide whether to keep the index?
+* Your API response contains thousands of records and takes too long to generate and transmit. How would you optimize it?
+* A load test shows throughput stops increasing when more virtual users are added. How would you identify the saturation point?
+* CPU and memory metrics look healthy, but requests are timing out intermittently. What other bottlenecks would you investigate?
+* Your Node.js service has too many open sockets and outbound connections. How would you identify and resolve the issue?
+* An application performs well at low traffic but suffers from cascading failures under high load. How would you improve resilience and performance?
+* Your team needs to reduce cloud infrastructure costs without violating latency objectives. How would you approach optimization?
+* A recent dependency upgrade increases API latency by 30%. How would you isolate and resolve the regression?
+* Your microservices exchange large payloads, resulting in high serialization and network overhead. How would you optimize communication?
+* How would you investigate and resolve a performance problem in a production Node.js payment API while minimizing customer impact?

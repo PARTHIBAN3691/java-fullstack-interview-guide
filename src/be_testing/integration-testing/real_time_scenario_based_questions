@@ -1,0 +1,30 @@
+* A service unit test passes, but the application fails when calling the database. How would you investigate the issue?
+* A Spring Boot application starts successfully, but one repository query fails in the QA environment. How would you troubleshoot it?
+* An API returns HTTP 200, but the expected database record is not created. How would you design an integration test to identify the problem?
+* A transaction updates two tables, but only one table is updated when an exception occurs. How would you verify rollback behavior?
+* A database integration test passes locally but fails in Jenkins. What would you check first?
+* An integration test fails because test data from a previous execution remains in the database. How would you prevent this?
+* Two integration tests update the same record and fail intermittently during parallel execution. How would you fix the issue?
+* A third-party payment API is unavailable during testing. How would you test your payment service reliably?
+* A downstream service responds slowly, causing integration tests to time out. How would you diagnose the issue?
+* A Kafka consumer processes the same event twice, creating duplicate orders. How would you test and prevent duplicate processing?
+* A Kafka producer publishes an event, but the consumer does not process it. How would you investigate the complete workflow?
+* A message consumer retries failed events indefinitely. How would you validate retry limits and dead-letter queue behavior?
+* An application uses two databases, and a failure occurs between updates to them. How would you test consistency and recovery?
+* A REST API works independently, but the complete checkout workflow fails when inventory and payment services are integrated. How would you isolate the failure?
+* A database migration changes a column type and breaks an existing repository query. How would you detect this before deployment?
+* A Spring Security configuration allows unauthorized access when services are integrated. How would you test the authorization flow?
+* A JWT token is accepted by one service but rejected by another. How would you troubleshoot the integration issue?
+* A microservice returns stale data because its local cache is not updated after another service changes the record. How would you test consistency?
+* A circuit breaker opens after several downstream failures, but requests never recover after the dependency becomes healthy. How would you verify recovery behavior?
+* An application passes functional integration tests but fails under concurrent requests. How would you identify transaction or synchronization problems?
+* A Testcontainers-based test fails because the database container is not ready when the application starts. How would you resolve the timing issue?
+* An integration test passes only when executed after another test. How would you identify and eliminate the hidden dependency?
+* A database connection pool becomes exhausted during an integration test suite. How would you investigate connection leaks and resource cleanup?
+* A file upload succeeds through the API, but the file cannot be retrieved from storage. How would you test the integration between the API and storage service?
+* A scheduled job updates database records and publishes messages, but only some operations complete. How would you test partial failures and recovery?
+* An application uses Redis for caching and a relational database for persistence. How would you validate cache consistency?
+* A provider API changes its response structure and breaks a dependent service. How would you detect the incompatibility before production deployment?
+* Integration tests take 45 minutes to execute and delay every release. How would you optimize the test suite?
+* A database deadlock occurs only when multiple business workflows run concurrently. How would you reproduce and diagnose it?
+* You are responsible for validating a complete Spring Boot microservices application before release. How would you design the integration test strategy?

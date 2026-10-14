@@ -1,0 +1,30 @@
+* Two users update the same customer record simultaneously, and one user's changes are lost. How would you investigate and prevent the issue?
+* A payment API experiences frequent deadlocks during peak traffic. How would you identify the root cause and reduce deadlocks?
+* An inventory service allows two customers to purchase the final available item. How would you implement locking to prevent overselling?
+* A Spring Boot API becomes slow because many transactions are waiting for locks. How would you investigate the blocking sessions?
+* A transaction locks a database row and then calls an external payment API before committing. What problems can this cause, and how would you redesign the flow?
+* A batch job locks thousands of rows and blocks online transactions. How would you reduce contention without compromising data correctness?
+* A JPA application throws OptimisticLockException intermittently when multiple users edit the same order. How would you handle the conflict?
+* A service uses PESSIMISTIC_WRITE for every read and update, causing throughput to drop. How would you optimize the locking strategy?
+* Two services update account records in opposite orders and occasionally deadlock. How would you resolve the issue?
+* A database reports a deadlock, but the application logs show no obvious overlapping updates. How would you investigate indexes, foreign keys, and transaction boundaries?
+* A SELECT FOR UPDATE query blocks for several seconds even though the target table is small. How would you identify the actual lock conflict?
+* A production deployment increases the number of application instances, and database lock contention rises sharply. How would you determine whether concurrency or query design is responsible?
+* A transaction times out while waiting for a lock, but the application retries and times out again. How would you design a safe recovery strategy?
+* A user cancels an order while another transaction is processing payment for it. How would you coordinate the concurrent state changes?
+* A reservation system must prevent two bookings for the same room and time slot. Would you use locking, a unique constraint, or both? Explain your design.
+* A bank transfer updates two account balances and sometimes deadlocks with another transfer. How would you order locks and maintain consistency?
+* A service uses @Version but still allows an invalid business state because multiple records are involved. How would you redesign the concurrency control?
+* A MySQL application experiences unexpected blocking after a query change. How would you investigate gap locks, next-key locks, indexes, and isolation levels?
+* A PostgreSQL application sees serialization failures after enabling stronger isolation. How would you distinguish these from deadlocks and implement retries?
+* A connection pool becomes exhausted because transactions hold locks for too long. How would you identify the cause and reduce connection usage?
+* A report query blocks an update in one database environment but not another. How would you compare the locking and isolation behavior?
+* A customer submits the same payment request repeatedly while the first transaction holds a lock. How would you prevent duplicate processing and manage contention?
+* A distributed application needs to ensure only one worker processes a particular job at a time. Would you use database locking or a distributed lock? How would you make the solution reliable?
+* A transaction updates inventory and order records, then fails before commit. How do locks and rollback protect the system, and what must the application do?
+* A high-volume service experiences a sudden increase in deadlock victims after adding a new index. How would you investigate the change?
+* A bulk update blocks critical user-facing requests. How would you split the workload and manage lock duration?
+* A lock timeout occurs only under production traffic and cannot be reproduced locally. How would you capture enough information to diagnose it?
+* An optimistic locking retry loop creates excessive database traffic during peak usage. How would you change the retry policy?
+* A long-running transaction prevents other transactions from updating a shared record. How would you find the transaction owner and safely resolve the blockage?
+* How would you investigate a locking incident end to end using Java logs, Spring transaction tracing, database lock views, and performance metrics?

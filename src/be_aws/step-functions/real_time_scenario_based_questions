@@ -1,0 +1,21 @@
+
+* An order-processing workflow invokes three Lambda functions, but the second function fails intermittently. How would you configure retries and error handling?
+* A payment succeeds, but the subsequent inventory update fails. How would you design compensation logic to maintain business consistency?
+* A Java application starts a Step Functions execution but receives a timeout before getting the response. How would you determine whether the execution actually started?
+* A workflow is executed twice for the same order, resulting in duplicate payments. How would you prevent this problem?
+* A Step Functions execution fails because a task exceeds its timeout. How would you investigate and determine an appropriate timeout?
+* A Choice state unexpectedly follows the default branch even though the input contains the expected field. How would you debug the ASL definition and input structure?
+* A workflow passes incorrect JSON data between states, causing a downstream Lambda function to fail. How would you troubleshoot `InputPath`, `ResultPath`, and `OutputPath`?
+* A workflow processes a large number of records, but execution duration and cost increase significantly. How would you optimize the Map state configuration?
+* A Distributed Map execution reports partial failures. How would you identify failed items and safely retry them?
+* An external approval process takes several days to complete. How would you design a workflow that waits without continuously polling?
+* A Java backend must start a workflow and track its business status asynchronously. How would you design the API and status persistence?
+* A workflow invokes a downstream API that returns HTTP 429 errors. How would you implement retries and avoid overwhelming the service?
+* A Step Functions workflow fails because its execution role lacks permission to invoke a Lambda function. How would you diagnose and correct the IAM configuration?
+* A production workflow fails after a deployment that changed the state machine definition. How would you investigate versioning and deployment practices?
+* A workflow must orchestrate services deployed across two AWS accounts. How would you configure secure cross-account invocation?
+* A workflow processes customer records and must stop processing when a compliance check fails. How would you implement branching and failure handling?
+* A business process requires an audit trail of every step, including input, output, timestamps, and failure reasons. How would you implement observability while protecting sensitive data?
+* A Step Functions workflow processes SQS messages, but failed executions lead to repeated message processing. How would you design retries, visibility timeouts, and dead-letter handling?
+* A workflow execution reaches a terminal failure state, but the business operation must be resumed from the last successful step. How would you design recovery?
+* A team wants to replace a complex Java orchestration service with Step Functions. How would you evaluate workflow complexity, latency, reliability, maintainability, and cost?

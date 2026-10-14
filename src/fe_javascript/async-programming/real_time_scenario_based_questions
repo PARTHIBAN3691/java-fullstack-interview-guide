@@ -1,0 +1,30 @@
+* An API call takes several seconds to complete. How would you keep the user interface responsive?
+* Multiple API requests must run simultaneously. How would you collect their results?
+* One API request fails while the others succeed. How would you handle partial results?
+* A search API is called on every keystroke. How would you prevent unnecessary requests?
+* A user submits a form multiple times before the first request finishes. How would you prevent duplicate submissions?
+* An API request takes too long to respond. How would you implement a timeout?
+* A user navigates away from a page while a request is running. How would you cancel the request?
+* Two requests update the same UI component, but the older request finishes last. How would you prevent stale data from appearing?
+* An application must retry failed API calls. How would you implement retry logic?
+* A dashboard needs data from five independent APIs. How would you fetch the data efficiently?
+* One API depends on the result of another API. How would you sequence the requests?
+* A large number of API requests overloads a backend service. How would you limit concurrency?
+* A background task processes thousands of records. How would you avoid blocking the main thread?
+* A Promise rejection is not handled and causes an application error. How would you identify and fix it?
+* A third-party API is unreliable. How would you design resilient asynchronous processing?
+* A page must display partial results as soon as individual requests finish. How would you implement this?
+* A payment request times out, but the server may have processed the payment. How would you avoid duplicate payments during retries?
+* An application needs to cancel all outstanding requests when a component is destroyed. How would you implement it?
+* A scheduled task takes longer to finish than its interval. How would you prevent overlapping executions?
+* A real-time notification system receives events faster than they can be processed. How would you manage the workload?
+* A Promise chain contains multiple dependent operations. How would you handle failures at different stages?
+* A user uploads multiple files simultaneously. How would you limit concurrent uploads and track progress?
+* A reporting service calls several external APIs with different response times. How would you handle timeouts and partial failures?
+* An application becomes unresponsive because of intensive processing. How would you identify whether the event loop is blocked?
+* A search suggestion API returns results in an unpredictable order. How would you ensure the latest search results are displayed?
+* A long-running workflow must stop when the user cancels it. How would you propagate cancellation?
+* An API sometimes returns HTTP 500 errors. How would you implement retries without overwhelming the server?
+* A data-processing pipeline requires each stage to finish before the next begins. How would you design it?
+* A background synchronization task must continue processing even if individual records fail. How would you handle errors?
+* How would you monitor and troubleshoot intermittent failures in a production asynchronous application?

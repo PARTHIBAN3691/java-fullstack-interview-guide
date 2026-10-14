@@ -1,0 +1,30 @@
+* How do you design a reliable microservices architecture?
+* How do you identify and eliminate single points of failure?
+* How do you improve reliability through redundancy and replication?
+* How do you choose appropriate timeout values for service-to-service communication?
+* How do you implement retries without overwhelming a failing dependency?
+* How do you implement exponential backoff with jitter?
+* How does a circuit breaker prevent cascading failures?
+* What are the different states of a circuit breaker?
+* How do you configure a circuit breaker in a Spring Boot application?
+* How do you use the bulkhead pattern to isolate failures?
+* How do you design fallback responses when a downstream service is unavailable?
+* How do you prevent retry storms in a distributed system?
+* How do you handle partial failures across multiple services?
+* How do you distinguish transient failures from permanent failures?
+* How do you design health checks for application instances and dependencies?
+* How do you use load balancing to improve service reliability?
+* How do you implement graceful shutdown in a Java application?
+* How do you ensure that in-flight requests are handled during deployments?
+* How do you design reliable message processing with acknowledgment and retries?
+* How do you prevent duplicate processing when messages are redelivered?
+* How do you use idempotency to improve reliability in payment APIs?
+* How do you implement rate limiting to protect overloaded services?
+* How do you monitor reliability using logs, metrics, and distributed traces?
+* How do you define meaningful SLOs for a customer-facing API?
+* How do you calculate an error budget from an SLO?
+* How do you design database connection pooling for reliable operation?
+* How do you handle database failover without losing application consistency?
+* How do you design backup, restore, and disaster recovery procedures?
+* How do you perform rolling deployments and canary releases safely?
+* How do you test system reliability under peak traffic and dependency failures?

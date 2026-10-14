@@ -1,0 +1,21 @@
+
+* Design a scalable asynchronous processing architecture using Amazon SQS and Java microservices.
+* How would you guarantee reliable message publishing when a database transaction and an SQS operation must succeed together?
+* How would you implement the transactional outbox pattern to prevent event loss between a database and SQS?
+* How would you design an idempotent SQS consumer to handle at-least-once message delivery?
+* How would you prevent duplicate business operations when a message is delivered more than once?
+* Explain the limitations of exactly-once processing in distributed systems and how FIFO deduplication helps.
+* How would you design a high-throughput SQS consumer using Java executors and controlled concurrency?
+* How would you choose the visibility timeout for a message that takes several minutes to process?
+* How would you handle a message that repeatedly fails and reaches the dead-letter queue?
+* How would you scale the number of Java consumers based on queue depth and message age?
+* How would you preserve business-level ordering when processing messages concurrently?
+* How would you design a poison-message handling strategy without losing diagnostic information?
+* How would you handle partial failures when sending or receiving batches of SQS messages?
+* How would you design secure cross-account access to an SQS queue?
+* How would you optimize SQS polling to balance latency, throughput, and API costs?
+* How would you prevent consumers from overwhelming a downstream database or REST API?
+* How would you implement backpressure when the queue receives messages faster than consumers can process them?
+* How would you design disaster recovery for SQS-based workloads across AWS regions?
+* How would you secure SQS messages containing sensitive data using IAM, KMS, and application-level controls?
+* How would you compare SQS with Kafka and RabbitMQ for a large-scale event-processing platform?

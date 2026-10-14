@@ -1,0 +1,30 @@
+* Explain the internal execution model of an Observable.
+* How does RxJS handle subscription chains and teardown logic?
+* Explain higher-order Observables with practical examples.
+* How does switchMap() cancel a previous HTTP request?
+* When can switchMap() cause unexpected behavior?
+* How do you prevent race conditions in asynchronous Angular operations?
+* How do you implement request cancellation using RxJS?
+* How do you handle concurrent API requests with controlled concurrency?
+* How does mergeMap() handle concurrency limits?
+* How do you implement retry logic with exponential backoff?
+* How do you handle errors without terminating the entire Observable stream?
+* How do you recover from an error and continue processing subsequent values?
+* Explain multicasting and how it differs from unicast execution.
+* How does shareReplay() affect caching and memory usage?
+* What are the potential memory leaks associated with shareReplay()?
+* How do refCount and replay buffer configuration affect shareReplay()?
+* How do you design a reusable RxJS data service in Angular?
+* How do you implement centralized error handling with RxJS?
+* How do you combine WebSocket streams with HTTP requests?
+* How do you implement polling using RxJS?
+* How do you stop polling when a component is destroyed?
+* How do you implement rate limiting or backpressure-like behavior in RxJS?
+* How do schedulers work in RxJS?
+* What is the difference between queueScheduler, asyncScheduler, and asapScheduler?
+* How do you test Observables that emit values over time?
+* What is marble testing in RxJS?
+* How do you test error and completion notifications?
+* How do you optimize complex RxJS pipelines?
+* How do you prevent unnecessary emissions using distinctUntilChanged()?
+* How do you implement a reactive state store using RxJS without NgRx?

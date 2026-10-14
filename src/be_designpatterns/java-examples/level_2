@@ -1,0 +1,30 @@
+* Implement a thread-safe Singleton that remains safe during serialization and explain how to prevent reflective instantiation.
+* Implement a plugin-based Factory Method architecture that supports registering new implementations at runtime.
+* Implement an Abstract Factory for multiple payment providers with provider-specific request and response objects.
+* Implement a staged Builder that enforces mandatory construction steps at compile time.
+* Implement deep cloning for cyclic object graphs while preserving shared object references.
+* Implement a Strategy-based payment engine that selects a strategy using multiple transaction attributes.
+* Implement a thread-safe Observer framework that supports asynchronous notification, listener removal, and exception isolation.
+* Implement a Command framework supporting undo, redo, retries, cancellation, and execution history.
+* Implement a configurable Chain of Responsibility with conditional routing, fallback handlers, and structured error reporting.
+* Implement a State-based payment workflow that prevents invalid transitions under concurrent requests.
+* Implement a Template Method framework with optional processing steps while avoiding excessive inheritance.
+* Implement a lazy database iterator that fetches records in batches and handles resource cleanup.
+* Implement a Mediator for a workflow involving authentication, validation, persistence, and notifications without creating a God Object.
+* Implement a Memento-based version history system that supports snapshots, undo, redo, and memory-efficient storage.
+* Implement the Visitor pattern for processing an extensible domain hierarchy and discuss the impact of adding new element types.
+* Implement an arithmetic expression interpreter supporting operator precedence, parentheses, variables, and meaningful error messages.
+* Implement an Adapter that translates between incompatible payment provider APIs and normalizes provider-specific exceptions.
+* Implement a Decorator chain that adds logging, metrics, retries, and timeout handling to a service.
+* Implement a Facade that orchestrates inventory reservation, payment authorization, order creation, and notification with failure handling.
+* Implement a Proxy that combines authorization, caching, and audit logging without modifying the underlying service.
+* Implement a Composite-based organizational hierarchy that supports recursive salary calculations and department-level reporting.
+* Implement a Bridge architecture that separates notification abstraction from delivery mechanisms and supports runtime extension.
+* Implement a thread-safe Flyweight factory that shares immutable objects while keeping per-request state outside the shared objects.
+* Implement a Spring Boot application that combines Dependency Injection, Strategy, Factory, and Repository patterns for payment processing.
+* Implement a Repository abstraction that supports complex queries, pagination, and transaction management without exposing persistence entities to controllers.
+* Implement a JDBC-based DAO layer with connection management, exception translation, and transaction rollback.
+* Implement a DTO mapping architecture that supports API versioning and avoids recursive mappings in bidirectional entity relationships.
+* Implement an MVC-based Spring Boot application with validation, centralized exception handling, and service-layer separation.
+* Implement a Unit of Work mechanism that coordinates multiple repositories and ensures atomic database updates.
+* Build a Java application that combines multiple design patterns and write tests to verify correctness, thread safety, and failure recovery.

@@ -1,0 +1,21 @@
+
+* A Java Spring Boot application works when accessed directly but returns HTTP 502 through Application Gateway. How would you troubleshoot it?
+* Application Gateway reports that all backend instances are unhealthy, although the services are running. What would you investigate?
+* Users can access the application over HTTP but receive certificate errors over HTTPS. How would you diagnose the issue?
+* A Spring Boot API returns HTTP 504 for requests that take longer than 30 seconds. How would you determine whether the timeout originates at Application Gateway or the backend?
+* Multiple microservices are deployed under different URL paths, but requests are routed to the wrong service. How would you debug the routing configuration?
+* A backend service requires a specific host header, but requests routed through Application Gateway fail. How would you resolve the issue?
+* After enabling HTTPS redirection in Spring Boot, users experience an infinite redirect loop. How would you investigate forwarded headers and proxy configuration?
+* A new WAF rule blocks legitimate requests containing nested JSON payloads. How would you identify the matching rule and resolve the false positive safely?
+* An attacker sends repeated malicious requests to a public Java API. How would you use Application Gateway WAF to detect and mitigate the attack?
+* The client IP address recorded by Spring Boot is the Application Gateway IP rather than the original client IP. How would you fix this securely?
+* A backend deployment causes intermittent errors while old and new application instances run simultaneously. How would you configure routing and deployment behavior to reduce disruption?
+* Application Gateway becomes slow during peak traffic, and backend latency also increases. How would you distinguish gateway capacity issues from backend bottlenecks?
+* An application is accessible publicly even though the team intended to allow access only through Application Gateway. How would you secure the backend?
+* After rotating a TLS certificate, some requests fail while others succeed. How would you troubleshoot certificate configuration across listeners and backends?
+* An application uses session-based authentication and users are unexpectedly logged out after requests are routed to different backend instances. How would you address the problem?
+* Application Gateway health probes fail because the Spring Boot application requires authentication on its health endpoint. How would you design a secure and reliable probe configuration?
+* A production release changes an API URL structure and breaks existing clients. How would you use routing rules and rewrites to support backward compatibility?
+* The organization needs to expose several APIs through one public endpoint while keeping each microservice in a private subnet. How would you design the solution?
+* During a regional outage, the application's backend becomes unavailable. How would you design traffic failover and recovery?
+* Security teams report that WAF logs are not sufficient to correlate blocked requests with Java application logs. How would you implement end-to-end request correlation?

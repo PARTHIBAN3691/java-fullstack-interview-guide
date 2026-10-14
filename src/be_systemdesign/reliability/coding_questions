@@ -1,0 +1,30 @@
+* Write a Java method that retries an operation a configurable number of times.
+* Implement exponential backoff with jitter for retrying failed HTTP requests.
+* Implement a timeout mechanism for a potentially slow Java operation.
+* Implement a simple circuit breaker with CLOSED, OPEN, and HALF_OPEN states.
+* Write a Java service that uses a fallback when a downstream API fails.
+* Implement a bulkhead pattern using a bounded thread pool.
+* Write a Java utility that limits concurrent calls to a dependency.
+* Implement a rate limiter using the token bucket algorithm.
+* Implement a rate limiter using the sliding-window algorithm.
+* Write a thread-safe Java method that supports idempotent request processing using an idempotency key.
+* Implement an idempotent payment-processing service that prevents duplicate charges.
+* Write a Java method that distinguishes retryable exceptions from non-retryable exceptions.
+* Implement a retry policy that respects HTTP Retry-After headers.
+* Write a Spring Boot REST controller with request timeouts and centralized exception handling.
+* Implement a Spring Boot health indicator that checks database connectivity.
+* Write a graceful shutdown mechanism that stops accepting new tasks and completes in-flight tasks.
+* Implement a Java service that falls back to cached data when a remote dependency is unavailable.
+* Write a producer-consumer example that applies backpressure when the processing queue is full.
+* Implement a bounded message-processing queue with retries and a dead-letter queue.
+* Write a Java consumer that prevents duplicate processing using a message ID.
+* Implement a failover client that switches between primary and secondary service endpoints.
+* Write a Java program that simulates node failures and recovery in a replicated service.
+* Implement a health monitor that marks an instance unhealthy after configurable consecutive failures.
+* Write a Java utility that tracks successful requests, failed requests, and total request latency.
+* Implement an SLO calculator that determines the error budget from the target availability.
+* Write a program that simulates cascading failures across dependent services and demonstrates circuit breaker protection.
+* Implement a bulkhead-isolated service where failures in one dependency do not exhaust all application threads.
+* Write an integration test that verifies retry behavior when a downstream API returns intermittent failures.
+* Implement a resilience test that simulates a slow dependency, a timeout, and a fallback response.
+* Build a Spring Boot application using Resilience4j for retries, circuit breaking, rate limiting, and bulkhead isolation.

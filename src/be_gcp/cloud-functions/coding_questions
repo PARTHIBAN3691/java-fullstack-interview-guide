@@ -1,0 +1,30 @@
+* Write a Java HTTP Cloud Function using the Google Cloud Functions Framework that returns a simple JSON response.
+* Write a Java Cloud Function that accepts a JSON request and validates mandatory fields.
+* Write a Java HTTP function that returns appropriate HTTP status codes for successful, invalid, and failed requests.
+* Write a Java function that parses a JSON request into a DTO and validates it using Jakarta Bean Validation.
+* Write a Java Cloud Function that reads configuration values from environment variables.
+* Write a Java Cloud Function that retrieves a secret from Secret Manager without hardcoding credentials.
+* Write a Java Cloud Function that processes a Pub/Sub message and extracts its payload.
+* Write a Java Cloud Function that processes a Cloud Storage event and logs the bucket name and object name.
+* Write a Java function that validates an event schema and rejects invalid messages.
+* Write a Java utility that generates an idempotency key from a business event.
+* Write a Java service that stores processed event IDs to prevent duplicate processing.
+* Write a Java function that retries transient API failures using exponential backoff and jitter.
+* Write a Java utility that classifies exceptions into retryable and non-retryable categories.
+* Write a Java function that calls a downstream REST API using Java's HTTP client and handles timeouts.
+* Write a Java HTTP function that authenticates requests using validated identity information supplied by the hosting platform.
+* Write a Java Cloud Function that queries BigQuery using the Google Cloud BigQuery client library.
+* Write a Java Cloud Function that writes structured records to BigQuery and handles insertion errors.
+* Write a Java function that reads a file from Cloud Storage and processes it in chunks.
+* Write a Java function that publishes a message to Pub/Sub after successfully processing a business event.
+* Write a Java service that records processing status and error details for failed events.
+* Write a Java function that routes incoming events to different handlers based on event type.
+* Write a Java utility that validates event timestamps and handles out-of-order events.
+* Write a Java function that applies request-size limits and rejects oversized HTTP payloads.
+* Write unit tests for a Java HTTP function covering valid requests, invalid JSON, missing fields, and internal errors.
+* Write unit tests for a Pub/Sub event handler covering duplicate messages, transient failures, and malformed payloads.
+* Write unit tests for a Java function that calls an external API using mocked HTTP responses.
+* Write a Java integration test that verifies access to Secret Manager using an appropriately configured test environment.
+* Write a Java function that emits structured logs containing a correlation ID, event ID, and processing duration.
+* Write a Java utility that measures function execution time and records latency metrics.
+* Write a Cloud Build configuration that compiles, tests, packages, and deploys a Java Cloud Function to a selected environment.

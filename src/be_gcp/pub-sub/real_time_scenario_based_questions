@@ -1,0 +1,30 @@
+* A Spring Boot publisher successfully sends messages, but the subscriber does not receive them. How would you investigate the topic, subscription, IAM permissions, and subscriber configuration?
+* A Pub/Sub subscriber processes the same payment event multiple times, resulting in duplicate transactions. How would you redesign the consumer to ensure idempotent processing?
+* A subscriber acknowledges messages before committing its database transaction. The database operation fails, but Pub/Sub does not redeliver the message. How would you correct the processing sequence?
+* A Pub/Sub subscription backlog increases continuously during peak traffic. How would you identify whether the publisher rate, subscriber concurrency, or downstream database is the bottleneck?
+* A Java subscriber repeatedly fails on one malformed message and receives it again. How would you configure retries and dead-letter handling?
+* A business workflow requires events for each customer to be processed in order. How would you configure ordering keys and handle ordering-related throughput limitations?
+* A subscriber occasionally exceeds its acknowledgment deadline while processing large files. How would you tune acknowledgment extensions, processing timeouts, and concurrency?
+* A push subscription receives HTTP 401 or 403 responses from a Cloud Run endpoint. How would you troubleshoot authentication, service identity, and invoker permissions?
+* A subscriber experiences sudden message redelivery after a deployment. How would you investigate shutdown behavior, acknowledgment deadlines, and in-flight messages?
+* Two microservices receive the same business event through separate subscriptions. How would you ensure each service processes the event independently?
+* A publisher times out after publishing a message and retries the request, potentially creating duplicates. How would you design duplicate-safe publishing and processing?
+* A Pub/Sub event triggers an inventory update, but the downstream database is temporarily unavailable. How would you handle retries without overwhelming the database?
+* A dead-letter topic starts receiving a large number of messages after a new release. How would you diagnose the failure and safely replay corrected messages?
+* A production subscriber processes messages successfully but in the wrong business order. How would you distinguish Pub/Sub delivery behavior from concurrency in the consumer?
+* A team changes a JSON event schema, breaking older subscribers. How would you introduce schema changes without interrupting production processing?
+* A publisher must send events to subscribers in another Google Cloud project. How would you configure cross-project IAM securely?
+* A Java subscriber consumes messages faster than its database can process them, causing connection pool exhaustion. How would you implement backpressure and flow control?
+* A batch consumer processes hundreds of messages but fails halfway through. How would you manage acknowledgment and retry behavior for successfully and unsuccessfully processed records?
+* A Pub/Sub subscription backlog suddenly drops to zero, but downstream business records are missing. How would you investigate acknowledgments, application errors, and persistence failures?
+* A Cloud Run service triggered by Pub/Sub repeatedly returns HTTP 500. How would you diagnose retries, delivery behavior, and service health?
+* A subscriber deployment introduces a memory leak and eventually crashes. How would you ensure unacknowledged messages are recovered without causing duplicate business operations?
+* A financial application must publish an event only after a database transaction commits. How would you implement the transactional outbox pattern?
+* A pipeline must replay seven days of events for rebuilding a reporting database. How would you configure retention, replay, and duplicate protection?
+* Pub/Sub delivery latency increases even though subscriber CPU usage is low. How would you investigate flow control, downstream latency, acknowledgment behavior, and network issues?
+* A system receives millions of events with highly skewed ordering keys. How would you redesign key distribution while preserving the required ordering guarantees?
+* A security audit discovers that an overly privileged service account can publish to and consume from every topic. How would you implement least-privilege IAM?
+* A critical subscriber must recover after a regional outage. How would you validate message retention, subscriber redeployment, dependency availability, and recovery capacity?
+* A monitoring alert reports a high unacknowledged message count. How would you determine whether the cause is slow processing, failed acknowledgments, or insufficient subscriber capacity?
+* A Pub/Sub publisher needs to publish events reliably during temporary network failures. How would you configure retries, batching, and error handling?
+* An event-driven workflow updates several microservices, but one service permanently fails after the others succeed. How would you design recovery, compensation, and event replay?

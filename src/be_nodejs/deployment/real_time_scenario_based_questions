@@ -1,0 +1,30 @@
+* Your Node.js application works locally but fails after deployment to Linux. How would you investigate the issue?
+* A deployment succeeds, but the application immediately exits. How would you identify the root cause?
+* Your production application cannot read environment variables that work in development. How would you troubleshoot the configuration?
+* Users experience downtime whenever a new version is deployed. How would you redesign the deployment process?
+* Your Node.js application crashes under peak traffic after deployment. How would you investigate resource usage and application logs?
+* A new release introduces high response times and increased error rates. How would you detect the regression and roll back safely?
+* Your Docker image is several gigabytes in size and takes too long to deploy. How would you optimize the image?
+* A container runs successfully locally but fails in Kubernetes. What configuration, networking, and resource issues would you investigate?
+* Your application repeatedly restarts because its health check fails during startup. How would you distinguish slow initialization from an actual failure?
+* A Kubernetes deployment reports all pods as running, but users receive HTTP 502 errors. How would you troubleshoot the service?
+* A Node.js service is killed because it exceeds its container memory limit. How would you diagnose and resolve the issue?
+* A deployment requires a database schema change that is incompatible with the previous application version. How would you release the change safely?
+* Your CI/CD pipeline passes all tests but deploys an artifact different from the one tested. How would you improve artifact management?
+* Production secrets are accidentally included in a Docker image. What immediate actions and long-term preventive controls would you implement?
+* A third-party dependency introduces a critical vulnerability just before release. How would you handle the deployment decision?
+* Your application uses WebSockets, and active connections are disconnected during rolling deployments. How would you minimize disruption?
+* A new application version works for some users but fails for others behind a load balancer. How would you investigate mixed-version behavior?
+* Your cloud deployment experiences sudden traffic spikes. How would you configure autoscaling and protect downstream services?
+* A deployment is healthy in one availability zone but failing in another. How would you isolate the problem?
+* A PM2-managed application runs correctly until the server restarts. How would you ensure reliable process startup?
+* Your deployment pipeline takes 30 minutes, delaying urgent fixes. How would you identify and optimize the slowest stages?
+* A canary release shows a small increase in errors that automated tests did not detect. How would you decide whether to continue or roll back?
+* An application rollback restores the previous code but leaves the database in a newer schema state. How would you recover safely?
+* Your Node.js application needs different configurations for staging and production without maintaining separate codebases. How would you implement this?
+* An application deployed behind Nginx reports incorrect client IP addresses. How would you configure trusted proxies safely?
+* Your team deploys multiple microservices, and one service is incompatible with another service's new API version. How would you coordinate releases?
+* A production deployment accidentally runs a scheduled job on every application instance. How would you prevent duplicate execution?
+* Your application logs contain sensitive customer data and are retained centrally. How would you reduce the exposure and improve log security?
+* A cloud provider region becomes unavailable. How would you restore service using a disaster-recovery strategy?
+* You must deploy a critical fix with minimal risk while preserving the ability to revert immediately. Which deployment strategy would you choose and why?

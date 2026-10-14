@@ -1,0 +1,30 @@
+* How would you design an enterprise-wide IaC architecture supporting hundreds of teams, cloud accounts, and environments?
+* How would you design Terraform module versioning and release management to prevent breaking changes across dependent projects?
+* How would you split Terraform state for a large infrastructure estate while managing dependencies between networking, security, compute, and data layers?
+* How would you migrate a local Terraform state file to a remote backend without losing resource ownership?
+* How would you recover from a corrupted or accidentally overwritten remote state file?
+* How would you resolve concurrent Terraform operations when multiple pipelines attempt to modify shared infrastructure?
+* How would you investigate a Terraform state lock that cannot be released and determine whether force-unlocking is safe?
+* How would you migrate resources between Terraform state files while minimizing infrastructure disruption?
+* How would you refactor Terraform resource addresses or module structures without unnecessarily recreating production resources?
+* How would you import hundreds of existing cloud resources into Terraform and establish reliable ownership?
+* How would you design Terraform configurations that safely manage resources across multiple cloud accounts and regions?
+* How would you prevent secrets from leaking through Terraform state, plan files, pipeline logs, and generated outputs?
+* How would you implement least-privilege access for Terraform execution roles across development and production?
+* How would you secure Terraform provider credentials and prevent unauthorized provider or module substitution?
+* How would you detect and remediate infrastructure drift without overwriting legitimate emergency changes?
+* How would you distinguish intentional infrastructure changes from unauthorized drift?
+* How would you prevent accidental destruction of critical resources while still supporting legitimate replacement operations?
+* How would you design policy-as-code controls that block noncompliant infrastructure before an apply operation?
+* How would you enforce mandatory encryption, private networking, approved regions, and tagging standards across Terraform modules?
+* How would you build a secure Terraform pipeline with plan artifacts, approval gates, policy checks, and controlled execution?
+* How would you ensure that the approved Terraform plan is exactly the plan executed in production?
+* How would you handle a long-running Terraform apply that partially succeeds before a provider API error occurs?
+* How would you design automated Terraform testing using static analysis, unit tests, integration tests, and ephemeral environments?
+* How would you test infrastructure modules without incurring the cost or risk of provisioning production-scale resources?
+* How would you manage provider upgrades when a new provider version changes resource schemas or lifecycle behavior?
+* How would you compare Terraform, CloudFormation, and Pulumi for a multi-cloud enterprise platform?
+* How would you manage CloudFormation stack drift, nested stacks, and cross-stack dependencies?
+* How would you design Pulumi project organization, configuration management, and stack isolation across environments?
+* How would you migrate from CloudFormation or Pulumi to Terraform while preserving resource ownership and avoiding recreation?
+* How would you design governance that balances centralized security controls with developer self-service provisioning?

@@ -1,0 +1,30 @@
+* Explain the internal behavior and common use cases of Array, Map, and Set.
+* How does JavaScript handle sparse arrays?
+* What is the difference between an array hole and an explicit undefined value?
+* How do array iteration methods behave when elements are added or removed during iteration?
+* What are the time-complexity considerations for common array operations?
+* Why can repeated use of splice() in a large array be inefficient?
+* How would you optimize searching and lookup operations in large collections?
+* How does insertion order work in Map and Set?
+* How does SameValueZero equality affect Map and Set keys?
+* How do object keys differ from primitive keys in Map?
+* Why can a Map be preferable to an Object for dynamically managed key-value data?
+* How do WeakMap and WeakSet support garbage-collection-friendly data structures?
+* Why can't WeakMap keys be enumerated?
+* How would you implement a custom iterable collection?
+* What is the difference between an iterator and an iterable?
+* How do generators work with collections?
+* How would you implement a custom collection using Symbol.iterator?
+* How would you implement a deep clone of nested objects and arrays while handling circular references?
+* How would you efficiently deduplicate a large array of objects?
+* How would you implement a multiset or bag data structure in JavaScript?
+* How would you implement an LRU cache using Map?
+* How would you efficiently calculate the intersection and difference of large collections?
+* How would you group and aggregate millions of records efficiently?
+* How would you design a collection that supports efficient insertion, deletion, and lookup?
+* What are the risks of mutating collections while iterating over them?
+* How would you implement immutable collection updates without modifying the original data?
+* How do structuredClone() and JSON serialization differ when cloning collections and objects?
+* How would you choose between Map, WeakMap, and Object for caching metadata?
+* How can memory usage grow unexpectedly when collections retain references to objects?
+* How would you benchmark and profile collection operations in a JavaScript application?

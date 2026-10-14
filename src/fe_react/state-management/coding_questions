@@ -1,0 +1,30 @@
+* Create a counter using useReducer with increment, decrement, and reset actions.
+* Build a Context API solution to share the current user's information across components.
+* Create a theme management system using Context API.
+* Implement a shopping cart using useReducer.
+* Create a Redux store using Redux Toolkit's configureStore.
+* Create a counter slice using createSlice.
+* Connect a React component to Redux using useSelector and useDispatch.
+* Build a todo application using Redux Toolkit.
+* Implement add, update, delete, and toggle-completion operations for todos in Redux.
+* Create separate Redux slices for authentication and user preferences.
+* Implement an asynchronous API request using createAsyncThunk.
+* Manage loading, success, and error states for an API request using Redux Toolkit.
+* Build a product listing page that fetches data and stores it in Redux.
+* Implement search, filtering, and pagination using Redux state.
+* Create memoized selectors using createSelector.
+* Normalize a collection of products and users in Redux state.
+* Implement Redux middleware to log dispatched actions.
+* Persist selected Redux state to localStorage.
+* Implement logout functionality that resets authentication and user-specific application state.
+* Build a shopping cart with quantity updates and automatic total-price calculation.
+* Implement optimistic updates for a todo item with rollback after an API failure.
+* Use RTK Query to fetch and cache product data.
+* Implement RTK Query cache invalidation after creating or updating a product.
+* Prevent stale search responses from overwriting newer results.
+* Build a global notification system using Redux Toolkit.
+* Implement undo and redo functionality using Redux.
+* Create a reusable custom hook that wraps Context API state and update logic.
+* Write unit tests for Redux reducers, selectors, and asynchronous actions.
+* Optimize a Redux-connected component to avoid unnecessary re-renders.
+* Design and implement state management for an e-commerce application with authentication, cart, products, filters, and checkout.

@@ -1,0 +1,94 @@
+**AI Testing Fundamentals**
+* An AI application passes conventional unit and integration tests but produces inconsistent answers after deployment. How would you identify missing evaluation coverage and design appropriate release gates?
+* A release pipeline takes several hours because every change triggers expensive model evaluations. How would you optimize the testing pyramid without sacrificing confidence?
+* A production incident occurs despite all existing tests passing. How would you convert the failure into a reproducible test and prevent similar regressions?
+
+**LLM Evaluation Metrics**
+* A new model scores higher on an automated metric but receives worse feedback from users. How would you investigate metric validity and define a more representative evaluation?
+* The team reports a single overall quality score that hides a severe decline in safety performance. How would you redesign score aggregation and release criteria?
+* Two model versions differ by a small margin in evaluation results. How would you determine whether the improvement is meaningful or merely random variation?
+
+**Functional Testing of AI Applications**
+* An LLM provider occasionally returns malformed responses or times out after processing a request. How would you test retry behavior, idempotency, and graceful failure?
+* A model integration works in development but fails in production because the provider changed its response format. How would you improve contract testing and compatibility checks?
+* An AI-generated tool call executes twice after a network timeout and retry. How would you reproduce the issue and prevent duplicate side effects?
+
+**Prompt Regression Testing**
+* A prompt optimization improves concise answers but causes the model to omit required compliance details. How would you detect the regression and enforce critical response requirements?
+* A system prompt change improves one customer segment but degrades another. How would you identify the affected scenarios and decide whether to release?
+* A prompt works well with one model but fails after switching providers. How would you establish cross-model regression coverage and provider-specific expectations?
+
+**Golden Dataset Testing**
+* A model passes the golden dataset but fails on new production questions. How would you determine whether the dataset is stale, biased, or too narrow?
+* Developers repeatedly tune prompts until the golden dataset score improves, but production quality does not. How would you detect benchmark overfitting and establish a holdout evaluation?
+* Business policies change, making many expected answers outdated. How would you update the golden dataset while preserving valid comparisons with previous releases?
+
+**Groundedness and Faithfulness Evaluation**
+* A RAG chatbot cites relevant documents but makes claims those documents do not support. How would you detect the issue and separate retrieval from generation failures?
+* A response combines evidence from several sources, including conflicting policy versions. How would you evaluate whether its conclusions are properly supported?
+* An automated faithfulness evaluator marks nearly every answer as grounded, including answers with fabricated details. How would you validate and recalibrate the evaluator?
+
+**Answer Relevance**
+* A chatbot gives technically correct answers but frequently ignores part of the user's question. How would you create tests for multi-part requests and measure completeness?
+* A long answer contains substantial irrelevant information, reducing user satisfaction. How would you quantify relevance and verbosity without penalizing useful detail?
+* A multi-turn assistant answers the latest message correctly in isolation but ignores earlier conversational constraints. How would you test contextual relevance?
+
+**Retrieval Precision and Recall**
+* A RAG application retrieves many documents, but the correct evidence is often buried in irrelevant context. How would you measure precision and improve ranking?
+* The system performs well on simple questions but misses evidence needed for multi-hop questions. How would you diagnose recall limitations and evaluate a retrieval redesign?
+* A permission filter removes unauthorized documents and causes retrieval metrics to drop. How would you distinguish legitimate access filtering from retrieval defects?
+
+**Hallucination Evaluation**
+* The chatbot confidently answers questions even when no relevant evidence exists in the knowledge base. How would you build abstention tests and measure unsupported-answer rates?
+* The model gives different factual answers to repeated identical questions. How would you assess nondeterminism, factual consistency, and evaluation reliability?
+* A hallucination mitigation change reduces incorrect claims but substantially increases unanswered questions. How would you measure the trade-off and select acceptable thresholds?
+
+**LLM-as-a-Judge**
+* An LLM judge consistently prefers longer answers even when shorter answers are more accurate. How would you identify the bias and improve the scoring rubric?
+* Automated judge scores rise after a model update, but expert reviewers see no improvement. How would you validate judge-human agreement and investigate evaluator drift?
+* Two judges disagree significantly on the same response set. How would you determine whether to recalibrate, use an ensemble, or escalate cases to humans?
+
+**Human Evaluation**
+* Human reviewers disagree on whether responses are correct because the annotation guidelines are ambiguous. How would you improve the rubric and measure agreement?
+* Evaluation costs are growing, and the team cannot manually review every model output. How would you use sampling, automation, and risk-based review?
+* Reviewers favor responses from a familiar model because they recognize its writing style. How would you reduce bias and improve blind evaluation?
+
+**Adversarial Testing**
+* A chatbot fails when a user expresses the same request through unusual wording, Unicode characters, or multiple languages. How would you expand adversarial coverage?
+* A fixed adversarial test suite passes, but external users discover new failure patterns. How would you introduce adaptive test generation and regression tracking?
+* An adversarial test triggers a failure that cannot be reproduced consistently. How would you capture the necessary context and determine whether the issue is stochastic?
+
+**Red Teaming**
+* A red team demonstrates that malicious instructions in a retrieved document can trigger an unauthorized tool action. How would you reproduce the attack chain, assess impact, and verify remediation?
+* A red-team fix blocks a known exploit but leaves similar attack variants effective. How would you test the underlying security boundary instead of patching individual prompts?
+* A release candidate passes functional tests but has unresolved high-severity red-team findings. How would you define release criteria, risk acceptance, and escalation?
+
+**AI Safety Testing**
+* A model update reduces unsafe responses but increases false refusals for legitimate requests. How would you measure both outcomes and establish an acceptable release threshold?
+* Safety filters pass isolated tests but fail when a user combines several benign requests into a harmful workflow. How would you test policy interactions?
+* A quantized model has similar accuracy to the original model but produces more unsafe responses. How would you design targeted safety regression tests?
+
+**RAG Evaluation Frameworks**
+* A RAG system has strong retrieval metrics but poor final answers. How would you use component-level evaluations to locate the failure?
+* A team adopts an evaluation framework but obtains high scores that conflict with expert review. How would you validate the framework's metrics and assumptions?
+* An updated chunking strategy improves context recall but increases latency and irrelevant context. How would you evaluate the end-to-end trade-offs?
+
+**Agent Workflow Testing**
+* An agent selects the correct tool but generates invalid arguments and repeatedly retries. How would you test planning, schema validation, retry limits, and termination?
+* An agent completes a multi-step workflow until a downstream service fails halfway through. How would you test checkpoint recovery, duplicate actions, and compensation?
+* An agent passes task-success tests but makes excessive tool calls and exceeds its cost budget. How would you measure trajectory efficiency and enforce execution limits?
+
+**Load and Performance Testing**
+* A model serves low traffic successfully but experiences severe p99 latency spikes during peak demand. How would you isolate concurrency, queueing, token length, and provider bottlenecks?
+* Streaming responses begin quickly but slow down significantly for long generations. How would you measure time to first token, inter-token latency, and total completion time?
+* The application meets latency targets only by increasing inference cost beyond the budget. How would you compare batching, caching, model routing, and output-length controls?
+
+**Model Regression Testing**
+* A new model performs better overall but regresses on a critical business workflow. How would you detect the category-specific failure and block promotion?
+* The provider silently changes model behavior, and your team cannot reproduce the previous output distribution. How would you use version tracking, baselines, and production sampling?
+* A model regression appears only for a small group of multilingual users. How would you improve test coverage and establish targeted release gates?
+
+**Evaluation Dataset Management**
+* Evaluation results change substantially after a dataset refresh, making it unclear whether the model improved. How would you separate dataset effects from model effects?
+* Production conversations are added to the evaluation dataset, but some are later included in fine-tuning. How would you detect and remediate contamination?
+* A dataset contains confidential customer examples and must be deleted, but multiple evaluation pipelines use copies. How would you trace dependencies and verify deletion?

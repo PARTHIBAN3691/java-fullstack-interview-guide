@@ -1,0 +1,43 @@
+* How would you design an observability strategy for a Java microservices application?
+* How would you decide which application metrics should be collected?
+* How would you choose between a counter, gauge, histogram, and summary for a particular metric?
+* How would you avoid high-cardinality labels in Prometheus metrics?
+* How would you instrument a Spring Boot application to expose application metrics?
+* How would you use Micrometer with Prometheus in a Spring Boot application?
+* How does Prometheus discover targets and collect metrics?
+* What is the difference between scraping metrics and receiving pushed metrics?
+* How would you write a PromQL query to calculate the request error rate?
+* How would you calculate the 95th-percentile request latency using Prometheus histograms?
+* How would you configure Grafana to visualize Prometheus metrics?
+* How would you design dashboards for developers, operations teams, and business stakeholders?
+* How would you configure centralized logging for multiple microservices?
+* How would you implement structured JSON logging in a Java application?
+* How would you correlate logs using a request ID or trace ID across multiple services?
+* How would you choose between the Elastic Stack and Splunk for centralized log management?
+* How would you troubleshoot missing logs in a centralized logging platform?
+* How would you configure log retention and prevent excessive logging costs?
+* How does OpenTelemetry collect and export metrics, logs, and traces?
+* What is the difference between OpenTelemetry instrumentation libraries and the OpenTelemetry Collector?
+* What is the difference between automatic and manual instrumentation?
+* How would you propagate trace context across synchronous REST calls?
+* How would you propagate trace context across asynchronous messaging systems?
+* How would you use Jaeger to investigate latency across a chain of microservices?
+* How would you identify the slowest span in a distributed trace?
+* How would you distinguish application latency from database, network, and downstream-service latency?
+* How would you monitor JVM heap usage, garbage collection, thread pools, and connection pools?
+* How would you monitor CPU, memory, disk, network, and filesystem utilization on virtual machines?
+* How would you monitor Kubernetes nodes, pods, deployments, and containers?
+* How would you monitor pod restarts, pending pods, failed deployments, and resource throttling?
+* How would you integrate cloud-native monitoring services with Prometheus and Grafana?
+* How would you design monitoring for a multi-region cloud application?
+* How would you configure alerts based on error rate, latency, traffic, and saturation?
+* How would you reduce alert noise and prevent duplicate or non-actionable alerts?
+* How would you design actionable alerts with severity levels, runbooks, and escalation policies?
+* How would you define SLIs and SLOs for a REST API?
+* How would you calculate an error budget from an availability SLO?
+* How would you use error-budget consumption to guide release decisions?
+* How would you apply the RED methodology to a microservice?
+* How would you apply the USE methodology to a database server or Kubernetes node?
+* How would you use the golden signals to investigate production performance issues?
+* How would you distinguish an SLA violation from an SLO violation?
+* How would you validate that monitoring and alerting remain effective during a disaster-recovery exercise?

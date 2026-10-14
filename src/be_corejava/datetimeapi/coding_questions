@@ -1,0 +1,27 @@
+# Core Java — Date and Time API
+## Coding Questions
+* Write a Java program to print the current date, current time, and current date-time using the Java Date and Time API.
+* Write a program to parse a date in `dd-MM-yyyy` format and print it in `yyyy/MM/dd` format.
+* Write a program to calculate the number of days between two given dates.
+* Write a program to calculate a person's age in years, months, and days from their date of birth.
+* Write a program to check whether a given year is a leap year.
+* Write a program to find the first and last dates of a given month.
+* Write a program to find the next Monday from a given date.
+* Write a program to determine whether a given date falls on a weekend.
+* Write a program to calculate the number of working days between two dates, excluding Saturdays and Sundays.
+* Write a program to find all Mondays in a given month.
+* Write a program to calculate the duration between two `LocalTime` values, including a duration that crosses midnight.
+* Write a program to convert a `LocalDateTime` in `Asia/Kolkata` to the corresponding time in `America/New_York`.
+* Write a program to convert an `Instant` into a `ZonedDateTime` for a given time zone.
+* Write a program to sort a list of events chronologically using their timestamps.
+* Write a program to group a list of transactions by date in a specified time zone.
+* Write a program to find the earliest and latest timestamps in a collection of events.
+* Write a program to calculate the number of complete months between two dates.
+* Write a program to find the next business day after a given date, excluding weekends.
+* Write a program to parse date strings containing multiple formats and identify invalid entries.
+* Write a program using `Clock.fixed()` to test date-dependent logic without relying on the actual system clock.
+* Write a program to calculate subscription expiry dates while applying a defined end-of-month policy.
+* Write a program to identify events that occurred within the last 24 hours using `Instant`.
+* Write a program to calculate working hours between two timestamps, excluding weekends and a configured daily lunch break.
+* Write a program to convert legacy `java.util.Date` values to `Instant` and back.
+* Write a program to implement a custom `TemporalAdjuster` that returns the next working day while excluding a supplied list of holidays.

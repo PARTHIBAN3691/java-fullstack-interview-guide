@@ -1,0 +1,25 @@
+* Explain how Java resolves method references during compile time.
+* How does overload resolution differ between lambda expressions and method references?
+* How do generic type inference and target typing affect method reference resolution?
+* How do wildcards and generic bounds influence the compatibility of method references with functional interfaces?
+* What is the difference between a bound method reference and an unbound method reference?
+* Explain how `String::compareTo` can be used as a reference to an instance method of an arbitrary object.
+* How does Java distinguish between a static method reference and an instance method reference when the referenced method is overloaded?
+* How are method references implemented by the JVM at a high level?
+* What role does `invokedynamic` play in the implementation of method references?
+* Are method references guaranteed to perform better than equivalent lambda expressions?
+* How do constructor references interact with generic functional interfaces?
+* How would you use a constructor reference with a generic factory interface?
+* How do method references interact with covariant return types?
+* Can a method reference adapt a method whose parameter types differ from those of the target functional interface? Explain with examples.
+* How does Java adapt return types when resolving a method reference?
+* How would you resolve an ambiguous method reference caused by overloaded methods accepting different functional interfaces?
+* What are the limitations of using method references when exception handling or additional processing is required?
+* How would you handle a referenced method that throws a checked exception when the target functional interface does not declare it?
+* How do method references interact with inheritance and overridden instance methods?
+* What is the difference between `this::methodName` and `ClassName::methodName` when the latter refers to an instance method?
+* How would you reference a superclass implementation when a subclass overrides the same method?
+* How can method references be composed with `Function`, `Predicate`, and `Consumer`?
+* What are the design trade-offs between using a method reference and an explicit lambda for complex business logic?
+* How would you evaluate method references for readability in a large Stream pipeline?
+* How would you test code that uses constructor references and factory functional interfaces?

@@ -1,0 +1,30 @@
+* Write a custom pipe that converts a string to uppercase.
+* Create a custom pipe that converts a string to lowercase.
+* Implement a custom pipe that capitalizes the first letter of each word.
+* Write a custom pipe that filters an employee array by department.
+* Implement a custom pipe that filters products by name using case-insensitive matching.
+* Create a custom pipe that sorts an array of employees by name.
+* Write a pipe that sorts products by price in ascending or descending order.
+* Implement a pipe that extracts a specified range of elements from an array.
+* Create a pipe that formats a number to two decimal places.
+* Write a custom pipe that formats monetary values according to a supplied currency code.
+* Implement a custom pipe that converts a decimal value into a percentage string.
+* Write a pipe that displays a fallback value when the input is null or undefined.
+* Create a custom pipe that truncates text to a specified length and appends an ellipsis.
+* Implement a pipe that searches a list using multiple fields, such as name and email.
+* Write a pipe that filters records using a selected status and date range.
+* Create a standalone custom pipe and use it inside a standalone component.
+* Implement a custom pipe that accepts multiple arguments and applies configurable formatting.
+* Write a pure pipe that transforms an array without modifying the original array.
+* Implement an impure pipe and demonstrate how frequently Angular evaluates it.
+* Write unit tests for a custom filtering pipe using Jasmine.
+* Write unit tests for a sorting pipe, including empty arrays and duplicate values.
+* Test a custom pipe with null, undefined, empty strings, and invalid inputs.
+* Write unit tests for a currency-formatting pipe with different numeric inputs.
+* Create a component that uses AsyncPipe to display values from an Observable.
+* Implement AsyncPipe with an Observable that emits updated values over time.
+* Write a component that combines AsyncPipe with the OnPush change detection strategy.
+* Refactor a component that manually subscribes to an Observable to use AsyncPipe.
+* Implement a pipe that formats timestamps using a configurable date format.
+* Write a custom pipe that filters and sorts a product list without mutating the original data.
+* Build a complete Angular example combining custom pipes, built-in pipes, AsyncPipe, and unit tests.

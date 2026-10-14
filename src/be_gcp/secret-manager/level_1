@@ -1,0 +1,30 @@
+* How do you integrate Google Cloud Secret Manager with a Spring Boot application?
+* How do you configure the Google Cloud Secret Manager Java client library?
+* How do you authenticate a Java application with Secret Manager using Application Default Credentials?
+* How do you access Secret Manager from a local development environment?
+* How do you configure Secret Manager access for a Java application running on Cloud Run?
+* How do you grant a service account permission to access a specific secret?
+* What is the difference between roles/secretmanager.secretAccessor and roles/secretmanager.admin?
+* How do you retrieve a specific secret version using the Java client library?
+* How do you access the latest enabled version of a secret?
+* How do you handle a secret that does not exist?
+* How do you handle permission-denied errors when accessing a secret?
+* How do you handle Secret Manager API timeouts and transient failures?
+* How do you avoid retrieving the same secret repeatedly in a Spring Boot application?
+* How would you cache secret values in a Java application?
+* What are the security risks of caching secrets in application memory?
+* How do you configure database credentials in Spring Boot using Secret Manager?
+* How do you manage different secrets for development, testing, and production?
+* How do you rotate a database password stored in Secret Manager?
+* How do you ensure an application uses a newly rotated secret?
+* How do you prevent secret values from appearing in application logs?
+* How do you configure Secret Manager access using Terraform-managed infrastructure?
+* How do you manage secret access across multiple Google Cloud projects?
+* How do you use Secret Manager with Google Kubernetes Engine?
+* What is the difference between retrieving secrets through the API and exposing them as mounted files?
+* How do you use Secret Manager with Cloud Functions?
+* How do you test Secret Manager integration without accessing production secrets?
+* How do you manage secrets in a CI/CD pipeline using Cloud Build?
+* How do you distinguish secret payload data from secret metadata?
+* How do you handle binary data stored as a secret payload?
+* What metrics and logs would you monitor for Secret Manager access?

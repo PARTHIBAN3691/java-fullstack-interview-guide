@@ -1,0 +1,37 @@
+# Core Java — Collections — Set
+## Coding Questions
+
+### Level 0 — Easy
+* Write a Java program to create a HashSet and add, remove, and check elements.
+* Write a program to remove duplicate integers from a List using HashSet.
+* Write a program to preserve insertion order while removing duplicates using LinkedHashSet.
+* Write a program to sort a Set of integers using TreeSet.
+* Write a program to find the union of two Sets.
+* Write a program to find the intersection of two Sets.
+* Write a program to find the difference between two Sets.
+* Write a program to check whether two Sets are equal.
+* Write a program to convert a List into a Set and a Set into a List.
+
+### Level 1 — Medium
+* Write a program to find duplicate elements in a List using a Set.
+* Write a program to find the symmetric difference between two Sets.
+* Write a program to remove duplicate Employee objects using `equals()` and `hashCode()`.
+* Write a program to find common elements among three Sets.
+* Write a program to find the first repeated element in a List using a Set.
+* Write a program to find the first non-repeated character in a String using a Set and an appropriate auxiliary structure.
+* Write a program to use TreeSet with a custom Comparator for Employee objects.
+* Write a program to find the nearest lower and higher values using NavigableSet.
+* Write a program to deduplicate a List while preserving first-occurrence order.
+* Write a program to collect Stream results into a TreeSet with custom ordering.
+
+### Level 2 — Difficult
+* Implement a custom hash-based Set supporting `add()`, `remove()`, `contains()`, collision handling, and resizing.
+* Write a program to compare two Lists as multisets, ignoring order but preserving duplicate counts.
+* Implement a generic Set-intersection utility using wildcard bounds.
+* Write a program to maintain a sorted Set of timestamps and efficiently retrieve expired entries.
+* Implement a thread-safe check-and-add operation for unique identifiers.
+* Write a program to find the longest consecutive sequence of integers using a HashSet.
+* Write a program to solve the sliding-window distinct-count problem using a Set and an auxiliary frequency map.
+* Implement a bounded insertion-ordered uniqueness cache with an eviction policy.
+* Write a program to deduplicate a large dataset while preserving first-seen order and minimizing unnecessary allocations.
+* Write a JMH benchmark comparing HashSet, LinkedHashSet, and TreeSet for insertion, membership checks, and removal.

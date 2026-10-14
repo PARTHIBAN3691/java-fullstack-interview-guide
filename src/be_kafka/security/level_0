@@ -1,0 +1,30 @@
+* What is Kafka security?
+* Why is security important in Kafka?
+* What are the main security mechanisms supported by Kafka?
+* What is authentication in Kafka?
+* What is authorization in Kafka?
+* What is the difference between authentication and authorization?
+* What is SSL in Kafka?
+* What is TLS in Kafka?
+* What is SASL in Kafka?
+* What is SASL/PLAIN authentication?
+* What is SASL/SCRAM authentication?
+* What is SASL/OAUTHBEARER?
+* What is mutual TLS authentication?
+* What is a Kafka ACL?
+* What is the purpose of Kafka access control lists?
+* What is the difference between a Kafka principal and a Kafka user?
+* What is a Kafka broker listener?
+* What is the purpose of `security.protocol`?
+* What is the purpose of `sasl.mechanism`?
+* What is the purpose of `sasl.jaas.config`?
+* What is a keystore in Kafka security?
+* What is a truststore in Kafka security?
+* What is the difference between a keystore and a truststore?
+* What is encryption in transit?
+* Does Kafka encrypt messages stored on disk by default?
+* What is the purpose of `ssl.endpoint.identification.algorithm`?
+* What is the difference between broker authentication and client authentication?
+* How do producers authenticate with Kafka brokers?
+* How do consumers authenticate with Kafka brokers?
+* How can you restrict access to a Kafka topic?

@@ -1,0 +1,20 @@
+* A Java Spring Boot application is accessible through its load balancer DNS name but not through its custom domain. How would you troubleshoot Route 53 records, DNS delegation, and TLS configuration?
+* A production application is deployed in two AWS Regions. How would you configure Route 53 to route users to the healthy Region?
+* A new application version is deployed, and the team wants to send only 10% of traffic to it initially. How would you configure weighted routing?
+* A regional outage occurs, but users continue reaching the failed endpoint. How would you investigate health checks, DNS TTLs, resolver caches, and failover configuration?
+* A private Java microservice resolves correctly from one VPC but not from another. How would you troubleshoot private hosted zone associations and DNS resolution?
+* An organization needs the same domain to resolve to internal endpoints inside a VPC and public endpoints for external users. How would you implement split-horizon DNS?
+* A Route 53 health check reports an endpoint as healthy even though users receive HTTP 500 responses. How would you improve the health-check design?
+* After migrating DNS hosting, email delivery stops working. Which MX, TXT, SPF, DKIM, DMARC, and other relevant records would you verify?
+* A Java application intermittently resolves an old endpoint after a DNS change. How would you identify whether the cause is TTL caching, application-level DNS caching, or an incorrect record?
+* A company wants to migrate a domain from an external DNS provider to Route 53 with minimal downtime. How would you plan the transition?
+* A Route 53 failover policy directs traffic to a secondary Region, but that Region cannot access the required data store. How would you design dependency-aware failover?
+* A company wants users in different geographic regions to reach region-specific endpoints. Which routing policies would you consider, and what are their limitations?
+* An internal application must resolve on-premises hostnames through AWS. How would you configure Route 53 Resolver forwarding and hybrid DNS connectivity?
+* A DNS record was accidentally deleted during a deployment. How would you restore it and prevent similar incidents?
+* A security team requires an audit trail for all DNS record changes. How would you configure logging, IAM permissions, and change monitoring?
+* A Java API uses API Gateway custom domains and Route 53 records. How would you troubleshoot failures caused by incorrect alias targets or certificate-region requirements?
+* A company uses CloudFront for a frontend and an ALB for backend APIs. How would you design Route 53 records for both services?
+* A DNSSEC-enabled domain fails validation after a nameserver migration. How would you diagnose the DNSKEY and DS record chain?
+* DNS query volume and cost rise sharply after a deployment. How would you investigate TTL settings, record usage, and repeated DNS lookups?
+* A multi-Region Java application requires controlled recovery during a disaster. How would you combine Route 53 health checks, routing policies, operational runbooks, and recovery validation?

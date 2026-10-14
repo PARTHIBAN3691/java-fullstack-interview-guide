@@ -1,0 +1,30 @@
+* How would you design a production-grade multi-stage Dockerfile for a large Spring Boot microservice?
+* How would you optimize Docker layer ordering to maximize build-cache reuse?
+* How would you use BuildKit cache mounts to speed up Maven or Gradle dependency resolution?
+* How would you create reproducible Java container builds across developer machines and CI/CD agents?
+* How would you pin base-image versions and balance reproducibility against security updates?
+* How would you minimize the attack surface of a Java runtime image?
+* How would you choose between a slim Linux-based image, a distroless image, and a minimal runtime image?
+* What challenges can arise when using distroless images for Java applications?
+* How would you build and run a Java application as a non-root user while preserving required file permissions?
+* How would you manage build secrets securely using BuildKit rather than build arguments?
+* Why can Docker ARG and ENV be unsafe for sensitive values?
+* How would you generate a minimal Java runtime using jlink, and what compatibility issues would you consider?
+* How would you decide whether a custom jlink runtime is worth maintaining?
+* How would you investigate a container that fails because of missing native libraries or incompatible system dependencies?
+* How would you optimize a Dockerfile for a Spring Boot application using layered JARs?
+* How would you separate frequently changing application code from stable dependencies to improve image caching?
+* How would you manage JVM heap sizing and native memory within container memory limits?
+* How would you configure Java startup options without hardcoding environment-specific values into the image?
+* How would you implement graceful shutdown and configure the container stop timeout?
+* How would you design Dockerfile health checks for startup delays and temporary application failures?
+* How would you prevent a health check from reporting success before the application is ready to serve requests?
+* How would you scan Docker images for vulnerabilities and handle vulnerable transitive operating-system packages?
+* How would you generate software bills of materials and verify the provenance of a Java container image?
+* How would you sign container images and verify them before deployment?
+* How would you build multi-platform Java images for AMD64 and ARM64 architectures?
+* How would you investigate an image that builds on one architecture but fails on another?
+* How would you troubleshoot build failures caused by unavailable package repositories or changing external dependencies?
+* How would you distinguish a Docker build-cache problem from a Java compilation or dependency-resolution problem?
+* How would you design a Dockerfile that supports efficient local development and secure production deployment without duplicating all build logic?
+* How would you evaluate Dockerfile maintainability, image size, build speed, security, and runtime reliability together?

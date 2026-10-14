@@ -1,0 +1,30 @@
+* What is rate limiting in REST APIs?
+* Why is rate limiting required in RESTful services?
+* What are the common goals of rate limiting?
+* How does rate limiting protect an API from abuse?
+* What is the difference between rate limiting and throttling?
+* What is the difference between rate limiting and request validation?
+* What is a rate limit policy?
+* What is a rate limit window?
+* What is a request quota?
+* What is the difference between a rate limit and a quota?
+* What is a fixed-window rate-limiting algorithm?
+* What is a sliding-window rate-limiting algorithm?
+* What is the token bucket algorithm?
+* What is the leaky bucket algorithm?
+* What is the difference between token bucket and leaky bucket algorithms?
+* How can an API identify a client for rate limiting?
+* Can rate limiting be applied based on IP address?
+* Can rate limiting be applied based on API keys?
+* Can rate limiting be applied based on authenticated users?
+* What is the purpose of the HTTP 429 status code?
+* What does the Retry-After HTTP header indicate?
+* What is the purpose of rate-limit-related response headers?
+* Where can rate limiting be implemented in a REST API architecture?
+* What is the role of an API gateway in rate limiting?
+* Can rate limiting be applied to individual REST endpoints?
+* What happens when a client exceeds its rate limit?
+* What is the difference between client-side and server-side rate limiting?
+* How does rate limiting help prevent denial-of-service attacks?
+* What is burst traffic in the context of rate limiting?
+* What factors should be considered when choosing a rate limit?

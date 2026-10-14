@@ -1,0 +1,35 @@
+* A Maven build works on a developer's machine but fails in CI because a dependency cannot be resolved. How would you diagnose and fix the issue?
+* A Gradle build downloads dependencies repeatedly despite having a configured cache. How would you investigate the cause?
+* An npm application works locally but fails in CI after a clean installation. How would you identify whether the issue is caused by the lockfile, Node.js version, or dependency availability?
+* A production deployment fails because the required artifact version is missing from the repository. How would you restore service and prevent recurrence?
+* A team accidentally overwrites a released artifact with a different binary under the same version. What immediate actions and long-term controls would you implement?
+* A container image tagged `latest` behaves differently between staging and production. How would you identify the cause and prevent the issue?
+* A critical vulnerability is reported in a transitive dependency used by 150 microservices. How would you identify affected services, prioritize remediation, and coordinate releases?
+* A dependency vulnerability scanner blocks a release because of a critical finding that the security team believes is a false positive. How would you resolve the disagreement?
+* A public npm package is compromised, and the affected version has entered your build pipeline. How would you assess exposure and contain the incident?
+* A developer publishes an internal package with the same name as a public package. How would you prevent dependency confusion and verify which package was consumed?
+* A Maven release resolves different transitive dependency versions after a repository migration. How would you compare dependency graphs and restore consistent builds?
+* A Gradle upgrade causes several services to resolve unexpected library versions. How would you isolate the cause and safely roll out the upgrade?
+* An artifact repository becomes unavailable during a production hotfix build. How would you maintain delivery capability without bypassing security controls?
+* Nexus or Artifactory storage is nearly full, causing uploads to fail. How would you recover capacity while protecting artifacts needed for rollback and compliance?
+* Artifact downloads become slow across multiple CI agents. How would you determine whether the bottleneck is the network, repository, remote proxy, or build configuration?
+* A release passes testing in staging but a different artifact is deployed to production. How would you investigate the promotion process and eliminate artifact substitution?
+* A team rebuilds the application for every environment, and the production binary differs from the staging binary. How would you redesign the release process?
+* A build produces different JAR files from the same Git commit on two CI agents. How would you investigate timestamps, toolchain versions, environment variables, dependency resolution, and generated files?
+* An emergency fix requires rolling back to a release whose dependencies have since been removed from the repository. How would you recover the release safely?
+* A shared library upgrade breaks several downstream services even though the library's own tests pass. How would you investigate compatibility and improve release validation?
+* A container registry contains hundreds of tags for each service, making it difficult to identify trusted releases. How would you introduce a clear tagging, digest, retention, and promotion strategy?
+* A production image is found to contain an operating-system package with a critical CVE that was not detected during application dependency scanning. How would you identify the scanning gap and improve coverage?
+* An SBOM is generated, but it omits some transitive dependencies inside the final container image. How would you validate completeness and correct the generation process?
+* A new vulnerability is disclosed after a release has been deployed to production. How would you use SBOMs and deployment inventory to determine exposure and coordinate remediation?
+* An auditor requests proof that the production binary was built from an approved source revision and passed all required security checks. What evidence would you provide?
+* A team wants to skip vulnerability scanning for hotfixes because the release is urgent. How would you design an expedited process without losing essential security controls?
+* An external dependency repository begins serving inconsistent metadata, causing intermittent build failures. How would you isolate the impact and stabilize dependency resolution?
+* A repository migration changes artifact coordinates or metadata and breaks consumers across multiple projects. How would you plan and execute recovery?
+* Build caching reduces pipeline time by 40%, but an outdated artifact is occasionally reused after source changes. How would you diagnose the cache invalidation problem?
+* A team needs to support a long-term maintenance release while the main branch moves to newer dependency versions. How would you isolate dependencies and preserve reproducible builds?
+* A security incident reveals that CI credentials allowed any developer to publish production release artifacts. How would you redesign repository permissions and release authorization?
+* Two teams publish different binaries using the same artifact coordinates and version. How would you resolve the conflict and prevent it through versioning and repository policies?
+* A project contains dependencies with incompatible open-source licenses. How would you detect the issue early and decide whether to replace, upgrade, or approve the dependencies?
+* A company wants to migrate from mutable artifact tags to immutable, digest-based deployment references. How would you roll out the change without disrupting existing pipelines?
+* Build and artifact management costs are increasing rapidly due to duplicate artifacts, retained snapshots, and container image layers. How would you reduce costs without compromising auditability or rollback capability?

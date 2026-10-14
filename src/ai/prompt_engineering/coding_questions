@@ -1,0 +1,100 @@
+**Prompt Engineering Fundamentals**
+* Implement a reusable prompt builder that combines task instructions, user input, constraints, and output requirements.
+* Build a prompt-validation utility that checks required sections, maximum length, missing instructions, and unsupported template variables.
+* Create an experiment runner that evaluates multiple prompt variants against a shared dataset and records output quality, latency, and token usage.
+* Write unit tests for prompt construction covering empty inputs, long inputs, special characters, and conflicting user instructions.
+
+**Zero-Shot Prompting**
+* Implement a zero-shot classification prompt generator that accepts a task description and a list of allowed categories.
+* Build a response parser that maps model-generated category labels to a predefined set and rejects unknown labels.
+* Create an evaluation script that compares zero-shot classification results with ground-truth labels using precision, recall, and F1-score.
+* Implement an abstention mechanism that returns an explicit unknown result when evidence is insufficient or confidence requirements are not met.
+* Write tests for zero-shot prompts using ambiguous, multilingual, empty, and out-of-domain inputs.
+
+**Few-Shot Prompting**
+* Implement a few-shot prompt builder that inserts configurable examples before the user query.
+* Build an example-selection utility that chooses representative examples under a maximum token budget.
+* Create a test harness that compares zero-shot and few-shot performance on the same held-out dataset.
+* Implement a utility that detects duplicate or contradictory demonstrations in a prompt example set.
+* Write tests that measure output variation when few-shot examples are reordered.
+
+**Chain-of-Thought Prompting**
+* Implement a task-decomposition workflow that separates problem interpretation, computation, validation, and final response generation.
+* Build a numerical question-answering utility that delegates arithmetic to deterministic code and asks the LLM to interpret the result.
+* Create an intermediate-output validator that prevents invalid stage results from entering subsequent stages.
+* Implement a comparison harness for direct-answer and decomposed prompting using accuracy, latency, and token cost.
+* Write tests that verify a multi-step workflow handles missing intermediate values, failed calculations, and inconsistent results.
+
+**Role-Based and System Prompting**
+* Implement a prompt assembler that separates trusted system instructions from user messages and untrusted retrieved content.
+* Build a system-prompt configuration utility that supports role, tone, scope, prohibited actions, and response format.
+* Create a policy-conflict test suite that checks assistant behavior when user requests conflict with system instructions.
+* Implement prompt-configuration versioning and load a specific approved version by identifier.
+* Write tests that verify user-provided content cannot modify trusted system configuration.
+
+**Structured Output and JSON Prompting**
+* Implement a JSON-output prompt builder that accepts a schema and a task description.
+* Build a validator that checks generated JSON against a schema and rejects missing fields, unexpected fields, and invalid types.
+* Create a structured extraction function that represents unknown source values as null rather than inventing them.
+* Implement bounded repair-and-retry logic for malformed outputs with a maximum attempt count.
+* Write tests for nested objects, arrays, enums, optional fields, malformed JSON, and schema-version changes.
+* Build a business-rule validator that checks cross-field consistency after JSON schema validation.
+
+**Prompt Templates**
+* Implement a prompt-template engine with named variables, required-variable validation, and safe substitution.
+* Build a template registry that stores template identifiers, versions, owners, and change history.
+* Create automated tests for template rendering with missing variables, empty strings, long documents, and special characters.
+* Implement a compatibility checker that detects variable-name changes between template versions.
+* Build a template-composition utility that combines reusable instruction fragments while preserving their intended order.
+* Write a test that ensures untrusted variable values remain data rather than becoming trusted application instructions.
+
+**Prompt Chaining**
+* Implement a multi-stage prompt chain for document extraction, validation, summarization, and final output generation.
+* Build a workflow executor that supports bounded retries, per-stage timeouts, and failure reporting.
+* Implement checkpointing so a workflow can resume from the last successful stage without repeating completed work.
+* Create a chain-evaluation utility that records the input, output, latency, and token cost of every stage.
+* Write tests for intermediate failures, invalid stage outputs, duplicate execution, and recovery.
+* Implement parallel execution for independent prompt stages and measure the effect on total latency.
+
+**Context Engineering**
+* Implement a context assembler that combines system instructions, conversation history, retrieved documents, and the current user query.
+* Build a token-budget allocator that reserves configurable capacity for each context section and generated output.
+* Create a context-ranking function that prioritizes evidence using relevance, freshness, source authority, and access permissions.
+* Implement a history summarizer that preserves important facts while removing redundant conversation turns.
+* Write tests that verify context truncation never removes mandatory instructions or authorization constraints.
+* Build a context-isolation test that prevents documents from one tenant from being included in another tenant's prompt.
+
+**Prompt Versioning and Management**
+* Implement a prompt registry that stores immutable versions and retrieves prompts by identifier and version.
+* Build a prompt-diff utility that compares two versions and highlights changes in instructions, variables, and output requirements.
+* Create a CI test that evaluates candidate prompts against a golden dataset and blocks releases when required metrics regress.
+* Implement a staged rollout configuration that supports canary percentages and rollback to an approved version.
+* Build an audit record containing prompt version, model version, evaluation result, and deployment metadata.
+* Write tests ensuring production requests can be traced to the exact prompt version used.
+
+**Prompt Injection and Jailbreak Prevention**
+* Implement a prompt-construction utility that clearly separates trusted instructions from untrusted user and document content.
+* Build an adversarial test dataset containing direct injection, indirect injection, instruction override attempts, and data-exfiltration requests.
+* Create a tool-authorization layer that validates permissions independently of model-generated instructions.
+* Implement an output scanner that detects configured sensitive-data patterns before a response is returned.
+* Write tests that verify a malicious retrieved document cannot grant access to protected tools or data.
+* Build a security evaluation report that calculates attack success rate, false-positive rate, and false-negative rate for a test suite.
+* Implement approval requirements for high-impact tool calls, regardless of whether the model requests them.
+
+**Prompt Evaluation and Optimization**
+* Implement a prompt-evaluation runner that compares multiple versions against the same labeled test dataset.
+* Build a metric calculator that reports task accuracy, structured-output validity, latency, token consumption, and estimated cost.
+* Create a regression detector that compares candidate-prompt results with a baseline and flags unacceptable degradation.
+* Implement an evaluation harness that runs paraphrased inputs to measure prompt robustness.
+* Build a human-review workflow that records evaluator judgments and adjudicates disagreements.
+* Create a dataset-splitting utility that prevents prompt optimization examples from leaking into the final holdout test set.
+* Implement a confidence-interval report for repeated evaluations of non-deterministic model outputs.
+
+**Guardrails and Output Validation**
+* Implement an input-validation layer that checks size limits, required fields, supported formats, and prohibited request patterns.
+* Build an output-validation pipeline that combines schema validation, deterministic business rules, and sensitive-data screening.
+* Create a safe SQL-generation workflow that validates query structure, enforces read-only restrictions, and checks database permissions before execution.
+* Implement a guardrail decision engine that supports allow, block, transform, and human-review outcomes.
+* Write tests that verify safe failure behavior when a validation or policy service is unavailable.
+* Build metrics for guardrail block rates, false positives, bypass attempts, and human-escalation frequency.
+* Implement an audit logger that records validation outcomes and policy identifiers without unnecessarily storing sensitive prompt content.

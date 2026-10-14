@@ -1,0 +1,116 @@
+**Prompt Engineering Fundamentals**
+* How would you design a prompt for a task with ambiguous requirements?
+* How do instruction clarity, context, constraints, and output format influence response quality?
+* How would you reduce hallucinations through prompt design without changing the model?
+* How would you decide whether to improve a prompt, add retrieval, or fine-tune a model?
+* How do you design prompts that work consistently across different input variations?
+* How would you handle conflicting requirements in a prompt?
+* How can prompt length affect cost, latency, and model performance?
+
+**Zero-Shot Prompting**
+* How would you design a zero-shot prompt for classifying customer-support tickets into predefined categories?
+* What factors determine whether zero-shot prompting will work well for a new task?
+* How would you handle an input that does not fit any predefined classification category?
+* How can you improve zero-shot performance through clearer instructions and output constraints?
+* How would you evaluate zero-shot prompting against a traditional classification model?
+* What are the risks of relying on zero-shot prompting for domain-specific terminology?
+
+**Few-Shot Prompting**
+* How do you select representative examples for few-shot prompting?
+* How can inconsistent examples negatively affect model behavior?
+* How does the order of examples influence few-shot performance?
+* How would you handle examples that cover only common cases but omit rare cases?
+* How do you balance the number of examples against context-window and token-cost constraints?
+* How would you determine whether few-shot prompting is sufficient or fine-tuning is required?
+
+**Chain-of-Thought Prompting**
+* How would you structure a prompt for a complex task that requires multiple dependent steps?
+* What is the difference between a reasoning trace, an explanation, and a verified final answer?
+* Why should intermediate reasoning not automatically be treated as evidence of correctness?
+* How would you validate a model's answer to a multi-step calculation?
+* When might decomposition into smaller tasks be more reliable than a single reasoning prompt?
+* How can reasoning-oriented prompts increase token usage and latency?
+* How would you evaluate multi-step task accuracy independently of explanation quality?
+
+**Role-Based and System Prompting**
+* How would you design system instructions for an enterprise customer-support assistant?
+* How should system prompts define the assistant's responsibilities, limitations, tone, and output requirements?
+* How would you handle conflicts between system instructions and user requests?
+* How can role instructions improve consistency without guaranteeing factual accuracy?
+* How would you separate business rules from reusable role and style instructions?
+* Why should authorization and access control be enforced outside the system prompt?
+* How would you test whether an assistant follows its system instructions across different user inputs?
+
+**Structured Output and JSON Prompting**
+* How would you prompt an LLM to extract named fields from an unstructured invoice?
+* What is the difference between JSON mode, schema-constrained output, and ordinary prompt instructions?
+* How would you handle missing, null, optional, and incorrectly typed fields?
+* How can enums, required fields, and nested schemas improve structured output reliability?
+* How would you handle malformed JSON returned by a model?
+* Why is syntactically valid JSON not sufficient for financial or business processing?
+* How would you design a retry strategy for invalid structured outputs without creating an infinite loop?
+
+**Prompt Templates**
+* How would you design reusable templates for multiple business workflows?
+* How would you prevent missing or incorrectly escaped variables in a prompt template?
+* How would you manage optional sections and conditional instructions in templates?
+* How can template composition improve maintainability across a large AI application?
+* How would you test a template with empty, unusually long, and adversarial inputs?
+* How would you prevent untrusted variable values from being interpreted as trusted instructions?
+* How would you support different template versions for different model providers?
+
+**Prompt Chaining**
+* How would you divide document processing into extraction, validation, summarization, and final response steps?
+* How should outputs from one prompt be validated before being passed to the next step?
+* How would you handle a failure in the middle of a multi-step prompt chain?
+* When would parallel prompt execution be more efficient than sequential execution?
+* How do you manage intermediate state, retries, and idempotency in a prompt chain?
+* How would you measure the cumulative latency and cost of a multi-step workflow?
+* How would you prevent errors in an early stage from propagating through subsequent stages?
+
+**Context Engineering**
+* How would you select relevant context from a large document repository?
+* How do context selection, ordering, summarization, and truncation affect answer quality?
+* How would you allocate a token budget across system instructions, user input, history, retrieved documents, and output?
+* How do retrieval-augmented generation and context engineering work together?
+* How would you preserve important user preferences across a long-running conversation?
+* How would you distinguish trusted instructions from untrusted retrieved documents?
+* How would you evaluate whether adding more context actually improves the answer?
+
+**Prompt Versioning and Management**
+* How would you manage prompt versions across development, testing, staging, and production?
+* What metadata should be associated with a prompt, including model version, owner, test results, and change history?
+* How would you compare the performance of two prompt versions using the same evaluation dataset?
+* How would you implement prompt rollback after a production regression?
+* How can prompt changes be incorporated into a CI/CD pipeline?
+* How would you manage prompt versions when multiple applications share a common template?
+* How would you protect sensitive information in prompt logs and evaluation datasets?
+
+**Prompt Injection and Jailbreak Prevention**
+* How would you identify direct and indirect prompt injection in an LLM application?
+* Why can retrieved documents, web pages, and tool outputs create indirect prompt-injection risks?
+* How would you reduce the impact of malicious instructions embedded in retrieved content?
+* How should an application enforce tool permissions independently of model instructions?
+* How would you test prompt-injection defenses using adversarial inputs?
+* Why are keyword filters alone insufficient for reliable jailbreak prevention?
+* How would you prevent an LLM from revealing secrets included in its context?
+* How would you handle an attempted jailbreak without disrupting legitimate requests?
+
+**Prompt Evaluation and Optimization**
+* How would you build a golden dataset for evaluating prompts?
+* How do exact-match, semantic similarity, task-specific metrics, and human evaluation differ?
+* How would you optimize a prompt while avoiding overfitting to the evaluation dataset?
+* How would you evaluate consistency across paraphrased inputs?
+* How can an LLM-as-a-judge approach help, and what are its limitations?
+* How would you design regression tests for prompts that produce non-deterministic responses?
+* How would you compare prompt quality, token cost, latency, and failure rate?
+* How would you determine whether a prompt improvement is statistically meaningful?
+
+**Guardrails and Output Validation**
+* How would you implement input and output validation for a customer-facing AI assistant?
+* How would you validate model-generated SQL, code, or business commands before execution?
+* How would you design layered guardrails using schemas, policies, classifiers, and deterministic business rules?
+* How would you handle a response that passes schema validation but violates a business rule?
+* How would you prevent sensitive information from being returned in model outputs?
+* How would you balance guardrail strictness with usability and false-positive rates?
+* How would you monitor guardrail failures and use them to improve the system?

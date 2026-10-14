@@ -1,0 +1,30 @@
+* Explain the internal architecture of DispatcherServlet and its collaboration with other Spring MVC components.
+* How does Spring MVC select a HandlerMapping when multiple mappings are configured?
+* How does HandlerAdapter invoke controller methods with different argument types?
+* Explain the role of HandlerMethodArgumentResolver in Spring MVC.
+* How does Spring MVC resolve controller method return values using HandlerMethodReturnValueHandler?
+* How does the RequestMappingHandlerMapping component detect and register controller methods?
+* How does Spring MVC resolve ambiguous request mappings?
+* How does Spring MVC process @RequestBody and convert JSON into Java objects internally?
+* How does HttpMessageConverter selection depend on the request Content-Type and Accept headers?
+* How would you implement a custom HttpMessageConverter in Spring MVC?
+* How would you create a custom HandlerMethodArgumentResolver?
+* How would you implement a custom annotation for controller method parameters?
+* How does Spring MVC handle asynchronous request processing using Callable, DeferredResult, and WebAsyncTask?
+* What is the difference between synchronous and asynchronous request processing in Spring MVC?
+* How would you manage thread pools and timeouts for asynchronous MVC requests?
+* How does Spring MVC handle multipart requests, and what are the implications for memory and disk usage?
+* How would you prevent excessive memory consumption when processing large file uploads?
+* How do servlet filters, Spring MVC interceptors, and controller advice differ in execution order and responsibility?
+* How would you design consistent exception handling across REST endpoints and server-rendered views?
+* How does Spring MVC integrate with Bean Validation and custom validators?
+* How would you prevent over-posting or mass-assignment vulnerabilities when binding request parameters to objects?
+* How would you implement content negotiation for JSON, XML, and HTML responses?
+* How would you optimize a Spring MVC application experiencing high request latency?
+* How would you diagnose thread starvation in a Spring MVC application running on Tomcat?
+* How do Spring MVC controllers behave under concurrent requests, and what thread-safety issues can arise?
+* How would you implement request tracing and correlation IDs across filters, interceptors, and controllers?
+* How would you design API versioning in a Spring MVC application?
+* How would you handle backward compatibility when changing request and response DTOs?
+* How would you test Spring MVC controllers, interceptors, validation, and exception handling independently?
+* How would you migrate a legacy Spring MVC application to Spring Boot while minimizing behavioral changes?

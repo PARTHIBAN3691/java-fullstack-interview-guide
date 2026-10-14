@@ -1,0 +1,30 @@
+* Explain how Angular compiles templates into executable instructions.
+* What is Angular's template type checking, and how does strictTemplates help?
+* How does Angular detect and update changes in template-bound values?
+* How do templates interact with Angular change detection?
+* How does OnPush change detection affect template updates?
+* What is the difference between Default and OnPush change detection strategies?
+* How can mutating an object affect a child component using OnPush?
+* How do Angular Signals trigger template updates?
+* How do you avoid expensive computations during template evaluation?
+* Why should complex business logic be avoided in Angular templates?
+* How does the async pipe manage subscriptions and cleanup?
+* How does Angular handle event listeners declared in templates?
+* How do embedded views work with ng-template?
+* Explain the role of TemplateRef and ViewContainerRef.
+* How do you create and insert embedded views dynamically?
+* What is the difference between ViewContainerRef.createEmbeddedView() and createComponent()?
+* How do you pass context values to a dynamically rendered template?
+* How do you implement reusable template fragments across components?
+* What are the limitations of using ng-content for dynamic content?
+* How do content projection and view encapsulation interact?
+* How do template variables differ from component class properties?
+* How do you resolve template type errors involving nullable values?
+* What causes an ExpressionChangedAfterItHasBeenCheckedError in template-driven code?
+* How do you design accessible dynamic templates?
+* How do you render large collections efficiently using Angular control flow?
+* How do you optimize templates that contain nested loops and conditional blocks?
+* How do Angular's @defer blocks improve template loading performance?
+* What is the difference between @defer, lazy-loaded routes, and dynamic component loading?
+* How do you test Angular templates using component fixtures?
+* How do you diagnose and fix template performance issues in a large Angular application?

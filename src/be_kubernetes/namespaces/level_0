@@ -1,0 +1,30 @@
+* What is a Namespace in Kubernetes?
+* Why are Namespaces used in Kubernetes?
+* What is the default Namespace in Kubernetes?
+* What are the default Namespaces created in a Kubernetes cluster?
+* What is the purpose of the kube-system Namespace?
+* What is the purpose of the kube-public Namespace?
+* What is the purpose of the kube-node-lease Namespace?
+* How do you list all Namespaces in a Kubernetes cluster?
+* How do you create a Namespace using kubectl?
+* How do you create a Namespace using a YAML manifest?
+* How do you delete a Namespace?
+* How do you deploy an application into a specific Namespace?
+* How do you view Pods in a particular Namespace?
+* What is the purpose of the metadata.namespace field?
+* What happens when a Namespace is deleted?
+* Can two Namespaces contain resources with the same name?
+* Are Node resources scoped to a Namespace?
+* Are Pods scoped to a Namespace?
+* Are PersistentVolumes scoped to a Namespace?
+* What is the difference between a Namespace and a Node?
+* What is the difference between a Namespace and a Kubernetes cluster?
+* What is the purpose of the --namespace option in kubectl?
+* How do you set a default Namespace for kubectl commands?
+* What is a namespace-scoped resource?
+* What is a cluster-scoped resource?
+* How do Namespaces help organize Kubernetes resources?
+* Can a Service in one Namespace communicate with a Pod in another Namespace?
+* How does Kubernetes DNS resolve Services across Namespaces?
+* What is a ResourceQuota in Kubernetes?
+* What is a LimitRange in Kubernetes?

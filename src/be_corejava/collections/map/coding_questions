@@ -1,0 +1,36 @@
+# Core Java — Collections — Map
+## Coding Questions
+
+### Level 0 — Easy
+* Write a Java program to create a HashMap of employee IDs and employee names.
+* Write a program to insert, retrieve, update, and remove entries from a HashMap.
+* Write a program to check whether a given key exists in a Map.
+* Write a program to iterate through a Map using `entrySet()`.
+* Write a program to count the frequency of each character in a String using a Map.
+* Write a program to count the frequency of each word in a sentence.
+* Write a program to sort a Map by its keys.
+* Write a program to find the key associated with a given value.
+
+### Level 1 — Medium
+* Write a program to sort a Map by value in ascending and descending order.
+* Write a program to merge two Maps and sum the values of duplicate keys.
+* Write a program to find duplicate elements in a List using a Map.
+* Write a program to group Employee objects by department using Streams.
+* Write a program to convert a List of Employee objects into a Map keyed by employee ID.
+* Write a program to handle duplicate keys while using `Collectors.toMap()`.
+* Write a program to find the first non-repeated character in a String using a Map.
+* Write a program to implement an LRU cache using LinkedHashMap.
+* Write a program to find the key with the maximum value in a Map.
+* Write a program to compare two Maps for equality.
+
+### Level 2 — Difficult
+* Implement a custom hash-based Map supporting `put()`, `get()`, `remove()`, collision handling, and resizing.
+* Implement a generic Map-copy utility that supports compatible source and destination types.
+* Write a thread-safe per-key counter using ConcurrentHashMap and atomic operations.
+* Implement a concurrent frequency counter for words from a large input dataset.
+* Design a bounded, thread-safe LRU cache with clearly defined concurrency behavior.
+* Given a large List of transactions, group them by customer ID and calculate the total amount for each customer.
+* Write a program to compare two Maps as multisets of entries when values can repeat.
+* Implement a Map-based index that supports efficient lookups by multiple fields.
+* Write a program to find the top K keys with the highest values without sorting the entire Map.
+* Write a JMH benchmark comparing HashMap, LinkedHashMap, TreeMap, and ConcurrentHashMap under different workloads.

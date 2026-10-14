@@ -1,0 +1,30 @@
+* Write a Java class representing a business event with an event ID, event type, timestamp, and payload.
+* Implement a simple event publisher and listener using the Spring application event mechanism.
+* Write a Spring Boot service that publishes an OrderCreated event after an order is created.
+* Implement a Kafka producer in Java that publishes an event to a topic.
+* Implement a Kafka consumer in Java that reads events from a topic.
+* Create a Spring Kafka consumer that processes order events and logs their details.
+* Write a Java program that simulates a publish-subscribe messaging system.
+* Implement an in-memory message broker that supports multiple subscribers per topic.
+* Write a Java consumer that ignores duplicate events using a processed-event ID store.
+* Implement an idempotent payment event handler using a database uniqueness constraint.
+* Write a Kafka consumer that handles processing exceptions with a retry policy.
+* Implement a dead-letter topic strategy for events that repeatedly fail processing.
+* Write a Java utility that retries failed event processing using exponential backoff and jitter.
+* Implement a consumer that preserves per-customer event ordering.
+* Write a Java program that partitions events by customer ID.
+* Implement a bounded producer-consumer queue that applies backpressure when the queue is full.
+* Write a Spring Boot application that publishes events using Kafka and validates event payloads.
+* Implement an event schema version field and support two versions of the same event.
+* Write a Java consumer that safely handles unknown optional event fields.
+* Implement the transactional outbox pattern using Spring Data JPA and a relational database.
+* Write a scheduled Java job that publishes pending outbox records to a message broker.
+* Implement an outbox publisher that marks records as published and safely handles retries.
+* Write a Java program that simulates a saga for order creation, payment, and inventory reservation.
+* Implement compensation logic when a distributed workflow fails after payment authorization.
+* Write a Java program that rebuilds a materialized view by replaying stored events.
+* Implement an event deduplication mechanism using event IDs and persistent storage.
+* Write a Kafka consumer that commits offsets only after successful processing.
+* Implement a consumer-lag monitoring component that measures the difference between the latest and committed offsets.
+* Write integration tests for a Kafka producer and consumer using a test broker or Testcontainers.
+* Implement an end-to-end test that verifies an order event eventually updates inventory and order status correctly.

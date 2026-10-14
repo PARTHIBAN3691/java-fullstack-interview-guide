@@ -1,0 +1,15 @@
+* How would you design a CI/CD pipeline for a large enterprise application with 20 microservices?
+* How would you ensure that a production deployment is approved, auditable, and compliant with enterprise policies?
+* How would you prevent secrets from being exposed in source code, build logs, or Docker images?
+* How would you implement zero-downtime deployments for a Spring Boot application?
+* How would you handle a database schema change when multiple application versions run simultaneously during a rolling deployment?
+* How would you design a pipeline that supports parallel builds, automated testing, security scans, and artifact promotion?
+* How would you manage deployments across multiple regions or cloud environments?
+* How would you investigate a deployment that succeeds in the pipeline but fails at runtime?
+* How would you enforce quality gates so that vulnerable or poorly tested code cannot reach production?
+* How would you implement rollback or roll-forward strategies for a microservices deployment?
+* How would you reduce pipeline execution time for a large monorepo?
+* How would you manage infrastructure drift across development, staging, and production?
+* How would you implement disaster recovery and validate recovery procedures?
+* How would you design centralized logging, metrics, tracing, and alerting for distributed applications?
+* How would you handle a compromised CI/CD runner or leaked deployment credential?

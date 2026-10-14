@@ -1,0 +1,30 @@
+* What is a Dockerfile?
+* Why is a Dockerfile required for a Java application?
+* What is the difference between a Dockerfile and a Docker image?
+* What is the difference between a Dockerfile and docker-compose.yml?
+* What is the purpose of the FROM instruction?
+* What is the purpose of the RUN instruction?
+* What is the purpose of the COPY instruction?
+* What is the purpose of the ADD instruction?
+* What is the difference between COPY and ADD?
+* What is the purpose of the WORKDIR instruction?
+* What is the purpose of the CMD instruction?
+* What is the purpose of the ENTRYPOINT instruction?
+* What is the difference between CMD and ENTRYPOINT?
+* What is the purpose of the EXPOSE instruction?
+* Does the EXPOSE instruction publish a container port to the host?
+* What is the purpose of the ENV instruction?
+* What is the purpose of the ARG instruction?
+* What is the difference between ARG and ENV?
+* What is the purpose of the USER instruction?
+* What is the purpose of the VOLUME instruction?
+* What is the purpose of the LABEL instruction?
+* What is the purpose of the .dockerignore file?
+* What happens when you execute docker build?
+* What is a Docker build context?
+* What is a Docker image layer?
+* What is Docker image caching?
+* How do you build a Docker image using a Dockerfile?
+* How do you specify a custom Dockerfile name during a build?
+* How do you run a Java JAR file inside a Docker container?
+* What are the basic best practices for writing a Dockerfile?

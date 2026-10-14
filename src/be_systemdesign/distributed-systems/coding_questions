@@ -1,0 +1,30 @@
+* Write a Java program that simulates communication between two distributed nodes using HTTP.
+* Implement a heartbeat mechanism that detects inactive nodes using scheduled tasks.
+* Write a Java program that simulates node failure and recovery in a cluster.
+* Implement a simple round-robin load balancer across multiple service instances.
+* Implement a health-aware load balancer that excludes unhealthy nodes.
+* Write a retry utility using exponential backoff and jitter.
+* Implement a circuit breaker with CLOSED, OPEN, and HALF_OPEN states.
+* Write a Java method that executes an operation with a configurable timeout.
+* Implement an idempotency-key mechanism for processing payment requests.
+* Write a message consumer that safely handles duplicate messages.
+* Implement a retry queue for messages that fail processing.
+* Write a Java program that preserves message order for each customer ID.
+* Implement a basic distributed counter using multiple local counters and aggregation.
+* Simulate primary-replica replication and demonstrate replication lag.
+* Implement a quorum-read simulation across five replicas.
+* Write a Java program that uses Lamport logical clocks to order distributed events.
+* Implement vector clocks and detect concurrent updates between two nodes.
+* Simulate leader election among nodes using unique node IDs.
+* Implement a lease-based distributed lock simulation with expiration.
+* Write a Java program that uses fencing tokens to reject stale lock holders.
+* Implement a simplified Raft leader-election simulation.
+* Write a Java program that simulates a network partition and different node behaviors.
+* Implement a producer-consumer workflow using a message queue abstraction.
+* Write a Java service that uses the transactional outbox pattern to persist business data and events atomically.
+* Implement a saga workflow with compensating actions for failed steps.
+* Write a Java program that simulates eventual consistency between two replicas.
+* Implement a basic grow-only set CRDT and merge states from two nodes.
+* Write a distributed rate limiter using a token-bucket algorithm.
+* Implement a partitioning strategy that consistently routes keys to distributed nodes.
+* Write integration tests that verify idempotency, retry behavior, and recovery after simulated node failures.

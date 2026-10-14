@@ -1,0 +1,119 @@
+**Enterprise CI/CD Platform**
+* Write a Python utility that parses pipeline execution records and calculates queue time, execution time, failure rate, and median lead time.
+* Implement a pipeline dependency scheduler that runs independent stages concurrently while respecting prerequisite stages.
+* Write a validator that checks a pipeline configuration against required stages, artifact immutability rules, and approval policies.
+* Implement an automated retry policy with bounded retries, exponential backoff, and explicit handling of non-retryable failures.
+
+**Zero-Downtime Deployment Architecture**
+* Implement a deployment controller that gradually shifts traffic between stable and candidate versions based on configurable health thresholds.
+* Write a script that verifies readiness, drains connections, and safely removes an old application instance from service.
+* Implement a compatibility validator for application and database schema versions during phased releases.
+* Write automated tests that simulate a failed canary, verify rollback initiation, and confirm that stable traffic is restored.
+
+**Multi-Region Deployment Platform**
+* Implement a region health evaluator that selects eligible deployment targets based on health, capacity, and rollout policy.
+* Write a failover decision function that considers health checks, replication lag, and configured recovery objectives.
+* Implement a deployment orchestrator that limits simultaneous regional releases and stops propagation when error thresholds are exceeded.
+* Write tests for regional failure, delayed health signals, recovery, and failback without duplicate deployment actions.
+
+**Kubernetes Platform for Multiple Teams**
+* Write Kubernetes manifests that enforce namespace resource quotas, default resource requests and limits, and workload availability requirements.
+* Implement a policy-as-code rule that rejects privileged containers, disallowed registries, and missing resource limits.
+* Write a script that audits namespaces for missing RBAC restrictions, network policies, and ownership metadata.
+* Implement an automated capacity report that identifies pending pods, resource pressure, and noisy-neighbor risks from cluster data.
+
+**Secure DevSecOps Pipeline**
+* Write a pipeline validation tool that requires unit tests, dependency scanning, image scanning, signing, and deployment verification.
+* Implement a script that detects likely secrets in repository changes and safely redacts sensitive values from findings.
+* Write an artifact verification utility that validates image digests, signatures, and expected provenance metadata before deployment.
+* Implement a risk-based vulnerability gate using severity, exploitability, exception expiry, and remediation deadlines.
+
+**GitOps-Based Deployment Architecture**
+* Write a validator that checks GitOps manifests for image pinning, environment-specific configuration, and required security policies.
+* Implement a reconciliation-status monitor that detects prolonged drift, repeated failures, and missing desired resources.
+* Write a promotion tool that updates an environment manifest using an immutable artifact digest and creates an auditable change record.
+* Implement tests that verify a failed deployment halts promotion and a rollback restores the previously approved configuration.
+
+**Enterprise Observability Platform**
+* Implement a telemetry ingestion simulator that applies backpressure, prioritizes critical signals, and records dropped-event metrics.
+* Write a metric-label validator that detects unbounded or high-cardinality labels before ingestion.
+* Implement an alert evaluator that uses rolling windows, SLO thresholds, and suppression rules to reduce noisy alerts.
+* Write a correlation utility that links trace IDs, service identifiers, deployment versions, and incident timestamps across telemetry records.
+
+**Centralized Logging for Microservices**
+* Implement a structured logging library that consistently attaches service name, environment, trace ID, and correlation ID.
+* Write a log-processing pipeline that validates event schemas, redacts sensitive fields, and routes records by retention class.
+* Implement a bounded log buffer with retry, backpressure, disk-capacity protection, and duplicate-event handling.
+* Write tests for malformed logs, ingestion outages, replay, retention expiry, and sensitive-field redaction.
+
+**Highly Available Production Platform**
+* Implement a health-based traffic router that removes unhealthy instances and restores them only after sustained recovery.
+* Write a circuit breaker with closed, open, and half-open states and configurable failure thresholds.
+* Implement a load-shedding component that prioritizes critical requests when service capacity is exhausted.
+* Write chaos tests that simulate instance loss, dependency timeouts, and availability-zone failure while measuring recovery behavior.
+
+**Disaster Recovery for Cloud Workloads**
+* Implement a recovery-priority planner that maps application dependencies to RTO, RPO, and recovery order.
+* Write a backup verification utility that checks backup age, integrity metadata, encryption status, and restore-test results.
+* Implement a recovery workflow that validates infrastructure readiness before starting dependent applications.
+* Write a recovery validation tool that compares restored records and application health against expected recovery objectives.
+
+**Multi-Cloud DevOps Strategy**
+* Implement an infrastructure provisioning interface that supports provider-specific implementations behind a common application-facing contract.
+* Write a configuration validator that detects cloud-specific security-policy gaps across multiple provider environments.
+* Implement a deployment planner that selects eligible regions based on provider availability, capacity, and policy constraints.
+* Write contract tests that verify equivalent provisioning behavior while preserving provider-specific capabilities and error handling.
+
+**Internal Developer Platform**
+* Implement a service scaffolding CLI that generates a microservice with CI/CD, deployment configuration, health checks, and observability defaults.
+* Write a service-catalog validator that checks ownership, support contacts, dependencies, and production readiness metadata.
+* Implement a self-service provisioning API with authorization, request validation, idempotency, and audit events.
+* Write automated tests that verify golden-path templates remain compliant with platform policies as versions evolve.
+
+**Scalable Container Platform**
+* Implement a workload scaling simulator that considers utilization, startup delay, minimum replicas, maximum replicas, and cooldown periods.
+* Write a scheduler analysis utility that identifies why pods remain pending due to resource, affinity, taint, or topology constraints.
+* Implement a container image audit tool that detects mutable tags, outdated base images, and missing vulnerability or signature metadata.
+* Write resilience tests that simulate registry unavailability, node loss, and insufficient spare capacity during scale-out.
+
+**Automated Infrastructure Provisioning**
+* Write reusable Terraform modules for a production service with network segmentation, workload identity, encryption, and monitoring.
+* Implement a policy-as-code check that rejects unencrypted storage, public administrative access, and missing ownership tags.
+* Write a drift-reporting tool that compares declared infrastructure configuration with observed resource metadata.
+* Implement an idempotent recovery utility that reconciles partially created resources with infrastructure state without deleting unrelated resources.
+
+**Secure Secrets-Management Architecture**
+* Implement a secret-access wrapper that obtains short-lived credentials, caches them within safe limits, and refreshes them before expiry.
+* Write a rotation coordinator that updates credentials across dependent services and verifies successful adoption before revoking old credentials.
+* Implement a secrets audit processor that detects excessive access, expired exceptions, and anomalous access patterns without logging secret values.
+* Write tests for secret-service outages, token expiry, permission denial, rotation failure, and emergency credential revocation.
+
+**Self-Healing Production Platform**
+* Implement a remediation engine that maps health signals to approved actions with retry limits, cooldowns, and escalation paths.
+* Write a controller that verifies post-remediation health and automatically stops repeated unsuccessful recovery attempts.
+* Implement a dependency-aware health evaluator that distinguishes application failures from shared infrastructure failures.
+* Write simulation tests for restart loops, partial dependency outages, capacity exhaustion, and failed remediation rollback.
+
+**Low-Latency Deployment Architecture**
+* Implement a pipeline scheduler that runs independent stages concurrently and identifies the critical path.
+* Write a build-analysis tool that calculates cache hit rates, stage durations, queue times, and total pipeline latency.
+* Implement a dependency-aware test selector that determines which test suites must run after changes to a module.
+* Write a deployment optimization report that ranks bottlenecks by time saved, risk, and implementation effort.
+
+**Cloud Cost Optimization Strategy**
+* Implement a cloud cost allocation tool that distributes shared infrastructure costs using configurable usage and ownership metrics.
+* Write an anomaly detector that flags unexpected daily spend changes relative to historical baselines.
+* Implement a Kubernetes utilization report that compares resource requests and limits against observed usage.
+* Write a policy checker that evaluates budget thresholds and proposes safe actions without automatically disabling critical production resources.
+
+**CI/CD for Regulated Financial Applications**
+* Implement an immutable release evidence manifest containing source revision, dependency metadata, artifact digest, test results, approvals, and deployment identity.
+* Write a policy validator that checks segregation of duties, approval requirements, signed artifacts, and emergency-release expiry.
+* Implement an audit-event exporter that generates a verifiable deployment history without exposing secrets or sensitive customer data.
+* Write tests that verify unauthorized releases are blocked and authorized emergency releases generate complete evidence.
+
+**Enterprise DevOps Operating Model**
+* Implement a metrics aggregator that calculates deployment frequency, lead time, change failure rate, and recovery time from release and incident events.
+* Write a service ownership validator that detects missing team assignments, escalation contacts, SLOs, and runbooks.
+* Implement an error-budget calculator that evaluates rolling SLO compliance and identifies when a service should enter a release-restriction state.
+* Write a governance automation tool that tracks policy exceptions, accountable owners, expiry dates, and remediation status.

@@ -1,0 +1,30 @@
+* Your Spring Boot container cannot connect to a PostgreSQL container even though both containers are running. How would you investigate the root cause?
+* Your application connects to localhost:5432 inside the container, but the database is running in a separate container. How would you correct the configuration?
+* A Spring Boot service works when run directly on the host but fails when run inside Docker. How would you troubleshoot the networking difference?
+* Your Docker Compose application intermittently fails to resolve another service by name during startup. How would you investigate and fix the issue?
+* A container can resolve a database service name but receives connection refused errors. What would you check next?
+* A database container is accessible from the host even though you intended it to be internal only. How would you identify and remove the unintended exposure?
+* Two Java containers cannot communicate because they are connected to different user-defined bridge networks. How would you resolve this without weakening isolation unnecessarily?
+* Your Spring Boot application can access the internet but cannot connect to an internal service. How would you separate DNS, routing, and firewall issues?
+* A service becomes unreachable after its container is recreated with a different IP address. How would you make service communication resilient?
+* Your application is accessible from the host but not from another machine on the network. How would you troubleshoot port publishing, host binding, and firewall rules?
+* Two containers both use port 8080 internally. A team member reports a port conflict. How would you determine whether there is a real conflict and configure the host ports correctly?
+* Your Dockerized application needs to call an API running on the host machine. How would you configure this on Linux and Docker Desktop?
+* A reverse proxy returns HTTP 502 errors for a Spring Boot container. How would you determine whether the issue is network connectivity, the target port, or application readiness?
+* A container can connect to a service by IP address but not by service name. How would you investigate Docker DNS and network membership?
+* A Docker host runs out of available connections, and new requests to Java services begin failing. How would you investigate connection tracking, ephemeral ports, and connection pooling?
+* A Java application experiences intermittent timeouts when calling another container on the same host. How would you distinguish network latency from application saturation?
+* Containers on different hosts cannot communicate over an overlay network after a firewall update. Which ports and network paths would you verify?
+* Your team notices slow transfers between containers after changing the network configuration. How would you investigate MTU, packet loss, and retransmissions?
+* A container cannot access an external HTTPS API because of a custom DNS configuration. How would you identify whether DNS or TLS is causing the failure?
+* A Docker Compose project accidentally publishes the database port to every host interface. How would you secure the configuration and validate the fix?
+* A Spring Boot microservice can reach a database but can also reach services that should be isolated. How would you redesign network segmentation?
+* Your application fails to connect to a dependent service during startup but succeeds after restarting the application. How would you handle service readiness and connection retries?
+* Two Docker Compose projects use overlapping IP subnets and experience unexpected connectivity problems. How would you diagnose and redesign the address ranges?
+* After enabling a host firewall, outbound container requests stop working. How would you investigate Docker NAT and firewall rule interactions?
+* Your Java service runs in a container with host networking and unexpectedly conflicts with another service's port. How would you resolve the conflict and evaluate bridge networking?
+* A container can communicate with IPv4 endpoints but fails to reach an IPv6-only service. How would you troubleshoot address-family and routing configuration?
+* Your microservices require encrypted communication, but they currently communicate over plain HTTP on a shared bridge network. How would you introduce TLS and validate certificate trust?
+* A production deployment introduces a new network and the application loses access to a shared database. How would you diagnose network attachment and DNS changes?
+* Your Spring Boot service has many outbound connections in TIME_WAIT and experiences intermittent failures. How would you investigate connection lifecycle, pooling, and port usage?
+* You need to prove that a production database is not publicly reachable while remaining accessible to authorized application containers. How would you test and document the network controls?

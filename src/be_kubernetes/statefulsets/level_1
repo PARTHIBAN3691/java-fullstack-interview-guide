@@ -1,0 +1,30 @@
+* How do you create a StatefulSet for a MySQL database?
+* How do you configure a headless Service for a StatefulSet?
+* How do you configure persistent storage using volumeClaimTemplates?
+* How do you ensure that each StatefulSet replica gets its own PVC?
+* How do you scale a StatefulSet from three replicas to five replicas?
+* How does Kubernetes maintain stable Pod names after rescheduling?
+* How do you configure resource requests and limits for StatefulSet Pods?
+* How do you configure readiness and liveness probes for a StatefulSet?
+* How do you configure startup probes for a database StatefulSet?
+* How do you configure environment variables for StatefulSet containers?
+* How do you mount Kubernetes Secrets into StatefulSet Pods?
+* How do you configure a StatefulSet to use a specific StorageClass?
+* How do you configure storage expansion for StatefulSet PVCs?
+* How do you perform a rolling update of a StatefulSet?
+* How do you control the order in which StatefulSet Pods are updated?
+* How does partitioned rolling update work in a StatefulSet?
+* How do you roll back a failed StatefulSet update?
+* What happens when a StatefulSet Pod fails its readiness probe?
+* How do you troubleshoot a StatefulSet Pod stuck in Pending?
+* How do you troubleshoot a StatefulSet Pod stuck in CrashLoopBackOff?
+* How do you recover a StatefulSet Pod when its persistent volume is unavailable?
+* How do you configure anti-affinity for StatefulSet replicas?
+* How do you distribute StatefulSet Pods across availability zones?
+* How do you use topology spread constraints with StatefulSets?
+* How do you configure graceful shutdown for StatefulSet applications?
+* How do you prevent a StatefulSet update from disrupting database availability?
+* How do you configure backup and restore for StatefulSet data?
+* How do you delete a StatefulSet without deleting its persistent volumes?
+* How do you migrate a StatefulSet to a different StorageClass?
+* How do you monitor the health and storage usage of a StatefulSet?

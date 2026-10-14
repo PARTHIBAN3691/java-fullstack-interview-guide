@@ -1,0 +1,30 @@
+* Write a Java Kafka producer configured with acks=all, retries, and idempotence enabled.
+* Implement a Spring Boot Kafka consumer that processes a record and commits its offset only after successful processing.
+* Write a Spring Kafka listener using manual acknowledgment.
+* Implement an idempotent consumer that records processed event IDs in a database before applying business changes.
+* Write a Java producer configuration that enables Kafka transactions.
+* Implement a transactional producer that publishes related records to two Kafka topics atomically.
+* Write a Spring Boot Kafka service that consumes a record and publishes the result using a Kafka transaction.
+* Implement a Kafka consumer configured with isolation.level=read_committed.
+* Write a test proving that an aborted Kafka transaction is not visible to a read_committed consumer.
+* Implement a producer retry strategy that handles transient broker failures while preserving ordering requirements.
+* Write a Java utility that generates and propagates a unique business idempotency key.
+* Implement a database uniqueness constraint that prevents the same Kafka event from being applied twice.
+* Write a Spring Boot consumer that stores an event ID and business update in the same database transaction.
+* Implement the transactional outbox pattern using Spring Boot, JPA, and Kafka.
+* Write an outbox publisher that retries unsent events without losing records after application restarts.
+* Implement an inbox table pattern that detects previously processed Kafka event IDs.
+* Write an integration test that simulates a consumer failure after a database update but before offset acknowledgment.
+* Implement a consumer that handles duplicate records without repeating the business operation.
+* Write Java configuration for an idempotent producer with a suitable max.in.flight.requests.per.connection setting.
+* Implement a transactional Kafka listener that publishes output records and commits consumed offsets atomically.
+* Write a Spring Kafka error handler that retries transient failures and routes permanent failures to a Dead Letter Topic.
+* Implement a consumer rebalance listener that handles partition revocation and pending offset commits safely.
+* Write a Kafka integration test that verifies at-least-once processing after a simulated consumer restart.
+* Implement a test that publishes duplicate event IDs and verifies that the database business operation occurs only once.
+* Write a Java service that safely replays historical Kafka events without repeating completed financial transactions.
+* Implement an idempotent REST client wrapper that uses a business idempotency key when calling a downstream API.
+* Write a Kafka producer test that simulates retries and checks for duplicate records with idempotence enabled.
+* Implement a monitoring component that tracks consumer processing failures, retry counts, and committed offsets.
+* Write a Java workflow that records an external API operation as pending before making the call and reconciles uncertain outcomes.
+* Implement an end-to-end test that verifies message durability, duplicate handling, and business-state consistency across Kafka and a database.

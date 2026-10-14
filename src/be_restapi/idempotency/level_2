@@ -1,0 +1,30 @@
+* How would you design a distributed idempotency mechanism for a high-throughput payment platform?
+* How would you guarantee that concurrent requests with the same idempotency key trigger only one business operation?
+* What race conditions can occur when two application instances process the same idempotency key?
+* How would you use unique constraints, row-level locking, or atomic operations to prevent duplicate processing?
+* What are the trade-offs between pessimistic locking and optimistic concurrency control for idempotency?
+* How would you ensure the idempotency record and business transaction are committed atomically?
+* How would you handle a database commit succeeding while the application loses its connection before receiving confirmation?
+* How would you recover when a service crashes after performing a business operation but before marking the idempotency record as completed?
+* How would you design idempotency when the business operation includes an external payment gateway call?
+* Why is a database transaction alone insufficient to guarantee exactly-once execution across external systems?
+* How would you combine idempotency keys with the transactional outbox pattern?
+* How would you make message consumers idempotent when messages can be delivered more than once?
+* How would you design idempotent event processing across multiple microservices?
+* How would you handle duplicate messages when a consumer commits its database transaction but fails before acknowledging the message?
+* How would you coordinate idempotency across an API service, payment service, and ledger service?
+* How would you handle an external provider that does not support idempotency keys?
+* How would you reconcile an uncertain payment outcome after a network timeout?
+* How would you prevent duplicate financial ledger entries when processing repeated payment events?
+* How would you handle idempotency when a request triggers several downstream operations and only some succeed?
+* How would you design recovery for an idempotency record stuck in the IN_PROGRESS state?
+* How would you distinguish a genuinely failed operation from one whose outcome is unknown?
+* How would you handle idempotency key expiration when a delayed retry arrives after the key has expired?
+* What risks arise if an idempotency key expires before the maximum client retry window?
+* How would you partition or shard idempotency records at very high request volumes?
+* How would you prevent a Redis failover or data eviction event from causing duplicate business operations?
+* How would you handle idempotency during rolling deployments that change request fingerprint logic?
+* How would you design idempotency when API requests are retried across different regions?
+* What consistency guarantees are required when idempotency records are replicated across regions?
+* How would you prevent idempotency-key abuse, storage exhaustion, and denial-of-service attacks?
+* How would you measure idempotency effectiveness using metrics, logs, and distributed tracing?

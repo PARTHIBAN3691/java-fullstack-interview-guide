@@ -1,0 +1,31 @@
+
+* Write a Java 10 program using `var` to declare an integer, a String, and a list of strings.
+* Write a Java 10 program using `var` in a traditional `for` loop.
+* Write a Java 10 program using `var` in an enhanced `for` loop to iterate over a list of employees.
+* Write a Java 10 program to demonstrate that `var` variables remain statically typed.
+* Write a Java 10 program to declare a `var` variable initialized with an `ArrayList<String>` and add multiple values.
+* Write a Java 10 program to demonstrate why a local variable declared using `var` must have an initializer.
+* Write a Java 10 program to demonstrate why `var` cannot be initialized directly with null.
+* Write a Java 10 program to compare an explicit local variable type with the inferred type using `var`.
+* Write a Java 10 program using `var` to iterate through a Map's entries and print its keys and values.
+* Write a Java 10 program to create an immutable List using `List.copyOf()`.
+* Write a Java 10 program to create an immutable Set using `Set.copyOf()`.
+* Write a Java 10 program to create an immutable Map using `Map.copyOf()`.
+* Write a Java 10 program to demonstrate that modifying a collection returned by `List.copyOf()` throws an exception.
+* Write a Java 10 program to compare `List.copyOf()` with `Collections.unmodifiableList()` when the original list changes.
+* Write a Java 10 program to demonstrate that `List.copyOf()` rejects null elements.
+* Write a Java 10 program to demonstrate the behavior of `Set.copyOf()` when the input contains duplicate elements.
+* Write a Java 10 program to create an immutable snapshot of an employee list using `List.copyOf()`.
+* Write a Java 10 program to demonstrate that `List.copyOf()` does not make mutable objects inside the list deeply immutable.
+* Write a Java 10 program to retrieve an `Optional` value using the no-argument `orElseThrow()` method.
+* Write a Java 10 program to compare `Optional.orElseThrow()` with `Optional.orElseThrow(Supplier)`.
+* Write a Java 10 program to handle an empty `Optional<Employee>` using `orElseThrow()` and a custom exception.
+* Write a Java 10 program to demonstrate how local variable type inference works with generic collections.
+* Write a Java 10 program to demonstrate how `var` infers the type of an anonymous class.
+* Write a Java 10 program to create a small modular application and use `var` within a method.
+* Write a Java 10 program to inspect garbage collection information through the Java management APIs.
+* Write a Java 10 program to print the current process's available runtime memory statistics.
+* Write a Java 10 program to demonstrate how to collect and compare application startup measurements before and after enabling AppCDS.
+* Write a Java 10 program to create a sample service that exposes an immutable configuration Map using `Map.copyOf()`.
+* Write a Java 10 program to convert a legacy list containing null values into a null-free immutable list.
+* Write a Java 10 program to use `var` with a Stream pipeline that filters and collects employee names.

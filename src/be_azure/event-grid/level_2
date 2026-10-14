@@ -1,0 +1,30 @@
+* Explain the internal event delivery model and architecture of Azure Event Grid.
+* How does Azure Event Grid provide at-least-once event delivery?
+* Why should Event Grid consumers be designed to handle duplicate events?
+* How would you implement idempotent event processing for Event Grid consumers?
+* How does Event Grid handle retries, transient failures, and endpoint unavailability?
+* How do retry policies and event time-to-live settings affect event delivery?
+* What happens when an event cannot be delivered before its expiration time?
+* How would you design a dead-letter processing workflow for failed Event Grid events?
+* How do you safely replay dead-lettered events without creating duplicate business transactions?
+* How would you design event filtering for a high-volume event-driven architecture?
+* How do you choose between Event Grid, Service Bus, and Event Hubs for different messaging requirements?
+* How would you design an event-driven architecture using Event Grid and Azure Functions?
+* How would you integrate Event Grid with Service Bus to support durable asynchronous processing?
+* How would you design a system that requires ordered processing of related events?
+* What limitations should you consider when relying on Event Grid for event ordering?
+* How do you design consumers to handle out-of-order event delivery?
+* How would you secure an event-driven architecture using managed identities, RBAC, and private networking?
+* How do you design cross-subscription or cross-tenant event distribution?
+* How would you implement multi-region event processing and disaster recovery?
+* How do you prevent unauthorized publishers from injecting events into a custom topic?
+* How would you troubleshoot intermittent delivery failures in a production Event Grid environment?
+* How do you monitor delivery latency, failed deliveries, throttling, and dead-letter activity?
+* How would you design event routing for thousands of tenants with different filtering requirements?
+* How do Event Grid namespaces and MQTT capabilities fit into an IoT event-driven architecture?
+* How would you integrate Event Grid with a Java Spring Boot microservices application?
+* How would you manage Event Grid infrastructure using Terraform, Bicep, or ARM templates?
+* How do you version event contracts while maintaining backward compatibility?
+* How would you implement schema validation and reject malformed business events?
+* How do you handle poison events that repeatedly fail consumer processing?
+* How would you design an enterprise-grade Event Grid architecture with observability, resilience, security, and cost optimization?

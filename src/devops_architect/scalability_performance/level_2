@@ -1,0 +1,157 @@
+
+**Horizontal Scaling**
+* Design a horizontally scalable Java microservices architecture that handles millions of requests per day while maintaining predictable latency.
+* How would you scale a stateless API when its primary database is the limiting factor?
+* How would you preserve correctness when multiple application instances process the same business entity concurrently?
+* How would you design distributed scheduling so that jobs are neither duplicated nor lost as instances scale out and in?
+* How would you handle uneven request costs when instance count alone does not represent workload?
+* How would you scale a service that maintains long-lived connections while preserving fair load distribution?
+
+**Vertical Scaling**
+* How would you determine the point at which vertical scaling becomes less effective than horizontal scaling?
+* How would you diagnose an application that performs worse after receiving more CPU and memory?
+* How would you tune JVM heap, garbage collection, and thread counts after moving to a larger machine?
+* How would you estimate the maximum capacity of a single-node stateful service before redesigning it?
+* How would you perform a zero- or low-downtime migration from a large instance to a distributed deployment?
+
+**Auto Scaling**
+* Design an auto-scaling strategy for a service with bursty traffic, long JVM startup times, and a strict p99 latency SLO.
+* How would you combine predictive scaling, reactive scaling, and scheduled scaling without excessive cost?
+* How would you scale consumers using queue age and processing time when queue depth alone is misleading?
+* How would you prevent an autoscaling feedback loop caused by retries, increasing latency, and additional instances?
+* How would you calculate a safe scale-out threshold when downstream database capacity is limited?
+* How would you handle scaling when new instances temporarily increase cache misses and database load?
+* How would you design scale-in behavior that safely drains HTTP requests, active transactions, and message consumers?
+
+**Load Balancing**
+* How would you design global load balancing across regions with different latency, capacity, and health status?
+* How would you prevent cascading failures when health checks remove too many instances at once?
+* How would you design adaptive routing when request processing costs vary significantly?
+* How would you handle overload when all instances are technically healthy but collectively saturated?
+* How would you route requests during a rolling deployment while maintaining compatibility between application versions?
+* How would you diagnose a situation where load is evenly distributed by request count but CPU usage is highly uneven?
+
+**Connection Pooling**
+* How would you determine the optimal JDBC pool size using database capacity, query latency, and concurrent request measurements?
+* How would you prevent connection-pool exhaustion across dozens of application instances sharing one database?
+* How would you investigate a connection leak that occurs only under exceptions or transaction rollbacks?
+* How would you handle database failover when application pools retain stale connections?
+* How would you tune connection acquisition timeouts and request deadlines to avoid thread pileups?
+* How would you decide whether to introduce a database proxy or connection pooler?
+* How would you identify and resolve lock contention that remains after connection-pool tuning?
+
+**Caching**
+* Design a caching strategy for a high-read, low-latency API with frequent updates and strict consistency requirements for some fields.
+* How would you prevent cache stampedes, cache penetration, and hot-key overload simultaneously?
+* How would you handle invalidation across multiple services that update the same underlying data?
+* How would you maintain cache correctness when database transactions succeed but cache updates fail?
+* How would you choose between cache-aside, write-through, write-behind, and refresh-ahead for different workloads?
+* How would you warm a cache after a deployment or regional failover without overloading the database?
+* How would you measure the total cost of caching, including cache infrastructure, invalidation complexity, and database savings?
+
+**CDN**
+* How would you design CDN caching for a global application with personalized content and strict access-control requirements?
+* How would you prevent cache poisoning and accidental caching of sensitive responses?
+* How would you handle a major content release that requires rapid invalidation across many edge locations?
+* How would you optimize cache keys when query parameters, headers, and cookies affect response variants?
+* How would you mitigate a cache stampede at the origin after a popular CDN object expires?
+* How would you design origin shielding and regional caching for a high-traffic application?
+* How would you investigate increased origin load despite a seemingly healthy CDN cache-hit ratio?
+
+**Distributed Caching**
+* How would you design Redis clustering and key distribution for a high-throughput application with a few extremely hot keys?
+* How would you handle cache consistency when updates originate from multiple services and events can arrive out of order?
+* How would you prevent a distributed cache outage from overwhelming the database?
+* How would you design cache invalidation with retries, duplicate events, and delayed event delivery?
+* How would you migrate a large cache to a new cluster without causing a major cache-miss storm?
+* How would you manage memory pressure and eviction policies when different cached datasets have different business priorities?
+* How would you prevent stale data from being repopulated after a newer value has already been written?
+
+**Queue-Based Scaling**
+* Design a queue-based architecture that can absorb traffic spikes while maintaining a bounded processing delay.
+* How would you estimate consumer capacity from message arrival rate, average processing time, and available concurrency?
+* How would you scale Kafka consumers when the number of partitions limits parallelism?
+* How would you prevent a backlog from causing database saturation after consumers scale out?
+* How would you design priority processing when critical and non-critical messages share a messaging platform?
+* How would you handle queue growth when the arrival rate remains above the maximum sustainable processing rate?
+* How would you guarantee eventual processing and operational visibility for messages that repeatedly fail?
+
+**Asynchronous Processing**
+* Design an asynchronous order workflow spanning order, payment, inventory, and notification services.
+* How would you guarantee durable acceptance of a request when the HTTP response must return quickly?
+* How would you handle partial failure when one asynchronous step succeeds and another fails?
+* How would you implement idempotency, deduplication, and reconciliation across independently deployed consumers?
+* How would you manage ordering requirements when events for the same business entity are processed concurrently?
+* How would you choose between an in-memory executor, a durable message broker, and a workflow orchestration engine?
+* How would you propagate tracing, deadlines, and security context across asynchronous execution without leaking request-scoped state?
+
+**Backpressure**
+* Design end-to-end backpressure for an API gateway, Kafka pipeline, and database-backed consumer service.
+* How would you prevent oscillations when backpressure, retries, and autoscaling react to the same overload?
+* How would you maintain fairness across tenants when some consumers process messages much more slowly than others?
+* How would you select between bounded buffering, rejection, producer throttling, and durable spillover under sustained overload?
+* How would you preserve message ordering while applying backpressure to individual partitions?
+* How would you design overload controls when request cost is unpredictable and queue size alone is insufficient?
+* How would you prove that the system remains stable when arrival rate temporarily exceeds service capacity?
+
+**Capacity Planning**
+* How would you forecast capacity for a service expected to grow tenfold over the next year?
+* How would you estimate safe throughput using load-test results while accounting for production variability and failure headroom?
+* How would you plan capacity across application instances, databases, caches, brokers, and third-party API quotas?
+* How would you model capacity when traffic is bursty and average utilization hides short-lived saturation?
+* How would you determine whether a workload should scale horizontally, vertically, or through asynchronous decoupling?
+* How would you plan for an availability-zone failure without overloading the remaining zones?
+* How would you build a capacity model that translates business growth forecasts into infrastructure cost estimates?
+
+**Performance Testing**
+* How would you build a performance-testing framework that runs consistently in CI/CD and produces comparable results across releases?
+* How would you detect performance regressions that are statistically meaningful rather than random measurement noise?
+* How would you design a test that reproduces a production tail-latency issue involving several microservices?
+* How would you prevent test data, connection warm-up, JVM compilation, and cache state from distorting benchmark results?
+* How would you combine workload generation, distributed tracing, JVM profiling, and infrastructure telemetry to locate bottlenecks?
+* How would you establish performance gates for throughput, error rate, and p99 latency?
+* How would you test realistic traffic mixes when some endpoints are much more expensive than others?
+
+**Load Testing**
+* How would you calculate a realistic load-test profile from production request rates, concurrency, arrival patterns, and business journeys?
+* How would you distinguish closed-model user simulations from open-model request-arrival tests, and when would each be appropriate?
+* How would you avoid coordinated omission when measuring latency under saturation?
+* How would you determine maximum sustainable throughput without confusing temporary bursts with stable capacity?
+* How would you load-test a service with multiple dependencies while avoiding unrealistic bottlenecks in the test environment?
+* How would you assess performance when autoscaling changes the number of instances during a test?
+* How would you prove that a performance improvement is reproducible and not caused by different test conditions?
+
+**Stress Testing**
+* How would you find the system's saturation point and identify the sequence of resource failures beyond it?
+* How would you test whether overload protection prevents cascading failures across an entire microservices dependency graph?
+* How would you evaluate recovery after a prolonged overload that causes queues, caches, and connection pools to become saturated?
+* How would you design stress tests for partial infrastructure failures while traffic remains above normal capacity?
+* How would you distinguish a recoverable overload from a condition requiring manual intervention?
+* How would you validate data integrity when requests time out while transactions continue running in the background?
+
+**Soak Testing**
+* How would you isolate a slow memory leak in a Java service running under realistic traffic for 24–72 hours?
+* How would you distinguish heap retention, direct-buffer leaks, native-memory growth, and thread leaks?
+* How would you identify resource exhaustion caused by connection churn or file-descriptor accumulation?
+* How would you analyze gradual p99 latency growth even when CPU utilization remains stable?
+* How would you design soak tests for scheduled jobs, token refresh, cache expiration, and periodic maintenance tasks?
+* How would you detect degradation caused by database table growth and increasingly expensive queries during a long test?
+* How would you decide whether a long-running test result reflects a code defect, infrastructure issue, or unrealistic workload?
+
+**Bottleneck Analysis**
+* How would you diagnose a service with low CPU utilization but high response latency and a growing request queue?
+* How would you use thread dumps and Java Flight Recorder to identify lock contention, blocked threads, and excessive context switching?
+* How would you determine whether GC pauses, allocation pressure, or native memory is driving tail latency?
+* How would you trace a request through multiple services and identify the component responsible for the majority of end-to-end latency?
+* How would you find the critical bottleneck when optimizing one layer merely shifts saturation to another?
+* How would you investigate performance that degrades only under concurrent load but appears healthy in isolated tests?
+* How would you quantify the impact of a proposed optimization before implementing a costly architectural change?
+
+**Latency Optimization**
+* How would you reduce p99 latency in a Java API when most requests are fast but a small percentage take several seconds?
+* How would you redesign a request path containing sequential network calls, repeated database queries, and expensive serialization?
+* How would you reduce tail latency without violating consistency, ordering, or security requirements?
+* How would you optimize an application when the database, cache, and downstream services each contribute variable latency?
+* How would you assess whether parallel execution improves latency or simply increases resource contention?
+* How would you establish and enforce an end-to-end latency budget across a microservices dependency chain?
+* How would you use percentile latency, tracing, profiling, and controlled experiments to validate a latency improvement?

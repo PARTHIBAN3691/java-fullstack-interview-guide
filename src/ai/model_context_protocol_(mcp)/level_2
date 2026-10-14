@@ -1,0 +1,75 @@
+**MCP Fundamentals and Architecture**
+* How would you design a multi-tenant MCP platform that supports many hosts, servers, tools, and data sources while maintaining strict tenant isolation?
+* How would you handle protocol evolution and capability negotiation across clients and servers deployed on different release schedules?
+* How would you design an MCP integration layer that supports policy enforcement, server discovery, observability, and provider-independent LLM orchestration?
+
+**MCP Hosts, Clients, and Servers**
+* How would you isolate resource consumption and failure domains when one host connects to hundreds of remote MCP servers?
+* How would you manage concurrent requests, connection pools, cancellation, and backpressure across MCP client sessions?
+* How would you prevent capability confusion or session mix-ups when a client reconnects to a server after a partial failure?
+
+**MCP Tools**
+* How would you provide effectively-once business effects when tool execution succeeds but the response is lost before the client receives it?
+* How would you design high-impact MCP tools using idempotency keys, authorization checks, transactional boundaries, and audit records?
+* How would you prevent a malicious or misleading tool schema from inducing the LLM to execute unauthorized operations?
+
+**MCP Resources**
+* How would you design resource access for millions of records with pagination, authorization filtering, and low-latency retrieval?
+* How would you ensure that resource contents remain consistent with changing source data and that cached data respects access revocation?
+* How would you prevent resource URI manipulation, path traversal, and cross-tenant data access?
+
+**MCP Prompts**
+* How would you govern prompt templates across multiple teams while preserving backward compatibility and traceability?
+* How would you protect sensitive instructions when prompts are discoverable by clients with different trust levels?
+* How would you evaluate prompt changes for task quality, token consumption, security, and compatibility before production rollout?
+
+**MCP Transport Mechanisms**
+* How would you design a resilient remote MCP transport layer that supports connection loss, cancellation, concurrent requests, and bounded resource consumption?
+* How would you secure Streamable HTTP deployments against unauthorized access, unsafe redirects, DNS rebinding, and server-side request forgery?
+* How would you diagnose failures that occur only when MCP traffic passes through load balancers, reverse proxies, and enterprise gateways?
+
+**MCP Server Development**
+* How would you build a production-grade MCP server with bounded concurrency, rate limiting, graceful shutdown, and fault isolation?
+* How would you prevent thread starvation or resource exhaustion when a tool performs slow downstream operations?
+* How would you design backward-compatible tool schemas and contract tests for independently deployed clients and servers?
+
+**MCP Integration with LLM Applications**
+* How would you prevent an LLM from selecting tools that are irrelevant, overly privileged, or incompatible with the current user's permissions?
+* How would you handle multi-step tool execution where intermediate results are large, untrusted, or inconsistent?
+* How would you design fallback behavior when a model provider, MCP server, or downstream service becomes unavailable during a multi-tool workflow?
+
+**MCP Integration with Java and Spring Boot**
+* How would you design a Spring Boot MCP platform with separate configuration, security, business services, and protocol adapters?
+* How would you handle reactive versus blocking tool execution, thread-pool isolation, and backpressure in a high-throughput Java service?
+* How would you propagate authenticated user identity and authorization context through Spring Security, MCP handlers, and downstream services without trusting model-generated identity claims?
+* How would you implement distributed tracing, metrics, and structured error handling across Spring Boot MCP clients and servers?
+
+**MCP Authentication and Authorization**
+* How would you implement least-privilege OAuth scopes and per-tool authorization in a multi-tenant MCP platform?
+* How would you prevent confused-deputy attacks when a privileged MCP server acts on behalf of a less-privileged client?
+* How would you securely delegate user authorization to downstream APIs without forwarding tokens to unintended recipients?
+* How would you design credential rotation, revocation, auditability, and emergency access shutdown across multiple MCP servers?
+
+**MCP Tool Discovery and Execution**
+* How would you manage dynamic tool discovery while preventing newly introduced tools from bypassing approval and security policies?
+* How would you handle incompatible schema changes, stale cached tool definitions, and in-flight calls during a server upgrade?
+* How would you enforce execution budgets across nested tool calls and prevent recursive tool invocation from exhausting system resources?
+* How would you reconcile ambiguous outcomes after timeouts, retries, and partial failures in non-idempotent tools?
+
+**MCP Security and Trust Boundaries**
+* How would you threat-model an MCP ecosystem involving untrusted servers, model-generated tool selection, external content, and privileged internal systems?
+* How would you prevent SSRF, filesystem escape, secret exfiltration, malicious tool metadata, and indirect prompt injection?
+* How would you ensure security controls remain effective even when the LLM ignores instructions or produces adversarial tool arguments?
+* How would you implement defense in depth using endpoint allowlists, sandboxing, authorization, output filtering, and independent policy enforcement?
+
+**MCP Error Handling and Observability**
+* How would you trace a request through multiple MCP servers and downstream services while preserving causal relationships and privacy?
+* How would you design service-level objectives for tool availability, execution latency, error rate, and recovery time?
+* How would you distinguish an MCP protocol defect from a client bug, model-selection problem, server failure, or downstream dependency failure?
+* How would you detect silent failures where a tool returns success but the intended business operation did not occur?
+
+**MCP Deployment and Governance**
+* How would you design centralized governance for an enterprise MCP catalog with ownership, risk classification, approvals, versioning, and deprecation?
+* How would you implement staged rollouts and automated rollback for MCP server and tool schema changes?
+* How would you enforce policy compliance across independently managed MCP servers without creating a single operational bottleneck?
+* How would you establish an auditable control framework for sensitive tools, third-party servers, data access, and security incidents?

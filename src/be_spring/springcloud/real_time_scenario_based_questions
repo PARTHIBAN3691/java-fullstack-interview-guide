@@ -1,0 +1,30 @@
+* Your microservice is running but is not appearing in the Eureka registry. How would you troubleshoot the issue?
+* A service continues calling an instance that has already been terminated. How would you investigate service discovery and registration behavior?
+* Eureka becomes temporarily unavailable. How should existing services behave, and how would you minimize the impact?
+* Your API Gateway returns HTTP 503 even though the downstream microservice is healthy. How would you diagnose the problem?
+* Requests are routed to an incorrect microservice after a deployment. How would you troubleshoot Gateway route predicates and service discovery?
+* One microservice is receiving most of the traffic while other instances remain underutilized. How would you investigate load-balancing behavior?
+* A downstream payment service becomes slow, causing multiple upstream services to fail. How would you prevent cascading failures?
+* A circuit breaker remains OPEN even after the downstream service recovers. How would you investigate and resolve the issue?
+* Retry logic causes a sudden increase in traffic during a database outage. How would you redesign the retry policy?
+* A fallback method returns a successful-looking response even though a critical transaction failed. How would you correct the behavior?
+* Your Spring Cloud Config Server is unavailable during application startup. How would you design startup behavior and configuration availability?
+* A configuration update is visible in the Config Server but not in running microservices. How would you troubleshoot refresh behavior?
+* A secret stored in centralized configuration is accidentally exposed through an API response or log. How would you prevent recurrence?
+* Two microservices use incompatible API versions after independent deployments. How would you restore compatibility?
+* Your OpenFeign client intermittently times out while direct requests to the downstream service succeed. What would you inspect?
+* Authentication works when calling a microservice directly but fails through Spring Cloud Gateway. How would you investigate token propagation and security configuration?
+* A user can access a protected endpoint through one route but bypass authorization through another route. How would you address the security design?
+* Distributed traces stop at an asynchronous messaging boundary. How would you propagate trace context correctly?
+* Your distributed tracing system shows duplicate or disconnected spans for a single business request. How would you investigate instrumentation and context propagation?
+* A Spring Cloud Stream consumer processes the same payment event more than once. How would you ensure idempotent processing?
+* Messages are published successfully, but consumers do not process them. How would you troubleshoot bindings, destinations, consumer groups, and broker connectivity?
+* An event-driven workflow partially completes when a downstream service fails. How would you implement compensation and recovery?
+* A database update succeeds, but the corresponding event is never published. How would you prevent this inconsistency?
+* Multiple Gateway replicas exceed a shared rate limit because each instance tracks requests independently. How would you implement distributed rate limiting?
+* One service experiences high CPU utilization after enabling detailed tracing. How would you reduce observability overhead without losing critical diagnostic data?
+* Your application works in a local environment but fails in Kubernetes due to service discovery and networking differences. How would you investigate?
+* A microservice deployment causes a temporary increase in failed requests. How would you implement health checks, readiness probes, and graceful shutdown?
+* A central authentication service becomes unavailable, preventing new requests across the platform. How would you design resilience without weakening security?
+* A downstream service changes its response structure and several consumers fail. How would you introduce contract testing and backward-compatible API evolution?
+* Your organization is migrating from a monolith to microservices. How would you decide which Spring Cloud capabilities to introduce first?

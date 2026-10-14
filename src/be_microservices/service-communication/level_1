@@ -1,0 +1,30 @@
+* How do you implement REST communication between two Spring Boot microservices?
+* How do you call a downstream REST API using RestTemplate?
+* How do you implement service communication using WebClient?
+* How do you configure OpenFeign in a Spring Boot application?
+* What are the advantages of OpenFeign compared with WebClient and RestTemplate?
+* How do you configure request headers and query parameters using WebClient?
+* How do you handle HTTP error responses from downstream services?
+* How do you configure connection and response timeouts for REST clients?
+* How do you implement retries for transient downstream failures?
+* How do you integrate Resilience4j with service-to-service communication?
+* How do you implement fallback responses when a downstream service is unavailable?
+* How do you propagate correlation IDs across multiple services?
+* How do you propagate distributed tracing context between services?
+* How do you pass authentication tokens from one microservice to another?
+* How do you secure service-to-service REST communication?
+* How do you configure load balancing for multiple instances of a downstream service?
+* How does Spring Cloud LoadBalancer work?
+* How do you implement service discovery using Eureka?
+* How do you configure OpenFeign to discover services through a service registry?
+* How do you implement asynchronous communication using Kafka?
+* How do you implement message publishing and consumption using RabbitMQ?
+* How do you handle duplicate messages in asynchronous communication?
+* How do you handle message delivery failures and retries?
+* How do you choose between REST, gRPC, Kafka, and RabbitMQ?
+* How do you implement request-response communication using messaging?
+* How do you manage API versioning between communicating services?
+* How do you handle backward compatibility when a downstream API changes?
+* How do you prevent excessive synchronous calls between microservices?
+* How do you monitor latency and failures in service-to-service communication?
+* How do you test service communication using WireMock or MockWebServer?

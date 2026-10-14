@@ -1,0 +1,30 @@
+* Your Spring Boot application works locally but fails after deployment to Kubernetes. How would you troubleshoot it?
+* A Pod is stuck in CrashLoopBackOff after a production release. What steps would you follow to identify the root cause?
+* Your Deployment has three desired replicas, but only one Pod is Ready. How would you investigate the issue?
+* Users experience intermittent 503 errors during a rolling deployment. Which Kubernetes and application configurations would you inspect?
+* Your Java application is repeatedly killed with OOMKilled even though the container memory limit appears sufficient. How would you investigate JVM and container memory usage?
+* A Pod remains Pending because Kubernetes cannot schedule it. How would you determine whether the cause is resource capacity, affinity, taints, or storage?
+* Two microservices in different namespaces cannot communicate. How would you troubleshoot DNS, Services, and NetworkPolicies?
+* Your application cannot connect to the database after moving from a virtual machine to Kubernetes. What configuration and networking checks would you perform?
+* A ConfigMap has been updated, but the Spring Boot application still uses the old values. How would you resolve this?
+* Your application starts slowly and is repeatedly restarted by Kubernetes. How would you configure startup and liveness probes correctly?
+* The Kubernetes cluster runs out of memory during a traffic spike. How would you determine whether to scale Pods, resize workloads, or expand cluster capacity?
+* HPA is configured, but the number of replicas does not increase when traffic rises. How would you troubleshoot the autoscaling configuration?
+* A new container image cannot be pulled in production, although it works in development. What would you check?
+* After a node failure, some critical application Pods remain unavailable. How would you investigate scheduling, replica configuration, and cluster capacity?
+* A Service exists, but it does not route traffic to any Pods. How would you identify the configuration mismatch?
+* A Spring Boot application receives traffic before its initialization is complete. How would you prevent premature traffic routing?
+* During node maintenance, multiple replicas of a critical service become unavailable. How would you improve workload resilience?
+* A developer accidentally exposes an internal application through a public Service. How would you reduce the security risk and prevent recurrence?
+* A Kubernetes Secret is rotated, but database connections continue failing. How would you investigate secret propagation and connection-pool behavior?
+* Your application works in one namespace but fails in another. Which namespace-specific resources and policies would you compare?
+* A Java container frequently experiences high CPU usage and slow responses. How would you distinguish application bottlenecks from Kubernetes resource constraints?
+* Your cluster has sufficient aggregate CPU, but a large Pod cannot be scheduled. What could explain this behavior?
+* An application loses uploaded files whenever its Pod is replaced. How would you redesign its storage architecture?
+* Your team needs to deploy a new microservice without interrupting existing users. How would you design its Deployment, Service, probes, and rollout strategy?
+* A production release introduces errors, and rolling back the image does not resolve the issue. How would you investigate configuration and database compatibility?
+* A Kubernetes cluster upgrade causes some workloads to fail. How would you isolate node, API compatibility, and application-level problems?
+* Your organization wants separate environments for several development teams while sharing infrastructure. How would you design namespace isolation, RBAC, quotas, and network policies?
+* A microservice experiences intermittent DNS lookup failures under heavy load. How would you investigate CoreDNS, connection behavior, and cluster networking?
+* A Spring Boot application is terminated during long-running requests when a node is drained. How would you implement graceful shutdown and disruption protection?
+* Your organization needs a highly available Kubernetes platform across multiple availability zones. What architecture, backup, monitoring, and recovery mechanisms would you implement?

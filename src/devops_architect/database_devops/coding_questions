@@ -1,0 +1,94 @@
+
+**Database CI/CD**
+* Implement a CI pipeline that validates SQL migration files, starts a disposable database, applies migrations, and runs integration tests.
+* Write a pipeline validation script that rejects modified historical migrations and duplicate migration version numbers.
+* Implement a release gate that verifies migration test results, artifact identity, approval status, and target-environment readiness.
+* Write an automated test that verifies a migration can run from the previous supported schema version to the target version.
+
+**Database Migrations**
+* Write a resumable data-backfill job that processes records in batches, stores checkpoints, and safely retries failed batches.
+* Implement a migration that adds a new column, populates it in bounded batches, and validates the transformed data.
+* Write a database migration test that verifies constraints, indexes, foreign keys, and expected data invariants.
+* Implement a migration utility that records progress and stops processing when lock wait time or replication lag exceeds a configured threshold.
+
+**Flyway**
+* Create a Spring Boot configuration that runs Flyway migrations from versioned SQL scripts against a test database.
+* Write an integration test that verifies Flyway applies a migration exactly once and validates the schema history.
+* Implement a pre-deployment check that runs Flyway validation and fails the pipeline on checksum mismatches.
+* Create a test that simulates a failed migration and verifies the recovery workflow against the database's actual state.
+* Write a script that reports applied and pending Flyway migrations across multiple environments without exposing credentials.
+
+**Liquibase**
+* Create a Liquibase changelog that adds a table, index, foreign key, and rollback definition.
+* Implement a pipeline stage that generates a Liquibase SQL preview and stores the output for review before execution.
+* Write a test that validates Liquibase preconditions against an expected schema state.
+* Implement a report that compares applied changesets with the repository changelog across several environments.
+* Create a deployment test that verifies changeset ordering and expected behavior when a precondition fails.
+
+**Schema Versioning**
+* Implement a schema-compatibility validator that checks an application's supported schema range before deployment.
+* Write a utility that reports schema versions across tenant databases and identifies environments that are behind or inconsistent.
+* Create a migration audit record linking schema version, application build, source commit, execution status, and timestamp.
+* Implement a test that verifies an application can operate correctly against both the old and expanded schema during a rolling deployment.
+
+**Backward-Compatible Schema Changes**
+* Write an expand-and-contract migration sequence for renaming a column while maintaining compatibility with two application versions.
+* Implement a reconciliation job that compares old and new column values and repairs inconsistent records in bounded batches.
+* Create an integration test that runs old and new application versions against the expanded schema and validates critical write paths.
+* Implement a deprecation checker that identifies references to a database column before a migration attempts to remove it.
+
+**Zero-Downtime Migrations**
+* Implement a backfill job that processes records using keyset pagination, configurable batch sizes, retries, and checkpoints.
+* Write a migration monitor that stops or pauses work when database latency, lock waits, or replication lag exceeds configured limits.
+* Create a concurrency-safe backfill that avoids overwriting values modified by users while the migration is running.
+* Implement a migration test that verifies reads and writes remain available during an online schema change.
+* Write a script that verifies the completion and consistency of a large backfill before allowing the contract phase.
+
+**Database Rollback Strategies**
+* Implement a migration framework that distinguishes reversible schema changes from changes requiring a forward fix or restore.
+* Write a compensating migration that repairs transformed records using a retained source value or audit history.
+* Create a recovery script that verifies database backup timestamps, available transaction logs, and the target recovery point before restoration.
+* Implement a deployment state machine that handles migration success followed by application deployment failure.
+* Write an integration test that validates the rollback or compensation path after an intentionally failed release.
+
+**Database Backup Automation**
+* Write a scheduled backup automation script with encryption, retention rules, and failure notifications.
+* Implement a backup-verification job that restores a backup into an isolated database and runs integrity checks.
+* Create a recovery-point report that calculates the age of the latest verified backup and compares it with a configured RPO.
+* Implement a cleanup job that removes expired backups while protecting retention-locked and compliance-required backups.
+* Write an automated recovery drill that measures restore duration and produces an RTO report.
+
+**Database Replication**
+* Implement a monitoring job that collects replica lag and alerts when it exceeds a configured threshold.
+* Write a read-routing component that directs consistency-sensitive reads to the primary and eligible reads to replicas.
+* Create a failover validation script that verifies the promoted primary, replication state, and application connectivity.
+* Implement a health check that prevents a replica with excessive lag from receiving read traffic.
+* Write a recovery workflow that safely reintroduces a former primary as a replica after failover.
+
+**Database Deployment Pipelines**
+* Implement a pipeline lock that prevents concurrent schema migrations against the same database.
+* Write a deployment state machine that records migration, validation, application rollout, health-check, and recovery statuses.
+* Create an idempotent migration runner that checks execution history and validates the actual database state after an interrupted run.
+* Implement a release gate that blocks deployment when the migration plan contains prohibited destructive changes without approval.
+* Write a pipeline test that simulates a runner crash after migration execution but before status recording.
+
+**Database Observability**
+* Implement a metrics collector for connection counts, active queries, transaction duration, lock waits, deadlocks, and replication lag.
+* Write a log-correlation component that attaches trace IDs and service identifiers to database-operation telemetry where supported.
+* Create an alert evaluator that detects sustained query latency and connection-pool exhaustion rather than reacting to a single short spike.
+* Implement a health endpoint that distinguishes database connectivity from query responsiveness and dependency health.
+* Write a report that correlates database performance changes with application releases and migration timestamps.
+
+**Database Performance Monitoring**
+* Write a query-analysis utility that ranks normalized SQL statements by total execution time, call count, and tail latency using available database statistics.
+* Implement a performance regression test that compares execution-time distributions before and after a migration.
+* Create a monitoring job that detects changes in query-plan identifiers or other available plan-regression indicators.
+* Write a load-test scenario that measures throughput, p95/p99 latency, error rate, and database resource utilization.
+* Implement a diagnostic report that separates connection acquisition time, query execution time, and result-processing time.
+
+**Connection Pool Management**
+* Configure HikariCP in a Spring Boot application with explicit maximum pool size, connection timeout, idle timeout, and maximum lifetime settings.
+* Write an integration test that detects connection leaks and verifies connections are returned after transaction completion.
+* Implement a load test that identifies the point at which pool saturation increases request latency and timeout rates.
+* Create a connection-budget calculator that estimates aggregate connections across service replicas and reserves capacity for administrative and failover operations.
+* Write a recovery test that verifies connection pools reconnect safely after database failover without generating uncontrolled connection storms.

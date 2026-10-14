@@ -1,0 +1,105 @@
+
+**Cloud Cost Management**
+* What is FinOps, and why is it important for cloud-based applications?
+* What are the major cost components of a cloud environment?
+* What is the difference between capital expenditure and operational expenditure in cloud computing?
+* How do you view and analyze cloud spending using a cloud provider's cost management tools?
+* What is the difference between fixed and variable cloud costs?
+
+**Resource Tagging**
+* What are resource tags, and why are they important for cost management?
+* What is the difference between a tag key and a tag value?
+* Which standard tags would you apply to cloud resources?
+* How do tags help identify resource ownership?
+* What problems occur when resources are created without required tags?
+
+**Cost Allocation**
+* What is cloud cost allocation?
+* What is the difference between direct and shared cloud costs?
+* How can cloud costs be allocated to individual projects or teams?
+* What is the purpose of cost allocation reports?
+* How do cost centers help track cloud spending?
+
+**Reserved Instances**
+* What is a reserved instance in cloud computing?
+* How do reserved instances differ from on-demand instances?
+* What are the typical commitment periods for reserved instances?
+* What is the difference between regional and zonal reservations where supported?
+* What risks arise when purchasing reservations for workloads that later become unused?
+
+**Savings Plans**
+* What is a cloud savings plan?
+* How do savings plans differ from on-demand pricing?
+* What is a usage commitment in a savings plan?
+* What happens when actual usage is below a committed amount?
+* Why should historical usage be reviewed before purchasing a savings plan?
+
+**Spot Instances**
+* What are spot instances, and why are they cheaper than on-demand instances?
+* What is a spot instance interruption?
+* Which workloads are suitable for spot instances?
+* Why are spot instances not ideal for every production workload?
+* How can an application handle the termination of a spot instance?
+
+**Right-Sizing**
+* What is right-sizing in cloud cost optimization?
+* Which CPU, memory, network, and storage metrics help identify oversized resources?
+* What is the difference between utilization and provisioned capacity?
+* Why should historical utilization be considered before downsizing a resource?
+* What risks can occur when a resource is downsized too aggressively?
+
+**Auto Scaling**
+* What is auto scaling?
+* What is the difference between horizontal and vertical scaling?
+* How can auto scaling reduce cloud costs?
+* What metrics can trigger an auto-scaling action?
+* Why should auto scaling have minimum and maximum capacity limits?
+
+**Storage Optimization**
+* What are the common cloud storage classes or tiers?
+* What is the difference between frequently accessed and archival storage?
+* How can lifecycle policies reduce storage costs?
+* What is the impact of storing unnecessary snapshots and backups?
+* What is the difference between storage capacity charges and request charges?
+
+**Data Transfer Costs**
+* What is cloud data transfer or egress cost?
+* What is the difference between inbound and outbound data transfer charges?
+* Why can cross-region data transfer increase cloud costs?
+* How can a content delivery network reduce data transfer costs?
+* Why should data transfer between availability zones be monitored?
+
+**Kubernetes Cost Optimization**
+* What are the main cost components of a Kubernetes cluster?
+* How do CPU and memory requests affect Kubernetes resource utilization?
+* What is the difference between a Kubernetes request and a limit?
+* How can unused pods or oversized nodes increase costs?
+* What is cluster autoscaling?
+
+**Idle Resource Detection**
+* What is an idle cloud resource?
+* Which metrics can identify an underutilized virtual machine?
+* What are common examples of idle cloud resources?
+* Why should unattached disks and unused IP addresses be reviewed?
+* Why is an idle-resource report not sufficient by itself to authorize deletion?
+
+**Budget Alerts**
+* What is a cloud budget alert?
+* What is the difference between a budget threshold and a spending forecast?
+* How can notifications be triggered when spending reaches a threshold?
+* Why should budgets be created for individual projects or teams?
+* What is the difference between a budget alert and a hard spending limit?
+
+**Cost Governance**
+* What is cloud cost governance?
+* Why are cost policies needed in a multi-team cloud environment?
+* What is a cost allocation policy?
+* How can organizations prevent unauthorized or unnecessary cloud spending?
+* Why should cost optimization changes be documented and reviewed?
+
+**FinOps Architecture**
+* What is a FinOps architecture?
+* Which cloud services and data sources are commonly used in a FinOps platform?
+* What is the purpose of a cloud billing export?
+* How do dashboards support cost visibility?
+* Which teams typically participate in FinOps?

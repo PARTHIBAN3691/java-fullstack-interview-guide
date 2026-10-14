@@ -1,0 +1,30 @@
+* How do you integrate Confluent Schema Registry with a Java Kafka producer?
+* How do you configure an Avro serializer in a Kafka producer?
+* How do you configure an Avro deserializer in a Kafka consumer?
+* How do you configure Schema Registry in a Spring Boot application?
+* What is the purpose of `KafkaAvroSerializer`?
+* What is the purpose of `KafkaAvroDeserializer`?
+* What is the difference between specific Avro records and generic Avro records?
+* What is the difference between `SpecificRecord` and `GenericRecord`?
+* How do you generate Java classes from Avro schemas?
+* What is the purpose of an Avro `.avsc` file?
+* How does Schema Registry associate a schema with a Kafka message?
+* How is the schema ID encoded in a serialized Kafka message?
+* Does a Kafka broker validate the payload against Schema Registry?
+* How does a consumer retrieve a writer schema during deserialization?
+* What happens when a consumer receives a message with an unknown schema ID?
+* How do you register a schema using the Schema Registry REST API?
+* How do you retrieve a schema by its ID?
+* How do you retrieve all versions of a schema subject?
+* How do you configure backward compatibility for a subject?
+* How do you configure compatibility globally or per subject?
+* What happens when you add an optional field to an Avro schema?
+* What happens when you add a required field without a default value?
+* How do you rename a field while maintaining schema compatibility?
+* How do you remove a field without breaking existing consumers?
+* What is the difference between `BACKWARD`, `BACKWARD_TRANSITIVE`, and `FULL_TRANSITIVE` compatibility?
+* How does subject naming strategy affect schema registration?
+* What is the difference between `TopicNameStrategy`, `RecordNameStrategy`, and `TopicRecordNameStrategy`?
+* How do you test schema compatibility before deploying a new producer version?
+* How do you handle schema registration failures in a producer?
+* How do you troubleshoot Avro deserialization errors in a Kafka consumer?

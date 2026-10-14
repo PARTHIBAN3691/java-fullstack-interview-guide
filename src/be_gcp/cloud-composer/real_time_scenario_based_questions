@@ -1,0 +1,30 @@
+* A scheduled DAG has not started at its expected time. How would you investigate the scheduler, DAG configuration, and queued task instances?
+* A DAG succeeds in development but fails in production because a Google Cloud API call is denied. How would you troubleshoot IAM and environment differences?
+* A BigQuery task fails intermittently due to a transient API error. How would you implement retries without duplicating data?
+* A DAG processes the same input file twice after a retry. How would you redesign the workflow to make processing idempotent?
+* A data pipeline contains ten dependent tasks, and the sixth task fails after the first five have completed. How would you recover without unnecessarily repeating successful work?
+* A Cloud Composer DAG runs successfully but downstream BigQuery tables contain incomplete data. How would you investigate task dependencies and data validation?
+* A DAG that previously completed in 20 minutes now takes two hours. How would you identify whether the scheduler, workers, external services, or data volume is responsible?
+* Hundreds of DAGs are deployed, and the scheduler starts falling behind. How would you investigate DAG parsing and scheduling performance?
+* A task waits indefinitely for a file in Cloud Storage that never arrives. How would you configure sensors, timeouts, and failure handling?
+* A workflow must process thousands of files arriving throughout the day. How would you design efficient file discovery and parallel processing?
+* A backfill for the previous six months creates excessive BigQuery load and delays current production jobs. How would you control concurrency and prioritize workloads?
+* Two DAG runs overlap and process the same business date. How would you prevent concurrent duplicate processing?
+* A DAG uses XCom to transfer a large dataset between tasks and starts failing. How would you redesign data exchange between tasks?
+* A task launches a Dataflow job and finishes before the Dataflow job completes. How would you ensure downstream tasks wait for actual job completion?
+* A Cloud Composer environment upgrade breaks DAGs because of incompatible Python packages. How would you prevent and resolve the issue?
+* A DAG works in the Airflow UI but fails when executed by a worker due to a missing Python dependency. How would you diagnose the environment mismatch?
+* A production DAG contains credentials in its source code. What immediate remediation and long-term secret-management changes would you make?
+* A service account can access BigQuery in one project but fails to access a Cloud Storage bucket in another project. How would you troubleshoot cross-project access?
+* A business team needs an alert when a daily data pipeline misses its freshness SLA. How would you implement monitoring and escalation?
+* A downstream report runs even though an upstream data quality check failed. How would you redesign trigger rules and dependencies?
+* A DAG has multiple conditional branches, but a join task never runs because some branch tasks were skipped. How would you correct the trigger rules?
+* An external API rate-limits requests from multiple Airflow workers. How would you control concurrency, implement backoff, and resume processing safely?
+* A long-running task repeatedly exceeds its execution timeout. How would you redesign it using asynchronous job execution or smaller processing units?
+* A manually triggered DAG processes a production dataset with incorrect parameters. How would you validate and restrict runtime configuration?
+* A Cloud Composer worker runs out of memory when processing a large file. How would you reduce memory usage and select an appropriate processing approach?
+* A deployment introduces a DAG syntax error that affects production scheduling. How would you validate DAG changes before release and recover quickly?
+* A pipeline requires a human approval before publishing data to production. How would you integrate approval into the orchestration process?
+* An organization wants separate development, staging, and production environments with consistent DAG deployment. How would you implement environment promotion?
+* A critical pipeline must recover after a regional outage. How would you design recovery procedures for Composer, DAG code, configuration, and dependent services?
+* Cloud Composer costs increase sharply after a new set of DAGs is deployed. How would you investigate worker utilization, environment sizing, scheduling frequency, and task concurrency?

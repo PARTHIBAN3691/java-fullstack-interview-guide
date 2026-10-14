@@ -1,0 +1,30 @@
+* Explain the CSS Grid layout algorithm at a high level.
+* How does the browser calculate grid track sizes?
+* Explain the difference between intrinsic sizing and flexible track sizing.
+* How does minmax() interact with the fr unit?
+* Why can a grid track become larger than its declared minimum size?
+* What is the automatic minimum size of a grid item?
+* How can min-width: 0 prevent overflow inside a grid item?
+* Explain the difference between auto-fill and auto-fit when used with minmax().
+* How does grid-auto-flow: dense affect the visual placement of items?
+* What are the accessibility implications of visually rearranging grid items?
+* How does implicit track creation work when an item is placed outside the explicit grid?
+* How do negative grid line numbers work?
+* How are named grid lines created and referenced?
+* How does subgrid work in CSS Grid?
+* When would you use subgrid instead of a nested grid?
+* What are the limitations and browser support considerations of subgrid?
+* How does grid-template-areas determine the placement of grid items?
+* What restrictions apply to named areas in grid-template-areas?
+* How does aspect-ratio interact with grid item sizing?
+* How can percentage-based grid tracks behave when the grid container has an indefinite size?
+* Explain the difference between justify-content and justify-items in a grid container.
+* How does align-content behave when the grid container has extra space?
+* What is the difference between fit-content() and minmax()?
+* How can auto-placement create unexpected empty spaces in a grid?
+* How would you debug overlapping grid items?
+* How can nested grids affect alignment between parent and child content?
+* How does writing-mode affect grid placement and alignment?
+* How can CSS Grid be used to implement complex responsive dashboards?
+* What performance considerations matter when rendering large grids with many items?
+* How would you design a maintainable grid system for a large enterprise application?

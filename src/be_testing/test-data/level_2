@@ -1,0 +1,30 @@
+* How would you design a scalable test data management strategy for a large Java application?
+* How would you design a reusable test data framework for API, database, and UI automation?
+* How do you generate deterministic test data for reproducible failures?
+* How do you handle random data generation while preserving reproducibility?
+* How do you design test data builders for complex domain objects?
+* How do you manage test data relationships across multiple database tables?
+* How do you generate consistent customer, account, order, and payment test data?
+* How do you manage referential integrity when creating large test datasets?
+* How do you generate millions of records efficiently for performance testing?
+* How do you prevent test data generation itself from becoming a performance bottleneck?
+* How do you design test data for parallel test execution?
+* How do you prevent data collisions when hundreds of tests run concurrently?
+* How do you isolate test data using unique tenants, users, or transactions?
+* How do you implement database cleanup safely after parallel tests?
+* How do you handle test data in distributed microservices?
+* How do you create consistent test data across multiple microservice databases?
+* How do you manage test data when an API call asynchronously creates database records?
+* How do you handle eventual consistency when validating generated test data?
+* How do you manage test data for Kafka-based workflows?
+* How do you correlate generated test data across API requests and asynchronous events?
+* How do you mask sensitive production data while preserving relationships between records?
+* How do you anonymize production data without breaking referential integrity?
+* How do you design a test data strategy that complies with data privacy requirements?
+* How do you version test datasets along with application versions?
+* How do you manage large test datasets in CI/CD pipelines?
+* How do you provision isolated test data for every CI pipeline execution?
+* How do you restore a database to a known state efficiently between tests?
+* How do database snapshots or containerized databases help with test data management?
+* How do you design test data APIs or services for large-scale automated testing?
+* How do you measure the quality, reliability, and maintainability of test data?

@@ -1,0 +1,119 @@
+**MLOps Fundamentals**
+* What is MLOps, and how does it differ from traditional DevOps?
+* What are the main goals of MLOps?
+* What are the major stages of an ML workflow?
+* What is the difference between model training and model inference?
+* Why are automation, monitoring, and reproducibility important in MLOps?
+
+**ML Lifecycle Management**
+* What are the major stages of the machine learning lifecycle?
+* What happens during data preparation, training, evaluation, deployment, and monitoring?
+* What is the difference between model development and model productionization?
+* Why should ML models have defined lifecycle states?
+* What is the role of an ML engineer throughout the model lifecycle?
+
+**Experiment Tracking**
+* What is experiment tracking in machine learning?
+* What are parameters, metrics, artifacts, and tags in an ML experiment?
+* Why should training experiments be recorded?
+* What is the difference between a training run and an experiment?
+* Name common tools used for experiment tracking.
+
+**Dataset and Model Versioning**
+* Why is dataset versioning important in machine learning?
+* What is model versioning?
+* What is the difference between a dataset version and a model version?
+* Why should a model artifact be linked to its training dataset?
+* What is the purpose of Git in an ML project?
+
+**Feature Stores**
+* What is a feature store?
+* Why are feature stores used in machine learning systems?
+* What is the difference between offline and online feature stores?
+* What is a feature definition?
+* How can a feature store reduce training-serving inconsistencies?
+
+**Model Registry**
+* What is a model registry?
+* What information is typically stored in a model registry?
+* What is the difference between a model artifact and a model registry entry?
+* What are model stages such as development, staging, and production?
+* Why is model lineage important in a registry?
+
+**Training Pipeline Automation**
+* What is an automated ML training pipeline?
+* What are the common stages of a training pipeline?
+* What is workflow orchestration?
+* Why are retries and checkpoints useful in training pipelines?
+* What is the difference between scheduled and event-triggered training?
+
+**Hyperparameter Tuning**
+* What are hyperparameters in machine learning?
+* How do hyperparameters differ from model parameters?
+* What is grid search?
+* What is random search?
+* Why is hyperparameter tuning important?
+
+**Model Validation**
+* What is model validation?
+* What is the difference between training, validation, and test datasets?
+* What are accuracy, precision, recall, and F1-score?
+* Why should a model be compared with a baseline?
+* What is overfitting, and how can validation help detect it?
+
+**Model Deployment Strategies**
+* What does model deployment mean?
+* What is the difference between batch inference and online inference?
+* What is a REST API-based model deployment?
+* What are canary deployment and blue-green deployment?
+* Why is containerization useful for model deployment?
+
+**Model Monitoring**
+* What is model monitoring?
+* What is the difference between infrastructure monitoring and model monitoring?
+* Which metrics should be monitored for a deployed model?
+* Why should prediction latency and error rates be tracked?
+* What is the difference between model performance monitoring and data-quality monitoring?
+
+**Data Drift and Concept Drift**
+* What is data drift?
+* What is concept drift?
+* How does data drift differ from concept drift?
+* What is feature-distribution monitoring?
+* Why can drift affect model accuracy?
+
+**Retraining Automation**
+* What is automated model retraining?
+* What events can trigger model retraining?
+* What is the difference between scheduled and drift-triggered retraining?
+* Why should retrained models be validated before deployment?
+* What is a retraining pipeline?
+
+**Reproducible ML Pipelines**
+* What is reproducibility in machine learning?
+* Why should random seeds be recorded?
+* What is the role of dependency management in reproducible training?
+* Why should datasets, code, configurations, and model artifacts be versioned together?
+* What is the difference between reproducibility and repeatability?
+
+**CI/CD for Machine Learning**
+* What is CI/CD for machine learning?
+* How does ML CI/CD differ from traditional application CI/CD?
+* What should be tested during an ML continuous integration pipeline?
+* What is continuous training?
+* Why should model deployment require automated quality checks?
+
+**ML Governance**
+* What is ML governance?
+* Why are model ownership and accountability important?
+* What is model lineage?
+* Why should ML decisions and deployment approvals be auditable?
+* What are model risk, fairness, and explainability?
+
+**Model Rollback and Recovery**
+* What is a model rollback?
+* When would you roll back a deployed model?
+* Why should previous model versions be retained?
+* What is the difference between rollback and retraining?
+* What is disaster recovery for an ML system?
+

@@ -1,0 +1,30 @@
+* Create a JavaScript module that exports a function to add two numbers.
+* Create a module that exports multiple utility functions using named exports.
+* Import multiple named exports from a separate JavaScript file and use them.
+* Create a module with a default export and import it into another module.
+* Write a program that combines named exports and a default export in one module.
+* Rename an imported function using the as keyword and call it.
+* Export a class from one module and create an instance of it in another module.
+* Create a module that exports constants and import them into another module.
+* Create a utility module containing functions for string manipulation and array processing.
+* Create a barrel file that re-exports functions from multiple modules.
+* Write a program that demonstrates module scope by declaring variables in separate modules.
+* Create a browser HTML page that loads a JavaScript file using type="module".
+* Write a program that dynamically imports a module when a button is clicked.
+* Write a program that handles errors when a dynamic import() fails.
+* Create a module that loads a large feature only when the user requests it.
+* Create two modules with a circular dependency and demonstrate the initialization issue.
+* Refactor two circularly dependent modules into modules with a shared dependency.
+* Create a CommonJS module using module.exports and consume it with require().
+* Write a CommonJS program that demonstrates the difference between exports and module.exports.
+* Create a Node.js ES module that imports a built-in Node.js module.
+* Create a Node.js project configuration that enables ES modules using package.json.
+* Write a program demonstrating the difference between .mjs and .cjs module files.
+* Create a module that exports a function returning a Promise and import it into another module.
+* Write a program that uses top-level await in an ES module.
+* Create a module that maintains shared state and demonstrate how multiple importers access it.
+* Create a plugin system where plugins are loaded dynamically using import().
+* Create a module that exports a class and several helper functions for a reusable library.
+* Configure package exports to expose selected public modules from a Node.js package.
+* Create a small application split into modules for services, utilities, and application logic.
+* Design a modular JavaScript application that supports lazy loading and avoids circular dependencies.

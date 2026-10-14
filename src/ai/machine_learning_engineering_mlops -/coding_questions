@@ -1,0 +1,102 @@
+**MLOps Fundamentals**
+* Implement a Python pipeline that validates input data, trains a model, evaluates it, and saves the artifact only when acceptance criteria are met.
+* Build a reusable ML pipeline interface that supports pluggable preprocessing, training, evaluation, and deployment stages.
+* Implement structured logging and metrics collection for each stage of an ML workflow.
+* Write unit tests for pipeline failures, invalid configurations, and rejected model candidates.
+
+**ML Lifecycle Management**
+* Implement a model lifecycle state machine supporting development, validation, staging, production, and retirement.
+* Write a transition validator that prevents a model from moving to production before all required checks pass.
+* Implement an API that retrieves lifecycle status, approval history, and active deployment references.
+* Create tests for invalid transitions, concurrent promotion requests, and retirement of models with active dependencies.
+
+**Experiment Tracking**
+* Implement an experiment logger that records parameters, metrics, source-code revision, dataset version, and artifact locations.
+* Write a comparison utility that ranks experiment runs according to configurable evaluation metrics and constraints.
+* Implement a mechanism to mark incomplete runs when training or artifact upload fails.
+* Create tests for concurrent logging, duplicate run identifiers, and missing artifact references.
+
+**Dataset and Model Versioning**
+* Implement a dataset-versioning utility that generates immutable identifiers from source manifests and configuration.
+* Write a model-artifact manifest containing dataset version, code revision, dependency versions, feature schema, and evaluation results.
+* Implement a comparison tool that identifies differences between two model manifests.
+* Create tests for artifact checksums, version collisions, and reproducibility metadata validation.
+
+**Feature Stores**
+* Implement an offline feature retrieval function that returns the feature values available at a specified historical timestamp.
+* Write an online feature service that retrieves values by entity ID and reports stale or missing features.
+* Implement feature-definition versioning and compatibility checks for model inference.
+* Create tests for point-in-time correctness, delayed updates, and training-serving consistency.
+
+**Model Registry**
+* Implement a registry API that registers immutable model artifacts with metadata and evaluation evidence.
+* Write a promotion function that verifies quality thresholds and required approvals before changing a model's production status.
+* Implement an endpoint-to-model-version lookup service.
+* Create tests for unauthorized promotion, concurrent updates, missing artifacts, and mutable alias changes.
+
+**Training Pipeline Automation**
+* Implement an orchestrated training pipeline with validation, preprocessing, training, evaluation, registration, and notifications.
+* Write an idempotent pipeline stage that safely retries after a partial failure.
+* Implement checkpoint persistence and resume logic for completed stages.
+* Create tests for timeouts, retry limits, concurrent executions, and permanent failures.
+
+**Hyperparameter Tuning**
+* Implement a grid-search or random-search utility for a configurable model and evaluation metric.
+* Write an early-stopping mechanism that terminates trials unlikely to meet the target objective.
+* Implement a tuning scheduler with limits on concurrent trials and total compute budget.
+* Create tests for invalid search spaces, failed trials, noisy metrics, and deterministic trial configuration.
+
+**Model Validation**
+* Implement a validation component that calculates precision, recall, F1-score, and a configurable business metric.
+* Write a promotion gate that compares a candidate model with a production baseline and rejects regressions beyond defined limits.
+* Implement subgroup metric calculations and configurable fairness checks.
+* Create tests for data leakage checks, missing labels, class imbalance, and metric threshold enforcement.
+
+**Model Deployment Strategies**
+* Implement a model-serving API with versioned endpoints and input-schema validation.
+* Write a canary traffic router that gradually increases candidate-model traffic based on health and quality metrics.
+* Implement shadow inference that compares candidate predictions with production predictions without affecting user responses.
+* Create tests for readiness failures, latency thresholds, traffic-routing correctness, and rollback behavior.
+
+**Model Monitoring**
+* Implement a monitoring service that records prediction latency, error rates, model versions, and feature freshness.
+* Write an alert evaluator that detects sustained metric violations using configurable windows and thresholds.
+* Implement a delayed-label evaluation job that joins predictions with ground-truth outcomes.
+* Create tests for missing labels, seasonal baselines, duplicate predictions, and alert suppression.
+
+**Data Drift and Concept Drift**
+* Implement a drift detector using a suitable statistical test or distribution-distance metric.
+* Write a feature-level report that identifies the largest distribution changes between reference and production data.
+* Implement a detector that evaluates model quality after ground-truth labels become available.
+* Create tests for stable distributions, synthetic shifts, seasonal patterns, and false-positive controls.
+
+**Retraining Automation**
+* Implement a retraining trigger that combines drift thresholds, minimum new-data volume, and a cooldown period.
+* Write a workflow that trains a candidate model and promotes it only after automated evaluation succeeds.
+* Implement a concurrency lock that prevents duplicate retraining jobs for the same model and dataset version.
+* Create tests for repeated triggers, invalid training data, failed candidates, and budget-limit enforcement.
+
+**Reproducible ML Pipelines**
+* Implement a pipeline manifest that captures code version, dataset snapshot, configuration, random seed, runtime image, and dependency versions.
+* Write a cache-key generator that invalidates results when any relevant input or configuration changes.
+* Implement an artifact verification utility that checks model files against stored checksums and manifests.
+* Create tests that distinguish deterministic outputs from statistically equivalent model results.
+
+**CI/CD for Machine Learning**
+* Implement a CI pipeline that runs data-contract tests, preprocessing tests, model evaluation, and artifact validation.
+* Write a release gate that blocks deployment if security scans, quality thresholds, or approval requirements fail.
+* Implement promotion of a validated model artifact between staging and production without rebuilding it.
+* Create tests for failed deployment health checks, artifact tampering, and automated rollback.
+
+**ML Governance**
+* Implement a model inventory service that records ownership, risk classification, intended use, lineage, and lifecycle status.
+* Write an authorization layer that restricts dataset access and model promotion based on roles and environment.
+* Implement an audit logger for model registration, approvals, deployment changes, and retirement events.
+* Create tests for unauthorized artifact modification, missing lineage, and incomplete approval evidence.
+
+**Model Rollback and Recovery**
+* Implement an automated rollback controller that restores the last approved model when configured quality or serving thresholds are breached.
+* Write a compatibility validator that checks model, feature schema, runtime, and configuration before rollback.
+* Implement an artifact recovery utility that verifies checksums and restores a model from a backup location.
+* Create tests for partial deployment failures, concurrent rollback requests, missing artifacts, and recovery verification.
+

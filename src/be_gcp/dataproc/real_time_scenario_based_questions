@@ -1,0 +1,30 @@
+* A Spark job on Dataproc that normally completes in 20 minutes now takes two hours. How would you investigate the slowdown?
+* A Dataproc job fails with executor out-of-memory errors when processing a large input file. How would you resolve the issue?
+* A Spark application runs successfully on a local machine but fails on Dataproc. How would you identify the root cause?
+* A Dataproc cluster remains idle for several hours after its job completes. How would you prevent unnecessary charges?
+* A daily ETL pipeline misses its SLA because the Dataproc cluster takes too long to start. How would you improve startup time?
+* A Dataproc job fails because its service account cannot access a Cloud Storage bucket. How would you troubleshoot permissions?
+* A Java Spark JAR works with one Dataproc image version but fails after an image upgrade. How would you diagnose compatibility problems?
+* A Spark job processes most partitions quickly but one task runs for an unusually long time. How would you investigate data skew?
+* A Dataproc cluster repeatedly loses worker nodes during large shuffle operations. How would you determine whether the issue is resource-related?
+* A Spark job writes thousands of tiny Parquet files to Cloud Storage. How would you redesign the output strategy?
+* A production pipeline must process several terabytes every night within a fixed time window. How would you size and tune the cluster?
+* A Dataproc job succeeds but produces incomplete output after a retry. How would you make the pipeline idempotent?
+* Two Dataproc jobs overwrite the same Cloud Storage output location at the same time. How would you prevent data corruption?
+* A Dataproc cluster cannot download required dependencies because outbound internet access is blocked. How would you deploy the dependencies securely?
+* A Spark job spends most of its time in shuffle read and shuffle write operations. What would you investigate and optimize?
+* A Dataproc pipeline experiences unpredictable input volume throughout the week. How would you configure autoscaling?
+* A job processes sensitive customer data and must run without public IP addresses. How would you design the networking and IAM setup?
+* A Dataproc job fails intermittently because of temporary errors when reading from Cloud Storage. How would you handle retries and recovery?
+* A team needs to execute hundreds of independent Spark jobs daily. How would you design scheduling, concurrency limits, and failure handling?
+* A data engineering team needs to orchestrate Dataproc jobs with upstream and downstream dependencies. How would you implement the workflow?
+* A Dataproc pipeline must load processed data into BigQuery while avoiding duplicate records. How would you design the ingestion process?
+* A Spark application runs slowly after the dataset grows tenfold, even though the cluster size remains unchanged. How would you identify the limiting resources?
+* A Dataproc job fails only when the number of worker nodes increases. What configuration, partitioning, or dependency issues would you investigate?
+* Cloud Monitoring shows high CPU utilization but low overall job throughput. How would you determine whether the workload is CPU-bound or affected by other bottlenecks?
+* A cluster's autoscaling policy adds workers too late to meet the processing SLA. How would you tune scaling behavior?
+* A business requires the same pipeline to run in two Google Cloud regions for disaster recovery. How would you design the architecture?
+* A team wants to replace a continuously running Hadoop cluster with Dataproc. How would you plan migration, validation, and rollback?
+* A production job fails after a dependency version changes in an initialization action. How would you make deployments reproducible?
+* A Spark job's output differs between retries because records are processed more than once. How would you investigate and correct the issue?
+* A finance team reports unexpectedly high Dataproc costs despite stable input volumes. How would you analyze billing, cluster utilization, storage, and job execution?

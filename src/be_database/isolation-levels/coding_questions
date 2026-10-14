@@ -1,0 +1,30 @@
+* Write a JDBC program that configures a connection to use READ_COMMITTED isolation and executes a transaction.
+* Write a JDBC example demonstrating how to retrieve the current transaction isolation level.
+* Create a Spring Boot service method that uses @Transactional with READ_COMMITTED isolation.
+* Write a Spring Boot example that configures SERIALIZABLE isolation for a critical financial operation.
+* Implement a Java program with two concurrent transactions to demonstrate a lost update.
+* Write a SQL script that demonstrates a non-repeatable read using two concurrent transactions.
+* Write a SQL script that demonstrates a phantom read where supported by the database and isolation level.
+* Create a JDBC program that demonstrates the difference between READ_COMMITTED and REPEATABLE_READ.
+* Implement a Spring Data JPA service that uses optimistic locking with the @Version annotation.
+* Write a JPA entity and repository method that prevent concurrent updates using pessimistic write locking.
+* Implement a Spring Boot inventory service that prevents overselling when multiple requests purchase the last item.
+* Write a Java service that transfers money between two accounts within a single database transaction.
+* Implement a transaction-safe booking service that prevents duplicate reservations for the same resource and time slot.
+* Write a Java program that detects an optimistic locking conflict and returns a meaningful business error.
+* Implement a retry mechanism for serialization failures with a configurable maximum attempt count and backoff.
+* Write a Spring Boot service that retries only transient transaction failures and avoids retrying non-recoverable errors.
+* Implement an idempotent payment operation that remains safe when a transaction is retried.
+* Write a JUnit integration test that verifies the configured isolation level prevents dirty reads.
+* Create a concurrent integration test that demonstrates the lost update problem and verifies the fix.
+* Write a Testcontainers-based integration test that validates transaction isolation against a real PostgreSQL or MySQL instance.
+* Implement a repository query using SELECT FOR UPDATE to lock a record before updating it.
+* Write a Java example comparing optimistic locking with pessimistic locking under concurrent updates.
+* Implement a service that updates multiple inventory rows while minimizing deadlock risk.
+* Write a SQL query or database diagnostic routine to identify sessions waiting on locks.
+* Implement structured logging for transaction failures, deadlocks, and serialization conflicts in Spring Boot.
+* Create a Spring Boot example that uses TransactionTemplate to execute work with a specific isolation level.
+* Write a test demonstrating how Spring transaction propagation affects the isolation level of nested service calls.
+* Implement a transaction boundary that ensures a business rule involving multiple rows remains consistent under concurrent requests.
+* Write a Java program that simulates concurrent bank transfers and verifies that total account balances remain consistent.
+* Design and implement a transaction strategy for an order-processing service that balances data consistency, concurrency, and throughput.

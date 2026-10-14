@@ -1,0 +1,30 @@
+* What is transaction isolation in a database?
+* Why are isolation levels required in database transactions?
+* What is a database transaction?
+* What are the ACID properties of a transaction?
+* What are the different transaction isolation levels?
+* What is the default isolation level in a relational database?
+* What is the difference between READ UNCOMMITTED and READ COMMITTED?
+* What is the difference between READ COMMITTED and REPEATABLE READ?
+* What is the difference between REPEATABLE READ and SERIALIZABLE?
+* What is a dirty read?
+* What is a non-repeatable read?
+* What is a phantom read?
+* What is a lost update?
+* What is a read skew anomaly?
+* What is write skew in database transactions?
+* How does READ UNCOMMITTED handle concurrent transactions?
+* How does READ COMMITTED prevent dirty reads?
+* How does REPEATABLE READ handle repeated reads?
+* How does SERIALIZABLE ensure transaction consistency?
+* Can dirty reads occur under READ COMMITTED?
+* Can non-repeatable reads occur under READ COMMITTED?
+* Can phantom reads occur under REPEATABLE READ?
+* What is the difference between pessimistic and optimistic concurrency control?
+* What is the role of locking in transaction isolation?
+* What is the difference between shared locks and exclusive locks?
+* What is the difference between row-level locking and table-level locking?
+* What is MVCC, and how does it relate to transaction isolation?
+* How can transaction isolation levels be configured in SQL?
+* How can you set the transaction isolation level in a Java application?
+* Which transaction isolation level would you choose for a simple read-only operation, and why?

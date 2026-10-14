@@ -1,0 +1,30 @@
+* A variable returns undefined even though you believe it has been assigned a value. How would you debug the issue?
+* A function cannot access a variable declared inside an if block. Why does this happen?
+* A loop creates callbacks that all print the same final value. How would you fix the problem?
+* A variable declared with const contains an object whose properties are changing. Is this expected behavior, and why?
+* A developer accidentally creates a global variable inside a function. How would you identify and prevent it?
+* A function parameter and a global variable have the same name. How would JavaScript resolve the variable reference?
+* An application throws a ReferenceError when accessing a let variable before its declaration. How would you explain and fix it?
+* A variable declared with var inside a loop remains accessible outside the loop. How would you prevent this behavior?
+* Two modules declare variables with the same name. Why do they not necessarily conflict?
+* A developer reassigns a const variable and receives a TypeError. How would you correct the implementation?
+* A function modifies an object passed as an argument, unexpectedly affecting another part of the application. How would you investigate?
+* A nested function continues to access an outer variable after the outer function has returned. How would you explain this behavior?
+* A local variable unexpectedly hides a global configuration value. How would you diagnose the shadowing issue?
+* A variable works in a browser script but behaves differently after being moved into an ES module. What could explain the difference?
+* A legacy application relies on implicit global variables and breaks under strict mode. How would you refactor it?
+* A loop uses var to create asynchronous callbacks, and each callback accesses the wrong index. How would you resolve the issue?
+* A developer changes a const declaration to let to fix an assignment error. How would you determine whether this is the right solution?
+* A variable is declared twice in the same scope, causing a syntax error. How would you fix the declaration structure?
+* A large function has many variables with overlapping names. How would you improve readability and reduce bugs?
+* An object declared with const is frozen, but a nested object can still be modified. How would you explain the behavior?
+* A catch block declares an error variable that conflicts with an existing declaration. How would you resolve the scope issue?
+* An application has memory usage that grows because callbacks retain references to large objects. How could variable scope and closures contribute?
+* A developer uses undefined as a signal that a value was never provided, but the value may be explicitly undefined. How would you design a clearer solution?
+* A variable is available in one JavaScript file but not another. How would you investigate script scope, modules, and exports?
+* A function returns an unexpected value because a local variable shadows an outer variable. How would you debug it?
+* A class field and a local variable use the same name. How would you distinguish their scopes and access patterns?
+* An application behaves differently when a script is loaded as a module instead of a regular script. How do variable declarations contribute?
+* A configuration object is declared with const, but developers keep changing its values. How would you make the configuration immutable?
+* A developer uses var, let, and const inconsistently across a project. What coding standards would you recommend?
+* You are reviewing code for a production application. How would you identify risky variable declarations and scope-related bugs?

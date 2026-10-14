@@ -1,0 +1,30 @@
+* How does Ansible achieve idempotency when configuring servers?
+* How would you structure an Ansible repository for a large enterprise application?
+* How would you organize Ansible playbooks, roles, variables, templates, and handlers?
+* What is the difference between host variables, group variables, play variables, and role defaults?
+* How does Ansible variable precedence work?
+* How would you maintain separate development, staging, and production inventories?
+* How would you configure dynamic inventory for cloud-based virtual machines?
+* How would you reuse Ansible roles across multiple projects?
+* How would you manage role dependencies in Ansible?
+* How would you encrypt and decrypt sensitive variables using Ansible Vault?
+* How would you manage Ansible Vault passwords securely in a CI/CD pipeline?
+* What is the difference between Ansible Vault and an external secrets manager?
+* How would you detect configuration drift across hundreds of servers?
+* How would you remediate configuration drift without overwriting legitimate emergency changes?
+* How would you manage application configuration when the same artifact runs in multiple environments?
+* What is the difference between build-time configuration and runtime configuration?
+* How would you externalize Spring Boot application properties in a containerized environment?
+* How would you manage configuration using environment variables, configuration files, and centralized configuration services?
+* How would you handle configuration precedence when values are defined in multiple sources?
+* How would you validate configuration values before deploying an application?
+* How would you implement parameter versioning and auditability?
+* How would you rotate database credentials without rebuilding or redeploying the application?
+* What are the advantages and disadvantages of immutable configuration?
+* How would you update dynamic configuration without restarting application instances?
+* How would you implement feature flags using centralized configuration?
+* How would you ensure that feature configuration changes are auditable and reversible?
+* How would you handle configuration changes that require application restarts?
+* How would you prevent configuration changes from causing inconsistent behavior across application instances?
+* How would you test Ansible roles before applying them to production servers?
+* How would you troubleshoot an Ansible playbook that succeeds on some hosts but fails on others?

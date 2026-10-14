@@ -1,0 +1,21 @@
+
+* Design a scalable event-driven architecture using Amazon SNS and SQS for multiple Java microservices.
+* How would you guarantee that business events are not lost when a Java application publishes messages to SNS?
+* How would you implement the transactional outbox pattern to reliably publish database changes to SNS?
+* How would you handle duplicate message delivery when SNS subscribers process the same business event more than once?
+* How would you design an idempotent Java consumer for messages delivered through SNS to SQS?
+* Explain the delivery guarantees and ordering limitations of SNS standard and FIFO topics.
+* How would you design a notification platform that supports millions of messages per day using SNS?
+* How would you prevent one subscriber's processing failures from affecting other SNS subscribers?
+* How would you design retry and dead-letter queue strategies for SNS-to-SQS and SNS-to-HTTP integrations?
+* How would you securely publish messages to an SNS topic across multiple AWS accounts?
+* How would you prevent unauthorized applications from publishing sensitive events to an SNS topic?
+* How would you design message filtering to route events to different microservices without creating excessive topics?
+* How would you handle message schema evolution when multiple subscribers consume SNS events?
+* How would you implement correlation IDs and distributed tracing across SNS-based event flows?
+* How would you troubleshoot SNS delivery failures caused by IAM policies, endpoint permissions, or subscription configuration?
+* How would you optimize SNS publishing throughput while respecting AWS service quotas?
+* How would you design a multi-region notification architecture using SNS while accounting for regional failures?
+* How would you encrypt SNS messages using AWS KMS and restrict access to encrypted topics?
+* How would you monitor end-to-end event delivery latency across SNS, SQS, and Java consumers?
+* How would you compare SNS, EventBridge, and Kafka for a high-volume enterprise event-driven architecture?

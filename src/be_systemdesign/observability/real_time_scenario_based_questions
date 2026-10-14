@@ -1,0 +1,30 @@
+* Your Spring Boot application experiences intermittent response delays, but average latency looks normal. How would you investigate using observability data?
+* A production API's error rate increases after a deployment. How would you correlate traces, logs, and metrics to identify the cause?
+* Users report slow requests, but CPU and memory usage remain low. What would you investigate next?
+* A microservice returns HTTP 500 errors only when calling a downstream service. How would you trace the failure across service boundaries?
+* Your logs contain errors but lack request identifiers. How would you improve correlation across multiple services?
+* A Kafka consumer group has increasing lag, while the producer's throughput remains stable. Which metrics and traces would you inspect?
+* Your distributed traces stop at a message broker, and consumer operations appear as unrelated traces. How would you fix context propagation?
+* A Java application experiences frequent long garbage collection pauses. How would you detect and diagnose the issue?
+* Your application shows increasing heap usage even after garbage collection. How would you investigate a possible memory leak?
+* Database response times increase during peak traffic, causing API timeouts. Which observability signals would help identify the bottleneck?
+* A service repeatedly triggers alerts, but the incidents have no meaningful user impact. How would you improve the alerting strategy?
+* A service meets its average latency target but frequently violates its p99 latency SLO. How would you investigate and respond?
+* Your monitoring backend becomes unavailable for 30 minutes. How should applications and telemetry collectors behave during the outage?
+* Log ingestion costs suddenly double after a new release. How would you identify the cause and reduce costs?
+* A metric dashboard becomes unusable because of millions of distinct label combinations. How would you redesign the metrics?
+* Multiple services fail simultaneously after a traffic spike. How would you distinguish a shared dependency failure from independent application issues?
+* Your application has healthy liveness probes but users still experience failures. What additional health signals would you examine?
+* A deployment introduces latency regressions for only one customer segment. How would you identify the affected requests without exposing sensitive data?
+* A third-party API intermittently times out, but your service reports only generic errors. How would you improve visibility into the dependency?
+* A distributed transaction spans several microservices, and the final business operation fails after earlier steps succeed. How would you trace the workflow?
+* A Java service occasionally runs out of database connections despite normal request volume. Which metrics, logs, and traces would you correlate?
+* An alert fires during every traffic peak because of a fixed error-rate threshold. How would you make the alert more meaningful?
+* Your organization runs services across multiple regions, and timestamps differ between systems. How would you investigate events in the correct order?
+* A security review discovers access tokens and personal information in logs. How would you prevent further exposure and remediate the logging design?
+* Your OpenTelemetry Collector drops telemetry under heavy load. How would you identify and resolve the bottleneck?
+* A service's error rate rises while its request rate drops sharply. How would you distinguish an application failure from an upstream routing problem?
+* A new release changes metric names and breaks existing dashboards. How would you manage telemetry compatibility across releases?
+* A team cannot reproduce a production-only issue in a test environment. How would you use production observability data to narrow down the cause?
+* Your organization needs to prove that a customer-facing API met its availability target over the last month. How would you design the evidence and reporting?
+* You must reduce observability infrastructure costs by 40% without losing critical incident evidence. What changes would you prioritize?

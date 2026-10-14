@@ -1,0 +1,30 @@
+* A repository save operation succeeds, but the data is not visible in the database immediately. How would you investigate transaction boundaries and flushing?
+* An application inserts duplicate records when multiple requests create the same business entity concurrently. How would you prevent duplicates?
+* A repository method becomes slow after the table grows from thousands to millions of rows. How would you investigate and optimize it?
+* Your API returns 100 employees but executes more than 200 SQL queries. How would you identify and resolve the N+1 query problem?
+* A paginated endpoint becomes slower as the page number increases. How would you investigate offset pagination and consider keyset pagination?
+* A developer uses FetchType.EAGER on several entity relationships, causing slow API responses. How would you redesign the fetching strategy?
+* A LazyInitializationException occurs when converting an entity to a response DTO. How would you fix it without introducing unnecessary eager loading?
+* An entity update unexpectedly overwrites fields modified by another request. How would you use optimistic locking to prevent lost updates?
+* Two users update the same record simultaneously, and one update fails. How would you handle the concurrency exception?
+* A transaction updates two tables, but only one update remains after an exception. How would you investigate transaction management and rollback behavior?
+* A checked exception occurs during a transactional operation, but the transaction is not rolled back. What could be the reason?
+* A bulk update query changes database rows, but subsequent reads within the same transaction return stale entity values. How would you resolve the persistence-context inconsistency?
+* A repository method using save() creates a new row instead of updating the existing record. How would you investigate entity identity and new-entity detection?
+* A delete operation fails because related child records exist. How would you determine whether cascading, orphan removal, or explicit deletion is appropriate?
+* A ManyToMany relationship creates unexpected duplicate association records. How would you investigate entity mapping and database constraints?
+* A service experiences deadlocks during concurrent transfers between accounts. How would you redesign transaction boundaries and locking?
+* A report query loads too many columns and consumes excessive memory. How would you use projections or DTO queries to optimize it?
+* A search endpoint has many optional filters and increasingly complex SQL. How would you implement maintainable dynamic queries?
+* A repository query works in a local database but fails in production because of SQL dialect differences. How would you investigate the issue?
+* A database connection pool becomes exhausted during peak traffic. How would you inspect transaction duration, connection usage, and query performance?
+* A production application experiences duplicate inserts after a retry mechanism re-executes failed requests. How would you make the operation idempotent?
+* A database schema change causes the application to fail during deployment. How would you coordinate schema migrations and application compatibility?
+* A multi-tenant application accidentally returns records belonging to another tenant. How would you enforce tenant isolation at the persistence layer?
+* A read-heavy application needs to use a database replica while writes continue against the primary database. How would you configure routing and handle replication lag?
+* A repository integration test passes against an embedded database but fails against the production database. How would you improve test fidelity?
+* A transaction performs hundreds of updates and causes excessive memory consumption. How would you optimize batching and persistence-context management?
+* A REST API returns an entity with bidirectional relationships, causing infinite JSON serialization. How would you design the API response layer?
+* A query with multiple joins returns duplicate root entities. How would you investigate join cardinality, DISTINCT, and pagination behavior?
+* A scheduled batch job processes the same records concurrently on multiple application instances. How would you coordinate processing safely?
+* Your application needs to maintain an audit trail for changes made to sensitive records. How would you implement auditing while preserving transactional consistency?

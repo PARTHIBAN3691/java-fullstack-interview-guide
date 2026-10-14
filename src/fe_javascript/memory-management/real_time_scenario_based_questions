@@ -1,0 +1,30 @@
+* A web application becomes slower after running for several hours. How would you investigate possible memory leaks?
+* A dashboard's heap usage increases every time the user navigates between pages. What would you check first?
+* A component is removed from the DOM, but its memory is not released. What could be retaining it?
+* An event listener continues running after a component is destroyed. How would you prevent the associated memory leak?
+* A setInterval() callback continues executing after the user leaves a page. How would you fix it?
+* A closure retains a large API response even though the response is no longer needed. How would you reduce memory retention?
+* A global array stores temporary objects indefinitely. How would you redesign the storage strategy?
+* A Map contains cached objects that are no longer used, causing memory usage to grow. How would you manage the cache?
+* A developer replaces Map with WeakMap expecting automatic cleanup. What limitations should they understand?
+* A single object reference keeps a large nested object graph alive. How would you identify the retaining reference?
+* A single-page application leaks memory whenever users navigate between routes. How would you investigate the problem?
+* A modal is closed, but its event handlers and associated data remain in memory. How would you clean them up?
+* A large array is processed repeatedly, creating high garbage collection pressure. How would you optimize the processing?
+* A Node.js API's memory usage rises continuously under load. How would you distinguish a leak from normal allocation behavior?
+* A service has frequent garbage collection pauses and high response latency. What would you measure and optimize?
+* A browser tab consumes increasing memory while processing streaming data. How would you control buffering and retention?
+* A data visualization stores every historical dataset even when only recent data is required. How would you reduce memory usage?
+* A developer sets a variable to null but sees no immediate reduction in heap usage. How would you explain this behavior?
+* An application creates thousands of temporary objects inside a frequently executed function. How would you assess whether this is a real problem?
+* A cache improves response time but causes memory usage to grow without limits. How would you introduce a bounded caching strategy?
+* A Web Worker processes large binary files and uses too much memory. How would you optimize data transfer and cleanup?
+* A heap snapshot shows many detached HTML elements. How would you trace their retaining paths?
+* A memory profiler shows a large retained size associated with a closure. How would you determine which captured variables are necessary?
+* A Node.js service handles large JSON payloads and experiences out-of-memory errors. How would you reduce peak memory usage?
+* A developer uses FinalizationRegistry to release an external resource. Why could this design fail?
+* A page performs repeated deep copies of large objects. How would you reduce allocation overhead while preserving correctness?
+* A long-running background task retains references to completed requests. How would you modify the task's lifecycle?
+* A mobile browser tab crashes while processing a large dataset. How would you reduce the memory footprint?
+* Memory usage drops after garbage collection but then steadily increases again. What evidence would you collect before diagnosing a leak?
+* You need to build a memory-efficient application that handles millions of records. What data structures and processing strategies would you consider?

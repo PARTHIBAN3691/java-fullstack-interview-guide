@@ -1,0 +1,30 @@
+* How would you design a secure OAuth 2.0 architecture for a distributed microservices platform?
+* How do OAuth 2.0 and OpenID Connect differ in their responsibilities?
+* How does an OpenID Connect ID token differ from an OAuth 2.0 access token?
+* Why should an API validate an access token rather than use an ID token for authorization?
+* How would you choose between JWT access tokens and opaque access tokens?
+* What are the trade-offs between local JWT validation and remote token introspection?
+* How would you implement access-token revocation when JWTs are validated locally?
+* How would you design refresh-token rotation and reuse detection?
+* How would you prevent refresh-token theft from compromising a user's session indefinitely?
+* How would you protect OAuth 2.0 flows against authorization-code interception?
+* How would you mitigate authorization-code injection and redirect URI manipulation?
+* How does PKCE reduce authorization-code interception risks?
+* How would you protect against CSRF attacks in browser-based OAuth flows?
+* How would you protect OAuth clients against open redirect vulnerabilities?
+* What security risks arise from wildcard or loosely validated redirect URIs?
+* How would you implement the OAuth 2.0 Client Credentials grant securely across microservices?
+* How would you decide between token exchange and forwarding the original access token to downstream services?
+* What is OAuth 2.0 Token Exchange, and when is it useful?
+* How would you implement the principle of least privilege using scopes and audiences?
+* How do resource indicators and audience restrictions help prevent token misuse?
+* How would you prevent a token issued for one API from being accepted by another API?
+* How would you design fine-grained authorization when scopes alone are insufficient?
+* How do OAuth 2.0 scopes differ from application roles and permissions?
+* How would you rotate client secrets without interrupting production traffic?
+* How would you manage signing-key rotation for JWT access tokens issued by an authorization server?
+* How should a resource server handle authorization-server outages when using opaque-token introspection?
+* How would you protect OAuth endpoints against brute-force attempts and token abuse?
+* How would you implement sender-constrained access tokens using mutual TLS or DPoP?
+* What are the security implications of using bearer tokens in browser-based applications?
+* How would you design OAuth 2.0 for multi-tenant SaaS applications with strict tenant isolation?

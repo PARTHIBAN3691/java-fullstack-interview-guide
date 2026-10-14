@@ -1,0 +1,21 @@
+
+* Write a Dockerfile to containerize a Spring Boot application for deployment to AKS.
+* Create a Kubernetes Deployment YAML file for a Spring Boot application with three replicas.
+* Write a Kubernetes Service YAML file to expose a Java application internally using ClusterIP.
+* Create a Kubernetes Ingress configuration that exposes a Spring Boot application over HTTPS.
+* Write a Kubernetes ConfigMap and Deployment configuration to inject environment-specific application properties.
+* Create a Kubernetes Secret configuration for application credentials and explain how you would protect it in production.
+* Write a Kubernetes Deployment YAML file with CPU and memory requests, limits, and a startup probe for a Java application.
+* Configure readiness and liveness probes for a Spring Boot application using Spring Boot Actuator endpoints.
+* Write a Horizontal Pod Autoscaler manifest that scales a Java application based on CPU utilization.
+* Create a Kubernetes manifest with a rolling update strategy and suitable settings to minimize deployment downtime.
+* Write a Kubernetes configuration for mounting an Azure Key Vault secret using the Secrets Store CSI Driver.
+* Implement a Spring Boot service that accesses Azure Key Vault using Azure Identity libraries and Microsoft Entra Workload ID.
+* Write a Kubernetes configuration that enables an AKS workload to access Azure resources using workload identity without storing client secrets.
+* Create a Kubernetes NetworkPolicy that restricts a Java application's ingress traffic to approved application pods.
+* Write a Kubernetes PodDisruptionBudget configuration for a highly available Spring Boot service.
+* Create a Kubernetes manifest that spreads application replicas across Availability Zones using topology spread constraints.
+* Write a script using `kubectl` commands to identify pods in `CrashLoopBackOff` and retrieve their logs and previous container logs.
+* Implement a Spring Boot health endpoint suitable for Kubernetes readiness and liveness checks.
+* Create an Azure DevOps pipeline that builds a Spring Boot application, creates a Docker image, pushes it to ACR, and deploys it to AKS.
+* Design and implement a production deployment solution for Spring Boot microservices on AKS with autoscaling, workload identity, Azure Key Vault, monitoring, and automated rollback.

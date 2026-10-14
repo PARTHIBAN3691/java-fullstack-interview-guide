@@ -1,0 +1,30 @@
+* Write an Express.js endpoint for user registration with input validation.
+* Implement password hashing and verification using bcrypt.
+* Create a login API that validates credentials and returns a JWT.
+* Write middleware that verifies a JWT and protects an Express.js route.
+* Implement JWT validation for expiration, signature, issuer, and audience.
+* Create an Express.js endpoint that returns the authenticated user's profile.
+* Implement role-based route protection using JWT claims.
+* Write middleware that checks whether a user has permission to perform a particular operation.
+* Implement refresh-token generation and validation using Node.js.
+* Create a refresh-token rotation mechanism that detects reuse of revoked tokens.
+* Implement logout by revoking a refresh token stored in a database or Redis.
+* Write an Express.js login endpoint with rate limiting and account lockout.
+* Implement a secure password-reset flow with single-use, time-limited tokens.
+* Create a password-change endpoint that verifies the current password before updating the hash.
+* Configure Express.js session authentication using a persistent session store.
+* Implement secure authentication cookies with HttpOnly, Secure, and SameSite attributes.
+* Write middleware that checks for a valid session and redirects unauthenticated users.
+* Implement OAuth 2.0 authorization-code flow with PKCE using a suitable Node.js library.
+* Write a callback handler that validates OAuth state and exchanges an authorization code.
+* Implement OpenID Connect ID-token validation using a trusted provider's JWKS endpoint.
+* Create an MFA verification endpoint that validates TOTP codes.
+* Implement an MFA recovery flow using single-use recovery codes.
+* Write a function that generates cryptographically secure random tokens using Node.js crypto.
+* Implement an authentication audit logger that redacts passwords, cookies, and bearer tokens.
+* Write unit tests for JWT authentication middleware, including expired and malformed tokens.
+* Create integration tests for registration, login, refresh, and logout APIs.
+* Implement Redis-backed session invalidation across multiple Node.js instances.
+* Write middleware that validates the intended audience and tenant of an incoming access token.
+* Implement authentication for a WebSocket connection and handle session expiration.
+* Build a small authentication module with registration, login, token refresh, logout, and protected user-profile endpoints.

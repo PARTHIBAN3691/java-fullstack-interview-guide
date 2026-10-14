@@ -1,0 +1,30 @@
+* How would you design a distributed rate limiter for a horizontally scaled REST API?
+* How would you guarantee atomicity when updating rate-limit counters across multiple instances?
+* How would you choose between fixed window, sliding window, token bucket, and leaky bucket algorithms for a high-traffic API?
+* How would you minimize boundary effects in a fixed-window rate limiter?
+* How would you implement an accurate sliding-window rate limiter without excessive memory usage?
+* How would you design a token bucket rate limiter that supports configurable refill rates?
+* How would you handle clock drift across distributed rate-limiting nodes?
+* How would you prevent a single hot Redis key from becoming a bottleneck?
+* How would you design rate limiting for millions of API clients?
+* How would you handle Redis unavailability without making the entire API unavailable?
+* What are the trade-offs between fail-open and fail-closed rate-limiting strategies?
+* How would you prevent race conditions during rate-limit policy updates?
+* How would you implement hierarchical rate limiting across users, tenants, and API endpoints?
+* How would you enforce both per-second burst limits and long-term daily quotas?
+* How would you design weighted rate limiting for APIs with different processing costs?
+* How would you prevent clients from bypassing IP-based rate limits using proxies or rotating IP addresses?
+* How would you handle shared NAT addresses without unfairly limiting multiple legitimate users?
+* How would you design rate limiting for multi-tenant SaaS applications?
+* How would you ensure fair resource allocation between tenants?
+* How would you implement adaptive rate limiting based on system load?
+* How would you combine rate limiting with circuit breakers and bulkheads?
+* How would you avoid retry storms when clients receive HTTP 429 responses?
+* How would you design rate limiting for asynchronous and long-running REST operations?
+* How would you account for in-flight requests rather than only request arrival rates?
+* How would you design a rate limiter that supports different policies by subscription tier?
+* How would you maintain consistency between an API gateway rate limiter and application-level limits?
+* How would you measure the accuracy and overhead of a distributed rate limiter?
+* How would you design rate limiting for APIs deployed across multiple geographic regions?
+* How would you prevent abuse when rate-limit counters expire or are evicted unexpectedly?
+* How would you evolve rate-limit policies without disrupting existing API consumers?

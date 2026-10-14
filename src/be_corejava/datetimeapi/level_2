@@ -1,0 +1,21 @@
+# Core Java — Date and Time API
+## Level 2 — Difficult
+
+1. How does the Java Date and Time API handle daylight-saving time (DST) transitions?
+2. What happens when a local time falls into a daylight-saving gap or overlaps during a clock change?
+3. How would you handle ambiguous local date-time values when converting them into a specific time zone?
+4. Why can storing a timestamp as `LocalDateTime` cause problems in distributed applications?
+5. When would you choose `Instant`, `OffsetDateTime`, or `ZonedDateTime` for database persistence?
+6. How would you design a system that preserves both the original time zone and the exact point in time of an event?
+7. What are the differences between `ChronoUnit`, `TemporalUnit`, `TemporalAmount`, and `TemporalAdjuster`?
+8. How would you create a custom `TemporalAdjuster` to find the next business day, excluding weekends and public holidays?
+9. How would you implement a date-parsing strategy that supports multiple formats while correctly handling invalid input?
+10. How do locale and chronology affect date parsing and formatting?
+11. How would you make date-dependent business logic deterministic and unit-testable?
+12. What issues can occur when a JVM's default time zone differs across application instances?
+13. How would you handle timestamp precision differences between Java, a relational database, and an external API?
+14. How would you design recurring schedules for users in different time zones when daylight-saving rules change?
+15. Why should date-time formatters use explicit patterns or standards rather than relying on defaults?
+16. How would you process a large collection of timestamped events arriving out of chronological order?
+17. What challenges arise when comparing dates across different calendar systems?
+18. How would you distinguish elapsed-time calculations from calendar-based calculations in financial applications?

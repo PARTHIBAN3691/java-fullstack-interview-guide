@@ -1,0 +1,28 @@
+* A Spring Boot application suddenly starts returning HTTP 403 when retrieving database credentials from Key Vault. How would you investigate the identity, role assignments, and permission configuration?
+* An application works locally but fails to access Key Vault after deployment to Azure App Service. How would you troubleshoot authentication and managed identity configuration?
+* A production application fails to start because Key Vault is temporarily unavailable. How would you redesign application startup and secret retrieval to improve resilience?
+* A database password is rotated in Key Vault, but the Spring Boot application continues using the old password. How would you identify the caching or connection-pool issue and fix it?
+* A Key Vault secret expires during peak business hours and causes database connectivity failures. How would you prevent recurrence and restore service?
+* Hundreds of application instances restart simultaneously and generate a spike in Key Vault requests, resulting in throttling. How would you reduce the load and recover the applications?
+* A developer accidentally commits a production database password to Azure Repos. What immediate steps would you take to contain the incident and prevent recurrence?
+* A production secret is deleted accidentally, and multiple microservices stop working. How would you recover the secret and minimize downtime?
+* A Key Vault is protected by a private endpoint, but an application deployed in AKS cannot connect to it. How would you troubleshoot DNS resolution, network routing, and identity permissions?
+* A managed identity has been assigned to an application, but Key Vault access still fails. How would you distinguish authentication failures from authorization failures?
+* A secret is successfully retrieved from Key Vault, but the application fails when using it to connect to the database. How would you investigate secret versions, formatting, and credential validity?
+* A security audit discovers that several applications have excessive Key Vault permissions. How would you implement least-privilege access without interrupting production?
+* A production application uses a client secret for authentication, and the secret must be rotated without downtime. How would you plan and execute the migration?
+* A certificate used by a Java application is about to expire. How would you automate renewal and ensure the application begins using the new certificate?
+* A Key Vault firewall change causes intermittent access failures across application environments. How would you identify the affected resources and restore secure connectivity?
+* A Spring Boot application logs sensitive configuration values during startup. How would you identify the logging source and remove the exposure?
+* A secret rotation succeeds in Key Vault, but some application instances continue using the old credential while others use the new one. How would you make rotation consistent across instances?
+* A Key Vault outage affects several microservices that retrieve secrets during every incoming request. How would you redesign the secret-access pattern to reduce dependency on Key Vault availability?
+* A production service needs to decrypt historical data after a cryptographic key has been rotated. How would you preserve access to existing data while enforcing the new key policy?
+* An administrator accidentally purges a secret that was required for production recovery. How would you assess recoverability and improve vault protection policies?
+* An Azure DevOps pipeline retrieves a secret successfully but accidentally prints it in the build logs. How would you contain the exposure and secure the pipeline?
+* A Java application running in AKS cannot retrieve Key Vault secrets after a workload identity configuration change. How would you investigate service-account annotations, federation settings, and RBAC permissions?
+* A compromised application identity is suspected of accessing secrets beyond its intended scope. How would you investigate audit logs, revoke access, and contain the incident?
+* An application experiences intermittent Key Vault timeouts during peak traffic. How would you investigate network latency, throttling, retries, and connection behavior?
+* A company wants to migrate credentials from configuration files to Key Vault across hundreds of services. How would you plan a phased migration with validation and rollback?
+* A compliance requirement mandates evidence of every production secret access. How would you configure logging, retention, alerting, and audit reporting?
+* A new secret version is created, but a Java application keeps retrieving an older version. How would you investigate version selection, caching, and configuration?
+* A team wants to use Key Vault for both application secrets and encryption keys. How would you define access boundaries and prevent applications from gaining unnecessary cryptographic privileges?

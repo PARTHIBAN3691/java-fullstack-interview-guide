@@ -1,0 +1,78 @@
+# Core Java — Collections — List
+## Level 2 — Difficult
+
+### List Fundamentals
+* How would you design a custom List implementation while preserving the List contract?
+* What behavioral guarantees must an implementation provide for indexed operations, iteration, and optional operations?
+* How can mutable elements and custom equality implementations affect List correctness?
+* What considerations arise when returning a List from a public API that must protect internal state?
+* How would you reason about the interaction between List mutability, aliasing, and defensive copying?
+
+### ArrayList
+* Explain how ArrayList resizing and array copying affect amortized complexity.
+* Why is the amortized cost of appending elements different from the worst-case cost of an individual append?
+* How can memory retention occur when a long-lived ArrayList holds references to large objects?
+* How would you investigate unexpectedly high allocation rates caused by ArrayList usage?
+* How would you optimize a workload with frequent indexed reads, bulk additions, and periodic deletions?
+
+### LinkedList
+* Why can pointer-chasing and memory locality make LinkedList slower than ArrayList?
+* How would you analyze the cost of repeated indexed access inside a loop over a LinkedList?
+* What design constraints would matter when implementing a custom doubly linked list?
+* How would you prevent structural corruption in a custom linked-list implementation?
+* How would you benchmark LinkedList against ArrayList without producing misleading results?
+
+### Vector and Stack
+* What limitations remain when individual Vector methods are synchronized but a workflow requires several operations to be atomic?
+* How would you safely implement a compound check-then-act operation on a synchronized List?
+* What architectural concerns arise when replacing legacy Stack usage in a shared codebase?
+* How would you migrate a concurrent stack workflow to Deque while preserving correctness?
+
+### Iterator and ListIterator
+* Explain the structural modification rules associated with fail-fast iterators.
+* Why should `ConcurrentModificationException` not be treated as a thread-safety guarantee?
+* How would you design iteration over a collection that changes frequently under concurrent access?
+* What consistency trade-offs arise between snapshot iteration and live iteration?
+* How would you implement a custom ListIterator that correctly supports `add()`, `set()`, and `remove()`?
+
+### Sorting and Comparators
+* How can integer overflow in a Comparator cause incorrect sorting?
+* Why is `a - b` unsafe as a general integer comparison implementation?
+* How would you design a stable multi-field ordering with null handling and locale-sensitive strings?
+* What can happen if a Comparator is inconsistent or non-transitive?
+* How would you ensure deterministic ordering when multiple records share the same primary sort key?
+
+### List Utilities and Common Operations
+* How would you remove duplicates from a List while preserving the first occurrence and meeting a performance target?
+* How would you implement a memory-efficient merge of two already-sorted Lists?
+* How would you compare two large Lists as multisets, ignoring order but preserving duplicate counts?
+* How would you safely expose a read-only List view when the underlying collection may still change?
+* How would you design an API to avoid unexpected mutation through shared List references?
+
+### Generics and Wildcards with List
+* Explain wildcard capture and how a helper method can make certain wildcard operations type-safe.
+* How would you design a generic method that copies elements from a source List into a destination List?
+* Why does type erasure complicate runtime checks involving parameterized Lists?
+* How would you reason about heap pollution when raw types interact with generic Lists?
+* How would you design a generic API that accepts producers and consumers of a type without unnecessary restrictions?
+
+### Thread Safety and Concurrent Lists
+* How does CopyOnWriteArrayList manage its backing array during mutations?
+* What consistency guarantees does CopyOnWriteArrayList provide to iterators?
+* How would you estimate the memory and CPU impact of frequent writes to a CopyOnWriteArrayList?
+* How would you make a compound operation on a List atomic under concurrent access?
+* What race conditions can arise when a thread checks a List and then modifies it in a separate operation?
+
+### Streams and List Processing
+* How would you process millions of List elements without creating excessive intermediate collections?
+* What correctness issues can arise from side effects in parallel Stream pipelines?
+* How would you preserve encounter order while parallelizing a List-processing workload?
+* How would you diagnose a Stream pipeline that is slower than a conventional loop?
+* How would you handle exceptions and partial failures when transforming a List into a new result?
+
+### List Performance and Complexity
+* How would you benchmark List implementations using JMH?
+* How can garbage collection, warm-up, data distribution, and CPU cache effects distort collection benchmarks?
+* How would you select a List implementation based on read/write ratio, access pattern, and concurrency?
+* How would you analyze memory overhead per element across array-backed and node-based Lists?
+* How would you optimize a high-throughput List-processing service while preserving behavior?

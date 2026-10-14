@@ -1,0 +1,30 @@
+* Explain the complete form submission process from user interaction to the HTTP request.
+* How does the browser determine which form controls are included in form submission?
+* What are successful controls in HTML forms?
+* How do disabled controls, unchecked checkboxes, and unnamed inputs affect submitted form data?
+* How does the browser construct form data when multiple controls share the same name?
+* What is the difference between application/x-www-form-urlencoded, multipart/form-data, and text/plain?
+* How does the enctype attribute affect the request body?
+* How does the formenctype attribute override the form's default encoding?
+* What is the difference between the form action and formaction attributes?
+* How do formmethod and formnovalidate work on submit buttons?
+* What is the difference between the submit event and the formdata event?
+* How can JavaScript use FormData to collect form values?
+* What is the difference between FormData and URLSearchParams?
+* How do browser constraint validation APIs such as checkValidity() and reportValidity() work?
+* What is the difference between validity.valid, validity.valueMissing, and validity.patternMismatch?
+* How can setCustomValidity() be used to create custom validation messages?
+* What happens when a form is submitted while native constraint validation fails?
+* How does the novalidate attribute affect native form validation?
+* How can you prevent duplicate form submissions without breaking accessibility?
+* How can a form safely upload large files to a server?
+* What security risks exist when accepting file uploads through HTML forms?
+* Why must file type and file size restrictions be validated on the server?
+* How do autocomplete tokens improve browser autofill behavior?
+* How can you build accessible error summaries for forms containing many fields?
+* How should focus be managed after an unsuccessful form submission?
+* How do nested forms behave in HTML, and why should nested forms be avoided?
+* How do form-associated custom elements work?
+* How do implicit form submission and the Enter key behave in different form layouts?
+* How can cross-site request forgery affect forms that modify server-side data?
+* How would you design a secure, accessible, and maintainable form system for an enterprise application?

@@ -1,0 +1,30 @@
+* Explain how the Kubernetes Job controller reconciles the desired number of completions with the actual state.
+* How does the Job controller decide when to create additional Pods or mark a Job as failed?
+* What are the trade-offs between increasing parallelism and increasing the number of completions?
+* How would you design a parallel batch-processing system using Indexed Jobs?
+* How would you distribute millions of records across multiple Job Pods without processing the same records unnecessarily?
+* Why should applications executed by Kubernetes Jobs be designed to tolerate retries?
+* How would you achieve effectively-once processing when Kubernetes may retry a batch task?
+* How would you prevent duplicate financial transactions when a Job Pod crashes after committing to a database?
+* How would you design idempotency for a Java batch application running in Kubernetes?
+* How do backoffLimit, activeDeadlineSeconds, and podFailurePolicy interact?
+* How would you configure different retry behavior for transient infrastructure failures and permanent application errors?
+* What are the limitations of relying on Kubernetes Job retries for application-level error recovery?
+* How would you design a Job that processes independent partitions while preserving ordering within each partition?
+* How would you coordinate multiple Jobs that depend on the successful completion of earlier Jobs?
+* How would you implement workflow orchestration for a multi-step data-processing pipeline?
+* How would you handle partial success when some Indexed Job tasks complete and others fail?
+* How would you design checkpointing and resume capabilities for long-running batch jobs?
+* How would you prevent duplicate execution when a Job is deleted and recreated during recovery?
+* What are the risks of using a Job to execute database schema migrations during rolling application deployments?
+* How would you design a migration process that remains safe when multiple deployment pipelines run concurrently?
+* How would you manage database connection pools when a Job runs hundreds of parallel Pods?
+* How would you prevent a large batch Job from exhausting CPU, memory, database connections, or API rate limits?
+* How do ResourceQuota, LimitRange, and Pod resource requests affect batch workload scheduling?
+* How would you design a Job to run reliably across node failures and cluster maintenance?
+* How do PodDisruptionBudgets relate to Jobs, and what limitations should you understand?
+* How would you handle termination signals and checkpointing when a Job Pod is evicted or preempted?
+* How would you choose between Kubernetes Jobs, CronJobs, and an external workflow orchestration platform?
+* How would you manage retention, cleanup, and observability for thousands of completed Jobs?
+* How would you secure a batch Job that requires access to cloud storage and sensitive database credentials?
+* How would you design a production-grade Kubernetes batch-processing platform with retries, idempotency, monitoring, and recovery?

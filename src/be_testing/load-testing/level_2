@@ -1,0 +1,30 @@
+* How would you design a load testing strategy for a Java application expected to support 100,000 concurrent users?
+* How do you determine the maximum sustainable throughput of a Java application?
+* How do you identify the saturation point of an application?
+* How do you distinguish CPU-bound, memory-bound, and I/O-bound performance bottlenecks?
+* How would you investigate high P99 latency when average response time remains low?
+* How do you diagnose frequent garbage collection pauses during heavy load?
+* How do you investigate memory leaks that appear only during prolonged load tests?
+* How do you identify thread pool starvation in a Java service?
+* How do you analyze Java thread dumps collected during a load test?
+* How do you use Java Flight Recorder to investigate performance bottlenecks?
+* How do you correlate JVM metrics with application response times?
+* How would you tune JDBC connection pools for high concurrency?
+* How do you determine whether database locking is limiting throughput?
+* How do you analyze slow SQL queries under concurrent workloads?
+* How do you test a distributed Java application across multiple service instances?
+* How do you account for load balancing when interpreting test results?
+* How do you design load tests for microservices with synchronous and asynchronous dependencies?
+* How do retries and timeouts affect system behavior under heavy load?
+* How do you prevent retry storms during a load test?
+* How do you test message consumers when the incoming event rate exceeds processing capacity?
+* How do you measure queue growth and consumer lag under sustained load?
+* How do you test autoscaling behavior under rapidly increasing traffic?
+* How do you validate performance during rolling deployments?
+* How do you distinguish cold-start latency from steady-state performance?
+* How do you design a long-duration load test to detect resource leaks?
+* How do you estimate infrastructure requirements from load test measurements?
+* How do you interpret nonlinear throughput growth as more application instances are added?
+* How do you design load tests that reflect production traffic distributions?
+* How do you evaluate performance when test environments differ from production?
+* How do you determine whether a performance regression is statistically significant?

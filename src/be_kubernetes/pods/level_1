@@ -1,0 +1,30 @@
+* How do you create a Pod using a YAML manifest?
+* How do you create a Pod using the kubectl command line?
+* How do you update the configuration of an existing Pod?
+* Why are Pods generally managed through Deployments instead of created directly?
+* What happens when a standalone Pod is deleted?
+* What happens when a Pod managed by a Deployment is deleted?
+* How does Kubernetes schedule a Pod onto a worker node?
+* What factors influence Pod scheduling?
+* What is the difference between nodeSelector and node affinity?
+* What are taints and tolerations, and how do they affect Pod scheduling?
+* How do resource requests and limits affect Pod scheduling and execution?
+* What happens when a container exceeds its memory limit?
+* What happens when a container exceeds its CPU limit?
+* What is the difference between a container restart and a Pod recreation?
+* How do liveness, readiness, and startup probes differ?
+* How does a readiness probe affect traffic sent to a Pod?
+* What happens when a liveness probe fails repeatedly?
+* How do you configure environment variables in a Pod?
+* How do you inject ConfigMap and Secret values into a Pod?
+* How do you mount a PersistentVolumeClaim into a Pod?
+* What is the purpose of init containers in application startup?
+* How do sidecar containers help implement logging or proxy functionality?
+* How do you configure shared volumes between containers in a Pod?
+* What is a Pod disruption, and how can it affect application availability?
+* What is a PodDisruptionBudget?
+* How do you configure Pod anti-affinity to distribute replicas across nodes?
+* What is the difference between hostNetwork and the default Pod networking mode?
+* How do you troubleshoot a Pod stuck in Pending state?
+* How do you troubleshoot a Pod in CrashLoopBackOff state?
+* How do you collect logs from a container that has restarted inside a Pod?

@@ -1,0 +1,21 @@
+
+* Explain the complete lifecycle of a Java thread with examples.
+* What is the difference between `Thread.sleep()` and `Object.wait()`?
+* What is the difference between `join()` and `sleep()`?
+* What happens when a thread is interrupted while sleeping?
+* How does the `interrupt()` method work in Java?
+* What is the difference between interrupting a thread and forcibly stopping it?
+* Why is the `Thread.stop()` method deprecated?
+* What is the difference between a blocked thread and a waiting thread?
+* What is the difference between `BLOCKED`, `WAITING`, and `TIMED_WAITING` states?
+* How do you handle `InterruptedException` correctly?
+* Can you restart a thread after it has completed execution?
+* How does thread scheduling work in Java?
+* Does thread priority guarantee execution order?
+* When should you use daemon threads?
+* What happens to daemon threads when all user threads finish?
+* Can you change a thread's daemon status after it has started?
+* What is the purpose of `ThreadGroup`?
+* How do uncaught exceptions in a thread get handled?
+* What is `UncaughtExceptionHandler`, and how do you configure it?
+* How can you safely share data between two threads?

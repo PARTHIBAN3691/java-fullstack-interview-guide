@@ -1,0 +1,113 @@
+
+**Site Reliability Engineering (SRE)**
+* How would you introduce SRE practices into a team that has no established reliability process?
+* How do you define meaningful SLIs for a REST API?
+* How would you design an SLO for a service with different critical user journeys?
+* How do you balance feature delivery with operational reliability?
+* How do you measure toil, and how would you reduce it?
+* How would you structure an effective incident response process?
+* What is the purpose of a blameless postmortem?
+
+**Availability and Reliability**
+* How would you calculate the availability of a system composed of multiple dependent services?
+* How does the availability of serial dependencies affect end-to-end availability?
+* How do you calculate the availability of redundant components?
+* How would you distinguish a reliability problem from a performance problem?
+* What metrics would you monitor to identify availability degradation?
+* How would you measure availability for an API that returns HTTP 200 but produces incorrect results?
+* How can you improve reliability without adding more infrastructure?
+
+**Resilience and Fault Tolerance**
+* How would you design a resilient microservices architecture?
+* How do synchronous and asynchronous communication affect resilience?
+* How would you prevent one failing dependency from affecting the entire application?
+* How do replication and redundancy improve fault tolerance?
+* What is the difference between failover and fallback?
+* How do you ensure that a failover mechanism does not introduce data inconsistency?
+* How would you test whether a system can recover automatically from component failures?
+
+**High Availability**
+* How would you design a highly available application across multiple availability zones?
+* What are the trade-offs between active-active and active-passive architectures?
+* How would you eliminate single points of failure in an application stack?
+* How do health checks influence load-balancer routing and failover?
+* How would you handle a regional outage?
+* What are the risks of relying on a single database primary?
+* How would you verify that high availability works during an actual failure?
+
+**Disaster Recovery**
+* How would you design a disaster recovery strategy for a business-critical application?
+* How do RTO and RPO influence the choice of disaster recovery architecture?
+* How would you test disaster recovery without disrupting production?
+* What are the differences between backup-and-restore, pilot-light, warm-standby, and multi-site recovery strategies?
+* How do you ensure that database backups are recoverable and consistent?
+* How would you handle a disaster that affects both the application and its backups?
+* How do you prevent split-brain behavior during regional failover?
+
+**Failure Domains and Fault Isolation**
+* How would you identify failure domains in a microservices architecture?
+* How can availability zones, regions, clusters, and processes represent different failure domains?
+* How would you isolate a noisy tenant or customer from others?
+* How would you prevent a shared cache or database from becoming a system-wide failure point?
+* What is the relationship between fault isolation and blast radius?
+* How would you design independent failure domains for critical services?
+
+**Graceful Degradation**
+* How would you keep checkout operational when a recommendation service is unavailable?
+* How would you design fallbacks for unavailable downstream services?
+* How do you decide which features should degrade first under heavy load?
+* How would you prevent fallback responses from returning misleading or stale data?
+* How would you maintain essential functionality when a third-party API is unavailable?
+
+**Backpressure**
+* How would you implement backpressure in a message-driven application?
+* What happens when a message producer is faster than its consumer?
+* How do bounded queues help protect system resources?
+* How would you detect queue saturation before it causes an outage?
+* How do backpressure mechanisms differ in reactive streams and message brokers?
+* How would you prevent a queue backlog from growing indefinitely?
+
+**Load Shedding**
+* How would you prioritize requests when a service is overloaded?
+* What criteria would you use to reject low-priority requests?
+* How would you distinguish load shedding from throttling and rate limiting?
+* How would you prevent load shedding from disproportionately affecting critical customers?
+* How can admission control protect a service from resource exhaustion?
+
+**Circuit Breakers**
+* How would you choose failure thresholds and reset intervals for a circuit breaker?
+* How would you avoid opening a circuit breaker because of a few transient errors?
+* How do circuit breakers interact with retries and timeouts?
+* What metrics would you monitor to understand circuit-breaker behavior?
+* How would you provide fallback behavior while a circuit breaker is open?
+
+**Bulkheads**
+* How would you isolate thread pools or connection pools for different downstream services?
+* How do bulkheads prevent cascading failures?
+* What are the trade-offs between thread-pool bulkheads and semaphore bulkheads?
+* How would you size isolated resource pools?
+* What risks arise when resource pools are isolated but incorrectly sized?
+
+**Retry Policies and Timeout Strategies**
+* How would you design exponential backoff with jitter?
+* Which failures should be retried, and which should fail immediately?
+* How do retries amplify load during a downstream outage?
+* How would you set connection, request, and end-to-end deadlines?
+* How do you propagate deadlines across multiple service calls?
+* How would you avoid retrying non-idempotent operations and creating duplicate transactions?
+* What is the difference between a retry limit and a retry budget?
+
+**Chaos Engineering**
+* How would you plan a chaos experiment for a production microservices system?
+* What hypotheses and steady-state metrics would you define before an experiment?
+* How would you safely inject latency, packet loss, or dependency failures?
+* How would you determine whether a chaos experiment succeeded?
+* What safeguards should exist before running experiments in production?
+
+**Error Budgets**
+* How would you calculate the remaining error budget for a service?
+* How would you use error-budget consumption to prioritize reliability work?
+* What is the difference between an error-budget policy and an incident-response policy?
+* How would you handle a service that repeatedly exhausts its error budget?
+* How do you avoid setting an SLO that is either too strict or too permissive?
+* How would you communicate error-budget trade-offs to product stakeholders?

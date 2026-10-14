@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of record replication from a producer to all replicas.
+* How does Kafka track the high watermark of a replicated partition?
+* What is the relationship between the log end offset and the high watermark?
+* How does the leader determine which records are considered committed?
+* How does ISR membership affect the durability guarantees of a Kafka write?
+* What happens when a leader fails after acknowledging a record but before all replicas have fetched it?
+* How does Kafka prevent data loss during leader election?
+* Under what circumstances can unclean leader election cause data loss?
+* How would you configure Kafka for stronger durability guarantees?
+* How do `acks=all`, `min.insync.replicas`, and replication factor work together?
+* Why does `acks=all` not necessarily mean that every configured replica has acknowledged a record?
+* What happens if the ISR contains only one replica and `min.insync.replicas` is configured as two?
+* How would you design replication across three availability zones?
+* How would you choose a replication factor for a financial transaction platform?
+* How does replica reassignment work internally?
+* How would you safely increase the replication factor of a production topic?
+* What are the performance risks of reassigning replicas on a heavily loaded cluster?
+* How would you throttle replica reassignment to avoid affecting production traffic?
+* How does replica placement affect fault tolerance and broker utilization?
+* How would you diagnose repeated ISR shrink and expansion events?
+* How can disk latency on a follower broker affect replication health?
+* How can network congestion cause under-replicated partitions?
+* How would you distinguish replication lag from consumer lag?
+* What are the consequences of having too many under-replicated partitions?
+* How does Kafka handle replication during rolling broker restarts?
+* How would you design broker maintenance to minimize leader changes and service disruption?
+* How do KRaft-based Kafka clusters manage partition leadership and replica metadata?
+* How does replication differ from cross-cluster replication using MirrorMaker 2?
+* What are the limitations of Kafka replication as a disaster recovery mechanism?
+* How would you design a Kafka cluster that balances durability, availability, and write latency?

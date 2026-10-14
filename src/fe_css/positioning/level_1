@@ -1,0 +1,30 @@
+* Explain how absolute positioning determines an element's containing block.
+* How does position: absolute behave when no positioned ancestor exists?
+* What is the difference between an element's normal flow position and its positioned location?
+* How does position: relative interact with the top and left properties?
+* How does position: fixed behave when the page is scrolled?
+* How does position: sticky behave within a scrolling container?
+* What conditions are required for position: sticky to work correctly?
+* Why might a sticky element stop sticking before reaching the bottom of a page?
+* How does z-index determine the stacking order of overlapping elements?
+* What is the difference between z-index: auto and z-index: 1?
+* Can z-index work on an element without position: relative, absolute, fixed, or sticky?
+* What is a stacking context?
+* What CSS properties can create a new stacking context?
+* Why might a child element with a high z-index appear behind another element?
+* How does overflow: hidden affect absolutely positioned descendants?
+* How does transform affect fixed-positioned descendants?
+* What is the difference between using margin and positioning offsets?
+* How can you center an absolutely positioned element horizontally and vertically?
+* How can you position a badge over the corner of an image?
+* How can you create an overlay using absolute positioning?
+* How can you place a footer at the bottom of a container using positioning?
+* What is the difference between position: sticky and a fixed header?
+* How can you position a tooltip relative to a button?
+* How do percentage values behave in top, left, right, and bottom?
+* How does the inset shorthand property work?
+* How can you create a full-screen modal using fixed positioning?
+* How can you prevent positioned elements from covering important content?
+* What are common causes of unexpected overlap in CSS layouts?
+* How can browser developer tools help debug positioning problems?
+* When should Flexbox or Grid be preferred over CSS positioning?

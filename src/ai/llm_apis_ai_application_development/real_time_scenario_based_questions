@@ -1,0 +1,89 @@
+**OpenAI API**
+* A production Spring Boot application using the OpenAI API begins returning intermittent 429 errors during peak traffic. How would you identify the bottleneck, mitigate the incident, and prevent recurrence?
+* After a model upgrade, customer-support responses become longer and less accurate. How would you isolate the cause, compare versions, and roll back safely?
+* An OpenAI request times out, but the application cannot determine whether generation completed. How would you handle retries, billing implications, and duplicate work?
+* A conversation-based feature works for short sessions but fails for users with hundreds of messages. How would you investigate token growth and redesign context management?
+
+**Anthropic Claude API**
+* A Claude-based document-analysis workflow suddenly exceeds its latency target for long documents. How would you investigate token usage, prompt size, model selection, and caching opportunities?
+* A production release causes Claude to select the wrong tool more frequently. How would you investigate prompt changes, tool schemas, model behavior, and regression coverage?
+* A workflow using Claude stops after a tool call because the application mishandles the returned content blocks. How would you troubleshoot and repair the integration?
+* Claude is unavailable for a portion of traffic, but another provider remains healthy. How would you implement safe failover and validate the resulting answer quality?
+
+**Google Gemini API**
+* A Gemini-powered image-understanding feature fails for large uploads while small images work. How would you investigate request limits, encoding, preprocessing, and model capabilities?
+* A deployment that previously supported structured extraction begins returning missing fields. How would you identify whether the issue is schema configuration, prompt changes, model behavior, or response parsing?
+* Gemini requests are being throttled even though the application's overall request rate seems acceptable. How would you investigate quota dimensions, token consumption, concurrency, and retry behavior?
+* A multimodal workflow returns correct text for some files but fails on audio or video inputs. How would you isolate unsupported formats, payload handling, and modality-specific configuration?
+
+**Azure OpenAI Service**
+* An Azure OpenAI application begins returning 429 errors after traffic moves to a new model deployment. How would you investigate deployment quotas, token throughput, regional capacity, and retry policies?
+* A production service receives authentication failures after a credential rotation. How would you diagnose identity configuration, permissions, deployment access, and stale credentials?
+* An application works in development but cannot reach Azure OpenAI from a production network. How would you troubleshoot DNS, private endpoints, routing, and network policies?
+* A regional service disruption affects model requests. How would you switch traffic to an alternate deployment while respecting data-residency constraints?
+
+**AWS Bedrock**
+* A Bedrock invocation starts failing with access-denied errors after an infrastructure deployment. How would you investigate IAM permissions, model access, role assumptions, and organization policies?
+* Bedrock latency increases after the team switches to a different foundation model. How would you compare model behavior, request shape, region, and throughput constraints?
+* A streaming integration stops receiving output after an SDK upgrade. How would you inspect event handling, response closure, exception propagation, and compatibility?
+* A multi-tenant Bedrock service experiences unexpected cost growth. How would you trace invocation volume, model selection, tenant attribution, and runaway workflows?
+
+**Model API Authentication and Authorization**
+* A developer accidentally commits a production API key to a public repository. What immediate containment, rotation, investigation, and prevention steps would you take?
+* A service account can access models and tools outside its assigned business function. How would you identify the excessive permissions and implement least privilege?
+* An application experiences intermittent authorization failures after moving from static credentials to managed identity. How would you diagnose role assignment, token acquisition, and permission propagation?
+* Security logs show a sudden increase in model calls from an unfamiliar workload. How would you investigate credential misuse while preserving audit evidence?
+
+**Chat Completions and Response APIs**
+* A migration to a new response API causes the frontend to display empty answers even though the provider returns successful responses. How would you debug parsing, output-item handling, and compatibility?
+* Users report that previous conversation context is missing after deployment. How would you investigate session persistence, message ordering, truncation, and API request construction?
+* A model response includes a refusal or incomplete status, but the backend treats it as a successful final answer. How would you redesign response-state handling?
+* Two simultaneous requests from the same user produce inconsistent conversation histories. How would you investigate race conditions and establish a consistent update strategy?
+
+**Streaming Responses**
+* Users see the first response token quickly, followed by a long pause and an incomplete answer. How would you investigate provider latency, buffering, proxy behavior, and stream termination?
+* Browser disconnects cause upstream generations to continue running and incur unnecessary costs. How would you propagate cancellation and verify resource cleanup?
+* During a traffic spike, streaming connections exhaust application server capacity. How would you investigate concurrency, connection pooling, backpressure, and resource limits?
+* A safety filter identifies disallowed content halfway through a streamed response. How would you stop delivery, terminate upstream work, and record the incident?
+
+**Function Calling and Tool Calling**
+* An AI assistant issues duplicate refund requests when a user repeats a prompt after a timeout. How would you prevent duplicate business transactions and reconcile ambiguous outcomes?
+* A model generates tool arguments that pass JSON parsing but reference another customer's order. How would you enforce authorization and tenant isolation?
+* A tool returns a large payload that causes the model's next request to exceed its context limit. How would you reduce or summarize tool output without losing critical facts?
+* A prompt-injection attempt in a retrieved document instructs the assistant to call an administrative tool. How would you contain the attack and improve the tool authorization model?
+
+**Structured Outputs**
+* A customer-data extraction API returns valid JSON, but downstream services fail because values violate business constraints. How would you separate schema validation from semantic validation and introduce recovery?
+* A model update causes a rise in missing fields and invalid enumerations. How would you compare model versions and roll back without disrupting consumers?
+* A downstream service changes its data contract while older AI-generated payloads are still in circulation. How would you version schemas and preserve compatibility?
+* An extraction workflow silently assigns incorrect values to important fields while passing all syntax checks. How would you detect quality failures and add evaluation coverage?
+
+**Multimodal APIs**
+* A document-processing application produces inconsistent answers from scanned PDFs. How would you investigate OCR quality, page segmentation, image resolution, and model selection?
+* Users upload media containing confidential information that should not be processed by the selected provider. How would you implement classification, routing restrictions, and data-retention controls?
+* An audio-processing service works for short recordings but times out on longer files. How would you redesign ingestion, chunking, asynchronous execution, and result aggregation?
+* A multimodal assistant interprets instructions embedded in an image as trusted commands. How would you mitigate prompt injection and separate untrusted content from system policy?
+
+**Rate Limiting, Retries, and Timeouts**
+* A provider outage causes every application instance to retry aggressively, increasing the failure rate. How would you stop the retry storm and restore service?
+* The application frequently hits its overall deadline even though each individual model call is within its own timeout. How would you analyze cumulative latency and propagate deadlines?
+* Requests are retried at several layers, creating unexpectedly high costs and duplicate operations. How would you assign retry ownership and introduce idempotency?
+* A sudden traffic spike exhausts provider quotas. How would you prioritize important workloads and degrade non-critical requests safely?
+
+**Token Usage and Cost Management**
+* The monthly AI bill doubles without a comparable increase in active users. How would you identify the features, tenants, prompts, and workflows responsible?
+* Long conversations cause progressively higher latency and cost. How would you implement context summarization, relevance filtering, and retention policies?
+* An agent repeatedly calls the same tool and model without completing the task. How would you detect loops and enforce limits on steps, tokens, and elapsed time?
+* Estimated usage in application dashboards differs significantly from provider billing records. How would you reconcile token accounting, retries, cached usage, and delayed reporting?
+
+**Model Routing and Fallback Strategies**
+* The primary model provider experiences an outage, and automatic fallback causes response quality to decline. How would you balance availability, quality thresholds, and cost?
+* A routing change reduces average latency but increases failure rates for complex tasks. How would you segment evaluations and adjust routing policies?
+* Two providers return different interpretations of the same business request. How would you define consistency expectations and handle disagreements?
+* A failover mechanism switches providers repeatedly during a partial outage. How would you prevent routing flapping and introduce health thresholds or recovery windows?
+
+**AI Application Error Handling**
+* The AI endpoint returns HTTP 200, but users receive empty or unusable answers. How would you define application-level success and build appropriate monitoring?
+* A production incident involves simultaneous provider throttling, tool failures, and downstream database timeouts. How would you isolate failure domains and recover in a controlled sequence?
+* Logs contain sensitive prompt content and provider error details. How would you preserve diagnostic usefulness while preventing data exposure?
+* A request fails after the user has already received part of a streamed answer. How would you communicate the incomplete state, support safe continuation, and avoid duplicate side effects?

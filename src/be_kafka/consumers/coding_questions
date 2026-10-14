@@ -1,0 +1,30 @@
+* Write a Java program using KafkaConsumer to subscribe to a topic and print received messages.
+* Implement a Spring Boot Kafka consumer using @KafkaListener.
+* Write a Java configuration class that defines ConsumerFactory and ConcurrentKafkaListenerContainerFactory.
+* Implement a Kafka consumer that subscribes to multiple topics.
+* Write a Java consumer that manually assigns specific topic partitions.
+* Implement a consumer that starts reading from the earliest available offset when no committed offset exists.
+* Write a Java consumer that commits offsets synchronously after successful processing.
+* Implement a consumer that uses asynchronous offset commits and handles commit failures.
+* Write a Spring Kafka listener that uses manual acknowledgment after successful business processing.
+* Implement a consumer that processes records in batches using Spring Kafka.
+* Write a Java custom deserializer for a JSON event using Jackson.
+* Implement a consumer that handles deserialization failures and routes invalid messages to a dead-letter topic.
+* Write a Java method that processes Kafka records idempotently using a unique event ID.
+* Implement a Spring Boot consumer that retries transient failures with bounded exponential backoff.
+* Write a consumer error handler that sends exhausted retry messages to a dead-letter topic.
+* Implement a Kafka consumer that pauses and resumes partitions when downstream processing is overloaded.
+* Write a Java consumer that handles partition revocation using ConsumerRebalanceListener.
+* Implement a consumer shutdown method that stops polling and safely commits eligible offsets.
+* Write a Java utility that calculates consumer lag from committed offsets and partition end offsets.
+* Implement a consumer that seeks to a specific offset for a selected partition.
+* Write a Java consumer that seeks to offsets corresponding to a given timestamp.
+* Implement a Spring Kafka consumer that validates event schema versions before business processing.
+* Write a Java integration test that verifies message consumption and acknowledgment behavior.
+* Implement a test that verifies failed processing does not incorrectly advance committed offsets.
+* Write a consumer that processes order events while preserving per-order ordering.
+* Implement a Java consumer that uses a database uniqueness constraint to prevent duplicate business transactions.
+* Write a consumer that handles HTTP 429 responses from a downstream API with bounded retries and backoff.
+* Implement a Java utility that records processing latency, failure counts, throughput, and consumer lag metrics.
+* Write a Spring Boot consumer that supports controlled replay using a separate consumer group.
+* Design and implement a resilient Spring Boot Kafka consumer with idempotent processing, manual offset management, retries, dead-letter handling, graceful shutdown, and observability.

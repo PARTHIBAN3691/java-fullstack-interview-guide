@@ -1,0 +1,21 @@
+
+* Explain the complete architecture for securely managing application secrets across multiple AWS accounts and regions.
+* How would you design a Java-based secrets management component that supports caching, retries, timeouts, and graceful failure?
+* How do you implement least-privilege access to Secrets Manager using IAM roles and resource policies?
+* How would you securely retrieve secrets when an application runs across multiple AWS accounts?
+* How do you replicate secrets across AWS regions, and what considerations apply to failover?
+* How do you design a zero-downtime database credential rotation strategy for a high-availability Java application?
+* What happens if a database password rotates while existing application connections remain active?
+* How would you handle secret rotation when an application uses HikariCP connection pooling?
+* How do you prevent stale cached credentials from causing authentication failures after rotation?
+* How would you design a fallback strategy when Secrets Manager is temporarily unavailable?
+* How do you handle AWS API throttling and transient errors during secret retrieval?
+* How would you secure secrets used by a multi-tenant microservices architecture?
+* How do you use customer-managed KMS keys to control access to secrets?
+* How would you investigate an `AccessDeniedException` when retrieving a secret from a Java application?
+* How can you prevent secrets from appearing in application logs, exception messages, traces, or monitoring systems?
+* How do you securely manage secrets across development, testing, staging, and production environments?
+* How would you design secret rotation for credentials used by multiple microservices simultaneously?
+* What are the security and operational implications of cross-region secret replication?
+* How do you manage secret deletion, recovery, and lifecycle policies in production?
+* How would you optimize Secrets Manager API costs for a large fleet of Java microservices?

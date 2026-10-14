@@ -1,0 +1,79 @@
+**Multimodal Large Language Models**
+
+* A multimodal assistant correctly answers questions about individual images but fails when asked to compare images captured at different times. How would you investigate image preprocessing, context construction, temporal information, and model limitations?
+* After enabling video input, inference costs and response times increase sharply. How would you profile frame sampling, image resolution, context length, batching, and model routing?
+
+**Vision-Language Models**
+
+* A visual inspection assistant marks defective products as acceptable because the defect occupies only a small part of the image. How would you improve image resolution, region selection, evaluation coverage, and confidence-based escalation?
+* A document-processing model extracts text accurately but associates values with the wrong table columns. How would you diagnose layout interpretation, spatial grounding, and downstream schema mapping?
+
+**Speech-to-Text and Text-to-Speech**
+
+* A voice application performs well in quiet offices but produces inaccurate transcriptions in a factory. How would you investigate acoustic noise, microphone quality, domain vocabulary, and recognition confidence?
+* A TTS service begins speaking responses after the user has interrupted the agent. How would you trace cancellation propagation, buffering, and synchronization between recognition and audio playback?
+
+**Real-Time Voice Agents**
+
+* Customers report long pauses between asking a question and hearing a response, even though individual services meet their latency targets. How would you measure end-to-end latency and identify bottlenecks across turn detection, recognition, inference, and synthesis?
+* A voice agent repeats a payment action after a network interruption because it cannot determine whether the first attempt succeeded. How would you introduce transaction-state tracking, idempotency, and explicit confirmation?
+
+**Graph-Based AI**
+
+* A graph model's accuracy drops after a new source system introduces many new entities and relationships. How would you investigate feature distribution, graph topology, unseen nodes, and training-serving differences?
+* An anomaly detector flags highly connected legitimate entities as suspicious. How would you separate normal high-degree behavior from genuinely unusual graph patterns?
+
+**Knowledge Graphs for AI**
+
+* An enterprise assistant combines facts from two systems that disagree about a customer's current status. How would you resolve source precedence, temporal validity, provenance, and uncertainty?
+* A graph-based answer exposes a confidential relationship through a multi-hop query, even though the directly requested entity is accessible. How would you redesign authorization across graph traversal and generated explanations?
+
+**Neuro-Symbolic AI**
+
+* An AI system extracts facts correctly from a request but recommends an action that violates a mandatory business rule. How would you separate probabilistic interpretation from deterministic decision enforcement?
+* A new policy changes a decision rule, but the AI continues producing decisions consistent with the old behavior. How would you investigate rule versioning, cached context, and regression coverage?
+
+**Small Language Models (SLMs)**
+
+* A small model works well in testing but fails on rare production requests that a larger model handles correctly. How would you analyze the evaluation set and decide between fine-tuning, routing, and fallback?
+* An SLM upgrade reduces average latency but increases malformed structured responses. How would you detect the regression and introduce compatibility tests and staged rollout?
+
+**On-Device and Edge AI**
+
+* Edge devices lose network connectivity during an AI-assisted inspection process. How would you maintain safe local operation, synchronize events later, and resolve conflicts without duplicating actions?
+* A model update causes memory exhaustion on older devices. How would you detect hardware incompatibility, roll back safely, and improve device-specific release validation?
+
+**Federated Learning**
+
+* Federated training performance declines after a group of clients contributes data from a very different population. How would you diagnose non-IID data, aggregation behavior, and client weighting?
+* A security review discovers that model updates may reveal sensitive information about individual training records. How would you assess the exposure and introduce appropriate privacy-preserving controls?
+
+**AI Reasoning Models**
+
+* A reasoning model solves complex benchmark tasks but repeatedly fails a critical production workflow involving unusual edge cases. How would you investigate benchmark representativeness, tool reliability, and verification gaps?
+* Reasoning costs increase substantially after a model upgrade without a corresponding improvement in task completion. How would you evaluate reasoning budgets, fallback thresholds, and task-specific model selection?
+
+**Long-Term Memory for AI Agents**
+
+* An assistant repeatedly uses an outdated user preference even after the user corrects it. How would you investigate memory updates, retrieval ranking, conflicting facts, and expiration policies?
+* A prompt injection contained in a document is stored in persistent agent memory and affects later sessions. How would you contain the issue and prevent untrusted content from becoming trusted instructions?
+
+**Computer-Use Agents**
+
+* A computer-use agent clicks the correct-looking button, but a page layout change causes it to submit the wrong transaction. How would you introduce state verification, element identification, confirmation gates, and safe recovery?
+* An agent reports that an operation succeeded, but the target application never saved the change. How would you distinguish visual confirmation from verified application state?
+
+**Synthetic Data and Simulation**
+
+* A model trained on synthetic data performs well in simulation but fails on real-world edge cases. How would you identify distribution gaps, simulator assumptions, and missing environmental variability?
+* Synthetic data improves overall accuracy but unexpectedly reduces performance for a minority group. How would you investigate generator bias, sample composition, and group-specific evaluation?
+
+**AI Benchmarking and Leaderboards**
+
+* A model ranks first on an internal leaderboard but performs poorly after deployment. How would you investigate benchmark leakage, evaluation design, distribution shift, and differences between test and production settings?
+* Two teams report conflicting results for the same model. How would you standardize prompts, decoding parameters, hardware, datasets, evaluator versions, and statistical reporting?
+
+**Open-Weight Model Ecosystems**
+
+* A downloaded open-weight model performs differently from the published evaluation results. How would you investigate artifact identity, quantization, inference settings, tokenizer differences, and hardware?
+* A community fine-tune introduces unexpected unsafe behavior. How would you isolate the regression, verify artifact provenance, and return to a trusted version?

@@ -1,0 +1,30 @@
+* Write a Java Kafka producer that sends messages using a customer ID as the partition key.
+* Write a Spring Boot Kafka producer that publishes customer events and ensures events for the same customer go to the same partition.
+* Write Java code to determine the partition selected for a given Kafka topic and key.
+* Write a Kafka producer using `ProducerRecord` with an explicit partition number.
+* Write a Spring Kafka producer that sends a message to a specific partition.
+* Write Java code using `KafkaTemplate` to send messages to a specific partition.
+* Write a custom Kafka `Partitioner` that routes messages based on customer ID.
+* Write a custom partitioner that distributes records based on region.
+* Write a custom partitioner that avoids sending traffic to a known hot partition.
+* Write Java code using Kafka `AdminClient` to retrieve the number of partitions for a topic.
+* Write Java code using Kafka `AdminClient` to increase the partition count of a topic.
+* Write a Spring Boot application that creates a Kafka topic with a configurable number of partitions.
+* Write a Java program that prints the partition and offset for every consumed Kafka record.
+* Write a Kafka consumer that processes records differently based on their partition number.
+* Write Spring Kafka consumer code that logs topic, partition, offset, and key for every message.
+* Write a Java Kafka producer that verifies that the same key consistently maps to the same partition.
+* Write a unit test for a custom Kafka partitioner.
+* Write a Spring Boot integration test that verifies messages with the same customer ID are routed to the same partition.
+* Write a Kafka consumer that demonstrates parallel processing across multiple partitions.
+* Write Java code to calculate the number of consumers that can actively process a topic with a given number of partitions.
+* Write a Java utility that calculates the required Kafka partition count based on target throughput and per-partition throughput.
+* Write Java code that uses `AdminClient` to list all partitions and their leader brokers.
+* Write Java code to retrieve replicas and ISR information for every partition of a Kafka topic.
+* Write a Spring Boot monitoring component that detects partitions with significantly higher lag than other partitions.
+* Write Java code to identify the partition with the highest number of records based on consumer offsets.
+* Write a custom partitioner that hashes a composite key such as `customerId + region`.
+* Write Java code demonstrating how changing the number of partitions can change key-to-partition mapping.
+* Write a Spring Kafka test that verifies per-customer ordering when messages are produced concurrently.
+* Write a Java program that compares record distribution across partitions and calculates partition skew.
+* Write a Spring Boot solution that detects a hot partition and exposes the information through an actuator endpoint.

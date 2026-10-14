@@ -1,0 +1,20 @@
+* A Java Lambda function invoked through API Gateway takes several seconds on its first request but runs faster afterward. How would you diagnose and reduce the latency?
+* A Lambda function processing orders occasionally creates duplicate orders after retries. How would you implement idempotency?
+* A Lambda function receives an SQS batch containing 10 messages, and one message fails. How would you avoid unnecessarily retrying all successfully processed messages?
+* A Java Lambda function times out while calling an external REST API. How would you investigate the cause and improve resilience?
+* A Lambda function needs to connect to an RDS database, but connections are exhausted during traffic spikes. How would you redesign connection management?
+* A Lambda function receives `AccessDeniedException` when accessing S3 even though the developer has administrator access. What IAM configuration would you inspect?
+* A Lambda function works locally but fails after deployment with a class-loading error. How would you troubleshoot the packaging and runtime configuration?
+* A Lambda function processes Kinesis records, but iterator age continues to increase. How would you identify the bottleneck and scale processing?
+* An API Gateway endpoint invokes a Java Lambda function, but clients receive HTTP 502 responses. How would you diagnose the integration and response format?
+* A Lambda function needs to retrieve database credentials securely without storing them in source code. How would you implement this?
+* A Lambda function occasionally exceeds its timeout because a downstream service is slow. How would you implement bounded retries, timeouts, and a circuit-breaker strategy?
+* A production Lambda deployment introduces a higher error rate. How would you implement canary deployment and rollback?
+* A Java Lambda function has high initialization time because it loads many Spring Boot beans. How would you optimize startup?
+* A Lambda function must process a large file from S3 without loading the entire file into memory. How would you implement streaming or chunk-based processing?
+* A Lambda function is throttled during a sudden traffic spike. How would you decide between reserved concurrency, provisioned concurrency, and downstream capacity changes?
+* A scheduled Lambda job runs longer than expected and sometimes overlaps with the next scheduled execution. How would you prevent concurrent job execution?
+* A Lambda function sends messages to an external system, but the external system is temporarily unavailable. How would you design retries and failure recovery?
+* A Lambda function in a private subnet cannot reach an external API. What VPC, routing, NAT, DNS, and security settings would you inspect?
+* A team wants to migrate a Spring Boot REST service from a continuously running server to AWS Lambda. What architectural and operational changes are required?
+* A company needs centralized logging, tracing, alarms, and auditing for hundreds of Java Lambda functions across multiple AWS accounts. How would you design the solution?

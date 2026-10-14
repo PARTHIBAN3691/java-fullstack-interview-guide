@@ -1,0 +1,30 @@
+* Two Angular components inject the same service, but changes made by one component are not visible in the other. How would you investigate the provider scope?
+* A service is registered with providedIn: 'root' and also in a component's providers array. How many instances can be created, and why?
+* An Angular application throws NullInjectorError after introducing a new service. What steps would you take to identify the missing provider?
+* A service works in one feature module but fails in a lazy-loaded feature. How would you investigate the injector hierarchy?
+* A component needs its own independent instance of a state-management service. How would you configure dependency injection?
+* Several components must share one authentication service instance across the application. Where should the service be provided?
+* A child component unexpectedly receives a different service instance from its parent. How would you debug the issue?
+* A service depends on an interface representing a payment processor. How would you inject different implementations for development and production?
+* An application needs an API base URL that changes between environments. How would you provide and inject the configuration?
+* A logging service must have multiple implementations that can be registered by different features. How would you use multi-providers?
+* A service constructor depends on another service that indirectly depends on the first service. How would you resolve the circular dependency?
+* A component needs an optional analytics service that may not be registered in every application configuration. How would you inject it safely?
+* A child component must resolve a dependency only from its own injector. How would you use the appropriate injection modifier?
+* A service should reuse a dependency from a parent injector rather than create or resolve a local instance. How would you configure the lookup?
+* A route-specific workflow needs its own service instance that is shared within the route. How would you configure route-level providers?
+* A factory provider must choose between implementations based on runtime configuration. How would you implement the provider?
+* A unit test fails because Angular injects a real HTTP service instead of a mock. How would you override the provider?
+* A component test fails with a dependency injection error for a third-party service. How would you configure TestBed?
+* A service uses inject() inside an ordinary method and throws an injection-context error. How would you refactor the service?
+* An application uses standalone components, but a service is accidentally instantiated more than once. How would you identify the provider duplication?
+* A functional route guard needs to inject an authorization service. How would you implement the guard correctly?
+* An application must initialize feature configuration asynchronously before startup. How would you configure initialization and dependency injection?
+* A server-rendered application accidentally shares user-specific state between requests. How could injector scope be contributing to the issue?
+* A plugin architecture must support multiple payment providers without changing the core service. How would you design the injection tokens and provider registration?
+* A shared service is unexpectedly recreated when navigating between features. How would you investigate route and injector lifetimes?
+* A component uses viewProviders, but projected content cannot access the expected service. How would you explain and fix the behavior?
+* A service requires a configuration object and an HTTP client. How would you construct it with a factory provider?
+* A large Angular application has tightly coupled services and frequent circular dependencies. How would you restructure the dependency graph?
+* A reusable component library needs configurable default services that applications can override. How would you design its provider API?
+* You are migrating an NgModule-based application to standalone APIs. How would you preserve service scopes and avoid duplicate instances?

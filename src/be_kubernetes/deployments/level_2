@@ -1,0 +1,30 @@
+* How does the Kubernetes Deployment controller reconcile desired and actual states?
+* How does a Deployment controller determine whether to create, scale, or remove ReplicaSets?
+* How are Deployment revisions created and tracked?
+* Why does changing a Pod template create a new ReplicaSet?
+* How does Kubernetes manage multiple ReplicaSets during a rolling update?
+* How would you tune maxSurge and maxUnavailable for a high-availability Java service?
+* What happens if maxSurge and maxUnavailable are both configured as zero?
+* How can a Deployment rollout become stuck even when all Pods appear to be running?
+* How do readiness probes, startup probes, and liveness probes interact during deployment?
+* How would you prevent a rollout from sending traffic to Java Pods that have not completed application initialization?
+* What are the limitations of Deployment rollback when external configuration or database schemas have changed?
+* How would you design backward-compatible database migrations for rolling deployments?
+* How do immutable container images improve Deployment reliability?
+* How would you deploy a new application version without relying on mutable image tags?
+* How do Deployment progress deadlines differ from application-level health checks?
+* How can a Deployment remain available while its Pods are repeatedly crashing?
+* How would you investigate a Deployment whose available replicas remain below the desired count?
+* How do horizontal Pod autoscaling and Deployment replica management interact?
+* What happens when a manual scaling operation conflicts with an HPA-managed replica count?
+* How can resource quotas and admission policies prevent a Deployment rollout from completing?
+* How would you design topology spread constraints for a multi-zone Deployment?
+* How do anti-affinity rules affect availability and scheduling during a rollout?
+* How would you configure a Deployment to minimize downtime during node drains?
+* What are the risks of using Recreate for a stateless application with strict availability requirements?
+* How would you handle a rollout when the new version consumes significantly more memory than the old version?
+* How do surge Pods affect capacity planning and cluster autoscaling?
+* How would you investigate a Deployment that repeatedly rolls back or creates successive ReplicaSets?
+* What happens if a Deployment's selector is changed after creation?
+* How do server-side apply and field ownership affect Deployment configuration management?
+* How would you implement a safe release strategy using Deployments, Services, and separate application versions?

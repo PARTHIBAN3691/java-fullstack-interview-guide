@@ -1,0 +1,30 @@
+* A Spring Boot API becomes slow after the MySQL database grows from thousands to millions of rows. How would you identify the bottleneck and optimize the queries?
+* A query runs quickly in development but takes several seconds in production. How would you compare execution plans, data distribution, indexes, and server resources?
+* Two users update the same account balance simultaneously, and one update is lost. How would you prevent this concurrency issue?
+* An order-processing API occasionally creates duplicate orders when users click the submit button multiple times. How would you enforce uniqueness and make the operation idempotent?
+* A payment transaction debits one account but fails before crediting another. How would you ensure atomicity and consistency?
+* A production application experiences frequent InnoDB deadlocks during peak traffic. How would you identify the conflicting statements and reduce deadlocks?
+* A query uses a composite index but still performs a full table scan. How would you investigate the index definition, statistics, and query predicates?
+* A large table has many indexes, and INSERT and UPDATE operations have become slow. How would you identify redundant indexes and balance read and write performance?
+* A MySQL connection pool reaches its maximum size, and API requests start timing out. How would you investigate connection leaks, slow queries, and transaction duration?
+* A Spring Boot service holds database locks while calling an external REST API. What risks does this create, and how would you redesign the transaction flow?
+* A batch job updates thousands of records and blocks online transactions. How would you redesign the batch process to reduce lock contention?
+* A query with multiple joins returns duplicate rows and incorrect totals. How would you diagnose join cardinality and correct the aggregation?
+* A report query causes high CPU usage and disk I/O during business hours. How would you optimize it without disrupting transactional workloads?
+* A MySQL database runs out of disk space because binary logs accumulate. How would you investigate retention settings and implement safe cleanup?
+* A replica falls behind the primary during heavy write traffic. How would you investigate replication lag and protect read consistency?
+* An application reads stale customer data from a read replica immediately after updating it on the primary. How would you address read-after-write consistency?
+* A database upgrade changes the execution plan of a critical query and causes a performance regression. How would you investigate and resolve it?
+* A schema migration adds a column to a large production table and causes excessive locking. How would you plan a safer online migration?
+* A transaction frequently fails with lock wait timeout errors but rarely produces deadlocks. How would you distinguish the causes and resolve the issue?
+* A business rule requires that a customer's total active bookings never exceed a limit. How would you enforce this rule under concurrent requests?
+* An API uses LIMIT and OFFSET pagination and becomes slower on later pages. How would you redesign pagination for a large dataset?
+* A stored procedure works correctly for individual requests but fails under concurrent execution. How would you investigate transaction boundaries and locking?
+* A developer concatenates user input into SQL queries, and a security review identifies SQL injection risks. How would you refactor the Java code?
+* A MySQL table uses VARCHAR for monetary amounts, resulting in incorrect sorting and calculations. How would you migrate to an appropriate numeric type safely?
+* A production deployment introduces long-running transactions that increase undo-log retention and reduce database performance. How would you locate and resolve the issue?
+* A critical query suddenly stops using its expected index after a data load. How would you investigate optimizer statistics and query plans?
+* An application receives a communications error while committing a transaction. How would you determine whether the transaction committed and prevent duplicate processing?
+* A financial reconciliation job produces different totals depending on when it runs. How would you investigate isolation levels, concurrent writes, and query consistency?
+* A MySQL database must support a large increase in traffic without compromising transaction correctness. How would you plan indexing, connection pooling, caching, replication, and scaling?
+* How would you investigate a complete production incident involving increased API latency, database CPU saturation, deadlocks, and exhausted connections?

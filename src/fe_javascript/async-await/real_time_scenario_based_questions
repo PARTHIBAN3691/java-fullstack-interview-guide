@@ -1,0 +1,30 @@
+* An API call returns a Promise, but the UI displays undefined. How would you debug the async/await implementation?
+* An application continues before the API response arrives. What might be wrong with the code?
+* A developer forgets to use await when calling an asynchronous function. What behavior could result?
+* A webpage makes three independent API calls sequentially and loads slowly. How would you improve performance?
+* Three API requests must complete in order because each depends on the previous result. How would you implement this?
+* One API request fails inside Promise.all(), causing the overall operation to reject. How would you handle partial success?
+* An application must display results from every API request, including failed requests. Which Promise method would you use?
+* A payment operation fails intermittently because of a temporary network issue. How would you implement safe retry logic?
+* A retry mechanism accidentally submits the same payment multiple times. How would you prevent duplicate processing?
+* A search page sends several requests while the user types, and older results overwrite newer ones. How would you fix it?
+* An API request takes too long and the UI remains in a loading state. How would you implement a timeout?
+* A user navigates away while an API request is running. How would you cancel or ignore the result?
+* A developer uses await inside forEach(), but all operations are not completed before the next statement executes. How would you fix it?
+* An application needs to process 1,000 records asynchronously without overwhelming the server. How would you control concurrency?
+* A Promise rejects inside a helper function, but the error is not handled by the calling code. How would you investigate it?
+* A finally block hides the original error by throwing another error. How would you correct the error-handling design?
+* An async function returns a Promise, but the caller expects a plain value. How would you change the caller?
+* A page freezes while processing a large amount of data despite using async/await. Why might this happen?
+* A dashboard needs to fetch data from several independent services and display whatever results are available. How would you design the calls?
+* A service depends on another service that sometimes returns incomplete data. How would you handle validation and fallback behavior?
+* A user clicks a submit button multiple times while an asynchronous request is pending. How would you prevent duplicate submissions?
+* An asynchronous task must stop when the user cancels an upload. How would you design cancellation?
+* An application must call a rate-limited external API. How would you implement delays and retry handling?
+* A sequence of async functions must always release resources, even when an operation fails. How would you implement cleanup?
+* A module using top-level await delays application startup. How would you investigate and optimize module loading?
+* A background job processes records, but one failure should not stop all remaining records. How would you structure the code?
+* A Promise never settles, leaving dependent operations waiting indefinitely. How would you diagnose and mitigate the problem?
+* Two async operations update the same application state and produce inconsistent results. How would you prevent the race condition?
+* An API returns HTTP 500, but the async function's catch block is not executed. Why might this happen?
+* How would you design and test a reliable async/await workflow for an order-processing system?

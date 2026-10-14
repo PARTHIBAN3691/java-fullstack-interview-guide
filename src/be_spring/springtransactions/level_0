@@ -1,0 +1,30 @@
+* What are transactions in Spring?
+* Why is transaction management required in Java applications?
+* What is Spring transaction management?
+* What are the main advantages of declarative transaction management?
+* What is the difference between programmatic and declarative transaction management?
+* What is the purpose of the @Transactional annotation?
+* What is a transaction boundary?
+* What are the ACID properties of a database transaction?
+* What is transaction commit?
+* What is transaction rollback?
+* What is the purpose of the PlatformTransactionManager interface?
+* What are the different transaction managers supported by Spring?
+* What is the difference between DataSourceTransactionManager and JpaTransactionManager?
+* What is the purpose of TransactionTemplate?
+* What is transaction propagation in Spring?
+* What is transaction isolation in Spring?
+* What are the default propagation and isolation settings of @Transactional?
+* What is the default rollback behavior of @Transactional?
+* Does Spring roll back transactions for checked exceptions by default?
+* What is the difference between a checked exception and an unchecked exception in transaction management?
+* What is the purpose of the readOnly attribute in @Transactional?
+* What is the purpose of the timeout attribute in @Transactional?
+* What is the purpose of the rollbackFor attribute?
+* What is the purpose of the noRollbackFor attribute?
+* What is the difference between REQUIRED and REQUIRES_NEW propagation?
+* What is the purpose of MANDATORY propagation?
+* What is the purpose of SUPPORTS propagation?
+* What is the purpose of NEVER propagation?
+* What is the purpose of NOT_SUPPORTED propagation?
+* What is the purpose of NESTED propagation?

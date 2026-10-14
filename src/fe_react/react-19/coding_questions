@@ -1,0 +1,30 @@
+* Create a React 19 component that uses useActionState to handle a form submission.
+* Build a form that displays pending, success, and validation-error states using useActionState.
+* Create a reusable submit button that uses useFormStatus to display a pending label.
+* Build a login form using a form Action and useActionState.
+* Create a registration form that returns field-level validation errors from its Action.
+* Implement a form that resets after a successful Action.
+* Build a shopping cart button that uses useOptimistic to update the item count immediately.
+* Create a comment form that displays an optimistic comment before the server confirms it.
+* Implement an optimistic update that handles a failed server request and restores the confirmed state.
+* Create a component that reads a Promise using the use Hook inside a Suspense boundary.
+* Build a component that reads Context using the use Hook.
+* Write an example that demonstrates conditional use of the use Hook.
+* Create a React 19 function component that accepts ref as a prop.
+* Build an input component that exposes a DOM ref without using forwardRef in React 19.
+* Create a callback ref that registers an event listener and returns a cleanup function.
+* Build a component that renders a document title and metadata using React 19.
+* Create a component that demonstrates stylesheet handling in React 19.
+* Implement an example that uses preload or preconnect resource hints for performance.
+* Build a React 19 page that combines Server Components with interactive Client Components.
+* Create a Server Function that validates submitted form data before processing it.
+* Implement a form that combines useActionState, useFormStatus, and useOptimistic.
+* Write tests for a form Action that returns validation errors and success results.
+* Create an error-handling example for a component that reads a rejected Promise using the use Hook.
+* Build a custom web component integration and test it with React 19.
+* Create an example that demonstrates React 19 callback-ref cleanup during unmounting.
+* Refactor a React 18 component that uses forwardRef into a React 19 component that accepts ref as a prop.
+* Build a form with accessible pending and success announcements using React 19 Actions.
+* Create an example that demonstrates Server Component and Client Component serialization constraints.
+* Implement a React 19 component that handles optimistic updates while preventing duplicate submissions.
+* Refactor a traditional form with manual loading and error state into a React 19 Action-based implementation.

@@ -1,0 +1,21 @@
+
+* Write a Java program to create a thread by extending the `Thread` class.
+* Write a Java program to create a thread by implementing the `Runnable` interface.
+* Write a program that demonstrates the difference between calling `start()` and calling `run()`.
+* Write a program that creates three threads and prints each thread's name.
+* Write a program demonstrating the use of `sleep()` to introduce a delay between printed numbers.
+* Write a program in which the main thread waits for a worker thread using `join()`.
+* Write a program demonstrating the different states of a Java thread.
+* Write a program to interrupt a sleeping thread and handle `InterruptedException` correctly.
+* Write a program that creates a daemon thread and demonstrates its behavior when user threads finish.
+* Write a program using `UncaughtExceptionHandler` to handle an uncaught exception in a worker thread.
+* Write a program that prints numbers alternately using two threads.
+* Write a program to implement a producer-consumer solution using `wait()` and `notifyAll()`.
+* Write a program that demonstrates a race condition using two threads and a shared counter.
+* Modify the shared-counter program to make it thread-safe.
+* Write a program that uses `ThreadLocal` to maintain a separate value for each thread.
+* Write a program that demonstrates how to inspect a thread's state using `getState()`.
+* Write a program in which the main thread waits for multiple worker threads to finish and collects their results.
+* Write a Java 21+ program using virtual threads to execute multiple independent I/O-bound tasks concurrently.
+* Write a program that demonstrates cooperative thread cancellation using a shared flag and interruption.
+* Write a program that starts several worker threads, handles failures, and shuts them down cleanly without leaving background work running.

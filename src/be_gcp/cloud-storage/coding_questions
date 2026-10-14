@@ -1,0 +1,30 @@
+* Write Java code to initialize the Google Cloud Storage client using Application Default Credentials.
+* Create a Spring Boot service that uploads a MultipartFile to a Cloud Storage bucket.
+* Implement a Java method that downloads an object from Cloud Storage and returns its contents.
+* Write Java code to upload a local file using the Cloud Storage Java client.
+* Implement a method that retrieves object metadata, including size, content type, and generation number.
+* Write Java code to list objects in a bucket using pagination.
+* Implement a Java method to delete an object from a Cloud Storage bucket.
+* Write Java code to copy an object from one bucket to another.
+* Implement a Spring Boot REST endpoint that returns a secure signed URL for downloading an object.
+* Write Java code to generate a signed URL that permits uploading an object for a limited duration.
+* Implement streaming file uploads to Cloud Storage without loading the entire file into JVM memory.
+* Write Java code to validate file size, extension, and content type before uploading an object.
+* Implement a resumable upload workflow for a large file using the Cloud Storage Java client.
+* Write Java code to download a large object incrementally and save it to a local file.
+* Implement conditional object creation using a generation-match precondition to prevent overwriting an existing object.
+* Write Java code to update object metadata using the expected metageneration as a precondition.
+* Implement an idempotent upload endpoint that prevents duplicate file creation when clients retry requests.
+* Write Java code to assign unique object names using UUIDs and organize them by customer or date.
+* Implement a Spring Boot exception handler for Cloud Storage permission errors, missing objects, and transient failures.
+* Write Java code to retry transient Cloud Storage failures using bounded exponential backoff and jitter.
+* Implement a Pub/Sub event handler that processes Cloud Storage object-finalization notifications.
+* Write Java code to detect duplicate storage events using an idempotency key stored in a database.
+* Implement a file-processing service that validates an uploaded document before marking it as available for download.
+* Write Java code to calculate a checksum while streaming a file upload and validate the downloaded content.
+* Implement a batch-processing job that lists and processes objects incrementally without exhausting memory.
+* Write Java code to move an object between buckets while handling the copy and delete steps safely.
+* Implement a Spring Boot integration test for a Cloud Storage service using a suitable mock or test environment.
+* Write Java code to retrieve Cloud Storage credentials and configuration securely without hardcoding secrets.
+* Implement a service that records file metadata in a database and compensates for failures between database and storage operations.
+* Write Java code to record upload duration, download duration, object size, and failure counts for application monitoring.

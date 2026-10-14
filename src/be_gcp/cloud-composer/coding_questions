@@ -1,0 +1,30 @@
+* Write a basic Airflow DAG in Python that executes a task every day.
+* Write a DAG with three tasks that execute in a specific dependency order.
+* Write a DAG that runs a Python function using PythonOperator.
+* Write a DAG that executes a shell command using BashOperator.
+* Write a DAG that runs only on weekdays using an appropriate schedule.
+* Write a DAG that accepts a business date as a runtime parameter.
+* Write a DAG that retries a failed task three times with a configured delay.
+* Write a DAG that applies an execution timeout to a long-running task.
+* Write a DAG that uses BranchPythonOperator to choose between two processing paths.
+* Write a DAG that uses a sensor to wait for a file to appear in Cloud Storage.
+* Write a DAG that uses TaskGroups to organize extraction, transformation, and loading tasks.
+* Write a DAG that passes a small status value between tasks using XCom.
+* Write a DAG that executes a parameterized SQL query in BigQuery and waits for the job to complete.
+* Write a DAG that loads a CSV file from Cloud Storage into a partitioned BigQuery table.
+* Write a DAG that launches a Dataflow job and waits for successful completion before proceeding.
+* Write a DAG that processes a list of input files using dynamic task mapping.
+* Write a DAG that validates input data before triggering downstream processing.
+* Write a DAG that prevents overlapping runs using appropriate concurrency settings.
+* Write a DAG that implements safe retry handling for an API call using exponential backoff.
+* Write a DAG that sends a notification when a task fails, including the DAG ID, task ID, and execution date.
+* Write a DAG that skips downstream publication when a data quality validation task fails.
+* Write a DAG that implements a daily incremental load and safely handles reruns for the same business date.
+* Write a DAG that checks whether a BigQuery table has been updated within a configured freshness threshold.
+* Write a DAG that processes historical dates in controlled batches for a large backfill.
+* Write a Python utility that validates Airflow DAG configuration values before deployment.
+* Write unit tests for a DAG to verify task dependencies, schedules, retries, and timeout settings.
+* Write unit tests for an Airflow Python task that calls a Google Cloud API using mocked client responses.
+* Write a Python task that retrieves a secret from Secret Manager without hardcoding credentials.
+* Write a DAG that launches an asynchronous job, records its job identifier, and checks its status in a separate task.
+* Write a CI pipeline that validates DAG syntax, runs unit tests, and deploys approved DAG files to Cloud Composer.

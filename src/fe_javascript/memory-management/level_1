@@ -1,0 +1,30 @@
+* Explain how garbage collection works in JavaScript.
+* What is the mark-and-sweep garbage collection algorithm?
+* How does JavaScript determine whether an object is reachable?
+* What are garbage collection roots?
+* What is the difference between reachable and unreachable objects?
+* How can circular references affect memory management?
+* Why can circular references still be garbage-collected in modern JavaScript engines?
+* What is the difference between strong and weak references?
+* How does WeakMap differ from Map in terms of memory management?
+* How does WeakSet differ from Set in terms of memory management?
+* Why are WeakMap keys restricted to objects and non-registered symbols in modern JavaScript?
+* How can closures unintentionally retain large objects in memory?
+* How can event listeners retain references to DOM elements?
+* How can setInterval() cause memory leaks?
+* Why should timers be cleared when they are no longer needed?
+* What is the difference between memory allocation and garbage collection?
+* What is the difference between a memory leak and temporary high memory usage?
+* How can detached DOM nodes lead to memory leaks?
+* How can unused global variables increase memory consumption?
+* What is the relationship between object references and garbage collection?
+* How can arrays accidentally retain references to unnecessary objects?
+* What is object pooling, and when might it be useful?
+* What is the difference between shallow copying and deep copying from a memory perspective?
+* How can repeated object creation affect application performance?
+* What is garbage collection pressure?
+* How can frequent allocations affect application responsiveness?
+* How do browser memory snapshots help identify leaks?
+* What is the purpose of allocation profiling?
+* How can you detect steadily increasing heap usage in a long-running application?
+* What are practical techniques for reducing memory usage in JavaScript?

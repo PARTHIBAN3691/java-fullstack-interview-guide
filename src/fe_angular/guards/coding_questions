@@ -1,0 +1,30 @@
+* Create a functional CanActivate guard that allows navigation only when the user is authenticated.
+* Create an authentication service and inject it into a route guard.
+* Configure a protected dashboard route using CanActivate.
+* Implement a guard that redirects unauthenticated users to the login page using UrlTree.
+* Implement a guard that preserves the originally requested URL during login redirection.
+* Create a CanActivateChild guard that protects all child routes under an admin section.
+* Implement a role-based guard that reads required roles from route data.
+* Create a CanMatch guard that enables a feature route only when a feature flag is active.
+* Implement a CanDeactivate guard that prevents navigation when a form contains unsaved changes.
+* Create a reusable CanDeactivate interface for components that support unsaved-change detection.
+* Implement a CanDeactivate guard that returns the result of an asynchronous confirmation dialog.
+* Create a guard that checks permissions through an Observable returned by an authorization service.
+* Implement a guard that handles API errors and redirects to an access-denied page.
+* Create a guard that checks whether the user's subscription is active before allowing access.
+* Implement a tenant-aware guard that verifies the current user's access to a tenant-specific route.
+* Create a functional guard that injects multiple services using inject().
+* Write unit tests for a guard that allows authenticated users and rejects unauthenticated users.
+* Write unit tests for role-based access, including permitted and denied roles.
+* Write unit tests for a guard that returns a UrlTree when access is denied.
+* Write unit tests for a CanDeactivate guard covering saved and unsaved form states.
+* Write unit tests for an asynchronous guard that handles successful, failed, and delayed API responses.
+* Implement multiple guards on a route and test their behavior during navigation.
+* Create a CanMatch guard that selects between two alternative routes based on a feature flag.
+* Implement a guard that waits for authentication initialization before evaluating access.
+* Create a guard that handles expired sessions without causing redirect loops.
+* Implement a generic authorization guard driven by route metadata and a permission service.
+* Write an integration test using RouterTestingHarness to verify protected route navigation.
+* Implement a guard that redirects unauthorized users to an access-denied page while preserving safe navigation behavior.
+* Create a multi-step workflow where a guard prevents users from skipping required steps.
+* Build a complete Angular route-protection solution with authentication, role-based access, feature flags, unsaved-change confirmation, and automated tests.

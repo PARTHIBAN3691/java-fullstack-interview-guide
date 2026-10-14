@@ -1,0 +1,30 @@
+* A webpage contains thousands of elements and becomes slow when updating the DOM. How would you improve performance?
+* A single-page application must navigate between pages without reloading the browser. Which Browser APIs would you use?
+* A user presses the browser's Back button, but the application does not update its view. How would you solve this?
+* A web application must remember a user's theme preference after the browser is closed. Which storage mechanism would you choose?
+* A form contains dynamically added input fields. How would you handle events efficiently?
+* An application must fetch data from a third-party API, but the browser reports a CORS error. How would you troubleshoot it?
+* A dashboard should pause animations and polling when the browser tab becomes inactive. Which API would you use?
+* A website needs to load images only when they approach the viewport. How would you implement lazy loading?
+* A long list of records causes poor scrolling performance. How would you use browser capabilities to optimize it?
+* A web application must work when the user loses internet connectivity. Which APIs would help implement offline support?
+* A user selects a large file for upload. How would you read and validate the file before uploading it?
+* A website needs to copy generated text to the clipboard. How would you implement it while handling permission failures?
+* A map application needs the user's current location. How would you request access and handle denied permissions?
+* A web application must notify users about important events even when they are not actively viewing the page. Which API would you consider?
+* A browser tab consumes excessive CPU because of repeated timers. How would you identify and fix the problem?
+* A user opens the same application in multiple tabs. How would you synchronize logout events across those tabs?
+* A complex page frequently recalculates layout after DOM changes. How would you identify and reduce layout thrashing?
+* A website needs to process large amounts of data without freezing the interface. How would you use Web Workers?
+* A web application must cache API responses and static files for offline use. How would you design the caching strategy?
+* A notification feature works on desktop but fails on mobile browsers. How would you investigate compatibility and permissions?
+* A user denies geolocation permission. How should the application provide a useful fallback experience?
+* A page must detect when an element enters or leaves the viewport without continuously listening to scroll events. Which API would you use?
+* A browser extension or application needs to observe changes in element dimensions. How would you implement this efficiently?
+* A web application embeds content from another domain and needs controlled cross-origin communication. Which browser mechanisms could help?
+* A user reports that a website displays stale content after deployment. How would you investigate browser caching and Service Workers?
+* An application needs to download a generated report without navigating away from the page. Which Browser APIs could you use?
+* A video player needs to enter fullscreen mode and recover gracefully if the request fails. How would you implement it?
+* A user can submit a form multiple times because the interface is slow. How would you manage events and asynchronous UI updates?
+* A web application needs to track online and offline transitions and update its interface accordingly. How would you implement this?
+* A production page has memory usage that grows after repeated navigation. How would you investigate detached DOM nodes, event listeners, and observers?

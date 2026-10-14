@@ -1,0 +1,30 @@
+* Write a Node.js program that creates a custom module exporting an addition function and imports it into another file.
+* Create a module that exports subtraction, multiplication, and division functions.
+* Write a module that exports an object containing application configuration values.
+* Create a module that exports a class named Employee and use it in another file.
+* Write a module that exports an array of user objects and import it into another module.
+* Create a reusable string utility module with functions for reversing a string and checking for a palindrome.
+* Write a module that exports a function to calculate the factorial of a number.
+* Create a CommonJS module that exports multiple functions using module.exports.
+* Demonstrate the difference between exports and module.exports with a working example.
+* Write an ES module that exports two named functions and imports them into another file.
+* Create an ES module that exports a default class named Product.
+* Write a program that imports a named export using an alias.
+* Create a Node.js program that uses both built-in and custom modules.
+* Write a program that demonstrates module caching by importing the same module multiple times.
+* Create a module that maintains a counter and exposes increment and getCounter functions.
+* Write a program that demonstrates how changing module.exports differs from reassigning exports.
+* Create two modules with a circular dependency and demonstrate the resulting behavior.
+* Refactor a circular dependency into a third shared module.
+* Write a program that dynamically imports a module based on a runtime condition.
+* Create an ES module that uses top-level await to load configuration asynchronously.
+* Write a module that exports an asynchronous function to fetch data from an API.
+* Create a reusable validation module that checks email addresses and phone numbers.
+* Write a module that provides database connection creation and exports the connection function.
+* Create a module that exports a logger with info, warn, and error methods.
+* Write a program that conditionally loads a development or production configuration module.
+* Create an npm package with separate public and internal modules.
+* Write a package.json configuration that exposes a public API while restricting access to internal files.
+* Create a package that supports both CommonJS and ES module consumers.
+* Write unit tests for a custom module using Node.js's built-in test runner.
+* Build a modular Node.js application with separate modules for routes, services, repositories, and configuration.

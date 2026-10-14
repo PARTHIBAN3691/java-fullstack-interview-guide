@@ -1,0 +1,30 @@
+* Write a JavaScript program that handles a runtime error using try...catch.
+* Write a program that demonstrates the execution of a finally block.
+* Write a program that throws an error when a number is negative.
+* Write a program that validates user input and throws a custom error for invalid values.
+* Create a custom ValidationError class by extending Error.
+* Write a program that distinguishes between TypeError, ReferenceError, and RangeError.
+* Write a program that catches JSON.parse() errors and displays a meaningful message.
+* Write a program that catches errors and logs the error message and stack trace.
+* Write a function that validates an email address and throws an error for invalid input.
+* Write a program that rethrows an exception after logging additional context.
+* Write a program that uses the Error cause property to preserve the original error.
+* Write a program that handles errors in a Promise chain using catch().
+* Write an async function that handles errors using try...catch.
+* Write a program that handles HTTP errors when using fetch().
+* Write a function that fetches JSON data and validates the response before returning it.
+* Write a program that handles multiple asynchronous operations using Promise.allSettled().
+* Implement a custom error class for API failures that includes an HTTP status code.
+* Write a function that retries a failed asynchronous operation up to three times.
+* Implement retry logic with exponential backoff for retryable errors.
+* Write a function that applies a timeout to an asynchronous operation.
+* Write a program that cancels a fetch request using AbortController and handles cancellation.
+* Implement a centralized error handler that categorizes validation, network, and application errors.
+* Write a program that processes multiple records and continues when individual records fail.
+* Implement a callback-based function that reports errors using the error-first callback convention.
+* Write a program that converts a callback-based API into a Promise and handles its errors.
+* Implement a function that logs an error only once as it propagates through multiple layers.
+* Write a program that handles unhandled Promise rejections in a browser environment.
+* Implement a fallback mechanism that returns cached data when an API request fails.
+* Write unit tests for a function that throws errors for invalid inputs and rejects on asynchronous failures.
+* Build a resilient API client that validates requests, handles HTTP and network errors, supports retries and timeouts, and returns consistent error objects.

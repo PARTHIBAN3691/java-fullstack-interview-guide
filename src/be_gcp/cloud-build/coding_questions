@@ -1,0 +1,30 @@
+* Write a cloudbuild.yaml configuration that compiles a Java application using Maven.
+* Write a cloudbuild.yaml configuration that builds a Spring Boot application using Gradle and runs its unit tests.
+* Write a Cloud Build configuration that packages a Java application and publishes the generated JAR as a build artifact.
+* Write a cloudbuild.yaml configuration that builds a Docker image and pushes it to Artifact Registry.
+* Write a Cloud Build configuration that tags a Docker image using a Git commit SHA.
+* Write a Cloud Build configuration that uses substitutions for project ID, region, repository, and image name.
+* Write a Cloud Build configuration that executes independent validation steps in parallel and waits for all of them before publishing an artifact.
+* Write a Cloud Build configuration that runs unit tests and fails the pipeline when tests fail.
+* Write a Cloud Build configuration that builds a Java application only when a specific branch is updated.
+* Write a Cloud Build configuration that deploys a container image to Cloud Run after a successful build.
+* Write a Cloud Build configuration that deploys a container image to GKE using a controlled deployment step.
+* Write a Cloud Build configuration that retrieves a secret from Secret Manager and passes it securely to a build step.
+* Write a Cloud Build configuration that scans a container image for vulnerabilities before allowing deployment.
+* Write a Cloud Build configuration that separates build and deployment stages using explicit step dependencies.
+* Write a Cloud Build configuration that publishes a Java package to an Artifact Registry Maven repository.
+* Write a Cloud Build configuration that deploys the same image digest to staging and production without rebuilding the image.
+* Write a Cloud Build configuration that requires a manual approval before a production deployment.
+* Write a Cloud Build configuration that generates a software bill of materials as part of a Java build pipeline.
+* Write a Cloud Build configuration that runs code quality checks and unit tests before building a container image.
+* Write a Cloud Build configuration that sets a timeout and configures an appropriate logging destination.
+* Write a Java program using the Google Cloud Build client library to retrieve the status of a build by its ID.
+* Write a Java program that lists recent Cloud Build executions for a specified Google Cloud project.
+* Write a Java program that retrieves build details and reports the duration, status, and failure information.
+* Write a Java utility that classifies Cloud Build failures into authentication, permission, compilation, test, and deployment categories.
+* Write a Java service that polls a Cloud Build operation and handles successful, failed, and timed-out executions.
+* Write a Spring Boot REST endpoint that triggers an approved Cloud Build workflow using validated input parameters.
+* Write a Spring Boot service that retrieves build status and exposes it through a monitoring endpoint.
+* Write a Java utility that validates Cloud Build substitution variables before submitting a build.
+* Write unit tests for a Java service that submits Cloud Build requests, covering permission failures, transient API errors, and timeouts.
+* Write an integration test strategy for a Cloud Build pipeline that compiles a Spring Boot application, publishes an image, and validates deployment readiness.

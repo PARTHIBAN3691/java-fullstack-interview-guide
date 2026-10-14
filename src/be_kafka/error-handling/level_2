@@ -1,0 +1,30 @@
+* How would you design a comprehensive error-handling strategy for a high-throughput Kafka application?
+* How do you guarantee that failed records are not lost during error recovery?
+* How do you coordinate offset commits with retries and DLT publishing?
+* How would you handle a consumer crash after processing fails but before the recovery action completes?
+* How do you prevent duplicate business operations when a failed message is retried?
+* How would you design error handling for an event-driven payment processing system?
+* How do Kafka transactions affect error recovery and dead-letter publishing?
+* How would you handle DLT publishing failures without losing the original record?
+* How do you distinguish infrastructure failures from business validation failures?
+* How would you design separate retry strategies for transient, permanent, and unknown exceptions?
+* How do you preserve message ordering when using retry topics?
+* How would you handle poison pill messages without repeatedly blocking a partition?
+* How do you handle deserialization failures when the original payload cannot be converted into the target object?
+* How would you design error handling for batch listeners with thousands of records?
+* How do you prevent retry storms during a downstream service outage?
+* How would you implement circuit breaking and backpressure around Kafka message processing?
+* How do you manage retries when a downstream REST API has rate limits?
+* How do you design a replay mechanism for DLT messages with idempotency guarantees?
+* How would you prevent a message from cycling indefinitely between source, retry, and DLT topics?
+* How do retry policies interact with consumer group rebalances and partition assignment?
+* How would you handle exceptions that occur after a database transaction commits but before the Kafka offset is acknowledged?
+* How do you coordinate Kafka error handling with database transactions?
+* How would you implement error recovery across Kafka, a database, and an external API?
+* How do you avoid exposing sensitive payloads or internal stack traces in error logs and DLT records?
+* How would you implement structured error metadata for tracing failed messages across services?
+* How do you design alerting based on error rates, retry volume, and DLT growth?
+* How would you tune retry backoff, max attempts, and consumer concurrency for throughput and resilience?
+* How do you ensure recoverability when a schema change causes widespread deserialization failures?
+* How would you investigate intermittent errors that occur only under production load?
+* How would you define and validate end-to-end error recovery guarantees for a Kafka-based microservice?

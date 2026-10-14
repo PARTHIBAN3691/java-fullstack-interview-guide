@@ -1,0 +1,30 @@
+* How would you design an enterprise CI/CD architecture using Cloud Build for hundreds of Java microservices?
+* How would you separate build, test, security scanning, artifact publishing, and deployment stages?
+* How would you implement a secure Cloud Build pipeline using least-privilege IAM?
+* How would you configure Workload Identity Federation for an external source control or CI/CD system?
+* How would you prevent developers from deploying directly to production through unauthorized build triggers?
+* How would you design a pipeline that promotes the same immutable image from development to staging and production?
+* How would you implement release provenance and verify that deployed artifacts came from trusted builds?
+* How would you integrate Cloud Build with Binary Authorization to restrict which images can be deployed?
+* How would you integrate vulnerability scanning into a pipeline and block releases containing critical findings?
+* How would you prevent secrets from being exposed in build logs or container layers?
+* How would you securely manage Maven credentials and private dependency repositories?
+* How would you design isolated build environments for untrusted pull requests?
+* How would you prevent dependency confusion and supply-chain attacks in Java builds?
+* How would you implement software bill of materials generation and dependency vulnerability checks?
+* How would you design a multi-project Cloud Build architecture with centralized build governance?
+* How would you optimize build duration for a large multi-module Maven project?
+* How would you implement dependency caching without introducing stale or unsafe build outputs?
+* How would you parallelize unit tests, integration tests, and independent build steps?
+* How would you manage build quotas and concurrency for hundreds of simultaneous builds?
+* How would you design reliable retries for transient failures without repeating unsafe deployment operations?
+* How would you implement automated rollback when a post-deployment validation step fails?
+* How would you design blue-green or canary deployments using Cloud Build and Cloud Run or GKE?
+* How would you enforce manual approval for production deployments while automating lower environments?
+* How would you implement reusable pipeline templates while allowing service-specific configuration?
+* How would you manage secrets and configuration across multiple environments without duplicating sensitive values?
+* How would you investigate a sudden increase in build failures across multiple repositories?
+* How would you audit who triggered a build, changed its configuration, or deployed a release?
+* How would you design disaster recovery for build configurations, triggers, and deployment automation?
+* How would you migrate an existing Jenkins pipeline to Cloud Build with minimal disruption?
+* How would you measure and optimize the reliability, security, performance, and cost of an enterprise Cloud Build platform?

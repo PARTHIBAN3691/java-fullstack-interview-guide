@@ -1,0 +1,30 @@
+* Write a functional component that increments and decrements a counter using useState.
+* Write a component that updates the document title using useEffect.
+* Write a component that fetches and displays a list of users using useEffect.
+* Write a component that handles loading, success, and error states for an API request.
+* Write a component that cleans up an interval when it unmounts.
+* Create a custom Hook named usePrevious to store the previous value.
+* Create a custom Hook named useToggle to toggle a boolean value.
+* Create a custom Hook named useCounter with increment, decrement, and reset methods.
+* Create a custom Hook named useDebounce for a search input.
+* Create a custom Hook named useThrottle for a frequently triggered callback.
+* Create a custom Hook named useLocalStorage to synchronize state with localStorage.
+* Create a custom Hook named useWindowSize to track browser dimensions.
+* Create a custom Hook named useOnlineStatus to track network connectivity.
+* Create a custom Hook named useEventListener to register and clean up DOM event listeners.
+* Create a custom Hook named useOutsideClick to detect clicks outside an element.
+* Create a custom Hook named useFetch that supports loading and error states.
+* Modify useFetch to cancel outdated requests using AbortController.
+* Create a custom Hook that polls an API at a configurable interval.
+* Create a custom Hook that tracks the previous route or selected item.
+* Implement a stopwatch using useState, useEffect, and useRef.
+* Implement a countdown timer with proper cleanup using Hooks.
+* Build a form with validation using useState and useEffect.
+* Implement a multi-step form using useReducer.
+* Build a shopping cart using useReducer and useContext.
+* Create a component that prevents unnecessary child renders using React.memo and useCallback.
+* Demonstrate the difference between useMemo and useCallback with a practical example.
+* Write a component that focuses an input using useRef and useEffect.
+* Create a custom Hook that subscribes to a WebSocket and cleans up correctly.
+* Build a component that uses useTransition to keep a search interface responsive.
+* Write a component that uses useSyncExternalStore to subscribe to a simple external store.

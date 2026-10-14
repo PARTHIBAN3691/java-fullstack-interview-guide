@@ -1,0 +1,30 @@
+* Your application has deeply nested components passing user details through props. How would you solve this using Context API?
+* You need to implement dark mode across the application. How would you design the theme context?
+* Your application requires login and logout functionality. How would you manage authentication using Context API?
+* Multiple components need access to the logged-in user's profile. How would you share this information?
+* A context update causes many unrelated components to re-render. How would you investigate and fix it?
+* Your theme Provider creates a new object on every render. What problems can this cause, and how would you optimize it?
+* You have separate contexts for authentication, theme, and language. How would you organize their Providers?
+* A nested component cannot access the expected context value. How would you debug the issue?
+* A component receives the default context value instead of the Provider value. What could be wrong?
+* Your application uses nested Providers for the same context. How would you determine which value a component receives?
+* You need to share shopping cart data between product, cart, and checkout components. How would you implement it?
+* Several components need to update global notification messages. How would you design a notification context?
+* Your application has complex global state with multiple actions. How would you combine useReducer() and Context API?
+* A context-based API call produces duplicate requests after re-renders. How would you investigate the cause?
+* An asynchronous context operation updates state after a component has been unmounted. How would you handle it?
+* Your application needs to preserve user preferences after a browser refresh. How would you implement persistence?
+* You need to test a component that depends on authentication context. How would you write the test?
+* A context Provider is difficult to test because it contains API calls and business logic. How would you refactor it?
+* You are building a multi-tenant application where each tenant has different settings. How would you structure context?
+* Your application needs separate state for frequently updated data and rarely updated configuration. How would you design the contexts?
+* A context update triggers expensive rendering in a large table. What optimization strategies would you consider?
+* You need to migrate a project from Redux to Context API. What factors would determine whether the migration is appropriate?
+* A server-rendered application shows one user's context data in another user's response. What architectural issue would you investigate?
+* Your application uses React Suspense and context-based data. What should you consider when designing loading states?
+* You need to share feature flags across many components. Would Context API be suitable, and how would you implement it?
+* Your context Provider contains authentication, theme, cart, and notification state. How would you improve the design?
+* A context-dependent component works in the application but fails in isolation during testing. How would you fix it?
+* You need to update global state from a deeply nested form component. How would you design the context API?
+* You need to support multiple independent instances of the same widget on one page. How would you avoid sharing unintended context state?
+* How would you decide whether a new piece of state belongs in local component state, Context API, or a dedicated state management library?

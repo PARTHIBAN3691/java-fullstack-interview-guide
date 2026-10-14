@@ -1,0 +1,30 @@
+* Explain how Docker image layers are stored and shared between images.
+* How does Docker calculate cache validity for individual build steps?
+* What causes Docker build cache invalidation, and how can it be minimized?
+* How would you design a reproducible Docker image build for an enterprise Java application?
+* How do you ensure that a Docker image is immutable across development, testing, and production?
+* What is the difference between a mutable image tag and an immutable image digest?
+* How would you enforce digest-based image deployment in production?
+* How do multi-platform image manifests work?
+* How would you build and publish an AMD64 and ARM64 Java image from one pipeline?
+* What are the security implications of choosing an outdated Java base image?
+* How do you scan Docker images for operating-system and application dependency vulnerabilities?
+* How would you prevent vulnerable images from being deployed to production?
+* How do you generate and verify software bills of materials for Docker images?
+* What is image signing, and how can it help establish image authenticity?
+* How would you design a trusted image promotion process across multiple environments?
+* How do BuildKit secrets differ from passing secrets through build arguments?
+* Why can deleting a secret in a later Dockerfile layer fail to remove it from the final image history?
+* How do you use BuildKit cache mounts to speed up Maven dependency downloads?
+* How would you optimize a large Spring Boot image containing hundreds of dependencies?
+* What are the trade-offs between layered Spring Boot JARs and a multi-stage Docker build?
+* How do Java runtime images created with jlink compare with standard JRE-based images?
+* How would you debug a container startup failure caused by an incompatible image architecture?
+* How do image digests, manifest lists, and platform-specific manifests relate to one another?
+* How would you manage image retention and garbage collection in a private registry?
+* How do you prevent unauthorized users from overwriting production image tags?
+* How would you design a CI/CD pipeline that builds an image once and promotes it through all environments?
+* How can you identify and remove unnecessary files from a final image without breaking the application?
+* How would you investigate a discrepancy between an image's reported size and its disk usage?
+* How do you handle base-image updates while preserving reproducibility and security?
+* How would you establish image build standards for a large organization with many Java microservices?

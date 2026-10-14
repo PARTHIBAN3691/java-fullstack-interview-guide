@@ -1,0 +1,30 @@
+* Prove why bottom-up heap construction takes O(n) time.
+* How would you implement a binary heap with dynamic array resizing?
+* How would you design an indexed priority queue that supports efficient updates and deletions by element ID?
+* How would you implement decrease-key and increase-key operations in a binary heap?
+* Why does Java PriorityQueue not provide an efficient direct decrease-key operation?
+* How would you implement a priority queue that supports arbitrary element deletion efficiently?
+* How would you design a heap that supports duplicate priorities and stable ordering?
+* What are the differences between binary heaps, binomial heaps, and Fibonacci heaps?
+* How does a Fibonacci heap improve the amortized complexity of decrease-key operations?
+* What is a d-ary heap, and when might it outperform a binary heap?
+* How would you choose the branching factor of a heap for a workload with many insertions and removals?
+* What is the difference between a binary heap and a pairing heap?
+* How would you implement a double-ended priority queue that supports both minimum and maximum retrieval?
+* How would you maintain the median of a large streaming dataset using two heaps?
+* How would you extend a two-heap median structure to support deletion of arbitrary values?
+* How would you find the kth largest element in a data stream efficiently?
+* How would you find the top K frequent elements when the input is too large to fit in memory?
+* How would you solve the sliding window median problem using two heaps?
+* How would you handle stale entries in a heap-based algorithm when priorities change?
+* How would you optimize Dijkstra's algorithm using a priority queue?
+* How would you compare lazy deletion with an indexed priority queue in graph algorithms?
+* How would you use a heap to implement an event-driven simulation system?
+* How would you design a task scheduler that supports priority updates and cancellation?
+* How would you use a heap to solve the minimum-cost merging problem?
+* How would you find the K pairs with the smallest sums from two sorted arrays?
+* How would you solve the smallest range covering elements from K sorted lists using a min-heap?
+* How would you analyze the time complexity of repeatedly extracting the maximum element from a heap?
+* How would you design an external sorting algorithm using heaps when the dataset exceeds available memory?
+* How would you test a custom heap implementation for correctness under random insertion and deletion sequences?
+* How would you benchmark Java PriorityQueue against a custom heap while accounting for JVM warm-up and garbage collection?

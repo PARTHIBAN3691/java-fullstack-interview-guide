@@ -1,0 +1,30 @@
+* Explain the architecture of Google Cloud Pub/Sub and its message delivery model.
+* How do you design a highly scalable event-driven architecture using Pub/Sub and Java microservices?
+* How do you achieve effectively-once processing when Pub/Sub may redeliver messages?
+* How do you design idempotent consumers to prevent duplicate business operations?
+* How do you handle message ordering across distributed publishers and subscribers?
+* What are the limitations of ordering keys, and how can they affect throughput?
+* How do you choose between pull, push, and StreamingPull subscriptions for production workloads?
+* How do you tune subscriber concurrency, flow control, and acknowledgment deadlines?
+* How do you prevent message backlog from growing during traffic spikes?
+* How do you design backpressure handling for a Java subscriber processing messages at high volume?
+* How do you handle poison messages without blocking healthy messages?
+* How do you design dead-letter processing and replay workflows for failed messages?
+* How do you safely replay historical messages without duplicating downstream transactions?
+* How do you coordinate message acknowledgment with database transactions?
+* How do you implement the transactional outbox pattern with Pub/Sub and a relational database?
+* How do you design a reliable event-driven workflow spanning multiple microservices?
+* How do you handle partial failures when a subscriber performs multiple downstream operations?
+* How do you design event schemas to support backward and forward compatibility?
+* How do you manage schema evolution when multiple publishers and subscribers deploy independently?
+* How do you secure Pub/Sub messaging across multiple Google Cloud projects?
+* How do you design least-privilege IAM for publishers, subscribers, and dead-letter topics?
+* How do you encrypt Pub/Sub messages using customer-managed encryption keys?
+* How do you design disaster recovery and regional resilience for Pub/Sub-driven applications?
+* How do you monitor end-to-end message processing latency across multiple services?
+* How do you distinguish publisher throughput problems from subscriber processing bottlenecks?
+* How do you optimize Pub/Sub costs for high-volume event processing?
+* How do you choose between Pub/Sub, Kafka, Cloud Tasks, and Eventarc for different workloads?
+* How do you design a Pub/Sub pipeline that processes millions of events while maintaining business-level correctness?
+* How do you handle duplicate, delayed, and out-of-order events in a distributed system?
+* How do you implement end-to-end tracing and correlation IDs across Pub/Sub-based Java microservices?

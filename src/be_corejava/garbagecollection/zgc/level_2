@@ -1,0 +1,20 @@
+* Explain the complete lifecycle of a ZGC collection cycle, from marking to relocation.
+* How do colored pointers and load barriers work together in ZGC?
+* How does ZGC maintain reference correctness during concurrent object relocation?
+* What are the performance trade-offs associated with load barriers?
+* How does ZGC handle concurrent object allocation during marking and relocation?
+* What happens when the application allocation rate exceeds ZGC's reclamation rate?
+* What is allocation stalling in ZGC, and under what conditions can it occur?
+* How does ZGC handle insufficient free memory during concurrent collection?
+* How does heap fragmentation affect ZGC performance?
+* How does ZGC maintain low pause times when the live-data set is very large?
+* How does Generational ZGC identify objects that survive multiple collection cycles?
+* How does Generational ZGC reduce the cost of collecting short-lived objects?
+* What are the trade-offs between Generational ZGC and non-generational ZGC?
+* How does ZGC's approach to object relocation differ from G1 GC's approach?
+* How does ZGC compare with Shenandoah GC in pointer handling and relocation?
+* How would you investigate high CPU utilization after switching to ZGC?
+* How would you investigate allocation stalls or repeated allocation pressure under ZGC?
+* How do CPU availability and memory bandwidth influence ZGC performance?
+* How would you tune ZGC for a latency-sensitive application with a large heap?
+* How would you decide between ZGC, Shenandoah GC, and G1 GC for a production workload?

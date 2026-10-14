@@ -1,0 +1,30 @@
+* Explain how Angular change detection works internally and how it affects application performance.
+* How do Zone.js and zoneless change detection affect Angular performance?
+* How would you migrate a large Angular application to zoneless change detection?
+* How do signals and OnPush work together to reduce unnecessary rendering?
+* How would you identify and optimize components that trigger excessive change detection?
+* What are the trade-offs between OnPush, signals, and manual change detection?
+* How would you optimize a component tree containing thousands of nested components?
+* How do you use Angular CDK virtual scrolling for extremely large datasets?
+* What are the limitations of virtual scrolling when items have dynamic heights?
+* How would you optimize rendering when a list contains frequently changing data?
+* How do you design a caching strategy that balances performance and data freshness?
+* How would you prevent cache stampedes when many components request the same resource?
+* How do you implement request deduplication and cancellation for concurrent API calls?
+* How would you optimize an application that downloads large JavaScript bundles?
+* How do you analyze and improve Largest Contentful Paint (LCP)?
+* How do you diagnose poor Interaction to Next Paint (INP) in an Angular application?
+* How do you reduce Cumulative Layout Shift (CLS) caused by dynamically loaded content?
+* How do you optimize server-side rendering and hydration for large Angular applications?
+* What causes hydration mismatches, and how can they affect performance?
+* How would you optimize Angular applications for low-end mobile devices and slow networks?
+* How do you use Web Workers to move CPU-intensive processing off the main thread?
+* How do you decide between Web Workers, requestIdleCallback(), and chunked processing?
+* How do you optimize a large reactive form with complex cross-field validation?
+* How do you identify memory leaks using heap snapshots and allocation profiling?
+* How do detached DOM nodes and retained subscriptions affect browser memory?
+* How would you optimize third-party charting, analytics, and UI libraries?
+* How do you implement route-level code splitting while minimizing navigation delays?
+* How would you use performance budgets in a CI/CD pipeline?
+* How do you distinguish frontend rendering bottlenecks from backend API latency?
+* How would you establish performance benchmarks and regression monitoring for an enterprise Angular application?

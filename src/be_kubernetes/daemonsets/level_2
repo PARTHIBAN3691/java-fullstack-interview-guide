@@ -1,0 +1,30 @@
+* Explain the internal architecture of the Kubernetes DaemonSet controller.
+* How does the DaemonSet controller determine which nodes should run a Pod?
+* How does Kubernetes handle DaemonSet scheduling when node affinity and taints are configured?
+* How does a DaemonSet differ architecturally from a Deployment with node affinity?
+* How would you design a cluster-wide logging architecture using DaemonSets?
+* How would you design a monitoring architecture using DaemonSets and Prometheus?
+* How would you deploy a network plugin or node-level networking agent using a DaemonSet?
+* How do DaemonSets interact with the Kubernetes control plane during node registration?
+* How does the DaemonSet controller handle nodes that are temporarily unavailable?
+* How would you design a DaemonSet update strategy for thousands of worker nodes?
+* What are the trade-offs between RollingUpdate and OnDelete for critical node agents?
+* How would you perform a zero-downtime rollout of a node-level observability agent?
+* How do maxUnavailable and maxSurge affect DaemonSet rolling updates?
+* What risks arise when a DaemonSet requires privileged access to the host?
+* How would you apply least-privilege security principles to a node-level DaemonSet?
+* How would you prevent a compromised DaemonSet Pod from affecting the entire node?
+* How do Pod Security Admission policies affect privileged DaemonSet workloads?
+* How would you design a DaemonSet that supports heterogeneous node architectures?
+* How would you handle different configurations for GPU nodes, general-purpose nodes, and control plane nodes?
+* How do resource requests and limits affect cluster capacity when a DaemonSet runs on every node?
+* How would you estimate the resource consumption of a DaemonSet across a large cluster?
+* How do DaemonSets interact with Cluster Autoscaler when nodes are added or removed?
+* How would you ensure that a DaemonSet is ready before application workloads start on a new node?
+* How would you troubleshoot a DaemonSet that reports all desired Pods scheduled but only some Pods ready?
+* How would you design fault tolerance for a node-level logging agent when its backend becomes unavailable?
+* How would you prevent a logging DaemonSet from exhausting node disk space?
+* How would you design DaemonSet observability using metrics, logs, and alerts?
+* How would you deploy different DaemonSet versions during a gradual cluster upgrade?
+* How would you manage DaemonSets across multiple Kubernetes clusters using GitOps?
+* What architectural considerations apply when deploying security agents, runtime sensors, or storage plugins as DaemonSets?

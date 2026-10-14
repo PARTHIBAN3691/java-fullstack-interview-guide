@@ -1,0 +1,26 @@
+
+* An application needs to read a configuration file during startup. How would you read the file safely and handle missing files?
+* You need to copy a file from one directory to another. How would you handle large files and IO exceptions?
+* A log file must be updated continuously without deleting existing content. How would you implement append functionality?
+* A batch job needs to process a CSV file containing millions of records. How would you read the file without loading it entirely into memory?
+* An application must read a binary image file and write an exact copy to another location. Which Java IO classes would you use?
+* A text file contains non-English characters that appear corrupted after reading. How would you investigate and fix the encoding issue?
+* A file-processing application frequently performs slow read operations. How would you investigate whether buffering could improve performance?
+* An application must write several lines to a file efficiently. How would you use `BufferedWriter` and `flush()`?
+* A program throws an exception before a file stream is closed. How would you ensure the resource is released?
+* A file-processing task uses multiple resources, and both processing and resource closure can fail. How would you preserve the original exception?
+* An application must merge the contents of multiple input files into a single output stream. Which Java IO class could help?
+* A system needs to store and retrieve Java objects from a file. How would you implement serialization and deserialization?
+* A serialized object cannot be deserialized after a class has changed. How would you investigate the issue?
+* An application receives serialized data from an external source. What security precautions should be taken before deserialization?
+* A large file must be updated at a specific byte offset without rewriting the entire file. Which class would you use?
+* Two application threads attempt to write to the same file simultaneously. What problems can occur, and how would you coordinate access?
+* A service needs to monitor an input file while another process is writing to it. What challenges would you consider?
+* A report-generation job creates an incomplete output file when the application fails midway. How would you make file generation more reliable?
+* A production application runs on different operating systems and cannot locate its files consistently. How would you investigate path-related issues?
+* A file upload service must validate file size, extension, and content before processing. How would you structure the IO operations safely?
+* A scheduled job must read a file line by line, skip malformed records, and continue processing valid records. How would you implement the error handling?
+* A process needs to read a file while minimizing unnecessary object allocations. What Java IO techniques would you consider?
+* An application must create a directory structure before writing an output file. How would you check and create the required directories?
+* A file-copy operation succeeds for small files but performs poorly for large files. How would you investigate and optimize it?
+* A production service needs to process files with predictable memory usage and reliable resource cleanup. How would you design the file-processing workflow?

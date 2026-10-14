@@ -1,0 +1,25 @@
+* Explain the design principles behind the Java 8 Date and Time API.
+* Why are Java 8 date-time classes immutable and thread-safe?
+* Why is `DateTimeFormatter` thread-safe while `SimpleDateFormat` is not?
+* How does the Java Date and Time API handle daylight saving time transitions?
+* What happens when a local date-time falls into a daylight saving time gap?
+* How are ambiguous local date-times handled during a daylight saving time overlap?
+* How do you resolve daylight saving time gaps and overlaps explicitly?
+* What is the difference between calendar days and fixed-duration periods when working across time zones?
+* Why can adding 24 hours to a `ZonedDateTime` produce a different local time from adding one day?
+* How does `ZonedDateTime` handle changes in time-zone rules?
+* What is the difference between `Period.between()` and `ChronoUnit.DAYS.between()`?
+* What are the limitations of using `LocalDateTime` to represent an event that occurred globally?
+* Why should UTC or `Instant` often be used to store event timestamps in distributed systems?
+* How would you design a date-time strategy for applications serving users in multiple time zones?
+* How do you handle date-time serialization and deserialization in REST APIs?
+* How do you represent a date-only business value differently from a globally unique timestamp?
+* What are the risks of storing time-zone abbreviations instead of region-based zone IDs?
+* How do you handle historical dates when time-zone rules change?
+* How do you test date-dependent business logic without relying on the system clock?
+* What is the purpose of `Clock` in the Java Time API?
+* How can dependency injection of `Clock` improve unit testing?
+* How do you implement a custom `TemporalAdjuster`?
+* How can you use `TemporalQuery` to extract custom information from a temporal object?
+* How do you handle dates outside the supported range of standard Java date-time classes?
+* How would you design a robust date-time conversion utility that avoids accidental time-zone and daylight saving errors?

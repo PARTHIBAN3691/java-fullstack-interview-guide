@@ -1,0 +1,30 @@
+* Your Node.js HTTP server starts but clients cannot connect to it. How would you troubleshoot the issue?
+* An API returns a 200 status code even when the requested resource does not exist. How would you correct the response handling?
+* Your server receives a POST request, but the request body is empty. How would you investigate the issue?
+* A client sends malformed JSON, causing the server to crash. How would you handle the request safely?
+* Your HTTP server becomes slow when multiple clients download large files simultaneously. How would you optimize it?
+* A client disconnects before the server finishes sending a response. How would you detect and handle this?
+* Your server returns an ERR_HTTP_HEADERS_SENT error. What causes it, and how would you fix it?
+* An API works through localhost but fails when accessed through a reverse proxy. How would you diagnose the issue?
+* Your HTTP client opens too many connections to a downstream service. How would you control connection reuse?
+* A downstream API occasionally takes 60 seconds to respond. How would you prevent requests from hanging indefinitely?
+* Your HTTP client retries a payment request after a timeout, causing duplicate transactions. How would you prevent this?
+* Your server experiences frequent ECONNRESET errors. What could cause them, and how would you investigate?
+* Clients report intermittent 502 and 504 errors when calling your service. How would you troubleshoot the request path?
+* Your application accepts large request payloads that exhaust server memory. How would you enforce safe limits?
+* An HTTP server continues accepting new requests during application shutdown. How would you implement graceful shutdown?
+* Your API returns incorrect Content-Type headers, causing clients to misinterpret responses. How would you resolve this?
+* A file-download endpoint corrupts files when multiple users download them concurrently. How would you investigate the implementation?
+* Your server behaves differently when using HTTP keep-alive. How would you identify whether connection reuse is responsible?
+* An HTTPS client rejects a server certificate in production but works in development. How would you investigate the certificate issue?
+* A service-to-service request fails because the downstream service requires mutual TLS. How would you configure the client?
+* Your API sends large JSON responses and consumes excessive CPU. How would you improve response performance?
+* A reverse proxy and Node.js server interpret request headers differently. How would you investigate possible request-smuggling risks?
+* Your application returns stale data to clients even after the underlying resource changes. How would you correct HTTP caching behavior?
+* An API endpoint returns 304 Not Modified when the resource has changed. How would you debug conditional request handling?
+* Your HTTP server experiences high latency even though application business logic is fast. What networking and connection factors would you investigate?
+* A large number of idle HTTP connections consumes server resources. How would you configure connection and timeout policies?
+* Your HTTP client receives a 429 Too Many Requests response from an external API. How should it respond?
+* A client uploads a large file, but the server stops reading the request body. How would you diagnose stream backpressure or connection problems?
+* Your HTTP service must support thousands of concurrent clients while maintaining predictable latency. What architectural and tuning changes would you consider?
+* You need to build a production-grade HTTP gateway in Node.js. How would you implement routing, authentication, timeouts, retries, logging, and graceful shutdown?

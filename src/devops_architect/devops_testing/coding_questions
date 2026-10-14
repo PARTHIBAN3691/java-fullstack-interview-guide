@@ -1,0 +1,101 @@
+
+**Unit Testing in Pipelines**
+* Write JUnit 5 and Mockito tests for a Spring Boot service covering success, validation failure, dependency exceptions, and boundary conditions.
+* Create a Maven or Gradle pipeline stage that runs unit tests, generates coverage reports, and fails when required quality thresholds are not met.
+* Implement a test-isolation check that detects reliance on shared static state or execution order.
+* Write a parameterized test suite for validating business rules across multiple input combinations.
+
+**Integration Testing**
+* Implement a Spring Boot integration test using Testcontainers for PostgreSQL and verify repository operations and transaction behavior.
+* Write an integration test that publishes a Kafka event, waits for asynchronous processing, and verifies the resulting database state without fixed-duration sleeps.
+* Implement a test that simulates a downstream timeout and verifies retry, timeout, and fallback behavior.
+* Create a CI job that starts dependent services, executes integration tests, collects diagnostic logs, and cleans up resources even after failure.
+
+**API Testing**
+* Write REST Assured tests for a REST API covering status codes, response schemas, validation errors, authentication, and authorization.
+* Implement API tests that verify pagination, sorting, filtering, and boundary conditions.
+* Create an idempotency test that submits the same order request repeatedly and verifies that only one order is created.
+* Write a test that validates backward compatibility between two versions of an API response schema.
+* Implement an API security test that verifies users cannot access another tenant's resources.
+
+**Contract Testing**
+* Implement a Pact consumer test for a Spring Boot client and publish the generated contract from a CI pipeline.
+* Write a provider-verification pipeline that validates published contracts before deployment.
+* Create a release gate that checks compatibility against all supported consumer contracts.
+* Implement contract tests for Kafka messages that validate required fields, field types, and schema evolution rules.
+* Write an automated test that rejects a provider change that removes a field required by an existing consumer.
+
+**End-to-End Testing**
+* Create a Playwright or Cypress test for a complete login-to-checkout business journey.
+* Implement E2E test setup and teardown that creates isolated test users and removes test-owned records safely.
+* Write a test that waits for an asynchronous business outcome using bounded polling and explicit timeout handling.
+* Configure parallel E2E execution while ensuring tests do not share mutable accounts or data.
+* Implement failure diagnostics that capture screenshots, browser console output, request traces, and application logs.
+
+**Smoke Testing**
+* Write a post-deployment smoke-test script that checks critical API endpoints, database connectivity, and dependency health.
+* Implement a smoke test for a checkout workflow using synthetic data and a mechanism that prevents real payment capture.
+* Create a deployment gate that blocks traffic shifting when smoke tests fail.
+* Write a smoke-test report that records the deployed version, test results, duration, and failure details.
+
+**Regression Testing**
+* Implement a regression-test selection utility that maps changed modules to affected test suites.
+* Write tests for a bug fix that reproduce the original failure and validate adjacent edge cases.
+* Create a CI pipeline that runs fast regression tests on pull requests and the complete suite before release.
+* Implement a flaky-test tracker that records failure frequency, recent history, and quarantine status.
+* Write a test that validates backward compatibility when an API response adds optional fields.
+
+**Performance Testing**
+* Create a k6 or Gatling test that generates configurable traffic and reports throughput, p95/p99 latency, and error rate.
+* Implement a performance gate that compares test results against a baseline with configurable tolerances.
+* Write a load test that simulates gradual ramp-up, sudden traffic spikes, sustained load, and recovery.
+* Create a test scenario that measures application behavior when a downstream service becomes slow.
+* Implement a pipeline step that archives performance results and associates them with the source commit and deployed artifact.
+
+**Security Testing**
+* Create a CI pipeline that runs SAST, dependency scanning, secrets scanning, and container image scanning.
+* Implement a policy gate that blocks critical vulnerabilities unless a time-bound, approved exception exists.
+* Write API tests for broken object-level authorization, privilege escalation, and tenant isolation.
+* Create a secret-scanning test that verifies credentials cannot be exposed through application logs or build artifacts.
+* Implement a DAST pipeline stage against an isolated test deployment with controlled test credentials.
+
+**Infrastructure Testing**
+* Write a policy-as-code test that rejects publicly exposed storage, unrestricted ingress rules, and missing encryption settings.
+* Implement an automated test that provisions a temporary environment, verifies connectivity and IAM permissions, and cleans up resources.
+* Create a drift-detection test that compares declared infrastructure with observed cloud resources.
+* Write a test that validates required resource tags, quotas, backup policies, and network boundaries.
+
+**Terraform Testing**
+* Write a pipeline that runs `terraform fmt -check`, `terraform validate`, static security scanning, and plan review.
+* Implement Terratest tests for a reusable Terraform module and verify that provisioned resources behave as expected.
+* Create a plan-policy test that rejects unexpected database replacement or destructive resource deletion.
+* Write a test that validates module inputs across development, staging, and production configurations.
+* Implement cleanup logic that destroys only resources created and owned by the current test run.
+
+**Container Testing**
+* Create a container CI pipeline that builds an image, scans vulnerabilities, generates an SBOM, and verifies image metadata.
+* Write a test that confirms an image runs as a non-root user with a read-only filesystem and required capabilities dropped.
+* Implement a container test that verifies startup, health checks, graceful shutdown, and signal handling.
+* Create a reproducibility check that compares image digests from equivalent builds.
+* Write a pipeline policy that allows only approved base images and verified artifacts to proceed to deployment.
+
+**Kubernetes Testing**
+* Write a pipeline that validates Kubernetes manifests and Helm charts before deployment.
+* Implement a test that verifies readiness, liveness, and startup probes under slow-start and dependency-failure conditions.
+* Create a Kubernetes smoke test that verifies service endpoints, expected pod versions, and application readiness after rollout.
+* Write RBAC and NetworkPolicy tests that validate allowed and denied access paths.
+* Implement a rollout test that simulates pod failure and confirms the deployment recovers within defined limits.
+
+**Deployment Verification**
+* Implement a post-deployment verifier that checks artifact version, health endpoints, error rate, and latency thresholds.
+* Write a canary-analysis script that compares the new release with the stable version using configurable metrics.
+* Create an automated rollback workflow with safeguards against repeated rollback loops.
+* Implement a deployment test that validates background consumers, scheduled jobs, and asynchronous workflows after release.
+* Write a report generator that correlates deployment IDs, artifact digests, test results, and monitoring outcomes.
+
+**Production Testing**
+* Implement a synthetic-monitoring job that safely validates critical production workflows using dedicated test identities and data.
+* Create a canary release gate that evaluates latency, error rate, and business metrics over a defined observation window.
+* Write a feature-flag test that gradually exposes a new feature and disables it automatically when defined thresholds are breached.
+* Implement a production test-data cleanup process that deletes only records created by the synthetic test.
+* Create a controlled fault-injection test with authorization checks, a kill switch, blast-radius limits, and automatic termination criteria.

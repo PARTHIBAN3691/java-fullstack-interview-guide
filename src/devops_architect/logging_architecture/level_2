@@ -1,0 +1,36 @@
+* Design a highly available centralized logging architecture for hundreds of microservices running across multiple Kubernetes clusters and cloud regions.
+* How would you design a logging pipeline that supports high ingestion throughput, low search latency, reliable delivery, and controlled storage costs?
+* How would you estimate logging infrastructure capacity based on event volume, average log size, retention period, replication, and indexing overhead?
+* How would you design a multi-stage log pipeline that supports collection, buffering, parsing, enrichment, filtering, indexing, and archival?
+* How would you prevent log loss during collector restarts, network failures, Elasticsearch outages, and sudden ingestion spikes?
+* How would you choose between at-most-once, at-least-once, and best-effort log delivery for different logging requirements?
+* How would you handle duplicate log events when collectors retry delivery after a timeout?
+* How would you design backpressure and buffering controls to prevent log ingestion failures from affecting application workloads?
+* How would you prevent Fluent Bit or Fluentd from consuming excessive CPU, memory, or disk resources on Kubernetes nodes?
+* How would you choose between Fluent Bit, Fluentd, Logstash, and managed cloud logging services for a large enterprise?
+* How would you scale Logstash pipelines when parsing and enrichment become the ingestion bottleneck?
+* How would you optimize Elasticsearch index mappings, shard sizes, replicas, and lifecycle policies for billions of log events?
+* How would you troubleshoot an Elasticsearch cluster experiencing high indexing latency, unassigned shards, and frequent disk-watermark warnings?
+* How would you design separate hot, warm, cold, and archival storage tiers for logs with different access requirements?
+* How would you balance log search performance, retention requirements, storage costs, and recovery objectives?
+* How would you design tenant isolation and access controls for a shared logging platform used by multiple teams?
+* How would you prevent high-cardinality fields from causing mapping explosions or excessive index growth in Elasticsearch?
+* How would you evolve JSON log schemas without breaking dashboards, alerts, and existing search queries?
+* How would you handle inconsistent timestamps, time zones, clock skew, and out-of-order events across distributed services?
+* How would you design correlation-ID propagation across HTTP, gRPC, message brokers, scheduled jobs, and asynchronous workflows?
+* How would you ensure correlation IDs are trustworthy and cannot be abused to inject misleading values into logs?
+* How would you correlate logs and distributed traces when requests cross service boundaries and use different telemetry SDKs?
+* How would you implement sensitive-data masking consistently across application logging libraries, collectors, ingestion pipelines, and storage?
+* How would you prevent secrets from leaking through exception messages, stack traces, HTTP headers, and request payloads?
+* How would you design a safe response when sensitive data is accidentally indexed and replicated across logging storage?
+* How would you distinguish operational logs, security logs, audit logs, and business-event logs in the same logging platform?
+* How would you preserve the integrity and auditability of security logs while allowing operational logs to follow shorter retention periods?
+* How would you design cloud-native logging for ephemeral Kubernetes workloads, including container stdout/stderr, node logs, and control-plane logs?
+* How would you handle log collection for applications that write to files instead of standard output in containers?
+* How would you design centralized logging across multiple cloud accounts, subscriptions, projects, and regions?
+* How would you prevent a logging-platform outage from becoming a production application outage?
+* How would you detect silent log loss when collectors continue running but events are dropped or delayed?
+* How would you design monitoring and alerting for ingestion lag, queue saturation, indexing failures, disk pressure, and collector health?
+* How would you migrate from a legacy ELK deployment to a newer architecture without losing critical logs or breaking existing dashboards?
+* How would you implement data minimization and retention enforcement for logs subject to privacy and compliance requirements?
+* How would you establish organization-wide logging standards covering schemas, trace context, redaction, retention, and ownership?

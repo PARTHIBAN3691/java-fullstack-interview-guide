@@ -1,0 +1,115 @@
+**Git Fundamentals**
+* What is Git, and what problems does it solve in software development?
+* What is the difference between Git and GitHub?
+* Explain the working directory, staging area, and local repository.
+* What is the difference between `git add`, `git commit`, `git push`, and `git pull`?
+* What is the difference between `git fetch` and `git pull`?
+* What are `HEAD`, the index, and the current branch?
+* How do you inspect commit history and the status of a working directory?
+
+**Branching Strategies**
+* What is a Git branch, and why do teams use branches?
+* What are the common branching strategies used in software development?
+* What are the differences between long-lived and short-lived branches?
+* How do teams decide when to create or delete a branch?
+* What problems can arise when branches remain open for a long time?
+
+**GitFlow**
+* What is GitFlow, and what are its main branch types?
+* What are the purposes of `main`, `develop`, feature, release, and hotfix branches?
+* When should a team consider using GitFlow?
+* How does a hotfix branch differ from a feature branch?
+* What are the limitations of GitFlow for frequently deployed applications?
+
+**Trunk-Based Development**
+* What is trunk-based development?
+* What is the trunk or mainline branch?
+* How do developers integrate their changes in trunk-based development?
+* Why are short-lived branches important in this approach?
+* What is a feature flag, and how does it support trunk-based development?
+
+**Feature Branches**
+* What is a feature branch?
+* How should a feature branch be named?
+* When should a feature branch be merged?
+* Why should feature branches be kept small and short-lived?
+* What is the difference between a feature branch and a release branch?
+
+**Pull Requests**
+* What is a pull request, and why is it used?
+* What information should a pull request description contain?
+* What are draft pull requests?
+* How do automated checks help validate pull requests?
+* What is the difference between approving and merging a pull request?
+
+**Code Reviews**
+* What is the purpose of a code review?
+* What should reviewers check before approving a change?
+* What is the difference between a blocking comment and a suggestion?
+* How should developers respond to review feedback?
+* Why should code reviews focus on correctness, maintainability, and security?
+
+**Merge vs Rebase**
+* What is a Git merge?
+* What is a Git rebase?
+* What is the difference between a fast-forward merge and a three-way merge?
+* What is a merge conflict?
+* Why should developers be careful when rebasing a shared branch?
+* How do you abort a merge or rebase that is in progress?
+
+**Git Tags**
+* What is a Git tag?
+* What is the difference between lightweight and annotated tags?
+* How do you create, list, and push Git tags?
+* How are tags used to identify software releases?
+* Can a Git tag be moved or deleted?
+
+**Git Hooks**
+* What are Git hooks?
+* What is the difference between client-side and server-side Git hooks?
+* What are pre-commit and commit-message hooks?
+* What is a pre-push hook?
+* What are the limitations of relying only on local Git hooks?
+
+**Monorepo vs Polyrepo**
+* What is a monorepo?
+* What is a polyrepo or multi-repository approach?
+* What are the advantages and disadvantages of a monorepo?
+* What are the advantages and disadvantages of separate repositories?
+* What factors influence the choice between monorepo and polyrepo?
+
+**Release Branches**
+* What is a release branch?
+* Why might a team create a release branch before production deployment?
+* How are release branches different from feature branches?
+* How should bug fixes be propagated between release and main branches?
+* When should a release branch be closed or deleted?
+
+**Semantic Versioning**
+* What is semantic versioning?
+* What do MAJOR, MINOR, and PATCH version numbers represent?
+* What is a pre-release version?
+* How do backward-compatible changes affect version numbers?
+* What is the purpose of a version such as `2.4.1`?
+
+**Commit Strategies**
+* What makes a Git commit useful and maintainable?
+* What is the purpose of a commit message?
+* What is the difference between a commit and a push?
+* What are atomic commits?
+* What are the differences between merge commits, squash merges, and rebase merges?
+
+**Repository Governance**
+* What is repository governance?
+* Why should repositories have branch protection rules?
+* What are required status checks?
+* Why should production branches restrict direct pushes?
+* What are CODEOWNERS files used for?
+* How do repository permissions help protect source code?
+
+**GitOps Repository Design**
+* What is GitOps, and how does Git serve as the desired-state source of truth?
+* What is the difference between an application source-code repository and a GitOps configuration repository?
+* Why should deployment configuration be version-controlled?
+* How can repositories represent development, staging, and production environments?
+* What is configuration drift, and how does GitOps help detect or correct it?

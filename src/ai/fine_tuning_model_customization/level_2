@@ -1,0 +1,83 @@
+**Fine-Tuning Fundamentals**
+* How would you design a scalable fine-tuning platform that supports multiple base models, teams, datasets, hardware configurations, and deployment targets?
+* How would you optimize training cost while balancing model quality, experiment throughput, and reproducibility?
+* How would you identify and mitigate catastrophic forgetting when fine-tuning a model for a narrow task?
+* How would you determine whether a performance improvement is statistically significant and attributable to fine-tuning?
+
+**Supervised Fine-Tuning (SFT)**
+* How would you diagnose unstable training, gradient spikes, divergence, or validation loss increasing while training loss decreases?
+* How would you design an SFT pipeline that handles long-context samples, variable sequence lengths, gradient accumulation, and distributed training?
+* How would you prevent answer leakage when training on multi-turn conversations or structured assistant-tool interactions?
+* How would you balance learning from task-specific examples against preserving general language capabilities?
+
+**Instruction Tuning**
+* How would you build a high-quality instruction-tuning corpus for multilingual, multi-task, and multi-turn behavior?
+* How would you reduce instruction overfitting and maintain reliable performance on previously unseen task formulations?
+* How would you evaluate instruction hierarchy adherence when user requests conflict with safety and system policies?
+* How would you investigate a model that follows training-format instructions well but fails when deployed with a different chat template?
+
+**Parameter-Efficient Fine-Tuning (PEFT)**
+* How would you compare the memory, throughput, quality, and deployment implications of PEFT techniques at different model scales?
+* How would you manage adapter composition when multiple LoRA adapters modify overlapping model modules?
+* How would you prevent interference between task-specific adapters and determine whether adapters can be merged safely?
+* How would you build a multi-tenant serving architecture that loads adapters dynamically without leaking one customer's behavior into another's session?
+
+**LoRA and QLoRA**
+* How would you select LoRA rank and target modules using systematic experiments rather than relying on default configurations?
+* How would you diagnose poor QLoRA convergence caused by quantization settings, precision incompatibilities, or optimizer configuration?
+* How would you compare merged and unmerged LoRA deployment in terms of latency, memory use, numerical behavior, and flexibility?
+* How would you design adapter training and inference when the base model is quantized but certain computations require higher precision?
+
+**Dataset Preparation and Quality**
+* How would you build automated data-quality gates that detect contamination, duplication, label errors, privacy violations, and distribution shifts?
+* How would you quantify and mitigate dataset bias across language, demographic representation, task types, and rare classes?
+* How would you establish data lineage from source systems through preprocessing, filtering, training, and final model artifacts?
+* How would you prevent evaluation contamination when synthetic data is generated from benchmarks or model outputs derived from test examples?
+
+**Training and Validation Splits**
+* How would you design leakage-resistant splits for datasets containing near-duplicates, shared source documents, repeated users, or temporal dependencies?
+* How would you evaluate generalization when labeled test data is scarce and the target distribution changes over time?
+* How would you prevent repeated hyperparameter tuning against a small validation set from producing overly optimistic results?
+* How would you design temporal and out-of-domain test sets to estimate performance after deployment?
+
+**Synthetic Data Generation**
+* How would you prevent recursive synthetic-data training from amplifying teacher-model errors and reducing linguistic diversity?
+* How would you build a filtering pipeline using rule-based checks, model-based scoring, deduplication, and human review?
+* How would you estimate the marginal value of additional synthetic samples compared with collecting more real-world data?
+* How would you generate difficult examples while ensuring they are valid, representative, safe, and not misleading?
+
+**Retrieval vs Fine-Tuning**
+* How would you architect a hybrid system in which fine-tuning changes model behavior while retrieval supplies current facts and evidence?
+* How would you estimate the break-even point between recurring retrieval infrastructure costs and model adaptation costs?
+* How would you handle regulatory or business requirements to remove a fact when that fact may have been learned during fine-tuning?
+* How would you design experiments that isolate improvements from fine-tuning, retrieval, prompting, and changes to the underlying model?
+
+**Domain Adaptation**
+* How would you perform domain-adaptive pretraining followed by task-specific SFT while limiting catastrophic forgetting?
+* How would you evaluate specialized-domain improvements against general-language regressions and domain-shift scenarios?
+* How would you adapt a model to a low-resource domain when labeled examples are scarce and domain terminology is highly specialized?
+* How would you manage domain adaptation when source data contains conflicting conventions, proprietary terminology, or changing regulations?
+
+**Model Distillation**
+* How would you design a distillation strategy that preserves complex reasoning and tool-use behavior in a smaller student model?
+* How would you determine whether response-level distillation, logit distillation, or intermediate-representation distillation is appropriate?
+* How would you prevent the student from reproducing teacher hallucinations, unsafe behavior, or systematic biases?
+* How would you measure end-to-end gains in throughput, serving cost, energy use, and task quality after distillation?
+
+**Quantization**
+* How would you select quantization algorithms and calibration data for a model with long-context and domain-specific workloads?
+* How would you investigate accuracy degradation caused by quantization-sensitive layers or activation outliers?
+* How would you compare weight-only quantization, activation quantization, and quantization-aware training under production constraints?
+* How would you determine whether a quantized model's measured speedup translates into real production throughput under concurrent workloads?
+
+**Fine-Tuning Evaluation**
+* How would you design a statistically robust evaluation framework for nondeterministic generative outputs and small performance differences?
+* How would you detect benchmark overfitting, contamination, evaluator bias, and reward hacking in model evaluation?
+* How would you evaluate safety, privacy leakage, robustness, and general capability retention alongside task-specific accuracy?
+* How would you build continuous evaluation gates that block model promotion when critical quality or safety metrics regress?
+
+**Model Versioning and Rollback**
+* How would you maintain reproducibility when base-model weights, training libraries, tokenizer versions, datasets, and hardware configurations change?
+* How would you implement canary deployment and automated rollback using online quality, safety, latency, and cost metrics?
+* How would you roll back an adapter, quantized artifact, or base-model change when multiple versions share the same serving infrastructure?
+* How would you preserve auditability and artifact provenance across model releases, retraining runs, and emergency rollbacks?

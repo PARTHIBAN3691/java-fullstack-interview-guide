@@ -1,0 +1,30 @@
+* How does TypeScript infer generic type parameters in complex nested function calls?
+* What are conditional types, and how do they interact with generic parameters?
+* How does the infer keyword work inside conditional types?
+* What are distributive conditional types, and how do they affect generic types?
+* How do mapped types work with generic type parameters?
+* How can you create a custom utility type using generics and mapped types?
+* How do indexed access types work with generic constraints?
+* How can you derive a property type using T[K]?
+* What are recursive generic types, and where are they useful?
+* How would you implement a DeepPartial<T> utility type?
+* How would you implement a DeepReadonly<T> utility type?
+* How do generic defaults interact with type inference?
+* How does TypeScript handle generic constraints involving unions and intersections?
+* What is the difference between a generic parameter constraint and a conditional type?
+* How do variance and covariance affect generic type compatibility?
+* What is the difference between covariance, contravariance, and invariance?
+* How does strictFunctionTypes affect generic function compatibility?
+* Why can generic types sometimes produce unexpected inference results?
+* How would you design a type-safe event emitter using generics?
+* How would you implement a generic middleware pipeline while preserving input and output types?
+* How would you create a generic function composition utility?
+* How do variadic tuple types improve generic function definitions?
+* How would you type a function that accepts a variable number of arguments while preserving their types?
+* How can const type parameters improve generic inference?
+* How do generic constraints using keyof and indexed access improve API safety?
+* How would you design a generic cache that supports multiple key and value types?
+* How can you preserve a function's parameter and return types in a generic wrapper?
+* What are the limitations of using generics to model runtime-dependent data?
+* How do generic types interact with discriminated unions and exhaustive checking?
+* How would you design a reusable generic data-access layer for a large TypeScript application?

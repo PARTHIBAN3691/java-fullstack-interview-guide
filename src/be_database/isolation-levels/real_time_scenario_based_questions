@@ -1,0 +1,30 @@
+* Two users read the same account balance and withdraw money concurrently, causing an incorrect final balance. How would you investigate and prevent this issue?
+* A Java application occasionally reads uncommitted changes from another transaction. How would you identify the cause and fix it?
+* A user reads the same order twice within one transaction but gets different values. How would you investigate the isolation level and transaction boundaries?
+* A reporting query returns different results when executed multiple times inside one transaction. How would you determine whether the issue is caused by non-repeatable reads or phantom reads?
+* Two customers attempt to purchase the final item in stock, and both orders succeed. How would you redesign the transaction to prevent overselling?
+* Two transactions each verify that at least one doctor remains on call, then independently update different doctors to off-call. Both updates succeed. What anomaly occurred, and how would you prevent it?
+* A payment service occasionally records an incorrect account balance during concurrent transfers. How would you investigate and correct the transaction design?
+* A Spring Boot application uses @Transactional with SERIALIZABLE, but concurrent requests still violate a business rule. What would you inspect?
+* A transaction configured with REPEATABLE_READ behaves differently in MySQL and PostgreSQL. How would you identify the database-specific cause?
+* A production application experiences a sudden increase in lock waits after changing the isolation level. How would you diagnose and resolve the issue?
+* A transaction fails with a serialization exception during peak traffic. How would you implement safe retries and prevent repeated failures?
+* Two transactions update the same customer record, and one update silently overwrites the other. How would you prevent the lost update?
+* A Spring Data JPA application uses @Version but still experiences inconsistent business decisions involving multiple rows. How would you investigate the issue?
+* A long-running reporting transaction causes database storage growth and delayed cleanup of old row versions. How would you diagnose and fix it?
+* A connection pool reuses connections, and some requests unexpectedly run with a different isolation level. How would you investigate the configuration?
+* A nested Spring service method requests SERIALIZABLE isolation, but the existing transaction continues using READ_COMMITTED. Why might this happen, and how would you fix it?
+* An application reads an order from a replica immediately after updating it on the primary and receives stale data. How would you address the consistency requirement?
+* A batch job processes financial records while online transactions update the same records. How would you select isolation levels and prevent inconsistent results?
+* A reservation system checks room availability and then inserts a booking, but concurrent requests create duplicate reservations. How would you redesign the transaction?
+* A bank transfer debits one account but fails before crediting the other. How would you ensure atomicity and consistency?
+* An inventory service uses SELECT FOR UPDATE but experiences severe blocking during sales events. How would you reduce contention without allowing overselling?
+* A database migration changes the default isolation level, and application performance deteriorates. How would you identify the affected transactions and validate a safer configuration?
+* An integration test passes consistently, but production users encounter concurrency anomalies. How would you reproduce the issue reliably?
+* A financial reconciliation job produces different totals depending on when it runs. How would you determine whether transaction isolation is responsible?
+* A transaction reads a customer's status, performs a lengthy calculation, and updates the record based on the earlier value. Another transaction changes the status in between. How would you prevent an invalid update?
+* A high-volume API starts timing out after stronger isolation is enabled. How would you use database metrics and application tracing to identify the bottleneck?
+* Two services independently update different rows that jointly enforce a business constraint. How would you prevent inconsistent outcomes across both services?
+* A transaction retry mechanism causes duplicate payment requests after serialization failures. How would you redesign the retry process to be safe and idempotent?
+* A team wants to change all database transactions to SERIALIZABLE to improve correctness. How would you assess the proposal and recommend an appropriate isolation strategy?
+* During a production incident, how would you distinguish a dirty read, lost update, write skew, deadlock, and serialization failure using logs and database diagnostics?

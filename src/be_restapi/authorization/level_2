@@ -1,0 +1,30 @@
+* How would you design an authorization architecture for a large enterprise REST API platform?
+* How do you choose between RBAC, ABAC, ACL, and relationship-based access control?
+* How would you implement fine-grained authorization across hundreds of REST API endpoints?
+* How do you design a centralized authorization service for multiple microservices?
+* What are the trade-offs between centralized and decentralized authorization enforcement?
+* How do you implement relationship-based authorization for resources shared between users and organizations?
+* How would you use a policy engine such as Open Policy Agent to authorize API requests?
+* How do you design authorization policies that are versioned, auditable, and testable?
+* How do you prevent Broken Object Level Authorization (BOLA) in APIs with complex resource relationships?
+* How do you prevent Broken Function Level Authorization (BFLA) in administrative endpoints?
+* How do you implement authorization for multi-tenant systems while preventing cross-tenant data access?
+* How do you enforce row-level and field-level authorization in a REST API?
+* How do you design authorization for nested resources and inherited permissions?
+* How do you handle conflicting allow and deny rules in an authorization policy?
+* How do you ensure that authorization changes take effect quickly across distributed services?
+* How do you handle authorization caching without allowing stale permissions to remain active?
+* How do you prevent privilege escalation when users can modify their own roles or attributes?
+* How do you securely propagate user identity and permissions across microservices?
+* How do you distinguish user authorization from service-to-service authorization?
+* How do you implement delegated access, where one user acts on behalf of another?
+* How do you design authorization for third-party applications accessing customer resources?
+* How do you enforce least privilege for service accounts and machine identities?
+* How do you implement dynamic, context-aware authorization based on time, location, or transaction risk?
+* How do you secure high-value financial operations using transaction-level authorization?
+* How do you prevent time-of-check-to-time-of-use (TOCTOU) vulnerabilities in authorization?
+* How do you design authorization rules that remain consistent during concurrent updates?
+* How do you audit authorization decisions without exposing sensitive user or resource data?
+* How do you test authorization policies systematically, including negative and boundary cases?
+* How do you migrate a legacy application from hardcoded role checks to a policy-based authorization model?
+* How would you design a highly available authorization system that fails securely when its policy service is unavailable?

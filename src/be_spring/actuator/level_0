@@ -1,0 +1,30 @@
+* What is Spring Boot Actuator?
+* Why is Spring Boot Actuator used in Spring Boot applications?
+* What are the main features provided by Spring Boot Actuator?
+* How do you add the Spring Boot Actuator dependency to a project?
+* What is an Actuator endpoint?
+* What are the commonly used Actuator endpoints?
+* What is the purpose of the /actuator/health endpoint?
+* What is the purpose of the /actuator/info endpoint?
+* What is the purpose of the /actuator/metrics endpoint?
+* What is the purpose of the /actuator/env endpoint?
+* What is the purpose of the /actuator/beans endpoint?
+* What is the purpose of the /actuator/mappings endpoint?
+* What is the purpose of the /actuator/loggers endpoint?
+* What is the purpose of the /actuator/threaddump endpoint?
+* What is the purpose of the /actuator/heapdump endpoint?
+* What is the difference between health and info endpoints?
+* How do you enable Actuator endpoints in Spring Boot?
+* How do you configure the base path for Actuator endpoints?
+* How do you change the port used by Actuator endpoints?
+* What is the default base path for Actuator endpoints?
+* Are all Actuator endpoints exposed over HTTP by default?
+* What is the difference between exposing an endpoint and enabling it?
+* How do you configure Actuator endpoint exposure in application.properties?
+* What is the purpose of management.endpoints.web.exposure.include?
+* What is the purpose of management.endpoints.web.exposure.exclude?
+* What is the role of the HealthIndicator interface?
+* What is the purpose of the readiness and liveness health states?
+* What information can the /actuator/metrics endpoint provide?
+* How can Actuator help monitor a running Spring Boot application?
+* Why should Actuator endpoints be secured in production?

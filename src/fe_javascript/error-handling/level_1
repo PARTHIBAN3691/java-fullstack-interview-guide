@@ -1,0 +1,30 @@
+* Explain how try...catch...finally works with an example.
+* What is the difference between throwing an error and catching an error?
+* What happens when an exception is thrown inside a try block?
+* What happens if an error occurs inside a catch block?
+* Does the finally block execute when a return statement is used inside try or catch?
+* What happens if the finally block itself throws an error?
+* How do you create and throw custom errors using the Error constructor?
+* What is the difference between Error and TypeError?
+* How do you define a custom error class by extending Error?
+* What is the difference between error.message and error.stack?
+* How do you propagate errors from one function to another?
+* What is error bubbling in JavaScript?
+* How can you rethrow an exception after handling it?
+* What is the difference between synchronous error handling and asynchronous error handling?
+* How do you handle errors in callback-based functions?
+* How do you handle errors in Promise chains?
+* What is the difference between catch() and try...catch with async/await?
+* How do you handle errors when using async/await?
+* What happens when an async function throws an error?
+* How do you handle errors when using Promise.all()?
+* What is the difference between Promise.all() and Promise.allSettled() for error handling?
+* How do you handle errors from the Fetch API?
+* Why does fetch() not reject automatically for HTTP status codes such as 404 or 500?
+* How do you validate API responses before processing them?
+* How do you handle invalid JSON responses?
+* What are global error handlers in browsers?
+* What is the purpose of window.onerror?
+* What is the purpose of the unhandledrejection event?
+* How can you log errors without exposing sensitive information?
+* What are common best practices for error handling in JavaScript?

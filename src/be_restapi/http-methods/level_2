@@ -1,0 +1,30 @@
+* How do HTTP method semantics influence the design of distributed REST APIs?
+* Explain the difference between method safety, idempotency, and cacheability.
+* Why does idempotency not guarantee that repeated requests return identical responses?
+* How would you design an idempotent payment-creation endpoint using POST?
+* How would you store and validate idempotency keys under concurrent requests?
+* What happens if two requests with the same idempotency key contain different payloads?
+* How should an API handle an idempotency key when the original request is still processing?
+* How do idempotency keys interact with database transactions and message queues?
+* How would you make a bulk operation retry-safe when some items succeed and others fail?
+* How do PUT and PATCH differ when a request contains omitted fields and explicit null values?
+* How would you design PATCH semantics for nested JSON objects and collections?
+* What are the concurrency risks associated with partial updates?
+* How can conditional requests make PUT and PATCH operations concurrency-safe?
+* How should an API behave when a conditional update fails because the ETag is stale?
+* How do HTTP method semantics interact with eventual consistency in microservices?
+* Why can retrying a non-idempotent operation create duplicate side effects?
+* How would you design a reliable retry policy for POST requests?
+* How do proxies, gateways, and firewalls affect support for less common HTTP methods?
+* What security risks arise when servers enable HTTP methods unnecessarily?
+* How can HTTP method tampering lead to authorization bypass vulnerabilities?
+* How would you prevent a user from bypassing authorization by changing GET to POST or PUT?
+* How should authorization rules differ between reading, creating, updating, and deleting resources?
+* What is HTTP method override, and what security concerns does it introduce?
+* How do CORS preflight requests relate to the OPTIONS method?
+* Why are GET request bodies poorly interoperable across HTTP clients and servers?
+* How do safe methods influence web crawlers, link scanners, and automated clients?
+* How should an API handle DELETE requests when deletion triggers asynchronous downstream operations?
+* How would you design an API that supports both synchronous and asynchronous resource creation?
+* How do HTTP method semantics affect audit logging and business-event generation?
+* How would you migrate an endpoint from POST-based updates to resource-oriented PUT or PATCH without breaking existing clients?

@@ -1,0 +1,111 @@
+**AI Application Architecture**
+
+* Design a domain-driven AI application that supports multiple business workflows, RAG, tool calling, streaming responses, human approval, and asynchronous processing. How would you establish bounded contexts and consistency boundaries?
+* How would you evolve an AI application from a single-model monolith to independently deployable services without breaking existing clients or losing conversation state?
+
+**LLM-Powered Microservices**
+
+* Design an AI microservice architecture where multiple downstream services require inference, retrieval, and summarization. How would you prevent cascading failures and uncontrolled fan-out?
+* How would you implement distributed tracing, idempotency, deadline propagation, and asynchronous compensation when an LLM request participates in a multi-service business transaction?
+
+**Enterprise AI Platform Design**
+
+* Design a multi-region enterprise AI platform supporting multiple model vendors, private data sources, regulated workloads, tenant isolation, centralized governance, and usage-based billing.
+* How would you create a control plane for model onboarding, policies, quotas, deployment configuration, and auditability while keeping inference traffic on a resilient data plane?
+* How would you prevent a shared platform upgrade or provider integration failure from affecting every application onboarded to the platform?
+
+**RAG System Design**
+
+* Design a RAG platform for millions of documents with incremental ingestion, hybrid search, reranking, metadata filters, document-level authorization, and citation-grounded answers.
+* How would you diagnose and improve retrieval quality when keyword search, dense embeddings, chunking strategies, and reranking produce conflicting results?
+* How would you guarantee that deleted or newly restricted documents stop appearing in answers and caches while index updates are processed asynchronously?
+
+**AI Agent Platform Design**
+
+* Design a durable agent execution platform supporting long-running tasks, tool permissions, retries, checkpointing, human approval, cancellation, and recovery after worker failure.
+* How would you prevent infinite agent loops, duplicate side effects, unbounded tool calls, and unsafe execution while retaining useful autonomy?
+* How would you isolate agent execution environments and credentials when untrusted inputs can influence tool selection or generated code?
+
+**Multi-Model Routing Architecture**
+
+* Design a policy-driven router that selects models using quality requirements, task classification, token limits, regional availability, data residency, latency, and cost constraints.
+* How would you implement adaptive routing using live latency, error rates, capacity signals, and evaluation results without causing unstable routing oscillations?
+* How would you fail over between providers with incompatible APIs, context windows, structured-output capabilities, and safety behavior?
+
+**AI Gateway Design**
+
+* Design a horizontally scalable AI gateway supporting streaming, provider adapters, authentication, quotas, tenant isolation, audit logging, retries, and real-time usage accounting.
+* How would you ensure accurate token accounting and avoid double-charging requests when network failures occur after a provider has already processed a request?
+* How would you upgrade gateway policies and provider adapters without interrupting active streams or creating inconsistent enforcement across instances?
+
+**Shared AI Services for Multiple Teams**
+
+* Design a shared AI service platform that provides embeddings, reranking, document extraction, and inference to hundreds of teams while preventing noisy-neighbor problems.
+* How would you establish ownership, service-level objectives, chargeback, API contracts, and backward-compatible evolution for centrally managed AI capabilities?
+* How would you decide whether a capability should remain a shared service, become a domain-owned service, or be deployed locally for latency and privacy reasons?
+
+**Multi-Tenant AI Architecture**
+
+* Design a SaaS AI platform with strict tenant isolation across relational metadata, object storage, vector indexes, caches, logs, model configurations, and conversation memory.
+* How would you prevent indirect prompt injection or retrieval leakage from one tenant from affecting another tenant's responses?
+* How would you support tenant-specific encryption keys, data residency, tenant migration, deletion guarantees, and audit evidence without creating unsustainable operational complexity?
+
+**AI Caching Architecture**
+
+* Design a layered cache for prompt prefixes, embeddings, retrieval results, exact responses, and semantically similar answers. How would you determine cache eligibility and consistency requirements for each layer?
+* How would you safely use semantic caching when responses depend on user permissions, rapidly changing business data, system prompts, or model versions?
+* How would you handle cache stampedes, hot keys, partial failures, invalidation propagation, and cache poisoning in a multi-region AI system?
+
+**AI Rate Limiting and Quota Management**
+
+* Design a distributed quota system that enforces per-tenant and per-model request limits, token limits, concurrency caps, and financial budgets across multiple regions.
+* How would you balance strongly consistent spending limits against low-latency request admission during a network partition?
+* How would you handle token-estimation errors, provider-side throttling, streaming cancellations, and delayed billing events without permitting sustained budget overruns?
+
+**High-Availability AI Systems**
+
+* Design a multi-region AI service with regional failover, provider diversity, resilient retrieval, graceful degradation, and continuity of active conversations.
+* How would you avoid retry storms and synchronized failover when a major model provider experiences a widespread outage?
+* Which capabilities should remain available when inference is degraded, and how would you distinguish degraded service from complete service failure in health checks and SLOs?
+
+**AI Data Privacy Architecture**
+
+* Design an end-to-end privacy architecture for sensitive enterprise data that may pass through ingestion, embeddings, retrieval, inference, observability, evaluation, and model-provider systems.
+* How would you meet deletion, data residency, retention, and access-audit requirements when information is duplicated across vector indexes, derived chunks, caches, and evaluation datasets?
+* How would you assess whether pseudonymization, redaction, private networking, encryption, and provider data-processing guarantees adequately reduce exposure risk?
+
+**Low-Latency AI Inference**
+
+* Design a streaming AI API that achieves a strict p95 time-to-first-token objective under burst traffic while supporting retrieval, reranking, safety checks, and tool calls.
+* How would you determine whether latency is dominated by queueing, retrieval, prompt processing, model prefill, token generation, network transfer, or client rendering?
+* How would you optimize concurrency and batching without increasing tail latency, exhausting accelerator memory, or violating tenant fairness?
+
+**Scalable AI Workloads**
+
+* Design an elastic inference platform that supports unpredictable demand, large context windows, heterogeneous model sizes, accelerator constraints, and workload priorities.
+* How would you implement queue-aware autoscaling when CPU utilization is low but GPU memory and inference queues are saturated?
+* How would you isolate interactive requests from batch embeddings and offline evaluation jobs while maximizing hardware utilization?
+
+**AI Cost Optimization**
+
+* Design a cost-allocation and optimization framework covering model inference, embeddings, vector storage, retrieval, reranking, observability, and idle infrastructure.
+* How would you optimize total cost per successful task rather than simply minimizing cost per token, while maintaining agreed quality and safety thresholds?
+* How would you implement budget-aware routing and graceful degradation when a tenant approaches its spending limit during a critical workflow?
+
+**AI Disaster Recovery**
+
+* Design disaster recovery for a multi-region AI platform where model providers, vector indexes, document stores, prompt configurations, and orchestration state have different recovery characteristics.
+* How would you recover from simultaneous regional failure and corruption of a vector index while preventing stale or unauthorized content from being served?
+* How would you test recovery objectives, provider independence, backup integrity, key availability, and operational readiness without disrupting production?
+
+**Enterprise AI Governance**
+
+* Design a governance architecture that enforces risk-based model approval, evaluation gates, access policies, audit retention, and production change controls across multiple business units.
+* How would you maintain traceability from an AI response back to its model version, prompt version, retrieval sources, policy decisions, and tool executions?
+* How would you prevent shadow AI deployments and unapproved model integrations while keeping the platform usable enough that teams do not bypass governance?
+
+**AI Architecture Trade-offs**
+
+* Compare a centralized AI platform with a federated architecture under competing requirements for security, team autonomy, cost attribution, and deployment speed.
+* How would you decide between a managed model API, self-hosted inference, and a hybrid approach using quantified workload characteristics and operational constraints?
+* How would you evaluate consistency versus availability, latency versus answer quality, and cache hit rate versus freshness for a critical enterprise AI workload?

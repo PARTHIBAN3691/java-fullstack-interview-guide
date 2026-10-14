@@ -1,0 +1,86 @@
+# Core Java → Annotations → Level 2 (Difficult)
+
+## Advanced Annotation Semantics
+* How does the Java compiler represent annotations in class files?
+* How are runtime-visible and runtime-invisible annotations represented in bytecode?
+* What is the relationship between annotation retention and class-file attributes?
+* How do annotations on inherited classes differ from annotations declared directly on a subclass?
+* How does `@Inherited` behave when a subclass declares the same annotation explicitly?
+* How do annotations behave when a class implements multiple interfaces containing annotated methods?
+* Are annotations automatically inherited when a method is overridden?
+* How do bridge methods and compiler-generated methods affect annotation inspection?
+* What challenges arise when retrieving annotations from generic types?
+* How do type-use annotations differ from declaration annotations at the bytecode level?
+
+## Reflection and Annotation Resolution
+* How would you build a utility that retrieves annotations from a class hierarchy?
+* How would you resolve conflicting annotations declared at multiple inheritance levels?
+* How would you handle annotations on overridden methods?
+* How do `getDeclaredMethods()` and `getMethods()` affect annotation scanning?
+* How would you retrieve annotations from method parameters using reflection?
+* How can parameter names and parameter annotations behave differently depending on compilation settings?
+* How would you inspect annotations on generic type arguments?
+* How do `AnnotatedType`, `AnnotatedParameterizedType`, and `AnnotatedArrayType` differ?
+* What are the performance costs of repeated reflection-based annotation lookups?
+* How would you cache annotation metadata without causing class-loader leaks?
+
+## Custom Annotation Design
+* How would you design a custom annotation for authorization checks?
+* How would you model an annotation that accepts multiple roles and a default access policy?
+* How would you design an annotation for retry behavior with configurable attempts and delay?
+* How would you design an annotation for masking sensitive fields during logging?
+* How would you design a repeatable annotation for multiple validation rules?
+* How would you ensure invalid annotation combinations are detected early?
+* How would you version a custom annotation used across multiple modules?
+* What compatibility issues arise when adding a new required element to an existing annotation?
+* How can default values affect backward compatibility?
+* What are the risks of placing complex configuration in annotation attributes?
+
+## Annotation Processing and Code Generation
+* How does the Java annotation processing lifecycle work across multiple rounds?
+* How would you implement a processor that validates annotated classes?
+* How would you prevent an annotation processor from generating duplicate source files?
+* How would you report compilation errors from an annotation processor?
+* How would you handle generated-code naming collisions?
+* How would you design an annotation processor that generates builders or mappers?
+* What are the limitations of annotation processors when trying to inspect runtime state?
+* How do annotation processors interact with incremental compilation?
+* What challenges arise when annotation processors run under modular Java?
+* How would you test an annotation processor independently of the application?
+
+## Type-Use Annotations and Generics
+* What problem do type-use annotations solve?
+* How can annotations be applied to generic type arguments?
+* How would you represent a non-null type contract using type-use annotations?
+* Why does declaring a nullability annotation not automatically enforce null checks?
+* How can type-use annotations be inspected through reflection?
+* What limitations exist when combining type-use annotations with type erasure?
+* How can annotations distinguish an array type from its component type?
+* What are the implications of annotating wildcard bounds?
+* How can static analysis tools use type-use annotations?
+* How would you design a custom static-analysis rule based on type-use annotations?
+
+## Framework Integration and Proxies
+* How do dependency injection frameworks use annotations to discover components?
+* How can a framework scan the classpath for annotated classes?
+* What challenges arise when annotations are used with JDK dynamic proxies?
+* How can proxy-based frameworks behave differently when annotations are placed on implementation methods versus interface methods?
+* Why can self-invocation bypass annotation-driven behavior in proxy-based frameworks?
+* How do annotations interact with runtime-generated proxy classes?
+* How would you design annotation lookup that works consistently with proxies and target classes?
+* What are the differences between annotations used by frameworks at compile time and runtime?
+* How can custom annotations be composed from other annotations?
+* What limitations exist when creating composed annotations for framework configuration?
+
+## Security, Performance, and Reliability
+* What security risks can arise from blindly trusting annotation metadata?
+* How would you validate annotation values before executing an annotated method?
+* How can reflection-heavy annotation scanning affect application startup time?
+* How would you optimize annotation scanning in a large application?
+* How can annotation metadata caching introduce concurrency issues?
+* How would you avoid memory leaks caused by cached `Class` or `Method` objects?
+* What happens when a framework expects an annotation that is absent at runtime?
+* How would you diagnose annotation behavior that differs between development and production?
+* How can shading, obfuscation, or bytecode transformation affect annotation-driven behavior?
+* How would you maintain compatibility when upgrading Java versions or framework versions?
+

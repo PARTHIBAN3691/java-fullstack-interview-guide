@@ -1,0 +1,30 @@
+* A component property changes, but the template does not display the updated value. How would you debug it?
+* A button click should update a counter displayed in the template. How would you implement it?
+* A product list should display a message when no products are available. How would you handle this?
+* A template displays duplicate list items after data updates. How would you investigate the issue?
+* A large list causes slow rendering. How would you optimize its template?
+* A button should be disabled until a form becomes valid. How would you implement the binding?
+* A user selects a dropdown value, and the selection must update the component state. How would you implement it?
+* A template must display different messages for loading, success, empty, and error states. How would you structure it?
+* An Observable provides data asynchronously, and the template must update automatically. How would you implement this?
+* A template subscribes manually to an Observable and causes a memory leak. How would you refactor it?
+* A parent component needs to provide a custom layout for content rendered by a child component. How would you use content projection?
+* A reusable card component needs separate header, body, and footer content. How would you implement multi-slot projection?
+* Multiple components need to reuse the same HTML fragment with different data. How would you use ng-template?
+* A table should highlight rows based on status. How would you implement dynamic class binding?
+* A button should show different labels depending on the user's permissions. How would you handle conditional rendering?
+* An image URL may be null, and the template must display a fallback image. How would you implement it?
+* A template calls an expensive component method repeatedly during change detection. How would you optimize it?
+* A child component uses OnPush, but its UI does not update after an object is mutated. How would you fix it?
+* A dynamic form should display validation errors only after a field is touched. How would you implement it?
+* A template needs to display a formatted currency value based on user input. Which binding and pipe would you use?
+* A page contains a large optional section that should load only when needed. How would you use @defer?
+* A reusable template must receive custom context values. How would you pass them using ngTemplateOutlet?
+* A template contains deeply nested conditional blocks that are difficult to maintain. How would you simplify it?
+* A component must dynamically render different templates depending on a selected category. How would you implement it?
+* A template displays stale data after a user navigates between records. How would you investigate the bindings and state updates?
+* A list re-renders every item whenever one item changes. How would you improve rendering efficiency?
+* A component template contains complex business rules. How would you refactor the code?
+* A template must support keyboard navigation and screen readers. What accessibility practices would you apply?
+* A template produces a strict type-checking error because an object property may be undefined. How would you resolve it safely?
+* How would you design a reusable Angular table template with sorting, filtering, loading, and empty states?

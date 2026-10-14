@@ -1,0 +1,30 @@
+* Explain TypeScript's structural type system and how it differs from nominal typing.
+* How does TypeScript determine type compatibility between two object types?
+* What is variance in TypeScript, and how does it affect function types?
+* What is the difference between covariance, contravariance, and invariance?
+* How does TypeScript infer generic type parameters?
+* What is conditional typing in TypeScript?
+* How do you use infer inside a conditional type?
+* What are distributive conditional types?
+* How can you prevent a conditional type from distributing over a union?
+* What are mapped types, and how do you create custom mapped types?
+* How do key remapping and template literal types work together?
+* What are template literal types, and when are they useful?
+* How do recursive conditional types work?
+* What are recursive types, and what are their limitations?
+* How do you implement a type-safe deep readonly utility type?
+* How would you implement a type-safe DeepPartial<T> utility?
+* How do you extract the return type of a function using TypeScript's type system?
+* How do Parameters<T>, ReturnType<T>, and InstanceType<T> work?
+* What is the difference between unknown, never, and any in advanced type design?
+* How does control-flow analysis narrow types across branches?
+* How do user-defined type predicates work?
+* What is the difference between a type predicate and an assertion function?
+* How do you model mutually exclusive object properties using discriminated unions?
+* How do you use the satisfies operator, and how does it differ from a type assertion?
+* What are const assertions, and how do they preserve literal types?
+* What is the difference between as const and readonly?
+* How do exactOptionalPropertyTypes and strictNullChecks affect type safety?
+* What is the difference between a type-only import and a runtime import?
+* How would you design a type-safe event system using generics and mapped types?
+* How would you design advanced types for a large enterprise TypeScript application without making compilation excessively complex?

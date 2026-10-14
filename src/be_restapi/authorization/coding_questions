@@ -1,0 +1,30 @@
+* Write a Java method that checks whether a user has a specific role.
+* Implement role-based authorization for REST endpoints using Spring Security.
+* Write a Spring Boot controller that allows only ADMIN users to access a particular endpoint.
+* Use @PreAuthorize to restrict a method to users with the ADMIN role.
+* Write a method-level security example that allows users with either MANAGER or ADMIN roles.
+* Implement permission-based authorization using custom authorities in Spring Security.
+* Write a custom authorization component that checks whether a user owns a requested resource.
+* Implement a REST endpoint that allows users to retrieve only their own customer records.
+* Write a service method that prevents a user from updating a record owned by another user.
+* Implement authorization checks for create, read, update, and delete operations with different permissions.
+* Write a Spring Security configuration that protects administrative endpoints and permits selected public endpoints.
+* Implement a custom authorization manager that evaluates user permissions before allowing a request.
+* Write a method using @PostAuthorize to verify that the returned resource belongs to the authenticated user.
+* Implement tenant-level authorization that restricts database queries to the current tenant.
+* Write a repository query that retrieves records only for the authenticated user's tenant.
+* Implement field-level authorization that hides confidential response fields from unauthorized users.
+* Write a Java method that validates OAuth 2.0 scopes before allowing access to an API operation.
+* Implement authorization based on JWT claims and verify that missing or invalid claims are rejected.
+* Write unit tests for an authorization service covering allowed access, denied access, and missing permissions.
+* Write MockMvc tests that verify HTTP 401 and HTTP 403 responses for protected endpoints.
+* Implement a test that attempts to access another user's resource by changing the resource ID.
+* Write an authorization service that evaluates user roles and resource ownership together.
+* Implement dynamic authorization rules loaded from a database and applied to REST endpoints.
+* Write a method that checks whether a manager can access records belonging to their department.
+* Implement a policy that prevents users from approving payments they created themselves.
+* Write a service that supports temporary delegated access with an expiration timestamp.
+* Implement authorization auditing that records the user, resource, action, decision, and timestamp.
+* Write tests that verify revoked permissions are no longer honored after cache invalidation.
+* Implement a custom Spring Security authorization rule that prevents access to resources belonging to another tenant.
+* Build a complete Spring Boot REST API authorization module with RBAC, resource ownership checks, tenant isolation, method-level security, consistent error handling, audit logging, and automated security tests.

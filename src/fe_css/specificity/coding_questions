@@ -1,0 +1,30 @@
+* Write CSS selectors with different specificity levels and demonstrate which rule applies to the same paragraph.
+* Create an HTML page where an element selector, class selector, and ID selector target the same element.
+* Write CSS to demonstrate how source order resolves conflicts between selectors with equal specificity.
+* Create a page demonstrating how two class selectors compare with a single ID selector.
+* Write CSS to calculate and compare the specificity of div.container.highlight.
+* Create an example demonstrating specificity for a descendant selector and a child selector.
+* Write CSS showing how an attribute selector interacts with a class selector.
+* Create an example demonstrating the specificity of :hover, :focus, and ::before.
+* Write CSS to demonstrate how !important affects conflicting declarations.
+* Create an example showing why inline styles normally override stylesheet declarations.
+* Write CSS using :not() and demonstrate how its argument affects specificity.
+* Create an example comparing the specificity of :is() and :where().
+* Write CSS demonstrating how :has() contributes to selector specificity.
+* Create an HTML page showing how :nth-child() affects selector specificity.
+* Write CSS using :nth-child(2 of .item) and calculate its specificity.
+* Create a page demonstrating how inherited properties differ from directly applied styles.
+* Write CSS to show how a class selector can override an element selector regardless of source order.
+* Create a demonstration where an ID selector overrides multiple class selectors.
+* Write CSS to demonstrate how cascade layers affect conflicting normal declarations.
+* Create two cascade layers and demonstrate how their order changes the winning declaration.
+* Write CSS showing the difference between normal and important declarations across cascade layers.
+* Create an example demonstrating the revert and revert-layer keywords.
+* Refactor a deeply nested selector into simpler, reusable class selectors.
+* Write a Sass example that generates nested selectors and calculate the resulting specificity.
+* Create a BEM-style component stylesheet designed to minimize specificity conflicts.
+* Write CSS for a reusable button component that supports default, primary, and danger variants without IDs.
+* Create an example where a third-party stylesheet overrides a component, then fix it without using !important.
+* Write CSS demonstrating how utility classes can be combined with component styles.
+* Create a small page with conflicting stylesheets and document the winning declaration for each element.
+* Build an HTML and CSS example that demonstrates specificity, source order, inheritance, and !important together.

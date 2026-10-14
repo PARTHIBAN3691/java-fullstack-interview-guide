@@ -1,0 +1,20 @@
+
+* Explain the complete inheritance rules for sealed classes and their permitted subclasses.
+* How does the Java compiler validate the permitted subclasses of a sealed class?
+* Can a sealed class permit subclasses from another package or module?
+* What restrictions apply to sealed classes in named modules versus unnamed modules?
+* How would you design a sealed class hierarchy to represent a fixed set of payment methods?
+* How can sealed classes improve exhaustiveness and maintainability in domain modeling?
+* What design trade-offs arise when using sealed classes instead of interfaces with unrestricted implementations?
+* How do sealed classes interact with records and enums?
+* What challenges arise when evolving a sealed class hierarchy in a public library?
+* How does the JVM distinguish hidden classes from ordinary classes?
+* Why might a hidden class be unsuitable for a class that must be discovered by name?
+* How do hidden classes support runtime code generation frameworks?
+* What is the relationship between hidden classes, method handles, and lookup objects?
+* How would you troubleshoot a failure while defining a hidden class dynamically?
+* How do text block indentation rules affect embedded SQL, JSON, XML, and HTML content?
+* What edge cases should be considered when using `stripIndent()` and `translateEscapes()` on generated strings?
+* How would you verify the compatibility of Java 15 preview features across compilation and runtime environments?
+* What risks arise when deploying Java 15 preview features in production?
+* How do Java 15's text blocks compare with multiline string support in other programming languages?

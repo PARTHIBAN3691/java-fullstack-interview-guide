@@ -1,0 +1,30 @@
+* Your employee table must display only employees belonging to a selected department. How would you implement a custom filtering pipe?
+* A pure pipe does not update when an array element is modified. How would you resolve the issue?
+* A custom pipe filters thousands of records and makes the UI slow. How would you optimize it?
+* A developer creates an impure pipe to sort a list, and the application becomes sluggish. How would you redesign the solution?
+* A date displayed by DatePipe differs between local development and production. How would you investigate timezone and locale issues?
+* A financial application must display monetary values in INR, USD, and SGD. How would you implement currency formatting?
+* A component displays an Observable value using manual subscriptions. How could AsyncPipe simplify the implementation?
+* An AsyncPipe-based component displays stale data after the source Observable changes. How would you investigate the issue?
+* A template uses an Observable-producing method with AsyncPipe, causing repeated subscriptions. How would you fix it?
+* A custom pipe unexpectedly modifies the original array while sorting data. How would you prevent this side effect?
+* A search pipe must support case-insensitive matching, partial matches, and empty search terms. How would you design it?
+* A reporting page needs to format percentages and decimal values according to different regional conventions. Which pipes and configuration would you use?
+* A custom pipe depends on a service that provides user preferences. How would you inject the service and test the pipe?
+* A standalone component cannot find a custom pipe in its template. What would you check?
+* A pipe works in one NgModule but is unavailable in another feature module. How would you resolve the issue?
+* A component using OnPush does not display updated values after a nested object changes. How would you investigate both the pipe and change-detection behavior?
+* A date-formatting pipe must support UTC timestamps and user-selected timezones. How would you implement and test it?
+* A currency-formatting pipe receives null, undefined, and invalid numeric strings from an API. How should it behave?
+* A product listing requires sorting and filtering by several fields. Would you use a pipe, a component transformation, or a service? Explain your choice.
+* A large table applies several chained pipes and renders slowly. How would you identify which transformation causes the bottleneck?
+* A pipe formats the same complex object repeatedly across many components. How would you reduce duplicate computation?
+* An application supports multiple languages, but built-in date and currency pipes show unexpected formats. How would you configure locale data?
+* A custom pipe passes unit tests but fails with empty arrays and null inputs in production. How would you improve test coverage?
+* A pipe used in a template produces a different result during server-side rendering and browser hydration. How would you troubleshoot it?
+* A business requirement changes frequently, and a custom pipe now contains complex validation and calculation rules. How would you refactor it?
+* A developer uses JsonPipe to display large nested API responses in a production screen. What performance and usability issues might arise?
+* A dashboard needs to display a live Observable value while ensuring subscriptions are cleaned up automatically. How would you use AsyncPipe?
+* A sorting pipe must preserve the original data order when no sorting option is selected. How would you implement this behavior?
+* Multiple components require the same complex data transformation. How would you design the solution for reuse and testability?
+* How would you decide whether to use a built-in pipe, a custom pipe, a computed signal, or a service method for a new requirement?

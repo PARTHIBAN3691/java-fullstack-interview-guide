@@ -1,0 +1,14 @@
+
+* Your team builds SQL queries using long concatenated strings. How would you use Java 15 text blocks to improve readability and maintainability?
+* You need to generate a large JSON payload containing nested objects and escaped characters. How would you use text blocks safely?
+* A developer reports unexpected indentation in a multiline HTML template. How would you investigate the text block's whitespace behavior?
+* Your application generates SQL statements with user-provided values. Would text blocks alone prevent SQL injection, and what approach would you recommend?
+* Your team repeatedly formats log messages and notification templates. How could `String.formatted()` simplify the implementation?
+* A legacy application uses `trim()` extensively, but Unicode whitespace causes issues. How would you evaluate `strip()` and related string methods?
+* Your team wants to represent a fixed set of transaction types with a common parent type. How could sealed classes help enforce the permitted hierarchy?
+* A payment-processing application must support card, bank transfer, and wallet payments while preventing arbitrary implementations. How would you design the hierarchy using sealed classes?
+* A new payment type must be added to a sealed hierarchy used across multiple modules. What compatibility and maintenance concerns would you assess?
+* A framework generates classes dynamically at runtime and does not need them to be discoverable by ordinary class-loading mechanisms. How could hidden classes help?
+* A runtime code-generation library encounters errors while defining a hidden class. What JVM, lookup, and bytecode details would you investigate?
+* Your production environment runs a different Java version from the development environment, and the application uses preview features. What compatibility checks would you perform?
+* Your team wants to adopt Java 15 features without introducing unnecessary migration risk. How would you prioritize standard features and evaluate preview features?

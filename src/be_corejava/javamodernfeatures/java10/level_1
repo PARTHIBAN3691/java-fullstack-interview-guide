@@ -1,0 +1,26 @@
+
+* What are the advantages and limitations of local variable type inference using `var`?
+* How does the compiler determine the type of a variable declared using `var`?
+* What happens when `var` is initialized with an expression whose type is not obvious?
+* Why does `var list = new ArrayList<>()` infer a particular generic type?
+* What is the difference between `var list = new ArrayList<String>()` and `List<String> list = new ArrayList<>()`?
+* Can `var` be used with anonymous classes, and what are the implications for the inferred type?
+* Why can `var` make code less readable when the initializer does not clearly indicate the type?
+* What is the difference between `var` in Java 10 and `var` in languages such as JavaScript or C#?
+* Can multiple variables be declared in a single statement using `var`?
+* Can `var` be used with compound declarations such as `var a = 1, b = 2`?
+* What is the difference between `List.copyOf()` and `Collections.unmodifiableList()`?
+* Does `List.copyOf()` create an independent, mutable copy of the original collection?
+* What happens when the source collection contains null elements and `List.copyOf()` is called?
+* Are collections returned by `List.copyOf()`, `Set.copyOf()`, and `Map.copyOf()` deeply immutable?
+* What happens when `Set.copyOf()` receives a collection containing duplicate elements?
+* What happens when `Map.copyOf()` receives a Map containing null keys or values?
+* How does `Optional.orElseThrow()` without arguments differ from `orElseThrow(Supplier)`?
+* What is Application Class-Data Sharing (AppCDS), and how can it improve application startup?
+* How does Java 10's garbage collector interface help JVM implementations?
+* What is the purpose of the experimental Graal JIT compiler in Java 10?
+* What is the difference between Just-In-Time compilation and ahead-of-time compilation?
+* How does Java 10 improve Docker container awareness compared with earlier JDK versions?
+* How can JVM memory settings be affected by container memory limits?
+* What is the purpose of the `-XX:+UseContainerSupport` option in Java 10?
+* What compatibility considerations should be evaluated when upgrading an application from Java 8 or Java 9 to Java 10?

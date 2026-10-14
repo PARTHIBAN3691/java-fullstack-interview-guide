@@ -1,0 +1,26 @@
+
+* Explain the difference between named modules and unnamed modules in Java 9.
+* What is an automatic module, and how is it created?
+* What is the difference between `requires` and `requires transitive`?
+* What is the purpose of `requires static` in a module declaration?
+* What is the difference between `exports` and `opens` in the Java module system?
+* What is the purpose of qualified exports in Java 9?
+* What is the purpose of the `uses` and `provides ... with` directives?
+* How does the module system help enforce strong encapsulation?
+* How do you compile and run a modular Java application from the command line?
+* What is the difference between the classpath and the module path?
+* How do private interface methods help reduce code duplication in default methods?
+* What is the difference between `List.of()` and `Arrays.asList()`?
+* Why are collections created using `List.of()` unmodifiable?
+* How do you create an unmodifiable Map containing multiple key-value pairs in Java 9?
+* What happens if duplicate elements are passed to `Set.of()`?
+* What happens if duplicate keys are passed to `Map.of()`?
+* What is the difference between `Map.of()` and `Map.ofEntries()`?
+* How does `Optional.or()` differ from `Optional.orElse()`?
+* How does `Optional.ifPresentOrElse()` simplify conditional processing?
+* How does `Optional.stream()` help when processing collections of optional values?
+* What is the difference between `Stream.takeWhile()` and `Stream.filter()`?
+* What is the difference between `Stream.dropWhile()` and `Stream.skip()`?
+* What is the purpose of the `Stream.iterate()` overload introduced in Java 9?
+* What is the purpose of the `Stream.ofNullable()` method?
+* What is the Java 9 Process API enhancement, and what information can it provide about operating-system processes?

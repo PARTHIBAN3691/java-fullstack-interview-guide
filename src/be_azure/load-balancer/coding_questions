@@ -1,0 +1,25 @@
+* Write a Spring Boot REST API that exposes a health endpoint suitable for an Azure Load Balancer probe.
+* Write a Spring Boot application that exposes separate liveness and readiness endpoints.
+* Write a Java health-check component that verifies application startup and critical dependency availability.
+* Write a Java REST endpoint that reports application readiness without exposing sensitive infrastructure details.
+* Write a Java program that makes HTTP requests to a load-balanced endpoint and records response times.
+* Write a Java program that repeatedly calls a load-balanced API and records which backend instance handled each request.
+* Write a Spring Boot filter that adds an application-instance identifier to response headers for troubleshooting.
+* Write a Java program that simulates concurrent requests to a load-balanced REST API and measures latency.
+* Write a Java integration test that verifies a Spring Boot health endpoint returns the expected status codes.
+* Write a Spring Boot implementation that separates liveness checks from dependency-sensitive readiness checks.
+* Write a Java HTTP client with configurable connection and response timeouts for calls to a load-balanced service.
+* Write a Java implementation that retries transient HTTP failures with exponential backoff and jitter.
+* Write a Java service that handles connection failures when communicating with another service behind an internal load balancer.
+* Write a Spring Boot configuration that externalizes backend URLs, ports, and timeouts for different environments.
+* Write a Java program that logs correlation IDs and request latency to help troubleshoot load-balancer-related failures.
+* Write a Java test that verifies an application stops reporting readiness when a critical dependency becomes unavailable.
+* Write a Terraform configuration that creates an Azure Standard Load Balancer, frontend IP, backend pool, health probe, and load-balancing rule.
+* Write a Bicep template that deploys an internal Azure Load Balancer for a private application tier.
+* Write a Terraform configuration that associates virtual machine scale set instances with an Azure Load Balancer backend pool.
+* Write an Azure DevOps YAML pipeline that validates and deploys Azure Load Balancer infrastructure using Terraform or Bicep.
+* Write a deployment script that verifies backend health before routing production traffic to newly deployed instances.
+* Write a Java program that checks a load-balanced endpoint periodically and reports availability and response time.
+* Write a Spring Boot integration test that simulates a dependency outage and verifies the readiness endpoint behavior.
+* Write a Java load-testing program that sends concurrent requests and summarizes latency percentiles and error rates.
+* Write a configuration example for a Spring Boot application deployed behind an Azure load balancer with externalized port and health-check settings.

@@ -1,0 +1,30 @@
+* Write SQL to create a single-column index on the email column of a users table.
+* Write SQL to create a unique index that prevents duplicate email addresses.
+* Write SQL to create a composite index on customer_id and order_date.
+* Write SQL to create an index that supports filtering orders by status and sorting by creation date.
+* Write SQL to create a partial or filtered index for active records, where the database supports it.
+* Write SQL to retrieve existing indexes and their indexed columns for a given table.
+* Write SQL to inspect an execution plan and determine whether an index is being used.
+* Write SQL to identify duplicate records in a table and explain how an appropriate unique index can prevent them.
+* Write SQL to optimize a query that filters orders by customer ID and a date range.
+* Write SQL to retrieve the most recent orders for a customer using an appropriate index.
+* Write SQL to implement keyset pagination for a large orders table using customer ID and creation timestamp.
+* Write SQL to compare query execution plans before and after adding a composite index.
+* Write SQL to identify queries that may benefit from covering indexes using the capabilities of a chosen database engine.
+* Write SQL to analyze index usage and identify indexes with low read activity and high maintenance overhead.
+* Write SQL to create an index for a foreign-key column and optimize joins between parent and child tables.
+* Write SQL to design an index for a multi-tenant table frequently filtered by tenant_id, status, and created_at.
+* Write a Java Spring Boot repository method that retrieves orders by customer ID and date range efficiently.
+* Write a Spring Data JPA query that retrieves the latest records for a customer and explain the supporting index.
+* Write Java code to measure SQL execution duration and record query performance metrics.
+* Write Java code to capture slow-query timing for JDBC operations without logging sensitive parameter values.
+* Write a Java integration test that compares query results before and after an index change.
+* Write a Spring Boot service that retrieves paginated database records using keyset pagination.
+* Write Java code to execute an EXPLAIN or execution-plan command using JDBC for a supported database.
+* Write a database migration using Flyway to create a composite index for a frequently queried table.
+* Write a Liquibase changeset that creates an index and supports a controlled rollback strategy.
+* Write Java code to run a benchmark comparing a frequently executed query before and after an indexing change.
+* Write a SQL script to find duplicate business keys before adding a unique index.
+* Write Java code to handle database query timeouts and record the query category for monitoring.
+* Write integration tests to validate query correctness and pagination behavior after introducing a composite index.
+* Design and implement a Java Spring Boot API with an optimized database schema, suitable indexes, query monitoring, and performance tests for high-volume order retrieval.

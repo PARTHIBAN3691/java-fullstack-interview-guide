@@ -1,0 +1,30 @@
+* How would you design a distributed caching architecture for a high-traffic application?
+* How do you estimate cache size and memory requirements for millions of entries?
+* How do you choose between Redis Cluster, Redis Sentinel, and a standalone Redis instance?
+* How does Redis partition data across multiple nodes in a cluster?
+* How does consistent hashing help distribute cached data across multiple nodes?
+* How do you handle cache rebalancing when nodes are added or removed?
+* How do you design a highly available distributed cache across multiple availability zones?
+* How do you manage cache replication and failover without causing excessive stale reads?
+* How do you maintain cache consistency across multiple application instances?
+* What are the trade-offs between strong consistency and eventual consistency in caching?
+* How do you prevent stale writes when multiple services update the same cached entity concurrently?
+* How would you implement version-based cache invalidation?
+* How do you handle cache invalidation reliably when database updates and cache updates cannot occur in one atomic transaction?
+* How can the transactional outbox pattern help synchronize database changes with cache invalidation events?
+* How do you prevent cache stampedes for extremely popular keys?
+* How would you implement request coalescing or single-flight loading in a distributed system?
+* How do probabilistic early expiration techniques reduce cache stampedes?
+* How do you protect a database when a large portion of the cache becomes unavailable?
+* How do you design graceful degradation when Redis latency or failure increases?
+* How do you prevent a hot key from overloading a single cache node?
+* How do you design cache sharding for uneven access patterns?
+* How do you choose between LRU, LFU, FIFO, and time-based eviction strategies?
+* How do you design multi-tenant caching while preventing data leakage between tenants?
+* How do you cache authorization decisions without violating permission changes?
+* How do you handle cache invalidation across geographically distributed regions?
+* How do you design caching for a read-heavy application that requires near-real-time data freshness?
+* How do you measure the effect of caching on end-to-end latency and database load?
+* How do you identify and resolve memory fragmentation and eviction problems in Redis?
+* How do you perform cache migrations without causing a large increase in database traffic?
+* How would you design a caching strategy for a system with millions of users, frequent updates, and strict latency requirements?

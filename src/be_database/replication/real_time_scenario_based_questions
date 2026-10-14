@@ -1,0 +1,30 @@
+* A Spring Boot application uses read replicas, but users sometimes cannot see records immediately after creating them. How would you investigate replication lag and implement read-after-write consistency?
+* A PostgreSQL replica falls several minutes behind the primary during peak traffic. How would you determine whether WAL generation, network throughput, disk I/O, or replay performance is the bottleneck?
+* A MySQL replica stops applying binary log events because of a replication error. How would you diagnose the failure and recover without silently losing data?
+* The primary database fails, and two replicas report different replay positions. How would you determine which replica is safe to promote?
+* After automatic failover, some Java application instances continue sending writes to the old primary. How would you prevent split-brain and stale connection routing?
+* A database failover completes, but the Spring Boot application continues returning connection errors. How would you investigate connection pools, DNS caching, retry behavior, and transaction state?
+* A PostgreSQL replication slot retains WAL files until the primary runs out of disk space. How would you investigate and safely restore normal WAL cleanup?
+* Replication lag increases after a large batch update, and the replica remains behind even after the batch completes. How would you investigate transaction size, replay conflicts, and replica capacity?
+* A reporting service runs expensive queries on a read replica and causes replication replay to slow down. How would you isolate reporting workloads and reduce lag?
+* A replica is healthy and accepting connections, but its data is significantly stale. How would you detect this condition and prevent the application from routing reads to it?
+* A Spring Boot service routes SELECT statements to replicas and INSERT statements to the primary, but a transactional service occasionally reads its own writes from a replica. How would you fix the routing design?
+* A schema migration succeeds on the primary but causes replication errors on a replica. How would you diagnose version incompatibility and recover safely?
+* A PostgreSQL standby is promoted during a network partition while the original primary remains active. How would you restore a single-writer topology and reconcile any divergent writes?
+* A MySQL replica reports that its replication thread is running, but replication lag keeps increasing. How would you inspect worker status, transaction dependencies, and disk performance?
+* A primary database commits a financial transaction, but the application loses its connection before receiving the response. How would you determine whether the transaction committed and avoid duplicate processing?
+* A business-critical service requires near-zero data loss during primary failure. How would you evaluate synchronous replication, quorum acknowledgment, latency, and availability trade-offs?
+* A cross-region replica experiences intermittent lag because of network congestion. How would you design monitoring, traffic routing, and recovery procedures?
+* A replica fails after running out of disk space during recovery. How would you estimate the required capacity and safely rebuild or recover the replica?
+* A PostgreSQL logical replication subscriber misses changes because a replication slot was removed. How would you assess the data gap and restore consistency?
+* A MySQL replica is configured with replication filters, and some application tables are unexpectedly missing. How would you investigate the filter configuration and validate the recovered data?
+* A database upgrade requires a new primary and replica topology with minimal downtime. How would you plan compatibility checks, replication catch-up, cutover, and rollback?
+* An application has multiple read replicas with different lag levels. How would you route requests based on freshness requirements rather than simply round-robin distribution?
+* A connection pool continues reusing connections to a failed primary after failover. How would you configure validation, connection eviction, and retry policies?
+* A replica has sufficient CPU and memory, but replication replay remains slow. How would you investigate storage latency, long-running queries, and replay conflicts?
+* A replicated database system experiences periodic failovers due to brief network interruptions. How would you tune failure detection and prevent unnecessary promotions?
+* A replica is promoted successfully, but the former primary cannot rejoin the topology because its data has diverged. How would you rebuild or reconfigure it safely?
+* A deployment changes a column type on the primary while older application instances are still running. How would you manage schema compatibility across the replication topology?
+* A read-heavy API gains little performance improvement after replicas are introduced. How would you investigate connection routing, query distribution, primary bottlenecks, and replica capacity?
+* A disaster recovery exercise reveals that the standby can be promoted but the application cannot reconnect automatically. How would you test the complete recovery process?
+* How would you investigate, remediate, and prevent recurring replication incidents using database metrics, replication logs, application traces, and automated failover tests?

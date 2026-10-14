@@ -1,0 +1,30 @@
+* Write a Java program using the Azure SDK to publish an event to an Azure Event Grid custom topic.
+* Write a Java program that constructs an Event Grid event with an event ID, event type, subject, timestamp, and data payload.
+* Write a Java program that publishes a CloudEvent to Azure Event Grid.
+* Write a Spring Boot service that publishes an order-created event to Event Grid after an order is accepted.
+* Write a Java configuration class that creates and configures an Event Grid publisher client.
+* Write a Spring Boot REST endpoint that receives an Event Grid webhook event.
+* Write a Java webhook handler that processes Event Grid subscription validation requests.
+* Write a Java method that validates an incoming event payload before processing it.
+* Write a Spring Boot event handler that extracts the event ID and rejects duplicate events.
+* Write a Java implementation of an idempotency store using a database to prevent duplicate business operations.
+* Write a Spring Boot implementation of the transactional outbox pattern for publishing events to Event Grid.
+* Write a Java scheduled worker that reads pending outbox records and publishes them to Event Grid.
+* Write a Java implementation that retries transient Event Grid publishing failures using exponential backoff and jitter.
+* Write a Java service that distinguishes transient publishing errors from permanent validation or authorization errors.
+* Write a Spring Boot consumer that records event-processing status and correlation IDs for troubleshooting.
+* Write a Java implementation that routes different event types to different business handlers.
+* Write a Java method that validates event schema versions and handles unsupported versions safely.
+* Write a Java program that deserializes CloudEvents into strongly typed Java objects.
+* Write a Spring Boot application that records failed event-processing attempts for later investigation.
+* Write a Java implementation that safely reprocesses dead-lettered events without repeating completed business operations.
+* Write a Java program that propagates correlation IDs from an incoming HTTP request into a published event.
+* Write a Spring Boot integration test that verifies an event is published when an order is created.
+* Write unit tests for an Event Grid webhook handler that cover valid events, malformed payloads, and duplicate event IDs.
+* Write a Java program that publishes multiple events in batches where supported by the selected Event Grid API and handles partial failures appropriately.
+* Write a Java service that limits concurrent event publishing to avoid overwhelming downstream dependencies.
+* Write a Spring Boot health and readiness check for an application that publishes events to Event Grid.
+* Write a Java program that reads Event Grid publisher configuration securely from environment variables or Azure Key Vault.
+* Write a Terraform or Bicep configuration to create an Event Grid topic, an event subscription, and a dead-letter destination.
+* Write an Azure DevOps YAML pipeline that deploys Event Grid infrastructure and a Java event-publishing application.
+* Write an integration test plan and corresponding Java test code to verify event publishing, delivery handling, and idempotent processing.

@@ -1,0 +1,30 @@
+* Explain the internal architecture of the Node.js module system.
+* How does the CommonJS module wrapper function work?
+* Explain how Node.js resolves and caches modules internally.
+* What is the difference between CommonJS module loading and ES module loading?
+* Why are ES modules loaded differently from CommonJS modules?
+* Explain live bindings in ES modules.
+* How do live bindings differ from values exported through CommonJS?
+* What happens when an ES module imports a CommonJS module?
+* What limitations can arise when importing ES modules from CommonJS?
+* How does top-level await work in ES modules?
+* What happens when top-level await is used in a dependency chain?
+* How does Node.js handle circular dependencies in CommonJS?
+* How does Node.js handle circular dependencies in ES modules?
+* What are partially initialized exports in circular dependencies?
+* How can circular dependencies affect application initialization?
+* How do you design modules to minimize coupling?
+* What is the difference between module cohesion and module coupling?
+* How would you design a reusable module with a stable public API?
+* How do you prevent consumers from accessing internal implementation details?
+* What is the role of the exports field in package.json?
+* How does the exports field affect package subpath imports?
+* What is the difference between the main and exports fields in package.json?
+* How do conditional exports support CommonJS and ES module consumers?
+* What are dual packages, and what problems can they introduce?
+* What is the dual-package hazard in Node.js?
+* How do module boundaries affect testing and dependency injection?
+* How would you mock a CommonJS dependency during unit testing?
+* What challenges arise when mocking ES module dependencies?
+* How can you investigate unexpected module resolution or caching behavior?
+* How would you migrate a large CommonJS application to ES modules safely?

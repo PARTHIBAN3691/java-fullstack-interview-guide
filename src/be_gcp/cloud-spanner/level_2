@@ -1,0 +1,30 @@
+* Explain how Cloud Spanner provides external consistency across distributed transactions.
+* How does TrueTime contribute to globally consistent transaction ordering?
+* How does Cloud Spanner achieve horizontal scalability while maintaining strong consistency?
+* How would you design a primary key strategy for billions of records and high write throughput?
+* How do sequential keys create hotspots, and what key-design strategies reduce this risk?
+* How would you optimize a Cloud Spanner schema for high-volume transactional workloads?
+* How do split boundaries and data distribution affect Cloud Spanner performance?
+* How would you diagnose uneven CPU utilization across Cloud Spanner nodes?
+* How would you choose the appropriate number of nodes or processing units for a production workload?
+* How do you estimate Cloud Spanner capacity based on transaction volume, query complexity, and latency targets?
+* How would you optimize transaction contention in a heavily concurrent application?
+* How do pessimistic and optimistic concurrency-control behaviors affect transaction design in Cloud Spanner?
+* How would you design retry logic for aborted transactions without duplicating business operations?
+* How do read-write transactions differ from read-only transactions in terms of locking, consistency, and performance?
+* How would you design a transaction that updates several related tables while minimizing contention?
+* How do stale reads and timestamp-bound reads affect consistency and latency?
+* How would you select between strong reads, exact-staleness reads, and bounded-staleness reads?
+* How would you optimize secondary indexes without increasing write amplification unnecessarily?
+* How do covering indexes and storing clauses affect query performance?
+* How would you analyze and optimize a query with a large distributed join?
+* How would you design a data model that avoids expensive joins in a globally distributed database?
+* How do interleaved tables affect locality, transaction boundaries, and schema flexibility?
+* How would you migrate a large relational database to Cloud Spanner with minimal downtime?
+* How would you validate data consistency during a live database migration?
+* How would you design multi-region replication for low-latency reads and high availability?
+* How do regional, dual-region, and multi-region instance configurations differ?
+* How would you plan disaster recovery and recovery-time objectives for Cloud Spanner?
+* How would you implement safe schema evolution when multiple application versions run simultaneously?
+* How would you investigate rising transaction latency despite stable request volume and CPU utilization?
+* How would you design cost-efficient Cloud Spanner infrastructure for unpredictable workloads?

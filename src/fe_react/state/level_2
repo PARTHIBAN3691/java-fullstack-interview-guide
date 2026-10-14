@@ -1,0 +1,30 @@
+* Explain how React schedules and processes state updates.
+* What is the difference between the render phase and commit phase in React?
+* How does React's state update queue work?
+* How does automatic batching work in modern React?
+* How does concurrent rendering affect state updates?
+* What is a stale closure in React, and how can it cause state-related bugs?
+* How do you avoid stale state inside asynchronous callbacks?
+* How do closures affect state inside useEffect?
+* How do you design a complex state model using useReducer?
+* How do you structure reducer actions for a large application?
+* How do you keep reducers pure and predictable?
+* How do you handle deeply nested state without introducing mutation?
+* When would you use Immer for immutable state updates?
+* How do you decide whether state belongs locally, in Context, or in an external store?
+* How would you design a scalable state management architecture for an enterprise application?
+* How do you prevent unnecessary re-renders when using Context for frequently changing state?
+* What are the limitations of using Context API as a global state management solution?
+* How do you manage state shared across unrelated component trees?
+* How do you handle optimistic UI updates and rollback when an API request fails?
+* How do you prevent stale API responses from overwriting newer state?
+* How do you model complex asynchronous workflows using state?
+* How do you distinguish server state from client state?
+* What is the difference between UI state, domain state, and server state?
+* How do you manage normalized state for relational data?
+* How do you avoid inconsistent duplicated state across components?
+* How do you handle state transitions safely in concurrent React applications?
+* How do useTransition and useDeferredValue help with state-driven performance?
+* How do you preserve state across route changes without introducing memory leaks?
+* How do you design undo and redo functionality using React state?
+* How would you investigate a state update that causes an infinite re-render loop?

@@ -1,0 +1,30 @@
+* Explain the JavaScript execution context and its creation and execution phases.
+* How does the JavaScript engine execute code internally?
+* Explain the call stack and its role in JavaScript execution.
+* How does hoisting work for var, let, const, and function declarations?
+* Why does typeof null return "object"?
+* Explain the difference between primitive values and object references in memory.
+* How does JavaScript pass arguments to functions when objects are involved?
+* Explain the difference between shallow equality and deep equality.
+* Why can two objects with identical properties compare as unequal?
+* Explain implicit type coercion when using the + operator.
+* How does JavaScript convert values during arithmetic and comparison operations?
+* Explain the difference between Number, parseInt, and unary plus for type conversion.
+* What are the limitations of JavaScript's Number type?
+* How do floating-point precision errors occur, and how can they be handled?
+* What are BigInt values, and how do they differ from Number values?
+* Why can BigInt and Number values not be mixed directly in arithmetic expressions?
+* Explain the difference between logical OR and nullish coalescing for default values.
+* How does optional chaining behave when an intermediate property is null or undefined?
+* Explain short-circuit evaluation and how it affects expression execution.
+* How does strict mode change JavaScript behavior?
+* What is the difference between lexical scope and the global execution environment?
+* How can global variables create naming conflicts in large applications?
+* What is the difference between an object's identity and its structure?
+* How does automatic semicolon insertion affect return statements and line breaks?
+* What are the risks of relying on implicit type coercion in production applications?
+* How do Symbol and BigInt differ from the other primitive data types?
+* What is the difference between Object.freeze(), Object.seal(), and preventing extensions?
+* How does JavaScript determine whether a value is truthy or falsy?
+* What are the differences between NaN, Infinity, -Infinity, and negative zero?
+* How would you design a type-safe validation strategy in JavaScript without a compile-time type system?

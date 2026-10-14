@@ -1,0 +1,30 @@
+* A user receives HTTP 401 even though the JWT appears valid. How would you investigate the problem?
+* A user changes the role claim in a JWT and gains administrative access. What security validation is missing?
+* A JWT works in one microservice but fails in another. How would you troubleshoot differences in signing keys, issuer, audience, and clock settings?
+* A production deployment rotates the JWT signing key, and all active users suddenly receive HTTP 401. How would you resolve the issue?
+* A JWT is stolen from a user's browser and used from another device. How would you limit the impact and prevent continued misuse?
+* A user logs out, but their JWT remains usable until expiration. How would you design logout and revocation behavior?
+* An employee's role is changed from administrator to regular user, but their existing JWT still grants administrative access. How would you address stale authorization claims?
+* A refresh token is reused after it has already been rotated. How should the authentication service respond?
+* Two simultaneous requests attempt to refresh the same token. How would you prevent inconsistent refresh-token state?
+* An attacker submits a JWT with the algorithm set to none. How should the API handle the token?
+* A JWT signed with an unexpected algorithm is accepted by the backend. How would you fix the verification logic?
+* An API accepts a token issued for another application. Which JWT validation checks should be added?
+* A token issued by a trusted identity provider has an unexpected issuer value after a migration. How would you troubleshoot the integration?
+* A service cannot reach the JWKS endpoint during a temporary identity-provider outage. How should cached signing keys be handled?
+* A JWT contains hundreds of roles and causes HTTP 431 errors. How would you redesign the authorization approach?
+* A developer stores passwords and confidential customer details in JWT claims. What risks does this create, and how would you correct it?
+* A JWT expires while a long-running request is being processed. How should the system handle token validation and request execution?
+* Multiple microservices validate the same JWT differently because their system clocks are not synchronized. How would you resolve the issue?
+* A mobile application stores access and refresh tokens insecurely. What changes would you recommend for secure token storage?
+* A client repeatedly sends an expired access token and triggers excessive refresh requests. How would you prevent the refresh storm?
+* A service accepts a validly signed JWT but does not validate its audience. What attack could this enable?
+* A user's account is disabled, but previously issued JWTs continue to work. How would you enforce account-disablement requirements?
+* A multi-tenant API receives a JWT with a valid user identity but an unauthorized tenant ID. How would you prevent cross-tenant access?
+* An API gateway validates JWTs, but backend services trust identity headers supplied by clients. What security risks exist, and how would you fix them?
+* A signing private key is accidentally exposed. What immediate actions would you take to contain the incident?
+* An external identity provider changes its signing keys without warning. How should the application handle key refresh and unknown key IDs?
+* A JWT is valid, but the API returns HTTP 403. How would you distinguish a role or permission issue from authentication failure?
+* An attacker reuses a stolen refresh token after the legitimate user has refreshed it. How would token-family tracking help?
+* A token-validation library accepts tokens with duplicate or unexpected claims. How would you assess and mitigate the risk?
+* Your team needs to migrate from a shared HS256 secret to RS256 signing across several services. How would you plan the migration safely?

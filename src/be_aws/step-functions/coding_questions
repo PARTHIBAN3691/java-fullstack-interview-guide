@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to start a Step Functions execution.
+* Write a Java method to start an execution with a JSON input payload and a specified state machine ARN.
+* Implement a Java service that retrieves and reports the status of a Step Functions execution.
+* Write a Java method to stop a running state machine execution.
+* Create an ASL workflow that invokes a Lambda function and returns its result.
+* Write an ASL state machine that uses a Choice state to route an order based on its amount.
+* Create an ASL workflow that executes two Lambda functions sequentially and handles task failures.
+* Implement retry and catch handling in an ASL definition for transient errors and terminal failures.
+* Write a Java Spring Boot service that starts a workflow after an order is created.
+* Implement a Java REST endpoint that starts a workflow and returns its execution ARN.
+* Write unit tests for a Step Functions client wrapper using JUnit and Mockito.
+* Implement a Java polling utility that checks execution status with configurable intervals, timeouts, and interruption handling.
+* Create an ASL workflow that uses a Parallel state to perform independent validation tasks.
+* Create an ASL workflow that uses a Map state to process multiple order items.
+* Implement an ASL workflow that sends a notification through SNS when a task fails.
+* Write a Java component that validates workflow input before starting an execution.
+* Implement a Java service that maps Step Functions execution errors to meaningful business error responses.
+* Design an ASL workflow that implements a Saga pattern for payment, inventory reservation, and order confirmation, including compensation steps.
+* Implement a callback-based workflow using task tokens to wait for an external Java service to complete a task.
+* Design and implement an end-to-end order orchestration solution using Spring Boot, AWS Step Functions, Lambda, SQS, SNS, retry policies, idempotency, and centralized monitoring.

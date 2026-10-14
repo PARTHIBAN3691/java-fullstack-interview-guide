@@ -1,0 +1,30 @@
+* Create a React button that handles a click event and updates a counter.
+* Create a component that passes arguments to an event handler.
+* Implement a form with onChange and onSubmit event handlers.
+* Create a controlled input component that updates state as the user types.
+* Implement checkbox and radio button event handling.
+* Create a component that prevents the default form submission behavior.
+* Build nested elements that demonstrate event bubbling and stopPropagation().
+* Implement an example demonstrating event.target and event.currentTarget.
+* Create a component that handles keyboard events for Enter and Escape.
+* Implement a reusable click-outside custom hook.
+* Create a dropdown that closes when the user clicks outside it.
+* Implement a global keyboard shortcut using a native event listener.
+* Create a custom useEventListener() hook with proper cleanup.
+* Implement a debounced search input using event handling.
+* Implement a throttled scroll handler.
+* Create a form that validates input fields on change, blur, and submit.
+* Build a reusable button component that accepts an event handler through props.
+* Implement a list where each item has its own click handler and identifier.
+* Create a table where clicking a row selects it, but clicking its action button does not select the row.
+* Implement drag-and-drop behavior using pointer events.
+* Create a component that handles copy and paste events.
+* Implement a modal that closes when Escape is pressed.
+* Create a component that prevents duplicate form submissions while an API request is in progress.
+* Implement an asynchronous event handler with loading and error states.
+* Write a test using React Testing Library to verify a button click updates the UI.
+* Test that stopPropagation() prevents a parent handler from executing.
+* Write tests for form validation and submission.
+* Implement a keyboard-accessible custom dropdown component.
+* Create a component that registers and cleans up multiple native DOM event listeners.
+* Build a searchable list with debounced input, keyboard navigation, and selection handling.

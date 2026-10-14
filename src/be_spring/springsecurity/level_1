@@ -1,0 +1,30 @@
+* Explain the internal working of the Spring Security filter chain.
+* How does Spring Security process an incoming HTTP request?
+* What is the difference between FilterChainProxy and SecurityFilterChain?
+* How do you configure Spring Security using a SecurityFilterChain bean?
+* How do you configure public and protected endpoints in Spring Security?
+* How do you configure URL-based authorization rules?
+* How do you implement in-memory authentication?
+* How do you implement database-backed authentication using UserDetailsService?
+* How do you integrate Spring Security with Spring Data JPA for user authentication?
+* How does DaoAuthenticationProvider authenticate a user?
+* How do you configure BCryptPasswordEncoder in a Spring Boot application?
+* What is the difference between AuthenticationManager and AuthenticationProvider?
+* How do you implement custom authentication logic using a custom AuthenticationProvider?
+* What is the difference between hasRole() and hasAuthority()?
+* How do you implement method-level security using @PreAuthorize and @PostAuthorize?
+* What is the difference between @PreAuthorize and @PostAuthorize?
+* How do you implement role-based and permission-based access control?
+* What is the difference between hasPermission() and hasAuthority()?
+* How do you configure custom access-denied and authentication-entry-point handlers?
+* How do you customize the authentication failure response for a REST API?
+* How does CSRF protection work, and when might it be disabled for an API?
+* How do you configure CORS in Spring Security?
+* What is the difference between session-based authentication and JWT-based authentication?
+* How do you configure Spring Security for stateless REST APIs?
+* How do you validate JWTs using Spring Security OAuth2 Resource Server?
+* What is the difference between an OAuth2 Resource Server and an OAuth2 Client?
+* How do you configure OAuth 2.0 login using an external identity provider?
+* How do you configure session management and concurrent session control?
+* How do you write security tests using MockMvc and spring-security-test?
+* How do you secure actuator endpoints using Spring Security?

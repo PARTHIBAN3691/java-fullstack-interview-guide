@@ -1,0 +1,21 @@
+
+* Write a Java program in which two threads increment a shared counter and demonstrate a race condition.
+* Modify the counter program to produce the correct result using a synchronized method.
+* Implement a thread-safe counter using a synchronized block instead of a synchronized method.
+* Write a program demonstrating the difference between instance-level synchronization and class-level synchronization.
+* Create a bank account class with synchronized `deposit()` and `withdraw()` methods.
+* Write a program demonstrating that two threads cannot execute synchronized methods using the same object monitor simultaneously.
+* Write a program showing that synchronized instance methods on different objects can execute concurrently.
+* Implement a thread-safe singleton using synchronized lazy initialization.
+* Implement a thread-safe singleton using double-checked locking and explain the role of `volatile`.
+* Write a program demonstrating reentrant synchronization by calling one synchronized method from another synchronized method on the same object.
+* Create a program that demonstrates a deadlock using two shared objects and two threads.
+* Modify the deadlock program to prevent deadlock by acquiring locks in a consistent order.
+* Write a program that protects a compound operation involving two shared variables using a single synchronized block.
+* Implement a thread-safe inventory management class that prevents selling more items than are available.
+* Write a program demonstrating why `volatile int counter` does not guarantee atomic increments.
+* Implement a thread-safe lazy-initialized cache using synchronization.
+* Write a program that compares a synchronized counter with an `AtomicInteger` counter under concurrent load.
+* Implement a thread-safe class using a private lock object instead of synchronizing on `this`.
+* Write a program that demonstrates lock contention and measures the execution time with different synchronization strategies.
+* Create a multithreaded program that safely transfers money between two bank accounts without introducing deadlocks.

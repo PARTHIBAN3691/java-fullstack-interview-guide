@@ -1,0 +1,30 @@
+* Write a Java program that partitions a list of records into groups based on a key.
+* Implement hash-based partitioning in Java using a configurable number of partitions.
+* Implement range-based partitioning for numeric customer IDs.
+* Write a Java utility that assigns records to partitions based on timestamp ranges.
+* Implement a composite partition key using customer ID and region.
+* Write a function that routes a request to the correct database shard using a shard key.
+* Implement a consistent-hashing ring in Java for distributing keys across nodes.
+* Extend a consistent-hashing implementation to support virtual nodes.
+* Write a Java program that demonstrates how adding a node changes key distribution in consistent hashing.
+* Implement rendezvous hashing to assign keys to storage nodes.
+* Write a program that measures partition distribution and calculates the skew across partitions.
+* Implement a strategy that detects hot partitions from request-count statistics.
+* Write a partition router that supports adding, removing, and updating shard metadata.
+* Implement a partition-aware repository abstraction for retrieving records from different shards.
+* Write a Java program that simulates rebalancing records when a new shard is added.
+* Implement a migration utility that copies records between shards in batches.
+* Write a migration process that uses checkpoints to resume after failure.
+* Implement an idempotent record migration that avoids duplicate inserts at the destination.
+* Write a Java program that routes tenant requests to dedicated or shared database shards.
+* Implement a time-based partition resolver for monthly order partitions.
+* Write a function that identifies which time partitions overlap a given date range.
+* Implement partition pruning in a simulated query engine based on query predicates.
+* Write a Java program that merges sorted results retrieved from multiple partitions.
+* Implement pagination across multiple sorted partitions without loading every record into memory.
+* Write a Kafka producer that uses a customer ID as the message key for partition assignment.
+* Implement a custom Kafka partitioner that distributes messages based on business rules.
+* Write a Java program that calculates Kafka partition load using message counts and processing latency.
+* Implement a partition-aware consumer simulation that assigns partitions to consumers.
+* Write a Java program that simulates partition failure and reassignment to healthy nodes.
+* Implement a partition management service that monitors capacity, detects imbalance, and triggers rebalancing.

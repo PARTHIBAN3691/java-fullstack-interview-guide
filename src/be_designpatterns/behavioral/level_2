@@ -1,0 +1,30 @@
+* How would you design a Strategy-based architecture that supports runtime registration of new implementations?
+* How would you manage Strategy selection when rules depend on multiple business attributes?
+* How would you design a thread-safe Observer system with concurrent event publication and subscription changes?
+* How would you preserve event ordering when multiple observers process events asynchronously?
+* How would you prevent slow observers from blocking event publishers?
+* How would you design a Command framework supporting retries, idempotency, and execution tracking?
+* How would you implement the undo and redo lifecycle for commands that modify multiple domain objects?
+* How would you persist commands so that queued operations can survive application restarts?
+* How would you design a Chain of Responsibility that supports conditional routing, fallback handlers, and observability?
+* How would you prevent a responsibility chain from becoming difficult to debug when handlers are dynamically composed?
+* How would you model complex order and payment lifecycles using the State pattern?
+* How would you handle concurrent state transitions when multiple requests update the same domain object?
+* How would you enforce state transition rules consistently across REST APIs, scheduled jobs, and message consumers?
+* How would you choose between the State pattern and a workflow engine for a long-running business process?
+* How would you design a Template Method implementation that supports optional steps without creating an overly complex inheritance hierarchy?
+* How would you test template algorithms when subclasses override several hook methods?
+* How would you implement a custom Iterator for a large dataset without loading all records into memory?
+* How would you handle concurrent modification and consistency guarantees in a custom iterator?
+* How would you design a Mediator that coordinates many components without becoming a God Object?
+* How would you avoid turning the Mediator pattern into a centralized dependency bottleneck?
+* How would you implement the Memento pattern for large objects while minimizing memory consumption?
+* How would you securely store snapshots containing sensitive business data?
+* How would you handle versioning and compatibility when persisted Memento snapshots outlive application deployments?
+* How would you use the Visitor pattern when the object hierarchy changes frequently?
+* How would you manage backward compatibility when adding new element types to a Visitor-based architecture?
+* How would you compare Visitor with polymorphism, pattern matching, and sealed classes in modern Java?
+* How would you design an Interpreter for a business rule language with validation, precedence, and error reporting?
+* How would you prevent injection attacks and resource exhaustion in a user-defined expression interpreter?
+* How would you combine behavioral patterns without creating excessive indirection or coupling?
+* How would you evaluate the performance, testability, and maintainability trade-offs of behavioral patterns in a large Java system?

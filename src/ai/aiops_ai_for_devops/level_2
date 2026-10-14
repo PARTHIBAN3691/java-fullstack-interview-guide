@@ -1,0 +1,107 @@
+**AIOps Fundamentals**
+
+* Design an enterprise AIOps platform for thousands of microservices across multiple Kubernetes clusters and cloud accounts. How would you build the ingestion, correlation, analytics, knowledge, and remediation layers?
+* How would you combine deterministic rules, statistical models, machine learning, and LLM-based reasoning while preserving traceability and controlling inference costs?
+* How would you prove that an AIOps platform improves operational outcomes rather than simply generating more recommendations and dashboards?
+
+**AI-Based Log Analysis**
+
+* Design a log intelligence pipeline capable of processing billions of events daily, identifying recurring error patterns, and enabling low-latency investigation across distributed services.
+* How would you handle high-cardinality fields, changing log formats, sensitive data, duplicate events, and previously unseen failure patterns?
+* How would you prevent an LLM from treating untrusted log content as instructions and distinguish observed evidence from speculative explanations?
+
+**Intelligent Alert Correlation**
+
+* Design a real-time alert correlation engine that combines service topology, temporal proximity, event semantics, deployment changes, and causal dependencies.
+* How would you prevent a noisy or high-volume service from incorrectly absorbing unrelated alerts into a single incident?
+* How would you evaluate correlation quality using historical incidents when incident labels are incomplete or inconsistent?
+
+**Anomaly Detection**
+
+* Design an anomaly detection architecture for workloads with seasonal traffic, multiple deployment environments, changing baselines, and different service-level objectives.
+* How would you combine online statistical detection, supervised models, and unsupervised learning while controlling false-positive rates?
+* How would you detect concept drift, recalibrate thresholds, and roll out a new detection model without losing visibility into critical anomalies?
+
+**Root Cause Analysis**
+
+* Design an automated root cause analysis engine that constructs a dependency graph from telemetry and ranks potential causes using temporal and causal evidence.
+* How would you distinguish a shared upstream dependency failure from correlated but independent service failures?
+* How would you explain root cause recommendations with supporting traces, logs, metrics, and change events while explicitly representing uncertainty?
+
+**Incident Summarization**
+
+* Design an incident summarization service that continuously builds an evidence-backed timeline from millions of events while incidents evolve.
+* How would you maintain consistency between live summaries, final postmortems, and incident-management records when new evidence changes the initial hypothesis?
+* How would you prevent hallucinated timelines, incorrect attribution, and disclosure of sensitive operational information in generated summaries?
+
+**Predictive Incident Detection**
+
+* Design a predictive incident detection system that forecasts SLO violations before they occur and integrates predictions into on-call workflows.
+* How would you handle rare incidents, imbalanced training data, changing infrastructure, delayed labels, and the high cost of false alarms?
+* How would you distinguish actionable early-warning signals from correlations that provide no meaningful intervention window?
+
+**Automated Incident Response**
+
+* Design a remediation engine that selects actions from approved playbooks, validates preconditions, executes actions, verifies recovery, and stops safely when results diverge from expectations.
+* How would you guarantee idempotency, concurrency safety, and bounded retries when several agents or responders attempt to remediate the same incident?
+* How would you prevent feedback loops in which an automated action creates new alerts that trigger further harmful actions?
+
+**AI-Assisted CI/CD**
+
+* Design an AI-enhanced delivery pipeline that analyzes code changes, tests, security findings, infrastructure plans, and production signals before authorizing a release.
+* How would you evaluate AI-generated fixes and test cases when they can introduce correlated mistakes or appear to pass without covering the intended behavior?
+* How would you incorporate canary metrics and post-deployment observations into release decisions without allowing an AI model to override hard safety gates?
+
+**AI-Generated Infrastructure as Code**
+
+* Design a controlled system that generates infrastructure as code from natural-language requirements while enforcing approved modules, network boundaries, encryption, and least privilege.
+* How would you prevent destructive infrastructure plans, privilege escalation, secret exposure, and unsupported provider configurations from reaching production?
+* How would you maintain reproducibility and reviewability when model-generated Terraform or Kubernetes manifests vary between executions?
+
+**AI-Assisted Kubernetes Troubleshooting**
+
+* Design a Kubernetes troubleshooting assistant that understands cluster topology, workload ownership, scheduling, networking, storage, resource pressure, and recent changes across clusters.
+* How would you distinguish symptoms caused by application defects from those caused by node pressure, CNI failures, DNS issues, admission policies, or control-plane problems?
+* How would you safely execute remediation across production clusters while accounting for disruption budgets, stateful workloads, multi-cluster dependencies, and rollback limitations?
+
+**AI for Cloud Cost Optimization**
+
+* Design an AI-assisted FinOps platform that correlates billing data, utilization, workload ownership, architecture dependencies, and service-level objectives to recommend optimizations.
+* How would you quantify the financial benefit and operational risk of rightsizing, autoscaling, storage-tier changes, and compute commitments?
+* How would you prevent cost-optimization agents from removing resources that appear idle but support disaster recovery, seasonal demand, or compliance requirements?
+
+**AI-Powered Capacity Planning**
+
+* Design a forecasting platform that predicts resource demand across regions and services and translates uncertainty ranges into infrastructure procurement and autoscaling decisions.
+* How would you plan for sudden traffic spikes, new product launches, model-serving accelerator demand, and correlated growth across dependent services?
+* How would you validate forecasts against actual demand and avoid overprovisioning caused by conservative estimates or underprovisioning caused by model bias?
+
+**AI Runbook Automation**
+
+* Design a durable runbook execution platform with versioned workflows, policy-based action permissions, checkpoints, approvals, compensation, and execution evidence.
+* How would you handle a workflow that partially succeeds across cloud infrastructure, databases, and deployment systems before an external dependency becomes unavailable?
+* How would you prevent an LLM from inventing commands, changing runbook semantics, or executing a valid command in an unsafe operational context?
+
+**AI Change Risk Prediction**
+
+* Design a change-risk model that predicts deployment failures using code diffs, dependency changes, test coverage, service topology, prior incidents, and deployment history.
+* How would you avoid historical-data leakage and biased risk scores for services with limited deployment history?
+* How would you combine model confidence with deterministic release policies, canary evidence, and rollback readiness to make release decisions?
+
+**AI-Assisted Security Operations**
+
+* Design an AI-assisted security operations platform that triages alerts, correlates identity and endpoint activity, enriches threat intelligence, and recommends containment actions.
+* How would you defend the investigation pipeline against prompt injection in security reports, malicious log messages, poisoned threat intelligence, and compromised tools?
+* How would you evaluate detection quality, analyst workload reduction, containment speed, and the risk of incorrectly disrupting legitimate business activity?
+
+**Human Approval for Automated Remediation**
+
+* Design a risk-based approval architecture that permits low-impact remediation automatically but requires explicit authorization for high-impact production or security actions.
+* How would you prevent stale approvals, approval spoofing, privilege escalation, and time-of-check-to-time-of-use vulnerabilities?
+* How would you handle emergency remediation when an authorized approver is unavailable but delaying action risks a major outage?
+
+**Reliability and Safety of AIOps**
+
+* Design an AIOps control system with bounded autonomy, deterministic safety policies, independent verification, kill switches, and safe fallback behavior when models fail.
+* How would you conduct chaos testing and fault injection to assess behavior during telemetry loss, incorrect recommendations, model outages, and cascading incidents?
+* How would you measure the safety of autonomous actions, including near misses, unintended side effects, rollback success, and incidents caused by automation itself?

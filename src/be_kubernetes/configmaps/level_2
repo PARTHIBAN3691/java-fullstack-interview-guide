@@ -1,0 +1,30 @@
+* Explain the internal architecture of ConfigMaps and how they are stored and retrieved by Kubernetes.
+* How does the kubelet project ConfigMap data into a container filesystem?
+* How does Kubernetes propagate ConfigMap updates to mounted volumes?
+* Why are ConfigMap updates not automatically reflected in environment variables?
+* How would you design dynamic configuration management for hundreds of Spring Boot microservices?
+* How would you implement configuration versioning and rollback using ConfigMaps?
+* What are the trade-offs between updating a ConfigMap in place and creating a versioned ConfigMap?
+* How would you ensure that all replicas of a microservice use a consistent configuration version?
+* How do ConfigMap updates interact with Deployment rollouts and ReplicaSets?
+* How would you achieve zero-downtime configuration changes for a critical application?
+* How would you prevent an invalid configuration from breaking every application replica?
+* How would you validate configuration changes before promoting them to production?
+* How would you design immutable ConfigMaps for production workloads?
+* What are the benefits and limitations of setting immutable: true on a ConfigMap?
+* How would you implement automatic Pod restarts when configuration changes?
+* How would you use Helm or Kustomize to manage configuration across multiple environments?
+* How would you avoid exposing sensitive information through ConfigMaps?
+* What security risks arise when ConfigMaps are readable by overly permissive service accounts?
+* How do Kubernetes RBAC permissions affect access to ConfigMaps?
+* How would you manage large configuration files that approach the ConfigMap size limit?
+* What alternatives would you consider when configuration exceeds the practical limits of ConfigMaps?
+* How would you handle configuration that must change frequently without restarting application Pods?
+* How would you implement a dynamic configuration reload mechanism in Spring Boot?
+* How would you combine ConfigMaps, Secrets, and an external secrets manager in a secure architecture?
+* How would you prevent stale configuration from being used during a rolling deployment?
+* How would you troubleshoot configuration inconsistencies between replicas of the same Deployment?
+* How do ConfigMaps behave when a Kubernetes API Server is temporarily unavailable?
+* How would you design configuration distribution across multiple Kubernetes clusters?
+* How would you audit and trace who changed a production ConfigMap and when?
+* How would you design a reliable configuration promotion and rollback process for enterprise microservices?

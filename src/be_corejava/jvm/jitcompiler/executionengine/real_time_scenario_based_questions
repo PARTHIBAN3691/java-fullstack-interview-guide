@@ -1,0 +1,17 @@
+
+* Your Java application runs slowly during startup but becomes faster after several minutes. How would you explain the Interpreter and JIT compiler's roles?
+* Your microservice experiences high CPU usage immediately after deployment. How would you determine whether JIT compilation contributes to the problem?
+* Your application has a frequently executed method that suddenly becomes slower. How would you investigate deoptimization and recompilation?
+* A performance-critical loop executes millions of iterations. How would the JVM optimize the loop, and how would you verify the optimization?
+* Your application creates many temporary objects in a frequently executed method. How could escape analysis and scalar replacement help?
+* Your multithreaded application spends significant time acquiring locks. How could JIT lock elimination help, and what limitations would you consider?
+* Your application uses an interface with many different runtime implementations. How could polymorphic call sites affect method inlining?
+* Your service experiences latency spikes during heavy traffic despite low average CPU utilization. How would you investigate compilation activity and runtime profiling?
+* Your JVM reports code-cache exhaustion. How would you identify the affected compilation areas and diagnose the issue?
+* Your Java application invokes native methods frequently and experiences unexpected overhead. How would you investigate the Java-to-native transition?
+* Your application performs well in development but poorly in production. How would differences in runtime profiling and workload patterns affect JIT optimization?
+* Your team reports inconsistent benchmark results between runs. How would you account for warm-up, JIT compilation, dead-code elimination, and garbage collection?
+* Your application uses reflection and dynamic proxies heavily. How might these patterns affect the Execution Engine's optimization opportunities?
+* Your team wants to reduce application startup time without sacrificing steady-state throughput. How would you evaluate JVM compilation settings?
+* Your application repeatedly recompiles methods under changing workloads. How would you investigate profiling instability and speculative optimization failures?
+* Your team wants to determine whether a bottleneck is caused by interpretation, JIT compilation, allocation, or application logic. Which JVM diagnostics would you use?

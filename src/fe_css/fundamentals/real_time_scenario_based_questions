@@ -1,0 +1,30 @@
+* A CSS rule is not applied even though the selector matches the element. How would you troubleshoot it?
+* Two stylesheets define different colors for the same element. How would you determine which color is applied?
+* A developer uses many !important declarations in an application. How would you improve the CSS?
+* A component looks correct on desktop but overflows on mobile. How would you identify the cause?
+* A child element extends beyond its parent despite having width: 100%. What could be wrong?
+* A modal appears behind a header even though its z-index is higher. How would you debug the issue?
+* A sticky header does not stick while scrolling. What CSS properties and ancestors would you inspect?
+* A button is invisible but still occupies space in the layout. Which CSS properties could cause this?
+* A hidden element still affects the layout. How would you remove it from the layout flow?
+* A page has inconsistent spacing between sections. How would you investigate margin collapsing?
+* A team needs a consistent spacing and color system across multiple pages. How would you use CSS custom properties?
+* A design must support light and dark themes. How would you implement theme variables?
+* A component must use the same styles across multiple pages without duplicating CSS. How would you organize the styles?
+* A class selector and an ID selector define different colors for the same element. Which one normally wins, and why?
+* A global CSS rule unexpectedly changes the appearance of a reusable component. How would you prevent this?
+* A developer uses fixed pixel widths throughout the application. How would you make the layout more flexible?
+* A form field has unexpected dimensions after padding and borders are added. How would you fix the box model issue?
+* A dropdown menu is clipped by its parent container. Which CSS properties would you investigate?
+* A positioned child moves unexpectedly when its parent changes. How would you identify its containing block?
+* A page uses many different font sizes and spacing values. How would you make the design consistent?
+* A responsive layout breaks when users increase the browser's default font size. How would you improve it?
+* An element is visually transparent but still receives mouse clicks. How would you handle this behavior?
+* A developer needs styles to apply only when an input receives keyboard focus. Which selector would you use?
+* A nested component inherits an unwanted text style from its parent. How would you fix it?
+* A reusable CSS component conflicts with another component that uses the same class name. How would you resolve the conflict?
+* A page needs to support left-to-right and right-to-left languages. How would you use logical properties?
+* A browser displays different results for a layout using default element styles. How would you make the rendering more consistent?
+* A team wants to reduce duplicated CSS across a large application. What strategies would you recommend?
+* A developer cannot understand why a CSS value differs from the value declared in the stylesheet. How would you investigate computed styles?
+* A production page has a layout regression after a stylesheet change. How would you isolate the responsible rule?

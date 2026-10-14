@@ -1,0 +1,28 @@
+* A Java Spring Boot application is deployed on three virtual machines behind Azure Load Balancer, but only one instance appears to receive traffic. How would you investigate the issue?
+* A backend instance is marked unhealthy even though the Spring Boot application responds correctly when accessed directly. How would you troubleshoot the health probe and network configuration?
+* Users experience intermittent HTTP timeouts, but all backend instances appear healthy. How would you investigate the load-balancing rules, application behavior, and network path?
+* A production application becomes unavailable after a health-probe configuration change. How would you identify the cause and restore service?
+* One backend instance becomes overloaded while other instances remain underutilized. How would you investigate traffic distribution and backend capacity?
+* A Spring Boot application works correctly on localhost but cannot be reached through the public load balancer. How would you troubleshoot frontend IP configuration, rules, NSGs, and application port bindings?
+* A load-balanced application experiences connection resets during deployments. How would you redesign deployment and connection-draining behavior using supported Azure and application capabilities?
+* A Java application makes thousands of outbound HTTP calls and begins experiencing connection failures due to SNAT port exhaustion. How would you identify the root cause and improve outbound connectivity?
+* A backend instance restarts frequently and repeatedly fails health probes during startup. How would you coordinate application readiness and health-probe timing?
+* A production service becomes unavailable when one availability zone experiences a failure. How would you investigate backend placement and improve zone resilience?
+* A team deploys a new version of a Spring Boot application, but the load balancer continues sending traffic to instances that should no longer serve requests. How would you troubleshoot and safely replace the instances?
+* A TCP application maintains long-lived connections, and users disconnect whenever a backend instance is updated. How would you minimize connection disruption?
+* An internal load balancer is reachable from one subnet but not from another. How would you investigate NSGs, routes, peering, and frontend configuration?
+* A public load balancer is receiving traffic, but the backend application does not record the expected client IP address. How would you investigate source-address behavior and logging?
+* A load-balancing rule works for TCP traffic but fails for UDP traffic. How would you troubleshoot the protocol and rule configuration?
+* A production incident occurs after an NSG rule change, causing the health probes to fail. How would you identify the blocking rule and restore service securely?
+* A Java microservice experiences intermittent failures when connecting to an external API from Azure. How would you determine whether outbound connectivity, SNAT, DNS, or the remote service is responsible?
+* A backend virtual machine is healthy at the operating-system level, but the application is returning errors. How would you determine whether the load balancer can detect the application-level failure?
+* A new load-balancer configuration is deployed through Azure DevOps and causes production traffic disruption. How would you roll back the change and prevent similar incidents?
+* An application requires both internet-facing access and private communication between internal services. How would you design the public and internal load-balancing layers?
+* Traffic increases sharply during a business event and response times deteriorate across all backend instances. How would you investigate capacity, scaling, connection limits, and downstream dependencies?
+* A health probe removes all backend instances during a temporary database outage, making even otherwise usable application endpoints unavailable. How would you redesign health-check behavior?
+* A company needs to migrate from a single VM to a highly available multi-instance Java deployment with minimal downtime. How would you plan the migration?
+* A security audit finds that backend VMs are directly accessible from the internet even though they are behind a public load balancer. How would you secure the network architecture?
+* A load balancer is working, but users in another region experience high latency. How would you determine whether regional traffic routing or a different Azure service is required?
+* A backend service has uneven request-processing times and some requests last several minutes. How would you assess connection behavior and decide whether the current load-balancing design is appropriate?
+* A load-balancer frontend is reachable, but a specific port fails while other ports work. How would you isolate the issue across frontend configuration, rules, NSGs, and application listeners?
+* A production service experiences intermittent failures after backend instances are added or removed from a virtual machine scale set. How would you investigate scaling behavior and health-probe integration?

@@ -1,0 +1,30 @@
+* Explain the formal principles behind 1NF, 2NF, 3NF, and BCNF.
+* Given a relation and a set of functional dependencies, how would you calculate all candidate keys?
+* How do you compute attribute closure for a complex set of functional dependencies?
+* How do you derive a minimal cover and use it to synthesize a 3NF schema?
+* How do you prove that a decomposition is lossless?
+* How do you determine whether a decomposition preserves functional dependencies?
+* Why can BCNF decomposition fail to preserve all functional dependencies?
+* How would you choose between a dependency-preserving 3NF decomposition and a BCNF decomposition?
+* How do you detect and eliminate redundant functional dependencies?
+* How do multivalued dependencies lead to Fourth Normal Form (4NF)?
+* What is a multivalued dependency, and how is it different from a functional dependency?
+* What is Fifth Normal Form (5NF), and when is it relevant?
+* What is a join dependency, and how does it relate to 5NF?
+* What is Domain-Key Normal Form (DKNF)?
+* How do you determine the highest normal form satisfied by a given relation?
+* How can an incorrect decomposition introduce spurious tuples when tables are joined?
+* How do normalization and entity relationship modeling complement each other?
+* How would you normalize a schema with overlapping candidate keys and complex functional dependencies?
+* How do normalization decisions affect transaction consistency in high-concurrency systems?
+* How can normalization reduce update anomalies but increase query latency?
+* How would you balance normalization and denormalization in a high-volume e-commerce platform?
+* How do database constraints enforce functional dependencies that cannot be expressed through simple unique constraints?
+* How would you enforce a cross-table business rule without introducing data anomalies?
+* How do normalized schemas affect reporting queries, aggregation, and analytical workloads?
+* How would you redesign a highly denormalized legacy database while maintaining backward compatibility?
+* How can schema migrations preserve referential integrity while splitting a large table into multiple normalized tables?
+* How would you assess normalization in a microservices architecture where each service owns its own database?
+* How do normalization and data duplication differ between relational databases and document databases such as MongoDB?
+* How would you identify normalization issues using database metadata, SQL queries, and schema analysis?
+* How would you justify a denormalized design when strict normalization increases operational complexity or latency?

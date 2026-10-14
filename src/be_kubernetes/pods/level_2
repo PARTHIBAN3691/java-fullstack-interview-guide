@@ -1,0 +1,30 @@
+* Explain the complete Pod lifecycle, from API submission and scheduling to container startup and termination.
+* How do the API server, scheduler, kubelet, container runtime, and CNI interact when creating a Pod?
+* What happens internally when a Pod is scheduled but its container fails to start?
+* How does Kubernetes manage Pod status and container status independently?
+* How does the kubelet determine whether a container should be restarted?
+* How do restart policies interact with container exit codes and workload controllers?
+* What are the differences between terminationGracePeriodSeconds, preStop hooks, and SIGTERM handling?
+* How would you design graceful shutdown for a Spring Boot application running in a Pod?
+* How can readiness probes, startup probes, and graceful shutdown work together during rolling deployments?
+* What are the risks of configuring liveness probes too aggressively?
+* How do CPU throttling and memory pressure affect Pod stability?
+* How does the Kubernetes scheduler evaluate resource requests and node capacity?
+* How do topology spread constraints differ from Pod anti-affinity?
+* How would you design Pod placement across nodes and availability zones for high availability?
+* How do QoS classes such as Guaranteed, Burstable, and BestEffort affect eviction behavior?
+* How does the kubelet respond when a node experiences memory pressure or disk pressure?
+* What is an OOMKilled container, and how would you determine its root cause?
+* How do ephemeral-storage requests and limits affect Pod scheduling and eviction?
+* What are the security implications of privileged containers, hostPath volumes, and host namespaces?
+* How do Linux capabilities, seccomp profiles, and security contexts improve Pod isolation?
+* How do service accounts and projected tokens provide identity to applications inside Pods?
+* How do Pod-level and container-level security contexts differ?
+* What are the limitations of running multiple application containers in the same Pod?
+* How do sidecar containers affect resource consumption, lifecycle management, and failure handling?
+* How does native sidecar container behavior differ from a traditional init-container sidecar pattern?
+* How do readiness gates affect the conditions under which a Pod is considered ready?
+* How do finalizers and termination states affect Pod deletion?
+* How would you diagnose a Pod that remains in Terminating state for an extended period?
+* How would you investigate intermittent latency caused by CPU throttling or node contention?
+* How would you design secure, resilient, and resource-efficient Pods for a large Spring Boot microservices platform?

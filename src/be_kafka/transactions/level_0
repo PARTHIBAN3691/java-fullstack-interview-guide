@@ -1,0 +1,30 @@
+* What is a transaction in Apache Kafka?
+* Why are Kafka transactions required?
+* What is the difference between a normal Kafka producer and a transactional producer?
+* What is the purpose of the transactional.id property?
+* What is the difference between a transaction and a message batch in Kafka?
+* What does atomicity mean in Kafka transactions?
+* What is the role of the Kafka producer in a transaction?
+* What is the purpose of initTransactions()?
+* What is the purpose of beginTransaction()?
+* What is the purpose of commitTransaction()?
+* What is the purpose of abortTransaction()?
+* What happens when a Kafka transaction is committed?
+* What happens when a Kafka transaction is aborted?
+* What is the difference between committed and aborted records?
+* What is the purpose of the isolation.level consumer configuration?
+* What is the difference between read_uncommitted and read_committed?
+* Can a Kafka transaction publish messages to multiple partitions?
+* Can a Kafka transaction publish messages to multiple topics?
+* What is a transaction coordinator in Kafka?
+* What is a transaction marker in Kafka?
+* What is the role of the transaction log in Kafka?
+* What is the relationship between Kafka transactions and idempotent producers?
+* Can Kafka transactions guarantee exactly-once processing?
+* What is the difference between at-most-once and exactly-once processing?
+* What happens if a producer crashes before committing a transaction?
+* What happens if a producer crashes after committing a transaction?
+* Can a consumer read messages from an uncommitted transaction?
+* What is the purpose of enable.idempotence?
+* What is the difference between a producer acknowledgment and a transaction commit?
+* What are the basic steps to implement a Kafka transaction in Java?

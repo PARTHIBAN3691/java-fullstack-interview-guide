@@ -1,0 +1,30 @@
+* A password field displays the user's password as plain text. How would you correct the input type?
+* A user enters an invalid email address, but the form submits. How would you investigate the HTML validation?
+* A telephone number loses leading zeros when entered. Which input type would you choose and why?
+* A form requires users to enter an age between 18 and 60. How would you configure the input?
+* A user must select exactly one payment method. Which input type would you use?
+* A user must select multiple skills from a list. Would you use radio buttons or checkboxes?
+* A date input allows users to select dates outside the permitted period. How would you restrict the range?
+* A file upload control must accept only PDF files and images. How would you configure it?
+* A file input allows users to select only one file, but the requirement changes to multiple files. What should you modify?
+* A numeric field must accept decimal values such as 99.50. How would you configure its step and validation?
+* A user enters a phone number beginning with zero, but the value is altered. How would you redesign the input?
+* A search form should display a search-oriented input on supported browsers. Which input type would you use?
+* A form contains two radio buttons, but both can be selected. What could be wrong with their markup?
+* A required checkbox is not preventing form submission as expected. How would you debug it?
+* A disabled input's value is missing from the submitted request. How would you handle this requirement?
+* A hidden input contains a user's role, and an attacker changes it through developer tools. How would you secure the application?
+* A date input behaves differently across browsers. How would you handle compatibility and validation?
+* A color selection field must update a page theme. How would you combine the color input with JavaScript?
+* A range slider must display its current value while the user drags it. How would you implement it?
+* A user cannot identify a form field because it relies only on placeholder text. How would you improve accessibility?
+* A number input accepts values outside the required business rules. How would you validate the values reliably?
+* A password manager does not autofill the login form. Which input attributes would you inspect?
+* A form requires an expiration month and year for a payment card. Which input types or controls would you choose?
+* A user enters a URL without a valid scheme. How would you validate the value?
+* A form accepts an uploaded file with a misleading extension. How would you prevent unsafe files from being processed?
+* A developer uses input type="number" for a postal code. What problems can occur, and what is a better choice?
+* A user must enter a four-digit verification code, including possible leading zeros. Which input type and attributes would you choose?
+* A form should show native validation messages except when a specific submit button is used. How would you configure it?
+* A custom checkbox looks correct but cannot be operated using a keyboard. How would you fix it?
+* You are developing a reusable registration form. How would you select appropriate input types and combine accessibility, validation, and security?

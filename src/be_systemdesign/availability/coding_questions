@@ -1,0 +1,30 @@
+* Write a Java method to calculate availability percentage from total operating time and downtime.
+* Write a Java utility that calculates the maximum permitted downtime for a given monthly availability target.
+* Implement a health-check endpoint in Spring Boot that reports application readiness.
+* Implement separate liveness and readiness probes for a Spring Boot application.
+* Write a Java method that retries a failed operation with a configurable maximum attempt count.
+* Implement exponential backoff with jitter for retrying transient failures.
+* Implement a circuit breaker in Java that opens after a configurable number of consecutive failures.
+* Write a Java example that uses Resilience4j to configure a circuit breaker and fallback method.
+* Implement a timeout for an external HTTP call using Spring WebClient.
+* Write a Java example that combines timeout, retry, and circuit breaker behavior for a downstream API.
+* Implement a fallback response when an optional downstream service becomes unavailable.
+* Write a Java example that uses a semaphore to limit concurrent calls to a dependency.
+* Implement a simple bulkhead mechanism that isolates requests to two independent services.
+* Write a Java method that rejects excess requests when a service reaches its capacity limit.
+* Implement a token-bucket rate limiter to protect a service during traffic spikes.
+* Write a Spring Boot example that exposes readiness and liveness health indicators.
+* Implement a graceful shutdown mechanism that stops accepting new requests and completes in-flight requests.
+* Write a Java program that simulates failures across multiple service instances and selects a healthy instance.
+* Implement a simple failover strategy that switches from a primary endpoint to a secondary endpoint.
+* Write a Java example that detects an unhealthy service using periodic heartbeat checks.
+* Implement a retry-safe order submission API using an idempotency key.
+* Write a Java example that handles duplicate message delivery without processing a business event twice.
+* Implement a health-check aggregator that reports overall status from multiple dependent services.
+* Write a Spring Boot integration test that verifies a fallback response when a downstream service returns HTTP 503.
+* Create a test that verifies a circuit breaker opens after repeated failures and recovers after the configured wait period.
+* Write an integration test that simulates a database outage and verifies the application's error-handling behavior.
+* Implement a Java component that rejects low-priority requests when system resource usage exceeds a configured threshold.
+* Write a test that verifies graceful shutdown while requests are still being processed.
+* Implement a simple availability calculator for a service with multiple independent redundant instances.
+* Design a Spring Boot microservice example demonstrating health checks, timeouts, retries, circuit breakers, graceful degradation, and automated failure-recovery tests.

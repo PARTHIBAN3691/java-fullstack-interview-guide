@@ -1,0 +1,30 @@
+* Explain how Kubernetes Namespaces provide logical isolation without providing complete infrastructure isolation.
+* How would you design multi-tenant isolation for multiple development teams sharing one Kubernetes cluster?
+* What are the security limitations of using Namespaces as the only tenant isolation mechanism?
+* How would you combine Namespaces, RBAC, NetworkPolicies, ResourceQuotas, and admission policies for secure multi-tenancy?
+* How would you design separate Namespace strategies for microservices, shared infrastructure, and platform services?
+* What are the trade-offs between using separate Namespaces and separate Kubernetes clusters for production isolation?
+* How does Kubernetes resolve Service DNS names across Namespaces?
+* How would you troubleshoot cross-Namespace communication failures involving DNS, Services, and NetworkPolicies?
+* How would you prevent accidental access to production workloads from development Namespaces?
+* How would you enforce mandatory labels, resource limits, and security contexts for every Namespace?
+* How would you implement least-privilege RBAC for teams managing their own Namespaces?
+* How can ClusterRole and RoleBinding be combined to reuse permissions while limiting access scope?
+* How would you prevent a tenant from exhausting shared cluster resources through excessive Pod creation?
+* How do ResourceQuota and LimitRange complement each other?
+* How would you design quotas for CPU, memory, Pods, Services, and PersistentVolumeClaims across multiple teams?
+* What happens when a Namespace quota is reduced below the resources currently consumed?
+* How would you manage quota allocation when multiple applications in one Namespace scale independently?
+* How do NetworkPolicies behave when multiple policies select the same Pod?
+* How would you design default-deny ingress and egress policies for a production Namespace?
+* How would you allow DNS, monitoring, and approved service communication while blocking unnecessary cross-Namespace traffic?
+* How would you manage environment-specific Secrets without allowing unauthorized cross-environment access?
+* How would you prevent namespace deletion from accidentally disrupting critical production services?
+* What Kubernetes resources can prevent a Namespace from being deleted cleanly?
+* How would you investigate finalizers that keep a Namespace in the Terminating state?
+* How would you safely migrate workloads from one Namespace to another?
+* What challenges arise when migrating Services, Secrets, ConfigMaps, and PersistentVolumeClaims between Namespaces?
+* How would you organize Helm Releases and GitOps applications across multiple Namespaces?
+* How would you implement policy-as-code for Namespace creation and workload admission?
+* How would you monitor resource consumption and security violations across hundreds of Namespaces?
+* How would you design a scalable Namespace provisioning platform with automated RBAC, quotas, network policies, and lifecycle management?

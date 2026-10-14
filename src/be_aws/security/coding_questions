@@ -1,0 +1,21 @@
+
+* Write a Java program using AWS SDK v2 to retrieve an AWS secret without hardcoding credentials.
+* Implement a Java service that assumes an IAM role using AWS Security Token Service (STS).
+* Write a Java method that encrypts sensitive data using AWS KMS and returns the ciphertext.
+* Implement a Java method that decrypts KMS-encrypted data while handling authorization and service exceptions safely.
+* Write a Java program that uploads a file to S3 using server-side encryption with AWS KMS.
+* Implement a Spring Boot REST endpoint secured with Spring Security and JWT authentication.
+* Write a Spring Security authorization rule that restricts an endpoint to users with a specific role.
+* Implement method-level authorization using `@PreAuthorize` in a Spring Boot application.
+* Write a Java validation method that prevents SQL injection by using parameterized queries rather than dynamic SQL concatenation.
+* Implement a secure password-storage service using a suitable adaptive password-hashing algorithm rather than reversible encryption.
+* Write a Java utility that masks passwords, access tokens, and other sensitive fields before logging.
+* Implement an AWS SDK v2 client configuration that uses the default credentials provider chain and secure HTTPS connections.
+* Write a Java method that validates JWT signature, issuer, audience, and expiration before accepting a token.
+* Implement a Spring Boot exception handler that returns safe error responses without exposing stack traces or sensitive details.
+* Write unit tests for an authorization service that prevents users from accessing resources owned by other tenants.
+* Implement a Java service that retrieves secrets from AWS Secrets Manager and refreshes its cache safely after rotation.
+* Write a Java integration test that verifies an application rejects requests without valid authentication and authorization.
+* Implement a secure file-upload endpoint with file-size limits, content-type validation, and protection against path traversal.
+* Write a Java method that retries transient AWS service failures with bounded exponential backoff without retrying authorization failures indefinitely.
+* Design and implement a secure Spring Boot microservice integrating IAM-based AWS access, Secrets Manager, KMS encryption, centralized auditing, and role-based authorization.

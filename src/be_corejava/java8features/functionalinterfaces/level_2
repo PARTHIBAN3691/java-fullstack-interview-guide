@@ -1,0 +1,25 @@
+* Explain the concept of a Single Abstract Method (SAM) type and how Java identifies a functional interface.
+* How does the compiler determine whether an interface qualifies as a functional interface when it inherits methods from multiple interfaces?
+* Can an interface that inherits multiple abstract method declarations still be a functional interface? Explain with examples.
+* How does the compiler handle inherited abstract methods with compatible and incompatible return types in a functional interface?
+* What happens if a functional interface declares an abstract method that overrides a public method from the `Object` class?
+* Explain how lambda expressions are represented and executed by the JVM at a high level.
+* What role does `invokedynamic` play in the implementation of lambda expressions?
+* How do lambda expressions differ from anonymous inner classes in terms of `this` and variable scope?
+* Why do lambda expressions capture only final or effectively final local variables?
+* How does type inference work for generic functional interfaces?
+* How would you design a generic functional interface that accepts one type and returns another?
+* How do wildcards and variance affect the use of functional interfaces as method parameters?
+* Explain the difference between a method reference and a lambda expression, including cases where a method reference cannot be used.
+* What is the difference between a bound instance method reference and an unbound instance method reference?
+* How do constructor references work with functional interfaces?
+* How can checked exceptions be handled when using functional interfaces in Stream pipelines?
+* How would you design a custom functional interface that supports operations throwing checked exceptions?
+* How do you adapt a method that throws a checked exception to a standard Java functional interface?
+* What are the performance considerations of using lambda expressions compared with anonymous inner classes?
+* How do primitive-specialized functional interfaces help reduce allocation and boxing overhead?
+* How would you implement function composition for multiple transformations using `Function`?
+* How can functional interfaces be used to implement the Strategy design pattern?
+* How can functional interfaces be used to implement callback-based processing?
+* How would you design a reusable validation framework using `Predicate` and `Function`?
+* What are the limitations of functional interfaces when designing complex workflows or operations with side effects?

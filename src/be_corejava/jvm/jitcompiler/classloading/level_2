@@ -1,0 +1,33 @@
+
+* Explain how the JVM loads, verifies, prepares, resolves, and initializes a class.
+* How does the JVM ensure that a class is loaded only once per defining ClassLoader?
+* Can the same class be loaded more than once by different ClassLoaders?
+* How does class identity depend on both the fully qualified class name and its defining ClassLoader?
+* Why can two classes with the same fully qualified name be incompatible at runtime?
+* How can class-loader isolation cause a `ClassCastException`?
+* How does the JVM handle circular dependencies during class initialization?
+* What happens when a static initializer throws an exception?
+* How does the JVM behave when a class fails during initialization and is accessed again?
+* How do symbolic references get resolved into direct references by the JVM?
+* Is class resolution always performed eagerly, or can it happen lazily?
+* How does the JVM verify bytecode before execution?
+* What are the security implications of custom ClassLoaders?
+* How would you design a child-first ClassLoader for an isolated plugin system?
+* What risks arise when a custom ClassLoader loads duplicate versions of shared API classes?
+* How do class loaders contribute to application isolation in application servers?
+* How can ClassLoader leaks prevent garbage collection of classes and their associated metadata?
+* What is the relationship between class unloading, ClassLoader reachability, and Metaspace?
+* Why can a long-lived thread context ClassLoader cause memory leaks?
+* How would you troubleshoot a Metaspace out-of-memory error caused by class-loader leaks?
+* How does HotSpot decide which methods should be compiled by the JIT compiler?
+* How do invocation counters and back-edge counters contribute to compilation decisions?
+* How does tiered compilation combine interpreted execution and multiple compilation levels?
+* How does method inlining depend on profiling information and runtime assumptions?
+* What is speculative optimization in JIT compilation?
+* How does deoptimization restore execution when a JIT optimization assumption becomes invalid?
+* What is on-stack replacement (OSR), and why is it useful for long-running loops?
+* How can escape analysis enable scalar replacement and lock elimination?
+* What is the difference between JIT compilation and ahead-of-time compilation?
+* How does the JVM code cache affect compilation and runtime performance?
+* How would you diagnose a JVM that reports that the code cache is full?
+* Why can microbenchmarks produce misleading results when JIT compilation and warm-up are ignored?

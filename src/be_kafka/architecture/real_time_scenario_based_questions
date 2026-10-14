@@ -1,0 +1,30 @@
+* A Kafka broker fails during peak traffic, and producers begin reporting errors. How would you investigate and restore normal processing?
+* A topic has a replication factor of three, but some partitions become under-replicated. How would you diagnose the cause?
+* A production topic becomes unavailable after its leader broker fails. How would you investigate leader election and replica health?
+* A consumer group experiences frequent rebalances, causing processing delays. How would you identify the root cause?
+* Consumer lag increases continuously even though all consumers appear healthy. How would you investigate throughput bottlenecks?
+* A high-volume customer generates most of the events for one partition. How would you address partition skew?
+* A business workflow requires all events for an order to be processed in sequence. How would you design the topic and partition key?
+* A new consumer deployment causes duplicate payment-processing events. How would you identify and prevent duplicate business operations?
+* A producer receives successful acknowledgments, but downstream consumers cannot find expected events. How would you investigate the message flow?
+* A Kafka cluster runs out of disk space because messages are retained longer than expected. How would you recover and prevent recurrence?
+* A consumer is several hours behind, and the topic retention period is approaching. How would you prioritize recovery?
+* A broker replacement causes unexpected network and replication traffic. How would you minimize the impact on production?
+* A topic has too few partitions to support the required consumer parallelism. How would you increase capacity while preserving ordering requirements?
+* A team increases partition count, but related business events begin appearing out of order. How would you investigate and redesign the partitioning strategy?
+* A Kafka cluster spans multiple availability zones, but a zone outage affects application availability. How would you validate and improve resilience?
+* A regional outage requires switching producers and consumers to a disaster-recovery cluster. How would you minimize data loss and duplicate processing?
+* A schema change deployed by one producer breaks several downstream consumers. How would you improve schema governance and deployment safety?
+* One consumer processes messages much more slowly than others in the same group. How would you identify whether the issue is partition assignment, application logic, or resource contention?
+* A producer experiences intermittent timeouts while brokers report high request latency. How would you investigate network, disk, and broker load?
+* A consumer commits offsets before successfully updating the database. How would you redesign the processing flow to avoid message loss?
+* A consumer updates the database successfully but crashes before committing its offset. How would you prevent duplicate business effects after restart?
+* A payment system requires reliable event delivery and recovery after application crashes. How would you design its Kafka processing architecture?
+* A single team consumes excessive cluster resources and affects other applications. How would you implement quotas and workload isolation?
+* An audit topic must retain events for a long period while a separate topic must preserve only the latest value per key. How would you configure both?
+* A production team needs to replay six months of events without disrupting current consumers. How would you design the replay process?
+* A Kafka cluster migration must happen without interrupting business-critical consumers. How would you plan the migration and validate data consistency?
+* A security review finds that multiple applications can read and write every topic. How would you introduce least-privilege access controls?
+* A deployment introduces a new consumer group that unexpectedly doubles downstream database traffic. How would you control the impact?
+* A Kafka controller issue causes cluster metadata operations to fail. How would you investigate controller health and recovery?
+* Kafka infrastructure costs rise sharply after traffic growth. How would you optimize partitions, retention, replication, and resource utilization?

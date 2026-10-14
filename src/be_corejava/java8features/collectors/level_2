@@ -1,0 +1,25 @@
+* Explain the generic type parameters of the `Collector<T, A, R>` interface.
+* What are the roles of the `supplier()`, `accumulator()`, `combiner()`, `finisher()`, and `characteristics()` methods in a Collector?
+* What is the difference between a Collector's accumulation type and result type?
+* What are the characteristics `CONCURRENT`, `UNORDERED`, and `IDENTITY_FINISH`?
+* How does the Stream API use the combiner function in a parallel stream?
+* What problems can arise when a custom Collector is not associative?
+* How would you implement a custom Collector to calculate the median of a collection of numbers?
+* How would you implement a custom Collector to collect unique elements while preserving insertion order?
+* How do you use a custom map supplier with `Collectors.groupingBy()`?
+* What is the difference between `groupingBy()` and `groupingByConcurrent()`?
+* When would you use `groupingByConcurrent()` with a parallel Stream?
+* What concurrency considerations apply when collecting into a shared mutable result container?
+* How does `Collectors.toConcurrentMap()` differ from `Collectors.toMap()`?
+* How do you provide a custom merge function to `Collectors.toConcurrentMap()`?
+* How can nested `groupingBy()` collectors be used to group employees by department and then by designation?
+* How do you calculate multiple statistics for each department using downstream collectors?
+* How would you combine `groupingBy()`, `mapping()`, and `collectingAndThen()` in a single collector pipeline?
+* How do you find the second-highest salary in each department using collectors?
+* How do you find the top three highest-paid employees in each department?
+* How do you group employees by department and return only the names of employees earning above a threshold?
+* How do you produce a map of department names to distinct employee skill sets?
+* How do you collect a Stream into an immutable result while preserving the required ordering?
+* What are the limitations of `Collectors.teeing()`?
+* How does `Collectors.teeing()` combine the results of two downstream collectors?
+* How would you design a custom Collector that validates input while accumulating results?

@@ -1,0 +1,30 @@
+* Explain the architecture of a horizontally sharded database system, including routing, metadata, and shard nodes.
+* How do you choose a shard key that minimizes data skew and cross-shard queries?
+* How do cardinality and access patterns influence shard-key selection?
+* How do you prevent hot shards when a small number of customers generate most of the traffic?
+* How do range-based and hash-based sharding compare for write-heavy workloads?
+* How does consistent hashing reduce data movement when shard nodes are added or removed?
+* How would you design automatic shard rebalancing for a rapidly growing application?
+* How do you migrate data between shards while maintaining read and write availability?
+* How do you handle concurrent writes during shard migration?
+* How do you maintain consistency when a transaction spans multiple shards?
+* How do two-phase commit and the saga pattern differ for cross-shard business operations?
+* How do distributed transactions affect latency, availability, and failure recovery?
+* How do you implement global uniqueness when unique values are generated independently on each shard?
+* How do you design globally ordered IDs without introducing a centralized bottleneck?
+* How do you execute efficient global pagination and sorting across multiple shards?
+* How do you optimize aggregate queries across thousands of shards?
+* How do you handle joins between entities that are distributed across different shards?
+* How do you design a data model that minimizes cross-shard joins?
+* How do you implement tenant isolation while distributing tenants across shards?
+* How do you handle a large tenant that outgrows its assigned shard?
+* How do you design a shard directory that remains available during node failures?
+* How do you prevent stale shard metadata from routing writes to the wrong database?
+* How do you handle shard failover without violating data consistency?
+* How do replication and sharding work together in a highly available database architecture?
+* How do you handle schema evolution when different shards are temporarily running different schema versions?
+* How do you implement idempotent writes and retries when a shard request times out after the transaction may have committed?
+* How do you detect and resolve uneven data distribution across shards?
+* How do you design backup and restore procedures for individual shards and the complete cluster?
+* How do you perform cross-shard analytics without overwhelming transactional databases?
+* How would you design a fault-tolerant sharding architecture for a high-throughput Java and Spring Boot application?

@@ -1,0 +1,30 @@
+* A website looks correct on desktop but overflows horizontally on mobile. How would you debug the media queries?
+* A navigation bar must display horizontally on desktop and vertically on mobile. How would you implement it?
+* A dashboard displays four cards per row on desktop but one card per row on mobile. How would you configure the breakpoints?
+* A responsive layout breaks on tablet-sized screens. How would you determine the appropriate breakpoint?
+* A team uses separate media queries for every device model. How would you improve the approach?
+* A mobile menu should be hidden on desktop and displayed on smaller screens. How would you implement it?
+* A website must support portrait and landscape orientations. Which media features would you use?
+* A user reports that the layout changes unexpectedly when browser zoom is increased. How would you investigate it?
+* A page has very large text on mobile devices. How would you adjust typography responsively?
+* A product grid must show two columns on tablets and four columns on desktops. How would you implement it?
+* A sidebar must be visible on desktop but move above the main content on mobile. How would you design the layout?
+* A website should automatically use dark mode based on operating system preferences. How would you implement it?
+* A user manually selects dark mode, but the operating system is set to light mode. How would you handle the theme preference?
+* An application contains animations that may affect users sensitive to motion. How would you use prefers-reduced-motion?
+* A button has hover effects that do not work on some touch devices. How would you adapt the styles?
+* A responsive form has two columns on desktop but one column on mobile. How would you implement the layout?
+* A page prints with navigation menus and unnecessary backgrounds. How would you optimize the print stylesheet?
+* A website looks blurry on high-density displays. Which resolution-related media features might help?
+* A responsive image gallery displays too many columns on small screens. How would you fix the layout?
+* A component needs different styles depending on its own width rather than the entire viewport. Would media queries be sufficient?
+* A reusable card component behaves differently depending on the parent container size. How would you approach the responsive design?
+* Multiple stylesheets define overlapping breakpoints, causing inconsistent layouts. How would you resolve the conflicts?
+* A sticky header overlaps content only on mobile screens. How would you investigate and fix the issue?
+* A responsive layout works in Chrome but fails in another browser. How would you troubleshoot the problem?
+* A page must remain readable on ultra-wide monitors. How would you constrain its content width?
+* A mobile application embedded in a webview uses unexpected breakpoints. What would you inspect?
+* A team wants to define shared breakpoints across multiple frontend projects. How would you organize them?
+* A responsive page flashes between layouts during resizing. How would you investigate the cause?
+* A layout change at a breakpoint causes keyboard focus to move to hidden content. How would you address the accessibility issue?
+* A production release introduces a layout regression on tablets. How would you isolate the responsible media query?

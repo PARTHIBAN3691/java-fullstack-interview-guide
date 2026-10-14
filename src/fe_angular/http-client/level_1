@@ -1,0 +1,30 @@
+* How do you create an Angular service to centralize HTTP requests?
+* Why should HTTP logic generally be placed in services instead of components?
+* How do you define TypeScript interfaces for API request and response objects?
+* How do you use generics with HttpClient methods?
+* What is the difference between HttpClient.get<User>() and HttpClient.get<any>()?
+* How do you send a request body along with a POST request?
+* How do you pass multiple query parameters to an API?
+* How do you append values to an existing HttpParams object?
+* How do you add authorization headers to an HTTP request?
+* How do you handle HTTP status codes such as 400, 401, 403, and 500?
+* How do you use catchError() with HttpClient?
+* What is the difference between catchError() and the error callback in subscribe()?
+* How do you transform an API response using map()?
+* How do you chain multiple HTTP requests using RxJS operators?
+* What is the difference between switchMap(), mergeMap(), and concatMap() for HTTP requests?
+* How do you cancel an ongoing HTTP request when a component is destroyed?
+* How do you use takeUntilDestroyed() with HttpClient?
+* How do you display a loading indicator while an HTTP request is in progress?
+* How do you handle empty API responses?
+* How do you configure request timeouts?
+* How do you retry a failed HTTP request using RxJS?
+* What are HTTP interceptors in Angular?
+* How do you configure functional HTTP interceptors?
+* How do you add a common authorization token using an interceptor?
+* How do you log HTTP requests and responses using an interceptor?
+* How do you configure credentials for cross-origin HTTP requests?
+* What is CORS, and how does it affect Angular HttpClient requests?
+* How do you send FormData for file uploads?
+* How do you track upload and download progress?
+* How do you write unit tests for services that use HttpClient?

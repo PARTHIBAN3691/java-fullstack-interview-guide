@@ -1,0 +1,21 @@
+
+* Explain how to integrate Azure Blob Storage with a Java Spring Boot application using the Azure Storage SDK.
+* How do you upload a file to Azure Blob Storage using `BlobClient`?
+* How do you download a blob and save it to a local file using Java?
+* How do you upload a large file using streams rather than loading the entire file into memory?
+* How do you list all blobs inside a container using the Azure Storage SDK for Java?
+* How do you delete a blob and handle the case where the blob does not exist?
+* How do you configure Azure Blob Storage connection details using Spring Boot application properties?
+* How can a Java application authenticate to Blob Storage using Microsoft Entra ID?
+* How do you configure managed identity for a Java application running on Azure App Service?
+* What is the difference between account keys, SAS tokens, and Microsoft Entra ID authentication?
+* How do you generate a user delegation SAS token using Java?
+* How do you set blob metadata and HTTP content headers during upload?
+* How do you implement pagination when listing a large number of blobs?
+* How do you upload files concurrently while controlling memory usage and network connections?
+* What is blob versioning, and how can it help recover accidentally overwritten data?
+* What is a blob lease, and how can it be used to control concurrent access?
+* How do you configure lifecycle management policies to move or delete blobs automatically?
+* How do you configure soft delete and container soft delete?
+* How do you monitor Blob Storage operations using Azure Monitor and diagnostic logs?
+* How do you write unit tests and integration tests for a Java service that uses Azure Blob Storage?

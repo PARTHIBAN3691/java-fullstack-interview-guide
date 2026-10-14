@@ -1,0 +1,30 @@
+* Explain the internal architecture of Angular reactive forms and how controls propagate value and status changes.
+* How does Angular calculate the validity of a nested FormGroup?
+* How does validation propagate from child controls to parent groups?
+* How do you build a reusable custom form control using ControlValueAccessor?
+* What are the responsibilities of writeValue(), registerOnChange(), registerOnTouched(), and setDisabledState()?
+* How do you integrate a custom form control with reactive forms and ngModel?
+* How do you prevent infinite update loops in a custom ControlValueAccessor implementation?
+* How do you implement a reusable form component that supports validation and accessibility?
+* How do you build cross-field validators that work with nested FormGroups?
+* How do you implement asynchronous validation with debouncing and cancellation?
+* How do you prevent stale asynchronous validation responses from overwriting newer results?
+* How do updateOn: 'change', updateOn: 'blur', and updateOn: 'submit' differ?
+* How do you optimize form performance when a form contains hundreds of controls?
+* How do you handle large dynamic forms generated from server-provided metadata?
+* How do typed reactive forms improve type safety in Angular?
+* What is the difference between FormGroup and FormRecord in typed reactive forms?
+* How do you model optional controls and nullable values in typed forms?
+* What is the difference between form.value and getRawValue()?
+* Why are disabled controls generally excluded from a form's aggregate value?
+* How do you implement conditional validation based on other control values?
+* How do you manage subscriptions to multiple form controls without memory leaks?
+* How do you preserve form state when navigating between routes?
+* How would you implement autosave using valueChanges and RxJS operators?
+* How do you handle server-side validation errors and map them to individual form controls?
+* How do you design a form that supports both create and edit modes?
+* How do you implement a multi-step form with validation at each step?
+* How do you handle dynamic addition, removal, and reordering of FormArray controls?
+* How do you test custom validators, asynchronous validators, and ControlValueAccessor implementations?
+* How do you improve accessibility in complex forms with dynamic validation messages?
+* How do you design a scalable form architecture for a large enterprise Angular application?

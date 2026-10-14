@@ -1,0 +1,21 @@
+
+* A Spring Boot application works locally but exits immediately when deployed to ECS. How would you investigate the container logs, entry point, environment variables, and task configuration?
+* An ECS service keeps launching replacement tasks because containers exit unexpectedly. How would you identify the root cause?
+* Your ECS service has healthy running tasks, but users receive HTTP 503 errors from the Application Load Balancer. How would you troubleshoot the issue?
+* After deploying a new Docker image, ECS tasks fail their health checks. How would you roll back safely and identify the problem?
+* An ECS service cannot pull a private image from ECR. What IAM, networking, and repository configuration would you check?
+* Fargate tasks fail to start because of insufficient CPU or memory configuration. How would you diagnose and resolve the issue?
+* A Java container is repeatedly killed because it exceeds its memory limit. How would you analyze heap usage, container memory, and garbage collection?
+* Your application needs to connect to RDS, but ECS tasks time out when opening database connections. How would you troubleshoot security groups, routes, DNS, and database capacity?
+* A task can access the internet in one environment but not another. How would you compare subnet configuration, public IP assignment, NAT gateways, and route tables?
+* An ECS service experiences a sudden traffic spike and cannot scale quickly enough. How would you configure scaling policies and capacity planning?
+* A deployment introduces intermittent errors because old and new application versions run simultaneously. How would you manage backward-compatible APIs and database schema changes?
+* Your Java application needs AWS credentials to publish messages to SQS. How would you configure task roles without embedding access keys in the container?
+* ECS tasks are running, but application logs are missing from CloudWatch. How would you investigate the logging driver, log group, IAM permissions, and task definition?
+* A container takes several minutes to become healthy after deployment. How would you optimize startup time and configure health-check grace periods?
+* An ECS task receives termination signals during a deployment while processing a payment request. How would you implement graceful shutdown and idempotent processing?
+* Your ECS service runs across multiple Availability Zones, but most requests reach tasks in one zone. How would you investigate load balancing and service placement?
+* The monthly cost of a Fargate-based microservices platform has increased substantially. How would you evaluate task sizing, autoscaling, architecture, and compute pricing options?
+* A security audit finds that an ECS application has excessive AWS permissions. How would you separate the task execution role from the application task role and apply least privilege?
+* Your team needs to deploy the same application to development, staging, and production with different configurations. How would you manage task definitions, secrets, networking, and release promotion?
+* A new ECS deployment becomes unhealthy and the deployment circuit breaker triggers a rollback. How would you investigate the failure and prevent recurrence?

@@ -1,0 +1,21 @@
+
+* What is the difference between default serialization and custom serialization?
+* How do you implement custom serialization using `writeObject()` and `readObject()`?
+* Why must custom `writeObject()` and `readObject()` methods typically be declared `private`?
+* What is the difference between `Serializable` and `Externalizable`?
+* How does the `Externalizable` interface work?
+* Why does `Externalizable` require a public no-argument constructor?
+* What happens when a serializable class extends a non-serializable superclass?
+* How are superclass fields handled during deserialization when the superclass is not serializable?
+* What happens when a serializable class contains a non-serializable field?
+* How can you serialize an object graph containing multiple related objects?
+* How does Java serialization handle cyclic references between objects?
+* What is the purpose of `ObjectOutputStream.reset()`?
+* What is the difference between `writeObject()` and `writeUnshared()`?
+* What is the difference between `readObject()` and `readUnshared()`?
+* What is the purpose of the `readResolve()` method?
+* What is the purpose of the `writeReplace()` method?
+* How can serialization affect the Singleton design pattern?
+* What happens to transient fields when an object is deserialized?
+* How can you validate an object after deserialization using `ObjectInputValidation`?
+* How do you handle compatibility when a serializable class changes between application versions?

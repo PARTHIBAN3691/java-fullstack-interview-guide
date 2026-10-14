@@ -1,0 +1,30 @@
+* Design a multi-account cloud network architecture that supports centralized inspection, shared services, isolated workloads, and connectivity to on-premises systems.
+* How would you choose between VPC peering, AWS Transit Gateway, and a third-party network hub for a large enterprise?
+* How would you design a multi-region VPC/VNet architecture with non-overlapping CIDR ranges and controlled inter-region communication?
+* How would you migrate a large cloud network from a flat architecture to segmented application, data, and management zones without extended downtime?
+* How would you design route-table associations and propagation to prevent unintended traffic paths in a hub-and-spoke topology?
+* How would you troubleshoot asymmetric routing caused by stateful firewalls, multiple gateways, and different return paths?
+* How would you design centralized outbound internet access for private workloads while preserving workload isolation and auditability?
+* How would you prevent NAT Gateway exhaustion or ephemeral-port exhaustion for applications making large numbers of outbound connections?
+* How would you determine whether intermittent connectivity is caused by MTU mismatch, packet fragmentation, routing, or firewall behavior?
+* How would you design layered network controls using Security Groups, Network ACLs, cloud firewalls, and application-level authorization?
+* How would you implement least-privilege network rules for a microservices platform with hundreds of dynamically deployed services?
+* How would you design load balancing across availability zones and regions while handling session affinity, health checks, and graceful failover?
+* How would you design a reverse-proxy tier that supports TLS termination, request routing, rate limiting, and protection of backend services?
+* How would you troubleshoot DNS failures involving private hosted zones, conditional forwarding, resolver endpoints, and on-premises DNS servers?
+* How would you design split-horizon DNS for applications that must resolve differently inside and outside the corporate network?
+* How would you implement reliable service discovery when services scale dynamically and instances frequently change addresses?
+* How would you design redundant Direct Connect or ExpressRoute connectivity with VPN backup and predictable routing convergence?
+* How would you troubleshoot BGP route advertisements, route filters, asymmetric paths, and failover across dedicated network links?
+* How would you provide private access to cloud-managed services without allowing traffic through public endpoints?
+* How would you design private endpoint DNS resolution across multiple VPCs/VNets and on-premises networks?
+* How would you control transitive connectivity when multiple VPCs are connected through a Transit Gateway?
+* How would you design centralized egress inspection while avoiding unnecessary cross-zone data transfer costs and single points of failure?
+* How would you resolve overlapping IP ranges after two organizations with existing cloud networks merge?
+* How would you design network segmentation for workloads with different regulatory, data-sensitivity, and administrative requirements?
+* How would you implement Zero Trust networking for workloads running across cloud, on-premises, and Kubernetes environments?
+* How would you prevent lateral movement if an attacker compromises a virtual machine inside a private subnet?
+* How would you design network policy enforcement for Kubernetes pods across namespaces and clusters?
+* How would you investigate intermittent packet loss that occurs only between specific subnets or availability zones?
+* How would you build network observability using flow logs, DNS query logs, packet captures, metrics, and distributed tracing?
+* How would you design a secure, scalable network architecture that balances availability, latency, isolation, operational complexity, and cost?

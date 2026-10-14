@@ -1,0 +1,119 @@
+
+**Enterprise CI/CD Architecture**
+* An enterprise has 800 repositories using different pipeline implementations, duplicated scripts, and inconsistent security checks. How would you define a target architecture and migrate teams incrementally?
+* A shared CI/CD control plane becomes unavailable during a critical production incident. How would you preserve deployment safety and enable recovery?
+* A pipeline succeeds in testing but deploys a different artifact to production because the build is repeated during promotion. How would you correct the release architecture?
+* A malicious pull request modifies a pipeline definition to expose production credentials. How would you contain the incident and redesign pipeline trust boundaries?
+* Pipeline queue times increase from minutes to hours after the organization doubles its deployment volume. How would you diagnose capacity constraints and redesign scheduling?
+
+**Centralized vs Decentralized DevOps**
+* The central DevOps team requires approval for every deployment, delaying releases across 50 teams. How would you redesign ownership and approvals while retaining appropriate risk controls?
+* Application teams independently create security and deployment scripts, leading to inconsistent outcomes. How would you introduce shared capabilities without removing team autonomy?
+* A platform team owns a shared deployment service but application teams blame one another during outages. How would you establish service ownership and incident responsibilities?
+* Security mandates a common pipeline template, while several teams require specialized release processes. How would you establish common guardrails and controlled extensions?
+* A central platform team becomes overwhelmed by support requests. How would you reduce ticket-driven work and distribute ownership sustainably?
+
+**Shared CI/CD Platforms**
+* One team's resource-intensive builds consume all shared runners, delaying other teams' production releases. How would you implement workload isolation and fair scheduling?
+* A new version of a shared pipeline library causes failures across hundreds of repositories. How would you contain the impact and improve release management?
+* A compromised self-hosted runner accesses credentials belonging to another team. How would you investigate the breach and redesign runner isolation?
+* A shared pipeline platform experiences a regional outage while production deployments are in progress. How would you recover safely and prevent inconsistent release state?
+* Platform usage grows rapidly, but pipeline reliability declines. How would you define service-level objectives and identify the platform's main failure domains?
+
+**Multi-Team Pipelines**
+* A release requires changes to six microservices owned by different teams, and one team cannot meet the release deadline. How would you coordinate compatibility and deployment order?
+* Two teams deploy incompatible versions of a shared API, causing production errors. How would you prevent similar conflicts and establish release contracts?
+* A pipeline partially deploys a distributed application and then loses connectivity to the deployment target. How would you determine the actual state and resume safely?
+* A shared library update breaks several consumer pipelines, but some teams cannot upgrade immediately. How would you manage compatibility and deprecation?
+* A production release depends on approvals from several business units across time zones. How would you reduce waiting time while preserving accountability?
+
+**Multi-Account Cloud Strategy**
+* A newly acquired business unit has hundreds of cloud resources without centralized logging, ownership tags, or organization-wide policies. How would you bring it under governance?
+* A CI/CD pipeline can deploy into the wrong production account because it uses a broad cloud role. How would you enforce account and environment boundaries?
+* A compromised application account attempts to access centralized security resources. How would you contain lateral movement and redesign cross-account trust?
+* Several teams create their own networking and logging infrastructure, increasing costs and policy inconsistency. How would you centralize shared services without creating excessive dependencies?
+* An account-level policy blocks an emergency production change. How would you resolve the incident and introduce a controlled exception process?
+
+**Multi-Region Deployments**
+* A release succeeds in one region but fails in another because of regional configuration differences. How would you isolate the problem and prevent repeated failures?
+* A canary rollout shows elevated latency in one region while other regions remain healthy. How would you stop or reverse the affected rollout without disrupting healthy regions?
+* A regional outage occurs while the deployment pipeline is updating another region. How would you prioritize failover, halt unsafe changes, and restore a known-good state?
+* A database schema change is deployed in one region before another region's application is updated. How would you handle compatibility and recovery?
+* The organization wants active-active deployments, but regional data replication is delayed. How would you validate release safety and failover behavior?
+
+**Multi-Cluster Kubernetes**
+* A policy change causes workload failures across 40 Kubernetes clusters. How would you contain the rollout, restore service, and improve staged policy deployment?
+* A central GitOps controller is unavailable, but existing workloads continue running. How would you maintain safe operations and recover deployment reconciliation?
+* Two GitOps controllers manage overlapping resources in the same cluster, causing continuous configuration changes. How would you identify ownership conflicts and prevent recurrence?
+* Cluster versions drift across regions, and an application upgrade fails only on older clusters. How would you coordinate fleet upgrades and compatibility checks?
+* A multi-cluster rollout succeeds in most clusters but fails in clusters with different network policies. How would you diagnose configuration drift and establish fleet-wide conformance?
+
+**Enterprise Artifact Management**
+* A critical container image is discovered to contain a vulnerable library after deployment to hundreds of clusters. How would you identify affected workloads, block promotion, and coordinate remediation?
+* An artifact repository is unavailable in one region during a production rollout. How would you preserve deployment availability and ensure artifact integrity?
+* A developer overwrites a supposedly immutable release artifact, making the deployed version difficult to verify. How would you investigate and strengthen repository controls?
+* External dependency downloads make builds unreliable and introduce supply-chain risks. How would you introduce controlled proxying, caching, and dependency verification?
+* A cleanup job deletes artifacts required for production rollback. How would you restore recovery capability and redesign retention policies?
+
+**Enterprise Secrets Management**
+* A production secret is leaked through pipeline logs. How would you revoke and rotate the credential, identify affected systems, and prevent further exposure?
+* Hundreds of applications use a shared database password that must be rotated urgently. How would you coordinate the rotation without causing widespread outages?
+* A secrets manager becomes unavailable during application startup across multiple regions. How would you recover while maintaining confidentiality and least privilege?
+* A compromised pipeline identity accesses secrets outside its intended application scope. How would you investigate the access path and reduce privilege boundaries?
+* An organization uses long-lived cloud credentials across many pipelines. How would you migrate to short-lived workload identity without disrupting releases?
+
+**DevSecOps Governance**
+* A new security scanner flags thousands of existing vulnerabilities and blocks all releases. How would you prioritize findings, establish temporary exceptions, and prevent uncontrolled policy bypass?
+* A zero-day vulnerability affects a common dependency used by hundreds of applications. How would you identify exposure and coordinate risk-based remediation?
+* Teams bypass security scanning by deploying through alternative pipelines. How would you establish consistent enforcement across every production entry point?
+* A security exception remains active after its expiration date because no owner reviewed it. How would you automate exception expiry and enforce follow-up actions?
+* A pipeline reports all security checks as passed, but a deployed artifact contains an unsigned dependency. How would you identify the control gap and verify the entire artifact supply chain?
+
+**Compliance Pipelines**
+* An audit finds that some production deployments lack required approval evidence. How would you reconstruct the release history and close the compliance gap?
+* A compliance policy changes and must be enforced across hundreds of pipelines within a short deadline. How would you stage the rollout and minimize production disruption?
+* An emergency security patch must be deployed before all normal approval steps can complete. How would you use a controlled emergency path and preserve evidence?
+* Infrastructure passes CI compliance checks but drifts into a noncompliant runtime configuration. How would you introduce continuous verification and remediation?
+* A regulated application requires different controls across environments and regions. How would you encode the policies and prove that each deployment meets the correct requirements?
+
+**Auditability**
+* An auditor asks for the complete lineage of a production release, but build records, artifact metadata, and deployment logs are stored in separate systems. How would you correlate the evidence?
+* A privileged administrator deletes pipeline logs after an unauthorized deployment. How would you investigate and design tamper-resistant audit storage?
+* A manual cloud change bypasses CI/CD and causes a production incident. How would you identify the initiating identity, reconstruct the change, and prevent recurrence?
+* A production artifact is running, but its source commit and build provenance cannot be established. How would you contain the risk and strengthen traceability?
+* Audit records from multiple regions use inconsistent timestamps and identity formats. How would you normalize the data and support reliable investigations?
+
+**Platform Engineering**
+* Developers complain that the internal platform requires too many manual tickets and provides little visibility into provisioning failures. How would you redesign the developer experience?
+* A platform upgrade breaks existing application templates and deployment workflows. How would you improve compatibility and staged migration?
+* A new internal developer platform has low adoption because teams prefer their existing toolchains. How would you identify friction and improve adoption?
+* A shared platform service violates its availability target and delays application delivery. How would you improve resilience and communicate service ownership?
+* The platform team builds features that are rarely used while common developer pain points remain unresolved. How would you establish a product discovery and prioritization process?
+
+**Developer Self-Service**
+* Developers can provision cloud resources through a portal, but unowned resources and unexpected spending increase rapidly. How would you add quotas, ownership, lifecycle management, and cost controls?
+* A self-service deployment tool accidentally allows a developer to deploy into the wrong production environment. How would you improve authorization and environment selection?
+* A provisioning workflow creates some resources but fails before completing the environment. How would you make retries safe and expose actionable recovery information?
+* Developers need production diagnostics, but unrestricted access would expose secrets and customer data. How would you design role-based self-service access?
+* A self-service platform experiences a backlog of requests after a control-plane outage. How would you prioritize recovery and prevent duplicate provisioning?
+
+**Golden Paths**
+* A golden-path template becomes outdated and generates applications with vulnerable dependencies. How would you patch the template and migrate existing applications?
+* Teams fork a standard application template because it does not support their deployment requirements. How would you distinguish valid exceptions from unnecessary divergence?
+* A new golden-path version introduces breaking configuration changes across hundreds of repositories. How would you manage adoption and rollback?
+* A compliance audit identifies applications that bypass the approved golden path. How would you detect drift and decide which deviations require remediation?
+* Golden-path adoption increases, but deployment lead time and incident rates do not improve. How would you evaluate whether the templates address real engineering problems?
+
+**Organizational Scalability**
+* An organization grows from 20 to 200 engineering teams, but platform staffing remains unchanged. How would you scale support and reduce centralized dependencies?
+* Two business units use different CI/CD platforms and cloud providers after a merger. How would you define a phased integration strategy?
+* Teams disagree over ownership of shared services during an incident. How would you redesign responsibility boundaries and escalation procedures?
+* Engineering leaders report higher deployment frequency but also more production incidents. How would you determine whether the organization is scaling delivery safely?
+* Platform teams are overloaded with bespoke requirements from every business unit. How would you define supported interfaces and manage exceptions?
+
+**DevOps Governance**
+* Different business units implement incompatible production approval policies, causing inconsistent risk controls. How would you establish a common governance framework?
+* A strict change-control policy delays a critical security fix. How would you balance emergency response, approvals, and auditability?
+* A team bypasses required release controls because the official pipeline is unreliable. How would you fix the platform problem and re-establish policy enforcement?
+* Governance policies are centrally defined but rarely reviewed after cloud services and security requirements change. How would you implement policy lifecycle management?
+* Leadership wants to measure governance success only by the number of compliant pipelines. How would you propose metrics that also reflect risk reduction, reliability, and developer experience?

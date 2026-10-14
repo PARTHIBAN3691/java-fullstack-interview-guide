@@ -1,0 +1,30 @@
+* Create a Spring application that demonstrates constructor-based Dependency Injection.
+* Implement a service interface with two implementations and inject the preferred implementation using @Primary.
+* Implement dependency injection using @Qualifier to select a specific bean.
+* Create a Spring configuration class that registers a third-party Java class as a bean using @Bean.
+* Write a Spring component that demonstrates the singleton bean scope.
+* Create a prototype-scoped bean and demonstrate how instances are created.
+* Implement a lazy-initialized bean using @Lazy.
+* Write a class that demonstrates the bean lifecycle using @PostConstruct and @PreDestroy.
+* Implement a custom BeanPostProcessor that logs bean initialization.
+* Implement a BeanFactoryPostProcessor that modifies a bean definition.
+* Create a Spring bean that implements InitializingBean and DisposableBean.
+* Write a configuration class that controls bean initialization order using @DependsOn.
+* Implement a Spring application that publishes a custom ApplicationEvent.
+* Create an ApplicationListener that handles a custom Spring application event.
+* Implement an event listener using @EventListener.
+* Configure asynchronous event handling using @EnableAsync and @Async.
+* Write a custom FactoryBean that creates and returns a specific Java object.
+* Implement a service that injects a generic repository using type-safe dependency injection.
+* Create two beans with different profiles and activate them using a Spring profile.
+* Implement conditional bean registration using @ConditionalOnProperty.
+* Write a Spring application that demonstrates and resolves a circular dependency.
+* Refactor two mutually dependent service classes to eliminate a circular dependency.
+* Implement a thread-safe singleton service that handles concurrent requests.
+* Write a test using ApplicationContext to verify bean registration and dependency injection.
+* Create a unit test for a service using constructor injection and Mockito.
+* Write an integration test that verifies bean lifecycle callbacks.
+* Implement a bean that uses Environment to read configuration properties.
+* Create a Spring application that reports bean names and their types from the application context.
+* Implement graceful resource cleanup when the Spring application context shuts down.
+* Build a complete Spring Core application demonstrating IoC, Dependency Injection, bean scopes, lifecycle callbacks, custom post-processors, application events, and automated tests.

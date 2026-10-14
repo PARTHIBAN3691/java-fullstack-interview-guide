@@ -1,0 +1,30 @@
+* Explain how error-first callbacks work in Node.js.
+* How do you convert a callback-based function into a Promise-based function?
+* What is the difference between callback nesting and Promise chaining?
+* How does Promise chaining help avoid callback hell?
+* What happens when a then() handler returns a normal value?
+* What happens when a then() handler returns another Promise?
+* How are errors propagated through a Promise chain?
+* What is the difference between catch() and a second argument to then()?
+* How does finally() behave when a Promise is fulfilled or rejected?
+* Does finally() change the resolved value of a Promise?
+* What happens if a finally() handler throws an exception?
+* How do you execute multiple asynchronous operations sequentially using Promises?
+* How do you execute multiple asynchronous operations concurrently using Promise.all()?
+* What happens when one Promise rejects inside Promise.all()?
+* What is the difference between Promise.all() and Promise.allSettled()?
+* What is the difference between Promise.race() and Promise.any()?
+* How do you handle partial failures when multiple Promises run concurrently?
+* How do you implement retry logic using Promises?
+* How do you add a timeout to a Promise-based operation?
+* How do you prevent unhandled Promise rejections?
+* How do you promisify built-in Node.js callback APIs?
+* What is util.promisify() in Node.js?
+* What is the difference between util.promisify() and manually wrapping a callback in a Promise?
+* How do you use fs/promises instead of callback-based file operations?
+* How do you return a Promise from a custom asynchronous function?
+* How do you chain database queries using Promises?
+* How do callbacks behave when they are invoked synchronously instead of asynchronously?
+* How do you test callback-based functions and Promise-based functions?
+* How do you handle errors when combining callbacks and Promises?
+* How do async/await and Promises relate to each other?

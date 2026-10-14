@@ -1,0 +1,30 @@
+* Your Spring Boot application is running in Kubernetes, but Grafana shows no application metrics. How would you troubleshoot the issue?
+* Prometheus is running, but a newly deployed application does not appear among its targets. What would you check?
+* CPU utilization suddenly increases across several Java Pods. How would you identify whether the cause is application processing, garbage collection, or resource throttling?
+* A Spring Boot service experiences intermittent high latency, but average CPU usage remains low. Which metrics and traces would you investigate?
+* A Java container is repeatedly OOMKilled, but Grafana does not show high JVM heap usage. How would you investigate native memory, container limits, and metric collection?
+* Your application returns HTTP 500 errors after deployment, but Kubernetes reports all Pods as Ready. How would you detect the issue through application metrics and logs?
+* Prometheus storage grows unexpectedly and begins consuming excessive disk space. How would you investigate cardinality, retention, and scrape configuration?
+* Grafana dashboards show gaps in metrics during peak traffic. How would you determine whether the problem is scraping, ingestion, storage, or query performance?
+* Alertmanager sends hundreds of duplicate alerts during a node outage. How would you configure grouping, deduplication, and inhibition?
+* Your team receives alerts for brief CPU spikes that do not affect users. How would you redesign alert rules to reduce noise?
+* A Deployment has fewer available replicas than desired, but no alert is triggered. How would you improve monitoring and alert coverage?
+* HPA does not scale a Java application during a traffic spike. How would you investigate metric availability, scaling thresholds, and resource requests?
+* A Spring Boot application has frequent garbage collection pauses and elevated API latency. Which JVM metrics would you examine, and how would you identify the root cause?
+* A database connection pool becomes exhausted, causing API timeouts across multiple Pods. How would you detect and alert on the condition?
+* Users report intermittent failures between microservices, but individual Pods appear healthy. How would you correlate network metrics, application logs, and distributed traces?
+* A Kubernetes node becomes NotReady, and workloads are rescheduled. How would you monitor the event and determine its impact on service availability?
+* A batch Job reports Kubernetes-level success, but the expected number of records was not processed. How would you introduce business-level monitoring?
+* A CronJob stops executing, but the application itself has no errors. Which Kubernetes metrics, events, and alerts would you investigate?
+* Your team needs to monitor thousands of microservices, and Prometheus queries are becoming slow. How would you address cardinality and monitoring architecture?
+* Prometheus restarts frequently after a new release because it exceeds its memory limit. How would you investigate ingestion rate, query load, and resource configuration?
+* The Kubernetes API server becomes slow, affecting deployments and monitoring discovery. Which control-plane metrics would help identify the cause?
+* An alert fires because a Pod restarts, but the restart is caused by a planned rollout. How would you distinguish expected deployment events from abnormal failures?
+* A production incident requires tracing one slow request across multiple Spring Boot services. How would you implement trace propagation and correlate the trace with metrics and logs?
+* Your application exposes Spring Boot Actuator endpoints publicly after a monitoring configuration change. How would you secure the endpoints while preserving metric collection?
+* Monitoring dashboards show inconsistent CPU utilization across tools. How would you investigate differences in metric definitions, sampling intervals, and aggregation?
+* A certificate expires on the Prometheus endpoint, causing scraping failures. How would you detect the issue and prevent recurrence?
+* Your multi-cluster platform needs a unified view of application health. How would you aggregate metrics and alerts while preserving cluster-level context?
+* During a production outage, the monitoring platform is also unavailable. How would you design observability infrastructure to reduce this dependency?
+* A release increases the HTTP error rate, but infrastructure metrics remain normal. How would you detect the regression and connect it to the deployment?
+* Your organization needs SLO-based alerts for a payment API running in Kubernetes. How would you define the indicators, targets, alert windows, and escalation process?

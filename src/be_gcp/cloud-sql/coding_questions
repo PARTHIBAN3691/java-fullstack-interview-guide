@@ -1,0 +1,30 @@
+* Write a Spring Boot configuration class to connect to Cloud SQL using JDBC.
+* Implement a Java DataSource configuration using HikariCP for a Cloud SQL PostgreSQL database.
+* Write a Spring Boot application.properties configuration for connecting to Cloud SQL MySQL using environment variables.
+* Implement a Java method that retrieves a customer record using PreparedStatement.
+* Write Java code to insert an order into Cloud SQL using JDBC.
+* Implement a Java method to update an account balance inside a database transaction.
+* Write Java code that transfers money between two accounts atomically using JDBC transactions.
+* Implement transaction rollback when an exception occurs during a multi-step database operation.
+* Write a Spring Data JPA repository for creating, retrieving, updating, and deleting customer records.
+* Implement a Spring Boot service method using @Transactional to create an order and its order items.
+* Write Java code to configure database connection and query timeouts.
+* Implement a service that retries transient database failures with bounded exponential backoff.
+* Write Java code to handle SQL deadlock errors without retrying non-recoverable failures.
+* Implement a HikariCP configuration that limits total database connections across application instances.
+* Write a Java health-check component that verifies database connectivity without executing an expensive query.
+* Implement a Spring Boot REST endpoint that retrieves paginated database records.
+* Write a repository query that filters orders by customer ID and date range efficiently.
+* Implement a Java batch job that processes large database tables in small transactions.
+* Write Java code to execute a parameterized SQL query and safely map ResultSet values to a DTO.
+* Implement a Spring Boot exception handler that translates database exceptions into appropriate HTTP responses.
+* Write a Flyway migration script that adds a new nullable column without breaking existing application versions.
+* Implement a database-backed idempotency mechanism that prevents duplicate payment processing.
+* Write Java code to detect and handle optimistic locking failures using JPA @Version.
+* Implement pessimistic locking for an inventory update using Spring Data JPA.
+* Write Java code that routes read-only queries to a Cloud SQL read replica and writes to the primary database.
+* Implement a database connection test using Testcontainers for PostgreSQL or MySQL.
+* Write an integration test that verifies transaction rollback when a service method fails.
+* Implement a Java utility that compares record counts and checksums between source and target databases during migration.
+* Write Java code to record query execution time and expose database metrics for monitoring.
+* Implement a Spring Boot application configuration that retrieves database credentials from Google Cloud Secret Manager.

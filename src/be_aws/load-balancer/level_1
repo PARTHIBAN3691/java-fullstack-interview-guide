@@ -1,0 +1,20 @@
+* Explain how an Application Load Balancer distributes HTTP requests across multiple targets.
+* What is the difference between host-based routing and path-based routing?
+* How do ALB listener rules use host headers, paths, query strings, and HTTP headers?
+* How does a Network Load Balancer differ from an Application Load Balancer in terms of protocol and traffic handling?
+* What is cross-zone load balancing, and how does its behavior differ across load balancer types?
+* How do target group health checks work, and how can you configure their path, port, interval, and thresholds?
+* What is the difference between target health checks and application readiness checks?
+* How does an ALB integrate with EC2 instances, ECS services, EKS workloads, and Lambda functions?
+* How does a load balancer integrate with an Auto Scaling group?
+* What is connection draining, also known as deregistration delay?
+* How does session stickiness work, and what are its limitations in a distributed application?
+* How do you configure HTTPS listeners and TLS certificates using AWS Certificate Manager (ACM)?
+* What is the difference between TLS termination at the load balancer and end-to-end TLS?
+* How can you restrict access to an internal load balancer using security groups and network ACLs?
+* How does an ALB preserve client IP information, and what is the purpose of the `X-Forwarded-For` header?
+* How can you configure load balancing for microservices hosted under different URL paths?
+* What are ALB access logs, and how can they help troubleshoot request failures?
+* What is the difference between a fixed-response action, redirect action, and forward action in ALB?
+* How do you troubleshoot a load balancer that returns HTTP 502, 503, or 504 errors?
+* How can you use AWS WAF with an Application Load Balancer to protect web applications?

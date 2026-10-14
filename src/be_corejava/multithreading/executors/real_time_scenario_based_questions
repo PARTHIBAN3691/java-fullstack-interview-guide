@@ -1,0 +1,21 @@
+
+* A REST API receives 1,000 requests per second, and each request performs a blocking database call. How would you configure task execution to avoid resource exhaustion?
+* A fixed thread pool has 10 threads, and all 10 tasks are waiting for subtasks submitted to the same pool. How would you identify and resolve the deadlock?
+* Your application experiences steadily increasing memory usage during peak traffic. How would you investigate whether an executor's task queue is responsible?
+* A background job takes several minutes to complete, while incoming jobs continue to arrive. How would you prevent the executor queue from growing indefinitely?
+* A production service must stop accepting new tasks during shutdown but allow existing tasks to finish. How would you implement this?
+* A task is cancelled, but its thread continues running. What could be wrong with the task implementation?
+* Some tasks are significantly slower than others, causing short tasks to wait in the queue. How would you improve throughput and fairness?
+* A scheduled job occasionally executes twice because multiple application instances are running. How would you address this issue?
+* Your application has separate workloads for CPU-intensive calculations and blocking external API calls. How would you design the executor configuration?
+* A thread pool frequently rejects tasks during traffic spikes. How would you determine whether to increase pool size, queue capacity, or apply backpressure?
+* An executor's threads are consuming excessive CPU even when the application appears idle. How would you investigate the issue?
+* A task submitted through `submit()` fails silently because nobody checks its `Future`. How would you improve error handling?
+* An application requires tasks to execute sequentially in submission order. Which executor would you choose, and what limitations would you consider?
+* You need to execute five independent service calls concurrently and combine their results. How would you use `ExecutorService` and `Future`?
+* A service must enforce a timeout for each submitted task. How would you implement cancellation and timeout handling?
+* A thread pool is configured with a maximum of 100 threads, but its actual pool size remains at 10 under load. What could explain this behavior?
+* A production system needs separate concurrency limits for payment processing, notifications, and report generation. How would you isolate these workloads?
+* An application loses request-specific logging information when work moves to executor threads. How would you propagate the logging context?
+* A task occasionally runs after the application has started shutting down and fails because dependencies are already closed. How would you coordinate lifecycle management?
+* You need to process a large batch of records concurrently while preserving the final results in the original input order. How would you design the solution?

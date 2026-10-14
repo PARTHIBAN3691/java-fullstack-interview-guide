@@ -1,0 +1,30 @@
+* A button looks correct with a mouse but has no visible outline when navigated using the keyboard. How would you fix it?
+* A designer removes all focus outlines to improve the visual appearance. What accessible alternative would you recommend?
+* Light gray text on a white background is difficult to read. How would you identify and correct the problem?
+* An error message is displayed only in red. How would you make the error state more accessible?
+* A form uses placeholder text instead of visible labels. What changes would you recommend?
+* A navigation menu works with a mouse but is difficult to use with a keyboard. How would you investigate the CSS?
+* A modal dialog opens, but the focused element is hidden behind a sticky header. How would you fix the layout?
+* A responsive layout breaks when users zoom the browser to 200%. How would you redesign it?
+* A mobile page requires horizontal scrolling to read ordinary text. How would you investigate and resolve the issue?
+* A user enables reduced motion, but the page continues displaying animated transitions. How would you handle this preference?
+* A carousel uses continuous movement that distracts some users. How would you provide an accessible alternative?
+* A dark theme causes text and icons to lose sufficient contrast. How would you fix the design tokens?
+* A disabled button is visually indistinguishable from an enabled button except for a slight color change. How would you improve it?
+* A developer uses opacity: 0 to hide an interactive element. What problems could this cause?
+* A screen reader user cannot access content hidden with display: none. How would you decide whether to use another hiding technique?
+* A CSS Grid layout visually places the footer before the main content, but the DOM order is different. What accessibility concerns arise?
+* A keyboard user cannot see which item is selected in a custom dropdown. How would you improve the focus and selected states?
+* A sticky navigation bar covers the heading when a user follows an in-page link. How would you fix it?
+* Important instructions are inserted using the ::before pseudo-element. What accessibility risks should be considered?
+* A form's invalid fields are indicated only by a red border. How would you improve the visual presentation?
+* A company introduces a new brand color that fails text contrast checks. How would you handle this with design tokens?
+* A high-contrast Windows mode removes background colors and makes some controls difficult to identify. How would you adapt the CSS?
+* A responsive layout uses the CSS order property to rearrange form fields. What could go wrong for keyboard and screen-reader users?
+* A page has hover tooltips that disappear when users try to move the pointer onto the tooltip. How would you improve usability?
+* A complex animation causes discomfort for some users. How would you provide a reduced-motion experience?
+* An icon-only button is visually clear but lacks an accessible name. Can CSS solve the problem, and what should be changed?
+* A table becomes unreadable on smaller screens. How would you make it responsive without losing essential information?
+* A visual regression test passes, but keyboard focus indicators disappear after a CSS refactor. How would you catch this?
+* An application has several teams implementing focus styles differently. How would you standardize them?
+* How would you conduct a CSS accessibility audit before releasing a major redesign?

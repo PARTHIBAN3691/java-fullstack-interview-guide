@@ -1,0 +1,25 @@
+* What is the Java 8 Date and Time API?
+* Why was the new Date and Time API introduced in Java 8?
+* What are the major classes introduced in the `java.time` package?
+* What is the difference between `java.util.Date` and `java.time.LocalDate`?
+* What is the difference between `LocalDate`, `LocalTime`, and `LocalDateTime`?
+* How do you get the current date using `LocalDate`?
+* How do you get the current time using `LocalTime`?
+* How do you get the current date and time using `LocalDateTime`?
+* How do you create a specific date using `LocalDate.of()`?
+* How do you create a specific time using `LocalTime.of()`?
+* How do you retrieve the year, month, and day from a `LocalDate`?
+* How do you retrieve the hour, minute, and second from a `LocalTime`?
+* How do you add or subtract days from a `LocalDate`?
+* How do you add or subtract hours from a `LocalTime`?
+* How do you compare two dates in Java 8?
+* What is the purpose of the `Period` class?
+* What is the purpose of the `Duration` class?
+* What is the difference between `Period` and `Duration`?
+* What is the purpose of the `DateTimeFormatter` class?
+* How do you format a `LocalDate` into a string?
+* How do you parse a string into a `LocalDate`?
+* What is the difference between `Month` and an integer month value?
+* How do you find the day of the week for a given date?
+* What happens when you try to create an invalid date using `LocalDate.of()`?
+* Are Java 8 Date and Time API classes mutable or immutable?

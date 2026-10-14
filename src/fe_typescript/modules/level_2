@@ -1,0 +1,30 @@
+* Explain the TypeScript module resolution process for Node.js and browser-based applications.
+* How do Node.js module resolution strategies differ between CommonJS and ECMAScript modules?
+* What is the difference between node10, node16, nodenext, and bundler module resolution modes?
+* How do package.json exports and imports fields affect TypeScript module resolution?
+* What is the purpose of the types and typesVersions fields in package.json?
+* How does TypeScript resolve conditional exports in a package?
+* What is the difference between the moduleResolution options bundler and nodenext?
+* How do .mts, .cts, .mjs, and .cjs files influence module behavior?
+* How does the package.json type field affect Node.js module interpretation?
+* How do you troubleshoot a module that compiles successfully but fails at runtime?
+* What causes the error Cannot find module in a TypeScript project?
+* How do you resolve the error Module has no exported member?
+* What causes TypeScript to report that a file is not a module?
+* How do you handle duplicate module declarations or conflicting type definitions?
+* How do type-only imports affect generated JavaScript output?
+* What is the difference between import type and imports marked with the type modifier?
+* How do circular dependencies behave differently in CommonJS and ES modules?
+* How can tree shaking be affected by module export patterns?
+* Why can barrel files cause initialization-order problems?
+* How do you design modules to reduce coupling and improve testability?
+* How do you expose a stable public API from a TypeScript library?
+* How do you structure a package with separate runtime and type entry points?
+* How do declaration maps and source maps support module debugging?
+* How do you publish a TypeScript library that supports both CommonJS and ES modules?
+* What challenges arise when migrating a large project from CommonJS to ES modules?
+* How do you configure TypeScript modules for a monorepo?
+* How do project references interact with modules in a multi-package TypeScript repository?
+* How do you diagnose module resolution issues involving symlinks and workspace packages?
+* What are the risks of mixing JavaScript, TypeScript, CommonJS, and ES modules in one application?
+* How would you optimize module boundaries in a large-scale TypeScript application?

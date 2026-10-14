@@ -1,0 +1,30 @@
+* Write a Java program that implements a simple in-memory message queue using BlockingQueue.
+* Implement a producer-consumer pattern using ArrayBlockingQueue.
+* Write a Java producer and consumer using LinkedBlockingQueue.
+* Implement a bounded message queue that blocks producers when the queue is full.
+* Implement a message queue that supports multiple producers and multiple consumers.
+* Write a Java program that processes queued messages using an ExecutorService.
+* Implement message acknowledgment and retry handling in a simple Java consumer.
+* Write a message consumer that retries failed messages up to three times.
+* Implement a dead-letter queue for messages that exceed the retry limit.
+* Write an idempotent consumer that ignores duplicate message IDs.
+* Implement a message processor that preserves ordering for messages with the same customer ID.
+* Write a Java program that supports delayed message processing.
+* Implement a priority queue for high-priority and low-priority messages.
+* Write a thread-safe in-memory message broker supporting named queues.
+* Implement publish-subscribe messaging with multiple subscribers in Java.
+* Write a Java program that demonstrates competing consumers processing messages concurrently.
+* Implement a retry mechanism with exponential backoff and jitter.
+* Write a consumer that handles poison messages without stopping the processing loop.
+* Implement a configurable message handler with pluggable retry policies.
+* Write a Java program that tracks queue depth, processed messages, and failed messages.
+* Implement a simple message deduplication mechanism with a time-to-live window.
+* Write a producer that batches messages before sending them to a simulated broker.
+* Implement a consumer that limits message processing to a configurable number of messages per second.
+* Write a Java program that simulates consumer backpressure when a downstream service is slow.
+* Implement a message envelope containing message ID, event type, timestamp, headers, and payload.
+* Write a message serializer and deserializer using Jackson.
+* Implement a versioned event schema and demonstrate backward-compatible deserialization.
+* Write a Java program that simulates broker failure and producer retry behavior.
+* Implement an outbox pattern using Java, Spring Boot, and a relational database.
+* Write a Spring Boot application with a message producer, consumer, retry policy, and dead-letter handling using Kafka or RabbitMQ.

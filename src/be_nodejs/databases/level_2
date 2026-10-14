@@ -1,0 +1,30 @@
+* Explain the internal architecture of a relational database management system.
+* How does a database query optimizer choose an execution plan?
+* How would you analyze an execution plan to identify a slow SQL query?
+* How do B-tree indexes work, and when are they effective?
+* What is a covering index, and how can it improve query performance?
+* How would you design indexes for a table with millions of records?
+* How do composite indexes work, and why does column order matter?
+* What is index selectivity, and how does it affect query optimization?
+* Explain ACID properties and how databases enforce them.
+* How do transaction isolation levels affect concurrency and consistency?
+* What are dirty reads, non-repeatable reads, and phantom reads?
+* What is a serialization anomaly, and how can it be prevented?
+* How do databases detect and resolve deadlocks?
+* How would you design a database to handle high transaction volumes?
+* How would you prevent lost updates when multiple users modify the same record?
+* What are the trade-offs between optimistic locking and pessimistic locking?
+* How does database replication affect consistency and availability?
+* What is eventual consistency, and when is it acceptable?
+* How would you design a highly available database architecture?
+* How does database sharding affect query execution and transaction management?
+* What are the challenges of cross-shard joins and transactions?
+* How would you choose a sharding key for a large-scale application?
+* How do partition pruning and partition indexes improve query performance?
+* How would you design a database schema for a high-volume e-commerce application?
+* How would you model one-to-many and many-to-many relationships efficiently?
+* When would you choose a relational database over a document database?
+* How would you decide which data should be stored in Redis rather than a persistent database?
+* What are the CAP theorem and its implications for distributed databases?
+* How would you design database migration strategies for zero-downtime deployments?
+* What database metrics would you monitor to identify performance and reliability problems?

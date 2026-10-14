@@ -1,0 +1,30 @@
+* What is Docker security?
+* Why is security important when running Java applications in Docker?
+* What are the common security risks associated with Docker containers?
+* What is the difference between container security and host security?
+* What is a Docker image vulnerability?
+* What is the purpose of using trusted Docker base images?
+* Why should you avoid using the latest tag in production?
+* What is the principle of least privilege in Docker?
+* Why should containers run as a non-root user?
+* What is the difference between root inside a container and root on the host?
+* What is the purpose of the USER instruction in a Dockerfile?
+* What is a read-only container filesystem?
+* How do you run a Docker container with a read-only root filesystem?
+* Why should unnecessary packages be removed from Docker images?
+* What is the purpose of a .dockerignore file in Docker security?
+* Why should secrets not be stored directly in a Dockerfile?
+* What is the difference between ARG and ENV in a Dockerfile?
+* What is Docker secrets management?
+* How can environment variables expose sensitive information?
+* What is Docker image scanning?
+* What is the purpose of tools such as Trivy and Docker Scout?
+* What is the difference between a vulnerability and a misconfiguration?
+* What is Docker port publishing, and how can it affect security?
+* Why should unnecessary container ports not be exposed?
+* What is Docker network isolation?
+* How do Docker bridge networks help isolate applications?
+* What is the purpose of Docker security profiles?
+* What are Linux capabilities in Docker?
+* What is the purpose of the --privileged option, and why is it risky?
+* What basic security checks should be performed before deploying a Spring Boot Docker image?

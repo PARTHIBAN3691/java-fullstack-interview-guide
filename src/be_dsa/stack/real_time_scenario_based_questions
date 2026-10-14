@@ -1,0 +1,30 @@
+* A Java application throws StackOverflowError while processing deeply nested data. How would you investigate and fix the issue?
+* A recursive algorithm works for small inputs but fails for large inputs. How would you redesign it using an explicit stack?
+* A web application must validate deeply nested JSON structures. How would you use a stack to validate nesting?
+* An expression evaluator must support operator precedence and parentheses. How would you design it using stacks?
+* A calculator service needs to evaluate postfix expressions received from clients. How would you implement and validate the evaluator?
+* A browser must support back and forward navigation. How would you model its navigation history using stacks?
+* A text editor needs undo and redo functionality. How would you design the required stack-based architecture?
+* A workflow engine needs to roll back recent operations in reverse order. How would you implement the rollback mechanism?
+* A file explorer must normalize paths containing dot and double-dot segments. How would you solve this using a stack?
+* A monitoring system receives millions of values and needs the next greater value for each reading. How would you optimize the solution?
+* A financial application needs to calculate stock span values for historical prices. Which stack approach would you use?
+* A building analytics system must find the largest rectangular area in a histogram of usage values. How would you solve it efficiently?
+* A computer vision service must find the largest rectangular region of ones in a binary matrix. How would you use a stack?
+* A log processor needs to remove adjacent duplicate events repeatedly. How would you implement this efficiently?
+* A parser encounters mismatched brackets in a large source file. How would you report the location of the first invalid bracket?
+* A Java service processes nested expressions with very large input strings. How would you avoid excessive memory allocation?
+* A concurrent application shares a stack between multiple producer and consumer threads. How would you ensure thread safety?
+* A high-throughput service experiences contention on a synchronized stack. How would you identify and reduce the bottleneck?
+* A bounded task buffer must block producers when full and consumers when empty. Would you use a stack or another data structure, and why?
+* A production service occasionally loses stack updates under concurrent load. How would you reproduce and investigate the problem?
+* A service needs to track the minimum value among active measurements while values are pushed and removed. How would you design the stack?
+* A Java application uses the legacy Stack class extensively. How would you migrate it to a more suitable collection without breaking behavior?
+* A stack-based algorithm has O(n) time complexity but performs poorly on production-sized inputs. How would you profile and optimize it?
+* A service needs to process deeply nested XML documents without recursive method calls. How would you design an iterative parser?
+* A distributed workflow needs to undo the latest local operations after a validation failure. How would you represent operation history?
+* An API receives encoded strings such as 3[a2[c]] and must decode them safely. How would you handle nesting, invalid input, and size limits?
+* A financial application must calculate the sum of minimum values across all subarrays. How would you implement the algorithm and verify its correctness?
+* A large dataset requires finding the shortest unsorted subarray that must be sorted to order the entire array. How would you solve it?
+* A stack implementation consumes too much memory because every operation creates wrapper objects. How would you redesign its internal representation?
+* A team reports inconsistent benchmark results when comparing Stack, LinkedList, and ArrayDeque. How would you create a reliable performance comparison?

@@ -1,0 +1,30 @@
+* How would you design a comprehensive resilience strategy for a large microservices platform?
+* How do you prevent cascading failures across multiple service dependencies?
+* How do you determine the appropriate timeout budget across a chain of microservices?
+* How do you propagate an end-to-end deadline across downstream service calls?
+* How do you prevent retry amplification when several services retry the same request?
+* How do you design retry budgets to limit additional load during an incident?
+* How do you choose between circuit breakers, bulkheads, rate limiters, and load shedding?
+* How do you prevent synchronized retries from creating traffic spikes?
+* How do you design adaptive concurrency limits for overloaded services?
+* How do you implement load shedding based on queue depth, latency, or resource saturation?
+* How do you distinguish a slow dependency from a dependency that has failed completely?
+* How do you design resilience for a service that depends on multiple critical downstream services?
+* How do you handle partial failures when a business operation spans several microservices?
+* How do you ensure retries do not create duplicate payments, orders, or inventory updates?
+* How do idempotency keys improve resilience during network failures and ambiguous responses?
+* How do you design resilience for asynchronous workflows using Kafka or RabbitMQ?
+* How do you handle message redelivery, dead-letter queues, and replay after prolonged outages?
+* How do you prevent a circuit breaker from remaining open longer than necessary?
+* How do you configure circuit breakers for low-traffic services where failure-rate statistics may be misleading?
+* How do you tune sliding-window size and minimum-call thresholds for different workloads?
+* How do you manage resilience configurations consistently across hundreds of services?
+* How do you design fallback behavior without returning misleading or stale business data?
+* How do you preserve transaction correctness when fallback behavior changes the normal processing path?
+* How do bulkheads interact with thread pools, connection pools, and reactive event loops?
+* How do you design resilience for multi-region services during a regional outage?
+* How do you combine resilience patterns with Kubernetes probes and autoscaling?
+* How do you prevent health-check failures from causing unnecessary service restarts during downstream outages?
+* How do you evaluate resilience using chaos engineering and controlled fault injection?
+* How do you define SLOs and error budgets to guide resilience improvements?
+* How would you validate that a system remains stable under sustained overload, dependency failures, and recovery traffic?

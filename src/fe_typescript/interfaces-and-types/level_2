@@ -1,0 +1,30 @@
+* How does TypeScript determine structural compatibility between interfaces and type aliases?
+* What is the difference between structural typing and nominal typing when designing domain models?
+* How does declaration merging affect interface design in large applications?
+* How can declaration merging introduce unintended type conflicts?
+* Why can an interface extend another interface but not directly extend every possible type alias?
+* How do intersection types behave when the same property has incompatible types?
+* What is the difference between union and intersection types in complex type composition?
+* How do conditional types interact with interfaces and type aliases?
+* How do mapped types transform the properties of an existing interface?
+* How would you implement a DeepPartial<T> utility type using recursive mapped types?
+* How would you implement a DeepReadonly<T> utility type?
+* How do indexed access types work with interfaces and generic type aliases?
+* How do keyof and typeof work together to derive types from objects?
+* How do generic constraints using keyof improve type safety?
+* How do distributive conditional types behave when applied to unions?
+* How can you extract common and unique properties from a union of object types?
+* How do template literal types help create type-safe property names?
+* How can you model mutually exclusive object properties using union types and never?
+* How do discriminated unions help enforce exhaustive checking?
+* What is the difference between interface inheritance and intersection-based composition in complex models?
+* How does TypeScript handle variance in interface and type-alias function properties?
+* Why can method declarations and function-valued properties behave differently in parameter compatibility?
+* How would you model a type-safe event map using interfaces and generic type aliases?
+* How would you design a plugin architecture using interfaces and generic contracts?
+* How can you prevent unwanted properties in configuration objects using excess property checks and satisfies?
+* What are the limitations of excess property checking when values are first assigned to variables?
+* How does module augmentation extend interfaces from third-party libraries?
+* How would you safely augment a third-party module without causing declaration conflicts?
+* How would you design reusable domain types for a large application with shared frontend and backend models?
+* How would you choose between interfaces, type aliases, generics, and discriminated unions in a complex TypeScript architecture?

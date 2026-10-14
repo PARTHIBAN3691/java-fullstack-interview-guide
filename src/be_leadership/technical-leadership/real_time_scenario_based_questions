@@ -1,0 +1,30 @@
+* Your team proposes introducing microservices into a small application. How would you evaluate whether the change is justified?
+* A production Java service experiences frequent OutOfMemoryError exceptions. How would you lead the investigation?
+* Two senior developers strongly disagree about using inheritance or composition. How would you resolve the discussion?
+* A critical API becomes significantly slower after a new release. How would you coordinate troubleshooting and recovery?
+* A developer proposes a quick fix that solves the immediate problem but introduces technical debt. How would you evaluate it?
+* Your team repeatedly introduces defects despite following code review practices. What improvements would you implement?
+* A business stakeholder requests a feature that conflicts with the current architecture. How would you evaluate the request?
+* A monolithic application is becoming difficult to maintain, but the business cannot afford a full rewrite. What approach would you recommend?
+* Your team wants to adopt a new Java framework, but the existing platform is stable. How would you make the decision?
+* A microservice frequently fails because a downstream service is unavailable. How would you improve resilience?
+* Two services maintain duplicate customer information and frequently become inconsistent. How would you address the design?
+* A database migration causes unexpected downtime in production. How would you lead incident resolution and prevent recurrence?
+* A critical production defect has no clear owner because several teams contributed to the affected service. How would you establish accountability?
+* Developers are bypassing unit tests to meet delivery deadlines. How would you address the issue?
+* Your team is migrating from an older Java version to a newer LTS release. How would you plan the migration?
+* A security review identifies hardcoded credentials in a Spring Boot application. What immediate and long-term actions would you take?
+* A high-throughput API is experiencing thread pool exhaustion. How would you investigate and resolve the issue?
+* A new architectural design improves scalability but significantly increases infrastructure costs. How would you evaluate the trade-off?
+* Your organization has several teams implementing authentication differently. How would you establish a consistent approach?
+* A release introduces a breaking API change that affects multiple consumers. How would you manage the impact?
+* Your team is debating synchronous REST communication versus asynchronous messaging. How would you guide the decision?
+* A critical service has no meaningful metrics or distributed tracing. How would you improve its observability?
+* A legacy system has poor test coverage and frequent regressions. How would you plan its modernization?
+* An architect recommends a complex design pattern that the team finds difficult to maintain. How would you assess the recommendation?
+* A production incident reveals that retries are causing duplicate financial transactions. How would you address correctness and resilience?
+* Your team depends heavily on one senior developer who understands the entire application. How would you reduce the risk?
+* A proposed caching strategy improves response time but risks stale data. How would you evaluate consistency requirements?
+* Multiple teams disagree on ownership of shared libraries and common platform components. How would you establish governance?
+* A technical initiative has consumed significant effort but has not delivered measurable business value. How would you reassess it?
+* You inherit a project with weak architecture, poor documentation, and frequent production failures. What would your first 90-day plan look like?

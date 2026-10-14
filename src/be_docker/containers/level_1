@@ -1,0 +1,30 @@
+* How would you create a Docker image for a Spring Boot application?
+* How do you write a Dockerfile for a Java application packaged as a JAR?
+* How would you run a Spring Boot container and map its application port to the host?
+* How do you pass Spring Boot configuration values through environment variables?
+* How would you configure different Spring profiles for Docker containers?
+* How do you inspect the environment variables of a running container?
+* How would you troubleshoot a container that exits immediately after startup?
+* How do you retrieve logs from a stopped container?
+* How would you execute a command inside a running Java container?
+* How do you limit the CPU resources available to a container?
+* How do you limit the memory available to a container?
+* What happens when a Java process inside a container exceeds its memory limit?
+* How would you configure JVM heap settings for a containerized Java application?
+* How do you make application data persistent using Docker volumes?
+* What is the difference between a named volume and a bind mount?
+* How would you connect a Spring Boot container to a PostgreSQL container?
+* How do Docker bridge networks allow containers to communicate?
+* How do you configure container-to-container communication using service names?
+* How would you configure a restart policy for a production container?
+* What is the difference between Docker restart policies and application-level recovery?
+* How would you update a running application to use a newer Docker image?
+* Why should containers generally run one primary application process?
+* How do you copy files between the host and a container?
+* How would you clean up unused containers, images, and volumes safely?
+* How do you inspect a container's resource usage?
+* How would you troubleshoot a port-binding conflict?
+* How do you configure health checks for a containerized Spring Boot application?
+* What is the difference between a container's health status and its running status?
+* How would you use Docker Compose to run a Java application and its database?
+* What are the best practices for keeping Java container images small and secure?

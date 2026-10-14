@@ -1,0 +1,30 @@
+* How does the Raft consensus algorithm work?
+* What are the main components of the Raft algorithm?
+* How does leader election work in Raft?
+* What is the purpose of randomized election timeouts in Raft?
+* How does Raft replicate logs across follower nodes?
+* How does Raft determine when a log entry is committed?
+* What happens when a Raft follower misses several log entries?
+* How does Raft handle a leader failure during log replication?
+* What happens when two Raft nodes believe they are the leader?
+* How does the Paxos consensus algorithm work?
+* What are proposers, acceptors, and learners in Paxos?
+* What is the difference between single-decree Paxos and Multi-Paxos?
+* What are proposal numbers in Paxos, and why must they be unique and ordered?
+* How do Paxos and Raft differ in their approach to consensus?
+* What is the difference between leader election and value agreement?
+* How does a quorum help a consensus protocol tolerate node failures?
+* How many nodes are required to tolerate one crash failure in a majority-based consensus system?
+* How do overlapping majorities help preserve safety during leader changes?
+* How does a consensus algorithm handle delayed or reordered messages?
+* What happens when a network partition separates the leader from a majority of nodes?
+* How does a consensus algorithm recover after a network partition heals?
+* How do consensus algorithms prevent two leaders from committing conflicting values?
+* What is a replicated state machine, and how does consensus support it?
+* How does consensus help maintain consistency in distributed configuration management?
+* How does a distributed database use consensus to replicate writes?
+* How does ZooKeeper use the ZAB protocol to maintain coordination?
+* What is the role of etcd in Kubernetes and distributed coordination?
+* How do consensus algorithms support distributed locks and leader leases?
+* How do you monitor leader changes, quorum availability, and replication lag?
+* How would you test a consensus implementation under node failures and network partitions?

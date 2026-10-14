@@ -1,0 +1,30 @@
+* How would you design an enterprise configuration management architecture for thousands of servers and microservices?
+* How would you establish a single source of truth for infrastructure, application, and feature configuration across multiple environments?
+* How would you design reusable Ansible roles that support multiple operating systems and application versions?
+* How would you handle conflicting variable definitions across inventories, roles, playbooks, and extra variables?
+* How would you design dynamic inventory that scales across multiple cloud accounts, regions, and ephemeral instances?
+* How would you prevent configuration drift when teams can make manual changes directly on production servers?
+* How would you distinguish unauthorized configuration drift from legitimate emergency changes?
+* How would you design a configuration reconciliation process that detects, reports, and safely corrects drift?
+* How would you design secure secrets management across Ansible, CI/CD pipelines, Kubernetes, and application runtime environments?
+* How would you prevent secrets from leaking through Ansible logs, debug output, temporary files, and process arguments?
+* How would you rotate secrets automatically across multiple applications without causing service disruption?
+* How would you migrate from Ansible Vault to a centralized secrets management platform while preserving access controls and audit history?
+* How would you design configuration versioning and rollback for a distributed microservices architecture?
+* How would you ensure that a configuration rollback does not reintroduce an expired credential or a previously fixed security vulnerability?
+* How would you design immutable configuration for applications deployed across multiple regions?
+* How would you implement dynamic configuration updates while maintaining consistency across thousands of application instances?
+* How would you handle partial propagation when a centralized configuration service updates only some application instances?
+* How would you design configuration caching and fallback behavior when the configuration service becomes unavailable?
+* How would you implement configuration validation and policy enforcement before changes reach production?
+* How would you prevent invalid configuration from causing a cascading failure across dependent services?
+* How would you manage configuration schema evolution when old and new application versions run simultaneously?
+* How would you design feature flags that support gradual rollout, user targeting, emergency kill switches, and auditability?
+* How would you prevent feature-flag changes from creating inconsistent business behavior across distributed services?
+* How would you design a safe feature-flag cleanup process that identifies obsolete flags without removing active dependencies?
+* How would you implement environment-specific configuration without duplicating large configuration files?
+* How would you handle configuration differences between regions while maintaining standardized security and operational policies?
+* How would you design a GitOps-based configuration management workflow with pull requests, approvals, reconciliation, and rollback?
+* How would you combine Ansible with Terraform and Kubernetes without creating overlapping ownership of configuration?
+* How would you test configuration changes using static validation, integration tests, and production-like environments?
+* How would you measure configuration management effectiveness using drift frequency, deployment failures, remediation time, and policy compliance?

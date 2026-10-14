@@ -1,0 +1,30 @@
+* Explain how Angular Router matches a URL to a route configuration.
+* What is the difference between eager loading and lazy loading in routing?
+* How do you configure lazy loading using loadChildren?
+* How do you lazy-load a standalone component using loadComponent?
+* How do you define nested routes for a dashboard application?
+* How do you configure multiple router-outlet elements in an application?
+* What is the difference between primary and named outlets?
+* What are auxiliary routes in Angular?
+* How do you pass route parameters between components?
+* How do you observe route parameter changes using ActivatedRoute.paramMap?
+* What is the difference between snapshot and observable route parameters?
+* How do you retrieve query parameters using queryParamMap?
+* How do you preserve query parameters during navigation?
+* How do you merge existing query parameters with new parameters?
+* What is the purpose of the NavigationExtras interface?
+* How do you pass temporary navigation state using Router.navigate()?
+* How do you access navigation state in the destination component?
+* What are CanActivate and CanActivateChild guards?
+* What is the difference between CanMatch and CanActivate?
+* How do you implement authentication and authorization using route guards?
+* What is the purpose of ResolveFn and route resolvers?
+* How do you load API data before activating a route?
+* What is the difference between a route resolver and fetching data in ngOnInit()?
+* How do you handle unknown URLs using a wildcard route?
+* How do you configure child routes with a default redirect?
+* What is the purpose of the RouterLinkActive directive?
+* How do you implement breadcrumbs using route configuration data?
+* How do you handle navigation errors in Angular?
+* How do you listen to router events using Router.events?
+* How do you test Angular routing using RouterTestingHarness?

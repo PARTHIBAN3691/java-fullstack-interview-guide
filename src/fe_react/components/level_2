@@ -1,0 +1,30 @@
+* Explain how React reconciles component trees when state or props change.
+* How does React Fiber affect component rendering and scheduling?
+* What is the difference between rendering a component and committing its changes to the DOM?
+* How does React determine whether a component should be re-rendered?
+* How do React.memo(), useMemo(), and useCallback() work together to optimize components?
+* What are the trade-offs of memoizing every component in a large application?
+* How do component keys affect state preservation and component remounting?
+* What happens to component state when its type or key changes?
+* How do you design a component API that remains maintainable as requirements grow?
+* How do compound components work, and when are they useful?
+* How would you build a reusable component library with consistent APIs?
+* How do you design components that support composition without excessive configuration props?
+* How do you prevent Context updates from triggering unnecessary renders across a component tree?
+* How do you manage state shared by deeply nested components without creating tightly coupled components?
+* How do you implement dependency injection or service access in React components?
+* How do you handle errors that occur during rendering, event handlers, and asynchronous callbacks?
+* What are the limitations of Error Boundaries?
+* How do Suspense boundaries influence loading behavior across nested components?
+* How do you design component boundaries for code splitting and bundle optimization?
+* What are the differences between server components and client components in frameworks that support React Server Components?
+* How do server-side rendering and hydration affect component behavior?
+* How do you diagnose hydration mismatches caused by components?
+* How do you design components that remain accessible when rendered through portals?
+* How do you prevent memory leaks caused by component subscriptions and event listeners?
+* How would you design components that support concurrent rendering safely?
+* How do you optimize components that render thousands of data items?
+* How do you design reusable components with flexible TypeScript prop types?
+* How do you maintain backward compatibility when changing a shared component library?
+* How do you isolate component tests from implementation details?
+* How would you evaluate the performance, accessibility, testability, and maintainability of a complex component architecture?

@@ -1,0 +1,30 @@
+* Explain the internal working of Spring AOP proxies during bean initialization.
+* How does Spring determine whether a bean requires an AOP proxy?
+* Explain the lifecycle of an advised Spring bean from creation to method invocation.
+* How does Spring AOP integrate with the Spring BeanPostProcessor mechanism?
+* What is the difference between proxy-based AOP and bytecode-weaving-based AOP?
+* How does Spring AOP resolve and evaluate pointcut expressions?
+* What are static and dynamic pointcuts, and how do they differ conceptually?
+* How do JDK dynamic proxies and CGLIB differ in terms of method interception?
+* What limitations do final classes and final methods introduce for CGLIB-based proxies?
+* How does advice ordering work when multiple aspects have different @Order values?
+* How do you control the execution order of different advice types within an aspect?
+* How can an exception thrown by an @Around advice affect the target method's caller?
+* How do you preserve the return value and exception behavior of a target method in @Around advice?
+* How can incorrect use of proceed() cause unexpected behavior?
+* How does Spring AOP behave when a proxied method invokes another method on the same object?
+* What approaches can address self-invocation problems without introducing tight coupling?
+* How does Spring AOP interact with @Transactional?
+* What problems can arise from combining custom aspects with transaction advice?
+* How does Spring AOP behave when an aspect itself depends on another advised bean?
+* How can circular dependencies arise when aspects and target beans depend on each other?
+* How do you avoid unnecessary proxy creation and performance overhead?
+* How does Spring AOP handle overloaded methods in pointcut expressions?
+* How can annotation-based pointcuts be used to enforce architectural rules?
+* What are the thread-safety considerations when an aspect maintains mutable state?
+* How would you design a reusable auditing aspect for multiple business services?
+* How would you implement authorization checks using Spring AOP, and what are the limitations?
+* How do you ensure that logging aspects do not expose sensitive method arguments?
+* How would you debug an aspect that works for one bean but not another?
+* How does Spring AOP behave with asynchronous methods and thread-bound context?
+* When would you choose AspectJ weaving instead of Spring AOP proxies?

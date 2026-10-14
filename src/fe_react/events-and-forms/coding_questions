@@ -1,0 +1,30 @@
+* Create a simple React form with name, email, and password fields.
+* Implement a controlled input using useState().
+* Create an uncontrolled form using useRef().
+* Build a form that manages multiple fields using a single state object.
+* Implement a generic onChange handler that updates fields using their name attributes.
+* Create a form with required-field validation.
+* Implement email and password validation with error messages.
+* Build a form that validates fields on blur and on submit.
+* Create a form with password and confirm-password validation.
+* Implement a checkbox group and collect the selected values.
+* Create radio buttons for selecting a user's gender or account type.
+* Build dependent country and state dropdowns.
+* Create a form with conditional fields based on a checkbox selection.
+* Implement a dynamic form that allows users to add and remove phone number fields.
+* Build a multi-step form that preserves values between steps.
+* Create a form that fetches initial values from an API.
+* Implement form submission using Fetch API with loading and error states.
+* Prevent duplicate submissions while a request is in progress.
+* Display backend validation errors beside the corresponding form fields.
+* Reset form fields after successful submission.
+* Implement file upload with file type and size validation.
+* Create an image upload field with a preview before submission.
+* Build a file upload component that displays upload progress and supports cancellation.
+* Create a reusable useForm() custom hook for handling values, errors, and submission.
+* Implement a reusable Input component that supports labels, validation messages, and accessibility attributes.
+* Build a form using React Hook Form with required-field validation.
+* Integrate Zod or Yup with React Hook Form for schema-based validation.
+* Implement asynchronous username validation with request cancellation or stale-result protection.
+* Create an autosaving form with debounced API requests.
+* Write React Testing Library tests for form input, validation, submission, and API errors.

@@ -1,0 +1,30 @@
+* How does TypeScript determine compatibility between two class types?
+* What role does structural typing play in class compatibility?
+* How do private and protected members affect class compatibility?
+* What is the difference between nominal typing and structural typing?
+* How does TypeScript handle generic classes?
+* How do you create a generic repository class?
+* How can generic constraints be applied to class type parameters?
+* What are abstract generic classes, and when would you use them?
+* How can a class implement multiple generic interfaces?
+* How do you preserve type information when extending a generic class?
+* What are polymorphic this types in TypeScript classes?
+* How can you implement a fluent API using polymorphic this types?
+* What are mixins in TypeScript, and how do they simulate multiple inheritance?
+* What are the limitations of mixins in TypeScript?
+* How can you implement a singleton class in TypeScript?
+* What are the drawbacks of using the singleton pattern?
+* How can private constructors and static members enforce controlled object creation?
+* How do static members behave in class inheritance?
+* Can static methods use instance properties directly? Why or why not?
+* How do you define and use a class index signature?
+* What are parameter decorators, and how do they relate to classes?
+* How do class decorators work in TypeScript?
+* How can decorators modify or replace a class?
+* What is the difference between legacy decorators and standard ECMAScript decorators?
+* How do property initialization rules work with strictPropertyInitialization?
+* What is the purpose of definite assignment assertions in class properties?
+* How does the useDefineForClassFields compiler option affect class field initialization?
+* How does JavaScript prototype inheritance relate to TypeScript classes?
+* How can you inspect a class's prototype chain at runtime?
+* How would you design a class hierarchy that follows the Open/Closed Principle?

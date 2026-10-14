@@ -1,0 +1,30 @@
+* Write a Java program using KafkaConsumer to subscribe to a topic with a specified group ID.
+* Implement a Spring Boot Kafka consumer using `@KafkaListener` and a configurable consumer group ID.
+* Write a Java configuration class that creates a Kafka consumer factory and listener container factory.
+* Implement two Kafka consumers that share the same group ID and process partitions in parallel.
+* Write a Java example showing two independent consumer groups reading the same topic.
+* Implement a Java program that retrieves consumer group IDs using Kafka AdminClient.
+* Write a Java utility that describes a consumer group's members and partition assignments.
+* Implement a Java method that retrieves committed offsets for a consumer group.
+* Write a Java program that calculates consumer lag using committed offsets and partition end offsets.
+* Implement a Java utility that detects partitions assigned to a consumer group with unusually high lag.
+* Write a Spring Kafka listener that uses manual acknowledgment after successful processing.
+* Implement a consumer that commits offsets only after a database transaction succeeds.
+* Write a Java consumer that handles rebalance callbacks using a `ConsumerRebalanceListener`.
+* Implement a Java consumer that commits eligible offsets during partition revocation.
+* Write a Java program that configures cooperative sticky partition assignment.
+* Implement a Spring Boot Kafka consumer with bounded retries and dead-letter topic handling.
+* Write a Java consumer that handles long-running processing without exceeding the configured poll interval.
+* Implement a consumer shutdown mechanism that stops polling and safely completes eligible processing.
+* Write a Java utility that resets a consumer group's offsets to the earliest available offset using supported administrative operations.
+* Implement a Java program that resets selected partition offsets to a specified timestamp.
+* Write a Java method that validates consumer configuration values such as `session.timeout.ms` and `max.poll.interval.ms`.
+* Implement a Java utility that compares consumer group assignments before and after a deployment.
+* Write a Spring Boot integration test that verifies partition distribution across consumers in the same group.
+* Implement a test that verifies two separate consumer groups independently receive the same published events.
+* Write a Java consumer that processes events idempotently using a unique event ID.
+* Implement a consumer that routes permanently invalid events to a dead-letter topic.
+* Write a Java program that monitors consumer lag and emits an alert when a configured threshold is exceeded.
+* Implement a Java utility that detects when the number of consumers exceeds the number of assigned partitions.
+* Write a Java consumer that supports controlled replay from a configured timestamp without changing the production group's offsets.
+* Design and implement a Spring Boot consumer-group monitoring service that reports membership, partition assignments, lag, rebalance events, and processing failures.

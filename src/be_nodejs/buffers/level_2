@@ -1,0 +1,30 @@
+* Explain the internal implementation and memory model of Node.js Buffers.
+* How are Buffers related to ArrayBuffer and Uint8Array?
+* What is the difference between Buffer memory and ordinary JavaScript heap objects?
+* How does Node.js manage memory used by large Buffers?
+* What is external memory in Node.js, and how can it affect garbage collection?
+* How can Buffer.allocUnsafe() lead to accidental exposure of sensitive data?
+* How would you investigate excessive Buffer memory usage in a production application?
+* How would you identify memory leaks caused by retained Buffer references?
+* How do Buffer slices and subarrays affect memory retention?
+* How can a small Buffer view unintentionally keep a large underlying memory allocation alive?
+* How would you implement efficient binary parsing without repeatedly copying data?
+* How would you design a parser for a binary protocol with variable-length fields?
+* How would you handle endianness when exchanging binary data between different systems?
+* How would you prevent integer overflow and out-of-bounds access when reading binary fields?
+* How would you process arbitrarily large binary files using bounded memory?
+* How would you implement backpressure when producing and consuming Buffer chunks?
+* How would you handle multibyte characters split across network stream chunks?
+* How do Buffer operations interact with zero-copy techniques?
+* What are the trade-offs between copying a Buffer and creating a shared-memory view?
+* How would you safely share binary data between worker threads?
+* What is the difference between transferring an ArrayBuffer and copying its contents?
+* How would you design a high-throughput binary data pipeline in Node.js?
+* How would you optimize Buffer concatenation when processing thousands of chunks?
+* How would you securely erase sensitive data held in a Buffer, and what limitations exist?
+* How would you validate untrusted binary input to prevent malformed-data vulnerabilities?
+* How would you implement a length-prefixed binary message decoder for TCP streams?
+* How would you handle partial messages and multiple messages arriving in one network chunk?
+* How would you diagnose performance problems caused by excessive Buffer allocation?
+* How do Buffer operations affect memory usage in containers with strict memory limits?
+* What trade-offs would you consider between Buffers, streams, typed arrays, and native binary-processing libraries?

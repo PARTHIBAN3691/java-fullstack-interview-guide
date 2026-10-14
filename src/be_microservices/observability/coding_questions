@@ -1,0 +1,30 @@
+* Write a Spring Boot application that exposes health and information endpoints using Spring Boot Actuator.
+* Configure Micrometer to publish custom application metrics.
+* Implement a custom Counter metric to track successful and failed orders.
+* Write a Timer metric to measure the execution time of a business service method.
+* Implement a Gauge metric to monitor the number of pending jobs in a queue.
+* Configure a Spring Boot application to expose Prometheus-compatible metrics.
+* Create a Prometheus scrape configuration for a Spring Boot microservice.
+* Write a Grafana dashboard definition for API latency, throughput, and error rate.
+* Configure Logback to produce structured JSON logs in a Spring Boot application.
+* Implement a servlet filter that generates or propagates a correlation ID.
+* Write a Spring Boot interceptor that adds correlation IDs to application logs.
+* Implement a WebClient configuration that propagates trace context to downstream services.
+* Configure OpenTelemetry instrumentation for a Spring Boot REST API.
+* Implement custom tracing spans around a business operation using OpenTelemetry APIs.
+* Write a Kafka producer and consumer that propagate trace context through message headers.
+* Implement a custom Spring Boot Actuator HealthIndicator for a downstream service.
+* Write an integration test that verifies health and metrics endpoints.
+* Implement a custom metric that records the number of failed external API calls.
+* Write a Micrometer timer that records database operation latency.
+* Configure alerts for high HTTP error rates and elevated response latency.
+* Write a PromQL query to calculate the HTTP request error ratio over a five-minute window.
+* Write a PromQL query to calculate the 95th percentile of HTTP request latency using histogram metrics.
+* Implement structured logging that includes trace ID, span ID, correlation ID, and service name.
+* Write a test that verifies correlation IDs are propagated across multiple REST services.
+* Implement a scheduled-job monitor that records execution duration, success count, and failure count.
+* Write a Java health-check component that reports dependency status without exposing sensitive details.
+* Implement a bounded-cardinality metrics strategy for tracking API operations and outcomes.
+* Write a test that verifies custom metrics are recorded when a business operation succeeds or fails.
+* Implement error handling and telemetry for a Kafka consumer that retries failed messages and records dead-letter events.
+* Design and implement an end-to-end observability setup using Spring Boot, Micrometer, Prometheus, Grafana, OpenTelemetry, centralized logging, distributed tracing, and actionable alerting.

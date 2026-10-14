@@ -1,0 +1,34 @@
+* Design a service-mesh architecture for a large Kubernetes platform containing hundreds of microservices across multiple clusters and regions.
+* How would you compare Istio and Linkerd for a production platform requiring advanced traffic control, security, and observability?
+* How would you migrate from application-managed service communication to a service mesh without changing application business logic?
+* How would you design a service mesh for a hybrid environment containing Kubernetes, virtual machines, and on-premises services?
+* How would you evaluate the sidecar architecture against Istio ambient mesh or other sidecarless approaches?
+* How would you troubleshoot increased CPU and memory consumption after enabling sidecar injection across all workloads?
+* How would you investigate latency introduced by proxies, connection establishment, TLS handshakes, and policy evaluation?
+* How would you design a multi-cluster service mesh with cross-cluster service discovery, identity, and traffic routing?
+* How would you configure traffic shifting across clusters or regions while preventing routing loops and unintended failover?
+* How would you design a progressive delivery strategy using weighted routing, health metrics, automated analysis, and rollback?
+* How would you ensure a canary deployment receives representative traffic while limiting the impact of faulty code?
+* How would you prevent retries, timeouts, and circuit breakers from interacting in ways that worsen an outage?
+* How would you define retry budgets and deadline propagation for a chain of dependent microservices?
+* How would you handle idempotency when the service mesh retries requests that may have reached the backend before a connection failure?
+* How would you design circuit-breaker thresholds for a service with highly variable request latency and traffic volume?
+* How would you implement global rate limiting across multiple replicas and clusters without introducing a single point of failure?
+* How would you prevent a rate-limiting service failure from taking down all application traffic?
+* How would you enforce strict mTLS across hundreds of services while supporting legacy clients and gradual migration?
+* How would you rotate workload certificates without interrupting long-lived connections or breaking service communication?
+* How would you design workload identity and authorization policies for services operated by different teams?
+* How would you prevent confused-deputy problems and privilege escalation in service-to-service authorization?
+* How would you handle authorization when traffic passes through gateways, proxies, and multiple service-mesh boundaries?
+* How would you inject faults into a production-like environment while controlling risk and limiting customer impact?
+* How would you design service-mesh observability for high-cardinality telemetry without excessive storage and monitoring costs?
+* How would you troubleshoot a distributed latency spike using proxy metrics, access logs, traces, and application telemetry?
+* How would you distinguish application failures from proxy failures, control-plane failures, and network problems?
+* How would you design safe service-mesh configuration rollout, validation, and rollback across multiple environments?
+* How would you prevent invalid traffic policies from affecting every workload during a centralized configuration change?
+* How would you design egress control so workloads can reach approved external services without unrestricted internet access?
+* How would you troubleshoot intermittent 503 responses caused by endpoint discovery, connection draining, outlier detection, or proxy configuration?
+* How would you manage protocol detection and proxy behavior for HTTP, gRPC, WebSockets, and raw TCP services?
+* How would you ensure service-mesh policies remain effective during control-plane outages or proxy restarts?
+* How would you design disaster recovery for a service mesh spanning multiple clusters and regions?
+* How would you measure whether the reliability and security benefits of a service mesh justify its operational complexity?

@@ -1,0 +1,26 @@
+
+* What is `Optional` in Java 8?
+* Why was `Optional` introduced in Java 8?
+* What problem does `Optional` solve?
+* What is the purpose of the `java.util.Optional` class?
+* Is `Optional` a class or an interface?
+* How do you create an empty `Optional`?
+* How do you create an `Optional` containing a non-null value?
+* What is the difference between `Optional.of()` and `Optional.ofNullable()`?
+* What happens when `Optional.of()` receives a null value?
+* What happens when `Optional.ofNullable()` receives a null value?
+* How do you check whether an `Optional` contains a value?
+* What is the purpose of `isPresent()`?
+* What is the purpose of `get()` in `Optional`?
+* What happens when `get()` is called on an empty `Optional`?
+* What is the purpose of `orElse()`?
+* What is the purpose of `orElseGet()`?
+* What is the difference between `orElse()` and `orElseGet()`?
+* How do you provide a default value when an `Optional` is empty?
+* What is the purpose of `ifPresent()`?
+* How do you execute an action only when an `Optional` contains a value?
+* Can an `Optional` contain a null value?
+* Can you use `Optional` with Java 8 lambda expressions?
+* Can `Optional` be used with the Stream API?
+* What is the purpose of `Optional.empty()`?
+* What are the common mistakes developers make when using `Optional`?

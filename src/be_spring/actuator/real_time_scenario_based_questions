@@ -1,0 +1,30 @@
+* Your Spring Boot application is running, but the /actuator/health endpoint returns HTTP 404. How would you troubleshoot the issue?
+* Your health endpoint returns HTTP 403 after Spring Security is enabled. How would you configure access correctly?
+* Your application is healthy locally, but Kubernetes repeatedly restarts it after failed probes. How would you investigate?
+* Your readiness check fails whenever the external payment service is temporarily unavailable. How would you redesign the health-check strategy?
+* Your application starts successfully, but it cannot process requests because the database connection pool is exhausted. How would you detect this using Actuator?
+* Your production Actuator endpoint exposes environment variables containing sensitive configuration. How would you mitigate the security risk?
+* Your operations team needs to change the application log level without restarting the service. How would you implement this safely?
+* Your Prometheus dashboard does not display Spring Boot metrics. How would you troubleshoot the integration?
+* Your monitoring system experiences excessive metric cardinality after a new deployment. How would you identify and fix the cause?
+* Your application has increasing response times, but CPU usage appears normal. Which Actuator metrics would you inspect?
+* Your JVM memory usage increases continuously over several hours. How would you use Actuator and related JVM diagnostics to investigate?
+* Your application reports UP even though a required downstream service is unavailable. How would you implement a more meaningful health check?
+* A slow health indicator delays every Kubernetes readiness probe. How would you optimize the implementation?
+* Your application exposes all Actuator endpoints in production because of a broad exposure configuration. How would you restrict access?
+* Your deployment pipeline needs to verify that the application is ready before routing traffic. Which Actuator endpoint and configuration would you use?
+* A service returns UP from its liveness check but fails readiness checks during startup. Why can this be expected, and how should the deployment behave?
+* Your metrics dashboard shows different request counts across application instances. How would you investigate whether the instrumentation or aggregation is incorrect?
+* Your team wants to track the number of successful and failed payment operations. How would you implement business-specific metrics?
+* Your API has high p99 latency, but average response time remains low. How would you use Actuator and Micrometer metrics to investigate?
+* A heap dump is required to investigate a memory leak in production. How would you collect it while minimizing operational and security risks?
+* Your application uses a separate management port, but monitoring cannot access it. What configuration and network settings would you inspect?
+* A custom HealthIndicator causes the entire health endpoint to fail when a dependency throws an exception. How would you make the indicator resilient?
+* Your operations team accidentally changes a production logger to DEBUG and increases log volume dramatically. How would you prevent and recover from this situation?
+* A new deployment increases HTTP 5xx responses, but the health endpoint still reports UP. How would you improve monitoring and alerting?
+* Your application is deployed across multiple regions, and monitoring dashboards combine all metrics into one view. How would you use metric tags to distinguish regions and instances?
+* Your organization requires different access permissions for health checks and diagnostic endpoints. How would you implement endpoint-specific authorization?
+* Your metrics dashboard shows an unexpected increase in database connection acquisition time. Which metrics and diagnostics would you investigate?
+* Your team wants to add a custom Actuator endpoint that triggers an operational action. How would you secure it and prevent accidental execution?
+* A monitoring system scrapes metrics too frequently, increasing application overhead. How would you measure and reduce the impact?
+* You need to standardize health checks, metrics, and management endpoint security across 20 Spring Boot microservices. How would you design the implementation?

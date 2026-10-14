@@ -1,0 +1,20 @@
+* Explain the complete lifecycle of an object from allocation in Eden to promotion into the old generation.
+* How does the JVM determine the tenuring threshold dynamically?
+* How do age tables help the JVM decide when to promote surviving objects?
+* What happens when the survivor spaces are undersized for the application's allocation pattern?
+* How can premature promotion increase Full GC frequency?
+* How does the JVM handle objects that are too large to fit efficiently in the young generation?
+* How does generational garbage collection handle references from older objects to younger objects without scanning the entire old generation?
+* How do write barriers, card tables, and remembered sets contribute to generational collection efficiency?
+* What are the trade-offs of increasing or decreasing the young-generation size?
+* How can an excessively large young generation affect old-generation collection and application latency?
+* How does a high object survival rate influence generational GC performance?
+* How would you diagnose a high promotion rate using GC logs?
+* How does generational collection work in G1 GC compared with Parallel GC?
+* How does the generational design of ZGC differ from the traditional young-generation and old-generation model?
+* What is the difference between generational and non-generational ZGC?
+* How do weak, soft, and phantom references interact with generational garbage collection?
+* How can thread-local allocation buffers (TLABs) improve object allocation performance?
+* How would you investigate a workload where young GC pauses are short but old-generation occupancy steadily increases?
+* How can a memory leak remain undetected when young GC successfully reclaims most short-lived objects?
+* How would you tune a generational garbage collector for an application with high allocation rates and a large long-lived object set?

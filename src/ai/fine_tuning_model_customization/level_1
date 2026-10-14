@@ -1,0 +1,83 @@
+**Fine-Tuning Fundamentals**
+* How would you determine whether a use case justifies fine-tuning a pretrained LLM?
+* How would you choose a base model based on task requirements, hardware constraints, licensing, and deployment cost?
+* How would you estimate the compute, memory, dataset, and training-time requirements for a fine-tuning project?
+* How would you distinguish a model capability gap from a prompt-design or retrieval problem?
+
+**Supervised Fine-Tuning (SFT)**
+* How would you structure instruction-response examples for SFT?
+* How would you select learning rate, batch size, sequence length, and training epochs for an SFT job?
+* How would you monitor training and validation loss to detect overfitting?
+* How would you handle examples with variable-length inputs and outputs during batching?
+
+**Instruction Tuning**
+* How would you build an instruction-tuning dataset that covers different task types and instruction styles?
+* How would you train a model to follow structured output requirements without harming its general conversational ability?
+* How would you handle conflicting instructions and examples with ambiguous expected outputs?
+* How would you evaluate whether instruction tuning improves instruction following rather than merely memorizing training examples?
+
+**Parameter-Efficient Fine-Tuning (PEFT)**
+* How would you choose between LoRA, prefix tuning, prompt tuning, and full fine-tuning?
+* How does PEFT reduce optimizer-state and gradient memory requirements?
+* How would you manage multiple task-specific adapters for a single base model?
+* What challenges arise when deploying and versioning adapters independently of the base model?
+
+**LoRA and QLoRA**
+* How do LoRA rank and target-module selection influence trainable parameter count and model performance?
+* How would you select LoRA rank, alpha, dropout, and target modules for a given task?
+* How does QLoRA combine a quantized base model with trainable low-rank adapters?
+* What hardware and numerical-precision considerations affect LoRA and QLoRA training?
+
+**Dataset Preparation and Quality**
+* How would you detect and remove duplicate, contradictory, malformed, and low-quality examples?
+* How would you normalize conversational datasets into a consistent chat-template format?
+* How would you balance dataset coverage across rare classes, domains, and instruction types?
+* How would you detect data contamination and prevent sensitive information from entering training corpora?
+
+**Training and Validation Splits**
+* How would you split datasets when examples contain related documents, users, conversations, or time-dependent records?
+* Why can random splitting produce misleading evaluation results for related examples?
+* How would you choose between a fixed validation set and cross-validation for a small dataset?
+* How would you select checkpoints using validation performance without overfitting to the validation set?
+
+**Synthetic Data Generation**
+* How would you generate synthetic instruction-response pairs using a stronger teacher model?
+* How would you validate synthetic data for factual correctness, diversity, and alignment with real user requests?
+* How would you prevent synthetic data from containing repetitive patterns or teacher-model biases?
+* How would you combine human-written, real-world, and synthetic examples in a training pipeline?
+
+**Retrieval vs Fine-Tuning**
+* How would you decide between RAG, fine-tuning, prompt engineering, and a hybrid approach for an enterprise use case?
+* How would you handle frequently changing business facts that should not become embedded in model parameters?
+* How would you use fine-tuning to improve output style while RAG supplies current domain knowledge?
+* How would you compare the total cost, latency, maintenance effort, and quality of RAG versus fine-tuning?
+
+**Domain Adaptation**
+* How would you adapt a general-purpose model to legal, healthcare, financial, or technical language?
+* What are the differences between continued pretraining on domain text and supervised fine-tuning on domain tasks?
+* How would you preserve general capabilities while improving performance on specialized tasks?
+* How would you assess domain vocabulary coverage and performance on out-of-domain inputs?
+
+**Model Distillation**
+* How would you select teacher and student models for a distillation project?
+* What is the difference between distilling teacher-generated responses and distilling token-level probability distributions?
+* How would you build a distillation dataset from a proprietary teacher model?
+* How would you evaluate whether the student model provides sufficient quality at lower inference cost?
+
+**Quantization**
+* How would you choose between post-training quantization and quantization-aware training?
+* What are the trade-offs between weight-only quantization and quantizing both weights and activations?
+* How would you assess the impact of 4-bit quantization on model quality and inference latency?
+* How would you validate compatibility between quantized models, inference engines, and hardware?
+
+**Fine-Tuning Evaluation**
+* How would you design an evaluation suite that measures task quality, instruction following, safety, and general capability retention?
+* How would you compare a fine-tuned model against its base model using the same evaluation dataset?
+* How would you use human evaluation alongside automated metrics for open-ended generation?
+* How would you evaluate model robustness on rare, ambiguous, and adversarial inputs?
+
+**Model Versioning and Rollback**
+* How would you version base models, adapters, datasets, training configurations, and evaluation results together?
+* How would you promote a fine-tuned model from experimentation to staging and production?
+* How would you implement a rollback strategy when a newly deployed model performs worse than its predecessor?
+* How would you ensure a previous model version remains reproducible and deployable?

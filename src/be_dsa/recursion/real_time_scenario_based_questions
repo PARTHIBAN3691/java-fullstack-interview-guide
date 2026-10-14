@@ -1,0 +1,30 @@
+* A Java application throws StackOverflowError when processing deeply nested JSON data. How would you investigate and resolve the issue?
+* A recursive algorithm works correctly for small inputs but becomes extremely slow for large inputs. How would you identify and eliminate repeated computations?
+* A production service calculates Fibonacci numbers using a naive recursive method. How would you optimize it?
+* A tree-processing service handles millions of nodes and crashes because of recursion depth. How would you redesign the traversal?
+* A developer implements factorial recursively, but the result becomes incorrect for large inputs. How would you investigate integer overflow and recursion limits?
+* A recursive file-system traversal becomes slow when directories contain many nested subdirectories. How would you improve performance and memory usage?
+* A JSON parser recursively processes nested objects and arrays. How would you protect it against excessively deep input?
+* A dependency-resolution service recursively traverses dependencies and repeatedly visits the same nodes. How would you avoid redundant work and detect cycles?
+* A recursive graph traversal enters an infinite loop when the graph contains cycles. How would you fix the implementation?
+* A binary-tree algorithm recalculates subtree heights many times. How would you optimize its recursive design?
+* A search algorithm generates duplicate subsets when the input contains repeated values. How would you eliminate duplicates?
+* A configuration-processing service uses recursion to evaluate nested expressions. How would you handle invalid expressions and excessive nesting?
+* A Java application uses recursion to reverse a very large linked list and runs out of stack space. What alternative would you implement?
+* A recursive algorithm has exponential time complexity and fails under production load. How would you identify the recurrence and choose an optimization?
+* A team needs to process deeply nested organizational hierarchies. How would you choose between recursive traversal and an explicit stack?
+* A recursive method returns incorrect results for empty arrays and single-element arrays. How would you identify missing base cases?
+* A maze-solving application explores too many paths and exceeds its execution-time limit. How would you prune the recursive search?
+* A Sudoku solver takes too long on difficult puzzles. How would you optimize its recursive backtracking strategy?
+* A recursive permission-checking service repeatedly evaluates the same user-role relationships. How would you use caching safely?
+* A binary-tree service needs to calculate height, diameter, and balance status efficiently. How would you reduce repeated traversal?
+* A recursive function works in development but fails with larger production data. What input characteristics and JVM limitations would you investigate?
+* A code review identifies a recursive method that modifies shared state unexpectedly. How would you make its behavior predictable?
+* A recursive parser must recover gracefully from malformed input. How would you design its base cases, validation, and error handling?
+* A service recursively walks a dependency graph containing cycles and shared dependencies. How would you distinguish cycle detection from repeated-node avoidance?
+* A recursive algorithm is difficult to debug because of many nested method calls. What debugging techniques would you use?
+* A team wants to replace recursion with iteration in a latency-sensitive Java service. How would you preserve correctness and compare performance?
+* A recursive algorithm uses memoization, but memory consumption grows continuously. How would you determine whether the cache can be bounded or replaced?
+* A production service needs to generate every combination matching a constraint, but the search space is enormous. How would you reduce unnecessary recursive branches?
+* A recursive tree algorithm must process untrusted input that may be extremely deep. How would you protect the application from resource exhaustion?
+* A Java developer claims that tail-recursive code cannot cause StackOverflowError. How would you explain and verify this claim in Java?

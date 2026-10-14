@@ -1,0 +1,30 @@
+* Explain how Node.js Buffers represent binary data.
+* How does Buffer.from() behave when given a string with different encodings?
+* What happens when Buffer.allocUnsafe() is used without initializing every byte?
+* Why is Buffer.alloc() generally safer for handling sensitive data?
+* How do you read and write unsigned integers in a Buffer?
+* How do you read and write signed integers in a Buffer?
+* How do you read and write floating-point values in a Buffer?
+* What is the difference between readUInt16BE() and readUInt16LE()?
+* What is the difference between big-endian and little-endian byte order?
+* How do you write a string into a Buffer at a specific offset?
+* How do you copy one Buffer into another Buffer?
+* What is the difference between Buffer.copy() and Buffer.subarray()?
+* How does Buffer.slice() behave in Node.js?
+* Do Buffer.slice() and Buffer.subarray() create copies or share memory?
+* How do you safely copy a portion of a Buffer?
+* How do you handle invalid or unsupported character encodings?
+* How do you decode Base64 data into a Buffer?
+* How do you validate binary data received from an HTTP request?
+* How are Buffers used when reading files with the Node.js fs module?
+* How do Buffers work with readable and writable streams?
+* How do you process a large file using Buffers without loading it entirely into memory?
+* What is the relationship between Buffer and Stream in Node.js?
+* How do you handle incomplete multibyte UTF-8 characters across Buffer chunks?
+* What is StringDecoder, and why is it useful for stream processing?
+* How do you calculate the byte length of a string before writing it into a Buffer?
+* How do you merge multiple binary data chunks efficiently?
+* How do you handle binary request and response bodies in Express.js?
+* How do you convert a Buffer into a JSON representation and restore it?
+* How do you prevent excessive memory allocation when processing binary data?
+* How do you write unit tests for functions that manipulate Buffers?

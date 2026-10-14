@@ -1,0 +1,21 @@
+
+* Create a sealed interface named `PaymentMethod` that permits `CreditCard`, `BankTransfer`, and `Wallet` implementations.
+* Write a Java 17 program demonstrating `sealed`, `non-sealed`, and `final` subclasses.
+* Create a sealed class hierarchy for employee types and enforce the permitted subclasses.
+* Create a sealed interface implemented by a record and a final class.
+* Create a record named `Employee` with `id`, `name`, and `salary` components, and demonstrate its generated methods.
+* Create a record with a compact constructor that validates its component values.
+* Create a record containing a mutable list and implement defensive copying.
+* Write a Java 17 program using pattern matching for `instanceof` to identify and process strings, integers, and other object types.
+* Write a Java program that demonstrates pattern-variable flow scoping using `&&`.
+* Write a Java program that demonstrates pattern matching for `instanceof` in a method that validates an object.
+* Write a Java program that converts a byte array into a hexadecimal string using `HexFormat`.
+* Write a Java program that parses a hexadecimal string into a byte array using `HexFormat`.
+* Write a Java program that uses `HexFormat` with a custom delimiter, prefix, and suffix.
+* Write a Java program that validates hexadecimal input and handles invalid input gracefully.
+* Write a Java program that selects a `RandomGenerator` implementation by algorithm name and generates random integers.
+* Write a Java program that compares the output generation of `Random`, `SplittableRandom`, and a `RandomGenerator` implementation.
+* Write a Java program that uses separate random generators for parallel simulation tasks.
+* Write a Java program that uses records and sealed interfaces to model payment success and failure outcomes.
+* Write a Java program that uses streams to process a list of records and calculate the average salary by department.
+* Write a Java 17 program that demonstrates how to diagnose and resolve reflective access failures caused by strong encapsulation.

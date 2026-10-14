@@ -1,0 +1,109 @@
+
+**Site Reliability Engineering (SRE)**
+* How would you build an SRE operating model for hundreds of microservices owned by multiple teams?
+* How would you define service-level objectives for an application with asynchronous workflows and eventual consistency?
+* How would you distinguish user-visible errors from infrastructure-level errors when calculating SLO compliance?
+* How would you identify and prioritize the highest-risk sources of toil across an organization?
+* How would you design an incident command structure for a multi-region outage?
+* How would you measure reliability improvements in a way that accounts for traffic volume and changing workload patterns?
+
+**Availability and Reliability**
+* How would you model end-to-end availability for a system with parallel and serial dependencies?
+* How would you estimate availability when failure rates and repair times vary over time?
+* How would you improve end-to-end availability when a critical dependency has a lower availability target than your own service?
+* How would you distinguish correlated failures from independent component failures in an availability model?
+* How would you determine whether adding redundancy improves actual availability or merely increases operational complexity?
+* How would you measure reliability for an event-driven workflow that can eventually recover after transient failures?
+
+**Resilience and Fault Tolerance**
+* How would you design a system that continues processing during partial network partitions?
+* How would you balance consistency, availability, and recovery behavior in a distributed application?
+* How would you prevent cascading failures when several services share a common dependency?
+* How would you ensure that automatic recovery does not cause duplicate payments or inconsistent business state?
+* How would you design resilient workflows when downstream services can remain unavailable for hours?
+* How would you test fault tolerance when failures are correlated across infrastructure layers?
+
+**High Availability**
+* How would you design a multi-region application that supports automatic failover while preserving acceptable data consistency?
+* How would you prevent split-brain writes in a multi-region deployment?
+* How would you handle regional failover when DNS caching and client connection pools delay traffic migration?
+* How would you design high availability for a stateful application whose database cannot support active-active writes?
+* How would you validate that a supposedly highly available architecture has no hidden shared dependencies?
+* How would you decide between synchronous cross-region replication and asynchronous replication?
+
+**Disaster Recovery**
+* How would you achieve a near-zero RPO without introducing unacceptable latency or cost?
+* How would you design recovery procedures when infrastructure, secrets, encryption keys, and identity services fail together?
+* How would you recover from logical data corruption that has already replicated to the disaster recovery region?
+* How would you coordinate database recovery, event replay, and downstream service reconciliation?
+* How would you validate a disaster recovery plan when the primary region is unavailable for the duration of the test?
+* How would you determine whether a business-critical system requires regional redundancy or a different recovery strategy?
+
+**Failure Domains and Fault Isolation**
+* How would you design fault domains for a large multi-tenant platform with shared infrastructure?
+* How would you identify hidden correlated failure paths across availability zones and regions?
+* How would you limit the blast radius of a bad deployment, configuration change, or faulty feature flag?
+* How would you isolate shared-resource exhaustion without starving critical workloads?
+* How would you design control-plane and data-plane separation to preserve service operation during control-plane failures?
+* How would you prevent a common identity, DNS, or certificate dependency from causing a global outage?
+
+**Graceful Degradation**
+* How would you design a degradation strategy that preserves core business transactions while disabling non-essential features?
+* How would you prevent stale fallback data from violating business or regulatory requirements?
+* How would you maintain consistency when some services operate in degraded mode and others remain fully operational?
+* How would you define degradation tiers based on latency, saturation, and dependency health?
+* How would you restore full functionality without creating a sudden surge of requests after a dependency recovers?
+
+**Backpressure**
+* How would you implement end-to-end backpressure across an API gateway, message broker, and asynchronous consumers?
+* How would you prevent queue saturation when consumer capacity cannot scale quickly enough?
+* How would you manage backpressure while preserving ordering guarantees for partitioned event streams?
+* How would you prevent a retry queue and a dead-letter queue from becoming additional bottlenecks?
+* How would you determine when to slow producers, reject traffic, persist requests, or discard work?
+* How would you avoid oscillations when autoscaling and backpressure mechanisms react to each other?
+
+**Load Shedding**
+* How would you design adaptive load shedding based on latency, queue depth, CPU, and memory pressure?
+* How would you ensure that load shedding preserves critical transactions and fairness across tenants?
+* How would you avoid feedback loops between load balancers, autoscalers, retries, and load-shedding policies?
+* How would you design overload protection when request cost varies significantly by endpoint?
+* How would you maintain system stability during a sudden traffic spike that exceeds maximum sustainable capacity?
+
+**Circuit Breakers**
+* How would you design circuit breakers for highly variable latency and low-volume dependencies?
+* How would you prevent many application instances from synchronously probing a recovering dependency?
+* How would you coordinate circuit-breaker behavior across multiple service instances without introducing a shared bottleneck?
+* How would you tune failure-rate and slow-call thresholds to balance fast failure detection with transient-error tolerance?
+* How would you distinguish a dependency outage from local resource exhaustion when deciding to open a circuit?
+
+**Bulkheads**
+* How would you determine isolation boundaries across tenants, workloads, and downstream dependencies?
+* How would you prevent bulkhead exhaustion from causing a second cascading failure elsewhere?
+* How would you balance resource utilization against isolation guarantees?
+* How would you design bulkheads for asynchronous consumers with different processing costs and priorities?
+* How would you validate that bulkheads remain effective during correlated traffic spikes?
+
+**Retry Policies and Timeout Strategies**
+* How would you derive per-service timeout budgets from an end-to-end latency objective?
+* How would you prevent retry storms across multiple layers of a distributed request path?
+* How would you coordinate retries between clients, API gateways, service clients, and message consumers?
+* How would you guarantee safe retry behavior for operations with uncertain outcomes, such as payment requests?
+* How would you design retry policies when a dependency has a strict rate limit and intermittent availability?
+* How would you distinguish a request that timed out before execution from one that completed but lost its response?
+* How would you implement deadline propagation and cancellation without leaking threads or connections?
+
+**Chaos Engineering**
+* How would you design a continuous chaos-engineering program that validates specific reliability objectives?
+* How would you select experiments based on service criticality, dependency graphs, and historical incidents?
+* How would you test correlated failures across multiple regions without putting the entire platform at risk?
+* How would you detect cases where automated recovery masks a serious resilience defect?
+* How would you integrate chaos experiments into deployment pipelines and operational readiness reviews?
+* How would you demonstrate that chaos testing reduced incident frequency or recovery time?
+
+**Error Budgets**
+* How would you design error-budget policies for services with different business criticality levels?
+* How would you handle a service that meets its availability SLO but violates its latency SLO?
+* How would you account for measurement gaps, excluded maintenance, and synthetic-monitoring errors in error-budget calculations?
+* How would you prevent teams from gaming SLOs by changing the measurement window or excluding failure categories?
+* How would you use burn-rate alerts to detect both rapid incidents and slow reliability degradation?
+* How would you reconcile a depleted error budget with urgent business deadlines and regulatory commitments?

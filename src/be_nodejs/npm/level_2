@@ -1,0 +1,30 @@
+* Explain how npm dependency resolution works when multiple packages require different versions of the same dependency.
+* How does npm decide whether to flatten or nest dependencies in node_modules?
+* What is dependency deduplication, and how does npm dedupe work?
+* How can dependency conflicts occur in a large Node.js application?
+* How would you troubleshoot an npm ERESOLVE dependency conflict?
+* What is the difference between peer dependency conflicts and regular dependency conflicts?
+* How do npm workspaces support monorepo development?
+* How would you structure a monorepo containing multiple Node.js services and shared libraries using npm workspaces?
+* What is the difference between npm workspaces and installing packages from a local file path?
+* How do workspace dependencies behave during installation?
+* How would you create and publish a scoped npm package?
+* What is the difference between public and private scoped packages?
+* How do you manage authentication for publishing packages to the npm registry?
+* What security risks can arise from installing third-party npm packages?
+* How do lifecycle scripts such as preinstall, install, postinstall, and prepare work?
+* What security concerns are associated with npm lifecycle scripts?
+* How would you prevent untrusted dependencies from executing installation scripts?
+* What is dependency confusion, and how can it be prevented?
+* How would you secure npm package publishing in a CI/CD pipeline?
+* How do you manage npm credentials securely in automated build environments?
+* What is the difference between npm audit, dependency pinning, and software composition analysis?
+* How would you investigate a vulnerability in a transitive dependency that has no direct fix?
+* How do overrides help resolve vulnerabilities in transitive dependencies?
+* How can you make npm installations reproducible across developer machines and CI environments?
+* How would you optimize npm installation time in a large application?
+* What are the trade-offs between using exact dependency versions and version ranges?
+* How do you diagnose unexpected changes in package-lock.json?
+* How would you migrate a project from npm to another package manager while preserving dependency consistency?
+* How do you design a release and versioning strategy for an npm package used by multiple applications?
+* How would you troubleshoot an npm package that works locally but fails after being published?

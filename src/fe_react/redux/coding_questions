@@ -1,0 +1,30 @@
+* Create a Redux store using Redux Toolkit's configureStore.
+* Create a counter slice using createSlice with increment, decrement, and reset actions.
+* Build a React component that reads Redux state using useSelector.
+* Create a React component that dispatches Redux actions using useDispatch.
+* Build a shopping cart slice that supports adding and removing products.
+* Create a Redux slice that manages user authentication state.
+* Implement a Redux slice with loading, success, and error states.
+* Write an asynchronous API request using createAsyncThunk.
+* Build a user list component that fetches data using createAsyncThunk.
+* Handle pending, fulfilled, and rejected states in a Redux slice.
+* Write a selector that retrieves a specific user by ID.
+* Create a memoized selector using createSelector.
+* Build a filtered product list using Redux state and memoized selectors.
+* Create a Redux slice that manages pagination and sorting.
+* Implement API request cancellation using createAsyncThunk.
+* Build a search component that prevents outdated API responses from replacing current results.
+* Create a normalized entity state using createEntityAdapter.
+* Implement an optimistic update for adding a product to a shopping cart.
+* Write a rollback mechanism for a failed optimistic update.
+* Configure RTK Query to fetch and cache a list of products.
+* Create an RTK Query API slice with query and mutation endpoints.
+* Implement cache invalidation using RTK Query tags.
+* Build an infinite-scrolling list using RTK Query.
+* Implement token refresh logic using RTK Query's base query customization.
+* Write custom Redux middleware that logs dispatched actions and state changes.
+* Create a Redux selector that avoids unnecessary re-renders when selecting derived data.
+* Configure Redux Persist to save selected state properties across browser refreshes.
+* Write unit tests for a Redux Toolkit reducer and its selectors.
+* Build a real-time notification feature that updates Redux state from WebSocket messages.
+* Refactor a legacy Redux application using Redux Toolkit and validate the behavior with tests.

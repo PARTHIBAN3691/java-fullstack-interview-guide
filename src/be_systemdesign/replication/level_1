@@ -1,0 +1,30 @@
+* How do you choose between synchronous and asynchronous replication?
+* How does primary-replica replication work in a relational database?
+* How do you configure read replicas for a database?
+* How do you distribute read traffic across multiple replicas?
+* How do you prevent stale reads from read replicas?
+* How do you monitor and reduce replication lag?
+* How do you handle a primary database failure?
+* How does automatic leader election work?
+* How do you promote a replica to become the new primary?
+* How do you prevent data loss during database failover?
+* How do you handle writes while a replica is being promoted?
+* How do you route read and write operations in a replicated database?
+* How do you implement read-after-write consistency when using read replicas?
+* How do you handle conflicting updates in a multi-primary database?
+* What is the difference between single-leader and multi-leader replication?
+* What are the advantages and disadvantages of leaderless replication?
+* How do quorum reads and writes work?
+* How do you choose read and write quorum sizes?
+* How does replication interact with database transactions?
+* How do you replicate data across multiple availability zones?
+* How do you replicate data across multiple geographic regions?
+* How do you handle network interruptions between primary and replica nodes?
+* How do you detect a failed replica and restore it?
+* How do you add a new replica without significantly affecting production performance?
+* How do you perform replication from an existing database to a new database?
+* How do you maintain replication during database schema changes?
+* How does replication work in Apache Kafka?
+* What is the difference between Kafka replication and consumer-group partitioning?
+* How do you monitor replica health, replication lag, and failover events?
+* How do you decide whether an application needs database replication?

@@ -1,0 +1,21 @@
+
+* Explain how the JVM and operating system cooperate to create and schedule platform threads.
+* What is the difference between platform threads and virtual threads in modern Java?
+* How do virtual threads differ from traditional threads in terms of resource consumption and scalability?
+* When would you use a virtual thread instead of a platform thread?
+* Why are virtual threads generally not intended to improve CPU-bound task performance?
+* What is thread pinning in virtual threads, and how has its behavior evolved across Java versions?
+* How does thread interruption provide cooperative cancellation?
+* Why should a thread not clear its interrupt status without a clear reason?
+* What is the difference between `Thread.interrupted()` and `isInterrupted()`?
+* How does the Java Memory Model affect visibility of shared variables between threads?
+* What guarantees does starting a thread provide under the happens-before rules?
+* What memory visibility guarantees exist when one thread terminates and another thread successfully joins it?
+* How can thread-local variables cause memory leaks in thread pools?
+* What is `ThreadLocal`, and when should it be used?
+* What is `InheritableThreadLocal`, and what limitations does it have in executor-based applications?
+* How would you diagnose a thread leak in a Java application?
+* How do you analyze a thread dump to identify deadlocks, blocked threads, and CPU-intensive threads?
+* What is the difference between a Java thread ID and a thread name, and how should thread identity be handled in modern Java?
+* How can excessive thread creation affect CPU usage, memory consumption, and context switching?
+* How would you design a reliable thread cancellation and shutdown mechanism for a long-running background task?

@@ -1,0 +1,30 @@
+* Your Node.js API receives a high volume of requests, but only one CPU core is heavily utilized. How would you use clustering to improve throughput?
+* A worker crashes under heavy traffic. How would you detect the failure and restore service?
+* Your application creates a new worker after every crash, but workers keep failing repeatedly. How would you prevent this restart loop?
+* Users are unexpectedly logged out when requests reach different workers. How would you resolve the issue?
+* Your application stores shopping-cart data in memory, and customers lose their carts after worker restarts. How would you redesign the storage?
+* A payment API runs in multiple workers, and the same payment job is occasionally processed twice. How would you prevent duplicate processing?
+* Every worker executes the same scheduled report-generation job. How would you ensure that the job runs only once?
+* Your clustered application uses WebSockets, and connections are disconnected during deployment. How would you minimize disruption?
+* A worker is online but stops responding to requests. How would you identify and recover from this condition?
+* During peak traffic, some workers consume significantly more memory than others. How would you investigate the problem?
+* Increasing the worker count causes higher latency instead of improving throughput. What would you investigate?
+* Your API uses file-based uploads, and multiple workers need to access uploaded files. How would you manage shared file storage?
+* A long-running request prevents a worker from shutting down gracefully. How would you handle the shutdown?
+* Your application is deployed behind Nginx, and session-based requests sometimes fail. How would you investigate load balancing and session affinity?
+* A new release must be deployed without interrupting active users. How would you implement a rolling restart?
+* The primary process crashes while several workers are serving traffic. What happens, and how would you improve resilience?
+* Workers communicate through IPC, but large messages are increasing response times. How would you optimize communication?
+* One worker repeatedly fails during startup because a required service is unavailable. How should the application behave?
+* Your application must process queue messages using several workers while preserving message ordering. How would you design the solution?
+* A worker experiences an unhandled exception while processing a critical request. How would you handle recovery and data consistency?
+* Your clustered application must enforce a global rate limit across all workers. How would you implement it?
+* The API works correctly on one worker but fails intermittently under clustering. How would you identify shared-state or race-condition issues?
+* A database connection limit is exceeded after enabling clustering. How would you manage connection pools across workers?
+* CPU usage is low, but requests are slow across all workers. How would you determine whether the bottleneck is the database, network, or event loop?
+* A worker restart temporarily reduces capacity during peak traffic. How would you maintain the desired capacity?
+* Your service runs across multiple containers, each using Node.js clustering. How would you decide the appropriate number of workers per container?
+* A worker receives a shutdown signal while processing a payment request. How would you ensure the operation is not lost or duplicated?
+* Your monitoring system reports healthy workers, but customers experience intermittent failures. What additional health checks and metrics would you add?
+* A clustered service needs to run background tasks and HTTP requests without starving either workload. How would you separate and coordinate these workloads?
+* You need to benchmark a single-process server against a clustered server. What test conditions and metrics would you use?

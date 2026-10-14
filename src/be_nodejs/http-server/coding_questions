@@ -1,0 +1,30 @@
+* Write a Node.js program that creates an HTTP server on port 3000.
+* Write an HTTP server that returns a welcome message for the root route.
+* Write a server that handles GET, POST, PUT, and DELETE requests.
+* Write a program that returns different responses based on the request URL.
+* Write a program that parses query parameters using the URL class.
+* Write a program that reads request headers and returns selected values.
+* Write a program that reads a JSON request body and returns a JSON response.
+* Write a program that validates request data and returns appropriate status codes.
+* Write a program that returns a custom 404 response for unknown routes.
+* Write a program that returns 405 Method Not Allowed for unsupported HTTP methods.
+* Write a program that handles malformed JSON and oversized request bodies safely.
+* Write a program that streams a large file to the client using createReadStream().
+* Write a program that handles client disconnections during file streaming.
+* Write a program that serves static files while preventing path traversal.
+* Write a program that implements basic CORS handling in an HTTP server.
+* Write a program that logs the request method, URL, status code, and processing duration.
+* Write a program that generates a correlation ID for every incoming request.
+* Write a program that configures request and header timeouts.
+* Write a program that implements a health-check endpoint and a readiness endpoint.
+* Write a program that creates an HTTPS server using TLS certificates.
+* Write a program that implements conditional GET requests using ETag.
+* Write a program that gracefully shuts down an HTTP server when it receives SIGTERM.
+* Write a program that tracks active requests and waits for them to complete during shutdown.
+* Write a program that implements a basic router using Node.js built-in HTTP APIs.
+* Write a program that implements reusable middleware functions without Express.js.
+* Write a program that limits concurrent requests to a resource-intensive operation.
+* Write a program that implements a simple rate limiter for incoming HTTP requests.
+* Write a program that forwards incoming requests to a downstream HTTP service.
+* Write unit tests for an HTTP server using the built-in Node.js test runner.
+* Build a production-ready HTTP server with routing, request validation, streaming, structured logging, security controls, timeout management, and graceful shutdown.

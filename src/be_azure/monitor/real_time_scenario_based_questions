@@ -1,0 +1,30 @@
+* A Java Spring Boot API hosted on Azure App Service suddenly starts returning HTTP 500 errors; how would you investigate the issue using Azure Monitor?
+* Users report slow responses, but CPU and memory utilization remain normal; how would you identify the root cause?
+* Application Insights shows failed requests, but no corresponding exceptions are available; how would you troubleshoot the telemetry?
+* A production application experiences intermittent timeouts when calling an external payment API; how would you use distributed tracing to isolate the problem?
+* After a new deployment, the API error rate increases significantly; how would you compare telemetry before and after the release?
+* Azure Monitor alerts are firing repeatedly for a healthy application; how would you investigate and reduce false positives?
+* A Java application has high JVM memory usage and frequent garbage collection pauses; how would you investigate using Azure Monitor and JVM telemetry?
+* An application is experiencing database connection pool exhaustion; what metrics, logs, and traces would you examine?
+* Distributed traces are available for some microservices but missing for others; how would you troubleshoot trace propagation?
+* A production service becomes unavailable, but the configured alert does not trigger; how would you investigate the alert configuration and evaluation pipeline?
+* Log ingestion costs have increased substantially after a release; how would you identify the source and optimize telemetry collection?
+* Application telemetry is delayed by several minutes, making incident investigation difficult; how would you identify the cause?
+* An Azure Kubernetes Service deployment has intermittent pod restarts and elevated API latency; how would you correlate infrastructure and application telemetry?
+* A background Java job reports successful execution but processes fewer records than expected; how would you monitor and investigate the discrepancy?
+* One region experiences elevated latency while other regions remain healthy; how would you compare regional telemetry and isolate the issue?
+* A downstream database is intermittently slow, causing several Java services to degrade; how would you identify the dependency responsible?
+* An alert triggers whenever traffic increases during peak hours, even though the application is operating normally; how would you improve the alert strategy?
+* A managed-identity change causes an application to stop sending telemetry; how would you diagnose and restore monitoring?
+* A security audit discovers access tokens and customer data in application telemetry; how would you contain the exposure and prevent recurrence?
+* The operations team needs a single dashboard showing API availability, error rate, latency, dependency failures, and infrastructure health; how would you design it?
+* A microservice deployment passes health checks but fails shortly afterward under real traffic; how would you use Azure Monitor to identify the problem?
+* Application Insights reports a high dependency failure rate, but users are not reporting errors; how would you validate the measurements and investigate the discrepancy?
+* A message-processing application experiences growing queue delays without an increase in application errors; how would you monitor throughput and processing latency?
+* A scheduled query alert stops working after an application telemetry schema change; how would you troubleshoot and correct it?
+* An application has gaps in telemetry during a high-traffic incident; how would you determine whether sampling, ingestion limits, or configuration caused the gaps?
+* Multiple teams own different microservices, and each team uses different monitoring conventions; how would you standardize telemetry and dashboards?
+* A deployment introduces a gradual increase in p95 response time without affecting average latency; how would you detect and investigate the regression?
+* The business wants alerts when payment processing success falls below an agreed threshold; how would you implement and validate this monitoring?
+* A Java service appears healthy according to Azure resource metrics, but users cannot complete a business transaction; how would you monitor the complete user journey?
+* The organization wants to validate that monitoring and alerts work before every production release; how would you automate this validation?

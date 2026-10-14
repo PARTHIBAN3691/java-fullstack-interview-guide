@@ -1,0 +1,30 @@
+* A Java API uses a HashMap to store millions of customer records, but lookup latency increases as data grows. How would you investigate the issue?
+* A production service experiences unusually slow HashMap lookups for certain request inputs. How would you identify whether hash collisions are responsible?
+* A developer uses a mutable Customer object as a HashMap key and later cannot retrieve the stored value. What could have gone wrong?
+* A payment service uses transaction IDs as map keys, but duplicate records occasionally appear. How would you investigate key equality and hashing?
+* An application stores user email addresses in a HashSet but fails to detect duplicates with different letter casing. How would you address the equality requirements?
+* A reporting service must count millions of transaction types efficiently. How would you design a frequency counter using hashing?
+* A search application must return the first non-repeating character in a large string. How would you solve it efficiently?
+* A service must identify duplicate customer records across two large datasets. How would you choose a hash-based approach and estimate memory usage?
+* A Java application repeatedly creates HashMaps that grow significantly beyond their initial capacity. How would you reduce resizing overhead?
+* A batch process experiences latency spikes when a HashMap resizes. How would you investigate and reduce the impact?
+* A public API accepts attacker-controlled strings and uses them as hash keys. What risks could arise, and how would you mitigate them?
+* A distributed cache must spread keys across several servers and minimize remapping when a server is added. How would you use consistent hashing?
+* A distributed service loses cache efficiency after a server is removed. How would you redesign key distribution?
+* A high-throughput Java service has multiple threads updating a shared HashMap and occasionally loses updates. How would you correct the concurrency problem?
+* A team replaces HashMap with ConcurrentHashMap but still observes incorrect results from compound operations. How would you investigate atomicity?
+* A service maintains a shared request counter using a ConcurrentHashMap. How would you design updates that remain correct under concurrency?
+* A caching layer must evict the least recently used entry when it reaches capacity. How would you combine a HashMap with a doubly linked list?
+* A product catalog needs fast lookups by product ID and predictable iteration order. Which Java map implementation would you choose and why?
+* A financial service needs sorted keys for range queries rather than only exact-key lookups. Would a hash table be suitable?
+* A memory-constrained application stores millions of small key-value pairs. How would you compare HashMap overhead with alternative data structures?
+* A custom hash table works for insertions and lookups but fails after deleting entries. How would you investigate tombstones and probing sequences?
+* A developer implements linear probing, but searches become slower as the table fills. How would you diagnose clustering and load-factor problems?
+* A service uses composite keys made from several fields, but different combinations unexpectedly map to the same logical entry. How would you design equals() and hashCode()?
+* A data-processing pipeline groups anagrams but consumes excessive memory. How would you optimize the key representation and data structure?
+* A recommendation engine repeatedly checks membership in a large list. How would you use hashing to reduce lookup cost?
+* A microservice uses HashMap for a cache, but its iteration order changes after updates. How would you choose a data structure based on ordering requirements?
+* A distributed application must partition customer records consistently across changing server nodes. How would you compare consistent hashing and rendezvous hashing?
+* A Java application has high garbage-collection overhead caused by temporary maps created during request processing. How would you investigate allocation patterns and improve efficiency?
+* A production incident reveals that hash-based operations occasionally approach O(n) time. How would you profile the code and identify the underlying cause?
+* A Java backend exposes lookup and aggregation operations through REST APIs. How would you design validation, concurrency handling, and performance tests for hash-based processing?

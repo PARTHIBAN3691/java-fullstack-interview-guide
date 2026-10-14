@@ -1,0 +1,30 @@
+* Explain the Angular router's navigation lifecycle and where route guards are executed.
+* How does Angular evaluate CanDeactivate, CanActivateChild, CanActivate, and CanMatch during navigation?
+* How does guard evaluation work when navigating between parent and child routes?
+* How do multiple guards interact when some return synchronous values and others return Observables?
+* What happens when a guard returns an Observable that never emits?
+* How does Angular handle a guard Observable that emits multiple values?
+* How do you cancel or redirect navigation based on asynchronous permission checks?
+* How do you design a functional guard that uses multiple injected services?
+* How do you implement reusable guard logic without duplicating authorization rules?
+* How do you use route data to build a generic role-based authorization guard?
+* How do you implement fine-grained permissions beyond simple role checks?
+* How do you prevent concurrent navigation requests from causing inconsistent authentication checks?
+* How would you handle token refresh when a guard detects an expired access token?
+* How do you avoid recursive navigation and redirect loops in complex guard logic?
+* How does CanMatch support feature flags and alternative route configurations?
+* How do CanMatch and lazy loading work together?
+* How do you protect routes based on asynchronously loaded tenant configuration?
+* How do you implement a CanDeactivate guard that handles both synchronous and asynchronous confirmation?
+* How do you design a reusable unsaved-changes guard for multiple reactive forms?
+* How do you unit-test guards that depend on Router, ActivatedRouteSnapshot, and authentication services?
+* How do you test guard behavior when an Observable succeeds, fails, or never completes?
+* How do you handle authorization failures differently from authentication failures?
+* How do route guards behave during server-side rendering?
+* How do you avoid relying on browser-only APIs inside functional guards?
+* How do you coordinate route guards with HTTP interceptors and centralized authentication handling?
+* How do you preserve the originally requested URL when redirecting users to login?
+* How do you validate access permissions after a user's role changes during an active session?
+* How do you implement tenant-aware routing in a multi-tenant Angular application?
+* Why must server-side APIs enforce authorization even when Angular route guards protect the UI?
+* How would you architect route protection for a large enterprise application with multiple roles, features, and authentication providers?

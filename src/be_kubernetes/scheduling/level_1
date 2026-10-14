@@ -1,0 +1,30 @@
+* Explain the Pod scheduling lifecycle from Pod creation to container startup.
+* How does the Kubernetes Scheduler filter and score candidate nodes?
+* What is the difference between the scheduling and binding phases?
+* How do resource requests influence node selection?
+* What happens when no node has sufficient CPU or memory for a Pod?
+* How do you troubleshoot a Pod stuck in Pending state due to insufficient resources?
+* How do you use nodeSelector to schedule a Spring Boot application on a specific node group?
+* How do you configure required and preferred node affinity?
+* What is the difference between requiredDuringSchedulingIgnoredDuringExecution and preferredDuringSchedulingIgnoredDuringExecution?
+* How do taints and tolerations affect node eligibility?
+* Does adding a toleration guarantee that a Pod will be scheduled on a particular node?
+* How do you dedicate worker nodes to specific workloads?
+* How do you configure Pod affinity to place related microservices close to each other?
+* How do you configure Pod anti-affinity to spread application replicas across nodes?
+* How do topology spread constraints distribute Pods across zones and nodes?
+* What is the difference between Pod anti-affinity and topology spread constraints?
+* How do priority classes influence scheduling decisions?
+* How does preemption work when a high-priority Pod cannot be scheduled?
+* What is the difference between preemption and eviction?
+* How do PersistentVolume topology constraints affect Pod scheduling?
+* How does WaitForFirstConsumer volume binding affect scheduling?
+* How do node selectors and affinity interact with PersistentVolume availability zones?
+* How do DaemonSets differ from Deployments in scheduling behavior?
+* How does a StatefulSet influence Pod placement and scheduling?
+* How does a PodDisruptionBudget affect node maintenance and Pod scheduling?
+* What happens to scheduling when a node is cordoned?
+* How does draining a node affect its existing Pods?
+* How do resource quotas and LimitRanges affect Pod creation and scheduling?
+* How can you inspect scheduler events and determine why a Pod was not scheduled?
+* How would you schedule production Java workloads across multiple availability zones?

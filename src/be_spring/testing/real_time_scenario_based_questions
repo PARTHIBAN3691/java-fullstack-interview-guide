@@ -1,0 +1,30 @@
+* A service method calculates an order total using product prices and discounts. How would you unit test it?
+* A service depends on three repositories and an external API client. How would you isolate its unit tests?
+* A REST controller returns HTTP 200 even when the requested resource does not exist. How would you test and correct this behavior?
+* An API must return HTTP 400 when mandatory request fields are missing. How would you test the validation logic?
+* A global exception handler returns different response formats for different exceptions. How would you verify its behavior?
+* A Spring Boot application starts successfully but fails when connecting to the production database. How would you design integration tests to detect this issue?
+* A repository query works for simple inputs but fails for complex filters. How would you test the query?
+* A transactional service updates two tables, but the second update fails. How would you verify rollback behavior?
+* A payment service must not charge a customer twice when a request is retried. How would you test its idempotency behavior?
+* An external payment gateway frequently times out. How would you test timeout handling and retry logic?
+* A WebClient integration returns malformed JSON from a third-party API. How would you test the error-handling behavior?
+* A controller endpoint is accessible without authentication even though it should be protected. How would you write a security test?
+* Users with a read-only role can modify records through an API. How would you test role-based authorization?
+* A JWT token expires during a request. How would you verify the expected API response?
+* A scheduled job processes the same records multiple times. How would you test duplicate-processing prevention?
+* A Kafka consumer occasionally processes duplicate messages. How would you test idempotent message processing?
+* An asynchronous service test passes locally but fails in CI. How would you investigate and stabilize it?
+* Integration tests pass individually but fail when executed together. What could cause this, and how would you resolve it?
+* Tests pass on an H2 database but fail on PostgreSQL. How would you identify database-specific differences?
+* A database migration succeeds in development but fails in a test environment. How would you validate migration scripts?
+* A Spring Boot application has slow tests because every test starts the full application context. How would you optimize the test suite?
+* A service has 95% line coverage but several production defects. How would you improve the quality of its tests?
+* A microservice depends on five downstream services. How would you test its behavior when each dependency fails independently?
+* A circuit breaker should open after repeated downstream failures. How would you verify its state transitions?
+* A cache returns stale data after an update. How would you write tests for cache invalidation?
+* A file-upload API must reject oversized or unsupported files. How would you test boundary conditions?
+* A batch job processes one million records. How would you test its correctness, restartability, and performance?
+* A production defect occurs only under concurrent requests. How would you reproduce and test the race condition?
+* A CI/CD pipeline has intermittent test failures that block deployments. How would you investigate and prevent recurring failures?
+* You are introducing automated testing into a legacy Spring Boot application with minimal tests. How would you prioritize the initial test suite?

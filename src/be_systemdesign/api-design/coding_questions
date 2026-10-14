@@ -1,0 +1,30 @@
+* Design REST endpoint mappings for creating, retrieving, updating, and deleting a customer using Spring Boot.
+* Implement a REST controller that returns appropriate HTTP status codes for successful and unsuccessful operations.
+* Create a standard API response structure containing status, message, data, and timestamp.
+* Implement global API exception handling using @RestControllerAdvice.
+* Write a request DTO with validation rules for mandatory fields, email format, and minimum values.
+* Implement pagination and sorting for a Spring Data JPA endpoint.
+* Implement filtering and searching for an employee API using query parameters.
+* Design a PATCH endpoint that updates only the fields supplied by the client.
+* Implement API versioning using URL paths in a Spring Boot application.
+* Create an endpoint that returns HTTP 201 and a Location header after creating a resource.
+* Implement an idempotency-key mechanism for an order creation API.
+* Write Java code that validates an idempotency key and returns the original result for duplicate requests.
+* Implement optimistic locking for an order entity using JPA's @Version annotation.
+* Create an API endpoint that supports ETag generation and conditional GET requests.
+* Implement rate limiting for a REST API using a token-bucket algorithm.
+* Implement role-based authorization for selected Spring Boot endpoints.
+* Create a secured REST API using Spring Security and JWT authentication.
+* Implement an asynchronous report-generation API that returns a job identifier and supports status polling.
+* Create a webhook endpoint that verifies request signatures before processing events.
+* Implement webhook deduplication using a unique event identifier.
+* Design a REST API that uploads a file using multipart/form-data and validates its size and type.
+* Implement a global error response for validation failures, missing resources, and unexpected exceptions.
+* Write an API integration test using MockMvc to validate request parameters, response JSON, and HTTP status codes.
+* Implement a REST client with timeouts and controlled retry behavior for transient failures.
+* Create a Spring Boot endpoint that publishes a domain event after a business operation succeeds.
+* Implement a cursor-based pagination response containing items and a next-page cursor.
+* Design a bulk API endpoint that processes multiple records and reports success or failure for each item.
+* Implement a concurrency-safe inventory reservation API that prevents stock from becoming negative.
+* Write a contract test that verifies a REST API response against an OpenAPI specification.
+* Design and implement a Spring Boot order API with validation, versioning, idempotency, pagination, security, and automated tests.

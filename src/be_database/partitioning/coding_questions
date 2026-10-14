@@ -1,0 +1,30 @@
+* Write a MySQL CREATE TABLE statement that implements range partitioning by transaction date.
+* Create a MySQL table with monthly range partitions for order records.
+* Write SQL statements to create a table using list partitioning based on region.
+* Write SQL statements to create a table using hash partitioning based on customer ID.
+* Implement a composite partitioning design for a high-volume transaction table.
+* Write SQL statements to add a new partition to a range-partitioned MySQL table.
+* Write SQL statements to remove an expired partition safely after validating its data.
+* Write a query that displays partition metadata and row estimates for a MySQL table.
+* Write a query and use EXPLAIN to verify that a date filter prunes irrelevant partitions.
+* Create a partitioned audit-log table with a retention policy for historical data.
+* Write SQL statements to exchange, reorganize, or split partitions where supported by the chosen database.
+* Write a migration script that copies records from a non-partitioned table into a partitioned table.
+* Implement a Java JDBC batch-insert program that writes records into a partitioned MySQL table.
+* Create a Spring Boot repository method that retrieves orders using a date range aligned with the partition key.
+* Implement a Spring Boot service that archives old records using partition-based retention operations.
+* Write a Java utility that validates partition boundaries before a scheduled partition-creation job runs.
+* Implement a scheduled Spring Boot job that creates future monthly partitions before they are needed.
+* Write a Java integration test that verifies records are routed to the expected partitions.
+* Create a Testcontainers-based integration test that validates MySQL partitioning behavior and query results.
+* Write a SQL query to compare row counts between the original table and its partitioned replacement.
+* Implement a data-migration process that synchronizes concurrent writes during a partitioning migration.
+* Write a Java service that performs bulk inserts and measures throughput across different batch sizes.
+* Create a SQL benchmark comparing indexed non-partitioned queries with partition-pruned queries.
+* Implement a diagnostic utility that records query execution time and flags queries that scan unnecessary partitions.
+* Write SQL queries to identify uneven partition sizes and potential data skew.
+* Implement a partition-maintenance job that logs success and failure and sends alerts when partition creation fails.
+* Write a migration script that handles the MySQL unique-key restrictions associated with partitioned tables.
+* Implement a Spring Boot service that queries a partitioned transaction table using customer ID and transaction date.
+* Write an integration test that verifies historical data can be archived without affecting recent transaction queries.
+* Design and implement a scalable partitioning strategy for a Java Spring Boot transaction-processing system using MySQL.

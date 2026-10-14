@@ -1,0 +1,30 @@
+* You are asked to design a parking lot system supporting cars, bikes, trucks, multiple floors, and different parking spot types. How would you identify the classes and relationships?
+* An e-commerce application supports multiple payment providers, and new providers are frequently added. How would you design the payment module?
+* A notification service must support email, SMS, push notifications, and future channels. Which abstractions and design patterns would you use?
+* A discount engine supports percentage discounts, fixed discounts, coupons, and customer-specific promotions. How would you design it for extensibility?
+* A shopping cart supports different pricing rules, taxes, and promotions. How would you separate responsibilities among the classes?
+* A library management system must manage books, physical copies, members, reservations, and overdue fines. How would you design the domain model?
+* A vehicle rental system supports cars, bikes, hourly rentals, and daily rentals. How would you model the different rental policies?
+* A food delivery application must assign delivery partners based on distance, availability, and delivery priority. How would you design the assignment logic?
+* A hotel booking system must support rooms, reservations, cancellations, and different pricing policies. What classes and interfaces would you introduce?
+* A ticket booking system must prevent two users from booking the same seat. How would you model seat states and booking responsibilities?
+* A vending machine supports multiple products, cash payments, card payments, and refunds. How would you design its state transitions?
+* A chess application must support different pieces, valid moves, check, checkmate, and undo operations. How would you structure the classes?
+* An elevator control system must manage multiple elevators, floors, requests, and scheduling policies. How would you separate the responsibilities?
+* A logging framework must support console, file, and remote logging with configurable levels. How would you design it?
+* A file storage application must support local storage, cloud storage, and different file formats. How would you keep the storage implementations interchangeable?
+* A payroll system supports permanent employees, contractors, bonuses, deductions, and multiple salary calculation rules. How would you design the model?
+* An employee management system has a large service class handling hiring, payroll, leave, and performance reviews. How would you refactor it?
+* A ride-hailing system supports multiple vehicle types and fare calculation strategies. How would you model fare calculation and driver assignment?
+* A workflow engine must support configurable steps, retries, conditional transitions, and failure handling. Which patterns would you use?
+* A banking application supports savings accounts, current accounts, transfers, withdrawals, and transaction limits. How would you model account behavior and enforce business rules?
+* A document editor supports undo, redo, and command history. How would you design these features using object-oriented principles?
+* A reporting application generates PDF, CSV, and Excel reports using different data sources. How would you design the report generation framework?
+* A game character can switch between walking, running, swimming, and flying. How would you model behavior changes without creating a large inheritance hierarchy?
+* A multi-tenant application requires tenant-specific validation and pricing policies. How would you design the policy resolution mechanism?
+* A legacy application has circular dependencies among services and repositories. How would you identify and remove those dependencies?
+* A shopping application needs to support multiple shipping providers and shipping cost algorithms. How would you make the design extensible?
+* A notification system sends duplicate notifications when multiple events arrive concurrently. How would you redesign the object interactions and state management?
+* A system must support new authentication methods without modifying existing business services. How would you design the authentication abstraction?
+* A domain object can only transition from CREATED to APPROVED or REJECTED, and approved objects cannot be modified. How would you enforce these rules?
+* An application has hundreds of conditional branches based on customer type. How would you redesign the code to make adding new customer types safer?

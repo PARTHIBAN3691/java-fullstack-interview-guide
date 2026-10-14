@@ -1,0 +1,84 @@
+**Embedding Fundamentals**
+* Implement a Java interface for generating embeddings from text with configurable model identifiers and batch input.
+* Write a document-ingestion service that hashes normalized content and skips embedding generation when the content has not changed.
+* Implement validation for embedding dimensions, finite numeric values, empty inputs, and unexpected provider responses.
+* Write unit tests for embedding generation failures, retries, duplicate documents, and partial batch completion.
+
+**Text and Multimodal Embeddings**
+* Implement a Java abstraction that represents text, image, and audio embedding requests with modality-specific validation.
+* Build a text-to-image retrieval example that stores image embeddings with source metadata and searches them using text queries.
+* Implement a result-merging function for text and image search that supports configurable ranking weights.
+* Write tests for unsupported modalities, incompatible dimensions, invalid media files, and missing metadata.
+
+**Semantic Similarity**
+* Implement a Java function that ranks candidate documents by semantic similarity to a query embedding.
+* Build a duplicate-question detector that uses a configurable similarity threshold.
+* Implement an evaluation utility that calculates precision, recall, and F1 score from labeled semantic matches.
+* Write tests for paraphrases, unrelated content, negation, empty vectors, and threshold boundary conditions.
+
+**Cosine Similarity and Distance Metrics**
+* Implement cosine similarity, dot-product similarity, and Euclidean distance in Java.
+* Write unit tests for normalized and unnormalized vectors, zero vectors, different dimensions, and invalid numeric values.
+* Implement a top-k ranking function that supports configurable similarity metrics and deterministic tie-breaking.
+* Build a benchmark comparing rankings and execution time for cosine similarity, dot product, and Euclidean distance.
+
+**Vector Indexing**
+* Implement a simple exact nearest-neighbor index for a small in-memory collection of vectors.
+* Build a batch-ingestion process that inserts vectors and associated metadata into a vector database.
+* Implement a vector-index configuration validator that checks metric compatibility and index-specific parameter constraints.
+* Write an integration test that verifies insert, update, search, and delete operations against the selected vector database.
+
+**Approximate Nearest Neighbor (ANN) Search**
+* Implement a benchmark that compares ANN results against exact nearest-neighbor search using recall@k.
+* Write a test harness that measures latency percentiles, throughput, and recall for different index parameters.
+* Implement configurable search parameters for an ANN query service and validate allowed parameter ranges.
+* Build a workload generator that evaluates ANN performance across multiple dataset sizes and query distributions.
+
+**Vector Database Architecture**
+* Implement a Spring Boot REST API for document ingestion, vector search, metadata retrieval, and document deletion.
+* Define a persistence model for documents, chunks, embedding versions, and source metadata.
+* Implement tenant-aware repository methods that enforce tenant scope for every retrieval and deletion operation.
+* Write integration tests for persistence failures, duplicate ingestion, recovery, and tenant isolation.
+
+**Metadata Filtering**
+* Implement a filter builder supporting equality, ranges, set membership, and logical AND/OR conditions.
+* Build a tenant-scoped search endpoint that combines metadata constraints with vector similarity.
+* Write tests proving that unauthorized records cannot appear in results, including when optional filters are omitted or malformed.
+* Implement a result-validation layer that checks current document permissions before returning cached or retrieved content.
+
+**Hybrid Search**
+* Implement a hybrid retrieval service that combines keyword-search and vector-search candidates.
+* Implement Reciprocal Rank Fusion to merge rankings from two or more retrievers.
+* Write tests for duplicate candidates, missing results from one retriever, ties, and configurable rank-fusion parameters.
+* Build a benchmark comparing keyword-only, vector-only, and hybrid retrieval using a labeled query dataset.
+
+**Reranking**
+* Implement a reranking interface that accepts a query and candidate documents and returns a ranked list.
+* Build a two-stage retrieval pipeline with configurable candidate count and a pluggable cross-encoder reranker.
+* Implement a timeout-aware reranking client that falls back to initial retrieval rankings when the reranker fails.
+* Write tests that measure ranking changes, candidate truncation, duplicate handling, and fallback behavior.
+
+**Chunking Strategies**
+* Implement a fixed-size text chunker with configurable token or character limits and overlap.
+* Build a structure-aware chunker that preserves headings, paragraphs, code blocks, and source references.
+* Implement table chunking that keeps column headers associated with the relevant rows.
+* Write tests for empty documents, oversized sections, Unicode text, chunk overlap, and reconstruction of source positions.
+
+**Embedding Model Selection**
+* Implement a model registry that stores supported dimensions, maximum input sizes, language coverage, and model versions.
+* Build an evaluation runner that compares candidate embedding models using a labeled query-document dataset.
+* Implement a configurable embedding-model selector based on language, task type, latency budget, and cost constraints.
+* Write tests that verify model configuration changes do not mix incompatible query and document embeddings.
+
+**Embedding Versioning**
+* Implement an embedding metadata record containing model ID, model version, preprocessing version, dimensions, and creation timestamp.
+* Build a dual-index migration workflow that backfills a new index while the existing index continues serving traffic.
+* Implement a reconciliation job that identifies documents missing vectors for the target embedding version.
+* Write tests for interrupted migrations, duplicate processing, rollback, and index cutover validation.
+
+**Vector Database Performance Optimization**
+* Implement a benchmark that measures ingestion throughput, query latency percentiles, memory consumption, and recall@k.
+* Build a batch embedding and ingestion pipeline with bounded concurrency and configurable batch sizes.
+* Implement a cache for repeated vector-search queries with authorization-aware cache keys and invalidation.
+* Write a load test that evaluates performance under concurrent search, ingestion, metadata filtering, and deletion workloads.
+* Implement an adaptive query configuration that changes candidate count or search effort based on a request's latency budget and quality requirements.

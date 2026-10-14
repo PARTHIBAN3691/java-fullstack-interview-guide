@@ -1,0 +1,30 @@
+* Write a Java method that maps a user ID to a shard using modulo-based hashing.
+* Implement a Java hash-based shard router that maps records to database connections.
+* Write a Java implementation of range-based sharding for customer IDs.
+* Implement a consistent-hashing ring in Java to distribute keys across database shards.
+* Extend a consistent-hashing implementation to support virtual nodes.
+* Write a Java class that maintains shard metadata and resolves a shard for a given key.
+* Implement a shard router that supports adding and removing database nodes.
+* Write a Java utility that calculates record distribution and detects shard imbalance.
+* Implement a shard-selection strategy using configurable shard keys.
+* Write a Spring Boot service that routes user CRUD operations to the correct database shard.
+* Implement a Java DataSource router that selects a database connection based on a tenant ID.
+* Write a Java method that validates whether a request contains the required shard key.
+* Implement a paginated query that retrieves records from multiple shards and merges the results.
+* Write a Java utility that merges sorted result sets from multiple shards using a priority queue.
+* Implement a parallel aggregation that calculates total order value across multiple shards.
+* Write a Java service that generates globally unique IDs using a timestamp and worker identifier.
+* Implement a distributed ID generator that avoids collisions between multiple application instances.
+* Write a Java method that detects hot keys from a stream of access events.
+* Implement a shard-routing cache with safe invalidation when routing metadata changes.
+* Write a Java migration service that copies records from an old shard to a new shard in batches.
+* Implement idempotent dual writes to old and new shards during a migration.
+* Write a Java reconciliation utility that compares record counts and checksums across source and destination shards.
+* Implement a retry mechanism for transient shard failures with timeouts and a circuit breaker.
+* Write a Java service that handles partial failures when a query spans multiple shards.
+* Implement a tenant-aware repository that prevents access to records belonging to another tenant.
+* Write a Java utility that detects duplicate business keys across multiple shards.
+* Implement a shard rebalancing algorithm that minimizes data movement when a new shard is added.
+* Write a Java integration test that verifies correct routing for thousands of keys across multiple shards.
+* Implement a failover mechanism that redirects reads to an available replica when a shard primary fails.
+* Build a Spring Boot application with multiple database connections, configurable shard routing, migration support, and shard-level metrics.

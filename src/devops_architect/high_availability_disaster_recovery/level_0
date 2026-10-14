@@ -1,0 +1,121 @@
+
+**High Availability Architecture**
+* What is high availability (HA)?
+* Why is high availability important for business-critical applications?
+* What is a single point of failure?
+* What are redundancy and fault tolerance?
+* What is the difference between high availability and scalability?
+* What is the purpose of health checks in an HA architecture?
+
+**Active-Active**
+* What is an active-active architecture?
+* How does active-active deployment distribute traffic?
+* What are the advantages of active-active deployment?
+* What challenges arise when multiple instances process writes concurrently?
+* What is the difference between active-active application servers and active-active databases?
+
+**Active-Passive**
+* What is an active-passive architecture?
+* How does a standby instance take over when the primary fails?
+* What are the advantages and disadvantages of active-passive deployment?
+* What is a hot standby, warm standby, and cold standby?
+* What is the difference between active-passive and active-active deployment?
+
+**Multi-AZ**
+* What is an Availability Zone (AZ)?
+* Why do cloud applications deploy across multiple availability zones?
+* How does multi-AZ deployment improve availability?
+* What is the difference between an availability zone and a region?
+* What types of failures can multi-AZ deployment protect against?
+
+**Multi-Region**
+* What is a multi-region architecture?
+* Why would an application be deployed across multiple geographic regions?
+* What is the difference between multi-AZ and multi-region deployment?
+* What are the main challenges of multi-region deployment?
+* What is regional failover?
+
+**Disaster Recovery**
+* What is disaster recovery (DR)?
+* What is the difference between high availability and disaster recovery?
+* What are the common disaster recovery strategies?
+* Why is a disaster recovery plan necessary?
+* What is the difference between a disaster and an ordinary service failure?
+
+**Backup Strategies**
+* What is a full backup?
+* What is an incremental backup?
+* What is a differential backup?
+* What is point-in-time recovery?
+* Why should backups be stored separately from the primary production environment?
+* What is an immutable backup?
+
+**Restore Strategies**
+* What is the difference between backup and restore?
+* Why should backups be tested through actual restore operations?
+* What is point-in-time database restoration?
+* What are the common challenges when restoring a large database?
+* Why must application configuration and dependencies also be considered during restoration?
+
+**Recovery Point Objective (RPO)**
+* What is RPO?
+* How does RPO define acceptable data loss?
+* What does an RPO of zero mean?
+* How does backup frequency affect RPO?
+* Why can asynchronous replication result in non-zero RPO?
+
+**Recovery Time Objective (RTO)**
+* What is RTO?
+* How does RTO define acceptable downtime?
+* What is the difference between RTO and RPO?
+* Which factors influence recovery time?
+* How do automation and standby infrastructure affect RTO?
+
+**Disaster Recovery Testing**
+* Why is disaster recovery testing important?
+* What is a disaster recovery drill?
+* What is the difference between a tabletop exercise and a technical recovery test?
+* What should be validated during a DR test?
+* Why should DR test results be documented?
+
+**Failover**
+* What is failover?
+* What is the difference between failover and failback?
+* What is manual failover?
+* What conditions can trigger failover?
+* Why is health monitoring important for failover?
+
+**Automatic Failover**
+* What is automatic failover?
+* How does a system detect primary-node failure?
+* What are the benefits of automatic failover?
+* What risks can arise from incorrect failure detection?
+* Why is automatic failover not always immediate?
+
+**Database Replication**
+* What is database replication?
+* What is the difference between synchronous and asynchronous replication?
+* What is a database primary and replica?
+* What is read replication?
+* How does replication improve availability?
+
+**Cross-Region Replication**
+* What is cross-region replication?
+* Why is cross-region replication used for disaster recovery?
+* What is replication lag?
+* How does cross-region replication differ from a regional backup?
+* What challenges arise from network latency between regions?
+
+**Backup Encryption**
+* Why should backups be encrypted?
+* What is encryption at rest?
+* What is the difference between symmetric and asymmetric encryption?
+* What is a Key Management Service (KMS)?
+* Why must encryption keys be protected separately from backup data?
+
+**Business Continuity**
+* What is business continuity?
+* How does business continuity differ from disaster recovery?
+* What are the key components of a business continuity plan?
+* Why are business impact analysis and recovery priorities important?
+* What roles do communication and stakeholder coordination play during a disaster?

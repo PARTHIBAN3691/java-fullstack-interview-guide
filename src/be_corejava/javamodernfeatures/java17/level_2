@@ -1,0 +1,21 @@
+
+* Explain the complete inheritance rules for sealed classes and their permitted subclasses in Java 17.
+* What restrictions apply to sealed classes and their permitted subclasses across packages and modules?
+* How do sealed classes support exhaustive type modeling, and what limitations remain in Java 17?
+* How would you design a public API using sealed interfaces while preserving future extensibility?
+* What compatibility challenges arise when adding or removing a permitted subclass from a sealed hierarchy?
+* How do records enforce shallow immutability, and how can defensive copying provide stronger guarantees?
+* How would you use records and sealed interfaces together to model immutable domain events?
+* Explain the interaction between pattern matching for `instanceof` and complex Boolean expressions.
+* Why does Java 17 not support pattern matching for `switch` as a standard feature?
+* What is the difference between Java 17's finalized pattern matching for `instanceof` and the preview pattern matching for `switch`?
+* How does `HexFormat` handle byte ordering, delimiters, prefixes, suffixes, and invalid hexadecimal input?
+* How would you safely convert hexadecimal input into bytes and validate malformed input?
+* What considerations matter when selecting a `RandomGenerator` implementation for simulation, parallel processing, or security-sensitive operations?
+* Why should general-purpose pseudo-random generators not automatically be used for cryptographic purposes?
+* How can splitting random generators improve parallel simulation workloads?
+* What are the limitations of the Foreign Function and Memory API incubator in Java 17?
+* How does Java 17's strong encapsulation affect reflective access to internal JDK packages?
+* How would you troubleshoot `InaccessibleObjectException` after upgrading an application to Java 17?
+* What are the risks of using `--add-opens` to work around strong encapsulation?
+* How would you plan a migration from Java 11 to Java 17 for a large Spring Boot microservices system?

@@ -1,0 +1,30 @@
+* Write a Java program to manage project tasks with task ID, title, assignee, priority, and status.
+* Implement a Java class to represent projects, milestones, and delivery dates.
+* Write a Java method to calculate project completion percentage from task statuses.
+* Implement a Java program to identify overdue tasks based on their due dates.
+* Write a Java method to calculate the remaining effort for a project using estimated and completed work.
+* Implement a task-prioritization algorithm based on business value, urgency, and risk.
+* Write a Java program to track sprint commitments and completed story points.
+* Use Java Streams to group project tasks by status and assignee.
+* Implement a Java method to calculate sprint capacity based on team availability and planned leave.
+* Write a Java program to identify tasks that are blocked by incomplete dependencies.
+* Implement a project milestone tracker that identifies delayed milestones.
+* Write a Java method to calculate the schedule variance between planned and actual completion dates.
+* Implement a simple risk register with risk severity, probability, impact, and mitigation actions.
+* Write a Java program to identify the critical path in a project dependency graph.
+* Implement a task assignment service that distributes work based on developer capacity and skills.
+* Write unit tests using JUnit 5 for a project progress calculation service.
+* Use Mockito to test a service that retrieves project tasks from a repository.
+* Implement validation for project deadlines, task dependencies, and milestone dates.
+* Write a Java program to generate a project status report from task and milestone data.
+* Implement a change-request workflow that tracks requested scope changes and their approval status.
+* Use the Strategy pattern to support different project estimation approaches.
+* Implement the Observer pattern to notify stakeholders when milestones are delayed.
+* Use the State pattern to manage project statuses such as PLANNED, IN_PROGRESS, ON_HOLD, and COMPLETED.
+* Write a Java program to calculate resource utilization across multiple projects.
+* Implement a scheduling service that detects resource conflicts between project assignments.
+* Write a Java method to compare planned and actual project costs and calculate cost variance.
+* Implement a REST API using Spring Boot to create projects, assign tasks, update statuses, and retrieve progress.
+* Write a Java program to identify high-risk dependencies and generate mitigation recommendations.
+* Implement a project reporting service that aggregates progress across multiple teams and milestones.
+* Design a scalable Java-based project management system supporting project planning, task dependencies, resource allocation, risk tracking, reporting, and audit history.

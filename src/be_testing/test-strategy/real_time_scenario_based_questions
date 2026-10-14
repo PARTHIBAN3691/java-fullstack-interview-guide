@@ -1,0 +1,30 @@
+* Your team is building a new Java application with a tight deadline. How would you create a practical test strategy?
+* A production defect escaped despite all regression tests passing. How would you review and improve the test strategy?
+* Your application has 5,000 automated tests that take four hours to execute. How would you optimize the strategy?
+* The business requires a release tomorrow, but testing is only 60% complete. How would you prioritize the remaining tests?
+* Your application contains critical payment functionality and low-risk reporting functionality. How would you allocate testing effort?
+* A microservices application has 20 independently deployed services. How would you organize testing across the services?
+* Your team relies heavily on end-to-end tests, and failures are difficult to diagnose. How would you improve the testing approach?
+* Developers write unit tests, but integration defects frequently reach production. What changes would you make?
+* A service depends on several unstable third-party APIs. How would you design the test strategy?
+* Your application processes events asynchronously through Kafka. How would you test the complete workflow?
+* A new release includes database schema changes that may affect existing functionality. What tests would you prioritize?
+* Your regression suite frequently fails because of shared test data. How would you address this strategically?
+* A business-critical API must support high traffic and strict latency requirements. How would you combine functional and performance testing?
+* Your team wants to automate every manual test case. How would you evaluate whether this is the right strategy?
+* The application has poor test coverage in legacy modules. How would you identify the highest-value areas to improve first?
+* Your organization wants to introduce continuous delivery. How would you adapt the testing strategy to support frequent releases?
+* A production incident reveals a security vulnerability. How would you incorporate the lesson into future testing?
+* The QA team and development team disagree about release readiness. How would you define objective release criteria?
+* Your application has frequent flaky tests in the CI pipeline. How would you prioritize investigation and remediation?
+* The test environment is significantly different from production. How would you reduce the risk of environment-related defects?
+* Your team needs to test a migration from a monolith to microservices. How would you validate functional parity and data consistency?
+* A new feature changes several downstream services. How would you identify the required regression scope?
+* Your organization has limited performance testing infrastructure. How would you prioritize performance tests?
+* A release passes functional tests but fails load testing. How would you make the release decision?
+* Your application uses OAuth2 and role-based access control. How would you incorporate security and authorization testing?
+* A deployment uses canary releases with only a small percentage of traffic initially routed to the new version. How would you validate it?
+* Management asks for a single metric to represent overall test quality. How would you explain the limitations and propose a better approach?
+* Your test suite has high code coverage but still misses important business defects. How would you improve test effectiveness?
+* Several teams maintain separate automation frameworks with duplicated utilities. How would you establish a common testing strategy?
+* How would you present a test strategy, major risks, quality metrics, and release recommendations to senior management?

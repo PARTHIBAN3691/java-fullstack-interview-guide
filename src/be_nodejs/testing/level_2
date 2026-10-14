@@ -1,0 +1,30 @@
+* How would you design a comprehensive testing strategy for a large Node.js microservices application?
+* How do you decide which components require unit tests, integration tests, and end-to-end tests?
+* How do you test complex asynchronous workflows involving multiple Promises?
+* How do you test race conditions in asynchronous Node.js code?
+* How do you test concurrent requests that update the same database record?
+* How do you test transaction rollback and data consistency?
+* How do you implement contract testing between Node.js microservices?
+* What is consumer-driven contract testing, and when would you use it?
+* How do you test a Node.js application that depends on multiple external services?
+* How do you avoid over-mocking dependencies in unit tests?
+* How do you test dependency injection and service-layer abstractions?
+* How do you test stream processing when data arrives in multiple chunks?
+* How do you test backpressure handling in Node.js streams?
+* How do you test memory leaks and resource cleanup in long-running tests?
+* How do you test graceful shutdown and connection cleanup?
+* How do you test rate limiting and throttling middleware?
+* How do you test retry mechanisms with exponential backoff?
+* How do you test idempotency in payment or order-processing APIs?
+* How do you test duplicate message handling in event-driven applications?
+* How do you test eventual consistency across multiple services?
+* How do you test security vulnerabilities such as SQL injection and broken access control?
+* How do you test performance and throughput under concurrent load?
+* What is the difference between load testing, stress testing, and soak testing?
+* How do you identify and fix flaky tests in a CI/CD pipeline?
+* How do you test backward compatibility when changing an API contract?
+* How do you test database migrations safely?
+* How do you test caching behavior, cache invalidation, and stale data scenarios?
+* How do you measure meaningful test coverage rather than simply maximizing coverage percentages?
+* How do you parallelize test execution without creating shared-resource conflicts?
+* How would you design a maintainable test architecture for a Node.js monorepo?

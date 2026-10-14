@@ -1,0 +1,30 @@
+* How would you design a partitioning strategy for a database containing billions of records?
+* How do you select a shard key that balances read performance, write throughput, and data distribution?
+* How do you design a partitioning scheme when queries use several different access patterns?
+* How do you minimize cross-partition queries in a distributed database?
+* How do you maintain transactional consistency across multiple database partitions?
+* What are the trade-offs between distributed transactions and application-level coordination across shards?
+* How do you implement cross-shard joins efficiently?
+* How would you design global secondary indexes for a sharded database?
+* How do you handle unique constraints when records are distributed across multiple shards?
+* How do you prevent a single tenant from creating a hot shard in a multi-tenant system?
+* How would you implement dynamic sharding when data volume grows unpredictably?
+* How do you migrate from a single database to a sharded architecture without downtime?
+* How do you perform online resharding while supporting concurrent reads and writes?
+* How do you maintain consistency while moving records between partitions?
+* How do you prevent data loss and duplication during partition migration?
+* How do you design a partitioning strategy that supports both historical queries and recent writes?
+* How do you combine time-based partitioning with hash-based partitioning?
+* How do you handle late-arriving events in time-partitioned data?
+* How do you design partition placement across regions and availability zones?
+* How do you balance data locality against fault tolerance and replication requirements?
+* How do you implement consistent hashing with virtual nodes, and what problems does it solve?
+* How does rendezvous hashing compare with consistent hashing?
+* How do you minimize data movement when nodes are added or removed?
+* How do you handle uneven partition ownership after node failures?
+* How do you design Kafka partitioning for high throughput while preserving per-customer ordering?
+* How do you change a Kafka partitioning strategy when the existing key distribution becomes skewed?
+* How do you handle repartitioning in a streaming pipeline when downstream state depends on the original partition key?
+* How do you design partition-aware caching for a distributed application?
+* How do you evaluate the impact of partitioning on availability, consistency, and operational complexity?
+* How would you design automated partition management for a distributed storage platform?

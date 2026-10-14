@@ -1,0 +1,29 @@
+* How would you design an ADF pipeline to move data from Azure Blob Storage to Azure SQL Database?
+* How would you configure a linked service for an Azure SQL Database?
+* How would you securely store credentials used by Azure Data Factory?
+* How would you integrate Azure Key Vault with ADF?
+* How would you parameterize a pipeline so that the same pipeline can process multiple files or tables?
+* What is the difference between pipeline parameters, variables, and dataset parameters?
+* How would you pass values from a parent pipeline to a child pipeline?
+* How would you implement a reusable ADF pipeline?
+* How would you process multiple files from a storage location dynamically?
+* How would you use Get Metadata activity in ADF?
+* How would you use ForEach activity to process multiple files?
+* How would you implement conditional processing using If Condition activity?
+* How would you handle dependencies between activities?
+* How would you implement success and failure paths in an ADF pipeline?
+* How would you implement retry logic for an activity?
+* How would you handle a failed pipeline and restart processing from the failed step?
+* How would you implement incremental data loading using ADF?
+* What is the difference between full load and incremental load?
+* How would you implement watermark-based incremental loading?
+* How would you handle duplicate records during an incremental load?
+* How would you implement CDC-based data ingestion using Azure Data Factory?
+* How would you move large volumes of data efficiently using Copy Activity?
+* What factors affect Copy Activity performance?
+* How would you monitor pipeline execution and activity failures?
+* How would you troubleshoot a slow ADF pipeline?
+* How would you integrate an ADF pipeline with a Java application?
+* How can a Java application trigger an ADF pipeline?
+* How would you retrieve the execution status of an ADF pipeline from a Java application?
+* How would you handle asynchronous ADF pipeline execution from a Java service?

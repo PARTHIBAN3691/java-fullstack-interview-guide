@@ -1,0 +1,30 @@
+* A Java batch Job starts successfully but never reaches the Complete state. How would you investigate the Pod status, application logs, and Job conditions?
+* Your Job repeatedly fails because the container exits with a non-zero status. How would you identify whether the cause is application logic, configuration, or infrastructure?
+* A Job is configured for ten completions, but only six tasks succeed. How would you determine why the remaining tasks are not progressing?
+* Your batch Job processes payment records, and a Pod crashes after writing to the database but before reporting success. How would you prevent duplicate payments during retries?
+* A large Job creates hundreds of Pods and overwhelms the database connection pool. How would you control concurrency and protect the database?
+* Your Java batch application takes longer than the configured activeDeadlineSeconds. How would you decide whether to increase the deadline or optimize the processing?
+* A Job keeps retrying a permanent validation error. How would you configure failure handling so that non-retryable errors stop unnecessary retries?
+* Some tasks in an Indexed Job fail while the other indexes succeed. How would you identify failed indexes and recover without reprocessing all completed work?
+* A batch Job is stuck in Pending because the cluster has insufficient resources. How would you troubleshoot scheduling constraints and resource capacity?
+* Your Job Pods enter ImagePullBackOff after a release. How would you diagnose image references and registry authentication?
+* A Job requires a database password, but authentication fails after a Secret is updated. How would you investigate credential propagation and connection initialization?
+* A scheduled reconciliation Job starts while its previous execution is still running. How would you prevent overlapping executions and duplicate processing?
+* Your Job completes successfully, but the expected output file is missing. How would you investigate application logic, volume mounts, and output persistence?
+* A batch Job processes a large input file, but it restarts from the beginning after a node failure. How would you implement checkpoints and resume processing?
+* A Job processes records in parallel, but the same record is handled by multiple Pods. How would you redesign partitioning and concurrency control?
+* Your database migration Job succeeds in staging but fails in production because of schema differences. How would you investigate and make the migration safer?
+* A Job's Pods are repeatedly terminated during cluster maintenance. How would you improve interruption handling and recovery?
+* A batch process must call a rate-limited external API. How would you prevent parallel Job Pods from exceeding the API's limits?
+* A Job finishes, but its Pods and logs are cleaned up before the support team can investigate a later issue. How would you configure retention and centralized logging?
+* A Job is marked Failed even though most of its tasks completed successfully. How would you inspect the failure policy, retries, and completion requirements?
+* Your team needs to run the same batch process across several million customer records. How would you partition the input and determine the appropriate parallelism?
+* A batch Job consumes excessive memory and gets OOMKilled while processing large files. How would you optimize memory usage and configure resource limits?
+* A Java process ignores termination signals and leaves partially written output when a Job Pod is terminated. How would you implement graceful shutdown and atomic output handling?
+* A Job that sends notification emails retries after a network timeout and sends duplicate emails. How would you design idempotency and delivery tracking?
+* A Job depends on another Job's output, but it starts before the output is ready. How would you implement dependency management?
+* Your CI/CD pipeline starts the same migration Job twice during concurrent deployments. How would you prevent concurrent execution and protect the database?
+* A Job uses the default service account and has excessive permissions. How would you apply least-privilege access using ServiceAccounts and RBAC?
+* A batch workload works on one cluster but fails on another because of namespace quotas and scheduling policies. How would you diagnose the environmental differences?
+* A Job completes with exit code zero, but the business processing is incomplete because some records were silently skipped. How would you improve application-level validation and reporting?
+* You need to run a critical nightly settlement Job with reliable recovery, auditability, and alerts. How would you design the complete solution?

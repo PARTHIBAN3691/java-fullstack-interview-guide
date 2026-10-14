@@ -1,0 +1,89 @@
+**AIOps Fundamentals**
+
+* How would you design an AIOps platform that ingests telemetry from applications, infrastructure, cloud services, and deployment pipelines?
+* How would you measure AIOps effectiveness using incident detection time, mean time to acknowledge, mean time to recovery, and alert noise?
+
+**AI-Based Log Analysis**
+
+* How would you normalize logs from Java applications, Kubernetes, databases, and cloud services before applying AI-based analysis?
+* How would you combine log parsing, semantic search, clustering, and LLM summarization to investigate recurring production failures?
+
+**Intelligent Alert Correlation**
+
+* How would you correlate alerts using service dependencies, timestamps, topology, severity, and deployment information?
+* How would you distinguish multiple symptoms of one incident from independent incidents occurring simultaneously?
+
+**Anomaly Detection**
+
+* How would you detect abnormal latency, error rates, memory usage, and traffic patterns without generating excessive false positives?
+* How would you handle seasonality, workload changes, missing telemetry, and changing baselines in anomaly detection?
+
+**Root Cause Analysis**
+
+* How would you combine distributed traces, metrics, logs, service dependency maps, and change events to rank possible root causes?
+* How would you distinguish a root cause from downstream symptoms when multiple services fail together?
+
+**Incident Summarization**
+
+* How would you generate an incident timeline from alerts, logs, deployment records, and engineer comments?
+* How would you ensure incident summaries distinguish confirmed facts, hypotheses, remediation actions, and unresolved questions?
+
+**Predictive Incident Detection**
+
+* How would you train a model to predict incidents from historical telemetry and deployment data?
+* How would you avoid data leakage and evaluate prediction lead time, precision, recall, and false-alarm rates?
+
+**Automated Incident Response**
+
+* How would you design an automated response workflow with diagnosis, action selection, precondition checks, execution, and post-action verification?
+* How would you make remediation idempotent and prevent repeated actions during persistent incidents?
+
+**AI-Assisted CI/CD**
+
+* How would you use AI to identify flaky tests, summarize failed builds, recommend fixes, and assess deployment readiness?
+* How would you integrate AI into a pipeline without allowing model-generated advice to bypass mandatory test, security, or approval gates?
+
+**AI-Generated Infrastructure as Code**
+
+* How would you generate Terraform or Kubernetes configuration from requirements while enforcing organizational standards?
+* How would you validate generated infrastructure code using formatting, static analysis, policy checks, plan review, and security scanning?
+
+**AI-Assisted Kubernetes Troubleshooting**
+
+* How would you diagnose `CrashLoopBackOff`, `Pending` pods, `OOMKilled` containers, and failed readiness probes using cluster telemetry?
+* How would you combine Kubernetes events, application logs, resource metrics, and recent deployment changes to recommend a fix?
+
+**AI for Cloud Cost Optimization**
+
+* How would you identify idle resources, oversized workloads, expensive data transfers, and inefficient storage using AI-assisted FinOps analysis?
+* How would you recommend cost-saving actions while respecting availability requirements, workload criticality, and service-level objectives?
+
+**AI-Powered Capacity Planning**
+
+* How would you forecast capacity using historical utilization, traffic seasonality, growth trends, and planned releases?
+* How would you translate predicted demand into Kubernetes replica counts, node capacity, database sizing, and cloud budgets?
+
+**AI Runbook Automation**
+
+* How would you convert an existing operational runbook into a controlled workflow with explicit preconditions and success criteria?
+* How would you handle retries, partial failures, approval steps, and rollback when a runbook spans multiple infrastructure services?
+
+**AI Change Risk Prediction**
+
+* How would you estimate deployment risk using code changes, service criticality, test results, historical failures, and rollback complexity?
+* How would you incorporate a risk score into canary analysis, deployment sequencing, and release approval?
+
+**AI-Assisted Security Operations**
+
+* How would you enrich security alerts with threat intelligence, asset context, identity information, and historical incidents?
+* How would you use AI to prioritize security alerts while maintaining evidence, analyst review, and reproducible decisions?
+
+**Human Approval for Automated Remediation**
+
+* How would you define risk-based approval policies for actions such as restarting a pod, scaling a service, rotating credentials, or blocking network traffic?
+* How would you ensure that approval requests contain sufficient evidence, expected impact, rollback instructions, and an audit trail?
+
+**Reliability and Safety of AIOps**
+
+* How would you design fallbacks when the AI model, telemetry pipeline, or external provider becomes unavailable?
+* How would you test AI operational recommendations for correctness, repeatability, safety, and resilience before production rollout?

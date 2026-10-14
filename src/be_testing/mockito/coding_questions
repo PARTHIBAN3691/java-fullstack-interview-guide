@@ -1,0 +1,30 @@
+* Write a Mockito test for a service that depends on a repository.
+* Create a mock repository using Mockito.mock() and stub a findById() method.
+* Write a JUnit test using @Mock and @InjectMocks.
+* Write a Mockito test that verifies a repository method is called exactly once.
+* Write a Mockito test that verifies a method is never called.
+* Write a Mockito test using times() to verify multiple invocations.
+* Write a Mockito test using anyString() and anyInt() argument matchers.
+* Write a Mockito test using eq() to match a specific method argument.
+* Write a Mockito test using ArgumentCaptor to capture a saved entity.
+* Write a Mockito test for a service method that returns Optional.empty().
+* Write a Mockito test for a service method that throws a custom exception.
+* Write a Mockito test for a void method using doNothing().
+* Write a Mockito test for a void method using doThrow().
+* Write a Mockito test using doAnswer() to inspect a method argument.
+* Write a Mockito test that returns different values for consecutive method calls.
+* Write a Mockito test using thenThrow() to simulate a dependency failure.
+* Write a Mockito test that verifies multiple method calls using InOrder.
+* Write a Mockito test for a service depending on both a repository and an external API client.
+* Write a Mockito test that verifies an external payment API is called only after successful validation.
+* Write a Mockito test that verifies a notification service is not called when an operation fails.
+* Write a Mockito test using ArgumentCaptor to validate a complex request object.
+* Write a Mockito test for a method that accepts a List of objects.
+* Write a Mockito test for a method that accepts multiple parameters with mixed argument matchers.
+* Write a Mockito test using a custom ArgumentMatcher.
+* Write a Mockito test using a spy and demonstrate partial mocking.
+* Write a Mockito test using doReturn() with a spy.
+* Write a Mockito test for a static utility method using MockedStatic.
+* Write a Mockito test for a constructor invocation using MockedConstruction.
+* Write a JUnit 5 test class using @ExtendWith(MockitoExtension.class).
+* Write a complete unit test for an OrderService using Mockito with repository, payment, and notification dependencies.

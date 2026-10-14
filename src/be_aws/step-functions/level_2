@@ -1,0 +1,21 @@
+
+* Design a production-grade workflow using Step Functions to orchestrate a Java-based microservices architecture.
+* How would you choose between Standard and Express workflows for a high-volume event-processing system?
+* How would you design a workflow that includes retries, timeouts, compensation actions, and failure notifications?
+* How would you implement a Saga pattern using Step Functions for a distributed business transaction?
+* How would you handle a workflow that partially succeeds before one of its downstream services fails?
+* How would you design idempotent Lambda and Java service integrations to handle task retries safely?
+* How would you prevent duplicate business operations when a workflow execution is started more than once?
+* How would you design a long-running workflow that waits for an external system to complete an operation?
+* How would you implement callback patterns using task tokens and external workers?
+* How would you process millions of records using Distributed Map while controlling concurrency and cost?
+* How would you handle large payloads that exceed Step Functions state input or output limits?
+* How would you use Amazon S3 to store large workflow payloads and pass references between states?
+* How would you design a workflow that processes messages from SQS and handles failures without losing messages?
+* How would you implement human approval steps in a Step Functions workflow?
+* How would you secure workflows that invoke resources across multiple AWS accounts?
+* How would you design observability for a workflow spanning Step Functions, Lambda, SQS, and Java microservices?
+* How would you manage workflow versioning and deployment without disrupting executions already in progress?
+* How would you recover or resume business processing after a terminal workflow failure?
+* How would you optimize Step Functions execution costs for a workflow with hundreds of state transitions?
+* How would you compare Step Functions with a custom Java orchestration service, AWS SWF, and event-driven choreography?

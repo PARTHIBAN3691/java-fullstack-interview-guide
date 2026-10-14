@@ -1,0 +1,30 @@
+* A Spring Boot container starts successfully and exits after a few seconds. How would you identify the root cause?
+* A Java application works on your laptop but fails inside Docker with a connection-refused error. How would you investigate it?
+* Your application tries to connect to localhost to reach a PostgreSQL container. Why might this fail, and how would you fix it?
+* A container repeatedly restarts after deployment. How would you distinguish an application crash from a Docker restart-policy issue?
+* A Java container is terminated with exit code 137. How would you investigate whether it was killed because of memory pressure?
+* A Spring Boot application throws OutOfMemoryError even though the configured heap is smaller than the container's memory limit. What else would you investigate?
+* A container runs slowly under production load but performs well locally. How would you investigate CPU limits, memory pressure, and JVM configuration?
+* Your Java service cannot resolve the hostname of a Redis container. How would you troubleshoot Docker networking?
+* Two containers are running, but one cannot access the other's application port. How would you investigate port binding, listening interfaces, and network configuration?
+* A Spring Boot container is healthy according to Docker, but users receive HTTP 503 responses. How would you diagnose the issue?
+* A containerized application loses uploaded files whenever the container is recreated. How would you make the data persistent?
+* A developer accidentally deletes a Docker volume containing important database data. What recovery options would you investigate, and how would you prevent recurrence?
+* A new Docker image is deployed, but the application still behaves as if the old configuration is being used. How would you investigate image versions, environment variables, and cached configuration?
+* A container works with an interactive terminal but fails when started in detached mode. How would you compare the startup commands and process behavior?
+* Your Spring Boot application ignores a termination signal and takes too long to stop. How would you implement graceful shutdown?
+* During deployment, active HTTP requests are interrupted when containers are replaced. How would you reduce request failures?
+* A Java container fails to start because the required host port is already in use. How would you identify the conflicting process and resolve the deployment?
+* Your container image has grown from 250 MB to more than 1 GB. How would you identify and reduce unnecessary layers and dependencies?
+* A production container runs as root and security review flags the configuration. How would you modify the image and verify permissions?
+* A container requires credentials to connect to a payment provider. How would you inject and rotate the credentials securely?
+* Docker Hub rate limits cause image pulls to fail during deployment. How would you make image distribution more reliable?
+* A deployment pulls the latest image tag but unexpectedly runs different application code. How would you improve image versioning and release reproducibility?
+* A Java application container consumes increasing memory over several days. How would you distinguish a memory leak from normal JVM memory behavior?
+* Your container cannot write to a mounted directory because of permission errors. How would you diagnose user IDs, ownership, and mount configuration?
+* Multiple developers run Docker Compose locally, but their services use conflicting ports. How would you make the setup configurable?
+* A database container starts after the Spring Boot container, causing startup failures. How would you handle service readiness and retry behavior?
+* A container's health check fails during startup even though the application eventually becomes available. How would you configure startup tolerance and readiness checks?
+* A new base image introduces a Java runtime incompatibility in production. How would you identify the regression and roll back safely?
+* A containerized Java application generates a heap dump, but the dump disappears when the container is removed. How would you preserve diagnostic files?
+* Your team needs to run multiple instances of a stateless Spring Boot service. How would you handle configuration, port exposure, load balancing, and persistent state?

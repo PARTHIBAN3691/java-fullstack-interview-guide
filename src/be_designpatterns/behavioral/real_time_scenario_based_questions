@@ -1,0 +1,30 @@
+* A payment application contains a large switch statement for credit cards, UPI, bank transfers, and wallets. How would you refactor it using the Strategy pattern?
+* A new discount type requires changes in several unrelated classes. How would you redesign the application to support new discount strategies with minimal modifications?
+* An application sends notifications through email, SMS, and push messages. How would you use the Observer pattern to add new notification consumers?
+* A slow notification listener delays the completion of an HTTP request. How would you redesign event delivery to improve responsiveness?
+* An event publisher occasionally sends duplicate notifications after retries. How would you make observer processing idempotent?
+* A banking application needs to support undoing changes made by users. How would you design the Command and Memento patterns for this requirement?
+* A background job fails intermittently and needs retry, cancellation, and execution history. How would you apply the Command pattern?
+* An approval request must pass through manager, director, and finance approval stages. How would you implement this using Chain of Responsibility?
+* Some approval requests should skip certain handlers based on transaction amount and department. How would you design the chain?
+* A validation chain sometimes stops processing without explaining which rule failed. How would you improve error reporting and observability?
+* An order can move through CREATED, CONFIRMED, SHIPPED, DELIVERED, and CANCELLED states. How would you prevent invalid transitions?
+* Two concurrent requests attempt to cancel and ship the same order. How would you maintain state consistency?
+* A payment can be initiated, authorized, captured, refunded, or failed. How would you model the lifecycle using the State pattern?
+* Different report formats share common processing steps but require different formatting logic. How would you apply the Template Method pattern?
+* Several subclasses override almost every step of a template algorithm, making the base class difficult to maintain. How would you redesign it?
+* A large in-memory collection needs to be traversed lazily, with filtering and pagination. How would you implement an efficient Iterator?
+* A custom iterator throws ConcurrentModificationException while background jobs update the underlying collection. How would you investigate and resolve the issue?
+* Multiple UI components need to coordinate through shared rules, but they currently depend directly on one another. How would you introduce the Mediator pattern?
+* A central mediator has accumulated authentication, validation, persistence, and notification logic. How would you reduce its responsibilities?
+* A user can save multiple versions of a document and restore any earlier version. How would you use the Memento pattern?
+* Restoring an old snapshot overwrites fields added by a newer application release. How would you handle snapshot version compatibility?
+* A reporting system performs different operations on employee, department, and payroll objects. How could the Visitor pattern simplify the design?
+* New domain element types are added frequently, and every Visitor implementation requires modification. How would you evaluate whether Visitor is still appropriate?
+* A business application allows administrators to configure expressions such as amount thresholds and eligibility rules. How would you implement this using the Interpreter pattern?
+* A user-defined expression causes excessive CPU usage and deeply nested parsing. How would you protect the interpreter?
+* A Spring Boot application has dozens of Strategy implementations, and the wrong one is occasionally selected. How would you diagnose and improve strategy resolution?
+* Events are published from within a database transaction, but downstream consumers sometimes observe events for rolled-back transactions. How would you address the consistency problem?
+* A command processing service receives the same message multiple times from a message broker. How would you prevent duplicate business operations?
+* A workflow requires validation, authorization, auditing, and persistence in a configurable sequence. Which behavioral pattern or combination of patterns would you choose, and why?
+* After introducing multiple behavioral patterns, developers report that tracing a single business operation requires navigating many classes. How would you simplify the design while preserving extensibility?

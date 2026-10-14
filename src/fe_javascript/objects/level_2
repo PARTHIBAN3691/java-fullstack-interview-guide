@@ -1,0 +1,30 @@
+* Explain how JavaScript objects are represented and accessed at runtime.
+* How does the prototype-based inheritance model work in JavaScript?
+* Explain the difference between an object's internal prototype and a constructor's prototype property.
+* How does property lookup work along the prototype chain?
+* What happens when an object defines a property with the same name as an inherited property?
+* How does Object.create() support prototype-based inheritance?
+* What is the difference between classical inheritance and prototype-based inheritance?
+* How does the instanceof operator work?
+* What is the difference between instanceof and checking an object's constructor property?
+* How can changing an object's prototype affect performance?
+* What are property descriptors, and how can they be used to control object behavior?
+* How do getters and setters interact with property access and assignment?
+* What are accessor properties and data properties?
+* How can you create a non-enumerable property using Object.defineProperty()?
+* Why does Object.freeze() provide only shallow immutability?
+* How would you implement deep freezing for nested objects?
+* What are the limitations of JSON.parse(JSON.stringify()) for deep cloning?
+* How does structuredClone() differ from JSON-based cloning?
+* What are the limitations of structuredClone()?
+* How can you implement a deep-clone function for a restricted set of JavaScript values?
+* How do circular references affect object serialization and cloning?
+* What are WeakMap and WeakSet, and when are they useful with objects?
+* How can you implement private data in objects using closures or JavaScript private class fields?
+* What are symbols, and how can they be used as object property keys?
+* How do enumerable and non-enumerable properties affect Object.keys() and property iteration?
+* How do Object.keys(), Reflect.ownKeys(), and for...in differ?
+* What is the difference between own properties and inherited properties when using the in operator?
+* How can object mutation create bugs in applications with shared state?
+* How would you design immutable object updates for nested application data?
+* How would you optimize object access and property updates in a performance-sensitive JavaScript application?

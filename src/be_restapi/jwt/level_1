@@ -1,0 +1,30 @@
+* How do you generate a JWT in a Spring Boot application?
+* How do you validate a JWT in a REST API?
+* How do you extract a JWT from the Authorization header?
+* How do you verify the signature of a JWT?
+* How do you configure JWT authentication using Spring Security?
+* How do you implement a JWT authentication filter in Spring Boot?
+* How do you configure public and protected REST endpoints using JWT?
+* How do you retrieve user information from JWT claims?
+* How do you store roles and permissions in a JWT?
+* How do you implement role-based authorization using JWT?
+* What is the difference between a JWT claim and a JWT header parameter?
+* What is the difference between registered, public, and private JWT claims?
+* What is the difference between HS256 and RS256?
+* When would you choose symmetric signing over asymmetric signing?
+* How do public and private keys work in JWT signing?
+* How do you configure JWT expiration time?
+* How do you implement access-token and refresh-token flows?
+* How should refresh tokens be stored securely?
+* How do you handle an expired access token in a client application?
+* How do you prevent clients from repeatedly refreshing an invalid token?
+* How do you handle malformed JWTs in a REST API?
+* What HTTP status code should be returned for an invalid or missing JWT?
+* What is the difference between HTTP 401 and HTTP 403 in JWT authentication?
+* How do you handle clock skew when validating JWT expiration?
+* How do you configure issuer and audience validation?
+* How do you prevent sensitive information from being included in JWT claims?
+* How do you implement logout in a stateless JWT-based application?
+* How do you test JWT authentication using Postman?
+* How do you unit test JWT generation and validation?
+* What are the advantages and disadvantages of using JWT instead of server-side sessions?

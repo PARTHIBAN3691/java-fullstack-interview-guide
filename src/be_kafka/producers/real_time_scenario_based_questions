@@ -1,0 +1,30 @@
+* Your Kafka producer suddenly starts taking 500 ms to publish messages instead of 10 ms. How would you investigate?
+* A producer sends 100,000 messages per second but the requirement is 1 million messages per second. How would you optimize it?
+* A Kafka producer's memory usage continuously increases during traffic spikes. What could be causing it?
+* The producer frequently reports `BufferExhaustedException`. How would you diagnose and fix it?
+* Producer throughput is low even though the Kafka brokers have plenty of available capacity. What application-level issues would you investigate?
+* A producer sends messages successfully but the application occasionally processes duplicate business events. How would you investigate the producer configuration?
+* A payment producer must not create duplicate payment events even when retries occur. How would you design the producer?
+* A producer uses customer ID as the key, but one customer generates 70% of all traffic. How would you handle the resulting hot partition?
+* A producer application is using `send().get()` for every message and throughput is very low. How would you improve it?
+* A producer is configured with `acks=all`, and latency has increased significantly. How would you determine whether this is acceptable?
+* A producer frequently receives timeout exceptions during broker maintenance. How would you design the retry and timeout configuration?
+* A Kafka producer loses connectivity to one broker while continuously publishing messages. How does the producer recover and what would you monitor?
+* A producer starts returning `NotEnoughReplicasException` after a broker failure. How would you troubleshoot the issue?
+* A producer application experiences high CPU after enabling compression. How would you decide whether to keep compression enabled?
+* A producer has high throughput but unacceptable latency. Which configurations would you investigate?
+* A producer has low latency but poor throughput. Which configurations would you investigate?
+* Messages belonging to the same customer are being processed out of order. How would you determine whether the producer is responsible?
+* A custom partitioner is distributing messages unevenly. How would you troubleshoot and correct it?
+* A producer deployment changes the partition distribution of messages unexpectedly. What could have caused this?
+* A producer is sending very large messages and Kafka rejects some requests. How would you investigate message-size configuration?
+* A producer is sending millions of small messages and network utilization is unexpectedly high. How would batching and compression help?
+* A Spring Boot Kafka producer occasionally fails silently because errors are not handled correctly. How would you redesign the producer error handling?
+* A producer sends records asynchronously and the application shuts down before all messages are acknowledged. How would you prevent message loss?
+* A producer is publishing to multiple Kafka topics with different performance requirements. How would you configure and manage the producers?
+* A Kafka producer must publish an event only after a database transaction succeeds. How would you design the solution?
+* A producer publishes database changes to Kafka and sometimes events are missing after application crashes. How would you solve this problem?
+* A producer needs to publish multiple related events atomically. How would Kafka transactions help?
+* Producer retries are causing unexpected latency spikes during broker instability. How would you tune the producer?
+* A producer works correctly in development but has poor performance in production. What configuration and infrastructure differences would you investigate?
+* You need to design a reusable Kafka producer library for multiple Spring Boot services. What features and configuration would you include?

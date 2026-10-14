@@ -1,0 +1,30 @@
+* How would you design a monitoring strategy using Spring Boot Actuator for a large microservices architecture?
+* How would you secure Actuator endpoints in an internet-facing production application?
+* How would you prevent sensitive environment variables from being exposed through Actuator?
+* How would you configure separate security policies for application endpoints and management endpoints?
+* How would you implement custom health indicators without making health checks too slow?
+* How would you prevent a slow external dependency from causing health checks to time out?
+* How would you distinguish application liveness from application readiness?
+* How would you design readiness checks for an application that depends on a database and multiple external services?
+* How would you avoid restarting healthy application instances because of temporary dependency failures?
+* How would you configure health-check behavior for rolling deployments in Kubernetes?
+* How would you implement custom Micrometer metrics with appropriate tags?
+* How would you prevent high-cardinality metric tags from overwhelming a monitoring system?
+* How would you design metrics for request latency, error rates, throughput, and saturation?
+* How would you use histogram metrics to calculate API latency percentiles?
+* How would you monitor business-level metrics using custom Actuator instrumentation?
+* How would you correlate Actuator metrics with distributed tracing information?
+* How would you configure Prometheus scraping for a Spring Boot application?
+* How would you manage metric naming and tagging consistently across multiple microservices?
+* How would you monitor connection pool exhaustion using Actuator and Micrometer?
+* How would you investigate high JVM memory usage using Actuator metrics and heap dumps?
+* How would you troubleshoot increasing thread counts using Actuator endpoints?
+* How would you safely change log levels at runtime in a production environment?
+* How would you expose management endpoints on a separate network interface or port?
+* How would you design a custom Actuator endpoint for operational tasks?
+* How would you implement a custom endpoint using @Endpoint, @ReadOperation, and @WriteOperation?
+* How would you prevent custom write operations from becoming security vulnerabilities?
+* How would you monitor Actuator endpoint availability without exposing sensitive management information?
+* How would you reduce the performance overhead of metrics collection?
+* How would you diagnose discrepancies between Actuator metrics and external monitoring dashboards?
+* How would you design observability across Actuator metrics, centralized logs, and distributed traces?

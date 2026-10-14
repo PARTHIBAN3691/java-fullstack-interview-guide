@@ -1,0 +1,30 @@
+* A Spring Boot application starts slowly, and Kubernetes repeatedly restarts it before startup completes. How would you fix the probe configuration?
+* A Pod is Running but never becomes Ready. How would you troubleshoot the readiness probe?
+* A liveness probe fails during heavy traffic, causing repeated restarts. How would you identify the root cause?
+* A readiness probe fails when the database is unavailable, and all application replicas are removed from Service endpoints. How would you redesign the health checks?
+* A database becomes temporarily unavailable, and liveness probes restart every application Pod. How would you prevent a cascading restart?
+* A Spring Boot application reports healthy through its Actuator endpoint, but Kubernetes marks the Pod unhealthy. What would you inspect?
+* A readiness endpoint returns HTTP 503 during startup. How would you determine whether this is expected behavior?
+* A probe returns HTTP 401 because the health endpoint requires authentication. How would you resolve the issue securely?
+* A probe fails because the application listens on port 8081 while the manifest specifies port 8080. How would you identify and correct the mismatch?
+* A TCP probe succeeds even though the application cannot process business requests. What are the limitations of the current health check?
+* An exec probe fails because the expected diagnostic executable is missing from a minimal container image. How would you address the issue?
+* A Java application experiences long garbage-collection pauses, resulting in intermittent probe timeouts. How would you investigate and tune the system?
+* A startup probe passes, but the liveness probe immediately begins failing. How would you determine whether the thresholds are appropriate?
+* A Pod becomes Ready before its cache initialization is complete, causing requests to fail. How would you improve readiness handling?
+* During a rolling deployment, new Pods fail readiness checks and the rollout gets stuck. How would you troubleshoot it?
+* A Pod remains Ready after its message consumer has stopped processing messages. How would you design a health check for this workload?
+* A Spring Boot application is healthy locally but fails its Kubernetes HTTP probe because it binds only to localhost. How would you fix it?
+* Probe failures increase after introducing strict CPU limits. How would you determine whether CPU throttling is responsible?
+* An application takes longer to start after a dependency upgrade. How would you adjust startup probes without masking genuine failures?
+* A liveness endpoint performs expensive database queries and causes latency spikes. How would you redesign the endpoint?
+* A readiness probe passes even though a critical downstream service is unavailable. How would you decide whether that dependency should affect readiness?
+* An application receives SIGTERM during deployment but remains Ready while shutting down. How would you coordinate readiness and graceful termination?
+* A Pod has successful liveness checks but users experience HTTP 500 responses. What additional health checks and monitoring would you introduce?
+* An application intermittently fails probes only on one worker node. How would you investigate node pressure, networking, and runtime differences?
+* A sidecar proxy is not ready, but the application container is healthy. How would you ensure traffic is not routed prematurely?
+* Probe failures cause all replicas of a critical service to restart at the same time. How would you reduce the risk of simultaneous outages?
+* A probe succeeds intermittently because the health endpoint uses a congested application thread pool. How would you make health checks more reliable?
+* A new release changes the health endpoint path, causing every Pod to fail readiness checks. How would you manage health-check compatibility during deployment?
+* A production service needs to distinguish application liveness from downstream dependency availability. How would you implement this using Spring Boot Actuator?
+* You need to design probes for a Java microservice with slow startup, graceful shutdown, and multiple downstream dependencies. What configuration and health-check strategy would you choose?

@@ -1,0 +1,21 @@
+
+* Your team is reviewing a method with many local variable declarations. How would you decide which declarations should use `var` and which should retain explicit types?
+* A developer uses `var` for a variable initialized by a complex generic method call. The inferred type is difficult to understand. How would you improve readability?
+* A local variable is initialized with `null` using `var`, and the code fails to compile. How would you redesign the declaration?
+* Your application contains many local variables whose types are obvious from constructor calls. How could Java 10's `var` reduce unnecessary repetition?
+* A code review finds `var` used for a variable whose initializer is a method call with an unclear return type. What feedback would you provide?
+* A team wants to use `var` throughout the codebase to reduce line length. What guidelines would you establish to prevent readability issues?
+* A service returns a mutable list that must not be modified by downstream consumers. How could `List.copyOf()` help?
+* A method creates an unmodifiable view using `Collections.unmodifiableList()`, but changes to the original list are visible to consumers. How would you create an immutable snapshot instead?
+* A collection contains null elements and must be converted into an immutable list. How would you handle the data before calling `List.copyOf()`?
+* An application must expose an immutable configuration Map to multiple components. Which Java 10 collection-copying approach would you consider?
+* An API returns a collection that is unmodifiable, but its elements can still be changed. How would you explain and address this limitation?
+* A repository returns an `Optional<Customer>`. How could Java 10's no-argument `orElseThrow()` simplify the implementation?
+* A microservice has a slow startup time because classes are repeatedly loaded and processed. How would you evaluate AppCDS?
+* A containerized Java application uses more memory than expected after deployment. How would you investigate JVM container awareness and heap sizing?
+* A Java application running in Docker does not use the CPU resources you expect. Which Java 10 container-awareness improvements and JVM settings would you investigate?
+* A team wants to enable the experimental Graal JIT compiler to improve throughput. How would you evaluate whether it benefits the workload?
+* A production team wants to measure garbage collection behavior after upgrading to Java 10. Which JVM management information would you collect?
+* An application migration to Java 10 introduces compilation errors because the team used language features incorrectly. How would you identify unsupported uses of `var`?
+* A legacy application depends on mutable collections and null values. How would you adopt Java 10 immutable collection APIs without breaking existing behavior?
+* Your organization wants to upgrade from Java 8 to Java 10 but plans to move to a later LTS version afterward. How would you prioritize migration testing and compatibility checks?

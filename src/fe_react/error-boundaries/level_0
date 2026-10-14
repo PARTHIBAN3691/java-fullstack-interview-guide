@@ -1,0 +1,30 @@
+* What are Error Boundaries in React?
+* Why do we use Error Boundaries in React?
+* What types of errors do Error Boundaries catch?
+* How do you create an Error Boundary in React?
+* Which lifecycle methods are used to implement Error Boundaries?
+* What is getDerivedStateFromError()?
+* What is componentDidCatch()?
+* What is the difference between getDerivedStateFromError() and componentDidCatch()?
+* Can Error Boundaries be created using functional components?
+* Can Error Boundaries be created using class components?
+* Do Error Boundaries catch errors in child components?
+* Do Error Boundaries catch errors in event handlers?
+* Do Error Boundaries catch errors inside asynchronous callbacks?
+* Do Error Boundaries catch errors during server-side rendering?
+* Do Error Boundaries catch errors inside their own implementation?
+* What is a fallback UI in React?
+* How do you display a fallback UI when an error occurs?
+* What happens when a child component throws an error?
+* Can an Error Boundary prevent the entire application from crashing?
+* Can multiple Error Boundaries exist in one application?
+* What happens when an Error Boundary catches an error?
+* What is the purpose of the error state in an Error Boundary?
+* How do you pass child components to an Error Boundary?
+* What is the difference between Error Boundaries and try-catch blocks?
+* Can an Error Boundary catch errors in nested components?
+* How do you reset an Error Boundary?
+* Can an Error Boundary display a custom error message?
+* How do you log errors caught by an Error Boundary?
+* What is the role of the children prop in an Error Boundary?
+* What are the limitations of Error Boundaries in React?

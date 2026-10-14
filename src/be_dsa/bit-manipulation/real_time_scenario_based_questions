@@ -1,0 +1,30 @@
+* A payment system stores transaction flags such as authorized, settled, refunded, and disputed. How would you represent and update these flags using bitmasks?
+* A user-management service stores multiple permissions for each user. How would you use bit flags to check permissions efficiently?
+* A monitoring application receives binary status codes from devices. How would you extract individual status fields from each integer?
+* A network protocol stores several fields inside a 32-bit header. How would you extract and update each field without changing the others?
+* A Java application must process millions of integers to find the single value that occurs once while all other values occur twice. How would you solve it efficiently?
+* A data-import service is missing one ID from a sequence of integers. How would you use XOR to identify the missing ID?
+* A telemetry system compares two device states represented by integers. How would you calculate how many individual bits changed?
+* A security application needs to verify whether a particular permission flag is enabled. How would you implement this safely?
+* A game engine represents collected items using a bitmask. How would you determine whether a player has collected a required combination of items?
+* A scheduling engine represents completed tasks using a bitmask. How would you find the next available task efficiently?
+* A memory-constrained service needs to track whether millions of IDs have been processed. How would you compare a bitset with a HashSet?
+* A recommendation engine needs to calculate similarity between binary feature vectors. How could XOR and bit counting help?
+* A search service must find the pair of integers with the maximum XOR. How would you design an efficient solution for a large dataset?
+* A fraud-detection system needs to count subarrays of transaction codes whose XOR equals a specific value. How would you solve this efficiently?
+* A Java application produces incorrect results when shifting negative integers. How would you investigate signed right shift and unsigned right shift behavior?
+* A permissions service accidentally clears unrelated flags when updating one permission. How would you diagnose and fix the bitmask logic?
+* A device protocol stores a 5-bit status field starting at bit position 8. How would you extract and update that field?
+* A data-processing job needs the total number of set bits across every integer from 1 to N. How would you optimize the computation?
+* A route-planning engine handles a small graph and must visit every node exactly once. How could bitmask dynamic programming represent visited nodes?
+* A task-assignment system must assign N jobs to N workers while minimizing total cost. How would you model the problem using bitmask dynamic programming?
+* A Java application uses XOR to swap variables, but the code behaves unexpectedly when both references point to the same storage location. How would you explain and prevent the issue?
+* A reporting system must calculate the Hamming distance between every pair of binary identifiers. How would you reduce the computation from comparing every pair bit by bit?
+* A system must maintain a collection of enabled feature flags that changes frequently. How would you design efficient set, clear, toggle, and membership operations?
+* A backend service receives untrusted bit positions from an API. How would you validate the positions and avoid invalid shifts or incorrect masks?
+* A large dataset contains numbers where every value appears three times except one. How would you identify the unique value using constant auxiliary space?
+* A logging service needs to encode several Boolean states in one integer. What trade-offs would you consider for readability, maintainability, and debugging?
+* A Java service uses a bitmask to represent all subsets of a collection, but the collection size exceeds the width of a long. How would you redesign the representation?
+* A batch job uses bitwise arithmetic to multiply or divide numbers and fails for negative values. How would you correct the implementation?
+* A cache needs to represent a fixed universe of keys using a compact data structure. How would you implement and benchmark a bitset in Java?
+* A production service experiences integer overflow while computing bitmasks. How would you identify the cause and choose appropriate Java data types?

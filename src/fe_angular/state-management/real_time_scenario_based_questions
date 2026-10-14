@@ -1,0 +1,30 @@
+* Multiple components need to display the same logged-in user information. How would you manage the shared state?
+* A user updates their profile, but other components continue showing old data. How would you fix the state synchronization issue?
+* A shopping cart must be accessible across multiple routes. How would you design its state management?
+* A shopping cart should preserve its contents after a page refresh. How would you implement persistence?
+* A dashboard needs to combine data from five APIs. How would you manage loading, success, and error states?
+* An API request fails, but the application should retain previously loaded data. How would you design the state update?
+* A user rapidly changes search filters, and older API responses overwrite newer results. How would you prevent this?
+* Multiple components dispatch updates to the same entity. How would you avoid inconsistent state?
+* A large application uses services for all shared state, and debugging has become difficult. How would you improve the architecture?
+* A component receives frequent state updates and becomes slow. How would you investigate and optimize it?
+* An application needs global notifications that can be triggered from any component. How would you manage notification state?
+* A user logs out, but previously loaded user data remains visible. How would you clear the relevant state?
+* A page contains filters, sorting, and pagination that should survive browser navigation. How would you manage the state?
+* A multi-step registration form must preserve user input while navigating between steps. How would you implement it?
+* A product listing page needs caching to avoid repeating API calls when users navigate back. How would you manage cached state?
+* An application must support optimistic updates when a user likes a post. How would you handle API failure and rollback?
+* Two API requests update the same data at different speeds. How would you prevent stale responses from replacing fresh data?
+* A feature should maintain its own state without affecting other features. How would you structure the Store?
+* A user changes accounts without refreshing the browser. How would you ensure state from the previous account is removed?
+* A dashboard should show partial results even when one API fails. How would you model the state?
+* A component needs a derived total calculated from multiple pieces of state. Where would you compute it?
+* A large Store contains deeply nested objects that are difficult to update. How would you restructure the state?
+* A team wants to migrate from BehaviorSubject-based services to NgRx. How would you plan the migration?
+* An application uses Angular Signals, but some APIs return Observables. How would you integrate both approaches?
+* An application uses server-side rendering and must avoid leaking one user's state to another request. How would you design state isolation?
+* Developers are mutating objects directly, causing unpredictable UI updates. How would you enforce predictable state transitions?
+* A feature requires undo and redo for user edits. How would you implement the state history?
+* A form has dirty, touched, valid, and submission states. How would you organize and maintain them?
+* A state update triggers multiple unnecessary API calls. How would you prevent redundant effects?
+* How would you choose an appropriate state management approach for a new enterprise Angular project?

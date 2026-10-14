@@ -1,0 +1,30 @@
+* How do you create and execute a Dataflow pipeline using Java and Apache Beam?
+* How do you configure Maven dependencies for a Java Dataflow project?
+* How do you configure PipelineOptions for a Dataflow job?
+* How do you execute an Apache Beam pipeline locally using DirectRunner?
+* How do you deploy a Java pipeline using DataflowRunner?
+* How do you read files from Cloud Storage in a batch Dataflow pipeline?
+* How do you write processed records to BigQuery from Dataflow?
+* How do you read streaming messages from Pub/Sub in Apache Beam?
+* How do you publish transformed records to another Pub/Sub topic?
+* How do you implement filtering and mapping using ParDo?
+* How do you transform CSV or JSON records into Java domain objects?
+* How do you validate and reject malformed records in a Dataflow pipeline?
+* How do you route invalid records to a dead-letter destination?
+* How do you use GroupByKey to aggregate records by a business key?
+* How do you implement aggregation using Combine and CombineFn?
+* How do you configure fixed, sliding, and session windows?
+* How do you handle late-arriving events using allowed lateness?
+* How do you configure event-time triggers for streaming pipelines?
+* How do you use side inputs to enrich streaming records with reference data?
+* How do you implement stateful processing using keyed state in Apache Beam?
+* How do you implement timers for delayed or event-time processing?
+* How do you configure autoscaling for Dataflow workers?
+* How do you select an appropriate worker machine type for a Java pipeline?
+* How do you configure worker service accounts and IAM permissions?
+* How do you use Dataflow templates to parameterize and launch pipelines?
+* How do you implement CI/CD for Dataflow pipelines?
+* How do you test Apache Beam transforms using TestPipeline and PAssert?
+* How do you monitor Dataflow throughput, system lag, and worker utilization?
+* How do you update a running streaming pipeline using a Dataflow job update?
+* How do you troubleshoot a Dataflow job that is stuck or progressing slowly?

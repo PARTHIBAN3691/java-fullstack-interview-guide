@@ -1,0 +1,30 @@
+* Explain how named exports and default exports work with examples.
+* How do you export multiple functions from a single JavaScript module?
+* How do you import multiple named exports from one module?
+* How do you rename an exported function while importing it?
+* How can you re-export functionality from another module?
+* What is a barrel file, and why is it used?
+* What is the difference between static import and dynamic import()?
+* How does dynamic import() return a Promise?
+* When would you use dynamic imports in a real-world application?
+* What is the difference between import declarations and import expressions?
+* Why must static import declarations appear at the top level of a module?
+* How does module scope differ from global scope?
+* How are top-level variables handled in ES6 modules?
+* What is the difference between module scope and function scope?
+* How does strict mode work in ES6 modules?
+* Are ES6 modules executed once or multiple times when imported by different files?
+* What is module caching, and how does it work?
+* How do circular dependencies occur between JavaScript modules?
+* What problems can circular dependencies cause?
+* How can you reduce circular dependencies in a large application?
+* What is the difference between CommonJS exports and ES6 exports?
+* How does the CommonJS module.exports object work?
+* What is the difference between exports and module.exports in CommonJS?
+* How do you import JSON data in modern JavaScript environments?
+* How do module paths and file extensions differ between browsers and Node.js?
+* What is import maps, and how do they help resolve module specifiers in browsers?
+* What is the purpose of the package.json type field in Node.js?
+* What is the difference between .mjs and .cjs files in Node.js?
+* What is tree shaking in JavaScript modules?
+* How do modules improve maintainability and testability?

@@ -1,0 +1,30 @@
+* An e-commerce application must suggest product names as users type. How would you design autocomplete using a Trie?
+* A search service stores millions of search terms and needs to return the top 10 suggestions for each prefix. How would you optimize the Trie?
+* A dictionary application must support word insertion, search, prefix lookup, and deletion. How would you design the Java implementation?
+* A customer-support system needs to suggest common responses based on the first few characters typed by an agent. How would you implement this feature?
+* A spell-checking service must identify whether a word exists in a large dictionary and suggest alternatives. How would you use a Trie?
+* A mobile application has limited memory but needs offline autocomplete. How would you reduce the memory footprint of the Trie?
+* A product catalog contains millions of identifiers with long common prefixes. Would you use a standard Trie or a compressed Trie, and why?
+* A search application must rank suggestions based on historical search frequency. How would you maintain ranking information in the Trie?
+* A multilingual application supports names containing Unicode characters and accented letters. How would you design the Trie node representation?
+* A URL routing service must find the longest matching IP prefix for an incoming address. How would you use a binary Trie?
+* A network router must perform longest-prefix matching across many routing entries. How would you structure the Trie for predictable lookup performance?
+* A security application must detect whether incoming text contains any word from a large forbidden-word list. How would you use Trie-based multi-pattern matching?
+* A log-monitoring service must search millions of log lines for thousands of known error patterns. Would you use a basic Trie or Aho-Corasick, and why?
+* A word-search game must find all dictionary words present in a two-dimensional character board. How would you combine a Trie with backtracking?
+* A gaming application needs to find two player identifiers with the maximum XOR value. How would you solve the problem using a binary Trie?
+* A financial analytics service must answer maximum-XOR queries over a changing dataset. How would you choose between a standard and persistent binary Trie?
+* An autocomplete service has a high rate of dictionary updates while users are searching concurrently. How would you maintain correctness and low latency?
+* A Java application experiences excessive memory usage after loading a large dictionary into a Trie. How would you profile and optimize it?
+* A Trie implementation performs well for lowercase English words but becomes slow for multilingual input. How would you identify the bottleneck?
+* A distributed search system stores different sections of a dictionary on separate servers. How would you partition the Trie and combine prefix-search results?
+* A service needs to remove a word from the dictionary without deleting shared prefixes used by other words. How would you implement safe deletion?
+* A search API must support prefix lookup with case-insensitive matching while preserving the original spelling of suggestions. How would you design the data model?
+* A product recommendation service needs the most popular suggestions for a prefix, but popularity changes frequently. How would you avoid sorting every matching word for each request?
+* A text-processing service must match multiple keywords in a streaming input without rescanning previously processed characters. How would you use Aho-Corasick?
+* A large Trie must be loaded during application startup, but the startup time is too high. What serialization, indexing, and initialization strategies would you consider?
+* A service stores repeated words with their usage counts and needs efficient prefix-frequency queries. What information would you maintain in each Trie node?
+* A search service must support insertions and deletions while maintaining lexicographic ordering of suggestions. How would you implement the required operations?
+* A binary Trie must answer maximum-XOR queries restricted to values within a particular index range. How would you use persistent versions?
+* A Trie-based API is vulnerable to requests containing extremely long prefixes and large volumes of random input. How would you protect the service from resource exhaustion?
+* Your team is choosing between Trie, HashMap, database indexing, and a search engine for prefix search. What workload characteristics would guide your choice?

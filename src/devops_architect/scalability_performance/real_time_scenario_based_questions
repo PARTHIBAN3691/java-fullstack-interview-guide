@@ -1,0 +1,107 @@
+
+**Horizontal Scaling**
+* Your Spring Boot application slows down during peak traffic. You add more instances, but throughput barely improves. How would you identify the shared bottleneck, validate your hypothesis, and measure the outcome?
+* After scaling from four to twenty instances, users begin experiencing intermittent duplicate transactions. How would you investigate shared state, distributed locking, and idempotency?
+* A service scales horizontally, but every new instance increases database load until the database becomes unavailable. What immediate mitigation and long-term architectural changes would you implement?
+* Following a deployment, traffic is distributed evenly across instances, but a subset consistently has much higher latency. How would you investigate instance-level differences and determine the fix?
+
+**Vertical Scaling**
+* A Java application receives a larger server with twice the memory, but its response time worsens. How would you investigate JVM heap sizing, garbage collection, thread count, and CPU behavior?
+* A database server is nearing its maximum CPU capacity, and vertical upgrades are becoming expensive. How would you establish whether query optimization, read replicas, caching, or sharding is the best next step?
+* Your application runs well on a large machine but fails when migrated to smaller horizontally scalable instances. How would you identify hidden resource assumptions and make the application scale safely?
+
+**Auto Scaling**
+* Traffic increases sharply, but autoscaling takes several minutes to launch new JVM instances. Users experience timeouts before capacity becomes available. How would you reduce the impact and validate the improvement?
+* Instances repeatedly scale out and then scale in, causing latency spikes and unstable costs. How would you investigate scaling thresholds, cooldowns, and metric behavior?
+* CPU utilization remains low while request queues and response latency rise. The autoscaler does not add capacity. How would you identify the appropriate scaling signal?
+* During a scale-out event, new instances create a large number of database connections and overload the database. How would you coordinate application scaling with downstream capacity?
+
+**Load Balancing**
+* A load balancer distributes requests evenly, but one instance experiences much higher CPU utilization because some requests are expensive. How would you improve workload distribution?
+* During a rolling deployment, requests begin failing because old and new application versions behave differently. How would you make the rollout safer and preserve compatibility?
+* Health checks mark several instances unhealthy at the same time, shifting traffic to the remaining instances and causing a cascading outage. How would you restore capacity and redesign health checks?
+* Users experience slow requests despite healthy instance metrics. How would you determine whether routing, connection reuse, network latency, or uneven request costs are responsible?
+
+**Connection Pooling**
+* A Spring Boot API starts timing out during peak hours with connection-acquisition timeouts in the logs. How would you determine whether the pool is undersized, connections are leaking, or database queries are slow?
+* After increasing the JDBC pool from 30 to 150 connections, database CPU rises sharply and throughput decreases. How would you diagnose the regression and determine the right pool size?
+* An application gradually exhausts database connections only when exceptions occur. How would you reproduce the issue, find the leak, and verify the fix?
+* A database failover occurs, but application instances continue using stale connections. How would you restore service and improve connection validation and recovery behavior?
+
+**Caching**
+* A popular cache entry expires during peak traffic, causing thousands of requests to hit the database simultaneously. How would you prevent a cache stampede and measure database-load reduction?
+* A database update succeeds, but users continue seeing stale data from the cache. How would you trace the invalidation path, fix the consistency issue, and prevent recurrence?
+* A service has a high cache-hit ratio but still exhibits poor response times. How would you determine whether cache latency, serialization, network calls, or downstream work remains the bottleneck?
+* After a deployment, most cache entries are cold and the database becomes overloaded. How would you restore cache effectiveness without triggering another traffic surge?
+
+**CDN**
+* A marketing campaign generates a large traffic spike, but the origin server becomes overloaded despite a CDN. How would you investigate cache keys, cache-control headers, dynamic requests, and cache-hit ratios?
+* Users continue seeing an old frontend release after deployment. How would you diagnose browser caching, CDN invalidation, and asset versioning?
+* Personalized API responses are accidentally cached and delivered to the wrong users. What containment, investigation, security remediation, and regression tests would you implement?
+* CDN latency is low in most locations but high in a particular geographic region. How would you investigate edge routing, origin distance, cache misses, and regional network issues?
+
+**Distributed Caching**
+* Redis latency suddenly increases, and all application instances begin slowing down. How would you distinguish hot keys, network congestion, memory pressure, and server saturation?
+* A Redis cluster becomes unavailable, and the application overwhelms the database while falling back to direct queries. How would you restore service and prevent the same failure mode?
+* Two services update the same customer record, and delayed cache-invalidation events cause older values to overwrite newer ones. How would you resolve the race condition?
+* A cache migration causes a sudden drop in hit ratio and an increase in database load. How would you stage the migration, warm the cache, and verify stability?
+
+**Queue-Based Scaling**
+* Kafka consumer lag increases continuously even after adding consumers. How would you investigate partition limits, processing time, downstream dependencies, and rebalancing?
+* A backlog of millions of messages accumulates during a downstream outage. Once the dependency recovers, consumers overwhelm the database. How would you control recovery throughput and clear the backlog safely?
+* Messages repeatedly fail and return to the queue, preventing successful messages from progressing. How would you isolate poison messages and protect the processing pipeline?
+* Queue depth is low, but message age and business processing delays are high. How would you investigate partition skew, blocked consumers, and uneven processing costs?
+
+**Asynchronous Processing**
+* An API returns HTTP 202 after accepting an order, but the background job never completes. How would you trace the request across the queue and consumer, recover the work, and prevent silent failures?
+* A consumer processes a payment successfully but crashes before acknowledging the message. On redelivery, the payment is attempted again. How would you ensure idempotent processing and reconcile the result?
+* A synchronous workflow takes eight seconds and frequently times out. How would you redesign it asynchronously while maintaining a reliable status API and clear failure handling?
+* A background job is moved to asynchronous processing, but users now see inconsistent intermediate states. How would you redesign workflow state transitions, event handling, and reconciliation?
+
+**Backpressure**
+* Your service receives 20,000 requests per second but can process only 8,000 sustainably. Queues grow, memory usage rises, and timeouts multiply. How would you stabilize the system and define admission limits?
+* Kafka consumers slow down when the database is under load, causing growing lag and repeated retries. How would you apply backpressure and restore throughput without overwhelming the database?
+* After introducing bounded queues, the application starts rejecting legitimate requests during short traffic bursts. How would you tune queue capacity and admission policies using measurements?
+* Autoscaling and retry policies amplify each other during overload. How would you break the feedback loop and verify that the system returns to a stable operating point?
+
+**Capacity Planning**
+* Traffic is expected to triple over the next six months, but recent load tests show that database capacity is already near its limit. How would you forecast capacity, prioritize improvements, and estimate infrastructure costs?
+* A service handles average traffic comfortably but fails during a short promotional spike. How would you model burst capacity, queueing delay, and required headroom?
+* A region fails, shifting all traffic to the surviving region, which then becomes overloaded. How would you revise capacity assumptions and disaster scenarios?
+* Following a major feature release, each request consumes twice as much CPU and database time. How would you detect the changed capacity profile and adjust scaling or architecture?
+
+**Performance Testing**
+* A new release passes functional tests but increases p99 latency by 40%. How would you reproduce the regression, isolate the change, and define a release decision?
+* Load tests show excellent performance in staging but production becomes slow at half the tested request rate. How would you investigate environmental differences, test realism, and hidden production dependencies?
+* A performance benchmark varies significantly between runs. How would you control warm-up, test data, cache state, background activity, and statistical variability?
+* Your team claims a 30% performance improvement based on average latency, but tail latency worsens. How would you assess the change and decide whether it should be released?
+
+**Load Testing**
+* A load test reports high throughput, but production users experience many timeouts. How would you check for dropped requests, unrealistic workload models, and coordinated omission?
+* A load generator reaches 100% CPU before the application under test becomes saturated. How would you redesign the test setup to measure actual application capacity?
+* An API meets its performance target in isolation but fails when all dependent services are under realistic concurrent load. How would you design an end-to-end test and locate the limiting dependency?
+* A service passes a 1,000-request-per-second test but fails at 700 requests per second after autoscaling is enabled. How would you investigate scaling behavior, cold caches, and resource contention?
+
+**Stress Testing**
+* During a stress test, latency rises sharply before CPU reaches full utilization. How would you investigate connection pools, locks, thread starvation, and downstream limits?
+* The system becomes unresponsive under extreme traffic and does not recover when traffic drops. How would you investigate exhausted resources, stuck queues, and retry storms?
+* An application remains available during a stress test but loses some business events. How would you trace the loss and improve durability, acknowledgment, and overload handling?
+* One service fails under extreme load and causes a chain reaction across the system. How would you identify the propagation path and verify the effectiveness of circuit breakers, bulkheads, and load shedding?
+
+**Soak Testing**
+* A Java service's memory usage increases slowly during a 24-hour test until the container is restarted. How would you distinguish a memory leak from normal heap expansion and identify retained objects?
+* After eight hours of load, database connections become exhausted even though traffic remains constant. How would you investigate resource leaks and validate a fix?
+* API p99 latency gradually increases during a long-running test while throughput stays stable. How would you analyze garbage collection, cache growth, thread contention, and database behavior?
+* A service passes a short load test but fails after repeated scheduled jobs execute overnight. How would you reproduce the problem and test the corrected implementation?
+
+**Bottleneck Analysis**
+* A distributed API spends 80% of its response time waiting, yet CPU and memory metrics appear healthy. How would you use traces, thread dumps, and dependency metrics to find the bottleneck?
+* Database query time is low in isolation but high under application load. How would you investigate locks, connection acquisition, query concurrency, and database saturation?
+* After optimizing a slow database query, latency barely improves. How would you determine whether another dependency or serialization step dominates end-to-end response time?
+* A Java application shows high CPU usage with low throughput. How would you distinguish excessive object allocation, inefficient algorithms, lock contention, and busy loops?
+
+**Latency Optimization**
+* Your API's average latency is 100 ms, but p99 is 2.5 seconds. How would you isolate the slow-request population and reduce tail latency?
+* A service calls five downstream APIs sequentially. The combined latency breaches the SLA even when each dependency meets its individual target. How would you redesign the call path while preserving correctness?
+* Adding a cache improves average latency but increases tail latency during expiration events. How would you address stampedes and validate the new latency profile?
+* A JVM upgrade improves throughput but introduces occasional long garbage-collection pauses. How would you compare runtime configurations and choose a production-safe fix?

@@ -1,0 +1,94 @@
+**AI Application Architecture**
+
+* Implement a REST API that orchestrates document retrieval, an LLM call, and response validation using clearly separated interfaces and dependency injection.
+* Write unit and integration tests for an AI workflow that includes successful responses, provider timeouts, invalid output, and retrieval failures.
+
+**LLM-Powered Microservices**
+
+* Implement a Java Spring Boot service that calls an LLM provider with configurable connection timeouts, request deadlines, bounded retries, and structured error responses.
+* Write an idempotent request-processing workflow that prevents duplicate business operations when an AI request is retried after a timeout.
+
+**Enterprise AI Platform Design**
+
+* Implement a provider-neutral model interface with adapters for two mock LLM providers and a configurable provider-selection strategy.
+* Build a service registry or configuration module that validates model capabilities, deployment settings, and policy requirements before enabling a model.
+
+**RAG System Design**
+
+* Implement a document-ingestion pipeline that splits documents into chunks, generates mock embeddings, and stores chunk metadata for retrieval.
+* Build a retrieval API that combines keyword and vector-search results, applies metadata filters, and returns ranked sources with citations.
+
+**AI Agent Platform Design**
+
+* Implement an agent execution loop that selects tools, records observations, enforces a maximum number of steps, and terminates safely.
+* Build a checkpoint-and-resume mechanism for an agent workflow and write tests for worker failure, duplicate tool execution, and interrupted runs.
+
+**Multi-Model Routing Architecture**
+
+* Implement a model router that selects a provider based on task type, latency threshold, estimated cost, and required capabilities.
+* Write tests for provider fallback, unsupported output formats, exhausted retries, and cases where no eligible model is available.
+
+**AI Gateway Design**
+
+* Implement a Spring Boot AI gateway endpoint with authentication, request validation, tenant identification, provider adapters, and centralized error handling.
+* Build middleware that records request duration, estimated token usage, model identity, and correlation IDs without logging sensitive prompt content.
+
+**Shared AI Services for Multiple Teams**
+
+* Implement a shared embedding-service API with versioned request and response schemas, input validation, and consistent error responses.
+* Write contract tests that verify backward compatibility between two API versions and detect incompatible embedding dimensions.
+
+**Multi-Tenant AI Architecture**
+
+* Implement tenant-aware retrieval that applies authorization filters before returning documents to the model.
+* Write integration tests that attempt cross-tenant access through direct queries, conversation history, cached results, and missing tenant identifiers.
+
+**AI Caching Architecture**
+
+* Implement an exact-response cache with TTL, cache-key versioning, tenant isolation, and invalidation after a document update.
+* Build a semantic-cache lookup interface using mock embeddings and a configurable similarity threshold, with tests for false matches and stale results.
+
+**AI Rate Limiting and Quota Management**
+
+* Implement a token-bucket rate limiter supporting per-tenant request limits and burst capacity.
+* Build a quota service that tracks estimated and actual token consumption, rejects over-budget requests, and reconciles failed or cancelled requests.
+
+**High-Availability AI Systems**
+
+* Implement an AI client with timeouts, a circuit breaker, bounded retries, and fallback to a secondary mock provider.
+* Write fault-injection tests for provider timeouts, connection failures, partial streaming responses, and recovery after the circuit breaker opens.
+
+**AI Data Privacy Architecture**
+
+* Implement a configurable PII-redaction component that masks sensitive identifiers before prompt submission and application logging.
+* Build a data-deletion workflow that removes a document from a mock database, vector index, and cache, and verifies that retrieval no longer returns it.
+
+**Low-Latency AI Inference**
+
+* Implement a streaming response endpoint that forwards generated chunks to a client and handles cancellation, provider failure, and client disconnection.
+* Write a load-testing script that measures p50, p95, and p99 latency, time to first token, throughput, and error rate under increasing concurrency.
+
+**Scalable AI Workloads**
+
+* Implement a bounded asynchronous inference queue with worker concurrency limits, backpressure, request deadlines, and overload responses.
+* Build a workload scheduler that prioritizes interactive inference over batch embedding jobs and tests fairness under sustained load.
+
+**AI Cost Optimization**
+
+* Implement a cost calculator that estimates inference expenses using input tokens, output tokens, model-specific pricing, and request volume.
+* Build a model-selection strategy that chooses the least expensive eligible model while enforcing configurable quality, latency, and privacy constraints.
+
+**AI Disaster Recovery**
+
+* Implement a configuration backup and restore utility for model settings, prompt versions, and routing policies, including integrity checks.
+* Write a recovery test that rebuilds a mock vector index from source documents, validates document counts and sample retrievals, and verifies that deleted documents remain excluded.
+
+**Enterprise AI Governance**
+
+* Implement a model-onboarding validation service that checks approval status, allowed data classifications, deployment region, and required evaluation results.
+* Build an audit-event pipeline that records model version, prompt version, policy decision, retrieval references, and tool invocations for each AI request.
+
+**AI Architecture Trade-offs**
+
+* Implement a configurable strategy that compares managed-provider and self-hosted inference using estimated cost, latency, operational overhead, and data-sensitivity requirements.
+* Build a benchmark harness that evaluates two mock or real model endpoints against the same test dataset and reports latency, cost, task success rate, and output-validation failures.

@@ -1,0 +1,30 @@
+* Explain how you would design a scalable REST API architecture using Node.js and Express.
+* How would you structure a large REST API application using controllers, services, repositories, and middleware?
+* How would you enforce REST API contracts across multiple teams and services?
+* How would you design consistent error responses across all API endpoints?
+* How would you distinguish client errors, business errors, and infrastructure errors?
+* How would you design an idempotent API that remains safe under concurrent requests?
+* How would you prevent duplicate transactions when clients retry requests after timeouts?
+* How would you implement optimistic locking or version-based concurrency control in a REST API?
+* How would you handle race conditions when multiple requests update the same resource?
+* How would you design pagination for millions of records while maintaining predictable performance?
+* How would you design filtering and sorting without allowing expensive database queries?
+* How would you implement API rate limiting across multiple Node.js instances?
+* How would you secure REST APIs using OAuth 2.0 and OpenID Connect?
+* How would you design fine-grained authorization for APIs that expose sensitive business data?
+* How would you prevent broken object-level authorization vulnerabilities?
+* How would you manage secrets, API keys, and token rotation in production?
+* How would you protect a REST API against replay attacks and request tampering?
+* How would you design API versioning and deprecation strategies for a large consumer base?
+* How would you implement distributed tracing across REST API calls between microservices?
+* How would you prevent cascading failures when a downstream REST service becomes unavailable?
+* How would you decide when to retry a failed HTTP request and when not to retry it?
+* How would you design timeout, retry, circuit-breaker, and bulkhead policies for outbound API calls?
+* How would you optimize REST API performance when database access and JSON serialization become bottlenecks?
+* How would you handle partial failures when a REST API depends on multiple downstream services?
+* How would you design a REST API that supports asynchronous long-running operations?
+* How would you implement reliable event publication when a REST API updates a database and publishes a message?
+* How would you prevent sensitive information from leaking through API logs and error responses?
+* How would you design backward-compatible schema evolution for request and response payloads?
+* How would you handle multi-tenant data isolation in a shared REST API platform?
+* How would you design observability, resilience, and security standards for enterprise Node.js REST APIs?

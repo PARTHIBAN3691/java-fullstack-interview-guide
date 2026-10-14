@@ -1,0 +1,30 @@
+* A streaming Dataflow pipeline experiences rapidly increasing system lag after a traffic spike. How would you investigate Pub/Sub backlog, worker capacity, and processing bottlenecks?
+* A Java Dataflow job processes records successfully in testing but fails with out-of-memory errors in production. How would you investigate element size, batching, and worker memory usage?
+* A pipeline processes the same business event more than once, creating duplicate financial records in BigQuery. How would you design deduplication and idempotent writes?
+* A pipeline that aggregates transactions by customer becomes slow because one customer generates most of the events. How would you mitigate hot-key processing?
+* Events arrive several minutes late, causing incorrect hourly reports. How would you configure event-time windows, watermarks, triggers, and allowed lateness?
+* A Dataflow pipeline produces incomplete aggregates even though all messages appear to have been published. How would you investigate windowing, late data, acknowledgments, and sink behavior?
+* A pipeline writes valid records to BigQuery but silently loses malformed records. How would you implement dead-letter handling, error metrics, and replay?
+* A production deployment changes a Java transform and causes the streaming pipeline to fail during an update. How would you diagnose compatibility issues and restore processing?
+* Dataflow worker utilization remains low, but end-to-end latency is high. How would you investigate source throughput, downstream dependencies, and pipeline fusion?
+* A pipeline reads millions of files from Cloud Storage and takes too long to complete. How would you optimize file discovery, parallelism, and data layout?
+* A streaming pipeline enriches events using a large side input and starts failing because workers run out of memory. How would you redesign the enrichment strategy?
+* A pipeline makes an external API call for every event and exceeds the API's rate limit. How would you implement batching, caching, throttling, and retry controls?
+* A Dataflow job repeatedly retries a transform that fails for a small subset of records. How would you isolate poison messages and prevent endless processing delays?
+* A pipeline's BigQuery sink becomes the throughput bottleneck. How would you investigate write patterns, quotas, batching, and Storage Write API configuration?
+* A schema change in the upstream event producer causes a large increase in parsing failures. How would you support backward compatibility and schema evolution?
+* A pipeline uses stateful processing, and state size grows continuously over several days. How would you identify the cause and implement state cleanup?
+* A session-window aggregation produces unexpected results when events arrive out of order. How would you investigate window merging and trigger behavior?
+* A streaming pipeline must be updated without losing accumulated state. How would you plan the update and validate state compatibility?
+* A Dataflow job's cost doubles after autoscaling is enabled. How would you examine worker scaling, machine types, parallelism, and processing efficiency?
+* A batch pipeline completes successfully but takes much longer than its service-level objective. How would you use the execution graph and stage metrics to find bottlenecks?
+* A pipeline reads Pub/Sub messages and updates a relational database, but retries create duplicate updates. How would you design idempotency and transaction handling?
+* A Dataflow job cannot access Cloud Storage or BigQuery after a service-account change. How would you troubleshoot IAM permissions and worker identity?
+* A critical streaming job stops processing during a regional service disruption. How would you design recovery, replay, and duplicate prevention?
+* Your team needs to replay seven days of events without interrupting live processing. How would you design separate replay and live-processing pipelines?
+* A pipeline joins a stream of orders with frequently changing customer reference data. How would you ensure enrichment results reflect the intended version of the reference data?
+* A pipeline processes clickstream events and calculates session-level metrics. How would you handle session windows, late events, and long periods of inactivity?
+* Your organization needs to process personally identifiable information while preserving data quality and access controls. How would you design validation, masking, logging, and secure output handling?
+* A Java Dataflow pipeline works with DirectRunner but fails on DataflowRunner. How would you investigate serialization, dependency packaging, permissions, and runner-specific behavior?
+* A pipeline generates correct totals but reports them several minutes late. How would you distinguish processing lag from window-trigger and watermark delays?
+* Your organization needs a cost-effective pipeline that processes both real-time transactions and nightly historical data. How would you design batch and streaming components and select appropriate execution strategies?

@@ -1,0 +1,119 @@
+**Model Serving Architecture**
+* How would you design a model-serving architecture that supports multiple models, authentication, request validation, and streaming responses?
+* How would you separate the API gateway, inference server, model artifacts, and application business logic?
+* How would you support model routing, fallback providers, and different latency requirements?
+* How would you design a serving architecture that supports both REST and asynchronous batch requests?
+
+**GPU and CPU Inference**
+* How would you benchmark CPU and GPU inference for different model sizes and request patterns?
+* How would you determine whether an inference workload is compute-bound or memory-bandwidth-bound?
+* How do batch size, precision, sequence length, and concurrency affect CPU and GPU performance?
+* How would you select hardware for a latency-sensitive model with moderate traffic and a limited budget?
+
+**GPU Memory Management**
+* How would you estimate GPU memory requirements for model weights, KV cache, runtime overhead, and intermediate tensors?
+* How does the KV cache grow as the number of concurrent sequences and context lengths increase?
+* How would you diagnose GPU memory fragmentation and unexpected out-of-memory errors?
+* How would you balance GPU memory reserved for model weights against memory needed for concurrent requests?
+
+**Model Quantization and Optimization**
+* How would you choose between post-training quantization and quantization-aware training?
+* How would you compare weight-only quantization with weight-and-activation quantization?
+* How would you validate model quality after quantization using representative evaluation datasets?
+* How would you benchmark quantized inference across throughput, latency, memory consumption, and task quality?
+
+**Batch vs Online Inference**
+* How would you design a system that supports both real-time predictions and scheduled batch inference?
+* How would you handle backpressure and queue management for batch inference jobs?
+* How would you choose between synchronous APIs, asynchronous jobs, and message-driven inference?
+* How would you prioritize latency-sensitive requests when batch jobs compete for GPU resources?
+
+**Dynamic Batching**
+* How would you configure maximum batch size and batching delay for a model server?
+* How would you measure the effect of dynamic batching on throughput and tail latency?
+* How would you handle requests with different input shapes or sequence lengths?
+* How would you prevent batching from violating strict latency objectives under low traffic?
+
+**Continuous Batching**
+* How does continuous batching handle requests entering and leaving an active generation batch?
+* How do prefill and decode phases affect batching efficiency?
+* How would you monitor active sequences, waiting requests, and KV cache utilization?
+* How would you tune scheduling to balance time to first token and inter-token latency?
+
+**Model Caching**
+* How would you design a cache for deterministic classification or embedding requests?
+* How would you implement cache keys that account for model version, prompt, parameters, and relevant context?
+* How would you manage cache expiration and invalidation after a model or prompt update?
+* How would you evaluate the effectiveness of caching using hit rate, latency reduction, and storage cost?
+
+**Distributed Inference**
+* How would you distribute inference requests across several model-serving replicas?
+* How would you distinguish request-level load balancing from splitting one model execution across multiple devices?
+* How would network latency and interconnect bandwidth affect distributed inference performance?
+* How would you monitor and recover from a failed worker in a multi-node inference deployment?
+
+**Model Parallelism**
+* How would you choose between tensor parallelism and pipeline parallelism for a large transformer model?
+* How do communication overhead and GPU interconnect bandwidth affect tensor parallelism?
+* How would you handle pipeline bubbles and uneven layer distribution?
+* How would you estimate the number of GPUs needed to serve a model with a target concurrency and context length?
+
+**Kubernetes for AI Workloads**
+* How would you deploy a GPU-backed inference service using Kubernetes Deployments, Services, and resource requests?
+* How would you configure node selectors, affinity, tolerations, and taints for GPU workloads?
+* How would you use readiness probes to prevent traffic from reaching a Pod before its model is loaded?
+* How would you manage model configuration and secrets without embedding them in container images?
+
+**GPU Scheduling and Sharing**
+* How would you configure GPU resource requests and limits for a Kubernetes inference Pod?
+* How would you choose between GPU time-slicing, MIG, and dedicated GPU allocation?
+* How would you prevent noisy-neighbor workloads from degrading latency-sensitive inference?
+* How would you monitor GPU utilization, memory usage, scheduling failures, and device allocation?
+
+**AI Model Serving with vLLM**
+* How would you deploy vLLM with an OpenAI-compatible API and secure it behind an application gateway?
+* How would you tune maximum model length, batch token limits, and GPU memory utilization?
+* How would you monitor KV cache utilization, waiting requests, generation throughput, and latency in vLLM?
+* How would you evaluate the impact of quantization and tensor parallelism on vLLM performance?
+
+**NVIDIA Triton Inference Server**
+* How would you configure Triton dynamic batching and instance groups for a particular model?
+* How would you deploy multiple model versions using a Triton model repository?
+* How would you monitor Triton request latency, queue time, throughput, and GPU utilization?
+* How would you choose between Triton's supported backends for models built with different frameworks?
+
+**Model Deployment with Docker**
+* How would you create a production Docker image for an inference API without unnecessarily bundling large model files?
+* How would you configure NVIDIA Container Toolkit and GPU access for a Dockerized inference service?
+* How would you optimize container image size, build time, startup time, and dependency security?
+* How would you inject model configuration, credentials, and runtime settings into a container safely?
+
+**Autoscaling AI Workloads**
+* How would you scale an inference deployment using queue depth, active requests, token throughput, and GPU utilization?
+* How would you account for long model startup and loading times when scaling out?
+* How would you prevent autoscaling oscillations when request traffic fluctuates rapidly?
+* How would you implement scale-down policies without terminating Pods that are processing active requests?
+
+**Model Registry and Artifact Management**
+* How would you manage model artifacts, evaluation reports, runtime configurations, and container images across environments?
+* How would you validate artifact checksums and compatibility before deploying a model?
+* How would you promote a model from development to staging and production with approval gates?
+* How would you retain model lineage across fine-tuning, quantization, evaluation, and deployment?
+
+**High Availability for AI Services**
+* How would you design inference services across multiple replicas and availability zones?
+* How would you handle model-loading failures, unhealthy replicas, and provider timeouts?
+* How would you implement graceful shutdown and connection draining for streaming inference requests?
+* How would you maintain service availability when a shared model artifact store or vector database becomes unavailable?
+
+**AI Disaster Recovery**
+* How would you define RTO and RPO for an AI application with model artifacts, configuration, and vector indexes?
+* How would you back up model registries, prompt configurations, evaluation datasets, and deployment manifests?
+* How would you recover inference capacity in another region after a GPU cluster failure?
+* How would you test restoration of model artifacts and verify that the recovered service produces acceptable results?
+
+**Inference Cost Optimization**
+* How would you calculate cost per successful inference while accounting for retries, failed requests, and quality thresholds?
+* How would you compare dedicated GPU instances, shared accelerators, quantized models, and managed inference endpoints?
+* How would you use batching, caching, model routing, and request limits to reduce serving costs?
+* How would you identify idle GPU capacity and underutilized model replicas?

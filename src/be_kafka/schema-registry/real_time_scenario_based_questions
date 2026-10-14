@@ -1,0 +1,30 @@
+* A producer deployment fails because the new Avro schema is incompatible with the registered schema. How would you investigate and resolve it?
+* A new optional field is added to an event, but older consumers fail to deserialize messages. What could be wrong?
+* A consumer receives a message with a schema ID that it cannot resolve. How would you troubleshoot the issue?
+* Schema Registry becomes unavailable during peak traffic. What happens to existing producers and consumers, and how would you maintain service reliability?
+* A new producer version adds a required field without a default value. How could this affect older consumers?
+* A consumer is deployed before the corresponding schema change, and deserialization begins failing. How would you correct the deployment sequence?
+* Two microservices publish different record types to the same topic and experience schema compatibility conflicts. How would you redesign the subject strategy?
+* A schema passes compatibility validation against the latest version but fails with older supported consumers. How would you investigate?
+* A team changes a field from `int` to `string`, causing compatibility errors. How would you plan a safe migration?
+* A producer introduces a new enum value, and some consumers fail when processing it. How would you make enum evolution safer?
+* A financial event schema needs a new field for currency while old services continue processing events. How would you evolve the schema?
+* A consumer application can read newly produced records in one environment but fails in another environment. How would you investigate schema registration and configuration differences?
+* Schema IDs differ between development, testing, and production. How would you deploy schemas consistently across environments?
+* A producer repeatedly attempts schema registration during startup, increasing latency. How would you optimize initialization and caching?
+* Schema Registry is responding slowly, and Kafka producer latency is increasing. How would you determine whether schema lookup is the bottleneck?
+* A schema was deleted accidentally, and consumers are unable to retrieve it. What recovery options would you evaluate?
+* A producer and consumer use different Avro-generated Java classes. How would you diagnose compatibility and class-generation problems?
+* A new field is nullable but has no appropriate default in the Avro schema. Why might schema compatibility validation fail?
+* A microservice team wants to rename an event field without breaking existing applications. How would you implement the migration?
+* A company wants to migrate thousands of JSON Kafka events to Avro. How would you plan coexistence, rollout, validation, and rollback?
+* A consumer needs to read historical events produced with several schema versions. How would you ensure that the current application can deserialize them?
+* A Schema Registry endpoint is accessible from one Kubernetes service but not another. How would you troubleshoot connectivity, DNS, TLS, and authentication?
+* A producer has permission to publish to Kafka but receives authorization errors from Schema Registry. How would you investigate the separate security controls?
+* A CI/CD pipeline allows an incompatible schema to reach production. How would you add automated compatibility checks and deployment safeguards?
+* A schema change passes tests but causes business logic failures because a field's meaning changed. How would you prevent semantic compatibility issues?
+* A topic is shared by several teams that release independently. How would you define schema ownership, subject naming, and compatibility policies?
+* A consumer experiences high CPU usage after switching from JSON to Avro. How would you investigate deserialization, object allocation, and application processing?
+* A disaster recovery exercise requires restoring Kafka and Schema Registry in another region. What schema metadata and configuration must be preserved?
+* A producer needs to publish a new event version while old and new consumers run concurrently. How would you coordinate schema evolution and deployment?
+* You need to establish organization-wide schema governance for payment events. What validation, security, compatibility, and audit controls would you implement?

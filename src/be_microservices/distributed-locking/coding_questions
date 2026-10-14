@@ -1,0 +1,30 @@
+* Write a Java program demonstrating how synchronized protects a critical section within a single JVM.
+* Implement a Redis-based distributed lock using Spring Boot and Spring Data Redis.
+* Write a Java method that acquires a Redis lock using SET NX with an expiration time.
+* Implement safe lock release using a unique ownership token and an atomic Redis script.
+* Write a distributed lock utility that supports acquisition timeout and lease duration.
+* Implement a distributed lock using Redisson's RLock interface.
+* Write a Java example demonstrating lock acquisition, business processing, and safe cleanup in a finally block.
+* Implement a Spring Boot service that prevents multiple instances from executing the same scheduled job.
+* Write JUnit tests for successful lock acquisition, acquisition timeout, and lock release.
+* Create an integration test that runs concurrent tasks against a shared Redis instance.
+* Implement a database-based lock using a table with a unique resource key.
+* Write a PostgreSQL example using advisory locks to coordinate concurrent workers.
+* Implement an idempotent order-processing service using a unique idempotency key and database constraint.
+* Write a Java program that simulates two workers competing for the same distributed lock.
+* Implement a lock lease-renewal mechanism and handle renewal failure safely.
+* Create a Java service that records lock owner, acquisition time, and expiration metadata for monitoring.
+* Implement a distributed lock wrapper that records acquisition latency, contention, and timeout metrics.
+* Write a test that demonstrates why releasing a Redis lock with an unconditional DEL command is unsafe.
+* Implement a fencing-token mechanism that rejects stale writes to a protected database record.
+* Write a Java service that uses optimistic locking with JPA's @Version annotation instead of a distributed lock.
+* Implement a retry policy with bounded attempts and randomized backoff for lock acquisition.
+* Create a lock manager that uses consistent resource naming to avoid collisions across tenants and operations.
+* Implement a workflow that combines a distributed lock with a database transaction and idempotency checks.
+* Write a Java program that demonstrates a deadlock caused by acquiring two locks in different orders, then fix it.
+* Implement a Spring Boot scheduled job that uses a distributed lock and handles failures during execution.
+* Write tests for lock behavior when the lock provider becomes unavailable during processing.
+* Implement a Redisson-based lock for inventory reservation and verify that concurrent requests do not oversell stock.
+* Create a Kafka consumer that combines idempotent processing with database constraints to handle duplicate events safely.
+* Implement a critical-resource update service that validates fencing tokens before accepting writes.
+* Design a production-grade distributed coordination solution using Java, Spring Boot, Redis or ZooKeeper, database constraints, idempotency, fencing tokens, monitoring, and failure recovery.

@@ -1,0 +1,30 @@
+* What is a retry topic in Kafka?
+* Why do we need retry topics in Kafka?
+* What types of failures can be handled using retry topics?
+* What is the difference between a retry topic and a dead-letter topic?
+* How does a retry topic work in Kafka?
+* What is message retrying in Kafka?
+* What is the difference between an immediate retry and a delayed retry?
+* What is a retry interval?
+* What is exponential backoff?
+* What is fixed backoff?
+* What is the purpose of a retry count?
+* What happens when a message fails processing in a Kafka consumer?
+* Can a Kafka consumer retry processing the same message?
+* What is the difference between retrying a message and replaying a message?
+* What is a retryable exception?
+* What is a non-retryable exception?
+* Why should not all exceptions be retried?
+* What is a retry policy?
+* What is the purpose of a retry limit?
+* What happens when a message exceeds the maximum retry attempts?
+* What is a dead-letter topic used for after retries are exhausted?
+* What is the difference between retry topics and consumer offset retries?
+* How do retry topics affect message ordering?
+* Can retry topics introduce processing delays?
+* What is the purpose of a retry topic naming convention?
+* How can retry topics be configured in Spring Kafka?
+* What is the purpose of `@RetryableTopic`?
+* What is the purpose of `@DltHandler`?
+* What is the role of `DefaultErrorHandler` in Spring Kafka?
+* How do you monitor messages sent to retry topics?

@@ -1,0 +1,30 @@
+* How would you design a Dead Letter Topic strategy for a high-throughput Kafka application?
+* How do you guarantee that a failed message is not lost when publishing to a Dead Letter Topic?
+* What delivery guarantees can be achieved when moving failed messages to a Dead Letter Topic?
+* How do consumer offset commits interact with dead-letter publishing and recovery?
+* What failure scenarios can cause duplicate dead-letter messages?
+* How would you design idempotent dead-letter publishing and replay?
+* How can Kafka transactions improve reliability when publishing to a Dead Letter Topic?
+* What are the limitations of using Kafka transactions with a DeadLetterPublishingRecoverer?
+* How would you handle a Dead Letter Topic broker outage without losing failed records?
+* How do you prevent a Dead Letter Topic from becoming a storage bottleneck?
+* How would you design retention and cleanup policies for dead-letter messages?
+* How do you handle ordering guarantees when failed messages are retried or dead-lettered?
+* How can partition mapping affect dead-letter processing and replay order?
+* How do you design a Dead Letter Topic strategy for multiple source topics and consumer groups?
+* How would you route failures differently for transient, permanent, and infrastructure exceptions?
+* How do you prevent sensitive data from leaking into dead-letter headers or exception messages?
+* How would you implement a controlled replay system for thousands of dead-letter records?
+* How do you prevent replayed messages from creating an infinite failure cycle?
+* How would you handle schema incompatibility in dead-letter messages?
+* How do Schema Registry and schema evolution affect dead-letter processing?
+* How do you handle large Kafka records that fail processing and exceed producer size limits during dead-letter publishing?
+* How would you design alerting based on dead-letter growth rate rather than just topic size?
+* How do you distinguish application defects from corrupted data using dead-letter metadata?
+* How would you handle a consumer crash after processing fails but before dead-letter publishing completes?
+* How do you reason about at-most-once, at-least-once, and exactly-once semantics in a dead-letter workflow?
+* How would you build an auditable dead-letter processing system for financial transactions?
+* How do you prevent dead-letter replay from violating business-level ordering or state transitions?
+* How would you partition and scale a Dead Letter Topic independently of the original topic?
+* How do you implement backpressure when the Dead Letter Topic consumer cannot keep up?
+* How would you design a recovery workflow that supports manual approval, replay, and permanent rejection?

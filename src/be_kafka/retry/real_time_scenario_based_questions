@@ -1,0 +1,30 @@
+* A Kafka consumer fails because a downstream REST API is temporarily unavailable. How would you configure retry topics and backoff?
+* A database is unavailable for 10 minutes, causing millions of messages to enter retry topics. How would you recover without overwhelming the database?
+* A payment event fails during processing and is retried several times. How would you prevent duplicate payment execution?
+* Messages are being retried continuously even though the exception is caused by invalid business data. How would you fix the retry configuration?
+* A consumer uses retry topics, but messages are processed out of order. How would you investigate and redesign the processing flow?
+* A message repeatedly fails and moves through all retry topics before reaching the dead-letter topic. How would you investigate the root cause?
+* A retry topic has a large consumer lag while the original topic is healthy. How would you diagnose the bottleneck?
+* Retry topics are consuming excessive storage during a downstream outage. How would you control storage growth and retention?
+* A consumer publishes a message to a retry topic and crashes before committing its original offset. What duplicate-processing risks exist, and how would you handle them?
+* A retry topic is unavailable during a broker failure. How should the consumer handle the failed publication?
+* A REST API returns HTTP 429 because the application exceeds its rate limit. How would you design a retry strategy that respects `Retry-After`?
+* A downstream service returns HTTP 500 intermittently. How would you configure bounded retries with exponential backoff?
+* A consumer experiences a deserialization exception before the message reaches the listener. How would you route the message safely for diagnosis or recovery?
+* One message causes a consumer to fail repeatedly and delays other messages in the same partition. How would you prevent a poison message from blocking progress?
+* Your application requires per-account ordering, but retry topics allow later account events to be processed first. How would you solve this?
+* A retry topic contains records with missing or incorrect headers. How would you diagnose the routing and metadata problem?
+* A team has configured ten retry attempts with a very short interval, causing a retry storm. How would you redesign the retry policy?
+* A retry message reaches the dead-letter topic, but the original exception details are missing. What metadata would you capture?
+* A production deployment introduces a bug that causes valid messages to fail. How would you pause or control retries while the fix is deployed?
+* After fixing a downstream service, you need to replay dead-letter messages in controlled batches. How would you implement the recovery?
+* A retry consumer and the original consumer use different serialization configurations. How would you prevent serialization failures during retry publishing?
+* A message succeeds on a retry attempt, but monitoring still reports it as failed. How would you investigate retry metrics and application logging?
+* A microservice uses both `DefaultErrorHandler` and `@RetryableTopic`. How would you determine whether the two mechanisms are conflicting?
+* A retry topic has a different partition count from the original topic, and message routing behaves unexpectedly. How would you resolve it?
+* Retry messages are processed immediately instead of after the expected delay. What configuration, scheduling, or timestamp behavior would you investigate?
+* A consumer is restarting repeatedly because retry processing throws the same exception. How would you prevent a restart loop?
+* A critical financial event reaches the dead-letter topic. What alerting, audit, access-control, and recovery procedures should be in place?
+* You need to retry failures differently for validation errors, database timeouts, and downstream API errors. How would you design the exception classification?
+* Retry topic volume rises sharply after a new release. Which metrics and logs would you inspect to determine whether the release introduced a regression?
+* You need a standardized retry framework for dozens of Spring Boot services. How would you design configuration, observability, testing, and operational controls?

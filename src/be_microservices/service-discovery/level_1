@@ -1,0 +1,30 @@
+* Explain the complete service registration and discovery flow using Eureka.
+* How does a service consumer discover a provider using Eureka?
+* How does client-side load balancing work with service discovery?
+* How does server-side load balancing differ from client-side load balancing?
+* How do you configure Eureka Server and Eureka Client in Spring Boot?
+* How do you configure a service name for registration in Eureka?
+* How does Spring Cloud LoadBalancer integrate with service discovery?
+* How do you call another microservice using its service name instead of a fixed URL?
+* How does service discovery work with OpenFeign?
+* How does service discovery work with RestTemplate?
+* How does service discovery work with WebClient?
+* What is the difference between Eureka and Consul?
+* What is the difference between Eureka and Kubernetes service discovery?
+* How does Eureka detect unhealthy service instances?
+* What is the purpose of Eureka lease renewal?
+* What happens if a service stops sending heartbeats?
+* What is Eureka self-preservation mode?
+* Why might Eureka continue listing an unavailable service instance?
+* How do you configure Eureka client registration and registry fetching?
+* What is the difference between fetch-registry and register-with-eureka?
+* How do you secure communication between Eureka clients and the registry?
+* How can you configure multiple Eureka Server instances?
+* What is Eureka peer replication?
+* How do you handle service discovery across multiple environments?
+* How do you configure service discovery for Docker containers?
+* How does DNS-based service discovery work in a containerized environment?
+* How can service discovery support blue-green deployments?
+* How do you troubleshoot a microservice that is not registering with Eureka?
+* How do you troubleshoot a service that is registered but cannot be reached?
+* What are the performance considerations when using a service registry?

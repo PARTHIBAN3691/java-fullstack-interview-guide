@@ -1,0 +1,30 @@
+* Write a Java example that violates SRP by combining employee management, persistence, and reporting, then refactor it into separate classes.
+* Implement a Java notification system that supports email, SMS, and push notifications using OCP.
+* Design a payment-processing system with separate implementations for card, UPI, and net banking payments.
+* Write a Java example demonstrating an LSP violation in a Rectangle and Square hierarchy, then redesign it.
+* Create separate read-only and read-write repository interfaces to demonstrate ISP.
+* Implement a service that depends on a repository interface rather than a concrete repository implementation.
+* Write a Java example demonstrating dependency inversion between an order service and a database repository.
+* Use constructor injection to implement a loosely coupled Java service.
+* Refactor a class that validates customer data, saves it, and sends notifications into SRP-compliant components.
+* Implement a discount calculation engine using the Strategy pattern to support new discount types.
+* Create a Java interface for payment processing and implement multiple payment providers without modifying the client.
+* Write a JUnit and Mockito test for a service that uses constructor-injected repository and notification dependencies.
+* Refactor a large Java interface into smaller interfaces for reading, writing, and deleting records.
+* Implement a Java example in which a subclass violates LSP by changing the expected behavior of a superclass method.
+* Design an order service that uses an abstraction for sending messages to a message queue.
+* Write a Spring Boot REST API whose controller, service, and repository responsibilities are separated.
+* Implement a tax calculation service that supports new tax rules through separate strategy implementations.
+* Create a Java application that uses an interface to isolate a third-party shipping API from business logic.
+* Refactor a switch-based payment selection implementation into a polymorphic design.
+* Implement a Java factory that creates notification providers while keeping the notification workflow independent of concrete classes.
+* Write a Java example demonstrating why a service should depend on an abstraction instead of directly creating a JDBC connection.
+* Create separate interfaces for file reading and file writing, then implement a read-only file processor.
+* Implement an extensible validation framework where new validators can be added without modifying the validation engine.
+* Refactor a Java class with multiple unrelated methods into cohesive classes with clearly defined responsibilities.
+* Write a Spring Boot service that uses dependency injection to support multiple implementations of a business interface.
+* Implement a strategy-based order pricing system with percentage discounts, fixed discounts, and loyalty discounts.
+* Create a Java example that replaces inheritance with composition to avoid an LSP violation.
+* Write unit tests that verify a business service works with different repository implementations.
+* Implement an adapter around a third-party payment SDK so domain services depend only on an application-owned interface.
+* Build a small Java application demonstrating all five SOLID principles and include unit tests for its main business workflows.

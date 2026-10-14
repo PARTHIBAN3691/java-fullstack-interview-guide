@@ -1,0 +1,30 @@
+* Write a Java method that implements a simple in-memory cache using a HashMap.
+* Implement a cache with a configurable TTL for each entry.
+* Write a Java class that removes expired entries before returning cached values.
+* Implement an LRU cache using LinkedHashMap.
+* Write a Spring Boot REST endpoint that caches product details using @Cacheable.
+* Implement cache updates using @CachePut when a product is modified.
+* Write a Spring Boot service that evicts a cached product after an update or deletion.
+* Configure a Redis cache manager in a Spring Boot application.
+* Implement different TTL values for product details and frequently changing inventory data.
+* Write a REST API that caches frequently accessed reference data to reduce database calls.
+* Implement cache keys that include request parameters such as category, page number, and sorting order.
+* Write a service that caches user-specific data without mixing responses between users.
+* Implement conditional GET requests using ETag and return HTTP 304 when the resource has not changed.
+* Write a Spring Boot endpoint that supports If-Modified-Since and Last-Modified headers.
+* Implement a cache-aside service that reads from Redis first and falls back to a database.
+* Write a service that updates the database and invalidates related cache entries safely.
+* Implement negative caching for missing records with a short TTL.
+* Write a cache wrapper that falls back to the database when Redis is unavailable.
+* Implement a mechanism that prevents multiple concurrent requests from refreshing the same expired cache entry.
+* Write a service that refreshes frequently accessed cache entries in the background.
+* Implement cache key versioning so that a new application release can avoid incompatible cached values.
+* Write a test that verifies repeated service calls use the cache instead of querying the database each time.
+* Write integration tests that verify cache eviction after create, update, and delete operations.
+* Implement a test that verifies expired cache entries are refreshed from the data source.
+* Write a test that verifies cached responses cannot leak data between different users or tenants.
+* Implement a Redis-backed cache that records cache hits, misses, evictions, and lookup latency.
+* Write a service that handles concurrent updates without allowing older values to overwrite newer cached values.
+* Implement a cache invalidation listener that processes resource-update events from a message broker.
+* Write a load-testing scenario that compares API throughput and latency with caching enabled and disabled.
+* Build a complete Spring Boot REST API caching module using Redis, configurable TTLs, cache-aside loading, safe invalidation, conditional HTTP requests, failure handling, metrics, and automated tests.

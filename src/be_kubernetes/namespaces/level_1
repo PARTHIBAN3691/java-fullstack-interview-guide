@@ -1,0 +1,30 @@
+* How do you isolate development, staging, and production workloads using Namespaces?
+* How do you deploy a Spring Boot application into a dedicated Namespace?
+* How do you configure a Deployment and Service in the same Namespace?
+* How do you reference a Service located in another Namespace?
+* What is the difference between a short Service DNS name and a fully qualified Service DNS name?
+* How do you configure ResourceQuota for a Namespace?
+* How do you configure LimitRange to set default CPU and memory requests?
+* How do you restrict a team's access to a Namespace using RBAC?
+* What is the difference between Role and ClusterRole?
+* What is the difference between RoleBinding and ClusterRoleBinding?
+* How do you create a ServiceAccount for an application in a Namespace?
+* How do you restrict a user to viewing resources in a specific Namespace?
+* How do you configure NetworkPolicies to isolate workloads between Namespaces?
+* How do you prevent Pods in one Namespace from accessing services in another Namespace?
+* How do you manage ConfigMaps separately for different environments?
+* How do you manage Secrets across multiple Namespaces?
+* Can a Secret be referenced directly by a Pod in another Namespace?
+* How do you configure a default ServiceAccount for workloads in a Namespace?
+* How do you apply labels and annotations to Namespaces?
+* How do you select resources from multiple Namespaces using kubectl?
+* How do you view resource usage for Pods in a specific Namespace?
+* How do you troubleshoot a Pod that remains Pending because of Namespace quotas?
+* How do you identify which ResourceQuota is preventing resource creation?
+* How do you configure separate quotas for CPU, memory, and object counts?
+* How do you enforce security policies at the Namespace level?
+* How do Namespaces interact with PersistentVolumeClaims and PersistentVolumes?
+* How do you manage Helm Releases in different Namespaces?
+* How do you configure a CI/CD pipeline to deploy into a target Namespace?
+* What happens to a Namespace when it enters the Terminating state?
+* How do you troubleshoot a Namespace that remains stuck in Terminating?

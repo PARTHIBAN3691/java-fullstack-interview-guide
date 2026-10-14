@@ -1,0 +1,30 @@
+* Write a JUnit 5 test that starts a PostgreSQL container using Testcontainers.
+* Write a Java test using @Testcontainers and @Container.
+* Write a test using a static PostgreSQL container shared across test methods in one class.
+* Write a test using an instance PostgreSQL container that starts and stops for each test method.
+* Write a Spring Boot integration test that configures a DataSource using @DynamicPropertySource.
+* Write a Spring Data JPA repository test using PostgreSQL Testcontainers.
+* Write a test that persists an entity and verifies its values using a containerized database.
+* Write a Testcontainers test that executes an SQL initialization script.
+* Write a Spring Boot integration test that validates a Flyway migration.
+* Write a Spring Boot integration test that validates a Liquibase migration.
+* Write a test that verifies transaction rollback using a PostgreSQL container.
+* Write a Testcontainers test for a MySQL database.
+* Write a Testcontainers test for MongoDB.
+* Write a Testcontainers test for Redis.
+* Write a Testcontainers test for an Apache Kafka broker.
+* Write a test that publishes a Kafka event and verifies that a consumer receives it.
+* Write a test that validates Kafka retry behavior and dead-letter topic processing.
+* Write a Java test using GenericContainer to start a custom application image.
+* Write a custom container configuration with environment variables and exposed ports.
+* Write a Testcontainers test that waits for an HTTP endpoint to become available.
+* Write a custom WaitStrategy for an application container.
+* Write a test that connects two containers using a shared Docker network.
+* Write a test that runs PostgreSQL and Redis containers in the same integration test.
+* Write a Spring Boot test that uses two containerized databases for multiple data sources.
+* Write a test that inserts and cleans up test data in a containerized database.
+* Write a test that validates PostgreSQL-specific JSONB query behavior.
+* Write a parameterized integration test that runs against multiple PostgreSQL image versions.
+* Write a Maven configuration that separates unit tests from Testcontainers integration tests.
+* Write a CI pipeline step that runs Testcontainers-based tests and publishes test reports.
+* Design a complete Spring Boot integration testing framework using Testcontainers, JUnit 5, PostgreSQL, Kafka, and Redis.

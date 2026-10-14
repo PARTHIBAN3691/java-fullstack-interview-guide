@@ -1,0 +1,30 @@
+* How would you design a BigQuery data warehouse for a large enterprise with hundreds of source systems?
+* How would you model fact and dimension tables for a high-volume transactional analytics platform?
+* How would you choose between star schema, snowflake schema, and denormalized tables in BigQuery?
+* How would you optimize a query that scans several terabytes but returns only a small result set?
+* How would you diagnose and reduce excessive slot consumption?
+* How would you optimize queries involving large joins and data skew?
+* How would you handle data skew in distributed analytical queries?
+* How would you decide between partitioning, clustering, and a combination of both?
+* How would you design a cost-efficient incremental ETL pipeline for billions of records?
+* How would you implement idempotent ingestion when source events can arrive more than once?
+* How would you handle late-arriving and out-of-order events in BigQuery?
+* How would you design a near-real-time analytics platform using Pub/Sub, Dataflow, and BigQuery?
+* How would you handle schema evolution in continuously ingested JSON or Avro data?
+* How would you design a backfill process without duplicating existing records?
+* How would you implement slowly changing dimensions in BigQuery?
+* How would you maintain data consistency across multiple ingestion pipelines?
+* How would you implement row-level and column-level security for sensitive business data?
+* How would you design data access controls across multiple projects and business units?
+* How would you implement dynamic data masking for sensitive columns?
+* How would you use authorized views to share data without granting direct access to source tables?
+* How would you design disaster recovery and data retention for critical analytical datasets?
+* How would you use table snapshots, clones, and time travel for recovery and auditing?
+* How would you manage BigQuery datasets across development, testing, and production environments?
+* How would you implement CI/CD for BigQuery SQL scripts, views, and schema changes?
+* How would you detect and prevent breaking schema changes in downstream consumers?
+* How would you design workload isolation for dashboards, scheduled queries, and ad hoc analytics?
+* How would you optimize materialized views and cached query results for recurring workloads?
+* How would you handle transaction consistency when multiple processes modify related BigQuery tables?
+* How would you design a reconciliation framework that compares source-system totals with BigQuery aggregates?
+* How would you evaluate BigQuery against Cloud SQL, Spanner, and Bigtable for different workload requirements?

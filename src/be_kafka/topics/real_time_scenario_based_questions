@@ -1,0 +1,30 @@
+* A production topic is receiving messages, but consumers are not processing them. How would you investigate?
+* A topic's storage usage has suddenly increased. How would you identify the cause and resolve it?
+* A topic has insufficient partitions to support a growing consumer group. How would you scale it safely?
+* After increasing a topic's partition count, messages for the same customer are processed out of order. How would you fix this?
+* A topic has many under-replicated partitions during peak traffic. How would you troubleshoot the issue?
+* A broker hosting several topic leaders goes down. What happens, and how would you verify recovery?
+* A topic has a replication factor of three, but producers are receiving insufficient-replica errors. How would you investigate?
+* A team accidentally deletes a critical production topic. What recovery options would you evaluate?
+* A new application starts automatically creating misspelled topics. How would you prevent this?
+* A compacted topic is not removing older records as expected. How would you troubleshoot it?
+* A topic contains duplicate business events from multiple producers. How would you investigate and prevent recurrence?
+* A topic's message volume doubles after a new service deployment. How would you identify the source?
+* A consumer group has more consumers than the topic has partitions. How would you improve utilization?
+* A topic has one extremely busy partition while the remaining partitions are nearly idle. How would you resolve the imbalance?
+* A topic's retention period is seven days, but the business requires replaying data from the last thirty days. What changes are needed?
+* A topic contains personally identifiable information that must be retained only for a limited period. How would you design its retention and access controls?
+* A producer is publishing incompatible event versions to a shared topic. How would you manage schema evolution?
+* Two teams need different retention policies for their consumers' use cases. How would you design the topic strategy?
+* A topic migration must happen without interrupting production consumers. How would you coordinate the migration?
+* A topic's partition count is much higher than necessary, increasing operational overhead. How would you address it?
+* A new region must receive replicated Kafka data. How would you design the topic replication and recovery strategy?
+* A critical topic experiences frequent leader changes. What metrics and broker conditions would you investigate?
+* A topic has reached its storage quota and producers are failing. How would you restore service and prevent recurrence?
+* A consumer needs to replay all events, but existing consumer groups must continue normally. How would you support this?
+* A topic receives messages with null keys, causing unexpected distribution. How would you investigate and correct it?
+* A compacted topic contains stale state after a producer publishes incorrect updates. How would you recover?
+* A topic has the correct replication factor, but its replicas are frequently out of sync. What would you inspect?
+* A business team requests a separate topic for every customer. What scalability and governance concerns would you raise?
+* A production topic must change its retention policy without causing unexpected data loss. How would you execute the change?
+* Multiple services publish different event types into one topic, making consumers difficult to maintain. How would you redesign the topic structure?

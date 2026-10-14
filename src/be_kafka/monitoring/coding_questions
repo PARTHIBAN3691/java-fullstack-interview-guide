@@ -1,0 +1,30 @@
+* Write a Java program using Kafka AdminClient to list all Kafka topics.
+* Implement a Java utility that describes the partitions and replicas of a Kafka topic.
+* Write a Java program that retrieves consumer group offsets using AdminClient.
+* Implement a Java utility that calculates consumer lag from committed offsets and log end offsets.
+* Write a Spring Boot service that exposes Kafka consumer lag as a custom Micrometer metric.
+* Implement a Micrometer counter that tracks Kafka message processing failures.
+* Write a Spring Boot Kafka listener that records message processing latency using Micrometer Timer.
+* Implement a custom metric that tracks the number of successfully processed Kafka records.
+* Write a Java component that records producer send latency and failure rates.
+* Implement a Kafka producer callback that updates success and failure metrics.
+* Write a Spring Boot application that exposes Kafka application metrics through Actuator.
+* Implement a custom health indicator that verifies Kafka broker connectivity.
+* Write a Java health-check utility using Kafka AdminClient to verify topic availability.
+* Implement a scheduled Spring Boot job that periodically calculates consumer lag.
+* Write a Java service that generates an alert when consumer lag exceeds a configured threshold.
+* Implement a monitoring service that detects under-replicated partitions using AdminClient.
+* Write a Java utility that identifies topics containing partitions without an active leader.
+* Implement a service that monitors broker availability and reports unavailable brokers.
+* Write a Kafka monitoring component that tracks partition count and replica distribution.
+* Implement a Micrometer gauge for the number of records processed per second by a Kafka consumer.
+* Write a Spring Boot Kafka application that exports custom metrics suitable for Prometheus scraping.
+* Implement a Kafka Streams monitoring component that reports task processing latency and records-lag metrics.
+* Write a Java utility that compares consumer lag across multiple consumer groups and identifies the highest-lag group.
+* Implement a Kafka monitoring alert that detects rapidly increasing consumer lag rather than only checking an absolute threshold.
+* Write a Java program that identifies the broker with the highest disk or partition load using available cluster metadata.
+* Implement a monitoring service that records Kafka producer retry counts and send failures.
+* Write a Spring Boot service that exposes Kafka topic-level message-rate metrics.
+* Implement an incident-detection component that combines consumer lag, broker availability, and under-replicated partition metrics.
+* Write an integration test that verifies a Kafka consumer metric is incremented when message processing fails.
+* Implement a Kafka monitoring dashboard data service that exposes topic throughput, consumer lag, broker health, and error-rate metrics through REST APIs.

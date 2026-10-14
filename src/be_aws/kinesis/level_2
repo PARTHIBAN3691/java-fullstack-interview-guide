@@ -1,0 +1,20 @@
+* Explain the internal processing model of Kinesis Data Streams and how records are distributed across shards.
+* How would you design a Kinesis stream to handle millions of events per second?
+* How do you choose a partition key to avoid hot shards and uneven data distribution?
+* What is shard splitting and merging, and how do these operations affect consumers?
+* How does Kinesis resharding affect shard iterators, checkpointing, and record processing?
+* How would you design a consumer application that processes records in order within each partition key?
+* How do you achieve effectively-once processing when Kinesis itself does not guarantee end-to-end exactly-once delivery?
+* How would you handle duplicate events after a consumer restart or checkpoint failure?
+* How do KCL leases and worker coordination support distributed stream processing?
+* How would you scale Java consumers while preserving ordering and avoiding concurrent processing of the same shard?
+* How do standard consumers and enhanced fan-out consumers differ in throughput, latency, and cost?
+* How would you recover from prolonged consumer downtime when records are close to the stream's retention limit?
+* How would you design backpressure handling when downstream database writes are slower than Kinesis ingestion?
+* How would you optimize a Java producer to reduce API overhead and improve throughput?
+* How would you tune batch size, retry strategy, and buffering to reduce Kinesis throttling?
+* How would you secure a cross-account Kinesis architecture using IAM roles, resource policies, and encryption?
+* How would you implement disaster recovery for a Kinesis-based streaming platform across AWS Regions?
+* How would you estimate Kinesis costs for high-volume workloads with multiple consumers?
+* How would you distinguish producer throttling, consumer lag, and downstream processing bottlenecks using CloudWatch metrics?
+* How would you compare Kinesis Data Streams with Apache Kafka on Amazon MSK for ordering, scaling, operations, and cost?

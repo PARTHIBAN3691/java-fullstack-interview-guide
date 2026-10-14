@@ -1,0 +1,30 @@
+* An API response contains several optional fields, and developers repeatedly write null checks. How would you improve the type model?
+* A function accepts either a string or a number, but different operations are required for each type. How would you implement safe narrowing?
+* A configuration object must preserve exact string values while being checked against an interface. How would you use satisfies?
+* A reusable utility must make every nested property readonly. How would you design a DeepReadonly type?
+* A form configuration contains different field types with different validation rules. How would you model it using discriminated unions?
+* A developer uses any to bypass complex type errors. How would you replace it with safer advanced types?
+* An API client returns different response types depending on the endpoint. How would you create a generic, type-safe client?
+* A function wrapper must preserve the parameter and return types of the wrapped function. How would you implement it?
+* A library accepts callbacks with different argument lists. How would you use generics and variadic tuples to model them?
+* A nested object contains properties whose keys must be selected dynamically. How would you make the selection type-safe?
+* A configuration file contains invalid property names, but the inferred type is too broad to detect them. How would you improve the typing?
+* A function handles a union of event types, but adding a new event does not produce a compile-time error in the handler. How would you enforce exhaustiveness?
+* A type utility should make selected properties optional while leaving all other properties unchanged. How would you implement it?
+* A library needs a type that extracts only the keys of an object whose values are functions. How would you design it?
+* A function accepts one of two object structures, but callers must never provide properties from both structures simultaneously. How would you enforce this?
+* A deeply nested property path must be validated at compile time. How would you create a type-safe path utility?
+* A Promise-based API returns nested asynchronous values. How would you infer the final resolved value type?
+* A shared type package has become difficult to maintain because of many overlapping utility types. How would you simplify its design?
+* A recursive utility type causes TypeScript compiler performance problems. How would you investigate and optimize it?
+* A function should return different types depending on a literal input argument. How would you model the relationship between input and output types?
+* A developer uses a type assertion to claim external JSON matches an interface. Why is this unsafe, and how would you validate the data?
+* A generic function accepts objects with a required identifier but should preserve all other properties. How would you use generic constraints?
+* An event emitter must ensure that each event name accepts only its corresponding payload type. How would you design the event map?
+* A large application has multiple API response types with common properties. How would you reuse types without losing endpoint-specific precision?
+* A type-safe Redux action system must associate each action name with a specific payload. How would you implement it?
+* A function must accept only non-empty arrays. How would you represent and validate that requirement?
+* A library needs to support both synchronous and asynchronous callbacks while preserving the correct return types. How would you model this?
+* A complex union type produces confusing compiler errors. How would you break down and debug the type definitions?
+* A team wants to prevent accidental modification of configuration objects throughout an application. Which advanced types and inference features would you use?
+* You are designing a public TypeScript library with complex generics. How would you balance type safety, readability, and compiler performance?

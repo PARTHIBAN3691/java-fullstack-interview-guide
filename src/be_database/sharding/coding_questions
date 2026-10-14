@@ -1,0 +1,30 @@
+* Write a Java method that calculates a shard number from a customer ID using a hash-based sharding strategy.
+* Implement a range-based shard resolver that selects a database according to a customer ID range.
+* Implement a consistent hashing algorithm in Java to distribute keys across database nodes.
+* Write a Java class that maintains virtual nodes and resolves a key to the appropriate shard.
+* Implement a Spring Boot AbstractRoutingDataSource that routes requests to the correct shard.
+* Configure multiple HikariCP DataSources in Spring Boot for a sharded database environment.
+* Implement a shard registry service that maps tenant IDs to database connection configurations.
+* Write a Java service that retrieves customer data from the shard determined by the customer's tenant ID.
+* Implement a ThreadLocal-based shard context and ensure the context is cleared after each request.
+* Write a Spring Boot interceptor or filter that resolves the tenant ID and establishes the shard context.
+* Implement globally unique ID generation for records inserted into different shards.
+* Write a service that inserts an order into the correct shard and handles duplicate requests idempotently.
+* Implement a repository abstraction that hides shard selection from business services.
+* Write a Java method that executes a read-only query across multiple shards concurrently and merges the results.
+* Implement global pagination across multiple shards using a stable sorting key.
+* Write Java code that merges sorted result sets returned by multiple shards.
+* Implement a cross-shard COUNT or SUM operation that combines partial aggregates from individual shards.
+* Write a service that executes a cross-shard business operation using a saga with compensating actions.
+* Implement an idempotency-key mechanism for a transaction that may be retried after a timeout.
+* Write Java code to track shard health and route requests away from unavailable shards.
+* Implement a shard-selection strategy that considers both shard health and current load.
+* Write a migration service that copies records from one shard to another in batches.
+* Implement a dual-write or change-capture approach for keeping source and destination shards synchronized during migration.
+* Write a validation utility that compares record counts and selected checksums between source and destination shards.
+* Implement a safe cutover workflow that switches shard routing only after data validation succeeds.
+* Write a Spring Boot component that refreshes cached shard metadata when the routing configuration changes.
+* Implement a database migration runner that applies versioned schema changes across all shards and records individual outcomes.
+* Write integration tests that verify tenant isolation and ensure each tenant's records are routed to the correct shard.
+* Implement a test that simulates shard unavailability and verifies timeout, retry, and fallback behavior.
+* Write a load test or benchmark that measures shard distribution, routing latency, and throughput under uneven workloads.

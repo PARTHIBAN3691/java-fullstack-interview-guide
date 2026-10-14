@@ -1,0 +1,21 @@
+
+* A Spring Boot application retrieves database credentials from Secrets Manager during startup but fails with `AccessDeniedException`. How would you troubleshoot the issue?
+* A Java application works locally but cannot retrieve secrets after deployment to EC2. How would you investigate the difference?
+* Your ECS application uses an IAM task role but receives an authorization error when accessing a secret. What would you verify?
+* A production database password rotates automatically, and the application begins returning connection errors. How would you resolve the issue?
+* A microservice retrieves secrets on every incoming request, increasing AWS costs and latency. How would you redesign the implementation?
+* Secrets Manager becomes temporarily unavailable during a deployment. How should the application behave?
+* A secret contains database credentials in JSON format, but the Java application fails to parse the response. How would you debug it?
+* An application retrieves an outdated secret after rotation because its local cache has not refreshed. How would you fix the issue?
+* A security audit discovers that production credentials are hardcoded in an application configuration file. How would you migrate them to Secrets Manager?
+* A developer accidentally logs the secret value during debugging. What immediate actions and long-term controls would you implement?
+* An application in Account A must retrieve a secret owned by Account B. How would you configure the required access?
+* A service deployed in a private subnet cannot reach Secrets Manager. How would you restore secure connectivity?
+* A secret is scheduled for deletion, but a production service still depends on it. How would you recover and prevent recurrence?
+* Your organization requires separate secrets for hundreds of microservices. How would you structure naming, access policies, and ownership?
+* Two microservices use the same database credentials, and one service requires a credential rotation. How would you minimize disruption?
+* A Java service experiences intermittent throttling when calling Secrets Manager. How would you improve resilience?
+* Your organization needs disaster recovery for secrets in another AWS region. How would you implement and validate the solution?
+* A Kubernetes application on EKS needs to access secrets without storing AWS access keys in Kubernetes manifests. How would you implement this?
+* A compliance team asks who accessed a sensitive secret and when. How would you provide an auditable answer?
+* After deploying a new application version, secret retrieval latency increases significantly. How would you identify and address the bottleneck?

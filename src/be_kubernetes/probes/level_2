@@ -1,0 +1,30 @@
+* Explain the internal execution flow of liveness, readiness, and startup probes in Kubernetes.
+* How does the kubelet execute and evaluate different probe handlers?
+* How do startup probe thresholds determine the maximum startup window for a container?
+* How do readiness probe failures influence the EndpointSlice associated with a Service?
+* What is the difference between a failed readiness probe and a failed liveness probe in terms of traffic and container lifecycle?
+* How can poorly configured liveness probes create cascading failures across microservices?
+* Why can dependency checks inside liveness probes cause restart storms?
+* How would you design health checks for a Spring Boot application with multiple downstream dependencies?
+* How do you distinguish process health, application health, and dependency health?
+* How should liveness and readiness endpoints behave when a database becomes temporarily unavailable?
+* How can Spring Boot Actuator expose separate liveness and readiness health groups?
+* What are the risks of using a single comprehensive health endpoint for every probe?
+* How can long garbage-collection pauses cause false probe failures in Java applications?
+* How would you tune probe thresholds for a JVM application with a long cold-start time?
+* How do CPU throttling and memory pressure influence probe timeout behavior?
+* How can probe configuration interact with JVM heap sizing and garbage collection?
+* What are the trade-offs between HTTP, TCP, and exec probes in production?
+* How do HTTP probes behave when the application returns a non-success HTTP status code?
+* How do probe timeouts interact with application thread pools and connection pools?
+* How would you design probes for an application that performs database migrations during startup?
+* How can readiness probes be used to prevent traffic from reaching a node that is still warming its caches?
+* What limitations exist when using probes to detect deadlocks or thread-pool exhaustion?
+* How do probe configurations affect graceful shutdown and termination handling?
+* How do readiness gates differ from container readiness probes?
+* How would you investigate a Pod that is Ready even though its business functionality is failing?
+* How would you investigate a Pod that repeatedly restarts despite successful external health checks?
+* How do probes interact with sidecar containers and multi-container Pods?
+* How would you design probe behavior for a service that experiences temporary downstream outages?
+* How can probe failures affect availability during a rolling update with strict availability requirements?
+* How would you build a reliable health-check strategy for a large Spring Boot microservices platform?

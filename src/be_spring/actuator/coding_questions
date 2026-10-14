@@ -1,0 +1,30 @@
+* Add the Spring Boot Actuator dependency to a Spring Boot project and expose the health endpoint.
+* Configure Actuator to expose only health and info endpoints over HTTP.
+* Write application.properties configuration to use /management as the Actuator base path.
+* Configure a separate management port for Actuator endpoints.
+* Implement a custom HealthIndicator that checks whether a required service is available.
+* Implement a custom HealthIndicator that verifies database connectivity.
+* Write a health indicator that returns DOWN when a dependency check fails and includes a safe error description.
+* Create a custom health group for readiness checks.
+* Configure application metadata for the info endpoint using application properties.
+* Implement a custom InfoContributor that adds application build information.
+* Create a custom Actuator endpoint using @Endpoint and @ReadOperation.
+* Implement a custom write operation using @WriteOperation and secure it appropriately.
+* Use Micrometer's MeterRegistry to count successful and failed API requests.
+* Implement a Timer metric to measure the execution time of a service method.
+* Create a custom gauge to monitor the size of an in-memory queue.
+* Add tags such as region and application name to custom metrics.
+* Write a Spring Boot configuration that exposes Prometheus metrics.
+* Implement a custom metric for tracking successful payment transactions.
+* Write a test for a custom HealthIndicator using JUnit and Mockito.
+* Write an integration test that verifies the health endpoint response using MockMvc.
+* Write a test that verifies an Actuator endpoint is inaccessible to unauthorized users.
+* Configure Spring Security to allow unauthenticated access to health checks while protecting sensitive management endpoints.
+* Implement a custom health indicator with a timeout for an external dependency check.
+* Write a test that verifies a health indicator returns DOWN when the dependency is unavailable.
+* Configure Actuator to show detailed health information only to authorized users.
+* Implement an application metric that tracks API request counts by HTTP status code.
+* Write a test that verifies custom Micrometer metrics are registered and updated correctly.
+* Implement a custom endpoint that reports application operational metadata without exposing secrets.
+* Configure management endpoint exposure and disable an unnecessary diagnostic endpoint.
+* Build a complete Spring Boot Actuator monitoring solution with custom health indicators, Micrometer metrics, Prometheus integration, endpoint security, and automated tests.

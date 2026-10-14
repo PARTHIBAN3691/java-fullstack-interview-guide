@@ -1,0 +1,30 @@
+* Your Spring Boot application becomes slow when traffic increases from 1,000 to 10,000 requests per second. How would you identify the bottleneck?
+* CPU utilization remains low, but API latency increases significantly under load. How would you investigate?
+* Kubernetes adds new replicas during a traffic spike, but the service continues returning HTTP 503 errors. What would you check?
+* A service scales horizontally, but all instances compete for the same database connection pool capacity. How would you resolve the issue?
+* One microservice receives ten times more traffic than other services. How would you scale it independently?
+* A Redis cache improves response times, but a popular key causes a sudden spike in database queries when it expires. How would you prevent this?
+* A Kafka consumer group cannot keep up with incoming messages. How would you increase throughput without breaking ordering requirements?
+* Adding more Kafka consumers does not improve processing throughput. What possible bottlenecks would you investigate?
+* A database reaches maximum CPU utilization while application instances remain underutilized. How would you improve overall scalability?
+* A read-heavy application experiences database overload during peak hours. How would you introduce caching and read replicas?
+* A write-heavy application generates contention on a small number of database records. How would you redesign the data access pattern?
+* A single tenant consumes most of the resources in a shared microservices platform. How would you enforce fair resource allocation?
+* An autoscaling policy repeatedly adds and removes pods during normal traffic fluctuations. How would you stabilize scaling behavior?
+* A service experiences memory growth after scaling to several hundred instances. How would you investigate JVM and infrastructure overhead?
+* A monolithic Spring Boot service must handle ten times its current traffic. How would you decide whether to scale vertically, scale horizontally, or split the service?
+* A large API response contains thousands of database records and causes high memory usage. How would you redesign the endpoint?
+* A downstream service cannot process requests as quickly as its upstream callers send them. How would you introduce backpressure?
+* A high-volume endpoint becomes slow because of repeated calls to the same downstream service. How would you reduce unnecessary network traffic?
+* A global application experiences high latency for users far from its primary region. How would you improve geographic scalability?
+* Database sharding reduces write contention, but cross-shard reporting becomes slow. How would you address the trade-off?
+* A sudden promotional event causes millions of users to access the same product. How would you handle hot keys and traffic concentration?
+* A service handles normal traffic well but fails during a flash sale. How would you prepare the system before the next event?
+* A rolling deployment temporarily reduces available capacity and increases latency. How would you maintain sufficient capacity during deployments?
+* A service's average response time is acceptable, but its 99th-percentile latency becomes very high under load. How would you investigate?
+* A distributed cache becomes unavailable, and every request falls back to the database. How would you prevent a cascading failure?
+* A microservice has a large in-memory cache that becomes cold whenever a new replica starts. How would you reduce the performance impact?
+* A database read replica falls behind the primary during peak traffic. How would you manage stale reads and replication lag?
+* A background processing service builds up a large queue during peak demand. How would you determine whether to scale consumers or limit producers?
+* A load test passes at twice the expected traffic, but production fails at a lower load. What environmental and architectural differences would you investigate?
+* You must scale a financial microservices platform while maintaining strict transaction correctness, low latency, and predictable operating costs. How would you design the scaling strategy?

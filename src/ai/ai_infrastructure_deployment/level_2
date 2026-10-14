@@ -1,0 +1,119 @@
+**Model Serving Architecture**
+* How would you architect a multi-tenant inference platform serving hundreds of models with isolation, quotas, version control, and consistent latency objectives?
+* How would you design a model-serving control plane and data plane with independent scaling and failure domains?
+* How would you implement intelligent routing based on model capability, request complexity, token budget, hardware availability, and latency objectives?
+* How would you design graceful degradation and fallback when the primary model, GPU cluster, or artifact store is unavailable?
+
+**GPU and CPU Inference**
+* How would you determine whether a model is compute-bound, memory-bandwidth-bound, or constrained by kernel-launch and communication overhead?
+* How would you benchmark CPU and GPU serving under realistic concurrency, sequence lengths, and latency distributions without drawing misleading conclusions?
+* How would you select hardware and precision formats for a model whose throughput improves on GPU but whose utilization is low due to irregular traffic?
+* How would you optimize a heterogeneous serving platform that routes small models to CPUs and larger models to GPUs while meeting shared SLOs?
+
+**GPU Memory Management**
+* How would you estimate maximum concurrency from model weights, KV cache, context lengths, generation lengths, and GPU memory headroom?
+* How would you diagnose fragmentation, allocator overhead, KV cache exhaustion, and memory leaks in a long-running inference process?
+* How would you design admission control that rejects, queues, or routes requests before they exhaust GPU memory?
+* How would you optimize memory usage for long-context and mixed-length workloads without causing severe tail-latency regressions?
+
+**Model Quantization and Optimization**
+* How would you select quantization formats based on hardware kernels, model architecture, activation distributions, and quality requirements?
+* How would you diagnose a quantized model that uses less memory but has worse latency because the runtime lacks optimized kernels?
+* How would you compare quantization, distillation, pruning, and compilation as optimization strategies?
+* How would you establish release gates that detect subtle quality regressions after quantization or graph optimization?
+
+**Batch vs Online Inference**
+* How would you architect a shared inference platform that serves strict real-time traffic while processing large batch workloads economically?
+* How would you isolate resource contention between online and batch inference on a shared GPU fleet?
+* How would you design priority scheduling, deadlines, retry policies, and fair queuing across inference workloads?
+* How would you determine when batch processing, online inference, or asynchronous request processing is the best option for a business workflow?
+
+**Dynamic Batching**
+* How would you design adaptive batching that responds to traffic rate, input shape, GPU utilization, and latency objectives?
+* How would you prevent dynamic batching from creating head-of-line blocking when requests have different computational requirements?
+* How would you optimize batching for a model with variable-length sequences and limited support for padded inputs?
+* How would you determine whether throughput gains justify the increase in p95 and p99 latency?
+
+**Continuous Batching**
+* How would you design scheduling policies for continuous batching under mixed prompt lengths, output lengths, and request priorities?
+* How would you manage KV cache allocation and reclamation to avoid memory fragmentation and request starvation?
+* How would you balance prefill throughput, decode throughput, time to first token, and inter-token latency?
+* How would you investigate scheduler instability when active sequences increase but useful token throughput declines?
+
+**Model Caching**
+* How would you design a multi-level cache for model weights, KV cache, embeddings, and final responses with different consistency requirements?
+* How would you prevent cross-tenant data leakage and incorrect cache hits in personalized or permission-sensitive applications?
+* How would you implement cache invalidation when model weights, prompts, source documents, and authorization policies change?
+* How would you determine whether prefix caching or response caching provides meaningful benefits for a workload with high input diversity?
+
+**Distributed Inference**
+* How would you design distributed inference across multiple GPU nodes while minimizing communication overhead and failure propagation?
+* How would you evaluate the trade-offs among tensor parallelism, pipeline parallelism, expert parallelism, and request-level replication?
+* How would you handle node failures, network partitions, and partial execution failures during a distributed model request?
+* How would you profile GPU computation, interconnect communication, network traffic, and synchronization to find the real bottleneck?
+
+**Model Parallelism**
+* How would you partition a large transformer across GPUs while accounting for layer sizes, memory capacity, bandwidth, and communication costs?
+* How would you choose tensor-parallel and pipeline-parallel degrees for a multi-node deployment?
+* How would you optimize uneven pipeline stages and reduce idle GPU time caused by pipeline bubbles?
+* How would you determine when model parallelism is preferable to replicating smaller model instances for increased serving capacity?
+
+**Kubernetes for AI Workloads**
+* How would you design a Kubernetes platform with GPU node pools, isolated tenants, admission control, quota enforcement, and inference-specific autoscaling?
+* How would you handle model loading, startup probes, readiness, graceful termination, and rolling updates for multi-gigabyte model artifacts?
+* How would you prevent cluster autoscaling and inference autoscaling from conflicting during sudden traffic spikes?
+* How would you implement placement strategies for GPU topology, NUMA locality, high-speed interconnects, and multi-node model parallelism?
+
+**GPU Scheduling and Sharing**
+* How would you design GPU scheduling for workloads with different memory requirements, priorities, latency objectives, and execution durations?
+* How would you compare MIG isolation, time-slicing, and dedicated allocation for security, performance predictability, and utilization?
+* How would you diagnose GPU fragmentation when enough aggregate GPU memory exists but no suitable device can host a model?
+* How would you implement fair sharing and quota enforcement while preventing a noisy tenant from monopolizing GPU capacity?
+
+**AI Model Serving with vLLM**
+* How would you tune vLLM for high concurrency while balancing KV cache capacity, maximum batched tokens, model length, and tail latency?
+* How would you design multi-node vLLM deployments using tensor parallelism and pipeline parallelism, and what network requirements would you validate?
+* How would you diagnose falling token throughput despite high GPU utilization and a large number of active sequences?
+* How would you safely upgrade vLLM, CUDA, model weights, and quantization formats while preserving compatibility and performance baselines?
+
+**NVIDIA Triton Inference Server**
+* How would you optimize Triton instance groups and dynamic batching for multiple models competing for GPU resources?
+* How would you design a Triton model repository and version policy for controlled promotion, rollback, and reproducibility?
+* How would you diagnose queueing delays and low GPU utilization when Triton reports high request volume?
+* How would you compare Triton with vLLM for transformer-based LLM serving and identify workloads where each is more appropriate?
+
+**Model Deployment with Docker**
+* How would you design immutable, reproducible, multi-stage inference images while keeping model weights external and securely versioned?
+* How would you minimize cold-start time when large artifacts must be downloaded or mounted before an inference server becomes ready?
+* How would you secure GPU-enabled containers using least privilege, image scanning, secret management, and runtime isolation?
+* How would you debug differences between local GPU containers and production Kubernetes deployments?
+
+**Autoscaling AI Workloads**
+* How would you build an autoscaling strategy that combines queue depth, request deadlines, token throughput, GPU memory pressure, and active sequences?
+* How would you avoid scaling too late when model loading takes several minutes and traffic surges unexpectedly?
+* How would you design predictive capacity management for scheduled workloads and bursty LLM traffic?
+* How would you coordinate request routing, draining, and scale-down so that streaming responses and long-running jobs are not interrupted?
+
+**Model Registry and Artifact Management**
+* How would you design a model artifact lifecycle with immutable versions, provenance, evaluation evidence, approvals, and rollback support?
+* How would you verify the integrity and compatibility of model weights, tokenizer files, runtime versions, quantization metadata, and GPU kernels?
+* How would you manage large artifact replication across regions while balancing download speed, storage cost, and consistency?
+* How would you prevent untrusted model artifacts or dependency packages from entering the production serving environment?
+
+**High Availability for AI Services**
+* How would you design high availability when GPU capacity is scarce and each replica requires substantial model-loading time?
+* How would you meet availability targets across multiple zones while preventing failover from overwhelming the surviving GPU fleet?
+* How would you preserve streaming request continuity or recover gracefully when a serving Pod terminates mid-generation?
+* How would you handle correlated failures caused by shared model registries, networking, provider dependencies, and deployment automation?
+
+**AI Disaster Recovery**
+* How would you design cross-region disaster recovery for model artifacts, serving configuration, vector indexes, and evaluation baselines?
+* How would you choose between warm standby, pilot light, and active-active inference architectures?
+* How would you validate that a restored model-serving environment meets quality, security, latency, and throughput requirements?
+* How would you plan recovery when model artifacts are available but the exact accelerator type or inference runtime is unavailable in the recovery region?
+
+**Inference Cost Optimization**
+* How would you optimize cost per successful task while considering model quality, latency SLOs, GPU utilization, and reliability?
+* How would you build a placement and routing strategy that combines quantization, batching, caching, autoscaling, and model selection?
+* How would you quantify the trade-offs between GPU reservation, burst capacity, spot instances, and managed inference endpoints?
+* How would you forecast capacity and total cost of ownership for a growing inference workload with unpredictable token demand?

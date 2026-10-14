@@ -1,0 +1,30 @@
+* One backend server receives significantly more traffic than others. How would you investigate the uneven distribution?
+* A backend server becomes unhealthy, but the load balancer continues routing requests to it. How would you troubleshoot the issue?
+* A load balancer becomes overloaded during a flash sale. How would you restore service and prevent recurrence?
+* Users experience intermittent 502 and 503 responses even though most backend instances are healthy. How would you investigate?
+* Response times increase after adding more backend servers. What could cause this behavior?
+* A new backend instance receives traffic before it has finished initializing. How would you prevent failed requests?
+* A deployment must replace hundreds of backend instances without interrupting active connections. How would you approach it?
+* Sticky sessions cause uneven utilization because a few users generate most of the traffic. How would you redesign session management?
+* A WebSocket application loses active connections during routine backend deployments. How would you minimize disconnections?
+* A global application becomes unavailable because its primary region fails. How would traffic fail over to another region?
+* DNS-based failover takes too long because clients cache DNS records. How would you improve recovery time?
+* A least-connections load balancer sends too many requests to a server whose requests take much longer. How would you improve the algorithm?
+* A consistent-hashing load balancer redistributes too many keys whenever a node is added. How would you reduce remapping?
+* Autoscaling adds new instances, but traffic continues to overload the existing instances. What would you check?
+* A health-check endpoint reports success even though the application cannot serve real requests. How would you improve health checks?
+* A slow downstream service causes connection pools to fill up across all backend instances. How would you contain the impact?
+* Multiple proxy layers retry failed requests, creating a retry storm. How would you coordinate retry behavior?
+* A load balancer terminates TLS, but the backend application incorrectly identifies every request as HTTP. How would you fix protocol and header handling?
+* A backend service supports both HTTP and gRPC, and traffic needs different routing rules. How would you configure the architecture?
+* A high-traffic tenant overwhelms shared backend instances and affects other tenants. How would you isolate its workload?
+* A canary deployment receives too much traffic and starts returning errors. How would you automatically reduce its traffic?
+* A global load balancer routes requests to a geographically close region that is experiencing high latency. How would you improve routing decisions?
+* A load balancer reaches its maximum concurrent connection limit during a traffic surge. How would you identify and resolve the constraint?
+* A service registry contains stale backend addresses after rapid scaling events. How would you maintain accurate routing?
+* A load-balancing algorithm improves average latency but worsens p99 latency. How would you evaluate the change?
+* A security incident requires blocking traffic from selected IP ranges without disrupting legitimate users. How would you implement this safely?
+* A payment API requires high availability but must avoid accidental duplicate processing during retries and failover. How would you design routing and idempotency together?
+* A maintenance operation requires draining a backend while preserving ongoing long-running requests. How would you handle it?
+* A multi-region service must keep certain customers within specific geographic boundaries. How would you implement routing and failover policies?
+* How would you investigate a production incident involving uneven traffic, rising latency, failed health checks, and repeated backend restarts?

@@ -1,0 +1,30 @@
+* A parent component receives data from an API. How would you pass that data to a child component?
+* A child component contains a form, and the parent needs the submitted values. How would you implement this communication?
+* Two sibling components need to share selected customer information. What approach would you use?
+* A component displays stale data after its input object is modified. How would you investigate the change-detection behavior?
+* A component renders thousands of rows and becomes slow. How would you optimize rendering and change detection?
+* A reusable button component must support different labels, styles, disabled states, and click events. How would you design it?
+* A child component must notify its parent when a user selects an item. How would you implement the event flow?
+* A component subscribes to several Observables and continues receiving updates after navigation. How would you prevent memory leaks?
+* A component needs to render different form fields based on a configuration received from an API. How would you design it?
+* A modal component must display different content depending on the selected action. How would you implement dynamic components or content projection?
+* A shared component behaves differently when used in two feature areas. How would you investigate its inputs, providers, and state?
+* A component's ngOnInit() is called only once, but the selected route parameter changes. How would you respond to the updated parameter?
+* A component has complex business calculations mixed into its template. How would you refactor it?
+* A custom date-picker component must integrate with Angular reactive forms. How would you implement ControlValueAccessor?
+* A component receives frequent updates from a WebSocket. How would you manage state and prevent excessive change detection?
+* A component works in development but fails during server-side rendering. What browser-specific dependencies would you investigate?
+* A component uses OnPush change detection, but the UI does not update after an array item is modified. How would you resolve it?
+* A parent component needs to invoke a method exposed by its child. How would you use ViewChild, and when would you avoid this approach?
+* A reusable card component must support custom headers, bodies, and footers. How would you implement content projection?
+* A component needs to support both traditional inputs and reactive signal-based state. How would you manage the design?
+* A standalone component cannot recognize a directive used in its template. What would you check?
+* A component test fails because a child component or directive is unknown. How would you configure TestBed correctly?
+* A form component must show validation errors only after user interaction or submission. How would you implement the behavior?
+* A component creates a service instance that should be shared across several components, but each receives a different instance. How would you investigate provider scope?
+* A route contains a component that becomes expensive to initialize. How would you use lazy loading and defer nonessential work?
+* A component repeatedly recalculates an expensive derived value during change detection. How would you optimize the computation?
+* A child component must support two-way binding with its parent. How would you implement the model input/output pattern?
+* A design system requires consistent accessibility, styling, and behavior across reusable components. How would you establish component standards?
+* A component displays data correctly but causes hydration mismatches in a server-rendered application. How would you debug the issue?
+* You need to refactor a large Angular page into smaller components without changing behavior. How would you plan the component boundaries and regression tests?

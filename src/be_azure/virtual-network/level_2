@@ -1,0 +1,30 @@
+* How would you design an event-driven architecture using Azure Event Grid and Java microservices?
+* How would you choose between Azure Event Grid, Event Hubs, and Service Bus for different workloads?
+* How would you design a reliable event publishing mechanism when a database transaction and event publication must remain consistent?
+* How would you implement the transactional outbox pattern in a Spring Boot application that publishes events to Event Grid?
+* How would you design idempotent event processing when Event Grid may deliver duplicate events?
+* How would you prevent lost business events when an application crashes after committing a database transaction?
+* How would you design an event-driven workflow that coordinates multiple microservices without tightly coupling them?
+* How would you handle event ordering requirements when Event Grid does not guarantee general event ordering?
+* How would you design event consumers that safely process events concurrently?
+* How would you handle event bursts that exceed the processing capacity of downstream consumers?
+* How would you design backpressure and buffering when an Event Grid subscriber cannot process events quickly enough?
+* How would you handle poison events that repeatedly fail during event processing?
+* How would you design a dead-letter recovery and replay mechanism?
+* How would you safely replay dead-lettered events without duplicating business operations?
+* How would you design event schema evolution while maintaining backward compatibility?
+* How would you implement multi-tenant event routing using Event Grid domains or custom topics?
+* How would you isolate event subscriptions and permissions between different business units?
+* How would you secure Event Grid publishing and delivery using Microsoft Entra ID, managed identities, and least-privilege access?
+* How would you design private network connectivity for Event Grid integrations where supported?
+* How would you prevent unauthorized event publishers from injecting malicious or invalid events?
+* How would you validate event payloads and protect downstream services against malformed or oversized data?
+* How would you design an event-driven architecture spanning multiple Azure regions?
+* How would you plan disaster recovery for critical Event Grid topics and subscriptions?
+* How would you monitor end-to-end event processing latency across publishers, Event Grid, and consumers?
+* How would you troubleshoot intermittent event delivery failures when the subscriber returns transient HTTP errors?
+* How would you design a high-volume event publishing strategy that respects Event Grid quotas and throttling?
+* How would you optimize event payload size and avoid sending large business objects through Event Grid?
+* How would you implement correlation IDs and distributed tracing across event-driven Java microservices?
+* How would you design automated infrastructure deployment for Event Grid resources using Terraform or Bicep?
+* How would you estimate and optimize Event Grid costs for a high-volume production workload?

@@ -1,0 +1,26 @@
+
+* How do compact source files differ from traditional Java source files?
+* How can a Java 25 program run without explicitly declaring a class?
+* How do instance `main` methods work in Java 25?
+* What is the purpose of the `IO` class available for basic console input and output?
+* How can compact source files help beginners transition to conventional Java classes?
+* How do module import declarations differ from ordinary import statements?
+* Can `import module` be used without declaring a module in `module-info.java`?
+* What happens when two imported modules export packages containing classes with the same simple name?
+* How do flexible constructor bodies allow statements before `super()` or `this()`?
+* What restrictions apply to statements executed before an explicit constructor invocation?
+* How can flexible constructor bodies improve constructor validation?
+* How does Java 25 support primitive types in patterns, `instanceof`, and `switch`?
+* What additional capabilities does primitive pattern matching provide?
+* What are the restrictions of primitive patterns in Java 25?
+* How does the Java 25 preview of primitive patterns differ from traditional numeric type conversions?
+* How do scoped values differ from `ThreadLocal`?
+* How can scoped values be used with virtual threads?
+* What is the difference between standard scoped values and preview structured concurrency in Java 25?
+* How does the Java 25 Gatherers API support custom stream intermediate operations?
+* How do `map`, `filter`, and `flatMap` differ from custom stream gatherers?
+* What are stable values, and why are they a preview feature in Java 25?
+* What is the purpose of the PEM encoding API introduced as a preview feature in Java 25?
+* How does Java 25 improve ahead-of-time class loading and linking?
+* What is the purpose of compact object headers?
+* How does Generational ZGC help reduce garbage-collection overhead?

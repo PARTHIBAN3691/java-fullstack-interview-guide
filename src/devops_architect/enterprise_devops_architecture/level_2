@@ -1,0 +1,136 @@
+
+**Enterprise CI/CD Architecture**
+* Design an enterprise CI/CD architecture supporting thousands of repositories, heterogeneous technology stacks, strict tenant isolation, and geographically distributed deployment targets.
+* How would you separate the control plane from execution workers to improve security, scalability, and availability?
+* How would you design a pipeline platform that supports progressive delivery, policy evaluation, artifact attestation, and automated rollback as shared capabilities?
+* How would you prevent a compromised pipeline definition from obtaining unrestricted access to production environments?
+* How would you evolve a legacy CI/CD estate into a common platform without stopping releases or creating a single point of failure?
+* How would you establish disaster recovery for pipeline metadata, artifacts, secrets integrations, and deployment state?
+
+**Centralized vs Decentralized DevOps**
+* How would you design a federated DevOps operating model with centrally owned guardrails and team-owned delivery workflows?
+* How would you resolve conflicts when central security requirements contradict application-team delivery needs?
+* How do you prevent a platform team from becoming a bottleneck while maintaining consistent risk controls?
+* How would you distribute responsibility for incidents caused by shared infrastructure and team-specific pipeline logic?
+* How would you design funding, staffing, and service-level agreements for a shared platform used by hundreds of teams?
+* How would you evaluate whether a capability should remain centralized, become a platform product, or be delegated to individual teams?
+
+**Shared CI/CD Platforms**
+* How would you isolate mutually untrusted pipeline workloads running on shared execution infrastructure?
+* How would you design multi-tenant scheduling with quotas, fairness, priority, and protection against noisy neighbors?
+* How would you roll out breaking changes to shared pipeline libraries with staged adoption and automated compatibility validation?
+* How would you design a highly available CI/CD control plane that can recover from regional failure?
+* How would you prevent a compromised shared runner from accessing credentials or artifacts belonging to other tenants?
+* How would you establish an enterprise pipeline supply chain with signed templates, verified dependencies, and controlled releases?
+
+**Multi-Team Pipelines**
+* How would you coordinate releases across dozens of independently owned microservices while minimizing lockstep deployment dependencies?
+* How would you design a dependency-aware release orchestrator that supports partial rollout, retries, compensation, and recovery?
+* How would you resolve inconsistent deployment state when multiple pipelines update a shared environment concurrently?
+* How would you establish team-level deployment autonomy while enforcing global production safety invariants?
+* How would you design cross-team change-impact analysis for libraries, APIs, and infrastructure modules?
+* How would you isolate pipeline failures so a broken shared component does not halt every team simultaneously?
+
+**Multi-Account Cloud Strategy**
+* How would you design an enterprise landing zone that combines organizational hierarchy, identity federation, centralized security, networking, and cost governance?
+* How would you implement delegated account administration without granting unrestricted organization-level permissions?
+* How would you rotate cross-account deployment credentials while preserving availability and auditability?
+* How would you isolate regulated workloads while still sharing approved networking, monitoring, and security services?
+* How would you prevent privilege escalation through overly broad trust relationships between CI/CD identities and cloud accounts?
+* How would you migrate hundreds of existing accounts into a governed architecture without disrupting production workloads?
+
+**Multi-Region Deployments**
+* How would you design a multi-region release strategy that supports canary rollout, regional isolation, traffic shifting, and automated rollback?
+* How would you handle partial success when a release is healthy in one region but fails in another?
+* How would you coordinate application releases with replicated databases and region-specific infrastructure changes?
+* How would you prevent a regional control-plane outage from blocking emergency recovery in another region?
+* How would you design regional failover that avoids split-brain conditions and uncontrolled data divergence?
+* How would you test deployment and disaster-recovery procedures without creating unacceptable production risk?
+
+**Multi-Cluster Kubernetes**
+* How would you design a multi-cluster Kubernetes platform spanning several regions, accounts, and compliance boundaries?
+* How would you manage cluster lifecycle, policy enforcement, workload identity, and upgrades across hundreds of clusters?
+* How would you coordinate GitOps controllers and centralized orchestration without allowing conflicting controllers to manage the same resources?
+* How would you design fleet-wide deployment waves with health-based promotion and automatic containment of failures?
+* How would you implement cross-cluster traffic management and failover while preserving service identity and observability?
+* How would you recover cluster workloads when the central management platform is unavailable?
+
+**Enterprise Artifact Management**
+* How would you design a globally distributed artifact platform with immutable storage, replication, availability controls, and regional access policies?
+* How would you enforce provenance and integrity from source commit through build, signing, promotion, and production deployment?
+* How would you handle a critical vulnerability discovered in an artifact already deployed across hundreds of services?
+* How would you design artifact retention and garbage collection without deleting dependencies needed for rollback or disaster recovery?
+* How would you prevent dependency confusion, package substitution, and unauthorized artifact publication across internal and external repositories?
+* How would you recover artifact repositories after corruption, compromised credentials, or a regional outage?
+
+**Enterprise Secrets Management**
+* How would you design centralized secrets governance while supporting multiple cloud providers, Kubernetes clusters, and CI/CD systems?
+* How would you eliminate long-lived deployment credentials using workload identity and short-lived authorization?
+* How would you rotate a shared production credential across hundreds of services without synchronized outages?
+* How would you prevent secret exfiltration by a compromised build process or malicious pipeline contributor?
+* How would you design break-glass secret access with time limits, approval, and tamper-evident audit records?
+* How would you recover from a secrets-manager outage without distributing permanent credentials or disabling essential security controls?
+
+**DevSecOps Governance**
+* How would you establish risk-based security gates that account for vulnerability severity, exploitability, asset criticality, and compensating controls?
+* How would you prevent security policy bypass across alternative CI/CD systems, manual deployments, and emergency release paths?
+* How would you design a centralized security policy service with versioning, staged rollout, exception management, and audit evidence?
+* How would you integrate software bills of materials, artifact signing, provenance attestations, and dependency risk into enterprise delivery?
+* How would you manage zero-day vulnerabilities across thousands of services and prioritize remediation using exposure and business impact?
+* How would you prove that security controls are consistently enforced without relying solely on pipeline success logs?
+
+**Compliance Pipelines**
+* How would you design compliance pipelines that generate evidence continuously and map controls to multiple regulatory frameworks?
+* How would you enforce separation of duties and mandatory approvals without allowing approvers to approve their own changes?
+* How would you maintain audit evidence when source systems, pipeline platforms, or artifact repositories are migrated?
+* How would you handle an urgent security fix when normal compliance gates cannot complete within the incident-response window?
+* How would you validate infrastructure compliance across declarative configuration, deployed state, and runtime behavior?
+* How would you prevent compliance drift after a pipeline successfully deploys an approved configuration?
+
+**Auditability**
+* How would you design a tamper-evident audit architecture spanning source control, CI/CD, artifact repositories, cloud APIs, and Kubernetes clusters?
+* How would you correlate a production resource change to its initiating identity, approved change, source commit, build, and artifact digest?
+* How would you preserve trustworthy audit records when an administrator has access to the systems generating those records?
+* How would you reconstruct the exact deployment state during an incident months after a release?
+* How would you detect deployment activities that bypass centralized pipelines or generate incomplete audit evidence?
+* How would you design retention, search, integrity verification, and access controls for audit records at enterprise scale?
+
+**Platform Engineering**
+* How would you design an internal developer platform as a product with independent service boundaries, stable APIs, and measurable reliability?
+* How would you evolve a developer platform from a collection of scripts into a governed self-service ecosystem?
+* How would you prevent a central platform abstraction from hiding critical cloud capabilities or becoming too restrictive?
+* How would you design backward-compatible platform APIs and migration paths for hundreds of consuming teams?
+* How would you measure platform engineering impact using cognitive load, lead time, reliability, adoption, and operational toil?
+* How would you architect a platform that continues to support critical developer workflows during the failure of one underlying provider?
+
+**Developer Self-Service**
+* How would you design self-service provisioning with policy enforcement, budget limits, approval workflows, and automatic resource ownership?
+* How would you prevent developers from using self-service workflows to obtain excessive privileges or access unauthorized production data?
+* How would you design long-running provisioning workflows that survive retries, partial failure, and platform outages?
+* How would you provide self-service access to production diagnostics without exposing secrets or violating separation of duties?
+* How would you ensure self-service actions are idempotent, auditable, and reversible where possible?
+* How would you design service catalog discovery and lifecycle management for thousands of internal services?
+
+**Golden Paths**
+* How would you design golden paths that enforce essential controls while allowing documented deviations for specialized workloads?
+* How would you manage golden-path version upgrades across hundreds of repositories without introducing coordinated release dependencies?
+* How would you detect applications that have diverged from required security, observability, and deployment standards?
+* How would you design a migration mechanism that moves legacy applications onto golden paths incrementally?
+* How would you prevent golden paths from becoming obsolete when frameworks, cloud services, and security requirements change?
+* How would you measure whether golden paths reduce cognitive load and delivery time rather than simply increasing template compliance?
+
+**Organizational Scalability**
+* How would you scale platform ownership and support when engineering headcount and deployment volume grow by an order of magnitude?
+* How would you design team boundaries and service ownership to minimize cross-team dependencies and handoff delays?
+* How would you integrate newly acquired engineering organizations with different toolchains and governance models?
+* How would you balance centralized standards with regional legal, security, and operational requirements?
+* How would you identify and reduce organizational bottlenecks using delivery metrics and dependency analysis?
+* How would you ensure shared platform teams can evolve their services without imposing disruptive migrations on every application team?
+
+**DevOps Governance**
+* How would you design an enterprise governance model that enforces non-negotiable controls while allowing different teams to choose appropriate delivery workflows?
+* How would you establish policy ownership, versioning, enforcement, exception handling, and review across multiple business units?
+* How would you govern emergency changes so that rapid recovery does not eliminate traceability or accountability?
+* How would you prevent governance rules from becoming stale, duplicated, or inconsistent across CI/CD platforms?
+* How would you evaluate governance effectiveness using risk reduction, audit findings, deployment lead time, and developer experience?
+* How would you establish continuous assurance that deployed production state remains compliant after the original pipeline has completed?

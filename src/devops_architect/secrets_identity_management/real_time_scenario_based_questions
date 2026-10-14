@@ -1,0 +1,120 @@
+# Secrets & Identity Management — Real-Time Scenario-Based Questions
+
+## Secrets Management
+* Describe a production incident where a hardcoded secret was exposed. How did you contain the exposure, rotate the secret, and prevent recurrence?
+* Explain a situation where an application failed because the secrets platform was unavailable. How did you restore service, and what resilience improvements did you implement?
+* Describe a migration from environment variables or configuration files to centralized secrets management. What challenges did you face, and what was the outcome?
+* Tell me about a time when a secret appeared in application logs or CI/CD output. How did you identify the leak, assess the impact, and fix the logging pipeline?
+
+## HashiCorp Vault
+* Describe a production incident where Vault became unavailable and applications could no longer retrieve secrets. How did you identify the root cause, restore availability, and prevent recurrence?
+* Explain a real issue where Vault tokens expired unexpectedly. How did you troubleshoot authentication and renewal, and what changes did you implement?
+* Describe a situation where Vault dynamic database credentials expired while services still had active database connections. How did you restore connectivity?
+* Tell me about a time when Vault policies denied access to a legitimate workload. How did you identify the incorrect policy or identity mapping and resolve the issue?
+* Describe a Vault upgrade or configuration change that caused unexpected behavior. How did you roll back or recover, and what did you learn?
+
+## AWS Secrets Manager
+* Describe a production incident where AWS Secrets Manager returned a newly rotated database password, but applications continued using the old password. How did you resolve the inconsistency?
+* Explain a situation where a Lambda function or ECS task failed with `AccessDeniedException` while retrieving a secret. How did you investigate IAM, resource policies, and KMS permissions?
+* Describe an incident where Secrets Manager API throttling or excessive retrieval latency affected application performance. What changes did you make?
+* Tell me about a time when an incorrect secret rotation left the secret store and database with different credentials. How did you restore consistency?
+* Describe how you handled an accidentally deleted or compromised secret in AWS. What was the recovery process and final outcome?
+
+## Azure Key Vault
+* Describe a production incident where an application running in Azure could authenticate with managed identity but could not retrieve a secret. How did you isolate the permission or networking issue?
+* Explain a time when Key Vault firewall rules or private endpoints blocked application traffic. How did you restore access without weakening security?
+* Describe a secret rotation that caused database connectivity failures in an Azure-hosted application. How did you recover and improve rotation reliability?
+* Tell me about an incident involving Key Vault throttling, latency, or temporary unavailability. How did you maintain application availability?
+* Describe a situation where a secret was accidentally deleted or could not be recovered as expected. How did you use versioning, soft delete, or recovery controls?
+
+## Google Secret Manager
+* Describe a production issue where a Google Cloud workload received `PERMISSION_DENIED` when retrieving a secret. How did you identify the missing permission or incorrect service identity?
+* Explain an incident where multiple services used different versions of a secret after rotation. How did you synchronize consumers and restore consistent behavior?
+* Describe a problem involving service account impersonation or workload identity federation that prevented secret access. What was the root cause?
+* Tell me about a time when secret retrieval latency or API failures affected a production service. What fallback or resilience mechanism did you implement?
+* Describe how you investigated suspicious secret access in Google Cloud audit logs and what corrective actions followed.
+
+## Secret Rotation
+* Describe a real incident where database password rotation caused production downtime. What failed, how did you restore service, and what did you change to prevent recurrence?
+* Explain how you handled a rotation where the secret store was updated successfully but the target database was not.
+* Describe a situation where some application instances used the new credential while others continued using the old one. How did you identify and resolve the inconsistency?
+* Tell me about a rotation job that repeatedly failed or entered an unexpected state. How did you make the workflow safe to retry?
+* Describe how you implemented zero-downtime rotation, including validation, monitoring, rollback, and the final outcome.
+
+## Dynamic Secrets
+* Describe a production incident where dynamic database credentials expired and connection pools began failing. How did you recover and prevent repeated failures?
+* Explain a situation where a secrets platform became unavailable just before credentials needed renewal. How did you maintain service availability?
+* Describe a problem caused by leaked, unrevoked, or orphaned dynamic credentials. How did you identify and clean up the credentials?
+* Tell me about a time when a database connection pool could not recover after credential rotation. What changes did you make to connection creation, validation, and retry behavior?
+* Describe how you handled a sudden increase in dynamic credential issuance that affected the secrets platform or database.
+
+## Encryption
+* Describe a production incident where encrypted data could no longer be decrypted. How did you determine whether the problem was caused by the key, ciphertext, encryption metadata, or application code?
+* Explain how you migrated encrypted customer data to a new encryption scheme without interrupting application traffic.
+* Describe a security incident involving suspected encryption-key compromise. How did you assess the affected data, contain the incident, and perform re-encryption?
+* Tell me about a time when encryption or decryption latency affected API performance. How did you profile and optimize the implementation?
+* Describe a case where two services could not decrypt each other's data because they used incompatible encryption configurations. How did you restore interoperability?
+
+## KMS — Key Management Service
+* Describe a production incident where a KMS key was disabled or became inaccessible, causing application decryption failures. How did you restore service safely?
+* Explain a situation where KMS throttling affected a high-volume application. How did you identify the bottleneck and reduce the impact?
+* Describe an incident where an encryption-key rotation affected access to existing data. How did you recover without losing data?
+* Tell me about a time when an IAM or key policy change unintentionally blocked encryption or decryption. How did you diagnose and correct it?
+* Describe how you handled a key deletion or recovery incident. What controls did you introduce to prevent a similar event?
+
+## IAM — Identity and Access Management
+* Describe a production deployment that failed because a workload had insufficient IAM permissions. How did you identify the missing permission and fix the issue without granting excessive access?
+* Explain a situation where an overly broad IAM policy created a security risk. How did you reduce permissions while keeping the application operational?
+* Describe an incident involving compromised cloud credentials. How did you revoke access, identify affected resources, and prevent further abuse?
+* Tell me about a time when an IAM policy change unexpectedly denied access across multiple services. How did you determine the scope and recover?
+* Describe how you audited and removed excessive permissions across multiple cloud accounts or projects. What measurable improvement resulted?
+
+## RBAC — Role-Based Access Control
+* Describe a production incident where a user received unauthorized access because of an incorrectly assigned role. How did you identify and correct the role configuration?
+* Explain a situation where a role change unexpectedly blocked developers or operators from performing essential tasks. How did you restore access safely?
+* Describe how you reduced role explosion in a large enterprise application. What role-design changes did you introduce?
+* Tell me about a time when inherited permissions or nested groups caused unexpected access. How did you identify the effective permissions?
+* Describe how you migrated direct user permissions to centralized roles and verified that existing business workflows continued to function.
+
+## ABAC — Attribute-Based Access Control
+* Describe an incident where an incorrect resource or user attribute caused an authorized request to be denied. How did you find and fix the policy evaluation issue?
+* Explain a situation where a user could modify an attribute used for authorization and gain unintended access. How did you close the security gap?
+* Describe how you debugged a complex ABAC policy that combined tenant, resource, and environment attributes.
+* Tell me about a time when stale or inconsistent attributes caused access-control failures across services. How did you improve synchronization and validation?
+* Describe how you migrated from RBAC to ABAC and measured the impact on security, maintainability, and operational support.
+
+## Service Accounts
+* Describe a production incident where a service account key expired, was revoked, or became invalid and stopped a scheduled job or service. How did you restore processing?
+* Explain a security incident where multiple applications shared one service account. How did you separate identities and limit the impact?
+* Describe how you investigated suspicious activity associated with a compromised service account. What did you revoke, audit, and replace?
+* Tell me about a deployment that failed because a service account lacked the required permissions. How did you fix the issue while following least privilege?
+* Describe how you identified unused service accounts and removed them without disrupting dependent workloads.
+
+## Workload Identity
+* Describe a production incident where a Kubernetes pod could not obtain cloud credentials through workload identity. How did you investigate service account configuration, federation, and trust policies?
+* Explain a situation where one workload could access another workload's cloud resources. How did you isolate the identity boundary?
+* Describe how you migrated applications from static cloud keys to workload identity. What compatibility or deployment problems did you face?
+* Tell me about an incident where a cluster upgrade or identity configuration change broke cloud authentication. How did you restore service?
+* Describe how you debugged a workload identity federation failure involving token audiences, issuer configuration, or subject claims.
+
+## Short-Lived Credentials
+* Describe a production outage caused by access tokens expiring during active requests. How did you restore service and redesign token renewal?
+* Explain a situation where thousands of application instances attempted credential renewal simultaneously. How did you prevent a renewal storm?
+* Describe how you handled a stolen short-lived token that remained valid after the original credential was revoked.
+* Tell me about a clock-skew or token-validation issue that caused intermittent authentication failures. How did you identify the cause?
+* Describe how you migrated from long-lived credentials to short-lived credentials and measured the improvement in security and reliability.
+
+## Certificate Management
+* Describe a production outage caused by an expired TLS certificate. How did you restore connectivity and prevent future expiration incidents?
+* Explain a situation where a renewed certificate was installed but clients continued rejecting connections. How did you investigate the certificate chain, trust store, hostname, and deployment state?
+* Describe a certificate rotation that caused failures across load balancers or microservices. How did you roll out the replacement safely?
+* Tell me about a private-key compromise. How did you revoke or replace the certificate, distribute the new trust material, and investigate exposure?
+* Describe how you automated certificate renewal and monitoring across multiple environments. What manual work or incidents did the automation eliminate?
+
+## PKI — Public Key Infrastructure
+* Describe a production incident where an intermediate CA certificate expired or became untrusted. How did you restore trust across affected services?
+* Explain how you handled a compromised intermediate CA. How did you determine which certificates were affected and coordinate replacement?
+* Describe a mutual TLS outage caused by certificate-chain or trust-bundle differences between services. How did you diagnose and fix it?
+* Tell me about a CA rotation that risked breaking existing service-to-service connections. How did you distribute trust changes and maintain compatibility?
+* Describe a situation where certificate revocation was not reflected promptly by clients. How did you evaluate the revocation mechanism and reduce the security risk?
+

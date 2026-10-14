@@ -1,0 +1,30 @@
+* A Java application creates multiple instances of a configuration manager under concurrent access. Which pattern would you use, and how would you correct the implementation?
+* A payment application supports several providers, and adding a provider requires modifying a large switch statement. How would you redesign it using Factory and Strategy patterns?
+* An e-commerce application must create related components for different payment providers. How would you apply Abstract Factory to ensure compatibility?
+* An API request contains many optional fields and complex validation rules. How would you use Builder to construct a valid immutable request?
+* A document editor must support copying documents containing nested collections without sharing mutable state. How would you implement Prototype safely?
+* A discount engine contains many conditional statements for customer categories and promotional rules. How would you refactor it using Strategy?
+* A notification system has slow subscribers that block the request thread. How would you redesign the Observer implementation for asynchronous delivery?
+* A banking application must support undoing certain account operations while preserving an audit trail. How would you combine Command and Memento?
+* An approval workflow has different processing stages based on transaction amount and risk level. How would you use Chain of Responsibility?
+* An order can be created, confirmed, shipped, delivered, or cancelled, but invalid transitions are occurring. How would you apply the State pattern?
+* A reporting application supports several formats that share the same processing steps. How would you apply Template Method without creating a rigid inheritance hierarchy?
+* A database contains millions of records, and processing all records at once causes memory exhaustion. How would you implement a lazy Iterator?
+* Several UI components directly invoke one another, causing complex dependencies. How would you introduce Mediator and keep the mediator maintainable?
+* A user must restore an earlier version of a document after multiple edits. How would you implement Memento while controlling snapshot memory usage?
+* A reporting engine needs to perform several operations on an object hierarchy, but new operations are added frequently. How would you evaluate Visitor versus polymorphism?
+* An administrator can configure arithmetic business rules, but invalid expressions must be rejected safely. How would you implement and validate an Interpreter?
+* A legacy payment API has incompatible method signatures and response formats. How would you integrate it using Adapter?
+* A service requires logging, metrics, retry, and authorization behavior without changing its implementation. How would you combine Decorator and Proxy appropriately?
+* An e-commerce checkout requires inventory reservation, payment, order creation, and notifications. How would you use Facade while handling partial failures?
+* A file system contains nested folders and files, and clients need a common way to calculate sizes. How would you implement Composite?
+* An application supports several message types and delivery mechanisms, and both dimensions change independently. How would you apply Bridge?
+* A game creates thousands of similar objects and consumes excessive memory. How would you use Flyweight without sharing mutable per-object state?
+* A Spring Boot application directly instantiates repositories and external clients, making unit testing difficult. How would you introduce Dependency Injection?
+* A controller exposes JPA entities directly, and database changes unexpectedly break API clients. How would you apply DTO and Repository patterns?
+* A business workflow updates orders, inventory, and payment records, but partial updates occur after exceptions. How would you design transaction handling with a Service Layer and Unit of Work?
+* A Spring application contains circular dependencies between service classes. How would you refactor the design while preserving existing behavior?
+* A generic factory and multiple abstraction layers make simple object creation difficult to trace. How would you decide which patterns to retain?
+* A Singleton cache returns inconsistent results when multiple threads update it. How would you redesign its state management and synchronization?
+* A Decorator chain retries non-idempotent payment operations and occasionally charges customers twice. How would you correct the design?
+* A legacy enterprise application contains multiple design patterns but remains difficult to maintain. How would you identify misuse, simplify the architecture, and validate the changes?

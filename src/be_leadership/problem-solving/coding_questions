@@ -1,0 +1,30 @@
+* Write a Java program to find the first non-repeating character in a string.
+* Write a Java method to find duplicate elements in an integer array.
+* Implement an algorithm to find the missing number in a sequence of integers.
+* Write a Java program to find the longest substring without repeating characters.
+* Implement a method to detect a cycle in a linked list.
+* Write a Java program to find the top K most frequent elements in an array.
+* Implement a thread-safe counter using Java concurrency utilities.
+* Write a Java program that demonstrates and resolves a race condition.
+* Implement a bounded producer-consumer queue using BlockingQueue.
+* Write a Java program to detect potential deadlocks using thread information.
+* Implement a retry mechanism with configurable maximum attempts and exponential backoff.
+* Write a Java method that retries failed API calls while avoiding retries for non-retryable errors.
+* Implement a circuit breaker for a simulated downstream service.
+* Write a Java program to process a collection of records while handling invalid records independently.
+* Implement a rate limiter to prevent excessive requests to a service.
+* Write a Java method to identify slow operations from a collection of timestamped execution records.
+* Implement a log analyzer that groups exceptions by type and counts their occurrences.
+* Write a Java program to detect duplicate payment requests using idempotency keys.
+* Implement a transaction processing service that prevents duplicate processing under concurrent requests.
+* Write unit tests using JUnit 5 for a service that handles failures and retry scenarios.
+* Use Mockito to simulate downstream service failures and test fallback behavior.
+* Implement exception handling in a Spring Boot REST API with meaningful HTTP responses.
+* Write a Java program to aggregate application metrics and identify abnormal response-time patterns.
+* Implement a timeout mechanism for calls to an external service using Java concurrency APIs.
+* Write a Java program that processes tasks concurrently while limiting the number of active threads.
+* Implement a cache with expiration and safe concurrent access.
+* Write a Java method to compare expected and actual datasets and report inconsistencies.
+* Implement a health-check service that detects unavailable dependencies and reports their status.
+* Write a Java program to simulate cascading failures and demonstrate circuit breaker protection.
+* Design a Spring Boot troubleshooting service that collects diagnostic information, categorizes incidents, tracks root causes, and records corrective actions.

@@ -1,0 +1,30 @@
+* Explain the internal architecture of Node.js, including V8, libuv, and the event loop.
+* How does Node.js achieve concurrency despite executing JavaScript primarily on a single thread?
+* What operations are handled by the libuv thread pool?
+* How does changing UV_THREADPOOL_SIZE affect Node.js performance?
+* Why can CPU-intensive operations block the Node.js event loop?
+* How would you offload CPU-intensive tasks without blocking the main thread?
+* Explain the differences between worker_threads, child_process, and cluster.
+* How does the Node.js event loop handle timers, I/O callbacks, and microtasks?
+* What is the difference between process.nextTick() and queueMicrotask()?
+* How can excessive use of process.nextTick() affect application responsiveness?
+* How does Node.js manage memory and garbage collection?
+* What are heap memory, stack memory, and external memory in Node.js?
+* How would you diagnose a memory leak in a long-running Node.js application?
+* What is backpressure in Node.js streams, and how do you handle it?
+* How do readable and writable streams coordinate data flow?
+* How does module caching affect application behavior and memory usage?
+* How would you design a modular application using dependency injection in Node.js?
+* How do you handle graceful shutdown when a Node.js service receives SIGTERM?
+* How would you prevent unhandled asynchronous errors from crashing a production service?
+* How do you design centralized error handling across a Node.js application?
+* How would you implement structured logging and request correlation IDs?
+* How do you improve the performance of a high-throughput Node.js API?
+* How would you implement rate limiting across multiple Node.js instances?
+* How do you prevent race conditions when multiple asynchronous operations update shared data?
+* How would you handle concurrent access to shared resources across worker threads?
+* How do you secure a Node.js application against prototype pollution and dependency vulnerabilities?
+* How would you prevent event-loop blocking caused by large JSON parsing or serialization operations?
+* How do you profile CPU usage and event-loop latency in Node.js?
+* How would you design a resilient Node.js service with timeouts, retries, and circuit breakers?
+* How would you plan a migration of a large Node.js application from CommonJS to ES modules?

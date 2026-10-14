@@ -1,0 +1,30 @@
+* Write a Spring Boot REST endpoint that filters employees by department using @RequestParam.
+* Write a repository method that retrieves employees by status and department.
+* Implement filtering by employee name using a case-insensitive partial match.
+* Write a REST API that filters products by minimum and maximum price.
+* Implement date-range filtering for orders using Spring Data JPA.
+* Write a service that filters records using multiple optional query parameters.
+* Implement filtering by multiple status values using an IN query.
+* Write a JPA query that filters records where a field is null or not null.
+* Implement a dynamic query using the JPA Criteria API.
+* Write a Spring Data JPA Specification for filtering employees by department.
+* Implement a Specification that combines status, location, and salary filters dynamically.
+* Write a REST API that supports filtering, sorting, and pagination using Pageable.
+* Implement AND and OR conditions using JPA Criteria queries.
+* Write a filter DTO that validates supported filter fields and operators.
+* Implement a generic filter utility that supports EQ, NE, GT, LT, LIKE, IN, and BETWEEN.
+* Write a parser that converts query parameters into a structured filter expression.
+* Implement nested AND and OR filter expressions with correct grouping.
+* Write a dynamic filtering implementation that safely validates field names before constructing queries.
+* Implement a filter that retrieves customers with orders whose total amount exceeds a specified threshold.
+* Write a JPA query that filters entities by nested relationship attributes.
+* Implement filtering by multiple IDs and handle empty lists correctly.
+* Write tests for a filtering endpoint covering valid parameters, missing parameters, invalid operators, and empty results.
+* Implement a test that verifies filtering does not expose records belonging to another tenant.
+* Write a query that avoids duplicate parent records when filtering through a one-to-many relationship.
+* Implement a repository query that combines a full-text search term with structured filters.
+* Write a filtering service that applies an allowlist of fields and permitted operators.
+* Implement a filter for a nullable Boolean field and test true, false, and null cases.
+* Write an integration test that verifies filtering and pagination remain correct when sorting by multiple fields.
+* Implement a service that records filter usage and query execution time for monitoring.
+* Build a complete Spring Boot filtering module with dynamic JPA Specifications, validated filter DTOs, nested criteria, sorting, pagination, tenant isolation, secure query construction, and automated tests.

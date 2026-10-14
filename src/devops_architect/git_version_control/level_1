@@ -1,0 +1,112 @@
+**Git Fundamentals**
+* Explain how Git stores snapshots and how commits reference their parent commits.
+* How would you recover a file accidentally deleted from the working directory?
+* What is the difference between `git reset --soft`, `git reset --mixed`, and `git reset --hard`?
+* How do `git revert`, `git restore`, and `git checkout` differ in common recovery workflows?
+* How would you identify the commit that introduced a regression?
+* How do you resolve conflicts when merging changes from a remote branch?
+
+**Branching Strategies**
+* How would you choose a branching strategy for a team deploying multiple times per day?
+* How would you manage parallel development across several teams working on shared components?
+* How do long-lived branches increase integration risk?
+* How would you coordinate branching and merging when multiple supported product versions exist?
+* How would you migrate a team from long-lived development branches to short-lived integration branches?
+
+**GitFlow**
+* How would you manage parallel release branches for multiple supported production versions?
+* How would you prevent hotfix changes from being lost between `main` and `develop`?
+* How would you coordinate release stabilization while new features continue development?
+* How would you adapt GitFlow for a microservices architecture with independently released services?
+* What operational problems arise when release branches require extensive manual synchronization?
+
+**Trunk-Based Development**
+* How would you safely integrate incomplete features into the trunk without exposing them to users?
+* How would you use feature flags to separate deployment from feature release?
+* How would you keep the trunk releasable when several teams commit frequently?
+* How would you handle a failing trunk build that blocks every developer?
+* How would you prevent feature flags from accumulating and becoming long-term technical debt?
+
+**Feature Branches**
+* How would you keep a feature branch synchronized with a rapidly changing main branch?
+* How would you minimize merge conflicts when several developers modify the same modules?
+* When would you merge main into a feature branch versus rebase the feature branch onto main?
+* How would you handle a feature that requires several weeks of development?
+* How would you organize dependent feature branches and merge them safely?
+
+**Pull Requests**
+* How would you enforce required reviews and CI checks before a pull request can be merged?
+* How would you handle a pull request that contains unrelated changes across multiple modules?
+* How would you design a pull request template for a production-critical service?
+* How would you prevent stale approvals from remaining valid after substantial code changes?
+* How would you manage urgent changes when standard review requirements cannot be completed in time?
+
+**Code Reviews**
+* How would you distinguish blocking correctness issues from optional style improvements?
+* How would you review a large pull request without missing architectural or security risks?
+* How would you reduce review turnaround time in a distributed team?
+* How would you handle repeated disagreements between reviewers and authors about a design decision?
+* How would you measure review effectiveness without encouraging superficial approvals?
+
+**Merge vs Rebase**
+* How would you choose between merge commits, squash merges, and rebase merges for a team?
+* How would you resolve conflicts during an interactive rebase?
+* Why can rebasing a published branch create problems for other developers?
+* How would you recover commits after an accidental reset or rebase using the reflog?
+* How would you preserve important merge topology when integrating a complex feature branch?
+
+**Git Tags**
+* How would you create an annotated release tag and push it to a remote repository?
+* How would you prevent release tags from being modified after publication?
+* How would you verify that a deployed artifact corresponds to a specific Git tag?
+* How would you manage tags for patch releases across several maintained versions?
+* What problems can arise when a tag is moved after a production release?
+
+**Git Hooks**
+* How would you enforce commit-message conventions using hooks?
+* How would you distribute consistent hooks across a team rather than relying on each developer to configure them manually?
+* How would you prevent sensitive files or secrets from being committed?
+* How would you decide which checks belong in local hooks and which must run in CI?
+* How would you debug a hook that works on Linux but fails on Windows?
+
+**Monorepo vs Polyrepo**
+* How would you organize shared libraries and independently deployable services in a monorepo?
+* How would you prevent a small change from triggering unnecessary builds and tests across a large repository?
+* How would you manage versioning and compatibility for shared libraries in a polyrepo architecture?
+* How would you enforce different access permissions across teams in a monorepo?
+* How would you compare repository size, build time, ownership, and dependency management when choosing an approach?
+
+**Release Branches**
+* How would you backport a production fix to an older release branch without introducing unrelated changes?
+* How would you coordinate a release candidate across multiple environments?
+* How would you handle a critical bug found after a release branch has entered code freeze?
+* How would you prevent release branches from diverging significantly from main?
+* How would you automate release branch creation, validation, and cleanup?
+
+**Semantic Versioning**
+* How would you determine whether an API change requires a major, minor, or patch version increment?
+* How would you automate version calculation from commit history?
+* How would you handle breaking changes in a shared library consumed by multiple teams?
+* How would you manage pre-release identifiers such as `alpha`, `beta`, and `rc`?
+* How would you maintain compatibility when several major versions must remain supported?
+
+**Commit Strategies**
+* How would you structure commits to make a feature easy to review and revert?
+* How would you choose between squash merging and preserving individual commits?
+* How would you enforce Conventional Commits across multiple repositories?
+* How would you split a large commit containing refactoring, bug fixes, and feature implementation?
+* How would you use commit history to generate release notes and changelogs?
+
+**Repository Governance**
+* How would you implement branch protection and required status checks across hundreds of repositories?
+* How would you enforce CODEOWNERS review requirements for security-sensitive directories?
+* How would you manage external contributors without granting excessive repository permissions?
+* How would you audit repository permissions and detect stale or excessive access?
+* How would you handle exceptions to branch protection during production emergencies?
+
+**GitOps Repository Design**
+* How would you structure GitOps repositories for multiple applications, clusters, regions, and environments?
+* How would you promote the same immutable image digest from staging to production?
+* How would you prevent environment-specific configuration from accidentally leaking into another environment?
+* How would you handle secrets without storing plaintext credentials in Git?
+* How would you design pull-request approvals and policy checks for production configuration changes?

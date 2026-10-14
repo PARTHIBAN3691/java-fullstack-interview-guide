@@ -1,0 +1,30 @@
+* A REST API returns HTTP 200 even when the business operation fails. How would you improve its HTTP status code handling?
+* A client receives HTTP 401 even though the access token appears valid. How would you investigate the request?
+* A POST request times out, and the client retries it, creating duplicate orders. How would you prevent this?
+* A GET endpoint becomes slow under heavy traffic. How would you investigate HTTP connection reuse and connection pooling?
+* A REST API works over HTTP but fails over HTTPS. How would you troubleshoot TLS and certificate issues?
+* A service returns HTTP 500 for invalid user input. How would you correct its error handling?
+* A client receives HTTP 429 during a traffic spike. How should the client and server respond?
+* A downstream service frequently returns HTTP 503. How would you design retries, timeouts, and circuit breakers?
+* A PUT request unexpectedly creates a duplicate resource. How would you investigate whether the endpoint violates HTTP semantics?
+* A PATCH request updates fields that were not included in the payload. How would you investigate the implementation?
+* A DELETE request returns HTTP 200 without a response body. Is this valid, and what alternatives would you consider?
+* An API returns HTTP 204, but the client expects a JSON response body. How would you resolve the contract mismatch?
+* A client receives stale data after a successful update. How would you investigate HTTP caching headers and validators?
+* A browser reports a CORS error, while the same API works through Postman. How would you troubleshoot it?
+* An API gateway returns HTTP 502 while the backend appears healthy. What would you investigate?
+* A client receives HTTP 504 during a long-running report generation request. How would you redesign the interaction?
+* A REST API performs well locally but experiences connection exhaustion in production. How would you investigate the HTTP client pool?
+* A request fails with HTTP 415 after a deployment. What request and response details would you inspect?
+* An API returns HTTP 406 for requests that worked previously. How would you investigate content negotiation?
+* A load balancer terminates HTTPS, but the application generates HTTP redirects. How would you fix the forwarded protocol configuration?
+* A service receives duplicate requests during a network interruption. How would you distinguish retries from new operations?
+* A file download fails for large files while small files succeed. How would you investigate streaming, timeouts, and proxy limits?
+* A REST endpoint takes several minutes to process a request. How would you decide between synchronous HTTP and asynchronous job processing?
+* A service receives HTTP 400 after an API gateway upgrade. How would you isolate malformed requests or protocol differences?
+* An API returns HTTP 301 for a POST request, and the client changes its behavior unexpectedly. How would you address the redirect?
+* A client receives HTTP 409 while updating a resource concurrently with another user. How should the API communicate the conflict?
+* A microservice experiences cascading failures because every failed HTTP request is retried immediately. How would you stabilize the system?
+* A response is truncated when passing through a reverse proxy. How would you investigate transfer encoding, buffering, and connection termination?
+* A REST API must support thousands of concurrent long-lived connections. Which HTTP protocol and server design considerations matter?
+* Production latency increases suddenly, and users report slow API calls. How would you isolate DNS, TLS, network, connection-pool, and server-processing delays?

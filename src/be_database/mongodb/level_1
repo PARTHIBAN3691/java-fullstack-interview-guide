@@ -1,0 +1,30 @@
+* How do you configure MongoDB connectivity in a Spring Boot application?
+* What is the role of spring-boot-starter-data-mongodb?
+* How do you configure a MongoDB connection URI in application.properties or application.yml?
+* What is the difference between MongoTemplate and MongoRepository?
+* How do you create a MongoDB document class using Spring Data MongoDB?
+* What is the purpose of the @Document annotation?
+* How do @Id and @Field work in Spring Data MongoDB?
+* How do you define a MongoRepository interface for a document?
+* How does Spring Data MongoDB derive queries from repository method names?
+* How do you write custom MongoDB queries using @Query?
+* How do you perform CRUD operations using MongoTemplate?
+* How do you implement pagination and sorting in MongoDB using Spring Data?
+* How do you implement filtering based on multiple fields in a MongoDB repository?
+* How do you create indexes using Spring Data MongoDB?
+* How do unique indexes work, and how do you handle duplicate-key errors?
+* How do compound indexes improve query performance?
+* How do you identify slow queries using MongoDB explain plans?
+* What is the difference between find() and aggregate()?
+* How do $match, $group, $project, $sort, and $lookup work in aggregation pipelines?
+* How do you implement joins between collections using $lookup?
+* How do you model one-to-one, one-to-many, and many-to-many relationships in MongoDB?
+* How do you choose between embedding and referencing related documents?
+* How do you implement transactions across multiple MongoDB documents?
+* What are read concern and write concern in MongoDB?
+* What is the difference between read preference and read concern?
+* How do replica sets provide high availability in MongoDB?
+* What is sharding, and when would you use it?
+* How do you handle MongoDB connection failures in a Spring Boot application?
+* How do you implement validation and centralized exception handling for MongoDB operations?
+* How do you write integration tests for a Spring Data MongoDB repository?

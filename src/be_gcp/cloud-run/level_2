@@ -1,0 +1,30 @@
+* Explain the internal request lifecycle of a Cloud Run service from ingress to container response.
+* How would you design a highly available Spring Boot application using Cloud Run?
+* How do you calculate the appropriate concurrency setting for a CPU-intensive Java workload?
+* How does concurrency affect throughput, latency, memory consumption, and instance scaling?
+* How would you tune JVM heap settings for Cloud Run's configured memory limit?
+* How would you investigate JVM out-of-memory errors occurring only under production traffic?
+* How do CPU allocation modes affect background threads and asynchronous processing?
+* How would you design a Cloud Run service that must maintain background processing between requests?
+* How do Cloud Run request timeouts affect long-running HTTP operations?
+* How would you design a workload that requires processing longer than the HTTP request timeout?
+* How do minimum instances affect latency, cost, and cold-start frequency?
+* How would you optimize cold-start performance for a Spring Boot application?
+* How would you compare JVM tuning, class-data sharing, native compilation, and lazy initialization for startup optimization?
+* How would you design safe traffic migration between Cloud Run revisions?
+* How do you implement a canary deployment and automatically roll back an unhealthy revision?
+* How would you design idempotent event processing when Cloud Run receives duplicate Pub/Sub messages?
+* How would you prevent duplicate business transactions when a request is retried?
+* How do you handle graceful shutdown and in-flight requests during instance termination?
+* How would you design connection pooling for Cloud SQL when Cloud Run scales to hundreds of instances?
+* How do you calculate safe database connection limits across multiple Cloud Run services?
+* How would you secure service-to-service communication using IAM and short-lived identity tokens?
+* How would you design private ingress and controlled outbound connectivity for Cloud Run?
+* How do VPC connectors and Direct VPC egress differ, and how would you choose between them?
+* How would you troubleshoot intermittent DNS failures or connection timeouts from Cloud Run?
+* How would you design distributed tracing across multiple Cloud Run microservices?
+* How would you diagnose high p99 latency when average latency remains low?
+* How would you implement rate limiting and protect downstream services from sudden Cloud Run scale-out?
+* How would you design a resilient Cloud Run integration with retry, timeout, circuit-breaker, and bulkhead patterns?
+* How would you optimize Cloud Run cost for a mix of bursty HTTP traffic and asynchronous jobs?
+* How would you evaluate Cloud Run versus GKE for a high-throughput, stateful, or specialized workload?

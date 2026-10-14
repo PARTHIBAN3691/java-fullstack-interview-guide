@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a PersistentVolumeClaim from creation to binding.
+* How does Kubernetes bind a PVC to a suitable PV?
+* How does dynamic provisioning create storage for a PVC?
+* How do you configure a StorageClass for dynamic volume provisioning?
+* How do you attach a PVC to a Deployment?
+* How do you mount persistent storage into a Spring Boot container?
+* How do you configure a PVC for a PostgreSQL database running in Kubernetes?
+* How do StatefulSets use PersistentVolumeClaims?
+* What is volumeClaimTemplates in a StatefulSet?
+* How does Kubernetes preserve data when a StatefulSet Pod is recreated?
+* What happens to a PVC when its consuming Pod is deleted?
+* What happens to a PV when its PVC is deleted?
+* How does the reclaim policy affect storage deletion?
+* How do you retain storage after deleting a PVC?
+* How do you expand the size of an existing PVC?
+* What prerequisites are required to expand a PersistentVolumeClaim?
+* How do you configure a StorageClass to allow volume expansion?
+* What is the difference between immediate and WaitForFirstConsumer volume binding?
+* Why can WaitForFirstConsumer be useful in multi-zone clusters?
+* How do access modes affect whether multiple Pods can mount the same volume?
+* Can multiple Pods on different nodes mount a ReadWriteOnce volume simultaneously?
+* What is the difference between ReadWriteOnce and ReadWriteOncePod?
+* How do you share persistent storage between multiple application Pods?
+* How do you configure read-only access to a mounted volume?
+* How do you troubleshoot a PVC stuck in Pending state?
+* How do you troubleshoot a Pod stuck in ContainerCreating due to storage?
+* How do you inspect PV, PVC, and StorageClass events?
+* How do permissions and file ownership affect mounted volumes?
+* How do init containers help prepare a persistent volume before the main application starts?
+* How do you back up and restore application data stored in PersistentVolumes?

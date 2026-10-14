@@ -1,0 +1,30 @@
+* Write a Kubernetes Pod YAML manifest that runs a Spring Boot application on port 8080.
+* Write a Pod manifest that defines CPU and memory requests and limits.
+* Write a Pod manifest that configures environment variables for a Java application.
+* Write a Pod manifest that loads environment variables from a ConfigMap.
+* Write a Pod manifest that exposes credentials through a Kubernetes Secret.
+* Write a Pod manifest that mounts a PersistentVolumeClaim at /app/data.
+* Write a Pod manifest with a liveness probe that checks an HTTP endpoint.
+* Write a Pod manifest with a readiness probe for a Spring Boot application.
+* Write a Pod manifest with a startup probe suitable for a slow-starting Java application.
+* Write a Pod manifest that configures a termination grace period and a lifecycle preStop hook.
+* Write a Pod manifest containing an init container that waits for a dependent service before application startup.
+* Write a multi-container Pod manifest in which a sidecar collects application logs from a shared volume.
+* Write a Pod manifest in which two containers share a volume but use different mount paths.
+* Write a Pod manifest that schedules a workload onto nodes with a specified label.
+* Write a Pod manifest that tolerates a specific node taint.
+* Write a Pod manifest that uses node affinity to prefer a particular node group.
+* Write a Pod manifest that uses topology spread constraints to distribute replicas across availability zones.
+* Write a Pod manifest that configures a service account and disables automatic service-account token mounting.
+* Write a Pod manifest that runs as a non-root user with an appropriate security context.
+* Write a Pod manifest that uses a read-only root filesystem while providing writable temporary storage.
+* Write a Pod manifest that configures ephemeral-storage requests and limits.
+* Write a Pod manifest that uses hostNetwork and explain the relevant port and DNS configuration through the manifest.
+* Write a Pod manifest that defines multiple containers with separate resource requests and limits.
+* Write a Pod manifest that uses a projected volume to expose configuration and service-account token data.
+* Write a Pod manifest that sets a custom DNS policy and DNS configuration.
+* Write a shell command sequence to inspect Pod events, container states, and scheduling failures.
+* Write a shell command sequence to retrieve logs from the previous instance of a restarted container.
+* Write a shell command sequence to execute a diagnostic command inside a running container and inspect resource usage.
+* Write a Java Spring Boot shutdown configuration that gracefully handles termination signals and in-flight requests.
+* Write a production-ready Pod configuration for a Java microservice with health probes, resource constraints, security settings, graceful shutdown, and appropriate scheduling rules.

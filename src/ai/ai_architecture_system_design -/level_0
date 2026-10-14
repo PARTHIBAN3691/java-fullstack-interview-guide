@@ -1,0 +1,94 @@
+**AI Application Architecture**
+
+* What are the main components of an AI-powered application, and what responsibilities does each component have?
+* How does an AI application architecture differ from a traditional web application architecture?
+
+**LLM-Powered Microservices**
+
+* How would you integrate a large language model (LLM) into a microservices-based application?
+* What responsibilities should an AI microservice own, and what should remain with the calling service?
+
+**Enterprise AI Platform Design**
+
+* What core capabilities should an enterprise AI platform provide to development teams?
+* Why would an organization build a shared AI platform instead of allowing each team to integrate models independently?
+
+**RAG System Design**
+
+* What are the main components of a Retrieval-Augmented Generation (RAG) system?
+* Why does a RAG application retrieve external information before generating an answer?
+
+**AI Agent Platform Design**
+
+* What is an AI agent, and how does it differ from a conventional request-response application?
+* What components are required to build a basic AI agent platform?
+
+**Multi-Model Routing Architecture**
+
+* What is multi-model routing, and why might an application use multiple LLM providers?
+* Which factors can determine the model selected for a request?
+
+**AI Gateway Design**
+
+* What is an AI gateway, and how does it differ from a traditional API gateway?
+* What responsibilities should an AI gateway handle when forwarding requests to model providers?
+
+**Shared AI Services for Multiple Teams**
+
+* Which AI capabilities are good candidates for shared enterprise services?
+* How can shared AI services reduce duplicated development effort across teams?
+
+**Multi-Tenant AI Architecture**
+
+* What is multi-tenancy in an AI application?
+* How can an AI system isolate one customer's data and configuration from another customer's data?
+
+**AI Caching Architecture**
+
+* What is semantic caching, and how does it differ from conventional response caching?
+* Which AI requests are good candidates for caching?
+
+**AI Rate Limiting and Quota Management**
+
+* Why do AI applications need rate limits and usage quotas?
+* What is the difference between a request-count quota and a token-based quota?
+
+**High-Availability AI Systems**
+
+* What does high availability mean for an AI-powered application?
+* How can an application handle temporary unavailability of an LLM provider?
+
+**AI Data Privacy Architecture**
+
+* What privacy risks arise when an application sends user data to an external AI model?
+* How can sensitive information be protected before it reaches a model provider?
+
+**Low-Latency AI Inference**
+
+* Which factors contribute to latency in an LLM request?
+* What is the difference between time to first token and total response time?
+
+**Scalable AI Workloads**
+
+* Why do AI workloads require different scaling considerations from ordinary REST APIs?
+* What is the difference between scaling model inference and scaling a retrieval service?
+
+**AI Cost Optimization**
+
+* Which factors influence the cost of an AI application?
+* How can model selection and prompt length affect inference costs?
+
+**AI Disaster Recovery**
+
+* What is disaster recovery in the context of an AI platform?
+* Which AI-related configurations, datasets, indexes, and artifacts should be included in a recovery plan?
+
+**Enterprise AI Governance**
+
+* What does AI governance mean in an enterprise architecture?
+* Why are auditability, access control, and model usage policies important in enterprise AI systems?
+
+**AI Architecture Trade-offs**
+
+* What trade-offs should architects consider when choosing between a managed AI service and a self-hosted model?
+* How can an architect balance system complexity, performance, reliability, and cost?

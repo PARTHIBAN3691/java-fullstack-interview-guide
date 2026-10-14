@@ -1,0 +1,30 @@
+* Write kubectl commands to inspect Pod status, events, and container logs.
+* Write kubectl commands to retrieve logs from a previously terminated container.
+* Write a shell script that identifies Pods in CrashLoopBackOff, ImagePullBackOff, or Error states.
+* Write a shell script that lists Pods that are not Ready across all namespaces.
+* Write a shell script that identifies nodes in NotReady state.
+* Write kubectl commands to inspect Deployment rollout status and rollout history.
+* Write kubectl commands to roll back a failed Deployment rollout.
+* Write a shell script that identifies Deployments with fewer ready replicas than desired replicas.
+* Write kubectl commands to inspect Service selectors, EndpointSlices, and ready backend endpoints.
+* Write commands to launch a temporary diagnostic Pod and test DNS resolution inside the cluster.
+* Write a shell script that checks connectivity to a Kubernetes Service using a temporary diagnostic container.
+* Write kubectl commands to inspect NetworkPolicies affecting a namespace.
+* Write a shell script that identifies Pods with frequent restarts.
+* Write a shell script that collects CPU and memory usage for Pods across all namespaces.
+* Write a shell script that identifies Pods with high restart counts and retrieves their recent logs.
+* Write a diagnostic script that collects Pod descriptions, events, logs, and node details for a selected namespace.
+* Write kubectl commands to investigate a PVC stuck in Pending state.
+* Write a shell script that identifies PVCs that are not Bound.
+* Write kubectl commands to inspect node conditions, taints, and resource capacity.
+* Write a shell script that detects nodes reporting MemoryPressure, DiskPressure, or PIDPressure.
+* Write a Kubernetes manifest for a Spring Boot application with resource requests, limits, and appropriate health probes.
+* Write a Kubernetes manifest that configures startup, readiness, and liveness probes for a slow-starting Java application.
+* Write Java code that logs application startup failures with meaningful exception details.
+* Write Java code using Spring Boot Actuator to expose health and readiness endpoints.
+* Write a shell script that checks an application's HTTP health endpoint and reports failures.
+* Write a Java example that configures connection and response timeouts for a WebClient call.
+* Write a shell script that detects failed Jobs and retrieves their Pod logs.
+* Write a script that checks whether an HPA has valid metrics and is able to scale its target.
+* Write a diagnostic script that gathers JVM heap, garbage-collection, and thread information from a running Java container where diagnostic tools are available.
+* Write an incident-diagnostic automation script that gathers Kubernetes events, Pod status, application logs, resource usage, and rollout history for root-cause analysis.

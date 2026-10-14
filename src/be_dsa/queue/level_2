@@ -1,0 +1,30 @@
+* How would you implement a lock-free queue using atomic operations?
+* What is the difference between a lock-free queue and a blocking queue?
+* How does a concurrent queue prevent race conditions during enqueue and dequeue?
+* How would you implement a bounded lock-free multi-producer, multi-consumer queue?
+* What is the ABA problem, and how can it affect a lock-free queue implementation?
+* How does a circular buffer differ from a conventional queue?
+* How would you design a thread-safe circular queue with fixed capacity?
+* How can you implement a queue using two stacks while achieving amortized O(1) operations?
+* How would you implement a queue that supports enqueue, dequeue, getMinimum, and getMaximum efficiently?
+* How would you design a priority queue supporting efficient insertion, deletion, and priority updates?
+* How can a binary heap be used to implement a priority queue?
+* How would you implement a priority queue using a balanced binary search tree instead of a heap?
+* How would you merge K sorted linked lists efficiently using a priority queue?
+* How would you find the median of a continuous stream of integers using two heaps?
+* How would you find the maximum element in every sliding window in O(n) time?
+* How would you find the shortest path in an unweighted graph using a queue?
+* How would you solve the 0-1 BFS problem using a deque?
+* How would you find the shortest path in a graph when edge weights are restricted to zero and one?
+* How would you solve the shortest-path problem in a weighted graph using a priority queue?
+* How would you use a deque to optimize a dynamic programming solution involving sliding-window transitions?
+* How would you design a queue that supports retrieving the Kth largest element efficiently?
+* How would you design a task scheduler that prioritizes tasks by priority and arrival time?
+* How would you implement a fair queue for multiple producers and consumers?
+* How would you prevent starvation when processing tasks from a priority queue?
+* How would you design a bounded queue that supports blocking insertion and removal?
+* How would you implement a queue with O(1) amortized operations using a dynamically resizing circular array?
+* How would you analyze the amortized complexity of a queue implemented using two stacks?
+* How would you handle integer overflow in circular queue index calculations?
+* How would you benchmark ArrayDeque, LinkedList, and concurrent queue implementations in Java?
+* How would you design a high-throughput queue for a low-latency Java application?

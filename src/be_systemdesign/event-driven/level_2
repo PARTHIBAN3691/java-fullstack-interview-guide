@@ -1,0 +1,30 @@
+* How would you design an event-driven architecture that processes millions of events per second?
+* How would you guarantee consistent business outcomes when messages may be delivered more than once?
+* Why is exactly-once processing difficult in distributed systems?
+* How do Kafka transactions and idempotent producers help prevent duplicate records?
+* How would you coordinate database updates and event publishing without distributed transactions?
+* How does the transactional outbox pattern work with change data capture?
+* How would you design an event-driven workflow spanning multiple microservices?
+* How do sagas coordinate distributed business transactions through events?
+* What is the difference between choreography-based and orchestration-based sagas?
+* How would you handle compensation when a downstream event-driven operation fails?
+* How would you guarantee per-entity ordering while processing events in parallel?
+* How would you choose partition keys to avoid hot partitions?
+* How would you design consumer rebalancing to minimize processing interruptions?
+* How would you handle offset commits when a consumer crashes during processing?
+* How would you implement reliable event replay without duplicating business effects?
+* How would you rebuild a materialized view from an event log?
+* How do event sourcing and CQRS work together?
+* How would you manage event schema evolution across dozens of independently deployed services?
+* How would you design multi-region event streaming with disaster recovery?
+* How would you prevent data loss during broker failover?
+* How would you handle broker outages while producers continue generating events?
+* How would you design backpressure and flow control for a high-volume event pipeline?
+* How would you detect and recover from poison messages without blocking an entire partition?
+* How would you implement event deduplication across multiple consumer instances?
+* How would you guarantee eventual consistency between a transactional database and a search index?
+* How would you handle out-of-order events that update the same business entity?
+* How would you secure event streams with authentication, authorization, encryption, and data masking?
+* How would you implement tenant isolation in a shared event streaming platform?
+* How would you measure end-to-end event processing latency and identify bottlenecks?
+* How would you choose between event-driven architecture, synchronous APIs, and a hybrid architecture?

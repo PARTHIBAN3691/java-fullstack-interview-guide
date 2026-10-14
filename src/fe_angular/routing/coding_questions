@@ -1,0 +1,30 @@
+* Create an Angular routing configuration with Home, About, and Contact routes.
+* Implement a default route that redirects to the Home component.
+* Configure a wildcard route that displays a Not Found component.
+* Create a route that accepts an employee ID as a path parameter.
+* Write a component that reads route parameters using ActivatedRoute.paramMap.
+* Implement programmatic navigation using Router.navigate().
+* Write code that navigates to a route with query parameters.
+* Implement a component that observes query parameter changes and updates its data.
+* Create nested routes for a dashboard containing Users, Reports, and Settings.
+* Configure child routes with a default redirect.
+* Implement a lazy-loaded feature module using loadChildren.
+* Implement lazy loading for a standalone component using loadComponent.
+* Write a functional CanActivate guard using inject().
+* Implement a CanMatch guard that restricts access to an administrative route.
+* Create an authentication guard that redirects unauthenticated users to login.
+* Implement a role-based guard that allows access based on user permissions.
+* Write a guard that preserves the requested URL and redirects back after login.
+* Implement a CanDeactivate guard that prevents navigation when a form has unsaved changes.
+* Create a resolver that retrieves employee details before route activation.
+* Implement error handling in a resolver when the API request fails.
+* Write code that combines multiple route resolvers for a page.
+* Create a breadcrumb component that reads labels from route data.
+* Implement an active navigation menu using RouterLinkActive.
+* Configure primary and named router outlets for a page layout.
+* Write code that listens to NavigationStart, NavigationEnd, and NavigationError events.
+* Implement a custom preloading strategy that preloads routes marked with data.preload.
+* Create a custom RouteReuseStrategy that preserves selected route components.
+* Write unit tests for an authentication guard using RouterTestingHarness.
+* Test that a resolver loads data before the destination component is activated.
+* Build a complete Angular routing example combining lazy loading, nested routes, guards, resolvers, query parameters, and wildcard handling.

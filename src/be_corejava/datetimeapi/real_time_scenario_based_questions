@@ -1,0 +1,19 @@
+# Core Java — Date and Time API
+## Real-Time Scenario-Based Questions
+* An application stores timestamps, but dates appear differently in development and production because the environments use different time zones. How would you investigate and fix the issue?
+* A scheduling application serves users in India, the UK, and the US. Appointments appear one hour earlier after daylight-saving changes. What could cause this, and how would you correct the design?
+* An e-commerce application stores timestamps in UTC, but daily reports use the server's local date. Orders near midnight appear in the wrong day's report. How would you fix this?
+* A scheduled payment job executes twice during a daylight-saving clock transition. How would you identify the cause and make execution reliable?
+* A subscription expires at midnight in the customer's local time zone but expires several hours early for some customers. How would you diagnose and fix the issue?
+* A REST API accepts dates in `dd-MM-yyyy` format. Some requests begin failing after deployment. What would you investigate to make date parsing consistent?
+* Two application instances store different timestamps for nearly simultaneous events. How would you investigate time-zone configuration, clock synchronization, and timestamp precision?
+* A registration service rejects users who have reached the minimum permitted age on the current date. How would you investigate and correct the boundary condition?
+* A report processes millions of records and repeatedly converts time zones and calculates date differences. How would you profile and optimize it without changing the business rules?
+* A recurring meeting scheduled for 9:00 AM every Monday shifts to 10:00 AM after a time-zone rule change. How would you design the schedule to preserve the intended local time?
+* A support system calculates SLAs using calendar days, but the requirement is working hours excluding weekends and holidays. How would you redesign the calculation?
+* Date-related unit tests pass locally but fail in CI because the environments use different time zones. How would you make the tests deterministic?
+* A legacy application stores timestamps without time-zone information. During migration to the modern Date and Time API, how would you handle ambiguous historical records?
+* One service sends timestamps such as `2026-10-09T10:00:00`, while another service assumes they represent UTC. What is wrong with the API contract, and how would you resolve it?
+* An annual billing service calculates renewal dates incorrectly for customers registered on February 29. How would you clarify the business rules and implement the expected behavior?
+* A distributed application receives events with equal or out-of-order timestamps. How would you distinguish event time from processing time and maintain reliable ordering?
+* A developer calculates a future renewal date using `LocalDate`, but the result differs from the business team's expected end-of-month behavior. How would you investigate and correct it?

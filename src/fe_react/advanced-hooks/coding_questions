@@ -1,0 +1,30 @@
+* Implement a custom usePrevious Hook that returns the previous committed value.
+* Implement a useDebounce Hook for delaying updates to rapidly changing input.
+* Implement a useThrottle Hook that limits how frequently a callback executes.
+* Create a custom useToggle Hook using useState().
+* Implement a useCounter Hook with increment, decrement, and reset operations.
+* Build a useReducer-based shopping cart with add, remove, and update quantity actions.
+* Implement a useFetch Hook with loading, success, and error states.
+* Extend useFetch to cancel obsolete requests using AbortController.
+* Implement a custom Hook that retries failed requests with a configurable retry limit.
+* Create a useEventListener Hook that registers and cleans up browser event listeners.
+* Implement a useInterval Hook that uses the latest callback without restarting the interval unnecessarily.
+* Build a useLocalStorage Hook that synchronizes state with browser storage.
+* Implement a custom Hook that tracks the current window size and cleans up its resize listener.
+* Create a useOnClickOutside Hook for detecting clicks outside a referenced element.
+* Implement a usePrevious Hook that handles object values and avoids unnecessary updates.
+* Build a component that uses useMemo() to optimize filtering a large array.
+* Create a memoized child component that receives a stable callback through useCallback().
+* Implement a search interface that combines useDeferredValue() with an expensive filtering operation.
+* Build a component that uses useTransition() to keep a large list responsive during updates.
+* Implement a custom Hook that tracks whether a component is mounted without using it to justify unsafe state updates.
+* Create a useMediaQuery Hook that subscribes to media-query changes.
+* Implement a useSyncExternalStore() integration for subscribing to a simple external store.
+* Create an external-store Hook that supports a server snapshot for server-side rendering.
+* Build a useWebSocket Hook with connection status, message handling, and cleanup.
+* Implement a custom Hook that prevents outdated asynchronous responses from updating state.
+* Create a useTimeout Hook with cancellation and cleanup functionality.
+* Build a form-management Hook using useReducer() for field values, validation, and submission.
+* Implement a useId()-based accessible form field with linked label and error message.
+* Create a component that exposes a focus() method through useImperativeHandle().
+* Write tests for a custom Hook that handles asynchronous requests, cancellation, errors, and changing dependencies.

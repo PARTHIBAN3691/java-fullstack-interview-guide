@@ -1,0 +1,36 @@
+* A Deployment is applied successfully, but all newly created Pods remain Pending. How would you investigate resource availability, scheduling constraints, quotas, and storage requirements?
+* The Kubernetes API Server becomes intermittently unavailable during a production deployment. How would you diagnose the control plane and restore reliable API access?
+* The etcd cluster experiences high disk latency, and API requests become slow. How would you identify the bottleneck and recover control plane performance?
+* A worker node becomes NotReady, and several application Pods are affected. How would you determine the root cause and restore workload availability?
+* A Deployment rollout is stuck because new Pods fail readiness probes while old Pods continue serving traffic. How would you troubleshoot and safely recover?
+* A new application version causes frequent restarts after deployment because of incorrect liveness probe settings. How would you identify and fix the issue?
+* A Pod is OOMKilled repeatedly even though application heap usage appears below the configured memory limit. How would you investigate native memory, container limits, and actual memory consumption?
+* A Java application becomes slow after HPA scales it from three replicas to twenty replicas. How would you investigate database connection limits, downstream bottlenecks, and scaling behavior?
+* HPA does not scale a Deployment despite a sharp increase in traffic. How would you investigate metrics availability, target configuration, and scaling constraints?
+* The Cluster Autoscaler does not add nodes even though several Pods remain Pending. How would you identify scheduling constraints, node-group limits, and autoscaler configuration issues?
+* The Cluster Autoscaler removes a node that hosts important workloads, causing service disruption. How would you improve disruption budgets, node utilization policies, and workload placement?
+* A Kubernetes Service intermittently returns connection failures even though all Pods report Running. How would you inspect selectors, endpoints, readiness, and network connectivity?
+* An Ingress resource exists, but external users receive HTTP 404 errors. How would you investigate host rules, paths, ingress class configuration, and controller behavior?
+* An application is accessible through a ClusterIP Service but not through the external LoadBalancer. How would you isolate the problem across the cluster, cloud network, and load balancer?
+* A NetworkPolicy is introduced, and the application can no longer resolve DNS or access a required backend. How would you identify the missing rules and validate the intended traffic flows?
+* A developer can read Secrets from namespaces outside the developer's assigned team. How would you investigate RBAC permissions and immediately contain the exposure?
+* A container image passes the CI pipeline but is blocked by a production admission policy. How would you identify the policy violation and correct the release process?
+* A production Secret was committed to a Git repository and deployed through a ConfigMap. How would you contain the exposure, rotate credentials, and redesign secret management?
+* A PersistentVolumeClaim remains Pending after a deployment, and the application cannot start. How would you investigate StorageClass configuration, access modes, capacity, and provisioning events?
+* A StatefulSet Pod is stuck terminating because its persistent volume cannot detach from a failed node. How would you recover safely without risking data corruption?
+* A storage failure causes database Pods to restart, but their data is not restored correctly. How would you investigate persistence configuration, snapshots, and recovery procedures?
+* A CronJob runs the same business task twice during a cluster disruption. How would you design idempotency, concurrency policies, and duplicate-execution protection?
+* A Job repeatedly fails and consumes resources because its retry policy is too permissive. How would you adjust backoff, deadlines, resource limits, and failure handling?
+* A Helm upgrade fails halfway through a release, leaving several resources updated and others unchanged. How would you assess the cluster state and recover safely?
+* A Helm chart works in staging but fails in production because of different values and missing configuration. How would you standardize configuration and validate environment-specific changes?
+* A custom Operator continuously updates a resource and triggers repeated reconciliations. How would you diagnose the reconciliation loop and fix idempotency or ownership issues?
+* A CRD upgrade breaks existing custom resources because a field was removed or changed. How would you restore compatibility and plan a safe schema migration?
+* A Kubernetes cluster experiences excessive API Server load after a controller or Operator rollout. How would you identify high-volume clients and reduce unnecessary API operations?
+* A rolling update causes an outage because too many replicas are unavailable at the same time. How would you correct the Deployment strategy and protect minimum service capacity?
+* An application uses local in-memory sessions, and users lose sessions whenever Pods are rescheduled. How would you redesign session storage and workload behavior?
+* A production incident occurs after a node-pool upgrade changes CPU architecture or operating-system configuration. How would you identify workload incompatibilities and recover?
+* Two namespaces require strict isolation, but one application must call a shared authentication service. How would you implement least-privilege network access and validate isolation?
+* A multi-cluster application continues routing traffic to a failed region. How would you design health-based traffic routing, failover, and recovery?
+* A cluster is lost completely, and the team must restore the application in another region. How would you recover Kubernetes resources, secrets, persistent data, and external dependencies?
+* Security findings reveal that workloads use the default service account and several containers run with excessive privileges. How would you remediate the configuration without disrupting production?
+* Cluster costs increase sharply after a new microservice deployment, although request volume has not changed. How would you investigate requests, limits, replica counts, autoscaling, and resource utilization?

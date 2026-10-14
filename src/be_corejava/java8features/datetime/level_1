@@ -1,0 +1,25 @@
+* What is the difference between `LocalDateTime` and `ZonedDateTime`?
+* What is the difference between `LocalDateTime` and `OffsetDateTime`?
+* What is the difference between `ZoneId` and `ZoneOffset`?
+* How do you convert a `LocalDateTime` into a `ZonedDateTime`?
+* How do you get the current date and time in a specific time zone?
+* How do you convert a `ZonedDateTime` from one time zone to another?
+* How do you convert a `ZonedDateTime` to UTC?
+* How do you obtain the current instant using `Instant.now()`?
+* What is the difference between `Instant` and `LocalDateTime`?
+* How do you convert `Instant` to `LocalDateTime` for a specific time zone?
+* How do you calculate the number of days between two dates using `ChronoUnit`?
+* How do you calculate the number of months or years between two dates?
+* How do you calculate the duration between two date-time values?
+* How do you calculate a person's age from their date of birth?
+* How do you find the first and last day of a month using `TemporalAdjusters`?
+* How do you find the next Monday after a given date?
+* How do you find the previous working day for a given date?
+* How do you parse a date string using a custom `DateTimeFormatter` pattern?
+* What is the difference between `DateTimeFormatter` and `SimpleDateFormat`?
+* How do you handle date strings that use different input formats?
+* What is the purpose of `Year`, `YearMonth`, and `MonthDay`?
+* How do you determine whether a year is a leap year?
+* How do you find the number of days in a particular month?
+* How do you convert between `java.util.Date` and Java 8 date-time classes?
+* How do you convert between `Calendar` and Java 8 date-time classes?

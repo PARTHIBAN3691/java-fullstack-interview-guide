@@ -1,0 +1,104 @@
+**OpenAI API**
+* How would you integrate the OpenAI API into a Spring Boot REST service?
+* How do you manage model configuration across development, testing, and production?
+* How would you maintain conversation context across multiple requests?
+* How do you use the API's usage metadata to monitor request consumption?
+* How would you implement unit tests for an OpenAI API client without making real API calls?
+
+**Anthropic Claude API**
+* How would you integrate Claude into an existing Java backend?
+* How do you construct a Messages API request containing multiple conversation turns?
+* How would you manage Claude's context-window constraints?
+* How would you handle provider-specific request and response formats in a shared application?
+* How would you test your Claude integration when the external API is unavailable?
+
+**Google Gemini API**
+* How would you integrate Gemini into a Spring Boot application?
+* How would you configure generation settings for tasks with different creativity and accuracy requirements?
+* How would you manage conversation history when using Gemini?
+* How would you handle model-specific request and response differences?
+* How would you validate Gemini responses before using them in downstream business logic?
+
+**Azure OpenAI Service**
+* How do Azure OpenAI endpoints, deployments, and API versions work together?
+* How would you authenticate an application using Microsoft Entra ID instead of a long-lived API key?
+* How would you manage different deployments for development and production?
+* How would you monitor Azure OpenAI consumption and request failures?
+* How would you design an Azure OpenAI client that can switch deployments without code changes?
+
+**AWS Bedrock**
+* What is the difference between AWS SDK-based model invocation and the Converse API?
+* How does IAM authorization control access to Bedrock models?
+* How would you configure a Java application to access Bedrock without embedding AWS credentials?
+* How would you handle differences in request formats across Bedrock-supported models?
+* How would you monitor model invocation latency and token usage in AWS?
+
+**Model API Authentication and Authorization**
+* How would you securely manage API credentials across local development, CI/CD, and production?
+* What are the advantages of managed identities, IAM roles, and workload identity federation?
+* How would you rotate provider API keys without downtime?
+* How would you enforce separate permissions for developers, services, and administrators?
+* How would you prevent credentials from leaking through application logs, exception traces, or monitoring tools?
+
+**Chat Completions and Response APIs**
+* How do chat completions and newer response-oriented APIs differ in their interaction models and capabilities?
+* How would you represent conversation history in a stateless REST backend?
+* How would you manage multi-turn conversations without sending unnecessary history?
+* How do tool-call results and assistant messages fit into a multi-step API interaction?
+* How would you create a provider-independent abstraction for different conversational APIs?
+
+**Streaming Responses**
+* How would you stream generated tokens from a backend to a browser using SSE?
+* What is the difference between SSE and WebSockets for delivering LLM responses?
+* How would you detect completion, interruption, and failure in a streaming response?
+* How would you propagate browser cancellation to the upstream model request?
+* How would you prevent concurrent streaming requests from exhausting server resources?
+
+**Function Calling and Tool Calling**
+* Describe the complete lifecycle of a tool call, from model request to tool execution and final response.
+* How would you implement tool calling for an order-status lookup service?
+* How would you validate model-generated arguments against a Java DTO or JSON Schema?
+* How would you prevent duplicate side effects when a tool call is retried?
+* How would you restrict the tools available to different user roles?
+
+**Structured Outputs**
+* How would you enforce a response schema for an API that extracts customer information?
+* How do constrained structured outputs differ from asking the model to return JSON in a prompt?
+* How would you validate required fields, enumerations, and nested objects?
+* What should an application do when the output is syntactically valid but violates business rules?
+* How would you version response schemas without breaking existing clients?
+
+**Multimodal APIs**
+* How would you submit an image and text together for document understanding?
+* How would you handle large image payloads without exhausting application memory?
+* How would you design an API that accepts uploaded documents and passes appropriate content to a multimodal model?
+* What security and privacy checks are needed before processing user-uploaded media?
+* How would you handle models with different supported modalities and file-size limits?
+
+**Rate Limiting, Retries, and Timeouts**
+* How would you implement exponential backoff with jitter for transient provider failures?
+* Which HTTP status codes and provider errors are generally retryable?
+* Why can retrying a request after a timeout create duplicate work or additional cost?
+* How would you combine connection timeouts, response timeouts, and an overall request deadline?
+* How would you prevent retry storms when a provider is overloaded?
+
+**Token Usage and Cost Management**
+* How would you estimate token consumption before sending a request?
+* How would you track token usage per user, tenant, model, and feature?
+* How would you reduce costs when conversation history grows over time?
+* How do prompt caching and reusable context affect cost and latency where supported?
+* How would you enforce a maximum spend or token budget for each request?
+
+**Model Routing and Fallback Strategies**
+* How would you route simple classification requests to a smaller model and complex reasoning requests to a stronger model?
+* How would you design a provider abstraction that supports OpenAI, Claude, Gemini, and Bedrock?
+* How would you implement fallback when the primary provider returns a rate-limit error?
+* How would you avoid routing every failure to a more expensive model?
+* How would you evaluate model quality, latency, availability, and cost before changing routing rules?
+
+**AI Application Error Handling**
+* How would you map provider errors to consistent application-level error codes?
+* How would you distinguish transient failures from permanent request failures?
+* How would you design a circuit breaker for an LLM provider?
+* How would you correlate an incoming business request with multiple provider calls in logs and traces?
+* How would you return partial results when one stage of a multi-step AI workflow fails?

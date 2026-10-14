@@ -1,0 +1,30 @@
+* Write an async function that returns the string "Hello World".
+* Write an async function that returns the sum of two numbers.
+* Create a Promise that resolves after two seconds and await its result.
+* Write an async function that calls another async function and returns its result.
+* Write an async function that handles a rejected Promise using try...catch.
+* Write a program that uses try...catch...finally with async/await.
+* Write an async function that fetches JSON data from an API using fetch().
+* Write an async function that checks response.ok before processing an API response.
+* Write an async function that fetches user details and handles network errors.
+* Write a program that executes three asynchronous tasks sequentially.
+* Write a program that executes three independent asynchronous tasks concurrently using Promise.all().
+* Write a program that collects both successful and failed results using Promise.allSettled().
+* Write a program that returns the first settled result using Promise.race().
+* Write a program that returns the first fulfilled result using Promise.any().
+* Write a program that processes an array sequentially using for...of and await.
+* Write a program that processes an array concurrently using map() and Promise.all().
+* Write a program that correctly handles asynchronous operations without using await inside forEach().
+* Write a function that retries a failed asynchronous operation up to three times.
+* Write a retry function that uses exponential backoff between attempts.
+* Write an async function that times out if a Promise takes longer than a specified duration.
+* Write a function that cancels a Fetch API request using AbortController.
+* Write an async function that fetches data from two APIs and combines the results.
+* Write a program that handles partial failures when fetching data from multiple APIs.
+* Write an asynchronous function that processes a list of records with a maximum concurrency of five.
+* Write a function that prevents duplicate concurrent API calls for the same resource.
+* Write a program that implements an asynchronous task queue.
+* Write an async function that paginates through an API until no more records are available.
+* Write a program that processes each record independently and continues when one record fails.
+* Write an async function that validates API data before returning it to the caller.
+* Build an order-processing workflow using async/await with validation, payment handling, error recovery, and cleanup.

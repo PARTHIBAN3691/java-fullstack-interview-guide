@@ -1,0 +1,30 @@
+* Your company has a large JavaScript application and wants to migrate to TypeScript incrementally. How would you plan the migration?
+* Your TypeScript application needs to consume a legacy JavaScript utility library without type definitions. How would you integrate it safely?
+* A JavaScript file is imported into TypeScript, but its parameters are inferred as any. How would you improve the type information?
+* Your team wants to enable type checking in JavaScript without renaming all files. How would you configure JSDoc and TypeScript?
+* A third-party library works in JavaScript but causes TypeScript compilation errors. How would you investigate the problem?
+* Your application uses a CommonJS package, but a default import fails at runtime. How would you troubleshoot the issue?
+* A library has incorrect declaration files that do not match its runtime behavior. How would you correct or work around the mismatch?
+* Your team wants JavaScript and TypeScript modules to share common interfaces. How would you organize the types?
+* A JavaScript library dynamically adds properties to objects. How would you model its API in TypeScript?
+* Your project needs to support both CommonJS and ECMAScript modules. How would you configure the build and package exports?
+* Your JavaScript application uses callbacks extensively. How would you add JSDoc types without rewriting the implementation?
+* A JavaScript library exposes a constructor function with static methods. How would you define its declaration file?
+* Your application consumes a library whose package.json has different entry points for Node.js and browsers. How would you configure module resolution?
+* A TypeScript application compiles successfully but fails when importing a JavaScript module in Node.js. What would you check?
+* Your legacy JavaScript project contains many implicit any values. How would you prioritize and resolve the most important typing issues?
+* A JavaScript module exports a function using module.exports, but TypeScript cannot import it as expected. How would you resolve the interoperability issue?
+* Your team wants to expose a TypeScript SDK to JavaScript consumers. How would you package the SDK and its declaration files?
+* A JavaScript library returns different object shapes depending on its input. How would you represent this behavior in TypeScript?
+* You need to integrate an untyped JavaScript API into a strict TypeScript application. How would you isolate and validate the untyped boundary?
+* Your team is migrating files from JavaScript to TypeScript one module at a time. How would you manage imports and shared types during the transition?
+* A JavaScript dependency uses prototype-based inheritance. How would you represent its classes and instances in TypeScript?
+* A library's runtime export differs between development and production builds. How would you investigate package entry points and module resolution?
+* Your application needs to consume a JavaScript package with incomplete support for named exports. How would you design a stable wrapper?
+* You need to add TypeScript support to an existing JavaScript library without changing its runtime implementation. How would you publish type declarations?
+* A developer uses @ts-ignore to silence interoperability errors throughout the project. How would you replace this approach with safer solutions?
+* Your application imports JSON configuration files alongside JavaScript modules. Which TypeScript compiler settings and runtime considerations would you check?
+* A JavaScript module uses dynamic imports, and the imported module has a complex type. How would you type the asynchronous loading process?
+* Your team wants to migrate from JSDoc-based checking to native TypeScript. How would you preserve existing documentation and behavior?
+* A dependency exposes separate type definitions for different module formats. How would you verify that TypeScript selects the correct declarations?
+* How would you establish coding standards for JavaScript and TypeScript interoperability across a large enterprise codebase?

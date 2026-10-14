@@ -1,0 +1,30 @@
+* How do you build an HTTP server using the Node.js cluster module?
+* How can you create one worker per available CPU core?
+* How do you configure the number of worker processes?
+* How does Node.js distribute incoming connections among workers?
+* What is the difference between round-robin scheduling and operating-system scheduling in clustering?
+* What is the purpose of the cluster.schedulingPolicy property?
+* When would you use cluster.SCHED_RR?
+* What is the purpose of the cluster.SCHED_NONE setting?
+* How do you handle the exit event when a worker crashes?
+* How can you automatically restart a failed worker?
+* How do you prevent endless worker-restart loops?
+* How can the primary process monitor worker health?
+* How do you gracefully shut down a worker?
+* How can you handle SIGTERM and SIGINT in a clustered application?
+* How do you share configuration between the primary process and workers?
+* How can workers communicate with each other?
+* What is the difference between worker.send() and process.send()?
+* How can you share application state across workers?
+* Why is in-memory session storage problematic in a clustered application?
+* How can Redis help maintain shared sessions across workers?
+* How do you implement sticky sessions in a clustered application?
+* What problems can arise when requests from the same client reach different workers?
+* How can you log the worker ID for each incoming request?
+* How do you handle uncaught exceptions in worker processes?
+* What is the difference between cluster and child_process.fork()?
+* How can you monitor CPU and memory usage for each worker?
+* How do environment variables behave across worker processes?
+* How can you implement graceful rolling restarts for workers?
+* What happens to active connections when a worker exits?
+* How do you test whether requests are distributed across multiple workers?

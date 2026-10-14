@@ -1,0 +1,35 @@
+* A Java Spring Boot pipeline takes 40 minutes to complete, and developers frequently bypass tests to deliver urgent fixes. How would you identify bottlenecks and optimize the pipeline without weakening quality?
+* A build passes in the test environment, but production fails because a different artifact was deployed. How would you redesign artifact management and promotion?
+* Multiple Jenkins jobs compete for a limited number of build agents, causing long queue times. How would you investigate capacity constraints and improve throughput?
+* A self-hosted GitHub Actions runner executes an untrusted pull request and is suspected of being compromised. How would you contain the incident and secure subsequent pipeline executions?
+* A GitLab CI/CD pipeline exposes a deployment token in job logs. What immediate remediation and long-term secret-management controls would you implement?
+* An Azure Pipeline deploys an application to the wrong environment because of incorrect variable-group configuration. How would you recover and prevent recurrence?
+* An AWS CodePipeline execution remains stuck because an approval action was not completed, delaying a critical release. How would you investigate the issue and improve the approval workflow?
+* A Jenkins pipeline succeeds on one agent but fails on another because of differences in Java versions and installed tools. How would you make the build reproducible?
+* A shared pipeline template change breaks builds across hundreds of repositories. How would you contain the impact and introduce safer template versioning?
+* A dependency cache returns outdated libraries, causing inconsistent build results across branches. How would you diagnose the issue and redesign cache invalidation?
+* Parallel test execution reduces build time but causes intermittent failures because tests share database state. How would you isolate the tests and preserve reliable results?
+* Several pipelines attempt to deploy different versions of the same service to production simultaneously. How would you prevent deployment races and establish safe concurrency controls?
+* A production approval gate delays routine releases, but removing it would violate compliance requirements. How would you improve release speed while maintaining appropriate controls?
+* An urgent security patch must be released outside the normal approval process. How would you design an emergency-release workflow with traceability and post-release review?
+* A pipeline uses long-lived cloud credentials that are accidentally exposed in a log. How would you contain the exposure and redesign authentication using short-lived credentials?
+* A malicious contributor modifies a pipeline definition to exfiltrate secrets during a pull-request build. How would you detect, contain, and prevent this attack?
+* A pipeline rebuilds the application separately for development, staging, and production, producing different artifacts from the same source revision. How would you redesign artifact promotion?
+* A security scanner reports a critical vulnerability after the application has already been deployed to production. How would you determine exposure and coordinate remediation?
+* A deployment succeeds in one region but fails halfway through deployment in another region. How would you restore a consistent service state and improve recovery?
+* A database migration succeeds, but the new application version fails and the old application version cannot operate with the new schema. How would you design a safer deployment strategy?
+* A canary deployment introduces a latency regression, but the pipeline reports success because it checks only application availability. How would you improve automated release validation?
+* A shared artifact repository becomes unavailable, blocking builds and production deployments. How would you restore delivery capability and improve resilience?
+* Pipeline execution costs have increased significantly because every repository runs all tests for every change. How would you introduce selective testing and caching without missing important regressions?
+* A deployment pipeline reports success, but users experience errors immediately after release. How would you improve post-deployment verification and rollback decisions?
+* A team has migrated to Pipeline as Code, but developers frequently duplicate pipeline definitions and apply inconsistent security controls. How would you establish reusable templates and governance?
+* An artifact repository cleanup process deletes an older version still required for production rollback. How would you recover and improve retention policies?
+* A release requires three microservices to be deployed in sequence, but the second service fails after the first service has already been updated. How would you manage compatibility, recovery, and orchestration?
+* A CI/CD platform experiences a source-control outage during an active release. How would you decide whether to pause, continue, or recover the deployment?
+* A pipeline is repeatedly triggered by commits generated by the pipeline itself, causing an execution loop. How would you identify and prevent recursive triggers?
+* A production deployment is initiated by a user who has permission to run pipelines but should not have production access. How would you correct the authorization model?
+* A pipeline migration from Jenkins to GitHub Actions changes environment variables and dependency-resolution behavior, causing intermittent failures. How would you validate parity and complete the migration safely?
+* Build agents retain files and credentials from previous jobs, creating a risk of cross-job data leakage. How would you redesign agent isolation and cleanup?
+* Management wants fully automated production deployments, but the application has strict availability and regulatory requirements. How would you establish risk-based gates and measurable release criteria?
+* A pipeline's deployment stage succeeds, but the application fails its readiness checks several minutes later. How would you implement delayed verification and automated recovery?
+* A team measures pipeline performance only by total execution time, ignoring queue time, failure rate, and developer feedback delays. How would you establish a more useful measurement strategy?

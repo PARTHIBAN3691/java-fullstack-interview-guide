@@ -1,0 +1,30 @@
+* A Cloud Build pipeline successfully builds a Docker image but fails when pushing it to Artifact Registry with a permission-denied error. How would you investigate and resolve it?
+* A developer can pull an image locally but a GKE workload cannot pull the same image. How would you troubleshoot the issue?
+* A Cloud Run deployment fails because the container image cannot be accessed. How would you identify whether the problem is IAM, image location, or image configuration?
+* A production deployment fails after an image tag was updated unexpectedly. How would you investigate the change and prevent recurrence?
+* A team accidentally deletes an image version needed for rollback. How would you assess recovery options and improve retention policies?
+* A Java application build fails because Maven cannot download an internal dependency from Artifact Registry. How would you troubleshoot repository configuration and authentication?
+* A CI/CD pipeline running outside Google Cloud needs to publish container images securely. How would you design its authentication?
+* A new GKE cluster in another project cannot access images stored in a shared Artifact Registry repository. How would you configure access securely?
+* Container image downloads have become slow after the organization expanded into multiple regions. How would you investigate and improve performance?
+* Artifact Registry storage costs have increased significantly over several months. How would you identify the main contributors and reduce costs safely?
+* A cleanup policy removed older images that were still needed for rollback. How would you redesign the policy?
+* A security scan identifies a critical vulnerability in an image that is scheduled for production deployment. What steps would you take?
+* A critical vulnerability is discovered in a container image already running in production. How would you coordinate remediation, rebuilding, and redeployment?
+* Developers are publishing images with the same mutable tag, causing inconsistent deployments. How would you change the release process?
+* A production deployment pulls a different image than the one tested in staging. How would you investigate the discrepancy?
+* An external CI/CD platform can authenticate to Google Cloud but receives an authorization error when pushing images. How would you isolate the cause?
+* A microservices organization wants to centralize all Docker images and Java dependencies in one repository strategy. How would you structure Artifact Registry?
+* A team wants to cache public Maven dependencies to reduce external network dependency. How would you evaluate and configure remote repositories?
+* An application build downloads an unexpected package version from an upstream repository. How would you investigate and prevent dependency substitution?
+* A deployment pipeline needs to promote an identical image from development to production. How would you implement promotion without rebuilding?
+* A compliance audit asks who deleted a specific image and when it happened. How would you locate the relevant evidence?
+* A newly created service account can read one repository but cannot read another in the same organization. How would you compare the effective permissions?
+* An organization needs to migrate container images from an older registry to Artifact Registry while keeping deployments available. How would you plan the migration?
+* A repository is available in one Google Cloud project but inaccessible from another project despite apparently correct IAM roles. How would you troubleshoot it?
+* A GKE deployment intermittently fails when pulling a large image during a rollout involving many replicas. How would you investigate the cause?
+* A team wants to ensure that only approved images can reach production. How would you combine Artifact Registry, vulnerability scanning, and deployment controls?
+* A build pipeline exposes a service account key used to upload images. What immediate and long-term security actions would you take?
+* A company requires long-term retention of release images but wants development images deleted quickly. How would you implement different retention strategies?
+* A team uses image tags to identify releases, but auditors require proof of the exact artifact deployed. How would you improve traceability?
+* Artifact Registry API calls start failing after a project configuration change. How would you investigate API enablement, permissions, quotas, and service availability?

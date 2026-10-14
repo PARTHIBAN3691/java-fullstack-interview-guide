@@ -1,0 +1,30 @@
+* Write a Kubernetes Pod YAML that runs a Spring Boot application using a container image.
+* Create a Deployment YAML that runs three replicas of a Java application.
+* Write a Service YAML that exposes a Spring Boot application internally on port 8080.
+* Create a ConfigMap YAML and reference it from a Spring Boot Deployment.
+* Write a Secret YAML and configure a Deployment to consume its values as environment variables.
+* Configure readiness, liveness, and startup probes for a Spring Boot application.
+* Write a Deployment YAML with CPU and memory requests and limits.
+* Create a Namespace YAML and deploy an application into that namespace.
+* Write a PersistentVolumeClaim YAML for an application that needs persistent storage.
+* Create a Job manifest that executes a one-time Java batch process.
+* Write a CronJob manifest that runs a scheduled Java batch application.
+* Create a DaemonSet YAML that runs a monitoring agent on eligible worker nodes.
+* Write a StatefulSet manifest for an application that requires stable network identities and persistent storage.
+* Create an Ingress manifest that routes HTTP requests to a Spring Boot Service.
+* Write a HorizontalPodAutoscaler manifest that scales a Deployment based on CPU utilization.
+* Write a NetworkPolicy that restricts incoming traffic to an application Pod.
+* Create a ServiceAccount and RoleBinding configuration for least-privilege access within a namespace.
+* Write a Deployment manifest that uses a non-root security context.
+* Configure a rolling update strategy with maxSurge and maxUnavailable.
+* Write a Deployment manifest with node affinity and topology spread constraints.
+* Create a PodDisruptionBudget for a highly available application.
+* Write a manifest that mounts a ConfigMap as a volume in a Spring Boot container.
+* Create a Deployment that uses a private container registry image pull secret.
+* Write YAML manifests for two Spring Boot microservices communicating through Kubernetes Services.
+* Write a Kubernetes manifest that configures graceful termination for a Java application.
+* Write a kubectl command sequence to deploy an application, inspect its Pods, and verify rollout status.
+* Write shell commands to diagnose a Pod in CrashLoopBackOff using logs, events, and container status.
+* Write a shell script that checks whether all replicas in a Deployment are available.
+* Write a shell script that updates a Deployment image, waits for rollout completion, and initiates rollback if necessary.
+* Create a complete Kubernetes deployment configuration for a production Spring Boot service with probes, resource limits, secrets, a Service, and a rolling update strategy.

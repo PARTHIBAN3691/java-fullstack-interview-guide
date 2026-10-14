@@ -1,0 +1,30 @@
+* How would you create an Azure Key Vault and configure it for a Spring Boot application?
+* How do you retrieve a secret from Azure Key Vault using the Azure SDK for Java?
+* How do you configure SecretClient in a Java application?
+* What is the purpose of DefaultAzureCredential in the Azure Identity library?
+* How does DefaultAzureCredential select an authentication method in local development and production?
+* How would you configure a Spring Boot application to load database credentials from Azure Key Vault?
+* How do you integrate Azure Key Vault with Spring Cloud Azure?
+* How do you configure Azure Key Vault properties in application.yml?
+* How do you authenticate a Java application to Key Vault using a managed identity?
+* How do you configure a user-assigned managed identity for a Java application?
+* How do you grant a managed identity permission to read secrets from Key Vault?
+* How do you configure Azure RBAC roles for Key Vault secrets?
+* How do you troubleshoot a 403 Forbidden response when retrieving a secret?
+* How do you handle secret-not-found errors in a Java application?
+* How do you configure different Key Vault instances for Dev, QA, and Production?
+* How would you prevent secrets from appearing in application logs?
+* How do you retrieve a specific version of a secret from Key Vault?
+* How do you handle secret expiration in a Spring Boot application?
+* How would you implement secret rotation without restarting the application?
+* How do you cache secrets in a Java application, and what risks should you consider?
+* How do you configure Key Vault firewall rules and private endpoints?
+* How do you securely access Key Vault from Azure App Service?
+* How do you securely access Key Vault from Azure Kubernetes Service?
+* How would you use Key Vault to store certificates for a Java application?
+* How do you use Key Vault keys for cryptographic operations?
+* How do you enable soft delete and purge protection?
+* How do you monitor secret access using Azure Monitor and diagnostic settings?
+* How do you configure audit logging for Key Vault access?
+* How do you manage Key Vault resources using Terraform or Bicep?
+* How do you securely inject Key Vault secrets into an Azure DevOps deployment pipeline?

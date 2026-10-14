@@ -1,0 +1,30 @@
+* Explain the complete lifecycle of a JPA entity from creation to database persistence.
+* How does the JPA persistence context work internally?
+* What is the difference between transient, managed, detached, and removed entity states?
+* How does dirty checking work in Hibernate?
+* What is the difference between persist(), merge(), update(), and save()?
+* How does Spring Data JPA determine when SQL statements should be executed?
+* What happens when save() is called multiple times for the same managed entity within a transaction?
+* How do transaction propagation and isolation levels affect Spring Data JPA operations?
+* What are the differences between REQUIRED, REQUIRES_NEW, and NESTED transaction propagation?
+* How do rollback rules work when checked and unchecked exceptions occur?
+* Why might @Transactional fail when a transactional method is invoked from another method in the same class?
+* How would you prevent lost updates in a concurrent transaction scenario?
+* How does optimistic locking detect concurrent modifications?
+* What are the trade-offs between optimistic and pessimistic locking under high contention?
+* How would you diagnose and resolve deadlocks involving multiple database transactions?
+* How does Hibernate's first-level cache differ from its second-level cache?
+* What is the difference between entity caching and query caching?
+* How would you optimize a repository method that loads thousands of entities?
+* How would you implement efficient batch inserts and updates using Spring Data JPA?
+* What causes the N+1 query problem, and how would you systematically identify and eliminate it?
+* How do entity graphs, fetch joins, batch fetching, and projections differ in performance and use cases?
+* What problems can occur when pagination is combined with collection fetch joins?
+* How would you implement keyset pagination for a large dataset?
+* How would you design dynamic search queries using Specifications or the Criteria API?
+* How would you implement a custom repository using EntityManager?
+* What are the implications of bulk update and delete queries on the persistence context?
+* How would you manage database schema migrations alongside Spring Data JPA using Flyway or Liquibase?
+* How would you design a multi-tenant application using Spring Data JPA?
+* How would you handle read replicas and separate read/write data sources in a Spring Boot application?
+* How would you troubleshoot high database latency, excessive SQL generation, and connection-pool exhaustion in a production application?

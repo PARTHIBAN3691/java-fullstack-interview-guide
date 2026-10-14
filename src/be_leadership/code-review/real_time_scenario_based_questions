@@ -1,0 +1,30 @@
+* A developer submits a pull request with 1,500 lines of changes. How would you handle the review?
+* A senior developer disagrees with your code review comment and refuses to make the change. What would you do?
+* A junior developer repeatedly submits code with the same quality issues. How would you address the problem?
+* A production bug was introduced by code that received your approval. How would you respond?
+* A critical security vulnerability is identified in a pull request just before release. What would you do?
+* A developer asks you to approve a pull request without reviewing it because the deadline is approaching. How would you respond?
+* Two reviewers provide conflicting recommendations on the same implementation. How would you resolve the disagreement?
+* A pull request passes all automated tests but contains a serious architectural issue. Would you approve it?
+* A developer introduces a new library without evaluating licensing, security, or maintenance risks. How would you handle it?
+* A code review reveals hardcoded credentials in a configuration file. What immediate actions would you take?
+* A developer changes shared business logic and unintentionally breaks another team's workflow. How would you address the issue?
+* A pull request contains complex code that works correctly but is difficult to maintain. How would you guide the developer?
+* Your team spends too much time reviewing minor formatting issues. How would you improve the process?
+* A high-performing developer consistently ignores review feedback. How would you manage the situation?
+* A pull request introduces a database query that may cause a production performance issue. How would you assess the risk?
+* A developer uses parallel streams in a shared service without considering thread safety. How would you review the change?
+* A proposed refactoring changes public method signatures used by several downstream applications. How would you evaluate it?
+* A pull request introduces a retry mechanism that may duplicate payment transactions. What would you check?
+* A developer adds extensive unit tests, but the tests do not cover important failure scenarios. How would you respond?
+* A reviewer repeatedly delays approvals, blocking the team's delivery pipeline. How would you address the bottleneck?
+* A new team member submits code that follows different conventions from the existing codebase. How would you guide them?
+* A pull request modifies authentication logic and introduces a possible authorization bypass. What checks would you perform?
+* A production hotfix must be reviewed within minutes. How would you perform a risk-based review?
+* A developer requests approval for code with known technical debt that is not immediately harmful. How would you decide?
+* A change introduces a new microservice dependency that could create a circular service dependency. How would you assess it?
+* Your code review identifies a possible memory leak, but the developer cannot reproduce it locally. What would you do?
+* A pull request changes an event schema consumed by multiple services. How would you verify compatibility?
+* A team repeatedly fixes the same code review findings across multiple pull requests. How would you prevent recurrence?
+* Management asks you to reduce review time without lowering code quality. What process changes would you introduce?
+* A developer takes review comments personally and becomes disengaged. How would you handle the conversation?

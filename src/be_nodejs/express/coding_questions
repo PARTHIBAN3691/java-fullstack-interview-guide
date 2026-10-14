@@ -1,0 +1,30 @@
+* Write an Express application that starts a server on port 3000 and returns a welcome message.
+* Create GET, POST, PUT, and DELETE endpoints for a user resource.
+* Write an endpoint that extracts an employee ID from route parameters.
+* Create an endpoint that accepts pagination parameters and returns paginated results.
+* Write middleware that logs the HTTP method, URL, and request duration.
+* Create custom middleware that adds a correlation ID to every request.
+* Write middleware that validates whether a required request header exists.
+* Implement centralized error-handling middleware for an Express application.
+* Create a custom 404 middleware for unmatched routes.
+* Write an asynchronous route handler that fetches data from a database and handles errors.
+* Create an Express router for employee-related endpoints.
+* Implement request-body validation for a user registration API.
+* Write an API that returns consistent JSON responses for success and failure cases.
+* Implement pagination, filtering, and sorting for a product API.
+* Create authentication middleware that validates a JWT.
+* Implement role-based authorization middleware for administrator-only endpoints.
+* Write an Express API that hashes a password before saving a user.
+* Create an endpoint that supports file uploads with file-size and file-type restrictions.
+* Implement rate limiting for an Express API.
+* Write an Express API that connects to a database and performs CRUD operations.
+* Create middleware that measures request processing time and logs slow requests.
+* Implement an API endpoint that calls an external service using async/await and handles timeouts.
+* Write a health-check endpoint that verifies application and database availability.
+* Implement an idempotency middleware for a payment creation endpoint.
+* Create a graceful-shutdown handler that stops accepting new requests and closes the database connection.
+* Write a middleware that prevents requests with unsupported content types.
+* Implement API versioning using separate routers for v1 and v2.
+* Write an endpoint that streams a large file to the client without loading the entire file into memory.
+* Create unit tests for Express endpoints using a testing framework and HTTP request testing library.
+* Build a complete Express REST API with routing, controllers, services, validation, authentication, and centralized error handling.

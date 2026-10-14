@@ -1,0 +1,20 @@
+* Explain the architecture of Kinesis Data Streams, including producers, shards, and consumers.
+* How does the partition key determine which shard receives a record?
+* What happens when multiple records use the same partition key?
+* What are the differences between provisioned and on-demand capacity modes?
+* How do you calculate the required number of shards for a stream?
+* What are the write and read throughput limits of a shard?
+* What is shard iterator expiration, and how should a consumer handle it?
+* What is the difference between `GetRecords` and `SubscribeToShard`?
+* How does enhanced fan-out improve consumer throughput?
+* How does the Kinesis Client Library manage shard processing and checkpointing?
+* What is the purpose of a lease table in KCL?
+* How do checkpointing and sequence numbers help resume stream processing?
+* How does Kinesis handle duplicate records, and why is idempotent processing important?
+* How can you implement retry logic for throttling exceptions in a Java Kinesis producer?
+* What is the difference between `PutRecord` and `PutRecords`?
+* How do you handle partial failures returned by the `PutRecords` API?
+* How can you configure IAM permissions for Java applications that publish to or consume from Kinesis?
+* How does Kinesis Data Firehose deliver data to Amazon S3, Amazon Redshift, or OpenSearch?
+* How can CloudWatch metrics help monitor Kinesis stream performance?
+* How can you integrate Kinesis Data Streams with Lambda while handling failed records and retries?

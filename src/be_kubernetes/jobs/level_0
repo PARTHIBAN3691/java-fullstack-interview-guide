@@ -1,0 +1,30 @@
+* What is a Job in Kubernetes?
+* Why are Jobs used in Kubernetes?
+* What is the difference between a Job and a Deployment?
+* What is the difference between a Job and a CronJob?
+* What is a Kubernetes batch workload?
+* What is the purpose of the completions field in a Job?
+* What is the purpose of the parallelism field in a Job?
+* What is the purpose of the backoffLimit field in a Job?
+* What is the purpose of the activeDeadlineSeconds field in a Job?
+* What is the purpose of the restartPolicy field in a Job's Pod template?
+* Which restartPolicy values are supported for Pods managed by Jobs?
+* What happens when a Job completes successfully?
+* What happens when a Job's container exits with a non-zero status?
+* How do you create a Job using a YAML manifest?
+* Which kubectl command lists Jobs in a namespace?
+* How do you check the status of a Job?
+* How do you view the Pods created by a Job?
+* How do you view logs from a Job's Pod?
+* How do you describe a Job using kubectl?
+* What are the common Job status conditions?
+* What is the difference between active, succeeded, and failed Job Pods?
+* What is a completion mode in Kubernetes Jobs?
+* What is the difference between Indexed and NonIndexed Jobs?
+* What is the purpose of the ttlSecondsAfterFinished field?
+* How do you delete a completed Job?
+* Can a Job execute a Java application?
+* How do you pass environment variables to a Job container?
+* How do you configure resource requests and limits for a Job?
+* What is a suspended Job?
+* What happens if you delete a Job while its Pods are running?

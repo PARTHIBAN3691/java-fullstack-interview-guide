@@ -1,0 +1,30 @@
+* How do allowJs and checkJs work together in a mixed JavaScript and TypeScript project?
+* What is the difference between checkJs and the @ts-check directive?
+* How can you gradually migrate a JavaScript project to TypeScript?
+* How do you configure TypeScript to compile both .js and .ts files?
+* How do you prevent JavaScript files from being emitted during compilation?
+* How does TypeScript infer types from JSDoc annotations?
+* How do you define a generic function in JavaScript using JSDoc?
+* How do you document optional parameters and default values using JSDoc?
+* How do you describe object shapes using JSDoc typedef declarations?
+* How do you define a reusable type using @typedef in JavaScript?
+* How do you reference a TypeScript type from a JavaScript file?
+* How do you use JSDoc import types to reference types without importing runtime values?
+* What is the difference between import type and a normal import?
+* How do declaration files describe the public API of a JavaScript library?
+* How do you create a declaration file for a third-party JavaScript library?
+* What is the difference between ambient module declarations and module augmentation?
+* How do you declare types for a JavaScript module that has no type definitions?
+* How do you use the @types packages from DefinitelyTyped?
+* What happens when a JavaScript library has incorrect or outdated type definitions?
+* How do CommonJS exports differ from ES module exports?
+* How do you configure TypeScript to work with CommonJS modules?
+* How does esModuleInterop affect imports from CommonJS packages?
+* What is the difference between esModuleInterop and allowSyntheticDefaultImports?
+* How do package.json fields such as main, module, and types affect interoperability?
+* What is the purpose of the types and exports fields in package.json?
+* How does TypeScript resolve module imports in Node.js projects?
+* What problems can occur when importing JavaScript files using incompatible module systems?
+* How do you use JavaScript classes from TypeScript code?
+* How do you expose a TypeScript function for use in a JavaScript module?
+* How do you test interoperability between JavaScript and TypeScript modules?

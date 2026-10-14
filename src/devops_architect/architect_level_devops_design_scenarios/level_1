@@ -1,0 +1,119 @@
+**Enterprise CI/CD Platform**
+* How would you design reusable pipeline templates while allowing teams to customize build and test stages?
+* How would you isolate untrusted pull-request builds from privileged deployment pipelines?
+* How would you design artifact promotion across development, staging, and production without rebuilding?
+* How would you manage pipeline concurrency, queueing, and runner capacity across hundreds of teams?
+
+**Zero-Downtime Deployment Architecture**
+* How would you handle database schema changes when old and new application versions run simultaneously?
+* How would you implement canary analysis using error rates, latency, and business metrics?
+* How would you coordinate traffic shifting, readiness checks, and automatic rollback?
+* How would you maintain compatibility between API consumers and services during phased releases?
+
+**Multi-Region Deployment Platform**
+* How would you design global traffic routing with regional health checks and failover?
+* How would you handle data replication lag during regional failover?
+* How would you deploy a release progressively across regions while limiting blast radius?
+* How would you avoid split-brain behavior in a multi-region stateful system?
+
+**Kubernetes Platform for Multiple Teams**
+* How would you enforce namespace isolation, quotas, RBAC, and network policies at scale?
+* How would you design cluster tenancy for teams with different security and availability requirements?
+* How would you implement admission policies to prevent privileged containers and unsafe workloads?
+* How would you handle noisy-neighbor problems and resource contention in shared clusters?
+
+**Secure DevSecOps Pipeline**
+* How would you define risk-based security gates without making every pipeline unnecessarily slow?
+* How would you manage vulnerabilities in base images and third-party dependencies?
+* How would you prevent secrets from leaking through build logs, artifacts, or pipeline variables?
+* How would you establish artifact provenance and verify image signatures before deployment?
+
+**GitOps-Based Deployment Architecture**
+* How would you structure Git repositories for application code, shared platform configuration, and environment-specific manifests?
+* How would you handle configuration drift and failed reconciliation in production?
+* How would you prevent unauthorized changes to protected environment branches?
+* How would you promote a release across environments while retaining a complete audit trail?
+
+**Enterprise Observability Platform**
+* How would you define consistent telemetry standards across teams and technology stacks?
+* How would you manage high-cardinality metric labels and their associated storage costs?
+* How would you correlate traces, logs, and metrics using common service identifiers?
+* How would you establish actionable alerting while reducing alert fatigue?
+
+**Centralized Logging for Microservices**
+* How would you design log ingestion that can absorb traffic spikes without losing critical events?
+* How would you standardize structured logging and correlation IDs across services?
+* How would you implement retention tiers for security, operational, and debugging logs?
+* How would you handle sensitive fields, log redaction, and access control in a centralized platform?
+
+**Highly Available Production Platform**
+* How would you design redundancy across compute, networking, storage, and application dependencies?
+* How would you determine which components require synchronous versus asynchronous failover?
+* How would you prevent cascading failures during dependency outages?
+* How would you use load shedding, circuit breakers, and bulkheads to protect platform availability?
+
+**Disaster Recovery for Cloud Workloads**
+* How would you design backup and replication policies for workloads with different RTO and RPO targets?
+* How would you automate recovery of networking, identity, infrastructure, and application dependencies?
+* How would you validate backup integrity and restore consistency?
+* How would you test regional disaster recovery without disrupting normal production traffic?
+
+**Multi-Cloud DevOps Strategy**
+* How would you create reusable infrastructure modules without forcing every cloud into an identical abstraction?
+* How would you manage identity, policy, networking, and secrets across multiple cloud providers?
+* How would you standardize monitoring and deployment workflows across cloud-native services?
+* How would you evaluate the operational cost of portability against provider-specific optimization?
+
+**Internal Developer Platform**
+* How would you design a self-service workflow for creating a production-ready microservice?
+* How would you provide paved roads while permitting justified exceptions?
+* How would you integrate service catalogs, templates, CI/CD, observability, and access requests?
+* How would you prevent platform abstractions from becoming bottlenecks for engineering teams?
+
+**Scalable Container Platform**
+* How would you scale Kubernetes workloads during sudden demand spikes?
+* How would you handle pod placement when CPU, memory, affinity, and availability-zone constraints conflict?
+* How would you design cluster upgrades without interrupting critical workloads?
+* How would you manage image pull latency, registry availability, and image caching?
+
+**Automated Infrastructure Provisioning**
+* How would you organize infrastructure modules for reuse across accounts, environments, and regions?
+* How would you detect and remediate infrastructure drift without overwriting legitimate changes?
+* How would you handle concurrent Terraform state operations and failed applies?
+* How would you implement policy-as-code and approval workflows for infrastructure changes?
+
+**Secure Secrets-Management Architecture**
+* How would you design dynamic secrets for applications accessing databases and messaging systems?
+* How would you rotate credentials without requiring a disruptive application restart?
+* How would you manage secret access for workloads running across Kubernetes and cloud environments?
+* How would you detect and respond to leaked or unexpectedly accessed credentials?
+
+**Self-Healing Production Platform**
+* How would you distinguish transient failures from persistent failures before triggering remediation?
+* How would you design automated remediation with retry limits, cooldowns, and escalation paths?
+* How would you prevent autoscaling and restart loops from amplifying an outage?
+* How would you make remediation actions observable, auditable, and reversible?
+
+**Low-Latency Deployment Architecture**
+* How would you reduce build and test duration across a large monorepo?
+* How would you use dependency graphs to execute only the necessary pipeline stages?
+* How would you optimize deployment time while preserving mandatory security and quality checks?
+* How would you distinguish queue time, build time, approval time, and rollout time in deployment metrics?
+
+**Cloud Cost Optimization Strategy**
+* How would you implement cost allocation across teams, applications, environments, and shared services?
+* How would you identify workloads suitable for reserved capacity, savings plans, or spot instances?
+* How would you optimize Kubernetes requests and limits using observed utilization?
+* How would you establish automated cost anomaly detection and accountable remediation?
+
+**CI/CD for Regulated Financial Applications**
+* How would you enforce segregation of duties without creating excessive release delays?
+* How would you retain evidence for source changes, approvals, testing, artifact provenance, and deployment?
+* How would you design production releases that require multiple approvals and emergency exceptions?
+* How would you protect non-production environments containing masked or synthetic financial data?
+
+**Enterprise DevOps Operating Model**
+* How would you define ownership boundaries between central platform teams and application teams?
+* How would you establish service-level objectives and error budgets across an enterprise?
+* How would you measure lead time, deployment frequency, change failure rate, and recovery time meaningfully?
+* How would you manage exceptions to enterprise standards without fragmenting the platform?

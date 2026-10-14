@@ -1,0 +1,21 @@
+
+* Write a Java program that demonstrates how method calls create and remove stack frames.
+* Write a Java program that demonstrates nested method calls and prints the call sequence.
+* Write a Java program that causes `StackOverflowError` through infinite recursion.
+* Modify the preceding program to use a valid base condition and terminate recursion safely.
+* Write a recursive factorial program and explain how each invocation uses a stack frame.
+* Implement factorial iteratively and compare it with the recursive implementation.
+* Write a recursive Fibonacci program and explain its stack usage and performance limitations.
+* Write a Java program that traverses a binary tree recursively.
+* Rewrite the binary-tree traversal using an explicit `Deque` stack instead of recursion.
+* Write a Java program that detects cycles in an object graph to prevent infinite recursive traversal.
+* Write a Java program demonstrating how recursive `toString()` methods can cause `StackOverflowError`.
+* Write a Java program that prints a stack trace using `Thread.currentThread().getStackTrace()`.
+* Write a Java program that catches and reports `StackOverflowError` for a controlled demonstration.
+* Write a Java program that starts multiple platform threads and observes the effect of thread count and stack-size configuration.
+* Write a Java program that creates a large number of nested method calls and compare the behavior under different `-Xss` settings.
+* Write a Java program that uses an explicit stack to evaluate a deeply nested arithmetic expression.
+* Write a Java program that compares recursive and iterative approaches for processing a deeply nested structure.
+* Write a Java program that uses `ThreadMXBean` to inspect thread counts and obtain stack traces for live threads.
+* Write a Java program that demonstrates exception propagation through nested method calls.
+* Design a stress test to evaluate stack usage, recursion depth, thread count, and failure behavior under different JVM configurations.

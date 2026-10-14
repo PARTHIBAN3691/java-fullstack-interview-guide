@@ -1,0 +1,30 @@
+* What is performance optimization in Node.js?
+* Why is performance optimization important in Node.js applications?
+* What is the Node.js event loop, and how does it affect performance?
+* What is the difference between synchronous and asynchronous operations?
+* Why should blocking operations be avoided in Node.js?
+* What is non-blocking I/O in Node.js?
+* What is the difference between CPU-bound and I/O-bound tasks?
+* How does asynchronous programming improve application performance?
+* What is the purpose of callbacks, promises, and async/await in performance optimization?
+* What is the difference between setTimeout(), setImmediate(), and process.nextTick()?
+* What is the purpose of the libuv thread pool?
+* Which operations use the libuv thread pool in Node.js?
+* What is the default size of the libuv thread pool?
+* What is the difference between concurrency and parallelism?
+* What are Worker Threads in Node.js?
+* What is the purpose of the cluster module?
+* What is the difference between Worker Threads and the cluster module?
+* What is memory management in Node.js?
+* What is garbage collection in Node.js?
+* What is the difference between heap memory and stack memory?
+* What is a memory leak in Node.js?
+* How can you check memory usage in Node.js?
+* What is the purpose of process.memoryUsage()?
+* What is caching, and how does it improve performance?
+* What is the difference between in-memory caching and distributed caching?
+* How does database connection pooling improve performance?
+* Why is pagination important for API performance?
+* What is response compression in Node.js?
+* How can you measure API response time in Express?
+* What tools can you use to profile a Node.js application?

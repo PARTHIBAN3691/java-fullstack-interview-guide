@@ -1,0 +1,30 @@
+* How do you mock a dependency of a service class using Mockito?
+* How do you inject mocks into the class under test?
+* How do you stub a method with multiple arguments?
+* How do you verify a method with specific arguments?
+* How do you verify the number of times a method was called?
+* What is the difference between times(), never(), once(), and atLeastOnce()?
+* How do you verify the order of method calls using Mockito?
+* What is InOrder in Mockito?
+* How do you mock a void method that throws an exception?
+* How do you use doAnswer() in Mockito?
+* What is thenThrow() and when would you use it?
+* How do you return different values for consecutive calls?
+* How do you use thenReturn() with multiple return values?
+* How do you use thenAnswer() in Mockito?
+* What is ArgumentCaptor?
+* When should you use ArgumentCaptor?
+* How do you capture method arguments using ArgumentCaptor?
+* What is the difference between ArgumentCaptor and argument matchers?
+* How do you verify that a repository method was called with the correct entity?
+* How do you mock a dependency that returns Optional?
+* How do you mock a dependency that returns a List?
+* How do you mock an exception scenario using Mockito?
+* How do you verify that a dependency was never called?
+* What is reset() in Mockito?
+* What is clearInvocations() in Mockito?
+* Why should resetting mocks generally be avoided?
+* How do you mock multiple dependencies in a service test?
+* How do you test a service class that depends on a repository and external API?
+* How do you use Mockito with JUnit 5?
+* What is MockitoExtension in JUnit 5?

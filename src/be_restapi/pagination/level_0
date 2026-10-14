@@ -1,0 +1,30 @@
+* What is pagination in REST APIs?
+* Why is pagination important in REST API design?
+* What problems can occur when an API returns all records in a single response?
+* What are the common pagination techniques used in REST APIs?
+* What is page-based pagination?
+* What is offset-based pagination?
+* What is limit-based pagination?
+* What is cursor-based pagination?
+* What is the difference between page number and page size?
+* What is the purpose of the limit parameter?
+* What is the purpose of the offset parameter?
+* How do you pass pagination parameters in a REST API request?
+* What is the difference between pagination and filtering?
+* What is the difference between pagination and sorting?
+* What is the purpose of a totalElements field in a paginated response?
+* What is the purpose of a totalPages field?
+* What is the purpose of a hasNext field?
+* What is the difference between zero-based and one-based page numbering?
+* What should an API return when the requested page is empty?
+* How should an API handle a negative page number?
+* How should an API handle a page size of zero?
+* What is the purpose of a default page size?
+* Why should an API enforce a maximum page size?
+* What is the difference between paginated and non-paginated endpoints?
+* How does pagination improve API response performance?
+* How does pagination reduce memory consumption?
+* How can you test pagination using Postman?
+* What is the relationship between pagination and database queries?
+* What is the purpose of the Spring Data Page interface?
+* What is the purpose of the Spring Data Pageable interface?

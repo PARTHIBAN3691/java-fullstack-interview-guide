@@ -1,0 +1,30 @@
+* Explain how the browser determines the containing block for absolutely positioned elements.
+* How do transforms, filters, and perspective affect the containing block of positioned descendants?
+* Explain the relationship between stacking contexts and the CSS painting order.
+* Why does increasing z-index sometimes fail to bring an element to the front?
+* How do opacity, transform, isolation, and positioned elements affect stacking contexts?
+* How does position: sticky determine its nearest scroll container?
+* Why can overflow: hidden or overflow: auto prevent sticky positioning from behaving as expected?
+* How do sticky elements behave when their containing block is shorter than the sticky element?
+* How does position: fixed behave inside transformed ancestors?
+* How do viewport-relative positioning and containing-block-relative positioning differ?
+* What is the difference between the visual viewport and the layout viewport for fixed elements?
+* How can nested stacking contexts cause complex layering bugs?
+* How does z-index behave for flex and grid items?
+* What is the difference between stacking order and DOM order?
+* How does the isolation: isolate property help control stacking contexts?
+* How can the inset, margin, and transform properties be combined to center an element?
+* What are the limitations of using absolute positioning for responsive layouts?
+* How can CSS anchor positioning help position an element relative to another element?
+* What problems can occur when using absolute positioning for dynamic content?
+* How would you design a modal and backdrop with predictable stacking behavior?
+* How would you manage multiple overlapping popovers, dropdowns, and tooltips?
+* How can positioned elements affect accessibility and keyboard navigation?
+* How can sticky headers obscure anchor targets when users navigate to page sections?
+* How would you debug a fixed element that jumps or changes position during scrolling?
+* How do mobile browser address bars affect fixed and sticky elements?
+* How can logical inset properties support right-to-left and vertical writing modes?
+* How would you build a robust notification system with multiple positioning layers?
+* What performance issues can arise from excessive use of transforms and positioned elements?
+* How can the CSS top layer differ from ordinary stacking contexts?
+* How would you establish a maintainable layering strategy for a large enterprise application?

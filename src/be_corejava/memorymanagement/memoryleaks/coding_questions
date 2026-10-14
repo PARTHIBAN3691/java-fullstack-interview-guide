@@ -1,0 +1,21 @@
+
+* Write a Java program that simulates a memory leak by continuously adding objects to a static `ArrayList`.
+* Modify the preceding program to release obsolete references and prevent unbounded memory growth.
+* Write a Java program that demonstrates how a static `HashMap` can retain objects even after the calling method completes.
+* Write a Java program that demonstrates a memory leak caused by a non-static inner class retaining its enclosing instance.
+* Write a Java program that demonstrates how failing to remove a `ThreadLocal` value in a thread pool can retain request-specific data.
+* Implement a thread-safe bounded cache that prevents unbounded object retention.
+* Write a Java program that registers and unregisters event listeners correctly to avoid memory leaks.
+* Write a Java program that uses `try-with-resources` to prevent resource leaks when reading a file.
+* Write a Java program that processes a large file line by line without retaining the entire file in memory.
+* Write a Java program that processes database records in batches and periodically clears the Hibernate persistence context.
+* Write a Java program that uses `WeakReference` to observe how an object can be reclaimed when no strong references remain.
+* Write a Java program that demonstrates why `WeakReference` should not automatically be considered a complete memory-leak solution.
+* Write a Java program that uses `MemoryMXBean` to monitor heap usage over time.
+* Write a Java program that uses `MemoryPoolMXBean` to inspect available memory pools and identify suspicious usage trends.
+* Write a Java program that registers for garbage collection notifications where supported and records collection statistics.
+* Write a Java program that creates a large object graph and explain how to inspect its retained heap size using a heap dump.
+* Write a Java program that uses an `ExecutorService` and demonstrates proper task cancellation and shutdown.
+* Write a Java program that implements a cache with expiration and maximum-size eviction.
+* Write a Java program that simulates repeated request processing and checks whether the number of retained objects grows after each request batch.
+* Design an automated memory-leak regression test that repeatedly executes a workload, observes post-GC heap usage, and detects sustained object retention.

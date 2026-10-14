@@ -1,0 +1,30 @@
+* Write a JUnit 5 test for a Java method that adds two integers.
+* Write unit tests for a method that checks whether a number is prime.
+* Write JUnit tests for a method that calculates factorial values, including invalid inputs.
+* Create parameterized tests for a method that validates email addresses.
+* Write tests using @ValueSource to validate multiple string inputs.
+* Write a parameterized test using @CsvSource for a discount calculation method.
+* Implement a @MethodSource test that supplies complex customer objects.
+* Write JUnit tests that validate null, empty, and whitespace-only inputs.
+* Write a test that verifies an exception type and message using assertThrows().
+* Write a test using assertAll() to validate multiple properties of a returned object.
+* Create a test class that demonstrates @BeforeEach, @AfterEach, @BeforeAll, and @AfterAll.
+* Write a repeated test using @RepeatedTest to verify a deterministic operation.
+* Implement a dynamic test suite using @TestFactory.
+* Write nested JUnit tests using @Nested to organize customer validation scenarios.
+* Create a test that uses @Tag to separate unit and integration tests.
+* Write a Mockito-based JUnit test for a service that depends on a repository.
+* Write a test that verifies a dependency was called with specific arguments.
+* Implement a test using ArgumentCaptor to inspect an object passed to a mocked dependency.
+* Write a test that verifies fallback behavior when a mocked service throws an exception.
+* Create a custom JUnit 5 extension that records test execution duration.
+* Implement a custom JUnit annotation that combines reusable test configuration.
+* Write a test for a CompletableFuture-based service that completes asynchronously.
+* Implement a JUnit test that verifies a method completes within a configured timeout.
+* Write a test suite that safely executes independent test cases in parallel.
+* Create a Spring Boot integration test using JUnit 5 and @SpringBootTest.
+* Write a JUnit test that verifies database rollback after a transactional service failure.
+* Implement a JUnit test using Testcontainers to validate repository behavior against PostgreSQL.
+* Configure Maven Surefire and Failsafe to execute unit and integration tests separately.
+* Configure JUnit 5 with JaCoCo and enforce a minimum code coverage threshold.
+* Build a Java testing project using JUnit 5, Mockito, parameterized tests, custom extensions, Maven, and CI/CD integration.

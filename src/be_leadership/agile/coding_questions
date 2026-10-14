@@ -1,0 +1,30 @@
+* Write a Java implementation for a user story that validates customer registration data based on acceptance criteria.
+* Write JUnit tests for a Spring Boot REST API based on given acceptance criteria.
+* Write a Java service implementation and unit tests for a small, independently deliverable user story.
+* Write a Spring Boot REST endpoint that supports incremental feature delivery without breaking an existing API contract.
+* Write a Java implementation that uses a feature flag to enable or disable a new business capability.
+* Write JUnit tests that verify both enabled and disabled behavior for a feature flag.
+* Write a Spring Boot implementation that validates business rules and returns meaningful error responses.
+* Write integration tests for a user story involving a REST API and a database.
+* Write a Java implementation that handles an external service timeout and supports graceful failure.
+* Write unit tests for a Java method using boundary-value and equivalence-partitioning techniques.
+* Write a Java implementation that is easy to refactor incrementally while preserving existing behavior.
+* Write a Spring Boot REST API with backward-compatible request and response models.
+* Write a Java implementation that applies the Strategy pattern to support changing business rules.
+* Write JUnit tests for a bug fix to demonstrate the original failure and verify the correction.
+* Write a Java implementation with structured logging and correlation IDs to support production troubleshooting.
+* Write a Java service with retry and timeout behavior for a downstream API, including tests for failure scenarios.
+* Write an implementation that supports idempotent processing of payment requests.
+* Write a Java implementation that separates business logic from infrastructure concerns to improve testability.
+* Write unit tests using Mockito to isolate a service from its external dependencies.
+* Write an integration test that verifies a database transaction rolls back when a business operation fails.
+* Write a Java implementation that supports pagination and sorting for a user story involving large datasets.
+* Write a Spring Boot health endpoint and tests for its readiness behavior.
+* Write a Java implementation that validates a domain object against multiple acceptance rules.
+* Write an automated test that verifies a new feature does not break existing API behavior.
+* Write a Java implementation that uses configuration-driven behavior instead of hard-coded business rules.
+* Write a JUnit test suite that covers success, validation failure, dependency timeout, and unexpected exceptions.
+* Write a Spring Boot implementation that publishes an event after a successful business transaction.
+* Write a Java implementation that supports safe incremental migration from an old business rule to a new rule.
+* Write a sample CI pipeline configuration that compiles a Java application, runs unit tests, performs static analysis, and packages the artifact.
+* Write a small Java project with a user story, acceptance criteria, implementation, unit tests, and integration tests suitable for demonstrating an Agile delivery increment.

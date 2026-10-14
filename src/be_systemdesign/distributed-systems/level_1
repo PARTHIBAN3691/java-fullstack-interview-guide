@@ -1,0 +1,30 @@
+* How do distributed systems communicate with each other?
+* How do you design a distributed system for high availability?
+* How do you identify and handle single points of failure?
+* How does load balancing work across distributed nodes?
+* How does service discovery work in a distributed architecture?
+* How do leader-based and leaderless architectures differ?
+* How does primary-replica replication work?
+* What is the difference between synchronous and asynchronous replication?
+* How do you handle replication lag?
+* How do distributed systems detect node failures?
+* Why is failure detection difficult in an asynchronous network?
+* What is the difference between fail-stop and Byzantine failures?
+* How do retries and timeouts work in distributed communication?
+* How do you implement exponential backoff with jitter?
+* How do circuit breakers improve resilience in distributed systems?
+* What is bulkheading, and how does it isolate failures?
+* How do you make distributed operations idempotent?
+* What are at-most-once, at-least-once, and exactly-once processing semantics?
+* How do message brokers handle message delivery and redelivery?
+* How do you preserve message ordering across distributed consumers?
+* What is the difference between consistency and availability?
+* How do quorum reads and writes work?
+* What is the difference between strong consistency and eventual consistency?
+* How do distributed locks work?
+* What are the limitations of distributed locks?
+* How do logical clocks help order events in distributed systems?
+* What is the difference between Lamport clocks and vector clocks?
+* How does a distributed transaction work?
+* What is the difference between two-phase commit and the saga pattern?
+* How do you monitor and troubleshoot a distributed system?

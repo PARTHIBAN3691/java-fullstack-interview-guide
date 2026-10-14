@@ -1,0 +1,30 @@
+* A Java Spring Boot application hosted on an Azure VM stops responding after a production deployment; how would you investigate the application, JVM, operating system, and network layers?
+* A VM reports healthy status in Azure, but users cannot access the application; how would you identify whether the issue is in the process, port binding, NSG, routing, or load balancer?
+* A Java application starts successfully but crashes after several hours due to memory exhaustion; how would you investigate heap usage, garbage collection, and memory leaks?
+* CPU utilization on a production VM suddenly reaches 100 percent; how would you identify the responsible process and determine whether the issue is caused by Java code, traffic, or infrastructure?
+* A Java application fails to start after the VM is rebooted; how would you troubleshoot service configuration, startup dependencies, permissions, and environment variables?
+* A production VM becomes unreachable through SSH or RDP after a network security change; how would you restore access safely?
+* Users experience intermittent timeouts when requests are distributed across several VMs; how would you investigate load balancing, health probes, session handling, and application logs?
+* One VM in a VM Scale Set performs significantly worse than the others; how would you identify configuration drift or infrastructure differences?
+* Autoscaling adds VMs during peak traffic, but application response times remain high; how would you determine whether the bottleneck is CPU, database access, connection pools, or downstream services?
+* A Java application loses locally stored files when a VM is replaced during scaling; how would you redesign the storage architecture?
+* An application running on an Azure VM cannot retrieve secrets from Key Vault after a deployment; how would you investigate managed identity and access permissions?
+* A production VM runs out of disk space because of application logs; how would you recover the service and implement log rotation and disk monitoring?
+* An attached managed disk shows high latency during batch processing; how would you diagnose the disk tier, throughput limits, queue depth, and application I/O pattern?
+* A VM is unexpectedly deallocated outside the planned maintenance window; how would you investigate the cause and restore the application?
+* A Java service experiences repeated TLS handshake failures when calling an external API; how would you investigate certificates, trust stores, DNS, and outbound connectivity?
+* A security audit finds that SSH and RDP are exposed to the internet; how would you restrict access without disrupting authorized administration?
+* A VM is compromised or suspected of running malicious processes; how would you contain the threat, preserve evidence, and restore the workload securely?
+* A new operating system patch causes the Java application to fail during startup; how would you troubleshoot the compatibility issue and recover safely?
+* A deployment to multiple VMs results in different application versions running simultaneously; how would you enforce deployment consistency and validate rollout completion?
+* A load balancer marks healthy application instances as unavailable; how would you investigate health probes, application ports, startup delays, and network rules?
+* An application works on a single VM but fails when deployed across multiple instances because of session state stored locally; how would you fix the architecture?
+* A VM backup completes successfully, but the restored application cannot start because required data or configuration is missing; how would you improve backup consistency and recovery testing?
+* An application must continue operating if an entire Azure region becomes unavailable; how would you design and test cross-region recovery?
+* A Java batch job runs significantly slower after moving to a different VM size; how would you compare CPU architecture, memory, disk throughput, JVM configuration, and workload behavior?
+* Azure Monitor shows missing VM performance data during a production incident; how would you troubleshoot the monitoring agent, data collection rules, and ingestion pipeline?
+* A VM Scale Set deployment fails because the application cannot download its JAR file from Azure Storage; how would you investigate identity, networking, and deployment configuration?
+* A Java application is repeatedly restarted by a systemd service because it exits with a non-zero status; how would you identify the root cause and prevent restart loops?
+* The monthly Azure bill increases after adding more VMs and managed disks; how would you identify unused resources and optimize capacity without affecting availability?
+* An on-premises Java application migrated to Azure VMs cannot connect to an on-premises database; how would you troubleshoot routing, DNS, firewalls, and hybrid connectivity?
+* The business requires a zero-downtime release for a Java application hosted on Azure VMs; how would you design deployment, health validation, traffic shifting, and rollback?

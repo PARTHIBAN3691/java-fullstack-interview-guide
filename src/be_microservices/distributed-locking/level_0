@@ -1,0 +1,30 @@
+* What is distributed locking?
+* Why is distributed locking required in microservices architecture?
+* What is the difference between a local lock and a distributed lock?
+* What is the difference between synchronized and ReentrantLock in Java?
+* Why is synchronized insufficient for coordinating multiple microservice instances?
+* What is a distributed system?
+* What is a critical section in concurrent programming?
+* What is mutual exclusion?
+* What is a race condition?
+* What is the role of a lock in preventing race conditions?
+* What is a lock owner?
+* What is a lock timeout?
+* What is a lease-based distributed lock?
+* What is a lock expiration time?
+* What is the difference between blocking and non-blocking lock acquisition?
+* What is the role of Redis in distributed locking?
+* How can a database be used to implement distributed locking?
+* What is the purpose of SET NX in Redis?
+* What is the role of a unique lock identifier?
+* Why should a distributed lock be released in a finally block?
+* What happens if a service crashes while holding a lock?
+* What is a deadlock?
+* What is lock contention?
+* What is a lock acquisition timeout?
+* What is the difference between optimistic locking and pessimistic locking?
+* What is the role of ZooKeeper in distributed coordination?
+* What is the role of etcd in distributed locking?
+* What is a heartbeat in distributed coordination?
+* What is a fencing token?
+* What are the common use cases of distributed locking in microservices?

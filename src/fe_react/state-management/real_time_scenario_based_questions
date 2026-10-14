@@ -1,0 +1,30 @@
+* A shopping cart is used by the header, product listing, and checkout components. How would you design shared state management?
+* Multiple components maintain separate copies of the same user information, causing inconsistent UI values. How would you solve this?
+* A Context provider causes hundreds of components to re-render whenever one value changes. How would you optimize it?
+* Your application has many API calls with loading, success, and error states. How would you centralize asynchronous state management?
+* Two API requests for the same search feature complete in the wrong order, causing stale results to appear. How would you prevent this?
+* A user logs out, but the previous user's data remains in the Redux store. How would you reset the state securely?
+* A Redux component re-renders whenever an unrelated part of the store changes. How would you investigate and fix it?
+* Your Redux store contains deeply nested objects that are difficult to update. How would you restructure the state?
+* An application makes repeated API requests for the same data across multiple components. How would you reduce duplicate requests?
+* A product update succeeds in the UI but fails on the server. How would you implement optimistic updates and rollback?
+* Your application needs to preserve the shopping cart after the browser is refreshed. How would you implement persistence?
+* A developer stores authentication tokens and sensitive user data in localStorage through Redux persistence. What concerns would you address?
+* A dashboard has independent modules for sales, inventory, and customers. How would you organize their state management?
+* A form contains many fields, validation rules, and conditional sections. Would you use Redux or local form state, and why?
+* A global loading spinner appears whenever any API request is running. How would you manage loading state more accurately?
+* A Redux reducer unexpectedly changes existing state objects. How would you identify and fix the mutation?
+* A selector performs an expensive calculation on every render. How would you optimize it?
+* Your team wants to replace Redux with Context API to reduce boilerplate. How would you evaluate the trade-offs?
+* A large application has duplicated server data in Redux and local component state. How would you simplify the architecture?
+* Several components need real-time updates from WebSocket events. How would you integrate those updates into application state?
+* An offline application must queue user changes and synchronize them when connectivity returns. How would you design the state flow?
+* A user switches between multiple organizations, but cached data from the previous organization is displayed. How would you isolate the state and cache?
+* Your application has slow initial loading because too much state is persisted and restored. How would you optimize persistence?
+* A Redux application has tightly coupled slices that are difficult to test. How would you refactor the architecture?
+* You need undo and redo for document editing while maintaining predictable state updates. How would you implement it?
+* An application uses server-side rendering, but users briefly see incorrect state during hydration. How would you troubleshoot the issue?
+* A component subscribes to an entire Redux object even though it needs only one field. How would you reduce unnecessary updates?
+* Your application needs consistent error handling for API requests across multiple features. How would you design it?
+* Your team must migrate from legacy Redux code to Redux Toolkit without rewriting the whole application. How would you approach it?
+* You are designing a large e-commerce application. How would you divide state across local components, Redux Toolkit, and RTK Query?

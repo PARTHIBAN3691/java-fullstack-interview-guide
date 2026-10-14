@@ -1,0 +1,30 @@
+* An API is called repeatedly whenever a component renders. How would you identify and fix the issue?
+* A component enters an infinite render loop after adding useEffect. How would you troubleshoot it?
+* An effect uses a state variable but always reads its initial value. What is the likely cause, and how would you fix it?
+* A search component displays outdated results when users type quickly. How would you prevent stale API responses?
+* A component starts a timer, but the timer continues running after navigation. How would you fix the issue?
+* A WebSocket connection is created every time a component renders. How would you manage the connection correctly?
+* An event listener is registered multiple times, causing duplicate actions. How would you troubleshoot it?
+* An API request completes after a component has unmounted. How would you prevent stale state updates and unnecessary work?
+* A useEffect hook runs twice in development and causes duplicate API requests. How would you investigate the behavior?
+* A component fetches data whenever an object dependency changes, even though its values appear identical. Why might this happen?
+* A function declared inside a component causes useEffect to run repeatedly. How would you resolve the dependency issue?
+* A component synchronizes state with localStorage, but the values repeatedly overwrite each other. How would you redesign the synchronization?
+* A dashboard needs to refresh data every 30 seconds. How would you implement polling and clean up the timer?
+* A component subscribes to browser resize events to update its layout. How would you implement and clean up the subscription?
+* A chat component must connect to a WebSocket when the room ID changes. How would you handle reconnection and cleanup?
+* A user switches between product IDs, but the page briefly displays the previous product's data. How would you handle the effect lifecycle?
+* Two dependent API calls must run in sequence, but the second call sometimes receives undefined data. How would you structure the effects or requests?
+* A component updates the document title based on the current page and unread notification count. How would you implement it?
+* A third-party chart library needs to initialize after a DOM element is available and dispose when the component unmounts. How would you manage it?
+* A tooltip flickers because its position is calculated after the browser paints. Would you use useEffect or useLayoutEffect, and why?
+* An effect depends on a callback prop that changes identity on every parent render. How would you address the repeated execution?
+* A component adds a keyboard shortcut, but the handler reads an outdated state value. How would you fix it?
+* An application makes duplicate data requests across multiple components. How would you decide whether to refactor useEffect logic or introduce a data-fetching library?
+* A component performs expensive calculations inside useEffect and then updates state, causing an additional render. How would you simplify it?
+* An effect must synchronize a third-party map widget with changing coordinates. How would you keep React state and the widget consistent?
+* A component must save changes automatically after the user stops typing for two seconds. How would you implement debouncing and cleanup?
+* A page uses polling, but older responses occasionally overwrite newer results. How would you prevent this?
+* An effect reads a prop but omits it from the dependency array to avoid rerunning. What problems can this cause, and how would you redesign it?
+* A component behaves differently under React Strict Mode than in production. How would you distinguish a genuine bug from development-only checks?
+* You are reviewing a large component with several effects that depend on one another. How would you refactor it to improve reliability and readability?
