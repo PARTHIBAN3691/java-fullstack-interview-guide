@@ -7,3 +7,7 @@ What is the difference between association, aggregation, and composition?
 What is upcasting and downcasting in Java?
 What is dynamic method dispatch?
 What is the difference between reference type and object type?
+Why can an overriding method not reduce the visibility of the inherited method? - otherwise it will break the liskov substitution principle.
+How do composition and delegation help reduce tight coupling?
+What is the difference between inheritance-based reuse and composition-based reuse?
+How do generics interact with polymorphism, and why is generic type information erased at runtime?
